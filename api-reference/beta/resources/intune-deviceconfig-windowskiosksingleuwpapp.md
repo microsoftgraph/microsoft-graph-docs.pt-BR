@@ -3,38 +3,38 @@ title: tipo de recurso windowsKioskSingleUWPApp
 description: A classe usada para identificar as informações do aplicativo UWP para a configuração do quiosque
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 168317587a7e20fabd3754a96c3b65ebefef963c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b6142091183409d0fea45d42a0241e9f41f446b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061886"
 ---
-# <a name="windowskiosksingleuwpapp-resource-type"></a><span data-ttu-id="b7177-103">tipo de recurso windowsKioskSingleUWPApp</span><span class="sxs-lookup"><span data-stu-id="b7177-103">windowsKioskSingleUWPApp resource type</span></span>
+# <a name="windowskiosksingleuwpapp-resource-type"></a><span data-ttu-id="aa8c9-103">tipo de recurso windowsKioskSingleUWPApp</span><span class="sxs-lookup"><span data-stu-id="aa8c9-103">windowsKioskSingleUWPApp resource type</span></span>
 
-<span data-ttu-id="b7177-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7177-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="aa8c9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aa8c9-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="b7177-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="b7177-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="aa8c9-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="aa8c9-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b7177-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b7177-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="aa8c9-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="aa8c9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b7177-107">A classe usada para identificar as informações do aplicativo UWP para a configuração do quiosque</span><span class="sxs-lookup"><span data-stu-id="b7177-107">The class used to identify the UWP app info for the kiosk configuration</span></span>
+<span data-ttu-id="aa8c9-107">A classe usada para identificar as informações do aplicativo UWP para a configuração do quiosque</span><span class="sxs-lookup"><span data-stu-id="aa8c9-107">The class used to identify the UWP app info for the kiosk configuration</span></span>
 
 
-<span data-ttu-id="b7177-108">Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="b7177-108">Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span></span>
+<span data-ttu-id="aa8c9-108">Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="aa8c9-108">Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b7177-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b7177-109">Properties</span></span>
-|<span data-ttu-id="b7177-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b7177-110">Property</span></span>|<span data-ttu-id="b7177-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="b7177-111">Type</span></span>|<span data-ttu-id="b7177-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7177-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="aa8c9-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="aa8c9-109">Properties</span></span>
+|<span data-ttu-id="aa8c9-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="aa8c9-110">Property</span></span>|<span data-ttu-id="aa8c9-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="aa8c9-111">Type</span></span>|<span data-ttu-id="aa8c9-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="aa8c9-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b7177-113">uwpApp</span><span class="sxs-lookup"><span data-stu-id="b7177-113">uwpApp</span></span>|[<span data-ttu-id="b7177-114">windowsKioskUWPApp</span><span class="sxs-lookup"><span data-stu-id="b7177-114">windowsKioskUWPApp</span></span>](../resources/intune-deviceconfig-windowskioskuwpapp.md)|<span data-ttu-id="b7177-115">Esta é a única ID de modelo de usuário do aplicativo (AUMID) que estará disponível para iniciar o uso enquanto estiver no modo quiosque</span><span class="sxs-lookup"><span data-stu-id="b7177-115">This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode</span></span>|
+|<span data-ttu-id="aa8c9-113">uwpApp</span><span class="sxs-lookup"><span data-stu-id="aa8c9-113">uwpApp</span></span>|[<span data-ttu-id="aa8c9-114">windowsKioskUWPApp</span><span class="sxs-lookup"><span data-stu-id="aa8c9-114">windowsKioskUWPApp</span></span>](../resources/intune-deviceconfig-windowskioskuwpapp.md)|<span data-ttu-id="aa8c9-115">Esta é a única ID de modelo de usuário do aplicativo (AUMID) que estará disponível para iniciar o uso enquanto estiver no modo quiosque</span><span class="sxs-lookup"><span data-stu-id="aa8c9-115">This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b7177-116">Relações</span><span class="sxs-lookup"><span data-stu-id="b7177-116">Relationships</span></span>
-<span data-ttu-id="b7177-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b7177-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="aa8c9-116">Relações</span><span class="sxs-lookup"><span data-stu-id="aa8c9-116">Relationships</span></span>
+<span data-ttu-id="aa8c9-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="aa8c9-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b7177-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b7177-118">JSON Representation</span></span>
-<span data-ttu-id="b7177-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b7177-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="aa8c9-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="aa8c9-118">JSON Representation</span></span>
+<span data-ttu-id="aa8c9-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="aa8c9-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskSingleUWPApp"
@@ -55,6 +55,9 @@ ms.locfileid: "43464063"
   }
 }
 ```
+
+
+
 
 
 
