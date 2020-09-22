@@ -5,33 +5,33 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 31e4ec08014907480cfe7bafaa21b061ec1434b6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fdec09b80eddfc4a4ea3f87425c211ed49f22ded
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522022"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998233"
 ---
-# <a name="participantmixerlevel-resource-type"></a><span data-ttu-id="97a79-103">tipo de recurso participantMixerLevel</span><span class="sxs-lookup"><span data-stu-id="97a79-103">participantMixerLevel resource type</span></span>
+# <a name="participantmixerlevel-resource-type"></a><span data-ttu-id="785f8-103">tipo de recurso participantMixerLevel</span><span class="sxs-lookup"><span data-stu-id="785f8-103">participantMixerLevel resource type</span></span>
 
-<span data-ttu-id="97a79-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="97a79-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="785f8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="785f8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="97a79-105">Configuração dos níveis de mixer para um determinado participante de áudio</span><span class="sxs-lookup"><span data-stu-id="97a79-105">Configuration of mixer levels for given audio participant</span></span>
+<span data-ttu-id="785f8-105">Configuração dos níveis de mixer para um determinado participante de áudio</span><span class="sxs-lookup"><span data-stu-id="785f8-105">Configuration of mixer levels for given audio participant</span></span>
 
-## <a name="properties"></a><span data-ttu-id="97a79-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="97a79-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="785f8-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="785f8-106">Properties</span></span>
 
-| <span data-ttu-id="97a79-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="97a79-107">Property</span></span>               | <span data-ttu-id="97a79-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="97a79-108">Type</span></span>                                                      | <span data-ttu-id="97a79-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="97a79-109">Description</span></span>                                                                                         |
+| <span data-ttu-id="785f8-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="785f8-107">Property</span></span>               | <span data-ttu-id="785f8-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="785f8-108">Type</span></span>                                                      | <span data-ttu-id="785f8-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="785f8-109">Description</span></span>                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="97a79-110">pato</span><span class="sxs-lookup"><span data-stu-id="97a79-110">ducking</span></span>                | [<span data-ttu-id="97a79-111">audioDuckingConfiguration</span><span class="sxs-lookup"><span data-stu-id="97a79-111">audioDuckingConfiguration</span></span>](audioduckingconfiguration.md) | <span data-ttu-id="97a79-112">Configuração do phasing (entrada e saída) de outras fontes para essa combinação personalizada partipant.</span><span class="sxs-lookup"><span data-stu-id="97a79-112">Configuration of ducking (phasing in and out) of other sources for this partipant custom mix.</span></span>       |
-| <span data-ttu-id="97a79-113">exclusivemode</span><span class="sxs-lookup"><span data-stu-id="97a79-113">exclusiveMode</span></span>          | <span data-ttu-id="97a79-114">booliano</span><span class="sxs-lookup"><span data-stu-id="97a79-114">boolean</span></span>                                                   | <span data-ttu-id="97a79-115">Se as fontes sem nível de fonte explícita devem ser removidas da mistura.</span><span class="sxs-lookup"><span data-stu-id="97a79-115">Whether sources without explicit source level should be removed from the mix.</span></span>                       |
-| <span data-ttu-id="97a79-116">participante</span><span class="sxs-lookup"><span data-stu-id="97a79-116">participant</span></span>            | <span data-ttu-id="97a79-117">String</span><span class="sxs-lookup"><span data-stu-id="97a79-117">String</span></span>                                                    | <span data-ttu-id="97a79-118">O participante para o qual o mixer está sendo configurado.</span><span class="sxs-lookup"><span data-stu-id="97a79-118">The participant for whom the mixer is being configured.</span></span>                                             |
-| <span data-ttu-id="97a79-119">sourceLevels</span><span class="sxs-lookup"><span data-stu-id="97a79-119">sourceLevels</span></span>           | <span data-ttu-id="97a79-120">coleção [audioSourceLevel](audiosourcelevel.md)</span><span class="sxs-lookup"><span data-stu-id="97a79-120">[audioSourceLevel](audiosourcelevel.md) collection</span></span>        | <span data-ttu-id="97a79-121">Configuração de nível para outras fontes.</span><span class="sxs-lookup"><span data-stu-id="97a79-121">Level configuration for other sources.</span></span>                                                              |
+| <span data-ttu-id="785f8-110">pato</span><span class="sxs-lookup"><span data-stu-id="785f8-110">ducking</span></span>                | [<span data-ttu-id="785f8-111">audioDuckingConfiguration</span><span class="sxs-lookup"><span data-stu-id="785f8-111">audioDuckingConfiguration</span></span>](audioduckingconfiguration.md) | <span data-ttu-id="785f8-112">Configuração do phasing (entrada e saída) de outras fontes para essa combinação personalizada partipant.</span><span class="sxs-lookup"><span data-stu-id="785f8-112">Configuration of ducking (phasing in and out) of other sources for this partipant custom mix.</span></span>       |
+| <span data-ttu-id="785f8-113">exclusivemode</span><span class="sxs-lookup"><span data-stu-id="785f8-113">exclusiveMode</span></span>          | <span data-ttu-id="785f8-114">booliano</span><span class="sxs-lookup"><span data-stu-id="785f8-114">boolean</span></span>                                                   | <span data-ttu-id="785f8-115">Se as fontes sem nível de fonte explícita devem ser removidas da mistura.</span><span class="sxs-lookup"><span data-stu-id="785f8-115">Whether sources without explicit source level should be removed from the mix.</span></span>                       |
+| <span data-ttu-id="785f8-116">participante</span><span class="sxs-lookup"><span data-stu-id="785f8-116">participant</span></span>            | <span data-ttu-id="785f8-117">String</span><span class="sxs-lookup"><span data-stu-id="785f8-117">String</span></span>                                                    | <span data-ttu-id="785f8-118">O participante para o qual o mixer está sendo configurado.</span><span class="sxs-lookup"><span data-stu-id="785f8-118">The participant for whom the mixer is being configured.</span></span>                                             |
+| <span data-ttu-id="785f8-119">sourceLevels</span><span class="sxs-lookup"><span data-stu-id="785f8-119">sourceLevels</span></span>           | <span data-ttu-id="785f8-120">coleção [audioSourceLevel](audiosourcelevel.md)</span><span class="sxs-lookup"><span data-stu-id="785f8-120">[audioSourceLevel](audiosourcelevel.md) collection</span></span>        | <span data-ttu-id="785f8-121">Configuração de nível para outras fontes.</span><span class="sxs-lookup"><span data-stu-id="785f8-121">Level configuration for other sources.</span></span>                                                              |
 
-## <a name="json-representation"></a><span data-ttu-id="97a79-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="97a79-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="785f8-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="785f8-122">JSON representation</span></span>
 
-<span data-ttu-id="97a79-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="97a79-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="785f8-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="785f8-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,7 +49,7 @@ ms.locfileid: "42522022"
 }
 ```
 
-## <a name="example---mixer-level"></a><span data-ttu-id="97a79-124">Exemplo-nível do mixer</span><span class="sxs-lookup"><span data-stu-id="97a79-124">Example - Mixer level</span></span>
+## <a name="example---mixer-level"></a><span data-ttu-id="785f8-124">Exemplo-nível do mixer</span><span class="sxs-lookup"><span data-stu-id="785f8-124">Example - Mixer level</span></span>
 
 <!-- {
   "blockType": "example",
@@ -89,3 +89,5 @@ ms.locfileid: "42522022"
   "suppressions": []
 }
 -->
+
+

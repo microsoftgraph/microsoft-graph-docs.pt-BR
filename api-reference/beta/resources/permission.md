@@ -6,29 +6,29 @@ description: recurso Permission representando uma permissão de compartilhamento
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2a260a6702e2d50ceac598e379ea6185310052ce
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 3151e6d070695f2010417f6befbb0c4e83fd3830
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998081"
 ---
-# <a name="permission-resource-type"></a><span data-ttu-id="98f38-103">tipo de recurso Permission</span><span class="sxs-lookup"><span data-stu-id="98f38-103">permission resource type</span></span>
+# <a name="permission-resource-type"></a><span data-ttu-id="42e4f-103">tipo de recurso Permission</span><span class="sxs-lookup"><span data-stu-id="42e4f-103">permission resource type</span></span>
 
-<span data-ttu-id="98f38-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98f38-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="42e4f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="42e4f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="98f38-105">O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida para um recurso [driveItem](driveitem.md) .</span><span class="sxs-lookup"><span data-stu-id="98f38-105">The **permission** resource provides information about a sharing permission granted for a [driveItem](driveitem.md) resource.</span></span>
+<span data-ttu-id="42e4f-105">O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida para um recurso [driveItem](driveitem.md) .</span><span class="sxs-lookup"><span data-stu-id="42e4f-105">The **permission** resource provides information about a sharing permission granted for a [driveItem](driveitem.md) resource.</span></span>
 
-<span data-ttu-id="98f38-106">As permissões de compartilhamento têm várias formas diferentes.</span><span class="sxs-lookup"><span data-stu-id="98f38-106">Sharing permissions have a number of different forms.</span></span>
-<span data-ttu-id="98f38-107">O recurso **Permission** representa esses diferentes formatos através de facetas no recurso.</span><span class="sxs-lookup"><span data-stu-id="98f38-107">The **permission** resource represents these different forms through facets on the resource.</span></span>
+<span data-ttu-id="42e4f-106">As permissões de compartilhamento têm várias formas diferentes.</span><span class="sxs-lookup"><span data-stu-id="42e4f-106">Sharing permissions have a number of different forms.</span></span>
+<span data-ttu-id="42e4f-107">O recurso **Permission** representa esses diferentes formatos através de facetas no recurso.</span><span class="sxs-lookup"><span data-stu-id="42e4f-107">The **permission** resource represents these different forms through facets on the resource.</span></span>
 
-><span data-ttu-id="98f38-108">**Observação:** As bibliotecas de documentos do OneDrive for Business e do SharePoint não retornam a propriedade **inheritedFrom** .</span><span class="sxs-lookup"><span data-stu-id="98f38-108">**Note:** OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.</span></span>
+><span data-ttu-id="42e4f-108">**Observação:** As bibliotecas de documentos do OneDrive for Business e do SharePoint não retornam a propriedade **inheritedFrom** .</span><span class="sxs-lookup"><span data-stu-id="42e4f-108">**Note:** OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="98f38-109">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="98f38-109">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="42e4f-109">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="42e4f-109">JSON representation</span></span>
 
-<span data-ttu-id="98f38-110">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="98f38-110">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="42e4f-110">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="42e4f-110">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -62,49 +62,49 @@ ms.locfileid: "46657907"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="98f38-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="98f38-111">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="42e4f-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="42e4f-111">Properties</span></span>
 
-| <span data-ttu-id="98f38-112">Propriedade</span><span class="sxs-lookup"><span data-stu-id="98f38-112">Property</span></span>            | <span data-ttu-id="98f38-113">Tipo</span><span class="sxs-lookup"><span data-stu-id="98f38-113">Type</span></span>                        | <span data-ttu-id="98f38-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="98f38-114">Description</span></span>
+| <span data-ttu-id="42e4f-112">Propriedade</span><span class="sxs-lookup"><span data-stu-id="42e4f-112">Property</span></span>            | <span data-ttu-id="42e4f-113">Tipo</span><span class="sxs-lookup"><span data-stu-id="42e4f-113">Type</span></span>                        | <span data-ttu-id="42e4f-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="42e4f-114">Description</span></span>
 |:--------------------|:----------------------------|:-------------------------
-| <span data-ttu-id="98f38-115">id</span><span class="sxs-lookup"><span data-stu-id="98f38-115">id</span></span>                  | <span data-ttu-id="98f38-116">String</span><span class="sxs-lookup"><span data-stu-id="98f38-116">String</span></span>                      | <span data-ttu-id="98f38-p102">O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="98f38-p102">The unique identifier of the permission among all permissions on the item. Read-only.</span></span>
-| <span data-ttu-id="98f38-119">grantedTo</span><span class="sxs-lookup"><span data-stu-id="98f38-119">grantedTo</span></span>           | <span data-ttu-id="98f38-120">[IdentitySet][]</span><span class="sxs-lookup"><span data-stu-id="98f38-120">[IdentitySet][]</span></span>             | <span data-ttu-id="98f38-p103">Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="98f38-p103">For user type permissions, the details of the users & applications for this permission. Read-only.</span></span>
-| <span data-ttu-id="98f38-123">grantedToIdentities</span><span class="sxs-lookup"><span data-stu-id="98f38-123">grantedToIdentities</span></span> | <span data-ttu-id="98f38-124">Coleção([IdentitySet][])</span><span class="sxs-lookup"><span data-stu-id="98f38-124">Collection([IdentitySet][])</span></span> | <span data-ttu-id="98f38-125">Para permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida.</span><span class="sxs-lookup"><span data-stu-id="98f38-125">For link type permissions, the details of the users to whom permission was granted.</span></span> <span data-ttu-id="98f38-126">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="98f38-126">Read-only.</span></span>
-| <span data-ttu-id="98f38-127">invitation</span><span class="sxs-lookup"><span data-stu-id="98f38-127">invitation</span></span>          | <span data-ttu-id="98f38-128">[SharingInvitation][]</span><span class="sxs-lookup"><span data-stu-id="98f38-128">[SharingInvitation][]</span></span>       | <span data-ttu-id="98f38-p105">Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="98f38-p105">Details of any associated sharing invitation for this permission. Read-only.</span></span>
-| <span data-ttu-id="98f38-131">inheritedFrom</span><span class="sxs-lookup"><span data-stu-id="98f38-131">inheritedFrom</span></span>       | <span data-ttu-id="98f38-132">[ItemReference][]</span><span class="sxs-lookup"><span data-stu-id="98f38-132">[ItemReference][]</span></span>           | <span data-ttu-id="98f38-p106">Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="98f38-p106">Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.</span></span>
-| <span data-ttu-id="98f38-135">vínculo</span><span class="sxs-lookup"><span data-stu-id="98f38-135">link</span></span>                | <span data-ttu-id="98f38-136">[SharingLink][]</span><span class="sxs-lookup"><span data-stu-id="98f38-136">[SharingLink][]</span></span>             | <span data-ttu-id="98f38-p107">Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="98f38-p107">Provides the link details of the current permission, if it is a link type permissions. Read-only.</span></span>
-| <span data-ttu-id="98f38-139">funções</span><span class="sxs-lookup"><span data-stu-id="98f38-139">roles</span></span>               | <span data-ttu-id="98f38-140">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="98f38-140">Collection(String)</span></span>          | <span data-ttu-id="98f38-p108">O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="98f38-p108">The type of permission, e.g. `read`. See below for the full list of roles. Read-only.</span></span>
-| <span data-ttu-id="98f38-144">shareId</span><span class="sxs-lookup"><span data-stu-id="98f38-144">shareId</span></span>             | <span data-ttu-id="98f38-145">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="98f38-145">String</span></span>                      | <span data-ttu-id="98f38-146">Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API de compartilhamentos][]**.</span><span class="sxs-lookup"><span data-stu-id="98f38-146">A unique token that can be used to access this shared item via the **[shares API][]**.</span></span> <span data-ttu-id="98f38-147">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="98f38-147">Read-only.</span></span>
-| <span data-ttu-id="98f38-148">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="98f38-148">expirationDateTime</span></span>  | <span data-ttu-id="98f38-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="98f38-149">DateTimeOffset</span></span>              | <span data-ttu-id="98f38-150">Um formato yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset indica o tempo de expiração da permissão.</span><span class="sxs-lookup"><span data-stu-id="98f38-150">A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.</span></span> <span data-ttu-id="98f38-151">DateTime.MinValue indica que não há expiração definida para esta permissão.</span><span class="sxs-lookup"><span data-stu-id="98f38-151">DateTime.MinValue indicates there is no expiration set for this permission.</span></span> <span data-ttu-id="98f38-152">Opcional.</span><span class="sxs-lookup"><span data-stu-id="98f38-152">Optional.</span></span>
-| <span data-ttu-id="98f38-153">hasPassword</span><span class="sxs-lookup"><span data-stu-id="98f38-153">hasPassword</span></span>         | <span data-ttu-id="98f38-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="98f38-154">Boolean</span></span>                     | <span data-ttu-id="98f38-155">Isso indica se a senha está configurada para esta permissão, está sendo exibida apenas em resposta.</span><span class="sxs-lookup"><span data-stu-id="98f38-155">This indicates whether password is set for this permission, it's only showing in response.</span></span> <span data-ttu-id="98f38-156">Opcional e Somente leitura e somente para o OneDrive Personal.</span><span class="sxs-lookup"><span data-stu-id="98f38-156">Optional and Read-only and for OneDrive Personal only.</span></span>
+| <span data-ttu-id="42e4f-115">id</span><span class="sxs-lookup"><span data-stu-id="42e4f-115">id</span></span>                  | <span data-ttu-id="42e4f-116">String</span><span class="sxs-lookup"><span data-stu-id="42e4f-116">String</span></span>                      | <span data-ttu-id="42e4f-p102">O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="42e4f-p102">The unique identifier of the permission among all permissions on the item. Read-only.</span></span>
+| <span data-ttu-id="42e4f-119">grantedTo</span><span class="sxs-lookup"><span data-stu-id="42e4f-119">grantedTo</span></span>           | <span data-ttu-id="42e4f-120">[IdentitySet][]</span><span class="sxs-lookup"><span data-stu-id="42e4f-120">[IdentitySet][]</span></span>             | <span data-ttu-id="42e4f-p103">Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="42e4f-p103">For user type permissions, the details of the users & applications for this permission. Read-only.</span></span>
+| <span data-ttu-id="42e4f-123">grantedToIdentities</span><span class="sxs-lookup"><span data-stu-id="42e4f-123">grantedToIdentities</span></span> | <span data-ttu-id="42e4f-124">Coleção([IdentitySet][])</span><span class="sxs-lookup"><span data-stu-id="42e4f-124">Collection([IdentitySet][])</span></span> | <span data-ttu-id="42e4f-125">Para permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida.</span><span class="sxs-lookup"><span data-stu-id="42e4f-125">For link type permissions, the details of the users to whom permission was granted.</span></span> <span data-ttu-id="42e4f-126">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="42e4f-126">Read-only.</span></span>
+| <span data-ttu-id="42e4f-127">invitation</span><span class="sxs-lookup"><span data-stu-id="42e4f-127">invitation</span></span>          | <span data-ttu-id="42e4f-128">[SharingInvitation][]</span><span class="sxs-lookup"><span data-stu-id="42e4f-128">[SharingInvitation][]</span></span>       | <span data-ttu-id="42e4f-p105">Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="42e4f-p105">Details of any associated sharing invitation for this permission. Read-only.</span></span>
+| <span data-ttu-id="42e4f-131">inheritedFrom</span><span class="sxs-lookup"><span data-stu-id="42e4f-131">inheritedFrom</span></span>       | <span data-ttu-id="42e4f-132">[ItemReference][]</span><span class="sxs-lookup"><span data-stu-id="42e4f-132">[ItemReference][]</span></span>           | <span data-ttu-id="42e4f-p106">Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="42e4f-p106">Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.</span></span>
+| <span data-ttu-id="42e4f-135">vínculo</span><span class="sxs-lookup"><span data-stu-id="42e4f-135">link</span></span>                | <span data-ttu-id="42e4f-136">[SharingLink][]</span><span class="sxs-lookup"><span data-stu-id="42e4f-136">[SharingLink][]</span></span>             | <span data-ttu-id="42e4f-p107">Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="42e4f-p107">Provides the link details of the current permission, if it is a link type permissions. Read-only.</span></span>
+| <span data-ttu-id="42e4f-139">funções</span><span class="sxs-lookup"><span data-stu-id="42e4f-139">roles</span></span>               | <span data-ttu-id="42e4f-140">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="42e4f-140">Collection(String)</span></span>          | <span data-ttu-id="42e4f-p108">O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="42e4f-p108">The type of permission, e.g. `read`. See below for the full list of roles. Read-only.</span></span>
+| <span data-ttu-id="42e4f-144">shareId</span><span class="sxs-lookup"><span data-stu-id="42e4f-144">shareId</span></span>             | <span data-ttu-id="42e4f-145">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="42e4f-145">String</span></span>                      | <span data-ttu-id="42e4f-146">Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API de compartilhamentos][]**.</span><span class="sxs-lookup"><span data-stu-id="42e4f-146">A unique token that can be used to access this shared item via the **[shares API][]**.</span></span> <span data-ttu-id="42e4f-147">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="42e4f-147">Read-only.</span></span>
+| <span data-ttu-id="42e4f-148">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="42e4f-148">expirationDateTime</span></span>  | <span data-ttu-id="42e4f-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="42e4f-149">DateTimeOffset</span></span>              | <span data-ttu-id="42e4f-150">Um formato yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset indica o tempo de expiração da permissão.</span><span class="sxs-lookup"><span data-stu-id="42e4f-150">A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission.</span></span> <span data-ttu-id="42e4f-151">DateTime.MinValue indica que não há expiração definida para esta permissão.</span><span class="sxs-lookup"><span data-stu-id="42e4f-151">DateTime.MinValue indicates there is no expiration set for this permission.</span></span> <span data-ttu-id="42e4f-152">Opcional.</span><span class="sxs-lookup"><span data-stu-id="42e4f-152">Optional.</span></span>
+| <span data-ttu-id="42e4f-153">hasPassword</span><span class="sxs-lookup"><span data-stu-id="42e4f-153">hasPassword</span></span>         | <span data-ttu-id="42e4f-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="42e4f-154">Boolean</span></span>                     | <span data-ttu-id="42e4f-155">Isso indica se a senha está configurada para esta permissão, está sendo exibida apenas em resposta.</span><span class="sxs-lookup"><span data-stu-id="42e4f-155">This indicates whether password is set for this permission, it's only showing in response.</span></span> <span data-ttu-id="42e4f-156">Opcional e Somente leitura e somente para o OneDrive Personal.</span><span class="sxs-lookup"><span data-stu-id="42e4f-156">Optional and Read-only and for OneDrive Personal only.</span></span>
 
-### <a name="roles-property-values"></a><span data-ttu-id="98f38-157">Valores de propriedades Roles</span><span class="sxs-lookup"><span data-stu-id="98f38-157">Roles property values</span></span>
+### <a name="roles-property-values"></a><span data-ttu-id="42e4f-157">Valores de propriedades Roles</span><span class="sxs-lookup"><span data-stu-id="42e4f-157">Roles property values</span></span>
 
-| <span data-ttu-id="98f38-158">Função</span><span class="sxs-lookup"><span data-stu-id="98f38-158">Role</span></span>              | <span data-ttu-id="98f38-159">Detalhes</span><span class="sxs-lookup"><span data-stu-id="98f38-159">Details</span></span>                                                                        |
+| <span data-ttu-id="42e4f-158">Função</span><span class="sxs-lookup"><span data-stu-id="42e4f-158">Role</span></span>              | <span data-ttu-id="42e4f-159">Detalhes</span><span class="sxs-lookup"><span data-stu-id="42e4f-159">Details</span></span>                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="98f38-160">Saiba</span><span class="sxs-lookup"><span data-stu-id="98f38-160">read</span></span>            | <span data-ttu-id="98f38-161">Fornece a capacidade de ler os metadados e o conteúdo do item.</span><span class="sxs-lookup"><span data-stu-id="98f38-161">Provides the ability to read the metadata and contents of the item.</span></span>            |
-| <span data-ttu-id="98f38-162">gravável</span><span class="sxs-lookup"><span data-stu-id="98f38-162">write</span></span>           | <span data-ttu-id="98f38-163">Fornece a capacidade de ler e modificar os metadados e o conteúdo do item.</span><span class="sxs-lookup"><span data-stu-id="98f38-163">Provides the ability to read and modify the metadata and contents of the item.</span></span> |
-| <span data-ttu-id="98f38-164">controle de SP. Full</span><span class="sxs-lookup"><span data-stu-id="98f38-164">sp.full control</span></span> | <span data-ttu-id="98f38-165">Para o SharePoint e o OneDrive for Business, isso representa a função de proprietário.</span><span class="sxs-lookup"><span data-stu-id="98f38-165">For SharePoint and OneDrive for Business this represents the owner role.</span></span>       |
+| <span data-ttu-id="42e4f-160">leitura</span><span class="sxs-lookup"><span data-stu-id="42e4f-160">read</span></span>            | <span data-ttu-id="42e4f-161">Oferece a capacidade de ler os metadados e o conteúdo do item.</span><span class="sxs-lookup"><span data-stu-id="42e4f-161">Provides the ability to read the metadata and contents of the item.</span></span>            |
+| <span data-ttu-id="42e4f-162">gravação</span><span class="sxs-lookup"><span data-stu-id="42e4f-162">write</span></span>           | <span data-ttu-id="42e4f-163">Oferece a capacidade de ler e modificar os metadados e o conteúdo do item.</span><span class="sxs-lookup"><span data-stu-id="42e4f-163">Provides the ability to read and modify the metadata and contents of the item.</span></span> |
+| <span data-ttu-id="42e4f-164">controle sp.full</span><span class="sxs-lookup"><span data-stu-id="42e4f-164">sp.full control</span></span> | <span data-ttu-id="42e4f-165">Para o Microsoft Office SharePoint Online e o OneDrive for Business, este representa o papel do proprietário.</span><span class="sxs-lookup"><span data-stu-id="42e4f-165">For SharePoint and OneDrive for Business this represents the owner role.</span></span>       |
 
-<span data-ttu-id="98f38-166">O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.</span><span class="sxs-lookup"><span data-stu-id="98f38-166">The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.</span></span>
+<span data-ttu-id="42e4f-166">O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.</span><span class="sxs-lookup"><span data-stu-id="42e4f-166">The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.</span></span>
 
-<span data-ttu-id="98f38-167">Os links de compartilhamento contêm um token exclusivo e necessário para acessar o item.</span><span class="sxs-lookup"><span data-stu-id="98f38-167">Sharing links contain a unique token required to access the item.</span></span>
+<span data-ttu-id="42e4f-167">Os links de compartilhamento contêm um token exclusivo e necessário para acessar o item.</span><span class="sxs-lookup"><span data-stu-id="42e4f-167">Sharing links contain a unique token required to access the item.</span></span>
 
-<span data-ttu-id="98f38-168">Permissões com uma faceta [**invitation**][SharingInvitation] representam permissões adicionadas convidando usuários ou grupos específicos para ter acesso ao arquivo.</span><span class="sxs-lookup"><span data-stu-id="98f38-168">Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.</span></span>
+<span data-ttu-id="42e4f-168">Permissões com uma faceta [**invitation**][SharingInvitation] representam permissões adicionadas convidando usuários ou grupos específicos para ter acesso ao arquivo.</span><span class="sxs-lookup"><span data-stu-id="42e4f-168">Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.</span></span>
 
-## <a name="sharing-links"></a><span data-ttu-id="98f38-169">Links de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="98f38-169">Sharing links</span></span>
+## <a name="sharing-links"></a><span data-ttu-id="42e4f-169">Links de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="42e4f-169">Sharing links</span></span>
 
-<span data-ttu-id="98f38-170">Permissões com uma faceta [**link**][SharingLink] representam links de compartilhamento criados no item.</span><span class="sxs-lookup"><span data-stu-id="98f38-170">Permissions with a [**link**][SharingLink] facet represent sharing links created on the item.</span></span>
-<span data-ttu-id="98f38-171">Estes são os tipos mais comuns de permissões.</span><span class="sxs-lookup"><span data-stu-id="98f38-171">These are the most common kinds of permissions.</span></span>
-<span data-ttu-id="98f38-172">Os links de compartilhamento fornecem uma URL exclusiva que pode ser usada para acessar um arquivo ou pasta.</span><span class="sxs-lookup"><span data-stu-id="98f38-172">Sharing links provide a unique URL that can be used to access a file or folder.</span></span>
-<span data-ttu-id="98f38-173">Eles podem ser configurados para conceder acesso de várias maneiras.</span><span class="sxs-lookup"><span data-stu-id="98f38-173">They can be set up to grant access in a variety of ways.</span></span>
-<span data-ttu-id="98f38-174">Por exemplo, você pode usar a API [createLink][] para criar um link que funcione para qualquer pessoa conectada à sua organização ou criar um link que funcione para qualquer pessoa, sem precisar fazer logon.</span><span class="sxs-lookup"><span data-stu-id="98f38-174">For example, you can use the [createLink][] API to create a link that works for anyone signed into your organization, or you can create a link that works for anyone, without needing to sign in.</span></span>
-<span data-ttu-id="98f38-175">Você pode usar a API [invite][] para criar um link que funcione apenas para pessoas específicas, estejam elas na sua empresa ou não.</span><span class="sxs-lookup"><span data-stu-id="98f38-175">You can use the [invite][] API to create a link that only works for specific people, whether they're in your company or not.</span></span>
+<span data-ttu-id="42e4f-170">Permissões com uma faceta [**link**][SharingLink] representam links de compartilhamento criados no item.</span><span class="sxs-lookup"><span data-stu-id="42e4f-170">Permissions with a [**link**][SharingLink] facet represent sharing links created on the item.</span></span>
+<span data-ttu-id="42e4f-171">Estes são os tipos mais comuns de permissões.</span><span class="sxs-lookup"><span data-stu-id="42e4f-171">These are the most common kinds of permissions.</span></span>
+<span data-ttu-id="42e4f-172">Os links de compartilhamento fornecem uma URL exclusiva que pode ser usada para acessar um arquivo ou pasta.</span><span class="sxs-lookup"><span data-stu-id="42e4f-172">Sharing links provide a unique URL that can be used to access a file or folder.</span></span>
+<span data-ttu-id="42e4f-173">Eles podem ser configurados para conceder acesso de várias maneiras.</span><span class="sxs-lookup"><span data-stu-id="42e4f-173">They can be set up to grant access in a variety of ways.</span></span>
+<span data-ttu-id="42e4f-174">Por exemplo, você pode usar a API [createLink][] para criar um link que funcione para qualquer pessoa conectada à sua organização ou criar um link que funcione para qualquer pessoa, sem precisar fazer logon.</span><span class="sxs-lookup"><span data-stu-id="42e4f-174">For example, you can use the [createLink][] API to create a link that works for anyone signed into your organization, or you can create a link that works for anyone, without needing to sign in.</span></span>
+<span data-ttu-id="42e4f-175">Você pode usar a API [invite][] para criar um link que funcione apenas para pessoas específicas, estejam elas na sua empresa ou não.</span><span class="sxs-lookup"><span data-stu-id="42e4f-175">You can use the [invite][] API to create a link that only works for specific people, whether they're in your company or not.</span></span>
 
-<span data-ttu-id="98f38-176">Aqui estão alguns exemplos de links de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="98f38-176">Here are some examples of sharing links.</span></span>
+<span data-ttu-id="42e4f-176">Aqui estão alguns exemplos de links de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="42e4f-176">Here are some examples of sharing links.</span></span>
 
-### <a name="view-link"></a><span data-ttu-id="98f38-177">Link de exibição</span><span class="sxs-lookup"><span data-stu-id="98f38-177">View link</span></span>
+### <a name="view-link"></a><span data-ttu-id="42e4f-177">Link de exibição</span><span class="sxs-lookup"><span data-stu-id="42e4f-177">View link</span></span>
 
-<span data-ttu-id="98f38-178">Este link de exibição fornece acesso somente leitura a qualquer pessoa com o link.</span><span class="sxs-lookup"><span data-stu-id="98f38-178">This view link provides read-only access to anyone with the link.</span></span>
+<span data-ttu-id="42e4f-178">Este link de exibição fornece acesso somente leitura a qualquer pessoa com o link.</span><span class="sxs-lookup"><span data-stu-id="42e4f-178">This view link provides read-only access to anyone with the link.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-view-link" } -->
 
@@ -123,9 +123,9 @@ ms.locfileid: "46657907"
 }
 ```
 
-### <a name="edit-link"></a><span data-ttu-id="98f38-179">Editar link</span><span class="sxs-lookup"><span data-stu-id="98f38-179">Edit link</span></span>
+### <a name="edit-link"></a><span data-ttu-id="42e4f-179">Editar link</span><span class="sxs-lookup"><span data-stu-id="42e4f-179">Edit link</span></span>
 
-<span data-ttu-id="98f38-180">Este link de edição fornece acesso de leitura e gravação a qualquer pessoa na organização com o link.</span><span class="sxs-lookup"><span data-stu-id="98f38-180">This edit link provides read and write access to anyone in the organization with the link.</span></span>
+<span data-ttu-id="42e4f-180">Este link de edição fornece acesso de leitura e gravação a qualquer pessoa na organização com o link.</span><span class="sxs-lookup"><span data-stu-id="42e4f-180">This edit link provides read and write access to anyone in the organization with the link.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-edit-link" } -->
 
@@ -144,9 +144,9 @@ ms.locfileid: "46657907"
 }
 ```
 
-### <a name="existing-access-link"></a><span data-ttu-id="98f38-181">Link de acesso existente</span><span class="sxs-lookup"><span data-stu-id="98f38-181">Existing access link</span></span>
+### <a name="existing-access-link"></a><span data-ttu-id="42e4f-181">Link de acesso existente</span><span class="sxs-lookup"><span data-stu-id="42e4f-181">Existing access link</span></span>
 
-<span data-ttu-id="98f38-182">Este link não concede privilégios adicionais ao usuário.</span><span class="sxs-lookup"><span data-stu-id="98f38-182">This link does not grant any additional privileges to the user.</span></span>
+<span data-ttu-id="42e4f-182">Este link não concede privilégios adicionais ao usuário.</span><span class="sxs-lookup"><span data-stu-id="42e4f-182">This link does not grant any additional privileges to the user.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
 
@@ -163,9 +163,9 @@ ms.locfileid: "46657907"
 }
 ```
 
-### <a name="specific-people-link"></a><span data-ttu-id="98f38-183">Link de pessoas específicas</span><span class="sxs-lookup"><span data-stu-id="98f38-183">Specific people link</span></span>
+### <a name="specific-people-link"></a><span data-ttu-id="42e4f-183">Link de pessoas específicas</span><span class="sxs-lookup"><span data-stu-id="42e4f-183">Specific people link</span></span>
 
-<span data-ttu-id="98f38-184">Este link fornece acesso de leitura e gravação para as pessoas específicas na coleção `grantedToIdentities`.</span><span class="sxs-lookup"><span data-stu-id="98f38-184">This link provides read and write access to the specific people in the `grantedToIdentities` collection.</span></span>
+<span data-ttu-id="42e4f-184">Este link fornece acesso de leitura e gravação para as pessoas específicas na coleção `grantedToIdentities`.</span><span class="sxs-lookup"><span data-stu-id="42e4f-184">This link provides read and write access to the specific people in the `grantedToIdentities` collection.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
@@ -196,9 +196,9 @@ ms.locfileid: "46657907"
 }
 ```
 
-## <a name="sharing-invitations"></a><span data-ttu-id="98f38-185">Compartilhar convites</span><span class="sxs-lookup"><span data-stu-id="98f38-185">Sharing invitations</span></span>
+## <a name="sharing-invitations"></a><span data-ttu-id="42e4f-185">Compartilhar convites</span><span class="sxs-lookup"><span data-stu-id="42e4f-185">Sharing invitations</span></span>
 
-<span data-ttu-id="98f38-186">As permissões enviadas pelo [convite][] ou pela API de [concessão][] podem ter informações adicionais na faceta[SharingInvitation] do [convite]para endereços de email que não correspondem a uma conta conhecida.</span><span class="sxs-lookup"><span data-stu-id="98f38-186">Permissions sent by the [invite][] or [grant][] API can have additional information in the [invitation][SharingInvitation] facet for email addresses that don't match a known account.</span></span> <span data-ttu-id="98f38-187">Nesses casos, a propriedade **concedidoto** pode não ser definida até que o link do convite seja resgatado, que ocorre na primeira vez que o usuário clica no link e entrar.</span><span class="sxs-lookup"><span data-stu-id="98f38-187">In such cases, the **grantedTo** property might not be set until the invitation link is redeemed, which occurs the first time the user clicks the link and signs in.</span></span>
+<span data-ttu-id="42e4f-186">As permissões enviadas pelo [convite][] ou pela API de [concessão][] podem ter informações adicionais na faceta[SharingInvitation] do [convite]para endereços de email que não correspondem a uma conta conhecida.</span><span class="sxs-lookup"><span data-stu-id="42e4f-186">Permissions sent by the [invite][] or [grant][] API can have additional information in the [invitation][SharingInvitation] facet for email addresses that don't match a known account.</span></span> <span data-ttu-id="42e4f-187">Nesses casos, a propriedade **concedidoto** pode não ser definida até que o link do convite seja resgatado, que ocorre na primeira vez que o usuário clica no link e entrar.</span><span class="sxs-lookup"><span data-stu-id="42e4f-187">In such cases, the **grantedTo** property might not be set until the invitation link is redeemed, which occurs the first time the user clicks the link and signs in.</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -215,7 +215,7 @@ ms.locfileid: "46657907"
 }
 ```
 
-<span data-ttu-id="98f38-188">Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a propriedade **grantedTo** conterá as informações sobre a conta que resgatou as permissões:</span><span class="sxs-lookup"><span data-stu-id="98f38-188">After the sharing invitation has been redeemed by a user, the **grantedTo** property will contain the information about the account that redeemed the permissions:</span></span>
+<span data-ttu-id="42e4f-188">Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a propriedade **grantedTo** conterá as informações sobre a conta que resgatou as permissões:</span><span class="sxs-lookup"><span data-stu-id="42e4f-188">After the sharing invitation has been redeemed by a user, the **grantedTo** property will contain the information about the account that redeemed the permissions:</span></span>
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
 
@@ -238,17 +238,17 @@ ms.locfileid: "46657907"
 }
 ```
 
-## <a name="methods"></a><span data-ttu-id="98f38-189">Métodos</span><span class="sxs-lookup"><span data-stu-id="98f38-189">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="42e4f-189">Métodos</span><span class="sxs-lookup"><span data-stu-id="42e4f-189">Methods</span></span>
 
-| <span data-ttu-id="98f38-190">Método</span><span class="sxs-lookup"><span data-stu-id="98f38-190">Method</span></span>                                                   | <span data-ttu-id="98f38-191">Caminho REST</span><span class="sxs-lookup"><span data-stu-id="98f38-191">REST Path</span></span>
+| <span data-ttu-id="42e4f-190">Método</span><span class="sxs-lookup"><span data-stu-id="42e4f-190">Method</span></span>                                                   | <span data-ttu-id="42e4f-191">Caminho REST</span><span class="sxs-lookup"><span data-stu-id="42e4f-191">REST Path</span></span>
 |:---------------------------------------------------------|:-----------------------
-| [<span data-ttu-id="98f38-192">Listar permissões</span><span class="sxs-lookup"><span data-stu-id="98f38-192">List permissions</span></span>](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [<span data-ttu-id="98f38-193">Obter permissão</span><span class="sxs-lookup"><span data-stu-id="98f38-193">Get permission</span></span>](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| <span data-ttu-id="98f38-194">[Criar link][createLink]</span><span class="sxs-lookup"><span data-stu-id="98f38-194">[Create link][createLink]</span></span>                                | `POST /drive/items/{item-id}/createLink`
-| <span data-ttu-id="98f38-195">[Convidar pessoas][invite]</span><span class="sxs-lookup"><span data-stu-id="98f38-195">[Invite people][invite]</span></span>                                  | `POST /drive/items/{item-id}/invite`
-| [<span data-ttu-id="98f38-196">Atualizar</span><span class="sxs-lookup"><span data-stu-id="98f38-196">Update</span></span>](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [<span data-ttu-id="98f38-197">Delete</span><span class="sxs-lookup"><span data-stu-id="98f38-197">Delete</span></span>](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-| [<span data-ttu-id="98f38-198">Adicionar usuários ao link de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="98f38-198">Add users to sharing link</span></span>](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
+| [<span data-ttu-id="42e4f-192">Listar permissões</span><span class="sxs-lookup"><span data-stu-id="42e4f-192">List permissions</span></span>](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [<span data-ttu-id="42e4f-193">Obter permissão</span><span class="sxs-lookup"><span data-stu-id="42e4f-193">Get permission</span></span>](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
+| <span data-ttu-id="42e4f-194">[Criar link][createLink]</span><span class="sxs-lookup"><span data-stu-id="42e4f-194">[Create link][createLink]</span></span>                                | `POST /drive/items/{item-id}/createLink`
+| <span data-ttu-id="42e4f-195">[Convidar pessoas][invite]</span><span class="sxs-lookup"><span data-stu-id="42e4f-195">[Invite people][invite]</span></span>                                  | `POST /drive/items/{item-id}/invite`
+| [<span data-ttu-id="42e4f-196">Atualizar</span><span class="sxs-lookup"><span data-stu-id="42e4f-196">Update</span></span>](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [<span data-ttu-id="42e4f-197">Delete</span><span class="sxs-lookup"><span data-stu-id="42e4f-197">Delete</span></span>](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [<span data-ttu-id="42e4f-198">Adicionar usuários ao link de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="42e4f-198">Add users to sharing link</span></span>](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
 [createLink]: ../api/driveitem-createlink.md
@@ -274,3 +274,5 @@ ms.locfileid: "46657907"
   "suppressions": []
 }
 -->
+
+

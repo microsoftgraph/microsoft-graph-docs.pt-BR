@@ -5,32 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 07c4deef22e92a0aaed77733b2eac22bfd0a8aaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 210dfecb6252091663aeb981fcf82e2b3535dcac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998422"
 ---
-# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="32afb-103">tipo de recurso organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="32afb-103">organizerMeetingInfo resource type</span></span>
+# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="7b1c4-103">tipo de recurso organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="7b1c4-103">organizerMeetingInfo resource type</span></span>
 
-<span data-ttu-id="32afb-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="32afb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7b1c4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7b1c4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="32afb-105">Contém detalhes sobre o organizador da reunião.</span><span class="sxs-lookup"><span data-stu-id="32afb-105">Contains details about the meeting organizer.</span></span> 
+<span data-ttu-id="7b1c4-105">Contém detalhes sobre o organizador da reunião.</span><span class="sxs-lookup"><span data-stu-id="7b1c4-105">Contains details about the meeting organizer.</span></span> 
 
-<span data-ttu-id="32afb-106">Para ingressar em uma reunião existente, você deve fornecer uma combinação dos tipos de recurso organizerMeetingInfo e [chatInfo](./chatinfo.md) ou o tipo de recurso [tokenMeetingInfo](./tokenmeetinginfo.md) sozinho.</span><span class="sxs-lookup"><span data-stu-id="32afb-106">To join an existing meeting, you must either provide a combination of the organizerMeetingInfo and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./tokenmeetinginfo.md) resource type by itself.</span></span>
+<span data-ttu-id="7b1c4-106">Para ingressar em uma reunião existente, você deve fornecer uma combinação dos tipos de recurso organizerMeetingInfo e [chatInfo](./chatinfo.md) ou o tipo de recurso [tokenMeetingInfo](./tokenmeetinginfo.md) sozinho.</span><span class="sxs-lookup"><span data-stu-id="7b1c4-106">To join an existing meeting, you must either provide a combination of the organizerMeetingInfo and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./tokenmeetinginfo.md) resource type by itself.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="32afb-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="32afb-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7b1c4-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7b1c4-107">Properties</span></span>
 
-| <span data-ttu-id="32afb-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="32afb-108">Property</span></span>                     | <span data-ttu-id="32afb-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="32afb-109">Type</span></span>                          | <span data-ttu-id="32afb-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="32afb-110">Description</span></span>                                     |
+| <span data-ttu-id="7b1c4-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7b1c4-108">Property</span></span>                     | <span data-ttu-id="7b1c4-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="7b1c4-109">Type</span></span>                          | <span data-ttu-id="7b1c4-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="7b1c4-110">Description</span></span>                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| <span data-ttu-id="32afb-111">organizer</span><span class="sxs-lookup"><span data-stu-id="32afb-111">organizer</span></span>                    | [<span data-ttu-id="32afb-112">identitySet</span><span class="sxs-lookup"><span data-stu-id="32afb-112">identitySet</span></span>](identityset.md) | <span data-ttu-id="32afb-113">A identidade do Azure Active Directory do organizador.</span><span class="sxs-lookup"><span data-stu-id="32afb-113">The organizer Azure Active Directory identity.</span></span>  |
+| <span data-ttu-id="7b1c4-111">organizer</span><span class="sxs-lookup"><span data-stu-id="7b1c4-111">organizer</span></span>                    | [<span data-ttu-id="7b1c4-112">identitySet</span><span class="sxs-lookup"><span data-stu-id="7b1c4-112">identitySet</span></span>](identityset.md) | <span data-ttu-id="7b1c4-113">A identidade do Azure Active Directory do organizador.</span><span class="sxs-lookup"><span data-stu-id="7b1c4-113">The organizer Azure Active Directory identity.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="32afb-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="32afb-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7b1c4-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7b1c4-114">JSON representation</span></span>
 
-<span data-ttu-id="32afb-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="32afb-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7b1c4-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7b1c4-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -57,3 +57,5 @@ ms.locfileid: "42522120"
   "suppressions": []
 }
 -->
+
+
