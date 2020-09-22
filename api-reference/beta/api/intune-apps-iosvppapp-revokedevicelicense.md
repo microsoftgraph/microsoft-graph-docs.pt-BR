@@ -3,18 +3,18 @@ title: ação revokeDeviceLicense
 description: Revogar licença de dispositivo VPP do iOS atribuída para determinado aplicativo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd0e3441e3cf06d63e7bae8a86535046fbe5429b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b17c9161a0eee740daa1ac0d7ed521af2e27d9d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006129"
 ---
 # <a name="revokedevicelicense-action"></a>ação revokeDeviceLicense
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -84,6 +84,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

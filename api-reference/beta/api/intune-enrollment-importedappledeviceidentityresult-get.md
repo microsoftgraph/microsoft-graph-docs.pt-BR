@@ -3,18 +3,18 @@ title: Obter importedAppleDeviceIdentityResult
 description: Leia as propriedades e as relações do objeto importedAppleDeviceIdentityResult.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 995b64bc8cae13d8fe46de3ba6a8dd7ca9c2178d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0fe14393250657b0b05f4697410c4aac2506c868
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451152"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005135"
 ---
 # <a name="get-importedappledeviceidentityresult"></a>Obter importedAppleDeviceIdentityResult
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -89,6 +89,9 @@ Content-Length: 699
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Ação remoteLock
 description: Bloqueio remoto
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46133719054c22076944e0b9cd22c394a7b63c32
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 36ee54a1192881b11d08d176728801321a4ce39d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792237"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005268"
 ---
 # <a name="remotelock-action"></a>Ação remoteLock
 
@@ -71,6 +71,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

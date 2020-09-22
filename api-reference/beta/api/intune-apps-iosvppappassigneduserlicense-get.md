@@ -3,14 +3,14 @@ title: Obter iosVppAppAssignedUserLicense
 description: Leia as propriedades e as relações do objeto iosVppAppAssignedUserLicense.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1643e80de8bf570870045627cf4ae55ccec6df44
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: db3e73245c33157f7ba274a2a7e9901d74daea76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416473"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006024"
 ---
 # <a name="get-iosvppappassigneduserlicense"></a>Obter iosVppAppAssignedUserLicense
 
@@ -81,6 +81,9 @@ Content-Length: 318
   }
 }
 ```
+
+
+
 
 
 

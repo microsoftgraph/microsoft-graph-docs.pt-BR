@@ -3,14 +3,14 @@ title: Obter windowsAutopilotSettings
 description: Leia as propriedades e as relações do objeto windowsAutopilotSettings.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 502c2daa9d932fae3410f159d9fc230a0a5e57de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d19f2f6372a6811eb4de56a5a1d893db685677d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005121"
 ---
 # <a name="get-windowsautopilotsettings"></a>Obter windowsAutopilotSettings
 
@@ -80,6 +80,9 @@ Content-Length: 308
   }
 }
 ```
+
+
+
 
 
 

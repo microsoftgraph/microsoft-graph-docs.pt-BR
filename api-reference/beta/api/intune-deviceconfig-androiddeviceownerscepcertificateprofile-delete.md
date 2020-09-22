@@ -3,14 +3,14 @@ title: Excluir androidDeviceOwnerScepCertificateProfile
 description: Exclui androidDeviceOwnerScepCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b10097823a05dd9739764bbd62653fb8ee42b67
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 089fea5a70bf975c76c9c4e4187e9ab142a26d71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436116"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005828"
 ---
 # <a name="delete-androiddeviceownerscepcertificateprofile"></a>Excluir androidDeviceOwnerScepCertificateProfile
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

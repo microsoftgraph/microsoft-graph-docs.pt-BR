@@ -3,14 +3,14 @@ title: Listar androidDeviceOwnerCertificateProfileBases
 description: Listar Propriedades e relações dos objetos androidDeviceOwnerCertificateProfileBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aec0d44dc59c31530efc14314e1e2afb479783f7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a543afcfa1fbf2820fce813db9587046f43f9305
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43351887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005989"
 ---
 # <a name="list-androiddeviceownercertificateprofilebases"></a>Listar androidDeviceOwnerCertificateProfileBases
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [androidDeviceOwnerCertificateProfileBase](../resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -119,6 +119,9 @@ Content-Length: 1836
   ]
 }
 ```
+
+
+
 
 
 

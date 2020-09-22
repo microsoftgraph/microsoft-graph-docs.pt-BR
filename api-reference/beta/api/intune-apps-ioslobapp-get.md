@@ -3,18 +3,18 @@ title: Acessar iosLobApp
 description: Leia as propriedades e as relações do objeto iosLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b25b826c08dc6bcf5b907019346532c0af0eca2b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 85ed7fed4ae43729ca99f158bfaa53379fe745be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006255"
 ---
 # <a name="get-ioslobapp"></a>Acessar iosLobApp
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1696
+Content-Length: 1757
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 1696
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -124,6 +126,9 @@ Content-Length: 1696
   }
 }
 ```
+
+
+
 
 
 

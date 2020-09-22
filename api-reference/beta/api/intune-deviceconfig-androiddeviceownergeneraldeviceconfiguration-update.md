@@ -3,14 +3,14 @@ title: Atualizar androidDeviceOwnerGeneralDeviceConfiguration
 description: Atualiza as propriedades de um objeto androidDeviceOwnerGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b6aeaeba5ac15696b27436929b783f757ed926c
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 10b53ccaa538b4a357684d7755c4f37c634d72cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005982"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>Atualizar androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeia de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -88,7 +88,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Indica o perfil de registro que você deseja configurar. Os valores possíveis são: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
 |dataRoamingBlocked|Booliano|Indica se um usuário será ou não bloqueado de roaming de dados.|
 |dateTimeConfigurationBlocked|Booliano|Indica se o usuário será ou não impedido de alterar manualmente a data ou a hora no dispositivo|
-|factoryResetDeviceAdministratorEmails|Coleção de cadeia de caracteres|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
+|factoryResetDeviceAdministratorEmails|Coleção String|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica em configurações está desabilitada.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|O proxy é configurado diretamente com hosts, porta e hosts excluídos.|
 |googleAccountsBlocked|Booliano|Indica se as contas do Google serão bloqueadas ou não.|
@@ -113,7 +113,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |kioskModeScreenOrientation|[androidDeviceOwnerKioskModeScreenOrientation](../resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)|Configuração de orientação de tela para a tela inicial gerenciada no modo quiosque. Os valores possíveis são: `notConfigured`, `portrait`, `landscape`, `autoRotate`.|
 |kioskModeIconSize|[androidDeviceOwnerKioskModeIconSize](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|Configuração de tamanho de ícone para a tela inicial gerenciada no modo quiosque. Os possíveis valores são: `notConfigured`, `smallest`, `small`, `regular`, `large`, `largest`.|
 |kioskModeFolderIcon|[androidDeviceOwnerKioskModeFolderIcon](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|Configuração de ícone de pasta para a tela inicial gerenciada no modo quiosque. Os valores possíveis são: `notConfigured`, `darkSquare`, `darkCircle`, `lightSquare`, `lightCircle`.|
-|kioskModeWifiAllowedSsids|Coleção de cadeia de caracteres|O conjunto restrito de SSIDs WIFI disponíveis para o usuário configurar no modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
+|kioskModeWifiAllowedSsids|Coleção String|O conjunto restrito de SSIDs WIFI disponíveis para o usuário configurar no modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
 |microphoneForceMute|Booliano|Indica se a desativação do microfone no dispositivo deve ou não ser bloqueada.|
 |networkEscapeHatchAllowed|Booliano|Indica se o dispositivo permitirá ou não conexão com uma conexão de rede temporária no momento da inicialização.|
 |nfcBlockOutgoingBeam|Booliano|Indica se o feixe de saída NFC deve ou não ser bloqueado.|
@@ -152,6 +152,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |vpnAlwaysOnPackageIdentifier|String|Nome do pacote do aplicativo Android para o aplicativo que manipulará uma conexão VPN sempre ativa.|
 |wifiBlockEditConfigurations|Booliano|Indica se o usuário será ou não impedido de editar as configurações de conexão WiFi.|
 |wifiBlockEditPolicyDefinedConfigurations|Booliano|Indica se o usuário será ou não impedido de editar apenas as redes definidas pela política.|
+|personalProfileAppsAllowInstallFromUnknownSources|Booliano|Indica se o usuário pode instalar aplicativos de fontes desconhecidas no perfil pessoal.|
+|personalProfileCameraBlocked|Booliano|Indica se o uso da câmera no perfil pessoal deve ser desativado.|
+|personalProfileScreenCaptureBlocked|Booliano|Indica se a capacidade de realizar capturas de tela no perfil pessoal deve ser desabilitada.|
+|workProfilePasswordExpirationDays|Int32|Indica o número de dias que uma senha de perfil de trabalho pode ser definida antes de expirar e uma nova senha será necessária. Valores válidos de 1 a 365|
+|workProfilePasswordMinimumLength|Int32|Indica o comprimento mínimo da senha do perfil de trabalho. Valores válidos de 4 a 16|
+|workProfilePasswordMinimumNumericCharacters|Int32|Indica o número mínimo de caracteres numéricos necessários para a senha do perfil de trabalho. Valores válidos de 1 a 16|
+|workProfilePasswordMinimumNonLetterCharacters|Int32|Indica o número mínimo de caracteres que não são letras necessários para a senha do perfil de trabalho. Valores válidos de 1 a 16|
+|workProfilePasswordMinimumLetterCharacters|Int32|Indica o número mínimo de caracteres de letras necessários para a senha do perfil de trabalho. Valores válidos de 1 a 16|
+|workProfilePasswordMinimumLowerCaseCharacters|Int32|Indica o número mínimo de caracteres de maiúsculas e minúsculas necessários para a senha do perfil de trabalho. Valores válidos de 1 a 16|
+|workProfilePasswordMinimumUpperCaseCharacters|Int32|Indica o número mínimo de caracteres de letras maiúsculas necessários para a senha do perfil de trabalho. Valores válidos de 1 a 16|
+|workProfilePasswordMinimumSymbolCharacters|Int32|Indica o número mínimo de caracteres de símbolo necessários para a senha do perfil de trabalho. Valores válidos de 1 a 16|
+|workProfilePasswordPreviousPasswordCountToBlock|Int32|Indica o comprimento do histórico de senhas do perfil de trabalho, onde o usuário não poderá inserir uma nova senha que seja igual a qualquer senha no histórico. Valores válidos de 0 a 24|
+|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Indica o número de vezes que um usuário pode inserir uma senha de perfil de trabalho incorreta antes que o dispositivo seja apagado. Valores válidos de 4 a 11|
+|workProfilePasswordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indica a qualidade mínima da senha necessária na senha do perfil de trabalho. Os valores possíveis são: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 
 
 
@@ -165,7 +179,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5359
+Content-length: 6096
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -301,7 +315,21 @@ Content-length: 5359
   "vpnAlwaysOnLockdownMode": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "wifiBlockEditConfigurations": true,
-  "wifiBlockEditPolicyDefinedConfigurations": true
+  "wifiBlockEditPolicyDefinedConfigurations": true,
+  "personalProfileAppsAllowInstallFromUnknownSources": true,
+  "personalProfileCameraBlocked": true,
+  "personalProfileScreenCaptureBlocked": true,
+  "workProfilePasswordExpirationDays": 1,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfilePasswordMinimumNumericCharacters": 11,
+  "workProfilePasswordMinimumNonLetterCharacters": 13,
+  "workProfilePasswordMinimumLetterCharacters": 10,
+  "workProfilePasswordMinimumLowerCaseCharacters": 13,
+  "workProfilePasswordMinimumUpperCaseCharacters": 13,
+  "workProfilePasswordMinimumSymbolCharacters": 10,
+  "workProfilePasswordPreviousPasswordCountToBlock": 15,
+  "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+  "workProfilePasswordRequiredType": "required"
 }
 ```
 
@@ -310,7 +338,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5531
+Content-Length: 6268
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -449,9 +477,26 @@ Content-Length: 5531
   "vpnAlwaysOnLockdownMode": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "wifiBlockEditConfigurations": true,
-  "wifiBlockEditPolicyDefinedConfigurations": true
+  "wifiBlockEditPolicyDefinedConfigurations": true,
+  "personalProfileAppsAllowInstallFromUnknownSources": true,
+  "personalProfileCameraBlocked": true,
+  "personalProfileScreenCaptureBlocked": true,
+  "workProfilePasswordExpirationDays": 1,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfilePasswordMinimumNumericCharacters": 11,
+  "workProfilePasswordMinimumNonLetterCharacters": 13,
+  "workProfilePasswordMinimumLetterCharacters": 10,
+  "workProfilePasswordMinimumLowerCaseCharacters": 13,
+  "workProfilePasswordMinimumUpperCaseCharacters": 13,
+  "workProfilePasswordMinimumSymbolCharacters": 10,
+  "workProfilePasswordPreviousPasswordCountToBlock": 15,
+  "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+  "workProfilePasswordRequiredType": "required"
 }
 ```
+
+
+
 
 
 

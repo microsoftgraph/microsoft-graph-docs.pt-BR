@@ -3,14 +3,14 @@ title: Obter androidForWorkGmailEasConfiguration
 description: Leia as propriedades e as relações do objeto androidForWorkGmailEasConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 776f7bc7aecacd0a1f74392e2ca5945af9320426
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6509c92d66a28cf35e00b291419b1ca8196b2602
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43346626"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005590"
 ---
 # <a name="get-androidforworkgmaileasconfiguration"></a>Obter androidForWorkGmailEasConfiguration
 
@@ -115,6 +115,9 @@ Content-Length: 1531
   }
 }
 ```
+
+
+
 
 
 

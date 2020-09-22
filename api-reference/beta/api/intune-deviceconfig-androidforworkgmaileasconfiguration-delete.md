@@ -3,14 +3,14 @@ title: Excluir androidForWorkGmailEasConfiguration
 description: Exclui androidForWorkGmailEasConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c9c2811462d9f564b0f11a6e359650dd8f8430d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b632d022f04de163eb1cee457cbc4bb2badb88e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43346715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005597"
 ---
 # <a name="delete-androidforworkgmaileasconfiguration"></a>Excluir androidForWorkGmailEasConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

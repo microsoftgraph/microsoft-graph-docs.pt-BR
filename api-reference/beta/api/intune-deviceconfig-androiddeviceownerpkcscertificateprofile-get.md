@@ -3,18 +3,18 @@ title: Obter androidDeviceOwnerPkcsCertificateProfile
 description: Leia as propriedades e as relações do objeto androidDeviceOwnerPkcsCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76d40f40232f477ec06e33422654fba330fd4503
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 9822414bab234603fab6c44b96a5db36a6220fdb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793091"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005870"
 ---
 # <a name="get-androiddeviceownerpkcscertificateprofile"></a>Obter androidDeviceOwnerPkcsCertificateProfile
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -135,6 +135,9 @@ Content-Length: 2385
   }
 }
 ```
+
+
+
 
 
 

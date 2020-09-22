@@ -3,18 +3,18 @@ title: Excluir deviceManagementIntentAssignment
 description: Exclui deviceManagementIntentAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76d562342fbe3c27b6c3bb14293602a5c3767183
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 451c6bd97bb413888cde99929f095006b92f585f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43327363"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005317"
 ---
 # <a name="delete-devicemanagementintentassignment"></a>Excluir deviceManagementIntentAssignment
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

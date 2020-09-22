@@ -3,18 +3,18 @@ title: Excluir androidForWorkGeneralDeviceConfiguration
 description: Exclui androidForWorkGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42f04075c893b8b9415f2602841e18dfeab7fd83
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 46802dc9166c4177c5ba941e171b608a5019d69d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43346925"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005688"
 ---
 # <a name="delete-androidforworkgeneraldeviceconfiguration"></a>Excluir androidForWorkGeneralDeviceConfiguration
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

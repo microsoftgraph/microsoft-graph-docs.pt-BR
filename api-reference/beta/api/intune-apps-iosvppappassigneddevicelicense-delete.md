@@ -3,18 +3,18 @@ title: Excluir iosVppAppAssignedDeviceLicense
 description: Exclui iosVppAppAssignedDeviceLicense.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 249b04c4e2ba1719fa151434886880be61764464
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6af787484c260714c77bcede9f429b167ef8147d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006094"
 ---
 # <a name="delete-iosvppappassigneddevicelicense"></a>Excluir iosVppAppAssignedDeviceLicense
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

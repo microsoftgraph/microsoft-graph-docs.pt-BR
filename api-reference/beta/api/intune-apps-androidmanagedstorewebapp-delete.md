@@ -3,14 +3,14 @@ title: Excluir androidManagedStoreWebApp
 description: Exclui androidManagedStoreWebApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85b297fdc4d4f5aed3bbcf605d9c7f850c76274d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9cc063820db8788b3d2352df3029e8364255f90d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417404"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006311"
 ---
 # <a name="delete-androidmanagedstorewebapp"></a>Excluir androidManagedStoreWebApp
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

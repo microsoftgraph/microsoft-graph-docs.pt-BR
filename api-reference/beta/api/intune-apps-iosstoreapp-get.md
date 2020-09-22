@@ -3,14 +3,14 @@ title: Acessar iosStoreApp
 description: Leia as propriedades e as relações do objeto iosStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83e18e01503cb08fe99bec81b03c5692cbc8e195
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 088ce1d6e0c68b6ec4602c2d2c02dbc73083746c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416930"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006115"
 ---
 # <a name="get-iosstoreapp"></a>Acessar iosStoreApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1433
+Content-Length: 1494
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 1433
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "bundleId": "Bundle Id value",
     "appStoreUrl": "https://example.com/appStoreUrl/",
     "applicableDeviceType": {
@@ -118,6 +120,9 @@ Content-Length: 1433
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Acessar windows81CompliancePolicy
 description: Leia as propriedades e as relações do objeto windows81CompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9dc853d6e1cb898cdfa9892034e8196529bbb56f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 582472eab3940208d078a86f06ca38e7a4cf5111
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43430552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005401"
 ---
 # <a name="get-windows81compliancepolicy"></a>Acessar windows81CompliancePolicy
 
@@ -96,6 +96,9 @@ Content-Length: 897
   }
 }
 ```
+
+
+
 
 
 

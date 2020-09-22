@@ -3,14 +3,14 @@ title: Obter androidForWorkImportedPFXCertificateProfile
 description: Leia as propriedades e as relações do objeto androidForWorkImportedPFXCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4d417ac457c2dc33ad443fa037fd88057815e52
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a6c3b718f1eca679c2580ca1734769761dc05d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43346086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005541"
 ---
 # <a name="get-androidforworkimportedpfxcertificateprofile"></a>Obter androidForWorkImportedPFXCertificateProfile
 
@@ -122,6 +122,9 @@ Content-Length: 1780
   }
 }
 ```
+
+
+
 
 
 

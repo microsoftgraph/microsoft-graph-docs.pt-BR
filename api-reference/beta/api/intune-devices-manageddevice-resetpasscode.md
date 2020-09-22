@@ -3,14 +3,14 @@ title: Ação resetPasscode
 description: Redefinir senha
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 728b38501361bc048b7110aabc35ba0b50baad7f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c985ffca039019a6b03fc9a123a067fbf14e3ddd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005254"
 ---
 # <a name="resetpasscode-action"></a>Ação resetPasscode
 
@@ -71,6 +71,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
