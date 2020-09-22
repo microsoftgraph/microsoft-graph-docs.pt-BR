@@ -3,14 +3,14 @@ title: Ação setMobileDeviceManagementAuthority
 description: Define uma autoridade de gerenciamento de dispositivo móvel
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c716cc4adad6c8e8a07f762f39c468b396280dd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 21944b1d967604b620b3abf7d55fe1b44aaddfd7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020101"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>ação setMobileDeviceManagementAuthority
 
@@ -71,6 +71,9 @@ Content-Length: 18
   "value": 2
 }
 ```
+
+
+
 
 
 

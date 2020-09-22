@@ -3,14 +3,14 @@ title: tipo de enumeração androidForWorkBindStatus
 description: Vincular o status do locatário à API do Google EMM
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b688452a5a6e0c8d47871f06279bc22344c6508a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 97b09da56c41426e763bfee952702615e853ec1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459242"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019681"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>tipo de enumeração androidForWorkBindStatus
 
@@ -26,9 +26,12 @@ Vincular o status do locatário à API do Google EMM
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não acoplado|,0|Ainda não documentado|
-|limite|1|Ainda não documentado|
-|boundAndValidated|duas|Ainda não documentado|
-|desassociação|3D|Ainda não documentado|
+|limite|1 |Ainda não documentado|
+|boundAndValidated|2 |Ainda não documentado|
+|desassociação|3 |Ainda não documentado|
+
+
+
 
 
 

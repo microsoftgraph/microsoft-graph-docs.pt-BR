@@ -3,14 +3,14 @@ title: tipo de enumeração vppTokenAccountType
 description: Tipos possíveis de um token do Apple Volume Purchase Program.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3894f902de9edf8fed23becd01fca3a86136ce55
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d8c655bd2f05bc7da057f0c86b7fa481f05aff44
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445591"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020563"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>tipo de enumeração vppTokenAccountType
 
@@ -24,7 +24,9 @@ Tipos possíveis de um token do Apple Volume Purchase Program.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Business|,0|Token do Apple Volume Purchase Program associado a um programa de negócios.|
-|educacionais|1|Token do Apple Volume Purchase Program associado a um programa Education.|
+|educacionais|1 |Token do Apple Volume Purchase Program associado a um programa Education.|
+
+
 
 
 

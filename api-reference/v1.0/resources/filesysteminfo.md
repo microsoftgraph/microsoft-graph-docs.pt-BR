@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso FileSystemInfo contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c53710ebdf2c14b405d69f883a125e4d14b6b7b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cad6b441cc3ffa166bccb019e535513153789872
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532942"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018330"
 ---
 # <a name="filesysteminfo-facet"></a>Faceta fileSystemInfo
 
@@ -73,3 +73,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/FileSystemInfo"
 } -->
+

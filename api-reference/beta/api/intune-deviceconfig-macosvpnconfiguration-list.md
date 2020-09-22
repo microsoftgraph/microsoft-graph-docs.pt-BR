@@ -3,14 +3,14 @@ title: Listar macOSVpnConfigurations
 description: Listar Propriedades e relações dos objetos macOSVpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3034dc21804499610d7809ca223516bda98d92f6
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 5ecaf0fb67a1072040b000484f591f04b560840e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017868"
 ---
 # <a name="list-macosvpnconfigurations"></a>Listar macOSVpnConfigurations
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3226
+Content-Length: 3342
 
 {
   "value": [
@@ -154,6 +154,10 @@ Content-Length: 3226
         }
       ],
       "providerType": "appProxy",
+      "excludedDomains": [
+        "Excluded Domains value"
+      ],
+      "disableOnDemandUserOverride": true,
       "proxyServer": {
         "@odata.type": "microsoft.graph.vpnProxyServer",
         "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -165,6 +169,9 @@ Content-Length: 3226
   ]
 }
 ```
+
+
+
 
 
 

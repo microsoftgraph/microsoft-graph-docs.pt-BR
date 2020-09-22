@@ -4,12 +4,12 @@ description: Instruções de tratamento de erro para APIs do Excel no Microsoft 
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 82bbcf6c93146c66aa76d01aa3d111f515a97b61
-ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+ms.openlocfilehash: e9968877e9b3153ad455ed7f0c693b4a70c2c2b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47367219"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018085"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Tratamento de erros para APIs do Excel no Microsoft Graph
 
@@ -86,7 +86,7 @@ Para o padrão de operação de execução demorada e o padrão normal, recomend
 | **conflictUncategorized**                   | A solicitação com falha entra em conflito com determinado estado do servidor. O cliente do Microsoft Graph não deve reenviar a solicitação com falha até que o conflito seja resolvido. Um usuário final pode optar por executar manualmente as mesmas operações com o Excel online para obter mais detalhes sobre o conflito.
 | **filteredRangeConflict**                   | A operação falhou porque está em conflito com um intervalo filtrado. O cliente do Microsoft Graph não espera reenviar a solicitação com falha.
 | **forbiddenUncategorized**                    | A solicitação com falha não é permitida. O cliente do Microsoft Graph não espera reenviar a solicitação com falha. Um usuário final pode optar por executar manualmente as mesmas operações com o Excel online para obter mais detalhes sobre as restrições.
-| **gatewayTimeoutUncategorized**         | O serviço não pôde concluir a solicitação dentro do limite de tempo. O cliente do Microsoft Graph não deve reenviar a solicitação com falha até que a duração de cooldown especificada seja aprovada.
+| **gatewayTimeoutUncategorized**         | O serviço não pôde concluir a solicitação dentro do limite de tempo.
 | **generalException**         | Ocorreu um erro interno ao processar a solicitação. O cliente do Microsoft Graph não espera reenviar a solicitação com falha.
 | **insertDeleteConflict**         | A tentativa de operação de exclusão ou inserção resultou em um conflito. O cliente do Microsoft Graph não espera reenviar a solicitação com falha.
 | **internalServerErrorUncategorized**       | Ocorreu um erro não especificado. O cliente do Microsoft Graph não espera reenviar a solicitação com falha. Se uma sessão for especificada na solicitação com falha, o acesso adicional à sessão não será esperado.
@@ -120,7 +120,7 @@ Para o padrão de operação de execução demorada e o padrão normal, recomend
 
 ### <a name="3-parse-the-top-level-error-code"></a>3. analisar o código de erro de nível superior
 
-Se você não conseguir encontrar o código de erro de segundo nível listado no tópico [códigos de erro](workbook-error-codes.md#error-code) , recomendamos seguir as instruções fornecidas para erros de nível superior, que estão vinculados ao código de status. Para obter detalhes sobre códigos de erro de nível superior e mensagens, consulte [códigos de erro detalhados](workbook-error-codes.md#detailed-error-code).
+Se você não conseguir encontrar o código de erro de segundo nível listado no tópico [sobre códigos de erro detalhado](workbook-error-codes.md#detailed-error-code) , recomendamos seguir as instruções fornecidas para erros de nível superior. Os códigos de erro de nível superior são vinculados ao código de status e você pode executar ações de acordo com os códigos de status correspondentes. Para obter detalhes sobre códigos de erro de nível superior e mensagens, consulte [códigos de erro](workbook-error-codes.md#error-code).
 
 ### <a name="4-parse-the-status-code"></a>4. analisar o código de status
 
@@ -129,6 +129,10 @@ Se o código de erro que você encontrar não estiver na lista de segundo nível
 ### <a name="5-error-recovery-cooldown"></a>5. recuperação de erro cooldown
 
 Para algumas das respostas no padrão normal, uma duração de cooldown de recuperação em segundos pode ser fornecida por meio de um `Retry-After` cabeçalho. Quando uma duração de cooldown de recuperação estiver presente, o cliente do Microsoft Graph não deverá enviar solicitações de acompanhamento antes que a duração especificada seja aprovada.
+
+## <a name="special-case-handling"></a>Tratamento especial de casos
+
+Para [solicitações de sessão](excel-manage-sessions.md#request-types), recomendamos que você recrie a sessão se encontrar um `503/serviceUnavailable` erro ou `502/badGateway` .
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",

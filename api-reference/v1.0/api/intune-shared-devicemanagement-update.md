@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57fddece1d8059e46121f23596180636c5765913
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f265c4e8665d607b1bed87e7c61949131877fa99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019114"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -23,22 +23,22 @@ Atualizar as propriedades de um objeto [deviceManagement](../resources/intune-sh
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo&nbsp;&nbsp;de permissão (&nbsp;por fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
+| &nbsp;Tipo &nbsp; de permissão (por &nbsp; fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
 |:---|:---|
 | Delegado (conta corporativa ou de estudante) |
-| &nbsp;&nbsp; Auditoria | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Termos da empresa | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Registro corporativo | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp;&nbsp; Configuração do dispositivo | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; Gerenciamento de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Endpoint Protection | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Notificação | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Integração | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Controle de acesso baseado em função | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; Assistência remota | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Gerenciamento de despesas de telecomunicações | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Proteção de informações do Windows | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;Auditoria | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;Termos da empresa | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Registro corporativo | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp;Configuração do dispositivo | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp;Gerenciamento de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Endpoint Protection | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Notificação | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Integração | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Controle de acesso baseado em função | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp;Assistência remota | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Gerenciamento de despesas de telecomunicações | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Proteção de informações do Windows | DeviceManagementApps.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
 | Aplicativo | Sem suporte. |
 
@@ -144,6 +144,9 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
 
 
 

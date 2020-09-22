@@ -3,14 +3,14 @@ title: Atualizar deviceCompliancePolicySettingStateSummary
 description: Atualizar as propriedades de um objeto deviceCompliancePolicySettingStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3cee33abd7778f4b0f6ca619829d35c4aeddfcaa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 315682864d92317071c32ada663235dc4c562b17
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433909"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017958"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>Atualizar deviceCompliancePolicySettingStateSummary
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|configuração|String|O nome da classe de configuração e o nome da propriedade.|
+|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|Nome da configuração.|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Configuração de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
@@ -116,6 +116,9 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

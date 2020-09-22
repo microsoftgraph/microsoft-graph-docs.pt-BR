@@ -3,14 +3,14 @@ title: Tipo de recurso androidForWorkAppConfigurationSchemaItem
 description: Item de configuração único dentro de um esquema de configurações personalizadas de um aplicativo do Android for Work.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8ed09ee79b8a5607f4aec0647ed7d221ee407e5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 13af3b581498a4285773b2fda02d5596127c3012
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019667"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchemaItem
 
@@ -25,8 +25,8 @@ Item de configuração único dentro de um esquema de configurações personaliz
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|schemaItemKey|String|Chave exclusiva que o aplicativo usa para identificar o item|
-|displayName|Cadeia de caracteres|Nome legível por humanos|
+|schemaItemKey|Cadeia de caracteres|Chave exclusiva que o aplicativo usa para identificar o item|
+|displayName|String|Nome legível por humanos|
 |description|String|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
 |defaultIntValue|Int32|Valor padrão para itens do tipo inteiro, se especificado pelo desenvolvedor do aplicativo|
@@ -67,6 +67,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

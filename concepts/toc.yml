@@ -520,7 +520,19 @@ items:
           - name: Visão geral do kit de ferramentas
             href: toolkit/overview.md
           - name: Introdução
-            href: toolkit/get-started.md
+            items:
+              - name: Visão geral
+                href: toolkit/get-started/overview.md
+              - name: Criar um aplicativo Web (JavaScript)
+                href: toolkit/get-started/build-a-web-app.md
+              - name: Criar uma web part do Microsoft Office SharePoint Online
+                href: toolkit/get-started/build-a-sharepoint-web-part.md
+              - name: Criar uma guia do Microsoft Teams
+                href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Usar o kit de ferramentas com reagir
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Usar o kit de ferramentas com o angular
+                href: toolkit/get-started/use-toolkit-with-angular.md
           - name: Componentes
             items:
               - name: Logon

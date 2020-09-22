@@ -3,14 +3,14 @@ title: tipo de recurso numberRange
 description: Definição do intervalo de números.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e47252b42fe7be886a1d6ce7c0d71b6c2dc1b21
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c9f2cf7d1a79b59f289a607820ff82412591c784
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019527"
 ---
 # <a name="numberrange-resource-type"></a>tipo de recurso numberRange
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "upperNumber": 1024
 }
 ```
+
+
+
 
 
 

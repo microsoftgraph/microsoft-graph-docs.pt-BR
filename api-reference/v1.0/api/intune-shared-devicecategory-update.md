@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84dca5f142e526da4624ae62b5c8c229c8bd14da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 818a23039bc761072801f83ee1991da25109fca6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019142"
 ---
 # <a name="update-devicecategory"></a>Atualizar deviceCategory
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
-|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|displayName|String|Nome de exibição da categoria de dispositivo.|
 |description|String|Descrição opcional da categoria do dispositivo.|
 
 
@@ -93,6 +93,9 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
+
 
 
 

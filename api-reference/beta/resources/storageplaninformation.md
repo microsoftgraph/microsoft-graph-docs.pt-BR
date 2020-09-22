@@ -6,16 +6,16 @@ title: Adicionadostorageplaninformation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 79254efa033528bd8fd4cf66a07959a71e3fef1a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4c115276631c67cb796fd06c582dd490d4c59b20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520433"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019464"
 ---
 # <a name="storageplaninformation-resource-type"></a>tipo de recurso Adicionadostorageplaninformation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ O recurso **adicionadostorageplaninformation** fornece informações sobre os pl
 
 | Nome da propriedade     | Tipo      | Descrição                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| upgradeAvailable  | Boolean   | Indica se há planos de cota de armazenamento mais altos disponíveis. Somente leitura. |
+| upgradeAvailable  | Booliano   | Indica se há planos de cota de armazenamento mais altos disponíveis. Somente leitura. |
 
 
 <!--
@@ -52,4 +52,6 @@ O recurso **adicionadostorageplaninformation** fornece informações sobre os pl
   "suppressions": []
 }
 -->
+
+
 

@@ -5,16 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: c381f3507df9b979fd409add56975ac79db008a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cf8f1c3fc9f7f6c1bbb873059031be3565f574b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521832"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019492"
 ---
 # <a name="using-order-hints-in-planner"></a>Usando dicas de ordenação no Planner
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Por exemplo, um item com dica de ordenação `a` (valor ordinal 97) seria coloca
 
 Os valores de todas as dicas de ordenação são calculados pelo serviço. O cliente pode reordenar os itens especificando a dica de ordenação do item que foi movido entre dois itens definindo a dica de ordenação do seguinte valor: `<previous order hint> <next order hint>!`, onde `<previous order hint>` deve ser substituído pela dica de ordenação do item que vem antes do novo local desejado e `<next order hint>` deve ser substituído pela dica de ordenação do item que vem depois do novo local desejado. Há um caractere de espaço entre esses valores de dica de ordenação e o valor inteiro tem o sufixo `!`. Se o item não estiver presente, deve ser usada uma cadeia de caracteres vazia. Esse valor também pode ser composto por cálculos anteriores e pode ser usado no cliente para classificar os itens exatamente como as dicas de ordenação retornadas pelo serviço. Depois que o cliente envia esses valores em uma atualização, o serviço calculará um valor curto que classifica no local desejado.
 
-> **Observação:** Nos exemplos a seguir, os valores de dica de ordem real são colocados entre caracteres de`'`aspas simples () para maior clareza, no entanto, eles não fazem parte dos dados e não devem ser enviados para o serviço.
+> **Observação:** Nos exemplos a seguir, os valores de dica de ordem real são colocados entre caracteres de aspas simples ( `'` ) para maior clareza, no entanto, eles não fazem parte dos dados e não devem ser enviados para o serviço.
  
 Por exemplo, considere a seguinte lista de dicas de ordem de classificação:
 
@@ -55,7 +55,7 @@ Por fim, mover o Item 5 entre o Item 3 e o Item 4 geraria:
 4. Item 2 (Dica de ordenação: `'adhg'`)
 5. Item 1 (Dica de ordenação: `'adhg ! !'`)
 
-Quando essas alterações nos valores de dica de ordenação são enviadas para o serviço em solicitações de patch, o serviço calculará os valores adequados que mantêm a ordem pretendida pelo cliente. O cliente pode obter os valores imediatos se `Prefer: return=representation` o cabeçalho de preferência for especificado `PATCH` nas solicitações. Os valores do caso acima podem ter a seguinte aparência (os valores reais podem diferir). 
+Quando essas alterações nos valores de dica de ordenação são enviadas para o serviço em solicitações de patch, o serviço calculará os valores adequados que mantêm a ordem pretendida pelo cliente. O cliente pode obter os valores imediatos se o `Prefer: return=representation` cabeçalho de preferência for especificado nas `PATCH` solicitações. Os valores do caso acima podem ter a seguinte aparência (os valores reais podem diferir). 
 
 1. Item 3 (Dica de ordenação: `'432b'`)
 2. Item 5 (Dica de ordenação: `'6F"#'`)
@@ -78,6 +78,8 @@ Adicione o terceiro item à parte inferior:
 1. Item 2 (Dica de ordenação: `'  !!'`)
 2. Item 1 (Dica de ordenação: `' !'`)
 3. Item 3 (Dica de ordenação: `' ! !'`)
+
+
 
 
 

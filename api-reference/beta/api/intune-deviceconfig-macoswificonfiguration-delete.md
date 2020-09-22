@@ -3,14 +3,14 @@ title: Excluir macOSWiFiConfiguration
 description: Exclui macOSWiFiConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: caa57bf6610f1d7de1b6597fa84526eca280fee5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 132d15b5de3869382ecdb4af8ae9564ec7a5086d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017819"
 ---
 # <a name="delete-macoswificonfiguration"></a>Excluir macOSWiFiConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

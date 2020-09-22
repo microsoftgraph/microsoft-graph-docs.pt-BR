@@ -3,14 +3,14 @@ title: Criar windowsDefenderApplicationControlSupplementalPolicyAssignment
 description: Criar um novo objeto windowsDefenderApplicationControlSupplementalPolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02b478f19ee13bdb02e0e49fc28a71e0e2b7b0c1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: f5f5082ae14beff41308b6eaf6b26bafe4e406a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791262"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019941"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>Criar windowsDefenderApplicationControlSupplementalPolicyAssignment
 
@@ -97,6 +97,9 @@ Content-Length: 417
   }
 }
 ```
+
+
+
 
 
 

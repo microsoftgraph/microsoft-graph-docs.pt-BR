@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b613cf9c12a48420acb1e3c8e936ccda9b119407
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 1eb5919a80bb3d2fb0eb389e6c5a9fbc284a7395
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017217"
 ---
 # <a name="reports-getgrouparchivedprintjobs"></a>relatórios: getGroupArchivedPrintJobs
 
@@ -101,3 +101,4 @@ Content-length: 236
   "section": "documentation",
   "tocPath": ""
 }-->
+

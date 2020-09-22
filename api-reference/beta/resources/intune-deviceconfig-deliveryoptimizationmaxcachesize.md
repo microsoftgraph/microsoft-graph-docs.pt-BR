@@ -3,14 +3,14 @@ title: tipo de recurso deliveryOptimizationMaxCacheSize
 description: Tipos de tamanho máximo de cache da otimização de entrega.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bbc649d4365b0b013ac632b930813c906c231843
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bd7f63b6c77d8b3e47b5a6b37af24ee52484464a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019541"
 ---
 # <a name="deliveryoptimizationmaxcachesize-resource-type"></a>tipo de recurso deliveryOptimizationMaxCacheSize
 
@@ -41,6 +41,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deliveryOptimizationMaxCacheSize"
 }
 ```
+
+
+
 
 
 

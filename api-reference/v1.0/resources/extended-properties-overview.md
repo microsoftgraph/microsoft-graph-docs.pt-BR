@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: f7992e2edf1a9ce61b9ee4d7fd4afe99c985a9b2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 32e328a0d66a954d630213d5731c8e3601b7ce37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018505"
 ---
 # <a name="outlook-extended-properties-overview"></a>Visão geral das propriedades estendidas do Outlook
 
@@ -25,7 +25,7 @@ Propriedades estendidas permitem armazenar dados personalizados e servem especif
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
 
-Ou, nos seguintes recursos de grupo do Office 365:
+Ou, nos seguintes recursos de grupo do Microsoft 365:
 
 - grupo [event](../resources/event.md)
 - grupo [calendar](../resources/calendar.md)
@@ -92,4 +92,5 @@ Operações de propriedades estendidas de vários valores:
 
 - [Criar uma propriedade estendida em uma instância de recurso nova ou existente](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Obter uma instância de recurso com uma propriedade estendida usando `$expand`](../api/multivaluelegacyextendedproperty-get.md).
+
 

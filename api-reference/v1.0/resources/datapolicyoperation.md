@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8a67d1833a56bb8e1fc1a7c5f5716d165c755f41
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bacdcc3c2ec7368597a03d40e6835f09e02cd7f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018778"
 ---
 # <a name="datapolicyoperation-resource-type"></a>tipo de recurso dataPolicyOperation
 
@@ -23,7 +23,7 @@ Representa uma operação de política de dados enviada. Ele contém informaçõ
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter dataPolicyOperation](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |Recupere as propriedades do objeto **dataPolicyOperation** .|
-|[Exportar dados pessoais](../api/user-exportpersonaldata.md) | None |Enviar uma solicitação de operação de política de dados para exportar dados do usuário organizacional que podem ser lidas novamente usando [Get dataPolicyOperation](../api/datapolicyoperation-get.md)|
+|[Exportar dados pessoais](../api/user-exportpersonaldata.md) | Nenhum |Enviar uma solicitação de operação de política de dados para exportar dados do usuário organizacional que podem ser lidas novamente usando [Get dataPolicyOperation](../api/datapolicyoperation-get.md)|
 
 ## <a name="properties"></a>Propriedades
 
@@ -77,3 +77,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

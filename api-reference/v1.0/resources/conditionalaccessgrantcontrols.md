@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aadf38ac5cff15e4c085f77df36aa6fd48fa272f
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: e48d179e53111cc69b72eb8aa61c52ae105764df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384409"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018904"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>tipo de recurso conditionalAccessGrantControls
 
@@ -22,10 +22,10 @@ Representa os controles de concessão que devem ser atendidos para passar a pol�
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| operator | Cadeia de caracteres | Define o relacionamento dos controles de concessão. Valores possíveis: `AND` , `OR` . |
-| builtInControls | String collection | Lista de valores de controles internos exigidos pela política. Valores possíveis: `Block` , `Mfa` ,,, `CompliantDevice` `DomainJoinedDevice` `ApprovedApplication` ,`CompliantApplication` |
-| customAuthenticationFactors | String collection | Lista de IDs de controles personalizados exigidos pela política. Para obter mais informações, consulte [Custom Controls](https://docs.microsoft.com/azure/active-directory/conditional-access/controls). |
-| termsOfUse | String collection | Lista de [termos de uso](https://docs.microsoft.com/graph/api/resources/agreement) IDs exigidos pela política. |
+| operator | String | Define o relacionamento dos controles de concessão. Valores possíveis: `AND` , `OR` . |
+| builtInControls | Coleção de cadeias de caracteres | Lista de valores de controles internos exigidos pela política. Valores possíveis: `Block` , `Mfa` ,,, `CompliantDevice` `DomainJoinedDevice` `ApprovedApplication` , `CompliantApplication` |
+| customAuthenticationFactors | Coleção de cadeias de caracteres | Lista de IDs de controles personalizados exigidos pela política. Para obter mais informações, consulte [Custom Controls](https://docs.microsoft.com/azure/active-directory/conditional-access/controls). |
+| termsOfUse | Coleção de cadeias de caracteres | Lista de [termos de uso](https://docs.microsoft.com/graph/api/resources/agreement) IDs exigidos pela política. |
 
 ## <a name="relationships"></a>Relações
 
@@ -65,3 +65,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

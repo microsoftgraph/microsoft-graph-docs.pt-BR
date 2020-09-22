@@ -5,12 +5,12 @@ title: GeolocationColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: files
-ms.openlocfilehash: fadcbefd4786805ceb4c32ec316ee42727f3fb5d
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: ab46534dd92eb80e40e7943ce67a41ed7c73ca84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863709"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018162"
 ---
 # <a name="geolocationcolumn-resource-type"></a>tipo de recurso geolocationColumn
 
@@ -38,3 +38,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae5ff61e8851aa614f856f1f85a9544c101ac54f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba9f78f03f8de24b35ec723058929777356e3405
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019835"
 ---
 # <a name="update-outlook-category"></a>Atualizar a categoria do Outlook
 
@@ -116,3 +116,5 @@ Content-length: 251
   ]
 }
 -->
+
+

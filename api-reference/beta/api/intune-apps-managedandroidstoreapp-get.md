@@ -3,14 +3,14 @@ title: Acessar managedAndroidStoreApp
 description: Leia as propriedades e as relações do objeto managedAndroidStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 292fbf26b3612c51d96f77178265727791e57051
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f331dd5f39bb737b530af5e9a3eff35875c84ba7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406271"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018071"
 ---
 # <a name="get-managedandroidstoreapp"></a>Acessar managedAndroidStoreApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1547
+Content-Length: 1608
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 1547
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
     "packageId": "Package Id value",
@@ -123,6 +125,9 @@ Content-Length: 1547
   }
 }
 ```
+
+
+
 
 
 

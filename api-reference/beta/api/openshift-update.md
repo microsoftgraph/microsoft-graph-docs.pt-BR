@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 000a8ae7c91b0d5c2b896615cc1e60ba2b360aed
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 12c3c9a8718ae0333282a07e1bf062ed141191d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44153496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019968"
 ---
 # <a name="update-openshift"></a>Atualizar openShift
 
@@ -172,3 +172,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

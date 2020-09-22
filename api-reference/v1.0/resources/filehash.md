@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d034d586bad1da54e57490e300b34191034a1657
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 412308fc20c3baee63640451bb1a2c8059e71be0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018372"
 ---
 # <a name="filehash-resource-type"></a>tipo de recurso FileHash
 
@@ -23,7 +23,7 @@ Contém informações com monitoração de hash de arquivo (criptografia e confi
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |hashtype|fileHashType|Tipo de hash de arquivo. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
-|hashValue|Cadeia de caracteres|Valor do hash do arquivo.|
+|hashValue|String|Valor do hash do arquivo.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -54,3 +54,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

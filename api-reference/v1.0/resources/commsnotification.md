@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d11bda4be798bb4a9d9c0e1048258020c5c2ca08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2276547b99e297f1e015e12f9ed2254d3cb4632d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533053"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018974"
 ---
 # <a name="commsnotification-resource-type"></a>tipo de recurso commsNotification
 
@@ -59,3 +59,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

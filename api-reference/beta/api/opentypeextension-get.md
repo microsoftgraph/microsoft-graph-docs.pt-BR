@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 429a8db8829c3ca298a71f0d0793a659820e14f3
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 38c52b40abb0a46e7c7504b8ba676191a62fb253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849587"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019933"
 ---
 # <a name="get-open-extension"></a>Obter extensão aberta
 
@@ -549,3 +549,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

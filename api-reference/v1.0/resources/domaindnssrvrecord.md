@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9a874285323f70a6592dd14e7e3dd3af97f6583e
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 1c0ac0fce1291c5f6a5134bf7439cbe01c841fe9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018652"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>tipo de recurso domainDnsSrvRecord
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 Não há suporte para consultas diretas a esse recurso. Confira o tópico de [domínio](domain.md) para obter informações sobre como consultar os registros de serviço de domínio.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura.|
-|IsOptional|Booliano| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
+|IsOptional|Boolean| Se for falso, o registro SRV deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
 |rótulo|String| O valor usado ao configurar a propriedade *Name* do registro SRV no host DNS. |
 |nameTarget|String| O valor a ser usado ao configurar a propriedade *target* do registro SRV no host DNS. |
 |propor|Int32| O valor a ser usado ao configurar a propriedade *Port* do registro SRV no host DNS. |
@@ -80,3 +80,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

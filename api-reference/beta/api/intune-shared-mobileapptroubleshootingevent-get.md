@@ -3,14 +3,14 @@ title: Obter mobileAppTroubleshootingEvent
 description: Descreve o método Get mobileAppTroubleshootingEvent da API do Microsoft Graph para o Intune, que oferece suporte a vários fluxos de trabalho.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1b08a62c133f6a486fc349ce5f68cbead72273b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe6438592250de0be265ff23786852b546b9d640
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447602"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019961"
 ---
 # <a name="get-mobileapptroubleshootingevent"></a>Obter mobileAppTroubleshootingEvent
 
@@ -82,6 +82,9 @@ Content-Length: 143
   }
 }
 ```
+
+
+
 
 
 

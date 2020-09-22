@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 88d40fa1557102bc04ef9a46bba93a50097d66cd
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: dc421f5527833cfd3193243b6ddb8b94c54a0855
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384400"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018855"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>tipo de recurso conditionalAccessPlatforms
 
@@ -22,8 +22,8 @@ Plataformas incluídas e excluídas do escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|includePlatforms|String collection| Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
-|excludePlatforms|String collection| Os possíveis valores são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.|
+|includePlatforms|Coleção de cadeias de caracteres| Os valores possíveis são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
+|excludePlatforms|Coleção de cadeias de caracteres| Os possíveis valores são: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações
 
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

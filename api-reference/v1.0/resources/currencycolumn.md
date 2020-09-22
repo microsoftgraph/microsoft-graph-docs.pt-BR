@@ -7,12 +7,12 @@ localization_priority: Normal
 description: currencyColumn em um recurso columnDefinition indica que os valores da coluna representam moeda.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1270900c11a65bf974ac78ffe6af37bf93c51af6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98009785dc491af035acdf82bf86cb36a1878bf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531739"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018792"
 ---
 # <a name="currencycolumn-resource-type"></a>Tipo de recurso CurrencyColumn
 
@@ -44,3 +44,4 @@ Aqui está uma representação JSON de um recurso **currencyColumn**.
   "section": "documentation",
   "tocPath": "Resources/CurrencyColumn"
 } -->
+

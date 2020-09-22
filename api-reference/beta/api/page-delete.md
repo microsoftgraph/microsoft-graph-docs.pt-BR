@@ -5,16 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: e58c3c5763b0ce40932f235640c7fbf193945b5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2861baa5a2423983e0e5324932cc5465746ae37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019836"
 ---
 # <a name="delete-page"></a>Excluir página
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -94,3 +94,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

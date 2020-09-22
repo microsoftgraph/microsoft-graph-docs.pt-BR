@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 623dd4fa92036a3c542bebf791dc802ce0d53520
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0ba79f634432b6f481bb94be3b70b6821fb84e7d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812334"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018428"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -22,8 +22,8 @@ Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|Cadeia de caracteres| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
-|type|Cadeia de caracteres| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
+|nome|String| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
+|tipo|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
 
 #### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte
 Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:
@@ -64,3 +64,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

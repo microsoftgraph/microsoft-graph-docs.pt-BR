@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso GeoCoordinates fornece as coordenadas geográficas e a elevação de um local com base nos metadados contidos no arquivo.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c6fce88c0a85b23e799030e9190d7d82e884089d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c96420fedf0a0b89dd64881417af29e6178bbdc3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532934"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018212"
 ---
 # <a name="geocoordinates-resource-type"></a>Tipo de recurso GeoCoordinates
 
@@ -44,8 +44,8 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade  | Tipo   | Descrição
 |:----------|:-------|:--------------------------------------------------------
-| altitude  | Duplo | Opcional. A altitude (altura), em pés, acima do nível do mar para o item. Somente leitura.
-| latitude  | Duplo | Opcional. A latitude, em valor decimal, para o item. Somente leitura.
+| altitude  | Double | Opcional. A altitude (altura), em pés, acima do nível do mar para o item. Somente leitura.
+| latitude  | Double | Opcional. A latitude, em valor decimal, para o item. Somente leitura.
 | longitude | Double | Opcional. A longitude, em valor decimal, para o item. Somente leitura.
 
 ## <a name="remarks"></a>Comentários
@@ -59,3 +59,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Location"
 } -->
+

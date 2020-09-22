@@ -3,14 +3,14 @@ title: tipo de enumeração androidManagedStoreAppConfigurationSchemaItemDataTyp
 description: Tipo de dados para um item de configuração no esquema de configuração personalizada de um aplicativo Android
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 48bd0736043e425698bf02d19126b0f79f1ffa34
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4676818e5fd22cc9337d6276cdfaf57e3d8341d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454287"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019626"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>tipo de enumeração androidManagedStoreAppConfigurationSchemaItemDataType
 
@@ -26,13 +26,16 @@ Tipo de dados para um item de configuração no esquema de configuração person
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |bool|,0|Ainda não documentado|
-|inteiro|1|Ainda não documentado|
-|cadeia de caracteres|duas|Ainda não documentado|
-|escolha|3D|Ainda não documentado|
+|inteiro|1 |Ainda não documentado|
+|string|2 |Ainda não documentado|
+|escolha|3 |Ainda não documentado|
 |MultiSelect|4 |Ainda não documentado|
 |pacote|5 |Ainda não documentado|
 |bundleArray|6 |Ainda não documentado|
 |hidden|7 |Ainda não documentado|
+
+
+
 
 
 

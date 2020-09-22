@@ -5,12 +5,12 @@ localization_priority: Normal
 author: MSGraphDocsVteam
 ms.prod: keylimesoda
 doc_type: resourcePageType
-ms.openlocfilehash: 07793284fba23aa0bad6479c6ff150a5b9942735
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a0167bbbf38bbfcbed40554f02eeda198b8b7c6b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808267"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018561"
 ---
 # <a name="entity-resource-type"></a>Tipo de recurso entity
 
@@ -54,3 +54,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

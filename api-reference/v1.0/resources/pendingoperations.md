@@ -5,12 +5,12 @@ localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 381ecd3bf302a1e7d323211cac071e360340b5c6
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 20f74cb3bd812371a1b18d479452e94521ae622c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863681"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020521"
 ---
 # <a name="pendingoperations-resource-type"></a>tipo de recurso pendingOperations
 
@@ -52,3 +52,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

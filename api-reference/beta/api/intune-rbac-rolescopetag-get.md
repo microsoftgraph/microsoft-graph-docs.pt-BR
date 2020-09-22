@@ -3,14 +3,14 @@ title: Obter roleScopeTag
 description: Leia as propriedades e as relações do objeto roleScopeTag.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f789f363811648a75743d1133ae09977d94d3540
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2e23e68175279981bf53701bacae008cf2f071b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463604"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020066"
 ---
 # <a name="get-rolescopetag"></a>Obter roleScopeTag
 
@@ -81,6 +81,9 @@ Content-Length: 233
   }
 }
 ```
+
+
+
 
 
 

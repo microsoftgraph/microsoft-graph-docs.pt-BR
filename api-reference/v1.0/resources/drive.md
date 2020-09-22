@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: O recurso drive é o objeto de nível superior que representa o OneDrive de um usuário ou uma biblioteca de documentos no SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: ba048773d49c2fdea3896f3200a3c9112af0969e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 700df7e7ea38a195bcb0b3ea50187f942635ed76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108379"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018589"
 ---
 # <a name="drive-resource-type"></a>Tipo de unidade de recurso
 
@@ -142,3 +142,4 @@ Na tabela anterior, os exemplos usam `/drive`, mas outros caminhos também são 
   "tocPath": "Drives",
   "tocBookmarks": { "Resources/Drive": "#" }
 } -->
+

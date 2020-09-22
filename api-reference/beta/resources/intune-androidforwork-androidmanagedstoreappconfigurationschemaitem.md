@@ -3,14 +3,14 @@ title: tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 description: Único item de configuração no esquema de configuração personalizada de um aplicativo Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 744715e3169dd0b6b7aa4fa9a7fd9be1f341720f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 99a77dccc7bec8e4d28944ac9d5e5af16a98b462
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019688"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>tipo de recurso androidManagedStoreAppConfigurationSchemaItem
 
@@ -27,8 +27,8 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |índice|Int32|Índice exclusivo que o aplicativo usa para manter itens de esquema aninhados|
 |parentIndex|Int32|Índice do item de esquema pai para rastrear itens de esquema aninhados|
-|schemaItemKey|String|Chave exclusiva que o aplicativo usa para identificar o item|
-|displayName|Cadeia de caracteres|Nome legível por humanos|
+|schemaItemKey|Cadeia de caracteres|Chave exclusiva que o aplicativo usa para identificar o item|
+|displayName|String|Nome legível por humanos|
 |description|String|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
 |defaultIntValue|Int32|Valor padrão para itens do tipo inteiro, se especificado pelo desenvolvedor do aplicativo|
@@ -71,6 +71,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

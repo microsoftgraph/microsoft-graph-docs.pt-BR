@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: df98f62df4465c43dede5f6cd293145b6c644e94
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e4318a9ceb79c92d880ce1d29f4c869dbd38c995
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017224"
 ---
 # <a name="list-usercredentialusagedetails"></a>Listar userCredentialUsageDetails
 
@@ -44,12 +44,12 @@ Essa função suporta o parâmetro de consulta OData opcional **$Filter**. Você
 
 | Propriedades | Descrição e exemplo |
 |:--------- |:----------- |
-| apresentam | Filtra por tipo de dados de uso que você deseja (registro vs Reset). Por exemplo: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Operadores de filtro suportados:`eq` |
-| userDisplayName | Filtrar por nome de exibição do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro suportados `eq` : `startswith()`e. Dá suporte a maiúsculas e minúsculas. |
-| userPrincipalName  | Filtrar por nome principal do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.    Operadores de filtro suportados `eq` : `startswith()`e. Dá suporte a maiúsculas e minúsculas. |
-| IsSuccess | Filtrar por status da atividade. Por exemplo: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Operadores de filtro suportados `eq` : `orderby`e. |
-| authMethod  | Filtrar pelos métodos de autenticação usando durante o registro. Por exemplo: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Operadores de filtro suportados `eq`:. |
-| failureReason | Filtrar por motivo da falha (se a atividade falhar). Por exemplo: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Operadores de filtro suportados `eq` : `startswith()`e. Dá suporte a maiúsculas e minúsculas. |
+| apresentam | Filtra por tipo de dados de uso que você deseja (registro vs Reset). Por exemplo: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Operadores de filtro suportados: `eq` |
+| userDisplayName | Filtrar por nome de exibição do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro suportados: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| userPrincipalName  | Filtrar por nome principal do usuário. Por exemplo: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`.    Operadores de filtro suportados: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| IsSuccess | Filtrar por status da atividade. Por exemplo: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Operadores de filtro suportados: `eq` e `orderby` . |
+| authMethod  | Filtrar pelos métodos de autenticação usando durante o registro. Por exemplo: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Operadores de filtro suportados: `eq` . |
+| failureReason | Filtrar por motivo da falha (se a atividade falhar). Por exemplo: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'Contoso'`. Operadores de filtro suportados: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -65,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -143,3 +143,5 @@ Content-length: 258
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

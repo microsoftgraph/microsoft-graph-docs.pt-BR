@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8169041e6d36c9e5e73d7dc928fef33be3c154c0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7237b7275c990934f21c94c7eeea9ede86b061be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812250"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018213"
 ---
 # <a name="formatprotection-resource-type"></a>Tipo de recurso FormatProtection
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa a proteção de formatação de um objeto range.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -66,3 +66,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

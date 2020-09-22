@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 019c21eadc65b29d74bdc6fd94c40641acd43491
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b161d47ff7a89c79a04e9400ff0d4756692f49c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812257"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018214"
 ---
 # <a name="freebusyerror-resource-type"></a>tipo de recurso freeBusyError
 
@@ -22,7 +22,7 @@ Representa informações de erro da tentativa de obter a disponibilidade de um u
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |mensagem |String |Descreve o erro. |
-|responseCode |Cadeia de caracteres |O código de resposta da consulta para a disponibilidade do usuário, lista de distribuição ou recurso. |
+|responseCode |String |O código de resposta da consulta para a disponibilidade do usuário, lista de distribuição ou recurso. |
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "tocPath": ""
 }
 -->
+

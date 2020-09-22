@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 05657e2d84501536c62805958187323f4a61b4e1
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: f37e60e714a853d6455a1f49078cf5074aa6ff46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383683"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017154"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -381,3 +381,5 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   ]
 }
 -->
+
+

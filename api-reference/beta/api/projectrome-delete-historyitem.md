@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 42112754e7ce3388cb4e45eb1cf82426cdedbbc1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1fa3b1863445caa5ce7a953a98d12310b4abeec9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017301"
 ---
 # <a name="delete-a-historyitem"></a>Excluir um historyItem
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

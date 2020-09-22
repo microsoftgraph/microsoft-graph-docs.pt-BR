@@ -6,12 +6,12 @@ localization_priority: Normal
 description: O recurso File agrupa itens de dados relacionados a arquivos em uma única estrutura.
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2d44d912116f517a67cce36811a1cacf59c32270
-ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
+ms.openlocfilehash: 0b8fc90a54dcb4a052994b4848aeb297b914d9ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018407"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -57,3 +57,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/File"
 } -->
+

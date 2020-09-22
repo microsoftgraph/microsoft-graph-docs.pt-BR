@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 49553182decd2e5a386dcfad249e3e13efc3c2b2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b6512408b6dbce69c96fdf5d4855b39eab8d5b2e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450928"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019891"
 ---
 # <a name="get-outlook-category"></a>Obter categoria do Outlook
 
@@ -109,3 +109,5 @@ Content-length: 249
   ]
 }
 -->
+
+

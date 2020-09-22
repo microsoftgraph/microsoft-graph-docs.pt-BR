@@ -3,14 +3,14 @@ title: tipo de enumeração ndesConnectorState
 description: O status atual do conector NDES.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 603518adb55c92e74beccfb2bda754137287834c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5fe1b49685052f4446f04840c867fb5f119f5e8f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437085"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019555"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>tipo de enumeração ndesConnectorState
 
@@ -25,9 +25,12 @@ O status atual do conector NDES.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Estado ainda não disponível para esse conector.|
-|active|1|O conector NDES se conectou recentemente|
-|inativa|duas|Nenhuma atividade recente para o conector NDES|
+|Nenhuma|,0|Estado ainda não disponível para esse conector.|
+|active|1 |O conector NDES se conectou recentemente|
+|inativa|2 |Nenhuma atividade recente para o conector NDES|
+
+
+
 
 
 

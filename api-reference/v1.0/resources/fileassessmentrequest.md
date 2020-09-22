@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8f436ad2fb519f84ce4d4b59ba7cf5d24fa56066
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 6c543a573f6b09cbc8675bbc0c35d59172cdb5e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018379"
 ---
 # <a name="fileassessmentrequest-resource-type"></a>tipo de recurso fileAssessmentRequest
 
@@ -44,7 +44,7 @@ O arquivo pode ser um arquivo de texto ou um documento do Word ou um arquivo bin
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|resultados|coleção [threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que `$expand` você a aplique.|
+|resultados|coleção [threatAssessmentResult](threatassessmentresult.md)|Uma coleção de resultados de avaliação de ameaças. Somente leitura. Por padrão, um `GET /threatAssessmentRequests/{id}` não retorna essa propriedade, a menos que você a aplique `$expand` .|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -84,3 +84,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

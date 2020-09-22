@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 70088d4304c6602feb268d6af399e082da346d24
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 1016ff260b43df7595eec85d903dfb35533dd064
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429570"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019815"
 ---
 # <a name="update-phoneauthenticationmethod"></a>Atualizar phoneAuthenticationMethod
 
@@ -138,3 +138,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

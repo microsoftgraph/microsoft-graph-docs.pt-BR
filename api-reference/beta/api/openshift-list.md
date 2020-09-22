@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bc65d419addf58bbf7b0a715c61538491777a5ec
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 9308f200b410a1f049aa341682866c198448f767
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42456415"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019982"
 ---
 # <a name="list-openshift"></a>Listar openShift
 
@@ -40,7 +40,7 @@ GET /teams/{id}/schedule/openShifts
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
   
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -166,3 +166,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

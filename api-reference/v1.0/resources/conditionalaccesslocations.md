@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f5378764f36bf5fed858755a475fd85a400a2fed
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 2b4cdf4fbd1b81d4a4376983a424c2579376a76d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384407"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018897"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>tipo de recurso conditionalAccessLocations
 
@@ -22,8 +22,8 @@ Representa os locais incluídos e excluídos do escopo da política.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| includeLocations | String collection | IDs de local em escopo de política, a menos que explicitamente excluído, `All` ou `AllTrusted` . |
-| excludeLocations | String collection | IDs de local excluídas do escopo da política. |
+| includeLocations | Coleção de cadeias de caracteres | IDs de local em escopo de política, a menos que explicitamente excluído, `All` ou `AllTrusted` . |
+| excludeLocations | Coleção de cadeias de caracteres | IDs de local excluídas do escopo da política. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -59,3 +59,4 @@ Nenhum
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Acessar deviceCompliancePolicyAssignment
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3acc06ae3e73a360708955dde12fe4b081b25aa7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 5862a1b9b7bfeaaea998f5ae108ddae141090ff4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793035"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017938"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>Acessar deviceCompliancePolicyAssignment
 
@@ -84,6 +84,9 @@ Content-Length: 474
   }
 }
 ```
+
+
+
 
 
 

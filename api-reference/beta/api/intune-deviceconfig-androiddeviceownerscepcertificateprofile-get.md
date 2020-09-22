@@ -3,14 +3,14 @@ title: Obter androidDeviceOwnerScepCertificateProfile
 description: Leia as propriedades e as relações do objeto androidDeviceOwnerScepCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c0c65b9b8a3b68d0d7edf79781ae8bfa6982d71d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e131e0e658f8f474936a65ac907a2bdfd65984e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43350670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48020472"
 ---
 # <a name="get-androiddeviceownerscepcertificateprofile"></a>Obter androidDeviceOwnerScepCertificateProfile
 
@@ -137,6 +137,9 @@ Content-Length: 2293
   }
 }
 ```
+
+
+
 
 
 

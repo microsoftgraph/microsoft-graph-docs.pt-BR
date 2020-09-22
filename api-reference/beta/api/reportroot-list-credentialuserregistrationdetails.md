@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 7f530832a3b256dacf094e59f1193b096e5782dc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 11a0e24baacc3b2ecd25a1e3814d8edb90507c0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455705"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017281"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>Listar credentialUserRegistrationDetails
 
@@ -44,13 +44,13 @@ Essa função suporta o parâmetro de consulta OData opcional **$Filter**. Você
 
 | Propriedades | Descrição e exemplo |
 | --------- | ----------------------- |
-| userDisplayName | Filtrar por nome de usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro suportados `eq`:, `startswith()`e. Dá suporte a maiúsculas e minúsculas. |
-| userPrincipalName | Filtrar por nome principal do usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Operadores de filtro suportados `eq` : `startswith()`e. Dá suporte a maiúsculas e minúsculas. |
-| authMethods | Filtrar pelos métodos de autenticação usados durante o registro. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Operadores de filtro suportados `eq`:. |
-| IsRegistered | Filtro para usuários que registraram a redefinição de senha de autoatendimento (SSPR). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Operadores de filtro suportados `eq`:. |
-| isEnabled | Filtro para usuários que foram habilitados para o SSPR. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Operadores filtter com suporte `eq`:. |
-| iscapable | Filtro para usuários que estão prontos para executar redefinição de senha ou a autenticação multifator (MFA). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Operadores de filtro suportados:`eq` |
-| isMfaRegistered | Filtro para usuários registrados para MFA. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Operadores de filtro suportados `eq`:. |
+| userDisplayName | Filtrar por nome de usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Operadores de filtro suportados: `eq` , e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| userPrincipalName | Filtrar por nome principal do usuário. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Operadores de filtro suportados: `eq` e `startswith()` . Dá suporte a maiúsculas e minúsculas. |
+| authMethods | Filtrar pelos métodos de autenticação usados durante o registro. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Operadores de filtro suportados: `eq` . |
+| IsRegistered | Filtro para usuários que registraram a redefinição de senha de autoatendimento (SSPR). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Operadores de filtro suportados: `eq` . |
+| isEnabled | Filtro para usuários que foram habilitados para o SSPR. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Operadores filtter com suporte: `eq` . |
+| iscapable | Filtro para usuários que estão prontos para executar redefinição de senha ou a autenticação multifator (MFA). Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Operadores de filtro suportados: `eq` |
+| isMfaRegistered | Filtro para usuários registrados para MFA. Por exemplo: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Operadores de filtro suportados: `eq` . |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -65,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -142,3 +142,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

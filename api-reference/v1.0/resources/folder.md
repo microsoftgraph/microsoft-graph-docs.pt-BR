@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 'O recurso Folder agrupa dados relacionados a pastas em um item em uma única estrutura. '
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1ee34252671477a1efb83daf056330b499d94966
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b883a263833380d415d3b3878b48423e5566e64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531395"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018309"
 ---
 # <a name="folder-resource-type"></a>Tipo de recurso Folder
 
@@ -60,3 +60,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem][].
   "section": "documentation",
   "tocPath": "Facets/Folder"
 } -->
+

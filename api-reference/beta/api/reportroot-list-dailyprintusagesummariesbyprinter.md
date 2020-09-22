@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2e4a95820849877ad51448f2a8af3962a612a4e0
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: d8ece86d2e6ad806059cafe2a3d157a9bc656e74
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947307"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017280"
 ---
 # <a name="list-dailyprintusagesummariesbyprinter"></a>Listar dailyPrintUsageSummariesByPrinter
 
@@ -46,7 +46,7 @@ GET /print/reports/dailyPrintUsageSummariesByPrinter
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [printUsageSummaryByPrinter](../resources/printusagesummarybyprinter.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [printUsageSummaryByPrinter](../resources/printusagesummarybyprinter.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -110,3 +110,5 @@ Content-length: 314
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

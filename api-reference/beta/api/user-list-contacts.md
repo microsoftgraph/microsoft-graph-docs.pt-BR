@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7329fb4e2005b339f3a7baa0f87ce8cc4318f714
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 029f98b04d43530ce94e67d7f694452355a41b5a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107728"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016954"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
@@ -174,3 +174,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

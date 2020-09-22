@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8730c6fefebadbd2c64937366c7b7de41537b11c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a756df15be02544f843e6176677f26ea7e95678
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531668"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018698"
 ---
 # <a name="devicedetail-resource-type"></a>tipo de recurso deviceDetail
 
@@ -23,11 +23,11 @@ Indica os detalhes do dispositivo associados a um dispositivo usado para entrar.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |Navegador|String|Indica as informações do navegador do usado para entrar.|
-|deviceId|String|Refere-se ao UniqueID do dispositivo usado para entrar.|
+|deviceId|Cadeia de caracteres|Refere-se ao UniqueID do dispositivo usado para entrar.|
 |displayName|String|Refere-se ao nome do dispositivo usado para entrar.|
 |isCompliant|Booliano|Indica se o dispositivo está em conformidade.|
 |isManaged|Booliano|Indica se o dispositivo é gerenciado.|
-|operatingSystem|Cadeia de caracteres|Indica o nome do sistema operacional e a versão usada para entrar.|
+|operatingSystem|String|Indica o nome do sistema operacional e a versão usada para entrar.|
 |trustType|String|Fornece informações sobre se o dispositivo conectado é um local de trabalho associado, AzureAD Unido, ingresso no domínio. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -63,3 +63,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

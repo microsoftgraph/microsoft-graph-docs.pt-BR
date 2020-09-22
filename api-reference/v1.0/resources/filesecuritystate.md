@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fefccfedc348a7cab23e093fdd7728f49029b52c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d636350237c34464b557a970e3bbf121d50de88a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018365"
 ---
 # <a name="filesecuritystate-resource-type"></a>tipo de recurso filesecuritystate
 
@@ -23,9 +23,9 @@ Contém informações sobre o arquivo (não processo) relacionado ao alerta.
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |fileHash|[fileHash](filehash.md)|Tipo complexo contendo hashes de arquivo (criptográfico e diferencia local).|
-|nome|Cadeia de caracteres|Nome do arquivo (sem o caminho).|
+|nome|String|Nome do arquivo (sem o caminho).|
 |caminho|String|Caminho completo do arquivo/ImageFile.|
-|riskScore|Cadeia de caracteres|Geração de um provedor/Pontuação de risco calculado do arquivo de alerta. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
+|riskScore|String|Geração de um provedor/Pontuação de risco calculado do arquivo de alerta. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

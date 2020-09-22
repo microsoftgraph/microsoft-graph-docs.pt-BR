@@ -3,14 +3,14 @@ title: Excluir macOSWiredNetworkConfiguration
 description: Exclui macOSWiredNetworkConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d3d060541c65971bc415a232cbe89f45903f3272
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 824ba4eefb3ad104c2ad23d244ad392cc420f69c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43343478"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017735"
 ---
 # <a name="delete-macoswirednetworkconfiguration"></a>Excluir macOSWiredNetworkConfiguration
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

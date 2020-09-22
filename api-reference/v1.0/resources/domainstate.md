@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d0648019767c8161a7dfdfe02a360a3bcf37ddd2
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: fe1d6db925960214c19be27e218b254b31ea3f75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181585"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018624"
 ---
 # <a name="domainstate-resource-type"></a>tipo de recurso domainstate
 
@@ -55,3 +55,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 8608ea72c8c136b54f94c73f99ca0f79fbc7ec0b
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 981ff7ce5effe9faa2518d58b72de8d395d4cfd5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018848"
 ---
 # <a name="conversationthread-resource-type"></a>tipo de recurso conversationThread
 
@@ -45,7 +45,7 @@ A coleção de destinatários da última postagem são os destinatários agregad
 | visualização               | String                               | Um breve resumo do corpo da última postagem nesta conversa.                                                                                                                           |
 | isLocked              | Booliano                              | Indica se o thread está bloqueado.                                                                                                                                                               |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |postagens|Coleção [post](post.md)| Somente leitura. Anulável.|
@@ -101,3 +101,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+
