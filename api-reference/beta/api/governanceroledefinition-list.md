@@ -5,59 +5,59 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 1a3acbf3e48166e01cac64fec6cdc09803981561
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 64536ba9b9a607c1f485f922203e524ce5b07e77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991030"
 ---
-# <a name="list-governanceroledefinitions"></a><span data-ttu-id="4504b-103">Listar governanceRoleDefinitions</span><span class="sxs-lookup"><span data-stu-id="4504b-103">List governanceRoleDefinitions</span></span>
+# <a name="list-governanceroledefinitions"></a><span data-ttu-id="0e23b-103">Listar governanceRoleDefinitions</span><span class="sxs-lookup"><span data-stu-id="0e23b-103">List governanceRoleDefinitions</span></span>
 
-<span data-ttu-id="4504b-104">Namespace: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span><span class="sxs-lookup"><span data-stu-id="4504b-104">Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span></span>
+<span data-ttu-id="0e23b-104">Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span><span class="sxs-lookup"><span data-stu-id="0e23b-104">Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span></span>
 
-<span data-ttu-id="4504b-105">Obtenha uma coleção de [governanceRoleDefinitions](../resources/governanceroledefinition.md) em um recurso.</span><span class="sxs-lookup"><span data-stu-id="4504b-105">Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.</span></span>
+<span data-ttu-id="0e23b-105">Obtenha uma coleção de [governanceRoleDefinitions](../resources/governanceroledefinition.md) em um recurso.</span><span class="sxs-lookup"><span data-stu-id="0e23b-105">Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4504b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4504b-106">Permissions</span></span>
-<span data-ttu-id="4504b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4504b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0e23b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="0e23b-106">Permissions</span></span>
+<span data-ttu-id="0e23b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0e23b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4504b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4504b-109">Permission type</span></span>      | <span data-ttu-id="4504b-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="4504b-110">Permissions</span></span>              |
+|<span data-ttu-id="0e23b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0e23b-109">Permission type</span></span>      | <span data-ttu-id="0e23b-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="0e23b-110">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4504b-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4504b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4504b-112">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="4504b-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="4504b-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4504b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4504b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4504b-114">Not supported.</span></span>    |
-|<span data-ttu-id="4504b-115">Application</span><span class="sxs-lookup"><span data-stu-id="4504b-115">Application</span></span> | <span data-ttu-id="4504b-116">PrivilegedAccess. Read. AzureResources</span><span class="sxs-lookup"><span data-stu-id="4504b-116">PrivilegedAccess.Read.AzureResources</span></span> |
+|<span data-ttu-id="0e23b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0e23b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0e23b-112">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="0e23b-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="0e23b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0e23b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0e23b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0e23b-114">Not supported.</span></span>    |
+|<span data-ttu-id="0e23b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0e23b-115">Application</span></span> | <span data-ttu-id="0e23b-116">PrivilegedAccess. Read. AzureResources</span><span class="sxs-lookup"><span data-stu-id="0e23b-116">PrivilegedAccess.Read.AzureResources</span></span> |
 
-<span data-ttu-id="4504b-117">Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.</span><span class="sxs-lookup"><span data-stu-id="4504b-117">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.</span></span>
+<span data-ttu-id="0e23b-117">Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.</span><span class="sxs-lookup"><span data-stu-id="0e23b-117">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4504b-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4504b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0e23b-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0e23b-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions
 GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{resourceId}'
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4504b-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="4504b-119">Optional query parameters</span></span>
-<span data-ttu-id="4504b-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="4504b-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0e23b-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0e23b-119">Optional query parameters</span></span>
+<span data-ttu-id="0e23b-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="0e23b-120">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4504b-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4504b-121">Request headers</span></span>
-| <span data-ttu-id="4504b-122">Nome</span><span class="sxs-lookup"><span data-stu-id="4504b-122">Name</span></span>      |<span data-ttu-id="4504b-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="4504b-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0e23b-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0e23b-121">Request headers</span></span>
+| <span data-ttu-id="0e23b-122">Nome</span><span class="sxs-lookup"><span data-stu-id="0e23b-122">Name</span></span>      |<span data-ttu-id="0e23b-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="0e23b-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="4504b-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4504b-124">Authorization</span></span>  | <span data-ttu-id="4504b-125">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="4504b-125">Bearer {code}</span></span>|
+| <span data-ttu-id="0e23b-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0e23b-124">Authorization</span></span>  | <span data-ttu-id="0e23b-125">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="0e23b-125">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4504b-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4504b-126">Request body</span></span>
-<span data-ttu-id="4504b-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4504b-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="4504b-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="4504b-128">Response</span></span>
-<span data-ttu-id="4504b-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4504b-129">If successful, this method returns a `200 OK` response code and collection of [governanceRoleDefinition](../resources/governanceroledefinition.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4504b-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4504b-130">Example</span></span>
+## <a name="request-body"></a><span data-ttu-id="0e23b-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0e23b-126">Request body</span></span>
+<span data-ttu-id="0e23b-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0e23b-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="0e23b-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="0e23b-128">Response</span></span>
+<span data-ttu-id="0e23b-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0e23b-129">If successful, this method returns a `200 OK` response code and collection of [governanceRoleDefinition](../resources/governanceroledefinition.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="0e23b-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0e23b-130">Example</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinitions"
 }-->
-<span data-ttu-id="4504b-131">Este exemplo mostra como obter todas as definições de função da assinatura Wingtip Toys-prod.</span><span class="sxs-lookup"><span data-stu-id="4504b-131">This example shows how to get all role definitions of the subscription Wingtip Toys - Prod.</span></span>
-##### <a name="request"></a><span data-ttu-id="4504b-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4504b-132">Request</span></span>
+<span data-ttu-id="0e23b-131">Este exemplo mostra como obter todas as definições de função da assinatura Wingtip Toys-prod.</span><span class="sxs-lookup"><span data-stu-id="0e23b-131">This example shows how to get all role definitions of the subscription Wingtip Toys - Prod.</span></span>
+##### <a name="request"></a><span data-ttu-id="0e23b-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0e23b-132">Request</span></span>
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  
 ```
-##### <a name="response"></a><span data-ttu-id="4504b-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="4504b-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="0e23b-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="0e23b-133">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,3 +110,5 @@ Content-Length: 21906
   "suppressions": []
 }
 -->
+
+

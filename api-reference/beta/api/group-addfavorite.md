@@ -1,57 +1,57 @@
 ---
 title: 'group: addFavorite'
-description: Adicionar o grupo à lista de grupos de favoritos do usuário atual. Suportado somente para grupos do Microsoft 365.
+description: Adicionar o grupo à lista de grupos de favoritos do usuário atual. Apenas grupos do Microsoft 365 são suportados.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7879b5dc724f784addecb93cab137935143a4dd6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 32692dacf5eaf339d8d12e8453f460ca26270d4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895885"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990990"
 ---
-# <a name="group-addfavorite"></a><span data-ttu-id="7a263-104">group: addFavorite</span><span class="sxs-lookup"><span data-stu-id="7a263-104">group: addFavorite</span></span>
+# <a name="group-addfavorite"></a><span data-ttu-id="35a55-104">group: addFavorite</span><span class="sxs-lookup"><span data-stu-id="35a55-104">group: addFavorite</span></span>
 
-<span data-ttu-id="7a263-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7a263-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="35a55-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="35a55-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7a263-106">Adicionar o grupo à lista de grupos de favoritos do usuário atual.</span><span class="sxs-lookup"><span data-stu-id="7a263-106">Add the group to the list of the current user's favorite groups.</span></span> <span data-ttu-id="7a263-107">Suportado somente para grupos do Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="7a263-107">Supported for Microsoft 365 groups only.</span></span>
+<span data-ttu-id="35a55-106">Adicionar o grupo à lista de grupos de favoritos do usuário atual.</span><span class="sxs-lookup"><span data-stu-id="35a55-106">Add the group to the list of the current user's favorite groups.</span></span> <span data-ttu-id="35a55-107">Apenas grupos do Microsoft 365 são suportados.</span><span class="sxs-lookup"><span data-stu-id="35a55-107">Supported for Microsoft 365 groups only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7a263-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="7a263-108">Permissions</span></span>
-<span data-ttu-id="7a263-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7a263-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="35a55-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="35a55-108">Permissions</span></span>
+<span data-ttu-id="35a55-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="35a55-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7a263-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7a263-111">Permission type</span></span>      | <span data-ttu-id="7a263-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7a263-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="35a55-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="35a55-111">Permission type</span></span>      | <span data-ttu-id="35a55-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="35a55-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7a263-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7a263-113">Delegated (work or school account)</span></span> | <span data-ttu-id="7a263-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a263-114">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7a263-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7a263-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7a263-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7a263-116">Not supported.</span></span>    |
-|<span data-ttu-id="7a263-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7a263-117">Application</span></span> | <span data-ttu-id="7a263-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7a263-118">Not supported.</span></span> |
+|<span data-ttu-id="35a55-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="35a55-113">Delegated (work or school account)</span></span> | <span data-ttu-id="35a55-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="35a55-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="35a55-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="35a55-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="35a55-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="35a55-116">Not supported.</span></span>    |
+|<span data-ttu-id="35a55-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="35a55-117">Application</span></span> | <span data-ttu-id="35a55-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="35a55-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7a263-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7a263-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="35a55-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="35a55-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/addFavorite
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7a263-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7a263-120">Request headers</span></span>
-| <span data-ttu-id="7a263-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7a263-121">Header</span></span>       | <span data-ttu-id="7a263-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7a263-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="35a55-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="35a55-120">Request headers</span></span>
+| <span data-ttu-id="35a55-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="35a55-121">Header</span></span>       | <span data-ttu-id="35a55-122">Valor</span><span class="sxs-lookup"><span data-stu-id="35a55-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="7a263-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="7a263-123">Authorization</span></span>  | <span data-ttu-id="7a263-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7a263-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7a263-126">Preferir</span><span class="sxs-lookup"><span data-stu-id="7a263-126">Prefer</span></span> | <span data-ttu-id="7a263-127">retorno=mínimo.</span><span class="sxs-lookup"><span data-stu-id="7a263-127">return=minimal.</span></span> <span data-ttu-id="7a263-128">Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="7a263-128">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="7a263-129">Opcional.</span><span class="sxs-lookup"><span data-stu-id="7a263-129">Optional.</span></span>  | 
+| <span data-ttu-id="35a55-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="35a55-123">Authorization</span></span>  | <span data-ttu-id="35a55-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="35a55-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="35a55-126">Preferir</span><span class="sxs-lookup"><span data-stu-id="35a55-126">Prefer</span></span> | <span data-ttu-id="35a55-127">retorno=mínimo.</span><span class="sxs-lookup"><span data-stu-id="35a55-127">return=minimal.</span></span> <span data-ttu-id="35a55-128">Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="35a55-128">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="35a55-129">Opcional.</span><span class="sxs-lookup"><span data-stu-id="35a55-129">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="7a263-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7a263-130">Request body</span></span>
-<span data-ttu-id="7a263-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7a263-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="35a55-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="35a55-130">Request body</span></span>
+<span data-ttu-id="35a55-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="35a55-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7a263-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="7a263-132">Response</span></span>
-<span data-ttu-id="7a263-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7a263-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="35a55-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="35a55-132">Response</span></span>
+<span data-ttu-id="35a55-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="35a55-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7a263-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7a263-135">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="7a263-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7a263-136">Request</span></span>
-<span data-ttu-id="7a263-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7a263-137">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="35a55-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="35a55-135">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="35a55-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="35a55-136">Request</span></span>
+<span data-ttu-id="35a55-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="35a55-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="7a263-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="7a263-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="35a55-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="35a55-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_addfavorite"
@@ -59,23 +59,23 @@ POST /groups/{id}/addFavorite
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/addFavorite
 ```
-# <a name="c"></a>[<span data-ttu-id="7a263-139">C#</span><span class="sxs-lookup"><span data-stu-id="7a263-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="35a55-139">C#</span><span class="sxs-lookup"><span data-stu-id="35a55-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-addfavorite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7a263-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7a263-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="35a55-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="35a55-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-addfavorite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7a263-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7a263-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="35a55-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="35a55-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-addfavorite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="7a263-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="7a263-142">Response</span></span>
-<span data-ttu-id="7a263-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7a263-143">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="35a55-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="35a55-142">Response</span></span>
+<span data-ttu-id="35a55-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="35a55-143">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -98,3 +98,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

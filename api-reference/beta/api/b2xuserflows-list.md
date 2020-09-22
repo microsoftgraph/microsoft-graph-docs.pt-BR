@@ -5,37 +5,37 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 135ce0d335be077e5673c39979f1fa198f97b440
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 8995176bda6115a640d9c2142e35619dbcc5a66f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991373"
 ---
-# <a name="list-b2xuserflows"></a><span data-ttu-id="c2f05-103">Listar b2xUserFlows</span><span class="sxs-lookup"><span data-stu-id="c2f05-103">List b2xUserFlows</span></span>
+# <a name="list-b2xuserflows"></a><span data-ttu-id="2a33d-103">Listar b2xUserFlows</span><span class="sxs-lookup"><span data-stu-id="2a33d-103">List b2xUserFlows</span></span>
 
-<span data-ttu-id="c2f05-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c2f05-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2a33d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2a33d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c2f05-105">Recupere uma lista de objetos [b2xUserFlow](../resources/b2xuserflows.md) .</span><span class="sxs-lookup"><span data-stu-id="c2f05-105">Retrieve a list of [b2xUserFlow](../resources/b2xuserflows.md) objects.</span></span>
+<span data-ttu-id="2a33d-105">Recupere uma lista de objetos [b2xUserFlow](../resources/b2xuserflows.md) .</span><span class="sxs-lookup"><span data-stu-id="2a33d-105">Retrieve a list of [b2xUserFlow](../resources/b2xuserflows.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c2f05-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c2f05-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2a33d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2a33d-106">Permissions</span></span>
 
-<span data-ttu-id="c2f05-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c2f05-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2a33d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a33d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c2f05-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c2f05-109">Permission type</span></span>      | <span data-ttu-id="c2f05-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c2f05-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2a33d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2a33d-109">Permission type</span></span>      | <span data-ttu-id="2a33d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2a33d-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c2f05-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c2f05-111">Delegated (work or school account)</span></span>|<span data-ttu-id="c2f05-112">IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="c2f05-112">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span></span>|
-|<span data-ttu-id="c2f05-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c2f05-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="c2f05-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c2f05-114">Not supported.</span></span>|
-|<span data-ttu-id="c2f05-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c2f05-115">Application</span></span>|<span data-ttu-id="c2f05-116">IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="c2f05-116">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span></span>|
+|<span data-ttu-id="2a33d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2a33d-111">Delegated (work or school account)</span></span>|<span data-ttu-id="2a33d-112">IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="2a33d-112">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span></span>|
+|<span data-ttu-id="2a33d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2a33d-113">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="2a33d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2a33d-114">Not supported.</span></span>|
+|<span data-ttu-id="2a33d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2a33d-115">Application</span></span>|<span data-ttu-id="2a33d-116">IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="2a33d-116">IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All</span></span>|
 
-<span data-ttu-id="c2f05-117">A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:</span><span class="sxs-lookup"><span data-stu-id="c2f05-117">The work or school account needs to belong to one of the following roles:</span></span>
+<span data-ttu-id="2a33d-117">A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:</span><span class="sxs-lookup"><span data-stu-id="2a33d-117">The work or school account needs to belong to one of the following roles:</span></span>
 
-* <span data-ttu-id="c2f05-118">Administrador global</span><span class="sxs-lookup"><span data-stu-id="c2f05-118">Global administrator</span></span>
-* <span data-ttu-id="c2f05-119">Administrador de fluxo de usuário de identidade externa</span><span class="sxs-lookup"><span data-stu-id="c2f05-119">External Identity User Flow administrator</span></span>
+* <span data-ttu-id="2a33d-118">Administrador global</span><span class="sxs-lookup"><span data-stu-id="2a33d-118">Global administrator</span></span>
+* <span data-ttu-id="2a33d-119">Administrador de fluxo de usuário de identidade externa</span><span class="sxs-lookup"><span data-stu-id="2a33d-119">External Identity User Flow administrator</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c2f05-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c2f05-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2a33d-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2a33d-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,36 +43,36 @@ ms.locfileid: "47329411"
 GET /identity/b2xUserFlows
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c2f05-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c2f05-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2a33d-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="2a33d-121">Optional query parameters</span></span>
 
-<span data-ttu-id="c2f05-122">Você pode usar o `$expand` para expandir Propriedades de fluxo de usuário específicas que não são expandidas por padrão.</span><span class="sxs-lookup"><span data-stu-id="c2f05-122">You can use `$expand` to expand specific user flow properties that are not expanded by default.</span></span>
+<span data-ttu-id="2a33d-122">Você pode usar o `$expand` para expandir Propriedades de fluxo de usuário específicas que não são expandidas por padrão.</span><span class="sxs-lookup"><span data-stu-id="2a33d-122">You can use `$expand` to expand specific user flow properties that are not expanded by default.</span></span>
 
-<span data-ttu-id="c2f05-123">Para obter mais informações, consulte [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="c2f05-123">For more information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="2a33d-123">Para obter mais informações, consulte [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="2a33d-123">For more information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c2f05-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c2f05-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="2a33d-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2a33d-124">Request headers</span></span>
 
-|<span data-ttu-id="c2f05-125">Nome</span><span class="sxs-lookup"><span data-stu-id="c2f05-125">Name</span></span>|<span data-ttu-id="c2f05-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="c2f05-126">Description</span></span>|
+|<span data-ttu-id="2a33d-125">Nome</span><span class="sxs-lookup"><span data-stu-id="2a33d-125">Name</span></span>|<span data-ttu-id="2a33d-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="2a33d-126">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="c2f05-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="c2f05-127">Authorization</span></span>|<span data-ttu-id="c2f05-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c2f05-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="2a33d-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="2a33d-127">Authorization</span></span>|<span data-ttu-id="2a33d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2a33d-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c2f05-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c2f05-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="2a33d-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2a33d-130">Request body</span></span>
 
-<span data-ttu-id="c2f05-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c2f05-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="2a33d-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2a33d-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c2f05-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="c2f05-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2a33d-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="2a33d-132">Response</span></span>
 
-<span data-ttu-id="c2f05-133">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [b2xUserFlow](../resources/b2xuserflows.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c2f05-133">If successful, this method returns a `200 OK` response code and a collection of [b2xUserFlow](../resources/b2xuserflows.md) objects in the response body.</span></span>
+<span data-ttu-id="2a33d-133">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [b2xUserFlow](../resources/b2xuserflows.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2a33d-133">If successful, this method returns a `200 OK` response code and a collection of [b2xUserFlow](../resources/b2xuserflows.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c2f05-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c2f05-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2a33d-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="2a33d-134">Examples</span></span>
 
-### <a name="example-1-list-all-b2xuserflows"></a><span data-ttu-id="c2f05-135">Exemplo 1: listar todos os b2xUserFlows</span><span class="sxs-lookup"><span data-stu-id="c2f05-135">Example 1: List all b2xUserFlows</span></span>
+### <a name="example-1-list-all-b2xuserflows"></a><span data-ttu-id="2a33d-135">Exemplo 1: listar todos os b2xUserFlows</span><span class="sxs-lookup"><span data-stu-id="2a33d-135">Example 1: List all b2xUserFlows</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c2f05-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c2f05-136">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2a33d-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2a33d-136">Request</span></span>
 
-<span data-ttu-id="c2f05-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c2f05-137">The following is an example of the request.</span></span>
+<span data-ttu-id="2a33d-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2a33d-137">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="c2f05-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="c2f05-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2a33d-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="2a33d-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_b2xUserFlows"
@@ -82,26 +82,26 @@ GET /identity/b2xUserFlows
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows
 ```
-# <a name="c"></a>[<span data-ttu-id="c2f05-139">C#</span><span class="sxs-lookup"><span data-stu-id="c2f05-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2a33d-139">C#</span><span class="sxs-lookup"><span data-stu-id="2a33d-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c2f05-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2f05-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2a33d-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2a33d-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-b2xuserflows-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c2f05-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c2f05-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2a33d-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2a33d-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-b2xuserflows-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="c2f05-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="c2f05-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2a33d-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="2a33d-142">Response</span></span>
 
-<span data-ttu-id="c2f05-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c2f05-143">The following is an example of the response.</span></span>
+<span data-ttu-id="2a33d-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2a33d-143">The following is an example of the response.</span></span>
 
-<span data-ttu-id="c2f05-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c2f05-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="2a33d-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="2a33d-144">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -131,14 +131,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-b2xuserflows-and-expand-identityproviders"></a><span data-ttu-id="c2f05-145">Exemplo 2: listar todos os b2xUserFlows e expandir identityProviders</span><span class="sxs-lookup"><span data-stu-id="c2f05-145">Example 2: List all b2xUserFlows and expand identityProviders</span></span>
+### <a name="example-2-list-all-b2xuserflows-and-expand-identityproviders"></a><span data-ttu-id="2a33d-145">Exemplo 2: listar todos os b2xUserFlows e expandir identityProviders</span><span class="sxs-lookup"><span data-stu-id="2a33d-145">Example 2: List all b2xUserFlows and expand identityProviders</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c2f05-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c2f05-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2a33d-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2a33d-146">Request</span></span>
 
-<span data-ttu-id="c2f05-147">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c2f05-147">The following is an example of the request.</span></span>
+<span data-ttu-id="2a33d-147">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2a33d-147">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="c2f05-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="c2f05-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2a33d-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="2a33d-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_b2xUserFlows_expand"
@@ -148,26 +148,26 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows?$expand=identityProviders
 ```
-# <a name="c"></a>[<span data-ttu-id="c2f05-149">C#</span><span class="sxs-lookup"><span data-stu-id="c2f05-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2a33d-149">C#</span><span class="sxs-lookup"><span data-stu-id="2a33d-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c2f05-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c2f05-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2a33d-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2a33d-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-b2xuserflows-expand-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c2f05-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c2f05-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2a33d-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2a33d-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-b2xuserflows-expand-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="c2f05-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="c2f05-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2a33d-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="2a33d-152">Response</span></span>
 
-<span data-ttu-id="c2f05-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c2f05-153">The following is an example of the response.</span></span>
+<span data-ttu-id="2a33d-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2a33d-153">The following is an example of the response.</span></span>
 
-<span data-ttu-id="c2f05-154">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c2f05-154">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="2a33d-154">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="2a33d-154">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -226,3 +226,5 @@ Content-type: application/json
     "Error: list_b2xUserFlows_expand/container/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
+
+
