@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 9c940de4dd8b57bfe04690a9df889c98d856bbc5
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: a1be7569f6fb7f96b28d34f8e319df78f14a6ae9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598506"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037896"
 ---
 # <a name="changenotification-resource-type"></a>Tipo de recurso changeNotification
 
@@ -20,7 +20,7 @@ Representa a notificação enviada ao Assinante.
 
 Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 Nenhum.
 
@@ -82,3 +82,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

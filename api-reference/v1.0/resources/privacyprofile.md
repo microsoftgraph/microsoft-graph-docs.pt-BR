@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ec7de45bdffc2a8a00ac6519afb55cfbbc841429
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 52aa1171e8fdc1fb01eae0241306fe197d7b36c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811270"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037217"
 ---
 # <a name="privacyprofile-resource-type"></a>Tipo de recurso privacyProfile
 
@@ -42,3 +42,4 @@ Veja a seguir uma representação JSON do recurso
   "statementUrl": "string"
 }
 ```
+

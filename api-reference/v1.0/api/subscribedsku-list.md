@@ -5,12 +5,12 @@ localization_priority: Priority
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5d580f97858fed757ec6fd40f7a9a0af3ce730f8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5cc3ec480507136798b613b554ab3e9a6d764473
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038071"
 ---
 # <a name="list-subscribedskus"></a>Listar subscribedSkus
 
@@ -150,3 +150,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

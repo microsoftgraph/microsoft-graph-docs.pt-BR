@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 43a871eb478334f49d352ae1d56845aeef50ff03
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fdc6b9692076040a4495074456f1b847e3af3c69
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474072"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037245"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>tipo de recurso Preauthorizedapplication e
 
@@ -57,3 +57,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

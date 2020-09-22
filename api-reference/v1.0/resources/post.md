@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 6f03117cce8e21f82ada720477da5db24c2a8516
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c0a09a2348099392a8e00c176f038e30703a854
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037252"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 
@@ -29,12 +29,12 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar postagens](../api/conversationthread-list-posts.md) | [postagem](post.md) |Obtenha as postagens do thread especificado. |
-|[Obter postagem](../api/post-get.md) | [postagem](post.md) |Obtenha as propriedades e os relacionamentos de uma postagem em um thread especificado.|
-|[Responder](../api/post-reply.md)|Nenhum|Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo.|
+|[Listar postagens](../api/conversationthread-list-posts.md) | [post](post.md) |Obtenha as postagens do thread especificado. |
+|[Obter postagem](../api/post-get.md) | [post](post.md) |Obtenha as propriedades e os relacionamentos de uma postagem em um thread especificado.|
+|[Responder](../api/post-reply.md)|Nenhuma|Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo.|
 |[Encaminhar](../api/post-forward.md)|Nenhuma|Encaminhe uma postagem para um destinatário.|
 |**Anexos**| | |
-|[List attachments](../api/post-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em uma postagem.|
+|[List attachments](../api/post-list-attachments.md) |Coleção [anexo](attachment.md)| Obtenha todos os anexos em uma postagem.|
 |[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| Adicione um anexo a uma postagem. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
@@ -42,17 +42,17 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |**Propriedades estendidas**| | |
-|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[postagem](post.md)  |Criar uma ou mais propriedades estendidas de valor único em uma postagem nova ou existente.   |
-|[Obter postagem com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [postagem](post.md) | Obtenha postagens que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
-|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [postagem](post.md) | Crie uma ou mais propriedades estendidas de vários valores em uma postagem nova ou existente.  |
-|[Obter postagem com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [postagem](post.md) | Obtenha uma postagem que contenha uma propriedade estendida de vários valores usando `$expand`. |
+|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Criar uma ou mais propriedades estendidas de valor único em uma postagem nova ou existente.   |
+|[Obter postagem com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [post](post.md) | Obtenha postagens que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
+|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Crie uma ou mais propriedades estendidas de vários valores em uma postagem nova ou existente.  |
+|[Obter postagem com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Obtenha uma postagem que contenha uma propriedade estendida de vários valores usando `$expand`. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|body|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
-|categories|String collection|As categorias associadas à postagem.|
-|changeKey|Cadeia de caracteres|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
+|corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
+|Categorias|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
+|changeKey|String|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |conversationId|String|ID exclusiva da conversa. Somente leitura.|
 |conversationThreadId|String|ID exclusiva do thread de conversa. Somente leitura.|
 |createdDateTime|DateTimeOffset|Especifica quando a postagem foi criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -64,10 +64,10 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |receivedDateTime|DateTimeOffset|Especifica quando a postagem foi recebida. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |sender|[recipient](recipient.md)|Contém o endereço do remetente. O valor de Sender será considerado o endereço do usuário autenticado caso o remetente não seja especificado. Esta é uma propriedade padrão.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attachments|Coleção [Attachment](attachment.md)| Somente leitura. Anulável.|
+|attachments|[Attachment](attachment.md) collection| Somente leitura. Anulável.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para a postagem. Somente leitura. Anulável.|
 |inresponderto|[post](post.md)| Somente leitura.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a postagem. Somente leitura. Anulável.|
@@ -153,3 +153,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,22 +5,22 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 891e4c154faf053fd72578210b3d8602422279e5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6904d473ace51363f8cd292524456b378e6f4e86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037525"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>tipo de recurso plannerChecklistItems
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **plannerChecklistItemCollection** representa a coleção de itens de lista de verificação em uma tarefa. É um tipo aberto. Ele faz parte do objeto de [detalhes da tarefa](plannertaskdetails.md) . O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md) .
 
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md) . O exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.
+As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md) . O exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null` .
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -88,3 +88,4 @@ Como
   "section": "documentation",
   "tocPath": ""
 }-->
+

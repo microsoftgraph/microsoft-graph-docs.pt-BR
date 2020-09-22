@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 7a52fb4bc3062129175a43c95e0603eff3d514d5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c76df8bcc4334fc045b3841fad934f8749913381
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806930"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037238"
 ---
 # <a name="activity-resource-type"></a>tipo de recurso atividade
 
@@ -24,7 +24,7 @@ Como cada aplicativo é diferente, você deve entender a melhor maneira de mapea
 
 Suas atividades de usuário serão incluídas nas experiências do usuário da Cortana e do Windows Timeline, que estão voltadas para aumentar a produtividade e a eficiência dos usuários, ajudando-os a voltar ao conteúdo em que eles trabalharam no passado.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |Método | Tipo de retorno | Descrição|
 |:------|:------------|:-----------|
@@ -40,11 +40,11 @@ Suas atividades de usuário serão incluídas nas experiências do usuário da C
 |usertimezone | String | Opcional. O fuso horário em que o dispositivo do usuário usado para gerar a atividade estava localizado no momento da criação da atividade; valores fornecidos como IDs de Olson para oferecer suporte à representação de plataforma cruzada.|
 |createdDateTime | DateTimeOffset | Definido pelo servidor. DateTime em UTC quando o objeto foi criado no servidor. |
 |lastModifiedDateTime | DateTimeOffset | Definido pelo servidor. DateTime em UTC quando o objeto foi modificado no servidor. |
-|id | Cadeia de caracteres | ID gerada pelo servidor usada para o endereçamento de URL.|
-|appActivityId | Cadeia de caracteres | Obrigatório. A ID da atividade exclusiva no contexto do aplicativo, fornecido pelo chamador e imutável, daí em diante.|
-|activitySourceHost | Cadeia de caracteres | Obrigatório. URL para o domínio que representa o mapeamento de identidade de plataforma cruzada para o aplicativo. O mapeamento é armazenado como um arquivo JSON hospedado no domínio ou configurável por meio do centro de desenvolvimento do Windows. O arquivo JSON é denominado Cross-Platform-app-Identifiers e é hospedado na raiz do domínio HTTPS, seja no domínio de nível superior ou incluir um subdomínio. Por exemplo: https://contoso.com ou https://myapp.contoso.com, mas NÃO https://myapp.contoso.com/somepath. Você deve ter um arquivo exclusivo e domínio (ou subdomínio) por identidade de aplicativo de plataforma cruzada. Por exemplo, um arquivo e domínio separados é necessário para o Word versus o PowerPoint.|
+|id | String | ID gerada pelo servidor usada para o endereçamento de URL.|
+|appActivityId | String | Obrigatório. A ID da atividade exclusiva no contexto do aplicativo, fornecido pelo chamador e imutável, daí em diante.|
+|activitySourceHost | String | Obrigatório. URL para o domínio que representa o mapeamento de identidade de plataforma cruzada para o aplicativo. O mapeamento é armazenado como um arquivo JSON hospedado no domínio ou configurável por meio do centro de desenvolvimento do Windows. O arquivo JSON é denominado Cross-Platform-app-Identifiers e é hospedado na raiz do domínio HTTPS, seja no domínio de nível superior ou incluir um subdomínio. Por exemplo: https://contoso.com ou https://myapp.contoso.com, mas NÃO https://myapp.contoso.com/somepath. Você deve ter um arquivo exclusivo e domínio (ou subdomínio) por identidade de aplicativo de plataforma cruzada. Por exemplo, um arquivo e domínio separados é necessário para o Word versus o PowerPoint.|
 |appDisplayName | String | Opcional. Descrição de texto curto do aplicativo usado para gerar a atividade para uso em casos em que o aplicativo não está instalado no dispositivo local do usuário.|
-|activationUrl | Cadeia de caracteres | Obrigatório. URL usada para iniciar a atividade na melhor experiência nativa representada pela appId. Pode iniciar um aplicativo baseado na Web se nenhum aplicativo nativo existir.|
+|activationUrl | String | Obrigatório. URL usada para iniciar a atividade na melhor experiência nativa representada pela appId. Pode iniciar um aplicativo baseado na Web se nenhum aplicativo nativo existir.|
 |fallbackUrl | String | Opcional. URL usada para iniciar a atividade em um aplicativo baseado na Web, se disponível.|
 |contentUrl | String | Opcional. Usada no evento o conteúdo pode ser renderizado fora de uma experiência de aplicativo nativa ou baseada na Web (por exemplo, um ponteiro para um item em um RSS feed).|
 |visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Obrigatório. O objeto que contém informações para renderizar a atividade no UX.|
@@ -115,3 +115,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

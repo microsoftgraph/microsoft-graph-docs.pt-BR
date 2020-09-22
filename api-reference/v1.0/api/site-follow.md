@@ -5,12 +5,12 @@ description: Siga o site/sites de um usuário.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6b4907428a17d0b832539cf37e7061376f29050c
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 07acd4f0baf9cf1450605a4b5fc7a4775ba06df9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038211"
 ---
 # <a name="follow-site"></a>Seguir site 
 
@@ -187,3 +187,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

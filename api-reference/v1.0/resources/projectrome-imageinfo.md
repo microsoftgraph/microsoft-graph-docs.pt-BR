@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 70d95d833518814f75d31227264be0dd5f85dba4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d4ed317b987d461c9ef6816e9d05aae0de358ec7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037196"
 ---
 # <a name="imageinfo-resource-type"></a>tipo de recurso imageInfo
 
@@ -22,9 +22,9 @@ Um tipo complexo para representar a propriedade de **atribuição** na parte [vi
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|iconUrl | Cadeia de caracteres | Opcion URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
-|alternateText | Cadeia de caracteres | Opcion Alt-conteúdo de texto acessível para a imagem|
-|addImageQuery | Booliano | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
+|iconUrl | String | Opcion URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
+|alternateText | String | Opcion Alt-conteúdo de texto acessível para a imagem|
+|addImageQuery | Boolean | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -58,3 +58,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

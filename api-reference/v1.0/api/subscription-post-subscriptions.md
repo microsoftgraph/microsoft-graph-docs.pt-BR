@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ee1a5d1b0ae6f90f2e5fecc8347e35e3f68b729e
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 71ca8e76a2f35601752500c55c8346b93ff65f0c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038036"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -177,3 +177,4 @@ O ponto de extremidade da notificação da assinatura (especificado na `notifica
   "suppressions": [
   ]
 }-->
+

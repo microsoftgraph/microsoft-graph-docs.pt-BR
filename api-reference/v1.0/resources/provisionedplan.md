@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8b7f3e5ac0c66dca2cb297986af1be6473de23c1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0149ed4fbdcdde073924d70a47ac60cc5f12b8ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037112"
 ---
 # <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

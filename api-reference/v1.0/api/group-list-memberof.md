@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7f30b10ef9c6b33fc92b86b02fefe8c4c71c4a39
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: a6a87d643c9cd0b53b4769f6943f4a6f8e779f5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038617"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha grupos dos quais um grupo é um membro direto. 
 
-Essa operação não é transitiva. Ao contrário de obter Grupos do Office 365 de um usuário, isso retorna todos os tipos de grupos, não apenas grupos do Office 365.
+Essa operação não é transitiva. Ao contrário de obter Grupos do Microsoft 365 de um usuário, retorna todos os tipos de grupos, não apenas grupos do Microsoft 365.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -116,3 +116,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

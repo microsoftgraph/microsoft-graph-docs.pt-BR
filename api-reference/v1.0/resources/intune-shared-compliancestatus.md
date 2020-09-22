@@ -3,14 +3,14 @@ title: tipo de enumeração complianceStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f185694d51f2d9defee66d5859d32a46b50dfe0e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f21a4ba89ea195259634a2250be1d6d1f075456e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448318"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037749"
 ---
 # <a name="compliancestatus-enum-type"></a>tipo de enumeração complianceStatus
 
@@ -24,13 +24,15 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Ainda não documentado|
-|Não aplicável|1|Ainda não documentado|
-|com|duas|Ainda não documentado|
-|corrigidos|3D|Ainda não documentado|
+|Não aplicável|1 |Ainda não documentado|
+|com|2 |Ainda não documentado|
+|corrigidos|3 |Ainda não documentado|
 |Incompatível|4 |Ainda não documentado|
 |erro|5 |Ainda não documentado|
 |apresentar|6 |Ainda não documentado|
 |Não atribuído|7 |Ainda não documentado|
+
+
 
 
 

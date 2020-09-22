@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 41eb1ba2ac2b8ea3afdcd06b2ca9b6781a995abd
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: a589d63c59636db385bafb04a8c646dc2dc6c030
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037056"
 ---
 # <a name="schedule-resource-type"></a>tipo de recurso Schedule
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Uma coleção de objetos de grupo de [agendamento](schedulinggroup.md) , objetos [Shift](shift.md) , objetos [timeOffReason](timeoffreason.md) e objetos [timeOff](timeoff.md) dentro de uma [equipe](../resources/team.md). 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -32,13 +32,13 @@ Uma coleção de objetos de grupo de [agendamento](schedulinggroup.md) , objetos
 | id                    |string  |ID do cronograma.|
 | enabled               |Boolean    | Indica se o cronograma está habilitado para a equipe. Obrigatório.|
 | timeZone              |string  | Indica o fuso horário da equipe de agendamento usando o formato de banco de dados da TZ. Obrigatório.|
-| provisionStatus       |operationStatus    | O status do provisionamento de agendamento. Os valores possíveis são `notStarted`: `running` `completed`,, `failed`,. |
+| provisionStatus       |operationStatus    | O status do provisionamento de agendamento. Os valores possíveis são:,,, `notStarted` `running` `completed` `failed` . |
 | provisionStatusCode   |string  | Informações adicionais sobre por que o provisionamento de agendamento falhou. |
-| timeClockEnabled                  |Booliano  | Indica se o relógio de hora está habilitado para o cronograma.             |
-| openShiftsEnabled                 |Booliano  | Indica se os turnos abertos estão habilitados para o cronograma.             | 
-| swapShiftsRequestsEnabled                 |Booliano| Indica se as solicitações de troca alternadas estão habilitadas para o cronograma.             |
-| offerShiftRequestsEnabled                 |Booliano  | Indica se as solicitações de mudança de oferta estão habilitadas para o cronograma.             | 
-| timeOffRequestsEnabled                    |Booliano | Indica se as solicitações de folga estão habilitadas para o cronograma.             | 
+| timeClockEnabled                  |Boolean  | Indica se o relógio de hora está habilitado para o cronograma.             |
+| openShiftsEnabled                 |Boolean  | Indica se os turnos abertos estão habilitados para o cronograma.             | 
+| swapShiftsRequestsEnabled                 |Boolean| Indica se as solicitações de troca alternadas estão habilitadas para o cronograma.             |
+| offerShiftRequestsEnabled                 |Boolean  | Indica se as solicitações de mudança de oferta estão habilitadas para o cronograma.             | 
+| timeOffRequestsEnabled                    |Boolean | Indica se as solicitações de folga estão habilitadas para o cronograma.             | 
 
 
 
@@ -88,3 +88,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

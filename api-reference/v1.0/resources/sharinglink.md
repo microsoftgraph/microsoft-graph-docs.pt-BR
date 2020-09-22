@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso SharingLink agrupa itens de dados relacionados ao link em uma única estrutura.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6a696a95c3c636a84bb79498375b0c023617548d
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 679e1f749a8e6be3ed0be055118c25a6d585b5d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934882"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037049"
 ---
 # <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
 
@@ -48,8 +48,8 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade    | Tipo          | Descrição
 |:------------|:--------------|:-------------------------------------
 | aplicativo | [identity][]  | O aplicativo ao qual o link está associado.
-| type        | String        | O tipo do link criado.
-| scope       | Cadeia de caracteres        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
+| tipo        | String        | O tipo do link criado.
+| scope       | String        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
 | preventsDownload | Boolean       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
 | webHtml     | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
 | webUrl      | String        | Uma URL que abre o item no navegador no site do OneDrive.
@@ -88,3 +88,4 @@ Esta tabela define os valores possíveis para a propriedade **type**:
   ],
   "tocPath": "Facets/SharingLink"
 } -->
+

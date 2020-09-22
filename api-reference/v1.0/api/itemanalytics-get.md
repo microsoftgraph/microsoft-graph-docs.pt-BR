@@ -6,19 +6,19 @@ description: Obtenha o naanalytics sobre os modos de exibição que foram coloca
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b6f1da3d02b1a11afc70ca3be51177fb4e193047
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 311d7eea81ba3001af6cb94e2a3f837824a67fde
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038470"
 ---
 # <a name="get-itemanalytics"></a>Obter o naanalytics
 
 Namespace: microsoft.graph
 
 Obtenha o [naanalytics][] sobre os modos de exibição que foram colocados sob esse recurso.
-O recurso do Microsoft **Analytics** é uma maneira conveniente de obter estatísticas de `allTime` atividades para `lastSevenDays`o e o.
+O recurso do Microsoft **Analytics** é uma maneira conveniente de obter estatísticas de atividades para `allTime` o e o `lastSevenDays` .
 Para um intervalo ou intervalo de tempo personalizado, use a API [funçãogetactivitiesbyinterval][] .
 
 >**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
@@ -60,7 +60,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta 
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objeto do [objectanalytics][] no corpo da resposta. 
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objeto do [objectanalytics][] no corpo da resposta. 
 
 ## <a name="example"></a>Exemplo
 
@@ -127,3 +127,4 @@ Content-type: application/json
   ]
 }
 -->
+

@@ -7,14 +7,14 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Criar uma nova lista em um site.
 doc_type: apiPageType
-ms.openlocfilehash: e19c258cac45862281690993e8e4f60d6ae48566
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 96ab4b1f80ea85a6c17c7ad1d22214dac4bf687e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511737"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038463"
 ---
-# <a name="create-a-new-list"></a>Criar uma nova lista
+# <a name="create-a-new-list"></a>Crie uma nova lista
 
 Namespace: microsoft.graph
 
@@ -139,3 +139,4 @@ As propriedades padrão serão retornadas da chamada real.
   "suppressions": [
   ]
 } -->
+

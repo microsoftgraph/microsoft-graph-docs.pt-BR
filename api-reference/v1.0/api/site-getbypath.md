@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Recupere as propriedades e as relações de um recurso do site.
 doc_type: apiPageType
-ms.openlocfilehash: 767f6c3bd882fcc8a04931a5d3b802a56d4b39c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f966876a986d235c4caa9913181ce161c217c097
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038176"
 ---
 # <a name="get-a-site-resource-by-path"></a>Obter um recurso de site pelo caminho
 
@@ -85,3 +85,4 @@ Content-Type: application/json
   ],
   "tocPath": "Sites/Get by path"
 } -->
+

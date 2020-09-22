@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5adc385c5764371c1e2cab516bc33fd8504aecf5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 43f36c1843a8f9e92081015dd349ee48a1f768ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447084"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037343"
 ---
 # <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 A operação playPrompt para obter o resultado da ação playPrompt.
 
@@ -23,7 +23,7 @@ A operação playPrompt para obter o resultado da ação playPrompt.
 | Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
 | clientContext       | String                      | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                              |
-| id                  | Cadeia de caracteres                      | Somente leitura.                                                                         |
+| id                  | String                      | Somente leitura.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura.                                |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |
 
@@ -62,3 +62,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

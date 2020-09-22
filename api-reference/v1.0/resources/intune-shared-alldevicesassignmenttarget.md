@@ -3,14 +3,14 @@ title: Tipo de recurso allDevicesAssignmentTarget
 description: Representa uma atribuição para todos os dispositivos gerenciados no locatário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f89e50ea2d8e3ec1b0d396ed9aff7f4e13c9901
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2157cd348a7620c71175338631e210944430cf53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037763"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>Tipo de recurso allDevicesAssignmentTarget
 
@@ -42,6 +42,8 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget"
 }
 ```
+
+
 
 
 

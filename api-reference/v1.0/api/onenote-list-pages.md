@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 22daf1f67fee7cc495bd0d4996d6291f3d75e2be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 993adcbefb97d15d1d43cd5184cbddb1284f5078
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038379"
 ---
 # <a name="list-pages"></a>Listar páginas
 
@@ -37,9 +37,9 @@ GET /sites/{id}/onenote/pages
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-A consulta padrão para páginas retorna as 20 principais páginas ordenadas `lastModifiedTime desc`por. Se a consulta padrão retornar mais de 20 páginas, a resposta conterá `@odata.nextLink` um que você pode usar para percorrer o conjunto de resultados. O número máximo de páginas retornadas para `top` uma solicitação é 100.
+A consulta padrão para páginas retorna as 20 principais páginas ordenadas por `lastModifiedTime desc` . Se a consulta padrão retornar mais de 20 páginas, a resposta conterá um `@odata.nextLink` que você pode usar para percorrer o conjunto de resultados. O número máximo de páginas retornadas para uma `top` solicitação é 100.
 
-A resposta padrão expande `parentSection` e seleciona as propriedades `id`, `displayName`e e. `self` Os `expand` valores válidos para páginas `parentNotebook` são `parentSection`e.
+A resposta padrão expande `parentSection` e seleciona as `id` `displayName` Propriedades, e e `self` . `expand`Os valores válidos para páginas são `parentNotebook` e `parentSection` .
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Page](../resources/page.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -97,3 +97,4 @@ Content-length: 393
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso plannerTask
-description: O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma tarefa de Planejador está contida em uma plano e pode ser atribuída a um bucket em um plano. Cada objeto de tarefa tem um objeto details que pode conter mais informações sobre a tarefa. Confira mais informações sobre as relações entre grupo, plano e tarefa na visão geral.
+description: O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma tarefa do Planner está contida em um plano e pode ser atribuída a um bucket em um plano. Cada objeto de tarefa tem um objeto de detalhes que pode conter mais informações sobre a tarefa. Confira a visão geral para obter mais informações sobre as relações entre o grupo, o plano e a tarefa.
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7a5e5db3baf0ebf82597d796f4f1a8737f3d7ea9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62efdd9c76aecde9367e36d5d688313a10aa69d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447098"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037372"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
 Namespace: microsoft.graph
 
-O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma tarefa de Planejador está contida em uma [plano](plannerplan.md) e pode ser atribuída a um [bucket](plannerbucket.md) em um plano. Cada objeto de tarefa tem um objeto [details](plannertaskdetails.md) que pode conter mais informações sobre a tarefa. Confira mais informações sobre as relações entre grupo, plano e tarefa na [visão geral](planner-overview.md).
+O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma tarefa do Planner está contida em um [plano](plannerplan.md) e pode ser atribuída a um [bucket](plannerbucket.md) em um plano. Cada objeto de tarefa tem um objeto de [detalhes](plannertaskdetails.md) que pode conter mais informações sobre a tarefa. Confira a [visão geral](planner-overview.md) para obter mais informações sobre as relações entre o grupo, o plano e a tarefa.
 
 
 ## <a name="methods"></a>Métodos
@@ -108,3 +108,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

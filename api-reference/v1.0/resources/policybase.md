@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3b45d36976f8939efbeb11dcc0a7cda5598b6afb
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 4e0d1d59698b8a82252c4cbc2ae8edf2ae1e3b62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917541"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037329"
 ---
 # <a name="policybase-resource-type"></a>tipo de recurso policyBase
 
@@ -28,7 +28,7 @@ Nenhum
 |:-------------|:------------|:------------|
 |id|String| Identificador exclusivo da política. Somente leitura.|
 |description|String| Descrição da política.|
-|displayName|Cadeia de caracteres| Nome para exibição dessa política. |
+|displayName|String| Nome para exibição dessa política. |
 
 ## <a name="relationships"></a>Relações
 

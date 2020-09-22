@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Obtém uma coleção de subsites definidos para um site.
 doc_type: apiPageType
-ms.openlocfilehash: 8f4302a900887bada50ff88d473930a63cf8c4e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 853170cb82f5874d322bd5122f74396813ad3153
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509777"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038169"
 ---
 # <a name="enumerate-subsites"></a>Enumerar subsites
 
@@ -99,3 +99,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
