@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2307bd50509cc1a44ee4de0a30309a2be98dcb3e
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: bf9c152de12acc31ecf13100c6dcba753d1d476b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036937"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
@@ -84,4 +84,5 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
   "section": "documentation",
   "tocPath": ""
 }-->
+
 

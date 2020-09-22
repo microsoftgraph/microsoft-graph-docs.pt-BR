@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 33c16f396d1975b3ffd25de3cf0a8b9f9d7bbf50
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 08a652c5b4ad4b9555eb7c09e33398f140ed97b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287481"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036930"
 ---
 # <a name="teamsappdefinition-resource-type"></a>tipo de recurso teamsAppDefinition
 
@@ -60,3 +60,4 @@ Representa os detalhes de uma versão de um [teamsApp](teamsapp.md).
   "section": "documentation",
   "tocPath": ""
 }-->
+

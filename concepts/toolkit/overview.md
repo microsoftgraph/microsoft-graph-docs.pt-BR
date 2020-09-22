@@ -3,12 +3,12 @@ title: 'Kit de ferramentas do Microsoft Graph: Web Components da plataforma Micr
 description: O kit de ferramentas do Microsoft Graph é uma coleção de resuable, componentes da Web e auxiliares de estrutura independente para acessar e trabalhar com o Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 2ba11a66dcec1eaec276b3fe71427fcf356cbcde
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: ba19e1697700800de22d193f8bbb1a959776a18f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181613"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036860"
 ---
 # <a name="microsoft-graph-toolkit-web-components-powered-by-microsoft-graph"></a>Kit de ferramentas do Microsoft Graph: Web Components da plataforma Microsoft Graph
 
@@ -44,7 +44,7 @@ Os componentes funcionam melhor quando usados com um [provedor](/providers/provi
 
 |Provedores|Descrição|
 |---------|-----------|
-|[MSAL](./providers/msal.md)|Usa MSAL. js para entrar em usuários e adquirir tokens para uso com o Microsoft Graph.|
+|[MSAL](./providers/msal.md)|Usa MSAL.js para entrar em usuários e adquirir tokens para uso com o Microsoft Graph.|
 |[SharePoint](./providers/sharepoint.md)|Autentica e fornece acesso do Microsoft Graph aos componentes dentro de Web Parts do SharePoint.|
 |[Teams](./providers/teams.md)|Autentica e fornece acesso do Microsoft Graph aos componentes dentro das guias do Microsoft Teams.|
 |[Acionista](./providers/proxy.md)|Permite o uso da autenticação de backend ao rotear todas as chamadas para o Microsoft Graph por meio do seu back-end.|
@@ -87,4 +87,5 @@ O kit de ferramentas do Microsoft Graph é suportado nos seguintes navegadores.
 ## <a name="next-steps"></a>Próximas etapas
 
 - Experimente os componentes no [playground](https://mgt.dev).
-- [Introdução](get-started.md) ao Microsoft Graph Toolkit.
+- [Introdução](./get-started/overview.md) ao Microsoft Graph Toolkit.
+- Confira o Microsoft Graph Toolkit no [GitHub](https://aka.ms/mgt).

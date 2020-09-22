@@ -3,14 +3,14 @@ title: Obter androidTrustedRootCertificate
 description: Leia as propriedades e as relações do objeto androidTrustedRootCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d1d82b46971b86735273e072971f10ed13b973df
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 53ba6391acc41efca229a042ad0b0f3292a8ca53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43344211"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036636"
 ---
 # <a name="get-androidtrustedrootcertificate"></a>Obter androidTrustedRootCertificate
 
@@ -111,6 +111,9 @@ Content-Length: 1399
   }
 }
 ```
+
+
+
 
 
 

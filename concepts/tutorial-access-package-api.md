@@ -4,12 +4,12 @@ description: Saiba como criar um pacote do Access e solicitar acesso a ele usand
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afb5e048a0075ccb391c4edd5f74ced8ecd7755c
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 7c9f283a00bbf09c1bc54c4abd924c92fe1ce140
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330454"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036825"
 ---
 # <a name="tutorial-create-an-access-package-using-microsoft-graph-apis"></a>Tutorial: criar um pacote de acesso usando as APIs do Microsoft Graph
 
@@ -30,17 +30,18 @@ Para concluir com êxito este tutorial, verifique se você tem os pré-requisito
     2. Selecione **entrar com a Microsoft** e entre usando uma conta de administrador global do Azure AD. Após entrar com êxito, você poderá ver os detalhes da conta de usuário no painel esquerdo.
     3. Selecione o ícone de configurações à direita dos detalhes da conta de usuário e selecione **permissões**.
 
-        ![Selecione as permissões do Microsoft Graph.](./images/tutorial-access-package-api/set-permissions.png)
+        ![Selecionar as permissões do Microsoft Graph](./images/tutorial-access-package-api/set-permissions.png)
         
-    4. Role a lista de permissões para as `Group` permissões, expanda **Group (2)**, selecione a permissão **Group. ReadWrite. All** .
-    5. Role mais adiante na lista de permissões para as `User` permissões, expanda **usuário (8)**, pressione a tecla **Ctrl** e selecione a permissão **User. ReadWrite. All** .
+    4. Role a lista de permissões para as `Group` permissões, expanda **Group (2)**, selecione a permissão **Group. ReadWrite. All** . Role mais adiante na lista de permissões para as `User` permissões, expanda **usuário (8)** e selecione a permissão **User. ReadWrite. All** .
 
-        ![Procure as permissões de usuário.](./images/tutorial-access-package-api/set-user-permission.png)
+        ![Procurar as permissões de usuário, grupo e entitlementmanagement](./images/tutorial-access-package-api/set-user-permission.png)
     
-    6. Selecione **aceitar** para aceitar o consentimento das permissões. Você não precisa consentir em nome da sua organização para essas permissões.
-    7. Procure as `EntitlementManagement` permissões, expanda **EntitlementManagement (2)**, selecione a permissão de **qualificação. ReadWrite. All** e, em seguida, selecione o **consentimento**. Como essa permissão requer o consentimento do administrador e é necessária para uma conta de usuário que você cria neste tutorial, você deve selecionar **consentimento em nome da sua organização**.
+    5. Selecione **consentimento**e, em seguida, selecione **aceitar** para aceitar o consentimento das permissões. Você não precisa consentir em nome da sua organização para essas permissões.
+    6. Procure as `EntitlementManagement` permissões, expanda **EntitlementManagement (2)**, selecione a permissão de **qualificação. ReadWrite. All** e, em seguida, selecione o **consentimento**. Como essa permissão requer o consentimento do administrador e é necessária para uma conta de usuário que você cria neste tutorial, você deve selecionar **consentimento em nome da sua organização**.
 
         ![Consentimento para a organização](./images/tutorial-access-package-api/consent-for-organization.png)
+
+    7. Selecione **aceitar** para aceitar o consentimento das permissões.
 
 ## <a name="step-1-create-a-user-account-and-a-group"></a>Etapa 1: criar uma conta de usuário e um grupo
 
@@ -731,5 +732,5 @@ Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referên
 - [accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
 - [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
 - [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
-- [grupo](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0)
+- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0)
 - [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0)

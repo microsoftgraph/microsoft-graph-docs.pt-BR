@@ -3,12 +3,12 @@ title: Provedor do SharePoint
 description: Use o provedor do SharePoint dentro de suas Web Parts do SharePoint para poder alimentar os componentes com o acesso ao Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: d94d516aa458ccfbc4a3770ad5937828aa23b335
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 98694291203c6b55d72e22503897d9515960d054
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007070"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036811"
 ---
 # <a name="sharepoint-provider"></a>Provedor do SharePoint
 
@@ -62,4 +62,4 @@ Em suma, é importante adicionar a permissão certa ao seu `package-solution.jso
 
 Se você planeja suportar o IE11 em suas Web Parts do SPFx, você deve usar polipreenchimentos.
 
-Para saber mais, confira [Get-Started](../get-started.md#sharepoint).
+Para saber mais, confira [introdução ao Microsoft Graph Toolkit](../get-started/overview.md#polyfills).

@@ -5,18 +5,18 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: b9b7954c234e1d76e8f9d27080488b932af515ce
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 4ebeaa1224c359dacd4f6cbc4e4560a32ca402fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036972"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O Microsoft Teams é um espaço de trabalho baseado em bate-papo no Microsoft 365 que fornece acesso interno a calendários, arquivos, anotações do OneNote, planos do Planner, cronogramas de turnos e muito mais.
+O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que fornece acesso interno a calendários, arquivos, anotações do OneNote, planos do Planner e muito mais.
 
 ## <a name="key-resources-in-microsoft-teams"></a>Principais recursos no Microsoft Teams (visualização)
 
@@ -29,10 +29,10 @@ O Microsoft Teams é um espaço de trabalho baseado em bate-papo no Microsoft 36
 |[teamsApp](../resources/teamsapp.md)|[Listar](../api/teamsapp-list.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/teamsappinstallation-list.md), [instalar](../api/teamsappinstallation-add.md), [atualizar](../api/teamsappinstallation-delete.md), [remover](../api/teamsappinstallation-delete.md) |
 |[chatMessage](../resources/chatmessage.md)| [send](../api/channel-post-messages.md) |
-|[call](../resources/call.md)| [Responder](../api/call-answer.md), [rejeitar](../api/call-reject.md), [redirecionar](../api/call-redirect.md), [ativar mudo, desativar](../api/call-mute.md) [mudo](../api/call-unmute.md), [alterar a função de compartilhamento de tela](../api/call-changescreensharingrole.md), [listar participantes](../api/call-list-participants.md), [convidar participantes](../api/participant-invite.md) |
-|[Cronograma](../resources/schedule.md)| [Criar ou substituir](../api/team-put-schedule.md), [obter](../api/schedule-get.md), [compartilhar](../api/schedule-share.md) |
+|[call](../resources/call.md)| [Responder](../api/call-answer.md), [rejeitar](../api/call-reject.md), [redirecionar](../api/call-redirect.md), [ativar mudo](../api/call-mute.md), [desfazer ativar mudo](../api/call-unmute.md), [alterar a função de compartilhamento de tela](../api/call-changescreensharingrole.md), [listar participantes](../api/call-list-participants.md), [convidar participantes](../api/participant-invite.md) |
+|[cronograma](../resources/schedule.md)| [Criar ou substituir](../api/team-put-schedule.md), [obter](../api/schedule-get.md), [compartilhar](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Criar](../api/schedule-post-schedulinggroups.md), [Listar](../api/schedule-list-schedulinggroups.md), [Obter](../api/schedulinggroup-get.md), [Substituir](../api/schedulinggroup-put.md), [Excluir](../api/schedulinggroup-delete.md) |
-|[desloca](../resources/shift.md)| [Criar](../api/schedule-post-shifts.md), [Listar](../api/schedule-list-shifts.md), [Obter](../api/shift-get.md), [Substituir](../api/shift-put.md), [Excluir](../api/shift-delete.md) |
+|[shift](../resources/shift.md)| [Criar](../api/schedule-post-shifts.md), [Listar](../api/schedule-list-shifts.md), [Obter](../api/shift-get.md), [Substituir](../api/shift-put.md), [Excluir](../api/shift-delete.md) |
 |[timeOff](../resources/timeoff.md)| [Criar](../api/schedule-post-timesoff.md), [Listar](../api/schedule-list-timesoff.md), [Obter](../api/timeoff-get.md), [Substituir](../api/timeoff-put.md), [Excluir](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Criar](../api/schedule-post-timeoffreasons.md), [Listar](../api/schedule-list-timeoffreasons.md), [Obter](../api/timeoffreason-get.md), [Substituir](../api/timeoffreason-put.md), [Excluir](../api/timeoffreason-delete.md) |
 
@@ -48,7 +48,7 @@ Confira também [redução dos limites dos serviços do Microsoft Teams](/graph/
 
 ## <a name="teams-and-groups"></a>Equipes e grupos
 
-Na Microsoft Graph, o Microsoft Teams é representado por um recurso de [grupo](../resources/group.md). O Microsoft Teams e os grupos do Microsoft 365 atendem às diversas necessidades de colaboração de grupo. Quase todos os recursos baseados em grupo se aplicam ao Microsoft Teams e grupos do Microsoft 365, como calendário de grupo, arquivos, anotações, foto, planos e assim por diante. A principal diferença entre uma [equipe](team.md) e um grupo do Microsoft 365 é o modo de comunicação entre os membros. Os membros da equipe se comunicam por meio de chat persistente no contexto de uma equipe específica. Os membros do grupo do Microsoft 365 se comunicam por conversas de grupo, que são conversas por email que ocorrem no contexto de um grupo no Outlook.
+Na Microsoft Graph, o Microsoft Teams é representado por um recurso de [grupo](../resources/group.md). Os grupos do Microsoft Teams e Microsoft 365 atendem às várias necessidades de colaboração em grupo. Quase todos os recursos baseados em grupo se aplicam aos grupos do Microsoft Teams e do Microsoft 365, como calendário de grupo, arquivos, anotações, fotos, planos e assim por diante. A principal diferença entre uma [equipe](team.md) e um grupo do Microsoft 365 é o modo de comunicação entre os membros. Os membros do Teams se comunicam por meio de chat persistente no contexto de uma equipe específica. Os membros do grupo do Microsoft 365 se comunicam por conversas em grupo, que são conversas de email que ocorrem no contexto de um grupo no Outlook.
 
 Qualquer grupo que tenha uma equipe possui uma propriedade **resourceProvisioningOptions** que contém "Team".
 
@@ -58,7 +58,7 @@ Não adicione ou remova "Team" dessa coleção; caso contrário, você obterá r
 Veja a seguir as diferenças no nível da API entre equipes e grupos:
 
 - O chat persistente está disponível apenas para o Microsoft Teams. Esse recurso é representado hierarquicamente pelos recursos [channel](../resources/channel.md) e [chatMessage](../resources/chatmessage.md).
-- As conversas de grupo estão disponíveis somente para grupos do Microsoft 365. Esse recurso é representado hierarquicamente pelos recursos [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) e [post](../resources/post.md). 
+- As conversas em grupo estão disponíveis apenas para grupos do Microsoft 365. Esse recurso é representado hierarquicamente pelos recursos [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) e [post](../resources/post.md). 
 - O método [Listar equipes unidas](../api/user-list-joinedteams.md) se aplica apenas ao Microsoft Teams.
 - As [APIs de chamadas e reuniões online](./communications-api-overview.md) aplicam-se apenas ao Microsoft Teams.
 - Confira também os [problemas conhecidos](/graph/known-issues) dessas APIs.
@@ -122,3 +122,4 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 
 - [Visão geral da API do Microsoft Teams](/graph/teams-concept-overview)
 - Exemplo de código: [Linhas Aéreas Contoso](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [mini exemplos C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)
+
