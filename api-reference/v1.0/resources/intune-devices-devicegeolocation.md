@@ -3,14 +3,14 @@ title: Tipo de recurso deviceGeoLocation
 description: Localização do dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 091ef44a52e20acb987adddbac1c561087db718c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69e097d433d774c3dd445c94cd29eb059292806f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43368309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091226"
 ---
 # <a name="devicegeolocation-resource-type"></a>Tipo de recurso deviceGeoLocation
 
@@ -24,12 +24,12 @@ Localização do dispositivo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |lastCollectedDateTime|DateTimeOffset|Hora em que a localização foi registrada, em relação ao UTC|
-|longitude|Duplo|Coordenada de longitude da localização do dispositivo|
-|latitude|Duplo|Coordenada de latitude da localização do dispositivo|
-|altitude|Duplo|Altitude, especificada em metros acima do nível do mar|
-|horizontalAccuracy|Duplo|Precisão da latitude e da longitude em metros|
-|verticalAccuracy|Duplo|Precisão da altitude em metros|
-|heading|Duplo|Direção em graus do norte verdadeiro|
+|longitude|Double|Coordenada de longitude da localização do dispositivo|
+|latitude|Double|Coordenada de latitude da localização do dispositivo|
+|altitude|Double|Altitude, especificada em metros acima do nível do mar|
+|horizontalAccuracy|Double|Precisão da latitude e da longitude em metros|
+|verticalAccuracy|Double|Precisão da altitude em metros|
+|heading|Double|Direção em graus do norte verdadeiro|
 |speed|Double|Velocidade na qual o dispositivo está viajando, em metros por segundo|
 
 ## <a name="relationships"></a>Relações
@@ -55,6 +55,8 @@ Veja a seguir uma representação JSON do recurso.
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
+
+
 
 
 

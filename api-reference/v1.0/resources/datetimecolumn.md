@@ -7,12 +7,12 @@ localization_priority: Normal
 description: dateTimeColumn em um recurso columnDefinition indica que os valores da coluna são datas ou horas.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4c3f5fa00af8b04753f6581120760b5a57a9e08a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37ae27f2ae9b74612895784e69752d37ef976b04
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531717"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091835"
 ---
 # <a name="datetimecolumn-resource-type"></a>Tipo de recurso DateTimeColumn
 
@@ -63,3 +63,4 @@ Aqui está uma representação JSON de um recurso **dateTimeColumn**.
   ],
   "tocPath": "Resources/DateTimeColumn"
 } -->
+

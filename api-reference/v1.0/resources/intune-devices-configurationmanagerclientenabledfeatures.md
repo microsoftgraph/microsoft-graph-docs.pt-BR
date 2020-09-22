@@ -3,14 +3,14 @@ title: Tipo de recurso configurationManagerClientEnabledFeatures
 description: recursos habilitados pelo cliente do Gerenciador de Configurações
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da8a32960b1a8e82f60161e329abcf68916b4f37
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2ea873333002e543a95746b1168b36a6263277ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451269"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091296"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Tipo de recurso configurationManagerClientEnabledFeatures
 
@@ -51,6 +51,8 @@ Veja a seguir uma representação JSON do recurso.
   "windowsUpdateForBusiness": true
 }
 ```
+
+
 
 
 

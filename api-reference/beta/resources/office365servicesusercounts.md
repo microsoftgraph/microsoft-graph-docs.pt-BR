@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 8600e79d425d15746fd7015adea98eb49a8a3c82
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 80bfb483e7e15dcdaffb6a8ba8ed30c8bb508f5c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896550"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092353"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>tipo de recurso office365ServicesUserCounts
 
@@ -35,7 +35,7 @@ Namespace: microsoft.graph
 | teamsInactive            | Int64  | O número de usuários inativos no Microsoft Teams.     |
 | office365Active          | Int64  | O número de usuários ativos no Microsoft 365.   |
 | office365Inactive        | Int64  | O número de usuários inativos no Microsoft 365.     |
-| reportPeriod             | String | O número de dias que o relatório cobre.    |
+| reportPeriod             | Cadeia de caracteres | O número de dias que o relatório cobre.    |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -66,3 +66,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

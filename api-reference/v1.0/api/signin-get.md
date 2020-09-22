@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f9734fe7421316f19beed0f0aeccd3dce291ab1c
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 153c374704cce31aaaab103d58f0b9e702525243
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674544"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092115"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog. Read. All e Directory. Read. All |
 
@@ -185,3 +185,4 @@ Content-length: 211
   "suppressions": [
   ]
 }-->
+

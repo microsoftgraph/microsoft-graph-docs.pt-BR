@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1ed82e040121f49bdef29009f6ac387ed4c79cbc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bc104f3a9c19c38ef569d08d24da83d0e07d75f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532031"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091898"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>tipo de recurso averageComparativeScore
 
@@ -22,7 +22,7 @@ Contém várias pontuações diferentes com base em escopos diferentes (por exem
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|base|String|Tipo de escopo. Os valores possíveis são: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
+|base|Cadeia de caracteres|Tipo de escopo. Os valores possíveis são: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
 |averageScore|Duplo|Pontuação média dentro da base especificada.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -53,3 +53,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

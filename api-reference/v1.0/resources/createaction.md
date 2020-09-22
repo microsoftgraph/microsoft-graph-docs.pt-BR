@@ -6,12 +6,12 @@ description: O objeto CreateAction fornece informações sobre a criação de um
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 13a0083a8047ef09126e19908765647d55932698
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c00996168c5075527fed91661f4c3f384fd47c8d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533012"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091856"
 ---
 # <a name="createaction-resource-type"></a>tipo de recurso CreateAction
 
@@ -51,3 +51,4 @@ Nenhum. Esta faceta tem um valor nulo ou não nulo e não contém propriedades.
   "suppressions": []
 }
 -->
+

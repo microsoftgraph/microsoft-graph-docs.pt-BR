@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: b0337dfe620318482f3cc400512d5c381bf123a9
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 5cdd723e9d73a0466ae4349026f6bf086cb9bdd2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091863"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações no Microsoft Graph
 
@@ -58,3 +58,4 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 - [Exemplos da API de comunicações](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 - [SDK de sinalização de comunicação](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls)
 - [SDK de mídia de comunicação](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media)
+
