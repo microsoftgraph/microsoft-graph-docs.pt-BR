@@ -3,14 +3,14 @@ title: ação wipeAndBlockManagedApps
 description: Bloqueia o usuário do aplicativo gerenciado do check-in do aplicativo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f3f2b4adf5a66d3e3ed4311a0c291e81b97acfa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7d83542b5a46a6214f54431ee29db5878713e03e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421603"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010999"
 ---
 # <a name="wipeandblockmanagedapps-action"></a>ação wipeAndBlockManagedApps
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

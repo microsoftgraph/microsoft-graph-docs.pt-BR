@@ -3,14 +3,14 @@ title: função isManagedAppUserBlocked
 description: Obtém o estado bloqueado de um usuário de aplicativo gerenciado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1c75fe59bfdeb90e8ebce95ca0ebda385cd0f6f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b50a42e4b1994f2efded79d617d5e9484693d55c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466515"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011008"
 ---
 # <a name="ismanagedappuserblocked-function"></a>função isManagedAppUserBlocked
 
@@ -71,6 +71,9 @@ Content-Length: 21
   "value": true
 }
 ```
+
+
+
 
 
 

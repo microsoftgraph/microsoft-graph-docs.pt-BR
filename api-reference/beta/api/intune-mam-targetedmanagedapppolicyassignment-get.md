@@ -3,18 +3,18 @@ title: Get targetedManagedAppPolicyAssignment
 description: Ler propriedades e relações do objeto targetedManagedAppPolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd5451539eeb97e1611a68fa467a41ca1dfdaa7d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: f39acfbde03b535528cde8c40596fdca0be29cbb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791914"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011099"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>Get targetedManagedAppPolicyAssignment
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -88,6 +88,9 @@ Content-Length: 476
   }
 }
 ```
+
+
+
 
 
 

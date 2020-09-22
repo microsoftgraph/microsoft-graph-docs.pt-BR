@@ -3,18 +3,18 @@ title: Atualizar targetedManagedAppPolicyAssignment
 description: Atualizar as propriedades de um objeto targetedManagedAppPolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 923b0a6e26e13a8a8b51998ad027ecb7276dd8f8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 33aad94ff70e6af08de17bc1ed301cd34dfd5043
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791900"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011050"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Atualizar targetedManagedAppPolicyAssignment
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -107,6 +107,9 @@ Content-Length: 439
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

@@ -3,18 +3,18 @@ title: Listar targetedManagedAppPolicyAssignments
 description: Listar propriedades e relações de objetos de targetedManagedAppPolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a07e57d5718b1fb9e53c612f9ea9e898c51f95ac
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 699d44438edac8763a6adc68f8a2ab2fd6a13d00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011057"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>Listar targetedManagedAppPolicyAssignments
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -87,6 +87,9 @@ Content-Length: 508
   ]
 }
 ```
+
+
+
 
 
 

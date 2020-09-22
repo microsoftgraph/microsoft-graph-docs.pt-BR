@@ -3,18 +3,18 @@ title: Atualizar userExperienceAnalyticsBaseline
 description: Atualiza as propriedades de um objeto userExperienceAnalyticsBaseline.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2de10d98ff3dccd875a53a6cb11e33690c442a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dbf41a82332d638880913246c974ac36298cc7de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43322744"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011162"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>Atualizar userExperienceAnalyticsBaseline
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo da linha de base da análise da experiência do usuário.|
-|displayName|Cadeia de caracteres|O nome da linha de base da análise da experiência do usuário.|
+|displayName|String|O nome da linha de base da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da linha de base da análise da experiência do usuário.|
 |isBuiltIn|Booliano|Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.|
 |createdDateTime|DateTimeOffset|A data em que a linha de base personalizada foi criada.|
@@ -62,7 +62,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,6 +97,9 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
+
+
+
 
 
 

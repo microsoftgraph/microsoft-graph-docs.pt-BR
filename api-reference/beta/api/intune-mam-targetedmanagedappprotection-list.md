@@ -3,14 +3,14 @@ title: Listar targetedManagedAppProtections
 description: Listar propriedades e relações dos objetos targetedManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c4e73fad4f577accd9bdfe8b86d0280f51d6f37
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ff6a0e832a47c7cb6dbb26e6ee432461616d41d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011022"
 ---
 # <a name="list-targetedmanagedappprotections"></a>Listar targetedManagedAppProtections
 
@@ -133,6 +133,9 @@ Content-Length: 2723
   ]
 }
 ```
+
+
+
 
 
 
