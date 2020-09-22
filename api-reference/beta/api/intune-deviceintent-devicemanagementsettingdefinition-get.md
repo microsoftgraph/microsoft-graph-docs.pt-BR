@@ -3,14 +3,14 @@ title: Obter deviceManagementSettingDefinition
 description: Leia as propriedades e as relações do objeto deviceManagementSettingDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dbd4b0f7f3b2494d35976720a2d21232ad35e62e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fecd3e474c9e4885d5bba2ac6e5cf23c09857bbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074654"
 ---
 # <a name="get-devicemanagementsettingdefinition"></a>Obter deviceManagementSettingDefinition
 
@@ -111,6 +111,9 @@ Content-Length: 1062
   }
 }
 ```
+
+
+
 
 
 

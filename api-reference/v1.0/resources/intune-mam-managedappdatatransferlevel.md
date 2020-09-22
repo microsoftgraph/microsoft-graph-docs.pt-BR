@@ -3,14 +3,14 @@ title: tipo de enumeração managedAppDataTransferLevel
 description: Os dados podem ser transferidos de/para essas classes de aplicativos
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c7d4f018ef5f654b5e09fc71c8abea7bf87b9e0f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8ee76ac366273189a9b2b75a2c589f50e8834112
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445759"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074948"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>tipo de enumeração managedAppDataTransferLevel
 
@@ -24,8 +24,10 @@ Os dados podem ser transferidos de/para essas classes de aplicativos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |todos os aplicativos|,0|Todos os aplicativos.|
-|managedApps|1|Aplicativos gerenciados.|
-|nenhuma|duas|Nenhum aplicativo.|
+|managedApps|1 |Aplicativos gerenciados.|
+|Nenhuma|2 |Nenhum aplicativo.|
+
+
 
 
 

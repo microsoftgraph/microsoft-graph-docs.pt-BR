@@ -3,14 +3,14 @@ title: Obter Entidadeandroidworkprofilecertificateprofilebase
 description: Leia as propriedades e as relações do objeto Entidadeandroidworkprofilecertificateprofilebase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3dd2707896b35e683829cc84f47ed645ad80fdab
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9de23e7aa8688474cfc7fb15e494797a01a5fb67
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435328"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074801"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>Obter Entidadeandroidworkprofilecertificateprofilebase
 
@@ -122,6 +122,9 @@ Content-Length: 1734
   }
 }
 ```
+
+
+
 
 
 

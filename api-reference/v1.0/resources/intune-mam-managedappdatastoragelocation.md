@@ -3,14 +3,14 @@ title: tipo de enumeração managedAppDataStorageLocation
 description: Locais de armazenamento em que os aplicativos gerenciados podem armazenar seus dados
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: de09f36f8823927a42fd5508be90db8ced098b71
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a716af1a5744ab6362cace84e55898cffb2dff2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074941"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>tipo de enumeração managedAppDataStorageLocation
 
@@ -23,9 +23,11 @@ Locais de armazenamento em que os aplicativos gerenciados podem armazenar seus d
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|oneDriveForBusiness|1|OneDrive for business|
-|Do|duas|SharePoint|
+|oneDriveForBusiness|1 |OneDrive for business|
+|Do|2 |SharePoint|
 |localStorage|6 |Armazenamento local no dispositivo|
+
+
 
 
 

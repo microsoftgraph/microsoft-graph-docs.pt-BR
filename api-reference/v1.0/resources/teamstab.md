@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1e113575745e50f52571636f37a7a2d4c93a9924
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 5209670c004da2b58d41444c0bfa31f12891b8d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909769"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074843"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
@@ -79,3 +79,4 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="see-also"></a>Confira também
 
 [Configurar tipos de guia internos](/graph/teams-configuring-builtin-tabs)
+

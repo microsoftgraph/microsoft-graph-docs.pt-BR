@@ -3,14 +3,14 @@ title: Listar androidWorkProfileCompliancePolicies
 description: Listar Propriedades e relações dos objetos na entidadeandroidworkprofilecompliancepolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9d87434f36214a354995fa4f007f4fe657c2691
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4eb885e74d7cffd8527347433319062f9e906ca9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43435253"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074724"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>Listar androidWorkProfileCompliancePolicies
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceCompliancePolicies
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [na entidadeandroidworkprofilecompliancepolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [na entidadeandroidworkprofilecompliancepolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -107,6 +107,9 @@ Content-Length: 1687
   ]
 }
 ```
+
+
+
 
 
 

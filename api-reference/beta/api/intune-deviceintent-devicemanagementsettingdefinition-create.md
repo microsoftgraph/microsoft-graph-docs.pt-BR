@@ -3,14 +3,14 @@ title: Criar deviceManagementSettingDefinition
 description: Criar um novo objeto deviceManagementSettingDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba658fe605034703c2565f3f8f3a6d70cd6685de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8c92467d3ad05422da91e5da5eccaf1df3b2a709
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48074675"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Criar deviceManagementSettingDefinition
 
@@ -56,21 +56,21 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da definição de configuração|
+|id|Cadeia de caracteres|A ID da definição de configuração|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os possíveis valores são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
 |displayName|Cadeia de caracteres|O nome de exibição da configuração|
-|isTopLevel|Boolean|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
+|isTopLevel|Booliano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
 |description|String|A descrição da configuração|
-|placeholderText|String|Texto do espaço reservado como um exemplo de entrada válida|
-|documentationUrl|String|URL para configurar a documentação|
-|palavras-chave|Coleção String|Palavras-chave associadas à configuração|
+|placeholderText|Cadeia de caracteres|Texto do espaço reservado como um exemplo de entrada válida|
+|documentationUrl|Cadeia de caracteres|URL para configurar a documentação|
+|palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -160,6 +160,9 @@ Content-Length: 977
   ]
 }
 ```
+
+
+
 
 
 
