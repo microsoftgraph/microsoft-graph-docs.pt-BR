@@ -3,18 +3,18 @@ title: Obter deviceComplianceScriptDeviceState
 description: Leia as propriedades e as relações do objeto deviceComplianceScriptDeviceState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bcd18334c0308de905643c415641ec618e6c6aa
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: a5c2a79b00ef8f491a119f501dd0a9a3ea810e08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792454"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011218"
 ---
 # <a name="get-devicecompliancescriptdevicestate"></a>Obter deviceComplianceScriptDeviceState
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -83,6 +83,9 @@ Content-Length: 471
   }
 }
 ```
+
+
+
 
 
 

@@ -3,18 +3,18 @@ title: Listar deviceComplianceUserStatuses
 description: Listar propriedades e relações dos objetos deviceComplianceUserStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45fcc87c06b93a5309675e8c45192086a253b64c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be31c7b74006c16f46e419574770100ff129eb77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011603"
 ---
 # <a name="list-devicecomplianceuserstatuses"></a>Listar deviceComplianceUserStatuses
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -81,6 +81,9 @@ Content-Length: 397
   ]
 }
 ```
+
+
+
 
 
 

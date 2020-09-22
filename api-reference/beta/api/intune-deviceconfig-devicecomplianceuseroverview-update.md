@@ -3,18 +3,18 @@ title: Atualizar deviceComplianceUserOverview
 description: Atualizar as propriedades de um objeto deviceComplianceUserOverview.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 547caeb6919260e1f83d4eba9da9be01a68130cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c03a97e76d8b8284165534dd386e93337bbc8020
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433746"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011631"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>Atualizar deviceComplianceUserOverview
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -110,6 +110,9 @@ Content-Length: 352
   "configurationVersion": 4
 }
 ```
+
+
+
 
 
 

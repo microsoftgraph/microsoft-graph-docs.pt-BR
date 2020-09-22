@@ -3,18 +3,18 @@ title: Atualizar deviceComplianceScript
 description: Atualiza as propriedades de um objeto deviceComplianceScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88187ad5f3ea66202823c074b85a5336078246df
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 2a52d599e5746316c449548e26493e1f05dec4ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792475"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011253"
 ---
 # <a name="update-devicecompliancescript"></a>Atualizar deviceComplianceScript
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |id|String|Identificador exclusivo do script de conformidade do dispositivo|
 |publicador|String|Nome do editor de scripts de conformidade de dispositivos|
 |versão|String|Versão do script de conformidade do dispositivo|
-|displayName|Cadeia de caracteres|Nome do script de conformidade do dispositivo|
+|displayName|String|Nome do script de conformidade do dispositivo|
 |description|String|Descrição do script de conformidade do dispositivo|
 |detectionScriptContent|Binária|Todo o conteúdo do script do PowerShell de detecção|
 |createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de conformidade do dispositivo foi criado. Essa propriedade é somente leitura.|
@@ -121,6 +121,9 @@ Content-Length: 592
   ]
 }
 ```
+
+
+
 
 
 

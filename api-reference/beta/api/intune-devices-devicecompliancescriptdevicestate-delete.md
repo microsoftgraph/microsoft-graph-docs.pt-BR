@@ -3,18 +3,18 @@ title: Excluir deviceComplianceScriptDeviceState
 description: Exclui deviceComplianceScriptDeviceState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2889698f4bb5e1ea8276a768b28f9f2fd13e93bd
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: d70df43ddf27ec1b0537158c88d6db961d40afd8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011239"
 ---
 # <a name="delete-devicecompliancescriptdevicestate"></a>Excluir deviceComplianceScriptDeviceState
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

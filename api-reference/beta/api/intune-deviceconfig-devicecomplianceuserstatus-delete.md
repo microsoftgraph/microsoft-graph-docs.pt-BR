@@ -3,18 +3,18 @@ title: Excluir deviceComplianceUserStatus
 description: Exclui deviceComplianceUserStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae4a1b7e3f8a68b557d8640a00e8100dde789e3f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4cbf30669d69aec1801c73304d206924772e8d31
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433701"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011617"
 ---
 # <a name="delete-devicecomplianceuserstatus"></a>Excluir deviceComplianceUserStatus
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

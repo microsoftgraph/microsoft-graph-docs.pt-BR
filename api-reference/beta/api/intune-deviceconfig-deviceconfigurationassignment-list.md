@@ -3,14 +3,14 @@ title: Listar deviceConfigurationAssignments
 description: Listar propriedades e relações dos objetos deviceConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 264a453491fb75c52777d9e8ba5a40cfba96505f
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 31dc849652c0433facf9a98cdc06da7780d3e39a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011512"
 ---
 # <a name="list-deviceconfigurationassignments"></a>Listar deviceConfigurationAssignments
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -92,6 +92,9 @@ Content-Length: 503
   ]
 }
 ```
+
+
+
 
 
 

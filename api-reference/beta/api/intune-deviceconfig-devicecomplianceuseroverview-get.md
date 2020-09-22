@@ -3,18 +3,18 @@ title: Acessar deviceComplianceUserOverview
 description: Leia as propriedades e relações de objetos de deviceComplianceUserOverview.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d006dd45bf1ba3dd02f7504b3b9e6f8be762d7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8c7de4c3b976642f2163f36243720220bdb6c240
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011638"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>Acessar deviceComplianceUserOverview
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -85,6 +85,9 @@ Content-Length: 391
   }
 }
 ```
+
+
+
 
 
 

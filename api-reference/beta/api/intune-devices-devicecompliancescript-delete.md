@@ -3,14 +3,14 @@ title: Excluir deviceComplianceScript
 description: Exclui deviceComplianceScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80593afa9707c517c9ac361e66a143a1c9f00278
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 8d8f57f99b597541cb3e82cdfc4c42ce97b78e4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011330"
 ---
 # <a name="delete-devicecompliancescript"></a>Excluir deviceComplianceScript
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,18 +3,18 @@ title: Listar deviceComplianceScripts
 description: Listar Propriedades e relações dos objetos deviceComplianceScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 96dd9a95930794c56806d05c4de7f07a2dc5d553
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 04c6c9ae186097d77c3752842c227ece43115ee2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792482"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011274"
 ---
 # <a name="list-devicecompliancescripts"></a>Listar deviceComplianceScripts
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -89,6 +89,9 @@ Content-Length: 685
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Excluir Propriedadesdeviceconfigurationconflictsummary
 description: Exclui Propriedadesdeviceconfigurationconflictsummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17e909cb56bcb2d3fe7c1aec65cc65764e7a2a94
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a27531b7d52afc8ed384855d84c45ee9ffa225c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011484"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>Excluir Propriedadesdeviceconfigurationconflictsummary
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

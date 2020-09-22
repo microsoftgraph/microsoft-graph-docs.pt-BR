@@ -3,14 +3,14 @@ title: ação createInstance
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 893d87fabbdf1d25bad409d358586e8ec53f09a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c165339bd2cdf3f6cf990b7279844737c8d4c8aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381420"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011344"
 ---
 # <a name="createinstance-action"></a>ação createInstance
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Ainda não documentado|
+|displayName|String|Ainda não documentado|
 |description|String|Ainda não documentado|
 |settingsDelta|coleção [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Ainda não documentado|
 |roleScopeTagIds|String collection|Ainda não documentado|
@@ -62,7 +62,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará `200 OK` um código de resposta e um [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará um `200 OK` código de resposta e um [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -113,6 +113,9 @@ Content-Length: 418
   }
 }
 ```
+
+
+
 
 
 

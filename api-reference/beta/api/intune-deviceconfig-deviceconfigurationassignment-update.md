@@ -3,14 +3,14 @@ title: Atualizar deviceConfigurationAssignment
 description: Atualizar as propriedades de um objeto deviceConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a6d1f6b80f7dfad0276233984233f552b4c084a
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 75a5fa21944c4eeba28899f6836b36a441c3ffc8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011491"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Atualizar deviceConfigurationAssignment
 
@@ -62,10 +62,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da atribuição.|
+|id|String|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|A origem da atribuição para a configuração do dispositivo, direta ou de remessa/política. Essa propriedade é somente leitura. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|Cadeia de caracteres|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
+|sourceId|String|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
 
 
 
@@ -112,6 +112,9 @@ Content-Length: 434
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

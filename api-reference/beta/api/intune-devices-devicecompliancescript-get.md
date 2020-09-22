@@ -3,14 +3,14 @@ title: Obter deviceComplianceScript
 description: Leia as propriedades e as relações do objeto deviceComplianceScript.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a7a09958b5a357caf1a17bad1a2a23092f7c46d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: ef9ef92619c0890e37e6d96ccbd6a9ff4fd5a107
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792489"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011316"
 ---
 # <a name="get-devicecompliancescript"></a>Obter deviceComplianceScript
 
@@ -90,6 +90,9 @@ Content-Length: 641
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Acessar deviceComplianceUserStatus
 description: Leia as propriedades e as relações do objeto deviceComplianceUserStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e720f77b003779e589dbdfc0d0ae51dadb7915a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 520d5711b8a70420904a3ac1bd9e9c574f09b3ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433694"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011610"
 ---
 # <a name="get-devicecomplianceuserstatus"></a>Acessar deviceComplianceUserStatus
 
@@ -82,6 +82,9 @@ Content-Length: 369
   }
 }
 ```
+
+
+
 
 
 
