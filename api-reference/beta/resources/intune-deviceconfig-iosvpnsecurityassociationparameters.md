@@ -3,14 +3,14 @@ title: tipo de recurso iosVpnSecurityAssociationParameters
 description: Parâmetros de associação de segurança VPN
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85f69b9cf8e19acf09ca0ca179df6cd7fee2fbd9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fc1bf75fffe3f4008171320a78d1a487cdd0771a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092661"
 ---
 # <a name="iosvpnsecurityassociationparameters-resource-type"></a>tipo de recurso iosVpnSecurityAssociationParameters
 
@@ -31,7 +31,7 @@ Parâmetros de associação de segurança VPN
 |lifetimeInMinutes|Int32|Tempo de vida (minutos)|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   "lifetimeInMinutes": 1024
 }
 ```
+
+
+
 
 
 

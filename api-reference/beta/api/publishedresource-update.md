@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 10713ab78b06fcde037a0b2b440585562b0c8282
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 91f7f03e21c4608f8245f56443cea13d6a1c369b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200093"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093039"
 ---
 # <a name="update-publishedresource"></a>Atualizar publishedResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto publishedresource [publishedresource](../resources/publishedresource.md) .
+Atualize as propriedades do objeto publishedresource  [publishedresource](../resources/publishedresource.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,7 +52,7 @@ A tabela a seguir lista as propriedades que podem ser atualizadas.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Representa um nome de recurso publicado no local.|
+|displayName|Cadeia de caracteres|Representa um nome de recurso publicado no local.|
 
 ## <a name="response"></a>Resposta
 
@@ -117,3 +117,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

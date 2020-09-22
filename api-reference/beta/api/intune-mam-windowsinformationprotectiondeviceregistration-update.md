@@ -3,14 +3,14 @@ title: Atualizar windowsInformationProtectionDeviceRegistration
 description: Atualiza as propriedades de um objeto windowsInformationProtectionDeviceRegistration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94f2b9ca18045cb20b886e2bd0c3aa1e4246dc97
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 63c2215a392b583613cecb2aab47e4e09083df1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465423"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093795"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>Atualizar windowsInformationProtectionDeviceRegistration
 
@@ -53,18 +53,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userId|Cadeia de caracteres|UserId associado a este registro de registro de dispositivo.|
-|deviceRegistrationId|String|Identificador de dispositivo para este registro de registro de dispositivo.|
+|deviceRegistrationId|Cadeia de caracteres|Identificador de dispositivo para este registro de registro de dispositivo.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceType|String|Tipo de dispositivo, por exemplo, Windows laptop VS Windows Phone.|
-|deviceMacAddress|String|Endereço MAC do dispositivo.|
+|deviceMacAddress|Cadeia de caracteres|Endereço MAC do dispositivo.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,6 +104,9 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
+
+
 
 
 

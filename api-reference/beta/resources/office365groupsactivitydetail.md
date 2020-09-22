@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: d517763fdfcbf046c36fc944d229b9a15b0cb8fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b7e22c522bf6cffeba6f09c350abaaabeda23b1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092409"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>tipo de recurso office365GroupsActivityDetail
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -22,11 +22,11 @@ Namespace: Microsoft. Graph
 | :-------------------------------- | :------ | ---------------------------------------- |
 | groupId                           | Cadeia de caracteres  | A ID do grupo.          |
 | reportRefreshDate                 | Data    | A última data do conteúdo.          |
-| groupDisplayName                  | String  | O nome de exibição do grupo.           |
+| groupDisplayName                  | Cadeia de caracteres  | O nome de exibição do grupo.           |
 | isDeleted                         | Boolean | Se este usuário foi excluído ou excluído por software. |
-| ownerPrincipalName                | String  | O nome principal do proprietário do grupo.          |
+| ownerPrincipalName                | Cadeia de caracteres  | O nome principal do proprietário do grupo.          |
 | lastActivityDate                  | Data    | A data da última atividade dos seguintes cenários: caixa de correio de grupo recebidas emails; arquivos de usuário exibidos, editados, compartilhados ou sincronizados na biblioteca de documentos do SharePoint; páginas do SharePoint exibidas pelo usuário; mensagens postadas, lidas ou curtidas pelo usuário em grupos do Yammer. |
-| groupType                         | String  | O tipo de grupo. Os valores possíveis são: **Public** ou **Private**. |
+| groupType                         | Cadeia de caracteres  | O tipo de grupo. Os valores possíveis são: **Public** ou **Private**. |
 | memberCount                       | Int64   | A contagem de membros do grupo.                  |
 | externalMemberCount               | Int64   | A contagem de membros externos de grupo.         |
 | exchangeReceivedEmailCount        | Int64   | O número de emails que a caixa de correio de grupo recebeu. |
@@ -38,7 +38,7 @@ Namespace: Microsoft. Graph
 | exchangeMailboxStorageUsedInBytes | Int64   | O armazenamento usado da caixa de correio do grupo.   |
 | sharePointTotalFileCount          | Int64   | O número total de arquivos no site de grupo do SharePoint. |
 | sharePointSiteStorageUsedInBytes  | Int64   | O armazenamento usado pelo site de grupo do SharePoint. |
-| reportPeriod                      | String  | O número de dias que o relatório cobre.    |
+| reportPeriod                      | Cadeia de caracteres  | O número de dias que o relatório cobre.    |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -72,3 +72,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

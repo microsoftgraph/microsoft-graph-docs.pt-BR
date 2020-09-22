@@ -3,14 +3,14 @@ title: Obter pfxRecryptionRequest
 description: Leia as propriedades e as relações do objeto pfxRecryptionRequest.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3028ef0b4d9b40f2fb6cf9636bb80911dfd12af4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1bf1fe7aca0faa0c6db809bae8609ded72200ec5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093214"
 ---
 # <a name="get-pfxrecryptionrequest"></a>Obter pfxRecryptionRequest
 
@@ -88,6 +88,9 @@ Content-Length: 619
   }
 }
 ```
+
+
+
 
 
 

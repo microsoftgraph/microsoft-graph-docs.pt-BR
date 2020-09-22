@@ -3,14 +3,14 @@ title: tipo de recurso win32LobAppProductCodeDetection
 description: Contém as propriedades de código e versão do produto para detectar um aplicativo Win32
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: feccc8f44df6c025f5b714160c8ff753e7b83ecf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8e4b2469dff93e34495f9b376c96abe7a4ede98c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422759"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092815"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>tipo de recurso win32LobAppProductCodeDetection
 
@@ -50,6 +50,9 @@ Veja a seguir uma representação JSON do recurso.
   "productVersion": "String"
 }
 ```
+
+
+
 
 
 

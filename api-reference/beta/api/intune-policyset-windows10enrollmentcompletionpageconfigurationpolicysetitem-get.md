@@ -3,14 +3,14 @@ title: Obter windows10EnrollmentCompletionPageConfigurationPolicySetItem
 description: Leia as propriedades e as relações do objeto windows10EnrollmentCompletionPageConfigurationPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c5e9c25dff9de23f913f7a55444c8bed74dbc25
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 335b3ab2c9450a91fc0d431fe209e26ae7764ed3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093382"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfigurationpolicysetitem"></a>Obter windows10EnrollmentCompletionPageConfigurationPolicySetItem
 
@@ -88,6 +88,9 @@ Content-Length: 576
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Listar depIOSEnrollmentProfiles
 description: Listar Propriedades e relações dos objetos depIOSEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 017d0053ba7ceb29d8040c49d60486a6e0762197
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b69d5268c3168ffedc29df0713ec3ec67c295226
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443041"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093893"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>Listar depIOSEnrollmentProfiles
 
@@ -50,7 +50,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -128,6 +128,9 @@ Content-Length: 2322
   ]
 }
 ```
+
+
+
 
 
 

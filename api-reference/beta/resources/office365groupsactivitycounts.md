@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: f07743a592753daff2670478c6f2fe18207f6013
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c67de6592d32c15e7d64112ce9ac31b6a5d4c41
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522453"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092423"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>tipo de recurso office365GroupsActivityCounts
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 ## <a name="properties"></a>Propriedades
 
@@ -26,7 +26,7 @@ Namespace: Microsoft. Graph
 | yammerMessagesRead     | Int64  | O número de mensagens lidas nos grupos do Yammer. |
 | yammerMessagesLiked    | Int64  | O número de mensagens curtidas em grupos do Yammer. |
 | reportDate             | Data   | A data em que um número de emails foi enviado para uma caixa de correio de grupo ou várias mensagens foram postadas, lidas ou curtidas em um grupo do Yammer |
-| reportPeriod           | String | O número de dias que o relatório cobre.    |
+| reportPeriod           | Cadeia de caracteres | O número de dias que o relatório cobre.    |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -48,3 +48,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

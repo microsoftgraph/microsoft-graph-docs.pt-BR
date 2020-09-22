@@ -3,14 +3,14 @@ title: tipo de recurso win32LobAppProductCodeRule
 description: Um tipo complexo para armazenar o código do produto e os dados da regra de versão para um aplicativo LOB Win32. Essa regra não é suportada como uma regra de requisito.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd3dde2386c76b5ed7dee6174789667d44839c58
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 11990f4deddb7bf29b9b447ae65e1903f6ecbc2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790814"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092801"
 ---
 # <a name="win32lobappproductcoderule-resource-type"></a>tipo de recurso win32LobAppProductCodeRule
 
@@ -34,7 +34,7 @@ Herda de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |productVersion|String|O valor de comparação da versão do produto.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -52,6 +52,9 @@ Veja a seguir uma representação JSON do recurso.
   "productVersion": "String"
 }
 ```
+
+
+
 
 
 

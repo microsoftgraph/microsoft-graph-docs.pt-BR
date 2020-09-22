@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8c814f81a9ffbbb6f9e962c770a9a8908b288cde
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a00e5dc77cb98ff2fad81b963f16c1b0061be22a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092913"
 ---
 # <a name="update-workposition"></a>Atualizar workPosition
 
@@ -54,12 +54,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Coleção de cadeias de caracteres|Categorias que o usuário tenha associado a esta posição.|
 |conhecidos|coleção [relatedPerson](../resources/relatedperson.md)|Colegas associados a esta posição.|
 |detalhada|[positionDetail](../resources/positiondetail.md)|Contém informações detalhadas sobre a posição. |
 |fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|IsCurrent|Booliano|Indica se a posição é ou não atual.|
+|IsCurrent|Boolean|Indica se a posição é ou não atual.|
 |manager|[relatedPerson](../resources/relatedperson.md)|Contém detalhes do gerente do usuário nesta posição.|
 
 ## <a name="response"></a>Resposta
@@ -180,3 +180,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

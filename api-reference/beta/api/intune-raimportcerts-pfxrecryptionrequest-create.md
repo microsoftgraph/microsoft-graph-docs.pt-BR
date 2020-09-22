@@ -3,14 +3,14 @@ title: Criar pfxRecryptionRequest
 description: Criar um novo objeto pfxRecryptionRequest.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d671a41f482407f082f11c104b8346f50769fde
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0b961e11bf5ee6fc34e8e9d9fe9e70e5b0f3dd7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093242"
 ---
 # <a name="create-pfxrecryptionrequest"></a>Criar pfxRecryptionRequest
 
@@ -69,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar pfxRecry
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -120,6 +120,9 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
+
+
+
 
 
 

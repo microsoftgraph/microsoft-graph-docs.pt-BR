@@ -3,14 +3,14 @@ title: Obter deviceCompliancePolicyPolicySetItem
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicyPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41a4b77508992f722e89ee20617033d7d2350f22
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7a9ccc3f73a0bf8d5167b34338bbc033e60cd1bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093732"
 ---
 # <a name="get-devicecompliancepolicypolicysetitem"></a>Obter deviceCompliancePolicyPolicySetItem
 
@@ -87,6 +87,9 @@ Content-Length: 532
   }
 }
 ```
+
+
+
 
 
 

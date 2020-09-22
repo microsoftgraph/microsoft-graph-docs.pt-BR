@@ -3,14 +3,14 @@ title: tipo de recurso keyBooleanValuePair
 description: Um par chave-valor com uma chave de cadeia de caracteres e um valor Boolean.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20362eadb79f94fab1d7fc7c454995710a0ab9ab
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e8eca8623277e6951e34d7ad627d4bfd193b4b4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439984"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092549"
 ---
 # <a name="keybooleanvaluepair-resource-type"></a>tipo de recurso keyBooleanValuePair
 
@@ -28,7 +28,7 @@ Herda de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|String|A chave de cadeia de caracteres do par chave-valor. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|key|Cadeia de caracteres|A chave de cadeia de caracteres do par chave-valor. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |value|Boolean|O valor booliano do par chave-valor.|
 
 ## <a name="relationships"></a>Relações
@@ -48,6 +48,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": true
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Atualizar onPremEncryptedPayload
 description: Atualiza as propriedades de um objeto onPremEncryptedPayload.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e204241ddf6c6d0623cd042de7e6fabf3adbcab8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e1b17e73f773df8cf607789ea203efa1681382aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093263"
 ---
 # <a name="update-onpremencryptedpayload"></a>Atualizar onPremEncryptedPayload
 
@@ -73,7 +73,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [onPremE
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -132,6 +132,9 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
+
+
+
 
 
 

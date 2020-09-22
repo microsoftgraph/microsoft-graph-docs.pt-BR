@@ -3,14 +3,14 @@ title: Listar deviceConfigurationPolicySetItems
 description: Listar Propriedades e relações dos objetos deviceConfigurationPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 357177f4a89f695fd1324b48608be67014aec9be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5df19e281cc8e4e9ad41f3105a194a7f53c1bb99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448716"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093669"
 ---
 # <a name="list-deviceconfigurationpolicysetitems"></a>Listar deviceConfigurationPolicySetItems
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceConfigurationPolicySetItem](../resources/intune-policyset-deviceconfigurationpolicysetitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,6 +86,9 @@ Content-Length: 567
   ]
 }
 ```
+
+
+
 
 
 

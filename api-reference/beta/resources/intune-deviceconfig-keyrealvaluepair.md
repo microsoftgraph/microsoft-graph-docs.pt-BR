@@ -3,14 +3,14 @@ title: tipo de recurso keyRealValuePair
 description: Um par chave-valor com uma chave de cadeia de caracteres e um valor real (ponto flutuante).
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1fed06ab52178805defae33fd5b51ce89235cec6
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: f3ccc5d8c675bd9971d95b8ae3bfd5ac0cc01a87
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092528"
 ---
 # <a name="keyrealvaluepair-resource-type"></a>tipo de recurso keyRealValuePair
 
@@ -28,7 +28,7 @@ Herda de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|Cadeia de Caracteres|A chave de cadeia de caracteres do par chave-valor. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|key|Cadeia de caracteres|A chave de cadeia de caracteres do par chave-valor. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |valor|Duplo|O valor real (ponto flutuante) do par chave-valor.|
 
 ## <a name="relationships"></a>Relações
@@ -48,6 +48,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": "4.2"
 }
 ```
+
+
+
 
 
 

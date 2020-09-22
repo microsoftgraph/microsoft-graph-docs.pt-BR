@@ -3,14 +3,14 @@ title: Listar windowsAutopilotDeploymentProfilePolicySetItems
 description: Listar Propriedades e relações dos objetos windowsAutopilotDeploymentProfilePolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be4b320c08f99e67ec530c790528b717980a5dff
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 365252854b269381c904ea2640ee49b6a7402b4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093340"
 ---
 # <a name="list-windowsautopilotdeploymentprofilepolicysetitems"></a>Listar windowsAutopilotDeploymentProfilePolicySetItems
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,6 +86,9 @@ Content-Length: 581
   ]
 }
 ```
+
+
+
 
 
 

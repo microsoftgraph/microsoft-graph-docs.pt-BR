@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d75ae8d97d3d2c95cc1779e38346efeea3026f23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7087457ac68c98b40b1c89dc4b99b13ae85d46b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533536"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094005"
 ---
 # <a name="teammembersettings-resource-type"></a>tipo de recurso teamMemberSettings
 
@@ -59,3 +59,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ddf26be745f22ca9ef98fb4949005b17d332e2cc
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 9c3b708a0f8b1079c49e1c1ed45000595fd5e9c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107483"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092971"
 ---
 # <a name="create-calendargroup"></a>Atualizar CalendarGroup
 
@@ -115,3 +115,5 @@ Content-length: 110
   ]
 }
 -->
+
+

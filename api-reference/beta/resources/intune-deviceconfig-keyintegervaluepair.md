@@ -3,14 +3,14 @@ title: tipo de recurso keyIntegerValuePair
 description: Um par chave-valor com uma chave de cadeia de caracteres e um valor inteiro.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67a48f48f52c613c13552506d9cc76823bb042f7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: efba214d6cd6b4e8fb79ddb4df4c9df0e16974bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439977"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092542"
 ---
 # <a name="keyintegervaluepair-resource-type"></a>tipo de recurso keyIntegerValuePair
 
@@ -28,7 +28,7 @@ Herda de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|String|A chave de cadeia de caracteres do par chave-valor. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|key|Cadeia de caracteres|A chave de cadeia de caracteres do par chave-valor. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |valor|Int32|O valor inteiro do par chave-valor.|
 
 ## <a name="relationships"></a>Relações
@@ -48,6 +48,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": 1024
 }
 ```
+
+
+
 
 
 

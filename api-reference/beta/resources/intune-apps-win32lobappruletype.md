@@ -3,14 +3,14 @@ title: tipo de enumeração win32LobAppRuleType
 description: Contém tipos de regra para aplicativos LOB do Win32.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bba60312e3e62e5ca1880338f6f88b2114281d1e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: f39a38b18b4347ffe8476ef2684fac6df476ce96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789319"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092696"
 ---
 # <a name="win32lobappruletype-enum-type"></a>tipo de enumeração win32LobAppRuleType
 
@@ -27,6 +27,9 @@ Contém tipos de regra para aplicativos LOB do Win32.
 |:---|:---|:---|
 |detenção|,0|Regra de detecção.|
 |requirement|1 |Regra de requisito.|
+
+
+
 
 
 

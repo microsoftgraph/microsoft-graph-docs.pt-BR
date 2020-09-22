@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Priority
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 87189999f94cacbbcc4b8e3d0e8cdfe97e7993a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc01389c119ff145ec976056327b2a56a2256a0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533586"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094096"
 ---
 # <a name="table-resource-type"></a>Tipo de recurso Table
 
@@ -102,3 +102,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Excluir windowsAutopilotDeploymentProfilePolicySetItem
 description: Exclui windowsAutopilotDeploymentProfilePolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0917f8913d69c9b7ed248facc2d892db3e0e222d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bf804d16d886f0a72bd0d7dde17ae808b32a3c4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458197"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093361"
 ---
 # <a name="delete-windowsautopilotdeploymentprofilepolicysetitem"></a>Excluir windowsAutopilotDeploymentProfilePolicySetItem
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

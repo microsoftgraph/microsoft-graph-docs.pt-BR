@@ -3,14 +3,14 @@ title: Listar onPremEncryptedPayloads
 description: Listar Propriedades e relações dos objetos onPremEncryptedPayload.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c74b93f29cdb1ac24a9d2dbf869e0536e2934d71
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: eb04091ab3cf90d3476a193bd54c80af43d82e33
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437798"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093249"
 ---
 # <a name="list-onpremencryptedpayloads"></a>Listar onPremEncryptedPayloads
 
@@ -50,7 +50,7 @@ GET /onPremEncryptedPayloads
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [onPremEncryptedPayload](../resources/intune-raimportcerts-onpremencryptedpayload.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -91,6 +91,9 @@ Content-Length: 882
   ]
 }
 ```
+
+
+
 
 
 

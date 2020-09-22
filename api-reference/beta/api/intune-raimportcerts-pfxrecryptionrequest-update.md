@@ -3,14 +3,14 @@ title: Atualizar pfxRecryptionRequest
 description: Atualiza as propriedades de um objeto pfxRecryptionRequest.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27d5284824d561afa0e43cae570d0190e1d0e9c1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2170ea824102db4e564dee5bc210852a30739aae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437729"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093179"
 ---
 # <a name="update-pfxrecryptionrequest"></a>Atualizar pfxRecryptionRequest
 
@@ -69,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [pfxRecr
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -120,6 +120,9 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
+
+
+
 
 
 

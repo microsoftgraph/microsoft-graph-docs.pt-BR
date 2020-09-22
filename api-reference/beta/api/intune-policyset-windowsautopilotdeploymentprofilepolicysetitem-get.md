@@ -3,14 +3,14 @@ title: Obter windowsAutopilotDeploymentProfilePolicySetItem
 description: Leia as propriedades e as relações do objeto windowsAutopilotDeploymentProfilePolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00bf132557ecff3b90068aba23ccc989f764b620
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ebe0b5de537e3b77e51acfd2e22ec113c0710c6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375096"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093375"
 ---
 # <a name="get-windowsautopilotdeploymentprofilepolicysetitem"></a>Obter windowsAutopilotDeploymentProfilePolicySetItem
 
@@ -87,6 +87,9 @@ Content-Length: 543
   }
 }
 ```
+
+
+
 
 
 

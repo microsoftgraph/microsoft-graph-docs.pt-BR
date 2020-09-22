@@ -3,14 +3,14 @@ title: Atualizar sideLoadingKey
 description: Atualiza as propriedades de um objeto sideLoadingKey.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81e148cbfaaf07950981cf4841c6c1c553170efc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 02efc04ca0d9293310e720b5119014d3a4513bee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093781"
 ---
 # <a name="update-sideloadingkey"></a>Atualizar sideLoadingKey
 
@@ -53,17 +53,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [sideLoa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID exclusiva da chave de carregamento do lado.|
+|id|Cadeia de caracteres|ID exclusiva da chave de carregamento do lado.|
 |value|Cadeia de caracteres|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
 |displayName|Cadeia de caracteres|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
-|description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
+|description|Cadeia de caracteres|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
 |totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
-|lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
+|lastUpdatedDateTime|Cadeia de caracteres|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,6 +101,9 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
+
+
 
 
 

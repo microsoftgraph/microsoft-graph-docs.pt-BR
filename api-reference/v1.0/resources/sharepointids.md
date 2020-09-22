@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: O recurso SharePointIds agrupa os vários identificadores de um item armazenado em um site do SharePoint ou no OneDrive for Business em uma única estrutura.
 doc_type: resourcePageType
-ms.openlocfilehash: d619b4b82da7c4c1d80e59b969ce5edf727ffbb8
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 4289f2b4785ca06588722ee12c0e6620b092ddce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934889"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094166"
 ---
 # <a name="sharepointids-resource-type"></a>Tipo de recurso SharePointIds
 
@@ -49,7 +49,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade         | Tipo         | Descrição
 |:-----------------|:-------------|:-------------------------------------------
 | listId           | string       | O identificador exclusivo (guid) para a lista do item no SharePoint.
-| listItemId       | cadeia de caracteres       | Um identificador inteiro para o item na lista contida.
+| listItemId       | string       | Um identificador inteiro para o item na lista contida.
 | listItemUniqueId | string       | O identificador exclusivo (guid) do item dentro do OneDrive for Business ou de um site do SharePoint.
 | siteId           | string       | O identificador exclusivo (guid) do conjunto de sites do item (SPSite).
 | siteUrl          | string (url) | A URL do SharePoint do site que contém o item.
@@ -71,3 +71,4 @@ Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](dr
   "section": "documentation",
   "tocPath": "Facets/SharepointIds"
 } -->
+

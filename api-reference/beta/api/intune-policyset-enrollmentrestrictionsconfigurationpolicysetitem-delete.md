@@ -3,14 +3,14 @@ title: Excluir enrollmentRestrictionsConfigurationPolicySetItem
 description: Exclui enrollmentRestrictionsConfigurationPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56dc0e0a40c9bef557b92f591cf38bd95c19b374
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a4ec119e4c1ff412f4cd31bf43453a70d5cb4e40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424198"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093571"
 ---
 # <a name="delete-enrollmentrestrictionsconfigurationpolicysetitem"></a>Excluir enrollmentRestrictionsConfigurationPolicySetItem
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

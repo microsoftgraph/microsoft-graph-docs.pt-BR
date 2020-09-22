@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1c8fce3ac07c0ffbdb70deb09adfcc77f0a66a70
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 1162868b7e5dac156a795a4e59c076083d9778c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154364"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093042"
 ---
 # <a name="list-swapshiftschangerequest"></a>Listar swapShiftsChangeRequest
 
@@ -42,7 +42,7 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -136,3 +136,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

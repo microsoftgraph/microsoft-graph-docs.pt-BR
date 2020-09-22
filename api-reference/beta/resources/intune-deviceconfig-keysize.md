@@ -3,14 +3,14 @@ title: tipo de enumeração keySize
 description: Opções de tamanho de chave.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6181ef16b1e580504b528139b697d1c658b20661
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a7aaa3b7bb5c02a5baa0e693784fa98b18aa9bcb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092521"
 ---
 # <a name="keysize-enum-type"></a>tipo de enumeração keySize
 
@@ -26,7 +26,11 @@ Opções de tamanho de chave.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |size1024|,0|Bits 1024.|
-|size2048|1|Bits 2048.|
+|size2048|1 |Bits 2048.|
+|size4096|2 |Bits 4096.|
+
+
+
 
 
 

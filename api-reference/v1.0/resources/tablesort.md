@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3772d0063fc19eb3a3c46953d5c85d8085f0a72a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d06cbc518f421802a529c17046c1670bd16cd71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533570"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094068"
 ---
 # <a name="tablesort-resource-type"></a>Tipo de recurso TableSort
 
@@ -33,7 +33,7 @@ Gerencia operações de classificação em objetos Table.
 |:---------------|:--------|:----------|
 |campos|Coleção [WorkbookSortField](sortfield.md)|Representa as condições atuais usadas para a última classificação da tabela. Somente leitura.|
 |matchCase|booliano|Indica se o uso de maiúsculas ou minúsculas afetou a última classificação da tabela. Somente leitura.|
-|method|string|Indica o último método de ordenação de caracteres chineses usado para classificar a tabela. Os valores possíveis são: `PinYin`, `StrokeCount`. Somente leitura.|
+|method|string|Indica o último método de ordenação de caracteres chineses usado para classificar a tabela. Os valores possíveis são: `PinYin` , `StrokeCount` . Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -66,3 +66,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Criar pfxUserCertificate
 description: Criar um novo objeto pfxUserCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c564f89cb711981708684da2d8be943e8531e10
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15ce1610e1b67782a347d8b85013a0faf544c19d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093172"
 ---
 # <a name="create-pfxusercertificate"></a>Criar pfxUserCertificate
 
@@ -74,7 +74,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar pfxUserC
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -135,6 +135,9 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
+
+
+
 
 
 

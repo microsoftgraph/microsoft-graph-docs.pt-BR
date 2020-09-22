@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 696a6a3b02f90abe1456f99d9a40a4d9127b5697
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25f49eaff6485fd0d618a91ef942bc2dccf8c8da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533544"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094026"
 ---
 # <a name="teamfunsettings-resource-type"></a>tipo de recurso teamFunSettings
 
@@ -55,3 +55,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

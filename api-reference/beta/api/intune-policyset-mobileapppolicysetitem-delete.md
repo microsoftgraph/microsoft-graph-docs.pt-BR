@@ -3,14 +3,14 @@ title: Excluir mobileAppPolicySetItem
 description: Exclui mobileAppPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b3fceaabd4b25724f1474ecb2c9f49208cb2097
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 693e5f64839b73553d355fae1ac99dcda3e4d741
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440701"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093403"
 ---
 # <a name="delete-mobileapppolicysetitem"></a>Excluir mobileAppPolicySetItem
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

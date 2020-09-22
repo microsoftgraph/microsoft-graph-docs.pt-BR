@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 63a138ade10ff99514b227f31bdeeb5cc6ad9697
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9a600be212907e12d03329aa3027c86d41b726ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807607"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092952"
 ---
 # <a name="get-workposition"></a>Obter workPosition
 
@@ -157,3 +157,5 @@ Content-type: application/json
   "isCurrent": true
 }
 ```
+
+

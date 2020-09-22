@@ -3,14 +3,14 @@ title: Excluir managedAppProtectionPolicySetItem
 description: Exclui managedAppProtectionPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb2c8d6dd166d1b2624b2c9b24f81f11344db591
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6c23b95c989df46d5492514c4f29e5da028e69a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461738"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093431"
 ---
 # <a name="delete-managedappprotectionpolicysetitem"></a>Excluir managedAppProtectionPolicySetItem
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

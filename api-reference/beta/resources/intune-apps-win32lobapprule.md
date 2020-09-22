@@ -3,14 +3,14 @@ title: tipo de recurso win32LobAppRule
 description: Um tipo base complexo para armazenar os dados de regra de detecção ou requisito para um aplicativo LOB Win32.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ffde7ad4549d3807602e7d02f088107e56541a44
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 78873e384208a9825ae02432c22cd55e84921a9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790289"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092731"
 ---
 # <a name="win32lobapprule-resource-type"></a>tipo de recurso win32LobAppRule
 
@@ -28,7 +28,7 @@ Um tipo base complexo para armazenar os dados de regra de detecção ou requisit
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|O tipo de regra que indica o objetivo da regra. Os valores possíveis são: `detection`, `requirement`.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +43,9 @@ Veja a seguir uma representação JSON do recurso.
   "ruleType": "String"
 }
 ```
+
+
+
 
 
 

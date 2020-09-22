@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4df97a37cf1f2dc086af8905f6ec168a7ac458b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d56c6a09c866a8d023466b57be1468d8f771269
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093998"
 ---
 # <a name="teamguestsettings-resource-type"></a>tipo de recurso teamGuestSettings
 
@@ -51,3 +51,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

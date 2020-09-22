@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
 doc_type: resourcePageType
-ms.openlocfilehash: 6c912a1ad9740148cd40429478a018c6af512fdf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 641097b6e8b4646d878182ba1763fd62ab75b080
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533572"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094054"
 ---
 # <a name="targetresource-resource-type"></a>tipo de recurso targetResource
 
@@ -22,11 +22,11 @@ Representa os tipos de recursos de destino associados à atividade de auditoria.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String|Indica a ID exclusiva do recurso.|
+|id|Cadeia de caracteres|Indica a ID exclusiva do recurso.|
 |displayName|Cadeia de caracteres|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
-|type|String|Descreve o tipo de recurso.  Os valores de `Application`exemplo `Group`incluem `ServicePrincipal`,, `User`e.|
-|userPrincipalName|Cadeia de caracteres|Quando o **tipo** está definido `User`como, isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
-|groupType|String|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
+|type|Cadeia de caracteres|Descreve o tipo de recurso.  Os valores de exemplo incluem `Application` ,, `Group` `ServicePrincipal` e `User` .|
+|userPrincipalName|Cadeia de caracteres|Quando **Type** está definido como `User` , isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
+|groupType|Cadeia de caracteres|Quando **Type** é definido como `Group` , isso indica o tipo de grupo.|
 |ModifiedProperties|coleção [modifiedproperty](modifiedproperty.md)|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do **tipo**de operação.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -62,3 +62,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
