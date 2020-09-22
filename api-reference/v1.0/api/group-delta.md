@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 86c4ec4e419fb9305c0a11ba4443e991ed062020
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 9c1ff7a6afc33cb9907533e33f02d275af79a04b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155107"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094789"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -56,7 +56,7 @@ Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` 
 Este método oferece suporte a parâmetros de consulta OData opcionais para ajudar a personalizar a resposta.
 
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade *id* sempre será retornada.
-- Você pode usar `$select=members` o para obter alterações de associação. Você também pode controlar outras alterações como propriedade e mais selecionando qualquer [relação de grupo](../resources/group.md#relationships) do tipo **directoryobject**.
+- Você pode usar o `$select=members` para obter alterações de associação. Você também pode controlar outras alterações como propriedade e mais selecionando qualquer [relação de grupo](../resources/group.md#relationships) do tipo **directoryobject**.
 - Há suporte limitado para `$filter`:
   - A única expressão `$filter` suportada é para controlar alterações em um objeto específico: `$filter=id+eq+{value}`. É possível filtrar vários objetos. Por exemplo, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. Há um limite de 50 objetos filtrados.
 
@@ -320,3 +320,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

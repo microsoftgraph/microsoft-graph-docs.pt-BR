@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: befe67baa554cf80cd1e8f3788ca530baf5e9c5c
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 5d777a575290699c2a936902614aa8ef0e8b042d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094908"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>tipo de recurso synchronizationTaskExecution
 
@@ -23,7 +23,7 @@ Resume os resultados da execução do trabalho de sincronização.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activityIdentifier           |Cadeia de Caracteres |Identificador do trabalho executado.|
+|activityIdentifier           |Cadeia de caracteres |Identificador do trabalho executado.|
 |countEntitled                |Int64  |Contagem de entradas processadas que foram atribuídas para este aplicativo.|
 |countEntitledForProvisioning |Int64  |Contagem de entradas processadas que foram atribuídas para provisionamento.|
 |countEscrowed                |Int64  |Contagem de entradas que foram caução (erros).|
@@ -34,7 +34,7 @@ Resume os resultados da execução do trabalho de sincronização.
 |countImportedDeltas          |Int64  |Contagem de alterações delta importadas.|
 |countImportedReferenceDeltas |Int64  |Contagem de alterações delta importadas referentes a alterações de referência.|
 |erro                        |[synchronizationError](synchronization-synchronizationerror.md)|Se for encontrado um erro, conterá um objeto **synchronizationError** com detalhes.|
-|state                        |String |Código que resume o resultado desta execução. Os valores possíveis são: `Succeeded`, `Failed`, `EntryLevelErrors`.|
+|state                        |Cadeia de caracteres |Código que resume o resultado desta execução. Os valores possíveis são: `Succeeded`, `Failed`, `EntryLevelErrors`.|
 |timecomeçou                    |DateTimeOffset|Hora em que esta execução de trabalho começou. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |timeterminou                    |DateTimeOffset|Hora em que esse trabalho foi executado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 
@@ -82,3 +82,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

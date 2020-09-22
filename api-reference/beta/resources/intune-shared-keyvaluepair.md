@@ -3,14 +3,14 @@ title: Tipo de recurso keyValuePair
 description: Par chave-valor para armazenar configurações personalizadas
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddadab1682fa683dda815dab8c79182e8076e54c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e0ead3529d9b5ac3e782631301c8db89a089b9ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095103"
 ---
 # <a name="keyvaluepair-resource-type"></a>Tipo de recurso keyValuePair
 
@@ -25,7 +25,7 @@ Par chave-valor para armazenar configurações personalizadas
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|String|Nome deste par chave-valor|
+|name|Cadeia de caracteres|Nome deste par chave-valor|
 |value|Cadeia de caracteres|Valor deste par chave-valor|
 
 ## <a name="relationships"></a>Relações
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
+
+
+
 
 
 

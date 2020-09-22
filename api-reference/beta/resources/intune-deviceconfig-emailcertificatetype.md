@@ -3,14 +3,14 @@ title: tipo de enumeração emailCertificateType
 description: Fontes de certificado com suporte para assinatura e criptografia de email.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d2f5e4add7f67c6b772aa903d4e3b860b67ecbf5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b5fe1392d09576de4d0154d941d87293f87615bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460098"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095258"
 ---
 # <a name="emailcertificatetype-enum-type"></a>tipo de enumeração emailCertificateType
 
@@ -25,9 +25,12 @@ Fontes de certificado com suporte para assinatura e criptografia de email.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Não use um certificado como fonte.|
-|certificado|1|Usar um certificado para a fonte do certificado.|
-|derivedCredential|duas|Use uma credencial derivada para a fonte do certificado.|
+|Nenhuma|,0|Não use um certificado como fonte.|
+|certificado|1 |Usar um certificado para a fonte do certificado.|
+|derivedCredential|2 |Use uma credencial derivada para a fonte do certificado.|
+
+
+
 
 
 

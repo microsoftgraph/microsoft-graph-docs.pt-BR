@@ -5,24 +5,24 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: bacf2ed499d420006173af8b3616a14b7c487904
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1690eda1f8af30d388a3570d20aa28dd4cd28454
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094943"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>tipo de recurso plannerAppliedCategories
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicados a uma tarefa. Ele faz parte do objeto [plannerTask](plannertask.md) .
-Pode haver até 6 categorias aplicadas a uma tarefa. Descrições de categoria, por `category1`exemplo `category2` , etc., fazem parte do objeto [Plan Details](plannerplandetails.md) . Este é um tipo aberto.
+Pode haver até 6 categorias aplicadas a uma tarefa. Descrições de categoria, por exemplo, `category1` `category2` etc., fazem parte do objeto [Plan Details](plannerplandetails.md) . Este é um tipo aberto.
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, no entanto, o cliente `category1`deve `category2`fornecer `category3`, `category4`, `category5` , e/ `category6` ou como propriedades com seus valores sendo `true` Boolean quando as categorias correspondentes são aplicadas à tarefa. O exemplo é mostrado abaixo. Quando eles não se aplicam, as propriedades são removidas automaticamente definindo seus `false` valores para o Boolean. 
+As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, no entanto, o cliente deve fornecer,,, `category1` `category2` `category3` `category4` `category5` e/ou `category6` como propriedades com seus valores sendo `true` Boolean quando as categorias correspondentes são aplicadas à tarefa. O exemplo é mostrado abaixo. Quando eles não se aplicam, as propriedades são removidas automaticamente definindo seus valores para o `false` Boolean. 
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -64,3 +64,5 @@ Exemplo:
   "suppressions": []
 }
 -->
+
+

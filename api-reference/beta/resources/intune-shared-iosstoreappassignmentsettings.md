@@ -3,14 +3,14 @@ title: Tipo de recurso iosStoreAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel da iOS Store para um grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 41ebc66736b5a21dc052cd089e3abd05ae00b37b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a42ce01463f90acac4fbb7130902aa781d1191c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095188"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>Tipo de recurso iosStoreAppAssignmentSettings
 
@@ -29,8 +29,8 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |vpnConfigurationId|Cadeia de caracteres|A identificação de configuração da VPN a aplicar neste aplicativo.|
-|**Apps**|
-|uninstallOnDeviceRemoval|Booliano|Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.|
+|**Aplicativos**|
+|uninstallOnDeviceRemoval|Boolean|Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   "uninstallOnDeviceRemoval": true
 }
 ```
+
+
+
 
 
 

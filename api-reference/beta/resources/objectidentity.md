@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: users
 author: krbain
-ms.openlocfilehash: 61d68865c0b1e77339b2e2ec2b0f27f095fc4e8f
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: d2667b8750473ea3e778c078159a1fc9397af1b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094978"
 ---
 # <a name="objectidentity-resource-type"></a>tipo de recurso objectidentity
 
@@ -26,9 +26,9 @@ A propriedade **Identities** do recurso [User](user.md) é um objeto **objectide
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|signInType|string| Especifica os tipos de entrada do usuário no seu diretório, `emailAddress`como `userName` ou. `federated` Aqui, `federated` representa um identificador exclusivo para um usuário de um emissor, que pode estar em qualquer formato escolhido pelo emissor. A validação adicional é imposta no **issuerAssignedId** quando o tipo de entrada é definido como `emailAddress` ou. `userName` Essa propriedade também pode ser definida como qualquer cadeia de caracteres personalizada.|
-|emissor|string|Especifica o emissor da identidade, por exemplo `facebook.com`.<br>Para contas locais (onde **signInType** não `federated`é), essa propriedade é o nome de domínio padrão do locatário do B2C local `contoso.onmicrosoft.com`, por exemplo.<br>Para usuários externos de outra organização do Azure AD, esse será o domínio da organização federada, por exemplo `contoso.com`.<br><br>Suporte `$filter`. limite de caracteres de 512.|
-|issuerAssignedId|string|Especifica o identificador exclusivo atribuído ao usuário pelo emissor. A combinação de **Issuer** e **issuerAssignedId** deve ser exclusiva dentro da organização. Representa o nome de entrada do usuário, quando **signInType** é definido como `emailAddress` ou `userName` (também conhecido como contas locais).<br>Quando **signInType** é definido como: <ul><li>`emailAddress`, (ou começa com `emailAddress` like `emailAddress1`) **issuerAssignedId** deve ser um endereço de email válido</li><li>`userName`, **issuerAssignedId** deve ser uma [parte local válida de um endereço de email](https://tools.ietf.org/html/rfc3696#section-3)</li></ul>Suporte `$filter`. limite de caracteres de 512.|
+|signInType|cadeia de caracteres| Especifica os tipos de entrada do usuário no seu diretório, como `emailAddress` `userName` ou `federated` . Aqui, `federated` representa um identificador exclusivo para um usuário de um emissor, que pode estar em qualquer formato escolhido pelo emissor. A validação adicional é imposta no **issuerAssignedId** quando o tipo de entrada é definido como `emailAddress` ou `userName` . Essa propriedade também pode ser definida como qualquer cadeia de caracteres personalizada.|
+|emissor|cadeia de caracteres|Especifica o emissor da identidade, por exemplo `facebook.com` .<br>Para contas locais (onde **signInType** não é `federated` ), essa propriedade é o nome de domínio padrão do locatário do B2C local, por exemplo `contoso.onmicrosoft.com` .<br>Para usuários externos de outra organização do Azure AD, esse será o domínio da organização federada, por exemplo `contoso.com` .<br><br>Oferece suporte para `$filter`. limite de caracteres de 512.|
+|issuerAssignedId|cadeia de caracteres|Especifica o identificador exclusivo atribuído ao usuário pelo emissor. A combinação de **Issuer** e **issuerAssignedId** deve ser exclusiva dentro da organização. Representa o nome de entrada do usuário, quando **signInType** é definido como `emailAddress` ou `userName` (também conhecido como contas locais).<br>Quando **signInType** é definido como: <ul><li>`emailAddress`, (ou começa com `emailAddress` like `emailAddress1` ) **issuerAssignedId** deve ser um endereço de email válido</li><li>`userName`, **issuerAssignedId** deve ser uma [parte local válida de um endereço de email](https://tools.ietf.org/html/rfc3696#section-3)</li></ul>Oferece suporte para `$filter`. limite de caracteres de 512.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -62,3 +62,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

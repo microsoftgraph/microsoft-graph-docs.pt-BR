@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9a72192d2da86e177cf14a9dea89fd115f1422d2
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 30eb4309b471adb5edc998da247f1535f71e1a68
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094735"
 ---
 # <a name="get-conversation-thread"></a>Obter thread de conversas
 
@@ -117,3 +117,4 @@ Content-length: 655
   "suppressions": [
   ]
 }-->
+

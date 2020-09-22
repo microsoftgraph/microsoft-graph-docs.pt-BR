@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 5360633155347b752866615e7635c811f3f1f30c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8a0c4b903e6cf4e582b697ea679e2bb4ed500fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519782"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094901"
 ---
 # <a name="use-the-microsoft-graph-threat-assessment-api"></a>Usar a API de avaliação de ameaças do Microsoft Graph
 
@@ -39,3 +39,5 @@ As APIs e recursos da avaliação de ameaças podem criar novas maneiras de voc�
 
 - Faça um drill down em [métodos](../resources/threatassessmentrequest.md#methods), [propriedades](../resources/threatassessmentrequest.md#properties) e [relações](../resources/threatassessmentrequest.md#relationships) dos recursos de [solicitação de avaliação de ameaças](../resources/threatassessmentrequest.md) e de[resultado da avaliação de ameaças](../resources/threatAssessmentResult.md).
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
+
+

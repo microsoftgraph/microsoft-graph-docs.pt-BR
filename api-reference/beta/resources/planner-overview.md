@@ -1,28 +1,28 @@
 ---
 title: Usar a API REST do Planner
-description: É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Office 365.
+description: É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Microsoft 365.
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: c18262f6ae437d674214845228876177c65a62f5
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 68937861670ec9299b24dc00a881b01c77f5787e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094971"
 ---
 # <a name="use-the-planner-rest-api"></a>Usar a API REST do Planner
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Office 365.
+É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Microsoft 365.
 
-Antes de começar a experimentar a API do Planner, vale a pena entender como os principais objetos na API do Planner se relacionam entre si e também com os grupos do Office 365.
+Antes de começar a experimentar a API do Planner, vale a pena entender como os principais objetos na API do Planner se relacionam entre si e também com os grupos do Microsoft 365.
 
-## <a name="office-365-groups"></a>Grupos do Office 365
+## <a name="microsoft-365-groups"></a>Grupos do Microsoft 365
 
-Os grupos do Office 365 são os proprietários dos planos da API do Planner.
+Os grupos do Microsoft 365 são os proprietários dos planos da API do Planner.
 Para [obter os planos pertencentes a um grupo](../api/plannergroup-list-plans.md), faça a solicitação HTTP a seguir.
 
 ``` http
@@ -35,7 +35,8 @@ Ao [criar um novo plano](../api/planner-post-plans.md), torne o grupo o propriet
 
 ## <a name="plans"></a>Planos
 
-Os [planos](plannerplan.md) são os contêineres das [tarefas](plannertask.md). Para [criar uma tarefa em um plano](../api/planner-post-tasks.md), defina a propriedade `planId` no objeto da tarefa como a ID do plano ao criar a tarefa.
+Os [planos](plannerplan.md) são os contêineres das [tarefas](plannertask.md).
+Para [criar uma tarefa em um plano](../api/planner-post-tasks.md), defina a propriedade `planId` no objeto da tarefa como a ID do plano ao criar a tarefa.
 No momento, as tarefas não podem ser criadas sem planos.
 Para [recuperar as tarefas em um plano de](../api/plannerplan-list-tasks.md), faça a solicitação HTTP a seguir.
 
@@ -47,7 +48,7 @@ GET /planner/plans/{plan-id}/tasks
 
 Cada tarefa pode ser atribuída a um usuário ao adicionar uma [atribuição](plannerassignment.md) à propriedade [assignments](plannerassignments.md) no objeto task. A ID do usuário ao qual a tarefa será atribuída é o nome da propriedade open em `assignments`. Além disso, a propriedade `orderHint` na atribuição deve ser especificada.
 
-## <a name="task-and-plan-details"></a>Detalhes de planos e tarefas 
+## <a name="task-and-plan-details"></a>Detalhes de planos e tarefas
 
 Os recursos do Planner são organizados em objetos básicos e objetos detalhados. Os objetos básicos oferecem acesso às propriedades comuns dos recursos, adequadas para modos de exibição de lista. No entanto, os objetos detalhados fornecem acesso a grandes propriedades dos recursos, adequadas para modos de exibição de busca detalhada.
 
@@ -67,7 +68,7 @@ As colunas personalizadas no quadro de tarefas do bucket são representadas pelo
 
 Toda a ordem é controlada pelos princípios descritos em [Dicas de ordem do Planner](planner-order-hint-format.md).
 
-## <a name="delta">Controlar alterações usando a consulta delta</a>
+## <a name=""></a><a name="delta">Controlar alterações usando a consulta delta</a>
 
 A consulta delta do Planner dá suporte a objetos consulta nos quais o usuário está inscrito.
 
@@ -77,9 +78,9 @@ Os usuários ficam inscritos nos seguintes objetos.
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Tarefas                 | <ul><li>Criadas pelo usuário</li><li>Atribuídas ao usuário</li><li>Pertencentes a um plano que o usuário possui</li><li>Contidas em um plano compartilhado com o usuário por meio da coleção **SharedWith** do plano</li> |
 | Planos                 | <ul><li>Compartilhado com o usuário por meio da coleção **SharedWith** do plano</li></ul>                                                                                                                     |
-| Buckets               | <ul><li>Contidas em um plano compartilhado com o usuário por meio da coleção **SharedWith** do plano</li></ul>                                                                                                 |  |
+| Buckets               | <ul><li>Contidas em um plano compartilhado com o usuário por meio da coleção **SharedWith** do plano</li></ul>                                                                                                 |
 
-### <a name="objectcache">Preencher o cache de objetos para consultas delta</a>
+### <a name=""></a><a name="objectcache">Preencher o cache de objetos para consultas delta</a>
 
 Se quiser usar a API de consulta delta do Planner, mantenha um cache local de objetos nos quais o usuário está interessado em observar para aplicar as alterações do feed de resposta delta.
 
@@ -122,7 +123,8 @@ O fluxo de chamadas da consulta delta do Planner é assim:
 ## <a name="planner-resource-versioning"></a>Versão do recurso do Planner
 
 O Planner cria versões de todos os recursos usando **etags**. Esses **etags** são retornados com a propriedade `@odata.etag` em cada recurso. As solicitações `PATCH` e `DELETE` requerem que a última **etag** conhecida pelo cliente seja especificada com um cabeçalho `If-Match`.
-O Planner permite alterações em versões mais antigas de recursos, se a alteração pretendida não estiver em conflito com as alterações mais recentes aceitas pelo serviço do Planner no mesmo recurso. Os clientes podem identificar qual **etag** para o mesmo recurso é mais recente ao calcular qual valor de **etag** é maior em comparação com a cadeia de caracteres ordinal. Cada recurso tem uma **etag** única. Não há comparações entre os valores de etags de recursos diferentes, incluindo aqueles com relações de confinamento.
+O Planner permite alterações em versões mais antigas de recursos, se a alteração pretendida não estiver em conflito com as alterações mais recentes aceitas pelo serviço do Planner no mesmo recurso. Os clientes podem identificar qual **etag** para o mesmo recurso é mais recente ao calcular qual valor de **etag** é maior em comparação com a cadeia de caracteres ordinal.
+Cada recurso tem uma **etag** única. Não há comparações entre os valores de etags de recursos diferentes, incluindo aqueles com relações de confinamento.
 Espera-se que os aplicativos cliente tratem dos controles de versão relacionados aos [códigos de erro](/graph/errors) **409** e **412** lendo a versão mais recente do item e resolvendo as alterações conflitantes.
 
 ## <a name="common-planner-error-conditions"></a>Condições de erro comuns do Planner
@@ -160,8 +162,11 @@ Os valores possíveis para os tipos de limite são:
 | MaximumContextsOnPlan         | A propriedade `contexts` no recurso [plannerPlan](plannerplan.md) contém muitos valores.                                                                                                          |
 | MaximumPlannerPlans       | O grupo já contém um plano. Atualmente, os grupos só podem conter um plano. **Observação:** alguns aplicativos da Microsoft podem ultrapassar esse limite. Futuramente, essa funcionalidade será estendida para todos os aplicativos.                                                                                                      |
 
-### <a name="412-precondition-failed"></a>412 Falha na Pré-condição 
+### <a name="412-precondition-failed"></a>412 Falha na Pré-condição
 
 Todas as solicitações `POST`, `PATCH` e `DELETE` da API do Planner exigem que o cabeçalho `If-Match` seja especificado com o último valor de etag conhecido do recurso que está sujeito à solicitação.
 O código de status 412 também pode ser retornado se o valor da etag especificado na solicitação já não corresponder a uma versão do recurso no serviço. Nesse caso, os clientes devem ler o recurso novamente e obter uma nova etag.
+
+## <a name="whats-new"></a>O que há de novo
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
