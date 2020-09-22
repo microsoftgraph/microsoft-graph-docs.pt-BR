@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementExportJob
 description: Entidade que representa um trabalho para exportar um relatório
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a66072a2bd87cfb279f6b9d39027228f6c9f4b5c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 35b28b5e105e9e61166df36db5ab841fcd063ff6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039430"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>tipo de recurso deviceManagementExportJob
 
@@ -73,6 +73,9 @@ Veja a seguir uma representação JSON do recurso.
   "expirationDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

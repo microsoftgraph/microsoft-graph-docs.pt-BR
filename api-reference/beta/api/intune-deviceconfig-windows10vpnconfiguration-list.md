@@ -3,14 +3,14 @@ title: Listar windows10VpnConfigurations
 description: Listar Propriedades e relações dos objetos windows10VpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bdf7dc2c4dd3c26fd21df40567d4c59b09e73176
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ee4e51a4c9b92ab154ccdeaba68b6252d96d3c62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792594"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041019"
 ---
 # <a name="list-windows10vpnconfigurations"></a>Listar windows10VpnConfigurations
 
@@ -223,6 +223,9 @@ Content-Length: 5260
   ]
 }
 ```
+
+
+
 
 
 

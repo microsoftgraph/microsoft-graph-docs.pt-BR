@@ -6,16 +6,16 @@ title: Acessar itens compartilhados
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 0cdb265ea8064e1bd13f0c131735911b010f312e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8231085723d54b305b6ec72b746f14331fbe1963
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453307"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040284"
 ---
 # <a name="accessing-shared-driveitems"></a>Acessar DriveItems compartilhados
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Acesse um [DriveItem](../resources/driveitem.md) compartilhado ou uma coleção de itens compartilhados usando um **shareId** ou uma URL de compartilhamento.
 
@@ -74,7 +74,7 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 | redeemSharingLink             | Se o **shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda ao chamador acesso durável ao item    |
 | redeemSharingLinkIfNecessary  | O mesmo que redeemSharingLink, mas o acesso só é garantido para a duração da solicitação |
 
-redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto o redeemSharingLinkIfNecessary se destina a cenários em que a intenção é simplesmente exibir o link do los.
+redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto o redeemSharingLinkIfNecessary se destina a cenários em que a intenção é simplesmente inspecionar os metadados do link.
 
 ## <a name="response"></a>Resposta
 
@@ -257,3 +257,5 @@ Veja mais informações sobre como os erros são retornados no tópico [Resposta
   "suppressions": [
   ]
 } -->
+
+

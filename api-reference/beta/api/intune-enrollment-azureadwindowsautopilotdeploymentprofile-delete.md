@@ -3,14 +3,14 @@ title: Excluir azureADWindowsAutopilotDeploymentProfile
 description: Exclui azureADWindowsAutopilotDeploymentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 190594e2ebd5687bc38b160a3701daac5d331463
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e5cab38d7a0c158b86225f57265a8d3b01a2724b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43320236"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040760"
 ---
 # <a name="delete-azureadwindowsautopilotdeploymentprofile"></a>Excluir azureADWindowsAutopilotDeploymentProfile
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

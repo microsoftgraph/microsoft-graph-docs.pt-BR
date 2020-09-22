@@ -3,14 +3,14 @@ title: ação removeLanguageFiles
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 624436ad4d3d9e8ef222c08f080c5f7a9baa6707
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c21ca37b8b452d5e220def7782915ea89441d50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440902"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040613"
 ---
 # <a name="removelanguagefiles-action"></a>ação removeLanguageFiles
 
@@ -89,6 +89,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração windowsHealthMonitoringScope
 description: Escopo de monitoramento de integridade do dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f20b41b20f5bad3810d2e20328fa6ab1199c9349
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 474001791a45c074805669fd909d7af4bb1b506a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449695"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039898"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>tipo de enumeração windowsHealthMonitoringScope
 
@@ -26,9 +26,12 @@ Escopo de monitoramento de integridade do dispositivo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |indefinido|,0|Undefined|
-|healthMonitoring|1|Eventos básicos para o monitoramento de integridade do dispositivo Windows|
-|bootPerformance|duas|Eventos de desempenho de inicialização|
-|userExperienceAnalytics|4 |Eventos de análise da experiência do usuário|
+|healthMonitoring|1 |Eventos básicos para o monitoramento de integridade do dispositivo Windows|
+|bootPerformance|2 |Eventos de desempenho de inicialização|
+|windowsUpdates|4 |Eventos do Windows Updates|
+
+
+
 
 
 

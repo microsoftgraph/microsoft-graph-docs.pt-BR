@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: harini84
-ms.openlocfilehash: f08734a9ec03c5e7e95a00abc5c95a9c968fa81c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ec43db868c2934d569bf62e8e808d755b9d2cffc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040165"
 ---
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
 
@@ -28,7 +28,7 @@ Derivado de [attendeeBase](attendeebase.md).
 |emailAddress|[emailAddress](emailaddress.md)|Inclui o nome e endereço SMTP do participante.|
 |proposedNewTime|[timeSlot](timeslot.md)|Uma data/hora alternativa proposta pelo participante para que uma solicitação de reunião inicie e termine. Se o participante não propôs outra vez, essa propriedade não é incluída em uma resposta de um evento GET.|
 |status|[ResponseStatus](responsestatus.md)|A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.|
-|type|String|O tipo de participante: `required`, `optional` ou `resource`.|
+|tipo|String|O tipo de participante: `required`, `optional` ou `resource`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

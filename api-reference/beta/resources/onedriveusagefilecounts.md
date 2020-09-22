@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 0beb20ee592f5131ebefe3a3e547131b3903d762
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0e9bb7f6fda073acf3d4e2ace74f66e45c0e5715
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812075"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039241"
 ---
 # <a name="onedriveusagefilecounts-resource-type"></a>tipo de recurso oneDriveUsageFileCounts
 
@@ -46,3 +46,5 @@ Veja a seguir uma representação JSON do recurso.
   "reportPeriod": "String"
 }
 ```
+
+

@@ -6,12 +6,12 @@ description: Conceder a uma lista de usuários acesso para usar o link especific
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 901b5c7b7e67b0d45a0d4891b239fa950d864119
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 851073cb23778dcec89fc876f314a9b3e1297550
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040310"
 ---
 # <a name="permission-grant"></a>permissão: Grant
 
@@ -69,7 +69,7 @@ Para obter uma lista de funções disponíveis, consulte [funções valores de p
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [permissões][] no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [permissões][] no corpo da resposta.
 
 Uma [permissão][] que representa o link atualizado sempre será retornada no conjunto de resultados no êxito. O link updated pode ser identificado pela presença de uma faceta ' link ' que contém a propriedade ' Scope '. Em alguns casos, pode ser possível que o link atualizado tenha uma URL diferente da conexão original, caso em que a nova URL deve ser usada.
 
@@ -225,3 +225,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Add permissions"
 } -->
+
+

@@ -3,14 +3,14 @@ title: Acessar windows10EnterpriseModernAppManagementConfiguration
 description: Leia as propriedades e as relações do objeto windows10EnterpriseModernAppManagementConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a707a19e2fe98cc95a1f1519e59df25b050a9e9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9a6df62793fb2da3df432575f5f5fab74c9ba6ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041152"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Acessar windows10EnterpriseModernAppManagementConfiguration
 
@@ -110,6 +110,9 @@ Content-Length: 1344
   }
 }
 ```
+
+
+
 
 
 

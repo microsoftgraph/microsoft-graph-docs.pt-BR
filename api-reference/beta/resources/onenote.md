@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: f542c58d6b824b678afbe493d03ae760b3be428f
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 1fe12502832c6fb6053488989f95838e8dc77adb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657921"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039220"
 ---
 # <a name="onenote-resource-type"></a>tipo de recurso do onenote
 
@@ -26,7 +26,7 @@ Todas as chamadas para o serviço do OneNote pela API do Microsoft Graph usam es
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-O local pode ser blocos de anotações do usuário no Microsoft 365 ou no OneDrive do consumidor, nos blocos de anotações de grupo ou em blocos de anotações de equipe hospedados no site do SharePoint no Microsoft 365. 
+A localização pode ser blocos de anotações do usuário no Microsoft 365 ou no OneDrive do consumidor, blocos de anotações de grupo ou blocos de anotações hospedado no site de equipe do SharePoint no Microsoft 365. 
 
 **Blocos de anotações do usuário** Para acessar blocos de anotações pessoais no OneDrive do consumidor ou no OneDrive for Business, use uma das seguintes URLs:
 
@@ -99,3 +99,5 @@ Para obter informações sobre as permissões necessárias para trabalhar com o 
   "suppressions": []
 }
 -->
+
+

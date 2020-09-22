@@ -3,14 +3,14 @@ title: tipo de recurso roleScopeTag
 description: Marca de escopo de função
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b30b3944976b2d8d0ac13aeb658402849c0b2d6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4106ba2b3764621c94db52d92ca1d7b5e213dee0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356814"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039479"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso roleScopeTag
 
@@ -38,7 +38,7 @@ Marca de escopo de função
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|Cadeia de caracteres|O nome de exibição ou amigável da marca de escopo da função.|
+|displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
 |description|String|Descrição da marca de escopo da função.|
 |isBuiltIn|Booliano|Descrição da marca de escopo da função.|
 
@@ -64,6 +64,9 @@ Veja a seguir uma representação JSON do recurso.
   "isBuiltIn": true
 }
 ```
+
+
+
 
 
 

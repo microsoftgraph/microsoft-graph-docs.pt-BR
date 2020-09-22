@@ -5,16 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a26728fb39fccd1512a559638c595551a20c0042
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a6e92f2c31a5972528fefdea68a4fa8a61677da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508175"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040175"
 ---
 # <a name="assignmentreviewsettings-resource-type"></a>tipo de recurso assignmentReviewSettings
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,11 +27,11 @@ Este tipo tem as seguintes propriedades:
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
 | isEnabled| Boolean | Se verdadeiro, as revisões do Access são necessárias para as atribuições desta política. |
-| recurrenceType | String | O intervalo de recorrência, como `monthly` ou `quarterly`. |
-| revisor | String | Quem deve ser solicitado a fazer a revisão, `Self` ou. `Reviewers` |
+| recurrenceType | String | O intervalo de recorrência, como `monthly` ou `quarterly` . |
+| revisor | String | Quem deve ser solicitado a fazer a revisão, `Self` ou `Reviewers` . |
 | startDateTime | DateTimeOffset | Quando a primeira revisão deve iniciar. |
 | durationInDays | Int32 | O número de dias para permitir a entrada de revisores.|
-| revisores | coleção [userset](userset.md) | Se o revisortype for `Reviewers`, essa coleção especifica os usuários que serão revisores, por ID ou como membros de um grupo, usando uma coleção de [únicousuário](singleuser.md) e [groupMembers](groupmembers.md). |
+| revisores | coleção [userset](userset.md) | Se o revisortype for `Reviewers` , essa coleção especifica os usuários que serão revisores, por ID ou como membros de um grupo, usando uma coleção de [Únicousuário](singleuser.md) e [groupMembers](groupmembers.md). |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -68,3 +68,5 @@ Veja a seguir uma representação JSON da propriedade de configurações de revi
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

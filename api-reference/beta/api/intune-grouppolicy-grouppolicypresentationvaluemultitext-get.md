@@ -3,14 +3,14 @@ title: Obter groupPolicyPresentationValueMultiText
 description: Leia as propriedades e as relações do objeto groupPolicyPresentationValueMultiText.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2823ee936ea37eaf92ffbdbb9268fdab72b01ede
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4b6a11302eea0f4b1a5f9a751fb244eef8129986
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462656"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040634"
 ---
 # <a name="get-grouppolicypresentationvaluemultitext"></a>Obter groupPolicyPresentationValueMultiText
 
@@ -82,6 +82,9 @@ Content-Length: 325
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração roleAssignmentScopeType
 description: Especifica o tipo de escopo de uma atribuição de função.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a88fc1f8976e9d87c166cab2ebde865f049ed91b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 16781d47a9db63bd346c4c33efe3cbcdd278a5e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43357300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039514"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>tipo de enumeração roleAssignmentScopeType
 
@@ -26,9 +26,12 @@ Especifica o tipo de escopo de uma atribuição de função.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |resourceScope|,0|Permite atribuições para o ResourceScopes especificado.|
-|objectdevices|1|Permitir atribuições de todos os dispositivos do Intune.|
-|allLicensedUsers|duas|Permitir atribuições a todos os usuários licenciados do Intune.|
-|allDevicesAndLicensedUsers|3D|Permitir atribuições de todos os dispositivos do Intune e usuários licenciados.|
+|objectdevices|1 |Permitir atribuições de todos os dispositivos do Intune.|
+|allLicensedUsers|2 |Permitir atribuições a todos os usuários licenciados do Intune.|
+|allDevicesAndLicensedUsers|3 |Permitir atribuições de todos os dispositivos do Intune e usuários licenciados.|
+
+
+
 
 
 

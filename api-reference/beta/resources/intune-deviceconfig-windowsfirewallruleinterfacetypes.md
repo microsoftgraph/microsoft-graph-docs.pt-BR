@@ -3,14 +3,14 @@ title: tipo de enumeração windowsFirewallRuleInterfaceTypes
 description: Sinalizadores que representam os tipos de interface de regra de firewall.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e78352a3de5c7b173bd5841c7954be348a0d51cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b9ceb36cc7b6b91769a9c745e83cb6df8562cf4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449686"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039990"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>tipo de enumeração windowsFirewallRuleInterfaceTypes
 
@@ -26,9 +26,12 @@ Sinalizadores que representam os tipos de interface de regra de firewall.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Nenhum sinalizador definido.|
-|Acesso|1|O tipo de interface de acesso remoto.|
-|conexão|duas|O tipo de interface sem fio.|
+|Acesso|1 |O tipo de interface de acesso remoto.|
+|conexão|2 |O tipo de interface sem fio.|
 |Network|4 |O tipo de interface de LAN.|
+
+
+
 
 
 

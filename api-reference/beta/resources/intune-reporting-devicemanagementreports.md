@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementReports
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de relatórios.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8056b2d592545dbb8cda81c559c33fd356b2c35c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d64f5ce049c73b74f105f3899ccf218e3c82fc85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039374"
 ---
 # <a name="devicemanagementreports-resource-type"></a>tipo de recurso deviceManagementReports
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Entidade singleton que atua como um contêiner para todas as funcionalidades de relatórios.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter deviceManagementReports](../api/intune-reporting-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Leia as propriedades e as relações do objeto [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) .|
@@ -62,6 +62,9 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

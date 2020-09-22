@@ -3,14 +3,14 @@ title: tipo de enumeração windowsUpdateForBusinessUpdateWeeks
 description: Agendou a instalação da atualização nas semanas do mês
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b0e0149cc25757ebcb45b50c3d58ad3c7c54fd2b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 371d90642bdcf9c264dbf440308659e33707a0e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441142"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039640"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>tipo de enumeração windowsUpdateForBusinessUpdateWeeks
 
@@ -26,11 +26,14 @@ Agendou a instalação da atualização nas semanas do mês
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Permite que o usuário defina.|
-|firstWeek|1|Agendou a instalação da atualização na primeira semana do mês|
-|secondWeek|duas|Agendou a instalação da atualização na segunda semana do mês|
+|firstWeek|1 |Agendou a instalação da atualização na primeira semana do mês|
+|secondWeek|2 |Agendou a instalação da atualização na segunda semana do mês|
 |thirdWeek|4 |Agendou a instalação da atualização na terceira semana do mês|
 |fourthWeek|8 |Agendou a instalação da atualização na quarta semana do mês|
 |everyWeek|15 |Agendou a instalação da atualização em todas as semanas do mês|
+
+
+
 
 
 

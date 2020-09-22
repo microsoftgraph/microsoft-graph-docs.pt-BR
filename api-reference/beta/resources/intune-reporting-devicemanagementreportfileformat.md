@@ -3,14 +3,14 @@ title: tipo de enumeração deviceManagementReportFileFormat
 description: Valores possíveis para o formato de arquivo de um relatório
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2cfa5535489d9622d3f62f5641c2c129d0c8b0d3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 41e8f1cb8907633f919df19431a01e9e43c9c5de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389005"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039388"
 ---
 # <a name="devicemanagementreportfileformat-enum-type"></a>tipo de enumeração deviceManagementReportFileFormat
 
@@ -26,7 +26,10 @@ Valores possíveis para o formato de arquivo de um relatório
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Limit|,0|Valores separados por vírgula|
-|pdf|1|Formato de documento portátil|
+|pdf|1 |Formato de documento portátil|
+
+
+
 
 
 

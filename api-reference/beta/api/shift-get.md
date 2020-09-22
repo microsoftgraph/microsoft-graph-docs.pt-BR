@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 729fd92406ff1d6e301e4520737a954a1b300d6f
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 2c9a855d2f55b43839cefb849151ef98118aefcd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040207"
 ---
 # <a name="get-shift"></a>Obter turno
 
@@ -136,3 +136,5 @@ Content-length: 401
   ]
 }
 -->
+
+

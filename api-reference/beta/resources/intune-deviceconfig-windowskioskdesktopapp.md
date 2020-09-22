@@ -3,14 +3,14 @@ title: tipo de recurso Complexowindowskioskdesktopapp
 description: A classe base de um tipo de aplicativo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af8e97b8b1aac3fcee5592da78b96bc2ccfd5143
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 145cc54d3d04a3a703ad65f5ee91a71df7bb63ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039780"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>tipo de recurso Complexowindowskioskdesktopapp
 
@@ -58,6 +58,9 @@ Veja a seguir uma representação JSON do recurso.
   "desktopApplicationLinkPath": "String"
 }
 ```
+
+
+
 
 
 

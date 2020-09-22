@@ -3,14 +3,14 @@ title: tipo de recurso windowsKioskAzureADGroup
 description: A classe usada para identificar um grupo do AzureAD para a configuração do quiosque
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c312f5fbefdf156bda98f8f82ce68c4e0d3213f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 50ec99efb2588e9c8adcfd314e6d9bab88fef0de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039850"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>tipo de recurso windowsKioskAzureADGroup
 
@@ -48,6 +48,9 @@ Veja a seguir uma representação JSON do recurso.
   "groupId": "String"
 }
 ```
+
+
+
 
 
 

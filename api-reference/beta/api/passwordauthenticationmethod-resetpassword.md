@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d90107b5a54fed5dbc552ed61f93574396725651
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: aef4019edc27375418af3f5c4b1630037c50745a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429577"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040333"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -205,3 +205,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: Excluir deviceManagementTemplate
 description: Exclui deviceManagementTemplate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fbe0f94e2e2ae26fa1bbb22a98ac7e62b362096d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 108ba337bd3d9753bef9075223503a3a7ebd3884
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427610"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040858"
 ---
 # <a name="delete-devicemanagementtemplate"></a>Excluir deviceManagementTemplate
 
@@ -66,6 +66,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

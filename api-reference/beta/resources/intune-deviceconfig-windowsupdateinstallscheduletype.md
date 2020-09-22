@@ -3,14 +3,14 @@ title: Tipo de recurso windowsUpdateInstallScheduleType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1afe8045b6c755508004ca1365592fbe81098e5f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fea570610ad6265c77c151eeacfa2a2769062afd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441127"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039612"
 ---
 # <a name="windowsupdateinstallscheduletype-resource-type"></a>Tipo de recurso windowsUpdateInstallScheduleType
 
@@ -41,6 +41,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.windowsUpdateInstallScheduleType"
 }
 ```
+
+
+
 
 
 

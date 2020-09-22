@@ -6,16 +6,16 @@ title: Recuperar itens de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b4c5a8c76a59d174a04f61ded768874d70c2b3e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 851ccd31068b1cbd9ffa8a237283c79898458fc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040491"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -117,3 +117,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -6,16 +6,16 @@ title: Obter permissões
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 0681de41fafefe34b82e233f9fb19d20ac3efd96
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81ed99e8437eb387dcec8210a643843786b7d104
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455953"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040318"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Obter permissão de compartilhamento para um arquivo ou pasta
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -127,3 +127,5 @@ Permissões com uma faceta [**invitation**](../resources/sharinginvitation.md) r
   ]
 }
 -->
+
+

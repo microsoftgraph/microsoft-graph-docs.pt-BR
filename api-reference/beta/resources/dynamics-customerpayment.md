@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: bd990ea9778ada7d43c9b8192d77cf8af618909b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf5536181f965765615a7e2d707d6503813cfb76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42504633"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040037"
 ---
 # <a name="customerpayments-resource-type"></a>tipo de recurso customerPayments
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ Representa um pagamento de cliente no Dynamics 365 Business central. Um pagament
 |[Obter customerPayments](../api/dynamics-customerpayment-get.md)|customerPayments|Obtém um pagamento de cliente.|
 |[Postar customerPayments](../api/dynamics-create-customerpayment.md)|customerPayments|Cria um pagamento de cliente.|
 |[Patch customerPayments](../api/dynamics-customerpayment-update.md)|customerPayments|Atualiza um pagamento de cliente.|
-|[Excluir customerPayments](../api/dynamics-customerpayment-delete.md)|nenhuma|Exclui um pagamento de cliente.|
+|[Excluir customerPayments](../api/dynamics-customerpayment-delete.md)|Nenhuma|Exclui um pagamento de cliente.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo    |Descrição|
@@ -84,4 +84,6 @@ Veja a seguir uma representação JSON do recurso.
     "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 

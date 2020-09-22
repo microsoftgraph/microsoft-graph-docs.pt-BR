@@ -3,14 +3,14 @@ title: Obter Windowsprotectionstate foi
 description: Leia as propriedades e as relações do objeto Windowsprotectionstate foi.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: adbd2aa6e579157ebf1c3e8dab42f12d287a0bfc
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 14ccdf80f45118857d0956c6dcc1a210630d4c90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790578"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040907"
 ---
 # <a name="get-windowsprotectionstate"></a>Obter Windowsprotectionstate foi
 
@@ -94,6 +94,9 @@ Content-Length: 971
   }
 }
 ```
+
+
+
 
 
 
