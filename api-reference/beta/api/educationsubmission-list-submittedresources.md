@@ -5,50 +5,50 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e5b51f7ecebe3c7525154d19ef66d622633b55d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49160b9f8f7359c514c7283049cdc51c539efe08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425090"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007231"
 ---
-# <a name="list-submittedresources"></a><span data-ttu-id="4fb20-105">Listar submittedResources</span><span class="sxs-lookup"><span data-stu-id="4fb20-105">List submittedResources</span></span>
+# <a name="list-submittedresources"></a><span data-ttu-id="b1d2b-105">Listar submittedResources</span><span class="sxs-lookup"><span data-stu-id="b1d2b-105">List submittedResources</span></span>
 
-<span data-ttu-id="4fb20-106">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4fb20-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b1d2b-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b1d2b-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4fb20-107">Liste os recursos que foram oficialmente enviados para a gradação.</span><span class="sxs-lookup"><span data-stu-id="4fb20-107">List the resources that have officially been submitted for grading.</span></span> <span data-ttu-id="4fb20-108">O aluno que possui o envio não pode alterar a lista enviada sem reenviar a atribuição.</span><span class="sxs-lookup"><span data-stu-id="4fb20-108">The student who owns the submission cannot change the submitted list without resubmitting the assignment.</span></span> <span data-ttu-id="4fb20-109">Este é um wrapper em torno do recurso real e pode conter um ponteiro de volta para o recurso de atribuição real se esse recurso foi copiado da atribuição.</span><span class="sxs-lookup"><span data-stu-id="4fb20-109">This is a wrapper around the real resource and can contain a pointer back to the actual assignment resource if this resource was copied from the assignment.</span></span>
+<span data-ttu-id="b1d2b-107">Liste os recursos que foram oficialmente enviados para a gradação.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-107">List the resources that have officially been submitted for grading.</span></span> <span data-ttu-id="b1d2b-108">O aluno que possui o envio não pode alterar a lista enviada sem reenviar a atribuição.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-108">The student who owns the submission cannot change the submitted list without resubmitting the assignment.</span></span> <span data-ttu-id="b1d2b-109">Este é um wrapper em torno do recurso real e pode conter um ponteiro de volta para o recurso de atribuição real se esse recurso foi copiado da atribuição.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-109">This is a wrapper around the real resource and can contain a pointer back to the actual assignment resource if this resource was copied from the assignment.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4fb20-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="4fb20-110">Permissions</span></span>
-<span data-ttu-id="4fb20-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4fb20-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b1d2b-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="b1d2b-110">Permissions</span></span>
+<span data-ttu-id="b1d2b-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b1d2b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4fb20-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4fb20-113">Permission type</span></span>      | <span data-ttu-id="4fb20-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4fb20-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b1d2b-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b1d2b-113">Permission type</span></span>      | <span data-ttu-id="b1d2b-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b1d2b-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4fb20-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4fb20-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="4fb20-116">EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4fb20-116">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="4fb20-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4fb20-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="4fb20-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4fb20-118">Not supported.</span></span>  |
-|<span data-ttu-id="4fb20-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4fb20-119">Application</span></span> | <span data-ttu-id="4fb20-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4fb20-120">Not supported.</span></span> | 
+|<span data-ttu-id="b1d2b-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b1d2b-115">Delegated (work or school account)</span></span> |  <span data-ttu-id="b1d2b-116">EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b1d2b-116">EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="b1d2b-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b1d2b-117">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="b1d2b-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-118">Not supported.</span></span>  |
+|<span data-ttu-id="b1d2b-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b1d2b-119">Application</span></span> | <span data-ttu-id="b1d2b-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-120">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="4fb20-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4fb20-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b1d2b-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b1d2b-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4fb20-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="4fb20-122">Optional query parameters</span></span>
-<span data-ttu-id="4fb20-123">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="4fb20-123">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b1d2b-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b1d2b-122">Optional query parameters</span></span>
+<span data-ttu-id="b1d2b-123">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-123">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4fb20-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4fb20-124">Request headers</span></span>
-| <span data-ttu-id="4fb20-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4fb20-125">Header</span></span>       | <span data-ttu-id="4fb20-126">Valor</span><span class="sxs-lookup"><span data-stu-id="4fb20-126">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b1d2b-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b1d2b-124">Request headers</span></span>
+| <span data-ttu-id="b1d2b-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b1d2b-125">Header</span></span>       | <span data-ttu-id="b1d2b-126">Valor</span><span class="sxs-lookup"><span data-stu-id="b1d2b-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="4fb20-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="4fb20-127">Authorization</span></span>  | <span data-ttu-id="4fb20-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4fb20-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b1d2b-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="b1d2b-127">Authorization</span></span>  | <span data-ttu-id="b1d2b-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4fb20-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4fb20-130">Request body</span></span>
-<span data-ttu-id="4fb20-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4fb20-131">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="4fb20-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="4fb20-132">Response</span></span>
-<span data-ttu-id="4fb20-133">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4fb20-133">If successful, this method returns a `200 OK` response code and a collection of [educationSubmissionResource](../resources/educationsubmissionresource.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4fb20-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4fb20-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4fb20-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4fb20-135">Request</span></span>
-<span data-ttu-id="4fb20-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4fb20-136">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b1d2b-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b1d2b-130">Request body</span></span>
+<span data-ttu-id="b1d2b-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-131">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="b1d2b-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="b1d2b-132">Response</span></span>
+<span data-ttu-id="b1d2b-133">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-133">If successful, this method returns a `200 OK` response code and a collection of [educationSubmissionResource](../resources/educationsubmissionresource.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b1d2b-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b1d2b-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b1d2b-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b1d2b-135">Request</span></span>
+<span data-ttu-id="b1d2b-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_submittedresources"
@@ -56,10 +56,10 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submittedResources
 ```
-##### <a name="response"></a><span data-ttu-id="4fb20-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="4fb20-137">Response</span></span>
-<span data-ttu-id="4fb20-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4fb20-138">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="b1d2b-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="b1d2b-137">Response</span></span>
+<span data-ttu-id="b1d2b-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-138">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="4fb20-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4fb20-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="b1d2b-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b1d2b-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -118,3 +118,5 @@ Content-length: 1045
   "suppressions": []
 }
 -->
+
+

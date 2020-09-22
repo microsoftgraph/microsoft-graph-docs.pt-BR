@@ -5,32 +5,32 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8f1cd99c0134eb15a290a49f3c4bbf2da5bfd61f
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: fe20285dce5a65bc29e61000f5d5b55e5fe88681
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007536"
 ---
-# <a name="update-educationoutcome"></a><span data-ttu-id="864b8-103">Atualizar educationoutcome</span><span class="sxs-lookup"><span data-stu-id="864b8-103">Update educationoutcome</span></span>
+# <a name="update-educationoutcome"></a><span data-ttu-id="a3d55-103">Atualizar educationoutcome</span><span class="sxs-lookup"><span data-stu-id="a3d55-103">Update educationoutcome</span></span>
 
-<span data-ttu-id="864b8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="864b8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a3d55-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a3d55-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="864b8-105">Atualiza as propriedades de um objeto [educationOutcome](../resources/educationoutcome.md) .</span><span class="sxs-lookup"><span data-stu-id="864b8-105">Update the properties of an [educationOutcome](../resources/educationoutcome.md) object.</span></span>
+<span data-ttu-id="a3d55-105">Atualiza as propriedades de um objeto [educationOutcome](../resources/educationoutcome.md) .</span><span class="sxs-lookup"><span data-stu-id="a3d55-105">Update the properties of an [educationOutcome](../resources/educationoutcome.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="864b8-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="864b8-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a3d55-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a3d55-106">Permissions</span></span>
 
-<span data-ttu-id="864b8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="864b8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a3d55-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a3d55-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="864b8-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="864b8-109">Permission type</span></span>                        | <span data-ttu-id="864b8-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="864b8-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a3d55-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a3d55-109">Permission type</span></span>                        | <span data-ttu-id="a3d55-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a3d55-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="864b8-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="864b8-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="864b8-112">EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="864b8-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
-| <span data-ttu-id="864b8-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="864b8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="864b8-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="864b8-114">Not supported.</span></span> |
-| <span data-ttu-id="864b8-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="864b8-115">Application</span></span>                            | <span data-ttu-id="864b8-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="864b8-116">Not supported.</span></span> |
+| <span data-ttu-id="a3d55-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a3d55-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a3d55-112">EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a3d55-112">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span> |
+| <span data-ttu-id="a3d55-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a3d55-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a3d55-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a3d55-114">Not supported.</span></span> |
+| <span data-ttu-id="a3d55-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a3d55-115">Application</span></span>                            | <span data-ttu-id="a3d55-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a3d55-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="864b8-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="864b8-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a3d55-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a3d55-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,33 +38,33 @@ ms.locfileid: "44681700"
 PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="864b8-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="864b8-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a3d55-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a3d55-118">Request headers</span></span>
 
-| <span data-ttu-id="864b8-119">Nome</span><span class="sxs-lookup"><span data-stu-id="864b8-119">Name</span></span>       | <span data-ttu-id="864b8-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="864b8-120">Description</span></span>|
+| <span data-ttu-id="a3d55-119">Nome</span><span class="sxs-lookup"><span data-stu-id="a3d55-119">Name</span></span>       | <span data-ttu-id="a3d55-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="a3d55-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="864b8-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="864b8-121">Authorization</span></span> | <span data-ttu-id="864b8-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="864b8-122">Bearer {token}</span></span> |
+| <span data-ttu-id="a3d55-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="a3d55-121">Authorization</span></span> | <span data-ttu-id="a3d55-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="a3d55-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="864b8-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="864b8-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a3d55-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a3d55-123">Request body</span></span>
 
-<span data-ttu-id="864b8-124">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="864b8-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="864b8-125">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="864b8-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="864b8-126">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="864b8-126">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="a3d55-124">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="a3d55-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="a3d55-125">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="a3d55-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="a3d55-126">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="a3d55-126">For best performance, don't include existing values that haven't changed.</span></span>
 
-<span data-ttu-id="864b8-127">O objeto educationOutcome será um dos seguintes tipos derivados: **educationPointsOutcome**, **educationFeedbackOutcome**ou **educationRubricOutcome**.</span><span class="sxs-lookup"><span data-stu-id="864b8-127">The educationOutcome object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**.</span></span> <span data-ttu-id="864b8-128">Forneça as propriedades específicas relevantes ao tipo de resultado que está sendo corrigido.</span><span class="sxs-lookup"><span data-stu-id="864b8-128">Supply the specific properties relevant to the type of outcome being patched.</span></span>
+<span data-ttu-id="a3d55-127">O objeto educationOutcome será um dos seguintes tipos derivados: **educationPointsOutcome**, **educationFeedbackOutcome**ou **educationRubricOutcome**.</span><span class="sxs-lookup"><span data-stu-id="a3d55-127">The educationOutcome object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**.</span></span> <span data-ttu-id="a3d55-128">Forneça as propriedades específicas relevantes ao tipo de resultado que está sendo corrigido.</span><span class="sxs-lookup"><span data-stu-id="a3d55-128">Supply the specific properties relevant to the type of outcome being patched.</span></span>
 
-<span data-ttu-id="864b8-129">Todos os tipos de resultados derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos** e **publishedPoints**, **feedback** e **publishedFeedback**.</span><span class="sxs-lookup"><span data-stu-id="864b8-129">All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**.</span></span> <span data-ttu-id="864b8-130">Não atualiza a propriedade "published"; é para uso interno.</span><span class="sxs-lookup"><span data-stu-id="864b8-130">Do not update the "published" property; it is for internal use.</span></span> <span data-ttu-id="864b8-131">Por exemplo, para atribuir pontos a um **educationPointsOutcome**, atualize a propriedade **Points** , mas não atualize o **publishedPoints**.</span><span class="sxs-lookup"><span data-stu-id="864b8-131">For example, to assign points to an **educationPointsOutcome**, update the **points** property, but do not update **publishedPoints**.</span></span>
+<span data-ttu-id="a3d55-129">Todos os tipos de resultados derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos** e **publishedPoints**, **feedback** e **publishedFeedback**.</span><span class="sxs-lookup"><span data-stu-id="a3d55-129">All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**.</span></span> <span data-ttu-id="a3d55-130">Não atualiza a propriedade "published"; é para uso interno.</span><span class="sxs-lookup"><span data-stu-id="a3d55-130">Do not update the "published" property; it is for internal use.</span></span> <span data-ttu-id="a3d55-131">Por exemplo, para atribuir pontos a um **educationPointsOutcome**, atualize a propriedade **Points** , mas não atualize o **publishedPoints**.</span><span class="sxs-lookup"><span data-stu-id="a3d55-131">For example, to assign points to an **educationPointsOutcome**, update the **points** property, but do not update **publishedPoints**.</span></span>
 
-## <a name="response"></a><span data-ttu-id="864b8-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="864b8-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a3d55-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="a3d55-132">Response</span></span>
 
-<span data-ttu-id="864b8-133">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationOutcome](../resources/educationoutcome.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="864b8-133">If successful, this method returns a `200 OK` response code and an updated [educationOutcome](../resources/educationoutcome.md) object in the response body.</span></span>
+<span data-ttu-id="a3d55-133">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationOutcome](../resources/educationoutcome.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a3d55-133">If successful, this method returns a `200 OK` response code and an updated [educationOutcome](../resources/educationoutcome.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="864b8-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="864b8-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a3d55-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a3d55-134">Examples</span></span>
 
-### <a name="example-1-update-a-feedback-outcome"></a><span data-ttu-id="864b8-135">Exemplo 1: atualizar um resultado de comentários</span><span class="sxs-lookup"><span data-stu-id="864b8-135">Example 1: Update a Feedback Outcome</span></span>
+### <a name="example-1-update-a-feedback-outcome"></a><span data-ttu-id="a3d55-135">Exemplo 1: atualizar um resultado de comentários</span><span class="sxs-lookup"><span data-stu-id="a3d55-135">Example 1: Update a Feedback Outcome</span></span>
 
-#### <a name="request"></a><span data-ttu-id="864b8-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="864b8-136">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a3d55-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a3d55-136">Request</span></span>
 
-<span data-ttu-id="864b8-137">Veja a seguir um exemplo da solicitação para atualizar um resultado de comentários.</span><span class="sxs-lookup"><span data-stu-id="864b8-137">The following is an example of the request for updating a feedback outcome.</span></span>
+<span data-ttu-id="a3d55-137">Veja a seguir um exemplo da solicitação para atualizar um resultado de comentários.</span><span class="sxs-lookup"><span data-stu-id="a3d55-137">The following is an example of the request for updating a feedback outcome.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="864b8-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="864b8-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a3d55-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="a3d55-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationfeedbackoutcome"
@@ -84,26 +84,26 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="864b8-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="864b8-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a3d55-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a3d55-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationfeedbackoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="864b8-140">C#</span><span class="sxs-lookup"><span data-stu-id="864b8-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a3d55-140">C#</span><span class="sxs-lookup"><span data-stu-id="a3d55-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationfeedbackoutcome-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="864b8-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="864b8-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a3d55-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a3d55-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationfeedbackoutcome-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="864b8-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="864b8-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a3d55-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="a3d55-142">Response</span></span>
 
-<span data-ttu-id="864b8-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="864b8-143">The following is an example of the response.</span></span>
+<span data-ttu-id="a3d55-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a3d55-143">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="864b8-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="864b8-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a3d55-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a3d55-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -138,13 +138,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-points-outcome"></a><span data-ttu-id="864b8-146">Exemplo 2: atualizar um resultado de pontos</span><span class="sxs-lookup"><span data-stu-id="864b8-146">Example 2: Update a Points Outcome</span></span>
+### <a name="example-2-update-a-points-outcome"></a><span data-ttu-id="a3d55-146">Exemplo 2: atualizar um resultado de pontos</span><span class="sxs-lookup"><span data-stu-id="a3d55-146">Example 2: Update a Points Outcome</span></span>
 
-#### <a name="request"></a><span data-ttu-id="864b8-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="864b8-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a3d55-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a3d55-147">Request</span></span>
 
-<span data-ttu-id="864b8-148">Veja a seguir um exemplo da solicitação para atualizar um resultado de pontos.</span><span class="sxs-lookup"><span data-stu-id="864b8-148">The following is an example of the request for updating a points outcome.</span></span>
+<span data-ttu-id="a3d55-148">Veja a seguir um exemplo da solicitação para atualizar um resultado de pontos.</span><span class="sxs-lookup"><span data-stu-id="a3d55-148">The following is an example of the request for updating a points outcome.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="864b8-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="864b8-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a3d55-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="a3d55-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationpointsoutcome"
@@ -162,26 +162,26 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="864b8-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="864b8-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a3d55-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a3d55-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationpointsoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="864b8-151">C#</span><span class="sxs-lookup"><span data-stu-id="864b8-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a3d55-151">C#</span><span class="sxs-lookup"><span data-stu-id="a3d55-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationpointsoutcome-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="864b8-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="864b8-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a3d55-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a3d55-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationpointsoutcome-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="864b8-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="864b8-153">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a3d55-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="a3d55-153">Response</span></span>
 
-<span data-ttu-id="864b8-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="864b8-154">The following is an example of the response.</span></span>
+<span data-ttu-id="a3d55-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a3d55-154">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="864b8-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="864b8-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a3d55-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a3d55-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -213,13 +213,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-update-a-rubric-outcome"></a><span data-ttu-id="864b8-157">Exemplo 3: atualizar um resultado de amostra rubric</span><span class="sxs-lookup"><span data-stu-id="864b8-157">Example 3: Update a Rubric Outcome</span></span>
+### <a name="example-3-update-a-rubric-outcome"></a><span data-ttu-id="a3d55-157">Exemplo 3: atualizar um resultado de amostra rubric</span><span class="sxs-lookup"><span data-stu-id="a3d55-157">Example 3: Update a Rubric Outcome</span></span>
 
-#### <a name="request"></a><span data-ttu-id="864b8-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="864b8-158">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a3d55-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a3d55-158">Request</span></span>
 
-<span data-ttu-id="864b8-159">Veja a seguir um exemplo da solicitação para atualizar um resultado amostra rubric.</span><span class="sxs-lookup"><span data-stu-id="864b8-159">The following is an example of the request for updating a rubric outcome.</span></span>
+<span data-ttu-id="a3d55-159">Veja a seguir um exemplo da solicitação para atualizar um resultado amostra rubric.</span><span class="sxs-lookup"><span data-stu-id="a3d55-159">The following is an example of the request for updating a rubric outcome.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="864b8-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="864b8-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a3d55-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="a3d55-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationoutcome"
@@ -259,26 +259,26 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="864b8-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="864b8-161">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a3d55-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a3d55-161">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="864b8-162">C#</span><span class="sxs-lookup"><span data-stu-id="864b8-162">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a3d55-162">C#</span><span class="sxs-lookup"><span data-stu-id="a3d55-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationoutcome-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="864b8-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="864b8-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a3d55-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a3d55-163">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationoutcome-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="864b8-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="864b8-164">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a3d55-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="a3d55-164">Response</span></span>
 
-<span data-ttu-id="864b8-165">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="864b8-165">The following is an example of the response.</span></span>
+<span data-ttu-id="a3d55-165">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a3d55-165">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="864b8-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="864b8-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a3d55-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a3d55-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -334,3 +334,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
