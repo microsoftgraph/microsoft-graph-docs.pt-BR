@@ -5,34 +5,34 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ecc539254a4d5b909b6a912a7b902c926d447c5d
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 6256b1f9c5e13f7a974d224b37f8479338e074bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565836"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088066"
 ---
-# <a name="update-profilecardproperty"></a><span data-ttu-id="61975-103">Atualizar profileCardProperty</span><span class="sxs-lookup"><span data-stu-id="61975-103">Update profileCardProperty</span></span>
+# <a name="update-profilecardproperty"></a><span data-ttu-id="e41a2-103">Atualizar profileCardProperty</span><span class="sxs-lookup"><span data-stu-id="e41a2-103">Update profileCardProperty</span></span>
 
-<span data-ttu-id="61975-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="61975-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e41a2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e41a2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="61975-105">Atualizar as propriedades de um objeto [profileCardProperty](../resources/profilecardproperty.md) , identificadas por sua propriedade **directoryPropertyName** .</span><span class="sxs-lookup"><span data-stu-id="61975-105">Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.</span></span>
+<span data-ttu-id="e41a2-105">Atualizar as propriedades de um objeto [profileCardProperty](../resources/profilecardproperty.md) , identificadas por sua propriedade **directoryPropertyName** .</span><span class="sxs-lookup"><span data-stu-id="e41a2-105">Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="61975-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="61975-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e41a2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e41a2-106">Permissions</span></span>
 
-<span data-ttu-id="61975-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="61975-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e41a2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e41a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="61975-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="61975-109">Permission type</span></span>                        | <span data-ttu-id="61975-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="61975-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e41a2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e41a2-109">Permission type</span></span>                        | <span data-ttu-id="e41a2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e41a2-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="61975-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="61975-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="61975-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="61975-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="61975-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="61975-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="61975-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="61975-114">Not supported.</span></span>                              |
-| <span data-ttu-id="61975-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="61975-115">Application</span></span>                            | <span data-ttu-id="61975-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="61975-116">Not supported.</span></span>                              |
+| <span data-ttu-id="e41a2-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e41a2-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="e41a2-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="e41a2-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="e41a2-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e41a2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e41a2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e41a2-114">Not supported.</span></span>                              |
+| <span data-ttu-id="e41a2-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e41a2-115">Application</span></span>                            | <span data-ttu-id="e41a2-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e41a2-116">Not supported.</span></span>                              |
 
-><span data-ttu-id="61975-117">**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.</span><span class="sxs-lookup"><span data-stu-id="61975-117">**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.</span></span>
+><span data-ttu-id="e41a2-117">**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.</span><span class="sxs-lookup"><span data-stu-id="e41a2-117">**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="61975-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="61975-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e41a2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e41a2-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,33 +40,33 @@ ms.locfileid: "46565836"
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="61975-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="61975-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e41a2-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e41a2-119">Request headers</span></span>
 
-| <span data-ttu-id="61975-120">Nome</span><span class="sxs-lookup"><span data-stu-id="61975-120">Name</span></span>       | <span data-ttu-id="61975-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="61975-121">Description</span></span>|
+| <span data-ttu-id="e41a2-120">Nome</span><span class="sxs-lookup"><span data-stu-id="e41a2-120">Name</span></span>       | <span data-ttu-id="e41a2-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="e41a2-121">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="61975-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="61975-122">Authorization</span></span> | <span data-ttu-id="61975-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="61975-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="61975-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="61975-125">Content-Type</span></span>  | <span data-ttu-id="61975-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="61975-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="e41a2-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="e41a2-122">Authorization</span></span> | <span data-ttu-id="e41a2-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e41a2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e41a2-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e41a2-125">Content-Type</span></span>  | <span data-ttu-id="e41a2-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e41a2-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="61975-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="61975-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e41a2-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e41a2-128">Request body</span></span>
 
-<span data-ttu-id="61975-129">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="61975-129">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="61975-130">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="61975-130">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="61975-131">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="61975-131">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="e41a2-129">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="e41a2-129">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="e41a2-130">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="e41a2-130">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="e41a2-131">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="e41a2-131">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="61975-132">Propriedade</span><span class="sxs-lookup"><span data-stu-id="61975-132">Property</span></span>     | <span data-ttu-id="61975-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="61975-133">Type</span></span>        | <span data-ttu-id="61975-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="61975-134">Description</span></span> |
+| <span data-ttu-id="e41a2-132">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e41a2-132">Property</span></span>     | <span data-ttu-id="e41a2-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="e41a2-133">Type</span></span>        | <span data-ttu-id="e41a2-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="e41a2-134">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="61975-135">anotações</span><span class="sxs-lookup"><span data-stu-id="61975-135">annotations</span></span>|<span data-ttu-id="61975-136">coleção profileCardAnnotation</span><span class="sxs-lookup"><span data-stu-id="61975-136">profileCardAnnotation collection</span></span>| <span data-ttu-id="61975-137">Contém quaisquer rótulos alternativos ou localizados que um administrador optou por especificar.</span><span class="sxs-lookup"><span data-stu-id="61975-137">Contains any alternative or localized labels an administrator has chosen to specify.</span></span>|
-|<span data-ttu-id="61975-138">directoryPropertyName</span><span class="sxs-lookup"><span data-stu-id="61975-138">directoryPropertyName</span></span>|<span data-ttu-id="61975-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="61975-139">String</span></span>|<span data-ttu-id="61975-140">Contém o nome da propriedade de diretório que se destina à superfície no cartão de perfil.</span><span class="sxs-lookup"><span data-stu-id="61975-140">Contains the name of the directory property which is intended to surface on the profile card.</span></span> |
+|<span data-ttu-id="e41a2-135">anotações</span><span class="sxs-lookup"><span data-stu-id="e41a2-135">annotations</span></span>|<span data-ttu-id="e41a2-136">coleção profileCardAnnotation</span><span class="sxs-lookup"><span data-stu-id="e41a2-136">profileCardAnnotation collection</span></span>| <span data-ttu-id="e41a2-137">Contém quaisquer rótulos alternativos ou localizados que um administrador optou por especificar.</span><span class="sxs-lookup"><span data-stu-id="e41a2-137">Contains any alternative or localized labels an administrator has chosen to specify.</span></span>|
+|<span data-ttu-id="e41a2-138">directoryPropertyName</span><span class="sxs-lookup"><span data-stu-id="e41a2-138">directoryPropertyName</span></span>|<span data-ttu-id="e41a2-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e41a2-139">String</span></span>|<span data-ttu-id="e41a2-140">Contém o nome da propriedade de diretório que se destina à superfície no cartão de perfil.</span><span class="sxs-lookup"><span data-stu-id="e41a2-140">Contains the name of the directory property which is intended to surface on the profile card.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="61975-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="61975-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e41a2-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="e41a2-141">Response</span></span>
 
-<span data-ttu-id="61975-142">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [profileCardProperty](../resources/profilecardproperty.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="61975-142">If successful, this method returns a `200 OK` response code and an updated [profileCardProperty](../resources/profilecardproperty.md) object in the response body.</span></span>
+<span data-ttu-id="e41a2-142">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [profileCardProperty](../resources/profilecardproperty.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e41a2-142">If successful, this method returns a `200 OK` response code and an updated [profileCardProperty](../resources/profilecardproperty.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="61975-143">Exemplos</span><span class="sxs-lookup"><span data-stu-id="61975-143">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e41a2-143">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e41a2-143">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="61975-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="61975-144">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e41a2-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e41a2-144">Request</span></span>
 
-<span data-ttu-id="61975-145">O exemplo a seguir adiciona um rótulo localizado "Kostnads Senter" para a localidade "no-NB".</span><span class="sxs-lookup"><span data-stu-id="61975-145">The following example adds a localized label "Kostnads Senter" for the locale "no-NB".</span></span>
+<span data-ttu-id="e41a2-145">O exemplo a seguir adiciona um rótulo localizado "Kostnads Senter" para a localidade "no-NB".</span><span class="sxs-lookup"><span data-stu-id="e41a2-145">The following example adds a localized label "Kostnads Senter" for the locale "no-NB".</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="61975-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="61975-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e41a2-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="e41a2-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_profilecardproperty"
@@ -89,26 +89,26 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="61975-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="61975-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e41a2-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e41a2-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilecardproperty-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="61975-148">C#</span><span class="sxs-lookup"><span data-stu-id="61975-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e41a2-148">C#</span><span class="sxs-lookup"><span data-stu-id="e41a2-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-profilecardproperty-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="61975-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="61975-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e41a2-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e41a2-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-profilecardproperty-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="61975-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="61975-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e41a2-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="e41a2-150">Response</span></span>
 
-<span data-ttu-id="61975-151">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="61975-151">The following is an example of the response.</span></span>
+<span data-ttu-id="e41a2-151">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="e41a2-151">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="61975-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="61975-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e41a2-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e41a2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -149,3 +149,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
