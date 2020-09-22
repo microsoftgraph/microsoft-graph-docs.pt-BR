@@ -3,14 +3,14 @@ title: Atualizar deviceCompliancePolicyDeviceStateSummary
 description: Atualizar as propriedades de um objeto deviceCompliancePolicyDeviceStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65193c1bfd77a947f707a19b976a62700a35d2f4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 33b02b2e62453e7abab6d8d5ace1cfd30f318dec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399946"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083474"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Atualizar deviceCompliancePolicyDeviceStateSummary
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Quantidade de dispositivos que estão no período de cortesia|
 |configManagerCount|Int32|Quantidade de dispositivos que estão em conformidade gerenciada pelo System Center Configuration Manager|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -111,6 +111,9 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

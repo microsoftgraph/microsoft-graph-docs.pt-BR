@@ -3,14 +3,14 @@ title: Tipo de recurso iosLobAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel da iOS LOB a um grupo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe57b72e2e656d3653cfb2c2d7b2f62361c29b5e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8168e8c9a5626d305594d5f302ec99e59de89614
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407589"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084237"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Tipo de recurso iosLobAppAssignmentSettings
 
@@ -29,7 +29,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-shared-mobileappassig
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |vpnConfigurationId|Cadeia de caracteres|A identificação de configuração da VPN a aplicar neste aplicativo.|
-|**Apps**|
+|**Aplicativos**|
 |uninstallOnDeviceRemoval|Boolean|Se o aplicativo será ou não desinstalado quando o dispositivo for removido do Intune.|
 
 ## <a name="relationships"></a>Relações
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   "uninstallOnDeviceRemoval": true
 }
 ```
+
+
+
 
 
 

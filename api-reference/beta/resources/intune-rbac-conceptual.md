@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 57fc5084c2c57570f12dd8d56887a5b270d287d0
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a95c71613755cd9853cca4a56d4cd36caf0d7df7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179169"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084419"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Controle de acesso baseado em função no Microsoft Intune
 
@@ -36,3 +36,5 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar o controle de 
 - [Permissão de função](intune-rbac-rolepermission.md)
 - [Marca de escopo de função](intune-rbac-rolescopetag.md)
 - [Atribuição automática de marca de escopo de função](intune-rbac-rolescopetagautoassignment.md)
+
+

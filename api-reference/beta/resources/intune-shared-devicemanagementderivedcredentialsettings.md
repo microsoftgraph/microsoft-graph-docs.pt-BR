@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementDerivedCredentialSettings
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f7456cbf22a17606dd07015ac81b0a72a041660
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 78808c25c86683fd7a9fb6e8e7466ac4ddbaa7b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084335"
 ---
 # <a name="devicemanagementderivedcredentialsettings-resource-type"></a>tipo de recurso deviceManagementDerivedCredentialSettings
 
@@ -39,7 +39,7 @@ O recurso deviceManagementDerivedCredentialSettings representa um contêiner cuj
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a credencial derivada|
+|id|Cadeia de caracteres|Identificador exclusivo para a credencial derivada|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -58,6 +58,9 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

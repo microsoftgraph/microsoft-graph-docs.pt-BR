@@ -3,14 +3,14 @@ title: tipo de enumeração devicePlatformType
 description: Tipos de plataforma suportados.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7d285bcd0c9c332067789f7cdfc9b619cece7605
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29a6a4723d91c78be7bb6839ad52846fce45c10d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407877"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084321"
 ---
 # <a name="deviceplatformtype-enum-type"></a>tipo de enumeração devicePlatformType
 
@@ -26,14 +26,17 @@ Tipos de plataforma suportados.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Android|,0|Android.|
-|androidForWork|1|AndroidForWork.|
-|iOS|duas|emiti.|
+|androidForWork|1 |AndroidForWork.|
+|iOS|2 |emiti.|
 |macOS|3D|MacOS.|
 |windowsPhone81|4 |Windowsphonee 8,1.|
 |windows81AndLater|5 |Windows 8,1 e posterior|
 |windows10AndLater|6 |Windows 10 e posterior.|
 |androidWorkProfile|7 |Perfil de trabalho do Android.|
 |desconhecido|8 |Unknown.|
+
+
+
 
 
 

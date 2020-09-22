@@ -3,14 +3,14 @@ title: tipo de enumeração windowsDefenderTamperProtectionOptions
 description: Opções de configuração do defender TamperProtection
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4fc256462fe0d4e26e102a25ff4dffdc7cd07da3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d7c23daf2e59283b5b66eff07d90ebc8c558e2f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463468"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084468"
 ---
 # <a name="windowsdefendertamperprotectionoptions-enum-type"></a>tipo de enumeração windowsDefenderTamperProtectionOptions
 
@@ -26,8 +26,11 @@ Opções de configuração do defender TamperProtection
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|possibilite|1|Habilitar a proteção contra violação do Windows Defender|
-|desabilitar|duas|Desabilitar a proteção de violação do Windows Defender|
+|possibilite|1 |Habilitar a proteção contra violação do Windows Defender|
+|desabilitar|2 |Desabilitar a proteção de violação do Windows Defender|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração enrollmentAvailabilityOptions
 description: Opções disponíveis para a personalização do fluxo de registro
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7be587e0e73a717929e8b63a07aa79551023b23a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 10204def9d2952a092f6453f1a15c9be2d745366
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407760"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084300"
 ---
 # <a name="enrollmentavailabilityoptions-enum-type"></a>tipo de enumeração enrollmentAvailabilityOptions
 
@@ -26,8 +26,11 @@ Opções disponíveis para a personalização do fluxo de registro
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |availableWithPrompts|,0|O fluxo de registro do dispositivo é mostrado ao usuário final com prompts de registro orientado|
-|availableWithoutPrompts|1|O fluxo de registro do dispositivo está disponível para o usuário final sem prompts de registro guiado|
-|indisponível|duas|O fluxo de registro do dispositivo não está disponível para o enduser|
+|availableWithoutPrompts|1 |O fluxo de registro do dispositivo está disponível para o usuário final sem prompts de registro guiado|
+|indisponível|2 |O fluxo de registro do dispositivo não está disponível para o enduser|
+
+
+
 
 
 

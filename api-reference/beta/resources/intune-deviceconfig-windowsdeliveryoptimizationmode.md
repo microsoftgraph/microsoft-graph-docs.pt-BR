@@ -3,14 +3,14 @@ title: tipo de enumeração windowsDeliveryOptimizationMode
 description: Modo de otimização de entrega para distribuição de mesmo nível
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 71bc7e364ca18fefe9ebc5fa5ed75d5dac485a01
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e3b32f3a6480b236297a7d0217c9aed8eefd5c44
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411909"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084454"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeração windowsDeliveryOptimizationMode
 
@@ -26,12 +26,15 @@ Modo de otimização de entrega para distribuição de mesmo nível
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Permite que o usuário defina.|
-|httpOnly|1|Somente HTTP, sem emparelhamento|
-|httpWithPeeringNat|duas|Padrão de so – http combinado com emparelhamento atrás do mesmo conversor de endereço de rede|
+|httpOnly|1 |Somente HTTP, sem emparelhamento|
+|httpWithPeeringNat|2 |Padrão de so – http combinado com emparelhamento atrás do mesmo conversor de endereço de rede|
 |httpWithPeeringPrivateGroup|3D|HTTP combinado com emparelhamento em um grupo privado|
 |httpWithInternetPeering|4 |HTTP combinado com emparelhamento da Internet|
 |simpleDownload|99|Modo de download simples sem emparelhamento|
 |bypassmode|100|Modo bypass. Não usar otimização de entrega e usar BITS em vez disso|
+
+
+
 
 
 

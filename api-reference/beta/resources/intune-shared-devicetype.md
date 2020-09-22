@@ -3,14 +3,14 @@ title: tipo de enumeração DeviceType
 description: Tipo de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f84763fffa3146174845d1074934eb2b40a18c5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 71cc9a02eb0d538995a2f7e3aee39cbbe63a7304
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084314"
 ---
 # <a name="devicetype-enum-type"></a>tipo de enumeração DeviceType
 
@@ -27,7 +27,7 @@ Tipo de dispositivo.
 |:---|:---|:---|
 |placa|,0|Placa.|
 |windowsRT|1 |WindowsRT.|
-|winMO6|duas|WinMO6.|
+|winMO6|2 |WinMO6.|
 |Nokia|3D|Nokia.|
 |Windowsphonee|4 |Windows Phone.|
 |mac|5 |MacOS.|
@@ -36,7 +36,7 @@ Tipo de dispositivo.
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |iPodTouch.|
-|Android|11|Android.|
+|Android|11 |Android.|
 |iSocConsumer|12 |iSocConsumer.|
 |UNIX|13 |UNIX.|
 |macMDM|14 |Cliente Mac OS X usando o agente MDM interno.|
@@ -49,6 +49,9 @@ Tipo de dispositivo.
 |rim|100|Rim.|
 |Palm|101|Palm.|
 |desconhecido|255|Representa que o tipo de dispositivo é desconhecido.|
+
+
+
 
 
 
