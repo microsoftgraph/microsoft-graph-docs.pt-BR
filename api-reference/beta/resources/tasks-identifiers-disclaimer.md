@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: TarkanSevilmis
-ms.openlocfilehash: 9ff7b894c8414e2dc7f3dd9d425b0027d0ae13f5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 75bf46a9ecebb226a1099fe30f3367b08915b867
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985654"
 ---
 # <a name="identifiers-in-tasks"></a>Identificadores nas tarefas
 
@@ -25,3 +25,5 @@ Os identificadores para objetos nas tarefas são valores de cadeia de caracteres
 - O aplicativo de chamada tentou gerar um valor de identificador para um objeto nas tarefas. Os identificadores gerados pelo cliente não são aceitos. Todos os identificadores são gerados pelo serviço na criação de objetos.
 
 Essa validação **não é um recurso de segurança**. O objetivo é apenas informar aplicativos sobre problemas relacionados ao identificador comum durante o desenvolvimento do aplicativo, o que, de outra forma, é difícil de identificar.
+
+

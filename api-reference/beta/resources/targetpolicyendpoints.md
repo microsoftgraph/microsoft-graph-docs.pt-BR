@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: resourcePageType
 author: merzink
-ms.openlocfilehash: 92ff6d0748e24fd58154f596188f25c51bdc6403
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: daac7a8424666d3974512c1cc1b17ec8e6878d7e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519999"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985661"
 ---
 # <a name="targetpolicyendpoints-resource-type"></a>tipo de recurso targetPolicyEndpoints
 
@@ -25,7 +25,7 @@ Representa as plataformas que podem ser direcionadas para receber notificações
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|platformTypes|String collection|Use para filtrar a distribuição de notificação para uma plataforma ou plataformas específicas. Os valores válidos `Windows`são `iOS`, `Android` e `WebPush`. Por padrão, todos os tipos de ponto de extremidade de envio (Windows, iOS, Android e webpush) estão habilitados. |
+|platformTypes|Coleção de cadeias de caracteres|Use para filtrar a distribuição de notificação para uma plataforma ou plataformas específicas. Os valores válidos `Windows` são `iOS` , `Android` e `WebPush` . Por padrão, todos os tipos de ponto de extremidade de envio (Windows, iOS, Android e webpush) estão habilitados. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -55,3 +55,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

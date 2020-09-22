@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 93cf528b1fec7f857057ea469ae5c313dee6c07c
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: a73f85b93c346dbf75d78593b74d08e1de35b925
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896424"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986210"
 ---
 # <a name="list-programcontroltypes"></a>Listar programControlTypes
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | ProgramControl. Read. All, ProgramControl. ReadWrite. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application                            | ProgramControl. Read. All ', ProgramControl. ReadWrite. All  |
+|Aplicativo                            | ProgramControl. Read. All ', ProgramControl. ReadWrite. All  |
 
 O usuário conectado também deve estar em uma função de diretório que permite que ele leia um programa.
 
@@ -126,3 +126,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

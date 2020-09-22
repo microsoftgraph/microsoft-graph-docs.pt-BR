@@ -3,14 +3,14 @@ title: Excluir windows10CompliancePolicy
 description: Exclui windows10CompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e26c049358775cf699dda1e468bd1283dff9d307
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a251c21884773fd46db291ccc06b2a247b06948a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985178"
 ---
 # <a name="delete-windows10compliancepolicy"></a>Excluir windows10CompliancePolicy
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

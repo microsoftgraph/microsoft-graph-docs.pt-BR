@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 750bd79dad9758f3ffe883fd87713c42c29c0917
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d314fcdd2a62be5aea05bed3b2a9e1881f95c3d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520918"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985782"
 ---
 # <a name="searchhitscontainer-resource-type"></a>tipo de recurso searchHitsContainer
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,3 +60,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: eebae02a4d6e1b238f9255312f036f46aae5af9a
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: db86b22f61b7293683a775460cb3678af7ca4f5a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985801"
 ---
 # <a name="schedulinggroup-resource-type"></a>tipo de recurso schedulingGroup
 
@@ -77,3 +77,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

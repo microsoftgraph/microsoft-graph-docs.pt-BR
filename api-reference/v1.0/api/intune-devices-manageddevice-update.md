@@ -3,14 +3,14 @@ title: Atualizar managedDevice
 description: Atualizar as propriedades de um objeto managedDevice.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55e63802783035e7a418ea6dd3041240685c228c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f3fec9d6a07e372e20fd341599c2d373fac449b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474482"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985150"
 ---
 # <a name="update-manageddevice"></a>Atualizar managedDevice
 
@@ -60,15 +60,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |deviceActionResults|Coleção [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Lista de objetos ComplexType deviceActionResult.|
 |enrolledDateTime|DateTimeOffset|Hora de registro do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|A data e a hora da última vez em que o dispositivo concluiu uma sincronização bem-sucedida com o Intune.|
-|operatingSystem|Cadeia de caracteres|Sistema operacional do dispositivo. Windows, iOS, etc.|
+|operatingSystem|String|Sistema operacional do dispositivo. Windows, iOS, etc.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Estado de conformidade do dispositivo. Os valores possíveis são: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|se o dispositivo está desbloqueado ou modificado.|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |osVersion|String|A versão do sistema operacional do dispositivo.|
-|easActivated|Booliano|Se o dispositivo está ativado para Exchange ActiveSync.|
+|easActivated|Boolean|Se o dispositivo está ativado para Exchange ActiveSync.|
 |easDeviceId|String|ID do Exchange ActiveSync do dispositivo.|
 |easActivationDateTime|DateTimeOffset|Hora de ativação do Exchange ActiveSync do dispositivo.|
-|azureADRegistered|Booliano|Se o dispositivo é registrado no Azure Active Directory.|
+|azureADRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Tipo de registro do dispositivo. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |activationLockBypassCode|String|Código que permite que o Bloqueio de Ativação em um dispositivo seja ignorado.|
 |emailAddress|String|Email(s) do usuário associado ao dispositivo|
@@ -87,10 +87,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |fabricante|String|Fabricante do dispositivo|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
-|serialNumber|Cadeia de caracteres|SerialNumber|
+|serialNumber|String|SerialNumber|
 |phoneNumber|String|Número de telefone do dispositivo|
 |androidSecurityPatchLevel|String|Nível do patch de segurança Android|
-|userDisplayName|String|Nome de exibição do usuário|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Recursos habilitados pelo cliente do ConfigrMgr|
 |wiFiMacAddress|String|MAC Wi-Fi|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|O estado do atestado de integridade do dispositivo.|
@@ -324,6 +324,9 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
+
+
+
 
 
 

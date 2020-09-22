@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9d26dd248a10ba809e7c5a82c0abba9c57c7a1a2
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 405b6068d85349d8f17bb2491e4aace8fa3b2d08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986284"
 ---
 # <a name="get-personinterest"></a>Obter personInterest
 
@@ -132,3 +132,5 @@ Content-type: application/json
   "collaborationTags": null
 }
 ```
+
+

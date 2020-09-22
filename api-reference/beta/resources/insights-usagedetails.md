@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: edddf1290073972a8950729e2c9694648ffe0c0a
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: 553de0e8df9b3853024ffc35cc61bf6d727a2c9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44227000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986062"
 ---
 # <a name="usagedetails-resource-type"></a>tipo de recurso usageDetails
 
@@ -46,3 +46,5 @@ Veja a seguir uma representação JSON do recurso
 | -------------         |---------------| -------------|
 | lastAccessedDateTime                  | DateTimeOffset        | A data e a hora em que o recurso foi acessado pela última vez pelo usuário. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`. Somente leitura.                      |
 | lastModifiedDateTime              | DateTimeOffset        | A data e a hora em que o recurso foi modificado pela última vez pelo usuário. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`. Somente leitura.       |
+
+

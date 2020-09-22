@@ -3,14 +3,14 @@ title: Ação updateDeviceProfileAssignment
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bb45b3efb0b7b1a8da88d9ac8a148f006ba00e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 77d4f0b13157bd99b70a6430c19bbe49fa840853
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451255"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986578"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>Ação updateDeviceProfileAssignment
 
@@ -82,6 +82,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

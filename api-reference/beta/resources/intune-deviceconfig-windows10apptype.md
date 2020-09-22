@@ -3,14 +3,14 @@ title: tipo de enumeração windows10AppType
 description: Tipo de aplicativo do Windows 10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 834fb563f9637d62d0950cc962e52205c24b2dc9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 85f5e4194570c9ff1370ee6190cf669c83440106
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985934"
 ---
 # <a name="windows10apptype-enum-type"></a>tipo de enumeração windows10AppType
 
@@ -26,7 +26,10 @@ Tipo de aplicativo do Windows 10.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |placa|,0|Placa.|
-|UTC|1|UTC.|
+|UTC|1 |UTC.|
+
+
+
 
 
 

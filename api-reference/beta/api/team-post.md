@@ -1,16 +1,16 @@
 ---
-title: Criar uma equipe
-description: Criar nova equipe.
+title: Criar equipe
+description: Criar uma nova equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ccdfc5ee542a8e819ecbf4d30450dcc8e2c19991
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: fdae19af982d8e8c73db968123361fa3700d684c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986165"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -29,6 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Aplicativo|Teamwork.Migrate.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,7 +44,7 @@ POST /teams
 | Cabeçalho        | Valor                     |
 | :------------ | :------------------------ |
 | Autorização | {token} de portador. Obrigatório. |
-| Content-Type  | application/json          |
+| Content-Type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -555,3 +556,5 @@ Content-Length: 0
 - [Introdução aos modelos de Equipes de varejo](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Introdução aos modelos de Equipes médicas](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
+
+

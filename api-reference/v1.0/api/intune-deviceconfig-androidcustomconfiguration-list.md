@@ -3,14 +3,14 @@ title: Listar androidCustomConfigurations
 description: Listar propriedades e relações dos objetos androidCustomConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61eb3e83ce184e22b7dac7bb3bb8af3c8bed6b58
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8b39adce23e9bdd93aff6ddfc48cdfd40886d0a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442451"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985528"
 ---
 # <a name="list-androidcustomconfigurations"></a>Listar androidCustomConfigurations
 
@@ -88,6 +88,9 @@ Content-Length: 671
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar importedWindowsAutopilotDeviceIdentity
 description: Criar um novo objeto importedWindowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef21ddb7f3d392bd833f7396a8c29b9cd92dbe1d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5df1c70c2583f76ec87d6ad5c0e7bc55b3df79f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452592"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986536"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Criar importedWindowsAutopilotDeviceIdentity
 
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar imported
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
-|orderIdentifier|String|ID do pedido do dispositivo do Windows AutoPilot. – Substituir|
+|orderIdentifier|Cadeia de caracteres|ID do pedido do dispositivo do Windows AutoPilot. – Substituir|
 |groupTag|String|Marca de grupo do dispositivo do Windows AutoPilot.|
-|serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
+|serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |importid|String|A ID de importação do dispositivo do Windows AutoPilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
@@ -122,6 +122,9 @@ Content-Length: 728
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
+
+
+
 
 
 

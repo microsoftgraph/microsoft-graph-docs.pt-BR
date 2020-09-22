@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5067df26f0b1c1e6b77d1c3d87d4c73bb9e45208
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d794391c4cf8043ab4eaeafcfa21958d93e3412a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985682"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>tipo de recurso synchronizationtemplate
 
@@ -22,7 +22,7 @@ Fornece configurações de sincronização pré-configuradas para um aplicativo 
 
 Você pode fornecer vários modelos para um aplicativo e designar um modelo padrão. Se vários modelos estiverem disponíveis para o aplicativo em que você está interessado, procure orientação específica do aplicativo para determinar qual deles atende melhor às suas necessidades.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método        | Tipo de retorno               | Descrição                  |
 |:--------------|:--------------------------|:-----------------------------|
@@ -37,12 +37,12 @@ Você pode fornecer vários modelos para um aplicativo e designar um modelo padr
 
 | Propriedade      | Tipo                      | Descrição                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |Cadeia de caracteres                     |Identificador de modelo exclusivo.|
+|id             |String                     |Identificador de modelo exclusivo.|
 |ApplicationId  |Cadeia de caracteres                     |Identificador do aplicativo ao qual este modelo pertence.|
-|Padrão.        |Boolean                    |`true`Se este modelo é recomendado para ser o padrão para o aplicativo.|
+|Padrão.        |Boolean                    |`true` Se este modelo é recomendado para ser o padrão para o aplicativo.|
 |description    |String                     |Descrição do modelo.|
-|detectáveis   |Cadeia de Caracteres                     |`true`Se esse modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
-|factoryTag     |Cadeia de Caracteres                     |Uma das marcas de fábrica conhecidas suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização que implementação usar ao processar trabalhos com base nesse modelo.|
+|detectáveis   |String                     |`true` Se esse modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
+|factoryTag     |String                     |Uma das marcas de fábrica conhecidas suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização que implementação usar ao processar trabalhos com base nesse modelo.|
 |los       |coleção metadataEntry   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
 
 ## <a name="relationships"></a>Relações
@@ -89,3 +89,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

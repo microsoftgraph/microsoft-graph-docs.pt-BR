@@ -3,14 +3,14 @@ title: Criar deviceHealthScriptDeviceState
 description: Criar um novo objeto deviceHealthScriptDeviceState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff64deb4d0a1a27787f4b8a345c18e4e2ff3c073
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f331069b5fa833ec6b7df3dd5b92e4149b7bfa8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986627"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>Criar deviceHealthScriptDeviceState
 
@@ -68,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceHe
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -116,6 +116,9 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
+
+
+
 
 
 

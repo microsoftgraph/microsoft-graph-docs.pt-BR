@@ -1,22 +1,22 @@
 ---
 title: Usar a API de Pesquisa da Microsoft para consultar dados
-description: Usando a API de pesquisa, os aplicativos podem pesquisar dados do Office 365 no contexto do usuário autenticado
+description: Utilizando a API de pesquisa, os aplicativos podem pesquisar os dados do Microsoft 365 no contexto do usuário autenticado
 localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: db10ddaf3e1cb7984ddfe16854f60c3d68dbb7ae
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: e77c0170487b0762538d98376921565857c9b3c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985780"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode usar a API de Pesquisa da Microsoft para consultar dados do Office 365 em seus aplicativos.
+Você pode utilizar a API de Pesquisa da Microsoft para consultar os dados do Microsoft 365 nos seus aplicativos.
 
 As solicitações de pesquisa são executadas no contexto do usuário conectado, identificado usando um [token de acesso com permissões delegadas](/graph/auth-v2-user).
 
@@ -117,3 +117,8 @@ A API de pesquisa tem as seguintes limitações:
   - Classificar resultados dos tipos **message** ou **event** por data.
 
   - Classificar resultados dos tipos **driveItem**, **externalfile** ou **externalItem** por relevância.
+
+## <a name="whats-new"></a>O que há de novo
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+
+

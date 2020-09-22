@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 7f28245c22916575d505b3e9f8db65070cbbbf5e
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 8b9289807778c1a44940d8e8eb0d9163ed12f006
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985857"
 ---
 # <a name="printserviceendpoint-resource-type"></a>tipo de recurso de fileserviceendpoint
 
@@ -29,8 +29,8 @@ Representa as informações de identificação e URI de uma instância de servi�
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|Um nome de exibição legível para o ponto de extremidade.|
-|nome|String|Um nome exclusivo que identifica o serviço que o ponto de extremidade fornece. Os valores possíveis são `discovery` : (serviço de descoberta `notification` ), (serviço de `ipp` notificação), (serviço IPP `registration` ) e (serviço de registro). Somente leitura.|
+|displayName|String|Um nome de exibição legível para o ponto de extremidade.|
+|nome|String|Um nome exclusivo que identifica o serviço que o ponto de extremidade fornece. Os valores possíveis são: `discovery` (serviço de descoberta), `notification` (serviço de notificação), `ipp` (serviço IPP) e `registration` (serviço de registro). Somente leitura.|
 |URI|String|O URI que pode ser usado para acessar o serviço.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -62,3 +62,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: harini84
-ms.openlocfilehash: 6a7122ac4842ce4d2809837498874c7aabd9d942
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d503ec6241bd73492a5790f3f0f7b76a44b6245e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811375"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985815"
 ---
 # <a name="scheduleinformation-resource-type"></a>tipo de recurso scheduleInformation
 
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

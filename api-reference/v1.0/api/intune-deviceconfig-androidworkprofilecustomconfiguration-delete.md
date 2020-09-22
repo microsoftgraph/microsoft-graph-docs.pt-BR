@@ -3,14 +3,14 @@ title: Excluir androidWorkProfileCustomConfiguration
 description: Exclui androidWorkProfileCustomConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bca01c6a7232b96d3a3fc1fceeebb49c36927325
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ed94cfb5e9152e72cd5fb7df276a03719cd53df0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401250"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985374"
 ---
 # <a name="delete-androidworkprofilecustomconfiguration"></a>Excluir androidWorkProfileCustomConfiguration
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

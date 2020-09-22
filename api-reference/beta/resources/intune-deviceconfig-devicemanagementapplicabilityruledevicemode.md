@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementApplicabilityRuleDeviceMode
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 684dd5415d5ffa3c8884611efb1c9add8bdf0651
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 660263e729c4de0603f7d683a585981e0a4fd98f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43359658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985948"
 ---
 # <a name="devicemanagementapplicabilityruledevicemode-resource-type"></a>tipo de recurso deviceManagementApplicabilityRuleDeviceMode
 
@@ -47,6 +47,9 @@ Veja a seguir uma representação JSON do recurso.
   "ruleType": "String"
 }
 ```
+
+
+
 
 
 

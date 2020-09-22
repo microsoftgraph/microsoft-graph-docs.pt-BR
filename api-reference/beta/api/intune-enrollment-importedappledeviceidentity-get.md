@@ -3,14 +3,14 @@ title: Obter importedAppleDeviceIdentity
 description: Leia as propriedades e as relações do objeto importedAppleDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30c0fbf4fe108b1ce3fc133887c115c8b25cf418
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80730a26a31bbbedc7f44c0853ac5886a194e551
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451194"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986571"
 ---
 # <a name="get-importedappledeviceidentity"></a>Obter importedAppleDeviceIdentity
 
@@ -88,6 +88,9 @@ Content-Length: 672
   }
 }
 ```
+
+
+
 
 
 

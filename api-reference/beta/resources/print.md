@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: b32ebb749b3b13ee1d468de69b0724fe281e6793
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 309b7c8e62b94703bb00e21fb8c8ed2a2e917efe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091498"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985885"
 ---
 # <a name="print-resource-type"></a>tipo de recurso Print
 
@@ -20,12 +20,12 @@ Namespace: microsoft.graph
 
 Quando acompanhada por uma assinatura de impressão universal, o recurso de impressão permite o gerenciamento de impressoras e a descoberta de [ServiceEndpoints](printserviceendpoint.md) que podem ser usados para gerenciar impressoras e trabalhos de impressão dentro do universal Print.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Conectores de lista](../api/print-list-connectors.md) | coleção [Multiconnector](printconnector.md) | Obtenha uma lista de conectores de impressão. |
-| [Listar impressoras](../api/print-list-printers.md) | coleção de [impressoras](printer.md) | Obter uma lista de impressoras. |
-| [Lista de compartilhamentos](../api/print-list-shares.md) | coleção [printerShare](printershare.md) | Obter uma lista de compartilhamentos de impressora. |
+| [Listar conectores](../api/print-list-connectors.md) | coleção [Multiconnector](printconnector.md) | Obtenha uma lista de conectores de impressão. |
+| [Lista de impressoras](../api/print-list-printers.md) | coleção de [impressoras](printer.md) | Obter uma lista de impressoras. |
+| [Listar shares](../api/print-list-shares.md) | coleção [printerShare](printershare.md) | Obter uma lista de compartilhamentos de impressora. |
 | [Listar serviços](../api/print-list-services.md) | coleção de [serviços de multiserviço](printservice.md) | Obtenha uma lista de serviços. |
 | [Criar printerShare](../api/print-post-shares.md) | [printerShare](printershare.md) | Crie um novo compartilhamento de impressora postando na coleção de **compartilhamentos** . |
 | [Criar impressora](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com impressão universal. |
@@ -38,7 +38,7 @@ Quando acompanhada por uma assinatura de impressão universal, o recurso de impr
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|configurações|[printSettings](printsettings.md)|Configurações de todo o locatário para o serviço de impressão universal.|
+|settings|[printSettings](printsettings.md)|Configurações de todo o locatário para o serviço de impressão universal.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
@@ -79,3 +79,5 @@ Veja a seguir uma representação JSON do recurso.
     "Error: Resource print has documented navigation properties, but we thought it was a complex type!",
     "Resource print has documented navigation properties, but we thought it was a complex type!"
 }-->
+
+

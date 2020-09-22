@@ -3,14 +3,14 @@ title: Excluir androidCustomConfiguration
 description: Exclui androidCustomConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e73ad3db816e21df4b4310b16da8e1c15c9b55e9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: df04b40b48529fd07c21ed4416b49cef92ef7a80
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362149"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985521"
 ---
 # <a name="delete-androidcustomconfiguration"></a>Excluir androidCustomConfiguration
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

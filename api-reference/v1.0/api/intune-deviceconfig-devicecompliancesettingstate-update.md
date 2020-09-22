@@ -3,14 +3,14 @@ title: Atualizar deviceComplianceSettingState
 description: Atualizar as propriedades de um objeto deviceComplianceSettingState objeto.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b1586a2501e16d796fbf44ee44527c8cb6ca2ab
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4cfb9c4a5723c77a1e0ae53149830efe97d93a72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985248"
 ---
 # <a name="update-devicecompliancesettingstate"></a>Atualizar deviceComplianceSettingState
 
@@ -52,15 +52,15 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceComplianc
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade|
-|configuração|String|O nome da classe de configuração e o nome da propriedade.|
-|settingName|String|O nome da configuração sendo relatada|
-|deviceId|String|A ID do dispositivo sendo relatada|
-|deviceName|String|O nome do dispositivo sendo relatado|
-|userId|String|A ID do usuário sendo relatada|
+|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
+|settingName|Cadeia de caracteres|O nome da configuração sendo relatada|
+|deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
+|deviceName|Cadeia de caracteres|O nome do dispositivo sendo relatado|
+|userId|Cadeia de caracteres|A ID do usuário sendo relatada|
 |userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
-|userName|String|O nome de usuário que está sendo relatado|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
-|deviceModel|String|O modelo do dispositivo que está sendo relatado|
+|deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
@@ -117,6 +117,9 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
+
+
+
 
 
 

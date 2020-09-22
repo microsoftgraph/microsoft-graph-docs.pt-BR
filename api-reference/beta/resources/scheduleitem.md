@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: harini84
-ms.openlocfilehash: b4bbf2586543b4f731c136eaffbc955741191db6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9c7ed4d1683a4b6f45161db5304d70dce17d0dd4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985802"
 ---
 # <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
 
@@ -24,7 +24,7 @@ Um item que descreve a disponibilidade de um usuário correspondente a um evento
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente termina. |
-|IsPrivate |Booliano |A sensibilidade do evento correspondente. True se o evento estiver marcado `private` ; caso contrário, false. Opcional. |
+|IsPrivate |Boolean |A sensibilidade do evento correspondente. True se o evento estiver marcado `private` ; caso contrário, false. Opcional. |
 |localização |String | O local onde o evento correspondente é mantido ou participado. Opcional.|
 |iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente é iniciado. |
 |status |freeBusyStatus | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
@@ -69,3 +69,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

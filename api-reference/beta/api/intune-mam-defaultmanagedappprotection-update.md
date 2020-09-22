@@ -3,14 +3,14 @@ title: Atualizar defaultManagedAppProtection
 description: Atualizar as propriedades de um objeto defaultManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3a36e3e6211aa5f5a8f18e637dbbfd727cd2f2f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 6487e0f5e0abf4d10c926fa7196827015dc5955b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986417"
 ---
 # <a name="update-defaultmanagedappprotection"></a>Atualizar defaultManagedAppProtection
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [default
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|displayName|String|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |description|String|A descrição da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
@@ -109,10 +109,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [default
 |customSettings|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres a serem enviados aos usuários afetados, não alterados por esse serviço|
 |deployedAppCount|Int32|Contagem de aplicativos em que a política atual é implantada.|
 |minimumRequiredPatchVersion|String|Define o nível mais antigo de patch de segurança do Android necessário que um usuário pode ter para obter acesso seguro ao aplicativo. (Somente Android)|
-|minimumWarningPatchVersion|Cadeia de caracteres|Define o nível mais antigo de patch de segurança do Android recomendado que um usuário pode ter para obter acesso seguro ao aplicativo. (Somente Android)|
+|minimumWarningPatchVersion|String|Define o nível mais antigo de patch de segurança do Android recomendado que um usuário pode ter para obter acesso seguro ao aplicativo. (Somente Android)|
 |exemptedAppProtocols|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|os aplicativos iOS nesta lista serão isentos da política e poderão receber dados de aplicativos gerenciados. (somente iOS)|
 |exemptedAppPackages|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Os pacotes de aplicativos Android nesta lista serão isentos da política e poderão receber dados de aplicativos gerenciados. (Somente Android)|
-|faceIdBlocked|Booliano|Indica se será permitido o uso do FaceID em vez de um pin se PinRequired estiver definido como True. (somente iOS)|
+|faceIdBlocked|Boolean|Indica se será permitido o uso do FaceID em vez de um pin se PinRequired estiver definido como True. (somente iOS)|
 |minimumWipeSdkVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa.|
 |minimumWipePatchVersion|String|O nível de patch de segurança do Android menor ou igual ao valor especificado limpará o aplicativo gerenciado e os dados da empresa associados. (Somente Android)|
 |allowedIosDeviceModels|String|Lista separada por ponto-e-vírgula de modelos de dispositivo permitidos, como uma cadeia de caracteres, para que o aplicativo gerenciado funcione. (somente iOS)|
@@ -138,6 +138,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [default
 |customDialerAppProtocol|String|Protocolo de um aplicativo de discagem personalizado para clicar para abrir um número de telefone no iOS, por exemplo, Skype:.|
 |customDialerAppPackageId|String|PackageID de um aplicativo de discagem personalizado para clicar para abrir um número de telefone no Android.|
 |customDialerAppDisplayName|String|Nome amigável de um aplicativo de discador personalizado para abrir um número de telefone no Android.|
+|biometricAuthenticationBlocked|Boolean|Indica se o uso da autenticação biométrica será permitido no lugar de um PIN se PinRequired estiver definido como true. (Somente Android)|
+|requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Define o requisito de tipo de avaliação do Android SafetyNet para que um aplicativo gerenciado funcione. (Android somente). Os valores possíveis são: `basic` e `hardwareBacked`.|
 
 
 
@@ -151,7 +153,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 4775
+Content-length: 4881
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -262,7 +264,9 @@ Content-length: 4775
   "appActionIfAndroidDeviceModelNotAllowed": "wipe",
   "customDialerAppProtocol": "Custom Dialer App Protocol value",
   "customDialerAppPackageId": "Custom Dialer App Package Id value",
-  "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+  "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+  "biometricAuthenticationBlocked": true,
+  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
 
@@ -271,7 +275,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4947
+Content-Length: 5053
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -385,9 +389,14 @@ Content-Length: 4947
   "appActionIfAndroidDeviceModelNotAllowed": "wipe",
   "customDialerAppProtocol": "Custom Dialer App Protocol value",
   "customDialerAppPackageId": "Custom Dialer App Package Id value",
-  "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+  "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+  "biometricAuthenticationBlocked": true,
+  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
+
+
+
 
 
 

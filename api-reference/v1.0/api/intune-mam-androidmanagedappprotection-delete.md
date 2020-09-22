@@ -3,14 +3,14 @@ title: Excluir androidManagedAppProtection
 description: Exclui androidManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0fbe3f7c22c64e2c059043425ff0a6aa8c871a8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 05191aca6ac5a00d9b7d3d75012bf9ae3857dc97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407334"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985052"
 ---
 # <a name="delete-androidmanagedappprotection"></a>Excluir androidManagedAppProtection
 
@@ -63,6 +63,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

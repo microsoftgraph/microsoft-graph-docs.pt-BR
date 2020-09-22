@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 17c25df842975c324ab827fc071283df7a5d44cd
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f27094a28423137eb6c8e9661b42449f9cf7ac6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123081"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986228"
 ---
 # <a name="create-programcontrol"></a>Criar programControl
 
@@ -22,9 +22,9 @@ No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md)
 
 Antes de fazer essa solicitação, o chamador deve ter sido
 
-- [criou um programa](program-create.md) ou [recuperou um programa](program-list.md), para que o valor `programId` de a ser incluído na solicitação,
-- [criou uma revisão do Access](accessreview-create.md) ou [recuperou uma revisão do Access](accessreview-get.md), para que `controlId` o valor de seja incluído na solicitação e
-- [recuperada a lista de tipos de controle de programa](programcontroltype-list.md)para que o `controlTypeId` valor de seja incluído na solicitação.
+- [criou um programa](program-create.md) ou [recuperou um programa](program-list.md), para que o valor de `programId` a ser incluído na solicitação,
+- [criou uma revisão do Access](accessreview-create.md) ou [recuperou uma revisão do Access](accessreview-get.md), para que o valor de `controlId` seja incluído na solicitação e
+- [recuperada a lista de tipos de controle de programa](programcontroltype-list.md)para que o valor de `controlTypeId` seja incluído na solicitação.
 
 
 ## <a name="permissions"></a>Permissões
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um contr
 | `controlTypeId`          |`String`                | O programControlType identifica o tipo de controle de programa-por exemplo, um controle vinculando a revisões de acesso de convidados. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201, Created` um código de resposta e um objeto [programControl](../resources/programcontrol.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201, Created` código de resposta e um objeto [programControl](../resources/programcontrol.md) no corpo da resposta.
 
 
 ## <a name="example"></a>Exemplo
@@ -138,3 +138,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

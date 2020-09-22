@@ -3,14 +3,14 @@ title: tipo de enumeração vpnServiceExceptionAction
 description: A ação VPN a ser tomada para um serviço específico.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 125410fb9d501ec3dc205cc29c0728c7c54b007f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba0ea4081ea958d4eb36d2506c4cc4cab5ef59a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420221"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985920"
 ---
 # <a name="vpnserviceexceptionaction-enum-type"></a>tipo de enumeração vpnServiceExceptionAction
 
@@ -26,8 +26,11 @@ A ação VPN a ser tomada para um serviço específico.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |forceTrafficViaVPN|,0|Fazer com que todo o tráfego desse serviço percorra a VPN|
-|allowTrafficOutside|1|Permitir o serviço fora da VPN|
-|dropTraffic|duas|Remover todo o tráfego do serviço|
+|allowTrafficOutside|1 |Permitir o serviço fora da VPN|
+|dropTraffic|2 |Remover todo o tráfego do serviço|
+
+
+
 
 
 
