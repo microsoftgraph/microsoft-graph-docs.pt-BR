@@ -3,14 +3,14 @@ title: tipo de enumeração deviceManangementIntentValueType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c08d68ce1ee97a042e33bdf67271ab6a2f28f272
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 421f8a8b4a5a699f39ad9f5d378890c5a26df598
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060990"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>tipo de enumeração deviceManangementIntentValueType
 
@@ -26,11 +26,14 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |inteiro|,0|O valor de configuração é um inteiro|
-|booliano|1|O valor de configuração é um Boolean|
-|string|duas|O valor de configuração é uma cadeia de caracteres|
-|completo|3D|O valor de configuração é um objeto complexo|
+|booliano|1 |O valor de configuração é um Boolean|
+|cadeia de caracteres|2 |O valor de configuração é uma cadeia de caracteres|
+|completo|3 |O valor de configuração é um objeto complexo|
 |coleção|4 |O valor de configuração é uma coleção|
 |abstractComplex|5 |O valor de configuração é um objeto complexo abstrato|
+
+
+
 
 
 

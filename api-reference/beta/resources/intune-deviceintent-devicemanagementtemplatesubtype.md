@@ -3,14 +3,14 @@ title: tipo de enumeração deviceManagementTemplateSubtype
 description: Subtipo de modelo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 59771a3d456e6330a12d731ec7b13634a9dd9aba
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: da499394790c0b7985b960a81447cdd8fedf3e89
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177433"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061025"
 ---
 # <a name="devicemanagementtemplatesubtype-enum-type"></a>tipo de enumeração deviceManagementTemplateSubtype
 
@@ -26,12 +26,15 @@ Subtipo de modelo
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|,0|O modelo não tem subtipo|
-|Firewall|1|Subtipo de firewall de segurança do Endpoint|
-|diskEncryption|duas|Subtipo de criptografia de disco do Endpoint Security|
-|attackSurfaceReduction|3D|Subtipo de redução da superfície de ataque de segurança de pontos de extremidade|
+|Firewall|1 |Subtipo de firewall de segurança do Endpoint|
+|diskEncryption|2 |Subtipo de criptografia de disco do Endpoint Security|
+|attackSurfaceReduction|3 |Subtipo de redução da superfície de ataque de segurança de pontos de extremidade|
 |endpointDetectionReponse|4 |Detecção de ponto de extremidade de segurança e subtipo de resposta do Endpoint Security|
 |accountProtection|5 |Subtipo de proteção da conta do Endpoint Security|
 |vírus|6 |Subtipo Anitivirus de segurança de ponto de extremidade|
+
+
+
 
 
 

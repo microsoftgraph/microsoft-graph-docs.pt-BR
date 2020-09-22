@@ -3,14 +3,14 @@ title: Criar windowsAutopilotDeviceIdentity
 description: Criar um novo objeto windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01f7f4f0216f11cc968cd147ca0b477add65eed9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1b10e378fa294d35d343487b96fa4627aba50ae8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452413"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062649"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 
@@ -54,32 +54,32 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
+|id|Cadeia de caracteres|O GUID do objeto.|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status de atribuição de perfil do dispositivo do Windows AutoPilot. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Atribuição de perfil status detalhado do dispositivo do Windows AutoPilot. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo do Windows AutoPilot.|
-|orderIdentifier|String|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
-|groupTag|String|Marca de grupo do dispositivo do Windows AutoPilot.|
-|purchaseOrderIdentifier|String|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
-|serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
+|orderIdentifier|Cadeia de caracteres|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
+|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo do Windows AutoPilot.|
+|purchaseOrderIdentifier|Cadeia de caracteres|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
+|serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante OEM do dispositivo do Windows AutoPilot.|
 |modelo|String|Nome do modelo do dispositivo do Windows AutoPilot.|
 |enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|Estado de registro do Intune do dispositivo do Windows AutoPilot. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do Intune para o dispositivo do Windows AutoPilot.|
-|addressableUserName|String|Nome de usuário endereçável.|
-|userPrincipalName|String|Nome principal do usuário.|
+|addressableUserName|Cadeia de caracteres|Nome de usuário endereçável.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
-|skuNumber|String|Número de SKU|
-|systemFamily|String|Família de sistema|
-|azureActiveDirectoryDeviceId|String|ID de dispositivo do AAD|
-|managedDeviceId|String|ID do dispositivo gerenciado|
+|skuNumber|Cadeia de caracteres|Número de SKU|
+|systemFamily|Cadeia de caracteres|Família de sistema|
+|azureActiveDirectoryDeviceId|Cadeia de caracteres|ID de dispositivo do AAD|
+|managedDeviceId|Cadeia de caracteres|ID do dispositivo gerenciado|
 |displayName|Cadeia de caracteres|Nome de exibição|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -147,6 +147,9 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

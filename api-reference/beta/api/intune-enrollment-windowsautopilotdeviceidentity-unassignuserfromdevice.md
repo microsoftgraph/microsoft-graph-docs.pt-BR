@@ -3,14 +3,14 @@ title: ação unassignUserFromDevice
 description: Retira a atribuição do usuário de um dispositivo piloto automático.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 221cf3c18b69e8e845af6861c40962a1bac07085
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 65fe3600d6768e5d3292f005808a4a9cc813a9a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452354"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062579"
 ---
 # <a name="unassignuserfromdevice-action"></a>ação unassignUserFromDevice
 
@@ -66,6 +66,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

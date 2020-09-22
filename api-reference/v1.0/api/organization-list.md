@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3fac294150dccc430021bc96471378608fea9942
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: fc852620fbeb100baf19499d970ce69fbb949cd8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43511146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063034"
 ---
 # <a name="list-organization"></a>Listar organização
 
@@ -125,3 +125,4 @@ Content-length: 500
   "suppressions": [
   ]
 }-->
+

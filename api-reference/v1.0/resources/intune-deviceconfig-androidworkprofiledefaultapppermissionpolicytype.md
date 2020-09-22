@@ -3,14 +3,14 @@ title: tipo de enumeração androidWorkProfileDefaultAppPermissionPolicyType
 description: Tipo de política de permissão de aplicativo padrão do perfil de trabalho do Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3bc69126287ed60ec56cc5632ff9c9d7bf363e57
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 82b20abd43e451519b30351aa23886551119bf4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449257"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062824"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>tipo de enumeração androidWorkProfileDefaultAppPermissionPolicyType
 
@@ -24,9 +24,11 @@ Tipo de política de permissão de aplicativo padrão do perfil de trabalho do A
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|prompt|1|Notifica.|
-|Concessão autogrant|duas|Concessão automática.|
-|Negação de permissão|3D|Negação automática.|
+|prompt|1 |Notifica.|
+|Concessão autogrant|2 |Concessão automática.|
+|Negação de permissão|3 |Negação automática.|
+
+
 
 
 

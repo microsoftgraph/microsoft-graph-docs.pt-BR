@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementSettingProfileConstraint
 description: Restrição que impõe um determinado perfil de metadados
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b181760ea01b1fc46437ba67f295e50138ef12d3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2244b0fcafb1eb983388a220662c0ce7c874c73f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420112"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061158"
 ---
 # <a name="devicemanagementsettingprofileconstraint-resource-type"></a>tipo de recurso deviceManagementSettingProfileConstraint
 
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|source|String|A origem da entidade|
+|source|Cadeia de caracteres|A origem da entidade|
 |tipos|Coleção de cadeias de caracteres|Uma coleção de tipos que esta entidade transporta|
 
 ## <a name="relationships"></a>Relações
@@ -50,6 +50,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

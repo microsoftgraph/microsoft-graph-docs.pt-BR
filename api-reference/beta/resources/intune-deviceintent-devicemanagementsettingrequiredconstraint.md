@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementSettingRequiredConstraint
 description: Restrição que impõe uma determinada configuração necessária que não é nula/indefinida/sequência vazia/não configurada
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd70066465fcde31ba12ff1a7deb96a41a6786e9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d13ba79b411032a14c5426f247ab80f45baa9d21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420082"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061109"
 ---
 # <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>tipo de recurso deviceManagementSettingRequiredConstraint
 
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Não configuravalue|String|Lista de valores que significa não configurado para a configuração|
+|Não configuravalue|Cadeia de caracteres|Lista de valores que significa não configurado para a configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -46,6 +46,9 @@ Veja a seguir uma representação JSON do recurso.
   "notConfiguredValue": "String"
 }
 ```
+
+
+
 
 
 

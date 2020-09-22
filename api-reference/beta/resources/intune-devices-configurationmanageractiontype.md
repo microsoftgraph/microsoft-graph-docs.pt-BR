@@ -3,14 +3,14 @@ title: tipo de enumeração configurationManagerActionType
 description: Tipo de ação no cliente do Configuration Manager
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fd12ace8453740d0c89fc5393a660d05dac83ef4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0848488e0c4db3df29b16ddf0acd612242f88d17
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465072"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060682"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>tipo de enumeração configurationManagerActionType
 
@@ -26,9 +26,12 @@ Tipo de ação no cliente do Configuration Manager
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |refreshMachinePolicy|,0|Atualizar política de máquina no cliente do Configuration Manager|
-|refreshUserPolicy|1|Atualizar política de usuário no cliente do Configuration Manager|
-|wakeUpClient|duas|Cliente do Gerenciador de configuração do Wake up|
-|appEvaluation|3D|Política de aplicativo de avaliação no cliente do Configuration Manager|
+|refreshUserPolicy|1 |Atualizar política de usuário no cliente do Configuration Manager|
+|wakeUpClient|2 |Cliente do Gerenciador de configuração do Wake up|
+|appEvaluation|3 |Política de aplicativo de avaliação no cliente do Configuration Manager|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Tipo de recurso deviceActionResult
 description: Resultado de ação de dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f0e6612eccf309cc03dea51c50dfcf06d1b6567
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8ff7a02d9bace4e686f77c1173569360af1145b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456875"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060563"
 ---
 # <a name="deviceactionresult-resource-type"></a>Tipo de recurso deviceActionResult
 
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

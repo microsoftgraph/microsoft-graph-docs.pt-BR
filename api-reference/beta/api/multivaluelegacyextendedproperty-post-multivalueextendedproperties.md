@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: d0079ee5455d717dfec1bf32f23aa788991be1fc
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 4e54a58f3d7d2cfd6b7f410ebe4a1ea55f629efe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062398"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
 
@@ -27,7 +27,7 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
-- [event](../resources/event.md)
+- [evento](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [Tarefa do Outlook](../resources/outlooktask.md)
@@ -48,14 +48,14 @@ Dependendo do recurso para o qual você está criando a propriedade estendida e 
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contato](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [pastadeContatos](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| grupo [calendar](../resources/calendar.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
-| grupo [event](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
-| grupo [post](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
+| grupo [calendar](../resources/calendar.md) | Group.ReadWrite.All | Sem suporte | Incompatível |
+| grupo [event](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Incompatível |
+| grupo [post](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Incompatível |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
-| [Tarefa do Outlook](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [Tarefa do Outlook](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -162,7 +162,7 @@ Forneça um corpo JSON de cada objeto [multiValueLegacyExtendedProperty](../reso
 |**Propriedade**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de vários valores. |
-|id|String|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|id|Cadeia de caracteres|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 |valor|string|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
 Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **multiValueExtendedProperties**, forneça uma representação JSON dessa instância de recurso (ou seja, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
@@ -287,6 +287,8 @@ Para ver a propriedade estendida recém-criada, [obtenha a mensagem expandida co
   "suppressions": []
 }
 -->
+
+
 
 
 

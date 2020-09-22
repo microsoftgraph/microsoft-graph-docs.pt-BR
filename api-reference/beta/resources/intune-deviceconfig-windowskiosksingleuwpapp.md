@@ -3,14 +3,14 @@ title: tipo de recurso windowsKioskSingleUWPApp
 description: A classe usada para identificar as informações do aplicativo UWP para a configuração do quiosque
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 168317587a7e20fabd3754a96c3b65ebefef963c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b6142091183409d0fea45d42a0241e9f41f446b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061886"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>tipo de recurso windowsKioskSingleUWPApp
 
@@ -55,6 +55,9 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
 
 
 

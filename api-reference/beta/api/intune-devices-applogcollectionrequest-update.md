@@ -3,14 +3,14 @@ title: Atualizar appLogCollectionRequest
 description: Atualiza as propriedades de um objeto appLogCollectionRequest.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6592e8a1d0eb27afff70b1d49ab7a1cfe108e4a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 260f08af0ecb68383c61856c62d6cdcd442c5c3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381070"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062663"
 ---
 # <a name="update-applogcollectionrequest"></a>Atualizar appLogCollectionRequest
 
@@ -53,16 +53,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [appLogC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo. É userId_DeviceId_AppId ID.|
+|id|Cadeia de caracteres|O identificador exclusivo. É userId_DeviceId_AppId ID.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
-|errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
-|customLogFolders|Coleção String|Lista de pastas de log. |
+|errorMessage|Cadeia de caracteres|Mensagem de erro se qualquer um durante o processo de carregamento|
+|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -102,6 +102,9 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
+
+
 
 
 

@@ -7,12 +7,12 @@ title: Tipo de recurso de hashes
 description: O recurso hash agrupa hashes disponíveis em uma estrutura simples para um item.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: da326576b148fdaee79ebfc3df2d7832bfeee4e5
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 807b2155114d0fa689de5dab60b2e21d7745ef99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863737"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062922"
 ---
 # <a name="hashes-resource-type"></a>Tipo de recurso de hashes
 
@@ -69,3 +69,4 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
   "section": "documentation",
   "tocPath": "Facets/Hashes"
 } -->
+

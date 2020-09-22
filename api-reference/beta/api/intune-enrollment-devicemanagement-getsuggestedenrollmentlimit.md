@@ -1,18 +1,18 @@
 ---
-title: Ação unassignResourceAccountFromDevice
-description: Retira a atribuição da conta de recurso de um dispositivo de piloto automático.
+title: função getSuggestedEnrollmentLimit
+description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 319408d8ebd962a1567ae53e4237676cf7444830
+ms.openlocfilehash: 0ca91cfd4b5a75e6dd59e55729bb6dce51b06ace
 ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062593"
+ms.locfileid: "48062101"
 ---
-# <a name="unassignresourceaccountfromdevice-action"></a>Ação unassignResourceAccountFromDevice
+# <a name="getsuggestedenrollmentlimit-function"></a>função getSuggestedEnrollmentLimit
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Retira a atribuição da conta de recurso de um dispositivo de piloto automático.
+Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,8 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/unassignResourceAccountFromDevice
-POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/{windowsAutopilotDeviceIdentityId}/unassignResourceAccountFromDevice
+GET /deviceManagement/getSuggestedEnrollmentLimit
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -48,23 +47,39 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
+A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|enrollmentType|Cadeia de caracteres|Ainda não documentado|
+
+
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e um [suggestedEnrollmentLimit](../resources/intune-enrollment-suggestedenrollmentlimit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/unassignResourceAccountFromDevice
+GET https://graph.microsoft.com/beta/deviceManagement/getSuggestedEnrollmentLimit(enrollmentType='parameterValue')
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 117
+
+{
+  "value": {
+    "@odata.type": "microsoft.graph.suggestedEnrollmentLimit",
+    "suggestedDailyLimit": 3
+  }
+}
 ```
 
 

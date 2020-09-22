@@ -3,14 +3,14 @@ title: tipo de recurso adminConsent
 description: Informações de consentimento do administrador.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d45249024e7d3766bfedb716c151a495a92daa75
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b09db43661113de84712a8228af047ca1683c383
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462457"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060899"
 ---
 # <a name="adminconsent-resource-type"></a>tipo de recurso adminConsent
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "shareUserExperienceAnalyticsData": "String"
 }
 ```
+
+
+
 
 
 

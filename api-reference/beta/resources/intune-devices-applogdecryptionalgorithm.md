@@ -3,14 +3,14 @@ title: tipo de enumeração appLogDecryptionAlgorithm
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e6cfe2bc623b539a1cb3917a5bddb3dbb78c57d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1de00d38ba25912755edb79c1f92d5a11a263542
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060815"
 ---
 # <a name="applogdecryptionalgorithm-enum-type"></a>tipo de enumeração appLogDecryptionAlgorithm
 
@@ -26,6 +26,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |aes256|,0|Ainda não documentado|
+
+
+
 
 
 

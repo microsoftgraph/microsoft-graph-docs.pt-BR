@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: b08abe6b4f5deb90c55b2452bb785157fec95cfe
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 861827d29b406778c4770f026d319131f75fd99a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062390"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite, Sites.Read.All    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Sites.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sites.Read.All |
 
@@ -47,7 +47,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|string|O nome do item nomeado.|
+|name|string|O nome do item nomeado.|
 |reference|string|A fórmula ou o intervalo ao qual o nome fará referência.|
 |comment|string|O comentário associado ao item nomeado|
 
@@ -132,3 +132,5 @@ Content-length: 109
   ]
 }
 -->
+
+

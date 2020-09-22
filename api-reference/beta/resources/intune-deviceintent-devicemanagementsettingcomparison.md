@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementSettingComparison
 description: Entidade que representa o resultado da comparação da configuração
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2e807c3f17d2e2cff1a0c807fbe2f0201259049
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5e51d413dfa0e1e60fcf07e37c2806c39f62cc76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453384"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061242"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>tipo de recurso deviceManagementSettingComparison
 
@@ -25,11 +25,11 @@ Entidade que representa o resultado da comparação da configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da configuração|
+|id|Cadeia de caracteres|A ID da configuração|
 |displayName|Cadeia de caracteres|O nome de exibição da configuração|
-|DefinitionId|String|A ID da definição de configuração dessa instância|
-|currentValueJson|String|Representação JSON do valor da configuração de modelo de intenção atual (ou)|
-|newValueJson|String|Representação JSON do valor da configuração de um novo modelo|
+|DefinitionId|Cadeia de caracteres|A ID da definição de configuração dessa instância|
+|currentValueJson|Cadeia de caracteres|Representação JSON do valor da configuração de modelo de intenção atual (ou)|
+|newValueJson|Cadeia de caracteres|Representação JSON do valor da configuração de um novo modelo|
 |comparisonResult|[deviceManagementComparisonResult](../resources/intune-deviceintent-devicemanagementcomparisonresult.md)|Configurando o resultado da comparação. Os valores possíveis são: `unknown`, `equal`, `notEqual`, `added`, `removed`.|
 
 ## <a name="relationships"></a>Relações
@@ -53,6 +53,9 @@ Veja a seguir uma representação JSON do recurso.
   "comparisonResult": "String"
 }
 ```
+
+
+
 
 
 

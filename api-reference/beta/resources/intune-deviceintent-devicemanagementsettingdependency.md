@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementSettingDependency
 description: Informações de dependência de uma configuração
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9014b3618562717c2cc9522c388034ad81213a4c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b96555b98f23206d9c85bb40cf567ed0938da5d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420119"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061200"
 ---
 # <a name="devicemanagementsettingdependency-resource-type"></a>tipo de recurso deviceManagementSettingDependency
 
@@ -25,7 +25,7 @@ Informações de dependência de uma configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|DefinitionId|String|A ID da definição de configuração da configuração dependente|
+|DefinitionId|Cadeia de caracteres|A ID da definição de configuração da configuração dependente|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor da configuração de dependência|
 
 ## <a name="relationships"></a>Relações
@@ -52,6 +52,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

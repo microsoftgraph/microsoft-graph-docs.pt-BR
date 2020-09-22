@@ -3,14 +3,14 @@ title: tipo de enumeração androidWorkProfileRequiredPasswordType
 description: Perfil de trabalho do Android tipo de senha exigido.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b3c2b0945d91bead7f28ec49e53c68f89fbb19d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 822c2021040b0dc4e6eb827e9fec54a40b5cad64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470219"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062082"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>tipo de enumeração androidWorkProfileRequiredPasswordType
 
@@ -26,13 +26,16 @@ Perfil de trabalho do Android tipo de senha exigido.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|lowSecurityBiometric|1|Senha com base em Biometria de segurança baixa necessária.|
-|obrigatório|duas|Obrigatório.|
-|atLeastNumeric|3D|É necessário pelo menos a senha numérica.|
+|lowSecurityBiometric|1 |Senha com base em Biometria de segurança baixa necessária.|
+|obrigatório|2 |Obrigatório.|
+|atLeastNumeric|3 |É necessário pelo menos a senha numérica.|
 |numericComplex|4 |Senha numérica complexa obrigatória.|
 |atLeastAlphabetic|5 |É necessária pelo menos a senha alfabética.|
 |atLeastAlphanumeric|6 |É necessária pelo menos a senha alfanumérica.|
 |alphanumericWithSymbols|7 |É necessário pelo menos alfanumérico com senha de símbolo.|
+
+
+
 
 
 

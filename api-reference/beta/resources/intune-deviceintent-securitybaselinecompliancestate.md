@@ -3,14 +3,14 @@ title: tipo de enumeração securityBaselineComplianceState
 description: Estado de conformidade da linha de base de segurança
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 93fd01d4565d871a400289aac230a646c5796c90
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 30617387b3d147f7fc2a7c60b09afd92112c6ae1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060955"
 ---
 # <a name="securitybaselinecompliancestate-enum-type"></a>tipo de enumeração securityBaselineComplianceState
 
@@ -26,11 +26,14 @@ Estado de conformidade da linha de base de segurança
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Estado desconhecido|
-|forma|1|Estado seguro|
-|Não aplicável|duas|Estado não aplicável|
-|Não seguro|3D|Estado não seguro|
+|forma|1 |Estado seguro|
+|Não aplicável|2 |Estado não aplicável|
+|Não seguro|3 |Estado não seguro|
 |erro|4 |Estado de erro|
 |apresentar|5 |Estado de conflito|
+
+
+
 
 
 

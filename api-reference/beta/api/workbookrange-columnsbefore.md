@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 077f59c00378807369a7a2cefb2972fd77cc8046
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b897ce61f8bd58c2ef8bb8b1961bbc9422c90cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451358"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062180"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -114,3 +114,5 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+
+

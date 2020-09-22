@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementSettingRegexConstraint
 description: Restrição que impõe a configuração corresponde a um determinado padrão de RegEx
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82eb19727c839bf6c31f79d42fc9fbcf48b37f1d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 08734a71b179d55bc76e9cd82360773d7d17f3bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420097"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061130"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>tipo de recurso deviceManagementSettingRegexConstraint
 
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Regex|String|O padrão RegEx a ser correspondido em relação|
+|Regex|Cadeia de caracteres|O padrão RegEx a ser correspondido em relação|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -46,6 +46,9 @@ Veja a seguir uma representação JSON do recurso.
   "regex": "String"
 }
 ```
+
+
+
 
 
 

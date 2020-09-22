@@ -3,14 +3,14 @@ title: Obter appLogCollectionRequest
 description: Leia as propriedades e as relações do objeto appLogCollectionRequest.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 95f84a949aa07f6f11ce47f38b479298c8e26377
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f4e94c0d889df8debc09c592e8705b8131135164
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426850"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062670"
 ---
 # <a name="get-applogcollectionrequest"></a>Obter appLogCollectionRequest
 
@@ -83,6 +83,9 @@ Content-Length: 341
   }
 }
 ```
+
+
+
 
 
 

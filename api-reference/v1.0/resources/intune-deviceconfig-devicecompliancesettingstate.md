@@ -3,14 +3,14 @@ title: Tipo de recurso deviceComplianceSettingState
 description: Estado de configuração de conformidade de um determinado dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 78605a0f2f2749ba00e1aade7f20b2aaae0522b4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c9d26480e0dd7ad97b34dc87fd8ac07b65ae703f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062797"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Tipo de recurso deviceComplianceSettingState
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Estado de configuração de conformidade de um determinado dispositivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceComplianceSettingStates](../api/intune-deviceconfig-devicecompliancesettingstate-list.md)|Conjunto [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|Listar propriedades e relações de objetos de [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md).|
@@ -33,15 +33,15 @@ Estado de configuração de conformidade de um determinado dispositivo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade|
-|configuração|String|O nome da classe de configuração e o nome da propriedade.|
-|settingName|String|O nome da configuração sendo relatada|
-|deviceId|String|A ID do dispositivo sendo relatada|
-|deviceName|String|O nome do dispositivo sendo relatado|
-|userId|String|A ID do usuário sendo relatada|
+|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
+|settingName|Cadeia de caracteres|O nome da configuração sendo relatada|
+|deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
+|deviceName|Cadeia de caracteres|O nome do dispositivo sendo relatado|
+|userId|Cadeia de caracteres|A ID do usuário sendo relatada|
 |userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
-|userName|String|O nome de usuário que está sendo relatado|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
-|deviceModel|String|O modelo do dispositivo que está sendo relatado|
+|deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
@@ -73,6 +73,8 @@ Veja a seguir uma representação JSON do recurso.
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

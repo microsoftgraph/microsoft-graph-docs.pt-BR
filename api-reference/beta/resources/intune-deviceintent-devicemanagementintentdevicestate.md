@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementIntentDeviceState
 description: Entidade que representa o estado do dispositivo para uma intenção
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5194cf31241a5b6e39e724861950de41722f4ac5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a62c3e1b9db38c822ada889162da33f12385511c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423645"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061403"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>tipo de recurso deviceManagementIntentDeviceState
 
@@ -34,13 +34,13 @@ Entidade que representa o estado do dispositivo para uma intenção
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID|
-|userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
-|userName|String|O nome de usuário que está sendo relatado em um dispositivo|
+|id|Cadeia de caracteres|A ID|
+|userPrincipalName|Cadeia de caracteres|O nome principal do usuário que está sendo relatado em um dispositivo|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo que está sendo relatado|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação de um relatório de intenção|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado do dispositivo para uma intenção. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|String|ID do dispositivo que está sendo relatado|
+|deviceId|Cadeia de caracteres|ID do dispositivo que está sendo relatado|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -65,6 +65,9 @@ Veja a seguir uma representação JSON do recurso.
   "deviceId": "String"
 }
 ```
+
+
+
 
 
 

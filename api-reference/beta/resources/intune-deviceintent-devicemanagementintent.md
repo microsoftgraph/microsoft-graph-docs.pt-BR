@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementIntent
 description: Entidade que representa uma intenção de aplicar configurações a um dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc9eb5e07ab610db61af5287863bb8c394a40ad9
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: e71aa175aa2fbd0bdd88fd1b7b4474a2db22e6a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179366"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061424"
 ---
 # <a name="devicemanagementintent-resource-type"></a>tipo de recurso deviceManagementIntent
 
@@ -39,15 +39,15 @@ Entidade que representa uma intenção de aplicar configurações a um dispositi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de intenção|
+|id|Cadeia de caracteres|A ID de intenção|
 |displayName|Cadeia de caracteres|O nome de exibição fornecido pelo usuário|
 |description|String|Descrição fornecida pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|Cadeia de Caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|templateId|Cadeia de caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |configurações|coleção [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações a serem aplicadas|
@@ -81,6 +81,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

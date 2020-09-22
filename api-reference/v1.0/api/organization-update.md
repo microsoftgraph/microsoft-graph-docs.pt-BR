@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d429060cc000821394b20529ce3ef29fdfbbef0
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 9df86cb8b32b087952ce50bbd5e8c18aac6d3f1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181592"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063020"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |marketingNotificationEmails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|O perfil de privacidade de uma organização (definir statementUrl e contactEmail).            |
 |securityComplianceNotificationMails|Coleção de cadeias de caracteres||
-|securityComplianceNotificationPhones|Coleção de cadeia de caracteres||
+|securityComplianceNotificationPhones|Coleção de cadeias de caracteres||
 |technicalNotificationMails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 
 ## <a name="response"></a>Resposta
@@ -129,3 +129,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

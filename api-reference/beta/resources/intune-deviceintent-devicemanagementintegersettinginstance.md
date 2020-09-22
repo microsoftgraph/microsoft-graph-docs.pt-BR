@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementIntegerSettingInstance
 description: Uma instância de configuração que representa um valor inteiro
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07eb76ad4de5318897bc5248a1cd78975da69d5e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15918cec37458f10430da3e5ba095a800c77cc4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455691"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061452"
 ---
 # <a name="devicemanagementintegersettinginstance-resource-type"></a>tipo de recurso deviceManagementIntegerSettingInstance
 
@@ -37,9 +37,9 @@ Herda de [deviceManagementSettingInstance](../resources/intune-deviceintent-devi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da instância de configuração herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|DefinitionId|String|A ID da definição de configuração dessa instância herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|valueJson|String|Representação JSON do valor herdado de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|id|Cadeia de caracteres|A ID da instância de configuração herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|DefinitionId|Cadeia de caracteres|A ID da definição de configuração dessa instância herdada de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|valueJson|Cadeia de caracteres|Representação JSON do valor herdado de [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |valor|Int32|O valor inteiro|
 
 ## <a name="relationships"></a>Relações
@@ -62,6 +62,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": 1024
 }
 ```
+
+
+
 
 
 

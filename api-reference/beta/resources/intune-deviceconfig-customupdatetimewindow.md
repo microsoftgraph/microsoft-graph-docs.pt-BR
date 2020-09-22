@@ -3,14 +3,14 @@ title: tipo de recurso customUpdateTimeWindow
 description: Janela de tempo de atualização personalizada
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7a83637e3462d33745a14dead15eb86cbb86337
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42f1be3ab2d3c345f7af5d91fd3bf1e6cc12865a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43402165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061977"
 ---
 # <a name="customupdatetimewindow-resource-type"></a>tipo de recurso customUpdateTimeWindow
 
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   "endTime": "String (time of day)"
 }
 ```
+
+
+
 
 
 

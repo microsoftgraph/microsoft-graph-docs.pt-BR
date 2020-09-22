@@ -3,14 +3,14 @@ title: tipo de enumeração certificateValidityPeriodScale
 description: Opções de período de validade do certificado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 41ad2abf67ce646b3ab0355c8f01ed03b367f614
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5a64da7c114d376383df0eabf47fbb60fca83d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453638"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062075"
 ---
 # <a name="certificatevalidityperiodscale-enum-type"></a>tipo de enumeração certificateValidityPeriodScale
 
@@ -26,8 +26,11 @@ Opções de período de validade do certificado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |durante|,0|Dias.|
-|meses|1|Meses.|
-|daqui|duas|Anos.|
+|meses|1 |Meses.|
+|daqui|2 |Anos.|
+
+
+
 
 
 

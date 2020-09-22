@@ -3,14 +3,14 @@ title: tipo de enumeração deviceManagementTemplateType
 description: Tipo de modelo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1dd3a03efe602b8b9baeedcd622f6a012ca6ef3c
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 09fdc3b7d099646dc36e6b398657962b638a7ab8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124034"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061018"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>tipo de enumeração deviceManagementTemplateType
 
@@ -35,6 +35,10 @@ Tipo de modelo
 |microsoftOffice365ProPlusSecurityBaseline|7 |Modelo de linha de base de segurança do Microsoft Office 365 ProPlus|
 |deviceCompliance|8 |Modelo de conformidade do dispositivo|
 |deviceConfigurationForOffice365|9 |Configuração de dispositivo para configurações do Microsoft Office 365|
+|cloudPC|10 |Modelo de linha de base de segurança do computador Cloud|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso windowsKioskLocalUser
 description: A classe usada para identificar uma conta local para a configuração do quiosque
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f614a1bc8a71515fb3b94cdba9ce8ce5548c79f7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 22db475ecb8cda48d4d73cba8ecb2145ae24a03a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460018"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061935"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>tipo de recurso windowsKioskLocalUser
 
@@ -46,6 +46,9 @@ Veja a seguir uma representação JSON do recurso.
   "userName": "String"
 }
 ```
+
+
+
 
 
 

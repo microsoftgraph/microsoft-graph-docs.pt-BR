@@ -3,14 +3,14 @@ title: Listar windowsDefenderApplicationControlSupplementalPolicies
 description: Listar Propriedades e relações dos objetos windowsDefenderApplicationControlSupplementalPolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b90d12db41cc9cdb9a35b94c0d61cc398e442bfa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3ab3934429c70e23a849508b699d3f79b212aed4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471224"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062516"
 ---
 # <a name="list-windowsdefenderapplicationcontrolsupplementalpolicies"></a>Listar windowsDefenderApplicationControlSupplementalPolicies
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/wdacSupplementalPolicies
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,6 +86,9 @@ Content-Length: 598
   ]
 }
 ```
+
+
+
 
 
 

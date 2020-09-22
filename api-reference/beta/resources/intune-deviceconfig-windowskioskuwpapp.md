@@ -3,14 +3,14 @@ title: tipo de recurso windowsKioskUWPApp
 description: A classe base de um tipo de aplicativo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb4faa95d3b58ac52b5eda134e3c6f958557e8ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cc64fb98877b5a369080cb002774e0505f0724da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462486"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061865"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>tipo de recurso windowsKioskUWPApp
 
@@ -29,7 +29,7 @@ Herda de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Propriedadesstartlayouttilesize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho do bloco do aplicativo para o layout inicial herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
-|nome|String|Representa o nome amigável de um aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|name|String|Representa o nome amigável de um aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
 |autolançamento|Booliano|Permitir que o aplicativo seja iniciado automaticamente no modo de quiosque de vários aplicativos herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appUserModelId|String|Esta é a única ID de modelo de usuário do aplicativo (AUMID) que estará disponível para iniciar o uso enquanto estiver no modo quiosque|
@@ -58,6 +58,9 @@ Veja a seguir uma representação JSON do recurso.
   "containedAppId": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementSettingSddlConstraint
 description: A restrição que impõe a configuração é um SDDL bem formado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56836ee15ef8b19407b56af231305e35f4361ba7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 434d4a634a480ae4c2b09aa55c28981bbf078324
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420051"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061116"
 ---
 # <a name="devicemanagementsettingsddlconstraint-resource-type"></a>tipo de recurso deviceManagementSettingSddlConstraint
 
@@ -44,6 +44,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceManagementSettingSddlConstraint"
 }
 ```
+
+
+
 
 
 

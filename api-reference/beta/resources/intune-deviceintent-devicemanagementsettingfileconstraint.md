@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementSettingFileConstraint
 description: A restrição que impõe a extensão do arquivo é aceitável para uma determinada configuração
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6864d70c31096147a51ff4b3e67a7053d93ed27b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 79936cf26519329563d1216c8f2576faec3e4f77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443243"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061186"
 ---
 # <a name="devicemanagementsettingfileconstraint-resource-type"></a>tipo de recurso deviceManagementSettingFileConstraint
 
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|supportedExtensions|Coleção String|Extensões de arquivo aceitáveis para carregar essa configuração|
+|supportedExtensions|Coleção de cadeias de caracteres|Extensões de arquivo aceitáveis para carregar essa configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -48,6 +48,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

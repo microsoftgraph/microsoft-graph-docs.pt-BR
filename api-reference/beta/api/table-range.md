@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4eca16f51df83f1cd7c54776dfea7554cff7c382
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: cf76dd0eed5ceb52372b867b00d78cf1f3b9f609
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805766"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062264"
 ---
 # <a name="workbooktable-range"></a>workbooktable: Range
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [workbookRange](../resources/workbookrange.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -112,3 +112,5 @@ Content-length: 169
   ]
 }
 -->
+
+

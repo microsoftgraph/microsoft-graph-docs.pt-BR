@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementEnumConstraint
 description: A restrição que impõe o valor da configuração é de um conjunto de cadeias de caracteres permitido
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a118fd250788ba00baf50495f346485572f750aa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 202365368c17d22cf33ea78320ac2a2604a59194
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061473"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>tipo de recurso deviceManagementEnumConstraint
 
@@ -52,6 +52,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

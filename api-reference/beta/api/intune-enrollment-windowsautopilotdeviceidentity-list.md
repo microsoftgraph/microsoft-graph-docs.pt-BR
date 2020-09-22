@@ -3,14 +3,14 @@ title: Listar windowsAutopilotDeviceIdentities
 description: Listar Propriedades e relações dos objetos windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b544465918d7f7e01bb5d6d6b451c34c649ec84d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7acb8d8f2bd7b2b6ed27dfec49f51a96ecfd4a46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062600"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>Listar windowsAutopilotDeviceIdentities
 
@@ -51,7 +51,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,6 +97,9 @@ Content-Length: 1245
   ]
 }
 ```
+
+
+
 
 
 

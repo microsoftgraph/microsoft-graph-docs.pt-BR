@@ -3,14 +3,14 @@ title: tipo de enumeração iosUpdatesInstallStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98cd3915dd34f4707e937d74d66ab5f7fe0973e5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 24f69e4dc17864f24dcda5829fc5fd1425777a29
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43410370"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062782"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>tipo de enumeração iosUpdatesInstallStatus
 
@@ -24,9 +24,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Ainda não documentado|
-|disponível|1|Ainda não documentado|
-|Estado|duas|Ainda não documentado|
-|desconhecido|3D|Ainda não documentado|
+|disponível|1 |Ainda não documentado|
+|Estado|2 |Ainda não documentado|
+|desconhecido|3 |Ainda não documentado|
 |Baixe|-2016330712|Ainda não documentado|
 |downloadFailed|-2016330711|Ainda não documentado|
 |downloadRequiresComputer|-2016330710|Ainda não documentado|
@@ -41,6 +41,8 @@ Ainda não documentado
 |notSupportedOperation|-2016330701|Ainda não documentado|
 |sharedDeviceUserLoggedInError|-2016330699|Ainda não documentado|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Ainda não documentado|
+
+
 
 
 

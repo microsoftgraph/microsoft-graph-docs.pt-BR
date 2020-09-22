@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a39a8e352b0fdbd40b30de8bb2c442dee667e791
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1637d32922d538a24bc14df5a0850a3f4e6f0593
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062537"
 ---
 # <a name="getloggedonmanageddevices-function"></a>função getLoggedOnManagedDevices
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção [managedDevice](../resources/intune-devices-manageddevice.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção [managedDevice](../resources/intune-devices-manageddevice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -234,6 +234,9 @@ Content-Length: 7485
   ]
 }
 ```
+
+
+
 
 
 

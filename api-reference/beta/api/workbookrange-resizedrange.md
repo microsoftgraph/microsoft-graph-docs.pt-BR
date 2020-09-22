@@ -5,16 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c5736bdb977f49860ae338779400248e042f69d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 765de8c2452ecc065abdb28e09cf67032766b190
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451340"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062131"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -102,3 +102,5 @@ Content-length: 157
   "suppressions": []
 }
 -->
+
+

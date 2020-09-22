@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementTemplate
 description: Entidade que representa uma coleção definida de configurações de dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67bc7414ec7f4546111e033f4b46b744cd9ed100
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f898df5eb0208e3c7b12210708c76bc93f84cf53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061047"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>tipo de recurso deviceManagementTemplate
 
@@ -37,13 +37,13 @@ Entidade que representa uma coleção definida de configurações de dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do modelo|
-|displayName|String|O nome de exibição do modelo|
+|id|Cadeia de caracteres|A ID do modelo|
+|displayName|Cadeia de caracteres|O nome de exibição do modelo|
 |description|String|A descrição do modelo|
-|versionInfo|String|As informações de versão do modelo|
+|versionInfo|Cadeia de caracteres|As informações de versão do modelo|
 |preterido|Booliano|O modelo é preterido ou não. Os propósitos não podem ser criados a partir de um modelo preterido.|
 |intentCount|Int32|Número de tentativas criadas a partir deste modelo.|
-|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os valores possíveis são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`.|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os valores possíveis são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`, `cloudPC`.|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|A plataforma do modelo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |templateSubtype|[deviceManagementTemplateSubtype](../resources/intune-deviceintent-devicemanagementtemplatesubtype.md)|O subtipo do modelo. Os valores possíveis são: `none`, `firewall`, `diskEncryption`, `attackSurfaceReduction`, `endpointDetectionReponse`, `accountProtection`, `antivirus`.|
 |publishedDateTime|DateTimeOffset|Quando o modelo foi publicado|
@@ -78,6 +78,9 @@ Veja a seguir uma representação JSON do recurso.
   "publishedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

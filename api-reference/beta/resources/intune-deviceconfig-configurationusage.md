@@ -3,14 +3,14 @@ title: tipo de enumeração configurationUsage
 description: Valores possíveis da lista ConfigurationUsage.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 44c9095efed42718f0f012d190943293f67368df
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 0faa1ae3bb38b861909e612f7eeb957df167033d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177524"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062026"
 ---
 # <a name="configurationusage-enum-type"></a>tipo de enumeração configurationUsage
 
@@ -26,9 +26,12 @@ Valores possíveis da lista ConfigurationUsage.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |bloqueou|,0|Não.|
-|obrigatório|1|Obrigatório.|
-|autorizado|duas|Opcional.|
-|notConfigured|3D|Não configurado.|
+|obrigatório|1 |Obrigatório.|
+|autorizado|2 |Opcional.|
+|notConfigured|3 |Não configurado.|
+
+
+
 
 
 

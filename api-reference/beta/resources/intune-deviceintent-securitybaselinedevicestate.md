@@ -3,14 +3,14 @@ title: tipo de recurso securityBaselineDeviceState
 description: O resumo do estado de conformidade da linha de base de segurança da linha de base de segurança para um dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 412b2f715053abf8ec6ff54cb8be3e75f586209a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ae779d85027ff70424d05418c0cd24ae3560e1aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419716"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060948"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>tipo de recurso securityBaselineDeviceState
 
@@ -34,10 +34,10 @@ O resumo do estado de conformidade da linha de base de segurança da linha de ba
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da entidade|
-|managedDeviceId|String|ID de dispositivo do Intune|
+|id|Cadeia de caracteres|Identificador exclusivo da entidade|
+|managedDeviceId|Cadeia de caracteres|ID de dispositivo do Intune|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userPrincipalName|String|Nome UPN|
+|userPrincipalName|Cadeia de caracteres|Nome UPN|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Estado de conformidade da linha de base de segurança. Os possíveis valores são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de política|
 
@@ -63,6 +63,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

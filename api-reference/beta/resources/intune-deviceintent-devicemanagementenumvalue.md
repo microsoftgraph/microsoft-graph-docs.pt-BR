@@ -3,14 +3,14 @@ title: tipo de recurso deviceManagementEnumValue
 description: Informações de definição para um valor de enumeração
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70b8bc8b0760c0879ab5384620839d717ac7a41d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 27fd76045121ed37646eaa5d3cb93216781cb51b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455698"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061466"
 ---
 # <a name="devicemanagementenumvalue-resource-type"></a>tipo de recurso deviceManagementEnumValue
 
@@ -26,7 +26,7 @@ Informações de definição para um valor de enumeração
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |valor|Cadeia de caracteres|O texto de valor de enumeração bruto|
-|displayName|String|Nome para exibição desse valor de enumeração|
+|displayName|Cadeia de caracteres|Nome para exibição desse valor de enumeração|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
+
+
+
 
 
 

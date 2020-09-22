@@ -3,14 +3,14 @@ title: tipo de enumeração adminConsentState
 description: Estado de consentimento do administrador.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a1bc441a395b0a86a7b74c425dd6ebd82c840fe6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e1ff175b262c4cf1931a25d735aa8089aa52e0e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463440"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060892"
 ---
 # <a name="adminconsentstate-enum-type"></a>tipo de enumeração adminConsentState
 
@@ -26,8 +26,11 @@ Estado de consentimento do administrador.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|O administrador não configurou o item|
-|granted|1|Item concedido pelo administrador|
-|Não concedido|duas|Deos de administração não conceder item|
+|granted|1 |Item concedido pelo administrador|
+|Não concedido|2 |Deos de administração não conceder item|
+
+
+
 
 
 

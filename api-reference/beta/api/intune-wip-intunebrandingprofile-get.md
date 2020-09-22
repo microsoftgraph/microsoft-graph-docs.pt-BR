@@ -3,14 +3,14 @@ title: Obter intuneBrandingProfile
 description: Leia as propriedades e as relações do objeto intuneBrandingProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce961ceff0d53efa1cb427b57f08341025ef46a7
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6a094e95e4502edf4de758a05c010fec69466fd0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791621"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062474"
 ---
 # <a name="get-intunebrandingprofile"></a>Obter intuneBrandingProfile
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2247
+Content-Length: 2284
 
 {
   "value": {
@@ -127,12 +127,16 @@ Content-Length: 2247
     "showOfficeWebApps": true,
     "sendDeviceOwnershipChangePushNotification": true,
     "enrollmentAvailability": "availableWithoutPrompts",
+    "disableClientTelemetry": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ]
   }
 }
 ```
+
+
+
 
 
 
