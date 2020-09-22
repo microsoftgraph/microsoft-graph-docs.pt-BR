@@ -5,33 +5,33 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c6b10af0e4b32c37a5fe365dc8deedae63efc8c4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b5a4a09c96c5b3691c4cbcc285ac947c903ce50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046479"
 ---
-# <a name="teamsdeviceusagedistributionusercounts-resource-type"></a><span data-ttu-id="95c6d-103">tipo de recurso teamsDeviceUsageDistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="95c6d-103">teamsDeviceUsageDistributionUserCounts resource type</span></span>
+# <a name="teamsdeviceusagedistributionusercounts-resource-type"></a><span data-ttu-id="12521-103">tipo de recurso teamsDeviceUsageDistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="12521-103">teamsDeviceUsageDistributionUserCounts resource type</span></span>
 
-<span data-ttu-id="95c6d-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="95c6d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="12521-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="12521-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="95c6d-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="95c6d-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="12521-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="12521-105">Properties</span></span>
 
-| <span data-ttu-id="95c6d-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="95c6d-106">Property</span></span>          | <span data-ttu-id="95c6d-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="95c6d-107">Type</span></span>   |
+| <span data-ttu-id="12521-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="12521-106">Property</span></span>          | <span data-ttu-id="12521-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="12521-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="95c6d-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="95c6d-108">reportRefreshDate</span></span> | <span data-ttu-id="95c6d-109">Data</span><span class="sxs-lookup"><span data-stu-id="95c6d-109">Date</span></span>   |
-| <span data-ttu-id="95c6d-110">web</span><span class="sxs-lookup"><span data-stu-id="95c6d-110">web</span></span>               | <span data-ttu-id="95c6d-111">Int64</span><span class="sxs-lookup"><span data-stu-id="95c6d-111">Int64</span></span>  |
-| <span data-ttu-id="95c6d-112">Windowsphonee</span><span class="sxs-lookup"><span data-stu-id="95c6d-112">windowsPhone</span></span>      | <span data-ttu-id="95c6d-113">Int64</span><span class="sxs-lookup"><span data-stu-id="95c6d-113">Int64</span></span>  |
-| <span data-ttu-id="95c6d-114">androidPhone</span><span class="sxs-lookup"><span data-stu-id="95c6d-114">androidPhone</span></span>      | <span data-ttu-id="95c6d-115">Int64</span><span class="sxs-lookup"><span data-stu-id="95c6d-115">Int64</span></span>  |
-| <span data-ttu-id="95c6d-116">emiti</span><span class="sxs-lookup"><span data-stu-id="95c6d-116">ios</span></span>               | <span data-ttu-id="95c6d-117">Int64</span><span class="sxs-lookup"><span data-stu-id="95c6d-117">Int64</span></span>  |
-| <span data-ttu-id="95c6d-118">mac</span><span class="sxs-lookup"><span data-stu-id="95c6d-118">mac</span></span>               | <span data-ttu-id="95c6d-119">Int64</span><span class="sxs-lookup"><span data-stu-id="95c6d-119">Int64</span></span>  |
-| <span data-ttu-id="95c6d-120">Windows</span><span class="sxs-lookup"><span data-stu-id="95c6d-120">windows</span></span>           | <span data-ttu-id="95c6d-121">Int64</span><span class="sxs-lookup"><span data-stu-id="95c6d-121">Int64</span></span>  |
-| <span data-ttu-id="95c6d-122">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="95c6d-122">reportPeriod</span></span>      | <span data-ttu-id="95c6d-123">String</span><span class="sxs-lookup"><span data-stu-id="95c6d-123">String</span></span> |
+| <span data-ttu-id="12521-108">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="12521-108">reportRefreshDate</span></span> | <span data-ttu-id="12521-109">Data</span><span class="sxs-lookup"><span data-stu-id="12521-109">Date</span></span>   |
+| <span data-ttu-id="12521-110">web</span><span class="sxs-lookup"><span data-stu-id="12521-110">web</span></span>               | <span data-ttu-id="12521-111">Int64</span><span class="sxs-lookup"><span data-stu-id="12521-111">Int64</span></span>  |
+| <span data-ttu-id="12521-112">Windowsphonee</span><span class="sxs-lookup"><span data-stu-id="12521-112">windowsPhone</span></span>      | <span data-ttu-id="12521-113">Int64</span><span class="sxs-lookup"><span data-stu-id="12521-113">Int64</span></span>  |
+| <span data-ttu-id="12521-114">androidPhone</span><span class="sxs-lookup"><span data-stu-id="12521-114">androidPhone</span></span>      | <span data-ttu-id="12521-115">Int64</span><span class="sxs-lookup"><span data-stu-id="12521-115">Int64</span></span>  |
+| <span data-ttu-id="12521-116">emiti</span><span class="sxs-lookup"><span data-stu-id="12521-116">ios</span></span>               | <span data-ttu-id="12521-117">Int64</span><span class="sxs-lookup"><span data-stu-id="12521-117">Int64</span></span>  |
+| <span data-ttu-id="12521-118">mac</span><span class="sxs-lookup"><span data-stu-id="12521-118">mac</span></span>               | <span data-ttu-id="12521-119">Int64</span><span class="sxs-lookup"><span data-stu-id="12521-119">Int64</span></span>  |
+| <span data-ttu-id="12521-120">Windows</span><span class="sxs-lookup"><span data-stu-id="12521-120">windows</span></span>           | <span data-ttu-id="12521-121">Int64</span><span class="sxs-lookup"><span data-stu-id="12521-121">Int64</span></span>  |
+| <span data-ttu-id="12521-122">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="12521-122">reportPeriod</span></span>      | <span data-ttu-id="12521-123">String</span><span class="sxs-lookup"><span data-stu-id="12521-123">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="95c6d-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="95c6d-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="12521-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="12521-124">JSON representation</span></span>
 
-<span data-ttu-id="95c6d-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="95c6d-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="12521-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="12521-125">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -50,3 +50,5 @@ ms.locfileid: "42519873"
   "reportPeriod": "String"
 }
 ```
+
+

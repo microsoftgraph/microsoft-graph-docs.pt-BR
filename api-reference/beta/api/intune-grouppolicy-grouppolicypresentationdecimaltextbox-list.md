@@ -3,35 +3,35 @@ title: Listar groupPolicyPresentationDecimalTextBoxes
 description: Listar Propriedades e relações dos objetos groupPolicyPresentationDecimalTextBox.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e847e6a1b631a3897d2d773867fe69fb3f262312
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: de82a048a00cb88c21a12d9b2d7111e85740ebe2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047340"
 ---
-# <a name="list-grouppolicypresentationdecimaltextboxes"></a><span data-ttu-id="7034b-103">Listar groupPolicyPresentationDecimalTextBoxes</span><span class="sxs-lookup"><span data-stu-id="7034b-103">List groupPolicyPresentationDecimalTextBoxes</span></span>
+# <a name="list-grouppolicypresentationdecimaltextboxes"></a><span data-ttu-id="6b419-103">Listar groupPolicyPresentationDecimalTextBoxes</span><span class="sxs-lookup"><span data-stu-id="6b419-103">List groupPolicyPresentationDecimalTextBoxes</span></span>
 
-<span data-ttu-id="7034b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7034b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6b419-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6b419-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="7034b-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="7034b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="6b419-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="6b419-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7034b-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7034b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6b419-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6b419-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7034b-107">Listar Propriedades e relações dos objetos [groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="7034b-107">List properties and relationships of the [groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) objects.</span></span>
+<span data-ttu-id="6b419-107">Listar Propriedades e relações dos objetos [groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="6b419-107">List properties and relationships of the [groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7034b-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7034b-108">Prerequisites</span></span>
-<span data-ttu-id="7034b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7034b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6b419-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6b419-108">Prerequisites</span></span>
+<span data-ttu-id="6b419-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6b419-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7034b-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7034b-111">Permission type</span></span>|<span data-ttu-id="7034b-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="7034b-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6b419-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6b419-111">Permission type</span></span>|<span data-ttu-id="6b419-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="6b419-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7034b-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7034b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7034b-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="7034b-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="7034b-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7034b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7034b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7034b-116">Not supported.</span></span>|
-|<span data-ttu-id="7034b-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7034b-117">Application</span></span>|<span data-ttu-id="7034b-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="7034b-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="6b419-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6b419-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6b419-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="6b419-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="6b419-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6b419-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6b419-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6b419-116">Not supported.</span></span>|
+|<span data-ttu-id="6b419-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6b419-117">Application</span></span>|<span data-ttu-id="6b419-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="6b419-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7034b-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7034b-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6b419-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6b419-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ ms.locfileid: "43424429"
 GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7034b-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7034b-120">Request headers</span></span>
-|<span data-ttu-id="7034b-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7034b-121">Header</span></span>|<span data-ttu-id="7034b-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7034b-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6b419-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6b419-120">Request headers</span></span>
+|<span data-ttu-id="6b419-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6b419-121">Header</span></span>|<span data-ttu-id="6b419-122">Valor</span><span class="sxs-lookup"><span data-stu-id="6b419-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7034b-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="7034b-123">Authorization</span></span>|<span data-ttu-id="7034b-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7034b-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7034b-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="7034b-125">Accept</span></span>|<span data-ttu-id="7034b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7034b-126">application/json</span></span>|
+|<span data-ttu-id="6b419-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="6b419-123">Authorization</span></span>|<span data-ttu-id="6b419-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6b419-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6b419-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="6b419-125">Accept</span></span>|<span data-ttu-id="6b419-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6b419-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7034b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7034b-127">Request body</span></span>
-<span data-ttu-id="7034b-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7034b-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6b419-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6b419-127">Request body</span></span>
+<span data-ttu-id="6b419-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6b419-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7034b-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="7034b-129">Response</span></span>
-<span data-ttu-id="7034b-130">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7034b-130">If successful, this method returns a `200 OK` response code and a collection of [groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6b419-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b419-129">Response</span></span>
+<span data-ttu-id="6b419-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6b419-130">If successful, this method returns a `200 OK` response code and a collection of [groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7034b-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7034b-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6b419-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6b419-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7034b-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7034b-132">Request</span></span>
-<span data-ttu-id="7034b-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7034b-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="6b419-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6b419-132">Request</span></span>
+<span data-ttu-id="6b419-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6b419-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/presentations
 ```
 
-### <a name="response"></a><span data-ttu-id="7034b-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="7034b-134">Response</span></span>
-<span data-ttu-id="7034b-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7034b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6b419-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="6b419-134">Response</span></span>
+<span data-ttu-id="6b419-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6b419-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -84,6 +84,9 @@ Content-Length: 407
   ]
 }
 ```
+
+
+
 
 
 
