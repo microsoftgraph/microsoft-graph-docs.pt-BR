@@ -5,26 +5,26 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e341e7136697614b579773cbe113591a46bf2f91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4708d1d4350ec6f25c5bd4df4d68489163f8167c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095573"
 ---
-# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="76044-104">tipo de recurso educationAssignmentRecipient</span><span class="sxs-lookup"><span data-stu-id="76044-104">educationAssignmentRecipient resource type</span></span>
+# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="3db24-104">tipo de recurso educationAssignmentRecipient</span><span class="sxs-lookup"><span data-stu-id="3db24-104">educationAssignmentRecipient resource type</span></span>
 
-<span data-ttu-id="76044-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="76044-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3db24-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3db24-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="76044-106">Usada dentro da propriedade **assignments. assignTo** .</span><span class="sxs-lookup"><span data-stu-id="76044-106">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="76044-107">Essa superclasse é abstrata e você não pode definir a propriedade em assignments para esse valor.</span><span class="sxs-lookup"><span data-stu-id="76044-107">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="76044-108">Essa superclasse representa quem a atribuição deve ser atribuída quando a atribuição é publicada.</span><span class="sxs-lookup"><span data-stu-id="76044-108">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
+<span data-ttu-id="3db24-106">Usada dentro da propriedade **assignments. assignTo** .</span><span class="sxs-lookup"><span data-stu-id="3db24-106">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="3db24-107">Essa superclasse é abstrata e você não pode definir a propriedade em assignments para esse valor.</span><span class="sxs-lookup"><span data-stu-id="3db24-107">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="3db24-108">Essa superclasse representa quem a atribuição deve ser atribuída quando a atribuição é publicada.</span><span class="sxs-lookup"><span data-stu-id="3db24-108">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
 
 
-<span data-ttu-id="76044-109">O recurso [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) é uma subclasse dessa superclasse.</span><span class="sxs-lookup"><span data-stu-id="76044-109">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
+<span data-ttu-id="3db24-109">O recurso [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) é uma subclasse dessa superclasse.</span><span class="sxs-lookup"><span data-stu-id="3db24-109">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="76044-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="76044-110">Properties</span></span>
-<span data-ttu-id="76044-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="76044-111">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="3db24-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3db24-110">Properties</span></span>
+<span data-ttu-id="3db24-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="3db24-111">None.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -54,3 +54,5 @@ ms.locfileid: "42502442"
   "suppressions": []
 }
 -->
+
+

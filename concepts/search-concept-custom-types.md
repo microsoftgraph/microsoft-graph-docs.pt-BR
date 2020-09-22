@@ -1,40 +1,48 @@
 ---
 title: Usar a API de pesquisa da Microsoft no Microsoft Graph para Pesquisar tipos personalizados
-description: Você pode usar a API de pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) e executar consultas de pesquisa nesse conteúdo externo.
+description: Você pode usar a API de pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) e executar consultas de pesquisa nesse conteúdo externo.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 875d6e928f5136ec0b33d013cc111739a3b6067e
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: b125b8f923e941ad73d5c578e99a67fdd9ea9eea
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142306"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192599"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-custom-types"></a><span data-ttu-id="55d72-103">Usar a API de pesquisa da Microsoft no Microsoft Graph para Pesquisar tipos personalizados</span><span class="sxs-lookup"><span data-stu-id="55d72-103">Use the Microsoft Search API in Microsoft Graph to search custom types</span></span>
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a><span data-ttu-id="7bc50-103">Usar a API de pesquisa da Microsoft para Pesquisar tipos personalizados importados usando conectores do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="7bc50-103">Use the Microsoft Search API to search custom types imported using Microsoft Graph connectors</span></span>
 
-<span data-ttu-id="55d72-104">Você pode usar a API de pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) e executar consultas de pesquisa nesse conteúdo externo.</span><span class="sxs-lookup"><span data-stu-id="55d72-104">You can use the Microsoft Search API to import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource, and run search queries on this external content.</span></span>
+<span data-ttu-id="7bc50-104">Use a API de pesquisa da Microsoft para pesquisar conteúdo ingerido e indexado pelos [conectores do Microsoft Graph](https://docs.microsoft.com/microsoftsearch/connectors-overview).</span><span class="sxs-lookup"><span data-stu-id="7bc50-104">Use the Microsoft Search API to search accross content ingested and indexed by [Microsoft Graph connectors](https://docs.microsoft.com/microsoftsearch/connectors-overview).</span></span> <span data-ttu-id="7bc50-105">O conteúdo é importado por meio de [conectores internos](https://docs.microsoft.com/microsoftsearch/connectors-gallery) fornecidos pela Microsoft ou por meio de conectores personalizados implementados usando a [API de inclusão de conectores do Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="7bc50-105">The content is imported either via [built-in connectors](https://docs.microsoft.com/microsoftsearch/connectors-gallery) provided by Microsoft, or via custom connectors implemented using the [Microsoft Graph connectors ingestion API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).</span></span>
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-<span data-ttu-id="55d72-105">Para Pesquisar tipos personalizados, especifique o seguinte no corpo da solicitação do método de [consulta](/graph/api/search-query?view=graph-rest-beta) :</span><span class="sxs-lookup"><span data-stu-id="55d72-105">To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:</span></span>
+[!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-- <span data-ttu-id="55d72-106">A propriedade **ContentSources** para incluir a ID de conexão atribuída durante a configuração do conector</span><span class="sxs-lookup"><span data-stu-id="55d72-106">The **contentSources** property to include the connection ID that is assigned during the connector setup</span></span>
+<span data-ttu-id="7bc50-106">Após o conteúdo ter sido importado e indexado, você poderá usar a API de pesquisa para consultar o conteúdo.</span><span class="sxs-lookup"><span data-stu-id="7bc50-106">Once the content has been imported and indexed, you can use the search API to query the content.</span></span>
 
-- <span data-ttu-id="55d72-107">A propriedade **EntityTypes** como`externalItem`</span><span class="sxs-lookup"><span data-stu-id="55d72-107">The **entityTypes** property as `externalItem`</span></span>
+<span data-ttu-id="7bc50-107">Para Pesquisar tipos personalizados, especifique as propriedades a seguir no corpo da solicitação do método de [consulta](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) :</span><span class="sxs-lookup"><span data-stu-id="7bc50-107">To search for custom types, specify the following properties in the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method:</span></span>
 
-- <span data-ttu-id="55d72-108">A propriedade **stored_fields** para incluir os campos no item externo que você deseja recuperar</span><span class="sxs-lookup"><span data-stu-id="55d72-108">The **stored_fields** property to include the fields in the external item you want to retrieve</span></span>
+- <span data-ttu-id="7bc50-108">A propriedade **ContentSources** para incluir a ID de conexão atribuída durante a configuração do conector.</span><span class="sxs-lookup"><span data-stu-id="7bc50-108">The **contentSources** property to include the connection ID that is assigned during the connector setup.</span></span> <span data-ttu-id="7bc50-109">Você pode passar várias IDs de conexão para pesquisar em várias conexões.</span><span class="sxs-lookup"><span data-stu-id="7bc50-109">You can pass multiple connection IDs to search across multiple connections.</span></span> <span data-ttu-id="7bc50-110">Os resultados são retornados em uma única lista, classificados por várias conexões.</span><span class="sxs-lookup"><span data-stu-id="7bc50-110">Results are returned in a single list, ranked accross the multiple connections.</span></span>
 
-## <a name="example"></a><span data-ttu-id="55d72-109">Exemplo</span><span class="sxs-lookup"><span data-stu-id="55d72-109">Example</span></span>
+<!--
+TODOSEARCHAPI - Bug 1653398 
+-->
 
-### <a name="request"></a><span data-ttu-id="55d72-110">Solicitação</span><span class="sxs-lookup"><span data-stu-id="55d72-110">Request</span></span>
+- <span data-ttu-id="7bc50-111">A propriedade **EntityTypes** como `externalItem` .</span><span class="sxs-lookup"><span data-stu-id="7bc50-111">The **entityTypes** property as `externalItem`.</span></span>
+
+- <span data-ttu-id="7bc50-112">A propriedade **Fields** para incluir os campos no item externo a serem recuperados.</span><span class="sxs-lookup"><span data-stu-id="7bc50-112">The **fields** property to include the fields in the external item to retrieve.</span></span>
+
+## <a name="example"></a><span data-ttu-id="7bc50-113">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7bc50-113">Example</span></span>
+
+<span data-ttu-id="7bc50-114">Neste exemplo, o conteúdo do banco de dados [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) foi incluído usando o conector interno do Azure SQL.</span><span class="sxs-lookup"><span data-stu-id="7bc50-114">In this example, the content of the [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.</span></span>
+
+### <a name="request"></a><span data-ttu-id="7bc50-115">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7bc50-115">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -42,69 +50,69 @@ Content-Type: application/json
         "externalItem"
       ],
       "contentSources": [
-        "/external/connections/servicenow-connector-contoso"
+          "/external/connections/azuresqlconnector",
+          "/external/connections/azuresqlconnector2"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso tickets"
-        }
+        "queryString": "yang"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
-        "number",
-        "shortdescription",
-        "syscreatedon",
-        "accessurl",
-        "previewContent"
+      "fields": [
+        "BusinessEntityID",
+        "firstName",
+        "lastName"
       ]
     }
   ]
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="55d72-111">Resposta</span><span class="sxs-lookup"><span data-stu-id="55d72-111">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7bc50-116">Resposta</span><span class="sxs-lookup"><span data-stu-id="7bc50-116">Response</span></span>
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
+      "searchTerms": ["ya"],
       "hitsContainers": [
         {
           "total": 2,
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "AAMkADc0NDNlNTE0",
-              "_score": 1,
-              "_sortField": "Relevance",
-              "_source": {
+              "hitId": "AAMkADc0NDNlNTE0",
+              "rank": 1,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0010025",
-                  "shortdescription": "Contoso maintenance guidelines",
-                  "syscreatedon": "2019-10-14T22:45:02Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=6b5465781ba000104793877ddc4bcb81",
-                  "previewContent": "Contoso maintenance guidelines"
+                  "businessEntityID": 20704,
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
             },
-            {
-              "_id": "MG+1glPAAAAAAl3AAA=",
-              "_score": 2,
-              "_sortField": "Relevance",
-              "_source": {
+           {
+              "hitId": "AQMkADg3M2I3YWMyLTEwZ",
+              "rank": 2,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector2",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0054396",
-                  "shortdescription": "Contoso : Setting Office for the first time.",
-                  "syscreatedon": "2019-08-09T01:53:26Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=004d8d931b0733004793877ddc4bcb29",
-                  "previewContent": "Description:  Setting Office for the first time.  Resolution:    To setup any Office app for the first time, tap any Office app like Word to launch it.    Tap Sign in if you already have a Microsoft Account or a Microsoft 365 work or school account."
+                  "businessEntityID": 20704,
+                  "shortdescription": "Contoso maintenance guidelines",
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
-            }
+            },
           ]
         }
       ]
@@ -113,12 +121,10 @@ Content-Type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="55d72-112">Limitações conhecidas</span><span class="sxs-lookup"><span data-stu-id="55d72-112">Known limitations</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="7bc50-117">Limitações conhecidas</span><span class="sxs-lookup"><span data-stu-id="7bc50-117">Known limitations</span></span>
 
-- <span data-ttu-id="55d72-113">Tipos personalizados não dão suporte à pesquisa em várias fontes (especificado em **ContentSources**).</span><span class="sxs-lookup"><span data-stu-id="55d72-113">Custom types don’t support searching across multiple sources (specified in **contentSources**).</span></span> <span data-ttu-id="55d72-114">Você pode pesquisar apenas uma conexão por vez.</span><span class="sxs-lookup"><span data-stu-id="55d72-114">You can search only one connection at a time.</span></span>
+- <span data-ttu-id="7bc50-118">Você deve especificar a propriedade **Fields** para obter campos recuperáveis no esquema de pesquisa.</span><span class="sxs-lookup"><span data-stu-id="7bc50-118">You must specify the **fields** property to get retrievable fields in the search schema.</span></span>
 
-- <span data-ttu-id="55d72-115">Você deve especificar a propriedade **stored_fields** ; caso contrário, os resultados da pesquisa não serão retornados.</span><span class="sxs-lookup"><span data-stu-id="55d72-115">You must specify the **stored_fields** property; otherwise, search results are not returned.</span></span>
+## <a name="next-steps"></a><span data-ttu-id="7bc50-119">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="7bc50-119">Next steps</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="55d72-116">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="55d72-116">Next steps</span></span>
-
-- [<span data-ttu-id="55d72-117">Usar a API de Pesquisa da Microsoft para consultar dados</span><span class="sxs-lookup"><span data-stu-id="55d72-117">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [<span data-ttu-id="7bc50-120">Usar a API de Pesquisa da Microsoft para consultar dados</span><span class="sxs-lookup"><span data-stu-id="7bc50-120">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

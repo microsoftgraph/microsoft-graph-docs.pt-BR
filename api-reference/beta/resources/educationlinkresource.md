@@ -5,30 +5,30 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a41b7187b630ec1b7359edf44f25f1741819bdf1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 43c0c3ebf82becb1c82f447600073162af533837
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095328"
 ---
-# <a name="educationlinkresource-resource-type"></a><span data-ttu-id="19c19-104">tipo de recurso educationLinkResource</span><span class="sxs-lookup"><span data-stu-id="19c19-104">educationLinkResource resource type</span></span>
+# <a name="educationlinkresource-resource-type"></a><span data-ttu-id="89447-104">tipo de recurso educationLinkResource</span><span class="sxs-lookup"><span data-stu-id="89447-104">educationLinkResource resource type</span></span>
 
-<span data-ttu-id="19c19-105">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="19c19-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="89447-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89447-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="19c19-106">Uma subclasse de [educationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="19c19-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="19c19-107">Este recurso é um link e não tem dados adicionais associados a ele.</span><span class="sxs-lookup"><span data-stu-id="19c19-107">This resource is a link and does not have any additional data associated with it.</span></span>
+<span data-ttu-id="89447-106">Uma subclasse de [educationResource](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="89447-106">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="89447-107">Este recurso é um link e não tem dados adicionais associados a ele.</span><span class="sxs-lookup"><span data-stu-id="89447-107">This resource is a link and does not have any additional data associated with it.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="19c19-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="19c19-108">Properties</span></span>
-| <span data-ttu-id="19c19-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="19c19-109">Property</span></span>     | <span data-ttu-id="19c19-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="19c19-110">Type</span></span>   |<span data-ttu-id="19c19-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="19c19-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="89447-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="89447-108">Properties</span></span>
+| <span data-ttu-id="89447-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="89447-109">Property</span></span>     | <span data-ttu-id="89447-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="89447-110">Type</span></span>   |<span data-ttu-id="89447-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="89447-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="19c19-112">vínculo</span><span class="sxs-lookup"><span data-stu-id="19c19-112">link</span></span>|<span data-ttu-id="19c19-113">String</span><span class="sxs-lookup"><span data-stu-id="19c19-113">String</span></span>|<span data-ttu-id="19c19-114">URL para o recurso.</span><span class="sxs-lookup"><span data-stu-id="19c19-114">URL to the resource.</span></span>|
+|<span data-ttu-id="89447-112">vínculo</span><span class="sxs-lookup"><span data-stu-id="89447-112">link</span></span>|<span data-ttu-id="89447-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="89447-113">String</span></span>|<span data-ttu-id="89447-114">URL para o recurso.</span><span class="sxs-lookup"><span data-stu-id="89447-114">URL to the resource.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="19c19-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="19c19-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="89447-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="89447-115">JSON representation</span></span>
 
-<span data-ttu-id="19c19-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="19c19-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="89447-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="89447-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -57,3 +57,5 @@ ms.locfileid: "42501784"
   "suppressions": []
 }
 -->
+
+
