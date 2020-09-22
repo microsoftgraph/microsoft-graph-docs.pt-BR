@@ -3,45 +3,45 @@ title: tipo de recurso officeConfiguration
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de dispositivos.
 localization_priority: Normal
 author: dougeby
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 203efb4eab301f64eedfaceeba0e007c1a0b0123
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 927a3821ee414b1df7f5135c0be149bdd72fcfef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43362607"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48076228"
 ---
-# <a name="officeconfiguration-resource-type"></a><span data-ttu-id="04059-103">tipo de recurso officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="04059-103">officeConfiguration resource type</span></span>
+# <a name="officeconfiguration-resource-type"></a><span data-ttu-id="09b17-103">tipo de recurso officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="09b17-103">officeConfiguration resource type</span></span>
 
-<span data-ttu-id="04059-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="04059-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="09b17-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="09b17-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="04059-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="04059-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="09b17-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="09b17-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="04059-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="04059-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="09b17-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="09b17-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="04059-107">Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="04059-107">Singleton entity that acts as a container for all device management functionality.</span></span>
+<span data-ttu-id="09b17-107">Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="09b17-107">Singleton entity that acts as a container for all device management functionality.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="04059-108">Métodos</span><span class="sxs-lookup"><span data-stu-id="04059-108">Methods</span></span>
-|<span data-ttu-id="04059-109">Método</span><span class="sxs-lookup"><span data-stu-id="04059-109">Method</span></span>|<span data-ttu-id="04059-110">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="04059-110">Return Type</span></span>|<span data-ttu-id="04059-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="04059-111">Description</span></span>|
+## <a name="methods"></a><span data-ttu-id="09b17-108">Métodos</span><span class="sxs-lookup"><span data-stu-id="09b17-108">Methods</span></span>
+|<span data-ttu-id="09b17-109">Método</span><span class="sxs-lookup"><span data-stu-id="09b17-109">Method</span></span>|<span data-ttu-id="09b17-110">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="09b17-110">Return Type</span></span>|<span data-ttu-id="09b17-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="09b17-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="04059-112">Obter officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="04059-112">Get officeConfiguration</span></span>|[<span data-ttu-id="04059-113">officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="04059-113">officeConfiguration</span></span>](../resources/intune-cirrus-officeconfiguration.md)|<span data-ttu-id="04059-114">Leia as propriedades e as relações do objeto [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="04059-114">Read properties and relationships of the [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) object.</span></span>|
-|<span data-ttu-id="04059-115">Atualizar officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="04059-115">Update officeConfiguration</span></span>|[<span data-ttu-id="04059-116">officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="04059-116">officeConfiguration</span></span>](../resources/intune-cirrus-officeconfiguration.md)|<span data-ttu-id="04059-117">Atualiza as propriedades de um objeto [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="04059-117">Update the properties of a [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) object.</span></span>|
+|<span data-ttu-id="09b17-112">Obter officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="09b17-112">Get officeConfiguration</span></span>|[<span data-ttu-id="09b17-113">officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="09b17-113">officeConfiguration</span></span>](../resources/intune-cirrus-officeconfiguration.md)|<span data-ttu-id="09b17-114">Leia as propriedades e as relações do objeto [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="09b17-114">Read properties and relationships of the [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) object.</span></span>|
+|<span data-ttu-id="09b17-115">Atualizar officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="09b17-115">Update officeConfiguration</span></span>|[<span data-ttu-id="09b17-116">officeConfiguration</span><span class="sxs-lookup"><span data-stu-id="09b17-116">officeConfiguration</span></span>](../resources/intune-cirrus-officeconfiguration.md)|<span data-ttu-id="09b17-117">Atualiza as propriedades de um objeto [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="09b17-117">Update the properties of a [officeConfiguration](../resources/intune-cirrus-officeconfiguration.md) object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="04059-118">Propriedades</span><span class="sxs-lookup"><span data-stu-id="04059-118">Properties</span></span>
-|<span data-ttu-id="04059-119">Propriedade</span><span class="sxs-lookup"><span data-stu-id="04059-119">Property</span></span>|<span data-ttu-id="04059-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="04059-120">Type</span></span>|<span data-ttu-id="04059-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="04059-121">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="09b17-118">Propriedades</span><span class="sxs-lookup"><span data-stu-id="09b17-118">Properties</span></span>
+|<span data-ttu-id="09b17-119">Propriedade</span><span class="sxs-lookup"><span data-stu-id="09b17-119">Property</span></span>|<span data-ttu-id="09b17-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="09b17-120">Type</span></span>|<span data-ttu-id="09b17-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="09b17-121">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="04059-122">id</span><span class="sxs-lookup"><span data-stu-id="04059-122">id</span></span>|<span data-ttu-id="04059-123">String</span><span class="sxs-lookup"><span data-stu-id="04059-123">String</span></span>|<span data-ttu-id="04059-124">ID da configuração do Office.</span><span class="sxs-lookup"><span data-stu-id="04059-124">Id of the office configuration.</span></span>|
-|<span data-ttu-id="04059-125">tenantCheckinStatuses</span><span class="sxs-lookup"><span data-stu-id="04059-125">tenantCheckinStatuses</span></span>|<span data-ttu-id="04059-126">coleção [officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)</span><span class="sxs-lookup"><span data-stu-id="04059-126">[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) collection</span></span>|<span data-ttu-id="04059-127">Lista de status de check-in do cliente do Office.</span><span class="sxs-lookup"><span data-stu-id="04059-127">List of office Client check-in status.</span></span>|
-|<span data-ttu-id="04059-128">tenantUserCheckinSummary</span><span class="sxs-lookup"><span data-stu-id="04059-128">tenantUserCheckinSummary</span></span>|[<span data-ttu-id="04059-129">officeUserCheckinSummary</span><span class="sxs-lookup"><span data-stu-id="04059-129">officeUserCheckinSummary</span></span>](../resources/intune-cirrus-officeusercheckinsummary.md)|<span data-ttu-id="04059-130">Entidade que descreve o check-in do locatário Statues</span><span class="sxs-lookup"><span data-stu-id="04059-130">Entity that describes tenant check-in statues</span></span>|
+|<span data-ttu-id="09b17-122">id</span><span class="sxs-lookup"><span data-stu-id="09b17-122">id</span></span>|<span data-ttu-id="09b17-123">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="09b17-123">String</span></span>|<span data-ttu-id="09b17-124">ID da configuração do Office.</span><span class="sxs-lookup"><span data-stu-id="09b17-124">Id of the office configuration.</span></span>|
+|<span data-ttu-id="09b17-125">tenantCheckinStatuses</span><span class="sxs-lookup"><span data-stu-id="09b17-125">tenantCheckinStatuses</span></span>|<span data-ttu-id="09b17-126">coleção [officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)</span><span class="sxs-lookup"><span data-stu-id="09b17-126">[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) collection</span></span>|<span data-ttu-id="09b17-127">Lista de status de check-in do cliente do Office.</span><span class="sxs-lookup"><span data-stu-id="09b17-127">List of office Client check-in status.</span></span>|
+|<span data-ttu-id="09b17-128">tenantUserCheckinSummary</span><span class="sxs-lookup"><span data-stu-id="09b17-128">tenantUserCheckinSummary</span></span>|[<span data-ttu-id="09b17-129">officeUserCheckinSummary</span><span class="sxs-lookup"><span data-stu-id="09b17-129">officeUserCheckinSummary</span></span>](../resources/intune-cirrus-officeusercheckinsummary.md)|<span data-ttu-id="09b17-130">Entidade que descreve o check-in do locatário Statues</span><span class="sxs-lookup"><span data-stu-id="09b17-130">Entity that describes tenant check-in statues</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="04059-131">Relações</span><span class="sxs-lookup"><span data-stu-id="04059-131">Relationships</span></span>
-|<span data-ttu-id="04059-132">Relação</span><span class="sxs-lookup"><span data-stu-id="04059-132">Relationship</span></span>|<span data-ttu-id="04059-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="04059-133">Type</span></span>|<span data-ttu-id="04059-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="04059-134">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="09b17-131">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="09b17-131">Relationships</span></span>
+|<span data-ttu-id="09b17-132">Relação</span><span class="sxs-lookup"><span data-stu-id="09b17-132">Relationship</span></span>|<span data-ttu-id="09b17-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="09b17-133">Type</span></span>|<span data-ttu-id="09b17-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="09b17-134">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="04059-135">clientConfigurations</span><span class="sxs-lookup"><span data-stu-id="04059-135">clientConfigurations</span></span>|<span data-ttu-id="04059-136">coleção [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="04059-136">[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) collection</span></span>|<span data-ttu-id="04059-137">Lista de configurações do cliente do Office.</span><span class="sxs-lookup"><span data-stu-id="04059-137">List of office Client configuration.</span></span>|
+|<span data-ttu-id="09b17-135">clientConfigurations</span><span class="sxs-lookup"><span data-stu-id="09b17-135">clientConfigurations</span></span>|<span data-ttu-id="09b17-136">coleção [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="09b17-136">[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) collection</span></span>|<span data-ttu-id="09b17-137">Lista de configurações do cliente do Office.</span><span class="sxs-lookup"><span data-stu-id="09b17-137">List of office Client configuration.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="04059-138">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="04059-138">JSON Representation</span></span>
-<span data-ttu-id="04059-139">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="04059-139">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="09b17-138">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="09b17-138">JSON Representation</span></span>
+<span data-ttu-id="09b17-139">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="09b17-139">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -75,6 +75,9 @@ ms.locfileid: "43362607"
   }
 }
 ```
+
+
+
 
 
 

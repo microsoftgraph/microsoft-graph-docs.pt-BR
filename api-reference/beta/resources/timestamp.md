@@ -5,24 +5,24 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: JeremyKelley
-ms.openlocfilehash: 1037212f1adb0fb10326bbdf88416877e16a9fbe
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 295c4c8b4cee6ba476b5bae57ebd71de8d107c1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810990"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48075392"
 ---
-# <a name="timestamp-resource-type"></a><span data-ttu-id="ebe28-103">tipo de recurso timeStamp</span><span class="sxs-lookup"><span data-stu-id="ebe28-103">timeStamp resource type</span></span>
+# <a name="timestamp-resource-type"></a><span data-ttu-id="614c6-103">tipo de recurso timeStamp</span><span class="sxs-lookup"><span data-stu-id="614c6-103">timeStamp resource type</span></span>
 
-<span data-ttu-id="ebe28-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ebe28-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="614c6-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="614c6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ebe28-105">Informações de data e hora para um ponto no tempo.</span><span class="sxs-lookup"><span data-stu-id="ebe28-105">Date and time information for a point in time.</span></span>
+<span data-ttu-id="614c6-105">Informações de data e hora para um ponto no tempo.</span><span class="sxs-lookup"><span data-stu-id="614c6-105">Date and time information for a point in time.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ebe28-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ebe28-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="614c6-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="614c6-106">JSON representation</span></span>
 
-<span data-ttu-id="ebe28-107">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="ebe28-107">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="614c6-107">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="614c6-107">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,12 +40,12 @@ ms.locfileid: "46810990"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="ebe28-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ebe28-108">Properties</span></span>
-| <span data-ttu-id="ebe28-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ebe28-109">Property</span></span>     | <span data-ttu-id="ebe28-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="ebe28-110">Type</span></span>   |<span data-ttu-id="ebe28-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="ebe28-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="614c6-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="614c6-108">Properties</span></span>
+| <span data-ttu-id="614c6-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="614c6-109">Property</span></span>     | <span data-ttu-id="614c6-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="614c6-110">Type</span></span>   |<span data-ttu-id="614c6-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="614c6-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ebe28-112">data</span><span class="sxs-lookup"><span data-stu-id="ebe28-112">date</span></span>|<span data-ttu-id="ebe28-113">Data</span><span class="sxs-lookup"><span data-stu-id="ebe28-113">Date</span></span>|<span data-ttu-id="ebe28-114">A parte de data do carimbo de data/hora.</span><span class="sxs-lookup"><span data-stu-id="ebe28-114">The date portion of the timestamp.</span></span>|
-|<span data-ttu-id="ebe28-115">time</span><span class="sxs-lookup"><span data-stu-id="ebe28-115">time</span></span>|<span data-ttu-id="ebe28-116">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="ebe28-116">TimeOfDay</span></span>|<span data-ttu-id="ebe28-117">A parte de tempo do carimbo de data/hora.</span><span class="sxs-lookup"><span data-stu-id="ebe28-117">The time portion of the timestamp.</span></span>|
-|<span data-ttu-id="ebe28-118">timeZone</span><span class="sxs-lookup"><span data-stu-id="ebe28-118">timeZone</span></span>|<span data-ttu-id="ebe28-119">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ebe28-119">String</span></span>|<span data-ttu-id="ebe28-120">A parte de fuso horário do carimbo de data/hora, que é uma das 24 áreas de longitudinal do mundo.</span><span class="sxs-lookup"><span data-stu-id="ebe28-120">The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.</span></span>|
+|<span data-ttu-id="614c6-112">data</span><span class="sxs-lookup"><span data-stu-id="614c6-112">date</span></span>|<span data-ttu-id="614c6-113">Data</span><span class="sxs-lookup"><span data-stu-id="614c6-113">Date</span></span>|<span data-ttu-id="614c6-114">A parte de data do carimbo de data/hora.</span><span class="sxs-lookup"><span data-stu-id="614c6-114">The date portion of the timestamp.</span></span>|
+|<span data-ttu-id="614c6-115">time</span><span class="sxs-lookup"><span data-stu-id="614c6-115">time</span></span>|<span data-ttu-id="614c6-116">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="614c6-116">TimeOfDay</span></span>|<span data-ttu-id="614c6-117">A parte de tempo do carimbo de data/hora.</span><span class="sxs-lookup"><span data-stu-id="614c6-117">The time portion of the timestamp.</span></span>|
+|<span data-ttu-id="614c6-118">timeZone</span><span class="sxs-lookup"><span data-stu-id="614c6-118">timeZone</span></span>|<span data-ttu-id="614c6-119">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="614c6-119">String</span></span>|<span data-ttu-id="614c6-120">A parte de fuso horário do carimbo de data/hora, que é uma das 24 áreas de longitudinal do mundo.</span><span class="sxs-lookup"><span data-stu-id="614c6-120">The timezone portion of the timestamp, which is one of the 24 longitudinal areas in the world.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -59,3 +59,5 @@ ms.locfileid: "46810990"
   "suppressions": []
 }
 -->
+
+
