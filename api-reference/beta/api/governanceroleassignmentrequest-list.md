@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 48700bebc5ae99db5cccb017eb316a55283a4fa7
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 78c685c1f2234ad2cd3815eef0d34a3fc3ee0dac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991079"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>Listar governanceRoleAssignmentRequests
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PrivilegedAccess. Read. AzureResources |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | PrivilegedAccess. Read. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq
 
 Liste uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão com decisões de administrador pendentes.
     
->**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos `Active` uma atribuição de função`owner` de `user access administrator`administrador (ou) no recurso.
+>**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma `Active` atribuição de função de administrador ( `owner` ou `user access administrator` ) no recurso.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -65,7 +65,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 <!-- {
@@ -177,3 +177,5 @@ Content-length: 279
   "suppressions": []
 }
 -->
+
+

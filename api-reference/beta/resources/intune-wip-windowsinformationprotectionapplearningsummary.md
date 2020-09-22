@@ -3,14 +3,14 @@ title: Tipo de recurso windowsInformationProtectionAppLearningSummary
 description: Entidade de Resumo de AppLearning da Proteção de Informações do Windows
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6d4a8a1d29077b0beb74b608794cce7ec12eebd0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 35e0ef26027548df06aa6dbdaf6b5e9ab0864786
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471942"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989077"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionAppLearningSummary
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Entidade de Resumo de AppLearning da Proteção de Informações do Windows
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsInformationProtectionAppLearningSummaries](../api/intune-wip-windowsinformationprotectionapplearningsummary-list.md)|Conjunto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md)|Listar propriedades e relações de objetos de [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).|
@@ -59,6 +59,9 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCount": 1024
 }
 ```
+
+
+
 
 
 

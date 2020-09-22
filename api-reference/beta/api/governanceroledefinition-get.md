@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 55dbc8933c9adeda1bcd2d40c5ed9c54de7dd55a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d9cf9f091581678da3b22585c75c163537bfe163
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218854"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991037"
 ---
 # <a name="get-governanceroledefinition"></a>Obter governanceRoleDefinition
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PrivilegedAccess. Read. AzureResources |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | PrivilegedAccess. Read. AzureResources |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso ao qual o [governanceRoleDefinition](../resources/governanceroledefinition.md) pertence.
 
@@ -93,3 +93,5 @@ Content-length: 174
   "suppressions": []
 }
 -->
+
+

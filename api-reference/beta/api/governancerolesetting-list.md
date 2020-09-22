@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 93a0154c2e847b5130da0ab603b566037190ed3f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 779d1209d7aa41a5f4770fd07f793e2492086a95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215732"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991009"
 ---
 # <a name="list-governancerolesettings"></a>Listar governanceRoleSettings
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PrivilegedAccess. Read. AzureResources |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | PrivilegedAccess. Read. AzureResources |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,7 +48,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Este exemplo mostra como um administrador lista as configurações de função para o recurso Wingtip Toys-prod. 
@@ -186,3 +186,5 @@ Content-length: 463
   "suppressions": []
 }
 -->
+
+

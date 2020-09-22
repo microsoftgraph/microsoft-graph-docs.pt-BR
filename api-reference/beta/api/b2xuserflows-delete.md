@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0da0f07f121ae23be2b2f6f33584d3de9c6157e5
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 586af0af699aa528dfe6b0a7d15988e9edca3e0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329380"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991429"
 ---
 # <a name="delete-b2xuserflow"></a>Excluir b2xUserFlow
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow. ReadWrite. All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
@@ -103,3 +103,5 @@ Este é um exemplo de resposta.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

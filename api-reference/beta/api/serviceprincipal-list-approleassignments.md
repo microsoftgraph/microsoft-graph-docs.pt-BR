@@ -1,16 +1,16 @@
 ---
 title: Listar appRoleAssignments concedidos a uma entidade de serviço
-description: Recupere a lista de atribuições de função de aplicativo concedidas a uma entidade de serviço.
+description: Recuperar a lista de atribuições de funções do aplicativo concedidas a uma entidade de serviço.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: b9d18d0b0d2b069847a564c8543ade0b73559af9
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 86779e6ce137e64770b5d55a416fba99b6f8d4aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383249"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989910"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Listar appRoleAssignments concedidos a uma entidade de serviço
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de [appRoleAssignment](../resources/approleassignment.md) que foram concedidas a uma entidade de serviço.
+Recuperar a lista[appRoleAssignment](../resources/approleassignment.md) concedida a uma entidade de serviço.
 
-As funções de aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). As permissões de aplicativo podem ser concedidas diretamente criando atribuições de função de aplicativo ou por meio de uma [experiência de consentimento](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+As funções do aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). As permissões de aplicativo podem ser concedidas diretamente, criando atribuições de função de aplicativo ou por meio de uma [experiência de consentimento](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,9 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. Read. All, Directory. Read. All, Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. Read. All, Directory. Read. All, Application. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -135,3 +135,5 @@ Content-length: 306
   ]
 }
 -->
+
+

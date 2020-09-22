@@ -5,12 +5,12 @@ localization_priority: Normal
 author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 41641cbd66945a9d55523d2c6518f13fb45a23ce
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 0e210def9b58a6ff5a9abe295ec869bb6ab88051
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287474"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989070"
 ---
 # <a name="invitation-resource-type"></a>tipo de recurso convite
 
@@ -32,7 +32,7 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 >[!NOTE]
 >O status do convite é rastreado usando as propriedades **externalUserState** e **externalUserStateChangeDateTime** no recurso de [usuário](user.md) externo criado como parte da solicitação de convite.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Criar convite](../api/invitation-post.md) | invitation | Escreva as propriedades e os relacionamentos do objeto invitation.|
@@ -96,3 +96,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

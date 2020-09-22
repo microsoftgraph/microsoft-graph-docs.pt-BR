@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5002a13c69f1791a3ba0b5b24030a47dc0d4b4d7
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 874b957b9a0d89194fde98a3ad6e620f69549882
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329744"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991510"
 ---
 # <a name="get-b2cuserflow"></a>Obter b2cUserFlow
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
@@ -126,3 +126,5 @@ Content-type: application/json
     "Error: get_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
+
+

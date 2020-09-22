@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9c2bd3d36d441addd6af105823bd7ca3c65ae73b
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: ad0f2dbb064620d64b6abcda926775887bd0a4eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872632"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990855"
 ---
 # <a name="list-group-transitive-members"></a>Listar membros transitivos de grupo
 
@@ -51,7 +51,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query_paramete
 | Nome | Descrição |
 |:---- |:----------- |
 | Autorização  | {token} de portador. Obrigatório. |
-| ConsistencyLevel | eventualmente. Esse cabeçalho e `$count` são necessários ao usar os `$search` parâmetros de consulta de conversão de,, `$filter` `$orderby` ou OData. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
+| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, `$filter`, `$orderby` ou os parâmetros de consulta de conversão OData. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -304,3 +304,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Obter Entidadeandroidworkprofilescepcertificateprofile
 description: Leia as propriedades e as relações do objeto Entidadeandroidworkprofilescepcertificateprofile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c365ca2beeeb9cf0f0404b10671d6d5a308dc1da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f823436034e7b13bee0ebd8458272f8dfdc3c05f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434777"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990211"
 ---
 # <a name="get-androidworkprofilescepcertificateprofile"></a>Obter Entidadeandroidworkprofilescepcertificateprofile
 
@@ -137,6 +137,9 @@ Content-Length: 2293
   }
 }
 ```
+
+
+
 
 
 

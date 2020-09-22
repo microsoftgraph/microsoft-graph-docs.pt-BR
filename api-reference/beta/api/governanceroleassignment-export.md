@@ -1,16 +1,16 @@
 ---
 title: Exportar governanceRoleAssignmentRequests
-description: Recupere uma coleção de governanceRoleAssignmentRequests no formato `application/octet-stream`, que pode ser analisado como um arquivo. csv no navegador.
+description: Recupere uma coleção de governanceRoleAssignmentRequests no formato `application/octet-stream` , que pode ser analisado como um arquivo. csv no navegador.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: b09eaa5cfe3c4530faedbfd52d2f9b52bd41f07d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a975205ffdfcca831bfd7e2a17c4ceeb51988fd3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218903"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991156"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Exportar governanceRoleAssignmentRequests
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) no formato `application/octet-stream`, que pode ser analisado como um arquivo. csv no navegador.
+Recupere uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) no formato `application/octet-stream` , que pode ser analisado como um arquivo. csv no navegador.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PrivilegedAccess. Read. AzureResources |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | PrivilegedAccess. Read. AzureResources |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o `application/octet-stream`conteúdo do tipo.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o conteúdo do tipo `application/octet-stream` .
 
 ## <a name="example"></a>Exemplo
 Este exemplo salva todas as atribuições de função como um arquivo. csv na assinatura Wingtip Toys-prod. 
@@ -88,3 +88,5 @@ Content-Length:126
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Tipo de recurso managedDeviceMobileAppConfigurationUserSummary
 description: Contém propriedades, propriedades herdadas e ações para um resumo de status do usuário da configuração do aplicativo móvel de MDM.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b2d7f68a22afb3d1757f7e6d5c59a5287d854c2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b960bb3563011e510f09f85f464c447b5b819501
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440463"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989378"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationUserSummary
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Contém propriedades, propriedades herdadas e ações para um resumo de status do usuário da configuração do aplicativo móvel de MDM.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter managedDeviceMobileAppConfigurationUserSummary](../api/intune-apps-manageddevicemobileappconfigurationusersummary-get.md)|[managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md)|Ler propriedades e relações de objetos de [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md).|
@@ -66,6 +66,9 @@ Veja a seguir uma representação JSON do recurso.
   "configurationVersion": 1024
 }
 ```
+
+
+
 
 
 

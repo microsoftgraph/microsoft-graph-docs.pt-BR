@@ -3,14 +3,14 @@ title: Listar macOSTrustedRootCertificates
 description: Listar Propriedades e relações dos objetos macOSTrustedRootCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb3e9e8304e3bdd0b193c34a5da037ce41e97b4b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 3bbce1211203e949a2864bc589b95bf133b323fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990148"
 ---
 # <a name="list-macostrustedrootcertificates"></a>Listar macOSTrustedRootCertificates
 
@@ -108,6 +108,9 @@ Content-Length: 1479
   ]
 }
 ```
+
+
+
 
 
 

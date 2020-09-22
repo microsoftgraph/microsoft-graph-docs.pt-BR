@@ -3,14 +3,14 @@ title: tipo de enumeração de operador
 description: Operador para regras.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cb0664095d4b44d994793fb891442cc7bc2da50f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: e9ba2d810e510886f440bff50308f589083ce0d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989231"
 ---
 # <a name="operator-enum-type"></a>tipo de enumeração de operador
 
@@ -27,8 +27,8 @@ Operador para regras.
 |:---|:---|:---|
 |Nenhuma|,0|Operador None.|
 |e|1 |Operador and.|
-|ou|duas|Operador OR.|
-|é igual a|3D|Operador isequals.|
+|ou|2 |Operador OR.|
+|é igual a|3 |Operador isequals.|
 |Não é igual a|4 |Operador não igual.|
 |greaterThan|5 |Operador GreaterThan.|
 |lessThan|6 |Operador LessThan.|
@@ -36,10 +36,10 @@ Operador para regras.
 |Não entre|8 |Operador não between.|
 |greaterEquals|9 |Operador GreaterEquals.|
 |lessEquals|10 |Operador LessEquals.|
-|dayTimeBetween|11|Operador DayTimeBetween.|
+|dayTimeBetween|11 |Operador DayTimeBetween.|
 |beginsWith|12 |Operador BeginsWith.|
 |notBeginsWith|13 |Operador NotBeginsWith.|
-|endsWith|14 |Operador EndsWith.|
+|endswith|14 |Operador EndsWith.|
 |Não EndsWith|15 |Operador não EndsWith.|
 |contains|16 |Contém operador.|
 |Nãocontém|17 |Operador não Contains.|
@@ -50,6 +50,9 @@ Operador para regras.
 |orderedSetEquals|22|Operador OrderedSetEquals.|
 |subsetOf|23|Operador SubsetOf.|
 |excludesAll|dia|Operador ExcludesAll.|
+
+
+
 
 
 

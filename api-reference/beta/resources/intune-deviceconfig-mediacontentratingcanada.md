@@ -3,14 +3,14 @@ title: Tipo de recurso mediaContentRatingCanada
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c0e524e478e89c6d9d6622d727cf9a529614cfe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f0e35a13285ffa1cb134ea4b87928fd690ca9c21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437234"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989315"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>Tipo de recurso mediaContentRatingCanada
 
@@ -45,6 +45,9 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
+
+
 
 
 

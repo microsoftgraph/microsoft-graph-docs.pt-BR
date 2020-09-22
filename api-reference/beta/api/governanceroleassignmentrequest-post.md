@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: b038ca74eb8046e4ae77a8a31715a473a3518ba1
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7bff2d2ae8e6a122621e3d17de7f7acc3f4e24df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218868"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991105"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Crie uma solicitação de atribuição de função para representar a operação desejada em uma atribuição de função. A tabela a seguir lista as operações.
 
-| Operation                                   | Tipo        |
+| Operação                                   | Tipo        |
 |:--------------------------------------------|:------------|
 | Atribuir uma atribuição de função                    | AdminAdd    |
 | Ativar uma atribuição de função qualificada        | UserAdd     |
@@ -38,8 +38,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões                               |
 |:---------------------------------------|:------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                            |
+| Delegado (conta corporativa ou de estudante)     | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                            |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -64,16 +64,16 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [gover
 | Propriedade         | Tipo                                                     | Descrição |
 |:-----------------|:---------------------------------------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | A ID do recurso. Obrigatório. |
-| roleDefinitionId | Cadeia de Caracteres                                                   | A ID da definição de função. Obrigatório. |
-| SubjectID        | Cadeia de Caracteres                                                   | A ID do assunto. Obrigatório. |
-| assignmentstate  | Cadeia de Caracteres                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active`. Obrigatório. |
-| tipo             | String                                                   | O tipo de solicitação. O valor pode ser `AdminAdd`, `UserAdd`, `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew`,,,, `AdminRenew`e. `AdminExtend` Obrigatório. |
-| motivo           | Cadeia de Caracteres                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise. |
-| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O agendamento da solicitação de atribuição de função. Para o tipo de `UserAdd`solicitação `AdminAdd`de `AdminUpdate`,, `AdminExtend`, e, é necessário. |
+| roleDefinitionId | String                                                   | A ID da definição de função. Obrigatório. |
+| SubjectID        | String                                                   | A ID do assunto. Obrigatório. |
+| assignmentstate  | String                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active` . Obrigatório. |
+| tipo             | String                                                   | O tipo de solicitação. O valor pode ser,,,,,, `AdminAdd` `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` e `AdminExtend` . Obrigatório. |
+| motivo           | String                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise. |
+| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O agendamento da solicitação de atribuição de função. Para o tipo de solicitação de,,, `UserAdd` `AdminAdd` `AdminUpdate` e `AdminExtend` , é necessário. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
 
 ### <a name="error-codes"></a>Códigos de erro
 
@@ -97,16 +97,16 @@ Os exemplos a seguir mostram como usar essa API.
 
 Neste exemplo, um administrador atribui o usuário nawu@fimdev.net à função leitor de cobrança.
 
- >**Observação:** Além da permissão, este exemplo requer que o solicitante tenha pelo menos uma `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Observação:** Além da permissão, este exemplo requer que o solicitante tenha pelo menos uma atribuição de `Active` função de administrador ( `owner` ou `user access administrator` ) no recurso.
 
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
-| roleDefinitionId | Cadeia de Caracteres                                                   | Sim                      | \<roleDefinitionId\> |
-| SubjectID        | Cadeia de Caracteres                                                   | Sim                      | \<SubjectID\> |
-| assignmentstate  | Cadeia de Caracteres                                                   | Sim                      | Qualificado/ativo |
+| roleDefinitionId | String                                                   | Sim                      | \<roleDefinitionId\> |
+| SubjectID        | String                                                   | Sim                      | \<subjectId\> |
+| assignmentstate  | String                                                   | Sim                      | Qualificado/ativo |
 | tipo             | String                                                   | Sim                      | AdminAdd |
-| motivo           | Cadeia de Caracteres                                                   | depende das configurações de função |   |
+| motivo           | String                                                   | depende das configurações de função |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
 #### <a name="request"></a>Solicitação
@@ -210,14 +210,14 @@ Neste exemplo, o usuário nawu@fimdev.net ativa a função de leitor de cobranç
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
-| roleDefinitionId | Cadeia de Caracteres                                                   | Sim                      | \<roleDefinitionId\> |
-| SubjectID        | Cadeia de Caracteres                                                   | Sim                      | \<SubjectID\> |
-| assignmentstate  | Cadeia de Caracteres                                                   | Sim                      | Ativo |
+| roleDefinitionId | String                                                   | Sim                      | \<roleDefinitionId\> |
+| SubjectID        | String                                                   | Sim                      | \<subjectId\> |
+| assignmentstate  | String                                                   | Sim                      | Ativo |
 | tipo             | String                                                   | Sim                      | UserAdd |
-| motivo           | Cadeia de Caracteres                                                   | depende das configurações de função |   |
+| motivo           | String                                                   | depende das configurações de função |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
-#### <a name="request"></a>Solicitar
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "request",
@@ -313,9 +313,9 @@ Neste exemplo, o usuário nawu@fimdev.net desativa a função de leitor de cobra
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
-| roleDefinitionId | Cadeia de Caracteres                                                   | Sim      | \<roleDefinitionId\> |
-| SubjectID        | Cadeia de Caracteres                                                   | Sim      | \<SubjectID\> |
-| assignmentstate  | Cadeia de Caracteres                                                   | Sim      | Ativo |
+| roleDefinitionId | String                                                   | Sim      | \<roleDefinitionId\> |
+| SubjectID        | String                                                   | Sim      | \<subjectId\> |
+| assignmentstate  | String                                                   | Sim      | Ativo |
 | tipo             | String                                                   | Sim      | Userremove |
 | motivo           | String                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
@@ -378,14 +378,14 @@ Content-type: application/json
 
 Neste exemplo, um administrador remove o usuário nawu@fimdev.net da função leitor de cobrança.
 
- >**Observação:** Além da permissão, este exemplo requer que o solicitante tenha pelo menos uma `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Observação:** Além da permissão, este exemplo requer que o solicitante tenha pelo menos uma atribuição de `Active` função de administrador ( `owner` ou `user access administrator` ) no recurso.
 
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
-| resourceId       | Cadeia de Caracteres                                                   | Sim      | \<resourceId\> |
-| roleDefinitionId | Cadeia de Caracteres                                                   | Sim      | \<roleDefinitionId\> |
-| SubjectID        | Cadeia de Caracteres                                                   | Sim      | \<SubjectID\> |
-| assignmentstate  | Cadeia de Caracteres                                                   | Sim      | Qualificado/ativo |
+| resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
+| roleDefinitionId | String                                                   | Sim      | \<roleDefinitionId\> |
+| SubjectID        | String                                                   | Sim      | \<subjectId\> |
+| assignmentstate  | String                                                   | Sim      | Qualificado/ativo |
 | tipo             | String                                                   | Sim      | AdminRemove |
 | motivo           | String                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
@@ -446,16 +446,16 @@ Content-type: application/json
 
 Neste exemplo, os administradores atualizam a atribuição de função para o usuário nawu@fimdev.net para o proprietário.
 
- >**Observação:** Além da permissão, este exemplo requer que o solicitante tenha pelo menos uma `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Observação:** Além da permissão, este exemplo requer que o solicitante tenha pelo menos uma atribuição de `Active` função de administrador ( `owner` ou `user access administrator` ) no recurso.
 
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
-| resourceId       | Cadeia de Caracteres                                                   | Sim                     | \<resourceId\> |
-| roleDefinitionId | Cadeia de Caracteres                                                   | Sim                     | \<roleDefinitionId\> |
-| SubjectID        | Cadeia de Caracteres                                                   | Sim                     | \<SubjectID\> |
-| assignmentstate  | Cadeia de Caracteres                                                   | Sim                     | Qualificado/ativo |
+| resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
+| roleDefinitionId | String                                                   | Sim                     | \<roleDefinitionId\> |
+| SubjectID        | String                                                   | Sim                     | \<subjectId\> |
+| assignmentstate  | String                                                   | Sim                     | Qualificado/ativo |
 | tipo             | String                                                   | Sim                     | AdminUpdate |
-| motivo           | Cadeia de Caracteres                                                   | depende do roleSettings |   |
+| motivo           | String                                                   | depende do roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação
@@ -537,16 +537,16 @@ Content-type: application/json
 
 Este exemplo estende a atribuição de função de expiração para o usuário ANUJCUSER para o colaborador do serviço de gerenciamento de API.
 
- >**Observação:** Além da permissão, este exemplo requer que o solicitante tenha pelo menos uma `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Observação:** Além da permissão, este exemplo requer que o solicitante tenha pelo menos uma atribuição de `Active` função de administrador ( `owner` ou `user access administrator` ) no recurso.
 
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
-| resourceId       | Cadeia de Caracteres                                                   | Sim                     | \<resourceId\> |
-| roleDefinitionId | Cadeia de Caracteres                                                   | Sim                     | \<roleDefinitionId\> |
-| SubjectID        | Cadeia de Caracteres                                                   | Sim                     | \<SubjectID\> |
-| assignmentstate  | Cadeia de Caracteres                                                   | Sim                     | Qualificado/ativo |
+| resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
+| roleDefinitionId | String                                                   | Sim                     | \<roleDefinitionId\> |
+| SubjectID        | String                                                   | Sim                     | \<subjectId\> |
+| assignmentstate  | String                                                   | Sim                     | Qualificado/ativo |
 | tipo             | String                                                   | Sim                     | AdminExtend |
-| motivo           | Cadeia de Caracteres                                                   | depende do roleSettings |   |
+| motivo           | String                                                   | depende do roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
 
 #### <a name="request"></a>Solicitação
@@ -638,3 +638,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

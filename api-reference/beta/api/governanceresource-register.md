@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: d92b061dd726dcbcacf18213a303fac8f415c46e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 207a733e72dcf7c05c6cdf81dddb3cecf37e3bdd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218910"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991170"
 ---
 # <a name="governanceresource-register"></a>Entidadegovernanceresource: Register
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,11 +54,11 @@ Este método **só** oferece suporte `$select` a `$expand` [parâmetros de consu
 
 | Propriedades | Tipo | Descrição |
 |:---------- |:---- |:----------- |
-| externalId | Cadeia de caracteres | O identificador externo do recurso a ser registrado no PIM. Se estiver registrando uma assinatura, o identificador será o identificador de assinatura precedida por `/subscriptions/`. Por exemplo, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
+| externalId | Cadeia de caracteres | O identificador externo do recurso a ser registrado no PIM. Se estiver registrando uma assinatura, o identificador será o identificador de assinatura precedida por `/subscriptions/` . Por exemplo, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` uma resposta.
+Se tiver êxito, este método retornará uma `200 OK` resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -98,3 +98,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

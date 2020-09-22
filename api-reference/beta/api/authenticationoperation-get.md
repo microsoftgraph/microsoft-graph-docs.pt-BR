@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8340fe68f865fa9acfba0cbb05537422e2cfacf9
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 995bcf06c01f75f75b786a3d5a697f054dbc7d9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991576"
 ---
 # <a name="get-authentication-operation"></a>Obter operação de autenticação
 
@@ -25,7 +25,7 @@ Recupere as propriedades e os relacionamentos de um objeto [Operation](../resour
 * Succeeded
 * Falhou
 
-`Succeeded`e `Failed` são Estados de terminal.
+`Succeeded` e `Failed` são Estados de terminal.
 
 ## <a name="permissions"></a>Permissões
 
@@ -68,7 +68,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [Operation](../resources/operation.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [Operation](../resources/operation.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -133,3 +133,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

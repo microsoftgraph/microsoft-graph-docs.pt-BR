@@ -3,14 +3,14 @@ title: Listar macOsVppAppAssignedLicenses
 description: Listar Propriedades e relações dos objetos macOsVppAppAssignedLicense.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 854a483b4690dcb7ebc32739e2d48786636cf627
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 43a4a5bb09f76c30747e76d34513bef136e9e92a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406458"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990358"
 ---
 # <a name="list-macosvppappassignedlicenses"></a>Listar macOsVppAppAssignedLicenses
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/as
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -80,6 +80,9 @@ Content-Length: 342
   ]
 }
 ```
+
+
+
 
 
 

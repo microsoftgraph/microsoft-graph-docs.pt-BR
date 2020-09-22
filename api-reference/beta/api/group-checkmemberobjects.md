@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 38c362c8ef06ae230b1a4dfbf6a5d5436abf016d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 74fcfe41555ce3b3e8ceb06d02cec11028c655a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123906"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990932"
 ---
 # <a name="group-checkmemberobjects"></a>Grupo: checkMemberObjects
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto da coleção String no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção String no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -133,3 +133,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

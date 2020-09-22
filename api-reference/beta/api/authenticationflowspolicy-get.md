@@ -1,31 +1,31 @@
 ---
 title: Obter authenticationFlowsPolicy
-description: Leia as propriedades e os relacionamentos de um objeto authenticationFlowsPolicy.
+description: Ler as propriedades e relações de um objeto authenticationFlowsPolicy.
 author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 348b375d022eaacfabfa2d5f37af69004eb82b98
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 4aa1d26c54c70b6cde1231570c8d44de495db568
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991611"
 ---
 # <a name="get-authenticationflowspolicy"></a>Obter authenticationFlowsPolicy
 
 Namespace: microsoft.graph
 
-Leia as propriedades e os relacionamentos de um objeto [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) .
+Ler as propriedades e relações de um objeto [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy. Read. All, Policy. ReadWrite. AuthenticationFlows|
-|Delegado (conta pessoal da Microsoft)|Não suportado|
-|Aplicativo|Policy. Read. All, Policy. ReadWrite. AuthenticationFlows|
+|Delegada (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.AuthenticationFlows|
+|Delegada (conta pessoal da Microsoft)|Não suportado|
+|Aplicativo|Policy.Read.All, Policy.ReadWrite.AuthenticationFlows|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK`código de resposta e um objeto [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -99,3 +99,5 @@ Content-Type: application/json
     }
 }
 ```
+
+

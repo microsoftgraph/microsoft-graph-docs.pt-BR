@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: de7af7dc7fa5004f82180c7d8d9ec208b6eb0cf6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a23ef01f319d9fc59289795f4d27a4a0cfb09af7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807344"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991247"
 ---
 # <a name="get-formatprotection"></a>Get FormatProtection
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
@@ -106,3 +106,5 @@ Content-length: 45
   ]
 }
 -->
+
+

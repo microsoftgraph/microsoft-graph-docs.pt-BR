@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 676c7f06c894d06e378b8eb0fd273b53c2b07c20
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: a2c3f96b03439f00e8b0ad8ce064ce703ae5cc56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44291241"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989924"
 ---
 # <a name="serviceprincipal-getpasswordsinglesignoncredentials"></a>servicePrincipalName: getPasswordSingleSignOnCredentials
 
@@ -135,3 +135,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

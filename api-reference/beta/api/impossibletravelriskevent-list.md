@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 168c1ecc983ae6dcdfe434351ffddc2f132e8598
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 738eeee4040cbb9ad29aae6d7c9cf1c77464fb54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311694"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990631"
 ---
 # <a name="list-impossibletravelriskevents-deprecated"></a>Listar impossibleTravelRiskEvents (preterido)
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -109,3 +109,5 @@ Content-length: 313
   "suppressions": []
 }
 -->
+
+

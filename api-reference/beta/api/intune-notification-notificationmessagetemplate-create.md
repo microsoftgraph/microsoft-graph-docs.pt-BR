@@ -3,14 +3,14 @@ title: Criar notificationMessageTemplate
 description: Criar um novo objeto notificationMessageTemplate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbccbb8e464d3009304bcf84a1677235bab4fe28
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 1d7e14aef58a4b546a2906da9f308770e64f3fa2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791865"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989914"
 ---
 # <a name="create-notificationmessagetemplate"></a>Criar notificationMessageTemplate
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar notifica
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|Cadeia de caracteres|Nome de exibição do modelo de mensagem de notificação.|
+|displayName|String|Nome de exibição do modelo de mensagem de notificação.|
 |defaultLocale|Cadeia de caracteres|A localidade padrão para fallback quando a localidade solicitada não está disponível.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|As opções de identidade visual do modelo de mensagem. A identidade visual é definida no Console do administrador do Intune. Os valores possíveis são: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
@@ -104,6 +104,9 @@ Content-Length: 372
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de recurso macOSMicrosoftEdgeApp
 description: Contém propriedades e propriedades herdadas para o aplicativo MacOS Microsoft Edge.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b13783ba95f5ddd3f7d9e225fef8bda52395c122
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 3467ab67574f6fe5b99f46159b2271f060bcee01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792398"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989399"
 ---
 # <a name="macosmicrosoftedgeapp-resource-type"></a>tipo de recurso macOSMicrosoftEdgeApp
 
@@ -25,7 +25,7 @@ Contém propriedades e propriedades herdadas para o aplicativo MacOS Microsoft E
 
 Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar macOSMicrosoftEdgeApps](../api/intune-apps-macosmicrosoftedgeapp-list.md)|coleção [macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md)|Listar Propriedades e relações dos objetos [macOSMicrosoftEdgeApp](../resources/intune-apps-macosmicrosoftedgeapp.md) .|
@@ -47,15 +47,17 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|proprietário|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Anotações do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|O estado de upload. Os valores possíveis são: 0- `Not Ready` , 1- `Ready` , 2- `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção de cadeia de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|O canal a ser instalado nos dispositivos de destino. Os valores possíveis são: `dev`, `beta`, `stable`.|
+|supersedingAppCount|Int32|O número total de aplicativos que este aplicativo substitui direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|supersededAppCount|Int32|O número total de aplicativos que este aplicativo está substituindo direta ou indiretamente por. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|canal|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|O canal a ser instalado nos dispositivos de destino. Os valores possíveis são: `dev`, `beta`, `stable`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -65,7 +67,7 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Resumo de instalação do aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |userStatuses|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|relações|coleção [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Lista de relações para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|relações|coleção [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|O conjunto de relações diretas para este aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -102,9 +104,14 @@ Veja a seguir uma representação JSON do recurso.
     "String"
   ],
   "dependentAppCount": 1024,
+  "supersedingAppCount": 1024,
+  "supersededAppCount": 1024,
   "channel": "String"
 }
 ```
+
+
+
 
 
 

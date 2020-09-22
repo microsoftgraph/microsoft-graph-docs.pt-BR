@@ -3,14 +3,14 @@ title: Excluir androidDeviceOwnerEnrollmentProfile
 description: Exclui androidDeviceOwnerEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f73578b48b78493c62bd8fd955e05245368a808
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef451f2407b6380515f117901c43080b2c827bd6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395954"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990582"
 ---
 # <a name="delete-androiddeviceownerenrollmentprofile"></a>Excluir androidDeviceOwnerEnrollmentProfile
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

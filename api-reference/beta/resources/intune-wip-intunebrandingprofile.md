@@ -3,14 +3,14 @@ title: tipo de recurso intuneBrandingProfile
 description: Esta entidade contém dados que são usados na personalização da aparência do nível do locatário dos aplicativos do portal da empresa, bem como do portal da Web do usuário final.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 707dc501d01de2a5bb589b2c10435ca1eaf77ac7
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 99332520c4bcfeb2ef81f4cd6a453f247c4cf65d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989091"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso intuneBrandingProfile
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Esta entidade contém dados que são usados na personalização da aparência do nível do locatário dos aplicativos do portal da empresa, bem como do portal da Web do usuário final.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar Navegaçãointunebrandingprofiles](../api/intune-wip-intunebrandingprofile-list.md)|coleção [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Listar Propriedades e relações dos objetos [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
@@ -38,7 +38,7 @@ Esta entidade contém dados que são usados na personalização da aparência do
 |id|String|Chave de perfil|
 |ProfileName|String|Nome do perfil|
 |profileDescription|String|Descrição do perfil|
-|isDefaultProfile|Booliano|Booliano que indica se o perfil é usado como padrão ou não|
+|isDefaultProfile|Boolean|Booliano que indica se o perfil é usado como padrão ou não|
 |createdDateTime|DateTimeOffset|Hora em que o BrandingProfile foi criado|
 |lastModifiedDateTime|DateTimeOffset|Hora em que a BrandingProfile foi modificada pela última vez|
 |displayName|String|Nome da empresa/organização que é exibido para os usuários finais|
@@ -58,14 +58,15 @@ Esta entidade contém dados que são usados na personalização da aparência do
 |customPrivacyMessage|String|Comentários de texto sobre o que o administrador não tem acesso ao no dispositivo|
 |customCanSeePrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
 |customCantSeePrivacyMessage|String|Comentários de texto sobre o que o administrador não tem acesso ao no dispositivo|
-|isRemoveDeviceDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
-|isFactoryResetDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
+|isRemoveDeviceDisabled|Boolean|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
+|isFactoryResetDisabled|Boolean|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
 |companyPortalBlockedActions|coleção [companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Conjunto de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo.|
-|showAzureADEnterpriseApps|Booliano|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
-|showOfficeWebApps|Booliano|Booliano que indica se o Office webapps será mostrado no portal da empresa|
-|sendDeviceOwnershipChangePushNotification|Booliano|Booliano que indica se uma notificação por push é enviada aos usuários quando o tipo de Propriedade do dispositivo muda de pessoal para corporativo|
+|showAzureADEnterpriseApps|Boolean|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
+|showOfficeWebApps|Boolean|Booliano que indica se o Office webapps será mostrado no portal da empresa|
+|sendDeviceOwnershipChangePushNotification|Boolean|Booliano que indica se uma notificação por push é enviada aos usuários quando o tipo de Propriedade do dispositivo muda de pessoal para corporativo|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Fluxo de registro de dispositivo personalizado exibido para o usuário final. Os valores possíveis são: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|roleScopeTagIds|Coleção de cadeia de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
+|disableClientTelemetry|Boolean|Aplica-se à telemetria enviada de todos os clientes para o serviço do Intune. Quando desabilitado, todos os avisos proativos de solução de problemas e emissão dentro do cliente estão desativados, e as configurações de telemetria aparecem inativas ou ocultas para o usuário do dispositivo.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -137,11 +138,15 @@ Veja a seguir uma representação JSON do recurso.
   "showOfficeWebApps": true,
   "sendDeviceOwnershipChangePushNotification": true,
   "enrollmentAvailability": "String",
+  "disableClientTelemetry": true,
   "roleScopeTagIds": [
     "String"
   ]
 }
 ```
+
+
+
 
 
 

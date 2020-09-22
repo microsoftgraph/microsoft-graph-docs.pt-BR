@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c25e2c048e53b1010d4fc6315372397de1e26684
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: bf4e1365b392736a1856cb8c6284a7a4babc97dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872595"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990876"
 ---
 # <a name="list-group-transitive-memberof"></a>Listar transitivo de grupo memberOf
 
@@ -48,7 +48,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query_paramete
 | Nome | Descrição |
 |:---- |:----------- |
 | Autorização  | {token} de portador. Obrigatório. |
-| ConsistencyLevel | eventualmente. Esse cabeçalho e `$count` são necessários ao usar os `$search` parâmetros de consulta de conversão de,, `$filter` `$orderby` ou OData. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
+| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, `$filter`, `$orderby` ou os parâmetros de consulta de conversão OData. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -117,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-transitive-membership"></a>Exemplo 2: obter apenas uma contagem de todas as associações transitivas
+### <a name="example-2-get-only-a-count-of-all-transitive-membership"></a>Exemplo 2: Obter apenas uma contagem de todas as associações transitivas
 
 #### <a name="request"></a>Solicitação
 
@@ -165,7 +165,7 @@ Content-type: text/plain
 
 294
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>Exemplo 3: usar a conversão OData para obter apenas uma contagem de associação transitiva em grupos
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>Exemplo 3: Usar a conversão OData para obter apenas uma contagem de associação transitiva em grupos
 
 #### <a name="request"></a>Solicitação
 
@@ -346,3 +346,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

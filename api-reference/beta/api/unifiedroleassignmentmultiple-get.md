@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2de8dec1048aec0353a5bcc4dc0abc69f659df4a
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: 0b4300a3f5256b69b24c5df53866d970e0858b88
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44226907"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989889"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>Obter unifiedRoleAssignmentMultiple
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:------------------------------------------- |
 | Delegado (conta corporativa ou de estudante) | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
+| Aplicativo | DeviceManagementRBAC. Read. All, DeviceManagementRBAC. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -182,7 +182,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Exemplo 3: obter um roleAssignmentMultiple com escopo de diretório com`$expand`
+### <a name="example-3-get-a-directory-scoped-roleassignmentmultiple-with-expand"></a>Exemplo 3: obter um roleAssignmentMultiple com escopo de diretório com `$expand`
 
 #### <a name="request"></a>Solicitação
 
@@ -283,3 +283,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

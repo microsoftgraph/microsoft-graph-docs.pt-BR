@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 777adf601bf71676c505d1a9340f87b7575fc0c7
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: fdc5266722b9dafd1067429a538be76d62493bf0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990701"
 ---
 # <a name="create-userflow"></a>Criar userflow
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | IdentityUserFlow. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | IdentityUserFlow. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | IdentityUserFlow. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | IdentityUserFlow. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [userflow
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [userflow](../resources/identityuserflow.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [userflow](../resources/identityuserflow.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -124,3 +124,5 @@ Content-type: application/json
     "Error: create_identityuserflow_from_identitycontainer/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
+
+

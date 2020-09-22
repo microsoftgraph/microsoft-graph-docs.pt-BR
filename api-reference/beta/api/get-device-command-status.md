@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ailae
 ms.prod: ''
-ms.openlocfilehash: 33470cb5aceb402d6a37749fa8c2ebcfcd0bce75
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 96098db1cf0e630c46a838b7712141ea4182779e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807329"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991212"
 ---
 # <a name="get-device-command-status"></a>Obter o status de comando do dispositivo
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Sem suporte.    |
 |Delegado (conta pessoal da Microsoft) | Device.Command    |
 |Aplicativo | Sem suporte. |
 
@@ -143,7 +143,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Sem suporte.    |
 |Delegado (conta pessoal da Microsoft) | Device.Command    |
 |Aplicativo | Sem suporte. |
 
@@ -217,3 +217,5 @@ HTTP/1.1 200 OK
   "Type":"Ok"
 }
 ```
+
+

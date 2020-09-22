@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e1e212289243eb0314fa376a236aa9787bf597f3
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: b70938f6c230505912d43cad9a797b4a62bea831
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329716"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991464"
 ---
 # <a name="list-all-identityproviders-in-a-b2cuserflow"></a>Listar todos os identityProviders em um b2cUserFlow
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo| IdentityUserFlow. ReadWrite. All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
@@ -122,3 +122,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1883efae567f72beedd6603c88bc0b87fb78067d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: aca28a2aaf1b659ef46537e53563b87236d558d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990736"
 ---
 # <a name="get-userflow"></a>Obter userflow
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [userflow](../resources/identityuserflow.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [userflow](../resources/identityuserflow.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -118,3 +118,5 @@ Content-type: application/json
     "Error: get_identityuserflow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
+
+

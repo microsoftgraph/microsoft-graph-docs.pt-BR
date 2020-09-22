@@ -3,14 +3,14 @@ title: Atualizar iosVppAppAssignedLicense
 description: Atualiza as propriedades de um objeto iosVppAppAssignedLicense.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a1007e95ea71a1bde87380c6d408e9557724bb0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f28db22a65df87ea2a5a083f4fc0db98387b77d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416574"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990428"
 ---
 # <a name="update-iosvppappassignedlicense"></a>Atualizar iosVppAppAssignedLicense
 
@@ -55,14 +55,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosVppA
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |useremailaddress|String|O endereço de email do usuário.|
-|userId|String|A ID do usuário.|
+|userId|Cadeia de caracteres|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
 |userPrincipalName|String|O nome da entidade de segurança do usuário.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -98,6 +98,9 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Ação createToken
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 635aac97d2b0b171b3a2b16a690b6c012b4fd994
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7881eddad5c351fc7cd703b2c510bee3b42fc474
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990589"
 ---
 # <a name="createtoken-action"></a>Ação createToken
 
@@ -80,6 +80,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

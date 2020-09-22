@@ -3,14 +3,14 @@ title: tipo de enumeração powerActionType
 description: Tipos de ação de energia
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a65f5f59ad4f598152145313481b537fa3035bd5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e70d5212bbc987e608ba34dc8cdb5b68cee0f0d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989217"
 ---
 # <a name="poweractiontype-enum-type"></a>tipo de enumeração powerActionType
 
@@ -26,10 +26,13 @@ Tipos de ação de energia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|NoAction|1|Nenhuma ação|
-|atividade|duas|Colocar dispositivo em estado de suspensão|
-|hibernação|3D|Colocar o dispositivo no estado de hibernação|
+|NoAction|1 |Nenhuma ação|
+|atividade|2 |Colocar dispositivo em estado de suspensão|
+|hibernação|3 |Colocar o dispositivo no estado de hibernação|
 |parada|4 |Dispositivo de desligamento|
+
+
+
 
 
 

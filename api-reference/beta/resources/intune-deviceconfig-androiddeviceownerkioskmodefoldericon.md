@@ -3,14 +3,14 @@ title: tipo de enumeração androidDeviceOwnerKioskModeFolderIcon
 description: Tipo de ícone de pasta de modo de quiosque de proprietário do dispositivo Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3ff8f86516736ac56b0b0b82d2a9cfb3197c41a6
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 29708bd6d63b83074dcb2b69f25b4512e7f044d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124203"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989363"
 ---
 # <a name="androiddeviceownerkioskmodefoldericon-enum-type"></a>tipo de enumeração androidDeviceOwnerKioskModeFolderIcon
 
@@ -30,6 +30,9 @@ Tipo de ícone de pasta de modo de quiosque de proprietário do dispositivo Andr
 |darkCircle|2 |Ícone de pasta aparece como círculo escuro.|
 |lightSquare|3 |Ícone de pasta aparece como quadrado claro.|
 |lightCircle|4 |Ícone de pasta aparece como círculo claro.|
+
+
+
 
 
 

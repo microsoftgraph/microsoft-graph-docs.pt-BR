@@ -3,14 +3,14 @@ title: ação CreateCopy
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e25371a5efb1a9cc342bb6122b464d304848b4ba
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 06d4d51a2a11b4fb4f029ff11ac40642364e1d7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177244"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990036"
 ---
 # <a name="createcopy-action"></a>ação CreateCopy
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,12 +53,12 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Ainda não documentado|
+|displayName|String|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará `200 OK` um código de resposta e um [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará um `200 OK` código de resposta e um [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,6 +97,9 @@ Content-Length: 418
   }
 }
 ```
+
+
+
 
 
 

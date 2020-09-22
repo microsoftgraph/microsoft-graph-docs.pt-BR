@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: ddc268d2f70c97c35e53d1d4040cbeb189e4ff95
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: d674a06d2cb699f6d075086533a492d577143808
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990779"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Conceder um appRoleAssignment a um grupo
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para atribuir uma função de aplicativo a um grupo. Todos os membros diretos do grupo serão considerados atribuídos. Para conceder a um grupo uma atribuição de função de aplicativo, você precisa de três identificadores:
+Use esta API para atribuir uma função de aplicativo a um grupo. Todos os membros diretos do grupo serão considerados atribuídos. Para conceder uma atribuição de função de aplicativo a um grupo, você precisa de três identificadores:
 
-- `principalId`: O `id` do grupo ao qual você está atribuindo a função de aplicativo.
-- `resourceId`: O `id` do recurso `servicePrincipal` que definiu a função de aplicativo.
-- `appRoleId`: O `id` `appRole` (definido na entidade de segurança do serviço de recursos) a ser atribuído ao grupo.
+- `principalId`: A `id` do grupo ao qual você está atribuindo a função de aplicativo.
+- `resourceId`: A `id` do recurso `servicePrincipal` que definiu a função do aplicativo.
+- `appRoleId`: A `id` do `appRole` (definido na entidade de serviço do recurso) para atribuir ao grupo.
 
-Licenças adicionais podem ser necessárias para [usar um grupo para gerenciar o acesso a aplicativos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps).
+Licenças adicionais podem ser necessárias para [usar um grupo para gerenciar o acesso aos aplicativos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps).
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,9 +32,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AppRoleAssignment. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AppRoleAssignment. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,7 +44,7 @@ POST /groups/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> Como prática recomendada, recomendamos a criação de atribuições de função de aplicativo através da `appRoleAssignedTo` relação da entidade de serviço de _recurso_ , em vez da `appRoleAssignments` relação do usuário, grupo ou entidade de serviço atribuída.
+> Como prática recomendada, recomendamos que você crie atribuições de função de aplicativo por meio da `appRoleAssignedTo`relação do _recurso_ da entidade de serviço, em vez da `appRoleAssignments`relação do usuário, grupo ou entidade de serviço atribuída.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -55,11 +55,11 @@ POST /groups/{id}/appRoleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -100,7 +100,7 @@ Content-Length: 110
 ---
 
 
-Neste exemplo, `{id}` e `{principalId-value}` seria o `id` do grupo atribuído.
+Neste exemplo, `{id}` e `{principalId-value}` seriam os `id` do grupo atribuído.
 
 ### <a name="response"></a>Resposta
 
@@ -143,3 +143,5 @@ Content-length: 253
   ]
 }
 -->
+
+

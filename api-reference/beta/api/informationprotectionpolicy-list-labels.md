@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4aa7f61337b9dbe857354bbcf16abf3a881fa10f
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 9cd8fcd909c5c6e952763c6fa09e56c2f57fabe8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384308"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990624"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel: listLabels
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | InformationProtectionPolicy. Read. All        |
+| Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -154,3 +154,5 @@ User-agent: ContosoLOBApp/1.0
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

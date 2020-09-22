@@ -1,28 +1,28 @@
 ---
-title: Listar appRoleAssignments concedidas para uma entidade de serviço
-description: Recupere uma lista de atribuições de função de aplicativo concedidas para uma entidade de serviço.
+title: Listar appRoleAssignments concedidos para uma entidade de serviço
+description: Recuperar uma lista de atribuições de funções do aplicativo concedidas para uma entidade de serviço.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 769842d56751795c7350a977e92e799722010231
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 203fc5d1c8c55f6608a23f96dbbf9c88a868def5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383284"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989927"
 ---
-# <a name="list-approleassignments-granted-for-a-service-principal"></a>Listar appRoleAssignments concedidas para uma entidade de serviço
+# <a name="list-approleassignments-granted-for-a-service-principal"></a>Listar appRoleAssignments concedidos para uma entidade de serviço
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de [appRoleAssignment](../resources/approleassignment.md) que os usuários, grupos ou entidades de serviço de cliente foram concedidos para a entidade de serviço de recurso determinada.
+Recuperar uma lista de [appRoleAssignment](../resources/approleassignment.md) que os usuários, grupos ou entidades de serviço de cliente receberam para a determinada entidade de serviço do recurso.
 
-Por exemplo, se a entidade de serviço de recurso é a entidade de serviço para a API do Microsoft Graph, isso retornará todas as entidades de serviço que receberam qualquer permissão somente de aplicativo para o Microsoft Graph.
+Por exemplo, se a entidade de serviço do recurso for a entidade de serviço para a API do Microsoft Graph, isso retornará todas as entidades de serviço que receberam todas as permissões de aplicativo para o Microsoft Graph.
 
-Se a entidade de serviço de recurso for um aplicativo que tem funções de aplicativo concedidas a usuários e grupos, isso retornará todas as funções de aplicativo atribuídas a usuários e grupos para este aplicativo.
+Se a entidade de serviço do recurso for um aplicativo com funções de aplicativo concedidas a usuários e grupos, isso retornará todos as funções de aplicativo dos usuários e grupos atribuídas para esse aplicativo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,9 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. Read. All, Directory. Read. All, Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. Read. All, Directory. Read. All, Application. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,13 +57,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para recuperar as atribuições de funções de aplicativo que foram concedidas para uma entidade de serviço de recurso específica.
+Veja a seguir um exemplo da solicitação para recuperar as atribuições das funções de aplicativo que foram concedidas a uma entidade de serviço.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -135,3 +135,5 @@ Content-length: 306
   ]
 }
 -->
+
+

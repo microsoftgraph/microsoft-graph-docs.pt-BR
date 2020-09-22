@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 8179fa2d2bd1e8f52df9aa09bac5a965812e2122
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 942ff054ab3465077bf4ace0f267121e8b7ce8e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218882"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991128"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governanceRoleAssignmentRequest
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -55,7 +55,7 @@ Essa API segue o padrão de códigos HTTP. Além disso, os códigos de erro pers
 | Código de erro | Mensagem de erro | Detalhes |
 |:---------- |:------------- |:------- |
 | 400 BadRequest | RoleAssignmentRequestNotFound | O governanceRoleAssignmentRequest não existe no sistema. |
-| 400 BadRequest | RequestCannotBeCancelled | Somente as solicitações no status `Granted`de `PendingApproval`, `PendingApprovalProvisioning` e `PendingAdminDecision` podem ser canceladas. |
+| 400 BadRequest | RequestCannotBeCancelled | Somente as solicitações no status `Granted` de `PendingApproval` , `PendingApprovalProvisioning` e `PendingAdminDecision` podem ser canceladas. |
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -107,3 +107,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

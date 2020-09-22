@@ -3,14 +3,14 @@ title: tipo de enumeração ratingAppsType
 description: Classificação de aplicativos como conteúdo de mídia
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 891dd5c6a17a5363060658c019c6a19b483a8f41
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4eae61cf3f1bbe028452288d3a1c5a0be9642847
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989196"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de enumeração ratingAppsType
 
@@ -26,11 +26,14 @@ Classificação de aplicativos como conteúdo de mídia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de aplicativos|
-|Bloqueado|1|Não permitir conteúdo de aplicativos|
-|agesAbove4|duas|4 +, idade 4 e superior|
-|agesAbove9|3D|9 +, idade 9 e superior|
+|Bloqueado|1 |Não permitir conteúdo de aplicativos|
+|agesAbove4|2 |4 +, idade 4 e superior|
+|agesAbove9|3 |9 +, idade 9 e superior|
 |agesAbove12|4 |12 +, idade 12 e superior |
 |agesAbove17|5 |17 +, idade 17 e superior|
+
+
+
 
 
 

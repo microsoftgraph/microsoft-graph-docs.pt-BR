@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipalName: getMemberObjects'
-description: Obtenha a lista de grupos e funções de diretório dos quais essa entidade de serviço é membro.  Essa verificação é transitiva.
+title: 'servicePrincipal: getMemberObjects'
+description: Obtenha a lista de grupos e funções de diretório dos quais essa entidade de serviço é membro.  A verificação é transitiva.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 68122fac4ede4a856f788e534f93dc476d77eac7
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: c2940904b4399141c0a70ff121456bc8072f11d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383340"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989926"
 ---
-# <a name="serviceprincipal-getmemberobjects"></a>servicePrincipalName: getMemberObjects
+# <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de grupos e funções de diretório dos quais esse [servicePrincipalName](../resources/serviceprincipal.md) é um membro.  Essa verificação é transitiva.
+Obtenha a lista de grupos e funções de diretório dos quais [servicePrincipal](../resources/serviceprincipal.md) é membro.  A verificação é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção String no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto da coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 Eis um exemplo de como chamar esta API.
@@ -121,3 +121,5 @@ Content-length: 39
   ]
 }
 -->
+
+

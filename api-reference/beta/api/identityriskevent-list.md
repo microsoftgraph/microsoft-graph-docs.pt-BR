@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 14dcac081d870a5a25ffa8afdb8dd7424e44cfd8
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 8056f15ca5345e8182567e0fb2e20bb21b0a6eed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990771"
 ---
 # <a name="list-identityriskevents-deprecated"></a>Listar identityRiskEvents (preterido)
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | IdentityRiskEvent.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -138,3 +138,5 @@ Content-length: 304
   "suppressions": []
 }
 -->
+
+

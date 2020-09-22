@@ -3,14 +3,14 @@ title: Criar androidDeviceOwnerEnrollmentProfile
 description: Criar um novo objeto androidDeviceOwnerEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cdf6e3d05ef5b094decffe7bd9d0e847ffa435e2
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: cac4e8faa2043070ac983aa62f0ca0bacd53c3cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123656"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990603"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Criar androidDeviceOwnerEnrollmentProfile
 
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accountId|Cadeia de caracteres|GUID de locatário ao qual o perfil de registro pertence.|
+|accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
 |id|String|GUID exclusivo do perfil de registro.|
-|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
-|descrição|String|Descrição do perfil de registro.|
+|displayName|String|Nome de exibição do perfil de registro.|
+|description|String|Descrição do perfil de registro.|
 |enrollmentid|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|O modo de registro de dispositivos que usam esse perfil de registro. Os valores possíveis são: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
-|tokenValue|Cadeia de caracteres|Valor do token mais recentemente criado para este perfil de registro.|
+|tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|
 |Propriedadetokencreationdatetime|DateTimeOffset|Data e hora em que o token criado mais recentemente foi criado.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
@@ -135,6 +135,9 @@ Content-Length: 850
   ]
 }
 ```
+
+
+
 
 
 

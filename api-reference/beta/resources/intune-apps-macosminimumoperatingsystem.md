@@ -3,14 +3,14 @@ title: tipo de recurso macOSMinimumOperatingSystem
 description: O sistema operacional mínimo necessário para um aplicativo do MacOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d3dcfee961f312a9944958ec159f6c9af4aa9da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3ba3ef571f436a6faadde8b6b9c765d3345da7e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458862"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989385"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>tipo de recurso macOSMinimumOperatingSystem
 
@@ -59,6 +59,9 @@ Veja a seguir uma representação JSON do recurso.
   "v10_15": true
 }
 ```
+
+
+
 
 
 

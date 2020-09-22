@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2365d16255543a99562be41fb8b3742972293fca
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 155524d9c84759028dfa630888722b896a603e25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991450"
 ---
 # <a name="add-identityprovider-to-a-b2cuserflow"></a>Adicionar identityprovider a um b2cUserFlow
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo| IdentityUserFlow. ReadWrite. All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
@@ -108,3 +108,5 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

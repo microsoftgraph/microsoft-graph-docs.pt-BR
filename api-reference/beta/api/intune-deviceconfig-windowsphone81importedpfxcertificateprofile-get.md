@@ -3,14 +3,14 @@ title: Obter windowsPhone81ImportedPFXCertificateProfile
 description: Leia as propriedades e as relações do objeto windowsPhone81ImportedPFXCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 58dc51f8e00e1ca68812de3266be98fb49f3d527
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 48657eab62e3d0549ea4a00e1a68f0fcf7003cb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43429594"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990057"
 ---
 # <a name="get-windowsphone81importedpfxcertificateprofile"></a>Obter windowsPhone81ImportedPFXCertificateProfile
 
@@ -116,6 +116,9 @@ Content-Length: 1633
   }
 }
 ```
+
+
+
 
 
 

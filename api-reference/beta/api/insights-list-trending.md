@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 91c96ce05eefd558281382ac19b188ed0a1a4305
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: a8cd468506b28c6e9ea155a37141747056ea5db3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509671"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990617"
 ---
 # <a name="list-trending"></a>Listar tendências
 
@@ -91,7 +91,7 @@ Se as ideias de item do usuário de destino tiverem sido desabilitadas, este mé
   }
 }
 ```
-Para obter mais detalhes, consulte [Customize insights Privacy](/graph/insights-customize-item-insights-privacy.md).
+Para obter mais detalhes, confira [personalizar política de informações](/graph/insights-customize-item-insights-privacy.md).
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
@@ -158,3 +158,5 @@ Content-length: 801
     ]
 }
 ```
+
+

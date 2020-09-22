@@ -3,14 +3,14 @@ title: Obter androidDeviceOwnerEnrollmentProfile
 description: Leia as propriedades e as relações do objeto androidDeviceOwnerEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22833196327474197a37604a169a6c21219a61a4
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: c3477ad897b24adf9de2d6341b02e8ac4cc010e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123649"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990547"
 ---
 # <a name="get-androiddeviceownerenrollmentprofile"></a>Obter androidDeviceOwnerEnrollmentProfile
 
@@ -96,6 +96,9 @@ Content-Length: 911
   }
 }
 ```
+
+
+
 
 
 

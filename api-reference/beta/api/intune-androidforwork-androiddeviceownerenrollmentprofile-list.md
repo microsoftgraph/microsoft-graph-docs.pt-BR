@@ -3,14 +3,14 @@ title: Listar androidDeviceOwnerEnrollmentProfiles
 description: Listar Propriedades e relações dos objetos androidDeviceOwnerEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b4e3fde99b4254a7667b45473e77ff042a7a4c2
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 45f044dad1d6113d2fc042f88c8c10467e1f5573
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123614"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990512"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>Listar androidDeviceOwnerEnrollmentProfiles
 
@@ -95,6 +95,9 @@ Content-Length: 967
   ]
 }
 ```
+
+
+
 
 
 

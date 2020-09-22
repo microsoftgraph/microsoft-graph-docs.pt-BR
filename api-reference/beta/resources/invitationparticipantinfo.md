@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a21ffce09a7f086bced5416eace2a95170b3eaf2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9193ec70a3884ba9bf25e4f1c8c33eb7c77d838f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523181"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989035"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,3 +60,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Tipo de recurso windowsInformationProtectionNetworkLearningSummary
 description: Entidade de resumo de aprendizagem da Rede de Proteção de Informações do Windows
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c91ac56842596027d70c0d67ee97bf62aec90a1f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e3c1dd4c6fa58c633cef7af9756429d661f292ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471895"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989063"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionNetworkLearningSummary
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Entidade de resumo de aprendizagem da Rede de Proteção de Informações do Windows
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsInformationProtectionNetworkLearningSummaries](../api/intune-wip-windowsinformationprotectionnetworklearningsummary-list.md)|Conjunto [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md)|Listar propriedades e relações de objetos de [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).|
@@ -57,6 +57,9 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCount": 1024
 }
 ```
+
+
+
 
 
 

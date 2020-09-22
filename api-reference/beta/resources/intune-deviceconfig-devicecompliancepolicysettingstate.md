@@ -3,14 +3,14 @@ title: Tipo de recurso deviceCompliancePolicySettingState
 description: Estado da configuração da política de conformidade de dispositivo para um determinado dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a762b9bc0e7996f1c775e372d10a60f87e649de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1d2b4a1dafaca68c39864f825c872f1bcf5ab50e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989301"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingState
 
@@ -25,15 +25,15 @@ Estado da configuração da política de conformidade de dispositivo para um det
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configuração|String|A configuração que é relatada|
-|settingName|String|Nome de configuração localizada/de usuário que é relatada|
-|instanceDisplayName|String|Nome da instância de configuração que é relatada.|
+|configuração|Cadeia de caracteres|A configuração que é relatada|
+|settingName|Cadeia de caracteres|Nome de configuração localizada/de usuário que é relatada|
+|instanceDisplayName|Cadeia de caracteres|Nome da instância de configuração que é relatada.|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de erro da configuração|
-|errorDescription|String|Descrição de erro|
-|userId|String|UserId|
-|userName|String|UserName|
-|userEmail|String|UserEmail|
+|errorDescription|Cadeia de caracteres|Descrição de erro|
+|userId|Cadeia de caracteres|UserId|
+|userName|Cadeia de caracteres|UserName|
+|userEmail|Cadeia de caracteres|UserEmail|
 |userPrincipalName|String|UserPrincipalName.|
 |fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
 |currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
@@ -66,13 +66,17 @@ Veja a seguir uma representação JSON do recurso.
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "String",
-      "displayName": "String"
+      "displayName": "String",
+      "sourceType": "String"
     }
   ],
   "currentValue": "String",
   "settingInstanceId": "String"
 }
 ```
+
+
+
 
 
 

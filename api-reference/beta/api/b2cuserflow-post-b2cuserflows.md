@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 46a4c70329e021c89bf9107b877fcf9fae88b3ca
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: b5dfb2bece9fe6b2762ede34de37ef735fabdbdb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329964"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991555"
 ---
 # <a name="create-b2cuserflow"></a>Criar b2cUserFlow
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow. ReadWrite. All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
@@ -57,9 +57,9 @@ No corpo da solicitação, forneça uma representação JSON de um [b2cUserFlow]
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-instalado com `B2C_1` após a criação.|
-|userFlowType|Cadeia de caracteres|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
 |userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário.|
-|identityProviders|coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo do usuário.|
+|identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo do usuário.|
 
 ## <a name="response"></a>Resposta
 
@@ -213,3 +213,5 @@ Content-type: application/json
     "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
   ]
 }-->
+
+

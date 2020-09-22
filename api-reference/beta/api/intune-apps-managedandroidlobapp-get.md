@@ -3,14 +3,14 @@ title: Acessar managedAndroidLobApp
 description: Leia as propriedades e as relações do objeto managedAndroidLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6484749f12c6f4224b6cd70dae196db07affffe2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7eed7ab501761cbc7746960ead5bf4a59003527e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43409764"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990344"
 ---
 # <a name="get-managedandroidlobapp"></a>Acessar managedAndroidLobApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1786
+Content-Length: 1847
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 1786
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
     "committedContentVersion": "Committed Content Version value",
@@ -129,6 +131,9 @@ Content-Length: 1786
   }
 }
 ```
+
+
+
 
 
 

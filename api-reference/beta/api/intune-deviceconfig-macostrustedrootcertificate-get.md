@@ -3,14 +3,14 @@ title: Obter macOSTrustedRootCertificate
 description: Leia as propriedades e as relações do objeto macOSTrustedRootCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fc1be0e5810f4a8e9b7ffe2d21af1c7e167b2ce
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: b3c2dbd7a834b680ae64590a93b2d5692c8fae82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990155"
 ---
 # <a name="get-macostrustedrootcertificate"></a>Obter macOSTrustedRootCertificate
 
@@ -112,6 +112,9 @@ Content-Length: 1397
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Excluir Entidadeandroidworkprofilescepcertificateprofile
 description: Exclui Entidadeandroidworkprofilescepcertificateprofile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7040791f54bc312a454007952e140ce169e8a386
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 536db54b8a8e72d2fa6f93729000647b806aa5df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990218"
 ---
 # <a name="delete-androidworkprofilescepcertificateprofile"></a>Excluir Entidadeandroidworkprofilescepcertificateprofile
 
@@ -67,6 +67,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
