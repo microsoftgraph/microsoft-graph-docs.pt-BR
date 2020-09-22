@@ -3,14 +3,14 @@ title: tipo de enumeração macOSContentCachingType
 description: Indica o tipo de conteúdo que pode ser armazenado em cache pelo serviço de cache de conteúdo da Apple.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aed963885b7ef65ea5feaa8df443a6981343929b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 9022b320507cc10455e2eeb3ebd3a3ca58d52f71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993837"
 ---
 # <a name="macoscontentcachingtype-enum-type"></a>tipo de enumeração macOSContentCachingType
 
@@ -27,7 +27,10 @@ Indica o tipo de conteúdo que pode ser armazenado em cache pelo serviço de cac
 |:---|:---|:---|
 |notConfigured|,0|Padrão. Os dados de iCloud do usuário e os dados não iCloud serão armazenados em cache.|
 |userContentOnly|1 |Permitir que o serviço de cache de conteúdo da Apple armazene em cache os dados do iCloud.|
-|sharedContentOnly|duas|Permitir que o serviço de cache de conteúdo da Apple armazene em cache dados não iCloud (por exemplo, atualizações de aplicativo e software).|
+|sharedContentOnly|2 |Permitir que o serviço de cache de conteúdo da Apple armazene em cache dados não iCloud (por exemplo, atualizações de aplicativo e software).|
+
+
+
 
 
 
