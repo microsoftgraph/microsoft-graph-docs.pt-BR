@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cfab8c59a8afc1fdd6d0e2a1305e8687d927e218
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 808667099990d8eaa371c84289f586e4ec5c2795
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123752"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012681"
 ---
 # <a name="get-event"></a>Obter evento
 
@@ -238,3 +238,5 @@ Content-length: 1728
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 70dc63b9cba3db7c435b357f880084d314d0c884
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 0c576a7b7d309f49c14af56b12d7dc8dcdb1f75a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013549"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>tipo de recurso identitySecurityDefaultsEnforcementPolicy
 
@@ -22,19 +22,19 @@ Representa a política de [padrões de segurança](https://docs.microsoft.com/az
 
 Herda de [policyBase](../resources/policybase.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Get](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Ler as propriedades de um objeto **identitySecurityDefaultsEnforcementPolicy** . |
-| [Update](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Atualize um objeto **identitySecurityDefaultsEnforcementPolicy** . |
+| [Atualização](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Atualize um objeto **identitySecurityDefaultsEnforcementPolicy** . |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|String|Descrição da política. Somente leitura.|
-|displayName|Cadeia de caracteres|Nome para exibição dessa política. Somente leitura.|
+|displayName|String|Nome para exibição dessa política. Somente leitura.|
 |id|String|Identificador para esta política. Somente leitura.|
 |isEnabled|Boolean|Se definido como true, os padrões de segurança do Active Directory do Azure são habilitados para o locatário.|
 
@@ -74,3 +74,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

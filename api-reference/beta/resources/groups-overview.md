@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: ab69f13649c28fc9d708a0498bf9f8af720ad2a2
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 75f39fede834709b40d1818a547fe89b00096334
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124998"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013654"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -20,13 +20,13 @@ Os grupos são coleções de [usuários](user.md) e de outras entidades de segur
 
 | Tipo              | Caso de uso | groupType | habilitado para email | habilitado para segurança | Podem ser criados e gerenciados via API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Grupos do Office 365](#office-365-groups) | Facilitar a colaboração entre usuários com os recursos compartilhados online da Microsoft. | `["Unified"]` | `true` | `false` | Sim |
+| [Grupos do Microsoft 365](#microsoft-365-groups) | Facilitar a colaboração entre usuários com os recursos compartilhados online da Microsoft. | `["Unified"]` | `true` | `false` | Sim |
 | [Grupos de segurança](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo. | `[]` | `false` | `true` | Sim |
 | [Grupos de segurança habilitados para email](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo, com uma caixa de correio de grupo compartilhada. | `[]` | `true` | `true` | Não |
-| Grupos de distribuição | Distribuir emails aos membros do grupo. É recomendável usar os grupos do Office 365 devido ao conjunto de recursos mais sofisticado que ele oferece. | `[]` | `true` | `false` | Não |
+| Grupos de distribuição | Distribuir emails aos membros do grupo. É recomendável usar os grupos do Microsoft 365 devido a grande quantidade de recursos que ele fornece. | `[]` | `true` | `false` | Não |
 
-## <a name="office-365-groups"></a>Grupos do Office 365
-O diferencial dos grupos do Office 365 é a natureza colaborativa, ideal para pessoas que trabalham juntas em um projeto ou em uma equipe. Eles são criados com recursos compartilhados pelos membros do grupo, entre eles:
+## <a name="microsoft-365-groups"></a>Grupos do Microsoft 365
+O diferencial dos grupos da Microsoft 365 está na natureza cooperativa, perfeito para as pessoas que trabalham em conjunto em um projeto ou uma equipe. Eles são criados com recursos compartilhados pelos membros do grupo, entre eles:
 
 - Conversas do Outlook
 - Calendário do Outlook
@@ -66,7 +66,7 @@ Veja a seguir uma representação JSON dos grupos no Outlook.
     "visibility": "Public"
 }
 ```
-Saiba mais sobre os grupos do Office 365 e as experiências de administrador no tópico [Saiba mais sobre grupos do Office 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Para saber mais sobre os grupos do Microsoft 365 e as experiências de administrador, confira [Saiba mais sobre grupos do Microsoft 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## <a name="security-groups-and-mail-enabled-security-groups"></a>Grupos de segurança e grupos de segurança habilitados para email.
 
@@ -98,7 +98,7 @@ Veja a seguir uma representação JSON de um grupo de segurança.
 ```
 ## <a name="dynamic-membership"></a>Associação dinâmica
 
-Todos os tipos de grupo podem ter regras de associação dinâmica que adicionam ou removem automaticamente membros do grupo com base nas propriedades do usuário. Por exemplo, um grupo de "funcionários do Marketing" pode incluir todo usuário que tiver a propriedade departament definida como "Marketing". Dessa forma, os novos funcionários de marketing são adicionados automaticamente ao grupo, enquanto os que saem do departamento são automaticamente removidos dele. Essa regra pode ser especificada em um campo "membershipRule" durante a criação de grupo como `"membershipRule": 'user.department -eq "Marketing"'`. O GroupType também deve incluir a `"DynamicMembership"`. A solicitação a seguir cria um novo grupo do Office 365 para os funcionários de marketing:
+Todos os tipos de grupo podem ter regras de associação dinâmica que adicionam ou removem automaticamente membros do grupo com base nas propriedades do usuário. Por exemplo, um grupo de "funcionários do Marketing" pode incluir todo usuário que tiver a propriedade departament definida como "Marketing". Dessa forma, os novos funcionários de marketing são adicionados automaticamente ao grupo, enquanto os que saem do departamento são automaticamente removidos dele. Essa regra pode ser especificada em um campo "membershipRule" durante a criação de grupo como `"membershipRule": 'user.department -eq "Marketing"'`. O GroupType também deve incluir a `"DynamicMembership"`. A solicitação a seguir cria um novo grupo do Microsoft 365 para os funcionários de marketing:
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -123,11 +123,11 @@ Saiba como formular membershipRules no artigo [Criar regras baseadas em atributo
 
 ## <a name="other-types-of-groups"></a>Outros tipos de grupos
 
-Os grupos do Office 365 no Yammer são usados para facilitar a colaboração de usuários por meio de publicações do Yammer. Esse tipo de grupo pode ser retornado por meio de uma solicitação de leitura, mas as postagens nele não podem ser acessadas por meio da API. Quando as postagens e os feeds de conversas do Yammer são habilitados em um grupo, as conversas em grupo do Office 365 são desabilitadas por padrão. Saiba mais em [Documentos de API do desenvolvedor do Yammer](https://developer.yammer.com/docs).
+Os grupos do Microsoft 365 no Yammer são usados para facilitar a colaboração de usuários por meio de postagens no Yammer. Esse tipo de grupo pode ser retornado por meio de uma solicitação de leitura, mas as postagens nele não podem ser acessadas por meio da API. Quando as postagens e os feeds de conversas do Yammer são habilitados em um grupo, as conversas padrão em grupo do Microsoft 365 são desabilitadas. Saiba mais em [Documentos de API do desenvolvedor do Yammer](https://developer.yammer.com/docs).
 
 ## <a name="group-based-licensing"></a>Licenciamento com base em grupo
 
-O recurso de licenciamento baseado em grupo pode ser usado para atribuir uma ou mais licenças de produto a um grupo do Azure AD. O Azure AD garante que as licenças sejam atribuídas a todos os membros do grupo. Todos os novos membros que ingressarem no grupo receberão as licenças apropriadas. Quando eles deixarem o grupo, essas licenças serão removidas. O recurso só pode ser usado com grupos de segurança e grupos do Office 365 que tenham securityEnabled=TRUE. Para saber mais sobre o licenciamento baseado em grupo, clique [aqui](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+O recurso de licenciamento baseado em grupo pode ser usado para atribuir uma ou mais licenças de produto a um grupo do Azure AD. O Azure AD garante que as licenças sejam atribuídas a todos os membros do grupo. Todos os novos membros que ingressarem no grupo receberão as licenças apropriadas. Quando eles deixarem o grupo, essas licenças serão removidas. O recurso só pode ser usado com grupos de segurança e grupos do Microsoft 365 que tenham securityEnabled=TRUE. Para saber mais sobre o licenciamento baseado em grupo, clique [aqui](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## <a name="common-use-cases"></a>Casos de usos comuns
 
@@ -141,3 +141,7 @@ Ao usar o Microsoft Graph, você pode executar as seguintes operações comuns.
 | Listar os membros de um grupo e adicionar ou remover membros. | [usuário](user.md) <br/> [grupo](group.md)| [Listar membros](../api/group-list-members.md) <br/> [Adicionar membro](../api/group-post-members.md) <br/> [Remover membro](../api/group-delete-members.md)|
 | Determinar se um usuário faz parte de um grupo, acessar todos os grupos do qual o usuário faz parte. | [usuário](user.md) <br/> [grupo](group.md)| [Verificar grupos de membros](../api/group-checkmembergroups.md) <br/> [Obter grupos de membros](../api/group-getmembergroups.md)|
 | Listar os proprietários de um grupo e adicionar ou remover proprietários. | [usuário](user.md) <br/> [grupo](group.md)| [Listar proprietários](../api/group-list-members.md) <br/> [Adicionar membro](../api/group-post-members.md) <br/> [Remover membro](../api/group-delete-members.md)|
+
+## <a name="whats-new"></a>Novidades
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+

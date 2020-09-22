@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b5bccdf98bbba4c0965daf5d5aba93cf1a34b758
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 695145ae8819efc66df29d752e7a95101c9fef9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013710"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>tipo de recurso educationAssignmentIndividualRecipient
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ Esse recurso é uma subclasse de [educationAssignmentRecipient](educationassignm
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|destinatários|String collection|Uma coleção de IDs dos destinatários.|
+|destinatários|Coleção de cadeias de caracteres|Uma coleção de IDs dos destinatários.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

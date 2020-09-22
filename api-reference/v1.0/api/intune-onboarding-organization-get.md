@@ -3,14 +3,14 @@ title: Obter organização
 description: Leia as propriedades e as relações do objeto organização.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56865889448d8f5e2a2edf8fb3d6068eaa8d68c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba7c0afc1320e5a6c386f47a7a9af880249d404d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467369"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013052"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -76,6 +76,9 @@ Content-Length: 176
   }
 }
 ```
+
+
+
 
 
 

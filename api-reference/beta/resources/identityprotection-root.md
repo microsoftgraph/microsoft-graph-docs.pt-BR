@@ -5,16 +5,16 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 2adaf43786f1ced76a2c971815989f08967cfb3d
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 3da156079e6201ac73690c550bd56b246e30c870
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312031"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013556"
 ---
 # <a name="use-the-azure-ad-identity-protection-api"></a>Usar a API de proteção de identidade do Azure AD
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,3 +35,5 @@ A proteção de identidade é uma ferramenta que permite às organizações dete
 
 * [Sobre a proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
 * [Introdução à proteção de identidade do Azure Active Directory e ao Microsoft Graph](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
+
+

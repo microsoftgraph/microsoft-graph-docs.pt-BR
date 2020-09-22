@@ -5,16 +5,16 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5054ab7c22cb35a846df29ea058e0d3c02c5e7e4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cf948d8404a4887770477b8e4b3e7812bd8516cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440509"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013584"
 ---
 # <a name="hybridagentupdaterconfiguration-resource-type"></a>tipo de recurso hybridAgentUpdaterConfiguration
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d975d6a43dda704cec7e89822917dbc495b09fd7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b22d8d76b9ece640cc873024c28dd1c0380ea9cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012905"
 ---
 # <a name="update-tablecolumn"></a>Atualizar tablecolumn
 
@@ -119,3 +119,4 @@ Content-length: 81
   "suppressions": [
   ]
 }-->
+

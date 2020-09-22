@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7133da1a74fcc194b0ab4371c2fc5b256e84fc0c
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 403842c140ddc51492d15072aca0166e3b9906ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556132"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012919"
 ---
 # <a name="replace-shift"></a>Substituir Shift
 
@@ -226,3 +226,4 @@ Content-length: 401
   ]
 }
 -->
+

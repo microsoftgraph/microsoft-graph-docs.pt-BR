@@ -6,16 +6,16 @@ title: Identidade
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: ebfc032008bf478c3c66883aceb802992704f46d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b3f831a51097664c7afc5905aa2960f1fefaec5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496800"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013559"
 ---
 # <a name="identity-resource-type"></a>tipo de recurso Identity
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ O recurso **Identity** representa uma identidade de um _actor_. Por exemplo, e a
 
 | Propriedade            | Tipo   | Descrição                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName         | Cadeia de caracteres | Nome de exibição da identidade. Talvez isso nem sempre esteja disponível ou atualizado. Por exemplo, se um usuário troca seu nome de exibição, a API pode mostrar o novo valor em uma resposta futura, mas os itens associados ao usuário não aparecem como tendo sido alterados ao se usar [delta](../api/driveitem-delta.md).  |
+| displayName         | String | Nome de exibição da identidade. Talvez isso nem sempre esteja disponível ou atualizado. Por exemplo, se um usuário troca seu nome de exibição, a API pode mostrar o novo valor em uma resposta futura, mas os itens associados ao usuário não aparecem como tendo sido alterados ao se usar [delta](../api/driveitem-delta.md).  |
 | id                  | String | Identificador exclusivo da identidade.                                                                                                                                                                                                                                                                                   |
 | tenantId            | String | Identidade exclusiva do locatário (opcional).                                                                                                                                                                                                                                                                             |
 
@@ -58,3 +58,5 @@ Em algumas circunstâncias, o identificador exclusivo para o ator pode não esta
   "suppressions": []
 }
 -->
+
+

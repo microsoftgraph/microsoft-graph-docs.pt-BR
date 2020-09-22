@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 5b50c67dff87121caf225ff7191ea8f377616522
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a76797ed5660a80e1bbce73609617844de326863
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807938"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013591"
 ---
 # <a name="hostsecuritystate-resource-type"></a>tipo de recurso hostSecurityState
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ Contém informações de estado sobre o host (incluindo dispositivos, computador
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |FQDN|String|FQDN do host (nome de domínio totalmente qualificado) (por exemplo, machine.company.com).|
-|isAzureAadJoined|Booliano|True se o host estiver associado ao domínio nos serviços de domínio do Azure Active Directory.|
-|isAzureAadRegistered|Booliano|True se o host registrado no registro de dispositivo do Azure Active Directory (dispositivos BYOD-ou seja, não é totalmente gerenciado pela empresa).|
-|isHybridAzureDomainJoined|Booliano|True se o host é membro de um domínio do Active Directory local.|
+|isAzureAadJoined|Boolean|True se o host estiver associado ao domínio nos serviços de domínio do Azure Active Directory.|
+|isAzureAadRegistered|Boolean|True se o host registrado no registro de dispositivo do Azure Active Directory (dispositivos BYOD-ou seja, não é totalmente gerenciado pela empresa).|
+|isHybridAzureDomainJoined|Boolean|True se o host é membro de um domínio do Active Directory local.|
 |NetBiosName|String|O nome do host local, sem o nome de domínio DNS.|
 |Opera|String|Sistema operacional host. (Por exemplo, Windows10, MacOS, RHEL, etc.).|
 |privateIpAddress|String|Privado (não roteável) endereço IPv4 ou IPv6 (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

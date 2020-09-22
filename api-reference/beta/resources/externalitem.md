@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3b82f67f12d263e56e3375ed87a9d6dff71c2204
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: d775cfefa7a0cd1fdb87a291ba7ac61bb4b40782
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44989818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013699"
 ---
 # <a name="externalitem-resource-type"></a>tipo de recurso externalItem
 
@@ -22,7 +22,7 @@ Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                        | Tipo de retorno                     | Descrição |
 |:--------------------------------------------------------------|:--------------------------------|:--|
@@ -79,3 +79,5 @@ Veja a seguir uma representação JSON do recurso.
     "Error: microsoft.graph.externalItem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
+
+

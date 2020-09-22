@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a04baa476c18dc5a581fffa2e466d3fcbdfa0c68
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 555e4dd162b2a5be51e8cf9a7d98b57d6de6c24e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013565"
 ---
 # <a name="identityriskevent-resource-type-deprecated"></a>tipo de recurso identityRiskEvent (preterido)
 
@@ -34,7 +34,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 
 As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](/azure/active-directory/active-directory-reporting-risk-events).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -101,3 +101,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

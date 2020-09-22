@@ -5,20 +5,20 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 41143a6b06352e0d28980d50058aeafc8da86a54
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: d23e08d2e412f77e94c802fcc03778eb89ab7158
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012751"
 ---
 # <a name="group-evaluatedynamicmembership"></a>Grupo: evaluateDynamicMembership
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Avaliar se um usuário ou dispositivo é ou se seria um membro de um grupo dinâmico. A regra de associação é retornada junto com outros detalhes que foram usados na avaliação. Você pode concluir essa operação das seguintes maneiras: 
+Avaliar se um usuário ou dispositivo é ou seria membro de um grupo dinâmico. A regra de associação é retornada junto com outros detalhes que foram usados na avaliação. Você pode concluir essa operação das seguintes maneiras: 
 
 - Avaliar se um usuário ou dispositivo é um membro de um grupo dinâmico especificado.  
 - Avaliar se um usuário ou dispositivo seria um membro de um grupo dinâmico com base na ID do usuário ou no dispositivo e em uma regra de associação.
@@ -67,8 +67,8 @@ A tabela a seguir lista as propriedades que são necessárias ao avaliar a assoc
 
 | Parâmetro | Tipo | Descrição |
 | :-------- | :--- | :---------- |
-| MemberId | Conjunto de cadeias de caracteres | MemberId é a ID do objeto do usuário ou do dispositivo a ser avaliado. |
-| membershipRule | Conjunto de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para uma possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [regras de associação dinâmicas para grupos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| MemberId | Coleção de cadeias de caracteres | MemberId é a ID do objeto do usuário ou do dispositivo a ser avaliado. |
+| membershipRule | Coleção de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para uma possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [regras de associação dinâmicas para grupos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Resposta
 
@@ -222,3 +222,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
