@@ -5,16 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac1678381a89402d9005c6bd198d2cee3f3178db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cb2c5a8388ca10f3c2819d84957cf26eb75f2f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007234"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission: versão
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -83,3 +83,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

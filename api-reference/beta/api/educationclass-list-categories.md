@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f647c0b5241dc7ab98d0fda5f3ccce8233a6b557
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05bd9bef94ae8e8c3a687470bb546a67dddb05ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007648"
 ---
 # <a name="list-educationcategories"></a>Listar educationCategories
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [educationCategory](../resources/educationcategory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [educationCategory](../resources/educationcategory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -111,3 +111,5 @@ Content-length: 218
   "suppressions": []
 }
 -->
+
+

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 913ab8805b7ef5b14fb58d9d3bf01553efff8cc5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 765f4e937a60cf4701f9639433794743af6d4dce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427344"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007753"
 ---
 # <a name="create-educationrubric"></a>Criar educationRubric
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -113,3 +113,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

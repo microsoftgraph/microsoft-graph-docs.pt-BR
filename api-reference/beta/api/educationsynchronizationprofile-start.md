@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 94f93a038504c00e8bf9b7d616516ade668d2642
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2671920a997e1cf561e2be77a13f168efe6842e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424278"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007088"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Iniciar sincronização após carregar arquivos em um educationSynchronizationProfile
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
-| Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
+| Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegado (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -45,7 +45,7 @@ POST /synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK`. Se não tiver êxito, retornará um `400 Bad Request`. A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se forem encontrados erros ou avisos.
+Se tiver êxito, este método retornará um código de resposta `200 OK`. Se não tiver êxito, retornará um `400 Bad Request` . A resposta contém uma coleção de objetos [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) como parte do corpo da resposta se forem encontrados erros ou avisos.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -157,3 +157,5 @@ Content-length: 2105
   "suppressions": [
   ]
 }-->
+
+

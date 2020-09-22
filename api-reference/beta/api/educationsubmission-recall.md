@@ -5,16 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 765fbd52abcab03682ea93769c9c1700b6a8436b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 606a2a5325da9aed6203303e40ad5b3b95f0d7d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007228"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission: rechamar
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -90,3 +90,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

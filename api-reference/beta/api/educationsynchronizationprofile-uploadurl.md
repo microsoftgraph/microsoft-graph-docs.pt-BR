@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: abab00a78e9160e4c1cfe856bc31e8ee691bdf9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a34b460242b6eee1c83ac83af80f10d938c9391
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007096"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
-| Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
+| Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegado (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -47,9 +47,9 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma URL SAS para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma URL SAS para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
 
-Se uma solicitação anterior ainda estiver sendo processada, este método retornará `409 Conflict` um indicando que o carregamento está bloqueado atualmente para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
+Se uma solicitação anterior ainda estiver sendo processada, este método retornará um `409 Conflict` indicando que o carregamento está bloqueado atualmente para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -108,3 +108,5 @@ Content-length: 314
   "suppressions": [
   ]
 }-->
+
+

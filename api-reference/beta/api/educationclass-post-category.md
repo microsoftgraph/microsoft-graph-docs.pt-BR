@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: db552b9b452453c3efed72c7d94fc14fa1cbe6c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 555abb13f9f8910101a8b3d634c56babb6dc0f21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426420"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007613"
 ---
 # <a name="create-educationcategory"></a>Criar educationCategory
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [educa
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [educationCategory](../resources/educationcategory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [educationCategory](../resources/educationcategory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -99,3 +99,5 @@ Content-length: 85
   "suppressions": []
 }
 -->
+
+

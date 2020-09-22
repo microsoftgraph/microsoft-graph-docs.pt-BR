@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5a8b0aa4944b6c9bd5207fe801df839945bc34a4
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 0184f1cfafe25fc1222c48b12f24391c126a6443
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007809"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
 
@@ -106,3 +106,5 @@ Content-length: 279
   ]
 }
 -->
+
+

@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6f9e46d7edad0b73126f2c4dcc1747e828b79b6e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bfb6c12ad8dcb95c51c53c0e8a58b65e9d1c1541
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425230"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007363"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>Adicionar educationUser a uma educationSchool
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -118,3 +118,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 43ee6465aae4ec668fda95775a846b2c51aa13b2
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: f8dc7f61d7455e5579d41d8a4e6fbf7d14ec60e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007403"
 ---
 # <a name="educationschool-delta"></a>educationSchool: Delta
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -137,3 +137,5 @@ Content-length: 313
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

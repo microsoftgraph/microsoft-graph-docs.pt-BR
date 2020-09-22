@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 579b2cca4cbf081f5429b57558bdfd9dcbdb010d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3042f18a8f352daa79cccb51bd429b0ebc8e57f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426763"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007676"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -118,3 +118,5 @@ Content-length: 224
   ]
 }
 -->
+
+

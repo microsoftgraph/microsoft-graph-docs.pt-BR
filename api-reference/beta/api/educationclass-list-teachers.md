@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 64dc4ad4831fa267be7f47c1ea0e9a97c2524a33
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a38b4d980dd94ad8a3135288a3c02ed059df3bf5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007641"
 ---
 # <a name="list-teachers"></a>Listar professores
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -138,3 +138,5 @@ Content-length: 593
   ]
 }
 -->
+
+

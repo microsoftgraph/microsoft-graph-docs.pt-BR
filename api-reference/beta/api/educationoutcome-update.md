@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8f1cd99c0134eb15a290a49f3c4bbf2da5bfd61f
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: fe20285dce5a65bc29e61000f5d5b55e5fe88681
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007536"
 ---
 # <a name="update-educationoutcome"></a>Atualizar educationoutcome
 
@@ -334,3 +334,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
