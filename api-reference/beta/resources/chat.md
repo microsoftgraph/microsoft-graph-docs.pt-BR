@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8dd9ecd5f845682187fb84a9e057d7fdb7cb70d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c365fd343af3078663cbd184b67b49feb37945c
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994320"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193474"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -22,7 +22,7 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 
 ## <a name="methods"></a>Methods
 
-|  Método       |  Tipo de retorno  | Descrição| Permissões |
+|  Método       |  Tipo de retorno  | Descrição| Permissions |
 |:---------------|:--------|:----------|-----------|
 |[Listar chats](../api/chat-list.md) | coleção [chat](chat.md) | Obter a lista de chats de que um usuário faz parte.| **Somente delegada** |
 |[Obter bate-papo](../api/chat-get.md) | [chat](chat.md) | Leia as propriedades e as relações do chat.| **Somente delegada** |
@@ -31,7 +31,7 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 |[Listar mensagens em um bate-papo](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. | Delegado e aplicativo * |
 |[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | Delegado e aplicativo * |
 
-\*> **Observação:** Ao usar permissões de aplicativo, certifique-se de saber como você vai obter a ID de chat. Como a lista de chats com permissões de aplicativo não é suportada, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de [alteração para o/chats/allMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
+\*> **Observação:** Ao usar permissões de aplicativo, certifique-se de saber como você vai obter a ID de chat. Como a lista de chats com permissões de aplicativo não é suportada, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de [alteração para o/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 
 ## <a name="properties"></a>Propriedades
 

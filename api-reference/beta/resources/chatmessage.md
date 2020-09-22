@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso chatMessage
-description: Representa uma mensagem de chat individual em um canal ou em uma entidade de chat. A mensagem de chat pode ser uma mensagem de chat raiz ou parte de um thread definido pela propriedade **replyToId** na mensagem de chat.
+description: Representa uma mensagem de chat individual em um canal ou em uma entidade de chat. A mensagem de chat pode ser uma mensagem de chat raiz ou parte de um thread que é definido pela propriedade **replyToId** na mensagem de chat.
 doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: c9025ed27f9155773413cd00454be14f82d8b2e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1af347d0c043ec2b0ca2da05ba44331aab925d2
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064329"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193460"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -29,7 +29,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |**Mensagens de canal**| | |
 |[Listar canal chat](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | Lista de todas as mensagens de chat raiz em um canal.|
 |[Obter chatMessages em um Delta de canal](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Obter mensagens de chat incrementais em um canal. |
-|[Criar assinatura para novas mensagens de canal](../api/subscription-post-subscriptions.md) | [assinatura](subscription.md) | Ouvir mensagens de canal novas e editadas e reações para elas. |
+|[Criar assinatura para novas mensagens de canal](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Ouvir mensagens de canal novas e editadas e reações para elas. |
 |[Obter canal chat](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Obtenha uma única mensagem de chat raiz de um canal.|
 |[Criar chat em um canal ou chat](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Criar uma nova mensagem de chat de nível superior em um canal.|
 |[Atualizar chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Atualizar a propriedade **policyViolation** de uma mensagem de chat.|
@@ -41,7 +41,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |**1:1 e mensagens de chat de grupo**| | |
 |[Obter chat no chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Obter uma única mensagem de chat em um chat. |
 |[Listar chatMessages em um chat](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Listar mensagens de chat em um bate-papo de grupo ou 1:1. |
-|[Criar assinatura para novas mensagens de chat](../api/subscription-post-subscriptions.md) | [assinatura](subscription.md) | Ouvir mensagens de chat novas e editadas e reações para elas. |
+|[Criar assinatura para novas mensagens de chat](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Ouvir mensagens de chat novas e editadas e reações para elas. |
 |[Criar chat em um chat](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| Envie uma mensagem de chat em uma conversa existente de chat de grupo ou 1:1.|
 |[Atualizar chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Atualizar a propriedade **policyViolation** de uma mensagem de chat.|
 |**Conteúdo hospedado**| | |
@@ -53,21 +53,22 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID única da mensagem.|
-|replyToId| cadeia de caracteres | Somente leitura. ID da mensagem de chat pai ou mensagem de chat raiz do thread. (Só se aplica a mensagens de chat em canais, não chats.) |
+|replyToId| string | Somente leitura. ID da mensagem de chat pai ou mensagem de chat raiz do thread. (Só se aplica a mensagens de chat em canais, não chats.) |
 |from|[identitySet](identityset.md)| Somente leitura. Detalhes do remetente da mensagem de chat.|
-|etag| cadeia de caracteres | Somente leitura. Número de versão da mensagem de chat. |
-|messageType|cadeia de caracteres|O tipo de mensagem de chat. Os valores possíveis são: `message` .|
+|etag| string | Somente leitura. Número de versão da mensagem de chat. |
+|messageType|string|O tipo de mensagem de chat. Os valores possíveis são: `message` .|
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem de chat foi criada.|
-|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem de chat é criada ou editada, incluindo quando uma resposta é feita (se é uma mensagem de chat raiz em um canal) ou uma reação é adicionada ou removida. |
+|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora em que a mensagem de chat é criada (configuração inicial) ou modificada, incluindo quando uma reação é adicionada ou removida. |
+|lastEditedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora em que foram feitas edições na mensagem de chat. Dispara um sinalizador "editado" na interface do usuário do Microsoft Teams. Se não for feita nenhuma edição, o valor será `null` .|
 |deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora em que a mensagem de chat foi excluída ou nula se não for excluída. |
-|subject|cadeia de caracteres| O assunto da mensagem de chat, em texto não criptografado.|
+|assunto|string| O assunto da mensagem de chat, em texto não criptografado.|
 |body|[itemBody](itembody.md)|Representação de texto não criptografado/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver um [chatMessageMention](chatmessagemention.md). |
-|summary|cadeia de caracteres| Texto de resumo da mensagem de chat que pode ser usado para notificações por push e visualizações de resumo ou exibições de retorno. Aplica-se somente a mensagens de chat de canal, e não a mensagens de chat em um chat. |
+|summary|string| Texto de resumo da mensagem de chat que pode ser usado para notificações por push e visualizações de resumo ou exibições de retorno. Aplica-se somente a mensagens de chat de canal, e não a mensagens de chat em um chat. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| Lista de entidades mencionadas na mensagem de chat. Atualmente, dá suporte a usuário, bot, equipe, canal.|
-|importância|cadeia de caracteres | A importância da mensagem de chat. Os valores possíveis são: `normal`, `high`, `urgent`.|
+|importância|string | A importância da mensagem de chat. Os valores possíveis são: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](./chatmessagereaction.md) collection | Reações para esta mensagem de chat (por exemplo, como).|
-|localidade|cadeia de caracteres|Local da mensagem de chat definida pelo cliente.|
+|localidade|string|Local da mensagem de chat definida pelo cliente.|
 | policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) |Define as propriedades de uma violação de política definida por um aplicativo DLP (prevenção de perda de dados).|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -125,5 +126,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
 

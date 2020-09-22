@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: ea6b726a651beaa4619d593c336598fd8890d4af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9164b90d8b3156fa9abb57d41767c9a322f7c27
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969260"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193446"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
@@ -28,7 +28,7 @@ Esta API suporta os seguintes escopos de permissão; para saber mais, incluindo 
 |:---------------- |:-------------------------------------------- |
 | [Delegado](/graph/auth-v2-user) (conta corporativa ou de estudante) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
 | [Delegado](/graph/auth-v2-user) (conta pessoal da Microsoft) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
-| [Aplicativo](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
+| [Application](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
 
 Os resultados da resposta são baseados no contexto do aplicativo de chamada. A seguir, um resumo dos cenários comuns:
 
@@ -134,7 +134,10 @@ Content-length: 586
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
       "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-      "latestSupportedTlsVersion": "v1_2"
+      "latestSupportedTlsVersion": "v1_2",
+      "encryptionCertificate": "",
+      "encryptionCertificateId": "",
+      "includeResourceData": false
     }
   ]
 }

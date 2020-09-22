@@ -42,7 +42,7 @@ items:
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Notificações ausentes do Outlook (versão prévia)
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
-          - name: Notificações com dados de recursos (visualização)
+          - name: Notificações com dados de recurso
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: Receba notificações de diferentes maneiras (visualização)
             href: /graph/change-notifications-delivery?context=graph/api/beta
@@ -132,6 +132,20 @@ items:
     items:
       - name: Visão geral do kit de ferramentas
         href: /graph/toolkit/overview?context=graph/api/beta
+      - name: Introdução
+        items:
+          - name: Visão geral
+            href: /graph/toolkit/get-started/overview?context=graph/api/beta
+          - name: Criar um aplicativo Web (JavaScript)
+            href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
+          - name: Criar uma web part do Microsoft Office SharePoint Online
+            href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
+          - name: Criar uma guia do Microsoft Teams
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/beta
+          - name: Usar o kit de ferramentas com reagir
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
+          - name: Usar o kit de ferramentas com o angular
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
       - name: Componentes
         items:
           - name: Logon
@@ -147,7 +161,7 @@ items:
       - name: Provedores
         items:
           - name: Usando os provedores
-            href: /graph//graph/toolkit/providers?context=graph/api/beta
+            href: /graph/toolkit/providers?context=graph/api/beta
           - name: Provedor MSAL
             href: /graph/toolkit/providers/msal?context=graph/api/beta
           - name: Provedor do SharePoint
@@ -876,7 +890,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: Listar ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: delta
+              - name: Delta
                 href: api/serviceprincipal-delta.md
               - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
@@ -10301,7 +10315,7 @@ items:
                         href: api/b2xuserflows-update-identityprovider.md
                       - name: Excluir o provedor de identidade
                         href: api/b2xuserflows-delete-identityprovider.md
-          - name: Gestão
+          - name: Governança
             items:
               - name: Avaliações do acesso
                 href: resources/accessreviews-root.md
@@ -11628,6 +11642,10 @@ items:
             items:
               - name: Visão Geral
                 href: resources/search-api-overview.md
+              - name: Tipo de solicitação de pesquisa
+                href: resources/searchrequest.md
+              - name: Tipo de resposta de pesquisa
+                href: resources/searchresponse.md
               - name: Dados de consulta
                 href: api/search-query.md
           - name: Índice
@@ -11674,6 +11692,24 @@ items:
                     href: api/externalitem-update.md
                   - name: Excluir
                     href: api/externalitem-delete.md
+              - name: Grupo externo
+                items:
+                  - name: Grupo externo
+                    href: resources/externalgroup.md
+                  - name: Criar
+                    href: api/externalconnection-post-groups.md
+                  - name: Excluir
+                    href: api/externalgroup-delete.md
+                  - name: Criar membros
+                    href: api/externalgroup-post-members.md
+              - name: Membro do grupo externo
+                items:
+                  - name: Membro do grupo externo
+                    href: resources/externalgroupmember.md
+                  - name: Criar
+                    href: api/externalgroup-post-members.md
+                  - name: Excluir
+                    href: api/externalgroupmember-delete.md
       - name: Segurança
         displayname: 'Security API, Microsoft Graph Security API'
         items:
