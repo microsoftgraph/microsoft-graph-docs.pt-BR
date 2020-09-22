@@ -3,14 +3,14 @@ title: Atualizar importedAppleDeviceIdentity
 description: Atualiza as propriedades de um objeto importedAppleDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ca19f2b386da467ea3b71e1a95c6a30ad205787
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 9669e14b578134c3f6aad56049de82c2ef6ded45
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088087"
 ---
 # <a name="update-importedappledeviceidentity"></a>Atualizar importedAppleDeviceIdentity
 
@@ -57,14 +57,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [importe
 |serialNumber|String|Número de série do dispositivo|
 |requestedEnrollmentProfileId|Cadeia de caracteres|ID do perfil de registro o administrador pretende aplicar ao dispositivo durante o próximo registro|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|O perfil de registro de tempo foi atribuído ao dispositivo|
-|isSupervised|Boolean|Indica se o dispositivo Apple é supervisionado. Mais informações em:https://support.apple.com/HT202837|
+|isSupervised|Boolean|Indica se o dispositivo Apple é supervisionado. Mais informações em: https://support.apple.com/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Fonte de descoberta de dispositivos Apple. Os valores possíveis são: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Booliano|Indica se o dispositivo é excluído do Apple Business Manager|
+|isDeleted|Boolean|Indica se o dispositivo é excluído do Apple Business Manager|
 |createdDateTime|DateTimeOffset|Data e hora de criação do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do dispositivo|
-|descrição|String|A descrição do dispositivo|
+|description|Cadeia de caracteres|A descrição do dispositivo|
 |enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|O estado do dispositivo no Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|plataforma|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
 
@@ -118,6 +118,9 @@ Content-Length: 627
   "platform": "ios"
 }
 ```
+
+
+
 
 
 

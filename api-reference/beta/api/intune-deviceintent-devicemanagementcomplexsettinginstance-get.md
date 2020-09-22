@@ -3,14 +3,14 @@ title: Obter deviceManagementComplexSettingInstance
 description: Leia as propriedades e as relações do objeto deviceManagementComplexSettingInstance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dcff39a75e09c74a304003c5ce9c9f12e5c1b327
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8a7bdc1d9b3d02485c757928cddca26fede1d98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43329157"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088227"
 ---
 # <a name="get-devicemanagementcomplexsettinginstance"></a>Obter deviceManagementComplexSettingInstance
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -82,6 +82,9 @@ Content-Length: 234
   }
 }
 ```
+
+
+
 
 
 

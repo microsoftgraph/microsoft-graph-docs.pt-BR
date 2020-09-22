@@ -3,14 +3,14 @@ title: Criar deviceManagementScriptDeviceState
 description: Criar um novo objeto deviceManagementScriptDeviceState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bcc5a3c79143cc01a91c8df45de699c41559a8c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 35417b26989f5343784c26e21cea09d21b4623a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426066"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088094"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Criar deviceManagementScriptDeviceState
 
@@ -55,9 +55,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado da última execução do script de gerenciamento de dispositivos. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|resultMessage|String|Detalhes da saída de execução.|
+|resultMessage|Cadeia de caracteres|Detalhes da saída de execução.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivos é executado.|
 |errorCode|Int32|Código de erro correspondente à execução errada do script de gerenciamento de dispositivos.|
 |errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução errada do script de gerenciamento de dispositivo.|
@@ -65,7 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -103,6 +103,9 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
+
+
+
 
 
 

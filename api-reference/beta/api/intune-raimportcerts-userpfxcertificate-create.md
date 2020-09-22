@@ -3,14 +3,14 @@ title: Criar userPFXCertificate
 description: Criar um novo objeto userPFXCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a22cdb432fac4bd6181a0ef5752661999cc1ef51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c86303f417ac40c19a0e2f86702d27f36d5a1720
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088052"
 ---
 # <a name="create-userpfxcertificate"></a>Criar userPFXCertificate
 
@@ -53,24 +53,24 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userPFXC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do certificado PFX.|
-|identificação|String|Impressão digital SHA-1 do certificado PFX.|
+|id|Cadeia de caracteres|Identificador exclusivo do certificado PFX.|
+|identificação|Cadeia de caracteres|Impressão digital SHA-1 do certificado PFX.|
 |Da intendedpurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Finalidade do certificado do ponto de vista da implantação. Os valores possíveis são: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|String|Nome principal de usuário do certificado PFX.|
+|userPrincipalName|Cadeia de caracteres|Nome principal de usuário do certificado PFX.|
 |startDateTime|DateTimeOffset|Data/hora de início da validade do certificado.|
 |expirationDateTime|DateTimeOffset|Data/hora de validade do certificado.|
-|providerName|String|Provedor de criptografia usado para criptografar este BLOB.|
-|keyName|String|Nome da chave (dentro do provedor) usada para criptografar o blob.|
+|providerName|Cadeia de caracteres|Provedor de criptografia usado para criptografar este BLOB.|
+|keyName|Cadeia de caracteres|Nome da chave (dentro do provedor) usada para criptografar o blob.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema de preenchimento usado pelo provedor durante a criptografia/descriptografia. Os possíveis valores são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |encryptedPfxBlob|Binária|Blob PFX criptografado.|
-|encryptedPfxPassword|String|Senha PFX criptografada.|
+|encryptedPfxPassword|Cadeia de caracteres|Senha PFX criptografada.|
 |createdDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi importado.|
 |lastModifiedDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi modificado pela última vez.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -120,6 +120,9 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

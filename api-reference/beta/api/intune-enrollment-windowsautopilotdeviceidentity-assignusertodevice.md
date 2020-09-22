@@ -3,14 +3,14 @@ title: ação assignUserToDevice
 description: Atribui um usuário aos dispositivos do AutoPilot.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 60e21b15d239c3485bf1e09880a188ed80d4de84
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19d3766d8bb59de6353ed44d01fb677161baf8f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452420"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088059"
 ---
 # <a name="assignusertodevice-action"></a>ação assignUserToDevice
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Ainda não documentado|
+|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
 |addressableUserName|String|Ainda não documentado|
 
 
@@ -83,6 +83,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

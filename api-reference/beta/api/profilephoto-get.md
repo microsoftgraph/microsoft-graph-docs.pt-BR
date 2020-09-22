@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: d5fed793fa7e7a9a3331308064976aba1bbf1e74
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5e97f76d64b5a63b0659acd5399e5b8b97300c62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807973"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088045"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -214,3 +214,5 @@ Se quiser exibir a imagem em uma página da Web, crie um objeto de memória usan
   "suppressions": []
 }
 -->
+
+

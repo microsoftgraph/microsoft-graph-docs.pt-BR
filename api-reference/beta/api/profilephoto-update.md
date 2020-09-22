@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 5ba0cb3b88e5048141cea8085550a4c3e389130e
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: 675b1cb4116ec59b65442c683fe07f67a8045379
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087996"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -121,3 +121,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+
