@@ -6,12 +6,12 @@ title: Excluir uma página de um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 10193e9d60d9ed254b2598a2845a487641554553
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d573553ee87b70adfd1f2cde575ce6182dedf8b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044484"
 ---
 # <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Excluir página da lista de páginas do site de um site
 
@@ -87,3 +87,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

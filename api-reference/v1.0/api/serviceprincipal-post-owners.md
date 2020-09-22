@@ -1,31 +1,31 @@
 ---
-title: 'servicePrincipalName: Adicionar proprietário'
+title: 'servicePrincipal: Adicionar proprietário'
 description: Use esta API para adicionar um proprietário para a entidade de serviço.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 9f4cedfcc76093600a299fadb2e9da4ffcb7a746
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: bc6aaaa78e8c51a2d1b99284322ffdaaf5ae1287
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383529"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045506"
 ---
-# <a name="serviceprincipal-add-owner"></a>servicePrincipalName: Adicionar proprietário
+# <a name="serviceprincipal-add-owner"></a>servicePrincipal: Adicionar proprietário
 
 Namespace: microsoft.graph
 
-Use esta API para adicionar um proprietário para o [servicePrincipalName](../resources/serviceprincipal.md).
+Use esta API para adicionar um proprietário para a [servicePrincipal](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Application. ReadWrite. All e Directory. Read. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. ReadWrite. OwnedBy e Directory. Read. All, Application. ReadWrite. All e Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) |  Application.ReadWrite.All e Directory.Read.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.ReadWrite.OwnedBy e Directory.Read.All, Application.ReadWrite.All e Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -106,3 +106,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

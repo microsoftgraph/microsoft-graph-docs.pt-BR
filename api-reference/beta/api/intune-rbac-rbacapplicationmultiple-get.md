@@ -3,14 +3,14 @@ title: Obter rbacApplicationMultiple
 description: Leia as propriedades e as relações do objeto rbacApplicationMultiple.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28715adfe16cc8590a7a5bdb1e91bd8d631051be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4c7de01a8276c71b4adb9d8fac40ccc2413aa10a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421240"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044855"
 ---
 # <a name="get-rbacapplicationmultiple"></a>Obter rbacApplicationMultiple
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -77,6 +77,9 @@ Content-Length: 137
   }
 }
 ```
+
+
+
 
 
 

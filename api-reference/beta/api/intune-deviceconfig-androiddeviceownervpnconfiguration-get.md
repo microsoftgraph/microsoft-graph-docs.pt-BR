@@ -3,14 +3,14 @@ title: Obter androidDeviceOwnerVpnConfiguration
 description: Leia as propriedades e as relações do objeto androidDeviceOwnerVpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3fa7af555496e50d236b733cd507590da5626ced
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: c298515cc268b2c332ef835b99745af886ab9858
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045401"
 ---
 # <a name="get-androiddeviceownervpnconfiguration"></a>Obter androidDeviceOwnerVpnConfiguration
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2061
+Content-Length: 2400
 
 {
   "value": {
@@ -128,11 +128,24 @@ Content-Length: 2061
     "targetedPackageIds": [
       "Targeted Package Ids value"
     ],
+    "targetedMobileApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
     "alwaysOn": true,
-    "alwaysOnLockdown": true
+    "alwaysOnLockdown": true,
+    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
   }
 }
 ```
+
+
+
 
 
 

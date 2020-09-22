@@ -5,12 +5,12 @@ description: Não acompanhar o site de um usuário
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b818e77eb509756a26697d6c7ccf0124f7959b5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c15c8d05e688bd9c02455340f8f94d0f33939b26
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453188"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044491"
 ---
 # <a name="unfollow-site"></a>Deixar de seguir site 
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça uma matriz de objetos JSON com o parâmetro 
 ## <a name="response"></a>Resposta
 
 * Se a solicitação for bem-sucedida, este método retornará um `204` código de status sem conteúdo.  
-* Se ocorreu um erro durante a despróximação de qualquer um dos sites especificados, este `207` método retornará um código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos [Error](/graph/errors) e siteIds indicando quais sites não podem ser seguidos.
+* Se ocorreu um erro durante a despróximação de qualquer um dos sites especificados, este método retornará um `207` código de status e o corpo da resposta conterá uma matriz de entradas contendo objetos [Error](/graph/errors) e siteIds indicando quais sites não podem ser seguidos.
 
 ## <a name="example"></a>Exemplo
 
@@ -138,3 +138,5 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
+

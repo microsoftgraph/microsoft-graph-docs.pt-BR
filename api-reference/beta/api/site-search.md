@@ -6,16 +6,16 @@ title: Localizar sites do SharePoint por palavra-chave
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c41f49f217e669a35ef77872161394186ec4b392
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 778da0c46168e816fcdafa806b33b1e734345a43
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453202"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044505"
 ---
 # <a name="search-for-sites"></a>Procurar sites
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -101,3 +101,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

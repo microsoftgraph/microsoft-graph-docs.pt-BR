@@ -6,12 +6,12 @@ title: Criar uma nova página em um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5fdbe35219f3d7b543cd95e2533e46044b1429e4
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 1a326b83055cf25d3741976981fc499f0fdd8788
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681989"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044498"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Criar uma página na lista de páginas do site de um site
 
@@ -214,3 +214,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

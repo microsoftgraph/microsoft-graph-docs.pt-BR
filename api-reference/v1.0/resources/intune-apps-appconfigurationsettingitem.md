@@ -3,14 +3,14 @@ title: Tipo de recurso appConfigurationSettingItem
 description: Contém propriedades do item de configuração de Configuração do aplicativo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 997779a53680042f16c0fb4a4337889dbba377d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bdc552bc2dcaf04990999c9414d2723284a568f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397334"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045464"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Tipo de recurso appConfigurationSettingItem
 
@@ -23,7 +23,7 @@ Contém propriedades do item de configuração de Configuração do aplicativo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|appConfigKey|String|chave de configuração do aplicativo.|
+|appConfigKey|Cadeia de caracteres|chave de configuração do aplicativo.|
 |appConfigKeyType|[mdmAppConfigKeyType](../resources/intune-apps-mdmappconfigkeytype.md)|tipo de chave de configuração de aplicativo. Os valores possíveis são: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|Cadeia de caracteres|valor de chave de configuração de aplicativo.|
 
@@ -45,6 +45,8 @@ Veja a seguir uma representação JSON do recurso.
   "appConfigKeyValue": "String"
 }
 ```
+
+
 
 
 

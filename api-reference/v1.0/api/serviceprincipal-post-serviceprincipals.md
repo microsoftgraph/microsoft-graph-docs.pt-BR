@@ -1,25 +1,25 @@
 ---
-title: Criar o servicePrincipalName
-description: Criar um novo objeto servicePrincipalName.
+title: Criar serviceprincipal
+description: Criar um novo objeto do servicePrincipal.
 author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 65ca715730dde77d50e0ed45f14615e6c211a745
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: b3b865066c498e340f917dd72aaf06e75593a66f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383928"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045512"
 ---
-# <a name="create-serviceprincipal"></a>Criar o servicePrincipalName
+# <a name="create-serviceprincipal"></a>Criar servicePrincipal
 
 Namespace: microsoft.graph
 
-Criar um novo objeto [servicePrincipalName](../resources/serviceprincipal.md) .
+Criar um novo objeto do [servicePrincipal](../resources/serviceprincipal.md).
 
 > [!IMPORTANT]
-> A adição de [**passwordCredential**](../resources/passwordcredential.md) ao criar o servicePrincipalName não é suportada. Use o método [addpassword](serviceprincipal-addpassword.md) para adicionar senhas para um servicePrincipalName.
+> Não há suporte para a adição de [**passwordCredential**](../resources/passwordcredential.md) durante a criação de servicePrincipals. Use o método [addpassword](serviceprincipal-addpassword.md) para adicionar senhas a um servicePrincipal.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,11 +44,11 @@ POST /serviceprincipals
 | Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [servicePrincipalName](../resources/serviceprincipal.md) . O corpo da solicitação deve conter **AppID**.
+No corpo da solicitação, forneça uma representação JSON de um objeto do [servicePrincipal](../resources/serviceprincipal.md). O corpo da solicitação deve conter  **appId**.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [servicePrincipalName](../resources/serviceprincipal.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto do [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
@@ -132,3 +132,4 @@ Content-type: application/json
     "passwordCredentials": []
 }
 ```
+

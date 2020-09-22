@@ -3,14 +3,14 @@ title: Listar androidForWorkVpnConfigurations
 description: Listar Propriedades e relações dos objetos androidForWorkVpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e58dfd3cc62a083f9cc0e32dba1401e0039a96d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9bc2677e6f32ee401d061f3df3a2d412fdc004d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43345108"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045219"
 ---
 # <a name="list-androidforworkvpnconfigurations"></a>Listar androidForWorkVpnConfigurations
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -135,6 +135,9 @@ Content-Length: 2203
   ]
 }
 ```
+
+
+
 
 
 

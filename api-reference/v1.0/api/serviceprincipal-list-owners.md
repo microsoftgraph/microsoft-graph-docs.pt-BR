@@ -1,31 +1,31 @@
 ---
-title: 'servicePrincipalName: listar proprietários'
-description: Recupere uma lista de proprietários do servicePrincipalName.
+title: 'servicePrincipalName: Listar proprietários'
+description: Recuperar uma lista de proprietários do servicePrincipal.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: a0da9f2bbf0fb3b42c7077672a3cfa10c0b2eb5b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 3bb961256edec4e674af5cca674127731c8547a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045618"
 ---
-# <a name="serviceprincipals-list-owners"></a>servicePrincipalName: listar proprietários
+# <a name="serviceprincipals-list-owners"></a>servicePrincipalName: Listar proprietários
 
 Namespace: microsoft.graph
 
-Recupere uma lista de proprietários do [servicePrincipalName](../resources/serviceprincipal.md).
+Recuperar uma lista de proprietários do [servicePrincipal](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. Read. All, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. Read. All, Application. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -118,3 +118,4 @@ Content-length: 55
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f30ff49bfe43e67ee4ae7fbac21277c060244d02
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 506a71ca270a50bbbd4ff8ad90b59800073357b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045527"
 ---
 # <a name="assign-homerealmdiscoverypolicy"></a>Atribuir homeRealmDiscoveryPolicy
 
@@ -115,3 +115,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
