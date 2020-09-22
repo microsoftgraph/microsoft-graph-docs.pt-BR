@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: db0276307e824faa0c5606a8fb1212a0ad25e654
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: a9121648f35dd09d8fb87d4738bb2bf6e9b3960b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805665"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998807"
 ---
 # <a name="externalitemcontent-resource-type"></a>tipo de recurso externalItemContent
 
@@ -27,7 +27,7 @@ O conteúdo de um [externalItem](externalitem.md) indexado por meio de uma [cone
 | Propriedade | Tipo   | Descrição                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | valor    | Cadeia de caracteres | O conteúdo do externalItem. Obrigatório.                                                 |
-| type     | String | O tipo de conteúdo na propriedade Value. Os valores possíveis são: `text` e `html`. Obrigatório. |
+| tipo     | String | O tipo de conteúdo na propriedade Value. Os valores possíveis são: `text` e `html`. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 
@@ -63,3 +63,5 @@ Veja a seguir uma representação JSON do recurso.
   "tocPath": "",
   "suppressions": []
 }-->
+
+

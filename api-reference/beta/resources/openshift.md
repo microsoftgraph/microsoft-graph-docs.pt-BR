@@ -5,30 +5,30 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e544f54c7fbf015ed1050ab23d76217b311bdeaf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 534756fd26fcac13d150e9cbd1782a8f334e5a2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522190"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998562"
 ---
 # <a name="openshift-resource-type"></a>tipo de recurso openShift
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um turno não atribuído e aberto em um [cronograma](../resources/schedule.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Criar](../api/openshift-post.md) | [openShift](openshift.md) | Criar uma instância de um objeto **openShift** . |
 | [List](../api/openshift-list.md) | Coleção de [openShift](openshift.md) | Listar as propriedades e os relacionamentos dos objetos **openShift** em uma equipe.|
 | [Get](../api/openshift-get.md) | [openShift](openshift.md) | Leia as propriedades e os relacionamentos de um objeto **openShift** . |
-| [Update](../api/openshift-update.md) | [openShift](openshift.md) | Atualize um objeto **openShift** . |
-| [Delete](../api/openshift-delete.md) | None | Excluir um objeto **openShift** . |
+| [Atualização](../api/openshift-update.md) | [openShift](openshift.md) | Atualize um objeto **openShift** . |
+| [Delete](../api/openshift-delete.md) | Nenhum | Excluir um objeto **openShift** . |
 
 ## <a name="properties"></a>Propriedades
 
@@ -72,3 +72,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ea02186b7d9bd7bed14c6ea5b46023da81814f07
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 5b96322cdb408069136a46aa9c83cf363cc1b6f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791059"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998842"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>recurso educationOneRosterApiDataProvider
 
@@ -84,3 +84,5 @@ Derivado de [educationSynchronizationDataProvider](educationsynchronizationdatap
       "Error: microsoft.graph.educationoneRosterApiDataProvider/connectionSettings:\r\n      Referenced type microsoft.graph.educationSynchronizationConnectionSettings is not defined in the doc set! Potential suggestion: microsoft.graph.settings"
   ]
 }-->
+
+

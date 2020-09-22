@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 73171beee516c63f75649375b7f084c01bac543f
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: e95bae902b444735b87fa7b29e061bf9bf2629ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427253"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998471"
 ---
 # <a name="organizationsettings-resource-type"></a>tipo de recurso organizationSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "45427253"
 
 Contém configurações que se aplicam à [organização](organization.md) ou que devem ser aplicadas a objetos de [usuário](user.md) em uma organização.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -36,9 +36,9 @@ Nenhum.
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id |Cadeia de caracteres| ID do objeto de configurações da organização. |
+|id |String| ID do objeto de configurações da organização. |
 |profileCardProperties|coleção [profileCardProperty](profilecardproperty.md)| Contém uma coleção de propriedades que um administrador definiu como visível no cartão de perfil do Microsoft 365. [Obter configurações da organização](../api/organizationsettings-get.md) retorna as propriedades configuradas para cartões de perfil para a organização.|
-|Ideias|[itemInsightsSettings](iteminsightssettings.md)| Contém as propriedades que são configuradas por um administrador para a visibilidade das ideias derivadas do Microsoft Graph, entre um usuário e outros itens no Microsoft 365, como documentos ou sites. [Obtenha itemInsightsSettings](../api/iteminsightssettings-get.md) por meio dessa propriedade de navegação.|
+|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| Contém as propriedades que são configuradas por um administrador para a visibilidade das ideias derivadas do Microsoft Graph, entre um usuário e outros itens no Microsoft 365, como documentos ou sites. [Obtenha itemInsightsSettings](../api/iteminsightssettings-get.md) por meio dessa propriedade de navegação.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -70,3 +70,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

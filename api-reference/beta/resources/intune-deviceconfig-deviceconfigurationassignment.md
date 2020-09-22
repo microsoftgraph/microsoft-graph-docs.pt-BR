@@ -3,14 +3,14 @@ title: Tipo de recurso deviceConfigurationAssignment
 description: A entidade de atribuição de configuração do dispositivo atribui um grupo AAD a uma configuração de dispositivo específica.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40723914ff9b4a7dddd54f3484fedd98ac2569b5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ac23b2c634702d1983d6c659d01c44d59bf4e59c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788070"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998674"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Tipo de recurso deviceConfigurationAssignment
 
@@ -40,7 +40,7 @@ A entidade de atribuição de configuração do dispositivo atribui um grupo AAD
 |sourceId|String|O identificador da origem da atribuição. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -63,6 +63,9 @@ Veja a seguir uma representação JSON do recurso.
   "sourceId": "String"
 }
 ```
+
+
+
 
 
 

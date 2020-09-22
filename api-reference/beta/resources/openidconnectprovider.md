@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: namkedia
-ms.openlocfilehash: 9a7567ee550432dc5a0d98ce9c3a6ae7c51a0160
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: 296714c1406fe022df44aa4872a91eb4bb9f80cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998611"
 ---
 # <a name="openidconnectprovider-resource-type"></a>tipo de recurso openIdConnectProvider
 
@@ -24,7 +24,7 @@ A configuração de um provedor de conexão OpenID no locatário B2C permite que
 
 Herda de [identityprovider](../resources/identityprovider.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -82,3 +82,5 @@ Veja a seguir uma representação JSON do recurso.
   "scope": "String"
 }
 ```
+
+

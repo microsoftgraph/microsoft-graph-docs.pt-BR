@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 40f8fd033f5fd5bda5605e7df66ee80b21acfe51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f569bf81b5af0f95bfb48a6eb9de03a09cb60a13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998478"
 ---
 # <a name="optionalclaims-resource-type"></a>tipo de recurso optionalClaims
 
@@ -42,3 +42,5 @@ Veja a seguir uma representação JSON do recurso.
   "saml2Token": [{"@odata.type": "microsoft.graph.optionalClaim"}]
 }
 ```
+
+

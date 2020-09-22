@@ -5,16 +5,16 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6695f1cd92ccde1fb26a581fce49c0c233deb141
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff575398f3829c5d2adbe92799f5b9dca953aa4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998821"
 ---
 # <a name="educationonpremisesinfo-resource-type"></a>tipo de recurso educationOnPremisesInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Informações adicionais usadas para associar uma conta de usuário local do Active Directory ao objeto de usuário do Azure AD.
 
@@ -51,3 +51,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

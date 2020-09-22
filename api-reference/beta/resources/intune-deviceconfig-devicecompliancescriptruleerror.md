@@ -3,14 +3,14 @@ title: tipo de recurso deviceComplianceScriptRuleError
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a842d33c52774d2f2d5e251d32980e7cd28d4ec5
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: fb2e1d20828c81851d6e85f63ea05f2aa59f9f16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998765"
 ---
 # <a name="devicecompliancescriptruleerror-resource-type"></a>tipo de recurso deviceComplianceScriptRuleError
 
@@ -33,7 +33,7 @@ Herda de [deviceComplianceScriptError](../resources/intune-deviceconfig-deviceco
 |settingName|Cadeia de caracteres|Nome da configuração da regra com erro.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -50,6 +50,9 @@ Veja a seguir uma representação JSON do recurso.
   "settingName": "String"
 }
 ```
+
+
+
 
 
 

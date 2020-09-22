@@ -3,14 +3,14 @@ title: tipo de recurso deviceComplianceScriptValidationResult
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d91c9ca3b234971a6acc58b7dee8cc736745d85
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 8bb60af47f7c06b17dcc54468aa48dd85215a3da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998772"
 ---
 # <a name="devicecompliancescriptvalidationresult-resource-type"></a>tipo de recurso deviceComplianceScriptValidationResult
 
@@ -30,7 +30,7 @@ Ainda não documentado
 |ruleErrors|coleção [deviceComplianceScriptRuleError](../resources/intune-deviceconfig-devicecompliancescriptruleerror.md)|Erros no JSON para o script de regras.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -68,6 +68,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

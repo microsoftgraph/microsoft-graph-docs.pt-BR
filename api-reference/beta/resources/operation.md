@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: billbliss
-ms.openlocfilehash: e94970609c2ccfb99e61b254b080e1dbaa244ba6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f57b9f14603fdeae539e872d87b5af2645cedef0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998506"
 ---
 # <a name="operation-resource-type"></a>tipo de recurso Operation
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 O status de uma operação de execução longa.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 Nenhum
 
@@ -29,7 +29,7 @@ Nenhum
 | Propriedade           | Tipo            | Descrição                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | A hora de início da operação.                                                |
-| id                 | String          | A ID da operação. Somente leitura. Servidor gerado.                                  |
+| id                 | String          | A ID da operação. somente leitura. Servidor gerado.                                  |
 | lastActionDateTime | DateTimeOffset  | A hora da última ação da operação.                                   |
 | status             | String          | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 
@@ -83,3 +83,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

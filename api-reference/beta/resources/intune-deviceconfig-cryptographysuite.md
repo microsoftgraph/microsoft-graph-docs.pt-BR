@@ -3,14 +3,14 @@ title: tipo de recurso cryptographySuite
 description: Parâmetros de associação de segurança VPN
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c09525fdc65a64272901a8823fe9a3fffbecb62
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 686799364201b004470aa80ebe1df5a1eac98fe7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790254"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998793"
 ---
 # <a name="cryptographysuite-resource-type"></a>tipo de recurso cryptographySuite
 
@@ -33,7 +33,7 @@ Parâmetros de associação de segurança VPN
 |pfsGroup|[perfectForwardSecrecyGroup](../resources/intune-deviceconfig-perfectforwardsecrecygroup.md)|Grupo de sigilo total no futuro. Os valores possíveis são: `pfs1`, `pfs2`, `pfs2048`, `ecp256`, `ecp384`, `pfsMM`, `pfs24`.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -53,6 +53,9 @@ Veja a seguir uma representação JSON do recurso.
   "pfsGroup": "String"
 }
 ```
+
+
+
 
 
 

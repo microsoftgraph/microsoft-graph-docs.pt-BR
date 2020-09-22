@@ -3,14 +3,14 @@ title: tipo de enumeração deliveryOptimizationGroupIdOptionsType
 description: Valores possíveis para a configuração DeliveryOptimizationGroupIdOptionsType.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c39fc2d706f2d14f149d602d8d4e543c53bdb8e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 97d16f275c95cd6946b668b3e620ed50dbb9f702
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420469"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998786"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>tipo de enumeração deliveryOptimizationGroupIdOptionsType
 
@@ -26,10 +26,13 @@ Valores possíveis para a configuração DeliveryOptimizationGroupIdOptionsType.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|adSite|1|Site do Active Directory.|
-|authenticatedDomainSid|duas|SID de domínio autenticado.|
-|dhcpUserOption|3D|Opção de usuário DHCP.|
+|adSite|1 |Site do Active Directory.|
+|authenticatedDomainSid|2 |SID de domínio autenticado.|
+|dhcpUserOption|3 |Opção de usuário DHCP.|
 |dnsSuffix|4 |Sufixo DNS.|
+
+
+
 
 
 

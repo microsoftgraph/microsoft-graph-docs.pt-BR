@@ -3,14 +3,14 @@ title: tipo de recurso Propriedadesdeviceconfigurationconflictsummary
 description: Resumo de conflito para um conjunto de políticas de configuração de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f04fbf8784e87c72cd744f5faddc3d667f74e6bc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 439878c615884a0da1dbdf7762e052abef4a0482
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469407"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998678"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>tipo de recurso Propriedadesdeviceconfigurationconflictsummary
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Resumo de conflito para um conjunto de políticas de configuração de dispositivo.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceConfigurationConflictSummaries](../api/intune-deviceconfig-deviceconfigurationconflictsummary-list.md)|coleção [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)|Listar Propriedades e relações dos objetos [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) .|
@@ -57,7 +57,8 @@ Veja a seguir uma representação JSON do recurso.
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "String",
-      "displayName": "String"
+      "displayName": "String",
+      "sourceType": "String"
     }
   ],
   "id": "String (identifier)",
@@ -67,6 +68,9 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCheckinsImpacted": 1024
 }
 ```
+
+
+
 
 
 
