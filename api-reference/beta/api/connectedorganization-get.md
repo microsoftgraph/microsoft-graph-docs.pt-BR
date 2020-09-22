@@ -5,32 +5,32 @@ author: markwahl-msft
 ms.prod: microsoft-identity-platform
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 8df2a52ac4ad0c459c79d911bd2454f29b7bd15a
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: a67cadc4450636a125f56f1cd8d3ad8422f12e91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566582"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982364"
 ---
-# <a name="get-connectedorganization"></a><span data-ttu-id="604fe-103">Obter connectedOrganization</span><span class="sxs-lookup"><span data-stu-id="604fe-103">Get connectedOrganization</span></span>
+# <a name="get-connectedorganization"></a><span data-ttu-id="84374-103">Obter connectedOrganization</span><span class="sxs-lookup"><span data-stu-id="84374-103">Get connectedOrganization</span></span>
 
-<span data-ttu-id="604fe-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="604fe-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="84374-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="84374-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="604fe-105">Recupere as propriedades e os relacionamentos de um objeto [connectedOrganization](../resources/connectedorganization.md) .</span><span class="sxs-lookup"><span data-stu-id="604fe-105">Retrieve the properties and relationships of a [connectedOrganization](../resources/connectedorganization.md) object.</span></span>
+<span data-ttu-id="84374-105">Recupere as propriedades e os relacionamentos de um objeto [connectedOrganization](../resources/connectedorganization.md) .</span><span class="sxs-lookup"><span data-stu-id="84374-105">Retrieve the properties and relationships of a [connectedOrganization](../resources/connectedorganization.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="604fe-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="604fe-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="84374-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="84374-106">Permissions</span></span>
 
-<span data-ttu-id="604fe-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="604fe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="84374-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="84374-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="604fe-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="604fe-109">Permission type</span></span>|<span data-ttu-id="604fe-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="604fe-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="84374-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="84374-109">Permission type</span></span>|<span data-ttu-id="84374-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="84374-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-| <span data-ttu-id="604fe-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="604fe-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="604fe-112">EntitlementManagement. Read. All, EntitlementManagement. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="604fe-112">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span> |
-| <span data-ttu-id="604fe-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="604fe-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="604fe-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="604fe-114">Not supported.</span></span> |
-| <span data-ttu-id="604fe-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="604fe-115">Application</span></span>                            | <span data-ttu-id="604fe-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="604fe-116">Not supported.</span></span> |
+| <span data-ttu-id="84374-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="84374-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="84374-112">EntitlementManagement. Read. All, EntitlementManagement. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="84374-112">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span> |
+| <span data-ttu-id="84374-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="84374-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="84374-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="84374-114">Not supported.</span></span> |
+| <span data-ttu-id="84374-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="84374-115">Application</span></span>                            | <span data-ttu-id="84374-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="84374-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="604fe-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="604fe-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="84374-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="84374-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -40,29 +40,29 @@ ms.locfileid: "46566582"
 GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="604fe-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="604fe-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="84374-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="84374-118">Optional query parameters</span></span>
 
-<span data-ttu-id="604fe-119">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="604fe-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="604fe-120">Por exemplo, para recuperar apenas as fontes de identidade, adicione `$select=identitySources` .</span><span class="sxs-lookup"><span data-stu-id="604fe-120">For example, to retrieve only the identity sources, add `$select=identitySources`.</span></span> <span data-ttu-id="604fe-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="604fe-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="84374-119">Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="84374-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="84374-120">Por exemplo, para recuperar apenas as fontes de identidade, adicione `$select=identitySources` .</span><span class="sxs-lookup"><span data-stu-id="84374-120">For example, to retrieve only the identity sources, add `$select=identitySources`.</span></span> <span data-ttu-id="84374-121">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="84374-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="604fe-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="604fe-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="84374-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="84374-122">Request headers</span></span>
 
-|<span data-ttu-id="604fe-123">Nome</span><span class="sxs-lookup"><span data-stu-id="604fe-123">Name</span></span>|<span data-ttu-id="604fe-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="604fe-124">Description</span></span>|
+|<span data-ttu-id="84374-123">Nome</span><span class="sxs-lookup"><span data-stu-id="84374-123">Name</span></span>|<span data-ttu-id="84374-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="84374-124">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="604fe-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="604fe-125">Authorization</span></span>|<span data-ttu-id="604fe-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="604fe-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="84374-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="84374-125">Authorization</span></span>|<span data-ttu-id="84374-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="84374-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="604fe-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="604fe-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="84374-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="84374-128">Request body</span></span>
 
-<span data-ttu-id="604fe-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="604fe-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="84374-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="84374-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="604fe-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="604fe-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="84374-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="84374-130">Response</span></span>
 
-<span data-ttu-id="604fe-131">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [connectedOrganization](../resources/connectedorganization.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="604fe-131">If successful, this method returns a `200 OK` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.</span></span>
+<span data-ttu-id="84374-131">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [connectedOrganization](../resources/connectedorganization.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="84374-131">If successful, this method returns a `200 OK` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="604fe-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="604fe-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="84374-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="84374-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="604fe-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="604fe-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="84374-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="84374-133">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="604fe-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="604fe-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="84374-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="84374-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_connectedorganization"
@@ -71,24 +71,24 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="604fe-135">C#</span><span class="sxs-lookup"><span data-stu-id="604fe-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="84374-135">C#</span><span class="sxs-lookup"><span data-stu-id="84374-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-connectedorganization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="604fe-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="604fe-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="84374-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="84374-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-connectedorganization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="604fe-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="604fe-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="84374-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="84374-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-connectedorganization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="604fe-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="604fe-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="84374-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="84374-138">Response</span></span>
 
-<span data-ttu-id="604fe-139">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="604fe-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="84374-139">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="84374-139">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,3 +126,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
