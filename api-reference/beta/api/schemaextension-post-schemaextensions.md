@@ -5,78 +5,78 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e84c7408eb6924205e86059c969201d1c94dcd70
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 30674a3637dcb97f583d0462020f850f0d242b17
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058680"
 ---
-# <a name="create-schemaextension"></a><span data-ttu-id="245b8-103">Criar schemaExtension</span><span class="sxs-lookup"><span data-stu-id="245b8-103">Create schemaExtension</span></span>
+# <a name="create-schemaextension"></a><span data-ttu-id="c8c59-103">Criar schemaExtension</span><span class="sxs-lookup"><span data-stu-id="c8c59-103">Create schemaExtension</span></span>
 
-<span data-ttu-id="245b8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="245b8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c8c59-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c8c59-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="245b8-105">Criar uma nova definição [schemaExtension](../resources/schemaextension.md) para estender um [tipo de recurso de suporte](/graph/extensibility-overview#supported-resources).</span><span class="sxs-lookup"><span data-stu-id="245b8-105">Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).</span></span>
+<span data-ttu-id="c8c59-105">Criar uma nova definição [schemaExtension](../resources/schemaextension.md) para estender um [tipo de recurso de suporte](/graph/extensibility-overview#supported-resources).</span><span class="sxs-lookup"><span data-stu-id="c8c59-105">Create a new [schemaExtension](../resources/schemaextension.md) definition to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).</span></span>
 
-<span data-ttu-id="245b8-p101">As extensões de esquema permitem que você adicione dados personalizados fortemente tipados a um recurso. O aplicativo que cria uma extensão de esquema é o aplicativo proprietário. Dependendo do [estado](/graph/extensibility-overview#schema-extensions-lifecycle) da extensão, o aplicativo proprietário, e apenas o aplicativo proprietário, poderá atualizar ou excluir a extensão.</span><span class="sxs-lookup"><span data-stu-id="245b8-p101">Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the [state](/graph/extensibility-overview#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension.</span></span> 
+<span data-ttu-id="c8c59-p101">As extensões de esquema permitem que você adicione dados personalizados fortemente tipados a um recurso. O aplicativo que cria uma extensão de esquema é o aplicativo proprietário. Dependendo do [estado](/graph/extensibility-overview#schema-extensions-lifecycle) da extensão, o aplicativo proprietário, e apenas o aplicativo proprietário, poderá atualizar ou excluir a extensão.</span><span class="sxs-lookup"><span data-stu-id="c8c59-p101">Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the [state](/graph/extensibility-overview#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension.</span></span> 
 
-<span data-ttu-id="245b8-109">Veja exemplos de como [definir uma extensão de esquema que descreve um curso de treinamento](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), usar a definição de extensão do esquema para [criar um novo grupo com dados do curso de treinamento](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data) e [adicionar dados do curso de treinamento a um grupo existente](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).</span><span class="sxs-lookup"><span data-stu-id="245b8-109">See examples of how to [define a schema extension that describes a training course](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), use the schema extension definition to [create a new group with training course data](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data), and [add training course data to an existing group](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).</span></span>
+<span data-ttu-id="c8c59-109">Veja exemplos de como [definir uma extensão de esquema que descreve um curso de treinamento](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), usar a definição de extensão do esquema para [criar um novo grupo com dados do curso de treinamento](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data) e [adicionar dados do curso de treinamento a um grupo existente](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).</span><span class="sxs-lookup"><span data-stu-id="c8c59-109">See examples of how to [define a schema extension that describes a training course](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), use the schema extension definition to [create a new group with training course data](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data), and [add training course data to an existing group](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="245b8-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="245b8-110">Permissions</span></span>
-<span data-ttu-id="245b8-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="245b8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c8c59-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="c8c59-110">Permissions</span></span>
+<span data-ttu-id="c8c59-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c8c59-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="245b8-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="245b8-113">Permission type</span></span>      | <span data-ttu-id="245b8-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="245b8-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c8c59-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c8c59-113">Permission type</span></span>      | <span data-ttu-id="c8c59-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c8c59-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="245b8-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="245b8-115">Delegated (work or school account)</span></span> | <span data-ttu-id="245b8-116">Application. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="245b8-116">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="245b8-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="245b8-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="245b8-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="245b8-118">Not supported.</span></span>    |
-|<span data-ttu-id="245b8-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="245b8-119">Application</span></span> | <span data-ttu-id="245b8-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="245b8-120">Not supported.</span></span> |
+|<span data-ttu-id="c8c59-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c8c59-115">Delegated (work or school account)</span></span> | <span data-ttu-id="c8c59-116">Application. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="c8c59-116">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="c8c59-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c8c59-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8c59-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c8c59-118">Not supported.</span></span>    |
+|<span data-ttu-id="c8c59-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c8c59-119">Application</span></span> | <span data-ttu-id="c8c59-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c8c59-120">Not supported.</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="245b8-121">Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada ou o proprietário do (aplicativo com o) `appId` usado para definir a propriedade **Owner** .</span><span class="sxs-lookup"><span data-stu-id="245b8-121">Additionally for the delegated flow, the signed-in user must be the owner of the calling application OR the owner of the (application with the) `appId` used to set the **owner** property.</span></span>
+> <span data-ttu-id="c8c59-121">Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada ou o proprietário do (aplicativo com o) `appId` usado para definir a propriedade **Owner** .</span><span class="sxs-lookup"><span data-stu-id="c8c59-121">Additionally for the delegated flow, the signed-in user must be the owner of the calling application OR the owner of the (application with the) `appId` used to set the **owner** property.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="245b8-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="245b8-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c8c59-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c8c59-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /schemaExtensions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="245b8-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="245b8-123">Request headers</span></span>
-| <span data-ttu-id="245b8-124">Nome</span><span class="sxs-lookup"><span data-stu-id="245b8-124">Name</span></span>       | <span data-ttu-id="245b8-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="245b8-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c8c59-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c59-123">Request headers</span></span>
+| <span data-ttu-id="c8c59-124">Nome</span><span class="sxs-lookup"><span data-stu-id="c8c59-124">Name</span></span>       | <span data-ttu-id="c8c59-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="c8c59-125">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="245b8-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="245b8-126">Authorization</span></span>  | <span data-ttu-id="245b8-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="245b8-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="245b8-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="245b8-129">Content-Type</span></span>  | <span data-ttu-id="245b8-130">application/json</span><span class="sxs-lookup"><span data-stu-id="245b8-130">application/json</span></span>  |
+| <span data-ttu-id="c8c59-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="c8c59-126">Authorization</span></span>  | <span data-ttu-id="c8c59-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c8c59-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c8c59-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c8c59-129">Content-Type</span></span>  | <span data-ttu-id="c8c59-130">application/json</span><span class="sxs-lookup"><span data-stu-id="c8c59-130">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="245b8-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="245b8-131">Request body</span></span>
-<span data-ttu-id="245b8-132">No corpo da solicitação, forneça uma representação JSON de um objeto [schemaExtension](../resources/schemaextension.md).</span><span class="sxs-lookup"><span data-stu-id="245b8-132">In the request body, supply a JSON representation of [schemaExtension](../resources/schemaextension.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c8c59-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c59-131">Request body</span></span>
+<span data-ttu-id="c8c59-132">No corpo da solicitação, forneça uma representação JSON de um objeto [schemaExtension](../resources/schemaextension.md).</span><span class="sxs-lookup"><span data-stu-id="c8c59-132">In the request body, supply a JSON representation of [schemaExtension](../resources/schemaextension.md) object.</span></span>
 
-<span data-ttu-id="245b8-133">A tabela a seguir mostra as propriedades que estão disponíveis quando você cria uma extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="245b8-133">The following table shows the properties that are available when you create a schema extension.</span></span>
+<span data-ttu-id="c8c59-133">A tabela a seguir mostra as propriedades que estão disponíveis quando você cria uma extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="c8c59-133">The following table shows the properties that are available when you create a schema extension.</span></span>
 
-| <span data-ttu-id="245b8-134">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="245b8-134">Parameter</span></span> | <span data-ttu-id="245b8-135">Tipo</span><span class="sxs-lookup"><span data-stu-id="245b8-135">Type</span></span> | <span data-ttu-id="245b8-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="245b8-136">Description</span></span>|
+| <span data-ttu-id="c8c59-134">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="c8c59-134">Parameter</span></span> | <span data-ttu-id="c8c59-135">Tipo</span><span class="sxs-lookup"><span data-stu-id="c8c59-135">Type</span></span> | <span data-ttu-id="c8c59-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="c8c59-136">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="245b8-137">description</span><span class="sxs-lookup"><span data-stu-id="245b8-137">description</span></span>|<span data-ttu-id="245b8-138">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="245b8-138">String</span></span>|<span data-ttu-id="245b8-139">Descrição da extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="245b8-139">Description for the schema extension.</span></span>|
-|<span data-ttu-id="245b8-140">id</span><span class="sxs-lookup"><span data-stu-id="245b8-140">id</span></span>|<span data-ttu-id="245b8-141">String</span><span class="sxs-lookup"><span data-stu-id="245b8-141">String</span></span>|<span data-ttu-id="245b8-142">O identificador exclusivo da definição de extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="245b8-142">The unique identifier for the schema extension definition.</span></span> <br><span data-ttu-id="245b8-143">Você pode atribuir um valor em uma destas duas maneiras:</span><span class="sxs-lookup"><span data-stu-id="245b8-143">You can assign a value in one of two ways:</span></span> <ul><li><span data-ttu-id="245b8-144">Concatenar o nome de um de seus domínios verificados com um nome da extensão do esquema para formar uma cadeia de caracteres exclusiva neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span><span class="sxs-lookup"><span data-stu-id="245b8-144">Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span></span> <span data-ttu-id="245b8-145">Como exemplo, `contoso_mySchema`.</span><span class="sxs-lookup"><span data-stu-id="245b8-145">As an example, `contoso_mySchema`.</span></span> <span data-ttu-id="245b8-146">OBSERVAÇÃO: Apenas domínios verificados sob os seguintes domínios de nível superior têm suporte: `.com`,`.net`, `.gov`, `.edu` ou `.org`.</span><span class="sxs-lookup"><span data-stu-id="245b8-146">NOTE: Only verified domains under the following top-level domains are supported: `.com`,`.net`, `.gov`, `.edu` or `.org`.</span></span> </li><li><span data-ttu-id="245b8-p105">Forneça um nome de esquema e permita que o Microsoft Graph use esse nome de esquema para completar a atribuição de **id** neste formato: ext\{_&#65279;8-caracteres-alfanuméricos-aleatórios_\}\_\{_&#65279;nome-do-esquema_\}. Um exemplo seria `extkvbmkofy_mySchema`.</span><span class="sxs-lookup"><span data-stu-id="245b8-p105">Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</span></span></li></ul><span data-ttu-id="245b8-149">Esta propriedade não pode ser alterada após a criação.</span><span class="sxs-lookup"><span data-stu-id="245b8-149">This property cannot be changed after creation.</span></span> |
-|<span data-ttu-id="245b8-150">owner</span><span class="sxs-lookup"><span data-stu-id="245b8-150">owner</span></span>|<span data-ttu-id="245b8-151">String</span><span class="sxs-lookup"><span data-stu-id="245b8-151">String</span></span>|<span data-ttu-id="245b8-152">(Opcional) O `appId` do aplicativo que é o proprietário da extensão do esquema.</span><span class="sxs-lookup"><span data-stu-id="245b8-152">(Optional) The `appId` of the application that is the owner of the schema extension.</span></span> <span data-ttu-id="245b8-153">Essa propriedade pode ser fornecida na criação, para definir o proprietário.</span><span class="sxs-lookup"><span data-stu-id="245b8-153">This property can be supplied on creation, to set the owner.</span></span>  <span data-ttu-id="245b8-154">Se não for fornecida, o aplicativo de chamada `appId` será definido como o proprietário.</span><span class="sxs-lookup"><span data-stu-id="245b8-154">If not supplied, then the calling application's `appId` will be set as the owner.</span></span> <span data-ttu-id="245b8-155">Então, por exemplo, se criar uma nova definição de extensão do esquema usando o Explorador do Graph, você **deverá** fornecer a propriedade de proprietário.</span><span class="sxs-lookup"><span data-stu-id="245b8-155">So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property.</span></span> <span data-ttu-id="245b8-156">Uma vez definida, essa propriedade é somente leitura e não pode ser alterada.</span><span class="sxs-lookup"><span data-stu-id="245b8-156">Once set, this property is read-only and cannot be changed.</span></span>|
-|<span data-ttu-id="245b8-157">properties</span><span class="sxs-lookup"><span data-stu-id="245b8-157">properties</span></span>|<span data-ttu-id="245b8-158">Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)</span><span class="sxs-lookup"><span data-stu-id="245b8-158">[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection</span></span>|<span data-ttu-id="245b8-159">A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="245b8-159">The collection of property names and types that make up the schema extension definition.</span></span>|
-|<span data-ttu-id="245b8-160">targetTypes</span><span class="sxs-lookup"><span data-stu-id="245b8-160">targetTypes</span></span>|<span data-ttu-id="245b8-161">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="245b8-161">String collection</span></span>|<span data-ttu-id="245b8-162">O conjunto de tipos de recursos do Microsoft Graph (com suporte a extensões do esquema) ao qual esta extensão de esquema pode ser aplicada.</span><span class="sxs-lookup"><span data-stu-id="245b8-162">Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.</span></span>|
+|<span data-ttu-id="c8c59-137">description</span><span class="sxs-lookup"><span data-stu-id="c8c59-137">description</span></span>|<span data-ttu-id="c8c59-138">String</span><span class="sxs-lookup"><span data-stu-id="c8c59-138">String</span></span>|<span data-ttu-id="c8c59-139">Descrição da extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="c8c59-139">Description for the schema extension.</span></span>|
+|<span data-ttu-id="c8c59-140">id</span><span class="sxs-lookup"><span data-stu-id="c8c59-140">id</span></span>|<span data-ttu-id="c8c59-141">String</span><span class="sxs-lookup"><span data-stu-id="c8c59-141">String</span></span>|<span data-ttu-id="c8c59-142">O identificador exclusivo da definição de extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="c8c59-142">The unique identifier for the schema extension definition.</span></span> <br><span data-ttu-id="c8c59-143">Você pode atribuir um valor em uma destas duas maneiras:</span><span class="sxs-lookup"><span data-stu-id="c8c59-143">You can assign a value in one of two ways:</span></span> <ul><li><span data-ttu-id="c8c59-144">Concatenar o nome de um de seus domínios verificados com um nome da extensão do esquema para formar uma cadeia de caracteres exclusiva neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span><span class="sxs-lookup"><span data-stu-id="c8c59-144">Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span></span> <span data-ttu-id="c8c59-145">Como exemplo, `contoso_mySchema`.</span><span class="sxs-lookup"><span data-stu-id="c8c59-145">As an example, `contoso_mySchema`.</span></span> <span data-ttu-id="c8c59-146">OBSERVAÇÃO: Apenas domínios verificados sob os seguintes domínios de nível superior têm suporte: `.com`,`.net`, `.gov`, `.edu` ou `.org`.</span><span class="sxs-lookup"><span data-stu-id="c8c59-146">NOTE: Only verified domains under the following top-level domains are supported: `.com`,`.net`, `.gov`, `.edu` or `.org`.</span></span> </li><li><span data-ttu-id="c8c59-p105">Forneça um nome de esquema e permita que o Microsoft Graph use esse nome de esquema para completar a atribuição de **id** neste formato: ext\{_&#65279;8-caracteres-alfanuméricos-aleatórios_\}\_\{_&#65279;nome-do-esquema_\}. Um exemplo seria `extkvbmkofy_mySchema`.</span><span class="sxs-lookup"><span data-stu-id="c8c59-p105">Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</span></span></li></ul><span data-ttu-id="c8c59-149">Esta propriedade não pode ser alterada após a criação.</span><span class="sxs-lookup"><span data-stu-id="c8c59-149">This property cannot be changed after creation.</span></span> |
+|<span data-ttu-id="c8c59-150">owner</span><span class="sxs-lookup"><span data-stu-id="c8c59-150">owner</span></span>|<span data-ttu-id="c8c59-151">String</span><span class="sxs-lookup"><span data-stu-id="c8c59-151">String</span></span>|<span data-ttu-id="c8c59-152">(Opcional) O `appId` do aplicativo que é o proprietário da extensão do esquema.</span><span class="sxs-lookup"><span data-stu-id="c8c59-152">(Optional) The `appId` of the application that is the owner of the schema extension.</span></span> <span data-ttu-id="c8c59-153">Essa propriedade pode ser fornecida na criação, para definir o proprietário.</span><span class="sxs-lookup"><span data-stu-id="c8c59-153">This property can be supplied on creation, to set the owner.</span></span>  <span data-ttu-id="c8c59-154">Se não for fornecida, o aplicativo de chamada `appId` será definido como o proprietário.</span><span class="sxs-lookup"><span data-stu-id="c8c59-154">If not supplied, then the calling application's `appId` will be set as the owner.</span></span> <span data-ttu-id="c8c59-155">Então, por exemplo, se criar uma nova definição de extensão do esquema usando o Explorador do Graph, você **deverá** fornecer a propriedade de proprietário.</span><span class="sxs-lookup"><span data-stu-id="c8c59-155">So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property.</span></span> <span data-ttu-id="c8c59-156">Uma vez definida, essa propriedade é somente leitura e não pode ser alterada.</span><span class="sxs-lookup"><span data-stu-id="c8c59-156">Once set, this property is read-only and cannot be changed.</span></span>|
+|<span data-ttu-id="c8c59-157">properties</span><span class="sxs-lookup"><span data-stu-id="c8c59-157">properties</span></span>|<span data-ttu-id="c8c59-158">Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)</span><span class="sxs-lookup"><span data-stu-id="c8c59-158">[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection</span></span>|<span data-ttu-id="c8c59-159">A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="c8c59-159">The collection of property names and types that make up the schema extension definition.</span></span>|
+|<span data-ttu-id="c8c59-160">targetTypes</span><span class="sxs-lookup"><span data-stu-id="c8c59-160">targetTypes</span></span>|<span data-ttu-id="c8c59-161">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="c8c59-161">String collection</span></span>|<span data-ttu-id="c8c59-162">O conjunto de tipos de recursos do Microsoft Graph (com suporte a extensões do esquema) ao qual esta extensão de esquema pode ser aplicada.</span><span class="sxs-lookup"><span data-stu-id="c8c59-162">Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="245b8-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="245b8-163">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c8c59-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8c59-163">Response</span></span>
 
-<span data-ttu-id="245b8-164">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [schemaExtension](../resources/schemaextension.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="245b8-164">If successful, this method returns `201 Created` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.</span></span>
+<span data-ttu-id="c8c59-164">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [schemaExtension](../resources/schemaextension.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c8c59-164">If successful, this method returns `201 Created` response code and [schemaExtension](../resources/schemaextension.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="245b8-165">Exemplo</span><span class="sxs-lookup"><span data-stu-id="245b8-165">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c8c59-165">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c8c59-165">Example</span></span>
 
-### <a name="example-1-creating-a-schema-extension-using-a-verified-domain"></a><span data-ttu-id="245b8-166">Exemplo 1: criar uma extensão de esquema usando um domínio verificado</span><span class="sxs-lookup"><span data-stu-id="245b8-166">Example 1: Creating a schema extension using a verified domain</span></span>
+### <a name="example-1-creating-a-schema-extension-using-a-verified-domain"></a><span data-ttu-id="c8c59-166">Exemplo 1: criar uma extensão de esquema usando um domínio verificado</span><span class="sxs-lookup"><span data-stu-id="c8c59-166">Example 1: Creating a schema extension using a verified domain</span></span>
 
-#### <a name="request"></a><span data-ttu-id="245b8-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="245b8-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c8c59-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c59-167">Request</span></span>
 
-<span data-ttu-id="245b8-168">Este exemplo mostra o uso de um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses` , para formar uma cadeia de caracteres exclusiva para a propriedade **ID** da definição de extensão do esquema.</span><span class="sxs-lookup"><span data-stu-id="245b8-168">This example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the schema extension definition.</span></span> <span data-ttu-id="245b8-169">A cadeia de caracteres exclusiva é baseada nesse formato, \{ _&#65279;DomainName_ \} \_ \{ _&#65279;SchemaName_ \} .</span><span class="sxs-lookup"><span data-stu-id="245b8-169">The unique string is based on this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span></span>
+<span data-ttu-id="c8c59-168">Este exemplo mostra o uso de um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses` , para formar uma cadeia de caracteres exclusiva para a propriedade **ID** da definição de extensão do esquema.</span><span class="sxs-lookup"><span data-stu-id="c8c59-168">This example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the schema extension definition.</span></span> <span data-ttu-id="c8c59-169">A cadeia de caracteres exclusiva é baseada nesse formato, \{ _&#65279;DomainName_ \} \_ \{ _&#65279;SchemaName_ \} .</span><span class="sxs-lookup"><span data-stu-id="c8c59-169">The unique string is based on this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.</span></span>
 
-<span data-ttu-id="245b8-170">No corpo da solicitação, forneça uma representação JSON do objeto [schemaExtension](../resources/schemaextension.md).</span><span class="sxs-lookup"><span data-stu-id="245b8-170">In the request body, supply a JSON representation of the [schemaExtension](../resources/schemaextension.md) object.</span></span>
+<span data-ttu-id="c8c59-170">No corpo da solicitação, forneça uma representação JSON do objeto [schemaExtension](../resources/schemaextension.md).</span><span class="sxs-lookup"><span data-stu-id="c8c59-170">In the request body, supply a JSON representation of the [schemaExtension](../resources/schemaextension.md) object.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="245b8-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="245b8-171">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c8c59-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="c8c59-171">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schemaextension_from_schemaextensions_1"
@@ -107,24 +107,24 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="245b8-172">C#</span><span class="sxs-lookup"><span data-stu-id="245b8-172">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c8c59-172">C#</span><span class="sxs-lookup"><span data-stu-id="c8c59-172">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-schemaextension-from-schemaextensions-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="245b8-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="245b8-173">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c8c59-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c8c59-173">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-schemaextension-from-schemaextensions-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="245b8-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="245b8-174">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c8c59-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c8c59-174">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="245b8-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="245b8-175">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c8c59-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8c59-175">Response</span></span>
 
-<span data-ttu-id="245b8-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="245b8-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c8c59-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c8c59-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -160,14 +160,14 @@ Content-length: 420
 }
 ```
 
-### <a name="example-2-creating-a-schema-extension-using-just-a-name"></a><span data-ttu-id="245b8-179">Exemplo 2: criar uma extensão de esquema usando apenas um nome</span><span class="sxs-lookup"><span data-stu-id="245b8-179">Example 2: Creating a schema extension using just a name</span></span>
+### <a name="example-2-creating-a-schema-extension-using-just-a-name"></a><span data-ttu-id="c8c59-179">Exemplo 2: criar uma extensão de esquema usando apenas um nome</span><span class="sxs-lookup"><span data-stu-id="c8c59-179">Example 2: Creating a schema extension using just a name</span></span>
 
-#### <a name="request"></a><span data-ttu-id="245b8-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="245b8-180">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c8c59-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c59-180">Request</span></span>
 
-<span data-ttu-id="245b8-181">Este exemplo mostra como especificar apenas um nome de esquema, `courses` na propriedade **ID** da solicitação, junto com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md) .</span><span class="sxs-lookup"><span data-stu-id="245b8-181">This example shows specifying just a schema name, `courses`, in the **id** property in the request, together with the JSON representation of the rest of the properties in the [schemaExtension](../resources/schemaextension.md) object.</span></span> <span data-ttu-id="245b8-182">O Microsoft Graph atribuirá e retornará um valor de cadeia de caracteres exclusivo na resposta.</span><span class="sxs-lookup"><span data-stu-id="245b8-182">Microsoft Graph will assign and return a unique string value in the response.</span></span>
+<span data-ttu-id="c8c59-181">Este exemplo mostra como especificar apenas um nome de esquema, `courses` na propriedade **ID** da solicitação, junto com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md) .</span><span class="sxs-lookup"><span data-stu-id="c8c59-181">This example shows specifying just a schema name, `courses`, in the **id** property in the request, together with the JSON representation of the rest of the properties in the [schemaExtension](../resources/schemaextension.md) object.</span></span> <span data-ttu-id="c8c59-182">O Microsoft Graph atribuirá e retornará um valor de cadeia de caracteres exclusivo na resposta.</span><span class="sxs-lookup"><span data-stu-id="c8c59-182">Microsoft Graph will assign and return a unique string value in the response.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="245b8-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="245b8-183">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c8c59-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="c8c59-183">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schemaextension_from_schemaextensions_2"
@@ -198,24 +198,24 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="245b8-184">C#</span><span class="sxs-lookup"><span data-stu-id="245b8-184">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c8c59-184">C#</span><span class="sxs-lookup"><span data-stu-id="c8c59-184">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-schemaextension-from-schemaextensions-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="245b8-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="245b8-185">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c8c59-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c8c59-185">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-schemaextension-from-schemaextensions-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="245b8-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="245b8-186">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c8c59-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c8c59-186">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="245b8-187">Resposta</span><span class="sxs-lookup"><span data-stu-id="245b8-187">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c8c59-187">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8c59-187">Response</span></span>
 
-<span data-ttu-id="245b8-p110">A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="245b8-p110">The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c8c59-p110">A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c8c59-p110">The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -251,14 +251,14 @@ Content-length: 420
 }
 ```
 
-### <a name="example-3-creating-a-schema-extension-setting-the-owner"></a><span data-ttu-id="245b8-192">Exemplo 3: criar uma configuração de extensão de esquema do proprietário</span><span class="sxs-lookup"><span data-stu-id="245b8-192">Example 3: Creating a schema extension setting the owner</span></span>
+### <a name="example-3-creating-a-schema-extension-setting-the-owner"></a><span data-ttu-id="c8c59-192">Exemplo 3: criar uma configuração de extensão de esquema do proprietário</span><span class="sxs-lookup"><span data-stu-id="c8c59-192">Example 3: Creating a schema extension setting the owner</span></span>
 
-#### <a name="request"></a><span data-ttu-id="245b8-193">Solicitação</span><span class="sxs-lookup"><span data-stu-id="245b8-193">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c8c59-193">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c59-193">Request</span></span>
 
-<span data-ttu-id="245b8-194">Este exemplo mostra como criar uma configuração de extensão de esquema para o **proprietário**.</span><span class="sxs-lookup"><span data-stu-id="245b8-194">This example shows how to create a schema extension setting the **owner**.</span></span>  <span data-ttu-id="245b8-195">Neste cenário, o usuário do aplicativo pode não ser o proprietário do aplicativo (por exemplo, se você estiver usando o Microsoft Graph Explorer).</span><span class="sxs-lookup"><span data-stu-id="245b8-195">In this scenario, the user of the application might not be the owner of the application (for example if you are using Microsoft Graph Explorer).</span></span>  <span data-ttu-id="245b8-196">Nesse caso, você deve definir a propriedade **Owner** para a **AppID** de um aplicativo que possui, caso contrário, não será autorizado a criar uma extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="245b8-196">In this case you should set the **owner** property to the **appId** of an application you own, otherwise you won't be authorized to create a schema extension.</span></span> <span data-ttu-id="245b8-197">Defina a propriedade **Owner** na solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md) .</span><span class="sxs-lookup"><span data-stu-id="245b8-197">Set the **owner** property in the request, together with the JSON representation of the rest of the properties in the [schemaExtension](../resources/schemaextension.md) object.</span></span>
+<span data-ttu-id="c8c59-194">Este exemplo mostra como criar uma configuração de extensão de esquema para o **proprietário**.</span><span class="sxs-lookup"><span data-stu-id="c8c59-194">This example shows how to create a schema extension setting the **owner**.</span></span>  <span data-ttu-id="c8c59-195">Neste cenário, o usuário do aplicativo pode não ser o proprietário do aplicativo (por exemplo, se você estiver usando o Microsoft Graph Explorer).</span><span class="sxs-lookup"><span data-stu-id="c8c59-195">In this scenario, the user of the application might not be the owner of the application (for example if you are using Microsoft Graph Explorer).</span></span>  <span data-ttu-id="c8c59-196">Nesse caso, você deve definir a propriedade **Owner** para a **AppID** de um aplicativo que possui, caso contrário, não será autorizado a criar uma extensão de esquema.</span><span class="sxs-lookup"><span data-stu-id="c8c59-196">In this case you should set the **owner** property to the **appId** of an application you own, otherwise you won't be authorized to create a schema extension.</span></span> <span data-ttu-id="c8c59-197">Defina a propriedade **Owner** na solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md) .</span><span class="sxs-lookup"><span data-stu-id="c8c59-197">Set the **owner** property in the request, together with the JSON representation of the rest of the properties in the [schemaExtension](../resources/schemaextension.md) object.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="245b8-198">HTTP</span><span class="sxs-lookup"><span data-stu-id="245b8-198">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c8c59-198">HTTP</span><span class="sxs-lookup"><span data-stu-id="c8c59-198">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schemaextension_from_schemaextensions_3"
@@ -291,24 +291,24 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="245b8-199">C#</span><span class="sxs-lookup"><span data-stu-id="245b8-199">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c8c59-199">C#</span><span class="sxs-lookup"><span data-stu-id="c8c59-199">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-schemaextension-from-schemaextensions-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="245b8-200">JavaScript</span><span class="sxs-lookup"><span data-stu-id="245b8-200">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c8c59-200">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c8c59-200">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-schemaextension-from-schemaextensions-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="245b8-201">Objective-C</span><span class="sxs-lookup"><span data-stu-id="245b8-201">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c8c59-201">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c8c59-201">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="245b8-202">Resposta</span><span class="sxs-lookup"><span data-stu-id="245b8-202">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c8c59-202">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8c59-202">Response</span></span>
 
-<span data-ttu-id="245b8-203">A resposta inclui o **proprietário** definido com o valor fornecido na solicitação.</span><span class="sxs-lookup"><span data-stu-id="245b8-203">The response includes the **owner** set to the supplied value in the request.</span></span> <span data-ttu-id="245b8-204">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="245b8-204">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="245b8-205">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="245b8-205">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c8c59-203">A resposta inclui o **proprietário** definido com o valor fornecido na solicitação.</span><span class="sxs-lookup"><span data-stu-id="c8c59-203">The response includes the **owner** set to the supplied value in the request.</span></span> <span data-ttu-id="c8c59-204">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="c8c59-204">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="c8c59-205">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c8c59-205">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -345,10 +345,10 @@ Content-length: 420
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="245b8-206">Confira também</span><span class="sxs-lookup"><span data-stu-id="245b8-206">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c8c59-206">Confira também</span><span class="sxs-lookup"><span data-stu-id="c8c59-206">See also</span></span>
 
-- [<span data-ttu-id="245b8-207">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="245b8-207">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="245b8-208">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="245b8-208">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="c8c59-207">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="c8c59-207">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="c8c59-208">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="c8c59-208">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -364,3 +364,5 @@ Content-length: 420
   ]
 }
 -->
+
+

@@ -7,30 +7,30 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Criar um novo listItem em uma lista.
 doc_type: apiPageType
-ms.openlocfilehash: 9cca55f26c7c80beac22aef93afa487c29940a9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a51af48b8349eb0b505b7ded88721caa53bb68c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511716"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057336"
 ---
-# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="e980e-103">Criar um novo item em uma lista</span><span class="sxs-lookup"><span data-stu-id="e980e-103">Create a new item in a list</span></span>
+# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="4f26c-103">Criar um novo item em uma lista</span><span class="sxs-lookup"><span data-stu-id="4f26c-103">Create a new item in a list</span></span>
 
-<span data-ttu-id="e980e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e980e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4f26c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4f26c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e980e-105">Criar um novo [listItem][] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="e980e-105">Create a new [listItem][] in a [list][].</span></span>
+<span data-ttu-id="4f26c-105">Criar um novo [listItem][] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="4f26c-105">Create a new [listItem][] in a [list][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e980e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e980e-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4f26c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4f26c-106">Permissions</span></span>
 
-<span data-ttu-id="e980e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e980e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4f26c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4f26c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e980e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e980e-109">Permission type</span></span>      | <span data-ttu-id="e980e-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e980e-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4f26c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4f26c-109">Permission type</span></span>      | <span data-ttu-id="4f26c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4f26c-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e980e-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e980e-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e980e-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e980e-112">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e980e-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e980e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e980e-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e980e-114">Not supported.</span></span>    |
-|<span data-ttu-id="e980e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e980e-115">Application</span></span> | <span data-ttu-id="e980e-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e980e-116">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="4f26c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4f26c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4f26c-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f26c-112">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4f26c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4f26c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4f26c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f26c-114">Not supported.</span></span>    |
+|<span data-ttu-id="4f26c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4f26c-115">Application</span></span> | <span data-ttu-id="4f26c-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f26c-116">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e980e-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e980e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4f26c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4f26c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,16 +38,16 @@ ms.locfileid: "42511716"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
-## <a name="request-body"></a><span data-ttu-id="e980e-118">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e980e-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4f26c-118">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4f26c-118">Request body</span></span>
 
-<span data-ttu-id="e980e-119">No corpo da solicitação, forneça uma representação JSON do recurso [listItem][] a criar.</span><span class="sxs-lookup"><span data-stu-id="e980e-119">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
+<span data-ttu-id="4f26c-119">No corpo da solicitação, forneça uma representação JSON do recurso [listItem][] a criar.</span><span class="sxs-lookup"><span data-stu-id="4f26c-119">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e980e-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e980e-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4f26c-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4f26c-120">Example</span></span>
 
-<span data-ttu-id="e980e-121">Aqui está um exemplo de como criar um novo item de lista genérica.</span><span class="sxs-lookup"><span data-stu-id="e980e-121">Here is an example of how to create a new generic list item.</span></span>
+<span data-ttu-id="4f26c-121">Aqui está um exemplo de como criar um novo item de lista genérica.</span><span class="sxs-lookup"><span data-stu-id="4f26c-121">Here is an example of how to create a new generic list item.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="e980e-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="e980e-122">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4f26c-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="4f26c-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -62,28 +62,28 @@ Content-Type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e980e-123">C#</span><span class="sxs-lookup"><span data-stu-id="e980e-123">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4f26c-123">C#</span><span class="sxs-lookup"><span data-stu-id="4f26c-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e980e-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e980e-124">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4f26c-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4f26c-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e980e-125">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e980e-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4f26c-125">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4f26c-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e980e-126">Java</span><span class="sxs-lookup"><span data-stu-id="e980e-126">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="4f26c-126">Java</span><span class="sxs-lookup"><span data-stu-id="4f26c-126">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-listitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="e980e-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="e980e-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4f26c-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f26c-127">Response</span></span>
 
-<span data-ttu-id="e980e-128">Se for bem-sucedido, esse método retornará um [listItem][] no corpo da resposta da lista criada.</span><span class="sxs-lookup"><span data-stu-id="e980e-128">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
+<span data-ttu-id="4f26c-128">Se for bem-sucedido, esse método retornará um [listItem][] no corpo da resposta da lista criada.</span><span class="sxs-lookup"><span data-stu-id="4f26c-128">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -110,7 +110,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="e980e-129">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="e980e-129">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="e980e-130">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="e980e-130">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="4f26c-129">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="4f26c-129">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="4f26c-130">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="4f26c-130">Default properties will be returned from the actual call.</span></span>
 
 [lista]: ../resources/list.md
 [list]: ../resources/list.md
@@ -125,3 +125,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
