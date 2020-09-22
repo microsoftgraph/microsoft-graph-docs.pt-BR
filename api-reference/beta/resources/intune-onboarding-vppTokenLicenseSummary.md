@@ -3,39 +3,39 @@ title: tipo de recurso vppTokenLicenseSummary
 description: Resumo de licenças de um determinado aplicativo em um token.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6eea44907cc71977cff6c53351ef5dd8155e817
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b206d4ca825f818390421dbce23ea618917336a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446864"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029369"
 ---
-# <a name="vpptokenlicensesummary-resource-type"></a><span data-ttu-id="8b15a-103">tipo de recurso vppTokenLicenseSummary</span><span class="sxs-lookup"><span data-stu-id="8b15a-103">vppTokenLicenseSummary resource type</span></span>
+# <a name="vpptokenlicensesummary-resource-type"></a><span data-ttu-id="67086-103">tipo de recurso vppTokenLicenseSummary</span><span class="sxs-lookup"><span data-stu-id="67086-103">vppTokenLicenseSummary resource type</span></span>
 
-<span data-ttu-id="8b15a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8b15a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="67086-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="67086-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="8b15a-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="8b15a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="67086-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="67086-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8b15a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="8b15a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="67086-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="67086-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8b15a-107">Resumo de licenças de um determinado aplicativo em um token.</span><span class="sxs-lookup"><span data-stu-id="8b15a-107">License summary of a given app in a token.</span></span>
+<span data-ttu-id="67086-107">Resumo de licenças de um determinado aplicativo em um token.</span><span class="sxs-lookup"><span data-stu-id="67086-107">License summary of a given app in a token.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8b15a-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8b15a-108">Properties</span></span>
-|<span data-ttu-id="8b15a-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8b15a-109">Property</span></span>|<span data-ttu-id="8b15a-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="8b15a-110">Type</span></span>|<span data-ttu-id="8b15a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="8b15a-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="67086-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="67086-108">Properties</span></span>
+|<span data-ttu-id="67086-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="67086-109">Property</span></span>|<span data-ttu-id="67086-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="67086-110">Type</span></span>|<span data-ttu-id="67086-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="67086-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8b15a-112">vppTokenId</span><span class="sxs-lookup"><span data-stu-id="8b15a-112">vppTokenId</span></span>|<span data-ttu-id="8b15a-113">String</span><span class="sxs-lookup"><span data-stu-id="8b15a-113">String</span></span>|<span data-ttu-id="8b15a-114">Identificador do token VPP.</span><span class="sxs-lookup"><span data-stu-id="8b15a-114">Identifier of the VPP token.</span></span>|
-|<span data-ttu-id="8b15a-115">appleId</span><span class="sxs-lookup"><span data-stu-id="8b15a-115">appleId</span></span>|<span data-ttu-id="8b15a-116">String</span><span class="sxs-lookup"><span data-stu-id="8b15a-116">String</span></span>|<span data-ttu-id="8b15a-117">O Apple Id associado ao Token do Programa de Compra de Volume da Apple.</span><span class="sxs-lookup"><span data-stu-id="8b15a-117">The Apple Id associated with the given Apple Volume Purchase Program Token.</span></span>|
-|<span data-ttu-id="8b15a-118">organizationName</span><span class="sxs-lookup"><span data-stu-id="8b15a-118">organizationName</span></span>|<span data-ttu-id="8b15a-119">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8b15a-119">String</span></span>|<span data-ttu-id="8b15a-120">A organização associada ao token do Apple Volume Purchase Program.</span><span class="sxs-lookup"><span data-stu-id="8b15a-120">The organization associated with the Apple Volume Purchase Program Token.</span></span>|
-|<span data-ttu-id="8b15a-121">availableLicenseCount</span><span class="sxs-lookup"><span data-stu-id="8b15a-121">availableLicenseCount</span></span>|<span data-ttu-id="8b15a-122">Int32</span><span class="sxs-lookup"><span data-stu-id="8b15a-122">Int32</span></span>|<span data-ttu-id="8b15a-123">O número de licenças VPP disponíveis.</span><span class="sxs-lookup"><span data-stu-id="8b15a-123">The number of VPP licenses available.</span></span>|
-|<span data-ttu-id="8b15a-124">usedLicenseCount</span><span class="sxs-lookup"><span data-stu-id="8b15a-124">usedLicenseCount</span></span>|<span data-ttu-id="8b15a-125">Int32</span><span class="sxs-lookup"><span data-stu-id="8b15a-125">Int32</span></span>|<span data-ttu-id="8b15a-126">O número de aplicativos VPP em uso.</span><span class="sxs-lookup"><span data-stu-id="8b15a-126">The number of VPP licenses in use.</span></span>|
+|<span data-ttu-id="67086-112">vppTokenId</span><span class="sxs-lookup"><span data-stu-id="67086-112">vppTokenId</span></span>|<span data-ttu-id="67086-113">String</span><span class="sxs-lookup"><span data-stu-id="67086-113">String</span></span>|<span data-ttu-id="67086-114">Identificador do token VPP.</span><span class="sxs-lookup"><span data-stu-id="67086-114">Identifier of the VPP token.</span></span>|
+|<span data-ttu-id="67086-115">appleId</span><span class="sxs-lookup"><span data-stu-id="67086-115">appleId</span></span>|<span data-ttu-id="67086-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="67086-116">String</span></span>|<span data-ttu-id="67086-117">O Apple Id associado ao Token do Programa de Compra de Volume da Apple.</span><span class="sxs-lookup"><span data-stu-id="67086-117">The Apple Id associated with the given Apple Volume Purchase Program Token.</span></span>|
+|<span data-ttu-id="67086-118">organizationName</span><span class="sxs-lookup"><span data-stu-id="67086-118">organizationName</span></span>|<span data-ttu-id="67086-119">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="67086-119">String</span></span>|<span data-ttu-id="67086-120">A organização associada ao token do Apple Volume Purchase Program.</span><span class="sxs-lookup"><span data-stu-id="67086-120">The organization associated with the Apple Volume Purchase Program Token.</span></span>|
+|<span data-ttu-id="67086-121">availableLicenseCount</span><span class="sxs-lookup"><span data-stu-id="67086-121">availableLicenseCount</span></span>|<span data-ttu-id="67086-122">Int32</span><span class="sxs-lookup"><span data-stu-id="67086-122">Int32</span></span>|<span data-ttu-id="67086-123">O número de licenças VPP disponíveis.</span><span class="sxs-lookup"><span data-stu-id="67086-123">The number of VPP licenses available.</span></span>|
+|<span data-ttu-id="67086-124">usedLicenseCount</span><span class="sxs-lookup"><span data-stu-id="67086-124">usedLicenseCount</span></span>|<span data-ttu-id="67086-125">Int32</span><span class="sxs-lookup"><span data-stu-id="67086-125">Int32</span></span>|<span data-ttu-id="67086-126">O número de aplicativos VPP em uso.</span><span class="sxs-lookup"><span data-stu-id="67086-126">The number of VPP licenses in use.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="8b15a-127">Relações</span><span class="sxs-lookup"><span data-stu-id="8b15a-127">Relationships</span></span>
-<span data-ttu-id="8b15a-128">Nenhum</span><span class="sxs-lookup"><span data-stu-id="8b15a-128">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="67086-127">Relações</span><span class="sxs-lookup"><span data-stu-id="67086-127">Relationships</span></span>
+<span data-ttu-id="67086-128">Nenhum</span><span class="sxs-lookup"><span data-stu-id="67086-128">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="8b15a-129">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8b15a-129">JSON Representation</span></span>
-<span data-ttu-id="8b15a-130">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="8b15a-130">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="67086-129">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="67086-129">JSON Representation</span></span>
+<span data-ttu-id="67086-130">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="67086-130">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vppTokenLicenseSummary"
@@ -51,6 +51,9 @@ ms.locfileid: "43446864"
   "usedLicenseCount": 1024
 }
 ```
+
+
+
 
 
 

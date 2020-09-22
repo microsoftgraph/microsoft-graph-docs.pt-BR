@@ -1,48 +1,40 @@
 ---
 title: tipo de recurso changeNotificationEncryptedContent
-description: Uma assinatura com dados de recurso permite que um aplicativo cliente receba notificações de alteração com alterações nos dados no Microsoft Graph. O conteúdo criptografado notificação de alteração representa os dados criptografados anexados à notificação.
+description: Um objeto changeNotificationEncryptedContent representa os dados criptografados anexados a uma notificação de alteração.
 localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4ca2230cf3735cb696136f3b3014e8545202ebfe
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: c3d5f576c5259ba69f6fa2194cf52d7834a1f717
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598490"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192158"
 ---
-# <a name="changenotificationencryptedcontent-resource-type"></a><span data-ttu-id="e7227-104">tipo de recurso changeNotificationEncryptedContent</span><span class="sxs-lookup"><span data-stu-id="e7227-104">changeNotificationEncryptedContent resource type</span></span>
+# <a name="changenotificationencryptedcontent-resource-type"></a><span data-ttu-id="d4baa-103">tipo de recurso changeNotificationEncryptedContent</span><span class="sxs-lookup"><span data-stu-id="d4baa-103">changeNotificationEncryptedContent resource type</span></span>
 
-<span data-ttu-id="e7227-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e7227-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d4baa-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d4baa-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e7227-106">Representa os dados criptografados anexados a uma notificação de alteração.</span><span class="sxs-lookup"><span data-stu-id="e7227-106">Represents the encrypted data attached to a change notification.</span></span>
+<span data-ttu-id="d4baa-105">Representa os dados criptografados anexados a uma notificação de alteração.</span><span class="sxs-lookup"><span data-stu-id="d4baa-105">Represents the encrypted data attached to a change notification.</span></span>
 
-<span data-ttu-id="e7227-107">Para obter detalhes, consulte [set up Change Notifications que incluem dados de recurso (visualização)](/graph/webhooks-with-resource-data.md).</span><span class="sxs-lookup"><span data-stu-id="e7227-107">For details, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).</span></span>
+<span data-ttu-id="d4baa-106">Para obter detalhes, consulte [set up Change Notifications que incluem dados de recurso (visualização)](/graph/webhooks-with-resource-data.md).</span><span class="sxs-lookup"><span data-stu-id="d4baa-106">For details, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e7227-108">Métodos</span><span class="sxs-lookup"><span data-stu-id="e7227-108">Methods</span></span>
+## <a name="properties"></a><span data-ttu-id="d4baa-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d4baa-107">Properties</span></span>
 
-<span data-ttu-id="e7227-109">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="e7227-109">None.</span></span>
-
-## <a name="properties"></a><span data-ttu-id="e7227-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e7227-110">Properties</span></span>
-
-| <span data-ttu-id="e7227-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e7227-111">Property</span></span> | <span data-ttu-id="e7227-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="e7227-112">Type</span></span> | <span data-ttu-id="e7227-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="e7227-113">Description</span></span> |
+| <span data-ttu-id="d4baa-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d4baa-108">Property</span></span> | <span data-ttu-id="d4baa-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="d4baa-109">Type</span></span> | <span data-ttu-id="d4baa-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d4baa-110">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="e7227-114">data</span><span class="sxs-lookup"><span data-stu-id="e7227-114">data</span></span> | <span data-ttu-id="e7227-115">string</span><span class="sxs-lookup"><span data-stu-id="e7227-115">string</span></span> | <span data-ttu-id="e7227-116">Dados criptografados codificados em base64 que produzem um respresented de recurso completo como JSON.</span><span class="sxs-lookup"><span data-stu-id="e7227-116">Base64-encoded encrypted data that produces a full resource respresented as JSON.</span></span> <span data-ttu-id="e7227-117">Os dados foram criptografados com o fornecido `dataKey` usando um `AES/CBC/PKCS5PADDING` pacote de codificação.</span><span class="sxs-lookup"><span data-stu-id="e7227-117">The data has been encrypted with the provided `dataKey` using an `AES/CBC/PKCS5PADDING` cipher suite.</span></span> |
-| <span data-ttu-id="e7227-118">DataSignature</span><span class="sxs-lookup"><span data-stu-id="e7227-118">dataSignature</span></span> | <span data-ttu-id="e7227-119">string</span><span class="sxs-lookup"><span data-stu-id="e7227-119">string</span></span> | <span data-ttu-id="e7227-120">Hash HMAC-SHA256 codificado em base64 dos dados para fins de validação.</span><span class="sxs-lookup"><span data-stu-id="e7227-120">Base64-encoded HMAC-SHA256 hash of the data for validation purposes.</span></span> |
-| <span data-ttu-id="e7227-121">DataKeyNames</span><span class="sxs-lookup"><span data-stu-id="e7227-121">dataKey</span></span> | <span data-ttu-id="e7227-122">string</span><span class="sxs-lookup"><span data-stu-id="e7227-122">string</span></span> | <span data-ttu-id="e7227-123">Chave simétrica codificada em base64 gerada pelo Microsoft Graph para criptografar o valor dos dados e gerar a assinatura dos dados.</span><span class="sxs-lookup"><span data-stu-id="e7227-123">Base64-encoded symmetric key generated by Microsoft Graph to encrypt the data value and to generate the data signature.</span></span> <span data-ttu-id="e7227-124">Essa chave é criptografada com a chave pública de certificado fornecida durante a assinatura.</span><span class="sxs-lookup"><span data-stu-id="e7227-124">This key is encrypted with the certificate public key that was provided during the subscription.</span></span> <span data-ttu-id="e7227-125">Ele deve ser descriptografado com a chave privada do certificado para que possa ser usado para descriptografar os dados ou verificar a assinatura.</span><span class="sxs-lookup"><span data-stu-id="e7227-125">It must be decrypted with the certificate private key before it can be used to decrypt the data or verify the signature.</span></span> <span data-ttu-id="e7227-126">Essa chave foi criptografada com o seguinte pacote de codificação: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` .</span><span class="sxs-lookup"><span data-stu-id="e7227-126">This key has been encrypted with the following cipher suite: `RSA/ECB/OAEPWithSHA1AndMGF1Padding`.</span></span> |
-| <span data-ttu-id="e7227-127">encryptionCertificateId</span><span class="sxs-lookup"><span data-stu-id="e7227-127">encryptionCertificateId</span></span> | <span data-ttu-id="e7227-128">string</span><span class="sxs-lookup"><span data-stu-id="e7227-128">string</span></span> | <span data-ttu-id="e7227-129">ID do certificado usado para criptografar o `dataKey` .</span><span class="sxs-lookup"><span data-stu-id="e7227-129">ID of the certificate used to encrypt the `dataKey`.</span></span> |
-| <span data-ttu-id="e7227-130">encryptionCertificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="e7227-130">encryptionCertificateThumbprint</span></span> | <span data-ttu-id="e7227-131">string</span><span class="sxs-lookup"><span data-stu-id="e7227-131">string</span></span> | <span data-ttu-id="e7227-132">Representação hexadecimal da impressão digital do certificado usado para criptografar o `dataKey` .</span><span class="sxs-lookup"><span data-stu-id="e7227-132">Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey`.</span></span> |
+| <span data-ttu-id="d4baa-111">data</span><span class="sxs-lookup"><span data-stu-id="d4baa-111">data</span></span> | <span data-ttu-id="d4baa-112">string</span><span class="sxs-lookup"><span data-stu-id="d4baa-112">string</span></span> | <span data-ttu-id="d4baa-113">Dados criptografados codificados em base64 que produzem um respresented de recurso completo como JSON.</span><span class="sxs-lookup"><span data-stu-id="d4baa-113">Base64-encoded encrypted data that produces a full resource respresented as JSON.</span></span> <span data-ttu-id="d4baa-114">Os dados foram criptografados com o fornecido `dataKey` usando um `AES/CBC/PKCS5PADDING` pacote de codificação.</span><span class="sxs-lookup"><span data-stu-id="d4baa-114">The data has been encrypted with the provided `dataKey` using an `AES/CBC/PKCS5PADDING` cipher suite.</span></span> |
+| <span data-ttu-id="d4baa-115">DataSignature</span><span class="sxs-lookup"><span data-stu-id="d4baa-115">dataSignature</span></span> | <span data-ttu-id="d4baa-116">string</span><span class="sxs-lookup"><span data-stu-id="d4baa-116">string</span></span> | <span data-ttu-id="d4baa-117">Hash HMAC-SHA256 codificado em base64 dos dados para fins de validação.</span><span class="sxs-lookup"><span data-stu-id="d4baa-117">Base64-encoded HMAC-SHA256 hash of the data for validation purposes.</span></span> |
+| <span data-ttu-id="d4baa-118">DataKeyNames</span><span class="sxs-lookup"><span data-stu-id="d4baa-118">dataKey</span></span> | <span data-ttu-id="d4baa-119">string</span><span class="sxs-lookup"><span data-stu-id="d4baa-119">string</span></span> | <span data-ttu-id="d4baa-120">Chave simétrica codificada em base64 gerada pelo Microsoft Graph para criptografar o valor dos dados e gerar a assinatura dos dados.</span><span class="sxs-lookup"><span data-stu-id="d4baa-120">Base64-encoded symmetric key generated by Microsoft Graph to encrypt the data value and to generate the data signature.</span></span> <span data-ttu-id="d4baa-121">Essa chave é criptografada com a chave pública de certificado fornecida durante a assinatura.</span><span class="sxs-lookup"><span data-stu-id="d4baa-121">This key is encrypted with the certificate public key that was provided during the subscription.</span></span> <span data-ttu-id="d4baa-122">Ele deve ser descriptografado com a chave privada do certificado para que possa ser usado para descriptografar os dados ou verificar a assinatura.</span><span class="sxs-lookup"><span data-stu-id="d4baa-122">It must be decrypted with the certificate private key before it can be used to decrypt the data or verify the signature.</span></span> <span data-ttu-id="d4baa-123">Essa chave foi criptografada com o seguinte pacote de codificação: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` .</span><span class="sxs-lookup"><span data-stu-id="d4baa-123">This key has been encrypted with the following cipher suite: `RSA/ECB/OAEPWithSHA1AndMGF1Padding`.</span></span> |
+| <span data-ttu-id="d4baa-124">encryptionCertificateId</span><span class="sxs-lookup"><span data-stu-id="d4baa-124">encryptionCertificateId</span></span> | <span data-ttu-id="d4baa-125">string</span><span class="sxs-lookup"><span data-stu-id="d4baa-125">string</span></span> | <span data-ttu-id="d4baa-126">ID do certificado usado para criptografar o `dataKey` .</span><span class="sxs-lookup"><span data-stu-id="d4baa-126">ID of the certificate used to encrypt the `dataKey`.</span></span> |
+| <span data-ttu-id="d4baa-127">encryptionCertificateThumbprint</span><span class="sxs-lookup"><span data-stu-id="d4baa-127">encryptionCertificateThumbprint</span></span> | <span data-ttu-id="d4baa-128">string</span><span class="sxs-lookup"><span data-stu-id="d4baa-128">string</span></span> | <span data-ttu-id="d4baa-129">Representação hexadecimal da impressão digital do certificado usado para criptografar o `dataKey` .</span><span class="sxs-lookup"><span data-stu-id="d4baa-129">Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey`.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="e7227-133">Relações</span><span class="sxs-lookup"><span data-stu-id="e7227-133">Relationships</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d4baa-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d4baa-130">JSON representation</span></span>
 
-<span data-ttu-id="e7227-134">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e7227-134">None.</span></span>
-
-## <a name="json-representation"></a><span data-ttu-id="e7227-135">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e7227-135">JSON representation</span></span>
-
-<span data-ttu-id="e7227-136">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e7227-136">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d4baa-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d4baa-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -74,3 +66,5 @@ ms.locfileid: "46598490"
   "suppressions": []
 }
 -->
+
+
