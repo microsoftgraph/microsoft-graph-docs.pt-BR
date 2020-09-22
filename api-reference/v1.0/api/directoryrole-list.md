@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f4a8f8838d77c9a947c304ee18898832c1d5428
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 73d6aabbcb46cfe613d432b7f9a9ee84e04e4eeb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052394"
 ---
 # <a name="list-directoryroles"></a>Listar directoryRoles
 
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [directoryRole](../resources/directoryrole.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [directoryRole](../resources/directoryrole.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
@@ -115,3 +115,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

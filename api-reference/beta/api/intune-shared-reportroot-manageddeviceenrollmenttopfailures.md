@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72bb66369eaeb96cafcebabbed5fc037513e0d0e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d098d1fef32b89a5bd55634dcc33d482f701ca9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457717"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053717"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>função managedDeviceEnrollmentTopFailures
 
@@ -81,6 +81,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 

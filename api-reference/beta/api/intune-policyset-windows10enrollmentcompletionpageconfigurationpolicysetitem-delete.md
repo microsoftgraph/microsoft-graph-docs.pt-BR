@@ -3,14 +3,14 @@ title: Excluir windows10EnrollmentCompletionPageConfigurationPolicySetItem
 description: Exclui windows10EnrollmentCompletionPageConfigurationPolicySetItem.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 098043a7fe03c46cd06abb1644168038f97c49ec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 37a203d20e903dacf54b61a62572ad057aad766f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456235"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053899"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfigurationpolicysetitem"></a>Excluir windows10EnrollmentCompletionPageConfigurationPolicySetItem
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 96d9bdc1c9da3146ef428f25017bb76e486368e4
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 0355a5dae824fae9ffe04e62e43634cde2d009d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052401"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -117,3 +117,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

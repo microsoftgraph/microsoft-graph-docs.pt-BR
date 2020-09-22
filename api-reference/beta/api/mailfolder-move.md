@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7ac86e73c11ca76422a933cc6d784d91f02d40be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 16f01e524e69b32bca0d073606527041cb192ebe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443384"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053605"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -135,3 +135,5 @@ Content-length: 179
   ]
 }
 -->
+
+

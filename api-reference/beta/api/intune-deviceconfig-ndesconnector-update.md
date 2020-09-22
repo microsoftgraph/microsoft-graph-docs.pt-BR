@@ -3,14 +3,14 @@ title: Atualizar ndesConnector
 description: Atualiza as propriedades de um objeto ndesConnector.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5be8474e47f5bce4cb215566a63884fd4cef7ae1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e1694a163742b63df535744b43b33e3fc2ca9d65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43342816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054501"
 ---
 # <a name="update-ndesconnector"></a>Atualizar ndesConnector
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [ndesCon
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave do conector NDES.|
+|id|Cadeia de caracteres|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector NDES|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
 |displayName|Cadeia de caracteres|O nome amigável do conector NDES.|
@@ -61,7 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [ndesCon
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -95,6 +95,9 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

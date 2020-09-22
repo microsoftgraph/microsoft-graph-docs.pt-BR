@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 65e2455438dbdb8c7bef3ef3439f846e737ebba0
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: a8bbf452c337cb5c2ade7302eb29cff4bdb73d23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895472"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052534"
 ---
 # <a name="printpagerange-resource-type"></a>tipo de recurso printPageRange
 
@@ -44,3 +44,5 @@ Veja a seguir uma representação JSON do recurso.
   "endPage": 123456
 }
 ```
+
+

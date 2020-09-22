@@ -3,14 +3,14 @@ title: função getExpiringVppTokenCount
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1fb4390ef6ece1a181bb8b05a85db72f568a19e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cf1f79ad419b3dc26ca219eb5ac7232a09418a63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444741"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054228"
 ---
 # <a name="getexpiringvpptokencount-function"></a>função getExpiringVppTokenCount
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e um Int32 no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e um Int32 no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -78,6 +78,9 @@ Content-Length: 18
   "value": 8
 }
 ```
+
+
+
 
 
 

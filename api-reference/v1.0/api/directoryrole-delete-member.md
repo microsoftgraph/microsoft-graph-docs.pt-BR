@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0cf8a6f58439a6bcd7c6605503b8c4d471d9f188
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: ca7657b1bfc0843e217c2a8dd45d4ffb5688c3f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181424"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052429"
 ---
 # <a name="remove-directory-role-member"></a>Remover membro da função de diretório
 
@@ -108,3 +108,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

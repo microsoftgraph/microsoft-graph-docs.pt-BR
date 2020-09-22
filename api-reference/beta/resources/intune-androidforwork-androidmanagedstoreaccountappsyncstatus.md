@@ -3,14 +3,14 @@ title: tipo de enumeração androidManagedStoreAccountAppSyncStatus
 description: Status de sincronização do locatário com a API Google EMM
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e61d4260f4b9c036f6561969d1b1f096340db51a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 16c637321dbc73ef08b4016757ea99f24584d070
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459183"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052842"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>tipo de enumeração androidManagedStoreAccountAppSyncStatus
 
@@ -26,11 +26,14 @@ Status de sincronização do locatário com a API Google EMM
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Ainda não documentado|
-|credentialsNotValid|1|Ainda não documentado|
-|androidForWorkApiError|duas|Ainda não documentado|
-|managementServiceError|3D|Ainda não documentado|
+|credentialsNotValid|1 |Ainda não documentado|
+|androidForWorkApiError|2 |Ainda não documentado|
+|managementServiceError|3 |Ainda não documentado|
 |unknownError|4 |Ainda não documentado|
-|nenhuma|5 |Ainda não documentado|
+|Nenhuma|5 |Ainda não documentado|
+
+
+
 
 
 

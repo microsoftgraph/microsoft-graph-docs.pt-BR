@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6b42bd6425b35333f7f14021182bc4141497e1a1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 77e0a2f181275876ce0a692808877038cc3a4a87
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44894820"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053529"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>bloco de anotações: getNotebookFromWebUrl
 
@@ -126,3 +126,5 @@ Content-Length: 544
   "suppressions": [
   ]
 }-->
+
+

@@ -3,14 +3,14 @@ title: Excluir deviceAppManagementTask
 description: Exclui deviceAppManagementTask.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b970d6ff5fd8b2c479a2b3d01f05355a54a1ba4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 88b90ac98b0e656d1e11ad448afd33315d51ee54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445361"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053962"
 ---
 # <a name="delete-deviceappmanagementtask"></a>Excluir deviceAppManagementTask
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

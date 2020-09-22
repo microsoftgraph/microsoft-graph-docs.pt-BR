@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 60eba61b9f786cb6a7d5c506558e16eb9e2d5d60
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9c04831cf419d85a3d055462f4f42cf275c0afa2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465387"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053710"
 ---
 # <a name="update-reportroot"></a>Atualizar reportRoot
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [reportR
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo dessa entidade.|
+|id|Cadeia de caracteres|O identificador exclusivo dessa entidade.|
 
 
 
@@ -86,6 +86,9 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
+
+
+
 
 
 

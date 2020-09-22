@@ -3,14 +3,14 @@ title: função getEncryptionPublicKey
 description: Obter uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f17a797e4ec6b19ef9e95fc1d1b51004ef74a0c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 04b2f1bf0b0e97afd6000eb2c8a1285e44a32049
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444748"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054243"
 ---
 # <a name="getencryptionpublickey-function"></a>função getEncryptionPublicKey
 
@@ -50,7 +50,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma cadeia de caracteres no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma cadeia de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -71,6 +71,9 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
+
+
+
 
 
 

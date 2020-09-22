@@ -3,14 +3,14 @@ title: ação updateStatus
 description: Definir o status da tarefa e anexar uma anotação.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f48563ae657934a84441648a314b93ac4af2656
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2cdd3de9ba71e9e88307b8e90975851400dbb6a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445303"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053885"
 ---
 # <a name="updatestatus-action"></a>ação updateStatus
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|O status|
-|Observação|String|A observação|
+|Observação|Cadeia de caracteres|A observação|
 
 
 
@@ -82,6 +82,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

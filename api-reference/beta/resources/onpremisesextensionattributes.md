@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso Onpremisesextensionattributes à
+title: Tipo de recurso onPremisesExtensionAttributes
 description: A propriedade **onpremisesextensionattributes à** da entidade de usuário contém quinze Propriedades de atributos de extensões personalizadas.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: users
 author: krbain
-ms.openlocfilehash: 1035674a6ce5d9f2c0a1a8b2cd35896c92ec7147
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 2729d6d624f1bde304425229ccf4ae7df8ddf781
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052584"
 ---
-# <a name="onpremisesextensionattributes-resource-type"></a>tipo de recurso Onpremisesextensionattributes à
+# <a name="onpremisesextensionattributes-resource-type"></a>Tipo de recurso onPremisesExtensionAttributes
 
 Namespace: microsoft.graph
 
@@ -26,21 +26,21 @@ A propriedade **onpremisesextensionattributes à** da entidade de [usuário](use
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensionAttribute1|String| Primeiro atributo de extensão personalizável. |
-|extensionAttribute2|String| Segundo atributo de extensão personalizável. |
-|extensionAttribute3|String| Terceiro atributo de extensão personalizável. |
-|extensionAttribute4|String| Quarto atributo de extensão personalizável. |
-|extensionAttribute5|String| Quinto atributo de extensão personalizável. |
-|extensionAttribute6|String| Sexto atributo de extensão personalizável. |
-|extensionAttribute7|String| Sétimo atributo de extensão personalizável. |
-|extensionAttribute8|String| Oitavo atributo de extensão personalizável. |
-|extensionAttribute9|String| Nono atributo de extensão personalizável. |
-|extensionAttribute10|String| Décimo atributo de extensão personalizável. |
-|extensionAttribute11|String| Décimo primeiro atributo de extensão personalizável. |
-|extensionAttribute12|String| Décimo segundo atributo de extensão personalizável. |
-|extensionAttribute13|String| Décimo terceiro atributo de extensão personalizável. |
-|extensionAttribute14|String| Atributo de extensão personalizável décimo quarto. |
-|extensionAttribute15|String| Atributo de extensão personalizável décimo quinto. |
+|extensionAttribute1|Cadeia de caracteres| Primeiro atributo de extensão personalizável. |
+|extensionAttribute2|Cadeia de caracteres| Segundo atributo de extensão personalizável. |
+|extensionAttribute3|Cadeia de caracteres| Terceiro atributo de extensão personalizável. |
+|extensionAttribute4|Cadeia de caracteres| Quarto atributo de extensão personalizável. |
+|extensionAttribute5|Cadeia de caracteres| Quinto atributo de extensão personalizável. |
+|extensionAttribute6|Cadeia de caracteres| Sexto atributo de extensão personalizável. |
+|extensionAttribute7|Cadeia de caracteres| Sétimo atributo de extensão personalizável. |
+|extensionAttribute8|Cadeia de caracteres| Oitavo atributo de extensão personalizável. |
+|extensionAttribute9|Cadeia de caracteres| Nono atributo de extensão personalizável. |
+|extensionAttribute10|Cadeia de caracteres| Décimo atributo de extensão personalizável. |
+|extensionAttribute11|Cadeia de caracteres| Décimo primeiro atributo de extensão personalizável. |
+|extensionAttribute12|Cadeia de caracteres| Décimo segundo atributo de extensão personalizável. |
+|extensionAttribute13|Cadeia de caracteres| Décimo terceiro atributo de extensão personalizável. |
+|extensionAttribute14|Cadeia de caracteres| Atributo de extensão personalizável décimo quarto. |
+|extensionAttribute15|Cadeia de caracteres| Atributo de extensão personalizável décimo quinto. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -87,3 +87,5 @@ A propriedade **onpremisesextensionattributes à** da entidade de [usuário](use
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3dfc4d3c8e6d2f379d717649c945aaa48e978916
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: a15c830465a4328a178fec497e4ad115b0b0459f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052464"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryobject: getAvailableExtensionProperties
 Namespace: microsoft.graph
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true`para especificar que somente as propriedades de extensão sincronizadas a partir do diretório local devem ser retornadas; `false`para especificar que somente as propriedades de extensão que não são sincronizadas a partir do diretório local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
+|isSyncedFromOnPremises|Boolean|`true` para especificar que somente as propriedades de extensão sincronizadas a partir do diretório local devem ser retornadas; `false` para especificar que somente as propriedades de extensão que não são sincronizadas a partir do diretório local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
 
 
 ## <a name="response"></a>Resposta
@@ -113,4 +113,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

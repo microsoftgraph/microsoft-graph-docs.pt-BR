@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 028b6b577e9a018be0cfc97264b6344b51dd8ed2
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b4a9a1a6f7560f3369242cc8d8d4e140375a30a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44894848"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053528"
 ---
 # <a name="notebook-copynotebook"></a>bloco de anotações: copyNotebook
 
@@ -50,10 +50,10 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site do SharePoint.|
-|siteId|String|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site do SharePoint.|
+|siteCollectionId|Cadeia de caracteres|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site do SharePoint.|
+|siteId|Cadeia de caracteres|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site do SharePoint.|
 |groupId|Cadeia de caracteres|A ID do grupo para o qual copiar. Use somente ao copiar para um grupo do Microsoft 365.|
-|renomeas|String|O nome da cópia. O padrão é o nome do item existente. |
+|renomeas|Cadeia de caracteres|O nome da cópia. O padrão é o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 
@@ -118,3 +118,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

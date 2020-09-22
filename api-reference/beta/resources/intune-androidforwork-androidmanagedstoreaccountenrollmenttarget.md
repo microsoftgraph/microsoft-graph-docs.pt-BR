@@ -3,14 +3,14 @@ title: tipo de enumeração androidManagedStoreAccountEnrollmentTarget
 description: Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para a conta
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0eddf1c31b00fd9a562d3af05883971c04a22b78
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a91c3098b3a2cc7d0022c4921b00e254431d658
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464220"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052821"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>tipo de enumeração androidManagedStoreAccountEnrollmentTarget
 
@@ -25,10 +25,13 @@ Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Ainda não documentado|
-|todos os|1|Ainda não documentado|
-|visa|duas|Ainda não documentado|
-|targetedAsEnrollmentRestrictions|3D|Ainda não documentado|
+|Nenhuma|,0|Ainda não documentado|
+|todos os|1 |Ainda não documentado|
+|visa|2 |Ainda não documentado|
+|targetedAsEnrollmentRestrictions|3 |Ainda não documentado|
+
+
+
 
 
 

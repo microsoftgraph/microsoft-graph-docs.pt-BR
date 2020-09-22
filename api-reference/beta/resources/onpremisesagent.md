@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d6f07ea537f334796f29656ce05ea20351752402
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: ec125e52eaf9eba3423f70dd47cc7dd1562716bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556258"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052588"
 ---
 # <a name="onpremisesagent-resource-type"></a>tipo de recurso onPremisesAgent
 
@@ -20,24 +20,24 @@ Namespace: microsoft.graph
 
 Representa o agente local. Os agentes locais instalados por um administrador de locatários podem ser configurados para acessar/lidar com solicitações de um [recurso publicado](publishedresource.md)específico.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Listar onPremisesAgents](../api/onpremisesagent-list.md) | coleção [onPremisesAgent](onpremisesagent.md) | Obtenha uma coleção de objetos **onPremisesAgents** . |
 | [Obter onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | Leia as propriedades e os relacionamentos de um objeto **onPremisesAgent** . |
-| [Atribuir onPremisesAgent a onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | Nenhuma | Atribua um **onPremisesAgent** a um **onPremisesAgentGroup**.|
-| [Remover o onpremisesAgent de um onPremisesAgentGroup](../api/onpremisesagent-delete-agentgroups.md) | Nenhuma | Remover um **onPremisesAgent** de um **onPremisesAgentGroup**. |
+| [Atribuir onPremisesAgent a onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | Nenhum | Atribua um **onPremisesAgent** a um **onPremisesAgentGroup**.|
+| [Remover o onpremisesAgent de um onPremisesAgentGroup](../api/onpremisesagent-delete-agentgroups.md) | Nenhum | Remover um **onPremisesAgent** de um **onPremisesAgentGroup**. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|externalIp|String|O endereço IP externo, conforme detectado pelo serviço para o computador do agente. Somente leitura|
+|externalIp|Cadeia de caracteres|O endereço IP externo, conforme detectado pelo serviço para o computador do agente. Somente leitura|
 |id|Cadeia de caracteres| A ID de objeto do onPremisesAgent. Somente leitura.|
-|Nomecomputador|String|O nome da máquina na qual o aggent está sendo executado. Somente leitura|
+|Nomecomputador|Cadeia de caracteres|O nome da máquina na qual o aggent está sendo executado. Somente leitura|
 |status|cadeia de caracteres| Os valores possíveis são: `active` e `inactive`.|
-|publishingtype|string| Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingtype|cadeia de caracteres| Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## <a name="relationships"></a>Relações
 
@@ -78,3 +78,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

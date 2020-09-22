@@ -5,16 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: e9dc9992f05ae2fac9234b3431817ce655bbd06b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d5ddc6f128becd992d2f3b1cfd34b8bcc03ddc7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456695"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053486"
 ---
 # <a name="create-sectiongroup"></a>Criar sectionGroup
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -129,3 +129,5 @@ Content-length: 305
   ]
 }
 -->
+
+

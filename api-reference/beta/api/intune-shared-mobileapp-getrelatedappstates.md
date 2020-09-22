@@ -3,14 +3,14 @@ title: função getRelatedAppStates
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db38d8afa5c6be74bcc558c8cbdd7c141161c91d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 63d52d02d76fec73e8014fe6bca9645c50e6625b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441308"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053886"
 ---
 # <a name="getrelatedappstates-function"></a>função getRelatedAppStates
 
@@ -56,13 +56,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Ainda não documentado|
+|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
 |deviceId|Cadeia de caracteres|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção [mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção [mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,6 +97,9 @@ Content-Length: 481
   ]
 }
 ```
+
+
+
 
 
 

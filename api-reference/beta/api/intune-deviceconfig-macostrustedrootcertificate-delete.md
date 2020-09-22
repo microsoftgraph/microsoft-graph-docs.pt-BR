@@ -3,14 +3,14 @@ title: Excluir macOSTrustedRootCertificate
 description: Exclui macOSTrustedRootCertificate.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af26ac91f986283b20a0cfa8be00dc82f9d09898
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 57a0ef323ac857268b73a47f8db04b4274e617a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054515"
 ---
 # <a name="delete-macostrustedrootcertificate"></a>Excluir macOSTrustedRootCertificate
 
@@ -68,6 +68,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

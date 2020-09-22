@@ -3,14 +3,14 @@ title: Listar groupPolicyPresentationValueMultiTexts
 description: Listar Propriedades e relações dos objetos groupPolicyPresentationValueMultiText.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88a74882dcac7b6ebb369956a01486cf8d2c4e48
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a96c94043df82401ca568e750a0b9d7c03ba1358
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054032"
 ---
 # <a name="list-grouppolicypresentationvaluemultitexts"></a>Listar groupPolicyPresentationValueMultiTexts
 
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -81,6 +81,9 @@ Content-Length: 353
   ]
 }
 ```
+
+
+
 
 
 

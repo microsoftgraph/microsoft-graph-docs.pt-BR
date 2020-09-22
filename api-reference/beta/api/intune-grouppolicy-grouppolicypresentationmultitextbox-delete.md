@@ -3,14 +3,14 @@ title: Excluir groupPolicyPresentationMultiTextBox
 description: Exclui groupPolicyPresentationMultiTextBox.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2891bf5e2623f7ed5866e78072557c229e40c02
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d895b7144177f2b45d2b7e2ed75709a14415f03d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054039"
 ---
 # <a name="delete-grouppolicypresentationmultitextbox"></a>Excluir groupPolicyPresentationMultiTextBox
 
@@ -66,6 +66,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração microsoftStoreForBusinessLicenseType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fd0fbfe14c8540721d08c7b6375e81b0b8ee86f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e84c6dc02b9559568d089380733d0caacbe53c71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458601"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052807"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>tipo de enumeração microsoftStoreForBusinessLicenseType
 
@@ -26,7 +26,10 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |modo|,0|Ainda não documentado|
-|modo|1|Ainda não documentado|
+|modo|1 |Ainda não documentado|
+
+
+
 
 
 

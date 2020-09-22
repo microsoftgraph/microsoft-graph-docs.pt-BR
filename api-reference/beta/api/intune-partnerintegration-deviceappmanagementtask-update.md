@@ -3,14 +3,14 @@ title: Atualizar deviceAppManagementTask
 description: Atualiza as propriedades de um objeto deviceAppManagementTask.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9feb1a94f57baec477eef0f94f6baa14abebada7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: df4d2c54ef0bbab4bc235b930b48cde17d291dec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445315"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053941"
 ---
 # <a name="update-deviceappmanagementtask"></a>Atualizar deviceAppManagementTask
 
@@ -53,22 +53,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade.|
+|id|Cadeia de caracteres|A chave da entidade.|
 |displayName|Cadeia de caracteres|O nome.|
-|description|Cadeia de caracteres|A descrição.|
+|description|String|A descrição.|
 |createdDateTime|DateTimeOffset|A data de criação.|
 |dueDateTime|DateTimeOffset|A data de conclusão.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
 |prioridade|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|A prioridade. Os valores possíveis são: `none`, `high`, `low`.|
-|Criador|String|O endereço de email do criador.|
-|creatorNotes|String|Observações do criador.|
-|assignedTo|String|O nome ou email do administrador ao qual esta tarefa é atribuída.|
+|Criador|Cadeia de caracteres|O endereço de email do criador.|
+|creatorNotes|Cadeia de caracteres|Observações do criador.|
+|assignedTo|Cadeia de caracteres|O nome ou email do administrador ao qual esta tarefa é atribuída.|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|O status. Os valores possíveis são: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -115,6 +115,9 @@ Content-Length: 508
   "status": "pending"
 }
 ```
+
+
+
 
 
 

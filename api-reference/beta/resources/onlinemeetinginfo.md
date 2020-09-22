@@ -5,16 +5,16 @@ localization_priority: Normal
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8ac6c42f28ed1f2adccd54fcd3bd6667f4113b7a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb971295919f779c3faddb34ceeb96d531011b1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522246"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052569"
 ---
 # <a name="onlinemeetinginfo-resource-type"></a>tipo de recurso onlineMeetingInfo
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Detalhes para o participante entrar na reunião online.
 
@@ -22,12 +22,12 @@ Detalhes para o participante entrar na reunião online.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ID|String| A ID da conferência.|
-|joinUrl|String| O link externo que inicia a reunião online. Esta é uma URL que os clientes serão inicializados em um navegador e redirecionará o usuário para participar da reunião.|
+|ID|Cadeia de caracteres| A ID da conferência.|
+|joinUrl|Cadeia de caracteres| O link externo que inicia a reunião online. Esta é uma URL que os clientes serão inicializados em um navegador e redirecionará o usuário para participar da reunião.|
 |telefones|Coleção [phone](phone.md)| Todos os números de telefone associados a esta conferência.|
-|quickDial|String| O Quickdial pré-formatado para esta chamada.|
-|tollFreeNumbers|String collection| Os números de chamada gratuita que podem ser usados para ingressar na conferência.|
-|tollNumber|String| O número de chamada tarifada que pode ser usado para ingressar na conferência.|
+|quickDial|Cadeia de caracteres| O Quickdial pré-formatado para esta chamada.|
+|tollFreeNumbers|Coleção de cadeias de caracteres| Os números de chamada gratuita que podem ser usados para ingressar na conferência.|
+|tollNumber|Cadeia de caracteres| O número de chamada tarifada que pode ser usado para ingressar na conferência.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->s
+
+

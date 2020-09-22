@@ -3,14 +3,14 @@ title: tipo de enumeração androidManagedStoreAccountBindStatus
 description: Vincular o status do locatário à API do Google EMM
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1a0d8b76a57608bcf21a94df5a0eeb5b35716aa4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5cdc7c18150d8787441ca660c173e3eacb708de3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459176"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052828"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>tipo de enumeração androidManagedStoreAccountBindStatus
 
@@ -26,9 +26,12 @@ Vincular o status do locatário à API do Google EMM
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não acoplado|,0|Ainda não documentado|
-|limite|1|Ainda não documentado|
-|boundAndValidated|duas|Ainda não documentado|
-|desassociação|3D|Ainda não documentado|
+|limite|1 |Ainda não documentado|
+|boundAndValidated|2 |Ainda não documentado|
+|desassociação|3 |Ainda não documentado|
+
+
+
 
 
 

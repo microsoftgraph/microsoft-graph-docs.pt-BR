@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bfd98c1415381e4daf1e8a551dc9050df122ff49
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a51381796ba3b88391ee159a37777605a4d06d4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052422"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: Delta
 
@@ -55,7 +55,7 @@ Este método dá suporte a Parâmetros de consulta do OData para ajudar a person
 
 - Há suporte limitado para `$filter`:
 
-  - A única expressão `$filter` suportada é para controlar alterações de recursos específicos, por sua `$filter=id+eq+{value}` ID `$filter=id+eq+{value1}+or+id+eq+{value2}`: ou. O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.
+  - A única expressão suportada `$filter` é para controlar alterações de recursos específicos, por sua ID:  `$filter=id+eq+{value}` ou `$filter=id+eq+{value1}+or+id+eq+{value2}` . O número de IDs que você pode especificar é limitado pelo tamanho máximo de URL.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -70,11 +70,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto da coleção [directoryRole](../resources/directoryrole.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou `deltaLink`.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto da coleção [directoryRole](../resources/directoryrole.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`.
 
 - Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.
 
-- Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Salve `deltaLink` a URL e aplique-a na próxima chamada **Delta** para saber mais sobre as alterações no recurso no futuro.
+- Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Salve a `deltaLink` URL e aplique-a na próxima chamada **Delta** para saber mais sobre as alterações no recurso no futuro.
 
 ### <a name="example"></a>Exemplo
 
@@ -152,3 +152,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

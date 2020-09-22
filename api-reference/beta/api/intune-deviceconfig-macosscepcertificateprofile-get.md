@@ -3,14 +3,14 @@ title: Obter macOSScepCertificateProfile
 description: Leia as propriedades e as relações do objeto macOSScepCertificateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88f4a3a13249779ee59f20815496d06a272bba99
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5cff278d577971026190548e6698b0db87c44189
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432385"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054550"
 ---
 # <a name="get-macosscepcertificateprofile"></a>Obter macOSScepCertificateProfile
 
@@ -137,6 +137,9 @@ Content-Length: 2273
   }
 }
 ```
+
+
+
 
 
 

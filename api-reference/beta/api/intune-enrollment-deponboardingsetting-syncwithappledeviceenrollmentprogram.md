@@ -3,14 +3,14 @@ title: Ação syncWithAppleDeviceEnrollmentProgram
 description: Sincroniza entre o programa de registro de dispositivo Apple e o Intune
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2ab61c00c62b3ef7f4bbc00cb181e74d3cf51fe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6705d0063a220ab36d556b7084a0c94baef5606d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391980"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054179"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>Ação syncWithAppleDeviceEnrollmentProgram
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

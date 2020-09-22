@@ -3,14 +3,14 @@ title: Listar deviceManagementDomainJoinConnectors
 description: Listar Propriedades e relações dos objetos deviceManagementDomainJoinConnector.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53c8b833dba124eeab2c52c433c773b69f14a451
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ea1b7b9d2b0c2c643d598f138ee1b0044f290e61
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053955"
 ---
 # <a name="list-devicemanagementdomainjoinconnectors"></a>Listar deviceManagementDomainJoinConnectors
 
@@ -50,7 +50,7 @@ GET /deviceManagement/domainJoinConnectors
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -80,6 +80,9 @@ Content-Length: 341
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Obter deviceAppManagementTask
 description: Leia as propriedades e as relações do objeto deviceAppManagementTask.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94aa0bc98f46557ed1544a9e90461b6f8838a65e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4dadf6aa552cba209ed83cd053ab5b30d3d7bafd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445353"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053948"
 ---
 # <a name="get-deviceappmanagementtask"></a>Obter deviceAppManagementTask
 
@@ -87,6 +87,9 @@ Content-Length: 551
   }
 }
 ```
+
+
+
 
 
 

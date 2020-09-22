@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: japere
-ms.openlocfilehash: 6765f23f6d3a5cc5b31363506f63ed6949810646
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: ac6ae129374ab33e44a1f3274e8be378b90eb4e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200058"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052583"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>tipo de recurso onPremisesProvisioningError
 
@@ -24,9 +24,9 @@ Representa erros de sincronização de diretório para o [usuário](user.md), [g
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|category|String| Categoria do erro de provisionamento. Observação: no momento, há apenas um valor possível. Valor possível: *PropertyConflict* -indica que um valor de propriedade não é exclusivo. Outros objetos contêm o mesmo valor para a propriedade. |
+|category|Cadeia de caracteres| Categoria do erro de provisionamento. Observação: no momento, há apenas um valor possível. Valor possível: *PropertyConflict* -indica que um valor de propriedade não é exclusivo. Outros objetos contêm o mesmo valor para a propriedade. |
 |occurredDateTime|DateTimeOffset| A data e a hora em que o erro ocorreu. |
-|propertyCausingError|String| Nome da propriedade de diretório que está causando o erro. Valores possíveis atuais: *userPrincipalName* ou *ProxyAddress* |
+|propertyCausingError|Cadeia de caracteres| Nome da propriedade de diretório que está causando o erro. Valores possíveis atuais: *userPrincipalName* ou *ProxyAddress* |
 |value|Cadeia de caracteres| Valor da propriedade causando o erro. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -63,3 +63,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

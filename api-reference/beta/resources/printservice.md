@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: fd8641f7fe9fd361e131f0978c8f677a6395e405
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 00ba50369f2396250df632c13ed3945e8c9d40d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895500"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052535"
 ---
 # <a name="printservice-resource-type"></a>tipo de recurso de serviço de serviço
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa uma descrição específica do locatário do Azure AD de uma instância de serviço de impressão. Os serviços existem para cada componente da infraestrutura de impressão (descoberta, notificações, registro e IPP) e ter um ou mais pontos de extremidade.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -31,9 +31,9 @@ Representa uma descrição específica do locatário do Azure AD de uma instânc
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador do serviço. Somente leitura.|
+|id|Cadeia de caracteres|O identificador do serviço. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |pontos de extremidade|coleção [Barserviceendpoint](printserviceendpoint.md)| Pontos de extremidade que podem ser usados para acessar o serviço. Somente leitura. Anulável.|
@@ -69,3 +69,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: função getManagementConditionStatementsForPlatform
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92a557fd31f68a41e6c5757059b1cae362fac164
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c45382e5d2f7155be45c07c3846cd15fdec9b56f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178070"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054109"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>função getManagementConditionStatementsForPlatform
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,12 +53,12 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Ainda não documentado|
+|plataforma|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -96,6 +96,9 @@ Content-Length: 615
   ]
 }
 ```
+
+
+
 
 
 

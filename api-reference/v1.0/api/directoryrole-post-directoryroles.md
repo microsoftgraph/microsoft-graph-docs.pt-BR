@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2a24db94a3b2344679e63a832000122ee83393a9
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: f48fb24b5f7c4889faf3ebba0b5147a8de14b877
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052387"
 ---
 # <a name="activate-directoryrole"></a>Ativar directoryRole
 
@@ -46,7 +46,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao ativar uma fun
 
 |Parâmetro | Tipo | Descrição|
 |:---------|:---------|:---------|
-|roleTemplateId | cadeia de caracteres | Obrigatório. A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função se baseia. Esta é a única propriedade que pode ser especificada na solicitação.|
+|roleTemplateId | string | Obrigatório. A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função se baseia. Esta é a única propriedade que pode ser especificada na solicitação.|
 
 ## <a name="response"></a>Resposta
 
@@ -118,3 +118,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

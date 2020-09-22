@@ -3,14 +3,14 @@ title: Tipo de recurso androidForWorkSettings
 description: Configurações para o Android for Work.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50153f0db801764aa22872468b87f5c7eaf1cbaf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef0452ea29b6966f24778662a429bb1534c8068f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459197"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052849"
 ---
 # <a name="androidforworksettings-resource-type"></a>Tipo de recurso androidForWorkSettings
 
@@ -27,15 +27,15 @@ Configurações para o Android for Work.
 |:---|:---|:---|
 |[Obter androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-get.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Ler propriedades e relações de objetos de [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).|
 |[Atualizar androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-update.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Atualizar as propriedades de um objeto de [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).|
-|[Ação requestSignupUrl](../api/intune-androidforwork-androidforworksettings-requestsignupurl.md)|String|Ainda não documentado|
-|[Ação completeSignup](../api/intune-androidforwork-androidforworksettings-completesignup.md)|Nenhuma|Ainda não documentado|
-|[Ação syncApps](../api/intune-androidforwork-androidforworksettings-syncapps.md)|Nenhuma|Ainda não documentado|
+|[Ação requestSignupUrl](../api/intune-androidforwork-androidforworksettings-requestsignupurl.md)|Cadeia de caracteres|Ainda não documentado|
+|[Ação completeSignup](../api/intune-androidforwork-androidforworksettings-completesignup.md)|Nenhum|Ainda não documentado|
+|[Ação syncApps](../api/intune-androidforwork-androidforworksettings-syncapps.md)|Nenhum|Ainda não documentado|
 |[Ação de desvincular](../api/intune-androidforwork-androidforworksettings-unbind.md)|Nenhum|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador de configurações do Android for Work|
+|id|Cadeia de caracteres|O identificador de configurações do Android for Work|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Vincule o status do locatário à API do Google EMM. Os valores possíveis são: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Hora da conclusão da última sincronização do aplicativo|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|Resultado da última sincronização do aplicativo. Os possíveis valores são: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
@@ -74,6 +74,9 @@ Veja a seguir uma representação JSON do recurso.
   "deviceOwnerManagementEnabled": true
 }
 ```
+
+
+
 
 
 

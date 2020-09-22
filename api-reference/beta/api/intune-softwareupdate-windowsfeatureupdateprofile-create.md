@@ -3,14 +3,14 @@ title: Criar windowsFeatureUpdateProfile
 description: Criar um novo objeto windowsFeatureUpdateProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2f5b68a0cb3f2773b2ea6ab933cbf341515811e
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 68382c5b5dfdf38cb57f926b3aed7623e6180cb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053696"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Criar windowsFeatureUpdateProfile
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsF
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador da entidade.|
+|id|Cadeia de caracteres|O identificador da entidade.|
 |displayName|Cadeia de caracteres|O nome de exibição do perfil.|
-|descrição|String|A descrição do perfil especificado pelo usuário.|
+|description|String|A descrição do perfil especificado pelo usuário.|
 |featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data e hora em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora em que o perfil foi modificado pela última vez.|
@@ -106,6 +106,9 @@ Content-Length: 441
   ]
 }
 ```
+
+
+
 
 
 
