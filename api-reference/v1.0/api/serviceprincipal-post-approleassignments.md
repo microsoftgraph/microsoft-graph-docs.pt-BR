@@ -1,43 +1,43 @@
 ---
 title: Conceder um appRoleAssignment a uma entidade de serviço
-description: Conceda uma atribuição de função de aplicativo a uma entidade de serviço.
+description: Conceder uma atribuição de função de aplicativo a uma entidade de serviço.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 247c017629bf8e184a5a2849dcc9e27210bcd96b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: b984f3e6e6d263e3d2f4fc25caf288f4e0565477
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48045514"
 ---
-# <a name="grant-an-approleassignment-to-a-service-principal"></a><span data-ttu-id="6e45d-103">Conceder um appRoleAssignment a uma entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="6e45d-103">Grant an appRoleAssignment to a service principal</span></span>
+# <a name="grant-an-approleassignment-to-a-service-principal"></a><span data-ttu-id="bd1eb-103">Conceder um appRoleAssignment a uma entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="bd1eb-103">Grant an appRoleAssignment to a service principal</span></span>
 
-<span data-ttu-id="6e45d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6e45d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="bd1eb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bd1eb-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="6e45d-105">Atribuir uma função de aplicativo a uma entidade de serviço de cliente.</span><span class="sxs-lookup"><span data-stu-id="6e45d-105">Assign an app role to a client service principal.</span></span>
+<span data-ttu-id="bd1eb-105">Atribuir uma função de aplicativo a uma entidade de serviço do cliente.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-105">Assign an app role to a client service principal.</span></span>
 
-<span data-ttu-id="6e45d-106">As funções de aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span><span class="sxs-lookup"><span data-stu-id="6e45d-106">App roles that are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span></span> <span data-ttu-id="6e45d-107">As permissões de aplicativo podem ser concedidas diretamente com as atribuições de função de aplicativo ou por meio de uma [experiência de consentimento](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).</span><span class="sxs-lookup"><span data-stu-id="6e45d-107">Application permissions can be granted directly with app role assignments, or through a [consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).</span></span>
+<span data-ttu-id="bd1eb-106">As funções do aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span><span class="sxs-lookup"><span data-stu-id="bd1eb-106">App roles that are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).</span></span> <span data-ttu-id="bd1eb-107">As permissões de aplicativo podem ser concedidas diretamente com atribuições de função de aplicativo ou por meio de uma [experiência de consentimento](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).</span><span class="sxs-lookup"><span data-stu-id="bd1eb-107">Application permissions can be granted directly with app role assignments, or through a [consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).</span></span>
 
-<span data-ttu-id="6e45d-108">Para conceder a uma atribuição de função de aplicativo a uma entidade de serviço de cliente, você precisa de três identificadores:</span><span class="sxs-lookup"><span data-stu-id="6e45d-108">To grant an app role assignment to a client service principal, you need three identifiers:</span></span>
+<span data-ttu-id="bd1eb-108">Para conceder uma atribuição de função de aplicativo a uma entidade de serviço do cliente, você precisa de três identificadores:</span><span class="sxs-lookup"><span data-stu-id="bd1eb-108">To grant an app role assignment to a client service principal, you need three identifiers:</span></span>
 
-- <span data-ttu-id="6e45d-109">`principalId`: O `id` da entidade de serviço do cliente para a qual você está atribuindo a função de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="6e45d-109">`principalId`: The `id` of the client service principal to which you are assigning the app role.</span></span>
-- <span data-ttu-id="6e45d-110">`resourceId`: O `id` do recurso `servicePrincipal` (a API) que definiu a função de aplicativo (a permissão de aplicativo).</span><span class="sxs-lookup"><span data-stu-id="6e45d-110">`resourceId`: The `id` of the resource `servicePrincipal` (the API) which has defined the app role (the application permission).</span></span>
-- <span data-ttu-id="6e45d-111">`appRoleId`: O `id` `appRole` (definido na entidade de segurança do serviço de recurso) a ser atribuído à entidade de serviço do cliente.</span><span class="sxs-lookup"><span data-stu-id="6e45d-111">`appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the client service principal.</span></span>
+- <span data-ttu-id="bd1eb-109">`principalId`: A `id` da entidade de serviço do cliente ao qual você está atribuindo a função de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-109">`principalId`: The `id` of the client service principal to which you are assigning the app role.</span></span>
+- <span data-ttu-id="bd1eb-110">`resourceId`: A `id` do recurso `servicePrincipal` (a API) que definiu a função do aplicativo (a permissão do aplicativo).</span><span class="sxs-lookup"><span data-stu-id="bd1eb-110">`resourceId`: The `id` of the resource `servicePrincipal` (the API) which has defined the app role (the application permission).</span></span>
+- <span data-ttu-id="bd1eb-111">`appRoleId`: A `id` do `appRole` (definido na entidade de serviço do recurso) para atribuir à entidade de serviço do cliente.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-111">`appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the client service principal.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6e45d-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="6e45d-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bd1eb-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="bd1eb-112">Permissions</span></span>
 
-<span data-ttu-id="6e45d-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6e45d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bd1eb-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bd1eb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6e45d-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6e45d-115">Permission type</span></span>      | <span data-ttu-id="6e45d-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6e45d-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bd1eb-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bd1eb-115">Permission type</span></span>      | <span data-ttu-id="bd1eb-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bd1eb-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6e45d-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6e45d-117">Delegated (work or school account)</span></span> | <span data-ttu-id="6e45d-118">AppRoleAssignment. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="6e45d-118">AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="6e45d-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6e45d-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6e45d-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6e45d-120">Not supported.</span></span>    |
-|<span data-ttu-id="6e45d-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6e45d-121">Application</span></span> | <span data-ttu-id="6e45d-122">AppRoleAssignment. ReadWrite. All,</span><span class="sxs-lookup"><span data-stu-id="6e45d-122">AppRoleAssignment.ReadWrite.All,</span></span> |
+|<span data-ttu-id="bd1eb-117">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bd1eb-117">Delegated (work or school account)</span></span> | <span data-ttu-id="bd1eb-118">AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="bd1eb-118">AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="bd1eb-119">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bd1eb-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bd1eb-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-120">Not supported.</span></span>    |
+|<span data-ttu-id="bd1eb-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bd1eb-121">Application</span></span> | <span data-ttu-id="bd1eb-122">AppRoleAssignment.ReadWrite.All,</span><span class="sxs-lookup"><span data-stu-id="bd1eb-122">AppRoleAssignment.ReadWrite.All,</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6e45d-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6e45d-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bd1eb-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bd1eb-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -45,31 +45,31 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> <span data-ttu-id="6e45d-124">Como prática recomendada, recomendamos a criação de atribuições de função de aplicativo através da [ `appRoleAssignedTo` relação da entidade de serviço de _recurso_ ](serviceprincipal-post-approleassignedto.md), em vez da `appRoleAssignments` relação do usuário, grupo ou entidade de serviço atribuída.</span><span class="sxs-lookup"><span data-stu-id="6e45d-124">As a best practice, we recommend creating app role assignments through the [`appRoleAssignedTo` relationship of the _resource_ service principal](serviceprincipal-post-approleassignedto.md), instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.</span></span>
+> <span data-ttu-id="bd1eb-124">Como prática recomendada, recomendamos que você crie atribuições de função de aplicativo por meio da [`appRoleAssignedTo`relação do _recurso_ da entidade de serviço](serviceprincipal-post-approleassignedto.md), em vez da `appRoleAssignments`relação do usuário, grupo ou entidade de serviço atribuída.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-124">As a best practice, we recommend creating app role assignments through the [`appRoleAssignedTo` relationship of the _resource_ service principal](serviceprincipal-post-approleassignedto.md), instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6e45d-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6e45d-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="bd1eb-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bd1eb-125">Request headers</span></span>
 
-| <span data-ttu-id="6e45d-126">Nome</span><span class="sxs-lookup"><span data-stu-id="6e45d-126">Name</span></span>       | <span data-ttu-id="6e45d-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="6e45d-127">Description</span></span>|
+| <span data-ttu-id="bd1eb-126">Nome</span><span class="sxs-lookup"><span data-stu-id="bd1eb-126">Name</span></span>       | <span data-ttu-id="bd1eb-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="bd1eb-127">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="6e45d-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="6e45d-128">Authorization</span></span> | <span data-ttu-id="6e45d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6e45d-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="6e45d-131">Content-type</span><span class="sxs-lookup"><span data-stu-id="6e45d-131">Content-type</span></span> | <span data-ttu-id="6e45d-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6e45d-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="bd1eb-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="bd1eb-128">Authorization</span></span> | <span data-ttu-id="bd1eb-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="bd1eb-131">Content-type</span><span class="sxs-lookup"><span data-stu-id="bd1eb-131">Content-type</span></span> | <span data-ttu-id="bd1eb-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6e45d-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6e45d-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="bd1eb-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bd1eb-134">Request body</span></span>
 
-<span data-ttu-id="6e45d-135">No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="6e45d-135">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
+<span data-ttu-id="bd1eb-135">No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="bd1eb-135">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6e45d-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="6e45d-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bd1eb-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="bd1eb-136">Response</span></span>
 
-<span data-ttu-id="6e45d-137">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6e45d-137">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="bd1eb-137">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-137">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="6e45d-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6e45d-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="bd1eb-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="bd1eb-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="6e45d-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6e45d-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="bd1eb-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bd1eb-139">Request</span></span>
 
-<span data-ttu-id="6e45d-140">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6e45d-140">Here is an example of the request.</span></span>
+<span data-ttu-id="bd1eb-140">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-140">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="6e45d-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="6e45d-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="bd1eb-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="bd1eb-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_create_approleassignment"
@@ -86,32 +86,32 @@ Content-Length: 110
   "appRoleId": "appRoleId-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="6e45d-142">C#</span><span class="sxs-lookup"><span data-stu-id="6e45d-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="bd1eb-142">C#</span><span class="sxs-lookup"><span data-stu-id="bd1eb-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6e45d-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6e45d-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bd1eb-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bd1eb-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6e45d-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6e45d-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="bd1eb-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bd1eb-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="6e45d-145">Java</span><span class="sxs-lookup"><span data-stu-id="6e45d-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="bd1eb-145">Java</span><span class="sxs-lookup"><span data-stu-id="bd1eb-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="6e45d-146">Neste exemplo, `{id}` e `{principalId-value}` seria o `id` da entidade de serviço de cliente atribuída, e `{resoruceId}` seria o `id` da entidade de serviço de recurso (a API).</span><span class="sxs-lookup"><span data-stu-id="6e45d-146">In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resoruceId}` would be the `id` of the resource service principal (the API).</span></span>
+<span data-ttu-id="bd1eb-146">Nesse exemplo, `{id}` e `{principalId-value}` seriam os `id` da entidade de serviço de cliente atribuída e `{resoruceId}` seria o `id` da entidade de serviço de recurso (a API).</span><span class="sxs-lookup"><span data-stu-id="bd1eb-146">In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resoruceId}` would be the `id` of the resource service principal (the API).</span></span>
 
-### <a name="response"></a><span data-ttu-id="6e45d-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="6e45d-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="bd1eb-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="bd1eb-147">Response</span></span>
 
-<span data-ttu-id="6e45d-148">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6e45d-148">Here is an example of the response.</span></span> 
+<span data-ttu-id="bd1eb-148">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-148">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="6e45d-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6e45d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="bd1eb-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="bd1eb-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -148,3 +148,4 @@ Content-length: 253
   ]
 }
 -->
+
