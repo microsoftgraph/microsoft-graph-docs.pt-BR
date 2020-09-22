@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: d4ac0695357aba0ba6c44fef4654d2edaefca6cb
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 45a69cbad25d2f9c3c99c9e01aa47982fe5c62b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048761"
 ---
 # <a name="printidentity-resource-type"></a>tipo de recurso de multiidentity
 
@@ -23,7 +23,7 @@ Representa uma identidade no serviço de impressão universal. Mapeia para um [g
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador da multiidentity. Somente leitura.|
+|id|Cadeia de caracteres|O identificador da multiidentity. Somente leitura.|
 |displayName|Cadeia de caracteres|O nome de exibição do multiidentity.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -57,3 +57,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

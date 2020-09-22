@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 77a00aef382142046c44465a88909b90f966aa7e
-ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
+ms.openlocfilehash: 970ac3dd06e5af1478600166ffdd4c84815aa5b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148582"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048719"
 ---
 # <a name="printoperation-resource-type"></a>tipo de recurso de multioperação
 
@@ -24,7 +24,7 @@ Representa uma operação de impressão universal de execução longa. Classe ba
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Operação get](../api/printoperation-get.md) | [Operação de reoperação](printoperation.md) | Recupere uma operação de execução longa dentro do usuário atual ou do locatário do aplicativo. |
+| [Operação get](../api/printoperation-get.md) | [printOperation](printoperation.md) | Recupere uma operação de execução longa dentro do usuário atual ou do locatário do aplicativo. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
@@ -64,3 +64,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

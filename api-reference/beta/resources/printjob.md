@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 0d46263e5f393362cec155a9be3e2e5a54c3dfec
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 2c0a1bdb4ec3ebe3c87b5b40595d30cf9108c5bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048733"
 ---
 # <a name="printjob-resource-type"></a>tipo de recurso printJob
 
@@ -33,7 +33,7 @@ Representa um trabalho de impressão que foi enfileirado para uma impressora.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O GUID da impressora. Somente leitura.|
+|id|Cadeia de caracteres|O GUID da impressora. Somente leitura.|
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando o trabalho foi criado. Somente leitura.|
 |status|[printJobStatus](printjobstatus.md)|O status do trabalho de impressão. Somente leitura.|
 
@@ -78,3 +78,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

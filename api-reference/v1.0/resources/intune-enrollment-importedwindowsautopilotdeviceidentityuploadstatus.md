@@ -3,14 +3,14 @@ title: tipo de enumeração importedWindowsAutopilotDeviceIdentityUploadStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a853c26f8089de7867ba83027daabe36c0ff43ab
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7f680c8adbb39eb8707635187ec2aa9b92a51a4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048425"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>tipo de enumeração importedWindowsAutopilotDeviceIdentityUploadStatus
 
@@ -24,9 +24,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noupload|,0|Nenhum status de carregamento.|
-|função|1|Status pendente.|
-|complete|duas|Status completo.|
-|erro|3D|Status do erro.|
+|função|1 |Status pendente.|
+|complete|2 |Status completo.|
+|erro|3 |Status do erro.|
+
+
 
 
 
