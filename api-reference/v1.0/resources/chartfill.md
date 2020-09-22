@@ -5,35 +5,35 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 81e6b0f25161e579079a6d73fedefb6bdeb594d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2691fc98db31d01422346bf20e10fbb876b5a1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988384"
 ---
-# <a name="chartfill-resource-type"></a><span data-ttu-id="c8335-103">Tipo de recurso ChartFill</span><span class="sxs-lookup"><span data-stu-id="c8335-103">ChartFill resource type</span></span>
+# <a name="chartfill-resource-type"></a><span data-ttu-id="4d21c-103">Tipo de recurso ChartFill</span><span class="sxs-lookup"><span data-stu-id="4d21c-103">ChartFill resource type</span></span>
 
-<span data-ttu-id="c8335-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c8335-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4d21c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4d21c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c8335-105">Representa a formatação de preenchimento de um elemento do gráfico.</span><span class="sxs-lookup"><span data-stu-id="c8335-105">Represents the fill formatting for a chart element.</span></span>
+<span data-ttu-id="4d21c-105">Representa a formatação de preenchimento de um elemento do gráfico.</span><span class="sxs-lookup"><span data-stu-id="4d21c-105">Represents the fill formatting for a chart element.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="c8335-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="c8335-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="4d21c-106">Methods</span><span class="sxs-lookup"><span data-stu-id="4d21c-106">Methods</span></span>
 
-| <span data-ttu-id="c8335-107">Método</span><span class="sxs-lookup"><span data-stu-id="c8335-107">Method</span></span>           | <span data-ttu-id="c8335-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="c8335-108">Return Type</span></span>    |<span data-ttu-id="c8335-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="c8335-109">Description</span></span>|
+| <span data-ttu-id="4d21c-107">Método</span><span class="sxs-lookup"><span data-stu-id="4d21c-107">Method</span></span>           | <span data-ttu-id="4d21c-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="4d21c-108">Return Type</span></span>    |<span data-ttu-id="4d21c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="4d21c-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="c8335-110">Clear</span><span class="sxs-lookup"><span data-stu-id="c8335-110">Clear</span></span>](../api/chartfill-clear.md)|<span data-ttu-id="c8335-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c8335-111">None</span></span>|<span data-ttu-id="c8335-112">Limpe a cor de preenchimento de um elemento do gráfico.</span><span class="sxs-lookup"><span data-stu-id="c8335-112">Clear the fill color of a chart element.</span></span>|
-|[<span data-ttu-id="c8335-113">Setsolidcolor</span><span class="sxs-lookup"><span data-stu-id="c8335-113">Setsolidcolor</span></span>](../api/chartfill-setsolidcolor.md)|<span data-ttu-id="c8335-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c8335-114">None</span></span>|<span data-ttu-id="c8335-115">Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.</span><span class="sxs-lookup"><span data-stu-id="c8335-115">Sets the fill formatting of a chart element to a uniform color.</span></span>|
+|[<span data-ttu-id="4d21c-110">Clear</span><span class="sxs-lookup"><span data-stu-id="4d21c-110">Clear</span></span>](../api/chartfill-clear.md)|<span data-ttu-id="4d21c-111">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4d21c-111">None</span></span>|<span data-ttu-id="4d21c-112">Limpe a cor de preenchimento de um elemento do gráfico.</span><span class="sxs-lookup"><span data-stu-id="4d21c-112">Clear the fill color of a chart element.</span></span>|
+|[<span data-ttu-id="4d21c-113">Setsolidcolor</span><span class="sxs-lookup"><span data-stu-id="4d21c-113">Setsolidcolor</span></span>](../api/chartfill-setsolidcolor.md)|<span data-ttu-id="4d21c-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4d21c-114">None</span></span>|<span data-ttu-id="4d21c-115">Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.</span><span class="sxs-lookup"><span data-stu-id="4d21c-115">Sets the fill formatting of a chart element to a uniform color.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="c8335-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c8335-116">Properties</span></span>
-<span data-ttu-id="c8335-117">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="c8335-117">None</span></span>
+## <a name="properties"></a><span data-ttu-id="4d21c-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4d21c-116">Properties</span></span>
+<span data-ttu-id="4d21c-117">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="4d21c-117">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="c8335-118">Relações</span><span class="sxs-lookup"><span data-stu-id="c8335-118">Relationships</span></span>
-<span data-ttu-id="c8335-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c8335-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="4d21c-118">Relações</span><span class="sxs-lookup"><span data-stu-id="4d21c-118">Relationships</span></span>
+<span data-ttu-id="4d21c-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4d21c-119">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="c8335-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c8335-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4d21c-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4d21c-120">JSON representation</span></span>
 
 <!--{
   "blockType": "resource",
@@ -57,3 +57,4 @@ ms.locfileid: "42531860"
   "section": "documentation",
   "tocPath": ""
 }-->
+
