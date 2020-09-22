@@ -3,14 +3,14 @@ title: Criar deviceManagementExchangeConnector
 description: Crie um novo objeto deviceManagementExchangeConnector.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9613ae194e747657b45baea1e809468feab01b60
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a06f24bd72100a7ad6f6bfc352d65b2d5ba39a12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450337"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082396"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Criar deviceManagementExchangeConnector
 
@@ -53,15 +53,15 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceManagement
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Status do Exchange Connector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|String|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
-|serverName|String|O nome do servidor Exchange.|
-|connectorServerName|String|O nome do servidor que hospeda o Exchange Connector.|
+|primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
+|serverName|Cadeia de caracteres|O nome do servidor Exchange.|
+|connectorServerName|Cadeia de caracteres|O nome do servidor que hospeda o Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|versão|String|A versão do ExchangeConnectorAgent|
-|exchangeAlias|String|Um alias atribuído a um servidor Exchange|
+|versão|Cadeia de caracteres|A versão do ExchangeConnectorAgent|
+|exchangeAlias|Cadeia de caracteres|Um alias atribuído a um servidor Exchange|
 |exchangeOrganization|Cadeia de caracteres|Organização do Exchange no servidor Exchange|
 
 
@@ -113,6 +113,9 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
+
+
 
 
 

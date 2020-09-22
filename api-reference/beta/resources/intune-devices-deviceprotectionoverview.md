@@ -3,14 +3,14 @@ title: tipo de recurso deviceProtectionOverview
 description: Informações de hardware de um determinado dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f6d4c325d11ee5f02277ad86f7bb038a2ac3b0f
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: dfdfff4de506f2b15bab8bb3e86199ec8bc83d1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123719"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081416"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>tipo de recurso deviceProtectionOverview
 
@@ -63,6 +63,9 @@ Veja a seguir uma representação JSON do recurso.
   "pendingQuickScanDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

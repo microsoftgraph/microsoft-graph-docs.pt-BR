@@ -3,14 +3,14 @@ title: Listar editionUpgradeConfigurations
 description: Listar propriedades e relações dos objetos editionUpgradeConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 647030da08f591646fa0abb321634b24f9b8eca8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d20ea8371408bfefd8be1068cae720da3e69d4f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433073"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082837"
 ---
 # <a name="list-editionupgradeconfigurations"></a>Listar editionUpgradeConfigurations
 
@@ -112,6 +112,9 @@ Content-Length: 1557
   ]
 }
 ```
+
+
+
 
 
 

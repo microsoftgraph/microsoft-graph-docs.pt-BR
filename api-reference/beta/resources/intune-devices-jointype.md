@@ -3,14 +3,14 @@ title: tipo de enumeração JoinType
 description: Tipo de associação de registro de dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e6961b2f71f7abbe273f77cc3d2a786635aadb3f
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 645aeebc12f4a684db3bc784a554d1ab95a72594
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081339"
 ---
 # <a name="jointype-enum-type"></a>tipo de enumeração JoinType
 
@@ -26,9 +26,12 @@ Tipo de associação de registro de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Tipo de associação de registro desconhecido.|
-|azureADJoined|1|O dispositivo é Unido pelo Azure AD.|
-|azureADRegistered|duas|O dispositivo é registrado pelo Azure AD.|
+|azureADJoined|1 |O dispositivo é Unido pelo Azure AD.|
+|azureADRegistered|2 |O dispositivo é registrado pelo Azure AD.|
 |hybridAzureADJoined|3D|O dispositivo é Unido pelo Azure AD híbrido.|
+
+
+
 
 
 

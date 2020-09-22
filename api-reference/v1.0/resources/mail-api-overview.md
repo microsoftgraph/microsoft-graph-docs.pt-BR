@@ -5,17 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: bac0c516328d308612eb0eefa26b83b946dac4fc
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 5cfe3789fc760fa049c4a1c90c0e3498b1ee44f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353438"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083082"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 
-Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
-With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of the signed-in user or any user in a tenant. 
+O Microsoft Graph permite que o seu aplicativo obtenha acesso autorizado aos dados de email do Outlook do usuário em uma conta pessoal ou da organização. Com as [permissões de aplicativo e delegadas apropriadas](/graph/permissions-reference), seu aplicativo pode acessar os dados de email do usuário conectado ou qualquer usuário em um locatário. 
 
 [!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
@@ -23,8 +22,7 @@ With the [appropriate delegated or application permissions](/graph/permissions-r
 
 As solicitações de API de email são realizadas em nome de um [usuário](../resources/user.md) que pode ser identificado pela propriedade **id** do usuário (um GUID exclusivo), endereço de email ou alias do atalho do `me` para o usuário conectado.
 
-Email messages are represented by the [message](../resources/message.md) resource and organized in a [mailFolder](../resources/mailfolder.md).
-Messages and mail folders are identified by their **id** property, obtainable from `GET` operations.
+As mensagens de email são representadas pelo recurso [message](../resources/message.md) e organizado em uma [mailFolder](../resources/mailfolder.md). As mensagens e as pastas principais são identificadas por sua propriedade **id**, obtida das operações de `GET`.
 
 >[!IMPORTANT] 
 > Em geral, não assuma que os IDs das **mensagens** e das **pastas de correio** são exclusivos e sempre permanecem os mesmos em uma caixa de correio. Eles podem mudar após determinadas ações, como copiar ou mover. Você pode optar por usar as [IDs imutáveis](/graph/outlook-immutable-id) para manter a mesma ID, desde que a mensagem permaneça na mesma caixa de correio, _com exceção de envio de uma mensagem de rascunho e alguns outros cenários_. Confira [tempo de vida das IDs imutáveis](/graph/outlook-immutable-id#lifetime-of-immutable-ids) para obter detalhes.
@@ -81,4 +79,5 @@ A API de email pode permitir novas formas de envolvimento com os usuários:
 - Analise em detalhes os [métodos](../resources/message.md#methods), [propriedades](../resources/message.md#properties) e [relações](../resources/message.md#relationships) dos recursos de [message](../resources/message.md) e [mailFolder](../resources/mailfolder.md).
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+

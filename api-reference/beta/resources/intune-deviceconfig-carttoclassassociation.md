@@ -3,14 +3,14 @@ title: tipo de recurso cartToClassAssociation
 description: CartToClassAssociation para associação de carrinhos de dispositivos com salas de aula.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a5fb237b94f746dc37aa7bfe63aa8d0925f1de8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5aaced5f6c5959b4113ae5d6ff3cbbfecb0a1ba1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453637"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081619"
 ---
 # <a name="carttoclassassociation-resource-type"></a>tipo de recurso cartToClassAssociation
 
@@ -34,12 +34,12 @@ CartToClassAssociation para associação de carrinhos de dispositivos com salas 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |versão|Int32|Versão do CartToClassAssociation.|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
-|description|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador do CartToClassAssociation.|
 |deviceCartIds|Coleção String|Identificadores de carrinhos de dispositivos a serem associados às classes.|
 |classroomIds|Coleção String|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
 
@@ -71,6 +71,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

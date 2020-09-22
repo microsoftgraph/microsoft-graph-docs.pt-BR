@@ -3,14 +3,14 @@ title: Criar userExperienceAnalyticsDeviceStartupProcess
 description: Criar um novo objeto userExperienceAnalyticsDeviceStartupProcess.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: acc938625a34c05f1f18a5434c5c682791421a50
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b7c9e1eca9c70e65b1844071d22650a8de33c28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43379503"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082564"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocess"></a>Criar userExperienceAnalyticsDeviceStartupProcess
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.|
-|managedDeviceId|String|A ID do dispositivo de análise da experiência do usuário.|
-|Process|String|Nome do processo de inicialização do dispositivo de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.|
+|managedDeviceId|Cadeia de caracteres|A ID do dispositivo de análise da experiência do usuário.|
+|Process|Cadeia de caracteres|Nome do processo de inicialização do dispositivo de análise da experiência do usuário.|
 |productName|Cadeia de caracteres|O nome do produto do processo de inicialização do dispositivo analítico da experiência do usuário.|
 |publicador|String|O fornecedor da experiência do usuário do processo de inicialização do dispositivo de análise.|
 |startupImpactInMs|Int32|Impacto do processo de inicialização do dispositivo de análise de experiência do usuário em milissegundos.|
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,6 +101,9 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
+
+
+
 
 
 

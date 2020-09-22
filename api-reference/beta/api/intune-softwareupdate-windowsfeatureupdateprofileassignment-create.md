@@ -3,14 +3,14 @@ title: Criar windowsFeatureUpdateProfileAssignment
 description: Criar um novo objeto windowsFeatureUpdateProfileAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 978a0e7b9c1c0b167bcf08c63d32fad8dc24b57c
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: dc08579bd23a73d6786555943dd2167284b19427
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082319"
 ---
 # <a name="create-windowsfeatureupdateprofileassignment"></a>Criar windowsFeatureUpdateProfileAssignment
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsF
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador da entidade|
+|id|Cadeia de caracteres|O identificador da entidade|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição ao qual o perfil de atualização de recursos está atribuído.|
 
 
@@ -97,6 +97,9 @@ Content-Length: 393
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar deviceComplianceScheduledActionForRule
 description: Criar um novo objeto deviceComplianceScheduledActionForRule.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14ecd6ad49c2a51287fcf0b6de8cc75853ab4847
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 145ecb6fcad6313dd221df16cc63f501e762669f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43399728"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083369"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Criar deviceComplianceScheduledActionForRule
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |ruleName|Cadeia de caracteres|Nome da regra à qual essa ação agendada se aplica.|
 
 
@@ -87,6 +87,9 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
+
+
 
 
 

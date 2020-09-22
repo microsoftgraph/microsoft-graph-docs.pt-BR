@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0c6f6d53cddacc5e54031aaa9830f15b1573814d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5eb75bab0b5b5e9c5e6e68b29c373b8b07fdba74
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454639"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081825"
 ---
 # <a name="update-rangeborder"></a>Atualizar rangeborder
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -122,3 +122,5 @@ Content-length: 136
   ]
 }
 -->
+
+

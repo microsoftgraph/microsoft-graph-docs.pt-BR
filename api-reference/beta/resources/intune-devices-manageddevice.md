@@ -3,14 +3,14 @@ title: Tipo de recurso managedDevice
 description: Dispositivos gerenciados ou pré-registrados pelo Intune
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9535ad84fcd2a868ed0fcfe314b63949fe1ddd2
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 67073081e0c6f2e2f9fa9525100192cb413a688f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792545"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081262"
 ---
 # <a name="manageddevice-resource-type"></a>Tipo de recurso managedDevice
 
@@ -60,7 +60,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do dispositivo. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|Identificador exclusivo do dispositivo. Essa propriedade é somente leitura.|
 |userId|Cadeia de caracteres|Identificador exclusivo do usuário associado ao dispositivo. Essa propriedade é somente leitura.|
 |deviceName|String|Nome do dispositivo. Essa propriedade é somente leitura.|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Os detalhes do hardward para o dispositivo.  Inclui informações como espaço de armazenamento, fabricante, número de série, etc. Essa propriedade é somente leitura.|
@@ -97,7 +97,7 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |remoteAssistanceSessionUrl|String|A URL que permite que uma sessão de assistência remota seja estabelecida com o dispositivo. Essa propriedade é somente leitura.|
 |remoteAssistanceSessionErrorDetails|String|Uma cadeia de caracteres de erro que identifica problemas durante a criação de objetos de sessão de Assistência remota. Essa propriedade é somente leitura.|
 |isEncrypted|Boolean|Status de criptografia de dispositivo. Essa propriedade é somente leitura.|
-|userPrincipalName|String|Nome principal de usuário de dispositivo. Essa propriedade é somente leitura.|
+|userPrincipalName|Cadeia de caracteres|Nome principal de usuário de dispositivo. Essa propriedade é somente leitura.|
 |modelo|String|Modelo do dispositivo. Essa propriedade é somente leitura.|
 |fabricante|String|O fabricante do dispositivo. Essa propriedade é somente leitura.|
 |imei|String|IMEI. Essa propriedade é somente leitura.|
@@ -118,23 +118,25 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |retireAfterDateTime|DateTimeOffset|Indica o horário após o momento em que um dispositivo será desativado automaticamente devido à ação agendada. Essa propriedade é somente leitura.|
 |usersLoggedOn|coleção [loggedOnUser](../resources/intune-devices-loggedonuser.md)|Indica o último usuário conectado de um dispositivo. Essa propriedade é somente leitura.|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reporta o DateTime que a configuração preferMdmOverGroupPolicy foi definida.  Quando definido, as configurações do MDM do Intune substituirão as configurações da política de grupo, se houver um conflito. Somente leitura. Essa propriedade é somente leitura.|
-|autopilotEnrolled|Booliano|Relata se o dispositivo gerenciado está inscrito via piloto automático. Essa propriedade é somente leitura.|
-|requireUserEnrollmentApproval|Booliano|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura.|
+|autopilotEnrolled|Boolean|Relata se o dispositivo gerenciado está inscrito via piloto automático. Essa propriedade é somente leitura.|
+|requireUserEnrollmentApproval|Boolean|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura.|
 |managementCertificateExpirationDate|DateTimeOffset|Relata a data de validade do certificado de gerenciamento de dispositivos. Essa propriedade é somente leitura.|
-|iccid|String|Identificador de cartão de circuito integrado, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura.|
-|udid|String|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura.|
-|roleScopeTagIds|Coleção de cadeia de caracteres|Lista de IDs de marca de escopo para esta instância de dispositivo.|
+|iccid|Cadeia de caracteres|Identificador de cartão de circuito integrado, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura.|
+|udid|Cadeia de caracteres|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura.|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de dispositivo.|
 |windowsActiveMalwareCount|Int32|Contagem de malware ativo para este dispositivo Windows. Essa propriedade é somente leitura.|
 |windowsRemediatedMalwareCount|Int32|Contagem de malware corrigido para este dispositivo Windows. Essa propriedade é somente leitura.|
 |notes|String|Observações sobre o dispositivo criado pelo administrador de ti|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Estado de integridade do cliente do Configuration Manager, válido somente para dispositivos gerenciados pelo agente MDM/ConfigMgr|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Informações do cliente do Configuration Manager, válidas apenas para dispositivos gerenciados, Duel ou tri gerenciados pelo agente do ConfigMgr|
-|ethernetMacAddress|String|MAC Ethernet. Essa propriedade é somente leitura.|
+|ethernetMacAddress|Cadeia de caracteres|MAC Ethernet. Essa propriedade é somente leitura.|
 |physicalMemoryInBytes|Int64|Memória total em bytes. Essa propriedade é somente leitura.|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Arquitetura do processador. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
-|specificationVersion|String|Versão de especificação. Essa propriedade é somente leitura.|
+|specificationVersion|Cadeia de caracteres|Versão de especificação. Essa propriedade é somente leitura.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Tipo de ingresso de dispositivo. Os valores possíveis são: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
-|skuFamily|String|Família de SKU do dispositivo|
+|skuFamily|Cadeia de caracteres|Família de SKU do dispositivo|
+|skuNumber|Int32|Número de SKU do dispositivo, Confira também: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo . Valores válidos de 0 a 2147483647. Essa propriedade é somente leitura.|
+|managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Recursos de gerenciamento de dispositivos. Os valores possíveis são: `none`, `microsoftManagedDesktop`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -336,9 +338,14 @@ Veja a seguir uma representação JSON do recurso.
   "processorArchitecture": "String",
   "specificationVersion": "String",
   "joinType": "String",
-  "skuFamily": "String"
+  "skuFamily": "String",
+  "skuNumber": 1024,
+  "managementFeatures": "String"
 }
 ```
+
+
+
 
 
 

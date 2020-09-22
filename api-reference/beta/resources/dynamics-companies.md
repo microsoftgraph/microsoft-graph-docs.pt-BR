@@ -7,16 +7,16 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 13bc765f873bc893925ffbddc82b2f0685376cf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3fedbd9407a4124c38a6ff08a95dbf4cd22c9fe1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505137"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081759"
 ---
 # <a name="companies-resource-type"></a>tipo de recurso de empresas
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,10 +32,10 @@ Representa um tipo de recurso de empresas no Dynamics 365 Business central.
 | Propriedade        | Tipo |Descrição                             |
 |:----------------|:-----|:---------------------------------------|
 |id               |GUID  |A identificação exclusiva da empresa. Somente Leitura.|
-|nome             |string|Especifica a empresa.                  |
-|displayName      |string|Especifica o nome de exibição da empresa.     |
-|systemVersion    |string|Especifica a versão interna da empresa.|
-|businessProfileId|string|Especifica a ID do perfil de negócios vinculada à empresa.|
+|name             |string|Especifica a empresa.                  |
+|displayName      |cadeia de caracteres|Especifica o nome de exibição da empresa.     |
+|systemVersion    |cadeia de caracteres|Especifica a versão interna da empresa.|
+|businessProfileId|cadeia de caracteres|Especifica a ID do perfil de negócios vinculada à empresa.|
 
 
 ## <a name="relationships"></a>Relações
@@ -55,5 +55,7 @@ Veja a seguir uma representação JSON da empresa.
 }
 
 ```
+
+
 
 

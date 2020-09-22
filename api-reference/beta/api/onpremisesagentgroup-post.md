@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1dfce148cd74d01bd838b4d30c40cac8af145f35
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: e8217451851d12916ce8fde2d287fa68b23c48c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200275"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082207"
 ---
 # <a name="create-onpremisesagentgroup"></a>Criar onPremisesAgentGroup
 
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [onPre
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

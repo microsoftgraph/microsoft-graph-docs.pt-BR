@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 1435e8326536aa1a8943e46799d6a5612485a425
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: b45a52734af115a872e7ff5f31c58ef5ed95b944
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845740"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081668"
 ---
 # <a name="governanceroledefinition-resource-type"></a>tipo de recurso governanceRoleDefinition
 
@@ -22,11 +22,11 @@ Namespace: microsoft.graph
 Representa as definições de função. Para os recursos do Azure, ele pode representar as funções do Azure RBAC, como proprietário, leitor, colaborador, etc.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método          | Tipo de retorno |Descrição|
 |:---------------|:--------|:--------|
-|[Listar](../api/governanceroledefinition-list.md) | coleção [governanceRoleDefinition](../resources/governanceroledefinition.md) |Lista uma coleção de definições de função em um recurso.|
+|[List](../api/governanceroledefinition-list.md) | coleção [governanceRoleDefinition](../resources/governanceroledefinition.md) |Lista uma coleção de definições de função em um recurso.|
 |[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Ler propriedades e relações de uma entidade de definição de função especificado por ID.|
 
 Não `POST` , `PUT` , `PATCH` , `DELETE` tem suporte no `roleDefinitions` conjunto de entidades por enquanto.
@@ -34,13 +34,13 @@ Não `POST` , `PUT` , `PATCH` , `DELETE` tem suporte no `roleDefinitions` conjun
 ## <a name="properties"></a>Propriedades
 | Propriedade    | Tipo   | Descrição                                                           |
 |:------------|:-------|:----------------------------------------------------------------------|
-| id          | String | A ID da definição de função.                                        |
-| resourceId  | String | Obrigatório. A ID do recurso associada à definição de função. |
+| id          | Cadeia de caracteres | A ID da definição de função.                                        |
+| resourceId  | Cadeia de caracteres | Obrigatório. A ID do recurso associada à definição de função. |
 | externalId  | Cadeia de caracteres | A ID externa da definição de função.                               |
 | displayName | Cadeia de caracteres | O nome de exibição da definição de função.                              |
-| templateId  | String |                                                                       |
+| templateId  | Cadeia de caracteres |                                                                       |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |recurso|[governanceResource](../resources/governanceresource.md)|Somente leitura. O recurso associado para a definição de função.|
@@ -82,3 +82,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

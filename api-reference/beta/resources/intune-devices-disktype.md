@@ -3,14 +3,14 @@ title: tipo de enumeração disktype
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f51fe5d26377295809d043c8df3308feface4e1a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dc8d6dbfd019748808c35f4f99322aff34f4dbe9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470653"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081402"
 ---
 # <a name="disktype-enum-type"></a>tipo de enumeração disktype
 
@@ -26,8 +26,11 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecida|,0|Ainda não documentado|
-|rígido|1|Ainda não documentado|
-|ssd|duas|Ainda não documentado|
+|rígido|1 |Ainda não documentado|
+|ssd|2 |Ainda não documentado|
+
+
+
 
 
 

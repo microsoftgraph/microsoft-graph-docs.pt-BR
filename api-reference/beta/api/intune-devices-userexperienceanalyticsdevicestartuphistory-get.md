@@ -3,14 +3,14 @@ title: Obter userExperienceAnalyticsDeviceStartupHistory
 description: Leia as propriedades e as relações do objeto userExperienceAnalyticsDeviceStartupHistory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93fa666edfadc398c5809644cd656f78923aa063
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 2fab0d26a798f4fbe50c0269edd9a0eff4d71cda
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791355"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082599"
 ---
 # <a name="get-userexperienceanalyticsdevicestartuphistory"></a>Obter userExperienceAnalyticsDeviceStartupHistory
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 676
+Content-Length: 784
 
 {
   "value": {
@@ -87,10 +87,15 @@ Content-Length: 676
     "isFirstLogin": true,
     "isFeatureUpdate": true,
     "operatingSystemVersion": "Operating System Version value",
-    "restartCategory": "restartWithUpdate"
+    "restartCategory": "restartWithUpdate",
+    "restartStopCode": "Restart Stop Code value",
+    "restartFaultBucket": "Restart Fault Bucket value"
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: a1031429d6288ec19a9f3791e24a35dc0d431588
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9b0af5326bb9c819ded03ab9497e155cb0dab7c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081682"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>tipo de recurso governanceRoleAssignmentRequestStatus
 
@@ -25,7 +25,7 @@ Representa o status do [governanceRoleAssignmentRequest](../resources/governance
 Propriedade       | Tipo |Descrição|
 |:----|:-------------|:-----|
 |status |String| O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed` .|
-|substatus |String| O status da solicitação de atribuição de função. Os valores podem ser,,,,,,,, `Accepted` `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` , `PendingApprovalProvisioning` ,, `PendingApproval` `FailedAsResourceIsLocked` , `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `ProvisioningStarted` ,,, e.|
+|substatus |Cadeia de caracteres| O status da solicitação de atribuição de função. Os valores podem ser,,,,,,,, `Accepted` `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` , `PendingApprovalProvisioning` ,, `PendingApproval` `FailedAsResourceIsLocked` , `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `ProvisioningStarted` ,,, e.|
 |statusDetails       |Coleção [KeyValue](../resources/keyvalue.md)| Os detalhes do status da solicitação de atribuição de função. Ele representa os resultados de avaliação de regras diferentes. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -59,3 +59,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

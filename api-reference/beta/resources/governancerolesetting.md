@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 1f6bbd544e65bf5781b8ec77201980e5602bbf11
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 61889ef9f5ecd968b52704138260d3b39ceaf961
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217915"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081640"
 ---
 # <a name="governancerolesetting-resource-type"></a>tipo de recurso governanceRoleSetting
 
@@ -31,9 +31,9 @@ Representa um conjunto de configurações em cada definição de função que pr
 ## <a name="properties"></a>Propriedades
 |Propriedade               |Tipo                                      |Descrição|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |String                                  |A ID do roleSetting.|
-|resourceId           |String                                  |Obrigatório. A ID do recurso ao qual a configuração de função está associada.|
-|roleDefinitionId     |String                                  |Obrigatório. A ID da definição de função à qual a configuração de função está associada.|
+|id                   |Cadeia de caracteres                                  |A ID do roleSetting.|
+|resourceId           |Cadeia de caracteres                                  |Obrigatório. A ID do recurso ao qual a configuração de função está associada.|
+|roleDefinitionId     |Cadeia de caracteres                                  |Obrigatório. A ID da definição de função à qual a configuração de função está associada.|
 |isDefault            |Booliano                                 |Somente leitura. Indica se o roleSetting é um padrão roleSetting|
 |lastUpdatedDateTime  |DateTimeOffset                          |Somente leitura. A hora em que a configuração da função foi atualizada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |lastUpdatedBy        |String                                  |Somente leitura. O nome de exibição do administrador que atualizou pela última vez o roleSetting.|
@@ -89,3 +89,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

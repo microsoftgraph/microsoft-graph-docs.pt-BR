@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: outlook
 author: svpsiva
 doc_type: resourcePageType
-ms.openlocfilehash: 1450d365da1146900a661273fa5e19dac58e2903
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 381a25582f7df09e583662dab06477b848d6bd13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461903"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083089"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
@@ -89,3 +89,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

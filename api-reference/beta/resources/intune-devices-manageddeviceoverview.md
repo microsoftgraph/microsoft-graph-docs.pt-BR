@@ -3,14 +3,14 @@ title: Tipo de recurso managedDeviceOverview
 description: Dados de resumo de dispositivos gerenciados
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 582d836ae2b9e701f640026d171046bf962eab92
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: e301344d2c3147ebf44d1afc440cbe5a3b305789
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124111"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081206"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Tipo de recurso managedDeviceOverview
 
@@ -71,7 +71,8 @@ Veja a seguir uma representação JSON do recurso.
     "androidFullyManagedCount": 1024,
     "androidWorkProfileCount": 1024,
     "androidCorporateWorkProfileCount": 1024,
-    "configMgrDeviceCount": 1024
+    "configMgrDeviceCount": 1024,
+    "aospUserlessCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -93,6 +94,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

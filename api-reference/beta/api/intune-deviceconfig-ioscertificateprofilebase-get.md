@@ -3,14 +3,14 @@ title: Obter iosCertificateProfileBase
 description: Leia as propriedades e as relações do objeto iosCertificateProfileBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 881f3adf2926a524ca39ce44b239b3f244c6390d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bb81d48799e120ae4de88b79ffa9d98669c7b91e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433029"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082767"
 ---
 # <a name="get-ioscertificateprofilebase"></a>Obter iosCertificateProfileBase
 
@@ -117,6 +117,9 @@ Content-Length: 1512
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Atualizar windowsFeatureUpdateProfileAssignment
 description: Atualiza as propriedades de um objeto windowsFeatureUpdateProfileAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97a6cf5562c92498769f81a262e3fb290c689b4b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 43a6e1fb6a6f0d4bf65c212cc359bbd8a6dc2f2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082242"
 ---
 # <a name="update-windowsfeatureupdateprofileassignment"></a>Atualizar windowsFeatureUpdateProfileAssignment
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador da entidade|
+|id|Cadeia de caracteres|O identificador da entidade|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição ao qual o perfil de atualização de recursos está atribuído.|
 
 
@@ -97,6 +97,9 @@ Content-Length: 393
   }
 }
 ```
+
+
+
 
 
 

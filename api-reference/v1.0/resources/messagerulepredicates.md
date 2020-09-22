@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 98481d80f76d1dffd5c15faf7315aaf2c8dfb8b8
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: e0778cf9f20c548905c92a5e48f186e3d501f285
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43452607"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083033"
 ---
 # <a name="messagerulepredicates-resource-type"></a>Tipo de recurso messageRulePredicates
 
@@ -29,26 +29,26 @@ Representa o conjunto de condições e exceções disponíveis para uma regra.
 | hasAttachments | Booliano | Indica se uma mensagem de entrada deve ter anexos para que a exceção ou condição seja aplicada. |
 | headerContains | Collection(String) | Representa as cadeias de caracteres que são exibidas nos cabeçalhos de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
 | importância | importância | A importância que é marcada em uma mensagem de entrada para que a exceção ou condição seja aplicada: `low`, `normal`, `high`. |
-| isApprovalRequest | Booliano | Indica se uma mensagem de entrada deve ter uma solicitação de aprovação para que a exceção ou condição seja aplicada. |
-| isAutomaticForward | Booliano | Indica se uma mensagem de entrada deve ser encaminhada automaticamente para que a exceção ou condição seja aplicada. |
-| isAutomaticReply | Booliano | Indica se uma mensagem de entrada deve ser uma resposta automática para que a exceção ou condição seja aplicada. |
-| isEncrypted | Booliano | Indica se uma mensagem de entrada deve estar criptografada para que a exceção ou condição seja aplicada. |
-| isMeetingRequest | Booliano | Indica se uma mensagem de entrada deve ser uma solicitação de reunião para que a exceção ou condição seja aplicada. |
-| isMeetingResponse | Booliano | Indica se uma mensagem de entrada deve ser uma resposta à solicitação de reunião para que a exceção ou condição seja aplicada. |
-| isNonDeliveryReport | Booliano | Indica se uma mensagem de entrada deve ser uma notificação de falha na entrega para que a exceção ou condição seja aplicada. |
-| isPermissionControlled | Booliano | Indica se uma mensagem de entrada deve ser uma permissão controlada (protegida por RMS) para que a exceção ou condição seja aplicada. |
-| isReadReceipt | Booliano | Indica se uma mensagem de entrada deve ser uma confirmação de leitura para que a exceção ou condição seja aplicada. |
-| isSigned | Booliano | Indica se uma mensagem de entrada deve ser assinada por S/MIME para que a exceção ou condição seja aplicada. |
-| isVoicemail | Booliano | Indica se uma mensagem de entrada deve ser uma caixa postal para que a exceção ou condição seja aplicada. |
+| isApprovalRequest | Boolean | Indica se uma mensagem de entrada deve ter uma solicitação de aprovação para que a exceção ou condição seja aplicada. |
+| isAutomaticForward | Boolean | Indica se uma mensagem de entrada deve ser encaminhada automaticamente para que a exceção ou condição seja aplicada. |
+| isAutomaticReply | Boolean | Indica se uma mensagem de entrada deve ser uma resposta automática para que a exceção ou condição seja aplicada. |
+| isEncrypted | Boolean | Indica se uma mensagem de entrada deve estar criptografada para que a exceção ou condição seja aplicada. |
+| isMeetingRequest | Boolean | Indica se uma mensagem de entrada deve ser uma solicitação de reunião para que a exceção ou condição seja aplicada. |
+| isMeetingResponse | Boolean | Indica se uma mensagem de entrada deve ser uma resposta à solicitação de reunião para que a exceção ou condição seja aplicada. |
+| isNonDeliveryReport | Boolean | Indica se uma mensagem de entrada deve ser uma notificação de falha na entrega para que a exceção ou condição seja aplicada. |
+| isPermissionControlled | Boolean | Indica se uma mensagem de entrada deve ser uma permissão controlada (protegida por RMS) para que a exceção ou condição seja aplicada. |
+| isReadReceipt | Boolean | Indica se uma mensagem de entrada deve ser uma confirmação de leitura para que a exceção ou condição seja aplicada. |
+| isSigned | Boolean | Indica se uma mensagem de entrada deve ser assinada por S/MIME para que a exceção ou condição seja aplicada. |
+| isVoicemail | Boolean | Indica se uma mensagem de entrada deve ser uma caixa postal para que a exceção ou condição seja aplicada. |
 | messageActionFlag | messageActionFlag  | Representa o valor do sinalizador de ações que é exibido em uma mensagem de entrada para que a exceção ou condição seja aplicada. Os valores possíveis são: `any` , `call` , `doNotForward` , `followUp` , `fyi` , `forward` , `noResponseNecessary` , `read` , `reply` , `replyToAll` , `review` . |
-| notSentToMe | Booliano | Indica se o proprietário da caixa de correio não deve ser um destinatário de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
+| notSentToMe | Boolean | Indica se o proprietário da caixa de correio não deve ser um destinatário de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | recipientContains | Collection(String) | Representa as cadeias de caracteres que são exibidas nas propriedades **toRecipients** ou **ccRecipients** de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
 | senderContains | Collection(String) | Representa as cadeias de caracteres que são exibidas na propriedade **from** de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
 | sensitivity | sensibilidade | Representa o nível de sensibilidade que deve ser marcado em uma mensagem de entrada para que a condição ou exceção seja aplicada. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`. |
-| sentCcMe | Booliano | Indica se o proprietário da caixa de correio deve estar na propriedade **ccRecipients** de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
-| sentOnlyToMe | Booliano | Indica se o proprietário da caixa de correio deve ser o único destinatário em uma mensagem de entrada para que a condição ou exceção seja aplicada. |
+| sentCcMe | Boolean | Indica se o proprietário da caixa de correio deve estar na propriedade **ccRecipients** de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
+| sentOnlyToMe | Boolean | Indica se o proprietário da caixa de correio deve ser o único destinatário em uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | sentToAddresses | Coleção ([Recipient](recipient.md)) | Representa os endereços de email para os quais uma mensagem de entrada deve ter sido enviada para que a condição ou exceção seja aplicada. |
-| sentToMe | Booliano | Indica se o proprietário da caixa de correio deve estar na propriedade **toRecipients** de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
+| sentToMe | Boolean | Indica se o proprietário da caixa de correio deve estar na propriedade **toRecipients** de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | sentToOrCcMe | Boolean | Indica se o proprietário da caixa de correio deve estar na propriedade **toRecipients** ou **ccRecipients** de uma mensagem de entrada para que a condição ou exceção seja aplicada. |
 | subjectContains | Collection(String) | Representa as cadeias de caracteres que são exibidas no assunto de uma mensagem de entrada para que a exceção ou condição seja aplicada. |
 | withinSizeRange | [sizeRange](sizerange.md) | Representa os tamanhos mínimo e máximo (em kilobytes) nos quais uma mensagem de entrada deve se enquadrar para que a condição ou exceção seja aplicada. |
@@ -108,3 +108,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

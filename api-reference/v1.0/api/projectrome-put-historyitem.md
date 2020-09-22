@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: da5ba2c6f77023ac3f812a690404b23d648fb4ee
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ee46c25555e3621bd18d020bd3312bd7b1d543aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083306"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Criar ou substituir um historyItem
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -113,3 +113,4 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

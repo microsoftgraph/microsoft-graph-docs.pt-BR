@@ -3,14 +3,14 @@ title: Criar deviceCompliancePolicySettingStateSummary
 description: Crie um novo objeto deviceCompliancePolicySettingStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea800855e871d48104cf59ab0ee75fd3c24a610f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 200910e7a3e87d579a33b26a7b3740b1041d4929
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082900"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>Criar deviceCompliancePolicySettingStateSummary
 
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceCompliance
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|configuração|String|O nome da classe de configuração e o nome da propriedade.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|Nome da configuração.|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Configuração de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
@@ -116,6 +116,9 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

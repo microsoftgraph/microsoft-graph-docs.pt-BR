@@ -3,14 +3,14 @@ title: tipo de recurso managedDeviceModelsAndManufacturers
 description: Modela e fabrica meatadata para dispositivos gerenciados na conta
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db6d5a59a748f5e8befbe662a0b317a185437665
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1b7b689bcffb8950fd75e244089b7d9c74ad9ace
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443951"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081213"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>tipo de recurso managedDeviceModelsAndManufacturers
 
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

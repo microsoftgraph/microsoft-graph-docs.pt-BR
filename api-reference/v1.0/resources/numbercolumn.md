@@ -7,12 +7,12 @@ localization_priority: Normal
 description: O recurso numberColumn em um recurso columnDefinition indica que os valores da coluna são números.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f8dfa6ddfae3ef9ec09e1afffdaf816cdc690386
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2d8955ac71a7a6e9979542f08e4d0634274b69b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534188"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083019"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 
@@ -71,3 +71,4 @@ Essas propriedades podem ser atualizadas.
   ],
   "tocPath": "Resources/NumberColumn"
 } -->
+

@@ -3,14 +3,14 @@ title: Listar policySets
 description: Listar Propriedades e relações dos objetos policyset.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37116dcbd835121f1e3bc6770f2e57cd6cabfa72
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19653b7cfcb4a1bf024895917d8b09801a3889be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457731"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082354"
 ---
 # <a name="list-policysets"></a>Listar policySets
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/policySets
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [policyset](../resources/intune-policyset-policyset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [policyset](../resources/intune-policyset-policyset.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -88,6 +88,9 @@ Content-Length: 578
   ]
 }
 ```
+
+
+
 
 
 

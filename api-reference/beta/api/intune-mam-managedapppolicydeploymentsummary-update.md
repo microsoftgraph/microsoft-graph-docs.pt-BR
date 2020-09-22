@@ -3,14 +3,14 @@ title: Atualizar managedAppPolicyDeploymentSummary
 description: Atualizar as propriedades de um objeto managedAppPolicyDeploymentSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e53086e7f8dcde578960b4dd7be356caddb16359
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a77e878e3bdf1c2f7c408daa3bfddc422054c493
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082424"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Atualizar managedAppPolicyDeploymentSummary
 
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |configurationDeployedUserCount|Int32|Ainda não documentado|
 |lastRefreshTime|DateTimeOffset|Ainda não documentado|
 |configurationDeploymentSummaryPerApp|Conjunto [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Ainda não documentado|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
 
@@ -122,6 +122,9 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

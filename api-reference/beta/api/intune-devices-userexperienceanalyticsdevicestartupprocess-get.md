@@ -3,14 +3,14 @@ title: Obter userExperienceAnalyticsDeviceStartupProcess
 description: Leia as propriedades e as relações do objeto userExperienceAnalyticsDeviceStartupProcess.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f542b3fc5d61ce3222528665dfad5bd4fc71d40
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4081667abbc0f666fa83223e82f1d346f876f44d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082536"
 ---
 # <a name="get-userexperienceanalyticsdevicestartupprocess"></a>Obter userExperienceAnalyticsDeviceStartupProcess
 
@@ -82,6 +82,9 @@ Content-Length: 358
   }
 }
 ```
+
+
+
 
 
 

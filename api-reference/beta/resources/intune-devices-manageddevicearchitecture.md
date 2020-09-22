@@ -3,14 +3,14 @@ title: tipo de enumeração managedDeviceArchitecture
 description: Arquitetura do processador
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d951c432a867d8d880f2ff687c2f0cb20a35c0b4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2e566b1f62f81161853c28b4a57197f68459dce5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081248"
 ---
 # <a name="manageddevicearchitecture-enum-type"></a>tipo de enumeração managedDeviceArchitecture
 
@@ -26,10 +26,13 @@ Arquitetura do processador
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Arquitetura desconhecida|
-|x|1|X|
-|Professional|duas|Professional|
+|x|1 |X|
+|Professional|2 |Professional|
 |equipe|3D|EQUIPE|
 |arM64|4 |ARM64|
+
+
+
 
 
 

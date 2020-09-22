@@ -3,14 +3,14 @@ title: Obter windowsFeatureUpdateProfileAssignment
 description: Leia as propriedades e as relações do objeto windowsFeatureUpdateProfileAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62f2bd043c51af7943fbd77d1a6b74ff0a6845b7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 055a8a7f0c45a9fbc707ed341e717eed033914c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082284"
 ---
 # <a name="get-windowsfeatureupdateprofileassignment"></a>Obter windowsFeatureUpdateProfileAssignment
 
@@ -82,6 +82,9 @@ Content-Length: 426
   }
 }
 ```
+
+
+
 
 
 

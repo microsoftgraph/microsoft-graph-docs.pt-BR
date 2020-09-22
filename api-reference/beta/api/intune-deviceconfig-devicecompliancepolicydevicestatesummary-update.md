@@ -3,14 +3,14 @@ title: Atualizar deviceCompliancePolicyDeviceStateSummary
 description: Atualizar as propriedades de um objeto deviceCompliancePolicyDeviceStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12f21aeff36bdd7e965b2051857af43bacc7dfce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2236e5bfb666e51294993d66267baf0a65905859
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433991"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082914"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Atualizar deviceCompliancePolicyDeviceStateSummary
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Quantidade de dispositivos que estão no período de cortesia|
 |configManagerCount|Int32|Quantidade de dispositivos que estão em conformidade gerenciada pelo System Center Configuration Manager|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -113,6 +113,9 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

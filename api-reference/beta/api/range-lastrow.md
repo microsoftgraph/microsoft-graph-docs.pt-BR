@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bbfce34298c3c3162065ff855477a9e9d2647db7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4dcac35f84853bfd07dbb71455f37f8576cac13c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081906"
 ---
 # <a name="range-lastrow"></a>Range: LastRow
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -111,3 +111,5 @@ Content-length: 169
   ]
 }
 -->
+
+

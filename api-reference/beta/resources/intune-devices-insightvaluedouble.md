@@ -3,14 +3,14 @@ title: tipo de recurso insightValueDouble
 description: O valor em uma visão geral da análise da experiência do usuário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07b415eb1fc7015be076861b5db654c80dd6de22
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: aaef91b47e0554c9f94bcd48aafe33434f4496ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081353"
 ---
 # <a name="insightvaluedouble-resource-type"></a>tipo de recurso insightValueDouble
 
@@ -46,6 +46,9 @@ Veja a seguir uma representação JSON do recurso.
   "value": "4.2"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Criar um novo objeto userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd406eb8ab714266876b16b82abfa283aab1c1ad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e6229c411ac5dee65aae2da5aa7f0d90617ea35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43424857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082487"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>Criar userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do desempenho do processo de inicialização do dispositivo de análise de experiência do usuário.|
-|Process|String|Nome do processo de inicialização do dispositivo de análise da experiência do usuário.|
+|id|Cadeia de caracteres|O identificador exclusivo do desempenho do processo de inicialização do dispositivo de análise de experiência do usuário.|
+|Process|Cadeia de caracteres|Nome do processo de inicialização do dispositivo de análise da experiência do usuário.|
 |productName|Cadeia de caracteres|O nome do produto do processo de inicialização do dispositivo analítico da experiência do usuário.|
 |publicador|String|O fornecedor da experiência do usuário do processo de inicialização do dispositivo de análise.|
 |deviceCount|Int64|Contagem resumida do processo de inicialização do dispositivo de análise de experiência do usuário.|
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userExperienceAnalyticsDeviceStartupProcessPerformance](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -104,6 +104,9 @@ Content-Length: 334
   "totalImpactInMs": 15
 }
 ```
+
+
+
 
 
 

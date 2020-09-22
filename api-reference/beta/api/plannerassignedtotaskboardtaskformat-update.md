@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 7e862657e737e561ec934a46aeb6cef2d6e07c8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 048936a5d1a4c2f311a8d7bea483e01486ed2afb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081913"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Atualizar plannerAssignedToTaskBoardTaskFormat
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Dicionário de dicas usado para ordenar tarefas na exibição AssignedTo do quadro de tarefas. A chave de cada entrada é um dos usuários para os quais a tarefa é atribuída e o valor é a dica ORDER. O formato de cada valor é definido em [using Order Hints in Planner (.. /Resources/planner_order_hint_format. MD).|
-|unassignedOrderHint|String|O valor de dica usado para ordenar a tarefa na exibição AssignedTo do quadro de tarefas quando a tarefa não é atribuída a qualquer pessoa ou quando o dicionário do orderHintsByAssignee não fornece uma dica de pedido para o usuário ao qual a tarefa é atribuída. O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).|
+|unassignedOrderHint|Cadeia de caracteres|O valor de dica usado para ordenar a tarefa na exibição AssignedTo do quadro de tarefas quando a tarefa não é atribuída a qualquer pessoa ou quando o dicionário do orderHintsByAssignee não fornece uma dica de pedido para o usuário ao qual a tarefa é atribuída. O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Resposta
 
@@ -123,3 +123,5 @@ Content-length: 225
   ]
 }
 -->
+
+

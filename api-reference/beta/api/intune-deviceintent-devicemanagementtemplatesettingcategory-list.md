@@ -3,14 +3,14 @@ title: Listar deviceManagementTemplateSettingCategories
 description: Listar Propriedades e relações dos objetos deviceManagementTemplateSettingCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c5a5e9bf2ff5633b9199bff4697b5bfe7e72dec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e18ae539522c54811f467f3292be507fd4ecd7de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427353"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082627"
 ---
 # <a name="list-devicemanagementtemplatesettingcategories"></a>Listar deviceManagementTemplateSettingCategories
 
@@ -50,7 +50,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -78,6 +78,9 @@ Content-Length: 250
   ]
 }
 ```
+
+
+
 
 
 

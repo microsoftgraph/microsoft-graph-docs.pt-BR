@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0a6ea27f1dd6206a97b6ad60daf783b3092b69a4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3798c86812452daeaa1332fd6de5c4cf3229497f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807021"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082921"
 ---
 # <a name="patchcontentcommand-resource-type"></a>tipo de recurso patchContentCommand
 
@@ -57,3 +57,4 @@ Veja a seguir uma representação JSON do recurso, que é enviado no corpo da so
   "section": "documentation",
   "tocPath": ""
 }-->
+

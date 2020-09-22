@@ -3,14 +3,14 @@ title: Criar telecomExpenseManagementPartner
 description: Cria um novo objeto telecomExpenseManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e68de35de576832086116c3d61aea546402599e1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5d0c10e562ba2c6b7ba60ccdd7a86bff1c76887a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48082228"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Criar telecomExpenseManagementPartner
 
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar telecomExpenseMa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do parceiro TEM.|
+|id|Cadeia de caracteres|O identificador exclusivo do parceiro TEM.|
 |displayName|Cadeia de caracteres|Nome de exibição do parceiro TEM.|
 |url|Cadeia de caracteres|URL do painel de controle administrativo do parceiro TEM, em que um administrador pode configurar o serviço TEM.|
 |appAuthorized|Booliano|Se aplicativo AAD do parceiro foi autorizado a acessar o Intune.|
-|enabled|Boolean|Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.|
+|enabled|Booliano|Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.|
 |lastConnectionDateTime|DateTimeOffset|Carimbo de data/hora da última solicitação enviada ao Intune pelo parceiro TEM.|
 
 
@@ -101,6 +101,9 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+
 
 
 

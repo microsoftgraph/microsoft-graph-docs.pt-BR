@@ -3,14 +3,14 @@ title: tipo de enumeração certificateStore
 description: Tipos CertificateStore
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4dc148fa09a891cb132098917fbe11283be0e7ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a52c22baa9941c47eb2c26dd167a0623e4880d11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081542"
 ---
 # <a name="certificatestore-enum-type"></a>tipo de enumeração certificateStore
 
@@ -25,8 +25,11 @@ Tipos CertificateStore
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|user|1|Ainda não documentado|
-|máquina|duas|Ainda não documentado|
+|user|1 |Ainda não documentado|
+|máquina|2 |Ainda não documentado|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração deviceRegistrationState
 description: Status do registro do dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fb7e522159df19040fcc4da3870e76b7971c95c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 628d4c6c253349e54747d4fce836a2b4c8f4579f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470675"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081423"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enumeração deviceRegistrationState
 
@@ -26,13 +26,16 @@ Status do registro do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não registrado|,0|O dispositivo não está registrado.|
-|inscreve|duas|O dispositivo está registrado.|
+|inscreve|2 |O dispositivo está registrado.|
 |revogado|3D|O dispositivo foi bloqueado, apagado ou desativado.|
 |keyconflict|4 |O dispositivo tem um conflito de teclas.|
 |approvalPending|5 |O dispositivo está aguardando aprovação.|
 |certificateReset|6 |O certificado de dispositivo foi redefinido.|
 |notRegisteredPendingEnrollment|7 |O dispositivo não está registrado e registro pendente.|
 |desconhecido|8 |O status do registro do dispositivo é desconhecido.|
+
+
+
 
 
 

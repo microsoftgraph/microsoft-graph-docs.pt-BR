@@ -3,14 +3,14 @@ title: tipo de enumeração globalDeviceHealthScriptState
 description: Indica se os scripts de integridade do dispositivo global estão habilitados e em qual estado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e9b1ca70ca5c9d30d515b4d20bd27525249806fe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c2e9ed441cbc28c0f3a7a3184bd584cbc34fb957
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081395"
 ---
 # <a name="globaldevicehealthscriptstate-enum-type"></a>tipo de enumeração globalDeviceHealthScriptState
 
@@ -26,8 +26,11 @@ Indica se os scripts de integridade do dispositivo global estão habilitados e e
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Os scripts de integridade do dispositivo global não estão configurados|
-|função|1|Os scripts de integridade do dispositivo global estão configurados, mas não estão totalmente habilitados|
-|habilitadas|duas|Os scripts de integridade do dispositivo global estão habilitados e prontos para uso|
+|função|1 |Os scripts de integridade do dispositivo global estão configurados, mas não estão totalmente habilitados|
+|habilitadas|2 |Os scripts de integridade do dispositivo global estão habilitados e prontos para uso|
+
+
+
 
 
 
