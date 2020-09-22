@@ -6,16 +6,16 @@ title: GeoCoordinates
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 07b0a39155b8c9c4dc02d6cff1e0a93c1a9cd418
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d091858c4856ad133b72e757e837fb49b3c0594f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497633"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033836"
 ---
 # <a name="geocoordinates-resource-type"></a>tipo de recurso GeoCoordinates
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +29,7 @@ Se um [**driveItem**](driveitem.md) tiver uma faceta de **local** não nula, o i
 
 | Propriedade  | Tipo   | Descrição
 |:----------|:-------|:--------------------------------------------------------
-| altitude  | Duplo | Opcional. A altitude (altura), em pés, acima do nível do mar para o item. Somente leitura.
+| altitude  | Double | Opcional. A altitude (altura), em pés, acima do nível do mar para o item. Somente leitura.
 | latitude  | Double | Opcional. A latitude, em valor decimal, para o item. Gravável no OneDrive Personal.
 | longitude | Double | Opcional. A longitude, em valor decimal, para o item. Gravável no OneDrive Personal.
 
@@ -63,3 +63,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

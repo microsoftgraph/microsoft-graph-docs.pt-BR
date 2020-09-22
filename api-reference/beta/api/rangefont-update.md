@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 134768bcb6105c25e1265c5401d26660ae6dd8d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 635d1e7304fa1296dd1f1af9c348c11db4b65725
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454591"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034284"
 ---
 # <a name="update-rangefont"></a>Atualizar rangefont
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -128,3 +128,5 @@ Content-length: 134
   ]
 }
 -->
+
+

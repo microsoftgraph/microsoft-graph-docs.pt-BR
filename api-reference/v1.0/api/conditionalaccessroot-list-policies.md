@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e77a783cd4c4ddaa630c4170a12deeb35ed59cc9
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: f95c91a3f900a21345a2ae6b37c4c2e0ef526131
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567195"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033493"
 ---
 # <a name="list-policies"></a>Listar políticas
 
@@ -205,3 +205,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

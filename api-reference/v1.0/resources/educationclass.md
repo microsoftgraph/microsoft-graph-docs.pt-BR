@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 78280017d71fe0cbcaa84ec22905da6848f45f98
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 57e3204e15755e9ec7ce0150f46c6f0409ca3120
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032688"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo Microsoft 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office funcionem corretamente, os professores devem ser membros das coleções de professores e membros.  
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -40,11 +40,11 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 |:---------------|:--------|:----------|
 |id| String| O identificador exclusivo da aula.|
 |description|String| Descrição da aula.|
-|displayName|Cadeia de caracteres| Nome da aula.|
+|displayName|String| Nome da aula.|
 |mailNickname|String| Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada. |
 |createdBy|[identitySet](identityset.md)| Entidade que criou a aula |
-|classCode|String| Código de aula usada pela escola para identificar a aula.|
-|externalId|String| ID da aula no sistema de sincronização. |
+|classCode|Cadeia de caracteres| Código de aula usada pela escola para identificar a aula.|
+|externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. |
 |externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.|
 |externalSource|educationExternalSource| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Termos dessa aula.|
@@ -94,3 +94,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

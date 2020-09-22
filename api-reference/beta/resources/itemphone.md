@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0c36ea4d861738316a3ce6593c12a79a59d97c68
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c1263f004b9c3c85621bc2cef4fe8622a7a1cb54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033689"
 ---
 # <a name="itemphone-resource-type"></a>tipo de recurso de Tel.
 
@@ -46,7 +46,7 @@ Herda de [Myfacet](../resources/itemfacet.md).
 |lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
 |number|String|Número de telefone fornecido pelo usuário.|
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|type|PhoneType|O tipo de número de telefone dentro do objeto. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|tipo|PhoneType|O tipo de número de telefone dentro do objeto. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="relationships"></a>Relações
 
@@ -88,3 +88,5 @@ Veja a seguir uma representação JSON do recurso.
   "number": "String"
 }
 ```
+
+

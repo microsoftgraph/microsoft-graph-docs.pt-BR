@@ -3,14 +3,14 @@ title: tipo de enumeração windowsDeviceType
 description: Contém propriedades do tipo de dispositivo do Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0265d9a6f216b6a86887a008c098987bad930880
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d18883246ede97a6622f0c0c2a48196d3ff33acf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032499"
 ---
 # <a name="windowsdevicetype-enum-type"></a>tipo de enumeração windowsDeviceType
 
@@ -23,11 +23,13 @@ Contém propriedades do tipo de dispositivo do Windows.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Nenhum sinalizador definido.|
-|placa|1|Se o tipo de dispositivo do Windows da área de trabalho é ou não suportado.|
-|processadores|duas|Se o tipo de dispositivo móvel do Windows é ou não suportado.|
+|Nenhuma|,0|Nenhum sinalizador definido.|
+|placa|1 |Se o tipo de dispositivo do Windows da área de trabalho é ou não suportado.|
+|processadores|2 |Se o tipo de dispositivo móvel do Windows é ou não suportado.|
 |holographic|4 |Se o tipo de dispositivo do Windows Holographic é ou não suportado.|
 |team|8 |Se o tipo de dispositivo do Windows de equipe é ou não suportado.|
+
+
 
 
 

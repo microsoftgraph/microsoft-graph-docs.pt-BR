@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 73f4bb06d15c6b2e41226e872b71ba417de1076b
-ms.sourcegitcommit: 9c16d84eac9c34134864ad63a9bb95c309218a44
+ms.openlocfilehash: bb1dd599143447b597c4f57c93b20f3261ecf303
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "43557903"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034116"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os [métodos de autenticação](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) são as maneiras como os usuários são autenticados no Azure Active Directory (AD). Os métodos de autenticação no Azure AD incluem senha e telefone (por exemplo, SMS e chamadas de voz), que podem ser gerenciados no Microsoft Graph hoje, entre muitas outras, como chaves de segurança do FIDO2 e o aplicativo Microsoft Authenticator. Os métodos de autenticação são usados na autenticação principal, de segundo fator e de etapa e também no processo de redefinição de senha de autoatendimento (SSPR).
+Os [métodos de autenticação](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) são as maneiras como os usuários são autenticados no Azure Active Directory (AD). Os métodos de autenticação do Azure AD incluem senha e telefone (por exemplo, SMS e chamadas de voz), que hoje são gerenciáveis no Microsoft Graph, entre muitos outros, como chaves de segurança FIDO2 e o aplicativo Microsoft Authenticator. Os métodos de autenticação são usados nas autenticações primária, de segundo fator e de step-up. Além disso, no processo de redefinição de senha de autoatendimento (SSPR).
 
 As APIs do método de autenticação são usadas para gerenciar os métodos de autenticação de um usuário. Por exemplo:
 
@@ -38,3 +38,5 @@ As APIs do método de autenticação são usadas para gerenciar os métodos de a
 
 * Revise os tipos de método de autenticação e seus vários métodos.
 * Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
+
+

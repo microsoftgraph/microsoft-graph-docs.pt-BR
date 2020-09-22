@@ -6,12 +6,12 @@ description: O objeto EditAction fornece informações sobre uma atividade que e
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 53998155929289314ad8b222bb5eb790f0350add
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e2a597821e97457ace6c1caa5582eef26599506
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531514"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032709"
 ---
 # <a name="editaction-resource-type"></a>tipo de recurso EditAction
 
@@ -52,3 +52,4 @@ Nenhum. Esta faceta tem um valor nulo ou não nulo e não contém propriedades.
   "suppressions": []
 }
 -->
+

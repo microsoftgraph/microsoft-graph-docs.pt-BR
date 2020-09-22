@@ -6,12 +6,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 60ca96d7c29bd5c0a31412d8016cc2d17d6515b8
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 86416189a6e69c0b485e314159976931fffcc81e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229490"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032751"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -59,7 +59,8 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 | nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
-| Foto                | [photo][]          | Metadados de foto, se o item for uma foto. Somente leitura.
+| pendingOperations    | [pendingOperations][] | Se houver, indica que uma ou mais operações que podem afetar o estado da driveItem estão pendentes. Somente leitura.
+| photo                | [photo][]          | Metadados de foto, se o item for uma foto. Somente leitura.
 | publication          | [publicationFacet][] | Fornece informações sobre o estado de publicação ou de check-out de um item, nos locais que oferecem suporte a essas ações. Esta propriedade não retorna por padrão. Somente leitura. |
 | remoteItem           | [remoteItem][]     | Dados do item remoto, se o item for compartilhado de uma unidade diferente daquela que está sendo acessada. Somente leitura.
 | root                 | [root][]           | Se essa propriedade for não nula, indicará que o driveItem é o principal driveItem na unidade.
@@ -133,6 +134,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
+  "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
   "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
@@ -228,7 +230,8 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
 [package]: package.md
-[permission]: permission.md
+[permissão]: permission.md
+[pendingOperations]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
 [root]: root.md
@@ -256,3 +259,4 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
   "tocPath": "Items",
   "tocBookmarks": { "Resources/Item": "#" }
 } -->
+

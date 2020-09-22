@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 407f29c7d8f9468c5e9b1da1badad294cb655121
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ed10fd9be0a49fbf25acac635cf29b1759c31eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531513"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032653"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recurso usado para gerenciar aulas, professores e alunos da escola representada.  
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                   | Tipo de retorno                                    | Descrição                                                                                 |
 | :------------------------------------------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------ |
@@ -30,29 +30,29 @@ Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 | [Listar usuários](../api/educationschool-list-users.md)       | Coleção [educationUser](educationuser.md)   | Obtenha a coleção de objetos **educationUser**.                                                |
 | [Remover usuário](../api/educationschool-delete-users.md)    | [educationUser](educationuser.md)              | Remova um **educationUser** da escola por meio da propriedade de navegação **users**.      |
 | [Atualizar](../api/educationschool-update.md)               | [educationSchool](educationschool.md)          | Atualize um objeto **educationSchool**.                                                       |
-| [Excluir](../api/educationschool-delete.md)               | Nenhum                                           | Exclua um objeto **educationSchool**.                                                       |
+| [Delete](../api/educationschool-delete.md)               | Nenhum                                           | Exclua um objeto **educationSchool**.                                                       |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade            | Tipo                                  | Descrição                                                                        |
 | :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
 | id                  | String                                | GUID desta escola.                                                               |
-| displayName         | Cadeia de caracteres                                | Nome de exibição da escola.                                                        |
+| displayName         | String                                | Nome de exibição da escola.                                                        |
 | description         | String                                | Descrição da escola.                                                         |
 | status              | cadeia de caracteres                                | Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`. |
 | externalSource      | educationExternalSource               | Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.        |
-| principalEmail      | String                                | Endereço de email da entidade de segurança.                                                    |
-| principalName       | String                                | Nome da entidade de segurança.                                                             |
-| externalPrincipalId | String                                | ID da entidade de segurança no sistema de sincronização.                                                 |
-| highestGrade        | String                                | Ensino de nível mais alto.                                                              |
-| lowestGrade         | String                                | Ensino de nível mais baixo.                                                               |
-| schoolNumber        | String                                | Número da escola.                                                                     |
+| principalEmail      | Cadeia de caracteres                                | Endereço de email da entidade de segurança.                                                    |
+| principalName       | Cadeia de caracteres                                | Nome da entidade de segurança.                                                             |
+| externalPrincipalId | Cadeia de caracteres                                | ID da entidade de segurança no sistema de sincronização.                                                 |
+| highestGrade        | Cadeia de caracteres                                | Ensino de nível mais alto.                                                              |
+| lowestGrade         | Cadeia de caracteres                                | Ensino de nível mais baixo.                                                               |
+| schoolNumber        | Cadeia de caracteres                                | Número da escola.                                                                     |
 | externalId          | Cadeia de caracteres                                | ID da escola no sistema de sincronização.                                                    |
-| phone               | String                                | Número de telefone da escola.                                                            |
+| phone               | Cadeia de caracteres                                | Número de telefone da escola.                                                            |
 | address             | [physicalAddress](physicaladdress.md) | Endereço da escola.                                                             |
 | createdBy           | [identitySet](identityset.md)         | Entidade que criou a escola.                                                     |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo                                           | Descrição                             |
 | :----------- | :--------------------------------------------- | :-------------------------------------- |
@@ -99,3 +99,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

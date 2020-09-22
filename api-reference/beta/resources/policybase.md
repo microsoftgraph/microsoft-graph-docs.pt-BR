@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a2a07ba2d639faf83d6e8bb4eab3a3e2437333d1
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 527549d4af2e2fb103cb7d2484d844fd3c876e4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917590"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033637"
 ---
 # <a name="policybase-resource-type"></a>tipo de recurso policyBase
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa um tipo de base abstrato para o qual os tipos de política herdam.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Nenhum
 
@@ -30,7 +30,7 @@ Nenhum
 |:-------------|:------------|:------------|
 |id|String| Identificador exclusivo da política. Somente leitura.|
 |description|String| Descrição da política.|
-|displayName|Cadeia de caracteres| Nome para exibição dessa política. |
+|displayName|String| Nome para exibição dessa política. |
 
 ## <a name="relationships"></a>Relações
 
@@ -67,3 +67,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Listar managedAppRegistrations
 description: Listar propriedades e relações dos objetos managedAppRegistration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d1c3ff99581e952780f80ae314fdcf929006d07
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b2c56645dceb15d8f513a2c04f01f7ee3f1ba085
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033255"
 ---
 # <a name="list-managedappregistrations"></a>Listar managedAppRegistrations
 
@@ -90,6 +90,9 @@ Content-Length: 806
   ]
 }
 ```
+
+
+
 
 
 

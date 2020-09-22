@@ -3,14 +3,14 @@ title: Listar complianceManagementPartners
 description: Listar Propriedades e relações dos objetos complianceManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91f43342fa21cad981663578ab0c98c3a2e1aefb
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: 271b09b62c10587e0d7bed13f4670c35db436994
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744101"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033199"
 ---
 # <a name="list-compliancemanagementpartners"></a>Listar complianceManagementPartners
 
@@ -104,6 +104,9 @@ Content-Length: 1192
   ]
 }
 ```
+
+
+
 
 
 

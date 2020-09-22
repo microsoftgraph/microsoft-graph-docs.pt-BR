@@ -5,12 +5,12 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cc432af84b67e1781be4193a3e8d2bba29ff67a7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7a48059cf4341281336fb20e69ca4bfb53154ea8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808288"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032828"
 ---
 # <a name="baseitemversion-resource-type"></a>Tipo de recurso BaseItemVersion
 
@@ -55,3 +55,4 @@ O recurso **baseItemVersion** representa uma versão anterior de um item ou de u
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
+

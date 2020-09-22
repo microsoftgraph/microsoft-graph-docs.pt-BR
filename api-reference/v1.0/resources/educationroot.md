@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 3792f0c867538c77522566110be36ac15d952396
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f93b35dc48087b8d40db0cc3eabc2ba3ba10c8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531544"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032681"
 ---
 # <a name="educationroot-resource-type"></a>Tipo de recurso educationRoot
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 O namespace `/education` expõe funcionalidade específica ao setor de educação. Alguns objetos no namespace `/education` podem ser encontrados em outras partes do Microsoft Graph (por exemplo, [usuários](user.md)). O namespace education fornece propriedades e recursos específicos de educação nesses objetos.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -32,7 +32,7 @@ O namespace `/education` expõe funcionalidade específica ao setor de educaçã
 ## <a name="properties"></a>Propriedades
 Nenhum.
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |classes|Coleção [educationClass](educationclass.md)| Somente leitura. Anulável.|
@@ -107,3 +107,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

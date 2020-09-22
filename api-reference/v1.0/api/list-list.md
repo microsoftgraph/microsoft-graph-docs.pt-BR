@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Obter a coleção de listas de um site.
 doc_type: apiPageType
-ms.openlocfilehash: a1a4d9e1b1dc48d3357c08756f0362c72d276ad3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99ced7bd4819f5097a683652e206962c8ab49f6a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511723"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033150"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
@@ -119,3 +119,4 @@ Para listá-los, inclua `system` na instrução `$select`.
   "suppressions": [
   ]
 } -->
+

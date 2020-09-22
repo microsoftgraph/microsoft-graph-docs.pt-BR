@@ -3,14 +3,14 @@ title: tipo de recurso win32LobAppFileSystemRule
 description: Um tipo complexo para armazenar dados de regra de arquivo ou pasta para um aplicativo LOB Win32.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa01642dd36cd8dc79f713446df05a9559294f56
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: c83fa4bf5f3d24a4b171a8492f4212720242acdf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790828"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033780"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>tipo de recurso win32LobAppFileSystemRule
 
@@ -31,13 +31,13 @@ Herda de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|O tipo de regra que indica o objetivo da regra. Herdado de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Os valores possíveis são: `detection` e `requirement`.|
 |caminho|String|O caminho do arquivo ou da pasta a ser pesquisado.|
 |fileOrFolderName|String|O nome do arquivo ou pasta a ser procurado.|
-|check32BitOn64System|Boolean|Um valor que indica se as variáveis de ambiente serão expandidas no contexto de 32 bits em sistemas de 64 bits.|
+|check32BitOn64System|Booliano|Um valor que indica se as variáveis de ambiente serão expandidas no contexto de 32 bits em sistemas de 64 bits.|
 |OperationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|O tipo de operação do sistema de arquivos. Os valores possíveis são: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|O operador para detecção de arquivo ou pasta. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |ComparisonValue|String|O valor de comparação de arquivo ou pasta.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -58,6 +58,9 @@ Veja a seguir uma representação JSON do recurso.
   "comparisonValue": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: aa5d5adc9b7716f26c1b05edb00122da57d625ab
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: f535b9e841c10e56935b65d3992e492479bbddc7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44227014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032569"
 ---
 # <a name="usedinsight-resource-type"></a>tipo de recurso usedInsight
 
@@ -19,9 +19,9 @@ Namespace: microsoft.graph
 Uma percepção representando documentos usados por um usuário específico. O insights retorna os documentos mais relevantes exibidos ou modificados por um usuário. Isso inclui documentos em:
 
 - OneDrive for Business
-- SharePoint
+- Microsoft Office SharePoint Online
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -62,3 +62,4 @@ Veja a seguir uma representação JSON do recurso
   "resourceReference": { "@odata.type": "microsoft.graph.resourceReference" }
 }
 ```
+

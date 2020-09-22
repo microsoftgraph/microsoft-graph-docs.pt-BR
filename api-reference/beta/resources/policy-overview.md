@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 8e1524220b8062e92fbd4318d3cdc0af7500d0a4
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 5abecc785db2b2dcd141b528814642e6356abfa7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033633"
 ---
 # <a name="azure-ad-policy-overview"></a>Visão geral da política do Azure AD
 
@@ -36,3 +36,5 @@ O Azure Active Directory (Azure AD) usa políticas para controlar comportamentos
 
 * Revise os diferentes tipos de recursos de política listados acima e seus vários métodos.
 * Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
+
+

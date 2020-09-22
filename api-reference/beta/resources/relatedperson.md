@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: c440be4ad291857fad9540cccad2e43d3a0e7121
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 88d7283d1eac1f3b7bcc7d947fa1961494a58041
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227681"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033570"
 ---
 # <a name="relatedperson-resource-type"></a>tipo de recurso relatedPerson
 
@@ -24,7 +24,7 @@ Representa informações sobre as pessoas relacionadas às informações de uma 
 
 | Propriedade        | Tipo        | Descrição                                                                                                                                                                                                                                     |
 |:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|displayName      |Cadeia de caracteres       | Nome da pessoa.                                                                                                                                                                                                                             |
+|displayName      |String       | Nome da pessoa.                                                                                                                                                                                                                             |
 |relação     |String       | Os valores possíveis são: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
 |userPrincipalName|String       | Endereço de email ou referência a uma pessoa na organização.                                                                                                                                                                                       |
 
@@ -58,3 +58,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

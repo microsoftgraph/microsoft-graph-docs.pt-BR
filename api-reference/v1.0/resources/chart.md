@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a6f11cad32e48b259f3754ed08e4bad769f9a4c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2aedb1869a0dee1cc9e0d13fa85ca3c06bcc1d1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531922"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032821"
 ---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Representa um objeto chart em uma pasta de trabalho.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -28,7 +28,7 @@ Representa um objeto chart em uma pasta de trabalho.
 |[List series](../api/chart-list-series.md) |Coleção [WorkbookChartSeries](chartseries.md)| Obtenha uma coleção de objetos ChartSeries.|
 |[Update](../api/chart-update.md) | [WorkbookChart](chart.md)   |Atualize um objeto Chart. |
 |[Image](../api/chart-image.md)|Cadeia de caracteres de imagem codificada em base64|Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.|
-|[Excluir](../api/chart-delete.md)|Nenhum|Exclui o objeto de gráfico.|
+|[Delete](../api/chart-delete.md)|Nenhum|Exclui o objeto de gráfico.|
 |[SetData](../api/chart-setdata.md)|Nenhum|Redefine os dados de origem do gráfico.|
 |[Setposition](../api/chart-setposition.md)|Nenhum|Posiciona o gráfico em relação às células na planilha.|
 |[List](../api/chart-list.md) | Conjunto [WorkbookChart](chart.md)  |Obtenha a coleção de objetos do gráfico. |
@@ -38,14 +38,14 @@ Representa um objeto chart em uma pasta de trabalho.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|height|double|Representa a altura, em pontos, do objeto Chart.|
-|id|cadeia de caracteres|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
-|left|double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
+|height|Double|Representa a altura, em pontos, do objeto Chart.|
+|id|string|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
+|left|Double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
 |nome|string|Representa o nome de um objeto Chart.|
-|top|duplo|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
+|top|Double|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
 |width|Double|Representa a largura, em pontos, do objeto de gráfico.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |axes|[WorkbookChartAxes](chartaxes.md)|Representa os eixos de um gráfico. Somente leitura.|
@@ -89,3 +89,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

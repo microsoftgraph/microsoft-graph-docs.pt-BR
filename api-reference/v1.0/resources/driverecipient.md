@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: O recurso DriveRecipient representa uma pessoa, um grupo ou outro destinatário com quem compartilhar usando a ação invite.
 doc_type: resourcePageType
-ms.openlocfilehash: d1b123c897791dff5bd6c42eb9e4b030e83e1d5c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d509a1819b0ad10f695d97153a8f837793b9dbe4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531528"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032722"
 ---
 # <a name="driverecipient-resource"></a>Recurso DriveRecipient
 
@@ -40,7 +40,7 @@ O recurso de destinatários possui essas propriedades.
 | Nome da propriedade | Tipo   | Descrição                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
 | email         | Cadeia de caracteres | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
-| alias         | String | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
+| alias         | Cadeia de caracteres | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
 | objectId      | Cadeia de caracteres | O identificador exclusivo para o destinatário no diretório.                                               |
 
 ## <a name="remarks"></a>Comentários
@@ -54,3 +54,4 @@ Ao usar [invite](../api/driveitem-invite.md) para adicionar permissões, DriveRe
   "section": "documentation",
   "tocPath": "Resources/Recipients"
 } -->
+

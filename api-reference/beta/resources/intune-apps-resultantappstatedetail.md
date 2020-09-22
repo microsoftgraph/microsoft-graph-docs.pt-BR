@@ -3,14 +3,14 @@ title: tipo de enumeração resultantAppStateDetail
 description: Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de instalação específico.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 390af3d25993aac335765346c6bb9b938a71ad6d
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 35c27c685afe5be19d5ffe41cb0750f07b5b30d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790200"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033794"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo de enumeração resultantAppStateDetail
 
@@ -26,9 +26,9 @@ Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noAdditionalDetails|,0|Não há detalhes adicionais disponíveis.|
-|dependencyFailedToInstall|1|Uma ou mais dependências do aplicativo não foram instaladas.|
-|dependencyWithRequirementsNotMet|duas|Uma ou mais das dependências do aplicativo têm requisitos que não foram atendidos.|
-|dependencyPendingReboot|3D|Uma ou mais das dependências do aplicativo exige a reinicialização do dispositivo para concluir a instalação.|
+|dependencyFailedToInstall|1 |Uma ou mais dependências do aplicativo não foram instaladas.|
+|dependencyWithRequirementsNotMet|2 |Uma ou mais das dependências do aplicativo têm requisitos que não foram atendidos.|
+|dependencyPendingReboot|3 |Uma ou mais das dependências do aplicativo exige a reinicialização do dispositivo para concluir a instalação.|
 |dependencyWithAutoInstallDisabled|4 |Uma ou mais dependências do aplicativo estão configuradas para não instalar automaticamente.|
 |iosAppStoreUpdateFailedToInstall|1000|A versão mais recente do aplicativo falhou ao atualizar de uma versão anterior.|
 |vppAppHasUpdateAvailable|1001|Há uma atualização disponível.|
@@ -52,6 +52,9 @@ Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de 
 |minimumOsVersionNotMet|-1002|A versão do sistema operacional no dispositivo de destino é menor do que o mínimo configurado.|
 |minimumDiskSpaceNotMet|-1001|O espaço em disco disponível no dispositivo de destino é menor do que o mínimo configurado.|
 |processorArchitectureNotApplicable|-1000|A arquitetura do dispositivo (por exemplo, x86/AMD64) não se aplica ao aplicativo.|
+
+
+
 
 
 

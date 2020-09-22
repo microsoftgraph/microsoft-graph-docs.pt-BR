@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a6e32f7bf9c635423ca1aace92aea160f6cc2706
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b4f00fc4c44b3019dccbded1fd222aa211d78c7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032674"
 ---
 # <a name="educationorganization-resource-type"></a>tipo de recurso educationOrganization
 
@@ -22,7 +22,7 @@ Entidade abstrata usada para modelar a semelhança entre diferentes tipos de org
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|String| Descrição da organização.|
-|displayName|Cadeia de caracteres| Nome de exibição da organização.|
+|displayName|String| Nome de exibição da organização.|
 |externalSource|educationExternalSource| Origem de onde esta organização foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações
@@ -61,3 +61,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

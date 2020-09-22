@@ -6,16 +6,16 @@ title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d36c7460b5ee50a6230cdacc5514e200920e31c4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b21ae8b85044ea1c0b9fef16c1bb7dd57487040
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507625"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033997"
 ---
 # <a name="columndefinition-resource-type"></a>tipo de recurso columnDefinition
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -70,7 +70,7 @@ As propriedades relacionadas ao tipo (Boolean, calculado, Choice, Currency, date
 | **displayName**         | string  | O nome voltado para o usuário da coluna.
 | **enforceUniqueValues** | booliano | Se for verdadeiro, esse mesmo valor não constará em dois itens de lista nessa coluna.
 | **hidden**              | booliano | Especifica se a coluna é exibida na interface do usuário.
-| **id**                  | cadeia de caracteres  | O identificador exclusivo da coluna.
+| **id**                  | string  | O identificador exclusivo da coluna.
 | **indexed**             | booliano | Especifica se os valores da coluna podem ser usados para classificação e pesquisa.
 | **name**                | string  | O nome voltado para a API da coluna, conforme ele aparece nos [campos][] em uma [listItem][]. Para o nome voltado ao usuário, consulte **displayName**.
 | **readOnly**            | bool    | Especifica se os valores da coluna podem ser modificados.
@@ -125,3 +125,5 @@ Para vê-los ao exibir valores **field** em [listItems][listItem], inclua as col
   "suppressions": []
 }
 -->
+
+
