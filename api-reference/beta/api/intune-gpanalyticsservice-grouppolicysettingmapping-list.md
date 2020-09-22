@@ -3,14 +3,14 @@ title: Listar groupPolicySettingMappings
 description: Listar Propriedades e relações dos objetos groupPolicySettingMapping.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f3c4e48f5eb122f1cbd8d4d7762ac28307cf907
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 81b0189fc01c539458cf2eb311150983887087ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043308"
 ---
 # <a name="list-grouppolicysettingmappings"></a>Listar groupPolicySettingMappings
 
@@ -50,7 +50,7 @@ GET /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1139
+Content-Length: 1209
 
 {
   "value": [
@@ -94,11 +94,15 @@ Content-Length: 1139
       "intuneSettingUriList": [
         "Intune Setting Uri List value"
       ],
-      "intuneSettingDefinitionId": "Intune Setting Definition Id value"
+      "intuneSettingDefinitionId": "Intune Setting Definition Id value",
+      "admxSettingDefinitionId": "Admx Setting Definition Id value"
     }
   ]
 }
 ```
+
+
+
 
 
 

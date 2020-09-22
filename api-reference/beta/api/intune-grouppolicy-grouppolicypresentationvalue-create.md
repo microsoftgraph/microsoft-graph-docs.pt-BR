@@ -3,14 +3,14 @@ title: Criar groupPolicyPresentationValue
 description: Criar um novo objeto groupPolicyPresentationValue.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d281f6d7b69eeeed72bc854e5bd1aca6ca35720
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e1974e597e48ef7aa82cc9ba73131a5452767d45
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461100"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043245"
 ---
 # <a name="create-grouppolicypresentationvalue"></a>Criar groupPolicyPresentationValue
 
@@ -55,12 +55,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -90,6 +90,9 @@ Content-Length: 242
   "id": "8132eaab-eaab-8132-abea-3281abea3281"
 }
 ```
+
+
+
 
 
 

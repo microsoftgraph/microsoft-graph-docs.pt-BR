@@ -3,14 +3,14 @@ title: tipo de recurso vppTokenLicenseSummary
 description: Resumo de licenças de um determinado aplicativo em um token.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6eea44907cc71977cff6c53351ef5dd8155e817
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b206d4ca825f818390421dbce23ea618917336a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446864"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029369"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>tipo de recurso vppTokenLicenseSummary
 
@@ -26,7 +26,7 @@ Resumo de licenças de um determinado aplicativo em um token.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |vppTokenId|String|Identificador do token VPP.|
-|appleId|String|O Apple Id associado ao Token do Programa de Compra de Volume da Apple.|
+|appleId|Cadeia de caracteres|O Apple Id associado ao Token do Programa de Compra de Volume da Apple.|
 |organizationName|Cadeia de caracteres|A organização associada ao token do Apple Volume Purchase Program.|
 |availableLicenseCount|Int32|O número de licenças VPP disponíveis.|
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso.|
@@ -51,6 +51,9 @@ Veja a seguir uma representação JSON do recurso.
   "usedLicenseCount": 1024
 }
 ```
+
+
+
 
 
 

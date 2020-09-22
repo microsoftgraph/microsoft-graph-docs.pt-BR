@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 6a39d156849236a40268064cb234e6015c9424f3
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: ba1365496a3970b36bb4d120efef54da01ba9247
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598539"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192165"
 ---
 # <a name="changenotification-resource-type"></a>Tipo de recurso changeNotification
 
@@ -22,9 +22,9 @@ Representa a notificação enviada ao Assinante.
 
 Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
-Nenhum.
+Nenhum
 
 ## <a name="properties"></a>Propriedades
 
@@ -32,7 +32,7 @@ Nenhum.
 |:---------|:-----|:------------|
 | changeType | string | Indica o tipo de alteração que irá gerar a notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Obrigatório. |
 | clientState | string | O valor da propriedade **ClientState** enviado especificado na solicitação de assinatura (se houver). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando os valores da propriedade **ClientState** . O valor da propriedade **ClientState** enviada com a assinatura é comparado com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
-| encryptedContent | [Microsoft. Graph. changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | Prever Conteúdo criptografado anexado à notificação de alteração. Só é fornecido se **encryptionCertificate** e **includeResourceData** foram definidos durante a solicitação de assinatura e se o recurso oferecer suporte a ele. Opcional |
+| encryptedContent | [Microsoft. Graph. changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | Prever Conteúdo criptografado anexado à notificação de alteração. Só é fornecido se **encryptionCertificate** e **includeResourceData** foram definidos durante a solicitação de assinatura e se o recurso oferecer suporte a ele. Opcional. |
 | lifecycleEvent | string | O tipo de notificação de ciclo de vida se a notificação atual é uma notificação de ciclo de vida. Opcional. Os valores com suporte são `missed` , `removed` , `reauthorizationRequired` . |
 | id | string | ID exclusiva da notificação. Opcional. |
 | recurso | string | O URI do recurso que emitiu a notificação de alteração relativa a `https://graph.microsoft.com` . Obrigatório. |
@@ -86,3 +86,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

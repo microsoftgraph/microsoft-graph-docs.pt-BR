@@ -3,14 +3,14 @@ title: Atualizar managedDeviceMobileAppConfigurationDeviceStatus
 description: Atualiza as propriedades de um objeto managedDeviceMobileAppConfigurationDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8cd4174557e9eab934ba6e321c3d68a8b83b29c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0ff58f40775d0ca286a8e55ab00b880d6314feb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43405806"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022838"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>Atualizar managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceDisplayName|String|Nome do dispositivo de DevicePolicyStatus.|
-|userName|String|O nome de usuário que está sendo relatado|
+|deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
-|platform|Int32|Plataforma do dispositivo que está sendo relatado|
+|plataforma|Int32|Plataforma do dispositivo que está sendo relatado|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
@@ -67,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -111,6 +111,9 @@ Content-Length: 512
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

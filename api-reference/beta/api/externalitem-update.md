@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 077895872414380f9a5d6eab854c0b4b0d9ceab2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 411d64b5ec6afdd5f994c64faceb4e5fc9a2c637
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006804"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192207"
 ---
 # <a name="update-externalitem"></a>Atualizar externalitem
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo                                  | Descrição               |
 |:-----------|:--------------------------------------|:--------------------------|
 | ACL        | coleção [ACL](../resources/acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. |
-| conteúdo    | [externalItemContent](../resources/externalitemcontent.md) | Uma representação de texto sem formatação ou HTML do conteúdo do item. O texto nessa propriedade é indexado de texto completo. |
+| conteúdo    | [externalItemContent](../resources/externalitemcontent.md) | Uma representação de texto simples do conteúdo do item. O texto nessa propriedade é indexado de texto completo. |
 | properties | Objeto                                | Um recipiente de propriedades com as propriedades do item. As propriedades devem estar em conformidade com o [esquema](../resources/schema.md) definido para o [externalConnection](../resources/externalconnection.md). |
 
 ### <a name="updating-the-acl-collection"></a>Atualizando a coleção ACL
@@ -95,8 +95,8 @@ Content-type: application/json
 {
   "acl": [
     {
-      "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
+      "type": "everyone",
+      "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
       "identitySource": "azureActiveDirectory"
     }

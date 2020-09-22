@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: f1e213ff99f7d67894e4f764ea8862f9d3a8ce98
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7a082804309799c946f05f21d37d92b2eded7d13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070503"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>tipo de recurso privilegedRoleSettings
 
@@ -31,7 +31,7 @@ Representa as configurações de uma função privilegiada.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevationDuration|duration|A duração quando a função é ativada.|
-|id|string| O identificador exclusivo das configurações de função. Somente leitura.|
+|id|cadeia de caracteres| O identificador exclusivo das configurações de função. Somente leitura.|
 |isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável.|
 |lastGlobalAdmin|booliano|Somente para uso interno.|
 |maxElavationDuration|duration|Duração máxima da função ativada.|
@@ -87,3 +87,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

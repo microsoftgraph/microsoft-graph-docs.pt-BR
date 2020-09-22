@@ -5,16 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: ce1d59c96b70da1533e7199d8b39b89f08f729aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 622e30fa01776f945d4b3946f8bb0068ebc3f64e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521682"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064078"
 ---
 # <a name="plannerplancontextdetailscollection-resource-type"></a>tipo de recurso plannerPlanContextDetailsCollection
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ O recurso **plannerPlanContextDetailsCollection** representa a coleção de cont
 
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve usar um identificador distintivo que representa o contexto externo como o nome da propriedade. Os valores de propriedade devem ser objetos [plannerPlanContextDetails](plannerplancontextdetails.md) . Com base em OData, os nomes de propriedade em tipos abertos não podem conter `.`os `:`seguintes `@`caracteres `%`:,,,. Esses caracteres precisam ser codificados com o formato de codificação de URL. Para remover um item da lista favoritos, o valor precisa ser removido da coleção [plannerPlanContextCollection](plannerplancontextcollection.md) , o que removerá automaticamente a entrada desse objeto.
+As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve usar um identificador distintivo que representa o contexto externo como o nome da propriedade. Os valores de propriedade devem ser objetos [plannerPlanContextDetails](plannerplancontextdetails.md) . Com base em OData, os nomes de propriedade em tipos abertos não podem conter os seguintes caracteres: `.` ,, `:` `@` , `%` . Esses caracteres precisam ser codificados com o formato de codificação de URL. Para remover um item da lista favoritos, o valor precisa ser removido da coleção [plannerPlanContextCollection](plannerplancontextcollection.md) , o que removerá automaticamente a entrada desse objeto.
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -53,3 +53,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

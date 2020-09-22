@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e654c3c8878db10f160a4c4909fe2a8ca8b5d184
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: b6f3b9bdf72a7bf7224693e694ba58868c0ed3ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090883"
 ---
 # <a name="threatassessmentresult-resource-type"></a>tipo de recurso threatAssessmentResult
 
@@ -57,3 +57,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

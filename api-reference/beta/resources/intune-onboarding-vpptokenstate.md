@@ -3,14 +3,14 @@ title: tipo de enumeração vppTokenState
 description: Estados possíveis associados a um token do Apple Volume Purchase Program.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c286785522405946776907a296e475924ba8d4a8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 1789debbbc672d0ee195af788292fd556d25e899
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029327"
 ---
 # <a name="vpptokenstate-enum-type"></a>tipo de enumeração vppTokenState
 
@@ -27,10 +27,13 @@ Estados possíveis associados a um token do Apple Volume Purchase Program.
 |:---|:---|:---|
 |desconhecido|,0|Estado padrão.|
 |inválido|1 |O token é válido.|
-|venceu|duas|O token expirou.|
-|Inválido|3D|O token é inválido.|
+|venceu|2 |O token expirou.|
+|Inválido|3 |O token é inválido.|
 |assignedToExternalMDM|4 |O token é gerenciado por outro serviço MDM.|
 |duplicateLocationId|5 |O token é associado ao mesmo local de outro token na conta.|
+
+
+
 
 
 

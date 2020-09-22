@@ -3,14 +3,14 @@ title: tipo de recurso sideLoadingKey
 description: A entidade SideLoadingKey é necessária para os dispositivos Windows 8 e 8,1 para aplicativos de linha de negócios de desinstalar para um locatário.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 118fc4ad76e7e8b848e70f8dd2592ab319928a60
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e0d44ceabb8834b71b41a50fe977c952bddeaa01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029362"
 ---
 # <a name="sideloadingkey-resource-type"></a>tipo de recurso sideLoadingKey
 
@@ -36,7 +36,7 @@ A entidade SideLoadingKey é necessária para os dispositivos Windows 8 e 8,1 pa
 |:---|:---|:---|
 |id|String|ID exclusiva da chave de carregamento do lado.|
 |value|Cadeia de caracteres|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
-|displayName|Cadeia de caracteres|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
+|displayName|String|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
 |description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
 |totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
 |lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
@@ -63,6 +63,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String"
 }
 ```
+
+
+
 
 
 

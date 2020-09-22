@@ -3,14 +3,14 @@ title: Atualizar iosLobAppProvisioningConfiguration
 description: Atualiza as propriedades de um objeto iosLobAppProvisioningConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ebde41570abd913bb51c320286fd315ad213d843
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a33e868fc5910e6d3d167b3e5541cd9abafea94b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443475"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036167"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>Atualizar iosLobAppProvisioningConfiguration
 
@@ -65,13 +65,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosLobA
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -119,6 +119,9 @@ Content-Length: 547
   "version": 7
 }
 ```
+
+
+
 
 
 

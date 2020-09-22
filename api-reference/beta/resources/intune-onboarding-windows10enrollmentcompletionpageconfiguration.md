@@ -3,14 +3,14 @@ title: tipo de recurso windows10EnrollmentCompletionPageConfiguration
 description: Configuração da página de status de registro do Windows 10
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da912538336b647fb721a2f268632d390fc345de
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: e47e1177507b279476e2737160b5454c43694340
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179176"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029320"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>tipo de recurso windows10EnrollmentCompletionPageConfiguration
 
@@ -38,25 +38,25 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenroll
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo da conta herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|Cadeia de caracteres|O nome de exibição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|O nome de exibição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |description|String|A descrição da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos somente à configuração com o menor valor de prioridade. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Data e hora de criação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|Conjunto de cadeias de caracteres|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|Mostrar ou ocultar o andamento da instalação para o usuário|
-|blockDeviceSetupRetryByUser|Boolean|Permitir que o usuário repita a configuração após a instalação falhar|
-|allowDeviceResetOnInstallFailure|Boolean|Permitir ou bloquear falha de redefinição de dispositivo na instalação|
-|allowLogCollectionOnInstallFailure|Boolean|Permitir ou bloquear coleta de log na falha de instalação|
-|customErrorMessage|Cadeia de Caracteres|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
+|roleScopeTagIds|Coleção String|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|showInstallationProgress|Booliano|Mostrar ou ocultar o andamento da instalação para o usuário|
+|blockDeviceSetupRetryByUser|Booliano|Permitir que o usuário repita a configuração após a instalação falhar|
+|allowDeviceResetOnInstallFailure|Booliano|Permitir ou bloquear falha de redefinição de dispositivo na instalação|
+|allowLogCollectionOnInstallFailure|Booliano|Permitir ou bloquear coleta de log na falha de instalação|
+|customErrorMessage|String|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
 |installProgressTimeoutInMinutes|Int32|Definir o tempo limite de progresso da instalação em minutos|
-|allowDeviceUseOnInstallFailure|Boolean|Permitir que o usuário continue usando o dispositivo em caso de falha de instalação|
-|selectedMobileAppIds|Conjunto de cadeias de caracteres|Aplicativos selecionados para acompanhar o status de instalação|
-|trackInstallProgressForAutopilotOnly|Boolean|Mostrar apenas o progresso da instalação dos cenários de registro do piloto automático|
-|disableUserStatusTrackingAfterFirstUser|Boolean|Mostrar apenas o progresso da instalação para o primeiro registro post de usuário|
+|allowDeviceUseOnInstallFailure|Booliano|Permitir que o usuário continue usando o dispositivo em caso de falha de instalação|
+|selectedMobileAppIds|Coleção String|Aplicativos selecionados para acompanhar o status de instalação|
+|trackInstallProgressForAutopilotOnly|Booliano|Mostrar apenas o progresso da instalação dos cenários de registro do piloto automático|
+|disableUserStatusTrackingAfterFirstUser|Booliano|Mostrar apenas o progresso da instalação para o primeiro registro post de usuário|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |atribuições|Conjunto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo herdado de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
@@ -96,6 +96,9 @@ Veja a seguir uma representação JSON do recurso.
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
+
+
+
 
 
 

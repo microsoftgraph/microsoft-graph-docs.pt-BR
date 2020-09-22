@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 21f6571295ca229178a050f601e19f044e10815e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15242ab1be72d7b85b1974d9fd200a59dd4db7f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462187"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057665"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
@@ -63,7 +63,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |children|String|Os nomes dos filhos do contato.|
 |nomeDaEmpresa|String|O nome da empresa do contato.|
 |department|String|O departamento do contato.|
-|displayName|Cadeia de caracteres|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
+|displayName|String|O nome para exibição do contato. Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação atualizar.|
 |emailAddresses|Coleção [EmailAddress](../resources/emailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
 |generation|String|A geração do contato.|
@@ -75,11 +75,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |jobTitle|String|O cargo do contato.|
 |manager|String|O nome do gerente do contato.
 |middleName|String|O nome do meio do contato.|
-|mobilePhone|Cadeia de caracteres|O número de celular do contato.|
+|mobilePhone|String|O número de celular do contato.|
 |nickName|String|O apelido do contato.|
 |officeLocation|String|O local do escritório do contato.|
 |otherAddress|[PhysicalAddress](../resources/physicaladdress.md)|Outros endereços do contato.|
-|parentFolderId|Cadeia de caracteres|A ID da pasta pai do contato.|
+|parentFolderId|String|A ID da pasta pai do contato.|
 |personalNotes|String|As anotações do usuário sobre o contato.|
 |profession|String|A profissão do contato.|
 |spouseName|String|O nome do cônjuge/parceiro do contato.|
@@ -219,3 +219,4 @@ Content-length: 1977
   "suppressions": [
   ]
 }-->
+

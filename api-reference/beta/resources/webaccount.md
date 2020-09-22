@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: ae6bdc7dc16b072090a04773de93324385401f81
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 29d66809d14cfc72d43286aef801490cef20cb9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809072"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057673"
 ---
 # <a name="webaccount-resource-type"></a>tipo de recurso webaccount
 
@@ -36,17 +36,17 @@ Esse tipo de recurso herda de [Myfacet](itemfacet.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Cadeia de caracteres|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
 |description|String|Contém a descrição que o usuário forneceu para a conta no serviço que está sendo referenciado.|
-|id|String|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
+|id|Cadeia de caracteres|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
 |fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado de [MyFace](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
 |service|[Informações sobre o](../resources/serviceinformation.md)| Contém detalhes básicos sobre o serviço que está sendo associado. |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|statusMessage|String|Contém uma mensagem de status do serviço de nuvem, se fornecido ou sincronizado. |
+|statusMessage|Cadeia de caracteres|Contém uma mensagem de status do serviço de nuvem, se fornecido ou sincronizado. |
 |userId|Cadeia de caracteres|O nome de usuário exibido para a conta da Web.  |
 |webUrl|String|Contém um link para o perfil do usuário no serviço de nuvem, se houver um.|
 
@@ -91,3 +91,5 @@ Veja a seguir uma representação JSON do recurso.
   "webUrl": "String"
 }
 ```
+
+

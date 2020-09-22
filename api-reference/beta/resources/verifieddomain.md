@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: davidmu1
-ms.openlocfilehash: 18216eb54ed8efe2f6320216459807a6167a7107
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b0dd473d4358da38a09b55c7bc3ad052d2b6ce8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809095"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057749"
 ---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
 
@@ -27,8 +27,8 @@ Especifica um domínio de um locatário. A propriedade **verifiedDomains** da en
 |capabilities|Cadeia de caracteres|Por exemplo, "Email" ou "OfficeCommunicationsOnline".|
 |isDefault|Booliano|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
 |isinitial|Booliano|**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**|
-|nome|String|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
-|type|String|Por exemplo, "Managed".|
+|name|Cadeia de caracteres|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
+|tipo|Cadeia de caracteres|Por exemplo, "Managed".|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
+
+

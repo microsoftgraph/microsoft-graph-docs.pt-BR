@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4268c7d9faba8e744f7a6bd6a674ff680cb24346
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
-ms.translationtype: Auto
+ms.openlocfilehash: c901050f3cd068f68557473587e96b5ea5f65905
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057752"
 ---
 # <a name="verifiedcustomdomaincertificatesmetadata-resource-type"></a>tipo de recurso verifiedCustomDomainCertificatesMetadata
 
@@ -26,9 +26,9 @@ Representa os metadados do certificado de domínio personalizado para o recurso 
 |:-------------|:------------|:------------|
 |expiryDate|DateTimeOffset| A data de expiração do certificado de domínio personalizado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. |
 |Emitido|DateTimeOffset| A data de emissão do domínio personalizado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. |
-|issuerName|String| O nome do emissor do certificado de domínio personalizado. |
+|issuerName|Cadeia de caracteres| O nome do emissor do certificado de domínio personalizado. |
 |SubjectName|Cadeia de caracteres| O nome da entidade do certificado de domínio personalizado. |
-|identificação|String| A impressão digital associada ao certificado de domínio personalizado. |
+|identificação|Cadeia de caracteres| A impressão digital associada ao certificado de domínio personalizado. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -62,3 +62,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

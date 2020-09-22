@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a894afa05207dc483e5fbbf3e4de14e0b400f894
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a504455b1f898d675474406e249e2637c12e1c69
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006801"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192187"
 ---
 # <a name="get-externalitem"></a>Obter externalItem
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -97,9 +97,15 @@ Content-type: application/json
   "acl": [
     {
       "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
-      "accessType": "deny",
+      "value": "e811976d-83df-4cbd-8b9b-5215b18aa874",
+      "accessType": "grant",
       "identitySource": "azureActiveDirectory"
+    },
+    {
+      "type": "group",
+      "value": "14m1b9c38qe647f6a",
+      "accessType": "deny",
+      "identitySource": "external"
     }
   ],
   "properties": {
@@ -108,8 +114,8 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
-    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
-    "type": "html"
+    "value": "Error in payment gateway...",
+    "type": "text"
   }
 }
 ```
@@ -123,5 +129,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,18 +5,18 @@ author: stephenjust
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: f999a0ae686e0fd35e3ee31b0d59c92e56dde15c
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: Auto
+ms.openlocfilehash: d81cb0623afcf6c385645c8ebe0aba4eade192dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491931"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077664"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Trabalhar com a API de registros de chamadas no Microsoft Graph
 
 Os registros das chamadas fornecem informações de uso e diagnóstico das chamadas e reuniões on-line que ocorrem na sua organização ao usar o Microsoft Teams ou o Skype for Business. Você pode usar as APIs de registros de chamadas para se inscrever nos registros de chamadas e procurar registros de chamadas por IDs.
 
-A API de registros de chamadas é definida no subnamespace OData `microsoft.graph.callRecords` .
+A API de registros de chamadas é definida no subnamespace OData, `microsoft.graph.callRecords`.
 
 ## <a name="key-resource-types"></a>Principais tipos de recursos
 
@@ -41,3 +41,4 @@ No diagrama acima, o número denota quantas crianças de cada tipo podem estar p
 ## <a name="see-also"></a>Também consulte
 
 - [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-1.0)
+

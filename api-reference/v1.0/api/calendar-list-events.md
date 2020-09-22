@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c88527e971d311ea7daaff8c3598e336031eb059
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6b064396b5ca9a7036b7427cab120b4dec5b8f63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070365"
 ---
 # <a name="list-events"></a>Listar eventos
 
 Namespace: microsoft.graph
 
-Recupere uma lista de eventos em um calendário.  O calendário pode ser para um [usuário](../resources/user.md) ou um calendário padrão de um [grupo](../resources/group.md) do Office 365. A lista de eventos contém reuniões de instância única e reuniões mestres em série.
+Recupere uma lista de eventos em um calendário.  O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Microsoft 365. A lista de eventos contém reuniões de instância única e reuniões mestres em série.
 
 Para obter instâncias de evento expandidas, [obtenha a visualização de calendário](calendar-list-calendarview.md) ou [obtenha as instâncias de um evento](event-list-instances.md).
 
@@ -134,3 +134,4 @@ Content-length: 354
   "suppressions": [
   ]
 }-->
+

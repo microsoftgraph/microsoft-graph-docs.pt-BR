@@ -5,18 +5,18 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 47a63319efea2bdcdf11728bbac7d17903c6590a
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 63d00ecaba24469b9704fe6e6cc14e4792fef614
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077657"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
 Namespace: microsoft.graph
 
-Um calendário que é um contêiner para eventos. Pode ser um calendário para um [usuário](user.md)ou o calendário padrão de um [grupo](group.md)do Microsoft 365.
+Um calendário que é um contêiner para eventos. Pode ser um calendário para um [usuário](user.md)ou o calendário padrão de um [grupo](group.md) do Microsoft 365.
 
 > **Observação:** existem algumas pequenas diferenças na maneira como você pode interagir com calendários de usuários e calendários de grupos:
 
@@ -31,8 +31,8 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |[Listar calendários](../api/user-list-calendars.md)|Coleção [calendar](calendar.md)|Obtenha todos os calendários do usuário ou os calendários no grupo de calendários padrão ou em outro grupo de calendários específico.|
 |[Criar calendário](../api/user-post-calendars.md) |[calendar](calendar.md)| Crie um novo calendário no grupo de calendário padrão ou no grupo de calendários especificado para um usuário.|
 |[Obter calendário](../api/calendar-get.md) | [calendar](calendar.md) |Obtenha as propriedades e as relações de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Microsoft 365. |
-|[Atualizar](../api/calendar-update.md) | [calendar](calendar.md)  |Atualize as propriedades de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Microsoft 365. |
-|[Excluir](../api/calendar-delete.md) | Nenhum |Exclua um objeto calendar. |
+|[Update](../api/calendar-update.md) | [calendar](calendar.md)  |Atualize as propriedades de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Microsoft 365. |
+|[Delete](../api/calendar-delete.md) | Nenhum |Exclua um objeto calendar. |
 |[Listar calendarView](../api/calendar-list-calendarview.md) |Coleção [event](event.md)| Obtenha as ocorrências, as exceções e as instâncias de eventos únicas em uma visão de calendário definida por um intervalo de tempo, do calendário principal do usuário `(../me/calendarview)` ou de um calendário especificado.|
 |[Listar eventos](../api/calendar-list-events.md) |Coleção [event](event.md)| Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.|
 |[Criar evento](../api/calendar-post-events.md) |[event](event.md)| Crie um novo evento no calendário especificado ou padrão.|
@@ -134,3 +134,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

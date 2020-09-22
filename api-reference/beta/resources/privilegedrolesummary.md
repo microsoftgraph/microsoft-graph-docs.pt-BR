@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: 2ce475e224e1de714ee033c5b50e831ff54e8e4c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 05b8646090726570ed0d4ec9f38862a404bbc6d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807469"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070496"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>tipo de recurso privilegedRoleSummary
 
@@ -31,7 +31,7 @@ O resumo de estatísticas de uma função específica.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|O número de usuários que têm a função atribuída e a função é ativada.|
-|id|string| O identificador exclusivo da função. Somente leitura.|
+|id|cadeia de caracteres| O identificador exclusivo da função. Somente leitura.|
 |managedCount|int32|O número de usuários que têm a função atribuída, mas a função é desativada.|
 |mfaEnabled|booliano|**true** se a ativação de função requer MFA. **false** se a ativação de função não requer MFA.|
 |status|cadeia de caracteres| Os valores possíveis são: `ok` e `bad`. O valor depende da taxa de (managedCount/usersCount). Se a taxa for menor que um limite predefinido, `ok` será retornado. Caso contrário, `bad` será retornado.|
@@ -77,3 +77,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

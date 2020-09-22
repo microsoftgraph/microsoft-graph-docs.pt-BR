@@ -3,14 +3,14 @@ title: Excluir iosLobAppProvisioningConfiguration
 description: Exclui iosLobAppProvisioningConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1097a330b52e62212b59f13545aadcfec45b2068
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 934597e9cf86beea37720a5b56e880549ee7bea3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454008"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036195"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>Excluir iosLobAppProvisioningConfiguration
 
@@ -69,6 +69,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: c9ca647c7d2af82f76348fa737d15995d8a2ed96
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 5daeeee6f784c31f1e15843a8a1903ca41565118
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217894"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070506"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>tipo de recurso privilegedRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 
-`privilegedRoleAssignmentRequest`é uma entidade com modelo de tíquete usada para gerenciar o ciclo de vida das atribuições de função. Ele representa a intenção/decisão dos usuários e administradores, e também fornece a flexibilidade para permitir a implementação de Schduling recorrentes, Gates de aprovação e assim por diante, em comparação com a `POST` exposição `LIST` e operações diretas `MY` , `Cancel` bem como `governanceRoleAssignment`e funções.
+`privilegedRoleAssignmentRequest` é uma entidade com modelo de tíquete usada para gerenciar o ciclo de vida das atribuições de função. Ele representa a intenção/decisão dos usuários e administradores, e também fornece a flexibilidade para permitir a implementação de Schduling recorrentes, Gates de aprovação e assim por diante, em comparação com a exposição e operações diretas, `POST` `LIST` bem como `MY` e `Cancel` funções `governanceRoleAssignment` .
 
 ## <a name="methods"></a>Métodos
 
@@ -36,19 +36,19 @@ Representa a solicitação de operações de atribuição de função no gerenci
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| Somente leitura. A ID da solicitação de atribuição de função.|
-|assignmentstate|Cadeia de Caracteres| O estado da atribuição. O valor pode ser `Eligible` para atribuição `Active` qualificada-se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários.|
-|duration|Cadeia de Caracteres| A duração de uma atribuição de função.|
-|motivo|Cadeia de Caracteres| O motivo da atribuição de função.|
+|assignmentstate|Cadeia de caracteres| O estado da atribuição. O valor pode ser `Eligible` para atribuição qualificada `Active` -se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários.|
+|duration|Cadeia de caracteres| A duração de uma atribuição de função.|
+|motivo|Cadeia de caracteres| O motivo da atribuição de função.|
 |requestedDateTime|DateTimeOffset| Somente leitura. O tempo de criação da solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|roleId|Cadeia de Caracteres| A ID da função.|
+|roleId|Cadeia de caracteres| A ID da função.|
 |Cronograma|[governanceSchedule](governanceschedule.md)| O objeto Schedule da solicitação de atribuição de função.|
-|status|String| Somente leitura. o status da solicitação de atribuição de função. O valor pode ser `NotStarted`,`Completed`,`RequestedApproval``Scheduled``Approved``ApprovalDenied``ApprovalAborted``Cancelling`,,,,,,,`RequestExpired``Cancelled``Revoked`|
-|ticketNumber|Cadeia de Caracteres| O ticketNumber da atribuição de função. |
-|ticketSystem|Cadeia de Caracteres| O ticketSystem da atribuição de função.|
-|tipo|String| Representando o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: os administradores adicionam usuários a funções; `UserAdd`: Os usuários adicionam atribuições de função.|
+|status|String| Somente leitura. o status da solicitação de atribuição de função. O valor pode ser,,,,,,,,, `NotStarted` `Completed` `RequestedApproval` `Scheduled` `Approved` `ApprovalDenied` `ApprovalAborted` `Cancelling` `Cancelled` `Revoked` `RequestExpired` .|
+|ticketNumber|Cadeia de caracteres| O ticketNumber da atribuição de função. |
+|ticketSystem|Cadeia de caracteres| O ticketSystem da atribuição de função.|
+|tipo|Cadeia de caracteres| Representando o tipo da operação na atribuição de função. O valor pode ser `AdminAdd` : os administradores adicionam usuários a funções; `UserAdd` : os usuários adicionam atribuições de função.|
 |userId|Cadeia de caracteres| A ID do usuário.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |roleInfo|[privilegedRole](privilegedrole.md)| O objeto roleInfo da solicitação de atribuição de função.|
@@ -96,3 +96,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

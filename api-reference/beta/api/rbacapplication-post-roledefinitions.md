@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd41fad0e87d05856f78daf7eb35bc61cdbf4c75
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: f222f00c6327416cbae95c3f87aab848d8bfda5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050378"
 ---
 # <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleDefi
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |string |O nome de exibição da definição de função.|
+|displayName |cadeia de caracteres |O nome de exibição da definição de função.|
 |isEnabled |Boolean |Sinalizador que indica se a função está habilitada para atribuição. Se false, a função não estará disponível para atribuição.|
 |rolePermissions |coleção [unifiedRolePermission](../resources/unifiedrolepermission.md) |Lista de permissões incluídas na função.|
 
@@ -154,3 +154,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

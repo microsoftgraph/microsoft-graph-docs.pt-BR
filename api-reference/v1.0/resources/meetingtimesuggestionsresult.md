@@ -5,16 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6637676fcd8ba9f0dd097aa39fb1b87aefd06574
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd3a1f5ca5b2f389dda431614a8f604e066599ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447406"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022901"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Tipo de recurso meetingTimeSuggestionsResult
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Uma coleção de sugestões de reunião, se houver alguma, ou se não houver motivo.
 
@@ -50,7 +50,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|Cadeia de caracteres|Um motivo para não retornar qualquer sugestão de reunião. Os valores possíveis são: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, ou `unknown`. Esta propriedade é uma cadeia de caracteres vazia se a propriedade **meetingTimeSuggestions** inclui qualquer sugestão de reunião.|
+|emptySuggestionsReason|Cadeia de caracteres|Um motivo para não retornar qualquer sugestão de reunião. Os valores possíveis são: `attendeesUnavailable` , `attendeesUnavailableOrUnknown` , `locationsUnavailable` , `organizerUnavailable` , ou `unknown` . Esta propriedade é uma cadeia de caracteres vazia se a propriedade **meetingTimeSuggestions** inclui qualquer sugestão de reunião.|
 |meetingTimeSuggestions|Coleção [meetingTimeSuggestion](meetingtimesuggestion.md)|Uma matriz de sugestões de reunião.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -62,3 +62,4 @@ Veja a seguir uma representação JSON do recurso
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d85eb8c514cbe8d8841a359f5c27a1570ade9a62
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c737ff17527b6d4bb29487fb666228d71a76170c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022915"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -61,16 +61,16 @@ No corpo da solicitação, forneça os valores para as propriedades relevantes q
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Você pode definir essas notificações para apenas um intervalo de datas futuras.|
-|dateFormat|cadeia de caracteres|O formato de data da caixa de correio do usuário.|
+|dateFormat|string|O formato de data da caixa de correio do usuário.|
 |delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Se o usuário tiver um representante de calendário, isso especificará se o representante, o proprietário da caixa de correio ou ambos recebem mensagens de reunião e respostas da reunião. Os valores possíveis são: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |idioma|[localeInfo](../resources/localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
-|Formato de TimeFormat|cadeia de caracteres|O formato de hora da caixa de correio do usuário.|
+|Formato de TimeFormat|string|O formato de hora da caixa de correio do usuário.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
 |workingHours|[workingHours](../resources/workinghours.md)|As horas, os dias de uma semana e o fuso horário em que o usuário trabalha.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e as propriedades atualizadas de um objeto [mailboxSettings](../resources/mailboxsettings.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e as propriedades atualizadas de um objeto [mailboxSettings](../resources/mailboxsettings.md) no corpo da resposta.
 
 ## <a name="errors"></a>Erros
 
@@ -271,3 +271,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 27f0f5c27814ff09433cc68b82930878feb95963
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a1139388f5fcb17ea43cecf1cf321f490fe87c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447203"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022887"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 
@@ -99,3 +99,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

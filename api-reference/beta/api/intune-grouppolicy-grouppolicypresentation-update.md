@@ -3,14 +3,14 @@ title: Atualizar groupPolicyPresentation
 description: Atualiza as propriedades de um objeto groupPolicyPresentation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6532615d0e2228d1caec4cf784a7d139b9323e13
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e18c2e2cbc7669f82d43dd4ac01676f2630b5382
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375494"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043252"
 ---
 # <a name="update-grouppolicypresentation"></a>Atualizar groupPolicyPresentation
 
@@ -54,14 +54,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
-|id|String|Chave da entidade.|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -92,6 +92,9 @@ Content-Length: 205
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

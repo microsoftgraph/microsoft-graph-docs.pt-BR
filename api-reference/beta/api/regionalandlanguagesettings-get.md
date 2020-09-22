@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: settings
 doc_type: apiPageType
-ms.openlocfilehash: 6ff0e617656524e43fafa85a800a3adb99282f70
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: a78c2f22e6e08ea7dc4709fbf3eaaaa8a5c1d5bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050364"
 ---
 # <a name="get-regionalandlanguagesettings"></a>Obter regionalAndLanguageSettings
 
@@ -145,3 +145,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

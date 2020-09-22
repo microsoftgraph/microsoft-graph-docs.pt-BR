@@ -3,14 +3,14 @@ title: Get userInstallStateSummary
 description: Ler propriedades e relações do objeto userInstallStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70896167324398427564518b34df4444564b45dd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4c6bce85851096771d68e9f57266ea035669d3e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077790"
 ---
 # <a name="get-userinstallstatesummary"></a>Get userInstallStateSummary
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -79,6 +79,9 @@ Content-Length: 269
   }
 }
 ```
+
+
+
 
 
 

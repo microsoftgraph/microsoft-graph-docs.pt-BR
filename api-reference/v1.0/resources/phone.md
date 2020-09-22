@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2817089138a27807fc21f33f1753748ae5221c22
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a5b62fd10a26f06e983a98937e0d434674330767
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022831"
 ---
 # <a name="phone-resource-type"></a>tipo de recurso de telefone
 
@@ -23,7 +23,7 @@ Representa um número de telefone.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |number|string|O número de telefone.|
-|type|PhoneType|O tipo de número de telefone. Os valores possíveis são `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|tipo|PhoneType|O tipo de número de telefone. Os valores possíveis são `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -54,3 +54,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

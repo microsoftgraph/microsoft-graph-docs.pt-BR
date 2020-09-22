@@ -1,22 +1,22 @@
 ---
 title: Listar membros
-description: Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos organizacionais e outros grupos como membros.
+description: Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos organizacionais, dispositivos, entidades de serviço e outros grupos como membros.
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fa1852b52ec5f8e2651666076d2adb544544208c
-ms.sourcegitcommit: b88dce7297f196345f16c2c126d7bdd482d22a23
+ms.openlocfilehash: 6eebc7a1f9a33b1cebf5d935b4ff5af0a4b3a790
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006339"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057630"
 ---
 # <a name="list-members"></a>Listar membros
 
 Namespace: microsoft.graph
 
-Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos organizacionais e outros grupos como membros. Essa operação não é transitiva.
+Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos organizacionais, dispositivos, entidades de serviço e outros grupos como membros. No momento, as entidades de serviço não estão listadas como membros de grupo devido à distribuição em estágios das entidades de serviço para o ponto de extremidade do Graph v 1.0. Essa operação não é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -114,3 +114,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

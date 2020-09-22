@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 0c6a1ca2ba731ced66148563c3f94053e39431ef
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: ed104ee94468d8331ca0d1f172513337da1f0db9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022845"
 ---
 # <a name="teamspecialization-enum-type"></a>tipo de enumeração Teamsspecialization
 
@@ -30,3 +30,4 @@ Indica se a [equipe](../resources/team.md) destina-se a um caso de uso específi
 | educationProfessionalLearningCommunity | 3  | Experiência de equipe otimizada para um PLC. Saiba mais sobre o PLC [aqui](https://en.wikipedia.org/wiki/Professional_learning_community). |
 | educationStaff     | 4      |  Tipo de equipe para uma experiência otimizada para a equipe em uma organização, onde o líder da equipe, como o principal, é o administrador e os professores são membros de uma equipe que vem com um bloco de anotações especializado. Para obter mais detalhes, consulte [bloco de anotações de equipe do OneNote para educação](https://www.onenote.com/staffnotebookedu). |
 | unknownFutureValue | 7      | O valor de sentinela reservado como um espaço reservado para expansão futura da enumeração. |
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: 5d308669196945ebbd18431000ac5836ed4194cf
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9cfef2da8204723d6f6aac2bd4006edc3a62789e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070433"
 ---
 # <a name="workbooknameditem-resource-type"></a>tipo de recurso workbookNamedItem
 
@@ -35,14 +35,14 @@ Representa um nome definido para um intervalo de células ou um valor. Os nomes 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|string|O nome do objeto. Somente leitura.|
+|name|string|O nome do objeto. Somente leitura.|
 |comment|string|Representa o comentário associado a esse nome.|
 |scope|string|Indica se o nome tem escopo para a pasta de trabalho ou uma planilha específica. Somente leitura.|
 |type|string|Indica o tipo de referência associado ao nome. Os valores possíveis são: `String`, `Integer`, `Double`, `Boolean` e `Range`. Somente leitura.|
 |value|string|Representa a fórmula à qual o nome está definido para fazer referência. Por exemplo, =Plan14!$B$2:$H$12, =4,75, etc. Somente leitura.|
 |visible|booliano|Determina se o objeto fica visível ou não.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |planilha|[workbookWorksheet](workbookworksheet.md)|Retorna a planilha em que o item nomeado está no escopo. Disponível somente se o item estiver com escopo de planilha. Somente leitura.|
@@ -86,3 +86,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

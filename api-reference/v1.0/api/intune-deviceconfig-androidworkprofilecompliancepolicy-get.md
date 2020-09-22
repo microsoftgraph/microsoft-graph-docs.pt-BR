@@ -3,14 +3,14 @@ title: Obter na entidadeandroidworkprofilecompliancepolicy
 description: Leia as propriedades e as relações do objeto na entidadeandroidworkprofilecompliancepolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de449270d88fe90ae5d3f17c161edf7a9c14f433
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d59a806542ced3f6af5a376ac83da3eaabf891df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401363"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083733"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>Obter na entidadeandroidworkprofilecompliancepolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -101,6 +101,9 @@ Content-Length: 1417
   }
 }
 ```
+
+
+
 
 
 

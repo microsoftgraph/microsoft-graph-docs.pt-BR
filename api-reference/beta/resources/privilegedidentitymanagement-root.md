@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: e71340590430cb8706fc2baeac396ca64503b4e7
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 6b0aaf5ac4157512c1b84acf3a76800669b14f7d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219204"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070533"
 ---
 # <a name="privileged-identity-management"></a>Privileged Identity Management
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[O PIM (Privileged Identity Management) do Active Directory do Azure (Azure AD)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) é um serviço que permite gerenciar, controlar e monitorar o acesso a recursos importantes em sua organização. Isso inclui o acesso a recursos no Azure AD, recursos do Azure e outros Microsoft Online Services, como o Office 365 ou o Microsoft Intune. O Microsoft Graph fornece APIs que você pode usar para gerenciar as funções do Azure AD e as funções de recursos do Azure.
+[O PIM (Privileged Identity Management) do Active Directory do Azure (Azure AD)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) é um serviço que permite gerenciar, controlar e monitorar o acesso a recursos importantes em sua organização. Isso inclui o acesso a recursos no Azure AD, recursos do Azure e outros Microsoft Online Services, como o Microsoft 365 ou o Microsoft Intune. O Microsoft Graph fornece APIs que você pode usar para gerenciar as funções do Azure AD e as funções de recursos do Azure.
 
 - [APIs para funções do Azure AD](privilegedidentitymanagement-directory.md)
 - [APIs para funções de recursos do Azure](privilegedidentitymanagement-resources.md)
@@ -38,3 +38,5 @@ Namespace: microsoft.graph
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e2e5843d29261d4f6fd98d0b6bb3810a17536020
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: ffdf954ab963d123fca71c937d44add9a67cd53b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916984"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022966"
 ---
 # <a name="create-tokenlifetimepolicy"></a>Criar tokenLifetimePolicy
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [tokenLif
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -132,3 +132,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9331482f3665da170e2f98055627083bbf3a1132
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 5bfdc7239506d893a414c0624d65e6a18022ceb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330054"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077678"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -210,3 +210,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso changeNotificationEncryptedContent
-description: Uma assinatura com dados de recurso permite que um aplicativo cliente receba notificações de alteração com alterações nos dados no Microsoft Graph. O conteúdo criptografado notificação de alteração representa os dados criptografados anexados à notificação.
+description: Um objeto changeNotificationEncryptedContent representa os dados criptografados anexados a uma notificação de alteração.
 localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4ca2230cf3735cb696136f3b3014e8545202ebfe
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: c3d5f576c5259ba69f6fa2194cf52d7834a1f717
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598490"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192158"
 ---
 # <a name="changenotificationencryptedcontent-resource-type"></a>tipo de recurso changeNotificationEncryptedContent
 
@@ -22,10 +22,6 @@ Representa os dados criptografados anexados a uma notificação de alteração.
 
 Para obter detalhes, consulte [set up Change Notifications que incluem dados de recurso (visualização)](/graph/webhooks-with-resource-data.md).
 
-## <a name="methods"></a>Métodos
-
-Nenhum.
-
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
@@ -35,10 +31,6 @@ Nenhum.
 | DataKeyNames | string | Chave simétrica codificada em base64 gerada pelo Microsoft Graph para criptografar o valor dos dados e gerar a assinatura dos dados. Essa chave é criptografada com a chave pública de certificado fornecida durante a assinatura. Ele deve ser descriptografado com a chave privada do certificado para que possa ser usado para descriptografar os dados ou verificar a assinatura. Essa chave foi criptografada com o seguinte pacote de codificação: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` . |
 | encryptionCertificateId | string | ID do certificado usado para criptografar o `dataKey` . |
 | encryptionCertificateThumbprint | string | Representação hexadecimal da impressão digital do certificado usado para criptografar o `dataKey` . |
-
-## <a name="relationships"></a>Relações
-
-Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -74,3 +66,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

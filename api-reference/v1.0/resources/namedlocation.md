@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7519fe60702293a60fb9b5e4c59d8c810d8de14a
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: dc92ba18f51f02f03713e43d0fbd4efe4e7cb227
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384460"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022894"
 ---
 # <a name="namedlocation-resource-type"></a>tipo de recurso namedLocation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Esta é a classe base que representa um local nomeado do Azure Active Directory. Locais nomeados são regras personalizadas que definem locais de rede que podem ser usados em uma política de acesso condicional.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -31,7 +31,7 @@ Esta é a classe base que representa um local nomeado do Azure Active Directory.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|O tipo TIMESTAMP representa data e hora de criação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|displayName|Cadeia de caracteres|Nome legível do local.|
+|displayName|String|Nome legível do local.|
 |id|String|Identificador de um objeto namedLocation. Somente leitura.|
 |modifiedDateTime|DateTimeOffset|O tipo TIMESTAMP representa data e hora da última modificação do local usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 
@@ -71,3 +71,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

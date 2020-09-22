@@ -3,14 +3,14 @@ title: Atualizar groupPolicyOperation
 description: Atualiza as propriedades de um objeto groupPolicyOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 365d94e1c7710bf8c1b84878a1b0feff123f3faf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3e47b04e84cf6c713036e4f519fb8b71819cf05f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043259"
 ---
 # <a name="update-grouppolicyoperation"></a>Atualizar groupPolicyOperation
 
@@ -55,14 +55,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |:---|:---|:---|
 |OperationType|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|O tipo de operação de política de grupo. Os valores possíveis são: `none`, `upload`, `uploadNewVersion`, `addLanguageFiles`, `removeLanguageFiles`, `updateLanguageFiles`, `remove`.|
 |operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|O status da operação da política de grupo. Os valores possíveis são: `unknown`, `inProgress`, `success`, `failed`.|
-|statusDetails|String|Detalhes do status da operação da política de grupo.|
-|id|String|Chave da entidade.|
+|statusDetails|Cadeia de caracteres|Detalhes do status da operação da política de grupo.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [groupPolicyOperation](../resources/intune-grouppolicy-grouppolicyoperation.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,6 +97,9 @@ Content-Length: 285
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a7e28e32a1be71061c2cb629f04b251a874e2ea3
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 50f918f804cda5fbf1bd20d125f4e29e1d5c35d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917220"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023032"
 ---
 # <a name="create-tokenissuancepolicy"></a>Criar tokenIssuancePolicy
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [token
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um novo objeto [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -130,3 +130,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

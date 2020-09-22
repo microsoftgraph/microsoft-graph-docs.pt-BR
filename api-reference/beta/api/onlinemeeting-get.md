@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 435a8fcd37a44d6d6a31de2c8ae4e10f67a75951
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: fc85b1413a0b4405bdbbce17c5979c705e335304
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036209"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :---------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
-| Aplicativo                            | OnlineMeetings. Read. All, OnlineMeetings. ReadWrite. All * |
+| Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy.md) e concedê-la a um usuário, autorizando o aplicativo configurado na política a recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
+> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy) e concedê-la a um usuário, autorizando o aplicativo configurado na política a recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 >
 > - O caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
 > - `id` nas duas primeiras rotas refere-se à [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).
-> - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy.md).
+> - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` é a **ID** de uma [entidade onlineMeeting](../resources/onlinemeeting.md).
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -187,3 +187,5 @@ Content-Length: 1574
   ]
 }
 -->
+
+

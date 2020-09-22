@@ -3,14 +3,14 @@ title: Obter iosLobAppProvisioningConfiguration
 description: Leia as propriedades e as relações do objeto iosLobAppProvisioningConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c1e04875f68a16fd36ce5e89bd70622448331fa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d4685f6f8091c4507716d365997fecf0b159a453
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036188"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>Obter iosLobAppProvisioningConfiguration
 
@@ -92,6 +92,9 @@ Content-Length: 592
   }
 }
 ```
+
+
+
 
 
 

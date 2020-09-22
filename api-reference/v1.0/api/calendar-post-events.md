@@ -5,18 +5,18 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e096faa7e7652c4016a88469c8d861ad10352369
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 6fcd43bba70b466cc79736ad0a97cc93c4aa0c61
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43510837"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070356"
 ---
 # <a name="create-event"></a>Criar evento
 
 Namespace: microsoft.graph
 
-Use esta API para criar um novo evento em um calendário. O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365. 
+Use esta API para criar um novo evento em um calendário. O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Microsoft 365. 
 
 ## <a name="permissions"></a>Permissões
 Dependendo do tipo de calendário em que o evento se encontra e do tipo de permissão (delegada ou aplicativo) solicitada, para chamar essa API é necessário ter umas das seguintes permissões. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -394,3 +394,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

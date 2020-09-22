@@ -3,14 +3,14 @@ title: Criar userInstallStateSummary
 description: Criar um novo objeto userInstallStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 847a1f28aaceec734ace36dc038c7531acbf514e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9493bf685cde5eb142f77f6504317fe05db208ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468980"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077797"
 ---
 # <a name="create-userinstallstatesummary"></a>Criar userInstallStateSummary
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userInst
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|
@@ -96,6 +96,9 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Criar deviceConfigurationGroupAssignment
 description: Criar um novo objeto deviceConfigurationGroupAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fd3d6ce160f5d4302fff27bf5ad4af6639883f2
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 7b86bd2ce33861f50f642c886bce2247d0909880
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022677"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Criar deviceConfigurationGroupAssignment
 
@@ -46,7 +46,6 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/rootCertificateForServerValidation/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/identityCertificateForClientAuthentication/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/groupAssignments
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/groupAssignments
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/groupAssignments
 ```
 
@@ -65,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |targetGroupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
-|excludeGroup|Boolean|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
+|excludeGroup|Booliano|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
 
 
 
@@ -102,6 +101,9 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
+
+
+
 
 
 

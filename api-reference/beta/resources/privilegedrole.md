@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 51114eea797d27886f48c664d06d0b88d4a35a2d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 3d0b24022696fbb0df861ce0c2a78e0c9bbbd6e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070517"
 ---
 # <a name="privilegedrole-resource-type"></a>tipo de recurso privilegedRole
 
@@ -37,7 +37,7 @@ Representa uma função de administrador do Azure AD, como um **administrador gl
 |id|cadeia de caracteres|O identificador exclusivo para a função de administrador. É uma cadeia de caracteres GUID e tem o mesmo valor que a ID de modelo de função do Azure AD para a função determinada. Somente leitura.|
 |name|string|Nome da função.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assignments|[privilegedRoleAssignment](privilegedroleassignment.md) collection| As atribuições para essa função. Somente leitura. Anulável.|
@@ -78,3 +78,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

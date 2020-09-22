@@ -3,14 +3,14 @@ title: tipo de recurso vppTokenActionResult
 description: O status da ação executada com um token do Apple Volume Purchase Program.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff272e6dea9a4778c9f2cb33f3c59f411b257da7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0cc4856901af4f97fde87acc57916742a27186ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029348"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>tipo de recurso vppTokenActionResult
 
@@ -49,6 +49,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

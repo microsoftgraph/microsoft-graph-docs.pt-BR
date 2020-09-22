@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 53994f70dd4102468f1321f2425a1794e69d9e3f
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 28fd1d913332b4329c2b3184f76009ff8a7ccbc3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199561"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036210"
 ---
 # <a name="remove-onpremisesagent-from-an-onpremisesagentgroup"></a>Remover o onPremisesAgent de um onPremisesAgentGroup
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

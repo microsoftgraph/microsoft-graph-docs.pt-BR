@@ -3,14 +3,14 @@ title: tipo de enumeração macOSSystemExtensionType
 description: Sinalizador enum que representa os tipos permitidos de extensões de sistema macOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cc1c6053b6c7df942c142ca60d2c035a67c089b7
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 062c14baf83e1bb18932492737273e5136d4f7ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179394"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064139"
 ---
 # <a name="macossystemextensiontype-enum-type"></a>tipo de enumeração macOSSystemExtensionType
 
@@ -25,9 +25,12 @@ Sinalizador enum que representa os tipos permitidos de extensões de sistema mac
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|driverExtensionsAllowed|1|Habilita as extensões de driver.|
-|networkExtensionsAllowed|duas|Habilita as extensões de rede.|
+|driverExtensionsAllowed|1 |Habilita as extensões de driver.|
+|networkExtensionsAllowed|2 |Habilita as extensões de rede.|
 |endpointSecurityExtensionsAllowed|4 |Habilita as extensões de segurança do ponto de extremidade.|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 720a3839d14e2a81d88292f1c3809a449a57b738
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 77792c0398a5bc47f689dcd029a26e7174e57094
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917247"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022957"
 ---
 # <a name="list-appliesto"></a>Listar se aplica
 
@@ -40,7 +40,7 @@ GET /policies/tokenLifetimePolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$expand`ao `$select` e `$top` aos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, confira [parâmetros de consulta OData](/graph/query-parameters). Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
+Este método oferece suporte `$expand` ao `$select` e `$top` aos parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Ao usar `$expand` certifique-se de que seu aplicativo solicite permissões para ler os objetos expandidos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -126,3 +126,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

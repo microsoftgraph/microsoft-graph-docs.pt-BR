@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: a402d46fe00456acaaf7c4a4a4cc75919bbbc6c9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b273ecf2873842bb93b840241f2bf0a1741f1aa
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989728"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192172"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Tipo de recurso changeNotificationCollection
 
@@ -24,13 +24,13 @@ Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notifica
 
 ## <a name="methods"></a>Methods
 
-Nenhum.
+Nenhum
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| validationTokens | collection(string) | Contém uma matriz de tokens JWT gerados pelo Microsoft Graph para o aplicativo validar a origem das notificações. O Microsoft Graph gera um token único para cada aplicativo distinto e um par de locatários onde existe um item no conunto valor. Tenha em mente que as notificações podem conter uma mistura de itens para vários aplicativos e locatários que se inscreveram usando a mesma URL de notificação. Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) opcional. |
+| validationTokens | collection(string) | Contém uma matriz de tokens JWT gerados pelo Microsoft Graph para o aplicativo validar a origem das notificações. O Microsoft Graph gera um único token para cada par de aplicativos e locatários distintos para um item se ele existir na matriz de valores. Tenha em mente que as notificações podem conter uma mistura de itens para vários aplicativos e locatários que se inscreveram usando a mesma URL de notificação. Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) opcional. |
 | valor | coleção ([changeNotification](changenotification.md)) | O conjunto de notificações que estão sendo enviadas à URL de notificação. Obrigatório. |
 
 ## <a name="relationships"></a>Relações

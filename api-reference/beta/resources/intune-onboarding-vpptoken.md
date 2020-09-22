@@ -3,14 +3,14 @@ title: Tipo de recurso vppToken
 description: Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume Purchase Program para Empresas ou Educação. Isso envolve configurar uma conta do Apple VPP do site da Apple e carregar o token do Apple VPP Empresarial ou Educacional ao Intune. Você pode sincronizar suas informações de volume de compras com o Intune e acompanhar o uso do aplicativo comprado por volume. Você pode carregar vários tokens do Apple VPP Empresarial ou Educacional.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ecfb2dd094fca4ae3d141d4e923c57b61b2a51b8
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: a9da38e996ddb77f0698b1541e8ea889be3e7ce9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029355"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
 
@@ -55,7 +55,7 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 |displayName|String|Um nome amigável de token especificado pelo administrador.|
 |LocationName|String|Local do token retornado da Apple VPP.|
 |claimTokenManagementFromExternalMdm|Booliano|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
-|roleScopeTagIds|Coleção de cadeia de caracteres|IDs de marcas de escopo de função atribuídas a esta entidade.|
+|roleScopeTagIds|Coleção String|IDs de marcas de escopo de função atribuídas a esta entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -101,6 +101,9 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
 
 
 

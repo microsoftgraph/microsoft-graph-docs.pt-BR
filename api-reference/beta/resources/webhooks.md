@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 90ce0049f2dbd35baf122ecaafe762303b3127ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c664d25be4e7106ca7d2024de4b8fb4dc52cc54
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973511"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192173"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -35,7 +35,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | [lista][] em um [site][] do SharePoint | `/sites/{id}/lists/{id}` | Não |
 | [Alerta][] de segurança | Alterações em um alerta específico:<br>`/security/alerts/{id}` <br>Alterações em alertas filtrados:<br> `/security/alerts/?$filter`| Não |
 | Teams [callRecord][] | Mudanças para _todos os_ registros de chamadas: `/communications/callRecords` | Não |
-| Equipes [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/allMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/allMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
+| Equipes [chatmessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
 | [Presença][] de equipes | Alterações na presença de um único usuário: `/communications/presences/{id}` <br> Alterações em várias presenças de usuários:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
 
 > **Observação**: qualquer trajetória de recurso que comece com o `/users/{id}` também pode aceitar `/me` referenciar o usuário conectado.
@@ -46,7 +46,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 
 | Tipo de permissão                        | Tipos de recurso com suporte                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [presença][]|
+| Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [presença][], [chat][] (visualização) |
 | Delegado - conta pessoal da Microsoft | [contato][], [driveItem][], [lista][], [evento][], [mensagem][]                                        |
 | Aplicativo                            | [alerta][], [contato][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [callRecord][], [chat][]|
 
@@ -71,6 +71,6 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [usuário]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alerta]: ./alert.md
-[presence]: ./presence.md
+[presença]: ./presence.md
 
 
