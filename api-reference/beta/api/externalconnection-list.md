@@ -5,16 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c47d2e58bed88748e6b05e3099bc1d2d930bbb9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b01b6fc487a52a291bcc10f6732bfab649fe4cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422254"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006850"
 ---
 # <a name="list-connections"></a>Listar conexões
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [externalConnection](../resources/externalconnection.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [externalConnection](../resources/externalconnection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -140,3 +140,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

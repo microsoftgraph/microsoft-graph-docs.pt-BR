@@ -3,18 +3,18 @@ title: Obter androidForWorkEnrollmentProfile
 description: Ler propriedades e relações do objeto androidForWorkEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8289b0769ef44dc1777a7b5d095742db89a99114
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8b3f101a4116c096642f5cb26f69c9a2da1a33d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418210"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006654"
 ---
 # <a name="get-androidforworkenrollmentprofile"></a>Obter androidForWorkEnrollmentProfile
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -91,6 +91,9 @@ Content-Length: 719
   }
 }
 ```
+
+
+
 
 
 

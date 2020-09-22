@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: df778d95256c96a83bd211c68d129a0b420ff49c
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.openlocfilehash: 758942338cbe62ea254ae437bb3e70fd6d5ee465
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081088"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007095"
 ---
 # <a name="educationuser-delta"></a>educationUser: Delta
 
@@ -154,3 +154,5 @@ Content-length: 1039
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

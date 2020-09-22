@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8dac9c1ac5859a1a06a71a1d681b1468730639b1
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: be376d6da610c91d0fc2e68684cb91a5a9417f45
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44862498"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006942"
 ---
 # <a name="event-delta"></a>evento: delta
 
@@ -472,3 +472,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
