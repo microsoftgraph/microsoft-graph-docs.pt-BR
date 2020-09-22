@@ -5,30 +5,30 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 03e73fe63e7624b2ab9d549c3b9ccd1526301a9c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4db88b74ae0acb2e817bd575f4e990774533064e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013690"
 ---
-# <a name="externalsponsors-complex-type"></a><span data-ttu-id="b755c-103">tipo complexo externalSponsors</span><span class="sxs-lookup"><span data-stu-id="b755c-103">externalSponsors complex type</span></span>
+# <a name="externalsponsors-complex-type"></a><span data-ttu-id="35f86-103">tipo complexo externalSponsors</span><span class="sxs-lookup"><span data-stu-id="35f86-103">externalSponsors complex type</span></span>
 
-<span data-ttu-id="b755c-104">Namespace: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b755c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="35f86-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="35f86-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b755c-105">Usada no estágio de aprovação de uma [política de atribuição de pacote do Access](accesspackageassignmentpolicy.md).</span><span class="sxs-lookup"><span data-stu-id="b755c-105">Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="b755c-106">É um subtipo de [userset](userset.md), no qual o valor `@odata.type` `#microsoft.graph.externalSponsors` indica que os patrocinadores externos da organização conectada do usuário solicitante sejam o aprovador.</span><span class="sxs-lookup"><span data-stu-id="b755c-106">It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.externalSponsors` indicates that a requesting user's connected organization external sponsors are to be the approver.</span></span> <span data-ttu-id="b755c-107">Esse aprovador só é aplicável a solicitações de usuários que fazem parte de uma organização conectada.</span><span class="sxs-lookup"><span data-stu-id="b755c-107">This approver is only applicable to requests from users who are part of a connected organization.</span></span>  <span data-ttu-id="b755c-108">Ao criar um estágio de aprovação de política de atribuição de pacote do Access com o externalSponsors, também inclua outro aprovador, como um único usuário ou membro de grupo, caso a organização conectada não tenha um patrocinador externo.</span><span class="sxs-lookup"><span data-stu-id="b755c-108">When creating an access package assignment policy approval stage with externalSponsors, also include another approver, such as a single user or group member, in case the connected organization does not have an external sponsor.</span></span>
+<span data-ttu-id="35f86-105">Usada no estágio de aprovação de uma [política de atribuição de pacote do Access](accesspackageassignmentpolicy.md).</span><span class="sxs-lookup"><span data-stu-id="35f86-105">Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="35f86-106">É um subtipo de [userset](userset.md), no qual o `@odata.type` valor `#microsoft.graph.externalSponsors` indica que os patrocinadores externos da organização conectada do usuário solicitante sejam o aprovador.</span><span class="sxs-lookup"><span data-stu-id="35f86-106">It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.externalSponsors` indicates that a requesting user's connected organization external sponsors are to be the approver.</span></span> <span data-ttu-id="35f86-107">Esse aprovador só é aplicável a solicitações de usuários que fazem parte de uma organização conectada.</span><span class="sxs-lookup"><span data-stu-id="35f86-107">This approver is only applicable to requests from users who are part of a connected organization.</span></span>  <span data-ttu-id="35f86-108">Ao criar um estágio de aprovação de política de atribuição de pacote do Access com o externalSponsors, também inclua outro aprovador, como um único usuário ou membro de grupo, caso a organização conectada não tenha um patrocinador externo.</span><span class="sxs-lookup"><span data-stu-id="35f86-108">When creating an access package assignment policy approval stage with externalSponsors, also include another approver, such as a single user or group member, in case the connected organization does not have an external sponsor.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b755c-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b755c-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="35f86-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="35f86-109">Properties</span></span>
 
-| <span data-ttu-id="b755c-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b755c-110">Property</span></span>                     | <span data-ttu-id="b755c-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="b755c-111">Type</span></span>                      | <span data-ttu-id="b755c-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="b755c-112">Description</span></span> |
+| <span data-ttu-id="35f86-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="35f86-110">Property</span></span>                     | <span data-ttu-id="35f86-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="35f86-111">Type</span></span>                      | <span data-ttu-id="35f86-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="35f86-112">Description</span></span> |
 | :--------------------------- | :------------------------ | :---------- |
-| <span data-ttu-id="b755c-113">IsBackup</span><span class="sxs-lookup"><span data-stu-id="b755c-113">isBackup</span></span> | <span data-ttu-id="b755c-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="b755c-114">Boolean</span></span> | <span data-ttu-id="b755c-115">Indica se o patrocinador é um Aprovador de fallback de backup.</span><span class="sxs-lookup"><span data-stu-id="b755c-115">Indicates whether the sponsor is a backup fallback approver.</span></span> |
+| <span data-ttu-id="35f86-113">IsBackup</span><span class="sxs-lookup"><span data-stu-id="35f86-113">isBackup</span></span> | <span data-ttu-id="35f86-114">Booliano</span><span class="sxs-lookup"><span data-stu-id="35f86-114">Boolean</span></span> | <span data-ttu-id="35f86-115">Indica se o patrocinador é um Aprovador de fallback de backup.</span><span class="sxs-lookup"><span data-stu-id="35f86-115">Indicates whether the sponsor is a backup fallback approver.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="b755c-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b755c-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="35f86-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="35f86-116">JSON representation</span></span>
 
-<span data-ttu-id="b755c-117">Veja a seguir uma representação JSON desse tipo.</span><span class="sxs-lookup"><span data-stu-id="b755c-117">The following is a JSON representation of this type.</span></span>
+<span data-ttu-id="35f86-117">Veja a seguir uma representação JSON desse tipo.</span><span class="sxs-lookup"><span data-stu-id="35f86-117">The following is a JSON representation of this type.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -57,3 +57,5 @@ ms.locfileid: "42498606"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
