@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dd00cbf5ce8395a819136ad9e655fa7670e5f3fa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba13a5993a4969162a1b8753e6391afa01802dff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447413"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984254"
 ---
 # <a name="meetingparticipants-resource-type"></a>tipo de recurso meetingParticipants
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Participantes de uma reunião.
 
@@ -55,3 +55,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+

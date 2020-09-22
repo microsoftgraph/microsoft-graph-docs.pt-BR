@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f5dac7645e6fe2fe4da4dd8e34220e26f932ad93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b82daea117094456c6a0ecd2b51384603c9fe26
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508741"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984569"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -110,7 +110,7 @@ Content-length: 157
 }
 ```
 
-Se chamado sem o parâmetro `count` opcional, essa função retornará a única linha acima do intervalo.
+Se chamado sem o `count` parâmetro opcional, essa função retornará a única linha acima do intervalo.
 
 ##### <a name="request"></a>Solicitação
 
@@ -174,3 +174,4 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+

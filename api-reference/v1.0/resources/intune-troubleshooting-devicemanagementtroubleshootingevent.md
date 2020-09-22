@@ -3,14 +3,14 @@ title: Tipo de recurso deviceManagementTroubleshootingEvent
 description: Evento que representa uma falha geral.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba52be83003c826970ce8b3941007e398323058e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3fc85d4d49f06de22a8e81a6bee9b04a68eb7882
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451262"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984289"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Tipo de recurso deviceManagementTroubleshootingEvent
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Evento que representa uma falha geral.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceManagementTroubleshootingEvents](../api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md)|Conjunto [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|Listar propriedades e relações de objetos de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
@@ -55,6 +55,8 @@ Veja a seguir uma representação JSON do recurso.
   "correlationId": "String"
 }
 ```
+
+
 
 
 

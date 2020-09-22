@@ -3,14 +3,14 @@ title: Tipo de recurso schemaExtension (extensões de esquema)
 description: 'As extensões de esquema permitem que você defina um esquema para estender e adicionar dados personalizados digitados a um tipo de recurso. Os dados personalizados aparecem como um tipo complexo no recurso estendido. '
 localization_priority: Priority
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 38bb2d34347f253d114d549b32d6db98c12aa831
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71c4bd70fafe2ea652d2a0e31134196281aa161d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446951"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984149"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>Tipo de recurso schemaExtension (extensões de esquema)
 
@@ -22,9 +22,9 @@ As extensões de esquema são suportadas pelos seguintes tipos de recursos:
 
 - [contact](contact.md)
 - [device](device.md)
-- [event](event.md) em um usuário ou calendário de grupo do Office 365
-- [post](post.md) de um grupo do Office 365
-- [group](group.md)
+- [event](event.md) em um usuário ou calendário de grupo do Microsoft 365
+- [post](post.md) de um grupo do Microsoft 365
+- [grupo](group.md)
 - [message](message.md) 
 - [organization](organization.md)
 - [user](user.md)
@@ -83,3 +83,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

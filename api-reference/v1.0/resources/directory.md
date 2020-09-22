@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 739fb380a6686bd6e68694be88c91df548972890
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 45ec089f181ea90238423cfedea76e5b7b2f8609
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181878"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984527"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
 
@@ -20,7 +20,7 @@ Representa um item excluído no diretório. Quando um item é excluído, ele é 
 
 Atualmente, a funcionalidade de itens excluídos só é suportada para o [aplicativo](application.md), [grupo](group.md) e recursos do [usuário](user.md) .
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método         | Tipo de retorno | Descrição |
 |:---------------|:------------|:------------|
@@ -75,3 +75,4 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

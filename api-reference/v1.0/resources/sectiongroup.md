@@ -5,16 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 2e0d9b3b963e02bf017630ad898501518449a20f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a3f31f4de8d3453003f87bd30ca0dcc61267af9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446937"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984114"
 ---
 # <a name="sectiongroup-resource-type"></a>tipo de recurso de @ @ @ Section
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 Um grupo de seções em um bloco de anotações do OneNote. Os grupos de seções podem conter seções e grupos de seções.
 
@@ -56,9 +56,9 @@ Veja a seguir uma representação JSON do recurso.
 |id|String|O identificador exclusivo do grupo de seções. Somente leitura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o grupo de seções foi modificado pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome do grupo de seção.|
-|sectionGroupsUrl|String|A URL da propriedade `sectionGroups` de navegação, que retorna todos os grupos de seção no grupo de seções. Somente leitura.|
-|sectionsUrl|String|A URL da propriedade `sections` de navegação, que retorna todas as seções no grupo de seções. Somente leitura.|
+|displayName|String|O nome do grupo de seção.|
+|sectionGroupsUrl|String|A URL da `sectionGroups` propriedade de navegação, que retorna todos os grupos de seção no grupo de seções. Somente leitura.|
+|sectionsUrl|String|A URL da `sections` propriedade de navegação, que retorna todas as seções no grupo de seções. Somente leitura.|
 |própria|String|O ponto de extremidade onde você pode obter detalhes sobre o grupo de seções. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
@@ -88,3 +88,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

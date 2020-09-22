@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5f6ace7ad00d51494f3474aadaafd1fecc4d0f35
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 0b554db9b320e4eb403aa51f67f31006f9a3b0cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556125"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984572"
 ---
 # <a name="update-shiftpreferences"></a>Atualizar shiftPreferences
 
@@ -136,3 +136,4 @@ HTTP/1.1 204 NO CONTENT
   ]
 }
 -->
+

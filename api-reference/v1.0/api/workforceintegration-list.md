@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1879feab262460878b2753be8080fbbab66ebfe4
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: de62b21264ea9cd4b807849362c5ec6aebe32913
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "44217557"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984548"
 ---
 # <a name="list-workforceintegrations"></a>Listar workforceIntegrations
 
@@ -138,3 +138,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
