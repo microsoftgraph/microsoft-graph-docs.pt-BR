@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 4331ae8aa655ac0b250f809eeec682451a208026
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f0449222e9d9694636653f23c0467f6e325d66d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055887"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -587,3 +587,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

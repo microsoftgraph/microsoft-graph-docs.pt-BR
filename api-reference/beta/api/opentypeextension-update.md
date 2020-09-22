@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 22f0f8392de5f4e7cf2a57bcf469968087391903
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: fdba19b0322049211a81a844d8c10fb6c1b08991
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849601"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055875"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
@@ -277,3 +277,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

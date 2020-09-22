@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 57fb2588656e55c2f15d5e893fd91a6415d60219
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: b339431a995f610214317aa98dd914f598a2ec2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181284"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055865"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -149,3 +149,5 @@ Content-length: 411
   ]
 }
 -->
+
+
