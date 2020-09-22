@@ -1,16 +1,16 @@
 ---
 title: 'group: removeFavorite'
-description: Remover o grupo da lista de grupos de favoritos do usuário atual. Suportado somente para grupos do Microsoft 365.
+description: Remover o grupo da lista de grupos de favoritos do usuário atual. Apenas grupos do Microsoft 365 são suportados.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe33a3ada951a87ea82f6f4875ab11843e9971b8
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 46d86df82c5cf62f7b4be3022db499185c167745
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002011"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover o grupo da lista de grupos de favoritos do usuário atual. Suportado somente para grupos do Microsoft 365.
+Remover o grupo da lista de grupos de favoritos do usuário atual. Apenas grupos do Microsoft 365 são suportados.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -98,3 +98,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

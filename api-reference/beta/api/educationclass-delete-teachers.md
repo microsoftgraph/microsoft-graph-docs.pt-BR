@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a900c16e96d4cc91846de86b757987032ba2fd18
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d5686f90bf99593e3a4fb8fcfb514b1343b841b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426994"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002405"
 ---
 # <a name="remove-teacher"></a>Remover professor
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -109,3 +109,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

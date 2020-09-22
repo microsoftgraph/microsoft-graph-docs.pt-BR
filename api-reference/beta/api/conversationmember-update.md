@@ -5,16 +5,16 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb67a3ec07a7f22d40beea9d9831ea486e338ebe
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: f190e16094d2c0c1ea383ae2ff982812654759ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091386"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002703"
 ---
 # <a name="update-conversationmember"></a>Atualizar conversationMember
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -119,3 +119,5 @@ Content-length: 475
   "email": null
 }
 ```
+
+

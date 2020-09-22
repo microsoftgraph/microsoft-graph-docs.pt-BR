@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cdf814fba3da621166915d80a91d75dd2cf8993d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 41fa18b7f1f576170f4383027db2d27427dbbf95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425734"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002384"
 ---
 # <a name="remove-educationclass"></a>Remover educationClass
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

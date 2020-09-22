@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0818b495c209fcd264d1ddcc2a8c9f146f2983c7
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: dbcacf9b4c6013890deafe787622d33e4cb9db25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42446391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001544"
 ---
 # <a name="create-threatassessmentrequest"></a>Create threatAssessmentRequest
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [threatAs
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201, Created` um código de resposta e um novo objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201, Created` código de resposta e um novo objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -374,3 +374,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

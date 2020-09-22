@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d154f4c46eaeaa84807966b3f78947e09ba01be0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edcc71fcacf96dacdd9200e48f2ddedbbcda381e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427337"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002531"
 ---
 # <a name="remove-educationcategory"></a>Remover educationCategory
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -84,3 +84,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

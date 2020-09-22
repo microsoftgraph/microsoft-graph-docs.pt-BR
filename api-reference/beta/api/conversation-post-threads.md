@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 754a45ece52db1a89c3bf0a1586d52eed332641e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 886c0f0e11032f758bf9004e2d42d7c46da5a830
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436598"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002797"
 ---
 # <a name="create-thread"></a>Criar thread
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -119,3 +119,5 @@ Content-length: 346
   ]
 }
 -->
+
+

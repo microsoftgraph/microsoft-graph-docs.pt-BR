@@ -5,22 +5,22 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e4825a0da4d03b42f85a5dd1582fa9bbe7521b97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5454d52d30b6174cfbb5a387fea0d115d4981a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002399"
 ---
 # <a name="get-educationrubric"></a>Obter educationRubric
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e os relacionamentos de um objeto [educationRubric](../resources/educationrubric.md) .
 
-Observe que ao obter o amostra rubric de uma atribuição (`GET /education/me/assignments/{id}/rubric`), o que é retornado é uma cópia imutável do amostra rubric original existente em `/education/users/{id}/rubrics`. A cópia é associada a essa atribuição específica.
+Observe que ao obter o amostra rubric de uma atribuição ( `GET /education/me/assignments/{id}/rubric` ), o que é retornado é uma cópia imutável do amostra rubric original existente em `/education/users/{id}/rubrics` . A cópia é associada a essa atribuição específica.
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [educationRubric](../resources/educationrubric.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [educationRubric](../resources/educationrubric.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -200,3 +200,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

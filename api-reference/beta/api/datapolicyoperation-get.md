@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 08cfbf935a1a37be83349d2d75631bc8767ec8d8
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5764381d29b588dcdbe6233dbbf179a0c0c97a2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123682"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002615"
 ---
 # <a name="get-datapolicyoperation"></a>Obter dataPolicyOperation
 
@@ -101,3 +101,5 @@ Content-length: 212
   "suppressions": [
   ]
 }-->
+
+

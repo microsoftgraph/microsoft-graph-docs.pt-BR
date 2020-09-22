@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 33e76189c13356b0746ce020576affa952abc994
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: c78bd0b460efa5f81d7aa957cf1c272d72186cf7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002760"
 ---
 # <a name="get-conversationmember"></a>Obter conversationMember
 
@@ -124,3 +124,5 @@ Content-length: 201
   ]
 }
 -->
+
+

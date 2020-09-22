@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d38fdab04f4f470ba9c712f4447ecae3aa7d79bb
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 49f42d3b48681e9099db86fc90887a32781d41d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895773"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001915"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -183,3 +183,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c04b08f4774a8aa24d2c7fcbd8c5645ef1d0e249
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 9cb569ae63a5ee1b993166765c5ef5446fc70d1a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002006"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Criar uma configuração de diretório em grupos
 
@@ -123,3 +123,5 @@ Content-length: 244
   ]
 }
 -->
+
+

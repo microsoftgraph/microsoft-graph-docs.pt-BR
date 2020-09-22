@@ -5,22 +5,22 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fced432aba9e0127651e1af751baa86354464847
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b574b730a636e451328db9dc5341345b103fc82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002385"
 ---
 # <a name="update-educationrubric"></a>Atualizar educationRubric
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualiza as propriedades de um objeto [educationRubric](../resources/educationrubric.md) .
 
-A atualização de um amostra rubric anexado a uma`PATCH /education/me/assignments/{id}/rubric`atribuição () só é possível antes da atribuição ser publicada e o que é atualizado na verdade, o amostra rubric original `/education/users/{id}/rubrics`que existe em. Depois que a atribuição é publicada, uma cópia imutável do amostra rubric é feita anexada a essa atribuição específica. Esse amostra rubric pode ser recuperado usando [Get/Education/me/assignments/{ID}/rubric](educationrubric-get.md), mas não pode ser atualizado.
+A atualização de um amostra rubric anexado a uma atribuição ( `PATCH /education/me/assignments/{id}/rubric` ) só é possível antes da atribuição ser publicada e o que é atualizado na verdade, o amostra rubric original que existe em `/education/users/{id}/rubrics` . Depois que a atribuição é publicada, uma cópia imutável do amostra rubric é feita anexada a essa atribuição específica. Esse amostra rubric pode ser recuperado usando [Get/Education/me/assignments/{ID}/rubric](educationrubric-get.md), mas não pode ser atualizado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|dobody|A descrição desse amostra rubric.|
+|description|itemBody|A descrição desse amostra rubric.|
 |displayName|String|O nome deste amostra rubric.|
 |notas|educationAssignmentGradeType|Se este amostra rubric tem pontos ou não.|
 |alcançar|coleção rubricLevel|A coleção de níveis que compõem este amostra rubric.|
@@ -61,7 +61,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationRubric](../resources/educationrubric.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationRubric](../resources/educationrubric.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -199,3 +199,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

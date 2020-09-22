@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0f2d5f157c712ed76ebce77c68ac163236a5fdec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e2692b17a0146826d38a033b4b04e6a1119248f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436409"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002692"
 ---
 # <a name="delete-conversationthread"></a>Excluir conversationThread
 
-Namespace: Microsoft. Graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -96,3 +96,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

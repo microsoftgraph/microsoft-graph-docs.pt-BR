@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 69e4a9b1e1511e8eb053ce8a47012effcaad21b2
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: e243a77e684ce76c9060c367dd8ee2450e3d7f4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319545"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001607"
 ---
 # <a name="create-identityprovider"></a>Criar identityProvider
 
@@ -71,9 +71,9 @@ No corpo da solicitação, forneça uma representação JSON do objeto [identity
 |nome|Cadeia de caracteres|O nome de exibição exclusivo do provedor de identidade.|
 |tipo|Cadeia de caracteres|A identidade do provedor de identidade. O valor deve ser `OpenIdConnect` .|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|As `userId` `displayname` Propriedades e são necessárias no objeto claimsMapping.|
-|metadataUrl|Cadeia de caracteres|A URL para o documento de metadados do provedor de identidade de conexão de Open ID.|
-|responsemode|Cadeia de caracteres|Define o método que deve ser usado para enviar os dados de volta do provedor de identidade personalizado para o Azure AD B2C. Os seguintes modos de resposta podem ser usados: <ul><li/>`form_post` : Este modo de resposta é recomendado para melhor segurança. A resposta é transmitida por meio do método HTTP POST, com o código ou token codificado no corpo usando o formato application/x-www-form-urlencoded.<li/>`query` : O código ou token é retornado como um parâmetro de consulta.</ul>|
-|responseType|Cadeia de caracteres|Descreve que tipo de informação é enviada de volta na chamada inicial para o authorization_endpoint do provedor de identidade personalizada. Os seguintes tipos de resposta podem ser usados:<ul><li/> `code` : Conforme o fluxo do código de autorização, um código será retornado de volta para o Azure AD B2C. O Azure AD B2C continua a chamar o token_endpoint para trocar o código do token.<li/> `id_token` : Um token de ID retorna de volta para o Azure AD B2C do provedor de identidade personalizado. <li/>`token` : Um token de acesso retorna de volta para o Azure AD B2C do provedor de identidade personalizado. (Esse valor não é suportado pelo Azure AD B2C no momento)</ul>|
+|metadataUrl|String|A URL para o documento de metadados do provedor de identidade de conexão de Open ID.|
+|responsemode|String|Define o método que deve ser usado para enviar os dados de volta do provedor de identidade personalizado para o Azure AD B2C. Os seguintes modos de resposta podem ser usados: <ul><li/>`form_post` : Este modo de resposta é recomendado para melhor segurança. A resposta é transmitida por meio do método HTTP POST, com o código ou token codificado no corpo usando o formato application/x-www-form-urlencoded.<li/>`query` : O código ou token é retornado como um parâmetro de consulta.</ul>|
+|responseType|String|Descreve que tipo de informação é enviada de volta na chamada inicial para o authorization_endpoint do provedor de identidade personalizada. Os seguintes tipos de resposta podem ser usados:<ul><li/> `code` : Conforme o fluxo do código de autorização, um código será retornado de volta para o Azure AD B2C. O Azure AD B2C continua a chamar o token_endpoint para trocar o código do token.<li/> `id_token` : Um token de ID retorna de volta para o Azure AD B2C do provedor de identidade personalizado. <li/>`token` : Um token de acesso retorna de volta para o Azure AD B2C do provedor de identidade personalizado. (Esse valor não é suportado pelo Azure AD B2C no momento)</ul>|
 |escopo|String|Escopo define as informações e permissões que você pretende coletar de seu provedor de identidade personalizado.|
 
 ## <a name="response"></a>Resposta
@@ -240,3 +240,5 @@ Content-type: application/json
   "scope": "openid"
 }
 ```
+
+

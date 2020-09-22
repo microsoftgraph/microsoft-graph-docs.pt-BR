@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 40ed8afa7700bc2fa1639986c336d15130b03a57
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: c3e6ac54c966ef924bf54d7b860b48cfc2e6a034
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002758"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
@@ -52,7 +52,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|As funções desse usuário.|
-|usuário|[usuário](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|user|[user](../resources/user.md)|O usuário a ser adicionado ao canal.|
 
 ## <a name="response"></a>Resposta
 
@@ -121,3 +121,5 @@ Content-length: 468
   "email": null
 }
 ```
+
+

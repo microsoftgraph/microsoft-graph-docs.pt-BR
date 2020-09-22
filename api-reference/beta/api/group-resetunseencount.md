@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dfef7afd481a8f9baf526cac4a28d5809516aa15
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 6879722f2df494b7321d5ca195b1c0702f7ee3da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001999"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redefina a unseenCount de todas as postagens que o usuário atual não viu desde sua última visita. Suportado somente para grupos do Microsoft 365.
+Redefina a unseenCount de todas as postagens que o usuário atual não viu desde sua última visita. Apenas grupos do Microsoft 365 são suportados.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -96,3 +96,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

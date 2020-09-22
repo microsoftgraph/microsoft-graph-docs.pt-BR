@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 463e35eca28d0f5c52a0d01a9f57a23aa356ff43
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 762b7a5a3c4971d51f40171ed15f2ac9935730a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002164"
 ---
 # <a name="list-group-memberof"></a>Listar grupo memberOf
 
@@ -48,7 +48,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query_paramete
 | Nome | Descrição |
 |:---- |:----------- |
 | Autorização  | {token} de portador. Obrigatório. |
-| ConsistencyLevel | eventualmente. Esse cabeçalho e `$count` são necessários ao usar os `$search` parâmetros de consulta de conversão de,, `$filter` `$orderby` ou OData. Ele usa um índice que pode não estar atualizado com alterações recentes no objeto. |
+| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, `$filter`, `$orderby` ou os parâmetros de consulta de conversão OData. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-memberships"></a>Exemplo 2: obter apenas uma contagem de todas as associações
+### <a name="example-2-get-only-a-count-of-all-memberships"></a>Exemplo 2: Obter apenas uma contagem de todas as associações
 
 #### <a name="request"></a>Solicitação
 
@@ -165,7 +165,7 @@ Content-type: text/plain
 394
 
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Exemplo 3: usar a conversão OData para obter apenas uma contagem de associação de grupo
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Exemplo 3: Usar a conversão OData para obter apenas uma contagem de associação de grupo
 
 #### <a name="request"></a>Solicitação
 
@@ -345,3 +345,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
