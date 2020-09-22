@@ -3,14 +3,14 @@ title: Obter macOSMicrosoftEdgeApp
 description: Leia as propriedades e as relações do objeto macOSMicrosoftEdgeApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a222dcd2e29c7c5d6db823bfbed24a5f7b2c879b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: df225720e0fb36c8aff9043fc6d299d8bdaef19c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012086"
 ---
 # <a name="get-macosmicrosoftedgeapp"></a>Obter macOSMicrosoftEdgeApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 985
+Content-Length: 1046
 
 {
   "value": {
@@ -99,10 +99,15 @@ Content-Length: 985
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "channel": "beta"
   }
 }
 ```
+
+
+
 
 
 

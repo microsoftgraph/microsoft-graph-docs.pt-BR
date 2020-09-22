@@ -3,18 +3,18 @@ title: Listar androidLobApps
 description: Listar propriedades e relações dos objetos androidLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5437281a9b21a47fd7c9db64e7cb9e5b3934d33e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fb62acc4bfe294ef844e61e2c07b3f9b3b289bbf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395074"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012380"
 ---
 # <a name="list-androidlobapps"></a>Listar androidLobApps
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1818
+Content-Length: 1883
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1818
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -124,6 +126,9 @@ Content-Length: 1818
   ]
 }
 ```
+
+
+
 
 
 

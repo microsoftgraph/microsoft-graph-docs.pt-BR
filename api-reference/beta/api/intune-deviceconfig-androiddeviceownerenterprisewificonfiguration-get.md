@@ -3,14 +3,14 @@ title: Obter androidDeviceOwnerEnterpriseWiFiConfiguration
 description: Leia as propriedades e as relações do objeto androidDeviceOwnerEnterpriseWiFiConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b20e024043667f652257cd60597d295bb2aa0af
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80eda9afce80e27f9799d7e070bf4e966d6ce8c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43350837"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011904"
 ---
 # <a name="get-androiddeviceownerenterprisewificonfiguration"></a>Obter androidDeviceOwnerEnterpriseWiFiConfiguration
 
@@ -121,6 +121,9 @@ Content-Length: 1891
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Acessar iosVppApp
 description: Leia as propriedades e as relações do objeto iosVppApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e958d176fcc801a2aba021c05b65524657c83d2a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0b3af06787d31d897d0b8119e2073362050b67b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43394576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012240"
 ---
 # <a name="get-iosvppapp"></a>Acessar iosVppApp
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2310
+Content-Length: 2371
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 2310
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "usedLicenseCount": 0,
     "totalLicenseCount": 1,
     "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -137,6 +139,9 @@ Content-Length: 2310
   }
 }
 ```
+
+
+
 
 
 

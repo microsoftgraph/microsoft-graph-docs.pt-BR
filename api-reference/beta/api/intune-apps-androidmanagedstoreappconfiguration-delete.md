@@ -3,14 +3,14 @@ title: Excluir androidManagedStoreAppConfiguration
 description: Exclui androidManagedStoreAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 95121a326110302f2fcaf58c79874933d5591dd0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 99b030aa4c9d6b0a48824277a33974012935df96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417527"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012317"
 ---
 # <a name="delete-androidmanagedstoreappconfiguration"></a>Excluir androidManagedStoreAppConfiguration
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

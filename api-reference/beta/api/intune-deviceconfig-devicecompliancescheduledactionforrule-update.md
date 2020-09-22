@@ -3,14 +3,14 @@ title: Atualizar deviceComplianceScheduledActionForRule
 description: Atualizar as propriedades de um objeto deviceComplianceScheduledActionForRule.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c28275e5ddbaf0ce0720c5da54902313fbf345df
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 564cff7fdbf58eb3e2de09f3d8b6c639c0bff769
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011750"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>Atualizar deviceComplianceScheduledActionForRule
 
@@ -89,6 +89,9 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Listar macOSMdatpApps
 description: Listar Propriedades e relações dos objetos macOSMdatpApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fac6879be62aa9e07c0692eafde2fa6e10de1d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9e015dd8388b65e47892081ddc23aa1ac44300c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416387"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012100"
 ---
 # <a name="list-macosmdatpapps"></a>Listar macOSMdatpApps
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [macOSMdatpApp](../resources/intune-apps-macosmdatpapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1017
+Content-Length: 1082
 
 {
   "value": [
@@ -94,11 +94,16 @@ Content-Length: 1017
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "dependentAppCount": 1
+      "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2
     }
   ]
 }
 ```
+
+
+
 
 
 

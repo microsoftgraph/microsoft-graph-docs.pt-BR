@@ -3,18 +3,18 @@ title: Atualizar deviceCompliancePolicyAssignment
 description: Atualizar as propriedades de um objeto deviceCompliancePolicyAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8184bc56b3f75e9adf26c3866a94600f8c18d4c9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: e3e5531d477f9a17bcb0935632073b1d5a0cd84d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793021"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011785"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>Atualizar deviceCompliancePolicyAssignment
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -103,6 +103,9 @@ Content-Length: 437
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Listar macOSLobApps
 description: Listar Propriedades e relações dos objetos macOSLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dbc2fe65be5fec7eeacb614640075a0474050ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a088d3c5e51c685202d2ec463cafa79e04267d50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43394226"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012184"
 ---
 # <a name="list-macoslobapps"></a>Listar macOSLobApps
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [macOSLobApp](../resources/intune-apps-macoslobapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [macOSLobApp](../resources/intune-apps-macoslobapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2049
+Content-Length: 2114
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 2049
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -131,6 +133,9 @@ Content-Length: 2049
   ]
 }
 ```
+
+
+
 
 
 

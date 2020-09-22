@@ -3,14 +3,14 @@ title: Listar iosMobileAppConfigurations
 description: Lista propriedades e relações dos objetos iosMobileAppConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7ff195c446cb8113d536ce7df4abb124d6b265c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5ec260b52844c440d515b6696f4eaa813afd7f97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43394770"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012310"
 ---
 # <a name="list-iosmobileappconfigurations"></a>Listar iosMobileAppConfigurations
 
@@ -96,6 +96,9 @@ Content-Length: 889
   ]
 }
 ```
+
+
+
 
 
 
