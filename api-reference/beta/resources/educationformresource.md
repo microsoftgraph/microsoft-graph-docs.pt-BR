@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ed81e1e9e74ad311e4102963649ff4a4015bb093
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c8748c725f7289eadbca8119b47bf8a81b28c97
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501959"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095434"
 ---
 # <a name="educationformresource-resource-type"></a>tipo de recurso educationFormResource
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,12 +24,12 @@ Uma subclasse de [educationResource](educationresource.md). Este recurso é um f
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|originalFormId|String|ID original do formulário.|
-|formId|String|ID do formulário.|
+|originalFormId|Cadeia de caracteres|ID original do formulário.|
+|formId|Cadeia de caracteres|ID do formulário.|
 |isGroupForm|Boolean|Se o formulário pertence a um grupo de classe.|
-|viewUrl|String|URL do aluno para o formulário.|
-|viewUrl|String|URL do aluno para o formulário.|
-|editUrl|String|URL do professor para o formulário.|
+|viewUrl|Cadeia de caracteres|URL do aluno para o formulário.|
+|viewUrl|Cadeia de caracteres|URL do aluno para o formulário.|
+|editUrl|Cadeia de caracteres|URL do professor para o formulário.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -66,3 +66,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso searchResponse
-description: FORNEÇA UMA DESCRIÇÃO AQUI
+description: Descrição do searchResponse
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a2bdd013cb755d37664c89aca81a8ae89c63b4f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: deb5450017b4ae9db534c30f71dd6da4f1a9b812
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973735"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192746"
 ---
 # <a name="searchresponse-resource-type"></a>tipo de recurso searchResponse
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O searchResponse contém os resultados da consulta de pesquisa.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Representa os resultados de uma consulta de pesquisa e os termos usados para a consulta. 
 
 ## <a name="properties"></a>Propriedades
 

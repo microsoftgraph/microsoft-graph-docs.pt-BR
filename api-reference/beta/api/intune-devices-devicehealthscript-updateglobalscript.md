@@ -3,14 +3,14 @@ title: ação updateGlobalScript
 description: Atualizar o script de integridade do dispositivo proprietário
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42cd16873e374dfbc301674c2a7c76527311581a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a15a793a895d766ccd45e614fc23e4ce69ba54f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426345"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48096014"
 ---
 # <a name="updateglobalscript-action"></a>ação updateGlobalScript
 
@@ -86,6 +86,9 @@ Content-Length: 45
   "value": "Update Global Script value"
 }
 ```
+
+
+
 
 
 

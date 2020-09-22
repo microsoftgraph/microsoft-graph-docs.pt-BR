@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de esquema
-description: Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma conexão de pesquisa da Microsoft.
+description: O esquema de conexão determina como o conteúdo adicionado a uma conexão será usado em várias experiências do Microsoft Graph.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 0d5182e68fd1b1d53abb5b3fa623f3048abfe723
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff14f04adb31d99aadec15cb9368e09a098c7a26
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083964"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192865"
 ---
 # <a name="schema-resource-type"></a>tipo de recurso de esquema
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma [conexão](externalconnection.md)de pesquisa da Microsoft.
+O esquema de [conexão](externalconnection.md) determina como o conteúdo externo será usado em várias experiências do Microsoft Graph. Schema é uma lista simples de todas as propriedades que você planeja adicionar à conexão junto com seus atributos, rótulos e aliases. Você deve registrar o esquema antes de adicionar itens à conexão.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                    | Tipo de retorno                   | Descrição |
 |:----------------------------------------------------------|:------------------------------|:--|
@@ -33,7 +33,7 @@ Descreve o tipo de conteúdo e como indexar cada propriedade em itens em uma [co
 
 | Propriedade   | Tipo                               | Descrição                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | Cadeia de caracteres                             | Deve ser definida como `microsoft.graph.externalItem`. Obrigatório. |
+| baseType   | String                             | Deve ser definida como `microsoft.graph.externalItem`. Obrigatório. |
 | properties | coleção [Property](property.md) | As propriedades definidas para os itens na conexão. O número mínimo de propriedades é um, o máximo é 128. |
 
 ## <a name="relationships"></a>Relações

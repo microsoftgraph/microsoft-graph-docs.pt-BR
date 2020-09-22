@@ -3,14 +3,14 @@ title: Tipo de recurso deviceManagementSettings
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7dd44406211e8d0763625e5c1ae252444505265e
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: be4356e2909898c4f93105733d3dc6e7322d7e34
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123950"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095286"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 
@@ -28,13 +28,13 @@ Ainda não documentado
 |deviceComplianceCheckinThresholdDays|Int32|O número de dias que tem um dispositivo pode ser executado sem fazer check-in para permanecer em conformidade.|
 |isScheduledActionEnabled|Booliano|O recurso está habilitado ou não para ação agendada para a regra.|
 |secureByDefault|Booliano|Quando true, o dispositivo deve ser incompatível quando não há nenhuma política de conformidade direcionada|
-|enhancedJailBreak|Booliano|O recurso está habilitado ou não para a detecção de jailbreak avançada.|
+|enhancedJailBreak|Boolean|O recurso está habilitado ou não para a detecção de jailbreak avançada.|
 |deviceInactivityBeforeRetirementInDay|Int32|Quando o dispositivo não faz check-in por um número especificado de dias, os dados da empresa podem ser removidos e o dispositivo não estará sob gerenciamento. Valores válidos de 30 a 270|
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|O provedor de credenciais derivado a ser usado para esta conta. Os valores possíveis são: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |derivedCredentialUrl|Cadeia de caracteres|O URI de autoatendimento do provedor de credenciais derivado.|
-|androidDeviceAdministratorEnrollmentEnabled|Booliano|A propriedade para determinar se o registro do administrador do dispositivo Android está habilitado para esta conta.|
-|ignoreDevicesForUnsupportedSettingsEnabled|Booliano|A propriedade para determinar se deve ignorar as configurações de conformidade não suportadas em determinados modelos de dispositivos.|
-|enableLogCollection|Booliano|Determina se o recurso de coleção de logs deve estar disponível para uso.|
+|androidDeviceAdministratorEnrollmentEnabled|Boolean|A propriedade para determinar se o registro do administrador do dispositivo Android está habilitado para esta conta.|
+|ignoreDevicesForUnsupportedSettingsEnabled|Boolean|A propriedade para determinar se deve ignorar as configurações de conformidade não suportadas em determinados modelos de dispositivos.|
+|enableLogCollection|Boolean|Determina se o recurso de coleção de logs deve estar disponível para uso.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -61,6 +61,9 @@ Veja a seguir uma representação JSON do recurso.
   "enableLogCollection": true
 }
 ```
+
+
+
 
 
 

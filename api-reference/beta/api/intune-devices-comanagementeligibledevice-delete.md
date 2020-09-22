@@ -3,14 +3,14 @@ title: Excluir comanagementEligibleDevice
 description: Exclui comanagementEligibleDevice.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d263ad2bfed8de4331253ce4cbd04b529cace0bb
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: e2c3da8f7aa756e945b375e97aadf93d9b37b0f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792538"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48096028"
 ---
 # <a name="delete-comanagementeligibledevice"></a>Excluir comanagementEligibleDevice
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

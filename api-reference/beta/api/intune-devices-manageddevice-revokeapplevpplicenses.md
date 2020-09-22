@@ -3,14 +3,14 @@ title: Ação revokeAppleVppLicenses
 description: Revogar todas as licenças VPP da Apple para um dispositivo
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c0ee173819aad42651a36028483c7fd4ec347edf
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: eae551daf2cd75f48380515881f778c90705fdf9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792216"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48096007"
 ---
 # <a name="revokeapplevpplicenses-action"></a>Ação revokeAppleVppLicenses
 
@@ -71,6 +71,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

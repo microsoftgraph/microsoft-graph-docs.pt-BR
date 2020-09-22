@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e77c0170487b0762538d98376921565857c9b3c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 135eabcb61c81287262e9ebd8681ad3d76104df2
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985780"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193117"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -20,36 +20,44 @@ Você pode utilizar a API de Pesquisa da Microsoft para consultar os dados do Mi
 
 As solicitações de pesquisa são executadas no contexto do usuário conectado, identificado usando um [token de acesso com permissões delegadas](/graph/auth-v2-user).
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## <a name="common-use-cases"></a>Casos de uso comuns
 
-A API de Pesquisa da Microsoft fornece um método de [query](../api/search-query.md) para pesquisar os dados na Pesquisa da Microsoft. Esta seção lista os casos de uso comuns, com base nas propriedades definidas no corpo da solicitação **query**.
+A API de pesquisa da Microsoft fornece um método de [consulta](../api/search-query.md) para pesquisar os dados na Pesquisa da Microsoft, no qual você passa um[searchRequest](searchRequest.md) no corpo da solicitação, definindo as especificações da pesquisa.
 
-As solicitações de pesquisa são executadas em nome do usuário. Os resultados da pesquisa têm escopo para impor o controle de acesso aplicado aos itens.  Por exemplo, no contexto de arquivos, as permissões em relação aos arquivos serão avaliadas como parte da solicitação de pesquisa. Os usuários não podem acessar mais itens em uma pesquisa do que na API de enumeração.
+Essa seção lista os casos de uso comuns do método de **consulta**, com base nas propriedades e parâmetros definidos no corpo da **consulta ** [searchRequest](searchRequest.md).
+
+As solicitações de pesquisa são executadas em nome do usuário. Os resultados da pesquisa têm escopo para impor o controle de acesso aplicado aos itens.  Por exemplo, no contexto de arquivos, as permissões em relação aos arquivos serão avaliadas como parte da solicitação de pesquisa. Os usuários não podem acessar mais itens em uma pesquisa do que eles poderiam obter de uma operação GET correspondente com as mesmas permissões e controle de acesso.
 
 | Casos de uso | Propriedades a serem definidas no corpo da solicitação de consulta |
 |:------------------|:---------|
-|[Pesquisa de escopo com base em tipos de entidade](#scope-search-based-on-entity-types)| **entityTypes** |
+|[ Resultados da pesquisa de escopo com base em tipos de entidade](#scope-search-based-on-entity-types)| **entityTypes** |
 |[Resultados da página](#page-search-results) | **from** e **size** |
 |[Obter os emails mais relevantes](#get-the-most-relevant-emails) | **enableTopResults** |
-|[Obter as propriedades selecionadas](#get-selected-properties) | **stored_fields** |
+|[Obter as propriedades selecionadas](#get-selected-properties) | **campos** |
 |[Usar KQL em termos de consulta](#keyword-query-language-kql-support) | **query** |
-|[Pesquisar arquivos externos](/graph/search-concept-files)| **entityTypes** |
-|[Pesquisar em um contentSource específico (API de indexação)](/graph/search-concept-custom-types)| **contentSources** |
+|[Classificar resultados de pesquisa](#sort-search-results)| **sort** |
+|[Refinar os resultados usando agregações](#refine-results-using-aggregations)| **aggregations** |
+|[Pesquisar entre conectores do Graph](/graph/search-concept-custom-types)| **contentSources** |
 
-### <a name="scope-search-based-on-entity-types"></a>Pesquisa de escopo com base em tipos de entidade
+## <a name="scope-search-based-on-entity-types"></a>Pesquisa de escopo com base em tipos de entidade
 
 Defina o escopo da solicitação de pesquisa usando a propriedade **entityTypes** no conteúdo da solicitação **query**.
-Estes são os tipos de entidade com suporte:
+A tabela a seguir descreve os tipos disponíveis para consulta e as permissões com suporte para acessar os dados.
 
-- [event](event.md)
-- [message](message.md)
-- [driveItem](driveitem.md)
-- [externalFile](externalfile.md)
-- [externalItem](externalitem.md)
+| EntityType | Escopo de permissão necessário para acessar os itens| Origem| Comentário|
+|:------------------|:---------|:---------|:---------|
+|[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Mensagens de email.|
+|[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Eventos do calendário. |
+|[unidade](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Bibliotecas de documentos.|
+|[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint e OneDrive | Arquivos, pastas, páginas e notícias. |
+|[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint e OneDrive | Listas. Observe que as bibliotecas de documentos também são retornadas como listas. |
+|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint e OneDrive | Listar itens. Observe que os arquivos e as pastas também são retornados como itens de lista; **listItem** é a superclasse de **driveItem**. |
+|[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites no SharePoint.|
+|[externalItem](externalitem.md)|ExternalItem.Read.All| Conectores do Microsoft Graph| Todo o conteúdo está absorvido pela API dos conectores do Microsoft Graph.|
 
-### <a name="page-search-results"></a>Resultados da pesquisa de página
+## <a name="page-search-results"></a>Resultados da pesquisa de página
 
 Para controlar a paginação dos resultados da pesquisa, especifique as duas seguintes propriedades no corpo da solicitação **query**:
 
@@ -60,9 +68,9 @@ Para controlar a paginação dos resultados da pesquisa, especifique as duas seg
 Observe os seguintes limites se você estiver pesquisando a entidade **event** ou **message**:
 
 - **from** deve começar em zero na primeira solicitação de página; caso contrário, a solicitação resultará em um HTTP 400 `Bad request`.
-- O máximo de resultados por página (**size**) é 200.
-- O número máximo total de itens que podem ser retornados por meio de paginação é 1000.
-- Se os limites forem excedidos, será retornada uma resposta de melhor esforço. A solicitação não resulta em um HTTP 400.
+- O máximo de resultados por página (**size**) é 25 por **mensagem** e **evento**. 
+
+Não há um limite superior para itens do SharePoint ou do OneDrive. Um tamanho de página razoável é 200. Um tamanho de página maior geralmente gera uma latência maior.
 
 Práticas recomendadas:
 
@@ -76,17 +84,21 @@ Práticas recomendadas:
     | 3    | 75 | 75 |
     | 4    | 150 | 100 |
 
-### <a name="get-the-most-relevant-emails"></a>Obter os emails mais relevantes
+## <a name="get-the-most-relevant-emails"></a>Obter os emails mais relevantes
 
-Quando você pesquisa na entidade **message**, a especificação de **enableTopResults** como `true` retorna uma lista híbrida de mensagens: as três primeiras mensagens na resposta são classificadas por relevância; as mensagens restantes são classificadas por data.
+Quando você pesquisa na entidade **mensagem**, a especificação de **enableTopResults** como`true` retorna uma lista híbrida de mensagens: as três primeiras mensagens na resposta são classificadas por relevância; as mensagens restantes são classificadas por data/hora.
 
-### <a name="get-selected-properties"></a>Obter as propriedades selecionadas
+## <a name="get-selected-properties"></a>Obter as propriedades selecionadas
 
-Ao pesquisar em uma entidade **externalItem**, use a propriedade **stored_fields** para especificar os campos a serem retornados na resposta.
+Ao pesquisar um tipo de entidade, como **mensagem**, **evento**, **unidade**, **driveItem**, **lista**, **listItem**, **site**, **externalItem**, você pode incluir na propriedade **campos** as propriedades de entidade específica para retornar nos resultados da pesquisa. Isso é semelhante a usar a opção [$select, da consulta do sistema OData](/graph/query-parameters#select-parameter), em solicitações REST. A pesquisa do API não oferece suporte técnico a essas opções de consulta porque o comportamento é expresso no corpo POST.
 
-Os campos especificados em **stored_fields** devem ser propriedades gerenciadas recuperáveis que foram configuradas para a conexão por meio da administração de locatário da Pesquisa da Microsoft.
+Para todos esses tipos de entidade, especificar a propriedade **campos** reduz o número de propriedades retornadas na resposta, melhorando a carga na conexão.
 
-### <a name="keyword-query-language-kql-support"></a>Suporte a KQL (Linguagem de Consulta de Palavra-chave)
+As entidades **listItem** e **externalItem** são as únicas entidades com suporte que permitem a colocação de campos estendidos configurados no esquema. Não é possível recuperar propriedades estendidas de todas as outras entidades. Por exemplo, se você criou um campo para **externalItem** no esquema de pesquisa ou se tiver uma coluna personalizada em uma **listItem**, você pode recuperar essas propriedades da pesquisa. Para recuperar uma propriedade estendida de um arquivo, especifique o tipo **listItem** na solicitação.
+
+Se os **campos** especificados na solicitação não estiverem presentes no esquema, eles não serão retornados na resposta. Campos inválidos na solicitação são ignorados silenciosamente.
+
+## <a name="keyword-query-language-kql-support"></a>Suporte a KQL (Linguagem de Consulta de Palavra-chave)
 
 Especifique palavras-chave de texto livre, operadores (como `AND`, `OR`) e restrições de propriedade na sintaxe KQL na cadeia de caracteres de consulta de pesquisa real (propriedade **query** do corpo da solicitação **query**). A sintaxe e o comando dependem dos tipos de entidade (na propriedade **entityTypes**) que você direciona no corpo da solicitação **query**.
 
@@ -95,11 +107,42 @@ Dependendo do tipo de entidade, as propriedades pesquisáveis variam. Veja mais 
 - [Propriedades do email](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [Propriedades do site](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
 
+## <a name="sort-search-results"></a>Classificar resultados de pesquisa
+
+Os resultados da pesquisa na resposta são classificados na ordem de classificação padrão a seguir :
+
+- **mensagem** e **evento** são classificados por data.
+- Todos os tipos de conectores SharePoint e OneDrive são classificados por relevância.
+
+O método de [consulta](../api/search-query.md) permite que você personalize a ordem de pesquisa especificando as **sortProperties** no parâmetro `requests`, que é uma coleção de objetos [searchRequest](./searchrequest.md). Isso permite especificar uma lista de uma ou mais propriedades classificáveis e a ordem de classificação.
+
+Atualmente, só há suporte para a classificação de resultados nos seguintes tipos de SharePoint e OneDrive : [driveItem](driveitem.md), [listItem](listitem.md), [lista](list.md) e [site](site.md).
+
+As propriedades nas quais a cláusula de classificação é aplicada devem ser classificáveis no [esquema de pesquisa](https://docs.microsoft.com/sharepoint/manage-search-schema) do SharePoint. Se a propriedade especificada na solicitação não for classificável ou não existir, a resposta retornará um erro, `HTTP 400 Bad Request`. Observe que você não pode especificar a classificação de documentos por relevância usando [sortProperty](sortproperty.md).
+
+Ao especificar o **nome** de um objeto [sortProperty](sortproperty.md), você pode usar o nome da propriedade do tipo Microsoft Graph (por exemplo, em [driveItem](driveitem.md)) ou o nome da propriedade gerenciada no índice de pesquisa.
+
+Confira [classificar resultados de pesquisa](/graph/search-concept-sort) para obter exemplos que mostram como classificar resultados.
+
+## <a name="refine-results-using-aggregations"></a>Refinar os resultados usando agregações
+
+As agregações (também conhecidas como refinadores no SharePoint) são uma maneira muito popular de melhorar a experiência de pesquisa. Além dos resultados, eles fornecem algum nível de informações agregadas no conjunto de resultados de pesquisa. Por exemplo, você pode fornecer informações sobre os autores mais representados dos documentos correspondentes à consulta, ou os tipos de arquivo mais representados, etc.
+
+Na[searchRequest](./searchrequest.md), especifique as agregações que devem ser retornadas além dos resultados da pesquisa. A descrição de cada agregação é definida na[aggregationOption](./aggregationoption.md), que especifica a propriedade na qual a agregação deve ser calculada, e a quantidade de [searchBucket](searchBucket.md) a ser retornada na resposta.
+
+As propriedades nas quais a agregação é solicitada devem ser refináveis no [esquema de pesquisa](https://docs.microsoft.com/sharepoint/manage-search-schema) do SharePoint. Se a propriedade especificada não for refinável ou não existir, a resposta retornará `HTTP 400 Bad Request`.
+
+Uma vez que a resposta é retornada contendo a coleção de objetos [searchBucket](searchBucket.md), é possível refinar a solicitação de pesquisa somente aos elementos correspondentes contidos em uma [searchBucket](searchBucket.md). Isso é conseguido passando o valor **aggregationsFilterToken** na propriedade **aggregationsFilters** na posterior [searchRequest](./searchrequest.md).
+
+Agregações são suportadas atualmente somente nos seguintes tipos de SharePoint e OneDrive : [driveItem](driveitem.md), [listItem](listitem.md), [lista](list.md) e [site](site.md). Em breve, eles terão suporte para as propriedades refináveis no [externalItem](externalItem.md) dos conectores do Microsoft Graph.
+
+Confira [refinar os resultados da pesquisa](/graph/search-concept-aggregation) para obter exemplos que mostram como usar a agregação para melhorar e restringir os resultados da pesquisa.
+
 ## <a name="error-handling"></a>Tratamento de erros
 
 A API de pesquisa retorna respostas de erro conforme estipulado pela [definição de objeto de erro OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse). Cada uma delas é um objeto JSON que contém um código e uma mensagem.
 
-<!---TODO Describe the know errors : bad requests.--->
+<!---TODOSEARCHAPI Describe the know errors : bad requests.--->
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
@@ -107,18 +150,36 @@ A API de pesquisa tem as seguintes limitações:
 
 - O método **query** é definido para permitir a passagem de um conjunto de uma ou mais instâncias de **searchRequest** de uma só vez. No entanto, atualmente o serviço dá suporte apenas a um único [searchRequest](./searchrequest.md) por vez.
 
-- O recurso [searchRequest](./searchrequest.md) dá suporte à passagem de vários tipos de entidades por vez. No entanto, atualmente a única combinação com suporte é **driveItem** e **externalfile**. Outras combinações são inválidas.
+- O recurso [searchRequest](./searchrequest.md) dá suporte à passagem de vários tipos de entidades por vez. No entanto, no momento, a única combinação com suporte é para o SharePoint e o OneDrive entityTypes : **driveItem**, **unidade**, **site**, **lista**, **listItem**.
+As combinações envolvendo **mensagem**, **evento**, tipos do SharePoint e do OneDrive ou **externalItem** não têm suporte no momento.  
 
 - A propriedade **contentSource**, que define a conexão a ser usada, só será aplicável quando **entityType** for especificada como `externalItem`.
-<!--todo nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
 
-- A API de pesquisa não dá suporte à classificação personalizada e sempre classifica os resultados da seguinte maneira:
+- A API de pesquisa não dá suporte à classificação personalizada para **mensagem**, **evento** ou  **externalItem**.
 
-  - Classificar resultados dos tipos **message** ou **event** por data.
+- A API de pesquisa não dá suporte a agregações para **mensagem**, **evento**, **site** ou **unidade**.
 
-  - Classificar resultados dos tipos **driveItem**, **externalfile** ou **externalItem** por relevância.
+## <a name="schema-change-deprecation-warning"></a>Aviso de preterição de mudança de esquema
+
+As propriedades usadas em uma solicitação de pesquisa e resposta foram renomeadas ou removidas. Na maioria dos casos, as propriedades originais estão sendo preteridas e substituídas pelas propriedades atuais, como listado na tabela a seguir.
+
+Comece a atualizar os aplicativos existentes para usar os nomes atuais da propriedade e do tipo e obter os nomes atuais das propriedades na resposta.
+Para compatibilidade com versões anteriores, as propriedades e tipos originais são acessíveis e funcionais até o dia **31 de dezembro de 2020**, depois do qual eles serão removidos.
+
+| Recurso                           | Tipo de alteração   | Propriedade original | Propriedade atual|
+|:-----------------------------------|:--------------|:------------------|:----------------|
+| [searchRequest](./searchrequest.md)| Renomear Propriedade | **stored_fields** | **campos**      |
+| [searchQuery](./searchquery.md)    | Renomear propriedade | **query_string** | **queryString** |
+| [searchQueryString](./searchquerystring.md) | Substituir recurso | Não aplicável | Não aplicável |
+| [searchHit](./searchhit.md)        | Renomear propriedade | **_id** | **hitId** |
+| [searchHit](./searchhit.md)        | Renomear propriedade | **_score** | **classificação** |
+| [searchHit](./searchhit.md)        | Remover propriedade | **_sortField** | Não aplicável |
+| [searchHit](./searchhit.md)        | Renomear propriedade | **_source** | **recurso** |
+| [searchHit](./searchhit.md)        | Renomear propriedade | **_summary**  | **resumo**  |
+
+
 
 ## <a name="whats-new"></a>O que há de novo
-Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 

@@ -3,14 +3,14 @@ title: Excluir windowsDefenderApplicationControlSupplementalPolicyDeploymentStat
 description: Exclui windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12566bfc888308274a6ade65e5738762f592ae4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c032c4d4a1d914f8fbb879a0f1c809778eefd1f3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472286"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095825"
 ---
 # <a name="delete-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Excluir windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -65,6 +65,9 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

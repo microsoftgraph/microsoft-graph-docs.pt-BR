@@ -3,14 +3,14 @@ title: função getRemediationSummary
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 979d933b51292b6c543b1b2bc11aacb187a43464
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 127f4ab68006560877bd98264052759bc4083619
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426430"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48096021"
 ---
 # <a name="getremediationsummary-function"></a>função getRemediationSummary
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceHealthScripts/getRemediationSummary
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e um [deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e um [deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -75,6 +75,9 @@ Content-Length: 155
   }
 }
 ```
+
+
+
 
 
 

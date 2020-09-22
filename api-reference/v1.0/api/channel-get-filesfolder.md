@@ -5,39 +5,38 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d748d0f52d9078fae8c7c3efb900b947dd70b5bf
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: c2716dd5d2dfcac6b20b9d25bdd5ecac003c1b30
+ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863409"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137138"
 ---
 # <a name="get-filesfolder"></a>Obter filesFolder
 
 Namespace: microsoft.graph
 
-Obter os metadados para o local onde os arquivos de um [canal](../resources/channel.md) estão armazenados. 
+Obter os metadados para o local em que os arquivos do [canal](../resources/channel.md) estão armazenados. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | File. Read. All, Group. Read. All, File. ReadWrite. All, Group. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | File. Read. All, Group. Read. All, File. ReadWrite. All, Group. ReadWrite. All     |
+|Delegada (conta corporativa ou de estudante) | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All     |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
-
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.
+Este método não é compatível com os [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -130,3 +129,4 @@ Content-length: 401
   "suppressions": [
   ]
 }-->
+

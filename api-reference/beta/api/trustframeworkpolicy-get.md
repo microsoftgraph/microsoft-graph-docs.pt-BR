@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a8d7354175c9f49d7c39c1e16115fdcbadb3ba98
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: efb26734bbcb39cdad5fe451e636d836ea615243
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215858"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095601"
 ---
 # <a name="get-trustframeworkpolicy"></a>Obter trustFrameworkPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Policy. Read. All, Policy. ReadWrite. TrustFramework|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application|Policy. Read. All, Policy. ReadWrite. TrustFramework|
+|Delegado (conta corporativa ou de estudante)| Policy. Read. All, Policy. ReadWrite. TrustFramework|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|Policy. Read. All, Policy. ReadWrite. TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
@@ -55,9 +55,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma representação XML do [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) no corpo da resposta.  
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma representação XML do [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) no corpo da resposta.  
 
->**Observação:** o tipo de conteúdo de resposta `application/xml`será.
+>**Observação:** o tipo de conteúdo de resposta será `application/xml` .
 
 ## <a name="example"></a>Exemplo
 
@@ -102,3 +102,5 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

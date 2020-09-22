@@ -3,14 +3,14 @@ title: tipo de enumeração editionUpgradeLicenseType
 description: Tipo de licença de atualização de edição
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 959d8f8991ed60b5dc3ad0c3ce131a3d20c87672
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 88a2b85982cf0cca44a96a407cd695421da66ef6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460121"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095279"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>tipo de enumeração editionUpgradeLicenseType
 
@@ -26,8 +26,11 @@ Tipo de licença de atualização de edição
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |productKey|,0|Tipo de chave do produto|
-|LicenseFile|1|Tipo de arquivo de licença|
-|notConfigured|duas|NotConfigured|
+|LicenseFile|1 |Tipo de arquivo de licença|
+|notConfigured|2 |NotConfigured|
+
+
+
 
 
 

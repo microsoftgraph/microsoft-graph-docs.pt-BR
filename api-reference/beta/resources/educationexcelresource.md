@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b533d5072ab9a4e880b14b64e96f4791db399e09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 96fc84227bc7c8e5140ef06ce62ea2d485badab7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095515"
 ---
 # <a name="educationexcelresource-resource-type"></a>tipo de recurso educationExcelResource
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Uma subclasse de [educationResource](educationresource.md). Esse tipo de recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|fileUrl|String|Ponteiro para o objeto de arquivo do Excel.|
+|fileUrl|Cadeia de caracteres|Ponteiro para o objeto de arquivo do Excel.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -59,3 +59,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8d3d790126acab48b716694e281b94afa8228b9b
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 71224f9adb8b57ef3787b37ec2f164c4f8cd1f89
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219001"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095643"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Excluir trustFrameworkPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
-|Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Application|Policy.ReadWrite.TrustFramework|
+|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
+|Delegado (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|Policy.ReadWrite.TrustFramework|
 
 A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+
+

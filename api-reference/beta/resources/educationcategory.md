@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 14a399e09c74e439b64a273695b65e5a96cd25f8
-ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
+ms.openlocfilehash: 82ad4f009ca76625c148e8a42e58385195466fbb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095538"
 ---
 # <a name="educationcategory-resource-type"></a>tipo de recurso educationCategory
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +33,7 @@ Uma categoria que pode ser aplicada a atribuições.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String|Identificador exclusivo da categoria.|
+|id|Cadeia de caracteres|Identificador exclusivo da categoria.|
 |displayName|Cadeia de caracteres|Identificador exclusivo da categoria.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -68,3 +68,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

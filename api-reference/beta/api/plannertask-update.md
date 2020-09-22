@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 424897e61a5ea16ae9c7b76322f626324f09bb19
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 955412f1f699f374b974cfdde81c8baedc4021dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680610"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095811"
 ---
 # <a name="update-plannertask"></a>Atualizar plannertask
 
@@ -180,3 +180,5 @@ Content-length: 1423
   ]
 }
 -->
+
+

@@ -1,18 +1,18 @@
 ---
-title: 'pesquisa: consulta'
+title: 'searchEntity: consulta'
 description: Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 781517d686ad0c01d2d1b7bd235bdf3dbb009f03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e877b1e126a353aae04a90500fdfe99cd4ec8342
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074143"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193314"
 ---
-# <a name="search-query"></a>pesquisa: consulta
+# <a name="searchentity-query"></a>searchEntity: consulta
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference). 
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Mail. Read, files. Read. All, Calendars. Read, ExternalItem. Read. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Mail. Read, mail. ReadWrite, Calendars. Read, Calendars. ReadWrite, files. Read. All, files. ReadWrite. All, sites. Read. All, sites. ReadWrite. All, ExternalItem. Read. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,18 +51,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Quest|coleção [searchRequest](../resources/searchrequest.md)|A solicitação de pesquisa a ser enviada para o ponto de extremidade de consulta formatado em um blob JSON. Ele contém o tipo de entidades esperadas na resposta, as fontes subjacentes, os parâmetros de paginação, os campos solicitados e a consulta de pesquisa real.|
+|Quest|coleção [searchRequest](../resources/searchrequest.md)|Uma coleção de uma ou mais solicitações de pesquisa cada formatadas em um blob JSON. Cada blob JSON contém os tipos de recursos esperados na resposta, as fontes subjacentes, os parâmetros de paginação, os campos solicitados e a consulta de pesquisa real. <br> Esteja ciente das [limitações conhecidas](../resources/search-api-overview.md#known-limitations) de pesquisa de combinações específicas de tipos de entidade e da classificação ou agregação de resultados de pesquisa. |
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o `HTTP 200 OK` código de resposta e um objeto da coleção [searchResponse](../resources/searchresponse.md) no corpo da resposta.
-
-## <a name="common-use-cases"></a>Casos de uso comuns
-
-- [Mensagens de email](/graph/search-concept-messages) de pesquisa
-- [Eventos de calendário](/graph/search-concept-events) de pesquisa
-- [Arquivos](/graph/search-concept-files) de pesquisa
-- Dados [de tipos personalizados de pesquisa (conectores)](/graph/search-concept-custom-types)
+ 
 
 ## <a name="examples"></a>Exemplos
 
@@ -90,13 +84,11 @@ Content-type: application/json
         "/external/connections/connectionfriendlyname"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso product"
-        }
+        "queryString": "contoso product"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
+      "fields": [
         "title",
         "description"
       ]
@@ -148,11 +140,10 @@ Content-type: application/json
         {
           "hits": [
             {
-              "_id": "1",
-              "_score": 1,
-              "_sortField": "Relevance",
-              "_summary": "_summary-value",
-              "_source": "The source field will contain the underlying graph entity part of the response"
+              "hitId": "1",
+              "rank": 1,
+              "summary": "_summary-value",
+              "resource": "The source field will contain the underlying graph entity part of the response"
             }
           ],
           "total": 47,
@@ -163,6 +154,15 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="see-also"></a>Confira também
+- [Mensagens de email](/graph/search-concept-messages) de pesquisa
+- [Eventos de calendário](/graph/search-concept-events) de pesquisa
+- Pesquisar conteúdo no SharePoint e no OneDrive ([arquivos, listas e sites](/graph/search-concept-files))
+- Dados [de tipos personalizados de pesquisa (conectores do gráfico)](/graph/search-concept-custom-types)
+- [Classificar](/graph/search-concept-sort) resultados de pesquisa
+- Usar [agregações](/graph/search-concept-aggregations) para refinar os resultados da pesquisa
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

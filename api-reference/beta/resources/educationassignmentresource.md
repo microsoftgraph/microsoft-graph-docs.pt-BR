@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0012344d2a641b892ae5e3fa905ce1e0c6282a5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 462433a24b8515146303505865b3d356d025d6c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502421"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095545"
 ---
 # <a name="educationassignmentresource-resource-type"></a>tipo de recurso educationAssignmentResource
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,13 +27,13 @@ Um objeto envoltório que armazena os recursos associados a uma atribuição. O 
 |:---------------|:--------|:----------|
 |[Obter educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Ler propriedades e relações de um objeto **educationAssignmentResource** .|
 |[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |Atualize um objeto **educationAssignmentResource** . |
-|[Delete](../api/educationassignmentresource-delete.md) | None |Excluir um objeto **educationAssignmentResource** . |
+|[Delete](../api/educationassignmentresource-delete.md) | Nenhum |Excluir um objeto **educationAssignmentResource** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|Boolean|Indica se esse recurso deve ser copiado para cada aluno enviado para modificação e envio.|
-|id|String| ID desse recurso. Somente leitura.|
+|id|Cadeia de caracteres| ID desse recurso. Somente leitura.|
 |recurso|[educationResource](educationresource.md)|Objeto de recurso que foi associado a essa atribuição.|
 
 ## <a name="relationships"></a>Relações
@@ -73,3 +73,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

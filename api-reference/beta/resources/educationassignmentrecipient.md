@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e341e7136697614b579773cbe113591a46bf2f91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4708d1d4350ec6f25c5bd4df4d68489163f8167c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095573"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>tipo de recurso educationAssignmentRecipient
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,3 +54,5 @@ Nenhum
   "suppressions": []
 }
 -->
+
+

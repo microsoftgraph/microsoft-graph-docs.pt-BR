@@ -3,14 +3,14 @@ title: Obter managementCondition
 description: Leia as propriedades e as relações do objeto managementCondition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5b023308d54aeb82bde0420ef1dd4904b4de5bf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 96ac75901c5c02b6dbfff5bd7facb1a5d30dd636
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095965"
 ---
 # <a name="get-managementcondition"></a>Obter managementCondition
 
@@ -87,6 +87,9 @@ Content-Length: 468
   }
 }
 ```
+
+
+
 
 
 

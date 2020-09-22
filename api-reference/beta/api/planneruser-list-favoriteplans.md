@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f80f537d874caad96f6e5daed9b27f38a5ede226
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c15afa9658e529ed1ba9154bc02e6b17317e151
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095713"
 ---
 # <a name="list-favoriteplans"></a>Listar favoritePlans
 
@@ -123,3 +123,5 @@ Content-length: 979
   ]
 }
 -->
+
+

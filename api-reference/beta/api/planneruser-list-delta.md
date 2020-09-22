@@ -5,16 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 867aa4f2b143da1014c9485c0fac00872193e140
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78b58cee4581934fbb61a2477e385e5e7def4a3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095715"
 ---
 # <a name="planner-delta"></a>Planner: Delta
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ GET /me/planner/all/delta
 GET /users/{id}/planner/all/delta
 ```
 
-Nenhum parâmetro de consulta adicional (como `$select`, `$expand`ou `$filter`) é suportado atualmente na implementação do Planner de consultas Delta.
+Nenhum parâmetro de consulta adicional (como `$select` , `$expand` ou `$filter` ) é suportado atualmente na implementação do Planner de consultas Delta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -61,9 +61,9 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de alterações a serem aplicadas aos objetos no corpo da resposta e um link de sincronização Delta a seguir.
 
-Se o `deltaLink` chamador usa estiver malformado, este ponto de extremidade retornará http 400.
+Se o `deltaLink` chamador usa estiver malformado, este ponto de extremidade retornará HTTP 400.
 
-Se o `deltaLink` chamador usar for muito antigo, esse ponto de extremidade retornará http 410.
+Se o `deltaLink` chamador usar for muito antigo, esse ponto de extremidade retornará HTTP 410.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -169,3 +169,5 @@ preference-applied: odata.track-changes, odata.track-changes
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: db647c47c528428820acc2ded9b079546b991be6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d2d643fed135f97f1ccf2c6346d8fdd6e22f8b5
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985738"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193362"
 ---
 # <a name="searchquery-resource-type"></a>tipo de recurso searchQuery
 
@@ -18,15 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma consulta de pesquisa que contém termos de pesquisa e filtros opcionais.
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Representa uma consulta de pesquisa que contém termos de pesquisa e filtros opcionais.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)|A consulta de pesquisa que contém os termos da pesquisa.|
+|queryString|String|A consulta de pesquisa que contém os termos da pesquisa. Obrigatório.|
+|query_string (preterido)|[searchQueryString](searchquerystring.md)|Agora, ele é substituído pela propriedade **QueryString** . A consulta de pesquisa que contém os termos da pesquisa.|
+
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,6 +45,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "queryString": "String",
   "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
 }
 ```

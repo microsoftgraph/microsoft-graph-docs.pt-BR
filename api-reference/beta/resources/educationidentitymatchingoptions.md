@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5b17ca8548d7a70b8f652ad2d54455fb6040677d
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 73c97b0e9c23c455b3e15ed656060eca7f8a3e4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095370"
 ---
 # <a name="educationidentitymatchingoptions-resource-type"></a>tipo de recurso educationIdentityMatchingOptions
 
@@ -47,3 +47,5 @@ Fornece um mapeamento entre uma propriedade de origem e uma propriedade de desti
   "targetDomain": "String"
 }
 ```
+
+

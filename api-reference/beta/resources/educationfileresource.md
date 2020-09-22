@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d232e664cd7977f0f62d40adebeabaa357ea362d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cafef836f1e6f6fb4c2e379f9b9ad618f2519f72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502036"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095435"
 ---
 # <a name="educationfileresource-resource-type"></a>tipo de recurso educationFileResource
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Uma subclasse de [educationResource](educationresource.md) que representa um obj
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|fileUrl|String|Local no disco do recurso de arquivo.|
+|fileUrl|Cadeia de caracteres|Local no disco do recurso de arquivo.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,3 +56,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

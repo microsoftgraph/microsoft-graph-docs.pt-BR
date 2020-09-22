@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: da1c5fa65305e23b8483825103117c523c51edd7
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: 7c26ef1447272b88c59ec6992e41ae051439645e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435030"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095386"
 ---
 # <a name="educationidentitymatchingconfiguration-resource-type"></a>tipo de recurso educationIdentityMatchingConfiguration
 
@@ -50,3 +50,5 @@ Define as configurações para as identidades correspondentes de perfil de dados
   ]
 }
 ```
+
+

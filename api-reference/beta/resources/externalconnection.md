@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso externalConnection
-description: Uma conexão com a Microsoft Search a partir de uma fonte externa.
+description: Uma conexão é um contêiner lógico para seu conteúdo externo no Microsoft Graph
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a5db824fabc1cedb27d15c4b2cbfbce08bd59191
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82a68c8670a1381263d0b6fd3704f9d6d900d1f0
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026926"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193138"
 ---
 # <a name="externalconnection-resource-type"></a>tipo de recurso externalConnection
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma conexão com a Microsoft Search a partir de uma fonte externa.
+Um contêiner lógico para adicionar conteúdo de uma fonte externa no Microsoft Graph.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                           | Tipo de retorno                                   | Descrição |
 |:-----------------------------------------------------------------|:----------------------------------------------|:--|
@@ -43,6 +43,7 @@ Uma conexão com a Microsoft Search a partir de uma fonte externa.
 | description   | String                            | Descrição da conexão exibida no centro de administração do Microsoft 365. Opcional. |
 | id            | String                            | ID exclusiva fornecida pelo desenvolvedor da conexão dentro do locatário do Azure Active Directory. Comprimento máximo de 32 caracteres. Deve conter apenas caracteres alfanuméricos. Não pode começar com `Microsoft` um dos seguintes valores:,, `None` `Directory` ,, `Exchange` `ExchangeArchive` `LinkedIn` , `Mailbox` , `MicrosoftSearch` , `OneDriveBusiness` ,,, `SharePoint` , `Teams` `Yammer` `Connectors` ,,,,,,,,,. Obrigatório. |
 | nome          | String                            | O nome de exibição da conexão a ser exibida no centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. Obrigatório. |
+| state         | connectionState                   | Indica o estado atual da conexão. Os valores possíveis são:,, `draft` `ready` `obsolete` e `limitExceeded` . Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 
@@ -71,7 +72,8 @@ Veja a seguir uma representação JSON do recurso.
   "configuration": {"@odata.type": "microsoft.graph.configuration"},
   "description": "String",
   "id": "String (identifier)",
-  "name": "String"
+  "name": "String",
+  "state": "String"
 }
 ```
 
@@ -84,5 +86,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

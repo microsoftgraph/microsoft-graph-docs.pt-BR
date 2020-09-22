@@ -3,14 +3,14 @@ title: Listar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatu
 description: Listar Propriedades e relações dos objetos windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ee8264204c0f3a70254d8d0f5cf4ae902c76326
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ed43b4d0e61be93d1a214d0a9f40a84e16c15453
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471538"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095818"
 ---
 # <a name="list-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatuses"></a>Listar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatuses
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCon
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -85,6 +85,9 @@ Content-Length: 612
   ]
 }
 ```
+
+
+
 
 
 

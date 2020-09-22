@@ -1,40 +1,48 @@
 ---
 title: Usar a API de pesquisa da Microsoft no Microsoft Graph para Pesquisar tipos personalizados
-description: Você pode usar a API de pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) e executar consultas de pesquisa nesse conteúdo externo.
+description: Você pode usar a API de pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) e executar consultas de pesquisa nesse conteúdo externo.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 875d6e928f5136ec0b33d013cc111739a3b6067e
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: b125b8f923e941ad73d5c578e99a67fdd9ea9eea
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142306"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192599"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-custom-types"></a>Usar a API de pesquisa da Microsoft no Microsoft Graph para Pesquisar tipos personalizados
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Usar a API de pesquisa da Microsoft para Pesquisar tipos personalizados importados usando conectores do Microsoft Graph
 
-Você pode usar a API de pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) e executar consultas de pesquisa nesse conteúdo externo.
+Use a API de pesquisa da Microsoft para pesquisar conteúdo ingerido e indexado pelos [conectores do Microsoft Graph](https://docs.microsoft.com/microsoftsearch/connectors-overview). O conteúdo é importado por meio de [conectores internos](https://docs.microsoft.com/microsoftsearch/connectors-gallery) fornecidos pela Microsoft ou por meio de conectores personalizados implementados usando a [API de inclusão de conectores do Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-Para Pesquisar tipos personalizados, especifique o seguinte no corpo da solicitação do método de [consulta](/graph/api/search-query?view=graph-rest-beta) :
+[!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-- A propriedade **ContentSources** para incluir a ID de conexão atribuída durante a configuração do conector
+Após o conteúdo ter sido importado e indexado, você poderá usar a API de pesquisa para consultar o conteúdo.
 
-- A propriedade **EntityTypes** como`externalItem`
+Para Pesquisar tipos personalizados, especifique as propriedades a seguir no corpo da solicitação do método de [consulta](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) :
 
-- A propriedade **stored_fields** para incluir os campos no item externo que você deseja recuperar
+- A propriedade **ContentSources** para incluir a ID de conexão atribuída durante a configuração do conector. Você pode passar várias IDs de conexão para pesquisar em várias conexões. Os resultados são retornados em uma única lista, classificados por várias conexões.
+
+<!--
+TODOSEARCHAPI - Bug 1653398 
+-->
+
+- A propriedade **EntityTypes** como `externalItem` .
+
+- A propriedade **Fields** para incluir os campos no item externo a serem recuperados.
 
 ## <a name="example"></a>Exemplo
+
+Neste exemplo, o conteúdo do banco de dados [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) foi incluído usando o conector interno do Azure SQL.
 
 ### <a name="request"></a>Solicitação
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-```
 
-```json
 {
   "requests": [
     {
@@ -42,21 +50,18 @@ Content-Type: application/json
         "externalItem"
       ],
       "contentSources": [
-        "/external/connections/servicenow-connector-contoso"
+          "/external/connections/azuresqlconnector",
+          "/external/connections/azuresqlconnector2"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso tickets"
-        }
+        "queryString": "yang"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
-        "number",
-        "shortdescription",
-        "syscreatedon",
-        "accessurl",
-        "previewContent"
+      "fields": [
+        "BusinessEntityID",
+        "firstName",
+        "lastName"
       ]
     }
   ]
@@ -65,46 +70,49 @@ Content-Type: application/json
 
 ### <a name="response"></a>Resposta
 
-```json
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
+      "searchTerms": ["ya"],
       "hitsContainers": [
         {
           "total": 2,
           "moreResultsAvailable": false,
           "hits": [
             {
-              "_id": "AAMkADc0NDNlNTE0",
-              "_score": 1,
-              "_sortField": "Relevance",
-              "_source": {
+              "hitId": "AAMkADc0NDNlNTE0",
+              "rank": 1,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0010025",
-                  "shortdescription": "Contoso maintenance guidelines",
-                  "syscreatedon": "2019-10-14T22:45:02Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=6b5465781ba000104793877ddc4bcb81",
-                  "previewContent": "Contoso maintenance guidelines"
+                  "businessEntityID": 20704,
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
             },
-            {
-              "_id": "MG+1glPAAAAAAl3AAA=",
-              "_score": 2,
-              "_sortField": "Relevance",
-              "_source": {
+           {
+              "hitId": "AQMkADg3M2I3YWMyLTEwZ",
+              "rank": 2,
+              "summary": "<ddd/>",
+              "contentSource": "/external/connections/azuresqlconnector2",
+              "resource": {
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
-                  "number": "KB0054396",
-                  "shortdescription": "Contoso : Setting Office for the first time.",
-                  "syscreatedon": "2019-08-09T01:53:26Z",
-                  "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=004d8d931b0733004793877ddc4bcb29",
-                  "previewContent": "Description:  Setting Office for the first time.  Resolution:    To setup any Office app for the first time, tap any Office app like Word to launch it.    Tap Sign in if you already have a Microsoft Account or a Microsoft 365 work or school account."
+                  "businessEntityID": 20704,
+                  "shortdescription": "Contoso maintenance guidelines",
+                  "firstName": "Amy",
+                  "lastName": "Yang"
                 }
               }
-            }
+            },
           ]
         }
       ]
@@ -115,10 +123,8 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-- Tipos personalizados não dão suporte à pesquisa em várias fontes (especificado em **ContentSources**). Você pode pesquisar apenas uma conexão por vez.
-
-- Você deve especificar a propriedade **stored_fields** ; caso contrário, os resultados da pesquisa não serão retornados.
+- Você deve especificar a propriedade **Fields** para obter campos recuperáveis no esquema de pesquisa.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

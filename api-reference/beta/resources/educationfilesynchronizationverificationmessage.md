@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8e82ede1df5c17b99fdc40857fd97f1f90012711
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: b65335538453f35457d5e83c49f7ba7c830d6a43
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095433"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>tipo de recurso educationFileSynchronizationVerificationMessage
 
@@ -45,3 +45,5 @@ Representa um erro retornado ao cliente em resposta a uma solicitação para [in
   "description": "String"
 }
 ```
+
+

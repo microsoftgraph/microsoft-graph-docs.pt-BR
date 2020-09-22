@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso externalItem
-description: Um item indexado por meio de uma conexão de pesquisa da Microsoft.
+description: Um item adicionado a uma conexão do Microsoft Graph.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d775cfefa7a0cd1fdb87a291ba7ac61bb4b40782
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec2c66c91612738295ac4ba49524593d61ff70e4
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013699"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193392"
 ---
 # <a name="externalitem-resource-type"></a>tipo de recurso externalItem
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da Microsoft.
+Um item adicionado a uma [conexão](externalconnection.md)do Microsoft Graph. 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -36,7 +36,7 @@ Um item indexado por meio de uma [conexão](externalconnection.md)de pesquisa da
 | Propriedade   | Tipo                     | Descrição                          |
 |:-----------|:-------------------------|:-------------------------------------|
 | ACL        | coleção [ACL](acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. Obrigatório. |
-| conteúdo    | [externalItemContent](externalitemcontent.md) | Uma representação de texto sem formatação ou HTML do conteúdo do item. O texto nessa propriedade é indexado de texto completo. Opcional. |
+| conteúdo    | [externalItemContent](externalitemcontent.md) | Uma representação de texto simples do conteúdo do item. O texto nessa propriedade é indexado de texto completo. Opcional. |
 | id         | String                   | ID exclusiva fornecida pelo desenvolvedor do item dentro do [externalConnection](externalconnection.md)que contém o. Deve ser alfanumérico e um máximo de 128 caracteres. Obrigatório. |
 | properties | Objeto                   | Um recipiente de propriedades com as propriedades do item. As propriedades devem estar em conformidade com o [esquema](schema.md) definido para o [externalConnection](externalconnection.md). Obrigatório. |
 
@@ -79,5 +79,3 @@ Veja a seguir uma representação JSON do recurso.
     "Error: microsoft.graph.externalItem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
-
-

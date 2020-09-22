@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f4410518feca7c84e6093b9ff739feae99b631c5
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2b6ab9495642d0e47dac796cab52411109e75167
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509585"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095503"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -49,11 +49,11 @@ Os alunos são membros regulares da turma e os professores são proprietários e
 
 | Propriedade             | Tipo                                  | Descrição                                                                                                                                                          |
 | :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                   | String                                | O identificador exclusivo da aula.                                                                                                                                     |
+| id                   | Cadeia de caracteres                                | O identificador exclusivo da aula.                                                                                                                                     |
 | classCode            | Cadeia de caracteres                                | Código de aula usada pela escola para identificar a aula.                                                                                                                 |
 | durante               | [educationCourse](educationcourse.md) | Informações de cursos da turma                                                                                                                                     |
 | createdBy            | [identitySet]                         | Entidade que criou a aula                                                                                                                                         |
-| description          | String                                | Descrição da aula.                                                                                                                                            |
+| description          | Cadeia de caracteres                                | Descrição da aula.                                                                                                                                            |
 | displayName          | Cadeia de caracteres                                | Nome da aula.                                                                                                                                                   |
 | externalId           | Cadeia de caracteres                                | ID da aula no sistema de sincronização.                                                                                                                             |
 | externalName         | Cadeia de caracteres                                | Nome da aula no sistema de sincronização.                                                                                                                             |
@@ -126,3 +126,5 @@ Veja a seguir uma representação JSON do recurso.
 [educationterm]: educationterm.md
 [identityset]: identityset.md
 [group]: group.md
+
+
