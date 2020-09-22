@@ -5,16 +5,16 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 3922fc08bf30dde7daa7e01d1f810cb3e45d5d81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee32b40f71c2540bb06b8b4478d0f896aac40b85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498536"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071204"
 ---
 # <a name="fallbackpolicyproperties-resource-type"></a>tipo de recurso fallbackPolicyProperties
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ Permite que a política de fallback seja especificada para notificações brutas
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| platformTypes | String collection | Especifica as plataformas que um desenvolvedor deseja habilitar para o fallback de notificação de torradeira de leitura para leitura visual. No momento, se **fallbackPolicy** for especificado, **targetPolicy. platformTypes** deve `iOS` incluir e opcionalmente outras plataformas. Além disso, o **fallbackPolicy. endpointFallback. platformTypes** é necessário e a única plataforma suportada atualmente `iOS`. |
+| platformTypes | Coleção de cadeias de caracteres | Especifica as plataformas que um desenvolvedor deseja habilitar para o fallback de notificação de torradeira de leitura para leitura visual. No momento, se **fallbackPolicy** for especificado, **targetPolicy. platformTypes** deve incluir `iOS` e opcionalmente outras plataformas. Além disso, o **fallbackPolicy. endpointFallback. platformTypes** é necessário e a única plataforma suportada atualmente `iOS` . |
 | fallbackDelayInSeconds | Int32 | Esse atraso representa a quantidade de tempo que passará (em segundos) antes que uma notificação de notificação direta seja enviada como um fallback para cada usuário de assinatura de dispositivo iOS que não buscará a notificação bruta. O valor deve estar entre 60 e 600. |
 | visualContent | [visualproperties](visualproperties.md)|O conteúdo visual de uma notificação de usuário de retorno de fallback e bruto para Visual no iOS. |
  
@@ -60,3 +60,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

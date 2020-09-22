@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c9a9ea8b5bd9d2a0fbfbcb1a64381b46e2f96283
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 5040cb32b664497f2cbed9dc9ca77ce2a2a54ee7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217399"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023825"
 ---
 # <a name="synchronizationprogress-resource-type"></a>tipo de recurso synchronizationProgress
 
@@ -27,7 +27,7 @@ Representa o andamento de um [synchronizationJob](synchronization-synchronizatio
 |completedUnits|Int32|O numerador de uma taxa de progresso; o número de unidades de alterações já processadas.|
 |progressObservationDateTime|DateTimeOffset|O tempo de uma observação de progresso como um deslocamento em minutos do UTC.|
 |totalUnits|Int32|O denominador de uma taxa de progresso; várias unidades de alterações a serem processadas para realizar a sincronização.|
-|unid|Cadeia de Caracteres|Uma descrição opcional das unidades.|
+|unid|String|Uma descrição opcional das unidades.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
@@ -65,3 +65,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

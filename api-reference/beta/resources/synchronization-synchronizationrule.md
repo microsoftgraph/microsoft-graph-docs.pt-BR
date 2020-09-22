@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0698afb7e3584aa1d4cd6697504138f6262e5141
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 86a5f39612b6fdbeb123a74372520115e0357fb0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217364"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023811"
 ---
 # <a name="synchronizationrule-resource-type"></a>tipo de recurso synchronizationRule
 
@@ -28,14 +28,14 @@ As regras de sincronização são atualizadas como parte do [esquema de sincroni
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|edita       |Boolean    |`true`se a regra de sincronização puder ser personalizada; `false` se essa regra é somente leitura e não deve ser alterada.|
+|edita       |Booliano    |`true` se a regra de sincronização puder ser personalizada; `false` se essa regra é somente leitura e não deve ser alterada.|
 |id             |String     |Identificador de regra de sincronização. Deve ser um dos identificadores reconhecidos pelo mecanismo de sincronização. Os identificadores de regra suportados podem ser encontrados no modelo de sincronização retornado pela API.|
 |los       |coleção [stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) |Propriedades de extensão adicionais. A menos que instruído explicitamente pela equipe de suporte, os valores de metadados não devem ser alterados.|
 |nome           |String     |Nome legível da regra de sincronização. Não anulável.|
 |objectmappings |coleção [Objectmapping](synchronization-objectmapping.md)    |Conjunto de mapeamentos de objeto com suporte da regra. Informa ao mecanismo de sincronização quais objetos devem ser sincronizados.|
 |prioridade       |Inteiro    |Prioridade relativa a outras regras no [synchronizationSchema](synchronization-synchronizationschema.md). As regras com o número de prioridade mais baixa serão processadas primeiro.|
-|sourceDirectoryName       |Cadeia de Caracteres    |Nome do diretório de origem. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
-|targetDirectoryName       |Cadeia de Caracteres    |Nome do diretório de destino. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
+|sourceDirectoryName       |String    |Nome do diretório de origem. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
+|targetDirectoryName       |String    |Nome do diretório de destino. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -75,3 +75,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

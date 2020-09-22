@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso searchQueryString
-description: searchQueryString
+title: tipo de recurso SortProperty
+description: Oferece a opção de classificar os resultados da pesquisa.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 70c029ccb7751287b090015467549169dde4bae9
+ms.openlocfilehash: 1f1288b2dc9ec05fe8aaedb5871c3bda68714f90
 ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193250"
+ms.locfileid: "48193832"
 ---
-# <a name="searchquerystring-resource-type-deprecated"></a>tipo de recurso searchQueryString (preterido)
+# <a name="sortproperty-resource-type"></a>tipo de recurso SortProperty
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
-Os termos de pesquisa da consulta.
+Representa as opções de classificação para ordenar os resultados da pesquisa.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|consulta|String|Contém os termos de pesquisa reais da solicitação.|
+|nome|String|O nome da propriedade a ser classificada. Obrigatório.|
+|isDescending|Booliano|`True` se a ordem de classificação for decrescente. O padrão é `false` , com a ordem de classificação como crescente. Opcional.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -36,13 +36,14 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.searchQueryString",
+  "@odata.type": "microsoft.graph.sortProperty",
   "baseType": null
 }-->
 
 ```json
 {
-  "query": "String"
+  "name": "String",
+  "isDescending": "true"
 }
 ```
 
@@ -50,9 +51,8 @@ Veja a seguir uma representação JSON do recurso.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "searchQueryString resource",
+  "description": "sortProperty resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
 }-->
-

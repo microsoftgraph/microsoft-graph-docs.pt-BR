@@ -3,14 +3,14 @@ title: tipo de recurso win32LobAppRegistryRule
 description: Um tipo complexo para armazenar dados de regra de registro para um aplicativo LOB Win32.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e4fcce49fde2f1eb8eb33bc320f1204369b09cf
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 61ebe9132b3c6e671208b455ef5ea06aaa2efc48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790807"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071063"
 ---
 # <a name="win32lobappregistryrule-resource-type"></a>tipo de recurso win32LobAppRegistryRule
 
@@ -29,15 +29,15 @@ Herda de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|O tipo de regra que indica o objetivo da regra. Herdado de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Os valores possíveis são: `detection` e `requirement`.|
-|check32BitOn64System|Boolean|Um valor que indica se é para pesquisar o registro de 32 bits em sistemas de 64 bits.|
-|Caminho-chave|String|O caminho completo da entrada de registro que contém o valor a ser detectado.|
-|valueName|String|O nome do valor do registro a ser detectado.|
+|check32BitOn64System|Booliano|Um valor que indica se é para pesquisar o registro de 32 bits em sistemas de 64 bits.|
+|Caminho-chave|Cadeia de caracteres|O caminho completo da entrada de registro que contém o valor a ser detectado.|
+|valueName|Cadeia de caracteres|O nome do valor do registro a ser detectado.|
 |OperationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|O tipo de operação do registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|O operador para detecção de registro. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|ComparisonValue|String|O valor de comparação do registro.|
+|ComparisonValue|Cadeia de caracteres|O valor de comparação do registro.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -58,6 +58,9 @@ Veja a seguir uma representação JSON do recurso.
   "comparisonValue": "String"
 }
 ```
+
+
+
 
 
 

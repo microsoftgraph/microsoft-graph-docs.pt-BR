@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: resourcePageType
 author: merzink
-ms.openlocfilehash: e665cb3e87360c85bb7ee3926e8395a1cbba4de6
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 97b3d5be5039baff9f73019dbdc54947614d3c1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290206"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078218"
 ---
 # <a name="notification-resource-type"></a>tipo de recurso de notificação
 
-Namespace: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma notificação publicada por um servidor de aplicativos que se destina a um usuário especificado. A notificação é armazenada no Microsoft Graph e é distribuída para diferentes pontos de extremidade do dispositivo de Propriedade do usuário. 
 
@@ -33,14 +33,14 @@ Quando um usuário atua em uma notificação Visual, o cliente do aplicativo pod
 ## <a name="properties"></a>Propriedades
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-| targetHostName | String | Representa o nome do host do aplicativo para o qual o serviço de chamada deseja postar a notificação para o usuário específico. Se estiver direcionando pontos de extremidade da Web (consulte **targetPolicy. platformTypes**), certifique-se de que **targetHostName** é igual ao nome usado ao criar uma assinatura no lado do cliente dentro da propriedade JSON do aplicativo. |
-| appNotificationId | String | A ID exclusiva definida pelo servidor de aplicativos de uma notificação que é usada para identificar e direcionar uma notificação individual. |
-| Nome_do_grupo | String | O nome do grupo ao qual essa notificação pertence. Ele é definido pelo desenvolvedor com o objetivo de agrupar notificações. |
+| targetHostName | Cadeia de caracteres | Representa o nome do host do aplicativo para o qual o serviço de chamada deseja postar a notificação para o usuário específico. Se estiver direcionando pontos de extremidade da Web (consulte **targetPolicy. platformTypes**), certifique-se de que **targetHostName** é igual ao nome usado ao criar uma assinatura no lado do cliente dentro da propriedade JSON do aplicativo. |
+| appNotificationId | Cadeia de caracteres | A ID exclusiva definida pelo servidor de aplicativos de uma notificação que é usada para identificar e direcionar uma notificação individual. |
+| Nome_do_grupo | Cadeia de caracteres | O nome do grupo ao qual essa notificação pertence. Ele é definido pelo desenvolvedor com o objetivo de agrupar notificações. |
 | targetPolicy | [targetPolicyEndpoints](targetpolicyendpoints.md) | O objeto de política de destino manipula a política de entrega de notificação para tipos de ponto de extremidade que devem ser direcionados (Windows, iOS, Android e webpush) para o usuário fornecido. |
 | payload | [payloadTypes](payloadtypes.md)| Este é o conteúdo de dados de uma notificação de usuário bruto ou Visual que será entregue e consumido pelo cliente do aplicativo que está recebendo esta notificação. |
 | displayTimeToLive | Int32 | Define por quanto tempo (em segundos) esse conteúdo de notificação permanecerá no Visualizador de notificação de cada plataforma. Por exemplo, quando a notificação é entregue a um dispositivo do Windows, o valor dessa propriedade é passado para ToastNotification. ExpirationTime, que determina por quanto tempo a notificação de notificação de falha permanecerá na central de ações do Windows do usuário. |
 | expirationDateTime | DateTimeOffset | Define uma data e hora de vencimento UTC em uma notificação de usuário usando o formato ISO 8601 (por exemplo, meia-noite UTC em 1º de janeiro de 2019 teria a seguinte aparência: `'2019-01-01T00:00:00Z'` ). Quando o tempo é concluído, a notificação é removida do repositório de feeds de notificação do Microsoft Graph completamente e não faz mais parte do histórico de notificações. O valor máximo é 30 dias. |
-| prioridade | string | Indica a prioridade de uma notificação de usuário bruto. As notificações visuais são enviadas com alta prioridade por padrão. Os valores válidos são `None`, `High` e `Low`. |
+| prioridade | cadeia de caracteres | Indica a prioridade de uma notificação de usuário bruto. As notificações visuais são enviadas com alta prioridade por padrão. Os valores válidos são `None`, `High` e `Low`. |
 | fallbackPolicy | [fallbackpolicy](fallbackpolicy.md) | O objeto de política de fallback opcional trata da política de fallback de notificação para pontos de extremidade iOS somente e é projetado para ser usado para notificações brutas de alta prioridade que podem não ser entregues aos dispositivos devido a restrições específicas de plataforma (por exemplo, modo economia de bateria). |
 
 
@@ -84,3 +84,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

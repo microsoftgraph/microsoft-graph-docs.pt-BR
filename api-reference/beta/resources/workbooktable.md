@@ -5,16 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d6a95756e59a8dc0040406b9fc678a312e14a499
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7110993ad38dd9673d36c2d6d1fb2eabc3872da2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023766"
 ---
 # <a name="workbooktable-resource-type"></a>tipo de recurso workbooktable
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,9 +36,9 @@ Representa uma tabela do Excel.
 |[Totalrowrange](../api/table-totalrowrange.md)|[workbookRange](workbookrange.md)|Obtém o objeto de intervalo associado à linha de totais da tabela.|
 |[Clearfilters](../api/table-clearfilters.md)|Nenhum|Limpa todos os filtros aplicados à tabela no momento.|
 |[Converttorange](../api/table-converttorange.md)|[workbookRange](workbookrange.md)|Converte a tabela em um intervalo de células normal. Todos os dados são preservados.|
-|[Delete](../api/table-delete.md)|None|Exclui a tabela.|
+|[Delete](../api/table-delete.md)|Nenhum|Exclui a tabela.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|Nenhum|Aplica novamente todos os filtros à tabela.|
-|[List](../api/table-list.md) | coleção [workbooktable](workbooktable.md) |Obtenha a coleção de objetos da tabela. |
+|[List](../api/table-list.md) | coleção [WorkbookTable](workbooktable.md) |Obtenha a coleção de objetos da tabela. |
 |[Add](../api/tablecollection-add.md)|[workbooktable](workbooktable.md)|Cria uma nova tabela. O endereço de origem do intervalo determina a planilha à qual a tabela será adicionada. Se a tabela não puder ser adicionada (por exemplo, porque o endereço é inválido ou a tabela se sobreporia a outra), será gerado um erro.|
 
 ## <a name="properties"></a>Propriedades
@@ -49,9 +49,9 @@ Representa uma tabela do Excel.
 |showHeaders|booliano|Indica se a linha do cabeçalho está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do cabeçalho.|
 |showTotals|booliano|Indica se a linha do total está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do total.|
 |style|cadeia de caracteres|Valor da constante que representa o estilo de Tabela. Os valores possíveis são: TableStyleLight1 a TableStyleLight21, TableStyleMedium1 a TableStyleMedium28, TableStyleStyleDark1 a TableStyleStyleDark11. Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.|
-|highlightFirstColumn|Boolean|Indica se a primeira coluna contém uma formatação especial.   |
-|highlightLastColumn|Boolean|Indica se a última coluna contém uma formatação especial. |
-|showBandedColumns|Boolean|Indica se as colunas mostram formatação em faixas nas quais as colunas ímpares são realçadas de modo diferente das colunas pares, tornando a leitura da tabela mais fácil.   |
+|highlightFirstColumn|Booliano|Indica se a primeira coluna contém uma formatação especial.   |
+|highlightLastColumn|Booliano|Indica se a última coluna contém uma formatação especial. |
+|showBandedColumns|Booliano|Indica se as colunas mostram formatação em faixas nas quais as colunas ímpares são realçadas de modo diferente das colunas pares, tornando a leitura da tabela mais fácil.   |
 |showBandedRows|Booliano|Indica se as linhas mostram formatação em faixas nas quais as linhas ímpares são realçadas de modo diferente das colunas pares, tornando a leitura da tabela mais fácil.    |
 |showFilterButton|Booliano|Indica se os botões de filtro estão visíveis na parte superior de cada cabeçalho da coluna. Essa configuração só será permitida se a tabela tiver uma linha de cabeçalho.   |
 |legacyId|Cadeia de caracteres|ID herdada usada em clientes do Excel anteriores. O valor do identificador permanece o mesmo, ainda que a tabela seja renomeada. Essa propriedade deve ser interpretada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo. Somente leitura.   |
@@ -107,3 +107,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

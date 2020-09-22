@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipalName: addKey'
-description: Adicione uma credencial de chave a um servicePrincipalName.
+description: Adicione uma credencial de chave a uma servicePrincipal.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: be1e1cae6907b853a32cf0038f465127ea86f0b1
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: f532b317572ead85364b18aa37907b7279cf485f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383452"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044715"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipalName: addKey
 
@@ -27,13 +27,13 @@ Como parte da solicitação de validação para esse método, uma prova de posse
 
 Os servicePrincipalName que não têm certificados válidos existentes (por exemplo: nenhum certificado foi adicionado ainda, ou todos os certificados expiraram) não poderão usar essa ação de serviço. [Atualize o servicePrincipalName](../api/serviceprincipal-update.md) pode ser usado para executar uma atualização.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Nenhum  |
+|Delegado (conta corporativa ou de estudante) | Nenhum.  |
 |Delegado (conta pessoal da Microsoft) | Nenhum.    |
-|Aplicativo | Nenhum |
+|Aplicativo | Nenhum. |
 
 > [!NOTE]
 > Um servicePrincipalName não precisa de nenhuma permissão específica para a distribuição de suas próprias chaves.
@@ -59,9 +59,9 @@ No corpo da solicitação, forneça as seguintes propriedades obrigatórias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| keycredential | [keycredential](../resources/keycredential.md) | A nova credencial de chave de servicePrincipalName a ser adicionada. O __tipo__, __uso__ e __chave__ são propriedades obrigatórias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: O uso deve ser `Verify` .</li><li>`X509CertAndPassword`: O uso deve ser`Sign`</li></ul>|
+| keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave de servicePrincipalName a ser adicionada. O __tipo__, __uso__ e __chave__ são propriedades obrigatórias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: O uso deve ser `Verify` .</li><li>`X509CertAndPassword`: O uso deve ser `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Só é necessário definir o __secretText__ que deve conter a senha para a chave. Essa propriedade é obrigatória somente para chaves de tipo `X509CertAndPassword` . Defini-lo como `null` caso contrário.|
-| evidência | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes de servicePrincipalName. O token deve conter as seguintes declarações:<ul><li>`aud`-A audiência precisa ser `00000002-0000-0000-c000-000000000000` .</li><li>`iss`-Issuer precisa ser a __ID__ do servicePrincipalName que está fazendo a chamada.</li><li>`nbf`-Não antes da hora.</li><li>`exp`– O tempo de expiração deve ser "NBF" + 10 minutos.</li></ul><br>Veja a seguir um [exemplo](/graph/application-rollkey-prooftoken) de código que pode ser usado para gerar esse token de prova de posse.|
+| evidência | Cadeia de caracteres | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes de servicePrincipalName. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` -Issuer precisa ser a __ID__  do servicePrincipalName que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Veja a seguir um [exemplo](/graph/application-rollkey-prooftoken) de código que pode ser usado para gerar esse token de prova de posse.|
 
 ## <a name="response"></a>Resposta
 
@@ -180,3 +180,5 @@ Content-Type: application/json
     "Error: serviceprincipal_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
 }-->
+
+

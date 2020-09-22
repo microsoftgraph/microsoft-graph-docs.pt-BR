@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 52034dd9d25c5decf8feb4cd3af28ea95224adcb
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 5c514d6a48ffafc13a118b9471fb94be9ffc0e11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071203"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>tipo de recurso featureRolloutPolicy
 
@@ -70,7 +70,7 @@ Estes são os requisitos para cada um dos recursos atualmente suported para dist
 |isAppliedToOrganization|Booliano|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
 |isEnabled|Boolean|Indica se a distribuição de recursos está habilitada.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -110,3 +110,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: tipo de enumeração weeklySchedule
 description: Valores possíveis para um cronograma semanal.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ce3e6eb555171291763f0560cf980cad41455659
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b42190293167e324ebf4ba4a9d4b972a09aa3a00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383380"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058183"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de enumeração weeklySchedule
 
@@ -26,15 +26,18 @@ Valores possíveis para um cronograma semanal.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|diário|1|Diário.|
-|domingo|duas|Domingo.|
-|período|3D|Segunda-feira.|
+|diário|1 |Diário.|
+|domingo|2 |Domingo.|
+|período|3 |Segunda-feira.|
 |feira|4 |Terça-feira.|
 |feira|5 |Quarta-feira.|
 |quinta-feira|6 |Quinta-feira.|
 |sexta|7 |Sexta-feira.|
 |sábado|8 |Sábado.|
 |noScheduledScan|9 |Nenhuma verificação agendada|
+
+
+
 
 
 

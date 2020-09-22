@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: 928ec4c9d759674bc066c45a5f82e2e8cdd3ee3b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: e6bc7bb02ccfc077f9461e5c2a4f15aac4ddf22d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078217"
 ---
 # <a name="visualinfo-resource-type"></a>tipo de recurso visualInfo
 
@@ -30,7 +30,7 @@ Se um cartão personalizado não for fornecido, um cartão simples será gerado 
 
 |Nome | Tipo | Descrição|
 |:----|:------|:-----------|
-|displayText | String | Obrigatório. Descrição de texto curto da atividade exclusiva do usuário (por exemplo, nome do documento em casos em que uma atividade refere-se à criação de documentos)|
+|displayText | Cadeia de caracteres | Obrigatório. Descrição de texto curto da atividade exclusiva do usuário (por exemplo, nome do documento em casos em que uma atividade refere-se à criação de documentos)|
 |description | String | Opcional. Descrição de texto mais longa da atividade exclusiva do usuário (exemplo: nome do documento, primeira frase e/ou metadados)|
 |CorDoFundo | String | Opcional. Cor de plano de fundo usada para renderizar a atividade na cor da marca de interface do usuário da origem do aplicativo da atividade. Deve ser uma cor hexadecimal válida|
 |conteúdo | Objeto JSON não digitado | Opcional. Parte personalizada de dados-objeto JSON usado para fornecer conteúdo personalizado para renderizar a atividade na interface do usuário do shell do Windows|
@@ -81,3 +81,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

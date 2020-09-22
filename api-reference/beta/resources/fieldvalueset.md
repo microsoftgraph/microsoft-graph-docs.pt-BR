@@ -6,16 +6,16 @@ title: FieldValueSet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: f5c7f741fe5f1dd46b4ffe7572d2bd982aea4853
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62a7d55813877a1808c4930322f1a0ddc33bf89f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071196"
 ---
 # <a name="fieldvalueset-resource"></a>Recurso de FieldValueSet
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,3 +66,5 @@ você pode solicitar até 12 campos de pesquisa em uma única consulta, além de
   "suppressions": []
 }
 -->
+
+

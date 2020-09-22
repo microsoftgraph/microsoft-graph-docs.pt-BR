@@ -5,12 +5,12 @@ localization_priority: Normal
 author: merzink
 ms.prod: notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 5fd76d6798ab92fdfa319b732dd926fbec22e798
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 8d39f9b69eb4ebdfcab883adec10b70100efba4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071207"
 ---
 # <a name="fallbackpolicy-resource-type"></a>tipo de recurso fallbackPolicy
 
@@ -55,3 +55,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

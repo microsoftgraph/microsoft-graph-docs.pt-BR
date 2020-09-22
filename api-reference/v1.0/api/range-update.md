@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bc0a049e7fb7a27fd2bf80fb942b74628d836e55
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 4c660b8697291e1b2248d6337a47bda57dfee80b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543384"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051554"
 ---
 # <a name="update-range"></a>Intervalo de atualização
 
@@ -123,3 +123,4 @@ Content-length: 169
   ],
   "tocPath": ""
 }-->
+

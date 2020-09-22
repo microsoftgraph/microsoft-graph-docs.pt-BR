@@ -3,14 +3,14 @@ title: tipo de recurso edgeHomeButtonLoadsStartPage
 description: Mostrar o botão página inicial; clicar no botão página inicial carrega a página inicial, que também é o valor padrão.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5cac7794a82df2d5abb209b94ef27d59a1b5161f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 79a588829b99bf195b50b896dcf70716bd501320
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386358"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058239"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>tipo de recurso edgeHomeButtonLoadsStartPage
 
@@ -44,6 +44,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.edgeHomeButtonLoadsStartPage"
 }
 ```
+
+
+
 
 
 

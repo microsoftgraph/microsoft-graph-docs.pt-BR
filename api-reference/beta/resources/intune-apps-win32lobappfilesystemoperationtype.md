@@ -3,14 +3,14 @@ title: tipo de enumeração win32LobAppFileSystemOperationType
 description: Contém todo o tipo de detecção de sistema de arquivos com suporte.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8e1224388b988eb0bab7286f14a21111b75daa8a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: b7043daf59ba9e68447b6ed98c25602c653eb841
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790835"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071091"
 ---
 # <a name="win32lobappfilesystemoperationtype-enum-type"></a>tipo de enumeração win32LobAppFileSystemOperationType
 
@@ -27,11 +27,14 @@ Contém todo o tipo de detecção de sistema de arquivos com suporte.
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
 |houver|1 |Se o arquivo ou a pasta especificada existe.|
-|modifiedDate|duas|Data da última modificação.|
-|createdDate|3D|Data de criação.|
+|modifiedDate|2 |Data da última modificação.|
+|createdDate|3 |Data de criação.|
 |versão|4 |Tipo de valor de versão.|
 |sizeInMB|5 |Tipo de detecção de tamanho.|
 |doesNotExist|6 |O arquivo ou a pasta especificada não existe.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: tipo de enumeração androidManagedAppSafetyNetDeviceAttestationType
 description: Um requisito de atestado de dispositivo do SafetyNet do Android aplicado por administradores em um aplicativo gerenciado.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ef06b8f3cc3a2e53a053f0169e5921bc02fb822
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 645027397a852c98ee973ee53382e4e552724ab0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43374351"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030560"
 ---
 # <a name="androidmanagedappsafetynetdeviceattestationtype-enum-type"></a>tipo de enumeração androidManagedAppSafetyNetDeviceAttestationType
 
@@ -25,9 +25,12 @@ Um requisito de atestado de dispositivo do SafetyNet do Android aplicado por adm
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|nenhum conjunto de requisitos|
-|basicIntegrity|1|exigir que o dispositivo Android passe na validação da integridade básica do SafetyNet|
-|basicIntegrityAndDeviceCertification|duas|exigir que o dispositivo Android passe a integridade básica do SafetyNet e as validações de certificação de dispositivos|
+|Nenhuma|,0|nenhum conjunto de requisitos|
+|basicIntegrity|1 |exigir que o dispositivo Android passe na validação da integridade básica do SafetyNet|
+|basicIntegrityAndDeviceCertification|2 |exigir que o dispositivo Android passe a integridade básica do SafetyNet e as validações de certificação de dispositivos|
+
+
+
 
 
 

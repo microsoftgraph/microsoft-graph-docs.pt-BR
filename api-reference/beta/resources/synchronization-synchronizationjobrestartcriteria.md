@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f9e8dba8829e7f5340a3ba43d8d9a31df4f98049
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 82d671f411725a1e6537580205c7298cf887e3a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217518"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023839"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>tipo de recurso synchronizationJobRestartCriteria
 
@@ -23,7 +23,7 @@ Define o escopo da ação [synchronizationJob: reiniciar](../api/synchronization
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|resetScope|Cadeia de Caracteres| Combinação separada por vírgula dos seguintes `Full`valores:, `QuarantineState`, `Watermark`, `Escrows`,. `ConnectorDataStore` Use `Full` se você quiser todas as opções.|
+|resetScope|String| Combinação separada por vírgula dos seguintes valores: `Full` ,, `QuarantineState` , `Watermark` , `Escrows` `ConnectorDataStore` . Use `Full` se você quiser todas as opções.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,8 +39,11 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "resetScope": "String"
+    "criteria": {
+        "resetScope": "String"
+    }
 }
+
 
 ```
 
@@ -56,3 +59,5 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
+
+

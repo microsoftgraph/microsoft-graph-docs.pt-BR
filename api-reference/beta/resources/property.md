@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9862170dfcca0960ebd319089da70cca93782875
-ms.sourcegitcommit: 05645bc582d14781a9ca6b78ed598a4e7dc26869
+ms.openlocfilehash: ca2f9235a9a3a8f633976f0470326f06c9decf0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44990260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078235"
 ---
 # <a name="property-resource-type"></a>tipo de recurso Property
 
@@ -32,8 +32,8 @@ Uma definição de propriedade de [esquema](schema.md) para uma [conexão](exter
 | isretrievable | Booliano           | Especifica se a propriedade é recuperável. As propriedades recuperáveis são retornadas no conjunto de resultados quando os itens são retornados pela API de pesquisa. As propriedades recuperáveis também estão disponíveis para adicionar ao modelo de exibição usado para renderizar os resultados da pesquisa. Opcional. |
 | IsSearchable  | Booliano           | Especifica se a propriedade é pesquisável. Somente propriedades do tipo `String` ou `StringCollection` podem ser pesquisáveis. As propriedades não pesquisáveis não são adicionadas ao índice de pesquisa. Opcional. |
 | Legendas        | Coleção de cadeias de caracteres | Especifica uma ou mais marcas conhecidas e adicionadas a uma propriedade. Os rótulos ajudam a pesquisa da Microsoft a entender a semântica dos dados na conexão. A adição de rótulos apropriados resultaria em uma experiência de pesquisa avançada (por exemplo, maior relevância). Rótulos com suporte:,,,,, `title` `url` `createdBy` `lastModifiedBy` `authors` `createdDateTime` , `lastModifiedDateTime` , `fileName` e `fileExtension` . Opcional. |
-| nome          | String            | O nome da propriedade. Máximo de 32 caracteres. Não deve conter caracteres de controle, espaço em branco ou qualquer um dos seguintes:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, `:` `;` `,` `(` `)` `[` `]` `{` `}` `%` `$` `+` `!` `*` `=` `&` `?` `@` , `#` `\` `~` `'` `"` `<` `>` `|` `` ` `` `^` , Obrigatório.                |
-| tipo          | String            | O tipo de dados da propriedade. Os valores possíveis são: `String`, `Int64`, `Double`, `DateTime`, `Boolean`, `StringCollection`, `Int64Collection`, `DoubleCollection`, `DateTimeCollection`. Obrigatório. |
+| name          | Cadeia de caracteres            | O nome da propriedade. Máximo de 32 caracteres. Não deve conter caracteres de controle, espaço em branco ou qualquer um dos seguintes:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, `:` `;` `,` `(` `)` `[` `]` `{` `}` `%` `$` `+` `!` `*` `=` `&` `?` `@` , `#` `\` `~` `'` `"` `<` `>` `|` `` ` `` `^` , Obrigatório.                |
+| tipo          | Cadeia de caracteres            | O tipo de dados da propriedade. Os valores possíveis são: `String`, `Int64`, `Double`, `DateTime`, `Boolean`, `StringCollection`, `Int64Collection`, `DoubleCollection`, `DateTimeCollection`. Obrigatório. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -70,3 +70,5 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

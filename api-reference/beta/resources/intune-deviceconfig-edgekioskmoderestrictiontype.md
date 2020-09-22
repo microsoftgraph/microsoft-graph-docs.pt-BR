@@ -3,14 +3,14 @@ title: tipo de enumeração edgeKioskModeRestrictionType
 description: Especifique como as configurações do Microsoft Edge são restritas com base no modo quiosque.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1dfd86f9bd3a35e82f5210294c9b0648a4bab228
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 98508a288ef46f8112ac5d796b8ddef64c5940e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058197"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>tipo de enumeração edgeKioskModeRestrictionType
 
@@ -26,10 +26,13 @@ Especifique como as configurações do Microsoft Edge são restritas com base no
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado (Irrestrito).|
-|digitalSignage|1|Pôsteres/digitais no modo de aplicativo único.|
-|normalmode|duas|Modo normal (versão completa do Microsoft Edge).|
-|publicBrowsingSingleApp|3D|Navegação pública no modo de aplicativo único.|
+|digitalSignage|1 |Pôsteres/digitais no modo de aplicativo único.|
+|normalmode|2 |Modo normal (versão completa do Microsoft Edge).|
+|publicBrowsingSingleApp|3 |Navegação pública no modo de aplicativo único.|
 |publicBrowsingMultiApp|4 |Navegação pública (InPrivate) no modo de vários aplicativos.|
+
+
+
 
 
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae09a6c528e0311c542283ea5929ffba88ba029
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 883c61f5ed270aac3e5c2defbe655e0d5ea36e27
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447140"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037609"
 ---
 # <a name="plannerassignment-resource-type"></a>tipo de recurso plannerAssignment
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 O recurso **plannerAssignment** representa a atribuição de uma tarefa a um usuário. Esse tipo é usado no tipo aberto [plannerAssignments](plannerassignments.md).
 
@@ -55,3 +55,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+

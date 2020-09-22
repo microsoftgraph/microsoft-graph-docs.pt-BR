@@ -3,14 +3,14 @@ title: tipo de enumeração appManagementLevel
 description: Níveis de gerenciamento para aplicativos
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3318e4e4c68c08eb24f0e3dd03a8efa8eba50469
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: deb688d0fa3b66d8a9097442de22b7f35c01395a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43374249"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030539"
 ---
 # <a name="appmanagementlevel-enum-type"></a>tipo de enumeração appManagementLevel
 
@@ -26,9 +26,12 @@ Níveis de gerenciamento para aplicativos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |não especificado|,0|Não especificado|
-|não gerenciados|1|Não gerenciados|
-|MDM|duas|MDM|
+|não gerenciados|1 |Não gerenciados|
+|MDM|2 |MDM|
 |androidEnterprise|4 |Android Enterprise|
+
+
+
 
 
 

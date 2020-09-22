@@ -3,14 +3,14 @@ title: tipo de enumeração windowsStartMenuModeType
 description: Tipo de modos de exibição para o menu iniciar.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b2b2a83c23f7b0b57ff90acfa6f20fd07068907
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3defd65a32511022377ac84913c413ca8948117a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091443"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>tipo de enumeração windowsStartMenuModeType
 
@@ -24,8 +24,10 @@ Tipo de modos de exibição para o menu iniciar.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário. Valor padrão.|
-|fullScreen|1|Tela cheia.|
-|Não FullScreen|duas|Tela não cheia.|
+|fullScreen|1 |Tela cheia.|
+|Não FullScreen|2 |Tela não cheia.|
+
+
 
 
 

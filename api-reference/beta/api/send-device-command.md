@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ailae
-ms.openlocfilehash: 73f725dde241e5fc37ace2bc6b5ac92e5401a9fc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d260891c2a0a178cfaa3d2992385dc260be515fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812559"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044717"
 ---
 # <a name="send-device-command"></a>Enviar comando do dispositivo
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Sem suporte.    |
 |Delegado (conta pessoal da Microsoft) | Device.Command    |
 |Aplicativo | Sem suporte. |
 
@@ -87,13 +87,13 @@ HTTP/1.1 201 OK
 |:----|:------|:------|
 |payload | microsoft.graph.jsem| Carga a ser enviada a um serviço de aplicativo ou para iniciar um URI em um dispositivo. |
 |responsePayload | microsoft.graph.jsem| Carga retornada do dispositivo de destino. |
-|postBackURI | String | Postar URI para enviar notificações de atualizações subsequentes. |
-|packageFamilyName | String | Nome do aplicativo da família de pacote do Windows. |
-|appServiceName | String | Nome do serviço de aplicativo definido pelo aplicativo de destino. Necessário se iniciar um serviço de aplicativo. |
-|type| String | LaunchURI ou serviço. |
-|id| String | A ID de um comando que foi enviado ao dispositivo. |
-|actionStatus | String | O [status](get-device-command-status.md) de um comando. |
-|erro| String| Quaisquer erros associados à solicitação do aplicativo de destino. |
+|postBackURI | Cadeia de caracteres | Postar URI para enviar notificações de atualizações subsequentes. |
+|packageFamilyName | Cadeia de caracteres | Nome do aplicativo da família de pacote do Windows. |
+|appServiceName | Cadeia de caracteres | Nome do serviço de aplicativo definido pelo aplicativo de destino. Necessário se iniciar um serviço de aplicativo. |
+|tipo| Cadeia de caracteres | LaunchURI ou serviço. |
+|id| Cadeia de caracteres | A ID de um comando que foi enviado ao dispositivo. |
+|actionStatus | Cadeia de caracteres | O [status](get-device-command-status.md) de um comando. |
+|erro| Cadeia de caracteres| Quaisquer erros associados à solicitação do aplicativo de destino. |
 
 ## <a name="examples"></a>Exemplos
 
@@ -202,3 +202,5 @@ HTTP/1.1 201 OK
   }
 }
 ```
+
+

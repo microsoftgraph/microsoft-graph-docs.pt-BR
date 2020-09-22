@@ -5,16 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 3ea1d95e1ff9380919d3d4afd2877cab2e370eae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 098348a8bd8793765d5fa9dfb7bd8ba7502c7eda
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453545"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044764"
 ---
 # <a name="create-securityaction"></a>Criar securityAction
 
-Namespace: Microsoft. Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -149,3 +149,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

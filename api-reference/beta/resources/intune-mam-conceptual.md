@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ceb14a8ee5f1504a9e3bb0d0bc5ebef59f1eac06
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4b07f3d474c221ec610152848f5240cd20114552
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788721"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030490"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -28,6 +28,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Registro de aplicativo gerenciado Android](intune-mam-androidmanagedappregistration.md)
 - [Tipo de verificação de aplicativos de rede de segurança em aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Tipo de atestado de dispositivo de rede de segurança do aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
+- [Tipo de avaliação net de segurança de aplicativos gerenciados por Android](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Identificador de aplicativo móvel Android](intune-mam-androidmobileappidentifier.md)
 - [Nível de gerenciamento de aplicativo](intune-mam-appmanagementlevel.md)
 - [Tipo de aplicativo](intune-wip-applicationtype.md)
@@ -79,3 +80,5 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Coleção de recursos da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Aplicativo de loja de proteção de informações do Windows](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Ação wipe de proteção de informações do Windows](intune-mam-windowsinformationprotectionwipeaction.md)
+
+

@@ -3,14 +3,14 @@ title: tipo de recurso edgeHomeButtonOpensCustomURL
 description: Mostrar o botão página inicial; clicar no botão página inicial carrega uma URL específica.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3be48340552a9e3ba5a0bc8143363846465fbf1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4779de3f0a6e53b8056a42e1df511ea176dd6378
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058232"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>tipo de recurso edgeHomeButtonOpensCustomURL
 
@@ -28,7 +28,7 @@ Herda de [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehome
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|homeButtonCustomURL|String|A URL específica a ser carregada.|
+|homeButtonCustomURL|Cadeia de caracteres|A URL específica a ser carregada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -46,6 +46,9 @@ Veja a seguir uma representação JSON do recurso.
   "homeButtonCustomURL": "String"
 }
 ```
+
+
+
 
 
 

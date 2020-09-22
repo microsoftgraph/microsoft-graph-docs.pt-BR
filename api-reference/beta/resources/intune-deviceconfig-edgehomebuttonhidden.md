@@ -3,14 +3,14 @@ title: tipo de recurso edgeHomeButtonHidden
 description: Ocultar o botão página inicial.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80058077f3ba57dee93508dcc89630c7d01594dc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 04ba0c3e9d5125a83c23d2d81d5d553802261024
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058246"
 ---
 # <a name="edgehomebuttonhidden-resource-type"></a>tipo de recurso edgeHomeButtonHidden
 
@@ -44,6 +44,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.edgeHomeButtonHidden"
 }
 ```
+
+
+
 
 
 

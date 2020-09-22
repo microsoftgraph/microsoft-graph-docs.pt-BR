@@ -3,14 +3,14 @@ title: tipo de recurso edgeHomeButtonOpensNewTab
 description: Mostrar o botão página inicial; clicar no botão página inicial carrega a página nova guia.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e1b2835c9da9fac343390a6bf5040b93d2032063
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dda5fe6d945d67884ac415ab56b1349717ee69d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058218"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>tipo de recurso edgeHomeButtonOpensNewTab
 
@@ -44,6 +44,9 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
+
+
+
 
 
 

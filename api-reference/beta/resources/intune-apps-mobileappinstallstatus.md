@@ -3,14 +3,14 @@ title: tipo de recurso mobileAppInstallStatus
 description: Contém propriedades para o estado de instalação de um aplicativo móvel para um dispositivo.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a77d00cf466f391c12749acef5f2a87cb1f21ce
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 92e833def6b1b3c27a416039a56e1d818baad72f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792566"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071126"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>tipo de recurso mobileAppInstallStatus
 
@@ -34,7 +34,7 @@ Contém propriedades para o estado de instalação de um aplicativo móvel para 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |deviceName|String|Nome do dispositivo|
 |deviceId|Cadeia de caracteres|ID do dispositivo|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização|
@@ -45,10 +45,10 @@ Contém propriedades para o estado de instalação de um aplicativo móvel para 
 |osVersion|String|Versão do sistema operacional|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
-|userPrincipalName|String|Nome UPN|
-|displayVersion|String|Versão de leitura humana do aplicativo|
+|userPrincipalName|Cadeia de caracteres|Nome UPN|
+|displayVersion|Cadeia de caracteres|Versão de leitura humana do aplicativo|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |aplicativo|[mobileApp](../resources/intune-shared-mobileapp.md)|O link de navegação para o aplicativo móvel.|
@@ -79,6 +79,9 @@ Veja a seguir uma representação JSON do recurso.
   "displayVersion": "String"
 }
 ```
+
+
+
 
 
 

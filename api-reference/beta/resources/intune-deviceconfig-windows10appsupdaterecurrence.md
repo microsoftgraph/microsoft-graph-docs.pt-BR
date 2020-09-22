@@ -3,14 +3,14 @@ title: tipo de enumeração windows10AppsUpdateRecurrence
 description: Valores possíveis para atualização de aplicativos na recorrência do Windows10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b6e94684e6ec2533fc8045626975463c29248518
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b378d0ae320dec6f54edf40061587c8fc6fdcf1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058176"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>tipo de enumeração windows10AppsUpdateRecurrence
 
@@ -25,10 +25,13 @@ Valores possíveis para atualização de aplicativos na recorrência do Windows1
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Valor padrão, especifica uma única ocorrência.|
-|diariamente|1|Diariamente.|
-|mensal|duas|Mensal.|
-|mês|3D|Mês.|
+|Nenhuma|,0|Valor padrão, especifica uma única ocorrência.|
+|diariamente|1 |Diariamente.|
+|mensal|2 |Mensal.|
+|mês|3 |Mês.|
+
+
+
 
 
 

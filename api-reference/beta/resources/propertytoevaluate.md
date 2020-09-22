@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7f6c08adc311c343699667ea3179b0b2d09a5a34
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: c03ef7cdbb5e40ab77e0b3ad68668263db643568
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078191"
 ---
 # <a name="propertytoevaluate-resource-type"></a>tipo de recurso propertyToEvaluate
 
@@ -24,8 +24,8 @@ Define o nome e o valor da propriedade.
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| NomeDaPropriedade | Cadeia de Caracteres | Fornece o nome da propriedade. |
-| propertyValue | Cadeia de Caracteres | Fornece o valor da propriedade. |
+| NomeDaPropriedade | Cadeia de caracteres | Fornece o nome da propriedade. |
+| propertyValue | Cadeia de caracteres | Fornece o valor da propriedade. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,3 +56,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
+
