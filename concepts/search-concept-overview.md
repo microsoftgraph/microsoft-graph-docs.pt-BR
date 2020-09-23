@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 76cc0a1e9b8ccd7ec3eef1fb9ddf7e381b0fd19b
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: f64f8903276e83295547169aac867b1f2b3652fc
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892790"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192559"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Visão geral da API Microsoft Search no Microsoft Graph (visualização)
 
@@ -23,11 +23,11 @@ A Pesquisa da Microsoft é um mecanismo de pesquisa empresarial que proporciona 
 
 ### <a name="one-unified-search-endpoint-for-microsoft-cloud-data"></a>Um ponto de extremidade de pesquisa unificado para dados de nuvem da Microsoft
 
-A API da Pesquisa da Microsoft fornece um ponto de extremidade de pesquisa que você pode usar para permitir que os desenvolvedores [consultem](/graph/api/search-query?view=graph-rest-beta) dados na nuvem da Microsoft que a Pesquisa da Microsoft já indexa, como mensagens e eventos nas caixas de correio do Outlook e arquivos no OneDrive e no SharePoint.
+A API da Pesquisa da Microsoft fornece um ponto de extremidade de pesquisa que você pode usar para permitir que os desenvolvedores [consultem](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) dados na nuvem da Microsoft que a Pesquisa da Microsoft já indexa, como mensagens e eventos nas caixas de correio do Outlook e arquivos no OneDrive e no SharePoint.
 
 ### <a name="include-custom-external-data-in-search-experience"></a>Incluir dados externos personalizados na experiência de pesquisa
 
-Os clientes que queiram incluir dados que estejam fora da nuvem da Microsoft em suas pesquisas poderão usar [conectores](/microsoftsearch/connectors-overview) que se conectem a uma fonte de dados específica, como um banco de dados de recursos humanos ou catálogo de produtos da organização. Para [consultar](/graph/api/search-query?view=graph-rest-beta) diretamente a fonte de dados externa, use a API de Pesquisa da Microsoft. A [Galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery) lista vários conectores prontos para uso. Como alternativa, os clientes podem [criar conectores](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), indexar itens personalizados externos e também consultar fontes de dados externas específicas.
+Os clientes que queiram incluir dados que estejam fora da nuvem da Microsoft em suas pesquisas poderão usar [conectores](/microsoftsearch/connectors-overview) que se conectem a uma fonte de dados específica, como um banco de dados de recursos humanos ou catálogo de produtos da organização. Para [consultar](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) diretamente a fonte de dados externa, use a API de Pesquisa da Microsoft. A [Galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery) lista vários conectores prontos para uso. Como alternativa, os clientes podem [criar conectores](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases), indexar itens personalizados externos e também consultar fontes de dados externas específicas.
 
 ### <a name="consistent-up-to-date-search-experience"></a>Experiência de pesquisa atualizada e consistente
 
@@ -37,31 +37,33 @@ Ao usar a API de pesquisa da Microsoft, seus clientes se beneficiam dos resultad
 
 A API de pesquisa da Microsoft suporta para pesquisar o seguinte conteúdo na nuvem da Microsoft:
 
-- Objetos [message](/graph/api/resources/message?view=graph-rest-beta) e [event](/graph/api/resources/event?view=graph-rest-beta) do Outlook
-- Objetos de arquivos [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) do SharePoint e do OneDrive
-
-Além disso, você pode indexar e pesquisar conteúdo externo através do objeto [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta).
+- [Mensagens](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) de email do Outlook e objetos de [eventos](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) do calendário
+- Arquivos e pastas do Microsoft Office SharePoint Online e do OneDrive ([driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true)), [listas](/graph/api/resources/list?view=graph-rest-beta&preserve-view=true), [listItems](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true), [sites](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) e [unidades](/graph/api/resources/drive?view=graph-rest-beta&preserve-view=true)
+- Conteúdo ingerido na plataforma de conectores do Graph: [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="api-reference"></a>Referência da API
 
 Está procurando a referência de API para esse serviço?
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta)
-- [Usar a API de Pesquisa da Microsoft para indexar dados](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Usar a API de Pesquisa da Microsoft para indexar dados](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre a [Pesquisa da Microsoft](/microsoftsearch/).
 - Saiba mais sobre alguns dos principais casos de uso:
-  - [Pesquisar mensagens do Outlook](search-concept-messages.md)
-  - [Pesquisar eventos do calendário](search-concept-events.md)
+- 
   - [Gerenciar conexões para indexar conteúdo externo](search-index-manage-connections.md)
   - [Indexar conteúdo externo](search-index-manage-items.md)
-  - [Pesquisar tipos personalizados (externalItem)](search-concept-custom-types.md)
-  - [Pesquisar arquivos (incluindo externalFile)](search-concept-files.md)
+  - [Pesquisar mensagens do Outlook](search-concept-messages.md)
+  - [Pesquisar eventos do calendário](search-concept-events.md)
+  - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](search-concept-files.md)
+  - [Classificar resultados de pesquisa](search-concept-sort.md)
+  - [Refinar resultados de pesquisa](search-concept-aggregation.md)
+  
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub.
 
 ## <a name="see-also"></a>Confira também
 
-- Entre em contato com a Comunidade no [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search).
+- Entre em contato com a Comunidade no [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search) ou no GitHub.
