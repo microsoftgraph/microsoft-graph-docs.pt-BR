@@ -5,12 +5,12 @@ author: jerrysai
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cb6a3cbffdb8058051442b85aeb6617639ce5dd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2838a02481690db3d81fd544e88fce65b2053495
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023402"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223087"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>Atualizar continuousAccessEvaluationPolicy
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Policy. Read. All, Policy. ReadWrite. ConditionalAccess e Application. Read. All |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |grupos|Coleção de cadeias de caracteres|A coleção de identificadores de grupo no escopo para avaliação. Todos os grupos estão no escopo quando a coleção está vazia.|
-|isEnabled|Boolean| `true` para indicar se a avaliação de acesso contínuo deve ser executada; caso contrário `false` . |
+|isEnabled|Booliano| `true` para indicar se a avaliação de acesso contínuo deve ser executada; caso contrário `false` . |
 |usuários|Coleção de cadeias de caracteres|A coleção de identificadores de usuário no escopo para avaliação. Todos os usuários estão no escopo quando a coleção está vazia.|
 
 
@@ -64,6 +64,8 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_continuousaccessevaluationpolicy"
@@ -79,6 +81,20 @@ Content-Type: application/json
   "groups": [ "9972fb3f-7a40-49f5-85f6-129d9dfbd47a", "ea178055-4713-4d9a-a06c-ff17466b7e77"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-continuousaccessevaluationpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-continuousaccessevaluationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-continuousaccessevaluationpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

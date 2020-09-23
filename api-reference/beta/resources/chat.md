@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7c365fd343af3078663cbd184b67b49feb37945c
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: da9dcf4a1777d23a3b5f4b73e505641057558605
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193474"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48222831"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -20,18 +20,18 @@ Namespace: microsoft.graph
 
 Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais participantes. Os participantes podem ser usuários ou aplicativos.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
-|  Método       |  Tipo de retorno  | Descrição| Permissions |
+|  Método       |  Tipo de retorno  | Descrição| Permissões |
 |:---------------|:--------|:----------|-----------|
 |[Listar chats](../api/chat-list.md) | coleção [chat](chat.md) | Obter a lista de chats de que um usuário faz parte.| **Somente delegada** |
 |[Obter bate-papo](../api/chat-get.md) | [chat](chat.md) | Leia as propriedades e as relações do chat.| **Somente delegada** |
-|[Listar membros de chat](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.| Delegado e aplicativo * |
-|[Obter membro de chat](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obter um único usuário no bate-papo.| Delegado e aplicativo * |
+|[Listar membros de chat](../api/conversationmember-list.md) | coleção [conversationMember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.| Delegado e aplicativo * |
+|[Obter membro de chat](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Obter um único usuário no bate-papo.| Delegado e aplicativo * |
 |[Listar mensagens em um bate-papo](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. | Delegado e aplicativo * |
 |[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | Delegado e aplicativo * |
 
-\*> **Observação:** Ao usar permissões de aplicativo, certifique-se de saber como você vai obter a ID de chat. Como a lista de chats com permissões de aplicativo não é suportada, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de [alteração para o/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
+>**Observação:** Ao usar permissões de aplicativo, certifique-se de saber como você vai obter a ID de chat. Como a lista de chats com permissões de aplicativo não é suportada, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de [alteração para o/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 
 ## <a name="properties"></a>Propriedades
 
@@ -67,7 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset"
 }
-
 ```
 
 ## <a name="see-also"></a>Confira também
