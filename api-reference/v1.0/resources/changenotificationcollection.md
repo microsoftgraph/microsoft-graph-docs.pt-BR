@@ -5,38 +5,39 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: cd3e5508d4281de8c791259882a413127315e0b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf4f6fd5bb573885b32baa4f9b7296d5a1a2ef7b
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037889"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192816"
 ---
-# <a name="changenotificationcollection-resource-type"></a><span data-ttu-id="00fc3-103">Tipo de recurso changeNotificationCollection</span><span class="sxs-lookup"><span data-stu-id="00fc3-103">changeNotificationCollection resource type</span></span>
+# <a name="changenotificationcollection-resource-type"></a><span data-ttu-id="8d725-103">Tipo de recurso changeNotificationCollection</span><span class="sxs-lookup"><span data-stu-id="8d725-103">changeNotificationCollection resource type</span></span>
 
-<span data-ttu-id="00fc3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="00fc3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8d725-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8d725-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="00fc3-105">Representa uma coleção de notificações de alteração de recursos enviadas ao Assinante.</span><span class="sxs-lookup"><span data-stu-id="00fc3-105">Represents a collection of resource change notifications sent to the subscriber.</span></span>
+<span data-ttu-id="8d725-105">Representa uma coleção de notificações de alteração de recursos enviadas ao Assinante.</span><span class="sxs-lookup"><span data-stu-id="8d725-105">Represents a collection of resource change notifications sent to the subscriber.</span></span>
 
-<span data-ttu-id="00fc3-106">Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="00fc3-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
+<span data-ttu-id="8d725-106">Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="8d725-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="00fc3-107">Methods</span><span class="sxs-lookup"><span data-stu-id="00fc3-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="8d725-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="8d725-107">Methods</span></span>
 
-<span data-ttu-id="00fc3-108">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="00fc3-108">None.</span></span>
+<span data-ttu-id="8d725-108">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="8d725-108">None.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="00fc3-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="00fc3-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8d725-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8d725-109">Properties</span></span>
 
-| <span data-ttu-id="00fc3-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="00fc3-110">Property</span></span> | <span data-ttu-id="00fc3-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="00fc3-111">Type</span></span> | <span data-ttu-id="00fc3-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="00fc3-112">Description</span></span> |
+| <span data-ttu-id="8d725-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8d725-110">Property</span></span> | <span data-ttu-id="8d725-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="8d725-111">Type</span></span> | <span data-ttu-id="8d725-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="8d725-112">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="00fc3-113">valor</span><span class="sxs-lookup"><span data-stu-id="00fc3-113">value</span></span> | <span data-ttu-id="00fc3-114">coleção ([changeNotification](changenotification.md))</span><span class="sxs-lookup"><span data-stu-id="00fc3-114">collection([changeNotification](changenotification.md))</span></span> | <span data-ttu-id="00fc3-115">O conjunto de notificações que estão sendo enviadas à URL de notificação.</span><span class="sxs-lookup"><span data-stu-id="00fc3-115">The set of notifications being sent to the notification URL.</span></span> <span data-ttu-id="00fc3-116">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="00fc3-116">Required.</span></span> |
+| <span data-ttu-id="8d725-113">validationTokens</span><span class="sxs-lookup"><span data-stu-id="8d725-113">validationTokens</span></span> | <span data-ttu-id="8d725-114">collection(string)</span><span class="sxs-lookup"><span data-stu-id="8d725-114">collection(string)</span></span> | <span data-ttu-id="8d725-115">Contém uma matriz de tokens JWT gerados pelo Microsoft Graph para o aplicativo validar a origem das notificações.</span><span class="sxs-lookup"><span data-stu-id="8d725-115">Contains an array of JWT tokens generated by Microsoft Graph for the application to validate the origin of the notifications.</span></span> <span data-ttu-id="8d725-116">O Microsoft Graph gera um único token para cada par de aplicativos e locatários distintos para um item se ele existir na matriz de valores.</span><span class="sxs-lookup"><span data-stu-id="8d725-116">Microsoft Graph generates a single token for each distinct app and tenant pair for an item if it exists in the value array.</span></span> <span data-ttu-id="8d725-117">Tenha em mente que as notificações podem conter uma mistura de itens para vários aplicativos e locatários que se inscreveram usando a mesma URL de notificação.</span><span class="sxs-lookup"><span data-stu-id="8d725-117">Keep in mind that notifications can contain a mix of items for various apps and tenants that subscribed using the same notification URL.</span></span> <span data-ttu-id="8d725-118">Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) opcional.</span><span class="sxs-lookup"><span data-stu-id="8d725-118">Only provided for [change notifications with resource data](/graph/webhooks-with-resource-data.md) Optional.</span></span> |
+| <span data-ttu-id="8d725-119">valor</span><span class="sxs-lookup"><span data-stu-id="8d725-119">value</span></span> | <span data-ttu-id="8d725-120">coleção ([changeNotification](changenotification.md))</span><span class="sxs-lookup"><span data-stu-id="8d725-120">collection([changeNotification](changenotification.md))</span></span> | <span data-ttu-id="8d725-121">O conjunto de notificações que estão sendo enviadas à URL de notificação.</span><span class="sxs-lookup"><span data-stu-id="8d725-121">The set of notifications being sent to the notification URL.</span></span> <span data-ttu-id="8d725-122">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8d725-122">Required.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="00fc3-117">Relações</span><span class="sxs-lookup"><span data-stu-id="00fc3-117">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="8d725-123">Relações</span><span class="sxs-lookup"><span data-stu-id="8d725-123">Relationships</span></span>
 
-<span data-ttu-id="00fc3-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="00fc3-118">None.</span></span>
+<span data-ttu-id="8d725-124">Nenhum</span><span class="sxs-lookup"><span data-stu-id="8d725-124">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="00fc3-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="00fc3-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8d725-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8d725-125">JSON representation</span></span>
 
-<span data-ttu-id="00fc3-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="00fc3-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8d725-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="8d725-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
