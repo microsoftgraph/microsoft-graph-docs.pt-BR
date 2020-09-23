@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: a1be7569f6fb7f96b28d34f8e319df78f14a6ae9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab8533f85e541947dccfc4c76989c100c64020cf
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037896"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193462"
 ---
 # <a name="changenotification-resource-type"></a>Tipo de recurso changeNotification
 
@@ -20,7 +20,7 @@ Representa a notificação enviada ao Assinante.
 
 Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Nenhum.
 
@@ -30,6 +30,7 @@ Nenhum.
 |:---------|:-----|:------------|
 | changeType | string | Indica o tipo de alteração que irá gerar a notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Obrigatório. |
 | clientState | string | O valor da propriedade **ClientState** enviada na solicitação de assinatura (se houver). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando os valores da propriedade **ClientState** . O valor da propriedade **ClientState** enviada com a assinatura é comparado com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
+| encryptedContent | [Microsoft. Graph. changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | Prever Conteúdo criptografado anexado à notificação de alteração. Só é fornecido se **encryptionCertificate** e **includeResourceData** foram definidos durante a solicitação de assinatura e se o recurso oferecer suporte a ele. Opcional. |
 | id | string | ID exclusiva da notificação. Opcional. |
 | recurso | string | O URI do recurso que emitiu a notificação de alteração relativa a `https://graph.microsoft.com` . Obrigatório. |
 | resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | O conteúdo dessa propriedade depende do tipo de recurso que está sendo assinado. Obrigatório. |

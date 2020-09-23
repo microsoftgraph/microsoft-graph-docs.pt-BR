@@ -5,16 +5,14 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: ca0f3a2837062bacf592c100c4f92532483a8399
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 845b0e53de1f16d548baee27c2c6265495221207
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076776"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223314"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>Conceder um appRoleAssignment a uma entidade de serviço
-
-Namespace: microsoft.graph
 
 Namespace: microsoft.graph
 
@@ -104,7 +102,7 @@ Content-Length: 110
 ---
 
 
-Nesse exemplo, a `{id}` e o `{principalId-value}` seriam as `id` da entidade de serviço de cliente atribuída e o `{resoruceId}` seria a `id` da entidade de serviço de recurso (a API).
+Nesse exemplo, a `{id}` e o `{principalId-value}` seriam as `id` da entidade de serviço de cliente atribuída e o `{resourceId}` seria a `id` da entidade de serviço de recurso (a API).
 
 ### <a name="response"></a>Resposta
 

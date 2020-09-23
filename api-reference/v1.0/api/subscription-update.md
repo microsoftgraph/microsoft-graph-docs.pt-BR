@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: aee0ca84cccd371c307b405357516d8fda61deab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b50b6b32bf3d5927d13d0f5ad146949a858dd1e
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038029"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193553"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -27,6 +27,10 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | Incompatível | Incompatível | CallRecords.Read.All  |
+|[chat](../resources/chatmessage.md) (/Teams/{ID}/Channels/{ID}/Messages) | Incompatível | Incompatível | ChannelMessage.Read.All  |
+|[chat](../resources/chatmessage.md) (/Teams/getAllMessages--todas as mensagens do canal na organização) | Incompatível | Incompatível | ChannelMessage.Read.All  |
+|[chat](../resources/chatmessage.md) (/chats/{ID}/Messages) | Incompatível | Incompatível | Chat.Read.All  |
+|[chat](../resources/chatmessage.md) (/chats/getAllMessages--todas as mensagens de chat na organização) | Incompatível | Incompatível | Chat.Read.All  |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
@@ -38,16 +42,28 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Observação:** Há limitações adicionais para assinaturas de itens no OneDrive e no Outlook. Limitações para criar e gerenciar assinaturas (receber, atualizar e excluir assinaturas).
+### <a name="chatmessage"></a>chatMessage
 
-- No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos de alterações solicitados na pasta assinada ou em qualquer arquivo, pasta, ou outros objetos driveItem em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
+as assinaturas do **chat** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura do **chat** , você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
-- No Outlook, a permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Isso significa que, por exemplo, você não pode usar os calendários de permissões delegadas. Leia para assinar eventos na caixa de correio de outro usuário.
+> **Observação:** `/teams/getAllMessages` e `/chats/getAllMessages` estão disponíveis para usuários que têm as  
+ [licenças necessárias](https://aka.ms/teams-changenotification-licenses).
+
+### <a name="driveitem"></a>driveItem
+
+Limitações adicionais se aplicam a assinaturas em itens do OneDrive. As limitações se aplicam à criação e ao gerenciamento (obter, atualizar e excluir) assinaturas.
+
+No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos de alterações solicitados na pasta assinada ou em qualquer arquivo, pasta ou outras instâncias **driveItem** em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
+
+### <a name="contact-event-and-message"></a>contato, evento e mensagem
+
+Limitações adicionais se aplicam a assinaturas em itens do Outlook. As limitações se aplicam à criação e ao gerenciamento (obter, atualizar e excluir) assinaturas.
+
+- A permissão delegada oferece suporte à assinatura de itens em pastas somente na caixa de correio do usuário conectado. Por exemplo, você não pode usar os calendários de permissão delegada. Leia para inscrever-se em eventos na caixa de correio de outro usuário.
 - Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas_compartilhadas ou delegadas_:
 
   - Usar a permissão de aplicativos correspondentes para inscrever as alterações dos itens em uma pasta ou uma caixa de correio de _qualquer_ usuários no locatário.
   - Não use as permissões de compartilhamento do Outlook (Contacts.Read.Shared Calendars.Read.Shared, Mail.Read.Shared e seus equivalentes de somente leitura), pois eles **não**suportam inscrições que alteram as notificações em itens de pastas compartilhadas ou delegadas.
-
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -131,7 +147,10 @@ Content-length: 252
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-  "latestSupportedTlsVersion": "v1_2"
+  "latestSupportedTlsVersion": "v1_2",
+  "encryptionCertificate": "",
+  "encryptionCertificateId": "",
+  "includeResourceData": false
 }
 ```
 

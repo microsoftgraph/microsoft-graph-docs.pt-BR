@@ -7,16 +7,16 @@ ms.author: yoren
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8c08821f723152adb82cde0255d21ea3d8718a8e
-ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.openlocfilehash: 6abe3de1e077a2f147a6b70deff62da8d14fdcc2
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137152"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48222839"
 ---
 # <a name="delete-participant"></a>Excluir participante
 
-Excluir um participante específico em uma chamada. Em algumas situações, é apropriado que um aplicativo remova um participante de uma chamada ativa. Esta ação pode ser realizada antes ou depois de o participante responder a chamada. Quando um chamador ativo é removido, ele é imediatamente descartado da chamada sem notificação prévia ou após a remoção.
+Excluir um participante específico em uma chamada. Em algumas situações, é apropriado que um aplicativo remova um participante de uma chamada ativa. Esta ação pode ser feita após o participante responder a chamada. Quando um chamador ativo é removido, ele é imediatamente descartado da chamada sem notificação prévia ou após a remoção.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,6 +53,8 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete-participant"
@@ -60,6 +62,24 @@ O exemplo a seguir mostra a solicitação.
 ```http
 DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-participant-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-participant-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-participant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-participant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Resposta
 

@@ -1,16 +1,16 @@
 ---
 title: Obter filesFolder
-description: Recupere o caminho de navegação do filesFolder de um canal.
+description: Recuperar o filesFolder do caminho de navegação de um canal.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be54dc5e25d84fa9cd6c70faf926a8708ce9c475
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 623696838a975249d4f1df6770aa0d17cb66fbe0
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863111"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192391"
 ---
 # <a name="get-filesfolder"></a>Obter filesFolder
 
@@ -18,28 +18,27 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os metadados para o local onde os arquivos de um [canal](../resources/channel.md) estão armazenados. 
+Obter os metadados para o local em que os arquivos do [canal](../resources/channel.md) estão armazenados. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | File. Read. All, Group. Read. All, File. ReadWrite. All, Group. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | File. Read. All, Group. Read. All, File. ReadWrite. All, Group. ReadWrite. All     |
+|Delegada (conta corporativa ou de estudante) | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All     |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
-
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.
+Este método não é compatível com os [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -98,6 +97,7 @@ Content-length: 401
     "id": "01H7CFEKENJSSIUHGADZBKODARINQC5JMD",
     "createdDateTime": "0001-01-01T00:00:00Z",
     "lastModifiedDateTime": "2020-01-23T18:47:13Z",
+    "lastEditedDateTime": null,
     "name": "Documentation Planning",
     "webUrl": "https://microsoft.sharepoint.com/teams/ExtensibilityandFundamentals/Shared%20Documents/Documentation%20Planning",
     "size": 2374080,
@@ -107,7 +107,7 @@ Content-length: 401
     },
     "fileSystemInfo": {
         "createdDateTime": "2020-01-23T18:47:12Z",
-        "lastModifiedDateTime": "2020-01-23T18:47:13Z"
+        "lastModifiedDateTime": "2020-01-23T18:47:13Z",
     },
     "folder": {
         "childCount": 7
@@ -126,4 +126,6 @@ Content-length: 401
   "suppressions": [
   ]
 }-->
+
+
 

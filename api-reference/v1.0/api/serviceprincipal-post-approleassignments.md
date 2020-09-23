@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: b984f3e6e6d263e3d2f4fc25caf288f4e0565477
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 615eb0555f1f262cb399e11b844425eb8b370aa0
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045514"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223464"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>Conceder um appRoleAssignment a uma entidade de serviço
 
@@ -25,7 +25,7 @@ Para conceder uma atribuição de função de aplicativo a uma entidade de servi
 
 - `principalId`: A `id` da entidade de serviço do cliente ao qual você está atribuindo a função de aplicativo.
 - `resourceId`: A `id` do recurso `servicePrincipal` (a API) que definiu a função do aplicativo (a permissão do aplicativo).
-- `appRoleId`: A `id` do `appRole` (definido na entidade de serviço do recurso) para atribuir à entidade de serviço do cliente.
+- `appRoleId`: A `id` da `appRole` (definido na entidade de serviço do recurso) para atribuir à entidade de serviço do cliente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -105,7 +105,7 @@ Content-Length: 110
 ---
 
 
-Nesse exemplo, `{id}` e `{principalId-value}` seriam os `id` da entidade de serviço de cliente atribuída e `{resoruceId}` seria o `id` da entidade de serviço de recurso (a API).
+Nesse exemplo, `{id}` e `{principalId-value}` seriam os `id` da entidade de serviço de cliente atribuída e `{resourceId}` seria o `id` da entidade de serviço de recurso (a API).
 
 ### <a name="response"></a>Resposta
 

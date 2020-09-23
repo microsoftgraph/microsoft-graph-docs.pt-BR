@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c5194dd714be8da267b8eef1a28bd268e658cbcf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 64e8c449f5336b06da8287aa057fb4ad7776812e
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088731"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193299"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -100,7 +100,8 @@ Esse recurso permite:
 |showAs|freeBusyStatus|O status a ser exibido. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa. Por padrão, a hora de início é em UTC.|
 |assunto|String|O texto da linha de assunto do evento.|
-|type|eventType|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura.|
+|transactionId |Cadeia de caracteres |Um identificador personalizado especificado por um aplicativo cliente para o servidor para evitar operações POST redundantes caso o cliente tente criar o mesmo evento. Isso é útil quando a conectividade de rede baixa faz com que o cliente expire antes de receber uma resposta do servidor para a solicitação anterior de criação de evento do cliente. Depois de definir **transactionId** ao criar um evento, não será possível alterar a **transactionId** em uma atualização subsequente. Essa propriedade só será retornada em um conteúdo de resposta se um aplicativo a tiver definido. Opcional.|
+|tipo|eventType|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura.|
 |webLink|String|A URL para abrir o evento no Outlook na Web.<br/><br/>O Outlook na Web abre o evento no navegador se você estiver conectado à sua caixa de correio. Caso contrário, o Outlook na Web solicitará que você entre.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 
 > [!NOTE]
@@ -226,6 +227,7 @@ Veja a seguir uma representação JSON do recurso
   "showAs": "String",
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
+  "transactionId": "string",
   "type": "String",
   "webLink": "string",
 

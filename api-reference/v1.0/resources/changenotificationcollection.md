@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: cd3e5508d4281de8c791259882a413127315e0b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf4f6fd5bb573885b32baa4f9b7296d5a1a2ef7b
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037889"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192816"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Tipo de recurso changeNotificationCollection
 
@@ -20,7 +20,7 @@ Representa uma coleção de notificações de alteração de recursos enviadas a
 
 Para obter detalhes, consulte [usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Nenhum.
 
@@ -28,6 +28,7 @@ Nenhum.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
+| validationTokens | collection(string) | Contém uma matriz de tokens JWT gerados pelo Microsoft Graph para o aplicativo validar a origem das notificações. O Microsoft Graph gera um único token para cada par de aplicativos e locatários distintos para um item se ele existir na matriz de valores. Tenha em mente que as notificações podem conter uma mistura de itens para vários aplicativos e locatários que se inscreveram usando a mesma URL de notificação. Fornecido apenas para [notificações de alteração com dados de recurso](/graph/webhooks-with-resource-data.md) opcional. |
 | valor | coleção ([changeNotification](changenotification.md)) | O conjunto de notificações que estão sendo enviadas à URL de notificação. Obrigatório. |
 
 ## <a name="relationships"></a>Relações

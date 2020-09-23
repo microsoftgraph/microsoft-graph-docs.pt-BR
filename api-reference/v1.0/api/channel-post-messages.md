@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ae273c120aa505b972a31794406bb700c7c49364
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 423d71b8cfd21ff1c12921d2e0710ad8f4c64f97
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063868"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193243"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Criar chatMessage em um canal
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ChannelMessage. Send, Group. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | ChannelMessage. Send, Group. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -120,7 +120,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,
@@ -200,7 +201,8 @@ Content-length: 160
     "etag": "id-value",
     "messageType": "message",
     "createdDateTime": "2019-02-04T19:58:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deleted": false,
     "subject": null,
     "summary": null,
@@ -296,7 +298,8 @@ Content-length: 160
     "etag": "1554837297516",
     "messageType": "message",
     "createdDateTime": "2019-04-09T19:14:57.516Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
@@ -382,7 +385,8 @@ Content-type: application/json
     "etag": "1589481435511",
     "messageType": "message",
     "createdDateTime": "2020-05-14T18:37:15.511Z",
-    "lastModifiedDateTime": null,
+    "lastModifiedDateTime":"2020-07-04T19:58:15.511Z",
+    "lastEditedDateTime": null,
     "deletedDateTime": null,
     "subject": null,
     "summary": null,
