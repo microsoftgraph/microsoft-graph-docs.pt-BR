@@ -1,23 +1,23 @@
 ---
-title: Configurar notificações de alteração que incluam dados de recursos (visualização)
+title: Configurar notificações de alteração que incluam dados de recurso
 description: O Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. As notificações de alteração podem incluir propriedades de recursos.
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: eeff200c14b2da9039fecba39d7834c419e8caec
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 8fc57d425d9f5f579c34488773b2b0ba69a01531
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598518"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193145"
 ---
-# <a name="set-up-change-notifications-that-include-resource-data-preview"></a>Configurar notificações de alteração que incluam dados de recursos (visualização)
+# <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
 O Microsoft Graph permite que os aplicativos inscrevam-se para alterar as notificações de recursos através do [webhooks](webhooks.md). É possíve configurar as assinaturas para incluir os dados alterados dos recursos (como o conteúdo de uma mensagem de bate-papo ou informações de presença do Microsoft Teams) nas notificações de alteração. Em seguida, seu aplicativo pode usar a lógica de negócios sem ter que fazer uma chamada à API separada para buscar o recurso alterado. Como resultado, o aplicativo funciona melhor ao realizar menos chamadas da API, o que é benéfico em cenários de larga escala.
 
 A inclusão de dados de recursos como parte das notificações de alteração exige que, para atender aos requisitos de acesso e segurança de dados, você implemente a seguinte lógica adicional : 
 
-- [Lide com](#subscription-lifecycle-notifications) as notificações especiais sobre o ciclo de vida da assinatura para manter um fluxo ininterrupto de dados. O Microsoft Graph envia notificações sobre o ciclo de vida de tempos em tempos para exigir que um aplicativo seja autorizado novamente e para garantir que os problemas de acesso não ocorram inesperadamente, incluindo dados de recursos nas notificações de alterações.
+- [Lide com](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications) as notificações especiais sobre o ciclo de vida da assinatura (visualização) para manter um fluxo ininterrupto de dados. O Microsoft Graph envia notificações sobre o ciclo de vida de tempos em tempos para exigir que um aplicativo seja autorizado novamente e para garantir que os problemas de acesso não ocorram inesperadamente, incluindo dados de recursos nas notificações de alterações.
 - [Confirme](#validating-the-authenticity-of-notifications) a autenticidade das notificações de alteração como originárias do Microsoft Graph.
 - [Forneça](#decrypting-resource-data-from-change-notifications) uma chave de criptografia pública e utilize uma chave privada para decriptar os dados de recursos recebidos por meio das notificações de alteração.
 
@@ -32,13 +32,13 @@ Geralmente, esse tipo de notificação de alteração inclui os seguintes dados 
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
-Atualmente, o recurso do Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (visualização), bem como o recurso do Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta) (visualização) oferecem suporte a notificações de alterações que incluem dados de recursos. Especificamente, você pode configurar uma assinatura que se aplique a uma das seguintes opções:
+Atualmente, o Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) assim como os recursos de [presença](/graph/api/resources/presence?view=graph-rest-beta) (visualização) do Microsoft Teams oferecem suporte a notificações de alterações que incluem dados de recursos. Especificamente, você pode configurar uma assinatura que se aplique a uma das seguintes opções:
 
 - Mensagens novas ou alteradas em um canal específico do Teams: `/teams/{id}/channels/{id}/messages`
 - Mensagens novas ou alteradas em um bate-papo específico do Teams: `/chats/{id}/messages`
 - Atualização das informações de presença do usuário: `/communications/presences/{id}`
 
-Os recursos **chatMessage** e **presence** suportam, incluindo todas as propriedades de uma instância modificada em uma notificação de alteração. Eles não suportam o retorno de apenas propriedades seletivas da instância. 
+Os recursos **chatMessage** e **presence** (visualização) suportam, incluindo todas as propriedades de uma instância modificada em uma notificação de alteração. Eles não suportam o retorno de apenas propriedades seletivas da instância. 
 
 Este artigo mostra um exemplo de assinatura para alterar as notificações de mensagens em um canal do Teams, com cada notificação de alteração incluindo todos os dados do recurso da instância ** chatMessage ** alterada.
 
@@ -47,30 +47,23 @@ Este artigo mostra um exemplo de assinatura para alterar as notificações de me
 Para que os dados de recursos estejam incluídos nas notificações de alteração, você **deve** especificar as seguintes propriedades, além das que geralmente são especificadas ao [criar uma assinatura](webhooks.md#creating-a-subscription):
 
 - **includeResourceData** que deve ser definido como `true` para solicitar explicitamente os dados de recursos.
-- ** lifecycleNotificationUrl **, que é um terminal em que [ notificações sobre o ciclo de vida ](#subscription-lifecycle-notifications) são entregues. Pode ser igual ou diferente de **notificationUrl**.
 - **encryptionCertificate** que contém apenas a chave público que o Microsoft Graph usa para criptografar os dados de recursos. Mantenha a chave privada correspondente para [descriptografar o conteúdo](#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** é o seu próprio identificador para o certificado. Use esse ID para corresponder a cada notificação de alteração cujo certificado foi utilizado para descriptografia.
 
-Tenha em mente o seguinte:
+Lembre-se do seguinte:
 
-- Utilize o mesmo nome de host para as notificação de alteração dos terminais (**notificationUrl** e **lifecycleNotificationUrl**).
-- Valide os dois terminais conforme descrito [ aqui ](webhooks.md#notification-endpoint-validation). Se você quiser usar a mesma URL para os dois pontos de extremidade, você receberá e responderá a duas solicitações de validação.
-- Não é possível atualizar (`PATCH`) uma assinatura existente para adicionar a propriedade **lifecycleNotificationUrl**. Você deve remover a assinatura existente e criar uma nova assinatura para incluir a propriedade **lifecycleNotificationUrl**.
+- Valide ambos os pontos de extremidade conforme descrito em [Validação de ponto de extremidade de notificação](webhooks.md#notification-endpoint-validation). Se você quiser usar a mesma URL para os dois pontos de extremidade, você receberá e responderá a duas solicitações de validação.
 
 ### <a name="subscription-request-example"></a>Exemplo de solicitação de assinatura
 
-O exemplo a seguir assina dois tipos de notificações: 
-
-- Alterações de recursos - canais de mensagens sendo criados ou atualizados no Microsoft Teams
-- Eventos do ciclo de vida da assinatura que podem afetar o fluxo de notificações de alterações. Veja mais detalhes sobre as notificações do ciclo de vida na [próxima seção](#subscription-lifecycle-notifications).
+O exemplo a seguir assina as mensagens de canal que estão sendo criadas ou atualizadas no Microsoft Teams.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
@@ -88,7 +81,6 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificateId": "{custom ID}",
@@ -97,138 +89,17 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscription-lifecycle-notifications"></a>Notificações do ciclo de vida da assinatura
+## <a name="subscription-lifecycle-notifications-preview"></a>Notificações do ciclo de vida da assinatura (visualização)
 
 Certos eventos podem interferir no fluxo de notificação de alterações em uma assinatura existente. As notificações sobre o ciclo de vida da assinatura informam as ações a serem tomadas para manter um fluxo ininterrupto. Ao contrário de uma notificação de alteração de recurso que informa uma alteração em uma instância de recurso, uma notificação do ciclo de vida é sobre a própria assinatura e seu estado atual no ciclo de vida. 
 
-As notificações sobre o ciclo de vida são entregues no **lifecycleNotificationUrl**. 
-
-Nesta seção:
-
-- [Notificação de vida útil que desafia a autorização da assinatura](#lifecycle-notification-that-challenges-subscription-authorization)
-- [Fluxo de desafio de autorização](#authorization-challenge-flow)
-- [Exemplo de desafio de autorização](#example-authorization-challenge)
-- [Respondendo a um desafio de autorização](#responding-to-an-authorization-challenge)
-- [Dicas](#tips)
-- [Planeje seu código para lidar com outros tipos de notificações do ciclo de vida no futuro](#future-proof-your-code-to-handle-other-types-of-lifecycle-notifications)
-
-### <a name="lifecycle-notification-that-challenges-subscription-authorization"></a>Notificação do ciclo de vida que desafia a autorização da assinatura
-
-Um tipo de notificação do ciclo de vida que desafia o estado autorizado de uma assinatura ativa. Quando a propriedade **lifecycleEvent** em uma notificação indica `reauthorizationRequired`, que você deve autorizar novamente a assinatura para manter o fluxo de dados.
-
-Quando você cria uma assinatura de longa duração (por exemplo, uma que dura 3 dias), altere os fluxos de notificações para o local indicado em **notificationUrl**. Entretanto, a qualquer momento, o Microsoft Graph pode exigir que você autorize novamente a assinatura para provar que ainda tem acesso aos dados de recursos, caso as condições de acesso tenham sido alteradas desde a criação da assinatura. A seguir estão exemplos de alterações que afetam o acesso aos dados:
-
-- Um administrador de locatários pode revogar as permissões do seu aplicativo para ler um recurso.
-- Em um cenário interativo, o usuário que fornece o token de autenticação ao seu aplicativo pode estar sujeito a políticas dinâmicas com base em vários fatores, como o local, o estado do dispositivo ou a avaliação de risco. Por exemplo, se o usuário alterar o seu local físico, pode ser que ele não tenha mais permissão para acessar os dados e seu aplicativo não conseguirá autorizar novamente a assinatura. Para saber mais sobre políticas dinâmicas que controlam o acesso, confira [políticas de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). 
-
-### <a name="authorization-challenge-flow"></a>Fluxo de desafio de autorização
-
-O fluxo de um desafio de autorização para uma assinatura ativa e não expirada tem a seguinte aparência:
-
-1. O Microsoft Graph exige que uma assinatura seja autorizada novamente.
-    
-    Os motivos para isso podem variar de recurso para recurso e podem mudar com o tempo. Independentemente da causa do evento de reautorização, você precisará respondê-lo.
-
-2. O Microsoft Graph envia uma notificação de desafio de autorização para **lifecycleNotificationUrl**
-
-    Observe que o fluxo de notificações de alterações pode continuar por um tempo, dando a você tempo extra para responder. No entanto, eventualmente, a entrega da notificação de alteração será pausada até que você tome as medidas necessárias.
-
-3. Responda a esta notificação do ciclo de vida com uma das duas maneiras:
-    1. Autorize a assinatura novamente. Isso não estende a data de vencimento da assinatura.
-    2. Renove a assinatura. Isso reautoriza e estenda a data de vencimento.
-
-    Observação: as duas ações exigem a apresentação de um token de autenticação válido, semelhante a [criar uma nova assinatura](webhooks.md#creating-a-subscription) ou [renova uma assinatura antes da sua expiração](webhooks.md#renewing-a-subscription).
-
-4. Se você autorizar ou renovar com êxito a assinatura, as notificações de alteração continuarão. Caso contrário, as notificações de alteração permanecerão pausadas.
-    
-### <a name="example-authorization-challenge"></a>Exemplo de desafio de autorização
-
-Abaixo está um exemplo de notificação do ciclo de vida que solicita a autorização de uma assinatura. 
-
-Observe o seguinte:
-
-- O campo `"lifecycleEvent": "reauthorizationRequired"` identifica essa notificação como um desafio de autorização.
-- A notificação de ciclo de vida não contém informações sobre um recurso específico, porque ela não está relacionada a uma alteração de recurso, mas a alteração de estado da assinatura.
-- Semelhante às notificações de alteração, você pode agrupar as notificações do ciclo de vida em conjunto (na coleção de**valores**), cada uma com um valor possivelmente diferente do **lifecycleEvent**. Processe cada notificação de ciclo de vida no lote adequadamente.
-
-```json
-{
-  "value": [
-    {
-      "lifecycleEvent": "reauthorizationRequired",
-      "subscriptionId": "e3898f08-5cd0-4a6a-80fc-6addbfb73b7b",
-      "subscriptionExpirationDateTime": "2019-09-18T00:52:45.9696658+00:00",
-      "clientState": "{secret client state}",
-      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95"
-    }
-  ]
-}
-```
-
-> **Observação:** para obter uma descrição completa dos dados enviados quando as notificações de alteração forem entregues, confira [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
-
-### <a name="responding-to-an-authorization-challenge"></a>Respondendo a um desafio de autorização
-
-Siga as etapas a seguir para processar uma notificação do ciclo de vida do desafio de autorização. As duas primeiras etapas de reconhecimento e validação da notificação do ciclo de vida são semelhantes a [resposta a uma notificação de alteração de recursos](webhooks.md#processing-the-change-notification).
-
-1. Confirme o recebimento da notificação do ciclo de vida, respondendo à chamada para POSTAGEM com `HTTP 202 Accepted`.
-2. Valide a autenticidade da notificação do ciclo de vida. Mais detalhes [abaixo](#validating-the-authenticity-of-notifications).
-3. Certifique-se de que o aplicativo tenha um token de acesso válido para a próxima etapa. 
-
-    Se você estiver usando uma das [bibliotecas de autenticação](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries), a biblioteca fará isso para você ao reutilizar um token de cache válido ou obtendo um novo token ao pedir ao usuário para fazer logon novamente com uma nova senha. Entretanto, a obtenção de um novo token pode falhar, pois as condições de acesso podem ser alteradas e o usuário não poderá mais acessar os dados de recursos.
-
-4. Chamar uma das duas APIs a seguir. Se a chamada da API for bem-sucedida, o fluxo de notificação de mudança será retomado.
-
-    - Chame a ação `/reauthorize` para autorizar novamente a assinatura sem estender a data de vencimento:
-        ```http
-        POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
-        Content-type: application/json
-        ```
-    - Execute uma ação de renovação regular para autorizar novamente e renova a assinatura ao mesmo tempo:
-        ```http
-        PATCH https://graph.microsoft.com/beta/subscriptions/{id}
-        Content-Type: application/json
-
-        {
-           "expirationDateTime": "2019-09-21T11:00:00.0000000Z"
-        }
-        ```
-
-      A renovação pode falhar, porque as verificações de autorização realizadas pelo sistema podem recusar o aplicativo ou o acesso do usuário ao recurso. Pode ser necessário que o aplicativo obtenha um novo token de acesso do usuário para autorizar novamente com êxito uma assinatura. 
-      
-      Você pode tentar essa ações mais tarde, a qualquer momento e obter êxito se as condições de acesso mudarem. Quaisquer notificações sobre alterações de recursos que ocorram entre o momento em que a notificação do ciclo de vida foi enviada e o momento em que o aplicativo eventualmente recria a assinatura com êxito serão perdidas. Nesses casos, o aplicativo deve buscar essas mudanças separadamente.
-
-### <a name="tips"></a>Dicas 
-
-Lembre-se do seguinte:
-
-1. Os desafios de autorização não substituem a necessidade de renova uma assinatura de alteração de recursos antes de expirar. 
-
-    Embora você possa optar por renovar uma assinatura quando recebe um desafio de autorização, o Microsoft Graph pode não desafiar todas as suas assinaturas. Por exemplo, uma assinatura que não possui nenhuma atividade e não possui notificações de alterações com entrega pendente pode não sinalizar nenhum desafio para uma nova autorização do seu aplicativo. Certifique-se de [renovar assinaturas](webhooks.md#renewing-a-subscription) antes de expirarem.
-
-2. A frequência dos desafios de autorização está sujeita a mudanças.
-
-    Não faça suposições sobre a frequência dos desafios de autorização. Essas notificações do ciclo de vida informam quando você deve executar as ações, evitando que você precise rastrear quais assinaturas requerem uma nova autorização. Esteja pronto para lidar com os desafios de autorização, desde uma vez a cada minuto para cada assinatura, até raramente apenas para algumas de suas assinaturas.
-
-### <a name="future-proof-your-code-to-handle-other-types-of-lifecycle-notifications"></a>Planeje seu código para lidar com outros tipos de notificações do ciclo de vida no futuro
-
-Espere que as notificações do ciclo de vida da assinatura sejam postadas no mesmo terminal especificado por **lifecycleNotificationUrl**. Elas são diferenciadas pela propriedade **lifecycleEvent** e podem conter um esquema e propriedades ligeiramente diferentes para atender aos cenários que resolvem.
-
-Implemente seu código antecipando novos tipos de notificações do ciclo de vida:
-
-1. Use a propriedade **lifecycleEvent** para identificar o tipo de notificação para determinar a resposta adequada. Por exemplo, procure a `"lifecycleEvent": "reauthorizationRequired"` propriedade para identificar um evento específico e tratá-lo.
-
-1. Registre todos os eventos do ciclo de vida que o seu aplicativo não reconheça para tomar conhecimento.
-
-1. Assine o [Blog do Microsoft Graph Developer](https://developer.microsoft.com/graph/blogs/) para assistir a anúncios de notificações do ciclo de vida de novos cenários.
-
-1. Consulte a documentação relacionada para obter as novas notificações do ciclo de vida e implemente o suporte para elas, conforme apropriado.
+Para obter mais informações sobre como receber e responder a, notificações de ciclo de vida (visualização), confira [Reduzir assinaturas ausentes e alterar as notificações (visualização)](webhooks-outlook-authz.md)
 
 ## <a name="validating-the-authenticity-of-notifications"></a>Validando a autenticidade das notificações
 
-Os aplicativos geralmente executam a lógica comercial com base nos dados de recursos incluídos nas notificações de alterações. Em primeiro lugar é importante verificar a autenticidade de cada notificação de alteração. Caso contrário, um terceiro poderá forjar o seu aplicativo com falsas notificações de alteração, fazê-lo executar sua lógica comercial incorretamente e levá-lo a um problema de segurança.
+Os aplicativos geralmente executam a lógica comercial com base nos dados de recursos incluídos nas notificações de alterações. Verificar a autenticidade de cada notificação de alteração primeiro é importante. Caso contrário, um terceiro poderá imitar seu aplicativo com notificações de alteração falsa e fazê-lo executar a lógica de negócios incorretamente, e isso pode levar a um incidente de segurança.
 
-Para notificações básicas de alterações que não contêm dados de recursos, simplesmente valide-as com base no valor **clientState** conforme descrito [aqui](webhooks.md#processing-the-change-notification). Isso é aceitável, uma vez que você pode fazer chamadas confiáveis subsequentes do Microsoft Graph para obter acesso ao dados do recurso, portanto, o impacto das tentativas de falsificação é limitado. 
+Para notificações básicas de alterações que não contêm dados de recursos, simplesmente valide-as com base no valor **clientState** conforme descrito em [Processando a notificação de alteração](webhooks.md#processing-the-change-notification). Isso é aceitável, uma vez que você pode fazer chamadas confiáveis subsequentes do Microsoft Graph para obter acesso ao dados do recurso, portanto, o impacto das tentativas de falsificação é limitado. 
 
 Para notificações de alteração que entregam dados de recursos, execute uma validação mais completa antes de processar os dados.
 
@@ -276,7 +147,7 @@ Se você não conhece a validação de token, consulte [Princípios de Validaç�
 Fique atento ao seguinte: 
 
 - Certifique-se de sempre enviar um `HTTP 202 Accepted` código de status como parte da resposta à notificação de alteração. 
-- Faça isso antes da validação da notificações de alteração (por exemplo, se você armazena as notificações de alteração em filas para processamento posterior) ou depois (se você processá-las em tempo real), mesmo se a validação falhar.
+- Responda antes de validar a notificação de alteração (por exemplo, se você armazenar as notificações de alteração em filas para processamento posterior) ou depois (se você as processar instantaneamente), mesmo se a validação falhar.
 - A aceitação de uma notificação de alteração evita novas tentativas desnecessárias de entrega e também impede que possíveis atores invasores descubram se foram ou não aprovados na validação. Você sempre pode optar por ignorar uma notificação de alteração inválida após aceitá-la.
 
 Especificamente, realize a validação em todos os tokens JWT na coleção **validationTokens**. Se algum token falhar, considere a notificação de alteração suspeita e investigue mais. 
@@ -285,7 +156,7 @@ Use as etapas a seguir para validar tokens e aplicativos que geram tokens:
 
 1. Valide se o token não expirou.
 
-2. Valide se o token não foi adulterado e foi emitido pela autoridade esperada, o Active Directory do Microsoft Azure:
+2. Valide se o token não foi adulterado e foi emitido pela autoridade esperada, plataforma de identidade da Microsoft:
 
     - Obtenha as chaves de assinatura do ponto de extremidade de configuração comum: `https://login.microsoftonline.com/common/.well-known/openid-configuration`. Essa configuração é armazenada em cache pelo aplicativo por um período de tempo. Lembre-se de que a configuração é atualizada frequentemente, uma vez que as chaves de assinatura são giradas diariamente.
     - Verifique a assinatura do token JWT usando essas chaves.

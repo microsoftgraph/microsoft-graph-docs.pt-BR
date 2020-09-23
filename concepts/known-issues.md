@@ -1,22 +1,22 @@
 ---
 title: Problemas conhecidos com o Microsoft Graph
-description: Este artigo descreve os problemas conhecidos do Microsoft Graph.
+description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: b02d38ac87f914b943d473b8e30b2e03151a4299
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: f5ff0d6ef17ad4046bdaedf0444df94e1f7bb3df
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897726"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193208"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
-Este artigo descreve os problemas conhecidos do Microsoft Graph. 
+Este artigo descreve os problemas conhecidos com o Microsoft Graph. 
 
-Para relatar um problema conhecido, confira a página de [suporte do Microsoft Graph](https://developer.microsoft.com/graph/support) .
+Para relatar um problema conhecido, confira a página [Suporte Microsoft Graph](https://developer.microsoft.com/graph/support).
 
-Para obter informações sobre as atualizações mais recentes para a API do Microsoft Graph, consulte o [changelog do Microsoft Graph](changelog.md).
+Para saber mais sobre as atualizações mais recentes da API do Microsoft Graph, confira o [changelog do Microsoft Graph](changelog.md).
 
 ## <a name="bookings"></a>Reservas
 
@@ -36,7 +36,7 @@ A obtenção da lista de `bookingBusinesses` falha com o seguinte código de err
 
 Como alternativa, você pode limitar o conjunto de empresas retornadas pela solicitação, incluindo um parâmetro `query`, por exemplo:
 
-```
+```http
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 ```
 ## <a name="calendars"></a>Calendários
@@ -228,17 +228,17 @@ Exemplos de recursos de grupo que oferecem suporte a permissões delegadas e som
 * Obter e atualizar propriedades do grupo pertencentes ao gerenciamento ou administração de grupo
 * [Definições do diretório](/graph/api/resources/directoryobject?view=graph-rest-1.0), tipo e sincronização do grupo
 * Membros e proprietários de grupo
-* Obtendo conversas de grupo e threads
+* Como obter conversas de grupo e threads
 
 Exemplos de recursos de grupo que oferecem suporte somente a permissões delegadas:
 
-* Agrupar eventos, foto
+* Eventos de grupo, foto
 * Remetentes externos, remetentes aceitos ou rejeitados e assinatura de grupo
 * Favoritos do usuário e contagem de não vistos
 
 ### <a name="policy"></a>Política
 
-O uso do Microsoft Graph para criar e nomear um grupo do Microsoft 365 ignora qualquer política de grupo do Microsoft 365 configurada por meio do Outlook Web App.
+O uso do Microsoft Graph para criar e nomear um grupo do Microsoft 365 ultrapassa qualquer política de grupo do Microsoft 365 que seja configurada pelo Outlook Web App.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Definir a propriedade allowExternalSenders
 
@@ -329,7 +329,7 @@ Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclu
 Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
 
 ### <a name="post-teams-is-only-available-in-beta"></a>POST /teams está disponível apenas na versão beta
-Para criar equipes no v 1.0, confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0).
+Para criar equipes na versão v1.0, confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### <a name="missing-teams-in-list-all-teams"></a>Equipes ausentes em listas todas as equipes
 
@@ -342,11 +342,11 @@ No futuro, vamos configurar **resourceProvisioningOptions** em equipes existente
 
 ### <a name="no-instant-access-after-creation"></a>Sem acesso instantâneo após a criação
 
-Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Microsoft 365 deve ser atribuída primeiro a um usuário para obter acesso aos serviços do Microsoft 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro 404 HTTP.
+Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Microsoft 365 deve ser atribuída a um usuário primeiro para que ele possa ter acesso aos serviços do Microsoft 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro 404 HTTP.
 
 ### <a name="photo-restrictions"></a>Restrições de foto
 
-A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, qualquer foto que *possa* ter sido armazenada anteriormente usando a propriedade **ThumbNailPhoto** (usando o gráfico do Azure ad ou por meio da sincronização do AD Connect) não estará mais acessível através da propriedade **Photo** do Microsoft Graph do recurso [User](/graph/api/resources/user?view=graph-rest-1.0) .
+A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, as fotos que *possam* ter sido previamente armazenadas usando a propriedade **thumbnailPhoto** (usando o Azure AD Graph ou por meio da sincronização do AD Connect) deixarão de estar acessíveis por meio da propriedade **foto** do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0) do Microsoft Graph.
 A falha na leitura ou na atualização de uma foto, nesse caso, resultaria no seguinte erro:
 
 ```javascript

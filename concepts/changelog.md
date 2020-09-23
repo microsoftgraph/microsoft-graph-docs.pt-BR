@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 6ee71123c83b414074025ad1216537b4caaf6d03
-ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.openlocfilehash: 19a3432225e3aeeabe2a22a460cac3947af1b052
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137122"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192718"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,8 +18,19 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 ## <a name="september-2020"></a>Setembro de 2020
 
-### <a name="cloud-communications"></a>Comunicações na nuvem
+### <a name="calendar"></a>Calendário
 
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adicionada a propriedade **transactionId** à entidade [evento](/graph/api/resources/event?view=graph-rest-1.0).
+
+### <a name="change-notifications"></a>Alterar notificações
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adiciona [chatMessage](/graph/api/resources/presence) a recursos suportados para [ notificações de alteração](/graph/webhooks). |
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a propriedade **lobbyBypassSettings**, **isEntryExitAnnounced** e **allowedPresenters** à entidade [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta).|
@@ -113,13 +124,28 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |:----------------|:------------|:-----------------------------------------|
 | Adição        | Beta e v1.0 | Adicionadas as propriedades **outlookM365** e **outlook2019** à entidade [getEmailAppUsageVersionsUserCounts](/graph/api/resources/emailappusageversionsusercount?view=graph-rest-beta).|
 
+### <a name="search"></a>Pesquisar
+
+| **Tipo de alteração** | **Versão** | **Descrição**                                                                                                             |
+|:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------|
+| Adição        | beta        | Propriedade a propriedade **estado** ao recurso [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta). |
+| Adição        | beta        | O recurso [externalGroup](/graph/api/resources/externalgroup?view=graph-rest-beta)foi adicionado.                                 |
+| Adição        | beta        | O recurso [externalGroupMember](/graph/api/resources/externalgroupmember?view=graph-rest-beta)foi adicionado.                     |
+| Adição        | beta | Pesquisar mais tipos no OneDrive e no SharePoint: **Drive**, **lista**, **listItem**e **site**. Confira [mais detalhes](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types).|
+| Adição        | beta | Identifique [propriedades selecionadas](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties) para retornar nos resultados da pesquisa.|
+| Adição        | beta | [Classifique](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) os resultados da pesquisa do OneDrive e do SharePoint especificando **sortProperties** em um recurso [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true).|
+| Adição        | beta | [Refinar os resultados usando agregações](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) para o OneDrive e o SharePoint especificando as **agregações** e **aggregationFilters** em um recurso do **searchRequest**.|
+| Adição        | beta | Consultar dados externos em [mais de um de conexão](search-concept-custom-types.md).|
+| Alterar        | beta |Algumas propriedades na solicitação e resposta foram renomeadas e foram substituídas.  Encontre [mais detalhes](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) sobre a substituição.|
+
 ### <a name="teamwork"></a>Trabalho em equipe
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Adição|Beta e v1.0|Propriedade **lastEditedDateTime** adicionada ao recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
+|Alterar| Beta e v1.0| A propriedade **lastModifiedDateTime** foi alterada no recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) representar a hora em que a entidade foi tocada pela última vez. Ele sempre será definido e nunca terá um valor `null`|
 |Adição|beta| Foi adicionada a propriedade **createdDateTime** aos recursos do [canal](/graph/api/resources/channel?view=graph-rest-beta) e da [equipe](/graph/api/resources/team?view=graph-rest-beta).|
 |Adição|beta| Adicionado o método [Update chatMessage](/graph/api/chatmessage-update?view=graph-rest-beta) ao recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
-
 
 ### <a name="users"></a>Usuários
 
@@ -244,7 +270,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Adição|v1.0|Suporte adicional para [criar uma equipe](/graph/api/team-post?view=graph-rest-1.0) diretamente (sem criar um grupo primeiro), que também permite criar equipes de classe.|
 |Adição | v1.0 | Adicionada a[ propriedade](/graph/api/team-post-members?view=graph-rest-1.0) de navegação de membros para o tipo de recurso[ de equipe](/graph/api/resources/team?view=graph-rest-1.0), permitindo que os membros sejam adicionados com maior confiabilidade e menor latência.|
 
-### <a name="to-do-tasks"></a>Tarefas pendentes 
+### <a name="to-do-tasks"></a>Tarefas pendentes
 
 | **Tipo de alteração** | **Versão** | **Descrição** |
 |:---|:---|:---|
