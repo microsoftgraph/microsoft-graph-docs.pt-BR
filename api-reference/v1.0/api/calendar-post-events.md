@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6fcd43bba70b466cc79736ad0a97cc93c4aa0c61
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41ee3754c0c459eacf8dd974c1f53f76537aeda8
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070356"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193509"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -65,8 +65,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 ### <a name="example-1-create-an-event-in-a-specific-calendar"></a>Exemplo 1: criar um evento em um calendário específico
 
 #### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
-No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
+O exemplo a seguir cria um evento em um calendário específico e atribui ao evento um valor opcional **transactionId**.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -103,7 +102,8 @@ Content-type: application/json
       },
       "type": "required"
     }
-  ]
+  ],
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -126,7 +126,9 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -159,6 +161,7 @@ Content-type: application/json
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs": "busy",
     "type": "singleInstance",
     "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA%3D&exvsurl=1&path=/calendar/item",
@@ -223,9 +226,6 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 O exemplo a seguir cria um evento no calendário especificado do usuário conectado e o habilita como uma reunião online.
 
-No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
-
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -286,7 +286,9 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

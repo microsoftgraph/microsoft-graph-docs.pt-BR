@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: d8f5529c56282c59572e615fd875860f136e6149
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b5a713d5860da2b74401f2a484bffa253142641
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015243"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193131"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -33,7 +33,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | [lista][] em um [site][] do SharePoint | Alterações no conteúdo da _lista_: <br>`/sites/{id}/lists/{id}` | Não |
 | [Alerta][] de segurança | Alterações em um alerta específico:<br>`/security/alerts/{id}` <br>Alterações em alertas filtrados:<br> `/security/alerts/?$filter`| Não |
 | Teams [callRecord][] | Mudanças para _todos os_ registros de chamadas: `/communications/callRecords` | Não |
-| Teams [chatMessage](chatmessage.md) | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` | Sim |
+| Equipes [chatmessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
 
 > **Observação**: qualquer trajetória de recurso que comece com o `/users/{id}` também pode aceitar `/me` referenciar o usuário conectado.
 
@@ -45,7 +45,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][]|
 | Delegado - conta pessoal da Microsoft | [contato][], [driveItem][], [lista][], [evento][], [mensagem][]                                        |
-| Aplicativo                            | [Alerta][], [contato][], [lista][], [driveItem][], [evento][], [grupo][], [mensagem][], [usuário][], [callRecord][]|
+| Aplicativo                            | [alerta][], [contato][], [lista][], [driveItem][], [evento][], [grupo][], [mensagem][], [usuário][], [callRecord][], [chatMessage][]|
 
 
 ## <a name="see-also"></a>Confira também
@@ -57,6 +57,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 - [Atualizar assinatura](../api/subscription-update.md)
 - [Excluir assinatura](../api/subscription-delete.md)
 
+[chatMessage]: ./chatmessage.md
 [contato]: ./contact.md
 [conversa]: ./conversation.md
 [driveItem]: ./driveitem.md

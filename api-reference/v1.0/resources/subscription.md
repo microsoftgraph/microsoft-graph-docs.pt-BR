@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7f6c933b2cdc306941e391dc486fd607616b196a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2afcc550eb9c777f8788f34e608ecef0ab1e8c0c
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094131"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193334"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -20,6 +20,7 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 
 - Um [alerta][] do Microsoft Graph Security API
 - Uma [callRecord][] produzida após uma chamada ou uma reunião no Microsoft Teams
+- Um [chatMessage][] enviado por meio de equipes ou canais no Microsoft Teams
 - Uma [conversa][] em um grupo no Microsoft 365
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário
 - Uma [lista][] em um [site][] do SharePoint
@@ -49,22 +50,23 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | clientState | string | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação de alteração. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço pela comparação do valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida contendo cada notificação de alteração. |
 | id | string | Identificador exclusivo da assinatura. Somente leitura. |
 | ApplicationId | cadeia de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
-| creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Apenas leitura. |
-| latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do protocolo TLS que o ponto de extremidade, especificado por **notificationUrl**, é compatível. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Para os assinantes cujo ponto de extremidade de notificação suporta uma versão menor que a versão recomendada atualmente (TLS 1.2), especificar essa propriedade por uma [linha do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) definida, permite o uso temporário da versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade pela linha do tempo resultaria em uma falha nas operações da assinatura. </br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. |
+| creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Somente leitura. |
+| includeResourceData | Booleano | Quando definido como `true`, alterar as notificações [inclui dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de bate-papo). Opcional. | 
+| encryptionCertificate | cadeia de caracteres | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar os dados de recursos nas notificações de alteração. Opcional. Obrigatório quando **includeResourceData** é verdadeiro. | 
+| encryptionCertificateId | cadeia de caracteres | Um identificador personalizado fornecido pelo aplicativo para ajudar a identificar o certificado necessário para descriptografar os dados do recurso. Opcional. | latestSupportedTlsVersion | Cadeia de caracteres | Especifica a versão mais recente do protocolo TLS que o ponto de extremidade, especificado por **notificationUrl**, é compatível. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Para os assinantes cujo ponto de extremidade de notificação suporta uma versão menor que a versão recomendada atualmente (TLS 1.2), especificar essa propriedade por uma [linha do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) definida, permite o uso temporário da versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade pela linha do tempo resultaria em uma falha nas operações da assinatura. </br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. |
 
 ### <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso
 
 | Resource            | Tempo de expiração máximo  |
 |:--------------------|:-------------------------|
-| Usuário, grupo, outros recursos de diretório   | 4230 minutos (em 3 dias)    |
-| Correio                | 4230 minutos (em 3 dias)    |
-| Calendário            | 4230 minutos (em 3 dias)    |
-| Contatos            | 4230 minutos (em 3 dias)    |
-| Conversas em grupo | 4230 minutos (em 3 dias)    |
-| Itens raiz de unidade    | 4230 minutos (em 3 dias)    |
-| Lista do SharePoint     | 4230 minutos (em 3 dias)    |
-| Teams callRecord    | 4230 minutos (em 3 dias)  |
-| Alertas de segurança     | 43200 minutos (em 30 dias )  |
+| **Alerta** de segurança     | 43200 minutos (em 30 dias )  |
+| Teams **callRecord**    | 4230 minutos (em 3 dias)  |
+| Teams **chatMessage**    | 60 minutos (1 hora)  |
+| **Conversa** em grupo | 4230 minutos (em 3 dias)    |
+| OneDrive **driveItem**    | 4230 minutos (em 3 dias)    |
+| **Lista** do Microsoft Office SharePoint Online    | 4230 minutos (em 3 dias)    |
+| Outlook **mensagem**, **evento**, **contato**              | 4230 minutos (em 3 dias)    |
+| **usuário**, **grupo**, outros recursos de diretório   | 4230 minutos (em 3 dias)    |
 
 > **Observação:** Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor suportado. No futuro, as solicitações para criar ou renovar uma assinatura além do valor máximo falharão.
 
@@ -107,6 +109,9 @@ Veja a seguir uma representação JSON do recurso.
   "id": "string (identifier)",
   "clientState": "string",
   "creatorId": "string",
+  "includeResourceData": "boolean",
+  "encryptionCertificate": "string",
+  "encryptionCertificateId": "string",
   "latestSupportedTlsVersion": "string"
 }
 ```
@@ -121,6 +126,7 @@ Veja a seguir uma representação JSON do recurso.
 [message]: ./message.md
 [user]: ./user.md
 [alert]: ./alert.md
+[chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

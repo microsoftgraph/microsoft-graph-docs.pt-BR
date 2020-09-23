@@ -4,12 +4,12 @@ description: 'Criar um grupo que inclui uma equipe envolve as seguintes etapas: 
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6befb6c6df047c7802e142843180b390f854f6ec
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 28729e0116e0b2959690449694197ac6acbfa501
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934833"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192767"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Criar equipes e gerenciar membros usando o Microsoft Graph
 
@@ -18,9 +18,9 @@ Você pode usar a API do Microsoft Teams no Microsoft Graph para criar equipes d
 
 ## <a name="initial-team-creation"></a>Criação da equipe inicial
 
-Todas as equipes têm o suporte de grupos do Office 365. A maneira mais rápida de configurar e utilizar sua equipe ao criar novas equipes através do Microsoft Graph é configurar um novo grupo do Office 365, todos os proprietários e membros e convertê-los em uma equipe.
+Todas as equipes têm o respaldo de grupos do Microsoft 365. A maneira mais rápida de configurar e utilizar sua equipe ao criar novas equipes através do Microsoft Graph é configurar um novo grupo do Microsoft 365, todos os proprietários e membros e convertê-los em uma equipe.
 
-1. Criar um [grupo do Office 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) usando a operação [criar grupo](/graph/api/group-post-groups?view=graph-rest-1.0). Você pode especificar os proprietários e os membros. Certifique-se de que tenha os proprietários certos do grupo recém-criado, conforme descrito na Etapa 2.
+1. Criar um [grupo do Microsoft 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) usando a operação [criar grupo](/graph/api/group-post-groups?view=graph-rest-1.0). Você pode especificar os proprietários e os membros. Certifique-se de que tenha os proprietários certos do grupo recém-criado, conforme descrito na Etapa 2.
 
     Para criar uma equipe para esse grupo, é necessário definir os seguintes valores de propriedade, conforme mostrado:
 
@@ -101,7 +101,7 @@ Todas as equipes têm o suporte de grupos do Office 365. A maneira mais rápida 
 
 Para adicionar membros depois de criar uma equipe, use a operação [adicionar membro](/graph/api/group-post-members?view=graph-rest-1.0). É recomendável adicionar um atraso de 1 segundo entre as operações adicionar. Observe o seguinte em relação às alterações de associação:
 
-1. As alterações de associação aplicadas ao grupos do Office 365 sincronizam com o Teams por meio de um mecanismo de sincronização em segundo plano que geralmente leva 24 horas (ou mais em alguns casos).
+1. As alterações de associação feitas nos grupos do Microsoft 365 são sincronizadas com o Teams por meio de um mecanismo de sincronização de tela de fundo que geralmente demora 24 horas ou mais, em alguns casos.
 
 2. O processo em segundo plano será acionado somente se um ou mais usuários na equipe (proprietário ou membro) estiverem ativos no cliente da área de trabalho do Teams. A inicialização do aplicativo Teams e/ou sua execução constitui atividade. Um usuário não precisa visitar especificamente a equipe que está sendo modificada.
 
@@ -113,7 +113,7 @@ Depois de criar uma equipe, você pode usar a lista de verificação a seguir pa
 
 ### <a name="validate-team-creation"></a>Validar a criação de equipe
 
-1. Verifique se o grupo do Office 365 que reforça a equipe foi criado por meio do Azure AD ou do centro de administração do Microsoft 365.
+1. Verifique se o grupo do Microsoft 365 que reforça a equipe foi criado por meio do Azure AD ou do centro de administração do Microsoft 365.
 
 2. Verifique se a criação da equipe foi bem-sucedida por meio do portal de administração do Teams.
 
@@ -128,17 +128,3 @@ Depois de criar uma equipe, você pode usar a lista de verificação a seguir pa
 1. Verifique se os novos membros aparecem no grupo por meio do Azure AD ou do centro de administração do Microsoft 365.
 
 2. Verifique se os membros recém-adicionados conseguem ver a equipe após entrar no cliente da Web ou da área de trabalho do Teams.
-
-
-
-## <a name="how-office-365-group-membership-changes-are-synchronized-to-microsoft-teams"></a>Como as alterações de associação de grupo do Office 365 são sincronizadas com o Microsoft Teams.
-
-As alterações de associação feitas em grupo do Office 365 que reforça uma equipe por meio da API do Microsoft Graph ou através do portal de administração (fora do cliente do Teams) devem ser sincronizadas com o serviço do Teams para que os usuários recém-adicionados possam ver e participar da equipe. As alterações feitas diretamente à associação de grupo são sincronizadas com o serviço do Teams por meio de um processo em segundo plano. Esse processo em segundo plano é executado no serviço do Teams e é acionado pela atividade do usuário nos clientes da Web e da área de trabalho do Teams.
-
-Para que o processo seja acionado, um proprietário ou membro atual da equipe (alguém que consiga ver a equipe no cliente do Teams) deve estar com o cliente da área de trabalho (ideal) ou da Web aberto. Os clientes móveis não acionam essa sincronização.
-
-O SLA atual para sincronizar as alterações de associação aplicada aos grupos no Teams é de até 24 horas após a sincronização ser acionada por atividade do cliente. Pode levar mais tempo em determinadas circunstâncias (devido à carga do serviço, por exemplo).
-
-
-![Processo de sincronização da lista de participação.](images/teams-roster-sync.png)
-
