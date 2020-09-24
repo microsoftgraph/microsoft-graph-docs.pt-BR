@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c4ea3a59af2ef1bc7e712f5a84ec0baa4ec5ff41
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: b55d032d0cd99a0de37f6fda09a00ecaa3c07731
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "35734877"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230767"
 ---
 ```csharp
 
@@ -44,7 +44,8 @@ var @event = new Event
             },
             Type = AttendeeType.Required
         }
-    }
+    },
+    TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
 };
 
 await graphClient.Me.Calendars["AAMkAGViNDU7zAAAAAGtlAAA="].Events

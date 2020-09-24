@@ -5,12 +5,12 @@ doc_type: resourcePageType
 description: Representa um grupo usado em um repositório de termos.
 localization_priority: Normal
 ms.prod: Sharepoint
-ms.openlocfilehash: 121eba9bfdde52372ce4c03a3fe594eb931f620f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aa86722dfd0a761525a8ec4d142ed27dc93be6c2
+ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057973"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48258420"
 ---
 # <a name="group-resource-type"></a>Tipo de recurso de grupo
 
@@ -38,8 +38,8 @@ Herda de [entidade](../resources/entity.md).
 |:---------------------|:-------------------|:------------------------------------
 | createdDateTime      | DateTimeOffset     | Data e hora da criação do grupo. Somente leitura.
 | description          | string             | Descrição que oferece detalhes sobre o uso de termos.
-| id                   | cadeia de caracteres             | Identificador exclusivo do grupo. Somente Leitura.
-| displayName          | cadeia de caracteres             | Nome do grupo.
+| id                   | string             | Identificador exclusivo do grupo. Somente Leitura.
+| displayName          | string             | Nome do grupo.
 | escopo                | string              | Retorna o tipo de grupo. Os valores possíveis são ' global ', ' System ' e ' SiteCollection '.
 
 ## <a name="relationships"></a>Relações
@@ -65,7 +65,7 @@ Veja a seguir uma representação JSON de um recurso de **grupo** .
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "scope" : "microsoft.graph.termStore.groupScope",
-  "displayName": "string",  
+  "displayName": "string" 
 }
 ```
 
