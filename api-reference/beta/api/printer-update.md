@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 77e0c59384107c3dce702b2deba9442c24f996c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c9df1f2bffebfbfb26707bd1b61f4acb1a6235ee
+ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035600"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48273589"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 
@@ -29,8 +29,8 @@ Somente o aplicativo que registrou a impressora tem permissão para atualizar a 
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -59,7 +59,7 @@ Se estiver usando permissões delegadas, no corpo da solicitação, forneça os 
 
 Se estiver usando permissões de aplicativo, o corpo da solicitação contém um fluxo binário que representa o grupo de atributos da impressora na [codificação IPP](https://tools.ietf.org/html/rfc8010).
 
-O cliente deve fornecer um conjunto de atributos de impressora com um ou mais valores (incluindo valores fora de banda explicitamente permitidos), conforme definido na [seção RFC8011 4,2](https://tools.ietf.org/html/rfc8011#section-4.2) atributos de modelo de trabalho ("XXX-default", "XXX-supported" e "XXX-Ready" Attributes), [seção 4,4](https://tools.ietf.org/html/rfc8011#section-4.4) atributos de descrição da impressora e quaisquer extensões de atributo compatíveis com a impressora. O (s) valor (es) de cada atributo de impressora fornecido substitui o (s) valor (es) do atributo de impressora correspondente no objeto de impressora de destino. Para atributos que podem ter vários valores (1setOf), todos os valores fornecidos pelo cliente substituem todos os valores do atributo de objeto Printer correspondente.
+O cliente deve fornecer um conjunto de atributos de impressora com um ou mais valores (incluindo valores fora de banda explicitamente permitidos), conforme definido na [seção RFC8011 5,2](https://tools.ietf.org/html/rfc8011#section-5.2) atributos de modelo de trabalho ("XXX-default", "XXX-supported" e "XXX-Ready" Attributes), [seção 5,4](https://tools.ietf.org/html/rfc8011#section-5.4) atributos de descrição da impressora e quaisquer extensões de atributo compatíveis com a impressora. O (s) valor (es) de cada atributo de impressora fornecido substitui o (s) valor (es) do atributo de impressora correspondente no objeto de impressora de destino. Para atributos que podem ter vários valores (1setOf), todos os valores fornecidos pelo cliente substituem todos os valores do atributo de objeto Printer correspondente.
 
 ## <a name="response"></a>Resposta
 
