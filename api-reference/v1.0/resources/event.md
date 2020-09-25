@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 64e8c449f5336b06da8287aa057fb4ad7776812e
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 60c45284f02cca644051770e2b8f262d1d0e7b6a
+ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193299"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48258412"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -73,7 +73,7 @@ Esse recurso permite:
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina. Por padrão, a hora de término é em UTC.|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
-|iCalUId|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes. Somente leitura.|
+|iCalUId|Cadeia de caracteres|Um único identificador para um evento em todos os calendários. Esta identificação é diferente para cada ocorrência em uma série recorrente. Somente leitura.|
 |id|String| Somente leitura.|
 |importância|importância|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|

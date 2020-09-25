@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 19a3432225e3aeeabe2a22a460cac3947af1b052
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 98f13af65a522e5af2fa172bbf395f7b7678e4be
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192718"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223412"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -145,7 +145,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Adição|Beta e v1.0|Propriedade **lastEditedDateTime** adicionada ao recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
 |Alterar| Beta e v1.0| A propriedade **lastModifiedDateTime** foi alterada no recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) representar a hora em que a entidade foi tocada pela última vez. Ele sempre será definido e nunca terá um valor `null`|
 |Adição|beta| Foi adicionada a propriedade **createdDateTime** aos recursos do [canal](/graph/api/resources/channel?view=graph-rest-beta) e da [equipe](/graph/api/resources/team?view=graph-rest-beta).|
-|Adição|beta| Adicionado o método [Update chatMessage](/graph/api/chatmessage-update?view=graph-rest-beta) ao recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
+|Adição|Beta e v1.0| Adicionado o método [Update chatMessage](/graph/api/chatmessage-update) ao recurso [chatMessage](/graph/api/resources/chatmessage).|
 
 ### <a name="users"></a>Usuários
 
