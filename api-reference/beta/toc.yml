@@ -42,7 +42,7 @@ items:
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Notificações ausentes do Outlook (versão prévia)
             href: /graph/webhooks-outlook-authz?context=graph/api/beta
-          - name: Notificações com dados de recurso
+          - name: Notificações com dados de recursos
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: Receba notificações de diferentes maneiras (visualização)
             href: /graph/change-notifications-delivery?context=graph/api/beta
@@ -890,7 +890,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: Listar ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: Delta
+              - name: delta
                 href: api/serviceprincipal-delta.md
               - name: Atribuição de funções do aplicativo
                 href: resources/approleassignment.md
@@ -1389,7 +1389,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
-          - name: Presença (pré-visualização)
+          - name: Presença (visualização)
             href: resources/presence.md
             items:
               - name: Obter presença
@@ -1578,6 +1578,13 @@ items:
                     href: api/printconnector-update.md
                   - name: Excluir
                     href: api/printconnector-delete.md
+              - name: Imprimir documento
+                href: resources/printdocument.md
+                items:
+                  - name: Carregar dados
+                    href: api/printdocument-uploaddata.md
+                  - name: Baixar arquivo binário
+                    href: api/printdocument-get-file.md
               - name: Trabalho de impressão
                 href: resources/printjob.md
                 items:
@@ -11006,7 +11013,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Excluir
                     href: api/educationalactivity-delete.md
-              - name: Endereço de email
+              - name: Email
                 items:
                   - name: Email do item
                     href: resources/itememail.md
