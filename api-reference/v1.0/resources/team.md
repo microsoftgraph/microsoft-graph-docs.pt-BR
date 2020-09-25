@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 892d9bedb188ea0a39a611fdb207248958624f28
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cda0768321c793a35b6c72bbb6906c6d8aeaff31
+ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056426"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48273701"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -34,14 +34,15 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |[Obter equipe](../api/team-get.md) | [team](team.md) | Recupere as propriedades e relações da equipe especificada.|
 |[Atualizar equipe](../api/team-update.md) | [team](team.md) |Atualize as propriedades da equipe especificada. |
 |[Excluir equipe](/graph/api/group-delete?view=graph-rest-1.0) | Nenhum |Exclua a equipe e o grupo associado. |
-|[Clonar equipe](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copie a equipe e o grupo associado. |
+|[Listar membros](../api/team-list-members.md)|coleção [conversationMember](../resources/conversationmember.md)|Obtenha o conversationMembers da propriedade de navegação dos membros.|
+|[Adicionar membros](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Adicionar um novo membro.|
+|[Remover membros](../api/team-delete-members.md)|Nenhum|Excluir um objeto [conversationMember](../resources/conversationmember.md).|
+|[Alterar a função do membro](/graph/api/conversationmember-update?view=graph-rest-beta&tabs=http)|[conversationMember](../resources/conversationmember.md)|Alterar um membro para um proprietário ou voltar para um membro regular.|
 |[Arquivar equipe](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Coloque a equipe em um estado somente leitura. |
 |[Desarquivar equipe](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restaure a equipe com um estado de leitura e gravação. |
+|[Clonar equipe](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copie a equipe e o grupo associado. |
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
 |[Listar todas as equipes](/graph/teams-list-all-teams) | Coleção [group](group.md) | Liste todos os grupos que têm equipes. |
-|[Publicar aplicativos para sua organização](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Crie aplicativos do Teams que apenas sua organização possa ver. |
-|[Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adiciona (instala) um aplicativo a uma equipe.|
-|[Adicionar uma guia ao canal](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adiciona (instala) uma guia no canal de uma equipe.|
 
 ## <a name="properties"></a>Propriedades
 
