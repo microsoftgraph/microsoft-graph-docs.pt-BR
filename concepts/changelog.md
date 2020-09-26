@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 98f13af65a522e5af2fa172bbf395f7b7678e4be
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: c2d111a378c23eea94ef3908f796e793e7c956d7
+ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223412"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48273666"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -42,6 +42,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
+| Adição | beta | Adicionado o método [Baixar o arquivo binário printDocument](/graph/api/printdocument-get-file?view=graph-rest-beta) para baixar os dados de arquivo binário associados a um documento.  | 
 | Adição | beta | Foi adicionado o suporte parâmetros de consulta `$expand=documents` e `$filter=createdBy/userPrincipalName` no método [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta). |
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
@@ -146,6 +147,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Alterar| Beta e v1.0| A propriedade **lastModifiedDateTime** foi alterada no recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) representar a hora em que a entidade foi tocada pela última vez. Ele sempre será definido e nunca terá um valor `null`|
 |Adição|beta| Foi adicionada a propriedade **createdDateTime** aos recursos do [canal](/graph/api/resources/channel?view=graph-rest-beta) e da [equipe](/graph/api/resources/team?view=graph-rest-beta).|
 |Adição|Beta e v1.0| Adicionado o método [Update chatMessage](/graph/api/chatmessage-update) ao recurso [chatMessage](/graph/api/resources/chatmessage).|
+|Adição|v1.0| Adicionados os métodos [Listar membros](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Adicionar membros](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true)e [Remover membros](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true).|
 
 ### <a name="users"></a>Usuários
 
