@@ -2,12 +2,12 @@
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
-ms.openlocfilehash: cc302e4bc56e207b117667dc907b3bb928aaa164
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 765652f6b7303f9726748497bd6d3738f0ee3670
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329331"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289201"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -23,7 +23,7 @@ Cada ambiente de nuvem nacional é exclusivo e diferente do ambiente global da M
 
 Este artigo fornece informações sobre as diferentes implantações de nuvem nacional do Microsoft Graph e os recursos disponíveis para os desenvolvedores dentro de cada um.
 
->**Observação:** o [Microsoft Graph data Connect](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0) não dá suporte a nenhuma implantação nacional de nuvem. 
+>**Observação:** o [Microsoft Graph data Connect](./data-connect-concept-overview.md?view=graph-rest-1.0) não dá suporte a nenhuma implantação nacional de nuvem. 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
@@ -38,7 +38,7 @@ Antes de chamar as APIs do Microsoft Graph, você deve primeiro registrar seu ap
 |Microsoft Azure AD Alemanha |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |Microsoft Azure AD China operado pela 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 
-Para saber mais sobre os tokens de acesso do Azure AD e o Microsoft Graph, consulte [Basics Authentication](./auth/auth-concepts.md). Para cenários de autenticação do Azure AD, confira [noções básicas de autenticação do Azure ad](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
+Para saber mais sobre os tokens de acesso do Azure AD e o Microsoft Graph, consulte [Basics Authentication](./auth/auth-concepts.md). Para cenários de autenticação do Azure AD, confira [noções básicas de autenticação do Azure ad](/azure/active-directory/develop/authentication-scenarios).
 
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Pontos de extremidade raiz do serviço do Microsoft Graph e do Graph Explorer
@@ -105,9 +105,9 @@ Os seguintes recursos do Microsoft Graph estão disponíveis na visualização (
 
 Para saber mais sobre nuvens nacionais, confira os seguintes tópicos:
 - [Nuvens nacionais da Microsoft](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-- [Microsoft 365 para o governo dos EUA](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [Microsoft 365 operado pela 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
-- [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
+- [Microsoft 365 para o governo dos EUA](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [Microsoft 365 operado pela 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [Office 365 Germany](/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Governo do Azure](https://azure.microsoft.com/global-infrastructure/government/)
-- [Azure da 21Vianet da China](https://docs.microsoft.com/azure/china/)
-- [Azure Alemanha](https://docs.microsoft.com/azure/germany/)
+- [Azure da 21Vianet da China](/azure/china/)
+- [Azure Alemanha](/azure/germany/)

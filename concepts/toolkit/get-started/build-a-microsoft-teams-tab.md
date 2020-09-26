@@ -3,12 +3,12 @@ title: Criar uma guia do Microsoft Teams com o kit de ferramentas do Microsoft G
 description: Introdução à criação de uma guia do Microsoft Teams usando o kit de ferramentas do Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: e987d7030982901903789666f8eb3f0da5f4a093
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c4ed3396d05c865fd483bc8b007cdc743c0e8419
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059647"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288536"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Criar uma guia do Microsoft Teams com o kit de ferramentas do Microsoft Graph
 
@@ -24,7 +24,7 @@ Este tópico aborda como começar a usar o Microsoft Graph Toolkit em uma soluç
 
 ## <a name="create-a-new-teams-application-with-a-custom-tab"></a>Criar um novo aplicativo do teams com uma guia personalizada
 
-A maneira mais fácil de criar um novo aplicativo do teams é usar a [extensão do Microsoft Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) para o Visual Studio Code. Siga as instruções para [configurar um novo projeto do teams](https://docs.microsoft.com/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project). Quando você chegar à tela **Adicionar recursos** , selecione **Tab**e, em seguida, **guia pessoal**.
+A maneira mais fácil de criar um novo aplicativo do teams é usar a [extensão do Microsoft Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) para o Visual Studio Code. Siga as instruções para [configurar um novo projeto do teams](/microsoftteams/platform/toolkit/visual-studio-code-overview#set-up-a-new-teams-project). Quando você chegar à tela **Adicionar recursos** , selecione **Tab**e, em seguida, **guia pessoal**.
 
 ## <a name="set-up-ngrok-and-create-a-tunnel"></a>Configurar o ngrok e criar um túnel
 
@@ -37,7 +37,7 @@ No diretório do projeto, localize o `.publish\Development.env` arquivo e substi
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>Adicionar o Microsoft Graph Toolkit
 
-Você pode usar o Microsoft Graph Toolkit em seu aplicativo referenciando o carregador diretamente (via unpkg) ou instalando o pacote NPM. Para usar o kit de ferramentas, você também precisará do [Microsoft Teams SDK](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest).
+Você pode usar o Microsoft Graph Toolkit em seu aplicativo referenciando o carregador diretamente (via unpkg) ou instalando o pacote NPM. Para usar o kit de ferramentas, você também precisará do [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest).
 
 ### <a name="use-via-mgt-loader"></a>Usar via gerenciamento-carregador
 Para usar o kit de ferramentas e o SDK do teams por meio dos carregadores, adicione as seguintes referências a `public/index.html` :
@@ -90,7 +90,7 @@ Providers.globalProvider = new TeamsProvider ({
 Substitua `<YOUR_CLIENT_ID>` pela ID do cliente para seu aplicativo.
 
 ### <a name="creating-an-appclient-id"></a>Criar uma ID de aplicativo/cliente
-Para obter uma ID de cliente, você precisa [registrar seu aplicativo](https://docs.microsoft.com/graph/auth-register-app-v2) no Azure AD. Certifique-se de adicionar a URL do ngrok com o caminho completo para a página pop-up de autenticação em seus URIs de redirecionamento (por exemplo, `https://<YOUR_NGROK_URL>/auth.html` ).
+Para obter uma ID de cliente, você precisa [registrar seu aplicativo](../../auth-register-app-v2.md) no Azure AD. Certifique-se de adicionar a URL do ngrok com o caminho completo para a página pop-up de autenticação em seus URIs de redirecionamento (por exemplo, `https://<YOUR_NGROK_URL>/auth.html` ).
 >**Observação**: o MSAL só dá suporte ao fluxo implícito do OAuth. Certifique-se de habilitar o fluxo implícito em seu aplicativo no portal do Azure (não está habilitado por padrão). Em **autenticação**, encontre a seção **concessão implícita** e marque as caixas de seleção para **tokens de acesso** e **tokens de ID**. 
 
 ## <a name="create-the-auth-popup-page"></a>Criar a página pop-up de autenticação
@@ -156,11 +156,8 @@ Localize o diretório do projeto e carregue o arquivo **Development.zip** dentro
 
 Depois que o aplicativo for carregado, role para baixo no menu à esquerda e selecione **testar e distribuir**. Clique no botão **instalar** e, em seguida, clique em **Adicionar**. Você será redirecionado para a guia criada.
 
-## <a name="next-steps"></a>Próximas Etapas
+## <a name="next-steps"></a>Próximas etapas
 - Confira este tutorial passo a passo sobre [a criação de uma guia do teams](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/).
 - Experimente os componentes no [playground](https://mgt.dev).
 - Faça uma pergunta sobre o [estouro de pilha](https://aka.ms/mgt-question).
 - Informe bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).
-
-
-

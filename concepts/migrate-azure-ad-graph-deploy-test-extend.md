@@ -4,12 +4,12 @@ description: 'Descreve como migrar aplicativos do Azure Active Directory (Azure 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 57ee22b7c1f04e9f8fd4a6a1f3ec0d32f75d51be
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 82bc6943f152e287cdb1807de9f15e80b0f91229
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872940"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288403"
 ---
 # <a name="deploy-test-and-extend"></a>Implantar, testar e estender
 
@@ -32,10 +32,10 @@ Esta é a etapa 4 do [processo de migração de aplicativos](migrate-azure-ad-gr
     Agora você já fez a migração para o Microsoft Graph, nunca foi mais fácil desbloquear muito mais conjuntos de informações e recursos que agora estão em suas mãos. 
     O Microsoft Graph oferece suporte a vários novos conjuntos de jogos e recursos do Azure AD que não estão disponíveis no Azure AD Graph, incluindo: 
 
-    - [Gerenciamento de grupo do Microsoft 365](/graph/office365-groups-concept-overview)
+    - [Gerenciamento de grupo do Microsoft 365](./office365-groups-concept-overview.md)
     - [Convites de usuário externo](/graph/api/resources/invitation?view=graph-rest-1.0)
     - A capacidade de [restaurar os usuários e os grupos do Microsoft 365](/graph/api/resources/directory?view=graph-rest-1.0) depois de excluídos
-    - [Notificações de webhook em usuários e grupos](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0)
+    - [Notificações de webhook em usuários e grupos](./webhooks.md?toc=.%252fref%252ftoc.json&view=graph-rest-1.0)
     - Recursos de governança de identidade, como:
       - [Gerenciamento de identidade privilegiado](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) para elevar os usuários a funções privilegiadas apenas quando necessário e por um período de tempo limitado
       - [Revisões de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta) para avaliações de acesso de um único momento ou recorrentes para atestado dos direitos de acesso do usuário
@@ -43,9 +43,9 @@ Esta é a etapa 4 do [processo de migração de aplicativos](migrate-azure-ad-gr
     - Recursos de segurança como:
       - [Eventos de risco de identidade](/graph/api/resources/identityriskevent?view=graph-rest-1.0)
       - [Usuários de risco](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-    - [Bibliotecas e exemplos de cliente](/graph/) disponíveis em muitas plataformas e outros idiomas. Os SDKs do Microsoft Graph fornecem uma interface detectável para acessar facilmente seus dados ao lidar com a aquisição de token de forma transparente, tentar novamente o tratamento devido a erros e limitação, tratamento de redirecionamento seguro e serialização e desserialização de modelo.
+    - [Bibliotecas e exemplos de cliente](./index.yml) disponíveis em muitas plataformas e outros idiomas. Os SDKs do Microsoft Graph fornecem uma interface detectável para acessar facilmente seus dados ao lidar com a aquisição de token de forma transparente, tentar novamente o tratamento devido a erros e limitação, tratamento de redirecionamento seguro e serialização e desserialização de modelo.
 
-    O Microsoft Graph oferece acesso a muitos outros serviços do que apenas ao Azure Active Directory. Também é o [gateway da API para os serviços do Microsoft 365](/graph/).
+    O Microsoft Graph oferece acesso a muitos outros serviços do que apenas ao Azure Active Directory. Também é o [gateway da API para os serviços do Microsoft 365](./index.yml).
     Verifique se há novos conjuntos de recursos e capacidades regularmente.  
 
     - Dê uma olhada no [que você pode fazer com o Microsoft Graph](/graph/examples)
@@ -66,5 +66,5 @@ Se você encontrar problemas ou precisar de ajuda durante o processo de migraç�
 
 - Use [inícios e amostras rápidas](/graph/get-started) para se familiarizar rapidamente.
 - Aproveitar [bibliotecas de clientes e SDKs](https://developer.microsoft.com/graph/get-started) para desenvolver aplicativos personalizados 
-- Explore os conceitos e as práticas [do Microsoft Graph](/graph/overview) .
+- Explore os conceitos e as práticas [do Microsoft Graph](./overview.md) .
 - Use o [Explorador do Graph](https://aka.ms/ge) para experimentar o Microsoft Graph.

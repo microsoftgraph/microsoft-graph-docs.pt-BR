@@ -3,12 +3,12 @@ title: Fazer chamadas de API usando os SDKs do Microsoft Graph
 description: Fornece instruções para criar solicitações HTTP do Microsoft Graph usando SDKs.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: f317b52393378231fb57f2c39c9b9701a9215cf4
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 1338cbe7411a3643eaa5c1e1e58cf8d5b9b47c0a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192881"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288282"
 ---
 # <a name="make-api-calls-using-the-microsoft-graph-sdks"></a>Fazer chamadas de API usando os SDKs do Microsoft Graph
 
@@ -27,6 +27,10 @@ Para ler informações do Microsoft Graph, você precisa primeiro criar um objet
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-read.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-read.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -47,6 +51,10 @@ Ao recuperar uma entidade, nem todas as propriedades são recuperadas automatica
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-select.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-select.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
@@ -64,6 +72,10 @@ A recuperação de uma lista de entidades é semelhante à recuperação de uma 
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-list.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-list.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -85,6 +97,10 @@ Para SDKs que oferecem suporte a um estilo fluente, as coleções de entidades p
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-index.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-index.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
@@ -102,6 +118,10 @@ Você pode usar o `$expand` filtro para solicitar uma entidade relacionada, ou u
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-expand.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-expand.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -121,6 +141,10 @@ As solicitações Delete são criadas da mesma maneira que as solicitações par
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-delete.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-delete.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
@@ -138,6 +162,10 @@ Para SDKs que oferecem suporte a um estilo fluente, novos itens podem ser adicio
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-create.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-create.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
@@ -157,6 +185,10 @@ A maioria das atualizações no Microsoft Graph é realizada usando um `PATCH` m
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-update.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-update.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
@@ -175,6 +207,10 @@ Você pode usar uma `Header()` função para anexar cabeçalhos personalizados a
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-headers.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-headers.md)]
+
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
@@ -192,6 +228,10 @@ Para SDKs que oferecem suporte a um estilo fluente, você pode fornecer valores 
 # <a name="typescript"></a>[TypeScript](#tab/TypeScript)
 
 [!INCLUDE [sample-code](includes/snippets/typescript/create-requests-queryparams.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+
+[!INCLUDE [sample-code](includes/snippets/java/create-requests-queryparams.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 

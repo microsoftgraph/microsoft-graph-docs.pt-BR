@@ -4,12 +4,12 @@ description: Saiba como você pode usar bots para responder às necessidades dos
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: ae04e60079a789125dd6a818c19ec625eaac1443
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 4a5decb1b9415e2e57297d253bc56236b357080a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871554"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289376"
 ---
 # <a name="get-started-with-cloud-communications"></a>Introdução às comunicações em nuvem
 
@@ -19,16 +19,16 @@ As APIs de comunicação em nuvem no Microsoft Graph adicionam uma nova dimensã
 
 Beore você começar, será útil se familiarizar com o seguinte:
 
-- [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) e como o serviço ajuda os funcionários a entrar e acessar recursos.
-- O [serviço do Azure bot](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) e seus recursos.
+- [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) e como o serviço ajuda os funcionários a entrar e acessar recursos.
+- O [serviço do Azure bot](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) e seus recursos.
 
 ## <a name="register-a-bot"></a>Registrar um bot
 
 Os termos "aplicativo de serviço" e "bot" podem ser usados de forma intercambiável. Você pode criar um bot através do [portal do Azure](https://azure.microsoft.com/features/azure-portal/) diretamente ou registrar um bot que não está hospedado no Azure. Para obter mais detalhes sobre o processo de registro de bot, consulte [registro de um bot de chamada](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). 
 
-Para facilitar as coisas mais tarde, é útil entender os diferentes [tipos de permissões](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) no Azure AD. Aplicativos com permissões delegadas exigem um usuário conectado. As permissões baseadas em aplicativo não precisam de um usuário conectado e geralmente podem ser executadas como um serviço em segundo plano.
+Para facilitar as coisas mais tarde, é útil entender os diferentes [tipos de permissões](/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) no Azure AD. Aplicativos com permissões delegadas exigem um usuário conectado. As permissões baseadas em aplicativo não precisam de um usuário conectado e geralmente podem ser executadas como um serviço em segundo plano.
 
-Depois de registrar seu bot, se você quiser [Adicionar seu bot ao Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot), não deixe de entender como usar o [app Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio) e definir os metadados necessários.
+Depois de registrar seu bot, se você quiser [Adicionar seu bot ao Microsoft Teams](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot), não deixe de entender como usar o [app Studio](/microsoftteams/platform/get-started/get-started-app-studio) e definir os metadados necessários.
 
 ## <a name="manage-the-state-of-the-bot"></a>Gerenciar o estado do bot
 

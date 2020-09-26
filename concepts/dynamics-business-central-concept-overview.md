@@ -6,12 +6,12 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: aafc7e6f1f7a688d1f083c584ceedc8a11878866
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: b5bdb6974bc03653a95a36928b216045fa3d7b78
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133737"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289208"
 ---
 # <a name="dynamics-365-business-central-api-overview-preview"></a>Visão geral da API do Dynamics 365 Business central (versão prévia)
 O Dynamics 365 Business central é uma solução de gerenciamento de negócios unificada e fácil de usar e adaptar, ajudando você a se conectar à sua empresa e tomar decisões mais inteligentes. Ele fornece uma visão completa de sua empresa, permitindo que você gerencie suas finanças, automatize e proteja sua cadeia de fornecimento, venda mais inteligente e aprimore o atendimento ao cliente, mantenha projetos no prazo e sob o orçamento e otimize as operações.
@@ -31,7 +31,7 @@ Cada empresa é diferente e pode ter processos de negócios especializados. Esse
 O Microsoft Graph fornece acesso aos seus relatórios financeiros. Conecte as ferramentas e os aplicativos de BI à sua folha de saldo, declaração de fluxo de caixa, relatórios de envelhecimento de contas a pagar e contas a receber e relatórios de balancete para criar painéis de BI e garantir que os usuários tenham acesso às informações de que precisam.
 
 ## <a name="authorization"></a>Autorização
-Use o ponto de extremidade do Azure AD v 2.0 para autenticar as APIs do Dynamics 365 Business central. Todas as APIs exigem `Authorization: Bearer {access-token}` o cabeçalho da solicitação. Para obter mais informações sobre autorização, consulte [obter tokens de acesso para chamar o Microsoft Graph](/graph/auth).
+Use o ponto de extremidade do Azure AD v 2.0 para autenticar as APIs do Dynamics 365 Business central. Todas as APIs exigem o `Authorization: Bearer {access-token}` cabeçalho da solicitação. Para obter mais informações sobre autorização, consulte [obter tokens de acesso para chamar o Microsoft Graph](./auth/index.yml).
 
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?

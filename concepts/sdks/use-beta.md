@@ -3,12 +3,12 @@ title: Usar os SDKs do Microsoft Graph com a API beta
 description: Descreve como usar os SDKs do Microsoft Graph com a versão beta da API.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: a384384b4172a835160cf12b8e1fb0c06edc7fe7
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 6a0444cdb30b2e07c4d93f683aaef2f5283c3846
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312191"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288963"
 ---
 # <a name="use-the-microsoft-graph-sdks-with-the-beta-api"></a>Usar os SDKs do Microsoft Graph com a API beta
 
@@ -55,6 +55,13 @@ A [biblioteca de cliente JavaScript do Microsoft Graph](https://github.com/micro
 # <a name="java"></a>[Java](#tab/Java)
 
 Para chamar a API beta, você deve instalar o SDK do [Microsoft Graph beta java](https://github.com/microsoftgraph/msgraph-beta-sdk-java). O uso é o mesmo que o SDK não beta.
+
+```Java
+IGraphServiceClient graphClient = GraphServiceClient
+                .builder()
+                .authenticationProvider(authProvider)
+                .buildClient();
+```
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 

@@ -4,12 +4,12 @@ description: Habilite seus bots para enviar e receber conteúdo relacionado a á
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 2ce3f28fc5fc42c5628d6fddac63c69c430a03fd
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c7319e13264794fb3e38764d5265824e04b5ba87
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871550"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289383"
 ---
 # <a name="media-overview"></a>Visão geral de mídia
 
@@ -29,11 +29,11 @@ Para obter um exemplo que mostra como criar um bot que usa mídia de host de ser
 ## <a name="application-hosted-media-local-hosting"></a>Mídia hospedada por aplicativo (hospedagem local)
 Se você quiser que o bot acesse um fluxo ativo de áudio e vídeo de seus clientes para usar para gravação, transcrever, traduzir ou remediar a análise por meio de um serviço de processamento de idioma natural, considere hospedar sua mídia localmente.
 
->**Observação:** Você não pode gravar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
+>**Observação:** Você não pode gravar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
 **Se você quiser mais controle sobre sua mídia, escolha essa opção**. Você terá acesso direto aos fluxos de mídia e poderá usar o compartilhamento de tela baseado em vídeo. Você poderá criar cenários IVR mais sofisticados que estão habilitados para fala. Esta é uma solução ponderada mais complicada que oferece maior flexibilidade na forma como você deseja programar a mídia.
 
-Confira também os [requisitos e considerações](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots) para bots de mídia hospedados por aplicativos.
+Confira também os [requisitos e considerações](/microsoftteams/platform/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots) para bots de mídia hospedados por aplicativos.
 
 Para obter um exemplo que mostra como criar um bot que usa mídia hospedada no aplicativo, consulte os [exemplos de mídia local](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples).
 
@@ -41,4 +41,4 @@ Para obter um exemplo que mostra como criar um bot que usa mídia hospedada no a
 
 ## <a name="see-also"></a>Confira também
 
-- [Permissões de chamadas](/graph/permissions-reference#calls-permissions)
+- [Permissões de chamadas](./permissions-reference.md#calls-permissions)

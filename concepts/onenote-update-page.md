@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 09aec84f9b647feaba66954d8c644360396cc623
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: c37418332a484223b82154c13e73801db525cbc3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895233"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289074"
 ---
 # <a name="update-onenote-page-content"></a>Atualizar o conteúdo da página do OneNote
 
@@ -92,7 +92,7 @@ O elemento a ser atualizado. O valor deve ser uma dos seguintes identificadores:
 |------|------|  
 | #{data-id} | <p>Essa ID é opcionalmente definida em elementos na HTML de entrada ao [criar uma página](onenote-create-page.md) ou [atualizar uma página](onenote-update-page.md). Coloque um # como prefixo do valor.</p><p> Exemplo:<br/>`'target':'#intro'` tem como destino o elemento `<div data-id="intro" ...>`</p> |  
 | id | <p>É a [ID gerada](#generated-ids) do Microsoft Graph e é necessário para a maioria das operações de substituição. Não use # como prefixo.</p><p> Exemplo:<br/>`'target':'div:{33f8a2...}{37}'` tem como destino o elemento `<div id="div:{33f8a2...}{37}" ...>`</p><p>Não confunda esses identificadores com valores de **id** definidos no [HTML de entrada](onenote-input-output-html.md). Todos os valores de **id** enviados no HTML de entrada são descartados.</p> |  
-| corpo | A palavra-chave que tem como destino o primeiro div na página. Não use # como prefixo. |  
+| body | A palavra-chave que tem como destino o primeiro div na página. Não use # como prefixo. |  
 | title | A palavra-chave que tem como destino o título da página. Não use # como prefixo. |  
  
 #### <a name="action"></a>action
@@ -464,7 +464,7 @@ A URL raiz do serviço do OneNote usa o formato a seguir para todas as chamadas 
 
 O segmento `version` na URL representa a versão do Microsoft Graph que você deseja usar. `v1.0` serve para o código de produção estável. `beta` serve para experimentar um recurso que está em desenvolvimento. Os recursos e a funcionalidade na versão beta podem mudar, por isso, você não deve usá-la no código de produção.
 
-`me` serve para o conteúdo do OneNote que o usuário atual pode acessar (exclusivo e compartilhado). `users/{id}` serve para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use a [API do Microsoft Azure AD Graph](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog).
+`me` serve para o conteúdo do OneNote que o usuário atual pode acessar (exclusivo e compartilhado). `users/{id}` serve para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use a [API do Microsoft Azure AD Graph](/previous-versions/azure/ad/graph/api/api-catalog).
 
 
 > **Observação:** para obter as ids de usuário, faça uma solicitação GET em `https://graph.microsoft.com/v1.0/users`.
@@ -491,4 +491,4 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Esco
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [Perguntas sobre desenvolvimento do OneNote no Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)

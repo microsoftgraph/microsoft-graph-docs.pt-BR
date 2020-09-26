@@ -3,12 +3,12 @@ title: Instalar o SDK do Microsoft Graph
 description: Fornece instruções para a instalação dos SDKs C#, Java, JavaScript, Objective-C, PHP e Ruby do Microsoft Graph.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 13fa6bc82c311efb1d70e678ba0fe7537b23330a
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d9feb4ebca4cc0558ad981e1598ff6f7d68ac95a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192627"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289467"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Instalar os SDKs do Microsoft Graph
 
@@ -35,6 +35,7 @@ Install-Package Microsoft.Graph.Auth -IncludePrerelease
 O SDK do Microsoft Graph Java está incluído nos seguintes pacotes:
 
 - [Microsoft-Graph](https://github.com/microsoftgraph/msgraph-sdk-java) -contém os modelos e criadores de solicitação para acessar o `v1.0` ponto de extremidade com a API fluente.
+- [Microsoft-Graph-beta](https://github.com/microsoftgraph/msgraph-beta-sdk-java) -contém os modelos e criadores de solicitação para acessar o `beta` ponto de extremidade com a API fluente.
 - [Microsoft-Graph-Core](https://github.com/microsoftgraph/msgraph-sdk-java-core) -a biblioteca principal para fazer chamadas para o Microsoft Graph.
 - [Microsoft-Graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth) -fornece um wrapper baseado em cenário de autenticação da biblioteca de autenticação da Microsoft (MSAL) para uso com o SDK do Microsoft Graph.
 
@@ -49,7 +50,7 @@ repository {
 
 dependency {
     // Include the sdk as a dependency
-    compile('com.microsoft.graph:microsoft-graph:1.2.+')
+    implementation 'com.microsoft.graph:microsoft-graph:2.+'
 }
 ```
 
@@ -61,7 +62,7 @@ Adicione a dependência no elemento de dependências no pom.xml:
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>1.2.0</version>
+    <version>[2.0,)</version>
 </dependency>
 ```
 

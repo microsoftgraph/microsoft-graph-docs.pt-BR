@@ -4,12 +4,12 @@ description: Este artigo descreve os códigos de erro que são retornados pelas 
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 49b61a5acec84cc4425c85329ce8482fb9c31eb7
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 47c8a56c0a6679957833a65e48c050932024b280
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287432"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288389"
 ---
 # <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Códigos de erro para APIs do OneNote no Microsoft Graph
 
@@ -60,7 +60,7 @@ A API do OneNote não pôde criar uma página na seção especificada porque a s
 O servidor está ocupado demais para lidar com a solicitação de entrada neste momento. Tente novamente mais tarde.
 
 ### <a name="10008"></a>10008
-Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 5.000 itens do OneNote (bloco de anotações, seções, grupos de seções) e não podem ser consultadas usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 5000 itens do OneNote. Confira o [blog de desenvolvimento do OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para ver as etapas de mitigação.
+Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 5.000 itens do OneNote (bloco de anotações, seções, grupos de seções) e não podem ser consultadas usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 5000 itens do OneNote. Confira o [blog de desenvolvimento do OneNote](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) para ver as etapas de mitigação.
 
 ### <a name="10012"></a>10012
 Não é possível criar nem atualizar a entidade porque a biblioteca que contém o bloco de anotações exige que seja feito check-out dos itens para que eles possam ser editados. Para saber mais, confira [Configurar uma biblioteca para exigir check-out de arquivos](https://support.office.com/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
@@ -68,7 +68,7 @@ Não é possível criar nem atualizar a entidade porque a biblioteca que contém
 Remova o requisito de check-out da biblioteca ou mova o bloco de anotações.
 
 ### <a name="10013"></a>10013
-Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 20.000 itens e não podem ser indexadas para consulta usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 20.000 itens. Confira o [blog de desenvolvimento do OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para ver as etapas de mitigação.
+Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 20.000 itens e não podem ser indexadas para consulta usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 20.000 itens. Confira o [blog de desenvolvimento do OneNote](/archive/blogs/onenotedev/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library) para ver as etapas de mitigação.
 
 ### <a name="10014"></a>10014
 O Azure Key Vault está ocupado demais para lidar com a solicitação de entrada neste momento. Tente novamente mais tarde.
@@ -333,7 +333,7 @@ O contexto não especifica uma ID de usuário válida. Um erro comum é que PUID
 ### <a name="20166"></a>20166
 O aplicativo emitiu muitas solicitações em nome de um usuário em um curto período de tempo. Para ajudar a garantir que a API do OneNote permaneça estável e responsiva, a API retorna um código de status 429 e esse erro quando detecta que um aplicativo está usando muitos recursos. 
 
-Para obter mais informações, consulte [orientação sobre a limitação específica do serviço do Microsoft Graph](/graph/throttling#service-specific-limits).
+Para obter mais informações, consulte [orientação sobre a limitação específica do serviço do Microsoft Graph](./throttling.md#service-specific-limits).
 
 ### <a name="20168"></a>20168
 Não há suporte para a fonte do vídeo especificada na solicitação. Confira [Sites de vídeo com suporte](onenote-images-files.md#adding-videos) para a lista atual.
@@ -419,4 +419,3 @@ O contêiner já está em uso por outro recurso.
 
 - [Respostas de erro e tipos de recurso do Microsoft Graph](errors.md)
 - [Referência do OneNote](/graph/api/resources/onenote?view=graph-rest-1.0)
-

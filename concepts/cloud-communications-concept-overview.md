@@ -4,12 +4,12 @@ description: As APIs de comunicação em nuvem no Microsoft Graph adicionam uma 
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: fc8ab5e91ba16a2b9dc0730120be350550caf145
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: e672b58d32f0f841aedcf5b639c4d05e15ce582d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050775"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289411"
 ---
 # <a name="cloud-communications-api-overview"></a>Visão geral da API de comunicações em nuvem
 As APIs de comunicação em nuvem no Microsoft Graph adicionam uma nova dimensão a como seus aplicativos e serviços interagem com os usuários por meio de vários recursos relacionados a comunicações, como chamadas e reuniões online. Expanda sua empresa expedido o modo como você responde às necessidades dos clientes e como seus funcionários colaboram entre si.
@@ -48,7 +48,7 @@ Para criar uma interação mais inteligente entre seus clientes e seu bot, quand
 
 A integração com um serviço de processamento de idioma natural significa que a fala do cliente pode ser analisada por seu insignificante. O bot pode então responder às necessidades do cliente de acordo.
 
->**Observação:** Você não pode gravar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
+>**Observação:** Você não pode gravar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
 Você pode usar as APIs de comunicação em nuvem para criar um bot que:
 
@@ -104,9 +104,7 @@ Está procurando a referência de API para esse serviço?
 
 ## <a name="see-also"></a>Confira também
 
-- [Permissões delegadas e de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent)
-- [Permissões de chamadas](/graph/permissions-reference#calls-permissions)
-- [Permissões de reunião online](/graph/permissions-reference#online-meetings-permissions)
+- [Permissões delegadas e de aplicativo](/azure/active-directory/develop/v1-permissions-and-consent)
+- [Permissões de chamadas](./permissions-reference.md#calls-permissions)
+- [Permissões de reunião online](./permissions-reference.md#online-meetings-permissions)
 - [Exemplos de comunicações em nuvem](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
-
-

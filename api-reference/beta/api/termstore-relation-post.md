@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8008abbfa10bbc0c7267384c66afc7c7c1c1c328
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c44856d97ceb0986e6cab71d4be4d0ef62ee0b6
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055716"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288690"
 ---
 # <a name="create-relation"></a>Criar relação
 Namespace: Microsoft. Graph. termos
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [relation](../resources/termstore-relation.md) . Eles são usados para criar relações fixas e resued entre os termos ou entre um termo e um conjunto. Ao criar um termo fixado/reutilizado entre o termo e Set, fromTerm no corpo da postagem deve ser nulo.
+Criar um novo objeto [relation](../resources/termstore-relation.md) . Eles são usados para criar relações fixas e reutilizadas entre os termos ou entre um termo e o conjunto. Ao criar um termo fixado/reutilizado entre o termo e Set, fromTerm no corpo da postagem deve ser nulo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

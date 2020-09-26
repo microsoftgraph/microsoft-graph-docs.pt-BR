@@ -3,18 +3,18 @@ title: Componente tarefas no Microsoft Graph Toolkit
 description: O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou edite tarefas. Ele funciona com qualquer tarefa no Microsoft Planner ou no Microsoft to-do.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: cfd248ca7cb240cd724b8df863383b308121db4b
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 54e72c5756eb029d7219c07a591c956207a1c0e6
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144272"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288557"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Componente tarefas no Microsoft Graph Toolkit
 
 O componente tarefas permite que o usuário exiba, adicione, remova, conclua ou edite tarefas. Ele funciona com tarefas no Microsoft Planner ou Microsoft to-do.  
 
-Além disso, um usuário pode atribuir um único ou vários usuários do Microsoft Graph a uma tarefa. Para obter mais detalhes sobre as atribuições do Microsoft Graph, consulte [plannerAssignments](https://docs.microsoft.com/graph/api/resources/plannerassignments?view=graph-rest-1.0).
+Além disso, um usuário pode atribuir um único ou vários usuários do Microsoft Graph a uma tarefa. Para obter mais detalhes sobre as atribuições do Microsoft Graph, consulte [plannerAssignments](/graph/api/resources/plannerassignments?view=graph-rest-1.0).
 
 ## <a name="example"></a>Exemplo
 
@@ -37,8 +37,8 @@ O exemplo a seguir exibe as tarefas do Microsoft Planner do usuário conectado u
 | Target-ID = "planner_id/folder_id"| targetId | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para o planejador ou ID de pasta fornecido. |
 | Target-Bucket-ID = "bucket_id" |targetBucketId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para a ID de Bucket fornecida (somente a fonte de dados do Planner). |
 | ID de grupo | groupId  | Uma ID de cadeia de caracteres para bloquear a interface de tarefas para a ID de grupo (somente fonte de dados do Planner). |
-| Não disponível | isNewTaskVisible  | Determina se a exibição de nova tarefa é visível no processamento. |
-| Não disponível | taskFilter  | Uma função opcional para filtrar quais tarefas são exibidas para o usuário. |
+| N/D | isNewTaskVisible  | Determina se a exibição de nova tarefa é visível no processamento. |
+| N/D | taskFilter  | Uma função opcional para filtrar quais tarefas são exibidas para o usuário. |
 
 O exemplo a seguir mostra apenas as tarefas do Planner com a ID *12345* e não permite que o usuário crie novas tarefas.
 
@@ -126,7 +126,7 @@ mgt-tasks {
 
 ## <a name="templates"></a>Modelos
 
-O `tasks` componente oferece suporte a vários [modelos](../templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina `data-type` o valor como um dos seguintes:
+O `tasks` componente oferece suporte a vários [modelos](../templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes:
 
 | Tipo de dados     | Contexto de dados              | Descrição                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |

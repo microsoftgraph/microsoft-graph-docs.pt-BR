@@ -3,12 +3,12 @@ title: Página por meio de uma coleção usando os SDKs do Microsoft Graph
 description: Fornece instruções para criar solicitações de API do Microsoft Graph usando os SDKs do Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: e3cd656c5210739436ff9df68cfb700f264204de
-ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
+ms.openlocfilehash: ef48af29a4cc0388c405e2a42894d98ce6c98010
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44052516"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289481"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Página por meio de uma coleção usando os SDKs do Microsoft Graph
 
@@ -19,7 +19,7 @@ Por motivos de desempenho, as coleções de entidades são freqüentemente divid
 O exemplo a seguir mostra a iteração em todas as mensagens na caixa de correio de um usuário.
 
 > [!TIP]
-> Este exemplo define um tamanho de página pequeno usando `top` o parâmetro para fins de demonstração. Você pode definir o tamanho da página até 999 para minimizar o número de solicitações necessárias.
+> Este exemplo define um tamanho de página pequeno usando o `top` parâmetro para fins de demonstração. Você pode definir o tamanho da página até 999 para minimizar o número de solicitações necessárias.
 
 ### <a name="c"></a>[C#](#tab/csharp)
 
@@ -66,11 +66,32 @@ let pageIterator = new PageIterator(client, response, callback);
 await pageIterator.iterate();
 ```
 
+### <a name="java"></a>[Java](#tab/java)
+
+```java
+IMessageCollectionPage messagesPage = graphClient.me().messages()
+    .buildRequest()
+    .select("Sender,Subject")
+    .top(10)
+    .get();
+
+
+while(messagesPage != null) {
+  final List<Message> messages = messagesPage.GetCurrentPage();
+  final IMessageCollectionRequestBuilder nextPage = messagesPage.GetNextPage();
+  if(nextPage == null) {
+    break;
+  } else {
+    messagePage = nextPage.buildRequest().get();
+  }
+}
+```
+
 ---
 
 ## <a name="stopping-and-resuming-the-iteration"></a>Interromper e retomar a iteração
 
-Alguns cenários exigem a interrupção do processo de iteração para executar outras ações. É possível pausar a iteração retornando `false` do retorno de chamada de iteração. A iteração pode ser retomada `resume` chamando-se o método no **PageIterator**.
+Alguns cenários exigem a interrupção do processo de iteração para executar outras ações. É possível pausar a iteração retornando `false` do retorno de chamada de iteração. A iteração pode ser retomada chamando-se o `resume` método no **PageIterator**.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -140,6 +161,12 @@ while (!pageIterator.isComplete()) {
   count = 0;
   await pageIterator.resume();
 }
+```
+
+### <a name="java"></a>[Java](#tab/java)
+
+```java
+// not supported in java SDK
 ```
 
 ---

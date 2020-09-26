@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para pesquisar infor
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 439a6ca1d560a848a0e78b2105dc717abfa5ad44
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: e9917b8153946161168e90f78399f29b6a7f3df3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192552"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288823"
 ---
 # <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>Usar a API de pesquisa da Microsoft para pesquisar mensagens do Outlook
 
@@ -23,7 +23,7 @@ Os resultados da pesquisa de mensagens são classificados por **receivedDateTime
 
 A pesquisa de mensagens aplica-se às contas corporativas ou de estudante. Os usuários podem pesquisar sua própria caixa de correio, mas não podem pesquisar caixas de correio delegadas. Para obter detalhes, consulte [limitações conhecidas](#known-limitations).
 
-A pesquisa de mensagens também procura anexos. Os [tipos de arquivo com suporte](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para a pesquisa de anexo de mensagens são os mesmos que para a pesquisa do SharePoint Online.
+A pesquisa de mensagens também procura anexos. Os [tipos de arquivo com suporte](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para a pesquisa de anexo de mensagens são os mesmos que para a pesquisa do SharePoint Online.
 
 ## <a name="example-1-search-messages-in-a-users-mailbox"></a>Exemplo 1: Pesquisar mensagens na caixa de correio de um usuário
 

@@ -4,12 +4,12 @@ description: Enviar uma mensagem proativa para um usuário do Microsoft Teams co
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 76b7527a961cc3aa5e78b30ff740cbda90d1c63c
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: dafd70f1d741f15b2cfe52efe7f0a4942f06f3bd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435051"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288935"
 ---
 # <a name="proactive-messaging-using-a-bot-in-microsoft-teams"></a>Mensagens pró-ativas usando um bot no Microsoft Teams
 
@@ -25,7 +25,7 @@ Em um nível alto, você precisará:
 
 ## <a name="create-your-teams-app-and-bot"></a>Criar seu aplicativo e bot do Microsoft Teams
 
-Se você ainda não tiver um aplicativo do Microsoft Teams com um bot que possa enviar a mensagem, você precisará criar um. Consulte [Add bots to Teams apps](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-overview) na documentação da plataforma do teams. Para obter informações sobre como criar um bot para mensagens proativas, consulte [Proactive Messaging for bots](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
+Se você ainda não tiver um aplicativo do Microsoft Teams com um bot que possa enviar a mensagem, você precisará criar um. Consulte [Add bots to Teams apps](/microsoftteams/platform/concepts/bots/bots-overview) na documentação da plataforma do teams. Para obter informações sobre como criar um bot para mensagens proativas, consulte [Proactive Messaging for bots](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
 
 Você também pode usar o [modelo de aplicativo Company Communicator](https://github.com/OfficeDev/microsoft-teams-company-communicator-app) como um bom ponto de partida para seu aplicativo. Este modelo de aplicativo é um aplicativo Microsoft Teams pronto para produção capaz de criar, agendar e distribuir mensagens em toda a empresa.
 
@@ -35,7 +35,7 @@ Se você estiver fazendo isso para uma organização de grande porte, as mensage
 
 ## <a name="deploy-your-app-to-your-tenant-app-catalog"></a>Implantar seu aplicativo no catálogo de aplicativos do locatário
 
-O Microsoft Graph só pode instalar aplicativos que foram adicionados ao catálogo de aplicativos de locatários ou estão disponíveis no repositório de aplicativos públicos do Microsoft Teams. Se você estiver trabalhando com um novo aplicativo, será necessário verificar se ele é o [Catálogo de aplicativos do locatário](https://docs.microsoft.com/microsoftteams/platform/publishing/apps-publish#microsoft-teams-tenant-app-catalog).
+O Microsoft Graph só pode instalar aplicativos que foram adicionados ao catálogo de aplicativos de locatários ou estão disponíveis no repositório de aplicativos públicos do Microsoft Teams. Se você estiver trabalhando com um novo aplicativo, será necessário verificar se ele é o [Catálogo de aplicativos do locatário](/microsoftteams/platform/publishing/apps-publish#microsoft-teams-tenant-app-catalog).
 
 ## <a name="install-the-app-for-your-users"></a>Instalar o aplicativo para seus usuários
 
@@ -70,7 +70,7 @@ Se o usuário tiver o Microsoft Teams em execução, ele poderá ou não ver a i
 
 ## <a name="get-the-chat-thread-id"></a>Obter a ID do thread de chat
 
-Quando o aplicativo é instalado para o usuário, o bot receberá um `conversationUpdate` evento que conterá as informações necessárias para enviar a mensagem proativa. Para mais informações, consulte [eventos de bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-notifications).
+Quando o aplicativo é instalado para o usuário, o bot receberá um `conversationUpdate` evento que conterá as informações necessárias para enviar a mensagem proativa. Para mais informações, consulte [eventos de bot](/microsoftteams/platform/concepts/bots/bots-notifications).
 
 Se você perder o `chatThreadId` , poderá encontrá-lo novamente chamando:
 
@@ -82,7 +82,7 @@ A propriedade **ID** do resultado é a ID chatThread.
 
 ## <a name="sending-the-message"></a>Envio da mensagem
 
-Agora que seu bot tem as informações necessárias, você pode [Enviar uma mensagem proativa](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
+Agora que seu bot tem as informações necessárias, você pode [Enviar uma mensagem proativa](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
 
 ## <a name="c-sample"></a>Exemplo de C#
 

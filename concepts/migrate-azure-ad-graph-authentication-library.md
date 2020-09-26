@@ -4,12 +4,12 @@ description: Descreve como atualizar o uso da biblioteca de autenticação para 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 17a6fa76b3aa32b0eae17bd96e6e8ec9d84ebdbb
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 35fc2b5c1ad1d7aebc790b93a31ba8d1924b8bc1
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872954"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289019"
 ---
 # <a name="review-app-authentication-library-changes"></a>Analisar alterações da biblioteca de autenticação do aplicativo
 
@@ -17,8 +17,8 @@ Este artigo faz parte da *etapa 3: revise os detalhes do aplicativo* do [process
 
 A maioria dos aplicativos usa uma biblioteca de autenticação para adquirir e gerenciar tokens de acesso para chamar o Microsoft Graph.  A Microsoft oferece duas bibliotecas de autenticação:
 
-- [Biblioteca de autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (Adal)
-- [Biblioteca de autenticação da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL)
+- [Biblioteca de autenticação do Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) (Adal)
+- [Biblioteca de autenticação da Microsoft](/azure/active-directory/develop/reference-v2-libraries) (MSAL)
 
 ## <a name="updating-adal"></a>Atualizando ADAL
 

@@ -4,12 +4,12 @@ description: Descreve como as solicitações do Microsoft Graph são diferentes 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: c4255b31f7825df3b9c0d3d44e7003e27e72b6a8
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: ae393192961c61890e7dc3963a82727b6aea0557
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873388"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289103"
 ---
 # <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Solicitar diferenças entre o Azure AD Graph e o Microsoft Graph
 
@@ -101,8 +101,8 @@ A resposta para esta solicitação incluiria as propriedades de endereço.  Ele 
 Saiba mais sobre:
 
 - Propriedades padrão no usuário, consulte [usuários](/graph/api/resources/users?view=graph-rest-1.0)
-- O `$select` parâmetro e outros parâmetros de consulta ODATA suportados, confira [usar parâmetros de consulta para personalizar respostas](/graph/query-parameters).
-- Esta e outras otimizações recomendadas, consulte [práticas recomendadas](/graph/best-practices-concept).
+- O `$select` parâmetro e outros parâmetros de consulta ODATA suportados, confira [usar parâmetros de consulta para personalizar respostas](./query-parameters.md).
+- Esta e outras otimizações recomendadas, consulte [práticas recomendadas](./best-practices-concept.md).
 
 ## <a name="relationships-and-navigation-properties"></a>Propriedades de relações e navegação
 
@@ -127,4 +127,3 @@ Ao migrar seus aplicativos para o Microsoft Graph, procure solicitações que us
 
 - Saiba mais sobre as [diferenças de recursos de serviço](migrate-azure-ad-graph-feature-differences.md) entre o Azure ad Graph e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.
-

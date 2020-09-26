@@ -4,16 +4,16 @@ description: Saiba como criar um pacote do Access e solicitar acesso a ele usand
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c9f283a00bbf09c1bc54c4abd924c92fe1ce140
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c276289b4e71c96386afd7e2502021249025965b
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036825"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288837"
 ---
 # <a name="tutorial-create-an-access-package-using-microsoft-graph-apis"></a>Tutorial: criar um pacote de acesso usando as APIs do Microsoft Graph
 
-Gerenciar o acesso a todos os recursos necessários para os funcionários, como grupos, aplicativos e sites, é uma função importante para as organizações. Você deseja conceder aos funcionários o nível certo de acesso de que eles precisam para serem produtivos e remover o acesso quando ele não for mais necessário. [Azure Active Directory (Azure AD) o gerenciamento de direitos](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) usando as APIs do Microsoft Graph permite que você gerencie esse tipo de acesso.
+Gerenciar o acesso a todos os recursos necessários para os funcionários, como grupos, aplicativos e sites, é uma função importante para as organizações. Você deseja conceder aos funcionários o nível certo de acesso de que eles precisam para serem produtivos e remover o acesso quando ele não for mais necessário. [Azure Active Directory (Azure AD) o gerenciamento de direitos](/azure/active-directory/governance/entitlement-management-overview) usando as APIs do Microsoft Graph permite que você gerencie esse tipo de acesso.
 
 Neste tutorial, você foi solicitado a desenvolver o código para criar um pacote de recursos para uma campanha de marketing que os usuários internos podem solicitar. As solicitações não exigem aprovação e o acesso do usuário expira após 30 dias. Para este tutorial, os recursos de campanha de marketing são apenas associados em um único grupo, mas pode ser uma coleção de grupos, aplicativos ou sites do SharePoint Online.
 
@@ -22,7 +22,7 @@ Neste tutorial, você foi solicitado a desenvolver o código para criar um pacot
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir com êxito este tutorial, verifique se você tem os pré-requisitos necessários:
-- O gerenciamento de direitos do Azure AD requer licenças específicas. Para obter mais informações, consulte [License requirements](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview#license-requirements). As seguintes licenças são necessárias em seu locatário:
+- O gerenciamento de direitos do Azure AD requer licenças específicas. Para obter mais informações, consulte [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). As seguintes licenças são necessárias em seu locatário:
     - Azure AD Premium P2
     - Licença Enterprise Mobility + Security (EMS) e5
 - Este tutorial pressupõe que você está usando o Microsoft Graph Explorer, mas você pode usar o postmaster ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Para este tutorial, as `User.ReadWrite.All` `Group.ReadWrite.All` permissões, e `EntitlementManagement.ReadWrite.All` delegadas, são necessárias. Conclua as seguintes etapas para definir permissões no Microsoft Graph Explorer:
@@ -725,12 +725,12 @@ No Content - 204
 Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referência de API para essas APIs para saber mais sobre o que as APIs podem fazer.
 
 
-- [Trabalhar com a API de gerenciamento de qualificação do Azure AD](https://docs.microsoft.com/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
-- [accessPackageCatalog](https://docs.microsoft.com/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
-- [accessPackageResourceRequest](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
-- [accessPackage](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta)
-- [accessPackageResourceRoleScope](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
-- [accessPackageAssignmentPolicy](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
-- [accessPackageAssignmentRequest](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
-- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0)
-- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0)
+- [Trabalhar com a API de gerenciamento de qualificação do Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
+- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
+- [grupo](/graph/api/resources/group?view=graph-rest-1.0)
+- [Usuário](/graph/api/resources/user?view=graph-rest-1.0)

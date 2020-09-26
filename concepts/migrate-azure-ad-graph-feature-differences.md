@@ -4,12 +4,12 @@ description: Descreve as diferenças de recursos entre a API do Azure Active Dir
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 34cbf88ed5fc1f6fe2cba9df3fdb0167630d120e
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 61dd6da095c106c2a7eae68097c7be084b3a87ba
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872926"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288788"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de recursos entre o Azure AD Graph e o Microsoft Graph
 
@@ -34,7 +34,7 @@ Se o aplicativo usar extensões de diretório do Azure AD Graph, você poderá c
 - Atualizar valores de extensão usando PATCH
 - Remover valores de extensão usando PATCH (definido como **nulo**)
 
-O Microsoft Graph fornece uma experiência de desenvolvedor aprimorada de extensões de esquema, que atualmente não é compatível com as extensões de diretório do Azure AD Graph. Para saber mais, veja [extensões de esquema em adicionar dados personalizados](/graph/extensibility-overview#schema-extensions).
+O Microsoft Graph fornece uma experiência de desenvolvedor aprimorada de extensões de esquema, que atualmente não é compatível com as extensões de diretório do Azure AD Graph. Para saber mais, veja [extensões de esquema em adicionar dados personalizados](./extensibility-overview.md#schema-extensions).
 
 ### <a name="recommended-migration-approach"></a>Abordagem de migração recomendada
 
@@ -60,7 +60,7 @@ Para alternar para o modelo de extensão de esquema do Microsoft Graph mais rece
 
 O Azure AD Graph e o Microsoft Graph permitem que você controle alterações usando consultas.  A abordagem de alto nível é semelhante entre as duas APIs, mas a sintaxe é diferente.
 
-O Azure AD Graph chama essas consultas diferenciais.  No Microsoft Graph, eles são [consultas Delta](/graph/delta-query-overview).
+O Azure AD Graph chama essas consultas diferenciais.  No Microsoft Graph, eles são [consultas Delta](./delta-query-overview.md).
 
 A tabela a seguir destaca as principais semelhanças e diferenças:
 

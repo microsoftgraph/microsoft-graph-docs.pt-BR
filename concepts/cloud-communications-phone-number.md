@@ -4,12 +4,12 @@ description: Este artigo descreve como criar um bot alcançável por meio de um 
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 2dc201ff9423b0190daa5adf86871972cc577304
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 679ee5ac5da1a8754d7517dfb9f35bd9e0a071db
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792867"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289369"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>Gerenciar números de telefone para bots 
 
@@ -17,7 +17,7 @@ Este artigo descreve como criar um bot alcançável por meio de um número de te
 
 - **Aplicativo** – um aplicativo hospedado no Azure, também chamado de **bot**.
 
-- **Instância de aplicativo** – um objeto de usuário desabilitado que pode ser atribuído a um número de telefone que pode ser usado por um bot. Isso também é conhecido como uma [conta de recurso](https://docs.microsoft.com/microsoftteams/manage-resource-accounts). Essa é a única maneira de atribuir um número de telefone a um bot.
+- **Instância de aplicativo** – um objeto de usuário desabilitado que pode ser atribuído a um número de telefone que pode ser usado por um bot. Isso também é conhecido como uma [conta de recurso](/microsoftteams/manage-resource-accounts). Essa é a única maneira de atribuir um número de telefone a um bot.
 
 Um aplicativo pode ter várias instâncias de aplicativo, e cada locatário pode ter várias instâncias de aplicativo, conforme mostrado na imagem a seguir.
 
@@ -58,7 +58,7 @@ Quando a instância do aplicativo for criada, use o cmdlet Sync.
 
 ### <a name="assign-a-virtual-user-license-to-your-application-instance"></a>Atribuir uma licença de usuário virtual à sua instância de aplicativo
 
-Atribua uma licença de usuário virtual à sua instância de aplicativo. Para obter detalhes, consulte [licença de usuário virtual do sistema de telefonia](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/virtual-user).
+Atribua uma licença de usuário virtual à sua instância de aplicativo. Para obter detalhes, consulte [licença de usuário virtual do sistema de telefonia](/microsoftteams/teams-add-on-licensing/virtual-user).
 
 ### <a name="assign-a-phone-number-to-the-application-instance-only-tenant-admin"></a>Atribuir um número de telefone à instância do aplicativo (somente administrador de locatário)
 
@@ -88,4 +88,3 @@ Depois de cancelar a atribuição do número, você pode atribuir um número dif
 
 - [Exemplo de bot de incidentes](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples/IncidentBot). 
  - Para obter detalhes sobre como implantar o, consulte [Deploying The Sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/BetaSamples/RemoteMediaSamples/README.md#deploying-the-sample).
-

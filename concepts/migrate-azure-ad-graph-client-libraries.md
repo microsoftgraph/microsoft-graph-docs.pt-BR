@@ -4,12 +4,12 @@ description: Descreve como migrar aplicativos de API do Azure Active Directory (
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 757a8d43b3a0729e4d791c7a4f4f85640af87274
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 7fea43e808d14f2d80dc01690055257908f7fe18
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872947"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288353"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Migrar o .NET Client library use para o Microsoft Graph
 
@@ -28,7 +28,7 @@ Veja aqui algumas etapas gerais para migrar para a biblioteca de cliente .NET do
 
 ## <a name="overview-of-the-migration-steps"></a>Visão geral das etapas de migração
 
-As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para adquirir tokens de acesso para chamar o Azure AD Graph e que, por enquanto, você continuará a usar a ADAL. Mudar para o MSAL pode ser feito como uma etapa separada descrita na [migração para o MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).
+As etapas a seguir supõem que o seu aplicativo já esteja usando a ADAL para adquirir tokens de acesso para chamar o Azure AD Graph e que, por enquanto, você continuará a usar a ADAL. Mudar para o MSAL pode ser feito como uma etapa separada descrita na [migração para o MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal).
 
 1. Para adquirir um token de acesso ao Microsoft Graph, atualize o **resourceurl pela** de `https://graph.windows.net` para `https://graph.microsoft.com` .
 
@@ -157,5 +157,5 @@ A biblioteca de cliente do Azure AD Graph oferece suporte somente à plataforma 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Saiba como [implantar, testar e estender](/graph/migrate-azure-ad-graph-deploy-test-extend) aplicativos que você migrou para o Microsoft Graph.
+- Saiba como [implantar, testar e estender](./migrate-azure-ad-graph-deploy-test-extend.md) aplicativos que você migrou para o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.

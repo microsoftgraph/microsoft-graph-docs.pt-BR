@@ -4,12 +4,12 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ec60248bc43c21e476c56b768af4644298b34ae5
-ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
+ms.openlocfilehash: 888194fefef2e04f60ae802d5f8d710ba4388a97
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44413480"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288928"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
@@ -18,9 +18,9 @@ Este artigo explica como obter esses valores para os tipos internos de guia.
 
 ## <a name="custom-tabs"></a>Guias personalizadas
 
-Para usar o Microsoft Graph para configurar uma guia associada a um [provedor de guia](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) que você escreveu, identifique o `entityId`, o `contentUrl`, o `removeUrl` e o `websiteUrl` que a [interface do usuário de configuração do aplicativo fornece ao Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) e passe os mesmos valores de `entityId`, `contentUrl`, `removeUrl`, e `websiteUrl` valores para o Microsoft Graph.
+Para usar o Microsoft Graph para configurar uma guia associada a um [provedor de guia](/microsoftteams/platform/concepts/tabs/tabs-overview) que você escreveu, identifique o `entityId`, o `contentUrl`, o `removeUrl` e o `websiteUrl` que a [interface do usuário de configuração do aplicativo fornece ao Microsoft Teams](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) e passe os mesmos valores de `entityId`, `contentUrl`, `removeUrl`, e `websiteUrl` valores para o Microsoft Graph.
 
-O `teamsAppId` é igual a `id` no [esquema manifesto de aplicativo do Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
+O `teamsAppId` é igual a `id` no [esquema manifesto de aplicativo do Microsoft Teams](/microsoftteams/platform/resources/schema/manifest-schema).
 
 ## <a name="website-tabs"></a>Guias de site
 

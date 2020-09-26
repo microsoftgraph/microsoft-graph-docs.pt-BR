@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2e8f4dc8b82c496909f5b150829d9fb4e114ba59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 12d976a189b5ebc50e993b5c1203800e4afd68da
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973586"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289054"
 ---
 # <a name="relation-resource-type"></a>tipo de recurso relation
 
@@ -26,7 +26,7 @@ A relação de reutilização é semelhante à relação fixa, exceto que as alt
 
 Herda de [entidade](../resources/entity.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar relações](../api/termstore-term-list-relations.md)|coleção [Microsoft. Graph. termos. relation](../resources/termstore-relation.md)|Recupere uma lista de objetos **relation** .|
@@ -44,7 +44,7 @@ Herda de [entidade](../resources/entity.md).
 |:---|:---|:---|
 |fromTerm|[Microsoft. Graph. termos. Term](../resources/termstore-term.md)|O [termo] de da relação. O termo a partir do qual a relação é definida. Um valor nulo indicaria que a relação é diretamente com o [conjunto]. |
 |set|[Microsoft. Graph. termos. Set](../resources/termstore-set.md)|O [conjunto] em que a relação é relevante.|
-|toterm|[Microsoft. Graph. termos. Term](../resources/termstore-term.md)|O [termo] to da relação. O termo para o qual o realtionship está definido.|
+|toterm|[Microsoft. Graph. termos. Term](../resources/termstore-term.md)|O [termo] to da relação. O termo para o qual a relação é definida.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -68,7 +68,7 @@ Veja a seguir uma representação JSON do recurso.
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[loja]: ../resources/termstore-store.md
+[Guarde]: ../resources/termstore-store.md
 [terminal]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 

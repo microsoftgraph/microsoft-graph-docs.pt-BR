@@ -4,12 +4,12 @@ description: Descubra como configurar aplicativos para acessar reuniões online 
 author: frankpeng7
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 8f0738d282cfe012b90293b067c87ab7dc284f9e
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: fc96bd7958fd2729c9222bdb88b50fb04608732a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843339"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289460"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Permitir que os aplicativos acessem reuniões online em nome de um usuário
 
@@ -28,7 +28,7 @@ Para configurar uma política de acesso de aplicativo e permitir que os aplicati
     - Identifique o ID do aplicativo (cliente) do aplicativo no [portal de registro de aplicativos do Azure](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Identificar a ID de usuário (objeto) do usuário no [portal de gerenciamento de usuários do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
 
-2. Conecte-se ao Skype for Business PowerShell com a conta Adminitrator. Para obter detalhes, consulte [gerenciar o Skype for Business online com o PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
+2. Conecte-se ao Skype for Business PowerShell com a conta Adminitrator. Para obter detalhes, consulte [gerenciar o Skype for Business online com o PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
 
 3. Crie uma política de acesso de aplicativo contendo uma lista de IDs de aplicativos.
 
@@ -58,7 +58,7 @@ Os administradores podem usar cmdlets do ApplicationAccessPolicy para controlar 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 
-Para obter mais informações sobre como configurar a política de acesso a aplicativos, consulte a [referência de cmdlet do PowerShell para New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy).
+Para obter mais informações sobre como configurar a política de acesso a aplicativos, consulte a [referência de cmdlet do PowerShell para New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).
 
 ## <a name="errors"></a>Erros
 
@@ -82,8 +82,8 @@ Siga as etapas neste artigo para criar e/ou conceder uma política de acesso de 
 ## <a name="see-also"></a>Confira também
 
 - [Referência de permissões](permissions-reference.md)
-- [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy)
-- [Grant-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csapplicationaccesspolicy)
-- [Get-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/get-csapplicationaccesspolicy)
-- [Set-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/set-csapplicationaccesspolicy)
-- [Remove-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csapplicationaccesspolicy)
+- [New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)
+- [Grant-ApplicationAccessPolicy](/powershell/module/skype/grant-csapplicationaccesspolicy)
+- [Get-ApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
+- [Set-ApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
+- [Remove-ApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)

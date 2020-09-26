@@ -4,12 +4,12 @@ description: Saiba mais sobre os tipos de chamadas compatíveis e como eles são
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 8de1f5d890504d9edc63213333f1ea8c4b47282f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2a91e37dd04cf6067cae253eb19b6afee7c799b9
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871560"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289453"
 ---
 # <a name="calls-overview"></a>Visão geral das chamadas
 
@@ -20,7 +20,7 @@ Uma chamada é ponto a ponto (P2P) quando um participante está ligando diretame
 
 ![Diagrama de chamada P2P](images/communications-p2p-call.PNG)
 
-Se um usuário quiser chamar um bot, o bot não precisará de nenhuma permissão adicional para responder à chamada P2P. Para que um bot chame um usuário, ele deve ter a permissão calls. initiate. All para uma chamada P2P.
+Se um usuário quiser chamar um bot, o bot não precisará de nenhuma permissão adicional para responder à chamada P2P. Para que um bot chame um usuário, ele deve ter o Calls.Initiate. Todas as permissões para uma chamada P2P.
 
 ## <a name="group-calls"></a>Chamadas de grupo
 
@@ -39,4 +39,4 @@ No momento, os bots podem:
 ## <a name="see-also"></a>Confira também
 
 - [Visão geral da API de comunicações em nuvem](cloud-communications-concept-overview.md)
-- [Permissões para chamadas](/graph/permissions-reference#calls-permissions)
+- [Permissões para chamadas](./permissions-reference.md#calls-permissions)

@@ -4,12 +4,12 @@ description: Descreve o registro de aplicativo, permissão e migração de conse
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: f7508296ff7fc4e78f5d39f777390057d2570109
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 8cca43199d8549841087a84d1bd275e38f09efdb
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872968"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288340"
 ---
 # <a name="review-app-registration-permissions-and-consent"></a>Revisar o registro, as permissões e o consentimento do aplicativo
 
@@ -25,7 +25,7 @@ Para qualquer atualização de aplicativos, há três áreas que devem ser consi
 
     Por exemplo, se o aplicativo existente tiver as permissões _User. Read. All_ e _Group. Read. All_ , essas permissões também serão implicitamente concedidas ao seu aplicativo atualizado para o Microsoft Graph.
 
-    Se sua atualização também Incudes o uso de recursos ou recursos que não estão disponíveis para o Azure AD Graph, provavelmente você precisará solicitar permissões para esses novos recursos. Se esse for o caso, você pode mudar seu aplicativo para usar o MSAL e o ponto de extremidade V2 e solicitar o consentimento adicional/incremental dinamicamente. Encontre mais detalhes sobre a mudança para o MSAL em [revisar alterações na biblioteca de autenticação de aplicativos](/graph/migrate-azure-ad-graph-authentication-library).
+    Se sua atualização também Incudes o uso de recursos ou recursos que não estão disponíveis para o Azure AD Graph, provavelmente você precisará solicitar permissões para esses novos recursos. Se esse for o caso, você pode mudar seu aplicativo para usar o MSAL e o ponto de extremidade V2 e solicitar o consentimento adicional/incremental dinamicamente. Encontre mais detalhes sobre a mudança para o MSAL em [revisar alterações na biblioteca de autenticação de aplicativos](./migrate-azure-ad-graph-authentication-library.md).
 
 - **Consentimento**: os usuários finais podem continuar usando o aplicativo sem precisar conceder o consentimento novamente.
 

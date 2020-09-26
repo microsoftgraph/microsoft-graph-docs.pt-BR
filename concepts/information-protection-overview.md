@@ -3,17 +3,17 @@ title: Visão geral da rotulação de proteção de informações da Microsoft
 description: O rótulo de proteção de informações da Microsoft ajuda as organizações a classificar, identificar e proteger os dados com base nos rótulos de confidencialidade do centro de conformidade e segurança do Office 365.
 author: tommoser
 localization_priority: Normal
-ms.prod: microsoft.informationprotection
-ms.openlocfilehash: d9221c5b963a5661f75b3bb746aca7fc5c5ec9e6
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.prod: security
+ms.openlocfilehash: 599e395d82cf74a22a9c26ceab066bdf53176e0c
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897740"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288900"
 ---
 # <a name="information-protection-overview"></a>Visão geral da proteção de informações
 
-A proteção de informações da Microsoft ajuda as organizações a classificar, identificar e proteger os dados com base na [confidencialidade](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). 
+A proteção de informações da Microsoft ajuda as organizações a classificar, identificar e proteger os dados com base na [confidencialidade](/Office365/SecurityCompliance/sensitivity-labels). 
 
 As organizações usam rótulos para ajudar:
 
@@ -29,7 +29,7 @@ Mais de um milhão de organizações com dezenas de milhões de usuários usam a
 
 ### <a name="label-information-in-line-of-business-applications"></a>Informações de rótulo em aplicativos de linha de negócios
 
-Os desenvolvedores corporativos usam a proteção de informações da Microsoft para rotular e proteger informações confidenciais do cliente sobre exportação de aplicativos de linha de negócios para garantir a segurança das informações do cliente. A conexão de seus aplicativos ao ecossistema de proteção de informações da Microsoft permite que os aplicativos apliquem, atualizem e excluam [Rótulos de confidencialidade](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels) em seus próprios dados de aplicativo, sem a sobrecarga da integração de um SDK completo.
+Os desenvolvedores corporativos usam a proteção de informações da Microsoft para rotular e proteger informações confidenciais do cliente sobre exportação de aplicativos de linha de negócios para garantir a segurança das informações do cliente. A conexão de seus aplicativos ao ecossistema de proteção de informações da Microsoft permite que os aplicativos apliquem, atualizem e excluam [Rótulos de confidencialidade](/Office365/SecurityCompliance/sensitivity-labels) em seus próprios dados de aplicativo, sem a sobrecarga da integração de um SDK completo.
 
 ## <a name="what-can-i-do-with-microsoft-information-protection-label-apis-in-microsoft-graph"></a>O que posso fazer com as APIs de rótulo de proteção de informações da Microsoft no Microsoft Graph? 
 

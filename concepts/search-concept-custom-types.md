@@ -4,16 +4,16 @@ description: Você pode usar a API de pesquisa da Microsoft para importar dados 
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: b125b8f923e941ad73d5c578e99a67fdd9ea9eea
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: ef245e88e635e888c3a5e2eeafb61497e804072f
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192599"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288179"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Usar a API de pesquisa da Microsoft para Pesquisar tipos personalizados importados usando conectores do Microsoft Graph
 
-Use a API de pesquisa da Microsoft para pesquisar conteúdo ingerido e indexado pelos [conectores do Microsoft Graph](https://docs.microsoft.com/microsoftsearch/connectors-overview). O conteúdo é importado por meio de [conectores internos](https://docs.microsoft.com/microsoftsearch/connectors-gallery) fornecidos pela Microsoft ou por meio de conectores personalizados implementados usando a [API de inclusão de conectores do Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
+Use a API de pesquisa da Microsoft para pesquisar conteúdo ingerido e indexado pelos [conectores do Microsoft Graph](/microsoftsearch/connectors-overview). O conteúdo é importado por meio de [conectores internos](/microsoftsearch/connectors-gallery) fornecidos pela Microsoft ou por meio de conectores personalizados implementados usando a [API de inclusão de conectores do Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -35,7 +35,7 @@ TODOSEARCHAPI - Bug 1653398
 
 ## <a name="example"></a>Exemplo
 
-Neste exemplo, o conteúdo do banco de dados [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) foi incluído usando o conector interno do Azure SQL.
+Neste exemplo, o conteúdo do banco de dados [AdventureWorks](/sql/samples/adventureworks-install-configure) foi incluído usando o conector interno do Azure SQL.
 
 ### <a name="request"></a>Solicitação
 

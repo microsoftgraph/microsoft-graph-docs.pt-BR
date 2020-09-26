@@ -3,16 +3,16 @@ title: Criar uma Web Part do SharePoint com o kit de ferramentas do Microsoft Gr
 description: Introdução ao uso do kit de ferramentas do Microsoft Graph para criar uma Web Part do SharePoint.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: bdc2d6679c145f3f50d908bbf0e4e417234c4dc9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b2ae71a8fb37e088c0497716fdf4d1cdc42f41ef
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059646"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288522"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>Criar uma Web Part do SharePoint com o kit de ferramentas do Microsoft Graph
 
-Este tópico aborda como usar os componentes do Microsoft Graph Toolkit em uma [Web Part do lado do cliente do SharePoint](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Introdução envolve as seguintes etapas:
+Este tópico aborda como usar os componentes do Microsoft Graph Toolkit em uma [Web Part do lado do cliente do SharePoint](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Introdução envolve as seguintes etapas:
 
 1. Configurar seu ambiente de desenvolvimento e criar uma Web Part.
 2. Atualize o TypeScript em seu projeto.
@@ -25,7 +25,7 @@ Este tópico aborda como usar os componentes do Microsoft Graph Toolkit em uma [
 
 ## <a name="set-up-your-sharepoint-framework-development-environment-and-create-a-new-web-part"></a>Configurar seu ambiente de desenvolvimento da estrutura do SharePoint e criar uma nova Web Part
 
-Siga as etapas para [configurar seu ambiente de desenvolvimento da estrutura do SharePoint](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) e, em seguida, [criar uma nova Web Part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
+Siga as etapas para [configurar seu ambiente de desenvolvimento da estrutura do SharePoint](/sharepoint/dev/spfx/set-up-your-development-environment) e, em seguida, [criar uma nova Web Part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
 
 ## <a name="update-typescript-in-your-project"></a>Atualizar TypeScript em seu projeto
 
@@ -191,10 +191,8 @@ gulp serve
 
 O Workbench hospedado será aberto automaticamente no navegador. Adicione sua Web Part à página e você deverá ver sua Web Part com os componentes do Microsoft Graph Toolkit em ação! Contanto que o comando Gulp sirva ainda esteja em execução no seu console, você pode continuar a fazer edições no seu código e, em seguida, apenas atualizar seu navegador para ver suas alterações.
 
-## <a name="next-steps"></a>Próximas Etapas
+## <a name="next-steps"></a>Próximas etapas
 - Confira este tutorial passo a passo sobre a [criação de uma Web Part do SharePoint](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-9-microsoft-graph-toolkit-sharepoint-provider/).
 - Experimente os componentes no [playground](https://mgt.dev).
 - Faça uma pergunta sobre o [estouro de pilha](https://aka.ms/mgt-question).
 - Informe bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).
-
-

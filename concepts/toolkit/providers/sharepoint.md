@@ -3,12 +3,12 @@ title: Provedor do SharePoint
 description: Use o provedor do SharePoint dentro de suas Web Parts do SharePoint para poder alimentar os componentes com o acesso ao Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 98694291203c6b55d72e22503897d9515960d054
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1681dd07c93cfb419fb8aa61263432eaebb099dd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036811"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288494"
 ---
 # <a name="sharepoint-provider"></a>Provedor do SharePoint
 
@@ -50,7 +50,7 @@ Para obter um exemplo que mostra como usar os vários componentes em suas Web Pa
 
 ## <a name="test-in-the-workbench"></a>Teste no Workbench
 
-Se você estiver apenas começando a usar as Web Parts do SharePoint, poderá seguir as orientações [Compilar sua primeira Web Part](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) .
+Se você estiver apenas começando a usar as Web Parts do SharePoint, poderá seguir as orientações [Compilar sua primeira Web Part](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) .
 
 Depois de criar uma Web Part e estiver pronto para usar os componentes, você precisará certificar-se de que sua Web Part tem as permissões corretas para acessar o Microsoft Graph. Para obter detalhes, consulte [consuma Microsoft Graph na estrutura do SharePoint](/sharepoint/dev/spfx/use-aad-tutorial).
 

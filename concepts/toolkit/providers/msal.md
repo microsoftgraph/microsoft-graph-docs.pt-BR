@@ -3,12 +3,12 @@ title: Provedor MSAL
 description: O provedor MSAL usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e66434a1000667891304db5f0cff78c4e8b38152
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: c3c921cfa473e2001d2a150096741d2bddf39f10
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843153"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288158"
 ---
 # <a name="msal-provider"></a>Provedor MSAL
 
@@ -68,7 +68,7 @@ interface MsalConfig {
 
 Você deve fornecer um `clientId` (para criar um novo `UserAgentApplication` ).
 
-Para saber mais sobre MSAL.js e para opções adicionais que você pode usar ao inicializar a biblioteca do MSAL, consulte a [documentação do MSAL](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications).
+Para saber mais sobre MSAL.js e para opções adicionais que você pode usar ao inicializar a biblioteca do MSAL, consulte a [documentação do MSAL](/azure/active-directory/develop/msal-js-initializing-client-applications).
 
 ## <a name="creating-an-appclient-id"></a>Criar uma ID de aplicativo/cliente
 

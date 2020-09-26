@@ -3,12 +3,12 @@ title: 'Criar aplicativos para diversos dispositivos com a tecnologia do Project
 description: 'Você pode usar o Project Rome para criar experiências que abrangem vários dispositivos e plataformas sem complicações, reduzindo conflitos para usuários e ajudando a promover o engajamento com o aplicativo. Para que aplicativos compartilhem dados entre vários dispositivos e plataformas usando as APIs do Project Rome, é necessário configurar um aplicativo para diversos dispositivos que inclua informações sobre os aplicativos específicos de plataforma. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 93f171278eb892cb31712738c0e2249eb7d2f353
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 7c1b93afa9f239d170475fea776bdc89e7170b0d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37969847"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289341"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>Criar aplicativos para diversos dispositivos com a tecnologia do Project Rome 
 
@@ -70,14 +70,14 @@ Você precisará coletar cada uma das IDs de aplicativo específicas da platafor
 
 Para encontrar as IDs:
 
-* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** – para saber mais, veja [Alterar o nome do pacote](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** – para saber mais, veja [Pacote](https://developer.apple.com/documentation/foundation/bundle) e [Propriedades obrigatórias, localizáveis e editáveis](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – entre no [portal de registro do Aplicativo](https://apps.dev.microsoft.com). Você pode exibir a ID de aplicativo/ID de cliente para qualquer um de seus aplicativos. O Live SDK (valores hexadecimais) e os Identificadores de aplicativos convergentes (GUIDs) têm suporte.   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>Etapa 3: Configurar suporte para a conta Microsoft ou o Azure AD
-Para habilitar experiências entre dispositivos, os usuários do seu aplicativo devem entrar com uma  [conta Microsoft](https://account.microsoft.com/account)  ou uma conta do  [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD). Você fornecerá IDs do cliente/aplicativo para oferecer suporte à autenticação como parte de sua configuração de aplicativo entre dispositivos para permitir o suporte entre plataformas. É possível fornecer até 10 instâncias.
+Para habilitar experiências entre dispositivos, os usuários do seu aplicativo devem entrar com uma  [conta Microsoft](https://account.microsoft.com/account)  ou uma conta do  [Azure Active Directory](/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD). Você fornecerá IDs do cliente/aplicativo para oferecer suporte à autenticação como parte de sua configuração de aplicativo entre dispositivos para permitir o suporte entre plataformas. É possível fornecer até 10 instâncias.
 
 Você pode localizar as IDs de aplicativo/cliente existentes ou provisionar novas entrando no [portal de registro do aplicativo](https://apps.dev.microsoft.com) com sua conta de desenvolvedor. Quando você entra no portal, é possível exibir a ID do cliente/aplicativo de qualquer um dos aplicativos. O Live SDK (valores hexadecimais) e os identificadores de aplicativos convergentes (GUIDs) têm suporte.   
 
@@ -96,7 +96,7 @@ Se você tiver optado por configurar o aplicativo entre dispositivos no Centro d
 Para encontrar as IDs:
 
 * 
-  **Serviço de Notificação do Windows** – veja [Registrar seu aplicativo e receber as credenciais para o serviço de nuvem](https://docs.microsoft.com/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) e o [Portal de registro do aplicativo](https://apps.dev.microsoft.com).
+  **Serviço de Notificação do Windows** – veja [Registrar seu aplicativo e receber as credenciais para o serviço de nuvem](/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) e o [Portal de registro do aplicativo](https://apps.dev.microsoft.com).
 * **Apple Push Notification Service** – confira [Visão geral de APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** – veja [Mensagens em nuvem Firebase](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -143,8 +143,8 @@ O exemplo a seguir inclui todos os identificadores de plataforma válidos aceito
 
 Para encontrar as IDs:
 
-* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** – para saber mais, veja [Alterar o nome do pacote](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** – para saber mais, veja [Pacote](https://developer.apple.com/documentation/foundation/bundle) e [Propriedades obrigatórias, localizáveis e editáveis](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – entre no [portal de registro do Aplicativo](https://apps.dev.microsoft.com). Você pode exibir a ID de aplicativo/ID de cliente para qualquer um de seus aplicativos. O Live SDK (valores hexadecimais) e os Identificadores de aplicativos convergentes (GUIDs) têm suporte.   
@@ -188,7 +188,7 @@ Se estiver usando as APIs no lado do cliente para Windows, iOS ou Android, será
 Se estiver usando a API do feed de atividades no Microsoft Graph, seu valor de host precisa ser fornecido na propriedade **activitySourceHost**. Para saber mais, veja [tipo de recurso de atividade](/graph/api/resources/projectrome-activity?view=graph-rest-1.0).
 
 ### <a name="universal-windows-apps"></a>Aplicativos Universais do Windows
-Se tiver um aplicativo do Windows, será necessário configurar o valor do host no manifesto do aplicativo antes de publicar os dados. Para saber mais, veja [uap5:UserActivity](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
+Se tiver um aplicativo do Windows, será necessário configurar o valor do host no manifesto do aplicativo antes de publicar os dados. Para saber mais, veja [uap5:UserActivity](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
 
 <!-- Removing until we add the details.
 ### iOS & Android apps
@@ -206,4 +206,4 @@ A seguir estão alguns problemas comuns que podem acontecer com a API do feed de
 A API do feed de atividades recebe a configuração de aplicativo entre dispositivos de forma assíncrona de forma que os erros de configuração possam não estar prontamente aparentes ao publicar as atividades de usuário. Caso o serviço falhe na recepção do arquivo JSON, seja devido a TLS ou a um erro de formatação, essas atividades publicadas serão atribuídas apenas à ID do aplicativo que publicou a atividade. No caso de atividades publicadas pelo Microsoft Graph, esta é a ID de aplicativo de conta da Microsoft usada para autorizar solicitações do Microsoft Graph. No caso de atividades publicadas por APIs do lado do cliente, activity.applicationId registrará apenas a ID do aplicativo específico da plataforma que publicou a atividade. Isso impedirá operações de leitura e gravação em atividades de outros aplicativos específicos da plataforma identificados na configuração de aplicativo entre dispositivos. 
 
 ### <a name="platform-will-not-initialize-on-android-or-ios"></a>A plataforma não inicializa no Android ou no iOS
-A API de retransmissão do dispositivo no Android ou iOS precisa da configuração do aplicativo entre dispositivos para fazer instância das conexões no aplicativo Android ou iOS. Caso a plataforma não seja inicializada com êxito, certifique-se de ter identificado corretamente as IDs de aplicativo da conta Microsoft e as credenciais de notificação por push usadas para configurar seu aplicativo entre dispositivos no Centro de Desenvolvimento do Windows e configure o valor de host dos aplicativos cliente com o domínio que identifica o aplicativo entre dispositivos. 
+A API de retransmissão do dispositivo no Android ou iOS precisa da configuração do aplicativo entre dispositivos para fazer instância das conexões no aplicativo Android ou iOS. Caso a plataforma não seja inicializada com êxito, certifique-se de ter identificado corretamente as IDs de aplicativo da conta Microsoft e as credenciais de notificação por push usadas para configurar seu aplicativo entre dispositivos no Centro de Desenvolvimento do Windows e configure o valor de host dos aplicativos cliente com o domínio que identifica o aplicativo entre dispositivos.

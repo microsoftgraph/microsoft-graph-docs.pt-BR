@@ -4,12 +4,12 @@ description: Os registros de chamadas fornecem informações sobre as chamadas e
 author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 43d41184bbb2af9c63b2818f91ef578579df4119
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 3abe4cb576a546089febce20da10fa8f9409eb7b
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509592"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289446"
 ---
 # <a name="call-records-overview"></a>Visão geral dos registros de chamadas
 
@@ -33,4 +33,4 @@ As organizações que usam o Microsoft Teams para se conectar à PSTN (rede tele
 
 ## <a name="see-also"></a>Confira também
 
-- [Permissões dos registros de chamadas](/graph/permissions-reference#call-records-permissions)
+- [Permissões dos registros de chamadas](./permissions-reference.md#call-records-permissions)

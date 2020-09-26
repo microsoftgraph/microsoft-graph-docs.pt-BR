@@ -3,12 +3,12 @@ title: Componente de seletor de pessoas
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 2e7d03a0c6728d3ff775282343a847ba88afbf42
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: eca2ad4c0b56ff3475480a36eab2e943e3b6d9e4
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408068"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288613"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Componente de seletor de pessoas no Microsoft Graph Toolkit
 
@@ -57,7 +57,7 @@ Você pode preencher dados de pessoas selecionados executando um dos seguintes p
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
     ```
 
-- Usando o `selectUsersById()` método, que aceita uma matriz de IDs de [usuário](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) do Microsoft Graph para localizar os detalhes do usuário associado para seleção.
+- Usando o `selectUsersById()` método, que aceita uma matriz de IDs de [usuário](/graph/api/resources/users?view=graph-rest-1.0) do Microsoft Graph para localizar os detalhes do usuário associado para seleção.
 
      >**Observação:** Se nenhum usuário for localizado para um `id` , nenhum dado será renderizado para isso `id` .
 
@@ -105,7 +105,7 @@ mgt-people-picker {
 
 ## <a name="templates"></a>Modelos
 
- `mgt-people-picker`o dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
+ `mgt-people-picker` o dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -136,7 +136,7 @@ Este componente usa as seguintes APIs e permissões do Microsoft Graph.
 | [/Users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
 | [/groups](/group-list?view=graph-rest-beta)  | Group.Read.All |
 | [/groups/ \$ {GroupId}/Members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
-| [/Users/$ {userprincípioname}](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
+| [/Users/$ {userprincípioname} ](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
 
 ## <a name="authentication"></a>Autenticação
 
