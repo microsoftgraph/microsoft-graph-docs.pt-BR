@@ -5,46 +5,46 @@ author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a144f0dbc0c6b57fb48c87b4ad8f5c5c446618aa
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 6fe5ce68bde32746e17d968f7e34a190c41e1bca
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643769"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289502"
 ---
-# <a name="configure-provisioning-using-microsoft-graph-apis"></a><span data-ttu-id="e5d14-103">Configurar o provisionamento usando as APIs do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="e5d14-103">Configure provisioning using Microsoft Graph APIs</span></span>
+# <a name="configure-provisioning-using-microsoft-graph-apis"></a><span data-ttu-id="88928-103">Configurar o provisionamento usando as APIs do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="88928-103">Configure provisioning using Microsoft Graph APIs</span></span>
 
-<span data-ttu-id="e5d14-104">O portal do Azure é uma maneira conveniente de configurar o provisionamento para aplicativos individuais, um de cada vez.</span><span class="sxs-lookup"><span data-stu-id="e5d14-104">The Azure portal is a convenient way to configure provisioning for individual apps one at a time.</span></span> <span data-ttu-id="e5d14-105">Mas se você estiver criando vários — ou até mesmo centenas, de instâncias de um aplicativo, pode ser mais fácil automatizar a criação e a configuração de aplicativos com as APIs do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="e5d14-105">But if you're creating several—or even hundreds—of instances of an application, it can be easier to automate app creation and configuration with the Microsoft Graph APIs.</span></span> <span data-ttu-id="e5d14-106">Este artigo descreve como automatizar a configuração de provisionamento por meio de APIs.</span><span class="sxs-lookup"><span data-stu-id="e5d14-106">This article outlines how to automate provisioning configuration through APIs.</span></span> <span data-ttu-id="e5d14-107">Esse método é comumente usado para aplicativos como o [Amazon Web Services](https://docs.microsoft.com/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso).</span><span class="sxs-lookup"><span data-stu-id="e5d14-107">This method is commonly used for applications like [Amazon Web Services](https://docs.microsoft.com/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso).</span></span>
+<span data-ttu-id="88928-104">O portal do Azure é uma maneira conveniente de configurar o provisionamento para aplicativos individuais, um de cada vez.</span><span class="sxs-lookup"><span data-stu-id="88928-104">The Azure portal is a convenient way to configure provisioning for individual apps one at a time.</span></span> <span data-ttu-id="88928-105">Mas se você estiver criando vários — ou até mesmo centenas, de instâncias de um aplicativo, pode ser mais fácil automatizar a criação e a configuração de aplicativos com as APIs do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="88928-105">But if you're creating several—or even hundreds—of instances of an application, it can be easier to automate app creation and configuration with the Microsoft Graph APIs.</span></span> <span data-ttu-id="88928-106">Este artigo descreve como automatizar a configuração de provisionamento por meio de APIs.</span><span class="sxs-lookup"><span data-stu-id="88928-106">This article outlines how to automate provisioning configuration through APIs.</span></span> <span data-ttu-id="88928-107">Esse método é comumente usado para aplicativos como o [Amazon Web Services](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso).</span><span class="sxs-lookup"><span data-stu-id="88928-107">This method is commonly used for applications like [Amazon Web Services](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso).</span></span>
 
-<span data-ttu-id="e5d14-108">**Visão geral das etapas para usar as APIs do Microsoft Graph para automatizar a configuração de provisionamento**</span><span class="sxs-lookup"><span data-stu-id="e5d14-108">**Overview of steps for using Microsoft Graph APIs to automate provisioning configuration**</span></span>
+<span data-ttu-id="88928-108">**Visão geral das etapas para usar as APIs do Microsoft Graph para automatizar a configuração de provisionamento**</span><span class="sxs-lookup"><span data-stu-id="88928-108">**Overview of steps for using Microsoft Graph APIs to automate provisioning configuration**</span></span>
 
 
-|<span data-ttu-id="e5d14-109">Etapa</span><span class="sxs-lookup"><span data-stu-id="e5d14-109">Step</span></span>  |<span data-ttu-id="e5d14-110">Detalhes</span><span class="sxs-lookup"><span data-stu-id="e5d14-110">Details</span></span>  |
+|<span data-ttu-id="88928-109">Etapa</span><span class="sxs-lookup"><span data-stu-id="88928-109">Step</span></span>  |<span data-ttu-id="88928-110">Detalhes</span><span class="sxs-lookup"><span data-stu-id="88928-110">Details</span></span>  |
 |---------|---------|
-|[<span data-ttu-id="e5d14-111">Etapa 1. Criar o aplicativo de galeria</span><span class="sxs-lookup"><span data-stu-id="e5d14-111">Step 1. Create the gallery application</span></span>](#step-1-create-the-gallery-application)     |<span data-ttu-id="e5d14-112">Entrar no cliente da API</span><span class="sxs-lookup"><span data-stu-id="e5d14-112">Sign-in to the API client</span></span> <br> <span data-ttu-id="e5d14-113">Recuperar o modelo de aplicativo de galeria</span><span class="sxs-lookup"><span data-stu-id="e5d14-113">Retrieve the gallery application template</span></span> <br> <span data-ttu-id="e5d14-114">Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="e5d14-114">Create the gallery application</span></span>         |
-|[<span data-ttu-id="e5d14-115">Etapa 2. Criar trabalho de provisionamento com base no modelo</span><span class="sxs-lookup"><span data-stu-id="e5d14-115">Step 2. Create provisioning job based on template</span></span>](#step-2-create-the-provisioning-job-based-on-the-template)     |<span data-ttu-id="e5d14-116">Recuperar o modelo para o conector de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-116">Retrieve the template for the provisioning connector</span></span> <br> <span data-ttu-id="e5d14-117">Criar o trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-117">Create the provisioning job</span></span>         |
-|[<span data-ttu-id="e5d14-118">Etapa 3. Autorizar o acesso</span><span class="sxs-lookup"><span data-stu-id="e5d14-118">Step 3. Authorize access</span></span>](#step-3-authorize-access)     |<span data-ttu-id="e5d14-119">Testar a conexão com o aplicativo</span><span class="sxs-lookup"><span data-stu-id="e5d14-119">Test the connection to the application</span></span> <br> <span data-ttu-id="e5d14-120">Salvar as credenciais</span><span class="sxs-lookup"><span data-stu-id="e5d14-120">Save the credentials</span></span>         |
-|[<span data-ttu-id="e5d14-121">Etapa 4. Iniciar o trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-121">Step 4. Start provisioning job</span></span>](#step-4-start-the-provisioning-job)     |<span data-ttu-id="e5d14-122">Iniciar o trabalho</span><span class="sxs-lookup"><span data-stu-id="e5d14-122">Start the job</span></span>         |
-|[<span data-ttu-id="e5d14-123">Etapa 5. Monitorar provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-123">Step 5. Monitor provisioning</span></span>](#step-5-monitor-provisioning)     |<span data-ttu-id="e5d14-124">Verificar o status do trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-124">Check the status of the provisioning job</span></span> <br> <span data-ttu-id="e5d14-125">Recuperar os logs de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-125">Retrieve the provisioning logs</span></span>         |
+|[<span data-ttu-id="88928-111">Etapa 1. Criar o aplicativo de galeria</span><span class="sxs-lookup"><span data-stu-id="88928-111">Step 1. Create the gallery application</span></span>](#step-1-create-the-gallery-application)     |<span data-ttu-id="88928-112">Entrar no cliente da API</span><span class="sxs-lookup"><span data-stu-id="88928-112">Sign-in to the API client</span></span> <br> <span data-ttu-id="88928-113">Recuperar o modelo de aplicativo de galeria</span><span class="sxs-lookup"><span data-stu-id="88928-113">Retrieve the gallery application template</span></span> <br> <span data-ttu-id="88928-114">Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="88928-114">Create the gallery application</span></span>         |
+|[<span data-ttu-id="88928-115">Etapa 2. Criar trabalho de provisionamento com base no modelo</span><span class="sxs-lookup"><span data-stu-id="88928-115">Step 2. Create provisioning job based on template</span></span>](#step-2-create-the-provisioning-job-based-on-the-template)     |<span data-ttu-id="88928-116">Recuperar o modelo para o conector de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-116">Retrieve the template for the provisioning connector</span></span> <br> <span data-ttu-id="88928-117">Criar o trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-117">Create the provisioning job</span></span>         |
+|[<span data-ttu-id="88928-118">Etapa 3. Autorizar o acesso</span><span class="sxs-lookup"><span data-stu-id="88928-118">Step 3. Authorize access</span></span>](#step-3-authorize-access)     |<span data-ttu-id="88928-119">Testar a conexão com o aplicativo</span><span class="sxs-lookup"><span data-stu-id="88928-119">Test the connection to the application</span></span> <br> <span data-ttu-id="88928-120">Salvar as credenciais</span><span class="sxs-lookup"><span data-stu-id="88928-120">Save the credentials</span></span>         |
+|[<span data-ttu-id="88928-121">Etapa 4. Iniciar o trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-121">Step 4. Start provisioning job</span></span>](#step-4-start-the-provisioning-job)     |<span data-ttu-id="88928-122">Iniciar o trabalho</span><span class="sxs-lookup"><span data-stu-id="88928-122">Start the job</span></span>         |
+|[<span data-ttu-id="88928-123">Etapa 5. Monitorar provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-123">Step 5. Monitor provisioning</span></span>](#step-5-monitor-provisioning)     |<span data-ttu-id="88928-124">Verificar o status do trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-124">Check the status of the provisioning job</span></span> <br> <span data-ttu-id="88928-125">Recuperar os logs de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-125">Retrieve the provisioning logs</span></span>         |
 
-## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="e5d14-126">Etapa 1: Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="e5d14-126">Step 1: Create the gallery application</span></span>
+## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="88928-126">Etapa 1: Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="88928-126">Step 1: Create the gallery application</span></span>
 
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="e5d14-127">Entrar no Microsoft Graph Explorer (recomendado), no Postman ou em qualquer outro cliente de API que você usa</span><span class="sxs-lookup"><span data-stu-id="e5d14-127">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
+### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="88928-127">Entrar no Microsoft Graph Explorer (recomendado), no Postman ou em qualquer outro cliente de API que você usa</span><span class="sxs-lookup"><span data-stu-id="88928-127">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
 
-1. <span data-ttu-id="e5d14-128">Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="e5d14-128">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
-1. <span data-ttu-id="e5d14-129">Selecione o botão "entrar com a Microsoft" e entre usando as credenciais de administrador global do Azure AD ou de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="e5d14-129">Select the "Sign-In with Microsoft" button and sign in using Azure AD global administrator or App Admin credentials.</span></span>
+1. <span data-ttu-id="88928-128">Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="88928-128">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
+1. <span data-ttu-id="88928-129">Selecione o botão "entrar com a Microsoft" e entre usando as credenciais de administrador global do Azure AD ou de aplicativos.</span><span class="sxs-lookup"><span data-stu-id="88928-129">Select the "Sign-In with Microsoft" button and sign in using Azure AD global administrator or App Admin credentials.</span></span>
 
     ![Entrada de gráfico](./images/application-provisioning-configure-api/wd_export_02.png)
 
-1. <span data-ttu-id="e5d14-131">Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.</span><span class="sxs-lookup"><span data-stu-id="e5d14-131">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
+1. <span data-ttu-id="88928-131">Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.</span><span class="sxs-lookup"><span data-stu-id="88928-131">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
 
-### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="e5d14-132">Recuperar o identificador de modelos de aplicativo de galeria</span><span class="sxs-lookup"><span data-stu-id="e5d14-132">Retrieve the gallery application template identifier</span></span>
-<span data-ttu-id="e5d14-133">Os aplicativos na galeria do aplicativo do Azure AD têm um [modelo de aplicativo](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) cada um, que descreve os metadados para esse aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e5d14-133">Applications in the Azure AD application gallery each have an [application template](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) that describes the metadata for that application.</span></span> <span data-ttu-id="e5d14-134">Usando esse modelo, você pode criar uma instância do aplicativo e da entidade de serviço no locatário para gerenciamento.</span><span class="sxs-lookup"><span data-stu-id="e5d14-134">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
+### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="88928-132">Recuperar o identificador de modelos de aplicativo de galeria</span><span class="sxs-lookup"><span data-stu-id="88928-132">Retrieve the gallery application template identifier</span></span>
+<span data-ttu-id="88928-133">Os aplicativos na galeria do aplicativo do Azure AD têm um [modelo de aplicativo](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) cada um, que descreve os metadados para esse aplicativo.</span><span class="sxs-lookup"><span data-stu-id="88928-133">Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application.</span></span> <span data-ttu-id="88928-134">Usando esse modelo, você pode criar uma instância do aplicativo e da entidade de serviço no locatário para gerenciamento.</span><span class="sxs-lookup"><span data-stu-id="88928-134">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e5d14-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5d14-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88928-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88928-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="e5d14-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5d14-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="88928-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="88928-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
@@ -53,22 +53,22 @@ ms.locfileid: "46643769"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
-# <a name="c"></a>[<span data-ttu-id="e5d14-137">C#</span><span class="sxs-lookup"><span data-stu-id="e5d14-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="88928-137">C#</span><span class="sxs-lookup"><span data-stu-id="88928-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e5d14-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5d14-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="88928-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88928-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e5d14-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5d14-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="88928-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88928-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="e5d14-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5d14-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88928-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="88928-140">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,14 +105,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="create-the-gallery-application"></a><span data-ttu-id="e5d14-141">Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="e5d14-141">Create the gallery application</span></span>
+### <a name="create-the-gallery-application"></a><span data-ttu-id="88928-141">Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="88928-141">Create the gallery application</span></span>
 
-<span data-ttu-id="e5d14-142">Use a ID de modelo recuperada para seu aplicativo na última etapa para [criar uma instância](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http) do aplicativo e da entidade de serviço em seu locatário.</span><span class="sxs-lookup"><span data-stu-id="e5d14-142">Use the template ID retrieved for your application in the last step to [create an instance](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http) of the application and service principal in your tenant.</span></span>
+<span data-ttu-id="88928-142">Use a ID de modelo recuperada para seu aplicativo na última etapa para [criar uma instância](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) do aplicativo e da entidade de serviço em seu locatário.</span><span class="sxs-lookup"><span data-stu-id="88928-142">Use the template ID retrieved for your application in the last step to [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e5d14-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5d14-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88928-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88928-143">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="e5d14-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5d14-144">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="88928-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="88928-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "applicationtemplate_instantiate"
@@ -126,22 +126,22 @@ Content-type: application/json
   "displayName": "AWS Contoso"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e5d14-145">C#</span><span class="sxs-lookup"><span data-stu-id="e5d14-145">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="88928-145">C#</span><span class="sxs-lookup"><span data-stu-id="88928-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e5d14-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5d14-146">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="88928-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88928-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e5d14-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5d14-147">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="88928-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88928-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="e5d14-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5d14-148">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88928-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="88928-148">Response</span></span>
 
 
 <!-- {
@@ -188,16 +188,16 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-create-the-provisioning-job-based-on-the-template"></a><span data-ttu-id="e5d14-149">Etapa 2: criar o trabalho de provisionamento com base no modelo</span><span class="sxs-lookup"><span data-stu-id="e5d14-149">Step 2: Create the provisioning job based on the template</span></span>
+## <a name="step-2-create-the-provisioning-job-based-on-the-template"></a><span data-ttu-id="88928-149">Etapa 2: criar o trabalho de provisionamento com base no modelo</span><span class="sxs-lookup"><span data-stu-id="88928-149">Step 2: Create the provisioning job based on the template</span></span>
 
-### <a name="retrieve-the-template-for-the-provisioning-connector"></a><span data-ttu-id="e5d14-150">Recuperar o modelo para o conector de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-150">Retrieve the template for the provisioning connector</span></span>
+### <a name="retrieve-the-template-for-the-provisioning-connector"></a><span data-ttu-id="88928-150">Recuperar o modelo para o conector de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-150">Retrieve the template for the provisioning connector</span></span>
 
-<span data-ttu-id="e5d14-151">Os aplicativos da Galeria habilitados para provisionamento têm modelos para simplificar a configuração.</span><span class="sxs-lookup"><span data-stu-id="e5d14-151">Applications in the gallery that are enabled for provisioning have templates to streamline configuration.</span></span> <span data-ttu-id="e5d14-152">Use a solicitação abaixo para [recuperar o modelo para a configuração de provisionamento](https://docs.microsoft.com/graph/api/synchronization-synchronizationtemplate-list?view=graph-rest-beta&tabs=http).</span><span class="sxs-lookup"><span data-stu-id="e5d14-152">Use the request below to [retrieve the template for the provisioning configuration](https://docs.microsoft.com/graph/api/synchronization-synchronizationtemplate-list?view=graph-rest-beta&tabs=http).</span></span> <span data-ttu-id="e5d14-153">Observe que você precisará fornecer a ID.</span><span class="sxs-lookup"><span data-stu-id="e5d14-153">Note that you will need to provide the ID.</span></span> <span data-ttu-id="e5d14-154">A ID se refere ao recurso anterior, que neste caso é o recurso de servicePrincipalName.</span><span class="sxs-lookup"><span data-stu-id="e5d14-154">The ID refers to the preceding resource, which in this case is the servicePrincipal resource.</span></span> 
+<span data-ttu-id="88928-151">Os aplicativos da Galeria habilitados para provisionamento têm modelos para simplificar a configuração.</span><span class="sxs-lookup"><span data-stu-id="88928-151">Applications in the gallery that are enabled for provisioning have templates to streamline configuration.</span></span> <span data-ttu-id="88928-152">Use a solicitação abaixo para [recuperar o modelo para a configuração de provisionamento](/graph/api/synchronization-synchronizationtemplate-list?tabs=http&view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="88928-152">Use the request below to [retrieve the template for the provisioning configuration](/graph/api/synchronization-synchronizationtemplate-list?tabs=http&view=graph-rest-beta).</span></span> <span data-ttu-id="88928-153">Observe que você precisará fornecer a ID.</span><span class="sxs-lookup"><span data-stu-id="88928-153">Note that you will need to provide the ID.</span></span> <span data-ttu-id="88928-154">A ID se refere ao recurso anterior, que neste caso é o recurso de servicePrincipalName.</span><span class="sxs-lookup"><span data-stu-id="88928-154">The ID refers to the preceding resource, which in this case is the servicePrincipal resource.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="e5d14-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5d14-155">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88928-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88928-155">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="e5d14-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5d14-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="88928-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="88928-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationtemplate"
@@ -205,15 +205,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/templates
 ```
-# <a name="c"></a>[<span data-ttu-id="e5d14-157">C#</span><span class="sxs-lookup"><span data-stu-id="e5d14-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="88928-157">C#</span><span class="sxs-lookup"><span data-stu-id="88928-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e5d14-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5d14-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="88928-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88928-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e5d14-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5d14-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="88928-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88928-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationtemplate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -221,7 +221,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 
 
-#### <a name="response"></a><span data-ttu-id="e5d14-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5d14-160">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88928-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="88928-160">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -245,12 +245,12 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="create-the-provisioning-job"></a><span data-ttu-id="e5d14-161">Criar o trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-161">Create the provisioning job</span></span>
-<span data-ttu-id="e5d14-162">Para habilitar o provisionamento, primeiro você precisará [criar um trabalho](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-post?view=graph-rest-beta&tabs=http).</span><span class="sxs-lookup"><span data-stu-id="e5d14-162">To enable provisioning, you'll first need to [create a job](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-post?view=graph-rest-beta&tabs=http).</span></span> <span data-ttu-id="e5d14-163">Use a seguinte solicitação para criar um trabalho de provisionamento.</span><span class="sxs-lookup"><span data-stu-id="e5d14-163">Use the following request to create a provisioning job.</span></span> <span data-ttu-id="e5d14-164">Use o TemplateID da etapa anterior ao especificar o modelo a ser usado para o trabalho.</span><span class="sxs-lookup"><span data-stu-id="e5d14-164">Use the templateId from the previous step when specifying the template to be used for the job.</span></span>
+### <a name="create-the-provisioning-job"></a><span data-ttu-id="88928-161">Criar o trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-161">Create the provisioning job</span></span>
+<span data-ttu-id="88928-162">Para habilitar o provisionamento, primeiro você precisará [criar um trabalho](/graph/api/synchronization-synchronizationjob-post?tabs=http&view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="88928-162">To enable provisioning, you'll first need to [create a job](/graph/api/synchronization-synchronizationjob-post?tabs=http&view=graph-rest-beta).</span></span> <span data-ttu-id="88928-163">Use a seguinte solicitação para criar um trabalho de provisionamento.</span><span class="sxs-lookup"><span data-stu-id="88928-163">Use the following request to create a provisioning job.</span></span> <span data-ttu-id="88928-164">Use o TemplateID da etapa anterior ao especificar o modelo a ser usado para o trabalho.</span><span class="sxs-lookup"><span data-stu-id="88928-164">Use the templateId from the previous step when specifying the template to be used for the job.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e5d14-165">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5d14-165">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88928-165">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88928-165">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e5d14-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5d14-166">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="88928-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="88928-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_synchronizationjob_from_synchronization"
@@ -263,22 +263,22 @@ Content-type: application/json
     "templateId": "aws"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e5d14-167">C#</span><span class="sxs-lookup"><span data-stu-id="e5d14-167">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="88928-167">C#</span><span class="sxs-lookup"><span data-stu-id="88928-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-synchronizationjob-from-synchronization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e5d14-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5d14-168">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="88928-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88928-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-synchronizationjob-from-synchronization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e5d14-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5d14-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="88928-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88928-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-synchronizationjob-from-synchronization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="e5d14-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5d14-170">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88928-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="88928-170">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -312,13 +312,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-3-authorize-access"></a><span data-ttu-id="e5d14-171">Etapa 3: autorizar o acesso</span><span class="sxs-lookup"><span data-stu-id="e5d14-171">Step 3: Authorize access</span></span>
+## <a name="step-3-authorize-access"></a><span data-ttu-id="88928-171">Etapa 3: autorizar o acesso</span><span class="sxs-lookup"><span data-stu-id="88928-171">Step 3: Authorize access</span></span>
 
-### <a name="test-the-connection-to-the-application"></a><span data-ttu-id="e5d14-172">Testar a conexão com o aplicativo</span><span class="sxs-lookup"><span data-stu-id="e5d14-172">Test the connection to the application</span></span>
+### <a name="test-the-connection-to-the-application"></a><span data-ttu-id="88928-172">Testar a conexão com o aplicativo</span><span class="sxs-lookup"><span data-stu-id="88928-172">Test the connection to the application</span></span>
 
-<span data-ttu-id="e5d14-173">Teste a conexão com o aplicativo de terceiros.</span><span class="sxs-lookup"><span data-stu-id="e5d14-173">Test the connection with the third-party application.</span></span> <span data-ttu-id="e5d14-174">O exemplo a seguir é para um aplicativo que requer um segredo do cliente e um token secreto.</span><span class="sxs-lookup"><span data-stu-id="e5d14-174">The following example is for an application that requires a client secret and secret token.</span></span> <span data-ttu-id="e5d14-175">Cada aplicativo tem seus próprios requisitos.</span><span class="sxs-lookup"><span data-stu-id="e5d14-175">Each application has its own requirements.</span></span> <span data-ttu-id="e5d14-176">Os aplicativos geralmente usam um endereço base no lugar de um segredo do cliente.</span><span class="sxs-lookup"><span data-stu-id="e5d14-176">Applications often use a base address in place of a client secret.</span></span> <span data-ttu-id="e5d14-177">Para determinar de que credenciais seu aplicativo requer, vá para a página configuração de provisionamento do aplicativo e no modo de desenvolvedor clique em testar conexão.</span><span class="sxs-lookup"><span data-stu-id="e5d14-177">To determine what credentials your app requires, go to the provisioning configuration page for your application and in developer mode click test connection.</span></span> <span data-ttu-id="e5d14-178">O tráfego de rede mostrará os parâmetros usados para credenciais.</span><span class="sxs-lookup"><span data-stu-id="e5d14-178">The network traffic will show the parameters used for credentials.</span></span> <span data-ttu-id="e5d14-179">Para obter uma lista completa de credenciais, consulte [synchronizationJob: validateCredentials](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-beta&tabs=http).</span><span class="sxs-lookup"><span data-stu-id="e5d14-179">For a full list of credentials, see [synchronizationJob: validateCredentials](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-beta&tabs=http).</span></span> 
+<span data-ttu-id="88928-173">Teste a conexão com o aplicativo de terceiros.</span><span class="sxs-lookup"><span data-stu-id="88928-173">Test the connection with the third-party application.</span></span> <span data-ttu-id="88928-174">O exemplo a seguir é para um aplicativo que requer um segredo do cliente e um token secreto.</span><span class="sxs-lookup"><span data-stu-id="88928-174">The following example is for an application that requires a client secret and secret token.</span></span> <span data-ttu-id="88928-175">Cada aplicativo tem seus próprios requisitos.</span><span class="sxs-lookup"><span data-stu-id="88928-175">Each application has its own requirements.</span></span> <span data-ttu-id="88928-176">Os aplicativos geralmente usam um endereço base no lugar de um segredo do cliente.</span><span class="sxs-lookup"><span data-stu-id="88928-176">Applications often use a base address in place of a client secret.</span></span> <span data-ttu-id="88928-177">Para determinar de que credenciais seu aplicativo requer, vá para a página configuração de provisionamento do aplicativo e no modo de desenvolvedor clique em testar conexão.</span><span class="sxs-lookup"><span data-stu-id="88928-177">To determine what credentials your app requires, go to the provisioning configuration page for your application and in developer mode click test connection.</span></span> <span data-ttu-id="88928-178">O tráfego de rede mostrará os parâmetros usados para credenciais.</span><span class="sxs-lookup"><span data-stu-id="88928-178">The network traffic will show the parameters used for credentials.</span></span> <span data-ttu-id="88928-179">Para obter uma lista completa de credenciais, consulte [synchronizationJob: validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="88928-179">For a full list of credentials, see [synchronizationJob: validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta).</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="e5d14-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5d14-180">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88928-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88928-180">Request</span></span>
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 { 
@@ -328,7 +328,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
     ]
 }
 ```
-#### <a name="response"></a><span data-ttu-id="e5d14-181">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5d14-181">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88928-181">Resposta</span><span class="sxs-lookup"><span data-stu-id="88928-181">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -338,11 +338,11 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 HTTP/1.1 204 No Content
 ```
 
-### <a name="save-your-credentials"></a><span data-ttu-id="e5d14-182">Salvar suas credenciais</span><span class="sxs-lookup"><span data-stu-id="e5d14-182">Save your credentials</span></span>
+### <a name="save-your-credentials"></a><span data-ttu-id="88928-182">Salvar suas credenciais</span><span class="sxs-lookup"><span data-stu-id="88928-182">Save your credentials</span></span>
 
-<span data-ttu-id="e5d14-183">A configuração do provisionamento requer o estabelecimento de uma confiança entre o Azure AD e o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e5d14-183">Configuring provisioning requires establishing a trust between Azure AD and the application.</span></span> <span data-ttu-id="e5d14-184">Autorize o acesso ao aplicativo de terceiros.</span><span class="sxs-lookup"><span data-stu-id="e5d14-184">Authorize access to the third-party application.</span></span> <span data-ttu-id="e5d14-185">O exemplo a seguir é para um aplicativo que requer um segredo do cliente e um token secreto.</span><span class="sxs-lookup"><span data-stu-id="e5d14-185">The following example is for an application that requires a client secret and a secret token.</span></span> <span data-ttu-id="e5d14-186">Cada aplicativo tem seus próprios requisitos.</span><span class="sxs-lookup"><span data-stu-id="e5d14-186">Each application has its own requirements.</span></span> <span data-ttu-id="e5d14-187">Revise a [documentação da API](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-beta&tabs=http) para ver as opções disponíveis.</span><span class="sxs-lookup"><span data-stu-id="e5d14-187">Review the [API documentation](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-beta&tabs=http) to see the available options.</span></span> 
+<span data-ttu-id="88928-183">A configuração do provisionamento requer o estabelecimento de uma confiança entre o Azure AD e o aplicativo.</span><span class="sxs-lookup"><span data-stu-id="88928-183">Configuring provisioning requires establishing a trust between Azure AD and the application.</span></span> <span data-ttu-id="88928-184">Autorize o acesso ao aplicativo de terceiros.</span><span class="sxs-lookup"><span data-stu-id="88928-184">Authorize access to the third-party application.</span></span> <span data-ttu-id="88928-185">O exemplo a seguir é para um aplicativo que requer um segredo do cliente e um token secreto.</span><span class="sxs-lookup"><span data-stu-id="88928-185">The following example is for an application that requires a client secret and a secret token.</span></span> <span data-ttu-id="88928-186">Cada aplicativo tem seus próprios requisitos.</span><span class="sxs-lookup"><span data-stu-id="88928-186">Each application has its own requirements.</span></span> <span data-ttu-id="88928-187">Revise a [documentação da API](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta) para ver as opções disponíveis.</span><span class="sxs-lookup"><span data-stu-id="88928-187">Review the [API documentation](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta) to see the available options.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="e5d14-188">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5d14-188">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88928-188">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88928-188">Request</span></span>
 ```msgraph-interactive
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secrets 
  
@@ -354,7 +354,7 @@ PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secr
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="e5d14-189">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5d14-189">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88928-189">Resposta</span><span class="sxs-lookup"><span data-stu-id="88928-189">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -364,13 +364,13 @@ PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secr
 HTTP/1.1 204 No Content
 ```
 
-## <a name="step-4-start-the-provisioning-job"></a><span data-ttu-id="e5d14-190">Etapa 4: iniciar o trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-190">Step 4: Start the provisioning job</span></span>
-<span data-ttu-id="e5d14-191">Agora que o trabalho de provisionamento está configurado, use o comando a seguir para [iniciar o trabalho](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-beta&tabs=http).</span><span class="sxs-lookup"><span data-stu-id="e5d14-191">Now that the provisioning job is configured, use the following command to [start the job](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-start?view=graph-rest-beta&tabs=http).</span></span> 
+## <a name="step-4-start-the-provisioning-job"></a><span data-ttu-id="88928-190">Etapa 4: iniciar o trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-190">Step 4: Start the provisioning job</span></span>
+<span data-ttu-id="88928-191">Agora que o trabalho de provisionamento está configurado, use o comando a seguir para [iniciar o trabalho](/graph/api/synchronization-synchronizationjob-start?tabs=http&view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="88928-191">Now that the provisioning job is configured, use the following command to [start the job](/graph/api/synchronization-synchronizationjob-start?tabs=http&view=graph-rest-beta).</span></span> 
 
 
-#### <a name="request"></a><span data-ttu-id="e5d14-192">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5d14-192">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88928-192">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88928-192">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e5d14-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5d14-193">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="88928-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="88928-193">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_start"
@@ -378,22 +378,22 @@ HTTP/1.1 204 No Content
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 ```
-# <a name="c"></a>[<span data-ttu-id="e5d14-194">C#</span><span class="sxs-lookup"><span data-stu-id="e5d14-194">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="88928-194">C#</span><span class="sxs-lookup"><span data-stu-id="88928-194">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-start-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e5d14-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5d14-195">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="88928-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88928-195">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-start-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e5d14-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5d14-196">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="88928-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88928-196">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-start-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="e5d14-197">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5d14-197">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88928-197">Resposta</span><span class="sxs-lookup"><span data-stu-id="88928-197">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -404,15 +404,15 @@ HTTP/1.1 204 No Content
 ```
 
 
-## <a name="step-5-monitor-provisioning"></a><span data-ttu-id="e5d14-198">Etapa 5: monitorar o provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-198">Step 5: Monitor provisioning</span></span>
+## <a name="step-5-monitor-provisioning"></a><span data-ttu-id="88928-198">Etapa 5: monitorar o provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-198">Step 5: Monitor provisioning</span></span>
 
-### <a name="monitor-the-provisioning-job-status"></a><span data-ttu-id="e5d14-199">Monitorar o status do trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-199">Monitor the provisioning job status</span></span>
+### <a name="monitor-the-provisioning-job-status"></a><span data-ttu-id="88928-199">Monitorar o status do trabalho de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-199">Monitor the provisioning job status</span></span>
 
-<span data-ttu-id="e5d14-200">Agora que o trabalho de provisionamento está em execução, use o comando a seguir para acompanhar o progresso do ciclo de provisionamento atual, bem como as estatísticas de data, como o número de usuários e grupos que foram criados no sistema de destino.</span><span class="sxs-lookup"><span data-stu-id="e5d14-200">Now that the provisioning job is running, use the following command to track the progress of the current provisioning cycle as well as statistics to date such as the number of users and groups that have been created in the target system.</span></span> 
+<span data-ttu-id="88928-200">Agora que o trabalho de provisionamento está em execução, use o comando a seguir para acompanhar o progresso do ciclo de provisionamento atual, bem como as estatísticas de data, como o número de usuários e grupos que foram criados no sistema de destino.</span><span class="sxs-lookup"><span data-stu-id="88928-200">Now that the provisioning job is running, use the following command to track the progress of the current provisioning cycle as well as statistics to date such as the number of users and groups that have been created in the target system.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="e5d14-201">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5d14-201">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88928-201">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88928-201">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e5d14-202">HTTP</span><span class="sxs-lookup"><span data-stu-id="e5d14-202">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="88928-202">HTTP</span><span class="sxs-lookup"><span data-stu-id="88928-202">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationjob"
@@ -420,22 +420,22 @@ HTTP/1.1 204 No Content
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
-# <a name="c"></a>[<span data-ttu-id="e5d14-203">C#</span><span class="sxs-lookup"><span data-stu-id="e5d14-203">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="88928-203">C#</span><span class="sxs-lookup"><span data-stu-id="88928-203">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-synchronizationjob-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e5d14-204">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5d14-204">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="88928-204">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88928-204">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-synchronizationjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e5d14-205">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e5d14-205">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="88928-205">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88928-205">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationjob-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="e5d14-206">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5d14-206">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88928-206">Resposta</span><span class="sxs-lookup"><span data-stu-id="88928-206">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -478,14 +478,14 @@ Content-length: 2577
 ```
 
 
-### <a name="monitor-provisioning-events-using-the-provisioning-logs"></a><span data-ttu-id="e5d14-207">Monitorar eventos de provisionamento usando os logs de provisionamento</span><span class="sxs-lookup"><span data-stu-id="e5d14-207">Monitor provisioning events using the provisioning logs</span></span>
-<span data-ttu-id="e5d14-208">Além de monitorar o status do trabalho de provisionamento, você pode usar os [logs de provisionamento](https://docs.microsoft.com/graph/api/provisioningobjectsummary-list?view=graph-rest-beta&tabs=http) para consultar todos os eventos que estão ocorrendo.</span><span class="sxs-lookup"><span data-stu-id="e5d14-208">In addition to monitoring the status of the provisioning job, you can use the [provisioning logs](https://docs.microsoft.com/graph/api/provisioningobjectsummary-list?view=graph-rest-beta&tabs=http) to query for all the events that are occurring.</span></span> <span data-ttu-id="e5d14-209">Por exemplo, consulte um usuário específico e determine se eles foram provisionados com êxito.</span><span class="sxs-lookup"><span data-stu-id="e5d14-209">For example, query for a particular user and determine if they were successfully provisioned.</span></span>
+### <a name="monitor-provisioning-events-using-the-provisioning-logs"></a><span data-ttu-id="88928-207">Monitorar eventos de provisionamento usando os logs de provisionamento</span><span class="sxs-lookup"><span data-stu-id="88928-207">Monitor provisioning events using the provisioning logs</span></span>
+<span data-ttu-id="88928-208">Além de monitorar o status do trabalho de provisionamento, você pode usar os [logs de provisionamento](/graph/api/provisioningobjectsummary-list?tabs=http&view=graph-rest-beta) para consultar todos os eventos que estão ocorrendo.</span><span class="sxs-lookup"><span data-stu-id="88928-208">In addition to monitoring the status of the provisioning job, you can use the [provisioning logs](/graph/api/provisioningobjectsummary-list?tabs=http&view=graph-rest-beta) to query for all the events that are occurring.</span></span> <span data-ttu-id="88928-209">Por exemplo, consulte um usuário específico e determine se eles foram provisionados com êxito.</span><span class="sxs-lookup"><span data-stu-id="88928-209">For example, query for a particular user and determine if they were successfully provisioned.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e5d14-210">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e5d14-210">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88928-210">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88928-210">Request</span></span>
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
-#### <a name="response"></a><span data-ttu-id="e5d14-211">Resposta</span><span class="sxs-lookup"><span data-stu-id="e5d14-211">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88928-211">Resposta</span><span class="sxs-lookup"><span data-stu-id="88928-211">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -611,7 +611,7 @@ Content-type: application/json
 }
 
 ```
-## <a name="see-also"></a><span data-ttu-id="e5d14-212">Confira também</span><span class="sxs-lookup"><span data-stu-id="e5d14-212">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="88928-212">Confira também</span><span class="sxs-lookup"><span data-stu-id="88928-212">See also</span></span>
 
-- [<span data-ttu-id="e5d14-213">Examinar a documentação de sincronização do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="e5d14-213">Review the synchronization Microsoft Graph documentation</span></span>](https://docs.microsoft.com/graph/api/resources/synchronization-overview?view=graph-rest-beta)
-- [<span data-ttu-id="e5d14-214">Integrando um aplicativo do SCIM personalizado com o Azure AD</span><span class="sxs-lookup"><span data-stu-id="e5d14-214">Integrating a custom SCIM app with Azure AD</span></span>](https://docs.microsoft.com/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups)
+- [<span data-ttu-id="88928-213">Examinar a documentação de sincronização do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="88928-213">Review the synchronization Microsoft Graph documentation</span></span>](/graph/api/resources/synchronization-overview?view=graph-rest-beta)
+- [<span data-ttu-id="88928-214">Integrando um aplicativo do SCIM personalizado com o Azure AD</span><span class="sxs-lookup"><span data-stu-id="88928-214">Integrating a custom SCIM app with Azure AD</span></span>](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups)
