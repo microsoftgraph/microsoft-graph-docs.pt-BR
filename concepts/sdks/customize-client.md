@@ -3,18 +3,18 @@ title: Personalizar o cliente do serviço SDK do Microsoft Graph
 description: Fornece instruções sobre como alterar o comportamento padrão do cliente do serviço SDK do Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 67e0fbc00d1c2760d1d6f226213447fe88a70670
-ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
+ms.openlocfilehash: dd8fdca9d093c8164dd486fb185d462b9de0ff0d
+ms.sourcegitcommit: 6eadb95e21b2e7eb5d6b081b91999cb91070f397
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44052519"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48299274"
 ---
-# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="1d65e-103">Personalizar o cliente do serviço SDK do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="1d65e-103">Customize the Microsoft Graph SDK service client</span></span>
+# <a name="customize-the-microsoft-graph-sdk-service-client"></a><span data-ttu-id="be87d-103">Personalizar o cliente do serviço SDK do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="be87d-103">Customize the Microsoft Graph SDK service client</span></span>
 
-<span data-ttu-id="1d65e-104">O cliente SDK do Microsoft Graph configura um conjunto padrão de middleware que permite que o SDK se comunique com os pontos de extremidade do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="1d65e-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="1d65e-105">Esse conjunto padrão é personalizável, permitindo que você altere o comportamento do cliente.</span><span class="sxs-lookup"><span data-stu-id="1d65e-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="1d65e-106">Por exemplo, você pode inserir logs personalizados ou adicionar um manipulador de teste para simular cenários específicos.</span><span class="sxs-lookup"><span data-stu-id="1d65e-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="1d65e-107">Você pode adicionar e remover os componentes middleware.</span><span class="sxs-lookup"><span data-stu-id="1d65e-107">You can add and remove middleware components.</span></span> <span data-ttu-id="1d65e-108">É importante observar que a ordem em que os componentes middleware são executados é significativa.</span><span class="sxs-lookup"><span data-stu-id="1d65e-108">It is important to note that the order in which middleware components run is significant.</span></span>
+<span data-ttu-id="be87d-104">O cliente SDK do Microsoft Graph configura um conjunto padrão de middleware que permite que o SDK se comunique com os pontos de extremidade do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="be87d-104">The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints.</span></span> <span data-ttu-id="be87d-105">Esse conjunto padrão é personalizável, permitindo que você altere o comportamento do cliente.</span><span class="sxs-lookup"><span data-stu-id="be87d-105">This default set is customizable, allowing you to change the behavior of the client.</span></span> <span data-ttu-id="be87d-106">Por exemplo, você pode inserir logs personalizados ou adicionar um manipulador de teste para simular cenários específicos.</span><span class="sxs-lookup"><span data-stu-id="be87d-106">For example, you can insert customized logging, or add a test handler to simulate specific scenarios.</span></span> <span data-ttu-id="be87d-107">Você pode adicionar e remover os componentes middleware.</span><span class="sxs-lookup"><span data-stu-id="be87d-107">You can add and remove middleware components.</span></span> <span data-ttu-id="be87d-108">É importante observar que a ordem em que os componentes middleware são executados é significativa.</span><span class="sxs-lookup"><span data-stu-id="be87d-108">It is important to note that the order in which middleware components run is significant.</span></span>
 
-## <a name="c"></a>[<span data-ttu-id="1d65e-109">C#</span><span class="sxs-lookup"><span data-stu-id="1d65e-109">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="be87d-109">C#</span><span class="sxs-lookup"><span data-stu-id="be87d-109">C#</span></span>](#tab/csharp)
 
 ```csharp
 var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
@@ -38,7 +38,7 @@ var messages = await customGraphClient.Me.Messages.Request()
     .GetAsync();
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="1d65e-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="1d65e-110">TypeScript</span></span>](#tab/typeScript)
+## <a name="typescript"></a>[<span data-ttu-id="be87d-110">TypeScript</span><span class="sxs-lookup"><span data-stu-id="be87d-110">TypeScript</span></span>](#tab/typeScript)
 
 ```typescript
 // Create a custom auth provider
@@ -69,7 +69,7 @@ let response: PageCollection = await client
   .get();
 ```
 
-### <a name="simpleauthproviderts"></a><span data-ttu-id="1d65e-111">SimpleAuthProvider. TS</span><span class="sxs-lookup"><span data-stu-id="1d65e-111">SimpleAuthProvider.ts</span></span>
+### <a name="simpleauthproviderts"></a><span data-ttu-id="be87d-111">SimpleAuthProvider. TS</span><span class="sxs-lookup"><span data-stu-id="be87d-111">SimpleAuthProvider.ts</span></span>
 
 ```typescript
 import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
@@ -87,7 +87,7 @@ export default class SimpleAuthProvider implements AuthenticationProvider {
 }
 ```
 
-### <a name="customlogginghandlerts"></a><span data-ttu-id="1d65e-112">CustomLoggingHandler. TS</span><span class="sxs-lookup"><span data-stu-id="1d65e-112">CustomLoggingHandler.ts</span></span>
+### <a name="customlogginghandlerts"></a><span data-ttu-id="be87d-112">CustomLoggingHandler. TS</span><span class="sxs-lookup"><span data-stu-id="be87d-112">CustomLoggingHandler.ts</span></span>
 
 ```typescript
 import { Context, Middleware } from "@microsoft/microsoft-graph-client";
@@ -103,6 +103,28 @@ export default class CustomLoggingHandler implements Middleware {
     this.nextMiddleware = middleware;
   }
 }
+```
+
+## <a name="java"></a>[<span data-ttu-id="be87d-113">Java</span><span class="sxs-lookup"><span data-stu-id="be87d-113">Java</span></span>](#tab/java)
+
+```java
+// you can configure any OkHttpClient option and add interceptors
+// Note: com.microsoft.graph:microsoft-graph:2.3 or above is required
+// for a complete description of available configuration options https://square.github.io/okhttp/4.x/okhttp/okhttp3/-ok-http-client/-builder/
+final OkHttpClient httpClient = HttpClients.createDefault(coreAuthenticationProvider)
+                                .newBuilder()
+                                .followSslRedirects(false) // sample configuration to apply to client
+                                .build();
+
+final IHttpProvider httpProvider = DefaultClientConfig
+                          .createWithAuthenticationProvider(authenticationProvider)
+                          .getHttpProvider(httpClient);
+
+final IGraphServiceClient graphServiceClient = GraphServiceClient
+                .builder()
+                .authenticationProvider(authenticationProvider)
+                .httpProvider(httpProvider)
+                .buildClient();
 ```
 
 ---
