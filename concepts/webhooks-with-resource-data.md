@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 8fc57d425d9f5f579c34488773b2b0ba69a01531
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: e730edbc5218c0db0f0150660268bee90288e322
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193145"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289474"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
@@ -336,7 +336,7 @@ Nesta seção:
 1. Obtenha um certificado com um par de chaves assimétricas.
 
     - Você pode assinatura o certificado sozinho, uma vez que o Microsoft Graph não verifica o emissor do certificado e usa a chave pública somente para criptografia. 
-    - Use o [Cofre da Chave do Azure](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) como a solução para criar, girar e gerenciar certificados com segurança. Cerifique-se de que as chaves atendem aos seguintes critérios:
+    - Use o [Cofre da Chave do Azure](/azure/key-vault/key-vault-whatis) como a solução para criar, girar e gerenciar certificados com segurança. Cerifique-se de que as chaves atendem aos seguintes critérios:
 
         - A chave deve ser do tipo `RSA`
         - O tamanho da chave deve estar entre 2048 e 4096 bits
@@ -380,7 +380,7 @@ Para decriptar os dados de recursos, o seu aplicativo deve executar as etapas in
 
 1. Use a propriedade **encryptionCertificateId** para identificar o certificado a ser usado.
 
-2. Inicialize um componente criptográfico da RSA (como o .NET [RSACryptoServiceProvider](https://docs.microsoft.com/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) com a chave privada.
+2. Inicialize um componente criptográfico da RSA (como o .NET [RSACryptoServiceProvider](/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) com a chave privada.
 
 3. Decripte a chave simétrica entregue na propriedade **dataKey** de cada item na notificação de alteração.
 
@@ -390,7 +390,7 @@ Para decriptar os dados de recursos, o seu aplicativo deve executar as etapas in
   
     Compare-o com o valor em **dataSignature**. Se eles não corresponderem, considere que a carga foi adulterada e não a descriptografe.
 
-5. Use a chave simétrica com a criptografia AES (como o .NET [AesCryptoServiceProvider](https://docs.microsoft.com/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) para descriptografar o conteúdo em **dados**.
+5. Use a chave simétrica com a criptografia AES (como o .NET [AesCryptoServiceProvider](/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) para descriptografar o conteúdo em **dados**.
 
     - Use os seguintes parâmetros de descriptografia para o algoritmo AES:
 

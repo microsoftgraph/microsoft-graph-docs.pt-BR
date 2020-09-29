@@ -2,12 +2,12 @@
 title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: Este tópico descreve alguns dos erros que podem ser retornados nas respostas do Microsoft Graph.
 localization_priority: Priority
-ms.openlocfilehash: 2af128f0c15942d5e9b025de8eecbf9af7f07117
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 2378233090ee63fc41469bc419373a26cf92be0f
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589274"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289229"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 
@@ -21,7 +21,7 @@ A tabela a seguir lista e descreve os códigos de status HTTP que podem ser reto
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Solicitação Incorreta (Bad Request)                     | Não é possível processar a solicitação porque está incorreta ou mal feita.                                                                       |
 | 401         | Não Autorizado (Unauthorized)                    | As informações de autenticação necessárias estão ausentes ou não são válidas para o recurso.                                                   |
-| 403         | Proibido                       | Acesso negado ao recurso solicitado. O usuário pode não ter permissão suficiente. <br /><br /> **Importante:** Se as políticas de acesso condicional forem aplicadas a um recurso, HTTP 403; Erro proibido=insufficent_claims poderá ser retornado. Para obter mais detalhes sobre o Microsoft Graph e acesso condicional confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | Proibido                       | Acesso negado ao recurso solicitado. O usuário pode não ter permissão suficiente. <br /><br /> **Importante:** Se as políticas de acesso condicional forem aplicadas a um recurso, HTTP 403; Erro proibido=insufficent_claims poderá ser retornado. Para obter mais detalhes sobre o Microsoft Graph e acesso condicional confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Não Encontrado (Not Found)                       | O recurso solicitado não existe.                                                                                                  |
 | 405         | Método Não Permitido (Method Not Allowed)              | O método HTTP na solicitação não é permitido no recurso.                                                                         |
 | 406         | Não Aceitável (Not Acceptable)                  | Esse serviço não dá suporte ao formato solicitado no cabeçalho Accept.                                                                |
@@ -106,7 +106,7 @@ A propriedade `code` contém um dos valores possíveis a seguir. Seus aplicativo
 |:--------------------------|:--------------
 | **accessDenied**          | O chamador não tem permissão para executar a ação. 
 | **activityLimitReached**  | O aplicativo ou o usuário foi restringido.
-| **extensionError**        | A caixa de correio está localizada no local e o servidor do Exchange não dá suporte a solicitações federadas do Microsoft Graph, ou uma [política de aplicativo](/graph/auth-limit-mailbox-access) impede que o aplicativo acesse a caixa de correio.
+| **extensionError**        | A caixa de correio está localizada no local e o servidor do Exchange não dá suporte a solicitações federadas do Microsoft Graph, ou uma [política de aplicativo](./auth-limit-mailbox-access.md) impede que o aplicativo acesse a caixa de correio.
 | **generalException**      | Ocorreu um erro não especificado.
 | **invalidRange**          | O intervalo de bytes especificado é inválido ou está indisponível.
 | **invalidRequest**        | A solicitação está incorreta ou foi mal formada.

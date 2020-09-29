@@ -4,12 +4,12 @@ description: 'Este artigo apresenta um exemplo para demonstrar como usar *extens
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2e4dcaba5c02c4479c9a7a38b7471ccd390b59a1
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: f26f58343acb417daedf22563132a67f5c3dc8a3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757046"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289166"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Adicionar dados personalizados a grupos usando as extensões do esquema 
 
@@ -241,7 +241,7 @@ Content-length: 326
 
 - [Adicionar dados personalizados a recursos usando extensões](extensibility-overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility-open-users.md)
-- [Domínios do Microsoft 365](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Domínios do Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/domains)
 - [Adicionando e verificando um domínio para o NOVO Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [Tipo de recurso schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0)
 - [List schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)

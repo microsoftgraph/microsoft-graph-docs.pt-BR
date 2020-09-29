@@ -4,12 +4,12 @@ description: Os dados de relatórios acessíveis por meio da API de relatórios 
 author: kszb
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 2830a3ad66f123418712aac214dd30be8227ca90
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ab92cc905bd384bfae17902e86070694951a3fd7
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810941"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288249"
 ---
 # <a name="authorization-for-apis-to-read-microsoft-365-usage-reports"></a>Autorização para APIs lerem os relatórios de uso do Microsoft 365.
 
@@ -34,7 +34,7 @@ Se você estiver chamando as APIs de um aplicativo:
 
 ## <a name="assign-azure-ad-roles-to-users"></a>Atribuir funções do Microsoft Azure AD aos usuários
 
-Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados de relatórios confidenciais, os administradores de locatários devem atribuir aos usuários do aplicativo as funções apropriadas do Azure AD. Para obter detalhes, confira [Permissões da função de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador e não-administrador aos usuários com o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
+Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados de relatórios confidenciais, os administradores de locatários devem atribuir aos usuários do aplicativo as funções apropriadas do Azure AD. Para obter detalhes, confira [Permissões da função de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador e não-administrador aos usuários com o Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Observação:** você precisa ser um administrador de locatários para executar esta etapa.
 

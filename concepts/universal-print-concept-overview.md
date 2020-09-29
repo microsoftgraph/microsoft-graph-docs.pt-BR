@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b15da734583200891cc451b332cccd24a6ef47f8
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: f70c9cb6914c68d40a17418d35ff00305095b9c8
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319523"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288816"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Visão geral da API de impressão em nuvem da Impressão Universal
 
@@ -97,4 +97,4 @@ Gostaríamos de ouvir seus comentários sobre as APIs de Impressão Universal. F
 
 ## <a name="see-also"></a>Confira também
 
-- [O que é a impressão universal?](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)
+- [O que é a impressão universal?](/universal-print/fundamentals/universal-print-whatis)

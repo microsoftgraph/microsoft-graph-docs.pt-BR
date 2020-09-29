@@ -4,16 +4,16 @@ description: A API dos métodos de autenticação do Microsoft Graph oferece às
 author: mmcla
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0b6a29e200adeedba1c42357980dd4d1315dc351
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: 2aa556e882ec4092a8d7dac43018b1f2ffcc83dd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413293"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288480"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Introdução à API dos métodos de autenticação do Microsoft Graph
 
-Os [métodos de autenticação](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) são como os usuários se autenticam no Azure Active Directory (Azure AD). Os métodos de autenticação do Azure AD incluem senha e telefone (por exemplo, SMS e chamadas de voz), que hoje são gerenciáveis no Microsoft Graph, entre muitos outros, como chaves de segurança FIDO2 e o aplicativo Microsoft Authenticator. Os métodos de autenticação são usados nas autenticações primária, de segundo fator e de step-up. Além disso, no processo de redefinição de senha de autoatendimento (SSPR).
+Os [métodos de autenticação](/azure/active-directory/authentication/concept-authentication-methods) são como os usuários se autenticam no Azure Active Directory (Azure AD). Os métodos de autenticação do Azure AD incluem senha e telefone (por exemplo, SMS e chamadas de voz), que hoje são gerenciáveis no Microsoft Graph, entre muitos outros, como chaves de segurança FIDO2 e o aplicativo Microsoft Authenticator. Os métodos de autenticação são usados nas autenticações primária, de segundo fator e de step-up. Além disso, no processo de redefinição de senha de autoatendimento (SSPR).
 
 Também é possível usar as APIs do método de autenticação para gerenciar os métodos de autenticação de um usuário. Por exemplo, você pode:
 
@@ -43,7 +43,7 @@ Usando sua [ferramenta favorita para interagir com o Microsoft Graph](use-the-ap
 
 Em seguida, modifique suas permissões. Usaremos o [UserAuthenticationMethod.ReadWrite.All](permissions-reference.md#user-authentication-method-permissions-preview) para este tutorial, portanto, verifique se ele está habilitado no Graph Explorer ou no aplicativo.
 
-Comece a usar a API após o escopo ser atribuído e aprovado. Os exemplos aqui usam um usuário padrão chamado de Avery Howard. Use uma conta de teste preexistente ou crie uma nova seguindo [estas instruções](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user). Essas APIs estão ativas, portanto não as testem em usuários reais.
+Comece a usar a API após o escopo ser atribuído e aprovado. Os exemplos aqui usam um usuário padrão chamado de Avery Howard. Use uma conta de teste preexistente ou crie uma nova seguindo [estas instruções](/azure/active-directory/fundamentals/add-users-azure-active-directory#add-a-new-user). Essas APIs estão ativas, portanto não as testem em usuários reais.
 
 ## <a name="step-2-check-the-users-authentication-methods"></a>Etapa 2: Verificar os métodos de autenticação do usuário
 
@@ -260,7 +260,7 @@ Está procurando a referência de API para métodos de autenticação?
 ## <a name="next-steps"></a>Próximas etapas
 
 * Descubra como [usar as APIs REST do método de autenticação](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).
-* Use o Azure AD para se [autenticar](/graph/auth) no Microsoft Graph.
+* Use o Azure AD para se [autenticar](./auth/index.yml) no Microsoft Graph.
 * Integre o [logon do Azure AD](https://azure.microsoft.com/develop/identity/signin/) ao seu aplicativo ou website.
 * Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.
 * Explore [exemplos](https://developer.microsoft.com/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.

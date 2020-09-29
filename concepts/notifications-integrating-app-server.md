@@ -4,12 +4,12 @@ description: 'Configure o serviço de aplicativo para enviar notificações cent
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: d430622d05337cdb00f29de316d5d5cd948e1e05
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: cf14534fe2f789165a3580da833b3d49d803a2ca
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934348"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288655"
 ---
 # <a name="create-and-send-a-notification-from-your-app-service"></a>Criar e enviar uma notificação do serviço de aplicativo
 
@@ -20,7 +20,7 @@ Para enviar uma notificação para o usuário, seu serviço de aplicativo precis
 2. Publique uma notificação para a API do Microsoft Graph usando o token de autenticação e direcione o usuário com uma [ID de assinatura de notificação de usuário](/graph/api/notifications-post) que é obtida do seu cliente de aplicativo ao criar uma assinatura.
 
 > [!NOTE]
-> Para uma história de autenticação simplificada, recomendamos usar o novo e aprimorado [SDK de notificação](https://aka.ms/GNSDK) do lado do cliente com uma ID de assinatura de notificação de usuário para receber notificações e gerenciar o estado de notificação. Como alternativa, você pode publicar notificações em nome do usuário por meio de permissões delegadas e seu serviço de aplicativo precisará manter tokens de acesso e de atualização, mas isso não é recomendável. Para saber mais sobre o fluxo OAuth 2.0 OBO, confira [Chamadas de serviço a serviço que usam a identidade do usuário delegado no fluxo On-Behalf-Of](https://docs.microsoft.com/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). 
+> Para uma história de autenticação simplificada, recomendamos usar o novo e aprimorado [SDK de notificação](https://aka.ms/GNSDK) do lado do cliente com uma ID de assinatura de notificação de usuário para receber notificações e gerenciar o estado de notificação. Como alternativa, você pode publicar notificações em nome do usuário por meio de permissões delegadas e seu serviço de aplicativo precisará manter tokens de acesso e de atualização, mas isso não é recomendável. Para saber mais sobre o fluxo OAuth 2.0 OBO, confira [Chamadas de serviço a serviço que usam a identidade do usuário delegado no fluxo On-Behalf-Of](/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). 
 
 
 ## <a name="guaranteed-delivery-on-ios"></a>Entrega garantida no iOS

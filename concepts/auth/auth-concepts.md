@@ -5,12 +5,12 @@ author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: 81ebe8a7eadf86ee5bf7cf74fe337f446c13c376
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: a1c438008ee617797101a1caabcb0baf34f4d031
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892678"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289482"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 
@@ -97,18 +97,18 @@ Sobre o ponto de extremidade da Microsoft Identity Platform:
 - O middleware de servidor da Microsoft está disponível para .NET core e ASP.NET (OWIN OpenID Connect e OAuth) e para Node.js (Microsoft Identity Platform Passport.js).
 - A Microsoft Identity Platform é compatível com várias bibliotecas de autenticação de terceiros.
 
-Para obter uma lista completa de bibliotecas de cliente da Microsoft, middleware de servidor da Microsoft e bibliotecas de terceiros compatíveis, confira [Bibliotecas de autenticação da Microsoft Identity Platform](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
+Para obter uma lista completa de bibliotecas de cliente da Microsoft, middleware de servidor da Microsoft e bibliotecas de terceiros compatíveis, confira [Bibliotecas de autenticação da Microsoft Identity Platform](/azure/active-directory/develop/active-directory-v2-libraries).
 
 Não é necessário usar uma biblioteca de autenticação para obter um token de acesso. Para saber mais do uso direto com os pontos de extremidade da Microsoft Identity Platform sem a ajuda de uma biblioteca de autenticação, confira [autenticação da Microsoft Identity Platform](/azure/active-directory/develop/authentication-scenarios)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 - Para etapas rápidas sobre a obtenção de token de acesso para aplicativos que fizerem chamadas para o Microsoft Graph, escolha o tipo de aplicativo adequado ao seu cenário:
-  - [Aplicativo da área de trabalho](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
-  - [Aplicativo móvel](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
-  - [Aplicativo Web](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
-  - [Aplicativo de página única](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
-  - [Daemon / serviços do plano de fundo](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+  - [Aplicativo da área de trabalho](/azure/active-directory/develop/scenario-desktop-overview)
+  - [Aplicativo móvel](/azure/active-directory/develop/scenario-mobile-overview)
+  - [Aplicativo Web](/azure/active-directory/develop/scenario-web-app-call-api-overview)
+  - [Aplicativo de página única](/azure/active-directory/develop/scenario-spa-overview)
+  - [Daemon / serviços do plano de fundo](/azure/active-directory/develop/scenario-daemon-overview)
 - Para ver as permissões que você pode usar com o Microsoft Graph, confira [Permissões](../permissions-reference.md).
 - Se você é um provedor de Soluções na Nuvem da Microsoft interessado em acessar dados de clientes gerenciados por parceiros por meio do Microsoft Graph, confira [Gerenciar o acesso ao aplicativo (CSPs)](../auth-cloudsolutionprovider.md).
 
@@ -126,10 +126,10 @@ Para ajudá-lo a começar rapidamente, criamos uma série de módulos de treinam
 
 A documentação da Microsoft Identity Platform contém artigos e exemplos que se concentram especificamente na autenticação e autorização com a Microsoft Identity Platform.
 
-- A [documentação do ponto de extremidade da Microsoft Identity Platform](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview) é o melhor local para começar. Este artigo contém links para visualizações, documentação de protocolos e artigos de introdução para plataformas diferentes, todos organizados pelo tipo de aplicativo que você está desenvolvendo.
-- Para ver exemplos listados pela biblioteca de autenticação de cliente ou servidor, confira [Bibliotecas de Autenticação da Microsoft Identity Platform](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
+- A [documentação do ponto de extremidade da Microsoft Identity Platform](/azure/active-directory/develop/active-directory-appmodel-v2-overview) é o melhor local para começar. Este artigo contém links para visualizações, documentação de protocolos e artigos de introdução para plataformas diferentes, todos organizados pelo tipo de aplicativo que você está desenvolvendo.
+- Para ver exemplos listados pela biblioteca de autenticação de cliente ou servidor, confira [Bibliotecas de Autenticação da Microsoft Identity Platform](/azure/active-directory/develop/active-directory-v2-libraries).
 - Explore os exemplos por plataforma da Microsoft Identity Platform na [Galeria de código Azure](https://azure.microsoft.com/resources/samples/?service=active-directory).
 
 ## <a name="see-also"></a>Confira também
 
-- [Documentação do ponto de extremidade da Microsoft Identity Platform](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- [Documentação do ponto de extremidade da Microsoft Identity Platform](/azure/active-directory/develop/active-directory-appmodel-v2-overview)

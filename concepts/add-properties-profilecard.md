@@ -5,12 +5,12 @@ author: PollyNincevic
 localization_priority: Priority
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 978e96b12dfc0375570391c8964318efe97ad4ff
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 5df48bc8da848c6e5655467ad9ef39a8bb992026
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183775"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288781"
 ---
 # <a name="add-additional-properties-to-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Adicionar propriedades adicionais ao cartão de perfil usando a API do cartão de perfil no Microsoft Graph (visualização)
 
@@ -157,7 +157,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-[Localizar sua ID de locatário do Microsoft 365](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
+[Localizar sua ID de locatário do Microsoft 365](/onedrive/find-your-office-365-tenant-id)
 
 [Tipo de recurso onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
 

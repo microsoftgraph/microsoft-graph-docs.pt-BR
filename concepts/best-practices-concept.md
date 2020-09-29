@@ -3,12 +3,12 @@ title: Práticas recomendadas para trabalhar com o Microsoft Graph
 description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 87a6fbdce7364dbccbef04a2da58b97bddb7f5c4
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: adfb7a1989ddd7667f5afc230f349295ac1c642e
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44226872"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288046"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
@@ -27,7 +27,7 @@ Para acessar os dados no Microsoft Graph, seu aplicativo precisará adquirir um 
 - O cabeçalho de solicitação HTTP *Authorization*, como um token de *Portador*
 - O construtor do cliente gráfico ao usar uma biblioteca de cliente do Microsoft Graph
 
-Use a API da Biblioteca de Autenticação Microsoft, [MSAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries), para adquirir o token de acesso para o Microsoft Graph.
+Use a API da Biblioteca de Autenticação Microsoft, [MSAL](/azure/active-directory/develop/active-directory-v2-libraries), para adquirir o token de acesso para o Microsoft Graph.
 
 ## <a name="consent-and-authorization"></a>Consentimento e autorização
 
@@ -42,8 +42,8 @@ Aplique as seguintes práticas recomendadas de consentimento e autorização ao 
 - **Esteja atento ao configurar seu aplicativo**. Isso afetará diretamente as experiências do usuário final e do administrador, além da adoção e segurança do aplicativo. Por exemplo:
 
   - A declaração de privacidade, os termos de uso, o nome, o logotipo e o domínio do seu aplicativo serão exibidos com consentimento e outras experiências. Portanto, verifique se foram configurados com cuidado para que sejam compreendidos pelos usuários finais.
-  - Leve em consideração quem consentirá com seu aplicativo, seja o usuário final ou administrador, e configure seu aplicativo para [solicitar permissões de forma adequada](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes).
-  - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+  - Leve em consideração quem consentirá com seu aplicativo, seja o usuário final ou administrador, e configure seu aplicativo para [solicitar permissões de forma adequada](/azure/active-directory/develop/active-directory-v2-scopes).
+  - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
 
 - **Considere usar aplicativos multilocatários**. Tenha em mente que os clientes podem ter vários controles de aplicativo e consentimentos em diferentes estados. Por exemplo:
 

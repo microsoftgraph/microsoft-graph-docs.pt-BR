@@ -2,13 +2,13 @@
 title: Integração do aplicativo iOS no SDK do lado do cliente para notificações ao usuário
 description: Integre o aplicativo iOS com notificações de usuário no SDK do cliente.
 localization_priority: Priority
-ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: 007a82f18e1cc8bfcb2dfcd4c18753ed6a3f261d
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.prod: notifications
+ms.openlocfilehash: 9a89fd3080b4bcc5d16f58be35d9e339388c0e39
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080910"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288669"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo iOS no SDK do lado do cliente para notificações ao usuário
 
@@ -90,7 +90,7 @@ target 'iOSSample' do
 
 No SDK do lado do cliente é desenvolvido com base em uma infraestrutura chamada Plataforma de Dispositivo Conectado. Antes de poder usar qualquer recurso, a plataforma deve ser inicializada em seu aplicativo. As etapas de inicialização que devem ocorrer no método **AppDelegate**, porque eles são necessários antes de ocorrer os cenários de notificação.
 
-Você deve criar e inicializar a plataforma ao instanciar a classe [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform). Antes de fazer isso, certifique-se de conectar manipuladores de eventos, como mostrado, pois depois que a plataforma é iniciada, os eventos podem começar a acionar.  
+Você deve criar e inicializar a plataforma ao instanciar a classe [**MCDConnectedDevicesPlatform**](/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform). Antes de fazer isso, certifique-se de conectar manipuladores de eventos, como mostrado, pois depois que a plataforma é iniciada, os eventos podem começar a acionar.  
 
 ```ObjectiveC
 MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];
@@ -251,6 +251,6 @@ Uma notificação é removida do repositório de notificação do usuário apena
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência da API](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
+- [Referência da API](/windows/project-rome/notifications/api-reference-for-ios/) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
 - [Exemplo do lado do cliente](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) para aplicativos Android.
-- [Exemplo do servidor do aplicativo](notifications-integrating-app-server.md) para publicar as notificações. 
+- [Exemplo do servidor do aplicativo](notifications-integrating-app-server.md) para publicar as notificações.

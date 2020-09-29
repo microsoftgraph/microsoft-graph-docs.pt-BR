@@ -4,12 +4,12 @@ description: Registre seu aplicativo no Centro de Desenvolvimento do Windows par
 localization_priority: Priority
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 7cfbbdc61b0e473b7aa1401c8f48a3fd0c828928
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e693e3edb0f6ec718d4aed6eb976da5a6f14c736
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939646"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288367"
 ---
 # <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications"></a>Integração de experiências entre dispositivos para as notificações do Microsoft Graph
 
@@ -19,7 +19,7 @@ ms.locfileid: "37939646"
 Além do [registro do aplicativo no Portal do Azure](notifications-integration-app-registration.md), seu aplicativo deve registrar as informações entre dispositivos, por exemplo, a ID do aplicativo entre dispositivos e as credenciais de push multiplataforma para autorizar o Microsoft Graph a enviar notificações por serviços nativos de notificações por push, que correspondem a cada sistema operacional: Windows, iOS e Android. Isso é feito por meio do [painel do Partner Center (antigo painel do Centro de Desenvolvimento do Windows)](https://partner.microsoft.com/dashboard/). 
 
 > [!NOTE]
-> Você precisa de uma conta de desenvolvedor do Windows para concluir as etapas deste artigo, mesmo que não planeje criar um aplicativo Windows UWP. Se ainda não tiver uma conta de desenvolvedor do Windows, confira [Abrir uma conta de desenvolvedor](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account). Como alternativa, caso prefira não se inscrever como desenvolvedor do Windows, você pode entrar em contato pelo email [gnsengage@microsoft.com](sendto: gnsengage@microsoft.com). Se você criar uma conta de desenvolvedor do Windows e estiver desenvolvendo um aplicativo corporativo ou de estudante como parte de uma empresa, você poderá associar sua conta de desenvolvedor com uma conta apropriada do Azure AD usada para gerenciar envios de sua empresa. Para saber mais, confira [Associar o Azure Active Directory à sua conta do Partner Center](https://docs.microsoft.com/windows/uwp/publish/associate-azure-ad-with-partner-center).
+> Você precisa de uma conta de desenvolvedor do Windows para concluir as etapas deste artigo, mesmo que não planeje criar um aplicativo Windows UWP. Se ainda não tiver uma conta de desenvolvedor do Windows, confira [Abrir uma conta de desenvolvedor](/windows/uwp/publish/opening-a-developer-account). Como alternativa, caso prefira não se inscrever como desenvolvedor do Windows, você pode entrar em contato pelo email [gnsengage@microsoft.com](sendto: gnsengage@microsoft.com). Se você criar uma conta de desenvolvedor do Windows e estiver desenvolvendo um aplicativo corporativo ou de estudante como parte de uma empresa, você poderá associar sua conta de desenvolvedor com uma conta apropriada do Azure AD usada para gerenciar envios de sua empresa. Para saber mais, confira [Associar o Azure Active Directory à sua conta do Partner Center](/windows/uwp/publish/associate-azure-ad-with-partner-center).
 
 Para começar, entre no [painel do Partner Center](https://partner.microsoft.com/dashboard) com sua conta de desenvolvedor do Windows:
 
@@ -47,7 +47,7 @@ Para começar, entre no [painel do Partner Center](https://partner.microsoft.com
  ![Forneça credenciais de push entre dispositivos](images/notifications-crossdevice-push-cred.png)
 
 > [!NOTE]
-> Para aplicativos UWP do Windows, habilitar as notificações por push WNS é um pré-requisito para usar as notificações do Microsoft Graph. Para saber mais, confira a [Visão geral do WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview). Após fazer a integração, você pode fornecer credenciais de push pelo Partner Center para a plataforma do dispositivo conectado.
+> Para aplicativos UWP do Windows, habilitar as notificações por push WNS é um pré-requisito para usar as notificações do Microsoft Graph. Para saber mais, confira a [Visão geral do WNS](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview). Após fazer a integração, você pode fornecer credenciais de push pelo Partner Center para a plataforma do dispositivo conectado.
 
 6.  Verifique o domínio do aplicativo entre dispositivos, que serve como um processo de verificação para provar que o aplicativo tem a propriedade desse domínio. Isso funciona como uma identidade do aplicativo entre dispositivos para o aplicativo ou os aplicativos que você registrou, conforme mostrado.
     

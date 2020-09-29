@@ -4,12 +4,12 @@ description: O Outlook pode suspender a entrega de notificações de alteração
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5e3dae04534029d657699150caf2f2a8e4d38cde
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2653bb4bee35002a4af19a1f3870bb0a2a1219bc
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193152"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288921"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications-for-outlook-resources-preview"></a>Reduzir assinaturas ausentes e alterar notificações de recursos do Outlook (visualização) 
 
@@ -109,7 +109,7 @@ Alguns aspectos a serem observados neste tipo de notificação:
 1. [Confirme](webhooks.md#change-notifications) o recebimento da notificação do ciclo de vida respondendo à chamada do POST com `202 - Accepted`.
 2. [Validar](webhooks.md#change-notifications) a autenticidade da notificação do ciclo de vida.
 3. Certifique-se de que o aplicativo tenha um token de acesso válido para a próxima etapa. 
-  > **Observação**: se você estiver usando uma das [bibliotecas de autenticação](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries), elas farão isso para você ao reutilizar um token de cache válido ou obtendo um novo token, inclusive pedindo ao usuário para fazer logon novamente (com uma nova senha). Observe que a obtenção de um novo token pode falhar, pois as condições de acesso podem ser alteradas e o chamador não poderá mais acessar os dados de recursos. 
+  > **Observação**: se você estiver usando uma das [bibliotecas de autenticação](/azure/active-directory/develop/reference-v2-libraries), elas farão isso para você ao reutilizar um token de cache válido ou obtendo um novo token, inclusive pedindo ao usuário para fazer logon novamente (com uma nova senha). Observe que a obtenção de um novo token pode falhar, pois as condições de acesso podem ser alteradas e o chamador não poderá mais acessar os dados de recursos. 
 
 4. Criar uma nova assinatura usando o processo padrão descrito [aqui](webhooks.md#subscription-request-example).
 
@@ -158,7 +158,7 @@ Quando receber uma notificação `reauthorizationRequired` de ciclo de vida, voc
 Você pode criar uma inscrição de longa duração (três dias) e as notificações de alteração começarão a fluir para o **notificationUrl**. Caso as condições de acesso tenham sido alteradas desde a criação da assinatura, o Microsoft Graph pode exigir que você recrie a assinatura para provar que ainda tem acesso aos dados do recurso. A seguir estão exemplos de alterações que afetam o acesso aos dados:
 
 - Um administrador de locatários pode revogar as permissões do seu aplicativo para ler um recurso.
-- Em um cenário interativo, o usuário que fornece o token de autenticação ao seu aplicativo pode estar sujeito a políticas dinâmicas com base em vários fatores, como o local, o estado do dispositivo ou a avaliação de risco. Por exemplo, se o usuário alterar o seu local físico, pode ser que ele não tenha mais permissão para acessar os dados e seu aplicativo não conseguirá autorizar novamente a assinatura. Para saber mais sobre políticas dinâmicas que controlam o acesso, confira [Políticas de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). 
+- Em um cenário interativo, o usuário que fornece o token de autenticação ao seu aplicativo pode estar sujeito a políticas dinâmicas com base em vários fatores, como o local, o estado do dispositivo ou a avaliação de risco. Por exemplo, se o usuário alterar o seu local físico, pode ser que ele não tenha mais permissão para acessar os dados e seu aplicativo não conseguirá autorizar novamente a assinatura. Para saber mais sobre políticas dinâmicas que controlam o acesso, confira [Políticas de acesso condicional do Azure AD](/azure/active-directory/conditional-access/overview). 
 
 As etapas a seguir representam o fluxo de um desafio de autorização para uma assinatura ativa:
 
@@ -207,7 +207,7 @@ Alguns aspectos a serem observados neste tipo de notificação:
 1. [Confirme](webhooks.md#change-notifications) o recebimento da notificação do ciclo de vida respondendo à chamada do POST com `202 - Accepted`.
 2. [Validar](webhooks.md#change-notifications) a autenticidade da notificação do ciclo de vida.
 3. Certifique-se de que o aplicativo tenha um token de acesso válido para a próxima etapa. 
-  > **Observação**: se você estiver usando uma das [bibliotecas de autenticação](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries), elas farão isso para você ao reutilizar um token de cache válido ou obtendo um novo token, inclusive pedindo ao usuário para fazer logon novamente (com uma nova senha). Observe que a obtenção de um novo token pode falhar, pois as condições de acesso podem ser alteradas e o chamador não poderá mais acessar os dados de recursos. 
+  > **Observação**: se você estiver usando uma das [bibliotecas de autenticação](/azure/active-directory/develop/reference-v2-libraries), elas farão isso para você ao reutilizar um token de cache válido ou obtendo um novo token, inclusive pedindo ao usuário para fazer logon novamente (com uma nova senha). Observe que a obtenção de um novo token pode falhar, pois as condições de acesso podem ser alteradas e o chamador não poderá mais acessar os dados de recursos. 
 
 4. Chamar uma das duas APIs a seguir. Se a chamada da API for bem-sucedida, o fluxo de notificação de mudança será retomado.
 

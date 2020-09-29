@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece um único ponto de extremidade de API que
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 61cd5227e495102a7ac957959cffffc104d85542
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: e6438451fa4abdf08e288b9d262fdc46c7ce7e59
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849104"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289215"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Adicionar dados personalizados aos recursos usando extensões
 
@@ -120,7 +120,7 @@ Há suporte para os seguintes tipos de dados quando se define uma propriedade em
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Extensões do esquema de diretório do Azure AD
 
-O Azure AD dá suporte a um tipo semelhante de extensão, conhecido como [extensões de esquema de diretório](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0). Você pode usar a API da Microsoft Graph para gerenciar as[definições de propriedade de extensão](/graph/api/resources/extensionproperty?view=graph-rest-1.0) e para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
+O Azure AD dá suporte a um tipo semelhante de extensão, conhecido como [extensões de esquema de diretório](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0). Você pode usar a API da Microsoft Graph para gerenciar as[definições de propriedade de extensão](/graph/api/resources/extensionproperty?view=graph-rest-1.0) e para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
 
 ## <a name="permissions"></a>Permissões
 
@@ -139,7 +139,7 @@ Os seguintes limites se aplicam aos recursos de diretório (como **usuário**, *
 
 Os seguintes limites se aplicam aos recursos do Outlook (como **mensagem**, **evento** e **contatos**):
 
-- Cada extensão aberta é armazenada em uma [propriedade nomeada MAPI](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx), que é um recurso limitado na caixa de correio de um usuário. Para mais detalhes, confira [tipo de recurso openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-1.0).
+- Cada extensão aberta é armazenada em uma [propriedade nomeada MAPI](/office/client-developer/outlook/mapi/mapi-named-properties), que é um recurso limitado na caixa de correio de um usuário. Para mais detalhes, confira [tipo de recurso openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-1.0).
 
 ### <a name="schema-extension-limits"></a>Limites de extensão do esquema
 
@@ -157,6 +157,6 @@ Nas limitações conhecidas usando extensões, veja a [seção extensões](known
 
 ## <a name="see-also"></a>Confira também
 
-- [Domínios do Microsoft 365](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Domínios do Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/domains)
 
 - [Adicionando e verificando um domínio para um locatário do Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

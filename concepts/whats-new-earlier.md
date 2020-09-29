@@ -3,12 +3,12 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 84452d032bb1ee65b02401fca528b0b3e2f7289d
-ms.sourcegitcommit: f4e95b6e06dedeca0aa6b27e8ad1c655b1d45fec
+ms.openlocfilehash: 63ce3a29a94f155e61ad54a7f4c12e82afae2529
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47448443"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289068"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
 
@@ -33,7 +33,7 @@ DG das seguintes propriedades para a entidade [group](/graph/api/resources/group
 - GA de [posições nomeadas](/graph/api/resources/namedLocation) representando regras personalizadas que definem os locais de rede usados em uma política de acesso condicional.
 
 ### <a name="schema-extensions"></a>Extensões de esquema
-O recurso [extensões de esquema](/graph/api/resources/schemaextension) já está disponível para o público em geral no[Microsoft Cloud for US Government](/graph/deployments).
+O recurso [extensões de esquema](/graph/api/resources/schemaextension) já está disponível para o público em geral no[Microsoft Cloud for US Government](./deployments.md).
 
 ### <a name="teamwork"></a>Trabalho em equipe
 Use as permissões delegadas de `TeamsAppInstallation.ReadForTeam` ou `TeamsAppInstallation.ReadWriteForTeam` ou permissões de aplicativo de `TeamsAppInstallation.ReadForTeam.All` ou `TeamsAppInstallation.ReadWriteForTeam.All` para [listar aplicativos instalados em uma equipe](/graph/api/teamsappinstallation-list).
@@ -119,7 +119,7 @@ Use as permissões de aplicativo `Group.Read.All` e `Group.ReadWrite.All` para o
 Especifique dados de localização geográfica em uma [definição de coluna](/graph/api/resources/columndefinition) para um recurso de uma [lista](/graph/api/resources/list) do SharePoint.
 
 ### <a name="teamwork"></a>Trabalho em equipe
-- Use a permissão delegada [AppCatalog.Read.All](/graph/permissions-reference#appcatalog-resource-permissions) para listar [aplicativos](/graph/api/resources/teamsapp?view=graph-rest-1.0) do catálogo de aplicativos do Microsoft Teams.
+- Use a permissão delegada [AppCatalog.Read.All](./permissions-reference.md#appcatalog-resource-permissions) para listar [aplicativos](/graph/api/resources/teamsapp?view=graph-rest-1.0) do catálogo de aplicativos do Microsoft Teams.
 - [Obtenha informações sobre a pasta](/graph/api/channel-get-filesfolder) que mapeia para a guia **Arquivos** de um [canal](/graph/api/resources/channel) do Teams.
 - [Obtenha o do canal padrão](/graph/api/team-get-primarychannel) — rotulado como **Geral** — de uma [equipe](/graph/api/resources/team).
 
@@ -193,7 +193,7 @@ GA da [API de locais](/graph/api/resources/place) na v1.0: use essa API em aplic
 
 ### <a name="cloud-communications--call-records"></a>Comunicações na nuvem | Registros de chamadas
 - GA da [API de registros de chamadas](/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0): use o recurso [callRecord](/graph/api/resources/callrecord?view=graph-rest-1.0) para obter os metadados de chamadas e reuniões online no Microsoft Teams e no Skype.
-- Inscreva-se para [alterar notificações](/graph/webhooks) de alterações para todos os recursos de **callRecord** em uma organização.
+- Inscreva-se para [alterar notificações](./webhooks.md) de alterações para todos os recursos de **callRecord** em uma organização.
 - [Liste as sessões](/graph/api/callrecords-session-list?view=graph-rest-1.0) em um **callRecord** e, opcionalmente, [expanda cada sessão para listar os segmentos](/graph/api/callrecords-session-list?view=graph-rest-1.0#example-2-get-session-list-with-segments) no registro de chamadas.
 - Suporte para 60 GHz (`frequency60GHz`) e valores de banda de WiFi de `unknownFutureValue` para um ponto de extremidade de mídia em um segmento.
 - Suporte à caixa postal como um possível tipo de ponto de extremidade do lado do serviço em um [segmento](/graph/api/resources/callrecords-segment) de comunicação.
@@ -221,10 +221,10 @@ Para mais detalhes, confira [O novo Explorador do Graph já está disponível](h
 
 ### <a name="microsoft-graph-sdks"></a>SDKs do Microsoft Graph
 Confira as novas diretrizes de SDK em:
-- [Paginação](/graph/sdks/paging)
-- [Envio em lote](/graph/sdks/batch-requests)
-- [Carregando arquivos grandes no OneDrive](/graph/sdks/large-file-upload)
-- [Personalizando o cliente do serviço SDK por meio dos componentes middleware HTTP](/graph/sdks/customize-client).
+- [Paginação](./sdks/paging.md)
+- [Envio em lote](./sdks/batch-requests.md)
+- [Carregando arquivos grandes no OneDrive](./sdks/large-file-upload.md)
+- [Personalizando o cliente do serviço SDK por meio dos componentes middleware HTTP](./sdks/customize-client.md).
 
 ### <a name="teamwork"></a>Trabalho em equipe
 - Se o seu cenário envolver reuniões online no Teams, confira as novas diretrizes sobre [como escolher](choose-online-meeting-api.md) entre a [API de calendário](outlook-calendar-online-meetings.md) e a [API de comunicações na nuvem](cloud-communications-online-meetings.md) para criar e ingressar em reuniões online.
@@ -259,7 +259,7 @@ Atualizações de [maio](changelog.md#may-2020) do Intune beta.
 - Especifique os recursos a serem fornecidos na propriedade **resourceProvisioningOptions** que normalmente não fazem parte da criação do [grupo](/graph/api/resources/group?view=graph-rest-beta) padrão. Atualmente há suporte para provisionamento de um grupo como uma [equipe](/graph/api/resources/team?view=graph-rest-beta) com os recursos do Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-- Aplica opções de consulta do sistema OData (`$count`, `$filter`, `$search`) ao obter coleções de entidades derivadas do [directoryObject](). Você pode [pesquisar tokens específicos](/graph/query-parameters?#using-search-on-directory-object-collections) nas propriedades **displayName** e **description** dessas entidades, e usar a conversão OData para aparar os resultados do **directoryObject** para determinados tipos derivados. Veja mais detalhes em [Criar consultas avançadas no Microsoft Graph com $count, $filter, $search e $orderby](https://developer.microsoft.com/pt-BR/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
+- Aplica opções de consulta do sistema OData (`$count`, `$filter`, `$search`) ao obter coleções de entidades derivadas do [directoryObject](). Você pode [pesquisar tokens específicos](./query-parameters.md#using-search-on-directory-object-collections) nas propriedades **displayName** e **description** dessas entidades, e usar a conversão OData para aparar os resultados do **directoryObject** para determinados tipos derivados. Veja mais detalhes em [Criar consultas avançadas no Microsoft Graph com $count, $filter, $search e $orderby](https://developer.microsoft.com/pt-BR/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - Como parte da [API de proteção de identidade](/graph/api/resources/identityprotection-root?view=graph-rest-beta), use a propriedade **riskEventType** para [obter o tipo de risco detectado](/graph/api/riskdetection-get?view=graph-rest-beta) ou [obter o tipo de risco no histórico de um usuário](/graph/api/riskyuser-list-history?view=graph-rest-beta). Não use a propriedade **risktype** como foi preterida.
 - Especifique os tipos de aplicativo cliente na propriedade **clientAppTypes** do [conjunto de condições](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) de uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
 - Use a permissão delegada de `EntitlementManagement.Read.All` para permitir ao aplicativo solicitar acesso para ler pacotes de acesso e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.
@@ -268,7 +268,7 @@ Atualizações de [maio](changelog.md#may-2020) do Intune beta.
 
 ### <a name="teamwork"></a>Trabalho em equipe
 - Os aplicativos do Teams que oferecem [suporte a SSO (logon único)](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) podem especificar o `WebApplicationInfo.id` a partir do manifesto do aplicativo Teams, na propriedade **azureADAppId** do [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).
-- Use as [permissões mais refinadas](/graph/permissions-reference#teams-resource-specific-consent-permissions) para acessar os recursos da [equipe](/graph/api/resources/team?view=graph-rest-beta) e do [canal](/graph/api/resources/channel?view=graph-rest-beta).
+- Use as [permissões mais refinadas](./permissions-reference.md#teams-resource-specific-consent-permissions) para acessar os recursos da [equipe](/graph/api/resources/team?view=graph-rest-beta) e do [canal](/graph/api/resources/channel?view=graph-rest-beta).
 
 
 ## <a name="april-2020-new-and-generally-available"></a>Abril de 2020: novo e geralmente disponível.
@@ -320,7 +320,7 @@ Identifique o aplicativo que criou um [grupo](/graph/api/resources/group?view=gr
 - [Gerenciar](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta) os [métodos de autenticação](/graph/api/resources/authenticationmethod?view=graph-rest-beta) de um usuário que incluem a [senha](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta) ou [telefone](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta). Por exemplo, [redefinir uma senha de usuário](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta), [obter o status da redefinição](/graph/api/authenticationoperation-get?view=graph-rest-beta) ou [adicionar um número de telefone](/graph/api/authentication-post-phonemethods?view=graph-rest-beta) para um usuário para autenticação de SMS ou chamada de voz, se a política estiver habilitada para o usuário.
 
 ### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
-[Listar](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [participantes confiáveis](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) configurados nos Serviços de Federação do Active Directory.
+[Listar](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [participantes confiáveis](/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) configurados nos Serviços de Federação do Active Directory.
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
 Exibir dados de **Reunião Criada** e de **Reunião Interagida** nos relatórios CSV para [contagens de atividades de email](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), [contagens de atividades de email do usuário](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) e [detalhes de atividades de email do usuário](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta).
@@ -395,7 +395,7 @@ Observe que a partir de março de 2020, o serviço de _impressão universal_ est
 Vamos examinar um exemplo de [criação de um evento em um calendário compartilhado ou delegado](outlook-create-event-in-shared-delegated-calendar.md), além das ações e propriedades disponíveis para o representante, os convidados e o proprietário do calendário durante esse processo.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-- Para aumentar a segurança ao assinar as [notificações de alteração dos dados do usuário](webhooks.md), [impor o Protocolo TLS 1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) ou mais recente em clientes e servidores de sites usados no processo de notificação. O novo requisito será lançado em estágios a partir de 15 de fevereiro de 2020. A partir de 15 de maio de 2020, todos os pontos de extremidade de notificação devem atendem ao novo requisito de TLS. [Descubra os estágios do lançamento](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) e, se necessário, use a nova propriedade **latestSupportedTlsVersion** como uma solução alternativa temporária para evitar falhas de assinatura antes de concluir a atualização de TLS.
+- Para aumentar a segurança ao assinar as [notificações de alteração dos dados do usuário](webhooks.md), [impor o Protocolo TLS 1.2](/configmgr/core/plan-design/security/enable-tls-1-2) ou mais recente em clientes e servidores de sites usados no processo de notificação. O novo requisito será lançado em estágios a partir de 15 de fevereiro de 2020. A partir de 15 de maio de 2020, todos os pontos de extremidade de notificação devem atendem ao novo requisito de TLS. [Descubra os estágios do lançamento](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) e, se necessário, use a nova propriedade **latestSupportedTlsVersion** como uma solução alternativa temporária para evitar falhas de assinatura antes de concluir a atualização de TLS.
 - Use os respectivos tipos de [solicitação de avaliação de ameaças](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0) para controlar as ameaças de [email](/graph/api/resources/mailassessmentrequest?view=graph-rest-1.0), um [arquivo de mensagem de email](/graph/api/resources/emailfileassessmentrequest?view=graph-rest-1.0) (arquivo .EML), [arquivo de anexo de email](/graph/api/resources/fileassessmentrequest?view=graph-rest-1.0) (texto, Word ou arquivo binário) ou [URL](/graph/api/resources/urlassessmentrequest?view=graph-rest-1.0).
 
 ### <a name="users"></a>Usuários
@@ -497,7 +497,7 @@ Atualizações de [Dezembro](changelog.md#december-2019) do Intune
 - Para um [grupo](/graph/api/resources/group?view=graph-rest-1.0) especificado, [verifique a associação](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) em outros grupos ou funções de diretório.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-- Registre [aplicativos](/graph/api/resources/application?view=graph-rest-1.0) que se autenticam com o Azure Active Directory (Azure AD). Use as [permissões](/graph/permissions-reference#application-resource-permissions) delegadas, Application.Read.All e Application.ReadWrite.All ou as permissões de aplicativos, Application.Read.All, conforme apropriado.
+- Registre [aplicativos](/graph/api/resources/application?view=graph-rest-1.0) que se autenticam com o Azure Active Directory (Azure AD). Use as [permissões](./permissions-reference.md#application-resource-permissions) delegadas, Application.Read.All e Application.ReadWrite.All ou as permissões de aplicativos, Application.Read.All, conforme apropriado.
 - Para um [dispositivo](/graph/api/resources/device?view=graph-rest-1.0) especificado, [verifique a associação](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) em outros grupos ou funções de diretório.
 
 ### <a name="mail"></a>Email
@@ -559,7 +559,7 @@ Use a propriedade **creationType** para descobrir como uma conta de usuário foi
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 - Use [contatos da organização](/graph/api/resources/orgcontact?view=graph-rest-1.0) em aplicativos de produção. Os contatos da organização são gerenciados por administradores da organização, sincronizados de um Active Directory local ou do Exchange Online.
-- Configure a [autenticação baseada em certificado](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started) em uma [organização](/graph/api/resources/organization?view=graph-rest-1.0).
+- Configure a [autenticação baseada em certificado](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started) em uma [organização](/graph/api/resources/organization?view=graph-rest-1.0).
 - Adicionar e remover [credenciais de senha](/graph/api/resources/passwordcredential?view=graph-rest-1.0) para [aplicativos](/graph/api/resources/application?view=graph-rest-1.0).
 
 ### <a name="mail"></a>Email
@@ -571,7 +571,7 @@ Os desenvolvedores e os cientistas de dados agora podem usar [ferramentas para t
 
 ### <a name="microsoft-graph-sdks"></a>SDKs do Microsoft Graph
 - Use os manipuladores de caos no SDK do JavaScript para verificar se um aplicativo é resistente a falhas de servidor que são difíceis de iniciar.
-- Ler sobre [fazer chamadas API usando os SDKs](/graph/sdks/create-requests).
+- Ler sobre [fazer chamadas API usando os SDKs](./sdks/create-requests.md).
 
 ### <a name="users"></a>Usuários
 - [Obtenha](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0) ou [defina](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) as configurações preferenciais de formato de data e hora do usuário [para a caixa de correio do usuário](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). 
@@ -614,7 +614,7 @@ Experimente a [próxima versão do Graph Explorer](https://developer.microsoft.c
 
 ### <a name="microsoft-graph-security-api"></a>API de Segurança do Microsoft Graph
 - Visualize a integração com a RSA NetWitness, ServiceNow e Splunk, para correlacionar e sincronizar [alertas](/graph/api/resources/security-api-overview?view=graph-rest-beta#alerts)e melhorar a proteção contra ameaças e respostas.
-- Novos disparadores adicionados ao [Conector de Segurança do Microsoft Graph](https://docs.microsoft.com/connectors/microsoftgraphsecurity/) e [guias estratégicos](https://docs.microsoft.com/azure/security-center/security-center-playbooks) para Aplicativos de Lógica e Fluxo. Confira [exemplos de guias estratégicos](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks).
+- Novos disparadores adicionados ao [Conector de Segurança do Microsoft Graph](/connectors/microsoftgraphsecurity/) e [guias estratégicos](/azure/security-center/security-center-playbooks) para Aplicativos de Lógica e Fluxo. Confira [exemplos de guias estratégicos](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks).
 - Suporte no envio de [indicadores ameaças](/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) para o Microsoft Defender ATP para bloquear ou alertar ameaças usando suas próprias fontes de inteligência. Integrações com parceiros como o ThreatConnect permitem que os clientes enviem indicadores diretamente das soluções de inteligência e automação contra ameaças. 
 
 ### <a name="notifications"></a>Notificações
@@ -749,7 +749,7 @@ Atualizações de [julho](changelog.md#july-2019) do Intune
 Aplique a data/hora de vencimento ou a senha ao [criar um link de compartilhamento](/graph/api/driveitem-createlink?view=graph-rest-beta) para um arquivo, pasta, ou outros [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta).
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-- Use [nova permissão de aplicativo](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ para operações CRUD nas [análises de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta). 
+- Use [nova permissão de aplicativo](./permissions-reference.md#access-reviews-permissions) _AccessReview.ReadWrite.Membership_ para operações CRUD nas [análises de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta). 
 - Use [novas permissões delegadas e de aplicativo ](permissions-reference.md#administrative-units-permissions),_AdministrativeUnit.Read.All _ e _AdministrativeUnit. ReadWrite.All_, para ler ou gravar respectivamente (incluindo criar, atualizar, excluir ou gerenciar a associação) recursos da [unidade de administração](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 - Use as [novas permissões delegadas e de aplicativo](permissions-reference.md#organization-permissions), _Organization.Read.All_ e _Organization.ReadWrite.All_ para acessar uma [organização](/graph/api/resources/organization?view=graph-rest-beta) e recursos relacionados, como [SKU inscritos](/graph/api/resources/subscribedsku?view=graph-rest-beta).
 - Use a nova função[descobrir](/graph/api/directorydefinition-discover?view=graph-rest-beta) para encontrar o [esquema de sincronização](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta)de diretório mais recente, para sincronizar objetos de diretório, atributos e seus tipos de aplicativo.
@@ -808,7 +808,7 @@ Obtenha [rótulos de confidencialidade](/graph/api/resources/assignedlabel?view=
 Use permissões de aplicativo mais detalhadas _Mail.ReadBasic.All_ para ler a caixa de correio de um usuário, com exceção de qualquer corpo de mensagem, corpo de visualização, anexos e propriedades estendidas e com exceção da pesquisa na caixa de correio. Disponível para métodos de leitura [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta) e [controle de alterações](delta-query-overview.md) para [mensagem](/graph/api/resources/message?view=graph-rest-beta) e **mailFolder.**
 
 ### <a name="microsoft-graph-toolkit"></a>Kit de ferramentas do Microsoft Graph
-O [kit de ferramentas do Microsoft Graph](/graph/toolkit/overview) é um conjunto de colaboradores e de componentes da Web de estrutura independente que oferece conveniência para autenticar e acessar dados no Microsoft Graph. Como o kit de ferramentas do Microsoft Graph está no status de visualização, use provedores e componentes do kit de ferramentas somente em aplicativos que não são de produção.
+O [kit de ferramentas do Microsoft Graph](./toolkit/overview.md) é um conjunto de colaboradores e de componentes da Web de estrutura independente que oferece conveniência para autenticar e acessar dados no Microsoft Graph. Como o kit de ferramentas do Microsoft Graph está no status de visualização, use provedores e componentes do kit de ferramentas somente em aplicativos que não são de produção.
 
 ### <a name="reports"></a>Relatórios
 - Obtenha [relatórios sobre os métodos de autenticação](/graph/api/resources/authenticationmethods-usage-insights-overview?view=graph-rest-beta) adotados pelos usuários em uma organização, como rest de senha de autoatendimento e autenticação multifator (MFA).
@@ -830,7 +830,7 @@ Permitir que os usuários [sigam](/graph/api/site-follow?view=graph-rest-beta) o
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 [Fornecedores de identidade](/graph/api/resources/identityprovider?view=graph-rest-1.0)
-[melhores guias de autenticação](/graph/auth)
+[melhores guias de autenticação](./auth/index.yml)
 [migrando aplicativos do Azure AD Graph para o Microsoft Graph](migrate-azure-ad-graph-planning-checklist.md)
 
 ### <a name="sdks"></a>SDKs

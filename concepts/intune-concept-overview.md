@@ -4,12 +4,12 @@ description: 'O Microsoft Intune ajuda as empresas a gerenciar dispositivos e ap
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: a18096f53dfa88bd37b0cad11639c3b2285206e6
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: a3fa7e8dcd60a5070e7f52a307d355e0e0df4d04
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133765"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288346"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Visão geral da API de dispositivos e aplicativos do Intune
 
@@ -57,7 +57,7 @@ Está procurando a referência de API para esse serviço?
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar o Azure AD para acessar a API do Intune](https://docs.microsoft.com/intune/intune-graph-apis).
+- [Usar o Azure AD para acessar a API do Intune](/intune/intune-graph-apis).
 - Veja como realizar tarefas comuns usando os [exemplos do PowerShell Intune](https://github.com/microsoftgraph/powershell-intune-samples).
 - Saiba como [usar a API REST do Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
 - Confira o [log de alterações](changelog.md) para obter informações sobre as novidades na API do Intune.

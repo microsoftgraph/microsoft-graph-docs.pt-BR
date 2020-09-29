@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 48dada7f3f1f47a5b513c62073f5c3c34f7c7e3b
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 12c81a9d2146f24ade4ffcd148ca734ba30e3ab4
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192732"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288774"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -122,7 +122,7 @@ Para um aplicativo com permissões delegadas para ler as revisões de acesso de 
 
 Para um aplicativo com permissões delegadas para ler revisões de acesso de uma função do Azure AD, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Função Privilegiada. Para um aplicativo com permissões delegadas para gravar revisões de acesso de uma função do Azure AD, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global ou Administrador de Função Privilegiada.
 
-Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ---
 
@@ -400,7 +400,7 @@ Nenhum.
 |_Calls.JoinGroupCallasGuest.All_|Ingressar em reuniões e chamadas de grupo como um convidado (visualização)|Permite que o aplicativo ingresse anonimamente no grupo chamadas e em reuniões agendadas em sua organização, sem um usuário conectado. O aplicativo ingressará como convidado para reuniões em seu locatário.|Sim|
 |_Calls.AccessMedia.All_\*|Acessar fluxos de mídia em uma chamada como um aplicativo (visualização)|Permite que o aplicativo obtenha acesso direto aos fluxos de mídia em uma chamada sem um usuário conectado.|Sim|
 
-> \***Importante:** NÃO é possível usar as APIs de comunicações na nuvem para gravar ou persistir o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentações de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
+> \***Importante:** NÃO é possível usar as APIs de comunicações na nuvem para gravar ou persistir o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentações de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
 <br/>
 
@@ -438,7 +438,7 @@ A permissão _CallRecords.Read.All_concede a um aplicativo acesso privilegiado a
 
 > **Importante:** A discrição deve ser usada ao conceder essas permissões aos aplicativos. Os registros de chamadas podem fornecer informações sobre a operação de seus negócios e, portanto, podem ser um alvo para agentes mal-intencionados. Conceda essas permissões apenas aos aplicativos em que você confia para atender aos seus requisitos de proteção de dados.
 
-> **Importante:** certifique-se de que está em conformidade com as leis e regulamentos da sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
+> **Importante:** certifique-se de que está em conformidade com as leis e regulamentos da sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
 <br/>
 
@@ -667,7 +667,7 @@ A permissão _Directory.ReadWrite.All_ concede os seguintes privilégios:
 
 > **Observação**:
 > - Nenhum direito de redefinir senhas de usuários.
-> - A atualização das propriedades **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida somente para usuários que não sejam administradores ou que tenham uma das seguintes funções atribuídas: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  Esse é o caso de aplicativos que receberam as permissões User.ReadWrite.All ou Directory.ReadWrite.All delegadas ou de aplicativo.
+> - A atualização das propriedades **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida somente para usuários que não sejam administradores ou que tenham uma das seguintes funções atribuídas: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  Esse é o caso de aplicativos que receberam as permissões User.ReadWrite.All ou Directory.ReadWrite.All delegadas ou de aplicativo.
 > - Nenhum direito de excluir recursos (incluindo usuários ou grupos).
 > - Exclui especificamente a criação ou a atualização de recursos que não estão listados acima. Isso inclui: application, oAauth2Permissiongrant, appRoleAssignment, device, servicePrincipal, organization, domains e assim por diante.
 
@@ -773,7 +773,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 > **Observe** que nas contas pessoais,Files.Read e Files.ReadWrite também concedem acesso a arquivos compartilhados com o usuário conectado.
 
-As permissões delegadas Files.Read.Selected e Files.ReadWrite.Selected são válidas apenas em contas corporativas ou de estudante e são expostas apenas para trabalhar com [manipuladores (v1.0) de arquivos do Office 365](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps). Elas não devem ser usadas para chamar diretamente as APIs do Microsoft Graph.
+As permissões delegadas Files.Read.Selected e Files.ReadWrite.Selected são válidas apenas em contas corporativas ou de estudante e são expostas apenas para trabalhar com [manipuladores (v1.0) de arquivos do Office 365](/previous-versions/office/office-365-api/). Elas não devem ser usadas para chamar diretamente as APIs do Microsoft Graph.
 
 A permissão delegada Files.ReadWrite.AppFolder só é válida para contas pessoais e é usada para acessar a [pasta especial da Raiz de Aplicativo](https://dev.onedrive.com/misc/appfolder.htm) com a API do Microsoft Graph [Obter pasta especial](/graph/api/drive-get-specialfolder?view=graph-rest-1.0) do OneDrive.
 
@@ -830,7 +830,7 @@ No caso de Permissões de aplicativo, há algumas limitações para APIs com sup
 
 Em alguns casos, um aplicativo pode precisar de [Permissões de diretório](#directory-permissions) para ler algumas propriedades do grupo como `member` e `memberOf`. Por exemplo, se um grupo tiver um ou mais [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) como membros, o aplicativo precisará de permissões eficazes para ler as entidades de serviço através do recebimento de uma das _Permissões de diretório\*_, caso contrário, o Microsoft Graph retornará um erro. No caso de Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para ler as entidades de serviço. A mesma orientação se aplica à propriedade `memberOf` que pode retornar [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
-Para definir o atributo **preferredDataLocation** de um grupo do Microsoft 365, um aplicativo precisa da permissão Directory.ReadWrite.All. Quando os usuários em um ambiente multigeográfico criam um grupo do Microsoft 365, o valor**preferredDataLocation** para o grupo é definido automaticamente como sendo igual ao do usuário. Para saber mais sobre o local de dados preferencial dos grupos, confira [Criar um grupo do Microsoft 365 com uma PDL específica](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
+Para definir o atributo **preferredDataLocation** de um grupo do Microsoft 365, um aplicativo precisa da permissão Directory.ReadWrite.All. Quando os usuários em um ambiente multigeográfico criam um grupo do Microsoft 365, o valor**preferredDataLocation** para o grupo é definido automaticamente como sendo igual ao do usuário. Para saber mais sobre o local de dados preferencial dos grupos, confira [Criar um grupo do Microsoft 365 com uma PDL específica](/office365/enterprise/multi-geo-add-group-with-pdl).
 
 As permissões de grupo são usadas para controlar o acesso aos recursos e APIs do [Microsoft Teams](/graph/api/resources/teams-api-overview). Não há suporte para as contas pessoais da Microsoft.
 
@@ -868,7 +868,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="remarks"></a>Comentários
 
-_IdentityProvider.Read.All_ e _IdentityProvider.ReadWrite.All_ são válidos apenas para contas corporativas ou de estudantes. Para que um aplicativo leia ou grave provedores de identidade com permissões delegadas, o usuário conectado deve ter a função de Administrador Global. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityProvider.Read.All_ e _IdentityProvider.ReadWrite.All_ são válidos apenas para contas corporativas ou de estudantes. Para que um aplicativo leia ou grave provedores de identidade com permissões delegadas, o usuário conectado deve ter a função de Administrador Global. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -902,7 +902,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="remarks"></a>Comentários
 
-_IdentityRiskEvent.Read.All_ é válido apenas para contas corporativas ou de estudante. No caso de um aplicativo com permissões delegadas para ler as informações de risco de identidade, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou funções do Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityRiskEvent.Read.All_ é válido apenas para contas corporativas ou de estudante. No caso de um aplicativo com permissões delegadas para ler as informações de risco de identidade, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou funções do Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -938,7 +938,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="remarks"></a>Comentários
 
-_IdentityRiskUser.Read.All_ e _IdentityRiskyUser.ReadWrite.ALL_ são válidos apenas para contas corporativas ou de estudante. No caso de um aplicativo com permissões delegadas para ler as informações de risco de identidade do usuário, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou funções do Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityRiskUser.Read.All_ e _IdentityRiskyUser.ReadWrite.ALL_ são válidos apenas para contas corporativas ou de estudante. No caso de um aplicativo com permissões delegadas para ler as informações de risco de identidade do usuário, o usuário conectado deve ser um membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança ou funções do Leitor de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -1273,9 +1273,9 @@ Nenhum.
 ### <a name="remarks"></a>Comentários
 Você pode usar essas permissões para especificar os artefatos que deseja que sejam retornados nas solicitações de token e de autorização do Azure AD. O suporte a elas é oferecido de formas diferentes nos pontos de extremidade v 1.0 e v 2.0. do Azure AD.
 
-Com o ponto de extremidade (v 1.0) do Azure AD, somente a permissão _openid_ é usada. Você especifica no parâmetro *scope*, na solicitação de autorização, para retornar um token de ID quando usar o protocolo OpenID Connect para conectar um usuário ao seu aplicativo. Para saber mais, confira o artigo [Autorizar o acesso aos aplicativos web usando o OpenID Connect e o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Para retornar com êxito um token de ID, você também deve garantir que a permissão _User.Read_ esteja configurada quando você registrar seu aplicativo.
+Com o ponto de extremidade (v 1.0) do Azure AD, somente a permissão _openid_ é usada. Você especifica no parâmetro *scope*, na solicitação de autorização, para retornar um token de ID quando usar o protocolo OpenID Connect para conectar um usuário ao seu aplicativo. Para saber mais, confira o artigo [Autorizar o acesso aos aplicativos web usando o OpenID Connect e o Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Para retornar com êxito um token de ID, você também deve garantir que a permissão _User.Read_ esteja configurada quando você registrar seu aplicativo.
 
-Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _offline\_access_ no parâmetro _scope_ para solicitar explicitamente um token de atualização quando estiver usando os protocolos OAuth 2.0 ou OpenID Connect. Com o OpenID Connect, você especifica a permissão _openid_ para solicitar um token de ID. Também é possível especificar a permissão _email_, a permissão _profile_, ou ambas, para retornar declarações adicionais no token de ID. Você não precisa especificar a _User.Read_ para retornar um token de ID com o ponto de extremidade v 2.0. Para saber mais, confira os [escopos do OpenID Connect](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
+Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _offline\_access_ no parâmetro _scope_ para solicitar explicitamente um token de atualização quando estiver usando os protocolos OAuth 2.0 ou OpenID Connect. Com o OpenID Connect, você especifica a permissão _openid_ para solicitar um token de ID. Também é possível especificar a permissão _email_, a permissão _profile_, ou ambas, para retornar declarações adicionais no token de ID. Você não precisa especificar a _User.Read_ para retornar um token de ID com o ponto de extremidade v 2.0. Para saber mais, confira os [escopos do OpenID Connect](/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 
 > **Importante** A Biblioteca de Autenticação da Microsoft (MSAL) atualmente especifica as permissões _offline\_access_, _openid_, _profile_ e _email_ por padrão nas solicitações de autorização e de token. Isso significa que, para o caso padrão, se você especificar explicitamente essas permissões, o Azure AD pode retornar um erro.
 
@@ -1461,7 +1461,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 _ProgramControl.Read.All_ e _ProgramControl.ReadWrite.All_ são válidos apenas para contas de trabalho ou escola.
 
-Para um aplicativo com permissões delegadas para ler programas e controles de programas, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Usuário. Para um aplicativo com permissões delegadas para gravar programas e controles de programas, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global ou Administrador do Usuário.  Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+Para um aplicativo com permissões delegadas para ler programas e controles de programas, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Usuário. Para um aplicativo com permissões delegadas para gravar programas e controles de programas, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global ou Administrador do Usuário.  Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ---
 
@@ -1892,7 +1892,7 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 Todas as permissões acima são válidas apenas para contas corporativas ou de estudante.
 
-Para que um aplicativo leia ou grave todos os acordos ou aceitações de acordos com permissões delegadas, o usuário conectado deve ter a função Administrador Global, Administrador de Acesso Condicional ou Administrador de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+Para que um aplicativo leia ou grave todos os acordos ou aceitações de acordos com permissões delegadas, o usuário conectado deve ter a função Administrador Global, Administrador de Acesso Condicional ou Administrador de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -2076,7 +2076,7 @@ Para contas corporativas ou de estudante, o perfil completo inclui todas as prop
 
 Com a Permissão de aplicativo _User.ReadWrite.All_, o aplicativo pode atualizar todas as propriedades declaradas das contas corporativas ou de estudante, com exceção da senha.
 
-Com a permissão _User.ReadWrite.All_ delegada ou de aplicativo, a atualização de **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não são administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Com a permissão _User.ReadWrite.All_ delegada ou de aplicativo, a atualização de **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não são administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 Para ler ou gravar os subordinados diretos (`directReports`) ou o gerente (`manager`) de uma conta corporativa ou de estudante, o aplicativo deve ter as permissões _User.Read.All_ (somente leitura) ou _User.ReadWrite.All_.
 
@@ -2192,4 +2192,3 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 | O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos e conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
 | O aplicativo deseja descobrir (localizar) um grupo do Microsoft 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para ingressar no grupo.   | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 | O aplicativo deseja criar um grupo por meio do AAD Graph |   _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
-

@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: f5ff0d6ef17ad4046bdaedf0444df94e1f7bb3df
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 8ed19246dcc7885c9921919724beb5e76ed3b37e
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193208"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289040"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -390,4 +390,4 @@ A solicitação de objetos usando a opção de [Obter objetos de diretório de u
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Funcionalidade disponível apenas nas APIs Graph do Azure AD ou REST do Office 365
 
-Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](https://docs.microsoft.com/previous-versions/office/office-365-api/) específicas do ponto de extremidade. Para o Azure Active Directory, confira [Migrar aplicativos do Azure AD Graph para o Microsoft Graph](https://docs.microsoft.com/graph/migrate-azure-ad-graph-overview). 
+Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](/previous-versions/office/office-365-api/) específicas do ponto de extremidade. Para o Azure Active Directory, confira [Migrar aplicativos do Azure AD Graph para o Microsoft Graph](./migrate-azure-ad-graph-planning-checklist.md).

@@ -2,13 +2,13 @@
 title: Integração do aplicativo Android no SDK do lado do cliente para notificações ao usuário
 description: Integre o aplicativo Android com notificações de usuário no SDK do cliente.
 localization_priority: Priority
-ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: 4463b89bf95d7b874299542596a3803007406e55
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.prod: notifications
+ms.openlocfilehash: c56aef1befa98c2082d3476900a8e40c4034653f
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183943"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288676"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo Android no SDK do lado do cliente para notificações ao usuário
 
@@ -116,7 +116,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 No SDK do lado do cliente é desenvolvido com base em uma infraestrutura chamada Plataforma de Dispositivo Conectado. Antes de poder usar qualquer recurso, a plataforma deve ser inicializada em seu aplicativo. As etapas de inicialização que devem ocorrer em sua classe principal no método **OnCreate**, porque eles são necessários para ocorrer os cenários de notificação.
 
-Você deve criar e inicializar a plataforma ao instanciar a classe [**ConnectedDevicesPlatform**](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest). Antes de fazer isso, certifique-se de conectar manipuladores de eventos, pois depois que a plataforma é iniciada, os eventos podem começar a acionar. 
+Você deve criar e inicializar a plataforma ao instanciar a classe [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest). Antes de fazer isso, certifique-se de conectar manipuladores de eventos, pois depois que a plataforma é iniciada, os eventos podem começar a acionar. 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);
@@ -375,6 +375,6 @@ channel.deleteUserNotificationAsync(notification.getId()).whenCompleteAsync((use
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência da API](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-android) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
+- [Referência da API](/windows/project-rome/notifications/api-reference-for-android) para o conjunto completo de APIs relacionadas aos recursos de notificação no SDK. 
 - [Exemplo do lado do cliente](https://github.com/Microsoft/project-rome/tree/master/Android/samples/graphnotificationssample) para aplicativos Android.
-- [Exemplo do servidor do aplicativo](notifications-integrating-app-server.md) para publicar as notificações. 
+- [Exemplo do servidor do aplicativo](notifications-integrating-app-server.md) para publicar as notificações.

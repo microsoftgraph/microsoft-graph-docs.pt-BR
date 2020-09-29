@@ -4,12 +4,12 @@ description: As notificações de alteração podem ser enviadas por meio de tec
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e7867a42e50b134692fd224a5132d9cc45b5bf2e
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 3885b8391eac98e7a355ec911a7a6e4302966e2f
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873283"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288039"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>Receba notificações sobre alterações por diferentes maneiras de envio(versão prévia)
 
@@ -137,7 +137,7 @@ A principal diferença durante a criação da assinatura será o **notificationU
 
 #### <a name="receiving-notifications"></a>Recebendo notificações
 
-Os eventos agora serão enviados para o aplicativo através dos Hubs de Eventos. Para detalhes, confira [Recebendo eventos](https://docs.microsoft.com/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) na documentação Hubs de Eventos.
+Os eventos agora serão enviados para o aplicativo através dos Hubs de Eventos. Para detalhes, confira [Recebendo eventos](/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) na documentação Hubs de Eventos.
 
 Antes de receber as notificações no aplicativo, você precisará criar outra política de acesso compartilhado com uma permissão de "Escuta" e obter a cadeia de conexão, semelhante às etapas listadas em [Configurando o Azure Event Hub](#configuring-the-azure-event-hub).
 
@@ -181,7 +181,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **Observação:** Esta API só funciona com uma conta corporativa ou de estudante e não com uma conta pessoal. Certifique-se que você está conectado com uma conta no seu domínio.
 
-Como alternativa, você pode usar este script do [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) para adicionar o serviço principal ausente.
+Como alternativa, você pode usar este script do [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) para adicionar o serviço principal ausente.
 
 ```PowerShell
 Connect-AzureAD -TenantId <tenant-id>

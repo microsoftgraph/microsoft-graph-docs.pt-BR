@@ -3,12 +3,12 @@ title: Acessar dados e métodos ao navegar no Microsoft Graph
 description: Além de usar a API do Microsoft Graph para ler e gravar dados, você pode usar diversos padrões de solicitação para desviar pelos recursos no Microsoft Graph. O documento de metadados também ajuda a entender o modelo de dados dos recursos e das relações no Microsoft Graph.
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c00179e5ea39f5be40308e400774bb1316ff8c3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 22f396f3ceb050f0802ac77e51e5445f5f4c871c
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448533"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288486"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Acessar dados e métodos ao navegar no Microsoft Graph
 
@@ -350,4 +350,4 @@ Como o poder e a facilidade dos SDKs? Enquanto você sempre pode usar APIs REST 
 ## <a name="see-also"></a>Confira também
 
 - [Usar a API do Microsoft Graph](use-the-api.md)
-- [Obter tokens de autenticação](/graph/auth)
+- [Obter tokens de autenticação](./auth/index.yml)

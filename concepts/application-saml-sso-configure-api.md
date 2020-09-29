@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f1bab27f592d772472933aeebfcdcfdecd6151ab
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 93a13a651e82c4930b216fd072fd69cd788dc27d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673900"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288172"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>Automação da configuração do aplicativo de SSO baseado em SAML com o Microsoft Graph API
 
@@ -33,10 +33,10 @@ Verifique se você tem as permissões correspondentes para chamar as seguintes A
 
 |Tipo de recurso |Método |
 |---------|---------|
-|[applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[Lista applicationTemplate](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) <br>[Instanciar o applicationtemplate](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)|
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Atualizar servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Criar appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0&tabs=http) <br> [Atribuir claimsMappingPolicy](https://docs.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)|
-|[aplicativos](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)|[Atualizar aplicativo](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-1.0&tabs=http)|
-|[claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Criar claimsMappingPolicy](https://docs.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)
+|[applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[Lista applicationTemplate](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[Instanciar o applicationtemplate](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
+|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Atualizar servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Criar appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [Atribuir claimsMappingPolicy](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
+|[aplicativos](/graph/api/resources/application?view=graph-rest-1.0)|[Atualizar aplicativo](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
+|[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Criar claimsMappingPolicy](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
 
 >[!NOTE]
 >Os objetos de resposta mostrados neste artigo poderiam ser reduzidos para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
@@ -51,7 +51,7 @@ Verifique se você tem as permissões correspondentes para chamar as seguintes A
 
 ### <a name="retrieve-the-gallery-application-template-identifier"></a>Recuperar o identificador de modelos de aplicativo de galeria
 
-Os aplicativos na galeria do aplicativo do Azure AD têm um [modelo de aplicativo](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) cada um, que descreve os metadados para esse aplicativo. Usando esse modelo, você pode criar uma instância do aplicativo e da entidade de serviço no locatário para gerenciamento.
+Os aplicativos na galeria do aplicativo do Azure AD têm um [modelo de aplicativo](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) cada um, que descreve os metadados para esse aplicativo. Usando esse modelo, você pode criar uma instância do aplicativo e da entidade de serviço no locatário para gerenciamento.
 
 #### <a name="request"></a>Solicitação
 
@@ -119,10 +119,10 @@ Content-type: application/json
 
 ### <a name="create-the-gallery-application"></a>Criar o aplicativo galeria
 
-Usando a ID do modelo que você recuperou para o aplicativo na última etapa, [criar uma instância](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http) do aplicativo e da entidade de serviço em seu locatário.
+Usando a ID do modelo que você recuperou para o aplicativo na última etapa, [criar uma instância](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) do aplicativo e da entidade de serviço em seu locatário.
 
 > [!NOTE] 
-> Você pode usar a API applicationTemplate para criar uma instância [aplicativos Não-Galeria](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal). Usar o applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+> Você pode usar a API applicationTemplate para criar uma instância [aplicativos Não-Galeria](/azure/active-directory/manage-apps/view-applications-portal). Usar o applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 > [!NOTE]
 > Aguarde algum tempo para que o aplicativo seja provisionado em seu locatário do Azure AD. Não é instantâneo. Uma estratégia é fazer uma consulta GET sobre o objeto do aplicativo/entidade de serviço a cada 5-10 segundos até que a consulta seja bem-sucedida.
@@ -223,7 +223,7 @@ Use a resposta da chamada anterior para recuperar e salvar a ID de objeto do apl
 ```
 ### <a name="set-single-sign-on-mode"></a>Definir o modo de logon único
 
-Neste exemplo, você definirá o `saml` como o modo de logon único na [tipo de recurso de servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Outras propriedades de SSO do SAML que você pode configurar são: `notificationEmailAddresses`, `loginUrl`e `samlSingleSignOnSettings.relayState`.
+Neste exemplo, você definirá o `saml` como o modo de logon único na [tipo de recurso de servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Outras propriedades de SSO do SAML que você pode configurar são: `notificationEmailAddresses`, `loginUrl`e `samlSingleSignOnSettings.relayState`.
 
 Antes dessa consulta funcionar, você precisará fornecer consentimento na guia **Modificar permissões** no Graph Explorer. Além disso, certifique-se de que você está usando a ID do** servicePrincipal** que você obteve anteriormente.
 
@@ -326,9 +326,9 @@ HTTP/1.1 204
 ```
 ### <a name="add-app-roles-optional"></a>Adicionar funções de aplicativo (opcional)
 
-Se o aplicativo exigir as informações da função no token, adicione a definição das funções no objeto do aplicativo. No AWS, você pode [habilitar o provisionamento de usuário](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) para buscar todas as funções dessa conta do AWS. 
+Se o aplicativo exigir as informações da função no token, adicione a definição das funções no objeto do aplicativo. No AWS, você pode [habilitar o provisionamento de usuário](/azure/active-directory/app-provisioning/application-provisioning-configure-api) para buscar todas as funções dessa conta do AWS. 
 
-Para saber mais, confira [Configurar a declaração de função emitida no token SAML](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management).
+Para saber mais, confira [Configurar a declaração de função emitida no token SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 
 > [!NOTE] 
 > Ao adicionar funções de aplicativo, não modifique as funções de aplicativo padrão msiam_access. 
@@ -422,7 +422,7 @@ Além das declarações básicas, configure as seguintes declarações para o Az
 | funções | assignedroles |
 | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | userprincipalname |
 
-Para obter mais informações, confira [Personalizar as declarações emitidas no token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping).
+Para obter mais informações, confira [Personalizar as declarações emitidas no token](/azure/active-directory/develop/active-directory-claims-mapping).
 
 > [!NOTE]
 > Algumas chaves na política de mapeamento de declarações são sensíveis a letras maiúsculas e minúsculas (por exemplo, "Version"). Se você receber uma mensagem de erro como "A propriedade tem um valor inválido", isso poderia ser um problema de diferenciação de maiúsculas e minúsculas.
@@ -519,7 +519,7 @@ HTTP/1.1 204
 
 ## <a name="step-4-configure-signing-certificate"></a>Etapa 4. Configurar o certificado de autenticação
 
-Usar a API [applicationtemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) não cria um certificado de autenticação por padrão. Crie seu certificado de assinatura personalizado e atribua-o ao aplicativo. 
+Usar a API [applicationtemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) não cria um certificado de autenticação por padrão. Crie seu certificado de assinatura personalizado e atribua-o ao aplicativo. 
 
 ### <a name="create-a-custom-signing-certificate"></a>Criar um certificado de autenticação personalizado
 
@@ -651,7 +651,7 @@ Adicione as seguintes informações à entidade de serviço:
 * Senha
 * Chave pública 
 
-Extraia a chave pública e privada Base64 do arquivo PFX. Para saber mais sobre as propriedades, confira [tipo de recurso de keyCredential](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).
+Extraia a chave pública e privada Base64 do arquivo PFX. Para saber mais sobre as propriedades, confira [tipo de recurso de keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0).
 
 Certifique-se de que a keyId da keyCredential usada para "Assinar" corresponda à keyId da passwordCredential. Você pode gerar o `customkeyIdentifier` ao obter o hash da impressão digital do certificado. Consulte o C# código de referência anterior.
 
@@ -798,7 +798,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-Para saber mais, confira o [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).
+Para saber mais, confira o [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).
 
 ## <a name="step-6-configure-the-application-side"></a>Etapa 6. Configurar o lado do aplicativo
 
@@ -809,5 +809,5 @@ Use a URL a seguir para obter os metadados do SAML do Azure AD para o aplicativo
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
 ## <a name="next-steps"></a>Próximas etapas
-- [Use as APIs do Microsoft Graph para configurar o provisionamento de usuário](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [Use o relatório de atividade do aplicativo AD FS para migrar aplicativos para o Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+- [Use as APIs do Microsoft Graph para configurar o provisionamento de usuário](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [Use o relatório de atividade do aplicativo AD FS para migrar aplicativos para o Azure AD](/azure/active-directory/manage-apps/migrate-adfs-application-activity)

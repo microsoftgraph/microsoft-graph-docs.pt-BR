@@ -5,15 +5,15 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 91b7211e15d02dd97101ca513be8cb85147c23a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 78688e3038193b89111a8490ffe759dff263bfbd
+ms.sourcegitcommit: 6eadb95e21b2e7eb5d6b081b91999cb91070f397
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010441"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48299281"
 ---
 # <a name="create-todotasklist"></a>Criar todoTaskList
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 Criar um novo objeto Lists.
 
@@ -72,7 +72,7 @@ Content-Type: application/json
 Content-length: 60
 
 {
-  "displayName": "Travel items",
+  "displayName": "Travel items"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

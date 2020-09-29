@@ -4,18 +4,18 @@ description: O Microsoft Graph é uma API Web RESTful que permite que você aces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 54d22a0f0b1b18eeaaaf8bda317d8dc08d0448ee
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 5a890588fe4b379cf27360db98c4118d0e3ca7d5
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991736"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288809"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
 O Microsoft Graph é uma API Web RESTful que permite que você acesse os recursos de serviço do Microsoft Cloud. Depois que você [registrar seu aplicativo](auth-register-app-v2.md) e [obter tokens de autenticação para um usuário](auth-v2-user.md) ou [serviço](auth-v2-service.md), é possível fazer solicitações para a API do Microsoft Graph.
 
-> **Importante:**  a maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando. Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas. Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+> **Importante:**  a maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando. Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas. Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](/azure/active-directory/develop/active-directory-conditional-access-developer).
 
 ## <a name="odata-namespace"></a>Espaço de nomes (namespace) OData
 
@@ -134,7 +134,7 @@ Um código de status e uma mensagem são exibidos depois que uma solicitação �
 
 O Postman é uma ferramenta que você pode usar para criar e testar solicitações usando as APIs do Microsoft Graph. Você pode baixar o Postman em: `https://www.getpostman.com/`. Para interagir com o Microsoft Graph no Postman, use a coleção do Microsoft Graph.
 
-Para obter mais informações, confira [Usar o Postman com a API do Microsoft Graph](https://docs.microsoft.com/graph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
+Para obter mais informações, confira [Usar o Postman com a API do Microsoft Graph](./use-postman.md?context=graph%252fapi%252fbeta&view=graph-rest-beta).
 
 ## <a name="next-steps"></a>Próximas etapas
 
