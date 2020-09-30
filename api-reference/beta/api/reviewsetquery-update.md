@@ -5,30 +5,30 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: daf8471b4bfea2509a2adbd84e23a96622998c5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eccfd08989b9cba23d72216de441f60e10ebb00f
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085280"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314731"
 ---
-# <a name="update-reviewsetquery"></a><span data-ttu-id="27cc5-103">Atualizar reviewSetQuery</span><span class="sxs-lookup"><span data-stu-id="27cc5-103">Update reviewSetQuery</span></span>
+# <a name="update-reviewsetquery"></a><span data-ttu-id="cb4ab-103">Atualizar reviewSetQuery</span><span class="sxs-lookup"><span data-stu-id="cb4ab-103">Update reviewSetQuery</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="27cc5-104">Atualizar as propriedades de um [reviewSetQuery](../resources/reviewsetquery.md)de descoberta eletrônica.</span><span class="sxs-lookup"><span data-stu-id="27cc5-104">Update the properties of an eDiscovery [reviewSetQuery](../resources/reviewsetquery.md).</span></span>
+<span data-ttu-id="cb4ab-104">Atualizar as propriedades de um [reviewSetQuery](../resources/reviewsetquery.md)de descoberta eletrônica.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-104">Update the properties of an eDiscovery [reviewSetQuery](../resources/reviewsetquery.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="27cc5-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="27cc5-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cb4ab-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="cb4ab-105">Permissions</span></span>
 
-<span data-ttu-id="27cc5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="27cc5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cb4ab-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb4ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="27cc5-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="27cc5-108">Permission type</span></span>                        | <span data-ttu-id="27cc5-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="27cc5-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="cb4ab-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cb4ab-108">Permission type</span></span>                        | <span data-ttu-id="cb4ab-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cb4ab-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="27cc5-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="27cc5-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="27cc5-111">User.Read</span><span class="sxs-lookup"><span data-stu-id="27cc5-111">User.Read</span></span> |
-| <span data-ttu-id="27cc5-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="27cc5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="27cc5-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="27cc5-113">Not supported.</span></span> |
-| <span data-ttu-id="27cc5-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="27cc5-114">Application</span></span>                            | <span data-ttu-id="27cc5-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="27cc5-115">Not supported.</span></span> |
+| <span data-ttu-id="cb4ab-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cb4ab-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="cb4ab-111">User.Read</span><span class="sxs-lookup"><span data-stu-id="cb4ab-111">User.Read</span></span> |
+| <span data-ttu-id="cb4ab-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cb4ab-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb4ab-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-113">Not supported.</span></span> |
+| <span data-ttu-id="cb4ab-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cb4ab-114">Application</span></span>                            | <span data-ttu-id="cb4ab-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="27cc5-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="27cc5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cb4ab-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cb4ab-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,30 +36,30 @@ ms.locfileid: "48085280"
 PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="27cc5-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="27cc5-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cb4ab-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cb4ab-117">Request headers</span></span>
 
-| <span data-ttu-id="27cc5-118">Nome</span><span class="sxs-lookup"><span data-stu-id="27cc5-118">Name</span></span>       | <span data-ttu-id="27cc5-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="27cc5-119">Description</span></span>|
+| <span data-ttu-id="cb4ab-118">Nome</span><span class="sxs-lookup"><span data-stu-id="cb4ab-118">Name</span></span>       | <span data-ttu-id="cb4ab-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="cb4ab-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="27cc5-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="27cc5-120">Authorization</span></span> | <span data-ttu-id="27cc5-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="27cc5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cb4ab-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="cb4ab-120">Authorization</span></span> | <span data-ttu-id="cb4ab-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="27cc5-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="27cc5-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cb4ab-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cb4ab-123">Request body</span></span>
 
-<span data-ttu-id="27cc5-124">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="27cc5-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="27cc5-125">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="27cc5-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="27cc5-126">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="27cc5-126">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="cb4ab-124">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="cb4ab-125">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="cb4ab-126">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-126">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="27cc5-127">Propriedade</span><span class="sxs-lookup"><span data-stu-id="27cc5-127">Property</span></span>     | <span data-ttu-id="27cc5-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="27cc5-128">Type</span></span>        | <span data-ttu-id="27cc5-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="27cc5-129">Description</span></span> |
+| <span data-ttu-id="cb4ab-127">Propriedade</span><span class="sxs-lookup"><span data-stu-id="cb4ab-127">Property</span></span>     | <span data-ttu-id="cb4ab-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="cb4ab-128">Type</span></span>        | <span data-ttu-id="cb4ab-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="cb4ab-129">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="27cc5-130">displayName</span><span class="sxs-lookup"><span data-stu-id="27cc5-130">displayName</span></span> | <span data-ttu-id="27cc5-131">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="27cc5-131">String</span></span> | <span data-ttu-id="27cc5-132">Nome para exibição para a consulta de conjunto de análise.</span><span class="sxs-lookup"><span data-stu-id="27cc5-132">Display name for they review set query.</span></span> |
-| <span data-ttu-id="27cc5-133">consulta</span><span class="sxs-lookup"><span data-stu-id="27cc5-133">query</span></span> | <span data-ttu-id="27cc5-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="27cc5-134">String</span></span> | <span data-ttu-id="27cc5-135">A cadeia de caracteres de consulta na consulta KQL (linguagem de consulta de palavra-chave).</span><span class="sxs-lookup"><span data-stu-id="27cc5-135">The query string in KQL (Keyword Query Language) query.</span></span> <span data-ttu-id="27cc5-136">Para obter detalhes, consulte [Document Metadata Fields](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).</span><span class="sxs-lookup"><span data-stu-id="27cc5-136">For details, see [Document metadata fields](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).</span></span> |
+| <span data-ttu-id="cb4ab-130">displayName</span><span class="sxs-lookup"><span data-stu-id="cb4ab-130">displayName</span></span> | <span data-ttu-id="cb4ab-131">String</span><span class="sxs-lookup"><span data-stu-id="cb4ab-131">String</span></span> | <span data-ttu-id="cb4ab-132">Nome para exibição para a consulta de conjunto de análise.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-132">Display name for they review set query.</span></span> |
+| <span data-ttu-id="cb4ab-133">consulta</span><span class="sxs-lookup"><span data-stu-id="cb4ab-133">query</span></span> | <span data-ttu-id="cb4ab-134">String</span><span class="sxs-lookup"><span data-stu-id="cb4ab-134">String</span></span> | <span data-ttu-id="cb4ab-135">A cadeia de caracteres de consulta na consulta KQL (linguagem de consulta de palavra-chave).</span><span class="sxs-lookup"><span data-stu-id="cb4ab-135">The query string in KQL (Keyword Query Language) query.</span></span> <span data-ttu-id="cb4ab-136">Para obter detalhes, consulte [Document Metadata Fields](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).</span><span class="sxs-lookup"><span data-stu-id="cb4ab-136">For details, see [Document metadata fields](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery).</span></span> |
 
-## <a name="response"></a><span data-ttu-id="27cc5-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="27cc5-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cb4ab-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb4ab-137">Response</span></span>
 
-<span data-ttu-id="27cc5-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="27cc5-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="cb4ab-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="27cc5-140">Exemplos</span><span class="sxs-lookup"><span data-stu-id="27cc5-140">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cb4ab-140">Exemplos</span><span class="sxs-lookup"><span data-stu-id="cb4ab-140">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="27cc5-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="27cc5-141">Request</span></span>
+### <a name="request"></a><span data-ttu-id="cb4ab-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cb4ab-141">Request</span></span>
 
-<span data-ttu-id="27cc5-142">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="27cc5-142">The following is an example of the request.</span></span>
+<span data-ttu-id="cb4ab-142">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-142">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_reviewsetquery"
@@ -74,11 +74,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="27cc5-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="27cc5-143">Response</span></span>
+### <a name="response"></a><span data-ttu-id="cb4ab-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb4ab-143">Response</span></span>
 
-<span data-ttu-id="27cc5-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="27cc5-144">The following is an example of the response.</span></span>
+<span data-ttu-id="cb4ab-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-144">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="27cc5-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="27cc5-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="cb4ab-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cb4ab-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -99,5 +99,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
