@@ -5,53 +5,53 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8a7e867780dfc8a350369d7936eb869ffda2eae6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f145744b56c7d8acaa160d18679c626a3f8c142
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008768"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313349"
 ---
-# <a name="list-scopedmembers-for-a-directory-role"></a><span data-ttu-id="8a84c-103">Listar scopedMembers para uma função de diretório</span><span class="sxs-lookup"><span data-stu-id="8a84c-103">List scopedMembers for a directory role</span></span>
+# <a name="list-scopedmembers-for-a-directory-role"></a><span data-ttu-id="2106a-103">Listar scopedMembers para uma função de diretório</span><span class="sxs-lookup"><span data-stu-id="2106a-103">List scopedMembers for a directory role</span></span>
 
-<span data-ttu-id="8a84c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8a84c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2106a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2106a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8a84c-105">Recupere uma lista de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) para uma função de diretório.</span><span class="sxs-lookup"><span data-stu-id="8a84c-105">Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8a84c-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="8a84c-106">Permissions</span></span>
-<span data-ttu-id="8a84c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a84c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2106a-105">Recupere uma lista de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) para uma função de diretório.</span><span class="sxs-lookup"><span data-stu-id="2106a-105">Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2106a-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2106a-106">Permissions</span></span>
+<span data-ttu-id="2106a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2106a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8a84c-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8a84c-109">Permission type</span></span>      | <span data-ttu-id="8a84c-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8a84c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2106a-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2106a-109">Permission type</span></span>      | <span data-ttu-id="2106a-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2106a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8a84c-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8a84c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8a84c-112">RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="8a84c-112">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="8a84c-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8a84c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8a84c-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8a84c-114">Not supported.</span></span>    |
-|<span data-ttu-id="8a84c-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8a84c-115">Application</span></span> | <span data-ttu-id="8a84c-116">RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="8a84c-116">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="2106a-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2106a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2106a-112">RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All, Directory. AccessAsUser. All</span><span class="sxs-lookup"><span data-stu-id="2106a-112">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="2106a-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2106a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2106a-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2106a-114">Not supported.</span></span>    |
+|<span data-ttu-id="2106a-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2106a-115">Application</span></span> | <span data-ttu-id="2106a-116">RoleManagement. Read. Directory, Directory. Read. All, RoleManagement. ReadWrite. Directory, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="2106a-116">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8a84c-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8a84c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2106a-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2106a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryroles/{id}/scopedMembers
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="8a84c-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="8a84c-118">Optional query parameters</span></span>
-<span data-ttu-id="8a84c-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="8a84c-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="2106a-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="2106a-118">Optional query parameters</span></span>
+<span data-ttu-id="2106a-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="2106a-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8a84c-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8a84c-120">Request headers</span></span>
-| <span data-ttu-id="8a84c-121">Nome</span><span class="sxs-lookup"><span data-stu-id="8a84c-121">Name</span></span>      |<span data-ttu-id="8a84c-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="8a84c-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2106a-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2106a-120">Request headers</span></span>
+| <span data-ttu-id="2106a-121">Nome</span><span class="sxs-lookup"><span data-stu-id="2106a-121">Name</span></span>      |<span data-ttu-id="2106a-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="2106a-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="8a84c-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="8a84c-123">Authorization</span></span>  | <span data-ttu-id="8a84c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8a84c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2106a-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="2106a-123">Authorization</span></span>  | <span data-ttu-id="2106a-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2106a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8a84c-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8a84c-126">Request body</span></span>
-<span data-ttu-id="8a84c-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8a84c-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2106a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2106a-126">Request body</span></span>
+<span data-ttu-id="2106a-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2106a-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8a84c-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="8a84c-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2106a-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="2106a-128">Response</span></span>
 
-<span data-ttu-id="8a84c-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8a84c-129">If successful, this method returns a `200 OK` response code and collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="8a84c-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8a84c-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8a84c-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8a84c-131">Request</span></span>
-<span data-ttu-id="8a84c-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8a84c-132">Here is an example of the request.</span></span>
+<span data-ttu-id="2106a-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2106a-129">If successful, this method returns a `200 OK` response code and collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2106a-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2106a-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2106a-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2106a-131">Request</span></span>
+<span data-ttu-id="2106a-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2106a-132">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8a84c-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="8a84c-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2106a-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="2106a-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_scopedmembers_directoryrole"
@@ -59,22 +59,22 @@ GET /directoryroles/{id}/scopedMembers
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedMembers
 ```
-# <a name="c"></a>[<span data-ttu-id="8a84c-134">C#</span><span class="sxs-lookup"><span data-stu-id="8a84c-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2106a-134">C#</span><span class="sxs-lookup"><span data-stu-id="2106a-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedmembers-directoryrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8a84c-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8a84c-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2106a-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2106a-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-scopedmembers-directoryrole-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8a84c-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8a84c-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2106a-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2106a-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-scopedmembers-directoryrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="8a84c-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="8a84c-137">Response</span></span>
-<span data-ttu-id="8a84c-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8a84c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2106a-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="2106a-137">Response</span></span>
+<span data-ttu-id="2106a-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2106a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,5 +115,3 @@ Content-length: 307
   ]
 }
 -->
-
-
