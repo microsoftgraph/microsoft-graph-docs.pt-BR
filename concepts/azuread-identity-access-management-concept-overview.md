@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5b6ec62128b969c2015c01eba1020009031f7ee9
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7e7d0b111e74367e332bfbb20ecc3e7fd016edab
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969330"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288375"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 
@@ -20,7 +20,7 @@ Você pode usar as APIs REST do Azure AD no Microsoft Graph para criar fluxos de
 
 ## <a name="why-use-the-azure-ad-apis"></a>Por que usar as APIs do Azure AD?
 
-Mais de 15 milhões de organizações usam o Azure AD ao se inscreverem em serviços em nuvem da Microsoft, como o Office 365, Microsoft Azure, Enterprise Mobility Suite ou Microsoft 365.
+Mais de 15 milhões de organizações usam o Azure AD ao se inscreverem em serviços em nuvem da Microsoft, como o Microsoft 365, Microsoft Azure, Enterprise Mobility Suite ou Microsoft 365.
 
 Os desenvolvedores corporativos usam o Microsoft Graph para integrar o gerenciamento de identidades do Azure AD e outros serviços para automatizar fluxos de trabalho administrativos, como a integração (e rescisão) de funcionários, a manutenção de perfis, a implantação de licenças e muito mais.
 
@@ -44,13 +44,13 @@ Você pode atribuir usuários a [funções de diretório](/graph/api/resources/d
 
 ### <a name="manage-devices"></a>Gerenciar dispositivos
 
-[Gerencie os dispositivos](https://docs.microsoft.com/azure/active-directory/device-management-introduction) registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator.
+[Gerencie os dispositivos](/azure/active-directory/device-management-introduction) registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator.
 
 ### <a name="partner-tenant-management"></a>Gerenciamento de locatário do parceiro
 
-Os parceiros da Microsoft que revendem e gerenciam o Microsoft Online Services (como o Office 365, o Microsoft Azure e o CRM Online) podem exibir os [locatários da organização](/graph/api/resources/contract?view=graph-rest-1.0) que eles gerenciam atualmente.
+Os parceiros da Microsoft que revendem e gerenciam o Microsoft Online Services (como o Microsoft 365, o Microsoft Azure e o CRM Online) podem exibir os [locatários da organização](/graph/api/resources/contract?view=graph-rest-1.0) que gerenciam atualmente.
 
-Você também pode [gerenciar domínios](/graph/api/resources/domain?view=graph-rest-1.0) associados a um locatário. As operações de domínio permitem que os parceiros da Microsoft automatizem o registro de domínio para serviços como o Office 365.
+Você também pode [gerenciar domínios](/graph/api/resources/domain?view=graph-rest-1.0) associados a um locatário. As operações de domínio permitem que os parceiros da Microsoft automatizem o registro de domínio para serviços, como o Microsoft 365.
 
 ### <a name="tenant-management"></a>Gerenciamento de locatários
 
@@ -86,7 +86,7 @@ Está procurando a referência de API para esse serviço?
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba como [Usar as APIs REST do Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Use o Azure AD para se [autenticar](/graph/auth) no Microsoft Graph.
+- Use o Azure AD para se [autenticar](./auth/index.yml) no Microsoft Graph.
 - Integre o [logon do Azure AD](https://azure.microsoft.com/develop/identity/signin/) ao seu aplicativo ou website.
 - Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.
 - Explore [exemplos](https://developer.microsoft.com/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.

@@ -5,24 +5,24 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: c83d04e00882f306f9ec396db5cd17cfca520c66
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7a04ae1e436e44699d7e3c10322eb7552df982bd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969493"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288130"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Chamar o Microsoft Graph por um Provedor de Soluções na Nuvem
 
 > **Observação:** Este tópico se aplica **somente** a desenvolvedores de aplicativos do Provedor de Soluções na Nuvem (CSP) da Microsoft. O programa [Provedor de Soluções na Nuvem (CSP) da Microsoft](https://partner.microsoft.com/cloud-solution-provider) permite que os parceiros da Microsoft revendam e gerenciem os serviços online da Microsoft para os clientes.
 
-Este tópico descreve como habilitar o acesso do aplicativo aos dados do cliente gerenciados por parceiros através do Microsoft Graph usando o [fluxo de concessão do código de autorização](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code) ou o [fluxo de credenciais do cliente de serviços](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
+Este tópico descreve como habilitar o acesso do aplicativo aos dados do cliente gerenciados por parceiros através do Microsoft Graph usando o [fluxo de concessão do código de autorização](/azure/active-directory/develop/active-directory-protocols-oauth-code) ou o [fluxo de credenciais do cliente de serviços](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
 **Importante:** Chamar o Microsoft Graph a partir de um aplicativo CSP só é compatível com recursos de diretório (como **usuário**, **grupo**, **dispositivo**, **organização**) e recursos do [Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-beta).
 
 ## <a name="what-is-a-partner-managed-application"></a>O que é um aplicativo gerenciado por parceiros
 
-O programa CSP permite que os parceiros da Microsoft revendam e gerenciem os Serviços Online da Microsoft (como o Office 365, Microsoft Azure e CRM Online) para os clientes. O gerenciamento do atendimento ao cliente é feito por meio de Privilégios de Administrador Delegados e isso permite que os usuários de parceiros designados (conhecidos como agentes) acessem e configurem ambientes de seus clientes.
+O programa CSP permite que os parceiros da Microsoft revendam e gerenciem os Serviços Online da Microsoft (como o Microsoft 365, Microsoft Azure e CRM Online) para os clientes. O gerenciamento do atendimento ao cliente é feito por meio de Privilégios de Administrador Delegados e isso permite que os usuários de parceiros designados (conhecidos como agentes) acessem e configurem os ambientes de seus clientes.
 
 Além disso, como desenvolvedor do parceiro, você pode criar um **aplicativo gerenciado por parceiros** para gerenciar os serviços da Microsoft de seus clientes. Os aplicativos gerenciados por parceiros são frequentemente chamados de *aplicativos pré-consentidos* porque todos os seus clientes são automaticamente pré-autorizados a utilizar os aplicativos gerenciados por parceiros. Isso significa que, quando um usuário de um dos locatários do cliente usa um de seus aplicativos gerenciados por parceiros, o usuário pode usá-lo sem ser solicitado a dar consentimento. Os aplicativos gerenciados por parceiros também herdam os Privilégios de Administrador Delegados para que os agentes do parceiro também possam obter acesso privilegiado aos clientes através do aplicativo gerenciado por parceiros.
 
@@ -36,7 +36,7 @@ Um aplicativo é exibido como *gerenciado por parceiros* quando recebe permissõ
 
 As etapas iniciais exigidas aqui seguem quase as mesmas etapas usadas para registrar e configurar um aplicativo multilocatário:
 
-1. [Registre seu aplicativo](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration) no Locatário do parceiro usando o [Portal do Azure](https://portal.azure.com). Para funcionar como um aplicativo gerenciado por parceiros, o aplicativo deve ser configurado como um [aplicativo multilocatário](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant). Além disso, se o aplicativo for implantado e vendido em diversas regiões geográficas, você precisará registrar seu aplicativo em cada uma dessas regiões conforme descrito <a href="#region">aqui</a>.
+1. [Registre seu aplicativo](/azure/active-directory/active-directory-app-registration) no Locatário do parceiro usando o [Portal do Azure](https://portal.azure.com). Para funcionar como um aplicativo gerenciado por parceiros, o aplicativo deve ser configurado como um [aplicativo multilocatário](/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant). Além disso, se o aplicativo for implantado e vendido em diversas regiões geográficas, você precisará registrar seu aplicativo em cada uma dessas regiões conforme descrito <a href="#region">aqui</a>.
 2. Configure seu aplicativo multilocatário, novamente através do Portal do Azure, com as *permissões exigidas* necessárias usando uma abordagem menos privilegiada.
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>Consentimento prévio de seu aplicativo para todos os seus clientes
@@ -69,7 +69,7 @@ Por fim, conceda ao aplicativo gerenciado por parceiros as permissões configura
 
 ## <a name="token-acquisition-flows"></a>Fluxos de aquisição do token
 
-Os fluxos de aquisição de tokens de aplicativos gerenciados por parceiros, ou seja, o [fluxo de concessão do código de autorização](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code) e o [fluxo de credenciais de cliente de serviço a serviço](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service), são os mesmos dos aplicativos multilocatário normais.
+Os fluxos de aquisição de tokens de aplicativos gerenciados por parceiros, ou seja, o [fluxo de concessão do código de autorização](/azure/active-directory/develop/active-directory-protocols-oauth-code) e o [fluxo de credenciais de cliente de serviço a serviço](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service), são os mesmos dos aplicativos multilocatário normais.
 
 Além do acesso previamente consentido a todos os locatários do cliente, os aplicativos gerenciados por parceiros têm um recurso adicional. Esse recurso permite que os agentes usem seu aplicativo para acessar os dados de locatário de seus clientes (usando os privilégios de administrador delegados). Conceitualmente funciona da seguinte maneira:
 
@@ -77,15 +77,15 @@ Além do acesso previamente consentido a todos os locatários do cliente, os apl
 2. O aplicativo solicita um token de acesso para o locatário do cliente gerenciado por parceiros pretendido.
 3. O aplicativo usa o token de acesso para chamar o Microsoft Graph.
 
-Este é um [fluxo de concessão de código de autorização](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code) padrão, exceto que seus agentes precisam se conectar usando suas contas do parceiro. Para ver como isso ficaria, imagine que o locatário de seu parceiro fosse *parceiro.com* (que é o locatário principal de seus agentes) e um de seus clientes fosse *cliente.com*:
+Este é um [fluxo de concessão de código de autorização](/azure/active-directory/develop/active-directory-protocols-oauth-code) padrão, exceto que seus agentes precisam se conectar usando suas contas do parceiro. Para ver como isso ficaria, imagine que o locatário de seu parceiro fosse *parceiro.com* (que é o locatário principal de seus agentes) e um de seus clientes fosse *cliente.com*:
 
-1. [Adquira um código de autorização:](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Seu aplicativo faz uma solicitação para o ponto de extremidade ```/authorize``` e precisa usar um **locatário de cliente** em nosso exemplo ```customer.com```, para o locatário de destino. Seus agentes ainda se conectariam com a conta ```username@partner.com```.
+1. [Adquira um código de autorização:](/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Seu aplicativo faz uma solicitação para o ponto de extremidade ```/authorize``` e precisa usar um **locatário de cliente** em nosso exemplo ```customer.com```, para o locatário de destino. Seus agentes ainda se conectariam com a conta ```username@partner.com```.
 
     ```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. [Adquira um token de acesso usando o código de autorização:](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) seu aplicativo deve usar um **locatário do cliente** como o locatário de destino — no nosso exemplo, ```customer.com``` — ao fazer a solicitação para o ponto de extremidade ```token```:
+2. [Adquira um token de acesso usando o código de autorização:](/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) seu aplicativo deve usar um **locatário do cliente** como o locatário de destino — no nosso exemplo, ```customer.com``` — ao fazer a solicitação para o ponto de extremidade ```token```:
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token

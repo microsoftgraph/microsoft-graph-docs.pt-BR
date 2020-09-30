@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d1d7d483e6061c86cc25641fc1f02e0130c62d93
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: f8508b73003168316eb1b79221ee7ee485ce51a5
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192725"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288739"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -35,22 +35,21 @@ Os [APIs das unidades administrativas](/graph/api/resources/administrativeunit) 
 ### <a name="reports"></a>Relatórios
 [Obtenha um relatório que inclua o número de usuários exclusivos](/graph/api/reportroot-getemailappusageversionsusercounts) do Outlook 2019 e do Outlook no Microsoft 365.
 
-<!--
-### Use the SDKs
-GA of the Microsoft Graph PowerShell SDK (https://github.com/microsoftgraph/msgraph-sdk-powershell) which enables access to the entire surface of Microsoft Graph in a straightforward and consistent way.
--->
-
 ### <a name="teamwork"></a>Trabalho em equipe
 - Obtenha a propriedade **lastEditedDateTime** para descobrir quando um remetente editar pela última vez uma [mensagem de chat](/graph/api/resources/chatmessage).
 - Obtenha a propriedade **lastModifiedDateTime** para descobrir quando um remetente cria uma mensagem de bate-papo ou quando alguém a altera de outras maneiras, incluindo a adição ou a remoção de uma reação. 
+- [Receba notificações sobre alterações](webhooks.md) em [mensagens de chat](/graph/api/resources/chatmessage).
+
+### <a name="use-the-sdks"></a>Use os SDKs
+Com o lançamento do [SDK do Microsoft Graph PowerShell](https://github.com/microsoftgraph/msgraph-sdk-powershell) o acesso a toda a superfície do Microsoft Graph agora é simples e consistente.
 
 ### <a name="use-the-toolkit"></a>Usar o kit de ferramentas
 Experimente o novo tutorial de introdução passo a passo para o Microsoft Graph Toolkit e experimente a comodidade que o Toolkit oferece:
-- [Criar um aplicativo Web (JavaScript)](/graph/toolkit/get-started/build-a-web-app)
-- [Criar uma web part do Microsoft Office SharePoint Online](/graph/toolkit/get-started/build-a-sharepoint-web-part)
-- [Criar uma guia do Microsoft Teams](/graph/toolkit/get-started/build-a-microsoft-teams-tab)
-- [Usar o kit de ferramentas com reagir](/graph/toolkit/get-started/use-toolkit-with-react)
-- [Usar o kit de ferramentas com o Angular](/graph/toolkit/get-started/use-toolkit-with-angular)
+- [Criar um aplicativo Web (JavaScript)](./toolkit/get-started/build-a-web-app.md)
+- [Criar uma web part do Microsoft Office SharePoint Online](./toolkit/get-started/build-a-sharepoint-web-part.md)
+- [Criar uma guia do Microsoft Teams](./toolkit/get-started/build-a-microsoft-teams-tab.md)
+- [Usar o kit de ferramentas com reagir](./toolkit/get-started/use-toolkit-with-react.md)
+- [Usar o kit de ferramentas com o Angular](./toolkit/get-started/use-toolkit-with-angular.md)
 
 ### <a name="users"></a>Usuários
 Além de obter o endereço SMTP de um [usuário](/graph/api/resources/user) por meio da propriedade de **email**, você pode definir essa propriedade e atualizar o endereço de email do usuário. 
@@ -77,10 +76,6 @@ As atualizações de [setembro](changelog.md#september-2020) do Intune para a ve
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 As organizações podem [obter](/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta&preserve-view=true) a [política de avaliação de acesso contínuo](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta&preserve-view=true) para gerenciar sessões de autenticação em tempo real.
 
-### <a name="teamwork"></a>Trabalho em equipe
-- Obtenha a data e a hora em que um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)do Teams ou [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) é criada.
-- [Atualizar](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) propriedade **policyViolation** de uma [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) em um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) ou [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), permitindo que os aplicativos de prevenção contra perda de dados (DLP) monitorem [violação de política da mensagem de chat](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) para evitar que as mensagens contenham dados que os usuários não devem enviar.
-
 ### <a name="search"></a>Pesquisar
 
 - Use recursos adicionais no [API de Pesquisa da Microsoft](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) para OneDrive, SharePoint, conectores do Microsoft Graph: 
@@ -90,11 +85,18 @@ As organizações podem [obter](/graph/api/continuousaccessevaluationpolicy-get?
   - Obtenha propriedades personalizadas no recurso [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true).
   - [Classifique](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) os resultados da pesquisa do OneDrive e do Microsoft Office SharePoint Online em qualquer propriedade classificável.
   - [Refine os resultados usando agregações](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) para o OneDrive e o Microsoft Office SharePoint Online.
-- Consultar dados externos ingeridos pelos conectores do Microsoft Graph em [mais de um de conexão](/graph/search-concept-custom-types).
+- Consultar dados externos ingeridos pelos conectores do Microsoft Graph em [mais de um de conexão](./search-concept-custom-types.md).
 - Aproveite o conteúdo aprimorado para os conectores do Microsoft Graph para saber mais sobre:
   - [Gerenciando Conectores](search-index-manage-connections.md)
   - [Gerenciar esquema](search-index-manage-schema.md)
   - [Gerenciar itens](search-index-manage-items.md)
+- Acompanhe o estado de uma[conexão](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true)do Microsoft Graph.
+- Defina um [grupo externo](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) a fim de definir permissões em objetos de [item externo](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) adicionados a uma [conexão](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) do Microsoft Graph. Os grupos externos podem representar os grupos do Active Directory que não sejam do Azure ou construções similares, como unidades de negócios, que determinam permissões sobre o conteúdo na fonte de dados externa.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Obtenha a data e a hora em que um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)do Teams ou [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) é criada.
+- [Atualizar](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) propriedade **policyViolation** de uma [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) em um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) ou [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), permitindo que os aplicativos de prevenção contra perda de dados (DLP) monitorem [violação de política da mensagem de chat](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) para evitar que as mensagens contenham dados que os usuários não devem enviar.
+
 
 ## <a name="august-2020-new-and-generally-available"></a>Agosto de 2020: novo e disponível para o público geral
 
@@ -185,4 +187,3 @@ Estas são algumas maneiras de se envolver:
 - Navegue pelas informações das inclusões da API do Microsoft Graph e pelas atualizações de comportamento de API no [changelog](changelog.md).
 - Encontre [destaques de versões anteriores](whats-new-earlier.md).
 - Saiba mais sobre o [controle de versão, suporte e mudanças significativas de políticas do Microsoft Graph](versioning-and-support.md).
-

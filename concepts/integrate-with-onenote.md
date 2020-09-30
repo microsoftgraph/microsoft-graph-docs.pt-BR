@@ -5,12 +5,12 @@ author: Jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3c4fe67529b920c9a346636cc3e1d6724d469b51
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 933c37df5b02eef73c44e5dcff0386fef06e49f3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951913"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288879"
 ---
 # <a name="onenote-api-overview"></a>Visão geral da API do OneNote
 
@@ -36,8 +36,7 @@ Aproveite outros recursos poderosos do OneNote. As APIs do OneNote no Microsoft 
 
 ### <a name="reach-millions-of-onenote-users-on-all-major-platforms"></a>Alcance milhares de usuários do OneNote em todas as principais plataformas
 
-Use o OneNote para aumentar o uso do aplicativo. O OneNote vem pré-instalado nos novos dispositivos Windows e está disponível para a maioria das plataformas, online e como parte do Office 365.
- Ao publicar aplicativos que usam o ambiente do OneNote repleto de recursos, você tem acesso a um amplo potencial de mercado em várias plataformas.
+Use o OneNote para aumentar o uso do aplicativo. O OneNote vem pré-instalado nos novos dispositivos Windows e está disponível para a maioria das plataformas, online e como parte do Microsoft 365. Ao publicar aplicativos que usam o ambiente do OneNote repleto de recursos, você tem acesso a um amplo potencial de mercado em várias plataformas.
 
 <!-- Might be good to show a few examples of Microsoft Graph API calls here, similar to what we have in the featured scenarios topic: featured_scenarios..md You could have an H2 section called "What can I do with OneNote APIs in Microsoft Graph?"-->
 
@@ -81,14 +80,14 @@ Faça uma análise aprofundada das APIs do Microsoft Graph para saber mais sobre
 ## <a name="see-also"></a>Confira também
 Saiba mais sobre alguns outros recursos do OneNote que estão expostos somente no ponto de extremidade REST específico do serviço do OneNote.
 
-- [Desenvolvimento do OneNote](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [Trabalhar com Blocos de Anotações de Classe](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [Trabalhar com blocos de anotações de classe assíncronos](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [Trabalhar com Blocos de Anotações de Equipe](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [Copiar blocos de anotações, seções e páginas](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [Gerenciar permissões em entidades do OneNote](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [Usar a caixa de diálogo Salvar do OneNote em suas páginas da Web](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [Assinar webhooks](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [Desenvolvimento do OneNote](/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [Trabalhar com Blocos de Anotações de Classe](/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [Trabalhar com blocos de anotações de classe assíncronos](/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [Trabalhar com Blocos de Anotações de Equipe](/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [Copiar blocos de anotações, seções e páginas](/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [Gerenciar permissões em entidades do OneNote](/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [Usar a caixa de diálogo Salvar do OneNote em suas páginas da Web](/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [Assinar webhooks](/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
@@ -103,4 +102,3 @@ Use o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-exp
 Para fazer chamadas à API do OneNote por meio do Explorador do Graph, escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para **Ativar** o OneNote. Você também precisará habilitar as permissões apropriadas. No nome da conta no menu à esquerda, escolha **modificar permissões**. Para saber mais sobre as permissões do OneNote, confira [Permissões de anotações](permissions-reference.md#notes-permissions).
 
 Para começar a usar as APIs do OneNote no Microsoft Graph, confira o [conteúdo de referência do OneNote](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0).
-

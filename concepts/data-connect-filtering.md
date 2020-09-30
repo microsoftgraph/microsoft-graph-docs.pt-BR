@@ -4,12 +4,12 @@ description: Descreve como usar o Microsoft Graph Data Connect para selecionar o
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 0c5ec59fc42ed2e5a0b21631dd3c501ae9c4bfe1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 77980850b9e79298663944fedd5c0f10333e294e
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062593"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289334"
 ---
 # <a name="user-selection-and-filtering-microsoft-graph-data-connect-supports"></a>O Microsoft Graph Data Connect é compatível com a seleção de usuário e filtragem
 
@@ -26,7 +26,7 @@ Especifique a seleção de usuários em OrigemDoConjuntoDeDados da atividade de 
 
 Para especificar um predicado para executar no locatário inteiro, adicione um novo campo **EscopoDeFiltroUriDoUsuário** em **PropriedadesDoTipo** e o defina no predicado. O formato do predicado deve coincidir com o formato de consulta de APIs do Microsoft Graph. Se você quiser limitar a seleção para os usuários que funcionam no departamento de finanças, você pode usar `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`, por exemplo. Se desejar limitar a seleção a um usuário, você pode usar o `https://graph.microsoft.com/v1.0/users?$filter=mail eq 'contosouser1@contoso.com'`.
 
-A consulta retornará somente usuários dentro da organização do Office 365 que você está pesquisando. Os usuários convidados e caixas de correio que não são de usuários não serão retornadas.
+A consulta retornará somente usuários dentro da organização do Microsoft 365 que você está pesquisando. Os usuários convidados e caixas de correio que não são de usuários não serão retornadas.
 
 ## <a name="filtering"></a>Filtragem 
 
@@ -44,6 +44,5 @@ Os conjuntos de dados a seguir exigem que um filtro seja fornecido em uma das pr
 
 ## <a name="next-steps"></a>Próximos passos 
 
-Para saber mais sobre como modificar o usuário selecionado para extração e filtragem nos pipelines do Data Connect, confira a [documentação do conector do Office 365 do Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-office-365).  
+Para saber mais sobre como modificar o usuário selecionado para extração e filtragem nos pipelines do Data Connect, confira a [documentação do conector do Office 365 do Azure Data Factory](/azure/data-factory/connector-office-365).  
 
-  
