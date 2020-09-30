@@ -1,23 +1,23 @@
 ---
 title: Visão geral da API de armazenamento de arquivos do OneDrive
-description: O OneDrive é a central de arquivos no Office 365.
+description: O OneDrive é a central de arquivos no Microsoft 365.
 localization_priority: Priority
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b0b548880d788e6b8d98596e06f0071e7bdc3a8e
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 59c9c711f7728b65006d1553cb9595dcecc76ed1
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969344"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289082"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>Visão geral da API de armazenamento de arquivos do OneDrive
 
-O OneDrive é a central de arquivos no Office 365.
+O OneDrive é a central de arquivos no Microsoft 365.
 As pessoas trabalham com arquivos em vários contextos, como o Microsoft Teams, grupos, SharePoint e muito mais.
 Com o OneDrive, os usuários podem acessar esses arquivos independentemente de onde eles estejam armazenados; com o Microsoft Graph, você pode usar uma única API para trabalhar com eles.
 
-Os arquivos no Office 365 são armazenados em [unidades][Drive API].
+Os arquivos no Microsoft 365 são armazenados em [unidades][Drive API].
 Os usuários podem armazenar arquivos em uma unidade pessoal, o OneDrive pessoal, ou em uma unidade compartilhada com a tecnologia de uma biblioteca de documentos do [SharePoint][].
 A flexibilidade do OneDrive permite que os usuários colaborem como acharem melhor para eles.
 Os usuários podem compartilhar links para arquivos, copiar ou mover arquivos para unidades da equipe ou até mesmo anexar arquivos do OneDrive às mensagens de email no Outlook.
@@ -78,7 +78,7 @@ Saiba mais sobre [como usar a API do OneDrive][Drive API] no Microsoft Graph v1.
 
 [SharePoint]: sharepoint-concept-overview.md
 [seletor de arquivos]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
-[manipulador de arquivos]: https://docs.microsoft.com/onedrive/developer/file-handlers
+[manipulador de arquivos]: /onedrive/developer/file-handlers
 [pastas especiais]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
 [API de anotações]: integrate-with-onenote.md
 [API do Excel]: /graph/api/resources/excel?view=graph-rest-1.0

@@ -1,19 +1,19 @@
 ---
 title: Criar páginas do OneNote
-description: " Blocos de anotações empresariais no Office 365"
+description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 25ea6350bf8f31192b12eea8047c914f0e2f52ef
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 1f8f6e5ec1dd0825f10d0bb9a406b55c5822934e
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394488"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288396"
 ---
 # <a name="create-onenote-pages"></a>Criar páginas do OneNote
 
-**Aplica-se a**: Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Office 365
+**Aplica-se a**: Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Microsoft 365
 
 Para criar uma página do OneNote, você envia uma solicitação POST para um ponto de extremidade de *pages*. Por exemplo:
 
@@ -197,7 +197,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-Para obter mais exemplos que mostram como criar páginas que contêm imagens e outros arquivos, consulte [Adicionar imagens e arquivos](onenote-images-files.md), nossos [tutoriais](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-tutorial) e nossos [exemplos](https://github.com/onenotedev). Além disso, saiba como [criar elementos posicionados absolutos](onenote-abs-pos.md), [usar marcas de anotação](onenote-note-tags.md) e [extrair dados](onenote-extract-data.md) para capturas de cartão de visita e as listagens online de receitas e de produtos.
+Para obter mais exemplos que mostram como criar páginas que contêm imagens e outros arquivos, consulte [Adicionar imagens e arquivos](onenote-images-files.md), nossos [tutoriais](/previous-versions/office/office-365-api/how-to/onenote-tutorial) e nossos [exemplos](https://github.com/onenotedev). Além disso, saiba como [criar elementos posicionados absolutos](onenote-abs-pos.md), [usar marcas de anotação](onenote-note-tags.md) e [extrair dados](onenote-extract-data.md) para capturas de cartão de visita e as listagens online de receitas e de produtos.
 
 O Microsoft Graph é rigoroso com certos formatos, como novas linhas CRLF em um corpo da mensagem de diversas partes. Para reduzir o risco de criar cargas mal formadas, você deve usar uma biblioteca para criar mensagens de diversas partes. 
 
@@ -277,6 +277,4 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Refe
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [Perguntas sobre desenvolvimento do OneNote no Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)  
-
-
+- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)

@@ -4,22 +4,22 @@ description: Descreve quais políticas são compatíveis e como atribuir acesso 
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 5257d4c19f6c03faeedcbd18ce074dc1fed50fd5
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 77a3a99f3062b2d5c7f914799e41090297d54df0
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969176"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289285"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-licensing"></a>Políticas e licença do Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect utiliza [aplicativos gerenciados do Azure](https://docs.microsoft.com/azure/managed-applications/overview) para que você possa criar e implantar soluções em seu ambiente do cliente do Azure. Aplicativos gerenciados permitem a você dar suporte a determinadas políticas do Azure, fornecendo aos clientes maior confiança e conforto ao usar seus aplicativos. Além disso, você deve comprar e aplicar licenças da Microsoft, sua organização ou organizações que instalam seus aplicativos, para permitir que o aplicativo acesse os dados através do Data Connect.
+Microsoft Graph Data Connect utiliza [aplicativos gerenciados do Azure](/azure/managed-applications/overview) para que você possa criar e implantar soluções em seu ambiente do cliente do Azure. Aplicativos gerenciados permitem a você dar suporte a determinadas políticas do Azure, fornecendo aos clientes maior confiança e conforto ao usar seus aplicativos. Além disso, você deve comprar e aplicar licenças da Microsoft, sua organização ou organizações que instalam seus aplicativos, para permitir que o aplicativo acesse os dados através do Data Connect.
 
 ## <a name="policies"></a>Políticas
 
-As seguintes políticas do Azure são compatíveis com um desenvolvedor de aplicativo gerenciando do Azure usando dados do Office 365:
+As seguintes políticas do Azure são compatíveis com um desenvolvedor de aplicativo gerenciando do Azure usando dados do Microsoft 365:
 
-- [Política de Criptografia Necessária do ADLS Gen1](https://docs.microsoft.com/azure/azure-policy/scripts/enforce-datalakestore-encryption)
+- [Política de Criptografia Necessária do ADLS Gen1](/azure/azure-policy/scripts/enforce-datalakestore-encryption)
 
 Ao selecionar qualquer uma das políticas durante a publicação do Azure Marketplace, o status de conformidade da política será marcado e aplicado a todas as instalações do seu aplicativo. Todas as políticas selecionadas compatíveis serão exibidas para os aprovadores de dados como parte da solicitação de dados. Qualquer violação de conformidade da política causaria falha no pipeline e interrupção da extração de dados.
 
@@ -27,12 +27,12 @@ Se deseja solicitar suporte para outras políticas, informe em [UserVoice](https
 
 ## <a name="licensing"></a>Licenças
 
-Acesso ao conjunto de ferramentas do Microsoft Graph Data Connect disponível por meio do Workplace Analytics, que é licenciado por cada usuário, mensalmente.  Organizações com o Workplace Analytics podem estender suas informações de dados do Office 365 ao conceder e controlar o acesso aos seus dados em escala para aplicativos desenvolvidos internamente ou por fornecedores independentes de software (ISVs). Para saber mais, inclusive sobre como comprar, visite a [página de produto do Workplace Analytics](https://products.office.com/business/workplace-analytics).
+Acesso ao conjunto de ferramentas do Microsoft Graph Data Connect disponível por meio do Workplace Analytics, que é licenciado por cada usuário, mensalmente.  Organizações com o Workplace Analytics podem estender suas informações de dados do Microsoft 365 ao conceder e controlar o acesso aos seus dados em escala para aplicativos desenvolvidos internamente ou por fornecedores independentes de software (ISVs). Para saber mais, inclusive sobre como comprar, visite a [página de produto do Workplace Analytics](https://products.office.com/business/workplace-analytics).
 
 Se você for um ISV, também fornecemos uma opção para desenvolver aplicativos para os clientes que não compraram o Workplace Analytics. Para fazer isso, você deve comprar licenças suficientes para associá-las com todos os usuários que o aplicativo acessará por meio do Microsoft Graph Data Connect, para cada cliente que compra o aplicativo. Você pode usar essa opção com licenças do Workplace Analytics. Você precisará executar etapas para associar as instâncias da licença do Microsoft Graph Data Connect com cada uma de suas instalações do cliente.
 
 ### <a name="isvs-using-the-microsoft-graph-data-connect-license"></a>ISVs usando licença do Microsoft Graph Data Connect
-Se você for um ISV usando licença do Data Connect, você deve usar [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) para armazenar e processar a atribuição de licença. Será preciso [criar um Key Vault](https://docs.microsoft.com/azure/key-vault/quick-create-portal). Durante a criação, anote o valor URI do Key Vault. Ele será usado na definição de aplicativo para fazer referência ao Key Vault. Após criar o Key Vault, certifique-se de que o SPN usado no Serviço Vinculado à Fonte do modelo ARM do aplicativo tenha acesso a ele. Para fazer isso, acesse o painel **políticas de acesso** da instância do Key Vault, crie uma política de acesso para o aplicativo referenciada pelo SPN, e atribua permissões ao aplicativo em **Obter** e **Lista**. 
+Se você for um ISV usando licença do Data Connect, você deve usar [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) para armazenar e processar a atribuição de licença. Será preciso [criar um Key Vault](/azure/key-vault/quick-create-portal). Durante a criação, anote o valor URI do Key Vault. Ele será usado na definição de aplicativo para fazer referência ao Key Vault. Após criar o Key Vault, certifique-se de que o SPN usado no Serviço Vinculado à Fonte do modelo ARM do aplicativo tenha acesso a ele. Para fazer isso, acesse o painel **políticas de acesso** da instância do Key Vault, crie uma política de acesso para o aplicativo referenciada pelo SPN, e atribua permissões ao aplicativo em **Obter** e **Lista**. 
 
 ![Criar política de acesso ao Key Vault](images/data-connect-keyvault-access.png)
 

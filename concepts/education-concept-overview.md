@@ -1,20 +1,20 @@
 ---
 title: Visão geral da API de educação
-description: A API educacional do Microsoft Graph aprimora os recursos do Office 365 com informações relevantes para cenários educacionais, incluindo informações sobre escolas, aulas, usuários (alunos e professores), tarefas e trabalhos. Isso facilita a criação de soluções que se integrem aos recursos educacionais para vários cenários da escola e da sala de aula.
+description: A API educacional do Microsoft Graph aprimora os recursos do Microsoft 365 com informações relevantes para cenários educacionais, incluindo informações sobre escolas, aulas, usuários (alunos e professores), tarefas e trabalhos. Isso facilita a criação de soluções que se integrem aos recursos educacionais para vários cenários da escola e da sala de aula.
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 433fa802230e8b3b903b3bd5410fbe99fbb470f1
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: eb16c50cc0a858091488ebf7ffe13879c7cb4763
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345860"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289241"
 ---
 # <a name="education-api-overview"></a>Visão geral da API de educação
 
-A API educacional do Microsoft Graph aprimora os recursos do Office 365 com informações relevantes para cenários educacionais, incluindo informações sobre escolas, aulas, usuários (alunos e professores), tarefas e trabalhos. Isso facilita a criação de soluções que se integrem aos recursos educacionais para vários cenários da escola e da sala de aula.
+A API educacional do Microsoft Graph aprimora os recursos do Microsoft 365 com informações relevantes para cenários educacionais, incluindo informações sobre escolas, aulas, usuários (alunos e professores), tarefas e trabalhos. Isso facilita a criação de soluções que se integrem aos recursos educacionais para vários cenários da escola e da sala de aula.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/EnDM7KMTEqQ]
 
@@ -36,7 +36,7 @@ Vejamos a seguir alguns dos cenários permitidos pelas APIs de lista de particip
 
 Você pode usar a API de tarefas para criar um aplicativo Web que gerencia as tarefas da aula e, em seguida, integrar o seu aplicativo ao Microsoft Teams em uma nova guia personalizada.  
 
-O Microsoft Teams no Office 365 é um hub digital que reúne conversas, conteúdo e aplicativos em um só lugar para as salas de aula. O Microsoft Teams oferece um [conjunto avançado de pontos de extensibilidade](https://docs.microsoft.com/microsoftteams/platform/concepts/apps/apps-overview), incluindo a criação de guias, conectores e bots. Esses pontos de extensibilidade podem chamar as APIs educacionais do Microsoft Graph para lidar com tarefas e trabalhos. Crie uma experiência mais abrangente habilitando o seu ponto de extensão com qualquer outra API do Microsoft Graph e as APIs de tarefa e de trabalhos.
+O Microsoft Teams no Microsoft 365 é um hub digital que reúne conversas, conteúdo e aplicativos em um só lugar para as salas de aula. O Microsoft Teams oferece um [conjunto avançado de pontos de extensibilidade](/microsoftteams/platform/concepts/apps/apps-overview), incluindo a criação de guias, conectores e bots. Esses pontos de extensibilidade podem chamar as APIs educacionais do Microsoft Graph para lidar com tarefas e trabalhos. Crie uma experiência mais abrangente habilitando o seu ponto de extensão com qualquer outra API do Microsoft Graph e as APIs de tarefa e de trabalhos.
 
 Para o setor educacional, os aplicativos de guia personalizada do Microsoft Teams são abertos em um contexto de sala de aula educacional (uma equipe), onde faz sentido gerenciar o fluxo de tarefas de ponta a ponta, desde a criação e a distribuição até as notas e o feedback. Isso é apenas um exemplo de como o Microsoft Teams economiza tempo e simplifica a logística do dia a dia, deixando os educadores livres para se dedicarem aos alunos.
 
@@ -55,7 +55,7 @@ Vejamos a seguir exemplos de alguns cenários habilitados pela API de tarefas:
 
 ### <a name="enable-school-admins-to-manage-identity-and-roster-sync-using-school-data-sync-management-preview"></a>Permitir que os diretores de escola gerenciem a identidade e a sincronização da lista de participação usando o Gerenciamento do School Data Sync (visualização)
 
-O [School Data Sync](https://sds.microsoft.com/) ajuda a automatizar o processo de importação e sincronização da identidade do aluno e dos dados de lista de participação a partir de sistemas de informações do aluno com o Azure Active Directory (Azure AD) e o Office 365. Após as informações serem sincronizadas, você pode usar as APIs de lista de participação para ler as informações da lista nos aplicativos. Se você for um integrador de sistema configurando a integração do Sistema de Informações do Aluno de uma escola com a School Data Sync, use as [APIs de gerenciamento do SDS](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) do Microsoft Graph para configurar a sincronização de um arquivo CSV ou de um conector da API do SIS compatível.
+A [Sincronização de Dados Escolares](https://sds.microsoft.com/) ajuda a automatizar o processo de importação e sincronização da identidade do aluno e dos dados de lista de participação a partir de sistemas de informações do aluno com o Azure Active Directory (Azure AD) e o Microsoft 365. Após as informações serem sincronizadas, você pode usar as APIs de lista de participação para ler as informações da lista nos aplicativos. Se você for um integrador de sistema configurando a integração do Sistema de Informações do Aluno de uma escola com a School Data Sync, use as [APIs de gerenciamento do SDS](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) do Microsoft Graph para configurar a sincronização de um arquivo CSV ou de um conector da API do SIS compatível.
 
 As APIs de gerenciamento da School Data Sync oferecem suporte a cenários completos para o gerenciamento de sincronização, por exemplo:
 
@@ -81,6 +81,4 @@ Está procurando a referência de API para esse serviço?
   - [Exemplo de APIs de gerenciamento de perfil](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 
-
- 
 

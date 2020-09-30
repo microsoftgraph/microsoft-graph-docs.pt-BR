@@ -5,85 +5,85 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ff38e14182d2e38fbc2203241da911dec07f9846
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
-ms.translationtype: Auto
+ms.openlocfilehash: 38846c9560fdb02c9e3a8aac8bbd921a4f2c2eac
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45081190"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288144"
 ---
 # <a name="applications-api-overview"></a>Visão geral da API de aplicativos
 
-Para delegar funções de gerenciamento de identidades e acesso ao Azure AD, um aplicativo deve ser registrado em um locatário do Azure AD. Ao registrar seu aplicativo com o Azure AD, você está criando uma configuração de identidade para seu aplicativo que permite a integração com o Azure AD.
+Para delegar as funções de gerenciamento de identidades e de acesso ao Azure AD, um aplicativo deve ser registrado em um locatário do Azure AD. Ao registrar seu aplicativo com o Azure AD, você está criando uma configuração de identidade para o aplicativo que permite a integração com o Azure AD.
 
 ## <a name="why-use-applications-and-associated-resources"></a>Por que usar aplicativos e recursos associados?
 
-As APIs do Microsoft Graph permitem que você gerencie esses recursos e ações relacionadas aos aplicativos no Azure Active Directory:
-- **Gerenciamento de aplicativos** – o Azure ad deve ser configurado para integração com um aplicativo. Em outras palavras, ele precisa saber quais aplicativos estão usando-o como um sistema de identidade. O processo de manter o Azure AD ciente desses aplicativos e como ele deve tratá-los, é conhecido como gerenciamento de aplicativos.
-- Agentes de **publicação** local (ou conectores de proxy de aplicativo) instalados por um administrador de locatários podem ser configurados para encaminhar solicitações a um determinado recurso publicado.
-- **Gerenciamento de entidade de serviço** -a representação local, ou instância de aplicativo, de um objeto de aplicativo global em um único locatário ou diretório. Uma entidade de serviço é uma instância concreta criada a partir do objeto Application e herda determinadas propriedades desse objeto Application.
-- **Sincronização** -a sincronização de identidade do Azure Active Directory (Azure AD) (também chamada de *provisionamento*) permite automatizar a criação, a manutenção e a remoção de identidades na nuvem.
+As APIs do Microsoft Graph permitem gerenciar esses recursos e ações relacionadas a aplicativos no Azure Active Directory:
+- **Gerenciamento de aplicativos**: o Azure AD deve ser configurado para se integrar a um aplicativo. Em outras palavras, ele precisa saber quais aplicativos o estão usando como um sistema de identidade. O processo de manter o Azure AD ciente desses aplicativos e como ele deve tratá-los, é conhecido como gerenciamento de aplicativos.
+- **Publicação local**: agentes locais (ou conectores para proxy de aplicativo) instalados por um administrador de locatários podem ser configurados para direcionar solicitações a um recurso publicado em particular.
+- **Gerenciamento de entidade de serviço**: a representação local ou instância do aplicativo de um objeto de aplicativo global em um único locatário ou diretório. Uma entidade de serviço é uma instância concreta criada a partir do objeto do aplicativo e herda determinadas propriedades desse objeto do aplicativo.
+- **Sincronização**: a sincronização de identidades do Azure Active Directory (Azure AD) (também chamada de *provisionamento*) permite automatizar a criação, a manutenção e a remoção de identidades na nuvem.
 
 ## <a name="application-management"></a>Gerenciamento de aplicativo
 
-O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Você pode usar as [APIs de aplicativo](/graph/api/resources/application?view=graph-rest-1.0) no Microsoft Graph para gerenciar aplicativos programaticamente.
+O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Você pode usar os [APIs de aplicativo](/graph/api/resources/application?view=graph-rest-1.0) no Microsoft Graph para gerenciar aplicativos programaticamente.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
 Para obter mais informações sobre aplicativos, consulte os seguintes artigos:
-- [Modelo de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/application-model)
-- [Aplicativo e objetos de entidade de serviço no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-- [Tipos de aplicativos para a plataforma de identidade da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types)
+- [Modelo de aplicativo](/azure/active-directory/develop/application-model)
+- [Aplicativo e objetos de entidade de serviço no Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+- [Tipos de aplicativo para a plataforma de identidade da Microsoft](/azure/active-directory/develop/v2-app-types)
 
-Para obter mais informações sobre o gerenciamento de aplicativos, consulte os seguintes artigos:
-- [O que é gerenciamento de aplicativos?](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management)
-- [Fluxos de autenticação e cenários de aplicativos](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios)
+Para obter mais informações sobre o gerenciamento de aplicativos, confira os artigos a seguir:
+- [O que é o gerenciamento de aplicativo?](/azure/active-directory/manage-apps/what-is-application-management)
+- [Fluxos de autenticação e cenários de aplicativos](/azure/active-directory/develop/authentication-flows-app-scenarios)
 
 ## <a name="on-premises-publishing-preview"></a>Publicação local (visualização)
 
-Criar e gerenciar perfis de publicação local, que incluem a criação de agentes locais e grupos de agentes. Você pode usar as [APIs de publicação local](/graph/api/resources/onpremisespublishingprofile-root) no Microsoft Graph para gerenciar perfis de publicação no local programaticamente.
+Criar e gerenciar perfis de publicação locais, que inclui a criação de agentes locais e grupos de agentes. Você pode usar as [APIs de publicação local](/graph/api/resources/onpremisespublishingprofile-root) no Microsoft Graph para gerenciar perfis de publicação locais programaticamente.
 
-Para obter mais informações sobre publicação local, consulte os seguintes artigos:
-- [Acesso remoto para aplicativos locais por meio do proxy de aplicativo do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)
-- [Usando o proxy de aplicativo do Azure AD para publicar aplicativos locais para usuários remotos](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-proxy)
+Para obter mais informações sobre publicação no local, confira os artigos a seguir:
+- [Acesso remoto a aplicativos locais por meio do proxy de Aplicativo Azure Active Directory](/azure/active-directory/manage-apps/application-proxy)
+- [Usando o proxy do Aplicativo Azure AD para publicar aplicativos locais para usuários remotos](/azure/active-directory/manage-apps/what-is-application-proxy)
 
-Para saber mais sobre como usar as APIs de publicação local, consulte o seguinte tutorial e suas APIs associadas:
-- [Automatizar a configuração do proxy de aplicativo usando a API do Microsoft Graph](https://docs.microsoft.com/graph/application-proxy-configure-api)
-    - [applicationtemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-    - [aplicativo](/graph/api/resources/application?view=graph-rest-1.0)
+Para saber mais sobre como usar as APIs de publicação no local, confira o seguinte tutorial e suas APIs associadas:
+- [Automatizar a configuração do Proxy de aplicativo usando a API do Microsoft Graph](./application-proxy-configure-api.md)
+    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
+    - [application](/graph/api/resources/application?view=graph-rest-1.0)
     - [onPremisesPublishing](/graph/api/resources/onpremisespublishingprofile-root)
-    - [conector](/graph/api/resources/connector)
+    - [connector](/graph/api/resources/connector)
     - [connectorGroup](/graph/api/resources/connectorgroup)
     - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 
 ## <a name="service-principal-management"></a>Gerenciamento da entidade de serviço
 
-Para acessar os recursos que são protegidos por um locatário do Azure AD, a entidade que requer acesso deve ser representada por uma entidade de segurança. Você pode usar as [APIs de entidade de serviço](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) no Microsoft Graph para gerenciar entidades de segurança de serviço programaticamente.
+Para acessar os recursos que estão protegidos por um locatário do Azure AD, a entidade que exige o acesso deve ser representada por uma entidade de segurança. Você pode usar as [APIs da entidade de serviço](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) no Microsoft Graph para gerenciar entidades de serviço programaticamente.
 
-Para obter mais informações sobre entidades de serviço, consulte [Application and Service principal Objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
+Para obter mais informações sobre entidades de serviço, confira [Objetos de Aplicativo e de entidade de serviço no Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
 
 ## <a name="synchronization"></a>Sincronização
 
-Você pode usar as [APIs de sincronização](/graph/api/resources/synchronization-overview) no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:
+Você pode usar as [APIs de sincronização ](/graph/api/resources/synchronization-overview) no Microsoft Graph para gerenciar a sincronização de identidade programaticamente, incluindo:
 - Criar, iniciar e interromper trabalhos de sincronização
 - Fazer alterações no esquema de sincronização para trabalhos
-- Verificar o status de sincronização atual
+- Status de sincronização atual.
 
-Para obter mais informações sobre sincronização, consulte os seguintes artigos:
-- [Automatizar o provisionamento de usuários e desprovisionamento para aplicativos com o Azure AD](https://docs.microsoft.com/azure/active-directory/app-provisioning/user-provisioning)
-- [Como o provisionamento funciona](https://docs.microsoft.com/azure/active-directory/app-provisioning/how-provisioning-works)
+Para obter mais informações sobre a sincronização, consulte os seguintes artigos:
+- [Automação do provisionamento e desprovisionamento de usuários para aplicativos com o Azure AD](/azure/active-directory/app-provisioning/user-provisioning)
+- [Como funciona o provisionamento](/azure/active-directory/app-provisioning/how-provisioning-works)
 
-Para saber mais sobre como usar as APIs de sincronização, consulte os seguintes tutoriais e suas APIs associadas:
-- [Configurar o provisionamento usando as APIs do Microsoft Graph](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-    - [applicationtemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
+Para saber mais sobre como usar as APIs de sincronização, confira os seguintes tutoriais e suas APIs associadas:
+- [Configurar o provisionamento usando as APIs do Microsoft Graph](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
     - [synchronizationtemplate](/graph/api/resources/synchronization-synchronizationtemplate)
     - [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob)
-- [Automatizar a configuração do aplicativo SSO baseado em SAML com a API do Microsoft Graph](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api)
-    - [applicationtemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-    - [aplicativo](/graph/api/resources/application?view=graph-rest-1.0)
+- [Automação da configuração do aplicativo de SSO baseado em SAML com a API do Microsoft Graph](/azure/active-directory/manage-apps/application-saml-sso-configure-api)
+    - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
+    - [application](/graph/api/resources/application?view=graph-rest-1.0)
     - [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy)
     - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 
 ## <a name="next-steps"></a>Próximas etapas
-- Experimente a API do Microsoft Graph no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Saiba como adicionar autenticação e autorização aos aplicativos Web e APIs Web usando [esses exemplos](https://docs.microsoft.com/azure/active-directory/develop/sample-v2-code).
+- Experimente a API do Microsoft Graph no[Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). 
+- Saiba mais sobre como adicionar autenticação e autorização aos aplicativos Web e às APIs da Web usando [estes exemplos](/azure/active-directory/develop/sample-v2-code).

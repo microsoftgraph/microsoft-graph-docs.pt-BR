@@ -4,12 +4,12 @@ description: 'A Microsoft oferece soluções e serviços que ampliam a vida mode
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 779dae27aa75537250d7a992924e8c16a9675e33
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: b918c346bfc224277f47d5711b056dc462eeae33
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43199967"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288767"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Usuários que você pode alcançar com o Microsoft Graph
 
@@ -25,7 +25,7 @@ Use o Microsoft Graph para alcançar usuários com contas pessoais da Microsoft,
 
 Use o Microsoft Graph para alcançar usuários e organizações que têm licenças para os serviços do Microsoft 365 para negócios, empresas ou educação. Esses serviços do Microsoft 365 incluem:
 
-- Office 365
+- Microsoft 365
 - Enterprise Mobility + Security
 - Windows 10
 
@@ -36,13 +36,13 @@ Com o consentimento deles, você pode usar o Microsoft Graph para obter acesso a
 Os serviços do Microsoft Graph fazem parte da nuvem mundial da Microsoft. Além disso, a Microsoft oferece:
 
 - Recursos multigeográficos para organizações multinacionais com diversas regiões geográficas e/ou países em seu locatário existente.
-- Implantações de nuvem nacional para o governo dos EUA e Alemanha, além do Azure e Office 365 operados pela 21Vianet na China.
+- Implantações de nuvem nacional para o governo dos EUA e Alemanha, além do Azure e Microsoft 365 operados pela 21Vianet na China.
 
 Com o consentimento deles, você poderá usar o Microsoft Graph para alcançar usuários e organizações cujos serviços estejam na nuvem mundial, incluindo as organizações com serviços multigeográficos. Além disso, você também poderá usar o Microsoft Graph para acessar usuários e organizações em instalações de nuvem nacional, mas são necessárias considerações especiais quanto à soberania de nuvem. Para saber mais, veja as [implantações de nuvem nacional](deployments.md).
 
 ## <a name="connect-to-school-services"></a>Conectar-se aos serviços de estudante
 
-Use o Microsoft Graph para alcançar alunos, professores e escolas que tenham licenças para os serviços educacionais do Microsoft 365. Com o consentimento deles, você poderá usar APIs de educação no Microsoft Graph que aprimoram os recursos e os dados do Office 365 com informações relevantes para cenários educacionais, incluindo escolas, alunos, professores, aulas, matrículas e tarefas. Saiba mais sobre [integração com a API de educação](education-concept-overview.md).
+Use o Microsoft Graph para alcançar alunos, professores e escolas que tenham licenças para os serviços educacionais do Microsoft 365. Com o consentimento deles, você poderá usar APIs de educação no Microsoft Graph que aprimoram os recursos e os dados do Microsoft 365 com informações relevantes para cenários educacionais, incluindo escolas, alunos, professores, aulas, matrículas e tarefas. Saiba mais sobre [integração com a API de educação](education-concept-overview.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -50,5 +50,5 @@ Use o Microsoft Graph para alcançar alunos, professores e escolas que tenham li
 - Experimente um exemplo de solicitação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Use o [início rápido](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de exemplo pronto para funcionar.
 - Consulte o item **Saiba mais** no índice para ler sobre os serviços e recursos que você pode usar em seus cenários.
-- Descubra como [obter um token de autenticação](/graph/auth) em seu aplicativo.
+- Descubra como [obter um token de autenticação](./auth/index.yml) em seu aplicativo.
 - Comece a [usar a API](use-the-api.md).

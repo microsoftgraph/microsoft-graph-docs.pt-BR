@@ -4,12 +4,12 @@ description: Veja dicas de como aproveitar o Microsoft Graph Data Connect.
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 4ca24d2752731b2de03cedf6a36fa7ed4b231ec2
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7a4672d90b43a983efb6e1d327e184e51e8f0f39
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969169"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289236"
 ---
 # <a name="tips-for-using-microsoft-graph-data-connect"></a>Dicas para uso do Microsoft Graph Data Connect
 
@@ -25,26 +25,26 @@ Como o Data Connect é projetado para extrair grandes quantidades de dados em ma
 
 ## <a name="data-must-stay-within-the-organizations-subscription"></a>Os dados devem ficar dentro da assinatura da organização
 
-Os pipelines do Data Connect são organizados pelo Azure Data Factory, um serviço de integração de dados executado em uma assinatura do Azure. A assinatura do Azure está [associada a exatamente um locatário do Office 365](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). Dessa forma, os dados devem ter o fluxo associado inicialmente a uma assinatura do Azure. Depois de mais minimalização e agregação, os dados podem ser usados em outro lugar.
+Os pipelines do Data Connect são organizados pelo Azure Data Factory, um serviço de integração de dados executado em uma assinatura do Azure. A assinatura do Azure está [associada a exatamente um locatário do Microsoft 365](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). Dessa forma, os dados devem ter o fluxo associado inicialmente a uma assinatura do Azure. Depois de mais minimalização e agregação, os dados podem ser usados em outro lugar.
 
-Se você quiser desenvolver um aplicativo para outras pessoas usarem para extrair os dados do Office 365, você pode compactar o aplicativo como um [aplicativo gerenciado do Azure](https://docs.microsoft.com/azure/managed-applications/overview) e publicar no Azure Marketplace. Em seguida, alguém pode implantar o aplicativo em sua própria assinatura do Azure, e o aplicativo pode acessar dados em seu locatário. 
+Se você quiser desenvolver um aplicativo para outras pessoas usarem para extrair os dados do Microsoft 365, você pode compactar o aplicativo como um [aplicativo gerenciado do Azure](/azure/managed-applications/overview) e publicar no Azure Marketplace. Em seguida, alguém pode implantar o aplicativo em sua própria assinatura do Azure, e o aplicativo pode acessar dados em seu locatário. 
 
 ## <a name="use-of-service-principals"></a>Uso de entidades de serviço
 
-Ao criar o pipeline do Data Factory, você terá que fornecer uma entidade de serviço para o serviço vinculado do Office 365. No Azure, uma entidade de serviço é uma identidade de segurança que representa um aplicativo ou serviço (e não um usuário). O Data Connect usa essa entidade de serviço como sua identidade ao receber acesso autorizado aos seus dados do Office 365.
+Ao criar o pipeline do Data Factory, você terá que fornecer uma entidade de serviço para o serviço vinculado do Microsoft 365. No Azure, uma entidade de serviço é uma identidade de segurança que representa um aplicativo ou serviço (e não um usuário). A Conexão de Dados usa essa entidade de serviço como sua identidade ao receber acesso autorizado aos seus dados do Microsoft 365.
 Se você criar um Aplicativo Gerenciado do Azure para que outras pessoas usem em seus locatários, você ainda irá fornecer uma entidade de serviço para uso do aplicativo. A entidade de serviço ficará armazenado em seu locatário (do fornecedor). No entanto, se o aplicativo precisa de outras entidades de serviço, seu cliente (instalador) irá criá-las em seu próprio locatário. Por exemplo, seu pipeline do Data Factory provavelmente precisará de acesso a um recurso de armazenamento no Azure. O cliente criaria a entidade de serviço com permissões para a conta de armazenamento para uso do pipeline.
 
 ## <a name="check-for-pending-privileged-access-management-requests"></a>Procure por solicitações pendentes do Privileged Access Management
 
-Antes que o Data Connect possa copiar seus dados, um administrador deve aprovar uma solicitação de Privileged Access Management (PAM). PAM é o mecanismo que autorizava seu acesso a dados de pipeline aos dados no Office 365. Na primeira vez que acionar um pipeline, irá esperar a aprovação da solicitação de acesso de um administrador do Office 365 (ou representante indicado). Embora o status do pipeline mostra **Em andamento**, a atividade de cópia subjacente terá o status **ConsentimentoPendente** até que o acesso seja aprovado, conforme mostrado na captura de tela a seguir.
+Antes que o Data Connect possa copiar seus dados, um administrador deve aprovar uma solicitação de Privileged Access Management (PAM). PAM é o mecanismo usado para autorizar seu acesso a dados de pipeline aos dados no Microsoft 365. Na primeira vez que acionar um pipeline, irá esperar a aprovação da solicitação de acesso de um administrador do Microsoft 365 (ou representante indicado). Embora o status do pipeline mostra **Em andamento**, a atividade de cópia subjacente terá o status **ConsentimentoPendente** até que o acesso seja aprovado, conforme mostrado na captura de tela a seguir.
 
 ![Captura de tela do painel de status da execução de pipeline com um status ConsentimentoPendente](images/data-connect-tips.png)
 
 Durante o desenvolvimento, é uma boa ideia para garantir que a execução do seu pipeline não fique preso em **ConsentimentoPendente**, especialmente após alterar seu pipeline. Por exemplo, se você inserir um campo adicional no esquema, a próxima execução de pipeline emitirá uma nova solicitação de PAM que precisa ser aprovada. Não desperdice tempo esperando um pipeline que aguarda sua aprovação.
 
-## <a name="approve-pam-requests-via-office-365-admin-portal"></a>Aprove solicitações PAM através do portal de administração do Office 365
+## <a name="approve-pam-requests-via-microsoft-365-admin-portal"></a>Aprove solicitações PAM através do portal de administração do Microsoft 365
 
-A documentação do Data Connect mostra como usar o PowerShell e UX do PAM para aprovar solicitações PAM. Para aprovar usando UX do PAM, acesse a interface PAM no [portal de administração do Office 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess). O portal fornece uma maneira simples e fácil para exibir, aprovar, negar, revogar solicitações PAM. Você encontra um link para ele no suplemento do Microsoft Graph Data Connect em **Configurações** > **Serviços e Suplementos** > **Microsoft Graph Data Connect**.
+A documentação do Data Connect mostra como usar o PowerShell e UX do PAM para aprovar solicitações PAM. Para aprovar usando a UX do PAM, acesse a interface PAM no [portal de administração do Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/Settings/PrivilegedAccess). O portal fornece uma maneira simples e fácil para exibir, aprovar, negar, revogar solicitações PAM. Você encontra um link para ele no suplemento do Microsoft Graph Data Connect em **Configurações** > **Serviços e Suplementos** > **Microsoft Graph Data Connect**.
 
 ## <a name="use-a-second-user-to-approve-pam-requests"></a>Usar um segundo usuário para aprovar as solicitações PAM
 
@@ -62,4 +62,4 @@ O campo `puser` também é útil para conjuntos de dados, como o conjunto de dad
 
 ## <a name="next-steps"></a>Próximos passos
 
-Consulte [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) para solicitações de recursos. 
+Consulte [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) para solicitações de recursos.
