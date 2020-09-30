@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 60a62f85272aae86470c0f6d4ffb57dc7de25d3e
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 7032a7a1f27afe03b68c2bcf13c762f9e4e02045
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48222952"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312404"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Obter bitlockerRecoveryKey
 Namespace: microsoft.graph
@@ -19,21 +19,21 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos de um objeto [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) . 
 
-Por padrão, essa operação não retorna a propriedade **Key** que representa a chave de recuperação real. Para incluir a propriedade **Key** na resposta, use o `$select` parâmetro de consulta OData. Incluindo o `$select` parâmetro de consulta dispara uma auditoria do Azure ad da operação e gera um log de auditoria. Você pode encontrar o log nos [logs de auditoria do Azure ad](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) na categoria gerenciamento de Keymanagement.
+Por padrão, essa operação não retorna a propriedade **Key** que representa a chave de recuperação real. Para incluir a propriedade **Key** na resposta, use o `$select` parâmetro de consulta OData. Incluindo o `$select` parâmetro de consulta dispara uma auditoria do Azure ad da operação e gera um log de auditoria. Você pode encontrar o log nos [logs de auditoria do Azure ad](/azure/active-directory/reports-monitoring/concept-audit-logs) na categoria gerenciamento de Keymanagement.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|BitLocker. ReadBasic. All, BitLocker. Read. All|
+|Delegado (conta corporativa ou de estudante)|BitLocker. ReadBasic. All, BitLocker. Read. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
 >**Observação:** Para permissões delegadas para permitir que os aplicativos obtenham recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador do locatário deve ter atribuído o usuário uma das seguintes funções ou o usuário deve ser o **proprietário registrado** do dispositivo do qual a chave do BitLocker foi originalmente cofileirada: 
 * Administrador global
 * Administrador do dispositivo de nuvem
-* Administrador da assistência técnica
+* Administrador do Helpdesk
 * Administrador de Serviço do Intune
 * Administrador de segurança
 * Leitor de segurança

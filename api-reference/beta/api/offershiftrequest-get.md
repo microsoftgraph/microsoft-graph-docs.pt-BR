@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bffabd291f56e8be5d33cd5c5ead55d30ffbcd2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89b4c6db5c1898b64d72f7ba9cdaeb45ea3b10ef
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064672"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313748"
 ---
 # <a name="get-offershiftrequest"></a>Obter offerShiftRequest
 
@@ -26,11 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Group.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Schedule. Read. All *, Schedule. ReadWrite. All* |
-
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
+| Aplicativo                            | Schedule. Read. All, Schedule. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 41d0a1da6aa5f7bfba99788e01978b780e52027c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cfaddd537a0fb443cd92cb3035e76c54f544228a
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067790"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313839"
 ---
 # <a name="reportroot-getm365appusercounts"></a>reportRoot: getM365AppUserCounts
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter um relatório que fornece a tendência no número de usuários ativos para cada aplicativo – Outlook, Word, Excel, PowerPoint, OneNote e equipes – em sua organização.
 
-> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [microsoft 365 Reports-microsoft 365 apps Usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
+> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [microsoft 365 Reports-microsoft 365 apps Usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## <a name="permissions"></a>Permissões
 
@@ -237,5 +237,3 @@ Content-Length: 188
   "suppressions": [
   ]
 }-->
-
-

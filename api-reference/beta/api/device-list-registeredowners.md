@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ce96fd64d4dc587771909481dba62b3c314e6791
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d88c81dee68f6830073160c1a453cfb5e429820d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996206"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312000"
 ---
 # <a name="list-registeredowners"></a>Listar registeredOwners
 
@@ -41,7 +41,7 @@ GET /devices/{id}/registeredOwners
 > Observação: A "id" na solicitação é a propriedade "id" do dispositivo, não a propriedade "deviceId".
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -114,5 +114,3 @@ Content-length: 55
   ]
 }
 -->
-
-

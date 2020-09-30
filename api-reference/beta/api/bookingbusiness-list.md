@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cbef8b345db23f1b396d1667bd0acb17cbdcf7a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a3e2ad3923e7404b72a5e612c5f776b22a8bbad
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996616"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312733"
 ---
 # <a name="list-bookingbusinesses"></a>Listar bookingBusinesses
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /bookingBusinesses
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 Este método também dá suporte ao `query` parâmetro que aceita um valor de cadeia de caracteres. Esse parâmetro limita os resultados GET para empresas que correspondem à cadeia de caracteres especificada. Você pode ver um [exemplo](#request-2) abaixo.
 
@@ -169,5 +169,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

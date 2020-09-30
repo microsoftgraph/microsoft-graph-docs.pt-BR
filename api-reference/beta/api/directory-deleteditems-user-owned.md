@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 84d0c9d688ef67fa36354c4cc037ecb61777eb0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3b001b7928cfcc008a1e1605d4effcd0cbd8e3b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008915"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311935"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
 
@@ -24,7 +24,7 @@ Esta é uma ação de serviço, o que significa que ele não oferece suporte à 
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | --- | --- |
@@ -114,7 +114,3 @@ Content-length: 1249
         ]
  }
 ```
-
-
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 50ae9c5157d78eb55492dd4021d777149d4620c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 28a49afb25e498ad7d1bdd356694e9be47ea9d5d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982651"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313468"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>Enviar chat em um chat
 
@@ -22,7 +22,7 @@ Criar um novo [chat](../resources/chatmessage.md) no [chat](../resources/chat.md
 
 > **Observação**: não é recomendável usar essa API para a migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.
 
-> **Observação**: trata-se de uma violação dos [termos de uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) para usar o Microsoft Teams como um arquivo de log. Só envie mensagens que as pessoas lerám.
+> **Observação**: trata-se de uma violação dos [termos de uso](/legal/microsoft-apis/terms-of-use) para usar o Microsoft Teams como um arquivo de log. Só envie mensagens que as pessoas lerám.
 
 ## <a name="permissions"></a>Permissões
 
@@ -142,5 +142,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

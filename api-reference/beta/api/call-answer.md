@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9451c5923b8225162c2610498baab5ad571bcab5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4182c743859d9ec4bf23a3cf0a86b99662060de8
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987471"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313090"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -453,7 +453,7 @@ Content-Type: application/json
 
 ### <a name="example-3-answer-a-policy-based-recording-call"></a>Exemplo 3: responder a uma chamada de gravação baseada em política
 
-Sob o [cenário de gravação baseado em políticas](https://docs.microsoft.com/microsoftteams/teams-recording-policy), antes que um participante da política ingresse em uma chamada, uma notificação de chamada de entrada será enviada ao bot associado à política.
+Sob o [cenário de gravação baseado em políticas](/microsoftteams/teams-recording-policy), antes que um participante da política ingresse em uma chamada, uma notificação de chamada de entrada será enviada ao bot associado à política.
 As informações de junção podem ser encontradas na propriedade **botData** . O bot pode optar por responder à chamada e [atualizar o status da gravação de](call-updaterecordingstatus.md) acordo.
 
 Veja a seguir um exemplo da notificação de chamada de entrada que um bot receberia nesse caso.
@@ -570,5 +570,3 @@ Veja a seguir um exemplo da notificação de chamada de entrada que um bot receb
   ]
 }
 -->
-
-

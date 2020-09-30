@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 95db4ad2a6a05e4df4c8055536d99a771b7568c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: da99bf47dcc7d56101a46dfdca67f971b55178aa
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067822"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313860"
 ---
 # <a name="reportroot-getm365appplatformusercounts"></a>reportRoot: getM365AppPlatformUserCounts
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha um relatório que fornece a tendência de usuários ativos em todos os aplicativos para cada plataforma – Windows, Mac, Web e móvel-em sua organização.
 
-> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [microsoft 365 Reports-microsoft 365 apps Usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
+> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [microsoft 365 Reports-microsoft 365 apps Usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## <a name="permissions"></a>Permissões
 
@@ -235,5 +235,3 @@ Content-Length: 156
   "suppressions": [
   ]
 }-->
-
-

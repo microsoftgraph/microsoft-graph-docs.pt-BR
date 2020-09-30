@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f438927eba98dfa96514292ba68765989d83278a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 366402224641ec308c9e257a1238f3166a03a28c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008922"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311952"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All | 
 
-Além disso, os aplicativos devem ser [corretamente registrados](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
+Além disso, os aplicativos devem ser [corretamente registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -158,5 +158,3 @@ Content-length: 218
   "suppressions": [
   ]
 }-->
-
-

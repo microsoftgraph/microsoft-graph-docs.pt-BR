@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4ed2e5019bf0ea7591f7658b0d81fda438f704ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d92ba7e1774e41110ea8e1120dd616d24098971c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987222"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313293"
 ---
 # <a name="call-updaterecordingstatus"></a>Call: updateRecordingStatus
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize o status de gravação do aplicativo associado a uma chamada. Isso requer o uso da solução de [gravação baseada em políticas do teams](https://docs.microsoft.com/MicrosoftTeams/teams-recording-policy) .
+Atualize o status de gravação do aplicativo associado a uma chamada. Isso requer o uso da solução de [gravação baseada em políticas do teams](/MicrosoftTeams/teams-recording-policy) .
 
 > **Restrição adicional**: você não pode usar a API de acesso à mídia para registrar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa, ou dados derivados desse conteúdo de mídia ("Record" ou "Recording"), sem primeiro chamar a API **updateRecordingStatus** para indicar que a gravação começou e receber uma resposta de êxito dessa API. Se o aplicativo começar a gravar qualquer reunião, ele deverá finalizar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação foi concluída.
 
@@ -129,5 +129,3 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
   ]
 }
 -->
-
-

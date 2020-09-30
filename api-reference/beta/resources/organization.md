@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ec213bd54fb7143fd9d1da57b849d3147eb8f580
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8674d425d6613896ac5d90263a64c2de9f109740
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998479"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313909"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -45,13 +45,14 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | countryLetterCode | Cadeia de caracteres | Abreviação do país/região da organização. |
 | createdDateTime | DateTimeOffset | Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 | deletedDateTime | DateTimeOffset | Representa a data e a hora que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no horário do UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
+| directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | As informações de cota de tamanho de diretório de uma organização. |
 | displayName | String | O nome de exibição do locatário. |
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | **verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
 | objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
 | onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-| onPremisesSyncEnabled | Boolean | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
+| onPremisesSyncEnabled | Booliano | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
 | preferredLanguage | String | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
 | privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |
@@ -68,7 +69,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Relação  | Tipo  |Descrição|
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o recurso de organização. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso de organização. Anulável.|
 |settings|[organizationSettings](organizationsettings.md) | Recupere as propriedades e os relacionamentos do objeto organizationSettings. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -93,6 +94,7 @@ Veja a seguir uma representação JSON do recurso
   "countryLetterCode": "string",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
+  "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",

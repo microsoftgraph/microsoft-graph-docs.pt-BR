@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8a6a0e70937dbf24d59adcc922944f211e570448
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 25208613c4ea75ed1ab5bbe70434d54d8294cbd6
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988062"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312362"
 ---
 # <a name="list-bookings-calendarview"></a>Listar o calendarView do Bookings
 
@@ -46,7 +46,7 @@ Forneça os seguintes parâmetros de consulta necessários com valores na URL so
 
 Os valores de `start` e `end` são interpretados usando o deslocamento de fuso horário especificado em seus valores correspondentes e não são afetados pelo valor do `Prefer: outlook.timezone` cabeçalho, se houver.
 
-Este método também dá suporte a alguns [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método também dá suporte a alguns [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -287,5 +287,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

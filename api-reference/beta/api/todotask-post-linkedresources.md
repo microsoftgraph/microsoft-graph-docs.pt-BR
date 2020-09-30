@@ -1,21 +1,23 @@
 ---
-title: Criar linkedResources
-description: Criar um novo objeto linkedResources.
+title: Criar linkedResource
+description: Criar um novo objeto linkedResource.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e5a5a702c55db40c77304c577b440f34dc610e8b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 56ad2b1f83475cc6b5af748c129f0cd84cdc07b0
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058582"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313685"
 ---
-# <a name="create-linkedresources"></a>Criar linkedResources
+# <a name="create-linkedresource"></a>Criar linkedResource
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto linkedResources.
+Criar um novo objeto **linkedResource** .
+
+Você também pode criar um objeto **linkedResource** ao [criar um todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,10 +52,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [linkedR
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)|
+|id|String|ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)|
 |webUrl|String|Deeplink para a entidade vinculada |
 |applicationName|Cadeia de caracteres|Campo que indica o nome do aplicativo da fonte que está enviando a entidade vinculada |
-|displayName|Cadeia de caracteres|Campo indicando o título da entidade vinculada. |
+|displayName|String|Campo indicando o título da entidade vinculada. |
 |externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiros |
 
 
@@ -79,8 +81,7 @@ Content-Type: application/json
 Content-length: 166
 
 {
-  "@odata.type": "#microsoft.graph.linkedResource",
-  "webUrl": "http:://microsoft.com",
+  "webUrl": "https://microsoft.com",
   "applicationName": "Microsoft",
   "displayName": "Microsoft",
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"

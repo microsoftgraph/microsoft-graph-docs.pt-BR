@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6ef533d2a8960d607a461807c29ecc31df2b4995
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b3f1c3977bfd80019c87b03f81b5e1fba881954
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987649"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313139"
 ---
 # <a name="get-calendar"></a>Obter calendário
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as propriedades e as relações de um objeto [calendar](../resources/calendar.md). O calendário pode ser um para um [usuário](../resources/user.md)ou o calendário padrão de um [grupo](../resources/group.md)do Microsoft 365.
+Obtenha as propriedades e as relações de um objeto [calendar](../resources/calendar.md). O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Microsoft 365.
 
 Existem dois cenários em que um aplicativo pode receber o calendário de outro usuário:
 
@@ -57,7 +57,7 @@ GET /me/calendarGroups/{id}/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -150,5 +150,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

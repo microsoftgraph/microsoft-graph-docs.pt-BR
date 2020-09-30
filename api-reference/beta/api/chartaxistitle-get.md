@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 93ef4e8699df5656936617840d7385de2c41a6c3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 491c8bc815df0133176ea2d8178b14feb2103e50
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983128"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312292"
 ---
 # <a name="get-workbookchartaxistitle"></a>Obter workbookChartAxisTitle
 
@@ -36,7 +36,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/title
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -107,5 +107,3 @@ Content-length: 45
   ]
 }
 -->
-
-

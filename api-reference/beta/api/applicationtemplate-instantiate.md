@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a06ace04fd87b91e56834fe874c8f6de141d7020
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f0ec8b1501d4501703fbe5d41630039976fd4c8
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996658"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312537"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationtemplate: instanciar
 
@@ -65,7 +65,7 @@ O exemplo a seguir mostra como chamar essa API.
 Este é um exemplo de solicitação.
 
 > [!NOTE] 
-> Você pode usar essa API para instanciar [aplicativos não-Galeria](https://docs.microsoft.com/azure/active-directory/manage-apps/add-non-gallery-app). Use a seguinte ID para **applicationtemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+> Você pode usar essa API para instanciar [aplicativos não-Galeria](/azure/active-directory/manage-apps/add-non-gallery-app). Use a seguinte ID para **applicationtemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -172,5 +172,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b7bbc021328374692f7d12f6016ca0e5178720e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b4bf049ed135b1dd563d640827360ddf91db0d47
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008887"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312867"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obter objetos directory a partir de uma lista de ids
 
@@ -22,7 +22,7 @@ Retorne os objetos de diretório especificados em uma lista de IDs.
 
 Alguns usos comuns dessa função são:
 
-* Resolva as IDs retornadas por funções (que retornam coleções de IDs) como [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) ou [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta) para seus objetos de diretório de suporte.
+* Resolva as IDs retornadas por funções (que retornam coleções de IDs) como [getMemberObjects](./directoryobject-getmemberobjects.md) ou [getMemberGroups](./directoryobject-getmembergroups.md) para seus objetos de diretório de suporte.
 * Resolva IDs que persistem em um repositório externo pelo aplicativo para seus objetos de diretório de suporte.
 
 ## <a name="permissions"></a>Permissões
@@ -148,5 +148,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2d02b014ff9ccad24731c07d3e003167d20b620a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 36fdbb323c455c0fb2ebeef19d9f0ce5680b47c1
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996294"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312915"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 
@@ -35,7 +35,7 @@ GET /me/contactFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -110,5 +110,3 @@ Content-length: 145
   ]
 }
 -->
-
-

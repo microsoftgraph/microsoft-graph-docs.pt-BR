@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ab6f3d2a659e800daada319de7fa5fe3519bf2e0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69f4a164a6dd43273d67bd6c43e175922a81626a
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982329"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312110"
 ---
 # <a name="get-connector"></a>Obter conector
 
@@ -36,7 +36,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -110,5 +110,3 @@ Content-length: 124
   "suppressions": []
 }
 -->
-
-
