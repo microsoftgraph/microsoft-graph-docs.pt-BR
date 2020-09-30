@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0c15afa9658e529ed1ba9154bc02e6b17317e151
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 16e9a023c53776204b719fef8b681425ccde1de2
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095713"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314563"
 ---
 # <a name="list-favoriteplans"></a>Listar favoritePlans
 
@@ -36,7 +36,7 @@ GET /me/planner/favoritePlans
 GET /users/{id}/planner/favoritePlans
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -123,5 +123,3 @@ Content-length: 979
   ]
 }
 -->
-
-

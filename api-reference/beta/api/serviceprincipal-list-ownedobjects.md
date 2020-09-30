@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipalName: listar ownedObjects'
-description: Recupere uma lista de objetos pertencentes ao servicePrincipalName.  Isso pode incluir aplicativos ou grupos.
+title: 'servicePrincipals: Lista ownedObjects'
+description: Recupere uma lista de objetos pertencentes ao servicePrincipal.  Isto poderia incluir aplicativos ou grupos.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 3ec40ad643ee5d337c702980ee7a164cab3c3b60
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e018a5f140e5b578af0257a471d8010522a7e860
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044512"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314311"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipalName: listar ownedObjects
+# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: Lista ownedObjects
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos pertencentes ao [servicePrincipalName](../resources/serviceprincipal.md).  Isso pode incluir aplicativos ou grupos.
+Recupere uma lista de objetos pertencentes ao [servicePrincipal](../resources/serviceprincipal.md).  Isto poderia incluir aplicativos ou grupos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /servicePrincipals/{id}/ownedObjects
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome           | Descrição                |
@@ -115,5 +115,3 @@ Content-length: 55
   ]
 }
 -->
-
-

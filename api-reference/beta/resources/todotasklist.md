@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0523404e836223f8a59e191d1e7040a279433795
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bddf0b72173b2f37b3fdd8544bc777c87bb33ee3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073380"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314591"
 ---
 # <a name="todotasklist-resource-type"></a>tipo de recurso todoTaskList
 
@@ -40,13 +40,21 @@ Este recurso suporta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome da lista de tarefas.|
-|id|Cadeia de caracteres| O identificador da lista de tarefas, exclusivo na caixa de correio do usuário. Somente leitura. Herdado da [entidade](entity.md)|
+|displayName|String|O nome da lista de tarefas.|
+|id|String| O identificador da lista de tarefas, exclusivo na caixa de correio do usuário. Somente leitura. Herdado da [entidade](entity.md)|
 |IsOwner|Booliano| True se o usuário é proprietário da lista de tarefas determinada.|
 |isShared|Booliano| True se a lista de tarefas é compartilhada com outros usuários|
-|wellknownListName|wellknownListName| Propriedade que indica o nome da lista conhecido se a lista fornecida é uma lista conhecida. Os valores possíveis são: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|wellknownListName|wellknownListName| Propriedade que indica o nome da lista se a lista fornecida é uma lista conhecida. Os valores possíveis são: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
-## <a name="relationships"></a>Relacionamentos
+### <a name="wellknownlistname-values"></a>valores de wellknownListName
+|Member|Descrição|
+|:---|:---|
+|Nenhuma| Lista criada pelo usuário.|
+|defaultlist| Lista de **tarefas** interna.|
+|flaggedEmails| Lista de **emails sinalizada** interna. As tarefas de emails sinalizados estão presentes nesta lista.|
+|unknownFutureValue| Valor de sentinela de enumeração evolvable. Não usar.|
+
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |extensions|Coleção [extension](extension.md)| A coleção de extensões abertas definida para a lista de tarefas. Anulável.|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: daf8471b4bfea2509a2adbd84e23a96622998c5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eccfd08989b9cba23d72216de441f60e10ebb00f
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085280"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314731"
 ---
 # <a name="update-reviewsetquery"></a>Atualizar reviewSetQuery
 
@@ -48,8 +48,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName | Cadeia de caracteres | Nome para exibição para a consulta de conjunto de análise. |
-| consulta | Cadeia de caracteres | A cadeia de caracteres de consulta na consulta KQL (linguagem de consulta de palavra-chave). Para obter detalhes, consulte [Document Metadata Fields](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). |
+| displayName | String | Nome para exibição para a consulta de conjunto de análise. |
+| consulta | String | A cadeia de caracteres de consulta na consulta KQL (linguagem de consulta de palavra-chave). Para obter detalhes, consulte [Document Metadata Fields](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). |
 
 ## <a name="response"></a>Resposta
 
@@ -99,5 +99,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: c34149a5325e3f7b7087c886a6faab5a9963535a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 54d653fe3fa18cbde13e1911a361270e97e820fc
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014277"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314976"
 ---
 # <a name="get-user-activities"></a>Obter atividades do usuário
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,7 +40,7 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
+Este método oferece suporte a alguns [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
 
 - $expand da propriedade de navegação **historyItems** .
 - $top limitar o número máximo de itens nas páginas.
@@ -157,5 +157,3 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 82389c7cb67c0b2624b3bbc1f02dd21c5ca82798
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8c036362760f057cf301551028c33b4a7218d88
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035873"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314084"
 ---
 # <a name="update-printconnector"></a>Atualizar o multiligação
 
@@ -23,7 +23,7 @@ Atualiza as propriedades **de um objeto** Printer.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Nomededomíniototalmentequalificado|String|O nome de host do computador do conector.|
 |operatingSystem|String|A versão do sistema operacional do computador do conector.|
 |appVersion|String|A versão do conector.|
-|localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
+|location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [multiconnect](../resources/printConnector.md) atualizado no corpo da resposta.
@@ -156,5 +156,3 @@ Content-length: 406
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

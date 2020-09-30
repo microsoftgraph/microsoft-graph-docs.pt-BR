@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 6bbc6d0dc347e056740591ca401289534ffb179e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3a1192a9a14181a0c5a4dac9e067e6326dba60b4
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085441"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314091"
 ---
 # <a name="get-reviewset"></a>Obter reviewset
 
@@ -44,7 +44,7 @@ Por padrão, todos os campos do conjunto de revisão são retornados; no entanto
 
 Como uma solicitação pode retornar muitos casos, você pode filtrá-los usando **DisplayName**.  Para filtrar por **DisplayName**, adicione o seguinte à sua consulta: `$filter=displayName eq 'rs1'` , onde o nome do conjunto de revisão é RS1.
 
-Para obter mais informações sobre filtragem e especificação de campos, consulte [usando expressões de filtro em URIs OData ](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris).
+Para obter mais informações sobre filtragem e especificação de campos, consulte [usando expressões de filtro em URIs OData ](/dynamics-nav/using-filter-expressions-in-odata-uris).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -129,5 +129,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

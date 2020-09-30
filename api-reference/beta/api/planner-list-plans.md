@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 0b1c9c903746351b1d5b28a2b7fb097844c6a567
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a829a55a4022901e670a61499967b6fdbd3f567e
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036057"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315193"
 ---
 # <a name="list-plans"></a>Listar planos
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /planner/plans
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método requer que o [filtro](https://developer.microsoft.com/graph/docs/concepts/query_parameters) de proprietário seja especificado.
+Este método requer que o [filtro](/graph/query-parameters) de proprietário seja especificado.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -122,5 +122,3 @@ Content-length: 421
   ]
 }
 -->
-
-

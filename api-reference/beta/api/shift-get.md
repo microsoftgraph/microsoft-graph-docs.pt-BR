@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2c9a855d2f55b43839cefb849151ef98118aefcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e8290347c22627378d513b26f341711e21bb764b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040207"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314262"
 ---
 # <a name="get-shift"></a>Obter turno
 
@@ -24,15 +24,11 @@ Recupere as propriedades e os relacionamentos de um objeto [Shift](../resources/
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Group.Read.All, Group.ReadWrite.All         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Schedule. Read. All *, Schedule. ReadWrite. All* |
-
->\***Importante:** As permissões de aplicativo estão atualmente em visualização privada apenas e não estão disponíveis para uso público.
-
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Schedule. Read. All, Schedule. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

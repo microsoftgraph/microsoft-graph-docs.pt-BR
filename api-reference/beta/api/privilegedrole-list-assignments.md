@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: f3e0fd9b4d15fedd4b12f9118257dcc46a57c2d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 02a282546778e2de558f7f770426969a96441071
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035145"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315025"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 
@@ -39,7 +39,7 @@ GET /privilegedRoles/{id}/assignments
 
 Observe que ``{id}`` é a ID da função de destino.
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -120,5 +120,3 @@ Content-length: 237
   ]
 }
 -->
-
-

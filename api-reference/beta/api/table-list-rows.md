@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8a443a7d10b555712d25234c354f51e14f7abbd2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d727a0b33d1ade4d6559d285e201ba5a0ebe3fb
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087768"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315123"
 ---
 # <a name="list-rows"></a>Listar linhas
 
@@ -35,7 +35,7 @@ GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. Para resultados confiáveis, use os parâmetros de consulta [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) para navegar pelos resultados. Isso ajudará a evitar problemas de desempenho relacionados a grandes conjuntos de resultados.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Para resultados confiáveis, use os parâmetros de consulta [$top](/graph/query-parameters#top) e [$skip](/graph/query-parameters#skip-parameter) para navegar pelos resultados. Isso ajudará a evitar problemas de desempenho relacionados a grandes conjuntos de resultados.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -99,7 +99,7 @@ Content-length: 82
 ```
 
 > 
-  **Observação:** use os parâmetros de consulta [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) para navegar por um grande número de linhas.
+  **Observação:** use os parâmetros de consulta [$top](/graph/query-parameters#top) e [$skip](/graph/query-parameters#skip-parameter) para navegar por um grande número de linhas.
 
 Exemplo: 
 
@@ -119,5 +119,3 @@ Exemplo:
   ]
 }
 -->
-
-

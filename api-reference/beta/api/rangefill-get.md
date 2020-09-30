@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a4c422bf6d2c83302d4b58b192413e3841d9c6e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b86270e48f43a5deed900f616f07f3a4f646d326
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004428"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315238"
 ---
 # <a name="get-rangefill"></a>Obter RangeFill
 
@@ -36,7 +36,7 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -106,5 +106,3 @@ Content-length: 28
   ]
 }
 -->
-
-

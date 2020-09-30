@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fa54f8b198de407d241290d7f123181b1c12428c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a49ac1ee0256cbefd2d61f1508fd3ef0652c4832
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087765"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315105"
 ---
 # <a name="list-tablecollection"></a>Listar TableCollection
 
@@ -35,7 +35,7 @@ GET /workbook/tables
 GET /workbook/worksheets/{id|name}/tables
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -114,5 +114,3 @@ Content-length: 158
   ]
 }
 -->
-
-

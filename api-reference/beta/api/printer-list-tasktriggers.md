@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 526853a4a902848731f17231e186e9a7f708e981
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a75e34d3134fab8e66c0c27d0e563d0a0d6750d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035637"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314203"
 ---
 # <a name="list-tasktriggers"></a>List taskTriggers
 
@@ -25,7 +25,7 @@ Para obter detalhes sobre como usar essa API para adicionar suporte à impressã
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -118,5 +118,3 @@ Content-length: 254
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

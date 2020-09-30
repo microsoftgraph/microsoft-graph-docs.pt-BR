@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ea0cc63521ccaac667abe5ef62baf47cabb4c152
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5ed974c1b5e6d1f43b3444309e5a3652d13864b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035638"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314210"
 ---
 # <a name="list-printjobs"></a>Listar trabalhos
 
@@ -23,7 +23,7 @@ Recupere uma lista de trabalhos de impressão associados à [impressora](../reso
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura universal de impressão ativa, uma permissão que conceda obter acesso à [impressora](printer-get.md) e uma das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura universal de impressão ativa, uma permissão que conceda obter acesso à [impressora](printer-get.md) e uma das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 Para ler os trabalhos de impressão de outro usuário, o usuário conectado precisa ser um administrador de impressão e ter a permissão PrintJob. ReadBasic. All, PrintJob. Read. All, PrintJob. ReadWriteBasic. All ou PrintJob. ReadWrite. All.
 
@@ -43,7 +43,7 @@ GET /print/printers/{id}/jobs
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 * A propriedade **Documents** é omitida da resposta por padrão. Para retornar também uma lista de [documentos](../resources/printdocument.md) impressos para cada trabalho de impressão, use `$expand=documents` .
-* Este método dá suporte à filtragem de trabalhos de impressão pelo usuário que os criou. Use `$filter=createdBy/userPrincipalName eq '{upn}'` , em que **{UPN}** é o [nome principal](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) do usuário associado.
+* Este método dá suporte à filtragem de trabalhos de impressão pelo usuário que os criou. Use `$filter=createdBy/userPrincipalName eq '{upn}'` , em que **{UPN}** é o [nome principal](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) do usuário associado.
 
 ### <a name="exceptions"></a>Exceptions
 Não há suporte para alguns operadores: `$count` , `$search` , `$filter` .
@@ -122,5 +122,3 @@ Content-length: 461
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

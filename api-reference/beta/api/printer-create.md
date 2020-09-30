@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1827898260f216b7c4d947b78386c5f2e5c5227e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8080185c913a99702fba9510845ac284bf186afc
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035785"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314376"
 ---
 # <a name="printer-create"></a>impressora: criar
 
@@ -23,7 +23,7 @@ Criar (registrar) uma impressora com o serviço de impressão universal. Esta é
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -62,7 +62,7 @@ Fazer uma solicitação GET para a URL vinculada pode ser usado para obter o sta
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação. Para obter ajuda para criar a solicitação de assinatura de certificado (CSR) necessária, consulte o [exemplo de código de geração de CSR](https://docs.microsoft.com/universal-print/hardware/universal-print-oem-certificate-signing-request).
+Este é um exemplo de solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -125,5 +125,3 @@ Retry-After: 5
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

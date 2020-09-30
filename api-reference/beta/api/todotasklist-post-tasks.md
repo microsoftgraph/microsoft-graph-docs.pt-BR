@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 82cc4f2320e723eb159711573aa4649f177053fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47e6822c099c07a7b4b65a50eb1292d4280a8535
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027472"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314161"
 ---
 # <a name="create-todotask"></a>Criar todoTask
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |importância|importância|A importância da tarefa. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
-|recorrência|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
 |status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|Uma breve descrição da tarefa.|
@@ -73,6 +73,7 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+O exemplo a seguir cria um **todoTask** na lista de tarefas especificada e inclui um [linkedResource](../resources/linkedresource.md).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

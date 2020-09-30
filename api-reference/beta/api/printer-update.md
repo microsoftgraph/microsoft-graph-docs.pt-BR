@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c9df1f2bffebfbfb26707bd1b61f4acb1a6235ee
-ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
+ms.openlocfilehash: 5ddbd41aa7e51434fb6e6d07a90bac090a0266d6
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48273589"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314956"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 
@@ -23,14 +23,14 @@ Atualiza as propriedades de um objeto [Printer](../resources/printer.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. O usuário conectado deve ser um [administrador da impressora](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 Somente o aplicativo que registrou a impressora tem permissão para atualizar a impressora usando permissões de aplicativo.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -182,5 +182,3 @@ Content-length: 1313
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

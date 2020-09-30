@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bb9fdb59a1b406ff3827af07b5246434c5a585b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5077d7f2a55f9ad6d3382ab3fc65af5f12260c4f
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076642"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315553"
 ---
 # <a name="delete-teamsapp"></a>Excluir teamsApp
 
@@ -26,7 +26,7 @@ Você também pode usar essa API para remover um aplicativo enviado do processo 
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 >**Observação:** Somente os administradores globais podem chamar esta API. 
 
@@ -111,5 +111,3 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

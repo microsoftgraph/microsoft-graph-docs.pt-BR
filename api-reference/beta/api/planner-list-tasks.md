@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: cd4534bd0562209163ba1eba5ceab048d70bb77a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e18be0210033438b2a0f8bce9bcecfd301d9acec
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036055"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315172"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /planner/tasks
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método requer que o [filtro](https://developer.microsoft.com/graph/docs/concepts/query_parameters) de PlanID seja especificado.
+Este método requer que o [filtro](/graph/query-parameters) de PlanID seja especificado.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -133,5 +133,3 @@ Content-length: 833
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a7e7de914d8549472e08c23f65af25ca99542a58
-ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
+ms.openlocfilehash: dca15d5a57631fc58500046388975f1b03486a18
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48273652"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314056"
 ---
 # <a name="download-printdocument-binary-file"></a>Baixar arquivo binário do documento
 
@@ -27,8 +27,8 @@ Além das permissões a seguir, o locatário do usuário ou do aplicativo deve t
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | PrintJob. Read, PrintJob. Read. All, PrintJob. ReadWrite, PrintJob. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                               |
+| Delegado (conta corporativa ou de estudante)     | PrintJob. Read, PrintJob. Read. All, PrintJob. ReadWrite, PrintJob. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                               |
 | Aplicativo                            | PrintJob. Read. All, PrintJob. ReadWrite. All                    |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,13 +51,29 @@ Se tiver êxito, este método retornará `302 Found` e a URL de download previam
 O exemplo a seguir mostra como chamar essa API para adquirir uma URL de download previamente autenticado. Para iniciar o download, siga a URL de redirecionamento na resposta.
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_document_value"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/fcb0bc53-a446-41d0-bfc3-5c56cdbb0f2a/jobs/46140/documents/bd260b1a-044e-4ca6-afa9-17d9a587d254/$value
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-document-value-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-document-value-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-document-value-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

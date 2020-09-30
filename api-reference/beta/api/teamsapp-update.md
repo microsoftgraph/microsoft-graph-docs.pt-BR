@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e47ca7c35ddd535ec9809039cc57c4be670ef85a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0e0f8b9380fdd97cb41a9edbaa8d3d1eb71b8e3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076614"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314826"
 ---
 # <a name="update-teamsapp"></a>Atualizar teamsApp
 
@@ -24,7 +24,7 @@ Essa API atualiza especificamente um aplicativo publicado no catálogo de aplica
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 >**Observação:** Somente os administradores globais podem chamar esta API.
 
@@ -148,5 +148,3 @@ Content-Type: application/json
     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
 ```
-
-

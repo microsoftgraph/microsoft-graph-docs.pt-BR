@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 900f8a0a79a9c7f84e17f1d19275926463061c4e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0865ba848e208809b8853c748655a8e912719af5
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067787"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314025"
 ---
 # <a name="reportroot-getm365appuserdetail"></a>reportRoot: getM365AppUserDetail
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha um relatório que fornece os detalhes sobre quais aplicativos e plataformas os usuários usaram.
 
-> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [microsoft 365 Reports-microsoft 365 apps Usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
+> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [microsoft 365 Reports-microsoft 365 apps Usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## <a name="permissions"></a>Permissões
 
@@ -304,5 +304,3 @@ Content-Length: 951
   "suppressions": [
   ]
 }-->
-
-

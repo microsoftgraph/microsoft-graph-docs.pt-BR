@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fdae19af982d8e8c73db968123361fa3700d684c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f322a920aa8d624ff8d985ddfda6ccd7d0c1d6f3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986165"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312789"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -553,8 +553,6 @@ Content-Length: 0
 ## <a name="see-also"></a>Confira também
 
 - [Modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates)
-- [Introdução aos modelos de Equipes de varejo](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Introdução aos modelos de Equipes médicas](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
+- [Introdução aos modelos de Equipes de varejo](/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Introdução aos modelos de Equipes médicas](/MicrosoftTeams/healthcare/healthcare-templates)
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
-
-
