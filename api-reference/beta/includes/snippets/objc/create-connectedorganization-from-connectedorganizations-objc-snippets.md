@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8d4f491f5e38b28c49cb1dede5c7049bb9e52d9f
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: b127de0e8fdd4307169bffd8b0daf0bdc090b7c7
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331081"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48317935"
 ---
 ```objc
 
@@ -25,7 +25,7 @@ MSGraphIdentitySource *identitySources = [[MSGraphIdentitySource alloc] init];
 [identitySources setDisplayName:@"example.com"];
 [identitySourcesList addObject: identitySources];
 [connectedOrganization setIdentitySources:identitySourcesList];
-[connectedOrganization setState:@"proposed"];
+[connectedOrganization setState: [MSGraphConnectedOrganizationState proposed]];
 
 NSError *error;
 NSData *connectedOrganizationData = [connectedOrganization getSerializedDataWithError:&error];
