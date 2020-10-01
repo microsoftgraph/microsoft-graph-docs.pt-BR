@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 653fbb39676546b68e85fc7c22be13849b3851fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d227e766771c68a717f36a62ff5745efc6c6e509
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001537"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330115"
 ---
 # <a name="list-threatassessmentrequests"></a>Listar threatAssessmentRequests
 
@@ -33,9 +33,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ThreatAssessment. ReadWrite. All.             |
+| Delegado (conta corporativa ou de estudante)     | ThreatAssessment.ReadWrite.All             |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | ThreatAssessment. Read. All.                  |
+| Aplicativo                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

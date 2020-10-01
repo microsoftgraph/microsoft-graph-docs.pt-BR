@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bff62225e00f2c42dca1462dee18a110d63ac90c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbe0cbf6207a1beee0488cf26a13f17f8c1d4fa4
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968998"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48329973"
 ---
 # <a name="list-members"></a>Listar membros
 Namespace: microsoft.graph
@@ -38,6 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 GET /teams/{teamsId}/members
+GET /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

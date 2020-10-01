@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a3b71723aaa83cd9b70e8f43e32eba2654dc240c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c192d0c6af90966a1b18363b32923c9cdf1ed74b
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987194"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330022"
 ---
 # <a name="get-callrecord"></a>Obter callRecord
 
@@ -148,7 +148,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Se a lista de sessões estiver truncada, `sessions@odata.nextlink` será fornecido um valor para recuperar a próxima página de sessões.
+Este é um exemplo de resposta. Se a lista de sessões estiver truncada, `sessions@odata.nextLink` será fornecido um valor para recuperar a próxima página de sessões.
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
@@ -390,7 +390,7 @@ Content-type: application/json
             ]
         }
     ],
-    "sessions@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+    "sessions@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
 }
 ```
 

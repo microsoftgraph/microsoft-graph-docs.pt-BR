@@ -5,16 +5,16 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f190e16094d2c0c1ea383ae2ff982812654759ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2309237c9b5e3355802839e7324d08861492faee
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002703"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330113"
 ---
 # <a name="update-conversationmember"></a>Atualizar conversationMember
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,13 +30,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| No Teams: TeamMember. ReadWrite. All. Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All. |
+|Delegado (conta corporativa ou de estudante)| No Teams: TeamMember. ReadWrite. All<br/>Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| No Teams: TeamMember. ReadWrite. All. Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All. |
+|Aplicativo| No Teams: TeamMember. ReadWrite. All<br/>Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
 ```http
+PATCH /teams/{id}/members/{id}
 PATCH /teams/{id}/channels/{id}/members/{id}
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e13986bb5702fe86a384e93c4e64e76cf0b39d6f
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 1c9fb0d0529a6db465e124e58991aa1e3a39d921
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48222951"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330246"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>trustFrameworkKeySet: getActiveKey
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All. |
+| Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | TrustFrameworkKeySet. Read. All, TrustFrameworkKeySet. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

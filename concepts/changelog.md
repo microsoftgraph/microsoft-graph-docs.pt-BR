@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c2d111a378c23eea94ef3908f796e793e7c956d7
-ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
+ms.openlocfilehash: ace01b548d7150e44a79b1dd0c90c3ee85c509db
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48273666"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313853"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -107,6 +107,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | A propriedade **schedule** foi adicionada a [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) e [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) no gerenciamento de direitos.|
 | Adição | beta | Adicionou o tipo de recurso [bitlockerRecoveryKey](/graph/api/resources/bitlockerRecoveryKey?view=graph-rest-beta).|
 | Adição | beta | Adicionado o tipo enumerado **volumeType**.|
+| Adição | beta | Adicionado o tipo complexo **directorySizeQuota** à entidade [organization](/graph/api/resources/organization?view=graph-rest-beta). |
 
 ### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
 

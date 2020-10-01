@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 12c81a9d2146f24ade4ffcd148ca734ba30e3ab4
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 4751f18338272ab78a6197ca7589c8d5cf5a2418
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288774"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311928"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1501,15 +1501,17 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _RoleManagement.Read.Directory_ | Ler configurações de diretório RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
-| _RoleManagement.ReadWrite.Directory_ | Ler e gravar configurações no diretório RBAC | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
+| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](https://docs.microsoft.com/graph/api/resources/rolemanagement?view=graph-rest-beta), em nome do usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim | Não |
+| _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
+| _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.Directory_ | Ler todas as configurações de diretório RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) do diretório da empresa, sem um usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
-| _RoleManagement.ReadWrite.Directory_ | Ler e gravar todas as configurações no diretório RBAC | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) para o diretório da empresa, sem um usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
+| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](https://docs.microsoft.com/graph/api/resources/rolemanagement?view=graph-rest-beta), sem um usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim |
+| _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) do diretório da empresa, sem um usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
+| _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) para o diretório da empresa, sem um usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
 
 ### <a name="remarks"></a>Comentários
 Com a permissão _RoleManagement.Read.Directory_ um aplicativo pode ler directoryRoles e directoryRoleTemplates. Isso inclui a leitura de informações de associação para funções de diretório.
@@ -1540,6 +1542,15 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Schedule.ReadWrite.All_ (visualização privada)| Dados do serviço de Turnos de Leitura e Gravação (Teams) | Permite que um aplicativo leia e grave a agenda, grupos de agendamento, turnos e entidades associadas em aplicativos de turnos sem um usuário conectado.| Sim | Não |
 | _Schedule.Read.All_ (visualização privada)| Dados do serviço de Turnos de Leitura (Teams) | Permite que o aplicativo leia a agenda, grupos de agendamento, turnos e entidades associadas em aplicativos de turnos sem um usuário conectado.  | Sim | Não |
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+| _Schedule.ReadWrite.All_ | Dados do serviço de Turnos de Leitura e Gravação (Teams) | Permite que um aplicativo leia e escreva agenda, grupos de agendas, turnos e entidades associadas em aplicativos de turnos em nome do usuário conectado.| Não | Não |
+| _Schedule.Read.All_ | Dados do serviço de Turnos de Leitura (Teams) | Permite que um aplicativo leia a agenda, grupos de agenda, turnos e entidades associadas em aplicativos de turnos em nome do usuário conectado.  | Não | Não |
+| _WorkforceIntegration.ReadWrite.All_ (visualização particular)| Ler e gravar integrações de força de trabalho | Permite que o aplicativo gerencie integrações de força de trabalho, para sincronizar dados do Microsoft Teams, com um sistema integrado, em nome do usuário conectado.  | Sim | Não |
+| _WorkforceIntegration.Read.All_ (visualização privada)| Ler e gravar integrações de força de trabalho | Permite que o aplicativo gerencie integrações de força de trabalho, para sincronizar dados do Microsoft Teams, com um sistema integrado, em nome do usuário conectado.  | Sim | Não |
 
 ## <a name="search-permissions"></a>Permissões de pesquisa
 
