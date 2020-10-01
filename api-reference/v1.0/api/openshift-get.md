@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 49bd48e8b70347acde1b21474dd9e4d34a12678c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e90190515e245e871ef089bb37670b75ba3c109e
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057133"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313615"
 ---
 # <a name="get-openshift"></a>Obter openShift
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Schedule. Read. All, Schedule. ReadWrite. All |
 
 > **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
@@ -37,6 +37,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /teams/{id}/schedule/openShifts/{openShiftId}
 ```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Este método não oferece suporte a parâmetros de consulta OData para personalizar a resposta.
  
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

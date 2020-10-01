@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 47beed16d5b25a21a912686b5a0750751dd953f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0044a174c9983bf21a696a428d458dd04cc0cc9
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012961"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315560"
 ---
 # <a name="get-shift"></a>Obter turno
 
@@ -22,13 +22,12 @@ Recupere as propriedades e os relacionamentos de um objeto [Shift](../resources/
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                    |
 |:---------------------------------------|:-------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                 |
+| Delegada (conta corporativa ou de estudante)     | Schedule. Read. All, Group. Read. All, Schedule. ReadWrite. All, Group. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                 |
 | Aplicativo                            | Schedule. Read. All, Schedule. ReadWrite. All                                      |
-
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
