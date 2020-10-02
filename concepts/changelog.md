@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: ace01b548d7150e44a79b1dd0c90c3ee85c509db
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: fdd1f174a8f41fdcb7e7ec93d8e722ed61474eae
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313853"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330400"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -551,7 +551,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 |Adição|v1.0|A relação **homeRealmDiscoveryPolicies** foi adicionada ao recurso [servicePrincipal](/graph/api/resources/servicePrincipal?view=graph-rest-1.0).|
 |Adição|v1.0|A relação **tokenIssuancePolicies** foi adicionada ao recurso [servicePrincipal](/graph/api/resources/servicePrincipal?view=graph-rest-1.0).|
 |Adição|v1.0|A relação **tokenLifetimePolicies** foi adicionada ao recurso [servicePrincipal](/graph/api/resources/servicePrincipal?view=graph-rest-1.0).|
-| Adição | beta | Adicionadas as propriedades **resourceBehaviorOptions** e **resourceProvisioningOptions** à entidade [grupo](/graph/api/resources/group?view=graph-rest-beta).|
+| Adição | v1.0 | Adicionadas as propriedades **resourceBehaviorOptions** e **resourceProvisioningOptions** à entidade [grupo](/graph/api/resources/group?view=graph-rest-1.0).|
 |Exclusão| beta | A propriedade **isGuest** foi removida do recurso [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta). |
 | Adição | beta | Adicionada a entidade [connector](/graph/api/resources/connector?view=graph-rest-beta) e as seguintes ações: <br/> [Obter conector](/graph/api/connector-get?view=graph-rest-beta) <br/> [Listar memberOf](/graph/api/connector-list-memberof?view=graph-rest-beta) <br/> [Listar conectores](/graph/api/connector-list?view=graph-rest-beta) <br/> [Adicionar conector a connectorGroup](/graph/api/connector-post-memberof?view=graph-rest-beta) |
 | Adição | beta | Adicionada a entidade [connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) e as seguintes ações: <br/> [Obter connectorGroup](/graph/api/connectorgroup-get?view=graph-rest-beta) <br/> [Atribuir um aplicativo](/graph/api/connectorgroup-post-applications?view=graph-rest-beta) <br/> [Listar aplicativos](/graph/api/connectorgroup-list-applications?view=graph-rest-beta)  <br/> [Listar connectorGroups](/graph/api/connectorgroup-list?view=graph-rest-beta) <br/> [Adicionar conector](/graph/api/connectorgroup-post-members?view=graph-rest-beta) <br/> [Listar conectores](/graph/api/connectorgroup-list-members?view=graph-rest-beta) <br/> [Criar connectorGroup](/graph/api/connectorgroup-post?view=graph-rest-beta) <br/>[Atualizar connectorGroup](/graph/api/connectorgroup-update?view=graph-rest-beta) <br/> [Excluir connectorGroup](/graph/api/connectorgroup-delete?view=graph-rest-beta) |
