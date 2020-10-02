@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4751f18338272ab78a6197ca7589c8d5cf5a2418
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 051291fc349690bfb05419d3f5758b7f673a0e38
+ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311928"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338212"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -344,43 +344,7 @@ Nenhuma.
 * _Calendars.ReadWrite_: Adicionar um evento de folga aprovada (`POST /users/{id | userPrincipalName}/events`) ao calendário de um usuário.
 * _Calendars.Send_: Enviar uma mensagem (`POST /users/{id | userPrincipalName}/sendCalendars`).
 
-
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
-
-## <a name="channel-permissions"></a>Permissões de canal
-
-#### <a name="delegated-permissions"></a>Permissões delegadas
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | Ler os nomes e descrições dos canais. | Ler os nomes e as descrições dos canais, em nome do usuário conectado.    | Não | Não |
-| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, em nome do usuário conectado.   | Sim | Não |
-| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, em nome do usuário conectado.   | Sim | Não |
-
-#### <a name="application-permissions"></a>Permissões de aplicativos
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Channel.ReadBasic.All_ | Ler os nomes e as descrições de todos os canais. | Ler todos os nomes e descrições do canal, sem um usuário conectado.  | Sim | Não |
-| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
-| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, sem um usuário conectado.  | Sim | Não |
-|_Teamwork.Migrate.All_|Gerenciar a migração do Microsoft Teams|Criar e gerenciar recursos de migração do Microsoft Teams|Sim|Sim|
-
-## <a name="channel-settings-permissions"></a>Permissões de configurações de canal 
-
-#### <a name="delegated-permissions"></a>Permissões delegadas
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações dos canais. | Ler todos os nomes, descrições e configurações dos canais, em nome do usuário conectado.   | Sim | Não |
-| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações dos canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, em nome do usuário conectado.  | Sim | Não |
-
-#### <a name="application-permissions"></a>Permissões de aplicativos
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações de todos os canais. | Ler todos os nomes, descrições e configurações do canal, sem um usuário conectado.  | Sim | Não |
-| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado. | Sim | Não |
 
 ## <a name="calls-permissions"></a>Permissões de chamadas
 
@@ -463,12 +427,13 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, em nome do usuário conectado.   | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
- 
+
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Channel.ReadBasic.All_ | Ler os nomes e as descrições de todos os canais. | Ler todos os nomes e descrições do canal, sem um usuário conectado.  | Sim | Não |
 | _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
 | _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, sem um usuário conectado.  | Sim | Não |
+|_Teamwork.Migrate.All_|Gerenciar a migração do Microsoft Teams|Criar e gerenciar recursos de migração do Microsoft Teams|Sim|Sim|
 
 ## <a name="channel-member-permissions"></a>Permissões de membro do canal
 
@@ -616,6 +581,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Device.ReadWrite.All_ |Ler e registrar dispositivos |Permite que o aplicativo leia e registre todas as propriedades dos dispositivos sem um usuário conectado. Não permite a criação de dispositivos, exclusão de dispositivos ou atualização de identificadores de segurança de dispositivo alternativo. |Sim |
 
+> [!NOTE]
+> No momento, quando a permissão de aplicativo *Device.ReadWrite.All* é concedida, a função de diretório preterida, [Gerenciadores de Dispositivo](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles), será concedida à entidade de serviço do aplicativo. Essa atribuição de função de diretório não é removida automaticamente quando as permissões de aplicativo associadas são revogadas. Para garantir que o acesso de um aplicativo a leitura ou gravação nos dispositivos seja removido, os clientes também devem remover as funções de diretório que foram concedidas ao aplicativo.
+
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="application"></a>Aplicativo
@@ -652,6 +620,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 As permissões de diretório fornecem o nível mais alto de privilégio para acessar recursos de diretório, como [Usuário](/graph/api/resources/user?view=graph-rest-1.0), [Grupo](/graph/api/resources/group?view=graph-rest-1.0) e [Dispositivo](/graph/api/resources/device?view=graph-rest-1.0) em uma organização.
 
 Elas também controlam exclusivamente o acesso a outros recursos de diretório como: [contatos organizacionais](/graph/api/resources/orgcontact?view=graph-rest-beta), [APIs de extensão de esquema](/graph/api/resources/schemaextension?view=graph-rest-beta), [APIs de PIM (Privileged Identity Management)](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) e muitos dos recursos e APIs listados no nó **Azure Active Directory** na documentação de referência da API beta e v1.0. Isso inclui unidades administrativas, funções de diretório, configurações de diretório, política e muito mais.
+
+> [!NOTE]
+> No momento, quando a permissão de aplicativo *Directory.Read.All* é concedida, a função de diretório [Leitores de Diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions) será concedida à entidade de serviço do aplicativo. Quando *Directory.ReadWrite.All* é concedida, a função de diretório [Gravadores de Diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions) também é concedida. Essas funções de diretório não são removidas automaticamente quando as permissões de aplicativo associadas são revogadas. Para remover o acesso de um aplicativo para ler ou gravar no diretório, os clientes também deve remover as funções de diretório que foram concedidas ao aplicativo.
 
 A permissão _Directory.ReadWrite.All_ concede os seguintes privilégios:
 
