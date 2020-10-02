@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6c62796c56c2e0af51b7a159dead20b51f21e87f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 68bfbb382bdfff2dfbfcc6446db25da47beff04b
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978801"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330274"
 ---
 # <a name="update-place"></a>Local de atualização
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Place. ReadWrite. All. |
+| Delegado (conta corporativa ou de estudante)     | Place.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte |
 
@@ -51,20 +51,20 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade               | Tipo                                              | Descrição |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | O endereço da sala ou da sala de salas. |
-| audioDeviceName        | String                                            | Especifica o nome do dispositivo de áudio na sala. |
+| audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
 | bookingType            | [bookingType](../resources/room.md)                            | Tipo de sala. Os valores possíveis são: `Standard` e `Reserved`. |
-| Build               | String                                            | Especifica o nome do edifício ou o número de edifício em que a sala se encontra. |
-| máxima               | String                                            | Especifica a capacidade da sala. |
-| displayDeviceName      | String                                            | Especifica o nome do dispositivo de exibição na sala. |
-| floorLabel             | String                                            | Especifica a carta de piso em que a sala está ativa. |
+| Build               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número de edifício em que a sala se encontra. |
+| máxima               | Cadeia de caracteres                                            | Especifica a capacidade da sala. |
+| displayDeviceName      | Cadeia de caracteres                                            | Especifica o nome do dispositivo de exibição na sala. |
+| floorLabel             | Cadeia de caracteres                                            | Especifica a carta de piso em que a sala está ativa. |
 | floorNumber            | Int32                                             | Especifica o número do andar em que a sala está. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da sala de opções no latitude, longitude e, opcionalmente, as coordenadas de altitude. |
-| isWheelchairAccessible | Boolean                                           | Especifica se a sala pode ser acessada por cadeira. |
-| rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
-| apelido               | String                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
+| isWheelchairAccessible | Booleano                                           | Especifica se a sala pode ser acessada por cadeira. |
+| rótulo                  | Cadeia de caracteres                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
+| apelido               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou sala de salas. |
 | tags                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
-| videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
+| videoDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ## <a name="response"></a>Resposta
 

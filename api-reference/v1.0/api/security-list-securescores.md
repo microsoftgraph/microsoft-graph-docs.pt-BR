@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 16e2967046797abce4ee04e7a8fae4d451447823
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3eea4465c7cbaa767ff03684515431adbdb560a6
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025407"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330358"
 ---
 # <a name="list-securescores"></a>Listar secureScores
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All.   |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All. |
+|Delegada (conta corporativa ou de estudante) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

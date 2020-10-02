@@ -4,12 +4,12 @@ description: Descreve como atualizar o uso da biblioteca de autenticação para 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 35fc2b5c1ad1d7aebc790b93a31ba8d1924b8bc1
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 291b34b848892cb0294cc2e1a30c6452174690cc
+ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289019"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338141"
 ---
 # <a name="review-app-authentication-library-changes"></a>Analisar alterações da biblioteca de autenticação do aplicativo
 
@@ -42,7 +42,7 @@ Se seu aplicativo usa atualmente a ADAL, use uma abordagem de migração de dois
 
 O MSAL fornece vários benefícios sobre a ADAL, incluindo o consentimento incremental, experiências de logon único mais ricas, suporte para contas pessoais da Microsoft, uso de protocolos baseados em padrões e assim por diante.  
 
-Ao mudar seu aplicativo para o MSAL, você precisará fazer algumas alterações, incluindo a configuração do parâmetro de **escopos** na solicitação de token Acquistion:
+Ao mudar seu aplicativo para o MSAL, você precisará fazer algumas alterações, incluindo a configuração do parâmetro de **escopos** na solicitação de aquisição de token:
 
 ``` csharp
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
@@ -54,7 +54,7 @@ Consulte [migrando Adal para MSAL](https://aka.ms/adal-net-to-msal-net) para obt
 
 Após a migração para o MSAL, você poderá solicitar escopos adicionais dinamicamente e os usuários serão solicitados a fornecer o consentimento incremental na próxima vez que usarem seu aplicativo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Saiba mais sobre as diferenças de [biblioteca de cliente .net](migrate-azure-ad-graph-client-libraries.md) entre o Azure AD e o Microsoft Graph.
 - Revise a [lista de verificação](migrate-azure-ad-graph-planning-checklist.md) novamente.
