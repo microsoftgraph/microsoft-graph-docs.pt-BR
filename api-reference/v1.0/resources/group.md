@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 670bd86a74f771e2cda74bc9b5d3eab9f8ff71b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d14c32e372f299a681489cba5a2b3971acdd32e
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062957"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330393"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -146,7 +146,9 @@ Esse recurso permite:
 |preferredDataLocation|String|O local de data preferido para o grupo. Saiba mais em [OneDrive Online com Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado por padrão.|
 |preferredLanguage|Cadeia de caracteres|Idioma de preferência de um grupo do Microsoft 365. Deve seguir o código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para filtrar expressões em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte a $filter. |
-|renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/group-renew.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura.|
+|renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/group-renew.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Apenas leitura.|
+|resourceBehaviorOptions|Conjunto de cadeias de caracteres|Especifica os comportamentos de grupo que podem ser configurados para um grupo do Microsoft 365 durante sua criação. Isso só pode ser definido como parte da criação (POST). Os valores possíveis são `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. Para obter mais informações, confira o artigo [Definir as opções de provisionamento e comportamentos de grupo do Microsoft 365 ](/graph/group-set-options).|
+|resourceProvisioningOptions|Conjunto de cadeias de caracteres|Especifica os recursos de grupo provisionados como parte da criação de grupos do Microsoft 365 que não costumam fazer parte do processo padrão de criação de grupos. Um valor possível é `Team`. Para obter mais informações, confira o artigo [Definir as opções de provisionamento e comportamentos de grupo do Microsoft 365 ](/graph/group-set-options).|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. <br><br>Retornado por padrão. Oferece suporte a $filter.|
 |securityIdentifier|Cadeia de Caracteres|Identificador de segurança do grupo, usado em cenários do Windows. <br><br>Retornado por padrão.|
 |tema|String|Especifica o tema de cor de um grupo do Microsoft 365. Os valores possíveis são: `Teal`, `Purple`, `Green`, `Blue`,`Pink`, `Orange` ou `Red`. <br><br>Retornado por padrão. |
@@ -354,6 +356,8 @@ Veja a seguir uma representação JSON do recurso.
   "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
+  "resourceBehaviorOptions": ["String"],
+  "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
   "securityIdentifier": "String",
   "unseenCount": 1024,

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: da44682e05582581373ac456c12db7df7a731270
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b9e86e37dd41d89ec6772ced259650d00931e77
+ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094845"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338155"
 ---
 # <a name="remove-member"></a>Remover membro
 
@@ -54,7 +54,7 @@ Este é um exemplo de solicitação.
   "name": "delete_member_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/{group-id}/members/{directory-object-id}/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-member-from-group-csharp-snippets.md)]
@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
 
 ---
 
-Na solicitação, especifique a `id` do objeto diretório que deseja remover após o segmento $ref.
+Na solicitação, especifique o identificador do grupo e o identificador do objeto de diretório que você deseja remover.
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
