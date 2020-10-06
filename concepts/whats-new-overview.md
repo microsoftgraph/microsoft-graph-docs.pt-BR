@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: f8508b73003168316eb1b79221ee7ee485ce51a5
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 4bc0a5f571b172bbcbb7e2ae74c6dfd854ba645b
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288739"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364387"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -39,6 +39,7 @@ Os [APIs das unidades administrativas](/graph/api/resources/administrativeunit) 
 - Obtenha a propriedade **lastEditedDateTime** para descobrir quando um remetente editar pela última vez uma [mensagem de chat](/graph/api/resources/chatmessage).
 - Obtenha a propriedade **lastModifiedDateTime** para descobrir quando um remetente cria uma mensagem de bate-papo ou quando alguém a altera de outras maneiras, incluindo a adição ou a remoção de uma reação. 
 - [Receba notificações sobre alterações](webhooks.md) em [mensagens de chat](/graph/api/resources/chatmessage).
+- [Atualizar](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) propriedade **policyViolation** de uma [chatMessage](/graph/api/resources/chatmessagepreserve-view=true) em um [canal](/graph/api/resources/channel&preserve-view=true) ou [chat](/graph/api/resources/chat&preserve-view=true), permitindo que os aplicativos de prevenção contra perda de dados (DLP) monitorem [violação de política da mensagem de chat](/graph/api/resources/chatmessagepolicyviolation?preserve-view=true) para evitar que as mensagens contenham dados que os usuários não devem enviar.
 
 ### <a name="use-the-sdks"></a>Use os SDKs
 Com o lançamento do [SDK do Microsoft Graph PowerShell](https://github.com/microsoftgraph/msgraph-sdk-powershell) o acesso a toda a superfície do Microsoft Graph agora é simples e consistente.
@@ -95,7 +96,6 @@ As organizações podem [obter](/graph/api/continuousaccessevaluationpolicy-get?
 
 ### <a name="teamwork"></a>Trabalho em equipe
 - Obtenha a data e a hora em que um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)do Teams ou [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) é criada.
-- [Atualizar](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) propriedade **policyViolation** de uma [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) em um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) ou [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), permitindo que os aplicativos de prevenção contra perda de dados (DLP) monitorem [violação de política da mensagem de chat](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) para evitar que as mensagens contenham dados que os usuários não devem enviar.
 
 
 ## <a name="august-2020-new-and-generally-available"></a>Agosto de 2020: novo e disponível para o público geral

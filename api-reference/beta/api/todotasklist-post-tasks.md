@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 47e6822c099c07a7b4b65a50eb1292d4280a8535
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c8902d70c08ed6fdf16677f2388a26c4c76ea18e
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314161"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364373"
 ---
 # <a name="create-todotask"></a>Criar todoTask
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
 |status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|String|Uma breve descrição da tarefa.|
+|title|Cadeia de caracteres|Uma breve descrição da tarefa.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria a seguinte aparência: ' 2020-01-01T00:00:00Z '.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria a seguinte aparência: ' 2020-01-01T00:00:00Z '.|
 |bodyLastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria a seguinte aparência: ' 2020-01-01T00:00:00Z '.|
@@ -88,12 +88,14 @@ Content-Type: application/json
 Content-length: 608
 
 {
-  "title":"A new task",
-  "linkedResources": [{
-            "webUrl": "http://microsoft.com",
-            "applicationName": "Microsoft",
-            "displayName": "Microsoft"
-        }]
+   "title":"A new task",
+   "linkedResources":[
+      {
+         "webUrl":"http://microsoft.com",
+         "applicationName":"Microsoft",
+         "displayName":"Microsoft"
+      }
+   ]
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -125,24 +127,26 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.etag": "W/\"xzyPKP0BiUGgld+lMKXwbQAAnBoTIw==\"",
-    "importance": "low",
-    "isReminderOn": false,
-    "status": "notStarted",
-    "title": "A new task",
-    "createdDateTime": "2020-08-18T09:03:05.8339192Z",
-    "lastModifiedDateTime": "2020-08-18T09:03:06.0827766Z",
-    "id": "AlMKXwbQAAAJws6wcAAAA=",
-    "body": {
-        "content": "",
-        "contentType": "text"
-    },
-    "linkedResources": [{
-      "id": "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
-            "webUrl": "http://microsoft.com",
-            "applicationName": "Microsoft",
-            "displayName": "Microsoft"
-        }]
+   "@odata.etag":"W/\"xzyPKP0BiUGgld+lMKXwbQAAnBoTIw==\"",
+   "importance":"low",
+   "isReminderOn":false,
+   "status":"notStarted",
+   "title":"A new task",
+   "createdDateTime":"2020-08-18T09:03:05.8339192Z",
+   "lastModifiedDateTime":"2020-08-18T09:03:06.0827766Z",
+   "id":"AlMKXwbQAAAJws6wcAAAA=",
+   "body":{
+      "content":"",
+      "contentType":"text"
+   },
+   "linkedResources":[
+      {
+         "id":"f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9",
+         "webUrl":"http://microsoft.com",
+         "applicationName":"Microsoft",
+         "displayName":"Microsoft"
+      }
+   ]
 }
 ```
 

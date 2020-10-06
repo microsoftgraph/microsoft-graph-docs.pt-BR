@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3a8c63254fb68ef80a3eccced15e53f43439c1b7
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: f1ee31b18c17da5ea038115adb17fd362363030c
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192858"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364324"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Responder a uma mensagem em um canal
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | ChannelMessage. Send, Group. ReadWrite. All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | ChannelMessage. Send, Group. ReadWrite. All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 | Aplicativo                           | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,8 +51,8 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [Messa
 Se bem-sucedido, este método retorna `201 Created` o código de resposta com a [mensagem](../resources/chatmessage.md) que foi criada.
 
 ## <a name="example"></a>Exemplo
-### <a name="request"></a>Solicitação
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -82,7 +82,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reply-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java) 
 [!INCLUDE [sample-code](../includes/snippets/java/post-reply-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -95,6 +95,7 @@ Content-type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -148,4 +149,3 @@ Content-length: 160
   ]
 }
 -->
-

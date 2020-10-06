@@ -1,80 +1,84 @@
 ---
 title: Criar canal
-description: Crie um novo canal no Microsoft Team, como especificado no corpo da solicitação.
-localization_priority: Priority
+description: Crie um novo canal em uma equipe da Microsoft, conforme especificado no corpo da solicitação.
+localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9a63834cc83c9f96e5e0776d8c676b1741c075ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
-ms.translationtype: HT
+ms.openlocfilehash: 3f9c5ace14274d4761b90bc56d9c4bfce03f2d3e
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063867"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364233"
 ---
 # <a name="create-channel"></a>Criar canal
 
 Namespace: microsoft.graph
 
-
-
-Criar um novo [canal](../resources/channel.md) no Microsoft Team, como especificado no corpo da solicitação.
-
-> **Observação**: Há um problema conhecido com as permissões do aplicativo e este API. Para saber mais, confira a [lista de problemas conhecidos](/graph/known-issues#application-permissions).
+Criar um novo [canal](../resources/channel.md) em uma equipe, conforme especificado no corpo da solicitação.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All    |
+|Aplicativo |Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All, entrabalho. Migrate. All|
 
-> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, esse método retornará `201 Created` código de resposta e um objeto [canal](../resources/channel.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [canal](../resources/channel.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-create-a-standard-channel"></a>Exemplo 1: criar um canal padrão
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação para criar um canal padrão.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
 
 {
   "displayName": "Architecture Discussion",
-  "description": "This channel is where we debate all future architecture plans"
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp) 
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript) 
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -85,16 +89,19 @@ Content-type: application/json
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
+#### <a name="response"></a>Resposta
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.channel"
-} -->
+}-->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -107,9 +114,67 @@ Content-length: 201
 }
 ```
 
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Exemplo 2: criar um canal privado em nome do usuário
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação para criar um canal privado e adicionar um usuário como proprietário da equipe.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_from_user"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/teams/{group_id}/channels
+Content-type: application/json
+
+{
+  "@odata.type": "#Microsoft.Graph.channel",
+  "membershipType": "private",
+  "displayName": "My First Private Channel",
+  "description": "This is my first private channels",
+  "members":
+     [
+        {
+           "@odata.type":"#microsoft.graph.aadUserConversationMember",
+           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('{user_id}')",
+           "roles":["owner"]
+        }
+     ]
+}
+```
+
+#### <a name="response"></a>Resposta
+
+O exemplo a seguir mostra a resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+}-->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 201
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('{group_id}')/channels/$entity",
+    "id": "{channel_id}",
+    "displayName": "My First Private Channel",
+    "description": "This is my first private channels",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "membershipType": "private"
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Channel",
   "keywords": "",
@@ -117,5 +182,5 @@ Content-length: 201
   "tocPath": "",
   "suppressions": [
   ]
-}-->
-
+}
+-->

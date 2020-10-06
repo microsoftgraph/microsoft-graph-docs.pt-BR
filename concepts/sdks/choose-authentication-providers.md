@@ -3,18 +3,18 @@ title: Escolher um provedor de autenticação do Microsoft Graph
 description: Saiba como escolher provedores de autenticação específicos do cenário para seu aplicativo.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 678468abae61fa0f9830c0dd1b1578d9aafa177a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0570087f3b512d7416093757feab43a5f5926310
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868531"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364247"
 ---
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolher um provedor de autenticação do Microsoft Graph com base no cenário
 
 Os provedores de autenticação implementam o código necessário para adquirir um token usando a biblioteca de autenticação da Microsoft (MSAL); gerenciar vários erros potenciais para casos como o consentimento incremental, senhas expiradas e acesso condicional; e, em seguida, defina o cabeçalho de autorização da solicitação HTTP. A tabela a seguir lista o conjunto de provedores que correspondem aos cenários para diferentes [tipos de aplicativos](/azure/active-directory/develop/v2-app-types).
 
-|Cenário | Fluxo/concessão | Público-alvo | Provedor|
+|Cenário | Fluxo/concessão | Espectadores | Provedor|
 |--|--|--|--|
 | [Aplicativo de página única](/azure/active-directory/develop/scenario-spa-acquire-token)| | | |
 | | Implícito | Consumidor/org delegada |[Provedor implícito](#ImplicitProvider) |
@@ -35,11 +35,11 @@ Os provedores de autenticação implementam o código necessário para adquirir 
 | | Interativo | Consumidor/org delegada | [Provedor interativo](#InteractiveProvider) |
 
 
-## <a name="a-nameauthcodeproviderauthorization-code-provider"></a><a name="AuthCodeProvider"/>Provedor de código de autorização
+## <a name="authorization-code-provider"></a><a name="AuthCodeProvider" ></a>Provedor de código de autorização
 
 O fluxo de código de autorização permite que aplicativos nativos e Web obtenham tokens com segurança no nome do usuário. Para saber mais, confira [Microsoft Identity Platform and OAuth 2,0 Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
@@ -51,11 +51,11 @@ IConfidentialClientApplication confidentialClientApplication = ConfidentialClien
 AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(confidentialClientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 O código de autorização, a credencial do cliente e os fluxos do OAuth em nome de OAuth exigem que você implemente um provedor de autenticação personalizado no momento. Para obter mais informações, consulte [usar um provedor de autenticação personalizado](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md).
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 ```java
 AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
@@ -66,29 +66,29 @@ AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
                                                     clientSecret);
 ```
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Ainda não disponível. Forneça suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Não disponível, ainda. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 ---
 
-##  <a name="a-nameclientcredentialsproviderclient-credentials-provider"></a><a name="ClientCredentialsProvider"/>Provedor de credenciais do cliente
+##  <a name="client-credentials-provider"></a><a name="ClientCredentialsProvider"></a>Provedor de credenciais do cliente
 
 O fluxo de credenciais do cliente permite que aplicativos de serviço sejam executados sem interação do usuário. O acesso baseia-se na identidade do aplicativo. Para obter mais informações, consulte [Microsoft Identity Platform e The OAuth 2,0 Client Credentials Flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
@@ -100,11 +100,11 @@ IConfidentialClientApplication confidentialClientApplication = ConfidentialClien
 ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentialClientApplication);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 O código de autorização, a credencial do cliente e os fluxos do OAuth em nome de OAuth exigem que você implemente um provedor de autenticação personalizado no momento. Para obter mais informações, consulte [usar um provedor de autenticação personalizado](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md).
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 ```java
 ClientCredentialProvider authProvider = new ClientCredentialProvider(
@@ -115,29 +115,29 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(
                                                     endpoint);
 ```
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Não disponível, ainda. Forneça suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Não disponível, ainda. Forneça suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 ---
 
-##  <a name="a-nameonbehalfofprovideron-behalf-of-provider"></a><a name="OnBehalfOfProvider"/>Provedor em nome de
+##  <a name="on-behalf-of-provider"></a><a name="OnBehalfOfProvider"></a>Provedor em nome de
 
 O fluxo em nome de é aplicável quando o aplicativo chama uma API de serviço/Web que, em seguida, chama a API do Microsoft Graph. Saiba mais lendo a [plataforma de identidade da Microsoft e o fluxo em nome de do OAuth 2,0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
@@ -149,41 +149,41 @@ IConfidentialClientApplication confidentialClientApplication = ConfidentialClien
 OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 O código de autorização, a credencial do cliente e os fluxos do OAuth em nome de OAuth exigem que você implemente um provedor de autenticação personalizado no momento. Leia [usando provedor de autenticação personalizado](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) para obter mais informações.
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 ---
 
-## <a name="a-nameimplicitproviderimplicit-provider"></a><a name="ImplicitProvider"/>Provedor implícito
+## <a name="implicit-provider"></a><a name="ImplicitProvider"></a>Provedor implícito
 
 O fluxo de concessão implícito é usado em aplicativos baseados em navegador. Para obter mais informações, consulte [Microsoft Identity Platform and implícito Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 Não aplicável.
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 ```javascript
 const clientId = "your_client_id"; // Client Id of the registered application
@@ -205,33 +205,33 @@ const Client = MicrosoftGraph.Client;
 const client = Client.initWithMiddleware(options);
 ```
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Não aplicável.
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Não aplicável.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Não aplicável.
 
 ---
 
-##  <a name="a-namedevicecodeproviderdevice-code-provider"></a><a name="DeviceCodeProvider"/>Provedor de código de dispositivo
+##  <a name="device-code-provider"></a><a name="DeviceCodeProvider"></a>Provedor de código de dispositivo
 
 O fluxo de código de dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, consulte [plataforma de identidade da Microsoft e o fluxo de código de dispositivo OAuth 2,0](/azure/active-directory/develop/v2-oauth2-device-code).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
@@ -243,37 +243,37 @@ Func<DeviceCodeResult, Task> deviceCodeReadyCallback = async dcr => await Consol
 DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, scopes, deviceCodeReadyCallback);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Não disponível, ainda. Forneça suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
 ---
 
-##  <a name="a-nameintegratedwindowsproviderintegrated-windows-provider"></a><a name="IntegratedWindowsProvider"/>Provedor integrado do Windows
+##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"></a>Provedor integrado do Windows
 
 O fluxo integrado do Windows oferece uma maneira para que os computadores com Windows adquiram um token de acesso de forma silenciosa quando são associados ao domínio. Para obter detalhes, consulte [autenticação integrada do Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
@@ -284,37 +284,37 @@ IPublicClientApplication publicClientApplication = PublicClientApplicationBuilde
 IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(publicClientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 Não aplicável.
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Não aplicável.
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Não aplicável.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Não aplicável.
 
 ---
 
-##  <a name="a-nameinteractiveproviderinteractive-provider"></a><a name="InteractiveProvider"/>Provedor interativo
+##  <a name="interactive-provider"></a><a name="InteractiveProvider"></a>Provedor interativo
 
 O fluxo interativo é usado por aplicativos móveis (Xamarin e UWP) e aplicativos de área de trabalho para chamar o Microsoft Graph no nome de um usuário. Para obter detalhes, consulte [adquirindo tokens interativamente](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
@@ -324,15 +324,15 @@ IPublicClientApplication publicClientApplication = PublicClientApplicationBuilde
 InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(publicClientApplication, scopes);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 ```java
 PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "CLIENT_ID_OF_YOUR_APPLICATION");
@@ -349,7 +349,7 @@ IGraphServiceClient graphClient =
     .buildClient();
 ```
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 ```objc
 NSError *error = nil;
@@ -362,23 +362,23 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
  andOptions:authProviderOptions];
 ```
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Não aplicável.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Não aplicável.
 
 ---
 
-##  <a name="a-nameusernamepasswordproviderusernamepassword-provider"></a><a name="UsernamePasswordProvider"/>Provedor de nome de usuário/senha
+##  <a name="usernamepassword-provider"></a><a name="UsernamePasswordProvider"></a>Provedor de nome de usuário/senha
 
 O provedor de nome de usuário/senha permite que um aplicativo entre em um usuário usando seu nome de usuário e senha. Use este fluxo somente quando não for possível usar qualquer um dos outros fluxos OAuth. Para obter mais informações, consulte [plataforma de identidade da Microsoft e a credencial de senha de proprietário do recurso OAuth 2,0](/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
@@ -395,11 +395,11 @@ User me = await graphClient.Me.Request()
                 .GetAsync();
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 ```java
 UsernamePasswordProvider authProvider = new UsernamePasswordProvider(
@@ -409,19 +409,19 @@ UsernamePasswordProvider authProvider = new UsernamePasswordProvider(
                                                     password);
 ```
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 Não aplicável.
 
-# <a name="objective-ctabobjective-c"></a>[Objective-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 Não aplicável.
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 
-# <a name="rubytabruby"></a>[Ruby](#tab/Ruby)
+# <a name="ruby"></a>[Ruby](#tab/Ruby)
 
 Ainda não disponível. Vote ou abra uma solicitação de [recurso do Microsoft Graph](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) se isso for importante para você.
 

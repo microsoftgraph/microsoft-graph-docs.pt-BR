@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e93fe5e751cfde883a867305ad7a984a840a91c3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 20b7d1f9813873bb7233a8e3c8c35fe88e1c460c
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034088"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364303"
 ---
 # <a name="authorizationpolicy-resource-type"></a>tipo de recurso authorizationPolicy
 
@@ -30,17 +30,17 @@ Representa uma política que pode controlar as configurações de autorização 
 ## <a name="properties"></a>Propriedades  
 | Propriedade | Tipo | Descrição | 
 |-|-|-|
-|id|String| ID da política de autorização. Obrigatório. Somente leitura.| 
-|displayName|String| Nome para exibição dessa política. |  
-|description|String| Descrição da política.|  
+|id|Cadeia de caracteres| ID da política de autorização. Obrigatório. Somente leitura.| 
+|displayName|Cadeia de caracteres| Nome para exibição dessa política. |  
+|description|Cadeia de caracteres| Descrição da política.|  
 |guestUserRoleId|Guid| Representa o modelo de função para a função que deve ser concedida ao usuário convidado. Consulte [list unifiedRoleDefinitions](https://docs.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta&tabs=http) para encontrar a lista de modelos de função disponíveis. As funções a seguir são suportadas: usuário (a0b1b346-4d3e-4e8b-98f8-753987be4970), usuário convidado (10dae51f-b6af-4016-8d66-8c2a99b929b3) e usuário convidado restrito (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
 |enabledPreviewFeatures|Coleção (cadeia de caracteres)| Lista de recursos habilitados para visualização privada no locatário. | 
-|blockMsolPowerShell|Booliano| Para desabilitar o uso do MSOL PowerShell defina essa propriedade como true. A configuração como true também desabilitará o acesso baseado no usuário ao ponto de extremidade de serviço herdado usado pelo MSOL PowerShell. Isso não afeta o Azure AD Connect ou o Microsoft Graph. | 
+|blockMsolPowerShell|Boolean| Para desabilitar o uso do MSOL PowerShell defina essa propriedade como true. A configuração como true também desabilitará o acesso baseado no usuário ao ponto de extremidade de serviço herdado usado pelo MSOL PowerShell. Isso não afeta o Azure AD Connect ou o Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](defaultUserRolePermissions.md)| Especifica determinadas permissões personalizáveis para a função de usuário padrão. | 
-|allowedToUseSSPR|Booliano| Indica se o recurso de redefinição de senha de autoatendimento pode ser usado por usuários no locatário. | 
-|allowedToSignUpEmailBasedSubscriptions|Booliano| Indica se os usuários podem se inscrever para assinaturas baseadas em email. | 
-|allowEmailVerifiedUsersToJoinOrganization|Booliano| Indica se um usuário pode ingressar no locatário por validação de email. | 
-
+|allowedToUseSSPR|Boolean| Indica se o recurso de redefinição de senha de autoatendimento pode ser usado por usuários no locatário. | 
+|allowedToSignUpEmailBasedSubscriptions|Boolean| Indica se os usuários podem se inscrever para assinaturas baseadas em email. | 
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| Indica se um usuário pode ingressar no locatário por validação de email. | 
+|allowInvitesFrom|Cadeia de caracteres|Indica quem pode convidar usuários externos para a organização. Os valores possíveis são:<br/>`none` – Impedir que todos, incluindo administradores, convidarem usuários externos. Configuração padrão para o governo dos EUA.<br/>`adminsAndGuestInviters` – Permitir que membros de administradores globais, administradores de usuários e funções do convidado de convidados convidarem usuários externos.<br/>`adminsGuestInvitersAndAllMembers` – Permitir que as funções de administrador acima e todos os outros membros da função de usuário convidem usuários externos.<br/>`everyone` – Permitir que todos na organização, incluindo usuários convidados, convidem usuários externos. Configuração padrão para todos os ambientes de nuvem, exceto o governo dos EUA.<br/>`unknownFutureValue` -placeholder para enums evolvable. |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -70,7 +70,8 @@ Veja a seguir uma representação JSON do recurso.
   "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
   "allowedToUseSSPR": true,
   "allowedToSignUpEmailBasedSubscriptions": true,
-  "allowEmailVerifiedUsersToJoinOrganization": true
+  "allowEmailVerifiedUsersToJoinOrganization": true,
+  "allowInvitesFrom": "String"
 }
 ```
 
