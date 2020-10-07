@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 135eabcb61c81287262e9ebd8681ad3d76104df2
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d4d88f772ec6291a35c19bd30a63ee90cd0ca989
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193117"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373885"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -98,6 +98,11 @@ As entidades **listItem** e **externalItem** são as únicas entidades com supor
 
 Se os **campos** especificados na solicitação não estiverem presentes no esquema, eles não serão retornados na resposta. Campos inválidos na solicitação são ignorados silenciosamente.
 
+Se você não especificar nenhum **campo** na solicitação, obterá o conjunto padrão de propriedades para todos os tipos. Para propriedades estendidas, **listItem** e **externalItem** se comportam de forma diferente quando nenhum **campo** é passado na solicitação:
+
+- **listItem** não retornará nenhum campo personalizado.
+- **externalItem** retornará todos os campos marcados com o atributo **recuperável** no esquema do conector do Microsoft Graph para essa conexão em particular.
+
 ## <a name="keyword-query-language-kql-support"></a>Suporte a KQL (Linguagem de Consulta de Palavra-chave)
 
 Especifique palavras-chave de texto livre, operadores (como `AND`, `OR`) e restrições de propriedade na sintaxe KQL na cadeia de caracteres de consulta de pesquisa real (propriedade **query** do corpo da solicitação **query**). A sintaxe e o comando dependem dos tipos de entidade (na propriedade **entityTypes**) que você direciona no corpo da solicitação **query**.
@@ -109,14 +114,14 @@ Dependendo do tipo de entidade, as propriedades pesquisáveis variam. Veja mais 
 
 ## <a name="sort-search-results"></a>Classificar resultados de pesquisa
 
-Os resultados da pesquisa na resposta são classificados na ordem de classificação padrão a seguir :
+Os resultados da pesquisa na resposta são classificados na ordem de classificação padrão a seguir:
 
 - **mensagem** e **evento** são classificados por data.
 - Todos os tipos de conectores SharePoint e OneDrive são classificados por relevância.
 
 O método de [consulta](../api/search-query.md) permite que você personalize a ordem de pesquisa especificando as **sortProperties** no parâmetro `requests`, que é uma coleção de objetos [searchRequest](./searchrequest.md). Isso permite especificar uma lista de uma ou mais propriedades classificáveis e a ordem de classificação.
 
-Atualmente, só há suporte para a classificação de resultados nos seguintes tipos de SharePoint e OneDrive : [driveItem](driveitem.md), [listItem](listitem.md), [lista](list.md) e [site](site.md).
+Atualmente, só há suporte para a classificação de resultados nos seguintes tipos de SharePoint e OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md) e [site](site.md).
 
 As propriedades nas quais a cláusula de classificação é aplicada devem ser classificáveis no [esquema de pesquisa](https://docs.microsoft.com/sharepoint/manage-search-schema) do SharePoint. Se a propriedade especificada na solicitação não for classificável ou não existir, a resposta retornará um erro, `HTTP 400 Bad Request`. Observe que você não pode especificar a classificação de documentos por relevância usando [sortProperty](sortproperty.md).
 
@@ -142,7 +147,7 @@ Confira [refinar os resultados da pesquisa](/graph/search-concept-aggregation) p
 
 A API de pesquisa retorna respostas de erro conforme estipulado pela [definição de objeto de erro OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse). Cada uma delas é um objeto JSON que contém um código e uma mensagem.
 
-<!---TODOSEARCHAPI Describe the know errors : bad requests.--->
+<!---TODOSEARCHAPI Describe the know errors: bad requests.--->
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
@@ -150,7 +155,7 @@ A API de pesquisa tem as seguintes limitações:
 
 - O método **query** é definido para permitir a passagem de um conjunto de uma ou mais instâncias de **searchRequest** de uma só vez. No entanto, atualmente o serviço dá suporte apenas a um único [searchRequest](./searchrequest.md) por vez.
 
-- O recurso [searchRequest](./searchrequest.md) dá suporte à passagem de vários tipos de entidades por vez. No entanto, no momento, a única combinação com suporte é para o SharePoint e o OneDrive entityTypes : **driveItem**, **unidade**, **site**, **lista**, **listItem**.
+- O recurso [searchRequest](./searchrequest.md) dá suporte à passagem de vários tipos de entidades por vez. No entanto, no momento, a única combinação com suporte é para os entityTypes do SharePoint e o OneDrive: **driveItem**, **drive**, **site**, **list**, **listItem**.
 As combinações envolvendo **mensagem**, **evento**, tipos do SharePoint e do OneDrive ou **externalItem** não têm suporte no momento.  
 
 - A propriedade **contentSource**, que define a conexão a ser usada, só será aplicável quando **entityType** for especificada como `externalItem`.
@@ -177,6 +182,17 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
 | [searchHit](./searchhit.md)        | Renomear propriedade | **_source** | **recurso** |
 | [searchHit](./searchhit.md)        | Renomear propriedade | **_summary**  | **resumo**  |
 
+## <a name="search-samples"></a>Exemplos de pesquisa
+
+- Saiba mais sobre alguns dos principais casos de uso:
+  - [Pesquisar mensagens do Outlook](/graph/search-concept-messages)
+  - [Pesquisar eventos do calendário](/graph/search-concept-events)
+  - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](/graph/search-concept-files)
+  - [Pesquisar conteúdo externo](/graph/search-concept-custom-types)
+  - [Classificar resultados de pesquisa](/graph/search-concept-sort)
+  - [Refinar resultados de pesquisa](/graph/search-concept-aggregation)
+
+- Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 
 ## <a name="whats-new"></a>O que há de novo
