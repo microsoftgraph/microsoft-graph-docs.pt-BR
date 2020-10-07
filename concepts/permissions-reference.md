@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 051291fc349690bfb05419d3f5758b7f673a0e38
-ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
+ms.openlocfilehash: 2f46ce59ac8fa3bbb0eb7476e889bbda8d9ff8de
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338212"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364213"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -49,6 +49,7 @@ Se o usuário conectado for um usuário convidado, dependendo das permissões qu
 Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou grupos que ele obtém seguindo os links nas propriedades de navegação. Por exemplo, `/users/{id}/directReports` ou `/groups/{id}/members`.
 
 ## <a name="limited-information-returned-for-inaccessible-member-objects"></a>Informações limitadas retornadas para objetos membro inacessíveis
+
 Objetos de contêiner, como grupos, oferecem suporte a membros de vários tipos; por exemplo, usuários e dispositivos. Quando um aplicativo consulta a associação de um objeto contêiner e não tem permissão para ler um determinado tipo, os membros desse tipo são retornados, mas com informações limitadas.  O aplicativo recebe umas 200 respostas e uma coleção de objetos.  Informações completas são retornadas para os tipos de objetos que o aplicativo tem permissões para ler.  Para os tipos de objetos que o aplicativo não tem permissão para ler, apenas o tipo e a ID do objeto são retornados.
 
 Isso é aplicado a todos as relações que são do tipo [directoryObject](/graph/api/resources/directoryobject) (não apenas aos links de membro). Os exemplos incluem `/groups/{id}/members`, `/users/{id}/memberOf` ou `me/ownedObjects`.
@@ -1363,6 +1364,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.Read.All_ | Ler as políticas da sua organização | Permite ao aplicativo ler as políticas da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Leia e escreva as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia e grave as políticas de configuração dos aplicativos da sua organização em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas de fluxo de autenticação, em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
 | _Policy.ReadWrite.ConditionalAccess_ | Ler e gravar as políticas de acesso condicional da sua organização | Permite que o aplicativo leia e grave todas as políticas de acesso condicional em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.FeatureRollout_ | Ler e gravar as políticas de implantação de novos recursos da sua organização | Permite que o aplicativo leia e grave todas as políticas de implantação de novos recursos em nome do usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim | Não |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas TrustFramework (Estrutura de Confiança) da sua organização | Permite que o aplicativo leia e grave todas as políticas de TrustFramework da sua organização em nome do usuário conectado. | Sim | Não |
@@ -1374,6 +1376,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.Read.All_ | Leia as políticas da sua organização | Permite que o aplicativo leia todas as políticas da sua organização sem um usuário conectado. | Sim |
 | _Policy.Read.ApplicationConfiguration_ | Leia as políticas de configuração dos aplicativos da sua organização | Permite que o aplicativo leia todas as políticas de configuração dos aplicativos da sua organização sem um usuário conectado. | Sim |
 | _Policy.ReadWrite.AuthenticationFlows_ | Ler e gravar as políticas de fluxo de autenticação da sua organização | Permite que o aplicativo leia e grave todas as políticas de fluxo de autenticação do locatário, sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
 | _Policy.ReadWrite.FeatureRollout_ | Políticas de distribuição de recursos de leitura e gravação | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos sem um usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas da estrutura de confiança da sua organização | Permite que o aplicativo leia e grave todas as políticas da estrutura de confiança da sua organização sem um usuário conectado. | Sim |
 

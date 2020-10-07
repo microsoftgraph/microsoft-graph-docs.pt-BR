@@ -3,18 +3,25 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: fdd1f174a8f41fdcb7e7ec93d8e722ed61474eae
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: df74d810f20ef4041d02881a6c6bd536e3febaee
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330400"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364429"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Este log de alterações inclui alterações específicas no nível da API no Microsoft Graph v 1.0 e beta.
 
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
+## <a name="october-2020"></a>Outubro de 2020
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição|beta|Propriedade **allowInvitesFrom** adicionada ao recurso [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta).|
 
 ## <a name="september-2020"></a>Setembro de 2020
 
@@ -3425,7 +3432,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
-|Adição|v1.0|Foram adicionadas novas entidades:<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0)<br/>|
+|Adição|v1.0|Adicionadas novas entidades:<br/>[iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-1.0)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0)<br/>|
 |Adição|v1.0|Foram adicionados novos tipos complexos:<br/>[appConfigurationSettingItem](/graph/api/resources/intune-apps-appconfigurationsettingitem?view=graph-rest-1.0)<br/>|
 |Adição|v1.0|A ação [syncLicenses](/graph/api/intune-onboarding-vpptoken-synclicenses?view=graph-rest-1.0) foi adicionada a [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-1.0) |
 |Adição|v1.0|A propriedade de navegação **vppTokens** foi adicionada à entidade [deviceAppManagement](/graph/api/resources/intune-shared-deviceappmanagement?view=graph-rest-1.0)|
@@ -3705,7 +3712,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Alteração|Beta|As propriedades **azureADDeviceId** e **remoteAssistanceSessionErrorDetails** foram adicionadas à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **legacyAppConfiguration** foi removida da entidade [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **identityVersion** foi adicionada à entidade [managedIOSLobApp](/graph/api/resources/intune-apps-managedioslobapp?view=graph-rest-beta)|
-|Alteração|Beta|A propriedade **identityVersion** foi removida da entidade [managedMobileLobApp](/graph/api/resources/intune-apps-managedmobilelobapp?view=graph-rest-beta)|
+|Alterar|Beta|A propriedade **identityVersion** foi removida da entidade [managedMobileLobApp](/graph/api/resources/intune-apps-managedmobilelobapp?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **publishingState** foi adicionada à entidade [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **installState** foi adicionada à entidade [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **identityVersion** foi removida da entidade [mobileLobApp](/graph/api/resources/intune-apps-mobilelobapp?view=graph-rest-beta)|
@@ -4512,7 +4519,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração      | Beta    | As propriedades **subjectNameFormatString** e **subjectAlternativeNameFormatString** foram adicionadas à entidade [androidScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidscepcertificateprofile?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **hexColor** foi removida da entidade [calendar](/graph/api/resources/calendar?view=graph-rest-beta) |
 | Alteração      | Beta    | As propriedades **setting** e **platformType** foram adicionadas à entidade [complianceSettingStateSummary](/graph/api/resources/intune-deviceconfig-compliancesettingstatesummary?view=graph-rest-beta) |
-| Alteração      | Beta    | A propriedade **windowsManagementAppEnabled** foi removida da entidade [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta) |
+| Alterar      | Beta    | A propriedade **windowsManagementAppEnabled** foi removida da entidade [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta) |
 | Alteração      | Beta    | As propriedades **userName**, **deviceModel** e **platform** foram adicionadas à entidade [deviceComplianceDeviceStatus](/graph/api/resources/intune-deviceconfig-devicecompliancedevicestatus?view=graph-rest-beta) |
 | Alteração      | Beta    | As propriedades **userPrincipalName** e **deviceModel** foram adicionadas à entidade [deviceComplianceSettingState](/graph/api/resources/intune-deviceconfig-devicecompliancesettingstate?view=graph-rest-beta) |
 | Alteração      | Beta    | As propriedades **platformType**, **setting**, **userId** e **userEmail** foram adicionadas à entidade [deviceComplianceSettingState](/graph/api/resources/intune-deviceconfig-devicecompliancesettingstate?view=graph-rest-beta) |
@@ -4856,7 +4863,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração      | Beta    | Foram adicionadas as propriedades de navegação **groupAssignments**, **deviceStatuses** e **userStatuses** à entidade [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) |
 | Alteração      | Beta    | Foi alterado o tipo das seguintes propriedades na entidade [windows10VpnConfiguration](/graph/api/resources/intune-deviceconfig-windows10vpnconfiguration?view=graph-rest-beta):<br/>**identityCertificate** de [windows10CertificateProfileBase](/graph/api/resources/intune-deviceconfig-windows10certificateprofilebase?view=graph-rest-beta) para [windowsCertificateProfileBase](/graph/api/resources/intune-deviceconfig-windowscertificateprofilebase?view=graph-rest-beta) |
 | Alteração      | Beta    | Foram adicionadas as propriedades **deviceComplianceCheckinThresholdDays** e **isScheduledActionEnabled**ao tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta) |
-| Alteração      | Beta    | Foram removidas as propriedades **windowsCommercialId** e **windowsCommercialIdLastModifiedTime** do tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta) |
+| Alterar      | Beta    | Foram removidas as propriedades **windowsCommercialId** e **windowsCommercialIdLastModifiedTime** do tipo complexo [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta) |
 | Alteração      | Beta    | Foram adicionadas as propriedades **bundleID**, **appName**, **publisher**, **habilitado** e **showOnLockScreen** ao tipo complexo [iosNotificationSettings](/graph/api/resources/intune-deviceconfig-iosnotificationsettings?view=graph-rest-beta)  |
 | Alteração      | Beta    | Foram removidas as propriedades **bundleIdentifier**, **notificationsEnabled** e **showInLockScreen** do tipo complexo [iosNotificationSettings](/graph/api/resources/intune-deviceconfig-iosnotificationsettings?view=graph-rest-beta) |
 
