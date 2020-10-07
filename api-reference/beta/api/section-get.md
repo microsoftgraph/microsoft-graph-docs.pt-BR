@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 4451900d0419171722eee870101a334f2e7ce2a2
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: f58e2fa246e4ef74faf7f2f72856c7e2fb5e504b
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314332"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374236"
 ---
 # <a name="get-section"></a>Obter seção
 

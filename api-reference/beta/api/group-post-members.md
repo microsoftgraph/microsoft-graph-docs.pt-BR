@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a6c2cd31cb087d2bea6dcb730a1fd2581ed99552
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea0202e62fcf965d820fa2a51396001af4648af8
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002083"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373224"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -23,7 +23,7 @@ Adicionar um membro a um grupo do Microsoft 365 ou grupo de segurança por meio 
 Você pode adicionar usuários, entidades de serviço ou outros grupos. 
 
 > [!Important]
-> Você só pode adicionar usuários aos grupos segurança e Microsoft 365 gerenciados por meio da nuvem.
+> Só é possível adicionar usuários aos grupos do Microsoft 365 e segurança gerenciados pela nuvem.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ POST /groups/{group-id}/members/$ref
 No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) ou [group](../resources/group.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`. Não retorna nada no corpo da resposta. Este método retorna um `400 Bad Request` código de resposta quando o objeto já é um membro do grupo. Este método retorna um `404 Not Found` código de resposta quando o objeto que está sendo adicionado não existe. 
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação

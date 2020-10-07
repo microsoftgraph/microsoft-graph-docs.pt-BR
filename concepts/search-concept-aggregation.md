@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para recuperar o agg
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: b414c0beb26280ef90d0a6bd5c807ee9904a5a7e
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 84f859677b20ff0cd97afad373990abda44d5afd
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193670"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373843"
 ---
 # <a name="refine-search-results-using-aggregations"></a>Refinar os resultados da pesquisa usando agregações
 
@@ -21,7 +21,7 @@ O exemplo a seguir pesquisa os recursos **ListItems** e agregados resultados por
 
 A resposta inclui dois objetos [searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) para as duas agregações:
 - A propriedade **Key** especifica o valor real (por `FileType` ou `contentclass` ) para aqueles objetos **ListItem** que são agregados no mesmo Bucket por esse valor.
-- A propriedade **Count** especifica o número desses objetos agregados no mesmo Bucket.
+- A propriedade **Count** especifica o número desses objetos agregados no mesmo Bucket. Observe que esse número é uma aproximação do número de correspondências e não fornecerá um número exato de correspondências.
 - Os buckets de resultados agregados por tipo de arquivo são classificados por contagem em ordem decrescente. Neste exemplo, há 3 buckets para 3 tipos de arquivo: `docx` , `xlsx` e `pptx` .
 - Os buckets de resultados agregados pela classe de conteúdo são classificados pelo valor da cadeia de caracteres da classe de conteúdo em ordem decrescente. Neste exemplo, há apenas um Bucket com todos os objetos correspondentes que compartilham a mesma classe de conteúdo `STS_ListItem_DocumentLibrary` .
 

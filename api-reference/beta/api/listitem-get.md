@@ -6,12 +6,12 @@ title: Obter uma entrada de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 497ca5440f7e0d6803c1379a3c66d4b50024b2e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 25d0a055840055c822814799346136a6bda6c660
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067956"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373563"
 ---
 # <a name="get-an-item-in-a-list"></a>Obter um item em uma lista
 
@@ -30,9 +30,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
+|Aplicativo | Sites. Read. All, sites. ReadWrite. All, sites. Manage. All |
+
+> **Observação**: os sites de permissão de aplicativo. Manage. All serão necessários se a lista do SharePoint tiver as configurações de aprovação de conteúdo ativadas. Caso contrário, o Microsoft Graph não recuperará itens de lista que têm um status de aprovação diferente de aprovado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

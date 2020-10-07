@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 52e1c7a830da06309a8701df4bb0a6e2c14f4bb6
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d481cb542ee0915a37a146d7635d22145998f44d
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313825"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373129"
 ---
 # <a name="update-printsettings"></a>Atualizar printSettings
 

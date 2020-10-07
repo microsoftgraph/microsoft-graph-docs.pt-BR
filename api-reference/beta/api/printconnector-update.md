@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a8c036362760f057cf301551028c33b4a7218d88
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 8662b03a40c6d659b8c50567b725513e0b8bf9af
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314084"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373108"
 ---
 # <a name="update-printconnector"></a>Atualizar o multiligação
 

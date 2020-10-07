@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e0e0f8b9380fdd97cb41a9edbaa8d3d1eb71b8e3
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c09410bd7a7d2d3fee178e35b966a896acdc4aab
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314826"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373423"
 ---
 # <a name="update-teamsapp"></a>Atualizar teamsApp
 

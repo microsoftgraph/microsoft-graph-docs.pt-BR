@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a829a55a4022901e670a61499967b6fdbd3f567e
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: abec9dd21e705453175bf0acec7f81b02cdb282c
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315193"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373392"
 ---
 # <a name="list-plans"></a>Listar planos
 

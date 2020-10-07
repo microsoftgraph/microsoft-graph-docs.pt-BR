@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f71d683baf1340143ae82801461e2efb7334811e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e7a15b9fdda3b48fb79318a25a8ce5ce0c853caa
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002055"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373213"
 ---
 # <a name="add-group-owner"></a>Adicionar proprietário do grupo
 
@@ -46,7 +46,7 @@ POST /groups/{id}/owners/$ref
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`. Não retorna nada no corpo da resposta. Este método retorna um `400 Bad Request` código de resposta quando o objeto já é um membro do grupo. Este método retorna um `404 Not Found` código de resposta quando o objeto que está sendo adicionado não existe.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação

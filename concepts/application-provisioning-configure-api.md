@@ -5,12 +5,12 @@ author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6fe5ce68bde32746e17d968f7e34a190c41e1bca
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e08a1c9c3d16cfe0a413d65dc6c0b918b8567393
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289502"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373374"
 ---
 # <a name="configure-provisioning-using-microsoft-graph-apis"></a>Configurar o provisionamento usando as APIs do Microsoft Graph
 

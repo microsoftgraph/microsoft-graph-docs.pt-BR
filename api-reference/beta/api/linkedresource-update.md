@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 666cd9d9aa366a92c275e20b9abd7f855acb1a35
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e80010f88dd52b9dbd44430ae251dcecab8e33c
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48068067"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373857"
 ---
 # <a name="update-linkedresource"></a>Atualizar linkedResource
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [l
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)|
+|id|String|ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)|
 
 ## <a name="response"></a>Resposta
 
@@ -76,7 +76,7 @@ Content-length: 166
   "@odata.type": "#microsoft.graph.linkedResource",
   "webUrl": "http://microsoft.com",
   "applicationName": "Microsoft",
-  "displayName": "Microsoft",
+  "displayName": "Microsoft"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
