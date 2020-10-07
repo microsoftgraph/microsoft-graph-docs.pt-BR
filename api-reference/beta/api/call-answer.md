@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4182c743859d9ec4bf23a3cf0a86b99662060de8
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: ce04f0e77ec0c01dc796e88d3f1d15c162cc5b1a
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313090"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372107"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https` .    |
-|acceptedModalities|Coleção de cadeias de caracteres                         |A lista de aceitar modalidades. O valor possível são: `audio` , `video` , `videoBasedScreenSharing` . Obrigatório para responder a uma chamada. |
+|acceptedModalities|Conjunto de cadeias de caracteres                         |A lista de aceitar modalidades. O valor possível são: `audio` , `video` , `videoBasedScreenSharing` . Obrigatório para responder a uma chamada. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |A configuração de mídia. Precisam                                                                                                            |
 
 ## <a name="response"></a>Resposta

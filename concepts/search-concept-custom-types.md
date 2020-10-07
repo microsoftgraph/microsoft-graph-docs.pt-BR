@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para importar dados 
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: ef245e88e635e888c3a5e2eeafb61497e804072f
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 2ad2621d3af0e0de4a23739077462b0051526591
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288179"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372548"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Usar a API de pesquisa da Microsoft para Pesquisar tipos personalizados importados usando conectores do Microsoft Graph
 
@@ -31,7 +31,7 @@ TODOSEARCHAPI - Bug 1653398
 
 - A propriedade **EntityTypes** como `externalItem` .
 
-- A propriedade **Fields** para incluir os campos no item externo a serem recuperados.
+- A propriedade **Fields** para incluir os campos no item externo a serem recuperados. Observe que, se você não incluir nenhum **campo** na solicitação, a resposta conterá todos os campos marcados como *recuperáveis* no esquema de dados especificado para as conexões especificadas na propriedade **ContentSources** .
 
 ## <a name="example"></a>Exemplo
 
@@ -120,10 +120,6 @@ Content-type: application/json
   ]
 }
 ```
-
-## <a name="known-limitations"></a>Limitações conhecidas
-
-- Você deve especificar a propriedade **Fields** para obter campos recuperáveis no esquema de pesquisa.
 
 ## <a name="next-steps"></a>Próximas etapas
 

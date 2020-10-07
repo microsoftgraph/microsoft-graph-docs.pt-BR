@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 75fd1049663b14b74ad5ff17f929464ff9bb98fa
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: e63372b9a8eaafe6d8d42686cb93c7b23e426861
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312103"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371689"
 ---
 # <a name="list-connectorgroups"></a>Listar connectorGroups
 

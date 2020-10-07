@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 85abd41b85c00a1f669c5fe5add2beaf2a2dbcf0
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 43642c6f31ab0ada6530b5aea68bbc86b70208ad
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312495"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372415"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Criar phoneAuthenticationMethod
 

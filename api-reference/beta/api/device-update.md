@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f4e2867c878ad654a6e0466ad94f16a864be9e7c
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 61ded12fad044d1e67d38a782f6de9215c3ad51b
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311950"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371477"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 

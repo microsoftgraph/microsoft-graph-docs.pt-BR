@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a504edc53962b6ab2d6f62e39e23542588252566
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 04bdca98f4676454a72e503e8bfe747bbda306cc
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193251"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372689"
 ---
 # <a name="searchrequest-resource-type"></a>tipo de recurso searchRequest
 
@@ -32,17 +32,17 @@ O blob JSON contém os tipos de recursos esperados na resposta, as fontes subjac
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|:------------|
-|Aggregations|coleção [aggregationOption](aggregationOption.md)|Especifica agregações (também conhecidas como refinadores) a serem retornadas junto com os resultados da pesquisa. Opcional.|
-|aggregationFilters|Coleção de cadeias de caracteres|Contém um ou mais filtros para obter os resultados da pesquisa agregados e filtrados para um valor específico de um campo. Opcional.<br>Crie este filtro com base em uma pesquisa anterior que seja agregada pelo mesmo campo. Na resposta da pesquisa anterior, identifique o [searchBucket](searchBucket.md) que filtra os resultados para o valor específico do campo, use a cadeia de caracteres na propriedade **aggregationFilterToken** e crie uma cadeia de caracteres de filtro de agregação no formato **"{Field}: \\ " {aggregationFilterToken} \\ ""**. <br>Por exemplo, a pesquisa e agregação de itens de unidade por tipo de arquivo retorna um **searchBucket** para o tipo de arquivo `docx` na resposta. Você pode usar convenientemente o **aggregationFilterToken** retornado para este **searchBucket** em uma consulta de pesquisa e filtro de correspondência subsequentes correspondem a itens de unidade do `docx` tipo de arquivo. O [exemplo 1](/graph/search-concept-aggregation#example-1-request-aggregations-by-string-fields) e o [exemplo 2](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request) mostram as solicitações e respostas reais.|
-|contentSources|Coleção de cadeias de caracteres|Contém a conexão a ser direcionada. <br>Respeita o seguinte formato: `/external/connections/connectionid` onde `connectionid` é a ConnectionID definida na administração de conectores. <br> Observação: contentSource só é aplicável quando entityType = `externalItem` . Opcional.|
+|aggregations|coleção [aggregationOption](aggregationOption.md)|Especifica agregações (também conhecidas como refinadores) a serem retornadas junto com os resultados da pesquisa. Opcional.|
+|aggregationFilters|Conjunto de cadeias de caracteres|Contém um ou mais filtros para obter os resultados da pesquisa agregados e filtrados para um valor específico de um campo. Opcional.<br>Crie este filtro com base em uma pesquisa anterior que seja agregada pelo mesmo campo. Na resposta da pesquisa anterior, identifique o [searchBucket](searchBucket.md) que filtra os resultados para o valor específico do campo, use a cadeia de caracteres na propriedade **aggregationFilterToken** e crie uma cadeia de caracteres de filtro de agregação no formato **"{Field}: \\ " {aggregationFilterToken} \\ ""**. <br>Por exemplo, a pesquisa e agregação de itens de unidade por tipo de arquivo retorna um **searchBucket** para o tipo de arquivo `docx` na resposta. Você pode usar convenientemente o **aggregationFilterToken** retornado para este **searchBucket** em uma consulta de pesquisa e filtro de correspondência subsequentes correspondem a itens de unidade do `docx` tipo de arquivo. O [exemplo 1](/graph/search-concept-aggregation#example-1-request-aggregations-by-string-fields) e o [exemplo 2](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request) mostram as solicitações e respostas reais.|
+|contentSources|Conjunto de cadeias de caracteres|Contém a conexão a ser direcionada. <br>Respeita o seguinte formato: `/external/connections/connectionid` onde `connectionid` é a ConnectionID definida na administração de conectores. <br> Observação: contentSource só é aplicável quando entityType = `externalItem` . Opcional.|
 |enableTopResults|Booliano|Isso dispara a classificação híbrida para mensagens: as primeiras 3 mensagens são as mais relevantes. Esta propriedade só é aplicável a entityType = `message` . Opcional.|
 |entityTypes|coleção entityType| Um ou mais tipos de recursos esperados na resposta. Os valores possíveis são: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. Consulte [limitações conhecidas](search-api-overview.md#known-limitations) para as combinações de dois ou mais tipos de entidade com suporte na mesma solicitação de pesquisa. Obrigatório.|
-|campos|Coleção de cadeias de caracteres |Contém os campos a serem retornados para o objeto de recurso earch especificado em **EntityTypes**, permitindo a personalização dos campos retornados por padrão, caso contrário, incluindo campos adicionais, como propriedades gerenciadas personalizadas do SharePoint e do onedrive, ou campos personalizados no **externalItem** de conteúdo ingeridos pelos conectores do Graph. Opcional.|
+|campos|Conjunto de cadeias de caracteres |Contém os campos a serem retornados para cada objeto de recurso especificado em **EntityTypes**, permitindo a personalização dos campos retornados por padrão, caso contrário, incluindo campos adicionais, como propriedades gerenciadas personalizadas do SharePoint e do onedrive, ou campos personalizados no **externalItem** a partir de conteúdo ingerido por conectores do Graph. Opcional.|
 |from|Int32|Especifica o deslocamento dos resultados da pesquisa. Offset 0 retorna o primeiro resultado. Opcional.|
 |consulta|[searchQuery](searchquery.md)|Contém os termos da consulta. Obrigatório.|
 |size|Int32|O tamanho da página a ser recuperada. Opcional.|
 |sortproperties|coleção [SortProperty](sortProperty.md)|Contém a coleção ordenada de campos e direção para classificar os resultados. Pode haver no máximo 5 Propriedades de classificação na coleção. Opcional.|
-|stored_fields (preterido)|Coleção de cadeias de caracteres |Agora, ela é substituída pela propriedade **Fields** . |
+|stored_fields (preterido)|Conjunto de cadeias de caracteres |Agora, ela é substituída pela propriedade **Fields** . |
 
 
 ## <a name="json-representation"></a>Representação JSON

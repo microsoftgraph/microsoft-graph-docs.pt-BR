@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7d1ad3eb6333671bf9b07a8eabd0a06dd34a53e2
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 55222af46fef5216a4119e9a0a2f56610b4f85cd
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312950"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371701"
 ---
 # <a name="list-members"></a>Listar membros
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e4c8d047258c23918794bc5f7acce44529e082ad
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5a7c9cdb129de4959e658907883f875ac29d40cb
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312104"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371730"
 ---
 # <a name="list-connectors"></a>Listar conectores
 

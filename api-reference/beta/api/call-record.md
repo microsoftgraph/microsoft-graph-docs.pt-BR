@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8aa5797c95ee3a9edc665f3d8d509ab58fe2dff5
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c0efecaa0f1fa20bf1e453fb7d20ab3fded6ff96
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312348"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372093"
 ---
 # <a name="call-recordresponse"></a>Call: recordResponse
 
@@ -64,7 +64,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |maxSilenceTimeoutInSeconds|Int32| Tempo máximo de silêncio (pausa) permitido após um usuário começar a falar. Padrão = 5 segundos, mín = 1 segundo, máximo = 120 segundos.|
 |maxRecordDurationInSeconds|Int32| Duração máxima para a operação recordResponse antes de parar a gravação. Padrão = 5 segundos, mín = 1 segundo, máximo = 120 segundos.|
 |playBeep|Booliano| Se true, reproduz um aviso sonoro para indicar ao usuário que eles podem começar a gravar suas mensagens. Padrão = true.|
-|stopTones|Coleção de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
+|stopTones|Conjunto de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 > **Observação:** O tempo máximo de gravação foi reduzido de cinco minutos para 2 minutos.

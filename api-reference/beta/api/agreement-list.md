@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 15d2d801d98b96cea2e31023f260fab3d149fa9c
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: cb32bfbacbc5f8148343873f8ae6b67cd817ca5d
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312607"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371187"
 ---
 # <a name="list-agreements"></a>Listar contratos
 

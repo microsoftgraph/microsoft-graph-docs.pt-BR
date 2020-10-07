@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7032a7a1f27afe03b68c2bcf13c762f9e4e02045
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 5652a3ae5c2f0a5a02ea5ea193b06ffd6ab98257
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312404"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372373"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Obter bitlockerRecoveryKey
 Namespace: microsoft.graph
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 >**Observação:** Para permissões delegadas para permitir que os aplicativos obtenham recursos do BitLockerRecoveryKey em nome do usuário conectado, o administrador do locatário deve ter atribuído o usuário uma das seguintes funções ou o usuário deve ser o **proprietário registrado** do dispositivo do qual a chave do BitLocker foi originalmente cofileirada: 
 * Administrador global
 * Administrador do dispositivo de nuvem
-* Administrador do Helpdesk
+* Administrador da assistência técnica
 * Administrador de Serviço do Intune
 * Administrador de segurança
 * Leitor de segurança

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a78dcb844015237bef44b8e48dcf266761cf026a
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 8f7f9462a7a71c2efc4b3a471de1c638fc3dbae7
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312425"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372387"
 ---
 # <a name="get-authentication-operation"></a>Obter operação de autenticação
 
