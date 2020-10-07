@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de equipe
 description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
-author: clearab
+author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d36cf52268ef494b44a1c87706201e009942c6e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f3074b34f59cef66568bf685c225fb551ba2a1a
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046724"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364340"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -30,7 +30,7 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |[Criar equipe a partir do grupo](../api/team-put-teams.md) | [team](team.md) | Crie uma nova equipe ou adicione uma equipe a um grupo existente.|
 |[Obter equipe](../api/team-get.md) | [team](team.md) | Recupere as propriedades e relações da equipe especificada.|
 |[Atualizar equipe](../api/team-update.md) | [team](team.md) |Atualize as propriedades da equipe especificada. |
-|[Excluir equipe](/graph/api/group-delete?view=graph-rest-1.0) | Nenhum |Exclua a equipe e o grupo associado. |
+|[Excluir equipe](/graph/api/group-delete?view=graph-rest-1.0&preserve-view=true) | Nenhum |Exclua a equipe e o grupo associado. |
 |[Listar membros](../api/team-list-members.md)|coleção [conversationMember](../resources/conversationmember.md)|Obtenha o conversationMembers da propriedade de navegação dos membros.|
 |[Adicionar membros](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Adicionar um novo membro.|
 |[Remover membros](../api/team-delete-members.md)|Nenhum|Excluir um objeto [conversationMember](../resources/conversationmember.md).|
@@ -39,7 +39,6 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |[Desarquivar equipe](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restaure a equipe com um estado de leitura e gravação. |
 |[Clonar equipe](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copie a equipe e o grupo associado. |
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
-|[Listar todas as equipes](/graph/teams-list-all-teams) | Coleção [group](group.md) | Liste todos os grupos que têm equipes. |
 |[Obter foto da equipe](../api/team-get-photo.md) | Dados Binários | Obter a foto (imagem) de uma equipe. |
 
 ## <a name="properties"></a>Propriedades
@@ -135,7 +134,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="see-also"></a>Confira também
 
-- [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
 - [Usar o API do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md)
+- [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
+- [Listar todas as equipes](/graph/teams-list-all-teams)
 
 

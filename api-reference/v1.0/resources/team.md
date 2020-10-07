@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cda0768321c793a35b6c72bbb6906c6d8aeaff31
-ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
+ms.openlocfilehash: 7ab400ea5de668fe34f34981e4ed76af6f4acf67
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48273701"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364408"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -33,16 +33,15 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |[Criar equipe a partir do grupo](../api/team-put-teams.md) | [team](team.md) | Crie uma nova equipe ou adicione uma equipe a um grupo existente.|
 |[Obter equipe](../api/team-get.md) | [team](team.md) | Recupere as propriedades e relações da equipe especificada.|
 |[Atualizar equipe](../api/team-update.md) | [team](team.md) |Atualize as propriedades da equipe especificada. |
-|[Excluir equipe](/graph/api/group-delete?view=graph-rest-1.0) | Nenhum |Exclua a equipe e o grupo associado. |
+|[Excluir equipe](/graph/api/group-delete?view=graph-rest-1.0&preserve-view=true) | Nenhum |Exclua a equipe e o grupo associado. |
 |[Listar membros](../api/team-list-members.md)|coleção [conversationMember](../resources/conversationmember.md)|Obtenha o conversationMembers da propriedade de navegação dos membros.|
 |[Adicionar membros](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Adicionar um novo membro.|
 |[Remover membros](../api/team-delete-members.md)|Nenhum|Excluir um objeto [conversationMember](../resources/conversationmember.md).|
-|[Alterar a função do membro](/graph/api/conversationmember-update?view=graph-rest-beta&tabs=http)|[conversationMember](../resources/conversationmember.md)|Alterar um membro para um proprietário ou voltar para um membro regular.|
+|[Alterar a função do membro](/graph/api/conversationmember-update?view=graph-rest-beta&tabs=http&preserve-view=true)|[conversationMember](../resources/conversationmember.md)|Alterar um membro para um proprietário ou voltar para um membro regular.|
 |[Arquivar equipe](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Coloque a equipe em um estado somente leitura. |
 |[Desarquivar equipe](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restaure a equipe com um estado de leitura e gravação. |
 |[Clonar equipe](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copie a equipe e o grupo associado. |
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
-|[Listar todas as equipes](/graph/teams-list-all-teams) | Coleção [group](group.md) | Liste todos os grupos que têm equipes. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -109,6 +108,8 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 
 ## <a name="see-also"></a>Confira também
+
+- [Usar o API do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md)
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
-- [Como usar as APIs do Teams](teams-api-overview.md)
+- [Listar todas as equipes](/graph/teams-list-all-teams)
 
