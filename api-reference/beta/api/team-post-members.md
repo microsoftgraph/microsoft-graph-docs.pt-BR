@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f0989dd70c61bd24440d356f7f4d357712adbb1d
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 289c07d509dc663af66017d6b146be916cdb991f
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330407"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373066"
 ---
 # <a name="create-members"></a>Criar membros
 Namespace: microsoft.graph
@@ -51,6 +51,8 @@ No corpo da solicitação, forneça uma representação JSON do objeto [conversa
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retornará um código de resposta `201 Created` e um objeto [conversationMember](../resources/conversationmember.md) no corpo da resposta. Para obter melhores resultados, coordene chamadas com 2 segundos de buffer.
+
+Para obter melhores resultados, coordene chamadas com 2 segundos de buffer.
 
 ## <a name="examples"></a>Exemplos
 

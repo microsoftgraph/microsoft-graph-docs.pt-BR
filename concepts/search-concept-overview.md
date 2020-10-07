@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: f64f8903276e83295547169aac867b1f2b3652fc
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d4c16bd0175f8ae0cd9d8e03f549bea9eff3db63
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192559"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373500"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Visão geral da API Microsoft Search no Microsoft Graph (visualização)
 
@@ -52,12 +52,12 @@ Está procurando a referência de API para esse serviço?
 
 - Saiba mais sobre a [Pesquisa da Microsoft](/microsoftsearch/).
 - Saiba mais sobre alguns dos principais casos de uso:
-- 
   - [Gerenciar conexões para indexar conteúdo externo](search-index-manage-connections.md)
   - [Indexar conteúdo externo](search-index-manage-items.md)
   - [Pesquisar mensagens do Outlook](search-concept-messages.md)
   - [Pesquisar eventos do calendário](search-concept-events.md)
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](search-concept-files.md)
+  - [Pesquisar conteúdo externo](search-concept-custom-types.md)
   - [Classificar resultados de pesquisa](search-concept-sort.md)
   - [Refinar resultados de pesquisa](search-concept-aggregation.md)
   
