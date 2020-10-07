@@ -5,42 +5,42 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 85abd41b85c00a1f669c5fe5add2beaf2a2dbcf0
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 43642c6f31ab0ada6530b5aea68bbc86b70208ad
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312495"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372415"
 ---
-# <a name="create-phoneauthenticationmethod"></a><span data-ttu-id="ceb5b-103">Criar phoneAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="ceb5b-103">Create phoneAuthenticationMethod</span></span>
+# <a name="create-phoneauthenticationmethod"></a><span data-ttu-id="4bd63-103">Criar phoneAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="4bd63-103">Create phoneAuthenticationMethod</span></span>
 
-<span data-ttu-id="ceb5b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ceb5b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4bd63-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4bd63-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ceb5b-105">Adicione um novo [método de autenticação de telefone](../resources/phoneauthenticationmethod.md).</span><span class="sxs-lookup"><span data-stu-id="ceb5b-105">Add a new [phone authentication method](../resources/phoneauthenticationmethod.md).</span></span> <span data-ttu-id="ceb5b-106">Um usuário pode ter apenas um telefone de cada tipo, capturado na propriedade **PhoneType** .</span><span class="sxs-lookup"><span data-stu-id="ceb5b-106">A user may only have one phone of each type, captured in the **phoneType** property.</span></span> <span data-ttu-id="ceb5b-107">Isso significa que, por exemplo, adicionar um `mobile` telefone a um usuário com um telefone preexistente `mobile` falhará.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-107">This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.</span></span> <span data-ttu-id="ceb5b-108">Além disso, um usuário deve sempre ter um `mobile` telefone antes de adicionar um `alternateMobile` telefone.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-108">Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.</span></span>
+<span data-ttu-id="4bd63-105">Adicione um novo [método de autenticação de telefone](../resources/phoneauthenticationmethod.md).</span><span class="sxs-lookup"><span data-stu-id="4bd63-105">Add a new [phone authentication method](../resources/phoneauthenticationmethod.md).</span></span> <span data-ttu-id="4bd63-106">Um usuário pode ter apenas um telefone de cada tipo, capturado na propriedade **PhoneType** .</span><span class="sxs-lookup"><span data-stu-id="4bd63-106">A user may only have one phone of each type, captured in the **phoneType** property.</span></span> <span data-ttu-id="4bd63-107">Isso significa que, por exemplo, adicionar um `mobile` telefone a um usuário com um telefone preexistente `mobile` falhará.</span><span class="sxs-lookup"><span data-stu-id="4bd63-107">This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.</span></span> <span data-ttu-id="4bd63-108">Além disso, um usuário deve sempre ter um `mobile` telefone antes de adicionar um `alternateMobile` telefone.</span><span class="sxs-lookup"><span data-stu-id="4bd63-108">Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.</span></span>
 
-<span data-ttu-id="ceb5b-109">Adicionar um número de telefone o torna disponível para uso na autenticação multifator do Azure (MFA) e redefinição de senha de autoatendimento (SSPR), se habilitada.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-109">Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.</span></span>
+<span data-ttu-id="4bd63-109">Adicionar um número de telefone o torna disponível para uso na autenticação multifator do Azure (MFA) e redefinição de senha de autoatendimento (SSPR), se habilitada.</span><span class="sxs-lookup"><span data-stu-id="4bd63-109">Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.</span></span>
 
-<span data-ttu-id="ceb5b-110">Além disso, se um usuário estiver habilitado por política para usar a entrada do SMS e um `mobile` número for adicionado, o sistema tentará registrar o número para uso nesse sistema.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-110">Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.</span></span>
+<span data-ttu-id="4bd63-110">Além disso, se um usuário estiver habilitado por política para usar a entrada do SMS e um `mobile` número for adicionado, o sistema tentará registrar o número para uso nesse sistema.</span><span class="sxs-lookup"><span data-stu-id="4bd63-110">Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ceb5b-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="ceb5b-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4bd63-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="4bd63-111">Permissions</span></span>
 
-<span data-ttu-id="ceb5b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ceb5b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4bd63-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4bd63-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ceb5b-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ceb5b-114">Permission type</span></span>                        | <span data-ttu-id="ceb5b-115">Permissões que atuam em si (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ceb5b-115">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="ceb5b-116">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ceb5b-116">Permissions acting on others (from least to most privileged)</span></span>|
+| <span data-ttu-id="4bd63-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4bd63-114">Permission type</span></span>                        | <span data-ttu-id="4bd63-115">Permissões que atuam em si (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4bd63-115">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="4bd63-116">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4bd63-116">Permissions acting on others (from least to most privileged)</span></span>|
 |:---------------------------------------|:-------------------------|:-----------------|
-| <span data-ttu-id="ceb5b-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ceb5b-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="ceb5b-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-118">Not supported.</span></span> | <span data-ttu-id="ceb5b-119">UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="ceb5b-119">UserAuthenticationMethod.ReadWrite.All</span></span> |
-| <span data-ttu-id="ceb5b-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ceb5b-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ceb5b-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-121">Not supported.</span></span> | <span data-ttu-id="ceb5b-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-122">Not supported.</span></span> |
-| <span data-ttu-id="ceb5b-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ceb5b-123">Application</span></span>                            | <span data-ttu-id="ceb5b-124">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-124">Not supported.</span></span> | <span data-ttu-id="ceb5b-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-125">Not supported.</span></span> |
+| <span data-ttu-id="4bd63-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4bd63-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="4bd63-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4bd63-118">Not supported.</span></span> | <span data-ttu-id="4bd63-119">UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="4bd63-119">UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="4bd63-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4bd63-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4bd63-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4bd63-121">Not supported.</span></span> | <span data-ttu-id="4bd63-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4bd63-122">Not supported.</span></span> |
+| <span data-ttu-id="4bd63-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4bd63-123">Application</span></span>                            | <span data-ttu-id="4bd63-124">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4bd63-124">Not supported.</span></span> | <span data-ttu-id="4bd63-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4bd63-125">Not supported.</span></span> |
 
-<span data-ttu-id="ceb5b-126">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="ceb5b-126">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+<span data-ttu-id="4bd63-126">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="4bd63-126">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
 
-* <span data-ttu-id="ceb5b-127">Administrador global</span><span class="sxs-lookup"><span data-stu-id="ceb5b-127">Global admin</span></span>
-* <span data-ttu-id="ceb5b-128">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="ceb5b-128">Privileged authentication admin</span></span>
-* <span data-ttu-id="ceb5b-129">Administrador de autenticação</span><span class="sxs-lookup"><span data-stu-id="ceb5b-129">Authentication admin</span></span>
+* <span data-ttu-id="4bd63-127">Administrador global</span><span class="sxs-lookup"><span data-stu-id="4bd63-127">Global admin</span></span>
+* <span data-ttu-id="4bd63-128">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="4bd63-128">Privileged authentication admin</span></span>
+* <span data-ttu-id="4bd63-129">Administrador de autenticação</span><span class="sxs-lookup"><span data-stu-id="4bd63-129">Authentication admin</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ceb5b-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ceb5b-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4bd63-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4bd63-130">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -49,33 +49,33 @@ POST /me/authentication/phoneMethods
 POST /users/{id}/authentication/phoneMethods
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ceb5b-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ceb5b-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4bd63-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4bd63-131">Request headers</span></span>
 
-| <span data-ttu-id="ceb5b-132">Nome</span><span class="sxs-lookup"><span data-stu-id="ceb5b-132">Name</span></span>          | <span data-ttu-id="ceb5b-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="ceb5b-133">Description</span></span>   |
+| <span data-ttu-id="4bd63-132">Nome</span><span class="sxs-lookup"><span data-stu-id="4bd63-132">Name</span></span>          | <span data-ttu-id="4bd63-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="4bd63-133">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="ceb5b-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="ceb5b-134">Authorization</span></span> | <span data-ttu-id="ceb5b-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ceb5b-137">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ceb5b-137">Content-Type</span></span>  | <span data-ttu-id="ceb5b-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="4bd63-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="4bd63-134">Authorization</span></span> | <span data-ttu-id="4bd63-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4bd63-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4bd63-137">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4bd63-137">Content-Type</span></span>  | <span data-ttu-id="4bd63-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4bd63-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ceb5b-140">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ceb5b-140">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4bd63-140">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4bd63-140">Request body</span></span>
 
-<span data-ttu-id="ceb5b-141">No corpo da solicitação, forneça uma representação JSON de um objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) .</span><span class="sxs-lookup"><span data-stu-id="ceb5b-141">In the request body, supply a JSON representation of a [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object.</span></span> <span data-ttu-id="ceb5b-142">O JSON deve incluir `phoneNumber` e `phoneType` , mas não `smsSignInState` (que é somente leitura).</span><span class="sxs-lookup"><span data-stu-id="ceb5b-142">The JSON must include `phoneNumber` and `phoneType`, but not `smsSignInState` (which is read-only).</span></span>
+<span data-ttu-id="4bd63-141">No corpo da solicitação, forneça uma representação JSON de um objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) .</span><span class="sxs-lookup"><span data-stu-id="4bd63-141">In the request body, supply a JSON representation of a [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object.</span></span> <span data-ttu-id="4bd63-142">O JSON deve incluir `phoneNumber` e `phoneType` , mas não `smsSignInState` (que é somente leitura).</span><span class="sxs-lookup"><span data-stu-id="4bd63-142">The JSON must include `phoneNumber` and `phoneType`, but not `smsSignInState` (which is read-only).</span></span>
 
-| <span data-ttu-id="ceb5b-143">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ceb5b-143">Property</span></span>     | <span data-ttu-id="ceb5b-144">Tipo</span><span class="sxs-lookup"><span data-stu-id="ceb5b-144">Type</span></span>        | <span data-ttu-id="ceb5b-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="ceb5b-145">Description</span></span> |
+| <span data-ttu-id="4bd63-143">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4bd63-143">Property</span></span>     | <span data-ttu-id="4bd63-144">Tipo</span><span class="sxs-lookup"><span data-stu-id="4bd63-144">Type</span></span>        | <span data-ttu-id="4bd63-145">Descrição</span><span class="sxs-lookup"><span data-stu-id="4bd63-145">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="ceb5b-146">phoneNumber</span><span class="sxs-lookup"><span data-stu-id="ceb5b-146">phoneNumber</span></span>|<span data-ttu-id="ceb5b-147">String</span><span class="sxs-lookup"><span data-stu-id="ceb5b-147">String</span></span>|<span data-ttu-id="ceb5b-148">O número de telefone para texto ou chamada para autenticação.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-148">The phone number to text or call for authentication.</span></span> <span data-ttu-id="ceb5b-149">Os números de telefone usam o formato "+ \<country code\> \<number\> x \<extension\> ", com a extensão opcional.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-149">Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional.</span></span> <span data-ttu-id="ceb5b-150">Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-150">For example, +1 5555551234 or +1 5555551234x123 are valid.</span></span> <span data-ttu-id="ceb5b-151">Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-151">Numbers are rejected when creating/updating if they do not match the required format.</span></span>|
-|<span data-ttu-id="ceb5b-152">PhoneType</span><span class="sxs-lookup"><span data-stu-id="ceb5b-152">phoneType</span></span>|<span data-ttu-id="ceb5b-153">String</span><span class="sxs-lookup"><span data-stu-id="ceb5b-153">String</span></span>|<span data-ttu-id="ceb5b-154">Os valores possíveis são: `mobile` , `alternateMobile` , e `office` .</span><span class="sxs-lookup"><span data-stu-id="ceb5b-154">Possible values are: `mobile`, `alternateMobile`, and `office`.</span></span>|
+|<span data-ttu-id="4bd63-146">phoneNumber</span><span class="sxs-lookup"><span data-stu-id="4bd63-146">phoneNumber</span></span>|<span data-ttu-id="4bd63-147">String</span><span class="sxs-lookup"><span data-stu-id="4bd63-147">String</span></span>|<span data-ttu-id="4bd63-148">O número de telefone para texto ou chamada para autenticação.</span><span class="sxs-lookup"><span data-stu-id="4bd63-148">The phone number to text or call for authentication.</span></span> <span data-ttu-id="4bd63-149">Os números de telefone usam o formato "+ \<country code\> \<number\> x \<extension\> ", com a extensão opcional.</span><span class="sxs-lookup"><span data-stu-id="4bd63-149">Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional.</span></span> <span data-ttu-id="4bd63-150">Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas.</span><span class="sxs-lookup"><span data-stu-id="4bd63-150">For example, +1 5555551234 or +1 5555551234x123 are valid.</span></span> <span data-ttu-id="4bd63-151">Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário.</span><span class="sxs-lookup"><span data-stu-id="4bd63-151">Numbers are rejected when creating/updating if they do not match the required format.</span></span>|
+|<span data-ttu-id="4bd63-152">PhoneType</span><span class="sxs-lookup"><span data-stu-id="4bd63-152">phoneType</span></span>|<span data-ttu-id="4bd63-153">String</span><span class="sxs-lookup"><span data-stu-id="4bd63-153">String</span></span>|<span data-ttu-id="4bd63-154">Os valores possíveis são: `mobile` , `alternateMobile` , e `office` .</span><span class="sxs-lookup"><span data-stu-id="4bd63-154">Possible values are: `mobile`, `alternateMobile`, and `office`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ceb5b-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="ceb5b-155">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4bd63-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="4bd63-155">Response</span></span>
 
-<span data-ttu-id="ceb5b-156">Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-156">If successful, this method returns a `201 Created` response code and a new [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.</span></span>
+<span data-ttu-id="4bd63-156">Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4bd63-156">If successful, this method returns a `201 Created` response code and a new [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ceb5b-157">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ceb5b-157">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4bd63-157">Exemplos</span><span class="sxs-lookup"><span data-stu-id="4bd63-157">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="ceb5b-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ceb5b-158">Request</span></span>
+### <a name="request"></a><span data-ttu-id="4bd63-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4bd63-158">Request</span></span>
 
-<span data-ttu-id="ceb5b-159">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-159">The following is an example of the request.</span></span>
+<span data-ttu-id="4bd63-159">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4bd63-159">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ceb5b-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="ceb5b-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4bd63-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="4bd63-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_phoneauthenticationmethod_from_authentication"
@@ -90,26 +90,26 @@ Content-type: application/json
   "phoneType": "mobile"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="ceb5b-161">C#</span><span class="sxs-lookup"><span data-stu-id="ceb5b-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4bd63-161">C#</span><span class="sxs-lookup"><span data-stu-id="4bd63-161">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-phoneauthenticationmethod-from-authentication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ceb5b-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ceb5b-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4bd63-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4bd63-162">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-phoneauthenticationmethod-from-authentication-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ceb5b-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ceb5b-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4bd63-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4bd63-163">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-phoneauthenticationmethod-from-authentication-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ceb5b-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="ceb5b-164">Response</span></span>
+### <a name="response"></a><span data-ttu-id="4bd63-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="4bd63-164">Response</span></span>
 
-<span data-ttu-id="ceb5b-165">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-165">The following is an example of the response.</span></span>
+<span data-ttu-id="4bd63-165">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4bd63-165">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="ceb5b-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ceb5b-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="4bd63-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4bd63-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

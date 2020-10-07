@@ -5,60 +5,60 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2a3e2ad3923e7404b72a5e612c5f776b22a8bbad
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 655907bf89145c77c7663577470747d58d1b7f11
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312733"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372254"
 ---
-# <a name="list-bookingbusinesses"></a><span data-ttu-id="706bf-103">Listar bookingBusinesses</span><span class="sxs-lookup"><span data-stu-id="706bf-103">List bookingBusinesses</span></span>
+# <a name="list-bookingbusinesses"></a><span data-ttu-id="cc57f-103">Listar bookingBusinesses</span><span class="sxs-lookup"><span data-stu-id="cc57f-103">List bookingBusinesses</span></span>
 
-<span data-ttu-id="706bf-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="706bf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cc57f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cc57f-104">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="706bf-105">Obtenha uma coleção de objetos [bookingbusiness](../resources/bookingbusiness.md) que foi criada para o locatário.</span><span class="sxs-lookup"><span data-stu-id="706bf-105">Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant.</span></span>
+<span data-ttu-id="cc57f-105">Obtenha uma coleção de objetos [bookingbusiness](../resources/bookingbusiness.md) que foi criada para o locatário.</span><span class="sxs-lookup"><span data-stu-id="cc57f-105">Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant.</span></span>
 
-<span data-ttu-id="706bf-106">Essa operação retorna apenas a **ID** e o **DisplayName** de cada livro de livros na coleção.</span><span class="sxs-lookup"><span data-stu-id="706bf-106">This operation returns only the **id** and **displayName** of each Bookings business in the collection.</span></span> <span data-ttu-id="706bf-107">Para considerações de desempenho, ele não retorna outras propriedades.</span><span class="sxs-lookup"><span data-stu-id="706bf-107">For performance considerations, it does not return other properties.</span></span> <span data-ttu-id="706bf-108">Você pode obter as outras propriedades de uma empresa de livros, especificando sua **ID** em uma operação [Get](bookingbusiness-get.md) .</span><span class="sxs-lookup"><span data-stu-id="706bf-108">You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness-get.md) operation.</span></span>
+<span data-ttu-id="cc57f-106">Essa operação retorna apenas a **ID** e o **DisplayName** de cada livro de livros na coleção.</span><span class="sxs-lookup"><span data-stu-id="cc57f-106">This operation returns only the **id** and **displayName** of each Bookings business in the collection.</span></span> <span data-ttu-id="cc57f-107">Para considerações de desempenho, ele não retorna outras propriedades.</span><span class="sxs-lookup"><span data-stu-id="cc57f-107">For performance considerations, it does not return other properties.</span></span> <span data-ttu-id="cc57f-108">Você pode obter as outras propriedades de uma empresa de livros, especificando sua **ID** em uma operação [Get](bookingbusiness-get.md) .</span><span class="sxs-lookup"><span data-stu-id="cc57f-108">You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness-get.md) operation.</span></span>
 
-<span data-ttu-id="706bf-109">Você também pode consultar as empresas de reservas especificando uma cadeia de caracteres em um `query` parâmetro para fazer a correspondência de subcadeia entre as empresas de um locatário.</span><span class="sxs-lookup"><span data-stu-id="706bf-109">You can also query for Bookings businesses by specifying a string in a `query` parameter to do substring matching among the businesses of a tenant.</span></span> <span data-ttu-id="706bf-110">Veja um [exemplo](#request-2) abaixo.</span><span class="sxs-lookup"><span data-stu-id="706bf-110">See an [example](#request-2) below.</span></span>
+<span data-ttu-id="cc57f-109">Você também pode consultar as empresas de reservas especificando uma cadeia de caracteres em um `query` parâmetro para fazer a correspondência de subcadeia entre as empresas de um locatário.</span><span class="sxs-lookup"><span data-stu-id="cc57f-109">You can also query for Bookings businesses by specifying a string in a `query` parameter to do substring matching among the businesses of a tenant.</span></span> <span data-ttu-id="cc57f-110">Veja um [exemplo](#request-2) abaixo.</span><span class="sxs-lookup"><span data-stu-id="cc57f-110">See an [example](#request-2) below.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="706bf-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="706bf-111">Permissions</span></span>
-<span data-ttu-id="706bf-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="706bf-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cc57f-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="cc57f-111">Permissions</span></span>
+<span data-ttu-id="cc57f-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cc57f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="706bf-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="706bf-114">Permission type</span></span>      | <span data-ttu-id="706bf-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="706bf-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cc57f-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cc57f-114">Permission type</span></span>      | <span data-ttu-id="cc57f-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cc57f-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="706bf-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="706bf-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="706bf-117">Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="706bf-117">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="706bf-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="706bf-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="706bf-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="706bf-119">Not supported.</span></span>   |
-|<span data-ttu-id="706bf-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="706bf-120">Application</span></span> | <span data-ttu-id="706bf-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="706bf-121">Not supported.</span></span>  |
+|<span data-ttu-id="cc57f-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cc57f-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="cc57f-117">Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="cc57f-117">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="cc57f-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cc57f-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc57f-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cc57f-119">Not supported.</span></span>   |
+|<span data-ttu-id="cc57f-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cc57f-120">Application</span></span> | <span data-ttu-id="cc57f-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cc57f-121">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="706bf-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="706bf-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cc57f-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cc57f-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="706bf-123">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="706bf-123">Optional query parameters</span></span>
-<span data-ttu-id="706bf-124">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="706bf-124">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cc57f-123">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cc57f-123">Optional query parameters</span></span>
+<span data-ttu-id="cc57f-124">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="cc57f-124">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="706bf-125">Este método também dá suporte ao `query` parâmetro que aceita um valor de cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="706bf-125">This method also supports the `query` parameter which accepts a string value.</span></span> <span data-ttu-id="706bf-126">Esse parâmetro limita os resultados GET para empresas que correspondem à cadeia de caracteres especificada.</span><span class="sxs-lookup"><span data-stu-id="706bf-126">This parameter limits the GET results to businesses that match the specified string.</span></span> <span data-ttu-id="706bf-127">Você pode ver um [exemplo](#request-2) abaixo.</span><span class="sxs-lookup"><span data-stu-id="706bf-127">You can see an [example](#request-2) below.</span></span>
+<span data-ttu-id="cc57f-125">Este método também dá suporte ao `query` parâmetro que aceita um valor de cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="cc57f-125">This method also supports the `query` parameter which accepts a string value.</span></span> <span data-ttu-id="cc57f-126">Esse parâmetro limita os resultados GET para empresas que correspondem à cadeia de caracteres especificada.</span><span class="sxs-lookup"><span data-stu-id="cc57f-126">This parameter limits the GET results to businesses that match the specified string.</span></span> <span data-ttu-id="cc57f-127">Você pode ver um [exemplo](#request-2) abaixo.</span><span class="sxs-lookup"><span data-stu-id="cc57f-127">You can see an [example](#request-2) below.</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="706bf-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="706bf-128">Request headers</span></span>
-| <span data-ttu-id="706bf-129">Nome</span><span class="sxs-lookup"><span data-stu-id="706bf-129">Name</span></span>      |<span data-ttu-id="706bf-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="706bf-130">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cc57f-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cc57f-128">Request headers</span></span>
+| <span data-ttu-id="cc57f-129">Nome</span><span class="sxs-lookup"><span data-stu-id="cc57f-129">Name</span></span>      |<span data-ttu-id="cc57f-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="cc57f-130">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="706bf-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="706bf-131">Authorization</span></span>  | <span data-ttu-id="706bf-132">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="706bf-132">Bearer {code}</span></span>|
+| <span data-ttu-id="cc57f-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="cc57f-131">Authorization</span></span>  | <span data-ttu-id="cc57f-132">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="cc57f-132">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="706bf-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="706bf-133">Request body</span></span>
-<span data-ttu-id="706bf-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="706bf-134">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="706bf-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="706bf-135">Response</span></span>
-<span data-ttu-id="706bf-136">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="706bf-136">If successful, this method returns a `200 OK` response code and collection of [bookingBusiness](../resources/bookingbusiness.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="706bf-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="706bf-137">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="706bf-138">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="706bf-138">Request 1</span></span>
-<span data-ttu-id="706bf-139">O exemplo a seguir obtém as empresas de reservas em um locatário.</span><span class="sxs-lookup"><span data-stu-id="706bf-139">The following example gets the Bookings businesses in a tenant.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cc57f-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cc57f-133">Request body</span></span>
+<span data-ttu-id="cc57f-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cc57f-134">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="cc57f-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="cc57f-135">Response</span></span>
+<span data-ttu-id="cc57f-136">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cc57f-136">If successful, this method returns a `200 OK` response code and collection of [bookingBusiness](../resources/bookingbusiness.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="cc57f-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cc57f-137">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="cc57f-138">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="cc57f-138">Request 1</span></span>
+<span data-ttu-id="cc57f-139">O exemplo a seguir obtém as empresas de reservas em um locatário.</span><span class="sxs-lookup"><span data-stu-id="cc57f-139">The following example gets the Bookings businesses in a tenant.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="706bf-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="706bf-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cc57f-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc57f-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_bookingbusinesses"
@@ -66,22 +66,22 @@ GET /bookingBusinesses
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses
 ```
-# <a name="c"></a>[<span data-ttu-id="706bf-141">C#</span><span class="sxs-lookup"><span data-stu-id="706bf-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cc57f-141">C#</span><span class="sxs-lookup"><span data-stu-id="cc57f-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bookingbusinesses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="706bf-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="706bf-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cc57f-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc57f-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bookingbusinesses-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="706bf-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="706bf-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cc57f-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cc57f-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bookingbusinesses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-1"></a><span data-ttu-id="706bf-144">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="706bf-144">Response 1</span></span>
-<span data-ttu-id="706bf-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="706bf-145">The following is an example of the response.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="cc57f-144">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="cc57f-144">Response 1</span></span>
+<span data-ttu-id="cc57f-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="cc57f-145">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,10 +108,10 @@ Content-type: application/json
 ```
 
 
-##### <a name="request-2"></a><span data-ttu-id="706bf-146">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="706bf-146">Request 2</span></span>
-<span data-ttu-id="706bf-147">O exemplo a seguir mostra como usar o `query` parâmetro para obter uma ou mais empresas de reservas correspondentes no locatário.</span><span class="sxs-lookup"><span data-stu-id="706bf-147">The following example shows how to use the `query` parameter to get one or more matching Bookings businesses in the tenant.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="cc57f-146">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="cc57f-146">Request 2</span></span>
+<span data-ttu-id="cc57f-147">O exemplo a seguir mostra como usar o `query` parâmetro para obter uma ou mais empresas de reservas correspondentes no locatário.</span><span class="sxs-lookup"><span data-stu-id="cc57f-147">The following example shows how to use the `query` parameter to get one or more matching Bookings businesses in the tenant.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="706bf-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="706bf-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cc57f-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc57f-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "query_bookingbusinesses"
@@ -119,22 +119,22 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 ```
-# <a name="c"></a>[<span data-ttu-id="706bf-149">C#</span><span class="sxs-lookup"><span data-stu-id="706bf-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cc57f-149">C#</span><span class="sxs-lookup"><span data-stu-id="cc57f-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/query-bookingbusinesses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="706bf-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="706bf-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cc57f-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc57f-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/query-bookingbusinesses-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="706bf-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="706bf-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cc57f-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cc57f-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/query-bookingbusinesses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-2"></a><span data-ttu-id="706bf-152">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="706bf-152">Response 2</span></span>
-<span data-ttu-id="706bf-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="706bf-153">The following is an example of the response.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="cc57f-152">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="cc57f-152">Response 2</span></span>
+<span data-ttu-id="cc57f-153">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="cc57f-153">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,54 +5,54 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 973d6fdb80f8f798a5770cd4b640e617a1865d93
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 031240e6be38806490f311ecd105e94dcc76b7e5
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314556"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372807"
 ---
-# <a name="delete-printershare"></a><span data-ttu-id="db36d-105">Eliminar printerShare</span><span class="sxs-lookup"><span data-stu-id="db36d-105">Delete printerShare</span></span>
+# <a name="delete-printershare"></a><span data-ttu-id="8e706-105">Eliminar printerShare</span><span class="sxs-lookup"><span data-stu-id="8e706-105">Delete printerShare</span></span>
 
-<span data-ttu-id="db36d-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="db36d-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8e706-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8e706-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="db36d-107">Excluir um compartilhamento de impressora (descompartilhar a [impressora](../resources/printer.md)associada).</span><span class="sxs-lookup"><span data-stu-id="db36d-107">Delete a printer share (unshare the associated [printer](../resources/printer.md)).</span></span> <span data-ttu-id="db36d-108">Não é possível desfazer a ação.</span><span class="sxs-lookup"><span data-stu-id="db36d-108">This action cannot be undone.</span></span> <span data-ttu-id="db36d-109">Se a [impressora](../resources/printer.md) for compartilhada novamente no futuro, qualquer usuário do Windows que tenha instalado anteriormente a [impressora](../resources/printer.md) deverá descobrir e reinstalá-la.</span><span class="sxs-lookup"><span data-stu-id="db36d-109">If the [printer](../resources/printer.md) is shared again in the future, any Windows users who had previously installed the [printer](../resources/printer.md) will need to discover and reinstall it.</span></span>
+<span data-ttu-id="8e706-107">Excluir um compartilhamento de impressora (descompartilhar a [impressora](../resources/printer.md)associada).</span><span class="sxs-lookup"><span data-stu-id="8e706-107">Delete a printer share (unshare the associated [printer](../resources/printer.md)).</span></span> <span data-ttu-id="8e706-108">Não é possível desfazer a ação.</span><span class="sxs-lookup"><span data-stu-id="8e706-108">This action cannot be undone.</span></span> <span data-ttu-id="8e706-109">Se a [impressora](../resources/printer.md) for compartilhada novamente no futuro, qualquer usuário do Windows que tenha instalado anteriormente a [impressora](../resources/printer.md) deverá descobrir e reinstalá-la.</span><span class="sxs-lookup"><span data-stu-id="8e706-109">If the [printer](../resources/printer.md) is shared again in the future, any Windows users who had previously installed the [printer](../resources/printer.md) will need to discover and reinstall it.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="db36d-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="db36d-110">Permissions</span></span>
-<span data-ttu-id="db36d-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="db36d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8e706-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="8e706-110">Permissions</span></span>
+<span data-ttu-id="8e706-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8e706-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="db36d-113">Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="db36d-113">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="db36d-114">O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="db36d-114">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="8e706-113">Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="8e706-113">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="8e706-114">O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="8e706-114">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="db36d-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="db36d-115">Permission type</span></span> | <span data-ttu-id="db36d-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="db36d-116">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="8e706-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8e706-115">Permission type</span></span> | <span data-ttu-id="8e706-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8e706-116">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="db36d-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="db36d-117">Delegated (work or school account)</span></span>| <span data-ttu-id="db36d-118">PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db36d-118">PrinterShare.ReadWrite.All</span></span> |
-|<span data-ttu-id="db36d-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="db36d-119">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="db36d-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="db36d-120">Not Supported.</span></span>|
-|<span data-ttu-id="db36d-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="db36d-121">Application</span></span>|<span data-ttu-id="db36d-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="db36d-122">Not Supported.</span></span>|
+|<span data-ttu-id="8e706-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8e706-117">Delegated (work or school account)</span></span>| <span data-ttu-id="8e706-118">PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8e706-118">PrinterShare.ReadWrite.All</span></span> |
+|<span data-ttu-id="8e706-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8e706-119">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8e706-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8e706-120">Not Supported.</span></span>|
+|<span data-ttu-id="8e706-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8e706-121">Application</span></span>|<span data-ttu-id="8e706-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8e706-122">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="db36d-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="db36d-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8e706-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8e706-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /print/shares/{id}
 DELETE /print/printers/{id}/share
 ```
-## <a name="request-headers"></a><span data-ttu-id="db36d-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="db36d-124">Request headers</span></span>
-| <span data-ttu-id="db36d-125">Nome</span><span class="sxs-lookup"><span data-stu-id="db36d-125">Name</span></span>          | <span data-ttu-id="db36d-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="db36d-126">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="8e706-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8e706-124">Request headers</span></span>
+| <span data-ttu-id="8e706-125">Nome</span><span class="sxs-lookup"><span data-stu-id="8e706-125">Name</span></span>          | <span data-ttu-id="8e706-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="8e706-126">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="db36d-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="db36d-127">Authorization</span></span> | <span data-ttu-id="db36d-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="db36d-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8e706-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="8e706-127">Authorization</span></span> | <span data-ttu-id="8e706-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8e706-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="db36d-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="db36d-130">Request body</span></span>
-<span data-ttu-id="db36d-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="db36d-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8e706-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8e706-130">Request body</span></span>
+<span data-ttu-id="8e706-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8e706-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="db36d-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="db36d-132">Response</span></span>
-<span data-ttu-id="db36d-p106">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="db36d-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8e706-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="8e706-132">Response</span></span>
+<span data-ttu-id="8e706-p106">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8e706-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="db36d-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="db36d-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="db36d-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="db36d-136">Request</span></span>
-<span data-ttu-id="db36d-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="db36d-137">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8e706-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8e706-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8e706-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8e706-136">Request</span></span>
+<span data-ttu-id="8e706-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8e706-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="db36d-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="db36d-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8e706-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="8e706-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_printershare"
@@ -60,22 +60,22 @@ DELETE /print/printers/{id}/share
 ```http
 DELETE https://graph.microsoft.com/beta/print/shares/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="db36d-139">C#</span><span class="sxs-lookup"><span data-stu-id="db36d-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8e706-139">C#</span><span class="sxs-lookup"><span data-stu-id="8e706-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-printershare-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="db36d-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db36d-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8e706-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8e706-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-printershare-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="db36d-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="db36d-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8e706-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8e706-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-printershare-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="db36d-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="db36d-142">Response</span></span>
-<span data-ttu-id="db36d-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="db36d-143">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="8e706-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="8e706-142">Response</span></span>
+<span data-ttu-id="8e706-143">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8e706-143">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

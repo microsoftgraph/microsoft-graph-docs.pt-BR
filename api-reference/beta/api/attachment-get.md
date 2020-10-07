@@ -5,67 +5,67 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 5775080d0437bd0009d69bccb13613ae39f59677
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 03490de22ff54f010d725fd17caef619f381911f
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312544"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372464"
 ---
-# <a name="get-attachment"></a><span data-ttu-id="56ee8-103">Obter anexo</span><span class="sxs-lookup"><span data-stu-id="56ee8-103">Get attachment</span></span>
+# <a name="get-attachment"></a><span data-ttu-id="e131e-103">Obter anexo</span><span class="sxs-lookup"><span data-stu-id="e131e-103">Get attachment</span></span>
 
-<span data-ttu-id="56ee8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="56ee8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e131e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e131e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-<span data-ttu-id="56ee8-105">Leia as propriedades, relações ou conteúdo bruto de um anexo, anexados a um [evento](../resources/event.md)de usuário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).</span><span class="sxs-lookup"><span data-stu-id="56ee8-105">Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>
+<span data-ttu-id="e131e-105">Leia as propriedades, relações ou conteúdo bruto de um anexo, anexados a um [evento](../resources/event.md)de usuário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).</span><span class="sxs-lookup"><span data-stu-id="e131e-105">Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>
 
-<span data-ttu-id="56ee8-106">Um anexo pode ser de um dos seguintes tipos:</span><span class="sxs-lookup"><span data-stu-id="56ee8-106">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="e131e-106">Um anexo pode ser de um dos seguintes tipos:</span><span class="sxs-lookup"><span data-stu-id="e131e-106">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="56ee8-107">Um arquivo (recurso [fileAttachment](../resources/fileattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="56ee8-107">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="56ee8-108">Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="56ee8-108">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span> <span data-ttu-id="56ee8-109">Você pode usar `$expand` para obter mais propriedades desse item.</span><span class="sxs-lookup"><span data-stu-id="56ee8-109">You can use `$expand` to further get the properties of that item.</span></span> <span data-ttu-id="56ee8-110">Veja um [exemplo](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).</span><span class="sxs-lookup"><span data-stu-id="56ee8-110">See an [example](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).</span></span>
-* <span data-ttu-id="56ee8-111">Um link para um arquivo (recurso [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="56ee8-111">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="e131e-107">Um arquivo (recurso [fileAttachment](../resources/fileattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="e131e-107">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="e131e-108">Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="e131e-108">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span> <span data-ttu-id="e131e-109">Você pode usar `$expand` para obter mais propriedades desse item.</span><span class="sxs-lookup"><span data-stu-id="e131e-109">You can use `$expand` to further get the properties of that item.</span></span> <span data-ttu-id="e131e-110">Veja um [exemplo](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).</span><span class="sxs-lookup"><span data-stu-id="e131e-110">See an [example](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).</span></span>
+* <span data-ttu-id="e131e-111">Um link para um arquivo (recurso [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="e131e-111">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="56ee8-112">Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="56ee8-112">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span>
+<span data-ttu-id="e131e-112">Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="e131e-112">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span>
 
-### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a><span data-ttu-id="56ee8-113">Obter o conteúdo bruto de um arquivo ou anexo de item</span><span class="sxs-lookup"><span data-stu-id="56ee8-113">Get the raw contents of a file or item attachment</span></span>
-<span data-ttu-id="56ee8-114">Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item.</span><span class="sxs-lookup"><span data-stu-id="56ee8-114">You can append the path segment `/$value` to get the raw contents of a file or item attachment.</span></span> 
+### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a><span data-ttu-id="e131e-113">Obter o conteúdo bruto de um arquivo ou anexo de item</span><span class="sxs-lookup"><span data-stu-id="e131e-113">Get the raw contents of a file or item attachment</span></span>
+<span data-ttu-id="e131e-114">Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item.</span><span class="sxs-lookup"><span data-stu-id="e131e-114">You can append the path segment `/$value` to get the raw contents of a file or item attachment.</span></span> 
 
-<span data-ttu-id="56ee8-115">Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original.</span><span class="sxs-lookup"><span data-stu-id="56ee8-115">For a file attachment, the content type is based on its original content type.</span></span> <span data-ttu-id="56ee8-116">Veja um [exemplo](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) abaixo.</span><span class="sxs-lookup"><span data-stu-id="56ee8-116">See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.</span></span>
+<span data-ttu-id="e131e-115">Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original.</span><span class="sxs-lookup"><span data-stu-id="e131e-115">For a file attachment, the content type is based on its original content type.</span></span> <span data-ttu-id="e131e-116">Veja um [exemplo](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) abaixo.</span><span class="sxs-lookup"><span data-stu-id="e131e-116">See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.</span></span>
 
-<span data-ttu-id="56ee8-117">Para um anexo de item que é um [contato](../resources/contact.md), [evento](../resources/event.md) ou [mensagem](../resources/message.md), o conteúdo bruto retornado está no formato MIME.</span><span class="sxs-lookup"><span data-stu-id="56ee8-117">For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.</span></span>
+<span data-ttu-id="e131e-117">Para um anexo de item que é um [contato](../resources/contact.md), [evento](../resources/event.md) ou [mensagem](../resources/message.md), o conteúdo bruto retornado está no formato MIME.</span><span class="sxs-lookup"><span data-stu-id="e131e-117">For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.</span></span>
 
-| <span data-ttu-id="56ee8-118">Tipo de anexo do item</span><span class="sxs-lookup"><span data-stu-id="56ee8-118">Item attachment type</span></span>  | <span data-ttu-id="56ee8-119">Conteúdo bruto retornado</span><span class="sxs-lookup"><span data-stu-id="56ee8-119">Raw contents returned</span></span> |
+| <span data-ttu-id="e131e-118">Tipo de anexo do item</span><span class="sxs-lookup"><span data-stu-id="e131e-118">Item attachment type</span></span>  | <span data-ttu-id="e131e-119">Conteúdo bruto retornado</span><span class="sxs-lookup"><span data-stu-id="e131e-119">Raw contents returned</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="56ee8-120">**contato**</span><span class="sxs-lookup"><span data-stu-id="56ee8-120">**contact**</span></span> | <span data-ttu-id="56ee8-121">Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME.</span><span class="sxs-lookup"><span data-stu-id="56ee8-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format.</span></span> <span data-ttu-id="56ee8-122">Confira um [exemplo](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="56ee8-122">See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span></span> |
-| <span data-ttu-id="56ee8-123">**event**</span><span class="sxs-lookup"><span data-stu-id="56ee8-123">**event**</span></span> | <span data-ttu-id="56ee8-124">Formato iCal MIME.</span><span class="sxs-lookup"><span data-stu-id="56ee8-124">iCal MIME format.</span></span> <span data-ttu-id="56ee8-125">Confira um [exemplo](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="56ee8-125">See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span></span> |
-| <span data-ttu-id="56ee8-126">**message**</span><span class="sxs-lookup"><span data-stu-id="56ee8-126">**message**</span></span> | <span data-ttu-id="56ee8-127">Formato MIME.</span><span class="sxs-lookup"><span data-stu-id="56ee8-127">MIME format.</span></span> <span data-ttu-id="56ee8-128">Confira um [exemplo](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="56ee8-128">See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span></span> |
+| <span data-ttu-id="e131e-120">**contato**</span><span class="sxs-lookup"><span data-stu-id="e131e-120">**contact**</span></span> | <span data-ttu-id="e131e-121">Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME.</span><span class="sxs-lookup"><span data-stu-id="e131e-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format.</span></span> <span data-ttu-id="e131e-122">Confira um [exemplo](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="e131e-122">See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span></span> |
+| <span data-ttu-id="e131e-123">**event**</span><span class="sxs-lookup"><span data-stu-id="e131e-123">**event**</span></span> | <span data-ttu-id="e131e-124">Formato iCal MIME.</span><span class="sxs-lookup"><span data-stu-id="e131e-124">iCal MIME format.</span></span> <span data-ttu-id="e131e-125">Confira um [exemplo](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="e131e-125">See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span></span> |
+| <span data-ttu-id="e131e-126">**message**</span><span class="sxs-lookup"><span data-stu-id="e131e-126">**message**</span></span> | <span data-ttu-id="e131e-127">Formato MIME.</span><span class="sxs-lookup"><span data-stu-id="e131e-127">MIME format.</span></span> <span data-ttu-id="e131e-128">Confira um [exemplo](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="e131e-128">See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span></span> |
 
-<span data-ttu-id="56ee8-129">A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.</span><span class="sxs-lookup"><span data-stu-id="56ee8-129">Attempting to get the `$value` of a reference attachment returns HTTP 405.</span></span>
+<span data-ttu-id="e131e-129">A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.</span><span class="sxs-lookup"><span data-stu-id="e131e-129">Attempting to get the `$value` of a reference attachment returns HTTP 405.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="56ee8-130">Permissões</span><span class="sxs-lookup"><span data-stu-id="56ee8-130">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e131e-130">Permissões</span><span class="sxs-lookup"><span data-stu-id="e131e-130">Permissions</span></span>
 
-<span data-ttu-id="56ee8-p106">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56ee8-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e131e-p106">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e131e-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="56ee8-133">Se estiver acessando anexos em mensagens: mail. Read</span><span class="sxs-lookup"><span data-stu-id="56ee8-133">If accessing attachments in messages: Mail.Read</span></span>
-* <span data-ttu-id="56ee8-134">Se estiver acessando anexos em eventos: Calendars. Read</span><span class="sxs-lookup"><span data-stu-id="56ee8-134">If accessing attachments in events: Calendars.Read</span></span>
-* <span data-ttu-id="56ee8-135">Se estiver acessando anexos em tarefas do Outlook: tarefas. leitura</span><span class="sxs-lookup"><span data-stu-id="56ee8-135">If accessing attachments in Outlook tasks: Tasks.Read</span></span>
-* <span data-ttu-id="56ee8-136">Se estiver acessando anexos em Postagens de Grupo: Group. Read. All</span><span class="sxs-lookup"><span data-stu-id="56ee8-136">If accessing attachments in group posts: Group.Read.All</span></span>
+* <span data-ttu-id="e131e-133">Se estiver acessando anexos em mensagens: mail. Read</span><span class="sxs-lookup"><span data-stu-id="e131e-133">If accessing attachments in messages: Mail.Read</span></span>
+* <span data-ttu-id="e131e-134">Se estiver acessando anexos em eventos: Calendars. Read</span><span class="sxs-lookup"><span data-stu-id="e131e-134">If accessing attachments in events: Calendars.Read</span></span>
+* <span data-ttu-id="e131e-135">Se estiver acessando anexos em tarefas do Outlook: tarefas. leitura</span><span class="sxs-lookup"><span data-stu-id="e131e-135">If accessing attachments in Outlook tasks: Tasks.Read</span></span>
+* <span data-ttu-id="e131e-136">Se estiver acessando anexos em Postagens de Grupo: Group. Read. All</span><span class="sxs-lookup"><span data-stu-id="e131e-136">If accessing attachments in group posts: Group.Read.All</span></span>
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
 -->
 
-## <a name="http-request"></a><span data-ttu-id="56ee8-137">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="56ee8-137">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e131e-137">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e131e-137">HTTP request</span></span>
 
-<span data-ttu-id="56ee8-138">Esta seção mostra a sintaxe de solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)e [postagem](../resources/post.md)) que dão suporte a anexos:</span><span class="sxs-lookup"><span data-stu-id="56ee8-138">This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), and [post](../resources/post.md)) that support attachments:</span></span>
+<span data-ttu-id="e131e-138">Esta seção mostra a sintaxe de solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)e [postagem](../resources/post.md)) que dão suporte a anexos:</span><span class="sxs-lookup"><span data-stu-id="e131e-138">This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), and [post](../resources/post.md)) that support attachments:</span></span>
 
-- <span data-ttu-id="56ee8-139">Para obter as propriedades e as relações de um anexo, especifique a ID do anexo a ser indexada na coleção **Attachments** , anexada ao [evento](../resources/event.md)especificado, à [mensagem](../resources/message.md), à [tarefa do Outlook](../resources/outlooktask.md)ou à instância de [post](../resources/post.md) .</span><span class="sxs-lookup"><span data-stu-id="56ee8-139">To get the properties and relationships of an attachment, specify the attachment ID to index into the **attachments** collection, attached to the specified [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) instance.</span></span>
-- <span data-ttu-id="56ee8-140">Se o anexo for um arquivo ou item do Outlook (contato, evento ou mensagem), você poderá obter ainda mais o conteúdo bruto do anexo anexando o segmento de caminho `/$value` à URL da solicitação.</span><span class="sxs-lookup"><span data-stu-id="56ee8-140">If the attachment is a file or Outlook item (contact, event, or message), you can further get the raw contents of the attachment by appending the path segment `/$value` to the request URL.</span></span>
+- <span data-ttu-id="e131e-139">Para obter as propriedades e as relações de um anexo, especifique a ID do anexo a ser indexada na coleção **Attachments** , anexada ao [evento](../resources/event.md)especificado, à [mensagem](../resources/message.md), à [tarefa do Outlook](../resources/outlooktask.md)ou à instância de [post](../resources/post.md) .</span><span class="sxs-lookup"><span data-stu-id="e131e-139">To get the properties and relationships of an attachment, specify the attachment ID to index into the **attachments** collection, attached to the specified [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) instance.</span></span>
+- <span data-ttu-id="e131e-140">Se o anexo for um arquivo ou item do Outlook (contato, evento ou mensagem), você poderá obter ainda mais o conteúdo bruto do anexo anexando o segmento de caminho `/$value` à URL da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e131e-140">If the attachment is a file or Outlook item (contact, event, or message), you can further get the raw contents of the attachment by appending the path segment `/$value` to the request URL.</span></span>
 
-<span data-ttu-id="56ee8-141">Um anexo de um [evento](../resources/event.md):</span><span class="sxs-lookup"><span data-stu-id="56ee8-141">An attachment of an [event](../resources/event.md):</span></span>
+<span data-ttu-id="e131e-141">Um anexo de um [evento](../resources/event.md):</span><span class="sxs-lookup"><span data-stu-id="e131e-141">An attachment of an [event](../resources/event.md):</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -80,7 +80,7 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-<span data-ttu-id="56ee8-142">Um anexo de uma [mensagem](../resources/message.md) na caixa de correio de um usuário:</span><span class="sxs-lookup"><span data-stu-id="56ee8-142">An attachment of a [message](../resources/message.md) in a user's mailbox:</span></span>
+<span data-ttu-id="e131e-142">Um anexo de uma [mensagem](../resources/message.md) na caixa de correio de um usuário:</span><span class="sxs-lookup"><span data-stu-id="e131e-142">An attachment of a [message](../resources/message.md) in a user's mailbox:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -90,7 +90,7 @@ GET /me/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="56ee8-143">Um anexo de uma [mensagem](../resources/message.md) contida em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário:</span><span class="sxs-lookup"><span data-stu-id="56ee8-143">An attachment of a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox:</span></span>
+<span data-ttu-id="e131e-143">Um anexo de uma [mensagem](../resources/message.md) contida em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário:</span><span class="sxs-lookup"><span data-stu-id="e131e-143">An attachment of a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -100,7 +100,7 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="56ee8-144">Um anexo de uma [mensagem](../resources/message.md) contida em uma pasta filho de um [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário:</span><span class="sxs-lookup"><span data-stu-id="56ee8-144">An attachment of a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox:</span></span>
+<span data-ttu-id="e131e-144">Um anexo de uma [mensagem](../resources/message.md) contida em uma pasta filho de um [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário:</span><span class="sxs-lookup"><span data-stu-id="e131e-144">An attachment of a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -110,9 +110,9 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$v
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="56ee8-145">O exemplo anterior mostra um nível de aninhamento, mas uma mensagem pode ser localizada em um filho de um filho e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="56ee8-145">The preceding example shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="e131e-145">O exemplo anterior mostra um nível de aninhamento, mas uma mensagem pode ser localizada em um filho de um filho e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="e131e-145">The preceding example shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
 
-<span data-ttu-id="56ee8-146">Um anexo de uma [tarefa do Outlook](../resources/outlooktask.md):</span><span class="sxs-lookup"><span data-stu-id="56ee8-146">An attachment of an [Outlook task](../resources/outlooktask.md):</span></span>
+<span data-ttu-id="e131e-146">Um anexo de uma [tarefa do Outlook](../resources/outlooktask.md):</span><span class="sxs-lookup"><span data-stu-id="e131e-146">An attachment of an [Outlook task](../resources/outlooktask.md):</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -122,7 +122,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="56ee8-147">Um anexo de uma [postagem](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversa](../resources/conversation.md) de um grupo:</span><span class="sxs-lookup"><span data-stu-id="56ee8-147">An attachment of a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group:</span></span>
+<span data-ttu-id="e131e-147">Um anexo de uma [postagem](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversa](../resources/conversation.md) de um grupo:</span><span class="sxs-lookup"><span data-stu-id="e131e-147">An attachment of a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -132,38 +132,38 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="56ee8-148">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="56ee8-148">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e131e-148">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e131e-148">Optional query parameters</span></span>
 
-<span data-ttu-id="56ee8-149">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="56ee8-149">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="e131e-149">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e131e-149">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="56ee8-150">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-150">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e131e-150">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-150">Request headers</span></span>
 
-| <span data-ttu-id="56ee8-151">Nome</span><span class="sxs-lookup"><span data-stu-id="56ee8-151">Name</span></span>       | <span data-ttu-id="56ee8-152">Tipo</span><span class="sxs-lookup"><span data-stu-id="56ee8-152">Type</span></span> | <span data-ttu-id="56ee8-153">Descrição</span><span class="sxs-lookup"><span data-stu-id="56ee8-153">Description</span></span>|
+| <span data-ttu-id="e131e-151">Nome</span><span class="sxs-lookup"><span data-stu-id="e131e-151">Name</span></span>       | <span data-ttu-id="e131e-152">Tipo</span><span class="sxs-lookup"><span data-stu-id="e131e-152">Type</span></span> | <span data-ttu-id="e131e-153">Descrição</span><span class="sxs-lookup"><span data-stu-id="e131e-153">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="56ee8-154">Autorização</span><span class="sxs-lookup"><span data-stu-id="56ee8-154">Authorization</span></span>  | <span data-ttu-id="56ee8-155">string</span><span class="sxs-lookup"><span data-stu-id="56ee8-155">string</span></span>  | <span data-ttu-id="56ee8-p107">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="56ee8-p107">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e131e-154">Autorização</span><span class="sxs-lookup"><span data-stu-id="e131e-154">Authorization</span></span>  | <span data-ttu-id="e131e-155">string</span><span class="sxs-lookup"><span data-stu-id="e131e-155">string</span></span>  | <span data-ttu-id="e131e-p107">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e131e-p107">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="56ee8-158">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-158">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e131e-158">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-158">Request body</span></span>
 
-<span data-ttu-id="56ee8-159">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="56ee8-159">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="e131e-159">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e131e-159">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="56ee8-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="56ee8-160">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e131e-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="e131e-160">Response</span></span>
 
-<span data-ttu-id="56ee8-161">Se tiver êxito, o método GET retornará um `200 OK` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="56ee8-161">If successful, the GET method returns a `200 OK` response code.</span></span> 
+<span data-ttu-id="e131e-161">Se tiver êxito, o método GET retornará um `200 OK` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="e131e-161">If successful, the GET method returns a `200 OK` response code.</span></span> 
 
-<span data-ttu-id="56ee8-162">Se você estiver obtendo as propriedades e os relacionamentos de um anexo, o corpo da resposta incluirá um objeto de [anexo](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="56ee8-162">If you're getting the properties and relationships of an attachment, the response body includes an [attachment](../resources/attachment.md) object.</span></span>
-<span data-ttu-id="56ee8-163">As propriedades desse tipo de anexo são retornadas: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceattachment.md).</span><span class="sxs-lookup"><span data-stu-id="56ee8-163">The properties of that type of attachment are returned: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceattachment.md).</span></span>
+<span data-ttu-id="e131e-162">Se você estiver obtendo as propriedades e os relacionamentos de um anexo, o corpo da resposta incluirá um objeto de [anexo](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="e131e-162">If you're getting the properties and relationships of an attachment, the response body includes an [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="e131e-163">As propriedades desse tipo de anexo são retornadas: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceattachment.md).</span><span class="sxs-lookup"><span data-stu-id="e131e-163">The properties of that type of attachment are returned: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceattachment.md).</span></span>
 
-<span data-ttu-id="56ee8-164">Se você estiver obtendo o conteúdo bruto de um anexo de arquivo ou de item, o corpo da resposta incluirá o valor bruto do anexo.</span><span class="sxs-lookup"><span data-stu-id="56ee8-164">If you're getting the raw contents of a file or item attachment, the response body includes the raw value of the attachment.</span></span>
+<span data-ttu-id="e131e-164">Se você estiver obtendo o conteúdo bruto de um anexo de arquivo ou de item, o corpo da resposta incluirá o valor bruto do anexo.</span><span class="sxs-lookup"><span data-stu-id="e131e-164">If you're getting the raw contents of a file or item attachment, the response body includes the raw value of the attachment.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="56ee8-165">Exemplos</span><span class="sxs-lookup"><span data-stu-id="56ee8-165">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e131e-165">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e131e-165">Examples</span></span>
 
-### <a name="example-1-get-the-properties-of-a-file-attachment"></a><span data-ttu-id="56ee8-166">Exemplo 1: Obter as propriedades de um anexo de arquivo</span><span class="sxs-lookup"><span data-stu-id="56ee8-166">Example 1: Get the properties of a file attachment</span></span>
+### <a name="example-1-get-the-properties-of-a-file-attachment"></a><span data-ttu-id="e131e-166">Exemplo 1: Obter as propriedades de um anexo de arquivo</span><span class="sxs-lookup"><span data-stu-id="e131e-166">Example 1: Get the properties of a file attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56ee8-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e131e-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-167">Request</span></span>
 
-<span data-ttu-id="56ee8-168">Aqui está um exemplo da solicitação para obter as propriedades de um anexo de arquivo em uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="56ee8-168">Here is an example of the request to get the properties of a file attachment on a message.</span></span>
+<span data-ttu-id="e131e-168">Aqui está um exemplo da solicitação para obter as propriedades de um anexo de arquivo em uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="e131e-168">Here is an example of the request to get the properties of a file attachment on a message.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="56ee8-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="56ee8-169">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e131e-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="e131e-169">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment_beta",
@@ -173,24 +173,24 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
-# <a name="c"></a>[<span data-ttu-id="56ee8-170">C#</span><span class="sxs-lookup"><span data-stu-id="56ee8-170">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e131e-170">C#</span><span class="sxs-lookup"><span data-stu-id="e131e-170">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="56ee8-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56ee8-171">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e131e-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e131e-171">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-file-attachment-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="56ee8-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56ee8-172">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e131e-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e131e-172">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="56ee8-173">Resposta</span><span class="sxs-lookup"><span data-stu-id="56ee8-173">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e131e-173">Resposta</span><span class="sxs-lookup"><span data-stu-id="e131e-173">Response</span></span>
 
-<span data-ttu-id="56ee8-p109">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="56ee8-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="e131e-p109">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e131e-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_beta",
@@ -217,13 +217,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-item-attachment"></a><span data-ttu-id="56ee8-177">Exemplo 2: Obter as propriedades de um anexo de item</span><span class="sxs-lookup"><span data-stu-id="56ee8-177">Example 2: Get the properties of an item attachment</span></span>
+### <a name="example-2-get-the-properties-of-an-item-attachment"></a><span data-ttu-id="e131e-177">Exemplo 2: Obter as propriedades de um anexo de item</span><span class="sxs-lookup"><span data-stu-id="e131e-177">Example 2: Get the properties of an item attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56ee8-178">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-178">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e131e-178">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-178">Request</span></span>
 
-<span data-ttu-id="56ee8-179">O próximo exemplo mostra como obter um anexo de item em uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="56ee8-179">The next example shows how to get an item attachment on a message.</span></span> <span data-ttu-id="56ee8-180">As propriedades de **itemAttachment** são retornadas.</span><span class="sxs-lookup"><span data-stu-id="56ee8-180">The properties of the **itemAttachment** are returned.</span></span>
+<span data-ttu-id="e131e-179">O próximo exemplo mostra como obter um anexo de item em uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="e131e-179">The next example shows how to get an item attachment on a message.</span></span> <span data-ttu-id="e131e-180">As propriedades de **itemAttachment** são retornadas.</span><span class="sxs-lookup"><span data-stu-id="e131e-180">The properties of the **itemAttachment** are returned.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="56ee8-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="56ee8-181">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e131e-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="e131e-181">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment",
@@ -233,23 +233,23 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
-# <a name="c"></a>[<span data-ttu-id="56ee8-182">C#</span><span class="sxs-lookup"><span data-stu-id="56ee8-182">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e131e-182">C#</span><span class="sxs-lookup"><span data-stu-id="e131e-182">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="56ee8-183">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56ee8-183">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e131e-183">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e131e-183">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="56ee8-184">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56ee8-184">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e131e-184">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e131e-184">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="56ee8-185">Resposta</span><span class="sxs-lookup"><span data-stu-id="56ee8-185">Response</span></span>
-<span data-ttu-id="56ee8-p111">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="56ee8-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="e131e-185">Resposta</span><span class="sxs-lookup"><span data-stu-id="e131e-185">Response</span></span>
+<span data-ttu-id="e131e-p111">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e131e-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_item_attachment",
@@ -273,12 +273,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a><span data-ttu-id="56ee8-189">Exemplo 3: Expandir e obter as propriedades do item anexado a uma mensagem</span><span class="sxs-lookup"><span data-stu-id="56ee8-189">Example 3: Expand and get the properties of the item attached to a message</span></span>
-#### <a name="request"></a><span data-ttu-id="56ee8-190">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-190">Request</span></span>
+### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a><span data-ttu-id="e131e-189">Exemplo 3: Expandir e obter as propriedades do item anexado a uma mensagem</span><span class="sxs-lookup"><span data-stu-id="e131e-189">Example 3: Expand and get the properties of the item attached to a message</span></span>
+#### <a name="request"></a><span data-ttu-id="e131e-190">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-190">Request</span></span>
 
-<span data-ttu-id="56ee8-191">O próximo exemplo mostra como usar `$expand` para obter as propriedades do item (contato, evento ou mensagem) anexado à mensagem.</span><span class="sxs-lookup"><span data-stu-id="56ee8-191">The next example shows how to use `$expand` to get the properties of the item (contact, event, or message) that is attached to the message.</span></span> <span data-ttu-id="56ee8-192">Neste exemplo, esse item é uma mensagem. As propriedades dessa mensagem anexadas também são retornadas.</span><span class="sxs-lookup"><span data-stu-id="56ee8-192">In this example, that item is a message; the properties of that attached message are also returned.</span></span>
+<span data-ttu-id="e131e-191">O próximo exemplo mostra como usar `$expand` para obter as propriedades do item (contato, evento ou mensagem) anexado à mensagem.</span><span class="sxs-lookup"><span data-stu-id="e131e-191">The next example shows how to use `$expand` to get the properties of the item (contact, event, or message) that is attached to the message.</span></span> <span data-ttu-id="e131e-192">Neste exemplo, esse item é uma mensagem. As propriedades dessa mensagem anexadas também são retornadas.</span><span class="sxs-lookup"><span data-stu-id="e131e-192">In this example, that item is a message; the properties of that attached message are also returned.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="56ee8-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="56ee8-193">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e131e-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="e131e-193">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_and_expand_item_attachment",
@@ -288,23 +288,23 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
-# <a name="c"></a>[<span data-ttu-id="56ee8-194">C#</span><span class="sxs-lookup"><span data-stu-id="56ee8-194">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e131e-194">C#</span><span class="sxs-lookup"><span data-stu-id="e131e-194">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-and-expand-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="56ee8-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56ee8-195">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e131e-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e131e-195">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-and-expand-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="56ee8-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56ee8-196">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e131e-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e131e-196">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-and-expand-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="56ee8-197">Resposta</span><span class="sxs-lookup"><span data-stu-id="56ee8-197">Response</span></span>
-<span data-ttu-id="56ee8-p113">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="56ee8-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="e131e-197">Resposta</span><span class="sxs-lookup"><span data-stu-id="e131e-197">Response</span></span>
+<span data-ttu-id="e131e-p113">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e131e-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_and_expand_item_attachment",
@@ -383,13 +383,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-a-reference-attachment"></a><span data-ttu-id="56ee8-201">Exemplo 4: Obter as propriedades de um anexo de referência</span><span class="sxs-lookup"><span data-stu-id="56ee8-201">Example 4: Get the properties of a reference attachment</span></span>
+### <a name="example-4-get-the-properties-of-a-reference-attachment"></a><span data-ttu-id="e131e-201">Exemplo 4: Obter as propriedades de um anexo de referência</span><span class="sxs-lookup"><span data-stu-id="e131e-201">Example 4: Get the properties of a reference attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56ee8-202">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-202">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e131e-202">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-202">Request</span></span>
 
-<span data-ttu-id="56ee8-203">Aqui está um exemplo da solicitação para obter um anexo de referência em um evento.</span><span class="sxs-lookup"><span data-stu-id="56ee8-203">Here is an example of the request to get a reference attachment on an event.</span></span>
+<span data-ttu-id="e131e-203">Aqui está um exemplo da solicitação para obter um anexo de referência em um evento.</span><span class="sxs-lookup"><span data-stu-id="e131e-203">Here is an example of the request to get a reference attachment on an event.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="56ee8-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="56ee8-204">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e131e-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="e131e-204">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment",
@@ -399,23 +399,23 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
-# <a name="c"></a>[<span data-ttu-id="56ee8-205">C#</span><span class="sxs-lookup"><span data-stu-id="56ee8-205">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e131e-205">C#</span><span class="sxs-lookup"><span data-stu-id="e131e-205">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-reference-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="56ee8-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56ee8-206">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e131e-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e131e-206">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-reference-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="56ee8-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56ee8-207">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e131e-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e131e-207">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reference-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="56ee8-208">Resposta</span><span class="sxs-lookup"><span data-stu-id="56ee8-208">Response</span></span>
-<span data-ttu-id="56ee8-p114">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="56ee8-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="e131e-208">Resposta</span><span class="sxs-lookup"><span data-stu-id="e131e-208">Response</span></span>
+<span data-ttu-id="e131e-p114">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e131e-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -446,11 +446,11 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a><span data-ttu-id="56ee8-212">Exemplo 5: Obter o conteúdo bruto de um anexo de arquivo em uma mensagem</span><span class="sxs-lookup"><span data-stu-id="56ee8-212">Example 5: Get the raw contents of a file attachment on a message</span></span>
+### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a><span data-ttu-id="e131e-212">Exemplo 5: Obter o conteúdo bruto de um anexo de arquivo em uma mensagem</span><span class="sxs-lookup"><span data-stu-id="e131e-212">Example 5: Get the raw contents of a file attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56ee8-213">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-213">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e131e-213">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-213">Request</span></span>
 
-<span data-ttu-id="56ee8-214">Aqui está um exemplo da solicitação para obter o conteúdo bruto de um arquivo do Word que foi anexado a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="56ee8-214">Here is an example of the request to get the raw contents of a Word file that has been attached to a message.</span></span>
+<span data-ttu-id="e131e-214">Aqui está um exemplo da solicitação para obter o conteúdo bruto de um arquivo do Word que foi anexado a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="e131e-214">Here is an example of the request to get the raw contents of a Word file that has been attached to a message.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_value_file_attachment",
@@ -461,8 +461,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="56ee8-215">Resposta</span><span class="sxs-lookup"><span data-stu-id="56ee8-215">Response</span></span>
-<span data-ttu-id="56ee8-216">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="56ee8-216">Here is an example of the response.</span></span> <span data-ttu-id="56ee8-217">O corpo da resposta real inclui os bytes brutos do anexo do arquivo, que são abreviados aqui por questões de brevidade.</span><span class="sxs-lookup"><span data-stu-id="56ee8-217">The actual response body includes the raw bytes of the file attachment, which are abbreviated here for brevity.</span></span>
+#### <a name="response"></a><span data-ttu-id="e131e-215">Resposta</span><span class="sxs-lookup"><span data-stu-id="e131e-215">Response</span></span>
+<span data-ttu-id="e131e-216">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e131e-216">Here is an example of the response.</span></span> <span data-ttu-id="e131e-217">O corpo da resposta real inclui os bytes brutos do anexo do arquivo, que são abreviados aqui por questões de brevidade.</span><span class="sxs-lookup"><span data-stu-id="e131e-217">The actual response body includes the raw bytes of the file attachment, which are abbreviated here for brevity.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -477,11 +477,11 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a><span data-ttu-id="56ee8-218">Exemplo 6: obter o conteúdo bruto MIME de um anexo de contato em uma mensagem</span><span class="sxs-lookup"><span data-stu-id="56ee8-218">Example 6: Get the MIME raw contents of a contact attachment on a message</span></span>
+### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a><span data-ttu-id="e131e-218">Exemplo 6: obter o conteúdo bruto MIME de um anexo de contato em uma mensagem</span><span class="sxs-lookup"><span data-stu-id="e131e-218">Example 6: Get the MIME raw contents of a contact attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56ee8-219">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-219">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e131e-219">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-219">Request</span></span>
 
-<span data-ttu-id="56ee8-220">Aqui está um exemplo da solicitação para obter o conteúdo bruto de um item de contato que foi anexado a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="56ee8-220">Here is an example of the request to get the raw contents of a contact item that has been attached to a message.</span></span> 
+<span data-ttu-id="e131e-220">Aqui está um exemplo da solicitação para obter o conteúdo bruto de um item de contato que foi anexado a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="e131e-220">Here is an example of the request to get the raw contents of a contact item that has been attached to a message.</span></span> 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_contact_attachment",
@@ -492,8 +492,8 @@ HTTP/1.1 200 OK
 GET https://graph.microsoft.com/beta/me/messages/AAMkADI5MAAGjk2PxAAA=/attachments/AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="56ee8-221">Resposta</span><span class="sxs-lookup"><span data-stu-id="56ee8-221">Response</span></span>
-<span data-ttu-id="56ee8-222">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="56ee8-222">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="e131e-221">Resposta</span><span class="sxs-lookup"><span data-stu-id="e131e-221">Response</span></span>
+<span data-ttu-id="e131e-222">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e131e-222">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "ignored",
@@ -526,11 +526,11 @@ END:VCARD
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a><span data-ttu-id="56ee8-223">Exemplo 7: Obter o conteúdo bruto MIME de um anexo de evento em uma mensagem</span><span class="sxs-lookup"><span data-stu-id="56ee8-223">Example 7: Get the MIME raw contents of an event attachment on a message</span></span>
+### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a><span data-ttu-id="e131e-223">Exemplo 7: Obter o conteúdo bruto MIME de um anexo de evento em uma mensagem</span><span class="sxs-lookup"><span data-stu-id="e131e-223">Example 7: Get the MIME raw contents of an event attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56ee8-224">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-224">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e131e-224">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-224">Request</span></span>
 
-<span data-ttu-id="56ee8-225">Aqui está um exemplo da solicitação para obter o conteúdo bruto de um evento que foi anexado a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="56ee8-225">Here is an example of the request to get the raw contents of an event that has been attached to a message.</span></span> 
+<span data-ttu-id="e131e-225">Aqui está um exemplo da solicitação para obter o conteúdo bruto de um evento que foi anexado a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="e131e-225">Here is an example of the request to get the raw contents of an event that has been attached to a message.</span></span> 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_event_attachment",
@@ -541,8 +541,8 @@ END:VCARD
 GET https://graph.microsoft.com/beta/me/messages/AAMkADVIOAAA=/attachments/AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="56ee8-226">Resposta</span><span class="sxs-lookup"><span data-stu-id="56ee8-226">Response</span></span>
-<span data-ttu-id="56ee8-227">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="56ee8-227">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="e131e-226">Resposta</span><span class="sxs-lookup"><span data-stu-id="e131e-226">Response</span></span>
+<span data-ttu-id="e131e-227">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e131e-227">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "ignored",
@@ -606,11 +606,11 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a><span data-ttu-id="56ee8-228">Exemplo 8: Obter o conteúdo bruto MIME de um anexo de item de convite de reunião em uma mensagem</span><span class="sxs-lookup"><span data-stu-id="56ee8-228">Example 8: Get the MIME raw contents of a meeting invitation item attachment on a message</span></span>
+### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a><span data-ttu-id="e131e-228">Exemplo 8: Obter o conteúdo bruto MIME de um anexo de item de convite de reunião em uma mensagem</span><span class="sxs-lookup"><span data-stu-id="e131e-228">Example 8: Get the MIME raw contents of a meeting invitation item attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56ee8-229">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56ee8-229">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e131e-229">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e131e-229">Request</span></span>
 
-<span data-ttu-id="56ee8-230">Aqui está um exemplo da solicitação para obter o conteúdo bruto de um convite para reunião (do tipo [eventMessage](../resources/eventmessage.md)) que foi anexado a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="56ee8-230">Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message.</span></span> <span data-ttu-id="56ee8-231">A entidade **eventMessage** é baseada no tipo de **mensagem**.</span><span class="sxs-lookup"><span data-stu-id="56ee8-231">The **eventMessage** entity is based on the **message** type.</span></span>
+<span data-ttu-id="e131e-230">Aqui está um exemplo da solicitação para obter o conteúdo bruto de um convite para reunião (do tipo [eventMessage](../resources/eventmessage.md)) que foi anexado a uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="e131e-230">Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message.</span></span> <span data-ttu-id="e131e-231">A entidade **eventMessage** é baseada no tipo de **mensagem**.</span><span class="sxs-lookup"><span data-stu-id="e131e-231">The **eventMessage** entity is based on the **message** type.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -621,10 +621,10 @@ END:VCALENDAR
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="56ee8-232">Resposta</span><span class="sxs-lookup"><span data-stu-id="56ee8-232">Response</span></span>
-<span data-ttu-id="56ee8-233">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="56ee8-233">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="e131e-232">Resposta</span><span class="sxs-lookup"><span data-stu-id="e131e-232">Response</span></span>
+<span data-ttu-id="e131e-233">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e131e-233">Here is an example of the response.</span></span> 
 
-<span data-ttu-id="56ee8-234">O corpo da resposta inclui o anexo **eventMessage** no formato MIME.</span><span class="sxs-lookup"><span data-stu-id="56ee8-234">The response body includes the **eventMessage** attachment in MIME format.</span></span> <span data-ttu-id="56ee8-235">O corpo do **eventMessage** é truncado por questões de brevidade.</span><span class="sxs-lookup"><span data-stu-id="56ee8-235">The body of the  **eventMessage** is truncated for brevity.</span></span> <span data-ttu-id="56ee8-236">O corpo completo da mensagem é retornado de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="56ee8-236">The full message body is returned from an actual call.</span></span>
+<span data-ttu-id="e131e-234">O corpo da resposta inclui o anexo **eventMessage** no formato MIME.</span><span class="sxs-lookup"><span data-stu-id="e131e-234">The response body includes the **eventMessage** attachment in MIME format.</span></span> <span data-ttu-id="e131e-235">O corpo do **eventMessage** é truncado por questões de brevidade.</span><span class="sxs-lookup"><span data-stu-id="e131e-235">The body of the  **eventMessage** is truncated for brevity.</span></span> <span data-ttu-id="e131e-236">O corpo completo da mensagem é retornado de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e131e-236">The full message body is returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
