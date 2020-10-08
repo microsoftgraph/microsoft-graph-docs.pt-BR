@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a7e59a888d3c27d17939095cd7921009dff3d99c
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 67d1d8efeb06c58d6628d0d7b922b3f16e8be1be
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "48315266"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374035"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
-NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
