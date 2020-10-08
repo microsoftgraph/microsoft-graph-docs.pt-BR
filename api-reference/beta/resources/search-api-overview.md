@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d4d88f772ec6291a35c19bd30a63ee90cd0ca989
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 50eaec75b6980245bf8807d1006a3556f14ce444
+ms.sourcegitcommit: 258974d689cb8f04ff542ec8bc5fe5793da5cc05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373885"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48385818"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -133,7 +133,7 @@ Confira [classificar resultados de pesquisa](/graph/search-concept-sort) para ob
 
 As agregações (também conhecidas como refinadores no SharePoint) são uma maneira muito popular de melhorar a experiência de pesquisa. Além dos resultados, eles fornecem algum nível de informações agregadas no conjunto de resultados de pesquisa. Por exemplo, você pode fornecer informações sobre os autores mais representados dos documentos correspondentes à consulta, ou os tipos de arquivo mais representados, etc.
 
-Na[searchRequest](./searchrequest.md), especifique as agregações que devem ser retornadas além dos resultados da pesquisa. A descrição de cada agregação é definida na[aggregationOption](./aggregationoption.md), que especifica a propriedade na qual a agregação deve ser calculada, e a quantidade de [searchBucket](searchBucket.md) a ser retornada na resposta.
+Na[searchRequest](./searchrequest.md), especifique as agregações que devem ser retornadas além dos resultados da pesquisa. A descrição de cada agregação é definida na[aggregationOption](./aggregationoption.md), que especifica a propriedade na qual a agregação deve ser calculada, e o número de [searchBucket](searchBucket.md) a ser retornado na resposta.
 
 As propriedades nas quais a agregação é solicitada devem ser refináveis no [esquema de pesquisa](https://docs.microsoft.com/sharepoint/manage-search-schema) do SharePoint. Se a propriedade especificada não for refinável ou não existir, a resposta retornará `HTTP 400 Bad Request`.
 
