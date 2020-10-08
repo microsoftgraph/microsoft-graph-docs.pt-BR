@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aaf131b219606291f829836e6e7a860d3dbbec39
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7a8e738cf6a6bd3a5b4331bd1c6cfb467303cf3
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057483"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373969"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 | displayName | string | O nome para exibição no catálogo de endereços do grupo. Comprimento máximo: 256 caracteres. Obrigatório. |
 | description | string | Uma descrição para o grupo. Máx. comprimento: 1024 caracteres. Opcional. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Obrigatório. |
-| mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Obrigatório. |
+| mailNickname | string | O alias de email do grupo. Máx. comprimento: 64 caracteres. Esses caracteres não podem ser usados no mailNickName: `@()\[]";:.<>,SPACE`. Obrigatório. |
 | securityEnabled | booliano | Defina como **true** para grupos habilitados para segurança, incluindo grupos do Microsoft 365. Obrigatório. |
 | owners | coleção de cadeias de caracteres | Esta propriedade representa os proprietários do grupo na hora de criação. Opcional. |
 | membros | coleção de cadeias de caracteres | Esta propriedade representa os membros do grupo na hora de criação. Opcional. |

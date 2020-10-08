@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7420d86c860e0e521e0045556f2901e536f8544d
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 503a66f948b918f83feefa3e2533dc966477569a
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "48315264"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374022"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var team = new Team
     Description = "My Class Team’s Description",
     AdditionalData = new Dictionary<string, object>()
     {
-        {"template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('educationClass')"}
+        {"template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"}
     }
 };
 
