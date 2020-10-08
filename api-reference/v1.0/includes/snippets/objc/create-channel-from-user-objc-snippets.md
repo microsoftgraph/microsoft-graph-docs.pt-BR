@@ -1,25 +1,32 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2c12ca59bee870ac31067da86aa4e385315a4e25
+ms.openlocfilehash: 84701c1662213f286dea2623ecb0a6dcb4489022
 ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373441"
+ms.locfileid: "48373455"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{id}/channels"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{group_id}/channels"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphChannel *channel = [[MSGraphChannel alloc] init];
-[channel setDisplayName:@"Architecture Discussion"];
-[channel setDescription:@"This channel is where we debate all future architecture plans"];
-[channel setMembershipType: [MSGraphChannelMembershipType standard]];
+[channel setMembershipType: [MSGraphChannelMembershipType private]];
+[channel setDisplayName:@"My First Private Channel"];
+[channel setDescription:@"This is my first private channels"];
+NSMutableArray *membersList = [[NSMutableArray alloc] init];
+MSGraphConversationMember *members = [[MSGraphConversationMember alloc] init];
+NSMutableArray *rolesList = [[NSMutableArray alloc] init];
+[rolesList addObject: @"owner"];
+[members setRoles:rolesList];
+[membersList addObject: members];
+[channel setMembers:membersList];
 
 NSError *error;
 NSData *channelData = [channel getSerializedDataWithError:&error];
