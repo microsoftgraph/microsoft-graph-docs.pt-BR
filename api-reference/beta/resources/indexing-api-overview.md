@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 7c33683c812b469a5a6185fc249a892868c0ef2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4940e2529a08f326f5e8615987e18488a5a2dbeb
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016545"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403868"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>Usar a API de Pesquisa da Microsoft para indexar dados
 
@@ -40,7 +40,7 @@ Os casos de uso das APIs nesta seção tratam da criação de [conectores do Mic
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-Os seguintes são limitações conhecidas atuais:
+A seguir estão as limitações conhecidas atuais:
 
 - As organizações estão limitadas a um máximo de 10 conexões.
 - Somente as identidades do Azure Active Directory são compatíveis.

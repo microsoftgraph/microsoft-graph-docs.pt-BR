@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 2f46ce59ac8fa3bbb0eb7476e889bbda8d9ff8de
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: ad3675a64043f6772a56cd981d02067df828752a
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364213"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401565"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1368,6 +1368,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.ReadWrite.ConditionalAccess_ | Ler e gravar as políticas de acesso condicional da sua organização | Permite que o aplicativo leia e grave todas as políticas de acesso condicional em nome do usuário conectado. | Sim | Não |
 | _Policy.ReadWrite.FeatureRollout_ | Ler e gravar as políticas de implantação de novos recursos da sua organização | Permite que o aplicativo leia e grave todas as políticas de implantação de novos recursos em nome do usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim | Não |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas TrustFramework (Estrutura de Confiança) da sua organização | Permite que o aplicativo leia e grave todas as políticas de TrustFramework da sua organização em nome do usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.AuthenticationMethod_ | Ler e gravar as políticas de método de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas do método de autenticação, em nome do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1379,6 +1380,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Policy.ReadWrite.Authorization_ | Ler e gravar a política de autorização da sua organização | Permite que o aplicativo leia e grave a política de autorização da sua organização, em nome do usuário conectado.  Por exemplo, as políticas de autorização podem controlar algumas das permissões que a função do usuário pronto tem por padrão. | Sim | Não |
 | _Policy.ReadWrite.FeatureRollout_ | Políticas de distribuição de recursos de leitura e gravação | Permite que o aplicativo leia e grave todas as políticas de distribuição de recursos sem um usuário conectado. Inclui habilidades para atribuir e remover usuários e grupos para a implantação de um recurso específico. | Sim |
 | _Policy.ReadWrite.TrustFramework_ | Ler e gravar as políticas da estrutura de confiança da sua organização | Permite que o aplicativo leia e grave todas as políticas da estrutura de confiança da sua organização sem um usuário conectado. | Sim |
+| _Policy.ReadWrite.AuthenticationMethod_ | Ler e gravar as políticas de método de autenticação da sua organização | Permite que o aplicativo leia e grave as políticas do método de autenticação, em nome do usuário conectado. | Sim |
 
 ### <a name="example-usage"></a>Exemplo de uso
 

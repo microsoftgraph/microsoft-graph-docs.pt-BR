@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7c4e1e5280843ae6fd1913ca69b093c9de1dab0f
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: f64cc64ee2d14b4967d36e35513b54c86820750d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48374354"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404944"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -40,27 +40,29 @@ Esse recurso permite:
 | [Atualizar grupo](../api/group-update.md) | Nenhum | Atualizar as propriedades de um objeto group. |
 | [Excluir grupo](../api/group-delete.md) | Nenhum | Excluir um objeto group. |
 | [delta](../api/group-delta.md) | Coleção group | Obter alterações incrementais para grupos. |
-| [Listar groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md) | Listar políticas de ciclo de vida de grupo. |
-| [Renovar](../api/group-renew.md) | Booliano | Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política. |
-| [Adicionar proprietário](../api/group-post-owners.md) | Nenhum | Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
-| [Listar proprietários](../api/group-list-owners.md) | Coleção [directoryObject](directoryobject.md) | Obter os proprietários do grupo da propriedade de navegação **owners**. |
-| [Remover proprietário](../api/group-delete-owners.md) | Nenhum | Remover um proprietário de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **owners**. |
 | [Adicionar membro](../api/group-post-members.md) | Nenhum | Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
+| [Adicionar proprietário](../api/group-post-owners.md) | Nenhum | Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
+| [Criar configuração](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação. |
+| [Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
+| [Obter o ponto de extremidade](../api/endpoint-get.md) | [ponto de extremidade](endpoint.md) | Leia as propriedades e os relacionamentos do objeto ponto de extremidade. |
+| [Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
+| [Listar pontos de extremidade](../api/group-list-endpoints.md) | conjunto [ponto de extremidade](endpoint.md)  | Obtenha uma coleção de o objeto ponto de extremidade. |
+| [Listar groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md) | Listar políticas de ciclo de vida de grupo. |
 | [Listar membros](../api/group-list-members.md) | Coleção [directoryObject](directoryobject.md) | Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**. |
+| [Listar proprietários](../api/group-list-owners.md) | Coleção [directoryObject](directoryobject.md) | Obter os proprietários do grupo da propriedade de navegação **owners**. |
+| [Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 | [Listar membros transitivos](../api/group-list-transitivemembers.md) | Coleção [directoryObject](directoryobject.md) | Obtenha os usuários, grupos e dispositivos que são membros, inclusive membros aninhados desse grupo. |
 | [Listar memberOf transitivos](../api/group-list-transitivememberof.md) | Coleção [directoryObject](directoryobject.md) | Lista os grupos dos quais esse grupo é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
 | [Remover membro](../api/group-delete-members.md) | Nenhum | Remover um membro de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
+| [Remover proprietário](../api/group-delete-owners.md) | Nenhum | Remover um proprietário de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **owners**. |
+| [Atualizar configuração](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Atualizar um objeto setting. |
+| [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Adicione ou remova assinaturas para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
 | [checkMemberGroups](../api/group-checkmembergroups.md) | Coleção de cadeias de caracteres | Verificar esse grupo quanto a uma associação em uma lista de grupos. Essa função é transitiva. |
 | [checkMemberObjects](../api/group-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva. |
 | [getMemberGroups](../api/group-getmembergroups.md) | Coleção de cadeias de caracteres | Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva. |
 | [getMemberObjects](../api/group-getmemberobjects.md) | Coleção de cadeias de caracteres | Retornar todos os grupos dos quais o grupo é um membro. Essa função é transitiva. |
-| [Criar configuração](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação. |
-| [Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
-| [Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
-| [Atualizar configuração](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Atualizar um objeto de configuração. |
-| [Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
-| [validateProperties](../api/group-validateproperties.md) | JSON | Validar se o nome de exibição de um grupo do Microsoft 365 ou apelido de email está em conformidade com as políticas de nomenclatura. |
-| [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Adicione ou remova assinaturas para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
+| [renovar](../api/group-renew.md) | Booleano | Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política. |
+| [validateProperties](../api/group-validateproperties.md) | JSON | Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura. |
 | **Atribuição de funções do aplicativo** |||
 | [List appRoleAssignments](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Obter os aplicativos e funções do aplicativo atribuídos a esse grupo. |
 | [Adicionar uma atribuição de função do aplicativo](../api/group-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Atribuir uma função do aplicativo a esse grupo. |
