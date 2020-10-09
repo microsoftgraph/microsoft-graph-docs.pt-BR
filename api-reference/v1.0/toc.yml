@@ -185,11 +185,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -405,11 +405,21 @@ items:
                 href: api/planneruser-list-tasks.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
             items:
+              - name: Listar grupos
+                href: api/group-list.md
+              - name: Criar grupo
+                href: api/group-post-groups.md
+              - name: Obter grupo
+                href: api/group-get.md
+              - name: Atualizar grupo
+                href: api/group-update.md
+              - name: Excluir grupo
+                href: api/group-delete.md
               - name: Adicionar favorito
                 href: api/group-addfavorite.md
               - name: Adicionar membro
@@ -422,14 +432,10 @@ items:
                 href: api/group-checkmembergroups.md
               - name: Verificar objetos member
                 href: api/group-checkmemberobjects.md
-              - name: Criar grupo
-                href: api/group-post-groups.md
-              - name: Excluir grupo
-                href: api/group-delete.md
-              - name: Obter delta
+              - name: Obter intervalo
                 href: api/group-delta.md
-              - name: Obter grupo
-                href: api/group-get.md
+              - name: Obter o ponto de extremidade
+                href: api/endpoint-get.md
               - name: Obter grupos de membros
                 href: api/group-getmembergroups.md
               - name: Obter objetos de membros
@@ -454,8 +460,8 @@ items:
                     href: api/groupsettingtemplate-list.md
                   - name: Obter modelo de configuração de grupo
                     href: api/groupsettingtemplate-get.md
-              - name: Listar grupos
-                href: api/group-list.md
+              - name: Listar pontos de extremidade
+                href: api/group-list-endpoints.md
               - name: Listar políticas de ciclo de vida
                 href: api/group-list-grouplifecyclepolicies.md
               - name: Listar membro de
@@ -470,8 +476,6 @@ items:
                 href: api/group-list-owners.md
               - name: Listar fotos
                 href: api/group-list-photos.md
-              - name: Atualizar grupo
-                href: api/group-update.md
               - name: Remover favorito
                 href: api/group-removefavorite.md
               - name: Remover membro
@@ -603,7 +607,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1006,7 +1010,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1116,7 +1120,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1170,7 +1174,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3560,7 +3564,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4197,7 +4201,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4308,7 +4312,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4398,7 +4402,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4651,7 +4655,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -4690,7 +4694,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4736,9 +4740,9 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano

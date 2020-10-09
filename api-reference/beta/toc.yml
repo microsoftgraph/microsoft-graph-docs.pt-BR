@@ -1,7 +1,7 @@
 name: Referência
 items:
   - name: Visão geral do Microsoft Graph
-    href: /graph/overview
+    href: ./overview.md
   - name: Obter tokens de autenticação
     items:
       - name: Visão geral
@@ -77,7 +77,7 @@ items:
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: Visão geral
-            href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
+            href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252fbeta
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
           - name: '1: Examinar as diferenças'
@@ -187,11 +187,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -464,11 +464,21 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
             items:
+              - name: Listar grupos
+                href: api/group-list.md
+              - name: Criar grupo
+                href: api/group-post-groups.md
+              - name: Obter grupo
+                href: api/group-get.md
+              - name: Atualizar grupo
+                href: api/group-update.md
+              - name: Excluir grupo
+                href: api/group-delete.md
               - name: Adicionar favorito
                 href: api/group-addfavorite.md
               - name: Adicionar membro
@@ -479,26 +489,22 @@ items:
                 href: api/group-assignlicense.md
               - name: Verificar grupos de membros
                 href: api/group-checkmembergroups.md
-              - name: Criar grupo
-                href: api/group-post-groups.md
-              - name: Excluir grupo
-                href: api/group-delete.md
               - name: Avaliar associação dinâmica
                 href: api/group-evaluatedynamicmembership.md
               - name: Obter grupo excluído
                 href: api/directory-deleteditems-get.md
               - name: Obter intervalo
                 href: api/group-delta.md
-              - name: Obter grupo
-                href: api/group-get.md
+              - name: Obter o ponto de extremidade
+                href: api/endpoint-get.md
               - name: Obter grupos de membros
                 href: api/group-getmembergroups.md
               - name: Obter objetos de membros
                 href: api/group-getmemberobjects.md
               - name: Listar grupos excluídos
                 href: api/directory-deleteditems-list.md
-              - name: Listar grupos
-                href: api/group-list.md
+              - name: Listar pontos de extremidade
+                href: api/group-list-endpoints.md
               - name: Listar equipes unidas
                 href: api/user-list-joinedteams.md
               - name: Listar políticas de ciclo de vida
@@ -531,8 +537,6 @@ items:
                 href: api/group-subscribebymail.md
               - name: Cancelar assinatura por email
                 href: api/group-unsubscribebymail.md
-              - name: Atualizar grupo
-                href: api/group-update.md
               - name: Validar propriedades
                 href: api/group-validateproperties.md
           - name: Atribuição de funções do aplicativo
@@ -635,7 +639,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1221,7 +1225,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1350,7 +1354,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1399,11 +1403,11 @@ items:
       - name: Conformidade (visualização)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
-          - name: Descoberta eletrônica
+          - name: Descoberta Eletrônica
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscoverycase.md
@@ -1477,7 +1481,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -9317,7 +9321,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9411,7 +9415,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -9885,6 +9889,46 @@ items:
                         href: api/subscribedsku-list.md
                       - name: Obter subscribedSku
                         href: api/subscribedsku-get.md
+              - name: Gerenciamento de função
+                href: resources/rolemanagement.md
+                items:
+                  - name: Definição de função
+                    href: resources/unifiedroledefinition.md
+                    items:
+                      - name: Listar definições de função
+                        href: api/rbacapplication-list-roledefinitions.md
+                      - name: Criar definição de função
+                        href: api/rbacapplication-post-roledefinitions.md
+                      - name: Obter definição de função
+                        href: api/unifiedroledefinition-get.md
+                      - name: Atualizar definição de função
+                        href: api/unifiedroledefinition-update.md
+                      - name: Excluir definição de função
+                        href: api/unifiedroledefinition-delete.md
+                  - name: Atribuição de função
+                    href: resources/unifiedroleassignment.md
+                    items:
+                      - name: Atribuição de função de lista
+                        href: api/rbacapplication-list-roleassignments.md
+                      - name: Criar atribuição de função
+                        href: api/rbacapplication-post-roleassignments.md
+                      - name: Obter atribuição de função
+                        href: api/unifiedroleassignment-get.md
+                      - name: Excluir atribuição de função
+                        href: api/unifiedroleassignment-delete.md
+                  - name: Múltiplo de atribuição de função
+                    href: resources/unifiedroleassignmentmultiple.md
+                    items:
+                      - name: Listar
+                        href: api/unifiedroleassignmentmultiple-list.md
+                      - name: Criar
+                        href: api/unifiedroleassignmentmultiple-post.md
+                      - name: Obter
+                        href: api/unifiedroleassignmentmultiple-get.md
+                      - name: Atualizar
+                        href: api/unifiedroleassignmentmultiple-update.md
+                      - name: Excluir
+                        href: api/unifiedroleassignmentmultiple-delete.md
           - name: Identidade e entrada
             items:
               - name: Política de fluxos de autenticação
@@ -9898,43 +9942,51 @@ items:
                         href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Métodos de autenticação B2B
                     href: resources/authenticationmethods-overview.md
-                  - name: Método de autenticação
-                    href: resources/authenticationmethod.md
+                    item:
+                      - name: Método de autenticação
+                        href: resources/authenticationmethod.md
+                        items:
+                          - name: Listar
+                            href: api/authentication-list-methods.md
+                          - name: Obter
+                            href: api/authenticationmethod-get.md
+                      - name: Password
+                        href: resources/passwordauthenticationmethod.md
+                        items:
+                          - name: Listar
+                            href: api/authentication-list-passwordmethods.md
+                          - name: Obter
+                            href: api/passwordauthenticationmethod-get.md
+                          - name: Redefinir
+                            href: api/passwordauthenticationmethod-resetpassword.md
+                          - name: Obter status da operação
+                            href: api/authenticationoperation-get.md
+                      - name: Telefone
+                        href: resources/phoneauthenticationmethod.md
+                        items:
+                          - name: Listar
+                            href: api/authentication-list-phonemethods.md
+                          - name: Obter
+                            href: api/phoneauthenticationmethod-get.md
+                          - name: Atualizar
+                            href: api/phoneauthenticationmethod-update.md
+                          - name: Excluir
+                            href: api/phoneauthenticationmethod-delete.md
+                          - name: Adicionar
+                            href: api/authentication-post-phonemethods.md
+                          - name: Habilitar entrada do SMS
+                            href: api/phoneauthenticationmethod-enablesmssignin.md
+                          - name: Desabilitar entrada do SMS
+                            href: api/phoneauthenticationmethod-disablesmssignin.md
+                  - name: Métodos de autenticação B2C
+                    href: resources/b2cauthenticationmethodspolicy.md
                     items:
-                      - name: Listar
-                        href: api/authentication-list-methods.md
                       - name: Obter
-                        href: api/authenticationmethod-get.md
-                  - name: Senha
-                    href: resources/passwordauthenticationmethod.md
-                    items:
-                      - name: Listar
-                        href: api/authentication-list-passwordmethods.md
-                      - name: Obter
-                        href: api/passwordauthenticationmethod-get.md
-                      - name: Redefinir
-                        href: api/passwordauthenticationmethod-resetpassword.md
-                      - name: Obter status da operação
-                        href: api/authenticationoperation-get.md
-                  - name: Telefone
-                    href: resources/phoneauthenticationmethod.md
-                    items:
-                      - name: Listar
-                        href: api/authentication-list-phonemethods.md
-                      - name: Obter
-                        href: api/phoneauthenticationmethod-get.md
+                        href: api/b2cauthenticationmethodspolicy-get.md
                       - name: Atualizar
-                        href: api/phoneauthenticationmethod-update.md
-                      - name: Excluir
-                        href: api/phoneauthenticationmethod-delete.md
-                      - name: Adicionar
-                        href: api/authentication-post-phonemethods.md
-                      - name: Habilitar entrada do SMS
-                        href: api/phoneauthenticationmethod-enablesmssignin.md
-                      - name: Desabilitar entrada do SMS
-                        href: api/phoneauthenticationmethod-disablesmssignin.md
+                        href: api/b2cauthenticationmethodspolicy-update.md
               - name: Configuração de autenticação baseada em certificado
                 href: resources/certificatebasedauthconfiguration.md
                 items:
@@ -10199,46 +10251,6 @@ items:
                         href: api/continuousaccessevaluationpolicy-get.md
                       - name: Atualizar
                         href: api/continuousaccessevaluationpolicy-update.md
-              - name: Gerenciamento de função
-                href: resources/rolemanagement.md
-                items:
-                  - name: Definição de função
-                    href: resources/unifiedroledefinition.md
-                    items:
-                      - name: Listar definições de função
-                        href: api/rbacapplication-list-roledefinitions.md
-                      - name: Criar definição de função
-                        href: api/rbacapplication-post-roledefinitions.md
-                      - name: Obter definição de função
-                        href: api/unifiedroledefinition-get.md
-                      - name: Atualizar definição de função
-                        href: api/unifiedroledefinition-update.md
-                      - name: Excluir definição de função
-                        href: api/unifiedroledefinition-delete.md
-                  - name: Atribuição de função
-                    href: resources/unifiedroleassignment.md
-                    items:
-                      - name: Atribuição de função de lista
-                        href: api/rbacapplication-list-roleassignments.md
-                      - name: Criar atribuição de função
-                        href: api/rbacapplication-post-roleassignments.md
-                      - name: Obter atribuição de função
-                        href: api/unifiedroleassignment-get.md
-                      - name: Excluir atribuição de função
-                        href: api/unifiedroleassignment-delete.md
-                  - name: Múltiplo de atribuição de função
-                    href: resources/unifiedroleassignmentmultiple.md
-                    items:
-                      - name: Listar
-                        href: api/unifiedroleassignmentmultiple-list.md
-                      - name: Criar
-                        href: api/unifiedroleassignmentmultiple-post.md
-                      - name: Obter
-                        href: api/unifiedroleassignmentmultiple-get.md
-                      - name: Atualizar
-                        href: api/unifiedroleassignmentmultiple-update.md
-                      - name: Excluir
-                        href: api/unifiedroleassignmentmultiple-delete.md
               - name: Conjunto de chaves de estrutura de confiança
                 href: resources/trustframeworkkeyset.md
                 items:
@@ -10278,8 +10290,9 @@ items:
               - name: Fluxos de usuário
                 items:
                   - name: Fluxo de usuário
-                    href: resources/identityuserflow.md
                     items:
+                      - name: Fluxo de usuário
+                        href: resources/identityuserflow.md
                       - name: Listar
                         href: api/identityuserflow-list.md
                       - name: Criar
@@ -10289,39 +10302,41 @@ items:
                       - name: Excluir
                         href: api/identityuserflow-delete.md
                   - name: Fluxos de usuários do B2C
-                    href: resources/b2cuserflows.md
                     items:
+                      - name: Fluxo de usuários do B2C
+                        href: resources/b2cidentityuserflow.md
                       - name: Listar
-                        href: api/b2cuserflows-list.md
+                        href: api/identitycontainer-list-b2cuserflows.md
                       - name: Criar
-                        href: api/b2cuserflow-post-b2cuserflows.md
+                        href: api/identitycontainer-post-b2cuserflows.md
                       - name: Obter
-                        href: api/b2cuserflows-get.md
+                        href: api/b2cidentityuserflow-get.md
                       - name: Excluir
-                        href: api/b2cuserflows-get.md
+                        href: api/b2cidentityuserflow-delete.md
                       - name: Listar os provedores de identidade
-                        href: api/b2cuserflows-list-identityproviders.md
+                        href: api/b2cidentityuserflow-list-identityproviders.md
                       - name: Adicionar provedor de identidade
-                        href: api/b2cuserflows-update-identityprovider.md
-                      - name: Excluir o provedor de identidade
-                        href: api/b2cuserflows-delete-identityprovider.md
+                        href: api/b2cidentityuserflow-post-identityproviders.md
+                      - name: Remover provedor de identidade
+                        href: api/b2cidentityuserflow-delete-identityproviders.md
                   - name: Fluxos de usuário de inscrição de autoatendimento
-                    href: resources/b2xuserflows.md
                     items:
+                      - name: Fluxo de usuário do B2X
+                        href: resources/b2xidentityuserflow.md
                       - name: Listar
-                        href: api/b2xuserflows-list.md
+                        href: api/identitycontainer-list-b2xuserflows.md
                       - name: Criar
-                        href: api/b2xuserflow-post-b2xuserflows.md
+                        href: api/identitycontainer-post-b2xuserflows.md
                       - name: Obter
-                        href: api/b2xuserflows-get.md
+                        href: api/b2xidentityuserflow-get.md
                       - name: Excluir
-                        href: api/b2xuserflows-delete.md
+                        href: api/b2xidentityuserflow-delete.md
                       - name: Listar os provedores de identidade
-                        href: api/b2xuserflows-list-identityproviders.md
+                        href: api/b2xidentityuserflow-list-identityproviders.md
                       - name: Adicionar provedor de identidade
-                        href: api/b2xuserflows-update-identityprovider.md
-                      - name: Excluir o provedor de identidade
-                        href: api/b2xuserflows-delete-identityprovider.md
+                        href: api/b2xidentityuserflow-post-identityproviders.md
+                      - name: Remover provedor de identidade
+                        href: api/b2xidentityuserflow-delete-identityproviders.md
           - name: Governança
             items:
               - name: Avaliações do acesso
@@ -10791,7 +10806,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -10913,7 +10928,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -11343,7 +11358,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -11365,7 +11380,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -11388,7 +11403,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -11411,7 +11426,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -11435,7 +11450,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11647,7 +11662,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -11657,7 +11672,7 @@ items:
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -11763,7 +11778,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -11819,7 +11834,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -11938,9 +11953,9 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -12431,7 +12446,7 @@ items:
       - name: Tarefas To do (visualização)
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -12570,7 +12585,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:
