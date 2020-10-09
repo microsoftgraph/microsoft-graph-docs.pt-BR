@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c7c105dbf895d41b2e986a8fa723e0df314dd90d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa327935c4e3b45c28a0f7ae01ababeffe37d61d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057952"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405222"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>tipo de recurso unifiedRolePermission
 
@@ -91,8 +91,8 @@ Veja a seguir uma representação JSON do recurso.
 ```
 ## <a name="see-also"></a>Confira também
 
-- [Permissões de função de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) – para obter informações sobre permissões para funções de diretório internas.
-- [Subtipos de registro de aplicativo e permissões no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-custom-available-permissions) – para obter informações sobre permissões que estão disponíveis para funções de diretório personalizado. 
+- [Permissões de função de administrador no Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) – para obter informações sobre permissões para funções de diretório internas.
+- [Subtipos de registro de aplicativo e permissões no Azure Active Directory](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) – para obter informações sobre permissões que estão disponíveis para funções de diretório personalizado. 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -103,5 +103,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

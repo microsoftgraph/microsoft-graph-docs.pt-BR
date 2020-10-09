@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d14d477d3f2a7be94a676aafd17eee6ebf362925
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 06d72e1609d80f94d58829805bba6fc208fa9c48
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089025"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404802"
 ---
 # <a name="list-outlook-categories"></a>Listar categorias do Outlook
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | MailboxSettings.Read    |
+|Delegado (conta corporativa ou de estudante) | MailboxSettings.Read    |
 |Delegada (conta pessoal da Microsoft) | MailboxSettings.Read    |
 |Aplicativo | MailboxSettings.Read |
 
@@ -35,7 +35,7 @@ GET /me/outlook/masterCategories
 GET /users/{id|userPrincipalName}/outlook/masterCategories
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -139,4 +139,3 @@ Content-length: 727
   "suppressions": [
   ]
 }-->
-

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5f3074b34f59cef66568bf685c225fb551ba2a1a
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: 48cc5a44ffca20b435d9095d7f25fd5bfa65b4e8
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364340"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405537"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -30,7 +30,7 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |[Criar equipe a partir do grupo](../api/team-put-teams.md) | [team](team.md) | Crie uma nova equipe ou adicione uma equipe a um grupo existente.|
 |[Obter equipe](../api/team-get.md) | [team](team.md) | Recupere as propriedades e relações da equipe especificada.|
 |[Atualizar equipe](../api/team-update.md) | [team](team.md) |Atualize as propriedades da equipe especificada. |
-|[Excluir equipe](/graph/api/group-delete?view=graph-rest-1.0&preserve-view=true) | Nenhum |Exclua a equipe e o grupo associado. |
+|[Excluir equipe](../api/group-delete.md) | Nenhum |Exclua a equipe e o grupo associado. |
 |[Listar membros](../api/team-list-members.md)|coleção [conversationMember](../resources/conversationmember.md)|Obtenha o conversationMembers da propriedade de navegação dos membros.|
 |[Adicionar membros](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Adicionar um novo membro.|
 |[Remover membros](../api/team-delete-members.md)|Nenhum|Excluir um objeto [conversationMember](../resources/conversationmember.md).|
@@ -52,7 +52,7 @@ Cada equipe está associada a um [grupo](../resources/group.md). O grupo tem a m
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| A visibilidade de um grupo e equipe. O padrão é Público. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Configurações que definem o uso de Giphy, memes e figurinhas na equipe.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configurações que definem se os convidados podem criar, atualizar ou excluir canais na equipe.|
-|internalId | string | Uma ID exclusiva da equipe, que foi usada em alguns locais, como o log de auditoria da [API da Atividade de Gestão do Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). |
+|internalId | string | Uma ID exclusiva da equipe, que foi usada em alguns locais, como o log de auditoria da [API da Atividade de Gestão do Office 365](/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Booliano|Se essa equipe está no modo somente leitura. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots na equipe.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Configurações para definir a mensagens e menções na equipe.|
@@ -84,7 +84,7 @@ Para obter um exemplo de uma solicitação POST, confira [Solicitação (criar e
 |photo|[profilePhoto](../resources/profilephoto.md)|Foto da equipe.|
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| O canal geral da equipe. | 
 |Cronograma|[Cronograma](schedule.md)| Cronograma de turno para essa equipe.|
-|template|[teamsTemplate](teamstemplate.md)| O modelo usado para criar essa equipe. Confira os [modelos disponíveis](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates). |
+|template|[teamsTemplate](teamstemplate.md)| O modelo usado para criar essa equipe. Confira os [modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates). |
 
 ## <a name="json-representation"></a>Representação JSON
 

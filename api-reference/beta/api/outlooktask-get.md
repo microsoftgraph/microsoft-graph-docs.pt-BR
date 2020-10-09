@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 88c700eaa7d494fe41846f3b23b9274b12b8e625
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 186201f0e6f4fae0a02f71b72e7667730fe664e9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017420"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404935"
 ---
 # <a name="get-outlooktask-deprecated"></a>Obter outlookTask (preterido)
 
@@ -46,7 +46,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -240,5 +240,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 911c790ab08487428ff04e93508f4f62ab657aa7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 078284cb4134b0b4fa2f86eb9a09f61ab6655351
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044204"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405278"
 ---
 # <a name="stspolicy-resource-type"></a>tipo de recurso stsPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um tipo de base abstrato para tipos de política que controlam o comportamento da [plataforma de identidade da Microsoft](https://docs.microsoft.com/azure/active-directory/develop/) .
+Representa um tipo de base abstrato para tipos de política que controlam o comportamento da [plataforma de identidade da Microsoft](/azure/active-directory/develop/) .
 
 Herda de [policyBase](policyBase.md).
 
@@ -31,10 +31,10 @@ Nenhum
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|Cadeia de caracteres| Identificador exclusivo da política. Somente leitura. Herdado de [policyBase](policyBase.md).|
-|description|String| Descrição da política. Herdado de [policyBase](policyBase.md).|
+|description|Cadeia de caracteres| Descrição da política. Herdado de [policyBase](policyBase.md).|
 |displayName|Cadeia de caracteres| Nome para exibição dessa política. Herdado de [policyBase](policyBase.md).|
-|definir|Coleção de cadeias de caracteres| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
-|isOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|definir|Conjunto de cadeias de caracteres| Uma coleção String contendo uma cadeia de caracteres JSON que define as regras e configurações de uma política. A sintaxe da definição difere para cada tipo de política derivada. Obrigatório.|
+|isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 ## <a name="relationships"></a>Relações
 
@@ -73,5 +73,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

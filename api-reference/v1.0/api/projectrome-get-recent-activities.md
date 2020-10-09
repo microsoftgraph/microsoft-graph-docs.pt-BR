@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 5e7124e89208c427a196a33830ef5f02347a1095
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 459de1d6309f8db37180cd99e3286974bfd8c373
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051736"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405887"
 ---
 # <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
 
@@ -38,7 +38,7 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
+Este método oferece suporte a alguns [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
 
 - $expand da propriedade de navegação **historyItems** .
 - $top limitar o número máximo de itens nas páginas.
@@ -186,4 +186,3 @@ Content-Type: application/json
   ],
   "tocPath": ""
 }-->
-

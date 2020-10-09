@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b405b97f6a98452241704cdd74bb2b697a945601
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47bf9fa5e27de020757f823a24d648f91cc42cc2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078063"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404683"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Configurar a sincronização com atributos de destino personalizados
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Você pode personalizar o esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura do Salesforce adicionando um novo campo chamado `officeCode` . Você configura a sincronização do Azure Active Directory (Azure AD) para o Salesforce e para cada usuário, você preencherá o `officeCode` campo na Salesforce com o valor do `extensionAttribute10` campo no Azure AD.
 
-Este artigo pressupõe que você já tenha adicionado um aplicativo que oferece suporte à sincronização do seu locatário através do [portal do Azure](https://portal.azure.com), que você conhece o nome de exibição do aplicativo e que você tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, confira [obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
+Este artigo pressupõe que você já tenha adicionado um aplicativo que oferece suporte à sincronização do seu locatário através do [portal do Azure](https://portal.azure.com), que você conhece o nome de exibição do aplicativo e que você tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, confira [obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/).
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>Localizar o objeto de entidade de serviço por nome de exibição
 
@@ -295,5 +295,3 @@ Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincron
   "suppressions": [
   ]
 }-->
-
-

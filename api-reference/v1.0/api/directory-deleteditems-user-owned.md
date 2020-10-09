@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: faf62e2926edc8e2931bdcd9405e0dffd627c678
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f639bb8b0c7fcf04aff072cc3295255a310fbfda
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026079"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404536"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Listar itens excluídos pertencentes a um usuário
 
@@ -24,7 +24,7 @@ Esta é uma ação de serviço, o que significa que ele não oferece suporte à 
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | --- | --- |
@@ -58,7 +58,7 @@ O corpo da solicitação requer os seguintes parâmetros:
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |userId|Cadeia de caracteres|ID do proprietário.|
-|tipo|String|Tipo de objetos de propriedade a ser retornado; `Group` no momento, o único valor com suporte.|
+|tipo|Cadeia de caracteres|Tipo de objetos de propriedade a ser retornado; `Group` no momento, o único valor com suporte.|
 
 
 ## <a name="response"></a>Resposta
@@ -123,6 +123,3 @@ Content-length: 1249
         ]
  }
 ```
-
-
-

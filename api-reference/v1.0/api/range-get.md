@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e384750dce3d74d3c52cfb6b837b0034041d9a0b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 865783becdbf3bb0624dbc581fc4dd83ac186e94
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051701"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405873"
 ---
 # <a name="get-range"></a>Obter intervalo
 
@@ -33,7 +33,7 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')
 GET /workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -110,4 +110,3 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
-

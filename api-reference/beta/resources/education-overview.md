@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 6169037891c4f54a75e4cd1f6b07053a099d5766
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8890010fd096894630629f25199bf39540384105
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055712"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404781"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
@@ -22,7 +22,7 @@ As APIs de educação incluem recursos de listagem e recursos de atribuições q
 
 ## <a name="authorization"></a>Autorização
 
-Para chamar as APIs de educação no Microsoft Graph, o aplicativo precisará adquirir um token de acesso. Para obter detalhes sobre tokens de acesso, confira [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). O aplicativo também precisará das permissões apropriadas. Para saber mais, confira [Permissões de educação](/graph/permissions-reference#education-permissions).
+Para chamar as APIs de educação no Microsoft Graph, o aplicativo precisará adquirir um token de acesso. Para obter detalhes sobre tokens de acesso, confira [Obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/). O aplicativo também precisará das permissões apropriadas. Para saber mais, confira [Permissões de educação](/graph/permissions-reference#education-permissions).
 
 ### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>Permissões de aplicativo para permitir o consentimento dos administradores de TI da escola
 
@@ -43,7 +43,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## <a name="rostering"></a>Lista de participantes
 
-As APIs de lista permitem extrair dados do locatário do Microsoft 365 do School provisionado com [o Microsoft School Data Sync](https://sds.microsoft.com/). Essas APIs fornecem acesso a informações sobre escolas, seções, professores, estudantes e listagens. As APIs dão suporte a cenários somente aplicativo (sincronismo) e a cenários de aplicativo mais usuário (interativo). As APIs que dão suporte a cenários interativos aplicam políticas RBAC apropriadas da região, com base na função do usuário que está chamando a API. Isso fornece uma API consistente e uma superfície mínima de política, independentemente da configuração administrativa nos locatários. Além disso, as APIs também fornecem permissões específicas de educação, de modo a garantir que o usuário certo tenha acesso aos dados.
+As APIs de lista de participantes permitem extrair dados do locatário do Microsoft 365 de uma escola provisionado com o [Microsoft School Data Sync](https://sds.microsoft.com/). Essas APIs fornecem acesso às informações sobre escolas, seções, professores, alunos e listas de participantes. As APIs dão suporte a cenários somente aplicativo (sincronismo) e a cenários de aplicativo mais usuário (interativo). As APIs que dão suporte a cenários interativos aplicam políticas RBAC apropriadas da região, com base na função do usuário que está chamando a API. Isso fornece uma API consistente e uma superfície mínima de política, independentemente da configuração administrativa nos locatários. Além disso, as APIs também fornecem permissões específicas de educação, de modo a garantir que o usuário certo tenha acesso aos dados.
 
 Você pode usar as APIs de escalação para permitir que um usuário do aplicativo saiba:
 
@@ -132,5 +132,3 @@ Use as APIs de educação do Microsoft Graph para criar soluções de educação
 
 - Explore os recursos e os métodos mais úteis para seu cenário.
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-
-

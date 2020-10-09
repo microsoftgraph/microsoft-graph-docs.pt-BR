@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3e265695187cb66bd7bae6983ea3a86075f5eb4d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2553684dffd1c5be9fa65d445b57177f7a45a435
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088871"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404998"
 ---
 # <a name="list-sections"></a>Listar seções
 
@@ -35,7 +35,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}/sections
 GET /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 A ordem de classificação padrão é `name asc`.
 
@@ -131,4 +131,3 @@ Content-length: 345
   "suppressions": [
   ]
 }-->
-

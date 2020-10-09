@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: b2b91e3983876f5c7ffd24adfb8b6539afb0b421
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b96883d224665b8a506b58a3647bf134c4cde2d9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088906"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405355"
 ---
 # <a name="list-pages"></a>Listar páginas
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
-|Delegada (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
+|Delegado (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,7 @@ GET /groups/{id}/onenote/sections/{id}/pages
 GET /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 A consulta padrão para páginas retorna as 20 principais páginas ordenadas por `lastModifiedTime desc` . Se a consulta padrão retornar mais de 20 páginas, a resposta conterá um `@odata.nextLink` que você pode usar para percorrer o conjunto de resultados. O número máximo de páginas retornadas para uma `top` solicitação é 100.
 
@@ -97,4 +97,3 @@ Content-length: 393
   "section": "documentation",
   "tocPath": ""
 }-->
-

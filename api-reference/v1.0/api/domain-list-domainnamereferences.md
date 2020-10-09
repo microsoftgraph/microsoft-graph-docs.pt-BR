@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6030679dceb11e9424cdf7e88859ec27b346fb4a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac9937c4d729c6bc56243f83cd8dd0427a514603
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083859"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405484"
 ---
 # <a name="list-domainnamereferences"></a>Listar domainNameReferences
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sem suporte. |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
@@ -41,7 +41,7 @@ GET /domains/{id}/domainNameReferences
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -128,4 +128,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

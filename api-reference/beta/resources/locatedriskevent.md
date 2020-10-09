@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: 735108451ac9de71a7d05d4146f490ad94df0e82
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 461f20233e92edca48b9dd51fa417b33ab9f386c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073639"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404669"
 ---
 # <a name="locatedriskevent-resource-type"></a>tipo de recurso locatedRiskEvent
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) com base nos dados do local. Os tipos de eventos de risco localizados incluem:
+Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection) com base nos dados do local. Os tipos de eventos de risco localizados incluem:
 * [entradas de endereços IP anônimos](anonymousipriskevent.md)
 * [entradas de dispositivos infectados por malware](malwareriskevent.md)
 * [impossível viajar para locais atypical](impossibletravelriskevent.md)
 * [entradas de endereços IP suspeitos](suspiciousipriskevent.md)
-* [entradas de locais desconhecidos](unfamiliarlocationriskevent.md) As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
+* [entradas de locais desconhecidos](unfamiliarlocationriskevent.md) As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](/azure/active-directory/identity-protection/overview-identity-protection).
 
 
 ## <a name="methods"></a>Métodos
@@ -37,21 +37,21 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
 |createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
-|id|cadeia de caracteres| Somente leitura|
-|ipAddress|cadeia de caracteres| O endereço IP do logon|
+|id|string| Somente leitura|
+|ipAddress|string| O endereço IP do logon|
 |location|cadeia de caracteres| O local anexado ao endereço IP do logon|
 |riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
-|riskEventStatus|cadeia de caracteres| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
-|riskEventType|cadeia de caracteres| O tipo de risco|
-|userDisplayName|cadeia de caracteres| O nome do usuário em risco|
+|riskEventType|string| O tipo de risco|
+|userDisplayName|string| O nome do usuário em risco|
 |userId|cadeia de caracteres| A identificação do usuário em risco|
 |userPrincipalName|string| O nome principal de usuário do usuário em risco|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[usuário](user.md)| Somente leitura. Anulável.|
+|impactedUser|[user](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -99,5 +99,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-

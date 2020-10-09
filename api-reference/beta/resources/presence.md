@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 8a907bc56475634d4c677aa670d398e9ab13ff50
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 286951698255b1a7a7ab3164a82b6fff92cc54ac
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073527"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405327"
 ---
 # <a name="presence-resource-type"></a>tipo de recurso Presence
 
@@ -26,7 +26,7 @@ Esse recurso oferece suporte à assinatura de [alteração de notificações](/g
 
 | Método                                                            | Tipo de retorno                                       | Descrição                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [Obter presença](../api/presence-get.md)     | [presença](../resources/presence.md)     | Obtenha as informações de presença de um usuário.
+| [Obter presença](../api/presence-get.md)     | [presence](../resources/presence.md)     | Obtenha as informações de presença de um usuário.
 | [Obter presença de vários usuários](../api/cloudcommunications-getpresencesbyuserid.md)    |  coleção [Presence](../resources/presence.md)     |  Obtenha as informações de presença de vários usuários.      |
 
 
@@ -34,11 +34,11 @@ Esse recurso oferece suporte à assinatura de [alteração de notificações](/g
 
 | Relação        | Tipo                                                 | Descrição                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-|id    |  cadeia de caracteres     |  A ID de objeto de usuário   |
+|id    |  string     |  A ID de objeto de usuário   |
 |availability    |  coleção de cadeias de caracteres   |   As informações de presença básicas de um usuário. Os valores possíveis são,,,,, `Available` `AvailableIdle` ,,  `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline` , `PresenceUnknown`  |
 |atividade    |  coleção de cadeias de caracteres      |    As informações complementares para a disponibilidade de um usuário. Os valores possíveis são,,,,, `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` , `Inactive` , `InAMeeting` , `Offline` , `OffWork` , `OutOfOffice` , `PresenceUnknown` , `Presenting` , `UrgentInterruptionsOnly` .       |
 
->**Observação:** Para saber mais sobre os diferentes Estados de presença, confira [presença do usuário no Microsoft Teams](https://docs.microsoft.com/microsoftteams/presence-admins). 
+>**Observação:** Para saber mais sobre os diferentes Estados de presença, confira [presença do usuário no Microsoft Teams](/microsoftteams/presence-admins). 
 
 ## <a name="relationships"></a>Relações
 
@@ -61,5 +61,3 @@ Veja a seguir uma representação JSON do recurso.
    "activity":"string"
 }
 ```
-
-

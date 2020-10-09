@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 608004dfb3eee7b2bd9251231832601d853d28fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38c40fde000cc690a3fffc3bcc795d2039579282
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017159"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405271"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -31,7 +31,7 @@ Os usuários podem definir as configurações a seguir para suas caixas de corre
 - [horário de trabalho](../resources/workinghours.md)
 - [finalidade do usuário](../resources/userpurpose.md)
 
-Os usuários podem definir os formatos de data e hora preferidos usando o Outlook na Web. Os usuários podem escolher um dos formatos de [data abreviada](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou de [tempo abreviado](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) com suporte. Essa operação `GET` retorna o formato escolhido pelo usuário.
+Os usuários podem definir os formatos de data e hora preferidos usando o Outlook na Web. Os usuários podem escolher um dos formatos de [data abreviada](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou de [tempo abreviado](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) com suporte. Essa operação `GET` retorna o formato escolhido pelo usuário.
 
 Os usuários podem definir o fuso horário preferido em qualquer cliente do Outlook, escolhendo entre os [fusos horários com suporte](outlookuser-supportedtimezones.md) que o administrador configurou para o servidor da caixa de correio. O administrador pode configurar os fusos horários no formato de fuso horário do Windows ou no formato de [fuso horário de Autoridade para Atribuição de Números na Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário de Olson). O formato do Windows é o padrão. 
 
@@ -82,7 +82,7 @@ GET /me/mailboxSettings/userPurpose
 GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método também dá suporte a alguns [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método também dá suporte a alguns [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -361,5 +361,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

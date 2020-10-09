@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f97d4d86b2cd66bc62e23dc1f99622ed7af2084c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f375ce450f05320388423f2f0fc7e5eb35af577f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067080"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405241"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 
@@ -23,11 +23,11 @@ A sincronização de identidade do Azure Active Directory (Azure AD) (também ch
 - WORKDAY para o Azure AD
 - Azure AD para aplicativos em nuvem como o Dropbox, Salesforce, ServiceNow e muito mais 
 
-Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:
+Você pode usar as APIs de sincronização  no Microsoft Graph para gerenciar a sincronização de identidade programaticamente, incluindo:
 
 - Criar, iniciar e interromper trabalhos de sincronização
 - Fazer alterações no esquema de sincronização para trabalhos
-- Verificar o status de sincronização atual
+- Status de sincronização atual.
 
 Para obter mais informações sobre sincronização no Azure AD, consulte:
 
@@ -66,7 +66,7 @@ O trabalho com a API de sincronização envolve principalmente o acesso aos recu
 
 ### <a name="authorization"></a>Autorização
 
-A API de sincronização do Azure AD usa o OAuth 2,0 para autorização. Antes de fazer qualquer solicitação para a API, você precisa obter um token de acesso. Para obter mais informações, consulte [obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Para acessar os recursos de sincronização, seu aplicativo precisa de permissões de Directory. ReadWrite. All. Para obter mais informações, consulte [Directory Permissions](/graph/permissions-reference#directory-permissions).
+A API de sincronização do Azure AD usa o OAuth 2,0 para autorização. Antes de fazer qualquer solicitação para a API, você precisa obter um token de acesso. Para obter mais informações, consulte [obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/). Para acessar os recursos de sincronização, seu aplicativo precisa de permissões de Directory. ReadWrite. All. Para obter mais informações, consulte [Directory Permissions](/graph/permissions-reference#directory-permissions).
 
 ### <a name="find-the-service-principal-object-by-display-name"></a>Localizar o objeto de entidade de serviço por nome de exibição
 
@@ -205,8 +205,3 @@ HTTP/1.1 200 OK
 
 * [Configurar a sincronização com atributos de extensão de diretório](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [Configurar a sincronização com atributos de destino personalizados](../resources/synchronization-configure-with-custom-target-attributes.md)
-
-
-
-
-

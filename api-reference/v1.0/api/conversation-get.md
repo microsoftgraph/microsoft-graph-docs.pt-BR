@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c6367f238f238f91709352d1b8c96fbadafe7d73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a8d0d5927006ec670b85b9916b0d134313b40abc
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010042"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404578"
 ---
 # <a name="get-conversation"></a>Obter conversa
 
@@ -33,7 +33,7 @@ GET /groups/{id}/conversations/{id}
 
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -110,4 +110,3 @@ Content-length: 201
   "suppressions": [
   ]
 }-->
-

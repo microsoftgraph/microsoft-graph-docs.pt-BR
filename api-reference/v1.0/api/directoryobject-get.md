@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac3da51fa8c6268c784d01329499692e12919695
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d42b3ffcce2d8397cd28d66920271c9d0e6ed28
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971318"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406084"
 ---
 # <a name="get-directoryobject"></a>Obter directoryObject
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /directoryObjects/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -101,4 +101,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6e33658c8072f6f2543993fe97e6064c78ceac99
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0f0f44effdc0aaf7d4b4d464aade9058f0641041
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019347"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405071"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -50,9 +50,9 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 |accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. |
 |operatingSystem|String|O tipo de sistema operacional do dispositivo.|
 |operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
-|displayName|String|O nome de exibição do dispositivo.|
-|isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
-|isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
+|displayName|Cadeia de caracteres|O nome de exibição do dispositivo.|
+|isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
+|isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
 
 ## <a name="response"></a>Resposta
 
@@ -115,4 +115,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

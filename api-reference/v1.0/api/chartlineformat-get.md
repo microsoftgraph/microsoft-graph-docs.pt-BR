@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e03668bd825bb357ace65a7a81f04a789c65e9f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb99796ddd31dc1d337785e5bf6e3691ff6a727e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059737"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404907"
 ---
 # <a name="get-chartlineformat"></a>Obter ChartLineFormat
 
@@ -34,7 +34,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -106,4 +106,3 @@ Content-length: 28
   "suppressions": [
   ]
 }-->
-

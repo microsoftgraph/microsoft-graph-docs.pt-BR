@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 581bd98c47b24ce33508ca60b96612d93b2a3555
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d3a5e9898dd42fa6339f8a8bf1927edd830738ab
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067941"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404501"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -46,7 +46,7 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 Em particular, você pode usar o $expand parâmetro de consulta para incluir todos os anexos de mensagem embutidos com o restante das propriedades de mensagem. Por exemplo:
 
@@ -136,5 +136,3 @@ Content-length: 215
   ]
 }
 -->
-
-

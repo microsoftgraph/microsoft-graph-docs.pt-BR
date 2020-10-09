@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: fb8e0a51f840d402b14ea98dd5ffd2d66e692249
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dae7b69ab48ed0b05eda03aa032c9d8b2cfa44d9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998508"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405558"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -42,7 +42,7 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 
 ## <a name="outlook-specific-considerations"></a>Considerações específicas do Outlook
 
-Cada extensão aberta presente em um recurso do Outlook (evento, mensagem ou contato pessoal) é armazenada em uma [propriedade MAPI](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx). Quando você cria extensões abertas no Outlook, considere que as propriedades MAPI são um recurso finito em uma caixa de correio do usuário. Quando a propriedade de cota de um usuário acabar, não será mais possível criar quaisquer propriedades nomeadas desse usuário. Isso pode resultar em um comportamento inesperado de clientes que dependem de propriedades nomeadas para funcionar.
+Cada extensão aberta presente em um recurso do Outlook (evento, mensagem ou contato pessoal) é armazenada em uma [propriedade MAPI](/office/client-developer/outlook/mapi/mapi-named-properties). Quando você cria extensões abertas no Outlook, considere que as propriedades MAPI são um recurso finito em uma caixa de correio do usuário. Quando a propriedade de cota de um usuário acabar, não será mais possível criar quaisquer propriedades nomeadas desse usuário. Isso pode resultar em um comportamento inesperado de clientes que dependem de propriedades nomeadas para funcionar.
 
 Aplique as seguintes diretrizes quando você criar extensões abertas em recursos do Outlook:
 
@@ -51,7 +51,7 @@ Aplique as seguintes diretrizes quando você criar extensões abertas em recurso
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Use extensões abertas (para recursos do Outlook) ou propriedades estendidas
 
-As extensões abertas são a solução recomendada para a maioria dos cenários que envolvem o armazenamento e o acesso a dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode verificar quais propriedades os metadados expõem na [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
+As extensões abertas são a solução recomendada para a maioria dos cenários que envolvem o armazenamento e o acesso a dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](../index.md), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode verificar quais propriedades os metadados expõem na [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -104,5 +104,3 @@ Nenhuma
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 519ca89947a48a3726f3a4e383158a432a2312e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9eec923dd41d303738a0597fe8e0a78adeab9656
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978570"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405733"
 ---
 # <a name="get-tablesort"></a>Obter TableSort
 
@@ -33,7 +33,7 @@ GET /workbook/tables/{id|name}/sort
 GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -106,4 +106,3 @@ Content-length: 51
   "suppressions": [
   ]
 }-->
-

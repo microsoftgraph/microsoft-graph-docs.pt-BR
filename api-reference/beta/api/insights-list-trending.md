@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: a8cd468506b28c6e9ea155a37141747056ea5db3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 51db028e825782f3117d57fecdb7b6ffa4d9639f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990617"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404955"
 ---
 # <a name="list-trending"></a>Listar tendências
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 Você pode usar o `$filter` parâmetro de consulta para filtrar itens de tendência. Por exemplo, com base no **tipo**:
 <!-- { "blockType": "ignored" } -->
@@ -158,5 +158,3 @@ Content-length: 801
     ]
 }
 ```
-
-

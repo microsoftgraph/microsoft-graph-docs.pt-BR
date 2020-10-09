@@ -5,18 +5,18 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 359a74cbf48e0db2b4c3e480b73dfed928232288
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8fac6cfa8de0533c936c9d8d03a6173f06d0886f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089718"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404788"
 ---
 # <a name="ediscoverycase-resource-type"></a>tipo de recurso ediscoveryCase
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-as ocorrências de descoberta eletrônica são contêineres que contêm responsáveis, isenções, coleções, conjuntos de revisão e exportações.  Saiba mais sobre casos e [descoberta eletrônica avançada](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20).
+as ocorrências de descoberta eletrônica são contêineres que contêm responsáveis, isenções, coleções, conjuntos de revisão e exportações.  Saiba mais sobre casos e [descoberta eletrônica avançada](/microsoft-365/compliance/overview-ediscovery-20).
 
 ## <a name="methods"></a>Métodos
 
@@ -32,17 +32,17 @@ as ocorrências de descoberta eletrônica são contêineres que contêm respons�
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|closedBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|O usuário que fechou o caso.|
-|closedDateTime|DateTimeOffset|A data e a hora em que o caso foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|createdBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|O usuário que criou a ocorrência.|
-|createdDateTime|DateTimeOffset|A data e a hora em que a entidade foi criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|closedBy|[identitySet](/graph/api/resources/identityset)|O usuário que fechou o caso.|
+|closedDateTime|DateTimeOffset|A data e a hora em que o caso foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|createdBy|[identitySet](/graph/api/resources/identityset)|O usuário que criou a ocorrência.|
+|createdDateTime|DateTimeOffset|A data e a hora em que a entidade foi criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |description|Cadeia de caracteres|A descrição do caso.|
 |displayName|Cadeia de caracteres|O nome do caso.|
 |externalId|Cadeia de caracteres|O número do caso externo para referência de cliente.|
 |id|Cadeia de caracteres| A ID da ocorrência de descoberta eletrônica. Somente leitura. |
-|lastModifiedBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|O último usuário que modificou a entidade.|
-|lastModifiedDateTime|DateTimeOffset| A última data e hora em que a ocorrência foi modificada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|status|String| O status do caso. Os valores possíveis são:,,, `unknown` `active` `pendingDelete` `closing` `closed` , e `closedWithError` . Para obter detalhes, consulte a tabela a seguir.|
+|lastModifiedBy|[identitySet](/graph/api/resources/identityset)|O último usuário que modificou a entidade.|
+|lastModifiedDateTime|DateTimeOffset| A última data e hora em que a ocorrência foi modificada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|status|Cadeia de caracteres| O status do caso. Os valores possíveis são:,,, `unknown` `active` `pendingDelete` `closing` `closed` , e `closedWithError` . Para obter detalhes, consulte a tabela a seguir.|
 
 ### <a name="casestatus-values"></a>valores de caseStatus
 
@@ -99,5 +99,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

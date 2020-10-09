@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para pontos de extremidade do Intune
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: e1c93c38c1667d1681e280b69ff106060900b46c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b88dc6191f3082df800b3f93e2c4fd22531258e2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031113"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404694"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 
@@ -19,7 +19,7 @@ ms.locfileid: "48031113"
 
 A API do Microsoft Graph para Intune permite o acesso programático a informações do Intune para seu locatário; a API executa as mesmas operações do Intune disponíveis pelo **Portal do Azure**.  
 
-Em cenários de gerenciamento de dispositivo móvel (MDM), a API do Microsoft Graph para Intune oferece suporte a implantações autônomas; não há suporte para[implantações híbridas](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) do Intune. 
+Em cenários de gerenciamento de dispositivo móvel (MDM), a API do Microsoft Graph para Intune oferece suporte a implantações autônomas; não há suporte para[implantações híbridas](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) do Intune. 
 
 ## <a name="using-the-microsoft-graph-api-for-intune"></a>Uso da API do Microsoft Graph para Intune
 
@@ -42,16 +42,12 @@ O exemplo a seguir mostra como determinar se um aplicativo está instalado no di
 
 ## <a name="using-microsoft-graph-permissions"></a>Uso das permissões do Microsoft Graph
 
-O Microsoft Graph controla o acesso a recursos por meio de permissões. Como desenvolvedor, você deve especificar as permissões necessárias para acessar os recursos do Intune. Normalmente, você deve especificar as permissões no portal do Azure Active Directory. Para saber mais, confira [Referência de permissões do Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference).
+O Microsoft Graph controla o acesso a recursos por meio de permissões. Como desenvolvedor, você deve especificar as permissões necessárias para acessar os recursos do Intune. Normalmente, você deve especificar as permissões no portal do Azure Active Directory. Para saber mais, confira [Referência de permissões do Microsoft Graph](/graph/permissions-reference).
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Saiba [como usar o Azure AD](https://docs.microsoft.com/intune/intune-graph-apis) para acessar a API do Microsoft Graph para Intune.  
+- Saiba [como usar o Azure AD](/intune/intune-graph-apis) para acessar a API do Microsoft Graph para Intune.  
 - Explore os [exemplos do PowerShell Intune](https://github.com/microsoftgraph/powershell-intune-samples), que mostram como usar a API do Microsoft Graph para Intune no contexto dos exemplos de trabalho.
-
-
-
-

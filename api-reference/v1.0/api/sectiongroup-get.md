@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 163cc02a43c1fb7af2ce22e9813696a48f1878ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98251949da409cca9e314e102bfe69b98c8a8d66
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088892"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405755"
 ---
 # <a name="get-sectiongroup"></a>Obter o myseção
 
@@ -35,7 +35,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}
 GET /sites/{id}/onenote/sectionGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 A consulta padrão expande `parentNotebook` e seleciona suas `id` `name` Propriedades, e `self` . `expand`Os valores válidos para os grupos de seções são `parentNotebook` e `parentSectionGroup` .
 
@@ -123,4 +123,3 @@ Content-length: 305
   "suppressions": [
   ]
 }-->
-

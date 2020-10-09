@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b74c970e31c809367b4dc1a1403675e32304d24d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4d22989835a5311a1ee7f09618becc38a389975b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971094"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406027"
 ---
 # <a name="get-reportroot"></a>Get reportRoot
 
@@ -41,7 +41,7 @@ GET /reports
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
@@ -75,17 +75,3 @@ Content-Length: 124
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-

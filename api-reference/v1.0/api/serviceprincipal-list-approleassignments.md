@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 80530773ea80b8b18a04b85cd21ccdc42d7e2abd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d45230c72453fc787dec17aa7dbf834a51851e9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015552"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405345"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Listar appRoleAssignments concedidos a uma entidade de serviço
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Recuperar a lista[appRoleAssignment](../resources/approleassignment.md) concedida a uma entidade de serviço.
 
-As funções do aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). As permissões de aplicativo podem ser concedidas diretamente, criando atribuições de função de aplicativo ou por meio de uma [experiência de consentimento](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+As funções do aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). As permissões de aplicativo podem ser concedidas diretamente, criando atribuições de função de aplicativo ou por meio de uma [experiência de consentimento](/azure/active-directory/develop/application-consent-experience).
 
 ## <a name="permissions"></a>Permissões
 
@@ -136,4 +136,3 @@ Content-length: 306
   ]
 }
 -->
-

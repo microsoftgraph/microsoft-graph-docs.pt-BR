@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: d7d66b0f0a4b7a87b2454ba9fb6e21b1406d35a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea3205139bffa11ff8fbe67d1ab6abb426bc65ca
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998072"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406171"
 ---
 # <a name="permissionscope-resource-type"></a>tipo de recurso permissionScope
 
@@ -18,21 +18,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a definição de uma [permissão delegada](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
+Representa a definição de uma [permissão delegada](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
 
-As permissões delegadas podem ser solicitadas por aplicativos cliente que precisam de um token de acesso para a API que definiu as permissões. As permissões delegadas podem ser solicitadas [dinamicamente](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), usando o `scopes` parâmetro em uma solicitação de autorização para a plataforma de identidade da Microsoft, ou [estaticamente](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), através da coleção **requiredResourceAccess** no objeto [Application](application.md) .
+As permissões delegadas podem ser solicitadas por aplicativos cliente que precisam de um token de acesso para a API que definiu as permissões. As permissões delegadas podem ser solicitadas [dinamicamente](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), usando o `scopes` parâmetro em uma solicitação de autorização para a plataforma de identidade da Microsoft, ou [estaticamente](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), através da coleção **requiredResourceAccess** no objeto [Application](application.md) .
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|adminConsentDescription|String|Uma descrição das permissões delegadas, que devem ser lidas por um administrador que concede a permissão em nome de todos os usuários. Esse texto aparece em experiências de consentimento de administrador em todo o locatário.|
-|adminConsentDisplayName|String|O título da permissão, destinado a ser lido por um administrador que concede a permissão em nome de todos os usuários.|
+|adminConsentDescription|Cadeia de caracteres|Uma descrição das permissões delegadas, que devem ser lidas por um administrador que concede a permissão em nome de todos os usuários. Esse texto aparece em experiências de consentimento de administrador em todo o locatário.|
+|adminConsentDisplayName|Cadeia de caracteres|O título da permissão, destinado a ser lido por um administrador que concede a permissão em nome de todos os usuários.|
 |id|Guid|Identificador de permissão delegada exclusiva dentro da coleção de permissões delegadas definido para um aplicativo de recurso.|
-|isEnabled|Boolean|Ao criar ou atualizar uma permissão, essa propriedade deve ser definida como **true** (que é o padrão). Para excluir uma permissão, essa propriedade deve ser definida primeiro como **false**.  Nesse ponto, em uma chamada subsequente, a permissão pode ser removida.|
-|tipo|String|Especifica se essa permissão delegada deve ser considerada segura para que usuários que não são administradores consentissem em nome de si mesmas ou se um administrador deve ser necessário para o consentimento das permissões. Esse será o comportamento padrão, mas cada cliente poderá optar por personalizar o comportamento em sua organização (permitindo, restringindo ou limitando o consentimento do usuário a essa permissão delegada).|
-|userConsentDescription|String|Uma descrição das permissões delegadas, que devem ser lidas por um usuário que concede a permissão em seu próprio nome. Esse texto aparece em experiências de consentimento onde o usuário está concordando somente em nome de si mesmo.|
-|userConsentDisplayName|String|Um título para a permissão, que deve ser lido por um usuário que conceda a permissão em seu próprio nome. Esse texto aparece em experiências de consentimento onde o usuário está concordando somente em nome de si mesmo.|
+|isEnabled|Booliano|Ao criar ou atualizar uma permissão, essa propriedade deve ser definida como **true** (que é o padrão). Para excluir uma permissão, essa propriedade deve ser definida primeiro como **false**.  Nesse ponto, em uma chamada subsequente, a permissão pode ser removida.|
+|tipo|Cadeia de caracteres|Especifica se essa permissão delegada deve ser considerada segura para que usuários que não são administradores consentissem em nome de si mesmas ou se um administrador deve ser necessário para o consentimento das permissões. Esse será o comportamento padrão, mas cada cliente poderá optar por personalizar o comportamento em sua organização (permitindo, restringindo ou limitando o consentimento do usuário a essa permissão delegada).|
+|userConsentDescription|Cadeia de caracteres|Uma descrição das permissões delegadas, que devem ser lidas por um usuário que concede a permissão em seu próprio nome. Esse texto aparece em experiências de consentimento onde o usuário está concordando somente em nome de si mesmo.|
+|userConsentDisplayName|Cadeia de caracteres|Um título para a permissão, que deve ser lido por um usuário que conceda a permissão em seu próprio nome. Esse texto aparece em experiências de consentimento onde o usuário está concordando somente em nome de si mesmo.|
 |value|Cadeia de caracteres|Especifica o valor a ser incluído na `scp` declaração (escopo) em tokens de acesso. Não deve exceder 120 caracteres de comprimento. Os caracteres permitidos são `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~` , bem como os caracteres nos intervalos `0-9` `A-Z` e `a-z` . Qualquer outro caractere, incluindo o caractere de espaço, não é permitido.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -72,5 +72,3 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
-
-

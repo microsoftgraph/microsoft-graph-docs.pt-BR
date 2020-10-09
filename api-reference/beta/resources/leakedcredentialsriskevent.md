@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: c9c1efda0cb4c11899d5884da05a91f07e5a000d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 05c887fade095da07b12c1b82c9efdf71259234f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029222"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404676"
 ---
 # <a name="leakedcredentialsriskevent-resource-type-deprecated"></a>tipo de recurso leakedCredentialsRiskEvent (preterido)
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 >[!CAUTION]
 >A API **identityRiskEvents** foi preterida e interromperá o retorno de dados em 10 de janeiro de 2020. Para obter detalhes, consulte [Preterition of the IDENTITYRISKEVENTS API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) onde as credenciais de uma conta foram detectadas. As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) onde as credenciais de uma conta foram detectadas. As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](/azure/active-directory/identity-protection/overview-identity-protection).
 
 
 ## <a name="methods"></a>Métodos
@@ -47,7 +47,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
+|impactedUser|[user](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -91,5 +91,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-

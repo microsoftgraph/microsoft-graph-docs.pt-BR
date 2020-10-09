@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 15bdcad395445e713e49670e01672e83319e35a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d19a1dc106e03d990a0cce889bd7a9758009673c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051492"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405866"
 ---
 # <a name="get-rangeborder"></a>Obter RangeBorder
 
@@ -34,7 +34,7 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders/{si
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/{sideIndex}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -110,4 +110,3 @@ Content-length: 136
   "suppressions": [
   ]
 }-->
-

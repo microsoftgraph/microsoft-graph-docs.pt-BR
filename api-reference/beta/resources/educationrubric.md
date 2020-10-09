@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 276a16852f546b88806c797dbe5c2501de80f5ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 154e153166c45a0eb671ab554d1b8ed337fb9830
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071266"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406069"
 ---
 # <a name="educationrubric-resource-type"></a>tipo de recurso educationRubric
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Um amostra rubric de gradação que pode ser anexado a uma atribuição. Um amostra rubric é associado a um **educationUser** (professor) e anexado a um ou mais recursos do **educationAssignment** . 
 
-Consulte [Education amostra rubric Overview](https://developer.microsoft.com/graph/docs/concepts/education-rubric-overview) para obter mais informações.
+Consulte [Education amostra rubric Overview](/graph/education-rubric-overview) para obter mais informações.
 
 ## <a name="methods"></a>Métodos
 
@@ -41,7 +41,7 @@ Consulte [Education amostra rubric Overview](https://developer.microsoft.com/gra
 |displayName|Cadeia de caracteres|O nome deste amostra rubric.|
 |notas|[educationAssignmentGradeType](educationassignmentgradetype.md)|O tipo de gradação desse amostra rubric-NULL para um amostra rubric sem pontos, ou [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) para um ponto amostra rubric.|
 |lastModifiedBy|[identitySet](identityset.md)|O último usuário a modificar o recurso.|
-|lastModifiedDateTime|DateTimeOffset|Momento no momento em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|Momento no momento em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |alcançar|coleção [rubricLevel](rubriclevel.md)|A coleção de níveis que compõem este amostra rubric.|
 |qualidades|coleção [rubricQuality](rubricquality.md)|O conjunto de qualidades que compõem este amostra rubric.|
 
@@ -86,5 +86,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

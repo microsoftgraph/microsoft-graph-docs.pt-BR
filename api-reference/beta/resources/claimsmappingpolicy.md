@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 83a3a0bb455e72796aac2fc27066f161b9a909ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 09d68f6c9561ba0bf433c56abbba640b485a6fba
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040144"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405600"
 ---
 # <a name="claimsmappingpolicy-resource-type"></a>tipo de recurso claimsMappingPolicy
 
@@ -24,7 +24,7 @@ Representa as políticas de mapeamento de declaração para protocolos WS-Alimen
 - Criar tipos de declaração que ainda não existem
 - Escolha ou altere a fonte de dados emitidos em declarações específicas  
 
-Para obter mais detalhes de cenário e configuração, consulte [como: Personalizar declarações emitidas em tokens para um aplicativo específico em um locatário](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
+Para obter mais detalhes de cenário e configuração, consulte [como: Personalizar declarações emitidas em tokens para um aplicativo específico em um locatário](/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-properties).
 
 Herda de [stsPolicy](stsPolicy.md).
 
@@ -46,11 +46,11 @@ Herda de [stsPolicy](stsPolicy.md).
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Identificador exclusivo da política. Somente leitura.|
-|definir|Coleção String| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
-|description|String| Descrição da política.|
-|displayName|String| Nome para exibição dessa política. Obrigatório.|
-|isOrganizationDefault|Booliano|Ignore essa propriedade. A política de mapeamento de declarações só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
+|id|Cadeia de caracteres| Identificador exclusivo da política. Somente leitura.|
+|definir|Conjunto de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|description|Cadeia de caracteres| Descrição da política.|
+|displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
+|isOrganizationDefault|Boolean|Ignore essa propriedade. A política de mapeamento de declarações só pode ser aplicada a entidades de serviço e não pode ser definida globalmente para a organização.|
 
 ### <a name="properties-of-a-claims-mapping-policy-definition"></a>Propriedades de uma definição de política de mapeamento de declarações
 
@@ -100,9 +100,9 @@ As propriedades abaixo formam o objeto JSON que representa uma política de mape
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |Versão|Inteiro|Defina o valor 1. Obrigatório.|
-|IncludeBasicClaimSet|Booliano|Se for definido como true, todas as declarações no conjunto de declarações básicas serão emitidas em tokens afetados pela política. Se definido como false, as declarações no conjunto de declarações básicas não estão nos tokens, a menos que sejam individualmente adicionadas à propriedade ClaimsSchema da mesma política.|
-|ClaimsSchema|Objeto JSON|Define quais declarações estão presentes nos tokens afetados pela política, além do conjunto de declarações básico e o conjunto de declarações principal. Para cada entrada de esquema de declaração definida nessa propriedade, determinadas informações são necessárias. Especifique onde os dados vêm vindo (par de valor ou código-fonte/ID) e quais declarações os dados são emitidos como (tipo de declaração). Mais detalhes estão disponíveis na [definição ClaimsSchema](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
-|ClaimsTransformation|Objeto JSON| Define transformações comuns que podem ser aplicadas aos dados de origem, para gerar os dados de saída para declarações especificadas no ClaimsSchema. Mais detalhes estão disponíveis na [definição ClaimsTransformation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
+|IncludeBasicClaimSet|Boolean|Se for definido como true, todas as declarações no conjunto de declarações básicas serão emitidas em tokens afetados pela política. Se definido como false, as declarações no conjunto de declarações básicas não estão nos tokens, a menos que sejam individualmente adicionadas à propriedade ClaimsSchema da mesma política.|
+|ClaimsSchema|Objeto JSON|Define quais declarações estão presentes nos tokens afetados pela política, além do conjunto de declarações básico e o conjunto de declarações principal. Para cada entrada de esquema de declaração definida nessa propriedade, determinadas informações são necessárias. Especifique onde os dados vêm vindo (par de valor ou código-fonte/ID) e quais declarações os dados são emitidos como (tipo de declaração). Mais detalhes estão disponíveis na [definição ClaimsSchema](/azure/active-directory/develop/active-directory-claims-mapping#claims-schema).|
+|ClaimsTransformation|Objeto JSON| Define transformações comuns que podem ser aplicadas aos dados de origem, para gerar os dados de saída para declarações especificadas no ClaimsSchema. Mais detalhes estão disponíveis na [definição ClaimsTransformation](/azure/active-directory/develop/active-directory-claims-mapping#claims-transformation).|
 
 
 ## <a name="relationships"></a>Relações
@@ -144,4 +144,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-

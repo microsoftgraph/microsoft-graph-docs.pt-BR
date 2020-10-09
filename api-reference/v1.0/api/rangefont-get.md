@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e83019af805a71ad0a75431a518a260a2880594f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e1b0db7db41b289365f5de27a2396ea5c518c8e5
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978710"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405796"
 ---
 # <a name="get-rangefont"></a>Obter RangeFont
 
@@ -34,7 +34,7 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -111,4 +111,3 @@ Content-length: 134
   "suppressions": [
   ]
 }-->
-

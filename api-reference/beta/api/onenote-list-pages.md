@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 37270973f9715377691f67f36e1459cc19dda804
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea48bacad9e861a4a4b6cb83c0e9115a4d3ee2ad
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093081"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406195"
 ---
 # <a name="list-pages"></a>Listar páginas
 
@@ -37,7 +37,7 @@ GET /groups/{id}/onenote/pages
 GET /sites/{id}/onenote/pages
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 A consulta padrão para páginas retorna as 20 principais páginas ordenadas por `lastModifiedTime desc` . Se a consulta padrão retornar mais de 20 páginas, a resposta conterá um `@odata.nextLink` que você pode usar para percorrer o conjunto de resultados. O número máximo de páginas retornadas para uma `top` solicitação é 100.
 
@@ -103,5 +103,3 @@ Content-length: 393
   "suppressions": []
 }
 -->
-
-
