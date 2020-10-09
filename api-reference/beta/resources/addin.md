@@ -5,31 +5,31 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 000eb87d2ab29c128f79800c9bf9c99e51fb6dc1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cd638480c6e05413b20dad389257bf9a43174e40
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024455"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405628"
 ---
-# <a name="addin-resource-type"></a><span data-ttu-id="b87a5-103">tipo de recurso addIn</span><span class="sxs-lookup"><span data-stu-id="b87a5-103">addIn resource type</span></span>
+# <a name="addin-resource-type"></a><span data-ttu-id="30d2b-103">tipo de recurso addIn</span><span class="sxs-lookup"><span data-stu-id="30d2b-103">addIn resource type</span></span>
 
-<span data-ttu-id="b87a5-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b87a5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="30d2b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="30d2b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b87a5-105">Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos.</span><span class="sxs-lookup"><span data-stu-id="b87a5-105">Defines custom behavior that a consuming service can use to call an app in specific contexts.</span></span> <span data-ttu-id="b87a5-106">Por exemplo, aplicativos que podem renderizar fluxos de arquivos [podem configurar suplementos](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade do manipulador de arquivos.</span><span class="sxs-lookup"><span data-stu-id="b87a5-106">For example, applications that can render file streams [might configure add-ins](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) for File Handler functionality.</span></span> <span data-ttu-id="b87a5-107">Isso permitirá que os serviços como o Microsoft 365 chamem o aplicativo no contexto de um documento no qual o usuário esteja trabalhando.</span><span class="sxs-lookup"><span data-stu-id="b87a5-107">This will let services like Microsoft 365 call the application in the context of a document the user is working on.</span></span>
+<span data-ttu-id="30d2b-105">Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos.</span><span class="sxs-lookup"><span data-stu-id="30d2b-105">Defines custom behavior that a consuming service can use to call an app in specific contexts.</span></span> <span data-ttu-id="30d2b-106">Por exemplo, aplicativos que podem renderizar fluxos de arquivos [podem configurar suplementos](/onedrive/developer/file-handlers/?view=odsp-graph-online) para a funcionalidade do manipulador de arquivos.</span><span class="sxs-lookup"><span data-stu-id="30d2b-106">For example, applications that can render file streams [might configure add-ins](/onedrive/developer/file-handlers/?view=odsp-graph-online) for File Handler functionality.</span></span> <span data-ttu-id="30d2b-107">Isso permitirá que os serviços como o Microsoft 365 chamem o aplicativo no contexto de um documento no qual o usuário esteja trabalhando.</span><span class="sxs-lookup"><span data-stu-id="30d2b-107">This will let services like Microsoft 365 call the application in the context of a document the user is working on.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b87a5-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b87a5-108">Properties</span></span>
-| <span data-ttu-id="b87a5-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b87a5-109">Property</span></span>     | <span data-ttu-id="b87a5-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="b87a5-110">Type</span></span>   |<span data-ttu-id="b87a5-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="b87a5-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="30d2b-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="30d2b-108">Properties</span></span>
+| <span data-ttu-id="30d2b-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="30d2b-109">Property</span></span>     | <span data-ttu-id="30d2b-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="30d2b-110">Type</span></span>   |<span data-ttu-id="30d2b-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="30d2b-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b87a5-112">id</span><span class="sxs-lookup"><span data-stu-id="b87a5-112">id</span></span>|<span data-ttu-id="b87a5-113">#c0</span><span class="sxs-lookup"><span data-stu-id="b87a5-113">guid</span></span>||
-|<span data-ttu-id="b87a5-114">properties</span><span class="sxs-lookup"><span data-stu-id="b87a5-114">properties</span></span>|<span data-ttu-id="b87a5-115">Coleção [KeyValue](keyvalue.md)</span><span class="sxs-lookup"><span data-stu-id="b87a5-115">[keyValue](keyvalue.md) collection</span></span>||
-|<span data-ttu-id="b87a5-116">type</span><span class="sxs-lookup"><span data-stu-id="b87a5-116">type</span></span>|<span data-ttu-id="b87a5-117">string</span><span class="sxs-lookup"><span data-stu-id="b87a5-117">string</span></span>||
+|<span data-ttu-id="30d2b-112">id</span><span class="sxs-lookup"><span data-stu-id="30d2b-112">id</span></span>|<span data-ttu-id="30d2b-113">#c0</span><span class="sxs-lookup"><span data-stu-id="30d2b-113">guid</span></span>||
+|<span data-ttu-id="30d2b-114">properties</span><span class="sxs-lookup"><span data-stu-id="30d2b-114">properties</span></span>|<span data-ttu-id="30d2b-115">Coleção [KeyValue](keyvalue.md)</span><span class="sxs-lookup"><span data-stu-id="30d2b-115">[keyValue](keyvalue.md) collection</span></span>||
+|<span data-ttu-id="30d2b-116">type</span><span class="sxs-lookup"><span data-stu-id="30d2b-116">type</span></span>|<span data-ttu-id="30d2b-117">string</span><span class="sxs-lookup"><span data-stu-id="30d2b-117">string</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="b87a5-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b87a5-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="30d2b-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="30d2b-118">JSON representation</span></span>
 
-<span data-ttu-id="b87a5-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b87a5-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="30d2b-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="30d2b-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -60,5 +60,3 @@ ms.locfileid: "48024455"
   "suppressions": []
 }
 -->
-
-
