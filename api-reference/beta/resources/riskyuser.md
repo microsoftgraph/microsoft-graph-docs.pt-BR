@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 838fe1b986245909c1c1251d23fe048d2ebf65ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77b3a483c8993b421348bb052c66d66a1558beb0
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016195"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400708"
 ---
 # <a name="riskyuser-resource-type"></a>tipo de recurso riskyUser
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa usuários do Azure AD que estão em risco. O Azure AD avalia continuamente o risco do usuário com base em vários sinais e aprendizado de máquina. Essa API fornece acesso programático a todos os usuários de risco em seu Azure AD.
 
-Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
+Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
 
@@ -89,5 +89,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 7982cfd3cf167627879e2fe4d36e2f676b1ab16f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f4bb07186ede8949256fba40ad107affaf2889cc
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989525"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400750"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhar com a API de gerenciamento de qualificação do Azure AD
 
@@ -38,14 +38,14 @@ Para obter um tutorial que mostra como usar o gerenciamento de qualificação pa
 
 Observe que o recurso de gerenciamento de direito, incluindo a API, está incluído no Azure AD Premium P2. O locatário em que o gerenciamento de qualificação está sendo usado deve ter uma assinatura válida de compra ou de avaliação do Azure AD Premium P2 ou EMS e5.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 | [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Ler as propriedades de um objeto **entitlementManagementSettings** . |
-| [Atualização](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualiza as propriedades de um objeto **entitlementManagementSettings** . |
+| [Update](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualiza as propriedades de um objeto **entitlementManagementSettings** . |
 | [Listar accessPackages](../api/accesspackage-list.md) | coleção [accessPackage](accesspackage.md) | Recupere uma lista de objetos **accessPackage** . |
 | [Criar accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Criar um novo objeto **accessPackage** . |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um objeto **accessPackage** . |
@@ -95,7 +95,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 ## <a name="see-also"></a>Confira também
 
- - [O que é gerenciamento de qualificação do AD do Azure?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+ - [O que é gerenciamento de qualificação do AD do Azure?](/azure/active-directory/governance/entitlement-management-overview)
 
 
 
@@ -108,5 +108,3 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

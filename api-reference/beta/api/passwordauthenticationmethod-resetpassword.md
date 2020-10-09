@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aef4019edc27375418af3f5c4b1630037c50745a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8461fe3b707781471de6e1a78be42fe722a5b1fa
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040333"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400902"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Sem suporte. | Sem suporte. |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador global
 * Administrador de autenticação privilegiada
@@ -61,7 +61,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|newPassword|String|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente de nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres Unicode sem codificação. Ele é validado em relação ao sistema de senha banida do locatário antes da aceitação e deve cumprir a nuvem do locatário e/ou os requisitos de senha local.|
+|newPassword|Cadeia de caracteres|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente de nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres Unicode sem codificação. Ele é validado em relação ao sistema de senha banida do locatário antes da aceitação e deve cumprir a nuvem do locatário e/ou os requisitos de senha local.|
 
 ## <a name="response"></a>Resposta
 
@@ -205,5 +205,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

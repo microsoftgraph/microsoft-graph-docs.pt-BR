@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 6b0aaf5ac4157512c1b84acf3a76800669b14f7d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a29fca2d7bb94c87b17f1713088d36b1897ab38f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070533"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401607"
 ---
 # <a name="privileged-identity-management"></a>Privileged Identity Management
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[O PIM (Privileged Identity Management) do Active Directory do Azure (Azure AD)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) é um serviço que permite gerenciar, controlar e monitorar o acesso a recursos importantes em sua organização. Isso inclui o acesso a recursos no Azure AD, recursos do Azure e outros Microsoft Online Services, como o Microsoft 365 ou o Microsoft Intune. O Microsoft Graph fornece APIs que você pode usar para gerenciar as funções do Azure AD e as funções de recursos do Azure.
+[O PIM (Privileged Identity Management) do Active Directory do Azure (Azure AD)](/azure/active-directory/privileged-identity-management/pim-configure) é um serviço que permite gerenciar, controlar e monitorar o acesso a recursos importantes em sua organização. Isso inclui o acesso a recursos no Azure AD, recursos do Azure e outros Microsoft Online Services, como o Microsoft 365 ou o Microsoft Intune. O Microsoft Graph fornece APIs que você pode usar para gerenciar as funções do Azure AD e as funções de recursos do Azure.
 
 - [APIs para funções do Azure AD](privilegedidentitymanagement-directory.md)
 - [APIs para funções de recursos do Azure](privilegedidentitymanagement-resources.md)
@@ -38,5 +38,3 @@ Namespace: microsoft.graph
   "suppressions": []
 }
 -->
-
-

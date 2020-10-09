@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 75f39fede834709b40d1818a547fe89b00096334
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0f72de87ca36294fe9b359bb1d62638a2b56b2d8
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013654"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401446"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -72,7 +72,7 @@ Para saber mais sobre os grupos do Microsoft 365 e as experiências de administr
 
 Os grupos de segurança servem para controlar o acesso de usuários aos recursos. Ao verificar se um usuário faz parte de um grupo de segurança, seu aplicativo pode tomar decisões de autorização quando esse usuário tentar acessar alguns recursos seguros do seu aplicativo. Os grupos de segurança podem ter como membros usuários e outros grupos de segurança.
 
-Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Não é possível criar grupos de segurança habilitados para email por meio da API, mas as outras operações do grupo funcionarão. Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](https://technet.microsoft.com/library/bb123521%28v=exchg.160%29.aspx).
+Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Não é possível criar grupos de segurança habilitados para email por meio da API, mas as outras operações do grupo funcionarão. Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](/Exchange/recipients/mail-enabled-security-groups).
 
 ### <a name="security-group-example"></a>Exemplo de grupo de segurança
 
@@ -127,7 +127,7 @@ Os grupos do Microsoft 365 no Yammer são usados para facilitar a colaboração 
 
 ## <a name="group-based-licensing"></a>Licenciamento com base em grupo
 
-O recurso de licenciamento baseado em grupo pode ser usado para atribuir uma ou mais licenças de produto a um grupo do Azure AD. O Azure AD garante que as licenças sejam atribuídas a todos os membros do grupo. Todos os novos membros que ingressarem no grupo receberão as licenças apropriadas. Quando eles deixarem o grupo, essas licenças serão removidas. O recurso só pode ser usado com grupos de segurança e grupos do Microsoft 365 que tenham securityEnabled=TRUE. Para saber mais sobre o licenciamento baseado em grupo, clique [aqui](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+O recurso de licenciamento baseado em grupo pode ser usado para atribuir uma ou mais licenças de produto a um grupo do Azure AD. O Azure AD garante que as licenças sejam atribuídas a todos os membros do grupo. Todos os novos membros que ingressarem no grupo receberão as licenças apropriadas. Quando eles deixarem o grupo, essas licenças serão removidas. O recurso só pode ser usado com grupos de segurança e grupos do Microsoft 365 que tenham securityEnabled=TRUE. Para saber mais sobre o licenciamento baseado em grupo, clique [aqui](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## <a name="common-use-cases"></a>Casos de usos comuns
 
@@ -144,4 +144,3 @@ Ao usar o Microsoft Graph, você pode executar as seguintes operações comuns.
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
-

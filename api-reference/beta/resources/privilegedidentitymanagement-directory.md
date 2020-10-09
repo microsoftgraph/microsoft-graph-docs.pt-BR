@@ -5,12 +5,12 @@ localization_priority: Priority
 author: shauliu
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 07a59775bbda04bf94608b21aea59afade1d92e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 894275d8f2561d316c5c2823796cb7c6db94c4b1
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070587"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401670"
 ---
 # <a name="privileged-identity-management---azure-ad"></a>Privileged Identity Management - Azure AD
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> A API para que o [Privileged Identity Management (PIM) do Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) gerencie funções do Azure AD sofrerá alterações entre junho e novembro de 2019 para acompanhar o namespace e a convenção da [API de recursos do Azure](privilegedidentitymanagement-resources.md). O PIM do Azure AD se tornará um recurso na convenção de recursos do Azure. Se essa alteração afetar diretamente seu locatário, preencha o [formulário de Mudança da API do Graph para PIM do Azure AD](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzfBSoy7dT5DqNLWwotW3OFUNFFMRlRLSUtRNEdDWEZHN05LT09IWjkyTS4u) para obter informações adicionais, suporte e a capacidade de agendar um horário para essa alteração da API.
+> A API para que o [Privileged Identity Management (PIM) do Azure Active Directory (Azure AD)](/azure/active-directory/privileged-identity-management/pim-configure) gerencie funções do Azure AD sofrerá alterações entre junho e novembro de 2019 para acompanhar o namespace e a convenção da [API de recursos do Azure](privilegedidentitymanagement-resources.md). O PIM do Azure AD se tornará um recurso na convenção de recursos do Azure. Se essa alteração afetar diretamente seu locatário, preencha o [formulário de Mudança da API do Graph para PIM do Azure AD](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzfBSoy7dT5DqNLWwotW3OFUNFFMRlRLSUtRNEdDWEZHN05LT09IWjkyTS4u) para obter informações adicionais, suporte e a capacidade de agendar um horário para essa alteração da API.
 
 Aqui está a lista de métodos fornecidos pelo PIM para funções do Azure AD. O serviço é criado com base no OData. Para filtrar os resultados de uma consulta, use as expressões OData ``$filter`` padrão nos URIs.
 
@@ -60,5 +60,3 @@ Aqui está a lista de métodos fornecidos pelo PIM para funções do Azure AD. O
   "suppressions": []
 }
 -->
-
-

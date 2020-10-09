@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 345a877796f6fd2a7465de5c67c89009cb609faf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9f4c58da1bf81e72b0f43f5d34b6489a1e81a7f5
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971402"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402503"
 ---
 # <a name="get-chartfont"></a>Obter ChartFont
 
@@ -34,7 +34,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/font
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -111,4 +111,3 @@ Content-length: 134
   "suppressions": [
   ]
 }-->
-

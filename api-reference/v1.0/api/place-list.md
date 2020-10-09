@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 00fd4afb1d0f2ac71109158178c131c05ec214af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: baf669e04baba3f76d9fd38cf33507e165ea3920
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020731"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402007"
 ---
 # <a name="list-places"></a>Locais de lista
 
@@ -28,7 +28,7 @@ A **sala** e a **salalist** são derivadas do objeto **local** .
 
 Por padrão, essa operação retorna 100 locais por página.
 
-Em comparação com as funções [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) e [findRoomLists](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta) , essa operação retorna uma carga mais rica para salas e listas de salas. Veja [detalhes](../resources/place.md#using-the-places-api) sobre como eles se comparam.
+Em comparação com as funções [findRooms](/graph/api/user-findrooms?view=graph-rest-beta) e [findRoomLists](/graph/api/user-findroomlists?view=graph-rest-beta) , essa operação retorna uma carga mais rica para salas e listas de salas. Veja [detalhes](../resources/place.md#using-the-places-api) sobre como eles se comparam.
 
 ## <a name="permissions"></a>Permissões
 
@@ -408,4 +408,3 @@ Content-type: application/json
     "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
-

@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Retornar a permissão de compartilhamento eficaz de um recurso de permissão específico.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 02de4b778310290668dd447fe5a46fec8ef883fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a530b18fcbd5d1336fbee730004a487fd2c5710
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984807"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400596"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Obter permissão de compartilhamento para um arquivo ou pasta
 
@@ -24,7 +24,7 @@ Permissões efetivas de um item podem vir de duas fontes: permissões definidas 
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade `inheritedFrom` Esta propriedade é um recurso [itemReference](../resources/itemreference.md) que faz referência ao ancestral do qual a permissão é herdada.
 
-Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/library/cc721640.aspx#section1).
+Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](/SharePoint/sites/user-permissions-and-permission-levels#section1).
 
 ## <a name="permissions"></a>Permissões
 
@@ -133,4 +133,3 @@ Veja mais informações sobre como os erros são retornados no tópico [Resposta
   "suppressions": [
   ]
 } -->
-

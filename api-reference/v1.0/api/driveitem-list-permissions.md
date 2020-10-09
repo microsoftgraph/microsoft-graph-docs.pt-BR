@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Listar as permissões de compartilhamento efetivas de em um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 62b133fc1924fa2ee03f2908a1ff473fb28714a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f106b1bbd7506711d03a738a2cfc0f02e543948
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042118"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401330"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um driveItem
 
@@ -72,7 +72,7 @@ As permissões efetivas de compartilhamento de um DriveItem podem vir de duas fo
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade **inheritedFrom**. Esta propriedade é um recurso [**itemReference**](../resources/itemreference.md) que referencia o ancestral do qual a permissão é herdada.
 
-Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/library/cc721640.aspx#section1).
+Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](/SharePoint/sites/user-permissions-and-permission-levels#section1).
 
 ## <a name="example"></a>Exemplo
 
@@ -172,4 +172,3 @@ Veja mais informações sobre como os erros são retornados no tópico [Resposta
   "suppressions": [
   ]
 } -->
-

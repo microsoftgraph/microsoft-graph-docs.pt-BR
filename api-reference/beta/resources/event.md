@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b480e439eec2b0448437d41f7e93c5a948d3a105
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ff96feabbd3008c54436dcfc82eb853218cb531
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064270"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402531"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Microsoft 365.
 
-O número máximo de participantes incluídos em um **evento **e o número máximo de destinatários em uma [eventMessage](eventmessage.md) enviada de uma caixa de correio do Exchange Online é 500. Para obter mais informações, veja [limites de envio](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+O número máximo de participantes incluídos em um **evento **e o número máximo de destinatários em uma [eventMessage](eventmessage.md) enviada de uma caixa de correio do Exchange Online é 500. Para obter mais informações, veja [limites de envio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 
@@ -230,5 +230,3 @@ Veja a seguir uma representação JSON do recurso
   "suppressions": []
 }
 -->
-
-

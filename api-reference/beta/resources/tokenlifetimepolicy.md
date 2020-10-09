@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 721444335ee4787a34e6fefd26d7d8cde270851e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 000adc837b85ff18842b009fbba5a7911f90fc2b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979305"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401100"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tipo de recurso tokenLifetimePolicy
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma política que pode controlar o tempo de vida de um token de acesso JWT, um token de ID ou um token SAML 1.1/2.0 emitido pelo Azure Active Directory (Azure AD). Você pode definir vidas úteis de token para todos os aplicativos em sua organização, para um aplicativo multilocatário (várias organizações) ou para uma entidade de serviço específica em sua organização.  Para obter mais detalhes do cenário, consulte [tempos de vida de token configuráveis no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+Representa uma política que pode controlar o tempo de vida de um token de acesso JWT, um token de ID ou um token SAML 1.1/2.0 emitido pelo Azure Active Directory (Azure AD). Você pode definir vidas úteis de token para todos os aplicativos em sua organização, para um aplicativo multilocatário (várias organizações) ou para uma entidade de serviço específica em sua organização.  Para obter mais detalhes do cenário, consulte [tempos de vida de token configuráveis no Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 >Observação: não há suporte para a configuração dessa política para tokens de atualização e de sessão.
 
 Herda de [stsPolicy](stsPolicy.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -35,17 +35,17 @@ Herda de [stsPolicy](stsPolicy.md).
 | [Excluir tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | Nenhum | Excluir um objeto tokenLifetimePolicy. |
 | [Listar se aplica](../api/tokenlifetimepolicy-list-appliesto.md) | Coleção [directoryObject](directoryobject.md) | Obtenha a lista de directoryObjects à qual essa política foi aplicada. |
 | [Atribiur tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md) | Nenhum | Atribuir um objeto tokenLifetimePolicy a um objeto [Application](application.md) ou [servicePrincipalName](serviceprincipal.md) . |
-| [Lista atribuída tokenLifetimePolicy](../api/application-list-tokenlifetimepolicies.md) | Conjunto [tokenLifetimePolicy](tokenlifetimepolicy.md) | Lista os objetos tokenLifetimePolicy que são atribuídos a um objeto [Application](application.md) ou [servicePrincipalName](serviceprincipal.md) . |
+| [Lista atribuída tokenLifetimePolicy](../api/application-list-tokenlifetimepolicies.md) | Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md) | Lista os objetos tokenLifetimePolicy que são atribuídos a um objeto [Application](application.md) ou [servicePrincipalName](serviceprincipal.md) . |
 | [Remover tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md) | Nenhum | Remover um objeto tokenLifetimePolicy de um objeto [Application](application.md) ou [servicePrincipalName](serviceprincipal.md) . |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Identificador exclusivo da política. Somente leitura.|
-|definir|Coleção de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
-|description|String| Descrição da política.|
-|displayName|String| Nome para exibição dessa política. Obrigatório.|
+|id|Cadeia de caracteres| Identificador exclusivo da política. Somente leitura.|
+|definir|Conjunto de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|description|Cadeia de caracteres| Descrição da política.|
+|displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
 |isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 
@@ -67,7 +67,7 @@ As propriedades abaixo formam o objeto JSON que representa uma política de temp
 
 | Propriedade     | Tipo   |Descrição| Valor mínimo | Valor máximo | Valor padrão|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|Controla por quanto tempo os tokens de acesso e de ID são considerados válidos.|10 minutos|1 dia|1 hora|
+|AccessTokenLifetime|Cadeia de caracteres|Controla por quanto tempo os tokens de acesso e de ID são considerados válidos.|10 minutos|1 dia|1 hora|
 |Versão|Inteiro|Defina o valor 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
 
 ## <a name="relationships"></a>Relações
@@ -109,4 +109,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-

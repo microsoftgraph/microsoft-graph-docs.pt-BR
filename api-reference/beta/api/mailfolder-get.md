@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5263c45740bb0fbb70e723c387cb94cfb47b05b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55cdf16f564f4e780871ec77530384b4ff4c2c7f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053661"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401824"
 ---
 # <a name="get-mailfolder"></a>Obter mailFolder
 
@@ -46,7 +46,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -204,5 +204,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

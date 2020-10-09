@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0be7f15424c7e949207c8fa129df0536ecb83c22
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac9606b0b1d2a5bd49ac25f25ce43996b9bb60a1
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021151"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400729"
 ---
 # <a name="riskdetection-resource-type"></a>tipo de recurso riskDetection
 
@@ -22,7 +22,7 @@ Representa informações sobre um risco detectado em um locatário do Azure AD.
 
 O Azure AD avalia continuamente [os riscos do usuário](riskyuser.md) e os riscos de [entrada do](signin.md) aplicativo ou do usuário com base em vários sinais e aprendizado de máquina. Essa API fornece acesso programático a todas as detecções de risco em seu ambiente do Azure AD.
 
-Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
+Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >[!NOTE]
 >Você deve ter uma licença do Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
@@ -107,5 +107,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

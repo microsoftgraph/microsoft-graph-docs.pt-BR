@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3ab71087bcbed6b75c4f14f285c46ee56bf9f2ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98c15b4638ce41debc9e8dd040d77d610ad1665b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086988"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401999"
 ---
 # <a name="get-page"></a>Obter página
 
@@ -42,8 +42,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
-|Delegada (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
+|Delegado (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,7 +55,7 @@ GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `select` aos `expand` [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte `select` aos `expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 A resposta padrão expande `parentSection` e seleciona as `id` `name` Propriedades, e e `self` . `expand`Os valores válidos para páginas são `parentNotebook` e `parentSection` .
 
@@ -112,4 +112,3 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
-

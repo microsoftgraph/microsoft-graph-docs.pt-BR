@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: d03fae8340f9513e8fb6a26f409682e72b86842e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f4b8694be5499e4f7c979b3ab6000cce0abe688
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026219"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400737"
 ---
 # <a name="reviewsetquery-resource-type"></a>tipo de recurso reviewSetQuery
 
@@ -32,13 +32,13 @@ As consultas set de revisão são usadas para consultar e analisar os dados arma
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| createdBy | [identitySet](https://docs.microsoft.com/graph/api/resources/identityset) | O usuário que criou a consulta. |
-| createdDateTime |DateTimeOffset| A hora e a data em que a consulta foi criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-| displayName | String | O nome da consulta|
-| id |String| O identificador exclusivo da consulta. Somente leitura.|
-| lastModifiedBy | [identitySet](https://docs.microsoft.com/graph/api/resources/identityset) | O usuário que modificou a consulta pela última vez. |
-| lastModifiedDateTime |DateTimeOffset | A data e a hora em que a consulta foi modificada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-| consulta | String | A cadeia de caracteres de consulta na consulta KQL (linguagem de consulta de palavra-chave). Consulte para https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery obter mais detalhes.  Este campo é mapeado diretamente para a condição de palavras-chave.  Você pode refinar pesquisas usando campos listados no *nome de campo pesquisável* emparelhado com valores, por exemplo, *Subject: "Financials trimestrais" e date>= 06/01/2016 e date<= 07/01/2016* |
+| createdBy | [identitySet](/graph/api/resources/identityset) | O usuário que criou a consulta. |
+| createdDateTime |DateTimeOffset| A hora e a data em que a consulta foi criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+| displayName | Cadeia de caracteres | O nome da consulta|
+| id |Cadeia de caracteres| O identificador exclusivo da consulta. Somente leitura.|
+| lastModifiedBy | [identitySet](/graph/api/resources/identityset) | O usuário que modificou a consulta pela última vez. |
+| lastModifiedDateTime |DateTimeOffset | A data e a hora em que a consulta foi modificada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+| consulta | Cadeia de caracteres | A cadeia de caracteres de consulta na consulta KQL (linguagem de consulta de palavra-chave). Consulte para https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery obter mais detalhes.  Este campo é mapeado diretamente para a condição de palavras-chave.  Você pode refinar pesquisas usando campos listados no *nome de campo pesquisável* emparelhado com valores, por exemplo, *Subject: "Financials trimestrais" e date>= 06/01/2016 e date<= 07/01/2016* |
 
 ## <a name="relationships"></a>Relações
 
@@ -79,5 +79,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

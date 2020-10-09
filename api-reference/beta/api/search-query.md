@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e877b1e126a353aae04a90500fdfe99cd4ec8342
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: c699dab1c97d5b7650f42d4282e36d35b2769a31
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193314"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401796"
 ---
 # <a name="searchentity-query"></a>searchEntity: consulta
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Mail. Read, mail. ReadWrite, Calendars. Read, Calendars. ReadWrite, files. Read. All, files. ReadWrite. All, sites. Read. All, sites. ReadWrite. All, ExternalItem. Read. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

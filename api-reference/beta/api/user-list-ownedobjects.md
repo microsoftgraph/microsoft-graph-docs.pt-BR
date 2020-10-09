@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8cf334224fa926eaf159b407e05c5b4d9a8a76e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d49a966fa3a8a6e5e73521f6e5801f71876deeae
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031820"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401700"
 ---
 # <a name="list-ownedobjects"></a>Listar ownedObjects
 
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /users/{id | userPrincipalName}/ownedObjects
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -110,5 +110,3 @@ Content-length: 55
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: ef60a818420ef590ab89c998b5c4ae51edaa21f8
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 1627c59a653e5ab26e4da6d50d3f80cccefc9c50
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373199"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401460"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -41,30 +41,30 @@ Esse recurso permite:
 | [Excluir grupo](../api/group-delete.md) | Nenhum | Excluir um objeto group. |
 | [Listar grupos](../api/group-list.md) | [group](group.md) | Ler as propriedades e as relações de todos os objetos do grupo. |
 | [delta](../api/group-delta.md) | Coleção group | Obter alterações incrementais para grupos. |
+| [Adicionar membro](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
+| [Adicionar proprietário](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
+| [Criar configuração](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) | Criar um objeto de configuração com base em um directorySettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação. |
+| [Excluir configuração](../api/directorysetting-delete.md) | None | Excluir um objeto de configuração. |
+| [Obter o ponto de extremidade](../api/endpoint-get.md) | [ponto de extremidade](endpoint.md) | Leia as propriedades e os relacionamentos do objeto ponto de extremidade. |
+| [Obter configuração](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) | Ler propriedades de um objeto de configuração específico. |
+| [Listar pontos de extremidade](../api/group-list-endpoints.md) | conjunto [ponto de extremidade](endpoint.md)  | Obtenha uma coleção de o objeto ponto de extremidade. |
+| [Listar membros](../api/group-list-members.md) | Coleção [directoryObject](directoryobject.md) | Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**. |
+| [Listar memberOf](../api/group-list-memberof.md) | Coleção [directoryObject](directoryobject.md) | Obter os grupos e as unidades administrativas dos quais esse grupo é membro direto, da propriedade de navegação memberOf. |
 | [Listar groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md) | Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md) | Listar políticas de ciclo de vida de grupo. |
 | [Listar proprietários](../api/group-list-owners.md) | Coleção [directoryObject](directoryobject.md) | Obter os proprietários do grupo da propriedade de navegação **owners**. |
-| [Adicionar proprietário](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
-| [Remover proprietário](../api/group-delete-owners.md) | Nenhum | Remover um proprietário de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **owners**. |
-| [Listar membros](../api/group-list-members.md) | Coleção [directoryObject](directoryobject.md) | Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**. |
+| [Listar configurações](../api/directorysetting-list.md) | conjunto [directorySetting](directorysetting.md) | Lista propriedades de todos os objetos de configuração. |
 | [Listar membros transitivos](../api/group-list-transitivemembers.md) | Coleção [directoryObject](directoryobject.md) | Obtenha os usuários, grupos, dispositivos e entidades de serviço que são membros, incluindo membros aninhados desse grupo. |
-| [Adicionar membro](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
+| [Listar memberOf transitivos](../api/group-list-transitivememberof.md) | Coleção [directoryObject](directoryobject.md) | Listar as unidades administrativas e grupos dos quais esse grupo é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
+| [Remover proprietário](../api/group-delete-owners.md) | Nenhum | Remover um proprietário de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **owners**. |
 | [Remover membro](../api/group-delete-members.md) | Nenhum | Remover um membro de um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
-| [Listar memberOf](../api/group-list-memberof.md) | Coleção [directoryObject](directoryobject.md) | Obter os grupos e as unidades administrativas dos quais esse grupo é membro direto, da propriedade de navegação memberOf. |
-| [Listar membros transitivos](../api/group-list-transitivememberof.md) | Coleção [directoryObject](directoryobject.md) | Listar as unidades administrativas e grupos dos quais esse grupo é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
+| [Atualizar configuração](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Atualizar um objeto setting. |
+| [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Adicione ou remova assinaturas para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
 | [checkMemberGroups](../api/group-checkmembergroups.md) | Coleção de cadeias de caracteres | Verificar associação em uma lista de grupos. Essa função é transitiva. |
 | [checkMemberObjects](../api/group-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de grupo, função de diretório ou objetos de unidade administrativa. Essa função é transitiva. |
+| [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Avaliar se um usuário ou dispositivo é ou seria membro de um grupo dinâmico. |
 | [getMemberGroups](../api/group-getmembergroups.md) | Coleção de cadeias de caracteres | Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva. |
 | [getMemberObjects](../api/group-getmemberobjects.md) | Coleção de cadeias de caracteres | Retornar todas as unidades administrativas e grupos dos quais o grupo é membro. Essa função é transitiva. |
-| [Criar configuração](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) | Criar um objeto de configuração com base em um directorySettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação. |
-| [Obter configuração](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) | Ler propriedades de um objeto de configuração específico. |
-| [Listar configurações](../api/directorysetting-list.md) | conjunto [directorySetting](directorysetting.md) | Lista propriedades de todos os objetos de configuração. |
-| [Atualizar configuração](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Atualizar um objeto setting. |
-| [Excluir configuração](../api/directorysetting-delete.md) | None | Excluir um objeto de configuração. |
-| [Listar pontos de extremidade](../api/group-list-endpoints.md) | conjunto [ponto de extremidade](endpoint.md)  | Obtenha uma coleção de o objeto ponto de extremidade. |
-| [Obter o ponto de extremidade](../api/endpoint-get.md) | [ponto de extremidade](endpoint.md) | Leia as propriedades e os relacionamentos do objeto ponto de extremidade. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Validar se o nome de exibição de um grupo do Microsoft 365 ou apelido de email está em conformidade com as políticas de nomenclatura. |
-| [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Adicione ou remova assinaturas para o grupo. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.                                                                                             |
-| [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Avaliar se um usuário ou dispositivo é ou seria membro de um grupo dinâmico. |
 | **Atribuição de funções do aplicativo** |||
 | [List appRoleAssignments](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Obter os aplicativos e funções do aplicativo atribuídos a esse grupo. |
 | [Adicionar uma atribuição de função do aplicativo](../api/group-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Atribuir uma função do aplicativo a esse grupo. |

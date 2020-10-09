@@ -1,16 +1,16 @@
 ---
 title: 'groupLifecyclePolicy: renovar'
-description: Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
+description: Renovar a expiração de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1421a2ffa62935c8b16ba8d8e3126e3d3cede770
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d41890b33cb2793caf8e29d970dee24299551fe
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001824"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402440"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renovar
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
+Renovar a expiração de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
 
-> **Observação:** Em V 1.0, [use o recurso de grupo para fazer solicitações de renovação](/graph/api/group-renew?view=graph-rest-1.0).
+> **Observação:** Ao chamar o ponto de extremidade v 1.0, use o método [renovar grupo](/graph/api/group-renew?view=graph-rest-1.0) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -116,5 +116,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

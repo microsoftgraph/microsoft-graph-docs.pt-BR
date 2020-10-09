@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 339fa4c3a3ef54b8bb93b6b7517162c1fc9f8bc8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d477577c941ee28b73bd9034480f6b410da2265e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075540"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401742"
 ---
 # <a name="tiindicator-resource-type"></a>tipo de recurso tiIndicator
 
@@ -42,7 +42,7 @@ O suporte atual do **targetProduct** inclui o seguinte:
 
    Há um limite de 15000 indicadores por locatário para o Microsoft defender ATP.
 
-Para mais detalhes sobre os tipos de indicadores com suporte e limites de contagens de indicadores por locatário, confira [Gerenciar indicadores](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+Para mais detalhes sobre os tipos de indicadores com suporte e limites de contagens de indicadores por locatário, confira [Gerenciar indicadores](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## <a name="methods"></a>Métodos
 
@@ -73,25 +73,25 @@ Para mais detalhes sobre os tipos de indicadores com suporte e limites de contag
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|ação|cadeia de caracteres| A ação a ser aplicada se o indicador for correspondido de dentro da ferramenta de segurança do targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`. **Obrigatório.**|
-|activityGroupNames|Coleção de cadeias de caracteres|O nome do Cyber Threat Intelligence (s) para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaças.|
+|ação|string| A ação a ser aplicada se o indicador for correspondido de dentro da ferramenta de segurança do targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`. **Obrigatório.**|
+|activityGroupNames|Conjunto de cadeias de caracteres|O nome do Cyber Threat Intelligence (s) para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaças.|
 |additionalInformation|Cadeia de caracteres|Uma área catchall na qual os dados extras do indicador não cobertos pelas outras propriedades de tiIndicator podem ser colocados. Os dados colocados no additionalInformation normalmente não serão utilizados pela ferramenta de segurança do targetProduct.|
 |azureTenantId|String| Marcado pelo sistema quando o indicador está ingerido. A ID de locatário do Azure Active Directory do cliente remetente. **Obrigatório.**|
 |confidence|Int32|Um inteiro representando a confiança dos dados dentro do indicador identifica precisamente o comportamento mal-intencionado. Os valores aceitáveis são 0 – 100 com 100 sendo os mais altos.|
-|description|String| Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador. **Obrigatório.**|
+|description|Cadeia de caracteres| Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador. **Obrigatório.**|
 |diamondModel|[diamondModel](#diamondmodel-values)|A área do modelo em losango em que esse indicador existe. Os valores possíveis são: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| Cadeia de caracteres DateTime indicando quando o indicador expira. Todos os indicadores devem ter uma data de vencimento para evitar indicadores obsoletos persistentes no sistema. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. **Obrigatório.**|
 |externalId|Cadeia de caracteres| Um número de identificação que liga o indicador de volta para o sistema do provedor de indicadores (por exemplo, uma chave externa). |
 |id|Cadeia de caracteres|Criado pelo sistema quando o indicador é ingerido. GUID gerado/identificador exclusivo. Somente leitura.|
-|ingestedDateTime|DateTimeOffset| Marcado pelo sistema quando o indicador está ingerido. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|isActive|Booliano| Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com este conjunto como ' false ' para desativar indicadores no sistema.|
+|ingestedDateTime|DateTimeOffset| Marcado pelo sistema quando o indicador está ingerido. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|isActive|Boolean| Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No entanto, os provedores podem enviar indicadores existentes com este conjunto como ' false ' para desativar indicadores no sistema.|
 |killChain|coleção [killChain](#killchain-values)|Uma matriz JSON de cadeias de caracteres que descreve o ponto ou os pontos na cadeia de Kill que este indicador aponta. Consulte ' valores killChain ' abaixo para ver os valores exatos. |
 |knownFalsePositives|Cadeia de caracteres|Cenários nos quais o indicador pode causar falsos positivos. Isso deve ser um texto legível por pessoas.|
-|lastReportedDateTime|DateTimeOffset|A última vez que o indicador foi visto. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|malwareFamilyNames|Coleção de cadeias de caracteres|O nome da família de malware associado a um indicador, se existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, que possa ser encontrado por meio da [enciclopédia de ameaças](https://www.microsoft.com/wdsi/threats)de inteligência de segurança do Windows Defender.|
-|passiveOnly|Booliano |Determina se o indicador deve acionar um evento que é visível para um usuário final. Quando definido como ' true ', as ferramentas de segurança não notificarão o usuário final de que um ' hit ' ocorreu. Isso geralmente é tratado como um modo de auditoria ou silencioso por produtos de segurança onde eles simplesmente farão o registro de que uma correspondência ocorreu, mas não executará a ação. O valor padrão é falso. |
+|lastReportedDateTime|DateTimeOffset|A última vez que o indicador foi visto. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|malwareFamilyNames|Conjunto de cadeias de caracteres|O nome da família de malware associado a um indicador, se existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, que possa ser encontrado por meio da [enciclopédia de ameaças](https://www.microsoft.com/wdsi/threats)de inteligência de segurança do Windows Defender.|
+|passiveOnly|Boolean |Determina se o indicador deve acionar um evento que é visível para um usuário final. Quando definido como ' true ', as ferramentas de segurança não notificarão o usuário final de que um ' hit ' ocorreu. Isso geralmente é tratado como um modo de auditoria ou silencioso por produtos de segurança onde eles simplesmente farão o registro de que uma correspondência ocorreu, mas não executará a ação. O valor padrão é falso. |
 |severity|Int32| Um inteiro que representa a gravidade do comportamento mal-intencionado identificado pelos dados dentro do indicador. Os valores aceitáveis são 0 – 5, onde 5 é o mais grave e zero não é grave. O valor padrão é 3. |
-|tags|Coleção de cadeias de caracteres|Uma matriz JSON de cadeias de caracteres que armazena marcas arbitrárias/palavras-chave. |
+|tags|String collection|Uma matriz JSON de cadeias de caracteres que armazena marcas arbitrárias/palavras-chave. |
 |targetProduct|Cadeia de caracteres|Um valor String que representa um único produto de segurança ao qual o indicador deve ser aplicado. Os valores aceitáveis são: `Azure Sentinel` , `Microsoft Defender ATP` . **Required**|
 |threattype|[threattype](#threattype-values)| Cada indicador deve ter um tipo de ameaça de indicador válido. Os valores possíveis são: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Obrigatório.** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| Valor do protocolo de luz de tráfego para o indicador. Os valores possíveis são: `unknown`, `white`, `green`, `amber`, `red`. **Obrigatório.**|
@@ -114,9 +114,9 @@ Para mais detalhes sobre os tipos de indicadores com suporte e limites de contag
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|fileCompileDateTime|DateTimeOffset|DateTime quando o arquivo foi compilado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|fileCreatedDateTime|DateTimeOffset| DateTime quando o arquivo foi criado. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|fileHashType|cadeia de caracteres| O tipo de hash armazenado em filehashvalue. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
+|fileCompileDateTime|DateTimeOffset|DateTime quando o arquivo foi compilado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|fileCreatedDateTime|DateTimeOffset| DateTime quando o arquivo foi criado. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|fileHashType|string| O tipo de hash armazenado em filehashvalue. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
 |filehashvalue|Cadeia de caracteres| O valor de hash do arquivo.|
 |filemutexname|Cadeia de caracteres| Nome mutex usado em detecções baseadas em arquivo.|
 |fileName|String|Nome do arquivo se o indicador for baseado em arquivo. Vários nomes de arquivo podem ser delimitados por vírgulas. |
@@ -146,7 +146,7 @@ Para mais detalhes sobre os tipos de indicadores com suporte e limites de contag
 |networkSourceIPv6|Cadeia de caracteres|Origem do endereço IP IPv6.|
 |networkSourcePort|Int32|Origem da porta TCP.|
 |url|Cadeia de caracteres|Localizador de recursos uniforme. Esta URL deve estar em conformidade com a RFC 1738.|
-|userAgent|Cadeia de caracteres|Cadeia de caracteres do agente de usuário de uma solicitação da Web que pode indicar comprometimento.|
+|userAgent|Cadeia de caracteres|User-Agent cadeia de caracteres de uma solicitação da Web que pode indicar comprometimento.|
 
 ### <a name="diamondmodel-values"></a>valores de diamondModel
 
@@ -291,5 +291,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

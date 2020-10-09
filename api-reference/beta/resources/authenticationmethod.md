@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b9510a53ea80142bd9f155dce3e12824ad2d186e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6afb785527b2d2448e54533ce02c0a72bf84353
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034119"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402342"
 ---
 # <a name="authenticationmethod-resource-type"></a>tipo de recurso authenticationMethod
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um método de autenticação registrado para um usuário. Um [método de autenticação](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) é algo usado por um usuário para autenticar ou provar sua identidade para o sistema. Alguns exemplos incluem senha, telefone (utilizável via SMS ou chamada de voz), chaves de segurança do FIDO2 e muito mais. No momento, os métodos Password e Phone são implementados.
+Representa um método de autenticação registrado para um usuário. Um [método de autenticação](/azure/active-directory/authentication/concept-authentication-methods) é algo usado por um usuário para autenticar ou provar sua identidade para o sistema. Alguns exemplos incluem senha, telefone (utilizável via SMS ou chamada de voz), chaves de segurança do FIDO2 e muito mais. No momento, os métodos Password e Phone são implementados.
 
 ## <a name="methods"></a>Métodos
 
@@ -31,7 +31,7 @@ Representa um método de autenticação registrado para um usuário. Um [método
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| O identificador da instância de um método de autenticação registrado para este usuário. Somente leitura. |
+|id|Cadeia de caracteres| O identificador da instância de um método de autenticação registrado para este usuário. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
 
@@ -66,5 +66,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a55d0f7584edaa0caecafb52384073c202ba1857
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03a8c5f8369b54a105c904da0fd6debebb33a98e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034207"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401544"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -28,7 +28,7 @@ Habilitar, configurar ou desabilitar uma ou mais das seguintes configurações c
 - fuso horário
 - [horário de trabalho](../resources/workinghours.md)
 
-Ao atualizar o formato de data ou hora preferencial para um usuário, especifique-o, respectivamente, o formato de [data abreviada](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou de [hora curta](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) . 
+Ao atualizar o formato de data ou hora preferencial para um usuário, especifique-o, respectivamente, o formato de [data abreviada](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) ou de [hora curta](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) . 
 
 Ao atualizar o fuso horário preferencial para um usuário, especifique-o no formato de fuso horário do Windows ou da [autoridade de números atribuídos à Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário do Olson). Você também pode personalizar ainda mais o fuso horário, conforme mostrado no [exemplo 2](#example-2) abaixo.
 
@@ -51,7 +51,7 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -269,5 +269,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

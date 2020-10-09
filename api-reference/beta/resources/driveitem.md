@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0e24d33cedceb65bb607282f329d72ec0ba5ab1e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 887705234bb70918ebca82bcea30fbd82d9812ce
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067390"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400758"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -127,7 +127,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
 | pendingOperations    | [pendingOperations][] | Se presente, indica que uma ou mais operações que podem afetar o estado de driveItem estão aguardando conclusão. Somente leitura.
-| Foto                | [photo][]          | Metadados de foto, se o item for uma foto. Somente leitura.
+| photo                | [photo][]          | Metadados de foto, se o item for uma foto. Somente leitura.
 | publication          | [publicationFacet][] | Fornece informações sobre o estado de publicação ou de check-out de um item, nos locais que oferecem suporte a essas ações. Esta propriedade não retorna por padrão. Somente leitura. |
 | remoteItem           | [remoteItem][]     | Dados do item remoto, se o item for compartilhado de uma unidade diferente daquela que está sendo acessada. Somente leitura.
 | root                 | [root][]           | Se essa propriedade for não nula, indicará que o driveItem é o principal driveItem na unidade.
@@ -235,7 +235,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [List activities]: ../api/activities-list.md
 [listItem]: listitem.md
 [package]: package.md
-[permission]: permission.md
+[permissão]: permission.md
 [pendingOperations]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
@@ -248,7 +248,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [thumbnailSet]: thumbnailset.md
 [vídeo]: video.md
 [pasta de trabalho]: workbook.md
-[Usuário]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[Usuário]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -266,5 +266,3 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
   "suppressions": []
 }
 -->
-
-
