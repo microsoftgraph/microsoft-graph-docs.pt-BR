@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 47ba704a8e4a4a4c4aedb6e70341aa37c3eb1377
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f27734ab05b4fc38a6a7a720837da6cc21de817
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064497"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403976"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -54,7 +54,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled |Booliano |True se a conta estiver habilitada; caso contrário, false.|
+|accountEnabled |Boolean |True se a conta estiver habilitada; caso contrário, false.|
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
@@ -63,7 +63,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 
 Como o recurso de **usuário** dá suporte a [extensões](/graph/extensibility-overview), você pode usar a `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.
 
-Os usuários federados criados por meio dessa API serão forçados a entrar a cada 12 horas por padrão. Para obter informações sobre como alterar isso, confira [exceções para tempos de vida do token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+Os usuários federados criados por meio dessa API serão forçados a entrar a cada 12 horas por padrão. Para obter informações sobre como alterar isso, confira [exceções para tempos de vida do token](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 >[!NOTE]
 >A adição de uma [conta local B2C](../resources/objectidentity.md) a um objeto de **usuário** existente não é permitida, a menos que o objeto **User** já contenha uma identidade de conta local.
@@ -266,5 +266,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 18b78c05ba6d6c947c74f270a5b1c9cf14ca7256
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 117cb25599dffdc120eab64199090d74c4c05db5
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042132"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402874"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 
@@ -153,7 +153,7 @@ Content-type: application/json
 
 **Observação:** Se uma coleção exceder o tamanho de página padrão (200 itens), a propriedade **\@odata.nextLink** será retornada na resposta para indicar que mais itens estão disponíveis e fornecer a URL da solicitação para a próxima página de itens.
 
-Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de caracteres de consulta opcional](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
+Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de caracteres de consulta opcional](/graph/query-parameters)
 
 ### <a name="error-responses"></a>Respostas de erro
 
@@ -171,4 +171,3 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "suppressions": [
   ]
 } -->
-

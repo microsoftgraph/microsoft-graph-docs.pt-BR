@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: abdfc3353e5fee94bbcec3b219d2cb6890bab939
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c09c686f9601cd9f8df1c2cc4ecf25da4e6e3ec
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006944"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403245"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -45,7 +45,7 @@ GET /groups/{id}/events/{id}/attachments
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 Em particular, você pode usar o `$expand` parâmetro de consulta para incluir todos os anexos de evento embutidos com o restante das propriedades do evento. Por exemplo:
 
@@ -145,5 +145,3 @@ Content-length: 215
   ]
 }
 -->
-
-

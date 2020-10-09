@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: khotz
-ms.openlocfilehash: 1b0aa0b3deec7aa0d38f1af544755584f493a8e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39c84c9dc5973f28c4e148582c056da9b1e60842
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042748"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403864"
 ---
 # <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividades
 
@@ -74,10 +74,8 @@ Para saber mais, consulte [Preços do Azure AD](https://azure.microsoft.com/pric
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Registre seu aplicativo](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para atender aos pré-requisitos do relatório. 
-- Aprenda com [amostras do log de auditoria](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) e de [entrada](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- [Registre seu aplicativo](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para atender aos pré-requisitos do relatório. 
+- Aprenda com [amostras do log de auditoria](/azure/active-directory/active-directory-reporting-api-audit-samples) e de [entrada](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
 - Analisar recurso e ações do [directoryAudit](directoryaudit.md).
 - Analisar recurso e ações do [signIn](signin.md). 
 - Analisar o recurso[provisioningObjectSummary](provisioningobjectsummary.md).
-
-

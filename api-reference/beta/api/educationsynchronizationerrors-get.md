@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a400c1dd28cb0760c8df1d8b139d6add80a08cc9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faffd109fc5d9a415f6adee01b14488bd9ddc327
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991289"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403329"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
@@ -38,7 +38,7 @@ GET /synchronizationProfiles/{id}/errors
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos seguintes [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta: $filter, $orderby, $top, $Skip e \$ contagem.
+Este método dá suporte aos seguintes [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta: $filter, $orderby, $top, $Skip e \$ contagem.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -145,5 +145,3 @@ Content-length: 1568
   "suppressions": [
   ]
 }-->
-
-

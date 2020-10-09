@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: d674a06d2cb699f6d075086533a492d577143808
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 428b36fefe733b172e4a09d333047bff4464bea2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990779"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403091"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Conceder um appRoleAssignment a um grupo
 
@@ -24,7 +24,7 @@ Use esta API para atribuir uma função de aplicativo a um grupo. Todos os membr
 - `resourceId`: A `id` do recurso `servicePrincipal` que definiu a função do aplicativo.
 - `appRoleId`: A `id` do `appRole` (definido na entidade de serviço do recurso) para atribuir ao grupo.
 
-Licenças adicionais podem ser necessárias para [usar um grupo para gerenciar o acesso aos aplicativos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps).
+Licenças adicionais podem ser necessárias para [usar um grupo para gerenciar o acesso aos aplicativos](/azure/active-directory/users-groups-roles/groups-saasapps).
 
 ## <a name="permissions"></a>Permissões
 
@@ -143,5 +143,3 @@ Content-length: 253
   ]
 }
 -->
-
-

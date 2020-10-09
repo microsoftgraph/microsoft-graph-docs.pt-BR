@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 99f5c4211ea7a649bb7da92bf35bcd8ade84d42e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a09b15e713eb68c4ef72d0321df17cc973a4e42b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055026"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404137"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos de um objeto [onlineMeeting](../resources/onlinemeeting.md) .
 
-> **Observação:** Atualmente, o `GET` método só tem suporte para uma [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
+> **Observação:** Atualmente, o `GET` método só tem suporte para uma [ID de conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
 
 ## <a name="permissions"></a>Permissões
 
@@ -171,4 +171,3 @@ Content-Length: 1574
   ]
 }
 -->
-

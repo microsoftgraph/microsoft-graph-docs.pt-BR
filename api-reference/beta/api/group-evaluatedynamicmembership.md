@@ -5,16 +5,16 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d23e08d2e412f77e94c802fcc03778eb89ab7158
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aad3e32cc1dd6936d0be221fe20225d56b386cb2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012751"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403122"
 ---
 # <a name="group-evaluatedynamicmembership"></a>Grupo: evaluateDynamicMembership
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -67,8 +67,8 @@ A tabela a seguir lista as propriedades que são necessárias ao avaliar a assoc
 
 | Parâmetro | Tipo | Descrição |
 | :-------- | :--- | :---------- |
-| MemberId | Coleção de cadeias de caracteres | MemberId é a ID do objeto do usuário ou do dispositivo a ser avaliado. |
-| membershipRule | Coleção de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para uma possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [regras de associação dinâmicas para grupos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| MemberId | Conjunto de cadeias de caracteres | MemberId é a ID do objeto do usuário ou do dispositivo a ser avaliado. |
+| membershipRule | Conjunto de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para uma possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [regras de associação dinâmicas para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Resposta
 
@@ -222,5 +222,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

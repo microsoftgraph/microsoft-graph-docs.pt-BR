@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fc85b1413a0b4405bdbbce17c5979c705e335304
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c3980e07b11623957c89fe44a745c496d91e832
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036209"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404466"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -44,7 +44,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 > **Observações:**
 >
 > - O caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
-> - `id` nas duas primeiras rotas refere-se à [ID de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).
+> - `id` nas duas primeiras rotas refere-se à [ID de conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up).
 > - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` é a **ID** de uma [entidade onlineMeeting](../resources/onlinemeeting.md).
 
@@ -187,5 +187,3 @@ Content-Length: 1574
   ]
 }
 -->
-
-

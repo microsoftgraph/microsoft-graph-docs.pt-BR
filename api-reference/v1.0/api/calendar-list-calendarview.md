@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3ccc73672fb626be6e0a51a2e789e631fa5f1c93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3c783877235faedcf7bb6ae8a228487344376866
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070363"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404165"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -65,7 +65,7 @@ Forneça os seguintes parâmetros de consulta necessários com valores na URL so
 
 Os valores de `startDateTime` e `endDateTime` são interpretados usando o deslocamento de fuso horário especificado no valor e não são afetados pelo valor do cabeçalho `Prefer: outlook.timezone`, se presente. Se nenhum deslocamento de fuso horário estiver incluído no valor, ele será interpretado como UTC.
 
-Este método também dá suporte a alguns [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método também dá suporte a alguns [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 > [!NOTE]
 > As propriedades **createdDateTime** e **lastModifiedDateTime** do [evento](../resources/event.md) não são compatíveis com `$select`. Para obter os valores, basta consultar no **calendarView** sem aplicar `$select`.
@@ -153,4 +153,3 @@ Content-length: 354
   "suppressions": [
   ]
 }-->
-

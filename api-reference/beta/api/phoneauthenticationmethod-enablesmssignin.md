@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d4c77e03bf54252cd8f93f29d4e9760371e37697
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d155bf20055bcd7fdd4a7629db5686c8a37103cf
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004561"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402657"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Habilite a entrada do SMS para um `mobile` número de telefone existente. Para s
 
 * O telefone deve ter `"phoneType": "mobile"` .
 * O telefone deve ser exclusivo no sistema de entrada do SMS (ninguém mais pode também usar esse número).
-* O usuário deve estar habilitado para entrada do SMS na política de [métodos de autenticação](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) .
+* O usuário deve estar habilitado para entrada do SMS na política de [métodos de autenticação](/azure/active-directory/authentication/concept-authentication-methods) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
 | Aplicativo                            | Sem suporte. | Sem suporte. |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador global
 * Administrador de autenticação privilegiada
@@ -117,5 +117,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: non-product-specific
 author: angelgolfer-ms
-ms.openlocfilehash: 07e5492fb91d165f18bd737fac2e71aca7363765
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 4238e1dec5e3d0ec73bd2cdbc8392e387e79c382
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183810"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403843"
 ---
 # <a name="microsoft-graph-beta-endpoint-reference"></a>Referência do terminal beta do Microsoft Graph
 
@@ -39,4 +39,3 @@ Saiba mais sobre [os novos recursos e atualizações mais recentes](/graph/whats
 - [Visão geral do Microsoft Graph](/graph/overview)
 - [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Início rápido do Microsoft Graph](https://developer.microsoft.com/graph/quick-start)
-

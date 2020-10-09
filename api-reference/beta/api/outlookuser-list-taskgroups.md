@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eecffe794300ad682eeb24c69811e903679c41e1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 99b77e617a874adbedf7a0d55e76e9327b53892c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017418"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403985"
 ---
 # <a name="list-taskgroups-deprecated"></a>Listar taskGroups (preterido)
 
@@ -40,7 +40,7 @@ GET /me/outlook/taskGroups
 GET /users/{id|userPrincipalName}/outlook/taskGroups
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -126,5 +126,3 @@ Content-length: 187
   ]
 }
 -->
-
-
