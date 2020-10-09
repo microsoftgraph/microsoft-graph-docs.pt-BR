@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6ffb969b08704ac8235fe630e89c9bec65a140f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 94ac86f03f586f45aafd6f2dbef1c7c8ba254be8
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057427"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373962"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [direc
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta. Esse método retorna um `400 Bad Request` código de resposta quando o objeto já é um membro do grupo. Esse método retorna um `404 Not Found` código de resposta quando o objeto adicionado não existe.
 
 ## <a name="examples"></a>Exemplos
 

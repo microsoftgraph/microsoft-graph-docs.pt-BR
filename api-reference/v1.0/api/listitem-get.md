@@ -6,12 +6,12 @@ description: Retorna os metadados de um item em uma lista do SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e2d441bb306a6614cdc27f5dff79bd55377b0459
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0eda1b3af89bbb885b2a58e2651323627846d143
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057281"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374361"
 ---
 # <a name="get-listitem"></a>Obter listItem
 
@@ -30,7 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
+|Aplicativo | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All |
+
+> **Observação**: a permissão do aplicativo Sites.Manage.All será necessária se a lista do SharePoint tiver as configurações de aprovação de conteúdo ativadas. Caso contrário, o Microsoft Graph não recuperará os itens da lista que têm um status de aprovação diferente de Aprovado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
