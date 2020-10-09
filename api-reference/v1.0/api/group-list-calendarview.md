@@ -5,67 +5,67 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b349f27f004366075f44d11bb28231ee30e4761a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e951324ec5db18d5bb4c31fa8a0d35e6ea61c36
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070167"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401289"
 ---
-# <a name="list-calendarview"></a><span data-ttu-id="2354b-103">Listar calendarView</span><span class="sxs-lookup"><span data-stu-id="2354b-103">List calendarView</span></span>
+# <a name="list-calendarview"></a><span data-ttu-id="a6c20-103">Listar calendarView</span><span class="sxs-lookup"><span data-stu-id="a6c20-103">List calendarView</span></span>
 
-<span data-ttu-id="2354b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2354b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a6c20-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a6c20-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2354b-105">Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida, do calendário padrão de um grupo.</span><span class="sxs-lookup"><span data-stu-id="2354b-105">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group.</span></span>
+<span data-ttu-id="a6c20-105">Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida, do calendário padrão de um grupo.</span><span class="sxs-lookup"><span data-stu-id="a6c20-105">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2354b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2354b-106">Permissions</span></span>
-<span data-ttu-id="2354b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2354b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a6c20-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a6c20-106">Permissions</span></span>
+<span data-ttu-id="a6c20-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a6c20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2354b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2354b-109">Permission type</span></span>      | <span data-ttu-id="2354b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2354b-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a6c20-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a6c20-109">Permission type</span></span>      | <span data-ttu-id="a6c20-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a6c20-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2354b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2354b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2354b-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2354b-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2354b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2354b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2354b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2354b-114">Not supported.</span></span>    |
-|<span data-ttu-id="2354b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2354b-115">Application</span></span> | <span data-ttu-id="2354b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2354b-116">Not supported.</span></span> |
+|<span data-ttu-id="a6c20-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a6c20-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a6c20-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a6c20-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a6c20-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a6c20-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a6c20-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a6c20-114">Not supported.</span></span>    |
+|<span data-ttu-id="a6c20-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a6c20-115">Application</span></span> | <span data-ttu-id="a6c20-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a6c20-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2354b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2354b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a6c20-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a6c20-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="2354b-118">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="2354b-118">Query parameters</span></span>
-<span data-ttu-id="2354b-119">Forneça os seguintes parâmetros de consulta necessários com valores na URL solicitada.</span><span class="sxs-lookup"><span data-stu-id="2354b-119">In the request URL, provide the following required query parameters with values.</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="a6c20-118">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="a6c20-118">Query parameters</span></span>
+<span data-ttu-id="a6c20-119">Forneça os seguintes parâmetros de consulta necessários com valores na URL solicitada.</span><span class="sxs-lookup"><span data-stu-id="a6c20-119">In the request URL, provide the following required query parameters with values.</span></span>
 
-| <span data-ttu-id="2354b-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="2354b-120">Parameter</span></span>     | <span data-ttu-id="2354b-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="2354b-121">Type</span></span>   | <span data-ttu-id="2354b-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="2354b-122">Description</span></span>                                                                                                            |
+| <span data-ttu-id="a6c20-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a6c20-120">Parameter</span></span>     | <span data-ttu-id="a6c20-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="a6c20-121">Type</span></span>   | <span data-ttu-id="a6c20-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="a6c20-122">Description</span></span>                                                                                                            |
 |:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="2354b-123">startDateTime</span><span class="sxs-lookup"><span data-stu-id="2354b-123">startDateTime</span></span> | <span data-ttu-id="2354b-124">String</span><span class="sxs-lookup"><span data-stu-id="2354b-124">String</span></span> | <span data-ttu-id="2354b-p102">A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2019-11-08T19:00:00-08:00".</span><span class="sxs-lookup"><span data-stu-id="2354b-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00".</span></span> |
-| <span data-ttu-id="2354b-127">endDateTime</span><span class="sxs-lookup"><span data-stu-id="2354b-127">endDateTime</span></span>   | <span data-ttu-id="2354b-128">String</span><span class="sxs-lookup"><span data-stu-id="2354b-128">String</span></span> | <span data-ttu-id="2354b-p103">A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2019-11-08T20:00:00-08:00".</span><span class="sxs-lookup"><span data-stu-id="2354b-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00".</span></span>   |
+| <span data-ttu-id="a6c20-123">startDateTime</span><span class="sxs-lookup"><span data-stu-id="a6c20-123">startDateTime</span></span> | <span data-ttu-id="a6c20-124">String</span><span class="sxs-lookup"><span data-stu-id="a6c20-124">String</span></span> | <span data-ttu-id="a6c20-p102">A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2019-11-08T19:00:00-08:00".</span><span class="sxs-lookup"><span data-stu-id="a6c20-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00".</span></span> |
+| <span data-ttu-id="a6c20-127">endDateTime</span><span class="sxs-lookup"><span data-stu-id="a6c20-127">endDateTime</span></span>   | <span data-ttu-id="a6c20-128">String</span><span class="sxs-lookup"><span data-stu-id="a6c20-128">String</span></span> | <span data-ttu-id="a6c20-p103">A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2019-11-08T20:00:00-08:00".</span><span class="sxs-lookup"><span data-stu-id="a6c20-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00".</span></span>   |
 
-<span data-ttu-id="2354b-131">Os valores de `startDateTime` e `endDateTime` são interpretados usando o deslocamento de fuso horário especificado no valor e não são afetados pelo valor do cabeçalho `Prefer: outlook.timezone`, se presente.</span><span class="sxs-lookup"><span data-stu-id="2354b-131">The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and are not impacted by the value of the `Prefer: outlook.timezone` header if present.</span></span> <span data-ttu-id="2354b-132">Se nenhum deslocamento de fuso horário estiver incluído no valor, ele será interpretado como UTC.</span><span class="sxs-lookup"><span data-stu-id="2354b-132">If no timezone offset is included in the value, it is interpreted as UTC.</span></span>
+<span data-ttu-id="a6c20-131">Os valores de `startDateTime` e `endDateTime` são interpretados usando o deslocamento de fuso horário especificado no valor e não são afetados pelo valor do cabeçalho `Prefer: outlook.timezone`, se presente.</span><span class="sxs-lookup"><span data-stu-id="a6c20-131">The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and are not impacted by the value of the `Prefer: outlook.timezone` header if present.</span></span> <span data-ttu-id="a6c20-132">Se nenhum deslocamento de fuso horário estiver incluído no valor, ele será interpretado como UTC.</span><span class="sxs-lookup"><span data-stu-id="a6c20-132">If no timezone offset is included in the value, it is interpreted as UTC.</span></span>
 
-<span data-ttu-id="2354b-133">Este método também dá suporte a alguns [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="2354b-133">This method also supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="a6c20-133">Este método também dá suporte a alguns [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c20-133">This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2354b-134">As propriedades **createdDateTime** e **lastModifiedDateTime** do [evento](../resources/event.md) não são compatíveis com `$select`.</span><span class="sxs-lookup"><span data-stu-id="2354b-134">The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`.</span></span> <span data-ttu-id="2354b-135">Para obter os valores, basta consultar no **calendarView** sem aplicar `$select`.</span><span class="sxs-lookup"><span data-stu-id="2354b-135">To get their values, simply query on **calendarView** without applying `$select`.</span></span>
+> <span data-ttu-id="a6c20-134">As propriedades **createdDateTime** e **lastModifiedDateTime** do [evento](../resources/event.md) não são compatíveis com `$select`.</span><span class="sxs-lookup"><span data-stu-id="a6c20-134">The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`.</span></span> <span data-ttu-id="a6c20-135">Para obter os valores, basta consultar no **calendarView** sem aplicar `$select`.</span><span class="sxs-lookup"><span data-stu-id="a6c20-135">To get their values, simply query on **calendarView** without applying `$select`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2354b-136">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2354b-136">Request headers</span></span>
-| <span data-ttu-id="2354b-137">Nome</span><span class="sxs-lookup"><span data-stu-id="2354b-137">Name</span></span>       | <span data-ttu-id="2354b-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="2354b-138">Type</span></span> | <span data-ttu-id="2354b-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="2354b-139">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="a6c20-136">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a6c20-136">Request headers</span></span>
+| <span data-ttu-id="a6c20-137">Nome</span><span class="sxs-lookup"><span data-stu-id="a6c20-137">Name</span></span>       | <span data-ttu-id="a6c20-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="a6c20-138">Type</span></span> | <span data-ttu-id="a6c20-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="a6c20-139">Description</span></span> |
 |:---------------|:--------|:--------|
-| <span data-ttu-id="2354b-140">Autorização</span><span class="sxs-lookup"><span data-stu-id="2354b-140">Authorization</span></span>  | <span data-ttu-id="2354b-141">string</span><span class="sxs-lookup"><span data-stu-id="2354b-141">string</span></span> | <span data-ttu-id="2354b-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2354b-p106">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2354b-144">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="2354b-144">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="2354b-145">string</span><span class="sxs-lookup"><span data-stu-id="2354b-145">string</span></span> | <span data-ttu-id="2354b-146">Use isto para especificar o fuso horário para horas de início e término na resposta.</span><span class="sxs-lookup"><span data-stu-id="2354b-146">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="2354b-147">Se não especificado, esses valores de tempo serão retornados em UTC.</span><span class="sxs-lookup"><span data-stu-id="2354b-147">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="2354b-148">Opcional.</span><span class="sxs-lookup"><span data-stu-id="2354b-148">Optional.</span></span> |
-| <span data-ttu-id="2354b-149">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="2354b-149">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="2354b-150">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="2354b-150">string</span></span> | <span data-ttu-id="2354b-151">O formato da propriedade **corpo** a ser retornada.</span><span class="sxs-lookup"><span data-stu-id="2354b-151">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="2354b-152">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="2354b-152">Values can be "text" or "html".</span></span> <span data-ttu-id="2354b-153">Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado.</span><span class="sxs-lookup"><span data-stu-id="2354b-153">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="2354b-154">Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="2354b-154">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="2354b-155">Opcional.</span><span class="sxs-lookup"><span data-stu-id="2354b-155">Optional.</span></span> |
+| <span data-ttu-id="a6c20-140">Autorização</span><span class="sxs-lookup"><span data-stu-id="a6c20-140">Authorization</span></span>  | <span data-ttu-id="a6c20-141">string</span><span class="sxs-lookup"><span data-stu-id="a6c20-141">string</span></span> | <span data-ttu-id="a6c20-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a6c20-p106">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a6c20-144">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="a6c20-144">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="a6c20-145">string</span><span class="sxs-lookup"><span data-stu-id="a6c20-145">string</span></span> | <span data-ttu-id="a6c20-146">Use isto para especificar o fuso horário para horas de início e término na resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c20-146">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="a6c20-147">Se não especificado, esses valores de tempo serão retornados em UTC.</span><span class="sxs-lookup"><span data-stu-id="a6c20-147">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="a6c20-148">Opcional.</span><span class="sxs-lookup"><span data-stu-id="a6c20-148">Optional.</span></span> |
+| <span data-ttu-id="a6c20-149">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="a6c20-149">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="a6c20-150">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a6c20-150">string</span></span> | <span data-ttu-id="a6c20-151">O formato da propriedade **corpo** a ser retornada.</span><span class="sxs-lookup"><span data-stu-id="a6c20-151">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="a6c20-152">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="a6c20-152">Values can be "text" or "html".</span></span> <span data-ttu-id="a6c20-153">Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado.</span><span class="sxs-lookup"><span data-stu-id="a6c20-153">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="a6c20-154">Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="a6c20-154">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="a6c20-155">Opcional.</span><span class="sxs-lookup"><span data-stu-id="a6c20-155">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2354b-156">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2354b-156">Request body</span></span>
-<span data-ttu-id="2354b-157">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="2354b-157">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a6c20-156">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a6c20-156">Request body</span></span>
+<span data-ttu-id="a6c20-157">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a6c20-157">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2354b-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="2354b-158">Response</span></span>
-<span data-ttu-id="2354b-159">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2354b-159">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a6c20-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="a6c20-158">Response</span></span>
+<span data-ttu-id="a6c20-159">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c20-159">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2354b-160">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2354b-160">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="2354b-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2354b-161">Request</span></span>
-<span data-ttu-id="2354b-162">O exemplo a seguir solicita que corpos de evento sejam retornados no formato de texto.</span><span class="sxs-lookup"><span data-stu-id="2354b-162">The following example requests event bodies to be returned in text format.</span></span>
+## <a name="example"></a><span data-ttu-id="a6c20-160">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a6c20-160">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="a6c20-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a6c20-161">Request</span></span>
+<span data-ttu-id="a6c20-162">O exemplo a seguir solicita que corpos de evento sejam retornados no formato de texto.</span><span class="sxs-lookup"><span data-stu-id="a6c20-162">The following example requests event bodies to be returned in text format.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2354b-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="2354b-163">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a6c20-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="a6c20-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
@@ -75,28 +75,28 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00-08:00&endDateTime=2017-10-01T19:00:00.00-08:00
 Prefer: outlook.body-content-type="text"
 ```
-# <a name="c"></a>[<span data-ttu-id="2354b-164">C#</span><span class="sxs-lookup"><span data-stu-id="2354b-164">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a6c20-164">C#</span><span class="sxs-lookup"><span data-stu-id="a6c20-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2354b-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2354b-165">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a6c20-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a6c20-165">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2354b-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2354b-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a6c20-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a6c20-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-calendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2354b-167">Java</span><span class="sxs-lookup"><span data-stu-id="2354b-167">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a6c20-167">Java</span><span class="sxs-lookup"><span data-stu-id="a6c20-167">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-calendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="2354b-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="2354b-168">Response</span></span>
-<span data-ttu-id="2354b-169">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2354b-169">The following is an example of the response.</span></span>
-><span data-ttu-id="2354b-170">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="2354b-170">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="2354b-171">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2354b-171">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="a6c20-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="a6c20-168">Response</span></span>
+<span data-ttu-id="a6c20-169">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a6c20-169">The following is an example of the response.</span></span>
+><span data-ttu-id="a6c20-170">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a6c20-170">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a6c20-171">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a6c20-171">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -286,4 +286,3 @@ Preference-Applied: outlook.body-content-type="text"
   "suppressions": [
   ]
 }-->
-

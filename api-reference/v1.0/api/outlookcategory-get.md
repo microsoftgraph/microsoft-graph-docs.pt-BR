@@ -5,54 +5,54 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b238933c99fc78b82f742b449f97eabcefd61da2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e94696463f31528d9022742afa32973526167be0
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079407"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400632"
 ---
-# <a name="get-outlook-category"></a><span data-ttu-id="0b13a-103">Obter categoria do Outlook</span><span class="sxs-lookup"><span data-stu-id="0b13a-103">Get Outlook category</span></span>
+# <a name="get-outlook-category"></a><span data-ttu-id="504a0-103">Obter categoria do Outlook</span><span class="sxs-lookup"><span data-stu-id="504a0-103">Get Outlook category</span></span>
 
-<span data-ttu-id="0b13a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0b13a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="504a0-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="504a0-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="0b13a-105">Obtenha as propriedades e as relações do objeto [outlookCategory](../resources/outlookcategory.md) especificado.</span><span class="sxs-lookup"><span data-stu-id="0b13a-105">Get the properties and relationships of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+<span data-ttu-id="504a0-105">Obtenha as propriedades e as relações do objeto [outlookCategory](../resources/outlookcategory.md) especificado.</span><span class="sxs-lookup"><span data-stu-id="504a0-105">Get the properties and relationships of the specified [outlookCategory](../resources/outlookcategory.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0b13a-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="0b13a-106">Permissions</span></span>
-<span data-ttu-id="0b13a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0b13a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="504a0-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="504a0-106">Permissions</span></span>
+<span data-ttu-id="504a0-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="504a0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0b13a-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0b13a-109">Permission type</span></span>      | <span data-ttu-id="0b13a-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0b13a-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="504a0-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="504a0-109">Permission type</span></span>      | <span data-ttu-id="504a0-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="504a0-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0b13a-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0b13a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0b13a-112">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="0b13a-112">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="0b13a-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0b13a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b13a-114">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="0b13a-114">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="0b13a-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0b13a-115">Application</span></span> | <span data-ttu-id="0b13a-116">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="0b13a-116">MailboxSettings.Read</span></span> |
+|<span data-ttu-id="504a0-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="504a0-111">Delegated (work or school account)</span></span> | <span data-ttu-id="504a0-112">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="504a0-112">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="504a0-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="504a0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="504a0-114">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="504a0-114">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="504a0-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="504a0-115">Application</span></span> | <span data-ttu-id="504a0-116">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="504a0-116">MailboxSettings.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0b13a-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0b13a-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="504a0-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="504a0-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/masterCategories/{id}
 GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="0b13a-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0b13a-118">Optional query parameters</span></span>
-<span data-ttu-id="0b13a-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="0b13a-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="504a0-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="504a0-118">Optional query parameters</span></span>
+<span data-ttu-id="504a0-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="504a0-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="0b13a-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0b13a-120">Request headers</span></span>
-| <span data-ttu-id="0b13a-121">Nome</span><span class="sxs-lookup"><span data-stu-id="0b13a-121">Name</span></span>      |<span data-ttu-id="0b13a-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="0b13a-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="504a0-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="504a0-120">Request headers</span></span>
+| <span data-ttu-id="504a0-121">Nome</span><span class="sxs-lookup"><span data-stu-id="504a0-121">Name</span></span>      |<span data-ttu-id="504a0-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="504a0-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="0b13a-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="0b13a-123">Authorization</span></span>  | <span data-ttu-id="0b13a-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0b13a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="504a0-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="504a0-123">Authorization</span></span>  | <span data-ttu-id="504a0-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="504a0-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0b13a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0b13a-126">Request body</span></span>
-<span data-ttu-id="0b13a-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0b13a-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="504a0-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="504a0-126">Request body</span></span>
+<span data-ttu-id="504a0-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="504a0-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0b13a-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="0b13a-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="504a0-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="504a0-128">Response</span></span>
 
-<span data-ttu-id="0b13a-129">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [outlookCategory](../resources/outlookcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0b13a-129">If successful, this method returns a `200 OK` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="0b13a-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0b13a-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0b13a-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0b13a-131">Request</span></span>
-<span data-ttu-id="0b13a-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0b13a-132">Here is an example of the request.</span></span>
+<span data-ttu-id="504a0-129">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [outlookCategory](../resources/outlookcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="504a0-129">If successful, this method returns a `200 OK` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="504a0-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="504a0-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="504a0-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="504a0-131">Request</span></span>
+<span data-ttu-id="504a0-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="504a0-132">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0b13a-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="0b13a-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="504a0-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="504a0-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["de912e4d-c790-4da9-949c-ccd933aaa0f7"],
@@ -61,26 +61,26 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
-# <a name="c"></a>[<span data-ttu-id="0b13a-134">C#</span><span class="sxs-lookup"><span data-stu-id="0b13a-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="504a0-134">C#</span><span class="sxs-lookup"><span data-stu-id="504a0-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-outlookcategory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0b13a-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0b13a-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="504a0-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="504a0-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-outlookcategory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0b13a-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0b13a-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="504a0-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="504a0-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-outlookcategory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0b13a-137">Java</span><span class="sxs-lookup"><span data-stu-id="0b13a-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="504a0-137">Java</span><span class="sxs-lookup"><span data-stu-id="504a0-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-outlookcategory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="0b13a-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="0b13a-138">Response</span></span>
-<span data-ttu-id="0b13a-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0b13a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="504a0-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="504a0-138">Response</span></span>
+<span data-ttu-id="504a0-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="504a0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,4 +111,3 @@ Content-length: 249
   "suppressions": [
   ]
 }-->
-
