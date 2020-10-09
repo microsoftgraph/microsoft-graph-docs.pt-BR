@@ -5,63 +5,63 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1cfdc09a35a0f04d5ce3e2ffffec80524f40c1e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93c5c5c7bd7b04baa70af9fffd2c7319f50af4ad
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073359"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404340"
 ---
-# <a name="call-subscribetotone"></a><span data-ttu-id="f9ab3-104">Call: subscribeToTone</span><span class="sxs-lookup"><span data-stu-id="f9ab3-104">call: subscribeToTone</span></span>
+# <a name="call-subscribetotone"></a><span data-ttu-id="2c401-104">Call: subscribeToTone</span><span class="sxs-lookup"><span data-stu-id="2c401-104">call: subscribeToTone</span></span>
 
-<span data-ttu-id="f9ab3-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f9ab3-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2c401-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2c401-105">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="f9ab3-106">Assine o DTMF (sinalização de multifrequência de tom dual).</span><span class="sxs-lookup"><span data-stu-id="f9ab3-106">Subscribe to DTMF (dual-tone multi-frequency signaling).</span></span> <span data-ttu-id="f9ab3-107">Isso permite que você seja notificado quando o usuário pressionar teclas em um "dialpad".</span><span class="sxs-lookup"><span data-stu-id="f9ab3-107">This allows you to be notified when the user presses keys on a "dialpad".</span></span>
+<span data-ttu-id="2c401-106">Assine o DTMF (sinalização de multifrequência de tom dual).</span><span class="sxs-lookup"><span data-stu-id="2c401-106">Subscribe to DTMF (dual-tone multi-frequency signaling).</span></span> <span data-ttu-id="2c401-107">Isso permite que você seja notificado quando o usuário pressionar teclas em um "dialpad".</span><span class="sxs-lookup"><span data-stu-id="2c401-107">This allows you to be notified when the user presses keys on a "dialpad".</span></span>
 
 > [!Note]
-> <span data-ttu-id="f9ab3-108">A ação **subscribeToTone** é suportada apenas para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="f9ab3-108">The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
+> <span data-ttu-id="2c401-108">A ação **subscribeToTone** é suportada apenas para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="2c401-108">The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f9ab3-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="f9ab3-109">Permissions</span></span>
-<span data-ttu-id="f9ab3-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f9ab3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2c401-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="2c401-109">Permissions</span></span>
+<span data-ttu-id="2c401-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2c401-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f9ab3-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f9ab3-112">Permission type</span></span> | <span data-ttu-id="f9ab3-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f9ab3-113">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="2c401-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2c401-112">Permission type</span></span> | <span data-ttu-id="2c401-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2c401-113">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="f9ab3-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f9ab3-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="f9ab3-115">Não suportado</span><span class="sxs-lookup"><span data-stu-id="f9ab3-115">Not Supported</span></span>        |
-| <span data-ttu-id="f9ab3-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f9ab3-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9ab3-117">Não suportado</span><span class="sxs-lookup"><span data-stu-id="f9ab3-117">Not Supported</span></span>        |
-| <span data-ttu-id="f9ab3-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f9ab3-118">Application</span></span>     | <span data-ttu-id="f9ab3-119">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="f9ab3-119">Calls.AccessMedia.All</span></span>                       |
+| <span data-ttu-id="2c401-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2c401-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="2c401-115">Não suportado</span><span class="sxs-lookup"><span data-stu-id="2c401-115">Not Supported</span></span>        |
+| <span data-ttu-id="2c401-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2c401-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2c401-117">Não suportado</span><span class="sxs-lookup"><span data-stu-id="2c401-117">Not Supported</span></span>        |
+| <span data-ttu-id="2c401-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2c401-118">Application</span></span>     | <span data-ttu-id="2c401-119">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="2c401-119">Calls.AccessMedia.All</span></span>                       |
 
-><span data-ttu-id="f9ab3-120">**Observação:** Qualquer dado de Tom fornecido pode não ser persistente.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-120">**Note:** Any tone data provided may not be persisted.</span></span> <span data-ttu-id="f9ab3-121">Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-121">Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications.</span></span> <span data-ttu-id="f9ab3-122">Confira os [Termos de Uso](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-122">Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.</span></span>
+><span data-ttu-id="2c401-120">**Observação:** Qualquer dado de Tom fornecido pode não ser persistente.</span><span class="sxs-lookup"><span data-stu-id="2c401-120">**Note:** Any tone data provided may not be persisted.</span></span> <span data-ttu-id="2c401-121">Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações.</span><span class="sxs-lookup"><span data-stu-id="2c401-121">Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications.</span></span> <span data-ttu-id="2c401-122">Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.</span><span class="sxs-lookup"><span data-stu-id="2c401-122">Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f9ab3-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f9ab3-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2c401-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2c401-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /communications/calls/{id}/subscribeToTone
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f9ab3-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f9ab3-124">Request headers</span></span>
-| <span data-ttu-id="f9ab3-125">Nome</span><span class="sxs-lookup"><span data-stu-id="f9ab3-125">Name</span></span>          | <span data-ttu-id="f9ab3-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="f9ab3-126">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="2c401-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2c401-124">Request headers</span></span>
+| <span data-ttu-id="2c401-125">Nome</span><span class="sxs-lookup"><span data-stu-id="2c401-125">Name</span></span>          | <span data-ttu-id="2c401-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="2c401-126">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="f9ab3-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="f9ab3-127">Authorization</span></span> | <span data-ttu-id="f9ab3-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2c401-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="2c401-127">Authorization</span></span> | <span data-ttu-id="2c401-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2c401-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f9ab3-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f9ab3-130">Request body</span></span>
-<span data-ttu-id="f9ab3-131">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2c401-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2c401-130">Request body</span></span>
+<span data-ttu-id="2c401-131">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2c401-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f9ab3-132">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="f9ab3-132">Parameter</span></span>      | <span data-ttu-id="f9ab3-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="f9ab3-133">Type</span></span>    | <span data-ttu-id="f9ab3-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="f9ab3-134">Description</span></span> |
+| <span data-ttu-id="2c401-132">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="2c401-132">Parameter</span></span>      | <span data-ttu-id="2c401-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="2c401-133">Type</span></span>    | <span data-ttu-id="2c401-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="2c401-134">Description</span></span> |
 |:---------------|:--------|:------------|
-| <span data-ttu-id="f9ab3-135">clientContext</span><span class="sxs-lookup"><span data-stu-id="f9ab3-135">clientContext</span></span>  | <span data-ttu-id="f9ab3-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f9ab3-136">String</span></span>  | <span data-ttu-id="f9ab3-137">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-137">Unique client context string.</span></span> <span data-ttu-id="f9ab3-138">Pode ter um máximo de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-138">Can have a maximum of 256 characters.</span></span> |
+| <span data-ttu-id="2c401-135">clientContext</span><span class="sxs-lookup"><span data-stu-id="2c401-135">clientContext</span></span>  | <span data-ttu-id="2c401-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="2c401-136">String</span></span>  | <span data-ttu-id="2c401-137">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="2c401-137">Unique client context string.</span></span> <span data-ttu-id="2c401-138">Pode ter um máximo de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="2c401-138">Can have a maximum of 256 characters.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="f9ab3-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="f9ab3-139">Response</span></span>
-<span data-ttu-id="f9ab3-140">Se bem sucedido, este método retorna um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-140">If successful, this method returns `200 OK` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="2c401-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="2c401-139">Response</span></span>
+<span data-ttu-id="2c401-140">Se bem sucedido, este método retorna um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="2c401-140">If successful, this method returns `200 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f9ab3-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f9ab3-141">Example</span></span>
-<span data-ttu-id="f9ab3-142">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-142">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="2c401-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2c401-141">Example</span></span>
+<span data-ttu-id="2c401-142">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="2c401-142">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f9ab3-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f9ab3-143">Request</span></span>
-<span data-ttu-id="f9ab3-144">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-144">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="2c401-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2c401-143">Request</span></span>
+<span data-ttu-id="2c401-144">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="2c401-144">The following example shows the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="f9ab3-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="f9ab3-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2c401-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="2c401-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-subscribeToTone"
@@ -75,28 +75,28 @@ Content-Length: 46
   "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f9ab3-146">C#</span><span class="sxs-lookup"><span data-stu-id="f9ab3-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2c401-146">C#</span><span class="sxs-lookup"><span data-stu-id="2c401-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-subscribetotone-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f9ab3-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f9ab3-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2c401-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2c401-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-subscribetotone-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f9ab3-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f9ab3-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2c401-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2c401-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-subscribetotone-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f9ab3-149">Java</span><span class="sxs-lookup"><span data-stu-id="f9ab3-149">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="2c401-149">Java</span><span class="sxs-lookup"><span data-stu-id="2c401-149">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-subscribetotone-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="f9ab3-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="f9ab3-150">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="2c401-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="2c401-150">Response</span></span>
 
-> <span data-ttu-id="f9ab3-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f9ab3-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="2c401-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2c401-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -118,9 +118,9 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
 ```
 
 
-##### <a name="notification---tone-notification"></a><span data-ttu-id="f9ab3-153">Notificação de sinal de notificação</span><span class="sxs-lookup"><span data-stu-id="f9ab3-153">Notification - tone notification</span></span>
+##### <a name="notification---tone-notification"></a><span data-ttu-id="2c401-153">Notificação de sinal de notificação</span><span class="sxs-lookup"><span data-stu-id="2c401-153">Notification - tone notification</span></span>
 
-<span data-ttu-id="f9ab3-154">A notificação contém informações sobre o Tom pressionado no recurso [toneinfo](../resources/toneinfo.md) .</span><span class="sxs-lookup"><span data-stu-id="f9ab3-154">The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.</span></span>
+<span data-ttu-id="2c401-154">A notificação contém informações sobre o Tom pressionado no recurso [toneinfo](../resources/toneinfo.md) .</span><span class="sxs-lookup"><span data-stu-id="2c401-154">The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -166,4 +166,3 @@ Content-Type: application/json
   ]
 }
 -->
-
