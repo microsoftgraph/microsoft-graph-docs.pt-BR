@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8f7f9462a7a71c2efc4b3a471de1c638fc3dbae7
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 362a83b9398ef8020e88990169aab425abec1e49
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372387"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417743"
 ---
 # <a name="get-authentication-operation"></a>Obter operação de autenticação
 
@@ -49,7 +49,7 @@ Para cenários delegados em que um administrador está agindo em outro usuário,
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/authentication/operations/{id}
+GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -83,7 +83,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```msgraph-interactive
-GET /users/{id}/authentication/operations/{id}
+GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-operation-csharp-snippets.md)]

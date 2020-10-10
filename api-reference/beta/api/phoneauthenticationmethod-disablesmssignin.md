@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 953c417b53dd21d294dd00607e9adaf0ed22babd
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b729b8ca18cc5dda2359d9db32e700ea129f9dba
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402664"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417832"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod: disableSmsSignIn
 
@@ -44,7 +44,7 @@ Para cenários delegados em que um administrador está agindo em outro usuário,
 
 ```http
 POST /me/authentication/phoneMethods/{id}/disableSmsSignIn
-POST /users/{id}/authentication/phoneMethods/{id}/disableSmsSignIn
+POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/disableSmsSignIn
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

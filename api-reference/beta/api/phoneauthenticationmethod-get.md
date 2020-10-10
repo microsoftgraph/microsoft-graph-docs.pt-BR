@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8aedb4e643bcffa727ddbe3e0b4299fb917389ee
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 625ea0b40ca58d462830f463c2597b3c03600bf8
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402636"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417812"
 ---
 # <a name="get-phoneauthenticationmethod"></a>Obter phoneAuthenticationMethod
 
@@ -43,7 +43,7 @@ Para cenários delegados em que um administrador está agindo em outro usuário,
 
 ```http
 GET /me/authentication/phoneMethods/{id}
-GET /users/{id}/authentication/phoneMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81410eeaef66aee702b010f715ee15ac3be70215
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 93ac85f59cf82fffeb50ffa56c67324d4eae4f05
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401797"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417916"
 ---
 # <a name="get-passwordauthenticationmethod"></a>Obter passwordAuthenticationMethod
 
@@ -43,7 +43,7 @@ Para cenários delegados em que um administrador está agindo em outro usuário,
 
 ```http
 GET /me/authentication/passwordMethods/{id}
-GET /users/{id}/authentication/passwordMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8461fe3b707781471de6e1a78be42fe722a5b1fa
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d71a15a00ead9c241157da67170b6b2f032c4847
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400902"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417934"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -45,7 +45,7 @@ Para cenários delegados em que um administrador está agindo em outro usuário,
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{id}/authentication/passwordMethods/{id}/resetPassword
+POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -93,7 +93,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
 Content-type: application/json
 
 {
@@ -129,7 +129,7 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 202 ACCEPTED
 Content-type: application/json
-Location: https://graph.microsoft.com/beta/users/{id}/authentication/operations/{id}
+Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
@@ -157,7 +157,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id}/authentication/passwordMethods/{id}/resetPassword
+POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-systemgenerated-csharp-snippets.md)]
@@ -188,7 +188,7 @@ Este é um exemplo de resposta.
 
 ```http
 HTTP/1.1 202 ACCEPTED
-Location: https://graph.microsoft.com/beta/users/{id}/authentication/operations/{id}
+Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/operations/{id}
 Content-type: application/json
 
 {

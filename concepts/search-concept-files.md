@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para pesquisar arqui
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 3b6f8e1cbdaf686e1ab73c2b168968221d9efbcc
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: f080dae0413f2f261a05299299235aaaed16f7fb
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373983"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417923"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Usar a API de pesquisa da Microsoft para pesquisar conteúdo no OneDrive e no SharePoint
 
@@ -23,92 +23,9 @@ A API de pesquisa permite que você escopo os tipos de conteúdo a serem recuper
 - [Exemplo 2: itens de lista de pesquisa](#example-2-search-list-items)
 - [Exemplo 3: sites de pesquisa](#example-3-search-sites)
 - [Exemplo 4: Pesquisar todo o conteúdo no OneDrive e no SharePoint](#example-4-search-all-content-in-onedrive-and-sharepoint)
+- [Exemplo 5: usar filtros em consultas de pesquisa](#example-5-use-filters-in-search-queries)
+- [Exemplo 6: especificar propriedades de seleção](#example-6-specify-select-properties)
 
-## <a name="specify-select-properties"></a>Especificar propriedades de seleção
-
-Você pode especificar os campos que deseja de volta na resposta, como parte da subpropriedade **Fields** de um objeto [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) na resposta. Essa é uma maneira de aparar a resposta sobre o fio ou para solicitar algumas propriedades específicas que não fazem parte do esquema pronto para uso.
-
-Observe que a seleção de propriedade só está disponível para **ListItem** , pois esta é a única entidade do SharePoint no Microsoft Graph que oferece suporte a propriedades personalizadas.
-
-Para recuperar uma propriedade personalizada de um **driveItem**, procure **ListItem** .
-
-### <a name="request"></a>Solicitação
-
-```HTTP
-POST /search/query
-Content-Type: application/json
-
-{
-  "requests": [
-    {
-      "entityTypes": [
-        "listItem"
-      ],
-      "query": {
-        "queryString": "contoso"
-      },
-      "fields": [
-          "title",
-          "contentclass"
-      ]
-    }
-  ]
-}
-```
-
-### <a name="response"></a>Resposta
-
-```HTTP
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
-  "value": [
-    {
-      "searchTerms": [
-        "contoso"
-      ],
-      "hitsContainers": [
-        {
-          "total": 1,
-          "moreResultsAvailable": false,
-          "hits": [
-            {
-              "hitId": "contoso.sharepoint.com,6598ee0b-0f5f-4416-a0ae-66d864efb43a,60024ce8-e74d-4d63-a939-ad00cd738670",
-              "rank": 1,
-              "summary": "",
-              "resource": {
-                "@odata.type": "#microsoft.graph.listItem",
-                "createdDateTime": "2019-06-10T06:37:43Z",
-                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
-                "parentReference": {
-                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
-                },
-                "fields": {
-                  "contentclass": "STS_ListItem_GenericList",
-                  "title": "Contoso issue "
-                }
-              }
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-## <a name="use-filters-in-search-queries"></a>Usar filtros em consultas de pesquisa
-
-Você pode usar o KQL em termos de pesquisa de consultas do OneDrive e do SharePoint. Por exemplo:
-
-- `"query": "contoso filetype:docx OR filetype:doc"` escopo a consulta em documentos do Word.
-- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` escopo a consulta para uma determinada pasta dentro de um site.
-- `"query": "contoso AND isDocument=true"` escopos a consulta para retornar apenas os documentos. Qualquer contêiner (pasta, biblioteca de documentos) não será retornado.
-- `"query": "contoso contentclass:STS_List_Events"` escopos a consulta para eventos de calendário armazenados no SharePoint.
-
-Para ser válido, a restrição de propriedades deve especificar um nome de propriedade gerenciada válido e consultável na condição.
 
 ## <a name="example-1-search-files"></a>Exemplo 1: Arquivos de pesquisa
 
@@ -409,6 +326,92 @@ Content-type: application/json
                 "siteId": "microsoft.sharepoint-df.com,220fd155-0ea2-477c-a816-5c08fdc45f5d,fad16ab6-0736-4fbc-a053-087296b47c99"
                 },
                 "webUrl": "https://microsoft.sharepoint-df.com/teams/spoppe/collab/TaskBoard/Contoso/Shared Documents/Forms/AllItems.aspx"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+## <a name="example-5-use-filters-in-search-queries"></a>Exemplo 5: usar filtros em consultas de pesquisa
+
+Você pode usar o KQL em termos de pesquisa de consultas do OneDrive e do SharePoint. Por exemplo:
+
+- `"query": "contoso filetype:docx OR filetype:doc"` escopo a consulta em documentos do Word.
+- `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` escopo a consulta para uma determinada pasta dentro de um site.
+- `"query": "contoso AND isDocument=true"` escopos a consulta para retornar apenas os documentos. Qualquer contêiner (pasta, biblioteca de documentos) não será retornado.
+- `"query": "contoso contentclass:STS_List_Events"` escopos a consulta para eventos de calendário armazenados no SharePoint.
+
+Para ser válido, a restrição de propriedades deve especificar um nome de propriedade gerenciada válido e consultável na condição.
+
+## <a name="example-6-specify-select-properties"></a>Exemplo 6: especificar propriedades de seleção
+
+Você pode especificar os campos que deseja de volta na resposta, como parte da subpropriedade **Fields** de um objeto [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) na resposta. Essa é uma maneira de aparar a resposta sobre o fio ou para solicitar algumas propriedades específicas que não fazem parte do esquema pronto para uso.
+
+Observe que a seleção de propriedade só está disponível para **ListItem** , pois esta é a única entidade do SharePoint no Microsoft Graph que oferece suporte a propriedades personalizadas.
+
+Para recuperar uma propriedade personalizada de um **driveItem**, procure **ListItem** .
+
+### <a name="request"></a>Solicitação
+
+```HTTP
+POST /search/query
+Content-Type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "listItem"
+      ],
+      "query": {
+        "queryString": "contoso"
+      },
+      "fields": [
+          "title",
+          "contentclass"
+      ]
+    }
+  ]
+}
+```
+
+### <a name="response"></a>Resposta
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+    {
+      "searchTerms": [
+        "contoso"
+      ],
+      "hitsContainers": [
+        {
+          "total": 1,
+          "moreResultsAvailable": false,
+          "hits": [
+            {
+              "hitId": "contoso.sharepoint.com,6598ee0b-0f5f-4416-a0ae-66d864efb43a,60024ce8-e74d-4d63-a939-ad00cd738670",
+              "rank": 1,
+              "summary": "",
+              "resource": {
+                "@odata.type": "#microsoft.graph.listItem",
+                "createdDateTime": "2019-06-10T06:37:43Z",
+                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
+                "parentReference": {
+                  "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
+                },
+                "fields": {
+                  "contentclass": "STS_ListItem_GenericList",
+                  "title": "Contoso issue "
+                }
               }
             }
           ]

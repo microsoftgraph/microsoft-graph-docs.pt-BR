@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 3fc127bb6d6c1df1708b0e5e2c89a1676a4dd227
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 74d0a697107c8687d1f80be33540f895994b90d2
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402294"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417909"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -22,17 +22,24 @@ Os [métodos de autenticação](/azure/active-directory/authentication/concept-a
 
 As APIs do método de autenticação são usadas para gerenciar os métodos de autenticação de um usuário. Por exemplo:
 
-* Você pode adicionar um número de telefone a um usuário. Em seguida, o usuário pode usar esse número de telefone para autenticação de SMS e de chamada de voz se estiver habilitado para usá-lo por política. 
+* Você pode adicionar um número de telefone a um usuário. Em seguida, o usuário pode usar esse número de telefone para autenticação de SMS e de chamada de voz se estiver habilitado para usá-lo por política.
 * Você pode atualizar esse número ou excluí-lo do usuário.
 * Você pode habilitar ou desabilitar o número para entrada do SMS.
 * Você pode redefinir a senha de um usuário.
+* Você pode recuperar detalhes da chave de segurança FIDO2 de um usuário e excluí-lo se o usuário tiver perdido a chave.
+* Você pode recuperar detalhes do registro de entrada de telefone sem senha do autenticador da Microsoft do usuário e excluí-lo se o usuário tiver perdido o telefone.
+* Você pode adicionar um endereço de email a um usuário. O usuário pode então usar esse email como parte do processo de redefinição de senha Self-Service (SSPR).
+* Você pode atualizar esse email ou excluí-lo do usuário.
 
 ## <a name="what-authentication-methods-can-be-managed-in-microsoft-graph"></a>Quais métodos de autenticação podem ser gerenciados no Microsoft Graph?
 
 |Método de autenticação       | Descrição |Exemplos     |
 |:---------------------------|:------------|:------------|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| No momento, uma senha é o método de autenticação principal padrão no Azure AD.|Redefinir a senha de um usuário|
-|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Um telefone pode ser usado por um usuário para autenticar usando o [SMS ou chamadas de voz](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (conforme permitido pela política).|Confira os números de telefone de autenticação de um usuário. Adicionar, atualizar ou remover um número de telefone para um usuário. Habilitar ou desabilitar um telefone celular principal para entrada do SMS.|
+|[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Um telefone pode ser usado por um usuário para autenticar usando o [SMS ou chamadas de voz](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods#phone-options) (conforme permitido pela política).|Confira os números de telefone de autenticação de um usuário. Adicionar, atualizar ou remover um número de telefone para um usuário. Habilitar ou desabilitar um telefone celular principal para entrada do SMS.|
+|[fido2authenticationmethod](fido2authenticationmethod.md)|Uma chave de segurança do FIDO2 pode ser usada por um usuário para entrar no Azure AD.|Exclua uma chave de segurança FIDO2 perdida.|
+|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md)|Entrada de telefone sem senha do autenticador da Microsoft pode ser usada por um usuário para entrar no Azure AD|Excluir um método de autenticação de entrada de telefone sem senha.|
+|[emailauthenticationmethod](emailauthenticationmethod.md)|Um endereço de email pode ser usuário por um usuário como parte do processo de redefinição de senha Self-Service (SSPR).|Consulte o endereço de email de autenticação de um usuário. Adicionar, atualizar ou remover um endereço de email para um usuário.|
 
 ## <a name="next-steps"></a>Próximas etapas
 

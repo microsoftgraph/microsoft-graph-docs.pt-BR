@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 43642c6f31ab0ada6530b5aea68bbc86b70208ad
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 48133bff3dc0532c2669a608697e1fca1a10d9ca
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372415"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417768"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Criar phoneAuthenticationMethod
 
@@ -46,7 +46,7 @@ Para cenários delegados em que um administrador está agindo em outro usuário,
 
 ```http
 POST /me/authentication/phoneMethods
-POST /users/{id}/authentication/phoneMethods
+POST /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -63,7 +63,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [phone
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato "+ \<country code\> \<number\> x \<extension\> ", com a extensão opcional. Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas. Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário.|
-|PhoneType|String|Os valores possíveis são: `mobile` , `alternateMobile` , e `office` .|
+|PhoneType|Cadeia de caracteres|Os valores possíveis são: `mobile` , `alternateMobile` , e `office` .|
 
 ## <a name="response"></a>Resposta
 
