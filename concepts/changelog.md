@@ -3,18 +3,19 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: df74d810f20ef4041d02881a6c6bd536e3febaee
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: 883a22e302987c59aa5c62268265f24df737ed8f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364429"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403850"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Este log de alterações inclui alterações específicas no nível da API no Microsoft Graph v 1.0 e beta.
 
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
+
 ## <a name="october-2020"></a>Outubro de 2020
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
@@ -22,6 +23,8 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição|beta|Propriedade **allowInvitesFrom** adicionada ao recurso [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta).|
+|Adição|beta|Adicionado o tipo de recurso [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) e as seguintes operações: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) e [Atualizar b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
+|Adição|beta|Adicionada a permissão **Policy.ReadWrite.AuthenticationMethod** à [referência de Permissões](permissions-reference.md#policy-permissions).|
 
 ## <a name="september-2020"></a>Setembro de 2020
 
@@ -123,9 +126,11 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | v1.0 | Introduziu as [unidades administrativas da API](/graph/api/resources/administrativeunit?view=graph-rest-1.0). As unidades administrativas permitem às organizações subdividir seu Azure Active Directory e delegar tarefas administrativas a essas subdivisões. As subdivisões podem representar regiões, departamentos, centros de custo e assim por diante. Agora, isso pode ser gerenciado por meio da API do Microsoft Graph.|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição|beta|Adicionou o tipo de recurso [continuousAccessEvaluationPolicy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta).|
+|Adição|beta|Adicionada a propriedade **permissionGrantPolicyIdsAssignedToDefaultUserRole** ao recurso [permissionPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="reports"></a>Relatórios
 
@@ -249,8 +254,8 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | A entidade [b2cUserFlows](/graph/api/resources/b2cuserflows?view=graph-rest-beta) foi adicionada para gerenciar os fluxos de usuário em um locatário do Azure Active Directory B2C. |
-| Adição | beta | A entidade [b2xUserFlows](/graph/api/resources/b2xuserflows?view=graph-rest-beta) foi adicionada para gerenciar fluxos de usuário de inscrição de autoatendimento em um locatário do Azure Active Directory. |
+| Adição | beta | Adicionada a entidade [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) para gerenciar os fluxos de usuário em um locatário do Azure Active Directory B2C. |
+| Adição | beta | Adicionada a entidade [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) para gerenciar fluxos de usuário de inscrição de autoatendimento em um locatário do Azure Active Directory. |
 
 ### <a name="people-and-workplace-intelligence--profile"></a>Inteligência de pessoas e do local de trabalho | Perfil
 
@@ -3426,7 +3431,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração | Beta | A permissão UserActivity.ReadWrite.CreatedByApp foi adicionada a [Upsert HistoryItem](/graph/api/projectrome-delete-historyitem?view=graph-rest-beta) |
 | Alteração | Beta | A propriedade **status** foi adicionada a [activity](/graph/api/resources/projectrome-activity?view=graph-rest-beta) |
 | Alteração | Beta | A propriedade de navegação **activity** foi adicionada a [historyItem](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta) |
-| Alteração | Beta | As novas APIs foram adicionadas a [Visão geral do Project Rome](/graph/api/resources/project-rome-overview?view=graph-rest-beta) |
+| Alterar | Beta | As novas APIs foram adicionadas a [Visão geral do Project Rome](/graph/api/resources/project-rome-overview?view=graph-rest-beta) |
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
 
@@ -3709,7 +3714,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Alteração|Beta|A propriedade **identityVersion** foi adicionada à entidade [iosLobApp](/graph/api/resources/intune-apps-ioslobapp?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **faceIdBlocked** foi adicionada à entidade [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta)|
 |Alteração|Beta|As propriedades **packageId** e **identityVersion** foram adicionadas à entidade [managedAndroidLobApp](/graph/api/resources/intune-apps-managedandroidlobapp?view=graph-rest-beta)|
-|Alteração|Beta|As propriedades **azureADDeviceId** e **remoteAssistanceSessionErrorDetails** foram adicionadas à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
+|Alterar|Beta|As propriedades **azureADDeviceId** e **remoteAssistanceSessionErrorDetails** foram adicionadas à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **legacyAppConfiguration** foi removida da entidade [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **identityVersion** foi adicionada à entidade [managedIOSLobApp](/graph/api/resources/intune-apps-managedioslobapp?view=graph-rest-beta)|
 |Alterar|Beta|A propriedade **identityVersion** foi removida da entidade [managedMobileLobApp](/graph/api/resources/intune-apps-managedmobilelobapp?view=graph-rest-beta)|
@@ -4516,7 +4521,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração      | Beta    | A propriedade **kioskModeManagedApps** foi adicionada à entidade [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **kioskModeManagedAppId** foi removida da entidade [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **subjectAlternativeNameFormatString** foi adicionada à entidade [androidPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidpkcscertificateprofile?view=graph-rest-beta) |
-| Alteração      | Beta    | As propriedades **subjectNameFormatString** e **subjectAlternativeNameFormatString** foram adicionadas à entidade [androidScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidscepcertificateprofile?view=graph-rest-beta) |
+| Alterar      | Beta    | As propriedades **subjectNameFormatString** e **subjectAlternativeNameFormatString** foram adicionadas à entidade [androidScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidscepcertificateprofile?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade **hexColor** foi removida da entidade [calendar](/graph/api/resources/calendar?view=graph-rest-beta) |
 | Alteração      | Beta    | As propriedades **setting** e **platformType** foram adicionadas à entidade [complianceSettingStateSummary](/graph/api/resources/intune-deviceconfig-compliancesettingstatesummary?view=graph-rest-beta) |
 | Alterar      | Beta    | A propriedade **windowsManagementAppEnabled** foi removida da entidade [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta) |
