@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: ad3675a64043f6772a56cd981d02067df828752a
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 37dd68366e4d7ff945b09e3ac825b458baf298d2
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401565"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417853"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -732,7 +732,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Files.ReadWrite.All_ | Ter acesso total a todos os arquivos que o usuário pode acessar | Permite que o aplicativo leia, crie, atualize e exclua todos os arquivos que o usuário conectado pode acessar. | Não | Sim |
 | _Files.ReadWrite.AppFolder_ | Ter acesso total à pasta do aplicativo (prévia) | (Prévia) Permite que o aplicativo leia, crie, atualize exclua arquivos na pasta do aplicativo. | Não | Não |
 | _Files.Read.Selected_  | Ler arquivos selecionados pelo usuário | **Suporte limitado no Microsoft Graph – confira Comentários** <br/> (Visualização) Permite ao aplicativo ler arquivos selecionados pelo usuário. O aplicativo tem acesso por várias horas depois que o usuário tiver selecionado um arquivo.  | Não | Não |
-| _Files.ReadWrite.Selected_ | Ler e gravar arquivos selecionados pelo usuário | **Suporte limitado no Microsoft Graph – confira Comentários** <br/> (Visualização) Permite ao aplicativo ler e gravar arquivos selecionados pelo usuário. O aplicativo tem acesso por várias horas depois que o usuário tiver selecionado um arquivo. | Não | Não |
+| _Files.ReadWrite.Selected_ | Ler e gravar arquivos selecionados pelo usuário | **Suporte limitado no Microsoft Graph; confira Comentários** <br/> (Visualização) Permite ao aplicativo ler e gravar arquivos selecionados pelo usuário. O aplicativo tem acesso por várias horas depois que o usuário tiver selecionado um arquivo. | Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1534,24 +1534,24 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ExternalItem.ReadWrite.All_ | Ler e gravar dados externos | Permite a um aplicativo gravar dados externos na API de indexação. | Sim | Não |
+| _ExternalItem.ReadWrite.All_ | Ler e Gravar dados externos | Permite que um aplicativo grave externamente com a API de indexação de conectores do Microsoft Graph. | Sim | Não |
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.ReadWrite.All_ | Ler e gravar dados externos | Permite a um aplicativo ingerir, por meio da API de indexação dos Conectores do Microsoft Graph, ou de dados da consulta ingeridos pelos Conectores do Microsoft Graph| Sim | Não |
+| _ExternalItem.Read.All_ | Ler os dados externos | Permite que um aplicativo consulte dados ingeridos com conectores Microsoft Graph| Sim | Não |
 
 ### <a name="remarks"></a>Comentários
 As permissões de pesquisa só são válidas para contas corporativas ou de estudante.
 
 Esta permissão de pesquisa só se aplica aos dados ingeridos da API de indexação.
 
-O acesso aos dados por meio de pesquisa requer a devida permissão. Por exemplo, _Files.Read.All_ para acessar arquivos por meio da pesquisa.
+O acesso aos dados por meio de pesquisa requer permissão de leitura para o item. Ex : _Files.Read.All_ para acessar arquivos por meio da pesquisa.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="application"></a>Aplicativo
+#### <a name="delegated"></a>Delegado
 
 * _ExternalItem.Read.All__: Acessar dados externos da [API de pesquisa](/graph/api/resources/search-api-overview) (`POST /search/query`).
 
@@ -2150,6 +2150,25 @@ Com essas permissões, todos os métodos de autenticação podem ser lidos e ger
 * Autenticação primária (senha)
 * Segundo fator de autenticação multifator/MFA (números de telefone)
 * Redefinição de senha de autoatendimento/SSPR (endereço de email)
+
+## <a name="authentication-methods-policy-permissions-preview"></a>Permissões de política de métodos de autenticação ([visualização](#permissions-availability-status))
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|Permissão                              |Exibir Cadeia de Caracteres                        |Descrição        |Consentimento Obrigatório do Administrador | Suporte da Conta da Microsoft |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
+|_Policy.ReadWrite.AuthenticationMethod_ (visualização)        |Leia e escreva todas as políticas de métodos de autenticação.       |Permite que o aplicativo leia e grave todas as políticas de métodos de autenticação em um locatário do Microsoft Azure Active Directory. Além disso, o usuário conectado deve ter a função de Administrador Global atribuída. |Sim|Não|
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|Permissão                              |Exibir Cadeia de Caracteres                        |Descrição        |Consentimento Obrigatório do Administrador |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
+|_Policy.ReadWrite.AuthenticationMethod_ (visualização privada)   |Leia e escreva todas as políticas de métodos de autenticação.    |Permite que o aplicativo leia e grave todas as políticas de métodos de autenticação em um locatário do Microsoft Azure Active Directory. |Sim|
+
+
+### <a name="remarks"></a>Comentários
+
+As permissões de política de métodos de autenticação são usadas para gerenciar configurações na política de métodos de autenticação, incluindo habilitar e desabilitar métodos de autenticação, permitir que usuários e grupos usem esses métodos e definir outras configurações relacionadas aos métodos de autenticação que os usuários podem registrar e usar em um locatário.
 
 ## <a name="permission-scenarios"></a>Cenários de permissão
 
