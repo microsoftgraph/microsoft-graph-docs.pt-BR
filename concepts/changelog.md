@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 883a22e302987c59aa5c62268265f24df737ed8f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 59e8120d512866ad5a84a2efc23e4724638a166e
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403850"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433398"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -22,11 +22,20 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Foi adicionada a entidade [fido2AuthenticationMethodConfiguration](/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) para gerenciar a política do método de autenticação de chaves de segurança FIDO2 dos usuários. |
+| Adição | beta | Foi adicionada a entidade [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) para o gerenciamento da política de autenticação do método de autenticação Microsoft Authenticator Passwordless Phone Sign-in dos usuários. |
+| Adição | beta | Foi adicionada a entidade [EmailAuthenticationMethod](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta)para gerenciar o método de autenticação de e-mail dos usuários. |
 |Adição|beta|Propriedade **allowInvitesFrom** adicionada ao recurso [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta).|
 |Adição|beta|Adicionado o tipo de recurso [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) e as seguintes operações: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) e [Atualizar b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
 |Adição|beta|Adicionada a permissão **Policy.ReadWrite.AuthenticationMethod** à [referência de Permissões](permissions-reference.md#policy-permissions).|
 
 ## <a name="september-2020"></a>Setembro de 2020
+
+### <a name="applications"></a>Aplicativos
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a navegação [delegatedPermissionClassifications](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta) para o recurso do [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
 ### <a name="calendar"></a>Calendário
 
@@ -41,6 +50,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | v1.0 | Adiciona [chatMessage](/graph/api/resources/presence) a recursos suportados para [ notificações de alteração](/graph/webhooks). |
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
+
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a propriedade **lobbyBypassSettings**, **isEntryExitAnnounced** e **allowedPresenters** à entidade [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta).|
@@ -115,6 +125,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A propriedade **schedule** foi adicionada a [accessPackageAssignment](/graph/api/resources/accesspackageassignment?view=graph-rest-beta) e [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) no gerenciamento de direitos.|
+| Adição | beta | Adicionou o tipo de recurso [permissionGrantPolicy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta).|
 | Adição | beta | Adicionou o tipo de recurso [bitlockerRecoveryKey](/graph/api/resources/bitlockerRecoveryKey?view=graph-rest-beta).|
 | Adição | beta | Adicionado o tipo enumerado **volumeType**.|
 | Adição | beta | Adicionado o tipo complexo **directorySizeQuota** à entidade [organization](/graph/api/resources/organization?view=graph-rest-beta). |
@@ -130,6 +141,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição|beta|Adicionou o tipo de recurso [continuousAccessEvaluationPolicy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta).|
+|Adição|beta|Adicionou o tipo de recurso [permissionGrantPolicy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta&preserve-view=true). As políticas de concessão de permissão descrevem as condições que devem ser atendidas para que as permissões sejam concedidas aos aplicativos.|
 |Adição|beta|Adicionada a propriedade **permissionGrantPolicyIdsAssignedToDefaultUserRole** ao recurso [permissionPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="reports"></a>Relatórios
@@ -161,6 +173,8 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Adição|beta| Foi adicionada a propriedade **createdDateTime** aos recursos do [canal](/graph/api/resources/channel?view=graph-rest-beta) e da [equipe](/graph/api/resources/team?view=graph-rest-beta).|
 |Adição|Beta e v1.0| Adicionado o método [Update chatMessage](/graph/api/chatmessage-update) ao recurso [chatMessage](/graph/api/resources/chatmessage).|
 |Adição|v1.0| Adicionados os métodos [Listar membros](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Adicionar membros](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true)e [Remover membros](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true).|
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 
 ### <a name="users"></a>Usuários
 
@@ -3621,7 +3635,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
 |Adição|v1.0|O suporte a [processamento em lotes JSON](json-batching.md) foi adicionado. Limite interno de solicitações definido como 20.|
-|Alteração|Beta|O limite interno de solicitações do [envio em lotes JSON](json-batching.md) foi aumentado de 5 para 20.|
+|Alterar|Beta|O limite interno de solicitações do [envio em lotes JSON](json-batching.md) foi aumentado de 5 para 20.|
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
 |Tipo de alteração|Versão|Descrição|
@@ -3871,7 +3885,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Alteração|Beta|A propriedade de navegação **deviceConfiguration** foi adicionada à entidade [deviceConfigurationGroupAssignment](/graph/api/resources/intune-deviceconfig-deviceconfigurationgroupassignment?view=graph-rest-beta)|
 |Alteração|Beta|As propriedades de navegação **deviceSetupConfigurations**, **ndesConnectors**, **exchangeOnPremisesPolicies**, **conditionalAccessSettings**, **auditEvents** e **troubleshootingEvents** foram adicionadas à entidade [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade de navegação **mobileAppIdentifierDeployments** foi removida da entidade [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta)|
-|Alteração|Beta|A propriedade de navegação **windowsProtectionState** foi adicionada à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
+|Alterar|Beta|A propriedade de navegação **windowsProtectionState** foi adicionada à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
 |Alteração|Beta|As propriedades de navegação **mobileAppIdentifierDeployments** e **targetedSecurityGroups** foram removidas da entidade [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade de navegação **targetedSecurityGroups** foi removida da entidade [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade de navegação **deviceManagementTroubleshootingEvents** foi adicionada è entidade [user](/graph/api/resources/intune-devices-user?view=graph-rest-beta)|
@@ -4295,7 +4309,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração           | Beta    | A propriedade **overrideDefaultRule** foi adicionada à entidade [onPremisesConditionalAccessSettings](/graph/api/resources/intune-onboarding-onpremisesconditionalaccesssettings?view=graph-rest-beta) |
 | Alteração           | Beta    | A propriedade **userPrincipalName** foi adicionada à entidade [userAppInstallStatus](/graph/api/resources/intune-apps-userappinstallstatus?view=graph-rest-beta) |
 | Alteração           | Beta    | Foram adicionadas as propriedades **connectAppBlockAutoLaunch**, **deviceAccountBlockExchangeServices**, **deviceAccountEmailAddress**, **deviceAccountExchangeServerAddress**, **deviceAccountRequirePasswordRotation**, **deviceAccountSessionInitiationProtocolAddress**, **settingsBlockMyMeetingsAndFiles**, **settingsBlockSessionResume**, **settingsBlockSigninSuggestions**, **settingsDefaultVolume**, **settingsScreenTimeoutInMinutes**, **settingsSessionTimeoutInMinutes** e **settingsSleepTimeoutInMinutes** à entidade [windows10TeamGeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10teamgeneralconfiguration?view=graph-rest-beta) |
-| Alteração           | Beta    | A propriedade de navegação **deploymentSummary** foi adicionada à entidade [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) |
+| Alterar           | Beta    | A propriedade de navegação **deploymentSummary** foi adicionada à entidade [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) |
 | Alteração           | Beta    | Foram adicionadas as propriedades **settingName**, **userId**, **userName**, **userEmail** e **currentValue** ao tipo complexo [deviceCompliancePolicySettingState](/graph/api/resources/intune-deviceconfig-devicecompliancepolicysettingstate?view=graph-rest-beta) |
 | Alteração           | Beta    | As propriedades **settingName**, **userId**, **userName**, **userEmail** e **currentValue** foram adicionadas ao tipo complexo [deviceConfigurationSettingState](/graph/api/resources/intune-deviceconfig-deviceconfigurationsettingstate?view=graph-rest-beta) |
 | Alteração           | Beta    | A propriedade **unknownCount** foi adicionada ao tipo complexo [deviceOperatingSystemSummary](/graph/api/resources/intune-devices-deviceoperatingsystemsummary?view=graph-rest-beta) |
@@ -4862,7 +4876,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Alteração      | Beta    | Foram removidas as propriedades **renewalThresholdPercentage**, **keyStorageProvider**, **subjectNameFormat**, **subjectAlternativeNameType**, **certificateValidityPeriodValue** e **certificateValidityPeriodScale** da entidade [windows10CertificateProfileBase](/graph/api/resources/intune-deviceconfig-windows10certificateprofilebase?view=graph-rest-beta)  |
 | Alteração      | Beta    | Foram removidas as propriedades **renewalThresholdPercentage**, **keyStorageProvider**, **subjectNameFormat**, **subjectAlternativeNameType**, **certificateValidityPeriodValue** e **certificateValidityPeriodScale** da entidade [windows81CertificateProfileBase](/graph/api/resources/intune-deviceconfig-windows81certificateprofilebase?view=graph-rest-beta) |
 | Alteração      | Beta    | Foi removida a propriedade **applyToWindows10Mobile** da entidade [windowsPhone81GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windowsphone81generalconfiguration?view=graph-rest-beta)  |
-| Alteração      | Beta    | Foram adicionadas as propriedades de navegação **enterpriseCerts**, **iosLobAppProvisioningConfigurations** e **symantecCert** à entidade [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta) |
+| Alterar      | Beta    | Foram adicionadas as propriedades de navegação **enterpriseCerts**, **iosLobAppProvisioningConfigurations** e **symantecCert** à entidade [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade de navegação **userStatusOverview** foi adicionada à entidade [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta) |
 | Alteração      | Beta    | A propriedade de navegação **userStatusOverview** foi adicionada à entidade [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta) |
 | Alteração      | Beta    | Foram adicionadas as propriedades de navegação **groupAssignments**, **deviceStatuses** e **userStatuses** à entidade [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) |
