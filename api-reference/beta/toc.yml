@@ -925,6 +925,15 @@ items:
                 items:
                   - name: Listar concessões de permissão delegada
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: Classificações de permissão delegada
+                href: resources/delegatedpermissionclassification.md
+                items:
+                  - name: Listar
+                    href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+                  - name: Criar
+                    href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+                  - name: Excluir
+                    href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
               - name: Associação
                 items:
                   - name: Listar memberOf
@@ -10237,6 +10246,34 @@ items:
                         href: api/homerealmdiscoverypolicy-delete.md
                       - name: Listar aplicadas ao aplicativo
                         href: api/homerealmdiscoverypolicy-list-appliesto.md
+                  - name: Política de concessão de permissão
+                    href: resources/permissiongrantpolicy.md
+                    items:
+                      - name: Criar
+                        href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+                      - name: Listar
+                        href: api/permissiongrantpolicy-list.md
+                      - name: Obter
+                        href: api/permissiongrantpolicy-get.md
+                      - name: Atualizar
+                        href: api/permissiongrantpolicy-update.md
+                      - name: Excluir
+                        href: api/permissiongrantpolicy-delete.md
+                      - name: Conjuntos de condições de concessão de permissão
+                        href: resources/permissiongrantconditionset.md
+                        items:
+                          - name: Lista inclui
+                            href: api/permissiongrantpolicy-list-includes.md
+                          - name: Criar em inclui
+                            href: api/permissiongrantpolicy-post-includes.md
+                          - name: Excluir de inclui
+                            href: api/permissiongrantpolicy-delete-includes.md
+                          - name: Listar exclusões
+                            href: api/permissiongrantpolicy-list-excludes.md
+                          - name: Criar em exclusões
+                            href: api/permissiongrantpolicy-post-excludes.md
+                          - name: Excluir de exclusões
+                            href: api/permissiongrantpolicy-delete-excludes.md
                   - name: Política de emissão de tokens
                     href: resources/tokenissuancepolicy.md
                     items:
