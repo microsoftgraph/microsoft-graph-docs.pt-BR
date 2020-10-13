@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 724e1b81bdb2d5c1244681cc4a754c0272be8a1d
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 72ad6506cf90f0341148ef0b32f804e6ee4d12a7
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417860"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433419"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -59,7 +59,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>valores de authenticationMethodState
@@ -1084,7 +1084,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |Member|
 |:---|
 |SignIn|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>valores de chatMessagePolicyViolationUserActionType
@@ -1297,7 +1297,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | ,0     | Ainda não conhece.            |
-| usuário          | 1     | Envio do usuário.         |
+| user          | 1     | Envio do usuário.         |
 | administrador | duas     | Envio de administrador de locatários. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores de threatAssessmentResultType
@@ -1414,7 +1414,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="connectionstate-values"></a>valores ConnectionState
@@ -1425,3 +1425,17 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |Pronto|
 |substituí|
 |limitExceeded|
+
+### <a name="permissionclassificationtype-values"></a>valores de permissionClassificationType
+
+| Member
+|:-------
+| low
+
+### <a name="permissiontype-values"></a>valores de permissãotype
+
+| Member
+|:-------------------------
+| aplicação
+| delegada
+| delegatedUserConsentable
