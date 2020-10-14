@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9e79f9b30d7cf9f15336cc43590ed288a7cf43c7
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 5426851811296d1449613826e0d7bb2ae7bfbd45
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330393"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48462626"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var set = new Set
+var set = new Microsoft.Graph.TermStore.Set
 {
     Description = "mySet"
 };

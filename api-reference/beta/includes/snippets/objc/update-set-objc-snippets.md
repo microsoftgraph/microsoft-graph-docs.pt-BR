@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 4ae3a08fda4c8b2a5b8e60e297b57f45b61cdc8b
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 6a5a8687a7eb55c345fd35a945b7cbf8799d830d
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330392"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48462472"
 ---
 ```objc
 
@@ -16,7 +16,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphSet *set = [[MSGraphSet alloc] init];
+MSGraphTermStoreSet *set = [[MSGraphTermStoreSet alloc] init];
 [set setDescription:@"mySet"];
 
 NSError *error;
