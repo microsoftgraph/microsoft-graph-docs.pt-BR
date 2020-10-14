@@ -5,34 +5,34 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bac7bdce027322390a51336221e9c342e2e04d3c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 648b0a6edd8f5e24665a6829e0f30ff10453d23b
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405747"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459485"
 ---
-# <a name="list-joinedteams"></a><span data-ttu-id="76d41-103">Listar joinedTeams</span><span class="sxs-lookup"><span data-stu-id="76d41-103">List joinedTeams</span></span>
+# <a name="list-joinedteams"></a><span data-ttu-id="1ef86-103">Listar joinedTeams</span><span class="sxs-lookup"><span data-stu-id="1ef86-103">List joinedTeams</span></span>
 
-<span data-ttu-id="76d41-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="76d41-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1ef86-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1ef86-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="76d41-105">Obtenha as [equipes](../resources/team.md) do Microsoft Teams das quais o usuário é um membro direto.</span><span class="sxs-lookup"><span data-stu-id="76d41-105">Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.</span></span>
+<span data-ttu-id="1ef86-105">Obtenha as [equipes](../resources/team.md) do Microsoft Teams das quais o usuário é um membro direto.</span><span class="sxs-lookup"><span data-stu-id="1ef86-105">Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.</span></span>
  
-## <a name="permissions"></a><span data-ttu-id="76d41-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="76d41-106">Permissions</span></span>
-<span data-ttu-id="76d41-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="76d41-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1ef86-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1ef86-106">Permissions</span></span>
+<span data-ttu-id="1ef86-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1ef86-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="76d41-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="76d41-109">Permission type</span></span>      | <span data-ttu-id="76d41-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="76d41-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1ef86-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1ef86-109">Permission type</span></span>      | <span data-ttu-id="1ef86-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1ef86-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="76d41-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="76d41-111">Delegated (work or school account)</span></span> | <span data-ttu-id="76d41-112">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="76d41-112">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="76d41-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="76d41-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="76d41-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="76d41-114">Not supported.</span></span>    |
-|<span data-ttu-id="76d41-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="76d41-115">Application</span></span> | <span data-ttu-id="76d41-116">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="76d41-116">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="1ef86-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1ef86-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1ef86-112">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ef86-112">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="1ef86-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1ef86-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1ef86-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1ef86-114">Not supported.</span></span>    |
+|<span data-ttu-id="1ef86-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1ef86-115">Application</span></span> | <span data-ttu-id="1ef86-116">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ef86-116">Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="76d41-117">Atualmente, com permissões delegadas pelo usuário, essa operação só funciona para o usuário "eu".</span><span class="sxs-lookup"><span data-stu-id="76d41-117">Currently, with user delegated permissions this operation only works for the 'me' user.</span></span> 
-> <span data-ttu-id="76d41-118">Com permissões de aplicativo, ela serve para todos os usuários, especificando a ID do usuário específico. (O alias 'eu' não é compatível com permissões de aplicativo) Para ver detalhes, confira [Problemas conhecidos](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span><span class="sxs-lookup"><span data-stu-id="76d41-118">With application permissions, it works for all users by specifying  the specific user  id. ('me' alias is not supported with application permissions) For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span></span>
+> <span data-ttu-id="1ef86-117">Atualmente, com permissões delegadas pelo usuário, essa operação só funciona para o usuário "eu".</span><span class="sxs-lookup"><span data-stu-id="1ef86-117">Currently, with user delegated permissions this operation only works for the 'me' user.</span></span> 
+> <span data-ttu-id="1ef86-118">Com permissões de aplicativo, ela serve para todos os usuários, especificando a ID do usuário específico. (O alias 'eu' não é compatível com permissões de aplicativo) Para ver detalhes, confira [Problemas conhecidos](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span><span class="sxs-lookup"><span data-stu-id="1ef86-118">With application permissions, it works for all users by specifying  the specific user  id. ('me' alias is not supported with application permissions) For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="76d41-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="76d41-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1ef86-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1ef86-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/joinedTeams
@@ -40,27 +40,27 @@ or
 GET /users/{id}/joinedTeams
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="76d41-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="76d41-120">Optional query parameters</span></span>
-<span data-ttu-id="76d41-121">Atualmente, os [Parâmetros de consulta OData](/graph/query-parameters) não têm suporte.</span><span class="sxs-lookup"><span data-stu-id="76d41-121">The [OData Query Parameters](/graph/query-parameters) are not currently supported.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1ef86-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="1ef86-120">Optional query parameters</span></span>
+<span data-ttu-id="1ef86-121">Atualmente, os [Parâmetros de consulta OData](/graph/query-parameters) não têm suporte.</span><span class="sxs-lookup"><span data-stu-id="1ef86-121">The [OData Query Parameters](/graph/query-parameters) are not currently supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="76d41-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="76d41-122">Request headers</span></span>
-| <span data-ttu-id="76d41-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="76d41-123">Header</span></span>       | <span data-ttu-id="76d41-124">Valor</span><span class="sxs-lookup"><span data-stu-id="76d41-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="1ef86-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1ef86-122">Request headers</span></span>
+| <span data-ttu-id="1ef86-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1ef86-123">Header</span></span>       | <span data-ttu-id="1ef86-124">Valor</span><span class="sxs-lookup"><span data-stu-id="1ef86-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="76d41-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="76d41-125">Authorization</span></span>  | <span data-ttu-id="76d41-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="76d41-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="76d41-128">Aceitar</span><span class="sxs-lookup"><span data-stu-id="76d41-128">Accept</span></span>  | <span data-ttu-id="76d41-129">application/json</span><span class="sxs-lookup"><span data-stu-id="76d41-129">application/json</span></span>|
+| <span data-ttu-id="1ef86-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="1ef86-125">Authorization</span></span>  | <span data-ttu-id="1ef86-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1ef86-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1ef86-128">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1ef86-128">Accept</span></span>  | <span data-ttu-id="1ef86-129">application/json</span><span class="sxs-lookup"><span data-stu-id="1ef86-129">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="76d41-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="76d41-130">Request body</span></span>
-<span data-ttu-id="76d41-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="76d41-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1ef86-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1ef86-130">Request body</span></span>
+<span data-ttu-id="1ef86-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1ef86-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="76d41-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="76d41-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1ef86-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ef86-132">Response</span></span>
 
-<span data-ttu-id="76d41-133">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos da[equipe](../resources/team.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="76d41-133">If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.</span></span>
+<span data-ttu-id="1ef86-133">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos da[equipe](../resources/team.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1ef86-133">If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="76d41-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="76d41-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="76d41-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="76d41-135">Request</span></span>
-<span data-ttu-id="76d41-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="76d41-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1ef86-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1ef86-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1ef86-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1ef86-135">Request</span></span>
+<span data-ttu-id="1ef86-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1ef86-136">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="76d41-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="76d41-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1ef86-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="1ef86-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_joinedteams"
@@ -68,22 +68,22 @@ GET /users/{id}/joinedTeams
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/joinedTeams
 ```
-# <a name="c"></a>[<span data-ttu-id="76d41-138">C#</span><span class="sxs-lookup"><span data-stu-id="76d41-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1ef86-138">C#</span><span class="sxs-lookup"><span data-stu-id="1ef86-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-joinedteams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="76d41-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="76d41-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1ef86-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1ef86-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-joinedteams-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="76d41-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="76d41-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1ef86-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1ef86-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-joinedteams-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="76d41-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="76d41-141">Response</span></span>
-<span data-ttu-id="76d41-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="76d41-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1ef86-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ef86-141">Response</span></span>
+<span data-ttu-id="1ef86-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1ef86-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,8 +104,8 @@ Content-length: 55
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="76d41-145">Confira também</span><span class="sxs-lookup"><span data-stu-id="76d41-145">See also</span></span>
-[<span data-ttu-id="76d41-146">Listar todas as equipes</span><span class="sxs-lookup"><span data-stu-id="76d41-146">List all teams</span></span>](/graph/teams-list-all-teams)
+## <a name="see-also"></a><span data-ttu-id="1ef86-145">Confira também</span><span class="sxs-lookup"><span data-stu-id="1ef86-145">See also</span></span>
+[<span data-ttu-id="1ef86-146">Listar todas as equipes</span><span class="sxs-lookup"><span data-stu-id="1ef86-146">List all teams</span></span>](/graph/teams-list-all-teams)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,42 +5,42 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d71a15a00ead9c241157da67170b6b2f032c4847
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 4e1fd8eda31d1583489b1f75ab3dc97cf81f6d44
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417934"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457554"
 ---
-# <a name="passwordauthenticationmethod-resetpassword"></a><span data-ttu-id="89ac0-103">passwordAuthenticationMethod: resetPassword</span><span class="sxs-lookup"><span data-stu-id="89ac0-103">passwordAuthenticationMethod: resetPassword</span></span>
+# <a name="passwordauthenticationmethod-resetpassword"></a><span data-ttu-id="1c46d-103">passwordAuthenticationMethod: resetPassword</span><span class="sxs-lookup"><span data-stu-id="1c46d-103">passwordAuthenticationMethod: resetPassword</span></span>
 
-<span data-ttu-id="89ac0-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89ac0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1c46d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1c46d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="89ac0-105">Inicie uma redefinição para a senha associada a um objeto de [método de autenticação de senha](../resources/passwordauthenticationmethod.md) .</span><span class="sxs-lookup"><span data-stu-id="89ac0-105">Initiate a reset for the password associated with a [password authentication method](../resources/passwordauthenticationmethod.md) object.</span></span> <span data-ttu-id="89ac0-106">Isso só pode ser feito por um administrador com as permissões apropriadas e não pode ser executado na conta de um usuário.</span><span class="sxs-lookup"><span data-stu-id="89ac0-106">This can only be done by an administrator with appropriate permissions and cannot be performed on a user's own account.</span></span>
+<span data-ttu-id="1c46d-105">Inicie uma redefinição para a senha associada a um objeto de [método de autenticação de senha](../resources/passwordauthenticationmethod.md) .</span><span class="sxs-lookup"><span data-stu-id="1c46d-105">Initiate a reset for the password associated with a [password authentication method](../resources/passwordauthenticationmethod.md) object.</span></span> <span data-ttu-id="1c46d-106">Isso só pode ser feito por um administrador com as permissões apropriadas e não pode ser executado na conta de um usuário.</span><span class="sxs-lookup"><span data-stu-id="1c46d-106">This can only be done by an administrator with appropriate permissions and cannot be performed on a user's own account.</span></span>
 
-<span data-ttu-id="89ac0-107">Este fluxo grava a nova senha no Azure Active Directory e a envia para o Active Directory local, se configurado usando o Write-back de senha.</span><span class="sxs-lookup"><span data-stu-id="89ac0-107">This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback.</span></span> <span data-ttu-id="89ac0-108">O administrador pode fornecer uma nova senha ou fazer com que o sistema gere uma.</span><span class="sxs-lookup"><span data-stu-id="89ac0-108">The admin can either provide a new password or have the system generate one.</span></span> <span data-ttu-id="89ac0-109">O usuário é solicitado a alterar a senha na próxima vez em que entrar.</span><span class="sxs-lookup"><span data-stu-id="89ac0-109">The user is prompted to change their password on their next sign in.</span></span>
+<span data-ttu-id="1c46d-107">Este fluxo grava a nova senha no Azure Active Directory e a envia para o Active Directory local, se configurado usando o Write-back de senha.</span><span class="sxs-lookup"><span data-stu-id="1c46d-107">This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback.</span></span> <span data-ttu-id="1c46d-108">O administrador pode fornecer uma nova senha ou fazer com que o sistema gere uma.</span><span class="sxs-lookup"><span data-stu-id="1c46d-108">The admin can either provide a new password or have the system generate one.</span></span> <span data-ttu-id="1c46d-109">O usuário é solicitado a alterar a senha na próxima vez em que entrar.</span><span class="sxs-lookup"><span data-stu-id="1c46d-109">The user is prompted to change their password on their next sign in.</span></span>
 
-<span data-ttu-id="89ac0-110">Essa redefinição é uma operação de execução longa e retornará um link no `Location` cabeçalho onde o chamador pode verificar periodicamente o status da redefinição.</span><span class="sxs-lookup"><span data-stu-id="89ac0-110">This reset is a long-running operation and will return a link in the `Location` header where the caller can periodically check for the status of the reset.</span></span>
+<span data-ttu-id="1c46d-110">Essa redefinição é uma operação de execução longa e retornará um link no `Location` cabeçalho onde o chamador pode verificar periodicamente o status da redefinição.</span><span class="sxs-lookup"><span data-stu-id="1c46d-110">This reset is a long-running operation and will return a link in the `Location` header where the caller can periodically check for the status of the reset.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="89ac0-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="89ac0-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1c46d-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="1c46d-111">Permissions</span></span>
 
-<span data-ttu-id="89ac0-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="89ac0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1c46d-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1c46d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="89ac0-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="89ac0-114">Permission type</span></span>                        | <span data-ttu-id="89ac0-115">Permissões que atuam em si (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="89ac0-115">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="89ac0-116">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="89ac0-116">Permissions acting on others (from least to most privileged)</span></span>|
+| <span data-ttu-id="1c46d-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1c46d-114">Permission type</span></span>                        | <span data-ttu-id="1c46d-115">Permissões que atuam em si (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1c46d-115">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="1c46d-116">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1c46d-116">Permissions acting on others (from least to most privileged)</span></span>|
 |:---------------------------------------|:-------------------------|:-----------------|
-| <span data-ttu-id="89ac0-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="89ac0-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="89ac0-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="89ac0-118">Not supported.</span></span> | <span data-ttu-id="89ac0-119">UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="89ac0-119">UserAuthenticationMethod.ReadWrite.All</span></span> |
-| <span data-ttu-id="89ac0-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="89ac0-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="89ac0-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="89ac0-121">Not supported.</span></span> | <span data-ttu-id="89ac0-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="89ac0-122">Not supported.</span></span> |
-| <span data-ttu-id="89ac0-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="89ac0-123">Application</span></span>                            | <span data-ttu-id="89ac0-124">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="89ac0-124">Not supported.</span></span> | <span data-ttu-id="89ac0-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="89ac0-125">Not supported.</span></span> |
+| <span data-ttu-id="1c46d-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1c46d-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="1c46d-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1c46d-118">Not supported.</span></span> | <span data-ttu-id="1c46d-119">UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="1c46d-119">UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="1c46d-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1c46d-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c46d-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1c46d-121">Not supported.</span></span> | <span data-ttu-id="1c46d-122">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1c46d-122">Not supported.</span></span> |
+| <span data-ttu-id="1c46d-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1c46d-123">Application</span></span>                            | <span data-ttu-id="1c46d-124">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1c46d-124">Not supported.</span></span> | <span data-ttu-id="1c46d-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1c46d-125">Not supported.</span></span> |
 
-<span data-ttu-id="89ac0-126">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="89ac0-126">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+<span data-ttu-id="1c46d-126">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="1c46d-126">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
 
-* <span data-ttu-id="89ac0-127">Administrador global</span><span class="sxs-lookup"><span data-stu-id="89ac0-127">Global admin</span></span>
-* <span data-ttu-id="89ac0-128">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="89ac0-128">Privileged authentication admin</span></span>
-* <span data-ttu-id="89ac0-129">Administrador de autenticação</span><span class="sxs-lookup"><span data-stu-id="89ac0-129">Authentication admin</span></span>
+* <span data-ttu-id="1c46d-127">Administrador global</span><span class="sxs-lookup"><span data-stu-id="1c46d-127">Global admin</span></span>
+* <span data-ttu-id="1c46d-128">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="1c46d-128">Privileged authentication admin</span></span>
+* <span data-ttu-id="1c46d-129">Administrador de autenticação</span><span class="sxs-lookup"><span data-stu-id="1c46d-129">Authentication admin</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="89ac0-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="89ac0-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1c46d-130">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1c46d-130">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -48,45 +48,45 @@ ms.locfileid: "48417934"
 POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="89ac0-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="89ac0-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1c46d-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1c46d-131">Request headers</span></span>
 
-| <span data-ttu-id="89ac0-132">Nome</span><span class="sxs-lookup"><span data-stu-id="89ac0-132">Name</span></span>          | <span data-ttu-id="89ac0-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="89ac0-133">Description</span></span>   |
+| <span data-ttu-id="1c46d-132">Nome</span><span class="sxs-lookup"><span data-stu-id="1c46d-132">Name</span></span>          | <span data-ttu-id="1c46d-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="1c46d-133">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="89ac0-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="89ac0-134">Authorization</span></span> | <span data-ttu-id="89ac0-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="89ac0-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="89ac0-137">Content-type</span><span class="sxs-lookup"><span data-stu-id="89ac0-137">Content-type</span></span>  | <span data-ttu-id="89ac0-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="89ac0-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="1c46d-134">Autorização</span><span class="sxs-lookup"><span data-stu-id="1c46d-134">Authorization</span></span> | <span data-ttu-id="1c46d-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1c46d-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1c46d-137">Content-type</span><span class="sxs-lookup"><span data-stu-id="1c46d-137">Content-type</span></span>  | <span data-ttu-id="1c46d-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1c46d-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="89ac0-140">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="89ac0-140">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1c46d-140">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1c46d-140">Request body</span></span>
 
-<span data-ttu-id="89ac0-141">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="89ac0-141">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="1c46d-141">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1c46d-141">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="89ac0-142">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="89ac0-142">Parameter</span></span>    | <span data-ttu-id="89ac0-143">Tipo</span><span class="sxs-lookup"><span data-stu-id="89ac0-143">Type</span></span>        | <span data-ttu-id="89ac0-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="89ac0-144">Description</span></span> |
+| <span data-ttu-id="1c46d-142">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="1c46d-142">Parameter</span></span>    | <span data-ttu-id="1c46d-143">Tipo</span><span class="sxs-lookup"><span data-stu-id="1c46d-143">Type</span></span>        | <span data-ttu-id="1c46d-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="1c46d-144">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="89ac0-145">newPassword</span><span class="sxs-lookup"><span data-stu-id="89ac0-145">newPassword</span></span>|<span data-ttu-id="89ac0-146">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="89ac0-146">String</span></span>|<span data-ttu-id="89ac0-147">A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida.</span><span class="sxs-lookup"><span data-stu-id="89ac0-147">The new password entered by the admin. Required for tenants with hybrid password scenarios.</span></span> <span data-ttu-id="89ac0-148">Se for omitido para uma senha somente de nuvem, o sistema retornará uma senha gerada pelo sistema.</span><span class="sxs-lookup"><span data-stu-id="89ac0-148">If omitted for a cloud-only password, the system returns a system-generated password.</span></span> <span data-ttu-id="89ac0-149">Esta é uma cadeia de caracteres Unicode sem codificação.</span><span class="sxs-lookup"><span data-stu-id="89ac0-149">This is a unicode string with no other encoding.</span></span> <span data-ttu-id="89ac0-150">Ele é validado em relação ao sistema de senha banida do locatário antes da aceitação e deve cumprir a nuvem do locatário e/ou os requisitos de senha local.</span><span class="sxs-lookup"><span data-stu-id="89ac0-150">It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.</span></span>|
+|<span data-ttu-id="1c46d-145">newPassword</span><span class="sxs-lookup"><span data-stu-id="1c46d-145">newPassword</span></span>|<span data-ttu-id="1c46d-146">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1c46d-146">String</span></span>|<span data-ttu-id="1c46d-147">A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida.</span><span class="sxs-lookup"><span data-stu-id="1c46d-147">The new password entered by the admin. Required for tenants with hybrid password scenarios.</span></span> <span data-ttu-id="1c46d-148">Se for omitido para uma senha somente de nuvem, o sistema retornará uma senha gerada pelo sistema.</span><span class="sxs-lookup"><span data-stu-id="1c46d-148">If omitted for a cloud-only password, the system returns a system-generated password.</span></span> <span data-ttu-id="1c46d-149">Esta é uma cadeia de caracteres Unicode sem codificação.</span><span class="sxs-lookup"><span data-stu-id="1c46d-149">This is a unicode string with no other encoding.</span></span> <span data-ttu-id="1c46d-150">Ele é validado em relação ao sistema de senha banida do locatário antes da aceitação e deve cumprir a nuvem do locatário e/ou os requisitos de senha local.</span><span class="sxs-lookup"><span data-stu-id="1c46d-150">It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="89ac0-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="89ac0-151">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1c46d-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="1c46d-151">Response</span></span>
 
-<span data-ttu-id="89ac0-152">Se tiver êxito, este método retornará um `202 ACCEPTED` código de resposta e uma URL no `Location` cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="89ac0-152">If successful, this method returns a `202 ACCEPTED` response code and a URL in the `Location` header.</span></span>
+<span data-ttu-id="1c46d-152">Se tiver êxito, este método retornará um `202 ACCEPTED` código de resposta e uma URL no `Location` cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="1c46d-152">If successful, this method returns a `202 ACCEPTED` response code and a URL in the `Location` header.</span></span>
 
-<span data-ttu-id="89ac0-153">Se o chamador não enviar uma senha, uma senha gerada pela Microsoft será fornecida em um objeto JSON no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="89ac0-153">If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.</span></span>
+<span data-ttu-id="1c46d-153">Se o chamador não enviar uma senha, uma senha gerada pela Microsoft será fornecida em um objeto JSON no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1c46d-153">If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.</span></span>
 
-### <a name="response-headers"></a><span data-ttu-id="89ac0-154">Cabeçalhos de resposta</span><span class="sxs-lookup"><span data-stu-id="89ac0-154">Response headers</span></span>
+### <a name="response-headers"></a><span data-ttu-id="1c46d-154">Cabeçalhos de resposta</span><span class="sxs-lookup"><span data-stu-id="1c46d-154">Response headers</span></span>
 
-| <span data-ttu-id="89ac0-155">Nome</span><span class="sxs-lookup"><span data-stu-id="89ac0-155">Name</span></span>        | <span data-ttu-id="89ac0-156">Descrição</span><span class="sxs-lookup"><span data-stu-id="89ac0-156">Description</span></span>     |
+| <span data-ttu-id="1c46d-155">Nome</span><span class="sxs-lookup"><span data-stu-id="1c46d-155">Name</span></span>        | <span data-ttu-id="1c46d-156">Descrição</span><span class="sxs-lookup"><span data-stu-id="1c46d-156">Description</span></span>     |
 |:------------|:----------------|
-|<span data-ttu-id="89ac0-157">Local</span><span class="sxs-lookup"><span data-stu-id="89ac0-157">Location</span></span>     | <span data-ttu-id="89ac0-158">URL a ser chamada para verificar o status da operação.</span><span class="sxs-lookup"><span data-stu-id="89ac0-158">URL to call to check the status of the operation.</span></span>|
-|<span data-ttu-id="89ac0-159">Repetir-após</span><span class="sxs-lookup"><span data-stu-id="89ac0-159">Retry-after</span></span>  | <span data-ttu-id="89ac0-160">Duração em segundos.</span><span class="sxs-lookup"><span data-stu-id="89ac0-160">Duration in seconds.</span></span>|
+|<span data-ttu-id="1c46d-157">Local</span><span class="sxs-lookup"><span data-stu-id="1c46d-157">Location</span></span>     | <span data-ttu-id="1c46d-158">URL a ser chamada para verificar o status da operação.</span><span class="sxs-lookup"><span data-stu-id="1c46d-158">URL to call to check the status of the operation.</span></span>|
+|<span data-ttu-id="1c46d-159">Repetir-após</span><span class="sxs-lookup"><span data-stu-id="1c46d-159">Retry-after</span></span>  | <span data-ttu-id="1c46d-160">Duração em segundos.</span><span class="sxs-lookup"><span data-stu-id="1c46d-160">Duration in seconds.</span></span>|
 
-## <a name="examples"></a><span data-ttu-id="89ac0-161">Exemplos</span><span class="sxs-lookup"><span data-stu-id="89ac0-161">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="1c46d-161">Exemplos</span><span class="sxs-lookup"><span data-stu-id="1c46d-161">Examples</span></span>
 
-### <a name="example-1-user-submitted-password"></a><span data-ttu-id="89ac0-162">Exemplo 1: senha enviada pelo usuário</span><span class="sxs-lookup"><span data-stu-id="89ac0-162">Example 1: User-submitted password</span></span>
+### <a name="example-1-user-submitted-password"></a><span data-ttu-id="1c46d-162">Exemplo 1: senha enviada pelo usuário</span><span class="sxs-lookup"><span data-stu-id="1c46d-162">Example 1: User-submitted password</span></span>
 
-<span data-ttu-id="89ac0-163">O exemplo a seguir mostra como chamar essa API quando o chamador enviar uma senha.</span><span class="sxs-lookup"><span data-stu-id="89ac0-163">The following example shows how to call this API when the caller submits a password.</span></span>
+<span data-ttu-id="1c46d-163">O exemplo a seguir mostra como chamar essa API quando o chamador enviar uma senha.</span><span class="sxs-lookup"><span data-stu-id="1c46d-163">The following example shows how to call this API when the caller submits a password.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="89ac0-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="89ac0-164">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1c46d-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1c46d-164">Request</span></span>
 
-<span data-ttu-id="89ac0-165">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="89ac0-165">The following is an example of the request.</span></span>
+<span data-ttu-id="1c46d-165">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1c46d-165">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="89ac0-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="89ac0-166">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1c46d-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c46d-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "passwordauthenticationmethod_resetpassword_adminprovided"
@@ -100,26 +100,26 @@ Content-type: application/json
   "newPassword": "newPassword-value",
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="89ac0-167">C#</span><span class="sxs-lookup"><span data-stu-id="89ac0-167">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1c46d-167">C#</span><span class="sxs-lookup"><span data-stu-id="1c46d-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-adminprovided-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="89ac0-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="89ac0-168">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1c46d-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1c46d-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/passwordauthenticationmethod-resetpassword-adminprovided-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="89ac0-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="89ac0-169">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1c46d-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1c46d-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-adminprovided-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="89ac0-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="89ac0-170">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1c46d-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="1c46d-170">Response</span></span>
 
-<span data-ttu-id="89ac0-171">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="89ac0-171">The following is an example of the response.</span></span>
+<span data-ttu-id="1c46d-171">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1c46d-171">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="89ac0-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="89ac0-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="1c46d-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1c46d-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -142,15 +142,15 @@ Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authen
   "tocPath": ""
 }-->
 
-### <a name="example-2-system-generated-password"></a><span data-ttu-id="89ac0-174">Exemplo 2: senha gerada pelo sistema</span><span class="sxs-lookup"><span data-stu-id="89ac0-174">Example 2: System-generated password</span></span>
+### <a name="example-2-system-generated-password"></a><span data-ttu-id="1c46d-174">Exemplo 2: senha gerada pelo sistema</span><span class="sxs-lookup"><span data-stu-id="1c46d-174">Example 2: System-generated password</span></span>
 
-<span data-ttu-id="89ac0-175">O exemplo a seguir mostra como chamar essa API quando o chamador não enviar uma senha.</span><span class="sxs-lookup"><span data-stu-id="89ac0-175">The following example shows how to call this API when the caller does not submit a password.</span></span>
+<span data-ttu-id="1c46d-175">O exemplo a seguir mostra como chamar essa API quando o chamador não enviar uma senha.</span><span class="sxs-lookup"><span data-stu-id="1c46d-175">The following example shows how to call this API when the caller does not submit a password.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="89ac0-176">Solicitação</span><span class="sxs-lookup"><span data-stu-id="89ac0-176">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1c46d-176">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1c46d-176">Request</span></span>
 
-<span data-ttu-id="89ac0-177">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="89ac0-177">The following is an example of the request.</span></span>
+<span data-ttu-id="1c46d-177">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1c46d-177">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="89ac0-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="89ac0-178">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1c46d-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c46d-178">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "passwordauthenticationmethod_resetpassword_systemgenerated"
@@ -159,26 +159,26 @@ Location: https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authen
 ```http
 POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword
 ```
-# <a name="c"></a>[<span data-ttu-id="89ac0-179">C#</span><span class="sxs-lookup"><span data-stu-id="89ac0-179">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1c46d-179">C#</span><span class="sxs-lookup"><span data-stu-id="1c46d-179">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/passwordauthenticationmethod-resetpassword-systemgenerated-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="89ac0-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="89ac0-180">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1c46d-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1c46d-180">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/passwordauthenticationmethod-resetpassword-systemgenerated-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="89ac0-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="89ac0-181">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1c46d-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1c46d-181">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-systemgenerated-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="89ac0-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="89ac0-182">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="1c46d-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="1c46d-182">Response</span></span>
 
-<span data-ttu-id="89ac0-183">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="89ac0-183">The following is an example of the response.</span></span>
+<span data-ttu-id="1c46d-183">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1c46d-183">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="89ac0-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="89ac0-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="1c46d-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1c46d-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
