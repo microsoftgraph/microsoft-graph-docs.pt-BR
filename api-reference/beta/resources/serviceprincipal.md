@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: e997d3be656bd69b35fdb8d1b6258660ad594e12
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 3e40c3f9b0d435d2ac913afbef107da29e0bff20
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433328"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460408"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -128,6 +128,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Aplicativos aos quais essa entidade de serviço é atribuída. Somente leitura. Anulável.|
 |claimsMappingPolicies|Conjunto [claimsMappingPolicy](claimsmappingpolicy.md)|O claimsMappingPolicies atribuído a essa entidade de serviço.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Objetos de diretório criados pela entidade de serviço. Somente leitura. Anulável.|
+|delegatedPermissionClassifications|Conjunto de [delegatedPermissionClassification](delegatedpermissionclassification.md)|As classificações de permissão para permissões delegadas expostas pelo aplicativo que essa entidade de serviço representa.|
 |pontos de extremidade|coleção [ponto de extremidade](endpoint.md) |Pontos de extremidade disponíveis para descoberta. Serviços como o Sharepoint preenchem essa propriedade com pontos de extremidade do SharePoint específicos de locatários que outros aplicativos podem descobrir e usar em suas experiências.|
 |homeRealmDiscoveryPolicies|Conjunto [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)|O homeRealmDiscoveryPolicies atribuído a essa entidade de serviço.|
 |memberOf|[directoryObject](directoryobject.md) collection|Funções das quais essa entidade de serviço é membro. Métodos HTTP: GET somente leitura. Anulável.|

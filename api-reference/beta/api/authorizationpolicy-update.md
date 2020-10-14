@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3a51767eb02765b3c6914d8b04c5758202b3df1f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: aef29fa2ca32bd5cbc850695d1584b16852fbaab
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401901"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457384"
 ---
 # <a name="update-authorizationpolicy"></a>Atualizar authorizationPolicy
 
@@ -55,12 +55,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |description|Cadeia de caracteres| Descrição da política. |  
 |guestUserRoleId|Guid| Representa o modelo de função para a função que deve ser concedida ao usuário convidado. Consulte [list unifiedRoleDefinitions](./rbacapplication-list-roledefinitions.md) para encontrar a lista de modelos de função disponíveis. Somente as funções suportadas hoje são usuário (a0b1b346-4d3e-4e8b-98f8-753987be4970), usuário convidado (10dae51f-b6af-4016-8d66-8c2a99b929b3) e usuário convidado restrito (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
 |enabledPreviewFeatures|Coleção (cadeia de caracteres)| Lista de recursos habilitados para visualização privada no locatário. | 
-|blockMsolPowerShell|Boolean| Para desabilitar o uso do MSOL PowerShell, defina essa propriedade como `true` . A configuração `true` também desabilitará o acesso baseado no usuário ao ponto de extremidade de serviço herdado usado pelo MSol PowerShell. Isso não afeta o Azure AD Connect ou o Microsoft Graph. | 
+|blockMsolPowerShell|Booliano| Para desabilitar o uso do MSOL PowerShell, defina essa propriedade como `true` . A configuração `true` também desabilitará o acesso baseado no usuário ao ponto de extremidade de serviço herdado usado pelo MSol PowerShell. Isso não afeta o Azure AD Connect ou o Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Especifica determinadas permissões personalizáveis para a função de usuário padrão. | 
-|allowedToUseSSPR|Boolean| Indica se o Self-Serve recurso de redefinição de senha pode ser usado por usuários no locatário. | 
-|allowedToSignUpEmailBasedSubscriptions|Boolean| Indica se os usuários podem se inscrever para assinaturas baseadas em email. | 
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| Indica se um usuário pode ingressar no locatário por validação de email. |
-| permissionGrantPolicyIdsAssignedToDefaultUserRole | Conjunto de cadeias de caracteres | Indica se o consentimento do usuário para os aplicativos é permitido e, se for, qual [política de consentimento de aplicativos](/azure/active-directory/manage-apps/manage-app-consent-policies) governará a permissão para os usuários concederem o consentimento. Os valores devem estar no formato `managePermissionGrantsForSelf.{id}` , onde `{id}` é a **ID** de uma [política de consentimento de aplicativo](/azure/active-directory/manage-apps/manage-app-consent-policies)interna ou personalizada. Uma lista vazia indica que o consentimento do usuário para os aplicativos está desabilitado. |
+|allowedToUseSSPR|Booliano| Indica se o Self-Serve recurso de redefinição de senha pode ser usado por usuários no locatário. | 
+|allowedToSignUpEmailBasedSubscriptions|Booliano| Indica se os usuários podem se inscrever para assinaturas baseadas em email. | 
+|allowEmailVerifiedUsersToJoinOrganization|Booliano| Indica se um usuário pode ingressar no locatário por validação de email. |
+| permissionGrantPolicyIdsAssignedToDefaultUserRole | Coleção String | Indica se o consentimento do usuário para os aplicativos é permitido e, se for, qual [política de consentimento de aplicativos](/azure/active-directory/manage-apps/manage-app-consent-policies) governará a permissão para os usuários concederem o consentimento. Os valores devem estar no formato `managePermissionGrantsForSelf.{id}` , onde `{id}` é a **ID** de uma [política de consentimento de aplicativo](/azure/active-directory/manage-apps/manage-app-consent-policies)interna ou personalizada. Uma lista vazia indica que o consentimento do usuário para os aplicativos está desabilitado. |
 
 ## <a name="response"></a>Resposta
 
@@ -306,6 +306,8 @@ HTTP/1.1 204 No Content
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authZPolicy_disableUserConsent"
@@ -318,6 +320,20 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
     "permissionGrantPolicyIdsAssignedToDefaultUserRole": [ ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-disableuserconsent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-disableuserconsent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-disableuserconsent-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -339,6 +355,8 @@ HTTP/1.1 204 No Content
 
 Veja a seguir um exemplo da solicitação que permite o consentimento do usuário para os aplicativos, sujeito à política de [consentimento de aplicativo](/azure/active-directory/manage-apps/manage-app-consent-policies) interna `microsoft-user-default-low` , que permite as permissões delegadas "baixa", para aplicativos clientes de editores verificados ou registrados no mesmo locatário.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authZPolicy_enableUserConsentLow"
@@ -353,6 +371,20 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-enableuserconsentlow-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-enableuserconsentlow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-enableuserconsentlow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

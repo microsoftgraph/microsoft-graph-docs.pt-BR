@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 2bc9c59b10f0f8ba3e203a3e0fc1daaf3e557e57
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 4fc5f04ebfcb4c07fb8eef894445b2fa9164ed6c
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433512"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458686"
 ---
 # <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>Criar permissionGrantConditionSet na coleção Excludes de permissionGrantPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Policy. ReadWrite. PermissionGrant |
+|Delegado (conta corporativa ou de estudante) | Policy.ReadWrite.PermissionGrant |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Policy. ReadWrite. PermissionGrant |
+|Aplicativo | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,6 +59,8 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 
 Neste exemplo, *todas* as permissões delegadas para o Microsoft Graph (**AppID** 00000003-0000-0000-C000-000000000000) são excluídas da política de concessão de permissão.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "truncated": true,
@@ -74,6 +76,20 @@ Content-Type: application/json
   "resourceApplication": "00000003-0000-0000-c000-000000000000"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/permissiongrantpolicy-create-excludes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/permissiongrantpolicy-create-excludes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/permissiongrantpolicy-create-excludes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

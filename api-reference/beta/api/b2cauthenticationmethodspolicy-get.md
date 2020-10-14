@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b2fc42c3a2d65dd06dce6e3e39e1cae090023bb
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b4dd25fce2d54aaaac451dc25ddc18a410fd1f15
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406253"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457322"
 ---
 # <a name="get-b2cauthenticationmethodspolicy"></a>Obter b2cAuthenticationMethodsPolicy
 
@@ -24,7 +24,7 @@ Ler as propriedades de um objeto [b2cAuthenticationMethodsPolicy](../resources/b
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões|
+| Tipo de permissão                        | Permissions|
 |:---------------------------------------|:---------------|
 | Delegada (conta corporativa ou de estudante)     | Policy.Read.All|
 | Delegada (conta Microsoft pessoal) | Policy.Read.All|
@@ -58,6 +58,8 @@ Se bem-sucedido, este método retorna um `200 OK`código de resposta e um objeto
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_b2cauthenticationmethodspolicy"
@@ -66,6 +68,20 @@ Este é um exemplo de solicitação.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-b2cauthenticationmethodspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-b2cauthenticationmethodspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-b2cauthenticationmethodspolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

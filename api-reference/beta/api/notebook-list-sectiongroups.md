@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 909fd08bf674b8fa60cba8c3363bcfaf630acfb0
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 11cdaece4716e86a3184e57c46621d1c3f622b32
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400981"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460752"
 ---
 # <a name="list-sectiongroups"></a>Listar sectionGroups
 

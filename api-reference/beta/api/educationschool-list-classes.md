@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bd6b3cdff81b0a4aa526c08730f6cc2cb85e3645
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 254cb134172a83e32bdcabbaa8976f5f7bcb8c6f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403406"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457622"
 ---
 # <a name="list-educationclasses"></a>Listar educationClasses
 

@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 29422f05940f6e1459e8355e747d18c0edb252bf
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 38ac08e5e9661a66909ea6af563b336b80f8c6f3
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805968"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457553"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Users["{id}"].Authentication.PasswordMethods["{id}"]
+await graphClient.Users["{id | userPrincipalName}"].Authentication.PasswordMethods["{id}"]
     .ResetPassword(null,null)
     .Request()
     .PostAsync();

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6f27734ab05b4fc38a6a7a720837da6cc21de817
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 7bef3fbf890fc8d55e28c28db519ec5853a833fa
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403976"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459596"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -54,7 +54,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |True se a conta estiver habilitada; caso contrário, false.|
+|accountEnabled |Booliano |True se a conta estiver habilitada; caso contrário, false.|
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|

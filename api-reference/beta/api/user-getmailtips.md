@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e22e6ab85ab90db49029850eca6755e17eeb99c8
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c354400caabbabcaba7f4d25ba33181d55bcf7a0
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405194"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457748"
 ---
 # <a name="user-getmailtips"></a>usuário: getdicas de dicas
 
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EmailAddresses|Conjunto de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|EmailAddresses|Coleção String|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
 |MailTipsOptions|Cadeia de caracteres|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` e `totalMemberCount` .|
 
 ## <a name="response"></a>Resposta

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 61c3bfa7d3fef328ed3c06d51f8c1db4ae552405
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: fc40a64c1af6282b0a618062cb9a0bb4cc62cc5e
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406252"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458028"
 ---
 # <a name="update-b2cauthenticationmethodspolicy"></a>Atualizar b2cAuthenticationMethodsPolicy
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao atualizar [b2cAuthenti
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|isEmailPasswordAuthenticationEnabled|Booliano|O administrador de locatário pode configurar contas locais usando email se o método de autenticação de email e senha estiver habilitado.|
+|isEmailPasswordAuthenticationEnabled|Booliano|O administrador de locatário pode configurar contas locais usando o email se o método de autenticação de email e senha estiver habilitado.|
 |isUserNameAuthenticationEnabled|Booliano|O administrador de locatário pode configurar contas locais usando nome de usuário se o método de autenticação do nome de usuário e senha estiver habilitado.|
 
 ## <a name="response"></a>Resposta
@@ -66,6 +66,8 @@ Se bem-sucedido, esse método retornará um código de resposta `204 No Content`
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_b2cauthenticationmethodspolicy"
@@ -79,6 +81,20 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
     "isUserNameAuthenticationEnabled": true
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/patch-b2cauthenticationmethodspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-b2cauthenticationmethodspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-b2cauthenticationmethodspolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

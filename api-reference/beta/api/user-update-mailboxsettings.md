@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 03a8c5f8369b54a105c904da0fd6debebb33a98e
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: fc889bcafef7433e1da050b2dba94d9f7eed1d9a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401544"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459561"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -63,10 +63,10 @@ No corpo da solicitação, forneça os valores para as propriedades relevantes q
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Você pode definir essas notificações para apenas um intervalo de datas futuras.|
-|dateFormat|string|O formato de data da caixa de correio do usuário.|
+|dateFormat|cadeia de caracteres|O formato de data da caixa de correio do usuário.|
 |delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| Se o usuário tiver um representante de calendário, isso especificará se o representante, o proprietário da caixa de correio ou ambos recebem mensagens de reunião e respostas da reunião. Os valores possíveis são: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |idioma|[localeInfo](../resources/localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
-|Formato de TimeFormat|string|O formato de hora da caixa de correio do usuário.|
+|Formato de TimeFormat|cadeia de caracteres|O formato de hora da caixa de correio do usuário.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
 |workingHours|[workingHours](../resources/workinghours.md)|As horas, os dias de uma semana e o fuso horário em que o usuário trabalha.|
 

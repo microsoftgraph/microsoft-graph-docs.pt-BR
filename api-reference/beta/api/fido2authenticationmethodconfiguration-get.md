@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5411f9c76b6870eccdb43863b5a62380d7caafa3
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 8c1090c2ab71e66779d643e5149b3a053d35f5a7
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418169"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458819"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Obter fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
+|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -86,26 +86,28 @@ Content-type: application/json
 Content-length: 491
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-    "id": "Fido2",
-    "state": "enabled",
-    "isSelfServiceRegistrationAllowed": true,
-    "isAttestationEnforced": true,
-    "keyRestrictions": {
-        "isEnforced": false,
-        "enforcementType": "block",
-        "aaGuids": []
-    },
-    "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "all_users",
-            "isRegistrationRequired": false,
-            "useForSignIn": true
-        }
-    ]
-  }
+   "value":{
+      "@odata.type":"#microsoft.graph.fido2AuthenticationMethodConfiguration",
+      "id":"Fido2",
+      "state":"enabled",
+      "isSelfServiceRegistrationAllowed":true,
+      "isAttestationEnforced":true,
+      "keyRestrictions":{
+         "isEnforced":false,
+         "enforcementType":"block",
+         "aaGuids":[
+            
+         ]
+      },
+      "includeTargets":[
+         {
+            "targetType":"group",
+            "id":"all_users",
+            "isRegistrationRequired":false,
+            "useForSignIn":true
+         }
+      ]
+   }
 }
 ```
 

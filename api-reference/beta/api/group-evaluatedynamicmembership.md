@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aad3e32cc1dd6936d0be221fe20225d56b386cb2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1716605557493f268d38beb8bf674dc15416c5b6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403122"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457545"
 ---
 # <a name="group-evaluatedynamicmembership"></a>Grupo: evaluateDynamicMembership
 
@@ -67,8 +67,8 @@ A tabela a seguir lista as propriedades que são necessárias ao avaliar a assoc
 
 | Parâmetro | Tipo | Descrição |
 | :-------- | :--- | :---------- |
-| MemberId | Conjunto de cadeias de caracteres | MemberId é a ID do objeto do usuário ou do dispositivo a ser avaliado. |
-| membershipRule | Conjunto de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para uma possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [regras de associação dinâmicas para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| MemberId | Coleção String | MemberId é a ID do objeto do usuário ou do dispositivo a ser avaliado. |
+| membershipRule | Coleção String | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para uma possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [regras de associação dinâmicas para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Resposta
 

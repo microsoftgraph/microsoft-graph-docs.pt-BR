@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 428b36fefe733b172e4a09d333047bff4464bea2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 047dd423f60375fc65f803cbe4c734b02a5c4040
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403091"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457839"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Conceder um appRoleAssignment a um grupo
 
