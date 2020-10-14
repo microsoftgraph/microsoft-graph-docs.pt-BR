@@ -1,21 +1,21 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1d96ba7802ef63277cf509cdddd3a12e07fe74d4
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: ec5f046a9dbe7cc61f49c2bddad962c57106f20d
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330196"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48462616"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var term = new Term
+var term = new Microsoft.Graph.TermStore.Term
 {
-    Labels = new List<LocalizedLabel>()
+    Labels = new List<Microsoft.Graph.TermStore.LocalizedLabel>()
     {
-        new LocalizedLabel
+        new Microsoft.Graph.TermStore.LocalizedLabel
         {
             Name = "changedLabel",
             LanguageTag = "en-US",
