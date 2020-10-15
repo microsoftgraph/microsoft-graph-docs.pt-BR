@@ -4,12 +4,12 @@ description: Instruções de tratamento de erro para APIs do Excel no Microsoft 
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e9968877e9b3153ad455ed7f0c693b4a70c2c2b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbf60c34c66ffd42004696d5f8591dd9a2996457
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018085"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471424"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Tratamento de erros para APIs do Excel no Microsoft Graph
 
@@ -132,7 +132,7 @@ Para algumas das respostas no padrão normal, uma duração de cooldown de recup
 
 ## <a name="special-case-handling"></a>Tratamento especial de casos
 
-Para [solicitações de sessão](excel-manage-sessions.md#request-types), recomendamos que você recrie a sessão se encontrar um `503/serviceUnavailable` erro ou `502/badGateway` .
+Para [solicitações de sessão](excel-manage-sessions.md#request-types), se você encontrar um `502/badGateway` `503/serviceUnavailable` erro ou, quando um código de erro de segundo nível estiver listado em [códigos de erro detalhados](workbook-error-codes.md#detailed-error-code), analise o código de segundo nível e siga as instruções correspondentes; caso contrário, nós reconmmend que você recriar a sessão diretamente.
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",
