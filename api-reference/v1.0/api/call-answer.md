@@ -5,64 +5,64 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 44630c526562810b104e64952eab92c872a9ab78
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 25aa593c9e5fd0e1bd86d7265c4ebaaf22395d02
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406118"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459862"
 ---
-# <a name="call-answer"></a><span data-ttu-id="7349c-103">Call: resposta</span><span class="sxs-lookup"><span data-stu-id="7349c-103">call: answer</span></span>
+# <a name="call-answer"></a><span data-ttu-id="98f70-103">Call: resposta</span><span class="sxs-lookup"><span data-stu-id="98f70-103">call: answer</span></span>
 
-<span data-ttu-id="7349c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7349c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="98f70-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98f70-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="7349c-105">Habilite um bot para atender a uma [chamada](../resources/call.md)de entrada.</span><span class="sxs-lookup"><span data-stu-id="7349c-105">Enable a bot to answer an incoming [call](../resources/call.md).</span></span> <span data-ttu-id="7349c-106">A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto.</span><span class="sxs-lookup"><span data-stu-id="7349c-106">The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.</span></span> <span data-ttu-id="7349c-107">Se for recebido um convite para uma chamada de grupo, a notificação conterá os parâmetros [chatInfo](../resources/chatinfo.md) e [meetingInfo](../resources/meetinginfo.md) .</span><span class="sxs-lookup"><span data-stu-id="7349c-107">If an invite to a group call is received, the notification will contain the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.</span></span>
+<span data-ttu-id="98f70-105">Habilite um bot para atender a uma [chamada](../resources/call.md)de entrada.</span><span class="sxs-lookup"><span data-stu-id="98f70-105">Enable a bot to answer an incoming [call](../resources/call.md).</span></span> <span data-ttu-id="98f70-106">A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto.</span><span class="sxs-lookup"><span data-stu-id="98f70-106">The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.</span></span> <span data-ttu-id="98f70-107">Se for recebido um convite para uma chamada de grupo, a notificação conterá os parâmetros [chatInfo](../resources/chatinfo.md) e [meetingInfo](../resources/meetinginfo.md) .</span><span class="sxs-lookup"><span data-stu-id="98f70-107">If an invite to a group call is received, the notification will contain the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.</span></span>
 
-<span data-ttu-id="7349c-108">O bot deve responder, [rejeitar](./call-reject.md)ou [redirecionar](./call-redirect.md) a chamada antes do tempo limite da chamada. O valor de tempo limite atual é de 15 segundos.</span><span class="sxs-lookup"><span data-stu-id="7349c-108">The bot is expected to answer, [reject](./call-reject.md), or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds.</span></span>
+<span data-ttu-id="98f70-108">O bot deve responder, [rejeitar](./call-reject.md)ou [redirecionar](./call-redirect.md) a chamada antes do tempo limite da chamada. O valor de tempo limite atual é de 15 segundos.</span><span class="sxs-lookup"><span data-stu-id="98f70-108">The bot is expected to answer, [reject](./call-reject.md), or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7349c-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="7349c-109">Permissions</span></span>
-<span data-ttu-id="7349c-110">Você não precisa de nenhuma permissão para responder a uma chamada ponto a ponto.</span><span class="sxs-lookup"><span data-stu-id="7349c-110">You do not need any permissions to answer a peer-to-peer call.</span></span> <span data-ttu-id="7349c-111">Você precisa de uma das seguintes permissões para ingressar em uma chamada de grupo.</span><span class="sxs-lookup"><span data-stu-id="7349c-111">You need one of the following permissions to join a group call.</span></span> <span data-ttu-id="7349c-112">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7349c-112">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="98f70-109">Permissions</span><span class="sxs-lookup"><span data-stu-id="98f70-109">Permissions</span></span>
+<span data-ttu-id="98f70-110">Você não precisa de nenhuma permissão para responder a uma chamada ponto a ponto.</span><span class="sxs-lookup"><span data-stu-id="98f70-110">You do not need any permissions to answer a peer-to-peer call.</span></span> <span data-ttu-id="98f70-111">Você precisa de uma das seguintes permissões para ingressar em uma chamada de grupo.</span><span class="sxs-lookup"><span data-stu-id="98f70-111">You need one of the following permissions to join a group call.</span></span> <span data-ttu-id="98f70-112">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="98f70-112">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7349c-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7349c-113">Permission type</span></span> | <span data-ttu-id="7349c-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7349c-114">Permissions (from least to most privileged)</span></span>                 |
+| <span data-ttu-id="98f70-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="98f70-113">Permission type</span></span> | <span data-ttu-id="98f70-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="98f70-114">Permissions (from least to most privileged)</span></span>                 |
 | :-------------- | :-----------------------------------------------------------|
-| <span data-ttu-id="7349c-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7349c-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="7349c-116">Não suportado</span><span class="sxs-lookup"><span data-stu-id="7349c-116">Not Supported</span></span>                        |
-| <span data-ttu-id="7349c-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7349c-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7349c-118">Não suportado</span><span class="sxs-lookup"><span data-stu-id="7349c-118">Not Supported</span></span>                        |
-| <span data-ttu-id="7349c-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7349c-119">Application</span></span>     | <span data-ttu-id="7349c-120">Calls. JoinGroupCalls. All ou calls. JoinGroupCallsasGuest. All</span><span class="sxs-lookup"><span data-stu-id="7349c-120">Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All</span></span> |
+| <span data-ttu-id="98f70-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="98f70-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="98f70-116">Não suportado</span><span class="sxs-lookup"><span data-stu-id="98f70-116">Not Supported</span></span>                        |
+| <span data-ttu-id="98f70-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="98f70-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="98f70-118">Não suportado</span><span class="sxs-lookup"><span data-stu-id="98f70-118">Not Supported</span></span>                        |
+| <span data-ttu-id="98f70-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="98f70-119">Application</span></span>     | <span data-ttu-id="98f70-120">Calls. JoinGroupCalls. All ou calls. JoinGroupCallsasGuest. All</span><span class="sxs-lookup"><span data-stu-id="98f70-120">Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All</span></span> |
 
-> <span data-ttu-id="7349c-121">**Observação:** Para uma chamada que usa mídia hospedada por aplicativo, você também precisa da permissão calls. AccessMedia. All.</span><span class="sxs-lookup"><span data-stu-id="7349c-121">**Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission.</span></span> <span data-ttu-id="7349c-122">Você deve ter pelo menos uma das seguintes permissões para garantir que o `source` na notificação de chamada de entrada seja descriptografado: calls. AccessMedia. All, Calls.Initiate. All, Calls.InitiateGroupCall. All, calls. JoinGroupCall. All, calls. JoinGroupCallAsGuest. All.</span><span class="sxs-lookup"><span data-stu-id="7349c-122">You must have at least one of the following permissions to ensure that the `source` in the incoming call notification is decrypted: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All.</span></span> <span data-ttu-id="7349c-123">O `source` é a informação do chamador na notificação de chamada de entrada.</span><span class="sxs-lookup"><span data-stu-id="7349c-123">The `source` is the caller info in the incoming call notification.</span></span> <span data-ttu-id="7349c-124">Sem pelo menos uma dessas permissões, o `source` permanecerá criptografado.</span><span class="sxs-lookup"><span data-stu-id="7349c-124">Without at least one of these permissions, the `source` will remain encrypted.</span></span>
+> <span data-ttu-id="98f70-121">**Observação:** Para uma chamada que usa mídia hospedada por aplicativo, você também precisa da permissão calls. AccessMedia. All.</span><span class="sxs-lookup"><span data-stu-id="98f70-121">**Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission.</span></span> <span data-ttu-id="98f70-122">Você deve ter pelo menos uma das seguintes permissões para garantir que o `source` na notificação de chamada de entrada seja descriptografado: calls. AccessMedia. All, Calls.Initiate. All, Calls.InitiateGroupCall. All, calls. JoinGroupCall. All, calls. JoinGroupCallAsGuest. All.</span><span class="sxs-lookup"><span data-stu-id="98f70-122">You must have at least one of the following permissions to ensure that the `source` in the incoming call notification is decrypted: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All.</span></span> <span data-ttu-id="98f70-123">O `source` é a informação do chamador na notificação de chamada de entrada.</span><span class="sxs-lookup"><span data-stu-id="98f70-123">The `source` is the caller info in the incoming call notification.</span></span> <span data-ttu-id="98f70-124">Sem pelo menos uma dessas permissões, o `source` permanecerá criptografado.</span><span class="sxs-lookup"><span data-stu-id="98f70-124">Without at least one of these permissions, the `source` will remain encrypted.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7349c-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7349c-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98f70-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="98f70-125">HTTP request</span></span>
 <!-- {"blockType": "ignored" } -->
 ```http
 POST /communications/calls/{id}/answer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7349c-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7349c-126">Request headers</span></span>
-| <span data-ttu-id="7349c-127">Nome</span><span class="sxs-lookup"><span data-stu-id="7349c-127">Name</span></span>          | <span data-ttu-id="7349c-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="7349c-128">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="98f70-126">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="98f70-126">Request headers</span></span>
+| <span data-ttu-id="98f70-127">Nome</span><span class="sxs-lookup"><span data-stu-id="98f70-127">Name</span></span>          | <span data-ttu-id="98f70-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="98f70-128">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="7349c-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="7349c-129">Authorization</span></span> | <span data-ttu-id="7349c-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7349c-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7349c-132">Content-type</span><span class="sxs-lookup"><span data-stu-id="7349c-132">Content-type</span></span>  | <span data-ttu-id="7349c-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7349c-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="98f70-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="98f70-129">Authorization</span></span> | <span data-ttu-id="98f70-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="98f70-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="98f70-132">Content-type</span><span class="sxs-lookup"><span data-stu-id="98f70-132">Content-type</span></span>  | <span data-ttu-id="98f70-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="98f70-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7349c-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7349c-135">Request body</span></span>
-<span data-ttu-id="7349c-136">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7349c-136">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="98f70-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="98f70-135">Request body</span></span>
+<span data-ttu-id="98f70-136">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="98f70-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="7349c-137">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="7349c-137">Parameter</span></span>        | <span data-ttu-id="7349c-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="7349c-138">Type</span></span>                                     |<span data-ttu-id="7349c-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="7349c-139">Description</span></span>                                                                                                                                    |
+| <span data-ttu-id="98f70-137">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="98f70-137">Parameter</span></span>        | <span data-ttu-id="98f70-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="98f70-138">Type</span></span>                                     |<span data-ttu-id="98f70-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="98f70-139">Description</span></span>                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="7349c-140">callbackUri</span><span class="sxs-lookup"><span data-stu-id="7349c-140">callbackUri</span></span>       |<span data-ttu-id="7349c-141">String</span><span class="sxs-lookup"><span data-stu-id="7349c-141">String</span></span>                                    |<span data-ttu-id="7349c-142">Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores.</span><span class="sxs-lookup"><span data-stu-id="7349c-142">Allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="7349c-143">Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar.</span><span class="sxs-lookup"><span data-stu-id="7349c-143">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="7349c-144">Deve ser `https` .</span><span class="sxs-lookup"><span data-stu-id="7349c-144">This must be `https`.</span></span>    |
-|<span data-ttu-id="7349c-145">acceptedModalities</span><span class="sxs-lookup"><span data-stu-id="7349c-145">acceptedModalities</span></span>|<span data-ttu-id="7349c-146">Conjunto de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="7349c-146">String collection</span></span>                         |<span data-ttu-id="7349c-147">A lista de aceitar modalidades.</span><span class="sxs-lookup"><span data-stu-id="7349c-147">The list of accept modalities.</span></span> <span data-ttu-id="7349c-148">Os valores possíveis são: `audio`, `video`, `videoBasedScreenSharing`.</span><span class="sxs-lookup"><span data-stu-id="7349c-148">Possible values are: `audio`, `video`, `videoBasedScreenSharing`.</span></span> <span data-ttu-id="7349c-149">Obrigatório para responder a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="7349c-149">Required for answering a call.</span></span> |
-|<span data-ttu-id="7349c-150">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="7349c-150">mediaConfig</span></span>       | <span data-ttu-id="7349c-151">[appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)</span><span class="sxs-lookup"><span data-stu-id="7349c-151">[appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)</span></span> |<span data-ttu-id="7349c-152">A configuração de mídia.</span><span class="sxs-lookup"><span data-stu-id="7349c-152">The media configuration.</span></span> <span data-ttu-id="7349c-153">Precisam</span><span class="sxs-lookup"><span data-stu-id="7349c-153">(Required)</span></span>                                                                                                            |
+|<span data-ttu-id="98f70-140">callbackUri</span><span class="sxs-lookup"><span data-stu-id="98f70-140">callbackUri</span></span>       |<span data-ttu-id="98f70-141">String</span><span class="sxs-lookup"><span data-stu-id="98f70-141">String</span></span>                                    |<span data-ttu-id="98f70-142">Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores.</span><span class="sxs-lookup"><span data-stu-id="98f70-142">Allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="98f70-143">Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar.</span><span class="sxs-lookup"><span data-stu-id="98f70-143">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="98f70-144">Deve ser `https` .</span><span class="sxs-lookup"><span data-stu-id="98f70-144">This must be `https`.</span></span>    |
+|<span data-ttu-id="98f70-145">acceptedModalities</span><span class="sxs-lookup"><span data-stu-id="98f70-145">acceptedModalities</span></span>|<span data-ttu-id="98f70-146">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="98f70-146">String collection</span></span>                         |<span data-ttu-id="98f70-147">A lista de aceitar modalidades.</span><span class="sxs-lookup"><span data-stu-id="98f70-147">The list of accept modalities.</span></span> <span data-ttu-id="98f70-148">Os valores possíveis são: `audio`, `video`, `videoBasedScreenSharing`.</span><span class="sxs-lookup"><span data-stu-id="98f70-148">Possible values are: `audio`, `video`, `videoBasedScreenSharing`.</span></span> <span data-ttu-id="98f70-149">Obrigatório para responder a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="98f70-149">Required for answering a call.</span></span> |
+|<span data-ttu-id="98f70-150">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="98f70-150">mediaConfig</span></span>       | <span data-ttu-id="98f70-151">[appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)</span><span class="sxs-lookup"><span data-stu-id="98f70-151">[appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)</span></span> |<span data-ttu-id="98f70-152">A configuração de mídia.</span><span class="sxs-lookup"><span data-stu-id="98f70-152">The media configuration.</span></span> <span data-ttu-id="98f70-153">Precisam</span><span class="sxs-lookup"><span data-stu-id="98f70-153">(Required)</span></span>                                                                                                            |
 
-## <a name="response"></a><span data-ttu-id="7349c-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="7349c-154">Response</span></span>
-<span data-ttu-id="7349c-155">Este método retorna um `202 Accepted` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="7349c-155">This method returns a `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="98f70-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="98f70-154">Response</span></span>
+<span data-ttu-id="98f70-155">Este método retorna um `202 Accepted` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="98f70-155">This method returns a `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7349c-156">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7349c-156">Examples</span></span>
-<span data-ttu-id="7349c-157">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="7349c-157">The following example shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="98f70-156">Exemplos</span><span class="sxs-lookup"><span data-stu-id="98f70-156">Examples</span></span>
+<span data-ttu-id="98f70-157">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="98f70-157">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7349c-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7349c-158">Request</span></span>
-<span data-ttu-id="7349c-159">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="7349c-159">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="98f70-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="98f70-158">Request</span></span>
+<span data-ttu-id="98f70-159">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="98f70-159">The following example shows the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="7349c-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="7349c-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="98f70-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="98f70-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer"
@@ -83,29 +83,29 @@ Content-Length: 211
   ]
 }
 ```
-<span data-ttu-id="7349c-161">Este blob é a configuração serializada para sessões de mídia que é gerada a partir do SDK de mídia.</span><span class="sxs-lookup"><span data-stu-id="7349c-161">This blob is the serialized configuration for media sessions which is generated from the media SDK.</span></span>
+<span data-ttu-id="98f70-161">Este blob é a configuração serializada para sessões de mídia que é gerada a partir do SDK de mídia.</span><span class="sxs-lookup"><span data-stu-id="98f70-161">This blob is the serialized configuration for media sessions which is generated from the media SDK.</span></span>
 
-# <a name="c"></a>[<span data-ttu-id="7349c-162">C#</span><span class="sxs-lookup"><span data-stu-id="7349c-162">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="98f70-162">C#</span><span class="sxs-lookup"><span data-stu-id="98f70-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7349c-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7349c-163">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="98f70-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="98f70-163">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7349c-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7349c-164">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="98f70-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="98f70-164">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="7349c-165">Java</span><span class="sxs-lookup"><span data-stu-id="7349c-165">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="98f70-165">Java</span><span class="sxs-lookup"><span data-stu-id="98f70-165">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="7349c-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="7349c-166">Response</span></span>
-<span data-ttu-id="7349c-167">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7349c-167">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="98f70-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="98f70-166">Response</span></span>
+<span data-ttu-id="98f70-167">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="98f70-167">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -116,9 +116,9 @@ Content-Length: 211
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-1-answer-a-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="7349c-168">Exemplo 1: responder a uma chamada VoIP ponto a ponto com mídia hospedada no serviço</span><span class="sxs-lookup"><span data-stu-id="7349c-168">Example 1: Answer a Peer-to-Peer VoIP call with service hosted media</span></span>
+### <a name="example-1-answer-a-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="98f70-168">Exemplo 1: responder a uma chamada VoIP ponto a ponto com mídia hospedada no serviço</span><span class="sxs-lookup"><span data-stu-id="98f70-168">Example 1: Answer a Peer-to-Peer VoIP call with service hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="7349c-169">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="7349c-169">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="98f70-169">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="98f70-169">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -170,7 +170,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="7349c-170">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7349c-170">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="98f70-170">Solicitação</span><span class="sxs-lookup"><span data-stu-id="98f70-170">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="7349c-171">Resposta</span><span class="sxs-lookup"><span data-stu-id="7349c-171">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="98f70-171">Resposta</span><span class="sxs-lookup"><span data-stu-id="98f70-171">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -209,7 +209,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="7349c-172">Notificação-estabelecimento</span><span class="sxs-lookup"><span data-stu-id="7349c-172">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="98f70-172">Notificação-estabelecimento</span><span class="sxs-lookup"><span data-stu-id="98f70-172">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -239,7 +239,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="7349c-173">Estabelecido em notificação</span><span class="sxs-lookup"><span data-stu-id="7349c-173">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="98f70-173">Estabelecido em notificação</span><span class="sxs-lookup"><span data-stu-id="98f70-173">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -269,9 +269,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="7349c-174">Exemplo 2: responder a chamada VOIP com mídia hospedada por aplicativo</span><span class="sxs-lookup"><span data-stu-id="7349c-174">Example 2: Answer VOIP call with application hosted media</span></span>
+### <a name="example-2-answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="98f70-174">Exemplo 2: responder a chamada VOIP com mídia hospedada por aplicativo</span><span class="sxs-lookup"><span data-stu-id="98f70-174">Example 2: Answer VOIP call with application hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="7349c-175">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="7349c-175">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="98f70-175">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="98f70-175">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -325,10 +325,10 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="7349c-176">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7349c-176">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="98f70-176">Solicitação</span><span class="sxs-lookup"><span data-stu-id="98f70-176">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="7349c-177">HTTP</span><span class="sxs-lookup"><span data-stu-id="7349c-177">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="98f70-177">HTTP</span><span class="sxs-lookup"><span data-stu-id="98f70-177">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer-app-hosted-media"
@@ -346,26 +346,26 @@ Content-Type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="7349c-178">C#</span><span class="sxs-lookup"><span data-stu-id="7349c-178">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="98f70-178">C#</span><span class="sxs-lookup"><span data-stu-id="98f70-178">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7349c-179">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7349c-179">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="98f70-179">JavaScript</span><span class="sxs-lookup"><span data-stu-id="98f70-179">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-app-hosted-media-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7349c-180">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7349c-180">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="98f70-180">Objective-C</span><span class="sxs-lookup"><span data-stu-id="98f70-180">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-app-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="7349c-181">Java</span><span class="sxs-lookup"><span data-stu-id="7349c-181">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="98f70-181">Java</span><span class="sxs-lookup"><span data-stu-id="98f70-181">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="7349c-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="7349c-182">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="98f70-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="98f70-182">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -376,7 +376,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="7349c-183">Notificação-estabelecimento</span><span class="sxs-lookup"><span data-stu-id="7349c-183">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="98f70-183">Notificação-estabelecimento</span><span class="sxs-lookup"><span data-stu-id="98f70-183">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -406,7 +406,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="7349c-184">Estabelecido em notificação</span><span class="sxs-lookup"><span data-stu-id="7349c-184">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="98f70-184">Estabelecido em notificação</span><span class="sxs-lookup"><span data-stu-id="98f70-184">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -436,12 +436,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-answer-a-policy-based-recording-call"></a><span data-ttu-id="7349c-185">Exemplo 3: responder a uma chamada de gravação baseada em política</span><span class="sxs-lookup"><span data-stu-id="7349c-185">Example 3: Answer a policy-based recording call</span></span>
+### <a name="example-3-answer-a-policy-based-recording-call"></a><span data-ttu-id="98f70-185">Exemplo 3: responder a uma chamada de gravação baseada em política</span><span class="sxs-lookup"><span data-stu-id="98f70-185">Example 3: Answer a policy-based recording call</span></span>
 
-<span data-ttu-id="7349c-186">Sob o [cenário de gravação baseado em políticas](/microsoftteams/teams-recording-policy), antes que um participante da política ingresse em uma chamada, uma notificação de chamada de entrada será enviada ao bot associado à política.</span><span class="sxs-lookup"><span data-stu-id="7349c-186">Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification will be sent to the bot associated with the policy.</span></span>
-<span data-ttu-id="7349c-187">As informações de junção podem ser encontradas na propriedade **botData** .</span><span class="sxs-lookup"><span data-stu-id="7349c-187">The join information can be found under the **botData** property.</span></span> <span data-ttu-id="7349c-188">O bot pode optar por responder à chamada e [atualizar o status da gravação de](call-updaterecordingstatus.md) acordo.</span><span class="sxs-lookup"><span data-stu-id="7349c-188">The bot can then choose to answer the call and [update the recording status](call-updaterecordingstatus.md) accordingly.</span></span>
+<span data-ttu-id="98f70-186">Sob o [cenário de gravação baseado em políticas](/microsoftteams/teams-recording-policy), antes que um participante da política ingresse em uma chamada, uma notificação de chamada de entrada será enviada ao bot associado à política.</span><span class="sxs-lookup"><span data-stu-id="98f70-186">Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification will be sent to the bot associated with the policy.</span></span>
+<span data-ttu-id="98f70-187">As informações de junção podem ser encontradas na propriedade **botData** .</span><span class="sxs-lookup"><span data-stu-id="98f70-187">The join information can be found under the **botData** property.</span></span> <span data-ttu-id="98f70-188">O bot pode optar por responder à chamada e [atualizar o status da gravação de](call-updaterecordingstatus.md) acordo.</span><span class="sxs-lookup"><span data-stu-id="98f70-188">The bot can then choose to answer the call and [update the recording status](call-updaterecordingstatus.md) accordingly.</span></span>
 
-<span data-ttu-id="7349c-189">Aqui está um exemplo da notificação de chamada de entrada que um bot receberia nesse caso.</span><span class="sxs-lookup"><span data-stu-id="7349c-189">Here is an example of the incoming call notification that a bot would recieve in this case.</span></span>
+<span data-ttu-id="98f70-189">Aqui está um exemplo da notificação de chamada de entrada que um bot receberia nesse caso.</span><span class="sxs-lookup"><span data-stu-id="98f70-189">Here is an example of the incoming call notification that a bot would recieve in this case.</span></span>
 
 ```json
 {

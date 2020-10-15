@@ -5,41 +5,41 @@ author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 71407265725e3f0a91d0d1a6c8a02e9a7ab7490d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 37da524ac2143cf45dec391af159581ce66a23ed
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405432"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457713"
 ---
-# <a name="get-message"></a><span data-ttu-id="ff0df-103">Obter mensagem</span><span class="sxs-lookup"><span data-stu-id="ff0df-103">Get message</span></span>
+# <a name="get-message"></a><span data-ttu-id="59f9f-103">Obter mensagem</span><span class="sxs-lookup"><span data-stu-id="59f9f-103">Get message</span></span>
 
-<span data-ttu-id="ff0df-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ff0df-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="59f9f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="59f9f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="ff0df-105">Recupere as propriedades e os relacionamentos de um objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="ff0df-105">Retrieve the properties and relationships of a [message](../resources/message.md) object.</span></span>
+<span data-ttu-id="59f9f-105">Recupere as propriedades e os relacionamentos de um objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="59f9f-105">Retrieve the properties and relationships of a [message](../resources/message.md) object.</span></span>
 
-<span data-ttu-id="ff0df-106">Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message).</span><span class="sxs-lookup"><span data-stu-id="ff0df-106">You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).</span></span>
+<span data-ttu-id="59f9f-106">Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message).</span><span class="sxs-lookup"><span data-stu-id="59f9f-106">You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).</span></span>
 
-<span data-ttu-id="ff0df-107">Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:</span><span class="sxs-lookup"><span data-stu-id="ff0df-107">There are two scenarios where an app can get a message in another user's mail folder:</span></span>
+<span data-ttu-id="59f9f-107">Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:</span><span class="sxs-lookup"><span data-stu-id="59f9f-107">There are two scenarios where an app can get a message in another user's mail folder:</span></span>
 
-* <span data-ttu-id="ff0df-108">Se o aplicativo tiver permissões de aplicativo ou</span><span class="sxs-lookup"><span data-stu-id="ff0df-108">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="ff0df-109">Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário.</span><span class="sxs-lookup"><span data-stu-id="ff0df-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="ff0df-110">Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).</span><span class="sxs-lookup"><span data-stu-id="ff0df-110">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+* <span data-ttu-id="59f9f-108">Se o aplicativo tiver permissões de aplicativo ou</span><span class="sxs-lookup"><span data-stu-id="59f9f-108">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="59f9f-109">Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário.</span><span class="sxs-lookup"><span data-stu-id="59f9f-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="59f9f-110">Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).</span><span class="sxs-lookup"><span data-stu-id="59f9f-110">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
 
-<span data-ttu-id="ff0df-111">Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.</span><span class="sxs-lookup"><span data-stu-id="ff0df-111">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.</span></span>
+<span data-ttu-id="59f9f-111">Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.</span><span class="sxs-lookup"><span data-stu-id="59f9f-111">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="ff0df-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="ff0df-112">Permissions</span></span>
-<span data-ttu-id="ff0df-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ff0df-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="59f9f-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="59f9f-112">Permissions</span></span>
+<span data-ttu-id="59f9f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="59f9f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ff0df-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ff0df-115">Permission type</span></span>      | <span data-ttu-id="ff0df-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ff0df-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="59f9f-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="59f9f-115">Permission type</span></span>      | <span data-ttu-id="59f9f-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="59f9f-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ff0df-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ff0df-117">Delegated (work or school account)</span></span> | <span data-ttu-id="ff0df-118">Mail.ReadBasic, Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ff0df-118">Mail.ReadBasic, Mail.Read</span></span>    |
-|<span data-ttu-id="ff0df-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ff0df-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff0df-120">Mail.ReadBasic, Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ff0df-120">Mail.ReadBasic, Mail.Read</span></span>    |
-|<span data-ttu-id="ff0df-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ff0df-121">Application</span></span> | <span data-ttu-id="ff0df-122">Mail.ReadBasic.All, Mail.Read</span><span class="sxs-lookup"><span data-stu-id="ff0df-122">Mail.ReadBasic.All, Mail.Read</span></span> |
+|<span data-ttu-id="59f9f-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="59f9f-117">Delegated (work or school account)</span></span> | <span data-ttu-id="59f9f-118">Mail.ReadBasic, Mail.Read</span><span class="sxs-lookup"><span data-stu-id="59f9f-118">Mail.ReadBasic, Mail.Read</span></span>    |
+|<span data-ttu-id="59f9f-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="59f9f-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="59f9f-120">Mail.ReadBasic, Mail.Read</span><span class="sxs-lookup"><span data-stu-id="59f9f-120">Mail.ReadBasic, Mail.Read</span></span>    |
+|<span data-ttu-id="59f9f-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="59f9f-121">Application</span></span> | <span data-ttu-id="59f9f-122">Mail.ReadBasic.All, Mail.Read</span><span class="sxs-lookup"><span data-stu-id="59f9f-122">Mail.ReadBasic.All, Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ff0df-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ff0df-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="59f9f-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="59f9f-123">HTTP request</span></span>
 
-<span data-ttu-id="ff0df-124">Para obter a mensagem especificada:</span><span class="sxs-lookup"><span data-stu-id="ff0df-124">To get the specified message:</span></span>
+<span data-ttu-id="59f9f-124">Para obter a mensagem especificada:</span><span class="sxs-lookup"><span data-stu-id="59f9f-124">To get the specified message:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -48,7 +48,7 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-<span data-ttu-id="ff0df-125">Para obter o conteúdo MIME da mensagem especificada:</span><span class="sxs-lookup"><span data-stu-id="ff0df-125">To get the MIME content of the specified message:</span></span>
+<span data-ttu-id="59f9f-125">Para obter o conteúdo MIME da mensagem especificada:</span><span class="sxs-lookup"><span data-stu-id="59f9f-125">To get the MIME content of the specified message:</span></span>
 <!-- { "blockType": "ignored" } --> 
 ```http 
 GET /me/messages/{id}/$value 
@@ -57,32 +57,32 @@ GET /me/mailFolders/{id}/messages/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ff0df-126">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="ff0df-126">Optional query parameters</span></span>
-<span data-ttu-id="ff0df-127">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="ff0df-127">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="59f9f-126">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="59f9f-126">Optional query parameters</span></span>
+<span data-ttu-id="59f9f-127">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="59f9f-127">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="ff0df-128">Use o parâmetro `$value` para obter o conteúdo MIME de uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="ff0df-128">Use the `$value` parameter to get the MIME content of a message.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="ff0df-129">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ff0df-129">Request headers</span></span>
-| <span data-ttu-id="ff0df-130">Nome</span><span class="sxs-lookup"><span data-stu-id="ff0df-130">Name</span></span>       | <span data-ttu-id="ff0df-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="ff0df-131">Type</span></span> | <span data-ttu-id="ff0df-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="ff0df-132">Description</span></span>|
+<span data-ttu-id="59f9f-128">Use o parâmetro `$value` para obter o conteúdo MIME de uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="59f9f-128">Use the `$value` parameter to get the MIME content of a message.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="59f9f-129">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="59f9f-129">Request headers</span></span>
+| <span data-ttu-id="59f9f-130">Nome</span><span class="sxs-lookup"><span data-stu-id="59f9f-130">Name</span></span>       | <span data-ttu-id="59f9f-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="59f9f-131">Type</span></span> | <span data-ttu-id="59f9f-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="59f9f-132">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ff0df-133">Autorização</span><span class="sxs-lookup"><span data-stu-id="ff0df-133">Authorization</span></span>  | <span data-ttu-id="ff0df-134">string</span><span class="sxs-lookup"><span data-stu-id="ff0df-134">string</span></span>  | <span data-ttu-id="ff0df-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ff0df-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ff0df-137">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="ff0df-137">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="ff0df-138">string</span><span class="sxs-lookup"><span data-stu-id="ff0df-138">string</span></span> | <span data-ttu-id="ff0df-139">O formato das propriedades **body** e **uniqueBody** a serem retornadas.</span><span class="sxs-lookup"><span data-stu-id="ff0df-139">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="ff0df-140">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="ff0df-140">Values can be "text" or "html".</span></span> <span data-ttu-id="ff0df-141">Um cabeçalho `Preference-Applied` é retornado como confirmação quando este cabeçalho `Prefer` é especificado.</span><span class="sxs-lookup"><span data-stu-id="ff0df-141">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="ff0df-142">Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="ff0df-142">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="ff0df-143">Opcional.</span><span class="sxs-lookup"><span data-stu-id="ff0df-143">Optional.</span></span> |
+| <span data-ttu-id="59f9f-133">Autorização</span><span class="sxs-lookup"><span data-stu-id="59f9f-133">Authorization</span></span>  | <span data-ttu-id="59f9f-134">string</span><span class="sxs-lookup"><span data-stu-id="59f9f-134">string</span></span>  | <span data-ttu-id="59f9f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="59f9f-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="59f9f-137">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="59f9f-137">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="59f9f-138">string</span><span class="sxs-lookup"><span data-stu-id="59f9f-138">string</span></span> | <span data-ttu-id="59f9f-139">O formato das propriedades **body** e **uniqueBody** a serem retornadas.</span><span class="sxs-lookup"><span data-stu-id="59f9f-139">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="59f9f-140">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="59f9f-140">Values can be "text" or "html".</span></span> <span data-ttu-id="59f9f-141">Um cabeçalho `Preference-Applied` é retornado como confirmação quando este cabeçalho `Prefer` é especificado.</span><span class="sxs-lookup"><span data-stu-id="59f9f-141">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="59f9f-142">Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="59f9f-142">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="59f9f-143">Opcional.</span><span class="sxs-lookup"><span data-stu-id="59f9f-143">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ff0df-144">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ff0df-144">Request body</span></span>
-<span data-ttu-id="ff0df-145">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ff0df-145">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="59f9f-144">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="59f9f-144">Request body</span></span>
+<span data-ttu-id="59f9f-145">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="59f9f-145">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ff0df-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="ff0df-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="59f9f-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="59f9f-146">Response</span></span>
 
-<span data-ttu-id="ff0df-147">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ff0df-147">If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="59f9f-147">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="59f9f-147">If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-<span data-ttu-id="ff0df-148">Especificar o parâmetro `$value` retorna o conteúdo da mensagem no formato MIME e não um recurso de **mensagem**.</span><span class="sxs-lookup"><span data-stu-id="ff0df-148">Specifying the `$value` parameter returns the message content in MIME format, and not a **message** resource.</span></span>
+<span data-ttu-id="59f9f-148">Especificar o parâmetro `$value` retorna o conteúdo da mensagem no formato MIME e não um recurso de **mensagem**.</span><span class="sxs-lookup"><span data-stu-id="59f9f-148">Specifying the `$value` parameter returns the message content in MIME format, and not a **message** resource.</span></span>
 
 
-## <a name="examples"></a><span data-ttu-id="ff0df-149">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ff0df-149">Examples</span></span>
-### <a name="example-1"></a><span data-ttu-id="ff0df-150">Exemplo 1</span><span class="sxs-lookup"><span data-stu-id="ff0df-150">Example 1</span></span>
-#### <a name="request"></a><span data-ttu-id="ff0df-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ff0df-151">Request</span></span>
-<span data-ttu-id="ff0df-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ff0df-152">Here is an example of the request.</span></span>
+## <a name="examples"></a><span data-ttu-id="59f9f-149">Exemplos</span><span class="sxs-lookup"><span data-stu-id="59f9f-149">Examples</span></span>
+### <a name="example-1"></a><span data-ttu-id="59f9f-150">Exemplo 1</span><span class="sxs-lookup"><span data-stu-id="59f9f-150">Example 1</span></span>
+#### <a name="request"></a><span data-ttu-id="59f9f-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59f9f-151">Request</span></span>
+<span data-ttu-id="59f9f-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="59f9f-152">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ff0df-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff0df-153">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="59f9f-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="59f9f-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhMGAAA="],
@@ -91,26 +91,26 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ```
-# <a name="c"></a>[<span data-ttu-id="ff0df-154">C#</span><span class="sxs-lookup"><span data-stu-id="ff0df-154">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="59f9f-154">C#</span><span class="sxs-lookup"><span data-stu-id="59f9f-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ff0df-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ff0df-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="59f9f-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59f9f-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ff0df-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff0df-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="59f9f-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59f9f-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ff0df-157">Java</span><span class="sxs-lookup"><span data-stu-id="ff0df-157">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="59f9f-157">Java</span><span class="sxs-lookup"><span data-stu-id="59f9f-157">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="ff0df-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="ff0df-158">Response</span></span>
-<span data-ttu-id="ff0df-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ff0df-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="59f9f-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="59f9f-158">Response</span></span>
+<span data-ttu-id="59f9f-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="59f9f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -185,11 +185,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2"></a><span data-ttu-id="ff0df-162">Exemplo 2</span><span class="sxs-lookup"><span data-stu-id="ff0df-162">Example 2</span></span>
-#### <a name="request"></a><span data-ttu-id="ff0df-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ff0df-163">Request</span></span>
-<span data-ttu-id="ff0df-164">O próximo exemplo usa um parâmetro de `$select` consulta para obter os cabeçalhos das mensagens de Internet de uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="ff0df-164">The next example uses a `$select` query parameter to get the Internet message headers of a message.</span></span> 
+### <a name="example-2"></a><span data-ttu-id="59f9f-162">Exemplo 2</span><span class="sxs-lookup"><span data-stu-id="59f9f-162">Example 2</span></span>
+#### <a name="request"></a><span data-ttu-id="59f9f-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59f9f-163">Request</span></span>
+<span data-ttu-id="59f9f-164">O próximo exemplo usa um parâmetro de `$select` consulta para obter os cabeçalhos das mensagens de Internet de uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="59f9f-164">The next example uses a `$select` query parameter to get the Internet message headers of a message.</span></span> 
 
-# <a name="http"></a>[<span data-ttu-id="ff0df-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff0df-165">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="59f9f-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="59f9f-165">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
@@ -198,26 +198,26 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
-# <a name="c"></a>[<span data-ttu-id="ff0df-166">C#</span><span class="sxs-lookup"><span data-stu-id="ff0df-166">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="59f9f-166">C#</span><span class="sxs-lookup"><span data-stu-id="59f9f-166">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ff0df-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ff0df-167">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="59f9f-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59f9f-167">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ff0df-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff0df-168">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="59f9f-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59f9f-168">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ff0df-169">Java</span><span class="sxs-lookup"><span data-stu-id="ff0df-169">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="59f9f-169">Java</span><span class="sxs-lookup"><span data-stu-id="59f9f-169">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-headers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="ff0df-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="ff0df-170">Response</span></span>
-<span data-ttu-id="ff0df-171">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ff0df-171">Here is an example of the response.</span></span> <span data-ttu-id="ff0df-172">Observação: O conjunto de cabeçalhos das mensagens no objeto de resposta é truncado para brevidade.</span><span class="sxs-lookup"><span data-stu-id="ff0df-172">Note: The set of message headers in the response object is truncated for brevity.</span></span> <span data-ttu-id="ff0df-173">Todas os cabeçalhos serão retornados de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ff0df-173">All of the headers will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="59f9f-170">Resposta</span><span class="sxs-lookup"><span data-stu-id="59f9f-170">Response</span></span>
+<span data-ttu-id="59f9f-171">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="59f9f-171">Here is an example of the response.</span></span> <span data-ttu-id="59f9f-172">Observação: O conjunto de cabeçalhos das mensagens no objeto de resposta é truncado para brevidade.</span><span class="sxs-lookup"><span data-stu-id="59f9f-172">Note: The set of message headers in the response object is truncated for brevity.</span></span> <span data-ttu-id="59f9f-173">Todas os cabeçalhos serão retornados de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="59f9f-173">All of the headers will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_message_headers",
@@ -253,13 +253,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3"></a><span data-ttu-id="ff0df-174">Exemplo 3</span><span class="sxs-lookup"><span data-stu-id="ff0df-174">Example 3</span></span>
-#### <a name="request"></a><span data-ttu-id="ff0df-175">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ff0df-175">Request</span></span>
+### <a name="example-3"></a><span data-ttu-id="59f9f-174">Exemplo 3</span><span class="sxs-lookup"><span data-stu-id="59f9f-174">Example 3</span></span>
+#### <a name="request"></a><span data-ttu-id="59f9f-175">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59f9f-175">Request</span></span>
 
-<span data-ttu-id="ff0df-176">O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e o **uniqueBody** da mensagem especificada no formato do texto.</span><span class="sxs-lookup"><span data-stu-id="ff0df-176">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.</span></span>
+<span data-ttu-id="59f9f-176">O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e o **uniqueBody** da mensagem especificada no formato do texto.</span><span class="sxs-lookup"><span data-stu-id="59f9f-176">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="ff0df-177">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff0df-177">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="59f9f-177">HTTP</span><span class="sxs-lookup"><span data-stu-id="59f9f-177">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -269,28 +269,28 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
-# <a name="c"></a>[<span data-ttu-id="ff0df-178">C#</span><span class="sxs-lookup"><span data-stu-id="ff0df-178">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="59f9f-178">C#</span><span class="sxs-lookup"><span data-stu-id="59f9f-178">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ff0df-179">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ff0df-179">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="59f9f-179">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59f9f-179">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ff0df-180">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff0df-180">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="59f9f-180">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59f9f-180">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ff0df-181">Java</span><span class="sxs-lookup"><span data-stu-id="ff0df-181">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="59f9f-181">Java</span><span class="sxs-lookup"><span data-stu-id="59f9f-181">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="ff0df-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="ff0df-182">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="59f9f-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="59f9f-182">Response</span></span>
 
-<span data-ttu-id="ff0df-183">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ff0df-183">Here is an example of the response.</span></span> <span data-ttu-id="ff0df-184">Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para reconhecer o `Prefer: outlook.body-content-type` cabeçalho da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ff0df-184">Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.</span></span>
+<span data-ttu-id="59f9f-183">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="59f9f-183">Here is an example of the response.</span></span> <span data-ttu-id="59f9f-184">Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para reconhecer o `Prefer: outlook.body-content-type` cabeçalho da solicitação.</span><span class="sxs-lookup"><span data-stu-id="59f9f-184">Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_message_in_text",
@@ -319,12 +319,12 @@ Preference-Applied: outlook.body-content-type="text"
 }
 ```
 
-### <a name="example-4"></a><span data-ttu-id="ff0df-185">Exemplo 4</span><span class="sxs-lookup"><span data-stu-id="ff0df-185">Example 4</span></span>
-#### <a name="request"></a><span data-ttu-id="ff0df-186">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ff0df-186">Request</span></span>
-<span data-ttu-id="ff0df-187">O quarto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="ff0df-187">The fourth example gets the MIME content of a message in the signed-in user's mailbox.</span></span>
+### <a name="example-4"></a><span data-ttu-id="59f9f-185">Exemplo 4</span><span class="sxs-lookup"><span data-stu-id="59f9f-185">Example 4</span></span>
+#### <a name="request"></a><span data-ttu-id="59f9f-186">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59f9f-186">Request</span></span>
+<span data-ttu-id="59f9f-187">O quarto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="59f9f-187">The fourth example gets the MIME content of a message in the signed-in user's mailbox.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="ff0df-188">HTTP</span><span class="sxs-lookup"><span data-stu-id="ff0df-188">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="59f9f-188">HTTP</span><span class="sxs-lookup"><span data-stu-id="59f9f-188">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_message_in_mime",
@@ -333,27 +333,27 @@ Preference-Applied: outlook.body-content-type="text"
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
-# <a name="c"></a>[<span data-ttu-id="ff0df-189">C#</span><span class="sxs-lookup"><span data-stu-id="ff0df-189">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="59f9f-189">C#</span><span class="sxs-lookup"><span data-stu-id="59f9f-189">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-mime-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ff0df-190">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ff0df-190">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="59f9f-190">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59f9f-190">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-mime-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ff0df-191">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ff0df-191">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="59f9f-191">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59f9f-191">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-mime-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="ff0df-192">Java</span><span class="sxs-lookup"><span data-stu-id="ff0df-192">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="59f9f-192">Java</span><span class="sxs-lookup"><span data-stu-id="59f9f-192">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-message-in-mime-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="ff0df-193">Resposta</span><span class="sxs-lookup"><span data-stu-id="ff0df-193">Response</span></span>
-<span data-ttu-id="ff0df-194">Esta é a resposta.</span><span class="sxs-lookup"><span data-stu-id="ff0df-194">The following is the response.</span></span> <span data-ttu-id="ff0df-195">O conteúdo MIME começa com o `MIME-Version` cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="ff0df-195">The MIME content begins with the `MIME-Version` header.</span></span> 
+#### <a name="response"></a><span data-ttu-id="59f9f-193">Resposta</span><span class="sxs-lookup"><span data-stu-id="59f9f-193">Response</span></span>
+<span data-ttu-id="59f9f-194">Esta é a resposta.</span><span class="sxs-lookup"><span data-stu-id="59f9f-194">The following is the response.</span></span> <span data-ttu-id="59f9f-195">O conteúdo MIME começa com o `MIME-Version` cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="59f9f-195">The MIME content begins with the `MIME-Version` header.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -452,10 +452,10 @@ YW5vdGhlciBtYWlsLg0K
 ```
 
 
-## <a name="see-also"></a><span data-ttu-id="ff0df-196">Confira também</span><span class="sxs-lookup"><span data-stu-id="ff0df-196">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="59f9f-196">Confira também</span><span class="sxs-lookup"><span data-stu-id="59f9f-196">See also</span></span>
 
-- [<span data-ttu-id="ff0df-197">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="ff0df-197">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="ff0df-198">Adicionar dados personalizados aos usuários usando extensões abertas</span><span class="sxs-lookup"><span data-stu-id="ff0df-198">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="59f9f-197">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="59f9f-197">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="59f9f-198">Adicionar dados personalizados aos usuários usando extensões abertas</span><span class="sxs-lookup"><span data-stu-id="59f9f-198">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 -->
