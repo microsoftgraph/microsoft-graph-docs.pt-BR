@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 93c5c5c7bd7b04baa70af9fffd2c7319f50af4ad
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 24da1586fdf0debe808930358e1390a0ab6db2b6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404340"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461304"
 ---
 # <a name="call-subscribetotone"></a>Call: subscribeToTone
 
@@ -22,7 +22,7 @@ Assine o DTMF (sinalização de multifrequência de tom dual). Isso permite que 
 > [!Note]
 > A ação **subscribeToTone** é suportada apenas para [chamadas](../resources/call.md) que são iniciadas com o [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    | Descrição |
 |:---------------|:--------|:------------|
-| clientContext  | Cadeia de caracteres  | Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres. |
+| clientContext  | String  | Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres. |
 
 ## <a name="response"></a>Resposta
 Se bem sucedido, este método retorna um código de resposta `200 OK`.

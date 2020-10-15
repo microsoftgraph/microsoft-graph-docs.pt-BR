@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b611cd9557bc88665a826725396a4c9b17b824cc
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ba181ec79939533d6abf3be912ee078534b85814
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402259"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461381"
 ---
 # <a name="list-verificationdnsrecords"></a>Listar verificationDnsRecords
 
@@ -22,15 +22,15 @@ Você não pode usar um domínio associado com seu locatário do Azure AD até q
 
 Os domínios raiz precisam de verificação. Por exemplo, contoso.com requer verificação. Se um domínio raiz é verificado, os subdomínios do domínio raiz são verificados automaticamente. Por exemplo, subdomain.contoso.com será verificada automaticamente se contoso.com tiver sido verificada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

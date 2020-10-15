@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: yyuank
-ms.openlocfilehash: 60ac47c22a5ef9a506fac8fcaadc8e697d474044
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b4581105a06a7f234462e904822a3e87c52899f2
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402139"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459771"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 
 Recupere as propriedades e os relacionamentos de um objeto [Endpoint](../resources/endpoint.md) específico.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

@@ -5,19 +5,19 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a9139f51b86fa472402c7f8e6a8a6b2645b07893
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: daf46d80400601cec87a5c6f89e4166f6c86b360
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403738"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461535"
 ---
 # <a name="get-device"></a>Obter dispositivo
 
 Namespace: microsoft.graph
 
 Obtém as propriedades e os relacionamentos de um objeto device.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

@@ -5,19 +5,19 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 77194ba9a656429f62260675bf32dcce4c73baeb
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d8e7f8e12db55bb295bfadf4faaf63dff5e44656
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400623"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458355"
 ---
 # <a name="list-plans"></a>Listar planos
 
 Namespace: microsoft.graph
 
 Recupere uma lista de objetos **plannerplan** .
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

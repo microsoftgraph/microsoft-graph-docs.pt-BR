@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: ef49ed6eb3c0677d48c62bfc1e325d551de9b712
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4d573ef73aed7ebce12534c47797632eeb2ddb68
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400617"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458343"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Excluir um appRoleAssignment concedido a uma entidade de serviço
 
@@ -20,7 +20,7 @@ Exclui um [appRoleAssignment](../resources/approleassignment.md) que recebeu uma
 
 As funções de aplicativo atribuídas às entidades de serviço também são conhecidas como [permissões de aplicativo](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). A exclusão de uma atribuição de função de aplicativo para uma entidade de serviço é equivalente a revogar a concessão de permissão somente de aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

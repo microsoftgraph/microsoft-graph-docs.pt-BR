@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81745029b62ac099221173f9560e954ca591789d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 012c59e028c7c1f9ad7b730ccb3589fc08037d1c
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406157"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461312"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -21,7 +21,7 @@ Atualiza as propriedades de um objeto [Application](../resources/application.md)
 > [!IMPORTANT]
 > Não há suporte para o uso do PATCH para definir [**passwordCredential**](../resources/passwordcredential.md). Use os métodos [addpassword](./application-addpassword.md) e [removePassword](./application-removepassword.md) para atualizar a senha de um aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

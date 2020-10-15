@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: da39683f20a8ac5c8bbf8fde3d23bd64b7c97ad2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 452fa3f90de2eeedec46fddac8351517e6c24585
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402251"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460016"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 Recupere os professores e alunos de uma aula. Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
+|Delegada (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte  |
 |Aplicativo | EduRoster. Read. All, EduRoster. ReadWrite. All mais member. Read. Hidden | 
 

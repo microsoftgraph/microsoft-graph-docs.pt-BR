@@ -5,19 +5,19 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2ef128bcdccdb01a3a69ea7e1e109537ec10d1bb
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 73d0c23b29271a4b040f5694d25ce32d4dcb4f5b
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404151"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458959"
 ---
 # <a name="list-sections"></a>Listar seções
 
 Namespace: microsoft.graph
 
 Recupere uma lista de objetos [onenoteSection](../resources/section.md) do bloco de anotações especificado.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

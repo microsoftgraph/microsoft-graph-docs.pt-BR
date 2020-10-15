@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a046ca63ccfb70f917dc15c03cadc035d2444f25
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: cade38bd630d84a0b6e550daf7e85b81943b6247
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404571"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461444"
 ---
 # <a name="list-threads"></a>Listar threads
 
@@ -20,7 +20,7 @@ Obtém todos os threads em uma conversa de grupo.
 
 Observação: Você também pode [obter todos os threads de um grupo](group-list-threads.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

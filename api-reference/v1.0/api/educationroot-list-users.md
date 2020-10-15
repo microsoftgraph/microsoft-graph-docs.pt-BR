@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 194f3ffacb6a66f2c47d9e55f45b4008701c91ed
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 83629b65b859ea8ae4e0bd59907f85f7d0076f9f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402839"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458827"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 Recupera uma lista de objetos de usuário. Esses objetos de usuário incluirão propriedades específicas de educação.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  Sem suporte.  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP

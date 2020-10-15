@@ -5,25 +5,25 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a8d0d5927006ec670b85b9916b0d134313b40abc
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1a992984302e9847887813574b8783b4285315f2
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404578"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460616"
 ---
 # <a name="get-conversation"></a>Obter conversa
 
 Namespace: microsoft.graph
 
 Recupera as propriedades e os relacionamentos do objeto conversation.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group. ReadWrite. All, Group. Read. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Group. ReadWrite. All, Group. Read. All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group. ReadWrite. All, Group. Read. All |
 
 ## <a name="http-request"></a>Solicitação HTTP

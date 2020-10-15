@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 37a87491d1094192b6133fac5c58e9f34d3932b8
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: eae592ff532291af45d21248b101988b3e1627aa
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404606"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460611"
 ---
 # <a name="list-contracts"></a>Listar contratos
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere uma lista de objetos [Contract](../resources/contract.md) associados a um locatário do parceiro.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

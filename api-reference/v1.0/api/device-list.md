@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c2642062d481fb9072db1f514e15612aace0458d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4d05c7fd43fcc424da20f9191fe80d09a40ce827
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404837"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460464"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupera uma lista de objetos de dispositivos registrados na organização.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

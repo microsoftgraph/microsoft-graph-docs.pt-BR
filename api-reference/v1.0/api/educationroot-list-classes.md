@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8f37a8e1b74999265e54afe6008d9b4275753a64
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d5b38d804c0e56343456f380ef61f1470a98d66b
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401610"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460779"
 ---
 # <a name="list-classes"></a>Listar classes
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 Recupere uma lista de todos os objetos de classe. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | EduRoster.ReadBasic |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) | EduRoster.ReadBasic |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP

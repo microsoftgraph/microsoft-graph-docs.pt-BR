@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b27910e3ba20f6408c0305f22a737dd78f3acd3c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: fa4fe6698d788ac8588101e6f818fdd70712c1fb
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404158"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461311"
 ---
 # <a name="call-recordresponse"></a>Call: recordResponse
 
@@ -27,7 +27,7 @@ Esta ação não deve ser registrada em toda a chamada. O tamanho máximo da gra
 
 >**Observação:** Qualquer mídia coletada pode **não** ser persistente. Certifique-se de que você está em conformidade com as leis e regulamentos da sua área quando se trata de gravação de chamada. Consulte um advogado legal para obter mais informações.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
@@ -58,8 +58,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |maxSilenceTimeoutInSeconds|Int32| Tempo máximo de silêncio (pausa) permitido após um usuário começar a falar. Padrão = 5 segundos, mín = 1 segundo, máximo = 120 segundos.|
 |maxRecordDurationInSeconds|Int32| Duração máxima para a operação recordResponse antes de parar a gravação. Padrão = 5 segundos, mín = 1 segundo, máximo = 120 segundos.|
 |playBeep|Boolean| Se true, reproduz um aviso sonoro para indicar ao usuário que eles podem começar a gravar suas mensagens. Padrão = true.|
-|stopTones|Conjunto de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
+|stopTones|Coleção de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
+|clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Este método retorna um `200 OK` código de resposta e um cabeçalho de local com um URI para o [recordOperation](../resources/recordoperation.md) criado para essa solicitação.

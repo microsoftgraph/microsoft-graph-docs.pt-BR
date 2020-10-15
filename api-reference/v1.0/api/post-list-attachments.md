@@ -5,19 +5,19 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 807c5ac4d96c3e733187e5e22c9293c4ccf1f806
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 105fcc5fd14b4d0d3407789b1632af341bbf558e
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405894"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459212"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
 Namespace: microsoft.graph
 
 Recupere uma lista de objetos [attachment](../resources/attachment.md) anexados a uma postagem.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

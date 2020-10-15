@@ -5,19 +5,19 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e2a11db354ccf85674b9135c51613e924c20a64a
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 8dc0e3297f6bc1142fdf5dc8e66c9d38315705bf
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404270"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459211"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 
 Namespace: microsoft.graph
 
 Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

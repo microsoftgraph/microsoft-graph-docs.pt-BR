@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 9882fff41b309bd012b9a9748c4e7aeff445bcc1
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 69eb46efe0a190d3bbdff9cc3965097bcf4126de
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405033"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461157"
 ---
 # <a name="list-schemaextensions"></a>List schemaExtensions
 
@@ -20,14 +20,14 @@ Obtenha uma lista de objetos [schemaExtension](../resources/schemaextension.md) 
 
 > **Observação:** A lista também conterá definições de extensão de esquema (marcadas como `Available` ) criadas por outros desenvolvedores de outros locatários. Isto é diferente de outras APIs que retornam apenas os dados específicos do locatário. Os dados de extensão criados com base nas definições de extensão de esquema são específicos do locatário e só podem ser acessados por aplicativos explicitamente concedidos à permissão. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User. Read, Application. Read. All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | User. Read, Application. Read. All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

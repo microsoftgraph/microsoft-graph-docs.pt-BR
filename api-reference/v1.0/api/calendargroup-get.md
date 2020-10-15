@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 772e4d0001fe96a41ea3cbcda495c5029825e123
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 673cfd54f22912ba593abc4d5e72dd42c80020c6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406146"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459890"
 ---
 # <a name="get-calendargroup"></a>Obter calendarGroup
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupera as propriedades e os relacionamentos de um objeto de grupo de calendários.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

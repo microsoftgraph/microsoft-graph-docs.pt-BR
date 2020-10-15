@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a1695e242882f78c2aab393ebac5e5e1f130623d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 10647c9c733ae684effdb1e9be5197cfca07bc0e
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401002"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460339"
 ---
 # <a name="get-a-group-setting"></a>Obter uma configuração de grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades de um objeto de configuração de grupo específico.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

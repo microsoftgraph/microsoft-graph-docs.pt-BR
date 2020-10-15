@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 35b8d2e043b688eefe3b3f070d84b4f1a556001c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: be3896b1a2db82d7a1511fd2ae8db6368f96f9d5
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406139"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459876"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupera uma lista de calendários que pertencem a um grupo de calendários.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

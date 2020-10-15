@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fbde80a9ccd1566df11be5f1c573abac7011a0da
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e570987ec70f90b00d58a93832cb384bf31f8929
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403689"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459750"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
@@ -20,7 +20,7 @@ Obtenha as propriedades e os relacionamentos do objeto [eventMessage](../resourc
 
 No momento, essa operação retorna corpos de mensagens de eventos somente no formato HTML.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

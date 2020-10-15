@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a09b15e713eb68c4ef72d0321df17cc973a4e42b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 58679d53800ef449242594b76dec2ad623a6831f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404137"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460906"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -20,14 +20,14 @@ Recupere as propriedades e os relacionamentos de um objeto [onlineMeeting](../re
 
 > **Observação:** Atualmente, o `GET` método só tem suporte para uma [ID de conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte.                                        |
+| Delegada (conta Microsoft pessoal) | Sem suporte.                                        |
 | Aplicativo                            | OnlineMeetings.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

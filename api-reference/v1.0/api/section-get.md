@@ -5,19 +5,19 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 26e8dd854b75ba36b6f51c7b491d061d290f4243
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 87ff9efd1aceaa9f238e2cb861dd93d00fcf1bb6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405369"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458917"
 ---
 # <a name="get-section"></a>Obter seção
 
 Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos de um objeto [onenoteSection](../resources/section.md) .
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

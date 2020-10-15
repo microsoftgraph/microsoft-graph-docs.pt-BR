@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 98a2df1f2d23017e04c8132d3698703b6a6da5bd
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 3359cbdb797fafc0a78b35cef5b66111b30c4074
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403713"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460030"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 Recupere uma aula do sistema. Uma aula é um grupo universal com uma propriedade especial que indica ao sistema que o grupo é uma aula. Os membros do grupo representam os alunos; os administradores do grupo representam os professores da aula. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
+|Delegada (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte  |
 |Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 

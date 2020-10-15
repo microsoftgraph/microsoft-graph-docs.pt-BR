@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 7b1637f82e0ef99a59c492eebb0305db2ff48d8f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: be35d927a1860ee4aa4c38807bc7001a7f99408a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405754"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459155"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipalName: Listar proprietários
 

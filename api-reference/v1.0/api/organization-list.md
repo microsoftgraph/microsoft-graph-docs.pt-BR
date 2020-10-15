@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b00992f696fc458e15d41d45b95a2ae1201a5dad
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d594c417cbd8e8127b80eed5e57bd5ed70ff7931
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405943"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458553"
 ---
 # <a name="list-organization"></a>Listar organização
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 
 Recupere uma lista de objetos de organização.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

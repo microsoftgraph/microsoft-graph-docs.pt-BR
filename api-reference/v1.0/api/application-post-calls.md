@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5fd34f481530af2d77e7dc69d68e9e8289168094
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ef2505caf61a9b80de4ac53be9bbb334aad00ad9
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403780"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458469"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -20,7 +20,7 @@ Criar [chamada](../resources/call.md) permite que o bot crie uma nova chamada po
 
 > **Observação:** No momento, só há suporte para chamadas VoIP. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 

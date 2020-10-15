@@ -5,19 +5,19 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 54e82e8946b33bf900fd808d7b135168250b885a
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 99ab137ac28fb03f99db7b47474572e3e5ba3609
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401320"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459736"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
 Namespace: microsoft.graph
 
 Recupera uma lista de objetos de anexo.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

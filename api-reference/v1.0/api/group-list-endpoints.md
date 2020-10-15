@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3a4fd4bd7846d358cf6a183cb0761be700a008bc
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f3bd3ae6d49e6f101872f5c38a0b0e85395c7f9a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402811"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459708"
 ---
 # <a name="list-endpoints"></a>Listar pontos de extremidade
 
 Recupere uma lista de objetos de [ponto de extremidade](../resources/endpoint.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a785b64257acbc7cc59da8f6fea24fe5c9040ad9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 38ffbea47dd955526279bdacfd1efd665857a745
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401023"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461283"
 ---
 # <a name="call-updaterecordingstatus"></a>Call: updateRecordingStatus
 
@@ -20,7 +20,7 @@ Atualize o status de gravação do aplicativo associado a uma chamada. Isso requ
 
 > **Restrição adicional**: você não pode usar a API de acesso à mídia para registrar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa, ou dados derivados desse conteúdo de mídia ("Record" ou "Recording"), sem primeiro chamar a API **updateRecordingStatus** para indicar que a gravação começou e receber uma resposta de êxito dessa API. Se o aplicativo começar a gravar qualquer reunião, ele deverá finalizar a gravação antes de chamar a API **updateRecordingStatus** para indicar que a gravação foi concluída.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)      |
@@ -46,8 +46,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro       | Tipo    | Descrição                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | Cadeia de caracteres  | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                                 |
-| status          | Cadeia de caracteres  | O status de gravação. Os valores possíveis são: `notRecording` , `recording` , ou `failed` .  |
+| clientContext   | String  | Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.                                 |
+| status          | String  | O status de gravação. Os valores possíveis são: `notRecording` , `recording` , ou `failed` .  |
 
 ## <a name="response"></a>Resposta
 Este método retorna um `200 OK` código de resposta e um cabeçalho de local com um URI para o objeto [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) criado para essa solicitação.

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 459de1d6309f8db37180cd99e3286974bfd8c373
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 00e0ff641af173d75301d7f9b52586f17c3993bc
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405887"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458938"
 ---
 # <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Obter atividades recentes para um determinado usuário. Essa função OData tem alguns comportamentos padrão incluídos para que funcionem como uma API "mais recentemente usada". O serviço consultará o [historyItems](../resources/projectrome-historyitem.md)mais recente e, em seguida, extrairá as atividades relacionadas. As atividades serão classificadas de acordo com a **LastModified** mais recente no **historyItem**. Isso significa que as atividades sem **historyItems** não serão incluídas na resposta. A permissão UserActivity. ReadWrite. CreatedByApp também aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegada (conta Microsoft pessoal) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

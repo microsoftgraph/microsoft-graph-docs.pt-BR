@@ -5,19 +5,19 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 915945bb8e756bbbbed66a3207203d82dbdc78fa
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 2c2b097f8aeaea25f1ce2348c7597e2f82bb3300
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406006"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461255"
 ---
 # <a name="list-sectiongroups"></a>Listar sectionGroups
 
 Namespace: microsoft.graph
 
 Recupere uma lista de objetos de objeto de [seção](../resources/sectiongroup.md) .
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
