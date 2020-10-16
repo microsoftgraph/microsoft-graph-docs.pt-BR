@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 966e03eacb3e72621c65aa64183c6db0bc8b4e82
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1a9069c33078b89fb818e27a9ce099ec546d1c5c
+ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988503"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48479917"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 O recurso **call** é criado quando há uma chamada recebida para o aplicativo ou quando o aplicativo cria uma nova chamada realizada por meio de um `POST` em `app/calls`.
 
-As chamadas podem ser configuradas como uma chamada ponto a ponto ou de grupo. Para criar ou ingressar em uma chamada de grupo, forneça `chatInfo` e `meetingInfo`. Caso não sejam fornecidos, uma nova chamada de grupo é criada automaticamente. Para uma chamada recebida, grave esses valores em um armazenamento altamente disponível para que o aplicativo reingresse na chamada caso enfrente uma falha.
+As chamadas podem ser configuradas como uma chamada ponto a ponto ou de grupo. Para criar ou ingressar em uma chamada de grupo, forneça `chatInfo` e `meetingInfo`. Caso não sejam fornecidos, uma nova chamada de grupo é criada automaticamente. Para uma chamada recebida, grave esses valores em um repositório altamente disponível para que o seu aplicativo reingresse na chamada caso enfrente uma falha.
 
-Embora a mesma identidade não possa ser convidada várias vezes, é possível que um aplicativo ingresse na mesma reunião várias vezes. Sempre que o aplicativo quiser ingressar, uma identidade separada deve ser fornecida para que os clientes possam exibi-las como diferentes.
+Embora a mesma identidade não possa ser convidada várias vezes, é possível que um aplicativo ingresse na mesma reunião várias vezes. Sempre que o aplicativo quiser ingressar em uma chamada, uma identidade separada deve ser fornecida para que os clientes possam exibi-las como participantes diferentes.
 
 > ** Observação: ** você poderá obter a URL de ingresso em uma reunião agendada com o Microsoft Teams. Extraia os dados da URL conforme mostrado para preencher `chatInfo` e `meetingInfo`.
 ```http

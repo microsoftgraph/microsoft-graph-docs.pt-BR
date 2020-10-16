@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b672292d0c47cb34b0f41e0dda830e2e82b33518
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 2a5c7e53882846a45597421d4f2b5384d2c87a8d
+ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433454"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48479945"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -24,9 +24,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
+| Delegada (conta corporativa ou de estudante)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegada (conta Microsoft pessoal) | Sem suporte.                              |
+| Aplicativo                            | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All|
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 

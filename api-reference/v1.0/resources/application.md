@@ -5,18 +5,18 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5b0e18de18b2dc3951831d537e6ec95c49f87fbe
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: a74663ea092ba24bf75067336467833af715dc78
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433461"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471473"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
 Namespace: microsoft.graph
 
-Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no Azure Active Directory (Azure AD) deve estar registrado em um diretório. O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Para saber mais, confira [Noções básicas de como registrar um aplicativo no Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Herda de [directoryObject](directoryobject.md).
+Represents an application. Any application that outsources authentication to Azure Active Directory (Azure AD) must be registered in a directory. Application registration involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more. For more information, see [Basics of Registering an Application in Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Inherits from [directoryObject](directoryobject.md).
 
 Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md).
 
@@ -55,7 +55,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Atribiur tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Atribuir um tokenLifetimePolicy a este objeto.|
 |[Listar tokenLifetimePolicies](../api/application-list-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Obter todos os tokenLifetimePolicies atribuídos a este objeto.|
 |[Remover tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| Coleção [tokenLifetimePolicy](tokenlifetimepolicy.md)| Remover um tokenLifetimePolicy deste objeto.|
-
+|**Distribuidor verificado**| | |
+|[Definir distribuidor verificado](../api/application-setverifiedpublisher.md)| Nenhum | Definir o distribuidor verificado de um aplicativo.|
+|[Desmarcar distribuidor verificado](../api/application-unsetverifiedpublisher.md)| Nenhum | Desmarcar o distribuidor verificado de um aplicativo.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -84,6 +86,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores com suporte são:<ul><li>`AzureADMyOrg`: Usuários com uma conta Microsoft corporativa ou de estudante no locatário do Azure AD da organização (ou seja, locatário único)</li><li>`AzureADMultipleOrgs`: Usuários com uma conta Microsoft corporativa ou de estudante em locatário Azure AD de qualquer organização (multi locatário)</li><li>`AzureADandPersonalMicrosoftAccount`: Usuários com uma conta Microsoft pessoal, corporativa ou de estudante no locatário do Azure AD de qualquer organização.</li><li>`PersonalMicrosoftAccount`: Somente os usuários com uma conta Microsoft pessoal.</li></ul> |
 | categorias |Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulável.|
 | tokenEncryptionKeyId |Cadeia de caracteres|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o fornecedor verificado para o aplicativo.|
 | web |[webApplication](webapplication.md)| Especifica configurações para um aplicativo Web. |
 
 ## <a name="relationships"></a>Relações
@@ -133,6 +136,7 @@ Veja a seguir uma representação JSON do recurso.
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```
