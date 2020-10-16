@@ -5,32 +5,32 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c1b347088e353e9732e01a7286a09e6d23ff6bc
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 4013251fce41125a0fc6a662d9481520ac75742d
+ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433440"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48479951"
 ---
-# <a name="create-team"></a><span data-ttu-id="bb0d9-103">Criar equipe</span><span class="sxs-lookup"><span data-stu-id="bb0d9-103">Create team</span></span>
+# <a name="create-team"></a><span data-ttu-id="e4910-103">Criar equipe</span><span class="sxs-lookup"><span data-stu-id="e4910-103">Create team</span></span>
 
-<span data-ttu-id="bb0d9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bb0d9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e4910-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e4910-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bb0d9-105">Criar uma nova [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="bb0d9-105">Create a new [team](../resources/team.md).</span></span>
+<span data-ttu-id="e4910-105">Criar uma nova [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="e4910-105">Create a new [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bb0d9-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="bb0d9-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e4910-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e4910-106">Permissions</span></span>
 
-<span data-ttu-id="bb0d9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bb0d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e4910-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e4910-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="bb0d9-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bb0d9-109">Permission type</span></span>                        | <span data-ttu-id="bb0d9-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bb0d9-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e4910-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e4910-109">Permission type</span></span>                        | <span data-ttu-id="e4910-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e4910-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="bb0d9-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bb0d9-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="bb0d9-112">Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bb0d9-112">Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-| <span data-ttu-id="bb0d9-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bb0d9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bb0d9-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-114">Not supported.</span></span>                              |
-| <span data-ttu-id="bb0d9-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bb0d9-115">Application</span></span>                            | <span data-ttu-id="bb0d9-116">Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All</span><span class="sxs-lookup"><span data-stu-id="bb0d9-116">Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All</span></span> |
+| <span data-ttu-id="e4910-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e4910-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="e4910-112">Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e4910-112">Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="e4910-113">Delegada (conta Microsoft pessoal)</span><span class="sxs-lookup"><span data-stu-id="e4910-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4910-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e4910-114">Not supported.</span></span>                              |
+| <span data-ttu-id="e4910-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e4910-115">Application</span></span>                            | <span data-ttu-id="e4910-116">Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e4910-116">Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bb0d9-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bb0d9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e4910-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e4910-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,30 +38,30 @@ ms.locfileid: "48433440"
 POST /teams
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bb0d9-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bb0d9-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e4910-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e4910-118">Request headers</span></span>
 
-| <span data-ttu-id="bb0d9-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="bb0d9-119">Header</span></span>        | <span data-ttu-id="bb0d9-120">Valor</span><span class="sxs-lookup"><span data-stu-id="bb0d9-120">Value</span></span>                     |
+| <span data-ttu-id="e4910-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e4910-119">Header</span></span>        | <span data-ttu-id="e4910-120">Valor</span><span class="sxs-lookup"><span data-stu-id="e4910-120">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="bb0d9-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="bb0d9-121">Authorization</span></span> | <span data-ttu-id="bb0d9-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="bb0d9-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bb0d9-124">Content-Type</span></span>  | <span data-ttu-id="bb0d9-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="e4910-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="e4910-121">Authorization</span></span> | <span data-ttu-id="e4910-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e4910-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e4910-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e4910-124">Content-Type</span></span>  | <span data-ttu-id="e4910-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e4910-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bb0d9-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bb0d9-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e4910-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e4910-127">Request body</span></span>
 
-<span data-ttu-id="bb0d9-128">No corpo da solicitação, forneça uma representação JSON de um objeto [team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="bb0d9-128">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="e4910-128">No corpo da solicitação, forneça uma representação JSON de um objeto [team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="e4910-128">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bb0d9-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="bb0d9-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e4910-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4910-129">Response</span></span>
 
-<span data-ttu-id="bb0d9-130">Se bem-sucedida, essa API retornará uma resposta `202 Accepted` contendo um link para a [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="bb0d9-130">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
+<span data-ttu-id="e4910-130">Se bem-sucedida, essa API retornará uma resposta `202 Accepted` contendo um link para a [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="e4910-130">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bb0d9-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="bb0d9-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e4910-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e4910-131">Examples</span></span>
 
-### <a name="example-1-delegated-permissions"></a><span data-ttu-id="bb0d9-132">Exemplo 1: Permissões delegadas</span><span class="sxs-lookup"><span data-stu-id="bb0d9-132">Example 1: Delegated permissions</span></span>
+### <a name="example-1-delegated-permissions"></a><span data-ttu-id="e4910-132">Exemplo 1: Permissões delegadas</span><span class="sxs-lookup"><span data-stu-id="e4910-132">Example 1: Delegated permissions</span></span>
 
-<span data-ttu-id="bb0d9-133">Este é um exemplo de uma solicitação mínima.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-133">The following is an example of a minimal request.</span></span> <span data-ttu-id="bb0d9-134">Ao omitir outras propriedades, o cliente está, implicitamente, obtendo padrões do modelo predefinido representado por `template`.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-134">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
+<span data-ttu-id="e4910-133">Este é um exemplo de uma solicitação mínima.</span><span class="sxs-lookup"><span data-stu-id="e4910-133">The following is an example of a minimal request.</span></span> <span data-ttu-id="e4910-134">Ao omitir outras propriedades, o cliente está, implicitamente, obtendo padrões do modelo predefinido representado por `template`.</span><span class="sxs-lookup"><span data-stu-id="e4910-134">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bb0d9-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bb0d9-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e4910-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e4910-135">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bb0d9-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb0d9-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4910-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4910-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post"
@@ -76,22 +76,22 @@ Content-Type: application/json
   "description": "My Sample Team’s Description"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bb0d9-137">C#</span><span class="sxs-lookup"><span data-stu-id="bb0d9-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e4910-137">C#</span><span class="sxs-lookup"><span data-stu-id="e4910-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bb0d9-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb0d9-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e4910-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4910-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bb0d9-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb0d9-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e4910-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4910-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="bb0d9-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="bb0d9-140">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e4910-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4910-140">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_team_post",
@@ -105,13 +105,13 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-2-application-permissions"></a><span data-ttu-id="bb0d9-141">Exemplo 2: Permissões de aplicativos</span><span class="sxs-lookup"><span data-stu-id="bb0d9-141">Example 2: Application permissions</span></span>
+### <a name="example-2-application-permissions"></a><span data-ttu-id="e4910-141">Exemplo 2: Permissões de aplicativos</span><span class="sxs-lookup"><span data-stu-id="e4910-141">Example 2: Application permissions</span></span>
 
-<span data-ttu-id="bb0d9-142">Aqui está um exemplo de uma solicitação mínima usando permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-142">The following is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="bb0d9-143">Ao omitir outras propriedades, o cliente está implicitamente obtendo padrões do modelo predefinido representado por `template`.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-143">By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`.</span></span> <span data-ttu-id="bb0d9-144">Ao emitir uma solicitação com permissões de aplicativo, um [usuário](../resources/user.md) deve ser especificado no conjunto `members`.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-144">When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.</span></span>
+<span data-ttu-id="e4910-142">Aqui está um exemplo de uma solicitação mínima usando permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="e4910-142">The following is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="e4910-143">Ao omitir outras propriedades, o cliente está implicitamente obtendo padrões do modelo predefinido representado por `template`.</span><span class="sxs-lookup"><span data-stu-id="e4910-143">By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`.</span></span> <span data-ttu-id="e4910-144">Ao emitir uma solicitação com permissões de aplicativo, um [usuário](../resources/user.md) deve ser especificado no conjunto `members`.</span><span class="sxs-lookup"><span data-stu-id="e4910-144">When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bb0d9-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bb0d9-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e4910-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e4910-145">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bb0d9-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb0d9-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4910-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4910-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
@@ -135,22 +135,22 @@ Content-Type: application/json
    ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bb0d9-147">C#</span><span class="sxs-lookup"><span data-stu-id="bb0d9-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e4910-147">C#</span><span class="sxs-lookup"><span data-stu-id="e4910-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bb0d9-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb0d9-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e4910-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4910-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bb0d9-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb0d9-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e4910-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4910-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bb0d9-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="bb0d9-150">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e4910-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4910-150">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_team_post_minimal",
@@ -164,13 +164,13 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="bb0d9-151">Exemplo 3: Criar uma equipe com vários canais, aplicativos instalados e guias fixadas usando permissões delegadas</span><span class="sxs-lookup"><span data-stu-id="bb0d9-151">Example 3: Create a team with multiple channels, installed apps, and pinned tabs using delegated permissions</span></span>
+### <a name="example-3-create-a-team-with-multiple-channels-installed-apps-and-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="e4910-151">Exemplo 3: Criar uma equipe com vários canais, aplicativos instalados e guias fixadas usando permissões delegadas</span><span class="sxs-lookup"><span data-stu-id="e4910-151">Example 3: Create a team with multiple channels, installed apps, and pinned tabs using delegated permissions</span></span>
 
-<span data-ttu-id="bb0d9-152">Aqui está uma solicitação com um conteúdo completo.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-152">The following is a request with a full payload.</span></span> <span data-ttu-id="bb0d9-153">O cliente pode substituir os valores no modelo-base e adicionar itens com valor de matriz na máxima extensão permitida por regras de validação para a `specialization`.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-153">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
+<span data-ttu-id="e4910-152">Aqui está uma solicitação com um conteúdo completo.</span><span class="sxs-lookup"><span data-stu-id="e4910-152">The following is a request with a full payload.</span></span> <span data-ttu-id="e4910-153">O cliente pode substituir os valores no modelo-base e adicionar itens com valor de matriz na máxima extensão permitida por regras de validação para a `specialization`.</span><span class="sxs-lookup"><span data-stu-id="e4910-153">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bb0d9-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bb0d9-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e4910-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e4910-154">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bb0d9-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb0d9-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4910-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4910-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_full_payload"
@@ -259,22 +259,22 @@ Content-Type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bb0d9-156">C#</span><span class="sxs-lookup"><span data-stu-id="bb0d9-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e4910-156">C#</span><span class="sxs-lookup"><span data-stu-id="e4910-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-full-payload-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bb0d9-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb0d9-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e4910-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4910-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-full-payload-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bb0d9-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb0d9-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e4910-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4910-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-full-payload-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bb0d9-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="bb0d9-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e4910-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4910-159">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_team_post_full_payload",
@@ -288,20 +288,20 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-4-create-a-team-from-group"></a><span data-ttu-id="bb0d9-160">Exemplo 4: criar uma equipe a partir do grupo</span><span class="sxs-lookup"><span data-stu-id="bb0d9-160">Example 4: Create a team from group</span></span>
+### <a name="example-4-create-a-team-from-group"></a><span data-ttu-id="e4910-160">Exemplo 4: criar uma equipe a partir do grupo</span><span class="sxs-lookup"><span data-stu-id="e4910-160">Example 4: Create a team from group</span></span>
 
-<span data-ttu-id="bb0d9-161">O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md), dado um **groupId**.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-161">The following example shows how you can create a new [team](../resources/team.md) from a [group](../resources/group.md), given a **groupId**.</span></span>
+<span data-ttu-id="e4910-161">O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md), dado um **groupId**.</span><span class="sxs-lookup"><span data-stu-id="e4910-161">The following example shows how you can create a new [team](../resources/team.md) from a [group](../resources/group.md), given a **groupId**.</span></span>
 
-<span data-ttu-id="bb0d9-162">Alguns pontos a observar nesta chamada:</span><span class="sxs-lookup"><span data-stu-id="bb0d9-162">A few things to note about this call:</span></span>
+<span data-ttu-id="e4910-162">Alguns pontos a observar nesta chamada:</span><span class="sxs-lookup"><span data-stu-id="e4910-162">A few things to note about this call:</span></span>
 
-* <span data-ttu-id="bb0d9-163">Para criar uma equipe, o grupo a partir do qual você a está criando deve ter pelo menos um proprietário.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-163">In order to create a team, the group you're creating it from must have a least one owner.</span></span>
-* <span data-ttu-id="bb0d9-164">A equipe criada será sempre herdeira do nome de exibição, visibilidade, especialização e proprietários do grupo.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-164">The team that's created will always inherit from the group's display name, visibility, specialization, and members.</span></span> <span data-ttu-id="bb0d9-165">Portanto, ao tomar essa decisão com a propriedade **group@odata.bind**, a inclusão da equipe **displayName**, **visibilidade**, **especialização** ou propriedades **owners@odata.bind** retornarão um erro.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-165">Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.</span></span>
-* <span data-ttu-id="bb0d9-166">Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-166">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="bb0d9-167">Recomendamos que você repita a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-167">We recommend that you retry the Create team call three times, with a 10 second delay between calls.</span></span>
+* <span data-ttu-id="e4910-163">Para criar uma equipe, o grupo a partir do qual você a está criando deve ter pelo menos um proprietário.</span><span class="sxs-lookup"><span data-stu-id="e4910-163">In order to create a team, the group you're creating it from must have a least one owner.</span></span>
+* <span data-ttu-id="e4910-164">A equipe criada será sempre herdeira do nome de exibição, visibilidade, especialização e proprietários do grupo.</span><span class="sxs-lookup"><span data-stu-id="e4910-164">The team that's created will always inherit from the group's display name, visibility, specialization, and members.</span></span> <span data-ttu-id="e4910-165">Portanto, ao tomar essa decisão com a propriedade **group@odata.bind**, a inclusão da equipe **displayName**, **visibilidade**, **especialização** ou propriedades **owners@odata.bind** retornarão um erro.</span><span class="sxs-lookup"><span data-stu-id="e4910-165">Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.</span></span>
+* <span data-ttu-id="e4910-166">Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação.</span><span class="sxs-lookup"><span data-stu-id="e4910-166">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="e4910-167">Recomendamos que você repita a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.</span><span class="sxs-lookup"><span data-stu-id="e4910-167">We recommend that you retry the Create team call three times, with a 10 second delay between calls.</span></span>
 
 
-#### <a name="request"></a><span data-ttu-id="bb0d9-168">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bb0d9-168">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e4910-168">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e4910-168">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bb0d9-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb0d9-169">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4910-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4910-169">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_from_group"
@@ -315,22 +315,22 @@ Content-Type: application/json
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bb0d9-170">C#</span><span class="sxs-lookup"><span data-stu-id="bb0d9-170">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e4910-170">C#</span><span class="sxs-lookup"><span data-stu-id="e4910-170">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bb0d9-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb0d9-171">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e4910-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4910-171">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-team-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bb0d9-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb0d9-172">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e4910-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4910-172">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bb0d9-173">Resposta</span><span class="sxs-lookup"><span data-stu-id="bb0d9-173">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e4910-173">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4910-173">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_team_from_group",
@@ -344,15 +344,15 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-5-create-a-team-from-a-group-with-multiple-channels-installed-apps-and-pinned-tabs"></a><span data-ttu-id="bb0d9-174">Exemplo 5: Criar uma equipe a partir de um grupo com vários canais, aplicativos instalados e guias fixadas</span><span class="sxs-lookup"><span data-stu-id="bb0d9-174">Example 5: Create a team from a group with multiple channels, installed apps, and pinned tabs</span></span>
+### <a name="example-5-create-a-team-from-a-group-with-multiple-channels-installed-apps-and-pinned-tabs"></a><span data-ttu-id="e4910-174">Exemplo 5: Criar uma equipe a partir de um grupo com vários canais, aplicativos instalados e guias fixadas</span><span class="sxs-lookup"><span data-stu-id="e4910-174">Example 5: Create a team from a group with multiple channels, installed apps, and pinned tabs</span></span>
 
-<span data-ttu-id="bb0d9-175">A seguir está uma solicitação que converte um grupo existente com propriedades estendidas que criarão a equipe com vários canais, aplicativos instalados e guias fixadas.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-175">The following is a request that converts an existing group with extended properties which will create the team with multiple channels, installed apps, and pinned tabs.</span></span>
+<span data-ttu-id="e4910-175">A seguir está uma solicitação que converte um grupo existente com propriedades estendidas que criarão a equipe com vários canais, aplicativos instalados e guias fixadas.</span><span class="sxs-lookup"><span data-stu-id="e4910-175">The following is a request that converts an existing group with extended properties which will create the team with multiple channels, installed apps, and pinned tabs.</span></span>
 
-<span data-ttu-id="bb0d9-176">Para saber mais sobre os tipos de modelos base com suporte e propriedades com suporte, confira [Comece a trabalhar com modelos do Teams](/MicrosoftTeams/get-started-with-teams-templates).</span><span class="sxs-lookup"><span data-stu-id="bb0d9-176">To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
+<span data-ttu-id="e4910-176">Para saber mais sobre os tipos de modelos base com suporte e propriedades com suporte, confira [Comece a trabalhar com modelos do Teams](/MicrosoftTeams/get-started-with-teams-templates).</span><span class="sxs-lookup"><span data-stu-id="e4910-176">To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bb0d9-177">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bb0d9-177">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e4910-177">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e4910-177">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bb0d9-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb0d9-178">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4910-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4910-178">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_group"
@@ -391,22 +391,22 @@ Content-Type: application/json
    ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bb0d9-179">C#</span><span class="sxs-lookup"><span data-stu-id="bb0d9-179">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e4910-179">C#</span><span class="sxs-lookup"><span data-stu-id="e4910-179">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bb0d9-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb0d9-180">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e4910-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4910-180">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bb0d9-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb0d9-181">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e4910-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4910-181">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bb0d9-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="bb0d9-182">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e4910-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4910-182">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_group",
@@ -420,17 +420,17 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a><span data-ttu-id="bb0d9-183">Exemplo 6: Criar uma equipe com um tipo de modelo de base não padrão</span><span class="sxs-lookup"><span data-stu-id="bb0d9-183">Example 6: Create a team with a non-standard base template type</span></span>
+### <a name="example-6-create-a-team-with-a-non-standard-base-template-type"></a><span data-ttu-id="e4910-183">Exemplo 6: Criar uma equipe com um tipo de modelo de base não padrão</span><span class="sxs-lookup"><span data-stu-id="e4910-183">Example 6: Create a team with a non-standard base template type</span></span>
 
-<span data-ttu-id="bb0d9-184">Os tipos de modelos base são modelos especiais criados pela Microsoft para setores específicos.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-184">Base template types are special templates that Microsoft created for specific industries.</span></span> <span data-ttu-id="bb0d9-185">Estes modelos base geralmente contêm aplicativos proprietários que não estão disponíveis nas lojas, e propriedade de equipe que ainda não tem suporte individual nos modelos do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-185">These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.</span></span>
+<span data-ttu-id="e4910-184">Os tipos de modelos base são modelos especiais criados pela Microsoft para setores específicos.</span><span class="sxs-lookup"><span data-stu-id="e4910-184">Base template types are special templates that Microsoft created for specific industries.</span></span> <span data-ttu-id="e4910-185">Estes modelos base geralmente contêm aplicativos proprietários que não estão disponíveis nas lojas, e propriedade de equipe que ainda não tem suporte individual nos modelos do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="e4910-185">These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.</span></span>
 
-<span data-ttu-id="bb0d9-186">Para criar uma equipe a partir de um modelo base não padrão, você vai precisar alterar a propriedade `template@odata.bind` no corpo da solicitação de `standard` para indicar o que você deseja criar para o modelo base padrão.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-186">To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.</span></span>
+<span data-ttu-id="e4910-186">Para criar uma equipe a partir de um modelo base não padrão, você vai precisar alterar a propriedade `template@odata.bind` no corpo da solicitação de `standard` para indicar o que você deseja criar para o modelo base padrão.</span><span class="sxs-lookup"><span data-stu-id="e4910-186">To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.</span></span>
 
-<span data-ttu-id="bb0d9-187">Para saber mais sobre tipos de modelos base com suporte, confira [Comece a trabalhar com modelos do Teams](/MicrosoftTeams/get-started-with-teams-templates).</span><span class="sxs-lookup"><span data-stu-id="bb0d9-187">To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
+<span data-ttu-id="e4910-187">Para saber mais sobre tipos de modelos base com suporte, confira [Comece a trabalhar com modelos do Teams](/MicrosoftTeams/get-started-with-teams-templates).</span><span class="sxs-lookup"><span data-stu-id="e4910-187">To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bb0d9-188">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bb0d9-188">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e4910-188">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e4910-188">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bb0d9-189">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb0d9-189">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4910-189">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4910-189">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard"
@@ -445,22 +445,22 @@ Content-Type: application/json
   "description": "My Class Team’s Description"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bb0d9-190">C#</span><span class="sxs-lookup"><span data-stu-id="bb0d9-190">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e4910-190">C#</span><span class="sxs-lookup"><span data-stu-id="e4910-190">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bb0d9-191">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb0d9-191">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e4910-191">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4910-191">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bb0d9-192">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb0d9-192">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e4910-192">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4910-192">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bb0d9-193">Resposta</span><span class="sxs-lookup"><span data-stu-id="bb0d9-193">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e4910-193">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4910-193">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard",
@@ -474,15 +474,15 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-### <a name="example-7-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a><span data-ttu-id="bb0d9-194">Exemplo 7: Criar uma equipe com um tipo de modelo base não padrão com propriedades estendidas</span><span class="sxs-lookup"><span data-stu-id="bb0d9-194">Example 7: Create a team with a non-standard base template type with extended properties</span></span>
+### <a name="example-7-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a><span data-ttu-id="e4910-194">Exemplo 7: Criar uma equipe com um tipo de modelo base não padrão com propriedades estendidas</span><span class="sxs-lookup"><span data-stu-id="e4910-194">Example 7: Create a team with a non-standard base template type with extended properties</span></span>
 
-<span data-ttu-id="bb0d9-195">Os tipos de modelos base podem ser estendidos com propriedade adicionais, permitindo que você crie sobre um modelo base existente com configurações, canais, aplicativos ou guias de equipe adicionais.</span><span class="sxs-lookup"><span data-stu-id="bb0d9-195">Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.</span></span>
+<span data-ttu-id="e4910-195">Os tipos de modelos base podem ser estendidos com propriedade adicionais, permitindo que você crie sobre um modelo base existente com configurações, canais, aplicativos ou guias de equipe adicionais.</span><span class="sxs-lookup"><span data-stu-id="e4910-195">Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.</span></span>
 
-<span data-ttu-id="bb0d9-196">Para saber mais sobre os tipos de modelos base com suporte e propriedades com suporte, confira [Comece a trabalhar com modelos do Teams](/MicrosoftTeams/get-started-with-teams-templates).</span><span class="sxs-lookup"><span data-stu-id="bb0d9-196">To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
+<span data-ttu-id="e4910-196">Para saber mais sobre os tipos de modelos base com suporte e propriedades com suporte, confira [Comece a trabalhar com modelos do Teams](/MicrosoftTeams/get-started-with-teams-templates).</span><span class="sxs-lookup"><span data-stu-id="e4910-196">To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="bb0d9-197">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bb0d9-197">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e4910-197">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e4910-197">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="bb0d9-198">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb0d9-198">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4910-198">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4910-198">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard2"
@@ -522,22 +522,22 @@ Content-Type: application/json
    ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="bb0d9-199">C#</span><span class="sxs-lookup"><span data-stu-id="bb0d9-199">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e4910-199">C#</span><span class="sxs-lookup"><span data-stu-id="e4910-199">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="bb0d9-200">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb0d9-200">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e4910-200">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4910-200">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="bb0d9-201">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bb0d9-201">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e4910-201">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4910-201">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="bb0d9-202">Resposta</span><span class="sxs-lookup"><span data-stu-id="bb0d9-202">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e4910-202">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4910-202">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard2",
@@ -551,9 +551,9 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
-## <a name="see-also"></a><span data-ttu-id="bb0d9-203">Confira também</span><span class="sxs-lookup"><span data-stu-id="bb0d9-203">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e4910-203">Confira também</span><span class="sxs-lookup"><span data-stu-id="e4910-203">See also</span></span>
 
-- [<span data-ttu-id="bb0d9-204">Modelos disponíveis</span><span class="sxs-lookup"><span data-stu-id="bb0d9-204">Available templates</span></span>](/MicrosoftTeams/get-started-with-teams-templates)
-- [<span data-ttu-id="bb0d9-205">Introdução aos modelos de Equipes de varejo</span><span class="sxs-lookup"><span data-stu-id="bb0d9-205">Getting started with Retail Teams templates</span></span>](/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [<span data-ttu-id="bb0d9-206">Introdução aos modelos de Equipes médicas</span><span class="sxs-lookup"><span data-stu-id="bb0d9-206">Getting started with Healthcare Teams templates</span></span>](/MicrosoftTeams/healthcare/healthcare-templates)
-- [<span data-ttu-id="bb0d9-207">Como criar um grupo com uma equipe</span><span class="sxs-lookup"><span data-stu-id="bb0d9-207">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="e4910-204">Modelos disponíveis</span><span class="sxs-lookup"><span data-stu-id="e4910-204">Available templates</span></span>](/MicrosoftTeams/get-started-with-teams-templates)
+- [<span data-ttu-id="e4910-205">Introdução aos modelos de Equipes de varejo</span><span class="sxs-lookup"><span data-stu-id="e4910-205">Getting started with Retail Teams templates</span></span>](/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [<span data-ttu-id="e4910-206">Introdução aos modelos de Equipes médicas</span><span class="sxs-lookup"><span data-stu-id="e4910-206">Getting started with Healthcare Teams templates</span></span>](/MicrosoftTeams/healthcare/healthcare-templates)
+- [<span data-ttu-id="e4910-207">Como criar um grupo com uma equipe</span><span class="sxs-lookup"><span data-stu-id="e4910-207">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
