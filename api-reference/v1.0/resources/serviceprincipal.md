@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso servicePrincipal
-description: Representa uma instância de um aplicativo em um diretório. Herda do directoryObject.
+description: Represents an instance of an application in a directory. Inherits from directoryObject.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 69fb12b694558fa8d8624d09f108f0c285365a12
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aad508267edfedde5b1d104745f1c1f3b7ee70f4
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009209"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471431"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
 Namespace: microsoft.graph
 
-Representa uma instância de um aplicativo em um diretório. Herda de [directoryObject](directoryobject.md).
+Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
 Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/serviceprincipal-delta.md).
 
@@ -101,6 +101,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |servicePrincipalType|Cadeia de caracteres|Identifica se a entidade de serviço representa um aplicativo ou uma identidade gerenciada. Isso é definido pelo Azure AD internamente. Para uma entidade de serviço que representa um [aplicativo](./application.md), isso é definido como __Aplicativo__. Para obter uma entidade de serviço que represente uma [identidade gerenciada](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview), essa configuração é definida como __ManagedIdentity__.|
 |tags|Coleção de cadeias de caracteres| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar a entidade de serviço. Não anulável. |
 | tokenEncryptionKeyId |Cadeia de caracteres|Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD emite tokens para este aplicativo criptografado usando a chave especificada por essa propriedade. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Especifica o distribuidor verificado do aplicativo que essa entidade de serviço representa.
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo |Descrição|
@@ -160,7 +161,8 @@ Veja a seguir uma representação JSON do recurso
   "servicePrincipalNames": ["string"],
   "servicePrincipalType": "string",
   "tags": ["string"],
-  "tokenEncryptionKeyId": "String"
+  "tokenEncryptionKeyId": "String",
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }
 ```
 
