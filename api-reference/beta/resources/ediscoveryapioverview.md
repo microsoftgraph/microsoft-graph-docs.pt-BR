@@ -5,18 +5,18 @@ localization_priority: Priority
 author: mahage-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: 241e7bbca5a2b084b31ab327a3e40df3f72812e9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c9ae9561908456b0954060e95a08abdc394c9767
+ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404795"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48479934"
 ---
 # <a name="use-the-microsoft-graph-ediscovery-api"></a>Use a API de Descoberta Eletrônica do Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As APIs do Microsoft Graph para Descoberta Eletrônica fornecem funcionalidade para que as organizações automatizem as tarefas repetitivas e se integrem às suas ferramentas existentes de Descoberta Eletrônica para criar fluxos de trabalho repetíveis que podem ser necessários com base nos regulamentos do setor. Você pode usar as APIs de Descoberta Eletrônica para ajudar com as suas necessidades legais.
+As APIs do Microsoft Graph para eDiscovery fornecem funcionalidade para que as organizações automatizem suas tarefas repetitivas e integrem suas ferramentas de eDiscovery existentes para criar fluxos de trabalho repetíveis que podem ser necessários com base nas regulamentações do setor. Você pode usar as APIs de Descoberta Eletrônica para ajudar com as suas necessidades legais.
 
 > [!IMPORTANT]
 > As APIs do Microsoft Graph para Descoberta Eletrônica destinam-se ao uso de operações de Descoberta Eletrônica para requisições de Litígio, Investigação e regulamentação. Essas APIs não devem ser usadas como um substituto para os dados de registro no diário do sistema Microsoft 365 ou qualquer outro download em massa.

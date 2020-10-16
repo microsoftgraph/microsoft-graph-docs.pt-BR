@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: bb9ec9bafa1887b2b630e606a677c84b289d062f
-ms.sourcegitcommit: e7e5c40a616a88d21116f60b394422cf2a9077c3
+ms.openlocfilehash: 4640c7eb82935891e34bf29798eb7e28cefb0e36
+ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48463791"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48479926"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1713,14 +1713,14 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | Ler os nomes e as descrições das equipes | Ler os nomes e as descrições das equipes, em nome do usuário conectado.  | Não | Não |
-| _Teams.Create_ (visualização privada) | Criar equipes | Criar equipes, em nome do usuário conectado. | Sim | Não |
+| _Team.Create_  | Criar equipes | Criar equipes, em nome do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | Obter uma lista de todas as equipes | Obter uma lista de todas as equipes, sem um usuário conectado.   | Sim | Não |
-| _Teams.Create_ (visualização privada) | Criar equipes | Criar equipes, sem um usuário conectado. | Sim | Não |
+| _Team.Create_  | Criar equipes | Criar equipes, sem um usuário conectado. | Sim | Não |
 |_Teamwork.Migrate.All_|Gerenciar a migração do Microsoft Teams|Criar e gerenciar recursos de migração do Microsoft Teams|Sim|Sim|
 
 ## <a name="team-settings-permissions"></a>Permissões de configurações de equipe
