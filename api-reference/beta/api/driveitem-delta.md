@@ -6,14 +6,14 @@ title: Sincronizar o conteúdo de uma unidade
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 729f3cac63e9fbb9c37db173983bc00d3da4688e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5041167154270714627a825a3516d12350dd747
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982091"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581180"
 ---
-# <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
+# <a name="track-changes-for-a-drive"></a>Controlar alterações de uma unidade
 
 Namespace: microsoft.graph
 
@@ -212,7 +212,8 @@ Em alguns cenários, pode ser útil solicitar o valor do deltaLink atual sem pri
 Isso poderá ser útil se o seu aplicativo quiser saber apenas sobre as alterações, e não quiser saber sobre os itens existentes.
 Para recuperar o deltaLink mais recente, chame `delta` com um parâmetro de cadeia de caracteres de consulta `?token=latest`.
 
-**Observação: Se você estiver tentando manter uma representação local completa dos itens em uma pasta ou unidade, use `delta` para a enumeração inicial. Outros métodos, como fazer a paginação por meio da coleção `children` de uma pasta, não garantirá o retorno de todos os itens se ocorrerem gravações durante a enumeração. O uso de `delta` é a única maneira de garantir a leitura de todos os dados necessários.**
+>**Observação:** Se você estiver tentando manter uma representação local completa dos itens em uma pasta ou em uma unidade, deverá usar `delta` a enumeração inicial.
+Outras abordagens, como paginação através da `children` coleção de uma pasta, não são garantidas para retornar todos os itens individuais se qualquer gravação ocorrer durante a enumeração. `delta`O uso é a única maneira de garantir que você tenha lido todos os dados necessários.
 
 ### <a name="request"></a>Solicitação
 
@@ -275,6 +276,16 @@ Content-type: application/json
     |---------|----------|
     | Criar/Modificar | n/d |
     | Excluir | `ctag`, `size` |
+
+## <a name="scanning-permissions-hierarchies"></a>Hierarquias de permissões de verificação
+
+Por padrão, a resposta da consulta delta incluirá o compartilhamento de informações de todos os itens da consulta que foram alterados, mesmo que herdem suas permissões dos pais e não tenham elas próprias alterações diretas de compartilhamento. Em geral, isso resulta em uma chamada de acompanhamento para obter os detalhes de permissão de cada item, em vez de apenas aqueles cujas informações de compartilhamento foram alteradas. Você pode otimizar sua compreensão de como as alterações de permissão acontecem adicionando o cabeçalho `Prefer: hierarchicalsharing` à sua solicitação de consulta delta.
+
+Quando o cabeçalho `Prefer: hierarchicalsharing` é fornecido, as informações de compartilhamento serão retornadas para a raiz da hierarquia de permissões, bem como itens que possuam, explicitamente, alterações de compartilhamento. Nos casos onde a mudança de compartilhamento é remover o compartilhamento de um item, você encontrará uma faceta de compartilhamento vazia para diferenciar entre os itens que herdam de seus pais e aqueles que são únicos, mas sem links de compartilhamento. Você também verá essa faceta de compartilhamento vazia na raiz de uma hierarquia de permissões que não é compartilhada para estabelecer o escopo inicial.
+
+Em muitos cenários de verificação, você pode estar interessado, especificamente, em alterações nas permissões. Para deixar claro na resposta da consulta delta quais alterações são resultados de alterações nas permissões, você pode fornecer o cabeçalho `Prefer: deltashowsharingchanges`. Quando esse cabeçalho é fornecido, todos os itens que aparecem na resposta da consulta delta devido a alterações de permissão, terão a anotação OData `@microsoft.graph.sharedChanged":"True"`. Esse recurso é aplicável ao SharePoint e ao OneDrive for Business, mas não às contas de consumidor do OneDrive.
+
+> **Nota:** O uso do cabeçalho `Prefer: deltashowsharingchanges` requer que você use `Prefer: deltashowremovedasdeleted` e `Prefer: deltatraversepermissiongaps`. Esses valores de cabeçalho podem ser agrupados em um único cabeçalho: `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges` .
 
 ## <a name="error-responses"></a>Respostas de erro
 

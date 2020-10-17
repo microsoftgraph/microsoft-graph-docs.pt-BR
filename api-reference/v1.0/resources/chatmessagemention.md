@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a7ef91ca698058e6f3b9dacd3928329aaf719c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbb65b95884b5666aaf915b4239d3b2a401b9d3f
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069166"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582013"
 ---
 # <a name="chatmessagemention-resource-type"></a>tipo de recurso chatMessageMention
 
@@ -33,14 +33,14 @@ Na propriedade **Content** , a primeira menção tem um atributo HTML `id` de 0.
 
 A segunda menção tem um `id` atributo de 1, correspondendo à propriedade **ID** da segunda instância, que é 1.
 
-Para obter um contexto mais completo do exemplo, consulte [listar respostas de mensagens de canal](/graph/api/channel-list-messagereplies?view=graph-rest-beta).
+Para obter um contexto mais completo do exemplo, consulte [listar respostas de mensagens de canal](/graph/api/channel-list-messagereplies).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade| Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|Int32|Índice de uma entidade que está sendo mencionada no **chat**especificado. Corresponde ao valor {index} na marca correspondente `<at id="{index}">` no corpo da mensagem.|
-|mentionText|string|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, o nome de uma equipe.|
+|mentionText|cadeia de caracteres|Cadeia de caracteres usada para representar a menção. Por exemplo, o nome de exibição de um usuário, o nome de uma equipe.|
 |foi|[identitySet](identityset.md)|A entidade (usuário, aplicativo, equipe ou canal) que foi mencionada.  Se fosse um canal ou uma equipe que foi @mentioned, o identityset contém uma propriedade de **conversa** que concede a ID da equipe/canal, e uma propriedade **conversationIdentityType** que representa a equipe ou o canal.|
 
 
@@ -73,4 +73,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-

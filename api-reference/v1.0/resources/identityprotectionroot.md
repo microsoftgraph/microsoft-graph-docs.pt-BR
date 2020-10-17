@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bc7dded204f6d898a49f6def891144042013b750
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab01fb11d7973adf056685f6ab0d6ef02e2ecb4d
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086708"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581299"
 ---
 # <a name="identityprotectionroot-resource-type"></a>tipo de recurso identityProtectionRoot
 
@@ -42,8 +42,5 @@ A proteção de identidade do Azure AD é um recurso Premium. Você precisa de u
 
 ## <a name="see-also"></a>Confira também
 
-* [Sobre a proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-* [Introdução à proteção de identidade do Azure Active Directory e ao Microsoft Graph](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
-
-
-
+* [Sobre a proteção de identidade do Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection)
+* [Introdução à proteção de identidade do Azure Active Directory e ao Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

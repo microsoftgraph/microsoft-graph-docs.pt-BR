@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bc13589a5a6f4c05bc6decc9f0e8daa1f814fccf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b20225fe22ede9cf0226a3fd1b4c3332922bf6c
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970912"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582055"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
@@ -21,7 +21,7 @@ Atualize as propriedades do objeto [UserSettings](../resources/usersettings.md) 
 ### <a name="batch-request"></a>Solicitação em lote
 
 Também é possível recusar vários usuários do Delve e desabilitar sua contribuição na relevância do conteúdo para toda a organização por meio de uma solicitação em lote.
-Para saber mais, confira [Batching JSON](https://developer.microsoft.com/graph/docs/concepts/json_batching).
+Para saber mais, confira [Batching JSON](/graph/json-batching).
 
 >**Importante**: somente os membros do grupo de função [Gerenciamento da organização](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) podem atualizar vários usuários. 
 
@@ -33,8 +33,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User. ReadWrite, User. ReadWrite. All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | User. ReadWrite, User. ReadWrite. All   |
+|Delegada (conta Microsoft pessoal) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -94,7 +94,3 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": true
 }
 ```
-
-
-
-

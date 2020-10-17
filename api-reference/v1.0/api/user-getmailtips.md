@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b2e71bca93e3c27fe445d5bead5b2f579f081411
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0463cab4fd3a4d1bb268bc504eb4fd2d807d941
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069586"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581873"
 ---
 # <a name="user-getmailtips"></a>usuário: getdicas de dicas
 
@@ -36,7 +36,7 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor|
 |:-----------  |:------|
@@ -48,8 +48,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EmailAddresses|Coleção String|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
-|MailTipsOptions|Cadeia de caracteres|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` e `totalMemberCount` .|
+|EmailAddresses|String collection|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` e `totalMemberCount` .|
 
 ## <a name="response"></a>Resposta
 
@@ -158,4 +158,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

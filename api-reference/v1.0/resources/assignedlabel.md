@@ -5,18 +5,18 @@ localization_priority: Normal
 author: krbain
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b3c226624e850d0d1a5bb2e3866246ecaee9d832
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 923b616c024a240407161b909baf22ac73d590cc
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003308"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581950"
 ---
 # <a name="assignedlabel-resource-type"></a>tipo de recurso assignedLabel
 
 Namespace: microsoft.graph
 
-Representa um rótulo de confidencialidade atribuído a um grupo do Microsoft 365. Os rótulos de confidencialidade permitem que os administradores imponham configurações de grupo específicas em um grupo atribuindo uma classificação ao grupo (como confidencial, altamente confidencial ou geral). Os rótulos de confidencialidade são publicados por administradores no centro de conformidade & segurança da Microsoft 365 como parte dos recursos de proteção de informações da Microsoft. Para obter mais informações sobre rótulos de sensibilidade, consulte [visão geral dos rótulos de sensibilidade](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide).
+Representa um rótulo de confidencialidade atribuído a um grupo do Microsoft 365. Os rótulos de confidencialidade permitem que os administradores imponham configurações de grupo específicas em um grupo atribuindo uma classificação ao grupo (como confidencial, altamente confidencial ou geral). Os rótulos de confidencialidade são publicados por administradores no centro de conformidade & segurança da Microsoft 365 como parte dos recursos de proteção de informações da Microsoft. Para obter mais informações sobre rótulos de sensibilidade, consulte [visão geral dos rótulos de sensibilidade](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

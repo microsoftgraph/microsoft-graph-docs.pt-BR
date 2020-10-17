@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2810ffc35b1550ae75a21b5f8baebb91c444799f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2989b0f74243679daaebcb482c0640a78bc9effa
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984184"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581285"
 ---
 # <a name="riskyuser-resource-type"></a>tipo de recurso riskyUser
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Representa usuários do Azure AD que estão em risco. O Azure AD avalia continuamente o risco do usuário com base em vários sinais e aprendizado de máquina. Essa API fornece acesso programático a todos os usuários de risco em seu Azure AD.
 
-Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
+Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
 
@@ -37,8 +37,8 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|ID exclusiva do usuário em risco.|
-|isDeleted|Boolean|Indica se o usuário é excluído. Os valores possíveis são: `true` , `false`|
-|isprocessoing|Boolean|Indica wehther que o estado arriscado de um usuário está sendo processado pelo backend|
+|isDeleted|Booliano|Indica se o usuário é excluído. Os valores possíveis são: `true` , `false`|
+|isprocessoing|Booliano|Indica wehther que o estado arriscado de um usuário está sendo processado pelo backend|
 |riskDetail|riskDetail|Detalhes do risco detectado. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
 |riskLastUpdatedDateTime|DateTimeOffset|A data e a hora em que o usuário arriscado foi atualizado pela última vez.|
 |riskLevel|riskLevel|Nível do usuário arriscado detectado. Os possíveis valores são: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
@@ -75,5 +75,3 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
-

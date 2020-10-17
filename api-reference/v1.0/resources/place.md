@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 25117aa82efcd914b588572f0d557139b59ec036
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7554463870556791f7f422928c17aa25819ebc8
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056419"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581712"
 ---
 # <a name="place-resource-type"></a>inserir tipo de recurso
 
@@ -23,12 +23,12 @@ Os administradores do Exchange Online podem organizar as salas de reunião em um
 
 Lugares como [sala](room.md) e [sala de salas](roomlist.md) contêm a **ID**básica, o nome para exibição e o endereço de email. Além disso, eles contêm informações de navegação, como endereço físico e coordenadas geográficas, e, no caso de salas, outras informações relevantes, como recursos AV, número de chão e capacidade.
 
-As funções [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) e [findRoomLists](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta) oferecem suporte à pesquisa semelhante para salas e listas de salas em um locatário. Veja a seguir uma comparação entre a API de locais e essas funções.  Se você estiver criando um aplicativo de produção, escolha a API de lugares como a API está agora disponível em v 1.0. Planeje a atualização de qualquer código existente que use o **findRooms** ou o **findRoomLists** para usar a API de locais, pois o **findRooms** ou o **findRoomLists** será preterido e uma linha do tempo será anunciada.
+As funções [findRooms](/graph/api/user-findrooms) e [findRoomLists](/graph/api/user-findroomlists) oferecem suporte à pesquisa semelhante para salas e listas de salas em um locatário. Veja a seguir uma comparação entre a API de locais e essas funções.  Se você estiver criando um aplicativo de produção, escolha a API de lugares como a API está agora disponível em v 1.0. Planeje a atualização de qualquer código existente que use o **findRooms** ou o **findRoomLists** para usar a API de locais, pois o **findRooms** ou o **findRoomLists** será preterido e uma linha do tempo será anunciada.
 
 |API de locais |funções findRooms e findRoomLists|
 |:------------------------------------|:-----------------------------|
 |Suporte para obter todas as listas de salas ou salas em um locatário e todas as salas em uma lista de salas | Suporte semelhante-obtenha todas as salas ou listas de salas em um locatário e todas as salas em uma lista de salas|
-|Os [locais de lista](../api/place-list.md) podem retornar mais de 100 salas em um locatário | [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) retorna até as primeiras salas de 100 em um locatário |
+|Os [locais de lista](../api/place-list.md) podem retornar mais de 100 salas em um locatário | [findRooms](/graph/api/user-findrooms) retorna até as primeiras salas de 100 em um locatário |
 |Suporte para [obter uma lista de salas ou salas individuais](../api/place-get.md) em um locatário | Não oferece suporte para obter uma lista de salas ou salas individuais em um locatário
 |Define as entidades específicas da [sala](room.md) e da [salalist](roomlist.md) que especificam um conjunto de propriedades mais avançado, além do nome para exibição e endereço SMTP. | Cada sala e lista de salas é de um tipo de endereço de email de espessura [mais leve que](emailaddress.md) especifica somente o nome para exibição e o endereço SMTP|
 |Oferece suporte somente a cenários organizacionais com permissões delegadas (contas corporativas ou de estudante) ou de aplicativo | Suporte semelhante somente para cenários organizacionais com permissões delegadas ou de aplicativo|
@@ -49,7 +49,7 @@ As funções [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?vie
 | address        | [physicalAddress](physicaladdress.md)             | O endereço da rua do local. |
 | displayName    | String                                            | O nome associado ao local. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local do local no latitude, longitude e (opcionalmente) as coordenadas de altitude. |
-| id             | String                                            | Identificador exclusivo do local. Somente leitura. |
+| id             | String                                            | Identificador exclusivo do local. Apenas leitura. |
 | phone          | Cadeia de caracteres                                            | O número de telefone do local. |
 
 ## <a name="relationships"></a>Relações
@@ -80,8 +80,8 @@ Veja a seguir uma representação JSON do recurso.
 ```
 
 ## <a name="see-also"></a>Confira também
-- Para que os administradores criem uma lista de salas, use o [novo](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)grupo de distribuição do cmdlet do Exchange PowerShell.
-- Para que os administradores adicionem uma sala a uma lista de salas, use o cmdlet do Exchange PowerShell [Add-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps).
+- Para que os administradores criem uma lista de salas, use o [novo](/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)grupo de distribuição do cmdlet do Exchange PowerShell.
+- Para que os administradores adicionem uma sala a uma lista de salas, use o cmdlet do Exchange PowerShell [Add-DistributionGroupMember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps).
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -92,4 +92,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-

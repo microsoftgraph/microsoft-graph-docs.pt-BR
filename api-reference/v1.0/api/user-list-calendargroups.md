@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 514409d2de4858e84f5669cb87e0041c3648ae2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ce1bdd95b3ae28befd0b19c79dbc634f453f4bc
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069518"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582111"
 ---
 # <a name="list-calendargroups"></a>Listar calendarGroups
 
@@ -33,7 +33,7 @@ GET /me/calendarGroups
 GET /users/{id | userPrincipalName}/calendarGroups
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -112,4 +112,3 @@ Content-length: 155
   "suppressions": [
   ]
 }-->
-

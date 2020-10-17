@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 150b0b53b219b46978c83666560264fb60bf8ba0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 114e788e12ab8f633bc6350b08140f9d5e4fe8a3
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086799"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581264"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>tipo de recurso cloudAppSecuritySessionControl
 
@@ -22,8 +22,8 @@ Controle de sessão usado para impor verificações de segurança do aplicativo 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Especifica se o controle de sessão está habilitado. |
-|cloudAppSecurityType|String| Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. Para obter mais informações, consulte [Deploy Conditional Access app Control for refeatured apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad). |
+|isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
+|cloudAppSecurityType|String| Os valores possíveis são: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. Para obter mais informações, consulte [Deploy Conditional Access app Control for refeatured apps](/cloud-app-security/proxy-deployment-aad). |
 
 ## <a name="relationships"></a>Relações
 
@@ -58,4 +58,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-

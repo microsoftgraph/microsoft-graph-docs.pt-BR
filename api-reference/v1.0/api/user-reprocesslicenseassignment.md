@@ -5,18 +5,18 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8b8aa20054f1db7a81b4878882f88c8fdf9438ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e4243e927ead9a282fd4e897b0d93ab612bf4459
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088773"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582237"
 ---
 # <a name="user-reprocesslicenseassignment"></a>usuário: reprocessLicenseAssignment
 
 Namespace: microsoft.graph
 
-Reprocessar todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre licenciamento baseado em grupo, confira [o que é licenciamento baseado em grupo no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Além disso [, consulte identificar e resolver problemas de atribuição de licença para um grupo no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) para obter mais detalhes.
+Reprocessar todas as atribuições de licença baseadas em grupo para o usuário. Para saber mais sobre licenciamento baseado em grupo, confira [o que é licenciamento baseado em grupo no Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Além disso [, consulte identificar e resolver problemas de atribuição de licença para um grupo no Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) para obter mais detalhes.
 
 
 ## <a name="permissions"></a>Permissões
@@ -130,4 +130,3 @@ Content-type: application/json
   ]
 }
 -->
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 849da788c991b01cb7b06357e09c5209236c95cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d51c93217e966267fe829447a0aff1a3727c4702
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069404"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582006"
 ---
 # <a name="feedbacktokenset-resource-type"></a>tipo de recurso feedbackTokenSet
 
@@ -20,7 +20,7 @@ Este é um _tipo aberto_ que representa o conjunto de tokens de comentários for
 
 ## <a name="properties"></a>Propriedades
 
-Nomes de propriedades explícitas não serão documentados, pois os nomes de token de comentários podem mudar, portanto, este é um [tipo aberto](https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).
+Nomes de propriedades explícitas não serão documentados, pois os nomes de token de comentários podem mudar, portanto, este é um [tipo aberto](/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).
 
 ## <a name="json-representation"></a>Representação JSON
 

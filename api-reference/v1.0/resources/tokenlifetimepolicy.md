@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: dddc15d56f580352168dceb6c0b954194c1dbf0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b65b6fa9b44764c07cbebd0667d9cbc29d280a72
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090687"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582132"
 ---
 # <a name="tokenlifetimepolicy-resource-type"></a>tipo de recurso tokenLifetimePolicy
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 
 
-Representa uma política que pode controlar o tempo de vida de um token de acesso JWT, um token de ID ou um token SAML 1.1/2.0 emitido pelo Azure Active Directory (Azure AD). Você pode definir vidas úteis de token para todos os aplicativos em sua organização, para um aplicativo multilocatário (várias organizações) ou para uma entidade de serviço específica em sua organização.  Para obter mais detalhes do cenário, consulte [tempos de vida de token configuráveis no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+Representa uma política que pode controlar o tempo de vida de um token de acesso JWT, um token de ID ou um token SAML 1.1/2.0 emitido pelo Azure Active Directory (Azure AD). Você pode definir vidas úteis de token para todos os aplicativos em sua organização, para um aplicativo multilocatário (várias organizações) ou para uma entidade de serviço específica em sua organização.  Para obter mais detalhes do cenário, consulte [tempos de vida de token configuráveis no Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 >**Observação:** Não há suporte para a configuração dessa política para tokens de atualização e de sessão.
 
 Herda de [stsPolicy](stsPolicy.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -39,10 +39,10 @@ Herda de [stsPolicy](stsPolicy.md).
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Identificador exclusivo da política. Somente leitura.|
-|definir|Coleção String| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
-|description|Cadeia de caracteres| Descrição da política.|
-|displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
+|id|String| Identificador exclusivo da política. Apenas leitura.|
+|definir|String collection| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
+|description|String| Descrição da política.|
+|displayName|String| Nome para exibição dessa política. Obrigatório.|
 |isOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 
@@ -64,7 +64,7 @@ As propriedades abaixo formam o objeto JSON que representa uma política de temp
 
 | Propriedade     | Tipo   |Descrição| Valor mínimo | Valor máximo | Valor padrão|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|Cadeia de caracteres|Controla por quanto tempo os tokens de acesso e de ID são considerados válidos.|10 minutos|1 dia|1 hora|
+|AccessTokenLifetime|String|Controla por quanto tempo os tokens de acesso e de ID são considerados válidos.|10 minutos|1 dia|1 hora|
 |Versão|Inteiro|Defina o valor 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
 
 ## <a name="relationships"></a>Relações
@@ -106,4 +106,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-

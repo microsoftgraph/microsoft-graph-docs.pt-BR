@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Aqui está uma representação JSON de um recurso ColumnDefinition.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 28d124038601ae578e0ee1c30b0ca7ebea8321c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aae4b71055c7a6574cc4abbaa506fad8961991d9
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086722"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581223"
 ---
 # <a name="columndefinition-resource"></a>Recurso ColumnDefinition
 
@@ -64,10 +64,10 @@ O recurso **columnDefinition** tem as seguintes propriedades.
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | Para colunas de site, o nome do grupo ao qual esta coluna pertence. Ajuda a organizar as colunas relacionadas.
 | **description**         | string  | A descrição voltado para o usuário da coluna.
-| **displayName**         | string  | O nome voltado para o usuário da coluna.
+| **displayName**         | cadeia de caracteres  | O nome voltado para o usuário da coluna.
 | **enforceUniqueValues** | booliano | Se for verdadeiro, esse mesmo valor não constará em dois itens de lista nessa coluna.
 | **hidden**              | booliano | Especifica se a coluna é exibida na interface do usuário.
-| **id**                  | string  | O identificador exclusivo da coluna.
+| **id**                  | cadeia de caracteres  | O identificador exclusivo da coluna.
 | **indexed**             | booliano | Especifica se os valores da coluna podem ser usados para classificação e pesquisa.
 | **name**                | string  | O nome voltado para a API da coluna, conforme ele aparece nos [campos][] em uma [listItem][]. Para o nome voltado ao usuário, consulte **displayName**.
 | **readOnly**            | bool    | Especifica se os valores da coluna podem ser modificados.
@@ -117,7 +117,7 @@ Para vê-los ao exibir valores **field** em [listItems][listItem], inclua as col
 [listItem]: listitem.md
 
 
-  [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
+  [SPFieldType]: /previous-versions/office/sharepoint-server/ms428806(v=office.15)
 
 <!-- {
   "type": "#page.annotation",
@@ -126,4 +126,3 @@ Para vê-los ao exibir valores **field** em [listItems][listItem], inclua as col
   "section": "documentation",
   "tocPath": "Resources/ColumnDefinition"
 } -->
-

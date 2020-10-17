@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 887705234bb70918ebca82bcea30fbd82d9812ce
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 32ddc9de6b4eb9422d79f347367aec9816d84c64
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400758"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582314"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -174,7 +174,7 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 
 >**Observação:** o parâmetro @microsoft.graph.conflictBehavior deve ser incluído na URL, em vez do corpo da solicitação.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                   | Caminho REST
 |:---------------------------------------------------------|:------------------
@@ -206,6 +206,7 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 | [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
 | [Fazer ceck-in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
 | [Fazer check-out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+| [Revogar concessões](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
 
 [item-preview]: ../api/driveitem-preview.md
 [Obter análises]: ../api/itemanalytics-get.md

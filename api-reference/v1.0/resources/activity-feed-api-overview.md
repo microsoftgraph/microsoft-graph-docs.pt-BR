@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: conceptualPageType
-ms.openlocfilehash: b90fbd80889a7ae4eb36c3c1d8207b525e99a697
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76f94e2f1d34186258fb74c5509accf5a0ecc007
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003392"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581964"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Usar a API REST de feed de atividades
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Você pode usar a API do feed de atividades no Microsoft Graph para retomar a atividade de um usuário entre dispositivos e plataformas. As solicitações da API de feed de atividades são realizadas em nome de um usuário via [permissões delegadas](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) e a [permissão de atividade do usuário](/graph/permissions-reference), que pode ser usada com contas pessoais ou corporativas e de estudante.
 
-As atividades do usuário são representadas pelo recurso [atividade](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) e são organizadas em um feed baseado em tempo representado pela coleção me/Activities.
+As atividades do usuário são representadas pelo recurso [atividade](/graph/api/resources/projectrome-activity) e são organizadas em um feed baseado em tempo representado pela coleção me/Activities.
 <!-- Add missing content.
 Each activity represents a unique...
 -->
@@ -35,7 +35,7 @@ Aplique as seguintes diretrizes conforme define o activitites em seu aplicativo:
 **Fazer:** Registrar uma única atividade para um grupo de ações de usuário relacionadas.
 Se o aplicativo for usado para uma sequência de conteúdo relacionado, provavelmente fará sentido registrar uma única atividade para toda a sessão de compromisso.
 
-*Cenários de playlist:* Isso é especialmente relevante para playlists de música ou programas de TV — uma única atividade de usuário pode ser atualizada para mostrar seu progresso. Nesse caso, você terá uma única atividade de usuário com vários [itens de histórico](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_historyitem) representando períodos de contrato em vários dias ou semanas.
+*Cenários de playlist:* Isso é especialmente relevante para playlists de música ou programas de TV — uma única atividade de usuário pode ser atualizada para mostrar seu progresso. Nesse caso, você terá uma única atividade de usuário com vários [itens de histórico](/graph/api/resources/projectrome-historyitem) representando períodos de contrato em vários dias ou semanas.
 
 **Fazer:** Armazenar dados de usuário na nuvem.
 Se você quiser dar suporte a atividades entre dispositivos, precisará certificar-se de que o conteúdo necessário para recontratar essa atividade está armazenado em um local de nuvem. Por exemplo, se você publicar uma atividade cada vez que um usuário edita um documento, o documento deve ser armazenado na nuvem, em vez de localmente no dispositivo do usuário para habilitar o reenvolvimento entre dispositivos.
@@ -69,7 +69,7 @@ As atividades do usuário que você criar irão variar com base no padrão de in
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Consulte o [recurso atividade](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) e defina as atividades do seu aplicativo para ajudar os usuários a retomar tarefas importantes.
+- Consulte o [recurso atividade](/graph/api/resources/projectrome-activity) e defina as atividades do seu aplicativo para ajudar os usuários a retomar tarefas importantes.
 - Explore os exemplos de [cartões adaptáveis](https://adaptivecards.io/samples/) para ideias para tornar suas atividades **pop**.
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
@@ -77,4 +77,3 @@ As atividades do usuário que você criar irão variar com base no padrão de in
 
 - Veja [como as experiências da Microsoft estão usando atividades](https://channel9.msdn.com/events/Build/2017/B8108).
 - Saiba mais sobre [a API de feed de atividades e escolha onde eu parou](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
-
