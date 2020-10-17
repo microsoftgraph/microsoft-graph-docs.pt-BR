@@ -938,7 +938,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar memberOf transitivos
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1414,7 +1414,7 @@ items:
         items:
           - name: Visão geral
             href: resources/complianceapioverview.md
-          - name: Descoberta Eletrônica
+          - name: Descoberta eletrônica
             items:
               - name: Visão geral
                 href: resources/eDiscoveryapioverview.md
@@ -9411,6 +9411,8 @@ items:
                 href: api/shares-get.md
               - name: Conceder acesso ao link de compartilhamento
                 href: api/permission-grant.md
+              - name: Revogar concessões no link de compartilhamento
+                href: api/permission-revokegrants.md
               - name: Listar permissões
                 href: api/driveitem-list-permissions.md
               - name: Adicionar permissões
@@ -9950,52 +9952,35 @@ items:
                       - name: Atualizar
                         href: api/authenticationflowspolicy-update.md
               - name: Métodos de autenticação
+                href: resources/authenticationmethods-overview.md
                 items:
-                  - name: Métodos de autenticação B2B
-                    href: resources/authenticationmethods-overview.md
-                    item:
-                      - name: Método de autenticação
-                        href: resources/authenticationmethod.md
-                        items:
-                          - name: Listar
-                            href: api/authentication-list-methods.md
-                          - name: Obter
-                            href: api/authenticationmethod-get.md
-                      - name: Password
-                        href: resources/passwordauthenticationmethod.md
-                        items:
-                          - name: Listar
-                            href: api/authentication-list-passwordmethods.md
-                          - name: Obter
-                            href: api/passwordauthenticationmethod-get.md
-                          - name: Redefinir
-                            href: api/passwordauthenticationmethod-resetpassword.md
-                          - name: Obter status da operação
-                            href: api/authenticationoperation-get.md
-                      - name: Telefone
-                        href: resources/phoneauthenticationmethod.md
-                        items:
-                          - name: Listar
-                            href: api/authentication-list-phonemethods.md
-                          - name: Obter
-                            href: api/phoneauthenticationmethod-get.md
-                          - name: Atualizar
-                            href: api/phoneauthenticationmethod-update.md
-                          - name: Excluir
-                            href: api/phoneauthenticationmethod-delete.md
-                          - name: Adicionar
-                            href: api/authentication-post-phonemethods.md
-                          - name: Habilitar entrada do SMS
-                            href: api/phoneauthenticationmethod-enablesmssignin.md
-                          - name: Desabilitar entrada do SMS
-                            href: api/phoneauthenticationmethod-disablesmssignin.md
-                  - name: Métodos de autenticação B2C
-                    href: resources/b2cauthenticationmethodspolicy.md
+                  - name: Chaves de segurança do FIDO2
+                    href: resources/fido2authenticationmethod.md
                     items:
+                      - name: Listar
+                        href: api/fido2authenticationmethod-list.md
                       - name: Obter
-                        href: api/b2cauthenticationmethodspolicy-get.md
+                        href: api/fido2authenticationmethod-get.md
+                      - name: Excluir
+                        href: api/fido2authenticationmethod-delete.md
+                  - name: Sign-In de telefone com senha do autenticador da Microsoft
+                    href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
+                    items:
+                      - name: Listar
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
+                      - name: Obter
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
+                      - name: Excluir
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+                  - name: Telefone
+                    href: resources/phoneauthenticationmethod.md
+                    items:
+                      - name: Listar
+                        href: api/authentication-list-phonemethods.md
+                      - name: Obter
+                        href: api/phoneauthenticationmethod-get.md
                       - name: Atualizar
-                        href: api/b2cauthenticationmethodspolicy-update.md
+                        href: api/phoneauthenticationmethod-update.md
                       - name: Excluir
                         href: api/phoneauthenticationmethod-delete.md
                       - name: Adicionar
@@ -10004,11 +9989,35 @@ items:
                         href: api/phoneauthenticationmethod-enablesmssignin.md
                       - name: Desabilitar entrada do SMS
                         href: api/phoneauthenticationmethod-disablesmssignin.md
+                  - name: Email
+                    href: resources/emailauthenticationmethod.md
+                    items:
+                      - name: Listar
+                        href: api/emailauthenticationmethod-list.md
+                      - name: Obter
+                        href: api/emailauthenticationmethod-get.md
+                      - name: Atualizar
+                        href: api/emailauthenticationmethod-update.md
+                      - name: Excluir
+                        href: api/emailauthenticationmethod-delete.md
+                      - name: Adicionar
+                        href: api/emailauthenticationmethod-post.md
+                  - name: Password
+                    href: resources/passwordauthenticationmethod.md
+                    items:
+                      - name: Listar
+                        href: api/authentication-list-passwordmethods.md
+                      - name: Obter
+                        href: api/passwordauthenticationmethod-get.md
+                      - name: Redefinir
+                        href: api/passwordauthenticationmethod-resetpassword.md
+                      - name: Obter status da operação
+                        href: api/authenticationoperation-get.md
               - name: Política de método de autenticação
                 items:
                   - name: Visão geral
                     href: resources/authenticationmethodspolicies-overview.md
-                  - name: Chave de segurança FIDO2
+                  - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
                     items:
                       - name: Obter
@@ -10017,7 +10026,7 @@ items:
                         href: api/fido2authenticationmethodconfiguration-update.md
                       - name: Excluir
                         href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Entrada de telefone sem senha do autenticador da Microsoft
+                  - name: Política de entrada de telefone sem senha do Microsoft Authenticator
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Obter
@@ -10026,6 +10035,13 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: Excluir
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+              - name: Política de métodos de autenticação do B2C
+                href: resources/b2cauthenticationmethodspolicy.md
+                items:
+                  - name: Obter
+                    href: api/b2cauthenticationmethodspolicy-get.md
+                  - name: Atualizar
+                    href: api/b2cauthenticationmethodspolicy-update.md
               - name: Configuração de autenticação baseada em certificado
                 href: resources/certificatebasedauthconfiguration.md
                 items:
@@ -12022,7 +12038,7 @@ items:
         items:
           - name: Visão geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
