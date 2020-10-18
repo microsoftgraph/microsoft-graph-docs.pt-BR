@@ -5,12 +5,12 @@ localization_priority: Priority
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 7d8f5ec9c5be87acd4112f2eafd6bdc20527c661
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4d36403aef6212831e186fffd401df7155be43fd
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032702"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582356"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
@@ -20,7 +20,7 @@ As APIs de educação incluem recursos de escalação e recursos de atribuiçõe
 
 ## <a name="authorization"></a>Autorização
 
-Para chamar as APIs de educação no Microsoft Graph, o aplicativo precisará adquirir um token de acesso. Para obter detalhes sobre tokens de acesso, confira [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). O aplicativo também precisará das permissões apropriadas. Para saber mais, confira [Permissões de educação](/graph/permissions-reference#education-permissions).
+Para chamar as APIs de educação no Microsoft Graph, o aplicativo precisará adquirir um token de acesso. Para obter detalhes sobre tokens de acesso, confira [Obter tokens de acesso para chamar o Microsoft Graph](/graph/auth/). O aplicativo também precisará das permissões apropriadas. Para saber mais, confira [Permissões de educação](/graph/permissions-reference#education-permissions).
 
 ### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>Permissões de aplicativo para permitir o consentimento dos administradores de TI da escola
 
@@ -83,4 +83,3 @@ Use as APIs de educação do Microsoft Graph para criar soluções de educação
 
 - Explore os recursos e os métodos mais úteis para seu cenário.
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-

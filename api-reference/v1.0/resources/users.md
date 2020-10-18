@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: c20d008cb2ee37a2ac4b49a3a857fdfabd0688ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 082efd396a1d26d8054339c82840dfb1fbea52a5
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015376"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582195"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 
@@ -23,7 +23,7 @@ Você pode acessar [usuários](user.md) pelo Microsoft Graph de duas maneiras:
 
 ## <a name="authorization"></a>Autorização
 
-Uma das seguintes [permissões](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) é necessária para acessar operações de usuário. As três primeiras permissões podem ser concedidas a um aplicativo por um usuário. O restante só pode ser concedido a um aplicativo pelo administrador.
+Uma das seguintes [permissões](/graph/permissions-reference) é necessária para acessar operações de usuário. As três primeiras permissões podem ser concedidas a um aplicativo por um usuário. O restante só pode ser concedido a um aplicativo pelo administrador.
 
 - User.ReadBasic.All
 - User.Read

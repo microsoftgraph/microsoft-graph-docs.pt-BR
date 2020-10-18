@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 5cdd723e9d73a0466ae4349026f6bf086cb9bdd2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef67a53cb38f0a146069005c45297972298f4b85
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091863"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582328"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações no Microsoft Graph
 
@@ -21,7 +21,7 @@ Essa API fornece funcionalidade de chamada, bem como a capacidade de criar e rec
 
 ## <a name="authorization"></a>Autorização
 
-É necessária uma das seguintes [permissões](https://docs.microsoft.com/graph/permissions-reference#calls-permissions) para acessar a API de comunicações. Essas permissões precisam ser concedidas pelo administrador
+É necessária uma das seguintes [permissões](/graph/permissions-reference#calls-permissions) para acessar a API de comunicações. Essas permissões precisam ser concedidas pelo administrador
 
 | Cenário                 | Permissões                                  |
 |:------------------------------------|:---------------------------------------------|
@@ -35,19 +35,19 @@ A tabela a seguir lista alguns dos usos comuns para a API de comunicações.
 
 | Casos de uso                         | Recursos REST                                 | Confira também  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Criando e associando chamadas 1-1 e de grupo   | [Call](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0)| [Métodos para chamadas](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
-|Chamadas IVR   |     | [Métodos para IVR](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
-| Controles de chamada (participante) | [Participante](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0)   ||
-|Reuniões|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Métodos para reuniões](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
+| Criando e associando chamadas 1-1 e de grupo   | [Call](/graph/api/resources/call?view=graph-rest-v1.0)| [Métodos para chamadas](/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
+|Chamadas IVR   |     | [Métodos para IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
+| Controles de chamada (participante) | [Participante](/graph/api/resources/participant?view=graph-rest-v1.0)   ||
+|Reuniões|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Métodos para reuniões](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
 | Recuperar registros de chamadas | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) | [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) |
 
 ## <a name="common-properties"></a>Propriedades comuns
 
 | Recurso                | Propriedades                             |
 |:------------------------------------|:---------------------------------------------|
-| call                               | [propriedades de chamada](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#properties)  |
-| participante                         | [propriedades dos participantes](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
-| onlineMeeting                            | [Propriedades onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
+| call                               | [propriedades de chamada](/graph/api/resources/call?view=graph-rest-v1.0#properties)  |
+| participante                         | [propriedades dos participantes](/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
+| onlineMeeting                            | [Propriedades onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
 | callRecord | [Propriedades do callRecord](/graph/api/resources/callrecords-callrecord#properties) |
 
 ## <a name="whats-new"></a>Novidades
@@ -58,4 +58,3 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 - [Exemplos da API de comunicações](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 - [SDK de sinalização de comunicação](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls)
 - [SDK de mídia de comunicação](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media)
-

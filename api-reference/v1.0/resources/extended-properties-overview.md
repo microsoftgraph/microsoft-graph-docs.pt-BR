@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 32e328a0d66a954d630213d5731c8e3601b7ce37
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b9643e99a6f0d077368a6745863138ef2492d289
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018505"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581516"
 ---
 # <a name="outlook-extended-properties-overview"></a>Visão geral das propriedades estendidas do Outlook
 
@@ -33,7 +33,7 @@ Ou, nos seguintes recursos de grupo do Microsoft 365:
 
 ## <a name="use-extended-properties-or-open-extensions"></a>Usar propriedades estendidas ou extensões abertas?
 
-Nos cenários mais comuns, você deve ser capaz de usar extensões abertas (representadas por [openTypeExtension](../resources/opentypeextension.md), anteriormente conhecidas como extensões de dados do Office 365) para armazenar e acessar dados personalizados de instâncias de recursos na caixa de correio do usuário. Use propriedades estendidas somente se você precisar acessar dados personalizados para as propriedades MAPI do Outlook que ainda não estão expostas nos [metadados da API do Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api).
+Nos cenários mais comuns, você deve ser capaz de usar extensões abertas (representadas por [openTypeExtension](../resources/opentypeextension.md), anteriormente conhecidas como extensões de dados do Office 365) para armazenar e acessar dados personalizados de instâncias de recursos na caixa de correio do usuário. Use propriedades estendidas somente se você precisar acessar dados personalizados para as propriedades MAPI do Outlook que ainda não estão expostas nos [metadados da API do Microsoft Graph](../index.md).
 
 ## <a name="types-of-extended-properties"></a>Tipos de propriedades estendidas
 
@@ -77,7 +77,7 @@ Use qualquer um dos formatos de propriedade nomeada para definir uma propriedade
 
 Use o formato proptag para acessar propriedades predefinidas por MAPI ou por um cliente ou servidor e que já não tenha sido exibida no Microsoft Graph. Essas propriedades tem identificadores de propriedade no intervalo 0x0001-0x7fff. Não tente definir uma propriedade personalizada usando o formato proptag.
 
-Você pode encontrar informações sobre o mapeamento de uma propriedade estendida para uma propriedade MAPI existente, como o identificador de propriedade e o GUID, na publicação da Microsoft Corporation \[MS-OXPROPS\], ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx).
+Você pode encontrar informações sobre o mapeamento de uma propriedade estendida para uma propriedade MAPI existente, como o identificador de propriedade e o GUID, na publicação da Microsoft Corporation \[MS-OXPROPS\], ["Exchange Server Protocols Master Property List"](/openspecs/exchange_server_protocols/ms-oxprops/f6ab1613-aefe-447d-a49c-18217230b148).
 
 **Observação** Depois de escolher um formato para a **id**, você deve acessar essa propriedade estendida apenas com esse formato.
 
@@ -92,5 +92,3 @@ Operações de propriedades estendidas de vários valores:
 
 - [Criar uma propriedade estendida em uma instância de recurso nova ou existente](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Obter uma instância de recurso com uma propriedade estendida usando `$expand`](../api/multivaluelegacyextendedproperty-get.md).
-
-

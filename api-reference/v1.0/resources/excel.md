@@ -5,12 +5,12 @@ localization_priority: Priority
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: e9e360ba6f91dfaaaca589f9d65e75f56d4b6161
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cf83c0e18f5d7f8a881cf36fcb4b4a444599158
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018512"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581530"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
@@ -29,9 +29,9 @@ A API REST do Excel só oferece suporte para pastas de trabalho formatadas pelo 
 
 ## <a name="authorization-and-scopes"></a>Autorização e escopos
 
-Você pode usar o [ponto de extremidade do Azure AD v.2](https://developer.microsoft.com/graph/docs/authorization/converged_auth) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
+Você pode usar o [ponto de extremidade do Azure AD v.2](../index.md) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
   
-Um dos seguintes [escopos de permissão](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) é obrigatório para usar o recurso do Excel:
+Um dos seguintes [escopos de permissão](/graph/permissions-reference) é obrigatório para usar o recurso do Excel:
 
 * Files.Read (para ações de leitura)
 * Files.ReadWrite (para ações de leitura e gravação)
@@ -1331,4 +1331,3 @@ Content-Type: application/json
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
-

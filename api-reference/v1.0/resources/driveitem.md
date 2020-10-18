@@ -6,12 +6,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 86416189a6e69c0b485e314159976931fffcc81e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22b3d62ea83aa9e1b91f6be1f181bbe575341138
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032751"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581985"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -243,7 +243,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 [thumbnailSet]: thumbnailset.md
 [vídeo]: video.md
 [pasta de trabalho]: workbook.md
-[Usuário]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[Usuário]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
 
 [DriveItemVersion]: driveitemversion.md
@@ -259,4 +259,3 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
   "tocPath": "Items",
   "tocBookmarks": { "Resources/Item": "#" }
 } -->
-

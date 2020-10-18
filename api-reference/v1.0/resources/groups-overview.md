@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 1b548e6c57125a5bfcd5a4b0f1fb491e8eee041c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c43ae69cbc14f823ea867c058728a24f0efa2f9f
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086680"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582174"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -72,7 +72,7 @@ Para saber mais sobre os grupos do Microsoft 365 e as experiências de administr
 
 Os grupos de segurança servem para controlar o acesso de usuários aos recursos. Ao verificar se um usuário faz parte de um grupo de segurança, seu aplicativo pode tomar decisões de autorização quando esse usuário tentar acessar alguns recursos seguros do seu aplicativo. Os grupos de segurança podem ter como membros usuários e outros grupos de segurança.
 
-Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Não é possível criar grupos de segurança habilitados para email por meio da API, mas as outras operações do grupo funcionarão.  Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](https://technet.microsoft.com/library/bb123521%28v=exchg.160%29.aspx).
+Os grupos de segurança habilitados para email são usados da mesma forma que os grupos de segurança, mas com o recurso adicional de uma caixa de correio compartilhada para os grupos. Não é possível criar grupos de segurança habilitados para email por meio da API, mas as outras operações do grupo funcionarão.  Grupos de segurança habilitados para email são somente leitura. Saiba mais no artigo [Gerenciar de grupos de segurança habilitados para email no Exchange](/Exchange/recipients/mail-enabled-security-groups).
 
 ### <a name="security-group-example"></a>Exemplo de grupo de segurança
 
@@ -127,7 +127,7 @@ Os grupos do Microsoft 365 no Yammer são usados para facilitar a colaboração 
 
 ## <a name="group-based-licensing"></a>Licenciamento com base em grupo
 
-Você pode usar o licenciamento com base em grupo para atribuir uma ou mais licenças de produto a um grupo do Azure AD. O Azure AD garante que as licenças sejam atribuídas a todos os membros do grupo. Todos os novos membros que ingressarem no grupo receberão as licenças apropriadas. Quando eles deixarem o grupo, essas licenças serão removidas. O recurso só pode ser usado com os grupos de segurança e grupos do Microsoft 365 que possuam `securityEnabled=TRUE`. Para saber mais sobre o licenciamento com base em grupo, confira [O que é licenciamento com base em grupo no Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+Você pode usar o licenciamento com base em grupo para atribuir uma ou mais licenças de produto a um grupo do Azure AD. O Azure AD garante que as licenças sejam atribuídas a todos os membros do grupo. Todos os novos membros que ingressarem no grupo receberão as licenças apropriadas. Quando eles deixarem o grupo, essas licenças serão removidas. O recurso só pode ser usado com os grupos de segurança e grupos do Microsoft 365 que possuam `securityEnabled=TRUE`. Para saber mais sobre o licenciamento com base em grupo, confira [O que é licenciamento com base em grupo no Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
 
 ## <a name="common-use-cases"></a>Casos de usos comuns
 
@@ -144,4 +144,3 @@ Ao usar o Microsoft Graph, você pode executar as seguintes operações comuns.
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
-

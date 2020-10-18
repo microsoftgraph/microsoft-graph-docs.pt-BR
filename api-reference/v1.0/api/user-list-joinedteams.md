@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 68853f0b9d3c639ee1a30791f805705c419ad607
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 797e940f6755bca955d551ce509124c49a375400
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992155"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582272"
 ---
 # <a name="list-joinedteams"></a>Listar joinedTeams
 
@@ -41,7 +41,7 @@ GET /users/{id}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Atualmente, os [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) não têm suporte.
+Atualmente, os [Parâmetros de consulta OData](/graph/query-parameters) não têm suporte.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -121,4 +121,3 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
-
