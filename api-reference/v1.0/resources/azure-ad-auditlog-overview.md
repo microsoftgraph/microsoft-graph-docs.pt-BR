@@ -5,67 +5,67 @@ localization_priority: Priority
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: cfb622200b5437390c6617c8bd599409fa90925f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ada166c457a5c6eb29aa7ff5dffe45491816c553
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091870"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581922"
 ---
-# <a name="activity-reports-api-overview"></a><span data-ttu-id="46727-103">Visão geral da API de relatórios de atividades</span><span class="sxs-lookup"><span data-stu-id="46727-103">Activity reports API overview</span></span>
+# <a name="activity-reports-api-overview"></a><span data-ttu-id="2bdcf-103">Visão geral da API de relatórios de atividades</span><span class="sxs-lookup"><span data-stu-id="2bdcf-103">Activity reports API overview</span></span>
 
-<span data-ttu-id="46727-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="46727-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2bdcf-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2bdcf-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="46727-105">O Azure Active Directory (Azure AD) rastreia a atividade do usuário e cria relatórios que ajudam a entender como seus usuários acessam e usam os serviços do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="46727-105">Azure Active Directory (Azure AD) tracks user activity and creates reports that help you understand how your users access and use Azure AD services.</span></span> <span data-ttu-id="46727-106">Use a API do Microsoft Graph para Azure AD para analisar os dados nesses relatórios e criar soluções personalizadas adaptadas às necessidades específicas da sua organização.</span><span class="sxs-lookup"><span data-stu-id="46727-106">Use the Microsoft Graph API for Azure AD to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.</span></span>
+<span data-ttu-id="2bdcf-105">O Azure Active Directory (Azure AD) rastreia a atividade do usuário e cria relatórios que ajudam a entender como seus usuários acessam e usam os serviços do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-105">Azure Active Directory (Azure AD) tracks user activity and creates reports that help you understand how your users access and use Azure AD services.</span></span> <span data-ttu-id="2bdcf-106">Use a API do Microsoft Graph para Azure AD para analisar os dados nesses relatórios e criar soluções personalizadas adaptadas às necessidades específicas da sua organização.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-106">Use the Microsoft Graph API for Azure AD to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.</span></span>
 
-## <a name="what-are-azure-ad-activity-logs"></a><span data-ttu-id="46727-107">O que são os logs de atividades do Azure AD?</span><span class="sxs-lookup"><span data-stu-id="46727-107">What are Azure AD activity logs?</span></span>
+## <a name="what-are-azure-ad-activity-logs"></a><span data-ttu-id="2bdcf-107">O que são os logs de atividades do Azure AD?</span><span class="sxs-lookup"><span data-stu-id="2bdcf-107">What are Azure AD activity logs?</span></span>
 
-<span data-ttu-id="46727-108">O Azure AD fornece três tipos de relatórios de atividades:</span><span class="sxs-lookup"><span data-stu-id="46727-108">Azure AD provides three types of activity reports:</span></span>
+<span data-ttu-id="2bdcf-108">O Azure AD fornece três tipos de relatórios de atividades:</span><span class="sxs-lookup"><span data-stu-id="2bdcf-108">Azure AD provides three types of activity reports:</span></span>
 
-- <span data-ttu-id="46727-109">Logs de auditoria</span><span class="sxs-lookup"><span data-stu-id="46727-109">audit logs</span></span>
-- <span data-ttu-id="46727-110">Logs de entrada</span><span class="sxs-lookup"><span data-stu-id="46727-110">sign-in logs</span></span>
+- <span data-ttu-id="2bdcf-109">Logs de auditoria</span><span class="sxs-lookup"><span data-stu-id="2bdcf-109">audit logs</span></span>
+- <span data-ttu-id="2bdcf-110">Logs de entrada</span><span class="sxs-lookup"><span data-stu-id="2bdcf-110">sign-in logs</span></span>
 
-### <a name="directory-audits"></a><span data-ttu-id="46727-111">Auditorias de diretório</span><span class="sxs-lookup"><span data-stu-id="46727-111">Directory audits</span></span>
+### <a name="directory-audits"></a><span data-ttu-id="2bdcf-111">Auditorias de diretório</span><span class="sxs-lookup"><span data-stu-id="2bdcf-111">Directory audits</span></span>
 
-<span data-ttu-id="46727-112">O relatório de auditoria de diretório fornece acesso ao histórico de todas as tarefas executadas em seu locatário.</span><span class="sxs-lookup"><span data-stu-id="46727-112">The directory audit report provides you with access to the history of every task performed in your tenant.</span></span> <span data-ttu-id="46727-113">O relatório de auditoria de diretório fornece registros de atividades do sistema para conformidade.</span><span class="sxs-lookup"><span data-stu-id="46727-113">The directory audit report provides you with records of system activities for compliance.</span></span> <span data-ttu-id="46727-114">Entre outros benefícios, os dados fornecidos permitem que você aborde cenários comuns, como:</span><span class="sxs-lookup"><span data-stu-id="46727-114">Amongst others, the provided data enables you to address common scenarios such as:</span></span>
+<span data-ttu-id="2bdcf-112">O relatório de auditoria de diretório fornece acesso ao histórico de todas as tarefas executadas em seu locatário.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-112">The directory audit report provides you with access to the history of every task performed in your tenant.</span></span> <span data-ttu-id="2bdcf-113">O relatório de auditoria de diretório fornece registros de atividades do sistema para conformidade.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-113">The directory audit report provides you with records of system activities for compliance.</span></span> <span data-ttu-id="2bdcf-114">Entre outros benefícios, os dados fornecidos permitem que você aborde cenários comuns, como:</span><span class="sxs-lookup"><span data-stu-id="2bdcf-114">Amongst others, the provided data enables you to address common scenarios such as:</span></span>
 
-- <span data-ttu-id="46727-115">Quem concedeu acesso ao grupo de administradores a um usuário de diretório?</span><span class="sxs-lookup"><span data-stu-id="46727-115">Who granted admin group access to a directory user?</span></span>
-- <span data-ttu-id="46727-116">Quais usuários estão se conectando a um aplicativo adquirido recentemente?</span><span class="sxs-lookup"><span data-stu-id="46727-116">Which users are signing in to a recently acquired app?</span></span>
-- <span data-ttu-id="46727-117">Quantas redefinições de senhas foram feitas no diretório?</span><span class="sxs-lookup"><span data-stu-id="46727-117">How many passwords resets were made within the directory?</span></span>
+- <span data-ttu-id="2bdcf-115">Quem concedeu acesso ao grupo de administradores a um usuário de diretório?</span><span class="sxs-lookup"><span data-stu-id="2bdcf-115">Who granted admin group access to a directory user?</span></span>
+- <span data-ttu-id="2bdcf-116">Quais usuários estão se conectando a um aplicativo adquirido recentemente?</span><span class="sxs-lookup"><span data-stu-id="2bdcf-116">Which users are signing in to a recently acquired app?</span></span>
+- <span data-ttu-id="2bdcf-117">Quantas redefinições de senhas foram feitas no diretório?</span><span class="sxs-lookup"><span data-stu-id="2bdcf-117">How many passwords resets were made within the directory?</span></span>
 
-### <a name="sign-ins"></a><span data-ttu-id="46727-118">Entradas</span><span class="sxs-lookup"><span data-stu-id="46727-118">Sign-ins</span></span>
+### <a name="sign-ins"></a><span data-ttu-id="2bdcf-118">Entradas</span><span class="sxs-lookup"><span data-stu-id="2bdcf-118">Sign-ins</span></span>
 
-<span data-ttu-id="46727-119">O relatório de entradas ajuda a determinar quem executou as tarefas relatadas pelas auditorias de diretório.</span><span class="sxs-lookup"><span data-stu-id="46727-119">The sign-ins report helps you determine who performed the tasks reported by directory audits.</span></span> <span data-ttu-id="46727-120">O relatório de entrada ajuda você a responder a perguntas como:</span><span class="sxs-lookup"><span data-stu-id="46727-120">The sign-ins report helps you answer questions like:</span></span>
+<span data-ttu-id="2bdcf-119">O relatório de entradas ajuda a determinar quem executou as tarefas relatadas pelas auditorias de diretório.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-119">The sign-ins report helps you determine who performed the tasks reported by directory audits.</span></span> <span data-ttu-id="2bdcf-120">O relatório de entrada ajuda você a responder a perguntas como:</span><span class="sxs-lookup"><span data-stu-id="2bdcf-120">The sign-ins report helps you answer questions like:</span></span>
 
-- <span data-ttu-id="46727-121">O que é o padrão de entrada de um usuário?</span><span class="sxs-lookup"><span data-stu-id="46727-121">What is the sign in pattern of a user?</span></span>
-- <span data-ttu-id="46727-122">Quantos usuários entraram durante a semana passada?</span><span class="sxs-lookup"><span data-stu-id="46727-122">How many users have signed in during the last week?</span></span>
-- <span data-ttu-id="46727-123">Qual é o status dessas entradas?</span><span class="sxs-lookup"><span data-stu-id="46727-123">What's the status of these sign-ins?</span></span>
+- <span data-ttu-id="2bdcf-121">O que é o padrão de entrada de um usuário?</span><span class="sxs-lookup"><span data-stu-id="2bdcf-121">What is the sign in pattern of a user?</span></span>
+- <span data-ttu-id="2bdcf-122">Quantos usuários entraram durante a semana passada?</span><span class="sxs-lookup"><span data-stu-id="2bdcf-122">How many users have signed in during the last week?</span></span>
+- <span data-ttu-id="2bdcf-123">Qual é o status dessas entradas?</span><span class="sxs-lookup"><span data-stu-id="2bdcf-123">What's the status of these sign-ins?</span></span>
 
-## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a><span data-ttu-id="46727-124">O que posso fazer com as APIs de log de auditoria no Microsoft Graph?</span><span class="sxs-lookup"><span data-stu-id="46727-124">What can I do with audit log APIs in Microsoft Graph?</span></span>
+## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a><span data-ttu-id="2bdcf-124">O que posso fazer com as APIs de log de auditoria no Microsoft Graph?</span><span class="sxs-lookup"><span data-stu-id="2bdcf-124">What can I do with audit log APIs in Microsoft Graph?</span></span>
 
-<span data-ttu-id="46727-125">As seguintes solicitações são populares para trabalhar com dados de log de auditoria:</span><span class="sxs-lookup"><span data-stu-id="46727-125">The following are popular requests for working with audit log data:</span></span>
+<span data-ttu-id="2bdcf-125">As seguintes solicitações são populares para trabalhar com dados de log de auditoria:</span><span class="sxs-lookup"><span data-stu-id="2bdcf-125">The following are popular requests for working with audit log data:</span></span>
 
-<span data-ttu-id="46727-126">Operation</span><span class="sxs-lookup"><span data-stu-id="46727-126">Operation</span></span> | <span data-ttu-id="46727-127">URL</span><span class="sxs-lookup"><span data-stu-id="46727-127">URL</span></span>
+<span data-ttu-id="2bdcf-126">Operation</span><span class="sxs-lookup"><span data-stu-id="2bdcf-126">Operation</span></span> | <span data-ttu-id="2bdcf-127">URL</span><span class="sxs-lookup"><span data-stu-id="2bdcf-127">URL</span></span>
 :----------|:----
-<span data-ttu-id="46727-128">OBTER atividades de usuário do locatário</span><span class="sxs-lookup"><span data-stu-id="46727-128">GET tenant user activities</span></span> | [<span data-ttu-id="46727-129">OBTER https://graph.microsoft.com/v1.0/auditLogs/directoryAudits</span><span class="sxs-lookup"><span data-stu-id="46727-129">GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits</span></span>](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=v1.0)
-<span data-ttu-id="46727-130">OBTER entradas de usuário do locatário</span><span class="sxs-lookup"><span data-stu-id="46727-130">GET tenant user sign-ins</span></span> | [<span data-ttu-id="46727-131">OBTER https://graph.microsoft.com/v1.0/auditLogs/signIns</span><span class="sxs-lookup"><span data-stu-id="46727-131">GET https://graph.microsoft.com/v1.0/auditLogs/signIns</span></span>](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=v1.0)
+<span data-ttu-id="2bdcf-128">OBTER atividades de usuário do locatário</span><span class="sxs-lookup"><span data-stu-id="2bdcf-128">GET tenant user activities</span></span> | [<span data-ttu-id="2bdcf-129">OBTER https://graph.microsoft.com/v1.0/auditLogs/directoryAudits</span><span class="sxs-lookup"><span data-stu-id="2bdcf-129">GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits</span></span>](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=v1.0)
+<span data-ttu-id="2bdcf-130">OBTER entradas de usuário do locatário</span><span class="sxs-lookup"><span data-stu-id="2bdcf-130">GET tenant user sign-ins</span></span> | [<span data-ttu-id="2bdcf-131">OBTER https://graph.microsoft.com/v1.0/auditLogs/signIns</span><span class="sxs-lookup"><span data-stu-id="2bdcf-131">GET https://graph.microsoft.com/v1.0/auditLogs/signIns</span></span>](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=v1.0)
 
-## <a name="what-licenses-do-i-need"></a><span data-ttu-id="46727-132">De quais licenças eu preciso?</span><span class="sxs-lookup"><span data-stu-id="46727-132">What licenses do I need?</span></span>
+## <a name="what-licenses-do-i-need"></a><span data-ttu-id="2bdcf-132">De quais licenças eu preciso?</span><span class="sxs-lookup"><span data-stu-id="2bdcf-132">What licenses do I need?</span></span>
 
-<span data-ttu-id="46727-133">Os relatórios de atividades estão disponíveis para os recursos que você licenciou.</span><span class="sxs-lookup"><span data-stu-id="46727-133">Activity reports are available for features that you've licensed.</span></span> <span data-ttu-id="46727-134">Se você possui uma licença para um recurso específico, também tem acesso aos relatórios.</span><span class="sxs-lookup"><span data-stu-id="46727-134">If you have a license for a specific feature, you also have access to the reports.</span></span>
+<span data-ttu-id="2bdcf-133">Os relatórios de atividades estão disponíveis para os recursos que você licenciou.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-133">Activity reports are available for features that you've licensed.</span></span> <span data-ttu-id="2bdcf-134">Se você possui uma licença para um recurso específico, também tem acesso aos relatórios.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-134">If you have a license for a specific feature, you also have access to the reports.</span></span>
 
-<span data-ttu-id="46727-135">Por exemplo, você precisa de uma licença P1 do Azure AD Premium para acessar os relatórios de auditoria de senha de autoatendimento.</span><span class="sxs-lookup"><span data-stu-id="46727-135">For example, you need an Azure AD Premium P1 license to access self-service password audit reports.</span></span>  <span data-ttu-id="46727-136">Para saber mais, confira [Licenciamento do Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).</span><span class="sxs-lookup"><span data-stu-id="46727-136">To learn more, see [Azure AD licensing](https://azure.microsoft.com/pricing/details/active-directory/).</span></span>
+<span data-ttu-id="2bdcf-135">Por exemplo, você precisa de uma licença P1 do Azure AD Premium para acessar os relatórios de auditoria de senha de autoatendimento.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-135">For example, you need an Azure AD Premium P1 license to access self-service password audit reports.</span></span>  <span data-ttu-id="2bdcf-136">Para saber mais, confira [Licenciamento do Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).</span><span class="sxs-lookup"><span data-stu-id="2bdcf-136">To learn more, see [Azure AD licensing](https://azure.microsoft.com/pricing/details/active-directory/).</span></span>
 
-<span data-ttu-id="46727-137">Relatórios de entrada requerem uma licença do Azure AD Premium.</span><span class="sxs-lookup"><span data-stu-id="46727-137">Sign-in reports require an Azure AD Premium license.</span></span>
+<span data-ttu-id="2bdcf-137">Relatórios de entrada requerem uma licença do Azure AD Premium.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-137">Sign-in reports require an Azure AD Premium license.</span></span>
 
-<span data-ttu-id="46727-138">Para saber mais, consulte [Preços do Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).</span><span class="sxs-lookup"><span data-stu-id="46727-138">To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).</span></span>
+<span data-ttu-id="2bdcf-138">Para saber mais, consulte [Preços do Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).</span><span class="sxs-lookup"><span data-stu-id="2bdcf-138">To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="46727-139">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="46727-139">Next Steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="2bdcf-139">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="2bdcf-139">Next Steps</span></span>
 
-- <span data-ttu-id="46727-140">[Registre seu aplicativo](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para atender aos pré-requisitos do relatório.</span><span class="sxs-lookup"><span data-stu-id="46727-140">[Register your app](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites.</span></span> 
-- <span data-ttu-id="46727-141">Aprenda com [amostras do log de auditoria](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) e de [entrada](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).</span><span class="sxs-lookup"><span data-stu-id="46727-141">Learn from [audit log](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).</span></span>  
-- <span data-ttu-id="46727-142">Analisar recurso e ações do [directoryAudit](directoryaudit.md).</span><span class="sxs-lookup"><span data-stu-id="46727-142">Review [directoryAudit](directoryaudit.md) resource and actions.</span></span>
-- <span data-ttu-id="46727-143">Analisar recurso e ações do [signIn](signin.md).</span><span class="sxs-lookup"><span data-stu-id="46727-143">Review [signIn](signin.md) resource and actions.</span></span> 
+- <span data-ttu-id="2bdcf-140">[Registre seu aplicativo](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para atender aos pré-requisitos do relatório.</span><span class="sxs-lookup"><span data-stu-id="2bdcf-140">[Register your app](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites.</span></span> 
+- <span data-ttu-id="2bdcf-141">Aprenda com [amostras do log de auditoria](/azure/active-directory/active-directory-reporting-api-audit-samples) e de [entrada](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).</span><span class="sxs-lookup"><span data-stu-id="2bdcf-141">Learn from [audit log](/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).</span></span>  
+- <span data-ttu-id="2bdcf-142">Analisar recurso e ações do [directoryAudit](directoryaudit.md).</span><span class="sxs-lookup"><span data-stu-id="2bdcf-142">Review [directoryAudit](directoryaudit.md) resource and actions.</span></span>
+- <span data-ttu-id="2bdcf-143">Analisar recurso e ações do [signIn](signin.md).</span><span class="sxs-lookup"><span data-stu-id="2bdcf-143">Review [signIn](signin.md) resource and actions.</span></span> 
 <!--
 {
   "type": "#page.annotation",
@@ -74,4 +74,3 @@ ms.locfileid: "48091870"
   ]
 }
 -->
-
