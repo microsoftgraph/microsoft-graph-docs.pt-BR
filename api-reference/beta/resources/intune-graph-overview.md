@@ -1,19 +1,19 @@
 ---
 title: Uso da API do Graph para Intune - API do Microsoft Graph
-description: Lista a API do Microsoft Graph para pontos de extremidade do Intune (REST), você pode usar para gerenciar a organização do locatário, seus dispositivos, aplicativos, acesso e recursos.
+description: Lista a API do Microsoft Graph para Terminais do Intune (REST) que você pode usar para gerenciar sua organização de locatários e seus dispositivos, aplicativos, acesso e recursos.
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: b88dc6191f3082df800b3f93e2c4fd22531258e2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d18e86708e43c4945037ad8494eb613c0695c21a
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404694"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601689"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -21,9 +21,11 @@ A API do Microsoft Graph para Intune permite o acesso programático a informaç�
 
 Em cenários de gerenciamento de dispositivo móvel (MDM), a API do Microsoft Graph para Intune oferece suporte a implantações autônomas; não há suporte para[implantações híbridas](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) do Intune. 
 
-## <a name="using-the-microsoft-graph-api-for-intune"></a>Uso da API do Microsoft Graph para Intune
+Todas as APIs do Microsoft Graph beta para o Intune são testadas e validadas pela equipe do Intune antes de serem implantadas. Para as últimas mudanças nas APIs, consulte o [changelog](/graph/changelog). 
 
-O Intune fornece dados para o Microsoft Graph da mesma forma que outros serviços de nuvem fazem, com informações valiosas sobre entidades e navegação de relacionamentos.Use o Microsoft Graph para combinar informações de outros serviços e do Intune e criar aplicativos avançados com serviços variados para profissionais de TI ou usuários finais.     
+## <a name="using-the-microsoft-graph-api-for-intune"></a>Uso da API do Microsoft Graph no Intune
+
+O Intune fornece dados para o Microsoft Graph da mesma forma que outros serviços em nuvem, com rica informação de entidade e navegação de relacionamento.Use o Microsoft Graph para combinar informações de outros serviços e do Intune e criar aplicativos avançados com serviços variados para profissionais de TI ou usuários finais.     
 
 O exemplo a seguir mostra como determinar se um aplicativo está instalado no dispositivo de um usuário: 
 
@@ -42,7 +44,7 @@ O exemplo a seguir mostra como determinar se um aplicativo está instalado no di
 
 ## <a name="using-microsoft-graph-permissions"></a>Uso das permissões do Microsoft Graph
 
-O Microsoft Graph controla o acesso a recursos por meio de permissões. Como desenvolvedor, você deve especificar as permissões necessárias para acessar os recursos do Intune. Normalmente, você deve especificar as permissões no portal do Azure Active Directory. Para saber mais, confira [Referência de permissões do Microsoft Graph](/graph/permissions-reference).
+O Microsoft Graph controla o acesso aos recursos por meio de permissões. Como desenvolvedor, você deve especificar as permissões necessárias para acessar os recursos do Intune. Normalmente, você deve especificar as permissões no portal do Azure Active Directory. Para saber mais, confira [Referência de permissões do Microsoft Graph](/graph/permissions-reference).
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
