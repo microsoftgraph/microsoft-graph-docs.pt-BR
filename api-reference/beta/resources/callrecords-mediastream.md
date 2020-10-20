@@ -2,15 +2,15 @@
 title: tipo de recurso mediaStream
 description: O tipo mediaStream
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0f0181a94743cadf770355d6be349e0d482a387f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 748ed1f58571ac80f29c592ccd34612cf5e6617f
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071413"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601150"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso mediaStream
 
@@ -47,8 +47,8 @@ Representa informações sobre um fluxo de mídia entre dois pontos de extremida
 |postForwardErrorCorrectionPacketLossRate|Duplo|Taxa de perda de pacotes após o FEC ter sido aplicado em todos os fluxos de vídeo e codecs.|
 |startDateTime|DateTimeOffset|Hora UTC quando o fluxo é iniciado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |streamDirection|Microsoft. Graph. callRecords. mediaStreamDirection|Indica a direção do fluxo de mídia. Os valores possíveis são: `callerToCallee` e `calleeToCaller`.|
-|streamid|Cadeia de caracteres|Identificador exclusivo do Stream.|
-|wasMediaBypassed|Booliano|True se o fluxo de mídia ignorar o servidor de mediação e passou diretamente entre o cliente e gateway PSTN/PBX; caso contrário, false.|
+|streamid|String|Identificador exclusivo do Stream.|
+|wasMediaBypassed|Boolean|True se o fluxo de mídia ignorar o servidor de mediação e passou diretamente entre o cliente e gateway PSTN/PBX; caso contrário, false.|
 
 
 ## <a name="json-representation"></a>Representação JSON

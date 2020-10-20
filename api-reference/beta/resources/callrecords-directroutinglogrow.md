@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso directRoutingLogRow
 description: Representa uma linha de dados no log de chamadas de roteamento direto.
-author: stephenjust
+author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2b3636882236d24e3da1435e89904de1f2845756
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c5baf5768c7cee9e0525373bb4f7139f6a145acb
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966762"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601192"
 ---
 # <a name="directroutinglogrow-resource-type"></a>tipo de recurso directRoutingLogRow
 
@@ -33,7 +33,7 @@ Representa uma linha de dados no log de chamadas de roteamento direto. Cada linh
 |inviteDateTime|DateTimeOffset| Quando o convite inicial foi enviado.|
 |failureDateTime|DateTimeOffset| Existe somente para chamadas com falha (não totalmente estabelecidas).|
 |endDateTime|DateTimeOffset| Existe somente para chamadas bem-sucedidas (totalmente estabelecidas). Hora em que a chamada terminou.|
-|duration|Int32| Duração da chamada em segundos.|
+|duração|Int32| Duração da chamada em segundos.|
 |callType|String| Tipo de chamada e direção.|
 |successfulCall|Boolean| Êxito ou tentativa.|
 |callerNumber|String| Número do usuário ou do bot que fez a chamada. Formato [e. 164](https://en.wikipedia.org/wiki/E.164) , mas pode incluir dados adicionais.|

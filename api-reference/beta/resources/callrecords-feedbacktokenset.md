@@ -2,15 +2,15 @@
 title: tipo de recurso feedbackTokenSet
 description: O tipo feedbackTokenSet
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cbf09c70e1df854f1ccba8cb4f8a5fa61c0c24aa
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 71a6d575cf09eda13c5f187b47516b4cbc2b185f
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405601"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601154"
 ---
 # <a name="feedbacktokenset-resource-type"></a>tipo de recurso feedbackTokenSet
 

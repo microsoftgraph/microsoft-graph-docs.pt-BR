@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5659feb6b08a90b7bac44ae2677925ec733c2328
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a06d02929ca194d29820cedbe4b40aea5590035
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971332"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601593"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -42,7 +42,7 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 
 | Parâmetro                                                       | Descrição                                                                   | Exemplo                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [\$Filtre](/graph/query_parameters#filter-parameter)       | Filtra os resultados (linhas).                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
+| [\$Filtre](/graph/query_parameters#filter-parameter)       | Filtra os resultados (linhas).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
 | [\$Início](/graph/query_parameters#top-parameter)             | Define o tamanho de página de resultados.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
 | [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 

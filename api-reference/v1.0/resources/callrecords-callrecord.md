@@ -2,15 +2,15 @@
 title: tipo de recurso callRecord
 description: O tipo callRecord
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dbc0884ad03be4186d5a08c59e4494413b0b1a29
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf438689ec873ba915c735fee7ebc2162757f8ff
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988461"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601367"
 ---
 # <a name="callrecord-resource-type"></a>tipo de recurso callRecord
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vários participantes, às vezes chamada de reunião online.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -36,7 +36,7 @@ Representa uma única chamada ponto a ponto ou uma chamada de grupo entre vário
 |organizer|[identitySet](identityset.md)|A identidade da parte de organização.|
 |participantes|Coleção [identitySet](identityset.md)|Lista de identidades distintas envolvidas na chamada.|
 |startDateTime|DateTimeOffset|Hora UTC quando o primeiro usuário ingressou na chamada. O tipo DatetimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|tipo|Microsoft. Graph. callRecords. CallType|Indica o tipo da chamada. Os valores possíveis são: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
+|type|Microsoft. Graph. callRecords. CallType|Indica o tipo da chamada. Os valores possíveis são: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |versão|Int64|Versão de aumento monotônico do registro de chamada. Registros de chamada de versão superior com a mesma ID incluem dados adicionais comparados à versão inferior.|
 
 ## <a name="relationships"></a>Relações

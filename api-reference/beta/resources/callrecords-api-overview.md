@@ -1,16 +1,16 @@
 ---
 title: Trabalhar com a API de registros de chamadas no Microsoft Graph
 description: A API de registros de chamadas do Microsoft Graph permite recuperar dados de uso e de diagnóstico das chamadas e reuniões on-line dentro da organização.
-author: stephenjust
+author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: c6c80200c2d4f7f4cdd51e99c04066025364751a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b30440157d325452131cb62ffd0c88a933b4bb78
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071531"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601521"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Trabalhar com a API de registros de chamadas no Microsoft Graph
 

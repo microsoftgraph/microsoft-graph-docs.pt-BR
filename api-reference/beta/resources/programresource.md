@@ -6,11 +6,11 @@ author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
 ms.openlocfilehash: 5ad3720587523e6937b4c3713a1c5a8c06d1e6e5
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330414"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601493"
 ---
 # <a name="programresource-resource-type"></a>tipo de recurso programResource
 
@@ -26,7 +26,7 @@ Este tipo herda de [Identity](identity.md).
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| tipo | Cadeia de caracteres | Tipo do recurso, indicando se é um grupo ou um aplicativo. |
+| type | String | Tipo do recurso, indicando se é um grupo ou um aplicativo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

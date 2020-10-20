@@ -2,21 +2,21 @@
 title: tipo de recurso Segment
 description: O tipo de segmento
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9b722b6e306c4eb52de19827580b1b0d2807d0e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aee791b475a3d49b925419954b6367cd66a18bea
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069334"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601465"
 ---
 # <a name="segment-resource-type"></a>tipo de recurso Segment
 
 Namespace: microsoft.graph.callRecords
 
-Representa uma parte de uma comunicação do usuário ou uma comunicação de reunião do usuário no caso de uma chamada em conferência. Uma chamada VOIP típica terá um segmento por sessão. Em determinados cenários, como chamadas PSTN, haverá vários segmentos por sessão, devido à comunicação adicional de servidor para servidor necessária para conectar a chamada.
+Representa uma parte de uma comunicação de User-User ou uma comunicação de User-Meeting no caso de uma chamada em conferência. Uma chamada VOIP típica terá um segmento por sessão. Em determinados cenários, como chamadas PSTN, haverá vários segmentos por sessão, devido à comunicação adicional de servidor para servidor necessária para conectar a chamada.
 
 ## <a name="methods"></a>Métodos
 
@@ -26,7 +26,7 @@ Não existem métodos para acessar diretamente os segmentos. Use a API [Get call
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|Identificador exclusivo do segmento. Somente leitura.|
+|id|String|Identificador exclusivo do segmento. Somente leitura.|
 |pelas|[Microsoft. Graph. callRecords. EndPoint](callrecords-endpoint.md)|Ponto de extremidade que iniciou este segmento.|
 |receptor|[Microsoft. Graph. callRecords. EndPoint](callrecords-endpoint.md)|Ponto de extremidade que respondeu a este segmento.|
 |failureInfo|[Microsoft. Graph. callRecords. failureInfo](callrecords-failureinfo.md)|Informações de falha associadas ao segmento se ele falhar.|

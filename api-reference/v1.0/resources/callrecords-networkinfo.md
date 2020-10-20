@@ -2,15 +2,15 @@
 title: tipo de recurso networkInfo
 description: O tipo networkInfo
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: fcf683d99d660d6ea69ee944542e6701d2201a9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3f2d7cb9c3792ea74691367cf2fa7299c0c8c79
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069362"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601479"
 ---
 # <a name="networkinfo-resource-type"></a>tipo de recurso networkInfo
 
@@ -23,29 +23,29 @@ Representa informações sobre a rede usada em uma chamada.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |bandwidthLowEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que a política de largura de banda ou largura de banda disponível era baixa o suficiente para causar baixa qualidade do áudio enviado.|
-|basicServiceSetIdentifier|Cadeia de caracteres|O identificador do conjunto de serviços básicos de LAN sem fio do ponto de extremidade de mídia usado para se conectar à rede.|
+|basicServiceSetIdentifier|String|O identificador do conjunto de serviços básicos de LAN sem fio do ponto de extremidade de mídia usado para se conectar à rede.|
 |Connection|Microsoft. Graph. callRecords. networkConnectionType|Tipo de rede usado pelo ponto de extremidade de mídia. Os possíveis valores são: `unknown`, `wired`, `wifi`, `mobile`, `tunnel`, `unknownFutureValue`.|
 |delayEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que o atraso de rede era suficientemente significativo para afetar a capacidade de comunicação bidirecional em tempo real.|
-|dnsSuffix|Cadeia de caracteres|Sufixo DNS associado ao adaptador de rede do ponto de extremidade de mídia.|
+|dnsSuffix|String|Sufixo DNS associado ao adaptador de rede do ponto de extremidade de mídia.|
 |ipAddress|Cadeia de caracteres|Endereço IP do ponto de extremidade de mídia.|
 |linkSpeed|Int64|Velocidade do link em bits por segundo relatado pelo adaptador de rede usado pelo ponto de extremidade de mídia.|
-|macAddress|Cadeia de caracteres|O endereço MAC (controle de acesso de mídia) do dispositivo de rede do ponto de extremidade de mídia.|
+|macAddress|String|O endereço MAC (controle de acesso de mídia) do dispositivo de rede do ponto de extremidade de mídia.|
 |propor|Int32|Número da porta de rede usado pelo ponto de extremidade de mídia.|
 |receivedQualityEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que a rede estava causando baixa qualidade do áudio recebido.|
-|reflexiveIPAddress|Cadeia de caracteres|Endereço IP do ponto de extremidade de mídia conforme visto pelo servidor de Media Relay. Em geral, esse é o endereço IP público da Internet associado ao ponto de extremidade.|
-|relayIPAddress|Cadeia de caracteres|Endereço IP do servidor de Media Relay alocado pelo ponto de extremidade de mídia.|
+|reflexiveIPAddress|String|Endereço IP do ponto de extremidade de mídia conforme visto pelo servidor de Media Relay. Em geral, esse é o endereço IP público da Internet associado ao ponto de extremidade.|
+|relayIPAddress|String|Endereço IP do servidor de Media Relay alocado pelo ponto de extremidade de mídia.|
 |relayPort|Int32|Número de porta de rede alocado no servidor de Media Relay pelo ponto de extremidade de mídia.|
 |sentQualityEventRatio|Duplo|Fração da chamada em que o ponto de extremidade de mídia detectou que a rede estava causando baixa qualidade do áudio enviado.|
-|-|Cadeia de caracteres|Sub-rede usada para fluxo de mídia pelo ponto de extremidade de mídia.|
+|-|String|Sub-rede usada para fluxo de mídia pelo ponto de extremidade de mídia.|
 |wifiBand|Microsoft. Graph. callRecords. wifiBand|Banda WiFi usada pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `frequency24GHz`, `frequency50GHz`, `frequency60GHz`, `unknownFutureValue`.|
 |wifiBatteryCharge|Int32|Carga da bateria restante estimada em porcentagem relatada pelo ponto de extremidade de mídia.|
 |wifiChannel|Int32|O canal WiFi usado pelo ponto de extremidade de mídia.|
-|wifiMicrosoftDriver|Cadeia de caracteres|Nome do driver do Microsoft WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|
-|wifiMicrosoftDriverVersion|Cadeia de caracteres|Versão do driver do Microsoft WiFi usado pelo ponto de extremidade de mídia.|
+|wifiMicrosoftDriver|String|Nome do driver do Microsoft WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|
+|wifiMicrosoftDriverVersion|String|Versão do driver do Microsoft WiFi usado pelo ponto de extremidade de mídia.|
 |wifiRadioType|Microsoft. Graph. callRecords. wifiRadioType|Tipo de rádio WiFi usado pelo ponto de extremidade de mídia. Os valores possíveis são: `unknown`, `wifi80211a`, `wifi80211b`, `wifi80211g`, `wifi80211n`, `wifi80211ac`, `wifi80211ax`, `unknownFutureValue`.|
 |wifiSignalStrength|Int32|Intensidade do sinal WiFi em porcentagem reportada pelo ponto de extremidade de mídia.|
-|wifiVendorDriver|Cadeia de caracteres|Nome do driver WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|
-|wifiVendorDriverVersion|Cadeia de caracteres|Versão do driver WiFi usado pelo ponto de extremidade de mídia.|
+|wifiVendorDriver|String|Nome do driver WiFi usado pelo ponto de extremidade de mídia. O valor pode ser localizado com base no idioma usado pelo ponto de extremidade.|
+|wifiVendorDriverVersion|String|Versão do driver WiFi usado pelo ponto de extremidade de mídia.|
 
 ## <a name="json-representation"></a>Representação JSON
 

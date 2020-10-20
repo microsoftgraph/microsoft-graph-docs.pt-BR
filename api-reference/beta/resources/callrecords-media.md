@@ -2,15 +2,15 @@
 title: tipo de recurso de mídia
 description: O tipo de mídia
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f550c898eda95026d5058c09d0e03f1064887509
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9245d9c030c15d17b286338aa7887333b26f2678
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071517"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601164"
 ---
 # <a name="media-resource-type"></a>tipo de recurso de mídia
 
@@ -24,7 +24,7 @@ Representa a mídia (áudio, vídeo, compartilhamento de tela baseado em vídeo,
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|rótulo|Cadeia de caracteres|Como a mídia foi identificada durante o estágio de negociação de mídia.|
+|rótulo|String|Como a mídia foi identificada durante o estágio de negociação de mídia.|
 |callerDevice|[Microsoft. Graph. callRecords. deviceInfo](callrecords-deviceinfo.md)|Informações do dispositivo associadas ao ponto de extremidade do chamador desta mídia.|
 |callerNetwork|[Microsoft. Graph. callRecords. networkInfo](callrecords-networkinfo.md)|Informações de rede associadas ao ponto de extremidade do chamador desta mídia.|
 |calleeDevice|[Microsoft. Graph. callRecords. deviceInfo](callrecords-deviceinfo.md)|Informações do dispositivo associadas ao ponto de extremidade do receptor desta mídia.|

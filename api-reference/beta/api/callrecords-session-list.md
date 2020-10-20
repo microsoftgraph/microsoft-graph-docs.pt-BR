@@ -2,15 +2,15 @@
 title: Listar sessões do callRecord
 description: Recupere a lista de objetos de sessão para um callRecord.
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51ef8e1e9cd56d5f969615cb9364ce26f8bd5d8e
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: e3b23a131bf049e10d514a428b473bfc1df8e60a
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48329966"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601094"
 ---
 # <a name="list-callrecord-sessions"></a>Listar sessões do callRecord
 

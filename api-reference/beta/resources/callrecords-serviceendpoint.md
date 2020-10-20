@@ -2,15 +2,15 @@
 title: tipo de recurso serviceEndpoint
 description: O tipo de serviceEndpoint
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 128277347502a476d4c7162861a1e795a98c1c54
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98fd9870206c97008a8d01d1d4ce33ef2545ccbb
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046920"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601080"
 ---
 # <a name="serviceendpoint-resource-type"></a>tipo de recurso serviceEndpoint
 

@@ -2,15 +2,15 @@
 title: tipo de recurso UserAgent
 description: O tipo UserAgent
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 54acb771330bf77e3361450bd032193e0cf65466
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55db3bcfc00c54cb51f552624a9e2c51fcce5a7b
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069306"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601451"
 ---
 # <a name="useragent-resource-type"></a>tipo de recurso UserAgent
 
@@ -24,7 +24,7 @@ Os tipos [clientUserAgent](callrecords-clientuseragent.md) e [serviceUserAgent](
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Identifica a versão do software do aplicativo usado por esse ponto de extremidade.|
-|headerValue|Cadeia de caracteres|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
+|headerValue|String|Valor do cabeçalho do agente de usuário relatado por esse ponto de extremidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

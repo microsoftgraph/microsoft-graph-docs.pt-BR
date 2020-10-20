@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 77b3a483c8993b421348bb052c66d66a1558beb0
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f97da36c0a3a4c1d20e586293ae3ef5efcd0cdc4
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400708"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601073"
 ---
 # <a name="riskyuser-resource-type"></a>tipo de recurso riskyUser
 
@@ -38,15 +38,15 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|`id`|`string`|ID exclusiva do usuário em risco|
-|`isDeleted`|`bool`|Indica se o usuário é excluído. Os valores possíveis são: `true` , `false`|
-|`isProcessing`|`bool`|Indica wehther que o estado arriscado de um usuário está sendo processado pelo backend|
+|`id`|`string`|ID exclusiva do usuário em risco.|
+|`isDeleted`|`bool`|Indica se o usuário é excluído. Os valores possíveis são: `true` e `false`.|
+|`isProcessing`|`bool`|Indica se o estado arriscado de um usuário está sendo processado pelo backend.|
 |`riskLastUpdatedDateTime`|`datetime`|A data e a hora em que o usuário arriscado foi atualizado pela última vez|
 |`riskLevel`|`riskLevel`| Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue.  |
 |`riskState`|`riskState`| Os valores possíveis são None, confirmedSafe, remediated, atRisk, unknownFutureValue.  |
 |`riskDetail`|`riskDetail`| Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
-|`userDisplayName`|`string`|Nome de exibição do usuário arriscado|
-|`userPrincipalName`|`string`|Nome UPN de usuário arriscado|
+|`userDisplayName`|`string`|Nome de exibição do usuário arriscado.|
+|`userPrincipalName`|`string`|Nome UPN de usuário arriscado.|
 
 ## <a name="relationships"></a>Relações
 

@@ -2,15 +2,15 @@
 title: tipo de recurso de sessão
 description: O tipo de sessão
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5c31acb452b8d30763e8ba0500354c9b6d6bbbfc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91683b4bd9568d14a7049a74d997564b570e4f26
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046885"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600968"
 ---
 # <a name="session-resource-type"></a>tipo de recurso de sessão
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma comunicação do usuário ou uma comunicação de reunião do usuário no caso de uma chamada em conferência.
+Representa uma comunicação de User-User ou uma comunicação de User-Meeting no caso de uma chamada em conferência.
 
 ## <a name="methods"></a>Métodos
 
@@ -31,7 +31,7 @@ Representa uma comunicação do usuário ou uma comunicação de reunião do usu
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|cadeia de caracteres|Identificador exclusivo da sessão. Somente leitura.|
+|id|string|Identificador exclusivo da sessão. Somente leitura.|
 |pelas|[Microsoft. Graph. callRecords. EndPoint](callrecords-endpoint.md)|Ponto de extremidade que iniciou a sessão.|
 |receptor|[Microsoft. Graph. callRecords. EndPoint](callrecords-endpoint.md)|Ponto de extremidade que atendeu à sessão.|
 |failureInfo|[Microsoft. Graph. callRecords. failureInfo](callrecords-failureinfo.md)|Informações de falha associadas à sessão se a sessão falhou.|

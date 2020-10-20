@@ -1,16 +1,16 @@
 ---
 title: 'callRecord: getPstnCalls'
 description: Obter log de chamadas PSTN.
-author: stephenjust
+author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 30cf19d780c36decbc837bb6a56e755e1fde9c0c
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 598c3c4fe8abd1b1dcc77cea1d2f513b439771a3
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313265"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601101"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 

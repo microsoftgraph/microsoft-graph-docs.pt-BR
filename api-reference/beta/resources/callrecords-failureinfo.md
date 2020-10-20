@@ -2,15 +2,15 @@
 title: tipo de recurso failureInfo
 description: O tipo failureInfo
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5edd2a501b3e1a5633f0bd01ac36815201eb927d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e67e0df2c3f98ea2c9c1b49d32cb6295559516dd
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064371"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601185"
 ---
 # <a name="failureinfo-resource-type"></a>tipo de recurso failureInfo
 
@@ -31,7 +31,7 @@ Se um ou mais fluxos de mídia tiverem qualquer uma dessas falhas, essa falha se
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|motivo|Cadeia de caracteres|Classificação de por que uma chamada ou parte de uma chamada falhou.|
+|motivo|String|Classificação de por que uma chamada ou parte de uma chamada falhou.|
 |estágio|Microsoft. Graph. callRecords. failureStage|O estágio quando a falha ocorreu. Os valores possíveis são: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Representação JSON
