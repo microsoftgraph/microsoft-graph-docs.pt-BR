@@ -8,12 +8,12 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: e162c52238b81246d40de7b5d0e5ed9f3d67a544
-  ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+  ms.openlocfilehash: 5172928bf143ccce17e46f4ed2e3e2ff0ece5d00
+  ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/04/2020
-  ms.locfileid: "47367282"
+  ms.lasthandoff: 10/21/2020
+  ms.locfileid: "48634666"
 landingContent:
 - title: Criar seu primeiro aplicativo do lado do servidor
   linkLists:
@@ -57,6 +57,8 @@ landingContent:
     links:
     - text: Angular
       url: /graph/tutorials/angular
+    - text: Webassembly de mais um.
+      url: /graph/tutorials/blazor
     - text: JavaScript
       url: /graph/tutorials/javascript
     - text: React
@@ -67,6 +69,8 @@ landingContent:
     links:
     - text: Azure Functions
       url: /graph/tutorials/azure-functions
+    - text: Estrutura de bot
+      url: /graph/tutorials/bot-framework
     - text: Power Automate
       url: /graph/tutorials/power-automate
     - text: Estrutura do SharePoint
