@@ -1,16 +1,16 @@
 ---
 title: 'aplicativo: unsetVerifiedPublisher'
-description: Remover a desdefinição do fornecedor verificado de um aplicativo.
+description: Desmarcar o distribuidor verificado de um aplicativo.
 localization_priority: Normal
 author: jesakowi
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1f904a4b13e162dc503765b03d676319d3d0a510
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: 88bf73cbd90b5bf1eb2c4c8f22d11a232d1cc581
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471543"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634674"
 ---
 # <a name="application-unsetverifiedpublisher"></a>aplicativo: unsetVerifiedPublisher
 
@@ -24,7 +24,7 @@ Desmarque o [verifiedPublisher](../resources/verifiedPublisher.md) definido ante
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo | Sem suporte |
 
@@ -56,6 +56,8 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_unsetverifiedpublisher"
@@ -64,6 +66,16 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-unsetverifiedpublisher-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/application-unsetverifiedpublisher-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

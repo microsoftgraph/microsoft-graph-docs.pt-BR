@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 4da898d8db37c1bb51380609aa90d88a4b8cf5da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7280fd64c5494897a8449e5894e8672af15b66f8
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052660"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635193"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
@@ -34,23 +34,23 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 
 | Propriedade              | Tipo                                          | Descrição                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers     | Cadeia de caracteres                                        | A configuração que especifica o tipo de participantes que será automaticamente permitido na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
+| autoAdmittedUsers     | String                                        | A configuração que especifica o tipo de participantes que será automaticamente permitido na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | As informações de acesso de telefone (discagem) para uma reunião online. Apenas leitura.                                                                                                                                                                                    |
 | chatInfo              | [chatInfo](chatinfo.md)                       | As informações de chat associadas a esta reunião online.                                                                                                                                                                                                   |
 | creationDatetime      | DateTime                                      | O horário de criação da reunião em UTC. Somente leitura.                                                                                                                                                                                                                |
 | startDateTime         | DateTime                                      | A hora de início da reunião em UTC.                                                                                                                                                                                                                              |
 | endDateTime           | DateTime                                      | A hora de término da reunião em UTC.                                                                                                                                                                                                                                |
-| id                    | Cadeia de caracteres                                        | A ID padrão associada à reunião online. Somente leitura.                                                                                                                                                                                               |
-| joinWebUrl            | Cadeia de caracteres                                        | A URL de ingresso da reunião online. Somente leitura.                                                                                                                                                                                                              |
+| id                    | String                                        | A ID padrão associada à reunião online. Somente leitura.                                                                                                                                                                                               |
+| joinWebUrl            | String                                        | A URL de ingresso da reunião online. Somente leitura.                                                                                                                                                                                                              |
 | participants          | [meetingParticipants](meetingparticipants.md) | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes.                                                                                                                                                        |
-| subject               | Cadeia de caracteres                                        | O assunto da reunião online.                                                                                                                                                                                                                          |
-| capabilities          | Coleção de cadeias de caracteres                             | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer` .                                                                                                                                                                                 |
-| videoTeleconferenceId | Cadeia de caracteres                                        | A ID de teleconferência de vídeo. Somente leitura.                                                                                                                                                                                                                   |
+| assunto               | String                                        | O assunto da reunião online.                                                                                                                                                                                                                          |
+| capabilities          | Conjunto de cadeias de caracteres                             | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer` .                                                                                                                                                                                 |
+| videoTeleconferenceId | String                                        | A ID de teleconferência de vídeo. Somente leitura.                                                                                                                                                                                                                   |
 | joinInformation       | [itemBody](itembody.md)                       | As informações de ingresso no idioma e na variante de localidade especificados no cabeçalho HTTP da solicitação ' Accept-Language '. Somente leitura                                                                                                                                       |
 | externalId            | Cadeia de caracteres                                        | A ID externa. Uma ID personalizada. Opcional.                                                                                                                                                                                                                     |
-| isEntryExitAnnounced  | Booliano                                       | Se deve ou não ser anunciada quando os chamadores ingressarem ou saírem.                                                                                                                                                                                                      |
+| isEntryExitAnnounced  | Booleano                                       | Se deve ou não ser anunciada quando os chamadores ingressarem ou saírem.                                                                                                                                                                                                      |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião.                                                                                                                                                                                                  |
-| allowedPresenters     | onlineMeetingPresenters                       | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis estão listados abaixo.                                                                                                                                                                            |
+| allowedPresenters     | onlineMeetingPresenters                       | Especifica quem pode ser um apresentador em uma reunião. Os valores possíveis são:,,, `everyone` `organization` `roleIsPresenter` `organizer` e `unknownFutureValue` .                                                                                                                                                                            |
 
 > [!IMPORTANT]
 > A propriedade **autoAdmittedUsers** é obsoleta. Use **lobbyBypassSettings. Scope** em vez de configurações de opções de reunião.
@@ -60,10 +60,12 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
 | Valor              | Descrição                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | têm           | Todos é um apresentador (esta é a opção padrão).             |
-| organização       | Todos na organização do organizador é um apresentador.          |
+| organization       | Todos na organização do organizador é um apresentador.          |
 | roleIsPresenter    | Somente os participantes cuja função é apresentador são apresentadores. |
 | organizer          | Somente o organizador é um apresentador.                           |
 | unknownFutureValue | Valor de futuro desconhecido.                                          |
+
+**Observação**: se o valor de **allowedPresenters** for definido como `roleIsPresenter` , especifique a função de reunião de cada participante da reunião usando a propriedade **role** no [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -89,7 +91,7 @@ Contém informações sobre uma reunião, incluindo a URL usada para ingressar e
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "everyone | organization | roleIsPresenter | organizer | unknownFutureValue"
+  "allowedPresenters": "String"
 }
 ```
 

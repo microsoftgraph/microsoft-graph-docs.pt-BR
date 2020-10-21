@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 75c6044e6fc76c0ac19e7990240b883f663cba04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95ff7dbf174a5dc6287be0fc7476c21596e651ba
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991044"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634857"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governanceRoleAssignmentRequests
 
@@ -21,15 +21,33 @@ Namespace: microsoft.graph
 Permitir que os administradores atualizem suas decisões ( `AdminApproved` ou `AdminDenied` ) no [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão no status de `PendingAdminDecision` .
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 >**Observação:** Essa API também exige que o solicitante tenha pelo menos uma `Active` atribuição de função de administrador ( `owner` ou `user access administrator` ) no recurso ao qual o [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pertence. 
 
-|Tipo de permissão      | Permissões              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+### <a name="azure-resources"></a>Recursos do Azure
+
+| Tipo de permissão | Permissões |
+|:--------------- |:----------- |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | Sem suporte. |
+
+### <a name="azure-ad"></a>Azure AD
+
+| Tipo de permissão | Permissões |
+|:--------------- |:----------- |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | Sem suporte. |
+
+### <a name="groups"></a>Grupos
+
+|Tipo de permissão | Permissões |
+|:-------------- |:----------- |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

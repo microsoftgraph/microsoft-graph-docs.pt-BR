@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 207a733e72dcf7c05c6cdf81dddb3cecf37e3bdd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df5e9a2d63c6a49a8eb7b8ab9b5ed88b4f50c577
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991170"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635055"
 ---
 # <a name="governanceresource-register"></a>Entidadegovernanceresource: Register
 
@@ -22,13 +22,31 @@ Registre um objeto [entidadegovernanceresource](../resources/governanceresource.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 >**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função ativa no recurso.
 
+### <a name="azure-resources"></a>Recursos do Azure
+
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
-| Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | Sem suporte. |
+
+### <a name="azure-ad"></a>Azure AD
+
+| Tipo de permissão | Permissões |
+|:--------------- |:----------- |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | Sem suporte. |
+
+### <a name="groups"></a>Grupos
+
+|Tipo de permissão | Permissões |
+|:-------------- |:----------- |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 

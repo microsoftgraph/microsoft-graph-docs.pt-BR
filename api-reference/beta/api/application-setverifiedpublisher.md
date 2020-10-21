@@ -1,16 +1,16 @@
 ---
 title: 'aplicativo: setVerifiedPublisher'
-description: Definir o fornecedor verificado de um aplicativo.
+description: Definir o distribuidor verificado de um aplicativo.
 localization_priority: Normal
 author: jesakowi
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1cf02a44cbaff8494765bfa99383c3905f0522fe
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: 3aa6156ca95e1d75376ac24be9883aa0ed3db04e
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471544"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634575"
 ---
 # <a name="application-setverifiedpublisher"></a>aplicativo: setVerifiedPublisher
 
@@ -24,7 +24,7 @@ Definir o [verifiedPublisher](../resources/verifiedPublisher.md) em um [aplicati
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo | Sem suporte |
 
@@ -61,6 +61,8 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_setverifiedpublisher"
@@ -74,6 +76,12 @@ Content-type: application/json
     "verifiedPublisherId": "1234567"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-setverifiedpublisher-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

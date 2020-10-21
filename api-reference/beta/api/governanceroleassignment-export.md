@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: a975205ffdfcca831bfd7e2a17c4ceeb51988fd3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d37ef5fb09e937835dfe496717b58b3934ee606b
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991156"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635051"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Exportar governanceRoleAssignmentRequests
 
@@ -21,13 +21,31 @@ Namespace: microsoft.graph
 Recupere uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) no formato `application/octet-stream` , que pode ser analisado como um arquivo. csv no navegador.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
-|Tipo de permissão      | Permissões              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess. Read. AzureResources |
+### <a name="azure-resources"></a>Recursos do Azure
+
+| Tipo de permissão | Permissões |
+|:--------------- |:----------- |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | PrivilegedAccess. Read. AzureResources |
+
+### <a name="azure-ad"></a>Azure AD
+
+| Tipo de permissão | Permissões |
+|:--------------- |:----------- |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | PrivilegedAccess. Read. AzureAD |
+
+### <a name="groups"></a>Grupos
+
+|Tipo de permissão | Permissões |
+|:-------------- |:----------- |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo | PrivilegedAccess. Read. AzureADGroups |
 
 
 ## <a name="http-request"></a>Solicitação HTTP

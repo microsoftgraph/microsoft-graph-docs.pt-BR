@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3a4c9e350d75783208a14310605540ab110f64f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8e77322dee3f8d94fe8eaee226dce029133a578d
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971661"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635191"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>tipo de recurso meetingParticipantInfo
 
@@ -18,14 +18,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informações sobre um participante de uma reunião.
+Contém informações sobre um participante de uma reunião.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade       | Tipo                          | Descrição                              |
-|:---------------|:------------------------------|:-----------------------------------------|
-| ladrões       | [identitySet](identityset.md) | Informações de identidade do participante. |
-| UPN            | String                        | Nome principal do usuário do participante.  |
+| Propriedade | Tipo                          | Descrição                                                                        |
+| :------- | :---------------------------- | :--------------------------------------------------------------------------------- |
+| ladrões | [identitySet](identityset.md) | Informações de identidade do participante.                                           |
+| UPN      | String                        | Nome principal do usuário do participante.                                            |
+| role     | onlineMeetingRole             | Especifica a função do participante na reunião.  Os valores possíveis são: `attendee`, `presenter` e `unknownFutureValue`.|
+
+### <a name="onlinemeetingrole-values"></a>valores de onlineMeetingRole
+
+| Valor              | Descrição                     |
+| ------------------ | ------------------------------- |
+| attendee           | O participante é um participante. |
+| instrutor          | O participante é um apresentador. |
+| unknownFutureValue | Valor de futuro desconhecido.           |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -41,7 +50,8 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
-  "upn": "String"
+  "upn": "String",
+  "role": "String"
 }
 ```
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5684c98f15ed039fbba36b1df517a6d7d1d5d8c9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c60e47a65c9d5b17433891161fe5c16ca182a5ca
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046444"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634659"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
@@ -35,11 +35,11 @@ Um teamsTab é uma [guia](../resources/teamstab.md) fixa (anexada) a um [canal](
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|  id              |   cadeia de caracteres                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
-|  displayName            |   cadeia de caracteres                  |  Nome da guia.     |
-|  nome            |   string                  |  Preterido Nome da guia.     |
-|  teamsAppId           |   cadeia de caracteres             |  Identificador de definição de aplicativo da guia. Este valor não pode ser alterado após a criação de tabulação.     |
-|  sortOrderIndex  |   cadeia de caracteres                  |  Índice da ordem usada para classificar as guias.     |
+|  id              |   string                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
+|  displayName            |   string                  |  Nome da guia.     |
+|  nome (preterido)      |   string                  |  Nome da guia.     |
+|  teamsAppId (preterido)|   string             |  Identificador de definição de aplicativo da guia. Este valor não pode ser alterado após a criação de tabulação. Como essa propriedade foi preterida, recomendamos expandir **teamsApp** para recuperar o aplicativo vinculado à guia. |
+|  sortOrderIndex  |   string                  |  Índice da ordem usada para classificar as guias.     |
 |  webUrl          |   cadeia de caracteres                  |  URL de link profundo da instância de guia. Somente leitura.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner para configurações personalizadas aplicadas a uma guia. A guia é considerada configurada somente quando essa propriedade é definida.     |
 

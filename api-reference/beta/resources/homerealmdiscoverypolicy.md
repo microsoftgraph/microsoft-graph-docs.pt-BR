@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5e9c5d9933c2b98a1012291f02fa7e248bd403dd
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 694309327fe122a0053039d527321f0f4afb0751
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401432"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635156"
 ---
 # <a name="homerealmdiscoverypolicy-resource-type"></a>tipo de recurso homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma política para controlar o comportamento de autenticação do Azure Active Directory para usuários federados, em particular para as restrições de aceleração automática e autenticação de usuário em domínios federados. Você pode definir homeRealmDiscoveryPolicy para todas as entidades de serviço em sua organização ou para entidades de serviço específicas em sua organização.  Para obter mais detalhes de cenário e política, confira [Configurar o comportamento de entrada do Azure ad para um aplicativo usando uma política de descoberta de realm inicial](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal).
+Representa uma política para controlar o comportamento de autenticação do Azure Active Directory para usuários federados, em particular para as restrições de aceleração automática e autenticação de usuário em domínios federados. Você pode definir homeRealmDiscoveryPolicy para todas as entidades de serviço em sua organização ou para entidades de serviço específicas em sua organização.  Para obter mais detalhes de cenário e política, consulte [Configurar o comportamento de entrada do Azure ad para um aplicativo usando uma política de descoberta de realm inicial](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal) , bem como [entrar no Azure Active Directory usando email como uma ID de logon alternativa](/azure/active-directory/authentication/howto-authentication-use-email-signin).
 
 Herda de [stsPolicy](stsPolicy.md).
 
@@ -40,11 +40,11 @@ Herda de [stsPolicy](stsPolicy.md).
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Identificador exclusivo da política. Somente leitura.|
+|id|String| Identificador exclusivo da política. Somente leitura.|
 |definir|Conjunto de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política. Veja mais detalhes sobre o esquema JSON para esta propriedade. Obrigatório.|
-|description|Cadeia de caracteres| Descrição da política.|
-|displayName|Cadeia de caracteres| Nome para exibição dessa política. Obrigatório.|
-|isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|description|String| Descrição da política.|
+|displayName|String| Nome para exibição dessa política. Obrigatório.|
+|isOrganizationDefault|Booleano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 
 
 ### <a name="properties-of-a-home-realm-discovery-policy-definition"></a>Propriedades de uma definição de política de descoberta de realm inicial
@@ -57,15 +57,17 @@ As propriedades abaixo formam o objeto JSON que representa uma política de temp
 "definition": [
     "{\"HomeRealmDiscoveryPolicy\":
      {\"AccelerateToFederatedDomain\":true,
-      \"PreferredDomain\":\"federated.example.edu\"}}"
+      \"PreferredDomain\":\"federated.example.edu\",
+      \"AlternateIdLogin\":{\"Enabled\":true}}}"
   ]
 ```
 
 | Propriedade     | Tipo   |Descrição| 
 |:---------------|:--------|:----------|
-|AccelerateToFederatedDomain|Boolean| Defina como `true` para aceleração automática (bypass da descoberta de realm inicial). Se `true` e houver apenas um domínio verificado e federado no locatário, os usuários serão levados diretamente para o provedor de identidade federada (como ADFS) para entrar. Se `true` houver mais de um domínio verificado no locatário, **PreferredDomain** deverá ser especificado. Opcional.|
-|PreferredDomain|Cadeia de caracteres| Especifica um domínio para o qual acelerar o logon. Ele pode ser omitido se o locatário tiver apenas um domínio federado. Se for omitido e houver mais de um domínio federado verificado, essa política não terá efeito. Obrigatório se **AccelerateToFederatedDomain** for `true` .|
-|AllowCloudPasswordValidation|Boolean| Defina como `true` para permitir que um aplicativo autentique um usuário federado, apresentando credenciais de nome de usuário/senha diretamente para o ponto de extremidade de token do Azure Active Directory. Funcionará somente se a sincronização de hash de senha estiver habilitada. Opcional.|
+|AccelerateToFederatedDomain|Booleano| Defina como `true` para aceleração automática (bypass da descoberta de realm inicial). Se `true` e houver apenas um domínio verificado e federado no locatário, os usuários serão levados diretamente para o provedor de identidade federada (como ADFS) para entrar. Se `true` houver mais de um domínio verificado no locatário, **PreferredDomain** deverá ser especificado. Opcional.|
+|PreferredDomain|String| Especifica um domínio para o qual acelerar o logon. Ele pode ser omitido se o locatário tiver apenas um domínio federado. Se for omitido e houver mais de um domínio federado verificado, essa política não terá efeito. Obrigatório se **AccelerateToFederatedDomain** for `true` .|
+|AllowCloudPasswordValidation|Booleano| Defina como `true` para permitir que um aplicativo autentique um usuário federado, apresentando credenciais de nome de usuário/senha diretamente para o ponto de extremidade de token do Azure Active Directory. Funcionará somente se a sincronização de hash de senha estiver habilitada. Opcional.|
+|AlternateIdLogin| Json |Defina como {"Enabled": true} para permitir a entrada do Azure AD usando email como [uma ID de logon alternativa](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-use-email-signin). Só funciona quando **IsOrganizationDefault** está definido como `true` . Opcional.|
 
 ## <a name="relationships"></a>Relações
 

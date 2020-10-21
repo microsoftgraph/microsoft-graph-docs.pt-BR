@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: bfe1badffdd675c68678e1f8463d09aee2af1217
-ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
+ms.openlocfilehash: 34f35181e9d1ba70c2efe8df31d6d6457aa0acde
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48273680"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635135"
 ---
 # <a name="printdocument-resource-type"></a>tipo de recurso de documento de documentos
 
@@ -62,7 +62,7 @@ Veja a seguir uma representação JSON do recurso.
     "orientation": "String",
     "duplexConfiguration": "String",
     "copies": 123456,
-    "colorConfiguration": "String",
+    "colorConfiguration": "String"
   }
 }
 
