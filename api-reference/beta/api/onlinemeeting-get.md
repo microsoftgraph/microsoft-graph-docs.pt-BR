@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a98e52df5b6e2867e3e51af62da5375a5d91266a
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: 489b6c424daf3fdb0a32516acf2ae50fbc5d15ec
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479938"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635591"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 | :------------------------------------- | :---------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Sem suporte.                                        |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
 | Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
@@ -138,7 +138,8 @@ Content-Length: 1574
             "displayName": "Tyler Stein"
           }
         },
-        "upn": "upn-value"
+        "upn": "upn-value",
+        "role": "attendee"
       }
     ],
     "organizer": {
@@ -151,7 +152,8 @@ Content-Length: 1574
           "displayName": "Jasmine Miller"
         }
       },
-      "upn": "upn-value"
+      "upn": "upn-value",
+      "role": "presenter"
     }
   },
   "startDateTime": "2018-05-30T00:30:00Z",
