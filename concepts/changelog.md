@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7879701370e4688af9e7f462219ed8e8fb12904d
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: f0123dcb74b169e6f577a57dff640542ae60cf7a
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582307"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634820"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -22,8 +22,19 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adicionado o campo **AlternateIdLogin** ao campo [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0) para definição da política.|
+| Adição | beta | Adicionado o campo **AlternateIdLogin** ao campo [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta) para definição da política.|
+| Adição | beta | Foi adicionada a entidade [fido2AuthenticationMethodConfiguration](/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) para gerenciar a política do método de autenticação de chaves de segurança FIDO2 dos usuários. |
+| Adição | beta | Foi adicionada a entidade [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) para o gerenciamento da política de autenticação do método de autenticação Microsoft Authenticator Passwordless Phone Sign-in dos usuários. |
+| Adição | beta | Adicionado o [emailauthenticationmethod](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) para gerenciar o método de autenticação de email dos usuários. |
 | Adição | Beta e v1.0 | Adicionadas as propriedades do [editor verificador](/graph/api/resources/verifiedPublisher) ao [aplicativo](/graph/api/resources/application) e aos recursos do[servicePrincipal](/graph/api/resources/serviceprincipal). |
 | Adição | Beta e v1.0 | Adicionado os métodos [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) e [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) aos recursos do [aplicativo](/graph/api/resources/application). |
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade **função** à entidade [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta).|
 
 ### <a name="files"></a>Arquivos
 
@@ -41,6 +52,12 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Adição|beta|Propriedade **allowInvitesFrom** adicionada ao recurso [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta).|
 |Adição|beta|Adicionado o tipo de recurso [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) e as seguintes operações: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) e [Atualizar b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
 |Adição|beta|Adicionada a permissão **Policy.ReadWrite.AuthenticationMethod** à [referência de Permissões](permissions-reference.md#policy-permissions).|
+
+### <a name="users"></a>Usuários
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição | Beta e v1.0 | Adicionadas as propriedades **employeeType**, **employeeOrgData** e **employeeHireDate** à entidade [usuário](/graph/api/resources/user). |
 
 ## <a name="september-2020"></a>Setembro de 2020
 
@@ -4359,7 +4376,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Exclusão    | Beta    | Foi removida a ação wipeByDeviceTag em [user](/graph/api/resources/intune-devicefe-user?view=graph-rest-beta) |
 | Alteração      | Beta    | Foram adicionadas as propriedades **innerAuthenticationProtocolForEapTtls**, **innerAuthenticationProtocolForPeap** e **outerIdentityPrivacyTemporaryValue** à entidade [androidEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidenterprisewificonfiguration?view=graph-rest-beta). |
 | Alteração      | Beta    | Foram removidas as propriedades **nonEapAuthenticationMethodForEapTtls**, **nonEapAuthenticationMethodForPeap** e **enableOuterIdentityPrivacy** da entidade [androidEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidenterprisewificonfiguration?view=graph-rest-beta). |
-| Alteração      | Beta    | A propriedade **deployedAppCount** foi adicionada à entidade [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta) |
+| Alterar      | Beta    | A propriedade **deployedAppCount** foi adicionada à entidade [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta) |
 | Alteração      | Beta    | Foram removidas as propriedades **instanceDisplayName** e **settingPlatform** da entidade [complianceSettingStateSummary](/graph/api/resources/compliancesettingstatesummary?view=graph-rest-beta). |
 | Alteração      | Beta    | A propriedade **deployedAppCount** foi adicionada à entidade [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) |
 | Alterar      | Beta    | Adicionada a propriedade **excludeGroup** à entidade [deviceCompliancePolicyGroupAssignment](/graph/api/resources/intune-deviceconfig-devicecompliancepolicygroupassignment?view=graph-rest-beta) |

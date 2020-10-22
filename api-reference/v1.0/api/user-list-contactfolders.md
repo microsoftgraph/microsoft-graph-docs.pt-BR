@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4d5756574c971548a827d8b5ffbbe2cf3caa77cb
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 6489b2d12cedc2cf673f4cc6493e5d815466af3b
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582104"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634462"
 ---
 # <a name="list-contactfolders"></a>Listar contactFolders
 

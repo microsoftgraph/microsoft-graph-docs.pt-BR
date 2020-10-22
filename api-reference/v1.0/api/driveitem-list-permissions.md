@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Listar as permissões de compartilhamento efetivas de em um driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 3f106b1bbd7506711d03a738a2cfc0f02e543948
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1aa566d42a65d3e3c168759d3b76ce175895af3f
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401330"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634498"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um driveItem
 

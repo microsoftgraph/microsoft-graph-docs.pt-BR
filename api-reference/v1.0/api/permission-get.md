@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Retornar a permissão de compartilhamento eficaz de um recurso de permissão específico.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4a530b18fcbd5d1336fbee730004a487fd2c5710
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f2f3072ff2244112d70b1a6ef3e3423191808230
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400596"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634568"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Obter permissão de compartilhamento para um arquivo ou pasta
 

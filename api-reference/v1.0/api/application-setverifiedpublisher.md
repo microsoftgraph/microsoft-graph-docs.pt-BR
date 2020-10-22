@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jesakowi
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b9f56a4bf020003f71679c07f380c992b48db491
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: 60681396c5f1c7e74b2ef04cd1984815e3a5e7a0
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471504"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635541"
 ---
 # <a name="application-setverifiedpublisher"></a>aplicativo: setVerifiedPublisher
 
@@ -22,7 +22,7 @@ Definir o [verifiedPublisher](../resources/verifiedPublisher.md) em um [aplicati
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
 |Aplicativo | Sem suporte |
 
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça as seguintes propriedades obrigatórias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | cadeia de caracteres | O MPNID (Microsoft Partner Network ID) do editor verificado a ser definido no aplicativo, na conta do centro de parceiros do Publisher. |
+| verifiedPublisherId | string | O MPNID (Microsoft Partner Network ID) do editor verificado a ser definido no aplicativo, na conta do centro de parceiros do Publisher. |
 
 ## <a name="response"></a>Resposta
 
@@ -59,6 +59,8 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_setverifiedpublisher"
@@ -72,6 +74,12 @@ Content-type: application/json
     "verifiedPublisherId": "1234567"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-setverifiedpublisher-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0463cab4fd3a4d1bb268bc504eb4fd2d807d941
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 2d377b749cc4839ac3506f492be2677497706c94
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581873"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635394"
 ---
 # <a name="user-getmailtips"></a>usuário: getdicas de dicas
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Mail. Read, mail. Read. Shared    |
+|Delegado (conta corporativa ou de estudante) | Mail. Read, mail. Read. Shared    |
 |Delegado (conta pessoal da Microsoft) | Mail.Read    |
 |Aplicativo | Mail.Read |
 
@@ -48,7 +48,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EmailAddresses|String collection|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|EmailAddresses|Coleção de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
 |MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` e `totalMemberCount` .|
 
 ## <a name="response"></a>Resposta

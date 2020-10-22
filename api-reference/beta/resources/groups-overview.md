@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 0f72de87ca36294fe9b359bb1d62638a2b56b2d8
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 7c72b6bfce1fe1d4c6133785f647bffa363eb860
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401446"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635163"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -18,9 +18,9 @@ Os grupos são coleções de [usuários](user.md) e de outras entidades de segur
 
 > **Observação**: os grupos só podem ser criados por meio de contas corporativas ou de estudante. As contas pessoais da Microsoft não são compatíveis com grupos.
 
-| Tipo              | Caso de uso | groupType | habilitado para email | habilitado para segurança | Podem ser criados e gerenciados via API? |
+| Tipo              | Caso de uso | groupType | mailEnabled | securityEnabled | Criado e gerenciado via API |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Grupos do Microsoft 365](#microsoft-365-groups) | Facilitar a colaboração entre usuários com os recursos compartilhados online da Microsoft. | `["Unified"]` | `true` | `false` | Sim |
+| [Grupos do Microsoft 365](#microsoft-365-groups) | Facilitar a colaboração entre usuários com os recursos compartilhados online da Microsoft. | `["Unified"]` | `true` | `true` ou `false` | Sim |
 | [Grupos de segurança](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo. | `[]` | `false` | `true` | Sim |
 | [Grupos de segurança habilitados para email](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo, com uma caixa de correio de grupo compartilhada. | `[]` | `true` | `true` | Não |
 | Grupos de distribuição | Distribuir emails aos membros do grupo. É recomendável usar os grupos do Microsoft 365 devido a grande quantidade de recursos que ele fornece. | `[]` | `true` | `false` | Não |

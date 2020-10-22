@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f992211fab49434d555cd48045070c6d28b0d91e
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: e5dca8705a6601914c497d35d4429a7d6e3432f1
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582202"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635124"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>tipo de recurso certificateBasedAuthConfiguration
 
@@ -27,7 +27,7 @@ A configuração de autenticação baseada em certificado é fornecida por meio 
 
 Saiba mais sobre [a autenticação baseada em certificado no Azure Active Directory](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -37,7 +37,7 @@ Saiba mais sobre [a autenticação baseada em certificado no Azure Active Direct
 | [Excluir certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | Nenhum | Excluir um objeto **certificateBasedAuthConfiguration** . |
 
 >[!NOTE]
->Não há suporte para a atualização de **cerficateBasedAuthConfiguration** . Para alterar um **cerficateBasedAuthConfiguration**, primeiro exclua e crie um novo **cerficateBasedAuthConfiguration**.
+>Não há suporte para a atualização de **certificateBasedAuthConfiguration** . Para alterar um **certificateBasedAuthConfiguration**, primeiro exclua e crie um novo **certificateBasedAuthConfiguration**.
 
 ## <a name="properties"></a>Propriedades
 

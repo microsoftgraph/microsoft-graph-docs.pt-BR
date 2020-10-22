@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4640c7eb82935891e34bf29798eb7e28cefb0e36
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: 415b619692eb28329e66758f749597822a336ea7
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479926"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635576"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -314,9 +314,9 @@ Nenhuma.
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Calendars.Read_ |Ler calendários do usuário |Permite ao aplicativo ler eventos nos calendários do usuário. |Não | Sim |
-| _Calendars.Read.Shared_ |Ler usuários e calendários compartilhados |Permite que o aplicativo leia os eventos em todos os calendários a que o usuário tem acesso, incluindo os delegados e os calendários compartilhados. |Não | Não |
+| _Calendars.Read.Shared_ |Ler usuários e calendários compartilhados |Permite que o aplicativo leia os eventos em todos os calendários a que o usuário tem acesso, incluindo os delegados e os calendários compartilhados. |Não | Não |
 | _Calendars.ReadWrite_ |Ter acesso total aos calendários do usuário |Permite ao aplicativo criar, ler, atualizar e excluir eventos em calendários do usuário. |Não | Sim |
-| _Calendars.ReadWrite.Shared_ |Ler e registrar usuário e calendários compartilhados |Permite ao aplicativo criar, ler, atualizar e excluir eventos de todos os calendários que o usuário tenha permissão para acessar. Isso inclui o delegado e os calendários compartilhados.|Não | Não |
+| _Calendars.ReadWrite.Shared_ |Ler e registrar usuário e calendários compartilhados |Permite ao aplicativo criar, ler, atualizar e excluir eventos de todos os calendários que o usuário tenha permissão para acessar. Isso inclui o delegado e os calendários compartilhados.|Não | Não |
 
 <br/>
 
@@ -467,7 +467,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMessage.Read.All_ |Listar mensagens do canal  |Permite que um aplicativo leia todas as mensagens de canal do Microsoft Teams, sem um usuário conectado. |Sim | Não |
+|_ChannelMessage.Read.All_ |Listar mensagens do canal  |Permite que um aplicativo leia todas as mensagens de canal do Microsoft Teams, sem um usuário conectado. |Sim | Não |
 |_ChannelMessage.UpdatePolicyViolation.All_ |Sinalizar mensagens de canal para a política de violação |Permite que o aplicativo atualize as mensagens do canal do Microsoft Teams, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
 
 > **Observação:** consulte também [Group. Read. All](#group-permissions).
@@ -494,15 +494,15 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_Chat.Read_ |Ler suas mensagens de bate-papo  |Permite que um aplicativo leia, em seu nome, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Não | Não |
+|_Chat.Read_ |Ler suas mensagens de bate-papo  |Permite que um aplicativo leia, em seu nome, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Não | Não |
 |_Chat.ReadBasic_ |Ler nomes e membros de threads de chat do usuário  |Permite que um aplicativo leia os membros e as descrições de threads de chat individuais e de grupo, em nome do usuário conectado. |Não | Não |
-|_Chat.ReadWrite_ |Leia as suas mensagens de chat e envie novas mensagens   |Permite que um aplicativo leia e envie, em seu nome, suas mensagens de chat individual ou em grupo no Microsoft Teams. |Não | Não |
+|_Chat.ReadWrite_ |Leia as suas mensagens de chat e envie novas mensagens   |Permite que um aplicativo leia e envie, em seu nome, suas mensagens de chat individual ou em grupo no Microsoft Teams. |Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_Chat.Read.All_ |Ler todas as mensagens de bate-papo  |Permite que um aplicativo leia, sem um usuário conectado, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Sim | Não |
+|_Chat.Read.All_ |Ler todas as mensagens de bate-papo  |Permite que um aplicativo leia, sem um usuário conectado, suas mensagens de bate-papo de um para um ou de grupo no Microsoft Teams. |Sim | Não |
 |_Chat.ReadBasic.All_ |Ler nomes e membros de threads de chat do usuário  |Ler nomes e membros de todos os threads de chat. |Sim | Não |
 |_Chat.UpdatePolicyViolation.All_ |Sinalizar mensagens de chat para a política de violação |Permite que o aplicativo atualize as mensagens de chat de grupo ou Microsoft Teams 1:1, aplicando um conjunto de propriedades de violação da política de prevenção contra perda de dados (DLP) para controlar a saída de processamento DLP. | Sim | Não |
 
@@ -536,8 +536,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_Contacts.Read_ |Ler contatos do usuário  |Permite ao aplicativo ler os contatos do usuário. |Não | Sim |
-|_Contacts.Read.Shared_ |Ler usuário e contatos compartilhados |Permite que o aplicativo leia os contatos que o usuário tem permissão de acessar, incluindo os próprios contatos do usuário e os contatos compartilhados. |Não |Não|
+|_Contacts.Read_ |Ler contatos do usuário  |Permite ao aplicativo ler os contatos do usuário. |Não | Sim |
+|_Contacts.Read.Shared_ |Ler usuário e contatos compartilhados |Permite que o aplicativo leia os contatos que o usuário tem permissão de acessar, incluindo os próprios contatos do usuário e os contatos compartilhados. |Não |Não|
 |_Contacts.ReadWrite_ |Ter acesso total aos contatos do usuário |Permite ao aplicativo criar, ler, atualizar e excluir contatos do usuário. |Não |Sim|
 |_Contacts.ReadWrite.Shared_ |Ler e registrar usuário e contatos compartilhados |Permite que o aplicativo crie, leia, atualize e exclua os contatos para os quais o usuário tem permissão, incluindo os próprios contatos do usuário e os contatos compartilhados. |Não |Não|
 
@@ -545,7 +545,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_Contacts.Read_ |Ler contatos em todas as caixas de correio |Permite ao aplicativo ler todos os contatos em todas as caixas de correio sem um usuário conectado. |Sim |
+|_Contacts.Read_ |Ler contatos em todas as caixas de correio |Permite ao aplicativo ler todos os contatos em todas as caixas de correio sem um usuário conectado. |Sim |
 |_Contacts.ReadWrite_ |Ler e gravar contatos em todas as caixas de correio |Permite ao aplicativo criar, ler, atualizar e excluir todos os contatos em todas as caixas de correio sem um usuário conectado. |Sim |
 
 > Os Administradores **Importantes** podem configurar a [política de acesso ao aplicativo](auth-limit-mailbox-access.md) para limitar o acesso do aplicativo às caixas de correio _específicas_ e não a todas as caixas de correio na organização, mesmo que as permissões de aplicativo do Contacts.Read or Contacts.ReadWrite sejam concedidas ao aplicativo. 
@@ -604,8 +604,6 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Directory.Read.All_ |Ler dados do diretório | Allows the app to read data in your organization's directory, such as users, groups and apps. **Note**: Users may consent to applications that require this permission if the application is registered in their own organization’s tenant.| Sim | Não |
 | _Directory.ReadWrite.All_ |Ler e gravar dados de diretório | Permite ao aplicativo ler e gravar dados no diretório da sua organização, como usuários e grupos. Não permite ao aplicativo excluir usuários ou grupos, ou redefinir senhas de usuário. | Sim | Não |
 | _Directory.AccessAsUser.All_ |Access Directory como o usuário conectado  | Permite ao aplicativo ter o mesmo acesso que o usuário conectado a informações no diretório. | Sim | Não |
-| _PrivilegedAccess.ReadWrite.AzureAD_ |Ler e gravar dados do Privileged Identity Management para diretório  | Permite que o aplicativo tenha acesso de leitura e gravação nas APIs do Privileged Identity Management do Azure AD. | Sim | Não |
-| _PrivilegedAccess.ReadWrite.AzureResources_ |Ler e gravar dados Privileged Identity Management de recursos do Azure | Permite que o aplicativo tenha acesso de leitura e gravação nas APIs do Privileged Identity Management dos recursos do Azure. | Sim | Não |
 
 <br/>
 
@@ -1023,15 +1021,15 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Mail.Read_ |    Ler emails do usuário | Permite ao aplicativo ler emails em caixas de correio do usuário. | Não | Sim
+| _Mail.Read_ |    Ler emails do usuário | Permite ao aplicativo ler emails em caixas de correio do usuário. | Não | Sim
 | _Mail.ReadBasic_ |    Ler emails básicos do usuário | Allows the app to read email in the signed-in user's mailbox, except for **body**, **bodyPreview**, **uniqueBody**, **attachments**, **extensions**, and any extended properties. Does not include permissions to search messages. | Não | Não
-| _Mail.ReadWrite_ |    Acesso de leitura e gravação aos emails do usuário | Permite ao aplicativo criar, ler, atualizar e excluir emails em caixas de correio do usuário. Não inclui a permissão para enviar emails.| Não | Sim
-| _Mail.Read.Shared_ |    Ler email compartilhado e de usuário | Permite que o aplicativo leia os emails que o usuário pode acessar, incluindo os próprios contatos do usuário e os emails compartilhados. | Não | Não
-| _Mail.ReadWrite.Shared_ |    Ler e registrar usuário e emails compartilhados | Permite que o aplicativo crie, leia, atualize e exclua emails que o usuário tem permissão de acessar, incluindo os emails compartilhados e os do próprio usuário. Não inclui a permissão para enviar emails. | Não | Não
-| _Mail.Send_ |    Enviar email como um usuário | Permite ao aplicativo enviar emails como usuários na organização. | Não | Sim
-| _Mail.Send.Shared_ |    Enviar email em nome de outras pessoas | Permite que o aplicativo enviar emails como o usuário conectado no, incluindo o envio de nome de terceiros. | Não | Não
-| _MailboxSettings.Read_ |  Ler as configurações da caixa de correio do usuário | Permite ao aplicativo ler as configurações da caixa de correio do usuário. Não inclui a permissão para enviar emails. | Não | Sim
-| _MailboxSettings.ReadWrite_ |  Leia e grave as configurações de caixa de correio do usuário | Allows the app to create, read, update, and delete user's mailbox settings. Does not include permission to directly send mail, but allows the app to create rules that can forward or redirect messages. | Não | Sim
+| _Mail.ReadWrite_ |    Acesso de leitura e gravação aos emails do usuário | Permite ao aplicativo criar, ler, atualizar e excluir emails em caixas de correio do usuário. Não inclui a permissão para enviar emails.| Não | Sim
+| _Mail.Read.Shared_ |    Ler email compartilhado e de usuário | Permite que o aplicativo leia os emails que o usuário pode acessar, incluindo os próprios contatos do usuário e os emails compartilhados. | Não | Não
+| _Mail.ReadWrite.Shared_ |    Ler e registrar usuário e emails compartilhados | Permite que o aplicativo crie, leia, atualize e exclua emails que o usuário tem permissão de acessar, incluindo os emails compartilhados e os do próprio usuário. Não inclui a permissão para enviar emails. | Não | Não
+| _Mail.Send_ |    Enviar email como um usuário | Permite ao aplicativo enviar emails como usuários na organização. | Não | Sim
+| _Mail.Send.Shared_ |    Enviar email em nome de outras pessoas | Permite que o aplicativo enviar emails como o usuário conectado no, incluindo o envio de nome de terceiros. | Não | Não
+| _MailboxSettings.Read_ |  Ler as configurações da caixa de correio do usuário | Permite ao aplicativo ler as configurações da caixa de correio do usuário. Não inclui a permissão para enviar emails. | Não | Sim
+| _MailboxSettings.ReadWrite_ |  Leia e grave as configurações de caixa de correio do usuário | Allows the app to create, read, update, and delete user's mailbox settings. Does not include permission to directly send mail, but allows the app to create rules that can forward or redirect messages. | Não | Sim
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1257,8 +1255,8 @@ Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _off
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Organization.Read.All_ |Ler informações da organização | Allows the app to read the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information.|Sim | Não |
-| _Organization.ReadWrite.All_ |Ler e gravar informações da organização | Allows the app to read and write the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information. |Sim | Não |
+| _Organization.Read.All_ |Ler informações da organização | Permite que o aplicativo leia a organização e os recursos relacionados em nome do usuário conectado.  Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário.|Sim | Não |
+| _Organization.ReadWrite.All_ |Ler e gravar informações da organização | Permite que o aplicativo leia e grave a organização e os recursos relacionados em nome do usuário conectado.  Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário. |Sim | Não |
 
 <br/>
 
@@ -1266,8 +1264,8 @@ Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _off
 
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Organization.Read.All_ |Ler informações da organização | Allows the app to read the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. | Sim |
-| _Organization.ReadWrite.All_ |Ler e gravar informações da organização | Allows the app to read and write the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. |Sim |
+| _Organization.Read.All_ |Ler informações da organização | Permite que o aplicativo leia a organização e os recursos relacionados sem um usuário conectado.  Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário. | Sim |
+| _Organization.ReadWrite.All_ |Ler e gravar informações da organização | Permite que o aplicativo leia e grave a organização e os recursos relacionados sem um usuário conectado.  Os recursos relacionados incluem itens como SKUs inscritos e informações de identidade visual do locatário. |Sim |
 
 
 ### <a name="example-usage"></a>Exemplo de uso
@@ -1314,13 +1312,13 @@ Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _off
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _People.Read_ |    Ler listas de pessoas relevantes dos usuários | Permite ao aplicativo ler uma lista pontuada de pessoas relevantes para o usuário conectado. A lista pode incluir contatos locais, contatos das redes sociais ou do diretório da sua organização e as pessoas de comunicações recentes (como emails e Skype). | Não | Sim |
-| _People.Read.All_ | Ler listas de pessoas relevantes de todos os usuários | Permite ao aplicativo ler uma lista pontuada de pessoas relevantes para o usuário conectado ou para outros usuários da organização do usuário conectado. A lista pode incluir contatos locais, contatos das redes sociais ou do diretório da sua organização e as pessoas de comunicações recentes (como emails e Skype). Também permite que o aplicativo pesquise todo o diretório da organização do usuário conectado. | Sim | Não |
+| _People.Read.All_ | Ler listas de pessoas relevantes de todos os usuários | Permite ao aplicativo ler uma lista pontuada de pessoas relevantes para o usuário conectado ou para outros usuários da organização do usuário conectado. A lista pode incluir contatos locais, contatos das redes sociais ou do diretório da sua organização e as pessoas de comunicações recentes (como emails e Skype). Também permite que o aplicativo pesquise todo o diretório da organização do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _People.Read.All_ | Ler listas de pessoas relevantes de todos os usuários | Permite ao aplicativo ler uma lista pontuada de pessoas relevantes para o usuário conectado ou para outros usuários da organização do usuário conectado. <br/><br/>The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Sim |
+| _People.Read.All_ | Ler listas de pessoas relevantes de todos os usuários | Permite ao aplicativo ler uma lista pontuada de pessoas relevantes para o usuário conectado ou para outros usuários da organização do usuário conectado. <br/><br/>The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Sim |
 
 ### <a name="remarks"></a>Comentários
 
@@ -1333,6 +1331,26 @@ A permissão People.Read.All só é válida para contas corporativas ou de estud
 * _People.Read.All_: Ler uma lista de pessoas relevantes para outro usuário na mesma organização (`GET /users('{id})/people`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="privileged-access-permissions"></a>Permissões de acesso privilegiadas
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+| Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da Conta da Microsoft |
+|:---------- |:-------------- |:----------- |:---------------------- |:----------------- |
+| _PrivilegedAccess.ReadWrite.AzureAD_ |Ler e gravar dados do Privileged Identity Management para diretório  | Permite que o aplicativo tenha acesso de leitura e gravação nas APIs do Privileged Identity Management do Azure AD. | Sim | Não |
+| _PrivilegedAccess.ReadWrite.AzureADGroups_ |Leitura e escrita de dados do Privileged Identity Management para grupos de acesso privilegiado | Permite que o aplicativo tenha acesso de leitura e escrita às APIs de Privileged Identity Management para grupos. | Sim | Não |
+| _PrivilegedAccess.ReadWrite.AzureResources_ |Ler e gravar dados Privileged Identity Management de recursos do Azure | Permite que o aplicativo tenha acesso de leitura e gravação nas APIs do Privileged Identity Management dos recursos do Azure. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+| Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador |
+|:---------- |:-------------- |:----------- |:---------------------- |
+| _PrivilegedAccess.Read.AzureAD_ |Leitura do Privileged Identity Management para Diretório  | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para o Microsoft Azure AD. | Sim |
+| _PrivilegedAccess.Read.AzureADGroups_ |Leitura do Privileged Identity Management para grupos de acesso privilegiado | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para grupos. | Sim |
+| _PrivilegedAccess.Read.AzureADResources_ |Leitura do Privileged Identity Management para recursos do Azure | Permite que o aplicativo tenha acesso de leitura às APIs do Privileged Identity Management para os recursos do Microsoft Azure AD. | Sim |
 
 ---
 
@@ -1957,17 +1975,17 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 | _Printer.Create_ | Impressoras registradas | Permite que o aplicativo crie (cadastre) impressoras em nome do usuário conectado. | Sim | Não |
 | _Printer.FullControl.All_ | Registre, leia, atualize e cancele o registro de impressoras | Permite que o aplicativo crie (registre), leia, atualize e exclua (cancele o registro) de impressoras em nome do usuário conectado. | Sim | Não |
 | _Printer.Read.All_ | Ler impressoras | Permite que o aplicativo leia impressoras em nome do usuário conectado. | Sim | Não |
-| _Printer.ReadWrite.All_ | Ler e atualizar as impressoras | Permite que o aplicativo leia e atualize impressoras em nome do usuário conectado.Não permite a criação (registro) ou a exclusão (cancelamento do registro) de impressoras. | Sim | Não |
+| _Printer.ReadWrite.All_ | Ler e atualizar as impressoras | Permite que o aplicativo leia e atualize impressoras em nome do usuário conectado. Não permite a criação (registro) ou a exclusão (cancelamento do registro) de impressoras. | Sim | Não |
 | _PrinterShare.Read.All_ | Ler compartilhamentos de impressora | Permite que o aplicativo leia os compartilhamentos da impressora em nome do usuário conectado. | Não | Não |
 | _PrinterShare.ReadWrite.All_ | Ler e gravar compartilhamentos de impressora | Permite que o aplicativo leia e atualize compartilhamentos de impressora em nome do usuário conectado. | Sim | Não |
 | _PrintJob.Read_ | Ler os trabalhos de impressão do usuário | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão criados pelo usuário conectado. | Não | Não |
 | _PrintJob.Read.All_ | Ler os trabalhos de impressão | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão em nome do usuário conectado. | Sim | Não |
 | _PrintJob.ReadBasic_ | Ler informações básicas dos trabalhos de impressão do usuário | Permite que o aplicativo leia os metadados dos trabalhos de impressão criados pelo usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Não | Não |
-| _PrintJob.ReadBasic.All_ | Ler informações básicas dos trabalhos de impressão | Permite que o aplicativo leia os metadados dos trabalhos de impressão em nome do usuário conectado.Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim | Não |
+| _PrintJob.ReadBasic.All_ | Ler informações básicas dos trabalhos de impressão | Permite que o aplicativo leia os metadados dos trabalhos de impressão em nome do usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim | Não |
 | _PrintJob.ReadWrite_ | Ler e gravar os trabalhos de impressão do usuário | Permite que o aplicativo leia e atualize os metadados e o conteúdo do documento dos trabalhos de impressão criados pelos usuário conectado. | Não | Não |
 | _PrintJob.ReadWrite.All_ | Ler e gravar trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados e o conteúdo do documento dos trabalhos de impressão em nome do usuário conectado. | Sim | Não |
 | _PrintJob.ReadWriteBasic_ | Ler e gravar informações básicas de trabalhos de impressão do usuário | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão que o usuário conectado criou. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Não | Não |
-| _PrintJob.ReadWriteBasic.All_ | Ler e gravar informações básicas de trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão em nome do usuário conectado.Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim | Não |
+| _PrintJob.ReadWriteBasic.All_ | Ler e gravar informações básicas de trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão em nome do usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1977,9 +1995,9 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 | _Printer.ReadWrite.All_ | Ler e atualizar as impressoras | Allows the application to read and update printers without a signed-in user. Does not allow creating (registering) or deleting (unregistering) printers. | Sim |
 | _PrintJob.Manage.All_ | Executar operações avançadas nos trabalhos de impressão | Permite que o aplicativo execute operações avançadas, como redirecionar um trabalho de impressão para outra impressora sem um usuário conectado. Também, permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão. | Sim |
 | _PrintJob.Read.All_ | Ler os trabalhos de impressão | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão sem um usuário conectado. | Sim |
-| _PrintJob.ReadBasic.All_ | Ler informações básicas de trabalhos para impressão | Permite que o aplicativo leia os metadados dos trabalhos de impressão sem um usuário conectado.Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
+| _PrintJob.ReadBasic.All_ | Ler informações básicas de trabalhos para impressão | Allows the application to read the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Sim |
 | _PrintJob.ReadWrite.All_ | Ler e gravar trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados e o conteúdo do documento dos trabalhos de impressão sem um usuário conectado. | Sim |
-| _PrintJob.ReadWriteBasic.All_ | Ler e gravar informações básicas para trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão sem um usuário conectado.Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
+| _PrintJob.ReadWriteBasic.All_ | Ler e gravar informações básicas para trabalhos de impressão | Allows the application to read and update the metadata of print jobs without a signed-in user. Does not allow access to print job document content. | Sim |
 | _PrintTaskDefinition.ReadWrite.All_ | Ler, gravar e atualizar definições das tarefas de impressão | Permite que o aplicativo leia e atualize as definições das tarefas de impressão sem um usuário conectado. | Sim |
 
 ### <a name="remarks"></a>Comentários

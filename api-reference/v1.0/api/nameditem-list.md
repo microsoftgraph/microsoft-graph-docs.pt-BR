@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3b894a4b2889d96d7005dcf298355d8eef2182b6
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f11111700c9c529708a3d21afc94ab8c64e05b4e
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405404"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635303"
 ---
 # <a name="list-nameditemcollection"></a>Listar NamedItemCollection
 
