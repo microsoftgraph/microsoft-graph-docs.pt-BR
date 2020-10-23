@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c7a6e9f1ef14977a7d5694d90649d96e5d27a2fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 96b7ef0ad1374b6da2671c191b427a988b8b2f2a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021683"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708953"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>tipo de recurso officeClientConfigurationAssignment
 
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

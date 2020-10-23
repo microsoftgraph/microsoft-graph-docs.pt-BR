@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e53261120ae0e372e736509d9d2d809d0078a6f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7381dfbf24f2212754427a4b689e96abc320208
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993326"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707630"
 ---
 # <a name="windowsautopilotdeploymentprofilepolicysetitem-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfilePolicySetItem
 
@@ -25,7 +25,7 @@ Uma classe que contém as propriedades usadas para o perfil de implantação do 
 
 Herda de [policySetItem](../resources/intune-policyset-policysetitem.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsAutopilotDeploymentProfilePolicySetItems](../api/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem-list.md)|coleção [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md)|Listar Propriedades e relações dos objetos [windowsAutopilotDeploymentProfilePolicySetItem](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) .|
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

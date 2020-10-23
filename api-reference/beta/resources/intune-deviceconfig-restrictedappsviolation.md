@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0982553e0bc5b64e589dc74230732da5549d3361
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ab38a5dff42bf29dbda301c5dbdb102972716fb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049538"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707028"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>tipo de recurso restrictedAppsViolation
 
@@ -34,13 +34,13 @@ Violação de perfil de configuração de aplicativos restritos por dispositivo 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do objeto. Composto de AccountId, DeviceID, PolicyId e userId|
+|id|String|Identificador exclusivo do objeto. Composto de AccountId, DeviceID, PolicyId e userId|
 |userId|Cadeia de caracteres|O identificador exclusivo do usuário deve ser GUID|
 |userName|Cadeia de caracteres|Nome de usuário|
-|managedDeviceId|Cadeia de caracteres|O identificador exclusivo do dispositivo gerenciado deve ser GUID|
+|managedDeviceId|String|O identificador exclusivo do dispositivo gerenciado deve ser GUID|
 |deviceName|String|Nome do dispositivo|
-|deviceConfigurationId|Cadeia de caracteres|O identificador exclusivo do perfil de configuração do dispositivo deve ser GUID|
-|deviceConfigurationName|Cadeia de caracteres|Nome do perfil de configuração do dispositivo|
+|deviceConfigurationId|String|O identificador exclusivo do perfil de configuração do dispositivo deve ser GUID|
+|deviceConfigurationName|String|Nome do perfil de configuração do dispositivo|
 |platformType|[policyPlatformType](../resources/intune-shared-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado de aplicativos restritos. Os valores possíveis são: `prohibitedApps` e `notApprovedApps`.|
 |restrictedApps|coleção [managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicativos restritos violados|
@@ -76,7 +76,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ae851c132bf9bdffa0bd9d4c3dee831418f3e0c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1abce9a67e92d158b246212ce19964f7f1405251
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062460"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709030"
 ---
 # <a name="update-intunebrandingprofile"></a>Atualizar intuneBrandingProfile
 
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [intuneB
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave de perfil|
-|ProfileName|Cadeia de caracteres|Nome do perfil|
-|profileDescription|Cadeia de caracteres|Descrição do perfil|
-|isDefaultProfile|Booliano|Booliano que indica se o perfil é usado como padrão ou não|
+|id|String|Chave de perfil|
+|ProfileName|String|Nome do perfil|
+|profileDescription|String|Descrição do perfil|
+|isDefaultProfile|Boolean|Booliano que indica se o perfil é usado como padrão ou não|
 |createdDateTime|DateTimeOffset|Hora em que o BrandingProfile foi criado|
 |lastModifiedDateTime|DateTimeOffset|Hora em que a BrandingProfile foi modificada pela última vez|
-|displayName|Cadeia de caracteres|Nome da empresa/organização que é exibido para os usuários finais|
+|displayName|String|Nome da empresa/organização que é exibido para os usuários finais|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor do tema principal usada nos aplicativos do portal da empresa e no portal da Web|
 |showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador são mostradas ou não|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será mostrado ao lado da imagem de logotipo ou não|
@@ -73,17 +73,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [intuneB
 |onlineSupportSiteUrl|Cadeia de caracteres|URL para o site de assistência técnica de ti da empresa/organização|
 |onlineSupportSiteName|Cadeia de caracteres|Nome para exibição do site de assistência técnica de ti da empresa/organização|
 |privacyUrl|Cadeia de caracteres|URL para a política de privacidade da empresa/organização|
-|customPrivacyMessage|Cadeia de caracteres|Comentários de texto sobre o que o administrador não tem acesso ao no dispositivo|
-|customCanSeePrivacyMessage|Cadeia de caracteres|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
-|customCantSeePrivacyMessage|Cadeia de caracteres|Comentários de texto sobre o que o administrador não tem acesso ao no dispositivo|
-|isRemoveDeviceDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
-|isFactoryResetDisabled|Booliano|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
+|customPrivacyMessage|String|Comentários de texto sobre o que o administrador não tem acesso ao no dispositivo|
+|customCanSeePrivacyMessage|String|Comentários de texto sobre o que o administrador tem acesso ao no dispositivo|
+|customCantSeePrivacyMessage|String|Comentários de texto sobre o que o administrador não tem acesso ao no dispositivo|
+|isRemoveDeviceDisabled|Boolean|Booliano que indica se o adminsistrator desabilitou a ação "remover dispositivo" em dispositivos corporativos de propriedade.|
+|isFactoryResetDisabled|Boolean|Booliano que indica se o adminsistrator desabilitou a ação "redefinição de fábrica" em dispositivos corporativos de propriedade.|
 |companyPortalBlockedActions|coleção [companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Conjunto de ações bloqueadas no portal da empresa de acordo com os tipos de propriedade de plataforma e dispositivo.|
-|showAzureADEnterpriseApps|Booliano|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
-|showOfficeWebApps|Booliano|Booliano que indica se o Office webapps será mostrado no portal da empresa|
-|sendDeviceOwnershipChangePushNotification|Booliano|Booliano que indica se uma notificação por push é enviada aos usuários quando o tipo de Propriedade do dispositivo muda de pessoal para corporativo|
+|showAzureADEnterpriseApps|Boolean|Booliano que indica se os aplicativos empresariais do AzureAD serão mostrados no portal da empresa|
+|showOfficeWebApps|Boolean|Booliano que indica se o Office webapps será mostrado no portal da empresa|
+|sendDeviceOwnershipChangePushNotification|Boolean|Booliano que indica se uma notificação por push é enviada aos usuários quando o tipo de Propriedade do dispositivo muda de pessoal para corporativo|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Fluxo de registro de dispositivo personalizado exibido para o usuário final. Os valores possíveis são: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|disableClientTelemetry|Booliano|Aplica-se à telemetria enviada de todos os clientes para o serviço do Intune. Quando desabilitado, todos os avisos proativos de solução de problemas e emissão dentro do cliente estão desativados, e as configurações de telemetria aparecem inativas ou ocultas para o usuário do dispositivo.|
+|disableClientTelemetry|Boolean|Aplica-se à telemetria enviada de todos os clientes para o serviço do Intune. Quando desabilitado, todos os avisos proativos de solução de problemas e emissão dentro do cliente estão desativados, e as configurações de telemetria aparecem inativas ou ocultas para o usuário do dispositivo.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo atribuídas ao perfil de identidade visual|
 
 
@@ -229,7 +229,6 @@ Content-Length: 2147
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: dae7b69ab48ed0b05eda03aa032c9d8b2cfa44d9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 457eaaae7f9a595061683999f818cb0f3af8f680
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405558"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706881"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -51,7 +51,7 @@ Aplique as seguintes diretrizes quando você criar extensões abertas em recurso
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Use extensões abertas (para recursos do Outlook) ou propriedades estendidas
 
-As extensões abertas são a solução recomendada para a maioria dos cenários que envolvem o armazenamento e o acesso a dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](../index.md), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode verificar quais propriedades os metadados expõem na [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
+Extensões abertas são a solução recomendada para a maioria dos cenários que envolvem armazenar e acessar dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](../index.md), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode verificar quais propriedades os metadados expõem na [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso
   "extensionName": "string",
   "id": "string (identifier)"
 }
-
 ```
 
 ## <a name="properties"></a>Propriedades

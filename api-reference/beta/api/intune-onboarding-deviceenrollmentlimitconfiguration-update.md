@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 660bf4532b6393592496affe8c311c4f14cfe3ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 94dfe26d8d2a56d827f3891a054883e179f9c245
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000172"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709233"
 ---
 # <a name="update-deviceenrollmentlimitconfiguration"></a>Atualizar deviceEnrollmentLimitConfiguration
 
@@ -112,7 +112,6 @@ Content-Length: 439
   "limit": 5
 }
 ```
-
 
 
 

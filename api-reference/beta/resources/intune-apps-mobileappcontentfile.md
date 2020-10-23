@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 951265a964f4c7f96fbfe44d865c02ebbfc659dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 19390113e2f5b5e5e3ff987011b2600109c1153e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052800"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707196"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -38,16 +38,16 @@ Contém propriedades de um único arquivo de instalação associado uma versão 
 |:---|:---|:---|
 |azureStorageUri|Cadeia de caracteres|O URI de Armazenamento do Azure.|
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
-|id|Cadeia de caracteres|A ID do arquivo.|
+|id|String|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
-|name|Cadeia de caracteres|O nome do arquivo.|
+|nome|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|
 |sizeEncrypted|Int64|O tamanho do arquivo após a criptografia.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
 |manifest|Binária|As informações do manifesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|O estado da solicitação de carregamento atual. Os valores possíveis são: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|isframeworkfile|Booliano|Um valor que indica se o arquivo é um arquivo de estrutura.|
-|IsDependency|Booliano|Se o arquivo de conteúdo é uma dependência para o arquivo de conteúdo principal.|
+|isframeworkfile|Boolean|Um valor que indica se o arquivo é um arquivo de estrutura.|
+|IsDependency|Boolean|Se o arquivo de conteúdo é uma dependência para o arquivo de conteúdo principal.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -77,7 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   "isDependency": true
 }
 ```
-
 
 
 

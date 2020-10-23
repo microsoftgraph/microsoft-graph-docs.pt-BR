@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19e93a1b4702fe19f978a52545178f939d41157b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cd11409a4e3a07b15d79104e7815f469d749522f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093088"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708001"
 ---
 # <a name="update-pfxusercertificate"></a>Atualizar pfxUserCertificate
 
@@ -135,7 +135,6 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
-
 
 
 

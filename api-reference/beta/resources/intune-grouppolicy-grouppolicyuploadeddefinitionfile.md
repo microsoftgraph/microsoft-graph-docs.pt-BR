@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 182280ef7a8ea9f2ec1b0f638288bcfe3c69648c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0dbe32cd0de4e105fd0781711fa54f3b8ed12d24
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030637"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707693"
 ---
 # <a name="grouppolicyuploadeddefinitionfile-resource-type"></a>tipo de recurso groupPolicyUploadedDefinitionFile
 
@@ -44,7 +44,7 @@ Herda de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicy
 |:---|:---|:---|
 |displayName|String|O nome amigável localizado do arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |description|String|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
-|languageCodes|Coleção String|Os códigos de idioma suportados para o arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
+|languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma suportados para o arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |targetPrefix|String|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |targetNamespace|String|Especifica o URI usado para identificar o namespace no arquivo ADMX. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Herdado de [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md). Os valores possíveis são: `admxBacked` e `admxIngested`.|
@@ -103,7 +103,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

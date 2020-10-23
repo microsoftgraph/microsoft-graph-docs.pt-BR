@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cceb53abb1c8c52b6e82f4e0f33e4aa06fff3257
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf2143edba36d396401e96f7f40c817cd688f310
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090568"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707308"
 ---
 # <a name="get-windowsmanageddevice"></a>Obter windowsManagedDevice
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,7 +74,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8462
+Content-Length: 8555
 
 {
   "value": {
@@ -118,7 +118,9 @@ Content-Length: 8462
       "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
       "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
       "osBuildNumber": "Os Build Number value",
-      "operatingSystemProductType": 10
+      "operatingSystemProductType": 10,
+      "ipAddressV4": "Ip Address V4 value",
+      "subnetAddress": "Subnet Address value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -265,7 +267,6 @@ Content-Length: 8462
   }
 }
 ```
-
 
 
 

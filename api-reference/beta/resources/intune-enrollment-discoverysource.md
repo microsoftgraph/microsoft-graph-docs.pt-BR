@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9345c3a4864a314b7a85f556ece9d53db974c11d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c6943e5a98a07f6c007462c2e2e34e574362020
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080212"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707770"
 ---
 # <a name="discoverysource-enum-type"></a>tipo de enumeração Discovery
 
@@ -26,9 +26,8 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O Discovery é desconhecido.|
-|adminImport|2 |O dispositivo é importado por administrador.|
+|adminImport|duas|O dispositivo é importado por administrador.|
 |deviceEnrollmentProgram|4 |O dispositivo é adicionado pelo programa de registro de dispositivo (DEP) da Apple.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b97385f0194fa60cbb9be706bc94367a958c354d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e1c332276ec61a0ff39dd6e59585ff31f5fef53f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095972"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707315"
 ---
 # <a name="create-windowsmanageddevice"></a>Criar windowsManagedDevice
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|id|String|Identificador exclusivo do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userId|Cadeia de caracteres|Identificador exclusivo do usuário associado ao dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceName|String|Nome do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|Os detalhes do hardward para o dispositivo.  Inclui informações como espaço de armazenamento, fabricante, número de série, etc. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -71,7 +71,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Plataforma do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são:,,,,,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` , `androidForWork` , `androidEnterprise` , `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` ,,,,,.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Estado de conformidade do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|se o dispositivo está desbloqueado ou modificado. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm` e `windowsManagementCloudApi`.|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
 |osVersion|String|A versão do sistema operacional do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivated|Boolean|Se o dispositivo está ativado para Exchange ActiveSync. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easDeviceId|String|ID do Exchange ActiveSync do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -93,7 +93,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 |remoteAssistanceSessionUrl|String|A URL que permite que uma sessão de assistência remota seja estabelecida com o dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|String|Uma cadeia de caracteres de erro que identifica problemas durante a criação de objetos de sessão de Assistência remota. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |isEncrypted|Boolean|Status de criptografia de dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|userPrincipalName|Cadeia de caracteres|Nome principal de usuário de dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|userPrincipalName|String|Nome principal de usuário de dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |modelo|String|Modelo do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |fabricante|String|O fabricante do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |imei|String|IMEI. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -103,7 +103,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 |androidSecurityPatchLevel|String|Nível de patch de segurança do Android. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|Recursos habilitados para cliente do ConfigrMgr. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|wiFiMacAddress|String|MAC Wi-Fi. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|wiFiMacAddress|String|Wi-Fi MAC. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|O estado do atestado de integridade do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |subscriberCarrier|String|Operadora de assinante. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |meid|String|MEID. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -117,20 +117,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 |autopilotEnrolled|Boolean|Relata se o dispositivo gerenciado está inscrito via piloto automático. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |requireUserEnrollmentApproval|Boolean|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Relata a data de validade do certificado de gerenciamento de dispositivos. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|iccid|Cadeia de caracteres|Identificador de cartão de circuito integrado, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|udid|Cadeia de caracteres|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|iccid|String|Identificador de cartão de circuito integrado, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|udid|String|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|Contagem de malware ativo para este dispositivo Windows. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsRemediatedMalwareCount|Int32|Contagem de malware corrigido para este dispositivo Windows. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Observações sobre o dispositivo criado pelo administrador de ti herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Estado de integridade do cliente do Configuration Manager, válido somente para dispositivos gerenciados pelo agente MDM/ConfigMgr herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Informações do cliente do Configuration Manager, válidas apenas para dispositivos gerenciados, Duel ou tri gerenciados pelo agente do ConfigMgr herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|ethernetMacAddress|Cadeia de caracteres|MAC Ethernet. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|ethernetMacAddress|String|MAC Ethernet. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |physicalMemoryInBytes|Int64|Memória total em bytes. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Arquitetura do processador. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
-|specificationVersion|Cadeia de caracteres|Versão de especificação. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|specificationVersion|String|Versão de especificação. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Tipo de ingresso de dispositivo herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
-|skuFamily|Cadeia de caracteres|Família de SKU do dispositivo herdada de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|skuFamily|String|Família de SKU do dispositivo herdada de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |skuNumber|Int32|Número de SKU do dispositivo, Confira também: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo . Valores válidos de 0 a 2147483647. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Recursos de gerenciamento de dispositivos herdados do [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `none` e `microsoftManagedDesktop`.|
 
@@ -146,7 +146,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
-Content-length: 8026
+Content-length: 8115
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -188,7 +188,9 @@ Content-length: 8026
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
     "osBuildNumber": "Os Build Number value",
-    "operatingSystemProductType": 10
+    "operatingSystemProductType": 10,
+    "ipAddressV4": "Ip Address V4 value",
+    "subnetAddress": "Subnet Address value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -340,7 +342,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8075
+Content-Length: 8164
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -383,7 +385,9 @@ Content-Length: 8075
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
     "osBuildNumber": "Os Build Number value",
-    "operatingSystemProductType": 10
+    "operatingSystemProductType": 10,
+    "ipAddressV4": "Ip Address V4 value",
+    "subnetAddress": "Subnet Address value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -529,7 +533,6 @@ Content-Length: 8075
   "managementFeatures": "microsoftManagedDesktop"
 }
 ```
-
 
 
 

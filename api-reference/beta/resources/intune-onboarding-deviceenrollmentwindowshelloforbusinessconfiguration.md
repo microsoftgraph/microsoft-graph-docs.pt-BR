@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9322d343bbf5347e6017ee317d2ba6db9dd6baff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 169a2dc94a3fed11da765920bd3ee2bfd345bf60
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029705"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707665"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -44,7 +44,7 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenroll
 |createdDateTime|DateTimeOffset|Data e hora de criação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|Coleção String|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|Controla o número mínimo de caracteres necessários para o PIN do Windows Hello para empresas.  Esse valor deve estar entre 4 e 127, inclusive e menor ou igual ao valor definido para o PIN máximo.|
 |pinMaximumLength|Int32|Controla o número máximo de caracteres permitido para o PIN do Windows Hello para empresas. Esse valor deve estar entre 4 e 127, inclusive. Esse valor deve ser maior ou igual ao valor definido para o PIN mínimo.|
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Controla a capacidade de usar letras maiúsculas no PIN do Windows Hello para empresas.  Permitido permite o uso de letras maiúsculas, enquanto que Required garante que estão presentes. Se definido como não permitido, as letras maiúsculas não serão permitidas. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
@@ -100,7 +100,6 @@ Veja a seguir uma representação JSON do recurso.
   "securityKeyForSignIn": "String"
 }
 ```
-
 
 
 

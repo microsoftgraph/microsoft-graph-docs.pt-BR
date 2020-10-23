@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5b4ef00ccdab5ba6f1fab8087027e24a87e6f8c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8706fd6c15033c4db5ac9fb6f923c53d382519a0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080765"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706916"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>tipo de recurso userExperienceAnalyticsScoreHistory
 
@@ -34,7 +34,7 @@ O histórico de Pontuação de inicialização do dispositivo de análise da exp
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.|
+|id|String|O identificador exclusivo do processo de inicialização do dispositivo de análise da experiência do usuário.|
 |startupDateTime|DateTimeOffset|A experiência do usuário da data de início do dispositivo de análise.|
 |startupScore|Int32|Pontuação de inicialização do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
 |coreBootScore|Int32|A pontuação de inicialização do dispositivo de análise da experiência do usuário. A pontuação será no intervalo 0-100, 100 é a pontuação ideal.|
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "restartScore": 1024
 }
 ```
-
 
 
 

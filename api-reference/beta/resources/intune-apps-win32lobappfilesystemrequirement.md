@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 19ffbebea879856af5a00a77ad4329320be3f78f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab011739ed24a0f9880ccc72461f0c4eef5c0655
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966622"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708974"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>tipo de recurso win32LobAppFileSystemRequirement
 
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   "detectionType": "String"
 }
 ```
-
 
 
 

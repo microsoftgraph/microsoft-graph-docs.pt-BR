@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ab5b4b2fbf44fb50fd11e4186f5a3d07519006f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 162d2c3a71a00c62348a251a134ccc398c9ee2f1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020451"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706825"
 ---
 # <a name="create-androiddeviceownervpnconfiguration"></a>Criar androidDeviceOwnerVpnConfiguration
 
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -70,13 +70,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |role|String|Função quando o tipo de conexão é definido como pulsar seguro. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |esfera|String|O realm quando o tipo de conexão é definido como pulsar seguro. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |servidores|coleção [vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Lista de servidores VPN na rede. Verifique se os usuários finais podem acessar esses locais de rede. Esta coleção pode conter um máximo de 500 elementos. Herdado de [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|Connection|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Tipo de conexão. Os valores possíveis são: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`.|
+|Connection|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Tipo de conexão. Os valores possíveis são: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`, `netMotionMobility`.|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Servidor proxy.|
-|targetedPackageIds|Coleção String|IDs de pacote de aplicativos direcionados.|
+|targetedPackageIds|Coleção de cadeias de caracteres|IDs de pacote de aplicativos direcionados.|
 |targetedMobileApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Aplicativos móveis direcionados. Esta coleção pode conter um máximo de 500 elementos.|
-|alwaysOn|Booliano|Se a conexão VPN sempre ativa deve ou não ser habilitada.|
-|alwaysOnLockdown|Booliano|Se a conexão VPN sempre ativa estiver habilitada, se o tráfego de rede será ou não bloqueado quando essa VPN for desconectada.|
+|alwaysOn|Boolean|Se a conexão VPN sempre ativa deve ou não ser habilitada.|
+|alwaysOnLockdown|Boolean|Se a conexão VPN sempre ativa estiver habilitada, se o tráfego de rede será ou não bloqueado quando essa VPN for desconectada.|
 |microsoftTunnelSiteId|String|ID de site de túnel da Microsoft.|
+|customData|Coleção [KeyValue](../resources/intune-deviceconfig-keyvalue.md)|Dados personalizados para definir pares de chave/valor específicos para um provedor VPN. Essa coleção pode conter um máximo de 25 elementos.|
+|Customkeyvaluedata foi adicionada|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Dados personalizados para definir pares de chave/valor específicos para um provedor VPN. Essa coleção pode conter um máximo de 25 elementos.|
 
 
 
@@ -90,7 +92,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2077
+Content-length: 2383
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -155,7 +157,21 @@ Content-length: 2077
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "customData": [
+    {
+      "@odata.type": "microsoft.graph.keyValue",
+      "key": "Key value",
+      "value": "Value value"
+    }
+  ],
+  "customKeyValueData": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
 
@@ -164,7 +180,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2249
+Content-Length: 2555
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -232,10 +248,23 @@ Content-Length: 2249
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "customData": [
+    {
+      "@odata.type": "microsoft.graph.keyValue",
+      "key": "Key value",
+      "value": "Value value"
+    }
+  ],
+  "customKeyValueData": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ]
 }
 ```
-
 
 
 

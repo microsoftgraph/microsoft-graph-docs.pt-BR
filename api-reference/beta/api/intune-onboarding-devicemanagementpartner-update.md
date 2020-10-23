@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db0d71eb1bb6505034b4e66244721ce5c0dfc7c0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 84d7af6e0fcb1990e905b955cf604f29054976bc
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072169"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709226"
 ---
 # <a name="update-devicemanagementpartner"></a>Atualizar deviceManagementPartner
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceManagemen
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID da entidade|
+|id|String|ID da entidade|
 |lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação após a opção de administrador habilitado conectar-se ao parceiro de gerenciamento de dispositivo|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Tipo de aplicativo de parceiro. Os valores possíveis são: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|Cadeia de caracteres|Id do aplicativo do único locatário do parceiro|
-|displayName|Cadeia de caracteres|Nome de exibição de parceiro|
+|displayName|String|Nome de exibição de parceiro|
 |isConfigured|Booliano|Se o parceiro de gerenciamento de dispositivo está configurado ou não|
 |whenPartnerDevicesWillBeRemoved|DateTimeOffset|DateTime em UTC quando o PartnerDevices será removido. Isso se tornará obselete em breve.|
 |whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|DateTime em UTC quando PartnerDevices será marcado como não compatível. Isso se tornará obselete em breve.|
@@ -137,7 +137,6 @@ Content-Length: 1121
   ]
 }
 ```
-
 
 
 

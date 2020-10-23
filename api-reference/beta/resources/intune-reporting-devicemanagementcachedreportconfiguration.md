@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ffef0df742fa3f8a57c53398ff0270b2f3d7092
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 623346fa4ee70d95350dc1c27917f6059cf0b53c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039451"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706888"
 ---
 # <a name="devicemanagementcachedreportconfiguration-resource-type"></a>tipo de recurso deviceManagementCachedReportConfiguration
 
@@ -37,8 +37,8 @@ Entidade que representa a configuração de um relatório em cache
 |id|String|Identificador exclusivo para esta entidade|
 |reportName|String|Nome do relatório|
 |filter|String|Filtros aplicados na criação de relatórios.|
-|select|Coleção String|Colunas selecionadas do relatório|
-|Classificadoporativado|Coleção String|Ordenação de colunas no relatório|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
+|Classificadoporativado|Coleção de cadeias de caracteres|Ordenação de colunas no relatório|
 |los|String|Metadados gerenciados pelo chamador associados ao relatório|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do relatório em cache. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Hora em que o relatório em cache foi atualizado pela última vez|
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

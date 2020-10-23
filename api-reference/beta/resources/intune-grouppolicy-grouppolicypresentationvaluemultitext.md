@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a616d85703a5ccf890a0f314eaefe6f3ec57709
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee694b7a24c5ef1c707ce6fff83609ba36b5db10
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030700"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707735"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>tipo de recurso groupPolicyPresentationValueMultiText
 
@@ -40,7 +40,7 @@ Herda de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppol
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|Coleção String|Uma coleção de cadeias de caracteres não vazias para a apresentação associada.|
+|values|Coleção de cadeias de caracteres|Uma coleção de cadeias de caracteres não vazias para a apresentação associada.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -67,7 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

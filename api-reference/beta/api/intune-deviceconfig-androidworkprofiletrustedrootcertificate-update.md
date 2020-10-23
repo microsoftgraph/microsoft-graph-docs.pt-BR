@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75c5e61b48e565dd283df66893f80780937460c0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a6237950ec205d83f4ccc244a884cf65dc719915
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990197"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706818"
 ---
 # <a name="update-androidworkprofiletrustedrootcertificate"></a>Atualizar androidWorkProfileTrustedRootCertificate
 
@@ -162,7 +162,6 @@ Content-Length: 1323
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

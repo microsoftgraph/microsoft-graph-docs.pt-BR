@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e7b074aad93455cd6b667f3aa6e03738741d1f75
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b68aff8f052041890554f1c99128daf3b97ec805
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052674"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707140"
 ---
 # <a name="microsoftlauncherdockpresence-enum-type"></a>tipo de enumeração microsoftLauncherDockPresence
 
@@ -26,10 +26,9 @@ Seleção de presença de encaixe do Microsoft Launcher.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado; Esse valor é ignorado.|
-|programa|1 |Indica que o encaixe do dispositivo será exibido no dispositivo.|
-|ocult|2 |Indica que o encaixe do dispositivo ficará oculto no dispositivo, mas o usuário pode acessar o cais arrastando o manipulador na parte inferior da tela.|
-|desabilitadas|3 |Indica que o cais do dispositivo será desabilitado no dispositivo.|
-
+|programa|1|Indica que o encaixe do dispositivo será exibido no dispositivo.|
+|ocult|duas|Indica que o encaixe do dispositivo ficará oculto no dispositivo, mas o usuário pode acessar o cais arrastando o manipulador na parte inferior da tela.|
+|desabilitadas|3D|Indica que o cais do dispositivo será desabilitado no dispositivo.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 514e3d4c858a49ab51f5c3f7565ae4ccdf64be6e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42cfb2f4bf44f02870751e02f1cb973f96d2237c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993277"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707588"
 ---
 # <a name="pfxusercertificate-resource-type"></a>tipo de recurso pfxUserCertificate
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Ainda não documentado
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar pfxUserCertificates](../api/intune-raimportcerts-pfxusercertificate-list.md)|coleção [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md)|Listar Propriedades e relações dos objetos [pfxUserCertificate](../resources/intune-raimportcerts-pfxusercertificate.md) .|
@@ -85,7 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   "eTag": "String"
 }
 ```
-
 
 
 
