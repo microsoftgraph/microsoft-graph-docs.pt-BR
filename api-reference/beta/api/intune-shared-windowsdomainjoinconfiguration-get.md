@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e25511c308bce1a27e5579e8c61adbc7e7c8e8af
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 6578d570b3a810a52c9cd0009a622e86e2b10daf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404004"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702786"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>Obter windowsDomainJoinConfiguration
 
@@ -60,7 +60,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -111,3 +111,14 @@ Content-Length: 560
   }
 }
 ```
+
+
+
+
+
+
+
+
+
+
+

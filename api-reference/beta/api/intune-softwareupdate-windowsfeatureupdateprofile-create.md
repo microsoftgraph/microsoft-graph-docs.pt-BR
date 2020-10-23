@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68382c5b5dfdf38cb57f926b3aed7623e6180cb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c391483f2127ba89a98b0b02a8c2ebd5b1c83e07
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053696"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702772"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Criar windowsFeatureUpdateProfile
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsF
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador da entidade.|
-|displayName|Cadeia de caracteres|O nome de exibição do perfil.|
+|id|String|O identificador da entidade.|
+|displayName|String|O nome de exibição do perfil.|
 |description|String|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
+|featureUpdateVersion|String|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data e hora em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora em que o perfil foi modificado pela última vez.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de atualização de recurso.|
@@ -106,7 +106,6 @@ Content-Length: 441
   ]
 }
 ```
-
 
 
 

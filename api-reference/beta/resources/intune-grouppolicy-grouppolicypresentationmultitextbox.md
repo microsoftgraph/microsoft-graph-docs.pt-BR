@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87e4cc56e83d40ea5d4de401c53105536a226db7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 90ca7f84607b63c548edd88c2967c5975b33a8d7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030833"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702429"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>tipo de recurso groupPolicyPresentationMultiTextBox
 
@@ -40,7 +40,7 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|obrigatório|Booliano|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
+|obrigatório|Boolean|Requisito para inserir um valor na caixa de texto. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro sem sinal que especifica o número máximo de caracteres de texto. O valor padrão é 1023.|
 |maxStrings|Int64|Um inteiro sem sinal que especifica o número máximo de cadeias de caracteres. O valor padrão é 0.|
 
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "maxStrings": 1024
 }
 ```
-
 
 
 

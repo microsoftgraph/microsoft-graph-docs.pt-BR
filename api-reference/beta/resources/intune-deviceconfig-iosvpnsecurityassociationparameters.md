@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc1bf75fffe3f4008171320a78d1a487cdd0771a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c751c799c385c09d60aa7c57db8425173d093151
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092661"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702527"
 ---
 # <a name="iosvpnsecurityassociationparameters-resource-type"></a>tipo de recurso iosVpnSecurityAssociationParameters
 
@@ -27,7 +27,7 @@ Parâmetros de associação de segurança VPN
 |:---|:---|:---|
 |securityEncryptionAlgorithm|[vpnEncryptionAlgorithmType](../resources/intune-deviceconfig-vpnencryptionalgorithmtype.md)|Algoritmo de criptografia. Os valores possíveis são: `aes256`, `des`, `tripleDes`, `aes128`, `aes128Gcm`, `aes256Gcm`, `aes192`, `aes192Gcm`.|
 |securityIntegrityAlgorithm|[vpnIntegrityAlgorithmType](../resources/intune-deviceconfig-vpnintegrityalgorithmtype.md)|Algoritmo de integridade. Os possíveis valores são: `sha2_256`, `sha1_96`, `sha1_160`, `sha2_384`, `sha2_512`, `md5`.|
-|securityDiffieHellmanGroup|Int32|Grupo Diffie-Hellman|
+|securityDiffieHellmanGroup|Int32|Diffie-Hellman grupo|
 |lifetimeInMinutes|Int32|Tempo de vida (minutos)|
 
 ## <a name="relationships"></a>Relações
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "lifetimeInMinutes": 1024
 }
 ```
-
 
 
 

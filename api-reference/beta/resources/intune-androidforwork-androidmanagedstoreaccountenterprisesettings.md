@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d4a0803b766b96d957b484baa81f807f1e8f35d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4ec96b4330f4b96b7b091162e9dfdcb33f4de611
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013514"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702681"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>tipo de recurso androidManagedStoreAccountEnterpriseSettings
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Configurações da empresa para uma conta de repositório gerenciado do Android.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter androidManagedStoreAccountEnterpriseSettings](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-get.md)|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|Leia as propriedades e as relações do objeto [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) .|
@@ -92,7 +92,6 @@ Veja a seguir uma representação JSON do recurso.
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
 
 
 

@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0afe1b29abeb82922f1e36d1d61ca86f2e2bcd23
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17db5f26634691eef6dba3d93f4e43acd3faac37
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004155"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701624"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -27,6 +27,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 
 - [Modo de registro do proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Perfil de registro de proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Tipo de token de registro de proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmenttokentype.md)
 - [Código da empresa de registro do Android](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Aplicativo Android for Work](intune-apps-androidforworkapp.md)
 - [Esquema de configuração do aplicativo Android for Work](intune-androidforwork-androidforworkappconfigurationschema.md)
@@ -187,5 +188,3 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Aplicativo da Windows Store](intune-apps-windowsstoreapp.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
 - [Aplicativo contido do Windows universal AppX](intune-apps-windowsuniversalappxcontainedapp.md)
-
-

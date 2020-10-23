@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso iosAzureAdSingleSignOnExtension
-description: Representa um perfil de extensão de logon único do Azure AD-Type para dispositivos iOS.
+description: Representa um perfil de extensão single Sign-On de tipo de AD do Azure para dispositivos iOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7c1349eacff4275e49a7e31b380b6e01245da709
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f330fad7553d702368c1b0f4a26eee0a35f40e32
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971878"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701533"
 ---
 # <a name="iosazureadsinglesignonextension-resource-type"></a>tipo de recurso iosAzureAdSingleSignOnExtension
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa um perfil de extensão de logon único do Azure AD-Type para dispositivos iOS.
+Representa um perfil de extensão single Sign-On de tipo de AD do Azure para dispositivos iOS.
 
 
 Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)
@@ -28,7 +28,7 @@ Herda de [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enableSharedDeviceMode|Boolean|Habilita ou desabilita o modo de dispositivo compartilhado.|
+|enableSharedDeviceMode|Booliano|Habilita ou desabilita o modo de dispositivo compartilhado.|
 |bundleIdAccessControlList|Coleção de cadeias de caracteres|Uma lista opcional de IDs de pacote adicionais que podem usar a extensão AAD para logon único.|
 |as|coleção [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Obtém ou define uma lista de pares de valores de chave digitados usados para configurar perfis de tipo de credencial. Esta coleção pode conter um máximo de 500 elementos.|
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

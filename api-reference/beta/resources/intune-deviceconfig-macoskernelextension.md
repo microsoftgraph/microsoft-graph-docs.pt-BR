@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef7004fd7be5340a7e5a1614e51d3ecdfd6f7ff4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22d37a87a8cdc33791907d305eca36d8ceb0fb8c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024105"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701470"
 ---
 # <a name="macoskernelextension-resource-type"></a>tipo de recurso macOSKernelExtension
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "bundleId": "String"
 }
 ```
-
 
 
 

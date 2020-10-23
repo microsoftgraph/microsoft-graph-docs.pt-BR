@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1e74178c160560d806f4947e9c2fd3533d6739c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f2157fccff9cbd6a1618b5989b91bb95edae576c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064098"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702233"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>tipo de recurso windowsFeatureUpdateProfile
 
@@ -35,10 +35,10 @@ Perfil de atualização de recursos do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador da entidade.|
-|displayName|Cadeia de caracteres|O nome de exibição do perfil.|
+|id|String|O identificador da entidade.|
+|displayName|String|O nome de exibição do perfil.|
 |description|String|A descrição do perfil especificado pelo usuário.|
-|featureUpdateVersion|Cadeia de caracteres|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
+|featureUpdateVersion|String|A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil. A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.|
 |createdDateTime|DateTimeOffset|A data e hora em que o perfil foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora em que o perfil foi modificado pela última vez.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de atualização de recurso.|
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

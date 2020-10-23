@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 453ef7dd848af24c685e095a017e9db06509b2bd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 654c6cc2a47c2d895034fc787d27ac60409f0902
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990015"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703045"
 ---
 # <a name="update-grouppolicypresentationmultitextbox"></a>Atualizar groupPolicyPresentationMultiTextBox
 
@@ -101,7 +101,6 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
-
 
 
 

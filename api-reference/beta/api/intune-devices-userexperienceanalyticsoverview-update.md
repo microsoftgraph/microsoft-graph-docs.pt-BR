@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d92a703d548367342f8b2c6ede338edc8bf271f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83ab928a661ed00f3f0f78da3d2b457cd22ecaa2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047473"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702051"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Atualizar userExperienceAnalyticsOverview
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [userExp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da visão geral da análise da experiência do usuário.|
+|id|String|O identificador exclusivo da visão geral da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da análise da experiência do usuário.|
 |deviceBootPerformanceOverallScore|Int32|A pontuação geral do desempenho de inicialização do dispositivo analítico da experiência do usuário.|
 |bestPracticesOverallScore|Int32|A pontuação geral das práticas recomendadas de análise da experiência do usuário.|
@@ -133,7 +133,6 @@ Content-Length: 790
   "bestPracticesHealthState": "insufficientData"
 }
 ```
-
 
 
 

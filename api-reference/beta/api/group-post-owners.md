@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e7a15b9fdda3b48fb79318a25a8ce5ce0c853caa
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: dea445040bc69418e9c4090ee9e7a5f2ccc84602
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373213"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701414"
 ---
 # <a name="add-group-owner"></a>Adicionar proprietário do grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adiciona um usuário aos proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo.
+Adicione uma entidade de serviço ou de usuário aos proprietários do grupo. Os proprietários são um conjunto de usuários ou entidades de serviço que têm permissão para modificar o objeto de grupo.
 
 >**Importante:** se você atualizar os proprietários do grupo, e você criou uma equipe para o grupo, poderá levar até duas horas para que os proprietários sejam sincronizados com o Microsoft Teams. Além disso, se você quiser que o proprietário seja capaz de fazer alterações em uma equipe - por exemplo, criando um plano Planner - o proprietário também precisará ser adicionado como um membro do grupo/equipe. 
 
@@ -46,7 +46,7 @@ POST /groups/{id}/owners/$ref
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/user.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`. Não retorna nada no corpo da resposta. Este método retorna um `400 Bad Request` código de resposta quando o objeto já é um membro do grupo. Este método retorna um `404 Not Found` código de resposta quando o objeto que está sendo adicionado não existe.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta. Esse método retorna um `400 Bad Request` código de resposta quando o objeto já é um membro do grupo. Esse método retorna um `404 Not Found` código de resposta quando o objeto adicionado não existe.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
@@ -84,7 +84,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [user]
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

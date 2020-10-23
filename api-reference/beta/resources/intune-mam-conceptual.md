@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4b07f3d474c221ec610152848f5240cd20114552
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 62a3b0e9751acaa552dc1deed037bb3356cfce0b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030490"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702387"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -80,5 +80,3 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Coleção de recursos da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Aplicativo de loja de proteção de informações do Windows](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Ação wipe de proteção de informações do Windows](intune-mam-windowsinformationprotectionwipeaction.md)
-
-

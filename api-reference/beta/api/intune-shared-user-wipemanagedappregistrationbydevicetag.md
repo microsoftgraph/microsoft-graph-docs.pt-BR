@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e401b453907aeed9b700d2a79ac348bf961c7619
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 02385c1ca18f4de0ae9a12e1d1d5dad3ad6fa076
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085553"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702877"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>Ação wipeManagedAppRegistrationByDeviceTag
 
@@ -88,7 +88,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

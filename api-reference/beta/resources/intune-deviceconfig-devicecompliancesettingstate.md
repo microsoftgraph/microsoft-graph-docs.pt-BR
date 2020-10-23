@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81f4c4a4eadcf583498db5c56b3953732c4b5fe8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b87b2dec9c22de1d9fb8b7b5660a4cd7bff0a449
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998737"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701582"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Tipo de recurso deviceComplianceSettingState
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Estado de configuração de conformidade de um determinado dispositivo.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceComplianceSettingStates](../api/intune-deviceconfig-devicecompliancesettingstate-list.md)|Conjunto [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|Listar propriedades e relações de objetos de [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md).|
@@ -77,7 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 
