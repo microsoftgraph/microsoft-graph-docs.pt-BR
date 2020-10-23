@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b0cd83bb76cb43e75452a0c56b921c720b414bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e31460ea9c58a934a3526493152db42ed1f6cb3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049539"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693889"
 ---
 # <a name="restrictedappsstate-enum-type"></a>tipo de enumeração restrictedAppsState
 
@@ -26,8 +26,7 @@ Estado de aplicativos restritos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |prohibitedApps|,0|Aplicativos proibidos|
-|notApprovedApps|1 |Aplicativos não aprovados|
-
+|notApprovedApps|1|Aplicativos não aprovados|
 
 
 

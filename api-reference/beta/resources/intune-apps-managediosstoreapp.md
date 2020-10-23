@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: affe16dfccabca0680948bb5ba20cc1f8444b606
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2571584b69d4944103d44fc79e9adeaa9df49fc6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985969"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694113"
 ---
 # <a name="managediosstoreapp-resource-type"></a>managedIOSStoreApp resource type
 
@@ -25,7 +25,7 @@ Contém propriedades e propriedades herdadas para aplicativo da loja iOS que voc
 
 Herda de [managedApp](../resources/intune-apps-managedapp.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedIOSStoreApps](../api/intune-apps-managediosstoreapp-list.md)|Coleção [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md)|Lista propriedades e relações dos objetos [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md).|
@@ -47,7 +47,7 @@ Herda de [managedApp](../resources/intune-apps-managedapp.md)
 |isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|proprietário|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Anotações do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|O estado de upload. Os valores possíveis são: 0- `Not Ready` , 1- `Ready` , 2- `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -131,7 +131,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

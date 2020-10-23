@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d445652f6605be74806f762e09f62a9c11b588ef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82e9192aa6a99e5e7ce35ad9e5208ff098c97612
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065792"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693469"
 ---
 # <a name="update-managedalldevicecertificatestate"></a>Atualizar managedAllDeviceCertificateState
 
@@ -53,18 +53,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|A hora em que o status da revogação foi alterado pela última vez|
-|managedDeviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userPrincipalName|Cadeia de caracteres|Nome UPN|
+|managedDeviceDisplayName|String|Nome de exibição do dispositivo|
+|userPrincipalName|String|Nome UPN|
 |certificateExpirationDateTime|DateTimeOffset|Data de vencimento do certificado|
-|certificateIssuerName|Cadeia de caracteres|Emissor|
-|certificateThumbprint|Cadeia de caracteres|Identificação|
-|certificateSerialNumber|Cadeia de caracteres|Número de série|
-|certificateSubjectName|Cadeia de caracteres|Nome do assunto do certificado|
+|certificateIssuerName|String|Emissor|
+|certificateThumbprint|String|Impressão Digital|
+|certificateSerialNumber|String|Número de série|
+|certificateSubjectName|String|Nome do assunto do certificado|
 |certificateKeyUsages|Int32|Uso de chave|
-|certificateExtendedKeyUsages|Cadeia de caracteres|Uso avançado de chave|
+|certificateExtendedKeyUsages|String|Uso avançado de chave|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 
 
@@ -122,7 +122,6 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

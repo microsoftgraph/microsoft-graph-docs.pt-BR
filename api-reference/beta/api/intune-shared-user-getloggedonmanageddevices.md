@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1637d32922d538a24bc14df5a0850a3f4e6f0593
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 316648459a0ea09e55f156166be8ff00dfb91617
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062537"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694169"
 ---
 # <a name="getloggedonmanageddevices-function"></a>função getLoggedOnManagedDevices
 
@@ -234,7 +234,6 @@ Content-Length: 7485
   ]
 }
 ```
-
 
 
 

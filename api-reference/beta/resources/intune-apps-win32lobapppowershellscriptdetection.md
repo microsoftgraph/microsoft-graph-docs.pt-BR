@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4bb3d52b39c48a43dbc9d90b9565f88209e37e4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 06ef929412f2f977d6017ab30dc1ea268bbaf59a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049713"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694064"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>tipo de recurso win32LobAppPowerShellScriptDetection
 
@@ -28,9 +28,9 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enforceSignatureCheck|Booliano|Um valor que indica se a verificação de assinatura é imposta|
-|runAs32Bit|Booliano|Um valor que indica se este script deve ser executado como 32 bits|
-|scriptContent|Cadeia de caracteres|O conteúdo de script codificado em base64 para detectar o aplicativo de LoB (linha de negócios) do Win32|
+|enforceSignatureCheck|Boolean|Um valor que indica se a verificação de assinatura é imposta|
+|runAs32Bit|Boolean|Um valor que indica se este script deve ser executado como 32 bits|
+|scriptContent|String|O conteúdo de script codificado em base64 para detectar o aplicativo de LoB (linha de negócios) do Win32|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "scriptContent": "String"
 }
 ```
-
 
 
 
