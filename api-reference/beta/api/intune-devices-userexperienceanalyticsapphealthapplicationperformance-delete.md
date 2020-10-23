@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ff10b4e85f19ee06b45b2174acfc287aaaf5fd9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d3990f581ffa4f66ecf3ddcc46867cc8bd4fe8c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017616"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696759"
 ---
-# <a name="delete-userexperienceanalyticsapphealthapplicationperformance"></a><span data-ttu-id="d6dbc-103">Excluir userExperienceAnalyticsAppHealthApplicationPerformance</span><span class="sxs-lookup"><span data-stu-id="d6dbc-103">Delete userExperienceAnalyticsAppHealthApplicationPerformance</span></span>
+# <a name="delete-userexperienceanalyticsapphealthapplicationperformance"></a><span data-ttu-id="4f514-103">Excluir userExperienceAnalyticsAppHealthApplicationPerformance</span><span class="sxs-lookup"><span data-stu-id="4f514-103">Delete userExperienceAnalyticsAppHealthApplicationPerformance</span></span>
 
-<span data-ttu-id="d6dbc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d6dbc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4f514-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4f514-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d6dbc-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d6dbc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4f514-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="4f514-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d6dbc-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d6dbc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4f514-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="4f514-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d6dbc-107">Exclui [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md).</span><span class="sxs-lookup"><span data-stu-id="d6dbc-107">Deletes a [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md).</span></span>
+<span data-ttu-id="4f514-107">Exclui [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md).</span><span class="sxs-lookup"><span data-stu-id="4f514-107">Deletes a [userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d6dbc-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d6dbc-108">Prerequisites</span></span>
-<span data-ttu-id="d6dbc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d6dbc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4f514-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="4f514-108">Prerequisites</span></span>
+<span data-ttu-id="4f514-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4f514-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d6dbc-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d6dbc-111">Permission type</span></span>|<span data-ttu-id="d6dbc-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="d6dbc-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4f514-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4f514-111">Permission type</span></span>|<span data-ttu-id="4f514-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="4f514-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d6dbc-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d6dbc-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d6dbc-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6dbc-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="d6dbc-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d6dbc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d6dbc-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d6dbc-116">Not supported.</span></span>|
-|<span data-ttu-id="d6dbc-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d6dbc-117">Application</span></span>|<span data-ttu-id="d6dbc-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6dbc-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="4f514-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4f514-113">Delegated (work or school account)</span></span>|<span data-ttu-id="4f514-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f514-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="4f514-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4f514-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4f514-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f514-116">Not supported.</span></span>|
+|<span data-ttu-id="4f514-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4f514-117">Application</span></span>|<span data-ttu-id="4f514-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f514-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d6dbc-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d6dbc-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4f514-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4f514-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,32 +40,31 @@ ms.locfileid: "48017616"
 DELETE /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{userExperienceAnalyticsAppHealthApplicationPerformanceId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d6dbc-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d6dbc-120">Request headers</span></span>
-|<span data-ttu-id="d6dbc-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d6dbc-121">Header</span></span>|<span data-ttu-id="d6dbc-122">Valor</span><span class="sxs-lookup"><span data-stu-id="d6dbc-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4f514-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4f514-120">Request headers</span></span>
+|<span data-ttu-id="4f514-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4f514-121">Header</span></span>|<span data-ttu-id="4f514-122">Valor</span><span class="sxs-lookup"><span data-stu-id="4f514-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d6dbc-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="d6dbc-123">Authorization</span></span>|<span data-ttu-id="d6dbc-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d6dbc-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d6dbc-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="d6dbc-125">Accept</span></span>|<span data-ttu-id="d6dbc-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d6dbc-126">application/json</span></span>|
+|<span data-ttu-id="4f514-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="4f514-123">Authorization</span></span>|<span data-ttu-id="4f514-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4f514-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4f514-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="4f514-125">Accept</span></span>|<span data-ttu-id="4f514-126">application/json</span><span class="sxs-lookup"><span data-stu-id="4f514-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d6dbc-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d6dbc-127">Request body</span></span>
-<span data-ttu-id="d6dbc-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d6dbc-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4f514-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4f514-127">Request body</span></span>
+<span data-ttu-id="4f514-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4f514-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d6dbc-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="d6dbc-129">Response</span></span>
-<span data-ttu-id="d6dbc-130">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="d6dbc-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="4f514-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f514-129">Response</span></span>
+<span data-ttu-id="4f514-130">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="4f514-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d6dbc-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d6dbc-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4f514-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4f514-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d6dbc-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d6dbc-132">Request</span></span>
-<span data-ttu-id="d6dbc-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d6dbc-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4f514-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4f514-132">Request</span></span>
+<span data-ttu-id="4f514-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4f514-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{userExperienceAnalyticsAppHealthApplicationPerformanceId}
 ```
 
-### <a name="response"></a><span data-ttu-id="d6dbc-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="d6dbc-134">Response</span></span>
-<span data-ttu-id="d6dbc-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d6dbc-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4f514-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f514-134">Response</span></span>
+<span data-ttu-id="4f514-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4f514-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
