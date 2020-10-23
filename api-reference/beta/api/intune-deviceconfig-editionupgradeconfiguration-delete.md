@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9e5baec3dde5fa9268351b19ed2518c4d27c695
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc04614f07779d095cecd46718fb0584776e64d7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082865"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736615"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>Excluir editionUpgradeConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

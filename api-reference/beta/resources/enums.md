@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 72ad6506cf90f0341148ef0b32f804e6ee4d12a7
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 3bf4c8a4f7926c7abec422f7c5ecf5000e9b0bf5
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433419"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48741982"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -176,7 +176,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|Unidade|
+|drive|
 
 ### <a name="bucketaggregationsortproperty-values"></a>valores de bucketAggregationSortProperty
 
@@ -222,9 +222,9 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |automóvel|
-|calendário|
+|calendar|
 |com|
 |plano|
 |firstAid|
@@ -275,7 +275,7 @@ Namespace: microsoft.graph
 
 | Member
 |:----------------------------
-|Nenhuma
+|none
 |shift
 |swapRequest
 |openShift
@@ -325,7 +325,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| Nenhuma
+| none
 | contactsOnly
 | todos os
 
@@ -440,7 +440,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| Nenhuma
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -472,7 +472,7 @@ Namespace: microsoft.graph
 | deviceDefault
 | Bandeira
 | JanelaRestrita
-| Nenhuma
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
@@ -674,7 +674,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| Nenhuma
+| none
 | organizer
 | tentativelyAccepted
 | aceito
@@ -707,7 +707,7 @@ Namespace: microsoft.graph
 
 | Membro   | Valor |
 | :------- | :---- |
-| Nenhuma     | -1    |
+| none     | -1    |
 | preset0  | ,0     |
 | preset1  | 1     |
 | preset2  | duas     |
@@ -827,7 +827,7 @@ Enumeração para tipos de valor do registro, conforme definido pelos [tipos de 
 | expandSz          | 5      | REG_EXPAND_SZ tipo de valor do registro.           |
 | vínculo              | 6      | REG_LINK tipo de valor do registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do registro.            |
-| Nenhuma              | 8      | REG_NONE tipo de valor do registro.                |
+| none              | 8      | REG_NONE tipo de valor do registro.                |
 | QWORD             | 9      | REG_QWORD tipo de valor do registro.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do registro. |
 | v                | 11    | REG_SZ tipo de valor do registro.                  |
@@ -889,11 +889,11 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | força         | 1     | Membro do grupo de usuários avançados.    |
 | administrador | duas     | Membro do grupo Administradores. |
 
-### <a name="chatmessagepolicyviolationdlpactiontypevalues"></a>valores de chatMessagePolicyViolationDlpActionType
+### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>valores de chatMessagePolicyViolationDlpActionType
 
 | Valor |
 |:-----------------|
-| Nenhuma |
+| none |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -913,14 +913,14 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |medium|
 |high|
 |hidden|
-|Nenhuma|
+|none|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>valores de risco
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |confirmedSafe|
 |corrigidos|
 |Descartado pelo|
@@ -932,7 +932,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -1135,7 +1135,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |freeBusyRead|
 |limitedRead|
 |leitura|
@@ -1265,7 +1265,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | duas     | Ameaça de URL.             |
 | file   | 3D     | Ameaça do arquivo de anexo. |
 
@@ -1312,7 +1312,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| Nenhuma                  | ,0     | Ainda não conhece.                       |
+| none                  | ,0     | Ainda não conhece.                       |
 | mailFlowRule          | 1     | Regra de transporte do Exchange.            |
 | safeSender            | duas     | Lista de remetentes seguros.                   |
 | blockedSender         | 3D     | Lista de remetentes bloqueados.                |
@@ -1352,6 +1352,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | unknownFutureValue
 
 ### <a name="userflowtype-values"></a>valores de userflowtype
+
 |Member
 |:----------------------
 | Inscrição
@@ -1363,30 +1364,34 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | unknownFutureValue
 
 ### <a name="openidconnectresponsemode-values"></a>valores de openIdConnectResponseMode
+
 | Member
 |:----------------------
-| Nenhuma
+| none
 | form_post
 | consulta
 | unknownFutureValue
 
 ### <a name="openidconnectresponsetypes-values"></a>valores de openIdConnectResponseTypes
+
 | Member
 |:----------------------
-| Nenhuma
+| none
 | código
 | id_token
 | token
 
 ### <a name="wellknownlistname-values"></a>valores de wellknownListName
+
 | Member
 |:----------------------
-| Nenhuma
+| none
 | defaultlist
 | flaggedEmails
 | unknownFutureValue
 
 ### <a name="taskstatus-values"></a>valores de taskStatus
+
 | Member
 |:----------------------
 | notStarted
@@ -1416,6 +1421,24 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |:---|
 |user|
 |group|
+
+### <a name="identityuserflowattributedatatype-values"></a>valores de identityUserFlowAttributeDataType
+
+| Membro                | Valor | Descrição                         |
+|:----------------------|:------|:------------------------------------|
+| string                | 1     | Tipo de dados de cadeias de caracteres                    |
+| booliano               | duas     | Tipo de dados Booliano                   |
+| Int64                 | 3D     | Tipo de dados int                       |
+| StringCollection      | 4      | Tipo de dados da coleção String         |
+| unknownFutureValue    | 5      | Um membro Sentinel.                  |
+
+### <a name="identityuserflowattributetype-values"></a>valores de identityUserFlowAttributeType
+
+| Membro                | Valor | Descrição                                                        |
+|:----------------------|:------|:-------------------------------------------------------------------|
+| Interna               | 1     | Este tipo de atributo de fluxo de usuário denota que foi criado pelo sistema |
+| cliente                | duas     | Este tipo de atributo de fluxo de usuário denota que foi criado pelo usuário   |
+| unknownFutureValue    | 3D     | Um membro Sentinel.                                                 |
 
 ### <a name="connectionstate-values"></a>valores ConnectionState
 

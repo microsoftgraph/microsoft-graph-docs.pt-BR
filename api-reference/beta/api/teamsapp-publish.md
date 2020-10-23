@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 52d216329ce1701c7322572bb3363dc27e22e4f2
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: cf5dde98d9f21249a23d6806b4f79dd6ae824572
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315144"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48741933"
 ---
 # <a name="publish-teamsapp"></a>Publicar teamsApp
 
@@ -110,7 +110,6 @@ Content-Type: application/json
   "version": "1.0.0",
   "distributionMethod": "organization"
 }
-
 ```
 
 ### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Exemplo 2: carregar um novo aplicativo para revisão para o catálogo de aplicativos de uma organização

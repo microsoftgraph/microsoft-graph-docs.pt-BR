@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 415b619692eb28329e66758f749597822a336ea7
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 9b0fd92958573fe067d3030273be1a93542054c1
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635576"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742178"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -924,6 +924,43 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
+## <a name="identity-user-flow-permissions"></a>Identidade de permissões de fluxo de usuário
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da Conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityUserFlow.Read.All_ |   Ler todos os fluxos de usuário de identidade em um locatário  | Permite que o aplicativo leia os fluxos de usuários da sua organização. | Sim | Não |
+| _IdentityUserFlow.ReadWrite.All_ |   Ler e gravar todos os fluxos de usuário de identidade em um locatário.    | Permite que o aplicativo leia ou grave os fluxos de usuários da sua organização. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da Conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityUserFlow.Read.All_ |   Ler todos os fluxos de usuário de identidade em um locatário  | Permite que o aplicativo leia os fluxos de usuários da sua organização. | Sim | Não |
+| _IdentityUserFlow.ReadWrite.All_ |   Ler e gravar todos os fluxos de usuário de identidade em um locatário.    | Permite que o aplicativo leia ou grave os fluxos de usuários da sua organização. | Sim | Não |
+
+### <a name="remarks"></a>Comentários
+
+_IdentityUserFlow.Read.All_ e _IdentityUserFlow.ReadWrite.ALL_ são válidos apenas para contas corporativas ou de estudante. Para um aplicativo com permissões delegadas para ler ou gravar fluxos de usuário, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global ou Administrador do Usuário. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated-and-application"></a>Permissões delegadas e de aplicativo
+
+Os seguintes usos são válidos para permissões delegadas e permissões de aplicativo:
+
+* _IdentityUserFlow.Read.All_: ler todos os fluxos de usuário em um locatário do Azure AD B2C (`GET beta/identity/b2cUserFlows`)
+* _IdentityUserFlow.Read.All_: ler todos os fluxos de usuário em um locatário do Azure Active Directory (Azure AD) (`GET beta/identity/b2xUserFlows`)
+* _IdentityUserFlow.ReadWrite.All_: criar um novo fluxo de usuário em um locatário do Azure AD B2C (`POST beta/identity/b2cUserFlows`)
+* _IdentityUserFlow.ReadWrite.All_: criar um novo fluxo de usuário em um locatário do Azure Active Directory (Azure AD) (`POST beta/identity/b2xUserflows`)
+* _IdentitytUserFlow.ReadWrite.All_: adicionar um provedor de identidade a um fluxo de usuário do Azure AD B2C (`PATCH beta/identity/b2cUserFlows/{id}/identityProviders/$ref`)
+* _IdentityUserFlow.ReadWrite.All_: remover um provedor de identidade de um usuário do Azure AD B2C (`DELETE beta/identity/b2cUserFlows/{id}/identityProviders/{id}`)
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
 ## <a name="information-protection-policy-permissions"></a>Permissões de política de proteção de informações
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -1111,7 +1148,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da Conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Notes.Read_ |    Ler blocos de anotações do OneNote do usuário | Permite ao aplicativo ler os títulos dos blocos de anotações e seções do OneNote e criar novas páginas, blocos de anotações e seções em nome do usuário conectado. | Não | Sim
 | _Notes.Create_ |    Criar blocos de anotações do OneNote do usuário | Permite ao aplicativo ler os títulos dos blocos de anotações e seções do OneNote e criar novas páginas, blocos de anotações e seções em nome do usuário conectado.| Não | Sim

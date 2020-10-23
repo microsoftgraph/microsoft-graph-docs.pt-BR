@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9f5420be04edd565cf0fa325f1eaf2fc5e76f5d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e6d479193fdb9e54e11dc26950aa17bcb30973b0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065680"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736580"
 ---
 # <a name="create-windows10compliancepolicy"></a>Criar windows10CompliancePolicy
 
@@ -54,11 +54,11 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Booliano|Exige uma senha para desbloquear o dispositivo Windows.|
 |passwordBlockSimple|Booliano|Indica se a senha simples deve ou não ser bloqueada.|
@@ -81,9 +81,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |storageRequireEncryption|Boolean|Exige criptografia em dispositivos Windows.|
 |Propriedades activefirewallrequired|Booliano|Exigir firewall ativo em dispositivos Windows.|
 |defenderEnabled|Booliano|Requer o Windows Defender Antimalware em dispositivos Windows.|
-|defenderVersion|Cadeia de caracteres|Requer a versão mínima do Windows Defender Antimalware em dispositivos Windows.|
+|defenderVersion|String|Requer a versão mínima do Windows Defender Antimalware em dispositivos Windows.|
 |signatureOutOfDate|Booliano|Requer que a assinatura antimalware do Windows Defender esteja atualizada em dispositivos Windows.|
-|rtpEnabled|Booliano|Requer a proteção em tempo real do Windows Defender Antimalware em dispositivos Windows.|
+|rtpEnabled|Booliano|Requer o Windows Defender Antimalware Real-Time proteção em dispositivos Windows.|
 |antivirusRequired|Booliano|Exigir que qualquer solução antivírus registrada com o Windows Decurity Center seja ativada e monitorando (por exemplo, Symantec, Windows Defender).|
 |antiSpywareRequired|Booliano|Exija que qualquer solução AntiSpyware registrada com o Windows Decurity Center seja ativada e monitoramento (por exemplo, Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|coleção [operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Os intervalos válidos da compilação do sistema operacional em dispositivos Windows. Essa coleção pode conter um máximo de 10.000 elementos.|
@@ -224,7 +224,6 @@ Content-Length: 2083
   }
 }
 ```
-
 
 
 

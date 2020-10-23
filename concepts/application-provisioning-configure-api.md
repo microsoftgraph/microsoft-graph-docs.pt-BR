@@ -5,12 +5,12 @@ author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e08a1c9c3d16cfe0a413d65dc6c0b918b8567393
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: a3fb3dfd7d083e2e160dea4c01d1a17363273243
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373374"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48741940"
 ---
 # <a name="configure-provisioning-using-microsoft-graph-apis"></a>Configurar o provisionamento usando as APIs do Microsoft Graph
 
@@ -285,7 +285,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.synchronizationJob"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-type: application/json
 
 {
@@ -322,9 +322,9 @@ Teste a conexão com o aplicativo de terceiros. O exemplo a seguir é para um ap
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 { 
-    credentials: [ 
-        { key: "ClientSecret", value: "xxxxxxxxxxxxxxxxxxxxx" },
-        { key: "SecretToken", value: "xxxxxxxxxxxxxxxxxxxxx" }
+    "credentials": [ 
+        { "key": "ClientSecret", "value": "xxxxxxxxxxxxxxxxxxxxx" },
+        { "key": "SecretToken", "value": "xxxxxxxxxxxxxxxxxxxxx" }
     ]
 }
 ```
@@ -347,9 +347,9 @@ A configuração do provisionamento requer o estabelecimento de uma confiança e
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/secrets 
  
 { 
-    value: [ 
-        { key: "ClientSecret", value: "xxxxxxxxxxxxxxxxxxxxx" },
-        { key: "SecretToken", value: "xxxxxxxxxxxxxxxxxxxxx" }
+    "value": [ 
+        { "key": "ClientSecret", "value": "xxxxxxxxxxxxxxxxxxxxx" },
+        { "key": "SecretToken", "value": "xxxxxxxxxxxxxxxxxxxxx" }
     ]
 }
 ```
