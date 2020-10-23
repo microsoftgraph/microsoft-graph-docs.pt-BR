@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 71cc9a02eb0d538995a2f7e3aee39cbbe63a7304
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 148d126df775ad67263b8c7c1b4ab6318b927755
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084314"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730358"
 ---
 # <a name="devicetype-enum-type"></a>tipo de enumeração DeviceType
 
@@ -26,8 +26,8 @@ Tipo de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |placa|,0|Placa.|
-|windowsRT|1 |WindowsRT.|
-|winMO6|2 |WinMO6.|
+|windowsRT|1|WindowsRT.|
+|winMO6|duas|WinMO6.|
 |Nokia|3D|Nokia.|
 |Windowsphonee|4 |Windows Phone.|
 |mac|5 |MacOS.|
@@ -36,7 +36,7 @@ Tipo de dispositivo.
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |iPodTouch.|
-|Android|11 |Android.|
+|Android|11|Android.|
 |iSocConsumer|12 |iSocConsumer.|
 |UNIX|13 |UNIX.|
 |macMDM|14 |Cliente Mac OS X usando o agente MDM interno.|
@@ -49,7 +49,6 @@ Tipo de dispositivo.
 |rim|100|Rim.|
 |Palm|101|Palm.|
 |desconhecido|255|Representa que o tipo de dispositivo é desconhecido.|
-
 
 
 

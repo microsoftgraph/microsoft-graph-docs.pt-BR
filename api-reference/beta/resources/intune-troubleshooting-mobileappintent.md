@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6da589015b5120add046eabfa146069cc349951
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4be968bfb2191b71fd810ee83ce36d4e795ea17b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075760"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730308"
 ---
 # <a name="mobileappintent-enum-type"></a>tipo de enumeração mobileAppIntent
 
@@ -26,13 +26,12 @@ Indica o status do aplicativo móvel no dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disponível|,0|Disponível|
-|Não disponível|1 |Não disponível|
-|requiredInstall|2 |Instalação necessária|
-|requiredUninstall|3 |Desinstalação necessária|
+|Não disponível|1|Não disponível|
+|requiredInstall|duas|Instalação necessária|
+|requiredUninstall|3D|Desinstalação necessária|
 |requiredAndAvailableInstall|4 |RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|5 |AvailableInstallWithoutEnrollment|
 |impedir|6 |Excluir|
-
 
 
 

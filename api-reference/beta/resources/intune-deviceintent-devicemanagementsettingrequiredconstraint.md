@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d13ba79b411032a14c5426f247ab80f45baa9d21
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 32bc01e2924856d406df94690f5501d376a39aab
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061109"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730420"
 ---
 # <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>tipo de recurso deviceManagementSettingRequiredConstraint
 
@@ -28,7 +28,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Não configuravalue|Cadeia de caracteres|Lista de valores que significa não configurado para a configuração|
+|Não configuravalue|String|Lista de valores que significa não configurado para a configuração|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "notConfiguredValue": "String"
 }
 ```
-
 
 
 

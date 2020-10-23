@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f898df5eb0208e3c7b12210708c76bc93f84cf53
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 80ac156d7ba75f747b1257a9c0ad3ac9d856c875
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061047"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730378"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>tipo de recurso deviceManagementTemplate
 
@@ -37,10 +37,10 @@ Entidade que representa uma coleção definida de configurações de dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID do modelo|
-|displayName|Cadeia de caracteres|O nome de exibição do modelo|
+|id|String|A ID do modelo|
+|displayName|String|O nome de exibição do modelo|
 |description|String|A descrição do modelo|
-|versionInfo|Cadeia de caracteres|As informações de versão do modelo|
+|versionInfo|String|As informações de versão do modelo|
 |preterido|Booliano|O modelo é preterido ou não. Os propósitos não podem ser criados a partir de um modelo preterido.|
 |intentCount|Int32|Número de tentativas criadas a partir deste modelo.|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|O tipo do modelo. Os valores possíveis são: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`, `cloudPC`.|
@@ -51,7 +51,7 @@ Entidade que representa uma coleção definida de configurações de dispositivo
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|configurações|coleção [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações que este modelo tem|
+|settings|coleção [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações que este modelo tem|
 |categories|coleção [deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)|Conjunto de categorias de configuração no modelo|
 |migratableTo|coleção [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Conjunto de modelos que este modelo pode migrar para|
 
@@ -78,7 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "publishedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

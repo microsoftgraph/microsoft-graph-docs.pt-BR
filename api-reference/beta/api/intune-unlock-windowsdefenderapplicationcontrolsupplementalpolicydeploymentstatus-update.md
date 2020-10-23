@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a454c44b9cfb6fa83346d909747827dcf64e8d87
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c99bbcfdb697ca3ec006d7ce8cffdf858b8ac9e9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095790"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729851"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Atualizar windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID de dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização.|
@@ -61,8 +61,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |osDescription|Cadeia de caracteres|Descrição da versão do sistema operacional Windows.|
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|O estado de implantação da política. Os valores possíveis são: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|Cadeia de caracteres|O nome do usuário deste dispositivo.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
-|policyVersion|Cadeia de caracteres|Versão de leitura humana da política complementar do WindowsDefenderApplicationControl.|
+|userPrincipalName|String|Nome principal do usuário.|
+|policyVersion|String|Versão de leitura humana da política complementar do WindowsDefenderApplicationControl.|
 
 
 
@@ -113,7 +113,6 @@ Content-Length: 535
   "policyVersion": "Policy Version value"
 }
 ```
-
 
 
 

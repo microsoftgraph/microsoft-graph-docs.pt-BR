@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c032c3dd8017aca170e77709e5526e6c0c8a4ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8cb917403ecb942d385506b5a382f8f23fe3fc3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074318"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729872"
 ---
 # <a name="getmobileappcount-function"></a>função getMobileAppCount
 
@@ -80,7 +80,6 @@ Content-Length: 18
   "value": 1
 }
 ```
-
 
 
 
