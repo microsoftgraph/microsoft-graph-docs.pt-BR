@@ -2,36 +2,44 @@
 title: tipo de recurso conversationMember
 description: Representa o usuário em uma conversa.
 localization_priority: Normal
-author: clearab
+author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e2c888ea55b331762761857c14b4710bf582be3f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 970e64ff358654aafee5b47a229a8425fdc69c9e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056916"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725831"
 ---
-# <a name="conversationmember-resource-type"></a><span data-ttu-id="0f08d-103">tipo de recurso conversationMember</span><span class="sxs-lookup"><span data-stu-id="0f08d-103">conversationMember resource type</span></span>
+# <a name="conversationmember-resource-type"></a><span data-ttu-id="fa2aa-103">tipo de recurso conversationMember</span><span class="sxs-lookup"><span data-stu-id="fa2aa-103">conversationMember resource type</span></span>
 
-<span data-ttu-id="0f08d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0f08d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fa2aa-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fa2aa-104">Namespace: microsoft.graph</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="fa2aa-105">Representa um usuário em uma [equipe](team.md).</span><span class="sxs-lookup"><span data-stu-id="fa2aa-105">Represents a user in a [team](team.md).</span></span>
+<span data-ttu-id="fa2aa-106">Confira também [aadUserConversationMember](aaduserconversationmember.md).</span><span class="sxs-lookup"><span data-stu-id="fa2aa-106">See also [aadUserConversationMember](aaduserconversationmember.md).</span></span>
 
-<span data-ttu-id="0f08d-105">Representa um usuário em uma [equipe](team.md).</span><span class="sxs-lookup"><span data-stu-id="0f08d-105">Represents a user in a [team](team.md).</span></span>
-<span data-ttu-id="0f08d-106">Confira também [aadUserConversationMember](aaduserconversationmember.md).</span><span class="sxs-lookup"><span data-stu-id="0f08d-106">See also [aadUserConversationMember](aaduserconversationmember.md).</span></span>
+## <a name="methods"></a><span data-ttu-id="fa2aa-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="fa2aa-107">Methods</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0f08d-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0f08d-107">Properties</span></span>
-
-| <span data-ttu-id="0f08d-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0f08d-108">Property</span></span>   | <span data-ttu-id="0f08d-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="0f08d-109">Type</span></span> |<span data-ttu-id="0f08d-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="0f08d-110">Description</span></span>|
+| <span data-ttu-id="fa2aa-108">Método</span><span class="sxs-lookup"><span data-stu-id="fa2aa-108">Method</span></span>       | <span data-ttu-id="fa2aa-109">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="fa2aa-109">Return Type</span></span>  |<span data-ttu-id="fa2aa-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="fa2aa-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0f08d-111">id</span><span class="sxs-lookup"><span data-stu-id="0f08d-111">id</span></span>|<span data-ttu-id="0f08d-112">String</span><span class="sxs-lookup"><span data-stu-id="0f08d-112">String</span></span>| <span data-ttu-id="0f08d-113">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="0f08d-113">Read-only.</span></span> <span data-ttu-id="0f08d-114">ID exclusivo do usuário.</span><span class="sxs-lookup"><span data-stu-id="0f08d-114">Unique ID of the user.</span></span>|
-|<span data-ttu-id="0f08d-115">displayName</span><span class="sxs-lookup"><span data-stu-id="0f08d-115">displayName</span></span>| <span data-ttu-id="0f08d-116">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="0f08d-116">string</span></span> | <span data-ttu-id="0f08d-117">O nome de exibição do usuário.</span><span class="sxs-lookup"><span data-stu-id="0f08d-117">The display name of the user.</span></span> |
-|<span data-ttu-id="0f08d-118">funções</span><span class="sxs-lookup"><span data-stu-id="0f08d-118">roles</span></span>| <span data-ttu-id="0f08d-119">coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="0f08d-119">string collection</span></span> | <span data-ttu-id="0f08d-120">As funções desse usuário.</span><span class="sxs-lookup"><span data-stu-id="0f08d-120">The roles for that user.</span></span> |
+|[<span data-ttu-id="fa2aa-111">Listar membros</span><span class="sxs-lookup"><span data-stu-id="fa2aa-111">List members</span></span>](../api/conversationmember-list.md) | <span data-ttu-id="fa2aa-112">coleção [conversationMember](conversationmember.md)</span><span class="sxs-lookup"><span data-stu-id="fa2aa-112">[conversationMember](conversationmember.md) collection</span></span> | <span data-ttu-id="fa2aa-113">Ver a lista de todos os usuários no chat ou canal.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-113">Get the list of all users in the chat or channel.</span></span>|
+|[<span data-ttu-id="fa2aa-114">Obter membro</span><span class="sxs-lookup"><span data-stu-id="fa2aa-114">Get member</span></span>](../api/conversationmember-get.md) | [<span data-ttu-id="fa2aa-115">conversationMember</span><span class="sxs-lookup"><span data-stu-id="fa2aa-115">conversationMember</span></span>](conversationmember.md) | <span data-ttu-id="fa2aa-116">Obter um único usuário no chat ou canal.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-116">Get a single user in the chat or channel.</span></span>|
+|[<span data-ttu-id="fa2aa-117">Adicionar membro</span><span class="sxs-lookup"><span data-stu-id="fa2aa-117">Add member</span></span>](../api/conversationmember-add.md) | [<span data-ttu-id="fa2aa-118">conversationMember</span><span class="sxs-lookup"><span data-stu-id="fa2aa-118">conversationMember</span></span>](conversationmember.md)| <span data-ttu-id="fa2aa-119">Adicionar um membro a um canal.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-119">Add a member to a channel.</span></span>|
+|[<span data-ttu-id="fa2aa-120">Atualizar membro</span><span class="sxs-lookup"><span data-stu-id="fa2aa-120">Update member</span></span>](../api/conversationmember-update.md) | [<span data-ttu-id="fa2aa-121">conversationMember</span><span class="sxs-lookup"><span data-stu-id="fa2aa-121">conversationMember</span></span>](conversationmember.md)| <span data-ttu-id="fa2aa-122">Atualizar um membro no canal.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-122">Update a member in the channel.</span></span>|
+|[<span data-ttu-id="fa2aa-123">Excluir membro</span><span class="sxs-lookup"><span data-stu-id="fa2aa-123">Delete member</span></span>](../api/conversationmember-delete.md) | [<span data-ttu-id="fa2aa-124">conversationMember</span><span class="sxs-lookup"><span data-stu-id="fa2aa-124">conversationMember</span></span>](conversationmember.md)| <span data-ttu-id="fa2aa-125">Excluir um membro do canal.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-125">Delete a member from the channel.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="0f08d-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0f08d-121">JSON representation</span></span>
+## <a name="properties"></a><span data-ttu-id="fa2aa-126">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fa2aa-126">Properties</span></span>
 
-<span data-ttu-id="0f08d-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0f08d-122">The following is a JSON representation of the resource.</span></span>
+| <span data-ttu-id="fa2aa-127">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fa2aa-127">Property</span></span>   | <span data-ttu-id="fa2aa-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="fa2aa-128">Type</span></span> |<span data-ttu-id="fa2aa-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="fa2aa-129">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="fa2aa-130">id</span><span class="sxs-lookup"><span data-stu-id="fa2aa-130">id</span></span>|<span data-ttu-id="fa2aa-131">String</span><span class="sxs-lookup"><span data-stu-id="fa2aa-131">String</span></span>| <span data-ttu-id="fa2aa-132">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-132">Read-only.</span></span> <span data-ttu-id="fa2aa-133">ID exclusivo do usuário.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-133">Unique ID of the user.</span></span>|
+|<span data-ttu-id="fa2aa-134">displayName</span><span class="sxs-lookup"><span data-stu-id="fa2aa-134">displayName</span></span>| <span data-ttu-id="fa2aa-135">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fa2aa-135">string</span></span> | <span data-ttu-id="fa2aa-136">O nome de exibição do usuário.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-136">The display name of the user.</span></span> |
+|<span data-ttu-id="fa2aa-137">funções</span><span class="sxs-lookup"><span data-stu-id="fa2aa-137">roles</span></span>| <span data-ttu-id="fa2aa-138">coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="fa2aa-138">string collection</span></span> | <span data-ttu-id="fa2aa-139">As funções desse usuário.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-139">The roles for that user.</span></span> |
+
+## <a name="json-representation"></a><span data-ttu-id="fa2aa-140">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fa2aa-140">JSON representation</span></span>
+
+<span data-ttu-id="fa2aa-141">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fa2aa-141">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,36 +5,36 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec2120660ac47fa44e700dadc34712cf3a4351e3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 53b1d0c5466241e0c7cd2121a03c3067f2b4abd8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084139"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726296"
 ---
-# <a name="report-resource-type"></a><span data-ttu-id="dc4b3-103">Tipo de recurso report</span><span class="sxs-lookup"><span data-stu-id="dc4b3-103">report resource type</span></span>
+# <a name="report-resource-type"></a><span data-ttu-id="b69a4-103">Tipo de recurso report</span><span class="sxs-lookup"><span data-stu-id="b69a4-103">report resource type</span></span>
 
-<span data-ttu-id="dc4b3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dc4b3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b69a4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b69a4-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="dc4b3-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="dc4b3-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="b69a4-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="b69a4-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dc4b3-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="dc4b3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b69a4-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b69a4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dc4b3-107">Retorna o conteúdo apropriado para o contexto, incluindo:</span><span class="sxs-lookup"><span data-stu-id="dc4b3-107">Returns the content appropriate for the context, including:</span></span>
+<span data-ttu-id="b69a4-107">Retorna o conteúdo apropriado para o contexto, incluindo:</span><span class="sxs-lookup"><span data-stu-id="b69a4-107">Returns the content appropriate for the context, including:</span></span>
 
-- <span data-ttu-id="dc4b3-108">Relatórios de histórico de perfil de configuração de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="dc4b3-108">Device Configuration profile history reports.</span></span>
-- <span data-ttu-id="dc4b3-109">Relatórios de falha de registro.</span><span class="sxs-lookup"><span data-stu-id="dc4b3-109">Enrollment failure reports.</span></span>
+- <span data-ttu-id="b69a4-108">Relatórios de histórico de perfil de configuração de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="b69a4-108">Device Configuration profile history reports.</span></span>
+- <span data-ttu-id="b69a4-109">Relatórios de falha de registro.</span><span class="sxs-lookup"><span data-stu-id="b69a4-109">Enrollment failure reports.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dc4b3-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dc4b3-110">Properties</span></span>
-|<span data-ttu-id="dc4b3-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="dc4b3-111">Property</span></span>|<span data-ttu-id="dc4b3-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="dc4b3-112">Type</span></span>|<span data-ttu-id="dc4b3-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc4b3-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b69a4-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b69a4-110">Properties</span></span>
+|<span data-ttu-id="b69a4-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b69a4-111">Property</span></span>|<span data-ttu-id="b69a4-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="b69a4-112">Type</span></span>|<span data-ttu-id="b69a4-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="b69a4-113">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dc4b3-114">conteúdo</span><span class="sxs-lookup"><span data-stu-id="dc4b3-114">content</span></span>|<span data-ttu-id="dc4b3-115">Fluxo</span><span class="sxs-lookup"><span data-stu-id="dc4b3-115">Stream</span></span>|<span data-ttu-id="dc4b3-116">Conteúdo de relatórios; os detalhes variam por tipo de relatório.</span><span class="sxs-lookup"><span data-stu-id="dc4b3-116">Report content; details vary by report type.</span></span>|
+|<span data-ttu-id="b69a4-114">conteúdo</span><span class="sxs-lookup"><span data-stu-id="b69a4-114">content</span></span>|<span data-ttu-id="b69a4-115">Fluxo</span><span class="sxs-lookup"><span data-stu-id="b69a4-115">Stream</span></span>|<span data-ttu-id="b69a4-116">Conteúdo de relatórios; os detalhes variam por tipo de relatório.</span><span class="sxs-lookup"><span data-stu-id="b69a4-116">Report content; details vary by report type.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="dc4b3-117">Relações</span><span class="sxs-lookup"><span data-stu-id="dc4b3-117">Relationships</span></span>
-<span data-ttu-id="dc4b3-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="dc4b3-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b69a4-117">Relações</span><span class="sxs-lookup"><span data-stu-id="b69a4-117">Relationships</span></span>
+<span data-ttu-id="b69a4-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b69a4-118">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="dc4b3-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="dc4b3-119">JSON Representation</span></span>
-<span data-ttu-id="dc4b3-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="dc4b3-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b69a4-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b69a4-119">JSON Representation</span></span>
+<span data-ttu-id="b69a4-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b69a4-120">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -47,7 +47,6 @@ ms.locfileid: "48084139"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
 
 
 
