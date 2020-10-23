@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46828f5b50326756a586f919c15afdd91c9707ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b144b98d4733ae4d3f69ffbe1b0e926ff314fa4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993921"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705866"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso iosGeneralDeviceConfiguration
 
@@ -25,7 +25,7 @@ Este tópico fornece descrições dos métodos declarados, das propriedades e da
 
 Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosGeneralDeviceConfigurations](../api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md)|Coleção [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md)|Listar propriedades e relações dos objetos [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).|
@@ -207,7 +207,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |airPrintBlockiBeaconDiscovery|Boolean|Indica se a descoberta de impressoras de impressão do iBeacon está ou não bloqueada. Isso impede os beacons Bluetooth de impressão de mensagens de phishing para tráfego de rede (iOS 11,0 e posterior).|
 |filesNetworkDriveAccessBlocked|Boolean|Indica se os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede usando o protocolo SMB (bloco de mensagens de servidor). Disponível para dispositivos que executam o iOS e o iPadOS, versões 13,0 e posteriores.|
 |filesUsbDriveAccessBlocked|Boolean|Indica se o sevices com o Access pode se conectar a arquivos e abri-los em uma unidade USB. Disponível para dispositivos que executam o iOS e o iPadOS, versões 13,0 e posteriores.|
-|wifiPowerOnForced|Boolean|Indica se o Wi-Fi permanecerá ou não, mesmo quando o dispositivo estiver no modo avião. Disponível para dispositivos que executam o iOS e o iPadOS, versões 13,0 e posteriores.|
+|wifiPowerOnForced|Boolean|Indica se Wi-Fi permanecerá ou não em, mesmo quando o dispositivo estiver no modo avião. Disponível para dispositivos que executam o iOS e o iPadOS, versões 13,0 e posteriores.|
 |blockSystemAppRemoval|Boolean|Indica se a remoção de aplicativos do sistema do dispositivo é bloqueada em um dispositivo supervisionado (iOS 11,0 e posterior).|
 |vpnBlockCreation|Boolean|Indica se a criação de configurações de VPN está bloqueada (iOS 11,0 e posterior).|
 |appRemovalBlocked|Boolean|Indica se a remoção de aplicativos é permitida.|
@@ -541,7 +541,6 @@ Veja a seguir uma representação JSON do recurso.
   "kioskModeAppType": "String"
 }
 ```
-
 
 
 

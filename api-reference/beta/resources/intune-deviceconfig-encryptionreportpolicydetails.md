@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4dd42ac3f80fae8e4946c72c856a0f560165584a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9f84f3a0ca0d4b79d73f62dc0607fd332e90e07c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994187"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705908"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>tipo de recurso encryptionReportPolicyDetails
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "policyName": "String"
 }
 ```
-
 
 
 

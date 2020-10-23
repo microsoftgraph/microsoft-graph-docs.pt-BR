@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7fd4eb594458062b63b5f678c20d624146c78fc3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c8157e164113de27bd0761bbf8a48bae380c2e42
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027780"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706664"
 ---
 # <a name="create-depenrollmentprofile"></a>Criar depEnrollmentProfile
 
@@ -56,34 +56,34 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depEnrol
 |id|String|O GUID do objeto herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|String|Nome do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |description|String|Descrição do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação de usuário herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação de usuário herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|Enableauthenticationviacompanyportal foi adicionada|Boolean|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Booliano|Indica se este é o perfil padrão|
-|supervisedModeEnabled|Booliano|Modo supervisionado, true para habilitar, caso contrário, false. Consulte https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune para obter mais informações.|
+|supervisedModeEnabled|Boolean|Modo supervisionado, true para habilitar, caso contrário, false. Consulte https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune para obter mais informações.|
 |supportDepartment|String|Informações do departamento de suporte|
-|passCodeDisabled|Booliano|Indica se o painel de configuração de senha está desabilitado|
-|IsMandatory|Booliano|Indica se o perfil é obrigatório|
-|locationDisabled|Booliano|Indica se o painel de instalação do serviço de localização está desabilitado|
+|passCodeDisabled|Boolean|Indica se o painel de configuração de senha está desabilitado|
+|IsMandatory|Boolean|Indica se o perfil é obrigatório|
+|locationDisabled|Boolean|Indica se o painel de instalação do serviço de localização está desabilitado|
 |supportPhoneNumber|String|Número de telefone de suporte|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indica o modo de emparelhamento do iTunes. Os valores possíveis são: `disallow`, `allow`, `requiresCertificate`.|
-|profileRemovalDisabled|Booliano|Indica se a opção de remoção de perfil está desabilitada|
+|profileRemovalDisabled|Boolean|Indica se a opção de remoção de perfil está desabilitada|
 |managementCertificates|coleção [managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Certificados de gerenciamento para o Apple Configurator|
-|restoreBlocked|Booliano|Indica se o painel de configuração de restauração está bloqueado|
-|restoreFromAndroidDisabled|Booliano|Indica se a restauração do Android está desabilitada|
-|appleIdDisabled|Booliano|Indica se o painel de configuração de ID da Apple está desabilitado|
-|termsAndConditionsDisabled|Booliano|Indica se o painel de configuração ' termos e condições ' está desabilitado|
-|touchIdDisabled|Booliano|Indica se o painel de configuração de ID de toque está desabilitado|
-|applePayDisabled|Booliano|Indica se o painel de configuração de pagamento da Apple está desabilitado|
-|zoomDisabled|Booliano|Indica se o painel de configuração de zoom está desabilitado|
-|siriDisabled|Booliano|Indica se o painel de configuração do Siri está desabilitado|
-|diagnosticsDisabled|Booliano|Indica se o painel de configuração de diagnóstico está desabilitado|
-|macOSRegistrationDisabled|Booliano|Indica se o registro do Mac OS está desabilitado|
-|macOSFileVaultDisabled|Booliano|Indica se o compartimento de arquivos do Mac OS está desabilitado|
-|awaitDeviceConfiguredConfirmation|Booliano|Indica se o dispositivo deverá aguardar a confirmação configurada|
+|restoreBlocked|Boolean|Indica se o painel de configuração de restauração está bloqueado|
+|restoreFromAndroidDisabled|Boolean|Indica se a restauração do Android está desabilitada|
+|appleIdDisabled|Boolean|Indica se o painel de configuração de ID da Apple está desabilitado|
+|termsAndConditionsDisabled|Boolean|Indica se o painel de configuração ' termos e condições ' está desabilitado|
+|touchIdDisabled|Boolean|Indica se o painel de configuração de ID de toque está desabilitado|
+|applePayDisabled|Boolean|Indica se o painel de configuração de pagamento da Apple está desabilitado|
+|zoomDisabled|Boolean|Indica se o painel de configuração de zoom está desabilitado|
+|siriDisabled|Boolean|Indica se o painel de configuração do Siri está desabilitado|
+|diagnosticsDisabled|Boolean|Indica se o painel de configuração de diagnóstico está desabilitado|
+|macOSRegistrationDisabled|Boolean|Indica se o registro do Mac OS está desabilitado|
+|macOSFileVaultDisabled|Boolean|Indica se o compartimento de arquivos do Mac OS está desabilitado|
+|awaitDeviceConfiguredConfirmation|Boolean|Indica se o dispositivo deverá aguardar a confirmação configurada|
 |sharedIPadMaximumUserCount|Int32|Isso especifica o número máximo de usuários que podem usar um iPad compartilhado. Aplicável somente no modo iPad compartilhado.|
-|enableSharedIPad|Booliano|Isso indica se o dispositivo deve ser inscrito em um modo que permite cenários de vários usuários. Aplicável somente no iPads compartilhado.|
+|enableSharedIPad|Boolean|Isso indica se o dispositivo deve ser inscrito em um modo que permite cenários de vários usuários. Aplicável somente no iPads compartilhado.|
 
 
 
@@ -188,7 +188,6 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
-
 
 
 

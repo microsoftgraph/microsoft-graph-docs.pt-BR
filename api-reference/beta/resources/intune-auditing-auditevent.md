@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b0124e369ee792af6110c533a3bd96b46f8fc9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0695d951aaa8825153e7a20dac60f30351907e2c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076313"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706069"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
 
@@ -36,8 +36,8 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|displayName|Cadeia de caracteres|Nome de exibição do evento.|
+|id|String|Chave da entidade.|
+|displayName|String|Nome de exibição do evento.|
 |componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
 |atividade|Cadeia de caracteres|Nome amigável da atividade.|
@@ -47,7 +47,7 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|category|Cadeia de caracteres|Categoria de auditoria.|
+|category|String|Categoria de auditoria.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -113,7 +113,6 @@ Veja a seguir uma representação JSON do recurso.
   "category": "String"
 }
 ```
-
 
 
 

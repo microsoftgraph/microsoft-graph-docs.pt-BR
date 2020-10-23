@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d30f44bdf5ca002f71ac5e1f935081b032379ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e179c1c7318934c538cef06c3284308c54199059
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076299"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706062"
 ---
 # <a name="auditproperty-resource-type"></a>Tipo de recurso auditProperty
 
@@ -25,7 +25,7 @@ Uma classe que contém as propriedades para a Propriedade de auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição.|
+|displayName|String|Nome de exibição.|
 |oldValue|Cadeia de caracteres|Valor antigo.|
 |newValue|Cadeia de caracteres|Novo valor.|
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "newValue": "String"
 }
 ```
-
 
 
 

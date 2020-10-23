@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9269c143d521917c7f414fedb45c0b61e034d2cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 574efe0cee17f4ab9aa840be1b12b539d38fca70
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993942"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705859"
 ---
 # <a name="iosedudeviceconfiguration-resource-type"></a>tipo de recurso iosEduDeviceConfiguration
 
@@ -25,7 +25,7 @@ configuração de dispositivo do treinamento iOS
 
 Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosEduDeviceConfigurations](../api/intune-deviceconfig-iosedudeviceconfiguration-list.md)|coleção [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md)|Listar Propriedades e relações dos objetos [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) .|
@@ -140,7 +140,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

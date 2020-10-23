@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e7429433f4e1a382d0a5f4ba0dab6028bf27d283
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8049ef7a7678d7d5283d45d2236dc364f2df4669
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070972"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706167"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>tipo de recurso win32LobAppReturnCode
 
@@ -26,7 +26,7 @@ Contém propriedades de código de retorno para um aplicativo Win32
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |returnCode|Int32|Código de retorno.|
-|tipo|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|O tipo de código de retorno. Os valores possíveis são: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.|
+|type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|O tipo de código de retorno. Os valores possíveis são: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "type": "String"
 }
 ```
-
 
 
 

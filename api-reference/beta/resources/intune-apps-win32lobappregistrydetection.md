@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6d2e3c0788b09011b2e710ed6d61f3374e07ccdb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b0098d1caec7dd47b729489077d2638b4dbb63f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092766"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706230"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>tipo de recurso win32LobAppRegistryDetection
 
@@ -29,11 +29,11 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |check32BitOn64System|Boolean|Um valor que indica se este caminho de registro é para verificar o aplicativo de 32 bits no sistema de 64 bits|
-|Caminho-chave|Cadeia de caracteres|O caminho da chave do registro para detectar o aplicativo de LoB (linha de negócios) do Win32|
-|valueName|Cadeia de caracteres|O nome do valor do registro|
+|Caminho-chave|String|O caminho da chave do registro para detectar o aplicativo de LoB (linha de negócios) do Win32|
+|valueName|String|O nome do valor do registro|
 |Detecção|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|O tipo de detecção de dados do registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para a detecção de dados do registro. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detecçaovalue|Cadeia de caracteres|O valor de detecção do registro|
+|detecçaovalue|String|O valor de detecção do registro|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -56,7 +56,6 @@ Veja a seguir uma representação JSON do recurso.
   "detectionValue": "String"
 }
 ```
-
 
 
 
