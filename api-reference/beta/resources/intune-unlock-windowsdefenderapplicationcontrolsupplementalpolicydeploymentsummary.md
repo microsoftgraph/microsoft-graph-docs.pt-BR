@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d444b3ea61b2f41601910f1160d5cff1e8da58d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 87013b7cf130ec0a66be0dc3ea5ff5a780f163ce
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087639"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709779"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary-resource-type"></a>tipo de recurso windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 
@@ -31,7 +31,7 @@ Contém propriedades para o resumo de implantação de uma política complementa
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deployedDeviceCount|Int32|Número de dispositivos que implantaram com êxito esta política suplementar do WindowsDefenderApplicationControl.|
 |failedDeviceCount|Int32|Número de dispositivos que falharam ao implantar esta política complementar do WindowsDefenderApplicationControl.|
 
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "failedDeviceCount": 1024
 }
 ```
-
 
 
 

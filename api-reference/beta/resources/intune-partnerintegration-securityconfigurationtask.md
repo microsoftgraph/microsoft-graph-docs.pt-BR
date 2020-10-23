@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 472abf714f5ddb67fee01a3026f99e85887da5e0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 37d6d4a3c42dafaf03bd5879fc2e0fd4905b14cd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993627"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709871"
 ---
 # <a name="securityconfigurationtask-resource-type"></a>tipo de recurso securityConfigurationTask
 
@@ -25,7 +25,7 @@ Uma tarefa de configuração de segurança.
 
 Herda de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar securityConfigurationTasks](../api/intune-partnerintegration-securityconfigurationtask-list.md)|coleção [securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md)|Listar Propriedades e relações dos objetos [securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md) .|
@@ -44,7 +44,7 @@ Herda de [deviceAppManagementTask](../resources/intune-partnerintegration-device
 |dueDateTime|DateTimeOffset|A data de conclusão. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
 |prioridade|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|A prioridade. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Os valores possíveis são: `none`, `high`, `low`.|
-|Criador|String|O endereço de email do criador. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
+|criador|String|O endereço de email do criador. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |creatorNotes|String|Observações do criador. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |assignedTo|String|O nome ou email do administrador ao qual esta tarefa é atribuída. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|O status. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Os valores possíveis são: `unknown`, `pending`, `active`, `completed`, `rejected`.|
@@ -96,7 +96,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

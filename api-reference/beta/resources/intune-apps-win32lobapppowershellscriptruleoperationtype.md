@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 00eda4f735b9cdcdc177d8a7db9a1c74ad253f9c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff642fa1fb99e5f809b8a732cc64f62204525237
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092829"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48712047"
 ---
 # <a name="win32lobapppowershellscriptruleoperationtype-enum-type"></a>tipo de enumeração win32LobAppPowerShellScriptRuleOperationType
 
@@ -26,13 +26,12 @@ Contém todo o tipo de detecção de saída de script do PowerShell com suporte.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|cadeia de caracteres|1 |O tipo de dados de saída é String.|
-|dateTime|2 |O tipo de dados de saída é data hora.|
+|cadeia de caracteres|1|O tipo de dados de saída é String.|
+|dateTime|duas|O tipo de dados de saída é data hora.|
 |inteiro|3D|O tipo de dados de saída é inteiro.|
-|float|4 |O tipo de dados de saída é float.|
+|flutuação|4 |O tipo de dados de saída é float.|
 |versão|5 |O tipo de dados de saída é versão.|
 |booliano|6 |O tipo de dados de saída é Boolean.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 72213d02c4914dcc172ed1742951034b85062efc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d475b598d5795d08ddaa83eb3afca8f2dfd4c7c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049440"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709919"
 ---
 # <a name="securebootwithdmatype-enum-type"></a>tipo de enumeração secureBootWithDMAType
 
@@ -26,9 +26,8 @@ Valores possíveis de inicialização segura com DMA
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado, nenhuma operação|
-|withoutDMA|1 |Ativa o VBS com inicialização segura|
-|withDMA|3 |Ativa o VBS com inicialização segura e DMA|
-
+|withoutDMA|1|Ativa o VBS com inicialização segura|
+|withDMA|3D|Ativa o VBS com inicialização segura e DMA|
 
 
 

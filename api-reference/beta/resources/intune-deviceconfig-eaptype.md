@@ -5,16 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 911b7b8f6717def186633b8ddfabd1367c498531
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d67147c281805e6d626f3f5e12fb5346ca90356
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003749"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48712026"
 ---
 # <a name="eaptype-enum-type"></a>tipo de enumeração eapType
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -25,13 +25,12 @@ Tipos de configuração EAP (Extensible Authentication Protocol).
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|eapTls|13 |EAP-Transport Layer Security (EAP-TLS).|
+|eapTls|13 |Segurança de camada de EAP-Transport (EAP-TLS).|
 |surpreendente|17 |Protocolo de autenticação extensível (LEAP) leves.|
 |eapSim|18 |EAP para módulo de identidade do assinante GSM (EAP-SIM).|
-|eapTtls| 21 |Protocolo EAP-TTLS (Transport Layer Security).|
+|eapTtls| 21 |EAP-Tunneled segurança da camada de transporte (EAP-TTLS).|
 |autenticação|25|PEAP (protocolo de autenticação extensível protegido).|
-|eapFast|43|Autenticação flexível EAP por meio de encapsulamento seguro (EAP-FAST).|
-
+|eapFast|43|EAP-Flexible autenticação via encapsulamento seguro (EAP-FAST).|
 
 
 

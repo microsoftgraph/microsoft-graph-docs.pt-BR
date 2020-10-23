@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 41e8f1cb8907633f919df19431a01e9e43c9c5de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e81f7e318572e6d2713f2e8e0c803ff62346c682
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039388"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709821"
 ---
 # <a name="devicemanagementreportfileformat-enum-type"></a>tipo de enumeração deviceManagementReportFileFormat
 
@@ -26,8 +26,7 @@ Valores possíveis para o formato de arquivo de um relatório
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Limit|,0|Valores separados por vírgula|
-|pdf|1 |Formato de documento portátil|
-
+|pdf|1|Formato de documento portátil|
 
 
 
