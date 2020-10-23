@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ad82da1915702448a62c0c99f6933ddf1a51c5b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a11915af80b10944fe6a3573d5293c19e3fc0357
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060297"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729345"
 ---
 # <a name="devicehealthscriptparameter-resource-type"></a>tipo de recurso deviceHealthScriptParameter
 
@@ -25,7 +25,7 @@ Propriedades básicas do parâmetro script.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|Cadeia de caracteres|O nome do parâmetro|
+|nome|String|O nome do parâmetro|
 |description|String|A descrição do parâmetro|
 |isRequired|Booliano|Se o parâmetro é obrigatório|
 |applyDefaultValueWhenNotAssigned|Booliano|Se aplicar DefaultValue quando não atribuído|
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "applyDefaultValueWhenNotAssigned": true
 }
 ```
-
 
 
 

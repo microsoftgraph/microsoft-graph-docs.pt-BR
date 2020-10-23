@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8cd74897d423152ffca80ca2f06da00846e2770
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 40637d9d87bfeb851acbbdf4fdbd6155de923828
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049174"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707007"
 ---
 # <a name="updateclassification-enum-type"></a>tipo de enumeração updateClassification
 
@@ -26,10 +26,9 @@ Valores possíveis para classificação de atualização automática.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|recommendedAndImportant|1 |Recomendado e importante.|
-|Important|2 |Important.|
-|Nenhuma|3 |Nenhum|
-
+|recommendedAndImportant|1|Recomendado e importante.|
+|Important|duas|Important.|
+|none|3D|Nenhum|
 
 
 
