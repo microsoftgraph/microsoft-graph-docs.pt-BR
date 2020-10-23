@@ -466,7 +466,7 @@ items:
         items:
           - name: Visão geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -938,7 +938,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: Listar memberOf transitivos
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: checkMemberGroups
                     href: api/serviceprincipal-checkmembergroups.md
@@ -1594,21 +1594,23 @@ items:
               - name: Imprimir documento
                 href: resources/printdocument.md
                 items:
-                  - name: Carregar dados
-                    href: api/printdocument-uploaddata.md
+                  - name: Criar sessão de upload
+                    href: api/printdocument-createuploadsession.md
                   - name: Baixar arquivo binário
                     href: api/printdocument-get-file.md
               - name: Trabalho de impressão
                 href: resources/printjob.md
                 items:
-                  - name: Criar
+                  - name: Criar trabalho para uma impressora
                     href: api/printer-post-jobs.md
+                  - name: Criar trabalho para um compartilhamento de impressora
+                    href: api/printershare-post-jobs.md
                   - name: Obter
                     href: api/printjob-get.md
                   - name: Iniciar
-                    href: api/printjob-startprintjob.md
+                    href: api/printjob-start.md
                   - name: Cancelar
-                    href: api/printjob-cancelprintjob.md
+                    href: api/printjob-cancel.md
               - name: Operação de impressão
                 href: resources/printoperation.md
                 items:
@@ -1627,8 +1629,6 @@ items:
                     href: api/printer-update.md
                   - name: Excluir
                     href: api/printer-delete.md
-                  - name: Obter recursos
-                    href: api/printer-getcapabilities.md
                   - name: Obter gatilho de tarefa
                     href: api/printtasktrigger-get.md
                   - name: Listar conectores
@@ -1655,8 +1655,8 @@ items:
                     href: api/printer-delete-alloweduser.md
                   - name: Excluir gatilho de tarefa
                     href: api/printer-delete-tasktrigger.md
-                  - name: Redefinir padrões
-                    href: api/printer-resetdefaults.md
+                  - name: Restaurar padrões de fábrica
+                    href: api/printer-restorefactorydefaults.md
               - name: Compartilhamento de impressora
                 href: resources/printershare.md
                 items:
@@ -1770,6 +1770,8 @@ items:
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
                       - name: Ação createToken
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
+                  - name: Tipo de token de registro de proprietário do dispositivo Android
+                    href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
                   - name: Código da empresa de registro do Android
                     href: resources/intune-androidforwork-androidenrollmentcompanycode.md
                   - name: Aplicativo Android for Work
@@ -5236,8 +5238,8 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
                   - name: receptor de eventos do Apple para macOS
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: par de chave/valor de domínios associados ao macOS
-                    href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
+                  - name: item de domínios associados macOS
+                    href: resources/intune-deviceconfig-macosassociateddomainsitem.md
                   - name: extensão de logon único do macOS do Azure AD
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
                   - name: Base de perfil de certificado do macOS
@@ -5420,8 +5422,68 @@ items:
                         href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
                   - name: extensão de logon único do macOS
                     href: resources/intune-deviceconfig-macossinglesignonextension.md
+                  - name: Resumo da conta de atualização do software macOS
+                    href: resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md
+                    items:
+                      - name: Listar
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-list.md
+                      - name: Obter
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-get.md
+                      - name: Criar
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-create.md
+                      - name: Excluir
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md
+                  - name: comportamento de atualização do software macOS
+                    href: resources/intune-deviceconfig-macossoftwareupdatebehavior.md
+                  - name: Categoria de atualização do software macOS
+                    href: resources/intune-deviceconfig-macossoftwareupdatecategory.md
+                  - name: Resumo da categoria de atualização de software macOS
+                    href: resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md
+                    items:
+                      - name: Listar
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-list.md
+                      - name: Obter
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-get.md
+                      - name: Criar
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-create.md
+                      - name: Excluir
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-delete.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-update.md
+                  - name: configuração da atualização de software do macOS
+                    href: resources/intune-deviceconfig-macossoftwareupdateconfiguration.md
+                    items:
+                      - name: Listar
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-list.md
+                      - name: Obter
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-get.md
+                      - name: Criar
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-create.md
+                      - name: Excluir
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-delete.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-macossoftwareupdateconfiguration-update.md
                   - name: política de atraso de atualização do software macOS
                     href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
+                  - name: tipo de agendamento de atualização do software macOS
+                    href: resources/intune-deviceconfig-macossoftwareupdatescheduletype.md
+                  - name: Estado de atualização do software macOS
+                    href: resources/intune-deviceconfig-macossoftwareupdatestate.md
+                  - name: Resumo do estado de atualização do software macOS
+                    href: resources/intune-deviceconfig-macossoftwareupdatestatesummary.md
+                    items:
+                      - name: Listar
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-list.md
+                      - name: Obter
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-get.md
+                      - name: Criar
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-create.md
+                      - name: Excluir
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-delete.md
+                      - name: Atualizar
+                        href: api/intune-deviceconfig-macossoftwareupdatestatesummary-update.md
                   - name: extensão do sistema macOS
                     href: resources/intune-deviceconfig-macossystemextension.md
                   - name: tipo de extensão do sistema macOS
@@ -6699,6 +6761,23 @@ items:
                         href: api/intune-devices-devicecompliancescriptrunsummary-get.md
                       - name: Atualizar
                         href: api/intune-devices-devicecompliancescriptrunsummary-update.md
+                  - name: Script de Shell de atributo personalizado de dispositivo
+                    href: resources/intune-devices-devicecustomattributeshellscript.md
+                    items:
+                      - name: Listar
+                        href: api/intune-devices-devicecustomattributeshellscript-list.md
+                      - name: Obter
+                        href: api/intune-devices-devicecustomattributeshellscript-get.md
+                      - name: Criar
+                        href: api/intune-devices-devicecustomattributeshellscript-create.md
+                      - name: Excluir
+                        href: api/intune-devices-devicecustomattributeshellscript-delete.md
+                      - name: Atualizar
+                        href: api/intune-devices-devicecustomattributeshellscript-update.md
+                      - name: atribuir ação
+                        href: api/intune-devices-devicecustomattributeshellscript-assign.md
+                  - name: Tipo de valor de atributo personalizado de dispositivo
+                    href: resources/intune-devices-devicecustomattributevaluetype.md
                   - name: Motivo da falha de registro do dispositivo
                     href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
                   - name: Resumo do estado de acesso do dispositivo Exchange
@@ -7646,6 +7725,8 @@ items:
                         href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
                   - name: Estado de conformidade da linha de base de segurança
                     href: resources/intune-deviceintent-securitybaselinecompliancestate.md
+                  - name: Política de contribuição da linha de base de segurança
+                    href: resources/intune-deviceintent-securitybaselinecontributingpolicy.md
                   - name: Estado do dispositivo de linha de base de segurança
                     href: resources/intune-deviceintent-securitybaselinedevicestate.md
                     items:
@@ -7659,6 +7740,8 @@ items:
                         href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
                       - name: Atualizar
                         href: api/intune-deviceintent-securitybaselinedevicestate-update.md
+                  - name: Tipo de origem de política de linha de base de segurança
+                    href: resources/intune-deviceintent-securitybaselinepolicysourcetype.md
                   - name: Resumo do estado da linha de base de segurança
                     href: resources/intune-deviceintent-securitybaselinestatesummary.md
                     items:
@@ -11987,7 +12070,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -12038,7 +12121,7 @@ items:
         items:
           - name: Visão geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -12291,6 +12374,32 @@ items:
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
+          - name: Membro de conversa
+            href: resources/conversationmember.md
+            items:
+              - name: Listar membros
+                href: api/conversationmember-list.md
+              - name: Obter membro
+                href: api/conversationmember-get.md
+              - name: Adicionar membro
+                href: api/conversationmember-add.md
+              - name: Atualizar membro
+                href: api/conversationmember-update.md
+              - name: Excluir membro
+                href: api/conversationmember-delete.md
+          - name: Membro da conversa de usuário do Azure AD
+            href: resources/aaduserconversationmember.md
+            items:
+              - name: Listar membros
+                href: api/conversationmember-list.md
+              - name: Obter membro
+                href: api/conversationmember-get.md
+              - name: Adicionar membro
+                href: api/conversationmember-add.md
+              - name: Atualizar membro
+                href: api/conversationmember-update.md
+              - name: Excluir membro
+                href: api/conversationmember-delete.md
           - name: Catálogo de aplicativos
             items:
               - name: Aplicativo no catálogo
