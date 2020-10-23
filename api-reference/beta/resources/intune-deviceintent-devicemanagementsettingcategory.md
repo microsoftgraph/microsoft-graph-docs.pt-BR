@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: acf2e01ae003fa8e5ce4355ce42c6c049949dc98
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52b8b1b1044c5bace65c009ee6439fb5dafc4f8c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061270"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728269"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>tipo de recurso deviceManagementSettingCategory
 
@@ -34,8 +34,8 @@ Entidade que representa uma categoria de configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da categoria|
-|displayName|Cadeia de caracteres|O nome da categoria|
+|id|String|A ID da categoria|
+|displayName|String|O nome da categoria|
 |hasRequiredSetting|Booliano|A categoria contém a configuração necessária de nível superior|
 
 ## <a name="relationships"></a>Relações
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

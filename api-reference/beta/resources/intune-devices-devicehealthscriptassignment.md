@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3982844b3eca0d68bafc61127c5969b6d76782b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 81e63e8c293f344f573e0f5a2fdbf6212c0b8bea
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060409"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728192"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>tipo de recurso deviceHealthScriptAssignment
 
@@ -34,10 +34,9 @@ Contém propriedades usadas para atribuir um script de gerenciamento de disposit
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de atribuição de script de integridade do dispositivo. Essa propriedade é somente leitura.|
+|id|String|Chave da entidade de atribuição de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo do Azure Active Directory que estamos direcionando o script para|
 |runRemediationScript|Booliano|Determinar se queremos executar somente o script de detecção ou executar o script de detecção e o script de correção|
-|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Agendamento de execução de script para o grupo de destino|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -59,16 +58,9 @@ Veja a seguir uma representação JSON do recurso.
     "deviceAndAppManagementAssignmentFilterId": "String",
     "deviceAndAppManagementAssignmentFilterType": "String"
   },
-  "runRemediationScript": true,
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
-    "interval": 1024,
-    "useUtc": true,
-    "time": "String (time of day)"
-  }
+  "runRemediationScript": true
 }
 ```
-
 
 
 

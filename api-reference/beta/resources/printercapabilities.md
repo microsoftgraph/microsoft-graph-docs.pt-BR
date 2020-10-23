@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 26d786d61f72df48f50d8241ff689f0d398ae03f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ad05812cd39c6956a50a993dae6ee9ce4e2a147
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048880"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727952"
 ---
 # <a name="printercapabilities-complex-type"></a>tipo complexo printerCapabilities
 
@@ -25,7 +25,7 @@ Representa os recursos relatados por uma impressora.
 |:-------------|:------------|:------------|
 |contentTypes|Coleção de cadeias de caracteres|Uma lista de tipos de conteúdo (MIME) com suporte que a impressora suporta. Não é garantido que o serviço de impressão universal ofereça suporte à impressão de todos esses tipos MIME.|
 |isColorPrintingSupported|Booliano|True se a impressão de cores for suportada pela impressora; caso contrário, false. Somente leitura.|
-|feedDirections|coleção printerFeedDirection|A lista de direções de feed que são suportadas pela impressora.|
+|feedOrientations|coleção printerFeedOrientation|A lista de orientações de feed que são suportadas pela impressora.|
 |isPageRangeSupported|Booliano|True se a impressora oferece suporte à impressão por intervalos de página; caso contrário, false.|
 |qualidades|coleção PrintQuality|As qualidades de impressão suportadas pela impressora.|
 |dpis|Coleção Int32|A lista de resoluções de impressão no DPI com suporte da impressora.|
@@ -50,36 +50,36 @@ Representa os recursos relatados por uma impressora.
 |collation|Booliano|True se a impressora suportar o Agrupamento ao imprimir muliple cópias de um documento com várias páginas; caso contrário, false.|
 |scalings|coleção redimensionamento|Escalas de impressão suportadas.|
 
-## <a name="printerfeeddirection-values"></a>valores de printerFeedDirection
+## <a name="printerfeedorientation-values"></a>valores de printerFeedOrientation
 
 |Membro|Valor|Descrição|
 |:---|:---|
 |longEdgeFirst|,0|A impressora consumirá planilhas da bandeja ativa na orientação "paisagem", com a borda longa da planilha primeiro.|
-|shortEdgeFirst|1 |A impressora consumirá planilhas da bandeja ativa na orientação "retrato", com a borda curta da planilha primeiro.|
-|unknownFutureValue|2 |Valor de sentinela de enumeração evolvable. Não usar.|
+|shortEdgeFirst|1|A impressora consumirá planilhas da bandeja ativa na orientação "retrato", com a borda curta da planilha primeiro.|
+|unknownFutureValue|duas|Valor de sentinela de enumeração evolvable. Não usar.|
 
 ### <a name="printquality-values"></a>valores de PrintQuality
 
 |Membro|Valor|Descrição|
 |:---|:---|
 |low|,0|A impressora imprimirá o trabalho usando a qualidade baixa (normalmente conhecida como "rascunho").|
-|medium|1 |A impressora imprimirá o trabalho usando o medim (comumente conhecido como qualidade "normal").|
-|high|2 |A impressora imprimirá o trabalho usando a qualidade alta (normalmente conhecida como "melhor" ou "boa").|
-|unknownFutureValue|3 |Valor de sentinela de enumeração evolvable. Não usar.|
+|medium|1|A impressora imprimirá o trabalho usando o medim (comumente conhecido como qualidade "normal").|
+|high|duas|A impressora imprimirá o trabalho usando a qualidade alta (normalmente conhecida como "melhor" ou "boa").|
+|unknownFutureValue|3D|Valor de sentinela de enumeração evolvable. Não usar.|
 
 ### <a name="printduplexmode-values"></a>valores de reduplexmode
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |flipOnLongEdge|,0|A impressora imprimirá em frente e voltará os documentos ao longo da borda longa.|
-|flipOnShortEdge|1 |A impressora imprimirá em frente e voltará os documentos ao longo da borda curta.|
-|oneSided|2 |A impressora imprimirá um lado.|
+|flipOnShortEdge|1|A impressora imprimirá em frente e voltará os documentos ao longo da borda curta.|
+|oneSided|duas|A impressora imprimirá um lado.|
 
 ### <a name="printfinishing-values"></a>valores de reconclusão de
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|3 |Nenhuma conclusão. Incluir esse valor equivale a fornecer uma coleção vazia de finalidades.|
+|none|3D|Nenhuma conclusão. Incluir esse valor equivale a fornecer uma coleção vazia de finalidades.|
 |grampo|4 |Grampear o documento usando a configuração de associação padrão da impressora.|
 |relógio|5 |Perfuração o documento usando a configuração de perfuração padrão da impressora.|
 |visa|6 |Aplicar uma capa ao documento.|
@@ -104,7 +104,7 @@ Representa os recursos relatados por uma impressora.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|modos|3 |A impressora imprimirá impressões na orientação "retrato".|
+|modos|3D|A impressora imprimirá impressões na orientação "retrato".|
 |paisagens|4 |A impressora imprimirá impressões na orientação "paisagem".|
 |reverseLandscape|5 |A impressora imprimirá impressões na orientação "paisagem reversa".|
 |reversePortrait|6 |A impressora imprimirá impressões na orientação "retrato reverso".|
@@ -114,9 +114,9 @@ Representa os recursos relatados por uma impressora.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |clockwiseFromTopLeft|,0|Organiza as páginas em uma grade no sentido horário que começa no canto superior esquerdo.|
-|counterclockwiseFromTopLeft|1 |Organiza as páginas em uma grade no sentido anti-horário que começa no canto superior esquerdo.|
-|counterclockwiseFromTopRight|2 |Organiza as páginas em uma grade no sentido anti-horário que começa no canto superior direito.|
-|clockwiseFromTopRight|3 |Organizar as páginas em uma grade no sentido horário começando no canto superior direito.|
+|counterclockwiseFromTopLeft|1|Organiza as páginas em uma grade no sentido anti-horário que começa no canto superior esquerdo.|
+|counterclockwiseFromTopRight|duas|Organiza as páginas em uma grade no sentido anti-horário que começa no canto superior direito.|
+|clockwiseFromTopRight|3D|Organizar as páginas em uma grade no sentido horário começando no canto superior direito.|
 |counterclockwiseFromBottomLeft|4 |Organiza as páginas em uma grade no sentido anti-horário que começa no canto inferior esquerdo.|
 |clockwiseFromBottomLeft|5 |Organiza as páginas em uma grade no sentido horário que começa no canto inferior esquerdo.|
 |counterclockwiseFromBottomRight|6 |Organiza as páginas em uma grade no sentido anti-horário que começa no canto inferior direito.|
@@ -127,19 +127,19 @@ Representa os recursos relatados por uma impressora.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |blackAndWhite|,0|Preto e branco (Use apenas o material de marcador preto).|
-|escala|1 |Escala de cinza (pode usar algum material de marcador de cor.)|
-|color|2 |Color (use qualquer combinação de materiais de marcador para criar uma impressão colorida).|
-|Automático|3 |Permitir que a impressora decida qual modo de cor usar.|
+|escala|1|Escala de cinza (pode usar algum material de marcador de cor.)|
+|color|duas|Color (use qualquer combinação de materiais de marcador para criar uma impressão colorida).|
+|Automático|3D|Permitir que a impressora decida qual modo de cor usar.|
 
 ### <a name="printscaling-values"></a>valores de redimensionamento
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Automático|,0|Se o documento for maior do que a mídia solicitada e as margens forem diferentes de zero, a impressora dimensionará o documento como o **ajuste** à escala. Caso contrário, a impressora dimensionará o documento usando o **preenchimento** de redimensionamento. Se o documento for menor do que a mídia solicitada, a escala de impressões ' nenhum ' será usada.|
-|shrinkToFit|1 |Se o documento for maior do que a mídia solicitada, a impressora dimensionará o documento como o **ajuste** à escala. Caso contrário, a impressora dimensionará o documento como o formato **nenhum** .|
-|fill|2 |A impressora dimensiona o documento para preencher o tamanho de mídia solicitado, preservando a taxa de proporção, mas pode cortar partes do documento.|
-|contida|3 |A impressora dimensiona o documento para caber na área imprimível do tamanho de mídia solicitado, preservando a taxa de proporção dos dados do documento sem cortar o documento.|
-|Nenhuma|4 |A impressora não dimensiona o documento para se ajustar ao tamanho de mídia solicitado. Se o documento for maior do que a mídia solicitada, a impressora centralizará e cortará a saída resultante. Se o documento for menor do que a mídia solicitada, a impressora centralizará a saída resultante.|
+|shrinkToFit|1|Se o documento for maior do que a mídia solicitada, a impressora dimensionará o documento como o **ajuste** à escala. Caso contrário, a impressora dimensionará o documento como o formato **nenhum** .|
+|fill|duas|A impressora dimensiona o documento para preencher o tamanho de mídia solicitado, preservando a taxa de proporção, mas pode cortar partes do documento.|
+|contida|3D|A impressora dimensiona o documento para caber na área imprimível do tamanho de mídia solicitado, preservando a taxa de proporção dos dados do documento sem cortar o documento.|
+|none|4 |A impressora não dimensiona o documento para se ajustar ao tamanho de mídia solicitado. Se o documento for maior do que a mídia solicitada, a impressora centralizará e cortará a saída resultante. Se o documento for menor do que a mídia solicitada, a impressora centralizará a saída resultante.|
 |unknownFutureValue|5 |Valor de sentinela de enumeração evolvable. Não usar.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -158,7 +158,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "contentTypes": [""],
   "isColorPrintingSupported": true,
-  "feedDirections": [{"@odata.type": "microsoft.graph.printerFeedDirection"}],
+  "feedOrientations": [{"@odata.type": "microsoft.graph.printerFeedOrientation"}],
   "isPageRangeSupported": true,
   "qualities": [{"@odata.type": "microsoft.graph.printQuality"}],
   "dpis": [12345],

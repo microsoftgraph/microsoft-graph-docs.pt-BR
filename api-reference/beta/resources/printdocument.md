@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 34f35181e9d1ba70c2efe8df31d6d6457aa0acde
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 102cf81f0770f02b1206bff1fa927121696047c1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635135"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727973"
 ---
 # <a name="printdocument-resource-type"></a>tipo de recurso de documento de documentos
 
@@ -24,7 +24,7 @@ Representa um documento que está sendo impresso.
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [uploadData](../api/printdocument-uploaddata.md) | Nenhum | Carregar um único segmento binário do **documento**. |
+| [Criar sessão de upload](../api/printdocument-get-file.md) | [uploadSession](uploadsession.md) | Criar uma sessão de carregamento para carregar com interseção intervalos de arquivos binários do arquivo de **documentos**. |
 | [Baixar arquivo binário](../api/printdocument-get-file.md) | URL de download | Baixe o arquivo binário associado ao **documento**. |
 
 ## <a name="properties"></a>Propriedades
@@ -34,7 +34,6 @@ Representa um documento que está sendo impresso.
 |displayName|String|O nome do documento. Somente leitura.|
 |contentType|String|O tipo de conteúdo do documento (MIME). Somente leitura.|
 |size|Int64|O tamanho do documento em bytes. Somente leitura.|
-|configuration|[printerDocumentConfiguration](printerdocumentconfiguration.md) |Um grupo de configurações que uma impressora deve usar para imprimir um documento. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -51,19 +50,9 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
-  "mimeType": "String",
-  "sizeInBytes": 12345,
-  "documentConfiguration": {
-    "pageRanges": [ {"@odata.type": "microsoft.graph.printPageRange"} ],
-    "printQuality": "String",
-    "printResolutionInDpi": 123456,
-    "feedDirection": "String",
-    "orientation": "String",
-    "duplexConfiguration": "String",
-    "copies": 123456,
-    "colorConfiguration": "String"
-  }
+  "displayName": "String",
+  "contentType": "String",
+  "size": 12345
 }
 
 ```

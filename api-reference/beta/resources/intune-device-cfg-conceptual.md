@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 416485ee39f02ba6a3b6532f159e124ecf1f1841
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6087a688102e9577fe24ae3d3eb4cd3c70768aee
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966545"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727488"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -358,7 +358,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de comportamento de remoção de cartão inteligente de opções de segurança local](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [Tipo de comportamento de solicitação de elevação de usuário padrão de opções de segurança local](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [receptor de eventos do Apple para macOS](intune-deviceconfig-macosappleeventreceiver.md)
-- [par de chave/valor de domínios associados ao macOS](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
+- [item de domínios associados macOS](intune-deviceconfig-macosassociateddomainsitem.md)
 - [extensão de logon único do macOS do Azure AD](intune-deviceconfig-macosazureadsinglesignonextension.md)
 - [Base de perfil de certificado do macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Política de conformidade do macOS](intune-deviceconfig-macoscompliancepolicy.md)
@@ -387,7 +387,15 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [extensão de logon único de redirecionamento macOS](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [Perfil de certificado do SCEP do macOS](intune-deviceconfig-macosscepcertificateprofile.md)
 - [extensão de logon único do macOS](intune-deviceconfig-macossinglesignonextension.md)
+- [Resumo da conta de atualização do software macOS](intune-deviceconfig-macossoftwareupdateaccountsummary.md)
+- [comportamento de atualização do software macOS](intune-deviceconfig-macossoftwareupdatebehavior.md)
+- [Categoria de atualização do software macOS](intune-deviceconfig-macossoftwareupdatecategory.md)
+- [Resumo da categoria de atualização de software macOS](intune-deviceconfig-macossoftwareupdatecategorysummary.md)
+- [configuração da atualização de software do macOS](intune-deviceconfig-macossoftwareupdateconfiguration.md)
 - [política de atraso de atualização do software macOS](intune-deviceconfig-macossoftwareupdatedelaypolicy.md)
+- [tipo de agendamento de atualização do software macOS](intune-deviceconfig-macossoftwareupdatescheduletype.md)
+- [Estado de atualização do software macOS](intune-deviceconfig-macossoftwareupdatestate.md)
+- [Resumo do estado de atualização do software macOS](intune-deviceconfig-macossoftwareupdatestatesummary.md)
 - [extensão do sistema macOS](intune-deviceconfig-macossystemextension.md)
 - [tipo de extensão do sistema macOS](intune-deviceconfig-macossystemextensiontype.md)
 - [mapeamento de tipo de extensão do sistema macOS](intune-deviceconfig-macossystemextensiontypemapping.md)
@@ -612,5 +620,3 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de Wi-Fi do Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Configuração de EAP corporativa de Wi-Fi do Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
 - [Interface de rede com fio](intune-deviceconfig-wirednetworkinterface.md)
-
-

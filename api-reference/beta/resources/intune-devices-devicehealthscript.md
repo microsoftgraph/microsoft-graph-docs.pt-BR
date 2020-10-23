@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 388ac809b02316b9daf250f04fb6ce42b593a4de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0392140755fb8e57bee27fef113b10bc6ae94b28
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060430"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728199"
 ---
 # <a name="devicehealthscript-resource-type"></a>tipo de recurso deviceHealthScript
 
@@ -31,8 +31,8 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de integridad
 |[Excluir deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|Nenhum|Exclui [deviceHealthScript](../resources/intune-devices-devicehealthscript.md).|
 |[Atualizar deviceHealthScript](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Atualiza as propriedades de um objeto [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) .|
 |[atribuir ação](../api/intune-devices-devicehealthscript-assign.md)|Nenhuma|Ainda não documentado|
-|[ação updateGlobalScript](../api/intune-devices-devicehealthscript-updateglobalscript.md)|Cadeia de caracteres|Atualizar o script de integridade do dispositivo proprietário|
-|[ação getGlobalScriptHighestAvailableVersion](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|Cadeia de caracteres|Atualizar o script de integridade do dispositivo proprietário|
+|[ação updateGlobalScript](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|Atualizar o script de integridade do dispositivo proprietário|
+|[ação getGlobalScriptHighestAvailableVersion](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|Atualizar o script de integridade do dispositivo proprietário|
 |[ação enableGlobalScripts](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|Nenhuma|Ainda não documentado|
 |[função areGlobalScriptsAvailable](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Ainda não documentado|
 |[função getRemediationSummary](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|Ainda não documentado|
@@ -41,10 +41,10 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de integridad
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do script de integridade do dispositivo|
+|id|String|Identificador exclusivo do script de integridade do dispositivo|
 |publicador|String|Nome do editor de script de integridade do dispositivo|
 |versão|String|Versão do script de integridade do dispositivo|
-|displayName|Cadeia de caracteres|Nome do script de integridade do dispositivo|
+|displayName|String|Nome do script de integridade do dispositivo|
 |description|String|Descrição do script de integridade do dispositivo|
 |detectionScriptContent|Binária|Todo o conteúdo do script do PowerShell de detecção|
 |remediationScriptContent|Binária|Todo o conteúdo do script do PowerShell de correção|
@@ -55,7 +55,7 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts de integridad
 |runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
 |isGlobalScript|Booliano|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
-|highestAvailableVersion|Cadeia de caracteres|Versão mais recente disponível para um script proprietário da Microsoft|
+|highestAvailableVersion|String|Versão mais recente disponível para um script proprietário da Microsoft|
 |detectionScriptParameters|coleção [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos complexType DetectionScriptParameters.|
 |remediationScriptParameters|coleção [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos complexType RemediationScriptParameters.|
 
@@ -116,7 +116,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

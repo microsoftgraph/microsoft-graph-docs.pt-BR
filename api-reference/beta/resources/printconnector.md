@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: d027344db67a26fc0af7ebffaaad63d3fe3c4971
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9962bad290d6a07c214107e58c8a96afb9148394
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046805"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727987"
 ---
 # <a name="printconnector-resource-type"></a>tipo de recurso de multiconnector
 
@@ -32,12 +32,12 @@ Representa um conector de impressão que foi registrado usando uma assinatura de
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| Somente leitura.|
-|name|Cadeia de caracteres|O nome do conector.|
-|Nomededomíniototalmentequalificado|Cadeia de caracteres|O nome de host do computador do conector.|
+|displayName|String|O nome do conector.|
+|Nomededomíniototalmentequalificado|String|O nome de host do computador do conector.|
 |operatingSystem|String|A versão do sistema operacional do computador do conector.|
-|appVersion|Cadeia de caracteres|A versão do conector.|
+|appVersion|String|A versão do conector.|
 |deviceHealth|[deviceHealth](devicehealth.md)|A integridade do dispositivo do conector.|
-|localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional do conector.|
+|location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional do conector.|
 |registeredDateTime|DateTimeOffset|O DateTimeOffset quando o conector foi registrado.|
 |registeredBy|[userIdentity](useridentity.md)|O usuário que registrou o conector.|
 
@@ -56,7 +56,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
+  "displayName": "String",
   "fullyQualifiedDomainName": "String",
   "operatingSystem": "String",
   "appVersion": "String",

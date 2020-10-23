@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c8302490c4d5deb189ed441f238f8ba4de69dc5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 935ff6b9a780ccfc9cbd5e74b9bbd6a3104a6c3f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060451"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728213"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>tipo de enumeração deviceGuardVirtualizationBasedSecurityHardwareRequirementState
 
@@ -26,11 +26,10 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |meetHardwareRequirements|,0|O sistema atende aos requisitos de configuração de hardware|
-|secureBootRequired|1 |Inicialização segura necessária|
-|dmaProtectionRequired|2 |Proteção de DMA necessária|
+|secureBootRequired|1|Inicialização segura necessária|
+|dmaProtectionRequired|duas|Proteção de DMA necessária|
 |hyperVNotSupportedForGuestVM|4 |HyperV não suportado para VM convidada|
 |hyperVNotAvailable|8 |O recurso HyperV não está disponível|
-
 
 
 
