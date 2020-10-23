@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 149fa24f7e3d14f0bc568ed0383a9cde1a20a04f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2d56d4350e996e4e361d1b90bc464d8f8fd5462f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045373"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692223"
 ---
 # <a name="delete-androidforworkscepcertificateprofile"></a>Excluir androidForWorkScepCertificateProfile
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

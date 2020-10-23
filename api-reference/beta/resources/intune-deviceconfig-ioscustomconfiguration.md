@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d50073b12c4df339fd8c43eb810167bedc04f65
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbf079f90b6499f1de0b61146444937e07c1c1d3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994047"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692496"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>iosCustomConfiguration resource type
 
@@ -25,7 +25,7 @@ Este tópico fornece descrições dos métodos declarados, das propriedades e da
 
 Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosCustomConfigurations](../api/intune-deviceconfig-ioscustomconfiguration-list.md)|Coleção [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md)|Lista propriedades e relações dos objetos [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md).|
@@ -110,7 +110,6 @@ Veja a seguir uma representação JSON do recurso.
   "payload": "binary"
 }
 ```
-
 
 
 

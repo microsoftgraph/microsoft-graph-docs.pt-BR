@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a66c4f5bdc32bf9c62c79a3417cfd63df9559af4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b19da7e0190b7983dbcf4dea30dbe1d2a27bfd21
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081346"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691341"
 ---
 # <a name="insightvalueint-resource-type"></a>tipo de recurso insightValueInt
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": 1024
 }
 ```
-
 
 
 

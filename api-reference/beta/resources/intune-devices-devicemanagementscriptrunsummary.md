@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8147bfe8033a84df4493be1ac5c5672d2249adb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9eec15f2d59127ebdcd7b38f798c4ea45417157
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081549"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691383"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>tipo de recurso deviceManagementScriptRunSummary
 
@@ -31,7 +31,7 @@ Contém propriedades para o resumo de execução de um script de gerenciamento d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo. Essa propriedade é somente leitura.|
+|id|String|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo. Essa propriedade é somente leitura.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro.|
 |successUserCount|Int32|Contagem de usuários com sucesso.|
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   "errorUserCount": 1024
 }
 ```
-
 
 
 

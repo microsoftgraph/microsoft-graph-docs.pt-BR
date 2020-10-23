@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0562f36f46d3ae54621de61d1117144d91624d5e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab45603b91740ffbdef4379413a89c9fa21b929c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039934"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692370"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>tipo de enumeração windowsFirewallRuleNetworkProfileTypes
 
@@ -26,10 +26,9 @@ Sinalizadores que representam quais tipos de perfil de rede se aplicam a uma reg
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Nenhum sinalizador definido.|
-|domínio|1 |O perfil para redes que estão conectadas a domínios.|
-|privada|2 |O perfil para redes privadas.|
+|domínio|1|O perfil para redes que estão conectadas a domínios.|
+|privada|duas|O perfil para redes privadas.|
 |public|4 |O perfil para redes públicas.|
-
 
 
 

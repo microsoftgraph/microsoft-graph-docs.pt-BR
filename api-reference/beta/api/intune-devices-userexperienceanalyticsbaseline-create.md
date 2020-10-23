@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8c6b1472fcee0f38c561be44685b2583f0d6fc1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3951869a6ec5f425fe9a37b62bb2d8c9261bf31b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072323"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691663"
 ---
 # <a name="create-userexperienceanalyticsbaseline"></a>Criar userExperienceAnalyticsBaseline
 
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userExpe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da linha de base da análise da experiência do usuário.|
-|displayName|Cadeia de caracteres|O nome da linha de base da análise da experiência do usuário.|
+|id|String|O identificador exclusivo da linha de base da análise da experiência do usuário.|
+|displayName|String|O nome da linha de base da análise da experiência do usuário.|
 |overallScore|Int32|A pontuação geral da linha de base da análise da experiência do usuário.|
 |isBuiltIn|Booliano|Significa se a linha de base atual é a linha de base mediana comercial ou uma linha de base personalizada.|
 |createdDateTime|DateTimeOffset|A data em que a linha de base personalizada foi criada.|
@@ -97,7 +97,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 

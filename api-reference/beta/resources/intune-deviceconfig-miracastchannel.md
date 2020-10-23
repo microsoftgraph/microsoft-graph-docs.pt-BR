@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 54649e5aca1939c3c7e6ec579afd8e05d8878df6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d07187a6a98ac53e0338fc30432e7f20ee9596ae
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055432"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692454"
 ---
 # <a name="miracastchannel-enum-type"></a>tipo de enumeração miracastChannel
 
@@ -26,9 +26,9 @@ Valores possíveis para o canal Miracast.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|um|1 |Só.|
-|two|2 |Two.|
-|three|3 |Seguintes.|
+|um|1|Só.|
+|two|duas|Two.|
+|three|3D|Seguintes.|
 |four|4 |Quarta.|
 |five|5 |Máximo.|
 |MRU|6 |MRU.|
@@ -36,7 +36,7 @@ Valores possíveis para o canal Miracast.
 |altura|8 |Altura.|
 |nove|9 |Nove.|
 |primeiros|10 |Primeiros.|
-|11|11 |11.|
+|11|11|11.|
 |thirtySix|36|36.|
 |40|40|40.|
 |fortyFour|44|44.|
@@ -46,7 +46,6 @@ Valores possíveis para o canal Miracast.
 |oneHundredFiftySeven|157|OneHundredFifty-sete.|
 |oneHundredSixtyOne|161|OneHundredSixty-um.|
 |oneHundredSixtyFive|165|OneHundredSixty-cinco.|
-
 
 
 

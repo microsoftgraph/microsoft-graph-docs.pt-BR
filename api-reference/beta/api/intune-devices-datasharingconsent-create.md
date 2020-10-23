@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c22f39f526baec2878937506633c830b456889b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6780454f61a0be2df468349cb5b786d8dcdd4b3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085966"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693280"
 ---
 # <a name="create-datasharingconsent"></a>Criar dataSharingConsent
 
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar dataShar
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
-|objectdisplayname|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|Cadeia de caracteres|O TermsUrl para o consentimento de compartilhamento de dados|
+|id|String|A ID de consentimento de compartilhamento de dados|
+|objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
 |granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|Cadeia de caracteres|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|Cadeia de caracteres|O UserId do usuário que concedeu o consentimento para esta conta|
+|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
 
 
 
@@ -104,7 +104,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f6efd504a281398b33df4cea5b93dc0fdfd995d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c8204cf6e647c11c3f7aa9794cf38c8ce91605d4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043378"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692979"
 ---
 # <a name="create-grouppolicysettingmapping"></a>Criar groupPolicySettingMapping
 
@@ -53,27 +53,27 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
-|parentId|Cadeia de caracteres|ID pai da configuração de política de grupo.|
+|id|String|Ainda não documentado|
+|parentId|String|ID pai da configuração de política de grupo.|
 |childIdList|Coleção de cadeias de caracteres|Lista de IDs filhos da configuração de política de grupo.|
 |settingName|Cadeia de caracteres|O nome dessa configuração de política de grupo.|
-|settingValue|Cadeia de caracteres|O valor dessa configuração de política de grupo.|
-|settingValueType|Cadeia de caracteres|O tipo de valor dessa configuração de política de grupo.|
-|settingDisplayName|Cadeia de caracteres|O nome de exibição dessa configuração de política de grupo.|
-|settingDisplayValue|Cadeia de caracteres|O valor de exibição dessa configuração de política de grupo.|
-|settingDisplayValueType|Cadeia de caracteres|O tipo de valor de exibição dessa configuração de política de grupo.|
-|settingValueDisplayUnits|Cadeia de caracteres|As unidades de exibição desse valor de configuração da política de grupo|
-|settingCategory|Cadeia de caracteres|A categoria em que a configuração da política de grupo está.|
-|mdmCspName|Cadeia de caracteres|O nome do CSP para o qual esta configuração de política de grupo é mapeada.|
-|mdmSettingUri|Cadeia de caracteres|O URI de CSP do MDM para o qual essa configuração de política de grupo é mapeada.|
+|settingValue|String|O valor dessa configuração de política de grupo.|
+|settingValueType|String|O tipo de valor dessa configuração de política de grupo.|
+|settingDisplayName|String|O nome de exibição dessa configuração de política de grupo.|
+|settingDisplayValue|String|O valor de exibição dessa configuração de política de grupo.|
+|settingDisplayValueType|String|O tipo de valor de exibição dessa configuração de política de grupo.|
+|settingValueDisplayUnits|String|As unidades de exibição desse valor de configuração da política de grupo|
+|settingCategory|String|A categoria em que a configuração da política de grupo está.|
+|mdmCspName|String|O nome do CSP para o qual esta configuração de política de grupo é mapeada.|
+|mdmSettingUri|String|O URI de CSP do MDM para o qual essa configuração de política de grupo é mapeada.|
 |mdmMinimumOSVersion|Int32|A versão mínima do sistema operacional para a qual esta configuração MDM oferece suporte.|
 |SettingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|O tipo de configuração (segurança ou ADMX) da política de grupo. Os valores possíveis são: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|isMdmSupported|Booliano|Indica se a configuração é suportada pelo Intune ou não|
+|isMdmSupported|Boolean|Indica se a configuração é suportada pelo Intune ou não|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indica se a configuração é suportada no MDM ou não. Os valores possíveis são: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|O escopo da configuração. Os valores possíveis são: `unknown`, `device`, `user`.|
 |intuneSettingUriList|Coleção de cadeias de caracteres|A lista de URIs de configuração do Intune que esta configuração de política de grupo mapeia para|
-|intuneSettingDefinitionId|Cadeia de caracteres|A ID da definição da configuração do Intune|
-|admxSettingDefinitionId|Cadeia de caracteres|ID da política de grupo ADMX|
+|intuneSettingDefinitionId|String|A ID da definição da configuração do Intune|
+|admxSettingDefinitionId|String|ID da política de grupo ADMX|
 
 
 
@@ -154,7 +154,6 @@ Content-Length: 1072
   "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
-
 
 
 
