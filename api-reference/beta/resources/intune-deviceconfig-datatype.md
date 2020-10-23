@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0130c417f685d625b9950f0c840d2a5305f8f488
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43eee4a8a56b26acc34d0ca04afb91eb8aff080d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998779"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729781"
 ---
 # <a name="datatype-enum-type"></a>tipo de enumeração dataType
 
@@ -25,22 +25,21 @@ Tipos de dados para regras.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum tipo de dados.|
-|booliano|1 |Tipo de dados Boolean.|
-|Int64|2 |Tipo de dados Int64.|
-|double|3 |Tipo de dados Double.|
-|string|4 |Tipo de dados de cadeia de caracteres.|
+|none|,0|Nenhum tipo de dados.|
+|booliano|1|Tipo de dados Boolean.|
+|Int64|duas|Tipo de dados Int64.|
+|double|3D|Tipo de dados Double.|
+|cadeia de caracteres|4 |Tipo de dados de cadeia de caracteres.|
 |dateTime|5 |Tipo de dados DateTime.|
 |versão|6 |Tipo de dados da versão.|
 |base|7 |Tipo de dados base64.|
 |XML|8 |Tipo de dados XML.|
 |booleanArray|9 |Tipo de dados de matriz Boolean.|
 |int64Array|10 |Tipo de dados da matriz Int64.|
-|doubleArray|11 |Tipo de dados de matriz Double.|
+|doubleArray|11|Tipo de dados de matriz Double.|
 |stringArray|12 |Tipo de dados de matriz de cadeia de caracteres.|
 |dateTimeArray|13 |Tipo de dados de matriz DateTime.|
 |versionArray|14 |Tipo de dados de matriz de versão.|
-
 
 
 

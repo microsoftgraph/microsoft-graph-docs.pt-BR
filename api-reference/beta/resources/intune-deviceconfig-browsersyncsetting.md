@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6495134df04ac1b94df605b866862273a5321bc3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3bc330373c3578a1bbcf2e6736469c18c926a904
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016377"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729823"
 ---
 # <a name="browsersyncsetting-enum-type"></a>tipo de enumeração browserSyncSetting
 
@@ -26,9 +26,8 @@ Permitir (não configurado) ou impedir (bloquear) a sincronização das configur
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Padrão – permite a sincronização de configurações de navegador entre dispositivos.|
-|blockedWithUserOverride|1 |Impedir a sincronização das configurações do navegador nos dispositivos de usuário, permitir a substituição de configuração do usuário.|
-|bloqueou|2 |Impede totalmente a sincronização das configurações do navegador nos dispositivos de usuário.|
-
+|blockedWithUserOverride|1|Impedir a sincronização das configurações do navegador nos dispositivos de usuário, permitir a substituição de configuração do usuário.|
+|bloqueou|duas|Impede totalmente a sincronização das configurações do navegador nos dispositivos de usuário.|
 
 
 

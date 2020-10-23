@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d04575500b1570eaf5914af6778a2cadd9757cd7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9897c5a1a93cb051882c3a56741a1bbbca93b8d7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026786"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729746"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Tipo de recurso deviceComplianceScheduledActionForRule
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "ruleName": "String"
 }
 ```
-
 
 
 

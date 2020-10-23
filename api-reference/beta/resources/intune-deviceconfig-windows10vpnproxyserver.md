@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5842026e4be25aa1c0362084ce07c140bde2d874
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9301b2b48bb8ffc9cd18e78d39981ccb9461276f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084615"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729578"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>tipo de recurso windows10VpnProxyServer
 
@@ -28,10 +28,10 @@ Herda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|Cadeia de caracteres|URL do script de configuração automática do proxy. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|automaticConfigurationScriptUrl|String|URL do script de configuração automática do proxy. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|Cadeia de caracteres|Enfrentar. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |propor|Int32|Propor. Valores válidos de 0 a 65535 herdados de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|bypassProxyServerForLocalAddress|Boolean|Ignorar servidor proxy para endereço local.|
+|bypassProxyServerForLocalAddress|Booliano|Ignorar servidor proxy para endereço local.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -52,7 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

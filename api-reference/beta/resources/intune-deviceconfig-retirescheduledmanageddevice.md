@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1cdd08343dba162db177c25ada67be08c9ac686
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2939da221a47e878414c5a24f2ed44fdd9c5e238
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049531"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729660"
 ---
 # <a name="retirescheduledmanageddevice-resource-type"></a>tipo de recurso retireScheduledManagedDevice
 
@@ -25,16 +25,16 @@ ManagedDevices que estão agendados para desativação
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|managedDeviceId|Cadeia de caracteres|DeviceID gerenciado|
+|id|String|Chave da entidade.|
+|managedDeviceId|String|DeviceID gerenciado|
 |managedDeviceName|String|Nome do dispositivo gerenciado|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de dispositivo de dispositivo gerenciado. Os valores possíveis são:,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` , `macMDM` , `holoLens` , `surfaceHub` , `androidForWork` , `androidEnterprise` , `windows10x` `androidnGMS` `blackberry` `palm` `unknown` ,,,,,,,,,,,,,.|
 |complianceState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|ComplianceStatus de dispositivo gerenciado. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |retireAfterDateTime|DateTimeOffset|Desativação de dispositivo gerenciado após DateTime|
 |managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgentType de dispositivo gerenciado. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm` e `windowsManagementCloudApi`.|
 |ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|ManagedDeviceOwnerType de dispositivo gerenciado. Os valores possíveis são: `unknown`, `company`, `personal`.|
-|deviceCompliancePolicyName|Cadeia de caracteres|Nome da política de conformidade do dispositivo|
-|deviceCompliancePolicyId|Cadeia de caracteres|Política de conformidade do dispositivo|
+|deviceCompliancePolicyName|String|Nome da política de conformidade do dispositivo|
+|deviceCompliancePolicyId|String|Política de conformidade do dispositivo|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 
