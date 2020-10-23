@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3616219253638d603375135aacc88b05045e3c4d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 57b905857bbe119bba925dae478df403e6069a79
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48068312"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735418"
 ---
 # <a name="update-grouppolicydefinition"></a>Atualizar groupPolicyDefinition
 
@@ -58,13 +58,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifica o tipo de grupo ao qual a política pode ser aplicada. Os valores possíveis são: `user` e `machine`.|
-|displayName|Cadeia de caracteres|O nome da política localizada.|
-|Texto não criptografado|Cadeia de caracteres|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
-|categoryPath|Cadeia de caracteres|O caminho de categoria completo localizado para a política.|
-|com suporte|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
+|displayName|String|O nome da política localizada.|
+|Texto não criptografado|String|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
+|categoryPath|String|O caminho de categoria completo localizado para a política.|
+|com suporte|String|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
 |groupPolicyCategoryId|Guid|A ID de categoria da categoria pai|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 
@@ -113,7 +113,6 @@ Content-Length: 466
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

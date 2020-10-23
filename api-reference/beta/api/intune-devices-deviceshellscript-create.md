@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c686f45d266241ce7cb42bbaef2d8020149a81aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de9897b24fdea84f659e5c743dc669dd7b823d20
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994621"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735509"
 ---
 # <a name="create-deviceshellscript"></a>Criar deviceShellScript
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceSh
 |:---|:---|:---|
 |executionFrequency|Duração|O intervalo de execução do script. Se não definido, o script será executado uma vez|
 |retryCount|Int32|Número de vezes que o script deve ser repetido se falhar|
-|blockExecutionNotifications|Boolean|Não notifica o usuário de que um script está sendo executado|
+|blockExecutionNotifications|Booliano|Não notifica o usuário de que um script está sendo executado|
 |id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
 |displayName|String|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
@@ -121,7 +121,6 @@ Content-Length: 581
   ]
 }
 ```
-
 
 
 

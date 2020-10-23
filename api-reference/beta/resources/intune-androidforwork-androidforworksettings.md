@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef0452ea29b6966f24778662a429bb1534c8068f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbc10433448d4df871d35528dc101e0f9960f710
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052849"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736293"
 ---
 # <a name="androidforworksettings-resource-type"></a>Tipo de recurso androidForWorkSettings
 
@@ -35,7 +35,7 @@ Configurações para o Android for Work.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador de configurações do Android for Work|
+|id|String|O identificador de configurações do Android for Work|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Vincule o status do locatário à API do Google EMM. Os valores possíveis são: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Hora da conclusão da última sincronização do aplicativo|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|Resultado da última sincronização do aplicativo. Os possíveis valores são: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceOwnerManagementEnabled": true
 }
 ```
-
 
 
 

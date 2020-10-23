@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af90d5f3fd461fbc7888cabec66959f385a4dc3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 10fc00b5d3135535c557cd179d32029a6aef2f6b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029621"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736104"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>tipo de enumeração deviceManagementExchangeConnectorType
 
@@ -26,10 +26,9 @@ O tipo de conector do Exchange.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |onPremises|,0|Conecta-se ao ambiente do Exchange local.|
-|discussões|1 |Conecta-se ao ambiente do Exchange multilocatário do O365|
-|serviceToService|2 |O serviço do Intune conecta-se diretamente ao ambiente do Exchange multilocatário do O365|
-|dedicado|3 |Conecta-se ao ambiente do Exchange dedicado do O365.|
-
+|discussões|1|Conecta-se ao ambiente do Exchange multilocatário do O365|
+|serviceToService|duas|O serviço do Intune conecta-se diretamente ao ambiente do Exchange multilocatário do O365|
+|dedicado|3D|Conecta-se ao ambiente do Exchange dedicado do O365.|
 
 
 

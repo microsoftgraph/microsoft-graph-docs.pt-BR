@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6757e23335600b82fe99cd7995b475537c989339
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 329277396e92832814f28c77aa021da77d588230
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024231"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735768"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>tipo de recurso macOSEndpointProtectionConfiguration
 
@@ -39,7 +39,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -68,10 +68,10 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |advancedThreatProtectionCloudDelivered|[habilitação](../resources/intune-shared-enablement.md)|Determina se a proteção do Microsoft defender para proteção avançada contra ameaças deve ou não ser habilitada no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |advancedThreatProtectionAutomaticSampleSubmission|[habilitação](../resources/intune-shared-enablement.md)|Determina se o envio automático de exemplo de arquivo para a proteção avançada contra ameaças do Microsoft defender deve ou não ser habilitado no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |advancedThreatProtectionDiagnosticDataCollection|[habilitação](../resources/intune-shared-enablement.md)|Determina se o diagnóstico e a coleta de dados de uso devem ou não ser habilitados para a proteção avançada contra ameaças do Microsoft defender no macOS. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|advancedThreatProtectionExcludedFolders|Coleção String|Uma lista de caminhos para pastas a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
-|advancedThreatProtectionExcludedFiles|Coleção String|Uma lista de caminhos para arquivos a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
-|advancedThreatProtectionExcludedExtensions|Coleção String|Uma lista de extensões de arquivo para excluir da verificação antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
-|advancedThreatProtectionExcludedProcesses|Coleção String|Uma lista de nomes de processos a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
+|advancedThreatProtectionExcludedFolders|Coleção de cadeias de caracteres|Uma lista de caminhos para pastas a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
+|advancedThreatProtectionExcludedFiles|Coleção de cadeias de caracteres|Uma lista de caminhos para arquivos a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
+|advancedThreatProtectionExcludedExtensions|Coleção de cadeias de caracteres|Uma lista de extensões de arquivo para excluir da verificação antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
+|advancedThreatProtectionExcludedProcesses|Coleção de cadeias de caracteres|Uma lista de nomes de processos a serem excluídos da verificação de antivírus para proteção avançada contra ameaças do Microsoft defender no macOS.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -166,7 +166,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18537e1fa81fd082cc7fd78d2675540535195a32
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e97b8b630b8d896508ec4aa21c63e0710c418ffe
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075781"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735971"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>tipo de recurso deviceManagementTroubleshootingErrorResource
 
@@ -26,7 +26,7 @@ Objeto representando um link para informações de solução de problemas, o lin
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |texto|String|Ainda não documentado|
-|vínculo|Cadeia de caracteres|O link para o recurso da Web. Pode conter qualquer um dos seguintes formatadores: {{UPN}}, {{DeviceGUID}}, {{userguid}}|
+|vínculo|String|O link para o recurso da Web. Pode conter qualquer um dos seguintes formatadores: {{UPN}}, {{DeviceGUID}}, {{userguid}}|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "link": "String"
 }
 ```
-
 
 
 

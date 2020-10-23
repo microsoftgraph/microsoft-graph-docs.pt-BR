@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4d481583bf3f1937a1d7afbcc53fe7da7e7c06c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d8c0ebeb99dbd1e67252e0e58e9cc5659ef6f7f3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47995734"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735726"
 ---
 # <a name="delete-iosdevicefeaturesconfiguration"></a>Excluir iosDeviceFeaturesConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

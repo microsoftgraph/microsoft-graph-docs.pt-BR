@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9e25c89427e7e8a77a25be943fd3e35877d4450
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8fc6eecdcefc3081d5673e9d3ed5a1640cd38a6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056230"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735530"
 ---
 # <a name="update-devicemanagementintentassignment"></a>Atualizar deviceManagementIntentAssignment
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da atribuição|
+|id|String|A ID da atribuição|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição|
 
 
@@ -97,7 +97,6 @@ Content-Length: 376
   }
 }
 ```
-
 
 
 
