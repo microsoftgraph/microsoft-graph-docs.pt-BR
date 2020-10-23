@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68382c5b5dfdf38cb57f926b3aed7623e6180cb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c391483f2127ba89a98b0b02a8c2ebd5b1c83e07
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053696"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702772"
 ---
-# <a name="create-windowsfeatureupdateprofile"></a><span data-ttu-id="ad71b-103">Criar windowsFeatureUpdateProfile</span><span class="sxs-lookup"><span data-stu-id="ad71b-103">Create windowsFeatureUpdateProfile</span></span>
+# <a name="create-windowsfeatureupdateprofile"></a><span data-ttu-id="1fe16-103">Criar windowsFeatureUpdateProfile</span><span class="sxs-lookup"><span data-stu-id="1fe16-103">Create windowsFeatureUpdateProfile</span></span>
 
-<span data-ttu-id="ad71b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ad71b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1fe16-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1fe16-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ad71b-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ad71b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1fe16-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1fe16-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ad71b-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ad71b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1fe16-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1fe16-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ad71b-107">Criar um novo objeto [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="ad71b-107">Create a new [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.</span></span>
+<span data-ttu-id="1fe16-107">Criar um novo objeto [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="1fe16-107">Create a new [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ad71b-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ad71b-108">Prerequisites</span></span>
-<span data-ttu-id="ad71b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ad71b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1fe16-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1fe16-108">Prerequisites</span></span>
+<span data-ttu-id="1fe16-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1fe16-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ad71b-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ad71b-111">Permission type</span></span>|<span data-ttu-id="ad71b-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="ad71b-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1fe16-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1fe16-111">Permission type</span></span>|<span data-ttu-id="1fe16-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1fe16-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ad71b-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ad71b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ad71b-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad71b-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="ad71b-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ad71b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ad71b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ad71b-116">Not supported.</span></span>|
-|<span data-ttu-id="ad71b-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ad71b-117">Application</span></span>|<span data-ttu-id="ad71b-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad71b-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="1fe16-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1fe16-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1fe16-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1fe16-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="1fe16-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1fe16-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1fe16-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1fe16-116">Not supported.</span></span>|
+|<span data-ttu-id="1fe16-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1fe16-117">Application</span></span>|<span data-ttu-id="1fe16-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1fe16-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ad71b-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ad71b-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1fe16-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1fe16-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,36 +40,36 @@ ms.locfileid: "48053696"
 POST /deviceManagement/windowsFeatureUpdateProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ad71b-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ad71b-120">Request headers</span></span>
-|<span data-ttu-id="ad71b-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ad71b-121">Header</span></span>|<span data-ttu-id="ad71b-122">Valor</span><span class="sxs-lookup"><span data-stu-id="ad71b-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1fe16-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1fe16-120">Request headers</span></span>
+|<span data-ttu-id="1fe16-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1fe16-121">Header</span></span>|<span data-ttu-id="1fe16-122">Valor</span><span class="sxs-lookup"><span data-stu-id="1fe16-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ad71b-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="ad71b-123">Authorization</span></span>|<span data-ttu-id="ad71b-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ad71b-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ad71b-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="ad71b-125">Accept</span></span>|<span data-ttu-id="ad71b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ad71b-126">application/json</span></span>|
+|<span data-ttu-id="1fe16-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="1fe16-123">Authorization</span></span>|<span data-ttu-id="1fe16-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1fe16-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1fe16-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1fe16-125">Accept</span></span>|<span data-ttu-id="1fe16-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1fe16-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ad71b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ad71b-127">Request body</span></span>
-<span data-ttu-id="ad71b-128">No corpo da solicitação, forneça uma representação JSON do objeto windowsFeatureUpdateProfile.</span><span class="sxs-lookup"><span data-stu-id="ad71b-128">In the request body, supply a JSON representation for the windowsFeatureUpdateProfile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1fe16-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1fe16-127">Request body</span></span>
+<span data-ttu-id="1fe16-128">No corpo da solicitação, forneça uma representação JSON do objeto windowsFeatureUpdateProfile.</span><span class="sxs-lookup"><span data-stu-id="1fe16-128">In the request body, supply a JSON representation for the windowsFeatureUpdateProfile object.</span></span>
 
-<span data-ttu-id="ad71b-129">A tabela a seguir mostra as propriedades que são necessárias ao criar windowsFeatureUpdateProfile.</span><span class="sxs-lookup"><span data-stu-id="ad71b-129">The following table shows the properties that are required when you create the windowsFeatureUpdateProfile.</span></span>
+<span data-ttu-id="1fe16-129">A tabela a seguir mostra as propriedades que são necessárias ao criar windowsFeatureUpdateProfile.</span><span class="sxs-lookup"><span data-stu-id="1fe16-129">The following table shows the properties that are required when you create the windowsFeatureUpdateProfile.</span></span>
 
-|<span data-ttu-id="ad71b-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ad71b-130">Property</span></span>|<span data-ttu-id="ad71b-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="ad71b-131">Type</span></span>|<span data-ttu-id="ad71b-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="ad71b-132">Description</span></span>|
+|<span data-ttu-id="1fe16-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1fe16-130">Property</span></span>|<span data-ttu-id="1fe16-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="1fe16-131">Type</span></span>|<span data-ttu-id="1fe16-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="1fe16-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ad71b-133">id</span><span class="sxs-lookup"><span data-stu-id="ad71b-133">id</span></span>|<span data-ttu-id="ad71b-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ad71b-134">String</span></span>|<span data-ttu-id="ad71b-135">O identificador da entidade.</span><span class="sxs-lookup"><span data-stu-id="ad71b-135">The Identifier of the entity.</span></span>|
-|<span data-ttu-id="ad71b-136">displayName</span><span class="sxs-lookup"><span data-stu-id="ad71b-136">displayName</span></span>|<span data-ttu-id="ad71b-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ad71b-137">String</span></span>|<span data-ttu-id="ad71b-138">O nome de exibição do perfil.</span><span class="sxs-lookup"><span data-stu-id="ad71b-138">The display name of the profile.</span></span>|
-|<span data-ttu-id="ad71b-139">description</span><span class="sxs-lookup"><span data-stu-id="ad71b-139">description</span></span>|<span data-ttu-id="ad71b-140">String</span><span class="sxs-lookup"><span data-stu-id="ad71b-140">String</span></span>|<span data-ttu-id="ad71b-141">A descrição do perfil especificado pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="ad71b-141">The description of the profile which is specified by the user.</span></span>|
-|<span data-ttu-id="ad71b-142">featureUpdateVersion</span><span class="sxs-lookup"><span data-stu-id="ad71b-142">featureUpdateVersion</span></span>|<span data-ttu-id="ad71b-143">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ad71b-143">String</span></span>|<span data-ttu-id="ad71b-144">A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil.</span><span class="sxs-lookup"><span data-stu-id="ad71b-144">The feature update version that will be deployed to the devices targeted by this profile.</span></span> <span data-ttu-id="ad71b-145">A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="ad71b-145">The version could be any supported version for example 1709, 1803 or 1809 and so on.</span></span>|
-|<span data-ttu-id="ad71b-146">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="ad71b-146">createdDateTime</span></span>|<span data-ttu-id="ad71b-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ad71b-147">DateTimeOffset</span></span>|<span data-ttu-id="ad71b-148">A data e hora em que o perfil foi criado.</span><span class="sxs-lookup"><span data-stu-id="ad71b-148">The date time that the profile was created.</span></span>|
-|<span data-ttu-id="ad71b-149">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ad71b-149">lastModifiedDateTime</span></span>|<span data-ttu-id="ad71b-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ad71b-150">DateTimeOffset</span></span>|<span data-ttu-id="ad71b-151">A data e hora em que o perfil foi modificado pela última vez.</span><span class="sxs-lookup"><span data-stu-id="ad71b-151">The date time that the profile was last modified.</span></span>|
-|<span data-ttu-id="ad71b-152">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="ad71b-152">roleScopeTagIds</span></span>|<span data-ttu-id="ad71b-153">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="ad71b-153">String collection</span></span>|<span data-ttu-id="ad71b-154">Lista de marcas de escopo para esta entidade de atualização de recurso.</span><span class="sxs-lookup"><span data-stu-id="ad71b-154">List of Scope Tags for this Feature Update entity.</span></span>|
+|<span data-ttu-id="1fe16-133">id</span><span class="sxs-lookup"><span data-stu-id="1fe16-133">id</span></span>|<span data-ttu-id="1fe16-134">String</span><span class="sxs-lookup"><span data-stu-id="1fe16-134">String</span></span>|<span data-ttu-id="1fe16-135">O identificador da entidade.</span><span class="sxs-lookup"><span data-stu-id="1fe16-135">The Identifier of the entity.</span></span>|
+|<span data-ttu-id="1fe16-136">displayName</span><span class="sxs-lookup"><span data-stu-id="1fe16-136">displayName</span></span>|<span data-ttu-id="1fe16-137">String</span><span class="sxs-lookup"><span data-stu-id="1fe16-137">String</span></span>|<span data-ttu-id="1fe16-138">O nome de exibição do perfil.</span><span class="sxs-lookup"><span data-stu-id="1fe16-138">The display name of the profile.</span></span>|
+|<span data-ttu-id="1fe16-139">description</span><span class="sxs-lookup"><span data-stu-id="1fe16-139">description</span></span>|<span data-ttu-id="1fe16-140">String</span><span class="sxs-lookup"><span data-stu-id="1fe16-140">String</span></span>|<span data-ttu-id="1fe16-141">A descrição do perfil especificado pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="1fe16-141">The description of the profile which is specified by the user.</span></span>|
+|<span data-ttu-id="1fe16-142">featureUpdateVersion</span><span class="sxs-lookup"><span data-stu-id="1fe16-142">featureUpdateVersion</span></span>|<span data-ttu-id="1fe16-143">String</span><span class="sxs-lookup"><span data-stu-id="1fe16-143">String</span></span>|<span data-ttu-id="1fe16-144">A versão de atualização de recurso que será implantada nos dispositivos direcionados por esse perfil.</span><span class="sxs-lookup"><span data-stu-id="1fe16-144">The feature update version that will be deployed to the devices targeted by this profile.</span></span> <span data-ttu-id="1fe16-145">A versão pode ser qualquer versão suportada por exemplo, 1709, 1803 ou 1809 e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="1fe16-145">The version could be any supported version for example 1709, 1803 or 1809 and so on.</span></span>|
+|<span data-ttu-id="1fe16-146">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="1fe16-146">createdDateTime</span></span>|<span data-ttu-id="1fe16-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1fe16-147">DateTimeOffset</span></span>|<span data-ttu-id="1fe16-148">A data e hora em que o perfil foi criado.</span><span class="sxs-lookup"><span data-stu-id="1fe16-148">The date time that the profile was created.</span></span>|
+|<span data-ttu-id="1fe16-149">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="1fe16-149">lastModifiedDateTime</span></span>|<span data-ttu-id="1fe16-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1fe16-150">DateTimeOffset</span></span>|<span data-ttu-id="1fe16-151">A data e hora em que o perfil foi modificado pela última vez.</span><span class="sxs-lookup"><span data-stu-id="1fe16-151">The date time that the profile was last modified.</span></span>|
+|<span data-ttu-id="1fe16-152">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="1fe16-152">roleScopeTagIds</span></span>|<span data-ttu-id="1fe16-153">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="1fe16-153">String collection</span></span>|<span data-ttu-id="1fe16-154">Lista de marcas de escopo para esta entidade de atualização de recurso.</span><span class="sxs-lookup"><span data-stu-id="1fe16-154">List of Scope Tags for this Feature Update entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ad71b-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="ad71b-155">Response</span></span>
-<span data-ttu-id="ad71b-156">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ad71b-156">If successful, this method returns a `201 Created` response code and a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1fe16-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="1fe16-155">Response</span></span>
+<span data-ttu-id="1fe16-156">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1fe16-156">If successful, this method returns a `201 Created` response code and a [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ad71b-157">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ad71b-157">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1fe16-157">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1fe16-157">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ad71b-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ad71b-158">Request</span></span>
-<span data-ttu-id="ad71b-159">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ad71b-159">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1fe16-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1fe16-158">Request</span></span>
+<span data-ttu-id="1fe16-159">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1fe16-159">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles
 Content-type: application/json
@@ -86,8 +86,8 @@ Content-length: 269
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ad71b-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="ad71b-160">Response</span></span>
-<span data-ttu-id="ad71b-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ad71b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1fe16-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="1fe16-160">Response</span></span>
+<span data-ttu-id="1fe16-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1fe16-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -106,7 +106,6 @@ Content-Length: 441
   ]
 }
 ```
-
 
 
 
