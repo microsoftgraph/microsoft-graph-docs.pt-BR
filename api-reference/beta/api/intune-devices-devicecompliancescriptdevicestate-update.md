@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afdde65a488eeebc9ee0b6c636e3ba89d6ae7b3d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7326fcc510c2b65ca7776076a9062eccc8c0cc7b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040914"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728771"
 ---
-# <a name="update-devicecompliancescriptdevicestate"></a><span data-ttu-id="9c8fb-103">Atualizar deviceComplianceScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="9c8fb-103">Update deviceComplianceScriptDeviceState</span></span>
+# <a name="update-devicecompliancescriptdevicestate"></a><span data-ttu-id="13f57-103">Atualizar deviceComplianceScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="13f57-103">Update deviceComplianceScriptDeviceState</span></span>
 
-<span data-ttu-id="9c8fb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9c8fb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="13f57-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="13f57-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9c8fb-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="13f57-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="13f57-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9c8fb-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="13f57-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="13f57-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9c8fb-107">Atualiza as propriedades de um objeto [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) .</span><span class="sxs-lookup"><span data-stu-id="9c8fb-107">Update the properties of a [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object.</span></span>
+<span data-ttu-id="13f57-107">Atualiza as propriedades de um objeto [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) .</span><span class="sxs-lookup"><span data-stu-id="13f57-107">Update the properties of a [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9c8fb-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="9c8fb-108">Prerequisites</span></span>
-<span data-ttu-id="9c8fb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9c8fb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="13f57-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="13f57-108">Prerequisites</span></span>
+<span data-ttu-id="13f57-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="13f57-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9c8fb-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9c8fb-111">Permission type</span></span>|<span data-ttu-id="9c8fb-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="9c8fb-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="13f57-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="13f57-111">Permission type</span></span>|<span data-ttu-id="13f57-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="13f57-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c8fb-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9c8fb-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9c8fb-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c8fb-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="9c8fb-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9c8fb-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9c8fb-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-116">Not supported.</span></span>|
-|<span data-ttu-id="9c8fb-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9c8fb-117">Application</span></span>|<span data-ttu-id="9c8fb-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9c8fb-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="13f57-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="13f57-113">Delegated (work or school account)</span></span>|<span data-ttu-id="13f57-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13f57-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="13f57-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="13f57-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="13f57-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="13f57-116">Not supported.</span></span>|
+|<span data-ttu-id="13f57-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="13f57-117">Application</span></span>|<span data-ttu-id="13f57-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="13f57-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9c8fb-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9c8fb-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="13f57-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="13f57-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,36 +40,36 @@ ms.locfileid: "48040914"
 PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/deviceRunStates/{deviceComplianceScriptDeviceStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9c8fb-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9c8fb-120">Request headers</span></span>
-|<span data-ttu-id="9c8fb-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9c8fb-121">Header</span></span>|<span data-ttu-id="9c8fb-122">Valor</span><span class="sxs-lookup"><span data-stu-id="9c8fb-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="13f57-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="13f57-120">Request headers</span></span>
+|<span data-ttu-id="13f57-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="13f57-121">Header</span></span>|<span data-ttu-id="13f57-122">Valor</span><span class="sxs-lookup"><span data-stu-id="13f57-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c8fb-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="9c8fb-123">Authorization</span></span>|<span data-ttu-id="9c8fb-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9c8fb-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="9c8fb-125">Accept</span></span>|<span data-ttu-id="9c8fb-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9c8fb-126">application/json</span></span>|
+|<span data-ttu-id="13f57-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="13f57-123">Authorization</span></span>|<span data-ttu-id="13f57-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="13f57-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="13f57-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="13f57-125">Accept</span></span>|<span data-ttu-id="13f57-126">application/json</span><span class="sxs-lookup"><span data-stu-id="13f57-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9c8fb-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9c8fb-127">Request body</span></span>
-<span data-ttu-id="9c8fb-128">No corpo da solicitação, forneça uma representação JSON do objeto [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) .</span><span class="sxs-lookup"><span data-stu-id="9c8fb-128">In the request body, supply a JSON representation for the [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="13f57-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="13f57-127">Request body</span></span>
+<span data-ttu-id="13f57-128">No corpo da solicitação, forneça uma representação JSON do objeto [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) .</span><span class="sxs-lookup"><span data-stu-id="13f57-128">In the request body, supply a JSON representation for the [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object.</span></span>
 
-<span data-ttu-id="9c8fb-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md).</span><span class="sxs-lookup"><span data-stu-id="9c8fb-129">The following table shows the properties that are required when you create the [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md).</span></span>
+<span data-ttu-id="13f57-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md).</span><span class="sxs-lookup"><span data-stu-id="13f57-129">The following table shows the properties that are required when you create the [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md).</span></span>
 
-|<span data-ttu-id="9c8fb-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9c8fb-130">Property</span></span>|<span data-ttu-id="9c8fb-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="9c8fb-131">Type</span></span>|<span data-ttu-id="9c8fb-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="9c8fb-132">Description</span></span>|
+|<span data-ttu-id="13f57-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="13f57-130">Property</span></span>|<span data-ttu-id="13f57-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="13f57-131">Type</span></span>|<span data-ttu-id="13f57-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="13f57-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9c8fb-133">id</span><span class="sxs-lookup"><span data-stu-id="9c8fb-133">id</span></span>|<span data-ttu-id="9c8fb-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9c8fb-134">String</span></span>|<span data-ttu-id="9c8fb-135">Chave da entidade de estado do dispositivo de script de conformidade do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-135">Key of the device compliance script device state entity.</span></span> <span data-ttu-id="9c8fb-136">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-136">This property is read-only.</span></span>|
-|<span data-ttu-id="9c8fb-137">detecçaostate</span><span class="sxs-lookup"><span data-stu-id="9c8fb-137">detectionState</span></span>|[<span data-ttu-id="9c8fb-138">runState</span><span class="sxs-lookup"><span data-stu-id="9c8fb-138">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="9c8fb-139">Estado de detecção da execução do script de conformidade do dispositivo mais recente.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-139">Detection state from the lastest device compliance script execution.</span></span> <span data-ttu-id="9c8fb-140">Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-140">Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.</span></span>|
-|<span data-ttu-id="9c8fb-141">lastStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="9c8fb-141">lastStateUpdateDateTime</span></span>|<span data-ttu-id="9c8fb-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9c8fb-142">DateTimeOffset</span></span>|<span data-ttu-id="9c8fb-143">O último carimbo de data/hora de quando o script de conformidade do dispositivo foi executado</span><span class="sxs-lookup"><span data-stu-id="9c8fb-143">The last timestamp of when the device compliance script executed</span></span>|
-|<span data-ttu-id="9c8fb-144">expectedStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="9c8fb-144">expectedStateUpdateDateTime</span></span>|<span data-ttu-id="9c8fb-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9c8fb-145">DateTimeOffset</span></span>|<span data-ttu-id="9c8fb-146">O carimbo de data/hora seguinte de quando o script de conformidade do dispositivo deve ser executado</span><span class="sxs-lookup"><span data-stu-id="9c8fb-146">The next timestamp of when the device compliance script is expected to execute</span></span>|
-|<span data-ttu-id="9c8fb-147">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="9c8fb-147">lastSyncDateTime</span></span>|<span data-ttu-id="9c8fb-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9c8fb-148">DateTimeOffset</span></span>|<span data-ttu-id="9c8fb-149">A última vez em que a extensão de gerenciamento do Intune foi sincronizada com o Intune</span><span class="sxs-lookup"><span data-stu-id="9c8fb-149">The last time that Intune Managment Extension synced with Intune</span></span>|
-|<span data-ttu-id="9c8fb-150">scriptOutput</span><span class="sxs-lookup"><span data-stu-id="9c8fb-150">scriptOutput</span></span>|<span data-ttu-id="9c8fb-151">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9c8fb-151">String</span></span>|<span data-ttu-id="9c8fb-152">Saída do script de detecção</span><span class="sxs-lookup"><span data-stu-id="9c8fb-152">Output of the detection script</span></span>|
-|<span data-ttu-id="9c8fb-153">scriptError</span><span class="sxs-lookup"><span data-stu-id="9c8fb-153">scriptError</span></span>|<span data-ttu-id="9c8fb-154">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9c8fb-154">String</span></span>|<span data-ttu-id="9c8fb-155">Erro do script de detecção</span><span class="sxs-lookup"><span data-stu-id="9c8fb-155">Error from the detection script</span></span>|
+|<span data-ttu-id="13f57-133">id</span><span class="sxs-lookup"><span data-stu-id="13f57-133">id</span></span>|<span data-ttu-id="13f57-134">String</span><span class="sxs-lookup"><span data-stu-id="13f57-134">String</span></span>|<span data-ttu-id="13f57-135">Chave da entidade de estado do dispositivo de script de conformidade do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="13f57-135">Key of the device compliance script device state entity.</span></span> <span data-ttu-id="13f57-136">Essa propriedade é somente leitura.</span><span class="sxs-lookup"><span data-stu-id="13f57-136">This property is read-only.</span></span>|
+|<span data-ttu-id="13f57-137">detecçaostate</span><span class="sxs-lookup"><span data-stu-id="13f57-137">detectionState</span></span>|[<span data-ttu-id="13f57-138">runState</span><span class="sxs-lookup"><span data-stu-id="13f57-138">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="13f57-139">Estado de detecção da execução do script de conformidade do dispositivo mais recente.</span><span class="sxs-lookup"><span data-stu-id="13f57-139">Detection state from the lastest device compliance script execution.</span></span> <span data-ttu-id="13f57-140">Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.</span><span class="sxs-lookup"><span data-stu-id="13f57-140">Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.</span></span>|
+|<span data-ttu-id="13f57-141">lastStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="13f57-141">lastStateUpdateDateTime</span></span>|<span data-ttu-id="13f57-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="13f57-142">DateTimeOffset</span></span>|<span data-ttu-id="13f57-143">O último carimbo de data/hora de quando o script de conformidade do dispositivo foi executado</span><span class="sxs-lookup"><span data-stu-id="13f57-143">The last timestamp of when the device compliance script executed</span></span>|
+|<span data-ttu-id="13f57-144">expectedStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="13f57-144">expectedStateUpdateDateTime</span></span>|<span data-ttu-id="13f57-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="13f57-145">DateTimeOffset</span></span>|<span data-ttu-id="13f57-146">O carimbo de data/hora seguinte de quando o script de conformidade do dispositivo deve ser executado</span><span class="sxs-lookup"><span data-stu-id="13f57-146">The next timestamp of when the device compliance script is expected to execute</span></span>|
+|<span data-ttu-id="13f57-147">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="13f57-147">lastSyncDateTime</span></span>|<span data-ttu-id="13f57-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="13f57-148">DateTimeOffset</span></span>|<span data-ttu-id="13f57-149">A última vez em que a extensão de gerenciamento do Intune foi sincronizada com o Intune</span><span class="sxs-lookup"><span data-stu-id="13f57-149">The last time that Intune Managment Extension synced with Intune</span></span>|
+|<span data-ttu-id="13f57-150">scriptOutput</span><span class="sxs-lookup"><span data-stu-id="13f57-150">scriptOutput</span></span>|<span data-ttu-id="13f57-151">String</span><span class="sxs-lookup"><span data-stu-id="13f57-151">String</span></span>|<span data-ttu-id="13f57-152">Saída do script de detecção</span><span class="sxs-lookup"><span data-stu-id="13f57-152">Output of the detection script</span></span>|
+|<span data-ttu-id="13f57-153">scriptError</span><span class="sxs-lookup"><span data-stu-id="13f57-153">scriptError</span></span>|<span data-ttu-id="13f57-154">String</span><span class="sxs-lookup"><span data-stu-id="13f57-154">String</span></span>|<span data-ttu-id="13f57-155">Erro do script de detecção</span><span class="sxs-lookup"><span data-stu-id="13f57-155">Error from the detection script</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9c8fb-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="9c8fb-156">Response</span></span>
-<span data-ttu-id="9c8fb-157">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-157">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="13f57-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="13f57-156">Response</span></span>
+<span data-ttu-id="13f57-157">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="13f57-157">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9c8fb-158">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9c8fb-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="13f57-158">Exemplo</span><span class="sxs-lookup"><span data-stu-id="13f57-158">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9c8fb-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9c8fb-159">Request</span></span>
-<span data-ttu-id="9c8fb-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-160">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="13f57-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="13f57-159">Request</span></span>
+<span data-ttu-id="13f57-160">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="13f57-160">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/deviceRunStates/{deviceComplianceScriptDeviceStateId}
 Content-type: application/json
@@ -86,8 +86,8 @@ Content-length: 387
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9c8fb-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="9c8fb-161">Response</span></span>
-<span data-ttu-id="9c8fb-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9c8fb-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="13f57-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="13f57-161">Response</span></span>
+<span data-ttu-id="13f57-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="13f57-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -104,7 +104,6 @@ Content-Length: 436
   "scriptError": "Script Error value"
 }
 ```
-
 
 
 
