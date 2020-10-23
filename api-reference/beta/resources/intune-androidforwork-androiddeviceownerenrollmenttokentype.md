@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração androidForWorkEnrollmentTarget
-description: Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para a conta
+title: tipo de enumeração androidDeviceOwnerEnrollmentTokenType
+description: O tipo de token de registro de um perfil de registro.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c8eb6aaf263746da5eda4bcd1eb2141d83efbc00
+ms.openlocfilehash: 4d0ae6e7082cca522aa28586e0d354733b10a3fc
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736300"
+ms.locfileid: "48736342"
 ---
-# <a name="androidforworkenrollmenttarget-enum-type"></a>tipo de enumeração androidForWorkEnrollmentTarget
+# <a name="androiddeviceownerenrollmenttokentype-enum-type"></a>tipo de enumeração androidDeviceOwnerEnrollmentTokenType
 
 Namespace: microsoft.graph
 
@@ -20,15 +20,13 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para a conta
+O tipo de token de registro de um perfil de registro.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Ainda não documentado|
-|todos os|1|Ainda não documentado|
-|visa|duas|Ainda não documentado|
-|targetedAsEnrollmentRestrictions|3D|Ainda não documentado|
+|Padrão.|,0|Tipo de token padrão.|
+|corporateOwnedDedicatedDeviceWithAzureADSharedMode|1|Tipo de token para registro de dispositivo dedicado compartilhado do Azure AD. Aplica-se somente ao modo de registro do CorporateOwnedDedicatedDevice.|
 
 
 
