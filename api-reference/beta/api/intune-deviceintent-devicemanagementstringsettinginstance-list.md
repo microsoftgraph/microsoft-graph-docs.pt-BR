@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc9b7af732aee2a8ad9bde031ad656395dc03778
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cccd573bca29ee65e8cff6d5e094925b5bb5e1bf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054270"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690368"
 ---
 # <a name="list-devicemanagementstringsettinginstances"></a>Listar deviceManagementStringSettingInstances
 
@@ -82,7 +82,6 @@ Content-Length: 286
   ]
 }
 ```
-
 
 
 

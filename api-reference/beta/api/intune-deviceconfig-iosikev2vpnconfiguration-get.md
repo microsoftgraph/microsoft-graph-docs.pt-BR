@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c6eaf138cb9cfb86c557c4c4083e6dd58e65634
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f32e0ea0a46ec49d8869721f9a73e53018b2399
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47995216"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48689759"
 ---
 # <a name="get-iosikev2vpnconfiguration"></a>Obter iosikEv2VpnConfiguration
 
@@ -239,7 +239,6 @@ Content-Length: 5943
   }
 }
 ```
-
 
 
 

@@ -5,16 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e56470f8081a1a74cd88ba35ca3daf9de5ae789
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5350fc0b1b6b6a013134ea761dfaa937b225d95c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48005849"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690439"
 ---
 # <a name="list-androiddeviceownerpkcscertificateprofiles"></a>Listar androidDeviceOwnerPkcsCertificateProfiles
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -133,7 +133,6 @@ Content-Length: 2515
   ]
 }
 ```
-
 
 
 

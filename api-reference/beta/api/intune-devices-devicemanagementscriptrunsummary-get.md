@@ -5,16 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79f865873b0debcf14022c0fe85f6bd2ca642ffb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 31c2a06cf858ced8be9feeccdbe4c8d3ac7d158a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014564"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48689612"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a>Obter deviceManagementScriptRunSummary
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -39,6 +39,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ``` http
 GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/runSummary
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
+GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/runSummary
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -82,7 +83,6 @@ Content-Length: 259
   }
 }
 ```
-
 
 
 

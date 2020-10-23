@@ -1,18 +1,18 @@
 ---
-title: Criar printJob
+title: Criar printJob para uma impressora
 description: Criar um novo printJob para uma impressora.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a96128756744d790f631cd69cd669b4172593999
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 8cd3d9b3c0b2a3ba77694666432cae9557709a97
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372842"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690753"
 ---
-# <a name="create-printjob"></a>Criar printJob
+# <a name="create-printjob-for-a-printer"></a>Criar printJob para uma impressora
 
 Namespace: microsoft.graph
 
@@ -44,14 +44,14 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [printJob](../resources/printjob.md) , incluindo um objeto [Document](../resources/printDocument.md) . As IDs de trabalho e de documento são definidas automaticamente durante a criação do recurso.
+No corpo da solicitação, forneça uma representação JSON de um objeto [printJob](../resources/printjob.md) . O objeto printJob só deve conter **configuração**. Todas as propriedades de **configuração** são anuláveis. Todos os outros campos, incluindo IDs de trabalho e documentos, são definidos automaticamente durante a criação do recurso.
 
 No momento, a impressão universal suporta apenas um **documento** impresso por objeto **printJob** .
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto printJob e o [documento](../resources/printDocument.md) de [impressão](../resources/printjob.md) associado no corpo da resposta. 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -61,18 +61,46 @@ Este é um exemplo de solicitação.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs
-```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+Content-type: application/json
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+{
+  "configuration": {
+    "feedOrientation": "longEdgeFirst",
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
+      }
+    ],
+    "quality": "medium",
+    "dpi": 600,
+    "orientation": "landscape",
+    "copies": 1,
+    "duplexMode": "oneSided",
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false
+  }
+}
+```
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
@@ -82,21 +110,68 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.printJob"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 425
+Content-length: 1065
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printJobs/$entity",
-  "value": [
-    {
-      "id": "5182",
-      "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-      "createdBy": {},
-      "status": {
-        "processingState": "completed",
-        "processingStateDescription": "The print job has completed successfully and no further processing will take place."
+  "id": "1825",
+  "createdDateTime": "2020-10-14T05:16:49-07:00",
+  "isFetchable": false,
+  "redirectedFrom": null,
+  "redirectedTo": null,
+  "createdBy": {
+    "id": "{userId}",
+    "displayName": "{username}",
+    "ipAddress": null,
+    "userPrincipalName": "{userupn}"
+  },
+  "status": {
+    "state": "paused",
+    "description": "The job is not a candidate for processing yet.",
+    "isAcquiredByPrinter": false,
+    "details": [
+      "uploadPending"
+    ]
+  },
+  "configuration": {
+    "quality": "medium",
+    "dpi": 600,
+    "feedOrientation": "longEdgeFirst",
+    "orientation": "landscape",
+    "duplexMode": "oneSided",
+    "copies": 1,
+    "colorMode": "blackAndWhite",
+    "inputBin": "by-pass-tray",
+    "outputBin": "output-tray",
+    "mediaSize": "A4",
+    "mediaType": "stationery",
+    "finishings": null,
+    "pagesPerSheet": 1,
+    "multipageLayout": "clockwiseFromBottomLeft",
+    "collate": false,
+    "scaling": "shrinkToFit",
+    "fitPdfToPage": false,
+    "pageRanges": [
+      {
+        "start": 1,
+        "end": 1
       }
+    ],
+    "margin": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    }
+  },
+  "documents": [
+    {
+      "id": "1477576d-5dab-4ea9-865c-c0b82cd70bd5",
+      "displayName": "",
+      "contentType": "",
+      "size": 0
     }
   ]
 }
