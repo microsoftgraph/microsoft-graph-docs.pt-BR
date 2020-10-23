@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a15faac35a273656d9fc03e10c1f73f0dced568
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 550f10e1484dc0d159712a2c6fc2132c6565628c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024147"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724562"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>tipo de enumeração macOSGatekeeperAppSources
 
@@ -26,10 +26,9 @@ Opções de origem do aplicativo para gatekeeper do macOS.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Valor padrão do dispositivo, sem intenção.|
-|macAppStore|1 |Somente aplicativos do Mac loja podem ser executados.|
-|macAppStoreAndIdentifiedDevelopers|2 |Somente os aplicativos do Mac loja e dos desenvolvedores identificados podem ser executados.|
-|em qualquer lugar|3 |Os aplicativos de qualquer lugar podem ser executados.|
-
+|macAppStore|1|Somente aplicativos do Mac loja podem ser executados.|
+|macAppStoreAndIdentifiedDevelopers|duas|Somente os aplicativos do Mac loja e dos desenvolvedores identificados podem ser executados.|
+|em qualquer lugar|3D|Os aplicativos de qualquer lugar podem ser executados.|
 
 
 

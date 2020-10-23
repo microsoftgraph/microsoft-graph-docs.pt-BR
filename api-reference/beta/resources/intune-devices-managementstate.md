@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 78e511e830d58ed1fd22b851759cdb713643746c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ce5fc93bfd48d4beaccac1552573c228f1e6f09
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081130"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725439"
 ---
 # <a name="managementstate-enum-type"></a>tipo de enumeração ManagementState
 
@@ -26,8 +26,8 @@ Estado de gerenciamento do dispositivo no Microsoft Intune.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Managed|,0|O dispositivo está sob gerenciamento|
-|retirePending|1 |Um comando de desativação está ocorrendo no dispositivo e no processo de cancelamento de registro de gerenciamento|
-|retireFailed|2 |Falha no comando de desativação no dispositivo|
+|retirePending|1|Um comando de desativação está ocorrendo no dispositivo e no processo de cancelamento de registro de gerenciamento|
+|retireFailed|duas|Falha no comando de desativação no dispositivo|
 |wipePending|3D|Um comando de apagamento está ocorrendo no dispositivo e no processo de cancelamento de registro de gerenciamento|
 |wipeFailed|4 |Falha no comando apagar no dispositivo|
 |íntegro|5 |O dispositivo não está íntegro.|
@@ -36,8 +36,7 @@ Estado de gerenciamento do dispositivo no Microsoft Intune.
 |wipeIssued|8 |Um comando de apagamento foi emitido para o dispositivo|
 |wipeCanceled|9 |Um comando de apagamento para este dispositivo foi cancelado|
 |retireCanceled|10 |Um comando de desativação para este dispositivo foi cancelado|
-|recém-descobertas|11 |O dispositivo é descoberto, mas não está totalmente inscrito.|
-
+|recém-descobertas|11|O dispositivo é descoberto, mas não está totalmente inscrito.|
 
 
 

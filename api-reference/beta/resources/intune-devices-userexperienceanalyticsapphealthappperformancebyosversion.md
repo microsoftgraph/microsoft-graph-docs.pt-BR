@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 673833ebcdccb90f5d691a7dad9d560da774add3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48a62006a3e907f2b95be59cbfa1373011ee9c3c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081963"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724421"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyosversion-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
@@ -34,13 +34,13 @@ A entidade de desempenho do aplicativo de análise da experiência do usuário c
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho da versão do aplicativo de análise da experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho da versão do aplicativo de análise da experiência do usuário.|
 |osVersion|String|A versão do sistema operacional do aplicativo.|
-|osBuildNumber|Cadeia de caracteres|O número de compilação do sistema operacional do aplicativo.|
+|osBuildNumber|String|O número de compilação do sistema operacional do aplicativo.|
 |activeDeviceCount|Int32|O número de dispositivos em que o aplicativo está ativo. Valores válidos-2147483648 a 2147483647|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
-|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de caracteres|O fornecedor do aplicativo.|
+|appDisplayName|String|O nome amigável do aplicativo.|
+|appPublisher|String|O fornecedor do aplicativo.|
 |appUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos-2147483648 a 2147483647|
 |meanTimeToFailureInMinutes|Int32|O tempo médio de falha para o aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

@@ -2,24 +2,32 @@
 title: tipo de recurso conversationMember
 description: Representa o usuário em uma conversa.
 localization_priority: Normal
-author: clearab
+author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e2c888ea55b331762761857c14b4710bf582be3f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 970e64ff358654aafee5b47a229a8425fdc69c9e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056916"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725831"
 ---
 # <a name="conversationmember-resource-type"></a>tipo de recurso conversationMember
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Representa um usuário em uma [equipe](team.md).
 Confira também [aadUserConversationMember](aaduserconversationmember.md).
+
+## <a name="methods"></a>Métodos
+
+| Método       | Tipo de retorno  |Descrição|
+|:---------------|:--------|:----------|
+|[Listar membros](../api/conversationmember-list.md) | coleção [conversationMember](conversationmember.md) | Ver a lista de todos os usuários no chat ou canal.|
+|[Obter membro](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Obter um único usuário no chat ou canal.|
+|[Adicionar membro](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Adicionar um membro a um canal.|
+|[Atualizar membro](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Atualizar um membro no canal.|
+|[Excluir membro](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Excluir um membro do canal.|
 
 ## <a name="properties"></a>Propriedades
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aef86966703f599f873214e00f1fa63fea56e354
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee139961988844061258f23f611a2c300464ff55
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020437"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724828"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Criar macOSGeneralDeviceConfiguration
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSGeneralDevi
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -77,6 +77,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSGeneralDevi
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Se uma senha deve ou não ser exigida.|
+|passwordMaximumAttemptCount|Int32|O número de tentativas com falha de tentativa de inserir a senha na tela de bloqueio do dispositivo. Valores válidos de 2 a 11|
+|passwordMinutesUntilFailedLoginReset|Int32|O número de minutos antes do logon ser redefinido após o número máximo de tentativas de logon malsucedidas ser atingido.|
 |Propriedadeskeychainblockcloudsync|Booliano|Indica se a sincronização de chaves do iCloud está bloqueada (macOS 10,12 e posterior).|
 |airPrintBlocked|Booliano|Indica se o arquivo de impressão está bloqueado (macOS 10,12 e posterior).|
 |airPrintForceTrustedTLS|Booliano|Indica se certificados confiáveis são necessários para comunicação de impressão TLS (macOS 10,13 e posterior).|
@@ -128,7 +130,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4596
+Content-length: 4680
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -182,6 +184,8 @@ Content-length: 4596
   "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true,
+  "passwordMaximumAttemptCount": 11,
+  "passwordMinutesUntilFailedLoginReset": 4,
   "keychainBlockCloudSync": true,
   "airPrintBlocked": true,
   "airPrintForceTrustedTLS": true,
@@ -266,7 +270,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4768
+Content-Length: 4852
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -323,6 +327,8 @@ Content-Length: 4768
   "passwordPreviousPasswordBlockCount": 2,
   "passwordRequiredType": "alphanumeric",
   "passwordRequired": true,
+  "passwordMaximumAttemptCount": 11,
+  "passwordMinutesUntilFailedLoginReset": 4,
   "keychainBlockCloudSync": true,
   "airPrintBlocked": true,
   "airPrintForceTrustedTLS": true,
@@ -401,7 +407,6 @@ Content-Length: 4768
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53931e6a07f5d531e0661d4f56a720a9b6b560bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 13d8ec94fafd3ae571278a62cd2e331c7f07886d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060878"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725544"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>tipo de recurso appLogCollectionDownloadDetails
 
@@ -25,8 +25,8 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|downloadUrl|Cadeia de caracteres|Baixar a URL SAS para AppLogUploadRequest concluída|
-|decryptionKey|Cadeia de caracteres|DecryptionKey como cadeia de caracteres|
+|downloadUrl|String|Baixar a URL SAS para AppLogUploadRequest concluída|
+|decryptionKey|String|DecryptionKey como cadeia de caracteres|
 |appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm para conteúdo. Os valores possíveis são: `aes256` .|
 
 ## <a name="relationships"></a>Relações
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "appLogDecryptionAlgorithm": "String"
 }
 ```
-
 
 
 

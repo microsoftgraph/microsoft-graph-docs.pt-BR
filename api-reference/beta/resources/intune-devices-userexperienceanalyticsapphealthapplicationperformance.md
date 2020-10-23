@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd66ccc6a4ae030e70d4eb2a2c638e8e72f647d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 34c36d4103d1f5f9e61913480b75baee75906e89
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080989"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724435"
 ---
 # <a name="userexperienceanalyticsapphealthapplicationperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -34,15 +34,15 @@ A entidade de desempenho do aplicativo de análise da experiência do usuário c
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do aplicativo de análise da experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho do aplicativo de análise da experiência do usuário.|
 |appHangCount|Int32|O número de suspensões para o aplicativo. Valores válidos-2147483648 a 2147483647|
 |appHealthScore|Duplo|A pontuação de integridade do aplicativo. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
-|appHealthStatus|Cadeia de caracteres|O status de integridade geral do aplicativo.|
+|appHealthStatus|String|O status de integridade geral do aplicativo.|
 |allOrgsHealthScore|Duplo|A pontuação de integridade mediana do aplicativo em todas as organizações. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
 |activeDeviceCount|Int32|O número de dispositivos em que o aplicativo está ativo. Valores válidos-2147483648 a 2147483647|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
-|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de caracteres|O fornecedor do aplicativo.|
+|appDisplayName|String|O nome amigável do aplicativo.|
+|appPublisher|String|O fornecedor do aplicativo.|
 |appUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos-2147483648 a 2147483647|
 |meanTimeToFailureInMinutes|Int32|O tempo médio de falha para o aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

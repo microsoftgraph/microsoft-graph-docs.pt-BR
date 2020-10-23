@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42a92fd725c9f0b99037825c240dd017bf6c9c82
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1e0266151c2b32baa0c5d66ea1341eee6da28b5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060773"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725502"
 ---
 # <a name="comanageddevicessummary-resource-type"></a>tipo de recurso comanagedDevicesSummary
 
@@ -33,7 +33,7 @@ Dados de resumo para dispositivos gerenciados
 |endpointProtectionCount|Int32|Número de dispositivos com o EndpointProtection de Swung. Essa propriedade é somente leitura.|
 |modernAppsCount|Int32|Número de dispositivos com o ModernApps de Swung. Essa propriedade é somente leitura.|
 |officeAppsCount|Int32|Número de dispositivos com o Officetreinamento de Swung. Essa propriedade é somente leitura.|
-|totalComanagedCount|Int32|Número de dispositivos co-gerenciados. Essa propriedade é somente leitura.|
+|totalComanagedCount|Int32|Número de dispositivos de Co-Managed. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "totalComanagedCount": 1024
 }
 ```
-
 
 
 

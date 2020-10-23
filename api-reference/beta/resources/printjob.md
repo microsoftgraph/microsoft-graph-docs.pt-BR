@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 2c0a1bdb4ec3ebe3c87b5b40595d30cf9108c5bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7810c8cd864020c42de4482deea67620950f6cf0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048733"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726289"
 ---
 # <a name="printjob-resource-type"></a>tipo de recurso printJob
 
@@ -25,17 +25,21 @@ Representa um trabalho de impressão que foi enfileirado para uma impressora.
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [Get](../api/printjob-get.md) | [Impressão](printjob.md) | Leia as propriedades e as relações do objeto printJob. |
-| [Criar](../api/printer-post-jobs.md) | [Impressão](printjob.md) | Criar um novo objeto de trabalho de impressão. |
-| [Start](../api/printjob-startprintjob.md)|Nenhum|Iniciar o trabalho de impressão.|
-| [Cancel](../api/printjob-cancelprintjob.md)|Nenhum|Cancele o trabalho de impressão.|
+| [Create](../api/printer-post-jobs.md) | [Impressão](printjob.md) | Criar um novo objeto de trabalho de impressão. |
+| [Start](../api/printjob-start.md)|Nenhum|Iniciar o trabalho de impressão.|
+| [Cancel](../api/printjob-cancel.md)|Nenhum|Cancele o trabalho de impressão.|
 | [Redirecionar (para outra impressora)](../api/printjob-redirect.md) | [Impressão](printjob.md) | Um trabalho de impressão que está na fila da impressora de destino. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|O GUID da impressora. Somente leitura.|
+|id|String|O GUID da impressora. Somente leitura.|
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando o trabalho foi criado. Somente leitura.|
 |status|[printJobStatus](printjobstatus.md)|O status do trabalho de impressão. Somente leitura.|
+|configuration|[printJobConfiguration](printJobConfiguration.md)|Um grupo de configurações que uma impressora deve usar para imprimir um trabalho.|
+|isfetchable|Edm.Boolean|Se true, o documento pode ser obtido pela impressora.|
+|redirectedFrom|Edm.String|Contém a URL do trabalho de origem, se o trabalho foi Redirecionado de outra impressora.|
+|redirecionato|Edm.String|Contém a URL do trabalho de destino, se o trabalho foi redirecionado para outra impressora.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
@@ -62,8 +66,12 @@ Veja a seguir uma representação JSON do recurso.
 {
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "isFetchable": "Boolean",
+  "redirectedFrom": "String",
+  "redirectedTo": "String",
   "status": {"@odata.type": "microsoft.graph.printJobStatus"},
   "createdBy": {"@odata.type": "microsoft.graph.userIdentity"},
+  "configuration": {"@odata.type": "microsoft.graph.printJobConfiguration"},
   "documents": [ {"@odata.type": "microsoft.graph.printDocument"} ]
 }
 

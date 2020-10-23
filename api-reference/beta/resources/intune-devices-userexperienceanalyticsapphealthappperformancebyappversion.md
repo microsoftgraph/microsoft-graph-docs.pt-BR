@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4c2c0ec5a532be1a9cb3090a4d2a1b6d69cb0fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04bfeb269bc41c8114ca11427c8a41e56e2c36aa
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081964"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724428"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversion-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 
@@ -34,11 +34,11 @@ A entidade de desempenho do aplicativo de análise da experiência do usuário c
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do aplicativo de análise da experiência do usuário.|
-|appVersion|Cadeia de caracteres|A versão do aplicativo.|
+|id|String|O identificador exclusivo do objeto de desempenho do aplicativo de análise da experiência do usuário.|
+|appVersion|String|A versão do aplicativo.|
 |appName|Cadeia de caracteres|O nome do aplicativo.|
-|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo.|
-|appPublisher|Cadeia de caracteres|O fornecedor do aplicativo.|
+|appDisplayName|String|O nome amigável do aplicativo.|
+|appPublisher|String|O fornecedor do aplicativo.|
 |appUsageDuration|Int32|O tempo total de uso do aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
 |appCrashCount|Int32|O número de falhas para o aplicativo. Valores válidos-2147483648 a 2147483647|
 |meanTimeToFailureInMinutes|Int32|O tempo médio de falha para o aplicativo em minutos. Valores válidos-2147483648 a 2147483647|
@@ -67,7 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

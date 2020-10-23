@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20c7e330d060346557717e9eea0924b275c60d04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 249a5081e63bd94885bdee059ae1521e03c52e71
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968490"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724625"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>tipo de enumeração androidForWorkRequiredPasswordType
 
@@ -26,14 +26,13 @@ Android para o tipo de senha de trabalho necessário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|lowSecurityBiometric|1 |Senha com base em Biometria de segurança baixa necessária.|
-|obrigatório|2 |Obrigatório.|
-|atLeastNumeric|3 |É necessário pelo menos a senha numérica.|
+|lowSecurityBiometric|1|Senha com base em Biometria de segurança baixa necessária.|
+|obrigatório|duas|Obrigatório.|
+|atLeastNumeric|3D|É necessário pelo menos a senha numérica.|
 |numericComplex|4 |Senha numérica complexa obrigatória.|
 |atLeastAlphabetic|5 |É necessária pelo menos a senha alfabética.|
 |atLeastAlphanumeric|6 |É necessária pelo menos a senha alfanumérica.|
 |alphanumericWithSymbols|7 |É necessário pelo menos alfanumérico com senha de símbolo.|
-
 
 
 

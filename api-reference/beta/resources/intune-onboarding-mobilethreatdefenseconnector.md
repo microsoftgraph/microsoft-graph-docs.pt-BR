@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28163e485573973f0b20f81081a48ca58e9db344
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30dbd65cc36f220051348bbc3d0efc79b949eae5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029474"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725187"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>Tipo de recurso mobileThreatDefenseConnector
 
@@ -83,7 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
 
 
 

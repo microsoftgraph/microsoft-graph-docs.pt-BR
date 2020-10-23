@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3ccc5d8c675bd9971d95b8ae3bfd5ac0cc01a87
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3e8d7d093c50262ee60784bcfd4b1c348696786
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092528"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726455"
 ---
 # <a name="keyrealvaluepair-resource-type"></a>tipo de recurso keyRealValuePair
 
@@ -28,7 +28,7 @@ Herda de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|Cadeia de caracteres|A chave de cadeia de caracteres do par chave-valor. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|key|String|A chave de cadeia de caracteres do par chave-valor. Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |valor|Duplo|O valor real (ponto flutuante) do par chave-valor.|
 
 ## <a name="relationships"></a>Relações
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "4.2"
 }
 ```
-
 
 
 

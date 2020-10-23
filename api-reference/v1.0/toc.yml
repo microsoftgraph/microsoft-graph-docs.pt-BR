@@ -407,7 +407,7 @@ items:
         items:
           - name: Visão geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -4742,7 +4742,7 @@ items:
         items:
           - name: Visão geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -4923,6 +4923,32 @@ items:
                 href: api/channel-post-messagereply.md
               - name: Atualizar mensagem
                 href: api/chatmessage-update.md
+          - name: Membro de conversa
+            href: resources/conversationmember.md
+            items:
+              - name: Listar membros
+                href: api/conversationmember-list.md
+              - name: Obter membro
+                href: api/conversationmember-get.md
+              - name: Adicionar membro
+                href: api/conversationmember-add.md
+              - name: Atualizar membro
+                href: api/conversationmember-update.md
+              - name: Excluir membro
+                href: api/conversationmember-delete.md
+          - name: Membro da conversa de usuário do Azure AD
+            href: resources/aaduserconversationmember.md
+            items:
+              - name: Listar membros
+                href: api/conversationmember-list.md
+              - name: Obter membro
+                href: api/conversationmember-get.md
+              - name: Adicionar membro
+                href: api/conversationmember-add.md
+              - name: Atualizar membro
+                href: api/conversationmember-update.md
+              - name: Excluir membro
+                href: api/conversationmember-delete.md
           - name: Catálogo de aplicativos
             items:
               - name: Aplicativo no catálogo
