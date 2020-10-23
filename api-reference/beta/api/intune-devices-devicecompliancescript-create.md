@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 729172c224905b08bff277197ef33e7b159ff33e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d73441f0925e183185babac04869541c11316c2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980593"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732934"
 ---
 # <a name="create-devicecompliancescript"></a>Criar deviceComplianceScript
 
@@ -62,8 +62,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |createdDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de conformidade do dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O carimbo de data/hora de quando o script de conformidade do dispositivo foi modificado. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boolean|Indicar se a assinatura do script precisa ser verificada|
-|runAs32Bit|Boolean|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
+|enforceSignatureCheck|Booliano|Indicar se a assinatura do script precisa ser verificada|
+|runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para o script de conformidade do dispositivo|
 
 
@@ -121,7 +121,6 @@ Content-Length: 592
   ]
 }
 ```
-
 
 
 

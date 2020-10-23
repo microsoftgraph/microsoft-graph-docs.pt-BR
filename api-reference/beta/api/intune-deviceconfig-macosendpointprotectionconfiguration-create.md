@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc5040b58bfea7a2f9242a686da857e8715c016c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7b0fcbdcb2507f2a260ca972360c5f28ba3f7fb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066072"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733004"
 ---
 # <a name="create-macosendpointprotectionconfiguration"></a>Criar macOSEndpointProtectionConfiguration
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOSEnd
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -63,7 +63,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOSEnd
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Configuração de sistema e privacidade que determina quais locais de download os aplicativos podem ser executados em um dispositivo macOS. Os valores possíveis são: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
 |gatekeeperBlockOverride|Booliano|Se definido como true, a substituição do usuário para gatekeeper será desabilitada.|
@@ -74,8 +74,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOSEnd
 |fileVaultEnabled|Booliano|Se o FileVault deve ser habilitado ou não.|
 |fileVaultSelectedRecoveryKeyTypes|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|Obrigatório se FileVault estiver habilitado, determina o (s) tipo (s) de chave de recuperação a ser usado. . Os valores possíveis são: `notConfigured`, `institutionalRecoveryKey`, `personalRecoveryKey`.|
 |fileVaultInstitutionalRecoveryKeyCertificate|Binária|Obrigatório se os tipos de chave de recuperação selecionados incluem InstitutionalRecoveryKey. O arquivo de certificado codificado por DER usado para definir uma chave de recuperação institucional.|
-|fileVaultInstitutionalRecoveryKeyCertificateFileName|Cadeia de caracteres|Nome do arquivo do certificado de chave de recuperação institucional a ser exibido na interface do usuário. (*. der).|
-|fileVaultPersonalRecoveryKeyHelpMessage|Cadeia de caracteres|Obrigatório se os tipos de chave de recuperação selecionados incluem PersonalRecoveryKey. Uma mensagem curta exibida para o usuário que explica como eles podem recuperar sua chave de recuperação pessoal.|
+|fileVaultInstitutionalRecoveryKeyCertificateFileName|String|Nome do arquivo do certificado de chave de recuperação institucional a ser exibido na interface do usuário. (*. der).|
+|fileVaultPersonalRecoveryKeyHelpMessage|String|Obrigatório se os tipos de chave de recuperação selecionados incluem PersonalRecoveryKey. Uma mensagem curta exibida para o usuário que explica como eles podem recuperar sua chave de recuperação pessoal.|
 |fileVaultAllowDeferralUntilSignOut|Booliano|Opcional. Se for definido como true, o usuário poderá adiar a habilitação do FileVault até que ele saia.|
 |fileVaultNumberOfTimesUserCanIgnore|Int32|Opcional. Ao usar a opção Defer, este é o número máximo de vezes que o usuário pode ignorar as solicitações para habilitar o FileVault antes que o usuário entre no FileVault será necessário para entrar. Se for definido como-1, ele sempre solicitará a habilitação do FileVault até que o FileVault esteja habilitado, embora permita que o usuário ignore a habilitação de FileVault. Configurar como 0 desativará o recurso.|
 |fileVaultDisablePromptAtSignOut|Booliano|Opcional. Ao usar a opção Defer, se definida como true, o usuário não será solicitado a habilitar o FileVault ao sair.|
@@ -255,7 +255,6 @@ Content-Length: 2958
   ]
 }
 ```
-
 
 
 

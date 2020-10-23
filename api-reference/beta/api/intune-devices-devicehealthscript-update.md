@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9389f389dce2a28e8ddd74295a7c9df3519defce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ee4966e9726df0faadddf830af74b02ec4100a4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050777"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732871"
 ---
 # <a name="update-devicehealthscript"></a>Atualizar deviceHealthScript
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do script de integridade do dispositivo|
+|id|String|Identificador exclusivo do script de integridade do dispositivo|
 |publicador|String|Nome do editor de script de integridade do dispositivo|
 |versão|String|Versão do script de integridade do dispositivo|
-|displayName|Cadeia de caracteres|Nome do script de integridade do dispositivo|
+|displayName|String|Nome do script de integridade do dispositivo|
 |description|String|Descrição do script de integridade do dispositivo|
 |detectionScriptContent|Binária|Todo o conteúdo do script do PowerShell de detecção|
 |remediationScriptContent|Binária|Todo o conteúdo do script do PowerShell de correção|
@@ -67,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceH
 |runAs32Bit|Booliano|Indicar se os scripts do PowerShell devem ser executados como 32 bits|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marcas de escopo para o script de integridade do dispositivo|
 |isGlobalScript|Booliano|Determina se este é o script proprietário da Microsoft. Scripts proprietários são somente leitura|
-|highestAvailableVersion|Cadeia de caracteres|Versão mais recente disponível para um script proprietário da Microsoft|
+|highestAvailableVersion|String|Versão mais recente disponível para um script proprietário da Microsoft|
 |detectionScriptParameters|coleção [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos complexType DetectionScriptParameters.|
 |remediationScriptParameters|coleção [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Lista de objetos complexType RemediationScriptParameters.|
 
@@ -172,7 +172,6 @@ Content-Length: 1393
   ]
 }
 ```
-
 
 
 

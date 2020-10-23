@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e5b0c7094bbbf8ca93edd61d05cf8d17b154967
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 502f307bb7244cf6bec364aebf6714a6881262e5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48066100"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733011"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Atualizar macOSDeviceFeaturesConfiguration
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -64,12 +64,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |airPrintDestinations|coleção [airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Uma matriz de impressoras de impressão que sempre devem ser mostradas. Esta coleção pode conter um máximo de 500 elementos. Herdado de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
 |autoLaunchItems|coleção [macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Lista de aplicativos, arquivos, pastas e outros itens a serem iniciados quando o usuário fizer logon. Esta coleção pode conter um máximo de 500 elementos.|
 |adminShowHostInfo|Booliano|Se deseja mostrar as informações de host de administrador na janela de logon.|
-|loginWindowText|Cadeia de caracteres|Texto personalizado a ser exibido na janela de logon.|
+|loginWindowText|String|Texto personalizado a ser exibido na janela de logon.|
 |authorizedUsersListHidden|Booliano|Se deseja mostrar a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
 |authorizedUsersListHideLocalUsers|Booliano|Se deseja mostrar somente usuários de rede e de sistema na lista de usuários autorizados na janela de logon.|
 |authorizedUsersListHideMobileAccounts|Booliano|Se os usuários móveis serão ocultos na lista de usuários autorizados na janela de logon.|
@@ -85,13 +85,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |powerOffDisabledWhileLoggedIn|Booliano|Se o item de menu desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
 |logOutDisabledWhileLoggedIn|Booliano|Se o item de menu fazer logout na janela de logon será desabilitado enquanto o usuário estiver conectado.|
 |screenLockDisableImmediate|Booliano|Se as funções de bloqueio de tela imediata serão desabilitadas.|
-|associatedDomains|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. A chave deve corresponder à ID do aplicativo, e o valor deve ser uma cadeia de caracteres no formato "Service: domain" onde domínio é um nome de host totalmente qualificado (por exemplo, webcredentials:example. com). Esta coleção pode conter um máximo de 500 elementos.|
+|associatedDomains|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Preterido: Use appAssociatedDomains em vez disso. Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. A chave deve corresponder à ID do aplicativo, e o valor deve ser uma cadeia de caracteres no formato "Service: domain" onde domínio é um nome de host totalmente qualificado (por exemplo, webcredentials:example. com). Esta coleção pode conter um máximo de 500 elementos.|
+|appAssociatedDomains|coleção [macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md)|Obtém ou define uma lista que mapeia aplicativos para seus domínios associados. Os identificadores de aplicativo devem ser exclusivos. Esta coleção pode conter um máximo de 500 elementos.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Obtém ou define um perfil de extensão de logon único. Preterido: Use MacOSSingleSignOnExtension em vez disso.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Obtém ou define um perfil de extensão de logon único.|
 |contentCachingEnabled|Booliano|Habilita o cache de conteúdo e impede que ele seja desabilitado pelo usuário.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Determina o tipo de conteúdo que pode ser armazenado em cache pelo serviço de cache de conteúdo da Apple. Os valores possíveis são: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
 |contentCachingMaxSizeBytes|Int32|O número máximo de bytes de espaço em disco que serão usados para o cache de conteúdo. Um valor de 0 (padrão) indica espaço em disco ilimitado. |
-|contentCachingDataPath|Cadeia de caracteres|O caminho para o diretório usado para armazenar o conteúdo em cache. O valor deve ser (ou terminar com)/Library/Application Support/Apple/AssetCache/data|
+|contentCachingDataPath|String|O caminho para o diretório usado para armazenar o conteúdo em cache. O valor deve ser (ou terminar com)/Library/Application Support/Apple/AssetCache/data|
 |contentCachingDisableConnectionSharing|Booliano|Desabilita o compartilhamento de conexão com a Internet.|
 |contentCachingForceConnectionSharing|Booliano|Força o compartilhamento de conexão com a Internet. contentCachingDisableConnectionSharing substitui essa configuração.|
 |contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Determina o método no qual os servidores de cache de conteúdo ouvirão clientes. Os valores possíveis são: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
@@ -120,7 +121,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5388
+Content-length: 5662
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -190,6 +191,16 @@ Content-length: 5388
       "@odata.type": "microsoft.graph.keyValuePair",
       "name": "Name value",
       "value": "Value value"
+    }
+  ],
+  "appAssociatedDomains": [
+    {
+      "@odata.type": "microsoft.graph.macOSAssociatedDomainsItem",
+      "applicationIdentifier": "Application Identifier value",
+      "domains": [
+        "Domains value"
+      ],
+      "directDownloadsEnabled": true
     }
   ],
   "singleSignOnExtension": {
@@ -291,7 +302,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5560
+Content-Length: 5834
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -364,6 +375,16 @@ Content-Length: 5560
       "@odata.type": "microsoft.graph.keyValuePair",
       "name": "Name value",
       "value": "Value value"
+    }
+  ],
+  "appAssociatedDomains": [
+    {
+      "@odata.type": "microsoft.graph.macOSAssociatedDomainsItem",
+      "applicationIdentifier": "Application Identifier value",
+      "domains": [
+        "Domains value"
+      ],
+      "directDownloadsEnabled": true
     }
   ],
   "singleSignOnExtension": {
@@ -459,7 +480,6 @@ Content-Length: 5560
   "contentCachingPort": 2
 }
 ```
-
 
 
 
