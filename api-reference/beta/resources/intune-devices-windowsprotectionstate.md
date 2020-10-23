@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00a04fe2f20270cdd0892829406fdccb240989ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 63ac9a9e5f6dd153238ea2666cf0bffd88ebf9da
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080457"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731033"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>tipo de recurso Windowsprotectionstate foi
 
@@ -31,7 +31,7 @@ Entidade de status de proteção de dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de status de proteção de dispositivo. Esta é a ID do dispositivo|
+|id|String|O identificador exclusivo do objeto de status de proteção de dispositivo. Esta é a ID do dispositivo|
 |malwareProtectionEnabled|Booliano|O anti-malware está habilitado ou não|
 |DeviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente, etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Booliano|A proteção em tempo real está habilitada ou não?|
@@ -41,16 +41,16 @@ Entidade de status de proteção de dispositivo.
 |signatureUpdateOverdue|Booliano|Assinatura desatualizada ou não?|
 |rebootRequired|Booliano|Reinicialização necessária ou não?|
 |fullScanRequired|Booliano|Verificação completa necessária ou não?|
-|engineVersion|Cadeia de caracteres|Versão atual do mecanismo do Endpoint Protection|
-|signatureVersion|Cadeia de caracteres|Versão atual de definições de malware|
-|antiMalwareVersion|Cadeia de caracteres|Versão Antimalware atual|
+|engineVersion|String|Versão atual do mecanismo do Endpoint Protection|
+|signatureVersion|String|Versão atual de definições de malware|
+|antiMalwareVersion|String|Versão Antimalware atual|
 |lastQuickScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
-|lastQuickScanSignatureVersion|Cadeia de caracteres|Versão da última assinatura de verificação rápida|
-|lastFullScanSignatureVersion|Cadeia de caracteres|Versão da última assinatura de verificação completa|
+|lastQuickScanSignatureVersion|String|Versão da última assinatura de verificação rápida|
+|lastFullScanSignatureVersion|String|Versão da última assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Hora do último status de integridade do dispositivo relatado|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |detectedMalwareState|coleção [windowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md)|Lista de malware do dispositivo|
@@ -86,7 +86,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

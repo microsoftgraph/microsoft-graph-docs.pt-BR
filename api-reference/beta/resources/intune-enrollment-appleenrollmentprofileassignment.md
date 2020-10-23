@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac3aea84438f7e8e1e47d288eea20251c8fc9420
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4c4dc9eee3784ed3e2de6e5014b3f712b2ab079d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080366"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731019"
 ---
 # <a name="appleenrollmentprofileassignment-resource-type"></a>tipo de recurso appleEnrollmentProfileAssignment
 
@@ -34,7 +34,7 @@ Uma atribuição de um perfil da Apple.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da atribuição.|
+|id|String|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino de atribuição para o perfil de implantação iniciado pelo usuário da Apple.|
 
 ## <a name="relationships"></a>Relações
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

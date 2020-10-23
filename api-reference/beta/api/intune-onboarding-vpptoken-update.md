@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc14819f731c1823eb6af2bd9ae9897a8d86a7ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f68d9df9804344821b6ec4adac88cf933f65fd1e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085728"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731642"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
+|id|String|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
 |organizationName|Cadeia de caracteres|A organização associada ao Token do Programa de Compra por Volume da Apple|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|O tipo de programa de compra por volume ao qual o Token do Programa de Compra por Volume da Apple especificado está associado. Os valores possíveis são: `business`, `education`. Os valores possíveis são: `business`, `education`.|
 |appleId|Cadeia de caracteres|O Apple ID associado ao Token do Apple Volume Purchase Program.|
@@ -66,11 +66,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o Apple Volume Purchase Program.|
-|displayName|Cadeia de caracteres|Um nome amigável de token especificado pelo administrador.|
-|LocationName|Cadeia de caracteres|Local do token retornado da Apple VPP.|
-|claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
-|roleScopeTagIds|Coleção String|IDs de marcas de escopo de função atribuídas a esta entidade.|
+|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o Apple Volume Purchase Program.|
+|displayName|String|Um nome amigável de token especificado pelo administrador.|
+|LocationName|String|Local do token retornado da Apple VPP.|
+|claimTokenManagementFromExternalMdm|Booliano|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a esta entidade.|
 
 
 
@@ -156,7 +156,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

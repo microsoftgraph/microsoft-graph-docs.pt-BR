@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 90f69ca6db0a84c0025caf4fff0ae07324703380
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4abfc143c90530fd75965e75044248e79e325483
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048757"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731453"
 ---
 # <a name="printershare-resource-type"></a>tipo de recurso printerShare
 
@@ -25,9 +25,11 @@ Representa uma impressora que pretende ser detectável por usuários e por aplic
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 | [List](../api/print-list-shares.md) | coleção [printerShare](printershare.md) | Obtenha uma lista de compartilhamentos de impressora no locatário. |
-| [Obter](../api/printershare-get.md) | [printerShare](printershare.md) | Ler propriedades e relações de um objeto **printerShare** . |
-| [Atualizar](../api/printershare-update.md) | [printerShare](printershare.md) | Atualizar um objeto **printerShare** . |
-| [Excluir](../api/printershare-delete.md) | Nenhum | Descompartilhar uma impressora. |
+| [Get](../api/printershare-get.md) | [printerShare](printershare.md) | Ler propriedades e relações de um objeto **printerShare** . |
+| [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Atualizar um objeto **printerShare** . |
+| [Delete](../api/printershare-delete.md) | Nenhum | Descompartilhar uma impressora. |
+| [Listar trabalhos](../api/printershare-list-jobs.md) | coleção [printJob](printjob.md) | Obtenha uma lista de trabalhos de impressão que são enfileirados para processamento pelo printerShare. |
+| [Criar trabalho](../api/printershare-post-jobs.md) | [Impressão](printjob.md) | Criar um novo trabalho de impressão para o printerShare. Para começar a imprimir o trabalho, use [Iniciar](../api/printjob-start.md). |
 | [Listar allowedUsers](../api/printershare-list-allowedusers.md) | coleção [printUserIdentity](printuseridentity.md) | Recupere uma lista de usuários que receberam acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado. |
 | [Adicionar allowedUser](../api/printershare-post-allowedusers.md) | Nenhum | Conceda ao usuário especificado o acesso ao envio de trabalhos de impressão para o compartilhamento de impressora associado. |
 | [Remover allowedUser](../api/printershare-delete-alloweduser.md) | Nenhum | Revoga o acesso ao compartilhamento de impressora do usuário especificado. |
@@ -38,15 +40,15 @@ Representa uma impressora que pretende ser detectável por usuários e por aplic
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| O identificador do printerShare. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome do compartilhamento de impressora que os clientes de impressão devem exibir.|
+|id|String| O identificador do printerShare. Somente leitura.|
+|displayName|String|O nome do compartilhamento de impressora que os clientes de impressão devem exibir.|
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando o compartilhamento da impressora foi criado. Somente leitura.|
 |fabricante|String|O fabricante relatado pela impressora associada a este compartilhamento de impressora. Somente leitura.|
 |modelo|String|O nome do modelo relatado pela impressora associada a este compartilhamento de impressora. Somente leitura.|
 |isAcceptingJobs|Booliano|Se a impressora associada a este compartilhamento de impressora está atualmente aceitando novos trabalhos de impressão.|
 |defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora associadas a este compartilhamento de impressora.|
 |capabilities|[printerCapabilities](printercapabilities.md)|Os recursos da impressora associada a este compartilhamento de impressora.|
-|localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora associado a este compartilhamento de impressora.|
+|location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora associado a este compartilhamento de impressora.|
 |status|[printerStatus](printerstatus.md)|O status de processamento, incluindo qualquer erro, da impressora associada a este compartilhamento de impressora. Somente leitura.|
 |allowAllUsers|Booliano|Se true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso substitui as listas de permissões definidas pelas propriedades de navegação **allowedUsers** e **allowedGroups** .|
 

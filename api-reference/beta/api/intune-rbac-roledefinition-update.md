@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9c011b5fba1129cf10340ee971dee7794c38dc7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 494ff58b081105201f28a7752df6b6851f12c43b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072127"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730851"
 ---
 # <a name="update-roledefinition"></a>Atualizar roleDefinition
 
@@ -54,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleDef
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|String|Nome de exibição da definição de Função.|
 |description|String|Descrição da definição de Função.|
 |permissões|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
@@ -184,7 +184,6 @@ Content-Length: 1256
   ]
 }
 ```
-
 
 
 
