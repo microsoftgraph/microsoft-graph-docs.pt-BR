@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e45940b970f1fa4d4695bfdb7750a9c1c4e18035
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f0f0cb7ecb242d2bfedfec3b3af0a1f49f002cee
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088318"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48695618"
 ---
 # <a name="get-devicemanagementcomplexsettingdefinition"></a>Obter deviceManagementComplexSettingDefinition
 
@@ -71,7 +71,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1148
+Content-Length: 1238
 
 {
   "value": {
@@ -83,6 +83,8 @@ Content-Length: 1148
     "description": "Description value",
     "placeholderText": "Placeholder Text value",
     "documentationUrl": "https://example.com/documentationUrl/",
+    "headerTitle": "Header Title value",
+    "headerSubtitle": "Header Subtitle value",
     "keywords": [
       "Keywords value"
     ],
@@ -114,7 +116,6 @@ Content-Length: 1148
   }
 }
 ```
-
 
 
 

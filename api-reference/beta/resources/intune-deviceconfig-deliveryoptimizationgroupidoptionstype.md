@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 97d16f275c95cd6946b668b3e620ed50dbb9f702
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b3caa97f4801f23cd813ce7664badac6d9cfb7a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998786"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696192"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>tipo de enumeração deliveryOptimizationGroupIdOptionsType
 
@@ -26,11 +26,10 @@ Valores possíveis para a configuração DeliveryOptimizationGroupIdOptionsType.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|adSite|1 |Site do Active Directory.|
-|authenticatedDomainSid|2 |SID de domínio autenticado.|
-|dhcpUserOption|3 |Opção de usuário DHCP.|
+|adSite|1|Site do Active Directory.|
+|authenticatedDomainSid|duas|SID de domínio autenticado.|
+|dhcpUserOption|3D|Opção de usuário DHCP.|
 |dnsSuffix|4 |Sufixo DNS.|
-
 
 
 

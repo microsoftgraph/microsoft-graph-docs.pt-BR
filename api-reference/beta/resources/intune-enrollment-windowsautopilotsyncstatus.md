@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a98de1a17a5d0928cb506bdc54a33ec4393b10a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61a9d2522a35cc4352c17f99e7126b541e842f2e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031561"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694939"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>tipo de enumeração windowsAutopilotSyncStatus
 
@@ -26,10 +26,9 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status de sincronização desconhecido|
-|inProgress|1 |Sincronização em andamento|
-|Completed|2 |Sincronização concluída.|
-|falhou|3 |Falha na sincronização.|
-
+|inProgress|1|Sincronização em andamento|
+|Completed|duas|Sincronização concluída.|
+|falhou|3D|Falha na sincronização.|
 
 
 
