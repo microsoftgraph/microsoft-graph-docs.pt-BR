@@ -5,31 +5,30 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b6ddffdeb80e33e9e9a7ab43dbb6c9ca01d18d09
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82ec3c2e59a0e4eb920977051c423391fe2ebdb5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016412"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48719691"
 ---
-# <a name="officeproductid-enum-type"></a><span data-ttu-id="3c624-103">tipo de enumeração officeProductId</span><span class="sxs-lookup"><span data-stu-id="3c624-103">officeProductId enum type</span></span>
+# <a name="officeproductid-enum-type"></a><span data-ttu-id="66016-103">tipo de enumeração officeProductId</span><span class="sxs-lookup"><span data-stu-id="66016-103">officeProductId enum type</span></span>
 
-<span data-ttu-id="3c624-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3c624-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="66016-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="66016-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="3c624-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3c624-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="66016-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="66016-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3c624-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3c624-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="66016-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="66016-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3c624-107">A enumeração para especificar os ProductIds do Office365 que representam os SKUs do pacote do office365.</span><span class="sxs-lookup"><span data-stu-id="3c624-107">The Enum to specify the Office365 ProductIds that represent the Office365 Suite SKUs.</span></span>
+<span data-ttu-id="66016-107">A enumeração para especificar os ProductIds do Office365 que representam os SKUs do pacote do office365.</span><span class="sxs-lookup"><span data-stu-id="66016-107">The Enum to specify the Office365 ProductIds that represent the Office365 Suite SKUs.</span></span>
 
-## <a name="members"></a><span data-ttu-id="3c624-108">Membros</span><span class="sxs-lookup"><span data-stu-id="3c624-108">Members</span></span>
-|<span data-ttu-id="3c624-109">Membro</span><span class="sxs-lookup"><span data-stu-id="3c624-109">Member</span></span>|<span data-ttu-id="3c624-110">Valor</span><span class="sxs-lookup"><span data-stu-id="3c624-110">Value</span></span>|<span data-ttu-id="3c624-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="3c624-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="66016-108">Membros</span><span class="sxs-lookup"><span data-stu-id="66016-108">Members</span></span>
+|<span data-ttu-id="66016-109">Membro</span><span class="sxs-lookup"><span data-stu-id="66016-109">Member</span></span>|<span data-ttu-id="66016-110">Valor</span><span class="sxs-lookup"><span data-stu-id="66016-110">Value</span></span>|<span data-ttu-id="66016-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="66016-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3c624-112">o365ProPlusRetail</span><span class="sxs-lookup"><span data-stu-id="3c624-112">o365ProPlusRetail</span></span>|<span data-ttu-id="3c624-113">,0</span><span class="sxs-lookup"><span data-stu-id="3c624-113">0</span></span>|<span data-ttu-id="3c624-114">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3c624-114">Not yet documented</span></span>|
-|<span data-ttu-id="3c624-115">o365BusinessRetail</span><span class="sxs-lookup"><span data-stu-id="3c624-115">o365BusinessRetail</span></span>|<span data-ttu-id="3c624-116">1 </span><span class="sxs-lookup"><span data-stu-id="3c624-116">1</span></span>|<span data-ttu-id="3c624-117">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3c624-117">Not yet documented</span></span>|
-|<span data-ttu-id="3c624-118">visioProRetail</span><span class="sxs-lookup"><span data-stu-id="3c624-118">visioProRetail</span></span>|<span data-ttu-id="3c624-119">2 </span><span class="sxs-lookup"><span data-stu-id="3c624-119">2</span></span>|<span data-ttu-id="3c624-120">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3c624-120">Not yet documented</span></span>|
-|<span data-ttu-id="3c624-121">projectProRetail</span><span class="sxs-lookup"><span data-stu-id="3c624-121">projectProRetail</span></span>|<span data-ttu-id="3c624-122">3 </span><span class="sxs-lookup"><span data-stu-id="3c624-122">3</span></span>|<span data-ttu-id="3c624-123">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3c624-123">Not yet documented</span></span>|
-
+|<span data-ttu-id="66016-112">o365ProPlusRetail</span><span class="sxs-lookup"><span data-stu-id="66016-112">o365ProPlusRetail</span></span>|<span data-ttu-id="66016-113">,0</span><span class="sxs-lookup"><span data-stu-id="66016-113">0</span></span>|<span data-ttu-id="66016-114">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="66016-114">Not yet documented</span></span>|
+|<span data-ttu-id="66016-115">o365BusinessRetail</span><span class="sxs-lookup"><span data-stu-id="66016-115">o365BusinessRetail</span></span>|<span data-ttu-id="66016-116">1</span><span class="sxs-lookup"><span data-stu-id="66016-116">1</span></span>|<span data-ttu-id="66016-117">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="66016-117">Not yet documented</span></span>|
+|<span data-ttu-id="66016-118">visioProRetail</span><span class="sxs-lookup"><span data-stu-id="66016-118">visioProRetail</span></span>|<span data-ttu-id="66016-119">duas</span><span class="sxs-lookup"><span data-stu-id="66016-119">2</span></span>|<span data-ttu-id="66016-120">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="66016-120">Not yet documented</span></span>|
+|<span data-ttu-id="66016-121">projectProRetail</span><span class="sxs-lookup"><span data-stu-id="66016-121">projectProRetail</span></span>|<span data-ttu-id="66016-122">3D</span><span class="sxs-lookup"><span data-stu-id="66016-122">3</span></span>|<span data-ttu-id="66016-123">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="66016-123">Not yet documented</span></span>|
 
 
 
