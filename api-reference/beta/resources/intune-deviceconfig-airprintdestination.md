@@ -5,36 +5,36 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84575b172dee1f07d114abb202b3868ab936ce9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e457cf44b5a73f14dfd87fd69f2b9e27cef08c3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076180"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731936"
 ---
-# <a name="airprintdestination-resource-type"></a><span data-ttu-id="8de3f-103">tipo de recurso airPrintDestination</span><span class="sxs-lookup"><span data-stu-id="8de3f-103">airPrintDestination resource type</span></span>
+# <a name="airprintdestination-resource-type"></a><span data-ttu-id="142a5-103">tipo de recurso airPrintDestination</span><span class="sxs-lookup"><span data-stu-id="142a5-103">airPrintDestination resource type</span></span>
 
-<span data-ttu-id="8de3f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8de3f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="142a5-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="142a5-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="8de3f-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="8de3f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="142a5-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="142a5-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8de3f-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="8de3f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="142a5-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="142a5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8de3f-107">Representa um destino de impressão.</span><span class="sxs-lookup"><span data-stu-id="8de3f-107">Represents an AirPrint destination.</span></span>
+<span data-ttu-id="142a5-107">Representa um destino de impressão.</span><span class="sxs-lookup"><span data-stu-id="142a5-107">Represents an AirPrint destination.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8de3f-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8de3f-108">Properties</span></span>
-|<span data-ttu-id="8de3f-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8de3f-109">Property</span></span>|<span data-ttu-id="8de3f-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="8de3f-110">Type</span></span>|<span data-ttu-id="8de3f-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="8de3f-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="142a5-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="142a5-108">Properties</span></span>
+|<span data-ttu-id="142a5-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="142a5-109">Property</span></span>|<span data-ttu-id="142a5-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="142a5-110">Type</span></span>|<span data-ttu-id="142a5-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="142a5-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8de3f-112">ipAddress</span><span class="sxs-lookup"><span data-stu-id="8de3f-112">ipAddress</span></span>|<span data-ttu-id="8de3f-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8de3f-113">String</span></span>|<span data-ttu-id="8de3f-114">O endereço IP do destino de impressão.</span><span class="sxs-lookup"><span data-stu-id="8de3f-114">The IP Address of the AirPrint destination.</span></span>|
-|<span data-ttu-id="8de3f-115">resourcePath</span><span class="sxs-lookup"><span data-stu-id="8de3f-115">resourcePath</span></span>|<span data-ttu-id="8de3f-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8de3f-116">String</span></span>|<span data-ttu-id="8de3f-117">O caminho do recurso associado à impressora.</span><span class="sxs-lookup"><span data-stu-id="8de3f-117">The Resource Path associated with the printer.</span></span> <span data-ttu-id="8de3f-118">Isso corresponde ao parâmetro RP do registro _ipps. TCP Bonjour.</span><span class="sxs-lookup"><span data-stu-id="8de3f-118">This corresponds to the rp parameter of the _ipps.tcp Bonjour record.</span></span> <span data-ttu-id="8de3f-119">Por exemplo: impressoras/Canon_MG5300_series, impressoras/Xerox_Phaser_7600, IPP/imprimir Epson_IPP_Printer.</span><span class="sxs-lookup"><span data-stu-id="8de3f-119">For example: printers/Canon_MG5300_series, printers/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer.</span></span>|
-|<span data-ttu-id="8de3f-120">propor</span><span class="sxs-lookup"><span data-stu-id="8de3f-120">port</span></span>|<span data-ttu-id="8de3f-121">Int32</span><span class="sxs-lookup"><span data-stu-id="8de3f-121">Int32</span></span>|<span data-ttu-id="8de3f-122">A porta de escuta do destino de impressão.</span><span class="sxs-lookup"><span data-stu-id="8de3f-122">The listening port of the AirPrint destination.</span></span> <span data-ttu-id="8de3f-123">Se essa chave não for especificada, a impressão de impressa usará a porta padrão.</span><span class="sxs-lookup"><span data-stu-id="8de3f-123">If this key is not specified AirPrint will use the default port.</span></span> <span data-ttu-id="8de3f-124">Disponível no iOS 11,0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="8de3f-124">Available in iOS 11.0 and later.</span></span>|
-|<span data-ttu-id="8de3f-125">forceTls</span><span class="sxs-lookup"><span data-stu-id="8de3f-125">forceTls</span></span>|<span data-ttu-id="8de3f-126">Booliano</span><span class="sxs-lookup"><span data-stu-id="8de3f-126">Boolean</span></span>|<span data-ttu-id="8de3f-127">Se as conexões de impressão de verdade forem protegidas por TLS (Transport Layer Security).</span><span class="sxs-lookup"><span data-stu-id="8de3f-127">If true AirPrint connections are secured by Transport Layer Security (TLS).</span></span> <span data-ttu-id="8de3f-128">O padrão é false.</span><span class="sxs-lookup"><span data-stu-id="8de3f-128">Default is false.</span></span> <span data-ttu-id="8de3f-129">Disponível no iOS 11,0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="8de3f-129">Available in iOS 11.0 and later.</span></span>|
+|<span data-ttu-id="142a5-112">ipAddress</span><span class="sxs-lookup"><span data-stu-id="142a5-112">ipAddress</span></span>|<span data-ttu-id="142a5-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="142a5-113">String</span></span>|<span data-ttu-id="142a5-114">O endereço IP do destino de impressão.</span><span class="sxs-lookup"><span data-stu-id="142a5-114">The IP Address of the AirPrint destination.</span></span>|
+|<span data-ttu-id="142a5-115">resourcePath</span><span class="sxs-lookup"><span data-stu-id="142a5-115">resourcePath</span></span>|<span data-ttu-id="142a5-116">String</span><span class="sxs-lookup"><span data-stu-id="142a5-116">String</span></span>|<span data-ttu-id="142a5-117">O caminho do recurso associado à impressora.</span><span class="sxs-lookup"><span data-stu-id="142a5-117">The Resource Path associated with the printer.</span></span> <span data-ttu-id="142a5-118">Isso corresponde ao parâmetro RP do registro _ipps. TCP Bonjour.</span><span class="sxs-lookup"><span data-stu-id="142a5-118">This corresponds to the rp parameter of the _ipps.tcp Bonjour record.</span></span> <span data-ttu-id="142a5-119">Por exemplo: impressoras/Canon_MG5300_series, impressoras/Xerox_Phaser_7600, IPP/imprimir Epson_IPP_Printer.</span><span class="sxs-lookup"><span data-stu-id="142a5-119">For example: printers/Canon_MG5300_series, printers/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer.</span></span>|
+|<span data-ttu-id="142a5-120">propor</span><span class="sxs-lookup"><span data-stu-id="142a5-120">port</span></span>|<span data-ttu-id="142a5-121">Int32</span><span class="sxs-lookup"><span data-stu-id="142a5-121">Int32</span></span>|<span data-ttu-id="142a5-122">A porta de escuta do destino de impressão.</span><span class="sxs-lookup"><span data-stu-id="142a5-122">The listening port of the AirPrint destination.</span></span> <span data-ttu-id="142a5-123">Se essa chave não for especificada, a impressão de impressa usará a porta padrão.</span><span class="sxs-lookup"><span data-stu-id="142a5-123">If this key is not specified AirPrint will use the default port.</span></span> <span data-ttu-id="142a5-124">Disponível no iOS 11,0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="142a5-124">Available in iOS 11.0 and later.</span></span>|
+|<span data-ttu-id="142a5-125">forceTls</span><span class="sxs-lookup"><span data-stu-id="142a5-125">forceTls</span></span>|<span data-ttu-id="142a5-126">Booliano</span><span class="sxs-lookup"><span data-stu-id="142a5-126">Boolean</span></span>|<span data-ttu-id="142a5-127">Se as conexões de impressão de verdade forem protegidas por TLS (Transport Layer Security).</span><span class="sxs-lookup"><span data-stu-id="142a5-127">If true AirPrint connections are secured by Transport Layer Security (TLS).</span></span> <span data-ttu-id="142a5-128">O padrão é false.</span><span class="sxs-lookup"><span data-stu-id="142a5-128">Default is false.</span></span> <span data-ttu-id="142a5-129">Disponível no iOS 11,0 e posterior.</span><span class="sxs-lookup"><span data-stu-id="142a5-129">Available in iOS 11.0 and later.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="8de3f-130">Relações</span><span class="sxs-lookup"><span data-stu-id="8de3f-130">Relationships</span></span>
-<span data-ttu-id="8de3f-131">Nenhum</span><span class="sxs-lookup"><span data-stu-id="8de3f-131">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="142a5-130">Relações</span><span class="sxs-lookup"><span data-stu-id="142a5-130">Relationships</span></span>
+<span data-ttu-id="142a5-131">Nenhum</span><span class="sxs-lookup"><span data-stu-id="142a5-131">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="8de3f-132">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8de3f-132">JSON Representation</span></span>
-<span data-ttu-id="8de3f-133">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="8de3f-133">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="142a5-132">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="142a5-132">JSON Representation</span></span>
+<span data-ttu-id="142a5-133">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="142a5-133">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.airPrintDestination"
@@ -49,7 +49,6 @@ ms.locfileid: "48076180"
   "forceTls": true
 }
 ```
-
 
 
 
