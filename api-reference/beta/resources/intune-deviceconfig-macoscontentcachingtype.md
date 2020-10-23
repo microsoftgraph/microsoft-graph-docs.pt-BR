@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9022b320507cc10455e2eeb3ebd3a3ca58d52f71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d065903190c0422380c7b15b70626ecb28dcf9c3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993837"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727481"
 ---
 # <a name="macoscontentcachingtype-enum-type"></a>tipo de enumeração macOSContentCachingType
 
@@ -26,9 +26,8 @@ Indica o tipo de conteúdo que pode ser armazenado em cache pelo serviço de cac
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Padrão. Os dados de iCloud do usuário e os dados não iCloud serão armazenados em cache.|
-|userContentOnly|1 |Permitir que o serviço de cache de conteúdo da Apple armazene em cache os dados do iCloud.|
-|sharedContentOnly|2 |Permitir que o serviço de cache de conteúdo da Apple armazene em cache dados não iCloud (por exemplo, atualizações de aplicativo e software).|
-
+|userContentOnly|1|Permitir que o serviço de cache de conteúdo da Apple armazene em cache os dados do iCloud.|
+|sharedContentOnly|duas|Permitir que o serviço de cache de conteúdo da Apple armazene em cache dados não iCloud (por exemplo, atualizações de aplicativo e software).|
 
 
 

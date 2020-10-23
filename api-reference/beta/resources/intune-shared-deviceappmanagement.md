@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94b7eddf81790789e1788faa3477f1ad99cdc47f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 984ca36ef108aa0f44699a701ce24846a0b20e7a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060080"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684509"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 
@@ -33,7 +33,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |**Integração**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
 |microsoftStoreForBusinessLanguage|String|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é <languagecode2>-<country/regioncode2>, onde <languagecode2> é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
@@ -83,7 +83,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 |wdacSupplementalPolicies|coleção [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|O conjunto de políticas suplementares do controle de aplicativos do Windows Defender.|
 
 ## <a name="json-representation"></a>Representação JSON
-Veja a seguir uma representação JSON do recurso.  Observe que este é apenas um exemplo; as respostas de consulta a consultas reais conterá as propriedades apropriadas para o contexto.  
+Veja a seguir uma representação JSON do recurso.  Observe que este é apenas um exemplo; as respostas de consulta a consultas reais conterá as propriedades apropriadas para o contexto.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -100,7 +100,6 @@ Veja a seguir uma representação JSON do recurso.  Observe que este é apenas u
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
-
 
 
 

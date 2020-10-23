@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a355ef4cd20f7054d4150abe25ecb6fc55532f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7a37e6426d844093de3073c71e6e33e71055212
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080660"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727348"
 ---
 # <a name="windowsdeviceazureadaccount-resource-type"></a>Tipo de recurso windowsDeviceAzureADAccount
 
@@ -29,7 +29,7 @@ Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |password|String|Ainda não documentado. Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
+|userPrincipalName|String|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

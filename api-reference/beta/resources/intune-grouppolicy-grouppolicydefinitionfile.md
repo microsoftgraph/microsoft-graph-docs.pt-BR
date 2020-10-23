@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ef94f2d5163fad7151b7b39d278438231e62923
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e8f02ac534f260e43ad5df1b0c20720a722ebc0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031022"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684768"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>tipo de recurso groupPolicyDefinitionFile
 
@@ -33,7 +33,7 @@ A entidade representa um arquivo XML ADMX (modelo administrativo). O arquivo ADM
 |:---|:---|:---|
 |displayName|String|O nome amigável localizado do arquivo ADMX.|
 |description|String|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio.|
-|languageCodes|Coleção String|Os códigos de idioma suportados para o arquivo ADMX.|
+|languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma suportados para o arquivo ADMX.|
 |targetPrefix|String|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX.|
 |targetNamespace|String|Especifica o URI usado para identificar o namespace no arquivo ADMX.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

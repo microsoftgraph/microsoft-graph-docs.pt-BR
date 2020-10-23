@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: acaa1cb06190b0d0d796cfb3fd4e915373f47f10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6dd8c51532fedf4339ede6fe935ab02612d50736
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970149"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48712999"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>Excluir deviceManagementScriptGroupAssignment
 
@@ -39,6 +39,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ``` http
 DELETE /deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
+DELETE /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -66,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

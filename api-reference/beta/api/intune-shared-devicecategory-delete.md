@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b01adf8559c204a8d86beb344bde3dd972e6d468
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3fa99ef38b466cff77ba2b374b30b5b1abbba5e2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980418"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685020"
 ---
 # <a name="delete-devicecategory"></a>Excluir deviceCategory
 
@@ -70,7 +70,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

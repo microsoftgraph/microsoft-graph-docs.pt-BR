@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 420ad04f91331056245b042914985b1b7ca0c57a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4cfd041f04365cf4cfed0fc847b3dd56f5949f3a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061704"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684873"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>tipo de enumeração windowsPrivacyDataAccessLevel
 
@@ -26,10 +26,9 @@ Determine o nível de acesso à categoria de dados de privacidade do Windows esp
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Nenhum nível de acesso especificado, sem tentativas. O dispositivo pode se comportar como no UserInControl ou no ForceAllow. Pode depender que os dados de privacidade foram acessados, versões do Windows e outros fatores.|
-|forceAllow|1 |Os aplicativos terão permissão para acessar os dados de privacidade especificados.|
-|forceDeny|2 |Os aplicativos serão negados para acessar os dados de privacidade especificados.|
-|userInControl|3 |Os usuários serão solicitados quando os aplicativos tentarem acessar dados de privacidade especificados.|
-
+|forceAllow|1|Os aplicativos terão permissão para acessar os dados de privacidade especificados.|
+|forceDeny|duas|Os aplicativos serão negados para acessar os dados de privacidade especificados.|
+|userInControl|3D|Os usuários serão solicitados quando os aplicativos tentarem acessar dados de privacidade especificados.|
 
 
 

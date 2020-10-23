@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f4853d9c7778164ff77295a24daff65bb61bf9b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a040a24aaf4f51d5aec5b970cb2f9e4026732a7b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039752"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684880"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>tipo de recurso windowsPrivacyDataAccessControlItem
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "appDisplayName": "String"
 }
 ```
-
 
 
 

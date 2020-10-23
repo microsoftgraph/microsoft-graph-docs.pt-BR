@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração wiFiProxySetting
-description: Configurações de proxy Wi-Fi.
+description: Wi-Fi configurações de proxy.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1cc3ea969a5998a18f0397d8a2e66daecfdc9453
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4d4da3526cd8c3ab1eefbc04520cfa8c29b07c9f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048888"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727432"
 ---
 # <a name="wifiproxysetting-enum-type"></a>tipo de enumeração wiFiProxySetting
 
@@ -20,15 +20,14 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configurações de proxy Wi-Fi.
+Wi-Fi configurações de proxy.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum proxy.|
-|Manual|1 |Configurações de proxy manuais por endereço e porta.|
-|Automático|2 |Configurações de proxy automáticas via URL.|
-
+|none|,0|Nenhum proxy.|
+|Manual|1|Configurações de proxy manuais por endereço e porta.|
+|Automático|duas|Configurações de proxy automáticas via URL.|
 
 
 

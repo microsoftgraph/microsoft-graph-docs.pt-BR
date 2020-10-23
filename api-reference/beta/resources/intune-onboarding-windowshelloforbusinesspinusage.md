@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 45a05bb5a050b2e4a174e61baa5d64c814c23005
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2f5c24fe805f2287575a81a232e7815940387081
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029292"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684516"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>tipo de enumeração windowsHelloForBusinessPinUsage
 
@@ -26,9 +26,8 @@ Opções de uso de PIN do Windows Hello para empresas
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |autorizado|,0|Permitiu o uso de determinada regra de PIN|
-|obrigatório|1 |Impor o uso de determinada regra de PIN|
-|Não|2 |Forbit o uso de determinada regra de PIN|
-
+|obrigatório|1|Impor o uso de determinada regra de PIN|
+|Não|duas|Forbit o uso de determinada regra de PIN|
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de enumeração wiFiAuthenticationMethod
-description: Método de autenticação Wi-Fi.
+description: Wi-Fi método de autenticação.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c916cdc7fbde6546005c7798ccfd7bf495f5367
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 608590c58600aa68e7f9aecb24852840ab7b6cc3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048887"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727419"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>tipo de enumeração wiFiAuthenticationMethod
 
@@ -20,15 +20,14 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Método de autenticação Wi-Fi.
+Wi-Fi método de autenticação.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |certificado|,0|Use um certificado de identidade para autenticação.|
-|usernameAndPassword|1 |Usar nome de usuário e senha para autenticação.|
-|derivedCredential|2 |Use a credencial derivada para autenticação.|
-
+|usernameAndPassword|1|Usar nome de usuário e senha para autenticação.|
+|derivedCredential|duas|Use a credencial derivada para autenticação.|
 
 
 

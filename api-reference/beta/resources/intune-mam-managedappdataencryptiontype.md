@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 15ae82a4eef55b67a08e53a191c5ffebc9ae2c6a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e57afb0a878248e761d11434825f1d0c9403a6c5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030427"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684621"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>tipo de enumeração managedAppDataEncryptionType
 
@@ -26,10 +26,9 @@ Representa o nível ao qual os dados do aplicativo são criptografados para apli
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |useDeviceSettings|,0|Os dados do aplicativo são criptografados com base nas configurações padrão do dispositivo.|
-|afterDeviceRestart|1 |Os dados do aplicativo são criptografados quando o dispositivo é reiniciado.|
-|whenDeviceLockedExceptOpenFiles|2 |Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado, exceto dados em arquivos que estão abertos|
-|whenDeviceLocked|3 |Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado|
-
+|afterDeviceRestart|1|Os dados do aplicativo são criptografados quando o dispositivo é reiniciado.|
+|whenDeviceLockedExceptOpenFiles|duas|Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado, exceto dados em arquivos que estão abertos|
+|whenDeviceLocked|3D|Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado|
 
 
 

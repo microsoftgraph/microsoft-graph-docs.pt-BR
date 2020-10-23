@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a78cecdd0d9cb5648981cf1d54a606b21df6b9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d2228052cdb4fdcd50c9008444c5a03b941a734c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003945"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727509"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>tipo de recurso enterpriseCodeSigningCertificate
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Ainda não documentado
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar enterpriseCodeSigningCertificates](../api/intune-apps-enterprisecodesigningcertificate-list.md)|coleção [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|Listar Propriedades e relações dos objetos [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) .|
@@ -35,7 +35,7 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|conteúdo|Binária|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
+|conteúdo|Binária|O certificado do Windows Enterprise Code-Signing no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
 |assunto|String|O valor de entidade para o certificado.|
@@ -69,7 +69,6 @@ Veja a seguir uma representação JSON do recurso.
   "uploadDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

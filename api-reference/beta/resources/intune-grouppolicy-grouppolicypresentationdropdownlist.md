@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa06db24a12cc5869c1cd2ea53ca79487dbe4736
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bb56a04c0ede98e86aff5d9cd25fed4744aba1d8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030875"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684677"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>tipo de recurso groupPolicyPresentationDropdownList
 
@@ -41,8 +41,8 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |DefaultItem|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|O valor da cadeia de caracteres localizada que identifica a opção padrão da lista de itens.|
-|items|coleção [groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Representa um conjunto de nomes de exibição localizados e seus valores associados.|
-|obrigatório|Booliano|Requisito para inserir um valor na caixa parâmetro. O valor padrão é falso.|
+|itens|coleção [groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Representa um conjunto de nomes de exibição localizados e seus valores associados.|
+|obrigatório|Boolean|Requisito para inserir um valor na caixa parâmetro. O valor padrão é falso.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -78,7 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "required": true
 }
 ```
-
 
 
 

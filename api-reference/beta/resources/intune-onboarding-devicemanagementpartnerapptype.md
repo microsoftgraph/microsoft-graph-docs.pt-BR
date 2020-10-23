@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 74e44220a52ee68e2e2def74a0d0053c65c75c3b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc0f33884691ffa052089aa67dac6ffef8e52042
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029523"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684523"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>tipo de enumeração deviceManagementPartnerAppType
 
@@ -26,9 +26,8 @@ Tipo de aplicativo de parceiro.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|O tipo de aplicativo parceiro é desconhecido.|
-|singleTenantApp|1 |O aplicativo parceiro é um único locatário no AAD.|
-|multiTenantApp|2 |O aplicativo parceiro é de vários locatários no AAD.|
-
+|singleTenantApp|1|O aplicativo parceiro é um único locatário no AAD.|
+|multiTenantApp|duas|O aplicativo parceiro é de vários locatários no AAD.|
 
 
 

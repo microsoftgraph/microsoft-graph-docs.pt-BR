@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 03ed95d4efda4a3cfa76d1564f5c60abf5105ef4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bea4b64b8926adcb64b4de5e1b590329b5145593
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030889"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684691"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>tipo de recurso groupPolicyPresentationComboBox
 
@@ -41,8 +41,8 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|String|Cadeia de caracteres padrão localizada exibida na caixa de combinação. O valor padrão é vazio.|
-|enviou|Coleção String|Cadeias de caracteres localizadas listadas na lista suspensa da caixa de combinação. O valor padrão é vazio.|
-|obrigatório|Booliano|Especifica se um valor deve ser especificado para o parâmetro. O valor padrão é falso.|
+|enviou|Coleção de cadeias de caracteres|Cadeias de caracteres localizadas listadas na lista suspensa da caixa de combinação. O valor padrão é vazio.|
+|obrigatório|Boolean|Especifica se um valor deve ser especificado para o parâmetro. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro sem sinal que especifica o número máximo de caracteres de texto para o parâmetro. O valor padrão é 1023.|
 
 ## <a name="relationships"></a>Relações
@@ -72,7 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "maxLength": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3190b09018396a17c1bfab50a5a9a9ad6d684c93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a256b0f9179b624ea80e236fb2255246af3eafd4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073849"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684985"
 ---
 # <a name="androideaptype-enum-type"></a>tipo de enumeração androidEapType
 
@@ -25,10 +25,9 @@ Tipos de configuração EAP (Extensible Authentication Protocol).
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|eapTls|13 |Protocolo de autenticação extensível-segurança de camada de transporte (EAP-TLS).|
-|eapTtls| 21 |Protocolo de autenticação extensível – segurança de camada de transporte (EAP-TTLS) encapsulado.|
+|eapTls|13 |Autenticação extensível Protocol-Transport segurança de camada (EAP-TLS).|
+|eapTtls| 21 |Autenticação extensível Protocol-Tunneled Transport Layer Security (EAP-TTLS).|
 |autenticação|25|PEAP (protocolo de autenticação extensível protegido).|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2783d882c3ba5e5d8154be35db6a4a8411227955
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 07b1249da8d05931f4176c1bdb82f99daa1e3f00
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080758"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727383"
 ---
 # <a name="userexperienceanalyticssettings-resource-type"></a>tipo de recurso userExperienceAnalyticsSettings
 
@@ -25,7 +25,7 @@ A visão geral da análise da experiência do usuário é a recomendação de me
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configurationManagerDataConnectorConfigured|Boolean|True se o anexo do locatário estiver configurado. Se configurado, os dispositivos anexados ao locatário do SCCM aparecerão nos relatórios do UXA.|
+|configurationManagerDataConnectorConfigured|Booliano|True se o anexo do locatário estiver configurado. Se configurado, os dispositivos anexados ao locatário do SCCM aparecerão nos relatórios do UXA.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "configurationManagerDataConnectorConfigured": true
 }
 ```
-
 
 
 
