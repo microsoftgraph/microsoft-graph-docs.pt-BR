@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c9ef54245b427372901a4b1cd6f29eff9b3b616
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 309587118066c8726414cd7d1d8637c7fb0d2b71
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006276"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700539"
 ---
 # <a name="update-androidmanagedstorewebapp"></a>Atualizar androidManagedStoreWebApp
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -71,7 +71,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |uploadState|Int32|O estado de upload. Os valores possíveis são: 0- `Not Ready` , 1- `Ready` , 2- `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que este aplicativo substitui direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos que este aplicativo está substituindo direta ou indiretamente por. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -80,10 +80,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |totalLicenseCount|Int32|O número total de licenças VPP. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appStoreUrl|String|A URL do aplicativo de reproduzir para o repositório de trabalho. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|IsPrivate|Booliano|Indica se o aplicativo está disponível somente para os usuários de uma empresa. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isSystemApp|Booliano|Indica se o aplicativo é um aplicativo de sistema pré-instalado. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|IsPrivate|Boolean|Indica se o aplicativo está disponível somente para os usuários de uma empresa. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isSystemApp|Boolean|Indica se o aplicativo é um aplicativo de sistema pré-instalado. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appTracks|coleção [androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)|As faixas que são visíveis para esta empresa. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|supportsOemConfig|Booliano|Se este aplicativo dá suporte à política OEMConfig. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|supportsOemConfig|Boolean|Se este aplicativo dá suporte à política OEMConfig. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 
@@ -194,7 +194,6 @@ Content-Length: 1400
   "supportsOemConfig": true
 }
 ```
-
 
 
 

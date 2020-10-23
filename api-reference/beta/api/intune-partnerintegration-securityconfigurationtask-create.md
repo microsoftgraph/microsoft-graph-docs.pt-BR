@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6d325975089a825ac590657a3886f3b376e3172
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 99e3ea6871e2b4f2c43d6df8575fa2f7c6cfc95e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074542"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698537"
 ---
 # <a name="create-securityconfigurationtask"></a>Criar securityConfigurationTask
 
@@ -53,21 +53,21 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar security
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
-|displayName|Cadeia de caracteres|O nome. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
+|id|String|A chave da entidade. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
+|displayName|String|O nome. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |description|String|A descrição. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |createdDateTime|DateTimeOffset|A data de criação. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |dueDateTime|DateTimeOffset|A data de conclusão. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
 |prioridade|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|A prioridade. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Os valores possíveis são: `none`, `high`, `low`.|
-|Criador|Cadeia de caracteres|O endereço de email do criador. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
-|creatorNotes|Cadeia de caracteres|Observações do criador. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
-|assignedTo|Cadeia de caracteres|O nome ou email do administrador ao qual esta tarefa é atribuída. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
+|criador|String|O endereço de email do criador. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
+|creatorNotes|String|Observações do criador. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
+|assignedTo|String|O nome ou email do administrador ao qual esta tarefa é atribuída. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|O status. Herdado de [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Os valores possíveis são: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 |endpointSecurityPolicy|[endpointSecurityConfigurationType](../resources/intune-partnerintegration-endpointsecurityconfigurationtype.md)|O tipo de política de segurança do ponto de extremidade. Os valores possíveis são: `unknown`, `antivirus`, `diskEncryption`, `firewall`, `endpointDetectionAndResponse`, `attackSurfaceReduction`, `accountProtection`.|
 |applicablePlatform|[endpointSecurityConfigurationApplicablePlatform](../resources/intune-partnerintegration-endpointsecurityconfigurationapplicableplatform.md)|A plataforma aplicável. Os valores possíveis são: `unknown`, `macOS`, `windows10AndLater`, `windows10AndWindowsServer`.|
 |endpointSecurityPolicyProfile|[endpointSecurityConfigurationProfileType](../resources/intune-partnerintegration-endpointsecurityconfigurationprofiletype.md)|O perfil da política de segurança do ponto de extremidade. Os valores possíveis são:, `unknown` `antivirus` , `windowsSecurity` , `bitLocker` , `fileVault` , `firewall` , `firewallRules` , `endpointDetectionAndResponse` , `deviceControl` , `appAndBrowserIsolation` , `exploitProtection` , `webProtection` ,, `applicationControl` `attackSurfaceReductionRules` `accountProtection` .|
-|insights|Cadeia de caracteres|Informações sobre a mitigação.|
+|insights|String|Informações sobre a mitigação.|
 |managedDeviceCount|Int32|O número de dispositivos vulneráveis.|
 |intendedSettings|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|As configurações pretendidas e seus valores.|
 
@@ -145,7 +145,6 @@ Content-Length: 854
   ]
 }
 ```
-
 
 
 

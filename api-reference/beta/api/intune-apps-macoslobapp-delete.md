@@ -5,16 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6358ba07adde04900fa37d20cd01765a94b9fdd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 526a7785293b4eb59125737cf163b64db3abc764
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012212"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699958"
 ---
 # <a name="delete-macoslobapp"></a>Excluir macOSLobApp
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

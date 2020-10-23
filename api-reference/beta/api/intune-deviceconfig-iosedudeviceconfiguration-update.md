@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b2cee05b8b918309528faed355e2b9367fac05b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2bcdc67b485c8d9cbcb02bfb532ec17c5d0af9d2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47995489"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698894"
 ---
 # <a name="update-iosedudeviceconfiguration"></a>Atualizar iosEduDeviceConfiguration
 
@@ -225,7 +225,6 @@ Content-Length: 2855
   }
 }
 ```
-
 
 
 

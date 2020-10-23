@@ -5,16 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89be37ccc1f3b2b9c1550fc2979cf520d15aef71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03e31d3a84dc175935cf9cfcffb757dc056ca898
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006213"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700350"
 ---
 # <a name="create-ioslobappprovisioningconfigurationassignment"></a>Criar iosLobAppProvisioningConfigurationAssignment
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -97,7 +97,6 @@ Content-Length: 400
   }
 }
 ```
-
 
 
 

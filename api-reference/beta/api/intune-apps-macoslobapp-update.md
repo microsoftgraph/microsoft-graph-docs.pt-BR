@@ -5,16 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18ad55c851ba9f1e29ac732550a5a4ca4f3c672b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 458d6f0a69e4ec52120431bf9b27863fe4741013
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012177"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48699930"
 ---
 # <a name="update-macoslobapp"></a>Atualizar macOSLobApp
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -65,7 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSLo
 |isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|proprietário|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
+|owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Anotações do aplicativo. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |uploadState|Int32|O estado de upload. Os valores possíveis são: 0- `Not Ready` , 1- `Ready` , 2- `Processing` . Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -87,6 +87,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSLo
 |md5HashChunkSize|Int32|O tamanho da parte do hash MD5|
 |md5Hash|Coleção de cadeias de caracteres|Os códigos de hash MD5|
 |ignoreVersionDetection|Boolean|Um booliano para controlar se a versão do aplicativo será usada para detectar o aplicativo depois que ele for instalado em um dispositivo. Defina isso como true para aplicativos de linha de negócios (LoB) de macOS que usam um recurso de autoatualização.|
+|installAsManaged|Boolean|Um booliano para controlar se o aplicativo será instalado como gerenciado (requer o macOS 11,0 e outras restrições de PKG).|
 
 
 
@@ -100,7 +101,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1673
+Content-length: 1702
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -158,7 +159,8 @@ Content-length: 1673
   "md5Hash": [
     "Md5Hash value"
   ],
-  "ignoreVersionDetection": true
+  "ignoreVersionDetection": true,
+  "installAsManaged": true
 }
 ```
 
@@ -167,7 +169,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1845
+Content-Length: 1874
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -228,10 +230,10 @@ Content-Length: 1845
   "md5Hash": [
     "Md5Hash value"
   ],
-  "ignoreVersionDetection": true
+  "ignoreVersionDetection": true,
+  "installAsManaged": true
 }
 ```
-
 
 
 

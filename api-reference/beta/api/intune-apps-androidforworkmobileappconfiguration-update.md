@@ -5,16 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1003f7a4db7ecc8138544697a898656334b8b06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb603bbb80d54a11bd475f646c32452f09bd4447
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006416"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700770"
 ---
 # <a name="update-androidforworkmobileappconfiguration"></a>Atualizar androidForWorkMobileAppConfiguration
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -137,7 +137,6 @@ Content-Length: 781
   "profileApplicability": "androidWorkProfile"
 }
 ```
-
 
 
 

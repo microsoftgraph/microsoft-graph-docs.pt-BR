@@ -5,16 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 13ecfc92d483a6fe9a3f71e0bc1b6c68dc79eaa3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 13936e30efd7fd272209e4f7c4e9f30e09817d02
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006269"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700448"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>Atualizar enterpriseCodeSigningCertificate
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [enterpr
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|conteúdo|Binária|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
+|conteúdo|Binária|O certificado do Windows Enterprise Code-Signing no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
 |assunto|String|O valor de entidade para o certificado.|
@@ -110,7 +110,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

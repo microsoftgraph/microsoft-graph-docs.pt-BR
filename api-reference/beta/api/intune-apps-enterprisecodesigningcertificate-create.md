@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad49562a3e9c667f0ccec6dc91f67222a164e09f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a2fedf80521e2bbdb5c5b223652294d0afd3296
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001173"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700483"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Criar enterpriseCodeSigningCertificate
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar enterpri
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|conteúdo|Binária|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
+|conteúdo|Binária|O certificado do Windows Enterprise Code-Signing no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
 |assunto|String|O valor de entidade para o certificado.|
@@ -110,7 +110,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 
