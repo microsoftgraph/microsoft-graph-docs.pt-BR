@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7e5c2a1eef152ba613be8909ca80f6040305720
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3c4dd6586a4b6bc3939ea4d918756670cea027d5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055321"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684404"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -36,8 +36,8 @@ A classe base da configuração de registro do dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para a conta|
-|displayName|Cadeia de caracteres|O nome de exibição da configuração de registro do dispositivo|
+|id|String|Identificador exclusivo para a conta|
+|displayName|String|O nome de exibição da configuração de registro do dispositivo|
 |description|String|A descrição da configuração de registro do dispositivo|
 |prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos somente à configuração com o menor valor de prioridade.|
 |createdDateTime|DateTimeOffset|Data e hora de criação em UTC da configuração de registro do dispositivo|
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
 
 
 

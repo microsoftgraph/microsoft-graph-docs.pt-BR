@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 06f0f91410f12f6bff8a7e3c427e248423324079
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 509f31187e46f12c039ce5172722003fccd2e786
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073933"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685440"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>tipo de enumeração androidDeviceOwnerSystemUpdateInstallType
 
@@ -26,10 +26,9 @@ Tipos de atualização do sistema para o proprietário do dispositivo Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Comportamento padrão do dispositivo, que normalmente solicita que o usuário aceite atualizações do sistema.|
-|adiamento|1 |Adiar a instalação automática de atualizações até 30 dias.|
-|em janelas|2 |Instale automaticamente dentro de uma janela de manutenção diária.|
-|Automático|3 |Instalar atualizações automaticamente o mais rápido possível.|
-
+|adiamento|1|Adiar a instalação automática de atualizações até 30 dias.|
+|em janelas|duas|Instale automaticamente dentro de uma janela de manutenção diária.|
+|Automático|3D|Instalar atualizações automaticamente o mais rápido possível.|
 
 
 
