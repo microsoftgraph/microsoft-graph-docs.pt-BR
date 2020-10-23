@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso androidForWorkWiFiConfiguration
-description: Ao fornecer as configurações neste perfil, você pode instruir o dispositivo Android para trabalho a se conectar ao ponto de extremidade de Wi-Fi desejado. Especificando o método de autenticação e os tipos de segurança esperados pelo ponto de extremidade Wi-Fi, você pode tornar a conexão Wi-Fi perfeita para o usuário final. Este perfil oferece tipos de segurança limitados e mais simples do que o perfil de Wi-Fi corporativo.
+description: Ao fornecer as configurações neste perfil, você pode instruir o dispositivo Android para trabalho a se conectar ao ponto de extremidade desejado Wi-Fi. Especificando o método de autenticação e os tipos de segurança esperados pelo ponto de extremidade Wi-Fi você pode tornar a conexão Wi-Fi sem interrupções para o usuário final. Este perfil oferece tipos de segurança limitados e mais simples do que o perfil de Wi-Fi corporativos.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: acdfaa4e8444114db5f77be39636216aed4b8848
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 837c6334d3ba162ba2fb1b5cd1604e1fcd9cb6d4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989351"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696382"
 ---
 # <a name="androidforworkwificonfiguration-resource-type"></a>tipo de recurso androidForWorkWiFiConfiguration
 
@@ -20,12 +20,12 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ao fornecer as configurações neste perfil, você pode instruir o dispositivo Android para trabalho a se conectar ao ponto de extremidade de Wi-Fi desejado. Especificando o método de autenticação e os tipos de segurança esperados pelo ponto de extremidade Wi-Fi, você pode tornar a conexão Wi-Fi perfeita para o usuário final. Este perfil oferece tipos de segurança limitados e mais simples do que o perfil de Wi-Fi corporativo.
+Ao fornecer as configurações neste perfil, você pode instruir o dispositivo Android para trabalho a se conectar ao ponto de extremidade desejado Wi-Fi. Especificando o método de autenticação e os tipos de segurança esperados pelo ponto de extremidade Wi-Fi você pode tornar a conexão Wi-Fi sem interrupções para o usuário final. Este perfil oferece tipos de segurança limitados e mais simples do que o perfil de Wi-Fi corporativos.
 
 
 Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar androidForWorkWiFiConfigurations](../api/intune-deviceconfig-androidforworkwificonfiguration-list.md)|coleção [androidForWorkWiFiConfiguration](../resources/intune-deviceconfig-androidforworkwificonfiguration.md)|Listar Propriedades e relações dos objetos [androidForWorkWiFiConfiguration](../resources/intune-deviceconfig-androidforworkwificonfiguration.md) .|
@@ -50,9 +50,9 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |NetworkName|String|Nome da rede|
 |SSID|String|Este é o nome da rede Wi-Fi que é transmitida para todos os dispositivos.|
-|connectAutomatically|Boolean|Conectar automaticamente quando esta rede estiver no intervalo. A definição dessa opção como true ignorará o prompt do usuário e conectará automaticamente o dispositivo à rede Wi-Fi.|
+|connectAutomatically|Boolean|Conectar automaticamente quando esta rede estiver no intervalo. A definição dessa opção como true ignorará o prompt do usuário e conectará automaticamente o dispositivo ao Wi-Fi rede.|
 |connectWhenNetworkNameIsHidden|Boolean|Quando definido como true, esse perfil força o dispositivo a se conectar a uma rede que não transmite seu SSID para todos os dispositivos.|
-|à|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indica se o ponto de extremidade Wi-Fi usa um tipo de segurança baseado em EAP. Os valores possíveis são: `open`, `wpaEnterprise`, `wpa2Enterprise`.|
+|à|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indica se Wi-Fi ponto de extremidade usa um tipo de segurança baseado em EAP. Os valores possíveis são: `open`, `wpaEnterprise`, `wpa2Enterprise`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -114,7 +114,6 @@ Veja a seguir uma representação JSON do recurso.
   "wiFiSecurityType": "String"
 }
 ```
-
 
 
 

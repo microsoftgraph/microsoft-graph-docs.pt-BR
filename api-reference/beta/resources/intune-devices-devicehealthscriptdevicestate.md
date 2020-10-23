@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 628e48ebd263e2f315ce3868730de91154780061
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5413e00e299633313e6f823dc5b60bf13df5ce56
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060339"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697725"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>tipo de recurso deviceHealthScriptDeviceState
 
@@ -34,16 +34,16 @@ Contém propriedades para o estado de execução do dispositivo do script de int
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de estado do dispositivo de script de integridade do dispositivo. Essa propriedade é somente leitura.|
+|id|String|Chave da entidade de estado do dispositivo de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |detecçaostate|[runState](../resources/intune-shared-runstate.md)|Estado de detecção da execução do script de integridade do dispositivo mais recente. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|O último carimbo de data/hora de quando o script de integridade do dispositivo é executado|
 |expectedStateUpdateDateTime|DateTimeOffset|O carimbo de data/hora seguinte de quando o script de integridade do dispositivo deve ser executado|
 |lastSyncDateTime|DateTimeOffset|A última vez em que a extensão de gerenciamento do Intune foi sincronizada com o Intune|
-|preRemediationDetectionScriptOutput|Cadeia de caracteres|Saída do script de detecção antes da correção|
-|preRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção antes da correção|
-|remediationScriptError|Cadeia de caracteres|Saída de erro do script de correção|
-|postRemediationDetectionScriptOutput|Cadeia de caracteres|Saída do script de detecção após a correção|
-|postRemediationDetectionScriptError|Cadeia de caracteres|Erro do script de detecção após a correção|
+|preRemediationDetectionScriptOutput|String|Saída do script de detecção antes da correção|
+|preRemediationDetectionScriptError|String|Erro do script de detecção antes da correção|
+|remediationScriptError|String|Saída de erro do script de correção|
+|postRemediationDetectionScriptOutput|String|Saída do script de detecção após a correção|
+|postRemediationDetectionScriptError|String|Erro do script de detecção após a correção|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Estado de correção da execução do script de integridade do dispositivo mais recente. Os valores possíveis são: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
 
 ## <a name="relationships"></a>Relações
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   "remediationState": "String"
 }
 ```
-
 
 
 

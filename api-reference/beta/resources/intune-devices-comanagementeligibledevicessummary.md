@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b67734bf98a48c31a1346bd730c8521fd8a8d681
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03baadeea1441d5eecc1ff6e8974724b19a59949
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060766"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697781"
 ---
 # <a name="comanagementeligibledevicessummary-resource-type"></a>tipo de recurso comanagementEligibleDevicesSummary
 
@@ -25,11 +25,11 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|comanagedCount|Int32|Contagem de dispositivos já cogerenciados|
-|eligibleCount|Int32|Contagem de dispositivos totalmente qualificados para o cogerenciamento|
-|eligibleButNotAzureAdJoinedCount|Int32|Contagem de dispositivos qualificados para cogerenciamento, mas ainda não ingressou no Azure Active Directory|
-|needsOsUpdateCount|Int32|Contagem de dispositivos que serão qualificados para cogerenciamento após uma atualização de so|
-|ineligibleCount|Int32|Contagem de dispositivos não qualificados para cogerenciamento|
+|comanagedCount|Int32|Contagem de dispositivos já Co-Managed|
+|eligibleCount|Int32|Contagem de dispositivos totalmente qualificados para Co-Management|
+|eligibleButNotAzureAdJoinedCount|Int32|Contagem de dispositivos qualificados para Co-Management, mas ainda não ingressaram no Azure Active Directory|
+|needsOsUpdateCount|Int32|Contagem de dispositivos que serão qualificados para Co-Management após uma atualização de so|
+|ineligibleCount|Int32|Contagem de dispositivos não qualificados para Co-Management|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "ineligibleCount": 1024
 }
 ```
-
 
 
 

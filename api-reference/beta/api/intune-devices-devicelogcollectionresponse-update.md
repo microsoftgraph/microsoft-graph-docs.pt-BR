@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de1cc5fefa8961638ad4aebe1517c1918299553f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c6dade84eeb03fbfedc846d6ef7740579146fff8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056132"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696836"
 ---
 # <a name="update-devicelogcollectionresponse"></a>Atualizar deviceLogCollectionResponse
 
@@ -53,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceL
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo no formato de tenantId_deviceId_requestId|
+|id|String|O identificador exclusivo no formato de tenantId_deviceId_requestId|
 |status|String|O status da solicitação de coleção de logs|
 |managedDeviceId|Guid|A ID do dispositivo|
 |errorCode|Int64|O código de erro, se houver. Valores válidos-9.22337203685478 E + 18 para 9.22337203685478 E + 18|
 |requestedDateTimeUTC|DateTimeOffset|O DateTime da solicitação|
 |receivedDateTimeUTC|DateTimeOffset|O DateTime que a solicitação foi recebida|
-|initiatedByUserPrincipalName|Cadeia de caracteres|O UPN para quem iniciou a solicitação|
+|initiatedByUserPrincipalName|String|O UPN para quem iniciou a solicitação|
 |expirationDateTimeUTC|DateTimeOffset|O DateTime do vencimento dos logs|
 |size|Duplo|O tamanho dos logs. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
 
@@ -110,7 +110,6 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 48fa3ce22dd19a95500d68ed47985f3d5a1c694f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: da689e16e795910e9ab24f3e95647bd07a6e535e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089515"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697879"
 ---
 # <a name="keytypedvaluepair-resource-type"></a>tipo de recurso keyTypedValuePair
 
@@ -25,7 +25,7 @@ Um par chave-valor com uma chave de cadeia de caracteres e um valor digitado.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|Cadeia de caracteres|A chave de cadeia de caracteres do par chave-valor.|
+|key|String|A chave de cadeia de caracteres do par chave-valor.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "key": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8154284e74cb4563ef881071c2a40ed9ec57adcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1a8383ff70bc8950816152965c5e91e31d2e571
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060318"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697711"
 ---
 # <a name="devicehealthscriptintegerparameter-resource-type"></a>tipo de recurso deviceHealthScriptIntegerParameter
 
@@ -28,10 +28,10 @@ Herda de [deviceHealthScriptParameter](../resources/intune-devices-devicehealths
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|Cadeia de caracteres|O nome do parâmetro herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|nome|String|O nome do parâmetro herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |description|String|A descrição do parâmetro herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Booliano|Se o parâmetro obrigatório é herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|applyDefaultValueWhenNotAssigned|Booliano|Se aplica DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|applyDefaultValueWhenNotAssigned|Boolean|Se aplica DefaultValue quando não atribuído herdado de [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |defaultValue|Int32|O valor padrão do parâmetro Integer. Valores válidos-2147483648 a 2147483647|
 
 ## <a name="relationships"></a>Relações
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "defaultValue": 1024
 }
 ```
-
 
 
 

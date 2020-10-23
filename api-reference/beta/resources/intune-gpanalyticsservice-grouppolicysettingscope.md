@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 311bb3db6a1a2b97e493582359882d6641cbea54
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a3daf4551207a25c63509e48a214c15c98b61535
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031162"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697459"
 ---
 # <a name="grouppolicysettingscope-enum-type"></a>tipo de enumeração groupPolicySettingScope
 
@@ -26,9 +26,8 @@ Escopo da configuração da política de grupo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Escopo de dispositivo desconhecido|
-|device|1 |Escopo do dispositivo|
-|user|2 |Escopo de usuário|
-
+|device|1|Escopo do dispositivo|
+|user|duas|Escopo de usuário|
 
 
 

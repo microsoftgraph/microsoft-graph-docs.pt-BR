@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso comanagementEligibleDevice
-description: Estado de qualificação para gerenciamento de dispositivos
+description: Estado de qualificação do dispositivo Co-Management
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6a912aa9631295c7331afa8f1d985b5231ac614
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5790f49a20f6079dbaf8e6400fd2bfb6b33e86fc
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060759"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697788"
 ---
 # <a name="comanagementeligibledevice-resource-type"></a>tipo de recurso comanagementEligibleDevice
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estado de qualificação para gerenciamento de dispositivos
+Estado de qualificação do dispositivo Co-Management
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -34,15 +34,15 @@ Estado de qualificação para gerenciamento de dispositivos
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID exclusiva do dispositivo|
+|id|String|ID exclusiva do dispositivo|
 |deviceName|String|DeviceName|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` , `androidForWork` , `androidEnterprise` , `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` ,,,,,.|
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus. Os valores possíveis são: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Os valores possíveis são: `unknown`, `company`, `personal`.|
-|managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm` e `windowsManagementCloudApi`.|
+|managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
 |ManagementState|[ManagementState](../resources/intune-devices-managementstate.md)|ManagementState. Os valores possíveis são: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
-|referenceId|Cadeia de caracteres|ReferenceId|
-|mdmStatus|Cadeia de caracteres|MDMStatus|
+|referenceId|String|ReferenceId|
+|mdmStatus|String|MDMStatus|
 |osVersion|String|OSVersion|
 |serialNumber|String|SerialNumber|
 |fabricante|String|Fabricantes|
@@ -50,7 +50,7 @@ Estado de qualificação para gerenciamento de dispositivos
 |osDescription|Cadeia de caracteres|OSDescription|
 |EntityName|Int32|EntityName|
 |userId|Cadeia de caracteres|UserId|
-|UPN|Cadeia de caracteres|UPN|
+|UPN|String|UPN|
 |userEmail|Cadeia de caracteres|UserEmail|
 |userName|Cadeia de caracteres|UserName|
 |status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. Os valores possíveis são: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
@@ -91,7 +91,6 @@ Veja a seguir uma representação JSON do recurso.
   "status": "String"
 }
 ```
-
 
 
 

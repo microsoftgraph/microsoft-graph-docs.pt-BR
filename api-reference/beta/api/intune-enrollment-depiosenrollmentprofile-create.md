@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d28b97cdad55f7abd13b68fe005a4cf0603ce6cb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 40e506e89a8810db8c638d388ff311b7a4800b6e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093935"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696731"
 ---
 # <a name="create-depiosenrollmentprofile"></a>Criar depIOSEnrollmentProfile
 
@@ -53,33 +53,31 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depIOSEn
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|Cadeia de caracteres|Nome do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|description|Cadeia de caracteres|Descrição do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|id|String|O GUID do objeto herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|String|Nome do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|String|Descrição do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação de usuário herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|Cadeia de caracteres|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |Enableauthenticationviacompanyportal foi adicionada|Boolean|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Booliano|Indica se este é o perfil padrão herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supervisedModeEnabled|Boolean|Modo supervisionado, true para habilitar, caso contrário, false. Consulte https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune para obter mais informações. Herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supportDepartment|Cadeia de caracteres|Informações do departamento de suporte herdadas de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|passCodeDisabled|Boolean|Indica se o painel de configuração de senha está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supportDepartment|String|Informações do departamento de suporte herdadas de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |IsMandatory|Boolean|Indica se o perfil é obrigatório herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |locationDisabled|Boolean|Indica se o painel de instalação do serviço de localização está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|supportPhoneNumber|Cadeia de caracteres|Número de telefone de suporte herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|supportPhoneNumber|String|Número de telefone de suporte herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |profileRemovalDisabled|Boolean|Indica se a opção de remoção de perfil está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |restoreBlocked|Boolean|Indica se o painel de configuração de restauração é bloqueado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |appleIdDisabled|Boolean|Indica se o painel de configuração da Apple ID está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |termsAndConditionsDisabled|Boolean|Indica se o painel de configuração ' termos e condições ' está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |touchIdDisabled|Boolean|Indica se o painel de configuração de ID de toque está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |applePayDisabled|Boolean|Indica se o painel de configuração de pagamento da Apple está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|zoomDisabled|Boolean|Indica se o painel de configuração de zoom está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |siriDisabled|Boolean|Indica se o painel de configuração do Siri está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |diagnosticsDisabled|Boolean|Indica se o painel de configuração de diagnóstico está desabilitado herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |displayToneSetupDisabled|Boolean|Indica se a tela de configuração do displaytone está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |privacyPaneDisabled|Boolean|Indica se a tela de privacidade está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |screenTimeScreenDisabled|Boolean|Indica se a configuração de tempo limite da tela está desabilitada herdada de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|deviceNameTemplate|Cadeia de caracteres|Define um padrão literal ou de nome. Herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|deviceNameTemplate|String|Define um padrão literal ou de nome. Herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |configurationWebUrl|Boolean|URL do logon do assistente de configuração herdado de [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indica o modo de emparelhamento do iTunes. Os valores possíveis são: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|coleção [managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Certificados de gerenciamento para o Apple Configurator|
@@ -87,7 +85,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depIOSEn
 |awaitDeviceConfiguredConfirmation|Boolean|Indica se o dispositivo deverá aguardar a confirmação configurada|
 |sharedIPadMaximumUserCount|Int32|Isso especifica o número máximo de usuários que podem usar um iPad compartilhado. Aplicável somente no modo iPad compartilhado.|
 |enableSharedIPad|Boolean|Isso indica se o dispositivo deve ser inscrito em um modo que permite cenários de vários usuários. Aplicável somente no iPads compartilhado.|
-|companyPortalVppTokenId|Cadeia de caracteres|Se definido, indica qual token VPP deve ser usado para implantar o portal da empresa com licenciamento de dispositivo. "Enableauthenticationviacompanyportal foi adicionada" deve ser definido para que essa propriedade seja definida.|
+|companyPortalVppTokenId|String|Se definido, indica qual token VPP deve ser usado para implantar o portal da empresa com licenciamento de dispositivo. "Enableauthenticationviacompanyportal foi adicionada" deve ser definido para que essa propriedade seja definida.|
 |enableSingleAppEnrollmentMode|Boolean|Informa ao dispositivo para habilitar o modo de um único aplicativo e aplicar o aplicativo-bloquear durante o registro. O padrão é false. ' Enableauthenticationviacompanyportal foi adicionada ' e ' companyPortalVppTokenId ' devem ser definidos para que essa propriedade seja definida.|
 |homeButtonScreenDisabled|Boolean|Indica se a tela de sensibilidade do botão da página inicial está desabilitada|
 |iMessageAndFaceTimeScreenDisabled|Boolean|Indica se a tela iMessage e FaceTime está desabilitada|
@@ -100,6 +98,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar depIOSEn
 |preferredLanguageScreenDisabled|Boolean|Indica se a tela de idioma preferencial está desabilitada|
 |deviceToDeviceMigrationDisabled|Boolean|Indica se a migração de dispositivo para dispositivo está desabilitada|
 |welcomeScreenDisabled|Boolean|Indica se a tela do weclome está desabilitada|
+|passCodeDisabled|Boolean|Indica se o painel de configuração de senha está desabilitado|
+|zoomDisabled|Boolean|Indica se o painel de configuração de zoom está desabilitado|
+|restoreCompletedScreenDisabled|Boolean|Indica se a tela do weclome está desabilitada|
+|updateCompleteScreenDisabled|Boolean|Indica se a tela do weclome está desabilitada|
 
 
 
@@ -113,7 +115,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 2024
+Content-length: 2108
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -126,7 +128,6 @@ Content-length: 2024
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "Support Phone Number value",
@@ -136,7 +137,6 @@ Content-length: 2024
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -168,7 +168,11 @@ Content-length: 2024
   "expressLanguageScreenDisabled": true,
   "preferredLanguageScreenDisabled": true,
   "deviceToDeviceMigrationDisabled": true,
-  "welcomeScreenDisabled": true
+  "welcomeScreenDisabled": true,
+  "passCodeDisabled": true,
+  "zoomDisabled": true,
+  "restoreCompletedScreenDisabled": true,
+  "updateCompleteScreenDisabled": true
 }
 ```
 
@@ -177,7 +181,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2073
+Content-Length: 2157
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -191,7 +195,6 @@ Content-Length: 2073
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "Support Phone Number value",
@@ -201,7 +204,6 @@ Content-Length: 2073
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -233,10 +235,13 @@ Content-Length: 2073
   "expressLanguageScreenDisabled": true,
   "preferredLanguageScreenDisabled": true,
   "deviceToDeviceMigrationDisabled": true,
-  "welcomeScreenDisabled": true
+  "welcomeScreenDisabled": true,
+  "passCodeDisabled": true,
+  "zoomDisabled": true,
+  "restoreCompletedScreenDisabled": true,
+  "updateCompleteScreenDisabled": true
 }
 ```
-
 
 
 

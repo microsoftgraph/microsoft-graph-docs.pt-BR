@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae81d6df33be7473b982d5bf319446402d6ba946
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb3ea6abdceae5f3af2300810d7d822b2c2c5e39
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031085"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697424"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>tipo de recurso groupPolicyConfiguration
 
@@ -39,7 +39,7 @@ A entidade de configuração de política de grupo contém os valores configurad
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
 |displayName|String|Nome fornecido pelo usuário para o objeto Resource.|
 |description|String|Descrição fornecida pelo usuário para o objeto Resource.|
-|roleScopeTagIds|Coleção String|A lista de marcas de escopo para a configuração.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|A lista de marcas de escopo para a configuração.|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

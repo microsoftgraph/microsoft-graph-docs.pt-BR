@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f4f23614bb05bd6e67990d06a4f31e9fbdfe7f07
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c053fa94416190c0e5b0b7b3a7639eb4ab3bcf61
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055936"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698005"
 ---
 # <a name="delete-mobileappintentandstate"></a>Excluir mobileAppIntentAndState
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

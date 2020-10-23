@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4527a57e68325e18634587661f1a15634ec8c75a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 066adda1d6d6b66eb42984ab22c20f155b1f5ea7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074556"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696549"
 ---
 # <a name="create-unsupportedgrouppolicyextension"></a>Criar unsupportedGroupPolicyExtension
 
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar unsuppor
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Definindo o escopo da extensão sem suporte. Os valores possíveis são: `unknown`, `device`, `user`.|
-|namespaceUrl|Cadeia de caracteres|URL do namespace da extensão sem suporte.|
-|ExtensionType|Cadeia de caracteres|ExtensionType da extensão sem suporte.|
-|Nome|Cadeia de caracteres|Nome do nó da extensão sem suporte.|
+|namespaceUrl|String|URL do namespace da extensão sem suporte.|
+|ExtensionType|String|ExtensionType da extensão sem suporte.|
+|Nome|String|Nome do nó da extensão sem suporte.|
 
 
 
@@ -98,7 +98,6 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
-
 
 
 

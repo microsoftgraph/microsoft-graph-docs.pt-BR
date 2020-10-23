@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 255e9b815657fa354ab4180e8685049ec78ed585
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a6fdb900b9f9ce5c89828e6e945623a766de2041
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029747"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697235"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestriction
 
@@ -29,7 +29,7 @@ Restrições de registro específicas de plataformas
 |personalDeviceEnrollmentBlocked|Booliano|Bloqueia o registro de dispositivos de sua propriedade|
 |osMinimumVersion|Cadeia de caracteres|Versão do SO mínimo compatível|
 |osMaximumVersion|Cadeia de caracteres|Versão do SO máximo compatível|
-|blockedManufacturers|Coleção String|Conjunto de fabricantes bloqueados.|
+|blockedManufacturers|Coleção de cadeias de caracteres|Conjunto de fabricantes bloqueados.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

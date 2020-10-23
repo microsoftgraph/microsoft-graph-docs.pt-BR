@@ -5,16 +5,16 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c022a195d65154a827d04abd3eb5b2b99af5704b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: adf8962a44295c86357120a36bc5b413850e5fc1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014396"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698425"
 ---
 # <a name="get-rolescopetagautoassignment"></a>Obter roleScopeTagAutoAssignment
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -82,7 +82,6 @@ Content-Length: 403
   }
 }
 ```
-
 
 
 

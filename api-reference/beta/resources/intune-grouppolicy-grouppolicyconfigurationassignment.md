@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b113b7570726efacd3c6dc2691ef0d11a4795784
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 781b0bae1f99fc242f0edf74f1f0e0703ce9b566
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031057"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697395"
 ---
 # <a name="grouppolicyconfigurationassignment-resource-type"></a>tipo de recurso groupPolicyConfigurationAssignment
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

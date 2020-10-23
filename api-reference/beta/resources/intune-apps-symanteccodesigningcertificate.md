@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1761e5d9d98c1d2cae7a0d76193e874518f94dac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9cac1fa3e41ba9f826814867779953f93cee3ad7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078420"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696451"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>tipo de recurso symantecCodeSigningCertificate
 
@@ -31,14 +31,14 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade.|
-|conteúdo|Binária|O certificado de assinatura de código Symantec do Windows no formato de dados brutos.|
+|id|String|A chave da entidade.|
+|conteúdo|Binária|O Windows Symantec Code-Signing o certificado no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |password|String|A senha necessária para o arquivo. pfx.|
 |SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
-|assunto|Cadeia de caracteres|O valor de entidade para o certificado.|
-|issuerName|Cadeia de caracteres|O nome do emissor do certificado.|
-|emissor|Cadeia de caracteres|O valor do emissor para o certificado.|
+|assunto|String|O valor de entidade para o certificado.|
+|issuerName|String|O nome do emissor do certificado.|
+|emissor|String|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
 |uploadDateTime|DateTimeOffset|O tipo do certificado de codesignação como CERT da Symantec.|
 
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "uploadDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

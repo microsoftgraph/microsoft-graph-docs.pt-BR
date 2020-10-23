@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e74675b45a92024b46b9d1009b957bd458c390d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3176e9255d44678e4d2c2bc17a0f3c213b206f9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010847"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698306"
 ---
 # <a name="delete-devicemanagementcachedreportconfiguration"></a>Excluir deviceManagementCachedReportConfiguration
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

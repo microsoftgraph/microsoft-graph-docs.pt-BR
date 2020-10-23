@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dc29f3612cb499ffabb31176acc7106f0d4205ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30a3cae31bf194fb0f90133fff8b0c6bbf20c8f9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062019"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697970"
 ---
 # <a name="code-enum-type"></a>tipo de enumeração de código
 
@@ -25,10 +25,10 @@ Código de erro para validação de regra.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum erro.|
-|jsonFileInvalid|1 |Erro inválido no arquivo JSON.|
-|jsonFileMissing|2 |Erro de arquivo JSON ausente.|
-|jsonFileTooLarge|3 |Erro de arquivo JSON muito grande.|
+|none|,0|Nenhum erro.|
+|jsonFileInvalid|1|Erro inválido no arquivo JSON.|
+|jsonFileMissing|duas|Erro de arquivo JSON ausente.|
+|jsonFileTooLarge|3D|Erro de arquivo JSON muito grande.|
 |rulesMissing|4 |Falta de regras no erro.|
 |duplicateRules|5 |Erro de regras duplicadas.|
 |tooManyRulesSpecified|6 |Número excessivo de regras especificado.|
@@ -36,7 +36,7 @@ Código de erro para validação de regra.
 |operatorNotSupported|8 |Não há suporte para o operador erro.|
 |datatypeMissing|9 |Erro de tipo de dados ausente.|
 |datatypeNotSupported|10 |Erro de tipo de dados sem suporte.|
-|operatorDataTypeCombinationNotSupported|11 |Erro de combinação de tipo de dados operador sem suporte.|
+|operatorDataTypeCombinationNotSupported|11|Erro de combinação de tipo de dados operador sem suporte.|
 |moreInfoUriMissing|12 |Mais informações urlmissing erro.|
 |moreInfoUriInvalid|13 |Mais informações de URL erro inválido.|
 |moreInfoUriTooLarge|14 |Saiba mais sobre o erro ltoo grande.|
@@ -57,7 +57,6 @@ Código de erro para validação de regra.
 |unrecognizedLocale|anos|Erro de localidade não reconhecido.|
 |desconhecido|até|Erro desconhecido.|
 |remediationStringsMissing|31|Erros de cadeia de caracteres de correção ausente.|
-
 
 
 

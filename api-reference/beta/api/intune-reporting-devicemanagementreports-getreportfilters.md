@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0694f6b852d64e8d2b0bda9876ef3dbce5e199d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e39b5c53598f6a6418c30bb29f775ca249fcfd8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040473"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698152"
 ---
 # <a name="getreportfilters-action"></a>ação getReportFilters
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|Cadeia de caracteres|Ainda não documentado|
+|nome|String|Ainda não documentado|
 |select|String collection|Ainda não documentado|
 |search|String|Ainda não documentado|
 |groupBy|String collection|Ainda não documentado|
@@ -108,7 +108,6 @@ Content-Length: 79
   "value": "Z2V0UmVwb3J0RmlsdGVycyBJbnR1bmUgRG9jIFNhbXBsZSAxMzYxOTI0Mjkx"
 }
 ```
-
 
 
 

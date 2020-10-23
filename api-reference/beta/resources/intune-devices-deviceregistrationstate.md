@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 628d4c6c253349e54747d4fce836a2b4c8f4579f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 030a1184fe9577a1a965ea65a90ad03f136858cc
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081423"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697690"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enumeração deviceRegistrationState
 
@@ -26,14 +26,13 @@ Status do registro do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não registrado|,0|O dispositivo não está registrado.|
-|inscreve|2 |O dispositivo está registrado.|
+|inscreve|duas|O dispositivo está registrado.|
 |revogado|3D|O dispositivo foi bloqueado, apagado ou desativado.|
 |keyconflict|4 |O dispositivo tem um conflito de teclas.|
 |approvalPending|5 |O dispositivo está aguardando aprovação.|
 |certificateReset|6 |O certificado de dispositivo foi redefinido.|
 |notRegisteredPendingEnrollment|7 |O dispositivo não está registrado e registro pendente.|
 |desconhecido|8 |O status do registro do dispositivo é desconhecido.|
-
 
 
 

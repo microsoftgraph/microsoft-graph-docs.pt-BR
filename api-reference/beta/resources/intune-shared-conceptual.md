@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 60588a0c9a2714da80c0d5e24b4300146e3b1556
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d5dd4150260ac61b9a49c231127107ea91fb758
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055425"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697193"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
@@ -73,7 +73,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Tipo de proprietário](intune-shared-ownertype.md)
 - [Tipo de plataforma da política](intune-shared-policyplatformtype.md)
 - [Domínio com proxy](intune-shared-proxieddomain.md)
-- [Relatório](intune-shared-report.md)
+- [Report](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)
 - [Estado do aplicativo resultante](intune-shared-resultantappstate.md)
 - [Cores RGB](intune-shared-rgbcolor.md)
@@ -83,7 +83,7 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Tipo de fonte de configuração](intune-shared-settingsourcetype.md)
 - [Configuração direcionada de aplicativo gerenciado](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [Usuário](intune-shared-user.md)
 - [Tipo de conta do token VPP](intune-shared-vpptokenaccounttype.md)
 - [Causa da falha da ação do token VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Configurações de atribuição do aplicativo LOB do Win32](intune-shared-win32lobappassignmentsettings.md)
@@ -95,5 +95,3 @@ Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho d
 - [Configuração de ingresso no domínio do Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Configurações de atribuição do aplicativo Windows universal AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Estado do Windows Update](intune-shared-windowsupdatestate.md)
-
-

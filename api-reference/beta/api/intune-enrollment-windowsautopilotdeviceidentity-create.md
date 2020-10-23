@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b10e378fa294d35d343487b96fa4627aba50ae8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b6a8fdb1032d838ac2f78083575b6427cc6145a5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062649"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696682"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 
@@ -54,27 +54,27 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
+|id|String|O GUID do objeto.|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status de atribuição de perfil do dispositivo do Windows AutoPilot. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Atribuição de perfil status detalhado do dispositivo do Windows AutoPilot. Os valores possíveis são: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo do Windows AutoPilot.|
 |orderIdentifier|Cadeia de caracteres|Identificador de pedidos do dispositivo do Windows AutoPilot-preterido|
-|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo do Windows AutoPilot.|
-|purchaseOrderIdentifier|Cadeia de caracteres|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
+|groupTag|String|Marca de grupo do dispositivo do Windows AutoPilot.|
+|purchaseOrderIdentifier|String|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante OEM do dispositivo do Windows AutoPilot.|
 |modelo|String|Nome do modelo do dispositivo do Windows AutoPilot.|
 |enrollmentid|[enrollmentid](../resources/intune-shared-enrollmentstate.md)|Estado de registro do Intune do dispositivo do Windows AutoPilot. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do Intune para o dispositivo do Windows AutoPilot.|
-|addressableUserName|Cadeia de caracteres|Nome de usuário endereçável.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
+|addressableUserName|String|Nome de usuário endereçável.|
+|userPrincipalName|String|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
-|skuNumber|Cadeia de caracteres|Número de SKU|
-|systemFamily|Cadeia de caracteres|Família de sistema|
-|azureActiveDirectoryDeviceId|Cadeia de caracteres|ID de dispositivo do AAD|
-|managedDeviceId|Cadeia de caracteres|ID do dispositivo gerenciado|
-|displayName|Cadeia de caracteres|Nome de exibição|
+|skuNumber|String|Número de SKU|
+|systemFamily|String|Família de sistema|
+|azureActiveDirectoryDeviceId|String|ID de dispositivo do AAD|
+|managedDeviceId|String|ID do dispositivo gerenciado|
+|displayName|String|Nome de exibição|
 
 
 
@@ -147,7 +147,6 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

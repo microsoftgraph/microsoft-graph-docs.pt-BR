@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de1bd720e244c1b63587a9d63b2dee66a67da0b8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d43030b4f6c32f79b57d1122f546b2f8180d7910
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081409"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697676"
 ---
 # <a name="deviceshellscript-resource-type"></a>tipo de recurso deviceShellScript
 
@@ -38,15 +38,15 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts do Shell nos 
 |executionFrequency|Duração|O intervalo de execução do script. Se não definido, o script será executado uma vez|
 |retryCount|Int32|Número de vezes que o script deve ser repetido se falhar|
 |blockExecutionNotifications|Boolean|Não notifica o usuário de que um script está sendo executado|
-|id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivo.|
-|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
-|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivo.|
+|id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
+|displayName|String|Nome do script de gerenciamento de dispositivo.|
+|description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -84,7 +84,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

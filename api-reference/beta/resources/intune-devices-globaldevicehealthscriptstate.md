@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c2e9ed441cbc28c0f3a7a3184bd584cbc34fb957
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a523ddddfe4c7ed265d6857ee1740c54abc48f5f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081395"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697662"
 ---
 # <a name="globaldevicehealthscriptstate-enum-type"></a>tipo de enumeração globalDeviceHealthScriptState
 
@@ -26,9 +26,8 @@ Indica se os scripts de integridade do dispositivo global estão habilitados e e
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Os scripts de integridade do dispositivo global não estão configurados|
-|função|1 |Os scripts de integridade do dispositivo global estão configurados, mas não estão totalmente habilitados|
-|habilitadas|2 |Os scripts de integridade do dispositivo global estão habilitados e prontos para uso|
-
+|função|1|Os scripts de integridade do dispositivo global estão configurados, mas não estão totalmente habilitados|
+|habilitadas|duas|Os scripts de integridade do dispositivo global estão habilitados e prontos para uso|
 
 
 
