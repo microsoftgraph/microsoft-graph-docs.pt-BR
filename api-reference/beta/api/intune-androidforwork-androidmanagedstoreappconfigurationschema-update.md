@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1407f56e5f95db41028645b01640c185cada7a7d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 21c4b5252ba2a5ef5e9f8780b1144d0b9f3a1718
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012485"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700861"
 ---
-# <a name="update-androidmanagedstoreappconfigurationschema"></a><span data-ttu-id="e90e2-103">Atualizar androidManagedStoreAppConfigurationSchema</span><span class="sxs-lookup"><span data-stu-id="e90e2-103">Update androidManagedStoreAppConfigurationSchema</span></span>
+# <a name="update-androidmanagedstoreappconfigurationschema"></a><span data-ttu-id="98250-103">Atualizar androidManagedStoreAppConfigurationSchema</span><span class="sxs-lookup"><span data-stu-id="98250-103">Update androidManagedStoreAppConfigurationSchema</span></span>
 
-<span data-ttu-id="e90e2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e90e2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="98250-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98250-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e90e2-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e90e2-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="98250-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="98250-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e90e2-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e90e2-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="98250-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="98250-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e90e2-107">Atualiza as propriedades de um objeto [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) .</span><span class="sxs-lookup"><span data-stu-id="e90e2-107">Update the properties of a [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
+<span data-ttu-id="98250-107">Atualiza as propriedades de um objeto [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) .</span><span class="sxs-lookup"><span data-stu-id="98250-107">Update the properties of a [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e90e2-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e90e2-108">Prerequisites</span></span>
-<span data-ttu-id="e90e2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e90e2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="98250-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="98250-108">Prerequisites</span></span>
+<span data-ttu-id="98250-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="98250-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e90e2-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e90e2-111">Permission type</span></span>|<span data-ttu-id="e90e2-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="e90e2-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="98250-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="98250-111">Permission type</span></span>|<span data-ttu-id="98250-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="98250-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e90e2-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e90e2-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e90e2-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e90e2-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="e90e2-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e90e2-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e90e2-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e90e2-116">Not supported.</span></span>|
-|<span data-ttu-id="e90e2-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e90e2-117">Application</span></span>|<span data-ttu-id="e90e2-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e90e2-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="98250-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="98250-113">Delegated (work or school account)</span></span>|<span data-ttu-id="98250-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98250-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="98250-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="98250-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="98250-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="98250-116">Not supported.</span></span>|
+|<span data-ttu-id="98250-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="98250-117">Application</span></span>|<span data-ttu-id="98250-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98250-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e90e2-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e90e2-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98250-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="98250-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,33 +40,33 @@ ms.locfileid: "48012485"
 PATCH /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManagedStoreAppConfigurationSchemaId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e90e2-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e90e2-120">Request headers</span></span>
-|<span data-ttu-id="e90e2-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e90e2-121">Header</span></span>|<span data-ttu-id="e90e2-122">Valor</span><span class="sxs-lookup"><span data-stu-id="e90e2-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="98250-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="98250-120">Request headers</span></span>
+|<span data-ttu-id="98250-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="98250-121">Header</span></span>|<span data-ttu-id="98250-122">Valor</span><span class="sxs-lookup"><span data-stu-id="98250-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e90e2-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="e90e2-123">Authorization</span></span>|<span data-ttu-id="e90e2-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e90e2-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e90e2-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="e90e2-125">Accept</span></span>|<span data-ttu-id="e90e2-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e90e2-126">application/json</span></span>|
+|<span data-ttu-id="98250-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="98250-123">Authorization</span></span>|<span data-ttu-id="98250-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="98250-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="98250-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="98250-125">Accept</span></span>|<span data-ttu-id="98250-126">application/json</span><span class="sxs-lookup"><span data-stu-id="98250-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e90e2-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e90e2-127">Request body</span></span>
-<span data-ttu-id="e90e2-128">No corpo da solicitação, forneça uma representação JSON do objeto [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) .</span><span class="sxs-lookup"><span data-stu-id="e90e2-128">In the request body, supply a JSON representation for the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="98250-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="98250-127">Request body</span></span>
+<span data-ttu-id="98250-128">No corpo da solicitação, forneça uma representação JSON do objeto [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) .</span><span class="sxs-lookup"><span data-stu-id="98250-128">In the request body, supply a JSON representation for the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
 
-<span data-ttu-id="e90e2-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).</span><span class="sxs-lookup"><span data-stu-id="e90e2-129">The following table shows the properties that are required when you create the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).</span></span>
+<span data-ttu-id="98250-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).</span><span class="sxs-lookup"><span data-stu-id="98250-129">The following table shows the properties that are required when you create the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).</span></span>
 
-|<span data-ttu-id="e90e2-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e90e2-130">Property</span></span>|<span data-ttu-id="e90e2-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="e90e2-131">Type</span></span>|<span data-ttu-id="e90e2-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="e90e2-132">Description</span></span>|
+|<span data-ttu-id="98250-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="98250-130">Property</span></span>|<span data-ttu-id="98250-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="98250-131">Type</span></span>|<span data-ttu-id="98250-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="98250-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e90e2-133">id</span><span class="sxs-lookup"><span data-stu-id="e90e2-133">id</span></span>|<span data-ttu-id="e90e2-134">String</span><span class="sxs-lookup"><span data-stu-id="e90e2-134">String</span></span>|<span data-ttu-id="e90e2-135">A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a</span><span class="sxs-lookup"><span data-stu-id="e90e2-135">Key of the entity the Android package name for the application the schema corresponds to</span></span>|
-|<span data-ttu-id="e90e2-136">exampleJson</span><span class="sxs-lookup"><span data-stu-id="e90e2-136">exampleJson</span></span>|<span data-ttu-id="e90e2-137">Binária</span><span class="sxs-lookup"><span data-stu-id="e90e2-137">Binary</span></span>|<span data-ttu-id="e90e2-138">A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo</span><span class="sxs-lookup"><span data-stu-id="e90e2-138">UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app</span></span>|
-|<span data-ttu-id="e90e2-139">schemaItems</span><span class="sxs-lookup"><span data-stu-id="e90e2-139">schemaItems</span></span>|<span data-ttu-id="e90e2-140">coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)</span><span class="sxs-lookup"><span data-stu-id="e90e2-140">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="e90e2-141">Coleção de itens que representa uma opção de configuração nomeada no esquema.</span><span class="sxs-lookup"><span data-stu-id="e90e2-141">Collection of items each representing a named configuration option in the schema.</span></span> <span data-ttu-id="e90e2-142">Ele contém apenas a configuração de nível de raiz.</span><span class="sxs-lookup"><span data-stu-id="e90e2-142">It only contains the root-level configuration.</span></span>|
-|<span data-ttu-id="e90e2-143">nestedSchemaItems</span><span class="sxs-lookup"><span data-stu-id="e90e2-143">nestedSchemaItems</span></span>|<span data-ttu-id="e90e2-144">coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)</span><span class="sxs-lookup"><span data-stu-id="e90e2-144">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="e90e2-145">Coleção de itens que representa uma opção de configuração nomeada no esquema.</span><span class="sxs-lookup"><span data-stu-id="e90e2-145">Collection of items each representing a named configuration option in the schema.</span></span> <span data-ttu-id="e90e2-146">Ele contém uma lista simples de todas as configurações.</span><span class="sxs-lookup"><span data-stu-id="e90e2-146">It contains a flat list of all configuration.</span></span>|
+|<span data-ttu-id="98250-133">id</span><span class="sxs-lookup"><span data-stu-id="98250-133">id</span></span>|<span data-ttu-id="98250-134">String</span><span class="sxs-lookup"><span data-stu-id="98250-134">String</span></span>|<span data-ttu-id="98250-135">A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a</span><span class="sxs-lookup"><span data-stu-id="98250-135">Key of the entity the Android package name for the application the schema corresponds to</span></span>|
+|<span data-ttu-id="98250-136">exampleJson</span><span class="sxs-lookup"><span data-stu-id="98250-136">exampleJson</span></span>|<span data-ttu-id="98250-137">Binária</span><span class="sxs-lookup"><span data-stu-id="98250-137">Binary</span></span>|<span data-ttu-id="98250-138">A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo</span><span class="sxs-lookup"><span data-stu-id="98250-138">UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app</span></span>|
+|<span data-ttu-id="98250-139">schemaItems</span><span class="sxs-lookup"><span data-stu-id="98250-139">schemaItems</span></span>|<span data-ttu-id="98250-140">coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)</span><span class="sxs-lookup"><span data-stu-id="98250-140">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="98250-141">Coleção de itens que representa uma opção de configuração nomeada no esquema.</span><span class="sxs-lookup"><span data-stu-id="98250-141">Collection of items each representing a named configuration option in the schema.</span></span> <span data-ttu-id="98250-142">Ele contém apenas a configuração de nível de raiz.</span><span class="sxs-lookup"><span data-stu-id="98250-142">It only contains the root-level configuration.</span></span>|
+|<span data-ttu-id="98250-143">nestedSchemaItems</span><span class="sxs-lookup"><span data-stu-id="98250-143">nestedSchemaItems</span></span>|<span data-ttu-id="98250-144">coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)</span><span class="sxs-lookup"><span data-stu-id="98250-144">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="98250-145">Coleção de itens que representa uma opção de configuração nomeada no esquema.</span><span class="sxs-lookup"><span data-stu-id="98250-145">Collection of items each representing a named configuration option in the schema.</span></span> <span data-ttu-id="98250-146">Ele contém uma lista simples de todas as configurações.</span><span class="sxs-lookup"><span data-stu-id="98250-146">It contains a flat list of all configuration.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e90e2-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="e90e2-147">Response</span></span>
-<span data-ttu-id="e90e2-148">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e90e2-148">If successful, this method returns a `200 OK` response code and an updated [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="98250-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="98250-147">Response</span></span>
+<span data-ttu-id="98250-148">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="98250-148">If successful, this method returns a `200 OK` response code and an updated [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e90e2-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e90e2-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="98250-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="98250-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e90e2-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e90e2-150">Request</span></span>
-<span data-ttu-id="e90e2-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e90e2-151">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="98250-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="98250-150">Request</span></span>
+<span data-ttu-id="98250-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="98250-151">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManagedStoreAppConfigurationSchemaId}
 Content-type: application/json
@@ -126,8 +126,8 @@ Content-length: 1585
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e90e2-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="e90e2-152">Response</span></span>
-<span data-ttu-id="e90e2-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e90e2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="98250-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="98250-152">Response</span></span>
+<span data-ttu-id="98250-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="98250-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -187,7 +187,6 @@ Content-Length: 1634
   ]
 }
 ```
-
 
 
 
