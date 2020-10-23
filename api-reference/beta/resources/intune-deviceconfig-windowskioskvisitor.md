@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6eeaa3ff053e5f0e5eb2b3f0a816897a6a0b292a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b848a4ef4908767964f3a672bca8c1033e5c27e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061851"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729401"
 ---
 # <a name="windowskioskvisitor-resource-type"></a>tipo de recurso windowsKioskVisitor
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.windowsKioskVisitor"
 }
 ```
-
 
 
 

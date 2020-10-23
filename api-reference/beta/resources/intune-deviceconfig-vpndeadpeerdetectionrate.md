@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a5665bbbe8b55905beda7af8921e02bea72c5a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d932e9c3639073c95348afb3dd3f5c4a2a323d4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049118"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728381"
 ---
 # <a name="vpndeadpeerdetectionrate-enum-type"></a>tipo de enumeração vpnDeadPeerDetectionRate
 
@@ -26,10 +26,9 @@ Determina com que frequência verificar se uma conexão de mesmo nível ainda es
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |medium|,0|Médio|
-|Nenhuma|1 |Nenhum|
-|low|2 |Baixo|
-|high|3 |Alto|
-
+|none|1|Nenhum|
+|low|duas|Baixo|
+|high|3D|Alto|
 
 
 

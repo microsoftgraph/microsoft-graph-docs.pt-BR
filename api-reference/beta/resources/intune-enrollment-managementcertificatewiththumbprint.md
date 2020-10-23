@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa78c594179edcd5a1cf4bc1b6e331d95155fc4e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5fee7a35e20461cec2fba40b34273d0d947416e1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079918"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728953"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>tipo de recurso managementCertificateWithThumbprint
 
@@ -25,7 +25,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|identificação|Cadeia de caracteres|A impressão digital do certificado de gerenciamento|
+|identificação|String|A impressão digital do certificado de gerenciamento|
 |certificado|Cadeia de caracteres|O certificado de gerenciamento codificado base 64|
 
 ## <a name="relationships"></a>Relações
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificate": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ce8fe0a165d46e9dd59ac88759093e12b60d2028
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93a956fa874fb50257da62fc9dbea59768e7a3cb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031575"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728904"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>tipo de enumeração windowsAutopilotProfileAssignmentStatus
 
@@ -26,13 +26,12 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Status de atribuição desconhecido|
-|assignedInSync|1 |Atribuído com êxito no Intune e em sincronia com o programa piloto automático do Windows|
-|assignedOutOfSync|2 |Atribuído com êxito no Intune e não em sincronia com o programa piloto automático do Windows|
-|assignedUnkownSyncState|3 |Atribuído com êxito no Intune e em sincronia ou fora de sincronização com o programa piloto automático do Windows|
+|assignedInSync|1|Atribuído com êxito no Intune e em sincronia com o programa piloto automático do Windows|
+|assignedOutOfSync|duas|Atribuído com êxito no Intune e não em sincronia com o programa piloto automático do Windows|
+|assignedUnkownSyncState|3D|Atribuído com êxito no Intune e em sincronia ou fora de sincronização com o programa piloto automático do Windows|
 |Não atribuído|4 |Não atribuído|
 |função|5 |Atribuição pendente|
 |falhou|6 | Falha de atribuição|
-
 
 
 

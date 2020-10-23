@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc53498bf14dff5c62a4646f504ae1a31c84ed1b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf47ef4b035091c2cb8b497d8ee61783d483457f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039773"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729529"
 ---
 # <a name="windowskioskforceupdateschedule-resource-type"></a>tipo de recurso windowsKioskForceUpdateSchedule
 
@@ -26,7 +26,7 @@ Agendamento de atualização forçada do Windows 10 para dispositivos quiosque.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|A hora de início da reinicialização forçada.|
-|recorrência|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Agenda de recorrência. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
+|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Agenda de recorrência. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
 |dayofWeek|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Dia da semana. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |dayofMonth|Int32|Dia do mês. Valores válidos de 1 a 31|
 |runImmediatelyIfAfterStartDateTime|Booliano|Se true, executará a tarefa imediatamente se StartDatetime estiver no passado, senão, será executado na próxima recorrência.|
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
 
 
 
