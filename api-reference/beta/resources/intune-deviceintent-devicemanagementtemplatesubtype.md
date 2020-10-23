@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: da499394790c0b7985b960a81447cdd8fedf3e89
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4ed25a4700e28c3b1824b4b76d760343ced48774
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061025"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734200"
 ---
 # <a name="devicemanagementtemplatesubtype-enum-type"></a>tipo de enumeração deviceManagementTemplateSubtype
 
@@ -25,14 +25,13 @@ Subtipo de modelo
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|O modelo não tem subtipo|
-|Firewall|1 |Subtipo de firewall de segurança do Endpoint|
-|diskEncryption|2 |Subtipo de criptografia de disco do Endpoint Security|
-|attackSurfaceReduction|3 |Subtipo de redução da superfície de ataque de segurança de pontos de extremidade|
+|none|,0|O modelo não tem subtipo|
+|Firewall|1|Subtipo de firewall de segurança do Endpoint|
+|diskEncryption|duas|Subtipo de criptografia de disco do Endpoint Security|
+|attackSurfaceReduction|3D|Subtipo de redução da superfície de ataque de segurança de pontos de extremidade|
 |endpointDetectionReponse|4 |Detecção de ponto de extremidade de segurança e subtipo de resposta do Endpoint Security|
 |accountProtection|5 |Subtipo de proteção da conta do Endpoint Security|
 |vírus|6 |Subtipo Anitivirus de segurança de ponto de extremidade|
-
 
 
 

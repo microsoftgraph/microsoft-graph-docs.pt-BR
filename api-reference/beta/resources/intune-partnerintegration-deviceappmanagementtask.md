@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 073c0e23f2823809d53637bf17c452e6001d8815
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6a482e97fb5fecd373ef70305ec15c2e39524275
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993711"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735194"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>tipo de recurso deviceAppManagementTask
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 Uma tarefa de gerenciamento de aplicativo de dispositivo.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceAppManagementTasks](../api/intune-partnerintegration-deviceappmanagementtask-list.md)|coleção [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|Listar Propriedades e relações dos objetos [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md) .|
@@ -42,7 +42,7 @@ Uma tarefa de gerenciamento de aplicativo de dispositivo.
 |dueDateTime|DateTimeOffset|A data de conclusão.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|A categoria. Os valores possíveis são: `unknown` e `advancedThreatProtection`.|
 |prioridade|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|A prioridade. Os valores possíveis são: `none`, `high`, `low`.|
-|Criador|String|O endereço de email do criador.|
+|criador|String|O endereço de email do criador.|
 |creatorNotes|String|Observações do criador.|
 |assignedTo|String|O nome ou email do administrador ao qual esta tarefa é atribuída.|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|O status. Os valores possíveis são: `unknown`, `pending`, `active`, `completed`, `rejected`.|
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "status": "String"
 }
 ```
-
 
 
 

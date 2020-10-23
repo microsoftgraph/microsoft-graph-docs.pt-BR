@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35b28b5e105e9e61166df36db5ab841fcd063ff6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8e08079a2980483c0bdc99f81bb4254aabc1eb5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039430"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735152"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>tipo de recurso deviceManagementExportJob
 
@@ -37,7 +37,7 @@ Entidade que representa um trabalho para exportar um relatório
 |id|String|Identificador exclusivo para esta entidade|
 |reportName|String|Nome do relatório|
 |filter|String|Filtros aplicados no relatório|
-|select|Coleção String|Colunas selecionadas do relatório|
+|select|Coleção de cadeias de caracteres|Colunas selecionadas do relatório|
 |formato|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório exportado. Os valores possíveis são: `csv` e `pdf`.|
 |instantâneoid|String|Um instantâneo é um subconjunto identificável do DataSet representado pelo ReportName. Uma ID de Identificação_da_sessão ou CachedReportConfiguration pode ser usada aqui. Se uma Identificação_da_sessão for especificada, Filter, Select e OrderBy serão aplicadas aos dados representados pela Identificação_da_sessão. Filter, Select e OrderBy não podem ser especificados junto com uma ID CachedReportConfiguration.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do trabalho de exportação. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso windows81WifiImportConfiguration
-description: Configuração de importação do Windows 8.1 + Wi-Fi. Ao configurar esse perfil, você pode instruir dispositivos Windows 8,1 (e posteriores) para se conectar ao ponto de extremidade Wi-Fi desejado. Conecte um dispositivo Windows 8,1 para a rede Wi-Fi desejada e extraia o XML desse dispositivo para incorporá-lo posteriormente a este perfil Wi-Fi.
+description: Windows 8.1 + Wi-Fi importar configuração. Ao configurar esse perfil, você pode instruir os dispositivos Windows 8,1 (e posteriores) a se conectarem ao ponto de extremidade Wi-Fi desejado. Conecte um dispositivo Windows 8,1 à rede Wi-Fi desejada e extraia o XML desse dispositivo para incorporá-lo posteriormente a esse perfil de Wi-Fi.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35a2f471f145677788d51bac2ca58fb594d13983
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93b80b44c0684e301137576ed94e619acf30178a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084566"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734249"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>tipo de recurso windows81WifiImportConfiguration
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configuração de importação do Windows 8.1 + Wi-Fi. Ao configurar esse perfil, você pode instruir dispositivos Windows 8,1 (e posteriores) para se conectar ao ponto de extremidade Wi-Fi desejado. Conecte um dispositivo Windows 8,1 para a rede Wi-Fi desejada e extraia o XML desse dispositivo para incorporá-lo posteriormente a este perfil Wi-Fi.
+Windows 8.1 + Wi-Fi importar configuração. Ao configurar esse perfil, você pode instruir os dispositivos Windows 8,1 (e posteriores) a se conectarem ao ponto de extremidade Wi-Fi desejado. Conecte um dispositivo Windows 8,1 à rede Wi-Fi desejada e extraia o XML desse dispositivo para incorporá-lo posteriormente a esse perfil de Wi-Fi.
 
 
 Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
@@ -37,20 +37,20 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*. xml).|
-|ProfileName|Cadeia de caracteres|Nome do perfil exibido na interface do usuário.|
-|payload|Binária|Carga. (Matriz de bytes codificados por UTF8). Este é o arquivo XML salvo no dispositivo que você usou para se conectar ao ponto de extremidade Wi-Fi.|
+|ProfileName|String|Nome do perfil exibido na interface do usuário.|
+|payload|Binária|Carga. (Matriz de bytes codificados por UTF8). Este é o arquivo XML salvo no dispositivo que você usou para se conectar ao ponto de extremidade do Wi-Fi.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -110,7 +110,6 @@ Veja a seguir uma representação JSON do recurso.
   "payload": "binary"
 }
 ```
-
 
 
 
