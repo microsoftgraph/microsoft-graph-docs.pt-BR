@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4c365a5713d8a2b9da24e1a8eee89121395ec6e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b63e8e9cc94558f7e34af6b69b71b36efc05d7d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073954"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731950"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -56,6 +56,8 @@ Namespace: microsoft.graph
 - [Script de conformidade do dispositivo](intune-devices-devicecompliancescript.md)
 - [Estado do dispositivo de script de conformidade do dispositivo](intune-devices-devicecompliancescriptdevicestate.md)
 - [Resumo de execução de script de conformidade do dispositivo](intune-devices-devicecompliancescriptrunsummary.md)
+- [Script de Shell de atributo personalizado de dispositivo](intune-devices-devicecustomattributeshellscript.md)
+- [Tipo de valor de atributo personalizado de dispositivo](intune-devices-devicecustomattributevaluetype.md)
 - [Motivo da falha de registro do dispositivo](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Resumo do Estado de Acesso ao Exchange do dispositivo](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Geolocalização do dispositivo](intune-devices-devicegeolocation.md)
@@ -210,7 +212,9 @@ Namespace: microsoft.graph
 - [Resultado da ação de rotação de chaves do BitLocker](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [Resumo do estado de categoria da linha de base de segurança](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Estado de conformidade da linha de base de segurança](intune-deviceintent-securitybaselinecompliancestate.md)
+- [Política de contribuição da linha de base de segurança](intune-deviceintent-securitybaselinecontributingpolicy.md)
 - [Estado do dispositivo de linha de base de segurança](intune-deviceintent-securitybaselinedevicestate.md)
+- [Tipo de origem de política de linha de base de segurança](intune-deviceintent-securitybaselinepolicysourcetype.md)
 - [Resumo do estado da linha de base de segurança](intune-deviceintent-securitybaselinestatesummary.md)
 - [Modelo de linha da base de segurança](intune-deviceintent-securitybaselinetemplate.md)
 - [Usuário de dispositivo Apple compartilhado](intune-devices-sharedappledeviceuser.md)
@@ -268,5 +272,3 @@ Namespace: microsoft.graph
 - [Aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapp.md)
 - [Estado de integridade do aplicativo de gerenciamento do Windows](intune-devices-windowsmanagementapphealthstate.md)
 - [Estado de proteção do Windows](intune-devices-windowsprotectionstate.md)
-
-

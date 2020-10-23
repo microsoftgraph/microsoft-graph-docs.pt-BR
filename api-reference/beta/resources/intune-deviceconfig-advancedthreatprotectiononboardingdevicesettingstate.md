@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8db9ea0fa849a789a678caec10372a0cfbb3265
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2246601b160938507bdb62f28fec0b0afe95fbf1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076215"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731943"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>tipo de recurso advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -34,7 +34,7 @@ Estado de integração ATP para um determinado dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade|
+|id|String|Chave da entidade|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são:,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` , `macMDM` , `holoLens` , `surfaceHub` , `androidForWork` , `androidEnterprise` , `windows10x` `androidnGMS` `blackberry` `palm` `unknown` ,,,,,,,,,,,,,.|
 |configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|O nome da configuração sendo relatada|
@@ -43,7 +43,7 @@ Estado de integração ATP para um determinado dispositivo.
 |userId|Cadeia de caracteres|A ID do usuário sendo relatada|
 |userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
-|userPrincipalName|Cadeia de caracteres|O PrincipalName do usuário que está sendo relatado|
+|userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
@@ -77,7 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

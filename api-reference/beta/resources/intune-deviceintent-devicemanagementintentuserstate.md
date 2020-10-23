@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88b27f3f5d651f46d4560059e57ed5322c5154be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4d3a620042836505f3f5cdd301afe88e08a5e02a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061326"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732485"
 ---
 # <a name="devicemanagementintentuserstate-resource-type"></a>tipo de recurso deviceManagementIntentUserState
 
@@ -34,8 +34,8 @@ Entidade que representa o estado do usuário para uma intenção
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID|
-|userPrincipalName|Cadeia de caracteres|O nome principal do usuário que está sendo relatado em um dispositivo|
+|id|String|A ID|
+|userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceCount|Int32|Contagem de dispositivos que pertencem a um usuário para uma intenção|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação de um relatório de intenção|
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "state": "String"
 }
 ```
-
 
 
 

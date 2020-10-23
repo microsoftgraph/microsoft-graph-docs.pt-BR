@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b47e1ba1fffaf7e194c5ac287903f28d13bfdb57
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7081a741aac0a4175167a8fe940732fea6e396d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990043"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732301"
 ---
 # <a name="create-windowswifienterpriseeapconfiguration"></a>Criar windowsWifiEnterpriseEAPConfiguration
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsW
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -65,35 +65,35 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsW
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|preSharedKey|String|Esta é a chave pré-compartilhada para a rede Wi-Fi pessoal WPA. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|preSharedKey|String|Esta é a chave pré-compartilhada para a rede WPA de Wi-Fi pessoal. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |à|[à](../resources/intune-deviceconfig-wifisecuritytype.md)|Especifique o tipo de segurança wifi. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Os possíveis valores são: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Especifique o tipo de limite de conexão limitada para a conexão WiFi. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Os valores possíveis são: `unrestricted`, `fixed`, `variable`.|
 |SSID|String|Especifique o SSID da conexão WiFi. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |NetworkName|String|Especifique o nome da configuração de rede. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectAutomatically|Boolean|Especifique se a conexão WiFi deve se conectar automaticamente quando estiver no intervalo. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectToPreferredNetwork|Boolean|Especifique se a conexão WiFi deve se conectar a redes mais preferenciais quando já estiver conectado a ela.  Requer que ConnectAutomatically seja true. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Boolean|Especifique se a conexão WiFi deve se conectar automaticamente, mesmo quando o SSID não estiver transmitindo. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectAutomatically|Booliano|Especifique se a conexão WiFi deve se conectar automaticamente quando estiver no intervalo. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectToPreferredNetwork|Booliano|Especifique se a conexão WiFi deve se conectar a redes mais preferenciais quando já estiver conectado a ela.  Requer que ConnectAutomatically seja true. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectWhenNetworkNameIsHidden|Booliano|Especifique se a conexão WiFi deve se conectar automaticamente, mesmo quando o SSID não estiver transmitindo. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Especifique a configuração de proxy para a configuração de Wi-Fi herdada de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Os valores possíveis são: `none`, `manual`, `automatic`.|
 |proxyManualAddress|String|Especifique o endereço IP do servidor proxy. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxyManualPort|Int32|Especifique a porta do servidor proxy. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxyAutomaticConfigurationUrl|String|Especifique a URL do script de configuração do servidor proxy. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|forceFIPSCompliance|Boolean|Especifique se a conformidade com FIPS deve ser forçada. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|forceFIPSCompliance|Booliano|Especifique se a conformidade com FIPS deve ser forçada. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|Especifique o tipo de logon único na rede. Os valores possíveis são: `disabled`, `prelogon`, `postlogon`.|
 |maximumAuthenticationTimeoutInSeconds|Int32|Especifique o tempo limite máximo de autenticação (em segundos).  Intervalo válido: 1-120|
-|promptForAdditionalAuthenticationCredentials|Boolean|Especifique se a conexão WiFi deve solicitar credenciais de autenticação adicionais.|
-|enablePairwiseMasterKeyCaching|Boolean|Especifique se a conexão WiFi deve habilitar o cache da chave mestra de par.|
+|promptForAdditionalAuthenticationCredentials|Booliano|Especifique se a conexão WiFi deve solicitar credenciais de autenticação adicionais.|
+|enablePairwiseMasterKeyCaching|Booliano|Especifique se a conexão WiFi deve habilitar o cache da chave mestra de par.|
 |maximumPairwiseMasterKeyCacheTimeInMinutes|Int32|Especifique o tempo máximo de cache da chave mestra de paridade (em minutos).  Intervalo válido: 5-1440|
 |maximumNumberOfPairwiseMasterKeysInCache|Int32|Especifique o número máximo de chaves de mestre emparelhadas no cache.  Intervalo válido: 1-255|
-|enablePreAuthentication|Boolean|Especifique se a pré-autenticação deve ser habilitada.|
+|enablePreAuthentication|Booliano|Especifique se a pré-autenticação deve ser habilitada.|
 |maximumPreAuthenticationAttempts|Int32|Especifique as tentativas máximas de pré-autenticação.  Intervalo válido: 1-16|
-|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|EAP (protocolo de autenticação extensível). Indica o tipo de protocolo EAP definido no ponto de extremidade Wi-Fi (roteador). Os possíveis valores são: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
+|eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|EAP (protocolo de autenticação extensível). Indica o tipo de protocolo EAP definido no ponto de extremidade de Wi-Fi (roteador). Os possíveis valores são: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
 |trustedServerCertificateNames|Coleção de cadeias de caracteres|Especificar nomes de certificado de servidor confiável.|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Especifique o método de autenticação. Os valores possíveis são: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Especificar o protocolo de autenticação interna para EAP TTLS. Os valores possíveis são: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Especifique a cadeia de caracteres para substituir os nomes de texto para privacidade ao usar EAP TTLS ou PEAP.|
-|requireCryptographicBinding|Boolean|Especifique se deseja habilitar a associação criptográfica quando o tipo EAP for selecionado como PEAP.|
-|performServerValidation|Boolean|Especifique se deseja habilitar a verificação da identidade do servidor, validando o certificado quando o tipo EAP estiver selecionado como PEAP.|
-|disableUserPromptForServerValidation|Boolean|Especifique se deseja impedir que o usuário seja solicitado a autorizar novos servidores para autoridades de certificação confiáveis quando o tipo EAP for selecionado como PEAP.|
+|requireCryptographicBinding|Booliano|Especifique se deseja habilitar a associação criptográfica quando o tipo EAP for selecionado como PEAP.|
+|performServerValidation|Booliano|Especifique se deseja habilitar a verificação da identidade do servidor, validando o certificado quando o tipo EAP estiver selecionado como PEAP.|
+|disableUserPromptForServerValidation|Booliano|Especifique se deseja impedir que o usuário seja solicitado a autorizar novos servidores para autoridades de certificação confiáveis quando o tipo EAP for selecionado como PEAP.|
 
 
 
@@ -246,7 +246,6 @@ Content-Length: 2574
   "disableUserPromptForServerValidation": true
 }
 ```
-
 
 
 

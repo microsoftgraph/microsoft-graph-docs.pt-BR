@@ -1,18 +1,18 @@
 ---
-title: Get roleAssignment
-description: Ler propriedades e relações do objeto roleAssignment.
+title: Listar macOSSoftwareUpdateAccountSummaries
+description: Listar Propriedades e relações dos objetos macOSSoftwareUpdateAccountSummary.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c4bb1480c4db3a8cb5a56efb374519779ff5799
+ms.openlocfilehash: 3112bad12e2d72a81ebde465eaa8cbe97b6c4b6a
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732118"
+ms.locfileid: "48731838"
 ---
-# <a name="get-roleassignment"></a>Get roleAssignment
+# <a name="list-macossoftwareupdateaccountsummaries"></a>Listar macOSSoftwareUpdateAccountSummaries
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ler propriedades e relações do objeto [roleAssignment](../resources/intune-rbac-roleassignment.md).
+Listar Propriedades e relações dos objetos [macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,11 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
+GET /deviceManagement/macOSSoftwareUpdateAccountSummaries
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -53,14 +50,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [roleAssignment](../resources/intune-rbac-roleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/macOSSoftwareUpdateAccountSummaries
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,22 +65,25 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 367
+Content-Length: 583
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.roleAssignment",
-    "id": "b3234d24-4d24-b323-244d-23b3244d23b3",
-    "displayName": "Display Name value",
-    "description": "Description value",
-    "scopeMembers": [
-      "Scope Members value"
-    ],
-    "scopeType": "allDevices",
-    "resourceScopes": [
-      "Resource Scopes value"
-    ]
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.macOSSoftwareUpdateAccountSummary",
+      "id": "64687d05-7d05-6468-057d-6864057d6864",
+      "displayName": "Display Name value",
+      "deviceId": "Device Id value",
+      "userId": "User Id value",
+      "deviceName": "Device Name value",
+      "userPrincipalName": "User Principal Name value",
+      "osVersion": "Os Version value",
+      "successfulUpdateCount": 5,
+      "failedUpdateCount": 1,
+      "totalUpdateCount": 0,
+      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
+    }
+  ]
 }
 ```
 

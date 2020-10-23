@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: de815ba89a0e72c2c942f4ba5b0f41d3769965e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 711fc5d9a0d4adca172e5e2e05a50a664efb4b75
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076075"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731915"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>tipo de enumeração androidDeviceOwnerDefaultAppPermissionPolicyType
 
@@ -26,10 +26,9 @@ Tipo de política de permissão de aplicativo padrão do proprietário do dispos
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|prompt|1 |Notifica.|
-|Concessão autogrant|2 |Concessão automática.|
-|Negação de permissão|3 |Negação automática.|
-
+|prompt|1|Notifica.|
+|Concessão autogrant|duas|Concessão automática.|
+|Negação de permissão|3D|Negação automática.|
 
 
 
