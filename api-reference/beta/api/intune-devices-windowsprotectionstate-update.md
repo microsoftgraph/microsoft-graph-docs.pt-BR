@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 655a26c781dfa5badbd4c672579326e2a77079d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42e44f3d5fc96dd382435502c82b187f58207709
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056083"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724238"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar Windowsprotectionstate foi
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de status de proteção de dispositivo. Esta é a ID do dispositivo|
+|id|String|O identificador exclusivo do objeto de status de proteção de dispositivo. Esta é a ID do dispositivo|
 |malwareProtectionEnabled|Booliano|O anti-malware está habilitado ou não|
 |DeviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente, etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Booliano|A proteção em tempo real está habilitada ou não?|
@@ -63,13 +63,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |signatureUpdateOverdue|Booliano|Assinatura desatualizada ou não?|
 |rebootRequired|Booliano|Reinicialização necessária ou não?|
 |fullScanRequired|Booliano|Verificação completa necessária ou não?|
-|engineVersion|Cadeia de caracteres|Versão atual do mecanismo do Endpoint Protection|
-|signatureVersion|Cadeia de caracteres|Versão atual de definições de malware|
-|antiMalwareVersion|Cadeia de caracteres|Versão Antimalware atual|
+|engineVersion|String|Versão atual do mecanismo do Endpoint Protection|
+|signatureVersion|String|Versão atual de definições de malware|
+|antiMalwareVersion|String|Versão Antimalware atual|
 |lastQuickScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
-|lastQuickScanSignatureVersion|Cadeia de caracteres|Versão da última assinatura de verificação rápida|
-|lastFullScanSignatureVersion|Cadeia de caracteres|Versão da última assinatura de verificação completa|
+|lastQuickScanSignatureVersion|String|Versão da última assinatura de verificação rápida|
+|lastFullScanSignatureVersion|String|Versão da última assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Hora do último status de integridade do dispositivo relatado|
 
 
@@ -137,7 +137,6 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

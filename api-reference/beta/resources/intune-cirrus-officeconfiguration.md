@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 927a3821ee414b1df7f5135c0be149bdd72fcfef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 276a9bd60e988d0bb961ef849c8ce57d8eb9bb47
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076228"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723950"
 ---
 # <a name="officeconfiguration-resource-type"></a>tipo de recurso officeConfiguration
 
@@ -31,11 +31,11 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID da configuração do Office.|
+|id|String|ID da configuração do Office.|
 |tenantCheckinStatuses|coleção [officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)|Lista de status de check-in do cliente do Office.|
 |tenantUserCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Entidade que descreve o check-in do locatário Statues|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |clientConfigurations|coleção [conjuntoofficeclientconfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|Lista de configurações do cliente do Office.|
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d5d57998519e59cc2e73b7bbd7783610063db24
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbaed2e58f0dfbd6d1fbf72d7bc89ec42f6c7221
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082746"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723641"
 ---
 # <a name="create-ioscompliancepolicy"></a>Criar iosCompliancePolicy
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosCompliancePol
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passcodeBlockSimple|Boolean|Indica se códigos de acesso simples devem ou não ser bloqueados.|
 |passcodeExpirationDays|Int32|Número de dias antes da expiração do código de acesso. Valores válidos de 1 a 65535|
@@ -71,11 +71,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosCompliancePol
 |passcodeRequired|Boolean|Indica se um código de acesso deve ou não ser exigido.|
 |osMinimumVersion|String|Versão mínima do IOS.|
 |osMaximumVersion|String|Versão máxima do iOS.|
-|osMinimumBuildVersion|Cadeia de caracteres|Versão mínima do IOS Build.|
-|osMaximumBuildVersion|Cadeia de caracteres|Versão máxima do IOS Build.|
+|osMinimumBuildVersion|String|Versão mínima do IOS Build.|
+|osMaximumBuildVersion|String|Versão máxima do IOS Build.|
 |securityBlockJailbrokenDevices|Boolean|Os dispositivos não devem ser violados ou com modificações root.|
 |deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP requer nível mínimo de risco de proteção contra ameaças móveis para relatar não conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Indica se um perfil de email gerenciado deve ou não ser exigido.|
 |restrictedApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Exigir que o dispositivo não tenha os aplicativos especificados instalados. Essa coleção pode conter um máximo de 100 elementos.|
 
@@ -91,7 +92,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1241
+Content-length: 1304
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -117,6 +118,7 @@ Content-length: 1241
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "managedEmailProfileRequired": true,
   "restrictedApps": [
     {
@@ -135,7 +137,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1413
+Content-Length: 1476
 
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -164,6 +166,7 @@ Content-Length: 1413
   "securityBlockJailbrokenDevices": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "advancedThreatProtectionRequiredSecurityLevel": "secured",
   "managedEmailProfileRequired": true,
   "restrictedApps": [
     {
@@ -176,7 +179,6 @@ Content-Length: 1413
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72e56572eff29477d9a2d0bf878207eb71ea005a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0931fe68689fdcb0c57531a74124dda46f84133c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48054361"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724280"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>Atualizar deviceManagementSettingDefinition
 
@@ -56,13 +56,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da definição de configuração|
+|id|String|A ID da definição de configuração|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os possíveis valores são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Cadeia de caracteres|O nome de exibição da configuração|
+|displayName|String|O nome de exibição da configuração|
 |isTopLevel|Booliano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
 |description|String|A descrição da configuração|
-|placeholderText|Cadeia de caracteres|Texto do espaço reservado como um exemplo de entrada válida|
-|documentationUrl|Cadeia de caracteres|URL para configurar a documentação|
+|placeholderText|String|Texto do espaço reservado como um exemplo de entrada válida|
+|documentationUrl|String|URL para configurar a documentação|
+|headerTitle|String|título do cabeçalho da configuração representa uma categoria/seção de uma configuração/configurações|
+|headerSubtitle|String|subtítulo do cabeçalho da configuração para obter mais detalhes sobre a categoria/seção|
 |palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
@@ -79,7 +81,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{deviceManagementSettingDefinitionId}
 Content-type: application/json
-Content-length: 928
+Content-length: 1014
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingDefinition",
@@ -89,6 +91,8 @@ Content-length: 928
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -122,7 +126,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 977
+Content-Length: 1063
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingDefinition",
@@ -133,6 +137,8 @@ Content-Length: 977
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -160,7 +166,6 @@ Content-Length: 977
   ]
 }
 ```
-
 
 
 

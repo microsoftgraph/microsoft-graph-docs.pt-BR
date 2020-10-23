@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f8d32f17936bc570621dfc0535d41b026f824ea5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ab101c840886a2097cf6d09c28b12c118311065
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031288"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722827"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv6ConfigurationManagementCondition
 
@@ -48,8 +48,8 @@ Herda de [networkManagementCondition](../resources/intune-fencing-networkmanagem
 |applicablePlatforms|coleção [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |ipV6Prefix|String|A sub-rede IPv6 a ser conectada. por exemplo, 2001: DB8::/32|
 |ipV6Gateway|String|O endereço do gateway IPv6 para. por exemplo, 2001: DB8:: 1|
-|ipV6DNSServerList|Coleção String|Servidores DNS IPv6 configurados para o adaptador.|
-|dnsSuffixList|Coleção String|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
+|ipV6DNSServerList|Coleção de cadeias de caracteres|Servidores DNS IPv6 configurados para o adaptador.|
+|dnsSuffixList|Coleção de cadeias de caracteres|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -87,7 +87,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

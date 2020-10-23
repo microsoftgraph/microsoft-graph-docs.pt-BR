@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa1c4552a9af21fb494e62ca687408c842272414
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b81a3997902d2fae346d4ede7bfd701e8eae2ef3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047599"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723242"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Atualizar applePushNotificationCertificate
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [applePu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do certificado.|
+|id|String|O identificador exclusivo do certificado.|
 |appleIdentifier|Cadeia de caracteres|Id da Apple da conta usada para criar o certificado de push do MDM.|
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
-|certificateUploadStatus|Cadeia de caracteres|O status do carregamento do certificado.|
-|certificateUploadFailureReason|Cadeia de caracteres|O motivo da falha no carregamento do certificado.|
-|certificateSerialNumber|Cadeia de caracteres|Número de série do certificado. Essa propriedade é somente leitura.|
+|certificateUploadStatus|String|O status do carregamento do certificado.|
+|certificateUploadFailureReason|String|O motivo da falha no carregamento do certificado.|
+|certificateSerialNumber|String|Número de série do certificado. Essa propriedade é somente leitura.|
 |certificado|Cadeia de caracteres|Ainda não documentado|
 
 
@@ -109,7 +109,6 @@ Content-Length: 594
   "certificate": "Certificate value"
 }
 ```
-
 
 
 

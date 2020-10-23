@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e95abfe93be6d4899b7c56aff4d0daf45e80803
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b3bc90aa283f6a352e6f796c3f275487f4ae751
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47995615"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724294"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>Atualizar iosEasEmailProfileConfiguration
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosEasE
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -72,27 +72,27 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosEasE
 |customDomainName|String|Valor de nome de domínio personalizado usado durante a geração de um perfil de email antes da instalação no dispositivo. Herdado de [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|String|Nome da conta.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Método de autenticação para este perfil de email. Os valores possíveis são: `usernameAndPassword`, `certificate`, `derivedCredential`.|
-|blockMovingMessagesToOtherEmailAccounts|Boolean|Indica se as mensagens de movimentação devem ou não ser bloqueadas para outras contas de email.|
-|blockSendingEmailFromThirdPartyApps|Boolean|Indica se o envio de emails de aplicativos de terceiros deve ou não ser bloqueado.|
-|blockSyncingRecentlyUsedEmailAddresses|Boolean|Indica se a sincronização de endereços de email usados recentemente deve ou não ser bloqueada, por exemplo, ao compor novos emails.|
+|blockMovingMessagesToOtherEmailAccounts|Booliano|Indica se as mensagens de movimentação devem ou não ser bloqueadas para outras contas de email.|
+|blockSendingEmailFromThirdPartyApps|Booliano|Indica se o envio de emails de aplicativos de terceiros deve ou não ser bloqueado.|
+|blockSyncingRecentlyUsedEmailAddresses|Booliano|Indica se a sincronização de endereços de email usados recentemente deve ou não ser bloqueada, por exemplo, ao compor novos emails.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Duração de tempo que o email deve ser sincronizado de volta para o. . Os valores possíveis são: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |emailAddresse|[UserEmail](../resources/intune-deviceconfig-useremailsource.md)|Atributo de email separado do AAD e injetado nesse perfil antes da instalação no dispositivo. Os valores possíveis são: `userPrincipalName` e `primarySmtpAddress`.|
 |easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|Trocar dados a serem sincronizados. Os valores possíveis são: `none` , `calendars` , `contacts` , `email` , `notes` , `reminders` .|
-|easServicesUserOverrideEnabled|Boolean|Permitir que os usuários alterem as configurações de sincronização.|
+|easServicesUserOverrideEnabled|Booliano|Permitir que os usuários alterem as configurações de sincronização.|
 |hostName|Cadeia de caracteres|Local do Exchange que (URL) ao qual o aplicativo de email nativo se conecta.|
-|requireSmime|Boolean|Indica se o certificado S/MIME deve ou não ser usado.|
-|smimeEnablePerMessageSwitch|Boolean|Indica se os emails não criptografados devem ou não ser permitidos.|
-|smimeEncryptByDefaultEnabled|Boolean|Se definido como true a criptografia S/MIME estiver habilitada por padrão.|
-|smimeSigningEnabled|Boolean|Se definido como true a assinatura S/MIME estiver habilitada para essa conta|
-|smimeSigningUserOverrideEnabled|Boolean|Se definido como true, o usuário pode ativar ou desativar a assinatura S/MIME.|
-|smimeEncryptByDefaultUserOverrideEnabled|Boolean|Se definido como true, o usuário pode ativar a opção criptografia por padrão.|
-|smimeSigningCertificateUserOverrideEnabled|Boolean|Se definido como true, o usuário pode selecionar a identidade de assinatura.|
-|smimeEncryptionCertificateUserOverrideEnabled|Boolean|Se definido como true, o usuário pode selecionar a identidade de criptografia S/MIME. |
-|requireSsl|Boolean|Indica se o SSL deve ou não ser usado.|
-|useOAuth|Boolean|Especifica se a conexão deve usar o OAuth para autenticação.|
+|requireSmime|Booliano|Indica se o certificado S/MIME deve ou não ser usado.|
+|smimeEnablePerMessageSwitch|Booliano|Indica se os emails não criptografados devem ou não ser permitidos.|
+|smimeEncryptByDefaultEnabled|Booliano|Se definido como true a criptografia S/MIME estiver habilitada por padrão.|
+|smimeSigningEnabled|Booliano|Se definido como true a assinatura S/MIME estiver habilitada para essa conta|
+|smimeSigningUserOverrideEnabled|Booliano|Se definido como true, o usuário pode ativar ou desativar a assinatura S/MIME.|
+|smimeEncryptByDefaultUserOverrideEnabled|Booliano|Se definido como true, o usuário pode ativar a opção criptografia por padrão.|
+|smimeSigningCertificateUserOverrideEnabled|Booliano|Se definido como true, o usuário pode selecionar a identidade de assinatura.|
+|smimeEncryptionCertificateUserOverrideEnabled|Booliano|Se definido como true, o usuário pode selecionar a identidade de criptografia S/MIME. |
+|requireSsl|Booliano|Indica se o SSL deve ou não ser usado.|
+|useOAuth|Booliano|Especifica se a conexão deve usar o OAuth para autenticação.|
 |signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Assinatura tipo de certificado para este perfil de email. Os valores possíveis são: `none`, `certificate`, `derivedCredential`.|
 |encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Tipo de certificado de criptografia para este perfil de email. Os valores possíveis são: `none`, `certificate`, `derivedCredential`.|
-|perAppVPNProfileId|String|ID de perfil da política VPN por aplicativo a ser usada para acessar emails a partir do cliente de email nativo|
+|perAppVPNProfileId|String|ID de perfil da política de VPN Per-App a ser usada para acessar emails a partir do cliente de email nativo|
 
 
 
@@ -237,7 +237,6 @@ Content-Length: 2359
   "perAppVPNProfileId": "Per App VPNProfile Id value"
 }
 ```
-
 
 
 

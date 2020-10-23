@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e9ba2d810e510886f440bff50308f589083ce0d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 31332a696f3ca8a5c8962439ceaafd766d76f53c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989231"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722933"
 ---
 # <a name="operator-enum-type"></a>tipo de enumeração de operador
 
@@ -25,10 +25,10 @@ Operador para regras.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Operador None.|
-|e|1 |Operador and.|
-|ou|2 |Operador OR.|
-|é igual a|3 |Operador isequals.|
+|none|,0|Operador None.|
+|e|1|Operador and.|
+|ou|duas|Operador OR.|
+|é igual a|3D|Operador isequals.|
 |Não é igual a|4 |Operador não igual.|
 |greaterThan|5 |Operador GreaterThan.|
 |lessThan|6 |Operador LessThan.|
@@ -36,7 +36,7 @@ Operador para regras.
 |Não entre|8 |Operador não between.|
 |greaterEquals|9 |Operador GreaterEquals.|
 |lessEquals|10 |Operador LessEquals.|
-|dayTimeBetween|11 |Operador DayTimeBetween.|
+|dayTimeBetween|11|Operador DayTimeBetween.|
 |beginsWith|12 |Operador BeginsWith.|
 |notBeginsWith|13 |Operador NotBeginsWith.|
 |endswith|14 |Operador EndsWith.|
@@ -50,7 +50,6 @@ Operador para regras.
 |orderedSetEquals|22|Operador OrderedSetEquals.|
 |subsetOf|23|Operador SubsetOf.|
 |excludesAll|dia|Operador ExcludesAll.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e76c2148ef8eb7fbaaef30262a463f34534ab7bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b38d4cb630bc7c16f49028dee0721b13dbe1cd1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095321"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723947"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 
@@ -34,17 +34,17 @@ Uma entidade termsAndConditions representa os metadados e conteúdos de determin
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da política de T&C.|
+|id|String|Identificador exclusivo da política de T&C.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |modifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|Cadeia de caracteres|Nome fornecido pelo administrador para a política de T&C. |
-|description|Cadeia de caracteres|Descrição fornecida pelo administrador para a política de T&C.|
+|displayName|String|Nome fornecido pelo administrador para a política de T&C. |
+|description|String|Descrição fornecida pelo administrador para a política de T&C.|
 |title|String|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |bodyText|String|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |acceptanceStatement|String|Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |version|Int32|Inteiro que indica a versão atual dos termos. Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -79,7 +79,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

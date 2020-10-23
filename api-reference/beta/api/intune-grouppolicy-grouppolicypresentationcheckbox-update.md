@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 699bb1e26ce372b6f0cf35e48b1615fd50fbd9a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 63f3efd5dbb48875c1d80774a393734369f268fe
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47974237"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724119"
 ---
 # <a name="update-grouppolicypresentationcheckbox"></a>Atualizar groupPolicyPresentationCheckBox
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultChecked|Boolean|Valor padrão da caixa de seleção. O valor padrão é falso.|
+|defaultChecked|Booliano|Valor padrão da caixa de seleção. O valor padrão é falso.|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
-
 
 
 

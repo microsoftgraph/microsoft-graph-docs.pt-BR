@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4ce1fffd5170ea55b524c7a8828efc9ce71fc64
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4a1658cb75d88da6f0739b175646d5fa1de60b66
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989238"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722926"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>tipo de recurso operatingSystemVersionRange
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "highestVersion": "String"
 }
 ```
-
 
 
 

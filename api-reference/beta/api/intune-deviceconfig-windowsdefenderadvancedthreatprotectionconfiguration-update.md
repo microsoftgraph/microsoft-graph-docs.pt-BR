@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b3ec6abd171fbbf36b12750f6133c1a54d472e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b0ae580e19f2d6572fc3e48dab957bde4b1ad245
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970163"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723389"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>Atualizar windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para essa política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
@@ -68,7 +68,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |advancedThreatProtectionOnboardingBlob|String|Blob de integração do Windows Defender AdvancedThreatProtection.|
 |advancedThreatProtectionOnboardingFilename|String|Nome do arquivo do qual o AdvancedThreatProtectionOnboardingBlob foi obtido.|
-|advancedThreatProtectionAutoPopulateOnboardingBlob|Boolean|Preencher automaticamente o blob de integração programaticamente do serviço de proteção avançada contra ameaças|
+|advancedThreatProtectionAutoPopulateOnboardingBlob|Booliano|Preencher automaticamente o blob de integração programaticamente do serviço de proteção avançada contra ameaças|
 |allowSampleSharing|Booliano|Regra para "Permitir o compartilhamento de exemplo" de AdvancedThreatProtection do Windows Defender|
 |enableExpeditedTelemetryReporting|Booliano|Acelera a frequência de relatórios de telemetria da Proteção Avançada Contra Ameaças do Windows Defender.|
 |advancedThreatProtectionOffboardingBlob|String|Blob de remoção AdvancedThreatProtection do Windows Defender.|
@@ -177,7 +177,6 @@ Content-Length: 1775
   "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
 }
 ```
-
 
 
 

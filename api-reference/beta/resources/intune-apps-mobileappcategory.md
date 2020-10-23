@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04e14ad81ae744dc8a26b0d28b804ceaac66f661
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 431de325915747bc31620d8ea77c697b71b5db9d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076376"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723031"
 ---
 # <a name="mobileappcategory-resource-type"></a>Tipo de recurso mobileAppCategory
 
@@ -34,8 +34,8 @@ Contém as propriedades para uma única categoria de aplicativo do Intune.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade.|
-|displayName|Cadeia de caracteres|O nome da categoria do aplicativo.|
+|id|String|A chave da entidade.|
+|displayName|String|O nome da categoria do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

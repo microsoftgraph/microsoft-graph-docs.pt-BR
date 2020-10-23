@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 116e57ba4bad4474e8ec28bda990ac9e2fe1df86
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a417d655970147f7d6352c6d0c9624888a5da583
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076342"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48719735"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>tipo de recurso mobileAppRelationshipState
 
@@ -26,8 +26,8 @@ Descreve os detalhes de status da instalação do aplicativo filho no contexto d
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |sourceIds|Coleção de cadeias de caracteres|O conjunto de IDs do aplicativo móvel de origem.|
-|targetId|Cadeia de caracteres|A ID do aplicativo de destino relacionado.|
-|targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo de destino relacionado.|
+|targetId|String|A ID do aplicativo de destino relacionado.|
+|targetDisplayName|String|O nome de exibição do aplicativo de destino relacionado.|
 |deviceId|Cadeia de caracteres|A ID de dispositivo correspondente.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo do aplicativo de destino. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes do estado de instalação do aplicativo. Os valores possíveis são:,,,,,,,,,,,,,,, `noAdditionalDetails` `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `iosAppStoreUpdateFailedToInstall` `vppAppHasUpdateAvailable` `userRejectedUpdate` `seeInstallErrorCode` `autoInstallDisabled` `managedAppNoLongerPresent` `userRejectedInstall` `userIsNotLoggedIntoAppStore` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `contentDownloaded` , `powerShellScriptRequirementNotMet` , `registryRequirementNotMet` , `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet` `processorArchitectureNotApplicable` ,,,,,,,,,,,,.|
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0e2084573bc7538e47cd3ff016918a858df5995b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5485acfd815ea59c50b9c8a51980c14fe0796fb2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989175"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722891"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>tipo de enumeração ratingAustraliaMoviesType
 
@@ -26,13 +26,12 @@ Rótulos de classificação de filmes na Austrália
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1 |Não permitir conteúdo de filmes|
-|geral|2 |A classificação G é adequada para todos|
-|parentalGuidance|3 |A PG recomenda visualizadores em 15 com orientação de pais ou guardiões|
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|geral|duas|A classificação G é adequada para todos|
+|parentalGuidance|3D|A PG recomenda visualizadores em 15 com orientação de pais ou guardiões|
 |completa|4 |A classificação M não é recomendada para visualizadores abaixo de 15|
 |agesAbove15|5 |A classificação MA15 + não é adequada para visualizadores abaixo de 15|
 |agesAbove18|6 |A classificação R18 + não é adequada para visualizadores em 18|
-
 
 
 

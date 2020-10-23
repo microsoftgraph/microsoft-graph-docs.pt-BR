@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8dcccb4ad5f89f7204c5b92601bfa613b442b0a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77a306ca245c8e5cd3ee855f6f0cc470984b62d8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093823"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722568"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>Obter depMacOSEnrollmentProfile
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1396
+Content-Length: 1438
 
 {
   "value": {
@@ -83,7 +83,6 @@ Content-Length: 1396
     "isDefault": true,
     "supervisedModeEnabled": true,
     "supportDepartment": "Support Department value",
-    "passCodeDisabled": true,
     "isMandatory": true,
     "locationDisabled": true,
     "supportPhoneNumber": "Support Phone Number value",
@@ -93,7 +92,6 @@ Content-Length: 1396
     "termsAndConditionsDisabled": true,
     "touchIdDisabled": true,
     "applePayDisabled": true,
-    "zoomDisabled": true,
     "siriDisabled": true,
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
@@ -104,12 +102,14 @@ Content-Length: 1396
     "registrationDisabled": true,
     "fileVaultDisabled": true,
     "iCloudDiagnosticsDisabled": true,
+    "passCodeDisabled": true,
+    "zoomDisabled": true,
     "iCloudStorageDisabled": true,
-    "chooseYourLockScreenDisabled": true
+    "chooseYourLockScreenDisabled": true,
+    "accessibilityScreenDisabled": true
   }
 }
 ```
-
 
 
 

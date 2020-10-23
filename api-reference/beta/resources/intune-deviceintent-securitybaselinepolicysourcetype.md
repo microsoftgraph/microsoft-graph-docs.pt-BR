@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração prereleaseFeatures
-description: Valores possíveis para recursos de pré-lançamento.
+title: tipo de enumeração securityBaselinePolicySourceType
+description: Fonte de criação de uma política
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1575a5ad602bdb5f4a45520bf0957a89bbfe3141
+ms.openlocfilehash: 4f1721dc06fa5d1a97ef97025ff65396588dbda1
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722905"
+ms.locfileid: "48723895"
 ---
-# <a name="prereleasefeatures-enum-type"></a>tipo de enumeração prereleaseFeatures
+# <a name="securitybaselinepolicysourcetype-enum-type"></a>tipo de enumeração securityBaselinePolicySourceType
 
 Namespace: microsoft.graph
 
@@ -20,15 +20,13 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para recursos de pré-lançamento.
+Fonte de criação de uma política
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|settingsOnly|1|Configurações apenas recursos de pré-lançamento.|
-|settingsAndExperimentations|duas|Configurações e experimentos recursos de pré-lançamento.|
-|notAllowed|3D|Recursos de pré-lançamento não permitidos.|
+|deviceConfiguration|,0|Ainda não documentado|
+|deviceIntent|1|Ainda não documentado|
 
 
 

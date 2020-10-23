@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18efc12260a92a258edde460d2ebe3875f50e86d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5846405b0b14b4a36b470666d31dc86bc96ed091
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040866"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723305"
 ---
 # <a name="update-securitybaselinedevicestate"></a>Atualizar securityBaselineDeviceState
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [securit
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da entidade|
-|managedDeviceId|Cadeia de caracteres|ID de dispositivo do Intune|
+|id|String|Identificador exclusivo da entidade|
+|managedDeviceId|String|ID de dispositivo do Intune|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userPrincipalName|Cadeia de caracteres|Nome UPN|
+|userPrincipalName|String|Nome UPN|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Estado de conformidade da linha de base de segurança. Os possíveis valores são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de política|
 
@@ -101,7 +101,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a8841c77c97d4fbbcbd3e2ae3d20a93a40a34097
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9f30aeaa3027d7ed5e8b00b5ec5ec9be1b637ca
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031295"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722834"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>tipo de recurso networkIPv4ConfigurationManagementCondition
 
@@ -48,8 +48,8 @@ Herda de [networkManagementCondition](../resources/intune-fencing-networkmanagem
 |ipV4Prefix|String|A sub-rede IPv4 à qual está conectada. por exemplo, 10.0.0.0/8|
 |ipV4Gateway|String|O endereço do gateway IPv4. por exemplo, 10.0.0.0|
 |ipV4DHCPServer|String|O endereço IPv4 do servidor DHCP para o adaptador.|
-|ipV4DNSServerList|Coleção String|Os servidores DNS IPv4 configurados para o adaptador.|
-|dnsSuffixList|Coleção String|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
+|ipV4DNSServerList|Coleção de cadeias de caracteres|Os servidores DNS IPv4 configurados para o adaptador.|
+|dnsSuffixList|Coleção de cadeias de caracteres|Sufixos DNS válidos para a rede atual. por exemplo, seattle.contoso.com|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -88,7 +88,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

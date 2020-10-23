@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dc304dd833c9d8b4ab333fb78c44e0acf532be24
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d92b625844efa713e30fabf2e48b82e9c5d0c72
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078819"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724112"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>Criar groupPolicyPresentationComboBox
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Cadeia de caracteres|Cadeia de caracteres padrão localizada exibida na caixa de combinação. O valor padrão é vazio.|
+|defaultValue|String|Cadeia de caracteres padrão localizada exibida na caixa de combinação. O valor padrão é vazio.|
 |enviou|Coleção de cadeias de caracteres|Cadeias de caracteres localizadas listadas na lista suspensa da caixa de combinação. O valor padrão é vazio.|
 |obrigatório|Booliano|Especifica se um valor deve ser especificado para o parâmetro. O valor padrão é falso.|
 |maxLength|Int64|Um inteiro sem sinal que especifica o número máximo de caracteres de texto para o parâmetro. O valor padrão é 1023.|
@@ -107,7 +107,6 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
-
 
 
 

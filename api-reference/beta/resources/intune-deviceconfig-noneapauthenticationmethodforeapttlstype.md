@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a6286fa5c5facd7fdb2d78f2eb97ba93708f7372
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04fdfb62557ddaba87968c08ca6c622a6ab031af
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024035"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723010"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>tipo de enumeração nonEapAuthenticationMethodForEapTtlsType
 
@@ -26,10 +26,9 @@ Métodos não EAP para autenticação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |unencryptedPassword|,0|Senha não criptografada (PAP).|
-|challengeHandshakeAuthenticationProtocol|1 |CHAP (Challenge Handshake Authentication Protocol).|
-|microsoftChap|2 | Microsoft CHAP (MS-CHAP).|
-|microsoftChapVersionTwo|3 |Microsoft CHAP versão 2 (MS-CHAP v2).|
-
+|challengeHandshakeAuthenticationProtocol|1|CHAP (Challenge Handshake Authentication Protocol).|
+|microsoftChap|duas| Microsoft CHAP (MS-CHAP).|
+|microsoftChapVersionTwo|3D|Microsoft CHAP versão 2 (MS-CHAP v2).|
 
 
 

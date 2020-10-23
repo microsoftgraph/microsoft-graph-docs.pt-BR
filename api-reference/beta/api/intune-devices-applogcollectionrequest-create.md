@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00e979ccf13573da36f3410d55428e2ac596470c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 14c0664b7644f54a7df688f1d1448dc972385ff7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047592"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723235"
 ---
 # <a name="create-applogcollectionrequest"></a>Criar appLogCollectionRequest
 
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar appLogCo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo. É userId_DeviceId_AppId ID.|
+|id|String|O identificador exclusivo. É userId_DeviceId_AppId ID.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
-|errorMessage|Cadeia de caracteres|Mensagem de erro se qualquer um durante o processo de carregamento|
+|errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
 |customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
@@ -102,7 +102,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 

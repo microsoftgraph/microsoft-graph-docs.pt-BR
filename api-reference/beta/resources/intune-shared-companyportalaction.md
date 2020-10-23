@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 68ca6a60d74e6debb557fa85d4884d02f5af0fab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58aa39ad5e70770c5a60831a342b5bab45d3aaf4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073667"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723775"
 ---
 # <a name="companyportalaction-enum-type"></a>tipo de enumeração companyPortalAction
 
@@ -26,9 +26,8 @@ Ação em um dispositivo que pode ser executado no portal da empresa
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Ação de dispositivo desconhecido|
-|remover|1 |Remover dispositivo do portal da empresa|
-|redefinir|2 |Redefinir dispositivo inscrito no portal da empresa|
-
+|remover|1|Remover dispositivo do portal da empresa|
+|redefinir|duas|Redefinir dispositivo inscrito no portal da empresa|
 
 
 

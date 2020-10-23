@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3ba720d9917c1d93e9ce06291adae727fc42281c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b0e37364bd505dada24d0283477742f70183b83
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030308"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722806"
 ---
 # <a name="managedappphonenumberredirectlevel-enum-type"></a>tipo de enumeração managedAppPhoneNumberRedirectLevel
 
@@ -26,10 +26,9 @@ As classes de aplicativos que têm permissão para clicar para abrir um número 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |todos os aplicativos|,0|O compartilhamento é permitido para todos os aplicativos.|
-|managedApps|1 |O compartilhamento é permitido para todos os aplicativos gerenciados.|
-|customApp|2 |O compartilhamento é permitido para um aplicativo personalizado.|
-|bloqueou|3 |O compartilhamento entre aplicativos é bloqueado.|
-
+|managedApps|1|O compartilhamento é permitido para todos os aplicativos gerenciados.|
+|customApp|duas|O compartilhamento é permitido para um aplicativo personalizado.|
+|bloqueou|3D|O compartilhamento entre aplicativos é bloqueado.|
 
 
 
