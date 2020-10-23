@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ad277647cef0d6d250bfdf79eb4af9b8a322038
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: efbec3d5d89524900ab9c5b597a1fc82a41c9f46
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077440"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704396"
 ---
 # <a name="create-macoscompliancepolicy"></a>Criar macOSCompliancePolicy
 
@@ -54,11 +54,11 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSComplianceP
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|Se uma senha deve ou não ser exigida.|
 |passwordBlockSimple|Booliano|Indica se senhas simples devem ou não ser bloqueadas.|
@@ -70,16 +70,16 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSComplianceP
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |osMinimumVersion|String|Versão mínima do MacOS.|
 |osMaximumVersion|String|Versão máxima do MacOS.|
-|osMinimumBuildVersion|Cadeia de caracteres|Versão mínima do MacOS.|
-|osMaximumBuildVersion|Cadeia de caracteres|Versão máxima do MacOS.|
+|osMinimumBuildVersion|String|Versão mínima do MacOS.|
+|osMaximumBuildVersion|String|Versão máxima do MacOS.|
 |systemIntegrityProtectionEnabled|Booliano|Exige que dispositivos tenham habilitado a proteção de integridade do sistema.|
 |deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Mac OS.|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Configuração de sistema e privacidade que determina quais locais de download os aplicativos podem ser executados em um dispositivo macOS. Os valores possíveis são: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|firewallEnabled|Booliano|Se o firewall deve ser habilitado ou não.|
-|firewallBlockAllIncoming|Booliano|Corresponde à opção "bloquear todas as conexões de entrada".|
-|firewallEnableStealthMode|Booliano|Corresponde a "Habilitar modo oculto".|
+|firewallEnabled|Boolean|Se o firewall deve ser habilitado ou não.|
+|firewallBlockAllIncoming|Boolean|Corresponde à opção "bloquear todas as conexões de entrada".|
+|firewallEnableStealthMode|Boolean|Corresponde a "Habilitar modo oculto".|
 
 
 
@@ -166,7 +166,6 @@ Content-Length: 1255
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

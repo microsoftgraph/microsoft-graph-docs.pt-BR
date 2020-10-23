@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33cddc8d5ac6125161765fd043a74f261a2496e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f6f98ca6710015e8c9cdc1ca70d8a9e3215358c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994936"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704438"
 ---
 # <a name="create-iosupdateconfiguration"></a>Criar iosUpdateConfiguration
 
@@ -65,7 +65,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosUpdateConfigu
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|isEnabled|Boolean|A configuração está habilitada na IU|
+|isEnabled|Booliano|A configuração está habilitada na IU|
 |activeHoursStart|TimeOfDay|Início do Horário Ativo (o horário ativo significa a janela de tempo quando a instalação das atualizações não deve acontecer)|
 |activeHoursEnd|TimeOfDay|Término do Horário Ativo (o horário ativo significa a janela de tempo quando a instalação das atualizações não deve acontecer)|
 |desiredOsVersion|String|Se deixado não especificado, os dispositivos serão atualizados para a versão mais recente do sistema operacional.|
@@ -202,7 +202,6 @@ Content-Length: 1768
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 912c6c2b0039ca5488b6b2d2972bcf27b7e9624d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d1539f7692a181e43a932848d3401246c0cab26
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029334"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703598"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>tipo de enumeração vppTokenSyncStatus
 
@@ -25,11 +25,10 @@ Possíveis status de sincronização associados a um token do Apple Volume Purch
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Status padrão.|
-|inProgress|1 |Última sincronização em andamento.|
-|Completed|2 |Última sincronização concluída com êxito.|
-|falhou|3 |Falha na última sincronização.|
-
+|none|,0|Status padrão.|
+|inProgress|1|Última sincronização em andamento.|
+|Completed|duas|Última sincronização concluída com êxito.|
+|falhou|3D|Falha na última sincronização.|
 
 
 

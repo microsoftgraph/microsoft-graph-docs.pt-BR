@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a8f811b7098766dbc9cbee99a98307d1d8fff42c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a92468bf33559d1dc6b12236ea2c7aa6d1507002
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061613"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703752"
 ---
 # <a name="wirednetworkinterface-enum-type"></a>tipo de enumeração wiredNetworkInterface
 
@@ -26,13 +26,12 @@ Tipo de interface de rede Apple.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |anyEthernet|,0|Qualquer Ethernet.|
-|firstActiveEthernet|1 |Primeira Ethernet ativa.|
-|secondActiveEthernet|2 |Segunda Ethernet ativa.|
-|thirdActiveEthernet|3 |Terceira Ethernet ativa.|
+|firstActiveEthernet|1|Primeira Ethernet ativa.|
+|secondActiveEthernet|duas|Segunda Ethernet ativa.|
+|thirdActiveEthernet|3D|Terceira Ethernet ativa.|
 |firstEthernet|4 |Primeira Ethernet.|
 |secondEthernet|5 |Segunda Ethernet.|
 |thirdEthernet|6 |Terceira Ethernet.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3e2916a53a06ba54c38d6637ac4d1db1c84843d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab37f8168982025d2c4dc4e2f9ead4ed96b6dcfd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000865"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704284"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>Atualizar managedDeviceEncryptionState
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |userPrincipalName|String|Nome de usuário|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Plataforma do dispositivo. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` ,, `holoLens` `surfaceHub` , `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` ,,,,,.|
+|deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Plataforma do dispositivo. Os valores possíveis são:,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` , `macMDM` ,, `holoLens` `surfaceHub` , `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` ,,,,,.|
 |osVersion|String|Versão do sistema operacional do dispositivo|
 |tpmSpecificationVersion|String|Versão do TPM do dispositivo|
 |deviceName|String|Nome do dispositivo|
@@ -131,7 +131,6 @@ Content-Length: 753
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 017e0ad2f5a0385de971b4ac6e3a9f386a90c058
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 748dee0ecff4a022c3a4a35e3fd3832e93d93834
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994789"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704424"
 ---
 # <a name="update-ioswificonfiguration"></a>Atualizar iosWiFiConfiguration
 
@@ -68,15 +68,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosWiFi
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |NetworkName|String|Nome da rede|
 |SSID|String|Este é o nome da rede Wi-Fi que é transmitida para todos os dispositivos.|
-|connectAutomatically|Boolean|Conectar automaticamente quando esta rede estiver no intervalo. A definição dessa opção como true ignorará o prompt do usuário e conectará automaticamente o dispositivo à rede Wi-Fi.|
+|connectAutomatically|Boolean|Conectar automaticamente quando esta rede estiver no intervalo. A definição dessa opção como true ignorará o prompt do usuário e conectará automaticamente o dispositivo ao Wi-Fi rede.|
 |connectWhenNetworkNameIsHidden|Boolean|Conecte-se quando a rede não estiver transmitindo seu nome (SSID). Quando definido como true, esse perfil força o dispositivo a se conectar a uma rede que não transmite seu SSID para todos os dispositivos.|
-|à|[à](../resources/intune-deviceconfig-wifisecuritytype.md)|Indica se o ponto de extremidade Wi-Fi usa um tipo de segurança baseado em EAP. Os possíveis valores são: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
+|à|[à](../resources/intune-deviceconfig-wifisecuritytype.md)|Indica se Wi-Fi ponto de extremidade usa um tipo de segurança baseado em EAP. Os possíveis valores são: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Tipo de proxy para esta conexão Wi-Fi. Os valores possíveis são: `none`, `manual`, `automatic`.|
 |proxyManualAddress|String|Endereço IP ou nome de host DNS do servidor proxy quando a configuração manual estiver selecionada.|
 |proxyManualPort|Int32|Porta do servidor proxy quando a configuração manual estiver selecionada.|
 |proxyAutomaticConfigurationUrl|String|URL do script de configuração automática do servidor proxy quando a configuração automática estiver selecionada. Essa URL normalmente é o local do Arquivo PAC (configuração automática de proxy).|
-|disableMacAddressRandomization|Boolean|Se for definido como true, forçará os dispositivos que se conectam usando esse perfil Wi-Fi a apresentar seu endereço MAC de Wi-Fi real em vez de um endereço MAC aleatório. Aplica-se ao iOS 14 e posterior.|
-|preSharedKey|String|Esta é a chave pré-compartilhada para a rede Wi-Fi pessoal WPA.|
+|disableMacAddressRandomization|Boolean|Se for definido como true, forçará os dispositivos que se conectam usando este Wi-Fi perfil para apresentar seu endereço MAC Wi-Fi real em vez de um endereço MAC aleatório. Aplica-se ao iOS 14 e posterior.|
+|preSharedKey|String|Esta é a chave pré-compartilhada para a rede WPA de Wi-Fi pessoal.|
 
 
 
@@ -189,7 +189,6 @@ Content-Length: 1663
   "preSharedKey": "Pre Shared Key value"
 }
 ```
-
 
 
 

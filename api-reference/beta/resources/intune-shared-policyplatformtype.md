@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 454a401cdd5eaf0228ff828435902b66ff0fda6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3042dddf97e3d31b5b80cc0676f727c1822f240c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084160"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704711"
 ---
 # <a name="policyplatformtype-enum-type"></a>tipo de enumeração policyPlatformType
 
@@ -26,8 +26,8 @@ Tipos de plataforma Suppoorted para políticas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Android|,0|Android.|
-|androidForWork|1 |AndroidForWork.|
-|iOS|2 |emiti.|
+|androidForWork|1|AndroidForWork.|
+|iOS|duas|emiti.|
 |macOS|3D|MacOS.|
 |windowsPhone81|4 |Windowsphonee 8,1.|
 |windows81AndLater|5 |Windows 8,1 e posterior|
@@ -35,7 +35,6 @@ Tipos de plataforma Suppoorted para políticas.
 |androidWorkProfile|7 |AndroidWorkProfile.|
 |windows10XProfile|8 |Windows10XProfile.|
 |todos os|100|Todas as plataformas.|
-
 
 
 

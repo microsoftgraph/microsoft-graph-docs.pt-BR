@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37d404817daafe1d6c6093b06a75e7dc517ef415
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b83b135b9a7b0fc0faafac4ed1bab2d26e32fd9e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994942"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704459"
 ---
 # <a name="update-iostrustedrootcertificate"></a>Atualizar iosTrustedRootCertificate
 
@@ -161,7 +161,6 @@ Content-Length: 1308
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

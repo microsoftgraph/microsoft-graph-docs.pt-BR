@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0d44ceabb8834b71b41a50fe977c952bddeaa01
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93a0e91332403d3bc333db90a74923e57a55d107
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029362"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704725"
 ---
 # <a name="sideloadingkey-resource-type"></a>tipo de recurso sideLoadingKey
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String"
 }
 ```
-
 
 
 

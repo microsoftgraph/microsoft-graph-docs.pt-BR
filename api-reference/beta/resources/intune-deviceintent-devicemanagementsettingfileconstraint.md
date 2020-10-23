@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79936cf26519329563d1216c8f2576faec3e4f77
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03303402e5390d5280270cef18e42195fe92cfe2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061186"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703654"
 ---
 # <a name="devicemanagementsettingfileconstraint-resource-type"></a>tipo de recurso deviceManagementSettingFileConstraint
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

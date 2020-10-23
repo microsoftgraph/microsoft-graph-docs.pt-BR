@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a646bc7f618e67fe24f24ca3343fbf2cfa3c414
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0235abf74d96e5ccff888253e977bd9951bbc3cd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060612"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703647"
 ---
 # <a name="datasharingconsent-resource-type"></a>tipo de recurso dataSharingConsent
 
@@ -35,13 +35,13 @@ Informações de consentimento de compartilhamento de dados.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID de consentimento de compartilhamento de dados|
-|objectdisplayname|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|Cadeia de caracteres|O TermsUrl para o consentimento de compartilhamento de dados|
-|granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
+|id|String|A ID de consentimento de compartilhamento de dados|
+|objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
+|granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|Cadeia de caracteres|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|Cadeia de caracteres|O UserId do usuário que concedeu o consentimento para esta conta|
+|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -66,7 +66,6 @@ Veja a seguir uma representação JSON do recurso.
   "grantedByUserId": "String"
 }
 ```
-
 
 
 

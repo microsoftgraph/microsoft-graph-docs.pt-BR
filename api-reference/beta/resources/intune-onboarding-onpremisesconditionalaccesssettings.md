@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf378696795689b618f5ec18ebb668028e00804d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 34821e9afe2b967ea60570ef18db25e8eb1f43e2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029432"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704753"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>Tipo de recurso onPremisesConditionalAccessSettings
 
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "overrideDefaultRule": true
 }
 ```
-
 
 
 

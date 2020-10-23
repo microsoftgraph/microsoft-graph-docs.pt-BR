@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d707b983747826a31ac35734d6f18605db7e780
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 92353ee295b36e867962724d9eff30542c401892
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084174"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704697"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>tipo de recurso mobileAppTroubleshootingEvent
 
@@ -34,13 +34,13 @@ Evento representando um status de instalação de aplicativo do dispositivo de u
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|UUID para o objeto.|
+|id|String|UUID para o objeto.|
 |**Solução de Problemas**|
 |additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres que fornece informações adicionais sobre o evento de solução de problemas herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |ApplicationId|Cadeia de caracteres|Identificador de aplicativo do Intune.|
 |correlationId|Cadeia de caracteres|ID usada para rastrear a falha no serviço. |
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu. |
-|EventName|Cadeia de caracteres|Nome do evento correspondente ao evento de solução de problemas. Opcional|
+|EventName|String|Nome do evento correspondente ao evento de solução de problemas. Opcional|
 |histórico|coleção [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Item do histórico de solução de problemas do aplicativo móvel do Intune|
 |managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto contendo informações detalhadas sobre o erro e sua correção. Herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
@@ -100,7 +100,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 
