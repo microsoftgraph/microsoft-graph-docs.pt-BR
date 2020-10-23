@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1751f4e53c3df3b3a27d759ff9f747ead5360211
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 09c7b1be3a5fdfc33a064d2a9208daa68ba4263e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060689"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733983"
 ---
 # <a name="configurationmanageractiondeliverystatus-enum-type"></a>tipo de enumeração configurationManagerActionDeliveryStatus
 
@@ -26,11 +26,10 @@ Estado de entrega da ação de dispositivo do Gerenciador de configurações
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Pendente para entregar a ação a ConfigurationManager|
-|pendingDelivery|1 |Pendente para entregar a ação a ConfigurationManager|
-|deliveredToConnectorService|2 |A ação é enviada para o serviço do conector ConfigurationManager (nuvem)|
-|failedToDeliverToConnectorService|3 |Falha ao enviar a ação para o serviço do conector ConfigurationManager (nuvem)|
+|pendingDelivery|1|Pendente para entregar a ação a ConfigurationManager|
+|deliveredToConnectorService|duas|A ação é enviada para o serviço do conector ConfigurationManager (nuvem)|
+|failedToDeliverToConnectorService|3D|Falha ao enviar a ação para o serviço do conector ConfigurationManager (nuvem)|
 |deliveredToOnPremisesServer|4 |A ação é entregue no servidor local do ConfigurationManager|
-
 
 
 

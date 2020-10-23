@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 834d2e2871e8ddf7366ddc1ea0e77398eeae48f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e8857c6a392437335c7324c139fa0b2c9880b12a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081959"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733969"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -34,10 +34,10 @@ A entidade de desempenho do dispositivo de análise da experiência do usuário 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de análise da experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho do dispositivo de análise da experiência do usuário.|
 |eventDateTime|DateTimeOffset|A hora em que o evento ocorreu.|
-|eventType|Cadeia de caracteres|O tipo do evento.|
-|appDisplayName|Cadeia de caracteres|O nome amigável do aplicativo para o qual o evento ocorreu.|
+|eventType|String|O tipo do evento.|
+|appDisplayName|String|O nome amigável do aplicativo para o qual o evento ocorreu.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 

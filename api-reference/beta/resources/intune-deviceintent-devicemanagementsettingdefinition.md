@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa69157c22c7b04ec3d5afcee3c029b50354f122
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 782986bac762ff434cb35955f7811eb71de6bf61
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061221"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733997"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>tipo de recurso deviceManagementSettingDefinition
 
@@ -34,13 +34,15 @@ Entidade que representa a definição de uma determinada configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID da definição de configuração|
+|id|String|A ID da definição de configuração|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os possíveis valores são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Cadeia de caracteres|O nome de exibição da configuração|
+|displayName|String|O nome de exibição da configuração|
 |isTopLevel|Booliano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
 |description|String|A descrição da configuração|
-|placeholderText|Cadeia de caracteres|Texto do espaço reservado como um exemplo de entrada válida|
-|documentationUrl|Cadeia de caracteres|URL para configurar a documentação|
+|placeholderText|String|Texto do espaço reservado como um exemplo de entrada válida|
+|documentationUrl|String|URL para configurar a documentação|
+|headerTitle|String|título do cabeçalho da configuração representa uma categoria/seção de uma configuração/configurações|
+|headerSubtitle|String|subtítulo do cabeçalho da configuração para obter mais detalhes sobre a categoria/seção|
 |palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
@@ -66,6 +68,8 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String",
   "placeholderText": "String",
   "documentationUrl": "String",
+  "headerTitle": "String",
+  "headerSubtitle": "String",
   "keywords": [
     "String"
   ],
@@ -93,7 +97,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

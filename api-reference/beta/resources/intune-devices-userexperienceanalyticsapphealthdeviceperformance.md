@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46400118869ac839a2de0cf179f75b83db6e4f1e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e7a7775edf7893aeaefa75fc507b930cc8a5234
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081961"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733970"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthDevicePerformance
 
@@ -34,15 +34,15 @@ A entidade de desempenho do dispositivo de análise da experiência do usuário 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do objeto de desempenho do dispositivo de análise da experiência do usuário.|
+|id|String|O identificador exclusivo do objeto de desempenho do dispositivo de análise da experiência do usuário.|
 |deviceModel|Cadeia de caracteres|O nome do modelo do dispositivo.|
-|deviceManufacturer|Cadeia de caracteres|O nome do fabricante do dispositivo.|
+|deviceManufacturer|String|O nome do fabricante do dispositivo.|
 |appCrashCount|Int32|O número de falhas do aplicativo para o dispositivo. Valores válidos-2147483648 a 2147483647|
 |crashedAppCount|Int32|O número de falhas de aplicativos distintos para o dispositivo. Valores válidos-2147483648 a 2147483647|
 |appHangCount|Int32|O número de bloqueios de aplicativo para o dispositivo. Valores válidos-2147483648 a 2147483647|
 |meanTimeToFailureInMinutes|Int32|O tempo médio de falha para o dispositivo em minutos. Valores válidos-2147483648 a 2147483647|
 |deviceAppHealthScore|Duplo|A pontuação de integridade do aplicativo do dispositivo. Valores válidos-1.79769313486232 E + 308 a 1.79769313486232 E + 308|
-|deviceAppHealthStatus|Cadeia de caracteres|O status de integridade geral do aplicativo do dispositivo.|
+|deviceAppHealthStatus|String|O status de integridade geral do aplicativo do dispositivo.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo.|
 |deviceDisplayName|Cadeia de caracteres|O nome do dispositivo.|
 
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 
