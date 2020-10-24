@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f0123dcb74b169e6f577a57dff640542ae60cf7a
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 01aa3dfeb6ba12cde6e6b1e64abd1b179e756a1d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634820"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694911"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -36,6 +36,58 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a propriedade **função** à entidade [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta).|
 
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+|:---|:---|:---|
+| Adição | beta | Adicionada a ação [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) para printDocument. | 
+| Alterar | beta | A ação **uploadData** está obsoleta no recurso [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta). | 
+| Alterar | beta | Propriedades adicionadas ao recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta): <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuração</li></ul> | 
+| Alterar | beta | A propriedade **configuração** está obsoleta no recurso [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta). | 
+| Alterar | beta | Adicionada a propriedade de navegação **compartilhamentos** no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta). | 
+| Alterar | beta | A ação **resetDefaults** no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta) foi renomeada para [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta). | 
+| Alterar | beta | A ação **startPrintJob** no recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta) foi renomeada para [iniciar](/graph/api/printjob-start?view=graph-rest-beta). | 
+| Alterar | beta | A ação **cancelPrintJob** no recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta) foi renomeada para [cancelar](/graph/api/printjob-cancel?view=graph-rest-beta). | 
+| Alterar | beta | A função **getCapabilities** está obsoleta no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta). | 
+| Alterar | beta | A propriedade **allowedUsers** está obsoleta no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta). | 
+| Alterar | beta | A propriedade **allowedGroups** está obsoleta no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta). |
+| Alterar | beta | Adicionada a propriedade **feedOrientations** ao recurso [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta). | 
+| Alterar | beta | A propriedade **feedDirections** está obsoleta no recurso [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta). | 
+| Alterar | beta | Adicionada a propriedade **detalhes** ao recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta). | 
+| Alterar | beta | A propriedade **processingStateReasons** está obsoleta no recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta). | 
+| Alterar | beta | Propriedades renomeadas no recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta): <br/><ul><li>processingState -> estado</li><li>processingStateDescription -> descrição</li></ul> |  
+| Alterar | beta | Adicionada a propriedade **detalhes** ao recurso [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta). | 
+| Alterar | beta | Propriedades renomeadas no recurso [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta): <br/><ul><li>processingState -> estado</li><li>processingStateDescription -> descrição</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+
+| **Tipo de alteração** | **Versão**   | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Adicionadas novas entidades:<br/>[deviceCustomAttributeShellScript](/graph/api/resources/intune-devices-devicecustomattributeshellscript?view=graph-rest-beta)<br/>[macOSSoftwareUpdateAccountSummary](/graph/api/resources/intune-deviceconfig-macossoftwareupdateaccountsummary?view=graph-rest-beta)<br/>[macOSSoftwareUpdateCategorySummary](/graph/api/resources/intune-deviceconfig-macossoftwareupdatecategorysummary?view=graph-rest-beta)<br/>[macOSSoftwareUpdateConfiguration](/graph/api/resources/intune-deviceconfig-macossoftwareupdateconfiguration?view=graph-rest-beta)<br/>[macOSSoftwareUpdateStateSummary](/graph/api/resources/intune-deviceconfig-macossoftwareupdatestatesummary?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[macOSAssociatedDomainsItem](/graph/api/resources/intune-deviceconfig-macosassociateddomainsitem?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos de enumeração:<br/>[androidDeviceOwnerEnrollmentTokenType](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmenttokentype?view=graph-rest-beta)<br/>[deviceCustomAttributeValueType](/graph/api/resources/intune-devices-devicecustomattributevaluetype?view=graph-rest-beta)<br/>[macOSSoftwareUpdateBehavior](/graph/api/resources/intune-deviceconfig-macossoftwareupdatebehavior?view=graph-rest-beta)<br/>[macOSSoftwareUpdateCategory](/graph/api/resources/intune-deviceconfig-macossoftwareupdatecategory?view=graph-rest-beta)<br/>[macOSSoftwareUpdateScheduleType](/graph/api/resources/intune-deviceconfig-macossoftwareupdatescheduletype?view=graph-rest-beta)<br/>[macOSSoftwareUpdateState](/graph/api/resources/intune-deviceconfig-macossoftwareupdatestate?view=graph-rest-beta)<br/>|
+|Adição|beta|Adicionada a ação [atribuir](/graph/api/intune-devices-devicecustomattributeshellscript-assign?view=graph-rest-beta) em [deviceCustomAttributeShellScript](/graph/api/resources/intune-devices-devicecustomattributeshellscript?view=graph-rest-beta) |
+|Exclusão|beta|Foram removidas as seguintes entidades:<br/>**todo**<br/>**todoTask**<br/>**todoTaskList**<br/>|
+|Exclusão|beta|Foram removidos os seguintes tipos complexos:<br/>**macOSAssociatedDomainsKeyValuePair**<br/>|
+|Adição|beta|Adicionada a propriedade **registrationTokenType** à entidade [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **customData** e **customKeyValueData** à entidade [androidDeviceOwnerVpnConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownervpnconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **blockAfterCompanyPortalUpdateDeferralInDays**, **warnAfterCompanyPortalUpdateDeferralInDays** e **wipeAfterCompanyPortalUpdateDeferralInDays** à entidade [androidManagedAppProtection](/graph/api/resources/intune-shared-androidmanagedappprotection?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **blockAfterCompanyPortalUpdateDeferralInDays**, **warnAfterCompanyPortalUpdateDeferralInDays** e **wipeAfterCompanyPortalUpdateDeferralInDays** à entidade [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta)|
+|Exclusão|beta|Removidas as propriedades **passCodeDisabled** e **zoomDisabled** da entidade [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **passCodeDisabled**, **zoomDisabled**, **restoreCompletedScreenDisabled** e **updateCompleteScreenDisabled** à entidade [depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **passCodeDisabled**, **zoomDisabled** e **accessibilityScreenDisabled** à entidade [depMacOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **headerTitle** e **headerSubtitle** à entidade [deviceManagementSettingDefinition](/graph/api/resources/intune-deviceintent-devicemanagementsettingdefinition?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **advancedThreatProtectionRequiredSecurityLevel** à entidade [iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **appAssociatedDomains** à entidade [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **passwordMaximumAttemptCount** e **passwordMinutesUntilFailedLoginReset** à entidade [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **installAsManaged** à entidade [macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta)|
+|Alterar|beta|Foram alteradas as seguintes propriedades na entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta):<br/>**defenderSecurityCenterDisableAccountUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableAppBrowserUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableClearTpmUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableFamilyUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableHardwareUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableHealthUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableNetworkUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableNotificationAreaUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableRansomwareUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableSecureBootUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableTrou problemsUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableVirusUI** de obrigatório para opcional<br/>**defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI** de obrigatório para opcional<br/>|
+|Adição|beta|Adicionadas as propriedades de navegação **macOSSoftwareUpdateAccountSummaries** e **deviceCustomAttributeShellScripts** à entidade [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
+|Adição|beta|Adicionadas as propriedades **ipAddressV4** e **subnetAddress** ao tipo complexo [hardwareInformation](/graph/api/resources/intune-devices-hardwareinformation?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **uninstallOnDeviceRemova ** ao tipo complexo [macOsVppAppAssignmentSettings](/graph/api/resources/intune-apps-macosvppappassignmentsettings?view=graph-rest-beta)|
+|Adição|beta|Adicionado o membro **netMotionMobility** ao tipo de enum [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta)|
+|Adição|beta|Adicionado o membro **universalResourceIdentifie ** ao tipo de enumerado [subjectAlternativeNameType](/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta)|
+
 ### <a name="files"></a>Arquivos
 
 | **Tipo de alteração** | **Versão** | **Descrição** |
@@ -52,6 +104,12 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |Adição|beta|Propriedade **allowInvitesFrom** adicionada ao recurso [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta).|
 |Adição|beta|Adicionado o tipo de recurso [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) e as seguintes operações: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) e [Atualizar b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
 |Adição|beta|Adicionada a permissão **Policy.ReadWrite.AuthenticationMethod** à [referência de Permissões](permissions-reference.md#policy-permissions).|
+
+### <a name="teamwork"></a>Trabalho em equipe
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição | v1.0 | Adicionados os métodos [Listar membros](/graph/api/conversationmember-list?view=graph-rest-beta), [Obter membro](/graph/api/conversationmember-get?view=graph-rest-beta), [Adicionar membro](/graph/api/conversationmember-add?view=graph-rest-beta), [Atualizar membro](/graph/api/conversationmember-update?view=graph-rest-beta) e [Excluir membro](/graph/api/conversationmember-delete?view=graph-rest-beta) ao recursos [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta) e [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta).|
 
 ### <a name="users"></a>Usuários
 
@@ -3618,7 +3676,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Adição|beta|A função [managedDeviceEnrollmentFailureTrends](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmentfailuretrends?view=graph-rest-beta) foi adicionada ao [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta) |
 |Adição|beta|A função [managedDeviceEnrollmentTopFailures](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmenttopfailures?view=graph-rest-beta) foi adicionada ao [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta) |
 |Adição|beta|A função [managedDeviceEnrollmentTopFailures](/graph/api/intune-troubleshooting-reportroot-manageddeviceenrollmenttopfailures?view=graph-rest-beta) foi adicionada ao [reportRoot](/graph/api/resources/intune-deviceconfig-reportroot?view=graph-rest-beta) |
-|Alteração|beta|Foram removidas as propriedades **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** e **requireCompanyPortalAppIntegrity** da entidade [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta)|
+|Alterar|beta|Foram removidas as propriedades **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** e **requireCompanyPortalAppIntegrity** da entidade [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta)|
 |Alteração|beta|Foram removidas as propriedades **requireAppVerify**, **requireSafetyNetAttestationBasicIntegrity**, **requireSafetyNetAttestationCertifiedDevice**, **requireGooglePlayServices**, **requireUpToDateSecurityProviders** e **requireCompanyPortalAppIntegrity** da entidade [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta)|
 |Alteração|beta|Foram removidas as propriedades **name**, **modifiedDateTime**, **totalEnrollmentCount** e **qrCode** da entidade [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta)|
 |Alteração|beta|Foram removidas as propriedades **nonEapAuthenticationMethodForEapTtls**, **nonEapAuthenticationMethodForPeap** e **enableOuterIdentityPrivacy** da entidade [androidForWorkEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkenterprisewificonfiguration?view=graph-rest-beta)|

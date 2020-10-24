@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: ab8533f85e541947dccfc4c76989c100c64020cf
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 203fd0c4966bb2c726bcb0cc4e89a4f8d38e7028
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193462"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48741919"
 ---
 # <a name="changenotification-resource-type"></a>Tipo de recurso changeNotification
 
@@ -30,6 +30,7 @@ Nenhum.
 |:---------|:-----|:------------|
 | changeType | string | Indica o tipo de alteração que irá gerar a notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Obrigatório. |
 | clientState | string | O valor da propriedade **ClientState** enviada na solicitação de assinatura (se houver). O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando os valores da propriedade **ClientState** . O valor da propriedade **ClientState** enviada com a assinatura é comparado com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
+| lifecycleEvent | string | O tipo de notificação de ciclo de vida se a notificação atual é uma notificação de ciclo de vida. Opcional. Os valores com suporte são `missed` , `removed` , `reauthorizationRequired` . |
 | encryptedContent | [Microsoft. Graph. changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | Prever Conteúdo criptografado anexado à notificação de alteração. Só é fornecido se **encryptionCertificate** e **includeResourceData** foram definidos durante a solicitação de assinatura e se o recurso oferecer suporte a ele. Opcional. |
 | id | string | ID exclusiva da notificação. Opcional. |
 | recurso | string | O URI do recurso que emitiu a notificação de alteração relativa a `https://graph.microsoft.com` . Obrigatório. |

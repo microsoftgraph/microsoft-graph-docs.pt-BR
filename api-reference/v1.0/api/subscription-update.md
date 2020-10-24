@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 7b50b6b32bf3d5927d13d0f5ad146949a858dd1e
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2900fd09839bdd570a41a5bad40578dec1c7ace8
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193553"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742213"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -27,10 +27,10 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | Incompatível | Incompatível | CallRecords.Read.All  |
-|[chat](../resources/chatmessage.md) (/Teams/{ID}/Channels/{ID}/Messages) | Incompatível | Incompatível | ChannelMessage.Read.All  |
-|[chat](../resources/chatmessage.md) (/Teams/getAllMessages--todas as mensagens do canal na organização) | Incompatível | Incompatível | ChannelMessage.Read.All  |
-|[chat](../resources/chatmessage.md) (/chats/{ID}/Messages) | Incompatível | Incompatível | Chat.Read.All  |
-|[chat](../resources/chatmessage.md) (/chats/getAllMessages--todas as mensagens de chat na organização) | Incompatível | Incompatível | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Sem suporte | Sem suporte | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (OneDrive pessoal de um usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
@@ -44,22 +44,21 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 ### <a name="chatmessage"></a>chatMessage
 
-as assinaturas do **chat** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura do **chat** , você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
+Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura **chatMessage**, você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Observação:** `/teams/getAllMessages` e `/chats/getAllMessages` estão disponíveis para usuários que têm as  
- [licenças necessárias](https://aka.ms/teams-changenotification-licenses).
+> **Observação:** `/teams/getAllMessages` e `/chats/getAllMessages` estão disponíveis para os usuários que têm as[licenças necessárias](https://aka.ms/teams-changenotification-licenses).
 
 ### <a name="driveitem"></a>driveItem
 
-Limitações adicionais se aplicam a assinaturas em itens do OneDrive. As limitações se aplicam à criação e ao gerenciamento (obter, atualizar e excluir) assinaturas.
+As limitações adicionais se aplicam aos itens do OneDrive. As limitações se aplicam para criação e gerenciamento de assinaturas (receber, atualizar e excluir assinaturas).
 
 No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações de alteração são enviadas para os tipos de alterações solicitados na pasta assinada ou em qualquer arquivo, pasta ou outras instâncias **driveItem** em sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Limitações adicionais se aplicam a assinaturas em itens do Outlook. As limitações se aplicam à criação e ao gerenciamento (obter, atualizar e excluir) assinaturas.
+As limitações adicionais se aplicam aos itens do Outlook. As limitações se aplicam para criação e gerenciamento de assinaturas (receber, atualizar e excluir assinaturas).
 
-- A permissão delegada oferece suporte à assinatura de itens em pastas somente na caixa de correio do usuário conectado. Por exemplo, você não pode usar os calendários de permissão delegada. Leia para inscrever-se em eventos na caixa de correio de outro usuário.
+- A permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Por exemplo, você não pode usar os Calendários de permissões delegadas. Leia para assinar eventos na caixa de correio de outro usuário.
 - Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas_compartilhadas ou delegadas_:
 
   - Usar a permissão de aplicativos correspondentes para inscrever as alterações dos itens em uma pasta ou uma caixa de correio de _qualquer_ usuários no locatário.
@@ -145,6 +144,7 @@ Content-length: 252
   "changeType":"created,updated",
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
+  "lifecycleNotificationUrl":"https://webhook.azurewebsites.net/api/send/lifecycleNotifications",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
   "latestSupportedTlsVersion": "v1_2",

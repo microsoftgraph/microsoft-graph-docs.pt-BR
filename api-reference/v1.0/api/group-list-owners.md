@@ -5,18 +5,18 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 767d1d399f7be629d3d4e71fd9412cab863e8c9f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5190563b412fd5ae99c62a955981913acda1a0f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063657"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690249"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
 Namespace: microsoft.graph
 
-Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo. 
+Recupere uma lista dos proprietários do grupo. Os proprietários são um conjunto de usuários ou os diretores de serviço que têm permissão para modificar o objeto do grupo. Os proprietários não estão atualmente disponíveis no Microsoft Graph para os grupos que foram criados no Exchange ou grupos que são sincronizados a partir de um ambiente no local.
 
 >**Observação:** No momento, as entidades de serviço não estão listadas como proprietários de grupo devido à distribuição em estágios das entidades de serviço para o ponto de extremidade do Microsoft Graph v 1.0.
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
