@@ -40,8 +40,8 @@ items:
             href: /graph/webhooks?context=graph/api/beta
           - name: Tutorial
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: Notificações ausentes do Outlook (versão prévia)
-            href: /graph/webhooks-outlook-authz?context=graph/api/beta
+          - name: Notificações de alteração ausentes
+            href: /graph/webhooks-lifecycle
           - name: Notificações com dados de recursos
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: Receba notificações de diferentes maneiras (visualização)
@@ -757,7 +757,7 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: Excluir extensão
                     href: api/application-delete-extensionproperty.md
-              - name: Owners
+              - name: Proprietários
                 items:
                   - name: Listar proprietários
                     href: api/application-list-owners.md
@@ -948,7 +948,7 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: getMemberObjects
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: Owners
+              - name: Proprietários
                 items:
                   - name: Listar proprietários
                     href: api/serviceprincipal-list-owners.md
@@ -10503,6 +10503,20 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: Remover provedor de identidade
                         href: api/b2xidentityuserflow-delete-identityproviders.md
+                  - name: Atributos de fluxo do usuário
+                    items:
+                      - name: Atributo de fluxo do usuário
+                        href: resources/identityuserflowattribute.md
+                      - name: Listar
+                        href: api/identityuserflowattribute-list.md
+                      - name: Criar
+                        href: api/identityuserflowattribute-post.md
+                      - name: Obter
+                        href: api/identityuserflowattribute-get.md
+                      - name: Atualizar
+                        href: api/identityuserflowattribute-update.md
+                      - name: Excluir
+                        href: api/identityuserflowattribute-delete.md
           - name: Governança
             items:
               - name: Avaliações do acesso
@@ -12121,7 +12135,7 @@ items:
         items:
           - name: Visão geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
