@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 8ed19246dcc7885c9921919724beb5e76ed3b37e
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 69db1a4d65803c0405bc52548bb111619744a5a1
+ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289040"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755705"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -77,27 +77,27 @@ GET /me/calendars/{id}/events
 Atualmente, há suporte parcial para um calendário com base em uma Inscrição em Calendário da Internet (ICS):
 
 * Você pode adicionar um calendário baseado em ICS para uma caixa de correio do usuário por meio da interface do usuário, mas não através da API do Microsoft Graph.
-* [Listar os calendários do usuário](/graph/api/user-list-calendars?view=graph-rest-1.0) permite que você obtenha as propriedades **name**, **color** e **id** de cada [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
-* Você também pode [listar os eventos](/graph/api/calendar-list-events?view=graph-rest-1.0) de um calendário baseado em ICS.
+* [Listar os calendários do usuário](/graph/api/user-list-calendars) permite que você obtenha as propriedades **name** , **color** e **id** de cada [calendar](/graph/api/resources/calendar) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
+* Você também pode [listar os eventos](/graph/api/calendar-list-events) de um calendário baseado em ICS.
 
 ### <a name="attaching-large-files-to-events"></a>Anexar arquivos grandes a eventos
-Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem ou evento do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) só é bem sucedida se a mensagem ou o evento estiver na caixa de correio do usuário conectado.
+Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem ou evento do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession) só é bem sucedida se a mensagem ou o evento estiver na caixa de correio do usuário conectado.
 
 ### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Suporte de propriedade onlineMeetingUrl do Microsoft Teams
 
-Atualmente, a propriedade **onlineMeetingUrl** de um [evento](/graph/api/resources/event?view=graph-rest-1.0) de reunião do Skype indica a URL da reunião online. No entanto, essa propriedade para um evento de reunião do Microsoft Teams está definida como nula.
+Atualmente, a propriedade **onlineMeetingUrl** de um [evento](/graph/api/resources/event) de reunião do Skype indica a URL da reunião online. No entanto, essa propriedade para um evento de reunião do Microsoft Teams está definida como nula.
 
-A versão beta oferece uma solução alternativa, na qual é possível usar a propriedade **onlineMeetingProvider** de um [evento](/graph/api/resources/event?view=graph-rest-beta)para verificar se o provedor é o Microsoft Teams. Por meio da propriedade **onlineMeeting** do **evento**, você pode acessar o **joinUrl**.
+A versão beta oferece uma solução alternativa, na qual é possível usar a propriedade **onlineMeetingProvider** de um [evento](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true)para verificar se o provedor é o Microsoft Teams. Por meio da propriedade **onlineMeeting** do **evento** , você pode acessar o **joinUrl** .
 
 ## <a name="change-notifications"></a>Notificações de alteração
 
 ### <a name="additional-notifications-for-users"></a>Notificações adicionais para usuários
 
-As [assinaturas](/graph/api/resources/subscription) de alterações para o **usuário** com o **changeType** definido como **atualizado** também receberão notificações de **changeType**: **atualizado** na criação do usuário e exclusão reversível do usuário.
+As [assinaturas](/graph/api/resources/subscription) de alterações para o **usuário** com o **changeType** definido como **atualizado** também receberão notificações de **changeType** : **atualizado** na criação do usuário e exclusão reversível do usuário.
 
 ### <a name="additional-notifications-for-groups"></a>Notificações adicionais para grupos
 
-As [assinaturas](/graph/api/resources/subscription) de alterações no **grupo** com o **changeType** definido como **atualizado** também receberão notificações **changeType**: **atualizado** na criação do grupo e exclusão reversível do grupo.
+As [assinaturas](/graph/api/resources/subscription) de alterações no **grupo** com o **changeType** definido como **atualizado** também receberão notificações **changeType** : **atualizado** na criação do grupo e exclusão reversível do grupo.
 
 ## <a name="cloud-communications"></a>Comunicações na nuvem 
 
@@ -143,7 +143,7 @@ Somente os contatos pessoais têm suporte no momento. Os contatos organizacionai
 
 Na versão `/v1.0`, `GET /me/contactFolders` não inclui a pasta de contatos do usuário padrão.
 
-Uma correção será disponibilizada. Enquanto isso, você pode usar a seguinte consulta [list contacts](/graph/api/user-list-contacts?view=graph-rest-1.0) e a propriedade **parentFolderId** como uma solução alternativa para obter a ID da pasta de contatos padrão:
+Uma correção será disponibilizada. Enquanto isso, você pode usar a seguinte consulta [list contacts](/graph/api/user-list-contacts) e a propriedade **parentFolderId** como uma solução alternativa para obter a ID da pasta de contatos padrão:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -151,29 +151,29 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 Na consulta acima:
 
-1. `/me/contacts?$top=1` obtém as propriedades de um [contato](/graph/api/resources/contact?view=graph-rest-1.0) na pasta de contatos padrão.
+1. `/me/contacts?$top=1` obtém as propriedades de um [contato](/graph/api/resources/contact) na pasta de contatos padrão.
 2. A anexação de `&$select=parentFolderId` retorna apenas a propriedade **parentFolderId** do contato, que é a ID da pasta de contatos padrão.
 
 
 ### <a name="accessing-contacts-via-a-contact-folder-in-beta"></a>Acessar contatos por meio de uma pasta de contatos na versão beta
 
-Atualmente, não há na versão `/beta` um problema que impeça o acesso a um [contato](/graph/api/resources/contact?view=graph-rest-beta) especificando sua pasta pai na URL de solicitação REST, conforme mostrado nos dois cenários abaixo.
+Atualmente, não há na versão `/beta` um problema que impeça o acesso a um [contato](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true) especificando sua pasta pai na URL de solicitação REST, conforme mostrado nos dois cenários abaixo.
 
-* Acessando um contato a partir de um nível superior do [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta) do usuário.
+* Acessando um contato a partir de um nível superior do [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta&preserve-view=true) do usuário.
 
 ```http
 GET /me/contactfolders/{id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 
-* Acessando um contato contido em uma pasta filha de um **contactFolder**.  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
+* Acessando um contato contido em uma pasta filha de um **contactFolder** .  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
 
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
-Como alternativa, você pode simplesmente [obter](/graph/api/contact-get?view=graph-rest-beta) o contato, especificando sua identificação conforme mostrado abaixo, uma vez que o GET /contacts na versão `/beta` se aplica a todos os contatos na caixa de correio do usuário:
+Como alternativa, você pode simplesmente [obter](/graph/api/contact-get?view=graph-rest-beta&preserve-view=true) o contato, especificando sua identificação conforme mostrado abaixo, uma vez que o GET /contacts na versão `/beta` se aplica a todos os contatos na caixa de correio do usuário:
 
 ```http
 GET /me/contacts/{id}
@@ -193,20 +193,20 @@ O controle de alterações (consulta delta) não tem suporte nas propriedades de
 
 ### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>Criar um recurso e uma extensão aberta ao mesmo tempo
 
-Você não pode especificar uma extensão aberta ao mesmo tempo que cria uma instância de **administrativeUnit**, **device**, **group**, **organization** ou **user**. Primeiro você deve criar a instância e, depois, especificar os dados da extensão aberta em uma solicitação ``POST`` subsequente nessa instância.
+Você não pode especificar uma extensão aberta ao mesmo tempo que cria uma instância de **administrativeUnit** , **device** , **group** , **organization** ou **user** . Primeiro você deve criar a instância e, depois, especificar os dados da extensão aberta em uma solicitação ``POST`` subsequente nessa instância.
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Criar uma instância de recurso e adicionar dados de extensão de esquema ao mesmo tempo
 
-Não é possível especificar uma extensão de esquema na mesma operação, como criar uma instância de **contato**, **evento**, **mensagem** ou **postagem**.
+Não é possível especificar uma extensão de esquema na mesma operação, como criar uma instância de **contato** , **evento** , **mensagem** ou **postagem** .
 Você deve primeiro criar a instância de recurso e, em seguida, fazer um `PATCH` para essa instância para adicionar uma extensão de esquema e dados personalizados.
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Limite de 100 valores de propriedade de extensão de esquema permitido por instância de recursos
 
-Recursos de diretório, como **dispositivo**, **grupo** e **usuário**, atualmente limitam o número total de valores de propriedade de extensão de esquema que podem ser definidas em um recurso, até 100.
+Recursos de diretório, como **dispositivo** , **grupo** e **usuário** , atualmente limitam o número total de valores de propriedade de extensão de esquema que podem ser definidas em um recurso, até 100.
 
 ### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Não há suporte a filtragem em propriedades de extensão de esquema em todos os tipos de entidade
 
-Não há suporte a filtragem em propriedades de extensão de esquema (usando a expressão `$filter`) para tipos de entidade do Outlook – **contato**, **evento**, **mensagem** ou **postagem**.
+Não há suporte a filtragem em propriedades de extensão de esquema (usando a expressão `$filter`) para tipos de entidade do Outlook – **contato** , **evento** , **mensagem** ou **postagem** .
 
 ## <a name="files-onedrive"></a>Arquivos (OneDrive)
 
@@ -216,7 +216,7 @@ Não há suporte a filtragem em propriedades de extensão de esquema (usando a e
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Permissões para grupos e Microsoft Teams
 
-O Microsoft Graph expõe duas permissões ([*Group.Read.All*](permissions-reference.md#group-permissions) e [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) para obter acesso a APIs de grupos e Microsoft Teams.
+O Microsoft Graph expõe duas permissões ( [*Group.Read.All*](permissions-reference.md#group-permissions) e [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) para obter acesso a APIs de grupos e Microsoft Teams.
 As permissões do aplicativo devem ser consentidas por um administrador.
 No futuro, pretendemos adicionar novas permissões para grupos e equipes que possam ser consentidas pelos usuários.
 
@@ -226,7 +226,7 @@ Exemplos de recursos de grupo que oferecem suporte a permissões delegadas e som
 
 * Criar e excluir grupos
 * Obter e atualizar propriedades do grupo pertencentes ao gerenciamento ou administração de grupo
-* [Definições do diretório](/graph/api/resources/directoryobject?view=graph-rest-1.0), tipo e sincronização do grupo
+* [Definições do diretório](/graph/api/resources/directoryobject), tipo e sincronização do grupo
 * Membros e proprietários de grupo
 * Como obter conversas de grupo e threads
 
@@ -238,7 +238,7 @@ Exemplos de recursos de grupo que oferecem suporte somente a permissões delegad
 
 ### <a name="policy"></a>Política
 
-O uso do Microsoft Graph para criar e nomear um grupo do Microsoft 365 ultrapassa qualquer política de grupo do Microsoft 365 que seja configurada pelo Outlook Web App.
+Usar o Microsoft Graph para criar e nomear um grupo do Microsoft 365 ignora qualquer política de grupo do Microsoft 365 configurada por meio do Outlook na Web.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Definir a propriedade allowExternalSenders
 
@@ -250,7 +250,7 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>Identidade e acesso | APIs da entidade de serviço e aplicativo
 
-Há alterações para as entidades [application](/graph/api/resources/application?view=graph-rest-beta) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento:
+Há alterações para as entidades [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento:
 
 Limitações atuais:
 
@@ -312,11 +312,11 @@ Conforme o processamento em lotes JSON amadurece, essas limitações são removi
 ## <a name="mail-outlook"></a>Email (Outlook)
 
 ### <a name="attaching-large-files-to-messages"></a>Anexando grandes arquivos a mensagens
-Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem ou evento do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) só é bem sucedida se a mensagem ou o evento estiver na caixa de correio do usuário conectado.
+Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [anexar arquivos grandes](outlook-large-attachments.md) a uma mensagem ou evento do Outlook que está em uma caixa de correio compartilhada ou delegada. Com as permissões delegadas, [createUploadSession](/graph/api/attachment-createuploadsession) só é bem sucedida se a mensagem ou o evento estiver na caixa de correio do usuário conectado.
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>O parâmetro de comentário para criar um rascunho
 
-O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](/graph/api/message-createreply?view=graph-rest-1.0), [createReplyAll](/graph/api/message-createreplyall?view=graph-rest-1.0), [createForward](/graph/api/message-createforward?view=graph-rest-1.0)) não se torna parte do corpo do rascunho de mensagem resultante.
+O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ( [createReply](/graph/api/message-createreply), [createReplyAll](/graph/api/message-createreplyall), [createForward](/graph/api/message-createforward)) não se torna parte do corpo do rascunho de mensagem resultante.
 
 ### <a name="get-messages-returns-chats-in-microsoft-teams"></a>As mensagens GET retornam chats no Microsoft Teams
 
@@ -326,10 +326,10 @@ Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclu
 
 ### <a name="get-teams-is-not-supported"></a>GET /teams não tem suporte
 
-Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
+Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams).
 
 ### <a name="post-teams-is-only-available-in-beta"></a>POST /teams está disponível apenas na versão beta
-Para criar equipes na versão v1.0, confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0).
+Para criar equipes na versão v1.0, confira [criar equipe](/graph/api/team-put-teams).
 
 ### <a name="missing-teams-in-list-all-teams"></a>Equipes ausentes em listas todas as equipes
 
@@ -346,7 +346,7 @@ Os usuários podem ser criados imediatamente por um POST na entidade do usuário
 
 ### <a name="photo-restrictions"></a>Restrições de foto
 
-A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, as fotos que *possam* ter sido previamente armazenadas usando a propriedade **thumbnailPhoto** (usando o Azure AD Graph ou por meio da sincronização do AD Connect) deixarão de estar acessíveis por meio da propriedade **foto** do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0) do Microsoft Graph.
+A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, as fotos que *possam* ter sido previamente armazenadas usando a propriedade **thumbnailPhoto** (usando o Azure AD Graph ou por meio da sincronização do AD Connect) deixarão de estar acessíveis por meio da propriedade **foto** do recurso [usuário](/graph/api/resources/user) do Microsoft Graph.
 A falha na leitura ou na atualização de uma foto, nesse caso, resultaria no seguinte erro:
 
 ```javascript
@@ -364,11 +364,11 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 
 ### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>A revogação de sessões de entrada retorna um código HTTP errado
 
-O [usuário: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) deve retornar uma resposta `204 No content` para ter revogações bem-sucedidas e um código de erro HTTP (4xx ou 5xx) se algo der errado com a solicitação.  No entanto, devido a um problema de serviço, essa API retorna um parâmetro `200 OK` e um parâmetro booleano que é sempre true.  Até que isso seja corrigido, é recomendado que desenvolvedores simplesmente tratem qualquer código de retorno 2xx como bem-sucedido para esta API.
+O [usuário: revokeSignInSessions API](/graph/api/user-revokesigninsessions) deve retornar uma resposta `204 No content` para ter revogações bem-sucedidas e um código de erro HTTP (4xx ou 5xx) se algo der errado com a solicitação.  No entanto, devido a um problema de serviço, essa API retorna um parâmetro `200 OK` e um parâmetro booleano que é sempre true.  Até que isso seja corrigido, é recomendado que desenvolvedores simplesmente tratem qualquer código de retorno 2xx como bem-sucedido para esta API.
 
 ### <a name="incomplete-objects-when-using-getbyids-request"></a>Objetos incompletos ao usar a solicitação getByIds
 
-A solicitação de objetos usando a opção de [Obter objetos de diretório de uma lista de IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) deve retornar objetos completos. No entanto, atualmente, os objetos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) no ponto de extremidade v1.0 são retornados com um conjunto limitado de propriedades. Como solução temporária, ao usar a operação em combinação com a opção de consulta `$select`, objetos de [usuário](/graph/api/resources/user?view=graph-rest-1.0) mais completos serão retornados. Esse comportamento não está de acordo com as especificações do OData. Como esse comportamento pode ser atualizado no futuro, use esta solução alternativa apenas quando fornecer `$select=` com todas as propriedades de seu interesse e somente se futuras alterações nessa solução alternativa forem aceitáveis.
+A solicitação de objetos usando a opção de [Obter objetos de diretório de uma lista de IDs](/graph/api/directoryobject-getbyids) deve retornar objetos completos. No entanto, atualmente, os objetos de [usuário](/graph/api/resources/user) no ponto de extremidade v1.0 são retornados com um conjunto limitado de propriedades. Como solução temporária, ao usar a operação em combinação com a opção de consulta `$select`, objetos de [usuário](/graph/api/resources/user) mais completos serão retornados. Esse comportamento não está de acordo com as especificações do OData. Como esse comportamento pode ser atualizado no futuro, use esta solução alternativa apenas quando fornecer `$select=` com todas as propriedades de seu interesse e somente se futuras alterações nessa solução alternativa forem aceitáveis.
 
 ## <a name="query-parameter-limitations"></a>Limitações de parâmetro de consulta
 

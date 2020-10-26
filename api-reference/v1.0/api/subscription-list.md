@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: e39fed977432c833edbc50c9cb850c33fb4c3e1e
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 98b21b3ee8e049c4c3069406328be364fb89b0e2
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635485"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742214"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
@@ -46,8 +46,8 @@ Para esses cenários, é necessária uma permissão delegada Subscription.Read.A
 
 | Contexto do aplicativo de chamada | A resposta contém |
 |:-----|:---------------- |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um não administrador*. <br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica a contas pessoais da Microsoft e contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** apenas para o usuário conectado. |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um administrador*.<br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica apenas a contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
+| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um não administrador* . <br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica a contas pessoais da Microsoft e contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** apenas para o usuário conectado. |
+| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um administrador* .<br/>-e-<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Nota: Isso se aplica apenas a contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -134,6 +134,7 @@ Content-length: 586
       "changeType": "updated,deleted",
       "clientState": null,
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
+      "lifecycleNotificationUrl":"https://webhook.azurewebsites.net/api/send/lifecycleNotifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
       "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
       "latestSupportedTlsVersion": "v1_2",
