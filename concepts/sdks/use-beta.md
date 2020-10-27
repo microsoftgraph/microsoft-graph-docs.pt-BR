@@ -3,16 +3,16 @@ title: Usar os SDKs do Microsoft Graph com a API beta
 description: Descreve como usar os SDKs do Microsoft Graph com a versão beta da API.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 6a0444cdb30b2e07c4d93f683aaef2f5283c3846
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: fe0272ca46b4bdea1d36048296d1a702b9e1f469
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288963"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771843"
 ---
 # <a name="use-the-microsoft-graph-sdks-with-the-beta-api"></a>Usar os SDKs do Microsoft Graph com a API beta
 
-Os SDKs do Microsoft Graph usam o ponto de extremidade do Microsoft Graph [v 1.0](/graph/api/overview?view=graph-rest-1.0) por padrão. Os SDKs podem ser usados com o ponto de extremidade [beta](/graph/api/overview?view=graph-rest-beta) para aplicativos de não produção. O método para acessar o ponto de extremidade beta depende de qual SDK você está usando.
+Muitos dos SDKs do Microsoft Graph usam o ponto de extremidade do Microsoft Graph [v 1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=false) por padrão. Os SDKs podem ser usados com o ponto de extremidade [beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true) para aplicativos de não produção. O método para acessar o ponto de extremidade beta depende de qual SDK você está usando.
 
 [!INCLUDE [beta-disclaimer](../../api-reference/includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ using Microsoft.Graph.Beta;
 GraphServiceClient graphClient = new GraphServiceClient(...);
 ```
 
-## <a name="typescript"></a>[TypeScript](#tab/typeScript)
+# <a name="typescript"></a>[TypeScript](#tab/typeScript)
 
 A [biblioteca de cliente JavaScript do Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-javascript) pode chamar a API beta de uma das duas maneiras.
 
@@ -76,6 +76,33 @@ NSString* meUrlString = [NSString stringWithFormat:@"%@/me", "https://graph.micr
 NSURL* meUrl = [[NSURL alloc] initWithString:meUrlString];
 
 NSMutableURLRequest* meRequest = [[NSMutableURLRequest alloc] initWithURL:meUrl];
+```
+
+# <a name="php"></a>[PHP](#tab/PHP)
+
+O [SDK do Microsoft Graph para php](https://github.com/microsoftgraph/msgraph-sdk-php) é compatível com os modelos e o ponto de extremidade beta. Você define o ponto de extremidade beta com o `setApiVersion` método. Você precisará remover a ambiguidade dos modelos v 1.0 e beta fornecendo um alias.
+
+```php
+use Microsoft\Graph\Graph;
+use Beta\Microsoft\Graph\Model as BetaModel;
+
+class UseBeta
+{
+    public function run()
+    {
+        $accessToken = 'xxx';
+
+        $graph = new Graph();
+        $graph->setAccessToken($accessToken);
+
+        $user = $graph->setApiVersion("beta")
+                      ->createRequest("GET", "/me")
+                      ->setReturnType(BetaModel\User::class)
+                      ->execute();
+
+        echo "Hello, I am $user->getGivenName() ";
+    }
+}
 ```
 
 ---

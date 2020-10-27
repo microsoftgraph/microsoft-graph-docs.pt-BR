@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 2fc3e7066ee53af6864400bb221b9494246ec7b5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aae37d83bafb9c8ad59dcbce1de6b8875ee091dd
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090016"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771789"
 ---
 # <a name="get-iteminsightssettings"></a>Obter itemInsightsSettings
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read, User.ReadWrite |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.Read, User.ReadWrite  |
+|Delegada (conta corporativa ou de estudante) | User.Read, User.ReadWrite |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
 
 >**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha uma função de administrador global.
 

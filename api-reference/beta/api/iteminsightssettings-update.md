@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 89712532983d8fd3dc34d3c69be451a5b43d5473
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 12c6f737797ff81727cccfd02192c76f78a391ba
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090012"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771787"
 ---
 # <a name="update-iteminsightssettings"></a>Atualizar itemInsightsSettings
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.ReadWrite |
+|Delegada (conta corporativa ou de estudante) | User.ReadWrite |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
 
 >**Observação:** O uso de permissões delegadas para esta operação exige que o usuário conectado tenha uma função de administrador global.
 
@@ -55,7 +55,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |isEnabledInOrganization|Boolean| `true` Se o item de organização insights estiver habilitado; `false` se o item de organização insights estiver desabilitado para todos os usuários sem exceções. O padrão é `true`. Opcional.|
-|disabledForGroup|Cadeia de caracteres| A ID de um grupo do Azure AD, do qual as insights do item dos membros estão desabilitadas. O padrão é `empty`. Opcional.|
+|disabledForGroup|String| A ID de um grupo do Azure AD, do qual as insights do item dos membros estão desabilitadas. O padrão é `empty`. Opcional.|
 
 ## <a name="response"></a>Resposta
 
@@ -67,7 +67,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de solicitação de como o administrador atualiza a configuração de privacidade "**disabledForGroup**" para proibir a exibição de insights de item de usuários de um grupo específico do Azure AD.
+Veja a seguir um exemplo de solicitação de como o administrador atualiza a configuração de privacidade " **disabledForGroup** " para proibir a exibição de insights de item de usuários de um grupo específico do Azure AD.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
