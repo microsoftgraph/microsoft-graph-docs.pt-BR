@@ -3,12 +3,12 @@ title: Introdução ao SDK do Microsoft Graph PowerShell
 description: Introdução ao SDK do Microsoft Graph PowerShell usando-o realiza algumas tarefas básicas.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: ab4a0c5a65dc752116d3622f71e024e039d90675
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: eeeaee7bf45e3b8d17f866425556102eef2c1cae
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193651"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782883"
 ---
 # <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Introdução ao SDK do Microsoft Graph PowerShell
 
@@ -41,16 +41,16 @@ O `User.Read.All` escopo de permissão habilitará as duas primeiras chamadas, e
 
 ### <a name="sign-in"></a>Entrar
 
-Use o `Connect-Graph` comando para entrar com os escopos necessários. Você precisará entrar com uma conta de administrador para se concordar com os escopos necessários.
+Use o `Connect-MgGraph` comando para entrar com os escopos necessários. Você precisará entrar com uma conta de administrador para se concordar com os escopos necessários.
 
 ```powershell
-Connect-Graph -Scopes "User.Read.All","Group.ReadWrite.All"
+Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
 O comando solicita que você acesse uma página da Web para entrar usando um código de dispositivo. Depois de fazer isso, o comando indica êxito com uma `Welcome To Microsoft Graph!` mensagem. Você só precisa fazer isso uma vez por sessão.
 
 > [!TIP]
-> Você pode adicionar permissões adicionais repetindo o `Connect-Graph` comando com os novos escopos de permissão.
+> Você pode adicionar permissões adicionais repetindo o `Connect-MgGraph` comando com os novos escopos de permissão.
 
 ## <a name="call-microsoft-graph"></a>Chamar o Microsoft Graph
 

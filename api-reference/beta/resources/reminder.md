@@ -3,14 +3,14 @@ title: Tipo de recurso reminder
 description: Um lembrete para um evento em um calendário do usuário.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: outlook
 author: harini84
-ms.openlocfilehash: ee886e369843c089d800a87709de4e6c4c8d98d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4961e437af6e11af2bc18197181eb01fe89d3c97
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029047"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782711"
 ---
 # <a name="reminder-resource-type"></a>Tipo de recurso reminder
 
@@ -29,7 +29,7 @@ Um lembrete para um [evento](event.md) em um [calendário](calendar.md)do usuár
 |eventLocation|[Location](location.md)|O local do evento.|
 |eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
 |eventSubject|String|O texto da linha de assunto do evento.|
-|eventWebLink|String|A URL para abrir o evento no Outlook na Web.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer login se já não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
+|eventWebLink|String|A URL para abrir o evento no Outlook na Web.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer login se já não estiver conectado no navegador.<br/><br/>Este URL não pode ser acessado a partir de um iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário do lembrete.|
 
 ## <a name="json-representation"></a>Representação JSON

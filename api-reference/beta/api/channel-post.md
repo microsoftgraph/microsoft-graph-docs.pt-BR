@@ -2,15 +2,15 @@
 title: Criar canal
 description: Crie um novo canal em uma equipe da Microsoft, conforme especificado no corpo da solicitação.
 localization_priority: Normal
-author: clearab
+author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 765cbee31f97ab20db34fb07052beaaa5f6e99c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41d0e74ef3e08102a5fb670159d0f7e51085817d
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987065"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782815"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -26,13 +26,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Channel. Create. Group *, Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All, entrabalho. Migrate. All|
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,6 +54,11 @@ No corpo da solicitação, fornça uma representação JSON do objeto [canal](..
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [canal](../resources/channel.md) no corpo da resposta.
+
+Se a solicitação não tiver êxito, este método retornará um `400 Bad Request` código de resposta. Estes são os motivos comuns para esta resposta:
+
+* **createdDateTime** está definido no futuro.
+* **createdDateTime** está especificado corretamente, mas o atributo de instância **channelCreationMode** está ausente ou definido como um valor inválido.
 
 ## <a name="examples"></a>Exemplos
 
@@ -78,6 +83,7 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -121,7 +127,6 @@ Content-length: 201
 
 O exemplo a seguir mostra uma solicitação para criar um canal privado e adicionar um usuário como proprietário da equipe.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -147,6 +152,7 @@ Content-type: application/json
      ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -161,7 +167,8 @@ Content-type: application/json
 
 ---
 
-
+<!-- markdownlint-disable MD001 -->
+<!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>Resposta
 
 O exemplo a seguir mostra a resposta.
@@ -189,6 +196,39 @@ Content-length: 201
 }
 ```
 
+### <a name="example-3-create-a-channel-in-migration-mode"></a>Exemplo 3: criar um canal no modo de migração
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra como criar um canal para mensagens importadas.
+
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels
+Content-Type: application/json
+
+{
+  "@microsoft.graph.channelCreationMode": "migration",
+  "displayName": "Architecture Discussion",
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
+Content-Location: /teams/{teamId}/channels/{channelId}
+```
+
+## <a name="see-also"></a>Confira também
+
+* [Concluir a migração de um canal](channel-completemigration.md)
+* [Importar mensagens de plataforma de terceiros para o Teams usando o Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [Criar equipe](team-post.md)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -202,5 +242,3 @@ Content-length: 201
   ]
 }
 -->
-
-

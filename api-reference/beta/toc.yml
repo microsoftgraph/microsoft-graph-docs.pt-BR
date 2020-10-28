@@ -466,7 +466,7 @@ items:
         items:
           - name: Visão geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1402,7 +1402,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
-          - name: Presença (pré-visualização)
+          - name: Presença (visualização)
             href: resources/presence.md
             items:
               - name: Obter presença
@@ -12084,7 +12084,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -12270,6 +12270,8 @@ items:
                 href: api/team-get-photo.md
               - name: Atualizar foto da equipe
                 href: api/profilephoto-update.md
+              - name: Migração completa para o Team
+                href: api/team-completemigration.md
           - name: Grupo (equipe)
             href: resources/group.md
             items:
@@ -12326,6 +12328,8 @@ items:
                 href: api/channel-patch.md
               - name: Delete channel
                 href: api/channel-delete.md
+              - name: Migração completa para o canal
+                href: api/channel-completemigration.md
               - name: Obter pasta de arquivos.
                 href: api/channel-get-filesfolder.md
               - name: Listar mensagens do canal
