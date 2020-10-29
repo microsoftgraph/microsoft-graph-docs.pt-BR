@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 6181e4160af36ab1883aeb006f39be86c6e7540f
-ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
+ms.openlocfilehash: c3521733b2bf6f048acc0ffa858312af371b6f51
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753399"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771830"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -34,7 +34,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | Beta e v1.0 | Adicionada [notificações do ciclo de vida](./webhooks-lifecycle.md).|
+| Adição | v1.0 | Adicionado [notificações de ciclo de vida](./webhooks-lifecycle.md) para [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-1.0), [contato](/graph/api/resources/contact?view=graph-rest-1.0), [evento](/graph/api/resources/event?view=graph-rest-1.0), e [mensagem](/graph/api/resources/message?view=graph-rest-1.0).|
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 
