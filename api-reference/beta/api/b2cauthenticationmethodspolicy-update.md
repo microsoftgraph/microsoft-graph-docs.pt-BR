@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fc40a64c1af6282b0a618062cb9a0bb4cc62cc5e
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 06f48adfd89bc6ae9a19f5ce4775b354a354dff6
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458028"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796597"
 ---
 # <a name="update-b2cauthenticationmethodspolicy"></a>Atualizar b2cAuthenticationMethodsPolicy
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao atualizar [b2cAuthenti
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEmailPasswordAuthenticationEnabled|Booliano|O administrador de locatário pode configurar contas locais usando o email se o método de autenticação de email e senha estiver habilitado.|
-|isUserNameAuthenticationEnabled|Booliano|O administrador de locatário pode configurar contas locais usando nome de usuário se o método de autenticação do nome de usuário e senha estiver habilitado.|
+|isUserNameAuthenticationEnabled|Booleano|O administrador de locatários pode configurar contas locais usando o nome de usuário se o método de autenticação do nome de usuário e senha estiver habilitado.|
 
 ## <a name="response"></a>Resposta
 

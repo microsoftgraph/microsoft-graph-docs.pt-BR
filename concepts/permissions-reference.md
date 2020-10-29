@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 9b0fd92958573fe067d3030273be1a93542054c1
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: b1d701f467ce0c1a3284c91651dbae0589cd1a08
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742178"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782438"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -21,7 +21,7 @@ Para saber mais sobre como funcionam as permissões, [Confira noções básicas 
 
 ## <a name="microsoft-graph-permission-names"></a>Nomes de permissões do Microsoft Graph
 
-Os nomes de permissões do Microsoft Graph seguem um padrão simples: _resource.operation.constraint_. Por exemplo, _User.Read_ concede permissão para ler o perfil do usuário conectado, _User.ReadWrite_ concede permissão para ler e modificar o perfil do usuário conectado e _Mail.Send_ concede permissão para enviar emails em nome do usuário conectado.
+Os nomes de permissões do Microsoft Graph seguem um padrão simples: _resource.operation.constraint_ . Por exemplo, _User.Read_ concede permissão para ler o perfil do usuário conectado, _User.ReadWrite_ concede permissão para ler e modificar o perfil do usuário conectado e _Mail.Send_ concede permissão para enviar emails em nome do usuário conectado.
 
 O elemento _constraint_ do nome determina a extensão potencial do acesso que o aplicativo terá dentro do diretório. No momento, o Microsoft Graph é compatível com as seguintes restrições:
 
@@ -30,7 +30,7 @@ O elemento _constraint_ do nome determina a extensão potencial do acesso que o 
 * **AppFolder** concede permissão para o aplicativo ler e gravar arquivos em uma pasta dedicada no OneDrive. Essa restrição é exposta somente em [Permissões de arquivos](#files-permissions) e só é válida para contas da Microsoft.
 * Se **sem restrição** estiver especificado, o aplicativo estará limitado a executar as operações nos recursos pertencentes ao usuário conectado. Por exemplo, _User.Read_ concede privilégios para ler o perfil apenas do usuário conectado e _Mail.Read_ concede permissão para ler apenas os emails na caixa de correio do usuário conectado.
 
-> **Observação**: Em cenários delegados, as permissões efetivas concedidas ao aplicativo podem ser limitadas pelos privilégios do usuário conectado na organização.
+> **Observação** : Em cenários delegados, as permissões efetivas concedidas ao aplicativo podem ser limitadas pelos privilégios do usuário conectado na organização.
 
 ## <a name="microsoft-accounts-and-work-or-school-accounts"></a>Contas da Microsoft e contas corporativas e de estudante
 
@@ -54,7 +54,7 @@ Container objects such as groups support members of various types, for example u
 
 This is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type (not just member links). Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
 
-For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user, a group, and a device.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user and group objects in the group, but not the device object.  In the response, all the selected properties of the user and group objects are returned. For the device object, however, only limited information is returned.  The data type and object ID are returned for the device, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
+For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user, a group, and a device.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user and group objects in the group, but not the device object.  In the response, all the selected properties of the user and group objects are returned. For the device object, however, only limited information is returned.  The data type and object ID are returned for the device, but all other properties have a value of *null* . Apps without permission will not be able to use the ID to get the actual object.
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl HTTP/1.1
@@ -117,7 +117,7 @@ Segue a resposta de JSON:
 
 ### <a name="remarks"></a>Comentários
 
-_AccessReview.Read.All_, _AccessReview.ReadWrite. All_ e _AccessReview.ReadWrite.Membership _ são válidos apenas para contas corporativas ou de estudante.
+_AccessReview.Read.All_ , _AccessReview.ReadWrite. All_ e _AccessReview.ReadWrite.Membership_ são válidos apenas para contas corporativas ou de estudante.
 
 For an app with delegated permissions to read access reviews of a group or app, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or User Administrator. For an app with delegated permissions to write access reviews of a group or app, the signed-in user must be a member of one of the following administrator roles: Global Administrator or User Administrator.
 
@@ -153,11 +153,11 @@ _AdministrativeUnit.Read.All_ e _AdministrativeUnit. ReadWrite.All_ só são vá
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-- _AdministrativeUnit.Read.All_: Ler unidades administrativas (`GET /beta/administrativeUnits`)
-- _AdministrativeUnit.Read.All_: Ler lista de membros de uma unidade administrativa (`GET /beta/administrativeUnits/<id>/members`)
-- _AdministrativeUnit.ReadWrite.All_: Criar uma unidade administrativa (`POST /beta/administrativeUnits`)
-- _AdministrativeUnit.ReadWrite.All_: Atualizar uma unidade administrativa (`PATCH /beta/administrativeUnits/<id>`)
-- _AdministrativeUnit.ReadWrite.All_: Adicionar membros a uma unidade administrativa (`POST /beta/administrativeUnits/<id>/members`)
+- _AdministrativeUnit.Read.All_ : Ler unidades administrativas (`GET /beta/administrativeUnits`)
+- _AdministrativeUnit.Read.All_ : Ler lista de membros de uma unidade administrativa (`GET /beta/administrativeUnits/<id>/members`)
+- _AdministrativeUnit.ReadWrite.All_ : Criar uma unidade administrativa (`POST /beta/administrativeUnits`)
+- _AdministrativeUnit.ReadWrite.All_ : Atualizar uma unidade administrativa (`PATCH /beta/administrativeUnits/<id>`)
+- _AdministrativeUnit.ReadWrite.All_ : Adicionar membros a uma unidade administrativa (`POST /beta/administrativeUnits/<id>/members`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -179,7 +179,7 @@ Nenhuma.
 
 #### <a name="delegated"></a>Delegado
 
-* _Analytics.Read_: [Listar as configurações relacionadas para um usuário](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings`)
+* _Analytics.Read_ : [Listar as configurações relacionadas para um usuário](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings`)
 
 #### <a name="application"></a>Application
 
@@ -208,10 +208,10 @@ No momento o único catálogo é a lista de aplicativos no [Microsoft Teams](tea
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegated
-* _AppCatalog.ReadWrite.All_: [Lista todos os aplicativos no catálogo](/graph/api/teamsapp-list?view=graph-rest-beta) (`GET /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_: [Publicar um aplicativo](/graph/api/teamsapp-publish?view=graph-rest-beta) (`POST /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_: [Atualizar um aplicativo publicado](/graph/api/teamsapp-update?view=graph-rest-beta) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
-* _AppCatalog.ReadWrite.All_: [Remover um aplicativo publicado](/graph/api/teamsapp-delete?view=graph-rest-beta) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_ : [Lista todos os aplicativos no catálogo](/graph/api/teamsapp-list?view=graph-rest-beta) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_ : [Publicar um aplicativo](/graph/api/teamsapp-publish?view=graph-rest-beta) (`POST /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_ : [Atualizar um aplicativo publicado](/graph/api/teamsapp-update?view=graph-rest-beta) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_ : [Remover um aplicativo publicado](/graph/api/teamsapp-delete?view=graph-rest-beta) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
 #### <a name="application"></a>Aplicativo
 
@@ -247,16 +247,16 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 #### <a name="delegated"></a>Delegado
 
-* _Application.Read.All_: listar todos os aplicativos (`GET /beta/applications`)
-* _Application.ReadWrite.All_: atualizar uma entidade de serviço (`PATCH /beta/servicePrincipals/{id}`)
+* _Application.Read.All_ : listar todos os aplicativos (`GET /beta/applications`)
+* _Application.ReadWrite.All_ : atualizar uma entidade de serviço (`PATCH /beta/servicePrincipals/{id}`)
 
 #### <a name="application"></a>Aplicativo
 
-* _Application.Read.All_: listar todos os aplicativos (`GET /beta/applications`)
-* _Application.ReadWrite.All_: excluir uma entidade de serviço (`DELETE /beta/servicePrincipals/{id}`)
-* _Application.ReadWrite.OwnedBy_: criar um aplicativo (`POST /beta/applications`)
-* _Application.ReadWrite.OwnedBy_: Listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_: adicionar outro proprietário a um aplicativo próprio (`POST /applications/{id}/owners/$ref`).
+* _Application.Read.All_ : listar todos os aplicativos (`GET /beta/applications`)
+* _Application.ReadWrite.All_ : excluir uma entidade de serviço (`DELETE /beta/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_ : criar um aplicativo (`POST /beta/applications`)
+* _Application.ReadWrite.OwnedBy_ : Listar todos os aplicativos pertencentes ao aplicativo da chamada (`GET /beta/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_ : adicionar outro proprietário a um aplicativo próprio (`POST /applications/{id}/owners/$ref`).
 > OBSERVAÇÃO: isso pode exigir permissões adicionais.
 
 ---
@@ -278,8 +278,8 @@ Nenhuma.
 
 #### <a name="delegated"></a>Delegado
 
-* _BitlockerKey.ReadBasic.All_: Listar as chaves de recuperação do BitLocker para todos os dispositivos no locatário sem retornar a propriedade 'key' (`GET /bitlocker/recoveryKeys`).
-* _BitlockerKey.Read.All_: Obter uma chave de recuperação do BitLocker com a chave de recuperação (`GET /bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key`)
+* _BitlockerKey.ReadBasic.All_ : Listar as chaves de recuperação do BitLocker para todos os dispositivos no locatário sem retornar a propriedade 'key' (`GET /bitlocker/recoveryKeys`).
+* _BitlockerKey.Read.All_ : Obter uma chave de recuperação do BitLocker com a chave de recuperação (`GET /bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key`)
 
 ---
 
@@ -302,10 +302,10 @@ Nenhuma.
 
 #### <a name="delegated"></a>Delegado
 
-* _Bookings.Read.All_: obter a ID e os nomes do conjunto de empresas do Bookings que foi criado para um locatário (`GET /bookingBusinesses`).
-* _BookingsAppointment.ReadWrite.All_: criar um compromisso para um serviço em uma empresa de reservas (`POST /bookingBusinesses/{id}/appointments`).
-* _Bookings.ReadWrite.All_: criar um novo serviço para as empresas especificadas de reservas (`POST /bookingBusinesses/{id}/services`).
-* _Bookings.Manage.All_: disponibilizar a página de agendamento dessa empresa para clientes externos (`POST /bookingBusinesses/{id}/publish`).
+* _Bookings.Read.All_ : obter a ID e os nomes do conjunto de empresas do Bookings que foi criado para um locatário (`GET /bookingBusinesses`).
+* _BookingsAppointment.ReadWrite.All_ : criar um compromisso para um serviço em uma empresa de reservas (`POST /bookingBusinesses/{id}/appointments`).
+* _Bookings.ReadWrite.All_ : criar um novo serviço para as empresas especificadas de reservas (`POST /bookingBusinesses/{id}/services`).
+* _Bookings.Manage.All_ : disponibilizar a página de agendamento dessa empresa para clientes externos (`POST /bookingBusinesses/{id}/publish`).
 
 ## <a name="calendars-permissions"></a>Permissões de calendários
 
@@ -334,18 +334,53 @@ Nenhuma.
 
 #### <a name="delegated"></a>Delegado
 
-* _Calendars.Read_: Obter eventos do calendário do usuário entre 23 de abril de 2017 e 29 de abril de 2017 (`GET /me/calendarView?startDateTime=2017-04-23T00:00:00&endDateTime=2017-04-29T00:00:00`).
-* _Calendars.Read.Shared_: Encontrar horários de reuniões onde todos os participantes estejam disponíveis (`POST /users/{id|userPrincipalName}/findMeetingTimes`).
-* _Calendars.ReadWrite_: Adicionar um evento ao calendário do usuário (`POST /me/events`).
+* _Calendars.Read_ : Obter eventos do calendário do usuário entre 23 de abril de 2017 e 29 de abril de 2017 (`GET /me/calendarView?startDateTime=2017-04-23T00:00:00&endDateTime=2017-04-29T00:00:00`).
+* _Calendars.Read.Shared_ : Encontrar horários de reuniões onde todos os participantes estejam disponíveis (`POST /users/{id|userPrincipalName}/findMeetingTimes`).
+* _Calendars.ReadWrite_ : Adicionar um evento ao calendário do usuário (`POST /me/events`).
 
 #### <a name="application"></a>Aplicativo
 
-* _Calendars.Read_: Localizar eventos do calendário de uma sala de conferências organizado por pedro@contoso.com (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
-* _Calendars.Read_: Listar todos os eventos do mês de maio do calendário de um usuário (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`)
-* _Calendars.ReadWrite_: Adicionar um evento de folga aprovada (`POST /users/{id | userPrincipalName}/events`) ao calendário de um usuário.
-* _Calendars.Send_: Enviar uma mensagem (`POST /users/{id | userPrincipalName}/sendCalendars`).
+* _Calendars.Read_ : Localizar eventos do calendário de uma sala de conferências organizado por pedro@contoso.com (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
+* _Calendars.Read_ : Listar todos os eventos do mês de maio do calendário de um usuário (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`)
+* _Calendars.ReadWrite_ : Adicionar um evento de folga aprovada (`POST /users/{id | userPrincipalName}/events`) ao calendário de um usuário.
+* _Calendars.Send_ : Enviar uma mensagem (`POST /users/{id | userPrincipalName}/sendCalendars`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+## <a name="channel-permissions"></a>Permissões de canal
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Channel.ReadBasic.All_ | Ler os nomes e descrições dos canais. | Ler os nomes e as descrições dos canais, em nome do usuário conectado.    | Não | Não |
+| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, em nome do usuário conectado.   | Sim | Não |
+| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, em nome do usuário conectado.   | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos 
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Channel.ReadBasic.All_ | Ler os nomes e as descrições de todos os canais. | Ler todos os nomes e descrições do canal, sem um usuário conectado.  | Sim | Não |
+| _Channel.Create_ | Criar canais. | Criar canais em qualquer equipe, sem um usuário conectado.  | Sim | Não |
+| _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, sem um usuário conectado.  | Sim | Não |
+|_Teamwork.Migrate.All_|Gerenciar a migração do Microsoft Teams|Criar e gerenciar recursos de migração do Microsoft Teams|Sim|Sim|
+
+## <a name="channel-settings-permissions"></a>Permissões de configurações de canal 
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações dos canais. | Ler todos os nomes, descrições e configurações dos canais, em nome do usuário conectado.   | Sim | Não |
+| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações dos canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, em nome do usuário conectado.  | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações de todos os canais. | Ler todos os nomes, descrições e configurações do canal, sem um usuário conectado.  | Sim | Não |
+| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado. | Sim | Não |
 
 ## <a name="calls-permissions"></a>Permissões de chamadas
 
@@ -373,11 +408,11 @@ Nenhum.
 
 #### <a name="application"></a>Aplicativo
 
-* _Calls.Initiate.All_: fazer uma chamada de ponto a ponto do aplicativo para um usuário na organização (`POST /beta/communications/calls`).
-* _Calls.InitiateGroupCall.All_: Faça uma chamada em grupo do aplicativo para um grupo de usuários na organização (`POST /beta/communications/calls`).
-* _Calls.JoinGroupCall.All_: ingressar em uma chamada de grupo ou em uma reunião online do aplicativo (`POST /beta/communications/calls`).
-* _Calls.JoinGroupCallasGuest.All_: Ingresse em uma chamada de grupo ou em uma reunião online do aplicativo, mas o aplicativo só tem privilégios de convidado na reunião (`POST /beta/communications/calls`).
-* _Calls.AccessMedia.All_: criar ou ingressar em uma chamada e o aplicativo é o acesso direto aos fluxos de participantes de mídia na chamada (`POST /beta/communications/calls`).
+* _Calls.Initiate.All_ : fazer uma chamada de ponto a ponto do aplicativo para um usuário na organização (`POST /beta/communications/calls`).
+* _Calls.InitiateGroupCall.All_ : Faça uma chamada em grupo do aplicativo para um grupo de usuários na organização (`POST /beta/communications/calls`).
+* _Calls.JoinGroupCall.All_ : ingressar em uma chamada de grupo ou em uma reunião online do aplicativo (`POST /beta/communications/calls`).
+* _Calls.JoinGroupCallasGuest.All_ : Ingresse em uma chamada de grupo ou em uma reunião online do aplicativo, mas o aplicativo só tem privilégios de convidado na reunião (`POST /beta/communications/calls`).
+* _Calls.AccessMedia.All_ : criar ou ingressar em uma chamada e o aplicativo é o acesso direto aos fluxos de participantes de mídia na chamada (`POST /beta/communications/calls`).
 
 > **Observação:** para obter exemplos solicitação, confira [Criar chamada](/graph/api/application-post-calls?view=graph-rest-beta).
 
@@ -411,9 +446,9 @@ The _CallRecords.Read.All_ permission grants an application privileged access to
 
 #### <a name="application"></a>Aplicativo
 
-* _CallRecords.Read.All_: recuperar um registro de chamada (`GET /v1.0/communications/callRecords/{id}`).
-* _CallRecords.Read.All_: assinar novos registros de chamadas (`POST /v1.0/subscriptions`).
-* _CallRecords.Read.All_: recuperar os registros de chamadas de roteamento direto no intervalo de tempo especificado (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
+* _CallRecords.Read.All_ : recuperar um registro de chamada (`GET /v1.0/communications/callRecords/{id}`).
+* _CallRecords.Read.All_ : assinar novos registros de chamadas (`POST /v1.0/subscriptions`).
+* _CallRecords.Read.All_ : recuperar os registros de chamadas de roteamento direto no intervalo de tempo especificado (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -553,15 +588,15 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ### <a name="example-usage"></a>Exemplo de uso
 #### <a name="delegated"></a>Delegado
 
-* _Contacts.Read_: Ler um contato a partir de uma das pastas de contatos de nível superior do usuário conectado (`GET /me/contactfolders/{Id}/contacts/{id}`).
-* _Contacts.ReadWrite_: Atualizar a foto de contato de um dos contatos do usuário conectado (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
-* _Contacts.ReadWrite_: Adicionar contatos à pasta raiz do usuário conectado (`POST /me/contacts`).
+* _Contacts.Read_ : Ler um contato a partir de uma das pastas de contatos de nível superior do usuário conectado (`GET /me/contactfolders/{Id}/contacts/{id}`).
+* _Contacts.ReadWrite_ : Atualizar a foto de contato de um dos contatos do usuário conectado (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
+* _Contacts.ReadWrite_ : Adicionar contatos à pasta raiz do usuário conectado (`POST /me/contacts`).
 
 #### <a name="application"></a>Aplicativo
 
-* _Contacts.Read_: Ler contatos a parir de uma das pastas de contatos de nível superior de qualquer usuário da organização (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`).
-* _Contacts.ReadWrite_: Atualizar a foto de qualquer contato de qualquer usuário em uma organização (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
-* _Contacts.ReadWrite_: Adicionar contatos à pasta raiz de qualquer usuário da organização (`POST /users/{id | userPrincipalName}/contacts`).
+* _Contacts.Read_ : Ler contatos a parir de uma das pastas de contatos de nível superior de qualquer usuário da organização (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`).
+* _Contacts.ReadWrite_ : Atualizar a foto de qualquer contato de qualquer usuário em uma organização (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
+* _Contacts.ReadWrite_ : Adicionar contatos à pasta raiz de qualquer usuário da organização (`POST /users/{id | userPrincipalName}/contacts`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -589,7 +624,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="application"></a>Aplicativo
 
-* _Device.ReadWrite.All_: Ler todos os dispositivos registrados na organização (`GET /devices`).
+* _Device.ReadWrite.All_ : Ler todos os dispositivos registrados na organização (`GET /devices`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -601,7 +636,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Directory.Read.All_ |Ler dados do diretório | Allows the app to read data in your organization's directory, such as users, groups and apps. **Note**: Users may consent to applications that require this permission if the application is registered in their own organization’s tenant.| Sim | Não |
+| _Directory.Read.All_ |Ler dados do diretório | Allows the app to read data in your organization's directory, such as users, groups and apps. **Note** : Users may consent to applications that require this permission if the application is registered in their own organization’s tenant.| Sim | Não |
 | _Directory.ReadWrite.All_ |Ler e gravar dados de diretório | Permite ao aplicativo ler e gravar dados no diretório da sua organização, como usuários e grupos. Não permite ao aplicativo excluir usuários ou grupos, ou redefinir senhas de usuário. | Sim | Não |
 | _Directory.AccessAsUser.All_ |Access Directory como o usuário conectado  | Permite ao aplicativo ter o mesmo acesso que o usuário conectado a informações no diretório. | Sim | Não |
 
@@ -635,9 +670,9 @@ A permissão _Directory.ReadWrite.All_ concede os seguintes privilégios:
 - Gerenciar as atribuições de licença
 - Definir as extensões de esquema em aplicativos
 
-> **Observação**:
+> **Observação** :
 > - Nenhum direito de redefinir senhas de usuários.
-> - Updating another user's **businessPhones**, **mobilePhone**, or **otherMails** property is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Message Center Reader and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD available roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions.
+> - Updating another user's **businessPhones** , **mobilePhone** , or **otherMails** property is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Message Center Reader and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD available roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions.
 > - Nenhum direito de excluir recursos (incluindo usuários ou grupos).
 > - Specifically excludes create or update for resources not listed above. This includes: application, oAauth2Permissiongrant, appRoleAssignment, device, servicePrincipal, organization, domains, and so on.
 
@@ -645,13 +680,13 @@ A permissão _Directory.ReadWrite.All_ concede os seguintes privilégios:
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
-* _Directory.Read.All_: Listar todas as unidades administrativas em uma organização (`GET /beta/administrativeUnits`)
-* _Directory.ReadWrite.All_: Adicionar membros a uma função de diretório (`POST /directoryRoles/{id}/members/$ref`)
+* _Directory.Read.All_ : Listar todas as unidades administrativas em uma organização (`GET /beta/administrativeUnits`)
+* _Directory.ReadWrite.All_ : Adicionar membros a uma função de diretório (`POST /directoryRoles/{id}/members/$ref`)
 
 #### <a name="application"></a>Aplicativo
-* _Directory.Read.All_: Listar todas as associações de um usuário, incluindo funções de diretório e unidades administrativas (`GET /beta/users/{id}/memberOf`)
-* _Directory.Read.All_: Listar todos os membros do grupo, incluindo as entidades de serviço (`GET /beta/groups/{id}/members`)
-* _Directory.ReadWrite.All_: Adicionar um proprietário a um grupo (`POST /groups/{id}/owners/$ref`)
+* _Directory.Read.All_ : Listar todas as associações de um usuário, incluindo funções de diretório e unidades administrativas (`GET /beta/users/{id}/memberOf`)
+* _Directory.Read.All_ : Listar todos os membros do grupo, incluindo as entidades de serviço (`GET /beta/groups/{id}/members`)
+* _Directory.ReadWrite.All_ : Adicionar um proprietário a um grupo (`POST /groups/{id}/owners/$ref`)
 
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
@@ -701,9 +736,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="delegated"></a>Delegado
 
-* _EduAssignments.Read_: extrair as informações de atribuição do aluno conectado (`GET /education/classes/{id}/assignments/{id}`)
-* _EduAssignments.ReadWriteBasic_: enviar a tarefa do aluno conectado (`GET /education/classes/{id}/assignments/{id}submit`)
-* _EduRoster.ReadBasic_: aulas de que um usuário conectado participa como aluno ou professor (`GET /education/classes/{id}/members`)
+* _EduAssignments.Read_ : extrair as informações de atribuição do aluno conectado (`GET /education/classes/{id}/assignments/{id}`)
+* _EduAssignments.ReadWriteBasic_ : enviar a tarefa do aluno conectado (`GET /education/classes/{id}/assignments/{id}submit`)
+* _EduRoster.ReadBasic_ : aulas de que um usuário conectado participa como aluno ou professor (`GET /education/classes/{id}/members`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -752,11 +787,11 @@ A permissão delegada Files.ReadWrite.AppFolder só é válida para contas pesso
 
 #### <a name="delegated"></a>Delegado
 
-* _Files.Read_: Ler arquivos armazenados no OneDrive do usuário conectado (`GET /me/drive/root/children`)
-* _Files.Read.All_: Ler arquivos compartilhados com o usuário conectado (`GET /me/drive/root/sharedWithMe`)
-* _Files.ReadWrite_: Gravar um arquivo no OneDrive do usuário conectado (`PUT /me/drive/root/children/filename.txt/content`)
-* _Files.ReadWrite.All_: Gravar um arquivo compartilhado com o usuário (`PUT /users/rgregg@contoso.com/drive/root/children/file.txt/content`)
-* _Files.ReadWrite.AppFolder_: Gravar arquivos na pasta do aplicativo do OneDrive (`PUT /me/drive/special/approot/children/file.txt/content`)
+* _Files.Read_ : Ler arquivos armazenados no OneDrive do usuário conectado (`GET /me/drive/root/children`)
+* _Files.Read.All_ : Ler arquivos compartilhados com o usuário conectado (`GET /me/drive/root/sharedWithMe`)
+* _Files.ReadWrite_ : Gravar um arquivo no OneDrive do usuário conectado (`PUT /me/drive/root/children/filename.txt/content`)
+* _Files.ReadWrite.All_ : Gravar um arquivo compartilhado com o usuário (`PUT /users/rgregg@contoso.com/drive/root/children/file.txt/content`)
+* _Files.ReadWrite.AppFolder_ : Gravar arquivos na pasta do aplicativo do OneDrive (`PUT /me/drive/special/approot/children/file.txt/content`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -798,7 +833,7 @@ Para grupos do Microsoft 365, as permissões de grupo concedem ao aplicativo ace
 
 No caso de Permissões de aplicativo, há algumas limitações para APIs com suporte. Confira mais informações em [problemas conhecidos](known-issues.md).
 
-Em alguns casos, um aplicativo pode precisar de [Permissões de diretório](#directory-permissions) para ler algumas propriedades do grupo como `member` e `memberOf`. Por exemplo, se um grupo tiver um ou mais [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) como membros, o aplicativo precisará de permissões eficazes para ler as entidades de serviço através do recebimento de uma das _Permissões de diretório\*_, caso contrário, o Microsoft Graph retornará um erro. No caso de Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para ler as entidades de serviço. A mesma orientação se aplica à propriedade `memberOf` que pode retornar [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+Em alguns casos, um aplicativo pode precisar de [Permissões de diretório](#directory-permissions) para ler algumas propriedades do grupo como `member` e `memberOf`. Por exemplo, se um grupo tiver um ou mais [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) como membros, o aplicativo precisará de permissões eficazes para ler as entidades de serviço através do recebimento de uma das _Permissões de diretório\*_ , caso contrário, o Microsoft Graph retornará um erro. No caso de Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para ler as entidades de serviço. A mesma orientação se aplica à propriedade `memberOf` que pode retornar [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
 To set a Microsoft 365 group's **preferredDataLocation** attribute, an app needs Directory.ReadWrite.All permission. When users in a multi-geo environment create a Microsoft 365 group, the **preferredDataLocation** value for the group is automatically set to that of the user. For more information about groups' preferred data location, see [Create a Microsoft 365 group with a specific PDL](/office365/enterprise/multi-geo-add-group-with-pdl).
 
@@ -810,17 +845,17 @@ As Permissões de grupo também são usadas para controlar o acesso a APIs e rec
 ### <a name="example-usage"></a>Exemplo de uso
 #### <a name="delegated"></a>Delegado
 
-* _Group.Read.All_: Ler todos os grupos do Microsoft 365 dos quais o usuário conectado é membro (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
-* _Group.Read.All_: Ler todo o conteúdo do grupo do Microsoft 365, como conversas (`GET /groups/{id}/conversations`).
-* _Group.ReadWrite.All_: Atualizar propriedades do grupo, como fotografias (`PUT /groups/{id}/photo/$value`).
-* _GroupMember.ReadWrite.All_: Atualizar os membros do grupo (`POST /groups/{id}/members/$ref`).
+* _Group.Read.All_ : Ler todos os grupos do Microsoft 365 dos quais o usuário conectado é membro (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
+* _Group.Read.All_ : Ler todo o conteúdo do grupo do Microsoft 365, como conversas (`GET /groups/{id}/conversations`).
+* _Group.ReadWrite.All_ : Atualizar propriedades do grupo, como fotografias (`PUT /groups/{id}/photo/$value`).
+* _GroupMember.ReadWrite.All_ : Atualizar os membros do grupo (`POST /groups/{id}/members/$ref`).
 > **Observação:** Isso também requer o _User.ReadBasic.All_ para ler o usuário para adicionar como membro.
 
 #### <a name="application"></a>Aplicativo
 
-* _Group.Read.All_: Localizar todos os grupos com nomes que começam com "Vendas" (`GET /groups?$filter=startswith(displayName,'Sales')`).
-* _Group.ReadWrite.All_: O serviço daemon cria novos eventos no calendário de um grupo do Microsoft 365 (`POST /groups/{id}/events`).
-* _Group.Create_: Criar um novo grupo (`POST /groups`).
+* _Group.Read.All_ : Localizar todos os grupos com nomes que começam com "Vendas" (`GET /groups?$filter=startswith(displayName,'Sales')`).
+* _Group.ReadWrite.All_ : O serviço daemon cria novos eventos no calendário de um grupo do Microsoft 365 (`POST /groups/{id}/events`).
+* _Group.Create_ : Criar um novo grupo (`POST /groups`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -845,8 +880,8 @@ _IdentityProvider.Read.All_ and _IdentityProvider.ReadWrite.All_ are valid only 
 #### <a name="delegated"></a>Delegado
 Os seguintes usos são válidos para permissões delegadas:
 
-* _IdentityProvider.Read.All_: Leia todos os provedores de identidade configurados no locatário (`GET /beta/identityProviders`)
-* _IdentityProvider.Read.All_: Leia um provedor de identidade existente (`GET /beta/identityProviders/{id}`)
+* _IdentityProvider.Read.All_ : Leia todos os provedores de identidade configurados no locatário (`GET /beta/identityProviders`)
+* _IdentityProvider.Read.All_ : Leia um provedor de identidade existente (`GET /beta/identityProviders/{id}`)
 * _IdentityProvider.ReadWrite.All_ Crie um provedor de identidade (`POST /beta/identityProviders`)
 * _IdentityProvider.ReadWrite.All_ Atualize um provedor de identidade existente (`PATCH /beta/identityProviders/{id}`)
 * _IdentityProvider.ReadWrite.All_ Exclua um provedor de identidade existente (`DELETE /beta/identityProviders/{id}`)
@@ -950,12 +985,12 @@ _IdentityUserFlow.Read.All_ e _IdentityUserFlow.ReadWrite.ALL_ são válidos ape
 
 Os seguintes usos são válidos para permissões delegadas e permissões de aplicativo:
 
-* _IdentityUserFlow.Read.All_: ler todos os fluxos de usuário em um locatário do Azure AD B2C (`GET beta/identity/b2cUserFlows`)
-* _IdentityUserFlow.Read.All_: ler todos os fluxos de usuário em um locatário do Azure Active Directory (Azure AD) (`GET beta/identity/b2xUserFlows`)
-* _IdentityUserFlow.ReadWrite.All_: criar um novo fluxo de usuário em um locatário do Azure AD B2C (`POST beta/identity/b2cUserFlows`)
-* _IdentityUserFlow.ReadWrite.All_: criar um novo fluxo de usuário em um locatário do Azure Active Directory (Azure AD) (`POST beta/identity/b2xUserflows`)
-* _IdentitytUserFlow.ReadWrite.All_: adicionar um provedor de identidade a um fluxo de usuário do Azure AD B2C (`PATCH beta/identity/b2cUserFlows/{id}/identityProviders/$ref`)
-* _IdentityUserFlow.ReadWrite.All_: remover um provedor de identidade de um usuário do Azure AD B2C (`DELETE beta/identity/b2cUserFlows/{id}/identityProviders/{id}`)
+* _IdentityUserFlow.Read.All_ : ler todos os fluxos de usuário em um locatário do Azure AD B2C (`GET beta/identity/b2cUserFlows`)
+* _IdentityUserFlow.Read.All_ : ler todos os fluxos de usuário em um locatário do Azure Active Directory (Azure AD) (`GET beta/identity/b2xUserFlows`)
+* _IdentityUserFlow.ReadWrite.All_ : criar um novo fluxo de usuário em um locatário do Azure AD B2C (`POST beta/identity/b2cUserFlows`)
+* _IdentityUserFlow.ReadWrite.All_ : criar um novo fluxo de usuário em um locatário do Azure Active Directory (Azure AD) (`POST beta/identity/b2xUserflows`)
+* _IdentitytUserFlow.ReadWrite.All_ : adicionar um provedor de identidade a um fluxo de usuário do Azure AD B2C (`PATCH beta/identity/b2cUserFlows/{id}/identityProviders/$ref`)
+* _IdentityUserFlow.ReadWrite.All_ : remover um provedor de identidade de um usuário do Azure AD B2C (`DELETE beta/identity/b2cUserFlows/{id}/identityProviders/{id}`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1022,31 +1057,31 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 
 #### <a name="delegated"></a>Delegado
 
-* _DeviceManagementServiceConfiguration.Read.All_: Verificar o estado atual da assinatura do Intune (`GET /deviceManagement/subscriptionState`).
-* _DeviceManagementServiceConfiguration.ReadWrite.All_: Criar novos Termos e Condições (`POST /deviceManagement/termsAndConditions`).
-* _DeviceManagementConfiguration.Read.All_: Localizar o status da configuração de um dispositivo (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
-* _DeviceManagementConfiguration.ReadWrite.All_: Atribuir uma política de conformidade do dispositivo para um grupo (`POST deviceCompliancePolicies/{id}/assign`).
-* _DeviceManagementApps.Read.All_: Localizar todos os aplicativos da Windows Store publicados no Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
-* _DeviceManagementApps.ReadWrite.All_: Publicar um novo aplicativo (`POST /deviceAppManagement/mobileApps`).
-* _DeviceManagementRBAC.Read.All_: Localizar uma atribuição de função pelo nome (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
-* _DeviceManagementRBAC.ReadWrite.All_: Criar uma nova função personalizada (`POST /deviceManagement/roleDefinitions`).
-* _DeviceManagementManagedDevices.Read.All_: Localizar um dispositivo gerenciado pelo nome (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
-* _DeviceManagementManagedDevices.ReadWrite.All_: Remover um dispositivo gerenciado (`DELETE /managedDevices/{id}`).
-* _DeviceManagementManagedDevices.PrivilegedOperations.All_: Redefinir a senha em um dispositivo gerenciado do usuário (`POST /managedDevices/{id}/resetPasscode`).
+* _DeviceManagementServiceConfiguration.Read.All_ : Verificar o estado atual da assinatura do Intune (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_ : Criar novos Termos e Condições (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_ : Localizar o status da configuração de um dispositivo (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_ : Atribuir uma política de conformidade do dispositivo para um grupo (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_ : Localizar todos os aplicativos da Windows Store publicados no Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_ : Publicar um novo aplicativo (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_ : Localizar uma atribuição de função pelo nome (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_ : Criar uma nova função personalizada (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_ : Localizar um dispositivo gerenciado pelo nome (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_ : Remover um dispositivo gerenciado (`DELETE /managedDevices/{id}`).
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_ : Redefinir a senha em um dispositivo gerenciado do usuário (`POST /managedDevices/{id}/resetPasscode`).
 
 #### <a name="application"></a>Aplicativo
 
-* _DeviceManagementServiceConfiguration.Read.All_: Verificar o estado atual da assinatura do Intune (`GET /deviceManagement/subscriptionState`).
-* _DeviceManagementServiceConfiguration.ReadWrite.All_: Criar novos Termos e Condições (`POST /deviceManagement/termsAndConditions`).
-* _DeviceManagementConfiguration.Read.All_: Localizar o status da configuração de um dispositivo (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
-* _DeviceManagementConfiguration.ReadWrite.All_: Atribuir uma política de conformidade do dispositivo para um grupo (`POST deviceCompliancePolicies/{id}/assign`).
-* _DeviceManagementApps.Read.All_: Localizar todos os aplicativos da Windows Store publicados no Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
-* _DeviceManagementApps.ReadWrite.All_: Publicar um novo aplicativo (`POST /deviceAppManagement/mobileApps`).
-* _DeviceManagementRBAC.Read.All_: Localizar uma atribuição de função pelo nome (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
-* _DeviceManagementRBAC.ReadWrite.All_: Criar uma nova função personalizada (`POST /deviceManagement/roleDefinitions`).
-* _DeviceManagementManagedDevices.Read.All_: Localizar um dispositivo gerenciado pelo nome (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
-* _DeviceManagementManagedDevices.ReadWrite.All_: Remover um dispositivo gerenciado (`DELETE /managedDevices/{id}`).
-* _DeviceManagementManagedDevices.PrivilegedOperations.All_: Redefinir a senha em um dispositivo gerenciado do usuário (`POST /managedDevices/{id}/resetPasscode`).
+* _DeviceManagementServiceConfiguration.Read.All_ : Verificar o estado atual da assinatura do Intune (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_ : Criar novos Termos e Condições (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_ : Localizar o status da configuração de um dispositivo (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_ : Atribuir uma política de conformidade do dispositivo para um grupo (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_ : Localizar todos os aplicativos da Windows Store publicados no Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_ : Publicar um novo aplicativo (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_ : Localizar uma atribuição de função pelo nome (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_ : Criar uma nova função personalizada (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_ : Localizar um dispositivo gerenciado pelo nome (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_ : Remover um dispositivo gerenciado (`DELETE /managedDevices/{id}`).
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_ : Redefinir a senha em um dispositivo gerenciado do usuário (`POST /managedDevices/{id}/resetPasscode`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1059,7 +1094,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Ler emails do usuário | Permite ao aplicativo ler emails em caixas de correio do usuário. | Não | Sim
-| _Mail.ReadBasic_ |    Ler emails básicos do usuário | Allows the app to read email in the signed-in user's mailbox, except for **body**, **bodyPreview**, **uniqueBody**, **attachments**, **extensions**, and any extended properties. Does not include permissions to search messages. | Não | Não
+| _Mail.ReadBasic_ |    Ler emails básicos do usuário | Allows the app to read email in the signed-in user's mailbox, except for **body** , **bodyPreview** , **uniqueBody** , **attachments** , **extensions** , and any extended properties. Does not include permissions to search messages. | Não | Não
 | _Mail.ReadWrite_ |    Acesso de leitura e gravação aos emails do usuário | Permite ao aplicativo criar, ler, atualizar e excluir emails em caixas de correio do usuário. Não inclui a permissão para enviar emails.| Não | Sim
 | _Mail.Read.Shared_ |    Ler email compartilhado e de usuário | Permite que o aplicativo leia os emails que o usuário pode acessar, incluindo os próprios contatos do usuário e os emails compartilhados. | Não | Não
 | _Mail.ReadWrite.Shared_ |    Ler e registrar usuário e emails compartilhados | Permite que o aplicativo crie, leia, atualize e exclua emails que o usuário tem permissão de acessar, incluindo os emails compartilhados e os do próprio usuário. Não inclui a permissão para enviar emails. | Não | Não
@@ -1084,26 +1119,26 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="remarks"></a>Comentários
 
-_Mail.Read.Shared_, _Mail.ReadWrite.Shared_, e _Mail.Send.Shared_ só são válidos para contas corporativas ou de estudante. Todas as demais permissões são válidas tanto para contas da Microsoft como para contas corporativas e de estudante.
+_Mail.Read.Shared_ , _Mail.ReadWrite.Shared_ , e _Mail.Send.Shared_ só são válidos para contas corporativas ou de estudante. Todas as demais permissões são válidas tanto para contas da Microsoft como para contas corporativas e de estudante.
 
-Com a permissão _Mail.Send_ ou _Mail.Send.Shared_, um aplicativo pode enviar emails e salvar uma cópia na pasta Itens Enviados do usuário, mesmo se o aplicativo não usar uma permissão _Mail.ReadWrite_ ou _Mail.ReadWrite.Shared_ correspondente.
+Com a permissão _Mail.Send_ ou _Mail.Send.Shared_ , um aplicativo pode enviar emails e salvar uma cópia na pasta Itens Enviados do usuário, mesmo se o aplicativo não usar uma permissão _Mail.ReadWrite_ ou _Mail.ReadWrite.Shared_ correspondente.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
 
-* _Mail.Read_: Listar mensagens na caixa de entrada do usuário classificadas por `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
-* _Mail.Read.Shared_: Localizar todas as mensagens com anexos na caixa de entrada de um usuário que compartilhou sua caixa de entrada com o usuário conectado (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
-* _Mail.ReadWrite_: Marcar uma mensagem lida (`PATCH /me/messages/{id}`).
-* _Mail.Send_: Enviar uma mensagem (`POST /me/sendmail`).
-* _MailboxSettings.ReadWrite_: Atualizar a resposta automática do usuário (`PATCH /me/mailboxSettings`).
+* _Mail.Read_ : Listar mensagens na caixa de entrada do usuário classificadas por `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
+* _Mail.Read.Shared_ : Localizar todas as mensagens com anexos na caixa de entrada de um usuário que compartilhou sua caixa de entrada com o usuário conectado (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
+* _Mail.ReadWrite_ : Marcar uma mensagem lida (`PATCH /me/messages/{id}`).
+* _Mail.Send_ : Enviar uma mensagem (`POST /me/sendmail`).
+* _MailboxSettings.ReadWrite_ : Atualizar a resposta automática do usuário (`PATCH /me/mailboxSettings`).
 
 #### <a name="application"></a>Aplicativo
 
-* _Mail.Read_: Localizar mensagens de pedro@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
-* _Mail.ReadWrite_: Criar uma nova pasta na Caixa de Entrada chamada `Expense Reports` (`POST /users/{id | userPrincipalName}/mailfolders`).
-* _Mail.Send_: Enviar uma mensagem (`POST /users/{id | userPrincipalName}/sendmail`).
-* _MailboxSettings.Read_: Obter o fuso horário padrão para a caixa de correio do usuário (`GET /users/{id | userPrincipalName}/mailboxSettings/timeZone`)
+* _Mail.Read_ : Localizar mensagens de pedro@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
+* _Mail.ReadWrite_ : Criar uma nova pasta na Caixa de Entrada chamada `Expense Reports` (`POST /users/{id | userPrincipalName}/mailfolders`).
+* _Mail.Send_ : Enviar uma mensagem (`POST /users/{id | userPrincipalName}/sendmail`).
+* _MailboxSettings.Read_ : Obter o fuso horário padrão para a caixa de correio do usuário (`GET /users/{id | userPrincipalName}/mailboxSettings/timeZone`)
 
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
@@ -1133,13 +1168,13 @@ Membership in some Microsoft 365 groups can be hidden. This means that only the 
 
 #### <a name="delegated"></a>Delegado
 
-* _Member.Read.Hidden_: Ler os membros de uma unidade administrativa com associação oculta em nome do usuário conectado (`GET /administrativeUnits/{id}/members`).
-* _Member.Read.Hidden_: Ler os membros de um grupo com associação oculta em nome do usuário conectado (`GET /groups/{id}/members`).
+* _Member.Read.Hidden_ : Ler os membros de uma unidade administrativa com associação oculta em nome do usuário conectado (`GET /administrativeUnits/{id}/members`).
+* _Member.Read.Hidden_ : Ler os membros de um grupo com associação oculta em nome do usuário conectado (`GET /groups/{id}/members`).
 
 #### <a name="application"></a>Aplicativo
 
-* _Member.Read.Hidden_: Ler os membros de uma unidade administrativa com associação oculta (`GET /administrativeUnits/{id}/members`).
-* _Member.Read.Hidden_: Ler os membros de um grupo com associação oculta (`GET /groups/{id}/members`).
+* _Member.Read.Hidden_ : Ler os membros de uma unidade administrativa com associação oculta (`GET /administrativeUnits/{id}/members`).
+* _Member.Read.Hidden_ : Ler os membros de um grupo com associação oculta (`GET /groups/{id}/members`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1168,25 +1203,25 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ### <a name="remarks"></a>Comentários
 _Notes.Read.All_ e _Notes.ReadWrite.All_ só são válidos para contas corporativas ou de estudante. Todas as demais permissões são válidas tanto para contas da Microsoft como para contas corporativas e de estudante.
 
-Com a permissão _Notes.Create_, um aplicativo pode exibir a hierarquia do bloco de anotações do OneNote do usuário conectado e criar conteúdo do OneNote (blocos de anotações, grupos de seção, seções, páginas, etc.).
+Com a permissão _Notes.Create_ , um aplicativo pode exibir a hierarquia do bloco de anotações do OneNote do usuário conectado e criar conteúdo do OneNote (blocos de anotações, grupos de seção, seções, páginas, etc.).
 
 _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modifique as permissões no conteúdo do OneNote que pode ser acessado pelo usuário conectado.
 
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado	
+#### <a name="delegated"></a>Delegado
 
-* _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
-* _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
-* _Notes.Read.All_: Obter todos os blocos de anotações aos quais o usuário conectado tenha acesso dentro da organização (`GET /me/onenote/notebooks?includesharednotebooks=true`).
-* _Notes.ReadWrite_: Atualizar a página do usuário conectado (`PATCH /me/onenote/pages/{id}/$value`).
-* _Notes.ReadWrite.All_: Criar uma página no bloco de anotações de outro usuário ao qual o usuário conectado tenha acesso dentro da organização (`POST /users/{id}/onenote/pages`).
+* _Notes.Create_ : Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
+* _Notes.Read_ : Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
+* _Notes.Read.All_ : Obter todos os blocos de anotações aos quais o usuário conectado tenha acesso dentro da organização (`GET /me/onenote/notebooks?includesharednotebooks=true`).
+* _Notes.ReadWrite_ : Atualizar a página do usuário conectado (`PATCH /me/onenote/pages/{id}/$value`).
+* _Notes.ReadWrite.All_ : Criar uma página no bloco de anotações de outro usuário ao qual o usuário conectado tenha acesso dentro da organização (`POST /users/{id}/onenote/pages`).
 
 #### <a name="application"></a>Aplicativo
 
-* _Notes.Read.All_: Ler todos os blocos de anotações de usuários em um grupo (`GET /groups/{id}/onenote/notebooks`).
-* _Notes.ReadWrite.All_: Atualizar a página em um bloco de anotações para qualquer usuário da organização (`PATCH /users/{id}/onenote/pages/{id}/$value`).
+* _Notes.Read.All_ : Ler todos os blocos de anotações de usuários em um grupo (`GET /groups/{id}/onenote/notebooks`).
+* _Notes.ReadWrite.All_ : Atualizar a página em um bloco de anotações para qualquer usuário da organização (`PATCH /users/{id}/onenote/pages/{id}/$value`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1199,7 +1234,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 *Notifications.ReadWrite.CreatedByApp* is valid for both Microsoft accounts and work or school accounts. The *CreatedByApp* constraint associated with this permission indicates that the service will apply implicit filtering to results based on the identity of the calling app, either the Microsoft account app ID or a set of app IDs configured for a cross-platform application identity.
 ### <a name="example-usage"></a>Exemplo de uso
 #### <a name="delegated"></a>Delegado
-* _Notifications.ReadWrite.CreatedByApp_: Publish a user-centric notification, which might then be delivered to the user’s multiple application clients running on different endpoints. (POST /me/notifications/).
+* _Notifications.ReadWrite.CreatedByApp_ : Publish a user-centric notification, which might then be delivered to the user’s multiple application clients running on different endpoints. (POST /me/notifications/).
 
 ---
 
@@ -1225,8 +1260,8 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="delegated"></a>Delegado
 
-* _OnlineMeetings.Read_: recuperar as propriedades e as relações de uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/{default id}`).
-* _OnlineMeetings.ReadWrite_: criar um [reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/communications/onlinemeetings`).
+* _OnlineMeetings.Read_ : recuperar as propriedades e as relações de uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/{default id}`).
+* _OnlineMeetings.ReadWrite_ : criar um [reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/communications/onlinemeetings`).
 
 #### <a name="application"></a>Aplicativo
 
@@ -1238,7 +1273,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
   * Atualizar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário(`PATCH /beta/users/{userId}/onlineMeetings/{id})
   * Excluir uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário (`DELETE /beta/users/{userId}/onlineMeetings/{id})
   
-> **Observação**: criar uma [reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) cria uma reunião em nome de um usuário, mas não a mostra no Calendário do usuário.
+> **Observação** : criar uma [reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) cria uma reunião em nome de um usuário, mas não a mostra no Calendário do usuário.
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1278,11 +1313,11 @@ Nenhum.
 ### <a name="remarks"></a>Comentários
 Você pode usar essas permissões para especificar os artefatos que deseja que sejam retornados nas solicitações de token e de autorização do Azure AD. O suporte a elas é oferecido de formas diferentes nos pontos de extremidade v 1.0 e v 2.0. do Azure AD.
 
-Com o ponto de extremidade (v 1.0) do Azure AD, somente a permissão _openid_ é usada. Você especifica no parâmetro *scope*, na solicitação de autorização, para retornar um token de ID quando usar o protocolo OpenID Connect para conectar um usuário ao seu aplicativo. Para saber mais, confira o artigo [Autorizar o acesso aos aplicativos web usando o OpenID Connect e o Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Para retornar com êxito um token de ID, você também deve garantir que a permissão _User.Read_ esteja configurada quando você registrar seu aplicativo.
+Com o ponto de extremidade (v 1.0) do Azure AD, somente a permissão _openid_ é usada. Você especifica no parâmetro *scope* , na solicitação de autorização, para retornar um token de ID quando usar o protocolo OpenID Connect para conectar um usuário ao seu aplicativo. Para saber mais, confira o artigo [Autorizar o acesso aos aplicativos web usando o OpenID Connect e o Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Para retornar com êxito um token de ID, você também deve garantir que a permissão _User.Read_ esteja configurada quando você registrar seu aplicativo.
 
-Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _offline\_access_ no parâmetro _scope_ para solicitar explicitamente um token de atualização quando estiver usando os protocolos OAuth 2.0 ou OpenID Connect. Com o OpenID Connect, você especifica a permissão _openid_ para solicitar um token de ID. Também é possível especificar a permissão _email_, a permissão _profile_, ou ambas, para retornar declarações adicionais no token de ID. Você não precisa especificar a _User.Read_ para retornar um token de ID com o ponto de extremidade v 2.0. Para saber mais, confira os [escopos do OpenID Connect](/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
+Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _offline\_access_ no parâmetro _scope_ para solicitar explicitamente um token de atualização quando estiver usando os protocolos OAuth 2.0 ou OpenID Connect. Com o OpenID Connect, você especifica a permissão _openid_ para solicitar um token de ID. Também é possível especificar a permissão _email_ , a permissão _profile_ , ou ambas, para retornar declarações adicionais no token de ID. Você não precisa especificar a _User.Read_ para retornar um token de ID com o ponto de extremidade v 2.0. Para saber mais, confira os [escopos do OpenID Connect](/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 
-> **Importante** A Biblioteca de Autenticação da Microsoft (MSAL) atualmente especifica as permissões _offline\_access_, _openid_, _profile_ e _email_ por padrão nas solicitações de autorização e de token. Isso significa que, para o caso padrão, se você especificar explicitamente essas permissões, o Azure AD pode retornar um erro.
+> **Importante** A Biblioteca de Autenticação da Microsoft (MSAL) atualmente especifica as permissões _offline\_access_ , _openid_ , _profile_ e _email_ por padrão nas solicitações de autorização e de token. Isso significa que, para o caso padrão, se você especificar explicitamente essas permissões, o Azure AD pode retornar um erro.
 
 ---
 
@@ -1309,12 +1344,12 @@ Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _off
 
 #### <a name="delegated"></a>Delegado	
 
-* _Organization.Read.All_: Obter informações da organização (`GET /organization`).
-* _Organization.Read.All_: Obter as SKUs inscritas pela organização (`GET /subscribedSkus`).
+* _Organization.Read.All_ : Obter informações da organização (`GET /organization`).
+* _Organization.Read.All_ : Obter as SKUs inscritas pela organização (`GET /subscribedSkus`).
 
 #### <a name="application"></a>Aplicação
 
-* _Organization.ReadWrite.All_: Atualizar as informações da organização (como **technicalNotificationMails**) (`PATCH /organization/{id}`).
+* _Organization.ReadWrite.All_ : Atualizar as informações da organização (como **technicalNotificationMails** ) (`PATCH /organization/{id}`).
 
 ---
 
@@ -1338,7 +1373,7 @@ Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _off
 
 #### <a name="delegated"></a>Delegado	
 
-* _OrgContact.Read.All_: Obter todos os contatos organizacionais (`GET /contacts`).
+* _OrgContact.Read.All_ : Obter todos os contatos organizacionais (`GET /contacts`).
 
 ---
 
@@ -1364,8 +1399,8 @@ A permissão People.Read.All só é válida para contas corporativas ou de estud
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
-* _People.Read_: Ler uma lista de pessoas relevantes (`GET /me/people`)
-* _People.Read.All_: Ler uma lista de pessoas relevantes para outro usuário na mesma organização (`GET /users('{id})/people`)
+* _People.Read_ : Ler uma lista de pessoas relevantes (`GET /me/people`)
+* _People.Read.All_ : Ler uma lista de pessoas relevantes para outro usuário na mesma organização (`GET /users('{id})/people`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1443,14 +1478,14 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 Os seguintes usos são válidos para permissões delegadas e permissões de aplicativo:
 
-* _Policy.Read.All_: Ler as políticas da sua organização (`GET /policies`)
-* _Policy.Read.All_: Ler as políticas da estrutura de confiança da sua organização (`GET /beta/trustFramework/policies`)
-* _Policy.Read.All_: Ler as políticas de distribuição de recursos da sua organização (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.ApplicationConfiguration_: Leia e grave as políticas de configuração dos aplicativos da sua organização (`POST /beta/policies/tokenLifetimePolicies`)
-* _Policy.ReadWrite.AuthenticationFlows_: Ler e gravar a política de fluxos de autenticação da sua organização (`PATCH /beta/policies/authenticationFlowsPolicy`)
-* _Policy.ReadWrite.ConditionalAccess_: Leia e escreva as políticas de acesso condicional da sua organização (`POST /beta/identity/conditionalAccess/policies`)
-* _Policy.ReadWrite.FeatureRollout_: Ler e gravar todas as políticas de distribuição de recursos da sua organização (`POST /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.TrustFramework_: Leitura e gravação de todas as políticas da estrutura de confiança da sua organização (`POST /beta/trustFramework/policies`)
+* _Policy.Read.All_ : Ler as políticas da sua organização (`GET /policies`)
+* _Policy.Read.All_ : Ler as políticas da estrutura de confiança da sua organização (`GET /beta/trustFramework/policies`)
+* _Policy.Read.All_ : Ler as políticas de distribuição de recursos da sua organização (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.ApplicationConfiguration_ : Leia e grave as políticas de configuração dos aplicativos da sua organização (`POST /beta/policies/tokenLifetimePolicies`)
+* _Policy.ReadWrite.AuthenticationFlows_ : Ler e gravar a política de fluxos de autenticação da sua organização (`PATCH /beta/policies/authenticationFlowsPolicy`)
+* _Policy.ReadWrite.ConditionalAccess_ : Leia e escreva as políticas de acesso condicional da sua organização (`POST /beta/identity/conditionalAccess/policies`)
+* _Policy.ReadWrite.FeatureRollout_ : Ler e gravar todas as políticas de distribuição de recursos da sua organização (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.TrustFramework_ : Leitura e gravação de todas as políticas da estrutura de confiança da sua organização (`POST /beta/trustFramework/policies`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1467,9 +1502,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-* _Presence.Read_: se você estiver conectado, recupere a sua própria informação de presença (`GET /me/presence`)
-* _Presence.Read.All_: Recupere as informações de presença de outro usuário (`GET /users/{id}/presence`)
-* _Presence.Read.All_: Recupere as informações de presença de vários usuários (`POST /communications/getPresencesByUserId`)
+* _Presence.Read_ : se você estiver conectado, recupere a sua própria informação de presença (`GET /me/presence`)
+* _Presence.Read.All_ : Recupere as informações de presença de outro usuário (`GET /users/{id}/presence`)
+* _Presence.Read.All_ : Recupere as informações de presença de vários usuários (`POST /communications/getPresencesByUserId`)
 
 ---
 
@@ -1520,9 +1555,9 @@ Para um aplicativo com permissões delegadas para ler programas e controles de p
 
 #### <a name="application"></a>Aplicativo
 
-* _Reports.Read.All_: Ler o relatório de detalhes de uso de aplicativos de email com período de 7 dias (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
-* _Reports.Read.All_: Ler o relatório de detalhes de atividade de email com data de '2017-01-01' (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
-* _Reports.Read.All_: Ler o relatório de detalhes de ativações do Microsoft 365 (`GET /reports/Office365Activations(view='Detail')/content`).
+* _Reports.Read.All_ : Ler o relatório de detalhes de uso de aplicativos de email com período de 7 dias (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
+* _Reports.Read.All_ : Ler o relatório de detalhes de atividade de email com data de '2017-01-01' (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
+* _Reports.Read.All_ : Ler o relatório de detalhes de ativações do Microsoft 365 (`GET /reports/Office365Activations(view='Detail')/content`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1549,19 +1584,19 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ### <a name="remarks"></a>Comentários
 Com a permissão _RoleManagement.Read.Directory_ um aplicativo pode ler directoryRoles e directoryRoleTemplates. Isso inclui a leitura de informações de associação para funções de diretório.
 
-Com a permissão _RoleManagement.ReadWrite.Directory_, um aplicativo pode ler e gravar directoryRoles (directoryRoleTemplates são recursos somente leitura). Isso inclui adicionar e remover membros de funções de diretório.
+Com a permissão _RoleManagement.ReadWrite.Directory_ , um aplicativo pode ler e gravar directoryRoles (directoryRoleTemplates são recursos somente leitura). Isso inclui adicionar e remover membros de funções de diretório.
 
 As permissões de relatórios só são válidas para contas corporativas ou de estudante.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-- _RoleManagement.Read.Directory_: Ler a lista de modelos de função disponíveis(`GET /directoryRoleTemplates`)
-- _RoleManagement.Read.Directory_: Ler a lista de funções ativadas em seu diretório(`GET /directoryRoles`)
-- _RoleManagement.Read.Directory_: Ler a lista de membros para uma função (`GET /directoryRoles/<id>/members`)
-- _RoleManagement.Read.Directory_: Ler a lista de membros com escopo de unidade administrativa para uma função (`GET /directoryRoles/<id>/scopedMembers`)
-- _RoleManagement.ReadWrite.Directory_: Ativar uma função de diretório a partir de um modelo de função (`POST /directoryRoles`)
-- _RoleManagement.ReadWrite.Directory_: Adicionar um membro a uma função de diretório (`POST /directoryRoles/<id>/members`)
-- _RoleManagement.ReadWrite.Directory_: Adicionar um membro de escopo de unidade administrativa a uma função de diretório(`POST /directoryRoles/<id>/scopedMembers`)
+- _RoleManagement.Read.Directory_ : Ler a lista de modelos de função disponíveis(`GET /directoryRoleTemplates`)
+- _RoleManagement.Read.Directory_ : Ler a lista de funções ativadas em seu diretório(`GET /directoryRoles`)
+- _RoleManagement.Read.Directory_ : Ler a lista de membros para uma função (`GET /directoryRoles/<id>/members`)
+- _RoleManagement.Read.Directory_ : Ler a lista de membros com escopo de unidade administrativa para uma função (`GET /directoryRoles/<id>/scopedMembers`)
+- _RoleManagement.ReadWrite.Directory_ : Ativar uma função de diretório a partir de um modelo de função (`POST /directoryRoles`)
+- _RoleManagement.ReadWrite.Directory_ : Adicionar um membro a uma função de diretório (`POST /directoryRoles/<id>/members`)
+- _RoleManagement.ReadWrite.Directory_ : Adicionar um membro de escopo de unidade administrativa a uma função de diretório(`POST /directoryRoles/<id>/scopedMembers`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1610,7 +1645,7 @@ O acesso aos dados por meio de pesquisa requer permissão de leitura para o item
 
 #### <a name="delegated"></a>Delegado
 
-* _ExternalItem.Read.All__: Acessar dados externos da [API de pesquisa](/graph/api/resources/search-api-overview) (`POST /search/query`).
+* _ExternalItem.Read.All_ _: Acessar dados externos da [API de pesquisa](/graph/api/resources/search-api-overview) (`POST /search/query`).
 
 ---
 
@@ -1646,8 +1681,8 @@ As permissões de segurança só são válidas para contas corporativas ou de es
 
 #### <a name="delegated-and-application"></a>Permissões delegadas e de aplicativo
 
-- _SecurityEvents.Read.All_: Ler a lista de todos os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o seu locatário (`GET /beta/security/alerts`)
-- _SecurityEvents.ReadWrite.All_: Atualize ou leia os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o seu locatário (`PATCH /beta/security/alerts/{id}`)
+- _SecurityEvents.Read.All_ : Ler a lista de todos os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o seu locatário (`GET /beta/security/alerts`)
+- _SecurityEvents.ReadWrite.All_ : Atualize ou leia os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o seu locatário (`PATCH /beta/security/alerts/{id}`)
 
 ---
 
@@ -1698,10 +1733,10 @@ Essas permissões de sites só são válidas para contas corporativas ou de estu
 
 #### <a name="delegated"></a>Delegado
 
-* _Sites.Read.All_: Ler as listas no site raiz do SharePoint (`GET /v1.0/sites/root/lists`)
-* _Sites.ReadWrite.All_: Criar novos itens de lista em uma lista do SharePoint (`POST /v1.0/sites/root/lists/123/items`)
-* _Sites.Manage.All_: Adicionar uma nova lista a um site do SharePoint (`POST /v1.0/sites/root/lists`)
-* _Sites.FullControl.All_: Acesso completo a sites e listas do SharePoint.
+* _Sites.Read.All_ : Ler as listas no site raiz do SharePoint (`GET /v1.0/sites/root/lists`)
+* _Sites.ReadWrite.All_ : Criar novos itens de lista em uma lista do SharePoint (`POST /v1.0/sites/root/lists/123/items`)
+* _Sites.Manage.All_ : Adicionar uma nova lista a um site do SharePoint (`POST /v1.0/sites/root/lists`)
+* _Sites.FullControl.All_ : Acesso completo a sites e listas do SharePoint.
 
 ---
 
@@ -1721,19 +1756,19 @@ Essas permissões de sites só são válidas para contas corporativas ou de estu
 Nenhum.
 
 ### <a name="remarks"></a>Comentários
-As permissões de _Tarefas_ são usadas para controlar o acesso das tarefas To Do e tarefas do Outlook(preterido). O acesso a tarefas do Microsoft Planner é controlado pelas [permissões_ do _Grupo](#group-permissions).
+As permissões de _Tarefas_ são usadas para controlar o acesso das tarefas To Do e tarefas do Outlook(preterido). O acesso a tarefas do Microsoft Planner é controlado pelas [permissões _do_ Grupo](#group-permissions).
 
-As permissões _Compartilhadas_ atualmente só são compatíveis com contas corporativas ou de estudante. Mesmo com permissões _Compartilhadas_, as leituras e gravações podem falhar se o usuário que possui o conteúdo compartilhado não tiver concedido as permissões de usuário de acesso para modificar o conteúdo dentro da pasta.
+As permissões _Compartilhadas_ atualmente só são compatíveis com contas corporativas ou de estudante. Mesmo com permissões _Compartilhadas_ , as leituras e gravações podem falhar se o usuário que possui o conteúdo compartilhado não tiver concedido as permissões de usuário de acesso para modificar o conteúdo dentro da pasta.
 
 ### <a name="example-usage"></a>Exemplo de uso
 #### <a name="delegated"></a>Delegado
 
-* _Tasks.Read_: Obter todas as tarefas na caixa de correio do usuário (`GET /me/outlook/tasks`).
-* _Tasks.Read.Shared_: Acessar tarefas em uma pasta compartilhada com você por outro usuário em sua organização (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
-* _Tasks.ReadWrite_: Adicionar um evento à pasta de tarefas padrão do usuário (`POST /me/outlook/tasks`).
-* _Tasks.Read_: Obter todas as tarefas não concluídas na caixa de correio do usuário (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
-* _Tasks.ReadWrite_: Atualizar uma tarefa na caixa de correio do usuário (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
-* _Tasks.ReadWrite.Shared_: Concluir uma tarefa em nome de outro usuário (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
+* _Tasks.Read_ : Obter todas as tarefas na caixa de correio do usuário (`GET /me/outlook/tasks`).
+* _Tasks.Read.Shared_ : Acessar tarefas em uma pasta compartilhada com você por outro usuário em sua organização (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
+* _Tasks.ReadWrite_ : Adicionar um evento à pasta de tarefas padrão do usuário (`POST /me/outlook/tasks`).
+* _Tasks.Read_ : Obter todas as tarefas não concluídas na caixa de correio do usuário (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
+* _Tasks.ReadWrite_ : Atualizar uma tarefa na caixa de correio do usuário (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
+* _Tasks.ReadWrite.Shared_ : Concluir uma tarefa em nome de outro usuário (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1756,8 +1791,8 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 #### <a name="delegated"></a>Delegado
 
-* _TermStore.Read.All_: Ler o termstore para o locatário (`GET /termStore`)
-* _TermStore.ReadWrite.All_: Criar novos termos no termStore (`POST /termStore/sets/123/children`)
+* _TermStore.Read.All_ : Ler o termstore para o locatário (`GET /termStore`)
+* _TermStore.ReadWrite.All_ : Criar novos termos no termStore (`POST /termStore/sets/123/children`)
 
 ---
 
@@ -1770,7 +1805,7 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 | _Team.ReadBasic.All_ | Ler os nomes e as descrições das equipes | Ler os nomes e as descrições das equipes, em nome do usuário conectado.  | Não | Não |
 | _Team.Create_  | Criar equipes | Criar equipes, em nome do usuário conectado. | Sim | Não |
 
-#### <a name="application-permissions"></a>Permissões de aplicativos
+#### <a name="application-permissions"></a>Permissões de aplicativos 
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
@@ -1819,15 +1854,15 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ (**Preterido**)| Ler todos os aplicativos do Teams instalados | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
-| _TeamsApp.ReadWrite.All_ (**Preterido**)| Gerenciar todos os aplicativos do Teams | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.Read.All_ ( **Preterido** )| Ler todos os aplicativos do Teams instalados | Permite que o aplicativo leia os aplicativos do Teams instalados para o usuário conectado e em todas as equipes das quais o usuário é membro. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.ReadWrite.All_ ( **Preterido** )| Gerenciar todos os aplicativos do Teams | Permite que o aplicativo leia, instale, atualize e desinstale aplicativos do Teams em nome do usuário conectado e também das equipes das quais o usuário é membro. Não oferece a capacidade de ler ou gravar configurações específicas do aplicativo. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ (**Preterido**)| Lê os aplicativos do Teams instalados de todos os usuários | Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
-| _TeamsApp.ReadWrite.All_ (**Preterido**)| Gerencia os aplicativos do Teams de todos os usuários  | Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.   | Sim | Não |
+| _TeamsApp.Read.All_ ( **Preterido** )| Lê os aplicativos do Teams instalados de todos os usuários | Permite que o aplicativo leia os aplicativos do Teams que estão instalados para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo. | Sim | Não |
+| _TeamsApp.ReadWrite.All_ ( **Preterido** )| Gerencia os aplicativos do Teams de todos os usuários  | Permite que o aplicativo leia, instale, atualize e desinstale  os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.   | Sim | Não |
 
 ## <a name="teams-app-installation-permissions"></a>Permissões de instalação do aplicativo do Teams
 
@@ -1943,9 +1978,9 @@ Para que um aplicativo leia ou grave todos os acordos ou aceitações de acordos
 #### <a name="delegated"></a>Delegado
 Os seguintes usos são válidos para permissões delegadas:
 
-* _Agreement.Read.All_: ler todos os acordos de termos de uso (`GET /beta/agreements`)
-* _Agreement.ReadWrite.All_: ler e gravar todos os acordos de termos de uso (`POST /beta/agreements`)
-* _AgreementAcceptance.Read_: ler os status de aceitação de termos de uso do usuário (`GET /beta/me/agreementAcceptances`)
+* _Agreement.Read.All_ : ler todos os acordos de termos de uso (`GET /beta/agreements`)
+* _Agreement.ReadWrite.All_ : ler e gravar todos os acordos de termos de uso (`POST /beta/agreements`)
+* _AgreementAcceptance.Read_ : ler os status de aceitação de termos de uso do usuário (`GET /beta/me/agreementAcceptances`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1995,11 +2030,11 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 
 #### <a name="delegated"></a>Delegado
 
-* _ThreatAssessment. ReadWrite.All_: ler e gravar solicitações de avaliação de ameaças (`POST /informationProtection/threatAssessmentRequests`)
+* _ThreatAssessment. ReadWrite.All_ : ler e gravar solicitações de avaliação de ameaças (`POST /informationProtection/threatAssessmentRequests`)
 
 #### <a name="application"></a>Aplicativo
 
-* _ThreatAssessment. ReadWrite.All_: ler e gravar solicitações de avaliação de ameaças (`GET /informationProtection/threatAssessmentRequests`)
+* _ThreatAssessment. ReadWrite.All_ : ler e gravar solicitações de avaliação de ameaças (`GET /informationProtection/threatAssessmentRequests`)
 
 ---
 
@@ -2049,15 +2084,15 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 
 #### <a name="delegated"></a>Delegado
 
-* _Printer.Read.All_: Obtenha uma lista de todas as impressoras do locatário (`GET /print/printers`)
-* _PrintJob.Read.All_: Obtenha uma lista de todos os trabalhos de impressão enfileirados em uma impressora (`GET /print/printers/{id}/jobs`)
-* _Printer.FullControl.All_: Eliminar uma impressora (sem registro) (`DELETE /print/printers/{id}`)
-* _PrintJob.ReadWriteBasic.All_: Atualizar metadados (como o status atual) de trabalhos de impressão (`PATCH /print/printers/{id}/jobs/{id}`)
-* _PrintJob.ReadWrite.All_: Crie trabalhos de impressão e carregue os dados de documentos para eles (`POST /print/printers/{id}/jobs`)
+* _Printer.Read.All_ : Obtenha uma lista de todas as impressoras do locatário (`GET /print/printers`)
+* _PrintJob.Read.All_ : Obtenha uma lista de todos os trabalhos de impressão enfileirados em uma impressora (`GET /print/printers/{id}/jobs`)
+* _Printer.FullControl.All_ : Eliminar uma impressora (sem registro) (`DELETE /print/printers/{id}`)
+* _PrintJob.ReadWriteBasic.All_ : Atualizar metadados (como o status atual) de trabalhos de impressão (`PATCH /print/printers/{id}/jobs/{id}`)
+* _PrintJob.ReadWrite.All_ : Crie trabalhos de impressão e carregue os dados de documentos para eles (`POST /print/printers/{id}/jobs`)
 
 #### <a name="application"></a>Aplicativo
 
-* _Printer.Read.All_: Obtenha uma lista de todas as impressoras do locatário (`GET /print/printers`)
+* _Printer.Read.All_ : Obtenha uma lista de todas as impressoras do locatário (`GET /print/printers`)
 
 ---
 
@@ -2089,7 +2124,7 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 
 ### <a name="remarks"></a>Comentários
 
-Com a permissão _User.Read_, um aplicativo também pode ler as informações básicas da empresa do usuário conectado de uma conta corporativa ou de estudante através do recurso [Organização](/graph/api/resources/organization?view=graph-rest-1.0). As propriedades a seguir estão disponíveis: id, displayName e verifiedDomains.
+Com a permissão _User.Read_ , um aplicativo também pode ler as informações básicas da empresa do usuário conectado de uma conta corporativa ou de estudante através do recurso [Organização](/graph/api/resources/organization?view=graph-rest-1.0). As propriedades a seguir estão disponíveis: id, displayName e verifiedDomains.
 
 Para contas corporativas ou de estudante, o perfil completo inclui todas as propriedades declaradas do recurso [Usuário](/graph/api/resources/user?view=graph-rest-1.0). No caso das leituras, somente um número limitado de propriedades é retornado por padrão. Para ler propriedades que não estão no conjunto padrão, use `$select`. As propriedades padrão são:
 
@@ -2118,11 +2153,11 @@ Para contas corporativas ou de estudante, o perfil completo inclui todas as prop
 - schools
 - skills
 
-Com a Permissão de aplicativo _User.ReadWrite.All_, o aplicativo pode atualizar todas as propriedades declaradas das contas corporativas ou de estudante, com exceção da senha.
+Com a Permissão de aplicativo _User.ReadWrite.All_ , o aplicativo pode atualizar todas as propriedades declaradas das contas corporativas ou de estudante, com exceção da senha.
 
-Com a permissão _User.ReadWrite.All_ delegada ou de aplicativo, a atualização de **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não são administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Com a permissão _User.ReadWrite.All_ delegada ou de aplicativo, a atualização de **businessPhones** , **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não são administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Para ler ou gravar os subordinados diretos (`directReports`) ou o gerente (`manager`) de uma conta corporativa ou de estudante, o aplicativo deve ter as permissões _User.Read.All_ (somente leitura) ou _User.ReadWrite.All_.
+Para ler ou gravar os subordinados diretos (`directReports`) ou o gerente (`manager`) de uma conta corporativa ou de estudante, o aplicativo deve ter as permissões _User.Read.All_ (somente leitura) ou _User.ReadWrite.All_ .
 
 A permissão _User.ReadBasic.All_ restringe o acesso do aplicativo a um conjunto limitado de propriedades conhecido como o perfil básico. Isso ocorre porque o perfil completo pode conter informações de diretório confidenciais. O perfil básico inclui apenas as seguintes propriedades:
 
@@ -2141,15 +2176,15 @@ Com o _User.ManageIdentities.All_ delegado ou as permissões de aplicativo, é p
 
 #### <a name="delegated"></a>Delegado
 
-* _User.Read_: Ler o perfil completo para o usuário conectado (`GET /me`).
-* _User.ReadWrite_: Atualizar a foto do usuário conectado (`PUT /me/photo/$value`).
-* _User.ReadBasic.All_: Localizar todos os usuários cujos nomes começam com "Davi" (`GET /users?$filter=startswith(displayName,'David')`).
-* _User.Read.All_: Ler o gerente de um usuário (`GET /user/{id | userPrincipalName}/manager`).
+* _User.Read_ : Ler o perfil completo para o usuário conectado (`GET /me`).
+* _User.ReadWrite_ : Atualizar a foto do usuário conectado (`PUT /me/photo/$value`).
+* _User.ReadBasic.All_ : Localizar todos os usuários cujos nomes começam com "Davi" (`GET /users?$filter=startswith(displayName,'David')`).
+* _User.Read.All_ : Ler o gerente de um usuário (`GET /user/{id | userPrincipalName}/manager`).
 
 #### <a name="application"></a>Aplicativo
 
-* _User.Read.All_: Ler todos os usuários e relações usando a consulta delta (`GET /beta/users/delta?$select=displayName,givenName,surname`).
-* _User.ReadWrite.All_: Atualizar a foto de qualquer usuário na organização (`PUT /user/{id | userPrincipalName}/photo/$value`).
+* _User.Read.All_ : Ler todos os usuários e relações usando a consulta delta (`GET /beta/users/delta?$select=displayName,givenName,surname`).
+* _User.ReadWrite.All_ : Atualizar a foto de qualquer usuário na organização (`PUT /user/{id | userPrincipalName}/photo/$value`).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -2172,11 +2207,11 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
-* _UserActivity.ReadWrite.CreatedByApp_: obter uma lista de atividades de usuários recentes únicos com base nos itens de histórico associados publicados no último dia. (GET /me/activities/recent).
-* _UserActivity.ReadWrite.CreatedByApp_: publicar ou atualizar uma atividade do usuário que poderá ser retomada pelo usuário do aplicativo. (PUT /me/activities/%2Farticle%3F12345).
-*   _UserActivity.ReadWrite.CreatedByApp_: publicar ou atualizar um item de histórico de uma atividade de usuário especificada para representar o período de engajamento do usuário. (PUT /me/activities/{id}/historyItems/{id}).
-*   _UserActivity.ReadWrite.CreatedByApp_: excluir uma atividade de usuário em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}).
-*   _UserActivity.ReadWrite.CreatedByApp_: excluir um item de histórico em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}/historyItems/{id}).
+* _UserActivity.ReadWrite.CreatedByApp_ : obter uma lista de atividades de usuários recentes únicos com base nos itens de histórico associados publicados no último dia. (GET /me/activities/recent).
+* _UserActivity.ReadWrite.CreatedByApp_ : publicar ou atualizar uma atividade do usuário que poderá ser retomada pelo usuário do aplicativo. (PUT /me/activities/%2Farticle%3F12345).
+*   _UserActivity.ReadWrite.CreatedByApp_ : publicar ou atualizar um item de histórico de uma atividade de usuário especificada para representar o período de engajamento do usuário. (PUT /me/activities/{id}/historyItems/{id}).
+*   _UserActivity.ReadWrite.CreatedByApp_ : excluir uma atividade de usuário em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}).
+*   _UserActivity.ReadWrite.CreatedByApp_ : excluir um item de histórico em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}/historyItems/{id}).
 
 ---
 
@@ -2238,11 +2273,11 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 | O aplicativo deseja ler as informações básicas de outros usuários (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de pessoas   | _User.ReadBasic.All_  |  Ler todos os perfis básicos do usuário |
 | O aplicativo deseja ler o perfil completo do usuário de um usuário conectado (ver subordinados diretos, gerente etc.)     | _User.Read_ | Habilitar entrada e ler o perfil de usuário|
 | O aplicativo deseja ler o perfil completo de todos os usuários  | _User.Read.All_ |  Ler os perfis completos de todos os usuários   |
-| O aplicativo deseja ler informações de arquivos, email e calendário do usuário conectado  | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Habilitar entrada e ler o perfil de usuário, ler arquivos dos usuários, ler email do usuário, ler calendários do usuário |
-| O aplicativo deseja ler os arquivos dos usuários (meus) conectados e os arquivos que outros usuários compartilharam com o usuário conectado (eu). | _User.Read_, _Files.Read_, _Sites.Read.All_ | Habilitar entrada e ler o perfil de usuário, ler arquivos dos usuários, ler itens em todos os conjuntos de sites |
+| O aplicativo deseja ler informações de arquivos, email e calendário do usuário conectado  | _User.Read_ , _Files.Read_ , _Mail.Read_ , _Calendars.Read_ | Habilitar entrada e ler o perfil de usuário, ler arquivos dos usuários, ler email do usuário, ler calendários do usuário |
+| O aplicativo deseja ler os arquivos dos usuários (meus) conectados e os arquivos que outros usuários compartilharam com o usuário conectado (eu). | _User.Read_ , _Files.Read_ , _Sites.Read.All_ | Habilitar entrada e ler o perfil de usuário, ler arquivos dos usuários, ler itens em todos os conjuntos de sites |
 | O aplicativo deseja ler e gravar o perfil completo do usuário conectado   | _User.ReadWrite_ | Acesso de leitura e gravação ao perfil de usuário |
 | O aplicativo deseja ler e gravar o perfil completo de todos os usuários    | _User.ReadWrite.All_ | Ler e gravar os perfis completos de todos os usuários |
-| O aplicativo deseja ler e gravar informações de arquivos, de email e de calendário do usuário conectado    | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao email do usuário, acesso total a calendários do usuário |
+| O aplicativo deseja ler e gravar informações de arquivos, de email e de calendário do usuário conectado    | _User.ReadWrite_ , _Files.ReadWrite_ , _Mail.ReadWrite_ , _Calendars.ReadWrite_  |  Acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao email do usuário, acesso total a calendários do usuário |
 | O aplicativo deseja enviar uma solicitação de operação de política de dados para exportar dados pessoais de um usuário | _User.Export.All_ | Exportar os dados pessoais e de um usuário. |
 
 
@@ -2252,6 +2287,6 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 |:-------------------------------|:---------------------|:---------------|
 | O aplicativo deseja ler as informações básicas do grupo (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de um grupo  | _Group.Read.All_  | Ler todos os grupos|
 | O aplicativo deseja ler todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos e conversas.  Também precisa mostrar associações de grupo e ser capaz de atualizar associações de grupo (caso seja o proprietário).  |  _Group.Read.All_ | Ler itens em todos os conjuntos de sites, ler todos os grupos|
-| O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos e conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |    _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
+| O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Microsoft 365, incluindo arquivos e conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |    _Group.ReadWrite.All_ , _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
 | O aplicativo deseja descobrir (localizar) um grupo do Microsoft 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para ingressar no grupo.   | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 | O aplicativo deseja criar um grupo por meio do AAD Graph |   _Group.ReadWrite.All_ | Ler e gravar todos os grupos|

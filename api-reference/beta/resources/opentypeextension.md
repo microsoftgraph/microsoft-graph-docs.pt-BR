@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 457eaaae7f9a595061683999f818cb0f3af8f680
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f294ead00726e020748901679f06d226a3ac5f91
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706881"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796945"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 As extensões abertas (anteriormente conhecidas como extensões de dados do Office 365) oferecem uma maneira fácil de adicionar diretamente propriedades não tipadas a um recurso do Microsoft Graph.
-Extensões abertas são representadas pelo recurso **openTypeExtension**. Qualquer extensão aberta adicionada a um recurso é mostrada na propriedade de navegação **extensions**, que deriva do tipo abstrato [extension](extension.md).  Cada extensão tem uma propriedade **extensionName**, que é a única propriedade predefinida e gravável para todas as extensões, juntamente com seus dados personalizados. Um modo de garantir que os nomes de extensão sejam exclusivos é usar um formato reverso de DNS no sistema de nomes de domínio que dependa de _seu próprio domínio_, por exemplo, `Com.Contoso.ContactInfo`. Não use o domínio Microsoft (`Com.Microsoft` ou `Com.OnMicrosoft`) em um nome de extensão.
+Extensões abertas são representadas pelo recurso **openTypeExtension** . Qualquer extensão aberta adicionada a um recurso é mostrada na propriedade de navegação **extensions** , que deriva do tipo abstrato [extension](extension.md).  Cada extensão tem uma propriedade **extensionName** , que é a única propriedade predefinida e gravável para todas as extensões, juntamente com seus dados personalizados. Um modo de garantir que os nomes de extensão sejam exclusivos é usar um formato reverso de DNS no sistema de nomes de domínio que dependa de _seu próprio domínio_ , por exemplo, `Com.Contoso.ContactInfo`. Não use o domínio Microsoft (`Com.Microsoft` ou `Com.OnMicrosoft`) em um nome de extensão.
 
 Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](/graph/extensibility-open-users)
 
@@ -37,8 +37,8 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 | [Organização](organization.md) | GA |
 | [Contato pessoal](contact.md) | GA |
 | [Usuário](user.md) | GA |
-| [Tarefa](todotask.md)  | Somente para visualização ||
-| [Lista de tarefas](todotasklist.md)  | Somente para visualização ||
+| [Tarefa](todotask.md)  | GA ||
+| [Lista de tarefas](todotasklist.md)  | GA ||
 
 ## <a name="outlook-specific-considerations"></a>Considerações específicas do Outlook
 
@@ -77,7 +77,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |extensionName|String|Um identificador de texto exclusivo para uma extensão de dados de tipo aberto. Obrigatório.|
-|id|String| Um identificador totalmente qualificado que concatena o tipo de extensão com **extensionName**. Somente leitura.|
+|id|String| Um identificador totalmente qualificado que concatena o tipo de extensão com **extensionName** . Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

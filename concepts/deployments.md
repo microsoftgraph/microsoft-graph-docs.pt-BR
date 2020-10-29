@@ -2,12 +2,12 @@
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
-ms.openlocfilehash: 765652f6b7303f9726748497bd6d3738f0ee3670
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: ef34ae6efc7827bbbf8599c571689091287281b2
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289201"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796763"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -79,7 +79,7 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | Calendário do Outlook | ✔ | ✔ | ✔ |
 | Contatos pessoais | ✔ | ✔ | ✔ |
 | Segurança | ✔ | ✔ | ✔ |
-| Microsoft Office SharePoint Online| ✔ | ✔ | ✔ |
+| SharePoint| ✔ | ✔ | ✔ |
 | Teams | ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|
@@ -88,7 +88,7 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | Entidades de serviço  |✔| ➖ |➖|
 | Alterar notificações (Webhooks)  | ✔ |✔ |✔* |
 | Consulta delta | ✔ | ✔ | ➖ |
-| Extensões de esquema de diretório |✔|➖|➖|
+| Extensões de esquema de diretório |✔|✔|➖|
 | Extensões de tipo aberto|➖|➖|➖|
   
 Os seguintes recursos do Microsoft Graph estão disponíveis na visualização (no `/beta` ponto de extremidade) no Microsoft Cloud China e no Microsoft Cloud Alemanha (pontos de extremidade do v 1.0 para esses recursos estão disponíveis no Microsoft Cloud para o governo dos EUA apenas):

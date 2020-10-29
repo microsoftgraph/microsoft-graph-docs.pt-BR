@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9d3226201c82d2cc28b7d30d342deecac8acbbd6
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 2b0b08c838f12817133578fbe94459d7a0acebe1
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782834"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796595"
 ---
 # <a name="list-group-members"></a>Listar membros de grupo
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | User. ReadBasic. All, User. Read. All, Group. Read. All, Directory. Read. All |
+| Delegado (conta corporativa ou de estudante) | Group.Read.All, Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | Group. Read. All, User. Read. All, Directory. Read. All |
+| Aplicativo | Group.Read.All, Directory.Read.All |
 
 > **Observação:** Para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
 

@@ -5,17 +5,17 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 56ad2b1f83475cc6b5af748c129f0cd84cdc07b0
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: e296600642b3aad7bbd895260da139e5dd1a37c7
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313685"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796630"
 ---
 # <a name="create-linkedresource"></a>Criar linkedResource
 Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto **linkedResource** .
+Crie um objeto [linkedResource](../resources/linkedresource.md) para associar uma [tarefa](../resources/todotask.md) especificada a um item em um aplicativo parceiro. Por exemplo, você pode associar uma tarefa a um item de email no Outlook que spurred a tarefa e pode criar um objeto **linkedResource** para controlar sua associação.
 
 Você também pode criar um objeto **linkedResource** ao [criar um todoTask](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: f0449222e9d9694636653f23c0467f6e325d66d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d47ddcbe8f21244a88ddc3771e84a2e341fcaf5e
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055887"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796980"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -53,8 +53,8 @@ POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
-POST /users/{id|userPrincipalName}/todo/lists
 POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
+POST /users/{id|userPrincipalName}/todo/lists
 ```
 
 >**Observação:** Esta sintaxe acima mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem criar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
@@ -63,7 +63,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propried
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>Crie uma extensão em uma instância de recurso existente
 
-Identifique a instância do recurso na solicitação e faça um `POST` para a propriedade de navegação **extensions**.
+Identifique a instância do recurso na solicitação e faça um `POST` para a propriedade de navegação **extensions** .
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -107,7 +107,7 @@ Forneça um corpo JSON de um [openTypeExtension](../resources/opentypeextension.
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
-Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension**, fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.
+Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension** , fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.
 
 ## <a name="response"></a>Resposta
 
@@ -124,7 +124,7 @@ Consulte os tópicos correspondentes para criar a instância conforme listado [c
 |:---------------|:----------|:--------------|
 | Criar uma extensão ao criar explicitamente uma _nova_ instância de recurso | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Inclui a nova instância expandida com o objeto [openTypeExtension](../resources/opentypeextension.md). |
 | Criando uma extensão ao criar implicitamente uma instância de recursos | [postagem](../resources/post.md) | A resposta inclui somente um código de resposta, mas não um corpo de resposta. |
-| Criar uma extensão em uma instância de recurso _existente_ | Todos os recursos com suporte | Inclui o objeto **openTypeExtension**. |
+| Criar uma extensão em uma instância de recurso _existente_ | Todos os recursos com suporte | Inclui o objeto **openTypeExtension** . |
 
 ## <a name="example"></a>Exemplo
 
@@ -132,7 +132,7 @@ Consulte os tópicos correspondentes para criar a instância conforme listado [c
 
 O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo da solicitação inclui o seguinte:
 
-- As propriedades **subject**, **body** e **toRecipients** típicas de uma nova mensagem.
+- As propriedades **subject** , **body** e **toRecipients** típicas de uma nova mensagem.
 - E para a extensão:
 
   - O tipo `microsoft.graph.openTypeExtension`.
@@ -315,7 +315,7 @@ Content-Type: application/json
 
 Veja a seguir a resposta para o segundo exemplo. O corpo da solicitação inclui o seguinte para a nova extensão:
 
-- A propriedade padrão **extensionName**.
+- A propriedade padrão **extensionName** .
 - A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - Os dados personalizados a serem armazenados.
 
@@ -483,7 +483,7 @@ Content-Length: 0
 
 ### <a name="request-5"></a>Solicitação 5
 
-O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma operação POST para criar uma conversa. A operação POST cria uma nova conversa, thread ou postagem e uma nova extensão inserida na postagem. O corpo da solicitação inclui as propriedades **Topic** e **Threads** e o objeto filho **post** para a nova conversa. O objeto **post**, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a extensão:
+O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma operação POST para criar uma conversa. A operação POST cria uma nova conversa, thread ou postagem e uma nova extensão inserida na postagem. O corpo da solicitação inclui as propriedades **Topic** e **Threads** e o objeto filho **post** para a nova conversa. O objeto **post** , por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a extensão:
 
 - O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.HR".
