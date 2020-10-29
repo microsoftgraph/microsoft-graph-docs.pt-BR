@@ -2,15 +2,15 @@
 title: 'calendar: getSchedule'
 description: Obtenha as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos para um período especificado.
 localization_priority: Priority
-author: angelgolfer-ms
+author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: de04a0771b5d4d298140fa150ba414a47bc3d094
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aed0c88b667fee7464473c87e3aebaefee7d7999
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023378"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771780"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -46,7 +46,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|Int32|Representa a duração de um intervalo de tempo em ** availabilityView ** na resposta. O padrão é 30 minutos, o mínimo é 5, o máximo é 1440. Opcional.|
+|availabilityViewInterval|Int32|Representa a duração de um intervalo de tempo em **availabilityView** na resposta. O padrão é 30 minutos, o mínimo é 5, o máximo é 1440. Opcional.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o período termina.|
 |agendas|Coleção String|Uma coleção de endereços SMTP de usuários, listas de distribuição ou recursos para obter informações sobre disponibilidade.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o período começa.|

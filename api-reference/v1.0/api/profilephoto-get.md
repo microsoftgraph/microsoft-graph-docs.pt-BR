@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 50ba7c1c60e121760f26a26cdb090ef984c9f4b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a82f04b4be1a6b7d02b751b9c63acf3439e45d7a
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051820"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771766"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -32,9 +32,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Para recurso de **usuário**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
+|Delegado (conta corporativa ou de estudante) | Para recurso de **usuário** :<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo** :<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato** :<br />Contacts.Read, Contacts.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte |
-|Aplicativo                        | Para recurso de **usuário**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.Read, Contacts.ReadWrite |
+|Aplicativo                        | Para recurso de **usuário** :<br/>User.Read.All, User.ReadWrite.All<br /><br />Para recurso de **grupo** :<br />Group.Read.All, Group.ReadWrite.All<br /><br />Para recurso de **contato** :<br />Contacts.Read, Contacts.ReadWrite |
 
 > **Observação:** Há um [problema conhecido](/graph/known-issues#groups)ao acessar fotos de grupo usando permissões de aplicativo.
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 ##### <a name="response"></a>Resposta
 Contém os dados binários da foto solicitada. O código de resposta HTTP é 200.
 
-### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>Exemplo 2: Obtenha foto 48 x 48 para uso conectado
+### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>Exemplo 2: Obtenha foto 48 x 48 para usuário conectado
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"

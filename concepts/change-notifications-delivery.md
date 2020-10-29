@@ -1,15 +1,15 @@
 ---
 title: Receba notificações sobre alterações por diferentes maneiras de envio(versão prévia)
 description: As notificações de alteração podem ser enviadas por meio de tecnologias diferentes, incluindo o webhooks e Hubs de Eventos do Azure.
-author: baywet
+author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3885b8391eac98e7a355ec911a7a6e4302966e2f
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 74b54487bc18e6e07ed16cae49174a5bd7d6b67a
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288039"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796931"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>Receba notificações sobre alterações por diferentes maneiras de envio(versão prévia)
 
@@ -85,17 +85,17 @@ Nesta seção, você vai:
 Etapas:
 
 1. Abra um navegador para o [Portal do Azure](https://portal.azure.com).
-1. Selecione **Criar um recurso**.
+1. Selecione **Criar um recurso** .
 1. Digite **Hubs de Evento** na barra de pesquisa.
-1. Selecione a sugestão **Hubs de Eventos**. A página de criação dos Hubs de Evento será carregada.  
-1. Na página de criação dos Hubs de Evento clique **criar**.
-1. Preencha os detalhes da criação no namespace dos Hubs de Eventos e clique em **Criar**.  
+1. Selecione a sugestão **Hubs de Eventos** . A página de criação dos Hubs de Evento será carregada.  
+1. Na página de criação dos Hubs de Evento clique **criar** .
+1. Preencha os detalhes da criação no namespace dos Hubs de Eventos e clique em **Criar** .  
 1. Quando o namespace do Hub de Eventos for provisionado, vá para a página do namespace.  
-1. Clique em **Hubs de Eventos** e **+ Hub de Eventos**.  
-1. Dê um nome para o novo Hub de Eventos e clique em **Criar**.  
+1. Clique em **Hubs de Eventos** e **+ Hub de Eventos** .  
+1. Dê um nome para o novo Hub de Eventos e clique em **Criar** .  
 1. Depois que o Hub de Eventos foi criado, clique no nome do Hub de Eventos e, em seguida, clique em **Políticas de acesso compartilhado** e **+ Adicionar** para adicionar uma nova política.  
-1. Dê um nome à política, marque **Enviar**, e clique em **Criar**.  
-1. Depois de criar a política, clique no nome da política para abrir o painel de detalhes e, em seguida, copie o valor da **Chave principal da cadeia de conexão**. Anote-o; você precisará dele para a próxima etapa.  
+1. Dê um nome à política, marque **Enviar** , e clique em **Criar** .  
+1. Depois de criar a política, clique no nome da política para abrir o painel de detalhes e, em seguida, copie o valor da **Chave principal da cadeia de conexão** . Anote-o; você precisará dele para a próxima etapa.  
 
 ##### <a name="configuring-the-azure-key-vault"></a>Configurando o Azure Key Vault
 
@@ -109,17 +109,17 @@ Nesta seção, você vai:
 Etapas:
 
 1. Abra um navegador para o [Portal do Azure](https://portal.azure.com).
-1. Selecione **Criar um recurso**.
+1. Selecione **Criar um recurso** .
 1. Digite **Cofre de Chaves** na barra de pesquisa.
-1. Selecione a sugestão do **Cofre de Chaves**. A página de criação do Cofre de Chaves será carregada.
-1. Na página de criação do Cofre de Chaves clique **criar**.  
-1. Preencha os detalhes da criação do cofre de chaves e, em seguida, clique em **Revisar + Criar** e **Criar**.  
+1. Selecione a sugestão do **Cofre de Chaves** . A página de criação do Cofre de Chaves será carregada.
+1. Na página de criação do Cofre de Chaves clique **criar** .  
+1. Preencha os detalhes da criação do cofre de chaves e, em seguida, clique em **Revisar + Criar** e **Criar** .  
 1. Vá para o cofre de chaves recém-criado usando **Ir para o recurso** da notificação.  
-1. Copie o **nome do DNS**; você precisará dele para a próxima etapa.  
-1. Vá para **Segredos** e clique em **+ Gerar/Importar**.  
-1. Dê um nome ao segredo e guarde-o para mais tarde; você precisará dele para a próxima etapa. Para o valor, cole a cadeia de conexão que você gerou na etapa Hubs de Eventos. Clique em **Criar**.  
-1. Clique em **Políticas de Acesso** e **+ Adicionar Política de Acesso**.  
-1. Para **Permissões de segredo**, selecione **Obter**, e para **Selecionar Principal**, selecione **Controle de Alterações do Microsoft Graph**. Clique em **Adicionar**.  
+1. Copie o **nome do DNS** ; você precisará dele para a próxima etapa.  
+1. Vá para **Segredos** e clique em **+ Gerar/Importar** .  
+1. Dê um nome ao segredo e guarde-o para mais tarde; você precisará dele para a próxima etapa. Para o valor, cole a cadeia de conexão que você gerou na etapa Hubs de Eventos. Clique em **Criar** .  
+1. Clique em **Políticas de Acesso** e **+ Adicionar Política de Acesso** .  
+1. Para **Permissões de segredo** , selecione **Obter** , e para **Selecionar Principal** , selecione **Controle de Alterações do Microsoft Graph** . Clique em **Adicionar** .  
 
 ### <a name="creating-the-subscription-and-receiving-notifications"></a>Criando a assinatura e recebendo notificações
 
@@ -129,11 +129,11 @@ Depois de você criar os serviços necessários Azure Key Vault e do Hubs de Eve
 
 As assinaturas para alterar as notificações com os Hubs de Eventos são quase idênticas como alterar as notificações com webhooks. A principal diferença é que elas dependem dos Hubs de Eventos para entregar notificações. Todas as outras operações são similares, inclusive a [criação de assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-beta).  
 
-A principal diferença durante a criação da assinatura será o **notificationUrl**. Você deve defini-lo para `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>` os seguintes valores:
+A principal diferença durante a criação da assinatura será o **notificationUrl** . Você deve defini-lo para `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>` os seguintes valores:
 
 - `azurekeyvaultname` - O nome que você atribuiu ao cofre de chaves quando o criou. Pode ser encontrado no nome DNS.
-- `secretname` - O nome que você atribuiu ao segredo quando o criou. Pode ser encontrado na página **Segredos**. do Azure Key Vault.
-- `domainname` – O nome do seu locatário do. por exemplo, consto.onmicrosoft.com ou contoso.com. Como esse domínio será usado para acessar o Azure Key Vault é importante que ele corresponda ao domínio usado pela assinatura do Azure que possui o Azure Key Vault. Para obter essa informação, você pode ir para a página de visão geral do Azure Key Vault que você criou e clique na assinatura. O nome de domínio é exibido sob o campo **Diretório**.
+- `secretname` - O nome que você atribuiu ao segredo quando o criou. Pode ser encontrado na página **Segredos** . do Azure Key Vault.
+- `domainname` – O nome do seu locatário do. por exemplo, consto.onmicrosoft.com ou contoso.com. Como esse domínio será usado para acessar o Azure Key Vault é importante que ele corresponda ao domínio usado pela assinatura do Azure que possui o Azure Key Vault. Para obter essa informação, você pode ir para a página de visão geral do Azure Key Vault que você criou e clique na assinatura. O nome de domínio é exibido sob o campo **Diretório** .
 
 #### <a name="receiving-notifications"></a>Recebendo notificações
 
@@ -177,7 +177,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 }
 ```
 
-> **Observação:** Você pode obter um acesso negado ao executar esta consulta. Neste caso, selecione o ícone de engrenagem ao lado do nome da sua conta no canto superior esquerdo. Em seguida, selecione **Selecionar Permissões** e pesquise **Application.ReadWrite.All**. Marque a permissão e selecione **Consentir**. Após o consentimento dessa nova permissão, execute a solicitação novamente.
+> **Observação:** Você pode obter um acesso negado ao executar esta consulta. Neste caso, selecione o ícone de engrenagem ao lado do nome da sua conta no canto superior esquerdo. Em seguida, selecione **Selecionar Permissões** e pesquise **Application.ReadWrite.All** . Marque a permissão e selecione **Consentir** . Após o consentimento dessa nova permissão, execute a solicitação novamente.
 
 > **Observação:** Esta API só funciona com uma conta corporativa ou de estudante e não com uma conta pessoal. Certifique-se que você está conectado com uma conta no seu domínio.
 

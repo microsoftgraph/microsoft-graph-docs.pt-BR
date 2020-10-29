@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: b1d701f467ce0c1a3284c91651dbae0589cd1a08
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 90dd08cc78727bcd7f1e0ce96e914c22705b09f9
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782438"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797127"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -366,22 +366,6 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Channel.Delete.All_ | Excluir canais. | Excluir os canais de qualquer equipe, sem um usuário conectado.  | Sim | Não |
 |_Teamwork.Migrate.All_|Gerenciar a migração do Microsoft Teams|Criar e gerenciar recursos de migração do Microsoft Teams|Sim|Sim|
 
-## <a name="channel-settings-permissions"></a>Permissões de configurações de canal 
-
-#### <a name="delegated-permissions"></a>Permissões delegadas
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações dos canais. | Ler todos os nomes, descrições e configurações dos canais, em nome do usuário conectado.   | Sim | Não |
-| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações dos canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, em nome do usuário conectado.  | Sim | Não |
-
-#### <a name="application-permissions"></a>Permissões de aplicativos
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações de todos os canais. | Ler todos os nomes, descrições e configurações do canal, sem um usuário conectado.  | Sim | Não |
-| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado. | Sim | Não |
-
 ## <a name="calls-permissions"></a>Permissões de chamadas
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -513,15 +497,15 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações dos canais. | Ler todos os nomes, descrições e configurações dos canais, em nome do usuário conectado.   | Sim | Não |
-| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações dos canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, em nome do usuário conectado.  | Sim | Não |
+| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações dos canais. | Ler todos os nomes, descrições e configurações dos canais, em nome do usuário conectado.| Sim | Não |
+| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações dos canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, em nome do usuário conectado.| Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações de todos os canais. | Ler todos os nomes, descrições e configurações do canal, sem um usuário conectado.  | Sim | Não |
-| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado. | Sim | Não |
+| _ChannelSettings.Read.All_ | Ler os nomes, descrições e configurações de todos os canais. | Ler todos os nomes, descrições e configurações do canal, sem um usuário conectado.| Sim | Não |
+| _ChannelSettings.ReadWrite.All_ | Ler e gravar os nomes, descrições e configurações de todos os canais. | Ler e gravar os nomes, descrições e configurações de todos os canais, sem um usuário conectado.| Sim | Não |
 
 ## <a name="chats-permissions"></a>Permissões de bate-papo
 

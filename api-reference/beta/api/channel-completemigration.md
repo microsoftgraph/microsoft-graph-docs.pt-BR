@@ -5,12 +5,12 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 894c8353b626b1f4cebe62bd00311533933df5a7
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 35991987816f65b7a52a80857b00621572fbb793
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48783027"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796546"
 ---
 # <a name="channel-completemigration"></a>canal: completeMigration
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Conclua o processo de migração de mensagens removendo `migration mode` de um [canal](../resources/channel.md) de uma equipe. `Migration mode` é um estado especial que impede determinadas operações, como a criação de mensagens e a adição de membros, durante o processo de migração de dados.
+Conclua o processo de migração de mensagens removendo `migration mode` de um [canal](../resources/channel.md) de uma equipe. `Migration mode` é um estado especial que impede algumas operações, como enviar mensagens e adicionar membros, durante o processo de migração de dados.
 
 Depois que uma solicitação **completeMigration** é feita, não é possível importar mensagens adicionais para a equipe. Você pode adicionar membros à equipe depois que a solicitação retornar uma resposta bem-sucedida.
 

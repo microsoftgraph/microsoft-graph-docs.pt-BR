@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cc4fc3c7900482e4444465a406e7c8b4319bcf0f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: afff423fef59bb06af7659bd5de2b553b76ddca5
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458114"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796504"
 ---
 # <a name="update-emailauthenticationmethod"></a>Atualizar emailAuthenticationMethod
 Namespace: microsoft.graph
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões que atuam em si (de a mais de privilégios mínimos)|Permissões que atuam em outros (de menos para mais privilégios)|
 |:---|:---|:--|
 |Delegado (conta corporativa ou de estudante)|Sem suporte.|UserAuthenticationMethod. ReadWrite. All
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|Sem suporte.
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|Sem suporte.
 |Aplicativo|Sem suporte.|Sem suporte.
 
 Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
@@ -42,7 +42,7 @@ Para cenários delegados em que um administrador está agindo em outro usuário,
 }
 -->
 ``` http
-PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+PUT /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -77,7 +77,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
+PUT https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
 Content-Type: application/json
 
 {

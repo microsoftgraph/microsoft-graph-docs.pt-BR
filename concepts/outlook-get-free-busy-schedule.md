@@ -1,15 +1,15 @@
 ---
 title: Obter agenda de disponibilidade de usuários e recursos
 description: Em uma configuração de escola ou trabalho, um cenário comum é ver quando um usuário está livre para um reunião, ou então pesquisar a disponibilidade de uma equipe, sala ou equipamento para um período de tempo.
-author: angelgolfer-ms
+author: tariq-sharif
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 171a8a41b2f51335d7f5d5f38b63590421d94d48
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: efee992ee099327e72f3e726a2f9eeb346e8b436
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778282"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771829"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>Obter agenda de disponibilidade de usuários e recursos
 
@@ -123,7 +123,7 @@ Content-type: application/json
 
 ```
 
-Além da disponibilidade da agenda e das horas de trabalho do Alex, **getSchedule** também retorna **availabilityView**, que é uma visualização mesclada da disponibilidade do Alex a cada dia. O modo de exibição mesclado é uma cadeia de caracteres que consiste em intervalos de tempo abrangendo aquele dia, sendo que cada intervalo de tempo indica a disponibilidade do Alex usando a seguinte convenção: 
+Além da disponibilidade da agenda e das horas de trabalho do Alex, **getSchedule** também retorna **availabilityView** , que é uma visualização mesclada da disponibilidade do Alex a cada dia. O modo de exibição mesclado é uma cadeia de caracteres que consiste em intervalos de tempo abrangendo aquele dia, sendo que cada intervalo de tempo indica a disponibilidade do Alex usando a seguinte convenção: 
 
 - `0` = livre
 - `1` = provisório
@@ -156,7 +156,7 @@ O **getSchedule** simplesmente retorna o status de disponibilidade dos eventos e
 **getSchedule** é compatível com o cenários delegados e somente aplicativo. No último, o administrador consente que o aplicativo acesse todos os calendários sem um usuário conectado.
 
 ### <a name="permissions"></a>Permissões
-A permissão menos privilegiada exigida pelo **findmeetingtimes**é Calendars.Read.Shared.
+A permissão menos privilegiada exigida pelo **findmeetingtimes** é Calendars.Read.Shared.
 
 A permissão menos privilegiada exigida por **getSchedule** é Calendars.Read. 
 
@@ -170,7 +170,7 @@ A permissão menos privilegiada exigida por **getSchedule** para que um aplicati
 
 Embora a permissão consentida permite com que um aplicativo use o **getSchedule** nos calendários dos usuários solicitados pelo Outlook, o usuário solicitado controla quais dados de evento, caso existam, o **getSchedule** retornará. 
 
-Por exemplo, o **getSchedule** pode retornar o status de disponibilidade e as horas de trabalho dos usuários solicitados ou também retornar as propriedades **subject**, **location**, e **isPrivate** de um evento, desde que:
+Por exemplo, o **getSchedule** pode retornar o status de disponibilidade e as horas de trabalho dos usuários solicitados ou também retornar as propriedades **subject** , **location** , e **isPrivate** de um evento, desde que:
 
 - O evento esteja marcado com um nível de confidencialidade baixo - `normal` ou `personal`- E uma ou mais das seguintes condições se aplicam:
 

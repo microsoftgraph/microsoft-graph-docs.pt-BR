@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ea5473bc015eea4d4f6d8fb0d3d20c3be5dac661
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: abf5884d42086f1944f69f3a598299407e04c75f
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782856"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796553"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Responder a uma mensagem em um canal
 
@@ -145,7 +145,7 @@ Content-length: 160
 
 ### <a name="example-2-import-messages"></a>Exemplo 2: importar mensagens
 
-> **Observação** : nenhum escopo de permissão especial é necessário para este cenário porque a solicitação faz parte do **chat** ; os escopos para **chat** também são aplicados aqui.
+> **Observação** : o escopo de permissão `Teamwork.Migrate.All` é obrigatório para este cenário.
 
 #### <a name="request"></a>Solicitação
 <!-- { "blockType": "ignored" } -->
