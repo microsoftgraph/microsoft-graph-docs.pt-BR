@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso de usuário
 description: 'Um canal é uma coleção de chatMessages dentro de uma equipe. '
-author: clearab
+author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8b055a8a76a888fc5fc2e3f213b8be69f34f6413
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d5f9f78ba70a6156c260ea679e6e1c081bec1dc
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024422"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782953"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -39,6 +39,7 @@ Namespace: microsoft.graph
 |[Criar chatMessage em um canal](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
 |[Criar uma resposta chatMessage em um canal](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal.|
 |[Obter pasta de arquivos](../api/driveitem-get.md).| [driveItem](driveitem.md) | Recupera os detalhes da pasta do SharePoint em que os arquivos do canal estão armazenados. |
+|[Migração concluída](../api/channel-completemigration.md)|[canal](channel.md)| Remove o modo de migração do canal e torna o canal disponível para os usuários postarem e lerem mensagens.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -61,7 +62,7 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.channelCreationMode|string|Indica que o canal está no estado de migração e está sendo usado no momento para fins de migração. Aceita um valor: `migration`.|
 
-> **Observação**: `ChannelCreationMode`  é um enum que usa o valor `migration`.
+> **Observação** : `channelCreationMode`  é um enum que usa o valor `migration`.
 
 Para obter um exemplo de uma solicitação POST, confira [Solicitação (criar canal no estado de migração)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state).
 
@@ -113,5 +114,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-
