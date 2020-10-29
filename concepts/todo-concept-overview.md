@@ -4,14 +4,14 @@ description: O To Do Oferece uma maneira simples de gerenciar suas tarefas e pla
 author: avijityadav
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f68aa1e4948fdac3ecaed94e75abe750f84db8f4
-ms.sourcegitcommit: b6ca83070b6f015c09de215a82cf2b581181c33e
+ms.openlocfilehash: 34dc63ab14bc6cc1a2c118e6a77f9f6cc597bccc
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47367226"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796742"
 ---
-# <a name="to-do-api-overview-preview"></a>Visão geral da API do To Do (visualização)
+# <a name="to-do-api-overview"></a>Visão geral da API do Tarefa Pendente
 O Microsoft To-Do fornece uma maneira simples para as pessoas gerenciarem suas tarefas e planejarem seu dia. As tarefas são organizadas em listas de tarefas, que podem ser acessadas através de clientes do To Do, Outlook e Teams a partir de qualquer dispositivo.
 
 **Aplicativo To Do para Windows**
@@ -27,19 +27,19 @@ O Microsoft To Do ajuda você a criar uma lista para qualquer coisa, desde taref
 To Do é o único destino para tarefas pessoais no Microsoft 365. Portanto, está profundamente integrado aos hubs, da Microsoft 365, Outlook e Teams. As tarefas criadas nesses produtos são sincronizadas com o To Do, para que você possa acessá-las e gerenciá-las através de dispositivos. A integração do To Do pode ajudá-lo a alcançar milhões de usuários que usam o To Do para reunir tarefas do Outlook e do Teams em uma exibição integrada.  
 
 ### <a name="support-task-completion-using-linked-resources"></a>Dar suporte a conclusão de tarefas usando recursos vinculados
-O Microsoft To Do fornece uma nova entidade chamada _linkedResource_, que você pode usar para criar tarefas que podem ser vinculadas de volta às suas fontes originais. Você pode usar isto para integrar perfeitamente ao To Do em seu fluxo de trabalho, criando tarefas que são vinculadas ao seu produto ou serviço. 
+O Microsoft To Do fornece uma nova entidade chamada _linkedResource_ , que você pode usar para criar tarefas que podem ser vinculadas de volta às suas fontes originais. Você pode usar isto para integrar perfeitamente ao To Do em seu fluxo de trabalho, criando tarefas que são vinculadas ao seu produto ou serviço. 
 
 ## <a name="common-to-do-api-operations"></a>Operações comuns da API To Do.
 
 |Operação|Solicitação|
 |:--------|:--|
-| Listar todas as listas de tarefas | GET https://graph.microsoft.com/beta/me/todo/lists |
-| Lista de todas as tarefas em uma lista de tarefas | GET https://graph.microsoft.com/me/todo/lists/{todoTaskListId}/tasks |
-| Criar uma nova tarefa | POST https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks |
-| Atualizar uma tarefa | PATCH https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
-| Excluir uma tarefa | DELETE https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| Listar todas as listas de tarefas | GET https://graph.microsoft.com/v1.0/me/todo/lists |
+| Lista de todas as tarefas em uma lista de tarefas | GET https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks |
+| Criar uma nova tarefa | POST https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks |
+| Atualizar uma tarefa | PATCH https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
+| Excluir uma tarefa | DELETE https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
 
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
 
-- [API do To Do no Microsoft Graph](/graph/api/resources/todo-overview?view=graph-rest-beta)
+- [API do To Do no Microsoft Graph](/graph/api/resources/todo-overview)

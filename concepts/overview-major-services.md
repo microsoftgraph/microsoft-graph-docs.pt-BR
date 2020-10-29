@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9a6c46db31c8e9f85d494017e5ec00e430adc237
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 74248b6a6426f5cf50364a67d5f37b610272a672
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849475"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796714"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -56,7 +56,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Observações | OneNote | Permite aos usuários planejar e organizar informações e ideias. | [Visão geral das anotações do OneNote](integrate-with-onenote.md) |
 | Contatos pessoais | Outlook | Entra em contato com o gerente na Web e em dispositivos móveis e de desktop. Faz parte do hub de comunicação de mensagens do Outlook no Microsoft 365, que também permite que os usuários gerenciem emails e agendem reuniões.  | [Visão geral de contatos pessoais do Outlook](outlook-contacts-concept-overview.md) |
 | Pastas de trabalho e gráficos | Excel | Permite que os usuários usem planilhas do Excel para fazer cálculos complexos, rastrear, analisar e visualizar dados e gerar relatórios profissionais. | [Visão geral de gráficos e pastas de trabalho do Excel](excel-concept-overview.md) |
-| Tarefas To do (visualização) | To Do | Permite aos usuários gerenciar suas tarefas pessoais em seu trabalho e em sua vida particular. Ele também está integrado ao Outlook, Teams, Planner e Cortana, o que o torna o único destino para as tarefas pessoais do usuário no Microsoft 365 | [Visão geral sobre tarefas To Do](todo-concept-overview.md) |
+| Tarefas pendentes | To Do | Permite aos usuários gerenciar suas tarefas pessoais em seu trabalho e em sua vida particular. Ele também está integrado ao Outlook, Teams, Planner e Cortana, o que o torna o único destino para as tarefas pessoais do usuário no Microsoft 365 | [Visão geral sobre tarefas To Do](todo-concept-overview.md) |
 
 ## <a name="collaboration"></a>Colaboração
 

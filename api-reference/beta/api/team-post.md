@@ -1,16 +1,16 @@
 ---
 title: Criar equipe
 description: Criar uma nova equipe.
-author: nkramer
+author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4013251fce41125a0fc6a662d9481520ac75742d
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: 6ab87af3faed82a788b6f505ef5e6a22c0fba1eb
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479951"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782876"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -90,13 +90,17 @@ Content-Type: application/json
 
 ---
 
+<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD001 -->
 
 ##### <a name="response"></a>Resposta
+
 <!-- {
   "blockType": "response",
   "name": "create_team_post",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -110,12 +114,14 @@ Content-Length: 0
 Aqui está um exemplo de uma solicitação mínima usando permissões de aplicativo. Ao omitir outras propriedades, o cliente está implicitamente obtendo padrões do modelo predefinido representado por `template`. Ao emitir uma solicitação com permissões de aplicativo, um [usuário](../resources/user.md) deve ser especificado no conjunto `members`.
 
 #### <a name="request"></a>Solicitação
+<!-- markdownlint-disable MD025 -->
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -135,6 +141,7 @@ Content-Type: application/json
    ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -149,13 +156,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "name": "create_team_post_minimal",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -175,6 +182,7 @@ Aqui está uma solicitação com um conteúdo completo. O cliente pode substitui
   "blockType": "request",
   "name": "create_team_post_full_payload"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -273,13 +281,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "name": "create_team_post_full_payload",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -290,14 +298,13 @@ Content-Length: 0
 
 ### <a name="example-4-create-a-team-from-group"></a>Exemplo 4: criar uma equipe a partir do grupo
 
-O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md), dado um **groupId**.
+O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md), dado um **groupId** .
 
 Alguns pontos a observar nesta chamada:
 
 * Para criar uma equipe, o grupo a partir do qual você a está criando deve ter pelo menos um proprietário.
-* A equipe criada será sempre herdeira do nome de exibição, visibilidade, especialização e proprietários do grupo. Portanto, ao tomar essa decisão com a propriedade **group@odata.bind**, a inclusão da equipe **displayName**, **visibilidade**, **especialização** ou propriedades **owners@odata.bind** retornarão um erro.
+* A equipe criada será sempre herdeira do nome de exibição, visibilidade, especialização e proprietários do grupo. Portanto, ao tomar essa decisão com a propriedade **group@odata.bind** , a inclusão da equipe **displayName** , **visibilidade** , **especialização** ou propriedades **owners@odata.bind** retornarão um erro.
 * Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação. Recomendamos que você repita a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.
-
 
 #### <a name="request"></a>Solicitação
 
@@ -306,6 +313,7 @@ Alguns pontos a observar nesta chamada:
   "blockType": "request",
   "name": "create_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -315,6 +323,7 @@ Content-Type: application/json
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -329,13 +338,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "name": "create_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -357,6 +366,7 @@ Para saber mais sobre os tipos de modelos base com suporte e propriedades com su
   "blockType": "request",
   "name": "convert_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -405,13 +415,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -435,6 +445,7 @@ Para saber mais sobre tipos de modelos base com suporte, confira [Comece a traba
   "blockType": "request",
   "name": "convert_team_from_non_standard"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -536,13 +547,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Resposta
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard2",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -551,9 +562,53 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
+### <a name="example-8-create-a-team-in-migration-mode"></a>Exemplo 8: Criar uma equipe no modo de migração
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra como criar uma equipe para mensagens importadas.
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+
+{
+  "@microsoft.graph.teamCreationMode": "migration",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "displayName": "My Sample Team",
+  "description": "My Sample Team’s Description",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+```
+
+#### <a name="error-response"></a>Resposta de erro
+
+Se a solicitação não for bem-sucedida, este método retorna um código de resposta `400 Bad Request`. 
+
+```http
+400 Bad Request
+```
+
+Os seguintes são motivos comuns para esta resposta:
+
+* **createdDateTime** está definido no futuro.
+* **createdDateTime** está especificado corretamente, mas o atributo da instância **channelCreationMode** está ausente ou configurado com um valor inválido.
+
+
 ## <a name="see-also"></a>Confira também
 
-- [Modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates)
-- [Introdução aos modelos de Equipes de varejo](/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Introdução aos modelos de Equipes médicas](/MicrosoftTeams/healthcare/healthcare-templates)
-- [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
+* [Migração completa para uma equipe](team-completemigration.md)
+* [Importar mensagens de plataforma de terceiros para o Teams usando o Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [Criar um canal](channel-post.md)
+* [Modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates)
+* [Introdução aos modelos de Equipes de varejo](/MicrosoftTeams/get-started-with-retail-teams-templates)
+* [Introdução aos modelos de Equipes médicas](/MicrosoftTeams/healthcare/healthcare-templates)
+* [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
