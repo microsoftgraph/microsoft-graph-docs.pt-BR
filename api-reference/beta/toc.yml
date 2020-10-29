@@ -1,7 +1,7 @@
 name: Referência
 items:
   - name: Visão geral do Microsoft Graph
-    href: ./overview.md
+    href: /graph/overview
   - name: Obter tokens de autenticação
     items:
       - name: Visão geral
@@ -329,8 +329,9 @@ items:
                   - name: Atualizar
                     href: api/iteminsightssettings-update.md
           - name: Email
-            href: resources/message.md
             items:
+              - name: Mensagem
+                href: resources/message.md
               - name: Criar pasta de email
                 href: api/user-post-mailfolders.md
               - name: Criar mensagem
@@ -352,8 +353,9 @@ items:
               - name: Enviar email
                 href: api/user-sendmail.md
           - name: Observações
-            href: resources/onenote.md
             items:
+              - name: OneNote
+                href: resources/onenote.md
               - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
               - name: Listar blocos de anotações
@@ -454,6 +456,18 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: Desinstalar aplicativo
                 href: api/user-delete-teamsappinstallation.md
+          - name: Tarefas pendentes
+            items:
+              - name: Tarefa
+                href: resources/todotask.md
+              - name: Criar tarefa
+                href: api/todotasklist-post-tasks.md
+              - name: Criar lista de tarefas
+                href: api/todo-post-lists.md
+              - name: Listar tarefas
+                href: api/todotasklist-list-tasks.md
+              - name: Listar listas de tarefas
+                href: api/todo-list-lists.md
           - name: Configurações do usuário
             items:
               - name: Configurações do usuário
@@ -12653,7 +12667,7 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
-      - name: Tarefas To do (visualização)
+      - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
           - name: Visão geral

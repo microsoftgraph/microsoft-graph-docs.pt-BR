@@ -1,7 +1,7 @@
 name: Referência
 items:
   - name: Visão geral do Microsoft Graph
-    href: ./overview.md
+    href: /graph/overview
   - name: Obter tokens de autenticação
     items:
       - name: Visão geral
@@ -321,8 +321,9 @@ items:
                   - name: Atualizar configurações
                     href: api/usersettings-update.md
           - name: Email
-            href: resources/message.md
             items:
+              - name: Mensagem
+                href: resources/message.md
               - name: Criar pasta de email
                 href: api/user-post-mailfolders.md
               - name: Criar mensagem
@@ -344,8 +345,9 @@ items:
               - name: Enviar email
                 href: api/user-sendmail.md
           - name: Observações
-            href: resources/onenote.md
             items:
+              - name: OneNote
+                href: resources/onenote.md
               - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
               - name: Listar blocos de anotações
@@ -403,11 +405,23 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
+          - name: Tarefas pendentes
+            items:
+              - name: Tarefa
+                href: resources/todotask.md
+              - name: Criar tarefa
+                href: api/todotasklist-post-tasks.md
+              - name: Criar lista de tarefas
+                href: api/todo-post-lists.md
+              - name: Listar tarefas
+                href: api/todotasklist-list-tasks.md
+              - name: Listar listas de tarefas
+                href: api/todo-list-lists.md
       - name: Grupos
         items:
           - name: Visão geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -5174,7 +5188,63 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
-      - name: Workbooks e gráficos
+      - name: Tarefas pendentes
+        displayName: Microsoft To Do
+        items:
+          - name: Visão geral
+            href: resources/todo-overview.md
+          - name: Lista de tarefas
+            href: resources/todotasklist.md
+            items:
+              - name: Listar listas de tarefas
+                href: api/todo-list-lists.md
+              - name: Criar lista de tarefas
+                href: api/todo-post-lists.md
+              - name: Obter lista de tarefas
+                href: api/todotasklist-get.md
+              - name: Atualizar lista de tarefas
+                href: api/todotasklist-update.md
+              - name: Excluir lista de tarefas
+                href: api/todotasklist-delete.md
+              - name: Obter Delta de lista de tarefas
+                href: api/todotasklist-delta.md
+              - name: Criar extensão aberta
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Obter extensão aberta
+                href: api/opentypeextension-get.md
+          - name: Tarefas
+            href: resources/todotask.md
+            items:
+              - name: Listar tarefas
+                href: api/todotasklist-list-tasks.md
+              - name: Criar tarefa
+                href: api/todotasklist-post-tasks.md
+              - name: Obter tarefa
+                href: api/todotask-get.md
+              - name: Atualizar tarefa
+                href: api/todotask-update.md
+              - name: Excluir tarefa
+                href: api/todotask-delete.md
+              - name: Obter o Delta da tarefa
+                href: api/todotask-delta.md
+              - name: Criar extensão aberta
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: Obter extensão aberta
+                href: api/opentypeextension-get.md
+          - name: Recurso vinculado
+            href: resources/linkedresource.md
+            items:
+              - name: Listar
+                href: api/todotask-list-linkedresources.md
+              - name: Criar
+                href: api/todotask-post-linkedresources.md
+              - name: Obter
+                href: api/linkedresource-get.md
+              - name: Atualizar
+                href: api/linkedresource-update.md
+              - name: Excluir
+                href: api/linkedresource-delete.md
+      - name: Pastas de trabalho e gráficos
         displayName: Excel
         items:
           - name: Visão Geral
