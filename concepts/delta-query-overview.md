@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e0733e24ce07cd234f0d3ea9020f445d3fd8c0ea
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: fc88ea150a2cc126a451e174a624543ab49c7b93
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849307"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797085"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -40,7 +40,7 @@ O padrão típico de chamada corresponde ao que segue:
 
 ### <a name="state-tokens"></a>Tokens de estado
 
-Um GET de consulta delta sempre inclui uma URL especificada em um cabeçalho de resposta `nextLink` ou `deltaLink`. A URL `nextLink` inclui um _skipToken_ e uma URL `deltaLink` inclui um _deltaToken_.
+Um GET de consulta delta sempre inclui uma URL especificada em um cabeçalho de resposta `nextLink` ou `deltaLink`. A URL `nextLink` inclui um _skipToken_ e uma URL `deltaLink` inclui um _deltaToken_ .
 
 Esses tokens são opacos para o cliente. Os seguintes detalhes são o que você precisa saber sobre eles:
 
@@ -93,7 +93,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 As instâncias removidas são representadas por sua **id** e um objeto `@removed`. O objeto `@removed` pode incluir informações adicionais sobre o porquê de a instância ter sido removida. Por exemplo,  "@removido": {"motivo": “alterado”}.
 
-Possíveis motivos @removed podem ser *changed* ou *deleted*.
+Possíveis motivos @removed podem ser *changed* ou *deleted* .
 
 - *Alterado* indica que o item foi excluído e poderá ser restaurado de [deletedItems](/graph/api/resources/directory).
 
@@ -128,8 +128,8 @@ A consulta delta é compatível atualmente com os seguintes recursos. Observe qu
 | Itens do Planner\*\* (pré-visualização)                                    | Função [delta](/graph/api/planneruser-list-delta) (visualização) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser)                                                      |
 | Escolas                                               | Função [delta](/graph/api/educationschool-delta) (visualização) do recurso [educationSchool](/graph/api/resources/educationschool)                                                              |
 | Entidades de serviço                                   | Função [delta](/graph/api/serviceprincipal-delta) do recurso [servicePrincipal](/graph/api/resources/serviceprincipal)                                                          |
-| Tarefas em uma lista de tarefas (visualização)                                 | Função [delta](/graph/api/todotask-delta) (visualização) do recurso [todoTask](/graph/api/resources/todotask)                                                         |
-| Listas de tarefas (visualização)                                           | Função [delta](/graph/api/todotasklist-delta) (visualização) do recurso [todoTaskList](/graph/api/resources/todotasklist)                                                         |
+| Tarefas em uma lista de tarefas                                           | Função [delta](/graph/api/todotask-delta) do recurso [todoTask](/graph/api/resources/todotask)                                                         |
+| Listas de tarefas                                                     | Função [delta](/graph/api/todotasklist-delta) do recurso [todoTaskList](/graph/api/resources/todotasklist)                                                         |
 | Usuários                                                          | função [delta](/graph/api/user-delta?view=graph-rest-1.0) do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0)                                                                |
 
 
@@ -141,7 +141,7 @@ A consulta delta é compatível atualmente com os seguintes recursos. Observe qu
 
 ### <a name="properties-stored-outside-of-the-main-data-store"></a>Propriedades armazenadas fora do repositório de dados principal
 
-Alguns recursos contêm propriedades armazenadas fora do repositório de dados principal do recurso (por exemplo, o recurso de usuário é armazenado no sistema Azure AD, enquanto algumas propriedades, como **skills**, são armazenadas no SharePoint Online). Atualmente, não há suporte para essas propriedades como parte do controle de alterações; uma alteração em uma dessas propriedades não resultará em um objeto aparecendo na resposta de consulta Delta. Atualmente, apenas as propriedades armazenadas no repositório de dados principal disparam alterações na consulta Delta.
+Alguns recursos contêm propriedades armazenadas fora do repositório de dados principal do recurso (por exemplo, o recurso de usuário é armazenado no sistema Azure AD, enquanto algumas propriedades, como **skills** , são armazenadas no SharePoint Online). Atualmente, não há suporte para essas propriedades como parte do controle de alterações; uma alteração em uma dessas propriedades não resultará em um objeto aparecendo na resposta de consulta Delta. Atualmente, apenas as propriedades armazenadas no repositório de dados principal disparam alterações na consulta Delta.
 
 Para verificar se uma propriedade pode ser usada na consulta Delta, experimente executar uma operação de `GET` regular na coleção de recursos e selecione a propriedade que você está interessado. Por exemplo, você pode usar a propriedade **skills** na coleção de usuários.
 
@@ -174,11 +174,11 @@ Content-type: application/json
 }
 ```
 
-Isso informa que não há suporte para a propriedade **skills** para a consulta Delta no recurso **user**.
+Isso informa que não há suporte para a propriedade **skills** para a consulta Delta no recurso **user** .
 
 ### <a name="navigation-properties"></a>Propriedades de navegação
 
-Não há suporte para propriedades de navegação. Por exemplo, você não pode controlar alterações na coleção de usuários que incluiriam alterações na propriedade **photo**; **photo** é uma propriedade de navegação armazenada fora da entidade do usuário, e as alterações feitas nela não fazem com que o objeto de usuário seja incluído na resposta Delta.
+Não há suporte para propriedades de navegação. Por exemplo, você não pode controlar alterações na coleção de usuários que incluiriam alterações na propriedade **photo** ; **photo** é uma propriedade de navegação armazenada fora da entidade do usuário, e as alterações feitas nela não fazem com que o objeto de usuário seja incluído na resposta Delta.
 
 ### <a name="processing-delays"></a>Atrasos de processamento
 
@@ -190,7 +190,7 @@ As consultas Delta estão disponíveis para os clientes hospedados na nuvem púb
 
 ### <a name="token-duration"></a>Duração do token
 
-Os tokens Delta só são válidos para um período específico, antes que o aplicativo cliente precise executar uma sincronização total novamente. Para objetos de diretório (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), o limite é de 7 dias. Para objetos de formação educacional (**educationSchool**, **educationUser**e **educationClass**), o limite é de 7 dias. Para entidades do Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**), o limite superior não é corrigido; depende do tamanho do cache de tokens do delta interno. Enquanto os novos tokens delta são adicionados ao cache, após a capacidade do cache ser excedida, os tokens delta mais antigos são excluídos.
+Os tokens Delta só são válidos para um período específico, antes que o aplicativo cliente precise executar uma sincronização total novamente. Para objetos de diretório ( **application** , **administrativeUnit** , **directoryObject** , **directoryRole** , **group** , **orgContact** , **oauth2permissiongrant** , **servicePrincipal** , and **user** ), o limite é de 7 dias. Para objetos de formação educacional ( **educationSchool** , **educationUser** e **educationClass** ), o limite é de 7 dias. Para entidades do Outlook ( **message** , **mailFolder** , **event** , **contact** , **contactFolder** , **todoTask** , and **todoTaskList** ), o limite superior não é corrigido; depende do tamanho do cache de tokens do delta interno. Enquanto os novos tokens delta são adicionados ao cache, após a capacidade do cache ser excedida, os tokens delta mais antigos são excluídos.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
