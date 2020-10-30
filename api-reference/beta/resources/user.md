@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: cfe63b8cfed082a48a0bd39127926374a15c398d
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: a4947a091428227ee55c5bde5c09cfd591b4b349
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48783016"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797120"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -118,9 +118,6 @@ Esse recurso permite:
 | [Listar as categorias do Outlook](../api/outlookuser-list-mastercategories.md) | Coleção [outlookCategory](outlookcategory.md)                                 | Obtém todas as categorias que foram definidas para o usuário. |
 | [Converter IDs do Exchange](../api/user-translateexchangeids.md) | coleção [convertIdResult](convertidresult.md) | Traduzir os identificadores de recursos relacionados ao Outlook entre formatos. |
 | [Atualizar configurações da caixa de correio do usuário](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Habilitar, configurar ou desabilitar o mailboxSettings de um ou mais usuários. |
-| **Tarefas do Outlook** |||
-| [Criar outlookTask](../api/outlookuser-post-tasks.md) | [outlookTask](outlooktask.md) | Criar uma tarefa do Outlook no grupo de tarefas padrão (Minhas Tarefas) e pasta de tarefas padrão (Tarefas) na caixa de correio do usuário. |
-| [Listar tarefas](../api/outlookuser-list-tasks.md) | coleção [outlookTask](outlooktask.md) | Obtenha todas as tarefas do Outlook na caixa de correio do usuário. |
 | **Pessoas** |||
 | [Listar pessoas](../api/user-list-people.md) | [person](person.md) | Recupere uma lista de objetos person ordenados por relevância para o usuário, o que é determinado pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. |
 | **Foto** |||
@@ -142,12 +139,18 @@ Esse recurso permite:
 | [Listar aplicativos instalados para o usuário](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | Recupere a lista de aplicativos instalados no escopo pessoal do usuário especificado. |
 | [Atualizar aplicativo](../api/user-upgrade-teamsappinstallation.md) | Nenhum | Atualize uma instalação de aplicativo no escopo pessoal do usuário especificado para a versão mais recente do aplicativo. |
 | [Desinstalar aplicativo para o usuário](../api/user-delete-teamsappinstallation.md) | Nenhum  | Desinstale um aplicativo do escopo pessoal do usuário especificado. |
+| **Tarefas pendentes** |||
+|[Criar tarefa](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Crie um [todoTask](todotask.md) na lista de tarefas especificada.|
+|[Criar uma lista de tarefas](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Criar uma lista de tarefas To Dona caixa de correio do usuário. |
+|[Listar tarefas](../api/todotasklist-list-tasks.md)|Coleção [todoTask](todotask.md)|Obtenha todos os recursos [todoTask](todotask.md) na lista especificada.|
+|[Lista de listas de tarefas](../api/todo-list-lists.md) | Coleção [todoTaskList](todotasklist.md) | Obtenha todas as listas de tarefas na caixa de correio do usuário. |
 | **Configurações do usuário** |||
 | [Obter configurações](../api/usersettings-get.md) | [userSettings](usersettings.md) | Leia o usuário e o objeto de configurações da organização. |
 | [Atualizar configurações](../api/usersettings-update.md) | [userSettings](usersettings.md) | Atualize as propriedades do objeto de configurações. |
-| **Todo taskList** |||
-|[List lists](../api/todo-list-lists.md) | Coleção [todoTaskList](todotasklist.md) | Obtenha todas as listas de tarefas na caixa de correio do usuário. |
-|[Criar todoTasklist](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Criar uma lista de tarefas To Dona caixa de correio do usuário. |
+| **Tarefas do Outlook** (obsoleto)|||
+| [Criar outlookTask](../api/outlookuser-post-tasks.md)(obsoleto) | [outlookTask](outlooktask.md) | Criar uma tarefa do Outlook no grupo de tarefas padrão (Minhas Tarefas) e pasta de tarefas padrão (Tarefas) na caixa de correio do usuário. |
+| [Listar de tarefas](../api/outlookuser-list-tasks.md) (obsoleto) | coleção [outlookTask](outlooktask.md) | Obtenha todas as tarefas do Outlook na caixa de correio do usuário. |
+
 
 ## <a name="properties"></a>Propriedades
 
