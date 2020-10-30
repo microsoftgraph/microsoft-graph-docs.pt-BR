@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6ab87af3faed82a788b6f505ef5e6a22c0fba1eb
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 30d942e192a89caba71d1093016b3be9a6fa8ef2
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782876"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796686"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -130,7 +130,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
-   "members@odata.bind":[
+   "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
          "roles":[
@@ -599,8 +599,8 @@ Se a solicitação não for bem-sucedida, este método retorna um código de res
 
 Os seguintes são motivos comuns para esta resposta:
 
-* **createdDateTime** está definido no futuro.
-* **createdDateTime** está especificado corretamente, mas o atributo da instância **channelCreationMode** está ausente ou configurado com um valor inválido.
+* **createdDateTime** é definido no futuro.
+* **createdDateTime** está especificado corretamente, mas o atributo da instância **teamCreationMode** está ausente ou definido com um valor inválido.
 
 
 ## <a name="see-also"></a>Confira também
