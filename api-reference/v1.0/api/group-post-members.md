@@ -1,22 +1,22 @@
 ---
 title: Adicionar membro
-description: Adicionar um membro a um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members**.
+description: Adicionar um membro a um grupo do Microsoft 365, de um grupo de segurança ou de um grupo de segurança habilitado para email por meio da propriedade de navegação **members** .
 localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 94ac86f03f586f45aafd6f2dbef1c7c8ba254be8
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 17321cff45b4d1af9cf625ce47002b934953b948
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373962"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796959"
 ---
 # <a name="add-member"></a>Adicionar membro
 
 Namespace: microsoft.graph
 
-Adicione um membro a um grupo do Microsoft 365 ou a um grupo de segurança através da propriedade de navegação de **membros**.
+Adicione um membro a um grupo do Microsoft 365 ou a um grupo de segurança através da propriedade de navegação de **membros** .
 
 É possível adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos. 
 
@@ -113,7 +113,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-add-multiple-members-to-a-group-in-a-single-request"></a>Exemplo 2: adicionar vários membros a um grupo em uma única solicitação
 
-Esse exemplo mostra como adicionar vários membros a um grupo com suporte vinculado OData em uma operação PATCH. Observe que é possível adicionar até 20 membros em uma única solicitação. Não há suporte para a operação POST.
+Esse exemplo mostra como adicionar vários membros a um grupo com suporte vinculado OData em uma operação PATCH. Observe que é possível adicionar até 20 membros em uma única solicitação. Não há suporte para a operação POST. Se houver uma condição de erro no corpo da solicitação, nenhum membro será adicionado e o código de resposta apropriado será retornado.
 
 #### <a name="request"></a>Solicitação
 

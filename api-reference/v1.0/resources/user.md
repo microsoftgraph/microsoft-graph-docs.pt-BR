@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 35ce4fb1ae5f5168b60f97fdace24fe0eb007605
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 24035e0d1cae131b1c08d0cc2f300272f3d87d8f
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782939"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796912"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -112,9 +112,15 @@ Esse recurso permite:
 | [Listar tarefas](../api/planneruser-list-tasks.md)                                             | Coleção [plannerTask](plannertask.md)                                         | Obter o plannerTasks atribuído ao usuário.                                                                                                                                                                                              |
 | **Extensões de esquema**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups)                          | Nenhum                                                                             | Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.                                                                                                                                        |
+| **Tarefas pendentes** |||
+|[Criar tarefa](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Crie um [todoTask](todotask.md) na lista de tarefas especificada.|
+|[Criar uma lista de tarefas](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Criar uma lista de tarefas To Dona caixa de correio do usuário. |
+|[Listar tarefas](../api/todotasklist-list-tasks.md)|Coleção [todoTask](todotask.md)|Obtenha todos os recursos [todoTask](todotask.md) na lista especificada.|
+|[Lista de listas de tarefas](../api/todo-list-lists.md) | Coleção [todoTaskList](todotasklist.md) | Obtenha todas as listas de tarefas na caixa de correio do usuário. |
 | **Configurações do usuário**                                                                          |                                                                                  |                                                                                                                                                                                                                                     |
 | [Obter configurações](../api/usersettings-get.md)                                                 | [userSettings](usersettings.md)                                                  | Leia o usuário e o objeto de configurações da organização.                                                                                                                                                                                     |
 | [Atualizar configurações](../api/usersettings-update.md)                                           | [userSettings](usersettings.md)                                                  | Atualize as propriedades do objeto de configurações.                                                                                                                                                                                       |
+
 
 ## <a name="properties"></a>Propriedades
 
@@ -128,7 +134,7 @@ Esse recurso permite:
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade. <br>Somente leitura para usuários sincronizados do diretório local. |
 |city|String|A cidade em que o usuário está localizado. Oferece suporte para `$filter`.|
-|companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo do nome da empresa é 64 caracteres.<br><br>Retornado apenas em `$select`.|
+|companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo do nome da empresa é 64 caracteres.<br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`.|
 |consentProvidedForMinor|String|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |country|String|País/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte para `$filter`.|
 |createdDateTime | DateTimeOffset |Data de criação do objeto do usuário. |
@@ -170,8 +176,8 @@ Esse recurso permite:
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.|
 |onPremisesSyncEnabled|Booliano| **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura |
 |onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
-|otherMails|String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. Oferece suporte para `$filter`.|
-|passwordPolicies|String|Especifica as políticas de senha do usuário. Este valor é uma enumeração com um possível valor sendo "DisableStrongPassword", que permite especificar as senhas mais fracas do que a política padrão. O "DisablePasswordExpiration" também pode ser especificado. É possível especificar os dois juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
+|otherMails|Coleção String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. Oferece suporte a $filter.|
+|passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[passwordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies** . Por padrão, é obrigatória uma senha forte.|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
 |postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
@@ -265,6 +271,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
 |planner|[plannerUser](planneruser.md)| Ponto de entrada para o recurso Planejador que pode existir para um usuário. Somente leitura.|
 |registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável.|
+|todo|[todo](todo.md)|Representa os serviços To Do disponíveis para um usuário. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -476,7 +483,7 @@ Veja a seguir uma representação JSON do recurso
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
+  "otherMails": ["string"],
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],

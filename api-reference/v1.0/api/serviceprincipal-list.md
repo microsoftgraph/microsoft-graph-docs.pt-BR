@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db4cb7cb35e29cf73f58a312add83d87d1f13920
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: cf11a68c4f341a67565a1359eacca3dea523e2f0
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459104"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797022"
 ---
 # <a name="list-serviceprincipals"></a>Listar servicePrincipals
 
@@ -36,12 +36,13 @@ GET /servicePrincipals
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. Você pode usar `$search`na propriedade **displayName** . Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome           | Descrição                |
 |:---------------|:---------------------------|
 | Autorização  | {token} de portador. Obrigatório.  |
+| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -52,9 +53,12 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
-### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
 
+### <a name="example-1-get-a-list-of-service-principals"></a>Exemplo 1: obter uma lista de entidades de serviço
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,11 +87,12 @@ GET https://graph.microsoft.com/v1.0/serviceprincipals
 
 ---
 
+#### <a name="response"></a>Resposta
 
-### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+Este é um exemplo de resposta.
 
-> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,39 +105,138 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [{
-        "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
-        "deletedDateTime": null,
-        "accountEnabled": true,
-        "appDisplayName": "My App",
-        "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
-        "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
-        "appRoleAssignmentRequired": false,
-        "displayName": "foo",
-        "homepage": null,
-        "logoutUrl": null,
-        "publisherName": "Contoso",
-        "replyUrls": [],
-        "servicePrincipalNames": [
-        "f1bd758f-4a1a-4b71-aa20-a248a22a8928"
-        ],
-        "tags": [],
-        "addIns": [],
-        "appRoles": [],
-        "info": {
-        "termsOfServiceUrl": null,
-        "supportUrl": null,
-        "privacyStatementUrl": null,
-        "marketingUrl": null,
-        "logoUrl": null
-        },
-        "keyCredentials": [],
-        "oauth2PermissionScopes": [],
-        "passwordCredentials": []
-    }]
+  "value": [
+    {
+      "accountEnabled":true,
+      "displayName":"amasf",
+      "publisherName":"Contoso",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
+    }
+  ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-service-principals"></a>Exemplo 2: obter apenas uma contagem de entidades de serviço
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-3-use-filter-and-top-to-get-one-service-principal-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 3: Utilize $filter e $top para obter uma entidade de serviço com um nome de exibição que comece com a letra 'a', incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrinciples",
+  "@odata.count":1,
+  "value":[
+    {
+      "accountEnabled":true,
+      "displayName":"a",
+      "publisherName":"Contoso",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-service-principals-with-display-names-that-contain-the-letters-team-including-a-count-of-returned-objects"></a>Exemplo 4: Utilize $search para obter entidades de serviço com nomes de exibição que contenham as letras 'Team', incluindo uma contagem de objetos retornados
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_team_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$search="displayName:Team"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrincipals",
+  "@odata.count":1396,
+  "value":[
+    {
+      "accountEnabled":true,
+      "displayName":"myContosoTeam",
+      "publisherName":"Contoso",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

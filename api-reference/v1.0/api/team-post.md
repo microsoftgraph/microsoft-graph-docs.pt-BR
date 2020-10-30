@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2a5c7e53882846a45597421d4f2b5384d2c87a8d
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: 9c611ab5f0fa612146fcd413d59fb9baea32701d
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479945"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796735"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -129,7 +129,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
-   "members@odata.bind":[
+   "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
          "roles":[
@@ -286,12 +286,12 @@ Content-Length: 0
 
 ### <a name="example-4-create-a-team-from-group"></a>Exemplo 4: criar uma equipe a partir do grupo
 
-O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md), dado um **groupId**.
+O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md), dado um **groupId** .
 
 Alguns pontos a observar nesta chamada:
 
 * Para criar uma equipe, o grupo a partir do qual você a está criando deve ter pelo menos um proprietário.
-* A equipe criada será sempre herdeira do nome de exibição, visibilidade, especialização e proprietários do grupo. Portanto, ao tomar essa decisão com a propriedade **group@odata.bind**, a inclusão da equipe **displayName**, **visibilidade**, **especialização** ou propriedades **owners@odata.bind** retornarão um erro.
+* A equipe criada será sempre herdeira do nome de exibição, visibilidade, especialização e proprietários do grupo. Portanto, ao tomar essa decisão com a propriedade **group@odata.bind** , a inclusão da equipe **displayName** , **visibilidade** , **especialização** ou propriedades **owners@odata.bind** retornarão um erro.
 * Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação. Recomendamos que você repita a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.
 
 #### <a name="request"></a>Solicitação
