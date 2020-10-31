@@ -5,25 +5,25 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 16931e8296bd390f9531e3d9cc3ed36df7886534
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6e5a8a06f21d338703db7ca557e9911c96b87bbb
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727939"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816158"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Faça o upload de documentos utilizando a API de Impressão Universal do Microsoft Graph
 
 Para imprimir um documento utilizando a API de Impressão Universal no Microsoft Graph, você [cria um trabalho de impressão](/graph/api/printershare-post-jobs?view=graph-rest-beta), faz o upload do documento e, em seguida, [inicia o trabalho de impressão](/graph/api/printjob-start?view=graph-rest-beta). Este artigo descreve como fazer o upload de um documento, que começa com [ a criação de uma sessão de upload ](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).
 
-Para fazer o upload de um arquivo, ou de parte de um arquivo, seu aplicativo faz uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**.
+Para fazer o upload de um arquivo, ou de parte de um arquivo, seu aplicativo faz uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession** .
 Você pode fazer o upload de todo o arquivo ou dividi-lo em vários intervalos de bytes, desde que o máximo de bytes em qualquer solicitação seja inferior a 10 MB.
 
-É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários do documento são carregados, o arquivo binário é vinculado ao **printDocument**.
+É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários do documento são carregados, o arquivo binário é vinculado ao **printDocument** .
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Faça uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**.
+Faça uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession** .
 
 ### <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
@@ -87,7 +87,7 @@ Quando o último intervalo de bytes de um arquivo for recebido, o servidor respo
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->
 
-```
+```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 Content-Length: 10
 Content-Range: bytes 4533312-4533321/4533322
@@ -142,7 +142,7 @@ Content-Type: application/json
 
 Para cancelar uma sessão de upload, envie uma solicitação DELETE para o URL de upload. Isso deve ser usado em cenários em que o upload é interrompido, por exemplo, se o usuário cancelar a transferência.
 
-Os arquivos temporários e a sessão de upload que os acompanha são automaticamente limpos decorrido o valor de **expirationDateTime**.
+Os arquivos temporários e a sessão de upload que os acompanha são automaticamente limpos decorrido o valor de **expirationDateTime** .
 
 ### <a name="request"></a>Solicitação
 
