@@ -4,12 +4,12 @@ description: Descreve os SDKs que estão disponíveis, as plataformas que eles d
 localization_priority: Normal
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b839b9a7ae0a32a22c9d20a61c96d021137388e3
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 88d5cc0515ef71ffa12e09fac7a6875dfb305bb2
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589302"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819680"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Visão geral dos SDKs do Microsoft Graph
 
