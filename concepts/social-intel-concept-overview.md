@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8211895285254310ef6ecdb051cb53ded8e0e446
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 8de176c72568929db81591abfd4280c22b3d0829
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288956"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816194"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
 
@@ -20,20 +20,20 @@ A API de perfil permite que você, como desenvolvedor de aplicativos, modele e r
 
 Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes. Eles fornece informações inteligentes que podem responder a perguntas como:
 
-- "Quem esse usuário deve contatar para obter informações sobre esse tópico?"
+- "Pesquisar Pessoas cujo nome comece com ‘J’"
 - "Quais documentos são interessantes para essa pessoa?"
 
 Você pode usar a API de Pessoas e a API do Insights no Microsoft Graph para criar aplicativos mais inteligentes que podem, respectivamente, acessar as pessoas e os documentos relevantes para um usuário.
 
-A API de Pessoas retorna as pessoas por ordem de relevância para um usuário com base nos contatos do usuário, em suas redes sociais, seu diretório organizacional e suas comunicações recentes por email e Skype. Isso é particularmente útil para cenários de seleção de pessoas.
+A API de Pessoas retorna pessoas ordenadas por relevância para um usuário, com base nos contatos do usuário, redes sociais, diretório da organização e comunicações recentes por email. Isso é particularmente útil para cenários de seleção de pessoas.
 
 A API do Insights usa análises e avançadas e o aprendizado de máquina para fornecer os arquivos mais relevantes de que os usuários precisam ao longo de seu dia de trabalho. Essa API capacita experiências familiares do Microsoft 365, incluindo o Office Delve, a página inicial do SharePoint, o modo de exibição Descoberta do OneDrive for Business e o Outlook na Web.
 
-![As APIs de Pessoas e do Insights retornam pessoas e documentos relevantes para um usuário](images/social-intel-concept-overview-data.png)
+![As APIs de Pessoas e do Insights retornam pessoas e documentos relevantes para um usuário](images/social-intel-concept-overview-data-update2020-1.png)
 
 ## <a name="why-integrate-with-people-data"></a>Por que se integrar com dados de pessoas?
 
-A API de Pessoas retorna dados de uma única entidade, [person](/graph/api/resources/person?view=graph-rest-1.0), que inclui dados típicos de um indivíduo no mundo de negócios de hoje. O que torna esses dados de **pessoa** especialmente úteis é sua _relevância_ em relação a um usuário do Microsoft Graph. A relevância é identificada por meio de uma pontuação para cada pessoa, que é calculada com base nos padrões de colaboração e comunicação e nas relações de negócios do usuário. Há 3 tipos principais de aplicações para esses dados de _relevância_.
+A API de Pessoas retorna dados de uma única entidade, [person](/graph/api/resources/person?view=graph-rest-1.0), que inclui dados típicos de um indivíduo no mundo de negócios de hoje. O que torna esses dados de **pessoa** especialmente úteis é sua _relevância_ em relação a um usuário do Microsoft Graph. A relevância é identificada por meio de uma pontuação para cada pessoa, que é calculada com base nos padrões de colaboração e comunicação e nas relações de negócios do usuário. Há 3 tipos principais de aplicações para esses dados de _relevância_ .
 
 ### <a name="browse-people-by-relevance"></a>Procurar pessoas pela relevância
 
@@ -49,19 +49,6 @@ Essas pesquisas retornam resultados com base em uma correspondência exata e tam
 ```http
 GET /me/people/?$search=j
 ```
-
-### <a name="fuzzy-searches-based-on-topic-criteria"></a>Pesquisas baseadas em critérios de tópico
-
-A API de Pessoas também permite que você realize pesquisas por pessoas relevantes para o usuário conectado e que tenham manifestado interesse em se comunicar com esse usuário sobre determinados tópicos. Os tópicos são apenas palavras que os usuários usaram com mais frequência nas conversas de email. A Microsoft extrai essas palavras, sem qualquer contexto, e cria um índice para esses dados para facilitar pesquisas difusas.
-
-O exemplo a seguir ilustra inferências sobre a finalidade de uma pesquisa sobre o tópico "beetle":
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/people/?$search="topic:beetle" 
-```
-
-Uma pesquisa difusa no índice de dados de tópico retorna instâncias que significam o nome em inglês do inseto besouro, o icônico carro Beetle da Volkswagen, a banda Beatles e outras definições.
 
 ## <a name="why-integrate-with-the-profile-api-preview"></a>Por que integrar com a API do perfil (visualização)?
 
@@ -120,7 +107,7 @@ Procurando a referência de API para estes serviços?
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Use o [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) para experimentar as APIs de pessoas, Insights e análises com seus próprios arquivos. Entre e escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para ativar **Pessoas**, **Insights** e **Análises**.
+* Use o [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) para experimentar as APIs de pessoas, Insights e análises com seus próprios arquivos. Entre e escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para ativar **Pessoas** , **Insights** e **Análises** .
 * Encontre mais informações sobre a [API pessoas](people-example.md).
 * Veja como [personalizar o cartão de perfil](add-properties-profilecard.md).
 * Saiba mais sobre como [personalizar a privacidade dos usuários](insights-customize-item-insights-privacy.md) e a [API de informações](/api-reference/beta/resources/iteminsights.md).
