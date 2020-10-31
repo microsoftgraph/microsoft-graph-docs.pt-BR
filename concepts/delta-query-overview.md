@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fc88ea150a2cc126a451e174a624543ab49c7b93
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 2a684d593458b2f40a6b45f7c326f45f37e1cc4a
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797085"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819659"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -187,6 +187,14 @@ Esperar atrasos variáveis entre o tempo que uma alteração é feita em uma ins
 ### <a name="national-clouds"></a>Nuvens nacionais
 
 As consultas Delta estão disponíveis para os clientes hospedados na nuvem pública e o Microsoft Graph na China operado apenas pela 21Vianet.
+
+### <a name="replays"></a>Repetições
+
+O aplicativo deve estar preparado para repetições, que ocorrem quando a mesma alteração aparece nas respostas subsequentes. Embora a consulta delta se esforce ao máximo para reduzir as repetições, elas ainda são possíveis.
+
+### <a name="synchronization-reset"></a>Sincronização redefinida
+
+A consulta delta pode retornar um código de resposta de `410 (gone)` e um cabeçalho de **Localização** contendo um URL de solicitação com um token delta vazio (igual à consulta inicial). Isso é uma indicação de que o aplicativo deve reiniciar com uma sincronização completa do locatário de destino. Isso geralmente acontece para evitar inconsistência de dados devido à manutenção interna ou migração do locatário de destino.
 
 ### <a name="token-duration"></a>Duração do token
 
