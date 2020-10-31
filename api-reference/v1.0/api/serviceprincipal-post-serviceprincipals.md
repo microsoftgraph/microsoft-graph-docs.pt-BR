@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b3b865066c498e340f917dd72aaf06e75593a66f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: affaf5ab5cce121f4a763e90e32ed9589510e4ca
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045512"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816207"
 ---
 # <a name="create-serviceprincipal"></a>Criar servicePrincipal
 
@@ -44,7 +44,7 @@ POST /serviceprincipals
 | Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto do [servicePrincipal](../resources/serviceprincipal.md). O corpo da solicitação deve conter  **appId**.
+No corpo da solicitação, forneça uma representação JSON de um objeto do [servicePrincipal](../resources/serviceprincipal.md). O corpo da solicitação deve conter  **appId** .
 
 ## <a name="response"></a>Resposta
 
@@ -65,7 +65,7 @@ POST https://graph.microsoft.com/v1.0/serviceprincipals
 Content-type: application/json
 
 {
-  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

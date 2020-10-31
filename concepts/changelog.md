@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c3521733b2bf6f048acc0ffa858312af371b6f51
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: 03079840ce7a1f189febd8c0528d86dd10e90b03
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771830"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819708"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -24,9 +24,6 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 | Adicionado o campo **AlternateIdLogin** ao campo [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0) para definição da política.|
 | Adição | beta | Adicionado o campo **AlternateIdLogin** ao campo [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta) para definição da política.|
-| Adição | beta | Foi adicionada a entidade [fido2AuthenticationMethodConfiguration](/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) para gerenciar a política do método de autenticação de chaves de segurança FIDO2 dos usuários. |
-| Adição | beta | Foi adicionada a entidade [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) para o gerenciamento da política de autenticação do método de autenticação Microsoft Authenticator Passwordless Phone Sign-in dos usuários. |
-| Adição | beta | Adicionado o [emailauthenticationmethod](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) para gerenciar o método de autenticação de email dos usuários. |
 | Adição | Beta e v1.0 | Adicionadas as propriedades do [editor verificador](/graph/api/resources/verifiedPublisher) ao [aplicativo](/graph/api/resources/application) e aos recursos do[servicePrincipal](/graph/api/resources/serviceprincipal). |
 | Adição | Beta e v1.0 | Adicionado os métodos [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) e [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) aos recursos do [aplicativo](/graph/api/resources/application). |
 
@@ -101,6 +98,12 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |:---|:---|:---|
 |Adição|beta|Adicionado o método [revokeGrants](/graph/api/permission-revokeGrants?view=graph-rest-beta) ào recurso [de permissão](/graph/api/resources/permission?view=graph-rest-beta).|
 
+### <a name="identity-and-access"></a>Identidade e acesso
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adicionado suporte para `$count`, `$search`, e `$filter` parâmetros de consulta para melhorar as capacidades de consulta: <br><ul><li>[Listar aplicativos](/graph/api/application-list?view=graph-rest-1.0)</li><li>[Listar dispositivos](/graph/api/device-list?view=graph-rest-1.0)</li><li>[Lista de grupos de dispositivos](/graph/api/device-list-memberof?view=graph-rest-1.0)</li><li>[Listar grupos transitivos de dispositivos](/graph/api/device-list-transitivememberof?view=graph-rest-1.0)</li><li>[Listar grupos](/graph/api/group-list?view=graph-rest-1.0)</li><li>[Listar grupo memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[Listar membros de grupo](/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[Listar transitivo de grupo memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[Listar membros transitivos de grupo](/graph/api/group-list-transitivemembers?view=graph-rest-1.0)</li><li>[Listar orgContacts](/graph/api/orgcontact-list?view=graph-rest-1.0)</li><li>[Listar servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-1.0)</li><li>[Listar memberOf de servicePrincipal](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[Listar memberOf transitivos de servicePrincipal](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[Listar usuários](/graph/api/user-list?view=graph-rest-1.0)</li><li>[Listar usuário memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[Listar usuário transitivo memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul><br>Exemplos adicionados para usar OData para: <ul><li>[Listar grupo memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[Listar membros de grupo](/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[Listar transitivo de grupo memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[Listar memberOf de servicePrincipal](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[Listar memberOf transitivos de servicePrincipal](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[Listar usuário memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[Listar usuário transitivo memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul> |
+
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -118,13 +121,34 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
+|Adição|beta|Adicionado suporte aos recursos **completeMigration** , [canal](/graph/api/resources/channel?view=graph-rest-beta) e [equipe](/graph/api/resources/team?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade **teamCreationMode** ao recurso [equipe](/graph/api/resources/team?view=graph-rest-beta).|
+|Adição|beta|Adicionada a propriedade **channelCreationMode** ao recurso [canal](/graph/api/resources/channel?view=graph-rest-beta).|
 | Adição | v1.0 | Adicionados os métodos [Listar membros](/graph/api/conversationmember-list?view=graph-rest-beta), [Obter membro](/graph/api/conversationmember-get?view=graph-rest-beta), [Adicionar membro](/graph/api/conversationmember-add?view=graph-rest-beta), [Atualizar membro](/graph/api/conversationmember-update?view=graph-rest-beta) e [Excluir membro](/graph/api/conversationmember-delete?view=graph-rest-beta) ao recursos [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta) e [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta).|
+
+### <a name="to-do-tasks"></a>Tarefas pendentes
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|v1.0|Adicionada a relação **tarefa pendente** ao recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
+|Adição|v1.0|Acrescentado o tipo de recurso [tarefa pendente](/graph/api/resources/todo?view=graph-rest-1.0).|
+|Adição|v1.0|Acrescentado o tipo de recurso [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0).|
+|Adição|v1.0|Acrescentado o tipo de recurso [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0).|
+|Adição|v1.0|Acrescentado o tipo de recurso [linkedResource](/graph/api/resources/linkedResource?view=graph-rest-1.0).|
+|Adição|v1.0|Acrescentado o tipo de enumeração **wellknownListName** .|
+|Adição|v1.0|Acrescentado o tipo de enumeração **bodyType** .|
+|Adição|v1.0|Adicionado o tipo de enumeração **importância** .|
+|Adição|v1.0|Acrescentado o tipo de enumeração **taskStatus** .|
+|Adição|v1.0|Adicionado o método [delta](/graph/api/todoTaskList-delta?view=graph-rest-1.0) ao recurso [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0).|
+|Adição|v1.0|Adicionado o método [delta](/graph/api/todoTask-delta?view=graph-rest-1.0) ao recurso [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0).|
+
 
 ### <a name="users"></a>Usuários
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | Beta e v1.0 | Adicionadas as propriedades **employeeType** , **employeeOrgData** e **employeeHireDate** à entidade [usuário](/graph/api/resources/user). |
+| Alterar | Beta e v1.0 | Mudou para somente leitura as propriedades **businessPhones** e **mobilePhone** para usuários sincronizados a partir do diretório local na entidade [user](/graph/api/resources/user). |
 
 ## <a name="september-2020"></a>Setembro de 2020
 
@@ -227,6 +251,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionado o tipo enumerado **volumeType** .|
 | Adição | beta | Adicionado o tipo complexo **directorySizeQuota** à entidade [organization](/graph/api/resources/organization?view=graph-rest-beta). |
 
+
 ### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -261,17 +286,15 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição        | beta | Consultar dados externos em [mais de um de conexão](search-concept-custom-types.md).|
 | Alterar        | beta |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
 
-### <a name="teamwork"></a>Trabalho em equipe
+### <a name="teamwork"></a>Trabalho em equipe 
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição|Beta e v1.0|Propriedade **lastEditedDateTime** adicionada ao recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
-|Alterar| Beta e v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|
+|Adição|Beta e v1.0|Propriedade **lastEditedDateTime** adicionada ao recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|    
+|Alterar| Beta e v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|  
 |Adição|beta| Foi adicionada a propriedade **createdDateTime** aos recursos do [canal](/graph/api/resources/channel?view=graph-rest-beta) e da [equipe](/graph/api/resources/team?view=graph-rest-beta).|
 |Adição|Beta e v1.0| Adicionado o método [Update chatMessage](/graph/api/chatmessage-update) ao recurso [chatMessage](/graph/api/resources/chatmessage).|
 |Adição|v1.0| Adicionados os métodos [Listar membros](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Adicionar membros](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true)e [Remover membros](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true).|
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 
 ### <a name="users"></a>Usuários
 
@@ -781,7 +804,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Alteração | beta | Alterado o tipo de propriedade de navegação **shares** para **coleção printerShare** na entidade [printer](/graph/api/resources/printer?view=graph-rest-beta). |
 | Alteração | beta | Substituída a propriedade **name** na entidade [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta). |
 | Alteração | beta | Substituídas as propriedades **name** e **acceptingJobs** na entidade [printer](/graph/api/resources/printer?view=graph-rest-beta). |
-| Alteração | beta | Substituída a propriedade de navegação **printerShares** na entidade [print](/graph/api/resources/print?view=graph-rest-beta).<br/> Soon, URL paths such as "/print/printerShares/\*" will stop working. Use "/print/shares/\*" instead. |
+| Alterar | beta | Substituída a propriedade de navegação **printerShares** na entidade [print](/graph/api/resources/print?view=graph-rest-beta).<br/> Soon, URL paths such as "/print/printerShares/\*" will stop working. Use "/print/shares/\*" instead. |
 | Alterar | beta | Substituída a propriedade **registeredBy** na entidade [printer](/graph/api/resources/printerShare?view=graph-rest-beta). |
 | Adição | beta | Adicionada a propriedade de navegação **shared** na entidade [print](/graph/api/resources/print?view=graph-rest-beta). |
 | Adição | beta | Adicionadas as propriedades **displayName** e **isAcceptingJobs** à entidade [printer](/graph/api/resources/printer?view=graph-rest-beta). |
