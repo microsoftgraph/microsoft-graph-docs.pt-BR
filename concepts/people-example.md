@@ -5,16 +5,16 @@ ms.date: 4/9/2019
 author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 5823e994a5a4cb5451dcb32875a76c42c5ecb503
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 0a519fa3b7f6604e5cb0165909b0f754462ccae0
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384329"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816186"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 
-Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais, contatos das redes sociais ou do diretório de uma organização e as pessoas de comunicações recentes (como emails e Skype). Além de gerar essas informações, a API de Pessoas também fornece suporte para pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado. A API de Pessoas é particularmente útil para cenários de seleção de pessoas, como ao redigir um email ou criar uma reunião. Por exemplo, você pode usar a API de Pessoas em cenários de redação de emails.
+Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas que são mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração do usuário e pelos relacionamentos comerciais. As pessoas podem ser contatos locais ou do diretório de uma organização e pessoas de comunicações recentes. Além de gerar essas informações, a API de Pessoas também oferece suporte de pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes a outro usuário na organização do usuário conectado. A API de Pessoas é particularmente útil para cenários de seleção de pessoas, como ao redigir um email ou ao criar uma reunião. Por exemplo, você pode usar a API de Pessoas em cenários de redação de email.
 
 ## <a name="authorization"></a>Autorização
 
@@ -25,7 +25,7 @@ Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das p
 
 ## <a name="browse-people"></a>Procurar pessoas
 
-As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`) ou para um usuário específico na organização do usuário conectado. Essas solicitações exigem a permissão People.Read ou People.Read.All, respectivamente. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro de consulta *$top*.
+As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`) ou para um usuário específico na organização do usuário conectado. Essas solicitações exigem a permissão People.Read ou People.Read.All, respectivamente. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro de consulta *$top* .
 
 ### <a name="get-a-collection-of-relevant-people"></a>Obter uma coleção de pessoas relevantes
 
@@ -35,7 +35,7 @@ A solicitação a seguir obtém as pessoas mais relevantes para o usuário conec
 GET https://graph.microsoft.com/v1.0/me/people/
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -160,7 +160,7 @@ Se a primeira resposta não contiver a lista completa das pessoas relevantes, vo
 GET https://graph.microsoft.com/v1.0/me/people/?$top=3&$skip=10
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -279,13 +279,13 @@ Content-type: application/json
 
 ### <a name="sort-the-response"></a>Classificar a resposta
 
-Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta ao usar o parâmetro *$orderby*. Essa consulta seleciona as pessoas mais relevantes para você, classifica-as por **displayName** e, em seguida, retorna as primeiras 10 pessoas na lista classificada.
+Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta ao usar o parâmetro *$orderby* . Essa consulta seleciona as pessoas mais relevantes para você, classifica-as por **displayName** e, em seguida, retorna as primeiras 10 pessoas na lista classificada.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$orderby=displayName
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso ao usar o parâmetro *$top*. O exemplo a seguir usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso ao usar o parâmetro *$top* . O exemplo a seguir usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -404,7 +404,7 @@ Content-type: application/json
 
 ### <a name="change-the-number-of-people-and-fields-returned"></a>Alterar o número de pessoas e campos retornados
 
-Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top*.
+Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top* .
 
 O exemplo a seguir solicita as 1.000 pessoas mais relevantes para `/me`. A solicitação também limita a quantidade de dados enviados de volta do servidor solicitando somente o **displayName** da pessoa.
 
@@ -476,7 +476,7 @@ Content-type: application/json
 }
 ```
 ### <a name="types-of-results-included"></a>Tipos de resultados incluídos
-Por padrão, o Microsoft Graph mostra apenas os resultados da caixa de correio, que não incluem os resultados de diretório/organização. Para recuperar os resultados do diretório, especifique um cabeçalho HTTP, como mostrado.
+Por padrão, o Microsoft Graph exibe resultados apenas de caixa de correio, que são seus contatos salvos ou pessoas com as quais você provavelmente interagirá. Para recuperar os resultados do diretório de toda a organização, especifique um cabeçalho HTTP, conforme mostrado.
 
 ```http
 "X-PeopleQuery-QuerySources: Mailbox,Directory”
@@ -491,7 +491,7 @@ O exemplo a seguir limita a resposta ao **displayName** e **scoredEmailAddresses
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -537,13 +537,13 @@ Content-type: application/json
 
 Você pode usar o parâmetro *$filter* para limitar a resposta apenas às pessoas cujo registro contém os critérios especificados.
 
-A consulta a seguir limita a resposta a instâncias **person** com a propriedade **personType** com as atribuições de **person** como **classe** e **organizationUser** como **subclasse**.
+A consulta a seguir limita a resposta a instâncias **person** com a propriedade **personType** com as atribuições de **person** como **classe** e **organizationUser** como **subclasse** .
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$filter=personType/class eq 'Person' and personType/subclass eq 'OrganizationUser'
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -694,7 +694,7 @@ Content-type: application/json
 
 ### <a name="browse-another-users-relevant-people"></a>Procurar pessoas relevantes de outro usuário
 
-A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário conectado. Esta solicitação requer a permissão People.Read.All. Os parâmetros de consulta descritos nas seções acima também se aplicam.
+A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário conectado, conforme descrito na [ Implementação do recurso de trabalho](#implementation-of-the-working-with-feature). Esta solicitação requer a permissão People.Read.All. Os parâmetros de consulta descritos nas seções acima também se aplicam.
 
 Neste exemplo, as pessoas relevantes de Vinícius Monte são exibidas.
 
@@ -702,7 +702,7 @@ Neste exemplo, as pessoas relevantes de Vinícius Monte são exibidas.
 GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. O exemplo abaixo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top* . O exemplo abaixo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -821,7 +821,7 @@ Content-type: application/json
 
 ## <a name="search-people"></a>Pesquisar pessoas
 
-As solicitações nesta seção permitem procurar pessoas relevantes para o usuário conectado (`/me`) e para outros usuários na organização do usuário conectado. Essas solicitações requerem a permissão People.Read, com exceção da pesquisa de pessoas relevantes de outros usuários, que exige People.Read.All. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro *$top*.
+As solicitações nesta seção permitem procurar pessoas relevantes para o usuário conectado (`/me`) e para outros usuários na organização do usuário conectado. Essas solicitações requerem a permissão People.Read, com exceção da pesquisa de pessoas relevantes de outros usuários, que exige People.Read.All. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro *$top* .
 
 ### <a name="use-search-to-select-people"></a>Usar a pesquisa para selecionar pessoas
 
@@ -833,7 +833,7 @@ A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` cujo **dis
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
 ```
 
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top* . Este exemplo usa *$top* para limitar a resposta a três registros.
 
 ```http
 HTTP/1.1 200 OK
@@ -952,7 +952,7 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-### <a name="working-with-feature-implementation"></a>Trabalhando com implementação de recursos
+### <a name="implementation-of-the-working-with-feature"></a>Implementação do recurso de trabalho
  
 Deve haver um relacionamento público entre o proprietário do perfil e as outras pessoas para que essas pessoas apareçam na lista do proprietário do perfil. A ilustração a seguir mostra um Usuário A, um índice de relacionamentos com outros usuários (Usuário B) e um perfil público mostrando um subconjunto de relacionamentos de usuários.
 
@@ -979,4 +979,4 @@ A classificação não muda com base em quem é o usuário A (a pessoa que está
  
 Para que o Usuário C apareça, o proprietário do perfil deve estar em um grupo/DL relativamente pequeno com esse usuário que é público (o que significa que a lista de membros está disponível no diretório).
  
-Pessoas externas à organização não serão exibidas na lista do proprietário do perfil. As pessoas com as quais eles se comunicam por email ou se encontram, mas que não fazem parte da mesma organização, não serão exibidas na seção Trabalhando com.
+Pessoas externas à organização não aparecem na lista do proprietário do perfil. As pessoas com quem eles trocam emails ou se encontram, mas que não fazem parte da mesma organização, também não aparecem como pessoas com quem o proprietário trabalha.
