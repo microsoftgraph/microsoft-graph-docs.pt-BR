@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 90dd08cc78727bcd7f1e0ce96e914c22705b09f9
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 012516efd2355528eb8842337c502915688156b2
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797127"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849127"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -21,7 +21,7 @@ Para saber mais sobre como funcionam as permissões, [Confira noções básicas 
 
 ## <a name="microsoft-graph-permission-names"></a>Nomes de permissões do Microsoft Graph
 
-Os nomes de permissões do Microsoft Graph seguem um padrão simples: _resource.operation.constraint_ . Por exemplo, _User.Read_ concede permissão para ler o perfil do usuário conectado, _User.ReadWrite_ concede permissão para ler e modificar o perfil do usuário conectado e _Mail.Send_ concede permissão para enviar emails em nome do usuário conectado.
+Os nomes de permissões do Microsoft Graph seguem um padrão simples: _resource.operation.constraint_. Por exemplo, _User.Read_ concede permissão para ler o perfil do usuário conectado, _User.ReadWrite_ concede permissão para ler e modificar o perfil do usuário conectado e _Mail.Send_ concede permissão para enviar emails em nome do usuário conectado.
 
 O elemento _constraint_ do nome determina a extensão potencial do acesso que o aplicativo terá dentro do diretório. No momento, o Microsoft Graph é compatível com as seguintes restrições:
 
@@ -54,7 +54,7 @@ Container objects such as groups support members of various types, for example u
 
 This is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type (not just member links). Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
 
-For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user, a group, and a device.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user and group objects in the group, but not the device object.  In the response, all the selected properties of the user and group objects are returned. For the device object, however, only limited information is returned.  The data type and object ID are returned for the device, but all other properties have a value of *null* . Apps without permission will not be able to use the ID to get the actual object.
+For example, let's say an application has [User.Read.All](#user-permissions) and [Group.Read.All](#group-permissions) permissions for Microsoft Graph.  A group has been created and that group contains a user, a group, and a device.  The application calls [list group members](/graph/api/group-list-members).  The application has access to the user and group objects in the group, but not the device object.  In the response, all the selected properties of the user and group objects are returned. For the device object, however, only limited information is returned.  The data type and object ID are returned for the device, but all other properties have a value of *null*. Apps without permission will not be able to use the ID to get the actual object.
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl HTTP/1.1
@@ -1891,18 +1891,20 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 | Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | TeamSettings.Read.Group | Leia as configurações dessa equipe. | Ler as configurações dessa equipe, sem um usuário conectado. |Não | Não |
+| TeamSettings.ReadWrite.Group | Atualizar as configurações para esta equipe. | Leia e grave as configurações desta equipe, sem um usuário está conectado. |Não | Não |
 | ChannelSettings.Read.Group | Ler os nomes, descrições e configurações dos canais dessa equipe. | Ler os nomes, descrições e configurações dos canais dessa equipe, sem um usuário conectado. |Não | Não |
-| ChannelSettings.Edit.Group | Editar os nomes, descrições e configurações dos canais dessa equipe.| Editar os nomes, descrições e configurações dos canais dessa equipe, sem um usuário conectado. |Não | Não |
+| ChannelSettings.ReadWrite.Group | Atualize os nomes, descrições e configurações dos canais desta equipe.| Atualize os nomes dos canais, as descrições e as configurações dos canais deste grupo, sem um usuário está conectado. |Não | Não |
 |Channel.Create.Group | Criar canais nesta equipe. | Criar canais neste grupo, sem um usuário conectado. |Não | Não |
 |Channel.Delete.Group | Excluir os canais dessa equipe. | Excluir canais neste grupo, sem um usuário conectado. |Não | Não |
 |ChannelMessage.Read.Group | Ler as mensagens de canal da equipe. | Permite que um aplicativo leia as mensagens desse grupo, sem um usuário conectado. |Não | Não |
-|TeamsApp.Read.Group | Veja quais aplicativos estão instalados nessa equipe. | Veja quais aplicativos estão instalados nesse grupo, sem um usuário conectado. |Não | Não |
+|TeamsAppInstallation.Read.Group | Veja quais aplicativos estão instalados nessa equipe. | Veja quais aplicativos estão instalados nesse grupo, sem um usuário conectado. |Não | Não |
 |TeamsTab.Read.Group | Leia as guias dessa equipe. | Ler as guias dessa equipe, sem um usuário conectado. |Não | Não |
 |TeamsTab.Create.Group | Criar guias nesta equipe. | Criar guias neste grupo, sem um usuário conectado. |Não | Não |
-|TeamsTab.Edit.Group | Editar as guias dessa equipe. | Editar as guias deste grupo, sem um usuário conectado. |Não | Não |
+|TeamsTab.ReadWrite.Group | Atualize as guias desta equipe. | Atualize as guias deste grupo, sem um usuário está conectado. |Não | Não |
 |TeamsTab.Delete.Group | Excluir as guias dessa equipe. | Excluir as guias deste grupo, sem um usuário conectado. |Não | Não |
-|Member.Read.Group | Leia os membros dessa equipe.| Excluir os membros desse grupo, sem um usuário conectado. |Não | Não |
-|Owner.Read.Group| Ler os proprietários dessa equipe. | Ler os proprietários desse grupo, sem um usuário conectado. |Não | Não |
+|TeamMember.Read.Group | Leia os membros desta equipe. | Leia os membros desta equipe, sem um usuário está conectado. |Não | Não |
+|Member.Read.Group | Leia os membros deste grupo.| Excluir os membros desse grupo, sem um usuário conectado. |Não | Não |
+|Owner.Read.Group| Leia os proprietários deste grupo.    | Ler os proprietários desse grupo, sem um usuário conectado. |Não | Não |
 
 ## <a name="teams-settings-permissions"></a>Permissões de configurações do Teams
 
@@ -2141,7 +2143,7 @@ Com a Permissão de aplicativo _User.ReadWrite.All_ , o aplicativo pode atualiza
 
 Com a permissão _User.ReadWrite.All_ delegada ou de aplicativo, a atualização de **businessPhones** , **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não são administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Para ler ou gravar os subordinados diretos (`directReports`) ou o gerente (`manager`) de uma conta corporativa ou de estudante, o aplicativo deve ter as permissões _User.Read.All_ (somente leitura) ou _User.ReadWrite.All_ .
+Para ler ou gravar os subordinados diretos (`directReports`) ou o gerente (`manager`) de uma conta corporativa ou de estudante, o aplicativo deve ter as permissões _User.Read.All_ (somente leitura) ou _User.ReadWrite.All_.
 
 A permissão _User.ReadBasic.All_ restringe o acesso do aplicativo a um conjunto limitado de propriedades conhecido como o perfil básico. Isso ocorre porque o perfil completo pode conter informações de diretório confidenciais. O perfil básico inclui apenas as seguintes propriedades:
 
