@@ -5,60 +5,60 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c4a5c4caf51970edf238f8026c6bc18b77b9260d
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: e3a5fa4703ccf04a13c4575d2131b9834f5154f7
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223232"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848015"
 ---
-# <a name="update-chatmessage"></a><span data-ttu-id="2ec9b-103">Atualizar chat</span><span class="sxs-lookup"><span data-stu-id="2ec9b-103">Update chatMessage</span></span>
+# <a name="update-chatmessage"></a><span data-ttu-id="14e64-103">Atualizar chat</span><span class="sxs-lookup"><span data-stu-id="14e64-103">Update chatMessage</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-<span data-ttu-id="2ec9b-104">Atualizar um objeto [chat](../resources/chatMessage.md) .</span><span class="sxs-lookup"><span data-stu-id="2ec9b-104">Update a [chatMessage](../resources/chatMessage.md) object.</span></span> <span data-ttu-id="2ec9b-105">Somente a propriedade **policyViolation** de um **chat** pode ser atualizada.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-105">Only the **policyViolation** property of a **chatMessage** can be updated.</span></span>
+<span data-ttu-id="14e64-104">Atualizar um objeto [chat](../resources/chatMessage.md) .</span><span class="sxs-lookup"><span data-stu-id="14e64-104">Update a [chatMessage](../resources/chatMessage.md) object.</span></span> <span data-ttu-id="14e64-105">Somente a propriedade **policyViolation** de um **chat** pode ser atualizada.</span><span class="sxs-lookup"><span data-stu-id="14e64-105">Only the **policyViolation** property of a **chatMessage** can be updated.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2ec9b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="2ec9b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="14e64-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="14e64-106">Permissions</span></span>
 
-<span data-ttu-id="2ec9b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2ec9b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="14e64-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14e64-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2ec9b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2ec9b-109">Permission type</span></span>      | <span data-ttu-id="2ec9b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2ec9b-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="14e64-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="14e64-109">Permission type</span></span>      | <span data-ttu-id="14e64-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="14e64-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2ec9b-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2ec9b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2ec9b-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-112">Not supported.</span></span>    |
-|<span data-ttu-id="2ec9b-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2ec9b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2ec9b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-114">Not supported.</span></span>    |
-|<span data-ttu-id="2ec9b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2ec9b-115">Application</span></span> | <span data-ttu-id="2ec9b-116">Chat. UpdatePolicyViolation. All para uma mensagem de chat.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-116">Chat.UpdatePolicyViolation.All for a chat message.</span></span></br><span data-ttu-id="2ec9b-117">ChannelMessage. UpdatePolicyViolation. All para uma mensagem de canal.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-117">ChannelMessage.UpdatePolicyViolation.All for a channel message.</span></span> |
+|<span data-ttu-id="14e64-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="14e64-111">Delegated (work or school account)</span></span> | <span data-ttu-id="14e64-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="14e64-112">Not supported.</span></span> |
+|<span data-ttu-id="14e64-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="14e64-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14e64-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="14e64-114">Not supported.</span></span>    |
+|<span data-ttu-id="14e64-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="14e64-115">Application</span></span> | <span data-ttu-id="14e64-116">Chat. UpdatePolicyViolation. All para uma mensagem de chat.</span><span class="sxs-lookup"><span data-stu-id="14e64-116">Chat.UpdatePolicyViolation.All for a chat message.</span></span></br><span data-ttu-id="14e64-117">ChannelMessage. UpdatePolicyViolation. All para uma mensagem de canal.</span><span class="sxs-lookup"><span data-stu-id="14e64-117">ChannelMessage.UpdatePolicyViolation.All for a channel message.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2ec9b-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2ec9b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="14e64-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="14e64-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/chatMessages/{message-id}
 PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2ec9b-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2ec9b-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="14e64-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="14e64-119">Request headers</span></span>
 
-| <span data-ttu-id="2ec9b-120">Nome</span><span class="sxs-lookup"><span data-stu-id="2ec9b-120">Name</span></span>       | <span data-ttu-id="2ec9b-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="2ec9b-121">Description</span></span>|
+| <span data-ttu-id="14e64-120">Nome</span><span class="sxs-lookup"><span data-stu-id="14e64-120">Name</span></span>       | <span data-ttu-id="14e64-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="14e64-121">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="2ec9b-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="2ec9b-122">Authorization</span></span>  | <span data-ttu-id="2ec9b-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2ec9b-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2ec9b-125">Content-Type</span></span> | <span data-ttu-id="2ec9b-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="14e64-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="14e64-122">Authorization</span></span>  | <span data-ttu-id="14e64-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="14e64-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="14e64-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="14e64-125">Content-Type</span></span> | <span data-ttu-id="14e64-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="14e64-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2ec9b-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2ec9b-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="14e64-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="14e64-128">Request body</span></span>
 
-<span data-ttu-id="2ec9b-129">No corpo da solicitação, forneça uma representação JSON de um objeto [chat](../resources/chatMessage.md) , especificando apenas a propriedade **policyViolation** .</span><span class="sxs-lookup"><span data-stu-id="2ec9b-129">In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, specifying only the **policyViolation** property.</span></span>
+<span data-ttu-id="14e64-129">No corpo da solicitação, forneça uma representação JSON de um objeto [chat](../resources/chatMessage.md) , especificando apenas a propriedade **policyViolation** .</span><span class="sxs-lookup"><span data-stu-id="14e64-129">In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, specifying only the **policyViolation** property.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2ec9b-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="2ec9b-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="14e64-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="14e64-130">Response</span></span>
 
-<span data-ttu-id="2ec9b-131">Se tiver êxito, este método retornará uma `200 OK` resposta.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-131">If successful, this method returns a `200 OK` response.</span></span>
+<span data-ttu-id="14e64-131">Se tiver êxito, este método retornará uma `200 OK` resposta.</span><span class="sxs-lookup"><span data-stu-id="14e64-131">If successful, this method returns a `200 OK` response.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2ec9b-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2ec9b-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="14e64-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="14e64-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2ec9b-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2ec9b-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="14e64-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="14e64-133">Request</span></span>
 
-<span data-ttu-id="2ec9b-134">Veja a seguir um exemplo da solicitação para atualizar a propriedade **policyViolation** em uma mensagem de canal do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-134">The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message.</span></span>
+<span data-ttu-id="14e64-134">Veja a seguir um exemplo da solicitação para atualizar a propriedade **policyViolation** em uma mensagem de canal do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="14e64-134">The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2ec9b-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="2ec9b-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="14e64-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="14e64-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chatMessage.PatchPolicyViolation.All"
@@ -80,24 +80,24 @@ Content-Length: 248
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2ec9b-136">C#</span><span class="sxs-lookup"><span data-stu-id="2ec9b-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="14e64-136">C#</span><span class="sxs-lookup"><span data-stu-id="14e64-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagepatchpolicyviolationall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2ec9b-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2ec9b-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="14e64-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="14e64-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chatmessagepatchpolicyviolationall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2ec9b-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2ec9b-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="14e64-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="14e64-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chatmessagepatchpolicyviolationall-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="2ec9b-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="2ec9b-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="14e64-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="14e64-139">Response</span></span>
 
-<span data-ttu-id="2ec9b-140">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2ec9b-140">Here is an example of the response.</span></span>
+<span data-ttu-id="14e64-140">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="14e64-140">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

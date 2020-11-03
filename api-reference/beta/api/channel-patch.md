@@ -5,63 +5,63 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 208fba1dff20fb4b8ac6979013378b9f8ac40171
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2397cde51de94c7147ed55e88bc4d716c454d0cc
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987103"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848054"
 ---
-# <a name="patch-channel"></a><span data-ttu-id="358c2-103">Canal de patch</span><span class="sxs-lookup"><span data-stu-id="358c2-103">Patch channel</span></span>
+# <a name="patch-channel"></a><span data-ttu-id="b25cc-103">Canal de patch</span><span class="sxs-lookup"><span data-stu-id="b25cc-103">Patch channel</span></span>
 
-<span data-ttu-id="358c2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="358c2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b25cc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b25cc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="358c2-105">Atualiza as propriedades do [canal](../resources/channel.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="358c2-105">Update the properties of the specified [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="b25cc-105">Atualiza as propriedades do [canal](../resources/channel.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="b25cc-105">Update the properties of the specified [channel](../resources/channel.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="358c2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="358c2-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b25cc-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b25cc-106">Permissions</span></span>
 
-<span data-ttu-id="358c2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="358c2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b25cc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b25cc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="358c2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="358c2-109">Permission type</span></span>      | <span data-ttu-id="358c2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="358c2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b25cc-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b25cc-109">Permission type</span></span>      | <span data-ttu-id="b25cc-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b25cc-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="358c2-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="358c2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="358c2-112">ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="358c2-112">ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="358c2-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="358c2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="358c2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="358c2-114">Not supported.</span></span>    |
-|<span data-ttu-id="358c2-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="358c2-115">Application</span></span> | <span data-ttu-id="358c2-116">ChannelSettings. Edit. Group \*, ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="358c2-116">ChannelSettings.Edit.Group\*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="b25cc-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b25cc-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b25cc-112">ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="b25cc-112">ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="b25cc-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b25cc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b25cc-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b25cc-114">Not supported.</span></span>    |
+|<span data-ttu-id="b25cc-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b25cc-115">Application</span></span> | <span data-ttu-id="b25cc-116">ChannelSettings. ReadWrite. Group \*, ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="b25cc-116">ChannelSettings.ReadWrite.Group\*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="358c2-117">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="358c2-117">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="b25cc-117">**Observação** : Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="b25cc-117">**Note** : Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
-> <span data-ttu-id="358c2-118">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="358c2-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="358c2-119">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="358c2-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="b25cc-118">**Observação** : esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="b25cc-118">**Note** : This API supports admin permissions.</span></span> <span data-ttu-id="b25cc-119">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="b25cc-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="358c2-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="358c2-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b25cc-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b25cc-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}/channels/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="358c2-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="358c2-121">Request headers</span></span>
-| <span data-ttu-id="358c2-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="358c2-122">Header</span></span>       | <span data-ttu-id="358c2-123">Valor</span><span class="sxs-lookup"><span data-stu-id="358c2-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b25cc-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b25cc-121">Request headers</span></span>
+| <span data-ttu-id="b25cc-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b25cc-122">Header</span></span>       | <span data-ttu-id="b25cc-123">Valor</span><span class="sxs-lookup"><span data-stu-id="b25cc-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="358c2-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="358c2-124">Authorization</span></span>  | <span data-ttu-id="358c2-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="358c2-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="358c2-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="358c2-127">Content-Type</span></span>  | <span data-ttu-id="358c2-128">application/json</span><span class="sxs-lookup"><span data-stu-id="358c2-128">application/json</span></span>  |
+| <span data-ttu-id="b25cc-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="b25cc-124">Authorization</span></span>  | <span data-ttu-id="b25cc-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b25cc-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b25cc-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b25cc-127">Content-Type</span></span>  | <span data-ttu-id="b25cc-128">application/json</span><span class="sxs-lookup"><span data-stu-id="b25cc-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="358c2-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="358c2-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b25cc-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b25cc-129">Request body</span></span>
 
-<span data-ttu-id="358c2-130">No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).</span><span class="sxs-lookup"><span data-stu-id="358c2-130">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
+<span data-ttu-id="b25cc-130">No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).</span><span class="sxs-lookup"><span data-stu-id="b25cc-130">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
 
-> <span data-ttu-id="358c2-131">Observação: não é possível atualizar o `membershipType` valor de um canal existente.</span><span class="sxs-lookup"><span data-stu-id="358c2-131">Note: You cannot update the `membershipType` value for an existing channel.</span></span>
+> <span data-ttu-id="b25cc-131">Observação: não é possível atualizar o `membershipType` valor de um canal existente.</span><span class="sxs-lookup"><span data-stu-id="b25cc-131">Note: You cannot update the `membershipType` value for an existing channel.</span></span>
 
-## <a name="response"></a><span data-ttu-id="358c2-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="358c2-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b25cc-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="b25cc-132">Response</span></span>
 
-<span data-ttu-id="358c2-133">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="358c2-133">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="b25cc-133">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="b25cc-133">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="358c2-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="358c2-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b25cc-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b25cc-134">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="358c2-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="358c2-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b25cc-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b25cc-135">Request</span></span>
 
-<span data-ttu-id="358c2-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="358c2-136">Here is an example of the request.</span></span>
+<span data-ttu-id="b25cc-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b25cc-136">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="358c2-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="358c2-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b25cc-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="b25cc-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
@@ -69,15 +69,15 @@ PATCH /teams/{id}/channels/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-# <a name="objective-c"></a>[<span data-ttu-id="358c2-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="358c2-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b25cc-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b25cc-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="358c2-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="358c2-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b25cc-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="b25cc-139">Response</span></span>
 
-<span data-ttu-id="358c2-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="358c2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="b25cc-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b25cc-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

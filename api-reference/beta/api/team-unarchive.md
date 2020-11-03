@@ -5,59 +5,59 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 971e8b242f6eb154834422622c5c33df08779788
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 07556085d599599fb8c9e2c8b2da0fff40945bb1
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055726"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849050"
 ---
-# <a name="unarchive-team"></a><span data-ttu-id="7fc43-105">Desarquivar equipe</span><span class="sxs-lookup"><span data-stu-id="7fc43-105">Unarchive team</span></span>
+# <a name="unarchive-team"></a><span data-ttu-id="5451e-105">Desarquivar equipe</span><span class="sxs-lookup"><span data-stu-id="5451e-105">Unarchive team</span></span>
 
-<span data-ttu-id="7fc43-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7fc43-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5451e-106">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5451e-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7fc43-107">Restaurar uma [equipe](../resources/team.md)arquivada.</span><span class="sxs-lookup"><span data-stu-id="7fc43-107">Restore an archived [team](../resources/team.md).</span></span> <span data-ttu-id="7fc43-108">Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, Abiding por definições de locatários e de equipe.</span><span class="sxs-lookup"><span data-stu-id="7fc43-108">This restores users' ability to send messages and edit the team, abiding by tenant and team settings.</span></span> <span data-ttu-id="7fc43-109">As equipes são arquivadas usando a API de [arquivo morto](team-archive.md) .</span><span class="sxs-lookup"><span data-stu-id="7fc43-109">Teams are archived using the [archive](team-archive.md) API.</span></span>
+<span data-ttu-id="5451e-107">Restaurar uma [equipe](../resources/team.md)arquivada.</span><span class="sxs-lookup"><span data-stu-id="5451e-107">Restore an archived [team](../resources/team.md).</span></span> <span data-ttu-id="5451e-108">Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, Abiding por definições de locatários e de equipe.</span><span class="sxs-lookup"><span data-stu-id="5451e-108">This restores users' ability to send messages and edit the team, abiding by tenant and team settings.</span></span> <span data-ttu-id="5451e-109">As equipes são arquivadas usando a API de [arquivo morto](team-archive.md) .</span><span class="sxs-lookup"><span data-stu-id="5451e-109">Teams are archived using the [archive](team-archive.md) API.</span></span>
 
-<span data-ttu-id="7fc43-110">O desarquivamento é uma operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="7fc43-110">Unarchiving is an async operation.</span></span> <span data-ttu-id="7fc43-111">Uma equipe é desarquivada depois que a operação assíncrona é concluída com êxito, o que pode ocorrer após uma resposta dessa API.</span><span class="sxs-lookup"><span data-stu-id="7fc43-111">A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.</span></span>
+<span data-ttu-id="5451e-110">O desarquivamento é uma operação assíncrona.</span><span class="sxs-lookup"><span data-stu-id="5451e-110">Unarchiving is an async operation.</span></span> <span data-ttu-id="5451e-111">Uma equipe é desarquivada depois que a operação assíncrona é concluída com êxito, o que pode ocorrer após uma resposta dessa API.</span><span class="sxs-lookup"><span data-stu-id="5451e-111">A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7fc43-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="7fc43-112">Permissions</span></span>
-<span data-ttu-id="7fc43-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7fc43-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5451e-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="5451e-112">Permissions</span></span>
+<span data-ttu-id="5451e-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5451e-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7fc43-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7fc43-115">Permission type</span></span>      | <span data-ttu-id="7fc43-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7fc43-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5451e-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5451e-115">Permission type</span></span>      | <span data-ttu-id="5451e-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5451e-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7fc43-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7fc43-117">Delegated (work or school account)</span></span> | <span data-ttu-id="7fc43-118">TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7fc43-118">TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="7fc43-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7fc43-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7fc43-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7fc43-120">Not supported.</span></span>    |
-|<span data-ttu-id="7fc43-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7fc43-121">Application</span></span> | <span data-ttu-id="7fc43-122">TeamSettings. Edit. Group \*, TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="7fc43-122">TeamSettings.Edit.Group\*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="5451e-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5451e-117">Delegated (work or school account)</span></span> | <span data-ttu-id="5451e-118">TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5451e-118">TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="5451e-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5451e-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5451e-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5451e-120">Not supported.</span></span>    |
+|<span data-ttu-id="5451e-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5451e-121">Application</span></span> | <span data-ttu-id="5451e-122">TeamSettings. ReadWrite. Group \*, TeamSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="5451e-122">TeamSettings.ReadWrite.Group\*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="7fc43-123">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso](https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="7fc43-123">**Note**: Permissions marked with \* use [resource-specific consent](https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="5451e-123">**Observação** : Permissões marcadas com \* usam [consentimento específico de recurso](https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="5451e-123">**Note** : Permissions marked with \* use [resource-specific consent](https://aka.ms/teams-rsc).</span></span>
 
-> <span data-ttu-id="7fc43-124">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="7fc43-124">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="7fc43-125">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="7fc43-125">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="5451e-124">**Observação** : esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="5451e-124">**Note** : This API supports admin permissions.</span></span> <span data-ttu-id="5451e-125">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="5451e-125">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7fc43-126">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7fc43-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5451e-126">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5451e-126">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/unarchive
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7fc43-127">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7fc43-127">Request headers</span></span>
-| <span data-ttu-id="7fc43-128">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7fc43-128">Header</span></span>       | <span data-ttu-id="7fc43-129">Valor</span><span class="sxs-lookup"><span data-stu-id="7fc43-129">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="5451e-127">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5451e-127">Request headers</span></span>
+| <span data-ttu-id="5451e-128">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5451e-128">Header</span></span>       | <span data-ttu-id="5451e-129">Valor</span><span class="sxs-lookup"><span data-stu-id="5451e-129">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="7fc43-130">Autorização</span><span class="sxs-lookup"><span data-stu-id="7fc43-130">Authorization</span></span>  | <span data-ttu-id="7fc43-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7fc43-p106">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5451e-130">Autorização</span><span class="sxs-lookup"><span data-stu-id="5451e-130">Authorization</span></span>  | <span data-ttu-id="5451e-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5451e-p106">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7fc43-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7fc43-133">Request body</span></span>
-<span data-ttu-id="7fc43-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7fc43-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5451e-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5451e-133">Request body</span></span>
+<span data-ttu-id="5451e-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5451e-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7fc43-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="7fc43-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5451e-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="5451e-135">Response</span></span>
 
-<span data-ttu-id="7fc43-136">Se o desarquivamento for iniciado com êxito, este método retornará um `202 Accepted` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="7fc43-136">If unarchiving is started successfully, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="7fc43-137">A resposta também conterá um `Location` cabeçalho, que contém o local do [teamsAsyncOperation](../resources/teamsasyncoperation.md) que foi criado para lidar com o cancelamento de arquivamento da equipe.</span><span class="sxs-lookup"><span data-stu-id="7fc43-137">The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle unarchiving of the team.</span></span> <span data-ttu-id="7fc43-138">Verifique o status da operação de desarquivamento fazendo uma solicitação GET para esse local.</span><span class="sxs-lookup"><span data-stu-id="7fc43-138">Check the status of the unarchiving operation by making a GET request to this location.</span></span>
+<span data-ttu-id="5451e-136">Se o desarquivamento for iniciado com êxito, este método retornará um `202 Accepted` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="5451e-136">If unarchiving is started successfully, this method returns a `202 Accepted` response code.</span></span> <span data-ttu-id="5451e-137">A resposta também conterá um `Location` cabeçalho, que contém o local do [teamsAsyncOperation](../resources/teamsasyncoperation.md) que foi criado para lidar com o cancelamento de arquivamento da equipe.</span><span class="sxs-lookup"><span data-stu-id="5451e-137">The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle unarchiving of the team.</span></span> <span data-ttu-id="5451e-138">Verifique o status da operação de desarquivamento fazendo uma solicitação GET para esse local.</span><span class="sxs-lookup"><span data-stu-id="5451e-138">Check the status of the unarchiving operation by making a GET request to this location.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7fc43-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7fc43-139">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="7fc43-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7fc43-140">Request</span></span>
-<span data-ttu-id="7fc43-141">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="7fc43-141">The following is an example of a request.</span></span>
+## <a name="example"></a><span data-ttu-id="5451e-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5451e-139">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="5451e-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5451e-140">Request</span></span>
+<span data-ttu-id="5451e-141">Veja a seguir um exemplo de uma solicitação.</span><span class="sxs-lookup"><span data-stu-id="5451e-141">The following is an example of a request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="7fc43-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="7fc43-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5451e-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="5451e-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "unarchive_team"
@@ -65,23 +65,23 @@ POST /teams/{id}/unarchive
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ```
-# <a name="c"></a>[<span data-ttu-id="7fc43-143">C#</span><span class="sxs-lookup"><span data-stu-id="7fc43-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5451e-143">C#</span><span class="sxs-lookup"><span data-stu-id="5451e-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unarchive-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7fc43-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7fc43-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5451e-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5451e-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unarchive-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7fc43-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7fc43-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5451e-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5451e-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/unarchive-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="7fc43-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="7fc43-146">Response</span></span>
-<span data-ttu-id="7fc43-147">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="7fc43-147">The following is an example of a response.</span></span>
+#### <a name="response"></a><span data-ttu-id="5451e-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="5451e-146">Response</span></span>
+<span data-ttu-id="5451e-147">Veja a seguir um exemplo de uma resposta.</span><span class="sxs-lookup"><span data-stu-id="5451e-147">The following is an example of a response.</span></span>
 <!-- {
   "blockType": "response",
   "name": "unarchive_team"
