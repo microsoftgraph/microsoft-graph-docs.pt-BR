@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c1844a46847bd5a232afd60ff61bd7db0e38df83
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: d1d16426eedf9bd715929ebdc886272af2cf6b7c
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782732"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849141"
 ---
 # <a name="printer-restorefactorydefaults"></a>impressora: restoreFactoryDefaults
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restaurar as configurações de uma [impressora](../resources/printer.md)para as configurações de fábrica.
+Restaurar as configurações padrão de uma [impressora](../resources/printer.md)para os valores especificados pelo fabricante.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

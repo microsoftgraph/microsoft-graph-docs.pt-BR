@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c4a5c4caf51970edf238f8026c6bc18b77b9260d
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: e3a5fa4703ccf04a13c4575d2131b9834f5154f7
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223232"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848015"
 ---
 # <a name="update-chatmessage"></a>Atualizar chat
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Sem suporte. |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Chat. UpdatePolicyViolation. All para uma mensagem de chat.</br>ChannelMessage. UpdatePolicyViolation. All para uma mensagem de canal. |
 

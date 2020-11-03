@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 30dc0c24d785ff00bfe074a8149316c79ca98f58
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faa4848694bdfb9c7562e0190d9576bf99f5a72e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017252"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848345"
 ---
 # <a name="list-monthlyprintusagesummariesbyuser"></a>Listar monthlyPrintUsageSummariesByUser
 
@@ -27,8 +27,8 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| Users. Read. All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)| Reports.Read.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP

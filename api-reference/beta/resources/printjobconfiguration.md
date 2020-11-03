@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: a8d15d5b1666081f3a3ae054c209dd43a3b6eae7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 211fa32c5a7419e01bec903acecded20921897bb
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728934"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849204"
 ---
 # <a name="printjobconfiguration-resource-type"></a>tipo de recurso printJobConfiguration
 
@@ -31,15 +31,15 @@ Um grupo de configurações que uma impressora deve usar para imprimir um trabal
 |duplexmode|o defaultduplexmode|O modo duplex que a impressora deve usar ao imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Somente leitura.|
 |Copia|Int32|O número de cópias que devem ser impressas. Somente leitura.|
 |colorMode|addcolormode|O modo de cor que a impressora deve usar para imprimir o trabalho. Os valores válidos são descritos na tabela abaixo. Somente leitura.|
-|inputBin|String|O compartimento de entrada (bandeja) a ser usado ao imprimir. Confira os [recursos](../api/printer-getcapabilities.md) da impressora para obter uma lista de bandejas de entrada suportadas.|
-|outputBin|String|O compartimento de saída para fazer a impressão foi concluída no. Confira os [recursos](../api/printer-getcapabilities.md) da impressora para obter uma lista de bandejas de saída suportadas.|
+|inputBin|String|O compartimento de entrada (bandeja) a ser usado ao imprimir. Confira os [recursos](printercapabilities.md) da impressora para obter uma lista de bandejas de entrada suportadas.|
+|outputBin|String|O compartimento de saída para fazer a impressão foi concluída no. Confira os [recursos](printercapabilities.md) da impressora para obter uma lista de bandejas de saída suportadas.|
 |mediaSize|String|O tamanho da mídiapara usar ao imprimir. Dá suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI, juntamente com qualquer tamanho personalizado suportado pela impressora associada.|
 |margin|[Margem da](printmargin.md)|As configurações de margem a serem usadas ao imprimir.|
 |mediaType|String|O tipo de mídia padrão (como papel) para imprimir o documento. Os valores válidos são descritos na tabela a seguir.|
 |finishings|coleção de canacabados|Concluir os processos a serem usados ao imprimir.|
 |pagesPerSheet|Int32|O número de páginas do documento a ser impresso em cada folha.
 |multipageLayout|printMultipageLayout|A direção para dispor páginas quando várias páginas estão sendo impressas por folha. Os valores válidos são descritos na tabela a seguir.|
-|collate|Booliano|Se a impressora deve agrupar páginas Wehen imprimir várias cópias de um documento com várias páginas.|
+|collate|Boolean|Se a impressora deve agrupar páginas Wehen imprimir várias cópias de um documento com várias páginas.|
 |scaling|redimensionamento|Especifica como a impressora deve dimensionar os dados do documento para se ajustarem à mídia solicitada. Os valores válidos são descritos na tabela a seguir.|
 
 ### <a name="printquality-values"></a>valores de PrintQuality

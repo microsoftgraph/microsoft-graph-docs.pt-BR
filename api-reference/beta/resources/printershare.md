@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 4abfc143c90530fd75965e75044248e79e325483
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4fc729a41105340cc4066ee238c8d1ace3490765
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731453"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848223"
 ---
 # <a name="printershare-resource-type"></a>tipo de recurso printerShare
 
@@ -27,15 +27,15 @@ Representa uma impressora que pretende ser detectável por usuários e por aplic
 | [List](../api/print-list-shares.md) | coleção [printerShare](printershare.md) | Obtenha uma lista de compartilhamentos de impressora no locatário. |
 | [Get](../api/printershare-get.md) | [printerShare](printershare.md) | Ler propriedades e relações de um objeto **printerShare** . |
 | [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Atualizar um objeto **printerShare** . |
-| [Delete](../api/printershare-delete.md) | Nenhum | Descompartilhar uma impressora. |
+| [Delete](../api/printershare-delete.md) | Nenhuma | Descompartilhar uma impressora. |
 | [Listar trabalhos](../api/printershare-list-jobs.md) | coleção [printJob](printjob.md) | Obtenha uma lista de trabalhos de impressão que são enfileirados para processamento pelo printerShare. |
 | [Criar trabalho](../api/printershare-post-jobs.md) | [Impressão](printjob.md) | Criar um novo trabalho de impressão para o printerShare. Para começar a imprimir o trabalho, use [Iniciar](../api/printjob-start.md). |
 | [Listar allowedUsers](../api/printershare-list-allowedusers.md) | coleção [printUserIdentity](printuseridentity.md) | Recupere uma lista de usuários que receberam acesso para enviar trabalhos de impressão para o compartilhamento de impressora associado. |
-| [Adicionar allowedUser](../api/printershare-post-allowedusers.md) | Nenhum | Conceda ao usuário especificado o acesso ao envio de trabalhos de impressão para o compartilhamento de impressora associado. |
-| [Remover allowedUser](../api/printershare-delete-alloweduser.md) | Nenhum | Revoga o acesso ao compartilhamento de impressora do usuário especificado. |
+| [Adicionar allowedUser](../api/printershare-post-allowedusers.md) | Nenhuma | Conceda ao usuário especificado o acesso ao envio de trabalhos de impressão para o compartilhamento de impressora associado. |
+| [Remover allowedUser](../api/printershare-delete-alloweduser.md) | Nenhuma | Revoga o acesso ao compartilhamento de impressora do usuário especificado. |
 | [Listar allowedGroups](../api/printershare-list-allowedgroups.md) | coleção [Multiidentity](printidentity.md) | Recupere uma lista de grupos aos quais foi concedido acesso para enviar trabalhos de impressão ao compartilhamento de impressora associado. |
-| [Adicionar allowedGroup](../api/printershare-post-allowedgroups.md) | Nenhum | Conceda ao grupo especificado o acesso ao envio de trabalhos de impressão para o compartilhamento de impressora associado. |
-| [Remover allowedGroup](../api/printershare-delete-allowedgroup.md) | Nenhum | Revoga o acesso ao compartilhamento de impressora do grupo especificado. |
+| [Adicionar allowedGroup](../api/printershare-post-allowedgroups.md) | Nenhuma | Conceda ao grupo especificado o acesso ao envio de trabalhos de impressão para o compartilhamento de impressora associado. |
+| [Remover allowedGroup](../api/printershare-delete-allowedgroup.md) | Nenhuma | Revoga o acesso ao compartilhamento de impressora do grupo especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
@@ -45,12 +45,12 @@ Representa uma impressora que pretende ser detectável por usuários e por aplic
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando o compartilhamento da impressora foi criado. Somente leitura.|
 |fabricante|String|O fabricante relatado pela impressora associada a este compartilhamento de impressora. Somente leitura.|
 |modelo|String|O nome do modelo relatado pela impressora associada a este compartilhamento de impressora. Somente leitura.|
-|isAcceptingJobs|Booliano|Se a impressora associada a este compartilhamento de impressora está atualmente aceitando novos trabalhos de impressão.|
+|isAcceptingJobs|Boolean|Se a impressora associada a este compartilhamento de impressora está atualmente aceitando novos trabalhos de impressão.|
 |defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora associadas a este compartilhamento de impressora.|
 |capabilities|[printerCapabilities](printercapabilities.md)|Os recursos da impressora associada a este compartilhamento de impressora.|
 |location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora associado a este compartilhamento de impressora.|
 |status|[printerStatus](printerstatus.md)|O status de processamento, incluindo qualquer erro, da impressora associada a este compartilhamento de impressora. Somente leitura.|
-|allowAllUsers|Booliano|Se true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso substitui as listas de permissões definidas pelas propriedades de navegação **allowedUsers** e **allowedGroups** .|
+|allowAllUsers|Boolean|Se true, todos os usuários e grupos terão acesso a esse compartilhamento de impressora. Isso substitui as listas de permissões definidas pelas propriedades de navegação **allowedUsers** e **allowedGroups** .|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
@@ -77,8 +77,16 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
-  "createdDateTime": "String (timestamp)"
+  "displayName": "String",
+  "manufacturer": "String",
+  "model": "String",
+  "createdDateTime": "String (timestamp)",
+  "isAcceptingJobs": true,
+  "allowAllUsers": false,
+  "location": {"@odata.type": "microsoft.graph.printerLocation"},
+  "status": {"@odata.type": "microsoft.graph.printerStatus"},
+  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
+  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"}
 }
 ```
 

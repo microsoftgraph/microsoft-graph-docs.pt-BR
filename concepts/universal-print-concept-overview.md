@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f9705c62b338da024bd61ce1efcd22319b908189
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7c92d71eaf0d4846cde96194390af6a375179ce1
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735985"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848987"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Visão geral da API de impressão em nuvem da Impressão Universal
 
@@ -34,14 +34,14 @@ Siga estas etapas para enviar trabalhos de impressão para o printerShare:
 
 1. [Crie um trabalho de impressão](/graph/api/printershare-post-jobs?view=graph-rest-beta) e armazene a ID do documento resultante.
 2. [Crie uma uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) para o documento. 
-3. [Bytes de upload para a sessão de upload criada](/upload-data-to-upload-session).
+3. [Bytes de upload para a sessão de upload criada](/graph/upload-data-to-upload-session).
 4. [Iniciar o trabalho de impressão](/graph/api/printjob-start?view=graph-rest-beta).
 
 ### <a name="manage-printers"></a>Gerenciar impressoras
 
 É uma tarefa complexa acompanhar as impressoras de uma organização, suas configurações e uso. A API de Impressão Universal permite a integração em todas as três áreas.
 
-* **Fique de olho no estado, configurações e disponibilidade da impressora**, usando a [Lista de impressoras](/graph/api/print-list-printers?view=graph-rest-beta) e o [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta).
+* **Fique de olho no estado, configurações e disponibilidade da impressora** , usando a [Lista de impressoras](/graph/api/print-list-printers?view=graph-rest-beta) e o [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta).
 
 * **Veja quem está usando as impressoras e o quanto elas estão imprimindo** usando as APIs de relatórios:
   * [Listar dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta)

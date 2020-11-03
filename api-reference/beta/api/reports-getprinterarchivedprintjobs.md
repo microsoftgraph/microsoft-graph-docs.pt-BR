@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a9e0f2602840344db0f9c6464f709e1c44c9a8ee
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a06f20d8de1fc6f1be72e382beaf01158529f260
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085442"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848237"
 ---
 # <a name="reports-getprinterarchivedprintjobs"></a>relatórios: getPrinterArchivedPrintJobs
 
@@ -27,7 +27,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| Users. Read. All |
+|Delegada (conta corporativa ou de estudante)| Reports.Read.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

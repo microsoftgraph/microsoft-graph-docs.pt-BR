@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 289c07d509dc663af66017d6b146be916cdb991f
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: f9d865d3e9a51100256aa9620bf53b005de692c8
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373066"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848812"
 ---
 # <a name="create-members"></a>Criar membros
 Namespace: microsoft.graph
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| TeamMember.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)| TeamMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo| TeamMember.ReadWrite.All|
+|Aplicativo| TeamMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

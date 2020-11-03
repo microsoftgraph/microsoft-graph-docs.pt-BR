@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3249bf48ceab062b47f6f725f9d897fe96fd5667
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e785ca911ce41e0e84060801afae078d867b4a5
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092967"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848364"
 ---
 # <a name="update-workforceintegration"></a>Atualizar workforceintegration
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     |WorkforceIntegration. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | WorkforceIntegration. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,11 +51,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Versão da API para a URL de retorno de chamada. Comece com 1.|
-|displayName|Cadeia de caracteres|Nome da integração da força de funcionários.|
+|displayName|String|Nome da integração da força de funcionários.|
 |encripta|workforceIntegrationEncryption|O recurso de criptografia de integração da força de funcionários. |
 |isActive|Boolean|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
-|compatível|cadeia de caracteres| Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
-|supportedEntities|cadeia de caracteres| Essa propriedade substituirá **suporte** em v 1.0. Recomendamos que você use essa propriedade em vez de **suportar**. A **Propriedade** Supports ainda será suportada na versão beta para o momento. Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
+|compatível|string| Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
+|supportedEntities|string| Essa propriedade substituirá **suporte** em v 1.0. Recomendamos que você use essa propriedade em vez de **suportar**. A **Propriedade** Supports ainda será suportada na versão beta para o momento. Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
 |url|Cadeia de caracteres| URL de integração de força de obra para retornos de chamada do serviço de turno. |
 
 ## <a name="response"></a>Resposta

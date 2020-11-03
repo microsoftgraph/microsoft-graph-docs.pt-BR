@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: universal-print
 ms.date: 2/4/2020
 doc_type: apiPageType
-ms.openlocfilehash: 54b62ecab5016970f5c9e3034207e38e13fcef92
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7010978e86de550cfcbdac76629873f1bf12aa7f
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035229"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848202"
 ---
 # <a name="get-printusagesummarybyprinter"></a>Obter printUsageSummaryByPrinter
 
@@ -28,8 +28,8 @@ Para usar o serviço de impressão universal, o usuário ou o locatário do apli
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| User.Read |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)| Reports.Read.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP

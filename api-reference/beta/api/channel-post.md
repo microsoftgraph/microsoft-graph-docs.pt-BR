@@ -5,12 +5,12 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 41d0e74ef3e08102a5fb670159d0f7e51085817d
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: f7fd428b50c97c8f800295e5d0dd8f334aa575b7
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782815"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848020"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All    |
+|Delegada (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Channel. Create. Group *, Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All, entrabalho. Migrate. All|
+|Aplicativo | Channel. Create. Group *, Channel. Create, entrabalho. Migration. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 > **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
@@ -55,10 +55,10 @@ No corpo da solicitação, fornça uma representação JSON do objeto [canal](..
 
 Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [canal](../resources/channel.md) no corpo da resposta.
 
-Se a solicitação não tiver êxito, este método retornará um `400 Bad Request` código de resposta. Estes são os motivos comuns para esta resposta:
+Se a solicitação não for bem-sucedida, este método retorna um código de resposta `400 Bad Request`. Os seguintes são motivos comuns para esta resposta:
 
 * **createdDateTime** está definido no futuro.
-* **createdDateTime** está especificado corretamente, mas o atributo de instância **channelCreationMode** está ausente ou definido como um valor inválido.
+* **createdDateTime** está especificado corretamente, mas o atributo da instância **channelCreationMode** está ausente ou configurado com um valor inválido.
 
 ## <a name="examples"></a>Exemplos
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eb4704b3e4febe31271dc52f2e4905f28db9495e
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 946d4343e9d3dd91a0461166b8d6995daa84d5af
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373661"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849040"
 ---
 # <a name="delete-teamsapp"></a>Excluir teamsApp
 
@@ -32,9 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
-| Delegado (conta corporativa ou de estudante)     | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
-| Delegado (conta corporativa ou de estudante) | AppCatalog.Submit |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.|
+| Delegada (conta corporativa ou de estudante) | AppCatalog. Submit, AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.|
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP

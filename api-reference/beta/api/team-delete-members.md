@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 06993e2a05fe4597df338d8e5548ee4c2a914a73
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: ff9be8bee500429924845ec177fe5d1f4ac66e60
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330150"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848861"
 ---
 # <a name="remove-members-from-team"></a>Remover membros da equipe
 Namespace: microsoft.graph
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| TeamMember.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)| TeamMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo| TeamMember.ReadWrite.All|
+|Aplicativo| TeamMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
