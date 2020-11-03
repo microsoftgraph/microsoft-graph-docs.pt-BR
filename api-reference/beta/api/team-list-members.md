@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fbe0cbf6207a1beee0488cf26a13f17f8c1d4fa4
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 151274972a58707a8af7410eed5027261c4e6326
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48329973"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848813"
 ---
 # <a name="list-members"></a>Listar membros
 Namespace: microsoft.graph
@@ -26,9 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Application| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+
+> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 623696838a975249d4f1df6770aa0d17cb66fbe0
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: bd9399b930988fab79a2d5d5c233690797e7d3f1
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192391"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848005"
 ---
 # <a name="get-filesfolder"></a>Obter filesFolder
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All     |
+|Delegado (conta corporativa ou de estudante) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
