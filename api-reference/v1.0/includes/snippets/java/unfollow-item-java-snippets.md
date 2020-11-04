@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1e3a1de1b68b19c855829be50a670c2660d004e7
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 107a5de7c347d32e927aba3032445e3ec55c3122
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124409"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904190"
 ---
 ```java
 
@@ -14,6 +14,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 graphClient.me().drive().items("{item-id}")
     .unfollow()
     .buildRequest()
-    .delete();
+    .post();
 
 ```

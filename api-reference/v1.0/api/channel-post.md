@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1d46136c0d3bf0991545f5331d73382831d9aa2b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ec64a58a88d410abf84acbbb6fd92ccaf3940b3e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373437"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848931"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All    |
+|Delegada (conta corporativa ou de estudante) | Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application |Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All, entrabalho. Migrate. All|
+|Aplicativo | Channel. Create. Group *, Channel. Create, entrabalho. Migration. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

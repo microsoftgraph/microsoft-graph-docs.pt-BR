@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: O recurso drive é o objeto de nível superior que representa o OneDrive de um usuário ou uma biblioteca de documentos no SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: 700df7e7ea38a195bcb0b3ea50187f942635ed76
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e4f228edbc39decbb2a60aaf79f3e3788bfcc24
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018589"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848679"
 ---
 # <a name="drive-resource-type"></a>Tipo de unidade de recurso
 
@@ -112,7 +112,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | [Recuperar a pasta raiz da Unidade padrão do usuário][item-get]       | `GET /drive/root`           |
 | [Listar filhos na Unidade][item-children]             | `GET /drive/root/children`  |
 | [Listar alterações de todos os Itens na Unidade][item-changes]    | `GET /drive/root/delta`     |
-| [Listar os driveItems seguidos pelo usuário][drive-following]         | `Get /drive/followed`       |
+| [Listar os driveItems seguidos pelo usuário][drive-following]         | `Get /drive/following`       |
 | [Pesquisar Itens na Unidade][item-search]               | `GET /drive/root/search`    |
 | [Acessar pasta especial](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 

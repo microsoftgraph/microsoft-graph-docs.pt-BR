@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 801062feac6e6f7a7e7de03a145a6b83c6c12d57
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 9ff0912caecb5947e18d05ae5c7f3b36b571a158
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330001"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848623"
 ---
 # <a name="list-members"></a>Listar membros
 Namespace: microsoft.graph
@@ -24,9 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Aplicativo| TeamMember.Read.All, TeamMember.ReadWrite.All |
+
+> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -36,7 +38,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 GET /teams/{teamsId}/members
-GET /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 526bb7e232ad18a87571673655fa15fa37c4c995
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: efb4ed29e93dd2e73852a1589e233cefa7db8d11
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700868"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848310"
 ---
 # <a name="update-conversationmember"></a>Atualizar conversationMember
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| No Teams: TeamMember. ReadWrite. All. Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All. |
+|Delegada (conta corporativa ou de estudante)| No Teams: TeamMember. ReadWrite. All<br/>Em canais: ChannelMember. ReadWrite. All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo| No Teams: TeamMember. ReadWrite. All. Em canais: ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All. |
+|Aplicativo| No Teams: TeamMember. ReadWrite. All<br/>Em canais: ChannelMember. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->

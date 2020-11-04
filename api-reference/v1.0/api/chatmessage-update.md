@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ae6618baaa7c29fb6e603dd4521e66b97da2148f
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d3be68c5c2ba9e561cc66b4665759dfbb9e82753
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315448"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848630"
 ---
 # <a name="update-chatmessage"></a>Atualizar chat
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sem suporte.    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Chat. UpdatePolicyViolation. All para uma mensagem de chat.</br>ChannelMessage. UpdatePolicyViolation. All para uma mensagem de canal. |
 
 ## <a name="http-request"></a>Solicitação HTTP

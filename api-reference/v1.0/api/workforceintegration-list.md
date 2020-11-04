@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: de62b21264ea9cd4b807849362c5ec6aebe32913
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb019555d012a9373b21571291687a703beb5b8e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984548"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848203"
 ---
 # <a name="list-workforceintegrations"></a>Listar workforceIntegrations
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     |  WorkforceIntegration. Read. All, WorkforceIntegration. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | WorkforceIntegration. Read. All, WorkforceIntegration. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 
 ## <a name="http-request"></a>Solicitação HTTP

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fa995b4b545eb2f9f7ea42d9fd9d8744a0a656cb
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 794cb72014d2021b7eec0f46937b1597607a0d64
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843174"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904753"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | AppCatalog. Read. All, AppCatalog. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+| Delegada (conta corporativa ou de estudante)     | AppCatalog. Read. All, AppCatalog. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                       |
 | Aplicativo                            | Sem suporte. |
 
@@ -73,7 +73,7 @@ O exemplo a seguir lista todos os aplicativos que são específicos para o locat
   "name": "list_teamsapp"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApp?$filter=distributionMethod eq 'organization'
 ```
 

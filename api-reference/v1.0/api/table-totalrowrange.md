@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3c60961c19e69c98467fe2781dbda810c30e0d81
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5f28adba4a869d0c2ca1cbe756db4cacd75ee258
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092018"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904673"
 ---
 # <a name="table-totalrowrange"></a>Table: TotalRowRange
 
@@ -23,15 +23,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/totalRowRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/totalRowRange
+GET /workbook/tables/{id|name}/totalRowRange
+GET /workbook/worksheets/{id|name}/tables/{id|name}/totalRowRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -58,8 +58,8 @@ Este é um exemplo da solicitação.
   "name": "table_totalrowrange",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/totalRowRange
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/totalRowRange
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-totalrowrange-csharp-snippets.md)]

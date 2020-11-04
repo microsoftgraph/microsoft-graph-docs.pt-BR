@@ -5,18 +5,20 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: yyuank
-ms.openlocfilehash: b4581105a06a7f234462e904822a3e87c52899f2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a08bb14103afd36905e209fc1c2dfeefe7787990
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459771"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904564"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 
+Namespace: microsoft.graph
+
 Recupere as propriedades e os relacionamentos de um objeto [Endpoint](../resources/endpoint.md) específico.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -71,10 +73,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ---
 
-
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
->Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+>Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

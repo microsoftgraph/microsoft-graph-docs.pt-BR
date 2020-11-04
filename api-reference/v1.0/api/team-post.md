@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9c611ab5f0fa612146fcd413d59fb9baea32701d
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 0101b8cb59b0be777b7de04b2756fdf30baa7c48
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796735"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848805"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegada (conta corporativa ou de estudante)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 | Delegada (conta Microsoft pessoal) | Sem suporte.                              |
-| Aplicativo                            | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All|
+| Aplicativo                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -286,7 +286,7 @@ Content-Length: 0
 
 ### <a name="example-4-create-a-team-from-group"></a>Exemplo 4: criar uma equipe a partir do grupo
 
-O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md), dado um **groupId** .
+O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md), dado um **groupId**.
 
 Alguns pontos a observar nesta chamada:
 

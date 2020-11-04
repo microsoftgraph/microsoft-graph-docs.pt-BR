@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bf5eff6f7a5308c6753b5c1adc62970bf619a600
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 150c3003487ed4585951495b0f9e9ed9a6f38121
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782890"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848639"
 ---
 # <a name="add-conversationmember"></a>Adicionar conversationMember
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->

@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6eb295dc9bc9f62172513e9d55c43394d36093ec
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 05dd3377e5a3161a38d9db1d56de7bba7ccf9af4
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700870"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848322"
 ---
 # <a name="delete-conversationmember"></a>Excluir conversationMember
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMember. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Aplicativo| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->

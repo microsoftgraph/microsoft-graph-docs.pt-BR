@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f71b8b4694d8c705e34988755b64cd7ad62b5133
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 2f3d26b883da5e86acc2fb2870dda0880d356f31
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373383"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848631"
 ---
 # <a name="create-members"></a>Criar membros
 Namespace: microsoft.graph
@@ -22,9 +22,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| TeamMember.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)| TeamMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo| TeamMember.ReadWrite.All|
+|Aplicativo| TeamMember.ReadWrite.All |
+
+> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -34,7 +36,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 POST /teams/{teamsId}/members
-POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

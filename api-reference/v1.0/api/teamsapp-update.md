@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e69a43182b0d96b146b080e7326560dc11ac3ed1
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 6f54f7938e448d83a9ac2ff70e1dfb215e1b71d6
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223539"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849148"
 ---
 # <a name="update-teamsapp"></a>Atualizar teamsApp
 
@@ -28,8 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
-| Delegada (conta corporativa ou de estudante)     | AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
-| Delegada (conta corporativa ou de estudante) | AppCatalog.Submit|
+| Delegada (conta corporativa ou de estudante)     | AppCatalog. Submit, AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 

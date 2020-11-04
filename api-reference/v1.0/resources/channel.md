@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f9860f6d1385374258eeed11dd8db4db21ba895c
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: baf38d4ced45f5616a8db1bf51fe2d3ba17e940f
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364394"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849176"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -27,6 +27,16 @@ Namespace: microsoft.graph
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Leia as propriedades e as relações do canal.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Atualize as propriedades do canal.|
 |[Delete channel](../api/channel-delete.md) | Nenhum | Exclua um canal.|
+|[Obter o delta de mensagem](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens incrementais em um canal. |
+|[Listar mensagens do canal](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens em um canal. |
+|[Listar membros do canal](../api/conversationmember-list.md)| coleção [conversationMember](conversationmember.md)| Liste os membros de um canal. |
+|[Obter membros do canal](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Obter um membro de um canal. |
+|[Adicionar membro do canal](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Adicionar um membro a um canal. Compatível apenas com o `channelType` de `private`.|
+|[Atualizar membro do canal](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Atualizar um membro de um canal. Compatível apenas com o `channelType` de `private`.|
+|[Excluir membro do canal](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Excluir um membro de um canal. Compatível apenas com o `channelType` de `private`.|
+|[Criar chatMessage em um canal](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
+|[Criar uma resposta chatMessage em um canal](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal.|
+|[Obter pasta de arquivos](../api/driveitem-get.md).| [driveItem](driveitem.md) | Recupera os detalhes da pasta do SharePoint em que os arquivos do canal estão armazenados. |
 |[Listar guias](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
 
 ## <a name="properties"></a>Propriedades
