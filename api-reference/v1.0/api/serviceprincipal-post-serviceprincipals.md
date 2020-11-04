@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: affaf5ab5cce121f4a763e90e32ed9589510e4ca
-ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
+ms.openlocfilehash: fa5641c79a165a0b65e7173f57a17f9440c4912b
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816207"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905367"
 ---
 # <a name="create-serviceprincipal"></a>Criar servicePrincipal
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /serviceprincipals
+POST /servicePrincipals
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -44,11 +44,11 @@ POST /serviceprincipals
 | Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto do [servicePrincipal](../resources/serviceprincipal.md). O corpo da solicitação deve conter  **appId** .
+No corpo da solicitação, forneça uma representação JSON de um objeto [servicePrincipal](../resources/serviceprincipal.md). O corpo da solicitação deve conter  **appId**.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto do [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
@@ -61,7 +61,7 @@ Este é um exemplo da solicitação.
   "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals
+POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-type: application/json
 
 {

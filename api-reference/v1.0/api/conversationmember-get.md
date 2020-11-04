@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e0664205494f7d964dcdd4ee8b7e666ff616c329
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: abdaee226abb033a1275c964616315a79a754c6f
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732300"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848602"
 ---
 # <a name="get-conversationmember"></a>Obter conversationMember
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| Para recurso de **usuário** ou **chat**: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Para recurso de **canal**: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory. ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Para **usuário** ou **recurso de chat**: Não suportado.<br/><br/>Para recurso de **canal**: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante)| Para recurso de **usuário** ou **chat** : Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Para o recurso **canal** : ChannelMember.Read.All, ChannelMember.ReadWrite |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo| Para **usuário** ou **recurso de chat** : Não suportado.<br/><br/>Para o recurso **canal** : TeamMember.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
+> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
