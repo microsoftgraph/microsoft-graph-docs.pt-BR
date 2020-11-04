@@ -5,61 +5,63 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0a3f26727e3e084b3fb0bb95467ffae61f6190a0
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 0594d7da3dce01285829e9ad4e59e8143c41bfdf
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48783023"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48903573"
 ---
-# <a name="team-completemigration"></a><span data-ttu-id="4c58b-103">equipe: completeMigration</span><span class="sxs-lookup"><span data-stu-id="4c58b-103">team: completeMigration</span></span>
+# <a name="team-completemigration"></a><span data-ttu-id="c7884-103">equipe: completeMigration</span><span class="sxs-lookup"><span data-stu-id="c7884-103">team: completeMigration</span></span>
 
-<span data-ttu-id="4c58b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4c58b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c7884-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c7884-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4c58b-105">Conclua o processo de migração de mensagens removendo `migration mode` de uma [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="4c58b-105">Complete the message migration process by removing `migration mode` from a [team](../resources/team.md).</span></span> <span data-ttu-id="4c58b-106">`Migration mode` é um estado especial em que determinadas operações são bloqueadas, como a POSTAgem de mensagens e operações de associação durante o processo de migração de dados.</span><span class="sxs-lookup"><span data-stu-id="4c58b-106">`Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.</span></span>
+<span data-ttu-id="c7884-105">Conclua o processo de migração de mensagens removendo `migration mode` de uma [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="c7884-105">Complete the message migration process by removing `migration mode` from a [team](../resources/team.md).</span></span> <span data-ttu-id="c7884-106">`Migration mode` é um estado especial em que determinadas operações são bloqueadas, como a POSTAgem de mensagens e operações de associação durante o processo de migração de dados.</span><span class="sxs-lookup"><span data-stu-id="c7884-106">`Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.</span></span>
 
-<span data-ttu-id="4c58b-107">Depois que uma solicitação **completeMigration** é feita, não é possível importar mensagens adicionais para a equipe.</span><span class="sxs-lookup"><span data-stu-id="4c58b-107">After a **completeMigration** request is made, you cannot import additional messages into the team.</span></span> <span data-ttu-id="4c58b-108">Você pode adicionar membros à equipe depois que a solicitação retornar uma resposta bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="4c58b-108">You can add members to the team after the request returns a successful response.</span></span>
+<span data-ttu-id="c7884-107">Depois que uma solicitação **completeMigration** é feita, não é possível importar mensagens adicionais para a equipe.</span><span class="sxs-lookup"><span data-stu-id="c7884-107">After a **completeMigration** request is made, you cannot import additional messages into the team.</span></span> <span data-ttu-id="c7884-108">Você pode adicionar membros à equipe depois que a solicitação retornar uma resposta bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="c7884-108">You can add members to the team after the request returns a successful response.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4c58b-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="4c58b-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c7884-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="c7884-109">Permissions</span></span>
 
-<span data-ttu-id="4c58b-110">A seguinte permissão é necessária para chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="4c58b-110">The following permission is required to call this API.</span></span> <span data-ttu-id="4c58b-111">Para saber mais, confira [permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4c58b-111">To learn more, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c7884-110">A seguinte permissão é necessária para chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="c7884-110">The following permission is required to call this API.</span></span> <span data-ttu-id="c7884-111">Para saber mais, confira [permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7884-111">To learn more, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4c58b-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4c58b-112">Permission type</span></span>      | <span data-ttu-id="4c58b-113">Permissão</span><span class="sxs-lookup"><span data-stu-id="4c58b-113">Permission</span></span>  |
+|<span data-ttu-id="c7884-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c7884-112">Permission type</span></span>      | <span data-ttu-id="c7884-113">Permissão</span><span class="sxs-lookup"><span data-stu-id="c7884-113">Permission</span></span>  |
 |:--------------------|:---------------------------------------------------------|
-| <span data-ttu-id="4c58b-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4c58b-114">Delegated (work or school account)</span></span>  | <span data-ttu-id="4c58b-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4c58b-115">Not supported.</span></span>|
-| <span data-ttu-id="4c58b-116">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4c58b-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4c58b-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4c58b-117">Not supported.</span></span> |
-|<span data-ttu-id="4c58b-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4c58b-118">Application</span></span> | <span data-ttu-id="4c58b-119">Teamwork.Migrate.All</span><span class="sxs-lookup"><span data-stu-id="4c58b-119">Teamwork.Migrate.All</span></span>|
+| <span data-ttu-id="c7884-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c7884-114">Delegated (work or school account)</span></span>  | <span data-ttu-id="c7884-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c7884-115">Not supported.</span></span>|
+| <span data-ttu-id="c7884-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c7884-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7884-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c7884-117">Not supported.</span></span> |
+|<span data-ttu-id="c7884-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c7884-118">Application</span></span> | <span data-ttu-id="c7884-119">Teamwork.Migrate.All</span><span class="sxs-lookup"><span data-stu-id="c7884-119">Teamwork.Migrate.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4c58b-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4c58b-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c7884-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c7884-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{teamId}/completeMigration
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4c58b-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4c58b-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c7884-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c7884-121">Request headers</span></span>
 
-| <span data-ttu-id="4c58b-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4c58b-122">Header</span></span>       | <span data-ttu-id="4c58b-123">Valor</span><span class="sxs-lookup"><span data-stu-id="4c58b-123">Value</span></span> |
+| <span data-ttu-id="c7884-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c7884-122">Header</span></span>       | <span data-ttu-id="c7884-123">Valor</span><span class="sxs-lookup"><span data-stu-id="c7884-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="4c58b-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="4c58b-124">Authorization</span></span>  | <span data-ttu-id="4c58b-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4c58b-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c7884-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="c7884-124">Authorization</span></span>  | <span data-ttu-id="c7884-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c7884-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4c58b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4c58b-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c7884-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c7884-127">Request body</span></span>
 
-<span data-ttu-id="4c58b-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4c58b-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c7884-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c7884-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4c58b-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="4c58b-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c7884-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="c7884-129">Response</span></span>
 
-<span data-ttu-id="4c58b-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4c58b-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c7884-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c7884-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4c58b-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4c58b-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c7884-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c7884-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4c58b-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4c58b-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="c7884-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c7884-133">Request</span></span>
 
-<span data-ttu-id="4c58b-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4c58b-134">The following is an example of the request.</span></span>
+<span data-ttu-id="c7884-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c7884-134">The following is an example of the request.</span></span>
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
 
+
+# <a name="http"></a>[<span data-ttu-id="c7884-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="c7884-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_team"
@@ -68,11 +70,25 @@ POST /teams/{teamId}/completeMigration
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/completeMigration
 ```
+# <a name="c"></a>[<span data-ttu-id="c7884-136">C#</span><span class="sxs-lookup"><span data-stu-id="c7884-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="c7884-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c7884-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="c7884-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c7884-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/completemigration-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->
-### <a name="response"></a><span data-ttu-id="4c58b-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="4c58b-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c7884-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="c7884-139">Response</span></span>
 
-<span data-ttu-id="4c58b-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4c58b-136">The following is an example of the response.</span></span>
+<span data-ttu-id="c7884-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c7884-140">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
