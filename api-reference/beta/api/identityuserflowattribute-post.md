@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 443ac0848e7ace309172dc0ca38d9a191acb9635
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 50c3970e7736092c6be2646e8f788a7d84304414
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742345"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48903864"
 ---
 # <a name="create-identityuserflowattribute"></a>Criar identityUserFlowAttribute
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -56,11 +56,11 @@ No corpo da solicitação, forneça uma representação JSON de [identityUserFlo
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|id|String|O identificador do atributo de fluxo do usuário. Este é um atributo somente leitura que é criado automaticamente.|
+|id|String|O identificador do atributo de fluxo do usuário. Esse é um atributo somente leitura criado automaticamente.|
 |displayName|String|O nome de exibição do atributo de fluxo do usuário.|
 |description|String|A descrição do atributo de fluxo do usuário. Ele é mostrado ao usuário no momento da inscrição.|
-|userFlowAttributeType|String|O tipo do atributo de fluxo do usuário. Este é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores dessa propriedade serão `builtIn` ou `custom` .|
-|dataType|Cadeia de caracteres|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado depois que o atributo de fluxo do usuário personalizado é criado. Os valores com suporte para **DataType** são:<br/><ul><li>`string` : indica que o tipo de dados de identityUserFlowAttribute é uma cadeia de caracteres. </li><li>`boolean` : indica que o tipo de dados de identityUserFlowAttribute é um Boolean.</li><li>`int64` : indica que o tipo de dados de identityUserFlowAttribute é um inteiro.</li></ul>|
+|userFlowAttributeType|String|O tipo do atributo de fluxo do usuário. Esse é um atributo somente leitura que é definido automaticamente. Dependendo do tipo de atributo, os valores dessa propriedade serão `builtIn` ou `custom`.|
+|dataType|String|O tipo de dados do atributo de fluxo do usuário. Isso não pode ser modificado depois que o atributo de fluxo do usuário personalizado é criado. Os valores com suporte para **tipo de dados** são:<br/><ul><li>`string` : indica que o tipo de dados de identityUserFlowAttribute é uma cadeia de caracteres. </li><li>`boolean` : indica que o tipo de dados de identityUserFlowAttribute é um Boolean.</li><li>`int64` : indica que o tipo de dados de identityUserFlowAttribute é um inteiro.</li></ul>|
 
 ## <a name="response"></a>Resposta
 
@@ -72,6 +72,8 @@ Se bem-sucedido, este método retorna um `201 Created` código de resposta e um 
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_userFlowAttribute_from_userFlowAttributes"
@@ -88,6 +90,20 @@ Content-type: application/json
   "dataType": "string",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-userflowattribute-from-userflowattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-userflowattribute-from-userflowattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-userflowattribute-from-userflowattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
