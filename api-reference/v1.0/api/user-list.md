@@ -5,68 +5,70 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2459c8a01facff8e233eb19482def8e18bec6957
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 767331d807f63a2b90381580cfefebfdea37ddf3
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796854"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905679"
 ---
-# <a name="list-users"></a><span data-ttu-id="c274d-103">Listar usuários</span><span class="sxs-lookup"><span data-stu-id="c274d-103">List users</span></span>
+# <a name="list-users"></a><span data-ttu-id="eac6f-103">Listar usuários</span><span class="sxs-lookup"><span data-stu-id="eac6f-103">List users</span></span>
 
-<span data-ttu-id="c274d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c274d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="eac6f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="eac6f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c274d-105">Recupere uma lista de objetos [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="c274d-105">Retrieve a list of [user](../resources/user.md) objects.</span></span>
+<span data-ttu-id="eac6f-105">Recupere uma lista de objetos [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="eac6f-105">Retrieve a list of [user](../resources/user.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c274d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c274d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="eac6f-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="eac6f-106">Permissions</span></span>
 
-<span data-ttu-id="c274d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c274d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="eac6f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eac6f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c274d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c274d-109">Permission type</span></span>      | <span data-ttu-id="c274d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c274d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="eac6f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="eac6f-109">Permission type</span></span>      | <span data-ttu-id="eac6f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="eac6f-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c274d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c274d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c274d-112">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c274d-112">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c274d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c274d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c274d-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c274d-114">Not supported.</span></span>    |
-|<span data-ttu-id="c274d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c274d-115">Application</span></span> | <span data-ttu-id="c274d-116">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c274d-116">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="eac6f-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="eac6f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="eac6f-112">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="eac6f-112">User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="eac6f-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="eac6f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eac6f-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="eac6f-114">Not supported.</span></span>    |
+|<span data-ttu-id="eac6f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="eac6f-115">Application</span></span> | <span data-ttu-id="eac6f-116">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eac6f-116">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c274d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c274d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eac6f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="eac6f-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c274d-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c274d-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="eac6f-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="eac6f-118">Optional query parameters</span></span>
 
-<span data-ttu-id="c274d-119">Este método suporta os parâmetros de consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, `$filter`, e `$select`.</span><span class="sxs-lookup"><span data-stu-id="c274d-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, `$filter`, and `$select`.</span></span> <span data-ttu-id="c274d-120">Você pode usar `$search`na propriedade **displayName** .</span><span class="sxs-lookup"><span data-stu-id="c274d-120">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="c274d-121">Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta.</span><span class="sxs-lookup"><span data-stu-id="c274d-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="c274d-122">Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.</span><span class="sxs-lookup"><span data-stu-id="c274d-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
+<span data-ttu-id="eac6f-119">Este método suporta os parâmetros de consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, `$filter`, e `$select`.</span><span class="sxs-lookup"><span data-stu-id="eac6f-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, `$filter`, and `$select`.</span></span> <span data-ttu-id="eac6f-120">Você pode usar `$search`na propriedade **displayName**.</span><span class="sxs-lookup"><span data-stu-id="eac6f-120">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="eac6f-121">Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="eac6f-122">Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.</span><span class="sxs-lookup"><span data-stu-id="eac6f-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
 
-<span data-ttu-id="c274d-123">Por padrão, apenas um conjunto limitado de propriedades é retornado ( **businessPhones** , **displayName** , **givenName** , **id** , **jobTitle** , **mail** , **mobilePhone** , **officeLocation** , **preferredLanguage** , **surname** e **userPrincipalName** ).</span><span class="sxs-lookup"><span data-stu-id="c274d-123">By default, only a limited set of properties are returned ( **businessPhones** , **displayName** , **givenName** , **id** , **jobTitle** , **mail** , **mobilePhone** , **officeLocation** , **preferredLanguage** , **surname** , and **userPrincipalName** ).</span></span> 
+<span data-ttu-id="eac6f-123">Por padrão, apenas um conjunto limitado de propriedades é retornado ( **businessPhones** , **displayName** , **givenName** , **id** , **jobTitle** , **mail** , **mobilePhone** , **officeLocation** , **preferredLanguage** , **surname** e **userPrincipalName** ).</span><span class="sxs-lookup"><span data-stu-id="eac6f-123">By default, only a limited set of properties are returned ( **businessPhones** , **displayName** , **givenName** , **id** , **jobTitle** , **mail** , **mobilePhone** , **officeLocation** , **preferredLanguage** , **surname** , and **userPrincipalName** ).</span></span> 
 
-<span data-ttu-id="c274d-124">Para retornar um conjunto de propriedades alternativas, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="c274d-124">To return an alternative property set, specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="c274d-125">Por exemplo, para retornar **displayName** , **givenName** e **postalCode** , adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.</span><span class="sxs-lookup"><span data-stu-id="c274d-125">For example, to return **displayName** , **givenName** , and **postalCode** , add the following to your query `$select=displayName,givenName,postalCode`.</span></span>
+<span data-ttu-id="eac6f-124">Para retornar um conjunto de propriedades alternativas, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="eac6f-124">To return an alternative property set, specify the desired set of [user](../resources/user.md) properties using the OData `$select` query parameter.</span></span> <span data-ttu-id="eac6f-125">Por exemplo, para retornar **displayName** , **givenName** e **postalCode** , adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.</span><span class="sxs-lookup"><span data-stu-id="eac6f-125">For example, to return **displayName** , **givenName** , and **postalCode** , add the following to your query `$select=displayName,givenName,postalCode`.</span></span>
 
-<span data-ttu-id="c274d-126">Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário.</span><span class="sxs-lookup"><span data-stu-id="c274d-126">Certain properties cannot be returned within a user collection.</span></span> <span data-ttu-id="c274d-127">As seguintes propriedades só possuem suporte ao [recuperar um único usuário](./user-get.md): **aboutMe** , **birthday** , **hireDate** , **interests** , **mySite** , **pastProjects** , **preferredName** , **responsibilities** , **schools** , **skills** , **mailboxSettings** .</span><span class="sxs-lookup"><span data-stu-id="c274d-127">The following properties are only supported when [retrieving an single user](./user-get.md): **aboutMe** , **birthday** , **hireDate** , **interests** , **mySite** , **pastProjects** , **preferredName** , **responsibilities** , **schools** , **skills** , **mailboxSettings** .</span></span>
+<span data-ttu-id="eac6f-126">Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário.</span><span class="sxs-lookup"><span data-stu-id="eac6f-126">Certain properties cannot be returned within a user collection.</span></span> <span data-ttu-id="eac6f-127">As seguintes propriedades só possuem suporte ao [recuperar um único usuário](./user-get.md): **aboutMe** , **birthday** , **hireDate** , **interests** , **mySite** , **pastProjects** , **preferredName** , **responsibilities** , **schools** , **skills** , **mailboxSettings**.</span><span class="sxs-lookup"><span data-stu-id="eac6f-127">The following properties are only supported when [retrieving an single user](./user-get.md): **aboutMe** , **birthday** , **hireDate** , **interests** , **mySite** , **pastProjects** , **preferredName** , **responsibilities** , **schools** , **skills** , **mailboxSettings**.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c274d-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-128">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="eac6f-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-128">Request headers</span></span>
 
-| <span data-ttu-id="c274d-129">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c274d-129">Header</span></span>        | <span data-ttu-id="c274d-130">Valor</span><span class="sxs-lookup"><span data-stu-id="c274d-130">Value</span></span>                      |
+| <span data-ttu-id="eac6f-129">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="eac6f-129">Header</span></span>        | <span data-ttu-id="eac6f-130">Valor</span><span class="sxs-lookup"><span data-stu-id="eac6f-130">Value</span></span>                      |
 |:--------------|:---------------------------|
-| <span data-ttu-id="c274d-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="c274d-131">Authorization</span></span> | <span data-ttu-id="c274d-132">{token} do portador (obrigatório)</span><span class="sxs-lookup"><span data-stu-id="c274d-132">Bearer {token} (required)</span></span>  |
-| <span data-ttu-id="c274d-133">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="c274d-133">ConsistencyLevel</span></span> | <span data-ttu-id="c274d-134">eventualmente.</span><span class="sxs-lookup"><span data-stu-id="c274d-134">eventual.</span></span> <span data-ttu-id="c274d-135">Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="c274d-135">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="c274d-136">Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto.</span><span class="sxs-lookup"><span data-stu-id="c274d-136">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="eac6f-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="eac6f-131">Authorization</span></span> | <span data-ttu-id="eac6f-132">{token} do portador (obrigatório)</span><span class="sxs-lookup"><span data-stu-id="eac6f-132">Bearer {token} (required)</span></span>  |
+| <span data-ttu-id="eac6f-133">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="eac6f-133">ConsistencyLevel</span></span> | <span data-ttu-id="eac6f-134">eventualmente.</span><span class="sxs-lookup"><span data-stu-id="eac6f-134">eventual.</span></span> <span data-ttu-id="eac6f-135">Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-135">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="eac6f-136">Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto.</span><span class="sxs-lookup"><span data-stu-id="eac6f-136">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c274d-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-137">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="eac6f-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-137">Request body</span></span>
 
-<span data-ttu-id="c274d-138">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c274d-138">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="eac6f-138">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="eac6f-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c274d-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="eac6f-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-139">Response</span></span>
 
-<span data-ttu-id="c274d-140">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-140">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span> <span data-ttu-id="c274d-141">Se uma coleção grande de usuários for retornada, você poderá usar a [paginação no seu aplicativo](/graph/paging).</span><span class="sxs-lookup"><span data-stu-id="c274d-141">If a large user collection is returned, you can use [paging in your app](/graph/paging).</span></span>
+<span data-ttu-id="eac6f-140">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-140">If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.</span></span> <span data-ttu-id="eac6f-141">Se uma coleção grande de usuários for retornada, você poderá usar a [paginação no seu aplicativo](/graph/paging).</span><span class="sxs-lookup"><span data-stu-id="eac6f-141">If a large user collection is returned, you can use [paging in your app](/graph/paging).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c274d-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c274d-142">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="eac6f-142">Exemplos</span><span class="sxs-lookup"><span data-stu-id="eac6f-142">Examples</span></span>
 
-### <a name="example-1-get-all-users"></a><span data-ttu-id="c274d-143">Exemplo 1: Obter todos os usuários</span><span class="sxs-lookup"><span data-stu-id="c274d-143">Example 1: Get all users</span></span>
+### <a name="example-1-get-all-users"></a><span data-ttu-id="eac6f-143">Exemplo 1: Obter todos os usuários</span><span class="sxs-lookup"><span data-stu-id="eac6f-143">Example 1: Get all users</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c274d-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="eac6f-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-144">Request</span></span>
 
-<span data-ttu-id="c274d-145">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c274d-145">The following is an example of the request.</span></span>
+<span data-ttu-id="eac6f-145">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="eac6f-145">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="eac6f-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="eac6f-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -74,12 +76,30 @@ GET /users
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users
 ```
+# <a name="c"></a>[<span data-ttu-id="eac6f-147">C#</span><span class="sxs-lookup"><span data-stu-id="eac6f-147">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c274d-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-146">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="eac6f-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eac6f-148">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c274d-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-147">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="eac6f-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eac6f-149">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="c274d-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c274d-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="eac6f-150">Java</span><span class="sxs-lookup"><span data-stu-id="eac6f-150">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="eac6f-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-151">Response</span></span>
+
+<span data-ttu-id="eac6f-152">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-152">The following is an example of the response.</span></span>
+
+><span data-ttu-id="eac6f-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eac6f-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,14 +125,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a><span data-ttu-id="c274d-150">Exemplo 2: Obter uma conta de usuário usando um nome de entrada</span><span class="sxs-lookup"><span data-stu-id="c274d-150">Example 2: Get a user account using a sign-in name</span></span>
+### <a name="example-2-get-a-user-account-using-a-sign-in-name"></a><span data-ttu-id="eac6f-155">Exemplo 2: Obter uma conta de usuário usando um nome de entrada</span><span class="sxs-lookup"><span data-stu-id="eac6f-155">Example 2: Get a user account using a sign-in name</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c274d-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-151">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="eac6f-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-156">Request</span></span>
 
-<span data-ttu-id="c274d-152">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c274d-152">The following is an example of the request.</span></span>
+<span data-ttu-id="eac6f-157">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="eac6f-157">The following is an example of the request.</span></span>
 
-><span data-ttu-id="c274d-153">**Observação:** Ao filtrar em **identidades** , você deve fornecer tanto **emissor** como **emissorAssignedId** .</span><span class="sxs-lookup"><span data-stu-id="c274d-153">**Note:** When filtering on **identities** , you must supply both **issuer** and **issuerAssignedId** .</span></span>
+><span data-ttu-id="eac6f-158">**Observação:** Ao filtrar em **identidades** , você deve fornecer tanto **emissor** como **emissorAssignedId**.</span><span class="sxs-lookup"><span data-stu-id="eac6f-158">**Note:** When filtering on **identities** , you must supply both **issuer** and **issuerAssignedId**.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="eac6f-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="eac6f-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signinname_users"
@@ -120,12 +142,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
+# <a name="c"></a>[<span data-ttu-id="eac6f-160">C#</span><span class="sxs-lookup"><span data-stu-id="eac6f-160">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c274d-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-154">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="eac6f-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eac6f-161">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signinname-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c274d-155">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-155">The following is an example of the response.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="eac6f-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eac6f-162">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signinname-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="c274d-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c274d-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="eac6f-163">Java</span><span class="sxs-lookup"><span data-stu-id="eac6f-163">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signinname-users-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="eac6f-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-164">Response</span></span>
+
+<span data-ttu-id="eac6f-165">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-165">The following is an example of the response.</span></span> 
+
+> <span data-ttu-id="eac6f-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eac6f-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -146,12 +186,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-users-including-their-last-sign-in-time"></a><span data-ttu-id="c274d-158">Exemplo 3: Obter usuários incluindo o horário da última entrada</span><span class="sxs-lookup"><span data-stu-id="c274d-158">Example 3: Get users including their last sign-in time</span></span>
+### <a name="example-3-get-users-including-their-last-sign-in-time"></a><span data-ttu-id="eac6f-168">Exemplo 3: Obter usuários incluindo o horário da última entrada</span><span class="sxs-lookup"><span data-stu-id="eac6f-168">Example 3: Get users including their last sign-in time</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c274d-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-159">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="eac6f-169">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-169">Request</span></span>
 
-<span data-ttu-id="c274d-160">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c274d-160">The following is an example of the request.</span></span>
+<span data-ttu-id="eac6f-170">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="eac6f-170">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="eac6f-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="eac6f-171">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time"
@@ -159,12 +201,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
 ```
+# <a name="c"></a>[<span data-ttu-id="eac6f-172">C#</span><span class="sxs-lookup"><span data-stu-id="eac6f-172">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c274d-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-161">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="eac6f-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eac6f-173">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c274d-162">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-162">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="eac6f-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eac6f-174">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="c274d-p109">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c274d-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="eac6f-175">Java</span><span class="sxs-lookup"><span data-stu-id="eac6f-175">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="eac6f-176">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-176">Response</span></span>
+
+<span data-ttu-id="eac6f-177">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-177">The following is an example of the response.</span></span>
+
+><span data-ttu-id="eac6f-p109">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eac6f-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -199,12 +259,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-list-the-last-sign-in-time-of-users-with-a-specific-display-name"></a><span data-ttu-id="c274d-165">Exemplo 4: listar o horário da última entrada de usuários com um nome de exibição específico</span><span class="sxs-lookup"><span data-stu-id="c274d-165">Example 4: List the last sign-in time of users with a specific display name</span></span>
+### <a name="example-4-list-the-last-sign-in-time-of-users-with-a-specific-display-name"></a><span data-ttu-id="eac6f-180">Exemplo 4: listar o horário da última entrada de usuários com um nome de exibição específico</span><span class="sxs-lookup"><span data-stu-id="eac6f-180">Example 4: List the last sign-in time of users with a specific display name</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c274d-166">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-166">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="eac6f-181">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-181">Request</span></span>
 
-<span data-ttu-id="c274d-167">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c274d-167">The following is an example of the request.</span></span>
+<span data-ttu-id="eac6f-182">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="eac6f-182">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="eac6f-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="eac6f-183">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time_filter"
@@ -212,12 +274,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
 ```
+# <a name="c"></a>[<span data-ttu-id="eac6f-184">C#</span><span class="sxs-lookup"><span data-stu-id="eac6f-184">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c274d-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-168">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="eac6f-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eac6f-185">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c274d-169">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-169">The following is an example of the response.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="eac6f-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eac6f-186">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-filter-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="c274d-p110">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c274d-p110">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="eac6f-187">Java</span><span class="sxs-lookup"><span data-stu-id="eac6f-187">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="eac6f-188">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-188">Response</span></span>
+
+<span data-ttu-id="eac6f-189">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-189">The following is an example of the response.</span></span> 
+
+> <span data-ttu-id="eac6f-p110">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eac6f-p110">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -243,12 +323,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-list-the-last-sign-in-time-of-users-in-a-specific-time-range"></a><span data-ttu-id="c274d-172">Exemplo 5: listar o horário da última entrada dos usuários em um intervalo de tempo específico</span><span class="sxs-lookup"><span data-stu-id="c274d-172">Example 5: List the last sign-in time of users in a specific time range</span></span>
+### <a name="example-5-list-the-last-sign-in-time-of-users-in-a-specific-time-range"></a><span data-ttu-id="eac6f-192">Exemplo 5: listar o horário da última entrada dos usuários em um intervalo de tempo específico</span><span class="sxs-lookup"><span data-stu-id="eac6f-192">Example 5: List the last sign-in time of users in a specific time range</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c274d-173">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-173">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="eac6f-193">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-193">Request</span></span>
 
-<span data-ttu-id="c274d-174">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c274d-174">The following is an example of the request.</span></span>
+<span data-ttu-id="eac6f-194">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="eac6f-194">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="eac6f-195">HTTP</span><span class="sxs-lookup"><span data-stu-id="eac6f-195">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signin_last_time_range"
@@ -256,12 +338,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
 ```
+# <a name="c"></a>[<span data-ttu-id="eac6f-196">C#</span><span class="sxs-lookup"><span data-stu-id="eac6f-196">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-range-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c274d-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-175">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="eac6f-197">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eac6f-197">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-range-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c274d-176">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-176">The following is an example of the response.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="eac6f-198">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eac6f-198">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-range-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="c274d-p111">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c274d-p111">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="eac6f-199">Java</span><span class="sxs-lookup"><span data-stu-id="eac6f-199">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-range-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="eac6f-200">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-200">Response</span></span>
+
+<span data-ttu-id="eac6f-201">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-201">The following is an example of the response.</span></span> 
+
+> <span data-ttu-id="eac6f-p111">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eac6f-p111">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -296,12 +396,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-get-only-a-count-of-users"></a><span data-ttu-id="c274d-179">Exemplo 6: Obter apenas uma contagem de usuários</span><span class="sxs-lookup"><span data-stu-id="c274d-179">Example 6: Get only a count of users</span></span>
+### <a name="example-6-get-only-a-count-of-users"></a><span data-ttu-id="eac6f-204">Exemplo 6: Obter apenas uma contagem de usuários</span><span class="sxs-lookup"><span data-stu-id="eac6f-204">Example 6: Get only a count of users</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c274d-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-180">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="eac6f-205">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-205">Request</span></span>
 
-<span data-ttu-id="c274d-181">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c274d-181">The following is an example of the request.</span></span>
+<span data-ttu-id="eac6f-206">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="eac6f-206">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="eac6f-207">HTTP</span><span class="sxs-lookup"><span data-stu-id="eac6f-207">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_count_only"
@@ -310,10 +412,28 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/users/$count
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[<span data-ttu-id="eac6f-208">C#</span><span class="sxs-lookup"><span data-stu-id="eac6f-208">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c274d-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-182">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="eac6f-209">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eac6f-209">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c274d-183">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-183">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="eac6f-210">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eac6f-210">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="eac6f-211">Java</span><span class="sxs-lookup"><span data-stu-id="eac6f-211">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-only-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="eac6f-212">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-212">Response</span></span>
+
+<span data-ttu-id="eac6f-213">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-213">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response"
@@ -325,12 +445,14 @@ Content-type: text/plain
 
 `893`
 
-### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="c274d-184">Exemplo 7: Utilize $filter e $top para obter um usuário com um nome de exibição que comece com a letra 'a', incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="c274d-184">Example 7: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects</span></span>
+### <a name="example-7-use-filter-and-top-to-get-one-user-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="eac6f-214">Exemplo 7: Utilize $filter e $top para obter um usuário com um nome de exibição que comece com a letra 'a', incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="eac6f-214">Example 7: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c274d-185">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-185">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="eac6f-215">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-215">Request</span></span>
 
-<span data-ttu-id="c274d-186">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c274d-186">The following is an example of the request.</span></span>
+<span data-ttu-id="eac6f-216">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="eac6f-216">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="eac6f-217">HTTP</span><span class="sxs-lookup"><span data-stu-id="eac6f-217">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_a_count"
@@ -339,12 +461,30 @@ Content-type: text/plain
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[<span data-ttu-id="eac6f-218">C#</span><span class="sxs-lookup"><span data-stu-id="eac6f-218">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c274d-187">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-187">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="eac6f-219">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eac6f-219">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c274d-188">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-188">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="eac6f-220">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eac6f-220">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="c274d-p112">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c274d-p112">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="eac6f-221">Java</span><span class="sxs-lookup"><span data-stu-id="eac6f-221">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="eac6f-222">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-222">Response</span></span>
+
+<span data-ttu-id="eac6f-223">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-223">The following is an example of the response.</span></span>
+
+><span data-ttu-id="eac6f-p112">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eac6f-p112">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -372,12 +512,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="c274d-191">Exemplo 8: Utilize $search para obter usuários com nomes de exibição que contenham as letras 'wa', incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="c274d-191">Example 8: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects</span></span>
+### <a name="example-8-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a><span data-ttu-id="eac6f-226">Exemplo 8: Utilize $search para obter usuários com nomes de exibição que contenham as letras 'wa', incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="eac6f-226">Example 8: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c274d-192">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-192">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="eac6f-227">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-227">Request</span></span>
 
-<span data-ttu-id="c274d-193">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c274d-193">The following is an example of the request.</span></span>
+<span data-ttu-id="eac6f-228">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="eac6f-228">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="eac6f-229">HTTP</span><span class="sxs-lookup"><span data-stu-id="eac6f-229">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_wa_count"
@@ -386,12 +528,30 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa"&$orderby=displayName&$count=true
 ConsistencyLevel: eventual
 ```
+# <a name="c"></a>[<span data-ttu-id="eac6f-230">C#</span><span class="sxs-lookup"><span data-stu-id="eac6f-230">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-wa-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c274d-194">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-194">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="eac6f-231">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eac6f-231">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-wa-count-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c274d-195">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-195">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="eac6f-232">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eac6f-232">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-wa-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="c274d-p113">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c274d-p113">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="eac6f-233">Java</span><span class="sxs-lookup"><span data-stu-id="eac6f-233">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-wa-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="eac6f-234">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-234">Response</span></span>
+
+<span data-ttu-id="eac6f-235">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-235">The following is an example of the response.</span></span>
+
+><span data-ttu-id="eac6f-p113">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eac6f-p113">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -418,11 +578,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a><span data-ttu-id="c274d-198">Exemplo 9: Utilize $search para obter grupos com nomes de exibição que contenham as letras 'wa', ou as letras para incluir uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="c274d-198">Example 9: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects</span></span>
+### <a name="example-9-use-search-to-get-users-with-display-names-that-contain-the-letters-wa-or-the-letters-to-including-a-count-of-returned-objects"></a><span data-ttu-id="eac6f-238">Exemplo 9: Utilize $search para obter grupos com nomes de exibição que contenham as letras 'wa', ou as letras para incluir uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="eac6f-238">Example 9: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c274d-199">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c274d-199">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="eac6f-239">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eac6f-239">Request</span></span>
 
-<span data-ttu-id="c274d-200">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c274d-200">The following is an example of the request.</span></span>
+<span data-ttu-id="eac6f-240">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="eac6f-240">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -433,11 +593,11 @@ GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa" OR "displayN
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a><span data-ttu-id="c274d-201">Resposta</span><span class="sxs-lookup"><span data-stu-id="c274d-201">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="eac6f-241">Resposta</span><span class="sxs-lookup"><span data-stu-id="eac6f-241">Response</span></span>
 
-<span data-ttu-id="c274d-202">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c274d-202">The following is an example of the response.</span></span>
+<span data-ttu-id="eac6f-242">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="eac6f-242">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="c274d-p114">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c274d-p114">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="eac6f-p114">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eac6f-p114">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
