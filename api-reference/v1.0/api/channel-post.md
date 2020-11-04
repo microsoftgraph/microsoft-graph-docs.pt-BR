@@ -5,60 +5,60 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1d46136c0d3bf0991545f5331d73382831d9aa2b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ec64a58a88d410abf84acbbb6fd92ccaf3940b3e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373437"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848931"
 ---
-# <a name="create-channel"></a><span data-ttu-id="3b2b2-103">Criar canal</span><span class="sxs-lookup"><span data-stu-id="3b2b2-103">Create channel</span></span>
+# <a name="create-channel"></a><span data-ttu-id="cb118-103">Criar canal</span><span class="sxs-lookup"><span data-stu-id="cb118-103">Create channel</span></span>
 
-<span data-ttu-id="3b2b2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3b2b2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cb118-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cb118-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="3b2b2-105">Criar um novo [canal](../resources/channel.md) em uma equipe, conforme especificado no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-105">Create a new [channel](../resources/channel.md) in a team, as specified in the request body.</span></span>
+<span data-ttu-id="cb118-105">Criar um novo [canal](../resources/channel.md) em uma equipe, conforme especificado no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cb118-105">Create a new [channel](../resources/channel.md) in a team, as specified in the request body.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3b2b2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3b2b2-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cb118-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="cb118-106">Permissions</span></span>
 
-<span data-ttu-id="3b2b2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b2b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cb118-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb118-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3b2b2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3b2b2-109">Permission type</span></span>      | <span data-ttu-id="3b2b2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3b2b2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cb118-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cb118-109">Permission type</span></span>      | <span data-ttu-id="cb118-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cb118-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3b2b2-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3b2b2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3b2b2-112">Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="3b2b2-112">Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3b2b2-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3b2b2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b2b2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-114">Not supported.</span></span>    |
-|<span data-ttu-id="3b2b2-115">Application</span><span class="sxs-lookup"><span data-stu-id="3b2b2-115">Application</span></span> |<span data-ttu-id="3b2b2-116">Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All, entrabalho. Migrate. All</span><span class="sxs-lookup"><span data-stu-id="3b2b2-116">Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All</span></span>|
+|<span data-ttu-id="cb118-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cb118-111">Delegated (work or school account)</span></span> | <span data-ttu-id="cb118-112">Channel. Create, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="cb118-112">Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="cb118-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cb118-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb118-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cb118-114">Not supported.</span></span>    |
+|<span data-ttu-id="cb118-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cb118-115">Application</span></span> | <span data-ttu-id="cb118-116">Channel. Create. Group \*, Channel. Create, entrabalho. Migration. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="cb118-116">Channel.Create.Group\*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="3b2b2-117">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="3b2b2-118">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="cb118-117">**Observação** : esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="cb118-117">**Note** : This API supports admin permissions.</span></span> <span data-ttu-id="cb118-118">Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="cb118-118">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="3b2b2-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3b2b2-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cb118-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cb118-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3b2b2-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3b2b2-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cb118-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cb118-120">Request headers</span></span>
 
-| <span data-ttu-id="3b2b2-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3b2b2-121">Header</span></span>       | <span data-ttu-id="3b2b2-122">Valor</span><span class="sxs-lookup"><span data-stu-id="3b2b2-122">Value</span></span> |
+| <span data-ttu-id="cb118-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cb118-121">Header</span></span>       | <span data-ttu-id="cb118-122">Valor</span><span class="sxs-lookup"><span data-stu-id="cb118-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="3b2b2-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="3b2b2-123">Authorization</span></span>  | <span data-ttu-id="3b2b2-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="3b2b2-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3b2b2-126">Content-Type</span></span>  | <span data-ttu-id="3b2b2-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="cb118-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="cb118-123">Authorization</span></span>  | <span data-ttu-id="cb118-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cb118-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="cb118-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cb118-126">Content-Type</span></span>  | <span data-ttu-id="cb118-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cb118-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3b2b2-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3b2b2-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cb118-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cb118-129">Request body</span></span>
 
-<span data-ttu-id="3b2b2-130">No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).</span><span class="sxs-lookup"><span data-stu-id="3b2b2-130">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
+<span data-ttu-id="cb118-130">No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).</span><span class="sxs-lookup"><span data-stu-id="cb118-130">In the request body, supply a JSON representation of [channel](../resources/channel.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3b2b2-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b2b2-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cb118-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb118-131">Response</span></span>
 
-<span data-ttu-id="3b2b2-132">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [canal](../resources/channel.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-132">If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.</span></span>
+<span data-ttu-id="cb118-132">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [canal](../resources/channel.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cb118-132">If successful, this method returns a `201 Created` response code and a [channel](../resources/channel.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3b2b2-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3b2b2-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cb118-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="cb118-133">Examples</span></span>
 
-### <a name="example-1-create-a-standard-channel"></a><span data-ttu-id="3b2b2-134">Exemplo 1: criar um canal padrão</span><span class="sxs-lookup"><span data-stu-id="3b2b2-134">Example 1: Create a standard channel</span></span>
-#### <a name="request"></a><span data-ttu-id="3b2b2-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3b2b2-135">Request</span></span>
+### <a name="example-1-create-a-standard-channel"></a><span data-ttu-id="cb118-134">Exemplo 1: criar um canal padrão</span><span class="sxs-lookup"><span data-stu-id="cb118-134">Example 1: Create a standard channel</span></span>
+#### <a name="request"></a><span data-ttu-id="cb118-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cb118-135">Request</span></span>
 
-<span data-ttu-id="3b2b2-136">O exemplo a seguir mostra uma solicitação para criar um canal padrão.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-136">The following example shows a request to create a standard channel.</span></span>
+<span data-ttu-id="cb118-136">O exemplo a seguir mostra uma solicitação para criar um canal padrão.</span><span class="sxs-lookup"><span data-stu-id="cb118-136">The following example shows a request to create a standard channel.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3b2b2-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="3b2b2-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cb118-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb118-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_group"
@@ -74,27 +74,27 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="3b2b2-138">C#</span><span class="sxs-lookup"><span data-stu-id="3b2b2-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cb118-138">C#</span><span class="sxs-lookup"><span data-stu-id="cb118-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3b2b2-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3b2b2-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cb118-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb118-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3b2b2-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3b2b2-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cb118-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb118-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3b2b2-141">Java</span><span class="sxs-lookup"><span data-stu-id="3b2b2-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="cb118-141">Java</span><span class="sxs-lookup"><span data-stu-id="cb118-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 ---
-#### <a name="response"></a><span data-ttu-id="3b2b2-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b2b2-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="cb118-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb118-142">Response</span></span>
 
-<span data-ttu-id="3b2b2-143">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-143">The following example shows the response.</span></span>
+<span data-ttu-id="cb118-143">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="cb118-143">The following example shows the response.</span></span>
 
-> <span data-ttu-id="3b2b2-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="cb118-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cb118-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -114,14 +114,14 @@ Content-length: 201
 }
 ```
 
-### <a name="example-2-create-private-channel-on-behalf-of-user"></a><span data-ttu-id="3b2b2-146">Exemplo 2: criar um canal privado em nome do usuário</span><span class="sxs-lookup"><span data-stu-id="3b2b2-146">Example 2: Create private channel on behalf of user</span></span>
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a><span data-ttu-id="cb118-146">Exemplo 2: criar um canal privado em nome do usuário</span><span class="sxs-lookup"><span data-stu-id="cb118-146">Example 2: Create private channel on behalf of user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3b2b2-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3b2b2-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="cb118-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cb118-147">Request</span></span>
 
-<span data-ttu-id="3b2b2-148">O exemplo a seguir mostra uma solicitação para criar um canal privado e adicionar um usuário como proprietário da equipe.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-148">The following example shows a request to create a private channel and add a user as an team owner.</span></span>
+<span data-ttu-id="cb118-148">O exemplo a seguir mostra uma solicitação para criar um canal privado e adicionar um usuário como proprietário da equipe.</span><span class="sxs-lookup"><span data-stu-id="cb118-148">The following example shows a request to create a private channel and add a user as an team owner.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="3b2b2-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="3b2b2-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cb118-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="cb118-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user"
@@ -145,28 +145,28 @@ Content-type: application/json
      ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="3b2b2-150">C#</span><span class="sxs-lookup"><span data-stu-id="3b2b2-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cb118-150">C#</span><span class="sxs-lookup"><span data-stu-id="cb118-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3b2b2-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3b2b2-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cb118-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cb118-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3b2b2-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3b2b2-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cb118-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cb118-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3b2b2-153">Java</span><span class="sxs-lookup"><span data-stu-id="3b2b2-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="cb118-153">Java</span><span class="sxs-lookup"><span data-stu-id="cb118-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="3b2b2-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b2b2-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="cb118-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb118-154">Response</span></span>
 
-<span data-ttu-id="3b2b2-155">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="3b2b2-155">The following example shows the response.</span></span>
+<span data-ttu-id="cb118-155">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="cb118-155">The following example shows the response.</span></span>
 
 <!-- {
   "blockType": "response",
