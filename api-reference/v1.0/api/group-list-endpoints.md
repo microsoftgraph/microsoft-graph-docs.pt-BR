@@ -1,22 +1,24 @@
 ---
 title: Listar pontos de extremidade
 description: Recupere uma lista de objetos de ponto de extremidade.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f3bd3ae6d49e6f101872f5c38a0b0e85395c7f9a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e9472ea6b4fcbc34678f2359eabcbb3e38c74bd8
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459708"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905894"
 ---
 # <a name="list-endpoints"></a>Listar pontos de extremidade
 
+Namespace: microsoft.graph
+
 Recupere uma lista de objetos de [ponto de extremidade](../resources/endpoint.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -71,10 +73,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 
 ---
 
-
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
->Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+>Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

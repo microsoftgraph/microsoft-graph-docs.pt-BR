@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: f012126064b6edd912164fcface786c4de93020a
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 6fd6898e70e7e3a5566db12ca98d692e15e34b03
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334880"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905364"
 ---
 ```csharp
 
@@ -15,7 +15,7 @@ var keyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6");
 
 var proof = "eyJ0eXAiOiJ...";
 
-await graphClient.Serviceprincipals["{id}"]
+await graphClient.ServicePrincipals["{id}"]
     .RemoveKey(keyId,proof)
     .Request()
     .PostAsync();

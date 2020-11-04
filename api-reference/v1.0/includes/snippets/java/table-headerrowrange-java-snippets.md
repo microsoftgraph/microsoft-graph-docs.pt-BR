@@ -1,19 +1,19 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 611400aa968b86b6a733d4d5e453f2f1ea044fd5
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 0563853f4d2a84d2cb61ec5c41cd7a0726ac14a4
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35889726"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905326"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.me().drive().items("{id}").workbook().tables("{id|name}")
+WorkbookRange workbookRange = graphClient.me().drive().items("{id}").workbook().tables("{id|name}")
     .headerRowRange()
     .buildRequest()
-    .post();
+    .get();
 
 ```

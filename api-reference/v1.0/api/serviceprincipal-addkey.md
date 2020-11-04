@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b9a7470f13f99666a6f7e6bdfff53281c1b54b72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d69567692476266671bc9556b2750f1b7174f9eb
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025418"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905149"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipalName: addKey
 
@@ -29,8 +29,8 @@ Os servicePrincipalName que não têm certificados válidos existentes (por exem
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Nenhum.  |
-|Delegado (conta pessoal da Microsoft) | Nenhum.    |
+|Delegada (conta corporativa ou de estudante) | Nenhum.  |
+|Delegada (conta pessoal da Microsoft) | Nenhum.    |
 |Aplicativo | Nenhum. |
 
 > [!NOTE]
@@ -41,7 +41,7 @@ Os servicePrincipalName que não têm certificados válidos existentes (por exem
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /serviceprincipals/{id}/addKey
+POST /servicePrincipals/{id}/addKey
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça as seguintes propriedades obrigatórias.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave de servicePrincipalName a ser adicionada. O __tipo__, __uso__ e __chave__ são propriedades obrigatórias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: O uso deve ser `Verify` .</li><li>`X509CertAndPassword`: O uso deve ser `Sign`</li></ul>|
+| keyCredential | [keyCredential](../resources/keycredential.md) | A nova credencial de chave de servicePrincipalName a ser adicionada. O __tipo__ , __uso__ e __chave__ são propriedades obrigatórias para esse uso. Os tipos de chave com suporte são:<br><ul><li>`AsymmetricX509Cert`: O uso deve ser `Verify` .</li><li>`X509CertAndPassword`: O uso deve ser `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Só é necessário definir o __secretText__ que deve conter a senha para a chave. Essa propriedade é obrigatória somente para chaves de tipo `X509CertAndPassword` . Defini-lo como `null` caso contrário.|
 | evidência | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes de servicePrincipalName. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` -Issuer precisa ser a __ID__  do servicePrincipalName que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Veja a seguir um [exemplo](/graph/application-rollkey-prooftoken) de código que pode ser usado para gerar esse token de prova de posse.|
 
@@ -82,7 +82,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals/{id}/addKey
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/addKey
 Content-type: application/json
 
 {
@@ -145,7 +145,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals/{id}/addKey
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/addKey
 Content-type: application/json
 
 {
