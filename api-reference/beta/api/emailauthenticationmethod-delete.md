@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 915505a294a11afe8328002f5df0022032c3ffc2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a99c8faf5540310640b8321ea7a7bc30eaded624
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458204"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921638"
 ---
 # <a name="delete-emailauthenticationmethod"></a>Excluir emailAuthenticationMethod
 Namespace: microsoft.graph
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|Sem suporte.
 |Aplicativo|Sem suporte.|Sem suporte.
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador global
 * Leitor global

@@ -4,18 +4,18 @@ description: 'Este artigo descreve as oportunidades de parceria habilitadas pela
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fe2c171673421600db29dcaac21f24d5d82c160f
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b1c56d7018815f86821e55dc2562d4ea4395a27b
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895661"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921631"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Parceria com a API de segurança do Microsoft Graph – oportunidades de parceiros de tecnologia
 
 Este artigo descreve as oportunidades de parceria habilitadas pela API de segurança do Microsoft Graph e foi projetado para ajudar os gerentes de produto e as funções de desenvolvimento de negócios a entender os caminhos de investimento e a fornecer informações sobre as propostas de valor de parceria.
 
-## <a name="background"></a>Segundo plano
+## <a name="background"></a>Histórico
 
 A maioria das organizações lida com altos volumes de dados de segurança e tem dezenas de soluções de segurança em sua empresa, tornando a tarefa de integração de vários produtos e serviços desanimadores e complexos. Esses desafios prejudicam a capacidade de as organizações se movimentarem rapidamente ao detectar e corrigir ameaças em um mundo de ataques de movimentação rápida e interrupções.
 
@@ -23,9 +23,9 @@ Parceiros tecnológicos podem se integrar à plataforma Microsoft usando a API d
 
 ## <a name="introduction-to-the-microsoft-graph-security-api"></a>Introdução à API de segurança do Microsoft Graph
 
-A API de segurança do Microsoft Graph é uma API unificada que fornece uma interface padrão e um esquema uniforme para integrar alertas de segurança e inteligência de ameaças de várias fontes, enriquecer alertas e dados com informações contextuais e automatizar operações de segurança.
+A API de Segurança do Microsoft Graph é uma API unificada que fornece uma interface padrão e um esquema uniforme para integrar alertas de segurança e inteligência contra ameaças de várias fontes, enriquecer alertas e dados com informações contextuais e automatizar operações de segurança.
 
-A API de segurança faz parte do Microsoft Graph, que é uma API REST unificada para integrar dados e inteligência de produtos e serviços da Microsoft e parceiros. Usando o Microsoft Graph, clientes e parceiros podem criar rapidamente soluções que são autenticadas uma vez e usam uma única chamada de API para acessar ou agir em informações de segurança de várias soluções de segurança. O valor adicional é descoberto quando você explora as outras [entidades do Microsoft Graph](https://docs.microsoft.com/graph/overview) (Microsoft 365, Azure Active Directory, Intune e muito mais) para vincular o contexto de negócios com suas informações de segurança.
+A API de segurança faz parte do Microsoft Graph, que é uma API REST unificada para integrar dados e inteligência de produtos e serviços da Microsoft e parceiros. Usando o Microsoft Graph, clientes e parceiros podem criar rapidamente soluções que são autenticadas uma vez e usam uma única chamada de API para acessar ou agir em informações de segurança de várias soluções de segurança. O valor adicional é descoberto quando você explora as outras [entidades do Microsoft Graph](./overview.md) (Microsoft 365, Azure Active Directory, Intune e muito mais) para vincular o contexto de negócios com suas informações de segurança.
 
 A Microsoft permite a integração de parceiros tecnológicos de duas maneiras principais.
 
@@ -78,21 +78,21 @@ As oportunidades de parceria com a API de segurança do Microsoft Graph são dis
 
 Entidades com suporte:
 
-- Os **alertas** são conclusões com um impacto de segurança, em vez de dados de log brutos ou outras informações não correlacionadas. [Saiba mais](https://aka.ms/graphsecurityalerts).
-- Os **indicadores de ameaça**, também conhecidos como indicadores de comprometimento ou IoCs, representam dados sobre ameaças conhecidas, como arquivos mal-intencionados, URLs, domínios e endereços IP. Os clientes podem gerar indicadores por meio da coleta de inteligência de ameaças internas ou de obter indicadores de comunidades de inteligência de ameaças, feeds licenciados e outras fontes. [Saiba mais](https://aka.ms/graphsecuritytiindicators).
-- As **ações de segurança** permitem que os parceiros de tecnologia exponham recursos funcionais por meio do gráfico.  Por exemplo, se a sua solução de segurança oferecer suporte à capacidade de bloquear endereços IP, você poderá expor "IP de bloco" como um recurso no gráfico. Outros produtos de API de segurança de gráfico podem chamar sua ação por meio do gráfico. [Saiba mais](https://aka.ms/graphsecurityaction).
-- **Pontuação segura**... [Saiba mais](https://aka.ms/graphsecurescore).
+- Os **alertas** são conclusões com um impacto de segurança, em vez de dados de log brutos ou outras informações não correlacionadas. [Saiba mais](/graph/api/resources/security-api-overview#alerts).
+- Os **indicadores de ameaça** , também conhecidos como indicadores de comprometimento ou IoCs, representam dados sobre ameaças conhecidas, como arquivos mal-intencionados, URLs, domínios e endereços IP. Os clientes podem gerar indicadores por meio da coleta de inteligência de ameaças internas ou de obter indicadores de comunidades de inteligência de ameaças, feeds licenciados e outras fontes. [Saiba mais](/graph/api/resources/tiindicator).
+- As **ações de segurança** permitem que os parceiros de tecnologia exponham recursos funcionais por meio do gráfico.  Por exemplo, se a sua solução de segurança oferecer suporte à capacidade de bloquear endereços IP, você poderá expor "IP de bloco" como um recurso no gráfico. Outros produtos de API de segurança de gráfico podem chamar sua ação por meio do gráfico. [Saiba mais](/graph/api/resources/securityaction).
+- **Pontuação segura**... [Saiba mais](/graph/api/resources/securescores).
 
 ### <a name="integrate-your-application-with-the-microsoft-graph-security-api"></a>Integrar seu aplicativo com a API de segurança do Microsoft Graph
 
-Todos os aplicativos integrados [devem ser registrados](https://docs.microsoft.com/graph/auth-register-app-v2) com o Microsoft Graph. Os dois aplicativos usados por um único cliente e os usados por muitos clientes (multilocatário) são suportados.  Em ambos os casos, o cliente deve conceder consentimento para seu aplicativo. Ao chamar o Microsoft Graph, cada solicitação do seu aplicativo conterá seu identificador de aplicativo e o cliente que você está ligando em nome de. Há suporte para os seguintes tipos de solicitações:
+Todos os aplicativos integrados [devem ser registrados](./auth-register-app-v2.md) com o Microsoft Graph. Os dois aplicativos usados por um único cliente e os usados por muitos clientes (multilocatário) são suportados.  Em ambos os casos, o cliente deve conceder consentimento para seu aplicativo. Ao chamar o Microsoft Graph, cada solicitação do seu aplicativo conterá seu identificador de aplicativo e o cliente que você está ligando em nome de. Há suporte para os seguintes tipos de solicitações:
 
 - **Obter alertas** – Obtenha informações de alerta com filtragem conforme necessário.  Por exemplo: mostrar todos os alertas de alta prioridade ou "todos os alertas de alta prioridade" para um usuário específico, host, etc.
 - **Atualizar status de alerta** – permitindo o gerenciamento de um ciclo de vida de alerta.  Por exemplo: Configurando um status de alerta como "resolvido" de "em andamento" ou adicionando comentários a um alerta.
 - **Obter pontuação segura** – a pontuação segura da Microsoft é um valor de tipo de "classificação de crédito" para configurações de segurança de produtos da Microsoft.
 - **Inscrever** -permitir notificações de alterações para alertas ou consultas.
 - **Alimentar indicadores de ameaça personalizada** -Envie automaticamente seus indicadores de ameaça para as soluções de segurança da Microsoft para habilitar ações de alerta, bloqueio ou permissão. Use a API de segurança do Microsoft Graph diretamente ou aproveite as integrações com as principais plataformas de inteligência de ameaças.
-- **Invocar uma ação de segurança do Microsoft Graph** – realizar ações imediatas para se defender contra ameaças usando a entidade de segurança do Microsoft Graph [securityActions](https://aka.ms/graphsecurityaction) .
+- **Invocar uma ação de segurança do Microsoft Graph** – realizar ações imediatas para se defender contra ameaças usando a entidade de segurança do Microsoft Graph [securityActions](/graph/api/resources/securityaction) .
 
 ### <a name="enable-others-to-integrate-with-your-products-through-the-microsoft-graph-security-api"></a>Permitir que outras pessoas se integrem aos seus produtos por meio da API de segurança do Microsoft Graph
 
@@ -106,12 +106,12 @@ Cenários de provedor são amplamente variados. Um processo de integração auxi
 
 ### <a name="onboarding-guides-and-technical-documentation"></a>Guias de integração e documentação técnica
 
-- [Visão geral da API de segurança do Microsoft Graph](https://aka.ms/graphsecuritydocs)
-- [Referência da API](https://aka.ms/graphsecurityreferencebetadocs)
-- [esquema de alerta](https://aka.ms/graphsecurityalertschema)
-- [esquema tiIndicator](https://aka.ms/graphsecuritytiindicators)
-- [Esquema de ações de segurança](https://aka.ms/graphsecurityaction)
-- [Esquema de Pontuação segura](https://aka.ms/graphsecurescore)
+- [Visão geral da API de segurança do Microsoft Graph](./security-concept-overview.md)
+- [Referência da API](/graph/api/resources/security-api-overview)
+- [esquema de alerta](/graph/api/resources/alert)
+- [esquema tiIndicator](/graph/api/resources/tiindicator)
+- [Esquema de ações de segurança](/graph/api/resources/securityaction)
+- [Esquema de Pontuação segura](/graph/api/resources/securescores)
 
 ### <a name="sample-code"></a>Código de exemplo
 

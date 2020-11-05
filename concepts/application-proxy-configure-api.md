@@ -5,27 +5,27 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8d9ff3e3c6c351768fddd0b4339840a711c864ae
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 5052555b16b81170d8a6aa04f1c26c13fcd8d320
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373302"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921792"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Automatizar a configuração do Proxy de aplicativo usando a API do Microsoft Graph
 
-Neste artigo, você aprenderá a criar e configurar o [proxy de aplicativo](https://aka.ms/whyappproxy) do Azure Active Directory (Azure AD) para um aplicativo. O proxy de aplicativo fornece acesso remoto seguro e logon único em aplicativos Web no local. Depois de configurar o proxy de aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal de meus aplicativos ou de outros portais de aplicativos internos.
+Neste artigo, você aprenderá a criar e configurar o [proxy de aplicativo](/azure/active-directory/manage-apps/what-is-application-proxy) do Azure Active Directory (Azure AD) para um aplicativo. O proxy de aplicativo fornece acesso remoto seguro e logon único em aplicativos Web no local. Depois de configurar o proxy de aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal de meus aplicativos ou de outros portais de aplicativos internos.
 
-Este artigo pressupõe que você já instalou um conector e concluiu os [pré-requisitos](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) para o proxy de aplicativo para que os conectores possam se comunicar com os serviços do Azure AD.
+Este artigo pressupõe que você já instalou um conector e concluiu os [pré-requisitos](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) para o proxy de aplicativo para que os conectores possam se comunicar com os serviços do Azure AD.
 
 Verifique se você tem as permissões correspondentes para chamar as seguintes APIs.
 
 |Tipo de recurso |Método |
 |---------|---------|
-|[aplicativos](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Criar aplicativo](https://docs.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta&tabs=http) <br> [Atualizar aplicativo](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Adicionar aplicativo ao um conector](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
-|[connector](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Obter conectores](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Criar connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Adicionar conector a connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Criar servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [Atualizar servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Criar appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+|[aplicativos](/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Criar aplicativo](/graph/api/application-post-applications?tabs=http&view=graph-rest-beta) <br> [Atualizar aplicativo](/graph/api/application-update?view=graph-rest-beta)<br> [Adicionar aplicativo ao um conector](/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+|[connector](/graph/api/resources/connector?view=graph-rest-beta)| [Obter conectores](/graph/api/connector-get?view=graph-rest-beta)
+|[connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Criar connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Adicionar conector a connectorGroup](/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
+|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Criar servicePrincipal](/graph/api/serviceprincipal-post-serviceprincipals?tabs=http&view=graph-rest-beta) <br> [Atualizar servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Criar appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 > [!NOTE]
 > As solicitações mostradas neste artigo usam valores de amostra. Você precisará atualizá-los. Os objetos Response mostrados também podem ser reduzidos para facilitar a leitura. 
@@ -268,7 +268,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 ### <a name="complete-the-configuration-of-the-application"></a>Concluir a configuração do aplicativo
-Atualize as propriedades **redirectUri**, **identifierUri**e **HOMEPAGEURL** do aplicativo para a ur externa configurada na propriedade **onPremisesPublishing** . Em seguida, atualize o [implicitGrantSettings](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) para o `true` **EnabledTokenIssuance** e `false` para o **enabledAccessTokenIssuance**.
+Atualize as propriedades **redirectUri** , **identifierUri** e **HOMEPAGEURL** do aplicativo para a ur externa configurada na propriedade **onPremisesPublishing** . Em seguida, atualize o [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) para o `true` **EnabledTokenIssuance** e `false` para o **enabledAccessTokenIssuance**.
 
 #### <a name="request"></a>Solicitação
 <!-- {
@@ -490,7 +490,7 @@ HTTP/1.1 204 No content
 ```
 
 ## <a name="step-4-configure-single-sign-on"></a>Etapa 4: configurar o logon único
-Este aplicativo usa a autenticação integrada do Windows (IWA). Para configurar o IWA, defina as propriedades de logon único no tipo de recurso [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) .
+Este aplicativo usa a autenticação integrada do Windows (IWA). Para configurar o IWA, defina as propriedades de logon único no tipo de recurso [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) .
 
 #### <a name="request"></a>Solicitação
 
@@ -658,9 +658,9 @@ Content-type: application/json
 }
 ```
 
-Para saber mais, confira o tipo de recurso [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta).
+Para saber mais, confira o tipo de recurso [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta).
 
 
 ## <a name="additional-steps"></a>Etapas adicionais
-- [Configuração automatizada usando exemplos do PowerShell para o proxy de aplicativo](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
-- [Automação da configuração do aplicativo de SSO baseado em SAML com a API do Microsoft Graph](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+- [Configuração automatizada usando exemplos do PowerShell para o proxy de aplicativo](/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
+- [Automação da configuração do aplicativo de SSO baseado em SAML com a API do Microsoft Graph](/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)

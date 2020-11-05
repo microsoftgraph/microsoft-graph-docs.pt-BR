@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para importar dados 
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 2ad2621d3af0e0de4a23739077462b0051526591
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 671f8feb37203d9fea652a203dfe4d094e5a8024
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372548"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921743"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Usar a API de pesquisa da Microsoft para Pesquisar tipos personalizados importados usando conectores do Microsoft Graph
 
@@ -32,6 +32,8 @@ TODOSEARCHAPI - Bug 1653398
 - A propriedade **EntityTypes** como `externalItem` .
 
 - A propriedade **Fields** para incluir os campos no item externo a serem recuperados. Observe que, se você não incluir nenhum **campo** na solicitação, a resposta conterá todos os campos marcados como *recuperáveis* no esquema de dados especificado para as conexões especificadas na propriedade **ContentSources** .
+
+Além disso, você pode agregar resultados de pesquisa com base nas propriedades de um [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) que são numéricos ou de cadeia de caracteres, e que estão definidos como refinável no [esquema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). Para obter mais informações, consulte [refinar resultados de pesquisa usando agregações](search-concept-aggregation.md).
 
 ## <a name="example"></a>Exemplo
 

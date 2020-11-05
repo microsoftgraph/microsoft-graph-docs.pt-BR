@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 1a4c5c94999885ba01112f6f18bea96e93a5e77b
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 730368b4e47c34353882e5e601644133dbb38225
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418203"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921568"
 ---
 # <a name="azure-ad-authentication-methods-policies-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Métodos de autenticação as políticas definem [métodos de autenticação](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) e os usuários que têm permissão para usá-los para entrar e realizar a autenticação multifator (MFA) no Azure Active Directory (Azure AD). Métodos de autenticação as políticas que podem ser gerenciadas no Microsoft Graph incluem chaves de segurança FIDO2 e entrada de telefone sem senha com o aplicativo Microsoft Authenticator.
+Métodos de autenticação as políticas definem [métodos de autenticação](/azure/active-directory/authentication/concept-authentication-methods) e os usuários que têm permissão para usá-los para entrar e realizar a autenticação multifator (MFA) no Azure Active Directory (Azure AD). Métodos de autenticação as políticas que podem ser gerenciadas no Microsoft Graph incluem chaves de segurança FIDO2 e entrada de telefone sem senha com o aplicativo Microsoft Authenticator.
 
 As APIs de diretivas de método de autenticação são usadas para gerenciar as configurações de política. Por exemplo:
 

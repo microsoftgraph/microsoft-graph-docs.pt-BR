@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b0f2bf125593c72ba72ae4109baffcae46e88f33
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4299ddec6a05e079d86a070b939c2220087281a0
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998632"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921524"
 ---
 # <a name="onpremisespublishingprofile-resource-type"></a>tipo de recurso onPremisesPublishingProfile
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Vários serviços do Azure (por exemplo, a autenticação de [passagem](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta)do Azure Active Directory Connect, o [WORKDAY para o provisionamento de usuários do Azure ad](https://docs.microsoft.com/azure/active-directory/saas-apps/workday-inbound-tutorial)e o [proxy de aplicativo](https://aka.ms/whyappproxy) permitem o acesso a vários recursos locais de fora da rede corporativa.
+Vários serviços do Azure (por exemplo, a autenticação de [passagem](/azure/active-directory/hybrid/how-to-connect-pta)do Azure Active Directory Connect, o [WORKDAY para o provisionamento de usuários do Azure ad](/azure/active-directory/saas-apps/workday-inbound-tutorial)e o [proxy de aplicativo](https://aka.ms/whyappproxy) permitem o acesso a vários recursos locais de fora da rede corporativa.
 
 [Os agentes locais](onpremisesagent.md) (ou [conectores](connector.md) para o proxy de aplicativo) instalados por um administrador podem ser configurados para encaminhar solicitações a um determinado [recurso publicado](publishedresource.md).
 [Grupos de agente](onpremisesagentgroup.md) (ou [grupos de conectores](connectorgroup.md) para o proxy de aplicativo) permitem que um administrador atribua agentes específicos para atender a recursos locais publicados específicos. Os administradores também podem agrupar vários agentes e, em seguida, atribuir cada recurso publicado a um grupo de agentes. Todo o conjunto de entidades do mesmo tipo de publicação local é representado pelo **onPremisesPublishingProfile**.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -36,7 +36,7 @@ Vários serviços do Azure (por exemplo, a autenticação de [passagem](https://
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Representa um objeto **hybridAgentUpdaterConfiguration** .|
 |id|String| Representa um tipo de publicação. Os valores possíveis são: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Somente leitura.|
-|isEnabled|Boolean| Representa se o [proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) está habilitado para o locatário. |
+|isEnabled|Booliano| Representa se o [proxy de aplicativo do Azure ad](https://aka.ms/whyappproxy) está habilitado para o locatário. |
 
 ## <a name="relationships"></a>Relações
 
