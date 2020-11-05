@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: af29926d77c8888cadc67c4cd7e7558fe47062d6
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a7f246ed903fa651deaf5278a54f8f4bac520f5c
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406299"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921771"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>tipo de recurso b2cIdentityUserFlow
 
@@ -45,7 +45,7 @@ Para ajudar você a configurar as tarefas de identidade mais comuns para seus ap
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|Cadeia de caracteres|O nome do fluxo de usuário. Esse é um valor obrigatório e imutável após sua criação. O nome será antecedido pelo valor de `B2C_1_` após a criação.|
-|userFlowType|Cadeia de caracteres|O [tipo de fluxo de usuário](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|Cadeia de caracteres|O [tipo de fluxo de usuário](/azure/active-directory-b2c/user-flow-versions). Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
 |userFlowTypeVersion|Único|A versão do fluxo de usuário.|
 
 ## <a name="relationships"></a>Relações

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef62655e2d31734a466404402ac808c66aace324
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 8c05c175df44f6ef8746aa8a9e84633b22ffd570
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782816"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921603"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -189,7 +189,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-microsoft-365-group-with-an-owner-and-members"></a>Exemplo 2: Criar um grupo do Microsoft 365 com um proprietário e membros
 
-O exemplo a seguir cria um grupo do Microsoft 365 com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) ou o envio em lotes JSON.
+O exemplo a seguir cria um grupo do Microsoft 365 com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) ou o envio em lotes JSON.
 
 #### <a name="request"></a>Solicitação
 

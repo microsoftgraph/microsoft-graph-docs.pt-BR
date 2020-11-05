@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 1627c59a653e5ab26e4da6d50d3f80cccefc9c50
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 73f01c22ce87c76289060cc23319ec952d414b10
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401460"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921596"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -125,8 +125,8 @@ Esse recurso permite:
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante as atualizações. <br><br>Retornado por padrão. Oferece suporte a $filter e $orderby. |
 |expirationDateTime|DateTimeOffset| Data e hora de quando o grupo está configurado para expirar. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. |
 |groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver `Unified`, o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança ou um grupo de distribuição. Para obter detalhes, confira [visão geral sobre grupos](groups-overview.md).<br><br>Se a coleção inclui `DynamicMembership`, o grupo tem associação dinâmica; caso contrário, a associação é estática.  <br><br>Retornado por padrão. Oferece suporte a $filter.|
-|hasMembersWithLicenseErrors|Boolean| Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Essa propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é **true**).|
-|hideFromAddressLists |Booliano |Verdadeiro se o grupo não for exibido em certas partes da interface do usuário do Outlook: no **Catálogo de Endereços**, nas listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar Grupos** para pesquisar grupos; falso caso contrário. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
+|hasMembersWithLicenseErrors|Boolean| Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Essa propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é **true** ).|
+|hideFromAddressLists |Booliano |Verdadeiro se o grupo não for exibido em certas partes da interface do usuário do Outlook: no **Catálogo de Endereços** , nas listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar Grupos** para pesquisar grupos; falso caso contrário. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |hideFromOutlookClients |Booliano |Verdadeiro se o grupo não for exibido nos clientes do Outlook, como Outlook para Windows e Outlook na Web; caso contrário, falso. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |isAssignableToRole|Booliano|Indica se esse grupo pode ser atribuído a uma função do Azure Active Directory ou não.<br><br>Essa propriedade só pode ser definida durante a criação do grupo e é imutável. Somente o Administrador Global o Administrador com Função Privilegiada podem definir essa propriedade. Para mais informações, consulte [Usando um grupo para gerenciar as atribuições de funções do Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Retornado por padrão.|
@@ -145,7 +145,7 @@ Esse recurso permite:
 |onPremisesSamAccountName|Cadeia de Caracteres|Contém o **nome da conta SAM** local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect.<br><br>Retornado por padrão. Somente leitura. |
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado do local com a nuvem. <br><br>Retornado por padrão. Somente leitura. |
 |onPremisesSyncEnabled|Boolean|**True** se esse grupo está sincronizado de um diretório local; **false** se esse grupo foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
-|preferredDataLocation|String|O local de data preferido para o grupo. Saiba mais em [OneDrive Online com Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado por padrão.|
+|preferredDataLocation|String|O local de data preferido para o grupo. Saiba mais em [OneDrive Online com Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado por padrão.|
 |preferredLanguage|Cadeia de caracteres|Idioma de preferência de um grupo do Microsoft 365. Deve seguir o código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/grouplifecyclepolicy-renewgroup.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Apenas leitura.|
