@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: a29fca2d7bb94c87b17f1713088d36b1897ab38f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4ee71199c096eeef61cfad619c9fc70e389b389f
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401607"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905936"
 ---
 # <a name="privileged-identity-management"></a>Privileged Identity Management
 
@@ -24,7 +24,7 @@ Namespace: microsoft.graph
 - [APIs para funções de recursos do Azure](privilegedidentitymanagement-resources.md)
 
 > [!IMPORTANT]
-> A API para gerenciar funções do Azure AD será alterada entre junho e novembro de 2019 para acompanhar o namespace e a convenção da [API de recursos do Azure](privilegedidentitymanagement-resources.md). O PIM do Azure AD se tornará um recurso na convenção de recursos do Azure. Se essa alteração afetar diretamente seu locatário, preencha o [formulário de Mudança da API do Graph para PIM do Azure AD](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzfBSoy7dT5DqNLWwotW3OFUNFFMRlRLSUtRNEdDWEZHN05LT09IWjkyTS4u) para obter informações adicionais, suporte e a capacidade de agendar um horário para essa alteração da API.
+> A API para gerenciar as funções do Azure Active Directory foi preterida para a maioria dos locatários, exceto para poucos que usam uma versão mais antiga da Gestão de Identidade Privilegiada (PIM). Para obter mais informações sobre as versões do PIM, confira [Determinar sua versão do PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role?tabs=new#determine-your-version-of-pim). Se estiver usando a nova versão e recebendo o erro **TenantEnabledInAadRoleMigration** , você pode aguardar até que uma nova API esteja disponível para a funcionalidade PIM na API [unifiedRoleManagement](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) para funções do Azure Active Directory ou você pode use a API de [Recursos do Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta) para suas funções do Azure Active Directory. Para usar a API de **recurso do Azure** , substitua `azureResources` por `aadRoles` para `provider_id` e use o seu ID de locatário para `resource_id`. Recomendamos que você aguarde a nova API. Você poderá continuar usando a API de **recursos do Azure** depois que a nova API estiver disponível. Os novos recursos disponibilizados no portal do Azure também serão disponibilizados exclusivamente por meio da nova API.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
