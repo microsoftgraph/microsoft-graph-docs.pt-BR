@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a3dd8232233d328b254d2b7668fb923694ce770c
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 363ae9739205a6e96ff836a0190f066d919f5adf
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219759"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921813"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
@@ -28,8 +28,8 @@ A [API de Segurança do Microsoft Graph](/graph/api/resources/security-api-overv
 
 - [Escrever código](https://aka.ms/graphsecuritysdk) – Encontrar [exemplos do código](https://aka.ms/graphsecurityapicode) no C#, Java, NodeJS e mais.
 - [Conectar usando scripts](https://aka.ms/graphsecuritypowershellsampleblog) – Encontrar [exemplos do PowerShell](https://aka.ms/graphsecuritypowershellsample).
-- [Arrastar e solta em fluxos de trabalho e guias estratégicos](https://aka.ms/graphsecurityconnectorsblogpost) – Use [conectores de segurança do Microsoft Graph](https://aka.ms/graphsecurityconnectors) para [Aplicativos Azure Logic](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/)e o [PowerApps](https://powerapps.microsoft.com/).
-- [Obter dados em relatórios e painéis](https://aka.ms/graphsecuritypowerbiconnectorblogpost) : Use o [conector de segurança do Microsoft Graph para o Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc).
+- [Arrastar e solta em fluxos de trabalho e guias estratégicos](https://aka.ms/graphsecurityconnectorsblogpost) – Use [conectores de segurança do Microsoft Graph](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) para [Aplicativos Azure Logic](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/)e o [PowerApps](https://powerapps.microsoft.com/).
+- [Obter dados em relatórios e painéis](https://aka.ms/graphsecuritypowerbiconnectorblogpost) : Use o [conector de segurança do Microsoft Graph para o Power BI](/power-bi/connect-data/desktop-connect-graph-security).
 - [Conectar usando blocos de anotações Jupyter](https://jupyter.org/) – Encontrar [exemplos de bloco de anotações do Jupyter](https://aka.ms/graphsecurityjupyternotebooks).  
 
 ### <a name="unify-and-standardize-alert-tracking"></a>Unificar e padronizar o monitoramento de alertas
@@ -44,11 +44,11 @@ Correlacione alertas em soluções de segurança mais facilmente com um esquema 
 
 Marque os alertas com contexto adicional ou inteligência contra ameaças para informar a resposta e a correção. Certifique-se de que os comentários e as opiniões nos alertas sejam capturados e estejam visíveis em todos os fluxos de trabalho. Mantenha as atribuições e o status de alerta sincronizados para que todas as soluções integradas reflitam o estado atual. Use assinaturas webhook para receber notificação das alterações.  
 
-### <a name="unlock-security-context-to-drive-investigation"></a>Desbloquear o contexto de segurança para orientar investigação
+### <a name="unlock-security-context-to-drive-investigation"></a>Desbloquear o contexto de segurança para impulsionar a investigação
 
-Aprofunde seus conhecimentos sobre inventários relevantes relacionados à segurança relevantes (como usuários, hosts e aplicativos) e adicione contexto organizacional de outros provedores do Microsoft Graph (Azure AD, Microsoft Intune, Office 365) para reunir os contextos comercial e de segurança e melhorar respostas a ameaças.
+Aprofunde seus conhecimentos sobre inventários relevantes relacionados à segurança (como usuários, hosts e aplicativos) e, em seguida, adicione contexto organizacional de outros provedores do Microsoft Graph (Azure AD, Microsoft Intune, Microsoft 365) para reunir os contextos comercial e de segurança e melhorar a resposta às ameaças.
 
-### <a name="automate-security-workflows-and-reporting"></a>Automatizar fluxos de trabalho de segurança e relatórios
+### <a name="automate-security-workflows-and-reporting"></a>Automatizar fluxos de trabalho e relatórios de segurança
 
 Automatizar gerenciamento de segurança, monitorar e investigar para melhorar o desempenho operacional e o tempo de resposta. Obter mais informações e contexto ao integrar a segurança do Microsoft Graph em relatórios e painéis.
 

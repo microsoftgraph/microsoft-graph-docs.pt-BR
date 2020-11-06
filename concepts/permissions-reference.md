@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 012516efd2355528eb8842337c502915688156b2
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 9e851a9bba165d2b58ebd41ba278706d2d84cbeb
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849127"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921876"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1468,7 +1468,7 @@ Os seguintes usos são válidos para permissões delegadas e permissões de apli
 * _Policy.ReadWrite.ApplicationConfiguration_ : Leia e grave as políticas de configuração dos aplicativos da sua organização (`POST /beta/policies/tokenLifetimePolicies`)
 * _Policy.ReadWrite.AuthenticationFlows_ : Ler e gravar a política de fluxos de autenticação da sua organização (`PATCH /beta/policies/authenticationFlowsPolicy`)
 * _Policy.ReadWrite.ConditionalAccess_ : Leia e escreva as políticas de acesso condicional da sua organização (`POST /beta/identity/conditionalAccess/policies`)
-* _Policy.ReadWrite.FeatureRollout_ : Ler e gravar todas as políticas de distribuição de recursos da sua organização (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_ : Ler e gravar as políticas de distribuição de recursos da sua organização (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_ : Leitura e gravação de todas as políticas da estrutura de confiança da sua organização (`POST /beta/trustFramework/policies`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
@@ -1553,7 +1553,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](https://docs.microsoft.com/graph/api/resources/rolemanagement?view=graph-rest-beta), em nome do usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim | Não |
+| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta), em nome do usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim | Não |
 | _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
 | _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
 
@@ -1561,7 +1561,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](https://docs.microsoft.com/graph/api/resources/rolemanagement?view=graph-rest-beta), sem um usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim |
+| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta), sem um usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim |
 | _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) do diretório da empresa, sem um usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
 | _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) para o diretório da empresa, sem um usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
 
