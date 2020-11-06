@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 1c664d25be4e7106ca7d2024de4b8fb4dc52cc54
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 82538ec91f682d5c4c53f76543a41f3c76a1811e
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192173"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932596"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -30,15 +30,16 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | [Usuário][] | Alterações em todos os usuários:<br>`/users` <br>Alterações em um usuário específico:<br>`/users/{id}`| Não |
 | [Grupo][] | Alterações em todos os grupos:<br>`/groups` <br>Alterações em um grupo específico:<br>`/groups/{id}`<br>Mudanças nos proprietários de um grupo específico:<br>`/groups/{id}/owners`<br>Mudanças em membros de um grupo específico:<br>`/groups/{id}/members` | Não |
 | Grupo Microsoft 365 [conversação][] | Alterações nas conversas de um grupo:<br>`groups/{id}/conversations` | Não |
-| [driveItem][] no OneDrive (pessoal) | Alterações no conteúdo da hierarquia de _qualquer pasta_:<br>`/users/{id}/drive/root` | Não |
-| [driveItem][] no OneDrive for Business | Alterações no conteúdo da hierarquia de _qualquer pasta_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Não |
+| [driveItem][] no OneDrive (pessoal) | Alterações no conteúdo da hierarquia de _qualquer pasta_ :<br>`/users/{id}/drive/root` | Não |
+| [driveItem][] no OneDrive for Business | Alterações no conteúdo da hierarquia de _qualquer pasta_ :<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Não |
 | [lista][] em um [site][] do SharePoint | `/sites/{id}/lists/{id}` | Não |
 | [Alerta][] de segurança | Alterações em um alerta específico:<br>`/security/alerts/{id}` <br>Alterações em alertas filtrados:<br> `/security/alerts/?$filter`| Não |
 | Teams [callRecord][] | Mudanças para _todos os_ registros de chamadas: `/communications/callRecords` | Não |
 | Equipes [chatmessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages` | Sim |
 | [Presença][] de equipes | Alterações na presença de um único usuário: `/communications/presences/{id}` <br> Alterações em várias presenças de usuários:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
+| Imprimir [printTaskDefinition][] | Alterações em todos os eventos em uma definição de tarefa de impressão:<br>`/print/printtaskdefinition/{id}/tasks` | Não |
 
-> **Observação**: qualquer trajetória de recurso que comece com o `/users/{id}` também pode aceitar `/me` referenciar o usuário conectado.
+> **Observação** : qualquer trajetória de recurso que comece com o `/users/{id}` também pode aceitar `/me` referenciar o usuário conectado.
 
 ## <a name="permissions"></a>Permissions
 
@@ -48,7 +49,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [presença][], [chat][] (visualização) |
 | Delegado - conta pessoal da Microsoft | [contato][], [driveItem][], [lista][], [evento][], [mensagem][]                                        |
-| Aplicativo                            | [alerta][], [contato][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [callRecord][], [chat][]|
+| Aplicativo                            | [alerta][], [contato][], [driveItem][], [lista][], [evento][], [grupo][], [mensagem][], [usuário][], [callRecord][], [chat][], [printTaskDefinition][]|
 
 ## <a name="see-also"></a>Confira também
 
@@ -71,6 +72,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [usuário]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alerta]: ./alert.md
-[presença]: ./presence.md
+[presence]: ./presence.md
+[printTaskDefinition]: ./printtaskdefinition.md
 
 

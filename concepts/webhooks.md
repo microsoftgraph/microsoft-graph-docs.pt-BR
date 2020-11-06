@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: cb0858c2eb5a6bf627421a1fdf89d20db1bacae4
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 0678ea5a68ccf9906c659e39f32134e8ec36e799
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742199"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921736"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -63,7 +63,7 @@ Ou para um novo alerta da [API de Segurança](security-concept-overview.md): `/s
 
 Determinadas limites se aplicam aos recursos baseados no Azure AD (usuários, grupos) e gerarão erros se forem excedidos:
 
-> **Observação**: Esses limites não se aplicam aos recursos de serviços diferente do Azure AD. Por exemplo, um aplicativo pode criar muito mais assinaturas para `message` ou recursos `event` que são aceitos pelo serviço Exchange Online como parte do Microsoft Graph.
+> **Observação** : Esses limites não se aplicam aos recursos de serviços diferente do Azure AD. Por exemplo, um aplicativo pode criar muito mais assinaturas para `message` ou recursos `event` que são aceitos pelo serviço Exchange Online como parte do Microsoft Graph.
 
 - Cotas máximas de assinaturas:
 
@@ -81,7 +81,7 @@ Quando os limites são excedidos, a tentativa de criar uma assinatura resultará
 
 ### <a name="outlook-resource-limitations"></a>Limitações de recursos do Outlook
 
-Ao se inscrever em recursos do Outlook, tais como **mensagens**, **eventos** ou **contatos**, se você decidir usar o *nome UPN* em um caminho de recurso, a solicitação de assinatura pode falhar caso o UPN contenha um apóstrofo. Considere usar IDs de usuário de GUID em vez de UPNs para evitar esse problema. Por exemplo, em vez de usar o caminho de recursos:
+Ao se inscrever em recursos do Outlook, tais como **mensagens** , **eventos** ou **contatos** , se você decidir usar o *nome UPN* em um caminho de recurso, a solicitação de assinatura pode falhar caso o UPN contenha um apóstrofo. Considere usar IDs de usuário de GUID em vez de UPNs para evitar esse problema. Por exemplo, em vez de usar o caminho de recursos:
 
 `/users/sh.o'neal@contoso.com/messages`
 
@@ -93,7 +93,7 @@ Use:
 
 Cada recurso do Teams possui cotas de assinatura diferentes.
 
-- Para assinaturas do **callRecords**:
+- Para assinaturas do **callRecords** :
   - Por organização: 100 assinaturas totais
 
 - Para assinaturas de **chatMessages** (canais ou chats):
@@ -162,7 +162,7 @@ O Microsoft Graph valida o ponto de extremidade de notificação fornecido na pr
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-1. O cliente deve decodificar corretamente o `validationToken` fornecido na etapa anterior e escapar de um HTML/JavaScript.
+1. O cliente deve realizar a decodificação URL do `validationToken` fornecido corretamente na etapa anterior e escapar de um HTML/JavaScript.
 
    Escapar é uma boa prática porque atores maliciosos podem usar o ponto de extremidade de notificação para o tipo de ataques de script entre sites.
 
@@ -172,7 +172,7 @@ O Microsoft Graph valida o ponto de extremidade de notificação fornecido na pr
 
     - Um código de status de `HTTP 200 OK`.
     - Um tipo de conteúdo de `text/plain`.
-    - Um corpo que inclui o token de validação _decodificado_.
+    - Um corpo que inclui o token de validação _URL decodificada_. Basta refletir a mesma cadeia que foi enviada no parâmetro de consulta `validationToken`.
 
     O cliente deve descartar o token de validação depois de o fornecer na resposta.
 
