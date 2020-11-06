@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: a56bb13d12335f8e26e01055ad64d80ad9590b3b
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: cfa8e1f02b8cd294db3876dcce207802b4fc68ce
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848609"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932567"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Este log de alterações inclui alterações específicas no nível da API no Mi
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
 
 ## <a name="november-2020"></a>Novembro de 2020
+
+### <a name="change-notifications"></a>Mudar notificações
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Acrescentado [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta) aos recursos suportados para [notificações de mudança](/graph/webhooks).|
 
 ### <a name="teamwork"></a>Trabalho em equipe
 
@@ -3945,7 +3951,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 |Alteração|Beta|A propriedade **minimumUpdateAutoInstallClassification** foi adicionada à entidade [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta)|
 |Alteração|Beta|As propriedades **defenderSecurityCenterDisableAppBrowserUI** , **defenderSecurityCenterDisableFamilyUI** , **defenderSecurityCenterDisableHealthUI** , **defenderSecurityCenterDisableNetworkUI** , **defenderSecurityCenterDisableVirusUI** , **defenderSecurityCenterOrganizationDisplayName** , **defenderSecurityCenterHelpEmail** , **defenderSecurityCenterHelpPhone** , **defenderSecurityCenterHelpURL** , **defenderSecurityCenterNotificationsFromApp** , **defenderSecurityCenterITContactDisplay** e **applicationGuardAllowVirtualGPU** foram adicionadas à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
 |Alteração|Beta|As propriedades **enableAutomaticRedeployment** e **authenticationAllowFIDODevice** foram adicionadas à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
-|Alteração|Beta|A propriedade **trustedNetworkDomains** foi adicionada à entidade [windows10VpnConfiguration](/graph/api/resources/intune-deviceconfig-windows10vpnconfiguration?view=graph-rest-beta)|
+|Alterar|Beta|A propriedade **trustedNetworkDomains** foi adicionada à entidade [windows10VpnConfiguration](/graph/api/resources/intune-deviceconfig-windows10vpnconfiguration?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **minimumUpdateAutoInstallClassification** foi adicionada à entidade [windows81CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows81compliancepolicy?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade de navegação **androidForWorkEnrollmentProfiles** foi adicionada à entidade [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
 |Alteração|Beta|A propriedade **healthAttestationSupportedStatus** foi adicionada ao tipo complexo [deviceHealthAttestationState](/graph/api/resources/intune-devices-devicehealthattestationstate?view=graph-rest-beta)|
@@ -5142,7 +5148,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Alterar          | Beta        | Como parte da alteração de esquema em que o tipo de duas propriedades de local está sendo substituído por um novo tipo complexo no ponto de extremidade identityRiskEvents, as seguintes propriedades são alteradas/adicionadas no ponto de extremidade identityRiskEvents:</br>**location**  alterado de Edm.String para ComplexType signInLocation.<br/>**previousLocation** alterado de Edm.String para ComplexType signInLocation.<br/>**signInLocation** novo ComplexType que contém as propriedades city, state, countryOrRegion e geoCoordinates.<br/>**geoCoordinates** novo ComplexType que contém as propriedades latitude e longitude. |
+| Alteração          | Beta        | Como parte da alteração de esquema em que o tipo de duas propriedades de local está sendo substituído por um novo tipo complexo no ponto de extremidade identityRiskEvents, as seguintes propriedades são alteradas/adicionadas no ponto de extremidade identityRiskEvents:</br>**location**  alterado de Edm.String para ComplexType signInLocation.<br/>**previousLocation** alterado de Edm.String para ComplexType signInLocation.<br/>**signInLocation** novo ComplexType que contém as propriedades city, state, countryOrRegion e geoCoordinates.<br/>**geoCoordinates** novo ComplexType que contém as propriedades latitude e longitude. |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 

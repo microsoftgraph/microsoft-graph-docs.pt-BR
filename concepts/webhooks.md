@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 0678ea5a68ccf9906c659e39f32134e8ec36e799
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 9fa210486c924fc3e29e9d3f2ddfee5422a937f9
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921736"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932588"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -45,6 +45,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - Teams [callRecord][]
 - Teams [chatMessage][]
 - [presence][] do Teams (visualização)
+- Imprimir [printTaskDefinition][]
 
 Você pode criar uma assinatura para uma pasta de específica do Outlook, como a Caixa de Entrada: `me/mailFolders('inbox')/messages`
 
@@ -293,6 +294,7 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 |[mensagem][] | Desconhecido | Desconhecido |
 |[alerta][] | Menos de 3 minutos | 5 minutos |
 |[presença][] (pré-visualização) | Menos de 10 segundos | 1 minuto |
+|[printTaskDefinition][] | Menos de 1 minuto | 5 minutos |
 |[usuário][] | Menos de 2 minutos | 15 minutos |
 
 >**Observação:** a latência fornecida para o recurso de **alerta** só será aplicável depois que o próprio alerta tiver sido criado. Não inclui o tempo necessário para uma regra criar um alerta a partir dos dados.
@@ -319,3 +321,4 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[printTaskDefinition]: /graph/api/resources/printtaskdefinition

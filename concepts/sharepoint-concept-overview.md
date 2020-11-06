@@ -4,12 +4,12 @@ description: O SharePoint é sua Intranet móvel e inteligente. Com o SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5b0424aa2bca03b4feecdd565ab77825d6a68ee3
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7307913a1fab7cf251880c6a4edd15349af5efc7
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969358"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921610"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>Visão geral da API de conteúdo e sites do SharePoint
 
@@ -17,7 +17,7 @@ O SharePoint é sua Intranet móvel e inteligente. Com o SharePoint, os usuário
 
 ## <a name="why-integrate-with-sharepoint-sites-and-content"></a>Por que integrar com conteúdo e sites do SharePoint?
 
-Sites do SharePoint possibilitam a comunicação e a colaboração em equipe. Os Grupos do Office 365, o Microsoft Teams e os portais são baseados no SharePoint, portanto, você pode usar o Microsoft Graph para acessar dados onde quer que eles sejam mantidos. Use a API do SharePoint no Microsoft Graph para acessar:
+Sites do SharePoint possibilitam a comunicação e a colaboração em equipe. Os Grupos do Microsoft 365, o Microsoft Teams e os portais são baseados no SharePoint, portanto, você pode usar o Microsoft Graph para acessar dados onde quer que eles sejam mantidos. Use a API do SharePoint no Microsoft Graph para acessar:
 
 - Sites de equipe que armazenam o conteúdo no qual os usuários colaboraram com seus colegas de trabalho.
 - Sites e portais de comunicação em que os usuários publicam páginas de conteúdo avançado para compartilhar em toda a organização.
@@ -47,7 +47,7 @@ Como uma plataforma, o SharePoint oferece vários modelos de extensão e integra
 - A [Estrutura do SharePoint][] fornece uma maneira de compilar Web Parts usando tecnologias do lado do cliente e ferramentas de código aberto que podem ser hospedadas em páginas do SharePoint.
 - [Suplementos do SharePoint][] são extensões autônomas que podem ser adicionadas a um site do SharePoint sem a necessidade de um código personalizado em execução no servidor.
 
-Quando seu aplicativo é executado em uma página do SharePoint, você pode usar o Microsoft Graph facilmente para acessar dados no Office 365.
+Quando seu aplicativo é executado em uma página do SharePoint, você pode usar o Microsoft Graph facilmente para acessar dados no Microsoft 365.
 
 Para saber mais sobre esses modelos, acesse o [Centro de Desenvolvedores do SharePoint][] ou os [Documentos para Desenvolvedores do SharePoint][].
 
@@ -68,8 +68,8 @@ Comece a usar o SharePoint no Microsoft Graph aprendendo mais sobre como [trabal
 [consultar]: /graph/api/listitem-get?view=graph-rest-1.0
 [unidade]: /graph/api/resources/drive?view=graph-rest-1.0
 [API do OneDrive]: /graph/api/resources/onedrive?view=graph-rest-1.0
-[Estrutura do SharePoint]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
-[Suplementos do SharePoint]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
+[Estrutura do SharePoint]: /sharepoint/dev/spfx/sharepoint-framework-overview
+[Suplementos do SharePoint]: /sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [Centro de Desenvolvedores do SharePoint]: https://developer.microsoft.com/sharepoint
-[Documentos para Desenvolvedores do SharePoint]: https://aka.ms/spdev-docs
+[Documentos para Desenvolvedores do SharePoint]: /sharepoint/dev/
 [SharePoint]: /graph/api/resources/sharepoint?view=graph-rest-1.0
