@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f7775425ad31bba33cb31df296cc5985ea73ab70
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55d758d128eac16c775086956cbf9a0f3e0f1e16
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064763"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932440"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: Delta
 
@@ -37,7 +37,7 @@ Para começar a controlar as alterações, faça uma solicitação incluindo a f
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /oauth2permissiongrants/delta
+GET /oauth2PermissionGrants/delta
 ```
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
@@ -68,7 +68,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção [oauth2permissiongrant](../resources/oauth2permissiongrant.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou `deltaLink`.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto da coleção [oauth2permissiongrant](../resources/oauth2permissiongrant.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`.
 
 - Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O **oauth2permissiongrant** continua fazendo solicitações usando a `nextLink` URL até que uma `deltaLink` URL seja incluída na resposta.
 - Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Persista e use a `deltaLink` URL para saber mais sobre as alterações no recurso no futuro.
@@ -84,7 +84,7 @@ Para obter detalhes, consulte [usando a consulta Delta](/graph/delta-query-overv
   "name": "oauth2permissiongrant_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/oauth2permissiongrants/delta
+GET https://graph.microsoft.com/beta/oauth2PermissionGrants/delta
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/oauth2permissiongrant-delta-csharp-snippets.md)]

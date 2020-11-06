@@ -5,18 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a0772d0aca5a60bb4c5d9faa7d75efcd8d9ef385
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e36b6507f49444c4bd6a5433544c9f5976b4379
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023699"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921757"
 ---
 # <a name="group-assignlicense"></a>Grupo: assignLicense
 
 Namespace: microsoft.graph
 
-Adicionar ou remover licenças no grupo. As licenças atribuídas ao grupo serão atribuídas a todos os usuários do grupo. Para saber mais sobre licenciamento baseado em grupo, confira [o que é licenciamento baseado em grupo no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+Adicionar ou remover licenças no grupo. As licenças atribuídas ao grupo serão atribuídas a todos os usuários do grupo. Para saber mais sobre licenciamento baseado em grupo, confira [o que é licenciamento baseado em grupo no Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 Para obter as assinaturas disponíveis no diretório, execute uma [solicitação get subscribedSkus](../resources/subscribedsku.md).
 

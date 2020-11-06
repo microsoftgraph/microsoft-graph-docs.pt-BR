@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6ac5cd943f249e52f488819cd86b40854458ae6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 729cc7c276ad5bb12b3f7848fd925ce291fb5cd8
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001462"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932441"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,7 +47,7 @@ POST /informationprotection/policy/labels/extractLabel
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autorização | {token} de portador. Obrigatório.                                                                                                                                                         |
 | Content-type  | Content-Type: Application/JSON. Obrigatório.                                                                                                                                         |
-| Agente de usuário    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
+| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -76,7 +76,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/extractLabel
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/extractLabel
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 

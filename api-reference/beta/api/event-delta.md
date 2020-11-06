@@ -1,16 +1,16 @@
 ---
 title: 'evento: delta'
-description: Obtém um conjunto de eventos que foram adicionados, excluídos ou atualizado em um**calendarView** (um intervalo de eventos)
+description: Obtém um conjunto de eventos que foram adicionados, excluídos ou atualizado em um **calendarView** (um intervalo de eventos)
 localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: be376d6da610c91d0fc2e68684cb91a5a9417f45
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7499c8a8ffc5af6e03483a4448fb68c0509c26c6
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006942"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932385"
 ---
 # <a name="event-delta"></a>evento: delta
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter um conjunto de recursos de [eventos](../resources/event.md) que foram adicionados, excluídos ou atualizados em um ou mais calendários. 
 
-Você pode obter tipos específicos dessas alterações incrementais nos eventos de todos os calendários de uma caixa de correio ou em um calendário específico ou em uma coleção de eventos de um **calendarView** (intervalo de eventos definido por datas de início e término) de um calendário. O calendário pode ser o calendário padrão ou algum outro calendário especificado do. No caso de obter alterações incrementais no **calendarView**, o calendário também pode ser um calendário de grupo.
+Você pode obter tipos específicos dessas alterações incrementais nos eventos de todos os calendários de uma caixa de correio ou em um calendário específico ou em uma coleção de eventos de um **calendarView** (intervalo de eventos definido por datas de início e término) de um calendário. O calendário pode ser o calendário padrão ou algum outro calendário especificado do. No caso de obter alterações incrementais no **calendarView** , o calendário também pode ser um calendário de grupo.
 
 Uma chamada de função **Delta** é semelhante a um `GET /events` ou `GET /calendarview` solicitação para o calendário especificado, exceto pelo fato de que, por meio da aplicação adequada de [tokens de estado](/graph/delta-query-overview#state-tokens) em uma ou mais dessas chamadas, você pode consultar alterações incrementais de eventos nesse calendário. Isso permite que você mantenha e sincronize um repositório local de eventos no calendário especificado, sem ter que buscar todos os eventos desse calendário a cada vez.
 
@@ -52,7 +52,7 @@ A URL de consulta retornada em `nextLink` uma `deltaLink` resposta bem-sucedida 
 ### <a name="delta-function-on-events-in-a-user-calendar-preview"></a>Função Delta em eventos em um calendário de usuário (visualização)
 Aplicar a função **Delta** em todos os eventos ou eventos que começam em ou após uma data/hora específica, nos calendários de usuário especificados:
 
-* Para obter as alterações incrementais de todos os eventos, ou de eventos que começam na data/hora especificadas _na caixa de correio do usuário_:
+* Para obter as alterações incrementais de todos os eventos, ou de eventos que começam na data/hora especificadas _na caixa de correio do usuário_ :
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/events/delta 
@@ -62,7 +62,7 @@ Aplicar a função **Delta** em todos os eventos ou eventos que começam em ou a
   GET /users/{id | userPrincipalName}/events/delta?startDateTime={start_datetime}
   ```
 
-* Para obter as alterações incrementais de todos os eventos, ou de eventos a partir de ou após a data/hora especificada _no calendário padrão do usuário_:
+* Para obter as alterações incrementais de todos os eventos, ou de eventos a partir de ou após a data/hora especificada _no calendário padrão do usuário_ :
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/calendar/events/delta 
@@ -72,7 +72,7 @@ Aplicar a função **Delta** em todos os eventos ou eventos que começam em ou a
   GET /users/{id | userPrincipalName}/calendar/events/delta?startDateTime={start_datetime}
   ```
 
-* Para obter as alterações incrementais de todos os eventos, ou de eventos a partir de ou após a data/hora especificada _no calendário do usuário especificado_:
+* Para obter as alterações incrementais de todos os eventos, ou de eventos a partir de ou após a data/hora especificada _no calendário do usuário especificado_ :
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/calendars/{id}/events/delta 
@@ -82,7 +82,7 @@ Aplicar a função **Delta** em todos os eventos ou eventos que começam em ou a
   GET /users/{id | userPrincipalName}/calendars/{id}/events/delta?startDateTime={start_datetime}
   ```
 
-* Para obter alterações incrementais de todos os eventos, ou de eventos a partir de ou após a data/hora especificada _no calendário especificado do grupo de calendário padrão_:
+* Para obter alterações incrementais de todos os eventos, ou de eventos a partir de ou após a data/hora especificada _no calendário especificado do grupo de calendário padrão_ :
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/calendargroup/calendars/{id}/events/delta 
@@ -92,7 +92,7 @@ Aplicar a função **Delta** em todos os eventos ou eventos que começam em ou a
   GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/delta?startDateTime={start_datetime}
   ```
 
-* Para obter as alterações incrementais todos os eventos, ou de eventos que começam na data/hora especificadas no _grupo de calendários e no calendário especificado_:
+* Para obter as alterações incrementais todos os eventos, ou de eventos que começam na data/hora especificadas no _grupo de calendários e no calendário especificado_ :
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/calendargroups/{id}/calendars/{id}/events/delta 
@@ -120,14 +120,14 @@ Aplicar a função **Delta** em todos os eventos ou eventos que começam em ou a
 ### <a name="delta-function-on-calendarview-in-a-user-calendar"></a>Função Delta no calendarView em um calendário de usuário
 Aplicar a função **Delta** em um intervalo de eventos delimitado por data e hora de início e término, no calendário de usuário especificado:
 
-* Para obter alterações incrementais em um modo de exibição de calendário do _calendário padrão do usuário_:
+* Para obter alterações incrementais em um modo de exibição de calendário do _calendário padrão do usuário_ :
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
   GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
   ```
 
-* Para obter alterações incrementais em um modo de exibição de calendário do _calendário do usuário especificado_:
+* Para obter alterações incrementais em um modo de exibição de calendário do _calendário do usuário especificado_ :
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/calendars/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -135,7 +135,7 @@ Aplicar a função **Delta** em um intervalo de eventos delimitado por data e ho
   ```
 
 ### <a name="delta-function-on-calendarview-in-a-group-calendar"></a>Função Delta em calendarView em um calendário de grupo
-* Para obter alterações incrementais em um modo de exibição de calendário do _calendário de um grupo_:
+* Para obter alterações incrementais em um modo de exibição de calendário do _calendário de um grupo_ :
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -162,12 +162,12 @@ O não suporta `$expand` , `$filter` , `$orderby` , `$select` e `$search` .
 | Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
-| Preferir | string | Outlook. TimeZone = {cadeia de caracteres de fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
+| Preferir | cadeia de caracteres | Outlook. TimeZone = {cadeia de caracteres de fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
 
 ## <a name="response"></a>Resposta
 
 ### <a name="delta-function-on-events-preview"></a>Função Delta em eventos (versão prévia)
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [eventos](../resources/event.md) no corpo da resposta. Cada **evento** na resposta contém apenas as propriedades **ID**, **Type**, **Start** e **end** por motivos de desempenho. Use `GET /events/{id}` subsequentemente para expandir qualquer evento da resposta.  
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [eventos](../resources/event.md) no corpo da resposta. Cada **evento** na resposta contém apenas as propriedades **ID** , **Type** , **Start** e **end** por motivos de desempenho. Use `GET /events/{id}` subsequentemente para expandir qualquer evento da resposta.  
 
 ### <a name="delta-function-on-calendarview"></a>Função Delta no calendarView
 Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [eventos](../resources/event.md) no corpo da resposta.
@@ -194,10 +194,10 @@ Prefer: odata.maxpagesize=1
 
 #### <a name="response"></a>Resposta
 
-Se a solicitação for bem-sucedida, a resposta incluirá um token de estado, que pode ser um _skipToken_ (em um cabeçalho de resposta _ \@ OData. Nextlink_ ) ou um _deltaToken_ (em um cabeçalho de resposta _ \@ OData. deltaLink_ ).
+Se a solicitação for bem-sucedida, a resposta incluirá um token de estado, que pode ser um _skipToken_ (em um cabeçalho de resposta _\@ OData. Nextlink_ ) ou um _deltaToken_ (em um cabeçalho de resposta _\@ OData. deltaLink_ ).
 Respectivamente, eles indicam se você deve continuar com a rodada ou se concluiu a obter todas as alterações para essa rodada.
 
-A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _ \@ OData. nextLink_ .
+A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _\@ OData. nextLink_ .
 
 <!-- {
   "blockType": "response",
@@ -261,10 +261,10 @@ Prefer: odata.maxpagesize=2
 
 #### <a name="response"></a>Resposta
 
-Se a solicitação for bem-sucedida, a resposta incluirá um token de estado, que pode ser um _skipToken_ (em um cabeçalho de resposta _ \@ OData. Nextlink_ ) ou um _deltaToken_ (em um cabeçalho de resposta _ \@ OData. deltaLink_ ).
+Se a solicitação for bem-sucedida, a resposta incluirá um token de estado, que pode ser um _skipToken_ (em um cabeçalho de resposta _\@ OData. Nextlink_ ) ou um _deltaToken_ (em um cabeçalho de resposta _\@ OData. deltaLink_ ).
 Respectivamente, eles indicam se você deve continuar com a rodada ou se concluiu a obter todas as alterações para essa rodada.
 
-A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _ \@ OData. nextLink_ .
+A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _\@ OData. nextLink_ .
 
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. 
 <!-- {
@@ -454,7 +454,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Confira também
 
 - [Consulta delta do Microsoft Graph](/graph/delta-query-overview)
 - [Obter as alterações incrementais para os eventos em uma pasta](/graph/delta-query-events)

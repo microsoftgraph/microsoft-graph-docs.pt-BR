@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 641345f403205c7babed381a393b715d44f5e3f9
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 3afc38729e2d99632ee63a1d7fd119eaa17d04f1
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848212"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932436"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -29,7 +29,7 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Incompatível | Incompatível | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage. Read. Group *, ChannelMessage. Read. All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Incompatível | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
@@ -41,7 +41,8 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Incompatível |
+|[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Sem suporte |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -158,6 +159,7 @@ Estes são os valores válidos para a Propriedade Resource.
 |[Lista](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Email](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Presença](../resources/presence.md)| `/communications/presences/{id}` (usuário único), `/communications/presences?$filter=id in ({id},{id}…)` (vários usuários)|
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Usuários](../resources/user.md)|`users`|
 |[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 

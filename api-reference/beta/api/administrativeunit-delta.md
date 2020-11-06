@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f96254db5e9d6f4394f45e1b1c266016258f950d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f42f795d1182fb506fa167cc07c2d10d0cdd17e6
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991768"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932350"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: Delta
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |administrativeunit | AdministrativeUnit. Read. All, Directory. Read. All, AdministrativeUnit. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,7 +46,7 @@ As alterações de controle provocam uma rodada de uma ou mais chamadas de funç
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **Delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de recursos. |
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -87,7 +87,7 @@ Para obter detalhes e um exemplo, consulte [usando a consulta Delta](/graph/delt
   "name": "administrativeunit_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeunits/delta
+GET https://graph.microsoft.com/beta/administrativeUnits/delta
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/administrativeunit-delta-csharp-snippets.md)]

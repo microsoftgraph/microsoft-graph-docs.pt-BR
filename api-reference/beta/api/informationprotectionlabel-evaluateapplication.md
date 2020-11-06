@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b14ea3417fefa4c38f86313e27b55619446331bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1aa6554dd3590e85fbd7327a70b545a0f883b7bb
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001509"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932434"
 ---
 # <a name="informationprotectionlabel-evaluateapplication"></a>informationProtectionLabel: evaluateApplication
 
@@ -44,8 +44,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST me/informationprotection/policy/labels/evaluateApplication
+POST me/informationProtection/policy/labels/evaluateApplication
 POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 ```
 
@@ -63,7 +63,7 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autorização | {token} de portador. Obrigatório.                                                                                                                                             |
 | Content-type  | application/json. Obrigatório.                                                                                                                                           |
-| Agente de usuário    | Descreve o nome do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
+| User-Agent    | Descreve o nome do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -93,7 +93,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateApplication
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateApplication
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 

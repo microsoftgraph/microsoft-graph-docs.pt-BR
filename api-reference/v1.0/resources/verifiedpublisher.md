@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jesakowi
-ms.openlocfilehash: 0285eb767a2fc4606dceaf74693a570f14dd6612
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: d998b8bf3e5ab4ad253e31a96794e8e531e6803e
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471501"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921896"
 ---
 # <a name="verifiedpublisher-resource-type"></a>tipo de recurso verifiedPublisher
 
 Namespace: microsoft.graph
 
-Representa o fornecedor verificado do [aplicativo](application.md). Para obter mais informações, consulte [Publisher Verification](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview). Os editores verificados são definidos usando o [setVerifiedPublisher](../api/application-setverifiedpublisher.md) e só podem ser removidos usando o [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
+Representa o fornecedor verificado do [aplicativo](application.md). Para obter mais informações, consulte [Publisher Verification](/azure/active-directory/develop/publisher-verification-overview). Os editores verificados são definidos usando o [setVerifiedPublisher](../api/application-setverifiedpublisher.md) e só podem ser removidos usando o [unsetVerifiedPublisher](../api/application-unsetverifiedpublisher.md).
 
 ## <a name="properties"></a>Propriedades
 
