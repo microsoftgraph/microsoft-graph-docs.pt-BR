@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2fe66ab3259cc6850c75badaee9cf7ccba72e689
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef244ecab046800ccd877d4c3f26414fa8ce1de9
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028488"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932497"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: Delta
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /oauth2permissiongrants/delta
+GET /oauth2PermissionGrants/delta
 ```
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
@@ -80,7 +80,7 @@ Para obter detalhes, consulte [usando a consulta Delta](/graph/delta-query-overv
   "name": "oauth2permissiongrant_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/oauth2permissiongrants/delta
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/delta
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/oauth2permissiongrant-delta-csharp-snippets.md)]

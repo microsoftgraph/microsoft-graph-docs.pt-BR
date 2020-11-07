@@ -4,12 +4,12 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 888194fefef2e04f60ae802d5f8d710ba4388a97
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 3f1aa2a88a6852e39dbcf791997e19cc214086e1
+ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288928"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945105"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
@@ -84,7 +84,7 @@ Para as guias de biblioteca de documentos, o `teamsAppId` é `com.microsoft.team
 
 ### <a name="example-create-a-configured-document-library-tab"></a>Exemplo: criar uma guia de biblioteca de documentos configurada
 
-O exemplo a seguir criar uma guia configurada do Word.
+O exemplo a seguir cria uma guia de biblioteca de documentos configurada.
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs

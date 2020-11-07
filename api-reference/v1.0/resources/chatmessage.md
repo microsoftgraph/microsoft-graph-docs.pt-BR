@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: a3d994379b3b15170ff490433827eda79c18d4f7
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 16bcd870ba8d4b97b5951fefab538eb6b6669635
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849190"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932574"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -27,7 +27,7 @@ Representa uma mensagem de chat individual dentro de um [canal](./channel.md) ou
 |[Obter chatMessages em um Delta de canal](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Obter mensagens de chat incrementais em um canal. |
 |[Criar assinatura para novas mensagens de canal](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Ouvir mensagens de canal novas e editadas e reações para elas. |
 |[Obter canal chat](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Obtenha uma única mensagem de chat raiz de um canal.|
-|[Criar chatMessage em um canal](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
+|[Criar chatMessage em um canal](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
 |[Atualizar chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Atualizar a propriedade **policyViolation** de uma mensagem de chat.|
 |**Respostas de mensagens de canal**| | |
 |[Listar respostas a um chat](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| Lista de todas as respostas para uma mensagem de chat no canal.|
@@ -93,7 +93,7 @@ Veja a seguir uma representação JSON do recurso.
   "summary": "string",
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
-   "importance": "string",
+  "importance": "string",
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "locale": "string"
 }
