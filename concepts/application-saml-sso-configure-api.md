@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0be3a07c2dec554c25afcb5c228bc392615c9964
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f9efbebb2f0756534fdac6085f1c77428e66e0b9
+ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405362"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945112"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>Automação da configuração do aplicativo de SSO baseado em SAML com o Microsoft Graph API
 
@@ -225,7 +225,7 @@ Use a resposta da chamada anterior para recuperar e salvar a ID de objeto do apl
 
 Neste exemplo, você definirá o `saml` como o modo de logon único na [tipo de recurso de servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Outras propriedades de SSO do SAML que você pode configurar são: `notificationEmailAddresses`, `loginUrl`e `samlSingleSignOnSettings.relayState`.
 
-Antes dessa consulta funcionar, você precisará fornecer consentimento na guia **Modificar permissões** no Graph Explorer. Além disso, certifique-se de que você está usando a ID do** servicePrincipal** que você obteve anteriormente.
+Antes dessa consulta funcionar, você precisará fornecer consentimento na guia **Modificar permissões** no Graph Explorer. Além disso, certifique-se de que você está usando a ID do **servicePrincipal** que você obteve anteriormente.
 
 #### <a name="request"></a>Solicitação
 
@@ -819,6 +819,11 @@ Para saber mais, confira o [appRoleAssignment](/graph/api/resources/approleassig
 Use a URL a seguir para obter os metadados do SAML do Azure AD para o aplicativo específico configurado. Os metadados contêm informações como o certificado de assinatura, o Azure AD entityID e o Azure AD SingleSignOnService, entre outras.
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
+
+> [!NOTE]
+> O aplicativo deve ser capaz de analisar a marca de ordem de byte presente nos dados XML de metadados de federação renderizados usando `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`. A marca de ordem de byte é representada como um caractere ASCII `»¿` e em Hex é representada como `EF BB BF` ao revisar os dados XML.
+
+ 
 
 ## <a name="next-steps"></a>Próximas etapas
 - [Use as APIs do Microsoft Graph para configurar o provisionamento de usuário](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
