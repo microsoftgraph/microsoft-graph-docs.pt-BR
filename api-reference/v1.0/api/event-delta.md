@@ -1,16 +1,16 @@
 ---
 title: 'evento: delta'
-description: 'Obtém um conjunto de eventos que foram adicionados, excluídos ou atualizado em um**calendarView** (um intervalo de eventos) '
+description: 'Obtém um conjunto de eventos que foram adicionados, excluídos ou atualizado em um **calendarView** (um intervalo de eventos) '
 localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ce6f029f75014bba95df11a1c1b319d8e9859e21
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: b1b7cf1c502b54c258f7e657881b53749548758a
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192578"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932427"
 ---
 # <a name="event-delta"></a>evento: delta
 
@@ -70,7 +70,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma cole�
 
 O exemplo a seguir mostra como fazer uma única chamada de função **delta** e limitar o número máximo de eventos no corpo da resposta a 2.
 
-Para controlar as alterações em um modo de exibição de calendário, você faz uma ou mais chamadas de função **delta**, com os [tokens de estado](/graph/delta-query-overview) apropriados, para obter o conjunto de alterações incrementais desde a última consulta delta. 
+Para controlar as alterações em um modo de exibição de calendário, você faz uma ou mais chamadas de função **delta** , com os [tokens de estado](/graph/delta-query-overview) apropriados, para obter o conjunto de alterações incrementais desde a última consulta delta. 
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -99,7 +99,7 @@ Prefer: odata.maxpagesize=2
 
 
 ##### <a name="response"></a>Resposta
-Se a solicitação for bem-sucedida, a resposta incluiria um token de estado, que é um _skipToken_ (em um cabeçalho de resposta _@odata.nextLink_) ou um _deltaToken_ (em um cabeçalho de resposta _@odata.deltaLink_). Respectivamente, elas indicam se você deverá continuar com a série ou se já concluiu a obtenção de todas as alterações dessa série.
+Se a solicitação for bem-sucedida, a resposta incluiria um token de estado, que é um _skipToken_ (em um cabeçalho de resposta _@odata.nextLink_ ) ou um _deltaToken_ (em um cabeçalho de resposta _@odata.deltaLink_ ). Respectivamente, elas indicam se você deverá continuar com a série ou se já concluiu a obtenção de todas as alterações dessa série.
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
@@ -134,7 +134,7 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Confira também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](/graph/delta-query-overview)
 - [Obter as alterações incrementais para os eventos em um calendário](/graph/delta-query-events)

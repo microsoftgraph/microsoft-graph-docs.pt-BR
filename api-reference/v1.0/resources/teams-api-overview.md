@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: a8d844ff2f0f6ba132af4a84b2bdca91c286a7c8
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 25ee86b38e1dcb858a3a752a6d1b706863f0158d
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581684"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932483"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -28,7 +28,7 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que
 |[teamsTab](../resources/teamstab.md) |[Listar](../api/teamstab-list.md), [criar](../api/teamstab-add.md), [ler](../api/teamstab-get.md), [atualizar](../api/teamstab-update.md), [excluir](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[Listar](../api/teamsapp-list.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/teamsappinstallation-list.md), [instalar](../api/teamsappinstallation-add.md), [atualizar](../api/teamsappinstallation-delete.md), [remover](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../resources/chatmessage.md)| [send](../api/channel-post-messages.md) |
+|[chatMessage](../resources/chatmessage.md)| [send](../api/channel-post-message.md) |
 |[call](../resources/call.md)| [Responder](../api/call-answer.md), [rejeitar](../api/call-reject.md), [redirecionar](../api/call-redirect.md), [ativar mudo](../api/call-mute.md), [desfazer ativar mudo](../api/call-unmute.md), [alterar a função de compartilhamento de tela](../api/call-changescreensharingrole.md), [listar participantes](../api/call-list-participants.md), [convidar participantes](../api/participant-invite.md) |
 |[cronograma](../resources/schedule.md)| [Criar ou substituir](../api/team-put-schedule.md), [obter](../api/schedule-get.md), [compartilhar](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Criar](../api/schedule-post-schedulinggroups.md), [Listar](../api/schedule-list-schedulinggroups.md), [Obter](../api/schedulinggroup-get.md), [Substituir](../api/schedulinggroup-put.md), [Excluir](../api/schedulinggroup-delete.md) |
@@ -109,7 +109,7 @@ Se nenhum desses usuários estiver conectado ao aplicativo/site do Microsoft Tea
 
 Se seu aplicativo sonda para ver se um recurso foi alterado, você só poderá fazer isso uma vez por dia. ([teamsAsyncOperation](teamsasyncoperation.md) é uma exceção no sentido de que é foi desenvolvida para ser sondada frequentemente.) Se você precisar saber sobre mudanças com mais frequência que esta, você deve [criar uma assinatura](../api/subscription-post-subscriptions.md) para esse recurso e receber notificações de alteração (webhooks). Caso não encontre suporte para o tipo de assinatura necessária, recomendamos que você faça comentários por meio do [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
 
-Ao pesquisar novas mensagens, você deve especificar um intervalo de datas onde isso for possível.  Para obter detalhes, consulte [obter mensagens de canal delta](/graph/api/chatmessage-delta?view=graph-rest-beta).
+Ao pesquisar novas mensagens, você deve especificar um intervalo de datas onde isso for possível.  Para obter detalhes, consulte [obter mensagens de canal delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true).
 
 As sondagem está executando uma operação OBTER em um recurso repetidamente para ver se o recurso foi alterado. Você tem permissão para obter o mesmo recurso várias vezes por dia, desde que não seja uma sondagem. Por exemplo, está tudo bem se você usar OBTER /me/joinedTeams toda vez que o usuário visita/atualiza sua página da web, mas não é certo usar OBTER /me/joinedTeams em um loop a cada 30 segundos para atualizar essa página da web.
 
