@@ -5,30 +5,30 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 94017581dd76297fb3c55bce7ef82ea966144b63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c108934020d3eddf2af8f5af1fcf7dd7873d61b8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987369"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959673"
 ---
-# <a name="list-participants"></a><span data-ttu-id="cabbf-103">Listar participantes</span><span class="sxs-lookup"><span data-stu-id="cabbf-103">List participants</span></span>
+# <a name="list-participants"></a><span data-ttu-id="4f901-103">Listar participantes</span><span class="sxs-lookup"><span data-stu-id="4f901-103">List participants</span></span>
 
-<span data-ttu-id="cabbf-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cabbf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4f901-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4f901-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cabbf-105">Recupere uma lista de objetos participantes na chamada.</span><span class="sxs-lookup"><span data-stu-id="cabbf-105">Retrieve a list of participant objects in the call.</span></span>
+<span data-ttu-id="4f901-105">Recupere uma lista de objetos participantes na chamada.</span><span class="sxs-lookup"><span data-stu-id="4f901-105">Retrieve a list of participant objects in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cabbf-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="cabbf-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4f901-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4f901-106">Permissions</span></span>
 
-| <span data-ttu-id="cabbf-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cabbf-107">Permission type</span></span> | <span data-ttu-id="cabbf-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cabbf-108">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4f901-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4f901-107">Permission type</span></span> | <span data-ttu-id="4f901-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4f901-108">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="cabbf-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cabbf-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="cabbf-110">Não suportado</span><span class="sxs-lookup"><span data-stu-id="cabbf-110">Not Supported</span></span>        |
-| <span data-ttu-id="cabbf-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cabbf-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cabbf-112">Não suportado</span><span class="sxs-lookup"><span data-stu-id="cabbf-112">Not Supported</span></span>        |
-| <span data-ttu-id="cabbf-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cabbf-113">Application</span></span>     | <span data-ttu-id="cabbf-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="cabbf-114">None</span></span>                                        |
+| <span data-ttu-id="4f901-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4f901-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="4f901-110">Não suportado</span><span class="sxs-lookup"><span data-stu-id="4f901-110">Not Supported</span></span>        |
+| <span data-ttu-id="4f901-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4f901-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4f901-112">Não suportado</span><span class="sxs-lookup"><span data-stu-id="4f901-112">Not Supported</span></span>        |
+| <span data-ttu-id="4f901-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4f901-113">Application</span></span>     | <span data-ttu-id="4f901-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4f901-114">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="cabbf-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cabbf-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4f901-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4f901-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,31 +36,31 @@ ms.locfileid: "47987369"
 GET /app/calls/{id}/participants
 GET /communications/calls/{id}/participants
 ```
-> <span data-ttu-id="cabbf-116">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="cabbf-116">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="cabbf-117">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="cabbf-117">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="4f901-116">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="4f901-116">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="4f901-117">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="4f901-117">Going forward, use the `/communications` path.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="cabbf-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cabbf-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4f901-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="4f901-118">Optional query parameters</span></span>
 
-<span data-ttu-id="cabbf-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="cabbf-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="4f901-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="4f901-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cabbf-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cabbf-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4f901-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4f901-120">Request headers</span></span>
 
-| <span data-ttu-id="cabbf-121">Nome</span><span class="sxs-lookup"><span data-stu-id="cabbf-121">Name</span></span>          | <span data-ttu-id="cabbf-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="cabbf-122">Description</span></span>               |
+| <span data-ttu-id="4f901-121">Nome</span><span class="sxs-lookup"><span data-stu-id="4f901-121">Name</span></span>          | <span data-ttu-id="4f901-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="4f901-122">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="cabbf-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="cabbf-123">Authorization</span></span> | <span data-ttu-id="cabbf-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cabbf-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4f901-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="4f901-123">Authorization</span></span> | <span data-ttu-id="4f901-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4f901-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cabbf-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cabbf-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4f901-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4f901-126">Request body</span></span>
 
-<span data-ttu-id="cabbf-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cabbf-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="4f901-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4f901-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cabbf-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="cabbf-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4f901-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f901-128">Response</span></span>
 
-<span data-ttu-id="cabbf-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [participantes](../resources/participant.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cabbf-129">If successful, this method returns a `200 OK` response code and collection of [participant](../resources/participant.md) objects in the response body.</span></span>
+<span data-ttu-id="4f901-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [participantes](../resources/participant.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4f901-129">If successful, this method returns a `200 OK` response code and collection of [participant](../resources/participant.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cabbf-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cabbf-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4f901-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4f901-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="cabbf-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cabbf-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="4f901-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4f901-131">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="cabbf-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="cabbf-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4f901-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="4f901-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-participants"
@@ -69,23 +69,27 @@ GET /communications/calls/{id}/participants
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants
 ```
-# <a name="c"></a>[<span data-ttu-id="cabbf-133">C#</span><span class="sxs-lookup"><span data-stu-id="cabbf-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4f901-133">C#</span><span class="sxs-lookup"><span data-stu-id="4f901-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participants-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cabbf-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cabbf-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4f901-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4f901-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-participants-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cabbf-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cabbf-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4f901-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4f901-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-participants-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="4f901-136">Java</span><span class="sxs-lookup"><span data-stu-id="4f901-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-participants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="response"></a><span data-ttu-id="cabbf-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="cabbf-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="4f901-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f901-137">Response</span></span>
 
 <!-- {
   "blockType": "response",

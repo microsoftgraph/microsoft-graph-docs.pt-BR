@@ -5,34 +5,34 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cf1d09a2ea0832bfc4e6ab065f47b525a715b742
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a977126c2360d730b553136754f95d69bc710f8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987302"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959526"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="85608-103">Call: Redirect</span><span class="sxs-lookup"><span data-stu-id="85608-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="fa3f6-103">Call: Redirect</span><span class="sxs-lookup"><span data-stu-id="fa3f6-103">call: redirect</span></span>
 
-<span data-ttu-id="85608-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="85608-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fa3f6-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fa3f6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="85608-105">Redirecione uma chamada de entrada que ainda não foi [respondida](./call-answer.md) ou [rejeitada](./call-reject.md) .</span><span class="sxs-lookup"><span data-stu-id="85608-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="85608-106">Os termos "redirecionando" e "encaminhando" uma chamada são usados de forma intercambiável.</span><span class="sxs-lookup"><span data-stu-id="85608-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
+<span data-ttu-id="fa3f6-105">Redirecione uma chamada de entrada que ainda não foi [respondida](./call-answer.md) ou [rejeitada](./call-reject.md) .</span><span class="sxs-lookup"><span data-stu-id="fa3f6-105">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="fa3f6-106">Os termos "redirecionando" e "encaminhando" uma chamada são usados de forma intercambiável.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-106">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
 
-<span data-ttu-id="85608-107">O bot deve redirecionar a chamada antes que a chamada expire. O valor de tempo limite atual é de 15 segundos.</span><span class="sxs-lookup"><span data-stu-id="85608-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
+<span data-ttu-id="fa3f6-107">O bot deve redirecionar a chamada antes que a chamada expire. O valor de tempo limite atual é de 15 segundos.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-107">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="85608-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="85608-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fa3f6-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="fa3f6-108">Permissions</span></span>
 
-<span data-ttu-id="85608-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="85608-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fa3f6-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fa3f6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="85608-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="85608-111">Permission type</span></span> | <span data-ttu-id="85608-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="85608-112">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="fa3f6-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fa3f6-111">Permission type</span></span> | <span data-ttu-id="fa3f6-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fa3f6-112">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="85608-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="85608-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="85608-114">Não suportado</span><span class="sxs-lookup"><span data-stu-id="85608-114">Not Supported</span></span>                |
-| <span data-ttu-id="85608-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="85608-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="85608-116">Não suportado</span><span class="sxs-lookup"><span data-stu-id="85608-116">Not Supported</span></span>                |
-| <span data-ttu-id="85608-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="85608-117">Application</span></span>     | <span data-ttu-id="85608-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="85608-118">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="fa3f6-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fa3f6-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="fa3f6-114">Não suportado</span><span class="sxs-lookup"><span data-stu-id="fa3f6-114">Not Supported</span></span>                |
+| <span data-ttu-id="fa3f6-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fa3f6-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fa3f6-116">Não suportado</span><span class="sxs-lookup"><span data-stu-id="fa3f6-116">Not Supported</span></span>                |
+| <span data-ttu-id="fa3f6-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fa3f6-117">Application</span></span>     | <span data-ttu-id="fa3f6-118">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="fa3f6-118">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="85608-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="85608-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fa3f6-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fa3f6-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,38 +40,38 @@ ms.locfileid: "47987302"
 POST /app/calls/{id}/redirect
 POST /communications/calls/{id}/redirect
 ```
-> <span data-ttu-id="85608-120">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="85608-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="85608-121">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="85608-121">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="fa3f6-120">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="fa3f6-121">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-121">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="85608-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="85608-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fa3f6-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fa3f6-122">Request headers</span></span>
 
-| <span data-ttu-id="85608-123">Nome</span><span class="sxs-lookup"><span data-stu-id="85608-123">Name</span></span>          | <span data-ttu-id="85608-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="85608-124">Description</span></span>               |
+| <span data-ttu-id="fa3f6-123">Nome</span><span class="sxs-lookup"><span data-stu-id="fa3f6-123">Name</span></span>          | <span data-ttu-id="fa3f6-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="fa3f6-124">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="85608-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="85608-125">Authorization</span></span> | <span data-ttu-id="85608-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="85608-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fa3f6-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="fa3f6-125">Authorization</span></span> | <span data-ttu-id="fa3f6-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="85608-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="85608-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fa3f6-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fa3f6-128">Request body</span></span>
 
-<span data-ttu-id="85608-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="85608-129">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="fa3f6-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="85608-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="85608-130">Parameter</span></span>      | <span data-ttu-id="85608-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="85608-131">Type</span></span>    |<span data-ttu-id="85608-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="85608-132">Description</span></span>|
+| <span data-ttu-id="fa3f6-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="fa3f6-130">Parameter</span></span>      | <span data-ttu-id="fa3f6-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="fa3f6-131">Type</span></span>    |<span data-ttu-id="fa3f6-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="fa3f6-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="85608-133">targets</span><span class="sxs-lookup"><span data-stu-id="85608-133">targets</span></span>|<span data-ttu-id="85608-134">conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="85608-134">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="85608-135">Os participantes de destino da operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="85608-135">The target participants of the redirect operation.</span></span> <span data-ttu-id="85608-136">Se mais de um destino for especificado, será uma chamada toque simultâneo.</span><span class="sxs-lookup"><span data-stu-id="85608-136">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="85608-137">Isso significa que todos os destinos serão variados ao mesmo tempo e apenas o primeiro destino que escolher será conectado.</span><span class="sxs-lookup"><span data-stu-id="85608-137">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="85608-138">Oferecemos suporte para até 25 metas para o toque simultâneo.</span><span class="sxs-lookup"><span data-stu-id="85608-138">We support up to 25 targets for simulring.</span></span>
-|<span data-ttu-id="85608-139">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="85608-139">targetDisposition</span></span>|<span data-ttu-id="85608-140">String</span><span class="sxs-lookup"><span data-stu-id="85608-140">String</span></span>|<span data-ttu-id="85608-141">Preterido Os valores possíveis são: `default` , `simultaneousRing` , `forward` .</span><span class="sxs-lookup"><span data-stu-id="85608-141">(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`.</span></span> <span data-ttu-id="85608-142">Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada ou chamada de toque simultâneo do número de destinos fornecidos.</span><span class="sxs-lookup"><span data-stu-id="85608-142">This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.</span></span>|
-|<span data-ttu-id="85608-143">timeout</span><span class="sxs-lookup"><span data-stu-id="85608-143">timeout</span></span>|<span data-ttu-id="85608-144">Int32</span><span class="sxs-lookup"><span data-stu-id="85608-144">Int32</span></span>|<span data-ttu-id="85608-145">O tempo limite (em segundos) para a operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="85608-145">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="85608-146">O intervalo do valor de tempo limite é entre 15 e 90 segundos, inclusive.</span><span class="sxs-lookup"><span data-stu-id="85608-146">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="85608-147">O valor de tempo limite padrão é de 55 segundos para um destino e 60 segundos para vários destinos (sujeito a alterações).</span><span class="sxs-lookup"><span data-stu-id="85608-147">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
-|<span data-ttu-id="85608-148">maskCallee</span><span class="sxs-lookup"><span data-stu-id="85608-148">maskCallee</span></span>|<span data-ttu-id="85608-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="85608-149">Boolean</span></span>|<span data-ttu-id="85608-150">Indica se o receptor deve ser oculto do chamador.</span><span class="sxs-lookup"><span data-stu-id="85608-150">Indicates whether the callee is to be hidden from the caller.</span></span> <span data-ttu-id="85608-151">Se true, a identidade do receptor é a identidade do bot.</span><span class="sxs-lookup"><span data-stu-id="85608-151">If true, then the callee identity is the bot identity.</span></span> <span data-ttu-id="85608-152">Padrão: false.</span><span class="sxs-lookup"><span data-stu-id="85608-152">Default: false.</span></span>|
-|<span data-ttu-id="85608-153">maskCaller</span><span class="sxs-lookup"><span data-stu-id="85608-153">maskCaller</span></span>|<span data-ttu-id="85608-154">Boolean</span><span class="sxs-lookup"><span data-stu-id="85608-154">Boolean</span></span>|<span data-ttu-id="85608-155">Indica se o chamador deve ser oculto do receptor.</span><span class="sxs-lookup"><span data-stu-id="85608-155">Indicates whether the caller is to be hidden from the callee.</span></span> <span data-ttu-id="85608-156">Se true, a identidade do chamador é a identidade do bot.</span><span class="sxs-lookup"><span data-stu-id="85608-156">If true, then the caller identity is the bot identity.</span></span> <span data-ttu-id="85608-157">Padrão: false.</span><span class="sxs-lookup"><span data-stu-id="85608-157">Default: false.</span></span>|
-|<span data-ttu-id="85608-158">callbackUri</span><span class="sxs-lookup"><span data-stu-id="85608-158">callbackUri</span></span>|<span data-ttu-id="85608-159">String</span><span class="sxs-lookup"><span data-stu-id="85608-159">String</span></span>|<span data-ttu-id="85608-160">Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores.</span><span class="sxs-lookup"><span data-stu-id="85608-160">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="85608-161">Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar.</span><span class="sxs-lookup"><span data-stu-id="85608-161">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="85608-162">Deve ser `https` .</span><span class="sxs-lookup"><span data-stu-id="85608-162">This must be `https`.</span></span>|
+|<span data-ttu-id="fa3f6-133">targets</span><span class="sxs-lookup"><span data-stu-id="fa3f6-133">targets</span></span>|<span data-ttu-id="fa3f6-134">conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="fa3f6-134">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="fa3f6-135">Os participantes de destino da operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-135">The target participants of the redirect operation.</span></span> <span data-ttu-id="fa3f6-136">Se mais de um destino for especificado, será uma chamada toque simultâneo.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-136">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="fa3f6-137">Isso significa que todos os destinos serão variados ao mesmo tempo e apenas o primeiro destino que escolher será conectado.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-137">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="fa3f6-138">Oferecemos suporte para até 25 metas para o toque simultâneo.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-138">We support up to 25 targets for simulring.</span></span>
+|<span data-ttu-id="fa3f6-139">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="fa3f6-139">targetDisposition</span></span>|<span data-ttu-id="fa3f6-140">String</span><span class="sxs-lookup"><span data-stu-id="fa3f6-140">String</span></span>|<span data-ttu-id="fa3f6-141">Preterido Os valores possíveis são: `default` , `simultaneousRing` , `forward` .</span><span class="sxs-lookup"><span data-stu-id="fa3f6-141">(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`.</span></span> <span data-ttu-id="fa3f6-142">Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada ou chamada de toque simultâneo do número de destinos fornecidos.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-142">This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.</span></span>|
+|<span data-ttu-id="fa3f6-143">timeout</span><span class="sxs-lookup"><span data-stu-id="fa3f6-143">timeout</span></span>|<span data-ttu-id="fa3f6-144">Int32</span><span class="sxs-lookup"><span data-stu-id="fa3f6-144">Int32</span></span>|<span data-ttu-id="fa3f6-145">O tempo limite (em segundos) para a operação de redirecionamento.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-145">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="fa3f6-146">O intervalo do valor de tempo limite é entre 15 e 90 segundos, inclusive.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-146">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="fa3f6-147">O valor de tempo limite padrão é de 55 segundos para um destino e 60 segundos para vários destinos (sujeito a alterações).</span><span class="sxs-lookup"><span data-stu-id="fa3f6-147">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
+|<span data-ttu-id="fa3f6-148">maskCallee</span><span class="sxs-lookup"><span data-stu-id="fa3f6-148">maskCallee</span></span>|<span data-ttu-id="fa3f6-149">Booliano</span><span class="sxs-lookup"><span data-stu-id="fa3f6-149">Boolean</span></span>|<span data-ttu-id="fa3f6-150">Indica se o receptor deve ser oculto do chamador.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-150">Indicates whether the callee is to be hidden from the caller.</span></span> <span data-ttu-id="fa3f6-151">Se true, a identidade do receptor é a identidade do bot.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-151">If true, then the callee identity is the bot identity.</span></span> <span data-ttu-id="fa3f6-152">Padrão: false.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-152">Default: false.</span></span>|
+|<span data-ttu-id="fa3f6-153">maskCaller</span><span class="sxs-lookup"><span data-stu-id="fa3f6-153">maskCaller</span></span>|<span data-ttu-id="fa3f6-154">Booliano</span><span class="sxs-lookup"><span data-stu-id="fa3f6-154">Boolean</span></span>|<span data-ttu-id="fa3f6-155">Indica se o chamador deve ser oculto do receptor.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-155">Indicates whether the caller is to be hidden from the callee.</span></span> <span data-ttu-id="fa3f6-156">Se true, a identidade do chamador é a identidade do bot.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-156">If true, then the caller identity is the bot identity.</span></span> <span data-ttu-id="fa3f6-157">Padrão: false.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-157">Default: false.</span></span>|
+|<span data-ttu-id="fa3f6-158">callbackUri</span><span class="sxs-lookup"><span data-stu-id="fa3f6-158">callbackUri</span></span>|<span data-ttu-id="fa3f6-159">String</span><span class="sxs-lookup"><span data-stu-id="fa3f6-159">String</span></span>|<span data-ttu-id="fa3f6-160">Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-160">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="fa3f6-161">Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-161">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="fa3f6-162">Deve ser `https` .</span><span class="sxs-lookup"><span data-stu-id="fa3f6-162">This must be `https`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="85608-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="85608-163">Response</span></span>
-<span data-ttu-id="85608-164">Se tiver êxito, este método retornará um código de resposta `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="85608-164">If successful, this method returns a `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="fa3f6-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="fa3f6-163">Response</span></span>
+<span data-ttu-id="fa3f6-164">Se tiver êxito, este método retornará um código de resposta `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-164">If successful, this method returns a `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="85608-165">Exemplos</span><span class="sxs-lookup"><span data-stu-id="85608-165">Examples</span></span>
-<span data-ttu-id="85608-166">Estes exemplos abordarão um fluxo de trabalho de uma notificação de chamada de entrada e como essa chamada será redirecionada.</span><span class="sxs-lookup"><span data-stu-id="85608-166">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
+## <a name="examples"></a><span data-ttu-id="fa3f6-165">Exemplos</span><span class="sxs-lookup"><span data-stu-id="fa3f6-165">Examples</span></span>
+<span data-ttu-id="fa3f6-166">Estes exemplos abordarão um fluxo de trabalho de uma notificação de chamada de entrada e como essa chamada será redirecionada.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-166">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
 
-> <span data-ttu-id="85608-167">**Observação:** Os objetos Response mostrados aqui podem ser reduzidos para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="85608-167">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="85608-168">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="85608-168">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="fa3f6-167">**Observação:** Os objetos Response mostrados aqui podem ser reduzidos para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-167">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="fa3f6-168">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fa3f6-168">All the properties will be returned from an actual call.</span></span>
 
-### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="85608-169">Exemplo 1: encaminhar uma chamada para um destino</span><span class="sxs-lookup"><span data-stu-id="85608-169">Example 1: Forward a Call to a Target</span></span>
+### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="fa3f6-169">Exemplo 1: encaminhar uma chamada para um destino</span><span class="sxs-lookup"><span data-stu-id="fa3f6-169">Example 1: Forward a Call to a Target</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="85608-170">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="85608-170">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="fa3f6-170">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="fa3f6-170">Notification - incoming</span></span>
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -123,9 +123,9 @@ POST /communications/calls/{id}/redirect
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="85608-171">Solicitação</span><span class="sxs-lookup"><span data-stu-id="85608-171">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="fa3f6-171">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fa3f6-171">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="85608-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="85608-172">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fa3f6-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="fa3f6-172">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
@@ -151,21 +151,25 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="85608-173">C#</span><span class="sxs-lookup"><span data-stu-id="85608-173">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fa3f6-173">C#</span><span class="sxs-lookup"><span data-stu-id="fa3f6-173">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="85608-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="85608-174">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fa3f6-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fa3f6-174">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="85608-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="85608-175">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fa3f6-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fa3f6-175">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="fa3f6-176">Java</span><span class="sxs-lookup"><span data-stu-id="fa3f6-176">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="85608-176">Resposta</span><span class="sxs-lookup"><span data-stu-id="85608-176">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="fa3f6-177">Resposta</span><span class="sxs-lookup"><span data-stu-id="fa3f6-177">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -174,7 +178,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---terminated"></a><span data-ttu-id="85608-177">Notificação-terminada</span><span class="sxs-lookup"><span data-stu-id="85608-177">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="fa3f6-178">Notificação-terminada</span><span class="sxs-lookup"><span data-stu-id="fa3f6-178">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -236,9 +240,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="85608-178">Exemplo 2: encaminhar uma chamada para vários destinos com toque simultâneo</span><span class="sxs-lookup"><span data-stu-id="85608-178">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="fa3f6-179">Exemplo 2: encaminhar uma chamada para vários destinos com toque simultâneo</span><span class="sxs-lookup"><span data-stu-id="fa3f6-179">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="85608-179">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="85608-179">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="fa3f6-180">Notificação-entrada</span><span class="sxs-lookup"><span data-stu-id="fa3f6-180">Notification - incoming</span></span>
 
 <!-- {
   "blockType": "example", 
@@ -300,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="85608-180">Solicitação</span><span class="sxs-lookup"><span data-stu-id="85608-180">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="fa3f6-181">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fa3f6-181">Request</span></span>
 
 <!-- {
   "blockType": "ignored", 
@@ -343,7 +347,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="85608-181">Resposta</span><span class="sxs-lookup"><span data-stu-id="85608-181">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="fa3f6-182">Resposta</span><span class="sxs-lookup"><span data-stu-id="fa3f6-182">Response</span></span>
 
 <!-- {
   "blockType": "response", 
@@ -354,7 +358,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="85608-182">Notificação-terminada</span><span class="sxs-lookup"><span data-stu-id="85608-182">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="fa3f6-183">Notificação-terminada</span><span class="sxs-lookup"><span data-stu-id="fa3f6-183">Notification - terminated</span></span>
 
 <!-- {
   "blockType": "example", 
