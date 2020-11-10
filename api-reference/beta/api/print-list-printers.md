@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 6e50017daad5734f85fa7c193d80a8e5a82cec54
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: e004d62626eb8e2c090198c556bbcd3263a7821a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373932"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967066"
 ---
 # <a name="list-printers"></a>Lista de impressoras
 
@@ -29,7 +29,7 @@ Para usar o serviço de impressão universal, o usuário ou o locatário do apli
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer. Read. All, Printer. ReadWrite. All, Printer. FullControl. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Sem suporte. |
+|Application| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/print/printers
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

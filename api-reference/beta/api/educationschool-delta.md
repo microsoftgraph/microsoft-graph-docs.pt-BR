@@ -5,16 +5,16 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f8dc7f61d7455e5579d41d8a4e6fbf7d14ec60e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e2108faa364f15dd968a39c00afa104eef9652b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007403"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965926"
 ---
 # <a name="educationschool-delta"></a>educationSchool: Delta
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :----------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | EduRoster. ReadBasic, EduRoster. Read ou EduRoster. ReadWrite              |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                           |
-| Aplicativo                            | EduRoster. ReadBasic. All, EduRoster. Read. All ou EduRoster. WriteWrite. All |
+| Application                            | EduRoster. ReadBasic. All, EduRoster. Read. All ou EduRoster. WriteWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/education/schools/delta
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationschool-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationschool-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

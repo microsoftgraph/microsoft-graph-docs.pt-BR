@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 8b6b1d473357b88123af1c8840c3445ca811cbfd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a4851b527807c8c8787ad0fca62661a7f2c73175
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043063"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967124"
 ---
 # <a name="get-presence"></a>Obter presença
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é necessária para chamar essas APIs. Para saber 
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Presence.Read, Presence.Read.All      |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                        |
-| Aplicativo                            | Sem suporte.                        |
+| Application                            | Sem suporte.                        |
 
 ## <a name="http-requests"></a>Solicitações HTTP
 <!-- { "blockType": "ignored" } -->
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/presence
 [!INCLUDE [sample-code](../includes/snippets/objc/get-your-presence-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-your-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -127,6 +131,10 @@ GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-user-presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -179,6 +187,10 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-user-presences-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presences-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

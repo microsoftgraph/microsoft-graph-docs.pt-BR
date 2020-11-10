@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dd2dcadf0272a14222d42aaadce30c89df92ac83
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5cff82e4b9c93502aacb390925af034159aba101
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007681"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966310"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -29,7 +29,7 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All|
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
+|Application | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All| 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/educationclass-get-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationclass-get-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

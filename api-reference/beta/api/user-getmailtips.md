@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c354400caabbabcaba7f4d25ba33181d55bcf7a0
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 979ad697b781d52f1492f76d0a5eea38951c1626
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457748"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967194"
 ---
 # <a name="user-getmailtips"></a>usuário: getdicas de dicas
 
@@ -50,8 +50,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EmailAddresses|Coleção String|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
-|MailTipsOptions|Cadeia de caracteres|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` e `totalMemberCount` .|
+|EmailAddresses|Coleção de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` e `totalMemberCount` .|
 
 ## <a name="response"></a>Resposta
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmailtips-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-getmailtips-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

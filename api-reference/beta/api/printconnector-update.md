@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8662b03a40c6d659b8c50567b725513e0b8bf9af
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: b417c881db2afa1ee4a7b0d350b33d4874f8d014
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373108"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966877"
 ---
 # <a name="update-printconnector"></a>Atualizar o multiligação
 
@@ -29,7 +29,7 @@ Para usar o serviço de impressão universal, o usuário ou o locatário do apli
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| User.Read |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Nomededomíniototalmentequalificado|String|O nome de host do computador do conector.|
 |operatingSystem|String|A versão do sistema operacional do computador do conector.|
 |appVersion|String|A versão do conector.|
-|location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
+|localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [multiconnect](../resources/printConnector.md) atualizado no corpo da resposta.
@@ -91,6 +91,10 @@ Content-length: 300
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

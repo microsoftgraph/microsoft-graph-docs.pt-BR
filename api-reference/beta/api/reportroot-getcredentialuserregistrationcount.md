@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: f67bf6e840c2dd51ae7ca31bafcefee60ebde1d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f1d6bd3eaa95998ff969437048d20931023a31a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044782"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966795"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>reportRoot: getCredentialUserRegistrationCount
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getcredentialuserregistrationcount-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getcredentialuserregistrationcount-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

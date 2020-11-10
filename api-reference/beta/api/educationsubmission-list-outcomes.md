@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe51b0fae482467f2ceddbffae1537e6399ed800
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b9676e60e710ed3acd57e6719f9882f2b96d410
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007340"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965877"
 ---
 # <a name="list-outcomes"></a>Resultados de lista
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [educationOutcome](../resources/educationoutcome.md) .  Há três tipos de resultados: **educationPointsOutcome**, **educationFeedbackOutcome**e **educationRubricOutcome**.
+Recupere uma lista de objetos [educationOutcome](../resources/educationoutcome.md) .  Há três tipos de resultados: **educationPointsOutcome** , **educationFeedbackOutcome** e **educationRubricOutcome**.
 
 Um envio para uma atribuição de crédito (um que não tenha nenhum valor de ponto e nenhum amostra rubric) terá um [educationFeedbackOutcome](../resources/educationpointsoutcome.md). (Também pode retornar um [educationPointsOutcome](../resources/educationpointsoutcome.md), mas esse resultado será ignorado.)
 
@@ -28,7 +28,7 @@ Um envio para uma atribuição com um amostra rubric anexado, se o amostra rubri
 
 Um envio para uma atribuição com um amostra rubric anexado, se amostra rubric for um ponto amostra rubric, terá um [educationFeedbackOutcome](../resources/educationpointsoutcome.md), um [educationPointsOutcome] (.. /Resources/educationpointsoutcome.MD e um [educationRubricOutcome](../resources/educationrubricoutcome.md).
 
-Todos os tipos de resultado têm uma propriedade regular e publicada adequada a esse tipo de resultado; por exemplo, **pontos** e **publishedPoints**, **feedback** e **publishedFeedback**.  A propriedade regular é o valor mais recente atualizado pelo professor; a propriedade published é o valor mais recente retornado ao aluno.
+Todos os tipos de resultado têm uma propriedade regular e publicada adequada a esse tipo de resultado; por exemplo, **pontos** e **publishedPoints** , **feedback** e **publishedFeedback**.  A propriedade regular é o valor mais recente atualizado pelo professor; a propriedade published é o valor mais recente retornado ao aluno.
 
 ## <a name="permissions"></a>Permissões
 
@@ -36,8 +36,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-outcomes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-outcomes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

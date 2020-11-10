@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c7111e51662516028351adeb1a5ee08446cfaf60
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e6cc5739ff0c1ec270c6bf19bb30731cddd4de53
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007090"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965814"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Continuar a sincronização em um educationSynchronizationProfile
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
-| Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
+| Delegada (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegado (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -67,6 +67,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-educationsynchronizationprofile-resume-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-resume-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

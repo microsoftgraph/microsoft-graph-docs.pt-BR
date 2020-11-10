@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: da940e4267fe0964b179aebe6431d1836a4bdd25
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43584c15b8637be4a0e221c26b9f85d801730b22
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044813"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966797"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>reportRoot: getCredentialUsageSummary
 
@@ -44,7 +44,7 @@ Você pode usar o seguinte parâmetro de função para ajustar a resposta.
 
 | Parâmetro | Tipo | Descrição |
 |:--------- |:---- |:----------- |
-| ponto | Cadeia de caracteres | Especifica o período de tempo para o qual você precisa dos dados de uso. Por exemplo: `/reports/getCredentialUsageSummary(period='D30')`. Períodos suportados: `D1` , `D7` , e `D30` . O período não diferencia maiúsculas de minúsculas. |
+| ponto | String | Especifica o período de tempo para o qual você precisa dos dados de uso. Por exemplo: `/reports/getCredentialUsageSummary(period='D30')`. Períodos suportados: `D1` , `D7` , e `D30` . O período não diferencia maiúsculas de minúsculas. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getcredentialusagesummary-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getcredentialusagesummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

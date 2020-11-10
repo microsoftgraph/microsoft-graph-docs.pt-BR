@@ -5,16 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5d9dba365e554f317d4c085bc51e1967b7d0ab78
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e8efe5064196e179fade55704d4ea28a349fb801
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002539"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966486"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,8 +45,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Boolean| Se os envios podem ser enviados após a data de conclusão.|
-|allowStudentsToAddResourcesToSubmission|Boolean| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
+|allowLateSubmissions|Booliano| Se os envios podem ser enviados após a data de conclusão.|
+|allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. |
 |atribuir|educationAssignmentRecipient| Estudantes que obtêm a atribuição.|
 |closeDateTime|DateTimeOffset| Data em que a atribuição será fechada para envios. Este é um campo opcional que pode ser nulo se a atribuição não allowLateSubmissions ou o closeDateTime for igual ao dueDateTime, mas se especificado, ele deve ser maior ou igual ao dueDateTime.|
@@ -90,6 +90,10 @@ Content-length: 279
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

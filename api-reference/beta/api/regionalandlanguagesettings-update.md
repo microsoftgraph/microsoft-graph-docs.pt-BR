@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: settings
 doc_type: apiPageType
-ms.openlocfilehash: 2af80fb6261d04e2aa35a6fe3ea20ce30c63842f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5d9d10adc73f37906c8cf07073e97e8b81bfe1f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971976"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966821"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Atualizar regionalAndLanguageSettings
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |----------------------------------|---------------------------------------------- |
 |Delegado (conta corporativa ou de estudante)|User. ReadWrite, User. ReadWrite. All             |
 |Delegado (conta pessoal)      |User. ReadWrite, User. ReadWrite. All             |
-|Aplicativo                       |User. ReadWrite, User. ReadWrite. All             |
+|Application                       |User. ReadWrite, User. ReadWrite. All             |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,9 +50,9 @@ PATCH /settings/regionalAndLanguageSettings
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
- **Put**: no corpo da solicitação, forneça um objeto [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
+ **Put** : no corpo da solicitação, forneça um objeto [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
  
- **Patch**: forneça apenas os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
+ **Patch** : forneça apenas os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
  
 ## <a name="response"></a>Resposta
 
@@ -119,6 +119,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/put-regionalandlanguagesettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/put-regionalandlanguagesettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -174,6 +178,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-regionalandlanguagesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

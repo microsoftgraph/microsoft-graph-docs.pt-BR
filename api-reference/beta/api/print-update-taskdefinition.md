@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f029dd1e5463d6d69e78e76a90504ab610388533
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd3b7059b46feaac596edb2618e3aba4a7126c21
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035898"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966912"
 ---
 # <a name="update-taskdefinition"></a>Atualizar taskDefinition
 
@@ -31,7 +31,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| PrintTaskDefinition.ReadWrite.All |
+|Application| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça os valores para os campos [printTaskDefiniti
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |displayName|String|O nome do printTaskDefinition.|
-|createdBy|String|Informações sobre o aplicativo que criou a definição de tarefa. Somente a `createdBy.displayName` propriedade pode ser atualizada.|
+|createdBy|Cadeia de caracteres|Informações sobre o aplicativo que criou a definição de tarefa. Somente a `createdBy.displayName` propriedade pode ser atualizada.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
@@ -87,6 +87,10 @@ Content-length: 122
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/print-update-taskdefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/print-update-taskdefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

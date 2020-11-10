@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 5183e95e05e30e078b1bb771472700f4b5900a56
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a18643f04c919af60a56583edf583b884c220eec
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48093102"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967108"
 ---
 # <a name="delete-taskdefinition"></a>Excluir taskDefinition
 
@@ -31,7 +31,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| PrintTaskDefinition.ReadWrite.All |
+|Application| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/print/taskDefinitions/4c6a0f26-8e5d-4bf6
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-taskdefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-taskdefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

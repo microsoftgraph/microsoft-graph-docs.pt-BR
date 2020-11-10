@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe20285dce5a65bc29e61000f5d5b55e5fe88681
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f33383ea8c3c8b7369be47aa852847af022884ef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007536"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966129"
 ---
 # <a name="update-educationoutcome"></a>Atualizar educationoutcome
 
@@ -48,9 +48,9 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-O objeto educationOutcome será um dos seguintes tipos derivados: **educationPointsOutcome**, **educationFeedbackOutcome**ou **educationRubricOutcome**. Forneça as propriedades específicas relevantes ao tipo de resultado que está sendo corrigido.
+O objeto educationOutcome será um dos seguintes tipos derivados: **educationPointsOutcome** , **educationFeedbackOutcome** ou **educationRubricOutcome**. Forneça as propriedades específicas relevantes ao tipo de resultado que está sendo corrigido.
 
-Todos os tipos de resultados derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos** e **publishedPoints**, **feedback** e **publishedFeedback**. Não atualiza a propriedade "published"; é para uso interno. Por exemplo, para atribuir pontos a um **educationPointsOutcome**, atualize a propriedade **Points** , mas não atualize o **publishedPoints**.
+Todos os tipos de resultados derivados têm uma propriedade regular e "publicada" apropriada para esse tipo de resultado; por exemplo, **pontos** e **publishedPoints** , **feedback** e **publishedFeedback**. Não atualiza a propriedade "published"; é para uso interno. Por exemplo, para atribuir pontos a um **educationPointsOutcome** , atualize a propriedade **Points** , mas não atualize o **publishedPoints**.
 
 ## <a name="response"></a>Resposta
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationfeedbackoutcome-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationfeedbackoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,6 +176,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationpointsoutcome-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationpointsoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -269,6 +277,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationoutcome-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
