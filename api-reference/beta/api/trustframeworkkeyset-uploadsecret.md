@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82d45f8af4e9a7a80626ad83c58b4fa58c5bb5de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 037792b26464fe0ce5644b33d38e41d1f44de596
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095664"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972170"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | TrustFrameworkKeySet. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | TrustFrameworkKeySet. ReadWrite. All |
+| Application                            | TrustFrameworkKeySet. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,8 +51,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Use|Cadeia de caracteres|Semelhante à propriedade **use** de **trustFrameworkKey**.|
-|f|Cadeia de caracteres|Semelhante à propriedade **k** de **trustFrameworkKey**. Este é o campo que é usado para enviar o segredo.|
+|Use|String|Semelhante à propriedade **use** de **trustFrameworkKey**.|
+|f|String|Semelhante à propriedade **k** de **trustFrameworkKey**. Este é o campo que é usado para enviar o segredo.|
 |nbf|Int64|Semelhante à propriedade **NBF** de **trustFrameworkKey**.|
 |exp|Int64|Semelhante à propriedade **exp** de **trustFrameworkKey**.|
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-uploadsecret-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-uploadsecret-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

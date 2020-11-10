@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 33b99ded6830a3e9ed4cd985be760824f18e8ee6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: edbc8056091704cbdc1055f6d330d2a0bc57523d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010651"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971259"
 ---
 # <a name="update-personwebsite"></a>Atualizar personwebsite
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|Categorias|Coleção de cadeias de caracteres|Contém categorias que um usuário associou ao site (por exemplo, pessoal, receitas).|
+|categories|Coleção de cadeias de caracteres|Contém categorias que um usuário associou ao site (por exemplo, pessoal, receitas).|
 |description|String|Contém uma descrição do site.|
 |displayName|String|Contém um nome amigável para o site.|
 |fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-personwebsite-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-personwebsite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

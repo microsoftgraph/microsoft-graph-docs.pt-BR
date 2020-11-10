@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 3afc38729e2d99632ee63a1d7fd119eaa17d04f1
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 30b2ce66a366abfb0471baf40915000edf55dad9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932436"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972023"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -138,6 +138,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subscription-from-subscriptions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 No corpo da solicitação, forneça uma representação JSON do objeto [subscription](../resources/subscription.md).
@@ -195,7 +199,7 @@ Content-length: 252
 }
 ```
 
-### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
+### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 

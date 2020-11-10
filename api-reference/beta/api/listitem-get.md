@@ -6,12 +6,12 @@ title: Obter uma entrada de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 25d0a055840055c822814799346136a6bda6c660
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: e66d74493cfb07c0b8ed0071f971037b77f30cf1
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373563"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971358"
 ---
 # <a name="get-an-item-in-a-list"></a>Obter um item em uma lista
 
@@ -32,9 +32,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sites. Read. All, sites. ReadWrite. All, sites. Manage. All |
+|Aplicativo | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All |
 
-> **Observação**: os sites de permissão de aplicativo. Manage. All serão necessários se a lista do SharePoint tiver as configurações de aprovação de conteúdo ativadas. Caso contrário, o Microsoft Graph não recuperará itens de lista que têm um status de aprovação diferente de aprovado.
+> **Observação** : a permissão do aplicativo Sites.Manage.All será necessária se a lista do SharePoint tiver as configurações de aprovação de conteúdo ativadas. Caso contrário, o Microsoft Graph não recuperará itens de lista que têm um status de aprovação diferente de aprovado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

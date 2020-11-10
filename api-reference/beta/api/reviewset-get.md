@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 255b1c251d06414fcf625827fb1a23e00b233754
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 994c48091ff6059e4e696db4312eb15f3a377614
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372527"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971427"
 ---
 # <a name="get-reviewset"></a>Obter reviewset
 
@@ -42,7 +42,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 
 Por padrão, todos os campos do conjunto de revisão são retornados; no entanto, você pode especificar certos campos a serem retornados usando o `$select` parâmetro de consulta OData.  Por exemplo, para retornar apenas **DisplayName** e ID, adicione o seguinte à sua consulta: `$select=displayName,Id` .
 
-Como uma solicitação pode retornar muitos casos, você pode filtrá-los usando **DisplayName**.  Para filtrar por **DisplayName**, adicione o seguinte à sua consulta: `$filter=displayName eq 'rs1'` , onde o nome do conjunto de revisão é RS1.
+Como uma solicitação pode retornar muitos casos, você pode filtrá-los usando **DisplayName**.  Para filtrar por **DisplayName** , adicione o seguinte à sua consulta: `$filter=displayName eq 'rs1'` , onde o nome do conjunto de revisão é RS1.
 
 Para obter mais informações sobre filtragem e especificação de campos, consulte [usando expressões de filtro em URIs OData ](/dynamics-nav/using-filter-expressions-in-odata-uris).
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/6f65a8e4-c6a0-4
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reviewset-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-reviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
