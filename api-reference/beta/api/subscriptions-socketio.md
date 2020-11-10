@@ -6,12 +6,12 @@ description: Não há suporte para o uso dessas APIs em aplicativos de produçã
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c7502cf8cc72d5aabc4ab2fbe3c190bd388b724a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cce55126e10dfbae981b2118fb8b0cd9543f7491
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013934"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982232"
 ---
 # <a name="get-websocket-endpoint"></a>Obter ponto de extremidade do WebSocket
 
@@ -69,6 +69,10 @@ GET /me/drive/root/subscriptions/socketIo
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/drive-root-subscriptions-socketio-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

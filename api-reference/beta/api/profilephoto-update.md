@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 675b1cb4116ec59b65442c683fe07f67a8045379
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bace39481de10040a58a84e1aafdfa58f00335b7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087996"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981723"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
@@ -22,16 +22,16 @@ Atualize a foto de qualquer usuário no locatário, incluindo o usuário conecta
 
 Use PUT somente para esta operação.
 
-> **Observação**: ao atualizar a foto do **usuário** , essa operação primeiro tenta atualizar a foto no Microsoft 365. Se isso falhar (porque o usuário não tem uma caixa de correio), essa API tentará atualizar a foto no Azure Active Directory.
+> **Observação** : ao atualizar a foto do **usuário** , essa operação primeiro tenta atualizar a foto no Microsoft 365. Se isso falhar (porque o usuário não tem uma caixa de correio), essa API tentará atualizar a foto no Azure Active Directory.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Foto de perfil do **usuário**conectado:<br/>User. ReadWrite, User. ReadWrite. All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
+|Delegado (conta corporativa ou de estudante)     | Foto de perfil do **usuário** conectado:<br/>User. ReadWrite, User. ReadWrite. All<br /><br />Para recurso de **grupo** :<br />Group.ReadWrite.All<br /><br />Para recurso de **contato** :<br />Contacts.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Para recurso de **usuário**:<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
+|Aplicativo                            | Para recurso de **usuário** :<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo** :<br />Group.ReadWrite.All<br /><br />Para recurso de **contato** :<br />Contacts.ReadWrite |
 
 > **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão do aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service). A atualização da foto do usuário conectado requer apenas a permissão User. ReadWrite.
 
@@ -91,6 +91,10 @@ Binary data for the image
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-profilephoto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

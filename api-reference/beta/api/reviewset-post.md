@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 52fcf121c3725a61ce833e766122baab0d3a2137
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 986a60dfedf05455074f386ec99caea333401711
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085413"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981242"
 ---
 # <a name="create-reviewset"></a>Criar reviewset
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça a representação JSON do [reviewset](../res
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName  | cadeia de caracteres      | O nome do conjunto de revisão. |
+| displayName  | string      | O nome do conjunto de revisão. |
 
 ## <a name="response"></a>Resposta
 
@@ -84,6 +84,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reviewset-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-reviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

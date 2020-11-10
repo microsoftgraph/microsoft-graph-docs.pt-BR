@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: ca8986dec23e03763aca1491ed4627fa0b87792b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 96e2ba8dd0b1f0e7e0180ec5cbd493d35b8e8976
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373539"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982228"
 ---
 # <a name="list-schemaextensions"></a>List schemaExtensions
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de objetos [schemaExtension](../resources/schemaextension.md) criados por qualquer aplicativo que você possui no locatário atual (que pode ser **indevelopment**, **disponível**ou **preterido**) e todas as outras extensões de esquema pertencentes a outros aplicativos marcados como **disponíveis**. 
+Obtenha uma lista de objetos [schemaExtension](../resources/schemaextension.md) criados por qualquer aplicativo que você possui no locatário atual (que pode ser **indevelopment** , **disponível** ou **preterido** ) e todas as outras extensões de esquema pertencentes a outros aplicativos marcados como **disponíveis**. 
 
 > **Observação:** A lista também conterá definições de extensão de esquema (marcadas como `Available` ) criadas por outros desenvolvedores de outros locatários. Isto é diferente de outras APIs que retornam apenas os dados específicos do locatário. Os dados de extensão criados com base nas definições de extensão de esquema são específicos do locatário e só podem ser acessados por aplicativos explicitamente concedidos à permissão. 
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User. Read, Application. Read. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.Read.All  |
+|Application | Application.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra como procurar entre todas as extensões acessíveis para uma específica filtrando sua **ID**exclusiva. 
+O exemplo a seguir mostra como procurar entre todas as extensões acessíveis para uma específica filtrando sua **ID** exclusiva. 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schemaextensions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextensions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
