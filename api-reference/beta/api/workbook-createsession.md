@@ -5,70 +5,70 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 68d69c8dde26a0634604c60a01e3c30d9421a8ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 097dd199e12a94ceb11514818665db5053c6c344
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999031"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48973920"
 ---
-# <a name="create-session"></a><span data-ttu-id="9bddf-103">Criar sessão</span><span class="sxs-lookup"><span data-stu-id="9bddf-103">Create session</span></span>
+# <a name="create-session"></a><span data-ttu-id="f186e-103">Criar sessão</span><span class="sxs-lookup"><span data-stu-id="f186e-103">Create session</span></span>
 
-<span data-ttu-id="9bddf-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9bddf-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f186e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f186e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9bddf-105">Crie uma nova sessão de pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="9bddf-105">Create a new workbook session.</span></span> 
+<span data-ttu-id="f186e-105">Crie uma nova sessão de pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="f186e-105">Create a new workbook session.</span></span> 
 
-<span data-ttu-id="9bddf-106">As APIs do Excel podem ser chamadas em um destes dois modos:</span><span class="sxs-lookup"><span data-stu-id="9bddf-106">Excel APIs can be called in one of two modes:</span></span> 
+<span data-ttu-id="f186e-106">As APIs do Excel podem ser chamadas em um destes dois modos:</span><span class="sxs-lookup"><span data-stu-id="f186e-106">Excel APIs can be called in one of two modes:</span></span> 
 
-1. <span data-ttu-id="9bddf-p101">Sessão persistente – Todas as alterações feitas na pasta de trabalho são persistentes (salvas). Este é o modo normal de operação.</span><span class="sxs-lookup"><span data-stu-id="9bddf-p101">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
-2. <span data-ttu-id="9bddf-p102">Sessão não persistente – As alterações feitas pela API não são salvas na localização de origem. Em vez disso, o servidor back-end do Excel mantém uma cópia temporária do arquivo que reflete as alterações feitas durante essa sessão de API específica. Quando a sessão do Excel expirar, as alterações serão perdidas. Esse modo é útil para aplicativos que precisam fazer uma análise ou obter os resultados de um cálculo ou de uma imagem de gráfico, mas não afeta o estado do documento.</span><span class="sxs-lookup"><span data-stu-id="9bddf-p102">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
+1. <span data-ttu-id="f186e-p101">Sessão persistente – Todas as alterações feitas na pasta de trabalho são persistentes (salvas). Este é o modo normal de operação.</span><span class="sxs-lookup"><span data-stu-id="f186e-p101">Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation.</span></span> 
+2. <span data-ttu-id="f186e-p102">Sessão não persistente – As alterações feitas pela API não são salvas na localização de origem. Em vez disso, o servidor back-end do Excel mantém uma cópia temporária do arquivo que reflete as alterações feitas durante essa sessão de API específica. Quando a sessão do Excel expirar, as alterações serão perdidas. Esse modo é útil para aplicativos que precisam fazer uma análise ou obter os resultados de um cálculo ou de uma imagem de gráfico, mas não afeta o estado do documento.</span><span class="sxs-lookup"><span data-stu-id="f186e-p102">Non-persistent session - Changes made by the API are not saved to the source location. Instead, the Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. When the Excel session expires, the changes are lost. This mode is useful for apps that need to do analysis or obtain the results of a calculation or a chart image, but not affect the document state.</span></span>   
 
-<span data-ttu-id="9bddf-113">Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`.</span><span class="sxs-lookup"><span data-stu-id="9bddf-113">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
+<span data-ttu-id="f186e-113">Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`.</span><span class="sxs-lookup"><span data-stu-id="f186e-113">To represent the session in the API, use the `workbook-session-id: {session-id}` header.</span></span> 
 
-><span data-ttu-id="9bddf-p103">**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.</span><span class="sxs-lookup"><span data-stu-id="9bddf-p103">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
+><span data-ttu-id="f186e-p103">**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.</span><span class="sxs-lookup"><span data-stu-id="f186e-p103">**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.</span></span>  
 
-<span data-ttu-id="9bddf-117">Em alguns casos, a criação de uma nova sessão requer um tempo indeterminado para ser concluída.</span><span class="sxs-lookup"><span data-stu-id="9bddf-117">In some cases, creating a new session requires an indeterminate time to complete.</span></span> <span data-ttu-id="9bddf-118">O Microsoft Graph também fornece um padrão de operações de longa duração.</span><span class="sxs-lookup"><span data-stu-id="9bddf-118">Microsoft Graph also provides a long running operations pattern.</span></span> <span data-ttu-id="9bddf-119">Este padrão oferece uma maneira de Pesquisar as atualizações de status de criação, sem esperar que a criação seja concluída.</span><span class="sxs-lookup"><span data-stu-id="9bddf-119">This pattern provides a way to poll for creation status updates, without waiting for the creation to complete.</span></span> <span data-ttu-id="9bddf-120">As etapas são as seguintes:</span><span class="sxs-lookup"><span data-stu-id="9bddf-120">The following are the steps:</span></span>
+<span data-ttu-id="f186e-117">Em alguns casos, a criação de uma nova sessão requer um tempo indeterminado para ser concluída.</span><span class="sxs-lookup"><span data-stu-id="f186e-117">In some cases, creating a new session requires an indeterminate time to complete.</span></span> <span data-ttu-id="f186e-118">O Microsoft Graph também fornece um padrão de operações de longa duração.</span><span class="sxs-lookup"><span data-stu-id="f186e-118">Microsoft Graph also provides a long running operations pattern.</span></span> <span data-ttu-id="f186e-119">Este padrão oferece uma maneira de Pesquisar as atualizações de status de criação, sem esperar que a criação seja concluída.</span><span class="sxs-lookup"><span data-stu-id="f186e-119">This pattern provides a way to poll for creation status updates, without waiting for the creation to complete.</span></span> <span data-ttu-id="f186e-120">As etapas são as seguintes:</span><span class="sxs-lookup"><span data-stu-id="f186e-120">The following are the steps:</span></span>
 
-1. <span data-ttu-id="9bddf-121">Um `Prefer: respond-async` cabeçalho é adicionado à solicitação para indicar que se trata de uma operação de execução demorada.</span><span class="sxs-lookup"><span data-stu-id="9bddf-121">A `Prefer: respond-async` header is added to the request to indicate that it is a long-running operation.</span></span>
-2. <span data-ttu-id="9bddf-122">A resposta retorna um `Location` cabeçalho para especificar a URL para sondar o status da operação de criação.</span><span class="sxs-lookup"><span data-stu-id="9bddf-122">The response returns a `Location` header to specify the URL for polling the creation operation status.</span></span> <span data-ttu-id="9bddf-123">Você pode obter o status da operação acessando a URL especificada.</span><span class="sxs-lookup"><span data-stu-id="9bddf-123">You can get the operation status by accessing the specified URL.</span></span> <span data-ttu-id="9bddf-124">O status será um dos seguintes: `notStarted` , `running` , `succeeded` ou `failed` .</span><span class="sxs-lookup"><span data-stu-id="9bddf-124">The status will be one of the following: `notStarted`, `running`, `succeeded`, or `failed`.</span></span>
-3. <span data-ttu-id="9bddf-125">Após a conclusão da operação, você pode solicitar o status novamente e a resposta mostrará `succeeded` ou `failed` .</span><span class="sxs-lookup"><span data-stu-id="9bddf-125">After the operation completes, you can request the status again and the response will show either `succeeded` or `failed`.</span></span>
+1. <span data-ttu-id="f186e-121">Um `Prefer: respond-async` cabeçalho é adicionado à solicitação para indicar que se trata de uma operação de execução demorada.</span><span class="sxs-lookup"><span data-stu-id="f186e-121">A `Prefer: respond-async` header is added to the request to indicate that it is a long-running operation.</span></span>
+2. <span data-ttu-id="f186e-122">A resposta retorna um `Location` cabeçalho para especificar a URL para sondar o status da operação de criação.</span><span class="sxs-lookup"><span data-stu-id="f186e-122">The response returns a `Location` header to specify the URL for polling the creation operation status.</span></span> <span data-ttu-id="f186e-123">Você pode obter o status da operação acessando a URL especificada.</span><span class="sxs-lookup"><span data-stu-id="f186e-123">You can get the operation status by accessing the specified URL.</span></span> <span data-ttu-id="f186e-124">O status será um dos seguintes: `notStarted` , `running` , `succeeded` ou `failed` .</span><span class="sxs-lookup"><span data-stu-id="f186e-124">The status will be one of the following: `notStarted`, `running`, `succeeded`, or `failed`.</span></span>
+3. <span data-ttu-id="f186e-125">Após a conclusão da operação, você pode solicitar o status novamente e a resposta mostrará `succeeded` ou `failed` .</span><span class="sxs-lookup"><span data-stu-id="f186e-125">After the operation completes, you can request the status again and the response will show either `succeeded` or `failed`.</span></span>
 
-### <a name="error-handling"></a><span data-ttu-id="9bddf-126">Tratamento de erros</span><span class="sxs-lookup"><span data-stu-id="9bddf-126">Error handling</span></span>
+### <a name="error-handling"></a><span data-ttu-id="f186e-126">Tratamento de erros</span><span class="sxs-lookup"><span data-stu-id="f186e-126">Error handling</span></span>
 
-<span data-ttu-id="9bddf-127">Essa solicitação poderá, ocasionalmente, receber uma mensagem de erro HTTP 504.</span><span class="sxs-lookup"><span data-stu-id="9bddf-127">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="9bddf-128">A resposta apropriada para esta mensagem de erro é repetir a solicitação.</span><span class="sxs-lookup"><span data-stu-id="9bddf-128">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="f186e-127">Essa solicitação poderá, ocasionalmente, receber uma mensagem de erro HTTP 504.</span><span class="sxs-lookup"><span data-stu-id="f186e-127">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="f186e-128">A resposta apropriada para esta mensagem de erro é repetir a solicitação.</span><span class="sxs-lookup"><span data-stu-id="f186e-128">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9bddf-129">Permissões</span><span class="sxs-lookup"><span data-stu-id="9bddf-129">Permissions</span></span>
-<span data-ttu-id="9bddf-p107">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9bddf-p107">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f186e-129">Permissões</span><span class="sxs-lookup"><span data-stu-id="f186e-129">Permissions</span></span>
+<span data-ttu-id="f186e-p107">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f186e-p107">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9bddf-132">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9bddf-132">Permission type</span></span>      | <span data-ttu-id="9bddf-133">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9bddf-133">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f186e-132">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f186e-132">Permission type</span></span>      | <span data-ttu-id="f186e-133">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f186e-133">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9bddf-134">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9bddf-134">Delegated (work or school account)</span></span> | <span data-ttu-id="9bddf-135">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9bddf-135">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="9bddf-136">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9bddf-136">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9bddf-137">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9bddf-137">Not supported.</span></span>    |
-|<span data-ttu-id="9bddf-138">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9bddf-138">Application</span></span> | <span data-ttu-id="9bddf-139">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9bddf-139">Not supported.</span></span> |
+|<span data-ttu-id="f186e-134">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f186e-134">Delegated (work or school account)</span></span> | <span data-ttu-id="f186e-135">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f186e-135">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f186e-136">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f186e-136">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f186e-137">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f186e-137">Not supported.</span></span>    |
+|<span data-ttu-id="f186e-138">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f186e-138">Application</span></span> | <span data-ttu-id="f186e-139">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f186e-139">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9bddf-140">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9bddf-140">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f186e-140">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f186e-140">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/createSession
 ```
-## <a name="request-headers"></a><span data-ttu-id="9bddf-141">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9bddf-141">Request headers</span></span>
-| <span data-ttu-id="9bddf-142">Nome</span><span class="sxs-lookup"><span data-stu-id="9bddf-142">Name</span></span>       | <span data-ttu-id="9bddf-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="9bddf-143">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f186e-141">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f186e-141">Request headers</span></span>
+| <span data-ttu-id="f186e-142">Nome</span><span class="sxs-lookup"><span data-stu-id="f186e-142">Name</span></span>       | <span data-ttu-id="f186e-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="f186e-143">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="9bddf-144">Autorização</span><span class="sxs-lookup"><span data-stu-id="9bddf-144">Authorization</span></span>  | <span data-ttu-id="9bddf-p108">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9bddf-p108">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f186e-144">Autorização</span><span class="sxs-lookup"><span data-stu-id="f186e-144">Authorization</span></span>  | <span data-ttu-id="f186e-p108">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f186e-p108">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9bddf-147">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9bddf-147">Request body</span></span>
-<span data-ttu-id="9bddf-148">No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) .</span><span class="sxs-lookup"><span data-stu-id="9bddf-148">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f186e-147">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f186e-147">Request body</span></span>
+<span data-ttu-id="f186e-148">No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) .</span><span class="sxs-lookup"><span data-stu-id="f186e-148">In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9bddf-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="9bddf-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f186e-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="f186e-149">Response</span></span>
 
-<span data-ttu-id="9bddf-150">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [workbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9bddf-150">If successful, this method returns a `201 Created` response code and a [workbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.</span></span> <span data-ttu-id="9bddf-151">Para uma operação de execução longa, ele retorna um `202 Accepted ` código de resposta e um `Location` cabeçalho com um corpo vazio na resposta.</span><span class="sxs-lookup"><span data-stu-id="9bddf-151">For a long-running operation, it returns a `202 Accepted ` response code and a `Location` header with an empty body in the response.</span></span>
+<span data-ttu-id="f186e-150">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [workbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f186e-150">If successful, this method returns a `201 Created` response code and a [workbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.</span></span> <span data-ttu-id="f186e-151">Para uma operação de execução longa, ele retorna um `202 Accepted ` código de resposta e um `Location` cabeçalho com um corpo vazio na resposta.</span><span class="sxs-lookup"><span data-stu-id="f186e-151">For a long-running operation, it returns a `202 Accepted ` response code and a `Location` header with an empty body in the response.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9bddf-152">Exemplos</span><span class="sxs-lookup"><span data-stu-id="9bddf-152">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f186e-152">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f186e-152">Examples</span></span>
 
-### <a name="example-1-basic-session-creation"></a><span data-ttu-id="9bddf-153">Exemplo 1: criação de sessão básica</span><span class="sxs-lookup"><span data-stu-id="9bddf-153">Example 1: Basic session creation</span></span>
-#### <a name="request"></a><span data-ttu-id="9bddf-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9bddf-154">Request</span></span>
+### <a name="example-1-basic-session-creation"></a><span data-ttu-id="f186e-153">Exemplo 1: criação de sessão básica</span><span class="sxs-lookup"><span data-stu-id="f186e-153">Example 1: Basic session creation</span></span>
+#### <a name="request"></a><span data-ttu-id="f186e-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f186e-154">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9bddf-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="9bddf-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f186e-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="f186e-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_excel_session"
@@ -82,23 +82,27 @@ Content-length: 52
   "persistChanges": true
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="9bddf-156">C#</span><span class="sxs-lookup"><span data-stu-id="9bddf-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f186e-156">C#</span><span class="sxs-lookup"><span data-stu-id="f186e-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-excel-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9bddf-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9bddf-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f186e-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f186e-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9bddf-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9bddf-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f186e-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f186e-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-excel-session-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="f186e-159">Java</span><span class="sxs-lookup"><span data-stu-id="f186e-159">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-excel-session-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="9bddf-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="9bddf-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f186e-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="f186e-160">Response</span></span>
 
-><span data-ttu-id="9bddf-160">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="9bddf-160">**Note:** The response object shown here might be shortened for readability.</span></span> 
+><span data-ttu-id="f186e-161">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f186e-161">**Note:** The response object shown here might be shortened for readability.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -114,9 +118,9 @@ Content-length: 52
   "persistChanges": true
 }
 ```
-### <a name="example-2-session-creation-with-long-running-operation-pattern"></a><span data-ttu-id="9bddf-161">Exemplo 2: criação de sessão com um padrão de operação de execução longa</span><span class="sxs-lookup"><span data-stu-id="9bddf-161">Example 2: Session creation with long-running operation pattern</span></span>
+### <a name="example-2-session-creation-with-long-running-operation-pattern"></a><span data-ttu-id="f186e-162">Exemplo 2: criação de sessão com um padrão de operação de execução longa</span><span class="sxs-lookup"><span data-stu-id="f186e-162">Example 2: Session creation with long-running operation pattern</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9bddf-162">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9bddf-162">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f186e-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f186e-163">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
@@ -127,8 +131,8 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="9bddf-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="9bddf-163">Response</span></span>
-><span data-ttu-id="9bddf-164">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="9bddf-164">**Note:** The response object shown here might be shortened for readability.</span></span> 
+#### <a name="response"></a><span data-ttu-id="f186e-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="f186e-164">Response</span></span>
+><span data-ttu-id="f186e-165">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f186e-165">**Note:** The response object shown here might be shortened for readability.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
