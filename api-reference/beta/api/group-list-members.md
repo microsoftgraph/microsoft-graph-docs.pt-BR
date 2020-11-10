@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2b0b08c838f12817133578fbe94459d7a0acebe1
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 2a1c50dfbee4a4846f40d6372a29b1561a1071f5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796595"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954024"
 ---
 # <a name="list-group-members"></a>Listar membros de grupo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação não é transitiva.
 
-Quando um grupo contiver mais de 100 membros, o Microsoft Graph retornará uma `@odata.nextLink` Propriedade na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a `@odata.nextLink` URL em cada resposta, até que todos os resultados sejam retornados, conforme descrito em [paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+Quando um grupo contém mais de 100 membros, o Microsoft Graph retorna uma propriedade `@odata.nextLink` na resposta que contém um URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com o `@odata.nextLink` URL em cada resposta, até que todos os resultados sejam retornados, conforme descrito em [paginação de dados do Microsoft Graph no aplicativo](/graph/paging).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:------------------------------------------- |
 | Delegado (conta corporativa ou de estudante) | Group.Read.All, Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | Group.Read.All, Directory.Read.All |
+| Application | Group.Read.All, Directory.Read.All |
 
 > **Observação:** Para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
 
@@ -45,7 +45,7 @@ GET /groups/{id}/members
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. O elenco do OData também é habilitado, por exemplo, você pode transmitir para obter apenas os usuários que são membros do grupo. Você pode usar `$search`na propriedade **displayName** . Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. A conversão OData também está habilitada, por exemplo, você pode converter para obter apenas os usuários que são membros do grupo. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -64,7 +64,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-direct-membership-in-a-group"></a>Exemplo 1: obter a associação direta em um grupo
+### <a name="example-1-get-the-direct-membership-in-a-group"></a>Exemplo 1: Obtenha a associação direta em um grupo
 
 #### <a name="request"></a>Solicitação
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -120,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-membership"></a>Exemplo 2: obter apenas uma contagem de todas as associações
+### <a name="example-2-get-only-a-count-of-all-membership"></a>Exemplo 2: Obtenha apenas uma contagem de todos os membros
 
 #### <a name="request"></a>Solicitação
 
@@ -148,6 +152,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-only-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -168,7 +176,7 @@ Content-type: text/plain
 
 893
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a>Exemplo 3: usar a conversão OData para obter apenas uma contagem de membros do usuário
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a>Exemplo 3: Utilize a conversão OData para obter apenas uma contagem da associação do usuário
 
 #### <a name="request"></a>Solicitação
 
@@ -194,6 +202,10 @@ ConsistencyLevel: eventual
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-count-user-only-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-count-user-only-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -244,6 +256,10 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/objc/get-pr-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-pr-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -278,7 +294,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Exemplo 5: use $filter para obter a associação de grupo com um nome de exibição que comece com a letra "A", incluindo uma contagem de objetos retornados
+### <a name="example-5-use-filter-to-get-group-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Exemplo 5: Utilize $filter para obter associação de grupo com um nome de exibição que começa com a letra 'A' incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -304,6 +320,10 @@ ConsistencyLevel: eventual
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

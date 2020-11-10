@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d85fd53a9639637c30646186c2cf8422272fe7d3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 14afc1f17b5139e4476b052f551b41f212c9e4ff
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990939"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954352"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Verifique se há associação na lista de grupos especificada. Retorna os grupos da lista com os quais o grupo especificado tem uma associação direta ou transitiva.
 
-Você pode verificar até um máximo de 20 grupos por solicitação. Esta função suporta o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. Observe que os grupos da Microsoft 365 não podem conter grupos. Portanto, a associação a um grupo do Microsoft 365 é sempre direta.
+Você pode verificar até 20 grupos por solicitação. Esta função é compatível com o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. Observe que os Grupos do Microsoft 365 não podem conter grupos, então associações em um Grupo do Microsoft 365 sempre são diretas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -94,6 +94,10 @@ Content-length: 44
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-checkmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

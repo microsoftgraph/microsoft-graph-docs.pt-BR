@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: cb93f7f40a580297d1cd255e7468a079e5a5b23a
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a2414c02c2526ffccb1aab6bd75101047e5bbe6c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635093"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954388"
 ---
 # <a name="list-governanceresources"></a>Listar governanceResources
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureResources |
+| Application | PrivilegedAccess. Read. AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,15 +37,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governanceresources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-governanceresources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

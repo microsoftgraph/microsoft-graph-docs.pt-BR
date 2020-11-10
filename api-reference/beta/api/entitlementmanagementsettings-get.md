@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 499f7a45cc19e675846496cbe68ecf6d8a7f5e2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e84530e6354ba647ec522253e6dbef88afcded37
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981038"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955037"
 ---
 # <a name="get-entitlementmanagementsettings"></a>Obter entitlementManagementSettings
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/settings
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte aos parâmetros de consulta OData para personalizar a resposta.
+Este método não é compatível com os Parâmetros de Consulta OData para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/se
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-entitlementmanagementsettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-entitlementmanagementsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

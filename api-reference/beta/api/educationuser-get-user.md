@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b69990bc175e4f98bd77c5bff312204a28792705
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 848f7b2521a93f1fe735d9f5a42f6e7004f27e60
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981132"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955271"
 ---
 # <a name="get-user"></a>Obter usuário
 
@@ -31,7 +31,7 @@ Uma combinação de permissões é obrigatória para chamar essa API. Para saber
 | :------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Uma de EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write além de Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                            |
-| Aplicativo                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
+| Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All além de Directory.Read.All                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/education/me/user
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

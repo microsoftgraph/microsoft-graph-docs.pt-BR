@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: dbb4f89522432f083169cc3c559a66a15c2874b3
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: b6a6c79288d2eee9ff4ef2cbb0a9d200a6735050
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223051"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954611"
 ---
 # <a name="delete-externalgroupmember"></a>Excluir externalGroupMember
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (de privilégios máximos a mínimos) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Incompatível                               |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | ExternalItem.ReadWrite.All                  |
 
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-externalgroupmember-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-externalgroupmember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

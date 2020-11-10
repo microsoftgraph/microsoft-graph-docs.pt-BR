@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4eaabf9868555c5055b9bb262688ae7f639fdbff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01be788690c61728b7962c46d84aa6e5dc4b5dc0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006983"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954883"
 ---
 # <a name="get-event"></a>Obter evento
 
@@ -23,12 +23,12 @@ Obtenha as propriedades e as relações do objeto [event](../resources/event.md)
 Um aplicativo pode obter um evento no calendário de outro usuário se:
 
 * O aplicativo tem permissões de aplicativo
-* O aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
+* O aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado a esse usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
 Como o recurso de **evento** oferece suporte a [extensões](/graph/extensibility-overview), você também pode usar a `GET` operação para obter propriedades personalizadas e dados de extensão em uma instância de **evento** .
 
 
-### <a name="support-various-time-zones"></a>Suporte para vários fusos horários
+### <a name="support-various-time-zones"></a>Suporte a vários fusos horários
 
 Para todas as operações GET que retornam eventos, você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar o fuso horário para as horas de início e de término do evento na resposta. 
 
@@ -118,10 +118,14 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
-Veja um exemplo da resposta. Como nenhum `Prefer: outlook.body-content-type` cabeçalho foi especificado, a propriedade **Body** é retornada no formato HTML padrão. 
+Veja a seguir um exemplo da resposta. Como nenhum cabeçalho `Prefer: outlook.body-content-type` foi especificado, a propriedade **body** será retornada no formato HTML padrão. 
 
 <!-- {
   "blockType": "response",
@@ -235,6 +239,10 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-in-text-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -289,6 +297,10 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=sub
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-multiple-locations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-multiple-locations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -408,7 +420,7 @@ O exemplo a seguir mostra a expansão de um evento de série do mestre de uma s�
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences$expand=exceptionOccurrences
 ```
 #### <a name="response"></a>Resposta
-A operação GET retorna as propriedades selecionadas para o evento de série principal. Especificamente, para eventos na coleção **exceptionOccurrences** , a operação retorna a propriedade **ID** e as propriedades aplicáveis e selecionadas (**Subject**, **Start**, **end**, **occurrencesid**). Como para eventos na coleção **cancelledOccurrences** , como os eventos não existem mais, a operação retorna apenas seus valores de propriedade de **Occurrences** .
+A operação GET retorna as propriedades selecionadas para o evento de série principal. Especificamente, para eventos na coleção **exceptionOccurrences** , a operação retorna a propriedade **ID** e as propriedades aplicáveis e selecionadas ( **Subject** , **Start** , **end** , **occurrencesid** ). Como para eventos na coleção **cancelledOccurrences** , como os eventos não existem mais, a operação retorna apenas seus valores de propriedade de **Occurrences** .
 
 <!-- {
   "blockType": "response",

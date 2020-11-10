@@ -6,12 +6,12 @@ title: Item da unidade não seguir
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 278840415b00270061e04a2aab71beb9f3cb6eb5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6a186eeee8055a4249db66a588b81d0bebfa57e1
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981839"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955663"
 ---
 # <a name="unfollow-drive-item"></a>Item da unidade não seguir
 
@@ -74,6 +74,10 @@ DELETE /me/drive/items/{item-id}/unfollow
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/unfollow-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/unfollow-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

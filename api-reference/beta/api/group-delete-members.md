@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4f7f87ea31a485e98ca1bab1da828d447e431f7d
-ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
+ms.openlocfilehash: 52023711a03126f1d72149de7aa120cdb68f682f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338134"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954226"
 ---
 # <a name="remove-member"></a>Remover membro
 
@@ -70,13 +70,17 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-member-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 Na solicitação, especifique o identificador do grupo e o identificador do objeto de diretório que você deseja remover.
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

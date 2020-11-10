@@ -1,16 +1,16 @@
 ---
 title: Listar proprietários
-description: Recupere uma lista de proprietários do grupo.
+description: Recupere uma lista dos proprietários do grupo.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2b8d2a8478d3b6b0c5ffbea13b4a59873cdc9f91
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0f3e76c321cd6732a0a2a0c3944e1df02cba92fb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701423"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48953981"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que têm permissão para modificar o objeto de grupo. Os proprietários atualmente não estão disponíveis no Microsoft Graph para grupos que foram criados no Exchange ou grupos que são sincronizados de um ambiente local. 
+Recupere uma lista dos proprietários do grupo. Os proprietários são um conjunto de usuários que têm permissão para modificar o objeto de grupo. Os proprietários não estão atualmente disponíveis no Microsoft Graph para os grupos que foram criados no Exchange ou grupos que são sincronizados a partir de um ambiente no local. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-owners-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-get-owners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

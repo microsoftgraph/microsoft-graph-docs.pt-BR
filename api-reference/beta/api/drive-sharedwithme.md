@@ -6,12 +6,12 @@ title: Listar arquivos compartilhados comigo
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fde94804b521c161936fbc4ffafb206f6caf458b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 933d8eae7566c3665f149f565d9055ef070033da
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982171"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955729"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Listar itens compartilhados com o usuário conectado
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 **Observação:** embora a solicitação /sharedWithMe tenha êxito com as permissões Files.Read ou Files.ReadWrite, algumas propriedades podem estar ausentes.
-Além disso, sem uma das permissões **All**, os itens compartilhados retornados dessa API não ficarão acessíveis.
+Além disso, sem uma das permissões **All** , os itens compartilhados retornados dessa API não ficarão acessíveis.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,6 +53,10 @@ GET /me/drive/sharedWithMe
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shared-with-me-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shared-with-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
