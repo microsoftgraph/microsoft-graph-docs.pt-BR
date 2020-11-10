@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 93b5d1487bc358f71fa3e7db6ad91eb7292ea389
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 179f3f3ccd4afae57ca5c34c2789a311ecb69bd0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371810"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48958126"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chat em um canal ou em um chat
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Criar um novo [chat](../resources/chatmessage.md) no [canal](../resources/channel.md) especificado ou em um [chat](../resources/chat.md).
 
-> **Observação**: não é recomendável usar essa API para a migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.
+> **Observação** : não é recomendável usar essa API para a migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.
 
-> **Observação**: trata-se de uma violação dos [termos de uso](/legal/microsoft-apis/terms-of-use) para usar o Microsoft Teams como um arquivo de log. Só envie mensagens que as pessoas lerám.
+> **Observação** : trata-se de uma violação dos [termos de uso](/legal/microsoft-apis/terms-of-use) para usar o Microsoft Teams como um arquivo de log. Só envie mensagens que as pessoas lerám.
 
 ## <a name="permissions"></a>Permissões
 
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -366,7 +370,7 @@ Content-length: 160
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
->**Observação:** O arquivo já deve estar no SharePoint. Para localizar as propriedades do arquivo, obtenha o **driveItem** para o arquivo. Por exemplo,/drives/{ID}/Items/{ID}. Sua ID de anexo é o GUID na **ETag** do **DriveItem**, seu **ContentURL** de anexo é o **WebUrl** da pasta do **driveItem**mais o nome do **driveItem**e o nome do anexo é o nome do **driveItem**.
+>**Observação:** O arquivo já deve estar no SharePoint. Para localizar as propriedades do arquivo, obtenha o **driveItem** para o arquivo. Por exemplo,/drives/{ID}/Items/{ID}. Sua ID de anexo é o GUID na **ETag** do **DriveItem** , seu **ContentURL** de anexo é o **WebUrl** da pasta do **driveItem** mais o nome do **driveItem** e o nome do anexo é o nome do **driveItem**.
 
 <!-- {
   "blockType": "request",
@@ -540,7 +544,7 @@ Content-length: 160
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-> **Observação:** O **TemporaryId** na coleção **HOSTEDCONTENTS** é uma ID aleatória, mas deve ser o mesmo em todos os elementos do **conteúdo** (em **anexos**) e **hostedContents** . (Observe o **TemporaryId** definido como **1** e a referência no conteúdo como `../hostedContents/1/$value` .)
+> **Observação:** O **TemporaryId** na coleção **HOSTEDCONTENTS** é uma ID aleatória, mas deve ser o mesmo em todos os elementos do **conteúdo** (em **anexos** ) e **hostedContents** . (Observe o **TemporaryId** definido como **1** e a referência no conteúdo como `../hostedContents/1/$value` .)
 
 **contentbytes necessárias** deve ser definido como bytes codificados em Base64 de cadeia de caracteres. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 

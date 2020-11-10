@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ab9d5e0ffc4ac853284e6ef0e1b9f98f1aaa7004
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 5511c19f23be69a2aad14acc35bbef9c3710fc88
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848012"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959302"
 ---
 # <a name="delete-channel"></a>Delete channel
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Channel. Delete. All, Group. ReadWrite. All, Directory. ReadWrite. All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Channel. Delete. Group *, Channel. Delete. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | Channel. Delete. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | Channel. Delete. Group *, Channel. Delete. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 > **Observação** : Permissões marcadas com * usam [consentimento específico de recurso](https://aka.ms/teams-rsc).
 
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

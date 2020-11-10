@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cf1d09a2ea0832bfc4e6ab065f47b525a715b742
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a977126c2360d730b553136754f95d69bc710f8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987302"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959526"
 ---
 # <a name="call-redirect"></a>Call: Redirect
 
@@ -57,8 +57,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada toque simultâneo. Isso significa que todos os destinos serão variados ao mesmo tempo e apenas o primeiro destino que escolher será conectado. Oferecemos suporte para até 25 metas para o toque simultâneo.
 |targetDisposition|String|Preterido Os valores possíveis são: `default` , `simultaneousRing` , `forward` . Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada ou chamada de toque simultâneo do número de destinos fornecidos.|
 |timeout|Int32|O tempo limite (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo limite é entre 15 e 90 segundos, inclusive. O valor de tempo limite padrão é de 55 segundos para um destino e 60 segundos para vários destinos (sujeito a alterações). |
-|maskCallee|Boolean|Indica se o receptor deve ser oculto do chamador. Se true, a identidade do receptor é a identidade do bot. Padrão: false.|
-|maskCaller|Boolean|Indica se o chamador deve ser oculto do receptor. Se true, a identidade do chamador é a identidade do bot. Padrão: false.|
+|maskCallee|Booliano|Indica se o receptor deve ser oculto do chamador. Se true, a identidade do receptor é a identidade do bot. Padrão: false.|
+|maskCaller|Booliano|Indica se o chamador deve ser oculto do receptor. Se true, a identidade do chamador é a identidade do bot. Padrão: false.|
 |callbackUri|String|Isso permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https` .|
 
 ## <a name="response"></a>Resposta
@@ -161,6 +161,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

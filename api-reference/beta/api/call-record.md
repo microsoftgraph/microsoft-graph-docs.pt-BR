@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c0efecaa0f1fa20bf1e453fb7d20ab3fded6ff96
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ce18fd2afa9b78916e1fe36e767bcab510b2da69
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372093"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959561"
 ---
 # <a name="call-recordresponse"></a>Call: recordResponse
 
@@ -64,7 +64,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |maxSilenceTimeoutInSeconds|Int32| Tempo máximo de silêncio (pausa) permitido após um usuário começar a falar. Padrão = 5 segundos, mín = 1 segundo, máximo = 120 segundos.|
 |maxRecordDurationInSeconds|Int32| Duração máxima para a operação recordResponse antes de parar a gravação. Padrão = 5 segundos, mín = 1 segundo, máximo = 120 segundos.|
 |playBeep|Booliano| Se true, reproduz um aviso sonoro para indicar ao usuário que eles podem começar a gravar suas mensagens. Padrão = true.|
-|stopTones|Conjunto de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
+|stopTones|Coleção de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. O limite máximo é de 256 caracteres.|
 
 > **Observação:** O tempo máximo de gravação foi reduzido de cinco minutos para 2 minutos.
@@ -120,6 +120,10 @@ Content-Length: 394
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-recordresponse-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-recordresponse-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

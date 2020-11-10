@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a2509d07e55332747f50659c93fb0ac49928565f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: adf46f91bba84940e7ae7632d7e6ae804be9b1e2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987327"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959623"
 ---
 # <a name="call-playprompt"></a>Call: playPrompt
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Aplicativo                            | Nenhum.                                        |
+| Application                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |prompts|Coleção [MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem reproduzidos. O tamanho máximo de coleção mediaPrompt compatível é 20.|
-|ciclo|Boolean| O valor do loop. True indica o loop infinitamente. O valor padrão é falso. |
+|ciclo|Booliano| O valor do loop. True indica o loop infinitamente. O valor padrão é falso. |
 |clientContext|String|Cadeia de caracteres de contexto de cliente exclusivo. Pode ter um máximo de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
@@ -102,6 +102,10 @@ Content-Length: 166
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-playprompt-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-playprompt-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

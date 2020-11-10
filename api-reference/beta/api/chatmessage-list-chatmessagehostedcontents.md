@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7e235a902421e7f969e9d9e63400e08e7ebfb253
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 077b3305ce2b342a32f52371d8382b49bd25a55d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982631"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48958181"
 ---
 # <a name="list-hostedcontents"></a>Listar hostedContents
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Para recurso de **usuário** ou **chat** : chat. Read, chat. ReadWrite<br/><br/>Para recurso de **canal** : ChannelMessage. Read. All, Group. Read. All, Group. Read. WriteAll |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Para o **usuário** ou recurso de **chat** : chat. Read. All, chat. ReadWrite. All<br/><br/>Para recurso de **canal** : ChannelMessage. Read. Group *, ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
+|Application| Para o **usuário** ou recurso de **chat** : chat. Read. All, chat. ReadWrite. All<br/><br/>Para recurso de **canal** : ChannelMessage. Read. Group *, ChannelMessage. Read. All, Group. Read. All, Group. ReadWrite. All |
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-hostedcontents-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-hostedcontents-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

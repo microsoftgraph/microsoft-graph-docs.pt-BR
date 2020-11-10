@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 007a8e5cb98d76f5bf36f14e7730f96b7ae86457
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cae282a1402f7c69a68904f4ed5b74c983a156ac
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987684"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960050"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use esta API para criar um novo evento em um calendário. O calendário pode ser um para um [usuário](../resources/user.md)ou o calendário padrão de um [grupo](../resources/group.md)do Microsoft 365. 
+Use esta API para criar um novo evento em um calendário. O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Microsoft 365. 
 
 ## <a name="permissions"></a>Permissões
 Dependendo do tipo de calendário em que o evento se encontra e do tipo de permissão (delegada ou aplicativo) solicitada, para chamar essa API é necessário ter umas das seguintes permissões. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -68,7 +68,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 ### <a name="example-1-create-an-event-in-a-specific-calendar"></a>Exemplo 1: criar um evento em um calendário específico
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir cria um evento em um calendário específico e atribui ao evento um valor opcional de **TransactionId** .
+O exemplo a seguir cria um evento em um calendário específico e atribui ao evento um valor opcional **transactionId**.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 
@@ -121,6 +121,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -281,6 +285,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-with-online-meeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-calendar-with-online-meeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

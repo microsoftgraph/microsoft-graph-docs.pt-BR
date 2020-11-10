@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9c1195c0f2c7d76a163ad9f3194ea02e96c5982f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d030adbe4ccaf4d0f92e69a402b6a089d92ba211
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987446"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959770"
 ---
 # <a name="call-changescreensharingrole"></a>Call: changeScreenSharingRole
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Permitir que os aplicativos compartilhem conteúdo de tela com os participantes de uma chamada de grupo.
 
-> **Observação:** Isso só é suportado para chamadas de grupo que usam mídia hospedada em aplicativos.
+> **Observação:** Isso só é suportado para chamadas de grupo que usam App-Hosted mídia.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -85,6 +85,10 @@ Content-Length: 24
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-changescreensharingrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-changescreensharingrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
