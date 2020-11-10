@@ -5,32 +5,32 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 12c3c9a8718ae0333282a07e1bf062ed141191d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c17e56fb6fe0f6eb963d30beb35dc867955cea3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019968"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976880"
 ---
-# <a name="update-openshift"></a><span data-ttu-id="a24b3-103">Atualizar openShift</span><span class="sxs-lookup"><span data-stu-id="a24b3-103">Update openShift</span></span>
+# <a name="update-openshift"></a><span data-ttu-id="d0507-103">Atualizar openShift</span><span class="sxs-lookup"><span data-stu-id="d0507-103">Update openShift</span></span>
 
-<span data-ttu-id="a24b3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a24b3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d0507-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d0507-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a24b3-105">Atualiza as propriedades de um objeto [openShift](../resources/openshift.md) .</span><span class="sxs-lookup"><span data-stu-id="a24b3-105">Update the properties of an [openShift](../resources/openshift.md) object.</span></span>
+<span data-ttu-id="d0507-105">Atualiza as propriedades de um objeto [openShift](../resources/openshift.md) .</span><span class="sxs-lookup"><span data-stu-id="d0507-105">Update the properties of an [openShift](../resources/openshift.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a24b3-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a24b3-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d0507-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d0507-106">Permissions</span></span>
 
-<span data-ttu-id="a24b3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a24b3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d0507-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d0507-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a24b3-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a24b3-109">Permission type</span></span>                        | <span data-ttu-id="a24b3-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a24b3-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d0507-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d0507-109">Permission type</span></span>                        | <span data-ttu-id="d0507-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d0507-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a24b3-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a24b3-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="a24b3-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a24b3-112">Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="a24b3-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a24b3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a24b3-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a24b3-114">Not supported.</span></span> |
-| <span data-ttu-id="a24b3-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a24b3-115">Application</span></span>                            | <span data-ttu-id="a24b3-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a24b3-116">Not supported.</span></span> |
+| <span data-ttu-id="d0507-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d0507-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="d0507-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0507-112">Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="d0507-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d0507-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d0507-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d0507-114">Not supported.</span></span> |
+| <span data-ttu-id="d0507-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d0507-115">Application</span></span>                            | <span data-ttu-id="d0507-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d0507-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a24b3-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a24b3-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d0507-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d0507-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,34 +38,34 @@ ms.locfileid: "48019968"
 PUT /teams/{id}/schedule/openShifts/{openShiftId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a24b3-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a24b3-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d0507-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d0507-118">Request headers</span></span>
 
-| <span data-ttu-id="a24b3-119">Nome</span><span class="sxs-lookup"><span data-stu-id="a24b3-119">Name</span></span>       | <span data-ttu-id="a24b3-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="a24b3-120">Description</span></span>|
+| <span data-ttu-id="d0507-119">Nome</span><span class="sxs-lookup"><span data-stu-id="d0507-119">Name</span></span>       | <span data-ttu-id="d0507-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="d0507-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="a24b3-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="a24b3-121">Authorization</span></span> | <span data-ttu-id="a24b3-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a24b3-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a24b3-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="a24b3-124">Content-type</span></span> | <span data-ttu-id="a24b3-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a24b3-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="d0507-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="d0507-121">Authorization</span></span> | <span data-ttu-id="d0507-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d0507-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d0507-124">Content-type</span><span class="sxs-lookup"><span data-stu-id="d0507-124">Content-type</span></span> | <span data-ttu-id="d0507-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d0507-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a24b3-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a24b3-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d0507-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d0507-127">Request body</span></span>
 
-<span data-ttu-id="a24b3-128">Forneça o objeto [openshift](../resources/openshift.md) modificado no corpo da solicitação para este método.</span><span class="sxs-lookup"><span data-stu-id="a24b3-128">Provide the modified [openshift](../resources/openshift.md) object in the request body for this method.</span></span>
+<span data-ttu-id="d0507-128">Forneça o objeto [openshift](../resources/openshift.md) modificado no corpo da solicitação para este método.</span><span class="sxs-lookup"><span data-stu-id="d0507-128">Provide the modified [openshift](../resources/openshift.md) object in the request body for this method.</span></span>
 
-| <span data-ttu-id="a24b3-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a24b3-129">Property</span></span>     | <span data-ttu-id="a24b3-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="a24b3-130">Type</span></span>        | <span data-ttu-id="a24b3-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="a24b3-131">Description</span></span> |
+| <span data-ttu-id="d0507-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d0507-129">Property</span></span>     | <span data-ttu-id="d0507-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="d0507-130">Type</span></span>        | <span data-ttu-id="d0507-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="d0507-131">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="a24b3-132">draftOpenShift</span><span class="sxs-lookup"><span data-stu-id="a24b3-132">draftOpenShift</span></span>|<span data-ttu-id="a24b3-133">openShiftItem</span><span class="sxs-lookup"><span data-stu-id="a24b3-133">openShiftItem</span></span>|<span data-ttu-id="a24b3-134">Um turno aberto não publicado.</span><span class="sxs-lookup"><span data-stu-id="a24b3-134">An unpublished open shift.</span></span>|
-|<span data-ttu-id="a24b3-135">schedulingGroupId</span><span class="sxs-lookup"><span data-stu-id="a24b3-135">schedulingGroupId</span></span>|<span data-ttu-id="a24b3-136">String</span><span class="sxs-lookup"><span data-stu-id="a24b3-136">String</span></span>| <span data-ttu-id="a24b3-137">ID do grupo de agendamento.</span><span class="sxs-lookup"><span data-stu-id="a24b3-137">Scheduling group id.</span></span> |
-|<span data-ttu-id="a24b3-138">sharedOpenShift</span><span class="sxs-lookup"><span data-stu-id="a24b3-138">sharedOpenShift</span></span>|<span data-ttu-id="a24b3-139">openShiftItem</span><span class="sxs-lookup"><span data-stu-id="a24b3-139">openShiftItem</span></span>|<span data-ttu-id="a24b3-140">Um turno aberto publicado.</span><span class="sxs-lookup"><span data-stu-id="a24b3-140">A published open shift.</span></span>|
+|<span data-ttu-id="d0507-132">draftOpenShift</span><span class="sxs-lookup"><span data-stu-id="d0507-132">draftOpenShift</span></span>|<span data-ttu-id="d0507-133">openShiftItem</span><span class="sxs-lookup"><span data-stu-id="d0507-133">openShiftItem</span></span>|<span data-ttu-id="d0507-134">Um turno aberto não publicado.</span><span class="sxs-lookup"><span data-stu-id="d0507-134">An unpublished open shift.</span></span>|
+|<span data-ttu-id="d0507-135">schedulingGroupId</span><span class="sxs-lookup"><span data-stu-id="d0507-135">schedulingGroupId</span></span>|<span data-ttu-id="d0507-136">String</span><span class="sxs-lookup"><span data-stu-id="d0507-136">String</span></span>| <span data-ttu-id="d0507-137">ID do grupo de agendamento.</span><span class="sxs-lookup"><span data-stu-id="d0507-137">Scheduling group id.</span></span> |
+|<span data-ttu-id="d0507-138">sharedOpenShift</span><span class="sxs-lookup"><span data-stu-id="d0507-138">sharedOpenShift</span></span>|<span data-ttu-id="d0507-139">openShiftItem</span><span class="sxs-lookup"><span data-stu-id="d0507-139">openShiftItem</span></span>|<span data-ttu-id="d0507-140">Um turno aberto publicado.</span><span class="sxs-lookup"><span data-stu-id="d0507-140">A published open shift.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a24b3-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="a24b3-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d0507-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="d0507-141">Response</span></span>
 
-<span data-ttu-id="a24b3-142">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [openShift](../resources/openshift.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a24b3-142">If successful, this method returns a `200 OK` response code and an updated [openShift](../resources/openshift.md) object in the response body.</span></span>
+<span data-ttu-id="d0507-142">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [openShift](../resources/openshift.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d0507-142">If successful, this method returns a `200 OK` response code and an updated [openShift](../resources/openshift.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="a24b3-143">Exemplos</span><span class="sxs-lookup"><span data-stu-id="a24b3-143">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d0507-143">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d0507-143">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="a24b3-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a24b3-144">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d0507-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d0507-144">Request</span></span>
 
-<span data-ttu-id="a24b3-145">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a24b3-145">The following is an example of the request.</span></span>
+<span data-ttu-id="d0507-145">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d0507-145">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="a24b3-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="a24b3-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d0507-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="d0507-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openshift"
@@ -97,26 +97,30 @@ Content-type: application/json
 "draftOpenShift": null
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a24b3-147">C#</span><span class="sxs-lookup"><span data-stu-id="a24b3-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d0507-147">C#</span><span class="sxs-lookup"><span data-stu-id="d0507-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-openshift-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a24b3-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a24b3-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d0507-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d0507-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-openshift-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a24b3-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a24b3-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d0507-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d0507-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-openshift-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="d0507-150">Java</span><span class="sxs-lookup"><span data-stu-id="d0507-150">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-openshift-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a24b3-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="a24b3-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d0507-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="d0507-151">Response</span></span>
 
-<span data-ttu-id="a24b3-151">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a24b3-151">The following is an example of the response.</span></span>
+<span data-ttu-id="d0507-152">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d0507-152">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="a24b3-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a24b3-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d0507-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d0507-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
