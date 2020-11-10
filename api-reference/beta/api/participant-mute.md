@@ -5,68 +5,68 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8d3e93b73894ee93e642993dbfa575e43c72181e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 16839001c234f63c7c1651b2abdb6d431df0a0c9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040361"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968739"
 ---
-# <a name="participant-mute"></a><span data-ttu-id="dac13-103">participante: sem áudio</span><span class="sxs-lookup"><span data-stu-id="dac13-103">participant: mute</span></span>
+# <a name="participant-mute"></a><span data-ttu-id="b7832-103">participante: sem áudio</span><span class="sxs-lookup"><span data-stu-id="b7832-103">participant: mute</span></span>
 
-<span data-ttu-id="dac13-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dac13-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b7832-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b7832-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dac13-105">Ativar mudo de um participante específico na chamada.</span><span class="sxs-lookup"><span data-stu-id="dac13-105">Mute a specific participant in the call.</span></span>
+<span data-ttu-id="b7832-105">Ativar mudo de um participante específico na chamada.</span><span class="sxs-lookup"><span data-stu-id="b7832-105">Mute a specific participant in the call.</span></span>
 
-<span data-ttu-id="dac13-106">Este é um servidor sem som, o que significa que o servidor irá descartar todos os pacotes de áudio desse participante, mesmo que o participante continue a transmitir áudio.</span><span class="sxs-lookup"><span data-stu-id="dac13-106">This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.</span></span>
+<span data-ttu-id="b7832-106">Este é um servidor sem som, o que significa que o servidor irá descartar todos os pacotes de áudio desse participante, mesmo que o participante continue a transmitir áudio.</span><span class="sxs-lookup"><span data-stu-id="b7832-106">This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.</span></span>
 
-<span data-ttu-id="dac13-107">Para obter mais informações sobre como lidar com operações sem som, consulte [muteParticipantOperation](../resources/muteParticipantoperation.md).</span><span class="sxs-lookup"><span data-stu-id="dac13-107">For more information about how to handle mute operations, see [muteParticipantOperation](../resources/muteParticipantoperation.md).</span></span>
+<span data-ttu-id="b7832-107">Para obter mais informações sobre como lidar com operações sem som, consulte [muteParticipantOperation](../resources/muteParticipantoperation.md).</span><span class="sxs-lookup"><span data-stu-id="b7832-107">For more information about how to handle mute operations, see [muteParticipantOperation](../resources/muteParticipantoperation.md).</span></span>
 
-> <span data-ttu-id="dac13-108">**Observação:** Este método só tem suporte para chamadas de grupo.</span><span class="sxs-lookup"><span data-stu-id="dac13-108">**Note:** This method is only supported for group calls.</span></span>
+> <span data-ttu-id="b7832-108">**Observação:** Este método só tem suporte para chamadas de grupo.</span><span class="sxs-lookup"><span data-stu-id="b7832-108">**Note:** This method is only supported for group calls.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dac13-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="dac13-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b7832-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="b7832-109">Permissions</span></span>
 
-| <span data-ttu-id="dac13-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dac13-110">Permission type</span></span> | <span data-ttu-id="dac13-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dac13-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b7832-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b7832-110">Permission type</span></span> | <span data-ttu-id="b7832-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b7832-111">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="dac13-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dac13-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="dac13-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="dac13-113">Not Supported</span></span>        |
-| <span data-ttu-id="dac13-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dac13-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dac13-115">Não suportado</span><span class="sxs-lookup"><span data-stu-id="dac13-115">Not Supported</span></span>        |
-| <span data-ttu-id="dac13-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dac13-116">Application</span></span>     | <span data-ttu-id="dac13-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="dac13-117">None</span></span>                                        |
+| <span data-ttu-id="b7832-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b7832-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="b7832-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="b7832-113">Not Supported</span></span>        |
+| <span data-ttu-id="b7832-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b7832-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7832-115">Não suportado</span><span class="sxs-lookup"><span data-stu-id="b7832-115">Not Supported</span></span>        |
+| <span data-ttu-id="b7832-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b7832-116">Application</span></span>     | <span data-ttu-id="b7832-117">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b7832-117">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="dac13-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dac13-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b7832-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b7832-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
 POST /communications/calls/{id}/participants/{id}/mute
 ```
-> <span data-ttu-id="dac13-119">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="dac13-119">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="dac13-120">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="dac13-120">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="b7832-119">**Observação:** o caminho `/app` foi preterido.</span><span class="sxs-lookup"><span data-stu-id="b7832-119">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="b7832-120">Daqui em diante, use o caminho `/communications`.</span><span class="sxs-lookup"><span data-stu-id="b7832-120">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="dac13-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dac13-121">Request headers</span></span>
-| <span data-ttu-id="dac13-122">Nome</span><span class="sxs-lookup"><span data-stu-id="dac13-122">Name</span></span>          | <span data-ttu-id="dac13-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="dac13-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="b7832-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b7832-121">Request headers</span></span>
+| <span data-ttu-id="b7832-122">Nome</span><span class="sxs-lookup"><span data-stu-id="b7832-122">Name</span></span>          | <span data-ttu-id="b7832-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7832-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="dac13-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="dac13-124">Authorization</span></span> | <span data-ttu-id="dac13-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dac13-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="dac13-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="dac13-127">Content-type</span></span>  | <span data-ttu-id="dac13-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dac13-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="b7832-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="b7832-124">Authorization</span></span> | <span data-ttu-id="b7832-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b7832-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b7832-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="b7832-127">Content-type</span></span>  | <span data-ttu-id="b7832-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b7832-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dac13-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dac13-130">Request body</span></span>
-<span data-ttu-id="dac13-131">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="dac13-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b7832-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b7832-130">Request body</span></span>
+<span data-ttu-id="b7832-131">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b7832-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="dac13-132">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="dac13-132">Parameter</span></span>      | <span data-ttu-id="dac13-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="dac13-133">Type</span></span>    |<span data-ttu-id="dac13-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="dac13-134">Description</span></span>|
+| <span data-ttu-id="b7832-132">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="b7832-132">Parameter</span></span>      | <span data-ttu-id="b7832-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="b7832-133">Type</span></span>    |<span data-ttu-id="b7832-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7832-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dac13-135">clientContext</span><span class="sxs-lookup"><span data-stu-id="dac13-135">clientContext</span></span>|<span data-ttu-id="dac13-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="dac13-136">String</span></span>|<span data-ttu-id="dac13-137">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="dac13-137">Unique Client Context string.</span></span> <span data-ttu-id="dac13-138">O limite máximo é de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="dac13-138">Max limit is 256 chars.</span></span>|
+|<span data-ttu-id="b7832-135">clientContext</span><span class="sxs-lookup"><span data-stu-id="b7832-135">clientContext</span></span>|<span data-ttu-id="b7832-136">String</span><span class="sxs-lookup"><span data-stu-id="b7832-136">String</span></span>|<span data-ttu-id="b7832-137">Cadeia de caracteres de contexto de cliente exclusivo.</span><span class="sxs-lookup"><span data-stu-id="b7832-137">Unique Client Context string.</span></span> <span data-ttu-id="b7832-138">O limite máximo é de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="b7832-138">Max limit is 256 chars.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="dac13-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="dac13-139">Response</span></span>
-<span data-ttu-id="dac13-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dac13-140">If successful, this method returns a `200 OK` response code and a [muteParticipantOperation](../resources/muteParticipantoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b7832-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7832-139">Response</span></span>
+<span data-ttu-id="b7832-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [muteParticipantOperation](../resources/muteParticipantoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b7832-140">If successful, this method returns a `200 OK` response code and a [muteParticipantOperation](../resources/muteParticipantoperation.md) object in the response body.</span></span>
 
-><span data-ttu-id="dac13-141">**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.</span><span class="sxs-lookup"><span data-stu-id="dac13-141">**Note:** When this API returns a successful response, all participants will receive a roster update.</span></span>
+><span data-ttu-id="b7832-141">**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.</span><span class="sxs-lookup"><span data-stu-id="b7832-141">**Note:** When this API returns a successful response, all participants will receive a roster update.</span></span>
 
-## <a name="example---mute-specific-participant"></a><span data-ttu-id="dac13-142">Exemplo-sem áudio o participante específico</span><span class="sxs-lookup"><span data-stu-id="dac13-142">Example - Mute specific participant</span></span>
-<span data-ttu-id="dac13-143">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="dac13-143">The following example shows how to call this API.</span></span>
+## <a name="example---mute-specific-participant"></a><span data-ttu-id="b7832-142">Exemplo-sem áudio o participante específico</span><span class="sxs-lookup"><span data-stu-id="b7832-142">Example - Mute specific participant</span></span>
+<span data-ttu-id="b7832-143">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="b7832-143">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="dac13-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dac13-144">Request</span></span>
-<span data-ttu-id="dac13-145">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="dac13-145">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="b7832-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b7832-144">Request</span></span>
+<span data-ttu-id="b7832-145">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="b7832-145">The following example shows the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="dac13-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="dac13-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b7832-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="b7832-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-mute"
@@ -79,23 +79,27 @@ Content-Type: application/json
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="dac13-147">C#</span><span class="sxs-lookup"><span data-stu-id="dac13-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b7832-147">C#</span><span class="sxs-lookup"><span data-stu-id="b7832-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-mute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="dac13-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dac13-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b7832-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b7832-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-mute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="dac13-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dac13-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b7832-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b7832-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-mute-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="b7832-150">Java</span><span class="sxs-lookup"><span data-stu-id="b7832-150">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/participant-mute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="dac13-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="dac13-150">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b7832-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="b7832-151">Response</span></span>
 
-> <span data-ttu-id="dac13-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dac13-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span> 
+> <span data-ttu-id="b7832-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b7832-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span> 
 
 
 <!-- {
@@ -117,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="dac13-153">Lista de notificação atualizada com o participante sem som</span><span class="sxs-lookup"><span data-stu-id="dac13-153">Notification - roster updated with participant muted</span></span>
+##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="b7832-154">Lista de notificação atualizada com o participante sem som</span><span class="sxs-lookup"><span data-stu-id="b7832-154">Notification - roster updated with participant muted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -5,62 +5,62 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d4847e1cc1e80086b9837afad7e847f7ff092e95
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: afbf37fe04eb049f399296ff6d7d74fe7d1c0f47
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372716"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968303"
 ---
-# <a name="update-printershare"></a><span data-ttu-id="c6ff9-104">Atualizar PrinterShare</span><span class="sxs-lookup"><span data-stu-id="c6ff9-104">Update printershare</span></span>
+# <a name="update-printershare"></a><span data-ttu-id="8036b-104">Atualizar PrinterShare</span><span class="sxs-lookup"><span data-stu-id="8036b-104">Update printershare</span></span>
 
-<span data-ttu-id="c6ff9-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c6ff9-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8036b-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8036b-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c6ff9-106">Atualizar as propriedades de um compartilhamento de impressora.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-106">Update the properties of a printer share.</span></span> <span data-ttu-id="c6ff9-107">Este método pode ser usado para trocar [impressoras](../resources/printer.md).</span><span class="sxs-lookup"><span data-stu-id="c6ff9-107">This method can be used to swap [printers](../resources/printer.md).</span></span>
+<span data-ttu-id="8036b-106">Atualizar as propriedades de um compartilhamento de impressora.</span><span class="sxs-lookup"><span data-stu-id="8036b-106">Update the properties of a printer share.</span></span> <span data-ttu-id="8036b-107">Este método pode ser usado para trocar [impressoras](../resources/printer.md).</span><span class="sxs-lookup"><span data-stu-id="8036b-107">This method can be used to swap [printers](../resources/printer.md).</span></span>
 
-<span data-ttu-id="c6ff9-108">Por exemplo, se um dispositivo de impressora física for interrompido, um administrador poderá registrar um novo dispositivo de [impressora](../resources/printer.md) e atualizar esse [printerShare](../resources/printerShare.md) para apontar para a nova impressora sem exigir que os usuários executem qualquer ação.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-108">For example, if a physical printer device breaks, an administrator can register a new [printer](../resources/printer.md) device and update this [printerShare](../resources/printerShare.md) to point to the new printer without requiring users to take any action.</span></span>
+<span data-ttu-id="8036b-108">Por exemplo, se um dispositivo de impressora física for interrompido, um administrador poderá registrar um novo dispositivo de [impressora](../resources/printer.md) e atualizar esse [printerShare](../resources/printerShare.md) para apontar para a nova impressora sem exigir que os usuários executem qualquer ação.</span><span class="sxs-lookup"><span data-stu-id="8036b-108">For example, if a physical printer device breaks, an administrator can register a new [printer](../resources/printer.md) device and update this [printerShare](../resources/printerShare.md) to point to the new printer without requiring users to take any action.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c6ff9-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="c6ff9-109">Permissions</span></span>
-<span data-ttu-id="c6ff9-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c6ff9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8036b-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="8036b-109">Permissions</span></span>
+<span data-ttu-id="8036b-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8036b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="c6ff9-112">Além das permissões a seguir, o usuário ou o locatário do aplicativo deve ter uma assinatura universal de impressão ativa.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-112">In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.</span></span> <span data-ttu-id="c6ff9-113">O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="c6ff9-113">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="8036b-112">Além das permissões a seguir, o usuário ou o locatário do aplicativo deve ter uma assinatura universal de impressão ativa.</span><span class="sxs-lookup"><span data-stu-id="8036b-112">In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.</span></span> <span data-ttu-id="8036b-113">O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="8036b-113">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="c6ff9-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c6ff9-114">Permission type</span></span> | <span data-ttu-id="c6ff9-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c6ff9-115">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="8036b-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8036b-114">Permission type</span></span> | <span data-ttu-id="8036b-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8036b-115">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="c6ff9-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c6ff9-116">Delegated (work or school account)</span></span>| <span data-ttu-id="c6ff9-117">PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c6ff9-117">PrinterShare.ReadWrite.All</span></span> |
-|<span data-ttu-id="c6ff9-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c6ff9-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c6ff9-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-119">Not Supported.</span></span>|
-|<span data-ttu-id="c6ff9-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c6ff9-120">Application</span></span>|<span data-ttu-id="c6ff9-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-121">Not Supported.</span></span>|
+|<span data-ttu-id="8036b-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8036b-116">Delegated (work or school account)</span></span>| <span data-ttu-id="8036b-117">PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8036b-117">PrinterShare.ReadWrite.All</span></span> |
+|<span data-ttu-id="8036b-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8036b-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8036b-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8036b-119">Not Supported.</span></span>|
+|<span data-ttu-id="8036b-120">Application</span><span class="sxs-lookup"><span data-stu-id="8036b-120">Application</span></span>|<span data-ttu-id="8036b-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8036b-121">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c6ff9-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c6ff9-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8036b-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8036b-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /print/shares/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c6ff9-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c6ff9-123">Request headers</span></span>
-| <span data-ttu-id="c6ff9-124">Nome</span><span class="sxs-lookup"><span data-stu-id="c6ff9-124">Name</span></span>       | <span data-ttu-id="c6ff9-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="c6ff9-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8036b-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8036b-123">Request headers</span></span>
+| <span data-ttu-id="8036b-124">Nome</span><span class="sxs-lookup"><span data-stu-id="8036b-124">Name</span></span>       | <span data-ttu-id="8036b-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="8036b-125">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="c6ff9-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="c6ff9-126">Authorization</span></span> | <span data-ttu-id="c6ff9-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c6ff9-129">Content-type</span><span class="sxs-lookup"><span data-stu-id="c6ff9-129">Content-type</span></span>  | <span data-ttu-id="c6ff9-p106">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-p106">application/json. Required.</span></span>|
+| <span data-ttu-id="8036b-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="8036b-126">Authorization</span></span> | <span data-ttu-id="8036b-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8036b-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8036b-129">Content-type</span><span class="sxs-lookup"><span data-stu-id="8036b-129">Content-type</span></span>  | <span data-ttu-id="8036b-p106">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8036b-p106">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c6ff9-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c6ff9-132">Request body</span></span>
-<span data-ttu-id="c6ff9-133">No corpo da solicitação, forneça os valores para campos [printerShare](../resources/printershare.md) relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-133">In the request body, supply the values for relevant [printerShare](../resources/printershare.md) fields that should be updated.</span></span> <span data-ttu-id="c6ff9-134">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-134">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="c6ff9-135">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-135">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8036b-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8036b-132">Request body</span></span>
+<span data-ttu-id="8036b-133">No corpo da solicitação, forneça os valores para campos [printerShare](../resources/printershare.md) relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="8036b-133">In the request body, supply the values for relevant [printerShare](../resources/printershare.md) fields that should be updated.</span></span> <span data-ttu-id="8036b-134">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="8036b-134">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="8036b-135">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="8036b-135">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="c6ff9-136">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c6ff9-136">Property</span></span>     | <span data-ttu-id="c6ff9-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="c6ff9-137">Type</span></span>        | <span data-ttu-id="c6ff9-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="c6ff9-138">Description</span></span> |
+| <span data-ttu-id="8036b-136">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8036b-136">Property</span></span>     | <span data-ttu-id="8036b-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="8036b-137">Type</span></span>        | <span data-ttu-id="8036b-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="8036b-138">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="c6ff9-139">impressora</span><span class="sxs-lookup"><span data-stu-id="c6ff9-139">printer</span></span>|<span data-ttu-id="c6ff9-140">String</span><span class="sxs-lookup"><span data-stu-id="c6ff9-140">String</span></span>|<span data-ttu-id="c6ff9-141">A impressora à qual esse compartilhamento de impressora está relacionado.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-141">The printer that this printer share is related to.</span></span> <span data-ttu-id="c6ff9-142">Use a `printer@odata.bind` sintaxe, conforme mostrado no exemplo a seguir, para atualizar a impressora à qual este compartilhamento de impressora está associado.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-142">Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.</span></span>|
+|<span data-ttu-id="8036b-139">impressora</span><span class="sxs-lookup"><span data-stu-id="8036b-139">printer</span></span>|<span data-ttu-id="8036b-140">String</span><span class="sxs-lookup"><span data-stu-id="8036b-140">String</span></span>|<span data-ttu-id="8036b-141">A impressora à qual esse compartilhamento de impressora está relacionado.</span><span class="sxs-lookup"><span data-stu-id="8036b-141">The printer that this printer share is related to.</span></span> <span data-ttu-id="8036b-142">Use a `printer@odata.bind` sintaxe, conforme mostrado no exemplo a seguir, para atualizar a impressora à qual este compartilhamento de impressora está associado.</span><span class="sxs-lookup"><span data-stu-id="8036b-142">Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.</span></span>|
 
-><span data-ttu-id="c6ff9-143">**Observação:** Não há suporte para a atualização do nome de compartilhamento da impressora.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-143">**Note:** Updating the printer share name is not supported.</span></span>
+><span data-ttu-id="8036b-143">**Observação:** Não há suporte para a atualização do nome de compartilhamento da impressora.</span><span class="sxs-lookup"><span data-stu-id="8036b-143">**Note:** Updating the printer share name is not supported.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c6ff9-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="c6ff9-144">Response</span></span>
-<span data-ttu-id="c6ff9-145">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printerShare](../resources/printershare.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-145">If successful, this method returns a `200 OK` response code and an updated [printerShare](../resources/printershare.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c6ff9-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c6ff9-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c6ff9-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c6ff9-147">Request</span></span>
-<span data-ttu-id="c6ff9-148">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-148">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="8036b-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="8036b-144">Response</span></span>
+<span data-ttu-id="8036b-145">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printerShare](../resources/printershare.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8036b-145">If successful, this method returns a `200 OK` response code and an updated [printerShare](../resources/printershare.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8036b-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8036b-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8036b-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8036b-147">Request</span></span>
+<span data-ttu-id="8036b-148">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8036b-148">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="c6ff9-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="c6ff9-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8036b-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="8036b-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printershare"
@@ -75,23 +75,27 @@ Content-length: 109
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="c6ff9-150">C#</span><span class="sxs-lookup"><span data-stu-id="c6ff9-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8036b-150">C#</span><span class="sxs-lookup"><span data-stu-id="8036b-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-printershare-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c6ff9-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c6ff9-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8036b-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8036b-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-printershare-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c6ff9-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c6ff9-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8036b-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8036b-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printershare-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="8036b-153">Java</span><span class="sxs-lookup"><span data-stu-id="8036b-153">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printershare-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="c6ff9-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="c6ff9-153">Response</span></span>
-<span data-ttu-id="c6ff9-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-154">The following is an example of the response.</span></span>
-><span data-ttu-id="c6ff9-p109">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c6ff9-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8036b-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="8036b-154">Response</span></span>
+<span data-ttu-id="8036b-155">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8036b-155">The following is an example of the response.</span></span>
+><span data-ttu-id="8036b-p109">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8036b-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

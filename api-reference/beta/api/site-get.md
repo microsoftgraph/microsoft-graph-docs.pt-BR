@@ -6,36 +6,36 @@ title: Obter um Site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8eeb912a8655b0020733a5b94dea9cb6ede22c5c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba9465888605ae5ba84b0a24d62b79644a302ec5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014032"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969783"
 ---
-# <a name="get-a-site-resource"></a><span data-ttu-id="2e181-103">Obter um recurso de site</span><span class="sxs-lookup"><span data-stu-id="2e181-103">Get a site resource</span></span>
+# <a name="get-a-site-resource"></a><span data-ttu-id="06aeb-103">Obter um recurso de site</span><span class="sxs-lookup"><span data-stu-id="06aeb-103">Get a site resource</span></span>
 
-<span data-ttu-id="2e181-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2e181-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="06aeb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06aeb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2e181-p101">Recupere as propriedades e as relações de um recurso [site][]. Um recurso **site** representa um site de equipe no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="2e181-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
+<span data-ttu-id="06aeb-p101">Recupere as propriedades e as relações de um recurso [site][]. Um recurso **site** representa um site de equipe no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="06aeb-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
 
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="2e181-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="2e181-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="06aeb-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="06aeb-108">Permissions</span></span>
 
-<span data-ttu-id="2e181-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2e181-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="06aeb-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="06aeb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2e181-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2e181-111">Permission type</span></span>      | <span data-ttu-id="2e181-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2e181-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="06aeb-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="06aeb-111">Permission type</span></span>      | <span data-ttu-id="06aeb-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="06aeb-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2e181-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2e181-113">Delegated (work or school account)</span></span> | <span data-ttu-id="2e181-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e181-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2e181-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2e181-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2e181-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2e181-116">Not supported.</span></span>    |
-|<span data-ttu-id="2e181-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2e181-117">Application</span></span> | <span data-ttu-id="2e181-118">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e181-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="06aeb-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="06aeb-113">Delegated (work or school account)</span></span> | <span data-ttu-id="06aeb-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06aeb-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="06aeb-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="06aeb-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="06aeb-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="06aeb-116">Not supported.</span></span>    |
+|<span data-ttu-id="06aeb-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="06aeb-117">Application</span></span> | <span data-ttu-id="06aeb-118">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06aeb-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-the-tenants-root-site"></a><span data-ttu-id="2e181-119">Obter o site raiz do locatário</span><span class="sxs-lookup"><span data-stu-id="2e181-119">Get the tenant's root site</span></span>
+## <a name="get-the-tenants-root-site"></a><span data-ttu-id="06aeb-119">Obter o site raiz do locatário</span><span class="sxs-lookup"><span data-stu-id="06aeb-119">Get the tenant's root site</span></span>
 
-<span data-ttu-id="2e181-120">Para acessar o site raiz do SharePoint dentro de um locatário:</span><span class="sxs-lookup"><span data-stu-id="2e181-120">To access the root SharePoint site within a tenant:</span></span>
+<span data-ttu-id="06aeb-120">Para acessar o site raiz do SharePoint dentro de um locatário:</span><span class="sxs-lookup"><span data-stu-id="06aeb-120">To access the root SharePoint site within a tenant:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,49 +44,53 @@ GET /sites/root
 GET /sites/contoso.sharepoint.com
 ```
 
-## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="2e181-121">Acesse um site pela URL relativa do servidor</span><span class="sxs-lookup"><span data-stu-id="2e181-121">Access a site by server-relative URL</span></span>
+## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="06aeb-121">Acesse um site pela URL relativa do servidor</span><span class="sxs-lookup"><span data-stu-id="06aeb-121">Access a site by server-relative URL</span></span>
 
-<span data-ttu-id="2e181-122">Se você tiver a URL relativa do servidor para um recurso **site**, crie uma solicitação da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="2e181-122">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
+<span data-ttu-id="06aeb-122">Se você tiver a URL relativa do servidor para um recurso **site** , crie uma solicitação da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="06aeb-122">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
 
 ```http
 GET /sites/{hostname}:/{server-relative-path}
 ```
 
-## <a name="access-a-group-team-site"></a><span data-ttu-id="2e181-123">Acesse um site de equipe do grupo</span><span class="sxs-lookup"><span data-stu-id="2e181-123">Access a group team site</span></span>
+## <a name="access-a-group-team-site"></a><span data-ttu-id="06aeb-123">Acesse um site de equipe do grupo</span><span class="sxs-lookup"><span data-stu-id="06aeb-123">Access a group team site</span></span>
 
-<span data-ttu-id="2e181-124">Para acessar o site de equipe de um grupo:</span><span class="sxs-lookup"><span data-stu-id="2e181-124">To access the team site for a group:</span></span>
+<span data-ttu-id="06aeb-124">Para acessar o site de equipe de um grupo:</span><span class="sxs-lookup"><span data-stu-id="06aeb-124">To access the team site for a group:</span></span>
 
 ```http
 GET /groups/{group-id}/sites/root
 ```
 
-## <a name="example"></a><span data-ttu-id="2e181-125">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2e181-125">Example</span></span>
+## <a name="example"></a><span data-ttu-id="06aeb-125">Exemplo</span><span class="sxs-lookup"><span data-stu-id="06aeb-125">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2e181-126">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2e181-126">Request</span></span>
+### <a name="request"></a><span data-ttu-id="06aeb-126">Solicitação</span><span class="sxs-lookup"><span data-stu-id="06aeb-126">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2e181-127">HTTP</span><span class="sxs-lookup"><span data-stu-id="2e181-127">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="06aeb-127">HTTP</span><span class="sxs-lookup"><span data-stu-id="06aeb-127">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-site" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="2e181-128">C#</span><span class="sxs-lookup"><span data-stu-id="2e181-128">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="06aeb-128">C#</span><span class="sxs-lookup"><span data-stu-id="06aeb-128">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2e181-129">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2e181-129">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="06aeb-129">JavaScript</span><span class="sxs-lookup"><span data-stu-id="06aeb-129">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2e181-130">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2e181-130">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="06aeb-130">Objective-C</span><span class="sxs-lookup"><span data-stu-id="06aeb-130">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="06aeb-131">Java</span><span class="sxs-lookup"><span data-stu-id="06aeb-131">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="2e181-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e181-131">Response</span></span>
+### <a name="response"></a><span data-ttu-id="06aeb-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="06aeb-132">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
