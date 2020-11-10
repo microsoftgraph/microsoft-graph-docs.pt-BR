@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: e908ce1b6364041a94a8d6ab42c8da04853b8b6a
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 557e814b27c7a3b198482de3e2d5da556454a876
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372828"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979772"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 
@@ -31,7 +31,7 @@ Somente o aplicativo que registrou a impressora tem permissão para atualizar a 
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Printer.ReadWrite.All |
+|Application| Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -105,6 +105,10 @@ Content-length: 124
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

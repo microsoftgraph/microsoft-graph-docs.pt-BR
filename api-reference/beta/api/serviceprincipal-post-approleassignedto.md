@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 71477c07535179d243d998a360c138632e6ca26b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 225292e130c6409c0a022ffd13868f6480e7bb1c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373136"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979684"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>Conceder um appRoleAssignment para uma entidade de serviço
 
@@ -24,7 +24,7 @@ As funções do aplicativo atribuídas às entidades de serviço também são co
 
 Para conceder uma atribuição de função de aplicativo, você precisará de três identificadores:
 
-- `principalId`: A `id` do **usuário**, **grupo** ou cliente **servicePrincipal** ao qual você está atribuindo a função de aplicativo.
+- `principalId`: A `id` do **usuário** , **grupo** ou cliente **servicePrincipal** ao qual você está atribuindo a função de aplicativo.
 - `resourceId`: A `id` do recurso **servicePrincipal** que definiu a função do aplicativo.
 - `appRoleId`: A `id` do **appRole** (definida na entidade de serviço de recurso) para atribuir a um usuário, grupo ou entidade de serviço.
 
@@ -94,6 +94,10 @@ Content-Length: 110
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-approleassignedto-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

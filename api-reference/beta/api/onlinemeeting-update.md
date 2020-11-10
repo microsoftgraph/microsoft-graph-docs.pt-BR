@@ -5,12 +5,12 @@ author: jsandoval-msft
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f8a221a030e4672146b1187d4bcfdbd3f0513ceb
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: a0db330c3bf6bbf182e1b3242a31c5df2c48527e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635590"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980100"
 ---
 # <a name="update-onlinemeeting"></a>Atualizar onlineMeeting
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades **StartDateTime**, **EndDateTime**, **participantes**e **Subject** da [onlineMeeting](../resources/onlinemeeting.md)especificada.
+Atualize as propriedades **StartDateTime** , **EndDateTime** , **participantes** e **Subject** da [onlineMeeting](../resources/onlinemeeting.md)especificada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -57,7 +57,7 @@ PATCH https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 | Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md). Somente as propriedades **StartDateTime**, **EndDateTime**, **participantes**e **Subject** podem ser modificadas. O **StartDateTime** e **EndDateTime** devem aparecer em pares.
+No corpo da solicitação, forneça uma representação JSON do objeto [onlineMeeting](../resources/onlinemeeting.md). Somente as propriedades **StartDateTime** , **EndDateTime** , **participantes** e **Subject** podem ser modificadas. O **StartDateTime** e **EndDateTime** devem aparecer em pares.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-onlinemeeting-request-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/patch-onlinemeeting-request-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

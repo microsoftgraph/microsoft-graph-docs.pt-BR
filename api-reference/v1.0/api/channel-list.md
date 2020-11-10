@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: a9fa24dfb8c191e5d49688e3a5197080d85c3c42
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: a9a2d1815184e5c1b96eba1eafd29161abcd5def
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848938"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979799"
 ---
 # <a name="list-channels"></a>Listar canais
 
@@ -152,7 +152,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType 
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-channels-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-private-channels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 ---
 

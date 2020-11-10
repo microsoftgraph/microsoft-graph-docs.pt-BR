@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 12bfa36bf90984fd3dbe964e1a5cc49884273c18
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 026905fb3d0dc2b0be71bcb5175c6741b63a9fba
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782932"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979818"
 ---
 # <a name="create-printjob-for-a-printer"></a>Criar printJob para uma impressora
 
@@ -27,9 +27,9 @@ Além das permissões a seguir, o locatário do usuário ou do aplicativo deve t
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegada (conta corporativa ou de estudante)| PrintJob. ReadWriteBasic, PrintJob. ReadWrite, PrintJob. ReadWriteBasic. All, PrintJob. ReadWrite. All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Sem suporte. |
+|Delegado (conta corporativa ou de estudante)| PrintJob. ReadWriteBasic, PrintJob. ReadWrite, PrintJob. ReadWriteBasic. All, PrintJob. ReadWrite. All |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Application| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,7 +44,7 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [printJob](../resources/printjob.md) . O objeto printJob só deve conter **configuração** . Todas as propriedades de **configuração** são anuláveis. Todos os outros campos, incluindo IDs de trabalho e documentos, são definidos automaticamente durante a criação do recurso.
+No corpo da solicitação, forneça uma representação JSON de um objeto [printJob](../resources/printjob.md) . O objeto printJob só deve conter **configuração**. Todas as propriedades de **configuração** são anuláveis. Todos os outros campos, incluindo IDs de trabalho e documentos, são definidos automaticamente durante a criação do recurso.
 
 No momento, a impressão universal suporta apenas um **documento** impresso por objeto **printJob** .
 
@@ -107,6 +107,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
