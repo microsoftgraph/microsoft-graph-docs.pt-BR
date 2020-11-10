@@ -5,58 +5,58 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f0986aa744e7c2ec22c5b89dd055966e4ad040b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc49bb62536ec68c7a37331d37e3d9b9bbe329d1
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076607"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967250"
 ---
-# <a name="remove-app-from-team"></a><span data-ttu-id="fb3ea-103">Remover aplicativo da equipe</span><span class="sxs-lookup"><span data-stu-id="fb3ea-103">Remove app from team</span></span>
+# <a name="remove-app-from-team"></a><span data-ttu-id="f03fa-103">Remover aplicativo da equipe</span><span class="sxs-lookup"><span data-stu-id="f03fa-103">Remove app from team</span></span>
 
-<span data-ttu-id="fb3ea-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fb3ea-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f03fa-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f03fa-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fb3ea-105">Desinstala um [aplicativo](../resources/teamsappinstallation.md) da [equipe](../resources/team.md)especificada.</span><span class="sxs-lookup"><span data-stu-id="fb3ea-105">Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="f03fa-105">Desinstala um [aplicativo](../resources/teamsappinstallation.md) da [equipe](../resources/team.md)especificada.</span><span class="sxs-lookup"><span data-stu-id="f03fa-105">Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fb3ea-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="fb3ea-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f03fa-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f03fa-106">Permissions</span></span>
 
-<span data-ttu-id="fb3ea-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fb3ea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f03fa-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f03fa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fb3ea-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fb3ea-109">Permission type</span></span>      | <span data-ttu-id="fb3ea-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fb3ea-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f03fa-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f03fa-109">Permission type</span></span>      | <span data-ttu-id="f03fa-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f03fa-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fb3ea-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fb3ea-111">Delegated (work or school account)</span></span> | <span data-ttu-id="fb3ea-112">TeamsAppInstallation. ReadWriteForTeam, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="fb3ea-112">TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="fb3ea-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fb3ea-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fb3ea-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fb3ea-114">Not supported.</span></span>    |
-|<span data-ttu-id="fb3ea-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fb3ea-115">Application</span></span> | <span data-ttu-id="fb3ea-116">TeamsAppInstallation. ReadWriteForTeam. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="fb3ea-116">TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f03fa-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f03fa-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f03fa-112">TeamsAppInstallation. ReadWriteForTeam, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="f03fa-112">TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f03fa-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f03fa-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f03fa-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f03fa-114">Not supported.</span></span>    |
+|<span data-ttu-id="f03fa-115">Application</span><span class="sxs-lookup"><span data-stu-id="f03fa-115">Application</span></span> | <span data-ttu-id="f03fa-116">TeamsAppInstallation. ReadWriteForTeam. All, Group. ReadWrite. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="f03fa-116">TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fb3ea-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fb3ea-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f03fa-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f03fa-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /teams/{id}/installedApps/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fb3ea-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fb3ea-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f03fa-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f03fa-118">Request headers</span></span>
 
-| <span data-ttu-id="fb3ea-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="fb3ea-119">Header</span></span>       | <span data-ttu-id="fb3ea-120">Valor</span><span class="sxs-lookup"><span data-stu-id="fb3ea-120">Value</span></span> |
+| <span data-ttu-id="f03fa-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f03fa-119">Header</span></span>       | <span data-ttu-id="f03fa-120">Valor</span><span class="sxs-lookup"><span data-stu-id="f03fa-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="fb3ea-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="fb3ea-121">Authorization</span></span>  | <span data-ttu-id="fb3ea-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fb3ea-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f03fa-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f03fa-121">Authorization</span></span>  | <span data-ttu-id="f03fa-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f03fa-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="fb3ea-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fb3ea-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f03fa-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f03fa-124">Request body</span></span>
 
-<span data-ttu-id="fb3ea-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fb3ea-125">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="f03fa-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f03fa-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fb3ea-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="fb3ea-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f03fa-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="f03fa-126">Response</span></span>
 
-<span data-ttu-id="fb3ea-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fb3ea-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f03fa-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f03fa-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fb3ea-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fb3ea-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f03fa-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f03fa-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="fb3ea-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fb3ea-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f03fa-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f03fa-130">Request</span></span>
 
-<span data-ttu-id="fb3ea-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="fb3ea-131">The following is an example of the request.</span></span>
+<span data-ttu-id="f03fa-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f03fa-131">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="fb3ea-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="fb3ea-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f03fa-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="f03fa-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "uninstall_teamsapp"
@@ -64,24 +64,28 @@ DELETE /teams/{id}/installedApps/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="fb3ea-133">C#</span><span class="sxs-lookup"><span data-stu-id="fb3ea-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f03fa-133">C#</span><span class="sxs-lookup"><span data-stu-id="f03fa-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/uninstall-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fb3ea-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fb3ea-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f03fa-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f03fa-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/uninstall-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fb3ea-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fb3ea-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f03fa-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f03fa-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/uninstall-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="f03fa-136">Java</span><span class="sxs-lookup"><span data-stu-id="f03fa-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/uninstall-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="fb3ea-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="fb3ea-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f03fa-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="f03fa-137">Response</span></span>
 
-<span data-ttu-id="fb3ea-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="fb3ea-137">The following is an example of the response.</span></span>
+<span data-ttu-id="f03fa-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f03fa-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

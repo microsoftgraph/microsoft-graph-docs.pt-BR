@@ -5,61 +5,61 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8662b03a40c6d659b8c50567b725513e0b8bf9af
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: b417c881db2afa1ee4a7b0d350b33d4874f8d014
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373108"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966877"
 ---
-# <a name="update-printconnector"></a><span data-ttu-id="75596-103">Atualizar o multiligação</span><span class="sxs-lookup"><span data-stu-id="75596-103">Update printConnector</span></span>
+# <a name="update-printconnector"></a><span data-ttu-id="282ff-103">Atualizar o multiligação</span><span class="sxs-lookup"><span data-stu-id="282ff-103">Update printConnector</span></span>
 
-<span data-ttu-id="75596-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75596-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="282ff-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="282ff-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="75596-105">Atualiza as propriedades **de um objeto** Printer.</span><span class="sxs-lookup"><span data-stu-id="75596-105">Update the properties of a **printConnector** object.</span></span>
+<span data-ttu-id="282ff-105">Atualiza as propriedades **de um objeto** Printer.</span><span class="sxs-lookup"><span data-stu-id="282ff-105">Update the properties of a **printConnector** object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="75596-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="75596-106">Permissions</span></span>
-<span data-ttu-id="75596-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="75596-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="282ff-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="282ff-106">Permissions</span></span>
+<span data-ttu-id="282ff-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="282ff-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="75596-109">Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="75596-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="75596-110">O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="75596-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="282ff-109">Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir.</span><span class="sxs-lookup"><span data-stu-id="282ff-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="282ff-110">O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="282ff-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="75596-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="75596-111">Permission type</span></span> | <span data-ttu-id="75596-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="75596-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="282ff-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="282ff-111">Permission type</span></span> | <span data-ttu-id="282ff-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="282ff-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="75596-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="75596-113">Delegated (work or school account)</span></span>| <span data-ttu-id="75596-114">User.Read</span><span class="sxs-lookup"><span data-stu-id="75596-114">User.Read</span></span> |
-|<span data-ttu-id="75596-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="75596-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="75596-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="75596-116">Not Supported.</span></span>|
-|<span data-ttu-id="75596-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="75596-117">Application</span></span>|<span data-ttu-id="75596-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="75596-118">Not Supported.</span></span>|
+|<span data-ttu-id="282ff-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="282ff-113">Delegated (work or school account)</span></span>| <span data-ttu-id="282ff-114">User.Read</span><span class="sxs-lookup"><span data-stu-id="282ff-114">User.Read</span></span> |
+|<span data-ttu-id="282ff-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="282ff-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="282ff-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="282ff-116">Not Supported.</span></span>|
+|<span data-ttu-id="282ff-117">Application</span><span class="sxs-lookup"><span data-stu-id="282ff-117">Application</span></span>|<span data-ttu-id="282ff-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="282ff-118">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="75596-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="75596-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="282ff-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="282ff-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /print/connectors/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="75596-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="75596-120">Request headers</span></span>
-| <span data-ttu-id="75596-121">Nome</span><span class="sxs-lookup"><span data-stu-id="75596-121">Name</span></span>       | <span data-ttu-id="75596-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="75596-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="282ff-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="282ff-120">Request headers</span></span>
+| <span data-ttu-id="282ff-121">Nome</span><span class="sxs-lookup"><span data-stu-id="282ff-121">Name</span></span>       | <span data-ttu-id="282ff-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="282ff-122">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="75596-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="75596-123">Authorization</span></span> | <span data-ttu-id="75596-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="75596-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="75596-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="75596-126">Content-type</span></span>  | <span data-ttu-id="75596-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="75596-p104">application/json. Required.</span></span>|
+| <span data-ttu-id="282ff-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="282ff-123">Authorization</span></span> | <span data-ttu-id="282ff-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="282ff-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="282ff-126">Content-type</span><span class="sxs-lookup"><span data-stu-id="282ff-126">Content-type</span></span>  | <span data-ttu-id="282ff-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="282ff-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="75596-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="75596-129">Request body</span></span>
-<span data-ttu-id="75596-130">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="75596-130">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="75596-131">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="75596-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="75596-132">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="75596-132">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="282ff-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="282ff-129">Request body</span></span>
+<span data-ttu-id="282ff-130">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="282ff-130">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="282ff-131">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="282ff-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="282ff-132">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="282ff-132">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="75596-133">Propriedade</span><span class="sxs-lookup"><span data-stu-id="75596-133">Property</span></span>     | <span data-ttu-id="75596-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="75596-134">Type</span></span>        | <span data-ttu-id="75596-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="75596-135">Description</span></span> |
+| <span data-ttu-id="282ff-133">Propriedade</span><span class="sxs-lookup"><span data-stu-id="282ff-133">Property</span></span>     | <span data-ttu-id="282ff-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="282ff-134">Type</span></span>        | <span data-ttu-id="282ff-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="282ff-135">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="75596-136">nome</span><span class="sxs-lookup"><span data-stu-id="75596-136">name</span></span>|<span data-ttu-id="75596-137">String</span><span class="sxs-lookup"><span data-stu-id="75596-137">String</span></span>|<span data-ttu-id="75596-138">O nome do conector.</span><span class="sxs-lookup"><span data-stu-id="75596-138">The name of the connector.</span></span>|
-|<span data-ttu-id="75596-139">Nomededomíniototalmentequalificado</span><span class="sxs-lookup"><span data-stu-id="75596-139">fullyQualifiedDomainName</span></span>|<span data-ttu-id="75596-140">String</span><span class="sxs-lookup"><span data-stu-id="75596-140">String</span></span>|<span data-ttu-id="75596-141">O nome de host do computador do conector.</span><span class="sxs-lookup"><span data-stu-id="75596-141">The connector machine's hostname.</span></span>|
-|<span data-ttu-id="75596-142">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="75596-142">operatingSystem</span></span>|<span data-ttu-id="75596-143">String</span><span class="sxs-lookup"><span data-stu-id="75596-143">String</span></span>|<span data-ttu-id="75596-144">A versão do sistema operacional do computador do conector.</span><span class="sxs-lookup"><span data-stu-id="75596-144">The connector machine's operating system version.</span></span>|
-|<span data-ttu-id="75596-145">appVersion</span><span class="sxs-lookup"><span data-stu-id="75596-145">appVersion</span></span>|<span data-ttu-id="75596-146">String</span><span class="sxs-lookup"><span data-stu-id="75596-146">String</span></span>|<span data-ttu-id="75596-147">A versão do conector.</span><span class="sxs-lookup"><span data-stu-id="75596-147">The connector's version.</span></span>|
-|<span data-ttu-id="75596-148">location</span><span class="sxs-lookup"><span data-stu-id="75596-148">location</span></span>|[<span data-ttu-id="75596-149">printerLocation</span><span class="sxs-lookup"><span data-stu-id="75596-149">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="75596-150">O local físico e/ou organizacional do conector.</span><span class="sxs-lookup"><span data-stu-id="75596-150">The physical and/or organizational location of the connector.</span></span>|
+|<span data-ttu-id="282ff-136">nome</span><span class="sxs-lookup"><span data-stu-id="282ff-136">name</span></span>|<span data-ttu-id="282ff-137">String</span><span class="sxs-lookup"><span data-stu-id="282ff-137">String</span></span>|<span data-ttu-id="282ff-138">O nome do conector.</span><span class="sxs-lookup"><span data-stu-id="282ff-138">The name of the connector.</span></span>|
+|<span data-ttu-id="282ff-139">Nomededomíniototalmentequalificado</span><span class="sxs-lookup"><span data-stu-id="282ff-139">fullyQualifiedDomainName</span></span>|<span data-ttu-id="282ff-140">String</span><span class="sxs-lookup"><span data-stu-id="282ff-140">String</span></span>|<span data-ttu-id="282ff-141">O nome de host do computador do conector.</span><span class="sxs-lookup"><span data-stu-id="282ff-141">The connector machine's hostname.</span></span>|
+|<span data-ttu-id="282ff-142">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="282ff-142">operatingSystem</span></span>|<span data-ttu-id="282ff-143">String</span><span class="sxs-lookup"><span data-stu-id="282ff-143">String</span></span>|<span data-ttu-id="282ff-144">A versão do sistema operacional do computador do conector.</span><span class="sxs-lookup"><span data-stu-id="282ff-144">The connector machine's operating system version.</span></span>|
+|<span data-ttu-id="282ff-145">appVersion</span><span class="sxs-lookup"><span data-stu-id="282ff-145">appVersion</span></span>|<span data-ttu-id="282ff-146">String</span><span class="sxs-lookup"><span data-stu-id="282ff-146">String</span></span>|<span data-ttu-id="282ff-147">A versão do conector.</span><span class="sxs-lookup"><span data-stu-id="282ff-147">The connector's version.</span></span>|
+|<span data-ttu-id="282ff-148">localização</span><span class="sxs-lookup"><span data-stu-id="282ff-148">location</span></span>|[<span data-ttu-id="282ff-149">printerLocation</span><span class="sxs-lookup"><span data-stu-id="282ff-149">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="282ff-150">O local físico e/ou organizacional do conector.</span><span class="sxs-lookup"><span data-stu-id="282ff-150">The physical and/or organizational location of the connector.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="75596-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="75596-151">Response</span></span>
-<span data-ttu-id="75596-152">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [multiconnect](../resources/printConnector.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="75596-152">If successful, this method returns a `200 OK` response code and an updated [printConnector](../resources/printConnector.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="75596-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="75596-153">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="75596-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="75596-154">Request</span></span>
-<span data-ttu-id="75596-155">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="75596-155">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="282ff-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="282ff-151">Response</span></span>
+<span data-ttu-id="282ff-152">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [multiconnect](../resources/printConnector.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="282ff-152">If successful, this method returns a `200 OK` response code and an updated [printConnector](../resources/printConnector.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="282ff-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="282ff-153">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="282ff-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="282ff-154">Request</span></span>
+<span data-ttu-id="282ff-155">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="282ff-155">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="75596-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="75596-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="282ff-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="282ff-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_connector"
@@ -81,23 +81,27 @@ Content-length: 300
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="75596-157">C#</span><span class="sxs-lookup"><span data-stu-id="75596-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="282ff-157">C#</span><span class="sxs-lookup"><span data-stu-id="282ff-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-connector-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="75596-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75596-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="282ff-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="282ff-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-connector-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="75596-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75596-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="282ff-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="282ff-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="282ff-160">Java</span><span class="sxs-lookup"><span data-stu-id="282ff-160">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-connector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="75596-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="75596-160">Response</span></span>
-<span data-ttu-id="75596-161">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="75596-161">The following is an example of the response.</span></span>
-><span data-ttu-id="75596-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="75596-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="282ff-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="282ff-161">Response</span></span>
+<span data-ttu-id="282ff-162">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="282ff-162">The following is an example of the response.</span></span>
+><span data-ttu-id="282ff-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="282ff-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
