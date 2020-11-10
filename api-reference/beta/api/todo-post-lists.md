@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78688e3038193b89111a8490ffe759dff263bfbd
-ms.sourcegitcommit: 6eadb95e21b2e7eb5d6b081b91999cb91070f397
+ms.openlocfilehash: 175cdff04eefffc2036a2ca850614c346f919cdc
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299281"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977359"
 ---
 # <a name="create-todotasklist"></a>Criar todoTaskList
 Namespace: microsoft.graph
@@ -85,6 +85,10 @@ Content-length: 60
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-todotasklist-from-lists-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-todotasklist-from-lists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
