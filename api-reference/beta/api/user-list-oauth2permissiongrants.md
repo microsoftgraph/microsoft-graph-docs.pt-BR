@@ -1,18 +1,18 @@
 ---
-title: Listat oauth2PermissionGrants
+title: Lista oauth2PermissionGrants
 description: Recuperar uma lista de objetos oAuth2PermissionGrant, representando concessões de permissão delegadas.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: ac16a108606e8283ff29b9dcc0e9d0c291e7a19f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ada015bb3ee59b0f52ebf63aaa8d4f5dd11f1459
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031848"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975201"
 ---
-# <a name="list-oauth2permissiongrants"></a>Listat oauth2PermissionGrants
+# <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
 
 Namespace: microsoft.graph
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/users/{id}/oauth2PermissionGrants
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-user-oauth2permissiongrants-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

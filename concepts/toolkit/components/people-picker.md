@@ -1,16 +1,16 @@
 ---
-title: Componente de seletor de pessoas
+title: People-Picker componente
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: eca2ad4c0b56ff3475480a36eab2e943e3b6d9e4
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 9f47824d62ee5ffcf57884af5e68b255756d5478
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288613"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975774"
 ---
-# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Componente de seletor de pessoas no Microsoft Graph Toolkit
+# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no kit de ferramentas do Microsoft Graph
 
 Você pode usar o `mgt-people-picker` componente da Web para procurar pessoas e/ou grupos. Por padrão, o componente pesquisará todas as pessoas e usuários da organização, mas você pode alterar o comportamento para também pesquisar grupos ou apenas grupos. Você também pode filtrar a pesquisa para um grupo específico.
 
@@ -35,6 +35,8 @@ Por padrão, o `mgt-people-picker` componente busca pessoas dos pontos de `/me/p
 |  selecionado-pessoas  | selectedPeople     | Uma matriz de pessoas selecionadas. Defina esse valor para selecionar pessoas de forma programática.|
 | people   | people    | Uma matriz de pessoas encontrada e renderizada no resultado da pesquisa |
 | default-Selected-User-IDs | defaultSelectedUserIds | Quando é fornecida uma cadeia de caracteres de IDs de usuário separadas por vírgulas do Microsoft Graph, o componente renderiza os respectivos usuários como selecionados na inicialização.
+| modo de seleção | selectionMode | Usado para indicar se é permitido selecionar vários usuários ou apenas um único usuário. As opções disponíveis são: `single` , `multiple` . O valor padrão é `multiple`.
+| PlaceHolder | PlaceHolder | O texto padrão que aparece para explicar como usar o componente. O valor padrão é `Start typing a name`.
 
 Este é um `show-max` exemplo.
 
@@ -114,7 +116,7 @@ mgt-people-picker {
 | erro | nulo: não há dados | O modelo usado se a pesquisa de usuário não retornar nenhum usuário. |
 | sem dados | nulo: não há dados | Um modelo alternativo usado se a pesquisa de usuário não retornar nenhum usuário. |
 | selecionado-pessoa | Person: o objeto de detalhes da pessoa | O modelo para renderizar as pessoas selecionadas. |
-| vendedor | Person: o objeto de detalhes da pessoa | O modelo para renderizar pessoas na lista suspensa. |
+| person | Person: o objeto de detalhes da pessoa | O modelo para renderizar pessoas na lista suspensa. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 

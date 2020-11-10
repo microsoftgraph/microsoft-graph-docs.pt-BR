@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 986f6dd19686488e5e87d2de2e9ce9447fc63614
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 7940a4fed4b11d54e9dddf98b192346eb184c698
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373783"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975977"
 ---
 # <a name="reportroot-getm365appuserdetail"></a>reportRoot: getM365AppUserDetail
 
@@ -49,7 +49,7 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 
 | Parâmetro | Tipo   | Descrição                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7` , `D30` , `D90` , e `D180` . Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. |
+| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7` , `D30` , `D90` , e `D180` . Eles seguem o formato D *n* , em que *n* representa o número de dias em que o relatório é agregado. |
 | data      | Data   | Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade. {date_value} deve ter um formato de AAAA-MM-DD. Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo.          |
 
 > **Observação:** Você precisa definir `period` ou `date` na URL.
@@ -159,6 +159,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/c
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercoundetail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appusercoundetail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -219,6 +223,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/c
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercountdetail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appusercountdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

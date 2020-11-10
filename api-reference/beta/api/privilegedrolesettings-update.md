@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: fa59ba7abd8ef9a477bdd8dfd78577459e7166d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7457fe35aef8f58d615678f0cbe1a8f77fda766
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034908"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976143"
 ---
 # <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
 
@@ -49,13 +49,13 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|A duração quando a função é ativada. Obrigatório.|
+|elevationDuration|duração|A duração quando a função é ativada. Obrigatório.|
 |id|string|O identificador exclusivo das configurações de função. Somente leitura. Obrigatório.|
 |isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável. Obrigatório.|
 |lastGlobalAdmin|Booliano|Apenas para uso interno.|
-|maxElavationDuration|duration|Duração máxima da função ativada. Obrigatório.|
+|maxElavationDuration|duração|Duração máxima da função ativada. Obrigatório.|
 |mfaOnElevation|Booliano|**true** se a MFA é necessária para ativar a função. **false** se a MFA não é necessária para ativar a função. Obrigatório.|
-|minElevationDuration|duration|Duração mínima para a função ativada. Obrigatório.|
+|minElevationDuration|duração|Duração mínima para a função ativada. Obrigatório.|
 |notificationToUserOnElevation|Booliano|**true** se enviar notificação para o usuário final quando a função é ativada. **false** se não enviar notificações quando a função for ativada. Obrigatório.|
 |ticketingInfoOnElevation|Booliano|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função. Obrigatório.|
 |approvalOnElevation|Booliano|**true** se a aprovação é necessária ao ativar a função. **false** se a aprovação não é necessária ao ativar a função. Obrigatório.|
@@ -103,6 +103,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/put-privilegedrolesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/put-privilegedrolesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

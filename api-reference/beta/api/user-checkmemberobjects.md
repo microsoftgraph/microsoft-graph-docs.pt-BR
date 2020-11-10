@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: efbf1b0eae84207e591f3f52ace88aa78f925e04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8491978f3ee0c44a653cdc28a00aee39fcea1093
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968928"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976565"
 ---
 # <a name="user-checkmemberobjects"></a>usuário: checkMemberObjects
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | User. ReadBasic. All, User. Read. All, User. ReadWrite. All<br><br>Além disso:<br><br><ul><li>Se estiver verificando a associação em grupos: Group. Read. All, Group. ReadWrite. All</li><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li><li>Se estiver verificando associação em funções de diretório: RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All<br>E<ul><li>Se estiver verificando a associação em grupos: Group. Read. All, Group. ReadWrite. All</li><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li><li>Se estiver verificando associação em funções de diretório: RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
+| Application                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All<br>E<ul><li>Se estiver verificando a associação em grupos: Group. Read. All, Group. ReadWrite. All</li><li>Se estiver verificando a associação em unidades administrativas: AdministrativeUnit. Read. All, AdministrativeUnit. ReadWrite. All</li><li>Se estiver verificando associação em funções de diretório: RoleManagement. Read. Directory, RoleManagement. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-checkmemberobjects-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 58d9c86030d1171b2c081962ac9721872f14f9cb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4968a1f686df8acfda23b283e99e42b56f90cb0a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004624"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975502"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Organization. ReadWrite. All, Directory. AccessAsUser. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Organization.ReadWrite.All |
+|Application | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,11 +52,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade  | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
+|marketingNotificationEmails|Coleção de cadeias de caracteres|                                        **Anotações** : não anulável.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|O perfil de privacidade de uma organização (definir statementUrl e contactEmail).            |
 |securityComplianceNotificationMails|Coleção de cadeias de caracteres||
 |securityComplianceNotificationPhones|Coleção de cadeias de caracteres||
-|technicalNotificationMails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
+|technicalNotificationMails|Coleção de cadeias de caracteres|                                        **Anotações** : não anulável.            |
 
 Como o recurso de **organização** oferece suporte a [extensões](/graph/extensibility-overview), você pode usar a `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **organização** existente.
 
@@ -101,6 +101,10 @@ Content-length: 411
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

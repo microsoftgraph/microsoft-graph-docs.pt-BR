@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 0f6aa15be6725560f70cdaba1f8c59a69461f3f9
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 91ae0c420bf13e967a289431799328138b9bf143
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48374305"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975124"
 ---
 # <a name="reportroot-getm365appplatformusercounts"></a>reportRoot: getM365AppPlatformUserCounts
 
@@ -48,7 +48,7 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 
 | Parâmetro | Tipo   | Descrição                                                                                                                                                                                                                                                       |
 | :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7` , `D30` , `D90` , e `D180` . Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
+| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7` , `D30` , `D90` , e `D180` . Eles seguem o formato D *n* , em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -123,6 +123,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appplatformusercounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appplatformusercounts-csv-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -183,6 +187,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appplatformusercounts-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appplatformusercounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
