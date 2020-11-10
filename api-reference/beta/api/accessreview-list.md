@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8d84f6315e2a2ca3a82d167cfc3d1137d861aec8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c76dc3a245e003838290f3d233941e6535347b72
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983568"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951637"
 ---
 # <a name="list-accessreviews"></a>Listar accessReviews
 
@@ -23,9 +23,9 @@ Recupere os objetos [accessReview](../resources/accessreview.md) para um determi
 >[!NOTE]
 > Se qualquer uma das revisões do Access que corresponderem ao filtro for uma análise de acesso recorrente, um objeto **accessReview** será retornado para representar cada série recorrente como um todo, além de qualquer atual, passado e a próxima instância futura. Por exemplo, se houver uma revisão de acesso recorrente mensal de membros convidados do grupo A, uma revisão trimestral de acesso recorrente de membros convidados do grupo B e uma revisão de acesso de um único tempo de membros convidados do grupo C, cada uma dessas recorrências foram iniciadas e o chamador consulta as revisões de acesso com um modelo de fluxo de negócios de revisões de membros convidados de grupos , três objetos serão retornados representando as três séries, bem como três objetos para as instâncias atuais de revisão do Access e, potencialmente, três objetos para as próximas instâncias futuras. Para recuperar as instâncias de uma revisão de acesso recorrente ou a instância de revisão do Access agendada para um mês ou trimestre específico, o chamador pode, subsequentemente, navegar na relação de **instância** do objeto **accessReview** recorrente. A relação de **instância** vincula aos objetos **accessReview** para uma instância atual ou passada da revisão recorrente do acesso.
 
-Se muitas revisões de acesso corresponderem ao filtro, para melhorar a eficiência e evitar tempos limite, recupere o conjunto de resultados nas páginas, incluindo o `$top` parâmetro de consulta com um tamanho de página, por exemplo, 100, e o `$skip=0` parâmetro de consulta na solicitação. Esses parâmetros podem ser incluídos, mesmo quando você não prevê que a solicitação vai estender várias páginas. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma `@odata.nextLink` Propriedade na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a `@odata.nextLink` URL em cada resposta, até que todos os resultados sejam retornados, conforme descrito em [paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging.md).
+Se muitas revisões de acesso corresponderem ao filtro, para melhorar a eficiência e evitar tempos limite, recupere o conjunto de resultados nas páginas, incluindo o `$top` parâmetro de consulta com um tamanho de página, por exemplo, 100, e o `$skip=0` parâmetro de consulta na solicitação. Esses parâmetros podem ser incluídos, mesmo quando você não prevê que a solicitação vai estender várias páginas. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma `@odata.nextLink` Propriedade na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com o `@odata.nextLink` URL em cada resposta, até que todos os resultados sejam retornados, conforme descrito em [paginação de dados do Microsoft Graph no aplicativo](/graph/paging.md).
 
-Os objetos **accessReview** retornados por essa API não incluirão Propriedades de estrutura aninhadas, como **configurações**ou relações.  Para recuperar as configurações ou relações de revisão do Access, use a API [Get accessReview](accessreview-get.md) .
+Os objetos **accessReview** retornados por essa API não incluirão Propriedades de estrutura aninhadas, como **configurações** ou relações.  Para recuperar as configurações ou relações de revisão do Access, use a API [Get accessReview](accessreview-get.md) .
 
 
 ## <a name="permissions"></a>Permissões
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview. Read. All, AccessReview. ReadWrite. Membership |
+|Application                            | AccessReview. Read. All, AccessReview. ReadWrite. Membership |
 
  O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateI
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accessreviews-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accessreviews-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: b4a9a1a6f7560f3369242cc8d8d4e140375a30a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e591dcc436d336bc8b98db84385bd2974c83de7f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053528"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951499"
 ---
 # <a name="notebook-copynotebook"></a>bloco de anotações: copyNotebook
 
@@ -50,14 +50,14 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros de
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|Cadeia de caracteres|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site do SharePoint.|
-|siteId|Cadeia de caracteres|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site do SharePoint.|
+|siteCollectionId|String|A ID do site do SharePoint para o qual copiar. Use somente ao copiar para um site do SharePoint.|
+|siteId|String|A ID da Web do SharePoint a ser copiada. Use somente ao copiar para um site do SharePoint.|
 |groupId|Cadeia de caracteres|A ID do grupo para o qual copiar. Use somente ao copiar para um grupo do Microsoft 365.|
-|renomeas|Cadeia de caracteres|O nome da cópia. O padrão é o nome do item existente. |
+|renomeas|String|O nome da cópia. O padrão é o nome do item existente. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um `Operation-Location` cabeçalho. Sondar o ponto de extremidade da operação-local para [obter o status da operação de cópia](onenoteoperation-get.md).
+Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um `Operation-Location` cabeçalho. Sondar o ponto de extremidade Operation-Location para [obter o status da operação de cópia](onenoteoperation-get.md).
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -89,6 +89,10 @@ Content-length: 108
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/notebook-copynotebook-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/notebook-copynotebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

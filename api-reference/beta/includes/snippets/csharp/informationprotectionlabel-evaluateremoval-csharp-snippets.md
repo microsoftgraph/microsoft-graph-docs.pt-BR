@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e502c7eaa2529f26d6f58e20606408a2f21c8f0d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: bcea05845362d29fb7ad4ab0e86db7bba82370c6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684651"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48952863"
 ---
 ```csharp
 
@@ -68,7 +68,7 @@ var downgradeJustification = new DowngradeJustification
     IsDowngradeJustified = true
 };
 
-await graphClient.Informationprotection.Policy.Labels
+await graphClient.InformationProtection.Policy.Labels
     .EvaluateRemoval(contentInfo,downgradeJustification)
     .Request()
     .Header("User-Agent","ContosoLOBApp/1.0")
