@@ -5,34 +5,34 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6365c1dfdc2cb8ae1e737b1305b3ccb7f4d60fb7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed4d1c0cfc507931345d0932d9c9a52f2f7d1971
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034893"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48970216"
 ---
-# <a name="get-profile"></a><span data-ttu-id="b3309-103">Obter perfil</span><span class="sxs-lookup"><span data-stu-id="b3309-103">Get profile</span></span>
+# <a name="get-profile"></a><span data-ttu-id="408e9-103">Obter perfil</span><span class="sxs-lookup"><span data-stu-id="408e9-103">Get profile</span></span>
 
-<span data-ttu-id="b3309-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b3309-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="408e9-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="408e9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b3309-105">Recupere as propriedades e os relacionamentos de um objeto de [perfil](../resources/profile.md) para um determinado usuário.</span><span class="sxs-lookup"><span data-stu-id="b3309-105">Retrieve the properties and relationships of a [profile](../resources/profile.md) object for a given user.</span></span>
+<span data-ttu-id="408e9-105">Recupere as propriedades e os relacionamentos de um objeto de [perfil](../resources/profile.md) para um determinado usuário.</span><span class="sxs-lookup"><span data-stu-id="408e9-105">Retrieve the properties and relationships of a [profile](../resources/profile.md) object for a given user.</span></span>
 
-<span data-ttu-id="b3309-106">O recurso de **perfil** expõe várias propriedades sofisticadas que são descritivas do usuário como [relações](../resources/profile.md#relationships), por exemplo, aniversários e atividades de educação.</span><span class="sxs-lookup"><span data-stu-id="b3309-106">The **profile** resource exposes various rich properties that are descriptive of the user as [relationships](../resources/profile.md#relationships), for example, anniversaries and education activities.</span></span> <span data-ttu-id="b3309-107">Para obter uma destas propriedades de navegação, use o método GET correspondente nessa propriedade.</span><span class="sxs-lookup"><span data-stu-id="b3309-107">To get one of these navigation properties, use the corresponding GET method on that property.</span></span> <span data-ttu-id="b3309-108">Consulte os [métodos](../resources/profile.md) expostos por **perfil**.</span><span class="sxs-lookup"><span data-stu-id="b3309-108">See the [methods](../resources/profile.md) exposed by **profile**.</span></span>
+<span data-ttu-id="408e9-106">O recurso de **perfil** expõe várias propriedades sofisticadas que são descritivas do usuário como [relações](../resources/profile.md#relationships), por exemplo, aniversários e atividades de educação.</span><span class="sxs-lookup"><span data-stu-id="408e9-106">The **profile** resource exposes various rich properties that are descriptive of the user as [relationships](../resources/profile.md#relationships), for example, anniversaries and education activities.</span></span> <span data-ttu-id="408e9-107">Para obter uma destas propriedades de navegação, use o método GET correspondente nessa propriedade.</span><span class="sxs-lookup"><span data-stu-id="408e9-107">To get one of these navigation properties, use the corresponding GET method on that property.</span></span> <span data-ttu-id="408e9-108">Consulte os [métodos](../resources/profile.md) expostos por **perfil**.</span><span class="sxs-lookup"><span data-stu-id="408e9-108">See the [methods](../resources/profile.md) exposed by **profile**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b3309-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="b3309-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="408e9-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="408e9-109">Permissions</span></span>
 
-<span data-ttu-id="b3309-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b3309-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="408e9-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="408e9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b3309-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b3309-112">Permission type</span></span>                        | <span data-ttu-id="b3309-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b3309-113">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="408e9-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="408e9-112">Permission type</span></span>                        | <span data-ttu-id="408e9-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="408e9-113">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="b3309-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b3309-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="b3309-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b3309-115">Not supported.</span></span>                              |
-| <span data-ttu-id="b3309-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b3309-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b3309-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b3309-117">Not supported.</span></span>                              |
-| <span data-ttu-id="b3309-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b3309-118">Application</span></span>                            | <span data-ttu-id="b3309-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b3309-119">Not supported.</span></span>                              |
+| <span data-ttu-id="408e9-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="408e9-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="408e9-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="408e9-115">Not supported.</span></span>                              |
+| <span data-ttu-id="408e9-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="408e9-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="408e9-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="408e9-117">Not supported.</span></span>                              |
+| <span data-ttu-id="408e9-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="408e9-118">Application</span></span>                            | <span data-ttu-id="408e9-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="408e9-119">Not supported.</span></span>                              |
 
-## <a name="http-request"></a><span data-ttu-id="b3309-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b3309-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="408e9-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="408e9-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,34 +41,34 @@ GET /me/profile
 GET /users/{id | userPrincipalName}/profile
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b3309-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b3309-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="408e9-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="408e9-121">Optional query parameters</span></span>
 
-<span data-ttu-id="b3309-122">Este método dá suporte ao `$select` parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="b3309-122">This method supports the `$select` query parameter.</span></span> <span data-ttu-id="b3309-123">Especifique uma lista de propriedades a serem incluídas na resposta, separando-as por vírgulas.</span><span class="sxs-lookup"><span data-stu-id="b3309-123">Specify a list of properties to include in the response, separating them by commas.</span></span> <span data-ttu-id="b3309-124">Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessário.</span><span class="sxs-lookup"><span data-stu-id="b3309-124">For optimal performance, only select the subset of properties needed.</span></span>
+<span data-ttu-id="408e9-122">Este método dá suporte ao `$select` parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="408e9-122">This method supports the `$select` query parameter.</span></span> <span data-ttu-id="408e9-123">Especifique uma lista de propriedades a serem incluídas na resposta, separando-as por vírgulas.</span><span class="sxs-lookup"><span data-stu-id="408e9-123">Specify a list of properties to include in the response, separating them by commas.</span></span> <span data-ttu-id="408e9-124">Para obter o desempenho ideal, selecione apenas o subconjunto de propriedades necessário.</span><span class="sxs-lookup"><span data-stu-id="408e9-124">For optimal performance, only select the subset of properties needed.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b3309-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b3309-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="408e9-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="408e9-125">Request headers</span></span>
 
-| <span data-ttu-id="b3309-126">Nome</span><span class="sxs-lookup"><span data-stu-id="b3309-126">Name</span></span>           |<span data-ttu-id="b3309-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3309-127">Description</span></span>                  |
+| <span data-ttu-id="408e9-126">Nome</span><span class="sxs-lookup"><span data-stu-id="408e9-126">Name</span></span>           |<span data-ttu-id="408e9-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="408e9-127">Description</span></span>                  |
 |:---------------|:----------------------------|
-| <span data-ttu-id="b3309-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="b3309-128">Authorization</span></span>  | <span data-ttu-id="b3309-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b3309-p104">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="b3309-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b3309-131">Content-Type</span></span>   | <span data-ttu-id="b3309-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b3309-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="408e9-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="408e9-128">Authorization</span></span>  | <span data-ttu-id="408e9-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="408e9-p104">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="408e9-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="408e9-131">Content-Type</span></span>   | <span data-ttu-id="408e9-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="408e9-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b3309-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b3309-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="408e9-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="408e9-134">Request body</span></span>
 
-<span data-ttu-id="b3309-135">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b3309-135">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="408e9-135">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="408e9-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b3309-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="b3309-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="408e9-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="408e9-136">Response</span></span>
 
-<span data-ttu-id="b3309-137">Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [perfil](../resources/profile.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b3309-137">If successful, this method returns a `200 OK` response code and the requested [profile](../resources/profile.md) object in the response body.</span></span>
+<span data-ttu-id="408e9-137">Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [perfil](../resources/profile.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="408e9-137">If successful, this method returns a `200 OK` response code and the requested [profile](../resources/profile.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b3309-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b3309-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="408e9-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="408e9-138">Examples</span></span>
 
-### <a name="example-1-get-a-users-profile"></a><span data-ttu-id="b3309-139">Exemplo 1: obter o perfil de um usuário</span><span class="sxs-lookup"><span data-stu-id="b3309-139">Example 1: GET a user's profile</span></span>
+### <a name="example-1-get-a-users-profile"></a><span data-ttu-id="408e9-139">Exemplo 1: obter o perfil de um usuário</span><span class="sxs-lookup"><span data-stu-id="408e9-139">Example 1: GET a user's profile</span></span>
 
-<span data-ttu-id="b3309-140">Veja a seguir um exemplo de solicitação de perfil GET.</span><span class="sxs-lookup"><span data-stu-id="b3309-140">The following is an example of the GET profile request.</span></span>
+<span data-ttu-id="408e9-140">Veja a seguir um exemplo de solicitação de perfil GET.</span><span class="sxs-lookup"><span data-stu-id="408e9-140">The following is an example of the GET profile request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="b3309-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b3309-141">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="408e9-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="408e9-141">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="b3309-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="b3309-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="408e9-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="408e9-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_profile"
@@ -77,25 +77,29 @@ GET /users/{id | userPrincipalName}/profile
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile
 ```
-# <a name="c"></a>[<span data-ttu-id="b3309-143">C#</span><span class="sxs-lookup"><span data-stu-id="b3309-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="408e9-143">C#</span><span class="sxs-lookup"><span data-stu-id="408e9-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b3309-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b3309-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="408e9-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="408e9-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b3309-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b3309-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="408e9-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="408e9-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="408e9-146">Java</span><span class="sxs-lookup"><span data-stu-id="408e9-146">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="b3309-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="b3309-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="408e9-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="408e9-147">Response</span></span>
 
-<span data-ttu-id="b3309-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b3309-147">The following is an example of the response.</span></span>
+<span data-ttu-id="408e9-148">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="408e9-148">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="b3309-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b3309-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="408e9-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="408e9-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -283,13 +287,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-expand-names-and-skills-collection-and-select-properties-within-the-entities"></a><span data-ttu-id="b3309-150">Exemplo 2: expanda nomes e coleção de habilidades e selecione Propriedades dentro das entidades</span><span class="sxs-lookup"><span data-stu-id="b3309-150">Example 2: Expand names and skills collection and select properties within the entities</span></span>
+### <a name="example-2-expand-names-and-skills-collection-and-select-properties-within-the-entities"></a><span data-ttu-id="408e9-151">Exemplo 2: expanda nomes e coleção de habilidades e selecione Propriedades dentro das entidades</span><span class="sxs-lookup"><span data-stu-id="408e9-151">Example 2: Expand names and skills collection and select properties within the entities</span></span>
 
-<span data-ttu-id="b3309-151">Veja a seguir um exemplo de como usar os parâmetros de consulta $expand e $select para recuperar informações parciais de um perfil de usuário.</span><span class="sxs-lookup"><span data-stu-id="b3309-151">The following is an example of using the $expand and $select query parameters to retrieve partial information from a user's profile.</span></span>
+<span data-ttu-id="408e9-152">Veja a seguir um exemplo de como usar os parâmetros de consulta $expand e $select para recuperar informações parciais de um perfil de usuário.</span><span class="sxs-lookup"><span data-stu-id="408e9-152">The following is an example of using the $expand and $select query parameters to retrieve partial information from a user's profile.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="b3309-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b3309-152">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="408e9-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="408e9-153">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="b3309-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="b3309-153">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="408e9-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="408e9-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_profile"
@@ -298,25 +302,29 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last),skills($select=displayName)
 ```
-# <a name="c"></a>[<span data-ttu-id="b3309-154">C#</span><span class="sxs-lookup"><span data-stu-id="b3309-154">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="408e9-155">C#</span><span class="sxs-lookup"><span data-stu-id="408e9-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b3309-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b3309-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="408e9-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="408e9-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b3309-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b3309-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="408e9-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="408e9-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="408e9-158">Java</span><span class="sxs-lookup"><span data-stu-id="408e9-158">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="b3309-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="b3309-157">Response</span></span>
+### <a name="response"></a><span data-ttu-id="408e9-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="408e9-159">Response</span></span>
 
-<span data-ttu-id="b3309-158">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b3309-158">The following is an example of the response.</span></span>
+<span data-ttu-id="408e9-160">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="408e9-160">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="b3309-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b3309-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="408e9-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="408e9-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
