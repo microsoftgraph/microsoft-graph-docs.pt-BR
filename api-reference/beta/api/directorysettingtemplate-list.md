@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8be0e4a6410376b395f1e7f28868f0051bee28b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc0a52f8d53ea867171459ee92e9ec512c757e19
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008607"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956076"
 ---
 # <a name="list-directorysettingtemplates"></a>Listar directorySettingTemplates
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Modelos de configuração de diretório representa um conjunto de modelos de configurações de diretório, de onde as configurações de diretório podem ser criadas e usadas dentro de um locatário.  Esta operação recupera a lista de objetos **directorySettingTemplates** disponíveis.
 
-> **Observação**: a versão do/beta dessa API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para *listar groupSettingTemplate*.
+> **Observação** : a versão do/beta dessa API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para *listar groupSettingTemplate*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directorysettingtemplates-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

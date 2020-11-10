@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ff6569531dd264223e0352b659531a02aaab4a05
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd7554c41816e54240e081fd1265861f24fa7d56
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008733"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956292"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement. ReadWrite. Directory, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement.ReadWrite.Directory |
+|Application | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /directoryRoles/{id}/members/$ref
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [directoryobject](../resources/directoryobject.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [directoryobject](../resources/directoryobject.md).
 
 ## <a name="response"></a>Resposta
 
@@ -78,6 +78,10 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directoryobject-from-directoryrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directoryrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -94,7 +98,7 @@ HTTP/1.1 204 No content
 
 ### <a name="example-2-assign-a-built-in-role-to-a-group"></a>Exemplo 2: atribuir uma função interna a um grupo
 #### <a name="request"></a>Solicitação
-Você pode usar um conjunto de recursos específico como usuários ou grupos no corpo da solicitação ou pode usar o **directoryObjects**genérico. Este exemplo mostra como você pode usar o **directoryObjects**.
+Você pode usar um conjunto de recursos específico como usuários ou grupos no corpo da solicitação ou pode usar o **directoryObjects** genérico. Este exemplo mostra como você pode usar o **directoryObjects**.
 
 <!-- {
   "blockType": "request",

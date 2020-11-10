@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5aa600ddd17009916a9926e3ece103591f9ab152
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: a31a3d647bf00a5a827ea43f6ecda1950f5221f0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371326"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956216"
 ---
 # <a name="get-a-directory-setting"></a>Obter uma configuração de diretório
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades de um objeto de configuração de diretório específico.
 
-> **Observação**: a versão do/beta desta API só se aplica aos grupos. A versão do/v1.0 dessa API foi renomeada para *obter groupSettings*.
+> **Observação** : a versão do/beta desta API só se aplica aos grupos. A versão do/v1.0 dessa API foi renomeada para *obter groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/settings/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directorysetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

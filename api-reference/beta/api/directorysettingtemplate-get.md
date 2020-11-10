@@ -5,22 +5,22 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd1d622a5e03603276e54c013bcad9ff78e197fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b9e9622eccff2cedfb8085790fd4b7d44b140944
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008614"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956125"
 ---
 # <a name="get-a-directory-setting-template"></a>Obter um modelo de configuração de diretório
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um modelo de configuração de diretório representa um modelo de configurações das quais as configurações podem ser criadas em um locatário. Essa operação permite a recuperação das propriedades do objeto **directorySettingTemplate** , incluindo as configurações disponíveis e seus padrões.
 
-> **Observação**: a versão do/beta dessa API só se aplica aos grupos. A versão do/v1.0 dessa API foi renomeada para *obter groupSettingTemplate*.
+> **Observação** : a versão do/beta dessa API só se aplica aos grupos. A versão do/v1.0 dessa API foi renomeada para *obter groupSettingTemplate*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directorysettingtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
