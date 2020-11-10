@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 047dd423f60375fc65f803cbe4c734b02a5c4040
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 2fdbe67e61afea72f298224769f4afa788e5b463
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457839"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965031"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Conceder um appRoleAssignment a um grupo
 
@@ -95,6 +95,10 @@ Content-Length: 110
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

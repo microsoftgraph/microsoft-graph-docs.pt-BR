@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 95ff7dbf174a5dc6287be0fc7476c21596e651ba
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 869755946b1e2abe3b2a332899408519da013c07
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634857"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965441"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governanceRoleAssignmentRequests
 
@@ -45,7 +45,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
@@ -95,6 +95,10 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/updaterequest-governanceroleassignmentrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/updaterequest-governanceroleassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

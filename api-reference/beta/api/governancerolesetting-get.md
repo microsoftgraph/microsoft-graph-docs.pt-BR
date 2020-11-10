@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: fa09a2d2591160809d26cacbf8561e5e643d5ef2
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 4e2c7cbcf0f5f50a14f35d13bd5aafcdab7d31ef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634856"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965423"
 ---
 # <a name="get-governancerolesetting"></a>Obter governanceRoleSetting
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureResources |
+| Application | PrivilegedAccess. Read. AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -38,15 +38,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureADGroups |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso ao qual o [governanceRoleSetting](../resources/governancerolesetting.md) pertence.
 ## <a name="http-request"></a>Solicitação HTTP
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-governancerolesetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

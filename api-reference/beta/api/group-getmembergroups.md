@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 15b83fba18c4e60d18da10c72fae7727473e2255
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b562434373e48e8db53e07871f63d453a39c9ce7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012629"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965227"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Retorne todos os grupos dos quais o grupo especificado é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação [memberOf](../api/group-list-memberof.md), que retorna somente os grupos dos quais o grupo é membro direto.
 
-Essa função suporta o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. O número máximo de grupos que cada solicitação pode retornar é 2046. Observe que os grupos do Microsoft 365 não podem conter grupos. Portanto, a associação a um grupo do Microsoft 365 é sempre direta.
+Esta função é compatível com o Microsoft 365 e outros tipos de grupos provisionados no Azure AD. O número máximo de grupos que cada solicitação pode retornar é 2046. Observe que os grupos do Microsoft 365 não podem conter grupos. Portanto, associações em um grupo do Microsoft 365 sempre são diretas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -90,6 +90,10 @@ Content-length: 33
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-getmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-getmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

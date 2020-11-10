@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ea0202e62fcf965d820fa2a51396001af4648af8
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 1e7e214c23aab13c45abf73e1242aa64ec71bfa3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373224"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964982"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -49,7 +49,7 @@ POST /groups/{group-id}/members/$ref
 No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) ou [group](../resources/group.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `204 No Content`. Não retorna nada no corpo da resposta. Este método retorna um `400 Bad Request` código de resposta quando o objeto já é um membro do grupo. Este método retorna um `404 Not Found` código de resposta quando o objeto que está sendo adicionado não existe. 
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta. Esse método retorna um `400 Bad Request` código de resposta quando o objeto já é um membro do grupo. Esse método retorna um `404 Not Found` código de resposta quando o objeto adicionado não existe. 
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -81,13 +81,17 @@ Content-length: 30
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-group-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-group-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 No corpo da solicitação, forneça uma representação JSON do `id` objeto [directoryobject](../resources/directoryobject.md), [User](../resources/user.md)ou [Group](../resources/group.md) que você deseja adicionar.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

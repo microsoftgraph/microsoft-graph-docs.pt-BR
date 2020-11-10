@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 3ae917f9b92ee743173842b3ed9ccf2a2bea3edd
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 24a2e96136bf416547a974bbecf004bc46d81f04
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634855"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965402"
 ---
 # <a name="update-governancerolesetting"></a>Atualizar governanceRoleSetting
 
@@ -50,7 +50,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
@@ -120,6 +120,10 @@ Content-length: 350
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-governancerolesetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-governancerolesetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

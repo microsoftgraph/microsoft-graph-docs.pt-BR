@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4e8aba32b73f5c616dfbe55ce9ef8e9c65293937
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 858ebfb3dd71f1969d911d8666e90c39fb73c97f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002104"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965010"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -101,13 +101,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

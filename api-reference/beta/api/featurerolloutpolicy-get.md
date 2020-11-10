@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: af71de5249cb47a71c5a4ecd826f6152a37a4ba2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 35de5467a5be96f25348659aa92654cb57c28605
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006722"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965556"
 ---
 # <a name="get-featurerolloutpolicy"></a>Obter featureRolloutPolicy
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Policy.Read.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Policy.Read.All |
+| Delegada (conta Microsoft pessoal) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e
 [!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -135,6 +139,10 @@ GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-featurerolloutpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

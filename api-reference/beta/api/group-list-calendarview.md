@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6dd00c8c7635fc70631925b82579327c1a7e649c
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 7088b9ea38c138bbdd6256f91fe5b88816b72585
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459099"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965150"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -88,12 +88,16 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-calendarviews-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-get-calendarviews-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

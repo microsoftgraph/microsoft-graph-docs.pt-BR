@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: de1ae559465251e2e54df82dff9f21b580f20bcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 364677a024fea05e6ea88f9ff51f56861643c785
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002136"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965066"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -76,12 +76,16 @@ GET https://graph.microsoft.com/beta/groups/{id}/events
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-events-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-events-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

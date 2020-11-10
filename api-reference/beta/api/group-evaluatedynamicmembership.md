@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1716605557493f268d38beb8bf674dc15416c5b6
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a9dffefdc8a7f967cd44d16168ad83c822bacc69
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457545"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965317"
 ---
 # <a name="group-evaluatedynamicmembership"></a>Grupo: evaluateDynamicMembership
 
@@ -67,8 +67,8 @@ A tabela a seguir lista as propriedades que são necessárias ao avaliar a assoc
 
 | Parâmetro | Tipo | Descrição |
 | :-------- | :--- | :---------- |
-| MemberId | Coleção String | MemberId é a ID do objeto do usuário ou do dispositivo a ser avaliado. |
-| membershipRule | Coleção String | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para uma possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [regras de associação dinâmicas para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| MemberId | Coleção de cadeias de caracteres | MemberId é a ID do objeto do usuário ou do dispositivo a ser avaliado. |
+| membershipRule | Coleção de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para uma possível associação em um grupo com a mesma regra. Para obter mais informações, consulte [regras de associação dinâmicas para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Resposta
 
@@ -107,6 +107,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,6 +178,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

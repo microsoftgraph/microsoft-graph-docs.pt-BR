@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 73f4071bd9a5be480afb2a0049763a66b7026e44
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f94d4807b55ecdd00a5d0596b003e2a44b0da1b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006682"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965527"
 ---
 # <a name="filter-clear"></a>Filter: clear
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -69,6 +69,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/filter-clear-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/filter-clear-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
