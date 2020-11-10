@@ -5,64 +5,64 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 0a22fb9aa8c9e5caa6a4b3c1836c2d69741cde16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61b4e83a400b6391fd320718e13d04a8e6cc4e26
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002230"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965163"
 ---
-# <a name="list-approleassignments-granted-to-a-group"></a><span data-ttu-id="8de09-103">Listar appRoleAssignments concedido a um grupo</span><span class="sxs-lookup"><span data-stu-id="8de09-103">List appRoleAssignments granted to a group</span></span>
+# <a name="list-approleassignments-granted-to-a-group"></a><span data-ttu-id="28b27-103">Listar appRoleAssignments concedido a um grupo</span><span class="sxs-lookup"><span data-stu-id="28b27-103">List appRoleAssignments granted to a group</span></span>
 
-<span data-ttu-id="8de09-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8de09-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="28b27-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="28b27-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8de09-105">Recuperar a lista[appRoleAssignment](../resources/approleassignment.md) concedida a um grupo.</span><span class="sxs-lookup"><span data-stu-id="8de09-105">Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a group.</span></span>
+<span data-ttu-id="28b27-105">Recuperar a lista[appRoleAssignment](../resources/approleassignment.md) concedida a um grupo.</span><span class="sxs-lookup"><span data-stu-id="28b27-105">Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8de09-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="8de09-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="28b27-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="28b27-106">Permissions</span></span>
 
-<span data-ttu-id="8de09-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8de09-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="28b27-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28b27-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8de09-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8de09-109">Permission type</span></span>      | <span data-ttu-id="8de09-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8de09-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="28b27-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="28b27-109">Permission type</span></span>      | <span data-ttu-id="28b27-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="28b27-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8de09-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8de09-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8de09-112">Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="8de09-112">Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
-|<span data-ttu-id="8de09-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8de09-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8de09-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8de09-114">Not supported.</span></span>    |
-|<span data-ttu-id="8de09-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8de09-115">Application</span></span> | <span data-ttu-id="8de09-116">Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8de09-116">Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="28b27-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="28b27-111">Delegated (work or school account)</span></span> | <span data-ttu-id="28b27-112">Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="28b27-112">Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>  |
+|<span data-ttu-id="28b27-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="28b27-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="28b27-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="28b27-114">Not supported.</span></span>    |
+|<span data-ttu-id="28b27-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="28b27-115">Application</span></span> | <span data-ttu-id="28b27-116">Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="28b27-116">Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8de09-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8de09-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28b27-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="28b27-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/appRoleAssignments
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8de09-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="8de09-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="28b27-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="28b27-118">Optional query parameters</span></span>
 
-<span data-ttu-id="8de09-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="8de09-119">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="28b27-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="28b27-119">This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8de09-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8de09-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="28b27-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="28b27-120">Request headers</span></span>
 
-| <span data-ttu-id="8de09-121">Nome</span><span class="sxs-lookup"><span data-stu-id="8de09-121">Name</span></span>           | <span data-ttu-id="8de09-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="8de09-122">Description</span></span>                |
+| <span data-ttu-id="28b27-121">Nome</span><span class="sxs-lookup"><span data-stu-id="28b27-121">Name</span></span>           | <span data-ttu-id="28b27-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="28b27-122">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="8de09-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="8de09-123">Authorization</span></span>  | <span data-ttu-id="8de09-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8de09-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="28b27-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="28b27-123">Authorization</span></span>  | <span data-ttu-id="28b27-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="28b27-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="8de09-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8de09-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="28b27-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="28b27-126">Request body</span></span>
 
-<span data-ttu-id="8de09-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8de09-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="28b27-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="28b27-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8de09-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="8de09-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="28b27-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="28b27-128">Response</span></span>
 
-<span data-ttu-id="8de09-129">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8de09-129">If successful, this method returns a `200 OK` response code and collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.</span></span>
+<span data-ttu-id="28b27-129">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28b27-129">If successful, this method returns a `200 OK` response code and collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8de09-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8de09-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="28b27-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="28b27-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="8de09-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8de09-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="28b27-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="28b27-131">Request</span></span>
 
-<span data-ttu-id="8de09-132">Veja a seguir um exemplo de uma solicitação para recuperar as funções de aplicativo que foram atribuídas a um grupo.</span><span class="sxs-lookup"><span data-stu-id="8de09-132">Here is an example of the request to retrieve the app roles which have been assigned to a group.</span></span>
+<span data-ttu-id="28b27-132">Veja a seguir um exemplo de uma solicitação para recuperar as funções de aplicativo que foram atribuídas a um grupo.</span><span class="sxs-lookup"><span data-stu-id="28b27-132">Here is an example of the request to retrieve the app roles which have been assigned to a group.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="8de09-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="8de09-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="28b27-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="28b27-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_get_approleassignments"
@@ -71,26 +71,30 @@ GET /groups/{id}/appRoleAssignments
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/appRoleAssignments
 ```
-# <a name="c"></a>[<span data-ttu-id="8de09-134">C#</span><span class="sxs-lookup"><span data-stu-id="8de09-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="28b27-134">C#</span><span class="sxs-lookup"><span data-stu-id="28b27-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-approleassignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8de09-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8de09-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="28b27-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="28b27-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-approleassignments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8de09-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8de09-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="28b27-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="28b27-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-approleassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="28b27-137">Java</span><span class="sxs-lookup"><span data-stu-id="28b27-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-get-approleassignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8de09-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="8de09-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="28b27-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="28b27-138">Response</span></span>
 
-<span data-ttu-id="8de09-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8de09-138">The following is an example of the response.</span></span>
+<span data-ttu-id="28b27-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="28b27-139">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="8de09-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8de09-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="28b27-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="28b27-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
