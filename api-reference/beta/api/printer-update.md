@@ -5,78 +5,78 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: e908ce1b6364041a94a8d6ab42c8da04853b8b6a
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 557e814b27c7a3b198482de3e2d5da556454a876
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372828"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979772"
 ---
-# <a name="update-printer"></a><span data-ttu-id="1070f-103">Atualização da impressora</span><span class="sxs-lookup"><span data-stu-id="1070f-103">Update printer</span></span>
+# <a name="update-printer"></a><span data-ttu-id="6540e-103">Atualização da impressora</span><span class="sxs-lookup"><span data-stu-id="6540e-103">Update printer</span></span>
 
-<span data-ttu-id="1070f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1070f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6540e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6540e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1070f-105">Atualiza as propriedades de um objeto [Printer](../resources/printer.md) .</span><span class="sxs-lookup"><span data-stu-id="1070f-105">Update the properties of a [printer](../resources/printer.md) object.</span></span>
+<span data-ttu-id="6540e-105">Atualiza as propriedades de um objeto [Printer](../resources/printer.md) .</span><span class="sxs-lookup"><span data-stu-id="6540e-105">Update the properties of a [printer](../resources/printer.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1070f-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1070f-106">Permissions</span></span>
-<span data-ttu-id="1070f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1070f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6540e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6540e-106">Permissions</span></span>
+<span data-ttu-id="6540e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6540e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="1070f-109">Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.</span><span class="sxs-lookup"><span data-stu-id="1070f-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span> <span data-ttu-id="1070f-110">O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="1070f-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="6540e-109">Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.</span><span class="sxs-lookup"><span data-stu-id="6540e-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span> <span data-ttu-id="6540e-110">O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="6540e-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-<span data-ttu-id="1070f-111">Somente o aplicativo que registrou a impressora tem permissão para atualizar a impressora usando permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1070f-111">Only the app that registered the printer is allowed to update the printer using application permissions.</span></span>
+<span data-ttu-id="6540e-111">Somente o aplicativo que registrou a impressora tem permissão para atualizar a impressora usando permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="6540e-111">Only the app that registered the printer is allowed to update the printer using application permissions.</span></span>
 
-|<span data-ttu-id="1070f-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1070f-112">Permission type</span></span> | <span data-ttu-id="1070f-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1070f-113">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="6540e-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6540e-112">Permission type</span></span> | <span data-ttu-id="6540e-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6540e-113">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="1070f-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1070f-114">Delegated (work or school account)</span></span>| <span data-ttu-id="1070f-115">Printer. ReadWrite. All, Printer. FullControl. All</span><span class="sxs-lookup"><span data-stu-id="1070f-115">Printer.ReadWrite.All, Printer.FullControl.All</span></span> |
-|<span data-ttu-id="1070f-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1070f-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1070f-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1070f-117">Not Supported.</span></span>|
-|<span data-ttu-id="1070f-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1070f-118">Application</span></span>| <span data-ttu-id="1070f-119">Printer.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1070f-119">Printer.ReadWrite.All</span></span> |
+|<span data-ttu-id="6540e-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6540e-114">Delegated (work or school account)</span></span>| <span data-ttu-id="6540e-115">Printer. ReadWrite. All, Printer. FullControl. All</span><span class="sxs-lookup"><span data-stu-id="6540e-115">Printer.ReadWrite.All, Printer.FullControl.All</span></span> |
+|<span data-ttu-id="6540e-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6540e-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6540e-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6540e-117">Not Supported.</span></span>|
+|<span data-ttu-id="6540e-118">Application</span><span class="sxs-lookup"><span data-stu-id="6540e-118">Application</span></span>| <span data-ttu-id="6540e-119">Printer.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6540e-119">Printer.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1070f-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1070f-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6540e-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6540e-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /print/printers/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="1070f-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1070f-121">Request headers</span></span>
-| <span data-ttu-id="1070f-122">Nome</span><span class="sxs-lookup"><span data-stu-id="1070f-122">Name</span></span>       | <span data-ttu-id="1070f-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="1070f-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6540e-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6540e-121">Request headers</span></span>
+| <span data-ttu-id="6540e-122">Nome</span><span class="sxs-lookup"><span data-stu-id="6540e-122">Name</span></span>       | <span data-ttu-id="6540e-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="6540e-123">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="1070f-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="1070f-124">Authorization</span></span> | <span data-ttu-id="1070f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1070f-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1070f-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="1070f-127">Content-type</span></span>  | <span data-ttu-id="1070f-128">`application/json` ao usar permissões delegadas, `application/ipp` ao usar permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1070f-128">`application/json` when using delegated permissions, `application/ipp` when using application permissions.</span></span> <span data-ttu-id="1070f-129">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1070f-129">Required.</span></span>|
+| <span data-ttu-id="6540e-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="6540e-124">Authorization</span></span> | <span data-ttu-id="6540e-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6540e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6540e-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="6540e-127">Content-type</span></span>  | <span data-ttu-id="6540e-128">`application/json` ao usar permissões delegadas, `application/ipp` ao usar permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="6540e-128">`application/json` when using delegated permissions, `application/ipp` when using application permissions.</span></span> <span data-ttu-id="6540e-129">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6540e-129">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1070f-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1070f-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6540e-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6540e-130">Request body</span></span>
 
-### <a name="delegated-permissions-and-json-payload"></a><span data-ttu-id="1070f-131">Permissões delegadas e carga JSON</span><span class="sxs-lookup"><span data-stu-id="1070f-131">Delegated permissions and JSON payload</span></span>
+### <a name="delegated-permissions-and-json-payload"></a><span data-ttu-id="6540e-131">Permissões delegadas e carga JSON</span><span class="sxs-lookup"><span data-stu-id="6540e-131">Delegated permissions and JSON payload</span></span>
 
-<span data-ttu-id="1070f-132">Se estiver usando permissões delegadas, no corpo da solicitação, forneça os valores para os campos de [impressora](../resources/printer.md) relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="1070f-132">If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated.</span></span> <span data-ttu-id="1070f-133">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="1070f-133">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="1070f-134">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="1070f-134">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="6540e-132">Se estiver usando permissões delegadas, no corpo da solicitação, forneça os valores para os campos de [impressora](../resources/printer.md) relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="6540e-132">If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated.</span></span> <span data-ttu-id="6540e-133">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="6540e-133">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="6540e-134">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="6540e-134">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="1070f-135">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1070f-135">Property</span></span>     | <span data-ttu-id="1070f-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="1070f-136">Type</span></span>        | <span data-ttu-id="1070f-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="1070f-137">Description</span></span> |
+| <span data-ttu-id="6540e-135">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6540e-135">Property</span></span>     | <span data-ttu-id="6540e-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="6540e-136">Type</span></span>        | <span data-ttu-id="6540e-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="6540e-137">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="1070f-138">location</span><span class="sxs-lookup"><span data-stu-id="1070f-138">location</span></span>|[<span data-ttu-id="1070f-139">printerLocation</span><span class="sxs-lookup"><span data-stu-id="1070f-139">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="1070f-140">O local físico e/ou organizacional da impressora.</span><span class="sxs-lookup"><span data-stu-id="1070f-140">The physical and/or organizational location of the printer.</span></span>|
-|<span data-ttu-id="1070f-141">nome</span><span class="sxs-lookup"><span data-stu-id="1070f-141">name</span></span>|<span data-ttu-id="1070f-142">String</span><span class="sxs-lookup"><span data-stu-id="1070f-142">String</span></span>|<span data-ttu-id="1070f-143">O nome da impressora.</span><span class="sxs-lookup"><span data-stu-id="1070f-143">The name of the printer.</span></span>|
+|<span data-ttu-id="6540e-138">location</span><span class="sxs-lookup"><span data-stu-id="6540e-138">location</span></span>|[<span data-ttu-id="6540e-139">printerLocation</span><span class="sxs-lookup"><span data-stu-id="6540e-139">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="6540e-140">O local físico e/ou organizacional da impressora.</span><span class="sxs-lookup"><span data-stu-id="6540e-140">The physical and/or organizational location of the printer.</span></span>|
+|<span data-ttu-id="6540e-141">nome</span><span class="sxs-lookup"><span data-stu-id="6540e-141">name</span></span>|<span data-ttu-id="6540e-142">String</span><span class="sxs-lookup"><span data-stu-id="6540e-142">String</span></span>|<span data-ttu-id="6540e-143">O nome da impressora.</span><span class="sxs-lookup"><span data-stu-id="6540e-143">The name of the printer.</span></span>|
 
-### <a name="application-permissions-and-ipp-payload"></a><span data-ttu-id="1070f-144">Permissões de aplicativo e carga IPP</span><span class="sxs-lookup"><span data-stu-id="1070f-144">Application permissions and IPP payload</span></span>
+### <a name="application-permissions-and-ipp-payload"></a><span data-ttu-id="6540e-144">Permissões de aplicativo e carga IPP</span><span class="sxs-lookup"><span data-stu-id="6540e-144">Application permissions and IPP payload</span></span>
 
-<span data-ttu-id="1070f-145">Se estiver usando permissões de aplicativo, o corpo da solicitação contém um fluxo binário que representa o grupo de atributos da impressora na [codificação IPP](https://tools.ietf.org/html/rfc8010).</span><span class="sxs-lookup"><span data-stu-id="1070f-145">If using application permissions, the request body contains a binary stream representing the Printer Attributes group in [IPP encoding](https://tools.ietf.org/html/rfc8010).</span></span>
+<span data-ttu-id="6540e-145">Se estiver usando permissões de aplicativo, o corpo da solicitação contém um fluxo binário que representa o grupo de atributos da impressora na [codificação IPP](https://tools.ietf.org/html/rfc8010).</span><span class="sxs-lookup"><span data-stu-id="6540e-145">If using application permissions, the request body contains a binary stream representing the Printer Attributes group in [IPP encoding](https://tools.ietf.org/html/rfc8010).</span></span>
 
-<span data-ttu-id="1070f-146">O cliente deve fornecer um conjunto de atributos de impressora com um ou mais valores (incluindo valores fora de banda explicitamente permitidos), conforme definido na [seção RFC8011 5,2](https://tools.ietf.org/html/rfc8011#section-5.2) atributos de modelo de trabalho ("XXX-default", "XXX-supported" e "XXX-Ready" Attributes), [seção 5,4](https://tools.ietf.org/html/rfc8011#section-5.4) atributos de descrição da impressora e quaisquer extensões de atributo compatíveis com a impressora.</span><span class="sxs-lookup"><span data-stu-id="1070f-146">The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) Printer Description Attributes, and any attribute extensions supported by the Printer.</span></span> <span data-ttu-id="1070f-147">O (s) valor (es) de cada atributo de impressora fornecido substitui o (s) valor (es) do atributo de impressora correspondente no objeto de impressora de destino.</span><span class="sxs-lookup"><span data-stu-id="1070f-147">The value(s) of each Printer attribute supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object.</span></span> <span data-ttu-id="1070f-148">Para atributos que podem ter vários valores (1setOf), todos os valores fornecidos pelo cliente substituem todos os valores do atributo de objeto Printer correspondente.</span><span class="sxs-lookup"><span data-stu-id="1070f-148">For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.</span></span>
+<span data-ttu-id="6540e-146">O cliente deve fornecer um conjunto de atributos de impressora com um ou mais valores (incluindo valores fora de banda explicitamente permitidos), conforme definido na [seção RFC8011 5,2](https://tools.ietf.org/html/rfc8011#section-5.2) atributos de modelo de trabalho ("XXX-default", "XXX-supported" e "XXX-Ready" Attributes), [seção 5,4](https://tools.ietf.org/html/rfc8011#section-5.4) atributos de descrição da impressora e quaisquer extensões de atributo compatíveis com a impressora.</span><span class="sxs-lookup"><span data-stu-id="6540e-146">The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 5.2](https://tools.ietf.org/html/rfc8011#section-5.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 5.4](https://tools.ietf.org/html/rfc8011#section-5.4) Printer Description Attributes, and any attribute extensions supported by the Printer.</span></span> <span data-ttu-id="6540e-147">O (s) valor (es) de cada atributo de impressora fornecido substitui o (s) valor (es) do atributo de impressora correspondente no objeto de impressora de destino.</span><span class="sxs-lookup"><span data-stu-id="6540e-147">The value(s) of each Printer attribute supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object.</span></span> <span data-ttu-id="6540e-148">Para atributos que podem ter vários valores (1setOf), todos os valores fornecidos pelo cliente substituem todos os valores do atributo de objeto Printer correspondente.</span><span class="sxs-lookup"><span data-stu-id="6540e-148">For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1070f-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="1070f-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6540e-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="6540e-149">Response</span></span>
 
-### <a name="delegated-permissions-and-json-payload"></a><span data-ttu-id="1070f-150">Permissões delegadas e carga JSON</span><span class="sxs-lookup"><span data-stu-id="1070f-150">Delegated permissions and JSON payload</span></span>
+### <a name="delegated-permissions-and-json-payload"></a><span data-ttu-id="6540e-150">Permissões delegadas e carga JSON</span><span class="sxs-lookup"><span data-stu-id="6540e-150">Delegated permissions and JSON payload</span></span>
 
-<span data-ttu-id="1070f-151">Se usar permissões delegadas, se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Printer](../resources/printer.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1070f-151">If using delegated permissions, if successful, this method returns a `200 OK` response code and an updated [printer](../resources/printer.md) object in the response body.</span></span>
+<span data-ttu-id="6540e-151">Se usar permissões delegadas, se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Printer](../resources/printer.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6540e-151">If using delegated permissions, if successful, this method returns a `200 OK` response code and an updated [printer](../resources/printer.md) object in the response body.</span></span>
 
-### <a name="application-permissions-and-ipp-payload"></a><span data-ttu-id="1070f-152">Permissões de aplicativo e carga IPP</span><span class="sxs-lookup"><span data-stu-id="1070f-152">Application permissions and IPP payload</span></span>
+### <a name="application-permissions-and-ipp-payload"></a><span data-ttu-id="6540e-152">Permissões de aplicativo e carga IPP</span><span class="sxs-lookup"><span data-stu-id="6540e-152">Application permissions and IPP payload</span></span>
 
-<span data-ttu-id="1070f-153">Se o uso de permissões de aplicativo for bem-sucedido, este método retornará um `204 No content` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="1070f-153">If using application permissions, if successful, this method returns `204 No content` response code.</span></span> <span data-ttu-id="1070f-154">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1070f-154">It does not return anything in the response body.</span></span>
+<span data-ttu-id="6540e-153">Se o uso de permissões de aplicativo for bem-sucedido, este método retornará um `204 No content` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="6540e-153">If using application permissions, if successful, this method returns `204 No content` response code.</span></span> <span data-ttu-id="6540e-154">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6540e-154">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1070f-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1070f-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6540e-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6540e-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1070f-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1070f-156">Request</span></span>
-<span data-ttu-id="1070f-157">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1070f-157">The following is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="6540e-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6540e-156">Request</span></span>
+<span data-ttu-id="6540e-157">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6540e-157">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="1070f-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="1070f-158">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6540e-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="6540e-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_printer"
@@ -95,23 +95,27 @@ Content-length: 124
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="1070f-159">C#</span><span class="sxs-lookup"><span data-stu-id="1070f-159">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6540e-159">C#</span><span class="sxs-lookup"><span data-stu-id="6540e-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-printer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1070f-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1070f-160">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6540e-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6540e-160">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-printer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1070f-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1070f-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6540e-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6540e-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="6540e-162">Java</span><span class="sxs-lookup"><span data-stu-id="6540e-162">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="1070f-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="1070f-162">Response</span></span>
-<span data-ttu-id="1070f-163">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1070f-163">The following is an example of the response.</span></span>
-><span data-ttu-id="1070f-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1070f-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6540e-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="6540e-163">Response</span></span>
+<span data-ttu-id="6540e-164">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6540e-164">The following is an example of the response.</span></span>
+><span data-ttu-id="6540e-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6540e-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

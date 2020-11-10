@@ -5,62 +5,62 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d100cf31fe3eda6b12c7902135c8289dc15c4981
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 42e062a41b0c8e4fd5dd46a0e4b605300e22b66b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461017"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979440"
 ---
-# <a name="list-tasks-deprecated"></a><span data-ttu-id="ba278-103">Listar tarefas (preterido)</span><span class="sxs-lookup"><span data-stu-id="ba278-103">List tasks (deprecated)</span></span>
+# <a name="list-tasks-deprecated"></a><span data-ttu-id="1ff95-103">Listar de tarefas (obsoleto)</span><span class="sxs-lookup"><span data-stu-id="1ff95-103">List tasks (deprecated)</span></span>
 
-<span data-ttu-id="ba278-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ba278-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1ff95-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1ff95-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-<span data-ttu-id="ba278-105">Obtenha todas as tarefas do Outlook na caixa de correio do usuário.</span><span class="sxs-lookup"><span data-stu-id="ba278-105">Get all the Outlook tasks in the user's mailbox.</span></span>
+<span data-ttu-id="1ff95-105">Obtenha todas as tarefas do Outlook na caixa de correio do usuário.</span><span class="sxs-lookup"><span data-stu-id="1ff95-105">Get all the Outlook tasks in the user's mailbox.</span></span>
 
-<span data-ttu-id="ba278-106">Por padrão, essa operação (e as operações de POST, PATCH e tarefa [completa](../api/outlooktask-complete.md) ) retorna as propriedades relacionadas à data no UTC.</span><span class="sxs-lookup"><span data-stu-id="ba278-106">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span>
-<span data-ttu-id="ba278-107">Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.</span><span class="sxs-lookup"><span data-stu-id="ba278-107">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span> <span data-ttu-id="ba278-108">Veja um [exemplo](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) para obter uma única tarefa.</span><span class="sxs-lookup"><span data-stu-id="ba278-108">See an [example](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) for getting a single task.</span></span> <span data-ttu-id="ba278-109">Você pode aplicar o cabeçalho de forma semelhante para obter várias tarefas.</span><span class="sxs-lookup"><span data-stu-id="ba278-109">You can apply the header similarly to get multiple tasks.</span></span>
+<span data-ttu-id="1ff95-106">Por padrão, essa operação (e as operações de POST, PATCH e tarefa [completa](../api/outlooktask-complete.md) ) retorna as propriedades relacionadas à data no UTC.</span><span class="sxs-lookup"><span data-stu-id="1ff95-106">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span>
+<span data-ttu-id="1ff95-107">Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.</span><span class="sxs-lookup"><span data-stu-id="1ff95-107">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span> <span data-ttu-id="1ff95-108">Veja um [exemplo](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) para obter uma única tarefa.</span><span class="sxs-lookup"><span data-stu-id="1ff95-108">See an [example](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) for getting a single task.</span></span> <span data-ttu-id="1ff95-109">Você pode aplicar o cabeçalho de forma semelhante para obter várias tarefas.</span><span class="sxs-lookup"><span data-stu-id="1ff95-109">You can apply the header similarly to get multiple tasks.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ba278-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="ba278-110">Permissions</span></span>
-<span data-ttu-id="ba278-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ba278-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1ff95-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="1ff95-110">Permissions</span></span>
+<span data-ttu-id="1ff95-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1ff95-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ba278-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ba278-113">Permission type</span></span>      | <span data-ttu-id="ba278-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ba278-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1ff95-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1ff95-113">Permission type</span></span>      | <span data-ttu-id="1ff95-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1ff95-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ba278-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ba278-115">Delegated (work or school account)</span></span> | <span data-ttu-id="ba278-116">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="ba278-116">Tasks.Read</span></span>    |
-|<span data-ttu-id="ba278-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ba278-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba278-118">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="ba278-118">Tasks.Read</span></span>    |
-|<span data-ttu-id="ba278-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ba278-119">Application</span></span> | <span data-ttu-id="ba278-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ba278-120">Not supported.</span></span> |
+|<span data-ttu-id="1ff95-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1ff95-115">Delegated (work or school account)</span></span> | <span data-ttu-id="1ff95-116">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="1ff95-116">Tasks.Read</span></span>    |
+|<span data-ttu-id="1ff95-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1ff95-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1ff95-118">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="1ff95-118">Tasks.Read</span></span>    |
+|<span data-ttu-id="1ff95-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1ff95-119">Application</span></span> | <span data-ttu-id="1ff95-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1ff95-120">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ba278-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ba278-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1ff95-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1ff95-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks
 GET /users/{id|userPrincipalName}/outlook/tasks
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="ba278-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="ba278-122">Optional query parameters</span></span>
-<span data-ttu-id="ba278-123">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="ba278-123">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1ff95-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="1ff95-122">Optional query parameters</span></span>
+<span data-ttu-id="1ff95-123">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="1ff95-123">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ba278-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ba278-124">Request headers</span></span>
-| <span data-ttu-id="ba278-125">Nome</span><span class="sxs-lookup"><span data-stu-id="ba278-125">Name</span></span>      |<span data-ttu-id="ba278-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="ba278-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1ff95-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1ff95-124">Request headers</span></span>
+| <span data-ttu-id="1ff95-125">Nome</span><span class="sxs-lookup"><span data-stu-id="1ff95-125">Name</span></span>      |<span data-ttu-id="1ff95-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="1ff95-126">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="ba278-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="ba278-127">Authorization</span></span>  | <span data-ttu-id="ba278-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ba278-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ba278-130">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="ba278-130">Prefer: outlook.timezone</span></span> | <span data-ttu-id="ba278-131">Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado.</span><span class="sxs-lookup"><span data-stu-id="ba278-131">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="ba278-132">Opcional.</span><span class="sxs-lookup"><span data-stu-id="ba278-132">Optional.</span></span>|
+| <span data-ttu-id="1ff95-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="1ff95-127">Authorization</span></span>  | <span data-ttu-id="1ff95-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1ff95-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1ff95-130">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="1ff95-130">Prefer: outlook.timezone</span></span> | <span data-ttu-id="1ff95-131">Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado.</span><span class="sxs-lookup"><span data-stu-id="1ff95-131">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="1ff95-132">Opcional.</span><span class="sxs-lookup"><span data-stu-id="1ff95-132">Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ba278-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ba278-133">Request body</span></span>
-<span data-ttu-id="ba278-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ba278-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1ff95-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1ff95-133">Request body</span></span>
+<span data-ttu-id="1ff95-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1ff95-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ba278-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="ba278-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1ff95-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ff95-135">Response</span></span>
 
-<span data-ttu-id="ba278-136">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [outlookTask](../resources/outlooktask.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ba278-136">If successful, this method returns a `200 OK` response code and collection of [outlookTask](../resources/outlooktask.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ba278-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ba278-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ba278-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ba278-138">Request</span></span>
-<span data-ttu-id="ba278-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ba278-139">Here is an example of the request.</span></span>
+<span data-ttu-id="1ff95-136">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [outlookTask](../resources/outlooktask.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1ff95-136">If successful, this method returns a `200 OK` response code and collection of [outlookTask](../resources/outlooktask.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1ff95-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1ff95-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1ff95-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1ff95-138">Request</span></span>
+<span data-ttu-id="1ff95-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1ff95-139">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ba278-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="ba278-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1ff95-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="1ff95-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "outlookuser_get_tasks"
@@ -68,24 +68,28 @@ GET /users/{id|userPrincipalName}/outlook/tasks
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```
-# <a name="c"></a>[<span data-ttu-id="ba278-141">C#</span><span class="sxs-lookup"><span data-stu-id="ba278-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1ff95-141">C#</span><span class="sxs-lookup"><span data-stu-id="1ff95-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/outlookuser-get-tasks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ba278-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ba278-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1ff95-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1ff95-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/outlookuser-get-tasks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ba278-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ba278-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1ff95-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1ff95-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/outlookuser-get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="1ff95-144">Java</span><span class="sxs-lookup"><span data-stu-id="1ff95-144">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/outlookuser-get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="ba278-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="ba278-144">Response</span></span>
-<span data-ttu-id="ba278-145">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ba278-145">Here is an example of the response.</span></span> <span data-ttu-id="ba278-146">Por padrão, as propriedades de data e hora na resposta estão em UTC.</span><span class="sxs-lookup"><span data-stu-id="ba278-146">By default, the date-time properties in the response are in UTC.</span></span>
+##### <a name="response"></a><span data-ttu-id="1ff95-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ff95-145">Response</span></span>
+<span data-ttu-id="1ff95-146">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1ff95-146">Here is an example of the response.</span></span> <span data-ttu-id="1ff95-147">Por padrão, as propriedades de data e hora na resposta estão em UTC.</span><span class="sxs-lookup"><span data-stu-id="1ff95-147">By default, the date-time properties in the response are in UTC.</span></span>
 
-<span data-ttu-id="ba278-p106">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ba278-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="1ff95-p106">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1ff95-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,71 +5,71 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5ecfb05e3808c18a7dad79cb8a1512598927857f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 62c4cc098d3cb383f0b41d0668deb1c170017bfc
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064441"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980033"
 ---
-# <a name="send-mail"></a><span data-ttu-id="80df9-104">Enviar email</span><span class="sxs-lookup"><span data-stu-id="80df9-104">Send mail</span></span>
+# <a name="send-mail"></a><span data-ttu-id="28b35-104">Enviar email</span><span class="sxs-lookup"><span data-stu-id="28b35-104">Send mail</span></span>
 
-<span data-ttu-id="80df9-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="80df9-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="28b35-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="28b35-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="80df9-p102">Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.</span><span class="sxs-lookup"><span data-stu-id="80df9-p102">Send the message specified in the request body. The message is saved in the Sent Items folder by default.</span></span>
+<span data-ttu-id="28b35-p102">Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.</span><span class="sxs-lookup"><span data-stu-id="28b35-p102">Send the message specified in the request body. The message is saved in the Sent Items folder by default.</span></span>
 
-<span data-ttu-id="80df9-108">Na mesma chamada de ação de **sendmail** , você pode:</span><span class="sxs-lookup"><span data-stu-id="80df9-108">In the same **sendMail** action call, you can:</span></span>
+<span data-ttu-id="28b35-108">Na mesma chamada de ação de **sendmail** , você pode:</span><span class="sxs-lookup"><span data-stu-id="28b35-108">In the same **sendMail** action call, you can:</span></span>
 
-- <span data-ttu-id="80df9-109">Incluir um [anexo](../resources/attachment.md)</span><span class="sxs-lookup"><span data-stu-id="80df9-109">Include an [attachment](../resources/attachment.md)</span></span>
-- <span data-ttu-id="80df9-110">Usar uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem</span><span class="sxs-lookup"><span data-stu-id="80df9-110">Use a [mention](../resources/mention.md) to call out another user in the new message</span></span>
+- <span data-ttu-id="28b35-109">Incluir um [anexo](../resources/attachment.md)</span><span class="sxs-lookup"><span data-stu-id="28b35-109">Include an [attachment](../resources/attachment.md)</span></span>
+- <span data-ttu-id="28b35-110">Usar uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem</span><span class="sxs-lookup"><span data-stu-id="28b35-110">Use a [mention](../resources/mention.md) to call out another user in the new message</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="80df9-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="80df9-111">Permissions</span></span>
-<span data-ttu-id="80df9-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80df9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="28b35-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="28b35-111">Permissions</span></span>
+<span data-ttu-id="28b35-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28b35-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="80df9-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="80df9-114">Permission type</span></span>      | <span data-ttu-id="80df9-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="80df9-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="28b35-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="28b35-114">Permission type</span></span>      | <span data-ttu-id="28b35-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="28b35-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="80df9-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="80df9-116">Delegated (work or school account)</span></span> | <span data-ttu-id="80df9-117">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="80df9-117">Mail.Send</span></span>    |
-|<span data-ttu-id="80df9-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="80df9-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80df9-119">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="80df9-119">Mail.Send</span></span>    |
-|<span data-ttu-id="80df9-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="80df9-120">Application</span></span> | <span data-ttu-id="80df9-121">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="80df9-121">Mail.Send</span></span> |
+|<span data-ttu-id="28b35-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="28b35-116">Delegated (work or school account)</span></span> | <span data-ttu-id="28b35-117">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="28b35-117">Mail.Send</span></span>    |
+|<span data-ttu-id="28b35-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="28b35-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="28b35-119">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="28b35-119">Mail.Send</span></span>    |
+|<span data-ttu-id="28b35-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="28b35-120">Application</span></span> | <span data-ttu-id="28b35-121">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="28b35-121">Mail.Send</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="80df9-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="80df9-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28b35-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="28b35-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
-## <a name="request-headers"></a><span data-ttu-id="80df9-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="80df9-123">Request headers</span></span>
-| <span data-ttu-id="80df9-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="80df9-124">Header</span></span>       | <span data-ttu-id="80df9-125">Valor</span><span class="sxs-lookup"><span data-stu-id="80df9-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="28b35-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="28b35-123">Request headers</span></span>
+| <span data-ttu-id="28b35-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="28b35-124">Header</span></span>       | <span data-ttu-id="28b35-125">Valor</span><span class="sxs-lookup"><span data-stu-id="28b35-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="80df9-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="80df9-126">Authorization</span></span>  | <span data-ttu-id="80df9-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="80df9-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="80df9-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="80df9-129">Content-Type</span></span>  | <span data-ttu-id="80df9-130">application/json</span><span class="sxs-lookup"><span data-stu-id="80df9-130">application/json</span></span>  |
+| <span data-ttu-id="28b35-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="28b35-126">Authorization</span></span>  | <span data-ttu-id="28b35-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="28b35-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="28b35-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="28b35-129">Content-Type</span></span>  | <span data-ttu-id="28b35-130">application/json</span><span class="sxs-lookup"><span data-stu-id="28b35-130">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="80df9-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="80df9-131">Request body</span></span>
-<span data-ttu-id="80df9-132">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="80df9-132">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="28b35-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="28b35-131">Request body</span></span>
+<span data-ttu-id="28b35-132">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="28b35-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="80df9-133">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="80df9-133">Parameter</span></span>    | <span data-ttu-id="80df9-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="80df9-134">Type</span></span>   |<span data-ttu-id="80df9-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="80df9-135">Description</span></span>|
+| <span data-ttu-id="28b35-133">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="28b35-133">Parameter</span></span>    | <span data-ttu-id="28b35-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="28b35-134">Type</span></span>   |<span data-ttu-id="28b35-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="28b35-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="80df9-136">Message</span><span class="sxs-lookup"><span data-stu-id="80df9-136">Message</span></span>|[<span data-ttu-id="80df9-137">Message</span><span class="sxs-lookup"><span data-stu-id="80df9-137">Message</span></span>](../resources/message.md)|<span data-ttu-id="80df9-p105">A mensagem a enviar. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="80df9-p105">The message to send. Required.</span></span>|
-|<span data-ttu-id="80df9-140">SaveToSentItems</span><span class="sxs-lookup"><span data-stu-id="80df9-140">SaveToSentItems</span></span>|<span data-ttu-id="80df9-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="80df9-141">Boolean</span></span>|<span data-ttu-id="80df9-p106">Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.</span><span class="sxs-lookup"><span data-stu-id="80df9-p106">Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.</span></span>|
+|<span data-ttu-id="28b35-136">Message</span><span class="sxs-lookup"><span data-stu-id="28b35-136">Message</span></span>|[<span data-ttu-id="28b35-137">Message</span><span class="sxs-lookup"><span data-stu-id="28b35-137">Message</span></span>](../resources/message.md)|<span data-ttu-id="28b35-p105">A mensagem a enviar. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="28b35-p105">The message to send. Required.</span></span>|
+|<span data-ttu-id="28b35-140">SaveToSentItems</span><span class="sxs-lookup"><span data-stu-id="28b35-140">SaveToSentItems</span></span>|<span data-ttu-id="28b35-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="28b35-141">Boolean</span></span>|<span data-ttu-id="28b35-p106">Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.</span><span class="sxs-lookup"><span data-stu-id="28b35-p106">Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.</span></span>|
 
-<span data-ttu-id="80df9-145">Se você quiser usar **menção** para chamar outro usuário na nova mensagem:</span><span class="sxs-lookup"><span data-stu-id="80df9-145">If you want to use **mention** to call out another user in the new message:</span></span>
+<span data-ttu-id="28b35-145">Se você quiser usar **menção** para chamar outro usuário na nova mensagem:</span><span class="sxs-lookup"><span data-stu-id="28b35-145">If you want to use **mention** to call out another user in the new message:</span></span>
 
-- <span data-ttu-id="80df9-146">Inclua a propriedade Required **ToRecipients** , a propriedade **mencionas** e qualquer propriedade gravável de mensagem no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="80df9-146">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
-- <span data-ttu-id="80df9-147">Para cada menção na propriedade **menciona** , você deve especificar a propriedade **mencionado** .</span><span class="sxs-lookup"><span data-stu-id="80df9-147">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
+- <span data-ttu-id="28b35-146">Inclua a propriedade Required **ToRecipients** , a propriedade **mencionas** e qualquer propriedade gravável de mensagem no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="28b35-146">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
+- <span data-ttu-id="28b35-147">Para cada menção na propriedade **menciona** , você deve especificar a propriedade **mencionado** .</span><span class="sxs-lookup"><span data-stu-id="28b35-147">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
 
-## <a name="response"></a><span data-ttu-id="80df9-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="80df9-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="28b35-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="28b35-148">Response</span></span>
 
-<span data-ttu-id="80df9-p107">Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80df9-p107">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="28b35-p107">Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28b35-p107">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="80df9-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="80df9-151">Example</span></span>
-<span data-ttu-id="80df9-152">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="80df9-152">Here is an example of how to call this API.</span></span>
-##### <a name="request-1"></a><span data-ttu-id="80df9-153">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="80df9-153">Request 1</span></span>
-<span data-ttu-id="80df9-154">Aqui está um exemplo da solicitação para criar e enviar uma mensagem instantaneamente.</span><span class="sxs-lookup"><span data-stu-id="80df9-154">Here is an example of the request to create and send a message on the fly.</span></span>
+## <a name="example"></a><span data-ttu-id="28b35-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="28b35-151">Example</span></span>
+<span data-ttu-id="28b35-152">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="28b35-152">Here is an example of how to call this API.</span></span>
+##### <a name="request-1"></a><span data-ttu-id="28b35-153">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="28b35-153">Request 1</span></span>
+<span data-ttu-id="28b35-154">Aqui está um exemplo da solicitação para criar e enviar uma mensagem instantaneamente.</span><span class="sxs-lookup"><span data-stu-id="28b35-154">Here is an example of the request to create and send a message on the fly.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="80df9-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="80df9-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="28b35-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="28b35-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -104,23 +104,27 @@ Content-length: 512
   "saveToSentItems": "false"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="80df9-156">C#</span><span class="sxs-lookup"><span data-stu-id="80df9-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="28b35-156">C#</span><span class="sxs-lookup"><span data-stu-id="28b35-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="80df9-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80df9-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="28b35-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="28b35-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="80df9-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="80df9-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="28b35-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="28b35-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="28b35-159">Java</span><span class="sxs-lookup"><span data-stu-id="28b35-159">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-1"></a><span data-ttu-id="80df9-159">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="80df9-159">Response 1</span></span>
-<span data-ttu-id="80df9-160">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80df9-160">Here is an example of the response.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="28b35-160">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="28b35-160">Response 1</span></span>
+<span data-ttu-id="28b35-161">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28b35-161">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -130,10 +134,10 @@ HTTP/1.1 202 Accepted
 ```
 
 
-##### <a name="request-2"></a><span data-ttu-id="80df9-161">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="80df9-161">Request 2</span></span>
-<span data-ttu-id="80df9-162">O exemplo a seguir mostra uma mensagem pelo usuário conectado ao estande de Paula.</span><span class="sxs-lookup"><span data-stu-id="80df9-162">The next example shows a message by the signed-in user to Samantha Booth.</span></span> <span data-ttu-id="80df9-163">A mensagem também inclui uma menção de outro usuário, Dana Swope.</span><span class="sxs-lookup"><span data-stu-id="80df9-163">The message also includes a mention of another user, Dana Swope.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="28b35-162">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="28b35-162">Request 2</span></span>
+<span data-ttu-id="28b35-163">O exemplo a seguir mostra uma mensagem pelo usuário conectado ao estande de Paula.</span><span class="sxs-lookup"><span data-stu-id="28b35-163">The next example shows a message by the signed-in user to Samantha Booth.</span></span> <span data-ttu-id="28b35-164">A mensagem também inclui uma menção de outro usuário, Dana Swope.</span><span class="sxs-lookup"><span data-stu-id="28b35-164">The message also includes a mention of another user, Dana Swope.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="80df9-164">HTTP</span><span class="sxs-lookup"><span data-stu-id="80df9-164">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="28b35-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="28b35-165">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_mentions"
@@ -165,23 +169,27 @@ Content-length: 344
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="80df9-165">C#</span><span class="sxs-lookup"><span data-stu-id="80df9-165">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="28b35-166">C#</span><span class="sxs-lookup"><span data-stu-id="28b35-166">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-mentions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="80df9-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80df9-166">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="28b35-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="28b35-167">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-mentions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="80df9-167">Objective-C</span><span class="sxs-lookup"><span data-stu-id="80df9-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="28b35-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="28b35-168">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-mentions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="28b35-169">Java</span><span class="sxs-lookup"><span data-stu-id="28b35-169">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-mentions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-2"></a><span data-ttu-id="80df9-168">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="80df9-168">Response 2</span></span>
-<span data-ttu-id="80df9-169">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80df9-169">Here is an example of the response.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="28b35-170">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="28b35-170">Response 2</span></span>
+<span data-ttu-id="28b35-171">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28b35-171">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -190,10 +198,10 @@ Content-length: 344
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-3"></a><span data-ttu-id="80df9-170">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="80df9-170">Request 3</span></span>
-<span data-ttu-id="80df9-171">O exemplo a seguir cria uma mensagem com cabeçalhos personalizados de mensagem da Internet e envia a mensagem.</span><span class="sxs-lookup"><span data-stu-id="80df9-171">The next example creates a message with custom Internet message headers and sends the message.</span></span>
+##### <a name="request-3"></a><span data-ttu-id="28b35-172">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="28b35-172">Request 3</span></span>
+<span data-ttu-id="28b35-173">O exemplo a seguir cria uma mensagem com cabeçalhos personalizados de mensagem da Internet e envia a mensagem.</span><span class="sxs-lookup"><span data-stu-id="28b35-173">The next example creates a message with custom Internet message headers and sends the message.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="80df9-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="80df9-172">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="28b35-174">HTTP</span><span class="sxs-lookup"><span data-stu-id="28b35-174">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
@@ -229,23 +237,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="80df9-173">C#</span><span class="sxs-lookup"><span data-stu-id="80df9-173">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="28b35-175">C#</span><span class="sxs-lookup"><span data-stu-id="28b35-175">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="80df9-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80df9-174">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="28b35-176">JavaScript</span><span class="sxs-lookup"><span data-stu-id="28b35-176">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="80df9-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="80df9-175">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="28b35-177">Objective-C</span><span class="sxs-lookup"><span data-stu-id="28b35-177">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-headers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="28b35-178">Java</span><span class="sxs-lookup"><span data-stu-id="28b35-178">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-headers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-3"></a><span data-ttu-id="80df9-176">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="80df9-176">Response 3</span></span>
-<span data-ttu-id="80df9-177">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80df9-177">Here is an example of the response.</span></span>
+##### <a name="response-3"></a><span data-ttu-id="28b35-179">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="28b35-179">Response 3</span></span>
+<span data-ttu-id="28b35-180">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28b35-180">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -254,12 +266,12 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-4"></a><span data-ttu-id="80df9-178">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="80df9-178">Request 4</span></span>
+##### <a name="request-4"></a><span data-ttu-id="28b35-181">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="28b35-181">Request 4</span></span>
 
-<span data-ttu-id="80df9-179">O exemplo a seguir cria uma mensagem com cabeçalhos personalizados de mensagem da Internet e envia a mensagem.</span><span class="sxs-lookup"><span data-stu-id="80df9-179">The next example creates a message with a file attachment and sends the message.</span></span>
+<span data-ttu-id="28b35-182">O exemplo a seguir cria uma mensagem com cabeçalhos personalizados de mensagem da Internet e envia a mensagem.</span><span class="sxs-lookup"><span data-stu-id="28b35-182">The next example creates a message with a file attachment and sends the message.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="80df9-180">HTTP</span><span class="sxs-lookup"><span data-stu-id="80df9-180">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="28b35-183">HTTP</span><span class="sxs-lookup"><span data-stu-id="28b35-183">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_attachment"
@@ -294,24 +306,28 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="80df9-181">C#</span><span class="sxs-lookup"><span data-stu-id="80df9-181">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="28b35-184">C#</span><span class="sxs-lookup"><span data-stu-id="28b35-184">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="80df9-182">JavaScript</span><span class="sxs-lookup"><span data-stu-id="80df9-182">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="28b35-185">JavaScript</span><span class="sxs-lookup"><span data-stu-id="28b35-185">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="80df9-183">Objective-C</span><span class="sxs-lookup"><span data-stu-id="80df9-183">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="28b35-186">Objective-C</span><span class="sxs-lookup"><span data-stu-id="28b35-186">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-attachment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="28b35-187">Java</span><span class="sxs-lookup"><span data-stu-id="28b35-187">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-4"></a><span data-ttu-id="80df9-184">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="80df9-184">Response 4</span></span>
+##### <a name="response-4"></a><span data-ttu-id="28b35-188">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="28b35-188">Response 4</span></span>
 
-<span data-ttu-id="80df9-185">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80df9-185">Here is an example of the response.</span></span>
+<span data-ttu-id="28b35-189">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28b35-189">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

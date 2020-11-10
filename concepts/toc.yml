@@ -547,9 +547,11 @@ items:
             href: toolkit/overview.md
           - name: Introdução
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: toolkit/get-started/overview.md
-              - name: Criar um aplicativo Web (JavaScript)
+              - name: Criar um aplicativo no Azure Active Directory
+                href: toolkit/get-started/add-aad-app-registration.md
+              - name: Criar um aplicativo para web (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
               - name: Criar uma web part do Microsoft Office SharePoint Online
                 href: toolkit/get-started/build-a-sharepoint-web-part.md

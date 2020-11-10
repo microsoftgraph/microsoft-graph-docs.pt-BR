@@ -6,32 +6,32 @@ description: Conceder a uma lista de usuários acesso para usar o link especific
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 851073cb23778dcec89fc876f314a9b3e1297550
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 307fcf8850666960265986a48ee96140d1c5d28f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040310"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979947"
 ---
-# <a name="permission-grant"></a><span data-ttu-id="a3433-103">permissão: Grant</span><span class="sxs-lookup"><span data-stu-id="a3433-103">permission: grant</span></span>
+# <a name="permission-grant"></a><span data-ttu-id="28441-103">permissão: Grant</span><span class="sxs-lookup"><span data-stu-id="28441-103">permission: grant</span></span>
 
-<span data-ttu-id="a3433-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a3433-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="28441-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="28441-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a3433-105">Conceder aos usuários acesso a um link representado por uma [permissão][].</span><span class="sxs-lookup"><span data-stu-id="a3433-105">Grant users access to a link represented by a [permission][].</span></span>
+<span data-ttu-id="28441-105">Conceder aos usuários acesso a um link representado por uma [permissão][].</span><span class="sxs-lookup"><span data-stu-id="28441-105">Grant users access to a link represented by a [permission][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a3433-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="a3433-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="28441-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="28441-106">Permissions</span></span>
 
-<span data-ttu-id="a3433-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a3433-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="28441-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="28441-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a3433-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a3433-109">Permission type</span></span>                   | <span data-ttu-id="a3433-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a3433-110">Permissions (from least to most privileged)</span></span>              |
+| <span data-ttu-id="28441-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="28441-109">Permission type</span></span>                   | <span data-ttu-id="28441-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="28441-110">Permissions (from least to most privileged)</span></span>              |
 |:----------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a3433-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a3433-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a3433-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3433-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a3433-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a3433-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a3433-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="a3433-114">Not supported</span></span>    |
-|<span data-ttu-id="a3433-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a3433-115">Application</span></span> | <span data-ttu-id="a3433-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3433-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="28441-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="28441-111">Delegated (work or school account)</span></span> | <span data-ttu-id="28441-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="28441-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="28441-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="28441-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="28441-114">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="28441-114">Not supported</span></span>    |
+|<span data-ttu-id="28441-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="28441-115">Application</span></span> | <span data-ttu-id="28441-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="28441-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a3433-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a3433-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28441-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="28441-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,15 +39,15 @@ ms.locfileid: "48040310"
 POST /shares/{encoded-sharing-url}/permission/grant
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a3433-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a3433-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="28441-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="28441-118">Request headers</span></span>
 
-| <span data-ttu-id="a3433-119">Nome</span><span class="sxs-lookup"><span data-stu-id="a3433-119">Name</span></span>          | <span data-ttu-id="a3433-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="a3433-120">Description</span></span>  |
+| <span data-ttu-id="28441-119">Nome</span><span class="sxs-lookup"><span data-stu-id="28441-119">Name</span></span>          | <span data-ttu-id="28441-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="28441-120">Description</span></span>  |
 |:------------- |:------------ |
-| <span data-ttu-id="a3433-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="a3433-121">Authorization</span></span> | <span data-ttu-id="a3433-122">\{token\} de portador.</span><span class="sxs-lookup"><span data-stu-id="a3433-122">Bearer \{token\}.</span></span> <span data-ttu-id="a3433-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a3433-123">Required.</span></span> |
+| <span data-ttu-id="28441-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="28441-121">Authorization</span></span> | <span data-ttu-id="28441-122">\{token\} de portador.</span><span class="sxs-lookup"><span data-stu-id="28441-122">Bearer \{token\}.</span></span> <span data-ttu-id="28441-123">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="28441-123">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a3433-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a3433-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="28441-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="28441-124">Request body</span></span>
 
-<span data-ttu-id="a3433-125">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a3433-125">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="28441-125">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="28441-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
 <!-- { "blockType": "ignored", "scopes": "files.readwrite" } -->
 
@@ -60,30 +60,30 @@ POST /shares/{encoded-sharing-url}/permission/grant
 }
 ```
 
-| <span data-ttu-id="a3433-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a3433-126">Parameter</span></span>          | <span data-ttu-id="a3433-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="a3433-127">Type</span></span>                           | <span data-ttu-id="a3433-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="a3433-128">Description</span></span>
+| <span data-ttu-id="28441-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="28441-126">Parameter</span></span>          | <span data-ttu-id="28441-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="28441-127">Type</span></span>                           | <span data-ttu-id="28441-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="28441-128">Description</span></span>
 |:-------------------|:-------------------------------|:-------------------------
-| <span data-ttu-id="a3433-129">destinatários</span><span class="sxs-lookup"><span data-stu-id="a3433-129">recipients</span></span>         | <span data-ttu-id="a3433-130">Coleção ([driveRecipient][])</span><span class="sxs-lookup"><span data-stu-id="a3433-130">Collection([driveRecipient][])</span></span> | <span data-ttu-id="a3433-131">Uma coleção de destinatários que receberão acesso.</span><span class="sxs-lookup"><span data-stu-id="a3433-131">A collection of recipients who will receive access.</span></span>
-| <span data-ttu-id="a3433-132">funções</span><span class="sxs-lookup"><span data-stu-id="a3433-132">roles</span></span>              | <span data-ttu-id="a3433-133">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="a3433-133">Collection(String)</span></span>             | <span data-ttu-id="a3433-134">Se o link for um link "acesso existente", especifica as funções a serem concedidas aos usuários.</span><span class="sxs-lookup"><span data-stu-id="a3433-134">If the link is an "existing access" link, specifies roles to be granted to the users.</span></span> <span data-ttu-id="a3433-135">Caso contrário, deve corresponder à função do link.</span><span class="sxs-lookup"><span data-stu-id="a3433-135">Otherwise must match the role of the link.</span></span>
+| <span data-ttu-id="28441-129">destinatários</span><span class="sxs-lookup"><span data-stu-id="28441-129">recipients</span></span>         | <span data-ttu-id="28441-130">Coleção ([driveRecipient][])</span><span class="sxs-lookup"><span data-stu-id="28441-130">Collection([driveRecipient][])</span></span> | <span data-ttu-id="28441-131">Uma coleção de destinatários que receberão acesso.</span><span class="sxs-lookup"><span data-stu-id="28441-131">A collection of recipients who will receive access.</span></span>
+| <span data-ttu-id="28441-132">funções</span><span class="sxs-lookup"><span data-stu-id="28441-132">roles</span></span>              | <span data-ttu-id="28441-133">Collection(String)</span><span class="sxs-lookup"><span data-stu-id="28441-133">Collection(String)</span></span>             | <span data-ttu-id="28441-134">Se o link for um link "acesso existente", especifica as funções a serem concedidas aos usuários.</span><span class="sxs-lookup"><span data-stu-id="28441-134">If the link is an "existing access" link, specifies roles to be granted to the users.</span></span> <span data-ttu-id="28441-135">Caso contrário, deve corresponder à função do link.</span><span class="sxs-lookup"><span data-stu-id="28441-135">Otherwise must match the role of the link.</span></span>
 
-<span data-ttu-id="a3433-136">Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).</span><span class="sxs-lookup"><span data-stu-id="a3433-136">For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).</span></span>
+<span data-ttu-id="28441-136">Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).</span><span class="sxs-lookup"><span data-stu-id="28441-136">For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).</span></span>
 
-## <a name="response"></a><span data-ttu-id="a3433-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="a3433-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="28441-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="28441-137">Response</span></span>
 
-<span data-ttu-id="a3433-138">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [permissões][] no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a3433-138">If successful, this method returns a `200 OK` response code and a [permission][] collection in the response body.</span></span>
+<span data-ttu-id="28441-138">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [permissões][] no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="28441-138">If successful, this method returns a `200 OK` response code and a [permission][] collection in the response body.</span></span>
 
-<span data-ttu-id="a3433-139">Uma [permissão][] que representa o link atualizado sempre será retornada no conjunto de resultados no êxito.</span><span class="sxs-lookup"><span data-stu-id="a3433-139">A [permission][] representing the updated link will always be returned in the result set on success.</span></span> <span data-ttu-id="a3433-140">O link updated pode ser identificado pela presença de uma faceta ' link ' que contém a propriedade ' Scope '.</span><span class="sxs-lookup"><span data-stu-id="a3433-140">The updated link can be identified by the presence of a 'link' facet containing the 'scope' property.</span></span> <span data-ttu-id="a3433-141">Em alguns casos, pode ser possível que o link atualizado tenha uma URL diferente da conexão original, caso em que a nova URL deve ser usada.</span><span class="sxs-lookup"><span data-stu-id="a3433-141">In some cases it may be possible that the updated link has a different URL than the original link, in which case the new URL should be used.</span></span>
+<span data-ttu-id="28441-139">Uma [permissão][] que representa o link atualizado sempre será retornada no conjunto de resultados no êxito.</span><span class="sxs-lookup"><span data-stu-id="28441-139">A [permission][] representing the updated link will always be returned in the result set on success.</span></span> <span data-ttu-id="28441-140">O link updated pode ser identificado pela presença de uma faceta ' link ' que contém a propriedade ' Scope '.</span><span class="sxs-lookup"><span data-stu-id="28441-140">The updated link can be identified by the presence of a 'link' facet containing the 'scope' property.</span></span> <span data-ttu-id="28441-141">Em alguns casos, pode ser possível que o link atualizado tenha uma URL diferente da conexão original, caso em que a nova URL deve ser usada.</span><span class="sxs-lookup"><span data-stu-id="28441-141">In some cases it may be possible that the updated link has a different URL than the original link, in which case the new URL should be used.</span></span>
 
-<span data-ttu-id="a3433-142">Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.</span><span class="sxs-lookup"><span data-stu-id="a3433-142">Read the [Error Responses][error-response] topic for more info about how errors are returned.</span></span>
-
-
-## <a name="example"></a><span data-ttu-id="a3433-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a3433-143">Example</span></span>
-
-<span data-ttu-id="a3433-144">Este exemplo concede aos usuários john@contoso.com e ryan@external.com acesso a um link de compartilhamento sem modificar outras permissões existentes no link.</span><span class="sxs-lookup"><span data-stu-id="a3433-144">This example grants the users john@contoso.com and ryan@external.com access to a sharing link without modifying other existing permissions on the link.</span></span>
-
-### <a name="request"></a><span data-ttu-id="a3433-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a3433-145">Request</span></span>
+<span data-ttu-id="28441-142">Leia o tópico [respostas de erro][error-response] para obter mais informações sobre como os erros são retornados.</span><span class="sxs-lookup"><span data-stu-id="28441-142">Read the [Error Responses][error-response] topic for more info about how errors are returned.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="a3433-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="a3433-146">HTTP</span></span>](#tab/http)
+## <a name="example"></a><span data-ttu-id="28441-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="28441-143">Example</span></span>
+
+<span data-ttu-id="28441-144">Este exemplo concede aos usuários john@contoso.com e ryan@external.com acesso a um link de compartilhamento sem modificar outras permissões existentes no link.</span><span class="sxs-lookup"><span data-stu-id="28441-144">This example grants the users john@contoso.com and ryan@external.com access to a sharing link without modifying other existing permissions on the link.</span></span>
+
+### <a name="request"></a><span data-ttu-id="28441-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="28441-145">Request</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="28441-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="28441-146">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "permission-grant", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
@@ -102,22 +102,26 @@ Content-type: application/json
   "roles": ["read"]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a3433-147">C#</span><span class="sxs-lookup"><span data-stu-id="a3433-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="28441-147">C#</span><span class="sxs-lookup"><span data-stu-id="28441-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/permission-grant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a3433-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a3433-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="28441-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="28441-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/permission-grant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a3433-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a3433-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="28441-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="28441-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/permission-grant-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="28441-150">Java</span><span class="sxs-lookup"><span data-stu-id="28441-150">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/permission-grant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a3433-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="a3433-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="28441-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="28441-151">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
@@ -144,12 +148,12 @@ Content-type: application/json
 }
 ```
 
-><span data-ttu-id="a3433-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a3433-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="28441-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="28441-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
-<span data-ttu-id="a3433-153">Se o link for um link de [acesso existente](../resources/permission.md#existing-access-link) , serão retornadas permissões adicionais representando o seguinte:</span><span class="sxs-lookup"><span data-stu-id="a3433-153">If the link is an [existing access](../resources/permission.md#existing-access-link) link, additional permissions will be returned representing the following:</span></span>
+<span data-ttu-id="28441-154">Se o link for um link de [acesso existente](../resources/permission.md#existing-access-link) , serão retornadas permissões adicionais representando o seguinte:</span><span class="sxs-lookup"><span data-stu-id="28441-154">If the link is an [existing access](../resources/permission.md#existing-access-link) link, additional permissions will be returned representing the following:</span></span>
 
-- <span data-ttu-id="a3433-154">Permissões de tipo de usuário que representam destinatários que receberam o acesso com êxito.</span><span class="sxs-lookup"><span data-stu-id="a3433-154">User-type permissions representing recipients who were successfully granted access.</span></span> <span data-ttu-id="a3433-155">Eles podem ser identificados por presença da propriedade **concedidoto** .</span><span class="sxs-lookup"><span data-stu-id="a3433-155">These can be identified by presence of the **grantedTo** property.</span></span>
-- <span data-ttu-id="a3433-156">Permissões de tipo de link que representam convites que precisam ser enviados a usuários externos não reconhecidos para que eles tenham acesso.</span><span class="sxs-lookup"><span data-stu-id="a3433-156">Link-type permissions representing invitations that need to be sent to unrecognized external users for them to gain access.</span></span> <span data-ttu-id="a3433-157">Eles podem ser identificados pela presença de uma faceta de [convite](../resources/sharinginvitation.md) .</span><span class="sxs-lookup"><span data-stu-id="a3433-157">These can be identified by the presence of an [invitation](../resources/sharinginvitation.md) facet.</span></span> <span data-ttu-id="a3433-158">Essas entradas conterá um [link][sharing-link] com a URL do convite, e a coleção grantedToIdentities indicará os usuários para os quais o link deve ser enviado.</span><span class="sxs-lookup"><span data-stu-id="a3433-158">These entries will contain a [link][sharing-link] with the invitation URL, and the grantedToIdentities collection will indicate the users to whom the link should be sent.</span></span>
+- <span data-ttu-id="28441-155">Permissões de tipo de usuário que representam destinatários que receberam o acesso com êxito.</span><span class="sxs-lookup"><span data-stu-id="28441-155">User-type permissions representing recipients who were successfully granted access.</span></span> <span data-ttu-id="28441-156">Eles podem ser identificados por presença da propriedade **concedidoto** .</span><span class="sxs-lookup"><span data-stu-id="28441-156">These can be identified by presence of the **grantedTo** property.</span></span>
+- <span data-ttu-id="28441-157">Permissões de tipo de link que representam convites que precisam ser enviados a usuários externos não reconhecidos para que eles tenham acesso.</span><span class="sxs-lookup"><span data-stu-id="28441-157">Link-type permissions representing invitations that need to be sent to unrecognized external users for them to gain access.</span></span> <span data-ttu-id="28441-158">Eles podem ser identificados pela presença de uma faceta de [convite](../resources/sharinginvitation.md) .</span><span class="sxs-lookup"><span data-stu-id="28441-158">These can be identified by the presence of an [invitation](../resources/sharinginvitation.md) facet.</span></span> <span data-ttu-id="28441-159">Essas entradas conterá um [link][sharing-link] com a URL do convite, e a coleção grantedToIdentities indicará os usuários para os quais o link deve ser enviado.</span><span class="sxs-lookup"><span data-stu-id="28441-159">These entries will contain a [link][sharing-link] with the invitation URL, and the grantedToIdentities collection will indicate the users to whom the link should be sent.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
@@ -209,7 +213,7 @@ Content-type: application/json
 
 ```
 
-><span data-ttu-id="a3433-159">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a3433-159">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a3433-160">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a3433-160">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="28441-160">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="28441-160">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="28441-161">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="28441-161">All the properties will be returned from an actual call.</span></span>
 
 
 
