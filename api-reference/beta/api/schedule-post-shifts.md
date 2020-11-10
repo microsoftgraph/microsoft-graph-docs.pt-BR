@@ -5,32 +5,32 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ef36fa109328af05628d57c066ad24971d0d2845
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 113d51f78edec3ca26bbe898b1a5d53664363deb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313321"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981829"
 ---
-# <a name="create-shift"></a><span data-ttu-id="27d42-103">Criar turno</span><span class="sxs-lookup"><span data-stu-id="27d42-103">Create shift</span></span>
+# <a name="create-shift"></a><span data-ttu-id="8e5d1-103">Criar turno</span><span class="sxs-lookup"><span data-stu-id="8e5d1-103">Create shift</span></span>
 
-<span data-ttu-id="27d42-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="27d42-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8e5d1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8e5d1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="27d42-105">Criar uma nova instância de [turno](../resources/shift.md) em um [cronograma](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="27d42-105">Create a new [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="8e5d1-105">Criar uma nova instância de [turno](../resources/shift.md) em um [cronograma](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="8e5d1-105">Create a new [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="27d42-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="27d42-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8e5d1-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="8e5d1-106">Permissions</span></span>
 
-<span data-ttu-id="27d42-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="27d42-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8e5d1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8e5d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="27d42-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="27d42-109">Permission type</span></span>      | <span data-ttu-id="27d42-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="27d42-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8e5d1-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8e5d1-109">Permission type</span></span>      | <span data-ttu-id="8e5d1-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8e5d1-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="27d42-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="27d42-111">Delegated (work or school account)</span></span> | <span data-ttu-id="27d42-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="27d42-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="27d42-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="27d42-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="27d42-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="27d42-114">Not supported.</span></span>    |
-|<span data-ttu-id="27d42-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="27d42-115">Application</span></span> | <span data-ttu-id="27d42-116">Schedule. ReadWrite. All \*</span><span class="sxs-lookup"><span data-stu-id="27d42-116">Schedule.ReadWrite.All\*</span></span> |
+|<span data-ttu-id="8e5d1-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8e5d1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8e5d1-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8e5d1-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8e5d1-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8e5d1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8e5d1-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8e5d1-114">Not supported.</span></span>    |
+|<span data-ttu-id="8e5d1-115">Application</span><span class="sxs-lookup"><span data-stu-id="8e5d1-115">Application</span></span> | <span data-ttu-id="8e5d1-116">Schedule. ReadWrite. All \*</span><span class="sxs-lookup"><span data-stu-id="8e5d1-116">Schedule.ReadWrite.All\*</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="27d42-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="27d42-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8e5d1-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8e5d1-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,24 +38,24 @@ ms.locfileid: "48313321"
 POST /teams/{teamId}/schedule/shifts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="27d42-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="27d42-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8e5d1-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8e5d1-118">Request headers</span></span>
 
-| <span data-ttu-id="27d42-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="27d42-119">Header</span></span>       | <span data-ttu-id="27d42-120">Valor</span><span class="sxs-lookup"><span data-stu-id="27d42-120">Value</span></span> |
+| <span data-ttu-id="8e5d1-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="8e5d1-119">Header</span></span>       | <span data-ttu-id="8e5d1-120">Valor</span><span class="sxs-lookup"><span data-stu-id="8e5d1-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="27d42-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="27d42-121">Authorization</span></span>  | <span data-ttu-id="27d42-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="27d42-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="27d42-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="27d42-124">Content-Type</span></span>  | <span data-ttu-id="27d42-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="27d42-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="8e5d1-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="8e5d1-121">Authorization</span></span>  | <span data-ttu-id="8e5d1-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8e5d1-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8e5d1-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8e5d1-124">Content-Type</span></span>  | <span data-ttu-id="8e5d1-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8e5d1-p103">application/json. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="27d42-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="27d42-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8e5d1-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="8e5d1-127">Response</span></span>
 
-<span data-ttu-id="27d42-128">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Shift](../resources/shift.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="27d42-128">If successful, this method returns a `201 Created` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
+<span data-ttu-id="8e5d1-128">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Shift](../resources/shift.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8e5d1-128">If successful, this method returns a `201 Created` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="27d42-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="27d42-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8e5d1-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8e5d1-129">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="27d42-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="27d42-130">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="8e5d1-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8e5d1-130">Request</span></span>
 
-<span data-ttu-id="27d42-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="27d42-131">The following is an example of the request.</span></span>
+<span data-ttu-id="8e5d1-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8e5d1-131">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="27d42-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="27d42-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8e5d1-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="8e5d1-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "schedule-post-shifts"
@@ -102,26 +102,30 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="27d42-133">C#</span><span class="sxs-lookup"><span data-stu-id="27d42-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8e5d1-133">C#</span><span class="sxs-lookup"><span data-stu-id="8e5d1-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-post-shifts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="27d42-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="27d42-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8e5d1-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8e5d1-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/schedule-post-shifts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="27d42-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="27d42-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8e5d1-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8e5d1-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-post-shifts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="8e5d1-136">Java</span><span class="sxs-lookup"><span data-stu-id="8e5d1-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-post-shifts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="27d42-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="27d42-136">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="8e5d1-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="8e5d1-137">Response</span></span>
 
-<span data-ttu-id="27d42-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="27d42-137">The following is an example of the response.</span></span> 
+<span data-ttu-id="8e5d1-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8e5d1-138">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="27d42-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="27d42-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="8e5d1-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8e5d1-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
