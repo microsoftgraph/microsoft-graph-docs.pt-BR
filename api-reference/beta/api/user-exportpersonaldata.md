@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 24262a733a4a8dcdc8724950b0c65bf31fdbc9a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b2d4b27929656f0d3531f9c5a98d343a58317e0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067528"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967893"
 ---
 # <a name="user-exportpersonaldata"></a>usuário: exportPersonalData
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User. Export. All e User. Read. All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Aplicativo | User. Export. All e User. Read. All |
+|Application | User. Export. All e User. Read. All |
 
 >**Observação:** A exportação só pode ser realizada por um administrador da empresa quando a permissão delegada é usada.
 
@@ -45,15 +45,15 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição |
 |:---------------|:--------|:----------|
-|storageLocation|Cadeia de caracteres|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta de armazenamento do Azure, onde os dados devem ser exportados.|
+|storageLocation|String|Esta é uma URL de assinatura de acesso compartilhado (SAS) para uma conta de armazenamento do Azure, onde os dados devem ser exportados.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta. A resposta contém os cabeçalhos a seguir.
+Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta. A resposta contém os cabeçalhos a seguir.
 
 | Nome       | Descrição |
 |:---------------|:----------|
-| Local  | URL para verificar o status da solicitação. |
-| Repetir-após  | Período de tempo em segundos. O criador de solicitação deve aguardar esse tempo depois de enviar uma solicitação para verificar o status. |
+| Location  | URL para verificar o status da solicitação. |
+| Retry-After  | Período de tempo em segundos. O criador de solicitação deve aguardar esse tempo depois de enviar uma solicitação para verificar o status. |
 
 
 ## <a name="example"></a>Exemplo
@@ -83,6 +83,10 @@ Content-length: 48
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-exportpersonaldata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-exportpersonaldata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -6,12 +6,12 @@ title: Acessar itens compartilhados
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 8231085723d54b305b6ec72b746f14331fbe1963
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de6cbfdb3b50bba2ffba9cf5b2fda25b2245afa6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040284"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969225"
 ---
 # <a name="accessing-shared-driveitems"></a>Acessar DriveItems compartilhados
 
@@ -105,6 +105,10 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-root-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -138,7 +142,7 @@ Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas i
 
 ### <a name="request"></a>Solicitação
 
-Ao solicitar a relação **driveItem**, o **DriveItem** compartilhado será retornado.
+Ao solicitar a relação **driveItem** , o **DriveItem** compartilhado será retornado.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -157,6 +161,10 @@ GET /shares/{shareIdOrUrl}/driveItem
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -183,7 +191,7 @@ Content-Type: application/json
 
 ### <a name="request"></a>Solicitação
 
-Solicitando a relação **driveItem** e expandindo a coleção **children**, o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.
+Solicitando a relação **driveItem** e expandindo a coleção **children** , o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -202,6 +210,10 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-expand-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-expand-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

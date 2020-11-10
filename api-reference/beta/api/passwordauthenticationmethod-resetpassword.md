@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4e1fd8eda31d1583489b1f75ab3dc97cf81f6d44
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9ab66da19cbc2034b73476b8c9275f687e729f6a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457554"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968676"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>passwordAuthenticationMethod: resetPassword
 
@@ -61,7 +61,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|newPassword|Cadeia de caracteres|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente de nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres Unicode sem codificação. Ele é validado em relação ao sistema de senha banida do locatário antes da aceitação e deve cumprir a nuvem do locatário e/ou os requisitos de senha local.|
+|newPassword|String|A nova senha inserida pelo administrador. Obrigatório para locatários com cenários de senha híbrida. Se for omitido para uma senha somente de nuvem, o sistema retornará uma senha gerada pelo sistema. Esta é uma cadeia de caracteres Unicode sem codificação. Ele é validado em relação ao sistema de senha banida do locatário antes da aceitação e deve cumprir a nuvem do locatário e/ou os requisitos de senha local.|
 
 ## <a name="response"></a>Resposta
 
@@ -73,7 +73,7 @@ Se o chamador não enviar uma senha, uma senha gerada pela Microsoft será forne
 
 | Nome        | Descrição     |
 |:------------|:----------------|
-|Local     | URL a ser chamada para verificar o status da operação.|
+|Location     | URL a ser chamada para verificar o status da operação.|
 |Repetir-após  | Duração em segundos.|
 
 ## <a name="examples"></a>Exemplos
@@ -110,6 +110,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-adminprovided-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/passwordauthenticationmethod-resetpassword-adminprovided-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -169,6 +173,10 @@ POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticat
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-systemgenerated-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/passwordauthenticationmethod-resetpassword-systemgenerated-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

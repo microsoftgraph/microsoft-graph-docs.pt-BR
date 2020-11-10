@@ -6,12 +6,12 @@ title: Obter um Site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8eeb912a8655b0020733a5b94dea9cb6ede22c5c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba9465888605ae5ba84b0a24d62b79644a302ec5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014032"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969783"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 
@@ -46,7 +46,7 @@ GET /sites/contoso.sharepoint.com
 
 ## <a name="access-a-site-by-server-relative-url"></a>Acesse um site pela URL relativa do servidor
 
-Se você tiver a URL relativa do servidor para um recurso **site**, crie uma solicitação da seguinte maneira:
+Se você tiver a URL relativa do servidor para um recurso **site** , crie uma solicitação da seguinte maneira:
 
 ```http
 GET /sites/{hostname}:/{server-relative-path}
@@ -81,6 +81,10 @@ GET /sites/{site-id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-site-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
