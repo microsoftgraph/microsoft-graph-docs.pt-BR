@@ -5,30 +5,30 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 79f7033e46e29ded5206ef6766e05e6a81340bf4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9f62226f721d9e0ba03742a8ea72c78ed3e9e33
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085406"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981220"
 ---
-# <a name="delete-reviewsetquery"></a><span data-ttu-id="546b2-103">Excluir reviewSetQuery</span><span class="sxs-lookup"><span data-stu-id="546b2-103">Delete reviewSetQuery</span></span>
+# <a name="delete-reviewsetquery"></a><span data-ttu-id="94987-103">Excluir reviewSetQuery</span><span class="sxs-lookup"><span data-stu-id="94987-103">Delete reviewSetQuery</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="546b2-104">Excluir um objeto [reviewSetQuery](../resources/reviewsetquery.md) .</span><span class="sxs-lookup"><span data-stu-id="546b2-104">Delete a [reviewSetQuery](../resources/reviewsetquery.md) object.</span></span>
+<span data-ttu-id="94987-104">Excluir um objeto [reviewSetQuery](../resources/reviewsetquery.md) .</span><span class="sxs-lookup"><span data-stu-id="94987-104">Delete a [reviewSetQuery](../resources/reviewsetquery.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="546b2-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="546b2-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="94987-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="94987-105">Permissions</span></span>
 
-<span data-ttu-id="546b2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="546b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="94987-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="94987-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="546b2-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="546b2-108">Permission type</span></span>                        | <span data-ttu-id="546b2-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="546b2-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="94987-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="94987-108">Permission type</span></span>                        | <span data-ttu-id="94987-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="94987-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="546b2-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="546b2-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="546b2-111">User.Read</span><span class="sxs-lookup"><span data-stu-id="546b2-111">User.Read</span></span> |
-| <span data-ttu-id="546b2-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="546b2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="546b2-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="546b2-113">Not supported.</span></span> |
-| <span data-ttu-id="546b2-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="546b2-114">Application</span></span>                            | <span data-ttu-id="546b2-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="546b2-115">Not supported.</span></span> |
+| <span data-ttu-id="94987-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="94987-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="94987-111">User.Read</span><span class="sxs-lookup"><span data-stu-id="94987-111">User.Read</span></span> |
+| <span data-ttu-id="94987-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="94987-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="94987-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94987-113">Not supported.</span></span> |
+| <span data-ttu-id="94987-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="94987-114">Application</span></span>                            | <span data-ttu-id="94987-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94987-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="546b2-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="546b2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="94987-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="94987-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,27 +36,27 @@ ms.locfileid: "48085406"
 DELETE /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="546b2-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="546b2-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="94987-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="94987-117">Request headers</span></span>
 
-| <span data-ttu-id="546b2-118">Nome</span><span class="sxs-lookup"><span data-stu-id="546b2-118">Name</span></span>          | <span data-ttu-id="546b2-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="546b2-119">Description</span></span>   |
+| <span data-ttu-id="94987-118">Nome</span><span class="sxs-lookup"><span data-stu-id="94987-118">Name</span></span>          | <span data-ttu-id="94987-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="94987-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="546b2-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="546b2-120">Authorization</span></span> | <span data-ttu-id="546b2-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="546b2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="94987-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="94987-120">Authorization</span></span> | <span data-ttu-id="94987-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="94987-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="546b2-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="546b2-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="94987-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="94987-123">Request body</span></span>
 
-<span data-ttu-id="546b2-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="546b2-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="94987-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="94987-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="546b2-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="546b2-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="94987-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="94987-125">Response</span></span>
 
-<span data-ttu-id="546b2-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="546b2-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="94987-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="94987-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="546b2-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="546b2-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="94987-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="94987-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="546b2-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="546b2-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="94987-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="94987-129">Request</span></span>
 
-<span data-ttu-id="546b2-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="546b2-130">The following is an example of the request.</span></span>
+<span data-ttu-id="94987-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="94987-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="546b2-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="546b2-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="94987-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="94987-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_reviewsetquery"
@@ -65,24 +65,28 @@ DELETE /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-42f4-89fe-84d5198ddedf/reviewSets/b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8/queries/6b5358b0-2ce2-4369-b9cf-65392fe56807
 ```
-# <a name="c"></a>[<span data-ttu-id="546b2-132">C#</span><span class="sxs-lookup"><span data-stu-id="546b2-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="94987-132">C#</span><span class="sxs-lookup"><span data-stu-id="94987-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-reviewsetquery-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="546b2-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="546b2-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="94987-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="94987-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-reviewsetquery-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="546b2-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="546b2-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="94987-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="94987-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-reviewsetquery-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="94987-135">Java</span><span class="sxs-lookup"><span data-stu-id="94987-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-reviewsetquery-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="546b2-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="546b2-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="94987-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="94987-136">Response</span></span>
 
-<span data-ttu-id="546b2-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="546b2-136">The following is an example of the response.</span></span>
+<span data-ttu-id="94987-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="94987-137">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

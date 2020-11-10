@@ -5,56 +5,56 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 622447fca63577a1252c5d8e56db6dd239e6111c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0dcd011121d830af83cc894c0dc47c44fa8c3d02
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017378"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980990"
 ---
-# <a name="create-outlooktaskfolder-deprecated"></a><span data-ttu-id="1d4a8-103">Criar outlookTaskFolder (preterido)</span><span class="sxs-lookup"><span data-stu-id="1d4a8-103">Create outlookTaskFolder (deprecated)</span></span>
+# <a name="create-outlooktaskfolder-deprecated"></a><span data-ttu-id="48c17-103">Criar outlookTaskFolder (preterido)</span><span class="sxs-lookup"><span data-stu-id="48c17-103">Create outlookTaskFolder (deprecated)</span></span>
 
-<span data-ttu-id="1d4a8-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1d4a8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="48c17-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="48c17-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-<span data-ttu-id="1d4a8-105">Crie uma pasta de tarefas no grupo de tarefas padrão ( `My Tasks` ) da caixa de correio do usuário.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-105">Create a task folder in the default task group (`My Tasks`) of the user's mailbox.</span></span>
+<span data-ttu-id="48c17-105">Crie uma pasta de tarefas no grupo de tarefas padrão ( `My Tasks` ) da caixa de correio do usuário.</span><span class="sxs-lookup"><span data-stu-id="48c17-105">Create a task folder in the default task group (`My Tasks`) of the user's mailbox.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1d4a8-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1d4a8-106">Permissions</span></span>
-<span data-ttu-id="1d4a8-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1d4a8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="48c17-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="48c17-106">Permissions</span></span>
+<span data-ttu-id="48c17-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="48c17-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1d4a8-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1d4a8-109">Permission type</span></span>      | <span data-ttu-id="1d4a8-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1d4a8-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="48c17-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="48c17-109">Permission type</span></span>      | <span data-ttu-id="48c17-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="48c17-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1d4a8-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1d4a8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1d4a8-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1d4a8-112">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="1d4a8-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1d4a8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1d4a8-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1d4a8-114">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="1d4a8-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1d4a8-115">Application</span></span> | <span data-ttu-id="1d4a8-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-116">Not supported.</span></span> |
+|<span data-ttu-id="48c17-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="48c17-111">Delegated (work or school account)</span></span> | <span data-ttu-id="48c17-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="48c17-112">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="48c17-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="48c17-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="48c17-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="48c17-114">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="48c17-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="48c17-115">Application</span></span> | <span data-ttu-id="48c17-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="48c17-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1d4a8-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1d4a8-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="48c17-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="48c17-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/outlook/taskFolders
 POST /users/{id|userPrincipalName}/outlook/taskFolders
 ```
-## <a name="request-headers"></a><span data-ttu-id="1d4a8-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1d4a8-118">Request headers</span></span>
-| <span data-ttu-id="1d4a8-119">Nome</span><span class="sxs-lookup"><span data-stu-id="1d4a8-119">Name</span></span>       | <span data-ttu-id="1d4a8-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="1d4a8-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="48c17-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="48c17-118">Request headers</span></span>
+| <span data-ttu-id="48c17-119">Nome</span><span class="sxs-lookup"><span data-stu-id="48c17-119">Name</span></span>       | <span data-ttu-id="48c17-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="48c17-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="1d4a8-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="1d4a8-121">Authorization</span></span>  | <span data-ttu-id="1d4a8-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="48c17-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="48c17-121">Authorization</span></span>  | <span data-ttu-id="48c17-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="48c17-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1d4a8-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1d4a8-124">Request body</span></span>
-<span data-ttu-id="1d4a8-125">No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .</span><span class="sxs-lookup"><span data-stu-id="1d4a8-125">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="48c17-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="48c17-124">Request body</span></span>
+<span data-ttu-id="48c17-125">No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .</span><span class="sxs-lookup"><span data-stu-id="48c17-125">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1d4a8-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="1d4a8-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="48c17-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="48c17-126">Response</span></span>
 
-<span data-ttu-id="1d4a8-127">Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-127">If successful, this method returns `201 Created` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
+<span data-ttu-id="48c17-127">Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="48c17-127">If successful, this method returns `201 Created` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1d4a8-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1d4a8-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1d4a8-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1d4a8-129">Request</span></span>
-<span data-ttu-id="1d4a8-130">O exemplo a seguir cria uma pasta de tarefas chamada voluntário no grupo de tarefas padrão ( `My Tasks` ) da caixa de correio do usuário.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-130">The following example creates a task folder called Volunteer in the default task group (`My Tasks`) of the user's mailbox.</span></span>
+## <a name="example"></a><span data-ttu-id="48c17-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="48c17-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="48c17-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="48c17-129">Request</span></span>
+<span data-ttu-id="48c17-130">O exemplo a seguir cria uma pasta de tarefas chamada voluntário no grupo de tarefas padrão ( `My Tasks` ) da caixa de correio do usuário.</span><span class="sxs-lookup"><span data-stu-id="48c17-130">The following example creates a task folder called Volunteer in the default task group (`My Tasks`) of the user's mailbox.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="1d4a8-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="1d4a8-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="48c17-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="48c17-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlookuser"
@@ -68,23 +68,27 @@ Content-length: 60
   "name": "Volunteer"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="1d4a8-132">C#</span><span class="sxs-lookup"><span data-stu-id="1d4a8-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="48c17-132">C#</span><span class="sxs-lookup"><span data-stu-id="48c17-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlooktaskfolder-from-outlookuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1d4a8-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1d4a8-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="48c17-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="48c17-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktaskfolder-from-outlookuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1d4a8-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1d4a8-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="48c17-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="48c17-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-outlooktaskfolder-from-outlookuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="48c17-135">Java</span><span class="sxs-lookup"><span data-stu-id="48c17-135">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-outlooktaskfolder-from-outlookuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="1d4a8-135">No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .</span><span class="sxs-lookup"><span data-stu-id="1d4a8-135">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="1d4a8-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="1d4a8-136">Response</span></span>
-<span data-ttu-id="1d4a8-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1d4a8-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="48c17-136">No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .</span><span class="sxs-lookup"><span data-stu-id="48c17-136">In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="48c17-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="48c17-137">Response</span></span>
+<span data-ttu-id="48c17-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="48c17-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

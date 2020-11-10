@@ -5,30 +5,30 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9ef414cc0699ad116682700fb980c85f9433e523
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ca81fda2e129ba0fe8fe3ec4000efe7768b32a2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034678"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980717"
 ---
-# <a name="list-patents"></a><span data-ttu-id="d8964-103">Listar patentes</span><span class="sxs-lookup"><span data-stu-id="d8964-103">List patents</span></span>
+# <a name="list-patents"></a><span data-ttu-id="7c5ec-103">Listar patentes</span><span class="sxs-lookup"><span data-stu-id="7c5ec-103">List patents</span></span>
 
-<span data-ttu-id="d8964-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d8964-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7c5ec-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7c5ec-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="d8964-105">Recupere uma lista de objetos de [ispatente](../resources/itempatent.md) de um [perfil](../resources/profile.md)de usuário.</span><span class="sxs-lookup"><span data-stu-id="d8964-105">Retrieve a list of [itemPatent](../resources/itempatent.md) objects from a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="7c5ec-105">Recupere uma lista de objetos de [ispatente](../resources/itempatent.md) de um [perfil](../resources/profile.md)de usuário.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-105">Retrieve a list of [itemPatent](../resources/itempatent.md) objects from a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d8964-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d8964-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7c5ec-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7c5ec-106">Permissions</span></span>
 
-<span data-ttu-id="d8964-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d8964-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7c5ec-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7c5ec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d8964-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d8964-109">Permission type</span></span>                        | <span data-ttu-id="d8964-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d8964-110">Permissions (from least to most privileged)</span></span>                                      |
+| <span data-ttu-id="7c5ec-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7c5ec-109">Permission type</span></span>                        | <span data-ttu-id="7c5ec-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7c5ec-110">Permissions (from least to most privileged)</span></span>                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| <span data-ttu-id="d8964-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d8964-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="d8964-112">User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d8964-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="d8964-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d8964-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d8964-114">User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d8964-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="d8964-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d8964-115">Application</span></span>                            | <span data-ttu-id="d8964-116">User. ReadBasic. All, User. Read. All, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d8964-116">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>                            |
+| <span data-ttu-id="7c5ec-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7c5ec-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7c5ec-112">User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="7c5ec-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="7c5ec-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7c5ec-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c5ec-114">User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="7c5ec-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="7c5ec-115">Application</span><span class="sxs-lookup"><span data-stu-id="7c5ec-115">Application</span></span>                            | <span data-ttu-id="7c5ec-116">User. ReadBasic. All, User. Read. All, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="7c5ec-116">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>                            |
 
-## <a name="http-request"></a><span data-ttu-id="d8964-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d8964-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7c5ec-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7c5ec-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,33 +39,33 @@ GET /me/profile/patents
 GET /users/{id | userPrincipalName}/profile/patents
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d8964-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d8964-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7c5ec-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7c5ec-118">Optional query parameters</span></span>
 
-<span data-ttu-id="d8964-119">Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d8964-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="d8964-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="d8964-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="7c5ec-119">Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="7c5ec-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="7c5ec-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-|<span data-ttu-id="d8964-121">Nome</span><span class="sxs-lookup"><span data-stu-id="d8964-121">Name</span></span>            |<span data-ttu-id="d8964-122">Valor</span><span class="sxs-lookup"><span data-stu-id="d8964-122">Value</span></span>    |<span data-ttu-id="d8964-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="d8964-123">Description</span></span>                                                                                                                                                                 |
+|<span data-ttu-id="7c5ec-121">Nome</span><span class="sxs-lookup"><span data-stu-id="7c5ec-121">Name</span></span>            |<span data-ttu-id="7c5ec-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7c5ec-122">Value</span></span>    |<span data-ttu-id="7c5ec-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c5ec-123">Description</span></span>                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="d8964-124">$filter</span><span class="sxs-lookup"><span data-stu-id="d8964-124">$filter</span></span>         |<span data-ttu-id="d8964-125">string</span><span class="sxs-lookup"><span data-stu-id="d8964-125">string</span></span>   |<span data-ttu-id="d8964-126">Limita a resposta somente aos objetos que contêm os critérios especificados.</span><span class="sxs-lookup"><span data-stu-id="d8964-126">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
-|<span data-ttu-id="d8964-127">$orderby</span><span class="sxs-lookup"><span data-stu-id="d8964-127">$orderby</span></span>        |<span data-ttu-id="d8964-128">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d8964-128">string</span></span>   |<span data-ttu-id="d8964-129">Por padrão, os objetos na resposta são classificados por seu valor createdDateTime em uma consulta.</span><span class="sxs-lookup"><span data-stu-id="d8964-129">By default the objects in the response are sorted by their createdDateTime value in a query.</span></span> <span data-ttu-id="d8964-130">Você pode alterar a ordem da resposta usando o parâmetro *$OrderBy* .</span><span class="sxs-lookup"><span data-stu-id="d8964-130">You can change the order of the of the response using the *$orderby* parameter.</span></span>|
-|<span data-ttu-id="d8964-131">$select</span><span class="sxs-lookup"><span data-stu-id="d8964-131">$select</span></span>         |<span data-ttu-id="d8964-132">string</span><span class="sxs-lookup"><span data-stu-id="d8964-132">string</span></span>   |<span data-ttu-id="d8964-p104">Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.</span><span class="sxs-lookup"><span data-stu-id="d8964-p104">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
-|<span data-ttu-id="d8964-135">$skip</span><span class="sxs-lookup"><span data-stu-id="d8964-135">$skip</span></span>           |<span data-ttu-id="d8964-136">int</span><span class="sxs-lookup"><span data-stu-id="d8964-136">int</span></span>      |<span data-ttu-id="d8964-137">Ignore os primeiros n resultados, útil para paginação.</span><span class="sxs-lookup"><span data-stu-id="d8964-137">Skip the first n results, useful for paging.</span></span>                                                                                                                                |
-|<span data-ttu-id="d8964-138">$top</span><span class="sxs-lookup"><span data-stu-id="d8964-138">$top</span></span>            |<span data-ttu-id="d8964-139">int</span><span class="sxs-lookup"><span data-stu-id="d8964-139">int</span></span>      |<span data-ttu-id="d8964-140">Número de resultados a ser retornado.</span><span class="sxs-lookup"><span data-stu-id="d8964-140">Number of results to be returned.</span></span>                                                                                                                                           |
+|<span data-ttu-id="7c5ec-124">$filter</span><span class="sxs-lookup"><span data-stu-id="7c5ec-124">$filter</span></span>         |<span data-ttu-id="7c5ec-125">string</span><span class="sxs-lookup"><span data-stu-id="7c5ec-125">string</span></span>   |<span data-ttu-id="7c5ec-126">Limita a resposta somente aos objetos que contêm os critérios especificados.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-126">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
+|<span data-ttu-id="7c5ec-127">$orderby</span><span class="sxs-lookup"><span data-stu-id="7c5ec-127">$orderby</span></span>        |<span data-ttu-id="7c5ec-128">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7c5ec-128">string</span></span>   |<span data-ttu-id="7c5ec-129">Por padrão, os objetos na resposta são classificados por seu valor createdDateTime em uma consulta.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-129">By default the objects in the response are sorted by their createdDateTime value in a query.</span></span> <span data-ttu-id="7c5ec-130">Você pode alterar a ordem da resposta usando o parâmetro *$OrderBy* .</span><span class="sxs-lookup"><span data-stu-id="7c5ec-130">You can change the order of the of the response using the *$orderby* parameter.</span></span>|
+|<span data-ttu-id="7c5ec-131">$select</span><span class="sxs-lookup"><span data-stu-id="7c5ec-131">$select</span></span>         |<span data-ttu-id="7c5ec-132">string</span><span class="sxs-lookup"><span data-stu-id="7c5ec-132">string</span></span>   |<span data-ttu-id="7c5ec-p104">Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-p104">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
+|<span data-ttu-id="7c5ec-135">$skip</span><span class="sxs-lookup"><span data-stu-id="7c5ec-135">$skip</span></span>           |<span data-ttu-id="7c5ec-136">int</span><span class="sxs-lookup"><span data-stu-id="7c5ec-136">int</span></span>      |<span data-ttu-id="7c5ec-137">Ignore os primeiros n resultados, útil para paginação.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-137">Skip the first n results, useful for paging.</span></span>                                                                                                                                |
+|<span data-ttu-id="7c5ec-138">$top</span><span class="sxs-lookup"><span data-stu-id="7c5ec-138">$top</span></span>            |<span data-ttu-id="7c5ec-139">int</span><span class="sxs-lookup"><span data-stu-id="7c5ec-139">int</span></span>      |<span data-ttu-id="7c5ec-140">Número de resultados a ser retornado.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-140">Number of results to be returned.</span></span>                                                                                                                                           |
 
-## <a name="request-headers"></a><span data-ttu-id="d8964-141">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d8964-141">Request headers</span></span>
-|<span data-ttu-id="d8964-142">Nome</span><span class="sxs-lookup"><span data-stu-id="d8964-142">Name</span></span>|<span data-ttu-id="d8964-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="d8964-143">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7c5ec-141">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7c5ec-141">Request headers</span></span>
+|<span data-ttu-id="7c5ec-142">Nome</span><span class="sxs-lookup"><span data-stu-id="7c5ec-142">Name</span></span>|<span data-ttu-id="7c5ec-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c5ec-143">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="d8964-144">Autorização</span><span class="sxs-lookup"><span data-stu-id="d8964-144">Authorization</span></span>|<span data-ttu-id="d8964-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d8964-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="7c5ec-144">Autorização</span><span class="sxs-lookup"><span data-stu-id="7c5ec-144">Authorization</span></span>|<span data-ttu-id="7c5ec-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d8964-147">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d8964-147">Request body</span></span>
-<span data-ttu-id="d8964-148">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d8964-148">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7c5ec-147">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7c5ec-147">Request body</span></span>
+<span data-ttu-id="7c5ec-148">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d8964-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="d8964-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7c5ec-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="7c5ec-149">Response</span></span>
 
-<span data-ttu-id="d8964-150">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [ispatente](../resources/itempatent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d8964-150">If successful, this method returns a `200 OK` response code and a collection of [itemPatent](../resources/itempatent.md) objects in the response body.</span></span>
+<span data-ttu-id="7c5ec-150">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [ispatente](../resources/itempatent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-150">If successful, this method returns a `200 OK` response code and a collection of [itemPatent](../resources/itempatent.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d8964-151">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d8964-151">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7c5ec-151">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7c5ec-151">Examples</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d8964-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="d8964-152">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7c5ec-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="7c5ec-152">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_itempatents_from_profile"
@@ -74,22 +74,26 @@ GET /users/{id | userPrincipalName}/profile/patents
 ``` http
 GET https://graph.microsoft.com/beta/me/profile/patents
 ```
-# <a name="c"></a>[<span data-ttu-id="d8964-153">C#</span><span class="sxs-lookup"><span data-stu-id="d8964-153">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7c5ec-153">C#</span><span class="sxs-lookup"><span data-stu-id="7c5ec-153">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-itempatents-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d8964-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d8964-154">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7c5ec-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7c5ec-154">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-itempatents-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d8964-155">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d8964-155">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7c5ec-155">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7c5ec-155">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-itempatents-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="7c5ec-156">Java</span><span class="sxs-lookup"><span data-stu-id="7c5ec-156">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-itempatents-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="d8964-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="d8964-156">Response</span></span>
-<span data-ttu-id="d8964-157">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="d8964-157">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="7c5ec-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="7c5ec-157">Response</span></span>
+<span data-ttu-id="7c5ec-158">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="7c5ec-158">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
