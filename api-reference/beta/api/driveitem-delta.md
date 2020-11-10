@@ -6,12 +6,12 @@ title: Sincronizar o conteúdo de uma unidade
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a5041167154270714627a825a3516d12350dd747
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: b4d92ef19b683294dafac90b3c6bb6805d9f565e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581180"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963808"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações de uma unidade
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-first-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-delta-first-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -163,6 +167,10 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-delta-last-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-delta-last-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -196,7 +204,7 @@ Content-type: application/json
 
 Essa resposta indica que o item denominado `folder2` foi excluído e que o item `file.txt` foi adicionado ou modificado entre a solicitação inicial e essa solicitação para atualizar o estado local.
 
-A página final de itens incluirá a propriedade **@odata.deltaLink**, que fornece a URL que poderá ser usada posteriormente para recuperar alterações desde o conjunto atual de itens.
+A página final de itens incluirá a propriedade **@odata.deltaLink** , que fornece a URL que poderá ser usada posteriormente para recuperar alterações desde o conjunto atual de itens.
 
 Pode haver casos em que o serviço não pode fornecer uma lista de alterações para um determinado token (por exemplo, se um cliente tentar reutilizar um token antigo depois de ter permanecido desconectado por um longo período, ou se o estado do servidor tiver mudado e um novo token for obrigatório). Nesses casos, o serviço retornará um erro `HTTP 410 Gone` com uma resposta de erro contendo um dos códigos de erro abaixo e um cabeçalho `Location` contendo um novo nextLink que inicia uma enumeração delta do zero. Depois de concluir a enumeração completa, compare os itens retornados com seu estado local e siga estas instruções.
 
@@ -234,6 +242,10 @@ GET /me/drive/root/delta?token=latest
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-delta-latest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-latest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -285,9 +297,9 @@ Quando o cabeçalho `Prefer: hierarchicalsharing` é fornecido, as informações
 
 Em muitos cenários de verificação, você pode estar interessado, especificamente, em alterações nas permissões. Para deixar claro na resposta da consulta delta quais alterações são resultados de alterações nas permissões, você pode fornecer o cabeçalho `Prefer: deltashowsharingchanges`. Quando esse cabeçalho é fornecido, todos os itens que aparecem na resposta da consulta delta devido a alterações de permissão, terão a anotação OData `@microsoft.graph.sharedChanged":"True"`. Esse recurso é aplicável ao SharePoint e ao OneDrive for Business, mas não às contas de consumidor do OneDrive.
 
-> **Nota:** O uso do cabeçalho `Prefer: deltashowsharingchanges` requer que você use `Prefer: deltashowremovedasdeleted` e `Prefer: deltatraversepermissiongaps`. Esses valores de cabeçalho podem ser agrupados em um único cabeçalho: `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges` .
+> **Nota:** O uso do cabeçalho `Prefer: deltashowsharingchanges` requer que você use `Prefer: deltashowremovedasdeleted` e `Prefer: deltatraversepermissiongaps`. Esses valores de cabeçalho podem ser agrupados em um único cabeçalho: `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges`.
 
-## <a name="error-responses"></a>Respostas de erro
+## <a name="error-responses"></a>Respostas de erros
 
 Além dos erros de ressincronização detalhados acima, confira os detalhes sobre como os erros são retornados em [Respostas de Erros][error-response].
 

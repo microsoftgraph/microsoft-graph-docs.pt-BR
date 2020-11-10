@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: aa18bac40b4fe7cc7b509e2948c3134ccaa77386
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4b9eacacaf808330efa5b9d41face09e3cbbfd7d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001432"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964605"
 ---
 # <a name="list-used"></a>Listar usados
 
@@ -51,7 +51,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
-  >**Observação**: a solicitação de documentos **usados** por outro usuário retorna resultados classificados por **lastModifiedDateTime**. **lastAccessedDateTime** é então definido como **lastModifiedDateTime**.
+  >**Observação** : a solicitação de documentos **usados** por outro usuário retorna resultados classificados por **lastModifiedDateTime**. **lastAccessedDateTime** é então definido como **lastModifiedDateTime**.
 
 
 - Expanda o recurso mencionado por uma percepção **usada** :
@@ -66,22 +66,22 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:
 
-- Use o `$filter` parâmetro de consulta para filtrar itens usados. Por exemplo, com base no **tipo**:
+- Use o `$filter` parâmetro de consulta para filtrar itens usados. Por exemplo, com base no **tipo** :
 
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-- Use `$filter` para filtrar itens usados com base no  **ContainerType**:
+- Use `$filter` para filtrar itens usados com base no  **ContainerType** :
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
   Confira os tipos e tipos de contêiner disponíveis que você pode filtrar no [resourceVisualization](../resources/insights-resourcevisualization.md).
 
-- Use o `$orderBy` parâmetro de consulta para classificar documentos que foram exibidos pela última vez ou modificados _pelo usuário conectado_, com base na propriedade **lastAccessedDateTime** :
+- Use o `$orderBy` parâmetro de consulta para classificar documentos que foram exibidos pela última vez ou modificados _pelo usuário conectado_ , com base na propriedade **lastAccessedDateTime** :
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  >**Observação**: Use esta opção _de consulta somente para o usuário conectado_. Você não pode usar essa API para obter documentos exibidos ou modificados por outro usuário. Confira o [exemplo 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
+  >**Observação** : Use esta opção _de consulta somente para o usuário conectado_. Você não pode usar essa API para obter documentos exibidos ou modificados por outro usuário. Confira o [exemplo 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -139,6 +139,10 @@ GET https://graph.microsoft.com/beta/me/insights/used
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifieddocuments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mymodifieddocuments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -253,6 +257,10 @@ GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAcce
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mymodifiedandvieweddocuments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mymodifiedandvieweddocuments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

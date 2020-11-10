@@ -6,12 +6,12 @@ author: JeremyKelley
 ms.prod: ''
 ms.date: 08/06/2019
 doc_type: apiPageType
-ms.openlocfilehash: fc2d7e73fb3c3ad781025e84166845dc84c3bdde
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aef61c906ff51e16d84c4f2f54444bc2343fffd1
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981888"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963526"
 ---
 # <a name="driveitem-restore"></a>driveItem: restaurar
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restaurar um [driveItem](../resources/driveitem.md) que foi excluído e que está atualmente na lixeira. **Observação**: atualmente, essa funcionalidade só está disponível para o onedrive Personal.
+Restaurar um [driveItem](../resources/driveitem.md) que foi excluído e que está atualmente na lixeira. **Observação** : atualmente, essa funcionalidade só está disponível para o onedrive Personal.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Files.ReadWrite.All |
-| Aplicativo                            | Files.ReadWrite.All |
+| Application                            | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/restore-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/restore-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

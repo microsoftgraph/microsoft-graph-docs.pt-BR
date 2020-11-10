@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6f54f7938e448d83a9ac2ff70e1dfb215e1b71d6
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 64a7f6a5e7602f200a6b243669e1054f167f127b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849148"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964247"
 ---
 # <a name="update-teamsapp"></a>Atualizar teamsApp
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
-| Delegada (conta corporativa ou de estudante)     | AppCatalog. Submit, AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | AppCatalog. Submit, AppCatalog. ReadWrite. All, Directory. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte|
 | Aplicativo                            | Sem suporte. |
 
@@ -84,6 +84,10 @@ Content-length: 244
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

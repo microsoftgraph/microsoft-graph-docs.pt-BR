@@ -6,12 +6,12 @@ title: Converter em outros formatos
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: cedeb91acad538f38d5f593b4cfe6df610818ed2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c11a954ad735cc8baf133442b865adbf1b758669
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982036"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963722"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
@@ -44,7 +44,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | string | Especifique o formato em que o conteúdo do item deve ser baixado. |
 
 
-Os seguintes valores são válidos para o parâmetro **format**:
+Os seguintes valores são válidos para o parâmetro **format** :
 
 | Valor | Descrição                        | Extensões de origem com suporte
 |:------|:-----------------------------------|---------------------------------
@@ -78,6 +78,10 @@ GET /drive/items/{item-id}/content?format={format}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-item-content-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/convert-item-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

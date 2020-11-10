@@ -6,12 +6,12 @@ title: obter um arquivo ou uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ee46dfde6ca18520dbafe949248ead4e899a1c38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 75d859ca20f470518ffcd97b7c8f61217a64373a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982022"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963682"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 
@@ -55,11 +55,11 @@ GET /users/{userId}/drive/root:/{item-path}
 
 Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) `$expand` e `$select` para personalizar a resposta.
 
-É possível usar o parâmetro de cadeia de caracteres de consulta [`$expand` ](/graph/query-parameters) para incluir os filhos de um item na mesma chamada de recuperação de metadados de um item se item tiver um relacionamento **children**.
+É possível usar o parâmetro de cadeia de caracteres de consulta [`$expand`](/graph/query-parameters) para incluir os filhos de um item na mesma chamada de recuperação de metadados de um item se item tiver um relacionamento **children**.
 
-Você também pode usar o `includeDeletedItems=true` parâmetro de consulta para retornar itens excluídos.
-Esse parâmetro de consulta só é válido ao direcionar um [driveItem](../resources/driveitem.md) por ID e, caso contrário, será ignorado.
-No momento, isso só tem suporte no OneDrive Personal.
+Você também pode usar o parâmetro de consulta `includeDeletedItems=true` para retornar os itens excluídos.
+Esse parâmetro de consulta só é válido quando direcionamos um [driveItem](../resources/driveitem.md) por ID e, caso contrário, serão ignorados.
+No momento, só há suporte para isso no OneDrive pessoal.
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
@@ -93,6 +93,10 @@ GET /me/drive/root
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-metadata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

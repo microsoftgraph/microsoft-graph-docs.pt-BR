@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9cd8fcd909c5c6e952763c6fa09e56c2f57fabe8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc78485300ea59ae526d93f174212b9f8b5328bd
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990624"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964639"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>informationProtectionLabel: listLabels
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | InformationProtectionPolicy. Read            |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | InformationProtectionPolicy.Read.All        |
+| Application                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 | Nome          | Descrição                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autorização | {token} de portador. Obrigatório.                                                                                                                                                         |
-| Agente de usuário    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
+| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes surgirão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-labels-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-labels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

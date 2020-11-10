@@ -6,12 +6,12 @@ title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fdcae44f4d9be14fee4d9da81a96cc9c063ab061
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7103ec9b99115d69148240a405b62e99ec96141
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982021"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963673"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -113,6 +113,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -224,7 +228,7 @@ A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos ob
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
 * Para obter uma lista de funções disponíveis, consulte [funções valores de propriedade](../resources/permission.md#roles-property-values).
 
-## <a name="error-responses"></a>Respostas de erros
+## <a name="error-responses"></a>Respostas de erro
 
 Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
 
