@@ -5,69 +5,69 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bc8deda62ae268031e6505e878af416f8d496dfd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1229729f2d3d149bf06d5a6308fa659ed56dcca7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983456"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48952603"
 ---
-# <a name="update-accessreview"></a><span data-ttu-id="36114-103">Atualizar accessReview</span><span class="sxs-lookup"><span data-stu-id="36114-103">Update accessReview</span></span>
+# <a name="update-accessreview"></a><span data-ttu-id="53a13-103">Atualizar accessReview</span><span class="sxs-lookup"><span data-stu-id="53a13-103">Update accessReview</span></span>
 
-<span data-ttu-id="36114-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="36114-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="53a13-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="53a13-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="36114-105">No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , atualize um objeto [accessReview](../resources/accessreview.md) existente para alterar uma ou mais de suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="36114-105">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.</span></span>
+<span data-ttu-id="53a13-105">No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , atualize um objeto [accessReview](../resources/accessreview.md) existente para alterar uma ou mais de suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="53a13-105">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.</span></span>
 
-<span data-ttu-id="36114-106">Esta API não se destina a alterar os revisores ou as decisões de uma revisão.</span><span class="sxs-lookup"><span data-stu-id="36114-106">This API is not intended to change the reviewers or decisions of a review.</span></span>  <span data-ttu-id="36114-107">Para alterar os revisores, use as APIs [revisar](accessreview-addreviewer.md) ou [removeReviewer](accessreview-removereviewer.md) .</span><span class="sxs-lookup"><span data-stu-id="36114-107">To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.</span></span>  <span data-ttu-id="36114-108">Para interromper uma revisão única já iniciada ou uma instância já iniciada de uma revisão recorrente, antes, use a API de [parada](accessreview-stop.md) .</span><span class="sxs-lookup"><span data-stu-id="36114-108">To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API.</span></span> <span data-ttu-id="36114-109">Para aplicar as decisões ao grupo de destino ou aos direitos de acesso do aplicativo, use a API [aplicar](accessreview-apply.md) .</span><span class="sxs-lookup"><span data-stu-id="36114-109">To apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API.</span></span> 
+<span data-ttu-id="53a13-106">Esta API não se destina a alterar os revisores ou as decisões de uma revisão.</span><span class="sxs-lookup"><span data-stu-id="53a13-106">This API is not intended to change the reviewers or decisions of a review.</span></span>  <span data-ttu-id="53a13-107">Para alterar os revisores, use as APIs [revisar](accessreview-addreviewer.md) ou [removeReviewer](accessreview-removereviewer.md) .</span><span class="sxs-lookup"><span data-stu-id="53a13-107">To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.</span></span>  <span data-ttu-id="53a13-108">Para interromper uma revisão única já iniciada ou uma instância já iniciada de uma revisão recorrente, antes, use a API de [parada](accessreview-stop.md) .</span><span class="sxs-lookup"><span data-stu-id="53a13-108">To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API.</span></span> <span data-ttu-id="53a13-109">Para aplicar as decisões ao grupo de destino ou aos direitos de acesso do aplicativo, use a API [aplicar](accessreview-apply.md) .</span><span class="sxs-lookup"><span data-stu-id="53a13-109">To apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="36114-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="36114-110">Permissions</span></span>
-<span data-ttu-id="36114-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="36114-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="53a13-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="53a13-110">Permissions</span></span>
+<span data-ttu-id="53a13-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="53a13-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="36114-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="36114-113">Permission type</span></span>                        | <span data-ttu-id="36114-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="36114-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="53a13-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="53a13-113">Permission type</span></span>                        | <span data-ttu-id="53a13-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="53a13-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="36114-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="36114-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="36114-116">AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="36114-116">AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span> |
-|<span data-ttu-id="36114-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="36114-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="36114-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="36114-118">Not supported.</span></span> |
-|<span data-ttu-id="36114-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="36114-119">Application</span></span>                            | <span data-ttu-id="36114-120">AccessReview.ReadWrite.Membership</span><span class="sxs-lookup"><span data-stu-id="36114-120">AccessReview.ReadWrite.Membership</span></span> |
+|<span data-ttu-id="53a13-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="53a13-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="53a13-116">AccessReview. ReadWrite. Membership, AccessReview. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="53a13-116">AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All</span></span> |
+|<span data-ttu-id="53a13-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="53a13-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="53a13-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="53a13-118">Not supported.</span></span> |
+|<span data-ttu-id="53a13-119">Application</span><span class="sxs-lookup"><span data-stu-id="53a13-119">Application</span></span>                            | <span data-ttu-id="53a13-120">AccessReview.ReadWrite.Membership</span><span class="sxs-lookup"><span data-stu-id="53a13-120">AccessReview.ReadWrite.Membership</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="36114-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="36114-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="53a13-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="53a13-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /accessReviews/{reviewId}
 ```
-## <a name="request-headers"></a><span data-ttu-id="36114-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="36114-122">Request headers</span></span>
-| <span data-ttu-id="36114-123">Nome</span><span class="sxs-lookup"><span data-stu-id="36114-123">Name</span></span>         | <span data-ttu-id="36114-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="36114-124">Type</span></span>        | <span data-ttu-id="36114-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="36114-125">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="53a13-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="53a13-122">Request headers</span></span>
+| <span data-ttu-id="53a13-123">Nome</span><span class="sxs-lookup"><span data-stu-id="53a13-123">Name</span></span>         | <span data-ttu-id="53a13-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="53a13-124">Type</span></span>        | <span data-ttu-id="53a13-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="53a13-125">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="36114-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="36114-126">Authorization</span></span> | <span data-ttu-id="36114-127">string</span><span class="sxs-lookup"><span data-stu-id="36114-127">string</span></span> | <span data-ttu-id="36114-p103">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="36114-p103">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="53a13-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="53a13-126">Authorization</span></span> | <span data-ttu-id="53a13-127">string</span><span class="sxs-lookup"><span data-stu-id="53a13-127">string</span></span> | <span data-ttu-id="53a13-p103">\{token\} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="53a13-p103">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="36114-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="36114-130">Request body</span></span>
-<span data-ttu-id="36114-131">No corpo da solicitação, forneça uma representação JSON dos parâmetros de um objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="36114-131">In the request body, supply a JSON representation of the parameters of an [accessReview](../resources/accessreview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="53a13-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="53a13-130">Request body</span></span>
+<span data-ttu-id="53a13-131">No corpo da solicitação, forneça uma representação JSON dos parâmetros de um objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="53a13-131">In the request body, supply a JSON representation of the parameters of an [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="36114-132">A tabela a seguir mostra as propriedades que podem ser fornecidas ao atualizar um accessReview.</span><span class="sxs-lookup"><span data-stu-id="36114-132">The following table shows the properties that can be supplied when you update an accessReview.</span></span>
+<span data-ttu-id="53a13-132">A tabela a seguir mostra as propriedades que podem ser fornecidas ao atualizar um accessReview.</span><span class="sxs-lookup"><span data-stu-id="53a13-132">The following table shows the properties that can be supplied when you update an accessReview.</span></span>
 
-| <span data-ttu-id="36114-133">Propriedade</span><span class="sxs-lookup"><span data-stu-id="36114-133">Property</span></span>     | <span data-ttu-id="36114-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="36114-134">Type</span></span>        | <span data-ttu-id="36114-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="36114-135">Description</span></span> |
+| <span data-ttu-id="53a13-133">Propriedade</span><span class="sxs-lookup"><span data-stu-id="53a13-133">Property</span></span>     | <span data-ttu-id="53a13-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="53a13-134">Type</span></span>        | <span data-ttu-id="53a13-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="53a13-135">Description</span></span> |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | <span data-ttu-id="36114-136">O nome de revisão do acesso.</span><span class="sxs-lookup"><span data-stu-id="36114-136">The access review name.</span></span>  |
-| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="36114-137">O DateTime quando a revisão está agendada para ser iniciada.</span><span class="sxs-lookup"><span data-stu-id="36114-137">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="36114-138">Isso deve ser uma data no futuro.</span><span class="sxs-lookup"><span data-stu-id="36114-138">This must be a date in the future.</span></span>   |
-| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="36114-139">O DateTime quando a revisão é agendada para terminar.</span><span class="sxs-lookup"><span data-stu-id="36114-139">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="36114-140">Este deve ser pelo menos um dia depois da data de início.</span><span class="sxs-lookup"><span data-stu-id="36114-140">This must be at least one day later than the start date.</span></span>   |
-| `description`             |`String`                                                        | <span data-ttu-id="36114-141">A descrição, para mostrar aos revisores.</span><span class="sxs-lookup"><span data-stu-id="36114-141">The description, to show to the reviewers.</span></span> |
+| `displayName`             |`String`                                                        | <span data-ttu-id="53a13-136">O nome de revisão do acesso.</span><span class="sxs-lookup"><span data-stu-id="53a13-136">The access review name.</span></span>  |
+| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="53a13-137">O DateTime quando a revisão está agendada para ser iniciada.</span><span class="sxs-lookup"><span data-stu-id="53a13-137">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="53a13-138">Isso deve ser uma data no futuro.</span><span class="sxs-lookup"><span data-stu-id="53a13-138">This must be a date in the future.</span></span>   |
+| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="53a13-139">O DateTime quando a revisão é agendada para terminar.</span><span class="sxs-lookup"><span data-stu-id="53a13-139">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="53a13-140">Este deve ser pelo menos um dia depois da data de início.</span><span class="sxs-lookup"><span data-stu-id="53a13-140">This must be at least one day later than the start date.</span></span>   |
+| `description`             |`String`                                                        | <span data-ttu-id="53a13-141">A descrição, para mostrar aos revisores.</span><span class="sxs-lookup"><span data-stu-id="53a13-141">The description, to show to the reviewers.</span></span> |
 
 
 
-## <a name="response"></a><span data-ttu-id="36114-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="36114-142">Response</span></span>
-<span data-ttu-id="36114-143">Se tiver êxito, este método retornará um `204, Accepted` código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="36114-143">If successful, this method returns a `204, Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="53a13-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="53a13-142">Response</span></span>
+<span data-ttu-id="53a13-143">Se tiver êxito, este método retornará um `204, Accepted` código de resposta e um objeto [accessReview](../resources/accessreview.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="53a13-143">If successful, this method returns a `204, Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="36114-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="36114-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="53a13-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="53a13-144">Example</span></span>
 
-<span data-ttu-id="36114-145">Este é um exemplo de atualização de uma revisão de acesso de uma única vez (sem refazêvel).</span><span class="sxs-lookup"><span data-stu-id="36114-145">This is an example of updating a one-time (not reoccurring) access review.</span></span>
+<span data-ttu-id="53a13-145">Este é um exemplo de atualização de uma revisão de acesso de uma única vez (sem refazêvel).</span><span class="sxs-lookup"><span data-stu-id="53a13-145">This is an example of updating a one-time (not reoccurring) access review.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="36114-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="36114-146">Request</span></span>
-<span data-ttu-id="36114-147">No corpo da solicitação, forneça uma representação JSON das novas propriedades do objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="36114-147">In the request body, supply a JSON representation of the new properties of the [accessReview](../resources/accessreview.md) object.</span></span>
+##### <a name="request"></a><span data-ttu-id="53a13-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="53a13-146">Request</span></span>
+<span data-ttu-id="53a13-147">No corpo da solicitação, forneça uma representação JSON das novas propriedades do objeto [accessReview](../resources/accessreview.md) .</span><span class="sxs-lookup"><span data-stu-id="53a13-147">In the request body, supply a JSON representation of the new properties of the [accessReview](../resources/accessreview.md) object.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="36114-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="36114-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="53a13-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="53a13-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReview"
@@ -80,23 +80,27 @@ Content-type: application/json
     "displayName":"TestReview new name"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="36114-149">C#</span><span class="sxs-lookup"><span data-stu-id="36114-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="53a13-149">C#</span><span class="sxs-lookup"><span data-stu-id="53a13-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="36114-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="36114-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="53a13-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53a13-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="36114-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="36114-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="53a13-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53a13-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accessreview-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="53a13-152">Java</span><span class="sxs-lookup"><span data-stu-id="53a13-152">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="36114-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="36114-152">Response</span></span>
-><span data-ttu-id="36114-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="36114-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="53a13-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="53a13-153">Response</span></span>
+><span data-ttu-id="53a13-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="53a13-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
