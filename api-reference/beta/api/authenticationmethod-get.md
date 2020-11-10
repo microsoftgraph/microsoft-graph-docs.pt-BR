@@ -5,39 +5,39 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 515d5adb7feaab4f460882c22ee1639fd37df123
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: e0847447d3559c2e4bbee77ef4096de0762b5bcd
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417748"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961342"
 ---
-# <a name="get-authenticationmethod"></a><span data-ttu-id="e7ab3-103">Obter authenticationMethod</span><span class="sxs-lookup"><span data-stu-id="e7ab3-103">Get authenticationMethod</span></span>
+# <a name="get-authenticationmethod"></a><span data-ttu-id="d1a14-103">Obter authenticationMethod</span><span class="sxs-lookup"><span data-stu-id="d1a14-103">Get authenticationMethod</span></span>
 
-<span data-ttu-id="e7ab3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e7ab3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d1a14-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d1a14-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e7ab3-105">Recupere as propriedades e os relacionamentos de um objeto [AuthenticationMethod](../resources/authenticationmethod.md) .</span><span class="sxs-lookup"><span data-stu-id="e7ab3-105">Retrieve the properties and relationships of an [authenticationMethod](../resources/authenticationmethod.md) object.</span></span>
+<span data-ttu-id="d1a14-105">Recupere as propriedades e os relacionamentos de um objeto [AuthenticationMethod](../resources/authenticationmethod.md) .</span><span class="sxs-lookup"><span data-stu-id="d1a14-105">Retrieve the properties and relationships of an [authenticationMethod](../resources/authenticationmethod.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e7ab3-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e7ab3-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d1a14-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="d1a14-106">Permissions</span></span>
 
-<span data-ttu-id="e7ab3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e7ab3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d1a14-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d1a14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e7ab3-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e7ab3-109">Permission type</span></span>                        | <span data-ttu-id="e7ab3-110">Permissões que atuam em si (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e7ab3-110">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="e7ab3-111">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e7ab3-111">Permissions acting on others (from least to most privileged)</span></span>|
+| <span data-ttu-id="d1a14-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d1a14-109">Permission type</span></span>                        | <span data-ttu-id="d1a14-110">Permissões que atuam em si (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d1a14-110">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="d1a14-111">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d1a14-111">Permissions acting on others (from least to most privileged)</span></span>|
 |:---------------------------------------|:-------------------------|:-----------------|
-| <span data-ttu-id="e7ab3-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e7ab3-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e7ab3-113">UserAuthenticationMethod. Read, UserAuthenticationMethod. Read. All, UserAuthenticationMethod. ReadWrite, UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="e7ab3-113">UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All</span></span> | <span data-ttu-id="e7ab3-114">UserAuthenticationMethod. Read. All, UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="e7ab3-114">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
-| <span data-ttu-id="e7ab3-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e7ab3-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e7ab3-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-116">Not supported.</span></span> | <span data-ttu-id="e7ab3-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-117">Not supported.</span></span> |
-| <span data-ttu-id="e7ab3-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e7ab3-118">Application</span></span>                            | <span data-ttu-id="e7ab3-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-119">Not supported.</span></span> | <span data-ttu-id="e7ab3-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-120">Not supported.</span></span> |
+| <span data-ttu-id="d1a14-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d1a14-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d1a14-113">UserAuthenticationMethod. Read, UserAuthenticationMethod. Read. All, UserAuthenticationMethod. ReadWrite, UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d1a14-113">UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All</span></span> | <span data-ttu-id="d1a14-114">UserAuthenticationMethod. Read. All, UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d1a14-114">UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="d1a14-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d1a14-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d1a14-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d1a14-116">Not supported.</span></span> | <span data-ttu-id="d1a14-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d1a14-117">Not supported.</span></span> |
+| <span data-ttu-id="d1a14-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d1a14-118">Application</span></span>                            | <span data-ttu-id="d1a14-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d1a14-119">Not supported.</span></span> | <span data-ttu-id="d1a14-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d1a14-120">Not supported.</span></span> |
 
-<span data-ttu-id="e7ab3-121">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="e7ab3-121">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+<span data-ttu-id="d1a14-121">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="d1a14-121">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
 
-* <span data-ttu-id="e7ab3-122">Administrador global</span><span class="sxs-lookup"><span data-stu-id="e7ab3-122">Global admin</span></span>
-* <span data-ttu-id="e7ab3-123">Leitor global</span><span class="sxs-lookup"><span data-stu-id="e7ab3-123">Global reader</span></span>
-* <span data-ttu-id="e7ab3-124">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="e7ab3-124">Privileged authentication admin</span></span>
-* <span data-ttu-id="e7ab3-125">Administrador de autenticação (apenas Ver os números de telefone mascarados)</span><span class="sxs-lookup"><span data-stu-id="e7ab3-125">Authentication admin (only sees masked phone numbers)</span></span>
+* <span data-ttu-id="d1a14-122">Administrador global</span><span class="sxs-lookup"><span data-stu-id="d1a14-122">Global admin</span></span>
+* <span data-ttu-id="d1a14-123">Leitor global</span><span class="sxs-lookup"><span data-stu-id="d1a14-123">Global reader</span></span>
+* <span data-ttu-id="d1a14-124">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="d1a14-124">Privileged authentication admin</span></span>
+* <span data-ttu-id="d1a14-125">Administrador de autenticação (apenas Ver os números de telefone mascarados)</span><span class="sxs-lookup"><span data-stu-id="d1a14-125">Authentication admin (only sees masked phone numbers)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e7ab3-126">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e7ab3-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d1a14-126">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d1a14-126">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,31 +46,31 @@ GET /me/authentication/methods/{id}
 GET /users/{id | userPrincipalName}/authentication/methods/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="e7ab3-127">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e7ab3-127">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d1a14-127">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d1a14-127">Optional query parameters</span></span>
 
-<span data-ttu-id="e7ab3-128">Este método não oferece suporte a parâmetros de consulta opcionais para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-128">This method does not support optional query parameters to customize the response.</span></span>
+<span data-ttu-id="d1a14-128">Este método não oferece suporte a parâmetros de consulta opcionais para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d1a14-128">This method does not support optional query parameters to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="e7ab3-129">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e7ab3-129">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d1a14-129">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d1a14-129">Request headers</span></span>
 
-| <span data-ttu-id="e7ab3-130">Nome</span><span class="sxs-lookup"><span data-stu-id="e7ab3-130">Name</span></span>      |<span data-ttu-id="e7ab3-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="e7ab3-131">Description</span></span>|
+| <span data-ttu-id="d1a14-130">Nome</span><span class="sxs-lookup"><span data-stu-id="d1a14-130">Name</span></span>      |<span data-ttu-id="d1a14-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="d1a14-131">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e7ab3-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="e7ab3-132">Authorization</span></span> | <span data-ttu-id="e7ab3-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d1a14-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="d1a14-132">Authorization</span></span> | <span data-ttu-id="d1a14-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d1a14-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e7ab3-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e7ab3-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d1a14-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d1a14-135">Request body</span></span>
 
-<span data-ttu-id="e7ab3-136">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-136">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d1a14-136">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d1a14-136">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e7ab3-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="e7ab3-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d1a14-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1a14-137">Response</span></span>
 
-<span data-ttu-id="e7ab3-138">Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [AuthenticationMethod](../resources/authenticationmethod.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-138">If successful, this method returns a `200 OK` response code and the requested [authenticationMethod](../resources/authenticationmethod.md) object in the response body.</span></span>
+<span data-ttu-id="d1a14-138">Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [AuthenticationMethod](../resources/authenticationmethod.md) solicitado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d1a14-138">If successful, this method returns a `200 OK` response code and the requested [authenticationMethod](../resources/authenticationmethod.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e7ab3-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="e7ab3-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d1a14-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d1a14-139">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e7ab3-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e7ab3-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d1a14-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d1a14-140">Request</span></span>
 
-<span data-ttu-id="e7ab3-141">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-141">The following is an example of the request.</span></span>
+<span data-ttu-id="d1a14-141">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d1a14-141">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e7ab3-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="e7ab3-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d1a14-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="d1a14-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_authenticationmethod"
@@ -79,26 +79,30 @@ GET /users/{id | userPrincipalName}/authentication/methods/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/methods/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="e7ab3-143">C#</span><span class="sxs-lookup"><span data-stu-id="e7ab3-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d1a14-143">C#</span><span class="sxs-lookup"><span data-stu-id="d1a14-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e7ab3-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e7ab3-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d1a14-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d1a14-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-authenticationmethod-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e7ab3-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e7ab3-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d1a14-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d1a14-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-authenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="d1a14-146">Java</span><span class="sxs-lookup"><span data-stu-id="d1a14-146">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-authenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e7ab3-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="e7ab3-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d1a14-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1a14-147">Response</span></span>
 
-<span data-ttu-id="e7ab3-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-147">The following is an example of the response.</span></span>
+<span data-ttu-id="d1a14-148">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d1a14-148">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="e7ab3-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e7ab3-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d1a14-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d1a14-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
