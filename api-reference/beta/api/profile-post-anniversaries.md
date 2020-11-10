@@ -5,32 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c227cadba62b80cf94f6c5f2faa849789db40b71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89cae3dc7fe0b5e1b314adbebd9510eab5f65d23
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034550"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964589"
 ---
-# <a name="create-personanniversary"></a><span data-ttu-id="fedf4-103">Criar personAnniversary</span><span class="sxs-lookup"><span data-stu-id="fedf4-103">Create personAnniversary</span></span>
+# <a name="create-personanniversary"></a><span data-ttu-id="f7f41-103">Criar personAnniversary</span><span class="sxs-lookup"><span data-stu-id="f7f41-103">Create personAnniversary</span></span>
 
-<span data-ttu-id="fedf4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fedf4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f7f41-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f7f41-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fedf4-105">Use esta API para criar um novo objeto [personAnniversary](../resources/personanniversary.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="fedf4-105">Use this API to create a new [personAnniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="f7f41-105">Use esta API para criar um novo objeto [personAnniversary](../resources/personanniversary.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="f7f41-105">Use this API to create a new [personAnniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fedf4-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="fedf4-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7f41-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f7f41-106">Permissions</span></span>
 
-<span data-ttu-id="fedf4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fedf4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f7f41-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7f41-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fedf4-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fedf4-109">Permission type</span></span>                        | <span data-ttu-id="fedf4-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fedf4-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f7f41-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f7f41-109">Permission type</span></span>                        | <span data-ttu-id="f7f41-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f7f41-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="fedf4-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fedf4-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="fedf4-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="fedf4-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="fedf4-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fedf4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fedf4-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="fedf4-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="fedf4-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fedf4-115">Application</span></span>                            | <span data-ttu-id="fedf4-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fedf4-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="f7f41-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f7f41-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f7f41-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="f7f41-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="f7f41-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f7f41-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7f41-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="f7f41-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="f7f41-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f7f41-115">Application</span></span>                            | <span data-ttu-id="f7f41-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7f41-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="fedf4-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fedf4-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7f41-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f7f41-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,38 +39,38 @@ POST /me/profile/anniversaries
 POST /users/{id | userPrincipalName}/profile/anniversaries
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fedf4-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fedf4-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f7f41-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f7f41-118">Request headers</span></span>
 
-| <span data-ttu-id="fedf4-119">Nome</span><span class="sxs-lookup"><span data-stu-id="fedf4-119">Name</span></span>      |<span data-ttu-id="fedf4-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="fedf4-120">Description</span></span>|
+| <span data-ttu-id="f7f41-119">Nome</span><span class="sxs-lookup"><span data-stu-id="f7f41-119">Name</span></span>      |<span data-ttu-id="f7f41-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="f7f41-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="fedf4-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="fedf4-121">Authorization</span></span>  | <span data-ttu-id="fedf4-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fedf4-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="fedf4-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fedf4-124">Content-Type</span></span>   | <span data-ttu-id="fedf4-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fedf4-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="f7f41-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f7f41-121">Authorization</span></span>  | <span data-ttu-id="f7f41-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f7f41-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="f7f41-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f7f41-124">Content-Type</span></span>   | <span data-ttu-id="f7f41-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f7f41-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fedf4-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fedf4-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7f41-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f7f41-127">Request body</span></span>
 
-<span data-ttu-id="fedf4-128">No corpo da solicitação, forneça uma representação JSON do objeto [personAnniversary](../resources/personanniversary.md) .</span><span class="sxs-lookup"><span data-stu-id="fedf4-128">In the request body, supply a JSON representation of [personAnniversary](../resources/personanniversary.md) object.</span></span>
+<span data-ttu-id="f7f41-128">No corpo da solicitação, forneça uma representação JSON do objeto [personAnniversary](../resources/personanniversary.md) .</span><span class="sxs-lookup"><span data-stu-id="f7f41-128">In the request body, supply a JSON representation of [personAnniversary](../resources/personanniversary.md) object.</span></span>
 
-<span data-ttu-id="fedf4-129">A tabela a seguir mostra as propriedades que podem ser definidas em um novo objeto \* \* personAnniversary \* \*, no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="fedf4-129">The following table shows the properties that are possible to set within a new \*\*personAnniversary\*\*\*\* object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="f7f41-129">A tabela a seguir mostra as propriedades que podem ser definidas em um novo objeto \* \* personAnniversary \* \*, no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="f7f41-129">The following table shows the properties that are possible to set within a new \*\*personAnniversary\*\*\*\* object in a user's [profile](../resources/profile.md).</span></span>
 
-|<span data-ttu-id="fedf4-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fedf4-130">Property</span></span>|<span data-ttu-id="fedf4-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="fedf4-131">Type</span></span>|<span data-ttu-id="fedf4-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="fedf4-132">Description</span></span>|
+|<span data-ttu-id="f7f41-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f7f41-130">Property</span></span>|<span data-ttu-id="f7f41-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="f7f41-131">Type</span></span>|<span data-ttu-id="f7f41-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="f7f41-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fedf4-133">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="fedf4-133">allowedAudiences</span></span>|<span data-ttu-id="fedf4-134">String</span><span class="sxs-lookup"><span data-stu-id="fedf4-134">String</span></span>|<span data-ttu-id="fedf4-135">As audiências que podem ver os valores contidos na entidade.</span><span class="sxs-lookup"><span data-stu-id="fedf4-135">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="fedf4-136">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="fedf4-136">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="fedf4-137">Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="fedf4-137">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="fedf4-138">data</span><span class="sxs-lookup"><span data-stu-id="fedf4-138">date</span></span>|<span data-ttu-id="fedf4-139">Data</span><span class="sxs-lookup"><span data-stu-id="fedf4-139">Date</span></span>|<span data-ttu-id="fedf4-140">Contém a data associada ao tipo de aniversário.</span><span class="sxs-lookup"><span data-stu-id="fedf4-140">Contains the date associated with the anniversary type.</span></span>|
-|<span data-ttu-id="fedf4-141">fracassa</span><span class="sxs-lookup"><span data-stu-id="fedf4-141">inference</span></span>|[<span data-ttu-id="fedf4-142">inferenceData</span><span class="sxs-lookup"><span data-stu-id="fedf4-142">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="fedf4-143">Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação.</span><span class="sxs-lookup"><span data-stu-id="fedf4-143">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="fedf4-144">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="fedf4-144">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="fedf4-145">source</span><span class="sxs-lookup"><span data-stu-id="fedf4-145">source</span></span>|[<span data-ttu-id="fedf4-146">personDataSource</span><span class="sxs-lookup"><span data-stu-id="fedf4-146">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="fedf4-147">Onde os valores são originados se forem sincronizados a partir de outro serviço.</span><span class="sxs-lookup"><span data-stu-id="fedf4-147">Where the values originated if synced from another service.</span></span> <span data-ttu-id="fedf4-148">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="fedf4-148">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="fedf4-149">tipo</span><span class="sxs-lookup"><span data-stu-id="fedf4-149">type</span></span>|<span data-ttu-id="fedf4-150">data especial</span><span class="sxs-lookup"><span data-stu-id="fedf4-150">anniversaryType</span></span>|<span data-ttu-id="fedf4-151">O tipo de aniversário que a data representa.</span><span class="sxs-lookup"><span data-stu-id="fedf4-151">The type of anniversary the date represents.</span></span> <span data-ttu-id="fedf4-152">Os valores possíveis são: `birthday`, `wedding`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="fedf4-152">Possible values are: `birthday`, `wedding`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="f7f41-133">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="f7f41-133">allowedAudiences</span></span>|<span data-ttu-id="f7f41-134">String</span><span class="sxs-lookup"><span data-stu-id="f7f41-134">String</span></span>|<span data-ttu-id="f7f41-135">As audiências que podem ver os valores contidos na entidade.</span><span class="sxs-lookup"><span data-stu-id="f7f41-135">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="f7f41-136">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="f7f41-136">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="f7f41-137">Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="f7f41-137">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="f7f41-138">data</span><span class="sxs-lookup"><span data-stu-id="f7f41-138">date</span></span>|<span data-ttu-id="f7f41-139">Data</span><span class="sxs-lookup"><span data-stu-id="f7f41-139">Date</span></span>|<span data-ttu-id="f7f41-140">Contém a data associada ao tipo de aniversário.</span><span class="sxs-lookup"><span data-stu-id="f7f41-140">Contains the date associated with the anniversary type.</span></span>|
+|<span data-ttu-id="f7f41-141">fracassa</span><span class="sxs-lookup"><span data-stu-id="f7f41-141">inference</span></span>|[<span data-ttu-id="f7f41-142">inferenceData</span><span class="sxs-lookup"><span data-stu-id="f7f41-142">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="f7f41-143">Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação.</span><span class="sxs-lookup"><span data-stu-id="f7f41-143">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="f7f41-144">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="f7f41-144">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="f7f41-145">source</span><span class="sxs-lookup"><span data-stu-id="f7f41-145">source</span></span>|[<span data-ttu-id="f7f41-146">personDataSource</span><span class="sxs-lookup"><span data-stu-id="f7f41-146">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="f7f41-147">Onde os valores são originados se forem sincronizados a partir de outro serviço.</span><span class="sxs-lookup"><span data-stu-id="f7f41-147">Where the values originated if synced from another service.</span></span> <span data-ttu-id="f7f41-148">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="f7f41-148">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="f7f41-149">tipo</span><span class="sxs-lookup"><span data-stu-id="f7f41-149">type</span></span>|<span data-ttu-id="f7f41-150">data especial</span><span class="sxs-lookup"><span data-stu-id="f7f41-150">anniversaryType</span></span>|<span data-ttu-id="f7f41-151">O tipo de aniversário que a data representa.</span><span class="sxs-lookup"><span data-stu-id="f7f41-151">The type of anniversary the date represents.</span></span> <span data-ttu-id="f7f41-152">Os valores possíveis são: `birthday`, `wedding`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="f7f41-152">Possible values are: `birthday`, `wedding`, `unknownFutureValue`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="fedf4-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="fedf4-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f7f41-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="f7f41-153">Response</span></span>
 
-<span data-ttu-id="fedf4-154">Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [personAnniversary](../resources/personanniversary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fedf4-154">If successful, this method returns `201, Created` response code and a new [personAnniversary](../resources/personanniversary.md) object in the response body.</span></span>
+<span data-ttu-id="f7f41-154">Se bem-sucedido, este método retorna `201, Created` um código de resposta e um novo objeto [personAnniversary](../resources/personanniversary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f7f41-154">If successful, this method returns `201, Created` response code and a new [personAnniversary](../resources/personanniversary.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="fedf4-155">Exemplos</span><span class="sxs-lookup"><span data-stu-id="fedf4-155">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f7f41-155">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f7f41-155">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="fedf4-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fedf4-156">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f7f41-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f7f41-156">Request</span></span>
 
-<span data-ttu-id="fedf4-157">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="fedf4-157">The following is an example of the request.</span></span>
+<span data-ttu-id="f7f41-157">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f7f41-157">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="fedf4-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="fedf4-158">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f7f41-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="f7f41-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_personanniversary_from_profile"
@@ -85,25 +85,29 @@ Content-type: application/json
   "date": "1980-01-08"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="fedf4-159">C#</span><span class="sxs-lookup"><span data-stu-id="fedf4-159">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f7f41-159">C#</span><span class="sxs-lookup"><span data-stu-id="f7f41-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-personanniversary-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="fedf4-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fedf4-160">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f7f41-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f7f41-160">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-personanniversary-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="fedf4-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fedf4-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f7f41-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f7f41-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-personanniversary-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="f7f41-162">Java</span><span class="sxs-lookup"><span data-stu-id="f7f41-162">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-personanniversary-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="fedf4-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="fedf4-162">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f7f41-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="f7f41-163">Response</span></span>
 
-<span data-ttu-id="fedf4-163">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="fedf4-163">The following is an example of the response.</span></span>
+<span data-ttu-id="f7f41-164">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f7f41-164">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="fedf4-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fedf4-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f7f41-p108">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f7f41-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
