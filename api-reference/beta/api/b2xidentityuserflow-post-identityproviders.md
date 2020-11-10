@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0a681c3531799175eec9264166fa716fd59ea08f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ec56d34d2068ce30a856d740144a744df0446ab2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406260"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961040"
 ---
 # <a name="add-identityprovider-to-a-b2xidentityuserflow"></a>Adicionar identityprovider a um b2xIdentityUserFlow
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo| IdentityUserFlow. ReadWrite. All|
+|Application| IdentityUserFlow.ReadWrite.All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -91,6 +91,10 @@ Content-length: 30
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-b2xuserflows-identityprovider-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-identityprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

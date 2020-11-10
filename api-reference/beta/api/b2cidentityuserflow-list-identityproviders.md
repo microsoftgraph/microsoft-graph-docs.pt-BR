@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2df36272614f1ea81dc29633da2e91a85a51099b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 91025d9b81e34bbfca3931617b864ac214a9875a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406245"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961177"
 ---
 # <a name="list-all-identityproviders-in-a-b2cidentityuserflow"></a>Listar todos os identityProviders em um b2cIdentityUserFlow
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo| IdentityUserFlow. ReadWrite. All|
+|Application| IdentityUserFlow.ReadWrite.All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProvider
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-b2cuserflow-list-identityproviders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflow-list-identityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

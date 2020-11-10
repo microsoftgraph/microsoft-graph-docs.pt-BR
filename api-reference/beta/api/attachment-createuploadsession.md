@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8b48da33ec7107f80bf8345da71374e70d5edcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49472ed726656bd704b3b8c167aef9074ddf503c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996641"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961650"
 ---
 # <a name="attachment-createuploadsession"></a>Anexo: createUploadSession
 
@@ -52,14 +52,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para criar uma sessão de carregamento para anexar um arquivo a um **evento**: 
+Para criar uma sessão de carregamento para anexar um arquivo a um **evento** : 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
 ```
 
-Para criar uma sessão de carregamento para anexar um arquivo a uma **mensagem**: 
+Para criar uma sessão de carregamento para anexar um arquivo a uma **mensagem** : 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -85,7 +85,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [uploadSession](../resources/uploadsession.md) no corpo da resposta.
 
->**Observação**: 
+>**Observação** : 
 >
 >A propriedade **uploadUrl** retornada como parte do objeto de resposta **UPLOADSESSION** é uma URL opaca para consultas subsequentes `PUT` para carregar intervalos de bytes do arquivo. Ele contém o token de autenticação apropriado para `PUT` consultas subsequentes que expiram pelo **expirationDateTime**. Não Personalize esta URL.
 >
@@ -129,6 +129,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

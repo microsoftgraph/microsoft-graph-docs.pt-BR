@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 07b8fce1de78ac062ae9ea38ed4d22a5d345cace
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 192b1712d55d0e19d15e4b73037e20ee24c24212
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997134"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962405"
 ---
 # <a name="update-agreement"></a>Atualizar contrato
 
@@ -44,7 +44,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |displayName|String|Nome para exibição do contrato.|
-|isViewingBeforeAcceptanceRequired|Boolean|Se o usuário tem que expandir e exibir o contrato antes de aceitar o.|
+|isViewingBeforeAcceptanceRequired|Booliano|Se o usuário tem que expandir e exibir o contrato antes de aceitar o.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Agreement](../resources/agreement.md) atualizado no corpo da resposta.
@@ -76,6 +76,10 @@ Content-length: 85
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-agreement-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

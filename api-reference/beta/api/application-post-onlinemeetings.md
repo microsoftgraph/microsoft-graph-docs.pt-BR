@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 81f7c1ce99d9e1ccafe59e43e14a650c311b62f7
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 13d038a50d01d8314998b7ffef1fb5b8dd780a0a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634631"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961926"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Crie uma reunião online em nome de um usuário usando a ID de objeto (OID) no token de usuário (permissão delegada) ou solicite o caminho (permissão de aplicativo).
 
-> **Observação**: a reunião não é exibida no calendário do usuário.
+> **Observação** : a reunião não é exibida no calendário do usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Solicitar quando usar um token de aplicativo:
 POST /users/{userId}/onlineMeetings
 ```
 
-> **Observação: ** `userId` é a ID de objeto de um usuário no [portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.
+> **Observação:** `userId` é a ID de objeto de um usuário no [portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Veja mais detalhes na [política](/graph/cloud-communication-online-meeting-application-access-policy) de acesso aos aplicativos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-user-token-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-onlinemeeting-user-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -163,7 +167,7 @@ Content-Type: application/json
 ### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Exemplo 2: Crie uma reunião online em um canal do Microsoft Teams com um token de usuário
 
 #### <a name="request"></a>Solicitação
->**Observação:**: a ID de objeto do token do usuário aprovada deve ser um membro do canal representado pelo threadid no conteúdo.
+>**Observação:** : a ID de objeto do token do usuário aprovada deve ser um membro do canal representado pelo threadid no conteúdo.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings

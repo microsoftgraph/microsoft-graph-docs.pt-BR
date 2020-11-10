@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0a3a3d47b1bc8bdb5d791cd66d7c4be572f02ff9
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 6cabaab5c12f8bb9a2b1088b91a936136536fec0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372457"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962009"
 ---
 # <a name="create-call"></a>Criar chamada
 
@@ -108,6 +108,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -265,7 +269,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Exemplo 2: criar uma chamada VoIP ponto a ponto com mídia hospedada no aplicativo
 
-> **Observação**: Este exemplo precisa de Calls.Initiate. Todas as permissões e calls. AccessMedia. All.
+> **Observação** : Este exemplo precisa de Calls.Initiate. Todas as permissões e calls. AccessMedia. All.
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID de aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
@@ -329,6 +333,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-app-hosted-media-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

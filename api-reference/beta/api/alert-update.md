@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 31eeebd865326bb26aa428bf170cdd4bce7780b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1caf9c4bd9f0e117743f615ad991cdeffeb2b702
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997064"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962321"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |   SecurityEvents.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | SecurityEvents.ReadWrite.All |
+|Application | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-alert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

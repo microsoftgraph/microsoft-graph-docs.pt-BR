@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 538c7e8948e8680e9b898aa73eb02ba9ece505be
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 823f2281a528346124cea997bfaeb90a3b4d7bb6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192410"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961937"
 ---
 # <a name="create-extensionproperty"></a>Criar extensionproperty
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça um objeto [extensionproperty](../resources/e
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a Propriedade Extension pode armazenar. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` -256 bytes máximo</li><li>`Boolean`</li><li>`DateTime` -Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` -valor de 32-bit.</li><li>`LargeInteger` -valor de 64-bit.</li><li>`String` -256 caracteres no máximo</li></ul>|
+|dataType|String| Especifica o tipo de dados do valor que a Propriedade Extension pode armazenar. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` -256 bytes máximo</li><li>`Boolean`</li><li>`DateTime` -Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` -valor de 32-bit.</li><li>`LargeInteger` -valor de 64-bit.</li><li>`String` -256 caracteres no máximo</li></ul>|
 |nome|String| Nome da propriedade de extensão. Não anulável. |
 |targetObjects|Coleção de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-extensionproperty-from-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-extensionproperty-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

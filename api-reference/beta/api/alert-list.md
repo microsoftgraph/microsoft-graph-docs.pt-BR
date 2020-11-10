@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 393071be1196c6f235df9628678ab499409eaa0a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed1a68742562cdbb7df252d2167a0e7c33ec85ac
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997099"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962381"
 ---
 # <a name="list-alerts"></a>Listar alertas
 
@@ -50,22 +50,22 @@ Este método suporta os seguintes [parâmetros de consulta OData](/graph/query-p
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` -Retorna os resultados principais agregados de cada provedor de API de segurança.
+- `$top` - Retorna os principais resultados agregados de cada provedor de API de segurança.
 - `$filter`
 
-A tabela a seguir lista as `$filter` palavras-chave de cada nome de fornecedor.
+A tabela a seguir lista as palavras-chave `$filter` para cada nome de fornecedor.
 
-| Nome do fornecedor      |palavra-chave $filter|
+| Anotações do fornecedor      |palavra-chave $filter|
 |:----------|:----------|
 | Proteção Avançada contra Ameaças do Azure | Proteção Avançada contra Ameaças do Azure | 
 | Central de Segurança do Azure | ASC |
 | Microsoft Cloud App Security | MCAS |
-| Proteção de Identidade do Azure Active Directory | CPI |
+| Azure Active Directory Identity Protection | IPC |
 | Azure Sentinel | Azure Sentinel |
-| Proteção avançada contra ameaças do Microsoft Defender | O Microsoft Defender ATP |
+| Proteção Avançada contra Ameaças do Microsoft Defender | Microsoft Defender ATP |
 | Office 365 |  Não há suporte atualmente. |
 
-Para retornar um conjunto de propriedades alternativas, use o parâmetro de consulta OData `$select` para especificar o conjunto de propriedades de **alerta** que você deseja.  Por exemplo, para retornar as propriedades **assignedTo**, **category** e **severity**, adicione o seguinte à sua consulta: `$select=assignedTo,category,severity`.
+Para retornar um conjunto de propriedades alternativas, use o parâmetro de consulta OData `$select` para especificar o conjunto de propriedades de **alerta** que você deseja.  Por exemplo, para retornar as propriedades **assignedTo** , **category** e **severity** , adicione o seguinte à sua consulta: `$select=assignedTo,category,severity`.
 
 > **Observação:** o parâmetro de consulta OData `$top` tem um limite de 1000 alertas. É recomendável incluir apenas o `$top` e não o `$skip` na primeira consulta OBTER. Você pode usar `@odata.nextLink` para paginação. Se você precisar usar o `$skip`, ele tem um limite de 500 alertas. Por exemplo, `/security/alerts?$top=10&$skip=500` retornará um código de resposta `200 OK`, mas `/security/alerts?$top=10&$skip=501` retornará um código de resposta `400 Bad Request`. Para obter mais informações, consulte as [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
@@ -108,6 +108,10 @@ GET https://graph.microsoft.com/beta/security/alerts
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alerts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

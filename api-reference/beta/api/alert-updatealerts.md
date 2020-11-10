@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9db39c6b7e9455e7350910eafd7ebe5ad06a5dd3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 37415ece13d81e7920b5edffd2db4431bf0be938
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997050"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962308"
 ---
 # <a name="alert-updatealerts"></a>alerta: updateAlerts
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |   SecurityEvents.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | SecurityEvents.ReadWrite.All |
+|Application | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. 
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|valor|conjunto [alerta](../resources/alert.md) | Conjunto de alertas a serem atualizados. Cada entidade deve ter **ID**, **vendorInformation**e outras propriedades editáveis a serem atualizadas.|
+|valor|conjunto [alerta](../resources/alert.md) | Conjunto de alertas a serem atualizados. Cada entidade deve ter **ID** , **vendorInformation** e outras propriedades editáveis a serem atualizadas.|
 
 ## <a name="response"></a>Resposta
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/alert-updatealerts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/alert-updatealerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

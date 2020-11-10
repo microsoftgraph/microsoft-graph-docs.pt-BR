@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: aed56060ea992d841f8b9bcd36bd13cba4074361
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 95bd6612edaab7a10c28c4b1d099d9aa80582956
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192413"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961999"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -46,7 +46,7 @@ POST /applications
 | Content-Type   | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md). O corpo da solicitação deve conter **displayName**, que é uma propriedade obrigatória.
+No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md). O corpo da solicitação deve conter **displayName** , que é uma propriedade obrigatória.
 
 ## <a name="response"></a>Resposta
 
@@ -80,6 +80,10 @@ Content-length: 67
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-application-from-applications-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-application-from-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

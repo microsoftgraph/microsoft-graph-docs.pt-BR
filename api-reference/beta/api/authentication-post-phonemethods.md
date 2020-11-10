@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 48133bff3dc0532c2669a608697e1fca1a10d9ca
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 3628e83f3752806f13f3b0c6d3c82ee479790074
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417768"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961411"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Criar phoneAuthenticationMethod
 
@@ -63,7 +63,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [phone
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato "+ \<country code\> \<number\> x \<extension\> ", com a extensão opcional. Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas. Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário.|
-|PhoneType|Cadeia de caracteres|Os valores possíveis são: `mobile` , `alternateMobile` , e `office` .|
+|PhoneType|String|Os valores possíveis são: `mobile` , `alternateMobile` , e `office` .|
 
 ## <a name="response"></a>Resposta
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-phoneauthenticationmethod-from-authentication-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-phoneauthenticationmethod-from-authentication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

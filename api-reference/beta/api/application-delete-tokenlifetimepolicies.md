@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac5ed1f9fa221447d1363a7511019bb7c6bfc95e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 73d4b89f8de917937a957dcc6459fe2971342783
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996959"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962224"
 ---
 # <a name="remove-tokenlifetimepolicy"></a>Remover tokenLifetimePolicy
 
@@ -28,7 +28,7 @@ Um dos seguintes conjuntos de permissões é necessário para chamar esta API. P
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Policy. Read. All e Application. ReadWrite. All, Policy. ReadWrite. ApplicationConfiguration e Application. ReadWrite. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Policy. Read. All e Application. ReadWrite. OwnedBy, Policy. Read. All e Application. ReadWrite. All, Policy. ReadWrite. ApplicationConfiguration e Application. ReadWrite. OwnedBy, Policy. ReadWrite. ApplicationConfiguration e Application. ReadWrite. All |
+| Application                            | Policy. Read. All e Application. ReadWrite. OwnedBy, Policy. Read. All e Application. ReadWrite. All, Policy. ReadWrite. ApplicationConfiguration e Application. ReadWrite. OwnedBy, Policy. ReadWrite. ApplicationConfiguration e Application. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `204 No Content`.
+Quando é bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-tokenlifetimepolicy-from-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-tokenlifetimepolicy-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 164e289bc61dbedc233a9f7270cd6450a53ed9ac
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 5b32f8abb87892dcd1149a7614a921897e1b229c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406240"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961081"
 ---
 # <a name="get-b2xidentityuserflow"></a>Obter b2xIdentityUserFlow
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Application|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-b2xuserflows-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2xuserflows-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

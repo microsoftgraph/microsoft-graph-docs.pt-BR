@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: f096d8004347220a29b36dbac82dfb8104bd90d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d68d2a933aab0ce71d53ffa5b72884ebad896bbb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996637"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961621"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
@@ -90,7 +90,7 @@ DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.<!-- { "blockType": "ignored" } -->
+Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante. <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
@@ -152,6 +152,10 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-attachment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

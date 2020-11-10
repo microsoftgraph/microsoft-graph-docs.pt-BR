@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5b4deb0044f3fa9d36bf63835ebc063c42f60c2a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e5ecedaefe5eaf0cdd355bbdf5547bfae38c683
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988111"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960912"
 ---
 # <a name="update-bookingappointment"></a>Atualizar bookingappointment
 
@@ -49,14 +49,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |Customer|String|O nome do cliente.|
 |customerNotes|String|Observações do cliente associado a este compromisso. Você pode obter o valor somente ao ler este **bookingAppointment** por sua ID. <br> Você pode definir essa propriedade somente quando criar inicialmente um compromisso com um novo cliente. Após esse ponto, o valor é calculado a partir do cliente representado por **CustomerID**.|
 |customerPhone|String|O número de telefone do cliente.|
-|duration|Duração|O comprimento do compromisso, indicado no formato [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
+|duração|Duração|O comprimento do compromisso, indicado no formato [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o compromisso termina.|
 |invoiceAmount|Duplo|O valor cobrado na fatura.|
 |invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário da fatura para este compromisso.|
 |faturaid|String|A ID da fatura.|
 |invoiceStatus|string| O status da fatura. Os possíveis valores são: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|String|A URL da fatura em Microsoft bookings.|
-|optOutOfCustomerEmail|Boolean|True indica que o [bookingCustomer](../resources/bookingcustomer.md) para este compromisso não deseja receber uma confirmação desse compromisso.|
+|optOutOfCustomerEmail|Booliano|True indica que o [bookingCustomer](../resources/bookingcustomer.md) para este compromisso não deseja receber uma confirmação desse compromisso.|
 |Buffer|Duração|A quantidade de tempo para reservar depois que o compromisso termina, para limpeza, como um exemplo. O valor é expresso no formato [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
 |antes do buffer|Duração|A quantidade de tempo para reservar antes de o compromisso começar, para preparação, como um exemplo. O valor é expresso no formato [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 |descontos|Duplo|O preço regular de um compromisso para o [bookingService](../resources/bookingservice.md)especificado.|
@@ -115,6 +115,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingappointment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingappointment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
