@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6b8d13c16fe2c0a70f85e704471a5bcabd55fc99
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3acbc4276e9868dbfd30073edc8c7b1e8374d217
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076812"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980997"
 ---
 # <a name="update-rule"></a>Atualizar regra
 
@@ -48,9 +48,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](../resources/messageruleactions.md) | Ações a serem realizadas em uma mensagem quando as condições correspondentes forem atendidas. |
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. |
-| displayName | Cadeia de caracteres | O nome de exibição da regra. |
+| displayName | String | O nome de exibição da regra. |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | Condições de exceção para a regra. |
-| isEnabled | Boolean | Indica se a regra está habilitada para ser aplicada a mensagens. |
+| isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. |
 | isReadOnly | Boolean | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
 | sequence | Int32 | Indica a ordem em que a regra é executada, entre outras regras. |
 
@@ -87,6 +87,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-messagerule-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-messagerule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

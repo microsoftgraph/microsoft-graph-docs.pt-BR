@@ -5,12 +5,12 @@ author: jasonbro
 localization_priority: Normal
 ms.prod: settings
 doc_type: apiPageType
-ms.openlocfilehash: a78c2f22e6e08ea7dc4709fbf3eaaaa8a5c1d5bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39b7f0afb8f7abd8bf1838465c4f51bb5336862e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050364"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981073"
 ---
 # <a name="get-regionalandlanguagesettings"></a>Obter regionalAndLanguageSettings
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |----------------------------------|---------------------------------------------- |
 |Delegado (conta corporativa ou de estudante)|User. Read, User. Read. All                        |
 |Delegado (conta pessoal)      |User. Read, User. Read. All              |
-|Aplicativo                       |User. Read, User. Read. All              |
+|Application                       |User. Read, User. Read. All              |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-regionalandlanguagesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

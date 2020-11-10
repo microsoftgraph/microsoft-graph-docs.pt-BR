@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7a06f00b1ff024e116ed7d16cf416d23089f615e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 320d55cd049bdd558e8f847e2ac01593cc2f5ca7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035810"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980976"
 ---
 # <a name="printdocument-uploaddata"></a>Documento de documentos: uploadData
 
@@ -22,7 +22,7 @@ Carregar um único segmento binário do **documento**.
 
 É possível carregar o arquivo inteiro ou dividir o arquivo em vários intervalos de bytes, desde que nenhuma solicitação seja maior do que 1 MB.
 
-Os segmentos do arquivo podem ser carregados em qualquer ordem e podem ser carregados em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários do documento são carregados, o arquivo binário é vinculado ao **printJob**.
+É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários do documento são carregados, o arquivo binário é vinculado ao **printJob**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,7 +33,7 @@ Além das permissões a seguir, o locatário do usuário ou do aplicativo deve t
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob. ReadWrite, PrintJob. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Sem suporte. |
+|Application| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,16 +45,16 @@ POST /print/printers/{id}/jobs/{id}/documents/{id}/uploadData
 |:--------------|:--------------|
 | Autorização | {token} de portador. Obrigatório. |
 | Range | bytes = {startByteIndex}-{endByteIndex}  |
-| Content-Length | ContentLength  |
+| Comprimento do Conteúdo | ContentLength  |
 | Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-O corpo da solicitação é um blob binário contendo os bytes do documento que são especificados como um intervalo de bytes inclusivo no `Range` cabeçalho. 
+O corpo da solicitação é um blob binário que contém os bytes do documento que são especificados como um intervalo de bytes inclusivo no cabeçalho `Range`. 
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará uma das seguintes respostas. Não retorna nada no corpo da resposta.
 
-| Condition     | Código da resposta |
+| Condição     | Código da resposta |
 |:--------------|:--------------|
 | Um ou mais segmentos binários ainda precisam ser carregados | `202 Accepted` |
 | Todos os segmentos binários foram carregados com êxito | `201 Created` |
@@ -83,6 +83,10 @@ Content-Length: 72797
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/printdocument-uploaddata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printdocument-uploaddata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
