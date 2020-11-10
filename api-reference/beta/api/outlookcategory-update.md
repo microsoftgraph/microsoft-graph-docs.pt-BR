@@ -1,16 +1,16 @@
 ---
 title: Atualizar a categoria do Outlook
-description: 'Atualize a propriedade gravável, **color**, do objeto outlookCategory especificado. Não é possível modificar a propriedade **DisplayName** '
+description: 'Atualize a propriedade gravável, **color** , do objeto outlookCategory especificado. Não é possível modificar a propriedade **DisplayName** '
 localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba9f78f03f8de24b35ec723058929777356e3405
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ccff867928bfd456af85e48a90e377f3a5ce1adc
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019835"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972838"
 ---
 # <a name="update-outlook-category"></a>Atualizar a categoria do Outlook
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize a propriedade gravável, **color**, do objeto [outlookCategory](../resources/outlookcategory.md) especificado. Não é possível modificar a propriedade **displayName** depois de criar a categoria.
+Atualize a propriedade gravável, **color** , do objeto [outlookCategory](../resources/outlookcategory.md) especificado. Não é possível modificar a propriedade **displayName** depois de criar a categoria.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -79,6 +79,10 @@ Content-length: 30
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlookcategory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-outlookcategory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

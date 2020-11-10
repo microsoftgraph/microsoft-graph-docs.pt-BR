@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4ad1e07d21271096f8be8968cb43be2cbd19ec87
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6df75e05761d47e513272a222e956ee64235bde3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968862"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48973947"
 ---
 # <a name="update-webaccount"></a>Atualizar webaccount
 
@@ -56,7 +56,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|String|Contém a descrição que o usuário forneceu para a conta no serviço que está sendo referenciado.|
 |fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|service|[Informações sobre o](../resources/serviceinformation.md)| Contém detalhes básicos sobre o serviço que está sendo associado. |
+|serviço|[Informações sobre o](../resources/serviceinformation.md)| Contém detalhes básicos sobre o serviço que está sendo associado. |
 |statusMessage|String|Contém uma mensagem de status do serviço de nuvem, se fornecido ou sincronizado. |
 |userId|Cadeia de caracteres|O nome de usuário exibido para a conta da Web.  |
 |webUrl|String|Contém um link para o perfil do usuário no serviço de nuvem, se houver um.|
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-webaccount-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-webaccount-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

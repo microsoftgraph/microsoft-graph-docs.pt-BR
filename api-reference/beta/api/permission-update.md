@@ -6,12 +6,12 @@ title: Alterar permissões de compartilhamento
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 397894f75203d58782a40e20d236b7cc6478eb46
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f24d2966f3b1edfa95cf8d211441abb2926eb9a3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040305"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48973892"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -60,7 +60,7 @@ Para obter um melhor desempenho, não inclua valores existentes que não foram a
 
 | Propriedade     | Tipo   | Descrição                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | Coleção String | Uma matriz de tipos de permissão. |
+| **roles**    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
 
 ## <a name="response"></a>Resposta
 
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

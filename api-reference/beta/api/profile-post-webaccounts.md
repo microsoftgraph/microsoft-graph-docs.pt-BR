@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 23990dd1022985a91953d714eeab5f886b5cca6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 697791bff68443cedd3e094c8ae2d3706ab2b072
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034340"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972645"
 ---
 # <a name="create-webaccount"></a>Criar conta da
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são possíveis de definir quando v
 |allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|String|Contém a descrição que o usuário forneceu para a conta no serviço que está sendo referenciado.|
 |fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|service|[Informações sobre o](../resources/serviceinformation.md)| Contém detalhes básicos sobre o serviço que está sendo associado. |
+|serviço|[Informações sobre o](../resources/serviceinformation.md)| Contém detalhes básicos sobre o serviço que está sendo associado. |
 |source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
 |statusMessage|String|Contém uma mensagem de status do serviço de nuvem, se fornecido ou sincronizado. |
 |userId|Cadeia de caracteres|O nome de usuário exibido para a conta da Web.  |
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-webaccount-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-webaccount-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
