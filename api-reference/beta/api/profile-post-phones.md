@@ -5,32 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 96c6cb2fde26a98700d4f96b228c106662937476
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b9ad4c2321063234765aa4a5705dcf116e0fd9e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034417"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974642"
 ---
-# <a name="create-itemphonenumber"></a><span data-ttu-id="4298d-103">Criar itemPhoneNumber</span><span class="sxs-lookup"><span data-stu-id="4298d-103">Create itemPhoneNumber</span></span>
+# <a name="create-itemphonenumber"></a><span data-ttu-id="c0025-103">Criar itemPhoneNumber</span><span class="sxs-lookup"><span data-stu-id="c0025-103">Create itemPhoneNumber</span></span>
 
-<span data-ttu-id="4298d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4298d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c0025-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c0025-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4298d-105">Use esta API para criar um novo objeto [MyPhone](../resources/itemphone.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="4298d-105">Use this API to create a new [itemPhone](../resources/itemphone.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="c0025-105">Use esta API para criar um novo objeto [MyPhone](../resources/itemphone.md) no [perfil](../resources/profile.md)de um usuário.</span><span class="sxs-lookup"><span data-stu-id="c0025-105">Use this API to create a new [itemPhone](../resources/itemphone.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4298d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4298d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c0025-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c0025-106">Permissions</span></span>
 
-<span data-ttu-id="4298d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4298d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c0025-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c0025-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4298d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4298d-109">Permission type</span></span>                        | <span data-ttu-id="4298d-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4298d-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c0025-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c0025-109">Permission type</span></span>                        | <span data-ttu-id="c0025-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c0025-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="4298d-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4298d-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4298d-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="4298d-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="4298d-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4298d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4298d-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="4298d-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
-| <span data-ttu-id="4298d-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4298d-115">Application</span></span>                            | <span data-ttu-id="4298d-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4298d-116">User.ReadWrite.All</span></span>                          |
+| <span data-ttu-id="c0025-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c0025-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="c0025-112">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="c0025-112">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="c0025-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c0025-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c0025-114">User. ReadWrite, User. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="c0025-114">User.ReadWrite, User.ReadWrite.All</span></span>          |
+| <span data-ttu-id="c0025-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c0025-115">Application</span></span>                            | <span data-ttu-id="c0025-116">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c0025-116">User.ReadWrite.All</span></span>                          |
 
-## <a name="http-request"></a><span data-ttu-id="4298d-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4298d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c0025-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c0025-117">HTTP request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +40,35 @@ POST /me/profile/phones
 POST /users/{userId}/profile/phones
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4298d-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4298d-118">Request headers</span></span>
-|<span data-ttu-id="4298d-119">Nome</span><span class="sxs-lookup"><span data-stu-id="4298d-119">Name</span></span>|<span data-ttu-id="4298d-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="4298d-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c0025-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c0025-118">Request headers</span></span>
+|<span data-ttu-id="c0025-119">Nome</span><span class="sxs-lookup"><span data-stu-id="c0025-119">Name</span></span>|<span data-ttu-id="c0025-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="c0025-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="4298d-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="4298d-121">Authorization</span></span>|<span data-ttu-id="4298d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4298d-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="4298d-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4298d-124">Content-Type</span></span>|<span data-ttu-id="4298d-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4298d-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="c0025-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="c0025-121">Authorization</span></span>|<span data-ttu-id="c0025-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c0025-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="c0025-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c0025-124">Content-Type</span></span>|<span data-ttu-id="c0025-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c0025-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4298d-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4298d-127">Request body</span></span>
-<span data-ttu-id="4298d-128">No corpo da solicitação, forneça uma representação JSON do objeto [MyPhone](../resources/itemphone.md) .</span><span class="sxs-lookup"><span data-stu-id="4298d-128">In the request body, supply a JSON representation of the [itemPhone](../resources/itemphone.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c0025-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c0025-127">Request body</span></span>
+<span data-ttu-id="c0025-128">No corpo da solicitação, forneça uma representação JSON do objeto [MyPhone](../resources/itemphone.md) .</span><span class="sxs-lookup"><span data-stu-id="c0025-128">In the request body, supply a JSON representation of the [itemPhone](../resources/itemphone.md) object.</span></span>
 
-<span data-ttu-id="4298d-129">A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um novo objeto [MyPhone](../resources/itemphone.md) em um perfil de usuário.</span><span class="sxs-lookup"><span data-stu-id="4298d-129">The following table shows the properties that are possible to set when you create a new [itemPhone](../resources/itemphone.md) object in a users profile.</span></span>
+<span data-ttu-id="c0025-129">A tabela a seguir mostra as propriedades que são possíveis de definir quando você cria um novo objeto [MyPhone](../resources/itemphone.md) em um perfil de usuário.</span><span class="sxs-lookup"><span data-stu-id="c0025-129">The following table shows the properties that are possible to set when you create a new [itemPhone](../resources/itemphone.md) object in a users profile.</span></span>
 
-|<span data-ttu-id="4298d-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4298d-130">Property</span></span>|<span data-ttu-id="4298d-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="4298d-131">Type</span></span>|<span data-ttu-id="4298d-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="4298d-132">Description</span></span>|
+|<span data-ttu-id="c0025-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c0025-130">Property</span></span>|<span data-ttu-id="c0025-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="c0025-131">Type</span></span>|<span data-ttu-id="c0025-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="c0025-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4298d-133">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="4298d-133">allowedAudiences</span></span>|<span data-ttu-id="4298d-134">String</span><span class="sxs-lookup"><span data-stu-id="4298d-134">String</span></span>|<span data-ttu-id="4298d-135">As audiências que podem ver os valores contidos na entidade.</span><span class="sxs-lookup"><span data-stu-id="4298d-135">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="4298d-136">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="4298d-136">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="4298d-137">Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="4298d-137">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="4298d-138">displayName</span><span class="sxs-lookup"><span data-stu-id="4298d-138">displayName</span></span>|<span data-ttu-id="4298d-139">String</span><span class="sxs-lookup"><span data-stu-id="4298d-139">String</span></span>|<span data-ttu-id="4298d-140">Nome amigável o usuário atribuiu este número de telefone.</span><span class="sxs-lookup"><span data-stu-id="4298d-140">Friendly name the user has assigned this phone number.</span></span> |
-|<span data-ttu-id="4298d-141">fracassa</span><span class="sxs-lookup"><span data-stu-id="4298d-141">inference</span></span>|[<span data-ttu-id="4298d-142">inferenceData</span><span class="sxs-lookup"><span data-stu-id="4298d-142">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="4298d-143">Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação.</span><span class="sxs-lookup"><span data-stu-id="4298d-143">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="4298d-144">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="4298d-144">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="4298d-145">number</span><span class="sxs-lookup"><span data-stu-id="4298d-145">number</span></span>|<span data-ttu-id="4298d-146">String</span><span class="sxs-lookup"><span data-stu-id="4298d-146">String</span></span>|<span data-ttu-id="4298d-147">Número de telefone fornecido pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="4298d-147">Phone number provided by the user.</span></span>|
-|<span data-ttu-id="4298d-148">source</span><span class="sxs-lookup"><span data-stu-id="4298d-148">source</span></span>|[<span data-ttu-id="4298d-149">personDataSource</span><span class="sxs-lookup"><span data-stu-id="4298d-149">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="4298d-150">Onde os valores são originados se forem sincronizados a partir de outro serviço.</span><span class="sxs-lookup"><span data-stu-id="4298d-150">Where the values originated if synced from another service.</span></span> <span data-ttu-id="4298d-151">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="4298d-151">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
-|<span data-ttu-id="4298d-152">tipo</span><span class="sxs-lookup"><span data-stu-id="4298d-152">type</span></span>|<span data-ttu-id="4298d-153">PhoneType</span><span class="sxs-lookup"><span data-stu-id="4298d-153">phoneType</span></span>|<span data-ttu-id="4298d-154">O tipo de número de telefone dentro do objeto.</span><span class="sxs-lookup"><span data-stu-id="4298d-154">The type of phone number within the object.</span></span> <span data-ttu-id="4298d-155">Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="4298d-155">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
+|<span data-ttu-id="c0025-133">allowedAudiences</span><span class="sxs-lookup"><span data-stu-id="c0025-133">allowedAudiences</span></span>|<span data-ttu-id="c0025-134">String</span><span class="sxs-lookup"><span data-stu-id="c0025-134">String</span></span>|<span data-ttu-id="c0025-135">As audiências que podem ver os valores contidos na entidade.</span><span class="sxs-lookup"><span data-stu-id="c0025-135">The audiences that are able to see the values contained within the entity.</span></span> <span data-ttu-id="c0025-136">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="c0025-136">Inherited from [itemFacet](../resources/itemfacet.md).</span></span> <span data-ttu-id="c0025-137">Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="c0025-137">Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="c0025-138">displayName</span><span class="sxs-lookup"><span data-stu-id="c0025-138">displayName</span></span>|<span data-ttu-id="c0025-139">String</span><span class="sxs-lookup"><span data-stu-id="c0025-139">String</span></span>|<span data-ttu-id="c0025-140">Nome amigável o usuário atribuiu este número de telefone.</span><span class="sxs-lookup"><span data-stu-id="c0025-140">Friendly name the user has assigned this phone number.</span></span> |
+|<span data-ttu-id="c0025-141">fracassa</span><span class="sxs-lookup"><span data-stu-id="c0025-141">inference</span></span>|[<span data-ttu-id="c0025-142">inferenceData</span><span class="sxs-lookup"><span data-stu-id="c0025-142">inferenceData</span></span>](../resources/inferencedata.md)|<span data-ttu-id="c0025-143">Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação.</span><span class="sxs-lookup"><span data-stu-id="c0025-143">Contains inference detail if the entity is inferred by the creating or modifying application.</span></span> <span data-ttu-id="c0025-144">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="c0025-144">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="c0025-145">number</span><span class="sxs-lookup"><span data-stu-id="c0025-145">number</span></span>|<span data-ttu-id="c0025-146">String</span><span class="sxs-lookup"><span data-stu-id="c0025-146">String</span></span>|<span data-ttu-id="c0025-147">Número de telefone fornecido pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="c0025-147">Phone number provided by the user.</span></span>|
+|<span data-ttu-id="c0025-148">source</span><span class="sxs-lookup"><span data-stu-id="c0025-148">source</span></span>|[<span data-ttu-id="c0025-149">personDataSource</span><span class="sxs-lookup"><span data-stu-id="c0025-149">personDataSource</span></span>](../resources/persondatasource.md)|<span data-ttu-id="c0025-150">Onde os valores são originados se forem sincronizados a partir de outro serviço.</span><span class="sxs-lookup"><span data-stu-id="c0025-150">Where the values originated if synced from another service.</span></span> <span data-ttu-id="c0025-151">Herdado de [MyFace](../resources/itemfacet.md).</span><span class="sxs-lookup"><span data-stu-id="c0025-151">Inherited from [itemFacet](../resources/itemfacet.md).</span></span>|
+|<span data-ttu-id="c0025-152">tipo</span><span class="sxs-lookup"><span data-stu-id="c0025-152">type</span></span>|<span data-ttu-id="c0025-153">PhoneType</span><span class="sxs-lookup"><span data-stu-id="c0025-153">phoneType</span></span>|<span data-ttu-id="c0025-154">O tipo de número de telefone dentro do objeto.</span><span class="sxs-lookup"><span data-stu-id="c0025-154">The type of phone number within the object.</span></span> <span data-ttu-id="c0025-155">Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span><span class="sxs-lookup"><span data-stu-id="c0025-155">Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4298d-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="4298d-156">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c0025-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0025-156">Response</span></span>
 
-<span data-ttu-id="4298d-157">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [MyPhone](../resources/itemphone.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4298d-157">If successful, this method returns a `201 Created` response code and an [itemPhone](../resources/itemphone.md) object in the response body.</span></span>
+<span data-ttu-id="c0025-157">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [MyPhone](../resources/itemphone.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c0025-157">If successful, this method returns a `201 Created` response code and an [itemPhone](../resources/itemphone.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4298d-158">Exemplos</span><span class="sxs-lookup"><span data-stu-id="4298d-158">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c0025-158">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c0025-158">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="4298d-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4298d-159">Request</span></span>
+### <a name="request"></a><span data-ttu-id="c0025-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c0025-159">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="4298d-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="4298d-160">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c0025-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="c0025-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_itemphone_from_"
@@ -84,24 +84,28 @@ Content-length: 382
   "number": "+7 499 342 22 13"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4298d-161">C#</span><span class="sxs-lookup"><span data-stu-id="4298d-161">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c0025-161">C#</span><span class="sxs-lookup"><span data-stu-id="c0025-161">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-itemphone-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4298d-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4298d-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c0025-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c0025-162">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-itemphone-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4298d-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4298d-163">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c0025-163">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c0025-163">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-itemphone-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="c0025-164">Java</span><span class="sxs-lookup"><span data-stu-id="c0025-164">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-itemphone-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 
-### <a name="response"></a><span data-ttu-id="4298d-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="4298d-164">Response</span></span>
-<span data-ttu-id="4298d-165">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="4298d-165">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="c0025-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0025-165">Response</span></span>
+<span data-ttu-id="c0025-166">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c0025-166">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
