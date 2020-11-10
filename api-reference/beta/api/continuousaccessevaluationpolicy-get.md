@@ -5,56 +5,56 @@ author: jerrysai
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 18586b796bb742b152c5fe468973ceb75d261cca
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: ba9d161e6c11863f20ab221e5e67ea6a5b7676c7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223223"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956947"
 ---
-# <a name="get-continuousaccessevaluationpolicy"></a><span data-ttu-id="14615-103">Obter continuousAccessEvaluationPolicy</span><span class="sxs-lookup"><span data-stu-id="14615-103">Get continuousAccessEvaluationPolicy</span></span>
-<span data-ttu-id="14615-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="14615-104">Namespace: microsoft.graph</span></span>
+# <a name="get-continuousaccessevaluationpolicy"></a><span data-ttu-id="cdd6a-103">Obter continuousAccessEvaluationPolicy</span><span class="sxs-lookup"><span data-stu-id="cdd6a-103">Get continuousAccessEvaluationPolicy</span></span>
+<span data-ttu-id="cdd6a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cdd6a-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="14615-105">Leia as propriedades e os relacionamentos de um objeto [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="14615-105">Read the properties and relationships of a [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) object.</span></span>
+<span data-ttu-id="cdd6a-105">Leia as propriedades e os relacionamentos de um objeto [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="cdd6a-105">Read the properties and relationships of a [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="14615-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="14615-106">Permissions</span></span>
-<span data-ttu-id="14615-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14615-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cdd6a-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="cdd6a-106">Permissions</span></span>
+<span data-ttu-id="cdd6a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cdd6a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="14615-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="14615-109">Permission type</span></span>|<span data-ttu-id="14615-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="14615-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cdd6a-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cdd6a-109">Permission type</span></span>|<span data-ttu-id="cdd6a-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="cdd6a-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="14615-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="14615-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="14615-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="14615-112">Policy.Read.All</span></span> |
-|<span data-ttu-id="14615-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="14615-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14615-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="14615-114">Not supported.</span></span> |
-|<span data-ttu-id="14615-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="14615-115">Application</span></span>                            | <span data-ttu-id="14615-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="14615-116">Policy.Read.All</span></span> |
+|<span data-ttu-id="cdd6a-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cdd6a-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="cdd6a-112">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="cdd6a-112">Policy.Read.All</span></span> |
+|<span data-ttu-id="cdd6a-113">Delegada (conta Microsoft pessoal)</span><span class="sxs-lookup"><span data-stu-id="cdd6a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cdd6a-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cdd6a-114">Not supported.</span></span> |
+|<span data-ttu-id="cdd6a-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cdd6a-115">Application</span></span>                            | <span data-ttu-id="cdd6a-116">Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="cdd6a-116">Policy.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="14615-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="14615-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cdd6a-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cdd6a-117">HTTP request</span></span>
 
 <!-- {  "blockType": "ignored"} -->
 ``` http
 GET /identity/continuousAccessEvaluationPolicy
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="14615-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="14615-118">Optional query parameters</span></span>
-<span data-ttu-id="14615-119">Este método dá suporte ao parâmetro de consulta OData ' $select ' para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="14615-119">This method supports the '$select' OData query parameter to help customize the response.</span></span> <span data-ttu-id="14615-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="14615-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cdd6a-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cdd6a-118">Optional query parameters</span></span>
+<span data-ttu-id="cdd6a-119">Este método dá suporte ao parâmetro de consulta OData ' $select ' para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="cdd6a-119">This method supports the '$select' OData query parameter to help customize the response.</span></span> <span data-ttu-id="cdd6a-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="cdd6a-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="14615-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="14615-121">Request headers</span></span>
-|<span data-ttu-id="14615-122">Nome</span><span class="sxs-lookup"><span data-stu-id="14615-122">Name</span></span>|<span data-ttu-id="14615-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="14615-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cdd6a-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cdd6a-121">Request headers</span></span>
+|<span data-ttu-id="cdd6a-122">Nome</span><span class="sxs-lookup"><span data-stu-id="cdd6a-122">Name</span></span>|<span data-ttu-id="cdd6a-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="cdd6a-123">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="14615-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="14615-124">Authorization</span></span>|<span data-ttu-id="14615-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="14615-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="cdd6a-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="cdd6a-124">Authorization</span></span>|<span data-ttu-id="cdd6a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cdd6a-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="14615-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="14615-127">Request body</span></span>
-<span data-ttu-id="14615-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="14615-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cdd6a-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cdd6a-127">Request body</span></span>
+<span data-ttu-id="cdd6a-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cdd6a-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="14615-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="14615-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cdd6a-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="cdd6a-129">Response</span></span>
 
-<span data-ttu-id="14615-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="14615-130">If successful, this method returns a `200 OK` response code and a [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) object in the response body.</span></span>
+<span data-ttu-id="cdd6a-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cdd6a-130">If successful, this method returns a `200 OK` response code and a [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="14615-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="14615-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cdd6a-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="cdd6a-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="14615-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="14615-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="cdd6a-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cdd6a-132">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="14615-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="14615-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cdd6a-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="cdd6a-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_continuousaccessevaluationpolicy"
@@ -63,25 +63,29 @@ GET /identity/continuousAccessEvaluationPolicy
 ``` http
 GET https://graph.microsoft.com/beta/identity/continuousAccessEvaluationPolicy
 ```
-# <a name="c"></a>[<span data-ttu-id="14615-134">C#</span><span class="sxs-lookup"><span data-stu-id="14615-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cdd6a-134">C#</span><span class="sxs-lookup"><span data-stu-id="cdd6a-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-continuousaccessevaluationpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="14615-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="14615-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cdd6a-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cdd6a-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-continuousaccessevaluationpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="14615-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="14615-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cdd6a-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cdd6a-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-continuousaccessevaluationpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="cdd6a-137">Java</span><span class="sxs-lookup"><span data-stu-id="cdd6a-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-continuousaccessevaluationpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 
-### <a name="response"></a><span data-ttu-id="14615-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="14615-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="cdd6a-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="cdd6a-138">Response</span></span>
 
-<span data-ttu-id="14615-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="14615-138">The following is an example of the response.</span></span>
+<span data-ttu-id="cdd6a-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="cdd6a-139">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
