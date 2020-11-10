@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38d10be1ab316b373b88d0c504998563d67e0792
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3225fd6249cad572d29f3f11175369d183b40dd0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053458"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978785"
 ---
 # <a name="update-outlooktask-deprecated"></a>Atualizar outlooktask (preterido)
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 
 Alterar as propriedades graváveis de uma tarefa do Outlook.
 
-A propriedade **completedDateTime** pode ser definida pela ação **Complete** ou explicitamente por uma operação patch. Se você usar PATCH para definir **completedDateTime**, certifique-se de definir o **status** `completed` também.
+A propriedade **completedDateTime** pode ser definida pela ação **Complete** ou explicitamente por uma operação patch. Se você usar PATCH para definir **completedDateTime** , certifique-se de definir o **status** `completed` também.
 
 Por padrão, essa operação (e as operações de tarefa POST, GET e [Complete](../api/outlooktask-complete.md) ) retorna as propriedades relacionadas à data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
@@ -66,7 +66,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |hasAttachments|Booliano|Defina como verdadeiro se a tarefa tiver anexos.|
-|importance|cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |proprietário|Cadeia de caracteres|O nome da pessoa que criou a tarefa.|
@@ -117,6 +117,10 @@ Content-length: 76
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlooktask-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-outlooktask-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

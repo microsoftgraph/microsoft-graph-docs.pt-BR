@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3851b34cf9e22b9e15501ce7ef3f9677ad7c5f64
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5786bb1c43e13c11d361ddb64705f76a1e8ebbc8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027759"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979220"
 ---
 # <a name="create-rule"></a>Criar regra
 
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os parâmetros que são aplicáveis à sua r
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. Opcional.|
 |displayName| String  | O nome de exibição da regra. Obrigatório.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Representa condições de exceção para a regra. Opcional. |
-|isEnabled | Boolean | Indica se a regra está habilitada para ser aplicada a mensagens. Opcional. |
+|isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. Opcional. |
 |sequence| Int32 | Indica a ordem em que a regra é executada, entre outras regras. Obrigatório.|
 
 ## <a name="response"></a>Resposta
@@ -105,6 +105,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-messagerule-from-mailfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-messagerule-from-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 30674a3637dcb97f583d0462020f850f0d242b17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49241c6374cad314197c9f9ad433d6a6c2aa966c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058680"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978801"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -30,12 +30,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 > [!NOTE]
-> Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada ou o proprietário do (aplicativo com o) `appId` usado para definir a propriedade **Owner** .
+> Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada OU o proprietário do (aplicativo com a)`appId` usada para definir a propriedade **proprietário**.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -68,11 +68,11 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-creating-a-schema-extension-using-a-verified-domain"></a>Exemplo 1: criar uma extensão de esquema usando um domínio verificado
+### <a name="example-1-creating-a-schema-extension-using-a-verified-domain"></a>Exemplo 1: Criar uma extensão de esquema usando um domínio verificado
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo mostra o uso de um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses` , para formar uma cadeia de caracteres exclusiva para a propriedade **ID** da definição de extensão do esquema. A cadeia de caracteres exclusiva é baseada nesse formato, \{ _&#65279;DomainName_ \} \_ \{ _&#65279;SchemaName_ \} .
+Este exemplo mostra como usar um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses`, para formar uma cadeia de caracteres exclusiva para a propriedade **id** da definição da extensão de esquema. A cadeia de caracteres exclusiva é baseada neste formato,\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [schemaExtension](../resources/schemaextension.md).
 
@@ -119,6 +119,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -160,11 +164,11 @@ Content-length: 420
 }
 ```
 
-### <a name="example-2-creating-a-schema-extension-using-just-a-name"></a>Exemplo 2: criar uma extensão de esquema usando apenas um nome
+### <a name="example-2-creating-a-schema-extension-using-just-a-name"></a>Exemplo 2: Criar uma extensão de esquema usando apenas um nome
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo mostra como especificar apenas um nome de esquema, `courses` na propriedade **ID** da solicitação, junto com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md) . O Microsoft Graph atribuirá e retornará um valor de cadeia de caracteres exclusivo na resposta.
+Este exemplo mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** da solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor de cadeia de caracteres exclusivo na resposta.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -210,6 +214,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -251,11 +259,11 @@ Content-length: 420
 }
 ```
 
-### <a name="example-3-creating-a-schema-extension-setting-the-owner"></a>Exemplo 3: criar uma configuração de extensão de esquema do proprietário
+### <a name="example-3-creating-a-schema-extension-setting-the-owner"></a>Exemplo 3: Criação de uma extensão de esquema definindo o proprietário
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo mostra como criar uma configuração de extensão de esquema para o **proprietário**.  Neste cenário, o usuário do aplicativo pode não ser o proprietário do aplicativo (por exemplo, se você estiver usando o Microsoft Graph Explorer).  Nesse caso, você deve definir a propriedade **Owner** para a **AppID** de um aplicativo que possui, caso contrário, não será autorizado a criar uma extensão de esquema. Defina a propriedade **Owner** na solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md) .
+Este exemplo mostra como criar uma extensão de esquema configurando o **proprietário**.  Neste cenário, o usuário do aplicativo pode não ser o proprietário do aplicativo (por exemplo, se você estiver usando o Microsoft Graph Explorer).  Neste caso, você deve definir a propriedade do **proprietário** como a **appId** de um aplicativo que você possui, caso contrário, você não terá autorização para criar uma extensão de esquema. Defina a propriedade **proprietário** na solicitação, juntamente com a representação JSON do restante das propriedades no objeto [schemaExtension](../resources/schemaextension.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -303,12 +311,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Resposta
 
-A resposta inclui o **proprietário** definido com o valor fornecido na solicitação. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui o **proprietário** definido como o valor fornecido na solicitação. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
