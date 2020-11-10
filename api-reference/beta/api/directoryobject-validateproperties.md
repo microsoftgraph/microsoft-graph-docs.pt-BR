@@ -5,16 +5,16 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c773841c9a1843e025c19cd1d94098508f9537e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbfac68a2e2cdec800b1ff95536dacc8b4ea711b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008792"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962949"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryobject: ValidateProperties
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 Valide se o nome de exibição ou apelido de email de um grupo da Microsoft 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar essa API para determinar se um nome de exibição ou apelido de email é válido antes de tentar **criar** um grupo do Microsoft 365. Para validar as propriedades de um grupo existente, use a [função ValidateProperties](group-validateproperties.md) para grupos.
 
@@ -98,6 +98,10 @@ Content-length: 164
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-validateproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
