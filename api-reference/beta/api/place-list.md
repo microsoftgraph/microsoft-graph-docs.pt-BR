@@ -5,101 +5,101 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38af98443e34ec64cdaa70316966451c4a58eb16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f12d6cf2e05b8ea85459e41746b9fd4f1cba30c0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966913"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971766"
 ---
-# <a name="list-places"></a><span data-ttu-id="af420-103">Locais de lista</span><span class="sxs-lookup"><span data-stu-id="af420-103">List places</span></span>
+# <a name="list-places"></a><span data-ttu-id="d2387-103">Locais de lista</span><span class="sxs-lookup"><span data-stu-id="d2387-103">List places</span></span>
 
-<span data-ttu-id="af420-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="af420-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d2387-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d2387-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="af420-105">Obtém uma coleção do tipo especificado de objetos [Place](../resources/place.md) definidos no locatário.</span><span class="sxs-lookup"><span data-stu-id="af420-105">Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant.</span></span> <span data-ttu-id="af420-106">Por exemplo, você pode obter todas as salas, todas as listas de salas ou as salas em uma lista de salas específica no locatário.</span><span class="sxs-lookup"><span data-stu-id="af420-106">For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.</span></span>
+<span data-ttu-id="d2387-105">Obtém uma coleção do tipo especificado de objetos [Place](../resources/place.md) definidos no locatário.</span><span class="sxs-lookup"><span data-stu-id="d2387-105">Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant.</span></span> <span data-ttu-id="d2387-106">Por exemplo, você pode obter todas as salas, todas as listas de salas ou as salas em uma lista de salas específica no locatário.</span><span class="sxs-lookup"><span data-stu-id="d2387-106">For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.</span></span>
 
-<span data-ttu-id="af420-107">Um objeto **local** pode ser um dos seguintes tipos:</span><span class="sxs-lookup"><span data-stu-id="af420-107">A **place** object can be one of the following types:</span></span>
+<span data-ttu-id="d2387-107">Um objeto **local** pode ser um dos seguintes tipos:</span><span class="sxs-lookup"><span data-stu-id="d2387-107">A **place** object can be one of the following types:</span></span>
 
-* <span data-ttu-id="af420-108">Uma [sala](../resources/room.md) que inclui Propriedades sofisticadas, como um endereço de email para a sala, e suporte à acessibilidade, capacidade e dispositivo.</span><span class="sxs-lookup"><span data-stu-id="af420-108">A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.</span></span> 
-* <span data-ttu-id="af420-109">Uma [lista de salas](../resources/roomlist.md) que inclui um endereço de email para a lista de salas e uma propriedade de navegação para obter a coleção de instâncias de sala na lista de salas.</span><span class="sxs-lookup"><span data-stu-id="af420-109">A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list.</span></span> 
+* <span data-ttu-id="d2387-108">Uma [sala](../resources/room.md) que inclui Propriedades sofisticadas, como um endereço de email para a sala, e suporte à acessibilidade, capacidade e dispositivo.</span><span class="sxs-lookup"><span data-stu-id="d2387-108">A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.</span></span> 
+* <span data-ttu-id="d2387-109">Uma [lista de salas](../resources/roomlist.md) que inclui um endereço de email para a lista de salas e uma propriedade de navegação para obter a coleção de instâncias de sala na lista de salas.</span><span class="sxs-lookup"><span data-stu-id="d2387-109">A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list.</span></span> 
 
-<span data-ttu-id="af420-110">A **sala** e a **salalist** são derivadas do objeto **local** .</span><span class="sxs-lookup"><span data-stu-id="af420-110">Both **room** and **roomList** are derived from the **place** object.</span></span>
+<span data-ttu-id="d2387-110">A **sala** e a **salalist** são derivadas do objeto **local** .</span><span class="sxs-lookup"><span data-stu-id="d2387-110">Both **room** and **roomList** are derived from the **place** object.</span></span>
 
-<span data-ttu-id="af420-111">Por padrão, essa operação retorna 100 locais por página.</span><span class="sxs-lookup"><span data-stu-id="af420-111">By default, this operation returns 100 places per page.</span></span> 
+<span data-ttu-id="d2387-111">Por padrão, essa operação retorna 100 locais por página.</span><span class="sxs-lookup"><span data-stu-id="d2387-111">By default, this operation returns 100 places per page.</span></span> 
 
-<span data-ttu-id="af420-112">Em comparação com as funções [findRooms](../api/user-findrooms.md) e [findRoomLists](../api/user-findroomlists.md) , essa operação retorna uma carga mais rica para salas e listas de salas.</span><span class="sxs-lookup"><span data-stu-id="af420-112">Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists.</span></span> <span data-ttu-id="af420-113">Veja [detalhes](../resources/place.md#using-the-places-api) sobre como eles se comparam.</span><span class="sxs-lookup"><span data-stu-id="af420-113">See [details](../resources/place.md#using-the-places-api) for how they compare.</span></span>
+<span data-ttu-id="d2387-112">Em comparação com as funções [findRooms](../api/user-findrooms.md) e [findRoomLists](../api/user-findroomlists.md) , essa operação retorna uma carga mais rica para salas e listas de salas.</span><span class="sxs-lookup"><span data-stu-id="d2387-112">Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists.</span></span> <span data-ttu-id="d2387-113">Veja [detalhes](../resources/place.md#using-the-places-api) sobre como eles se comparam.</span><span class="sxs-lookup"><span data-stu-id="d2387-113">See [details](../resources/place.md#using-the-places-api) for how they compare.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="af420-114">Permissões</span><span class="sxs-lookup"><span data-stu-id="af420-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d2387-114">Permissões</span><span class="sxs-lookup"><span data-stu-id="d2387-114">Permissions</span></span>
 
-<span data-ttu-id="af420-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="af420-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d2387-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d2387-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="af420-117">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="af420-117">Permission type</span></span>                        | <span data-ttu-id="af420-118">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="af420-118">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d2387-117">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d2387-117">Permission type</span></span>                        | <span data-ttu-id="d2387-118">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d2387-118">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="af420-119">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="af420-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="af420-120">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="af420-120">Place.Read.All</span></span> |
-| <span data-ttu-id="af420-121">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="af420-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="af420-122">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="af420-122">Not supported</span></span> |
-| <span data-ttu-id="af420-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="af420-123">Application</span></span>                            | <span data-ttu-id="af420-124">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="af420-124">Place.Read.All</span></span> |
+| <span data-ttu-id="d2387-119">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d2387-119">Delegated (work or school account)</span></span>     | <span data-ttu-id="d2387-120">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2387-120">Place.Read.All</span></span> |
+| <span data-ttu-id="d2387-121">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d2387-121">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2387-122">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="d2387-122">Not supported</span></span> |
+| <span data-ttu-id="d2387-123">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d2387-123">Application</span></span>                            | <span data-ttu-id="d2387-124">Place.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2387-124">Place.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="af420-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="af420-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d2387-125">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d2387-125">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="af420-126">Para obter todas as salas em um locatário:</span><span class="sxs-lookup"><span data-stu-id="af420-126">To get all the rooms in a tenant:</span></span>
+<span data-ttu-id="d2387-126">Para obter todas as salas em um locatário:</span><span class="sxs-lookup"><span data-stu-id="d2387-126">To get all the rooms in a tenant:</span></span>
 
 ```http
 GET /places/microsoft.graph.room
 ```
 
-<span data-ttu-id="af420-127">Para obter todas as listas de salas em um locatário:</span><span class="sxs-lookup"><span data-stu-id="af420-127">To get all the room lists in a tenant:</span></span>
+<span data-ttu-id="d2387-127">Para obter todas as listas de salas em um locatário:</span><span class="sxs-lookup"><span data-stu-id="d2387-127">To get all the room lists in a tenant:</span></span>
 
 ```http
 GET /places/microsoft.graph.roomlist
 ```
 
-<span data-ttu-id="af420-128">Para obter todas as salas na lista de salas especificada:</span><span class="sxs-lookup"><span data-stu-id="af420-128">To get all the rooms in the specified room list:</span></span>
+<span data-ttu-id="d2387-128">Para obter todas as salas na lista de salas especificada:</span><span class="sxs-lookup"><span data-stu-id="d2387-128">To get all the rooms in the specified room list:</span></span>
 
 ```http
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
-><span data-ttu-id="af420-129">**Observação**: para obter salas em uma lista de salas, você deve especificar a lista de salas por sua propriedade **EmailAddress** , não pela **ID**.</span><span class="sxs-lookup"><span data-stu-id="af420-129">**Note**: To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**.</span></span> 
+><span data-ttu-id="d2387-129">**Observação** : para obter salas em uma lista de salas, você deve especificar a lista de salas por sua propriedade **EmailAddress** , não pela **ID**.</span><span class="sxs-lookup"><span data-stu-id="d2387-129">**Note** : To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**.</span></span> 
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="af420-130">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="af420-130">Optional query parameters</span></span>
-<span data-ttu-id="af420-131">Este método dá suporte aos seguintes parâmetros de consulta para ajudar a personalizar a resposta:</span><span class="sxs-lookup"><span data-stu-id="af420-131">This method supports the following query parameters to help customize the response:</span></span>
-- <span data-ttu-id="af420-132">$filter</span><span class="sxs-lookup"><span data-stu-id="af420-132">$filter</span></span>
-- <span data-ttu-id="af420-133">$select</span><span class="sxs-lookup"><span data-stu-id="af420-133">$select</span></span>
-- <span data-ttu-id="af420-134">$top</span><span class="sxs-lookup"><span data-stu-id="af420-134">$top</span></span>
-- <span data-ttu-id="af420-135">$skip</span><span class="sxs-lookup"><span data-stu-id="af420-135">$skip</span></span>
-- <span data-ttu-id="af420-136">$count = true</span><span class="sxs-lookup"><span data-stu-id="af420-136">$count=true</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d2387-130">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d2387-130">Optional query parameters</span></span>
+<span data-ttu-id="d2387-131">Este método dá suporte aos seguintes parâmetros de consulta para ajudar a personalizar a resposta:</span><span class="sxs-lookup"><span data-stu-id="d2387-131">This method supports the following query parameters to help customize the response:</span></span>
+- <span data-ttu-id="d2387-132">$filter</span><span class="sxs-lookup"><span data-stu-id="d2387-132">$filter</span></span>
+- <span data-ttu-id="d2387-133">$select</span><span class="sxs-lookup"><span data-stu-id="d2387-133">$select</span></span>
+- <span data-ttu-id="d2387-134">$top</span><span class="sxs-lookup"><span data-stu-id="d2387-134">$top</span></span>
+- <span data-ttu-id="d2387-135">$skip</span><span class="sxs-lookup"><span data-stu-id="d2387-135">$skip</span></span>
+- <span data-ttu-id="d2387-136">$count = true</span><span class="sxs-lookup"><span data-stu-id="d2387-136">$count=true</span></span>
 
-<span data-ttu-id="af420-137">Use $top para personalizar o tamanho da página.</span><span class="sxs-lookup"><span data-stu-id="af420-137">Use $top to customize the page size.</span></span> <span data-ttu-id="af420-138">O tamanho de página padrão é 100.</span><span class="sxs-lookup"><span data-stu-id="af420-138">The default page size is 100.</span></span>
+<span data-ttu-id="d2387-137">Use $top para personalizar o tamanho da página.</span><span class="sxs-lookup"><span data-stu-id="d2387-137">Use $top to customize the page size.</span></span> <span data-ttu-id="d2387-138">O tamanho de página padrão é 100.</span><span class="sxs-lookup"><span data-stu-id="d2387-138">The default page size is 100.</span></span>
 
-<span data-ttu-id="af420-139">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="af420-139">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="d2387-139">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="d2387-139">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="af420-140">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="af420-140">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d2387-140">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d2387-140">Request headers</span></span>
 
-| <span data-ttu-id="af420-141">Nome</span><span class="sxs-lookup"><span data-stu-id="af420-141">Name</span></span>          | <span data-ttu-id="af420-142">Descrição</span><span class="sxs-lookup"><span data-stu-id="af420-142">Description</span></span>               |
+| <span data-ttu-id="d2387-141">Nome</span><span class="sxs-lookup"><span data-stu-id="d2387-141">Name</span></span>          | <span data-ttu-id="d2387-142">Descrição</span><span class="sxs-lookup"><span data-stu-id="d2387-142">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="af420-143">Autorização</span><span class="sxs-lookup"><span data-stu-id="af420-143">Authorization</span></span> | <span data-ttu-id="af420-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="af420-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d2387-143">Autorização</span><span class="sxs-lookup"><span data-stu-id="d2387-143">Authorization</span></span> | <span data-ttu-id="d2387-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d2387-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="af420-146">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="af420-146">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d2387-146">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d2387-146">Request body</span></span>
 
-<span data-ttu-id="af420-147">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="af420-147">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d2387-147">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d2387-147">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="af420-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="af420-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d2387-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2387-148">Response</span></span>
 
-<span data-ttu-id="af420-149">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [colocar](../resources/place.md) objetos no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="af420-149">If successful, this method returns a `200 OK` response code and a collection of [place](../resources/place.md) objects in the response body.</span></span>
+<span data-ttu-id="d2387-149">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [colocar](../resources/place.md) objetos no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d2387-149">If successful, this method returns a `200 OK` response code and a collection of [place](../resources/place.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="af420-150">Exemplos</span><span class="sxs-lookup"><span data-stu-id="af420-150">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d2387-150">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d2387-150">Examples</span></span>
 
-### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a><span data-ttu-id="af420-151">Exemplo 1: listar todas as salas definidas no locatário</span><span class="sxs-lookup"><span data-stu-id="af420-151">Example 1: List all the rooms defined in the tenant</span></span>
+### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a><span data-ttu-id="d2387-151">Exemplo 1: listar todas as salas definidas no locatário</span><span class="sxs-lookup"><span data-stu-id="d2387-151">Example 1: List all the rooms defined in the tenant</span></span>
 
-#### <a name="request"></a><span data-ttu-id="af420-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="af420-152">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d2387-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d2387-152">Request</span></span>
 
-<span data-ttu-id="af420-153">O exemplo a seguir mostra como obter todos os objetos de [sala](../resources/room.md) no locatário.</span><span class="sxs-lookup"><span data-stu-id="af420-153">The following example shows how to get all the [room](../resources/room.md) objects in the tenant.</span></span>
+<span data-ttu-id="d2387-153">O exemplo a seguir mostra como obter todos os objetos de [sala](../resources/room.md) no locatário.</span><span class="sxs-lookup"><span data-stu-id="d2387-153">The following example shows how to get all the [room](../resources/room.md) objects in the tenant.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="af420-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="af420-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d2387-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="d2387-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_all_rooms"
@@ -108,26 +108,30 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 ```
-# <a name="c"></a>[<span data-ttu-id="af420-155">C#</span><span class="sxs-lookup"><span data-stu-id="af420-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d2387-155">C#</span><span class="sxs-lookup"><span data-stu-id="d2387-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-rooms-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="af420-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="af420-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d2387-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d2387-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-all-rooms-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="af420-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="af420-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d2387-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d2387-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="d2387-158">Java</span><span class="sxs-lookup"><span data-stu-id="d2387-158">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="af420-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="af420-158">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d2387-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2387-159">Response</span></span>
 
-<span data-ttu-id="af420-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="af420-159">The following is an example of the response.</span></span>
+<span data-ttu-id="d2387-160">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d2387-160">The following is an example of the response.</span></span>
 
-><span data-ttu-id="af420-160">**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="af420-160">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="af420-161">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="af420-161">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="d2387-161">**Observação** : o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="d2387-161">**Note** : The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d2387-162">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d2387-162">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -211,13 +215,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a><span data-ttu-id="af420-162">Exemplo 2: listar todas as listas de salas definidas no locatário</span><span class="sxs-lookup"><span data-stu-id="af420-162">Example 2: List all the room lists defined in the tenant</span></span>
+### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a><span data-ttu-id="d2387-163">Exemplo 2: listar todas as listas de salas definidas no locatário</span><span class="sxs-lookup"><span data-stu-id="d2387-163">Example 2: List all the room lists defined in the tenant</span></span>
 
-#### <a name="request"></a><span data-ttu-id="af420-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="af420-163">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d2387-164">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d2387-164">Request</span></span>
 
-<span data-ttu-id="af420-164">O exemplo a seguir mostra como obter todos os objetos [RoomList](../resources/roomlist.md) no locatário.</span><span class="sxs-lookup"><span data-stu-id="af420-164">The following example shows how to get all the [roomList](../resources/roomlist.md) objects in the tenant.</span></span>
+<span data-ttu-id="d2387-165">O exemplo a seguir mostra como obter todos os objetos [RoomList](../resources/roomlist.md) no locatário.</span><span class="sxs-lookup"><span data-stu-id="d2387-165">The following example shows how to get all the [roomList](../resources/roomlist.md) objects in the tenant.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="af420-165">HTTP</span><span class="sxs-lookup"><span data-stu-id="af420-165">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d2387-166">HTTP</span><span class="sxs-lookup"><span data-stu-id="d2387-166">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_all_roomlists"
@@ -226,26 +230,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 ```
-# <a name="c"></a>[<span data-ttu-id="af420-166">C#</span><span class="sxs-lookup"><span data-stu-id="af420-166">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d2387-167">C#</span><span class="sxs-lookup"><span data-stu-id="d2387-167">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-roomlists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="af420-167">JavaScript</span><span class="sxs-lookup"><span data-stu-id="af420-167">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d2387-168">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d2387-168">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-all-roomlists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="af420-168">Objective-C</span><span class="sxs-lookup"><span data-stu-id="af420-168">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d2387-169">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d2387-169">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="d2387-170">Java</span><span class="sxs-lookup"><span data-stu-id="d2387-170">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="af420-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="af420-169">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d2387-171">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2387-171">Response</span></span>
 
-<span data-ttu-id="af420-170">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="af420-170">The following is an example of the response.</span></span>
+<span data-ttu-id="d2387-172">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d2387-172">The following is an example of the response.</span></span>
 
-><span data-ttu-id="af420-171">**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="af420-171">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="af420-172">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="af420-172">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="d2387-173">**Observação** : o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="d2387-173">**Note** : The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d2387-174">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d2387-174">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -294,13 +302,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-rooms-contained-in-a-room-list"></a><span data-ttu-id="af420-173">Exemplo 3: listar salas contidas em uma lista de salas</span><span class="sxs-lookup"><span data-stu-id="af420-173">Example 3: List rooms contained in a room list</span></span>
+### <a name="example-3-list-rooms-contained-in-a-room-list"></a><span data-ttu-id="d2387-175">Exemplo 3: listar salas contidas em uma lista de salas</span><span class="sxs-lookup"><span data-stu-id="d2387-175">Example 3: List rooms contained in a room list</span></span>
 
-#### <a name="request"></a><span data-ttu-id="af420-174">Solicitação</span><span class="sxs-lookup"><span data-stu-id="af420-174">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d2387-176">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d2387-176">Request</span></span>
 
-<span data-ttu-id="af420-175">O exemplo a seguir mostra como obter uma lista de objetos [Room](../resources/room.md) contidos em uma **salalist**.</span><span class="sxs-lookup"><span data-stu-id="af420-175">The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**.</span></span> 
+<span data-ttu-id="d2387-177">O exemplo a seguir mostra como obter uma lista de objetos [Room](../resources/room.md) contidos em uma **salalist**.</span><span class="sxs-lookup"><span data-stu-id="d2387-177">The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**.</span></span> 
 
-# <a name="http"></a>[<span data-ttu-id="af420-176">HTTP</span><span class="sxs-lookup"><span data-stu-id="af420-176">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d2387-178">HTTP</span><span class="sxs-lookup"><span data-stu-id="d2387-178">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rooms_in_roomlist"
@@ -309,26 +317,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
-# <a name="c"></a>[<span data-ttu-id="af420-177">C#</span><span class="sxs-lookup"><span data-stu-id="af420-177">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d2387-179">C#</span><span class="sxs-lookup"><span data-stu-id="d2387-179">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rooms-in-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="af420-178">JavaScript</span><span class="sxs-lookup"><span data-stu-id="af420-178">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d2387-180">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d2387-180">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rooms-in-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="af420-179">Objective-C</span><span class="sxs-lookup"><span data-stu-id="af420-179">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d2387-181">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d2387-181">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="d2387-182">Java</span><span class="sxs-lookup"><span data-stu-id="d2387-182">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="af420-180">Resposta</span><span class="sxs-lookup"><span data-stu-id="af420-180">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d2387-183">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2387-183">Response</span></span>
 
-<span data-ttu-id="af420-181">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="af420-181">The following is an example of the response.</span></span>
+<span data-ttu-id="d2387-184">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d2387-184">The following is an example of the response.</span></span>
 
-><span data-ttu-id="af420-182">**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="af420-182">**Note**: The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="af420-183">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="af420-183">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="d2387-185">**Observação** : o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="d2387-185">**Note** : The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d2387-186">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d2387-186">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
