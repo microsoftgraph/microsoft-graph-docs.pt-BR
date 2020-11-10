@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 86f84a37965ddbcc6d0577024b8e1e747d5615b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: efc55da7f12d280acfe5d966bd75318399ef2295
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085322"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48970637"
 ---
 # <a name="create-reviewsetquery"></a>Criar reviewSetQuery
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [reviewSe
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName  | cadeia de caracteres      | O nome da consulta do conjunto de revisão |
+| displayName  | string      | O nome da consulta do conjunto de revisão |
 
 ## <a name="response"></a>Resposta
 
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reviewsetquery-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-reviewsetquery-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

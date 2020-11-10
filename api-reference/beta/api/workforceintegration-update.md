@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4e785ca911ce41e0e84060801afae078d867b4a5
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 3e1f7c6486e42ecc2f41604866eef9dd7d069651
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848364"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48970538"
 ---
 # <a name="update-workforceintegration"></a>Atualizar workforceintegration
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | WorkforceIntegration. ReadWrite. All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | WorkforceIntegration. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |apiVersion|Int32|Versão da API para a URL de retorno de chamada. Comece com 1.|
 |displayName|String|Nome da integração da força de funcionários.|
 |encripta|workforceIntegrationEncryption|O recurso de criptografia de integração da força de funcionários. |
-|isActive|Boolean|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
+|isActive|Booliano|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
 |compatível|string| Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
 |supportedEntities|string| Essa propriedade substituirá **suporte** em v 1.0. Recomendamos que você use essa propriedade em vez de **suportar**. A **Propriedade** Supports ainda será suportada na versão beta para o momento. Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
 |url|Cadeia de caracteres| URL de integração de força de obra para retornos de chamada do serviço de turno. |
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-workforceintegration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
