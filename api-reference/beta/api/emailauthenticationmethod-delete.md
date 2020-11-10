@@ -5,37 +5,37 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a99c8faf5540310640b8321ea7a7bc30eaded624
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: b95f602c9b4180696b43753ba564f3604ce05846
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921638"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955114"
 ---
-# <a name="delete-emailauthenticationmethod"></a><span data-ttu-id="3f309-103">Excluir emailAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="3f309-103">Delete emailAuthenticationMethod</span></span>
-<span data-ttu-id="3f309-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3f309-104">Namespace: microsoft.graph</span></span>
+# <a name="delete-emailauthenticationmethod"></a><span data-ttu-id="3881d-103">Excluir emailAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="3881d-103">Delete emailAuthenticationMethod</span></span>
+<span data-ttu-id="3881d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3881d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3f309-105">Exclui o objeto de [método de autenticação de email](../resources/emailauthenticationmethod.md) de um usuário.</span><span class="sxs-lookup"><span data-stu-id="3f309-105">Deletes a user's [email Authentication Method](../resources/emailauthenticationmethod.md) object.</span></span>
+<span data-ttu-id="3881d-105">Exclui o objeto de [método de autenticação de email](../resources/emailauthenticationmethod.md) de um usuário.</span><span class="sxs-lookup"><span data-stu-id="3881d-105">Deletes a user's [email Authentication Method](../resources/emailauthenticationmethod.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3f309-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3f309-106">Permissions</span></span>
-<span data-ttu-id="3f309-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3f309-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3881d-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3881d-106">Permissions</span></span>
+<span data-ttu-id="3881d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3881d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3f309-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3f309-109">Permission type</span></span>|<span data-ttu-id="3f309-110">Permissões que atuam em si (de a mais de privilégios mínimos)</span><span class="sxs-lookup"><span data-stu-id="3f309-110">Permissions acting on self (from most to least privileged)</span></span>|<span data-ttu-id="3f309-111">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3f309-111">Permissions acting on others (from least to most privileged)</span></span>|
+|<span data-ttu-id="3881d-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3881d-109">Permission type</span></span>|<span data-ttu-id="3881d-110">Permissões que atuam em si (de a mais de privilégios mínimos)</span><span class="sxs-lookup"><span data-stu-id="3881d-110">Permissions acting on self (from most to least privileged)</span></span>|<span data-ttu-id="3881d-111">Permissões que atuam em outros (de menos para mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3881d-111">Permissions acting on others (from least to most privileged)</span></span>|
 |:---|:---|:--|
-|<span data-ttu-id="3f309-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3f309-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3f309-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3f309-113">Not supported.</span></span>|<span data-ttu-id="3f309-114">UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="3f309-114">UserAuthenticationMethod.ReadWrite.All</span></span>
-|<span data-ttu-id="3f309-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3f309-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3f309-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3f309-116">Not supported.</span></span>|<span data-ttu-id="3f309-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3f309-117">Not supported.</span></span>
-|<span data-ttu-id="3f309-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3f309-118">Application</span></span>|<span data-ttu-id="3f309-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3f309-119">Not supported.</span></span>|<span data-ttu-id="3f309-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3f309-120">Not supported.</span></span>
+|<span data-ttu-id="3881d-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3881d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3881d-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3881d-113">Not supported.</span></span>|<span data-ttu-id="3881d-114">UserAuthenticationMethod. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="3881d-114">UserAuthenticationMethod.ReadWrite.All</span></span>
+|<span data-ttu-id="3881d-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3881d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3881d-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3881d-116">Not supported.</span></span>|<span data-ttu-id="3881d-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3881d-117">Not supported.</span></span>
+|<span data-ttu-id="3881d-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3881d-118">Application</span></span>|<span data-ttu-id="3881d-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3881d-119">Not supported.</span></span>|<span data-ttu-id="3881d-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3881d-120">Not supported.</span></span>
 
-<span data-ttu-id="3f309-121">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="3f309-121">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+<span data-ttu-id="3881d-121">Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="3881d-121">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
 
-* <span data-ttu-id="3f309-122">Administrador global</span><span class="sxs-lookup"><span data-stu-id="3f309-122">Global admin</span></span>
-* <span data-ttu-id="3f309-123">Leitor global</span><span class="sxs-lookup"><span data-stu-id="3f309-123">Global reader</span></span>
-* <span data-ttu-id="3f309-124">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="3f309-124">Privileged authentication admin</span></span>
-* <span data-ttu-id="3f309-125">Administrador de autenticação</span><span class="sxs-lookup"><span data-stu-id="3f309-125">Authentication admin</span></span>
+* <span data-ttu-id="3881d-122">Administrador global</span><span class="sxs-lookup"><span data-stu-id="3881d-122">Global admin</span></span>
+* <span data-ttu-id="3881d-123">Leitor global</span><span class="sxs-lookup"><span data-stu-id="3881d-123">Global reader</span></span>
+* <span data-ttu-id="3881d-124">Administrador de autenticação privilegiada</span><span class="sxs-lookup"><span data-stu-id="3881d-124">Privileged authentication admin</span></span>
+* <span data-ttu-id="3881d-125">Administrador de autenticação</span><span class="sxs-lookup"><span data-stu-id="3881d-125">Authentication admin</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="3f309-126">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3f309-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3881d-126">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3881d-126">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -45,23 +45,23 @@ ms.locfileid: "48921638"
 DELETE /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3f309-127">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3f309-127">Request headers</span></span>
-|<span data-ttu-id="3f309-128">Nome</span><span class="sxs-lookup"><span data-stu-id="3f309-128">Name</span></span>|<span data-ttu-id="3f309-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="3f309-129">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3881d-127">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3881d-127">Request headers</span></span>
+|<span data-ttu-id="3881d-128">Nome</span><span class="sxs-lookup"><span data-stu-id="3881d-128">Name</span></span>|<span data-ttu-id="3881d-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="3881d-129">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="3f309-130">Autorização</span><span class="sxs-lookup"><span data-stu-id="3f309-130">Authorization</span></span>|<span data-ttu-id="3f309-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3f309-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="3881d-130">Autorização</span><span class="sxs-lookup"><span data-stu-id="3881d-130">Authorization</span></span>|<span data-ttu-id="3881d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3881d-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3f309-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3f309-133">Request body</span></span>
-<span data-ttu-id="3f309-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3f309-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3881d-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3881d-133">Request body</span></span>
+<span data-ttu-id="3881d-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3881d-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3f309-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="3f309-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3881d-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="3881d-135">Response</span></span>
 
-<span data-ttu-id="3f309-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3f309-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3881d-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3881d-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3f309-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3f309-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3881d-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3881d-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="3f309-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3f309-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3881d-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3881d-139">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3f309-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="3f309-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3881d-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="3881d-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_emailauthenticationmethod"
@@ -70,24 +70,28 @@ DELETE /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ``` http
 DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
 ```
-# <a name="c"></a>[<span data-ttu-id="3f309-141">C#</span><span class="sxs-lookup"><span data-stu-id="3f309-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3881d-141">C#</span><span class="sxs-lookup"><span data-stu-id="3881d-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-emailauthenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3f309-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3f309-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3881d-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3881d-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-emailauthenticationmethod-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3f309-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3f309-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3881d-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3881d-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-emailauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="3881d-144">Java</span><span class="sxs-lookup"><span data-stu-id="3881d-144">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-emailauthenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 
-### <a name="response"></a><span data-ttu-id="3f309-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="3f309-144">Response</span></span>
-<span data-ttu-id="3f309-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3f309-145">The following is an example of the response.</span></span>
+### <a name="response"></a><span data-ttu-id="3881d-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="3881d-145">Response</span></span>
+<span data-ttu-id="3881d-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3881d-146">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
