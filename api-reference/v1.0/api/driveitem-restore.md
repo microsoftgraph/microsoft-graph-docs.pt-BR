@@ -5,18 +5,18 @@ localization_priority: Normal
 author: learafa
 ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: 4b7198543c97fdb59179a2898ddcc367feb6c19d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8566c299f775788e31186186f3589d189c9324cc
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073254"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982334"
 ---
 # <a name="driveitem-restore"></a>driveItem: restaurar
 
 Namespace: microsoft.graph
 
-Restaurar um [driveItem](../resources/driveitem.md) que foi excluído e que está atualmente na lixeira. **Observação**: atualmente, essa funcionalidade só está disponível para o onedrive Personal.
+Restaurar um [driveItem](../resources/driveitem.md) que foi excluído e que está atualmente na lixeira. **Observação** : atualmente, essa funcionalidade só está disponível para o onedrive Personal.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Files.ReadWrite.All |
-| Aplicativo                            | Files.ReadWrite.All |
+| Application                            | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/restore-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/restore-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
