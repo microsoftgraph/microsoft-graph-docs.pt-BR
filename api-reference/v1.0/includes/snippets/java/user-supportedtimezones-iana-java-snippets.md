@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 38f1ec294d3e0663b15bf019575bdafd2fb80d79
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 98ce52b92fa9821c04ee34e25ed0fbcac06b5c8e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35892959"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983419"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ITimeZoneInformationCollectionPage supportedTimeZones = graphClient.me().outlook()
+IOutlookUserSupportedTimeZonesCollectionPage supportedTimeZones = graphClient.me().outlook()
     .supportedTimeZones(microsoft.graph.timeZoneStandard'Iana')
     .buildRequest()
     .get();

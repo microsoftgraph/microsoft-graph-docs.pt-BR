@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9df55d7923c30756cff84c389018c126f909b4cb
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 3d98a1364a7ab86392087c9cac2da755da33c0b8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35882782"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983065"
 ---
 ```java
 
@@ -13,7 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 CalendarGroup calendarGroup = new CalendarGroup();
 calendarGroup.name = "name-value";
-calendarGroup.classId = "classId-value";
+calendarGroup.classId = UUID.fromString("classId-value");
 calendarGroup.changeKey = "changeKey-value";
 
 graphClient.me().calendarGroups()

@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1e3df12ea0a3817f3c1585955f06645a8600d102
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: 2e64e9092d7ce6407e7202e4b3cc6cda47962e11
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428769"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983164"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Stream stream = graphClient.customRequest("/me/onenote/resources/{id}/content", Stream.class)
+InputStream stream = graphClient.customRequest("/me/onenote/resources/{id}/content", InputStream.class)
     .buildRequest()
     .get();
 
