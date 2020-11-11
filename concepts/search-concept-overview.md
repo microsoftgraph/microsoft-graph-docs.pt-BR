@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: d4c16bd0175f8ae0cd9d8e03f549bea9eff3db63
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 0ef20f80c003d880d25eff00c993bc1800545dc7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373500"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48952672"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Visão geral da API Microsoft Search no Microsoft Graph (visualização)
 
@@ -25,9 +25,11 @@ A Pesquisa da Microsoft é um mecanismo de pesquisa empresarial que proporciona 
 
 A API da Pesquisa da Microsoft fornece um ponto de extremidade de pesquisa que você pode usar para permitir que os desenvolvedores [consultem](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) dados na nuvem da Microsoft que a Pesquisa da Microsoft já indexa, como mensagens e eventos nas caixas de correio do Outlook e arquivos no OneDrive e no SharePoint.
 
-### <a name="include-custom-external-data-in-search-experience"></a>Incluir dados externos personalizados na experiência de pesquisa
+### <a name="include-custom-external-data-in-search-experience"></a>Inclua dados externos personalizados na experiência de pesquisa
 
-Os clientes que queiram incluir dados que estejam fora da nuvem da Microsoft em suas pesquisas poderão usar [conectores](/microsoftsearch/connectors-overview) que se conectem a uma fonte de dados específica, como um banco de dados de recursos humanos ou catálogo de produtos da organização. Para [consultar](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) diretamente a fonte de dados externa, use a API de Pesquisa da Microsoft. A [Galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery) lista vários conectores prontos para uso. Como alternativa, os clientes podem [criar conectores](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases), indexar itens personalizados externos e também consultar fontes de dados externas específicas.
+Utilize os [conectores do Microsoft Graph](/microsoftsearch/connectors-overview) para incluir dados de fora da nuvem da Microsoft em sua experiência de busca. Por exemplo, estabeleça uma conexão com o banco de dados de recursos humanos ou com o catálogo de produtos de uma organização. Em seguida, utilize a API de Pesquisa da Microsoft para [consultar](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) perfeitamente a fonte de dados externa. 
+
+Navegue na [galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery) para encontrar conectores prontos para uso. Alternativamente, você pode [construir seus próprios conectores](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases) para indexar itens personalizados externos e consultar fontes de dados externas específicas.
 
 ### <a name="consistent-up-to-date-search-experience"></a>Experiência de pesquisa atualizada e consistente
 
