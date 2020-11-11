@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c03cdd5ebecb18b555296fc9ddfc2140ead52e1d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 695e72d91fbd276fdd9628daed43ddc11ccfd12c
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684402"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48994533"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var expression = "Replace([preferredLanguage], \"-\", , , \"_\", ,  )";
 
-var targetAttributeDefinition = null;
+AttributeDefinition targetAttributeDefinition = null;
 
 var testInputObject = new ExpressionInputObject
 {

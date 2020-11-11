@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: bc4a360815d5cd0cad8320b368dcb7bb626de807
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 7280b9ac52aac596aaff55ee63e3bde35796fd81
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684664"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48994532"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var index = null;
+Int32? index = null;
 
 var values = JToken.Parse("[[1,2,3],[4,5,6]]");
 
