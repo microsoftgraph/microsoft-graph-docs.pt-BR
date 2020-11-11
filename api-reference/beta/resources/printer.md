@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 2f1decf04f48f7ee8dc074997e6d503130bc74bc
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 37c552a1239ee1d374c22be77ba81004cfc92e1f
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848616"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993952"
 ---
 # <a name="printer-resource-type"></a>tipo de recurso de impressora
 
@@ -27,27 +27,27 @@ Representa um dispositivo de impressora que foi registrado com o serviço de imp
 | [Create](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com impressão universal. |
 | [Get](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto Printer. |
 | [Update](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto Printer. |
-| [Delete](../api/printer-delete.md) | Nenhuma | Cancelar o registro da impressora física do serviço de impressão universal. |
-| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | Nenhuma | Restaurar as configurações padrão de uma impressora para os valores especificados pelo fabricante. |
+| [Delete](../api/printer-delete.md) | Nenhum | Cancelar o registro da impressora física do serviço de impressão universal. |
+| [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | Nenhum | Restaurar as configurações padrão de uma impressora para os valores especificados pelo fabricante. |
 | [Listar trabalhos](../api/printer-list-jobs.md) | coleção [printJob](printjob.md) | Obtenha uma lista de trabalhos de impressão que são enfileirados para processamento pela impressora. |
 | [Criar trabalho](../api/printer-post-jobs.md) | [Impressão](printjob.md) | Crie um novo trabalho de impressão para a impressora. Para começar a imprimir o trabalho, use [Iniciar](../api/printjob-start.md). |
 | [Listar conectores](../api/printer-list-connectors.md) | coleção [Multiconnector](printconnector.md) | Obter uma lista de conectores aos quais esta impressora está associada. |
-| [List taskTriggers](../api/printer-list-tasktriggers.md) | Nenhuma | Listar [printTaskTriggers](printtasktrigger.md) associados a essa impressora. |
+| [List taskTriggers](../api/printer-list-tasktriggers.md) | Nenhum | Listar [printTaskTriggers](printtasktrigger.md) associados a essa impressora. |
 | [Create taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Crie um [printTaskTrigger](printtasktrigger.md) que seja executado quando os eventos Print ocorrerem. |
-| [Delete taskTrigger](../api/printer-delete-tasktrigger.md) | Nenhuma | Excluir um [printTaskTrigger](printtasktrigger.md) que está associado à impressora. |
+| [Delete taskTrigger](../api/printer-delete-tasktrigger.md) | Nenhum | Excluir um [printTaskTrigger](printtasktrigger.md) que está associado à impressora. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador do documento. Somente leitura.|
-|displayName|String|O nome da impressora.|
-|fabricante|String|O fabricante relatado pela impressora. Somente leitura.|
-|modelo|String|O nome do modelo relatado pela impressora. Somente leitura.|
+|id|Cadeia de caracteres|O identificador do documento. Somente leitura.|
+|displayName|Cadeia de caracteres|O nome da impressora.|
+|fabricante|String|O fabricante relatado pela impressora.|
+|modelo|String|O nome do modelo relatado pela impressora.|
 |registeredDateTime|DateTimeOffset|O DateTimeOffset quando a impressora foi registrada. Somente leitura.|
-|status|[printerStatus](printerstatus.md)|O status de processamento da impressora, incluindo erros. Somente leitura.|
+|status|[printerStatus](printerstatus.md)|O status de processamento da impressora, incluindo erros.|
 |isShared|Booliano|True se a impressora é compartilhada; caso contrário, false. Somente leitura.|
-|isAcceptingJobs|Boolean|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
-|location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora.|
+|isAcceptingJobs|Booliano|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
+|localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora.|
 |defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora.|
 |capabilities|[printerCapabilities](printercapabilities.md)|Os recursos da impressora associada a este compartilhamento de impressora.|
 

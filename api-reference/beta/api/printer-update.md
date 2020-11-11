@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 557e814b27c7a3b198482de3e2d5da556454a876
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 95af5526edbbd40a65e3356efa7cee76cf135c14
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979772"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993966"
 ---
 # <a name="update-printer"></a>Atualização da impressora
 
@@ -31,7 +31,9 @@ Somente o aplicativo que registrou a impressora tem permissão para atualizar a 
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Printer. ReadWrite. All, Printer. FullControl. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Printer.ReadWrite.All |
+|Aplicativo| Printer.ReadWrite.All |
+
+>**Observação:** No momento, apenas impressoras que não têm dispositivo físico podem ser atualizadas usando permissões de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -48,22 +50,44 @@ PATCH /print/printers/{id}
 
 ### <a name="delegated-permissions-and-json-payload"></a>Permissões delegadas e carga JSON
 
-Se estiver usando permissões delegadas, no corpo da solicitação, forneça os valores para os campos de [impressora](../resources/printer.md) relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+Se estiver usando permissões delegadas, no corpo da solicitação, forneça os valores para os campos de [impressora](../resources/printer.md) relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. 
+
+As propriedades a seguir podem ser atualizadas usando permissões delegadas.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
-|nome|String|O nome da impressora.|
+|defaults|[printerDefaults](../resources/printerdefaults.md)|As configurações de impressão padrão da impressora.|
+|localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional da impressora.|
+|displayName|Cadeia de caracteres|O nome da impressora.|
+
+### <a name="application-permissions-and-json-payload"></a>Permissões de aplicativo e carga JSON
+No corpo da solicitação, forneça os valores para os campos de [impressora](../resources/printer.md) relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. 
+
+As propriedades a seguir podem ser atualizadas usando permissões de aplicativo.
+
+| Propriedade     | Tipo        | Descrição |
+|:-------------|:------------|:------------|
+|defaults|[printerDefaults](../resources/printerdefaults.md)|As configurações de impressão padrão da impressora.|
+|capabilities|[printerCapabilities](../resources/printerCapabilities.md)|Os recursos da impressora associada a este compartilhamento de impressora.|
+|displayName|Cadeia de caracteres|O nome da impressora.|
+|fabricante|String|O fabricante da impressora.|
+|modelo|String|O nome do modelo da impressora.|
+|status|[printerStatus](../resources/printerstatus.md)|O status de processamento da impressora, incluindo erros.|
+|isAcceptingJobs|Booliano|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Permissões de aplicativo e carga IPP
 
-Se estiver usando permissões de aplicativo, o corpo da solicitação contém um fluxo binário que representa o grupo de atributos da impressora na [codificação IPP](https://tools.ietf.org/html/rfc8010).
+Com permissões de aplicativo, uma impressora também pode ser atualizada usando uma carga do protocolo IPP (Internet Printing Protocol). Nesse caso, o corpo da solicitação contém um fluxo binário que representa o grupo de atributos da impressora na [codificação IPP](https://tools.ietf.org/html/rfc8010).
 
 O cliente deve fornecer um conjunto de atributos de impressora com um ou mais valores (incluindo valores fora de banda explicitamente permitidos), conforme definido na [seção RFC8011 5,2](https://tools.ietf.org/html/rfc8011#section-5.2) atributos de modelo de trabalho ("XXX-default", "XXX-supported" e "XXX-Ready" Attributes), [seção 5,4](https://tools.ietf.org/html/rfc8011#section-5.4) atributos de descrição da impressora e quaisquer extensões de atributo compatíveis com a impressora. O (s) valor (es) de cada atributo de impressora fornecido substitui o (s) valor (es) do atributo de impressora correspondente no objeto de impressora de destino. Para atributos que podem ter vários valores (1setOf), todos os valores fornecidos pelo cliente substituem todos os valores do atributo de objeto Printer correspondente.
 
 ## <a name="response"></a>Resposta
 
 ### <a name="delegated-permissions-and-json-payload"></a>Permissões delegadas e carga JSON
+
+Se usar permissões delegadas, se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Printer](../resources/printer.md) atualizado no corpo da resposta.
+
+### <a name="application-permissions-and-json-payload"></a>Permissões de aplicativo e carga JSON
 
 Se usar permissões delegadas, se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Printer](../resources/printer.md) atualizado no corpo da resposta.
 

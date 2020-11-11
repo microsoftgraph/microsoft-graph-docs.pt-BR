@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7c92d71eaf0d4846cde96194390af6a375179ce1
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 64a2732d798546b6fd853fe3abf8811ec206abab
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848987"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993940"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Visão geral da API de impressão em nuvem da Impressão Universal
 
@@ -86,8 +86,6 @@ Siga estes passos para habilitar a impressão segura:
 6. Quando o usuário passar um crachá em um dispositivo físico de impressão, a impressora notificará o seu aplicativo. Nessa altura, o seu aplicativo pode [buscar os trabalhos da impressora virtual associada](/graph/api/printer-list-jobs?view=graph-rest-beta) e filtrar a lista de trabalhos criados pelo usuário atual.
 
 7. Quando o usuário seleciona um ou mais trabalhos para imprimir, seu aplicativo pode [redirecionar o(s) trabalho(s) de impressão](/graph/api/printjob-redirect?view=graph-rest-beta) para a impressora física e o trabalho começará a imprimir! A chamada de redirecionamento só terá sucesso se houver uma [Tarefa de impressão](/graph/api/resources/printtask?view=graph-rest-beta) em `processing` estado na impressora associada iniciada por um acionador que este aplicativo criou no passo 4. A tarefa será automaticamente definida para o `completed` estado após o redirecionamento.
-
-   >**OBSERVAÇÃO:** Trabalhos de impressão pausados que não são redirecionados em até 2 dias serão excluídos.
 
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API para esse serviço?
