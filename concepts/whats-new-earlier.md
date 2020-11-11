@@ -3,14 +3,98 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 90acde49b10d0e2a14b82d7b830848641a7ddabd
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: f096f2e24ecfa146585a82490ae74d8c1e903b34
+ms.sourcegitcommit: 4e7830a22b440bbbcfa795937af85d8542e5525b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742185"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982685"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="september-2020-new-and-generally-available"></a>Setembro de 2020: novo e disponível para o público em geral
+
+### <a name="calendar"></a>Calendário
+O GA da propriedade **transactionId** do recurso de [evento](/graph/api/resources/event), que é definido opcionalmente por um aplicativo cliente para evitar operações de POSTAGEM redundantes em caso de o cliente tentar criar o mesmo evento. Isso é útil quando a conectividade de rede baixa faz com que o cliente expire antes de receber uma resposta do servidor para a solicitação anterior de criação de evento do cliente.
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+[Remover um participante](/graph/api/participant-delete) do [bate-papo](/graph/api/resources/call). Você pode usar essa operação mesmo em situações em que é necessário excluir um participante de uma chamada ativa.
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+As atualizações de [setembro](changelog.md#september-2020) do Intune para a versão v1.0.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+Os [APIs das unidades administrativas](/graph/api/resources/administrativeunit) permitem às organizações subdividir seu Azure Active Directory e delegar tarefas administrativas a essas subdivisões. As subdivisões podem representar regiões, departamentos, centros de custo e assim por diante.
+
+### <a name="reports"></a>Relatórios
+[Obtenha um relatório que inclua o número de usuários exclusivos](/graph/api/reportroot-getemailappusageversionsusercounts) do Outlook 2019 e do Outlook no Microsoft 365.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Obtenha a propriedade **lastEditedDateTime** para descobrir quando um remetente editar pela última vez uma [mensagem de chat](/graph/api/resources/chatmessage).
+- Obtenha a propriedade **lastModifiedDateTime** para descobrir quando um remetente cria uma mensagem de bate-papo ou quando alguém a altera de outras maneiras, incluindo a adição ou a remoção de uma reação. 
+- [Receba notificações sobre alterações](webhooks.md) em [mensagens de chat](/graph/api/resources/chatmessage).
+- [Atualizar](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) propriedade **policyViolation** de uma [chatMessage](/graph/api/resources/chatmessagepreserve-view=true) em um [canal](/graph/api/resources/channel&preserve-view=true) ou [chat](/graph/api/resources/chat&preserve-view=true), permitindo que os aplicativos de prevenção contra perda de dados (DLP) monitorem [violação de política da mensagem de chat](/graph/api/resources/chatmessagepolicyviolation?preserve-view=true) para evitar que as mensagens contenham dados que os usuários não devem enviar.
+
+### <a name="use-the-sdks"></a>Use os SDKs
+Com o lançamento do [SDK do Microsoft Graph PowerShell](https://github.com/microsoftgraph/msgraph-sdk-powershell) o acesso a toda a superfície do Microsoft Graph agora é simples e consistente.
+
+### <a name="use-the-toolkit"></a>Usar o kit de ferramentas
+Experimente o novo tutorial de introdução passo a passo para o Microsoft Graph Toolkit e experimente a comodidade que o Toolkit oferece:
+- [Criar um aplicativo Web (JavaScript)](./toolkit/get-started/build-a-web-app.md)
+- [Criar uma web part do Microsoft Office SharePoint Online](./toolkit/get-started/build-a-sharepoint-web-part.md)
+- [Criar uma guia do Microsoft Teams](./toolkit/get-started/build-a-microsoft-teams-tab.md)
+- [Usar o kit de ferramentas com reagir](./toolkit/get-started/use-toolkit-with-react.md)
+- [Usar o kit de ferramentas com o Angular](./toolkit/get-started/use-toolkit-with-angular.md)
+
+### <a name="users"></a>Usuários
+Além de obter o endereço SMTP de um [usuário](/graph/api/resources/user) por meio da propriedade de **email** , você pode definir essa propriedade e atualizar o endereço de email do usuário. 
+
+## <a name="september-2020-new-in-preview-only"></a>Setembro de 2020: novidades somente na pré-visualização
+
+### <a name="application"></a>Aplicativo
+Crie, liste ou exclua [classificações de permissões delegadas](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta&preserve-view=true) que uma [entidade de serviço](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) expõe. Use as classificações de permissão delegada em combinação com as [configurações de consentimento do usuário](/azure/active-directory/manage-apps/configure-user-consent) para definir limites sobre quando os usuários finais têm permissão para dar consentimento aos aplicativos.
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+- A substituição da propriedade **autoAdmittedUsers** do [ onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true). Em vez disso, use a propriedade **lobbyBypassSettings** e seus [valores](/graph/api/resources/lobbybypasssettings?view=graph-rest-beta&preserve-view=true#lobbybypassscope-values).
+- Use configurações adicionais sobre como anunciar os chamadores que ingressam em uma reunião online (propriedade **isEntryExitAnnounced** ) e permitir apresentadores específicos na reunião (propriedade **allowedPresenters** ).
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+- [Obtenha os documentos para cada um dos trabalhos de impressão associados a uma impressora](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true), aplicando uma `$expand` [opção de consulta do sistema OData](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true#optional-query-parameters). 
+- Filtre trabalhos de impressão pelo usuário que os criou, aplicando uma opção de`$filter` [consulta do sistema OData](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true#optional-query-parameters).
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
+As atualizações de [setembro](changelog.md#september-2020) do Intune para a versão beta.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+- [Obtenha uma chave de recuperação do BitLocker](/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta&preserve-view=true) em nome do usuário conectado que é o proprietário do dispositivo ou em uma função adequada. Obter uma chave de recuperação gera um [log de auditoria](/azure/active-directory/reports-monitoring/concept-audit-logs), em paridade com a experiência do usuário final.
+- Obtenha a quantidade total e usada da [cota do diretório](/graph/api/resources/directorysizequota?view=graph-rest-beta&preserve-view=true) de uma [organização](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true), por meio da propriedade **directorySizeQuota**.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+É possível incluir uma [agenda](/graph/api/resources/requestschedule?view=graph-rest-beta&preserve-view=true) ao solicitar ou remover uma [atribuição de um usuário para um pacote do Access](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true), que especifica o acesso aos grupos, aplicativos ou sites do SharePoint.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+As organizações podem [obter](/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta&preserve-view=true) a [política de avaliação de acesso contínuo](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta&preserve-view=true) para gerenciar sessões de autenticação em tempo real.
+
+### <a name="search"></a>Pesquisar
+
+- Use recursos adicionais no [API de Pesquisa da Microsoft](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) para OneDrive, SharePoint, conectores do Microsoft Graph: 
+
+  - Obtenha [tipos adicionais](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types) de conteúdo do OneDrive e do Microsoft Office SharePoint Online: **unidade** , **lista** , **listItem** e **site**. 
+  - Propriedades de escopo nos resultados da pesquisa para [propriedades selecionadas](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties). 
+  - Obtenha propriedades personalizadas no recurso [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true).
+  - [Classifique](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) os resultados da pesquisa do OneDrive e do Microsoft Office SharePoint Online em qualquer propriedade classificável.
+  - [Refine os resultados usando agregações](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) para o OneDrive e o Microsoft Office SharePoint Online.
+- Consultar dados externos ingeridos pelos conectores do Microsoft Graph em [mais de um de conexão](./search-concept-custom-types.md).
+- Aproveite o conteúdo aprimorado para os conectores do Microsoft Graph para saber mais sobre:
+  - [Gerenciando Conectores](search-index-manage-connections.md)
+  - [Gerenciar esquema](search-index-manage-schema.md)
+  - [Gerenciar itens](search-index-manage-items.md)
+- Acompanhe o estado de uma[conexão](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true)do Microsoft Graph.
+- Defina um [grupo externo](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) a fim de definir permissões em objetos de [item externo](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) adicionados a uma [conexão](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) do Microsoft Graph. Os grupos externos podem representar os grupos do Active Directory que não sejam do Azure ou construções similares, como unidades de negócios, que determinam permissões sobre o conteúdo na fonte de dados externa.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Obtenha a data e a hora em que um [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true)do Teams ou [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) é criada.
+
 
 ## <a name="august-2020-new-and-generally-available"></a>Agosto de 2020: novo e disponível para o público geral
 
@@ -19,7 +103,7 @@ ms.locfileid: "48742185"
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 - [Cancele](/graph/api/call-cancelmediaprocessing) as ações de IVR (Resposta de Voz Interativas) que estão sendo processadas ou na fila, estejam elas [reproduzindo um prompt de áudio](/graph/api/call-playprompt) ou [gravando uma resposta](/graph/api/call-record).
-- Obtenha [informações sobre as transcrições da chamada](/graph/api/resources/calltranscriptioninfo) por meio da propriedade **transcrição** .
+- Obtenha [informações sobre as transcrições da chamada](/graph/api/resources/calltranscriptioninfo) por meio da propriedade **transcrição**.
 
 ### <a name="teamwork"></a>Trabalho em equipe
 - Use uma maneira alternativa de [criar uma equipe](/graph/api/team-post) diretamente sem criar um grupo primeiro.
@@ -31,20 +115,20 @@ ms.locfileid: "48742185"
 ## <a name="august-2020-new-in-preview-only"></a>Agosto de 2020: novidade apenas na versão prévia
 
 ### <a name="applications"></a>Aplicativos
-Ofereça suporte a logon único baseado em senha para recursos de aplicativos de [entidade de serviço](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) e especifique essas [configurações](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta&preserve-view=true) na propriedade **passwordSingleSignOnSettings** . Para obter informações sobre logon único baseado em senha no Azure AD, confira [configurar logon único baseado em senha](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications).
+Ofereça suporte a logon único baseado em senha para recursos de aplicativos de [entidade de serviço](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) e especifique essas [configurações](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta&preserve-view=true) na propriedade **passwordSingleSignOnSettings**. Para obter informações sobre logon único baseado em senha no Azure AD, confira [configurar logon único baseado em senha](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications).
 
 ### <a name="calendar"></a>Calendário
 Melhore o suporte programático para cenários que envolvem um [evento](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) recorrente:
-- Identifique com confiança qualquer ocorrência em uma série recorrente, incluindo uma ocorrência modificada ou cancelada, usando a propriedade **occurrenceId** .
-- Obtenha qualquer exceção em uma série recorrente usando a propriedade **exceptionOccurrences** .
-- Obtenha qualquer cancelamento em uma série usando a propriedade **cancelledOccurrences** .
+- Identifique com confiança qualquer ocorrência em uma série recorrente, incluindo uma ocorrência modificada ou cancelada, usando a propriedade **occurrenceId**.
+- Obtenha qualquer exceção em uma série recorrente usando a propriedade **exceptionOccurrences**.
+- Obtenha qualquer cancelamento em uma série usando a propriedade **cancelledOccurrences**.
 
 ### <a name="change-notifications"></a>Alterar notificações
-- Use a propriedade **includeResourceData** de uma [assinatura](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) para [configurar notificações de alteração que incluam dados de recursos](webhooks-with-resource-data.md). Não use a propriedade **includeProperties** .
+- Use a propriedade **includeResourceData** de uma [assinatura](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) para [configurar notificações de alteração que incluam dados de recursos](webhooks-with-resource-data.md). Não use a propriedade **includeProperties**.
 - Receba [notificações de alteração via Hub de Eventos](change-notifications-delivery.md).
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
-- Conceda acesso para todos os usuários e grupos a um [compartilhamento de impressora](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) usando a propriedade **allowAllUser** .
+- Conceda acesso para todos os usuários e grupos a um [compartilhamento de impressora](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) usando a propriedade **allowAllUser**.
 - Use novas permissões delegadas e de aplicativo para acessar ou gerenciar um [documento de impressão](/graph/api/resources/printDocument?view=graph-rest-beta&preserve-view=true), [trabalho de impressão](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true), [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true), [compartilhamento de impressora](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) ou [definição de tarefa de impressão](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true). Para obter detalhes, confira as atualizações de [agosto](changelog.md#august-2020) da impressão em nuvem.
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
@@ -52,7 +136,7 @@ Atualizações de [agosto](changelog.md#august-2020) do Intune na versão beta.
 
 ### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
 - Personalize um [contrato de termos de uso](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) para oferecer suporte a uma data de vencimento e cadência de contrato, exigir que o usuário aceite o contrato por dispositivo ou aceite novamente o contrato em uma frequência definida. 
-- Use a propriedade do **arquivo** para navegar até um [contrato personalizado](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) para termos de uso. Não use a propriedade de **arquivos** .
+- Use a propriedade do **arquivo** para navegar até um [contrato personalizado](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) para termos de uso. Não use a propriedade de **arquivos**.
 - Adicione, remova e liste patrocinadores internos ou externos que podem aprovar solicitações de uma [organização conectada](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true) para acessar um grupo, aplicativo ou site do SharePoint Online. Para saber mais, confira [gerenciamento de direitos](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
@@ -91,7 +175,7 @@ GA do recurso que permite aos organizadores permitir propostas de horário alter
 Removida do recurso [changeNotification](/graph/api/resources/changenotification) a propriedade **sequenceNumber** introduzida erroneamente.
 
 ### <a name="groups"></a>Grupos
-DG das seguintes propriedades para a entidade [group](/graph/api/resources/group): **assignedLabels** , **expirationDateTime** , **membershipRule** , **membershipRuleProcessingState** , **preferredLanguage** e **theme** .
+DG das seguintes propriedades para a entidade [group](/graph/api/resources/group): **assignedLabels** , **expirationDateTime** , **membershipRule** , **membershipRuleProcessingState** , **preferredLanguage** e **theme**.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 - Remover um usuário como proprietário registrado ou usuário de um [dispositivo](/graph/api/resources/device).
@@ -234,7 +318,7 @@ Além de monitorar as alterações incrementais de eventos em um **calendarView*
 Atualizações do Intune em [junho](changelog.md#june-2020) — em beta.
 
 ### <a name="education"></a>Educação
-- Possibilidade de usar permissões delegadas `EduRoster.ReadBasic` para [obter](/graph/api/educationuser-get?view=graph-rest-beta&preserve-view=true) a ID de um(a) [professor(a)](/graph/api/resources/educationteacher?view=graph-rest-beta&preserve-view=true) ou [aluno(a)](/graph/api/resources/educationstudent?view=graph-rest-beta&preserve-view=true) em um programa de uma fonte externa, na forma de uma propriedade **externalId** .
+- Possibilidade de usar permissões delegadas `EduRoster.ReadBasic` para [obter](/graph/api/educationuser-get?view=graph-rest-beta&preserve-view=true) a ID de um(a) [professor(a)](/graph/api/resources/educationteacher?view=graph-rest-beta&preserve-view=true) ou [aluno(a)](/graph/api/resources/educationstudent?view=graph-rest-beta&preserve-view=true) em um programa de uma fonte externa, na forma de uma propriedade **externalId**.
 - Use a propriedade **externalSource** para monitorar o valor `lms` se uma [organização](/graph/api/resources/educationorganization?view=graph-rest-beta&preserve-view=true) de ensino ou [aula](/graph/api/resources/educationclass?view=graph-rest-beta&preserve-view=true) forem criados a partir de um sistema de gerenciamento de aprendizagem (LMS).
 
 ### <a name="identity-and-access"></a>Identidade e acesso
@@ -244,7 +328,7 @@ Atualizações do Intune em [junho](changelog.md#june-2020) — em beta.
 
 ### <a name="search"></a>Busca
 - Utilizar os aperfeiçoamentos de uma [propriedade](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true) em um [esquema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true): **isRefinable** para habilitar a filtragem dos resultados de busca e obter um controle mais refinado da experiência de busca, além de **aliases** e **rótulos** para maior relevância.
-- Capacidade de especificar até 128 recursos de **propriedades** em um **esquema** .
+- Capacidade de especificar até 128 recursos de **propriedades** em um **esquema**.
 - Use [get externalItem](/graph/api/externalitem-get?view=graph-rest-beta&preserve-view=true) para fins de diagnóstico.
 
 ### <a name="users"></a>Usuários
@@ -299,20 +383,20 @@ Confira as novas diretrizes de SDK em:
 ### <a name="teamwork"></a>Trabalho em equipe
 - Se o seu cenário envolver reuniões online no Teams, confira as novas diretrizes sobre [como escolher](choose-online-meeting-api.md) entre a [API de calendário](outlook-calendar-online-meetings.md) e a [API de comunicações na nuvem](cloud-communications-online-meetings.md) para criar e ingressar em reuniões online.
 - [Enviar](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) e [responder](/graph/api/channel-post-messagereply?view=graph-rest-1.0&preserve-view=true) mensagens em um [canal](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true).
-- Obtenha a localização dos arquivos do OneDrive for Business de um [canal](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true), usando a propriedade de navegação **fileFolder** .
+- Obtenha a localização dos arquivos do OneDrive for Business de um [canal](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true), usando a propriedade de navegação **fileFolder**.
 
 ### <a name="teamwork--shifts"></a>Trabalho em equipe | Turnos
 GA da [API de turnos](/graph/api/resources/shift?view=graph-rest-1.0&preserve-view=true) na v1.0: use esta API em aplicativos de produção para criar, atualizar e gerenciar cronogramas de funcionários da linha de frente, permitindo que eles estejam em contato e colaborem efetivamente.
 
 ### <a name="users"></a>Usuários
 - Inscreva-se para alterar notificações de recursos de [usuário](/graph/api/resources/user) no Microsoft Cloud China operado pela 21Vianet.
-- Acompanhe o status e a data/hora da última alteração de status de um usuário externo, que foi [convidado](/graph/api/invitation-post?view=graph-rest-1.0&preserve-view=true) a ingressar na organização, usando as propriedades **externalUserState** e **externalUserStateChangeDateTime** do recurso de **usuário** .
+- Acompanhe o status e a data/hora da última alteração de status de um usuário externo, que foi [convidado](/graph/api/invitation-post?view=graph-rest-1.0&preserve-view=true) a ingressar na organização, usando as propriedades **externalUserState** e **externalUserStateChangeDateTime** do recurso de **usuário**.
 
 ## <a name="may-2020-new-in-preview-only"></a>Maio de 2020: novo somente para visualização
 
 ### <a name="change-notifications"></a>Notificações de alteração
 - Use os tipos esquematizados formalmente [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) e [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) para processar notificações de alteração de recursos. 
-- Acompanhe se as notificações estão em sequência ou se uma notificação está ausente, usando a propriedade **sequenceNumber** no recurso **changeNotification** .
+- Acompanhe se as notificações estão em sequência ou se uma notificação está ausente, usando a propriedade **sequenceNumber** no recurso **changeNotification**.
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 - Os recursos da [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) e do [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) agora estão em paridade e têm as mesmas propriedades.
@@ -325,7 +409,7 @@ Atualizações de [maio](changelog.md#may-2020) do Intune beta.
 
 ### <a name="groups"></a>Grupos
 - [Avalie](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta&preserve-view=true) se um usuário ou dispositivo é ou seria membro de um grupo dinâmico, usando a regra existente do [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) ou uma regra especificada. As [associações dinâmicas baseadas em regras](/azure/active-directory/users-groups-roles/groups-dynamic-membership) reduz a sobrecarga administrativa na adição e remoção de membros.
-- Ao criar um [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) do Microsoft 365, configure os comportamentos do grupo especificando-os na propriedade **resourceBehaviorOptions** . Por exemplo, permita que os membros postem, inscrevam novos membros na conversa, desabilitem o email de boas-vindas e ocultem o grupo nas experiências do Outlook.
+- Ao criar um [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) do Microsoft 365, configure os comportamentos do grupo especificando-os na propriedade **resourceBehaviorOptions**. Por exemplo, permita que os membros postem, inscrevam novos membros na conversa, desabilitem o email de boas-vindas e ocultem o grupo nas experiências do Outlook.
 - Especifique os recursos a serem fornecidos na propriedade **resourceProvisioningOptions** que normalmente não fazem parte da criação do [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) padrão. Atualmente há suporte para provisionamento de um grupo como uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) com os recursos do Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
@@ -350,14 +434,14 @@ Atualizações de [maio](changelog.md#may-2020) do Intune beta.
 - [Criar ou atualizar um evento como uma reunião online](outlook-calendar-online-meetings.md):
   - Para cada **calendário** , especifique os provedores de reuniões online permitidos e padrão.
   - Crie ou atualize um [evento](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) que esteja disponível online e forneça detalhes para que os participantes possam ingressar na reunião online. 
-  - Em particular, use as novas propriedades **onlineMeetingProvider** e **onlineMeeting** do **evento** para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um [problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade **onlineMeetingUrl** .
+  - Em particular, use as novas propriedades **onlineMeetingProvider** e **onlineMeeting** do **evento** para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um [problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade **onlineMeetingUrl**.
 - Adicione [anexos de arquivo de até 150 MB](outlook-large-attachments.md) a um [evento](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true).
 
 ### <a name="files"></a>Arquivos
 - [Check-out](/graph/api/driveitem-checkout?view=graph-rest-1.0&preserve-view=true) ou [check-in](/graph/api/driveitem-checkin?view=graph-rest-1.0&preserve-view=true) de um arquivo para o OneDrive para gerenciar a atualização do arquivo e disponibilizar atualizações para outras pessoas quando as atualizações estiverem prontas.
 - Aplique senha opcional e data/hora de vencimento como parâmetros do [convite](/graph/api/driveitem-invite?view=graph-rest-1.0&preserve-view=true) e das ações de [criar link de compartilhamento](/graph/api/driveitem-createlink?view=graph-rest-1.0&preserve-view=true) para compartilhar um [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0&preserve-view=true).
-- Obtenha ou defina a senha e a data/hora de vencimento de uma [permissão](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true) e rastreie o [identitySet](/graph/api/resources/identityset?view=graph-rest-1.0&preserve-view=true) de usuários que receberam permissão para compartilhar um **driveItem** .
-- Obtenha a [permissão](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true) de um [item de drive compartilhado](/graph/api/resources/shareddriveitem?view=graph-rest-1.0&preserve-view=true) usando a propriedade de navegação de **permissão** .
+- Obtenha ou defina a senha e a data/hora de vencimento de uma [permissão](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true) e rastreie o [identitySet](/graph/api/resources/identityset?view=graph-rest-1.0&preserve-view=true) de usuários que receberam permissão para compartilhar um **driveItem**.
+- Obtenha a [permissão](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true) de um [item de drive compartilhado](/graph/api/resources/shareddriveitem?view=graph-rest-1.0&preserve-view=true) usando a propriedade de navegação de **permissão**.
 - Limite os usuários com um [link de compartilhamento](/graph/api/resources/sharinglink?view=graph-rest-1.0&preserve-view=true) para somente visualização e não poder baixar o conteúdo de um **driveItem** compartilhado no OneDrive for Business ou no SharePoint.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
@@ -369,7 +453,7 @@ Adicione [anexos de arquivo de até 150 MB](outlook-large-attachments.md) a uma 
 
 ### <a name="sites-and-lists"></a>Sites e listas
 - [Faça uma lista de sites](/graph/api/sites-list-followed?view=graph-rest-1.0&preserve-view=true) que o usuário conectado seguiu.
-- Identifique a região geográfica de um [conjunto de sites](/graph/api/resources/sitecollection?view=graph-rest-1.0&preserve-view=true) usando a propriedade **dataLocationCode** .
+- Identifique a região geográfica de um [conjunto de sites](/graph/api/resources/sitecollection?view=graph-rest-1.0&preserve-view=true) usando a propriedade **dataLocationCode**.
 - Identifique o locatário de um arquivo, pasta ou outro item no SharePoint, acessando a propriedade **tenantId** que faça parte do **sharepointIds** de um [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0&preserve-view=true).
 
 ## <a name="april-2020-new-in-preview-only"></a>Abril de 2020: novo somente para visualização
@@ -402,7 +486,7 @@ Exibir dados de **Reunião Criada** e de **Reunião Interagida** nos relatórios
 - Obtenha o roteamento de chamadas e o contexto de entrada de um [chamada](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true).
 - Um aplicativo pode [Atualizar o status da gravação](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0&preserve-view=true) de uma chamada.
 - Gravar as informações especificamente para um [participante](/graph/api/resources/participant?view=graph-rest-1.0&preserve-view=true), incluindo o iniciador e o status da gravação.
-- Identifique de forma exclusiva os participantes de uma conferência ou [chamada](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true) de participante a participante usando a propriedade **callChainId** .
+- Identifique de forma exclusiva os participantes de uma conferência ou [chamada](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true) de participante a participante usando a propriedade **callChainId**.
 - Identifique como parte do [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0&preserve-view=true) o código do país e o tipo de ponto de extremidade (como o Skype for Business ou o Skype for Business VOIP) do participante.
 - Os parceiros de dispositivos de VTC (teleconferência por vídeo de terceiros) podem registrar e fornecer dados de qualidade de mídia para dispositivos de teleconferência por vídeo através de um bot de CVI (Interoperabilidade de vídeo em nuvem) e usando a função [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0&preserve-view=true). A qualidade da mídia inclui dados do tipo aberto para [áudio](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-1.0&preserve-view=true), [vídeo](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-1.0&preserve-view=true) e [compartilhamento de tela](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-1.0&preserve-view=true).
 
@@ -448,7 +532,7 @@ Atualizações de [março](changelog.md#march-2020) do Intune
 ### <a name="search"></a>Pesquisa
 - Para adicionar dados em um arquivo para pesquisar resultados, indexe os dados como um [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true). O tipo **externalFile** foi substituído.
 - Agora é possível [atualizar](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) um [item no índice](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true), atualizando especificamente a representação de texto simples do item (representado pela propriedade **conteúdo** ), ou o conjunto de propriedades do item (representado pela propriedade **propriedades** ). A atualização de qualquer propriedade no conjunto de propriedades substitui todo conjunto de propriedades, por isso certifique-se de incluir explicitamente todas as propriedades do item na atualização.
-- Verifique o `HTTP 429` e o cabeçalho de resposta `Retry-After` depois de chamar a operação para [criar](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true), [atualizar](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) ou [excluir](/graph/api/externalitem-delete?view=graph-rest-beta&preserve-view=true) de **externalItem** . Desativar solicitações usando o atraso `Retry-After` é a forma mais rápida de se recuperar da [limitação](throttling.md#best-practices-to-handle-throttling).
+- Verifique o `HTTP 429` e o cabeçalho de resposta `Retry-After` depois de chamar a operação para [criar](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true), [atualizar](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) ou [excluir](/graph/api/externalitem-delete?view=graph-rest-beta&preserve-view=true) de **externalItem**. Desativar solicitações usando o atraso `Retry-After` é a forma mais rápida de se recuperar da [limitação](throttling.md#best-practices-to-handle-throttling).
 
 ### <a name="teamwork"></a>Trabalho em equipe
 Use a `ChannelMessage.Read.All` permissão no nível do aplicativo para ler [instâncias de](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)chatMessage em canais sem um usuário conectado.
@@ -503,7 +587,7 @@ Use o método [assignLicense](/graph/api/group-assignlicense?view=graph-rest-bet
 Como parte do gerenciamento de alerta de cliente, use o método de [alerta de atualização](/graph/api/alert-update?view=graph-rest-1.0&preserve-view=true) e atualize o campo **comentários** como `Closed in IPC` ou `Closed in MCAS`.
 
 ### <a name="teamwork"></a>Trabalho em equipe
-Use a propriedade de navegação **primaryChannel** de uma [equipe](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) para acessar o canal padrão, **Geral** .
+Use a propriedade de navegação **primaryChannel** de uma [equipe](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) para acessar o canal padrão, **Geral**.
 
 ### <a name="users"></a>Usuários
 Use a propriedade **identities** para acessar uma ou mais identidades que um [usuário](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) pode usar para entrar em uma conta de usuário do Azure AD. As identidades podem ser fornecidas pela Microsoft, por organizações ou por provedores de identidade social, como Facebook, Google ou Microsoft. Essa propriedade permite que o usuário entre na conta de usuário com uma dessas identidades.
@@ -657,13 +741,13 @@ Os desenvolvedores e os cientistas de dados agora podem usar [ferramentas para t
 - Suporte adicional para reuniões online:
   - Para cada **calendário** , especifique os provedores de reuniões online permitidos e padrão.
   - Crie ou atualize um [evento](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) que esteja disponível online e forneça detalhes para que os participantes possam ingressar na reunião online. 
-  - Em particular, use as novas propriedades **onlineMeetingProvider** e **onlineMeeting** do **evento** para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um [problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade **onlineMeetingUrl** .
+  - Em particular, use as novas propriedades **onlineMeetingProvider** e **onlineMeeting** do **evento** para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um [problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade **onlineMeetingUrl**.
 
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
 Atualizações de [outubro](changelog.md#october-2019) do Intune
 
 ### <a name="graph-explorer"></a>Graph Explorer
-Experimente a [próxima versão do Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/preview) e confira informações contextuais úteis, como permissões, tokens de acesso e trechos de código do SDK nas novas guias **Permissões** , **Autenticação** e **Trechos de código** . Use o controle deslizante **Visualizar** para alternar entre a [produção](https://developer.microsoft.com/graph/graph-explorer) e a nova versão de visualização do Graph Explorer.
+Experimente a [próxima versão do Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/preview) e confira informações contextuais úteis, como permissões, tokens de acesso e trechos de código do SDK nas novas guias **Permissões** , **Autenticação** e **Trechos de código**. Use o controle deslizante **Visualizar** para alternar entre a [produção](https://developer.microsoft.com/graph/graph-explorer) e a nova versão de visualização do Graph Explorer.
 
 ### <a name="groups"></a>Grupos
 - Use as propriedades **hideFromAddressLists** e **hideFromOutlookClients** para controlar a visibilidade de um [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) em determinadas partes da interface do usuário do Outlook ou em um cliente do Outlook.
@@ -743,7 +827,7 @@ Atualizações de [Setembro](changelog.md#september-2019) do Intune
   - Especifique um motivo para impor a [quarentena](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta&preserve-view=true) a um trabalho de sincronização
 
 ### <a name="teamwork"></a>Trabalho em equipe
-Use o canal **Geral** de uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) ou personalize as [configurações de membros](/graph/api/resources/teammembersettings?view=graph-rest-beta&preserve-view=true) para permitir que eles criem canais privados na **equipe** .
+Use o canal **Geral** de uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) ou personalize as [configurações de membros](/graph/api/resources/teammembersettings?view=graph-rest-beta&preserve-view=true) para permitir que eles criem canais privados na **equipe**.
 
 ### <a name="users"></a>Usuários
 - Obtenha ou atualize as identidades com as quais um [usuário](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) pode entrar em uma conta. Essas identidades podem ser fornecidas por organizações de negócios ou por provedores de identidade social, como o Facebook, o Google e a Microsoft.

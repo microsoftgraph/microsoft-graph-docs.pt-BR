@@ -1,21 +1,19 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5e55598fb1528d623b0b26fb14976574b06184e7
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 80f1a6cda0d1e42625930a6d16f481ba778851a8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566017"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983763"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$filter", "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')"));
-
 INamedLocationCollectionPage namedLocations = graphClient.identity().conditionalAccess().namedLocations()
-    .buildRequest( requestOptions )
+    .buildRequest()
+    .filter("microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')")
     .get();
 
 ```

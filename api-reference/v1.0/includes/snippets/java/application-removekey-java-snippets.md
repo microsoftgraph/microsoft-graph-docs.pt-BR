@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e691d778b0bf4937fe4d66bf08f3a3c3f73ac79b
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: b9022c785f19494725caa361ed4c44580fb600d2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334690"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983851"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String keyId = "f0b0b335-1d71-4883-8f98-567911bfdca6";
+UUID keyId = UUID.fromString("f0b0b335-1d71-4883-8f98-567911bfdca6");
 
 String proof = "eyJ0eXAiOiJ...";
 
