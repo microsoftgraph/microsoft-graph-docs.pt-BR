@@ -1,21 +1,21 @@
 ---
-title: Usar marcas de anotação nas páginas do OneNote
-description: " Blocos de anotações empresariais no Office 365"
+title: Usar marcas de notas nas páginas do OneNote
+description: " Notebooks empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: fb1067b2b564e8431aaa8a4bf8ca094a2b5d127d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c238f51ccce57b51fa3e17340c2d92321c3b6185
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555450"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895479"
 ---
-# <a name="use-note-tags-in-onenote-pages"></a>Usar marcas de anotação nas páginas do OneNote
+# <a name="use-note-tags-in-onenote-pages"></a>Usar marcas de notas nas páginas do OneNote
 
-**Aplica-se a** Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Office 365
+**Aplica-se a** notebooks do consumidor no OneDrive | Notebooks empresariais no Microsoft 365
 
-Use o atributo `data-tag` para adicionar e atualizar caixas de seleção, estrelas e outras marcas de anotação incorporadas em uma página do OneNote, conforme mostrado na imagem a seguir.
+Use o atributo `data-tag` para adicionar e atualizar caixas de seleção, estrelas e outras marcas de notas integradas em uma página do OneNote, conforme mostrado na imagem a seguir.
 
 ![Três marcas de anotação exibidas em uma página do OneNote.](images/note-tags-example.png)
 
@@ -26,19 +26,19 @@ Use o atributo `data-tag` para adicionar e atualizar caixas de seleção, estrel
 
 No código HTML de uma página do OneNote, uma marca de anotação é representada pelo atributo `data-tag`. Por exemplo:
 
-- Uma caixa de tarefas pendentes desmarcada: `<p data-tag="to-do">` 
+- Uma caixa de tarefas pendentes desmarcada: `<p data-tag="to-do">`
 
-- Uma caixa de tarefas pendentes marcada: `<p data-tag="to-do:completed">` 
+- Uma caixa de tarefas pendentes marcada: `<p data-tag="to-do:completed">`
 
-- Uma estrela:  `<h2 data-tag="important">` 
+- Uma estrela:  `<h2 data-tag="important">`
 
 O valor `data-tag` é composto por uma forma e, às vezes, um status (confira todos os [valores compatíveis](#built-in-note-tags-for-onenote)).
 
-| Propriedade | Descrição |  
-|:------|:------|  
-| forma | O identificador da marca de anotação (exemplo: `to-do` ou `important`). |  
-| status | O status das marcas de anotação da caixa de seleção. Isso só é usado para configurar caixas de seleção como concluídas. |  
- 
+| Propriedade | Descrição |
+|:------|:------|
+| forma | O identificador da marca de anotação (exemplo: `to-do` ou `important`). |
+| status | O status das marcas de anotação da caixa de seleção. Isso só é usado para configurar caixas de seleção como concluídas. |
+
 
 <a name="note-tags"></a>
 
@@ -58,20 +58,20 @@ Separe várias marca de anotação por vírgulas:
 
 Você pode definir uma `data-tag` nos seguintes elementos:
 
-- p 
+- p
 - ul, ol, li (saiba mais sobre [marcas de anotação em listas](#note-tags-on-lists))
-- img 
-- h1 – h6 
-- título 
+- img
+- h1 – h6
+- título
 
 Confira [Marcas de anotação incorporadas](#built-in-note-tags-for-onenote) para obter uma lista de marcas de anotação que podem ser usadas com o Microsoft Graph. Não há suporte para adicionar ou atualizar marcas personalizadas usando o Microsoft Graph.
- 
+
 ### <a name="examples"></a>Exemplos
 
 Veja uma lista simples de tarefas pendentes com o primeiro item marcado como concluído.
 
-```html 
-<p data-tag="to-do:completed" data-id="prep">Till garden bed</p> 
+```html
+<p data-tag="to-do:completed" data-id="prep">Till garden bed</p>
 <p data-tag="to-do" data-id="spring">Plant peas and spinach</p>
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
@@ -95,7 +95,7 @@ Authorization: Bearer {token}
 
 A seguinte solicitação cria uma página que contém todas as [marcas de anotação incorporadas](#built-in-note-tags-for-onenote).
 
-```html 
+```html
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
 
 Content-Type: text/html
@@ -162,7 +162,7 @@ Authorization: Bearer {token}
     <p data-tag="important">Next time, <b>don't</b> forget to invite <span style="background-color:yellow">Dan</span>.</p>
   </body>
 </html>
-``` 
+```
 
 Para obter mais informações sobre a criação de páginas, confira [Criar páginas do OneNote](onenote-create-page.md). Para obter mais informações sobre a atualização de páginas, confira [Atualizar páginas do OneNote](onenote-update-page.md).
 
@@ -202,21 +202,21 @@ O código a seguir mostra como algumas dessas regras são aplicadas. O HTML de e
 
 #### <a name="input-html"></a>HTML de entrada
 
-```html 
-<!--To display the same note tag on all list items, define note tags on the ul or ol.--> 
+```html
+<!--To display the same note tag on all list items, define note tags on the ul or ol.-->
 <ul data-tag="project-a" data-id="agenda">
   <li>An item with a Project A note tag</li>
   <li>An item with a Project A note tag</li>
 </ul>
 
-<!--To display unique note tags on list items, don't nest li elements in a ul or ol.--> 
+<!--To display unique note tags on list items, don't nest li elements in a ul or ol.-->
 <li data-tag="idea" data-id="my-idea">An item with an Idea note tag</li>
 <li data-tag="question" data-id="my-question">An item with a Question note tag</li>
 ```
- 
+
 #### <a name="output-html"></a>HTML de saída
 
-```html 
+```html
 <ul>
   <li><span data-tag="project-a">An item with a Project A note tag</span></li>
   <li><span data-tag="project-a">An item with a Project A note tag</span></li>
@@ -234,13 +234,13 @@ O código a seguir mostra como algumas dessas regras são aplicadas. O HTML de e
 
 As marcas de anotação incorporadas são incluídas no HTML de saída quando você obtém o conteúdo da página:
 
-`GET ../api/v1.0/pages/{page-id}/content` 
+`GET ../api/v1.0/pages/{page-id}/content`
 
 Um atributo `data-tag` no HTML de saída sempre inclui um valor de forma e inclui apenas um status se ele representar uma marca de anotação de caixa de seleção definida como concluída. Os exemplos a seguir mostram o HTML de entrada usado para criar algumas marcas de anotação e o HTML de saída que é retornado.
 
 #### <a name="input-html"></a>HTML de entrada
 
-```html 
+```html
 <h1>Status meeting</h1>
 <p data-tag="important">Next week's meeting has been moved to <b>Wednesday</b>.</p>
 <p data-tag="question">What are the exact dates for the conference?</p>
@@ -254,7 +254,7 @@ Um atributo `data-tag` no HTML de saída sempre inclui um valor de forma e inclu
 
 #### <a name="output-html"></a>HTML de saída
 
-```html 
+```html
 <h1 style="...">Status meeting</h1>
 <p data-tag="important">Next week's meeting has been moved to <span style="font-weight:bold">Wednesday</span>.</p>
 <p data-tag="question">What are the exact dates for the conference?</p>
@@ -279,34 +279,61 @@ Observe que o atributo `data-tag` definido no nível de lista é enviado para se
 
 O OneNote inclui as seguintes marcas de anotação incorporadas:
 
-![Todas as marcas de anotação internas.](images/note-tags-all.png)
+![Todas as marcas de nota integradas.](images/note-tags-all.png)
 
-Os valores que você pode atribuir ao atributo `data-tag` são mostrados na tabela abaixo. Não há suporte para marcas personalizadas.
+Os valores que você pode atribuir ao atributo `data-tag` são mostrados na lista a seguir. As marcas personalizadas não são suportadas.
 
-||Rótulos||
-|:---|:---|:-----|
-|`shape[:status]` |`to-do`<br/><br/>`to-do:completed`|`important`|
-|`question`|`definition`|`highlight`|
-|`contact`|`address`|`phone-number`|
-|`web-site-to-visit`|`idea`|`password`|
-|`critical`|`project-a`|`project-b`|
-|`remember-for-later`|`movie-to-see`|`book-to-read`|
-|`music-to-listen-to`|`source-for-article`|`remember-for-blog`|
-|`discuss-with-person-a`<br/><br/>`discuss-with-person-a:completed`|`discuss-with-person-b`<br/><br/>`discuss-with-person-b:completed`|`discuss-with-manager`<br/><br/>`discuss-with-manager:completed`|
-|`send-in-email`|`schedule-meeting`<br/><br/>`schedule-meeting:completed`|`call-back`<br/><br/>`call-back:completed`|
-|`to-do-priority-1`<br/><br/>`to-do-priority-1:completed`|`to-do-priority-2`<br/><br/>`to-do-priority-2:completed`|`client-request`<br/><br/>`client-request:completed`|
+- `shape[:status]`
+- `to-do`
+- `to-do:completed`
+- `important`
+- `question`
+- `definition`
+- `highlight`
+- `contact`
+- `address`
+- `phone-number`
+- `web-site-to-visit`
+- `idea`
+- `password`
+- `critical`
+- `project-a`
+- `project-b`
+- `remember-for-later`
+- `movie-to-see`
+- `book-to-read`
+- `music-to-listen-to`
+- `source-for-article`
+- `remember-for-blog`
+- `discuss-with-person-a`
+- `discuss-with-person-a:completed`
+- `discuss-with-person-b`
+- `discuss-with-person-b:completed`
+- `discuss-with-manager`
+- `discuss-with-manager:completed`
+- `send-in-email`
+- `schedule-meeting`
+- `schedule-meeting:completed`
+- `call-back`
+- `call-back:completed`
+- `to-do-priority-1`
+- `to-do-priority-1:completed`
+- `to-do-priority-2`
+- `to-do-priority-2:completed`
+- `client-request`
+- `client-request:completed`
 
 
 <a name="request-response-info"></a>
 
-## <a name="response-information"></a>Informações de resposta
+## <a name="response-information"></a>Informação de réplica
 
 O Microsoft Graph retornará as seguintes informações na resposta.
 
-| Dados de resposta | Descrição |  
-|------|------|  
-| Código de êxito | Um código de status HTTP 201 para uma solicitação POST bem-sucedida e um código de status HTTP 204 para uma solicitação PATCH bem-sucedida. |  
-| Erros | Leia [Códigos de erro para APIs do OneNote no Microsoft Graph](onenote-error-codes.md) para saber mais sobre erros do OneNote que poderão ser retornados pelo Microsoft Graph. |  
+| Dados de resposta | Descrição |
+|------|------|
+| Código de êxito | Um código de status HTTP 201 para uma solicitação POST bem-sucedida e um código de status HTTP 204 para uma solicitação PATCH bem-sucedida. |
+| Erros | Leia [Códigos de erro para APIs do OneNote no Microsoft Graph](onenote-error-codes.md) para saber mais sobre erros do OneNote que poderão ser retornados pelo Microsoft Graph. |
 
 
 <a name="permissions"></a>
@@ -319,12 +346,12 @@ Para criar ou atualizar páginas do OneNote, solicite permissões apropriadas. E
 
 - Notes.Create
 - Notes.ReadWrite
-- Notes.ReadWrite.All  
+- Notes.ReadWrite.All
 
 #### <a name="permissions-for-patch-pages"></a>Permissões para páginas PATCH
 
 - Notes.ReadWrite
-- Notes.ReadWrite.All  
+- Notes.ReadWrite.All
 
 Para saber mais sobre escopos de permissão e como eles funcionam, confira [Escopos de permissão do OneNote](permissions-reference.md).
 
@@ -338,7 +365,7 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Esco
 - [Integrar com o OneNote](integrate-with-onenote.md)
 - [Blog de desenvolvedor do OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [Perguntas sobre desenvolvimento do OneNote no Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)  
- 
+- [Repositórios do OneNote no GitHub](https://go.microsoft.com/fwlink/?LinkID=390178)
+
 
 

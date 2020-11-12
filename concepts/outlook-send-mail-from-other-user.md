@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: 03cfa3d532b2eb0494cc220c1c315b14bd9652c1
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: becb0c4eb76e7ae337d42739f064a15b7ce233ca
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35735092"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895514"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Enviar mensagens do Outlook de outro usuário
 
@@ -58,13 +58,13 @@ Isso é exibido no Microsoft Graph, como o `sender` (usuário realmente a enviou
 }
 ```
 
-Um usuário pode conceder permissão para suas caixas de correio a outro usuário, [usando o Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926). Os administradores podem conceder permissão para qualquer lista de distribuição, grupo ou caixa de correio no [Centro de administração do Office 365](/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide).
+Um usuário pode conceder permissão para suas caixas de correio a outro usuário, [usando o Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926). Os administradores podem conceder permissão para qualquer lista de distribuição, grupo ou caixa de correio no [Centro de administração do Microsoft 365](/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide).
 
-#### <a name="send-as"></a>Enviar como
+#### <a name="send-as"></a>Enviar Como
 
 Com essa permissão, não há nenhuma indicação de que a mensagem foi enviada como um usuário diferente. As propriedades `sender` e `from` têm o mesmo valor.
 
-Os usuários não podem conceder essa permissão para suas caixas de correio. Os administradores podem conceder essa permissão no Centro de administração do Office 365.
+Os usuários não podem conceder essa permissão para suas caixas de correio. Os administradores podem conceder essa permissão no Centro de administração do Microsoft 365.
 
 ## <a name="sending-with-microsoft-graph"></a>Enviar com o Microsoft Graph
 
@@ -102,7 +102,7 @@ Depois que a mensagem é enviada, pode ser salva em pastas de itens enviados do 
 - Se o aplicativo enviar usando o `/me` ponto de extremidade (ou `/users/{user-id}` onde a `user-id` corresponde ao usuário conectado), por padrão, a mensagem será salva na pasta Itens enviados de envio do usuário.
 - Se o aplicativo enviar usando o `/users/{user-id}` onde a `user-id` corresponde à de usuário, por padrão, a mensagem será salva na da pasta Itens enviados do usuário.
     > [!IMPORTANT]
-    > Para enviar dessa maneira, o usuário de envio deve ter a permissão de caixa de correio **acesso total**, além de uma permissão **enviar em nome** ou **enviar como**.
+    > Para enviar dessa maneira, o usuário de envio deve ter a permissão de caixa de correio **acesso total** , além de uma permissão **enviar em nome** ou **enviar como**.
 
 O comportamento padrão pode ser alterado por outros fatores externos:
 

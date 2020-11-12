@@ -547,7 +547,7 @@ items:
             href: toolkit/overview.md
           - name: Introdução
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: toolkit/get-started/overview.md
               - name: Criar um aplicativo no Azure Active Directory
                 href: toolkit/get-started/add-aad-app-registration.md

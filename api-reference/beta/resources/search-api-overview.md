@@ -138,7 +138,7 @@ The properties on which the aggregation is requested need to be refinable in the
 
 Uma vez que a resposta retorne contendo a coleção de objetos [searchBucket](searchBucket.md), é possível refinar a solicitação de pesquisa somente aos elementos correspondentes contidos em uma [searchBucket](searchBucket.md). Isso é alcançado passando o valor **aggregationsFilterToken** na propriedade **aggregationFilters** da subsequente [searchRequest](./searchrequest.md).
 
-As agregações atualmente têm suporte para qualquer propriedade refinável nos seguintes tipos do SharePoint e OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md). e nos conectores do Microsoft Graph [externalItem](externalItem.md).
+As agregações atualmente têm suporte para qualquer propriedade refinável nos seguintes tipos do SharePoint e OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md) e nos conectores do Microsoft Graph [externalItem](externalItem.md).
 
 Consulte [refinar os resultados da pesquisa](/graph/search-concept-aggregation) para obter exemplos que mostram como usar a agregação para melhorar e restringir os resultados da pesquisa.
 

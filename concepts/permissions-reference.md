@@ -4,12 +4,12 @@ description: Microsoft Graph exposes granular permissions that control the acces
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 9e851a9bba165d2b58ebd41ba278706d2d84cbeb
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: a2b96c946e53e76e25f7631709403e14ee5e53f3
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921876"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993994"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -535,7 +535,35 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _ChatMessage.Send_ (visualização privada) | Enviar mensagens de chat do usuário | Permite que o aplicativo envie mensagens de chat individuais e de grupo no Microsoft Teams, em nome do usuário conectado. | Não | Não |
 
-## <a name="cloud-printing-permissions"></a>Permissões de impressão na nuvem
+---
+
+## <a name="cloud-pc-permissions"></a>Permissões do PC na nuvem
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Conta da Microsoft com suporte |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_CloudPC.Read.All_ | Leia PCs na Internet | Permite que o aplicativo leia objetos do PC na Internet, como políticas de provisionamento, em nome do usuário conectado. | Não | Não |
+|_CloudPC.ReadWrite.All_ | Ler e escrever PCs na Internet | Permite que o aplicativo crie, leia, atualize e exclua objetos do PC na Internet, como conexões locais, políticas de provisionamento e imagens do dispositivo, em nome do usuário. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+Nenhuma.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _CloudPC.Read.All_ : visualize as propriedades de todos os PCs na Internet(`GET /deviceManagement/virtualEndpoint/cloudPCs`).
+* _CloudPC.ReadWrite.All_ : edite a política de provisionamento do PC na Internet(`PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}`).
+
+#### <a name="application"></a>Aplicativo
+
+Nenhum.
+
+---
+
+## <a name="cloud-printing-permissions"></a>Permissões de impressão na internet
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1092,7 +1120,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | Permissão                  | Exibir Cadeia de Caracteres                           | Descrição                                                                                                                                                                        | Consentimento Obrigatório do Administrador |
 |:----------------------------|:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------|
 | _Mail.Read_                 | Ler emails em todas as caixas de correio               | Permite ao aplicativo ler emails em todas as caixas de correio sem um usuário conectado.                                                                                                             | Sim                    |
-| _Mail.ReadBasic.All_        | Ler emails básicos de todos usuários                 | Allows the app to read all users mailboxes except Body, BodyPreview, UniqueBody, Attachments, ExtendedProperties, and Extensions. Does not include permissions to search messages. | Sim                    |
+| _Mail.ReadBasic.All_        | Ler emails básicos de todos usuários                 | Permite que o aplicativo leia as caixas de correio de todos os usuários, exceto Body, BodyPreview, UniqueBody, Attachments, ExtendedProperties e Extensions. Não inclui permissões para pesquisar mensagens. | Sim                    |
 | _Mail.ReadWrite_            | Ler e gravar emails em todas as caixas de correio     | Permite ao aplicativo criar, ler, atualizar e excluir emails em todas as caixas de correio sem um usuário conectado. Não inclui a permissão para enviar emails.                                       | Sim                    |
 | _Mail.Send_                 | Enviar email como qualquer usuário                    | Permite ao aplicativo enviar emails como qualquer usuário sem um usuário conectado.                                                                                                                  | Sim                    |
 | _MailboxSettings.Read_      | Ler as configurações de caixa de correio do usuário           | Permite que o aplicativo leia configurações da caixa de correio do usuário sem um usuário conectado. Não inclui a permissão para enviar emails.                                                                 | Não                     |
@@ -1990,7 +2018,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _TeamsAppInstallation.ReadForUser.All_ (visualização privada) | Ler os aplicativos do Teams instalados para todos os usuários| Permite que o aplicativo leia os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteForUser.All_ (visualização privada) | Gerenciar aplicativos do Teams para todos os usuários| Permite que o aplicativo leia, instale, atualize e desinstale os aplicativos do Teams para qualquer usuário, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteSelfForUser.All_ (visualização privada) | Permitir que o aplicativo se gerencie para todos os usuários| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale para qualquer usuário, sem um usuário conectado.| Sim |
-| _TeamsAppInstallation.ReadForTeam.All_ (visualização privada) | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams que estão instalados em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
+| _TeamsAppInstallation.ReadForTeam.All_ (private preview) | Ler os aplicativos do Teams instalados para todas as equipes| Permite que o aplicativo leia os aplicativos do Teams que estão instalados em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteForTeam.All_ (visualização privada) | Gerenciar aplicativos de Teams para todas as equipes| Permite que o aplicativo leia, instale, atualize e desinstale os aplicativos do Teams em qualquer equipe, sem um usuário conectado. Não oferece a capacidade de ler configurações específicas do aplicativo.| Sim |
 | _TeamsAppInstallation.ReadWriteSelfForTeam.All_ (visualização privada) | Permitir que o aplicativo do Teams se gerencie para todas as equipes| Permite que o aplicativo do Teams se leia, se instale, se atualize e se desinstale em qualquer equipe, sem um usuário conectado.| Sim |
 
