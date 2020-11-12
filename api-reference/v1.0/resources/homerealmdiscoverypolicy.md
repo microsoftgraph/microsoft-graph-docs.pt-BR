@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0aed08d4c62aa35d2c7269d043d55cc7e91bc2f
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: fe1358f29ee2f6517167a4d9214923db19af3ed4
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921890"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993956"
 ---
 # <a name="homerealmdiscoverypolicy-resource-type"></a>tipo de recurso homeRealmDiscoveryPolicy
 
@@ -90,7 +90,7 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "isOrganizationDefault": true,
+  "isOrganizationDefault": true
 }
 ```
 
