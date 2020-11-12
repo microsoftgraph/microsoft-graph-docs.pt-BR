@@ -1,21 +1,19 @@
 ---
-description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 66bf5e253f37bda3be0083f7e36aefab86a43112
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+description: Automatically generated file. DO NOT MODIFY
+ms.openlocfilehash: d745cca1b139845b3b42427fe75df67ae38ab602
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905002"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983858"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("$skiptoken", "c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA="));
-
 ChatMessage chatMessage = graphClient.teams("{id}").channels("{id}").messages("delta")
-    .buildRequest( requestOptions )
+    .buildRequest()
+    .skipToken("c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA=")
     .get();
 
 ```

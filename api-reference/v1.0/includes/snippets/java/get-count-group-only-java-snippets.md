@@ -1,11 +1,11 @@
 ---
-description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 19bc8a085e4941b1e2234a2c159ad4b632d5e600
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+description: Automatically generated file. DO NOT MODIFY
+ms.openlocfilehash: 2bf53f83dda9e4b2c0929209ab482943532406f8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903753"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983020"
 ---
 ```java
 
@@ -14,7 +14,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
 
-Int32 int32 = graphClient.servicePrincipals("{id}").memberOf().microsoft.graph.group().$count()
+int int32 = graphClient.servicePrincipals("{id}").memberOf().microsoft.graph.group().count()
     .buildRequest( requestOptions )
     .get();
 
