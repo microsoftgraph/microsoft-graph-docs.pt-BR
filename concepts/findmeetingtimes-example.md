@@ -2,29 +2,29 @@
 title: Encontrar possíveis horários de reunião no calendário do Outlook
 description: 'Seja no trabalho ou em uma instituição de ensino, procurar um horário e local em comum para uma reunião geralmente significa uma sobrecarga. Os aplicativos do Microsoft Graph podem usar o '
 localization_priority: Priority
-ms.openlocfilehash: 94e9cd7455d08741851662cc071e690b3ad0a558
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ae59b778cc26b47c2254d5c52d7da0f3d5fc8e1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526404"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897208"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>Encontrar possíveis horários de reunião no calendário do Outlook
 
 Seja no trabalho ou em uma instituição de ensino, procurar um horário e local em comum para uma reunião geralmente significa uma sobrecarga. Os aplicativos do Microsoft Graph podem usar a ação [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) para identificar quaisquer possíveis horários de reunião que atendam aos requisitos de horário, local e outras restrições.   
 
-A ação **findMeetingTimes** permite especificar condições, como o intervalo de horário/data, a duração, os participantes opcionais ou obrigatórios, e a natureza da atividade (**activityDomain**). A ação leva em consideração a agenda de trabalho e o status de disponibilidade dos participantes e dos organizadores, e sugere horários apropriados para os participantes e o tipo de atividade. Por exemplo, as sugestões para uma atividade relacionada ao trabalho sempre ocorrem durante o horário de trabalho do organizador e dos participantes, e as sugestões em que os participantes obrigatórios estão disponíveis são classificadas mais acima na lista de sugestões.
+A ação **findMeetingTimes** permite especificar condições, como o intervalo de horário/data, a duração, os participantes opcionais ou obrigatórios, e a natureza da atividade ( **activityDomain** ). A ação leva em consideração a agenda de trabalho e o status de disponibilidade dos participantes e dos organizadores, e sugere horários apropriados para os participantes e o tipo de atividade. Por exemplo, as sugestões para uma atividade relacionada ao trabalho sempre ocorrem durante o horário de trabalho do organizador e dos participantes, e as sugestões em que os participantes obrigatórios estão disponíveis são classificadas mais acima na lista de sugestões.
 
-No Office 365, as horas de trabalho e os fusos horários são configuráveis por caixa de correio. A ação **findMeetingTimes** cuida das variações de fuso horário entre o organizador e os participantes. Por padrão, **findMeetingTimes** retorna sugestões em UTC. Você pode usar o seguinte cabeçalho de solicitação para que **findMeetingTimes** retorne sugestões expressas em um fuso horário específico.
+No Microsoft 365, as horas de trabalho e os fusos horários são configuráveis por caixa de correio. A ação **findMeetingTimes** lida com variações de fuso horário entre o organizador e os participantes. Por padrão, a ação **findMeetingTimes** retorna sugestões em UTC. Você pode usar o seguinte cabeçalho de solicitação para que a ação **findMeetingTimes** retorne sugestões expressas em um fuso horário específico.
 ```
 Prefer: outlook.timezone="{time-zone-string}}"
 ```
 
-Especialmente útil para reuniões maiores, você pode especificar um percentual (**minimumAttendeePercentage**) de quorum e fazer com que **findMeetingTimes** retorne sugestões somente se essa disponibilidade mínima de participantes for atingida.
+Especialmente útil para reuniões maiores, você pode especificar um percentual ( **minimumAttendeePercentage** ) de quorum e fazer com que **findMeetingTimes** retorne sugestões somente se essa disponibilidade mínima de participantes for atingida.
 
-Se **findMeetingTimes** não puder sugerir nenhum horário de reunião, ele indicará um motivo específico (**emptySuggestionsReason**), como o organizador ou um participante obrigatório que não esteja disponível. Com base nesse valor, é possível ajustar melhor os parâmetros e a chamada **findMeetingTimes** novamente.
+Se **findMeetingTimes** não puder sugerir nenhum horário de reunião, ele indicará um motivo específico ( **emptySuggestionsReason** ), como o organizador ou um participante obrigatório que não esteja disponível. Com base nesse valor, é possível ajustar melhor os parâmetros e a chamada **findMeetingTimes** novamente.
 
->**Observação** A ação **findMeetingTimes** está disponível no momento para as caixas de correio do Office 365 corporativa ou de estudante, mas não para caixas de correio pessoais do outlook.com.
+>**Observação** A ação **findMeetingTimes** está atualmente disponível para caixas de correio de trabalho ou escolares da Microsoft 365, mas não para caixas de correio pessoais do outlook.com.
 
 ## <a name="example"></a>Exemplo
 
@@ -32,25 +32,25 @@ O exemplo a seguir mostra como usar a ação **findMeetingTimes** para retornar 
 
 ### <a name="organizers-calendar"></a>Calendário do organizador
 
-![O calendário de trabalho do organizador de 17 a 21 de abril mostrando os horários de disponibilidade](./images/findmeetingtimes_organizer_free_busy.jpg "O calendário de trabalho do organizador de 17 a 21 de abril mostrando os horários de disponibilidade")
+![O calendário de trabalho do organizador para os dias 17 a 21 de abril, mostrando os horários disponíveis](./images/findmeetingtimes_organizer_free_busy.jpg "O calendário de trabalho do organizador para os dias 17 a 21 de abril, mostrando os horários livres")
 
 ### <a name="attendees-calendar"></a>Calendário do participante
 
-![O calendário de trabalho do participante de 17 a 21 de abril mostrando os horários de disponibilidade](./images/findmeetingtimes_attendee_free_busy.jpg "O calendário de trabalho do participante de 17 a 21 de abril mostrando os horários de disponibilidade")
+![O calendário de trabalho do participante para os dias 17 a 21 de abril, mostrando os horários disponíveis](./images/findmeetingtimes_attendee_free_busy.jpg "O calendário de trabalho do participante para os dias 17 a 21 de abril, mostrando os horários disponíveis")
 
-O exemplo faz 2 chamadas para **findMeetingTimes**:
+O exemplo faz 2 chamadas para **findMeetingTimes** :
 
-1. A primeira chamada analisa no intervalo de datas de 18 a 20 de abril. Como o participante estará ausente de 18 a 19 de abril e não há nenhum horário comum disponível em 20 de abril, a primeira chamada não retornará nenhuma sugestão, com o motivo (**emptySuggestionsReason**) que os participantes não estão disponíveis.
+1. A primeira chamada analisa no intervalo de datas de 18 a 20 de abril. Como o participante estará ausente de 18 a 19 de abril e não há nenhum horário comum disponível em 20 de abril, a primeira chamada não retornará nenhuma sugestão, com o motivo ( **emptySuggestionsReason** ) que os participantes não estão disponíveis.
 2. A segunda chamada analisa a disponibilidade em 21 de abril e retorna uma sugestão das 14h às 16h.
 
 As duas chamadas para **findMeetingTimes** incluem os seguintes parâmetros. Todos os [parâmetros](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body) para **findMeetingTimes** são opcionais.
 
-- **attendees**: um participante, Sara Melo, definido como `required` para a propriedade **type**
-- **locationConstraint**: não requer nenhuma sugestão de localização
-- **timeConstraint**: a primeira chamada analisa o intervalo de datas/horário de 18 de abril, às 9h, a 20 de abril, às 17h; depois que a primeira chamada não conseguir sugerir nenhum horário, a segunda chamada analisará 21 de abril, das 9h às 17h
-- **meetingDuration**: duas horas
-- **returnSuggestionReasons**: este exemplo requer um motivo para cada sugestão
-- **minimumAttendeePercentage**: 100%, uma vez que o participante deve ser capaz de participar de qualquer horário sugerido
+- **attendees** : um participante, Sara Melo, definido como `required` para a propriedade **type**
+- **locationConstraint** : não requer nenhuma sugestão de localização
+- **timeConstraint** : a primeira chamada analisa o intervalo de datas/horário de 18 de abril, às 9h, a 20 de abril, às 17h; depois que a primeira chamada não conseguir sugerir nenhum horário, a segunda chamada analisará 21 de abril, das 9h às 17h
+- **meetingDuration** : duas horas
+- **returnSuggestionReasons** : este exemplo requer um motivo para cada sugestão
+- **minimumAttendeePercentage** : 100%, uma vez que o participante deve ser capaz de participar de qualquer horário sugerido
 
 ### <a name="first-request"></a>Primeira solicitação
 

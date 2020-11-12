@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 255c1a421685d72aab1af8561d024d0c914e7236
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 03bf5aeb24aab47b51bd0a5f468df29044347f63
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958293"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000508"
 ---
 # <a name="list-chat-messages"></a>Listar mensagens de bate-papo
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de [mensagens](../resources/chatmessage.md) em um [bate-papo](../resources/chat.md). 
+Recupere a lista de [mensagens](../resources/chatmessage.md) em um [chat](../resources/chat.md).
+
+> **Observação** : Esta API oferece suporte à inscrição para alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite aos chamadores assinar e obter alterações em tempo real. Para obter detalhes, confira [obter notificações de](/graph/teams-changenotifications-chatmessage)de mensagens.
 
 ## <a name="permissions"></a>Permissões
 
@@ -62,7 +64,7 @@ Se bem sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 
@@ -92,7 +94,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -284,5 +286,4 @@ Content-length: 201
   ]
 }
 -->
-
 

@@ -1,16 +1,16 @@
 ---
 title: Listar mensagens do canal
-description: 'Recupere a lista de mensagens (sem as respostas) em um canal de equipe. Para obter as respostas de uma mensagem, chame as respostas da mensagem da lista ou a API de resposta da mensagem recebida. '
+description: 'Recupere a lista de mensagens (sem as respostas) em um canal de uma equipe. Para obter as respostas de uma mensagem, chame a lista de respostas de mensagens ou obter a API de resposta de mensagem. '
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a06175070d98c00216df977b3e7742a2c374928f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 94cc4967d12f9ea2ae6190d4d1691d40283c43df
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959166"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000515"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 
@@ -20,7 +20,9 @@ Namespace: microsoft.graph
 
 Recupere a lista de [mensagens](../resources/chatmessage.md) (sem as respostas) em um [canal](../resources/channel.md) de uma [equipe](../resources/team.md). 
 
-Para obter as respostas de uma mensagem, chame as [respostas de listar mensagens](channel-list-messagereplies.md) ou a API de [respostas de obter mensagens](channel-get-messagereply.md). 
+Para obter as respostas para uma mensagem, chame a [lista de respostas de mensagens](channel-list-messagereplies.md) ou a API [obter resposta de mensagem](channel-get-messagereply.md). 
+
+> **Observação** : Esta API oferece suporte à assinatura para alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite que os chamadores assinem e obtenham as alterações em tempo real. Para obter detalhes, confira [Obter notificações de mensagens](/graph/teams-changenotifications-chatmessage).
 
 ## <a name="permissions"></a>Permissões
 
@@ -66,7 +68,7 @@ Se bem sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 
@@ -97,7 +99,7 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -260,6 +262,7 @@ Content-type: application/json
 }
 ```
 
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -273,5 +276,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

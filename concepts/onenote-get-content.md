@@ -1,19 +1,19 @@
 ---
 title: Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
-description: " Blocos de anotações empresariais no Office 365"
+description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 57b4531770a78f030d093d4c486760d64d9764ea
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: cf6926103ac3fbade3c7857f1e13c01e5bc0c981
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618763"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897460"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
 
-**Aplica-se a**: Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Office 365
+**Aplica-se a** : Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Microsoft 365
 
 Para obter a estrutura e o conteúdo do OneNote, envie uma solicitação GET ao ponto de extremidade de destino. Por exemplo:
 
@@ -158,7 +158,7 @@ Obtenha o conteúdo HTML da página.
 
 `../pages/{page-id}/content[?includeIDs]`
 
-(*saiba mais sobre [conteúdo HTML retornado](onenote-input-output-html.md)*) 
+( *saiba mais sobre [conteúdo HTML retornado](onenote-input-output-html.md)* ) 
 
 <br/>
 
@@ -228,7 +228,7 @@ Obtenha todos os grupos de seções que estão diretamente em um bloco de anota�
 
 <br/>
 
-Os grupos de seções podem expandir as propriedades **sections**, **sectionGroups**, **parentNotebook** e **parentSectionGroup**.
+Os grupos de seções podem expandir as propriedades **sections** , **sectionGroups** , **parentNotebook** e **parentSectionGroup**.
 
 A ordem de classificação padrão para grupos de seções é `name asc`.
 
@@ -246,7 +246,7 @@ Obtenha um grupo de seções específico.
 
 <br/>
 
-Os grupos de seções podem expandir as propriedades **sections**, **sectionGroups**, **parentNotebook** e **parentSectionGroup**.
+Os grupos de seções podem expandir as propriedades **sections** , **sectionGroups** , **parentNotebook** e **parentSectionGroup**.
 
 A consulta padrão expande o bloco de anotações pai e o grupo de seções pai e seleciona as propriedades `id`, `name` e `self`.
 
@@ -339,11 +339,11 @@ Você pode consultar entidades do OneNote e o conteúdo de página de pesquisa p
 
 **Lembre-se:**
 
-- Todas as solicitações GET começam com a [URL raiz de serviço raiz](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Exemplos**: `https://www.onenote.com/api/v1.0/me/notes` e `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
+- Todas as solicitações GET começam com a [URL raiz de serviço raiz](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Exemplos** : `https://www.onenote.com/api/v1.0/me/notes` e `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
 
-- Os espaços na cadeia de caracteres de consulta da URL devem usar a codificação de %20.<br/><br/>**Exemplo**: `filter=title%20eq%20'biology'`
+- Os espaços na cadeia de caracteres de consulta da URL devem usar a codificação de %20.<br/><br/>**Exemplo** : `filter=title%20eq%20'biology'`
 
-- Os nomes de propriedade e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br/><br/>**Exemplo**: `filter=tolower(name) eq 'spring'`
+- Os nomes de propriedade e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br/><br/>**Exemplo** : `filter=tolower(name) eq 'spring'`
  
 
 ### <a name="search--filter"></a>search e filter  
@@ -543,7 +543,7 @@ Obtenha páginas de 51 a 100. A API retorna 20 entradas por padrão com um máxi
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **Observação:** As solicitações GET para páginas que recuperam o número padrão de entradas (ou seja, elas não especificam uma expressão **top**) retornam um link **\@odata.nextLink** na resposta que você pode usar para obter as próximas 20 entradas.
+> **Observação:** As solicitações GET para páginas que recuperam o número padrão de entradas (ou seja, elas não especificam uma expressão **top** ) retornam um link **\@odata.nextLink** na resposta que você pode usar para obter as próximas 20 entradas.
  
 
 <a name="supported-odata-query-string-options"></a>
@@ -557,8 +557,8 @@ Quando enviar solicitações GET para Microsoft Graph, você pode usar as opçõ
 | Opção de consulta | Exemplo e descrição |  
 |------|------|  
 | count | <p>`count=true`</p><p>A contagem de entidades da coleção. O valor é retornado na propriedade **odata.coun\@** t na resposta.</p> |  
-| expand | <p>`expand=sections,sectionGroups`</p><p>Propriedades de navegação para retornar embutidas na resposta. As propriedades a seguir têm suporte para expressões **expand**:<br /> – Páginas: **parentNotebook**, **parentSection**<br /> – Seções: **parentNotebook**, **parentSectionGroup**<br /> – Grupos de seções: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> – Blocos de anotações: **sections**, **sectionGroups**</p><p>Por padrão, as solicitações GET de páginas expandem **parentSection** e selecionam as propriedades **id**, **name** e **self**. Solicitações GET padrão de seções e grupos de seções expandem **parentNotebook** e **parentSectionGroup** e selecionam as propriedades pai **id**, **name** e **self**. </p><p>Pode ser usado para uma única entidade ou uma coleção.<br />Separar com vírgulas várias propriedades.<br />Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |   
-| filter | <p>`filter=isDefault eq true`</p><p>Uma expressão booliana para se deseja incluir uma entrada no conjunto de resultados. Compatível com os seguintes operadores e funções OData:<br /> – Operadores de comparação: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> – Operadores lógicos: **and**, **or**, **not**<br /> – Funções de cadeia de caracteres: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>Os nomes de [propriedade](#onenote-entity-properties) e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br /><br />**Exemplo**: `filter=tolower(name) eq 'spring'`</p> |  
+| expand | <p>`expand=sections,sectionGroups`</p><p>Propriedades de navegação para retornar embutidas na resposta. As propriedades a seguir têm suporte para expressões **expand** :<br /> – Páginas: **parentNotebook** , **parentSection**<br /> – Seções: **parentNotebook** , **parentSectionGroup**<br /> – Grupos de seções: **sections** , **sectionGroups** , **parentNotebook** , **parentSectionGroup**<br /> – Blocos de anotações: **sections** , **sectionGroups**</p><p>Por padrão, as solicitações GET de páginas expandem **parentSection** e selecionam as propriedades **id** , **name** e **self**. Solicitações GET padrão de seções e grupos de seções expandem **parentNotebook** e **parentSectionGroup** e selecionam as propriedades pai **id** , **name** e **self**. </p><p>Pode ser usado para uma única entidade ou uma coleção.<br />Separar com vírgulas várias propriedades.<br />Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |   
+| filter | <p>`filter=isDefault eq true`</p><p>Uma expressão booliana para se deseja incluir uma entrada no conjunto de resultados. Compatível com os seguintes operadores e funções OData:<br /> – Operadores de comparação: **eq** , **ne** , **gt** , **ge** , **lt** , **le**<br /> – Operadores lógicos: **and** , **or** , **not**<br /> – Funções de cadeia de caracteres: **contains** , **endswith** , **startswith** , **length** , **indexof** , **substring** , **tolower** , **toupper** , **trim** , **concat**</p><p>Os nomes de [propriedade](#onenote-entity-properties) e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br /><br />**Exemplo** : `filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>As [propriedades](#onenote-entity-properties) para classificar por, com uma ordem de classificação opcional **asc** (padrão) ou **desc**. Você pode classificar por qualquer propriedade da entidade na coleção solicitada.</p><p>A ordem de classificação padrão para blocos de anotações, grupos de seções e seções é `name asc`, e para páginas é `lastModifiedTime desc` (última página modificada primeiro).</p><p>Separe as várias propriedades com vírgulas e liste-as na ordem de aplicação desejada. Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |  
 | search | <p>`search=cell div`</p><p>Disponível somente para blocos de anotações de consumidor.</p><p>O termo ou frase para pesquisar no título da página, corpo da página, texto alt da imagem e texto da imagem OCR. Por padrão, consultas de pesquisa retornam resultados classificados por relevância.</p><p>O OneNote usa a pesquisa de texto completo do Bing para dar suporte a pesquisa de frase, lematização, tolerância de ortografia, relevância e classificação, quebra de palavras, vários idiomas e outros recursos de pesquisa de texto completo. As cadeias de caracteres de pesquisa diferenciam maiúsculas de minúsculas.</p><p>Aplica-se somente a páginas em blocos de anotações de propriedade do usuário. O conteúdo indexado é privado e só pode ser acessado pelo proprietário. As páginas protegidas por senha não são indexadas. Aplicável somente ao ponto de extremidade `pages`.</p> |  
 | select | <p>`select=id,title`</p><p>As [propriedades](#onenote-entity-properties) a serem retornadas. Pode ser usado para uma única entidade ou para uma coleção. Separar com vírgulas várias propriedades. Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |  
@@ -618,7 +618,7 @@ Microsoft Graph é compatível com os seguintes operadores e funções do OData 
 
 ## <a name="onenote-entity-properties"></a>Propriedades de entidade do OneNote
 
-As expressões de consulta **filter**, **select**, **expand** e **orderby** podem incluir propriedades de entidades do OneNote. 
+As expressões de consulta **filter** , **select** , **expand** e **orderby** podem incluir propriedades de entidades do OneNote. 
 
 #### <a name="example"></a>Exemplo
 
@@ -637,10 +637,10 @@ Para obter a lista de propriedades e seus tipos, confira os seguintes recursos n
 
 A opção de cadeia de caracteres de consulta **expand** pode ser usada com as seguintes propriedades de navegação:
 
-- Páginas: **parentNotebook**, **parentSection**
-- Seções: **parentNotebook**, **parentSectionGroup**
-- Grupos de seções: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**
-- Blocos de anotações: **sections**, **sectionGroups**
+- Páginas: **parentNotebook** , **parentSection**
+- Seções: **parentNotebook** , **parentSectionGroup**
+- Grupos de seções: **sections** , **sectionGroups** , **parentNotebook** , **parentSectionGroup**
+- Blocos de anotações: **sections** , **sectionGroups**
 
 
 <a name="request-response-info"></a>
