@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ae9f74c7385fc04efe418f7fd10b80385e093e4a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f9dbee6a85b6f0b569f14c8970b9f42a8760e59b
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959189"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000522"
 ---
 # <a name="list-channel-message-replies"></a>Listar respostas de mensagens de canal
 
@@ -21,6 +21,8 @@ Namespace: microsoft.graph
 Listar todas as respostas de uma [mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
 
 Este método lista somente as respostas da mensagem especificada, se houver. Para obter a mensagem em si, basta chamar [Message Get Channel](channel-get-message.md).
+
+> **Observação** : essa API oferece suporte à assinatura de alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite que os chamadores assinem e obtenham alterações em tempo real. Para obter detalhes, consulte [Get Notifications for messages](/graph/teams-changenotifications-chatmessage).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -56,8 +58,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [chatmessage](../resources/chatmessage.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
 Neste exemplo, a mensagem especificada tem duas respostas. Cada resposta tem um ou mais objetos [chatMessageMention](../resources/chatmessagemention.md) .
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,7 +91,7 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -230,5 +234,4 @@ Content-type: application/json
   ]
 }
 -->
-
 
