@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0849226ce4fc38070b544978e5d53f80c683dd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd85461a4429801aad5145256c711278789c95ed
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031757"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000704"
 ---
 # <a name="accesspackageassignment-resource-type"></a>tipo de recurso accessPackageAssignment
 
@@ -32,15 +32,15 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma atrib
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageId|String|O identificador do pacote de acesso. Somente leitura.|
-|assignmentPolicyId|String|O identificador da política de atribuição de pacote do Access. Somente leitura.|
-|assignmentstate|String|O estado do pacote do Access. Os valores possíveis são `Delivered` ou `Expired` . Somente leitura.|
-|assignmentStatus|String|Somente leitura.|
-|catalogID|String|O identificador do catálogo que contém o pacote do Access. Somente leitura.|
+|accessPackageId|Cadeia de caracteres|O identificador do pacote de acesso. Somente leitura.|
+|assignmentPolicyId|Cadeia de caracteres|O identificador da política de atribuição de pacote do Access. Somente leitura.|
+|assignmentstate|Cadeia de caracteres|O estado da atribuição do pacote de acesso. Os valores possíveis são `Delivering` , `Delivered` , ou `Expired` . Somente leitura.|
+|assignmentStatus|Cadeia de caracteres|Mais informações sobre o ciclo de vida da atribuição.  Os valores possíveis incluem `Delivering` ,, `Delivered` `NearExpiry1DayNotificationTriggered` ou `ExpiredNotificationTriggered` .  Somente leitura.|
+|catalogID|Cadeia de caracteres|O identificador do catálogo que contém o pacote do Access. Somente leitura.|
 |expiredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
 |Extended|Booliano|Indica se a atribuição de pacote de acesso é estendida. Somente leitura.|
-|targetId|String| A ID do assunto com a atribuição. Somente leitura.|
+|targetId|Cadeia de caracteres| A ID do assunto com a atribuição. Somente leitura.|
 |Cronograma|[requestSchedule](requestschedule.md)| Quando a atribuição de acesso deve estar no local. Somente leitura.|
 
 ## <a name="relationships"></a>Relações

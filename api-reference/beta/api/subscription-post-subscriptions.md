@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 30b2ce66a366abfb0471baf40915000edf55dad9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 43ae2e82c1a9a0af7660151af1bf07062bbef2ec
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972023"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000683"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -154,7 +154,7 @@ Estes são os valores válidos para a Propriedade Resource.
 | Tipo de recurso | Exemplos |
 |:------ |:----- |
 |[Registros de chamadas](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[Mensagem de chat](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[Mensagem de chat](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Contatos](../resources/contact.md)|`me/contacts`|
 |[Conversas](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[Unidades](../resources/driveitem.md)|`me/drive/root`|

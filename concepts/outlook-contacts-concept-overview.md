@@ -1,20 +1,20 @@
 ---
 title: Visão geral da API de contatos pessoais do Outlook
-description: Os contatos do Outlook permitem que você armazene dados de contatos pessoais e fazem parte de um hub de mensagens do Outlook no Office 365. Pelo Outlook, você pode gerenciar emails, agendar reuniões, saber mais sobre os usuários de uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
+description: Os contatos do Outlook permitem que você armazene dados de contatos pessoais e fazem parte de um hub de mensagens do Outlook no Microsoft 365. Pelo Outlook, gerencie emails, agende reuniões, saiba mais sobre os usuários de uma organização, inicie conversas online, compartilhe arquivos e colabore em grupos.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d1888b740315e94ea0bb39a664f5390085e1d2f2
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 4c95c27615cf1e74c78630b9983e98461160883d
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41839915"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897166"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Visão geral da API de contatos pessoais do Outlook
 
-Os contatos do Outlook permitem que você armazene dados de contatos pessoais e fazem parte de um hub de mensagens do Outlook no Office 365. Pelo Outlook, você pode gerenciar emails, agendar reuniões, saber mais sobre os usuários de uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
+Os contatos do Outlook permitem que você armazene dados de contatos pessoais e fazem parte de um hub de mensagens do Outlook no Microsoft 365. Pelo Outlook, gerencie emails, agende reuniões, saiba mais sobre os usuários de uma organização, inicie conversas online, compartilhe arquivos e colabore em grupos.
 
 ## <a name="why-integrate-with-outlook-personal-contacts"></a>Por que se integrar aos contatos pessoais do Outlook?
 

@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f1af347d0c043ec2b0ca2da05ba44331aab925d2
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: bfaee36a21ee1f44781ea8ae7fed84b205ac90b4
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193460"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000634"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
 Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [bate-papo](chat.md). A mensagem pode ser uma mensagem raiz ou parte de um thread definido pela propriedade **replyToId** na mensagem.
 
+> **Observação** : esse recurso oferece suporte à assinatura de alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite que os chamadores assinem e obtenham alterações em tempo real. Para obter detalhes, consulte [Get Notifications for messages](/graph/teams-changenotifications-chatMessage).
 
 ## <a name="methods"></a>Métodos
 
@@ -47,6 +47,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |**Conteúdo hospedado**| | |
 |[Listar todo o conteúdo hospedado](../api/chatmessage-list-chatmessagehostedcontents.md) | coleção [chatMessageHostedContent](../resources/chatmessagehostedcontent.md)| Obter todo o conteúdo hospedado em uma mensagem de chat.|
 |[Obter conteúdo hospedado](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Obter conteúdo hospedado de uma mensagem de chat.|
+
 
 ## <a name="properties"></a>Propriedades
 
@@ -126,4 +127,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-

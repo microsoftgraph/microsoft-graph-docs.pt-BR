@@ -4,12 +4,12 @@ description: 'No mundo atual, com tantos dispositivos, a forma como os clientes 
 localization_priority: Priority
 ms.prod: project-rome
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e68f1c0fbdbda3e8d757d54fe34970634b2a55d8
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 34e82ca45eb1093ea0e14d1123d855295d156d35
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969742"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897306"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Experiências entre dispositivos no Microsoft Graph
 
@@ -17,7 +17,7 @@ No mundo atual, com tantos dispositivos, a forma como os clientes usam os dispos
 
 No passado, o formato gerava tipos diferentes de comportamento entre os clientes. No entanto, os clientes de hoje, que usam diversos dispositivos, realizam todas as atividades em todos os seus dispositivos. As tarefas executadas diariamente (seja em casa com os familiares, seja no trabalho com colegas) não são inerentemente pensadas para dispositivos, mas sim **pensadas para as necessidades humanas**. Os clientes querem poder usar qualquer tela que esteja disponível, independentemente da origem da entrada. Na verdade, eles geralmente acham que todo dispositivo tem um limite claro e usar vários dispositivos para executar uma tarefa requer ações artificiais, como enviar um email para si mesmo ou usar pen drives. Os clientes se desgastam ao passar de um dispositivo para outro e, às vezes, tarefas importantes são perdidas devido a essa mudança de contexto. Isso também é um desafio para desenvolvedores, pois, quando os clientes sentem esse desgaste ao usar um aplicativo, envolvem-se menos com ele.
 
-A Microsoft está criando uma plataforma para possibilitar experiências que vão além de um único dispositivo, assim o cliente pode harmonizar os vários dispositivos, permitindo que você crie cenários **voltados para as necessidades humanas** que se transportam com o usuário e reduzem os limites entre os dispositivos, independentemente do formato ou da plataforma. O Microsoft Graph fornece um ponto de extremidade unificado para lhe dar acesso aos dados do Azure Active Directory e do Office 365. Agora, por meio do Microsoft Graph, você pode também acessar as atividades e os dispositivos que pertencem aos seus clientes e gerar experiências voltadas para as necessidades humanas que sejam executadas em vários dispositivos e plataformas. 
+A Microsoft está criando uma plataforma para possibilitar experiências que vão além de um único dispositivo, tornando possível harmonizar vários dispositivos, permitindo criar cenários **voltados para as necessidades humanas** que se transportam com o usuário e reduzem os limites entre os dispositivos, independentemente do formato ou da plataforma. O Microsoft Graph fornece um ponto de extremidade unificado para dar a você acesso aos dados do Azure Active Directory e do Microsoft 365. Agora, por meio do Microsoft Graph, você pode também acessar as atividades e os dispositivos que pertencem aos seus clientes e gerar experiências voltadas para as necessidades humanas que sejam executadas em vários dispositivos e plataformas. 
 
 ## <a name="why-invest-in-cross-device-experiences"></a>Por que investir em experiências em diversos dispositivos?
 

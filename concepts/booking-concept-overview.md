@@ -5,16 +5,16 @@ author: arvindmicrosoft
 localization_priority: Priority
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bb1e6137a43b5a0a5ee5ec796bacb1315a395304
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 3197c2eccc6d4f8db12bfc15e40f3ecd692c95a1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581678"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892138"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft Bookings (versão prévia)
 
-O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer organização que forneça serviços mediante agendamento, como empresas de grande porte, oficinas de automóveis, salões de beleza e escritórios de advocacia, pode se beneficiar com o gerenciamento de seus agendamentos, e assim liberar tempo para a tarefa mais importante de expandir os negócios. O Microsoft Bookings está disponível para organizações empresariais e empresas que possuem uma assinatura do Microsoft 365 Business Standard.
+O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer organização que forneça serviços mediante agendamento, como empresas de grande porte, oficinas de automóveis, salões de beleza e escritórios de advocacia, pode se beneficiar com o gerenciamento de agendamentos, e assim ter mais tempo para a tarefa mais importante que é expandir os negócios. O Microsoft Bookings está disponível para organizações empresariais e empresas que têm uma assinatura do Microsoft 365 Business Premium.
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Por que se integrar ao Microsoft Bookings usando o Microsoft Graph?
 
@@ -42,6 +42,6 @@ Confira [API do Microsoft Bookings no Microsoft Graph beta](/graph/api/resources
 
 Saiba mais sobre:
 
-- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) e outros [aplicativos do Office 365 business](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
-- [Usar a API do Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) do Microsoft Graph.
+- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) e outros [aplicativos para empresas do Microsoft 365](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+- [Usar a API do Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) no Microsoft Graph.
 

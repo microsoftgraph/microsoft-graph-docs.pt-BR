@@ -1,22 +1,25 @@
 ---
-title: Revisões de acesso ao Azure AD
-description: Você pode usar as revisões do Azure AD Access para configurar revisões de acesso de uso único ou recorrente para atestado dos direitos de acesso do usuário.
+title: Revisões do Azure AD Access-herdadas
+description: Você pode usar as revisões do Azure AD Access para configurar revisões de acesso de uso único ou recorrente para atestado dos direitos de acesso do usuário. Esta documentação serve para APIs herdadas.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 9a46ff3b5bd1d3df24b59335a3ab8bb1c269a7f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a3b10d4892a2b73e98a92375677745081a9aeed
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024574"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000636"
 ---
-# <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
+# <a name="azure-ad-access-reviews-legacy"></a>Revisões do Azure AD Access (Herdado)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!NOTE]
+>Uma versão mais recente das APIs de revisão do Access pode ser encontrada [aqui](accessreviewsv2-root.md). Essa nova versão só oferece suporte a revisões de associação de grupo no momento. Para revisões de todos os outros recursos, use as APIs herdadas.
 
 Você pode usar as [revisões do Azure ad Access](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) para configurar revisões de acesso de uso único ou recorrente para atestado dos direitos de acesso do usuário.
 
@@ -69,13 +72,13 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 As funções de diretório a seguir são necessárias para um usuário de chamada gerenciar revisões, programas e controles do Access.
 
-| Recurso de destino | Operação | Permissões de aplicativos | Função de diretório necessária do usuário de chamada |
+| Recurso de destino | Operation | Permissões de aplicativos | Função de diretório necessária do usuário de chamada |
 |:----------------|:------------------|:------------|:--------------------------------------------|
-|[accessReview](accessreview.md) de uma função do Azure AD | Ler | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de função privilegiada |
+|[accessReview](accessreview.md) de uma função do Azure AD | Leitura | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, leitor global, administrador de segurança, leitor de segurança ou administrador de função privilegiada |
 |[accessReview](accessreview.md) de uma função do Azure AD | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador global ou administrador de função privilegiada |
-|[accessReview](accessreview.md) de um grupo ou aplicativo | Ler | AccessReview. Read. All, AccessReview. ReadWrite. Membership ou AccessReview. ReadWrite. All | Administrador global, administrador de segurança, leitor de segurança ou administrador de usuário |
+|[accessReview](accessreview.md) de um grupo ou aplicativo | Leitura | AccessReview. Read. All, AccessReview. ReadWrite. Membership ou AccessReview. ReadWrite. All | Administrador global, leitor global, administrador de segurança, leitor de segurança ou administrador de usuários |
 |[accessReview](accessreview.md) de um grupo ou aplicativo | Criar, atualizar ou excluir | AccessReview. ReadWrite. Membership ou AccessReview. ReadWrite. All | Administrador global ou administrador de usuário |
-| [programas](program.md) e [programControl](programcontrol.md)| Ler | ProgramControl. Read. All ou ProgramControl. ReadWrite. All |  Administrador global, administrador de segurança, leitor de segurança ou administrador de usuário |
+| [programas](program.md) e [programControl](programcontrol.md)| Leitura | ProgramControl. Read. All ou ProgramControl. ReadWrite. All |  Administrador global, leitor global, administrador de segurança, leitor de segurança ou administrador de usuários |
 | [programas](program.md) e [programControl](programcontrol.md) | Criar, atualizar ou excluir | ProgramControl.ReadWrite.All | Administrador global ou administrador de usuário |
 
 Além disso, um usuário que é um revisor atribuído de uma revisão do Access pode gerenciar suas decisões, sem precisar estar em uma função de diretório.
