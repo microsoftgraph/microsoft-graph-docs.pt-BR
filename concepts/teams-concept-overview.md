@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 81c6990f99fa19d7cb5fc3f3a44d01d72d205852
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: a1b71403b510dbad1212211b19bcb376bf15e7b2
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288949"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000536"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -77,7 +77,11 @@ As APIs do Microsoft Teams podem melhorar os aplicativos dentro e fora do Teams:
 |Sites| Exibem conteúdo aprimorado em suas páginas da Web.|
 |Serviços|Aprimoram seus aplicativos de cliente com dados do Microsoft Graph por meio do seu serviço Web.|
 | [Feed de atividades](/microsoftteams/platform/concepts/activity-feed)|Envolve os usuários por meio de notificações do feed.|
-| [Chamadas e reuniões online (visualização)](/graph/api/resources/communications-api-overview) |Crie aplicativos do Microsoft Teams usando bots podem iniciar e participar de chamadas de áudio/vídeo, rotear/transferir chamadas com base em fluxos de resposta de voz interativa (IVR) e participe de reuniões online.|
+| [Chamadas e reuniões online (visualização)](/graph/api/resources/communications-api-overview) |Crie aplicativos do Microsoft Teams com bots que podem iniciar e participar de chamadas de áudio/vídeo, encaminhar/transferir chamadas com base em fluxos de réplica de voz interativa (IVR) e participar de reuniões online.|
+
+### <a name="get-notified-about-changes"></a>Obter notificação sobre alterações
+
+O Microsoft Teams oferece suporte à assinatura para alterações (criar, atualizar e excluir) mensagens em [canais](/graph/api/resources/channel?preserve-view=true) e [chats](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) para permitir que os aplicativos obtenham atualizações quase que instantâneas. Para obter detalhes sobre como assinar para receber alterações, confira [Obter notificações de alterações para mensagens em canais e chats](teams-changenotifications-chatmessage).
 
 ## <a name="api-reference"></a>Referência da API
 

@@ -3,12 +3,12 @@ title: Use o Postman com a API do Microsoft Graph
 description: Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 9ca41df4321426181589ab3dbab5a76c0c683aaa
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: c7029a68314c0a093e0943bcdad46be27155ca25
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916883"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556212"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Use o Postman com a API do Microsoft Graph
 
@@ -41,14 +41,14 @@ Adquirir a coleção é a maneira mais fácil de começar a usar as APIs do Micr
 Você deverá ver o **ambiente do Microsoft Graph** na lista suspensa do ambiente na parte superior direita, próximo ao ícone de olho. Agora, você precisará [configurar o seu ambiente](#using-the-collection).
 
 ## <a name="using-the-collection"></a>Usando a coleção
-Após obter a coleção do **Microsoft Graph** e o **ambiente do Microsoft Graph** no Postman, siga estas etapas.
+Depois de obter a coleção **Microsoft Graph** e o **ambiente Microsoft Graph** no Postman, siga estas etapas.
 
 ### <a name="set-up-application-api-calls"></a>Configure as chamadas de API do aplicativo
 
 1. Escolha a opção **Sem ambiente** na lista suspensa na parte superior direita.
 2. Selecione **ambiente do Microsoft Graph**.
 3. Selecione o ícone de **olho** à direita e, em seguida, **Editar**.
-4. Insira o seu aplicativo da plataforma de identidade da Microsoft nas variáveis **atuais** (e não **iniciais**): **ClientID**, **ClientSecret** e **TenantID**. 
+4. Insira o seu aplicativo da plataforma de identidade da Microsoft nas variáveis **atuais** (e não **iniciais** ): **ClientID** , **ClientSecret** e **TenantID**. 
  Para obter mais informações sobre como criar um aplicativo e autorizar o fluxo único do aplicativo, confira a postagem do blog [Usar o Postman para fazer chamadas do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
 
 5. Selecione **Atualizar**. Feche a caixa de diálogo **Gerenciar Ambientes**. Na coleção do **Microsoft Graph | Aplicativo** no lado esquerdo, selecione **Obter Token de Acesso Único do Aplicativo**. Em seguida, no lado direito, selecione **Enviar**.
@@ -71,8 +71,8 @@ Se você não deseja armazenar nomes de usuário e senhas em variáveis de ambie
 4. Preencha os campos a seguir com os seus valores reais de locatário e aplicativo. Note que aqui você não poderá usar as variáveis de ambiente; você terá que usar os valores reais. Eles podem ser encontrados selecionando **EndPoints** na lâmina do aplicativo em portal.azure.com.
 
     - URL de retorno de chamada: https://app.getpostman.com/oauth2/callback
-    - URL de Autenticação: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/authorize
-    - URL do Token de Acesso: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/token
+    - URL de Autenticação: https://login.microsoftonline.com/**TENANTID** /oauth2/v2.0/authorize
+    - URL do Token de Acesso: https://login.microsoftonline.com/**TENANTID** /oauth2/v2.0/token
     - ID do Cliente: **CLIENTID**
     - Segredo do Cliente: **CLIENTSECRET**
     - Escopo: https://graph.microsoft.com/.default

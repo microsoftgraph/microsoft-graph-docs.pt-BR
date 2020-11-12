@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: a4947a091428227ee55c5bde5c09cfd591b4b349
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 84f91ae315b2d7ed757136bcf8e82de105081dec
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797120"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000635"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -77,7 +77,7 @@ Esse recurso permite:
 | [Listar registeredDevices](../api/user-list-registereddevices.md) | Coleção [directoryObject](directoryobject.md) | Obter os dispositivos que estão registrados para o usuário da propriedade de navegação registeredDevices. |
 | [Listar associações de função com escopo](../api/user-list-scopedrolememberof.md) | Coleção [scopedRoleMembership](scopedrolemembership.md) | Obter as associações de unidades administrativas de função com escopo deste usuário. |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Reprocessar as atribuições de assinatura do usuário. |
-| [revokeSignInSessions](../api/user-revokesigninsessions.md) | Nenhum | Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método substitui **invalidateAllRefreshTokens** . |
+| [revokeSignInSessions](../api/user-revokesigninsessions.md) | Nenhum | Revoga todos os tokens de sessão e de atualização do usuário emitidos para aplicativos, redefinindo a propriedade do usuário **signInSessionsValidFromDateTime** para data e a hora atuais. Força o usuário a entrar novamente nesses aplicativos. Este método substitui **invalidateAllRefreshTokens**. |
 | **Unidade** |||
 | [Obter unidade](../api/drive-get.md) | [unidade](drive.md) | Recuperar as propriedades e as relações de um recurso Drive. |
 | [Filhos de lista](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem. |
@@ -182,14 +182,14 @@ Esse recurso permite:
 | givenName | String | O nome fornecido (nome) do usuário. <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
 | hireDate | DateTimeOffset | A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado apenas em `$select`. <br><br> **Observação:** Esta propriedade é específica do SharePoint Online. Recomendamos usar a propriedade nativa **employeeHireDate** para definir e atualizar os valores das datas de contratação usando as APIs do Microsoft Graph. |
 | id | String | O identificador exclusivo do usuário. Deve ser tratado como um identificador opaco. Herdado de [directoryObject](directoryobject.md). <br><br>Retornado por padrão. Não anulável. Somente leitura.|
-| Identidades | Coleção [objectIdentity](objectIdentity.md) | Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft (também conhecida como conta local), por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Pode conter vários itens com o mesmo valor **signInType** . <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
+| Identidades | Coleção [objectIdentity](objectIdentity.md) | Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft (também conhecida como conta local), por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Pode conter vários itens com o mesmo valor **signInType**. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
 | imAddresses | String collection | Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 | infoCatalogs | Conjunto de cadeias de caracteres | Identifica os segmentos de informações atribuídos ao usuário. Retornado por padrão. |
 | interests | Coleção de cadeias de caracteres | Uma lista para o usuário descrever os interesses dele. <br><br>Retornado apenas em `$select`. |
 | isResourceAccount | Boolean | Não use – reservado para uso futuro. |
 | jobTitle | String | O cargo do usuário. <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
 | lastPasswordChangeDateTime | DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` <br><br>Retornado apenas em `$select`. |
-| legalAgeGroupClassification | String | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor** . Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
+| legalAgeGroupClassification | String | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
 | licenseAssignmentStates | Coleção [licenseAssignmentState](licenseassignmentstate.md) | Estado das atribuições de licenças para esse usuário. <br><br>Retornado apenas em `$select`. Somente leitura. |
 | email | String | O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Oferece suporte para `$filter`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Configurações para a caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada. <br><br>Retornado apenas em `$select`. |
@@ -209,7 +209,7 @@ Esse recurso permite:
 | onPremisesUserPrincipalName | String | Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect. <br><br>Retornado apenas em `$select`. Somente leitura. |
 | otherMails | Coleção String | Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br><br>Retornado apenas em `$select`.  Oferece suporte para`$filter`. |
 | passwordPolicies | String | Especifica as políticas de senha do usuário. Este valor é uma enumeração com um possível valor sendo "DisableStrongPassword", que permite especificar as senhas mais fracas do que a política padrão. O "DisablePasswordExpiration" também pode ser especificado. É possível especificar os dois juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".<br><br>Retornado apenas em `$select`. |
-| passwordProfile | [passwordProfile](passwordprofile.md) | Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies** . Por padrão, é obrigatória uma senha forte. <br><br>Retornado apenas em `$select`. |
+| passwordProfile | [passwordProfile](passwordprofile.md) | Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte. <br><br>Retornado apenas em `$select`. |
 | pastProjects | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar seus projetos anteriores. <br><br>Retornado apenas em `$select`. |
 | postalCode | String | O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP. <br><br>Retornado apenas em `$select`. |
 | preferredDataLocation | String | O local de dados preferido para o usuário. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado apenas em `$select`. |
@@ -300,8 +300,9 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |onenote|[onenote](onenote.md)| Somente leitura.|
 |outlook|[outlookUser](outlookuser.md)| Os serviços seletivos do Outlook disponíveis para o usuário. Somente leitura. Anulável.|
 |ownedDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que pertencem ao usuário. Somente leitura. Anulável.|
-|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável.|
-|people|Coleção [person](person.md)| Somente leitura. As pessoas mais relevantes para o usuário. A coleção é ordenada por relevância para o usuário, que é determinado pela comunicação e colaboração e pelas relações comerciais do usuário. Uma pessoa é uma agregação de informações provenientes de emails, contatos e redes sociais.|
+|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são pertencentes ao usuário. Somente leitura. Anulável.|
+|pendingAccessReviewInstances|[accessReviewInstance](accessreviewinstance.md) | Propriedade de navegação para obter a lista de análises de acesso com aprovação pendente do revisor. |
+|pessoas|Coleção [person](person.md)| Somente leitura. As pessoas mais relevantes para o usuário. A coleção é ordenada por relevância para o usuário, que é determinado pela comunicação e colaboração e pelas relações comerciais do usuário. Uma pessoa é uma agregação de informações provenientes de emails, contatos e redes sociais.|
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
 |photos|coleção de [fotos](photo.md)| Somente leitura. Anulável.|
 |planner|[plannerUser](planneruser.md)| Serviços de planejador seletivo disponíveis para o usuário. Somente leitura. Anulável. |
