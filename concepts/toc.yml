@@ -449,9 +449,11 @@ items:
                 href: webhooks-lifecycle.md
               - name: Notificações com dados de recursos
                 href: webhooks-with-resource-data.md
-              - name: Receba notificações de diferentes maneiras (visualização)
+              - name: Obter notificações entregues de diferentes maneiras (pré-visualização)
                 href: change-notifications-delivery.md
-          - name: Controle de alterações
+              - name: Obter notificações de alteração para mensagens de chat e canal
+                href: teams-changenotifications-chatmessage.md
+          - name: Alterar acompanhamento
             displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
               - name: Visão geral
