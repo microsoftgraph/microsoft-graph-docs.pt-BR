@@ -5,29 +5,29 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: acb9f0be1ca0f44f61f7b66693ef64569c9422cb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5c51bdec3230d41de3f26105f0022153e5f8fb05
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013857"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000676"
 ---
-# <a name="synchronizationjob-provisionondemand"></a><span data-ttu-id="94046-103">synchronizationJob: provisionOnDemand</span><span class="sxs-lookup"><span data-stu-id="94046-103">synchronizationJob: provisionOnDemand</span></span>
+# <a name="synchronizationjob-provisionondemand"></a><span data-ttu-id="831e7-103">synchronizationJob: provisionOnDemand</span><span class="sxs-lookup"><span data-stu-id="831e7-103">synchronizationJob: provisionOnDemand</span></span>
 
-<span data-ttu-id="94046-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="94046-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="831e7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="831e7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="94046-105">Selecione um usuário e provisione a conta sob demanda.</span><span class="sxs-lookup"><span data-stu-id="94046-105">Select a user and provision the account on-demand.</span></span>
+<span data-ttu-id="831e7-105">Selecione um usuário e provisione a conta sob demanda.</span><span class="sxs-lookup"><span data-stu-id="831e7-105">Select a user and provision the account on-demand.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="94046-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="94046-106">Permissions</span></span>
-<span data-ttu-id="94046-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="94046-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="831e7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="831e7-106">Permissions</span></span>
+<span data-ttu-id="831e7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="831e7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="94046-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="94046-109">Permission type</span></span>                        | <span data-ttu-id="94046-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="94046-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="831e7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="831e7-109">Permission type</span></span>                        | <span data-ttu-id="831e7-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="831e7-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="94046-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="94046-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="94046-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="94046-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="94046-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="94046-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="94046-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94046-114">Not supported.</span></span> |
-|<span data-ttu-id="94046-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="94046-115">Application</span></span>                            |<span data-ttu-id="94046-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94046-116">Not supported.</span></span> | 
+|<span data-ttu-id="831e7-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="831e7-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="831e7-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="831e7-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="831e7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="831e7-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="831e7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="831e7-114">Not supported.</span></span> |
+|<span data-ttu-id="831e7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="831e7-115">Application</span></span>                            |<span data-ttu-id="831e7-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="831e7-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="94046-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="94046-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="831e7-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="831e7-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -37,32 +37,32 @@ ms.locfileid: "48013857"
 POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="94046-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="94046-118">Request headers</span></span>
-|<span data-ttu-id="94046-119">Nome</span><span class="sxs-lookup"><span data-stu-id="94046-119">Name</span></span>|<span data-ttu-id="94046-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="94046-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="831e7-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="831e7-118">Request headers</span></span>
+|<span data-ttu-id="831e7-119">Nome</span><span class="sxs-lookup"><span data-stu-id="831e7-119">Name</span></span>|<span data-ttu-id="831e7-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="831e7-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="94046-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="94046-121">Authorization</span></span>|<span data-ttu-id="94046-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="94046-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="94046-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="94046-124">Content-Type</span></span>|<span data-ttu-id="94046-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="94046-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="831e7-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="831e7-121">Authorization</span></span>|<span data-ttu-id="831e7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="831e7-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="831e7-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="831e7-124">Content-Type</span></span>|<span data-ttu-id="831e7-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="831e7-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="94046-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="94046-127">Request body</span></span>
-<span data-ttu-id="94046-128">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="94046-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="831e7-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="831e7-127">Request body</span></span>
+<span data-ttu-id="831e7-128">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="831e7-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="94046-129">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="94046-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="831e7-129">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="831e7-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="94046-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="94046-130">Parameter</span></span>|<span data-ttu-id="94046-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="94046-131">Type</span></span>|<span data-ttu-id="94046-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="94046-132">Description</span></span>|
+|<span data-ttu-id="831e7-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="831e7-130">Parameter</span></span>|<span data-ttu-id="831e7-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="831e7-131">Type</span></span>|<span data-ttu-id="831e7-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="831e7-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="94046-133">parameters</span><span class="sxs-lookup"><span data-stu-id="94046-133">parameters</span></span>|<span data-ttu-id="94046-134">coleção [synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)</span><span class="sxs-lookup"><span data-stu-id="94046-134">[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection</span></span>|<span data-ttu-id="94046-135">Representa os objetos que serão provisionados e as regras de sincronização executadas.</span><span class="sxs-lookup"><span data-stu-id="94046-135">Represents the objects that will be provisioned and the synchronization rules executed.</span></span> <span data-ttu-id="94046-136">O recurso é usado principalmente para provisionamento sob demanda.</span><span class="sxs-lookup"><span data-stu-id="94046-136">The resource is primarily used for on-demand provisioning.</span></span> |
+|<span data-ttu-id="831e7-133">parameters</span><span class="sxs-lookup"><span data-stu-id="831e7-133">parameters</span></span>|<span data-ttu-id="831e7-134">coleção [synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)</span><span class="sxs-lookup"><span data-stu-id="831e7-134">[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection</span></span>|<span data-ttu-id="831e7-135">Representa os objetos que serão provisionados e as regras de sincronização executadas.</span><span class="sxs-lookup"><span data-stu-id="831e7-135">Represents the objects that will be provisioned and the synchronization rules executed.</span></span> <span data-ttu-id="831e7-136">O recurso é usado principalmente para provisionamento sob demanda.</span><span class="sxs-lookup"><span data-stu-id="831e7-136">The resource is primarily used for on-demand provisioning.</span></span> |
 
 
 
-## <a name="response"></a><span data-ttu-id="94046-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="94046-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="831e7-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="831e7-137">Response</span></span>
 
-<span data-ttu-id="94046-138">Se tiver êxito, este método retornará um `200 OK` código de resposta e um stringKeyStringValuePair.</span><span class="sxs-lookup"><span data-stu-id="94046-138">If successful, this method returns a `200 OK` response code and a stringKeyStringValuePair.</span></span>
+<span data-ttu-id="831e7-138">Se tiver êxito, este método retornará um `200 OK` código de resposta e um stringKeyStringValuePair.</span><span class="sxs-lookup"><span data-stu-id="831e7-138">If successful, this method returns a `200 OK` response code and a stringKeyStringValuePair.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="94046-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="94046-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="831e7-139">Exemplos</span><span class="sxs-lookup"><span data-stu-id="831e7-139">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="94046-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="94046-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="831e7-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="831e7-140">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="94046-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="94046-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="831e7-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="831e7-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_provisionondemand"
@@ -75,16 +75,16 @@ Content-Type: application/json
 Content-length: 122
 
 {
-    "parameters" [{
+    "parameters": [{
       "subjects": [{
           "objectId": "9bb0f679-a883-4a6f-8260-35b491b8b8c8",
-          "objectType": "User"
+          "objectTypeName": "User"
       }],
       "ruleId": "ea807875-5618-4f0a-9125-0b46a05298ca"
     }]
   }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="94046-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="94046-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="831e7-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="831e7-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,15 +92,15 @@ Content-length: 122
 
 
 
-### <a name="response"></a><span data-ttu-id="94046-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="94046-143">Response</span></span>
-<span data-ttu-id="94046-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="94046-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="831e7-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="831e7-143">Response</span></span>
+<span data-ttu-id="831e7-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="831e7-144">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair"
 }
 -->
-``` 
+```
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -110,5 +110,3 @@ Content-Type: application/json
     "value": "{\"action\":\"Other\",\"changeId\":\"g8ba3be8-1d7f-4a60-ae31-a8980da0a389\",\"endTime\":\"2020-06-26T13:58:24.7682084Z\",\"modifiedProperties\":[{\"displayName\":\"objectId\",\"oldValue\":null,\"newValue\":\"52cf7b7a-52be-4a9b-9c69-e4d4a4a14f76\"},{\"displayName\":\"accountEnabled\",\"oldValue\":null,\"newValue\":\"True\"},{\"displayName\":\"displayName\",\"oldValue\":null,\"newValue\":\"Bill Bob\"},{\"displayName\":\"mailNickname\",\"oldValue\":null,\"newValue\":\"Bill\"},{\"displayName\":\"userPrincipalName\",\"oldValue\":null,\"newValue\":\"BillBob@scimreftest.onmicrosoft.com\"},{\"displayName\":\"IsSoftDeleted\",\"oldValue\":null,\"newValue\":\"False\"},{\"displayName\":\"appRoleAssignments\",\"oldValue\":null,\"newValue\":\"User\"}],\"provisioningSteps\":[{\"name\":\"EntryImport\",\"type\":\"Import\",\"status\":\"Success\",\"description\":\"Retrieved User 'BillBob@scimreftest.onmicrosoft.com' from Azure Active Directory\",\"timestamp\":\"2020-06-26T13:58:24.5494971Z\",\"details\":{\"objectId\":\"52cf7b7a-52be-4a9b-9c69-e4d4a4a14f76\",\"accountEnabled\":\"True\",\"displayName\":\"Fill Bob\",\"mailNickname\":\"Bill\",\"userPrincipalName\":\"BillBob@scimreftest.onmicrosoft.com\",\"IsSoftDeleted\":\"False\",\"appRoleAssignments\":\"User\"}},{\"name\":\"EntryImport\",\"type\":\"Matching\",\"status\":\"Success\",\"description\":\"Retrieved  'BillBob@scimreftest.onmicrosoft.com' from customappsso\",\"timestamp\":\"2020-06-26T13:58:24.7214072Z\",\"details\":{\"active\":\"True\",\"displayName\":\"Bill Bob\",\"externalId\":\"Bill\",\"id\":\"52507a19-96ec-4e73-9250-3e65ffd2d926\",\"userName\":\"BillBob@scimreftest.onmicrosoft.com\"}},{\"name\":\"EntrySynchronizationScoping\",\"type\":\"Scoping\",\"status\":\"Success\",\"description\":\"Determine if User in scope by evaluating against each scoping filter\",\"timestamp\":\"2020-06-26T13:58:24.7526181Z\",\"details\":{\"IsActive\":\"True\",\"Assigned\":\"True\",\"IsEffectivelyEntitledForProvisioning\":\"True\",\"IsInProvisioningScopeDisplayName\":\"True\",\"ScopeEvaluationResult\":\"{}\"}},{\"name\":\"EntrySynchronizationSkip\",\"type\":\"Export\",\"status\":\"Skipped\",\"description\":\"The state of the user in both the source and target systems already match. No change to the User 'BillBob@scimreftest.onmicrosoft.com' currently needs to be made.\",\"timestamp\":\"2020-06-26T13:58:24.7682084Z\",\"details\":{\"SkipReason\":\"RedundantExport\"}}],\"reportableIdentifier\":\"BillBob@scimreftest.onmicrosoft.com\",\"startTime\":\"2020-06-26T13:58:24.5494971Z\",\"statusInfo\":{\"status\":\"Skipped\",\"errorCode\":null,\"reason\":null,\"additionalDetails\":null,\"errorCategory\":null,\"recommendedAction\":null},\"sourceIdentity\":{\"id\":\"62cf7b7a-52be-4a9b-9c69-e5d4a4a14f67\",\"type\":\"User\",\"displayName\":null,\"details\":null},\"sourceSystem\":{\"id\":null,\"name\":\"Azure Active Directory\",\"details\":null},\"targetIdentity\":{\"id\":\"52507a19-96ec-4e73-9250-3e65ffd2d926\",\"type\":\"urn:ietf:params:scim:schemas:extension:enterprise:2.0:User\",\"displayName\":null,\"details\":null},\"targetSystem\":{\"id\":null,\"name\":\"customappsso\",\"details\":null}}"
 }
 ```
-
-
