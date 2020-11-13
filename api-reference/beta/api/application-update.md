@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5a179d54d549592ce296f69e868f6e14d816627e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6d35c8db63291c92d1ba309897e8e52eadc0ecbf
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961832"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030113"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -67,6 +67,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | tags                    | Coleção String                                                           | Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | tokenEncryptionKeyId    | Cadeia de caracteres                                                                      | Especifica a keyId de uma chave pública da coleção keyCredentials. Quando configurado, o Azure AD criptografa todos os tokens emitidos usando a chave para a qual essa propriedade aponta. O código de aplicativo que recebe o token criptografado deve usar a chave privada correspondente para descriptografar o token a fim de que ele possa ser usado para o usuário conectado.                                                                                                                                                                                                                               |
 | web                     | [webApplication](../resources/webapplication.md)                            | Especifica configurações para um aplicativo Web.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações para um aplicativo de página única, incluindo URLs de saída e redirecionar URIs para códigos de autorização e tokens de acesso. |
 
 ## <a name="response"></a>Resposta
 

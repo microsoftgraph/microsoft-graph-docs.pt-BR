@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1dba35e81a748951167327cce1a8174e6c803261
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 3d3d09635bbe69d787d684b346d460854df4413e
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619092"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897229"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Visão geral da API de gráficos e pastas de trabalho do Excel
 
@@ -28,11 +28,11 @@ Os usuários adoram a facilidade com que eles podem realizar cálculos complexos
 
 ### <a name="generate-reports-and-analyze-results"></a>Gerar relatórios e analisar os resultados
 
-O Excel é uma ferramenta flexível de análises e geração de relatórios, de tabelas de dados simples a complexos painéis profissionais. Hoje, oferecemos a você acesso total a todos os recursos de relatórios do Excel, tornando o Excel um serviço online de relatórios do Office 365. Imagine qualquer cenário de relatório que os usuários criam e do qual dependem hoje transportado para um aplicativo personalizado que cria gráficos profissionais ou analisa grandes quantidades de dados de forma inteligente, integrando o Excel perfeitamente nessas experiências personalizadas.
+O Excel é uma ferramenta flexível de análises e geração de relatórios, de tabelas de dados simples a complexos painéis profissionais. Hoje, oferecemos a você acesso total a todos os recursos de relatórios do Excel, tornando o Excel um serviço online de relatórios do Microsoft 365. Imagine qualquer cenário de relatório que os usuários criam e do qual dependem hoje transportado para um aplicativo personalizado que cria gráficos profissionais ou analisa grandes quantidades de dados de forma inteligente, integrando o Excel perfeitamente nessas experiências personalizadas.
 
 ### <a name="store-and-track-data"></a>Armazenar e acompanhar dados
 
-O Excel também é uma ótima ferramenta para armazenar e acompanhar dados. Se suas informações são armazenadas em uma pasta de trabalho, esses dados estão disponíveis para qualquer aplicativo integrado ao Office 365. Seu conteúdo está disponível para leitura de soluções personalizadas e essas soluções podem usar o Excel para armazenar dados.
+O Excel também é uma ótima ferramenta para armazenar e acompanhar dados. Se suas informações são armazenadas em uma pasta de trabalho, esses dados estão disponíveis para qualquer aplicativo integrado ao Microsoft 365. Seu conteúdo está disponível para leitura de soluções personalizadas e essas soluções podem usar o Excel para armazenar dados.
 
 >**Observação:** a API REST do Excel só oferece suporte para pastas de trabalho formatadas pelo arquivo do Office Open XML (arquivos com a extensão `.xlsx`). Não há suporte para pastas de trabalho de extensão `.xls`. 
 
