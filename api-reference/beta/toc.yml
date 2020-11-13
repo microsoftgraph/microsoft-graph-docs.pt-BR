@@ -44,9 +44,11 @@ items:
             href: /graph/webhooks-lifecycle
           - name: Notificações com dados de recursos
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
-          - name: Receba notificações de diferentes maneiras (visualização)
+          - name: Obter notificações entregues de diferentes maneiras (pré-visualização)
             href: /graph/change-notifications-delivery?context=graph/api/beta
-      - name: Controle de alterações
+          - name: Obter notificações de alteração para mensagens de chat e canal
+            href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
+      - name: Alterar acompanhamento
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
         items:
           - name: Visão geral
@@ -187,11 +189,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -478,9 +480,9 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -653,7 +655,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1248,7 +1250,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1377,7 +1379,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1426,11 +1428,11 @@ items:
       - name: Conformidade (visualização)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta eletrônica
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscoverycase.md
@@ -1504,7 +1506,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -9415,7 +9417,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9511,7 +9513,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -10100,7 +10102,7 @@ items:
                         href: api/authenticationoperation-get.md
               - name: Política de método de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethodspolicies-overview.md
                   - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
@@ -10194,11 +10196,52 @@ items:
                             href: api/ipnamedlocation-update.md
                           - name: Excluir
                             href: api/ipnamedlocation-delete.md
-              - name: Operações de política de dados
-                href: resources/datapolicyoperation.md
-                items:
-                  - name: Obter operações de política de dados
-                    href: api/datapolicyoperation-get.md
+          - name: Organização
+            href: resources/organization.md
+            items:
+              - name: Obter detalhes org
+                href: api/organization-get.md
+              - name: Atualizar detalhes org
+                href: api/organization-update.md
+          - name: Identidade visual organizacional
+            href: resources/organizationalbrandingproperties.md
+            items:
+              - name: Criar
+                href: api/organizationalbrandingproperties-create.md
+              - name: Obter
+                href: api/organizationalbrandingproperties-get.md
+              - name: Atualizar
+                href: api/organizationalbrandingproperties-update.md
+              - name: Excluir
+                href: api/organizationalbrandingproperties-delete.md
+              - name: Criar localizado
+                href: api/organizationalbrandingpropertieslocalization-create.md
+              - name: Obter localizado
+                href: api/organizationalbrandingpropertieslocalization-get.md
+              - name: Atualização localizada
+                href: api/organizationalbrandingpropertieslocalization-update.md
+              - name: Excluir localizado
+                href: api/organizationalbrandingpropertieslocalization-delete.md
+          - name: Contatos organizacionais
+            href: resources/orgcontact.md
+            items:
+              - name: Listar contatos org
+                href: api/orgcontact-list.md
+              - name: Obter contato org
+                href: api/orgcontact-get.md
+              - name: Atualizar contato org
+                href: api/orgcontact-update.md
+              - name: Excluir contato org
+                href: api/orgcontact-delete.md
+              - name: Obter Delta de contatos da organização
+                href: api/orgcontact-delta.md
+              - name: Grupos
+                href: resources/group.md
+          - name: Operações de política de dados
+            href: resources/datapolicyoperation.md
+            items:
+              - name: Obter operações de política de dados
+                href: api/datapolicyoperation-get.md
               - name: Concessões de permissão delegadas
                 href: resources/oauth2permissiongrant.md
                 items:
@@ -11044,7 +11087,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -11166,7 +11209,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -11596,7 +11639,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -11618,7 +11661,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -11641,7 +11684,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -11664,7 +11707,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -11688,7 +11731,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11900,7 +11943,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -11910,7 +11953,7 @@ items:
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -12016,7 +12059,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -12072,7 +12115,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -12142,7 +12185,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -12191,9 +12234,9 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -12714,7 +12757,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -12853,7 +12896,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:
