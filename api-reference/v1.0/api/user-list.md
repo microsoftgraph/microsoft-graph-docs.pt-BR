@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 767331d807f63a2b90381580cfefebfdea37ddf3
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 9f573d50f498ba6bd022fce16e64496a5ace616c
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905679"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030246"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -36,7 +36,7 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método suporta os parâmetros de consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, `$filter`, e `$select`. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+Este método suporta os parâmetros de consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, `$filter`, e `$select`. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
 
 Por padrão, apenas um conjunto limitado de propriedades é retornado ( **businessPhones** , **displayName** , **givenName** , **id** , **jobTitle** , **mail** , **mobilePhone** , **officeLocation** , **preferredLanguage** , **surname** e **userPrincipalName** ). 
 
