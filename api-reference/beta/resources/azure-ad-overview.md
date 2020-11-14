@@ -3,14 +3,14 @@ title: Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 description: O Microsoft Graph para o Azure AD (Azure Active Directory) fornece as APIs REST para ajudá-lo a gerenciar a organização, os recursos e os ativos.
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: dkershaw10
-ms.openlocfilehash: bc3a61a60b49a0818a39b6d357582636e2a07fd4
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 8e6f9af9ba00e4cccea94e04fff0aed866ea7d2e
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400757"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030218"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 
@@ -18,7 +18,7 @@ ms.locfileid: "48400757"
 
 Com o Microsoft Graph, você pode acessar recursos do [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-whatis) para habilitar cenários como gerenciar funções de administrador (diretório), convidando usuários externos para uma organização e, se você for um [Provedor de Solução na Nuvem (CSP)](https://partner.microsoft.com/cloud-solution-provider), gerenciar dados do cliente. O Microsoft Graph também fornece métodos que os aplicativos podem usar, por exemplo, para descobrir informações sobre grupo transitivo e associações de função de usuário.
 
-> **Observação**: alguns recursos do Azure AD são documentados em outras seções da API de referência. Para saber mais, confira [Usuários](users.md) e [Grupos](group.md).
+> **Observação** : alguns recursos do Azure AD são documentados em outras seções da API de referência. Para saber mais, confira [Usuários](users.md) e [Grupos](group.md).
 
 
 ## <a name="authorization"></a>Autorização
@@ -58,9 +58,10 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | **Gerenciamento de locatário** | | |
 | Obter informações sobre uma organização, como seu endereço comercial, contatos de notificação e técnicos, os planos de serviço em que está inscrita em e os domínios associados a ela. | [organization](../resources/organization.md) | N/D |
 | Obter informações sobre SKUs do serviço nos quais a empresa está inscrita. | [subscribedSku](../resources/subscribedsku.md) | N/D |
-| Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
-| **Avaliações do Access** | | |
-| Certifique-se que as associações ao grupo e os direitos de acesso ao aplicativo estão corretos com as revisões de acesso | [API de revisões de acesso](../resources/accessreviews-root.md) |[Revisões de acesso ao Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
+| Gerenciar a identidade visual da experiência de entrada de uma organização. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Adicionar identidade visual à página de entrada do Azure Active Directory da sua organização](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
+
+| **Avaliações de acesso** | | | | Verifique se as associações de grupo e os direitos de acesso ao aplicativo estão corretos com as análises de acesso | [análises de acesso](../resources/accessreviews-root.md) |[ análises de acesso](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) do Microsoft Azure Active Directory à API |
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
