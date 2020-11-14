@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 8ef7a52d26f7b657c79cc2954ca39ae6098d7313
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 45f5ed586498b9e6882c9e4e2cd77e64a568ca57
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000627"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030211"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -23,6 +23,14 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionado [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true) aos recursos suportados para [notificações de alteração](/graph/webhooks).|
+
+### <a name="identity-and-access"></a>Identidade e acesso
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade **spa** ao recurso do [aplicativo](/graph/api/resources/application?view=graph-rest-beta). |
+| Adição | beta | Adicionados o tipo de recurso [organizationBrandingProperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true) e métodos associados, que permitem a personalização da aparência visual das telas de login.|
+
 
 ### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
 
@@ -69,25 +77,25 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
 | Alteração | beta | Adicionados novos requisitos de permissão para: <ul><li>[Obter printUsageSummaryByPrinter](/graph/api/printusagesummarybyprinter-get?view=graph-rest-beta&preserve-view=true)</li><li>[getPrinterArchivedPrintJobs](/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta&preserve-view=true)</li><li>[Listar dailyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta&preserve-view=true)</li><li>[Listar monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta&preserve-view=true)</li><li>[Obter UsageSummaryByUser](/graph/api/printusagesummarybyuser-get?view=graph-rest-beta&preserve-view=true)</li><li>[getUserArchivedPrintJobs](/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta&preserve-view=true)</li><li>[getGroupArchivedPrintJobs](/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta&preserve-view=true)</li><li>[Listar dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta&preserve-view=true)</li><li>[Listar monthlyPrintUsageSummariesByUser](/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta&preserve-view=true)</li></ul>|
-| Alterar | beta | Removida a propriedade **allowedUsers** no recurso da [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). | 
+| Alterar | beta | Removida a propriedade **allowedUsers** no recurso da [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). |
 | Alterar | beta | Removida a propriedade **allowedGroups** no recurso da [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). |
-| Adição | beta | Adicionada a ação [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) para printDocument. | 
-| Alterar | beta | A ação **uploadData** está obsoleta no recurso [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | Propriedades adicionadas ao recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true): <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuração</li></ul> | 
-| Alterar | beta | A propriedade **configuração** está obsoleta no recurso [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | Adicionada a propriedade de navegação **compartilhamentos** no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | A ação **resetDefaults** no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) foi renomeada para [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | A ação **startPrintJob** no recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) foi renomeada para [iniciar](/graph/api/printjob-start?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | A ação **cancelPrintJob** no recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) foi renomeada para [cancelar](/graph/api/printjob-cancel?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | A função **getCapabilities** está obsoleta no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | A propriedade **allowedUsers** está obsoleta no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). | 
+| Adição | beta | Adicionada a ação [createUploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) para printDocument. |
+| Alterar | beta | A ação **uploadData** está obsoleta no recurso [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | Propriedades adicionadas ao recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true): <br/><ul><li>isFetchable</li><li>redirectedFrom</li><li>redirectedTo</li><li>configuração</li></ul> |
+| Alterar | beta | A propriedade **configuração** está obsoleta no recurso [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | Adicionada a propriedade de navegação **compartilhamentos** no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | A ação **resetDefaults** no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) foi renomeada para [restoreFactoryDefaults](/graph/api/printer-restorefactorydefaults?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | A ação **startPrintJob** no recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) foi renomeada para [iniciar](/graph/api/printjob-start?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | A ação **cancelPrintJob** no recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true) foi renomeada para [cancelar](/graph/api/printjob-cancel?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | A função **getCapabilities** está obsoleta no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | A propriedade **allowedUsers** está obsoleta no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). |
 | Alterar | beta | A propriedade **allowedGroups** está obsoleta no recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true). |
-| Alterar | beta | Adicionada a propriedade **feedOrientations** ao recurso [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | A propriedade **feedDirections** está obsoleta no recurso [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | Adicionada a propriedade **detalhes** ao recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true). | 
-| Alterar | beta | A propriedade **processingStateReasons** está obsoleta no recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true). | 
+| Alterar | beta | Adicionada a propriedade **feedOrientations** ao recurso [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | A propriedade **feedDirections** está obsoleta no recurso [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | Adicionada a propriedade **detalhes** ao recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true). |
+| Alterar | beta | A propriedade **processingStateReasons** está obsoleta no recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true). |
 | Alterar | beta | Propriedades renomeadas no recurso [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> estado</li><li>processingStateDescription -> descrição</li></ul> |  
-| Alterar | beta | Adicionada a propriedade **detalhes** ao recurso [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true). | 
+| Alterar | beta | Adicionada a propriedade **detalhes** ao recurso [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true). |
 | Alterar | beta | Propriedades renomeadas no recurso [printJobStatus](/graph/api/resources/printjobstatus?view=graph-rest-beta&preserve-view=true): <br/><ul><li>processingState -> estado</li><li>processingStateDescription -> descrição</li><li>acquiredByPrinter -> isAcquiredByPrinter</li></ul> |  
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
@@ -211,7 +219,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
-| Adição | beta | Adicionado o método [Baixar o arquivo binário printDocument](/graph/api/printdocument-get-file?view=graph-rest-beta&preserve-view=true) para baixar os dados de arquivo binário associados a um documento.  | 
+| Adição | beta | Adicionado o método [Baixar o arquivo binário printDocument](/graph/api/printdocument-get-file?view=graph-rest-beta&preserve-view=true) para baixar os dados de arquivo binário associados a um documento.  |
 | Adição | beta | Foi adicionado o suporte parâmetros de consulta `$expand=documents` e `$filter=createdBy/userPrincipalName` no método [List printJobs](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true). |
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
@@ -314,12 +322,12 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição        | beta | Consultar dados externos em [mais de um de conexão](search-concept-custom-types.md).|
 | Alterar        | beta |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
 
-### <a name="teamwork"></a>Trabalho em equipe 
+### <a name="teamwork"></a>Trabalho em equipe
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição|Beta e v1.0|Propriedade **lastEditedDateTime** adicionada ao recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).| 
-|Alterar| Beta e v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|   
+|Adição|Beta e v1.0|Propriedade **lastEditedDateTime** adicionada ao recurso [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true).|
+|Alterar| Beta e v1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|
 |Adição|beta| Foi adicionada a propriedade **createdDateTime** aos recursos do [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) e da [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true).|
 |Adição|Beta e v1.0| Adicionado o método [Update chatMessage](/graph/api/chatmessage-update) ao recurso [chatMessage](/graph/api/resources/chatmessage).|
 |Adição|v1.0| Adicionados os métodos [Listar membros](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Adicionar membros](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true)e [Remover membros](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true).|
@@ -418,6 +426,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a entidade [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) para gerenciar os fluxos de usuário em um locatário do Azure Active Directory B2C. |
 | Adição | beta | Adicionada a entidade [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) para gerenciar fluxos de usuário de inscrição de autoatendimento em um locatário do Azure Active Directory. |
+
 
 ### <a name="people-and-workplace-intelligence--profile"></a>Inteligência de pessoas e do local de trabalho | Perfil
 
@@ -912,7 +921,6 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | v1.0 | Adicionadas as propriedades **externalUserState** e **externalUserStateChangeDateTime** ao recurso [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true). |
 | Adição | v1.0 | Adicionado suporte para [assinatura](/graph/api/resources/subscription) ao recurso **user** em [Microsoft Cloud China operado pela 21Vianet](deployments.md). |
-
 
 ## <a name="april-2020"></a>Abril de 2020
 
