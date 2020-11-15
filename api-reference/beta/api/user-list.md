@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b842ca2a073bfaa7696a6c1c900b2f7d28ddb5de
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 46f4187f184c9303466161d575634224d1961eae
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980166"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030260"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [user](../resources/user.md).
+Recupere uma lista de objetos de [usuário](../resources/user.md).
 
-Esta operação retorna, por padrão, apenas um subconjunto das propriedades mais usadas de cada usuário. Essas propriedades _padrão_ estão listadas na seção [Propriedades](../resources/user.md#properties). Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](user-get.md) para o usuário e especifique as propriedades em uma opção de consulta `$select` do OData.
+Essa operação retorna por padrão apenas um subconjunto das propriedades mais comumente usadas para cada usuário. Essas propriedades _padrão_ são observadas na seção [Propriedades](../resources/user.md#properties). Para obter propriedades que _não_ são retornadas por padrão, execute uma [operação GET](user-get.md) do usuário e especifique as propriedades em uma opção de consulta OData `$select`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +41,7 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+Este método dá suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count` e `$filter`. Você pode usar `$search` na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os parâmetros de consulta `$count` e `$search`. Pode haver um pequeno atraso entre o momento em que um item é adicionado ou atualizado e quando está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis atualmente em locatários do Azure AD B2C.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
