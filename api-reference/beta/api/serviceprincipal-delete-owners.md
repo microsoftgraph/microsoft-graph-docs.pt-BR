@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4d436d3d75f88bccfe78e77989b0ce20e13abe3d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 061dd6ff21e5378fb7e2d11377ab670ff1f64363
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058664"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49081912"
 ---
 # <a name="remove-owner"></a>Remover proprietário
 
@@ -20,19 +20,19 @@ Namespace: microsoft.graph
 
 Remover um proprietário de um objeto [servicePrincipalName](../resources/serviceprincipal.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. ReadWrite. OwnedBy, Application. ReadWrite. All, Directory. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /serviceprincipals/{id}/owners/{id}/$ref
+DELETE /servicePrincipals/{id}/owners/{id}/$ref
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -60,7 +60,7 @@ O exemplo a seguir mostra a solicitação.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/serviceprincipals/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/{id}/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -92,7 +92,7 @@ Content-length: 30
 
 Este é um exemplo de resposta.
 
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

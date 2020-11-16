@@ -1,27 +1,27 @@
 ---
-title: Revisões do Azure AD Access – atualização beta
+title: Revisões do Azure AD Access-associações de grupo
 description: Você pode usar as revisões do Azure AD Access para configurar revisões de acesso de uso único ou recorrente para atestado dos direitos de acesso do usuário. Esta documentação serve para a 2ª versão das APIs.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 44bdd534aeb36ad85133fe1ab26006150328e926
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 18a2969502be68b1ea63d208e5d8fb2f225047f3
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000765"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49082213"
 ---
-# <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
+# <a name="azure-ad-access-reviews-group-memberships"></a>Revisões do Azure AD Access (associações de grupo)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->Esta documentação contém a última versão suportada das APIs de análise de acesso para revisões nos grupos do Microsoft 365. Para revisões em outros recursos, consulte [Access revisar APIs](accessreviews-root.md).
+>Esta documentação se aplica às revisões de acesso de grupos do Microsoft 365. Para obter revisões de acesso para todos os outros tipos de recurso, consulte [Access Reviews (All resources)](accessreviews-root.md).
 >
->No momento, as APIs do Microsoft Graph só dão suporte a revisões de acesso da Associação de grupo.
+>Atualmente, essa API só dá suporte a revisões de acesso de associações de grupo.
 
 Você pode usar as [revisões do Azure ad Access](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) para configurar revisões de acesso de uso único ou recorrente para atestado dos direitos de acesso do usuário.
 
@@ -38,7 +38,7 @@ Há também um recurso relacionado para os clientes revisar e certificar as atri
 Observe que o recurso de revisões de acesso, incluindo a API, está incluído no Azure AD Premium P2.  O locatário em que uma revisão de acesso está sendo criada deve ter uma assinatura válida adquirida ou de avaliação do Azure AD Premium P2 ou EMS e5.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados à revisão do Access.
 
@@ -66,7 +66,7 @@ As funções de diretório a seguir são necessárias para um usuário de chamad
 
 | Operation | Permissões de aplicativos | Função de diretório necessária do usuário de chamada |
 |:------------------|:------------|:--------------------------------------------|
-| Leitura | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, leitor global, administrador de segurança, leitor de segurança ou administrador de usuários |
+| Ler | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, leitor global, administrador de segurança, leitor de segurança ou administrador de usuários |
 | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador global ou administrador de usuário |
 
 Além disso, um usuário que é um revisor atribuído de uma revisão do Access pode gerenciar suas decisões, sem precisar estar em uma função de diretório.
