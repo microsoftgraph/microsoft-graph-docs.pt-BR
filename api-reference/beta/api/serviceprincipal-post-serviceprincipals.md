@@ -5,94 +5,94 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 911a9a06055b9234393452710cf419ee9d30f91b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8d5ba0f54498f7c9315aa339aca78d29b04fcfee
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967851"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49082080"
 ---
-# <a name="create-serviceprincipal"></a><span data-ttu-id="29ddd-103">Criar servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="29ddd-103">Create servicePrincipal</span></span>
+# <a name="create-serviceprincipal"></a><span data-ttu-id="96465-103">Criar servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="96465-103">Create servicePrincipal</span></span>
 
-<span data-ttu-id="29ddd-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="29ddd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="96465-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="96465-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="29ddd-105">Criar um novo objeto do [servicePrincipal](../resources/serviceprincipal.md).</span><span class="sxs-lookup"><span data-stu-id="29ddd-105">Create a new [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
+<span data-ttu-id="96465-105">Criar um novo objeto do [servicePrincipal](../resources/serviceprincipal.md).</span><span class="sxs-lookup"><span data-stu-id="96465-105">Create a new [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="29ddd-106">Não há suporte para a adição de [**passwordCredential**](../resources/passwordcredential.md) durante a criação de servicePrincipals.</span><span class="sxs-lookup"><span data-stu-id="29ddd-106">Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported.</span></span> <span data-ttu-id="29ddd-107">Use o método [addpassword](serviceprincipal-addpassword.md) para adicionar senhas a um servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="29ddd-107">Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords for a servicePrincipal.</span></span>
+> <span data-ttu-id="96465-p101">Não há suporte para [**passwordCredential**](../resources/passwordcredential.md) ao criar servicePrincipals. Use o método [addPassword](serviceprincipal-addpassword.md) para adicionar senhas a um servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="96465-p101">Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords for a servicePrincipal.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="29ddd-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="29ddd-108">Permissions</span></span>
-<span data-ttu-id="29ddd-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29ddd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="96465-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="96465-108">Permissions</span></span>
+<span data-ttu-id="96465-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="96465-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="29ddd-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="29ddd-111">Permission type</span></span>      | <span data-ttu-id="29ddd-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="29ddd-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="96465-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="96465-111">Permission type</span></span>      | <span data-ttu-id="96465-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="96465-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="29ddd-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="29ddd-113">Delegated (work or school account)</span></span> | <span data-ttu-id="29ddd-114">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="29ddd-114">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="29ddd-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="29ddd-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29ddd-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="29ddd-116">Not supported.</span></span>    |
-|<span data-ttu-id="29ddd-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="29ddd-117">Application</span></span> | <span data-ttu-id="29ddd-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29ddd-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="96465-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="96465-113">Delegated (work or school account)</span></span> | <span data-ttu-id="96465-114">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="96465-114">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="96465-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="96465-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="96465-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="96465-116">Not supported.</span></span>    |
+|<span data-ttu-id="96465-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="96465-117">Application</span></span> | <span data-ttu-id="96465-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="96465-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="29ddd-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="29ddd-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96465-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="96465-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /serviceprincipals
+POST /servicePrincipals
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="29ddd-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="29ddd-120">Request headers</span></span>
-| <span data-ttu-id="29ddd-121">Nome</span><span class="sxs-lookup"><span data-stu-id="29ddd-121">Name</span></span>       | <span data-ttu-id="29ddd-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="29ddd-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="96465-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="96465-120">Request headers</span></span>
+| <span data-ttu-id="96465-121">Nome</span><span class="sxs-lookup"><span data-stu-id="96465-121">Name</span></span>       | <span data-ttu-id="96465-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="96465-122">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="29ddd-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="29ddd-123">Authorization</span></span> | <span data-ttu-id="29ddd-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="29ddd-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="29ddd-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="29ddd-126">Content-Type</span></span> | <span data-ttu-id="29ddd-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="29ddd-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="96465-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="96465-123">Authorization</span></span> | <span data-ttu-id="96465-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="96465-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="96465-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="96465-126">Content-Type</span></span> | <span data-ttu-id="96465-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="96465-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="29ddd-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="29ddd-129">Request body</span></span>
-<span data-ttu-id="29ddd-130">No corpo da solicitação, forneça uma representação JSON de um objeto do [servicePrincipal](../resources/serviceprincipal.md).</span><span class="sxs-lookup"><span data-stu-id="29ddd-130">In the request body, supply a JSON representation of a [serviceprincipal](../resources/serviceprincipal.md) object.</span></span> <span data-ttu-id="29ddd-131">O corpo da solicitação deve conter  **appId**.</span><span class="sxs-lookup"><span data-stu-id="29ddd-131">The request body must contain  **appId**.</span></span>
+## <a name="request-body"></a><span data-ttu-id="96465-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="96465-129">Request body</span></span>
+<span data-ttu-id="96465-p105">No corpo da solicitação, forneça uma representação JSON de um objeto [serviceprincipal](../resources/serviceprincipal.md). O corpo da solicitação devem conter **appId**.</span><span class="sxs-lookup"><span data-stu-id="96465-p105">In the request body, supply a JSON representation of a [serviceprincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**.</span></span>
 
-## <a name="response"></a><span data-ttu-id="29ddd-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="29ddd-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="96465-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="96465-132">Response</span></span>
 
-<span data-ttu-id="29ddd-133">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto do [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="29ddd-133">If successful, this method returns a `201 Created` response code and a [serviceprincipal](../resources/serviceprincipal.md) object in the response body.</span></span>
+<span data-ttu-id="96465-133">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto do [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="96465-133">If successful, this method returns a `201 Created` response code and a [serviceprincipal](../resources/serviceprincipal.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="29ddd-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="29ddd-134">Examples</span></span>
-### <a name="request"></a><span data-ttu-id="29ddd-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="29ddd-135">Request</span></span>
-<span data-ttu-id="29ddd-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="29ddd-136">Here is an example of the request.</span></span>
+## <a name="examples"></a><span data-ttu-id="96465-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="96465-134">Examples</span></span>
+### <a name="request"></a><span data-ttu-id="96465-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="96465-135">Request</span></span>
+<span data-ttu-id="96465-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="96465-136">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="29ddd-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="29ddd-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="96465-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="96465-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/serviceprincipals
+POST https://graph.microsoft.com/beta/servicePrincipals
 Content-type: application/json
 
 {
   "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="29ddd-138">C#</span><span class="sxs-lookup"><span data-stu-id="29ddd-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="96465-138">C#</span><span class="sxs-lookup"><span data-stu-id="96465-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-from-serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="29ddd-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="29ddd-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="96465-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="96465-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-from-serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="29ddd-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="29ddd-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="96465-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="96465-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-from-serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="29ddd-141">Java</span><span class="sxs-lookup"><span data-stu-id="29ddd-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="96465-141">Java</span><span class="sxs-lookup"><span data-stu-id="96465-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-serviceprincipal-from-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="29ddd-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="29ddd-142">Response</span></span>
-<span data-ttu-id="29ddd-143">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="29ddd-143">Here is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="96465-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="96465-142">Response</span></span>
+<span data-ttu-id="96465-143">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="96465-143">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="29ddd-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="29ddd-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="96465-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="96465-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -189,7 +189,7 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
@@ -446,7 +446,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -861,7 +861,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Remover do grupo de agentes
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Conector
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: Listar
@@ -1623,7 +1623,7 @@ items:
                     href: api/printershare-post-jobs.md
                   - name: Obter
                     href: api/printjob-get.md
-                  - name: Iniciar
+                  - name: Início
                     href: api/printjob-start.md
                   - name: Cancelar
                     href: api/printjob-cancel.md
@@ -10089,7 +10089,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: Adicionar
                         href: api/emailauthenticationmethod-post.md
-                  - name: Senha
+                  - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: Listar
@@ -10564,7 +10564,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
           - name: Governança
             items:
-              - name: Avaliações do acesso
+              - name: Revisões de acesso (grupos)
                 href: resources/accessreviewsv2-root.md
                 items:
                   - name: Definição de agendamento de análise de acesso
@@ -10580,14 +10580,6 @@ items:
                         href: api/accessreviewscheduledefinition-delete.md
                       - name: Atualizar
                         href: api/accessreviewscheduledefinition-update.md
-                  - name: Configurações de programação de análise de acesso
-                    href: resources/accessreviewschedulesettings.md
-                  - name: Ação de aplicação de revisão do Access
-                    href: resources/accessreviewapplyaction.md
-                  - name: Escopo de análise de acesso
-                    href: resources/accessreviewscope.md
-                  - name: Escopo do revisor de revisão do Access
-                    href: resources/accessreviewreviewerscope.md
                   - name: Instância de análise de acesso
                     href: resources/accessreviewinstance.md
                     items:
@@ -10614,13 +10606,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: Atualizar
                         href: api/accessreviewinstancedecisionitem-update.md
-                  - name: Alvo do item de decisão de instância de revisão do Access
-                    href: resources/accessreviewinstancedecisionitemtarget.md
-                  - name: Alvo do usuário do item de decisão de instância de revisão do Access
-                    href: resources/accessreviewinstancedecisionitemusertarget.md
-                  - name: Destino principal de serviço de item de decisão de análise de instância do Access
-                    href: resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
-              - name: Avaliações do acesso
+              - name: Revisões de acesso (todos os recursos)
                 href: resources/accessreviews-root.md
                 items:
                   - name: Revisão de acesso
@@ -12331,7 +12317,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral

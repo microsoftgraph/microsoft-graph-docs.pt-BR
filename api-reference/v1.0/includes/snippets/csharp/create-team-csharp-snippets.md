@@ -1,11 +1,11 @@
 ---
-description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8054ff455e40ddf31db2133589f777b5418b8a13
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+description: Automatically generated file. DO NOT MODIFY
+ms.openlocfilehash: 55e2c34e59a801c25ecfccd8314f3587c6f94b58
+ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932535"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47414032"
 ---
 ```csharp
 
@@ -15,6 +15,7 @@ var team = new Team
 {
     MemberSettings = new TeamMemberSettings
     {
+        AllowCreatePrivateChannels = true,
         AllowCreateUpdateChannels = true
     },
     MessagingSettings = new TeamMessagingSettings

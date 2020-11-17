@@ -5,62 +5,62 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4f39abd5d871bed286af7b157da231dc8ef46104
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: ea7596d1c94c110916fbb6e9bd407397d6029203
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905483"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49082222"
 ---
-# <a name="list-serviceprincipals"></a><span data-ttu-id="0c32f-103">Listar servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="0c32f-103">List servicePrincipals</span></span>
+# <a name="list-serviceprincipals"></a><span data-ttu-id="dc2a2-103">Listar servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="dc2a2-103">List servicePrincipals</span></span>
 
-<span data-ttu-id="0c32f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0c32f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dc2a2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dc2a2-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0c32f-105">Recupere uma lista de objetos [servicePrincipal](../resources/serviceprincipal.md).</span><span class="sxs-lookup"><span data-stu-id="0c32f-105">Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.</span></span>
+<span data-ttu-id="dc2a2-105">Recupere uma lista de objetos [servicePrincipal](../resources/serviceprincipal.md).</span><span class="sxs-lookup"><span data-stu-id="dc2a2-105">Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0c32f-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="0c32f-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dc2a2-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="dc2a2-106">Permissions</span></span>
 
-<span data-ttu-id="0c32f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0c32f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dc2a2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dc2a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0c32f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0c32f-109">Permission type</span></span>      | <span data-ttu-id="0c32f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0c32f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dc2a2-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dc2a2-109">Permission type</span></span>      | <span data-ttu-id="dc2a2-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dc2a2-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0c32f-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0c32f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0c32f-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0c32f-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="0c32f-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0c32f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0c32f-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0c32f-114">Not supported.</span></span>    |
-|<span data-ttu-id="0c32f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0c32f-115">Application</span></span> | <span data-ttu-id="0c32f-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="0c32f-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="dc2a2-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dc2a2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="dc2a2-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="dc2a2-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="dc2a2-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dc2a2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc2a2-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-114">Not supported.</span></span>    |
+|<span data-ttu-id="dc2a2-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dc2a2-115">Application</span></span> | <span data-ttu-id="dc2a2-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="dc2a2-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0c32f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0c32f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc2a2-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dc2a2-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="0c32f-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0c32f-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="dc2a2-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="dc2a2-118">Optional query parameters</span></span>
 
-<span data-ttu-id="0c32f-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`.</span><span class="sxs-lookup"><span data-stu-id="0c32f-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="0c32f-120">Você pode usar `$search`na propriedade **displayName**.</span><span class="sxs-lookup"><span data-stu-id="0c32f-120">You can use `$search` on the **displayName** property.</span></span> <span data-ttu-id="0c32f-121">Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta.</span><span class="sxs-lookup"><span data-stu-id="0c32f-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="0c32f-122">Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.</span><span class="sxs-lookup"><span data-stu-id="0c32f-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
+<span data-ttu-id="dc2a2-p102">Este método dá suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count` e `$filter`. Você pode usar `$search` na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os parâmetros de consulta `$count` e `$search`. Pode haver um pequeno atraso entre o momento em que um item é adicionado ou atualizado e quando está disponível no índice.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-p102">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="0c32f-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0c32f-123">Request headers</span></span>
-| <span data-ttu-id="0c32f-124">Nome</span><span class="sxs-lookup"><span data-stu-id="0c32f-124">Name</span></span>           | <span data-ttu-id="0c32f-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="0c32f-125">Description</span></span>                |
+## <a name="request-headers"></a><span data-ttu-id="dc2a2-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dc2a2-123">Request headers</span></span>
+| <span data-ttu-id="dc2a2-124">Nome</span><span class="sxs-lookup"><span data-stu-id="dc2a2-124">Name</span></span>           | <span data-ttu-id="dc2a2-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc2a2-125">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="0c32f-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="0c32f-126">Authorization</span></span>  | <span data-ttu-id="0c32f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0c32f-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="0c32f-129">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="0c32f-129">ConsistencyLevel</span></span> | <span data-ttu-id="0c32f-130">eventualmente.</span><span class="sxs-lookup"><span data-stu-id="0c32f-130">eventual.</span></span> <span data-ttu-id="0c32f-131">Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="0c32f-131">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="0c32f-132">Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto.</span><span class="sxs-lookup"><span data-stu-id="0c32f-132">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
+| <span data-ttu-id="dc2a2-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="dc2a2-126">Authorization</span></span>  | <span data-ttu-id="dc2a2-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="dc2a2-129">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="dc2a2-129">ConsistencyLevel</span></span> | <span data-ttu-id="dc2a2-p104">eventual. Esse cabeçalho e `$count` são necessários ao usar `$search` ou ao usar `$filter` com o parâmetro de consulta `$orderby`. Ele usa um índice que pode não estar atualizado com as alterações recentes feitas no objeto.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-p104">eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0c32f-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0c32f-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="dc2a2-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dc2a2-133">Request body</span></span>
 
-<span data-ttu-id="0c32f-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0c32f-134">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="dc2a2-134">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0c32f-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c32f-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dc2a2-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc2a2-135">Response</span></span>
 
-<span data-ttu-id="0c32f-136">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0c32f-136">If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.</span></span>
+<span data-ttu-id="dc2a2-136">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-136">If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0c32f-137">Exemplos</span><span class="sxs-lookup"><span data-stu-id="0c32f-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="dc2a2-137">Exemplos</span><span class="sxs-lookup"><span data-stu-id="dc2a2-137">Examples</span></span>
 
-### <a name="example-1-get-a-list-of-service-principals"></a><span data-ttu-id="0c32f-138">Exemplo 1: obter uma lista de entidades de serviço</span><span class="sxs-lookup"><span data-stu-id="0c32f-138">Example 1: Get a list of service principals</span></span>
+### <a name="example-1-get-a-list-of-service-principals"></a><span data-ttu-id="dc2a2-138">Exemplo 1: obter uma lista de entidades de serviço</span><span class="sxs-lookup"><span data-stu-id="dc2a2-138">Example 1: Get a list of service principals</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0c32f-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0c32f-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="dc2a2-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc2a2-139">Request</span></span>
 
-<span data-ttu-id="0c32f-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0c32f-140">The following is an example of the request.</span></span>
+<span data-ttu-id="dc2a2-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-140">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="0c32f-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="0c32f-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="dc2a2-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="dc2a2-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_serviceprincipal"
@@ -69,29 +69,29 @@ GET /servicePrincipals
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals
 ```
-# <a name="c"></a>[<span data-ttu-id="0c32f-142">C#</span><span class="sxs-lookup"><span data-stu-id="0c32f-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="dc2a2-142">C#</span><span class="sxs-lookup"><span data-stu-id="dc2a2-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0c32f-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0c32f-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="dc2a2-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="dc2a2-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-serviceprincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0c32f-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0c32f-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="dc2a2-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="dc2a2-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-serviceprincipal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="0c32f-145">Java</span><span class="sxs-lookup"><span data-stu-id="0c32f-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="dc2a2-145">Java</span><span class="sxs-lookup"><span data-stu-id="dc2a2-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="0c32f-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c32f-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="dc2a2-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc2a2-146">Response</span></span>
 
-<span data-ttu-id="0c32f-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0c32f-147">The following is an example of the response.</span></span>
+<span data-ttu-id="dc2a2-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-147">The following is an example of the response.</span></span>
 
-><span data-ttu-id="0c32f-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0c32f-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="dc2a2-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -117,44 +117,24 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-service-principals"></a><span data-ttu-id="0c32f-150">Exemplo 2: obter apenas uma contagem de entidades de serviço</span><span class="sxs-lookup"><span data-stu-id="0c32f-150">Example 2: Get only a count of service principals</span></span>
+### <a name="example-2-get-only-a-count-of-service-principals"></a><span data-ttu-id="dc2a2-150">Exemplo 2: obter apenas uma contagem de entidades de serviço</span><span class="sxs-lookup"><span data-stu-id="dc2a2-150">Example 2: Get only a count of service principals</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0c32f-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0c32f-151">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="dc2a2-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc2a2-151">Request</span></span>
 
-<span data-ttu-id="0c32f-152">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0c32f-152">The following is an example of the request.</span></span>
+<span data-ttu-id="dc2a2-152">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-152">The following is an example of the request.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="0c32f-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="0c32f-153">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_count_only"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/$count
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="0c32f-154">C#</span><span class="sxs-lookup"><span data-stu-id="0c32f-154">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-count-only-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0c32f-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0c32f-155">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-count-only-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="dc2a2-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc2a2-153">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="0c32f-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0c32f-156">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-count-only-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[<span data-ttu-id="0c32f-157">Java</span><span class="sxs-lookup"><span data-stu-id="0c32f-157">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-count-only-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="0c32f-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c32f-158">Response</span></span>
-
-<span data-ttu-id="0c32f-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0c32f-159">The following is an example of the response.</span></span>
+<span data-ttu-id="dc2a2-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response"
@@ -166,46 +146,26 @@ Content-type: text/plain
 
 `893`
 
-### <a name="example-3-use-filter-and-top-to-get-one-service-principal-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="0c32f-160">Exemplo 3: Utilize $filter e $top para obter uma entidade de serviço com um nome de exibição que comece com a letra 'a', incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="0c32f-160">Example 3: Use $filter and $top to get one service principal with a display name that starts with 'a' including a count of returned objects</span></span>
+### <a name="example-3-use-filter-and-top-to-get-one-service-principal-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="dc2a2-155">Exemplo 3: Utilize $filter e $top para obter uma entidade de serviço com um nome de exibição que comece com a letra 'a', incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="dc2a2-155">Example 3: Use $filter and $top to get one service principal with a display name that starts with 'a' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0c32f-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0c32f-161">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="dc2a2-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc2a2-156">Request</span></span>
 
-<span data-ttu-id="0c32f-162">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0c32f-162">The following is an example of the request.</span></span>
+<span data-ttu-id="dc2a2-157">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-157">The following is an example of the request.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="0c32f-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="0c32f-163">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="0c32f-164">C#</span><span class="sxs-lookup"><span data-stu-id="0c32f-164">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0c32f-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0c32f-165">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="dc2a2-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc2a2-158">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="0c32f-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0c32f-166">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<span data-ttu-id="dc2a2-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-159">The following is an example of the response.</span></span>
 
-# <a name="java"></a>[<span data-ttu-id="0c32f-167">Java</span><span class="sxs-lookup"><span data-stu-id="0c32f-167">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="0c32f-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c32f-168">Response</span></span>
-
-<span data-ttu-id="0c32f-169">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0c32f-169">The following is an example of the response.</span></span>
-
-><span data-ttu-id="0c32f-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0c32f-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="dc2a2-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -232,46 +192,26 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-service-principals-with-display-names-that-contain-the-letters-team-including-a-count-of-returned-objects"></a><span data-ttu-id="0c32f-172">Exemplo 4: Utilize $search para obter entidades de serviço com nomes de exibição que contenham as letras 'Team', incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="0c32f-172">Example 4: Use $search to get service principals with display names that contain the letters 'Team' including a count of returned objects</span></span>
+### <a name="example-4-use-search-to-get-service-principals-with-display-names-that-contain-the-letters-team-including-a-count-of-returned-objects"></a><span data-ttu-id="dc2a2-162">Exemplo 4: Utilize $search para obter entidades de serviço com nomes de exibição que contenham as letras 'Team', incluindo uma contagem de objetos retornados</span><span class="sxs-lookup"><span data-stu-id="dc2a2-162">Example 4: Use $search to get service principals with display names that contain the letters 'Team' including a count of returned objects</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0c32f-173">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0c32f-173">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="dc2a2-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc2a2-163">Request</span></span>
 
-<span data-ttu-id="0c32f-174">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0c32f-174">The following is an example of the request.</span></span>
+<span data-ttu-id="dc2a2-164">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-164">The following is an example of the request.</span></span>
 
-
-# <a name="http"></a>[<span data-ttu-id="0c32f-175">HTTP</span><span class="sxs-lookup"><span data-stu-id="0c32f-175">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_team_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$search="displayName:Team"&$count=true
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[<span data-ttu-id="0c32f-176">C#</span><span class="sxs-lookup"><span data-stu-id="0c32f-176">C#</span></span>](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-team-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0c32f-177">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0c32f-177">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-team-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a><span data-ttu-id="dc2a2-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc2a2-165">Response</span></span>
 
-# <a name="objective-c"></a>[<span data-ttu-id="0c32f-178">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0c32f-178">Objective-C</span></span>](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-team-count-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<span data-ttu-id="dc2a2-166">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-166">The following is an example of the response.</span></span>
 
-# <a name="java"></a>[<span data-ttu-id="0c32f-179">Java</span><span class="sxs-lookup"><span data-stu-id="0c32f-179">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-team-count-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a><span data-ttu-id="0c32f-180">Resposta</span><span class="sxs-lookup"><span data-stu-id="0c32f-180">Response</span></span>
-
-<span data-ttu-id="0c32f-181">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0c32f-181">The following is an example of the response.</span></span>
-
-><span data-ttu-id="0c32f-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0c32f-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="dc2a2-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dc2a2-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
