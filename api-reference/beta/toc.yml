@@ -10196,67 +10196,33 @@ items:
                             href: api/ipnamedlocation-update.md
                           - name: Excluir
                             href: api/ipnamedlocation-delete.md
-          - name: Organização
-            href: resources/organization.md
-            items:
-              - name: Obter detalhes org
-                href: api/organization-get.md
-              - name: Atualizar detalhes org
-                href: api/organization-update.md
-          - name: Identidade visual organizacional
-            href: resources/organizationalbrandingproperties.md
-            items:
-              - name: Criar
-                href: api/organizationalbrandingproperties-create.md
-              - name: Obter
-                href: api/organizationalbrandingproperties-get.md
-              - name: Atualizar
-                href: api/organizationalbrandingproperties-update.md
-              - name: Excluir
-                href: api/organizationalbrandingproperties-delete.md
-              - name: Criar localizado
-                href: api/organizationalbrandingpropertieslocalization-create.md
-              - name: Obter localizado
-                href: api/organizationalbrandingpropertieslocalization-get.md
-              - name: Atualização localizada
-                href: api/organizationalbrandingpropertieslocalization-update.md
-              - name: Excluir localizado
-                href: api/organizationalbrandingpropertieslocalization-delete.md
-          - name: Contatos organizacionais
-            href: resources/orgcontact.md
-            items:
-              - name: Listar contatos org
-                href: api/orgcontact-list.md
-              - name: Obter contato org
-                href: api/orgcontact-get.md
-              - name: Atualizar contato org
-                href: api/orgcontact-update.md
-              - name: Excluir contato org
-                href: api/orgcontact-delete.md
-              - name: Obter Delta de contatos da organização
-                href: api/orgcontact-delta.md
-              - name: Grupos
-                href: resources/group.md
-          - name: Operações de política de dados
-            href: resources/datapolicyoperation.md
-            items:
-              - name: Obter operações de política de dados
-                href: api/datapolicyoperation-get.md
-              - name: Concessões de permissão delegadas
-                href: resources/oauth2permissiongrant.md
+              - name: Operações de política de dados
+                href: resources/datapolicyoperation.md
                 items:
-                  - name: Listar concessões de permissão delegada
-                    href: api/oauth2permissiongrant-list.md
-                  - name: Obter subsídios de permissão delegada
-                    href: api/oauth2permissiongrant-get.md
-                  - name: Criar concessão de permissão delegada
-                    href: api/oauth2permissiongrant-post.md
-                  - name: Atualizar concessão de permissão delegada
-                    href: api/oauth2permissiongrant-update.md
-                  - name: Excluir concessão de permissão delegada
-                    href: api/oauth2permissiongrant-delete.md
-                  - name: Obter intervalo
-                    href: api/oauth2permissiongrant-delta.md
+                  - name: Obter operações de política de dados
+                    href: api/datapolicyoperation-get.md
+                  - name: Concessões de permissão delegadas
+                    href: resources/oauth2permissiongrant.md
+                    items:
+                      - name: Listar concessões de permissão delegada
+                        href: api/oauth2permissiongrant-list.md
+                      - name: Obter subsídios de permissão delegada
+                        href: api/oauth2permissiongrant-get.md
+                      - name: Criar concessão de permissão delegada
+                        href: api/oauth2permissiongrant-post.md
+                      - name: Atualizar concessão de permissão delegada
+                        href: api/oauth2permissiongrant-update.md
+                      - name: Excluir concessão de permissão delegada
+                        href: api/oauth2permissiongrant-delete.md
+                      - name: Obter intervalo
+                        href: api/oauth2permissiongrant-delta.md
+                      - name: Organização
+                        href: resources/organization.md
+                        items:
+                          - name: Obter detalhes org
+                            href: api/organization-get.md
+                          - name: Atualizar detalhes org
+                            href: api/organization-update.md
               - name: Proteção de identidade
                 href: resources/identityprotection-root.md
                 items:
@@ -10337,6 +10303,40 @@ items:
                 items:
                   - name: Criar convite
                     href: api/invitation-post.md
+              - name: Identidade visual organizacional
+                href: resources/organizationalbrandingproperties.md
+                items:
+                  - name: Criar
+                    href: api/organizationalbrandingproperties-create.md
+                  - name: Obter
+                    href: api/organizationalbrandingproperties-get.md
+                  - name: Atualizar
+                    href: api/organizationalbrandingproperties-update.md
+                  - name: Excluir
+                    href: api/organizationalbrandingproperties-delete.md
+                  - name: Criar localizado
+                    href: api/organizationalbrandingpropertieslocalization-create.md
+                  - name: Obter localizado
+                    href: api/organizationalbrandingpropertieslocalization-get.md
+                  - name: Atualização localizada
+                    href: api/organizationalbrandingpropertieslocalization-update.md
+                  - name: Excluir localizado
+                    href: api/organizationalbrandingpropertieslocalization-delete.md
+              - name: Contatos organizacionais
+                href: resources/orgcontact.md
+                items:
+                  - name: Listar contatos org
+                    href: api/orgcontact-list.md
+                  - name: Obter contato org
+                    href: api/orgcontact-get.md
+                  - name: Atualizar contato org
+                    href: api/orgcontact-update.md
+                  - name: Excluir contato org
+                    href: api/orgcontact-delete.md
+                  - name: Obter Delta de contatos da organização
+                    href: api/orgcontact-delta.md
+                  - name: Grupos
+                    href: resources/group.md
               - name: Política
                 href: resources/policy-overview.md
                 items:

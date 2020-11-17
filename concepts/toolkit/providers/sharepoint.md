@@ -3,18 +3,18 @@ title: Provedor do SharePoint
 description: Use o provedor do SharePoint dentro de suas Web Parts do SharePoint para poder alimentar os componentes com o acesso ao Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 1681dd07c93cfb419fb8aa61263432eaebb099dd
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: c27a24ac1b5f41b97d749620edbae09794072bed
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288494"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086746"
 ---
 # <a name="sharepoint-provider"></a>Provedor do SharePoint
 
 Use o provedor do SharePoint dentro de suas Web Parts do SharePoint para poder alimentar os componentes com o acesso ao Microsoft Graph.
 
-Para saber mais, veja [Providers](../providers.md).
+Para saber mais sobre provedores de autenticação, consulte [Providers](../providers.md).
 
 ## <a name="get-started"></a>Introdução
 
@@ -46,7 +46,9 @@ public render(): void {
 
 ## <a name="sample"></a>Amostra
 
-Para obter um exemplo que mostra como usar os vários componentes em suas Web Parts do SharePoint, consulte o exemplo de Web Part do [SharePoint](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) no repositório do Microsoft Graph Toolkit.
+Para obter detalhes sobre como initalize o provedor do SharePoint, consulte o guia de introdução à [Web Part do SharePoint](../get-started/build-a-sharepoint-web-part.md) .
+
+Para obter um exemplo predefinido que mostra como usar os vários componentes em suas Web Parts do SharePoint, confira o [exemplo de Web Part do SharePoint](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) no repositório do Microsoft Graph Toolkit.
 
 ## <a name="test-in-the-workbench"></a>Teste no Workbench
 
@@ -56,7 +58,10 @@ Depois de criar uma Web Part e estiver pronto para usar os componentes, você pr
 
 Em suma, é importante adicionar a permissão certa ao seu `package-solution.json` . Você precisará carregar um pacote de sua Web Part para o SharePoint e fazer com que um administrador aprove as permissões solicitadas.
 
->**Dica:** se você não tiver certeza de quais permissões adicionar, a documentação de cada componente inclui todas as permissões necessárias.
+>[!TIP]
+>O guia de introdução de [Web Parts do SharePoint](../get-started/build-a-sharepoint-web-part.md#configure-permissions) fornece instruções passo a passo para configurar e aprovar permissões.
+
+>**Observação:** se você não tiver certeza de quais permissões adicionar, a documentação de cada componente inclui todas as permissões necessárias.
 
 ## <a name="polyfills"></a>Polyfills
 

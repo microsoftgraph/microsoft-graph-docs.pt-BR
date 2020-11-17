@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8dbb2b7d2c8948763ffc48ac299cc3f2f330498a
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: ef92348219476f5a6ee344d5a25a5d1e7943e645
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418165"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086659"
 ---
 # <a name="delete-fido2authenticationmethodconfiguration"></a>Excluir fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -25,16 +25,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
+|Delegada (conta Microsoft pessoal)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para cenários delegados, o administrador precisa de uma das seguintes [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa da seguinte [função](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador global
-* Leitor global
-* Administrador de autenticação privilegiada
-* Administrador de autenticação
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 

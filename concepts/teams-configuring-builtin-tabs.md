@@ -4,12 +4,12 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3f1aa2a88a6852e39dbcf791997e19cc214086e1
-ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
+ms.openlocfilehash: 80a790c19cffcd7ec95afb84f5e6cd6bad885b56
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945105"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086589"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
@@ -103,12 +103,12 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 ## <a name="wiki-tabs"></a>Guias da wiki
 
 Para as guias da wiki, o `teamsAppId` é `com.microsoft.teamspace.tab.wiki`.
-As guias da wiki não dão suporte à configuração por meio do Graph.
-Observe, contudo, que não há muito o que configurar. Em uma guia da wiki não configurada, o primeiro usuário precisa apenas escolher **Configurar guia** para configurá-la.
+As guias wiki não oferecem suporte à configuração pelo Microsoft Graph.
+Observe, no entanto, que não há muito a configurar-em uma guia wiki não configurada, o primeiro usuário precisa apenas selecionar a **guia Configurar** para configurá-la.
 
 ## <a name="planner-tabs"></a>Guias do Planner
 
-Para as guias do Planner, o teamsAppId é `com.microsoft.teamspace.tab.planner`. Essa configuração não é compatível.
+Para guias do Planner, o `teamsAppId` é `com.microsoft.teamspace.tab.planner` . Essa configuração não é compatível.
 
 ## <a name="microsoft-stream-tabs"></a>Guias do Microsoft Stream
 

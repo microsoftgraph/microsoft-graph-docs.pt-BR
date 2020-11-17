@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: db326c2e985b07d22dffa6bf5ec067b72d3c8d00
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: cd6b8c9f1cc9fb051e88c4a47542c046a5d163fe
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081961"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086785"
 ---
 # <a name="list-user-memberof"></a>Listar usuário memberOf
 
@@ -41,14 +41,14 @@ GET /users/{id | userPrincipalName}/memberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. A conversão OData também está habilitado, por exemplo, você pode convertê-la para obter apenas o directoryRoles do qual o usuário é membro. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+Este método dá suporte aos [parâmetros de consulta OData](/graph/query_parameters)para ajudar a personalizar a resposta, incluindo `$search`, `$count` e `$filter`. A conversão OData também está habilitada, por exemplo, você pode convertê-la para obter apenas o directoryRoles do qual o usuário é membro. Você pode usar `$search` na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os parâmetros de consulta `$count` e `$search`. Pode haver um pequeno atraso entre o momento em que um item é adicionado ou atualizado e quando está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho | Valor |
 |:------ |:----- |
 | Autorização  | {token} de portador. Obrigatório. |
-| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, `$filter`, `$orderby` ou os parâmetros de consulta de conversão OData. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
+| ConsistencyLevel | eventual. Esse cabeçalho e `$count` são necessários quando se utiliza `$search`, `$filter`, `$orderby` ou os parâmetros de consulta de conversão OData. Ele usa um índice que pode não estar atualizado com as alterações recentes feitas no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/users/{id}/memberOf
 
 ---
 
-
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
@@ -115,7 +114,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.group",
       "displayName": "All Users",
       "mailEnabled": false,
-      "securityEnabled": true,
+      "securityEnabled": true
     }
   ]
 }
@@ -152,8 +151,6 @@ HTTP/1.1 200 OK
 Content-type: text/plain
 ```
 
-893
-
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Exemplo 3: Usar a conversão OData para obter apenas uma contagem de associação de grupo
 
 #### <a name="request"></a>Solicitação
@@ -183,8 +180,6 @@ Este é um exemplo de resposta.
 HTTP/1.1 200 OK
 Content-type: text/plain
 ```
-
-294
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 4: Utilize $search e conversão OData para obter associação em grupos com nomes de exibição que contenham as letras 'camada', incluindo uma contagem de objetos retornados
 
@@ -271,7 +266,6 @@ Content-type: application/json
     }
   ]
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

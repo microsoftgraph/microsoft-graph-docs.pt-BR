@@ -3,18 +3,20 @@ title: Provedor do Microsoft Teams
 description: Use o provedor de equipes dentro da guia do Microsoft Teams para facilitar a autenticação e o acesso ao Microsoft Graph a todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 39a20b3946a795af34fd57d877214a9cb7dabcae
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: b102d216b9a9b4181fa070c6c95f543098fa0ba0
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296481"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086603"
 ---
 # <a name="microsoft-teams-provider"></a>Provedor do Microsoft Teams
 
 Use o provedor de equipes dentro da guia do Microsoft Teams para facilitar a autenticação e o acesso ao Microsoft Graph a todos os componentes.
 
-Para saber mais, veja [Providers](../providers.md).
+Para saber mais sobre provedores de autenticação, consulte [Providers](../providers.md).
+
+>**Dica:** Para obter detalhes sobre como começar a criar um aplicativo do Microsot Teams com o provedor Teams, consulte o guia [criar uma guia de introdução ao Microsoft Teams](../get-started/build-a-microsoft-teams-tab.md) .
 
 ## <a name="get-started"></a>Introdução
 
@@ -91,7 +93,7 @@ Se você estiver apenas começando a usar o Teams apps, consulte [adicionar guia
 Após instalar seu aplicativo com uma guia e você estiver pronto para usar os componentes, você precisará certificar-se de que seu aplicativo tem as permissões corretas para acessar o Microsoft Graph. Para configurar seu aplicativo com as permissões necessárias:
 
 1. [Recuperar seu nome de domínio](/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
-2. [Criar um novo registro de aplicativo](/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
+2. [Criar um novo registro de aplicativo](../get-started/add-aad-app-registration.md)
 3. [Conceder sua permissão de aplicativo](/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
 
 É importante adicionar a permissão certa na **página Adicionar acesso à API**. Você precisará de um administrador para adicionar e aprovar as permissões, dependendo de qual componente você precisa.

@@ -3,12 +3,12 @@ title: Provedor personalizado
 description: Crie um provedor personalizado para habilitar a autenticação e o acesso de gráfico para os componentes do Microsoft Graph Toolkit, se você tiver um código de autenticação existente em seu aplicativo.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 4e287a38a584f77b7dfedf6e36d56da7a4e29715
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 57b7ca843f71d22992df18dc2466d0182d3fc556
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643733"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086596"
 ---
 # <a name="custom-provider"></a>Provedor personalizado
 
@@ -21,7 +21,7 @@ Este artigo descreve cada abordagem em mais detalhes.
 
 ## <a name="simpleprovider"></a>Simpleprovider
 
-Crie uma instância da `SimpleProvider` classe passando uma função que retornará um token de acesso para escopos aprovados.
+Crie uma instância da `SimpleProvider` classe passando uma função que retornará um token de acesso para escopos aprovados. 
 
 ```ts
 let provider = new SimpleProvider((scopes: string[]) => {
@@ -31,13 +31,17 @@ let provider = new SimpleProvider((scopes: string[]) => {
 
 Além disso, você também pode fornecer uma `login` função opcional e `logout` que possa lidar com as chamadas de entrada e de saída do componente de [logon](../components/login.md) .
 
+> [!IMPORTANT] 
+> Para indicar aos componentes que eles podem começar a chamar as APIs do Microsoft Graph após um usuário entrar com êxito, você precisará chamar `Providers.setState(ProviderState.SignedIn)` . Um exemplo disso é mostrado na função a `login` seguir.
+
 ```ts
 function getAccessToken(scopes: string[]) {
   // return a promise with accessToken string
 }
 
 function login() {
-  // login code
+  //login code
+  Providers.globalProvider.setState(ProviderState.SignedIn)
 }
 
 function logout() {
@@ -63,7 +67,7 @@ export enum ProviderState {
 
 Você pode estender a `IProvider` classe abstract para criar seu próprio provedor.
 
-### <a name="state"></a>State
+### <a name="state"></a>Estado
 
 Um provedor deve acompanhar o estado de autenticação e atualizar os componentes quando o estado for alterado. A `IProvider` classe já implementa o `onStateChanged(eventHandler)` manipulador e a `state: ProviderState` propriedade. Você só precisa usar o `setState(state:ProviderState)` método na sua implementação para atualizar o estado quando ele for alterado. A atualização do estado acionará o `stateChanged` evento e atualizará todos os componentes automaticamente.
 

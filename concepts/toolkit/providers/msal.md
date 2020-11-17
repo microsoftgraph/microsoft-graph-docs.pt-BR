@@ -3,12 +3,12 @@ title: Provedor MSAL
 description: O provedor MSAL usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: c3c921cfa473e2001d2a150096741d2bddf39f10
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 0edb6fba29c5ee0dcb37199db055761088408be6
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288158"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086610"
 ---
 # <a name="msal-provider"></a>Provedor MSAL
 
@@ -72,6 +72,4 @@ Para saber mais sobre MSAL.js e para opções adicionais que você pode usar ao 
 
 ## <a name="creating-an-appclient-id"></a>Criar uma ID de aplicativo/cliente
 
-Para obter detalhes sobre como registrar um aplicativo e obter uma ID de cliente, consulte o [início rápido registrar um aplicativo](/azure/active-directory/develop/quickstart-register-app).
-
->**Observação:** MSAL só oferece suporte ao fluxo implícito para OAuth. Certifique-se de habilitar o fluxo implícito em seu aplicativo no portal do Azure (não está habilitado por padrão). Em **autenticação**, encontre a seção **concessão implícita** e marque as caixas de seleção para **tokens de acesso** e **tokens de ID**. Para usar a autoridade comum, defina **Account em qualquer diretório organizacional**. Para usar um locatário específico, defina o `authority` durante a inicialização.
+Para obter detalhes sobre como registrar um aplicativo e obter uma ID de cliente, consulte [criar um aplicativo do Azure Active Directory](../get-started/add-aad-app-registration.md).

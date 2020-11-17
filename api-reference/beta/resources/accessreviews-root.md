@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 1cca21c4d37d929a9744d83630bdd817e1013152
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: a7c40faf46713e9f88c48d6c26df73ccb975bb86
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081835"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086582"
 ---
 # <a name="azure-ad-access-reviews-all-resources"></a>Revisões do Azure AD Access (todos os recursos)
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->Para as APIs de revisão do Access que se aplicam ao grupo memeberships, consulte [Access Reviews (Group Memberships)](accessreviewsv2-root.md). Essas APIs de revisão de acesso se aplicam a todos os outros tipos de recurso.
+>Para as APIs de revisão do Access que se aplicam a associações de grupo, consulte [Access Reviews (Group Memberships)](accessreviewsv2-root.md). Essas APIs de revisão de acesso se aplicam a todos os outros tipos de recurso.
 
 Você pode usar as [revisões do Azure ad Access](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) para configurar revisões de acesso de uso único ou recorrente para atestado dos direitos de acesso do usuário.
 
@@ -37,7 +37,7 @@ Observe que o recurso de revisões de acesso, incluindo a API, está incluído n
 Antes de criar um controle de revisão, programa ou programa do Access, um administrador deve ter sido previamente integrado para preparar os recursos do [programControlType](programcontroltype.md) e do [businessFlowTemplate](businessflowtemplate.md) . A organização pode se integrar às revisões do Azure AD Access ou, no caso de revisões de acesso das funções do Azure AD ou das funções de assinatura do Azure, o PIM do Azure AD.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados à revisão do Access.
 

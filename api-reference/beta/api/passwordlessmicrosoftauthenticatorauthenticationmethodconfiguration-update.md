@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8536e70f264775a073830aeac77d3fc27810e5f0
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 91c158137406da47cddfaaa2384ed951d326358f
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418210"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086625"
 ---
 # <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"></a>Atualizar passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph
@@ -27,16 +27,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
+|Delegada (conta Microsoft pessoal)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para cenários delegados, o administrador precisa de uma das seguintes [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa da seguinte [função](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador global
-* Leitor global
-* Administrador de autenticação privilegiada
-* Administrador de autenticação
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 
