@@ -4,12 +4,12 @@ description: Como parte da validação da solicitação para os métodos addKey 
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: b0e0384ab440bb08eb3b708c4ad057da42986c5c
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: de27890f9e822f3cc75d1e8a1007794a0e70bf8c
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330089"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086736"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Gerando um token de comprovação de posse para sobrepor chaves
 
@@ -22,7 +22,7 @@ Como parte da solicitação de validação para esses métodos, uma comprovaçã
 O token deve conter os seguintes argumentos:
 
 - `aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.
-- `iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.
+- `iss` – O emissor deve ser o Azure AD __ObjectId__  do aplicativo que está fazendo a chamada (não é o applicationId ou o clientId).
 - `nbf` – Não antes da hora.
 - `exp` – O tempo de expiração deve ser "nbf" + 10 min.
 
