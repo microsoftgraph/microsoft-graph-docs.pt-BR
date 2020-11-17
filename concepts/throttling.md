@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3bcdc22bb84d669836a8fcafb7353fbf23a7dad7
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 56cd4925f7678e22b94eb97d4420b4a18c682ef7
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932476"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030239"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -278,9 +278,9 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 | ---------- | ----------- | -------------- |
 | aplicação+par de locatários | S: 3500, M:5000, L:8000 por 10 segundos | 3000 por 2 minutos e 30 segundos |
 | aplicação | 150,000 por 20 segundos  | 70,000 por 5 minutos |
-| locatário | Não aplicável | 9000 por 5 minutos |
+| locatário | Não Aplicável | 18,000 por 5 minutos |
 
-> **Note** : The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
+> **Observação**: o limite do par aplicativo + locatário varia com base no número de usuários nas solicitações de locatário que são executadas. Os tamanhos dos locatários são definidos da seguinte forma: S - menos de 50 usuários, M - entre 50 e 500 usuários e L - acima de 500 usuários.
 
 The following table lists base request costs. Any requests not listed have a base cost of 1.
 

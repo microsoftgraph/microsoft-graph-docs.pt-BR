@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 911a9a06055b9234393452710cf419ee9d30f91b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8d5ba0f54498f7c9315aa339aca78d29b04fcfee
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967851"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49082080"
 ---
 # <a name="create-serviceprincipal"></a>Criar servicePrincipal
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Criar um novo objeto do [servicePrincipal](../resources/serviceprincipal.md).
 
 > [!IMPORTANT]
-> Não há suporte para a adição de [**passwordCredential**](../resources/passwordcredential.md) durante a criação de servicePrincipals. Use o método [addpassword](serviceprincipal-addpassword.md) para adicionar senhas a um servicePrincipal.
+> Não há suporte para [**passwordCredential**](../resources/passwordcredential.md) ao criar servicePrincipals. Use o método [addPassword](serviceprincipal-addpassword.md) para adicionar senhas a um servicePrincipal.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /serviceprincipals
+POST /servicePrincipals
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -46,7 +46,7 @@ POST /serviceprincipals
 | Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto do [servicePrincipal](../resources/serviceprincipal.md). O corpo da solicitação deve conter  **appId**.
+No corpo da solicitação, forneça uma representação JSON de um objeto [serviceprincipal](../resources/serviceprincipal.md). O corpo da solicitação devem conter **appId**.
 
 ## <a name="response"></a>Resposta
 
@@ -63,7 +63,7 @@ Este é um exemplo da solicitação.
   "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/serviceprincipals
+POST https://graph.microsoft.com/beta/servicePrincipals
 Content-type: application/json
 
 {

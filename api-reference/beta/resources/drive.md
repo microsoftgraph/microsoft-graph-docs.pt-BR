@@ -6,12 +6,12 @@ description: o recurso de unidade representa o OneDrive de um usuário ou uma bi
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9c23e7f8806f103e369149429ab4c370213660dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74ef4a5f8c2e67a81ad02ca0844d7f15dba972e8
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979624"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49081828"
 ---
 # <a name="drive-resource-type"></a>tipo de recurso de unidade
 
