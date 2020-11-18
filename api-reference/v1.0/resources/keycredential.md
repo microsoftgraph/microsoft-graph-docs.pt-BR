@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 97aab57c1ed0aa9f43536b89b49ca93a422962da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5faf577c45a82ef17ebbb5b2f195abd232df9fa
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072932"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086743"
 ---
 # <a name="keycredential-resource-type"></a>tipo de recurso keycredential
 
@@ -22,13 +22,13 @@ Contém uma credencial de chave associada a um aplicativo <!--or a service princ
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binária| Identificador de chave personalizada |
-| displayName | Cadeia de caracteres | Nome amigável para a chave. Opcional. |
-|endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+| displayName | String | Nome amigável para a chave. Opcional. |
+|endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |keyId|Guid|O identificador exclusivo (GUID) da chave.|
-|startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|type|Cadeia de caracteres|O tipo de credencial de chave; por exemplo, "simétrico".|
-|ocorrência|Cadeia de caracteres|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, "Verify".|
-|chave|Binário| Valor para a credencial de chave. Deve ser um valor codificado de base 64. |
+|startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|tipo|String|O tipo de credencial de chave; por exemplo, "simétrico".|
+|ocorrência|String|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, "Verify".|
+|chave|Binário| Os dados brutos do certificado na matriz de bytes convertidos em cadeia de caracteres Base64; por exemplo, `[System.Convert]::ToBase64String($Cert.GetRawCertData())` . |
 
 ## <a name="json-representation"></a>Representação JSON
 
