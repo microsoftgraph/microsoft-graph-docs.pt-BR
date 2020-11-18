@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bbc60dfd325825d943b595146a09e00c9e73e10c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 45e0514ef2882cc9ed9d9d53f8f3be202228dfa0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725614"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49200250"
 ---
 # <a name="officesuiteapp-resource-type"></a>tipo de recurso officeSuiteApp
 
@@ -152,7 +152,6 @@ Veja a seguir uma representação JSON do recurso.
   "officeConfigurationXml": "binary"
 }
 ```
-
 
 
 

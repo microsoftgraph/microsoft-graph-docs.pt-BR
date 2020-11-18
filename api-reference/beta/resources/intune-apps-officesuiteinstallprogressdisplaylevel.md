@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fff1e5cc81574458ccef128815da08549edbaa3a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aba04c5b521342159923274a02d02305c02b01a1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685524"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49200257"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>tipo de enumeração officeSuiteInstallProgressDisplayLevel
 
@@ -25,9 +25,8 @@ A enumeração para especificar o nível de exibição da interface do usuário 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Ainda não documentado|
+|nenhum|,0|Ainda não documentado|
 |cheia|1|Ainda não documentado|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98e56e52cd26e7348a9215ecf267c45cc3c7b3eb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d62124df60dff7337668a41d5cf5a604f53a4ca1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696430"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49200004"
 ---
 # <a name="win32lobapp-resource-type"></a>tipo de recurso win32LobApp
 
@@ -76,6 +76,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Os detalhes do MSI, se este aplicativo Win32 for um aplicativo MSI.|
 |setupFilePath|String|O caminho relativo do arquivo de instalação no pacote Win32LobApp criptografado.|
 |minimumSupportedWindowsRelease|String|O valor da versão mínima com suporte do Windows.|
+|displayVersion|String|A versão exibida no UX para este aplicativo.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -204,10 +205,10 @@ Veja a seguir uma representação JSON do recurso.
     "publisher": "String"
   },
   "setupFilePath": "String",
-  "minimumSupportedWindowsRelease": "String"
+  "minimumSupportedWindowsRelease": "String",
+  "displayVersion": "String"
 }
 ```
-
 
 
 

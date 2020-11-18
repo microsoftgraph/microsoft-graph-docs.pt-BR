@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 09714a743c441058f0a87ff9d26b864a28022b96
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b6e36f6bba7cd996e5bf264f91ac3d59d9495759
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707833"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199928"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>tipo de enumeração androidDeviceOwnerRequiredPasswordType
 
@@ -34,7 +34,6 @@ Política de proprietário do dispositivo Android tipo de senha exigido.
 |alphanumericWithSymbols|6 |Pelo menos alfanumérico com símbolos.|
 |lowSecurityBiometric|7 |Senha com base em Biometria de segurança baixa necessária.|
 |customPassword|8 |Senha personalizada definida pelo administrador.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b458a4094d3ad8870d788d5e2650013168acf56
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: df9c2bd4a991d54b4c6293b2c8995bc76110644e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723097"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49200236"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 
@@ -29,8 +29,8 @@ Contém as propriedades do sistema operacional mínimo obrigatório para um apli
 |v9_0|Booliano|Versão 9.0 ou posterior.|
 |v10_0|Booliano|Versão 10.0 ou posterior.|
 |v11_0|Booliano|Versão 11.0 ou posterior.|
-|v12_0|Boolean|Versão 12,0 ou posterior.|
-|v13_0|Boolean|Versão 13,0 ou posterior.|
+|v12_0|Booliano|Versão 12,0 ou posterior.|
+|v13_0|Booliano|Versão 13,0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "v13_0": true
 }
 ```
-
 
 
 

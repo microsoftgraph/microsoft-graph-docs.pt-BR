@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ef46617a5b7931ffd7d34c7c16c6654ffc860bd1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d47cd9f2fdb456d99058978d085e6f09afe6572e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732661"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49200222"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo de enumeração resultantAppStateDetail
 
@@ -52,7 +52,6 @@ Enum indicando detalhes adicionais sobre por que um aplicativo tem um estado de 
 |minimumOsVersionNotMet|-1002|A versão do sistema operacional no dispositivo de destino é menor do que o mínimo configurado.|
 |minimumDiskSpaceNotMet|-1001|O espaço em disco disponível no dispositivo de destino é menor do que o mínimo configurado.|
 |processorArchitectureNotApplicable|-1000|A arquitetura do dispositivo (por exemplo, x86/AMD64) não se aplica ao aplicativo.|
-
 
 
 
