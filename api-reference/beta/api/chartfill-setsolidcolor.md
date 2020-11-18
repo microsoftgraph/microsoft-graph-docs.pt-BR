@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite    |
 |Aplicativo | Sem suporte. |
 
