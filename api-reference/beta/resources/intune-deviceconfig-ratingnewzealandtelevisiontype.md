@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ae4d5ca07dd7a5417aa786c45cea399353529286
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 23e1103e7a1be19144c65abdc8d502928743970b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707050"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198420"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>tipo de enumeração ratingNewZealandTelevisionType
 
@@ -30,7 +30,6 @@ Rótulos de classificação de conteúdo de TV na Nova Zelândia
 |geral|duas|A classificação G exclui os materiais que provavelmente danificarão os filhos em 14|
 |parentalGuidance|3D|A classificação do PGR incentiva os pais e os guardiões a supervisionar os visualizadores mais jovens|
 |adultos|4 |A classificação ao ao não é adequada para crianças|
-
 
 
 

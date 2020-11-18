@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 30a3cae31bf194fb0f90133fff8b0c6bbf20c8f9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 778beac6c0d489ba6ce4e2b51dafc8c4be768974
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697970"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199666"
 ---
 # <a name="code-enum-type"></a>tipo de enumeração de código
 
@@ -25,7 +25,7 @@ Código de erro para validação de regra.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Nenhum erro.|
+|nenhum|,0|Nenhum erro.|
 |jsonFileInvalid|1|Erro inválido no arquivo JSON.|
 |jsonFileMissing|duas|Erro de arquivo JSON ausente.|
 |jsonFileTooLarge|3D|Erro de arquivo JSON muito grande.|
@@ -36,7 +36,7 @@ Código de erro para validação de regra.
 |operatorNotSupported|8 |Não há suporte para o operador erro.|
 |datatypeMissing|9 |Erro de tipo de dados ausente.|
 |datatypeNotSupported|10 |Erro de tipo de dados sem suporte.|
-|operatorDataTypeCombinationNotSupported|11|Erro de combinação de tipo de dados operador sem suporte.|
+|operatorDataTypeCombinationNotSupported|11 |Erro de combinação de tipo de dados operador sem suporte.|
 |moreInfoUriMissing|12 |Mais informações urlmissing erro.|
 |moreInfoUriInvalid|13 |Mais informações de URL erro inválido.|
 |moreInfoUriTooLarge|14 |Saiba mais sobre o erro ltoo grande.|
@@ -57,7 +57,6 @@ Código de erro para validação de regra.
 |unrecognizedLocale|anos|Erro de localidade não reconhecido.|
 |desconhecido|até|Erro desconhecido.|
 |remediationStringsMissing|31|Erros de cadeia de caracteres de correção ausente.|
-
 
 
 

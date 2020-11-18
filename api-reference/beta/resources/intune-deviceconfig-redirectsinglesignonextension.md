@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b51e708889bd4d6e81f50a326143deef7bd40f4a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5b899a0bfcb80c57bdfc889a4a857950678946c6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693910"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198217"
 ---
 # <a name="redirectsinglesignonextension-resource-type"></a>tipo de recurso redirectSingleSignOnExtension
 
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4f142c9ee4852c8a22d4fd64d6fe9d3970a9d9ae
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e039732400bcd446cf7ee20e8474e76a4b64a239
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723937"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199739"
 ---
 # <a name="androiddeviceownervirtualhomebuttontype-enum-type"></a>tipo de enumeração androidDeviceOwnerVirtualHomeButtonType
 
@@ -28,7 +28,6 @@ Tela inicial virtual do modo de quiosque do dispositivo Android tipo de botão d
 |notConfigured|,0|Não configurado; Esse valor é ignorado.|
 |swipeUp|1|Botão deslizar para cima para a página inicial.|
 |flutuante|duas|Botão de página inicial flutuante.|
-
 
 
 

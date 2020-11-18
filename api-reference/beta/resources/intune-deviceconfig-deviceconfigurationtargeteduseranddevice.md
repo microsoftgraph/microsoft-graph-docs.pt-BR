@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a696c9e6a56ff33ce06362283f4b95644ac98198
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c722cf1a21e46ec6066efc1e836793d77ce8e8b7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696178"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199389"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>tipo de recurso deviceConfigurationTargetedUserAndDevice
 
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

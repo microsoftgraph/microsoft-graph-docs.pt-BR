@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b14b632e03160e9b56de1ad2ba0c2e32a1b74179
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8b9496c593cb714d830aa143918adcf87bed09c8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728974"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49197902"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentityState
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceErrorName": "String"
 }
 ```
-
 
 
 

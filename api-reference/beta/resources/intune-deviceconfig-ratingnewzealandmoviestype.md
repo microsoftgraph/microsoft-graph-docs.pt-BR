@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 40459e700b47580a981bea1aa5adccfe89345247
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 13b1564770002cb232fd07f3e24a2e90e3af56c6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707063"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198427"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>tipo de enumeração ratingNewZealandMoviesType
 
@@ -36,7 +36,6 @@ Rótulos de classificação de filmes na Nova Zelândia
 |agesAbove18|8 |A classificação do R18 é restrita a pessoas de 18 anos ou mais|
 |limitado|9 |A classificação R é restrita a uma determinada audiência|
 |agesAbove16Restricted|10 |A classificação RP16 requer que os espectadores de 16 acompanhados por um pai ou adulto|
-
 
 
 

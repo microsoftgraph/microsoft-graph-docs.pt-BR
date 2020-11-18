@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 090ce763b6eb7eaf81ad702127dad43a581668ba
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7abbd110b06b04cbdde2a3258efe967df834a2e4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731908"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199886"
 ---
 # <a name="androiddeviceownertrustedrootcertificate-resource-type"></a>tipo de recurso androidDeviceOwnerTrustedRootCertificate
 
@@ -108,7 +108,6 @@ Veja a seguir uma representação JSON do recurso.
   "certFileName": "String"
 }
 ```
-
 
 
 

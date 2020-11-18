@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 200853c00dfd062d60b337dd9500b38c81774159
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 323cfc745b7990493c0d8681a75ad7a19e27ca17
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729809"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199634"
 ---
 # <a name="credentialsinglesignonextension-resource-type"></a>tipo de recurso credentialSingleSignOnExtension
 
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

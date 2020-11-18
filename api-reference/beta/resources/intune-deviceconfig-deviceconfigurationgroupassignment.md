@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1212746bd4108c3e80ecc2c86d168a18fb017cf6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0b6c05c0dc700b3cd05329676e64ae8593040e0c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703808"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199410"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>tipo de recurso deviceConfigurationGroupAssignment
 
@@ -36,7 +36,7 @@ Atribuição de grupo de configuração de dispositivo.
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |targetGroupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
-|excludeGroup|Boolean|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
+|excludeGroup|Booliano|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "excludeGroup": true
 }
 ```
-
 
 
 

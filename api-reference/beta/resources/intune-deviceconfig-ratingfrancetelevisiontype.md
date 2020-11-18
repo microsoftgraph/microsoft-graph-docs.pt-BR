@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6aa0777cb36e71d3ba6c71d4d589dae059e18ca
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: af27d4b637b3cb68ab8133392eb1a71fdce19b66
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726427"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198489"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>tipo de enumeração ratingFranceTelevisionType
 
@@ -31,7 +31,6 @@ Rótulos de classificação de conteúdo de TV na França
 |agesAbove12|3D|A classificação-12 não é recomendada para crianças com menos de 12|
 |agesAbove16|4 |A classificação-16 não é recomendada para crianças com menos de 16|
 |agesAbove18|5 |A classificação-18 não é recomendada para pessoas com 18 anos|
-
 
 
 

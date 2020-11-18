@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 21917b0fd5d4a9482d98906fdb98c137097a5b28
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 322dcdeef9d686466de9de02c8da124cda029f67
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732590"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199102"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>tipo de recurso edgeHomeButtonLoadsStartPage
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.edgeHomeButtonLoadsStartPage"
 }
 ```
-
 
 
 

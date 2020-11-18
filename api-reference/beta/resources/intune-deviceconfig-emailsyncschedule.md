@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fa1dfa4455a39c9d7fffff1ee95a739632cd49cd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 63e0c1ffaed029ca5ba010181c70ab0588135a36
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705922"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198871"
 ---
 # <a name="emailsyncschedule-enum-type"></a>tipo de enumeração emailSyncSchedule
 
@@ -32,7 +32,6 @@ Valores possíveis para agenda de sincronização de email.
 |thirtyMinutes|4 |Sincronizar a cada trinta minutos.|
 |sixtyMinutes|5 |Sincronizar a cada 60 minutos.|
 |basedOnMyUsage|6 |Sincronizar com base no meu uso.|
-
 
 
 

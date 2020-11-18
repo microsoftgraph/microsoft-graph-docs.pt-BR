@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 22d2ff28e73034b4f46b3fdf9f0637e4c7a939f2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e8d3fe75f394279acdbd74489ac39041c4a47254
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693931"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198357"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>tipo de enumeração ratingUnitedStatesMoviesType
 
@@ -32,7 +32,6 @@ Rótulos de classificação de filmes nos Estados Unidos
 |parentalGuidance13|4 |PG13, alguns materiais podem ser inadequados para crianças com menos de 13 anos|
 |limitado|5 |R, os espectadores em 17 exigem o guardião pai ou adulto de acompanhamento|
 |adultos|6 |NC17, somente para adultos|
-
 
 
 
