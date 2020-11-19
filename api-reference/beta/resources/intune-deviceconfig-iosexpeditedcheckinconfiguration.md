@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a904a67a746972e175c4751686b340885a841b5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 06c79cdf2d3d39173d4919b727f95a7cb49677e9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732555"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215860"
 ---
 # <a name="iosexpeditedcheckinconfiguration-resource-type"></a>tipo de recurso iosExpeditedCheckinConfiguration
 
@@ -106,7 +106,6 @@ Veja a seguir uma representação JSON do recurso.
   "enableExpeditedCheckin": true
 }
 ```
-
 
 
 

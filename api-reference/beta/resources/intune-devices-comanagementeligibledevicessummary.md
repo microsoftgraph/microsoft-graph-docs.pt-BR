@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 03baadeea1441d5eecc1ff6e8974724b19a59949
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4c7244bd594e38a8f129aa81389b159caff6b928
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697781"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214635"
 ---
 # <a name="comanagementeligibledevicessummary-resource-type"></a>tipo de recurso comanagementEligibleDevicesSummary
 
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "ineligibleCount": 1024
 }
 ```
-
 
 
 

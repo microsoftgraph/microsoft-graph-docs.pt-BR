@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 015f42d8297e58256c0f8664e992ed493c92f028
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 36ac264fba73231db50eab39448598ad798889b4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725509"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214852"
 ---
 # <a name="chassistype-enum-type"></a>tipo de enumeração chassisType
 
@@ -34,7 +34,6 @@ Tipo de chassi.
 |caneta|101|Tablet móvel.|
 |mobileOther|102|Outros dispositivos móveis.|
 |mobileUnknown|103|Celular desconhecido.|
-
 
 
 

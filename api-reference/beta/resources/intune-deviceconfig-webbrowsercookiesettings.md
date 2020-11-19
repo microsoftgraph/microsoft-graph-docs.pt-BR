@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 28d88ee669135ead2cc158d43431fbafe4846fbd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0473b2d02ec1407e40b7d08444721995b6276ba9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727446"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215580"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>tipo de enumeração webBrowserCookieSettings
 
@@ -30,7 +30,6 @@ Configurações de cookies do navegador da Web.
 |allowCurrentWebSite|duas|Permitir cookies do site atual.|
 |allowFromWebsitesVisited|3D|Permitir cookies de sites visitados.|
 |allowAlways|4 |Sempre permitir cookies.|
-
 
 
 

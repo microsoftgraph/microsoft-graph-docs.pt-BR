@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 738212bba5fefc9352669db5b87bacf761e077a5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c029b192934d7357b279329cbcbc346479f6882c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726372"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215622"
 ---
 # <a name="vpnclientauthenticationtype-enum-type"></a>tipo de enumeração vpnClientAuthenticationType
 
@@ -27,7 +27,6 @@ O tipo de autenticação de cliente VPN
 |:---|:---|:---|
 |userAuthentication|,0|Autenticação do Usuário|
 |deviceAuthentication|1|Autenticação de dispositivo|
-
 
 
 

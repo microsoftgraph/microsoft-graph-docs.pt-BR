@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42e44f3d5fc96dd382435502c82b187f58207709
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6c5317326018404986a63243678455c59302683f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724238"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212689"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar Windowsprotectionstate foi
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -71,6 +71,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |lastQuickScanSignatureVersion|String|Versão da última assinatura de verificação rápida|
 |lastFullScanSignatureVersion|String|Versão da última assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Hora do último status de integridade do dispositivo relatado|
+|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Status do produto do Windows Defender antivírus. Os valores possíveis são:,,,,,,,,,,,,,,, `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` , `serviceShutdownAsPartOfSystemShutdown` , `threatRemediationFailedCritically` , `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` ,,,,,,,,,,,,,,,.|
+|isVirtualMachine|Booliano|Indica se o dispositivo é uma máquina virtual.|
+|tamperProtectionEnabled|Booliano|Indica se o recurso proteção de violação do Windows Defender está habilitado.|
 
 
 
@@ -84,7 +87,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 Content-type: application/json
-Content-length: 865
+Content-length: 971
 
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
@@ -104,7 +107,10 @@ Content-length: 865
   "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
   "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
   "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "productStatus": "serviceNotRunning",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
 
@@ -113,7 +119,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 914
+Content-Length: 1020
 
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
@@ -134,10 +140,12 @@ Content-Length: 914
   "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
   "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
   "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "productStatus": "serviceNotRunning",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
-
 
 
 

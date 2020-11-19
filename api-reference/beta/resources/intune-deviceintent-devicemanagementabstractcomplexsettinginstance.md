@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9a96befe9bf00e8b964ca571675589d5ec375da
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 815a52e765a47257df4f9add18de5bdf223b621b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703738"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214866"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>tipo de recurso deviceManagementAbstractComplexSettingInstance
 
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "implementationId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 177942dd3374b063ecd7b26c657e152643d09288
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b4ac7c46dd21ffb9e9a31223822cf304e2b80c4f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722940"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215720"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Tipo de recurso omaSettingStringXml
 
@@ -31,6 +31,7 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|isEncrypted|Boolean|Indica se o campo de valor é criptografado. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|Cadeia de caracteres|Nome do arquivo associado à propriedade de valor (*.xml).|
 |valor|Binário|Valor. (Matriz de bytes codificados de UTF8)|
 
@@ -50,11 +51,11 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
+  "isEncrypted": true,
   "fileName": "String",
   "value": "binary"
 }
 ```
-
 
 
 

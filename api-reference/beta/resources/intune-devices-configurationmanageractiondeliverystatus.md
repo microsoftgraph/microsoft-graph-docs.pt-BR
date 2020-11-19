@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 09c7b1be3a5fdfc33a064d2a9208daa68ba4263e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bbe36a6f7e346467d35bf997817241d7f30ef6df
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733983"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214621"
 ---
 # <a name="configurationmanageractiondeliverystatus-enum-type"></a>tipo de enumeração configurationManagerActionDeliveryStatus
 
@@ -30,7 +30,6 @@ Estado de entrega da ação de dispositivo do Gerenciador de configurações
 |deliveredToConnectorService|duas|A ação é enviada para o serviço do conector ConfigurationManager (nuvem)|
 |failedToDeliverToConnectorService|3D|Falha ao enviar a ação para o serviço do conector ConfigurationManager (nuvem)|
 |deliveredToOnPremisesServer|4 |A ação é entregue no servidor local do ConfigurationManager|
-
 
 
 
