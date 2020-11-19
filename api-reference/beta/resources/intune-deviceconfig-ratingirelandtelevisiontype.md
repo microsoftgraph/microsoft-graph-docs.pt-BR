@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 22596d202032ca5f60b4af977554a8c5f4ee3ead
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5b778da33c595a8003c1f66c134c1cd9c89022c2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707091"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302744"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de enumeração ratingIrelandTelevisionType
 
@@ -32,7 +32,6 @@ Rótulos de classificação de conteúdo de TV na Irlanda
 |youngAdults|4 |A classificação de YA é adequada para a audiência Teenage|
 |parentalSupervision|5 |A classificação de PS convida os pais e os guardiões para considerar o acesso de crianças|
 |completa|6 |A classificação MA é adequada para adultos|
-
 
 
 

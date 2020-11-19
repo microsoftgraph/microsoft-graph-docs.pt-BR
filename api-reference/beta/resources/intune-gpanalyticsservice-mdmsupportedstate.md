@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: da723f61f8013ef5d20ed98ed61aac2899b6348f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 98d582fba2e5fdd6e108750d2859c516f8423aeb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697445"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298628"
 ---
 # <a name="mdmsupportedstate-enum-type"></a>tipo de enumeração mdmSupportedState
 
@@ -29,7 +29,6 @@ Status de suporte do MDM da configuração.
 |com suporte|1|Há suporte para a configuração.|
 |sem suporte|duas|A configuração não é suportada.|
 |preterido|3D|A configuração é depcrecated.|
-
 
 
 

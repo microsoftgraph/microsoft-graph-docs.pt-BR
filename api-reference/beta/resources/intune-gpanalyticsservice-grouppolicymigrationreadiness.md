@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d860844de50c58deace7f10821ca0b1a4591d00b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 30d223eb59d092b9411388b93226d48165a4e703
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722820"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298761"
 ---
 # <a name="grouppolicymigrationreadiness-enum-type"></a>tipo de enumeração groupPolicyMigrationReadiness
 
@@ -25,12 +25,11 @@ Indica se o arquivo de objeto de diretiva de grupo está coberto e pronto para a
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|1|Nenhuma cobertura do Intune|
+|nenhum|1|Nenhuma cobertura do Intune|
 |parcial|duas|Cobertura do Intune parcial|
 |complete|3D|Cobertura completa do Intune|
 |erro|4 |Erro ao analisar a cobertura|
 |Não aplicável|5 |Nenhuma configuração de política de grupo no GPO|
-
 
 
 

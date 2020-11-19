@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cca75743a7ab4e32f4ec3d4b065756f0bae19bd6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 695127717baa51f1888fd3b20d2bed4a42464e1b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727411"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299195"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessStateReason
 
@@ -25,7 +25,7 @@ Motivo do estado de acesso ao Exchange do dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Nenhum motivo de estado de acesso descoberto do Exchange|
+|nenhum|,0|Nenhum motivo de estado de acesso descoberto do Exchange|
 |desconhecido|1|Razão do estado de acesso desconhecido|
 |exchangeGlobalRule|duas|Estado de acesso determinado pela regra global do Exchange|
 |exchangeIndividualRule|3D|Estado de acesso determinado pela regra individual do Exchange|
@@ -41,7 +41,6 @@ Motivo do estado de acesso ao Exchange do dispositivo.
 |azureADBlockDueToAccessPolicy|14 |Estado de acesso revogado pela política de acesso AAD|
 |compromisedPassword|15 |Estado de acesso revogado por senha comprometida|
 |deviceNotKnownWithManagedApp|16 |Estado de acesso revogado por desafio de aplicativo gerenciado|
-
 
 
 

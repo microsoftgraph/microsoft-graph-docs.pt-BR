@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e160e88c54e7cc8d33e0c78090fbf06dfd52cab1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d66aadb93081195b3cc32ab749d50ab5bcd215fd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736048"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300931"
 ---
 # <a name="managedappprotectionpolicysetitem-resource-type"></a>tipo de recurso managedAppProtectionPolicySetItem
 
@@ -76,7 +76,6 @@ Veja a seguir uma representação JSON do recurso.
   "targetedAppManagementLevels": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 59141fe638f5f12ea393fb25606f5f72d06f297e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f4cb75398f99073ed70bda290b62cdcf40daf144
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736062"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300966"
 ---
 # <a name="errorcode-enum-type"></a>tipo de enumeração errorCode
 
@@ -29,7 +29,6 @@ Ainda não documentado
 |não autorizado|1|O usuário atual não tem acesso devido à falta de permissões de RBAC no recurso.|
 |não encontrado|duas|O usuário atual não tem acesso devido à falta de marcas de escopo RBAC no recurso.|
 |deleted|3D|O recurso foi excluído.|
-
 
 
 

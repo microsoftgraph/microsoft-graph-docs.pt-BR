@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3bf94da084e59faaa5a63e3b2b5a783c12f6f9d2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1543584c1b839eedb0c346758f77a906ac41b752
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48718473"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49301071"
 ---
 # <a name="endpointsecurityconfigurationprofiletype-enum-type"></a>tipo de enumeração endpointSecurityConfigurationProfileType
 
@@ -36,11 +36,10 @@ O tipo de perfil da política de segurança do ponto de extremidade.
 |deviceControl|8 |Controle de dispositivo.|
 |appAndBrowserIsolation|9 |Isolamento de aplicativo e navegador.|
 |exploitProtection|10 |Explorar proteção.|
-|Proteção WebProtection|11|Proteção da Web.|
+|Proteção WebProtection|11 |Proteção da Web.|
 |applicationControl|12 |Controle da aplicação.|
 |attackSurfaceReductionRules|13 |Regras de redução da superfície de ataque.|
 |accountProtection|14 |Proteção de conta.|
-
 
 
 

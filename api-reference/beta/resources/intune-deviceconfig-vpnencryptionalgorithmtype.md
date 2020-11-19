@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 420dff0b05cae2bb403b7f8746063fc3417c4a4f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f7813f66781f0443c570198248349c1bb08716fd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728367"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299657"
 ---
 # <a name="vpnencryptionalgorithmtype-enum-type"></a>tipo de enumeração vpnEncryptionAlgorithmType
 
@@ -33,7 +33,6 @@ O tipo de algoritmo de criptografia de associação de segurança VPN
 |aes256Gcm|5 |AES-256-GCM (16 octeto do ICV)|
 |aes192|6 |AES-192|
 |aes192Gcm|7 |AES-192-GCM|
-
 
 
 

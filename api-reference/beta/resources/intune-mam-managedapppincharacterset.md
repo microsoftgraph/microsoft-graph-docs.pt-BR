@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d3435e501f1504fb7f82f5301ff1dc397cdf40b2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 21b5913654ba56dabc210833fb7c80fdfe21fffa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694932"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302555"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>tipo de enumeração managedAppPinCharacterSet
 
@@ -27,7 +27,6 @@ Conjunto de caracteres que deve ser usado para o PIN do aplicativo de um usuári
 |:---|:---|:---|
 |numéricos|,0|Caracteres numéricos|
 |alphanumericAndSymbol|1|Caracteres alfanuméricos e simbólicos|
-
 
 
 

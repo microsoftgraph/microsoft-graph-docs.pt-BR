@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2fd271222d6e44878bdbd5efd7f26e1a2d74dd1a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 60a7d42d686129948c0934f494633671145fe9c9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727162"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300588"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>Tipo de recurso iosStoreAppAssignmentSettings
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "uninstallOnDeviceRemoval": true
 }
 ```
-
 
 
 

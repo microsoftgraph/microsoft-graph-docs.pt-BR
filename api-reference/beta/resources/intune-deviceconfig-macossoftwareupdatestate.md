@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 05d2d951d8eacb93d952e20f01af6e42b30eecc1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3e5f57bb4c1fce66b12084110579123d04adffc7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731075"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302877"
 ---
 # <a name="macossoftwareupdatestate-enum-type"></a>tipo de enumeração macOSSoftwareUpdateState
 
@@ -40,7 +40,6 @@ Estado de atualização do software MacOS
 |installInsufficientPower|2005|Não há energia suficiente para instalar a atualização|
 |installFailed|2006|A instalação falhou por um motivo não especificado|
 |commandFailed|2007|O comando Schedule Update falhou por um motivo não especificado|
-
 
 
 

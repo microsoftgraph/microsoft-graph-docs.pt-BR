@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8eabd459e8816b38d1e908d0da9c0723dca5a16
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ad174c7977f3cc61b40462f2e73b46a4fc298421
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48718466"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49301078"
 ---
 # <a name="endpointsecurityconfigurationtype-enum-type"></a>tipo de enumeração endpointSecurityConfigurationType
 
@@ -32,7 +32,6 @@ O tipo de política de segurança do ponto de extremidade.
 |endpointDetectionAndResponse|4 |Detecção e resposta do terminal.|
 |attackSurfaceReduction|5 |Redução da superfície do ataque.|
 |accountProtection|6 |Proteção de conta.|
-
 
 
 

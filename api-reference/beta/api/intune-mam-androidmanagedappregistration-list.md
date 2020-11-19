@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75d17fbf05c8886ec04c40c39de9be01a2243156
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9b46b3a543272963836d2620b40686ada0c34381
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690340"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300014"
 ---
 # <a name="list-androidmanagedappregistrations"></a>Listar androidManagedAppRegistrations
 
@@ -98,7 +98,6 @@ Content-Length: 1116
   ]
 }
 ```
-
 
 
 

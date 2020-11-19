@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 833af8bba73474f9d82eb8a491223547f5a8a3f8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8c513ad5dc3579d9b67e48f4014e8777330b5c69
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731068"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302884"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>tipo de recurso macOSVpnConfiguration
 
@@ -186,7 +186,6 @@ Veja a seguir uma representação JSON do recurso.
   "optInToDeviceIdSharing": true
 }
 ```
-
 
 
 

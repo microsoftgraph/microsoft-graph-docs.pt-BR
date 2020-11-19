@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e0be1fabe16e51c9ca9840f2417bc1d70d67b39
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f48e8511f7cbce95e15b1816831a471207c1558a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694967"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299328"
 ---
 # <a name="devicelogcollectionrequest-resource-type"></a>tipo de recurso deviceLogCollectionRequest
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "templateType": "String"
 }
 ```
-
 
 
 

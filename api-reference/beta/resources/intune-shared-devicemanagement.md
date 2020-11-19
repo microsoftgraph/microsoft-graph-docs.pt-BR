@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62a4a4f1926b549a5f7bab8bfdf8fc214ac07d56
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 95a958bef0550047b7e08cf372cd05b8e9112bca
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730387"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300819"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:
+O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  
 
 - Configurações do Android for Work
 - Eventos de auditoria
-- Termos e condições corporativos
+- Termos e condições corporativos 
 - Perfis de registro corporativo
 - Definições de configuração do dispositivo
 - Configurações de intenção de dispositivo
@@ -99,6 +99,10 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |auditEvents|Conjunto [auditEvent](../resources/intune-auditing-auditevent.md)|Eventos de auditoria|
 |**Termos da empresa**|
 |termsAndConditions|Conjunto [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Os termos e condições associados ao gerenciamento do dispositivo da empresa.|
+|**Políticas de configuração**|
+|configurationPolicies|coleção [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-deviceManagementConfigurationPolicy.md)|Lista de todas as políticas de configuração|
+|configurationSettings|coleção [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-deviceManagementConfigurationSettingDefinition.md)|Lista de todos os ConfigurationSettings|
+|configurationCategories|coleção [deviceManagementConfigurationCategory](../resources/intune-deviceconfigv2-deviceManagementConfigurationCategory.md)|Lista de todas as categorias de configuração|
 |**Registro corporativo**|
 |enrollmentProfiles|coleção [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Os perfis de registro.|
 |importedAppleDeviceIdentities|coleção [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|As identidades importadas do dispositivo Apple.|
@@ -156,6 +160,9 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |managementConditionStatements|coleção [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|As instruções de condição de gerenciamento associadas ao gerenciamento de dispositivos da empresa.|
 |**Análise de política de grupo**|
 |groupPolicyMigrationReports|coleção [groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|Uma lista de relatórios de migração de política de grupo.|
+|**MicrosoftTunnel**|
+|microsoftTunnelConfigurations|coleção [microsoftTunnelConfiguration](../resources/intune-mstunnel-microsoftTunnelConfiguration.md)|Coleção de configurações de MicrosoftTunnelConfiguration associadas à conta.|
+|microsoftTunnelSites|coleção [microsoftTunnelSite](../resources/intune-mstunnel-microsoftTunnelSite.md)|Coleção de configurações de MicrosoftTunnelSite associadas à conta.|
 |**Notificações**|
 |notificationMessageTemplates|Conjunto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Os modelos de mensagens de notificação.|
 |**Integração**|
@@ -185,7 +192,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |roleDefinitions|Conjunto [roleDefinition](../resources/intune-rbac-roledefinition.md)|As definições da função.|
 |roleScopeTags|coleção [roleScopeTag](../resources/intune-rbac-rolescopetag.md)|As marcas de escopo da função.|
 |**Relatórios**|
-|relatórios|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Singleton de relatórios|
+|relatórios|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|Singleton de relatórios|
 |**Atualização de software**|
 |windowsFeatureUpdateProfiles|coleção [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Uma coleção de perfis de atualização de recursos do Windows|
 |**Gerenciamento de despesas de telecomunicações (tem)**|
@@ -213,7 +220,6 @@ Veja a seguir uma representação JSON do recurso.
   "subscriptionState": "String"
 }
 ```
-
 
 
 

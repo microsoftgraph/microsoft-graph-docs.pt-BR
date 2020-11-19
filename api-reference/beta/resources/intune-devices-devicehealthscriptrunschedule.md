@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22a5f81fe28bc8e729ebd4eafe95bb4b18f94b88
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 813512f607b6b0bd4eaf633c41ccd5a28554936e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729331"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299377"
 ---
 # <a name="devicehealthscriptrunschedule-resource-type"></a>tipo de recurso deviceHealthScriptRunSchedule
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "interval": 1024
 }
 ```
-
 
 
 

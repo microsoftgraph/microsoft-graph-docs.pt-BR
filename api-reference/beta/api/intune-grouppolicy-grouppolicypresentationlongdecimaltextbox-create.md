@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f96507c8d354acda092e910b5f496f979a4c265
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 32c1a18193a6b7a168a9b90fa6ab5152e18f21ce
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730942"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300140"
 ---
 # <a name="create-grouppolicypresentationlongdecimaltextbox"></a>Criar groupPolicyPresentationLongDecimalTextBox
 
@@ -109,7 +109,6 @@ Content-Length: 338
   "maxValue": 8
 }
 ```
-
 
 
 

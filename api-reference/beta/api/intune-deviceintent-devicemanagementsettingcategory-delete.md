@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3ee94be478c7b7fd8ee27e4b7d1bebde3152efe
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: faf014a1d044d817dad661b14ca4973e1463a0a1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691782"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300280"
 ---
 # <a name="delete-devicemanagementsettingcategory"></a>Excluir deviceManagementSettingCategory
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

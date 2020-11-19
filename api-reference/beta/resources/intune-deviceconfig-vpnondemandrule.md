@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8429cb0a7870cb1ee756f5e2c02b218d5c768862
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 648214bac549b13605211aa47d5e12201db02bab
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728346"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299608"
 ---
 # <a name="vpnondemandrule-resource-type"></a>tipo de recurso vpnOnDemandRule
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "probeRequiredUrl": "String"
 }
 ```
-
 
 
 

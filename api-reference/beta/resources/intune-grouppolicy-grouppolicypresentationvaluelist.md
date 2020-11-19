@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0127ecfebe78b98cf6b9d244c473d581f2d1c29a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f95f68004cd51975635eb79c5b0de4b1712ae932
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733270"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298355"
 ---
 # <a name="grouppolicypresentationvaluelist-resource-type"></a>tipo de recurso groupPolicyPresentationValueList
 
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

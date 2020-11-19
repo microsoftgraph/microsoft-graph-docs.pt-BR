@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 779a3e6c1013e07a207750bc7203bca9cd9016bf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b749b4126ee3917c769a64b7fbc738a8eb4aec22
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723888"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298117"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration resource type
 
@@ -98,7 +98,6 @@ Veja a seguir uma representação JSON do recurso.
   "patchVersion": "String"
 }
 ```
-
 
 
 

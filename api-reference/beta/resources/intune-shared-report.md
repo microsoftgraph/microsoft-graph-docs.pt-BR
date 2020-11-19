@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53b1d0c5466241e0c7cd2121a03c3067f2b4abd8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7db50d4cd4c2ced4937a594fde28eac2f4d63d0c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726296"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300532"
 ---
 # <a name="report-resource-type"></a>Tipo de recurso report
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
-
 
 
 

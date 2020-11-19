@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29f6e8b413e008b09c9314f0bd1c505b3d39eab6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 362bc9d449c3854fa98272758546a871333162a8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694981"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299335"
 ---
 # <a name="devicehealthscripttimeschedule-resource-type"></a>tipo de recurso deviceHealthScriptTimeSchedule
 
@@ -29,7 +29,7 @@ Herda de [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealt
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |interval|Int32|O valor x de cada x horas para agendamento por hora, a cada x dias para agenda diária, a cada x semanas para agenda semanal, a cada x meses para agenda mensal. Valores válidos de 1 a 23 herdados de [deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|
-|useUtc|Boolean|Indique se a hora é UTC ou horário local do cliente.|
+|useUtc|Booliano|Indique se a hora é UTC ou horário local do cliente.|
 |hora|TimeOfDay|Em que tempo o script está agendado para ser executado. Essa coleção pode conter um máximo de 20 elementos.|
 
 ## <a name="relationships"></a>Relações
@@ -50,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "time": "String (time of day)"
 }
 ```
-
 
 
 
