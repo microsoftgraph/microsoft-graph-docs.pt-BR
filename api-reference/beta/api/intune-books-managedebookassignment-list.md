@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ac6468147016e9312a175bf389cdb4a74e8a156
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2ae058914393ce885965827ad20ef7dd9c7b2e02
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685314"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244966"
 ---
 # <a name="list-managedebookassignments"></a>Listar managedEBookAssignments
 
@@ -82,7 +82,6 @@ Content-Length: 469
   ]
 }
 ```
-
 
 
 

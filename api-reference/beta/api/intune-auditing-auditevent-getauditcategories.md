@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15594bd4081684a96fd0195a3ae09f9248f57ab0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c4e7b8ed64df12183f5bc55ac38787b479d58518
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48718403"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49245708"
 ---
 # <a name="getauditcategories-function"></a>Função getAuditCategories
 
@@ -73,7 +73,6 @@ Content-Length: 57
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57d5d5141c6f9d8ca13808e8e579540b1ee46f9f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5ad91ab54e205a8b5e6a2f59b64f9540ca52d3ab
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693651"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49245876"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Listar windowsUniversalAppXContainedApps
 
@@ -79,7 +79,6 @@ Content-Length: 216
   ]
 }
 ```
-
 
 
 

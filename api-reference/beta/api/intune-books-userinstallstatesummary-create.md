@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0b571b40d3d9480de003b0eef56c573ce891420
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9451fa9f9dac406d1c94036e0bde5d40d430a73a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730273"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244677"
 ---
 # <a name="create-userinstallstatesummary"></a>Criar userInstallStateSummary
 
@@ -98,7 +98,6 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

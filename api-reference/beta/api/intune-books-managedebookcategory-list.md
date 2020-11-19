@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: faa3c4233ad5609c72e539fbf323a7776bc87e00
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d7e369edac3e0aec7f396a98e23775058940858c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690578"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244826"
 ---
 # <a name="list-managedebookcategories"></a>Listar managedEBookCategories
 
@@ -79,7 +79,6 @@ Content-Length: 264
   ]
 }
 ```
-
 
 
 

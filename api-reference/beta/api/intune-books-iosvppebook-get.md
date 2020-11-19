@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ba2c7c7a48269fe8cd9f67d8330d3a2fa47def0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d1ec7ea8c1853304aa0d803c673944c1ef3250f4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48716198"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49245330"
 ---
 # <a name="get-iosvppebook"></a>Acessar iosVppEBook
 
@@ -103,7 +103,6 @@ Content-Length: 1101
   }
 }
 ```
-
 
 
 

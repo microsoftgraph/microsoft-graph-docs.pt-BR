@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f9e10e0c1e0230dac074cf4bf7a2402265942c0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9dba36849ccc9234310c00c8973c0d14179c41c6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48716898"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49245575"
 ---
 # <a name="list-deviceinstallstates"></a>Listar deviceInstallStates
 
@@ -85,7 +85,6 @@ Content-Length: 496
   ]
 }
 ```
-
 
 
 
