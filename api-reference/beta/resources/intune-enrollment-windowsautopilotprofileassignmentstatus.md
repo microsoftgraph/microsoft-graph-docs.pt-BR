@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 93a956fa874fb50257da62fc9dbea59768e7a3cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a6ac21decb96434d7392e0d647ad4e9c2e07621f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728904"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288646"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>tipo de enumeração windowsAutopilotProfileAssignmentStatus
 
@@ -32,7 +32,6 @@ Ainda não documentado
 |Não atribuído|4 |Não atribuído|
 |função|5 |Atribuição pendente|
 |falhou|6 | Falha de atribuição|
-
 
 
 

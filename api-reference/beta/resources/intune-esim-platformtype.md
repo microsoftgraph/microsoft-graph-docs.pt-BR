@@ -1,18 +1,18 @@
 ---
-title: tipo de enumeração deviceManagementScheduledReportRecurrence
-description: Valores possíveis para a recorrência de um relatório agendado
+title: tipo de enumeração platformtype
+description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 519cf5608d9966e659548d7e796149296d62f1f1
+ms.openlocfilehash: 4a2def49793abc6407ef6b9c708368d97631bedf
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49287652"
+ms.locfileid: "49301613"
 ---
-# <a name="devicemanagementscheduledreportrecurrence-enum-type"></a>tipo de enumeração deviceManagementScheduledReportRecurrence
+# <a name="platformtype-enum-type"></a>tipo de enumeração platformtype
 
 Namespace: microsoft.graph
 
@@ -20,15 +20,20 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para a recorrência de um relatório agendado
+Ainda não documentado
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|,0|Valor padrão, especifica uma única ocorrência|
-|diariamente|1|Diariamente|
-|mensal|duas|Semanalmente|
-|mês|3D|Mensal|
+|desconhecido|,0|Ainda não documentado|
+|Android|1|Ainda não documentado|
+|androidForWork|duas|Ainda não documentado|
+|iOS|3D|Ainda não documentado|
+|macOS|4 |Ainda não documentado|
+|windowsPhone81|5 |Ainda não documentado|
+|windows81AndLater|6 |Ainda não documentado|
+|windows10AndLater|7 |Ainda não documentado|
+|androidWorkProfile|8 |Ainda não documentado|
 
 
 

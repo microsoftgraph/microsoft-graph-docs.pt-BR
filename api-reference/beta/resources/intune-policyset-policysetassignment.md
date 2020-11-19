@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d3034061c2ea94d917067ad5031ecb314f84c41
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 51cce7ad66c1374f27c861b1db602ffe6122088c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730391"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288023"
 ---
 # <a name="policysetassignment-resource-type"></a>tipo de recurso policySetAssignment
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

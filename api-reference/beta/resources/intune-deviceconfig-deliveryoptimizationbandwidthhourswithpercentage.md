@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7fb685f87e602eb6312d3e80e441b2c064ec327b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 86d01e5af73da903d138dd061204adb6a6955abd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696227"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288779"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthHoursWithPercentage
 
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

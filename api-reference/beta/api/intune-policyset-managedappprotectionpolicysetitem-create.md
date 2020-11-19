@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d12df589ffd34a79cdb2275a7bcdad1a069e9497
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 779161dd22e47a938e6e230953de3e6056e08a82
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726000"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289304"
 ---
 # <a name="create-managedappprotectionpolicysetitem"></a>Criar managedAppProtectionPolicySetItem
 
@@ -115,7 +115,6 @@ Content-Length: 561
   "targetedAppManagementLevels": "Targeted App Management Levels value"
 }
 ```
-
 
 
 

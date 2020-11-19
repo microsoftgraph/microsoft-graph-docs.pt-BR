@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f8e08079a2980483c0bdc99f81bb4254aabc1eb5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d8a55126ec1b532ea0a90f5b135272fafe811f60
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735152"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287764"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>tipo de recurso deviceManagementExportJob
 
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

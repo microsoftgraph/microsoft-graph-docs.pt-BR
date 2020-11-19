@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79dfab2ba3c23f468a7e177083ba0857ac96c637
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5989a34f27db2ed635da23648a10497c838eb71b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728995"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288884"
 ---
 # <a name="androidforworknineworkeasconfiguration-resource-type"></a>tipo de recurso androidForWorkNineWorkEasConfiguration
 
@@ -123,7 +123,6 @@ Veja a seguir uma representação JSON do recurso.
   "syncTasks": true
 }
 ```
-
 
 
 

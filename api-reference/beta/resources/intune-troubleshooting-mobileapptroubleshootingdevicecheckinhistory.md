@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ad778bef1b6a5a5d25316af98c31e138577e2c70
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 89794800d46f91221d6232f5219e57e5eb7db2c5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732436"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287568"
 ---
 # <a name="mobileapptroubleshootingdevicecheckinhistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingDeviceCheckinHistory
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

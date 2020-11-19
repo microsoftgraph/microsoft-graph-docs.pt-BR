@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fcc101aeaefe09a08270c455c247982f091e3275
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 16b30c08bcac15344aca2dca266ab117fab643bb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725937"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289171"
 ---
 # <a name="create-mobileappintentandstate"></a>Criar mobileAppIntentAndState
 
@@ -129,7 +129,6 @@ Content-Length: 880
   ]
 }
 ```
-
 
 
 

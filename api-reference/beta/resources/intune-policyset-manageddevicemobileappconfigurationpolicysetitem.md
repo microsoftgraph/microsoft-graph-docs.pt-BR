@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ce7d3b50e70b2cb214ab16346419eeacc3a5009
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3910cb9017e353de4cdbf3792779b0230c96d67d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733249"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288086"
 ---
 # <a name="manageddevicemobileappconfigurationpolicysetitem-resource-type"></a>tipo de recurso managedDeviceMobileAppConfigurationPolicySetItem
 
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 
