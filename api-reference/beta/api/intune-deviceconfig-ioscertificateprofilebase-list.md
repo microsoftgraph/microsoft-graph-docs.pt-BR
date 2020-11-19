@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40f2db0bf2445bc78edef85d7b51d6cbaa19f243
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 01c64a4fe52a67a787e2880c65eda149aa22e64b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703255"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49206305"
 ---
-# <a name="list-ioscertificateprofilebases"></a><span data-ttu-id="bee29-103">Listar iosCertificateProfileBases</span><span class="sxs-lookup"><span data-stu-id="bee29-103">List iosCertificateProfileBases</span></span>
+# <a name="list-ioscertificateprofilebases"></a><span data-ttu-id="30002-103">Listar iosCertificateProfileBases</span><span class="sxs-lookup"><span data-stu-id="30002-103">List iosCertificateProfileBases</span></span>
 
-<span data-ttu-id="bee29-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="bee29-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="30002-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="30002-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="bee29-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="bee29-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="30002-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="30002-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bee29-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="bee29-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="30002-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="30002-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bee29-107">Listar Propriedades e relações dos objetos [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) .</span><span class="sxs-lookup"><span data-stu-id="bee29-107">List properties and relationships of the [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) objects.</span></span>
+<span data-ttu-id="30002-107">Listar Propriedades e relações dos objetos [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) .</span><span class="sxs-lookup"><span data-stu-id="30002-107">List properties and relationships of the [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="bee29-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="bee29-108">Prerequisites</span></span>
-<span data-ttu-id="bee29-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bee29-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="30002-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="30002-108">Prerequisites</span></span>
+<span data-ttu-id="30002-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="30002-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bee29-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bee29-111">Permission type</span></span>|<span data-ttu-id="bee29-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="bee29-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="30002-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="30002-111">Permission type</span></span>|<span data-ttu-id="30002-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="30002-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="bee29-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bee29-113">Delegated (work or school account)</span></span>|<span data-ttu-id="bee29-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="bee29-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="bee29-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bee29-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bee29-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bee29-116">Not supported.</span></span>|
-|<span data-ttu-id="bee29-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bee29-117">Application</span></span>|<span data-ttu-id="bee29-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="bee29-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="30002-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="30002-113">Delegated (work or school account)</span></span>|<span data-ttu-id="30002-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="30002-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="30002-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="30002-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="30002-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="30002-116">Not supported.</span></span>|
+|<span data-ttu-id="30002-117">Application</span><span class="sxs-lookup"><span data-stu-id="30002-117">Application</span></span>|<span data-ttu-id="30002-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="30002-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="bee29-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bee29-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="30002-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="30002-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,28 +41,28 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bee29-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bee29-120">Request headers</span></span>
-|<span data-ttu-id="bee29-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="bee29-121">Header</span></span>|<span data-ttu-id="bee29-122">Valor</span><span class="sxs-lookup"><span data-stu-id="bee29-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="30002-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="30002-120">Request headers</span></span>
+|<span data-ttu-id="30002-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="30002-121">Header</span></span>|<span data-ttu-id="30002-122">Valor</span><span class="sxs-lookup"><span data-stu-id="30002-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="bee29-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="bee29-123">Authorization</span></span>|<span data-ttu-id="bee29-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bee29-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="bee29-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="bee29-125">Accept</span></span>|<span data-ttu-id="bee29-126">application/json</span><span class="sxs-lookup"><span data-stu-id="bee29-126">application/json</span></span>|
+|<span data-ttu-id="30002-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="30002-123">Authorization</span></span>|<span data-ttu-id="30002-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="30002-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="30002-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="30002-125">Accept</span></span>|<span data-ttu-id="30002-126">application/json</span><span class="sxs-lookup"><span data-stu-id="30002-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bee29-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bee29-127">Request body</span></span>
-<span data-ttu-id="bee29-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="bee29-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="30002-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="30002-127">Request body</span></span>
+<span data-ttu-id="30002-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="30002-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bee29-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="bee29-129">Response</span></span>
-<span data-ttu-id="bee29-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bee29-130">If successful, this method returns a `200 OK` response code and a collection of [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="30002-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="30002-129">Response</span></span>
+<span data-ttu-id="30002-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="30002-130">If successful, this method returns a `200 OK` response code and a collection of [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bee29-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bee29-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="30002-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="30002-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="bee29-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bee29-132">Request</span></span>
-<span data-ttu-id="bee29-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="bee29-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="30002-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="30002-132">Request</span></span>
+<span data-ttu-id="30002-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="30002-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="bee29-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="bee29-134">Response</span></span>
-<span data-ttu-id="bee29-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="bee29-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="30002-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="30002-134">Response</span></span>
+<span data-ttu-id="30002-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="30002-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -112,7 +112,6 @@ Content-Length: 1600
   ]
 }
 ```
-
 
 
 
