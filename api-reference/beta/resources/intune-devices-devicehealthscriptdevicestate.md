@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5413e00e299633313e6f823dc5b60bf13df5ce56
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dc846c7af89154bc72f988143d6805474aae0b4c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697725"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49226535"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>tipo de recurso deviceHealthScriptDeviceState
 
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   "remediationState": "String"
 }
 ```
-
 
 
 

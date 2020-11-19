@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f4b476d4653d427eba599fee5a7008e65a26e72
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 91a2032851c6e76b1dd28807043937b0c2c67d8c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727397"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49226374"
 ---
 # <a name="userexperienceanalyticsmetrichistory-resource-type"></a>tipo de recurso userExperienceAnalyticsMetricHistory
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "metricDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

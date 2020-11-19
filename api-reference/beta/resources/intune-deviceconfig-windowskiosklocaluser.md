@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae5e84ed2e8fd619d4017595b9cb4e8c1ed97a4a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dd1640853b1b138a42898cd832dd90f9795c03cd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729515"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49226655"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>tipo de recurso windowsKioskLocalUser
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "userName": "String"
 }
 ```
-
 
 
 

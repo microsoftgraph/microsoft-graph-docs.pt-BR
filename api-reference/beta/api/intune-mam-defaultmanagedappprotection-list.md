@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22c121326ef5c8497d0cdc65d4067ebfedc454d5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0090eb4c65f34bbbcb370956cd272f13b8f97ff6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696521"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49227179"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Listar defaultManagedAppProtections
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5714
+Content-Length: 5795
 
 {
   "value": [
@@ -186,12 +186,13 @@ Content-Length: 5714
       "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
       "blockAfterCompanyPortalUpdateDeferralInDays": 11,
       "warnAfterCompanyPortalUpdateDeferralInDays": 10,
-      "wipeAfterCompanyPortalUpdateDeferralInDays": 10
+      "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+      "deviceLockRequired": true,
+      "appActionIfDeviceLockNotSet": "wipe"
     }
   ]
 }
 ```
-
 
 
 
