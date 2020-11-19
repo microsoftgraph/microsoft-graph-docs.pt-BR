@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d392ec953ba802ccda544238c061d1fbb78eb029
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 59ae60a4e438bf2186617c8dbb7c110322519977
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708890"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216406"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>tipo de enumeração Enumeraçãoapplevpnconnectiontype
 
@@ -36,14 +36,13 @@ Tipo de conexão VPN da Apple.
 |ciscoAnyConnectV2|8 |Cisco AnyConnect v2.|
 |paloAltoGlobalProtect|9 |GlobalProtect de redes de Palo Alto.|
 |Membroszscalerprivateaccess|10 |Zscaler acesso privado.|
-|f5Access2018|11|F5 Access 2018.|
+|f5Access2018|11 |F5 Access 2018.|
 |citrixSso|12 |Citrix SSO.|
 |paloAltoGlobalProtectV2|13 |O Palo Alto Networks GlobalProtect v2.|
 |Conexões|14 |Conexões.|
 |alwaysOn|15 |AlwaysOn.|
 |microsoftTunnel|16 |Microsoft Tunnel.|
 |netMotionMobility|17 |Mobilidade do NETMOTION.|
-
 
 
 

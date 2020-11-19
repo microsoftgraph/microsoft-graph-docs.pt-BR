@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b09b1a5d8456db894ef625b7ff711aa36a94ef14
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a650a4d2f31976933d7b71ee934d9c1f8b4bd698
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730732"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216448"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>tipo de recurso androidWorkProfileCustomConfiguration
 
@@ -108,12 +108,12 @@ Veja a seguir uma representação JSON do recurso.
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "String",
       "description": "String",
-      "omaUri": "String"
+      "omaUri": "String",
+      "isEncrypted": true
     }
   ]
 }
 ```
-
 
 
 

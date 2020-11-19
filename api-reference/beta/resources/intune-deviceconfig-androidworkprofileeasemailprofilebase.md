@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a463de388b81fef109946acaf5d24a186701242a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7127d754e7409a0f4058f2ef903e1abbecd1802b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730718"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216420"
 ---
 # <a name="androidworkprofileeasemailprofilebase-resource-type"></a>tipo de recurso androidWorkProfileEasEmailProfileBase
 
@@ -114,7 +114,6 @@ Veja a seguir uma representação JSON do recurso.
   "usernameSource": "String"
 }
 ```
-
 
 
 

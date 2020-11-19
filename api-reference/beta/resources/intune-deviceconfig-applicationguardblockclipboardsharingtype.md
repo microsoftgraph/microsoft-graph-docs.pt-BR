@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8aa4e34a9be5a3d2c3c9d8b0fa59635b7c16c6e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 91c2bceba0d4ffda030266d0f5617ce18ab29f68
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708883"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216378"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>tipo de enumeração applicationGuardBlockClipboardSharingType
 
@@ -30,7 +30,6 @@ Valores possíveis para applicationGuardBlockClipboardSharingType
 |blockHostToContainer|duas|Bloquear a área de transferência para compartilhar dados do host para o contêiner|
 |blockContainerToHost|3D|Bloquear área de transferência para compartilhar dados de contêiner para host|
 |blockNone|4 |Bloquear área de transferência para compartilhar dados que não sejam do host para o contêiner nem do contêiner para o host|
-
 
 
 
