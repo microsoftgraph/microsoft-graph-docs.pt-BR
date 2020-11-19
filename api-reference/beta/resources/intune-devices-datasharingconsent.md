@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0235abf74d96e5ccff888253e977bd9951bbc3cd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 11cdcc0bf083e88da6e1e1c1dd149fce50a05d18
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703647"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293175"
 ---
 # <a name="datasharingconsent-resource-type"></a>tipo de recurso dataSharingConsent
 
@@ -38,7 +38,7 @@ Informações de consentimento de compartilhamento de dados.
 |id|String|A ID de consentimento de compartilhamento de dados|
 |objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
 |termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
-|granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
+|granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
 |grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
 |grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
@@ -66,7 +66,6 @@ Veja a seguir uma representação JSON do recurso.
   "grantedByUserId": "String"
 }
 ```
-
 
 
 

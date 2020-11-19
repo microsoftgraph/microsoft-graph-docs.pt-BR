@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c474f9ab64921e6027bacdf5c2405bf953535778
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 10a3d02d0e92e0b4a7c43594b44f45875b74d406
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724548"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293686"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>Tipo de recurso sharedPCAccountManagerPolicy
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
-
 
 
 

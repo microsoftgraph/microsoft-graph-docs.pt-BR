@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e043979f3f57b16ad4d2bb62b1c7d8710889f3b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 54beae59c3341605b8b4a7c3f482c8d98d31851b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48710024"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293896"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>tipo de enumeração safeSearchFilterType
 
@@ -28,7 +28,6 @@ Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necess
 |UserDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
 |impede|1|Filtragem mais rigorosa e estrita contra conteúdo adulto.|
 |moderado|duas|Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).|
-
 
 
 

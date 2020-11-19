@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4fa0c526ff1d221467c81dffa29962f9c2772ce8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 681fc925b4384f8534289192fbd29ca9491eb61e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709898"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293840"
 ---
 # <a name="servicestarttype-enum-type"></a>tipo de enumeração de instarttype
 
@@ -28,7 +28,6 @@ Possíveis valores de tipo de inicialização do serviço do Xbox
 |Manual|,0|Tipo de início de serviço manual (padrão)|
 |Automático|1|Tipo de inicialização automática de serviço|
 |desabilitadas|duas|Tipo de início de serviço desabilitado|
-
 
 
 

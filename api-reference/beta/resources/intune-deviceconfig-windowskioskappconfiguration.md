@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c5a2614447c79a31e201ba88315042de301baad
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 84f48628cf43a1ef7a79fc767485b65cf9b3fa40
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736202"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293581"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>tipo de recurso windowsKioskAppConfiguration
 
@@ -41,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.windowsKioskAppConfiguration"
 }
 ```
-
 
 
 

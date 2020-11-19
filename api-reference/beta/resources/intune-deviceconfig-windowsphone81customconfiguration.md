@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64bc96dc84e98bf72431c7e46e221aec8df890af
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: adc3e5108cd4dff0c0b3832b9f226a80c6f1897f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729373"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293329"
 ---
 # <a name="windowsphone81customconfiguration-resource-type"></a>Tipo de recurso windowsPhone81CustomConfiguration
 
@@ -108,12 +108,12 @@ Veja a seguir uma representação JSON do recurso.
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "String",
       "description": "String",
-      "omaUri": "String"
+      "omaUri": "String",
+      "isEncrypted": true
     }
   ]
 }
 ```
-
 
 
 

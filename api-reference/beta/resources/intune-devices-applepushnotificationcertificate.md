@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c51cc7fb990418335a33580d7257c9563004748
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 409c6c4df26b24630f59c9d46e798b981475b319
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725551"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293280"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Tipo de recurso applePushNotificationCertificate
 
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificate": "String"
 }
 ```
-
 
 
 

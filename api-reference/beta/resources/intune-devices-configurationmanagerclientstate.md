@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: de8f2af7c6d35b28154f00a4eac3bb20a4bdf64d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6cda29552c3ae0253ac1200d7a15ec394005ede5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690228"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293189"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>tipo de enumeração configurationManagerClientState
 
@@ -29,9 +29,8 @@ Estado do cliente de gerenciador de configurações
 |instalação|1|O agente do Gerenciador de configurações está instalado, mas talvez ainda não esteja aparecendo no console do Gerenciador de configurações. Aguarde algumas horas para que ele seja atualizado.|
 |condições|7 |Este dispositivo pôde fazer check-in com o serviço do Gerenciador de configurações com êxito.|
 |installFailed|8 |Falha ao instalar o agente do Gerenciador de configurações.|
-|updateFailed|11|A atualização da versão x para a versão y do agente do Gerenciador de configuração falhou. |
+|updateFailed|11 |A atualização da versão x para a versão y do agente do Gerenciador de configuração falhou. |
 |communicationError|19|O agente do Gerenciador de configurações pôde acessar o serviço do Configuration Manager no passado, mas agora não é mais possível. |
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb23d97ae9d41b80c6f5fc92adea4558fe718652
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aafcb3813dd1a11c05613ac3819a7f5b5d4fdcbc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725460"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49292979"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Tipo de recurso managedDeviceOverview
 
@@ -94,7 +94,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

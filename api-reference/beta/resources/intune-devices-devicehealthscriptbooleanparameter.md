@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87822b0e526a9101efc2317bce38b65909af3f25
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ac376407ae01a9fbd5bbd5cd1a6a8bcbc69a7eea
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728185"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293007"
 ---
 # <a name="devicehealthscriptbooleanparameter-resource-type"></a>tipo de recurso deviceHealthScriptBooleanParameter
 
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "defaultValue": true
 }
 ```
-
 
 
 

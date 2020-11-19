@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ef055e972120b1ae13ea4d16de5e47c86d78e9f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c5e49683e8b31bc9b234c4ca993c1cc52a843772
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729366"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293308"
 ---
 # <a name="windowsphone81generalconfiguration-resource-type"></a>Tipo de recurso windowsPhone81GeneralConfiguration
 
@@ -170,7 +170,6 @@ Veja a seguir uma representação JSON do recurso.
   "windowsStoreBlocked": true
 }
 ```
-
 
 
 

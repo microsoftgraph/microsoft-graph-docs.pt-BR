@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4212dfd0362ed6253c10a2b2796241c74678dda2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3c4a0d1afa615cf2b1e77c67061f9a88e40b2b72
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736209"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293602"
 ---
 # <a name="windowskioskappbase-resource-type"></a>tipo de recurso windowsKioskAppBase
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "autoLaunch": true
 }
 ```
-
 
 
 

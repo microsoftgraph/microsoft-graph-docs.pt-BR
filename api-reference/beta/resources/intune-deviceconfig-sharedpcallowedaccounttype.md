@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 33a74d080b32e77f534194a66457f6772d4f3467
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6de783b0992a211be7a50e9b8356772a76c3f764
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697858"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293616"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>tipo de enumeração sharedPCAllowedAccountType
 
@@ -28,7 +28,6 @@ Tipo de contas que têm permissão para compartilhar o PC.
 |notConfigured|,0|Não configurado. Valor padrão.|
 |convidado|1|Apenas contas de convidado.|
 |domínio|duas|Apenas contas unidas por domínio.|
-
 
 
 

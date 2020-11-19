@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55eae4e3bc8d5f705b4a7e8b143700f77af5c8a7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a2348754dc4a77dadb772f44121db896da15c09c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736183"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293567"
 ---
 # <a name="windowskioskautologon-resource-type"></a>tipo de recurso windowsKioskAutologon
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.windowsKioskAutologon"
 }
 ```
-
 
 
 
