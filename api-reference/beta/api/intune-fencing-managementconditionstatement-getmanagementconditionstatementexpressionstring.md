@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e52d90e2667a511b0c1c1e98264bda29b69a9d42
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c65105dbc6f703c826cf852e520c7b2a7dabbc3f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723211"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309174"
 ---
 # <a name="getmanagementconditionstatementexpressionstring-function"></a>função getManagementConditionStatementExpressionString
 
@@ -75,7 +75,6 @@ Content-Length: 126
   }
 }
 ```
-
 
 
 

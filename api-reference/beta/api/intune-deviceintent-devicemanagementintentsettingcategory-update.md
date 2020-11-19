@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a4da1f65bc9490d4b6603f59887b3bec18a5a80
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f443e21653aa53a86c5080d5636912c163a98798
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734452"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306300"
 ---
 # <a name="update-devicemanagementintentsettingcategory"></a>Atualizar deviceManagementIntentSettingCategory
 
@@ -92,7 +92,6 @@ Content-Length: 199
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

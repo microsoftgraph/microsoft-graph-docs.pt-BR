@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 8ef079363d4951f269ea509534cecd2e6ae2a0f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 75cfeb74f8844325019c365b0714ae50dcfed063
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050099"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352358"
 ---
 # <a name="assignedlabel-resource-type"></a>tipo de recurso assignedLabel
 
@@ -23,8 +23,8 @@ Representa um rótulo de confidencialidade atribuído a um grupo do Microsoft 36
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|labelID|Cadeia de caracteres|O identificador exclusivo do rótulo.|
-|displayName|Cadeia de caracteres|O nome de exibição do rótulo. Somente leitura.|
+|labelID|String|O identificador exclusivo do rótulo.|
+|displayName|String|O nome de exibição do rótulo. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "labelId": "String",
   "displayName": "String"
 }
-
 ```
 
 

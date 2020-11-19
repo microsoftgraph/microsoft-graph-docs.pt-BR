@@ -2,15 +2,15 @@
 title: Personalizar o cartão de perfil usando a API de perfil no Microsoft Graph (visualização)
 description: Este artigo descreve como você pode personalizar o cartão de perfil tornando visíveis atributos adicionais ou adicionando atributos personalizados.
 author: PollyNincevic
-localization_priority: Priority
+localization\_priority: Priority
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5df48bc8da848c6e5655467ad9ef39a8bb992026
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
-ms.translationtype: HT
+ms.openlocfilehash: 749851d32678617ab2c7b7b7d16d063686f815ce
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288781"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352344"
 ---
 # <a name="add-additional-properties-to-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Adicionar propriedades adicionais ao cartão de perfil usando a API do cartão de perfil no Microsoft Graph (visualização)
 
@@ -18,47 +18,46 @@ No [cartão de perfil](https://support.office.com/article/profile-cards-in-offic
 
 Use o recurso [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta) para mostrar propriedades adicionais do Microsoft Azure Active Directory em cartões de perfil de uma organização:
 
-- Tornando visíveis atributos adicionais
-
-- Adicionando atributos personalizados
+* Tornando visíveis atributos adicionais
+* Adicionando atributos personalizados
 
 As propriedades adicionais serão exibidas na seção **Contato** do cartão de perfil no Microsoft 365.
 
 > [!NOTE]
->Operações no recurso **profileCardProperty** que usam permissões delegadas exigem que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.
+> As operações no recurso **profileCardProperty** que usam permissões delegadas exigem que o usuário conectado tenha um administrador de locatários ou uma função de administrador global.
 
 ## <a name="make-additional-attributes-visible"></a>Torne visíveis atributos adicionais
 
 Você pode fazer os seguintes atributos do Azure Active Directory (Azure AD) visíveis nos cartões de perfil do usuário. Esses atributos *não diferenciam maiúsculas de minúsculas*:
 
-- `UserPrincipalName`
-- `Fax`
-- `StreetAddress`
-- `PostalCode`
-- `StateOrProvince`
-- `Alias`
+* `UserPrincipalName`
+* `Fax`
+* `StreetAddress`
+* `PostalCode`
+* `StateOrProvince`
+* `Alias`
 
 A tabela a seguir mostra como os atributos do Azure AD correspondem com as propriedades da entidade [user](/graph/api/resources/user?view=graph-rest-beta) do Microsoft Graph.
 
-|Atributo do Microsoft Azure Active Directory |Propriedade da entidade User|
-|:---------------|:----------|
-|UserPrincipalName|userPrincipalName |
-|Fax|faxNumber|
-|StreetAddress|streetAddress|
-|PostalCode|postalCode|
-|StateOrProvince|estado
-|Alias|mailNickname
+| Atributo do Microsoft Azure Active Directory | Propriedade da entidade User |
+| ------------------ | -------------------- |
+| UserPrincipalName | userPrincipalName |
+| Fax | faxNumber |
+| StreetAddress | streetAddress |
+| PostalCode | postalCode |
+| StateOrProvince | estado |
+| Alias | mailNickname |
 
-Você pode adicionar qualquer um desses atributos ao cartão de perfil, configurando as [configurações da organização](/graph/api/resources/organizationsettings?view=graph-rest-beta) e adicionando o atributo como a propriedade *directoryPropertyName** de um **profileCardProperty** no Microsoft Graph. Ao tornar visíveis atributos adicionais, você deve usar os nomes de propriedades para `en-us`. Não é necessário adicionar valores localizados. As propriedades adicionais serão exibidas automaticamente nas configurações de idioma especificadas para o Microsoft 365.
+Você pode adicionar qualquer um desses atributos ao cartão de perfil definindo suas [configurações da organização](/graph/api/resources/organizationsettings?view=graph-rest-beta) e adicionando o atributo como a propriedade **DirectoryPropertyName** de um **profileCardProperty** no Microsoft Graph. Ao tornar visíveis atributos adicionais, você deve usar os nomes de propriedades para `en-us`. Não é necessário adicionar valores localizados. As propriedades adicionais serão exibidas automaticamente nas configurações de idioma especificadas para o Microsoft 365.
 
 > [!IMPORTANT]
 > Ao adicionar um atributo ao cartão de perfil, leva até 24 horas para que a adição seja exibida.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir exibe o atributo `Alias` no cartão de perfil:
+O exemplo a seguir exibe o `Alias` atributo no cartão de perfil.
 
-```http
+``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
 
@@ -67,9 +66,9 @@ Content-Type: application/json
 }
 ```
 
-Se bem-sucedido, este método retorna um `201 OK` código de resposta e um objeto **profileCardProperty** no corpo da resposta. O valor do atributo `Alias` seria exibido no cartão de perfil de um usuário.  
+Se bem-sucedido, este método retorna um `201 OK` código de resposta e um objeto **profileCardProperty** no corpo da resposta. O valor do `Alias` atributo seria exibido no cartão de perfil de um usuário.
 
-```http
+``` http
 HTTP/1.1 201 OK
 Content-type: application/json
 
@@ -89,8 +88,8 @@ As propriedades personalizadas não podem ser pesquisadas e não podem ser usada
 
 A tabela a seguir mostra como os nomes de atributos de extensão personalizada do Microsoft Azure Active Directory correspondem aos valores com suporte para a propriedade **directoryPropertyName** do recurso [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta). Esses nomes de atributos de extensão personalizada do Microsoft Azure Active Directory *não fazem distinção entre maiúsculas e minúsculas*:
 
-|Atributo de extensão personalizada do Microsoft Azure Active Directory | Valor para especificar como directoryPropertyName |
-|:--------------------|:-----------------|
+| Atributo de extensão personalizada do Microsoft Azure Active Directory | Valor para especificar como directoryPropertyName |
+| ----------------------------------- | ----------------------------------------- |
 | extensionAttribute1 | customAttribute1 |
 | extensionAttribute2 | customAttribute2 |
 | extensionAttribute3 | customAttribute3 |
@@ -111,7 +110,7 @@ A tabela a seguir mostra como os nomes de atributos de extensão personalizada d
 
 O exemplo a seguir adiciona o primeiro atributo de extensão personalizada do Microsoft Azure Active Directory para o cartão de perfil, usando o nome de exibição **Centro de custos**. Para os usuários que definiram as configurações de idioma para o alemão, o nome de exibição será **Kostenstelle**.
 
-```http
+``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
 
@@ -131,11 +130,11 @@ Content-Type: application/json
 }
 ```
 
-Se não houver suporte a um idioma, o nome da propriedade será mostrado com o valor padrão.  
+Se não houver suporte a um idioma, o nome da propriedade será mostrado com o valor padrão.
 
 Se bem-sucedido, este método retorna um `201 OK` código de resposta e um objeto **profileCardProperty** no corpo da resposta. Neste exemplo, você pode supor que o cartão de perfil exiba **Kostenstelle** para todos os usuários que definiram as configurações de idioma para o alemão no cartão de perfil. Para todos os outros usuários, **Centro de custos** será exibido no cartão de perfil.
 
-```http
+``` http
 HTTP/1.1 201 OK
 Content-type: application/json
 
@@ -157,12 +156,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-[Localizar sua ID de locatário do Microsoft 365](/onedrive/find-your-office-365-tenant-id)
-
-[Tipo de recurso onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
-
-[Tipo de recurso de usuário](/graph/api/resources/user?view=graph-rest-beta)
-
-[Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer)
-
-[Obter profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)
+- [Localizar sua ID de locatário do Microsoft 365](/onedrive/find-your-office-365-tenant-id)
+- [Tipo de recurso onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
+- [Tipo de recurso de usuário](/graph/api/resources/user?view=graph-rest-beta)
+- [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer)
+- [Obter profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)

@@ -1387,9 +1387,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -2176,6 +2176,8 @@ items:
                         href: api/intune-apps-macoslobapp-delete.md
                       - name: Atualizar
                         href: api/intune-apps-macoslobapp-update.md
+                  - name: configurações de atribuição de aplicativo de LOB do macOS
+                    href: resources/intune-apps-macoslobappassignmentsettings.md
                   - name: Aplicativo filho macOS LOB
                     href: resources/intune-apps-macoslobchildapp.md
                   - name: aplicativo macOS mdatp
@@ -3439,6 +3441,10 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
+                  - name: Barra de status de personalização do quiosque de proprietário do dispositivo Android
+                    href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md
+                  - name: Navegação do sistema de personalização do quiosque de proprietário do dispositivo Android
+                    href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md
                   - name: Ícone de pasta do modo de quiosque do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md
                   - name: Tamanho do ícone do modo de quiosque do proprietário do dispositivo Android
@@ -4087,16 +4093,10 @@ items:
                         href: api/intune-deviceconfig-carttoclassassociation-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-carttoclassassociation-update.md
-                  - name: Armazenamento de destino de certificados
-                    href: resources/intune-deviceconfig-certificatedestinationstore.md
                   - name: Estados de emissão de certificados
                     href: resources/intune-deviceconfig-certificateissuancestates.md
                   - name: Status de revogação de certificados
                     href: resources/intune-deviceconfig-certificaterevocationstatus.md
-                  - name: Repositório de certificados
-                    href: resources/intune-deviceconfig-certificatestore.md
-                  - name: Escala de período de validade do certificado
-                    href: resources/intune-deviceconfig-certificatevalidityperiodscale.md
                   - name: Alterar a permissão de configurações de UEFI
                     href: resources/intune-deviceconfig-changeuefisettingspermission.md
                   - name: Código
@@ -4503,8 +4503,6 @@ items:
                     href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
                   - name: Estado de criptografia
                     href: resources/intune-deviceconfig-encryptionstate.md
-                  - name: Uso estendido de chave
-                    href: resources/intune-deviceconfig-extendedkeyusage.md
                   - name: Estado do cofre de arquivos
                     href: resources/intune-deviceconfig-filevaultstate.md
                   - name: Tipo de método de verificação da lista de revogação de certificados do firewall
@@ -4885,8 +4883,6 @@ items:
                         href: api/intune-grouppolicy-grouppolicyuploadedpresentation-delete.md
                       - name: Atualizar
                         href: api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md
-                  - name: Algoritmos hash
-                    href: resources/intune-deviceconfig-hashalgorithms.md
                   - name: Configuração de acesso à tinta
                     href: resources/intune-deviceconfig-inkaccesssetting.md
                   - name: Finalidade pretendida
@@ -5078,6 +5074,8 @@ items:
                     href: resources/intune-deviceconfig-iosnetworkusagerule.md
                   - name: Tipo de alerta de notificação do iOS
                     href: resources/intune-deviceconfig-iosnotificationalerttype.md
+                  - name: visibilidade da visualização da notificação do iOS
+                    href: resources/intune-deviceconfig-iosnotificationpreviewvisibility.md
                   - name: Configurações de notificação do iOS
                     href: resources/intune-deviceconfig-iosnotificationsettings.md
                   - name: Perfil de certificado de PKCS do iOS
@@ -5212,16 +5210,10 @@ items:
                     href: resources/intune-deviceconfig-keyintegervaluepair.md
                   - name: Par chave real de valor
                     href: resources/intune-deviceconfig-keyrealvaluepair.md
-                  - name: Tamanho da chave
-                    href: resources/intune-deviceconfig-keysize.md
-                  - name: Opção de provedor de armazenamento de chaves
-                    href: resources/intune-deviceconfig-keystorageprovideroption.md
                   - name: Par de valores de cadeia de caracteres de chave
                     href: resources/intune-deviceconfig-keystringvaluepair.md
                   - name: Par de valores digitados por chave
                     href: resources/intune-deviceconfig-keytypedvaluepair.md
-                  - name: Usos de chave
-                    href: resources/intune-deviceconfig-keyusages.md
                   - name: Valor da chave
                     href: resources/intune-deviceconfig-keyvalue.md
                   - name: Nível de autenticação do LAN Manager
@@ -5823,8 +5815,6 @@ items:
                     href: resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md
                   - name: Configuração de gerenciamento de estado
                     href: resources/intune-deviceconfig-statemanagementsetting.md
-                  - name: Tipo de nome alternativo da entidade
-                    href: resources/intune-deviceconfig-subjectalternativenametype.md
                   - name: Formato de nome da entidade
                     href: resources/intune-deviceconfig-subjectnameformat.md
                   - name: Configuração do dispositivo sem suporte
@@ -5922,6 +5912,8 @@ items:
                     href: resources/intune-deviceconfig-welcomescreenmeetinginformation.md
                   - name: Método de autenticação do Wi-Fi
                     href: resources/intune-deviceconfig-wifiauthenticationmethod.md
+                  - name: Tipo de autenticação Wi-Fi
+                    href: resources/intune-deviceconfig-wifiauthenticationtype.md
                   - name: Configuração de proxy do Wi-Fi
                     href: resources/intune-deviceconfig-wifiproxysetting.md
                   - name: Tipo de segurança do Wi-Fi
@@ -7668,6 +7660,8 @@ items:
                     href: resources/intune-notification-notificationtemplatebrandingoptions.md
                   - name: Contagem de versões do SO
                     href: resources/intune-devices-osversioncount.md
+                  - name: Tipo de plataforma
+                    href: resources/intune-esim-platformtype.md
                   - name: Estado de correção
                     href: resources/intune-devices-remediationstate.md
                   - name: Ação remota
@@ -8016,6 +8010,8 @@ items:
                     href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
                   - name: Tipo de registro do Windows AutoPilot
                     href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
+                  - name: Status do produto Windows Defender
+                    href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Resultado de ação de verificação do Windows Defender
                     href: resources/intune-devices-windowsdefenderscanactionresult.md
                   - name: Conta do dispositivo Windows
@@ -8448,6 +8444,19 @@ items:
                     href: resources/intune-onboarding-compliancemanagementpartnerassignment.md
                   - name: Dados de gerenciamento de aplicativo e dispositivo
                     href: resources/intune-onboarding-deviceandappmanagementdata.md
+                  - name: Configuração de autoridade de cogerenciamento de dispositivos
+                    href: resources/intune-onboarding-devicecomanagementauthorityconfiguration.md
+                    items:
+                      - name: Listar
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-list.md
+                      - name: Obter
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-get.md
+                      - name: Criar
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-create.md
+                      - name: Excluir
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-delete.md
+                      - name: Atualizar
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-update.md
                   - name: Configuração de limite do registro do dispositivo
                     href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
                     items:
@@ -8803,6 +8812,12 @@ items:
                         href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
                   - name: Configurações de atribuição de aplicativo repositório gerenciado do Android
                     href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
+                  - name: Armazenamento de destino de certificados
+                    href: resources/intune-shared-certificatedestinationstore.md
+                  - name: Repositório de certificados
+                    href: resources/intune-shared-certificatestore.md
+                  - name: Escala de período de validade do certificado
+                    href: resources/intune-shared-certificatevalidityperiodscale.md
                   - name: Ação do portal da empresa
                     href: resources/intune-shared-companyportalaction.md
                   - name: Ação bloqueada do portal da empresa
@@ -8904,6 +8919,29 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
+                  - name: Relatórios do gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementreports.md
+                    items:
+                      - name: Obter
+                        href: api/intune-reporting-devicemanagementreports-get.md
+                      - name: Atualizar
+                        href: api/intune-reporting-devicemanagementreports-update.md
+                      - name: ação getDeviceNonComplianceReport
+                        href: api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md
+                      - name: ação getPolicyNonComplianceReport
+                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md
+                      - name: ação getPolicyNonComplianceMetadata
+                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md
+                      - name: ação getPolicyNonComplianceSummaryReport
+                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md
+                      - name: ação getSettingNonComplianceReport
+                        href: api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md
+                      - name: ação getReportFilters
+                        href: api/intune-reporting-devicemanagementreports-getreportfilters.md
+                      - name: ação getHistoricalReport
+                        href: api/intune-reporting-devicemanagementreports-gethistoricalreport.md
+                      - name: ação getCachedReport
+                        href: api/intune-reporting-devicemanagementreports-getcachedreport.md
                   - name: Script de gerenciamento de dispositivo
                     href: resources/intune-shared-devicemanagementscript.md
                     items:
@@ -8933,8 +8971,12 @@ items:
                     href: resources/intune-shared-enrollmentstate.md
                   - name: Destino de atribuição de grupos de exclusão
                     href: resources/intune-shared-exclusiongroupassignmenttarget.md
+                  - name: Uso estendido de chave
+                    href: resources/intune-shared-extendedkeyusage.md
                   - name: Destino de atribuição de grupo
                     href: resources/intune-shared-groupassignmenttarget.md
+                  - name: Algoritmos hash
+                    href: resources/intune-shared-hashalgorithms.md
                   - name: Intenção de instalação
                     href: resources/intune-shared-installintent.md
                   - name: Configurações de atribuição do aplicativo LOB do iOS
@@ -8981,6 +9023,12 @@ items:
                     href: resources/intune-shared-ipv4range.md
                   - name: Intervalo de IPv6
                     href: resources/intune-shared-ipv6range.md
+                  - name: Tamanho da chave
+                    href: resources/intune-shared-keysize.md
+                  - name: Opção de provedor de armazenamento de chaves
+                    href: resources/intune-shared-keystorageprovideroption.md
+                  - name: Usos de chave
+                    href: resources/intune-shared-keyusages.md
                   - name: Par chave/valor
                     href: resources/intune-shared-keyvaluepair.md
                   - name: Configurações de atribuição do aplicativo VPP do macOS
@@ -9067,6 +9115,8 @@ items:
                     href: resources/intune-shared-saveduistategenerationoptions.md
                   - name: Tipo de fonte de configuração
                     href: resources/intune-shared-settingsourcetype.md
+                  - name: Tipo de nome alternativo da entidade
+                    href: resources/intune-shared-subjectalternativenametype.md
                   - name: Configuração direcionada de aplicativo gerenciado
                     href: resources/intune-shared-targetedmanagedappconfiguration.md
                     items:
@@ -9954,10 +10004,6 @@ items:
                     href: api/orgcontact-list.md
                   - name: Obter contato org
                     href: api/orgcontact-get.md
-                  - name: Atualizar contato org
-                    href: api/orgcontact-update.md
-                  - name: Excluir contato org
-                    href: api/orgcontact-delete.md
                   - name: Obter Delta de contatos da organização
                     href: api/orgcontact-delta.md
                   - name: Grupos

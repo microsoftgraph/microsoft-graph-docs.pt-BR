@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 984ca36ef108aa0f44699a701ce24846a0b20e7a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0ec04fd784d6232974061e5adbca6a95da529156
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684509"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306916"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 
@@ -83,7 +83,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 |wdacSupplementalPolicies|coleção [windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|O conjunto de políticas suplementares do controle de aplicativos do Windows Defender.|
 
 ## <a name="json-representation"></a>Representação JSON
-Veja a seguir uma representação JSON do recurso.  Observe que este é apenas um exemplo; as respostas de consulta a consultas reais conterá as propriedades apropriadas para o contexto.
+Veja a seguir uma representação JSON do recurso.  Observe que este é apenas um exemplo; as respostas de consulta a consultas reais conterá as propriedades apropriadas para o contexto.  
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -100,7 +100,6 @@ Veja a seguir uma representação JSON do recurso.  Observe que este é apenas u
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Listar managedMobileApps
-description: Listar propriedades e relações dos objetos managedMobileApp.
+title: Listar windows10XVpnConfigurations
+description: Listar Propriedades e relações dos objetos windows10XVpnConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cc81629521097ec6faa1a687d2a0c51b4533b7d
+ms.openlocfilehash: bf3a69c6c57c980bbd0a3329078a2002630e6706
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49308498"
+ms.locfileid: "49336992"
 ---
-# <a name="list-managedmobileapps"></a>Listar managedMobileApps
+# <a name="list-windows10xvpnconfigurations"></a>Listar windows10XVpnConfigurations
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos objetos [managedMobileApp](../resources/intune-mam-managedmobileapp.md).
+Listar Propriedades e relações dos objetos [windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,10 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
-GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}/apps
-GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}/apps
-GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps
+GET /deviceManagement/resourceAccessProfiles
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -53,14 +50,14 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [managedMobileApp](../resources/intune-mam-managedmobileapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps
+GET https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,18 +65,24 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 336
+Content-Length: 644
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.managedMobileApp",
-      "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-        "packageId": "Package Id value"
-      },
-      "id": "0a129715-9715-0a12-1597-120a1597120a",
-      "version": "Version value"
+      "@odata.type": "#microsoft.graph.windows10XVpnConfiguration",
+      "id": "6ee1c04f-c04f-6ee1-4fc0-e16e4fc0e16e",
+      "version": 7,
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "authenticationCertificateId": "39b4cd38-cd38-39b4-38cd-b43938cdb439",
+      "customXmlFileName": "Custom Xml File Name value",
+      "customXml": "Y3VzdG9tWG1s"
     }
   ]
 }

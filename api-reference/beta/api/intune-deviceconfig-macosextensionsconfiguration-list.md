@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6fe8fb96d7cd4069434da3b25a224773362752f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bf8699b99c8522c8afdfdd0220d41fe83464b1ea
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725047"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306650"
 ---
 # <a name="list-macosextensionsconfigurations"></a>Listar macOSExtensionsConfigurations
 
@@ -136,7 +136,6 @@ Content-Length: 2414
   ]
 }
 ```
-
 
 
 

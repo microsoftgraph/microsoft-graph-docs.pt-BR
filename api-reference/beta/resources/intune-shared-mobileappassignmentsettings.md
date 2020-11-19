@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bb70a52e99e6d89cbffd732f9f0e3a397f13fd9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6b5c1f7df27353ca8612bd0af181ad1426662c40
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736006"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306832"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>Tipo de recurso mobileAppAssignmentSettings
 
@@ -41,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
-
 
 
 

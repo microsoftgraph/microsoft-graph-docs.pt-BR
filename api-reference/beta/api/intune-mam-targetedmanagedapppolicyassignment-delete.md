@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c4ffce0ff14954bf90b253e4665f7de817b15c5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 960599c0c43ec9e9cb0ed4f63cc410207037b3a2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701701"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308484"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>Excluir targetedManagedAppPolicyAssignment
 
@@ -69,7 +69,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

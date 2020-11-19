@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8602f6c55c1a7929f12cc68f046e230ab75aaaf5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 01b1296cfa8656af8f75549444fb39dd82ae64d3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702324"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307427"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Tipo de recurso enrollmentConfigurationAssignment
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "sourceId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f77b3e134a60d5278ea29e1b32546c8a10895387
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fdfa2512972323cb62672c6f639a95a77cc25e0e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698292"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307994"
 ---
 # <a name="update-devicemanagementcachedreportconfiguration"></a>Atualizar deviceManagementCachedReportConfiguration
 
@@ -118,7 +118,6 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

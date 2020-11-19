@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e962c9af7aef586513931ad7d26d4b9f3063e9ad
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 486a1fa2a7bf1cd697aa779160213d31864f30f0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709352"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308547"
 ---
 # <a name="create-managedmobileapp"></a>Criar managedMobileApp
 
@@ -101,7 +101,6 @@ Content-Length: 275
   "version": "Version value"
 }
 ```
-
 
 
 

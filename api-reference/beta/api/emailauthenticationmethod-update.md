@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: afff423fef59bb06af7659bd5de2b553b76ddca5
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: e1927a9ea081dee5bfe72aad7715a6434f219d79
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796504"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352156"
 ---
 # <a name="update-emailauthenticationmethod"></a>Atualizar emailAuthenticationMethod
 Namespace: microsoft.graph
@@ -25,13 +25,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões que atuam em si (de a mais de privilégios mínimos)|Permissões que atuam em outros (de menos para mais privilégios)|
 |:---|:---|:--|
 |Delegado (conta corporativa ou de estudante)|Sem suporte.|UserAuthenticationMethod. ReadWrite. All
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|Sem suporte.
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|Sem suporte.
 |Aplicativo|Sem suporte.|Sem suporte.
 
 Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador global
-* Leitor global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 

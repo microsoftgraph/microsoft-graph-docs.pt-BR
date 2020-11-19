@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afdfc2e216279331b0327f1b2e159f9d592afba3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 28fe557042633e48d75b6f05721638fc470bb17b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695681"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306657"
 ---
 # <a name="update-restrictedappsviolation"></a>Atualizar restrictedAppsViolation
 
@@ -123,7 +123,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

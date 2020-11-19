@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db8594f2986f42d112fa42f0ed2fb4843c4d1c83
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: be6d062dad48bb061ab5e758cd823d1ba23e2e54
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736034"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306860"
 ---
 # <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>Tipo de recurso mdmWindowsInformationProtectionPolicy
 
@@ -217,7 +217,6 @@ Veja a seguir uma representação JSON do recurso.
   "isAssigned": true
 }
 ```
-
 
 
 

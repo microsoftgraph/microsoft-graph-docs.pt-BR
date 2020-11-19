@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e77e77719c3f3c69d8dac6b432bde2c1bc3152e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bc3a3cc3e8616262d87c7232f45c730a1e77bacb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733990"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307651"
 ---
 # <a name="windows10devicefirmwareconfigurationinterface-resource-type"></a>tipo de recurso windows10DeviceFirmwareConfigurationInterface
 
@@ -118,7 +118,6 @@ Veja a seguir uma representação JSON do recurso.
   "bootFromBuiltInNetworkAdapters": "String"
 }
 ```
-
 
 
 

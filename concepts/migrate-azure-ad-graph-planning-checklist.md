@@ -4,12 +4,12 @@ description: Lista de verificação para migrar seus aplicativos do Azure AD Gra
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 5470366e3b61cde18b52246483a46485f3f00c68
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: d6a5fc83717c2facbbb016cbbc621d6d1bb36dc0
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288661"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352400"
 ---
 # <a name="app-migration-planning-checklist"></a>Lista de verificação de planejamento de migração de aplicativos
 
@@ -53,10 +53,10 @@ Use o [Explorador do Graph](https://aka.ms/ge) para experimentar novas chamadas 
 
 Antes de atualizar seu aplicativo para todos, assegure-se de testar cuidadosamente e preparar sua distribuição para o público do cliente.
 
-Agora você já fez a migração para o Microsoft Graph, nunca foi mais fácil desbloquear muito mais conjuntos de informações e recursos que agora estão em suas mãos. Você pode ter uma idéia do que é possível examinando alguns [exemplos](/graph/examples).
+Agora você já fez a migração para o Microsoft Graph, nunca foi mais fácil desbloquear muito mais conjuntos de informações e recursos que agora estão em suas mãos. Você pode ter uma idéia do que é possível examinando alguns dos [principais serviços e recursos do Microsoft Graph](/graph/overview-major-services).
 
 Se você estiver usando a [biblioteca de autenticação do AD](/azure/active-directory/develop/active-directory-authentication-libraries) (Adal), considere mudar para a biblioteca de autenticação da [Microsoft](/azure/active-directory/develop/reference-v2-libraries) (MSAL).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximas Etapas
 
 - Saiba mais sobre a [solicitação de sintaxe de chamada](migrate-azure-ad-graph-request-differences.md) para iniciar a etapa 1: revisando as diferenças da API.

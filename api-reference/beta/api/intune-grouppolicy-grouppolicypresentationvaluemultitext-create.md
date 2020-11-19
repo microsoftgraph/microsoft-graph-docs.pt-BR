@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b373e61de218af468ec5244f425c0b84183ca30
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: da213c579989dd792187a7abe788a469e9ecbb7e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698614"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308806"
 ---
 # <a name="create-grouppolicypresentationvaluemultitext"></a>Criar groupPolicyPresentationValueMultiText
 
@@ -97,7 +97,6 @@ Content-Length: 292
   ]
 }
 ```
-
 
 
 

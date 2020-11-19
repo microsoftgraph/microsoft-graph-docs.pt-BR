@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 867d034e70390bbb1eec95b244393dbc771f32b7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d77ae2bb2c3007ad5167740914d5c8fea1b3984a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48689668"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306371"
 ---
 # <a name="get-windowsvpnconfiguration"></a>Obter windowsVpnConfiguration
 
@@ -119,7 +119,6 @@ Content-Length: 1575
   }
 }
 ```
-
 
 
 

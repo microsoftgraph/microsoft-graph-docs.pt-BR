@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d33e6aca4b0c788995bae2aa169be347856104c3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ffde4aeb5b1389255c694bbbbfef969f91c3e026
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723803"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307133"
 ---
 # <a name="rolescopetagautoassignment-resource-type"></a>tipo de recurso roleScopeTagAutoAssignment
 
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

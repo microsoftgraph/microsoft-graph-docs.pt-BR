@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ed4d1c0cfc507931345d0932d9c9a52f2f7d1971
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8334ebdf8c001cde4784cc07e1d990ca307029cb
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970216"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352179"
 ---
 # <a name="get-profile"></a>Obter perfil
 
@@ -26,11 +26,11 @@ O recurso de **perfil** expõe várias propriedades sofisticadas que são descri
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Sem suporte.                              |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                      |
+|:---------------------------------------|:---------------------------------------------------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Aplicativo                            | User. ReadBasic. All, User. Read. All, User. ReadWrite. All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

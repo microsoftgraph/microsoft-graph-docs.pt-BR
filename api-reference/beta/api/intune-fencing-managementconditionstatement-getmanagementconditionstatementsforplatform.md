@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd1b057616f106e169390e2aeb547480f7656a25
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: adf74d54775811e80a3f203708130409d2f8e820
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696563"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309167"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>função getManagementConditionStatementsForPlatform
 
@@ -96,7 +96,6 @@ Content-Length: 615
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 02d4e3b2c1b028882aaa6f6b163e8f5d1fed37ea
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: da896ffeb0ba93a3f27fe7051384e7118cc9aeac
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726366"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307469"
 ---
 # <a name="windows10devicemodetype-enum-type"></a>tipo de enumeração windows10DeviceModeType
 
@@ -27,7 +27,6 @@ Tipo de modo de dispositivo do Windows 10.
 |:---|:---|:---|
 |standardConfiguration|,0|Configuração padrão|
 |sModeConfiguration|1|Configuração do modo S|
-
 
 
 

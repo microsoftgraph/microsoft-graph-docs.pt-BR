@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36202f738f506ebd3e961d8f20e0c6c9c1ea51bb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3f2df810fe691662035cbb2602b097d0debce003
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735173"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307183"
 ---
 # <a name="deviceconfigurationpolicysetitem-resource-type"></a>tipo de recurso deviceConfigurationPolicySetItem
 
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c74b6c8589b4e39dc2115658ba5bce43ee63708
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 604f9210cf81947617d40b0baec8fe8c5715347f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703710"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307448"
 ---
 # <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>tipo de recurso deviceManagementSettingEnrollmentTypeConstraint
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

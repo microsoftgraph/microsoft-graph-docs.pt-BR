@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 676bd1b99a2dd18e06dbd451d478c8db4cf2c131
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0cbdc056c1dc0ea1aa73ae0cd96af428ce9f2bf3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697214"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307162"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>tipo de enumeração userPfxPaddingScheme
 
@@ -25,13 +25,12 @@ Valores com suporte para o esquema de preenchimento usado pelo provedor de cript
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Esquema de preenchimento desconhecido.|
+|nenhum|,0|Esquema de preenchimento desconhecido.|
 |pkcs1|1|Pkcs1 não tem mais suporte|
 |oaepSha1|duas|OaepSha1 não tem mais suporte|
 |oaepSha256|3D|Use o preenchimento OAEP SHA-256.|
 |oaepSha384|4 |Use o preenchimento OAEP SHA-384.|
 |oaepSha512|5 |Use o preenchimento OAEP SHA-512.|
-
 
 
 

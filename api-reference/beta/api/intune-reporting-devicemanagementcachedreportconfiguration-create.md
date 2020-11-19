@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d58fb51a8577575643d33c3b97c107cd3130f77f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3dc145727578b7ed50de1b777f00c6a5b5d5739e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698320"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308029"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>Criar deviceManagementCachedReportConfiguration
 
@@ -118,7 +118,6 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 148d126df775ad67263b8c7c1b4ab6318b927755
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a72665555d45852ec74cf78145e9f2baf92db6d6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730358"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306874"
 ---
 # <a name="devicetype-enum-type"></a>tipo de enumeração DeviceType
 
@@ -36,7 +36,7 @@ Tipo de dispositivo.
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |iPodTouch.|
-|Android|11|Android.|
+|Android|11 |Android.|
 |iSocConsumer|12 |iSocConsumer.|
 |UNIX|13 |UNIX.|
 |macMDM|14 |Cliente Mac OS X usando o agente MDM interno.|
@@ -49,7 +49,7 @@ Tipo de dispositivo.
 |rim|100|Rim.|
 |Palm|101|Palm.|
 |desconhecido|255|Representa que o tipo de dispositivo é desconhecido.|
-
+|cloudPC|257|Dispositivo de PC em nuvem.|
 
 
 

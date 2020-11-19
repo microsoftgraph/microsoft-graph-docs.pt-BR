@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5f55b056f3c20d164446c27d7c1a6d549d99ecf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 121940d6bad85ed63589ae62254e667d7fd81c0e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735145"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307091"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>tipo de recurso deviceManagementReportSchedule
 
@@ -83,7 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "format": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 076c7067650d5706132e6c857a27cf50465d1e38
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c0e75b3a8ab7cc9ebf3929c0764eba243cb1357c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684398"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306867"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeração deviceEnrollmentType
 
@@ -35,13 +35,12 @@ Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 |windowsAutoEnrollment|7 |Registro automático do Windows 10. (Adicionar conta de trabalho)|
 |windowsBulkAzureDomainJoin|8 |Ingresso no Azure AD em massa do Windows 10.|
 |windowsCoManagement|9 |Windows 10 Co-Management disparado por AutoPilot ou política de grupo.|
-|appleUserEnrollment|11|Dispositivo gerenciado pelo registro de usuário da Apple|
+|appleUserEnrollment|11 |Dispositivo gerenciado pelo registro de usuário da Apple|
 |appleUserEnrollmentWithServiceAccount|12 |Dispositivo gerenciado pelo registro de usuário da Apple com conta de serviço|
 |azureAdJoinUsingAzureVmExtension|14 |Azure AD ingressar no registro quando uma máquina virtual do Azure é provisionada|
 |androidEnterpriseDedicatedDevice|15 |Dispositivo dedicado corporativo Android|
 |androidEnterpriseFullyManaged|16 |Android Enterprise totalmente gerenciado|
 |androidEnterpriseCorporateWorkProfile|17 |Perfil de trabalho corporativo do Android Enterprise|
-
 
 
 

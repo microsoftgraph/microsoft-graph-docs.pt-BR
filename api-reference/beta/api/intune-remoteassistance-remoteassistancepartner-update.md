@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d1c7ae72b0e59dbe04a4fe5b4e100e4ded03e53
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 258084c0515a075c8c40985e908d5b72457d07b1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698334"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308050"
 ---
 # <a name="update-remoteassistancepartner"></a>Atualizar remoteAssistancePartner
 
@@ -101,7 +101,6 @@ Content-Length: 390
   "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0fa084db81af3677f5a6e12c6d90020178653b4f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e66a0254240c852ab364a97d5d246f2714687afe
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458124"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352151"
 ---
 # <a name="create-emailauthenticationmethod"></a>Criar emailAuthenticationMethod
 Namespace: microsoft.graph
@@ -31,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador global
-* Leitor global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 
