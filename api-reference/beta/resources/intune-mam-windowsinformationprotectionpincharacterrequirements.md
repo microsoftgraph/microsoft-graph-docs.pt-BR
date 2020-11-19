@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5733f67ad1aa628fdd18b901a265e958174d5072
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 929f584fc69c1dfd643a968604ff2ee9dac0c6d9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726322"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259547"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>tipo de enumeração windowsInformationProtectionPinCharacterRequirements
 
@@ -28,7 +28,6 @@ Requisitos de caracteres de PIN
 |Não permitir|,0|Não permitir|
 |requireAtLeastOne|1|Exigir pelo menos um|
 |permitiu|duas|Permitir qualquer número|
-
 
 
 

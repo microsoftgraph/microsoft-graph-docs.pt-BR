@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8a1940cfeccec4cc9121ddb8cb98e956998310e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8718c339323c2f6a2c5e5c0babc3e4dda1dab5c0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726343"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259666"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>tipo de recurso windowsInformationProtectionDeviceRegistration
 
@@ -66,7 +66,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

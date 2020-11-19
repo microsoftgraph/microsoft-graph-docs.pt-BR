@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d1d8db1a0703fcf40148929e214ae7851facaa82
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 02f81a8c19f5656fed51074b0f0564c58c953666
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729907"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261983"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>Listar iosLobAppProvisioningConfigurations
 
@@ -91,7 +91,6 @@ Content-Length: 632
   ]
 }
 ```
-
 
 
 

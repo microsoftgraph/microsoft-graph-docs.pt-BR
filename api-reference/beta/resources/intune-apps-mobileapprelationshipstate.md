@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a417d655970147f7d6352c6d0c9624888a5da583
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 62c4b0684f7e72b2dbba6ed840e7b5d8785d0dc9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48719735"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261108"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>tipo de recurso mobileAppRelationshipState
 
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46844fbe3dcd66000c6b2e717e60fe8d7c08e935
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 23eeafafbb45872e4ed9d6f2eafec161ff749a05
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725636"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262263"
 ---
 # <a name="delete-deviceenrollmentplatformrestrictionsconfiguration"></a>Excluir deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 017ee685b49abfec3003ae32876ff6996b02f934
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fbacb01034e76a2b162340e086200dd4a1b9aea8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723789"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259127"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Tipo de recurso androidManagedAppProtection
 
@@ -193,7 +193,6 @@ Veja a seguir uma representação JSON do recurso.
   "minimumWipeCompanyPortalVersion": "String"
 }
 ```
-
 
 
 

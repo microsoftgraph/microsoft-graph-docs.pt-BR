@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 288f89d34c52f95faaa1c49d9b765e12bbed0c82
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7460d3de3d0e299a4c8ac488eee2c34ba8153af8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728666"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263082"
 ---
 # <a name="list-grouppolicymigrationreports"></a>Listar groupPolicyMigrationReports
 
@@ -88,7 +88,6 @@ Content-Length: 805
   ]
 }
 ```
-
 
 
 

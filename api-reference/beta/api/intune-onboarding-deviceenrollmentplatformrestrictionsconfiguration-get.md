@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88c30f56295bcfe1f616f88c2ad0598b55e3f5fe
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a49d33a2a48d17fd28c383c97118ec3b475dc196
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725653"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262256"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Get deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3570
+Content-Length: 4528
 
 {
   "value": {
@@ -91,6 +91,9 @@ Content-Length: 3570
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "windowsRestriction": {
@@ -101,6 +104,9 @@ Content-Length: 3570
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "windowsHomeSkuRestriction": {
@@ -111,6 +117,9 @@ Content-Length: 3570
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "windowsMobileRestriction": {
@@ -121,6 +130,9 @@ Content-Length: 3570
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "androidRestriction": {
@@ -131,6 +143,9 @@ Content-Length: 3570
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "androidForWorkRestriction": {
@@ -141,6 +156,22 @@ Content-Length: 3570
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
+    },
+    "aospRestriction": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "macRestriction": {
@@ -151,6 +182,9 @@ Content-Length: 3570
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "macOSRestriction": {
@@ -161,12 +195,14 @@ Content-Length: 3570
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     }
   }
 }
 ```
-
 
 
 

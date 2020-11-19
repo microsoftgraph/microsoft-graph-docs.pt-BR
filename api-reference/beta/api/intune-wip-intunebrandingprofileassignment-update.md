@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a2383999bb8a0f2b0466701aece3ba5fb448411
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: df1dd4848ce77500cfa428dd5f9bb4ce4ad8d6f1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701638"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261521"
 ---
 # <a name="update-intunebrandingprofileassignment"></a>Atualizar intuneBrandingProfileAssignment
 
@@ -97,7 +97,6 @@ Content-Length: 375
   }
 }
 ```
-
 
 
 

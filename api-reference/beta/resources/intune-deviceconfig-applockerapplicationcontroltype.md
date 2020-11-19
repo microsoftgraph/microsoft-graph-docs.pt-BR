@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: efdb7913d5b813ec528969520e2e7d64da1d3002
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8e645f0ee8201ee0e66fe21ce80cc237f52faa3a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708813"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260821"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>tipo de enumeração appLockerApplicationControlType
 
@@ -30,7 +30,6 @@ Valores possíveis dos tipos de controle do aplicativo AppLocker
 |auditComponentsAndStoreApps|duas|Auditar o componente do Windows e armazenar aplicativos.|
 |enforceComponentsStoreAppsAndSmartlocker|3D|Aplicar componentes do Windows, armazenar aplicativos e armário inteligente.|
 |auditComponentsStoreAppsAndSmartlocker|4 |Auditoria de componentes do Windows, aplicativos de armazenamento e armário inteligente.|
-
 
 
 

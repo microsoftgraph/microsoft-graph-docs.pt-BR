@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f88e19d7ff26d657772d208d5b11fe7f6c323a22
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7f43fee985ca760cfe3323f55ce79aaa043d9bd9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729359"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260058"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Tipo de recurso deviceHealthAttestationState
 
@@ -105,7 +105,6 @@ Veja a seguir uma representação JSON do recurso.
   "healthAttestationSupportedStatus": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2479a3f16336e7dbe29fd84bffb2821f83274645
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7703c020f8aa22f17b4992495e11ff3c0a552619
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697361"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259792"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>tipo de enumeração groupPolicyDefinitionClassType
 
@@ -25,9 +25,8 @@ Tipo de classe de definição de política de grupo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|user|,0|Identifica o posicionamento da configuração de política no nó Configuração do usuário.|
+|usuário|,0|Identifica o posicionamento da configuração de política no nó Configuração do usuário.|
 |máquina|1|Identifica o posicionamento da configuração de política no nó Configuração do computador.|
-
 
 
 

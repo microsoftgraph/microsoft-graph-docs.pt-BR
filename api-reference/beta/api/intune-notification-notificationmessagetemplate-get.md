@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6cba569a93989f58f87bbd79ed2863fbac5baf82
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 57160a28c9001962e9004b5232fd29c1304f7065
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727742"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262494"
 ---
 # <a name="get-notificationmessagetemplate"></a>Get notificationMessageTemplate
 
@@ -84,7 +84,6 @@ Content-Length: 409
   }
 }
 ```
-
 
 
 

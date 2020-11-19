@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cca44f666e5636d221521045831fd58974079e98
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9c6aef09391068da7a3022195b0ed85e7c5db7cc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708778"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260051"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Tipo de recurso configurationManagerClientEnabledFeatures
 
@@ -31,8 +31,8 @@ recursos habilitados pelo cliente do Gerenciador de Configurações
 |deviceConfiguration|Booliano|Se a configuração do dispositivo é gerenciada pelo Intune|
 |compliancePolicy|Booliano|Se a política de conformidade é gerenciada pelo Intune|
 |windowsUpdateForBusiness|Booliano|Se o Windows Update para Empresas é gerenciado pelo Intune|
-|endpointProtection|Boolean|Se o Endpoint Protection é gerenciado pelo Intune|
-|Officetreinamento|Boolean|Se o aplicativo do Office é gerenciado pelo Intune|
+|endpointProtection|Booliano|Se o Endpoint Protection é gerenciado pelo Intune|
+|Officetreinamento|Booliano|Se o aplicativo do Office é gerenciado pelo Intune|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "officeApps": true
 }
 ```
-
 
 
 

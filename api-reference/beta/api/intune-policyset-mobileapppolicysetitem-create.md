@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e202df2354ee5857c75541925c3f16b775d5aa2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 038edf8c2dcafcbcf7de2b69c9ee04ab5c4486a9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731565"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262061"
 ---
 # <a name="create-mobileapppolicysetitem"></a>Criar mobileAppPolicySetItem
 
@@ -126,7 +126,6 @@ Content-Length: 686
   }
 }
 ```
-
 
 
 

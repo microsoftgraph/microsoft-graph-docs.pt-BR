@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bfe1ee2fe8385150336bef52ba2e498832b60562
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 08d21f78466f7f716b5d9bffcd1832e5c1a23d89
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684537"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259680"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>tipo de enumeração managedAppFlaggedReason
 
@@ -25,11 +25,10 @@ O motivo pelo qual um usuário foi sinalizado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Nenhum problema.|
+|nenhum|,0|Nenhum problema.|
 |rootedDevice|1|O registro do aplicativo está em execução em um dispositivo raiz/desbloqueado.|
 |androidBootloaderUnlocked|duas|O registro do aplicativo está em execução em um dispositivo Android no qual o carregador de erro é desbloqueado.|
 |androidFactoryRomModified|3D|O registro do aplicativo está em execução em um dispositivo Android em que a ROM de fábrica foi modificada.|
-
 
 
 

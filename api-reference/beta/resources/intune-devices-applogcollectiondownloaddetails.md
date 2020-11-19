@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 13d8ec94fafd3ae571278a62cd2e331c7f07886d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ced02355c4d1b0d57761c7374e46bb41d7a35558
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725544"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260065"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>tipo de recurso appLogCollectionDownloadDetails
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "appLogDecryptionAlgorithm": "String"
 }
 ```
-
 
 
 

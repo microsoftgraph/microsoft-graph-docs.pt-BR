@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c4d34338277bd6433bc9f34ffce83a671b72a440
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5cc37c22ae128bd6bd4912ba88fbb80b28052b37
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701610"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260688"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>tipo de enumeração bitLockerEncryptionMethod
 
@@ -29,7 +29,6 @@ Tipos BitLockerEncryptionMethod
 |aesCbc256|4 |AES-CBC 256-bit.|
 |xtsAes128|6 |XTS-AES 128-bit.|
 |xtsAes256|7 |XTS-AES 256-bit.|
-
 
 
 

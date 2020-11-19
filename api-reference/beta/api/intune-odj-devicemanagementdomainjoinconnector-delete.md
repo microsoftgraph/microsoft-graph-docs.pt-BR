@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48b14f76f728a20645f357ff926a2bd686f54119
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e763d2bd1a17d2c24a5e8b805b9b4538c1fd378c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707259"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262431"
 ---
 # <a name="delete-devicemanagementdomainjoinconnector"></a>Excluir deviceManagementDomainJoinConnector
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14172c1093f03c81e4a7dff9f49965ccdfa8f63a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3a18e501130366286fdf67439b4ff55395383d26
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703136"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263068"
 ---
 # <a name="get-unsupportedgrouppolicyextension"></a>Obter unsupportedGroupPolicyExtension
 
@@ -81,7 +81,6 @@ Content-Length: 316
   }
 }
 ```
-
 
 
 

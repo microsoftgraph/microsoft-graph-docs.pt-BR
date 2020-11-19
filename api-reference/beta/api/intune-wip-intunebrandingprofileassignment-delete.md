@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fff51f6feeb8657dcdb859b65b0f5d7699e5215c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b5b07c12dfd2b1cba34a8ce9ca0bb9841911f635
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709016"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261640"
 ---
 # <a name="delete-intunebrandingprofileassignment"></a>Excluir intuneBrandingProfileAssignment
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dee333459fbdb1a78b823df4bcb2908179e64a32
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4859bd16cd3004f624f7a377efe125aa087d70c9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709023"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261654"
 ---
 # <a name="create-intunebrandingprofileassignment"></a>Criar intuneBrandingProfileAssignment
 
@@ -97,7 +97,6 @@ Content-Length: 375
   }
 }
 ```
-
 
 
 

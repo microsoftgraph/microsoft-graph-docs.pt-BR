@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b6aa2de8a316d7c1a4689e77279a53aee51b793
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ee89643bd146783affd160b7f625e495b29f50f1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725593"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260800"
 ---
 # <a name="authenticationtransformconstant-enum-type"></a>tipo de enumeração authenticationTransformConstant
 
@@ -31,7 +31,6 @@ Valores de transformação de autenticação para políticas VPN do Windows10 co
 |aes128Gcm|3D|GCMAES128|
 |aes192Gcm|4 |GCMAES192|
 |aes256Gcm|5 |GCMAES256|
-
 
 
 

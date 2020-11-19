@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e456ba03de299a04a1434c7a19871aa908274b1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a733f93f64a62f9afca92fce1a8c16c06ab7f57e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723768"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258987"
 ---
 # <a name="companyportalblockedaction-resource-type"></a>tipo de recurso companyPortalBlockedAction
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "action": "String"
 }
 ```
-
 
 
 

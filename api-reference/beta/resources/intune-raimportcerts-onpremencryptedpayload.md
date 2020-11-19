@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f384cedf189b8689a236208e884f7d91e392d2a2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9bd49e99cfa9c5d6e17bdd77c713312d241f5f3c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707602"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259225"
 ---
 # <a name="onpremencryptedpayload-resource-type"></a>tipo de recurso onPremEncryptedPayload
 
@@ -83,7 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "isDeleted": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 17e78451e79a16988f2fe1c2e1bc457470fcb5d1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3bd4e1a4ff567cb18a7e55a344e35c7000aee60d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695065"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260527"
 ---
 # <a name="certificateissuancestates-enum-type"></a>tipo de enumeração certificateIssuanceStates
 
@@ -36,7 +36,7 @@ Opções de estado de emissão de certificado.
 |issuePending|8 |Ainda não documentado|
 |executados|9 |Ainda não documentado|
 |responseProcessingFailed|10 |Ainda não documentado|
-|responsePending|11|Ainda não documentado|
+|responsePending|11 |Ainda não documentado|
 |enrollmentSucceeded|12 |Ainda não documentado|
 |enrollmentNotNeeded|13 |Ainda não documentado|
 |revogado|14 |Ainda não documentado|
@@ -48,7 +48,6 @@ Opções de estado de emissão de certificado.
 |deleted|508|Ainda não documentado|
 |renewalRequested| 21 |Ainda não documentado|
 |necessário|22|Ainda não documentado|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee0fb84bee4d70177930857dcce9bbff0144d3c0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: abfc5532d22a60c8bbd4cb6423ed59ef24047716
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728610"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261306"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>Tipo de recurso androidForWorkEnrollmentProfile
 
@@ -79,7 +79,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

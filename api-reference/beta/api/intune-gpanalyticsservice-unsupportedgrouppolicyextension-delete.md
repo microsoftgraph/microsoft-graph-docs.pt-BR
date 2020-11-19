@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 278c9ec602acc9c11381ea35e9f21994aee8a10b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a4b437b561e3686e7d4a7694a251dd27d1aa54aa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703143"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263061"
 ---
 # <a name="delete-unsupportedgrouppolicyextension"></a>Excluir unsupportedGroupPolicyExtension
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

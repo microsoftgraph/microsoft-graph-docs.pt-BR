@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c8837bdcc87abc3866441c4c81dee163dcf13bb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a4b7d2683baed89505280d8866132ce9e7846bbc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707749"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259813"
 ---
 # <a name="enrollmentprofile-resource-type"></a>tipo de recurso enrollmentProfile
 
@@ -40,10 +40,10 @@ O recurso enrollmentProfile representa uma coleção de configurações que deve
 |id|String|O GUID do objeto.|
 |displayName|String|Nome do perfil|
 |description|String|Descrição do perfil|
-|requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação do usuário|
+|requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação do usuário|
 |configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro|
-|Enableauthenticationviacompanyportal foi adicionada|Boolean|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
+|Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

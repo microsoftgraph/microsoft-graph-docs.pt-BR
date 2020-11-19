@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe074ea1e7d31bca98e60a60144aaad1bfa0b278
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3a9d802b4b3ac00d61642f5a828135c2c0102e15
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730711"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261025"
 ---
 # <a name="androidworkprofileenterprisewificonfiguration-resource-type"></a>tipo de recurso androidWorkProfileEnterpriseWiFiConfiguration
 
@@ -130,7 +130,6 @@ Veja a seguir uma representação JSON do recurso.
   "proxyAutomaticConfigurationUrl": "String"
 }
 ```
-
 
 
 
