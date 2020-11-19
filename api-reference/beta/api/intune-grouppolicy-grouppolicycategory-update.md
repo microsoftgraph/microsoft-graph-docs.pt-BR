@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 96f85928b0691e249a7674f9201366458d440969
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9e766f9742a04197ea5750ee727040754c034f3e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685097"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309113"
 ---
 # <a name="update-grouppolicycategory"></a>Atualizar groupPolicyCategory
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|A ID da cadeia de caracteres do nome de exibição da categoria|
-|IsRoot|Boolean|Define se a categoria é uma categoria raiz|
+|IsRoot|Booliano|Define se a categoria é uma categoria raiz|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -97,7 +97,6 @@ Content-Length: 233
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

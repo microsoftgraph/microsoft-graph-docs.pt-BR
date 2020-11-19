@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 07e2f9a61af255221a78d152cf1e44699d67e77d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: eb9d4d8497643b62e7ab2512cb61cb30825d2ec4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729198"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310710"
 ---
 # <a name="list-devicemanagementscriptassignments"></a>Listar deviceManagementScriptAssignments
 
@@ -83,7 +83,6 @@ Content-Length: 437
   ]
 }
 ```
-
 
 
 

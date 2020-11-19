@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: baa78610aa329987d8c70ff0326d46cb06b00682
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3d0a2ed8ccc3ad9dcda5e60d21c88a304c051063
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706720"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310626"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Atualizar deviceManagementScriptDeviceState
 
@@ -104,7 +104,6 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
-
 
 
 

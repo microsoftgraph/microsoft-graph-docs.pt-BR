@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d29b6421d668892d3ded7737e3fbfd81d0233fa1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9360d5899ce228419edcb771d310dff5f789679a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726112"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49311249"
 ---
 # <a name="create-devicemanagementtemplatesettingcategory"></a>Criar deviceManagementTemplateSettingCategory
 
@@ -92,7 +92,6 @@ Content-Length: 201
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

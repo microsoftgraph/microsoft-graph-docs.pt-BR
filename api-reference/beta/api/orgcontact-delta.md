@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 672911b61e84d1d94f3ab9721481c638224825f0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b9d02814e37e3bbc3ec37818ccfa7071abb381f
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974290"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352435"
 ---
 # <a name="orgcontact-delta"></a>orgContact: Delta
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | OrgContact. Read. All, Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.  |
-|Application | OrgContact. Read. All, Directory. Read. All, Directory. ReadWrite. All |
+|Aplicativo | OrgContact. Read. All, Directory. Read. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Em solicitações subsequentes, copie e aplique `nextLink` a `deltaLink` URL ou 
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para o mesmo conjunto de contatos da organização, indicando a conclusão da rodada de controle de alterações. Salve e aplique a `deltaLink` URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle de alterações para essa coleção.|
+| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **Delta** anterior para o mesmo conjunto de contatos da organização, indicando a conclusão da rodada de controle de alterações. Salve e aplique a `deltaLink` URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle de alterações para essa coleção.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **Delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de contatos da organização. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
@@ -149,7 +149,7 @@ A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização d
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 
@@ -218,7 +218,7 @@ A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização d
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 
@@ -282,7 +282,7 @@ A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização d
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 

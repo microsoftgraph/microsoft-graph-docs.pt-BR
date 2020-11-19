@@ -1,18 +1,18 @@
 ---
-title: Obter deviceManagementTemplate
-description: Leia as propriedades e as relações do objeto deviceManagementTemplate.
+title: Obter deviceManagementResourceAccessProfileBase
+description: Leia as propriedades e as relações do objeto deviceManagementResourceAccessProfileBase.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 73b572323b3ebd7ddfe4c582db5191690ea2b2d2
+ms.openlocfilehash: 812f56158b83a8ff1bb108ec0048c4457e603388
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49311277"
+ms.locfileid: "49336993"
 ---
-# <a name="get-devicemanagementtemplate"></a>Obter deviceManagementTemplate
+# <a name="get-devicemanagementresourceaccessprofilebase"></a>Obter deviceManagementResourceAccessProfileBase
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) .
+Leia as propriedades e as relações do objeto [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,8 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/templates/{deviceManagementTemplateId}
-GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
+GET /deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -54,14 +53,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
+GET https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles/{deviceManagementResourceAccessProfileBaseId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -69,21 +68,20 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 495
+Content-Length: 453
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementTemplate",
-    "id": "edd764ca-64ca-edd7-ca64-d7edca64d7ed",
+    "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileBase",
+    "id": "f442dd4a-dd4a-f442-4add-42f44add42f4",
+    "version": 7,
     "displayName": "Display Name value",
     "description": "Description value",
-    "versionInfo": "Version Info value",
-    "isDeprecated": true,
-    "intentCount": 11,
-    "templateType": "specializedDevices",
-    "platformType": "androidForWork",
-    "templateSubtype": "firewall",
-    "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
+    "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

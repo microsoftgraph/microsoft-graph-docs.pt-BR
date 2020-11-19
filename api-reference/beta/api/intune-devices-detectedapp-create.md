@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2968ce1fd277821234bd88363a9bbfa255fbd6c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dc541a24799c1bc2b0f9fc0927c16cea4fc3981f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698670"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310899"
 ---
 # <a name="create-detectedapp"></a>Criar detectedApp
 
@@ -99,7 +99,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
 
 
 

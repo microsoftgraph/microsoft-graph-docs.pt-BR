@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7326fcc510c2b65ca7776076a9062eccc8c0cc7b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c961a524f77f0a72c97c6f4b9967089ef5ea8806
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728771"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310878"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>Atualizar deviceComplianceScriptDeviceState
 
@@ -104,7 +104,6 @@ Content-Length: 436
   "scriptError": "Script Error value"
 }
 ```
-
 
 
 

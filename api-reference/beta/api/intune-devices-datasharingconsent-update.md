@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c90f9188af9c704929692c4b2ae32911022b319
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b7a417a30b8c34da52d151ce64cc9f655fabdbdd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698684"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310990"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [dataSha
 |id|String|A ID de consentimento de compartilhamento de dados|
 |objectdisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
 |termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
-|granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
+|granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
 |grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
 |grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
@@ -104,7 +104,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

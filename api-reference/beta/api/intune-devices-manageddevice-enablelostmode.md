@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d27fe8bced04b5e735517828a0a172061c83e28
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f60fbccec12c879ba8f212766521c1566cf83b51
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722603"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310486"
 ---
 # <a name="enablelostmode-action"></a>Ação enableLostMode
 
@@ -90,7 +90,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

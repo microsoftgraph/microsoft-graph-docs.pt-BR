@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c10aa2a405ce53b6a82d7126a07aeff60879305
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f3f170318476603210f9d750370d9de49ee44d61
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48721522"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308225"
 ---
 # <a name="scopedforresource-function"></a>função scopedForResource
 
@@ -78,7 +78,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

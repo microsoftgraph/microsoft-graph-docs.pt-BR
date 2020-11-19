@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 310600367d2996053dd6f0b85bfde49dae0c2bde
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a5b9e9bf33a5dc62219d00644af04e267e1b227a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729991"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49311137"
 ---
 # <a name="update-devicemanagementtemplatesettingcategory"></a>Atualizar deviceManagementTemplateSettingCategory
 
@@ -92,7 +92,6 @@ Content-Length: 201
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

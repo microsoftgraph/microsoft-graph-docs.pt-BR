@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7081a741aac0a4175167a8fe940732fea6e396d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4fa446e80725e486fd4e59737c9b7419bba06282
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732301"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49311305"
 ---
 # <a name="create-windowswifienterpriseeapconfiguration"></a>Criar windowsWifiEnterpriseEAPConfiguration
 
@@ -80,6 +80,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsW
 |forceFIPSCompliance|Booliano|Especifique se a conformidade com FIPS deve ser forçada. Herdado de [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|Especifique o tipo de logon único na rede. Os valores possíveis são: `disabled`, `prelogon`, `postlogon`.|
 |maximumAuthenticationTimeoutInSeconds|Int32|Especifique o tempo limite máximo de autenticação (em segundos).  Intervalo válido: 1-120|
+|userBasedVirtualLan|Booliano|Especifique se deseja alterar a LAN virtual usada pelo dispositivo com base nas credenciais do usuário. Não pode ser usado quando NetworkSingleSignOnType está definido como desabilitado.|
 |promptForAdditionalAuthenticationCredentials|Booliano|Especifique se a conexão WiFi deve solicitar credenciais de autenticação adicionais.|
 |enablePairwiseMasterKeyCaching|Booliano|Especifique se a conexão WiFi deve habilitar o cache da chave mestra de par.|
 |maximumPairwiseMasterKeyCacheTimeInMinutes|Int32|Especifique o tempo máximo de cache da chave mestra de paridade (em minutos).  Intervalo válido: 5-1440|
@@ -94,6 +95,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsW
 |requireCryptographicBinding|Booliano|Especifique se deseja habilitar a associação criptográfica quando o tipo EAP for selecionado como PEAP.|
 |performServerValidation|Booliano|Especifique se deseja habilitar a verificação da identidade do servidor, validando o certificado quando o tipo EAP estiver selecionado como PEAP.|
 |disableUserPromptForServerValidation|Booliano|Especifique se deseja impedir que o usuário seja solicitado a autorizar novos servidores para autoridades de certificação confiáveis quando o tipo EAP for selecionado como PEAP.|
+|authenticationPeriodInSeconds|Int32|Especifique o número de segundos que o cliente deve aguardar após uma tentativa de autenticação antes de falhar. Intervalo válido de 1-3600.|
+|authenticationRetryDelayPeriodInSeconds|Int32|Especifique o número de segundos entre uma falha de autenticação e a próxima tentativa de autenticação. Intervalo válido de 1-3600.|
+|eapolStartPeriodInSeconds|Int32|Especifique o número de segundos de espera antes de enviar uma mensagem de início de EAPOL (protocolo de autenticação extensível via LAN). Intervalo válido de 1-3600.|
+|maximumEAPOLStartMessages|Int32|Especifique o número máximo de mensagens de início de EAPOL (Extensible Authentication Protocol over LAN) para serem enviadas antes de retornar uma falha. Intervalo válido de 1-100.|
+|maximumAuthenticationFailures|Int32|Especifique as falhas máximas de autenticação permitidas para um conjunto de credenciais. Intervalo válido de 1-100.|
+|cacheCredentials|Booliano|Especifique se deseja armazenar em cache credenciais de usuário no dispositivo para que os usuários não precisem inseri-las sempre que se conectarem.|
+|authenticationType|[wifiAuthenticationType](../resources/intune-deviceconfig-wifiauthenticationtype.md)|Especifique se deseja autenticar o usuário, o dispositivo, ou para usar a autenticação de convidado (nenhuma). Se você estiver usando a autenticação de certificado, certifique-se de que o tipo de certificado corresponde ao tipo de autenticação. Os valores possíveis são: `none`, `user`, `machine`, `machineOrUser`, `guest`.|
 
 
 
@@ -107,7 +115,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2402
+Content-length: 2695
 
 {
   "@odata.type": "#microsoft.graph.windowsWifiEnterpriseEAPConfiguration",
@@ -154,6 +162,7 @@ Content-length: 2402
   "forceFIPSCompliance": true,
   "networkSingleSignOn": "prelogon",
   "maximumAuthenticationTimeoutInSeconds": 5,
+  "userBasedVirtualLan": true,
   "promptForAdditionalAuthenticationCredentials": true,
   "enablePairwiseMasterKeyCaching": true,
   "maximumPairwiseMasterKeyCacheTimeInMinutes": 10,
@@ -169,7 +178,14 @@ Content-length: 2402
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
   "requireCryptographicBinding": true,
   "performServerValidation": true,
-  "disableUserPromptForServerValidation": true
+  "disableUserPromptForServerValidation": true,
+  "authenticationPeriodInSeconds": 13,
+  "authenticationRetryDelayPeriodInSeconds": 7,
+  "eapolStartPeriodInSeconds": 9,
+  "maximumEAPOLStartMessages": 9,
+  "maximumAuthenticationFailures": 13,
+  "cacheCredentials": true,
+  "authenticationType": "user"
 }
 ```
 
@@ -178,7 +194,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2574
+Content-Length: 2867
 
 {
   "@odata.type": "#microsoft.graph.windowsWifiEnterpriseEAPConfiguration",
@@ -228,6 +244,7 @@ Content-Length: 2574
   "forceFIPSCompliance": true,
   "networkSingleSignOn": "prelogon",
   "maximumAuthenticationTimeoutInSeconds": 5,
+  "userBasedVirtualLan": true,
   "promptForAdditionalAuthenticationCredentials": true,
   "enablePairwiseMasterKeyCaching": true,
   "maximumPairwiseMasterKeyCacheTimeInMinutes": 10,
@@ -243,10 +260,16 @@ Content-Length: 2574
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
   "requireCryptographicBinding": true,
   "performServerValidation": true,
-  "disableUserPromptForServerValidation": true
+  "disableUserPromptForServerValidation": true,
+  "authenticationPeriodInSeconds": 13,
+  "authenticationRetryDelayPeriodInSeconds": 7,
+  "eapolStartPeriodInSeconds": 9,
+  "maximumEAPOLStartMessages": 9,
+  "maximumAuthenticationFailures": 13,
+  "cacheCredentials": true,
+  "authenticationType": "user"
 }
 ```
-
 
 
 

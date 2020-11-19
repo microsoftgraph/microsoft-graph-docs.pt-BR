@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89027446b82ef7ca9b310a4e2d5cdf189a06a7c4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 361584aa1e6dea2f8682e482d9a188a0a8437cc0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735488"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309702"
 ---
 # <a name="create-azureadwindowsautopilotdeploymentprofile"></a>Criar azureADWindowsAutopilotDeploymentProfile
 
@@ -158,7 +158,6 @@ Content-Length: 1331
   ]
 }
 ```
-
 
 
 

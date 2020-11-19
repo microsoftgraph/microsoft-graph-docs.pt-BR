@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 189a1d9274f3a0a77392bb1ebca04911c7bf2c0a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c425af3a39a2a9f13a46792d8482d59804c8d37f
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969432"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352148"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
@@ -46,7 +46,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |city|String||
 |country|String||
 |department|String||
-|onPremisesSyncEnabled|Boolean||
+|onPremisesSyncEnabled|Booliano||
 |displayName|String||
 |givenName|String||
 |jobTitle|String||
@@ -64,10 +64,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [orgContact](../resources/orgcontact.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -104,28 +105,15 @@ Content-length: 222
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact"
+  "@odata.type": "microsoft.graph.orgContact"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 222
-
-{
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value",
-  "country": "country-value",
-  "department": "department-value",
-  "displayName": "displayName-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
