@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56689768ec235fa27a94dd1302d129935bd4a2c4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fd32b5c0c01c779ffadf08e1f6670c612f306801
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708589"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49239400"
 ---
 # <a name="get-androidforworkcustomconfiguration"></a>Obter androidForWorkCustomConfiguration
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1519
+Content-Length: 1549
 
 {
   "value": {
@@ -111,13 +111,13 @@ Content-Length: 1519
         "@odata.type": "microsoft.graph.omaSetting",
         "displayName": "Display Name value",
         "description": "Description value",
-        "omaUri": "Oma Uri value"
+        "omaUri": "Oma Uri value",
+        "isEncrypted": true
       }
     ]
   }
 }
 ```
-
 
 
 

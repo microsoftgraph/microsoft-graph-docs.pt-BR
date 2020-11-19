@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cabfb6cda37192c6cffc0de13103c3ee1ad9f308
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ed91e50f6a7cae766e26039f8afa6617e2377fab
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703486"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49239652"
 ---
 # <a name="delete-androidforworkcompliancepolicy"></a>Excluir androidForWorkCompliancePolicy
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

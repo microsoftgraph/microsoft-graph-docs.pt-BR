@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df63be929f1c2b02485ef0f3e85a9017f7ca0c46
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6ad5f5775b35223f39009b89b62cf221e5d31abe
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726973"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49240101"
 ---
 # <a name="create-androiddeviceownerwificonfiguration"></a>Criar androidDeviceOwnerWiFiConfiguration
 
@@ -176,7 +176,6 @@ Content-Length: 1454
   "preSharedKeyIsSet": true
 }
 ```
-
 
 
 

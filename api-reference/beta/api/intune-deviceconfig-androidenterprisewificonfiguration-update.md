@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8eef7c7c7fe6fa8b2ba0e04058a3f9e583e6a2f0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6b0c47126919303d6e54f1ac728221cea883477a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733200"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49239722"
 ---
 # <a name="update-androidenterprisewificonfiguration"></a>Atualizar Androidenterprisewificonfiguration.
 
@@ -195,7 +195,6 @@ Content-Length: 1871
   "preSharedKey": "Pre Shared Key value"
 }
 ```
-
 
 
 

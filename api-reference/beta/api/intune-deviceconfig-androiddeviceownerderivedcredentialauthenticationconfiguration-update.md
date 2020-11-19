@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91f4c5d23d055829b6172511330db6d88a01dc07
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 361a190191ef92255884b5b76802bad20015df60
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733906"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49242627"
 ---
 # <a name="update-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>Atualizar androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 
@@ -156,7 +156,6 @@ Content-Length: 1237
   "version": 7
 }
 ```
-
 
 
 

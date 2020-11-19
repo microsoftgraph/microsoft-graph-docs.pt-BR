@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aee6953e0284b1573f1e17181ddadbfae7003d90
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3af1eedca09cad3e22b553f7748386975d4924ef
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726945"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49240016"
 ---
 # <a name="update-androiddeviceownerwificonfiguration"></a>Atualizar androidDeviceOwnerWiFiConfiguration
 
@@ -177,7 +177,6 @@ Content-Length: 1454
   "preSharedKeyIsSet": true
 }
 ```
-
 
 
 

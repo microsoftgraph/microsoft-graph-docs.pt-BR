@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0864d9200e6b1d366bd4919d96d8b7a5aa6479a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4dbd47d997e881099a6cc4d161ff04332f7245b8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703423"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49239113"
 ---
 # <a name="delete-androidforworkgeneraldeviceconfiguration"></a>Excluir androidForWorkGeneralDeviceConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

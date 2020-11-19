@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aba1f822a0500e9aba70eed5905d5ba80cd532ad
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ad31b6608dc91d64db284e11b009150d3c0ec68a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733892"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49241087"
 ---
 # <a name="delete-androiddeviceownerenterprisewificonfiguration"></a>Excluir androidDeviceOwnerEnterpriseWiFiConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

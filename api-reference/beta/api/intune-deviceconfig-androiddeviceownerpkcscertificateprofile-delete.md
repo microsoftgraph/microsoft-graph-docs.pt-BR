@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d74c55a6cc4b4def8ae7cb7a785f883585f5ab4d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fc1f52304a7bbf3b93911f7d5b5aae755090cb86
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690466"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49240646"
 ---
 # <a name="delete-androiddeviceownerpkcscertificateprofile"></a>Excluir androidDeviceOwnerPkcsCertificateProfile
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

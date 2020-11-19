@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04b84fe63a787caaa2fb98def2d57732e4e9da9c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7be9ce4c5b608fe730b305b1ad71300338a7a3b1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727199"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49240289"
 ---
 # <a name="update-androiddeviceownertrustedrootcertificate"></a>Atualizar androidDeviceOwnerTrustedRootCertificate
 
@@ -162,7 +162,6 @@ Content-Length: 1323
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

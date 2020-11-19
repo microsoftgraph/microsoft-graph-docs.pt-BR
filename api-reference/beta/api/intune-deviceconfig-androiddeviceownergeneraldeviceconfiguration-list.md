@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e32fba1cbc5943859a419b368e99d30ef52aa426
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 268c4294529c34b64d7d0cb3159a68918f5e1a27
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734144"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49240898"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Listar androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6905
+Content-Length: 7216
 
 {
   "value": [
@@ -134,6 +134,11 @@ Content-Length: 6905
         "proxyAutoConfigURL": "Proxy Auto Config URL value"
       },
       "googleAccountsBlocked": true,
+      "kioskCustomizationDeviceSettingsBlocked": true,
+      "kioskCustomizationPowerButtonActionsBlocked": true,
+      "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+      "kioskCustomizationSystemErrorWarnings": true,
+      "kioskCustomizationSystemNavigation": "navigationEnabled",
       "kioskModeScreenSaverConfigurationEnabled": true,
       "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
       "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -226,7 +231,6 @@ Content-Length: 6905
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a1e16e0d4da4b6b7f0c01757412803018eea487
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0a7fc4c66c03651faee77fd909f865ccd02e78bc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690515"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49240779"
 ---
 # <a name="get-androiddeviceownerimportedpfxcertificateprofile"></a>Obter androidDeviceOwnerImportedPFXCertificateProfile
 
@@ -122,7 +122,6 @@ Content-Length: 1784
   }
 }
 ```
-
 
 
 

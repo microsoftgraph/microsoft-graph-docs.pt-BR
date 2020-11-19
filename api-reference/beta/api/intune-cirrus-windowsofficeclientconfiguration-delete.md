@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9ab26b542e9618966066aed659b2133d0431793
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f0d9ebcdbccd11576fd418a4962001da19063f4d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48714896"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244301"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>Excluir windowsOfficeClientConfiguration
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 ```
-
 
 
 

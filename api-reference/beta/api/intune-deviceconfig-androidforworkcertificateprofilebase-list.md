@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba066ab8fc3cbf8d7d0088b888dc9743b2f84fe1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e1f53e9ce477481fcf9e0ebc7a76e0120e587a0b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733095"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49239694"
 ---
 # <a name="list-androidforworkcertificateprofilebases"></a>Listar androidForWorkCertificateProfileBases
 
@@ -119,7 +119,6 @@ Content-Length: 1832
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3d022abeb8948ea69982e7d7be11ddb640728ea
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d0cc2339369ba6b95eb621965db25836f1e99971
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695821"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49243569"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>Atualizar termsAndConditionsGroupAssignment
 
@@ -89,7 +89,6 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

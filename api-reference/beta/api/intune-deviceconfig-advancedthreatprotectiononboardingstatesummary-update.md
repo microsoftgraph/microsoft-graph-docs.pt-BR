@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3206b09b99ba7275d800f8be6a0a8d0023306b5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fae7dcf59abf7edd512924551ee57265e6838e89
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685293"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49243299"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>Atualizar Navegaçãoadvancedthreatprotectiononboardingstatesummary
 
@@ -110,7 +110,6 @@ Content-Length: 380
   "notAssignedDeviceCount": 6
 }
 ```
-
 
 
 

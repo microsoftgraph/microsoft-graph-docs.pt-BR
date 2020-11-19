@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b8d98cc965e15578fe825800deac98ec8239a58
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: db4047710a375f37c4b1ba2e27997bfc34f4d72b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698964"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49243559"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>Listar termsAndConditionsGroupAssignments
 
@@ -77,7 +77,6 @@ Content-Length: 214
   ]
 }
 ```
-
 
 
 

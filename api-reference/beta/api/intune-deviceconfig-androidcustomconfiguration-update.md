@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bf35bfeb7be41bed40b2b3f9bc86993eb771a1c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 34a79ea575e64248d49ebb7e0985f7d129dbdf3b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731873"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49242963"
 ---
 # <a name="update-androidcustomconfiguration"></a>Atualizar androidCustomConfiguration
 
@@ -80,7 +80,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1241
+Content-length: 1269
 
 {
   "@odata.type": "#microsoft.graph.androidCustomConfiguration",
@@ -117,7 +117,8 @@ Content-length: 1241
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
@@ -128,7 +129,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1413
+Content-Length: 1441
 
 {
   "@odata.type": "#microsoft.graph.androidCustomConfiguration",
@@ -168,12 +169,12 @@ Content-Length: 1413
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
 ```
-
 
 
 

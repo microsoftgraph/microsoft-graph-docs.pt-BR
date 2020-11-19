@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a30e28838e28a1ee5e4352c58fe25db203b7d66
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9fb967aa0a60e6c1e7414d744b9e38d6edc9a551
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731327"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49238980"
 ---
 # <a name="delete-androidforworkgmaileasconfiguration"></a>Excluir androidForWorkGmailEasConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

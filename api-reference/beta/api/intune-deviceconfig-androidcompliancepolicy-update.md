@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d28f4148a40ae39c04e3661fd5ae878d21a68225
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 098827ee5e9b0d344d18e922f0b5ea6933e6994e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733109"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49243124"
 ---
 # <a name="update-androidcompliancepolicy"></a>Atualizar androidCompliancePolicy
 
@@ -203,7 +203,6 @@ Content-Length: 1922
   ]
 }
 ```
-
 
 
 

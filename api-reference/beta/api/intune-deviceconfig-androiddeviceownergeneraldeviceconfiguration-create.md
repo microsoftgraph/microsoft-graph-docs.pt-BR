@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6d880971d86029d1a18001b2eafd6459d15d156
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 06e2bae6e729fa76fef88be33b30b5de0c6cb4fa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731342"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49240933"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>Criar androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -91,6 +91,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica em configurações está desabilitada.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|O proxy é configurado diretamente com hosts, porta e hosts excluídos.|
 |googleAccountsBlocked|Booliano|Indica se as contas do Google serão bloqueadas ou não.|
+|kioskCustomizationDeviceSettingsBlocked|Booliano|Indica se um usuário pode acessar o aplicativo de configurações do dispositivo no modo quiosque.|
+|kioskCustomizationPowerButtonActionsBlocked|Booliano|Se o menu de energia é mostrado quando um usuário pressiona o botão de energia de um dispositivo no modo quiosque.|
+|kioskCustomizationStatusBar|[androidDeviceOwnerKioskCustomizationStatusBar](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md)|Indica se as informações e as notificações do sistema estão desabilitadas no modo quiosque. Os valores possíveis são: `notConfigured`, `notificationsAndSystemInfoEnabled`, `systemInfoOnly`.|
+|kioskCustomizationSystemErrorWarnings|Booliano|Indica se as caixas de diálogo de erro do sistema para aplicativos que falharam ou não respondem são mostradas no modo quiosque.|
+|kioskCustomizationSystemNavigation|[androidDeviceOwnerKioskCustomizationSystemNavigation](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md)|Indica quais recursos de navegação estão habilitados no modo quiosque. Os valores possíveis são: `notConfigured`, `navigationEnabled`, `homeButtonOnly`.|
 |kioskModeScreenSaverConfigurationEnabled|Booliano|Se o modo de proteção de tela deve ou não ser habilitado ou não no modo quiosque.|
 |kioskModeScreenSaverImageUrl|String|URL de uma imagem que será a proteção de tela do dispositivo no modo quiosque.|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|O número de segundos que o dispositivo exibirá a proteção de tela no modo quiosque. Valores válidos de 0 a 9999999|
@@ -178,7 +183,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6096
+Content-length: 6387
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -241,6 +246,11 @@ Content-length: 6096
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
   "googleAccountsBlocked": true,
+  "kioskCustomizationDeviceSettingsBlocked": true,
+  "kioskCustomizationPowerButtonActionsBlocked": true,
+  "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+  "kioskCustomizationSystemErrorWarnings": true,
+  "kioskCustomizationSystemNavigation": "navigationEnabled",
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -337,7 +347,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6268
+Content-Length: 6559
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -403,6 +413,11 @@ Content-Length: 6268
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
   "googleAccountsBlocked": true,
+  "kioskCustomizationDeviceSettingsBlocked": true,
+  "kioskCustomizationPowerButtonActionsBlocked": true,
+  "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+  "kioskCustomizationSystemErrorWarnings": true,
+  "kioskCustomizationSystemNavigation": "navigationEnabled",
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -493,7 +508,6 @@ Content-Length: 6268
   "workProfilePasswordRequiredType": "required"
 }
 ```
-
 
 
 

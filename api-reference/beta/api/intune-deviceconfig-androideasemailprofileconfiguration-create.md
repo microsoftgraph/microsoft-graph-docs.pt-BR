@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c321ac3512a5773ad05de8105783d6c5493fa324
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 43f47908bea42e2e29e06ad126ee3bcf553ffe1c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726938"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49239981"
 ---
 # <a name="create-androideasemailprofileconfiguration"></a>Criar androidEasEmailProfileConfiguration
 
@@ -200,7 +200,6 @@ Content-Length: 1738
   "customDomainName": "Custom Domain Name value"
 }
 ```
-
 
 
 

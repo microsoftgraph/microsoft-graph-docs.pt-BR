@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c1977bbc41c671355c661b93191b8525209b3a2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 83ff0effcf19163b35826ad698ed81dddd920a05
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703409"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49239050"
 ---
 # <a name="list-androidforworkgeneraldeviceconfigurations"></a>Listar androidForWorkGeneralDeviceConfigurations
 
@@ -149,7 +149,6 @@ Content-Length: 3580
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 713cb4c90febd6749d9c3be630449d24584411fa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4ce21f5fcca09aa1d00ee1b6c745c5c2db833411
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732306"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49242893"
 ---
 # <a name="create-androiddeviceownercompliancepolicy"></a>Criar androidDeviceOwnerCompliancePolicy
 
@@ -169,7 +169,6 @@ Content-Length: 1395
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

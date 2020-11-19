@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ae755a3063e414f706d2d0dc4d99d6b682d0bbf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4884d8593dcfc097f2ef6194ec38fb8ccb0e0bda
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733934"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49242725"
 ---
 # <a name="create-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>Criar androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 
@@ -155,7 +155,6 @@ Content-Length: 1237
   "version": 7
 }
 ```
-
 
 
 

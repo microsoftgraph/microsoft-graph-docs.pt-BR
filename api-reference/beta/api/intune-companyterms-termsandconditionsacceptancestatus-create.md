@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db514c3dad485cfeb4f63d923a83d86b34a55e70
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3709661d111f2aa21b6d75ef94939710db1cde20
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690123"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49243944"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Criar termsAndConditionsAcceptanceStatus
 
@@ -98,7 +98,6 @@ Content-Length: 313
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 
