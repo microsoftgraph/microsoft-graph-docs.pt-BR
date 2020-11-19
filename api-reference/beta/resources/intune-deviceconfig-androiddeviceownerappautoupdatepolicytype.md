@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 41ff774e30342b12e7ba8de8d1583039565c2540
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f7eb22977f571d0e15e8d9cd20f3ee02e52faff7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691453"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216735"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>tipo de enumeração androidDeviceOwnerAppAutoUpdatePolicyType
 
@@ -30,7 +30,6 @@ Proprietário do dispositivo Android valores possíveis para Estados da polític
 |Édito|duas|Os aplicativos nunca são atualizados automaticamente.|
 |wiFiOnly|3D|Os aplicativos são atualizados automaticamente através do Wi-Fi.|
 |permanente|4 |Os aplicativos são atualizados automaticamente a qualquer momento. Tarifas de dados podem ser aplicadas.|
-
 
 
 

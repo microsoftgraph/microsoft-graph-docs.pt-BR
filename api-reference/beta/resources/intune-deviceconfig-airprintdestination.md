@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e457cf44b5a73f14dfd87fd69f2b9e27cef08c3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 633bbd4ae2bf9e1347c93322912cc46bbd86d907
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731936"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216805"
 ---
 # <a name="airprintdestination-resource-type"></a>tipo de recurso airPrintDestination
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "forceTls": true
 }
 ```
-
 
 
 

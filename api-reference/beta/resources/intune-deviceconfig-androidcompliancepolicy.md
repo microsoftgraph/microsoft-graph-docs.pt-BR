@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4608973296fd6b108cc9bc9c7b5df4fbb56cc612
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 55eac7a9f4ff50dd921703af541594e26fe505f2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691474"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216756"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>androidCompliancePolicy resource type
 
@@ -59,7 +59,7 @@ Herda de [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepol
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP requer nível mínimo de risco de proteção contra ameaças móveis para relatar não conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Os dispositivos não devem ser violados ou com modificações root.|
-|securityBlockDeviceAdministratorManagedDevices|Boolean|Bloquear dispositivos gerenciados pelo administrador de dispositivos.|
+|securityBlockDeviceAdministratorManagedDevices|Booliano|Bloquear dispositivos gerenciados pelo administrador de dispositivos.|
 |osMinimumVersion|String|Versão mínima do Android.|
 |osMaximumVersion|String|Versão máxima do Android.|
 |minAndroidSecurityPatchLevel|String|Nível mínimo de patch de segurança Android.|
@@ -140,7 +140,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

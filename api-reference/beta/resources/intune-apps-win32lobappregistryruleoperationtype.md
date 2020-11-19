@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e4760a908e2aea8d4a3e175d3c510af13f580ef5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1dd3dc1b37b155aba1b366aa557fdee6d1491ef4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706195"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217077"
 ---
 # <a name="win32lobappregistryruleoperationtype-enum-type"></a>tipo de enumeração win32LobAppRegistryRuleOperationType
 
@@ -28,10 +28,9 @@ Contém todo o tipo de detecção de dados de registro com suporte.
 |notConfigured|,0|Não configurado.|
 |houver|1|A chave ou o valor do registro especificado existe.|
 |doesNotExist|duas|A chave ou o valor do registro especificado não existe.|
-|cadeia de caracteres|3D|Tipo de valor de cadeia de caracteres.|
+|string|3D|Tipo de valor de cadeia de caracteres.|
 |inteiro|4 |Tipo de valor inteiro.|
 |versão|5 |Tipo de valor de versão.|
-
 
 
 

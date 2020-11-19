@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d4b29f3e60efef15232eccc66bdd2df752a7919
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 35f7f36eb5945bba36fdd03a4ee2fe3b798c6e01
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731952"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216952"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>tipo de enumeração advancedBitLockerState
 
@@ -42,7 +42,6 @@ Estado do BitLocker avançado
 |tpmNotAvailable|8192|O TPM não está disponível para o BitLocker. Isso significa que o TPM não está presente, ou a substituição do registro não disponível do TPM está definida ou o sistema operacional do host está na unidade de capacidade portátil/Roma|
 |tpmNotReady|16384|O TPM não está pronto para o BitLocker|
 |networkError|32768|Rede não disponível. Isso é necessário para o backup da chave de recuperação. Isso é reportado para dispositivos compatíveis com criptografia de unidade|
-
 
 
 

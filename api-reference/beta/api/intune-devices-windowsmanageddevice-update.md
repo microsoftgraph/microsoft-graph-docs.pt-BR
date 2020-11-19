@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9964304f08a5013c8e03c80c8e79fb44e5e89ca
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 47f21dfeb3f1c88c681f25bb658d319739377880
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708176"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49218772"
 ---
 # <a name="update-windowsmanageddevice"></a>Atualizar windowsManagedDevice
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -71,7 +71,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |lastSyncDateTime|DateTimeOffset|A data e a hora da última vez em que o dispositivo concluiu uma sincronização bem-sucedida com o Intune. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Tipo de chassi do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Sistema operacional do dispositivo. Windows, iOS, etc. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Plataforma do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são:,,,,,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` , `androidForWork` , `androidEnterprise` , `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` `unknown` ,,,,,.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Plataforma do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são:,,,,,,,,,,,,,,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` , `androidForWork` , `androidEnterprise` , `windows10x` `androidnGMS` `blackberry` `palm` `unknown` `cloudPC` ,,,,,.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Estado de conformidade do dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|se o dispositivo está desbloqueado ou modificado. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
@@ -117,8 +117,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |retireAfterDateTime|DateTimeOffset|Indica o horário após o momento em que um dispositivo será desativado automaticamente devido à ação agendada. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |usersLoggedOn|coleção [loggedOnUser](../resources/intune-devices-loggedonuser.md)|Indica o último usuário conectado de um dispositivo. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reporta o DateTime que a configuração preferMdmOverGroupPolicy foi definida.  Quando definido, as configurações do MDM do Intune substituirão as configurações da política de grupo, se houver um conflito. Somente leitura. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Boolean|Relata se o dispositivo gerenciado está inscrito via piloto automático. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Boolean|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Booliano|Relata se o dispositivo gerenciado está inscrito via piloto automático. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Booliano|Relata se o dispositivo iOS gerenciado é o registro de aprovação do usuário. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Relata a data de validade do certificado de gerenciamento de dispositivos. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|Identificador de cartão de circuito integrado, é o número de identificação exclusivo de um cartão SIM. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|Identificador de dispositivo exclusivo para dispositivos iOS e macOS. Essa propriedade é somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -536,7 +536,6 @@ Content-Length: 8164
   "managementFeatures": "microsoftManagedDesktop"
 }
 ```
-
 
 
 

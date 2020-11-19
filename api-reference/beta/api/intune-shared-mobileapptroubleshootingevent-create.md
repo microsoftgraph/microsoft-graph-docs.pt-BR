@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 271e5b9b88608a89cf6ec0df9f4d7376757ba6c2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3ba86467fc6b968fef5eadde48886b227772d352
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694281"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217505"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Criar mobileAppTroubleshootingEvent
 
@@ -27,12 +27,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
-|&nbsp; &nbsp; **Gerenciamento de dispositivo**|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)||
+|&nbsp;&nbsp; **Gerenciamento de dispositivos**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Solução de problemas**|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
-|&nbsp; &nbsp; **Gerenciamento de dispositivo**|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
+|&nbsp;&nbsp; **Gerenciamento de dispositivos**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Solução de problemas**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -99,7 +99,6 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
 
 
 

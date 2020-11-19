@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2c411fb60a7a33fce27b17128fe84081ff0f324
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1e4d6e72dd7844980dbe41c88844de66e6043401
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732803"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219276"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Criar deviceManagementScriptGroupAssignment
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -91,7 +91,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

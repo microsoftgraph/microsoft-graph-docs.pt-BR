@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e8185277788eb65742935669c72e779056b1f0b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fd46f9fd298cc5ce8d30d824e47bac819d81b383
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691971"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219801"
 ---
 # <a name="list-windows10customconfigurations"></a>Listar windows10CustomConfigurations
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1608
+Content-Length: 1640
 
 {
   "value": [
@@ -108,14 +108,14 @@ Content-Length: 1608
           "@odata.type": "microsoft.graph.omaSetting",
           "displayName": "Display Name value",
           "description": "Description value",
-          "omaUri": "Oma Uri value"
+          "omaUri": "Oma Uri value",
+          "isEncrypted": true
         }
       ]
     }
   ]
 }
 ```
-
 
 
 

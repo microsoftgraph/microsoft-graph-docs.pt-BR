@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2bdc14c1d9e65d32e664318d894e11bd08d56320
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1e63bdfce275b83587557304f79a8490eb45a68c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48719705"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217127"
 ---
 # <a name="mobileappsupersedence-resource-type"></a>tipo de recurso mobileAppSupersedence
 
@@ -40,6 +40,8 @@ Herda de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.
 |id|String|A ID da entidade de relação. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|A ID de aplicativo do aplicativo móvel de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|String|O nome de exibição do aplicativo móvel de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|A versão de exibição do aplicativo móvel de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|O fornecedor do aplicativo móvel de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|O tipo de relação que indica se o destino é um pai ou filho. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Os valores possíveis são: `child` e `parent`.|
 |supersedenceType|[mobileAppSupersedenceType](../resources/intune-apps-mobileappsupersedencetype.md)|O tipo de relação de substituição entre os aplicativos pai e filho. Os valores possíveis são: `update` e `replace`.|
 |supersededAppCount|Int32|O número total de aplicativos diretamente ou indiretamente substituídos pelo aplicativo filho.|
@@ -62,13 +64,14 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "targetId": "String",
   "targetDisplayName": "String",
+  "targetDisplayVersion": "String",
+  "targetPublisher": "String",
   "targetType": "String",
   "supersedenceType": "String",
   "supersededAppCount": 1024,
   "supersedingAppCount": 1024
 }
 ```
-
 
 
 

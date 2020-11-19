@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6b63e8e9cc94558f7e34af6b69b71b36efc05d7d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4f78a58a5ef3d991c38121d5978897ea53cf5e4e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731950"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216994"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -200,6 +200,7 @@ Namespace: microsoft.graph
 - [Modelo de mensagem de notificação](intune-notification-notificationmessagetemplate.md)
 - [Opções de identidade visual do modelo de notificação](intune-notification-notificationtemplatebrandingoptions.md)
 - [Contagem de versões do SO](intune-devices-osversioncount.md)
+- [Tipo de plataforma](intune-esim-platformtype.md)
 - [Estado de correção](intune-devices-remediationstate.md)
 - [Ação remota](intune-devices-remoteaction.md)
 - [Auditoria de ação remota](intune-devices-remoteactionaudit.md)
@@ -250,6 +251,7 @@ Namespace: microsoft.graph
 - [Expressões de condição de gerenciamento variável](intune-fencing-variablemanagementconditionexpression.md)
 - [Estado de implantação do piloto automático do Windows](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Tipo de registro do Windows AutoPilot](intune-troubleshooting-windowsautopilotenrollmenttype.md)
+- [Status do produto Windows Defender](intune-devices-windowsdefenderproductstatus.md)
 - [Resultado da ação de verificação do Windows Defender](intune-devices-windowsdefenderscanactionresult.md)
 - [Conta do dispositivo Windows](intune-devices-windowsdeviceaccount.md)
 - [Conta do AD de dispositivo Windows](intune-devices-windowsdeviceadaccount.md)

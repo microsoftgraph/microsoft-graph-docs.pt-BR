@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efbec3d5d89524900ab9c5b597a1fc82a41c9f46
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 482c81130e0a6e959f11e29e93cff9885f50c4eb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704396"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49220011"
 ---
 # <a name="create-macoscompliancepolicy"></a>Criar macOSCompliancePolicy
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -77,9 +77,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSComplianceP
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Mac OS.|
 |gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Configuração de sistema e privacidade que determina quais locais de download os aplicativos podem ser executados em um dispositivo macOS. Os valores possíveis são: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|firewallEnabled|Boolean|Se o firewall deve ser habilitado ou não.|
-|firewallBlockAllIncoming|Boolean|Corresponde à opção "bloquear todas as conexões de entrada".|
-|firewallEnableStealthMode|Boolean|Corresponde a "Habilitar modo oculto".|
+|firewallEnabled|Booliano|Se o firewall deve ser habilitado ou não.|
+|firewallBlockAllIncoming|Booliano|Corresponde à opção "bloquear todas as conexões de entrada".|
+|firewallEnableStealthMode|Booliano|Corresponde a "Habilitar modo oculto".|
 
 
 
@@ -166,7 +166,6 @@ Content-Length: 1255
   "firewallEnableStealthMode": true
 }
 ```
-
 
 
 

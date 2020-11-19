@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6087a688102e9577fe24ae3d3eb4cd3c70768aee
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4ba6fffe8cead123148fb2fb6c57788faecda15e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727488"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217064"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -44,6 +44,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração automática de proxy global de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Proxy global do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Perfil de certificado PFX importado do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
+- [Barra de status de personalização do quiosque de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md)
+- [Navegação do sistema de personalização do quiosque de proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md)
 - [Ícone de pasta do modo de quiosque do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)
 - [Tamanho do ícone do modo de quiosque do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)
 - [Orientação de tela do modo de quiosque do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)
@@ -136,11 +138,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Política da unidade de sistema do BitLocker](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Configuração de sincronização do navegador](intune-deviceconfig-browsersyncsetting.md)
 - [Associação de carrinho à sala](intune-deviceconfig-carttoclassassociation.md)
-- [Armazenamento de destino de certificados](intune-deviceconfig-certificatedestinationstore.md)
 - [Estados de emissão de certificados](intune-deviceconfig-certificateissuancestates.md)
 - [Status de revogação de certificados](intune-deviceconfig-certificaterevocationstatus.md)
-- [Repositório de certificados](intune-deviceconfig-certificatestore.md)
-- [Escala de período de validade do certificado](intune-deviceconfig-certificatevalidityperiodscale.md)
 - [Alterar a permissão de configurações de UEFI](intune-deviceconfig-changeuefisettingspermission.md)
 - [Código](intune-deviceconfig-code.md)
 - [Uso de configurações](intune-deviceconfig-configurationusage.md)
@@ -247,7 +246,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Estado de preparação de criptografia](intune-deviceconfig-encryptionreadinessstate.md)
 - [Detalhes de política de relatório de criptografia](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [Estado de criptografia](intune-deviceconfig-encryptionstate.md)
-- [Uso estendido de chave](intune-deviceconfig-extendedkeyusage.md)
 - [Estado do cofre de arquivos](intune-deviceconfig-filevaultstate.md)
 - [Tipo de método de verificação da lista de revogação de certificados do firewall](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [Tipo de método de enfileiramento de pacotes do firewall](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
@@ -289,7 +287,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Política de grupo carregou o status do arquivo de definição](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
 - [Política de grupo carregou o arquivo de idioma](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
 - [Apresentação de política de grupo carregada](intune-grouppolicy-grouppolicyuploadedpresentation.md)
-- [Algoritmos hash](intune-deviceconfig-hashalgorithms.md)
 - [Configuração de acesso à tinta](intune-deviceconfig-inkaccesssetting.md)
 - [Finalidade pretendida](intune-deviceconfig-intendedpurpose.md)
 - [Configuração de mensagem do Internet Explorer](intune-deviceconfig-internetexplorermessagesetting.md)
@@ -320,6 +317,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [tipo de aplicativo modo quiosque do iOS](intune-deviceconfig-ioskioskmodeapptype.md)
 - [Regras de uso de rede do iOS](intune-deviceconfig-iosnetworkusagerule.md)
 - [Tipo de alerta de notificação do iOS](intune-deviceconfig-iosnotificationalerttype.md)
+- [visibilidade da visualização da notificação do iOS](intune-deviceconfig-iosnotificationpreviewvisibility.md)
 - [Configurações de notificação do iOS](intune-deviceconfig-iosnotificationsettings.md)
 - [Perfil de certificado de PKCS do iOS](intune-deviceconfig-iospkcscertificateprofile.md)
 - [extensão de logon único de redirecionamento de iOS](intune-deviceconfig-iosredirectsinglesignonextension.md)
@@ -343,11 +341,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Par de valores booleanos principais](intune-deviceconfig-keybooleanvaluepair.md)
 - [Par principal de valor inteiro](intune-deviceconfig-keyintegervaluepair.md)
 - [Par chave real de valor](intune-deviceconfig-keyrealvaluepair.md)
-- [Tamanho da chave](intune-deviceconfig-keysize.md)
-- [Opção de provedor de armazenamento de chaves](intune-deviceconfig-keystorageprovideroption.md)
 - [Par de valores de cadeia de caracteres de chave](intune-deviceconfig-keystringvaluepair.md)
 - [Par de valores digitados por chave](intune-deviceconfig-keytypedvaluepair.md)
-- [Usos de chave](intune-deviceconfig-keyusages.md)
 - [Valor da chave](intune-deviceconfig-keyvalue.md)
 - [Nível de autenticação do LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Tipo de comportamento da solicitação de elevação do administrador de opções de segurança local](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
@@ -437,7 +432,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Cadeia xml de configuração de OMA](intune-deviceconfig-omasettingstringxml.md)
 - [Carga de criptografia local](intune-raimportcerts-onpremencryptedpayload.md)
 - [Intervalo de versão do sistema operacional](intune-deviceconfig-operatingsystemversionrange.md)
-- [Operator](intune-deviceconfig-operator.md)
+- [Operador](intune-deviceconfig-operator.md)
 - [Grupo de sigilo de encaminhamento perfeito](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Solicitação de recript de pfx](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Certificado de usuário pfx](intune-raimportcerts-pfxusercertificate.md)
@@ -484,7 +479,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Resumo do status de atualização do software](intune-deviceconfig-softwareupdatestatussummary.md)
 - [Plugins de rede prisioneiros especificados](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [Configuração de gerenciamento de estado](intune-deviceconfig-statemanagementsetting.md)
-- [Tipo de nome alternativo da entidade](intune-deviceconfig-subjectalternativenametype.md)
 - [Formato de nome da entidade](intune-deviceconfig-subjectnameformat.md)
 - [Configuração do dispositivo sem suporte](intune-deviceconfig-unsupporteddeviceconfiguration.md)
 - [Detalhes da configuração do dispositivo sem suporte](intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)
@@ -520,6 +514,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Cronograma semanal](intune-deviceconfig-weeklyschedule.md)
 - [Informações da reunião na tela de boas-vindas](intune-deviceconfig-welcomescreenmeetinginformation.md)
 - [Método de autenticação do Wi-Fi](intune-deviceconfig-wifiauthenticationmethod.md)
+- [Tipo de autenticação Wi-Fi](intune-deviceconfig-wifiauthenticationtype.md)
 - [Configuração de proxy do Wi-Fi](intune-deviceconfig-wifiproxysetting.md)
 - [Tipo de segurança do Wi-Fi](intune-deviceconfig-wifisecuritytype.md)
 - [Tipo de aplicativo do Windows 10](intune-deviceconfig-windows10apptype.md)

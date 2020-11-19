@@ -5,12 +5,12 @@ author: SarahBar
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d9469dd25dfa8aba7443b7304b4ddd31ea1b7173
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82093afe35ec5c89158d72c2d3ce80d82770419b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049804"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217281"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 
@@ -32,14 +32,14 @@ Representa os itens de auditoria de diretório e sua coleção.
 | Propriedade            | Tipo                                                | Descrição                                                                                                                                                                                                                                                            |
 |:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | activityDateTime    | DateTimeOffset                                      | Indica a data e hora que a atividade foi executada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`                                                                              |
-| activityDisplayName | Cadeia de caracteres                                              | Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades registradas, veja [lista de atividades do Azure Ad](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
+| activityDisplayName | Cadeia de caracteres                                              | Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades registradas, consulte [lista de atividades do Azure ad](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
 | additionalDetails   | Coleção [KeyValue](keyvalue.md)                  | Indica detalhes adicionais sobre a atividade.                                                                                                                                                                                                                          |
 | category            | Cadeia de caracteres                                              | Indica qual categoria de recurso direcionada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)                                                                                                                                              |
 | correlationId       | GUID                                                | Indica uma ID exclusiva que ajuda correlacionar atividades que englobam vários serviços. Pode ser usado para os logs de serviços de rastreamento.                                                                                                                                    |
 | id                  | Cadeia de caracteres                                              | Indica que a ID exclusiva para a atividade. Este é um GUID.                                                                                                                                                                                                              |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Indica que informações sobre o usuário ou o aplicativo iniciou a atividade.                                                                                                                                                                                                    |
 | loggedByService     | Cadeia de caracteres                                              | Indica informação em que o serviço iniciou a atividade (por exemplo: gerenciamento de senha de autoatendimento, principais diretório, B2C, os usuários convidados, Microsoft Identity Manager, Privileged Identity Management.                                                          |
-| resultado              | cadeia de caracteres                                              | Indica o resultado da atividade. Valores possíveis são: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
+| resultado              | cadeia de caracteres                                              | Indica o resultado da atividade. Os valores possíveis são: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
 | resultReason        | Cadeia de caracteres                                              | Indica o motivo da falha se o resultado é "tempo esgotado" ou "Falha".                                                                                                                                                                                              |
 | targetResources     | [targetResource](targetresource.md) conjunto      | Indica informação que o recurso foi alterado devido a atividade. Tipo de recurso de destino pode ser usuário, dispositivo, diretório, aplicativos, função, grupo, política ou outros.                                                                                                       |
 
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "resultReason": "String",
   "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c6143147e84112fe4c83c620cddca3cfe1547bf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 22af70876075aa12b5493cfa413c79bd2c71c7cf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48719721"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217190"
 ---
 # <a name="mobileapprelationship-resource-type"></a>tipo de recurso mobileAppRelationship
 
@@ -34,6 +34,8 @@ Descreve uma relação entre dois aplicativos móveis.
 |id|String|A ID da entidade de relação.|
 |targetId|String|A ID de aplicativo do aplicativo móvel de destino.|
 |targetDisplayName|String|O nome de exibição do aplicativo móvel de destino.|
+|targetDisplayVersion|String|A versão de exibição do aplicativo móvel de destino.|
+|targetPublisher|String|O fornecedor do aplicativo móvel de destino.|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|O tipo de relação que indica se o destino é um pai ou filho. Os valores possíveis são: `child`, `parent`.|
 
 ## <a name="relationships"></a>Relações
@@ -53,10 +55,11 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "targetId": "String",
   "targetDisplayName": "String",
+  "targetDisplayVersion": "String",
+  "targetPublisher": "String",
   "targetType": "String"
 }
 ```
-
 
 
 
