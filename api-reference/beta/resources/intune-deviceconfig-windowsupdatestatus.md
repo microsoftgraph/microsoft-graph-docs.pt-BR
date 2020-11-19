@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0151a572011f9033ae7b622e5d3cf2bfd086ed39
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3a09aca9ce1ac4cd81e09b8db8da10ea563f1f03
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706930"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272364"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>tipo de enumeração windowsUpdateStatus
 
@@ -29,7 +29,6 @@ Estados do dispositivo de configuração do Windows Update para empresas
 |pendingInstallation|1|Há atualizações com instalação pendente que inclui atualizações que não foram aprovadas. Não há atualizações de reinicialização pendentes, não há atualizações com falha.|
 |pendingReboot|duas|Há atualizações que exigem reinicialização. Não há atualizações com falha.|
 |falhou|3D|Há atualizações que não puderam ser instaladas no dispositivo.|
-
 
 
 

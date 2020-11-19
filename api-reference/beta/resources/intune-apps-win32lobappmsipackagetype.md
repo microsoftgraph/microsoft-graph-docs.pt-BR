@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c86555aec7bb4a459e541de7d33a64230ddef99
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9e0bc3ea7dbe54be24c492685d23ff7466c0dc9a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707910"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273988"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>tipo de enumeração win32LobAppMsiPackageType
 
@@ -28,7 +28,6 @@ Indica o tipo de pacote de um Win32LobApp MSI.
 |permachine|,0|Indica um pacote de aplicativo por máquina.|
 |perUser|1|Indica um pacote de aplicativo por usuário.|
 |dualPurpose|duas|Indica um pacote de aplicativos de uso duplo.|
-
 
 
 

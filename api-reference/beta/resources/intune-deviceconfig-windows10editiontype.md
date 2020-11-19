@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3f349e5ea619a8a1c2f793e6874d37cf80c21357
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 102c8181e008be2c9578b9d17a0de7890b4695b9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693763"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272882"
 ---
 # <a name="windows10editiontype-enum-type"></a>tipo de enumeração windows10EditionType
 
@@ -36,7 +36,7 @@ Tipo Windows 10 Edition.
 |windows10ProfessionalEducation|8 |Windows 10 Professional Education|
 |windows10ProfessionalEducationN|9 |Windows 10 Professional Educan|
 |windows10ProfessionalWorkstation|10 |Windows 10 Professional para estações de trabalho|
-|windows10ProfessionalWorkstationN|11|Windows 10 Professional para estações de trabalho N|
+|windows10ProfessionalWorkstationN|11 |Windows 10 Professional para estações de trabalho N|
 |notConfigured|12 |NotConfigured|
 |windows10Home|13 |Página inicial do Windows 10|
 |windows10HomeChina|14 |Windows 10 Home da China|
@@ -45,7 +45,6 @@ Tipo Windows 10 Edition.
 |windows10Mobile|17 |Windows 10 Mobile|
 |windows10IoTCore|18 |Windows 10 IoT Core|
 |windows10IoTCoreCommercial|19|Comercial do Windows 10 IoT Core|
-
 
 
 

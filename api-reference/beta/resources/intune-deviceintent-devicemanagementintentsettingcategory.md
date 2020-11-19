@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ec8d589ba3292c5995c123d162aa4015f48961f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 84eaa000bade2b09774d79ce8d4570fb397cd649
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732492"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275703"
 ---
 # <a name="devicemanagementintentsettingcategory-resource-type"></a>tipo de recurso deviceManagementIntentSettingCategory
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

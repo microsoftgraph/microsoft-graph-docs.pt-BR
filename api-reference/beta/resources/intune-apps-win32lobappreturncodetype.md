@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: de592a216d4b602fbf1bce1917724abe602a41bf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e4432d6fde5336f7cc34c11bfd70311ce3946ee4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706125"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273890"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>tipo de enumeração win32LobAppReturnCodeType
 
@@ -29,8 +29,7 @@ Indica o tipo de código de retorno.
 |sucesso|1|Sucesso.|
 |softReboot|duas|Soft-a reinicialização é necessária.|
 |hardReboot|3D|É necessário reinicializar o disco rígido.|
-|Nova|4 |Tente novamente.|
-
+|Nova|4 |Repetir.|
 
 
 

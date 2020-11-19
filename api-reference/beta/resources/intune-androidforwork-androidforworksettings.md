@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fbc10433448d4df871d35528dc101e0f9960f710
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ac3d61a16715e86b5aa161ef4e0731c1990a1705
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736293"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274429"
 ---
 # <a name="androidforworksettings-resource-type"></a>Tipo de recurso androidForWorkSettings
 
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceOwnerManagementEnabled": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a115a456aa1cdc560bede617183d330a453f11d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6a13cea879af748ab47553fecb3d4bfb77fb620e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730655"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273750"
 ---
 # <a name="androidworkprofilevpnconfiguration-resource-type"></a>tipo de recurso androidWorkProfileVpnConfiguration
 
@@ -169,7 +169,6 @@ Veja a seguir uma representação JSON do recurso.
   "microsoftTunnelSiteId": "String"
 }
 ```
-
 
 
 

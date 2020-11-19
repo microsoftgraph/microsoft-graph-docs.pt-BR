@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 17db5f26634691eef6dba3d93f4e43acd3faac37
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 22ae1004a3f22d96ec6c7bd7f4da7d6d8763f55a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701624"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274415"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -78,6 +78,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Livro eletrônico do VPP do iOS](intune-books-iosvppebook.md)
 - [Atribuição de livros eletrônicos do VPP do iOS](intune-books-iosvppebookassignment.md)
 - [Aplicativo LOB para macOS](intune-apps-macoslobapp.md)
+- [configurações de atribuição de aplicativo de LOB do macOS](intune-apps-macoslobappassignmentsettings.md)
 - [Aplicativo filho macOS LOB](intune-apps-macoslobchildapp.md)
 - [aplicativo macOS mdatp](intune-apps-macosmdatpapp.md)
 - [aplicativo macOS Microsoft Edge](intune-apps-macosmicrosoftedgeapp.md)

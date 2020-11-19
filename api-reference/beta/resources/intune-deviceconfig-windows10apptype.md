@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 111573651526ab7aa73be62ba730bed3df6adf92
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4f3ff0558cef39deb5d29199dc6c0ffb9da44693
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732506"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272999"
 ---
 # <a name="windows10apptype-enum-type"></a>tipo de enumeração windows10AppType
 
@@ -27,7 +27,6 @@ Tipo de aplicativo do Windows 10.
 |:---|:---|:---|
 |placa|,0|Placa.|
 |UTC|1|UTC.|
-
 
 
 

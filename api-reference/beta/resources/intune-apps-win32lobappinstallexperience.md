@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 345a299b97389fe686f54183ab553c4a518d3940
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e704b4e9f91ffdee0dbc5397e05c78afe650eee1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707924"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274009"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>tipo de recurso win32LobAppInstallExperience
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceRestartBehavior": "String"
 }
 ```
-
 
 
 

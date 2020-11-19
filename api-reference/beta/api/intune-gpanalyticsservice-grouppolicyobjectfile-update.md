@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b266b110a0512539018815c0bf4f3cd33700fb3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f03314e42386f3ae0371c13a7bcae17a0e39681d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692993"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274996"
 ---
 # <a name="update-grouppolicyobjectfile"></a>Atualizar groupPolicyObjectFile
 
@@ -99,7 +99,6 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
-
 
 
 

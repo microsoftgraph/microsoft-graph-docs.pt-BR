@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d07187a6a98ac53e0338fc30432e7f20ee9596ae
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b4783b2cfcaf9bb8bb9f047fb3b92d3ebc764649
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692454"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273337"
 ---
 # <a name="miracastchannel-enum-type"></a>tipo de enumeração miracastChannel
 
@@ -36,7 +36,7 @@ Valores possíveis para o canal Miracast.
 |altura|8 |Altura.|
 |nove|9 |Nove.|
 |primeiros|10 |Primeiros.|
-|11|11|11.|
+|11|11 |11.|
 |thirtySix|36|36.|
 |40|40|40.|
 |fortyFour|44|44.|
@@ -46,7 +46,6 @@ Valores possíveis para o canal Miracast.
 |oneHundredFiftySeven|157|OneHundredFifty-sete.|
 |oneHundredSixtyOne|161|OneHundredSixty-um.|
 |oneHundredSixtyFive|165|OneHundredSixty-cinco.|
-
 
 
 

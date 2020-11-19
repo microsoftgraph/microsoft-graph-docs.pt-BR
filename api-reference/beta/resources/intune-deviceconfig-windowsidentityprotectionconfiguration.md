@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 897a9de1c2edf4fb635ee8755795453d4daf7ee7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7a6c913bbd2822c09c7aeb38b746e44971cf895f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736216"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272572"
 ---
 # <a name="windowsidentityprotectionconfiguration-resource-type"></a>tipo de recurso windowsIdentityProtectionConfiguration
 
@@ -132,7 +132,6 @@ Veja a seguir uma representação JSON do recurso.
   "windowsHelloForBusinessBlocked": true
 }
 ```
-
 
 
 

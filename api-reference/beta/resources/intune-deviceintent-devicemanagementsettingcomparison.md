@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0463da79c2cedc78c5546fa86b5891468f7a4c11
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b10acc16cfb877a616dee9744daa5f0cc54b45b6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728276"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275493"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>tipo de recurso deviceManagementSettingComparison
 
@@ -53,7 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "comparisonResult": "String"
 }
 ```
-
 
 
 

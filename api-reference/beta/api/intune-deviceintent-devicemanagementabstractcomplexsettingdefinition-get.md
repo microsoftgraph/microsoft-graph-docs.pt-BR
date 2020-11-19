@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04108bcbfcc7a113e57493a17e45e6a7222909d9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 22ff2e2ee4f12844fc4294514c5354f9d45d9462
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698859"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275325"
 ---
 # <a name="get-devicemanagementabstractcomplexsettingdefinition"></a>Obter deviceManagementAbstractComplexSettingDefinition
 
@@ -116,7 +116,6 @@ Content-Length: 1232
   }
 }
 ```
-
 
 
 

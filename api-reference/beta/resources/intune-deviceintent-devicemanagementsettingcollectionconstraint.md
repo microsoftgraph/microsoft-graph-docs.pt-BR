@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 728357faea847f88ff2d943710a3cb3f6c68661d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2e97c49beae1efdb63f5a18ff7e70402e6b5c13d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728297"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275514"
 ---
 # <a name="devicemanagementsettingcollectionconstraint-resource-type"></a>tipo de recurso deviceManagementSettingCollectionConstraint
 
@@ -48,7 +48,6 @@ Veja a seguir uma representação JSON do recurso.
   "maximumLength": 1024
 }
 ```
-
 
 
 

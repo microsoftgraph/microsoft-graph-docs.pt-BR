@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22ba561f66f6c1657cefa684ffb2e365738eaab7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: beb14667118e63dca3a3d55a8c5062695670dcaf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695450"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274667"
 ---
 # <a name="list-organizations"></a>Listar organizations
 
@@ -86,7 +86,6 @@ Content-Length: 622
   ]
 }
 ```
-
 
 
 

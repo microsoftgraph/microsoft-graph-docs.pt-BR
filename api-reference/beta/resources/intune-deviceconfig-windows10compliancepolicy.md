@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b522644406e759e624c0aa151ea78b1b8a698836
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5d785d67cbac3c51ee5314ecc2bf84df79a64a77
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734011"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273008"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Tipo de recurso windows10CompliancePolicy
 
@@ -153,7 +153,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

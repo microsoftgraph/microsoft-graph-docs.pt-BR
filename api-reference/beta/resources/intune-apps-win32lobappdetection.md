@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5b230c4d044e3c45c97d5c410c6040e8de9d13b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f5125a75a269e57651d18f0952ed796422585b7e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735306"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274156"
 ---
 # <a name="win32lobappdetection-resource-type"></a>tipo de recurso win32LobAppDetection
 
@@ -41,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.win32LobAppDetection"
 }
 ```
-
 
 
 
