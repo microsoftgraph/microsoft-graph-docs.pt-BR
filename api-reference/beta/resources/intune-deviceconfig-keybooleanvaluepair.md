@@ -5,37 +5,37 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ae864f951f22f74af9fb343bd78a8cd7693eb3f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0d034eea836ed59eecfa712b80d5cadcbb01ea12
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705656"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269207"
 ---
-# <a name="keybooleanvaluepair-resource-type"></a><span data-ttu-id="49a18-103">tipo de recurso keyBooleanValuePair</span><span class="sxs-lookup"><span data-stu-id="49a18-103">keyBooleanValuePair resource type</span></span>
+# <a name="keybooleanvaluepair-resource-type"></a><span data-ttu-id="91ab4-103">tipo de recurso keyBooleanValuePair</span><span class="sxs-lookup"><span data-stu-id="91ab4-103">keyBooleanValuePair resource type</span></span>
 
-<span data-ttu-id="49a18-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49a18-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="91ab4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="91ab4-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="49a18-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="49a18-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="91ab4-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="91ab4-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="49a18-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="49a18-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="91ab4-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="91ab4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="49a18-107">Um par chave-valor com uma chave de cadeia de caracteres e um valor Boolean.</span><span class="sxs-lookup"><span data-stu-id="49a18-107">A key-value pair with a string key and a Boolean value.</span></span>
+<span data-ttu-id="91ab4-107">Um par chave-valor com uma chave de cadeia de caracteres e um valor Boolean.</span><span class="sxs-lookup"><span data-stu-id="91ab4-107">A key-value pair with a string key and a Boolean value.</span></span>
 
 
-<span data-ttu-id="49a18-108">Herda de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="49a18-108">Inherits from [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span></span>
+<span data-ttu-id="91ab4-108">Herda de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="91ab4-108">Inherits from [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="49a18-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="49a18-109">Properties</span></span>
-|<span data-ttu-id="49a18-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="49a18-110">Property</span></span>|<span data-ttu-id="49a18-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="49a18-111">Type</span></span>|<span data-ttu-id="49a18-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="49a18-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="91ab4-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="91ab4-109">Properties</span></span>
+|<span data-ttu-id="91ab4-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="91ab4-110">Property</span></span>|<span data-ttu-id="91ab4-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="91ab4-111">Type</span></span>|<span data-ttu-id="91ab4-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="91ab4-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="49a18-113">key</span><span class="sxs-lookup"><span data-stu-id="49a18-113">key</span></span>|<span data-ttu-id="49a18-114">String</span><span class="sxs-lookup"><span data-stu-id="49a18-114">String</span></span>|<span data-ttu-id="49a18-115">A chave de cadeia de caracteres do par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="49a18-115">The string key of the key-value pair.</span></span> <span data-ttu-id="49a18-116">Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="49a18-116">Inherited from [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span></span>|
-|<span data-ttu-id="49a18-117">value</span><span class="sxs-lookup"><span data-stu-id="49a18-117">value</span></span>|<span data-ttu-id="49a18-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="49a18-118">Boolean</span></span>|<span data-ttu-id="49a18-119">O valor booliano do par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="49a18-119">The Boolean value of the key-value pair.</span></span>|
+|<span data-ttu-id="91ab4-113">key</span><span class="sxs-lookup"><span data-stu-id="91ab4-113">key</span></span>|<span data-ttu-id="91ab4-114">String</span><span class="sxs-lookup"><span data-stu-id="91ab4-114">String</span></span>|<span data-ttu-id="91ab4-115">A chave de cadeia de caracteres do par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="91ab4-115">The string key of the key-value pair.</span></span> <span data-ttu-id="91ab4-116">Herdado de [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="91ab4-116">Inherited from [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span></span>|
+|<span data-ttu-id="91ab4-117">value</span><span class="sxs-lookup"><span data-stu-id="91ab4-117">value</span></span>|<span data-ttu-id="91ab4-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="91ab4-118">Boolean</span></span>|<span data-ttu-id="91ab4-119">O valor booliano do par chave-valor.</span><span class="sxs-lookup"><span data-stu-id="91ab4-119">The Boolean value of the key-value pair.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="49a18-120">Relações</span><span class="sxs-lookup"><span data-stu-id="49a18-120">Relationships</span></span>
-<span data-ttu-id="49a18-121">Nenhum</span><span class="sxs-lookup"><span data-stu-id="49a18-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="91ab4-120">Relações</span><span class="sxs-lookup"><span data-stu-id="91ab4-120">Relationships</span></span>
+<span data-ttu-id="91ab4-121">Nenhum</span><span class="sxs-lookup"><span data-stu-id="91ab4-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="49a18-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="49a18-122">JSON Representation</span></span>
-<span data-ttu-id="49a18-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="49a18-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="91ab4-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="91ab4-122">JSON Representation</span></span>
+<span data-ttu-id="91ab4-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="91ab4-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.keyBooleanValuePair"
@@ -48,7 +48,6 @@ ms.locfileid: "48705656"
   "value": true
 }
 ```
-
 
 
 
