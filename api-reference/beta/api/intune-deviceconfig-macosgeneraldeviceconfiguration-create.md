@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee139961988844061258f23f611a2c300464ff55
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bf82fccec0e8658aa14bc5d4a5577c0ec6a849d9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724828"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49290914"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Criar macOSGeneralDeviceConfiguration
 
@@ -105,7 +105,6 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSGeneralDevi
 |passwordBlockProximityRequests|Booliano|Indica se as senhas de solicitação devem ou não ser bloqueadas de dispositivos próximos.|
 |passwordBlockAirDropSharing|Booliano|Indica se as senhas de compartilhamento devem ou não ser bloqueadas com o recurso de senha de soltura.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Define o número de dias que uma atualização de software será delyed para um dispositivo supervisionado. Valores válidos de 0 a 90|
-|softwareUpdatesForceDelayed|Booliano|Indica se o usuário deve ou não atrasar a visibilidade de atualizações de software quando o dispositivo estiver no modo supervisionado.|
 |updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Determina se deve atrasar as atualizações de sistema operacional e/ou aplicativo para o macOS. Os valores possíveis são: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`.|
 |contentCachingBlocked|Booliano|Indica se o cache de conteúdo deve ou não ser permitido.|
 |iCloudBlockPhotoLibrary|Boolean|Indica se Biblioteca de Fotos do iCloud deve ou não ser bloqueada.|
@@ -130,7 +129,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4680
+Content-length: 4640
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -212,7 +211,6 @@ Content-length: 4680
   "passwordBlockProximityRequests": true,
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
-  "softwareUpdatesForceDelayed": true,
   "updateDelayPolicy": "delayOSUpdateVisibility",
   "contentCachingBlocked": true,
   "iCloudBlockPhotoLibrary": true,
@@ -270,7 +268,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4852
+Content-Length: 4812
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -355,7 +353,6 @@ Content-Length: 4852
   "passwordBlockProximityRequests": true,
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
-  "softwareUpdatesForceDelayed": true,
   "updateDelayPolicy": "delayOSUpdateVisibility",
   "contentCachingBlocked": true,
   "iCloudBlockPhotoLibrary": true,
@@ -407,7 +404,6 @@ Content-Length: 4852
   ]
 }
 ```
-
 
 
 

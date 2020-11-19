@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a99c81ec04446de33f582f9d2b5947e0282f7e1f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: de8f03ca476ebae4185fc0cde8d4eb92cd2e47eb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691096"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49292174"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>Excluir deviceCompliancePolicySettingStateSummary
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

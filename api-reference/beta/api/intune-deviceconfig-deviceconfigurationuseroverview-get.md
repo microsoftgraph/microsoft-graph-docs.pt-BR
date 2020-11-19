@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36f827dbe5773326335e42b8c855687128484b3e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ea31dcb2dd39f15705fb87d3f6c8c0b31cd89d07
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725708"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49291556"
 ---
 # <a name="get-deviceconfigurationuseroverview"></a>Acessar deviceConfigurationUserOverview
 
@@ -94,7 +94,6 @@ Content-Length: 394
   }
 }
 ```
-
 
 
 

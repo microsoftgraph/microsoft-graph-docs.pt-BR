@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d20f2a65db92823fd8e10bb261d3469d45fa12b9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1975038474fe9aa2ed4b62024cb6b413d17a1460
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732251"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49290417"
 ---
 # <a name="create-devicemanagementabstractcomplexsettinginstance"></a>Criar deviceManagementAbstractComplexSettingInstance
 
@@ -98,7 +98,6 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
-
 
 
 

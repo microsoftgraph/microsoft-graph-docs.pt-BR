@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 031d26e0bcefc2f1fb168390db20723617c215d2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2efb52aae242a666185c4dd755ea91c32f57ab46
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725019"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49292034"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>Get deviceComplianceScheduledActionForRule
 
@@ -78,7 +78,6 @@ Content-Length: 188
   }
 }
 ```
-
 
 
 

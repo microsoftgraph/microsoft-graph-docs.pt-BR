@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32dce3e921b49ebd2a97ae3355b7c18a3b7973f3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9021e495dddf9f0b3b2a51a81c24b86ddac7a6d1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736545"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49290585"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>Obter windowsPhone81SCEPCertificateProfile
 
@@ -130,7 +130,6 @@ Content-Length: 2102
   }
 }
 ```
-
 
 
 

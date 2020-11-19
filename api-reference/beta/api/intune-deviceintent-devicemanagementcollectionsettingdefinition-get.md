@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8355a45176b19d263fb54ece7a60acd60ec692a0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: edcbbe098f3ac72e6d405f4ce18cef92f8c117ea
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735565"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49290284"
 ---
 # <a name="get-devicemanagementcollectionsettingdefinition"></a>Obter deviceManagementCollectionSettingDefinition
 
@@ -114,7 +114,6 @@ Content-Length: 1221
   }
 }
 ```
-
 
 
 

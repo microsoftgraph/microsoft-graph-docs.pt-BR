@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8678509bd08b6e15aedf8059fc443bbee554a6be
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: efe5f3b5810cd523b04acb8f537962ea01a72127
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704116"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289794"
 ---
 # <a name="update-devicemanagementcomplexsettinginstance"></a>Atualizar deviceManagementComplexSettingInstance
 
@@ -95,7 +95,6 @@ Content-Length: 207
   "valueJson": "Value Json value"
 }
 ```
-
 
 
 

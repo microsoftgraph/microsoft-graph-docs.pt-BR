@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a22f867eb3ac32070537b4423e374dbee294d960
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ac25f25a1926697ce4786a1070f9b812ad6e0c5d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48689808"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49291705"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>Atualizar deviceConfigurationDeviceOverview
 
@@ -122,7 +122,6 @@ Content-Length: 394
   "configurationVersion": 4
 }
 ```
-
 
 
 

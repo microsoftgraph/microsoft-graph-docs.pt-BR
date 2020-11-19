@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e3ed6311f9e682cd1a9b8efce90261e1e867138
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5f7c8c00e2d03f49c10a5a37d5c97ba5a611885c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725068"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49292467"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>Atualizar deviceComplianceDeviceStatus
 
@@ -110,7 +110,6 @@ Content-Length: 493
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

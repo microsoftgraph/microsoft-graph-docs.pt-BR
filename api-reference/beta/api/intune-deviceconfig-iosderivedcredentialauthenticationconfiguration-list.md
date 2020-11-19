@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b7150a10112ef6b41da27adc914be2817d3a67b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bfa3a15b99d286f0ad0280d0089021466a65863a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726189"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49291271"
 ---
 # <a name="list-iosderivedcredentialauthenticationconfigurations"></a>Listar iosDerivedCredentialAuthenticationConfigurations
 
@@ -107,7 +107,6 @@ Content-Length: 1383
   ]
 }
 ```
-
 
 
 

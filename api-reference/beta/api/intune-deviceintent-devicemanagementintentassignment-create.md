@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 260d77f63c8bb5663b8bfe62640a2bfc988d57fb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 793ea9a4812427b489f97cfc62b47599f3d56b40
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734480"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289583"
 ---
 # <a name="create-devicemanagementintentassignment"></a>Criar deviceManagementIntentAssignment
 
@@ -97,7 +97,6 @@ Content-Length: 376
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2f269c66eb7e7a74d572e1cf6c6910450445ab6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d38ffd5417853117c0707d3ee0516ae419324104
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725040"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49292188"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>Acessar deviceCompliancePolicyDeviceStateSummary
 
@@ -86,7 +86,6 @@ Content-Length: 439
   }
 }
 ```
-
 
 
 

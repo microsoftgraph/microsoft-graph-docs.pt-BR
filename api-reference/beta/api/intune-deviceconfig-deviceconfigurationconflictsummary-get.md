@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12ab3c63a760cd0f5cc266c1295344f5dad28ae9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6c2bffcd19b7a5527e2a0a775c4a30b29ec6ac33
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48689850"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49291754"
 ---
 # <a name="get-deviceconfigurationconflictsummary"></a>Obter Propriedadesdeviceconfigurationconflictsummary
 
@@ -89,7 +89,6 @@ Content-Length: 494
   }
 }
 ```
-
 
 
 

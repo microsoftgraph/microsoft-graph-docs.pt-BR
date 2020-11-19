@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 074111ce3fdfb05bfeead49eef1882929bc3ba59
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e5de043e10960e54b9f8ba15c28380af9b003406
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690970"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289486"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>Criar deviceManagementIntentDeviceState
 
@@ -104,7 +104,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 35d84a3c434da8a3b4d40a00dc655b835171e73e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: de0fafe5b683223effdbd2392037140c659fab68
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707413"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289787"
 ---
 # <a name="create-devicemanagementintegersettinginstance"></a>Criar deviceManagementIntegerSettingInstance
 
@@ -98,7 +98,6 @@ Content-Length: 222
   "value": 5
 }
 ```
-
 
 
 
