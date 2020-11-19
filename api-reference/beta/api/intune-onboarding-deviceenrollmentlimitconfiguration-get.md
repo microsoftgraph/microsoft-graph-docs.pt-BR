@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1741cae31b1aed982bf2b80abde7b73ba98b94e4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 187c38147c72c8e0e0f36e5c26a24fd27320413c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709261"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305747"
 ---
 # <a name="get-deviceenrollmentlimitconfiguration"></a>Acessar deviceEnrollmentLimitConfiguration
 
@@ -87,7 +87,6 @@ Content-Length: 482
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d71498a701c72102ecde569892b992278453d5a2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8c4c1ce286d5d5fd79ab7cbf6df2476105ad5bcc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685558"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304900"
 ---
 # <a name="getassignedroledetails-function"></a>função getAssignedRoleDetails
 
@@ -79,7 +79,6 @@ Content-Length: 245
   }
 }
 ```
-
 
 
 

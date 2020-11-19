@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4dd3b4f29db6239a89b558518ae8ceaad3b1642
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a37d8be96299982c9f56ae79e3f200b20b665892
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712915"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305789"
 ---
 # <a name="get-compliancemanagementpartner"></a>Obter complianceManagementPartner
 
@@ -124,7 +124,6 @@ Content-Length: 2110
   }
 }
 ```
-
 
 
 

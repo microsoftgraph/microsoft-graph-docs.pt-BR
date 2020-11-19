@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15f89c72c4e5aae0f4a52a556b5ce2e80eda07bc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d65f4019c1fe0a26fc0bcc2639b7bac32dde44b5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707973"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304641"
 ---
 # <a name="delete-rolescopetag"></a>Excluir roleScopeTag
 
@@ -66,7 +66,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 497d81ec11e4ec182c15f561975ffc20b27cd469
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bd13a353a1b8b0e6bb5d17dcfd15498351c98f9b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730865"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304101"
 ---
 # <a name="create-androidmanagedappprotection"></a>Criar androidManagedAppProtection
 
@@ -279,7 +279,6 @@ Content-Length: 3139
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
-
 
 
 

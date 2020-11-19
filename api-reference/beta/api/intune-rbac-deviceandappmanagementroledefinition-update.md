@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fffac9c99f286391ebedf8c5289944d0df0f6dd5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 99d8826adb17d923d8e65ea39c829d876e1b4b18
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685552"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304914"
 ---
 # <a name="update-deviceandappmanagementroledefinition"></a>Atualizar deviceAndAppManagementRoleDefinition
 
@@ -184,7 +184,6 @@ Content-Length: 1278
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f216a6fb6a7373b39400f8475c0ccb9bc7f46aa8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3f679f00d882cbf02b7bcf26ac943a0a9db9d4a5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728553"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303115"
 ---
 # <a name="iossinglesignonextension-resource-type"></a>tipo de recurso iosSingleSignOnExtension
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.iosSingleSignOnExtension"
 }
 ```
-
 
 
 

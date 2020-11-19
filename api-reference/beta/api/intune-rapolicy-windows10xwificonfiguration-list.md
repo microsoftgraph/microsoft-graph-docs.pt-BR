@@ -1,18 +1,18 @@
 ---
-title: Obter roleScopeTag
-description: Leia as propriedades e as relações do objeto roleScopeTag.
+title: Listar windows10XWifiConfigurations
+description: Listar Propriedades e relações dos objetos windows10XWifiConfiguration.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac6c19e9ef9d0312f663a5579c5d7739aa25c489
+ms.openlocfilehash: 9fc1d143ac8f4e345528e02e76babe986b93685d
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49304606"
+ms.locfileid: "49336983"
 ---
-# <a name="get-rolescopetag"></a>Obter roleScopeTag
+# <a name="list-windows10xwificonfigurations"></a>Listar windows10XWifiConfigurations
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) .
+Listar Propriedades e relações dos objetos [windows10XWifiConfiguration](../resources/intune-rapolicy-windows10xwificonfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -37,12 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/roleScopeTags/{roleScopeTagId}
-GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}
+GET /deviceManagement/resourceAccessProfiles
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -54,14 +50,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windows10XWifiConfiguration](../resources/intune-rapolicy-windows10xwificonfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/roleScopeTags/{roleScopeTagId}
+GET https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles
 ```
 
 ### <a name="response"></a>Resposta
@@ -69,16 +65,26 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 233
+Content-Length: 645
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.roleScopeTag",
-    "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
-    "displayName": "Display Name value",
-    "description": "Description value",
-    "isBuiltIn": true
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windows10XWifiConfiguration",
+      "id": "31063b86-3b86-3106-863b-0631863b0631",
+      "version": 7,
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "authenticationCertificateId": "39b4cd38-cd38-39b4-38cd-b43938cdb439",
+      "customXmlFileName": "Custom Xml File Name value",
+      "customXml": "Y3VzdG9tWG1s"
+    }
+  ]
 }
 ```
 

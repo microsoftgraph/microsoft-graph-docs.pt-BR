@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e7805d9fea7400a98cd4ec954ba5dea66029bee
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9c7034c26fa1e299b6481f7ae15b50b92d4719ce
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696514"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305215"
 ---
 # <a name="get-deviceappmanagementtask"></a>Obter deviceAppManagementTask
 
@@ -87,7 +87,6 @@ Content-Length: 551
   }
 }
 ```
-
 
 
 

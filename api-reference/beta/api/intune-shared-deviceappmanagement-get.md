@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db41690238511e9e36f6f9cf6b2023f5f679e6b0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b09e8fd6a4bf72973f7fb55d2331785e0a9684be
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732682"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304039"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -29,12 +29,12 @@ Uma das seguintes permissões é necessária para chamar esta API. Para saber ma
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 | Delegado (conta corporativa ou de estudante) | |
-| &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding**integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding** integração, integração de **parceiros** ou conjunto de **políticas** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| |
-| &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding**integração, integração de **parceiros**ou conjunto de **políticas** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Aplicativos**, **livros**, **onboarding** integração, integração de **parceiros** ou conjunto de **políticas** | DeviceManagementApps. ReadWrite. All, DeviceManagementApps. ReadW. All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -90,7 +90,6 @@ Content-Length: 133
   }
 }
 ```
-
 
 
 

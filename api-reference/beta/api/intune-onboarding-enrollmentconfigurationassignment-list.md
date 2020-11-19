@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 35273bec64c26ed6c19f46f7858ada5ac463c05a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 36fbab3945d0cd144be50d165af74e03b8012584
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708064"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305502"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>Listar enrollmentConfigurationAssignments
 
@@ -83,7 +83,6 @@ Content-Length: 507
   ]
 }
 ```
-
 
 
 

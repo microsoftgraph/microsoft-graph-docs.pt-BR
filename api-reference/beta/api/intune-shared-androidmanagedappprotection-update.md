@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a9e63d77747570effd59fa1030924f09ed6fdfb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b11b06ac8bf445f108fb4232f3ccfe59ee2a08a2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732689"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304046"
 ---
 # <a name="update-androidmanagedappprotection"></a>Atualizar androidManagedAppProtection
 
@@ -279,7 +279,6 @@ Content-Length: 3139
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
-
 
 
 

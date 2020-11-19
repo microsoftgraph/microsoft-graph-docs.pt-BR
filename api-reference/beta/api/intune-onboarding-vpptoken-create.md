@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 289bc8085221ba113086a61cca77e4f444dad575
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3f44d43b32f54cff47b1e3b098ea481fce6c6c1f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708057"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305460"
 ---
 # <a name="create-vpptoken"></a>Criar vppToken
 
@@ -66,10 +66,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o vppTok
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o Apple Volume Purchase Program.|
+|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o Apple Volume Purchase Program.|
 |displayName|String|Um nome amigável de token especificado pelo administrador.|
 |LocationName|String|Local do token retornado da Apple VPP.|
-|claimTokenManagementFromExternalMdm|Boolean|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
+|claimTokenManagementFromExternalMdm|Booliano|Consentimento do administrador para permitir o reivindicação de gerenciamento de token de MDM externo.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|IDs de marcas de escopo de função atribuídas a esta entidade.|
 
 
@@ -156,7 +156,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

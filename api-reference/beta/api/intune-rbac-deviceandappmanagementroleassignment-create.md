@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e727838390900e065d23eb1b774f7170fafdf5b6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 822398bbc0c5d5dda59ee881201b175f112debb0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709128"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304928"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>Criar deviceAndAppManagementRoleAssignment
 
@@ -116,7 +116,6 @@ Content-Length: 391
   ]
 }
 ```
-
 
 
 

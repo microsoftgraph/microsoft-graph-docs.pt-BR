@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20c6cabbd5f18349058c68136052c8d56894dccc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 02f8b554fef07de6a429cf38722f0c867432f909
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728560"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303122"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>tipo de recurso iosSingleSignOnSettings
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "kerberosRealm": "String"
 }
 ```
-
 
 
 

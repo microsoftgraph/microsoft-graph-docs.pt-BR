@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09780e959d50a433893b70edcd308420c55be2f4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d8af70962d5b812df525eed659173816d504253a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709219"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305684"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Criar enrollmentConfigurationAssignment
 
@@ -103,7 +103,6 @@ Content-Length: 438
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

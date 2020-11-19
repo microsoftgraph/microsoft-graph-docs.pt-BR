@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aede8d1707b41ae7f886a6ad314eb03469314bca
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3907ba2bdaa7c4055dc4c939403601864f34d2dc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707889"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303402"
 ---
 # <a name="androiddeviceownerkioskmodefoldericon-enum-type"></a>tipo de enumeração androidDeviceOwnerKioskModeFolderIcon
 
@@ -30,7 +30,6 @@ Tipo de ícone de pasta de modo de quiosque de proprietário do dispositivo Andr
 |darkCircle|duas|Ícone de pasta aparece como círculo escuro.|
 |lightSquare|3D|Ícone de pasta aparece como quadrado claro.|
 |lightCircle|4 |Ícone de pasta aparece como círculo claro.|
-
 
 
 

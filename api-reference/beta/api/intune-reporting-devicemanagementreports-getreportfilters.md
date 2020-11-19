@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e39b5c53598f6a6418c30bb29f775ca249fcfd8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 433661b3dafb39cdd01aef26c63c78eacba5beb1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698152"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304186"
 ---
 # <a name="getreportfilters-action"></a>ação getReportFilters
 
@@ -108,7 +108,6 @@ Content-Length: 79
   "value": "Z2V0UmVwb3J0RmlsdGVycyBJbnR1bmUgRG9jIFNhbXBsZSAxMzYxOTI0Mjkx"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c218d01a2c8c3b60a6de75a677f722d0a49c05e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0d140b49e0052350c897840ff6a61453430c309f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698383"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304319"
 ---
 # <a name="create-remoteassistancepartner"></a>Criar remoteAssistancePartner
 
@@ -101,7 +101,6 @@ Content-Length: 390
   "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
-
 
 
 

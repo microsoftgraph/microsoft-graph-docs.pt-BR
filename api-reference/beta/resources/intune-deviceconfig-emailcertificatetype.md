@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 691923c70c89d2f29cb45f6f3a994bbc919a7d56
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3d94c2a50542eb4d97a19fdb4ca0e1de2dcabf17
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705971"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303304"
 ---
 # <a name="emailcertificatetype-enum-type"></a>tipo de enumeração emailCertificateType
 
@@ -25,10 +25,9 @@ Fontes de certificado com suporte para assinatura e criptografia de email.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Não use um certificado como fonte.|
+|nenhum|,0|Não use um certificado como fonte.|
 |certificado|1|Usar um certificado para a fonte do certificado.|
 |derivedCredential|duas|Use uma credencial derivada para a fonte do certificado.|
-
 
 
 

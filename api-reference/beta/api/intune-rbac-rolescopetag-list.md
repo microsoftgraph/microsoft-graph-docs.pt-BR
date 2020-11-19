@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02a200e3ce9ded6bb9cb545eb4dacf794e9ad877
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b26d5d62744144066159fc147c82766090bc96ca
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703955"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304473"
 ---
 # <a name="list-rolescopetags"></a>Listar roleScopeTags
 
@@ -80,7 +80,6 @@ Content-Length: 257
   ]
 }
 ```
-
 
 
 

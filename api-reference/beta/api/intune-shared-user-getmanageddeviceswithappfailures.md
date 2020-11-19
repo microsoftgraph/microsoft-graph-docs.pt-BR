@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bfebed249e997b87d7af3b3ceeb05c82fc757e6b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 11eec07637cd718af9e1458f8f09fcf7b4e072da
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702919"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303888"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>função getManagedDevicesWithAppFailures
 
@@ -73,7 +73,6 @@ Content-Length: 74
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ddeb362c2cb293bc4da1d9ee129e50f874e16722
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6402bf4ce476ec0276bb057ff3eb0624dde32faa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707994"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305117"
 ---
 # <a name="update-managedappprotectionpolicysetitem"></a>Atualizar managedAppProtectionPolicySetItem
 
@@ -115,7 +115,6 @@ Content-Length: 561
   "targetedAppManagementLevels": "Targeted App Management Levels value"
 }
 ```
-
 
 
 

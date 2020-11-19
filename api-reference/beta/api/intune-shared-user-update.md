@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c78678329730dcbfca57c1d6fa6b306d6a1e27b8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f981816f3f59e48e1f4a13d3c06bc442d190950d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702905"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303780"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -29,13 +29,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Mam** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo||
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Mam** | DeviceManagementApps.ReadWrite.All|
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All|
@@ -101,7 +101,6 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
-
 
 
 
