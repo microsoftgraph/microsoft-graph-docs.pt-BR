@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dc4746800e491b3546fec4cfea675febc806f666
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3b7a078b3ab8188bb5745c4b6114feca3e2bc8c9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693777"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276480"
 ---
 # <a name="subjectnameformat-enum-type"></a>tipo de enumeração subjectNameFormat
 
@@ -34,7 +34,6 @@ Opções de formato de nome de entidade.
 |commonNameAsAadDeviceId|7 |Nome comum como número de série.|
 |commonNameAsIntuneDeviceId|8 |Nome comum como número de série.|
 |commonNameAsDurableDeviceId|9 |Nome comum como número de série.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 41a6c319d3504a6fb44a5875350caa8e6e3e6af3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0e8354c8feccc90a0d1f0f09631b139921781665
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703731"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276123"
 ---
 # <a name="devicemanagementcollectionsettinginstance-resource-type"></a>tipo de recurso deviceManagementCollectionSettingInstance
 
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "valueJson": "String"
 }
 ```
-
 
 
 

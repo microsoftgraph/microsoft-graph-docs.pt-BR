@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04a228258d5d8ceaec67f192f8615dbd3a4fef89
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5456b916789f694057ca505640ec07bc8129b968
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695310"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276774"
 ---
 # <a name="update-manageddevicemobileappconfigurationpolicysetitem"></a>Atualizar managedDeviceMobileAppConfigurationPolicySetItem
 
@@ -112,7 +112,6 @@ Content-Length: 502
   ]
 }
 ```
-
 
 
 
