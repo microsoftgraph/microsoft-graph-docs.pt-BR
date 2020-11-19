@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8eb63d8700016e61b05715dea10cfb726687e77a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0e218f93a1278644792e09e861ffb9ea30747ca0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694372"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270663"
 ---
 # <a name="get-windowsinformationprotectiondeviceregistration"></a>Obter windowsInformationProtectionDeviceRegistration
 
@@ -83,7 +83,6 @@ Content-Length: 450
   }
 }
 ```
-
 
 
 

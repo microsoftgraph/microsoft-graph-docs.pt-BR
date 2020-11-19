@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b5cb5d836ff6eb98df7915cd05a308f7b1626b3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5d9bab17be811156f9aa0efcae52f024388f260d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709198"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270411"
 ---
 # <a name="create-vulnerablemanageddevice"></a>Criar vulnerableManagedDevice
 
@@ -95,7 +95,6 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

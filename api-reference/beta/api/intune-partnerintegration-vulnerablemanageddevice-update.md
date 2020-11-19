@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a93ef4060f11b8478055efebda2a116d0c87645d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1f6ae6504e96d2412198b2e9423be2a90a0b5ce8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692888"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270341"
 ---
 # <a name="update-vulnerablemanageddevice"></a>Atualizar vulnerableManagedDevice
 
@@ -95,7 +95,6 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

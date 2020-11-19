@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e73c9664b0946e2c02d8f60ec95ae9832a7e3b3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 87272e1e44e65ae469fb646f86f55f3d8b42b811
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694358"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270593"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>Atualizar windowsInformationProtectionDeviceRegistration
 
@@ -104,7 +104,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

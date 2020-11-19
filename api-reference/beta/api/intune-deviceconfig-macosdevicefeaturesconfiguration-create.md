@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d64849c8283d395bb52583e6e31d8d49b8e1e7a7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4c38ec279841f809710bd60708a147669ee22151
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735642"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49271293"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>Criar macOSDeviceFeaturesConfiguration
 
@@ -479,7 +479,6 @@ Content-Length: 5834
   "contentCachingPort": 2
 }
 ```
-
 
 
 

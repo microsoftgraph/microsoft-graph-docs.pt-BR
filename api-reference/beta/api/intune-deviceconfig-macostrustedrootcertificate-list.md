@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81ac3bc2da636730b1b4c2dd2c91c7418de80a5f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a5d1fc8aa729be34b77d2d139182c3512dfb0325
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695702"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49271020"
 ---
 # <a name="list-macostrustedrootcertificates"></a>Listar macOSTrustedRootCertificates
 
@@ -108,7 +108,6 @@ Content-Length: 1479
   ]
 }
 ```
-
 
 
 

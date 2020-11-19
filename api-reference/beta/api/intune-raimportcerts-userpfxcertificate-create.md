@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2af465d96a576867f8b712679d61012bfcd8888a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0fc7dc63c771714079ee9a3b8d3e5c36cbc44095
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731159"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270026"
 ---
 # <a name="create-userpfxcertificate"></a>Criar userPFXCertificate
 
@@ -120,7 +120,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 
