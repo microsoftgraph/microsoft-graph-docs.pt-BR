@@ -1,17 +1,17 @@
 ---
-description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 717257b9d2f27eac5915231cd42dce5e3860dc53
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+description: Automatically generated file. DO NOT MODIFY
+ms.openlocfilehash: 11c14dbaaaa281485c73c516047ee922dfd2fd41
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333785"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49350453"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Serviceprincipals["{id}"].Owners["{id}"].Reference
+await graphClient.ServicePrincipals["{id}"].Owners["{id}"].Reference
     .Request()
     .DeleteAsync();
 
