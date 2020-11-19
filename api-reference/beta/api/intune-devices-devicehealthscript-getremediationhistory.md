@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 263c125803fff832e1e8241e02201035e3101782
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bdab4c02e133a7ebc7459a31a7dff71cdf008e77
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732885"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310815"
 ---
 # <a name="getremediationhistory-function"></a>função getRemediationHistory
 
@@ -82,7 +82,6 @@ Content-Length: 397
   }
 }
 ```
-
 
 
 

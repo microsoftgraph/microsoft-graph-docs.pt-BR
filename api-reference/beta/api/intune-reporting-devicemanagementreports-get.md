@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 949553d3e9825661e02eb350c17f18406b3c3ba6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 62f9b1b742fcbe3052fca3a5d03beeff87cbb69e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698201"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307737"
 ---
 # <a name="get-devicemanagementreports"></a>Obter deviceManagementReports
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) .
+Leia as propriedades e as relações do objeto [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -77,7 +77,6 @@ Content-Length: 137
   }
 }
 ```
-
 
 
 
