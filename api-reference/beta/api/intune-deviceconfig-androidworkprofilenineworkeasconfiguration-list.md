@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da63c5ea760d02b88503f3ca0424914352a22bce
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 417772851b7507fb0a3c6bbaed0f5e90281f0703
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703269"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49237349"
 ---
 # <a name="list-androidworkprofilenineworkeasconfigurations"></a>Listar androidWorkProfileNineWorkEasConfigurations
 
@@ -116,7 +116,6 @@ Content-Length: 1712
   ]
 }
 ```
-
 
 
 

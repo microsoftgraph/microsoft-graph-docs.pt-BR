@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90fde3df9e314df7ace519fed8176ccb9a06203c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b4309af2a54ced679dff51a2b951e8178ac3300d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730040"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49238266"
 ---
 # <a name="create-androidforworktrustedrootcertificate"></a>Criar androidForWorkTrustedRootCertificate
 
@@ -161,7 +161,6 @@ Content-Length: 1319
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 341229123b992d44379f56eb74194474f48f9cd1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b88740be5e3e31149e0dfe1cb191adcca91d09b6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730175"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49238574"
 ---
 # <a name="update-androidforworknineworkeasconfiguration"></a>Atualizar androidForWorkNineWorkEasConfiguration
 
@@ -183,7 +183,6 @@ Content-Length: 1511
   "syncTasks": true
 }
 ```
-
 
 
 

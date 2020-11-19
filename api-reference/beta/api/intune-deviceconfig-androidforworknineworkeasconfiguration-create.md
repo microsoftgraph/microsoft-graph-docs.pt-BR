@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a164b1c7ec144c6a3cec46303440fb41dee57c2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 289f35d58ff5c0a1fcd2728e2a3a6db26baff302
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730203"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49238700"
 ---
 # <a name="create-androidforworknineworkeasconfiguration"></a>Criar androidForWorkNineWorkEasConfiguration
 
@@ -182,7 +182,6 @@ Content-Length: 1511
   "syncTasks": true
 }
 ```
-
 
 
 

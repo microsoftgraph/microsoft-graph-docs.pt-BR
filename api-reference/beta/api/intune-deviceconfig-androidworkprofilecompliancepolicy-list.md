@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65de24e4d586cddc0f96083e2aa3d4bda90a4d30
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 25eb47ccc082d63d78aa3e39b64c66e59430ef36
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707511"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49237398"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>Listar androidWorkProfileCompliancePolicies
 
@@ -107,7 +107,6 @@ Content-Length: 1687
   ]
 }
 ```
-
 
 
 
