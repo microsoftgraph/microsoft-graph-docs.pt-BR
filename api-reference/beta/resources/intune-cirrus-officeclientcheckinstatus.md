@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 014246b973e9ea94ef79eba45c771110dca6da76
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bdd2d4f47244bb2eab1e7c357a9f599909166b6a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694008"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295121"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>tipo de recurso officeClientCheckinStatus
 
@@ -28,7 +28,7 @@ Entidade que descreve as estatísticas de check-in do locatário.
 |deviceName|String|Nome do dispositivo que está tentando fazer check-in.|
 |devicePlatform|String|Plataforma do dispositivo que está tentando fazer check-in.|
 |devicePlatformVersion|String|Versão da plataforma do dispositivo que está tentando fazer check-in.|
-|wasSuccessful|Boolean|Se o último check-in foi bem-sucedido.|
+|wasSuccessful|Booliano|Se o último check-in foi bem-sucedido.|
 |userId|Cadeia de caracteres|Identificador de usuário usando o dispositivo.|
 |checkinDateTime|DateTimeOffset|Tempo de check-in do último dispositivo em UTC.|
 |errorMessage|String|Mensagem de erro se algum associado para o último check-in.|
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

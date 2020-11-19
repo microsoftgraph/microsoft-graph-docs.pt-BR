@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c5867445649b275822b58a75863fcf922078f8c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b6616b01665e697e92f8ce6dde4f68e25a5e9d7d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696892"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296914"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Get windows10EndpointProtectionConfiguration
 
@@ -814,7 +814,6 @@ Content-Length: 32710
   }
 }
 ```
-
 
 
 

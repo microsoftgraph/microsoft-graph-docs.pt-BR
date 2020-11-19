@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17f4932dec341b3b8165a46ecdaad3132686fa3d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 16f83edf2902b96724e55e6ce6e7de90d3f55385
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690858"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296024"
 ---
 # <a name="update-windowsautopilotdeploymentprofilepolicysetitem"></a>Atualizar windowsAutopilotDeploymentProfilePolicySetItem
 
@@ -112,7 +112,6 @@ Content-Length: 500
   ]
 }
 ```
-
 
 
 

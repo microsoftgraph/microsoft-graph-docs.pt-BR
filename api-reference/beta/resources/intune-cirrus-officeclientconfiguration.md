@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87351ed868a1f46ff769882fea4e12da25aed16e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 181e06de36176c5d2dbbdb8d1794ae64390ee71b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693994"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295128"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>tipo de recurso Conjuntoofficeclientconfiguration
 
@@ -34,8 +34,8 @@ Configuração de cliente do Office.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|ID da política de configuração de cliente do Office.|
-|userPreferencePayload|Fluxo|Cadeia de caracteres JSON das configurações de preferência no formato binário, esses valores podem ser substituídos pelo usuário.|
-|policyPayload|Fluxo|Cadeia de caracteres JSON de configurações de política no formato binário, esses valores não podem ser alterados pelo usuário.|
+|userPreferencePayload|Stream|Cadeia de caracteres JSON das configurações de preferência no formato binário, esses valores podem ser substituídos pelo usuário.|
+|policyPayload|Stream|Cadeia de caracteres JSON de configurações de política no formato binário, esses valores não podem ser alterados pelo usuário.|
 |description|String|Ainda não documentado|
 |displayName|String|Descrição fornecida pelo administrador da política de configuração de cliente do Office.|
 |lastModifiedDateTime|DateTime|Carimbo de data/hora da última modificação da política.|
@@ -88,7 +88,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 63cd3a159562c9757267ca80203c256f8cc9b643
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fc290e76b7f0f1988f65e44a107b73c8188704df
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701442"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294148"
 ---
 # <a name="macosprivacyaccesscontrolitem-resource-type"></a>tipo de recurso macOSPrivacyAccessControlItem
 
@@ -29,11 +29,11 @@ Representa as preferências de privacidade por processo.
 |identificador|String|O caminho ou a ID do pacote do aplicativo, processo ou executável.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Uma ID de pacote é usada para identificar um aplicativo. Um caminho é usado para identificar um processo ou executável. Os valores possíveis são: `bundleID` e `path`.|
 |codeRequirement|String|Insira o requisito de código, que pode ser obtido com o comando "codesign – display-r –" no aplicativo de terminal. Inclua tudo após "=>".|
-|staticCodeValidation|Boolean|Valida estaticamente o requisito de código. Use essa configuração se o processo invalida sua assinatura de código dinâmico.|
-|blockCamera|Boolean|Bloquear o acesso ao aplicativo de câmera.|
-|blockMicrophone|Boolean|Bloquear o acesso ao microfone.|
-|blockScreenCapture|Boolean|Bloquear o aplicativo para capturar o conteúdo da exibição do sistema. Requer o macOS 10,15 ou posterior.|
-|blockListenEvent|Boolean|Bloquear o aplicativo ou processo de ouvir eventos de dispositivos de entrada, como mouse, teclado e trackpad. Requer o macOS 10,15 ou posterior.|
+|staticCodeValidation|Booliano|Valida estaticamente o requisito de código. Use essa configuração se o processo invalida sua assinatura de código dinâmico.|
+|blockCamera|Booliano|Bloquear o acesso ao aplicativo de câmera.|
+|blockMicrophone|Booliano|Bloquear o acesso ao microfone.|
+|blockScreenCapture|Booliano|Bloquear o aplicativo para capturar o conteúdo da exibição do sistema. Requer o macOS 10,15 ou posterior.|
+|blockListenEvent|Booliano|Bloquear o aplicativo ou processo de ouvir eventos de dispositivos de entrada, como mouse, teclado e trackpad. Requer o macOS 10,15 ou posterior.|
 |speechRecognition|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso ao recurso de reconhecimento de fala do sistema. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |disponibilidade|[habilitação](../resources/intune-shared-enablement.md)|Permitir que o aplicativo ou processo controle o Mac por meio do subsistema de acessibilidade. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |addressBook|[habilitação](../resources/intune-shared-enablement.md)|Permitir ou bloquear o acesso a informações de contato gerenciadas pelos contatos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
@@ -101,7 +101,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

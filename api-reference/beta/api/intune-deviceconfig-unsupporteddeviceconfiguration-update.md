@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 609f835563cfb1aa1f70c5d2847f3cdf9e2207f9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 20b3a8ba788f12a70a3d6a7c26409ae73af109a2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734928"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49297032"
 ---
 # <a name="update-unsupporteddeviceconfiguration"></a>Atualizar unsupportedDeviceConfiguration
 
@@ -174,7 +174,6 @@ Content-Length: 1463
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6df8f5dfc7b1229507c3f2b0d65f1cd89f3f5d78
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 388309fe16221d5da2a642edca5d588324896707
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723993"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294995"
 ---
 # <a name="officeconfigurationassignmenttarget-resource-type"></a>tipo de recurso officeConfigurationAssignmentTarget
 
@@ -42,7 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.officeConfigurationAssignmentTarget"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c17ddf5ddfbc93995b267d2243a81ba89f538802
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d431b0ca9c6ac1de6ebfd146dba49ebf14e17faa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727285"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49297775"
 ---
 # <a name="windowsinformationprotection-resource-type"></a>Tipo de recurso windowsInformationProtection
 
@@ -210,7 +210,6 @@ Veja a seguir uma representação JSON do recurso.
   "isAssigned": true
 }
 ```
-
 
 
 

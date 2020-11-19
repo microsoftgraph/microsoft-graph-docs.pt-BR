@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ac443cdaec1c5789d0b9e8d716f4f33b050ee0f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a7790ac7bc283cb60e7287aa48202b489bd8bb33
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731516"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296164"
 ---
 # <a name="getpolicysets-action"></a>ação getPolicySets
 
@@ -105,7 +105,6 @@ Content-Length: 578
   ]
 }
 ```
-
 
 
 

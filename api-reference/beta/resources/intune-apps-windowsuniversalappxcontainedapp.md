@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01cb20dd9e9b2c61adabc4514806302f4372c290
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6f89ee6fdbb224ab862eb13ad6e161a7e5c903e9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706083"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295548"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>tipo de recurso windowsUniversalAppXContainedApp
 
@@ -58,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   "appUserModelId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 732176b37be13f6f7e1c945d391cebb20b99ce2f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6d7d6ea27060e568bf857bf27d17c96d039f8432
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726126"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296423"
 ---
 # <a name="list-devicemanagementtemplates"></a>Listar deviceManagementTemplates
 
@@ -86,7 +86,6 @@ Content-Length: 531
   ]
 }
 ```
-
 
 
 

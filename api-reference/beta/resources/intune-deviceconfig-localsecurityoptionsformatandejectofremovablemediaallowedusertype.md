@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 080d8761b115c0e117ca293052518f9b504d9047
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4942186ef3f2bbb10c84305f630942a24c9c5741
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705705"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294421"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>tipo de enumeração localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType
 
@@ -29,7 +29,6 @@ Valores possíveis para LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowe
 |grupos|1|Administradores|
 |administratorsAndPowerUsers|duas|Administradores e usuários avançados|
 |administratorsAndInteractiveUsers|3D|Administradores e usuários interativos |
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d24ab09bb82a7721fe7314f83a53433aa0200a52
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aa0cd9da0a2818b25923247698140a617ece3225
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706013"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295282"
 ---
 # <a name="iosvppebook-resource-type"></a>Tipo de recurso iosVppEBook
 
@@ -106,7 +106,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

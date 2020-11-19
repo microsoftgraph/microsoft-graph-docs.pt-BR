@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 003906982c875fa4a70ee99c029f7c49b73b9398
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a661c7e2dae97ccdc947604c197bb1a3c683146d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706027"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295415"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>tipo de recurso roleScopeTagInfo
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "roleScopeTagId": "String"
 }
 ```
-
 
 
 

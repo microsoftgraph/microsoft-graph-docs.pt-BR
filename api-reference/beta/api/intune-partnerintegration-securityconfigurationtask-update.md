@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79916ea63344b5e8f1f4f2ecf9ed55aef904b0ee
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 18a89b0570a17752d82d2dc050b5683c8c947760
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709205"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296304"
 ---
 # <a name="update-securityconfigurationtask"></a>Atualizar securityConfigurationTask
 
@@ -145,7 +145,6 @@ Content-Length: 854
   ]
 }
 ```
-
 
 
 

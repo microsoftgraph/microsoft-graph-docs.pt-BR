@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8613599bc185c7192c079d6bdc8ad2118c00b081
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bb27b51c70bc111e519cf8bb993354e638e7102d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701477"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294309"
 ---
 # <a name="macoskerberossinglesignonextension-resource-type"></a>tipo de recurso macOSKerberosSingleSignOnExtension
 
@@ -30,24 +30,24 @@ Herda de [macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossing
 |:---|:---|:---|
 |esfera|String|Obtém ou define o nome de território que diferencia maiúsculas de minúsculas para esse perfil.|
 |domínio|Coleção de cadeias de caracteres|Obtém ou define uma lista de hosts ou nomes de domínio para os quais a extensão de aplicativo executa SSO.|
-|blockAutomaticLogin|Boolean|Habilita ou desabilita o uso do chaveiro.|
+|blockAutomaticLogin|Booliano|Habilita ou desabilita o uso do chaveiro.|
 |CacheName|String|Obtém ou define o nome genérico dos serviços de segurança do cache Kerberos a ser usado para esse perfil.|
 |credentialBundleIdAccessControlList|Coleção de cadeias de caracteres|Obtém ou define uma lista de IDs de lote de aplicativos que têm permissão para acessar o tíquete de concessão de tíquete Kerberos.|
 |domainRealms|Coleção de cadeias de caracteres|Obtém ou define uma lista de Realms para o mapeamento do realm do domínio personalizado. Os territórios diferenciam maiúsculas de minúsculas.|
-|isDefaultRealm|Boolean|Quando for true, o realm deste perfil será selecionado como o padrão. Necessário se vários perfis de tipo Kerberos estiverem configurados.|
-|passwordBlockModification|Boolean|Habilita ou desabilita as alterações de senha.|
+|isDefaultRealm|Booliano|Quando for true, o realm deste perfil será selecionado como o padrão. Necessário se vários perfis de tipo Kerberos estiverem configurados.|
+|passwordBlockModification|Booliano|Habilita ou desabilita as alterações de senha.|
 |passwordExpirationDays|Int32|Substitui a expiração padrão da senha em dias. Para a maioria dos domínios, esse valor é calculado automaticamente.|
 |passwordExpirationNotificationDays|Int32|Obtém ou define o número de dias até que o usuário seja notificado de que sua senha irá expirar (o padrão é 15).|
 |userPrincipalName|String|Obtém ou define o nome de usuário de princípio a ser usado para esse perfil. O nome do Realm não precisa ser incluído.|
-|passwordRequireActiveDirectoryComplexity|Boolean|Habilita ou desabilita se as senhas devem atender aos requisitos de complexidade do Active Directory.|
+|passwordRequireActiveDirectoryComplexity|Booliano|Habilita ou desabilita se as senhas devem atender aos requisitos de complexidade do Active Directory.|
 |passwordPreviousPasswordBlockCount|Int32|Obtém ou define o número de senhas anteriores para bloquear.|
 |passwordMinimumLength|Int32|Obtém ou define o comprimento mínimo de uma senha.|
 |passwordMinimumAgeDays|Int32|Obtém ou define o número mínimo de dias até que um usuário possa alterar sua senha novamente.|
 |passwordRequirementsDescription|String|Obtém ou define uma descrição dos requisitos de complexidade de senha.|
-|requireUserPresence|Boolean|Obtém ou define se deve exigir autenticação por meio de ID de toque, ID de face ou uma senha para acessar a entrada de keychain.|
+|requireUserPresence|Booliano|Obtém ou define se deve exigir autenticação por meio de ID de toque, ID de face ou uma senha para acessar a entrada de keychain.|
 |activeDirectorySiteCode|String|Obtém ou define o site do Active Directory.|
-|passwordEnableLocalSync|Boolean|Habilita ou desabilita a sincronização de senha. Isso não afetará os usuários conectados com uma conta móvel no macOS.|
-|blockActiveDirectorySiteAutoDiscovery|Boolean|Habilita ou desabilita se a extensão Kerberos pode determinar automaticamente o nome do site.|
+|passwordEnableLocalSync|Booliano|Habilita ou desabilita a sincronização de senha. Isso não afetará os usuários conectados com uma conta móvel no macOS.|
+|blockActiveDirectorySiteAutoDiscovery|Booliano|Habilita ou desabilita se a extensão Kerberos pode determinar automaticamente o nome do site.|
 |passwordChangeUrl|String|Obtém ou define a URL para a qual o usuário será enviado quando iniciar uma alteração de senha.|
 
 ## <a name="relationships"></a>Relações
@@ -92,7 +92,6 @@ Veja a seguir uma representação JSON do recurso.
   "passwordChangeUrl": "String"
 }
 ```
-
 
 
 

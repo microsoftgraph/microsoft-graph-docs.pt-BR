@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a0f1767f8cb1cf9a50e9055b9b0187928f44150
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8d5d08dd6701d803ea98b0bc47f4dd97fff5b17f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735369"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296136"
 ---
 # <a name="update-policysetassignment"></a>Atualizar policySetAssignment
 
@@ -99,7 +99,6 @@ Content-Length: 427
   }
 }
 ```
-
 
 
 

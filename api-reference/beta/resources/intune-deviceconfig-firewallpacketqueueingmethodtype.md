@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4616a562bc6cedda543c564660557cb9e67d7dc4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aca93f0c7afaa0e7859ceccb73fad656f3590b1a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730641"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294449"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de enumeração firewallPacketQueueingMethodType
 
@@ -30,7 +30,6 @@ Valores possíveis para firewallPacketQueueingMethod
 |queueInbound|duas|Enfileirar pacotes criptografados de entrada|
 |queueOutbound|3D|Pacotes de saída de fila descriptografados para encaminhamento|
 |queueBoth|4 |Enfileiramento de pacotes de entrada e de saída|
-
 
 
 

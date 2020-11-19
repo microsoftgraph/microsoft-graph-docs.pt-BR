@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5831dd3b684c3ec02278ec13fc1b6dc9d5a40ed4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fbdd36fe318c78a711fe72f5c7b7aacb6bbb6719
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726539"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295688"
 ---
 # <a name="windowsphonexap-resource-type"></a>tipo de recurso windowsPhoneXAP
 
@@ -131,7 +131,6 @@ Veja a seguir uma representação JSON do recurso.
   "identityVersion": "String"
 }
 ```
-
 
 
 

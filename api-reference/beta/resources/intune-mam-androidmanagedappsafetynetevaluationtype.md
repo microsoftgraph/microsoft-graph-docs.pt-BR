@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 76665c419fdc3e8f53e6dafdb067ca33200cc0d4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ed39699589b356d75adf4f289546b22a8c0d45c7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723831"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49297998"
 ---
 # <a name="androidmanagedappsafetynetevaluationtype-enum-type"></a>tipo de enumeração androidManagedAppSafetyNetEvaluationType
 
@@ -27,7 +27,6 @@ Um requisito de tipo de avaliação SafetyNet do Android aplicado por administra
 |:---|:---|:---|
 |Basic|,0|Exigir avaliação básica|
 |hardwareBacked|1|Exigir avaliação de hardware com backup|
-
 
 
 

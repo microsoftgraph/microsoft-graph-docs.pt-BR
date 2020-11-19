@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5311d714ae1fdbdc9390c1faab6a2f6f2b4c8350
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 98596e057c9c57fdafc783c0e05b3ade69ee1a25
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690809"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296003"
 ---
 # <a name="get-onpremencryptedpayload"></a>Obter onPremEncryptedPayload
 
@@ -92,7 +92,6 @@ Content-Length: 834
   }
 }
 ```
-
 
 
 

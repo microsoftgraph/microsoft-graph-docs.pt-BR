@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f8ff66f5d71f81f8ef7deb6b95e6a68e46fd2e1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7f357beb705c2b61c7d7ed06dbaaf515dd9e934a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698460"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295961"
 ---
 # <a name="create-roledefinition"></a>Criar roleDefinition
 
@@ -183,7 +183,6 @@ Content-Length: 1256
   ]
 }
 ```
-
 
 
 

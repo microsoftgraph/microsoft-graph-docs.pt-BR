@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 186edcf52b58f3c77e9f706b82ff57e5ee40694e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 09a8ad09d5942b82a68ace6be3c9b7a871b07423
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704473"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49297529"
 ---
 # <a name="get-iostrustedrootcertificate"></a>Obter iosTrustedRootCertificate
 
@@ -110,7 +110,6 @@ Content-Length: 1395
   }
 }
 ```
-
 
 
 

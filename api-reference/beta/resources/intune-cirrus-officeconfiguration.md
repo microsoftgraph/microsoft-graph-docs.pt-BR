@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 276a9bd60e988d0bb961ef849c8ce57d8eb9bb47
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 20e86afa8d0d5fddf5b87a6c6667e2e16baa391a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723950"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295114"
 ---
 # <a name="officeconfiguration-resource-type"></a>tipo de recurso officeConfiguration
 
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

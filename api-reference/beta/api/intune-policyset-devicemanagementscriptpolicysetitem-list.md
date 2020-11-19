@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b69495b1b39fc077c13683c90bfaafe06feea83e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 646a87be2a5192ef7f1a05bae74096ac8e9648eb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732703"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296276"
 ---
 # <a name="list-devicemanagementscriptpolicysetitems"></a>Listar deviceManagementScriptPolicySetItems
 
@@ -86,7 +86,6 @@ Content-Length: 570
   ]
 }
 ```
-
 
 
 

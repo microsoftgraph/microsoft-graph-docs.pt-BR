@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 410a6579f7db7d3c0ca59d689c585feafea3432d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d1ea3acd0d7e308026936e583c018ac7204ce6f6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705896"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294547"
 ---
 # <a name="encryptionstate-enum-type"></a>tipo de enumeração EncryptionState
 
@@ -27,7 +27,6 @@ Estado de criptografia
 |:---|:---|:---|
 |não criptografado|,0|Não criptografado|
 |PPTP|1|PPTP|
-
 
 
 

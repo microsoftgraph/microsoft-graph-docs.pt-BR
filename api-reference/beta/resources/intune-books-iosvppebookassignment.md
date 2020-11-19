@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1100240831c160288fd026ac2af9e3f1f9f743c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 97a4cbc5d07359c97e41ee2f8703a674c9dea406
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691509"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295275"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Tipo de recurso iosVppEBookAssignment
 
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "installIntent": "String"
 }
 ```
-
 
 
 

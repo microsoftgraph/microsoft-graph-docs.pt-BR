@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8cb292a8c9795406c584e92d15f86f9d03f0cd69
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 79db35b606a27d6049ab47651568dce1b2f4e98a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708960"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295695"
 ---
 # <a name="windowsphone81storeapp-resource-type"></a>tipo de recurso windowsPhone81StoreApp
 
@@ -109,7 +109,6 @@ Veja a seguir uma representação JSON do recurso.
   "appStoreUrl": "String"
 }
 ```
-
 
 
 

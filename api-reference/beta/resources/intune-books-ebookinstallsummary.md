@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e75b550f628958e0cfacd38c28bc61ca8c2430f0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f4132bf41a3081bc9b5234cfcd0066508baf1dee
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706006"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295408"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Tipo de recurso eBookInstallSummary
 
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledUserCount": 1024
 }
 ```
-
 
 
 

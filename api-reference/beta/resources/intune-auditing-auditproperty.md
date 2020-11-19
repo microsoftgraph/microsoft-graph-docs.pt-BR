@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e179c1c7318934c538cef06c3284308c54199059
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 666879bd6a4554be85c52c54c1d9ef3f1a406886
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706062"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295555"
 ---
 # <a name="auditproperty-resource-type"></a>Tipo de recurso auditProperty
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "newValue": "String"
 }
 ```
-
 
 
 

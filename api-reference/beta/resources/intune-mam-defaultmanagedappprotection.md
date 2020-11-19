@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fc67337e22e06f8c47dea895e26175d2c013851
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3b2931b690bfaaff7d179c79a958375134fe9e25
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684669"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49297935"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>Tipo de recurso defaultManagedAppProtection
 
@@ -81,7 +81,7 @@ Herda de [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Indica em quais navegadores gerenciados os links da Internet devem ser abertos. Quando essa propriedade é configurada, ManagedBrowserToOpenLinksRequired deve ser true. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `notConfigured` e `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Nível máximo de ameaça de dispositivo permitido, conforme relatado pelo aplicativo MTD herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determina a ação a ser tomada se o limite de ameaças de defesa contra ameaças móveis não for atingido. Warn não é um valor com suporte para essa propriedade herdada de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
-|blockDataIngestionIntoOrganizationDocuments|Boolean|Indica se um usuário pode trazer dados para documentos org. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|blockDataIngestionIntoOrganizationDocuments|Booliano|Indica se um usuário pode trazer dados para documentos org. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedDataIngestionLocations|coleção [managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)|Locais de armazenamento de dados em que um usuário pode armazenar dados gerenciados. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Se definido, especificará a ação a ser tomada no caso em que o usuário não consegue fazer check-in porque o token de autenticação é inválido. Isso ocorre quando o usuário é excluído ou desabilitado no AAD. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|As classes de aplicativos de discagem que têm permissão para clicar para abrir um número de telefone. Herdado de [managedAppProtection](../resources/intune-mam-managedappprotection.md). Os valores possíveis são: `allApps`, `managedApps`, `customApp`, `blocked`.|
@@ -103,10 +103,10 @@ Herda de [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, seja Block ou apagamento, se o modelo de dispositivo especificado não for permitido. (somente iOS). Os valores possíveis são: `block`, `wipe`, `warn`.|
 |allowedAndroidDeviceManufacturers|String|Lista separada por ponto-e-vírgula dos fabricantes de dispositivos permitidos, como uma cadeia de caracteres, para que o aplicativo gerenciado funcione. (Somente Android)|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, bloqueio ou apagamento, caso o fabricante do dispositivo especificado não seja permitido. (Android somente). Os valores possíveis são: `block`, `wipe`, `warn`.|
-|thirdPartyKeyboardsBlocked|Boolean|Define se os teclados de terceiros são permitidos ao acessar um aplicativo gerenciado. (somente iOS)|
-|filterOpenInToOnlyManagedApps|Boolean|Define se a operação de abertura é suportada do aplicativo gerenciado para os locais de compartilhamento de filesharing selecionados. Essa configuração aplica-se somente quando AllowedOutboundDataTransferDestinations é definida como ManagedApps e Propriedadesdisableprotectionofmanagedoutboundopenindata é definida como false. (somente iOS)|
-|Propriedadesdisableprotectionofmanagedoutboundopenindata|Boolean|Desabilitar a proteção de dados transferidos para outros aplicativos por meio da opção abrir do IOS. Essa configuração só pode ser true quando AllowedOutboundDataTransferDestinations está definida como ManagedApps. (somente iOS)|
-|protectInboundDataFromUnknownSources|Boolean|Proteger dados de entrada de fonte desconhecida. Essa configuração só poderá ser true quando AllowedInboundDataTransferSources estiver definido como myapps. (somente iOS)|
+|thirdPartyKeyboardsBlocked|Booliano|Define se os teclados de terceiros são permitidos ao acessar um aplicativo gerenciado. (somente iOS)|
+|filterOpenInToOnlyManagedApps|Booliano|Define se a operação de abertura é suportada do aplicativo gerenciado para os locais de compartilhamento de filesharing selecionados. Essa configuração aplica-se somente quando AllowedOutboundDataTransferDestinations é definida como ManagedApps e Propriedadesdisableprotectionofmanagedoutboundopenindata é definida como false. (somente iOS)|
+|Propriedadesdisableprotectionofmanagedoutboundopenindata|Booliano|Desabilitar a proteção de dados transferidos para outros aplicativos por meio da opção abrir do IOS. Essa configuração só pode ser true quando AllowedOutboundDataTransferDestinations está definida como ManagedApps. (somente iOS)|
+|protectInboundDataFromUnknownSources|Booliano|Proteger dados de entrada de fonte desconhecida. Essa configuração só poderá ser true quando AllowedInboundDataTransferSources estiver definido como myapps. (somente iOS)|
 |requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Define o requisito de atestado de dispositivo do SafetyNet do Android para que um aplicativo gerenciado funcione. Os valores possíveis são: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, avisar ou bloquear, se o SafetyNet de atestado do Android especificado falhar. Os valores possíveis são: `block`, `wipe`, `warn`.|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Define o requisito de verificação de aplicativos do Android SafetyNet para que um aplicativo gerenciado funcione. Os valores possíveis são: `none` e `enabled`.|
@@ -122,11 +122,13 @@ Herda de [managedAppProtection](../resources/intune-mam-managedappprotection.md)
 |customDialerAppProtocol|String|Protocolo de um aplicativo de discagem personalizado para clicar para abrir um número de telefone no iOS, por exemplo, Skype:.|
 |customDialerAppPackageId|String|PackageID de um aplicativo de discagem personalizado para clicar para abrir um número de telefone no Android.|
 |customDialerAppDisplayName|String|Nome amigável de um aplicativo de discador personalizado para abrir um número de telefone no Android.|
-|biometricAuthenticationBlocked|Boolean|Indica se o uso da autenticação biométrica será permitido no lugar de um PIN se PinRequired estiver definido como true. (Somente Android)|
+|biometricAuthenticationBlocked|Booliano|Indica se o uso da autenticação biométrica será permitido no lugar de um PIN se PinRequired estiver definido como true. (Somente Android)|
 |requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Define o requisito de tipo de avaliação do Android SafetyNet para que um aplicativo gerenciado funcione. (Android somente). Os valores possíveis são: `basic` e `hardwareBacked`.|
 |blockAfterCompanyPortalUpdateDeferralInDays|Int32|Número máximo de dias que a atualização do portal da empresa pode ser adiada no dispositivo ou o acesso ao aplicativo será bloqueado.|
 |warnAfterCompanyPortalUpdateDeferralInDays|Int32|Número máximo de dias que a atualização do portal da empresa pode ser adiada no dispositivo, ou o usuário receberá o aviso|
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Número máximo de dias que a atualização do portal da empresa pode ser adiada no dispositivo ou os dados da empresa no aplicativo serão apagados|
+|deviceLockRequired|Booliano|Define se qualquer tipo de bloqueio deve ser necessário em Device. (somente Android)|
+|appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, tanto avisar, bloquear ou apagar, se o bloqueio de tela for necessário no dispositivo, mas não estiver definido. (Android somente). Os valores possíveis são: `block`, `wipe`, `warn`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -260,10 +262,11 @@ Veja a seguir uma representação JSON do recurso.
   "requiredAndroidSafetyNetEvaluationType": "String",
   "blockAfterCompanyPortalUpdateDeferralInDays": 1024,
   "warnAfterCompanyPortalUpdateDeferralInDays": 1024,
-  "wipeAfterCompanyPortalUpdateDeferralInDays": 1024
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 1024,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "String"
 }
 ```
-
 
 
 

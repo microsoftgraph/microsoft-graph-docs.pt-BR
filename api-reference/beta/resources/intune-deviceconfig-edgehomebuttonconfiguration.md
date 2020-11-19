@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7dbdea87d953694823bff1e3c8642ed72f65929b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4635ddf0f60e7ad9fef4b7e95343ed7920a54993
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732604"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294701"
 ---
 # <a name="edgehomebuttonconfiguration-resource-type"></a>tipo de recurso edgeHomeButtonConfiguration
 
@@ -41,7 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.edgeHomeButtonConfiguration"
 }
 ```
-
 
 
 
