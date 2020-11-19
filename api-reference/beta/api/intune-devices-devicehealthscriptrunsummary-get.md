@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 542392c7a250f9632907e382bbd5a7a04fc8d0ec
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1d61e62fa513e7d8921ffa71e5690089be3d8577
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733474"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235074"
 ---
 # <a name="get-devicehealthscriptrunsummary"></a>Obter deviceHealthScriptRunSummary
 
@@ -87,7 +87,6 @@ Content-Length: 586
   }
 }
 ```
-
 
 
 

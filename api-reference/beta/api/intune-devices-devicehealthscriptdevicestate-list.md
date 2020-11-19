@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c34e8d285794afa182fc3bf5d566439293707974
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cd93b7f0b1a978f5be67381aa5e2416f24db028d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732792"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235123"
 ---
 # <a name="list-devicehealthscriptdevicestates"></a>Listar deviceHealthScriptDeviceStates
 
@@ -86,7 +86,6 @@ Content-Length: 892
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec414ff46da6c04d934eb689550e17f4922d49e5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 73192336e835ba9366e83fabdb6385772f906cf0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726812"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235186"
 ---
 # <a name="areglobalscriptsavailable-function"></a>função areGlobalScriptsAvailable
 
@@ -71,7 +71,6 @@ Content-Length: 26
   "value": "pending"
 }
 ```
-
 
 
 

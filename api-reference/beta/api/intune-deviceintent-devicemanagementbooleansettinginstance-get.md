@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3fb400d9e8fbee43bd4d07257dba30f5c905bbb6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3f22731deb5fa91f39bc19f18b0f8b7e7c6562ca
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698761"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235389"
 ---
 # <a name="get-devicemanagementbooleansettinginstance"></a>Obter deviceManagementBooleanSettingInstance
 
@@ -83,7 +83,6 @@ Content-Length: 254
   }
 }
 ```
-
 
 
 
