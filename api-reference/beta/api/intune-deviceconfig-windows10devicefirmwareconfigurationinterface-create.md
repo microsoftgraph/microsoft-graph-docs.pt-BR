@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7536a8f518b4b8d4bc55063ba8b45eab90777446
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e0efe13dd839e45ad2cfeb390e3600eaa5b4d6dd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725691"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49236215"
 ---
 # <a name="create-windows10devicefirmwareconfigurationinterface"></a>Criar windows10DeviceFirmwareConfigurationInterface
 
@@ -176,7 +176,6 @@ Content-Length: 1481
   "bootFromBuiltInNetworkAdapters": "enabled"
 }
 ```
-
 
 
 

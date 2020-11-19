@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e67cc0300f8115801102abcae6fa9b685b19946
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2ad8b952bba9d5f0d668770de850e3d6ac9189cf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723417"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235942"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Criar windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -176,7 +176,6 @@ Content-Length: 1775
   "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5059a242979623de599ec5bdf2b1ba4e3c353d4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ad41dbf61c8fe894b28c911bcfa7221c3c40eab2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731803"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49236481"
 ---
 # <a name="list-macossoftwareupdatecategorysummaries"></a>Listar macOSSoftwareUpdateCategorySummaries
 
@@ -84,7 +84,6 @@ Content-Length: 495
   ]
 }
 ```
-
 
 
 

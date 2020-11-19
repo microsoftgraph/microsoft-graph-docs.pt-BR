@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a18a83ac42429e327d83a4f329ff3c593b4e10b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0c33201c5585eabf0119bf512aff01aee3545265
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707469"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49236152"
 ---
 # <a name="get-windows10devicefirmwareconfigurationinterface"></a>Obter windows10DeviceFirmwareConfigurationInterface
 
@@ -116,7 +116,6 @@ Content-Length: 1578
   }
 }
 ```
-
 
 
 
