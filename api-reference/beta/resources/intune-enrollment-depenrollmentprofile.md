@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 025b104ea43745c3885806ec977e277e8dc3a68e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4ad989e47d6afd6faf5a8473cfaa216c0598c7f8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724400"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207369"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>tipo de recurso depEnrollmentProfile
 
@@ -122,7 +122,6 @@ Veja a seguir uma representação JSON do recurso.
   "enableSharedIPad": true
 }
 ```
-
 
 
 

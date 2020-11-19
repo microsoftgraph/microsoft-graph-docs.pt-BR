@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 368240b4af3ec56eb0bc53363cce1de0f47e8a3d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b2a7f669705eab975a158226cc5df8e6e12149bd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725880"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207362"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>tipo de recurso depIOSEnrollmentProfile
 
@@ -158,7 +158,6 @@ Veja a seguir uma representação JSON do recurso.
   "updateCompleteScreenDisabled": true
 }
 ```
-
 
 
 

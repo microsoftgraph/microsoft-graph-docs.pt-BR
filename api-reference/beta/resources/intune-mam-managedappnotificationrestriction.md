@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b7554c1203c1088e9a810f104444435a1c4a6f7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f925830d1608718612755841f1fad7d41fa50874
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684530"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207271"
 ---
 # <a name="managedappnotificationrestriction-enum-type"></a>tipo de enumeração managedAppNotificationRestriction
 
@@ -28,7 +28,6 @@ Restringir notificação de aplicativo gerenciado
 |permitiu|,0|Compartilhar todas as notificações.|
 |blockOrganizationalData|1|Não compartilhe dados do Orgnizational em notificações.|
 |Larga|duas|Não compartilhe notificações.|
-
 
 
 

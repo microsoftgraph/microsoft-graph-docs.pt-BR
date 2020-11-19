@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 63ac9a9e5f6dd153238ea2666cf0bffd88ebf9da
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b2651aa9fad173654d8fff554bdf89f7ab36da14
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731033"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207558"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>tipo de recurso Windowsprotectionstate foi
 
@@ -49,6 +49,9 @@ Entidade de status de proteção de dispositivo.
 |lastQuickScanSignatureVersion|String|Versão da última assinatura de verificação rápida|
 |lastFullScanSignatureVersion|String|Versão da última assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Hora do último status de integridade do dispositivo relatado|
+|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Status do produto do Windows Defender antivírus. Os valores possíveis são:,,,,,,,,,,,,,,, `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` , `serviceShutdownAsPartOfSystemShutdown` , `threatRemediationFailedCritically` , `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` ,,,,,,,,,,,,,,,.|
+|isVirtualMachine|Booliano|Indica se o dispositivo é uma máquina virtual.|
+|tamperProtectionEnabled|Booliano|Indica se o recurso proteção de violação do Windows Defender está habilitado.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -83,10 +86,12 @@ Veja a seguir uma representação JSON do recurso.
   "lastFullScanDateTime": "String (timestamp)",
   "lastQuickScanSignatureVersion": "String",
   "lastFullScanSignatureVersion": "String",
-  "lastReportedDateTime": "String (timestamp)"
+  "lastReportedDateTime": "String (timestamp)",
+  "productStatus": "String",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
-
 
 
 

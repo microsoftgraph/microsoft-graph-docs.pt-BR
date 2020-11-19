@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06429a6c6540b5c4e0855fbfaaa7493fd6ad1d52
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5894cfd124bda03b2c3854de72a71a6e6d3e7b62
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735733"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49206046"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>Criar iosDeviceFeaturesConfiguration
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -90,7 +90,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6716
+Content-length: 6758
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -207,7 +207,8 @@ Content-length: 6716
       "showOnLockScreen": true,
       "alertType": "banner",
       "badgesEnabled": true,
-      "soundsEnabled": true
+      "soundsEnabled": true,
+      "previewVisibility": "alwaysShow"
     }
   ],
   "singleSignOnSettings": {
@@ -302,7 +303,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6888
+Content-Length: 6930
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -422,7 +423,8 @@ Content-Length: 6888
       "showOnLockScreen": true,
       "alertType": "banner",
       "badgesEnabled": true,
-      "soundsEnabled": true
+      "soundsEnabled": true,
+      "previewVisibility": "alwaysShow"
     }
   ],
   "singleSignOnSettings": {
@@ -511,7 +513,6 @@ Content-Length: 6888
   }
 }
 ```
-
 
 
 

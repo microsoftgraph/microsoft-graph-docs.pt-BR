@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3691b72341be26695c151b4b304766b99de37f41
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 897995ac6a2e2ea539863c8551ef7389455553e1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691222"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207145"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>Tipo de recurso windowsInformationProtectionStoreApp
 
@@ -54,7 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "denied": true
 }
 ```
-
 
 
 

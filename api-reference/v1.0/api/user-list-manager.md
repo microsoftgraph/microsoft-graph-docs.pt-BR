@@ -5,19 +5,21 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 28ce8fbf8fc14998f502ec1487d8a34f59c0d3c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9df52fa26407cd5b08a3b8cb69ac156bc996925
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091963"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086778"
 ---
 # <a name="list-manager"></a>Listar gerente
 
 Namespace: microsoft.graph
 
-Obtenha o gerente do usuário. Retorna o usuário ou o contato organizacional atribuído como gerente do usuário.
+Retorna o usuário ou o contato organizacional atribuído como gerente do usuário. Opcionalmente, você pode expandir a cadeia do gerente ao nó raiz.
+
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -29,27 +31,56 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Obtenha o gerente:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
+Obtenha a cadeia de gerenciamento:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me?$expand=manager
+GET /users?$expand=manager($levels=max)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.  
+
+Se sua solicitação incluir o parâmetro `$expand=manager($levels=max)` para obter a cadeia do gerente, você também deverá incluir o seguinte:
+
+- `$count=true` parâmetro de cadeia de caracteres de consulta
+- `ConsistencyLevel=eventual` cabeçalho da solicitação
+
+>**Observação:** `max` é o único valor permitido para `$levels`.
+> Quando o parâmetro `$level` não for especificado, apenas o gerente imediato será retornado.  
+> Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades dos gerentes individuais: `$expand=manager($levels=max;$select=id,displayName)`
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
+| ConsistencyLevel | eventual. Obrigatório quando a solicitação inclui o parâmetro `$expand=manager($levels=max)`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-manager"></a>Exemplo 1: obtenha o gerente
+
+O exemplo a seguir mostra uma solicitação para obter o gerente.
+
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -77,13 +108,14 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
->**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. 
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado para fins de legibilidade.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
   "isCollection": false
 } -->
 ```http
@@ -91,22 +123,59 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "objectType": "User",
-  "id": "111048d2-2761-4347-b978-07354283363b",
-  "accountEnabled": true,
-  "city": "San Diego",
-  "country": "United States",
-  "department": "Sales & Marketing",
+  "id": "<user-id>",
   "displayName": "Sara Davis",
-  "givenName": "Sara",
   "jobTitle": "Finance VP",
   "mail": "SaraD@contoso.onmicrosoft.com",
-  "mailNickname": "SaraD",
-  "state": "CA",
-  "streetAddress": "9256 Towne Center Dr., Suite 400",
-  "surname": "Davis",
-  "usageLocation": "US",
   "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
+}
+```
+
+### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>Exemplo 2: obtenha a cadeia de gerentes ao nível raiz
+
+O exemplo a seguir mostra uma solicitação para obter a cadeia de gerentes ao nível raiz.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_transitive_managers"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta. Os gerentes transitivos são exibidos hierarquicamente.
+
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado para fins de legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": false
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "<user1-id>",
+    "displayName": "Individual Contributor",
+    "manager": {
+        "id": "<manager1-id>",
+        "displayName": "Manager 1",
+        "manager": {
+            "id": "<manager2-id>",
+            "displayName": "Manager 2",
+            "manager": {
+                "id": "<manager3-id>",
+                "displayName": "Manager 3"
+            }
+        }
+    }
 }
 ```
 
@@ -121,4 +190,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

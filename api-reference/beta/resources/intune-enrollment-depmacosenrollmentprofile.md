@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d12af36b4502fd7b3969c24dcf7ab05066a916c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f9494f616acd244810dd4abfc723756a6e47fd6e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725845"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207250"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>tipo de recurso depMacOSEnrollmentProfile
 
@@ -122,7 +122,6 @@ Veja a seguir uma representação JSON do recurso.
   "accessibilityScreenDisabled": true
 }
 ```
-
 
 
 

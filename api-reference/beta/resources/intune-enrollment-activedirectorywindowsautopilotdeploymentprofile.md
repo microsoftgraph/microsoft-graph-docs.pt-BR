@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 57682aba221494626c0b5d9acef1c01d979a77b0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1a69ea5b5a981b8435234e65fd6356007e2f973d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731026"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207551"
 ---
 # <a name="activedirectorywindowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -105,7 +105,6 @@ Veja a seguir uma representação JSON do recurso.
   "hybridAzureADJoinSkipConnectivityCheck": true
 }
 ```
-
 
 
 

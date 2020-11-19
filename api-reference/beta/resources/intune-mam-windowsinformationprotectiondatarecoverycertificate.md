@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4ad031e97d6511280517ef1e9c3b30141c7125c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ae0e8f6f09470d58669acb5123e25a13c6a51dd9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727180"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207256"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>Tipo de recurso windowsInformationProtectionDataRecoveryCertificate
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificate": "binary"
 }
 ```
-
 
 
 

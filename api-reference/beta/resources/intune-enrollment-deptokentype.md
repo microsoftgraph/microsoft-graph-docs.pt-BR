@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a684d92988b87daa2f12de9df302e424672e7c14
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 67703fd310f2e907c66c618b8f8ca3b81e58b708
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725859"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207264"
 ---
 # <a name="deptokentype-enum-type"></a>tipo de enumeração depTokenType
 
@@ -25,10 +25,9 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|O tipo de token é nenhum|
+|nenhum|,0|O tipo de token é nenhum|
 |baseada|1|O tipo de token é Dep.|
 |appleSchoolManager|duas|Tipo de token é gerente Apple School|
-
 
 
 
