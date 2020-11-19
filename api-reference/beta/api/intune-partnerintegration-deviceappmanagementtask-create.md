@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9cbc2b48ccdd168bc4b9c175f4ca2d51d2f6b9c7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 81771048e4a1c8868358a0a9d5eb66bd3843fec3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726707"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49285300"
 ---
 # <a name="create-deviceappmanagementtask"></a>Criar deviceAppManagementTask
 
@@ -115,7 +115,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
 
 
 

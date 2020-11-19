@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ae254a13a3553bcb756f2cb91171efa226b9f90
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: db7d45945d9427e666b629b120c47575da002d37
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734319"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49285699"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>Atualizar windowsInformationProtectionPolicy
 
@@ -396,7 +396,6 @@ Content-Length: 4537
   "daysWithoutContactBeforeUnenroll": 0
 }
 ```
-
 
 
 

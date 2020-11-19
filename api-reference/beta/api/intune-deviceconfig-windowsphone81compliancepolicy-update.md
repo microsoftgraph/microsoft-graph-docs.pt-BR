@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7eb3346415b36b273f0fe7a8e3a4d3a8a172f99b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 81d09436a7a328763f6a3d6d3c71b4865d8c85e2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735614"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286455"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>Atualizar windowsPhone81CompliancePolicy
 
@@ -139,7 +139,6 @@ Content-Length: 841
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee1a85e23e9fc97a3b9b5847fd6a197cd2a61e7c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6a22af14d9cb9991f144c6df22680a1bcb0747b9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723354"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286566"
 ---
 # <a name="update-windowsdeliveryoptimizationconfiguration"></a>Atualizar windowsDeliveryOptimizationConfiguration
 
@@ -229,7 +229,6 @@ Content-Length: 2211
   "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
 }
 ```
-
 
 
 

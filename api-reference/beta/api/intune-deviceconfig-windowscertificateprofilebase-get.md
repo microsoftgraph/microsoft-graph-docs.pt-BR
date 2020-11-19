@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 148ea0cedf101364b2407878356c28a5ddb626b0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0657f8910548a5a4f662e3da3aeeecb1a6283dfb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723515"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286595"
 ---
 # <a name="get-windowscertificateprofilebase"></a>Obter windowsCertificateProfileBase
 
@@ -114,7 +114,6 @@ Content-Length: 1576
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Obter windowsInformationProtectionWipeAction
-description: Leia as propriedades e as relações do objeto windowsInformationProtectionWipeAction.
+title: função getPolicySummary
+description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c901a463c989ab281d60b10bcb056e643b511cba
+ms.openlocfilehash: f1076a9870b62d069e3f4c572aef418c08e8f764
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49285636"
+ms.locfileid: "49301486"
 ---
-# <a name="get-windowsinformationprotectionwipeaction"></a>Obter windowsInformationProtectionWipeAction
+# <a name="getpolicysummary-function"></a>função getPolicySummary
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e as relações do objeto [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) .
+Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,11 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInformationProtectionWipeActionId}
+GET /deviceManagement/configManagerCollections/getPolicySummary
 ```
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
@@ -50,17 +47,24 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
+Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
+A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|PolicyId|String|Ainda não documentado|
+
+
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e um [configManagerPolicySummary](../resources/intune-partnerintegration-configmanagerpolicysummary.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInformationProtectionWipeActionId}
+GET https://graph.microsoft.com/beta/deviceManagement/configManagerCollections/getPolicySummary(policyId='parameterValue')
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,18 +72,17 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 496
+Content-Length: 276
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windowsInformationProtectionWipeAction",
-    "id": "2620a996-a996-2620-96a9-202696a92026",
-    "status": "pending",
-    "targetedUserId": "Targeted User Id value",
-    "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
-    "targetedDeviceName": "Targeted Device Name value",
-    "targetedDeviceMacAddress": "Targeted Device Mac Address value",
-    "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
+    "@odata.type": "microsoft.graph.configManagerPolicySummary",
+    "targetedDeviceCount": 3,
+    "compliantDeviceCount": 4,
+    "nonCompliantDeviceCount": 7,
+    "failedDeviceCount": 1,
+    "pendingDeviceCount": 2,
+    "enforcedDeviceCount": 3
   }
 }
 ```

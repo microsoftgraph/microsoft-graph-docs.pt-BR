@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d53bb018599e8c326e223c1fd2565e2777cec7b9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e4d9bb5e25582ae1a2eba0c98a1bafcda6a9c146
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727826"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287043"
 ---
 # <a name="update-windows10customconfiguration"></a>Atualizar windows10CustomConfiguration
 
@@ -80,7 +80,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1243
+Content-length: 1271
 
 {
   "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
@@ -117,7 +117,8 @@ Content-length: 1243
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
@@ -128,7 +129,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1415
+Content-Length: 1443
 
 {
   "@odata.type": "#microsoft.graph.windows10CustomConfiguration",
@@ -168,12 +169,12 @@ Content-Length: 1415
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
 ```
-
 
 
 

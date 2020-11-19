@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20bdb9b445f34b28476753544d676c7ca5009230
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1a116274408502a2d92fb85c831e449397d96eb4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735607"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286434"
 ---
 # <a name="create-windowsphone81customconfiguration"></a>Criar windowsPhone81CustomConfiguration
 
@@ -79,7 +79,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1248
+Content-length: 1276
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CustomConfiguration",
@@ -116,7 +116,8 @@ Content-length: 1248
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
@@ -127,7 +128,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1420
+Content-Length: 1448
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CustomConfiguration",
@@ -167,12 +168,12 @@ Content-Length: 1420
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
 ```
-
 
 
 

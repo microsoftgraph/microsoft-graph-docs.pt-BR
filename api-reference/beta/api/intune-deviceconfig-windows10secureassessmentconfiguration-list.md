@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d4aa4f49f06a6a171e3c241926188c99aee80d8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c14cb75b24d27fbe37d7021992e062c8cd7dd973
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734585"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286868"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Listar windows10SecureAssessmentConfigurations
 
@@ -115,7 +115,6 @@ Content-Length: 1768
   ]
 }
 ```
-
 
 
 

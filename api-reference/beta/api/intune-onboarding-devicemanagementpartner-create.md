@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8071faa05c61eeb0caa42e1c56de3ad6c84cacfa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8fc6a768edbfdc51886e4bc55efb428a156e460c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727651"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49285566"
 ---
 # <a name="create-devicemanagementpartner"></a>Criar deviceManagementPartner
 
@@ -137,7 +137,6 @@ Content-Length: 1121
   ]
 }
 ```
-
 
 
 

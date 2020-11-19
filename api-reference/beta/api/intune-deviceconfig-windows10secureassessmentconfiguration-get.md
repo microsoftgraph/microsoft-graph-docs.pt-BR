@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 301acd8c6f2002424dceebadbabb46a1c0db0922
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 59379ff587c9dd957b9bf42801b90bc86697c3b7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734592"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286875"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>Acessar windows10SecureAssessmentConfiguration
 
@@ -117,7 +117,6 @@ Content-Length: 1674
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: affb0642a71c2eac8546964f5fc0e97af6d9e2d1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c2abfe37e1f496a636df4cc54c1e444a6408d275
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723473"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286798"
 ---
 # <a name="update-windows81vpnconfiguration"></a>Atualizar windows81VpnConfiguration
 
@@ -208,7 +208,6 @@ Content-Length: 1960
   }
 }
 ```
-
 
 
 

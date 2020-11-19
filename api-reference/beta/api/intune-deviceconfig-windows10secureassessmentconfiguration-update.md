@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4df3b4b75592f23539f6bbb2392e1bff00f72655
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 880d0e9b76bead2399f5622d6525810b38f1f027
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734578"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286847"
 ---
 # <a name="update-windows10secureassessmentconfiguration"></a>Atualizar windows10SecureAssessmentConfiguration
 
@@ -180,7 +180,6 @@ Content-Length: 1575
   "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
-
 
 
 

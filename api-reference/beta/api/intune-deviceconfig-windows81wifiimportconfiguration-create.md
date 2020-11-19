@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db676c530a9a3de5eb8a52277ff12dd27f97ee38
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8a3b79c63d75b108ea20949a2dee5759de479b21
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723459"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286770"
 ---
 # <a name="create-windows81wifiimportconfiguration"></a>Criar windows81WifiImportConfiguration
 
@@ -164,7 +164,6 @@ Content-Length: 1326
   "payload": "cGF5bG9hZA=="
 }
 ```
-
 
 
 

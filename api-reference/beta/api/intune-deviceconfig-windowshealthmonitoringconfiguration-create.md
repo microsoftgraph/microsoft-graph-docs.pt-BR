@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 811c63f658ce40b835288cf7af9c719dba220b2a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 10473955ce7ef13848dd7fcd85e68bd31974d4c2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729212"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286560"
 ---
 # <a name="create-windowshealthmonitoringconfiguration"></a>Criar windowsHealthMonitoringConfiguration
 
@@ -164,7 +164,6 @@ Content-Length: 1416
   "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
 
 
 

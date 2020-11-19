@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d41e360c985aaced6a3a14b28eb6fab973a1d84
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2897ee2856041bfcf2c49e0257b0b0f1cde11ead
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731607"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49285475"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Atualizar windows10EnrollmentCompletionPageConfiguration
 
@@ -143,7 +143,6 @@ Content-Length: 918
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
 
 
 
