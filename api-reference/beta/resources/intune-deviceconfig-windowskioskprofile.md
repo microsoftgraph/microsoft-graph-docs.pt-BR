@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a8b1291960ee5b2e7b541c982d2bc28f5b3e6fd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c69c8d32be23dccc935d1de74b0a450850091722
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729501"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268213"
 ---
 # <a name="windowskioskprofile-resource-type"></a>tipo de recurso windowsKioskProfile
 
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

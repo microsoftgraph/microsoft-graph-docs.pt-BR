@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cffd21f398751dfc4a062f0525d83efdbf381c35
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9b5db15c780491e592e9a998fcd09b32354db68e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725138"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266064"
 ---
 # <a name="settingsourcetype-enum-type"></a>tipo de enumeração settingSourceType
 
@@ -27,7 +27,6 @@ Ainda não documentado
 |:---|:---|:---|
 |deviceConfiguration|,0|Ainda não documentado|
 |deviceIntent|1|Ainda não documentado|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a66d99e96f8e7844fad01a4920c06295cf8cd3dd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5738ccfad89b069361568fa5d285940b9fc72d87
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684579"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267016"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>tipo de enumeração managedAppDataIngestionLocation
 
@@ -28,7 +28,6 @@ Locais que podem ser usados para trazer dados para documentos de organização
 |oneDriveForBusiness|1|OneDrive for business|
 |Do|duas|SharePoint Online|
 |Câmara|3D|A câmera do dispositivo|
-
 
 
 

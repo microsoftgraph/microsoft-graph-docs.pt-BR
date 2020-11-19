@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1438a72b5e251b79ad10593ece681fa59a58c973
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 957670eec5e73f56dff2518936e98d0dfb0fbc33
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729422"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268164"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>tipo de recurso windowsKioskSingleUWPApp
 
@@ -55,7 +55,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

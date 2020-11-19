@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e57afb0a878248e761d11434825f1d0c9403a6c5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1bc52b0fa05a65adfb3e195d0a38c9bebd78e6c3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684621"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267030"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>tipo de enumeração managedAppDataEncryptionType
 
@@ -29,7 +29,6 @@ Representa o nível ao qual os dados do aplicativo são criptografados para apli
 |afterDeviceRestart|1|Os dados do aplicativo são criptografados quando o dispositivo é reiniciado.|
 |whenDeviceLockedExceptOpenFiles|duas|Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado, exceto dados em arquivos que estão abertos|
 |whenDeviceLocked|3D|Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fed773a22ba0e538785211ece7849669efd9d383
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2acf8fd19bcbadcbe6cb2371bf357babd4889b7b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725523"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267842"
 ---
 # <a name="apploguploadstate-enum-type"></a>tipo de enumeração appLogUploadState
 
@@ -28,7 +28,6 @@ AppLogUploadStatus
 |função|,0|A solicitação está aguardando processamento ou sob processamento|
 |Completed|1|A solicitação foi concluída com o arquivo carregado no blob do Azure para download.|
 |falhou|duas|Solicitar processamento concluído e em estado de erro.|
-
 
 
 

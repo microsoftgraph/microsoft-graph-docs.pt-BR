@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3519425c2f063951a0de9f800b37d7ef27827537
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 15345a653db3bfb0f05f77b0b82ad0b8c85fd97a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726308"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266260"
 ---
 # <a name="devicemanagementderivedcredentialissuer-enum-type"></a>tipo de enumeração deviceManagementDerivedCredentialIssuer
 
@@ -29,7 +29,6 @@ Valores com suporte para o emissor de credenciais derivado.
 |entrustDatacard|1|Cartão de Entrust|
 |purebred|duas|Purebred|
 |xTec|3D|XTec|
-
 
 
 

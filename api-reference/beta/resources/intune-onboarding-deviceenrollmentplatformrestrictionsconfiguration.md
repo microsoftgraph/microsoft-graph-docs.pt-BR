@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77305c9744b713c2eee8145b67c6fa6e0ec1fa09
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5fd3c392bc752db695611d9a55c1fe5cd634ec64
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730977"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266554"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -51,6 +51,7 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenroll
 |windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições do Windows Mobile com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições do Android com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 |androidForWorkRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|O Android para restrições de trabalho com base na plataforma, na versão do sistema operacional da plataforma e na Propriedade do dispositivo|
+|aospRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições de AOSP com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 |macRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições de Mac com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 |macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Restrições de Mac com base na plataforma, versão do sistema operacional da plataforma e Propriedade do dispositivo|
 
@@ -88,6 +89,9 @@ Veja a seguir uma representação JSON do recurso.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "windowsRestriction": {
@@ -97,6 +101,9 @@ Veja a seguir uma representação JSON do recurso.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -108,6 +115,9 @@ Veja a seguir uma representação JSON do recurso.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "windowsMobileRestriction": {
@@ -117,6 +127,9 @@ Veja a seguir uma representação JSON do recurso.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -128,6 +141,9 @@ Veja a seguir uma representação JSON do recurso.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "androidForWorkRestriction": {
@@ -137,6 +153,22 @@ Veja a seguir uma representação JSON do recurso.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
+      "String"
+    ]
+  },
+  "aospRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -148,6 +180,9 @@ Veja a seguir uma representação JSON do recurso.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "macOSRestriction": {
@@ -158,11 +193,13 @@ Veja a seguir uma representação JSON do recurso.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 868c348cd0622a29fed819ac3cfff5b60fba3dc5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 55c279b0ad0cceffc5c0e9c14ec745208f2b8923
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725530"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267899"
 ---
 # <a name="applogdecryptionalgorithm-enum-type"></a>tipo de enumeração appLogDecryptionAlgorithm
 
@@ -26,7 +26,6 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |aes256|,0|Ainda não documentado|
-
 
 
 

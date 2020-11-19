@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a2965a2ba1f30d19e4f755caa0d10676d110f41
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8aec3852f68813d6d42acbec73f76c6e32f9ab92
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730343"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266127"
 ---
 # <a name="mobileappinstalltimesettings-resource-type"></a>tipo de recurso mobileAppInstallTimeSettings
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "deadlineDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

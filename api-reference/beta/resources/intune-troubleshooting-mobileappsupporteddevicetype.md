@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f4089132a9ba98152fab645537dd5f835282ddb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: eb00b67fefecc4ef78e19e2c6e053b274e4145d4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735978"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266071"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>tipo de recurso mobileAppSupportedDeviceType
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "maximumOperatingSystemVersion": "String"
 }
 ```
-
 
 
 

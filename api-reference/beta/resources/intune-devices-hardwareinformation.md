@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aba75cb97b15253932eda90dbd252fde640f8461
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2ad6b9c6681f8bca347e2b979570674ba64ca2e9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697655"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267387"
 ---
 # <a name="hardwareinformation-resource-type"></a>tipo de recurso hardwareInformation
 
@@ -42,7 +42,7 @@ Informações de hardware de um determinado dispositivo.
 |batterySerialNumber|String|O número de série da bateria atual do dispositivo|
 |batteryHealthPercentage|Int32|A porcentagem de integridade da bateria atual do dispositivo. Valores válidos de 0 a 100|
 |batteryChargeCycles|Int32|O número de ciclos de carga que a bateria atual do dispositivo passou. Valores válidos de 0 a 2147483647|
-|isSharedDevice|Boolean|IPad compartilhado|
+|isSharedDevice|Booliano|IPad compartilhado|
 |sharedDeviceCachedUsers|coleção [sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)|Todos os usuários no dispositivo Apple compartilhado|
 |tpmSpecificationVersion|String|Cadeia de caracteres que especifica a versão da especificação.|
 |operatingSystemEdition|String|Cadeia de caracteres que especifica a edição do sistema operacional.|
@@ -107,7 +107,6 @@ Veja a seguir uma representação JSON do recurso.
   "subnetAddress": "String"
 }
 ```
-
 
 
 

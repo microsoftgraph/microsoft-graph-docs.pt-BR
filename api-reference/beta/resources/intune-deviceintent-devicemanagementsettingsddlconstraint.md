@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ec3024dc7710079ea5ef2d540ece1779d6564f7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 06019aa344eba506fe4829a8b737728bed3b0847
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730423"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267919"
 ---
 # <a name="devicemanagementsettingsddlconstraint-resource-type"></a>tipo de recurso deviceManagementSettingSddlConstraint
 
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceManagementSettingSddlConstraint"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db0f57052cb8b6b9adc83064248c4e61e998de27
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7e3537773b0a3ade659e9b9e0ba4c61c5f7f6c03
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736027"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266155"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>tipo de recurso microsoftStoreForBusinessAppAssignmentSettings
 
@@ -46,7 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "useDeviceContext": true
 }
 ```
-
 
 
 

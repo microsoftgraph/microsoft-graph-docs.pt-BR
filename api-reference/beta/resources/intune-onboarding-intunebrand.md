@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a839029e79bb88fc134054a5732c6d1e2ab21127
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d97ecb5a0cb55ca717da3ceb6870d71c70df199a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733256"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266526"
 ---
 # <a name="intunebrand-resource-type"></a>Tipo de recurso intuneBrand
 
@@ -121,7 +121,6 @@ Veja a seguir uma representação JSON do recurso.
   "disableClientTelemetry": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32a77c6922e3b03f3cdca4b7fe0778781a7f8eff
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9c3c3c1f07a6fa0cd5d9ea4ad764e67753f840e9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725537"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267884"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>tipo de recurso appLogCollectionRequest
 
@@ -64,7 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "completedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 
