@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c983236968a2e64706ed1782fec7d745e67d4307
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0b37887607490666a26b68afe9ebf14e083cda51
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691712"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310304"
 ---
 # <a name="getfilevaultkey-function"></a>função getFileVaultKey
 
@@ -77,7 +77,6 @@ Content-Length: 43
   "value": "Get File Vault Key value"
 }
 ```
-
 
 
 

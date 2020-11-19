@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d7eabef1b32d22e8aba99fde2a69618bcfb194d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ce3d47f70d87f517b5dee69dd7e8469a54f4b6d7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735894"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309947"
 ---
 # <a name="delete-windowsmanageddevice"></a>Excluir windowsManagedDevice
 
@@ -71,7 +71,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

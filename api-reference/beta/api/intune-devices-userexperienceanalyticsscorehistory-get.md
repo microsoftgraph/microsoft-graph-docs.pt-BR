@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad44acc4daf7ccda28290565462368c22b61d7cf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4dfb0b9f6da5b98ed75dc2206bd26b490e889f92
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703157"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309996"
 ---
 # <a name="get-userexperienceanalyticsscorehistory"></a>Obter userExperienceAnalyticsScoreHistory
 
@@ -83,7 +83,6 @@ Content-Length: 350
   }
 }
 ```
-
 
 
 

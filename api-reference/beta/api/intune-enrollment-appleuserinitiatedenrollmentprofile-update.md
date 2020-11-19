@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bcd6ed9ee78ec96c189ae06d071f465da4659c3d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1ec83d3d9f4e8ca06d9f0f92752e9655b9fb469c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709449"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309687"
 ---
 # <a name="update-appleuserinitiatedenrollmentprofile"></a>Atualizar appleUserInitiatedEnrollmentProfile
 
@@ -120,7 +120,6 @@ Content-Length: 611
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

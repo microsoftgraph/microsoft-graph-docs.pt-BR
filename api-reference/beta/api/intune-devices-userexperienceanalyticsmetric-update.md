@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3686ec969ab04e797bf079128a3b5896a5e8b20
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cbd083bc466bf06d17abe393c55bdc26c1c49253
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685188"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310038"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>Atualizar userExperienceAnalyticsMetric
 
@@ -96,7 +96,6 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 255da82493beea47914aafddfaa1050a492cdba7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4003fd13bb60fa7626a49953d9fa369a9b34b855
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729121"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309436"
 ---
 # <a name="update-importedappledeviceidentityresult"></a>Atualizar importedAppleDeviceIdentityResult
 
@@ -121,7 +121,6 @@ Content-Length: 652
   "status": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f644b30a1fb63fa5a203f1039a59918b788fd2c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cff6afe7c2857d4e53225b06be5bdec0ca13b3dc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733477"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310136"
 ---
 # <a name="list-userexperienceanalyticsdeviceperformances"></a>Listar userExperienceAnalyticsDevicePerformances
 
@@ -94,7 +94,6 @@ Content-Length: 797
   ]
 }
 ```
-
 
 
 
