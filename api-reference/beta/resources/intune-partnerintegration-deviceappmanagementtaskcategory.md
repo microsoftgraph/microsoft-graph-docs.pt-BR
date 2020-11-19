@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d11ceaa9d4663d4862490d7da133911e794910d9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: eb52f2fa9c891694f3b125c438bc8a767a9a6129
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735187"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222489"
 ---
 # <a name="deviceappmanagementtaskcategory-enum-type"></a>tipo de enumeração deviceAppManagementTaskCategory
 
@@ -27,7 +27,6 @@ Categoria de tarefa de gerenciamento de aplicativo de dispositivo.
 |:---|:---|:---|
 |desconhecido|,0|Fonte desconhecida.|
 |advancedThreatProtection|1|Windows Defender ATP Threat & gerenciamento de vulnerabilidade.|
-
 
 
 

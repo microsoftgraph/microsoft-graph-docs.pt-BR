@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c76a6f62f6d0e5377d3b081be9641d9519b627a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5823e31b920259a12027cc9049a8f478c789ff00
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722912"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223035"
 ---
 # <a name="poweractiontype-enum-type"></a>tipo de enumeração powerActionType
 
@@ -30,7 +30,6 @@ Tipos de ação de energia
 |atividade|duas|Colocar dispositivo em estado de suspensão|
 |hibernação|3D|Colocar o dispositivo no estado de hibernação|
 |parada|4 |Dispositivo de desligamento|
-
 
 
 

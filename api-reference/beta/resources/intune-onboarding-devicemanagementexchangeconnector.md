@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 867c34b5ed8623ec4fafc666bcaf5ca144ac8fdf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 623394ee577389768753d1c729b7d3715134470c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725369"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222601"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>Tipo de recurso deviceManagementExchangeConnector
 
@@ -72,7 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "exchangeOrganization": "String"
 }
 ```
-
 
 
 

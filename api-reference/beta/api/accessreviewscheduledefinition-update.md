@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5eeed9d305c51ebd9a50e6714ba56fe4aea35d27
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 06b69bb9e6defcbadb4694d4042fa3bb690ee0f4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000725"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49221776"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Atualizar accessReviewScheduleDefinition
 
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo                            | AccessReview.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades aceitas para atualizar um accessReviewS
 
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
-| displayName | Cadeia de caracteres | Nome da série de revisão do Access. |
-| descriptionForAdmins | Cadeia de caracteres | Contexto da revisão fornecida aos administradores. |
-| descriptionForReviewers | Cadeia de caracteres | Contexto da revisão fornecida aos revisores. |
-| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações para uma série de análise do Access. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
+| displayName | String | Nome da série de revisão do Access. |
+| descriptionForAdmins | String | Contexto da revisão fornecida aos administradores. |
+| descriptionForReviewers | String | Contexto da revisão fornecida aos revisores. |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | As configurações para uma série de análise do Access. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | revisores | coleção [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|  Define quem é os revisores. Se nenhum for especificado, a revisão será uma autorevisão (os usuários revisaram revisar seu próprio acesso). A propriedade reviewers só será atualizável se os usuários individuais atribuídos forem como revisores. Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). | 
 
 Observe que uma solicitação PUT espera que o objeto completo seja passado, no qual todas as propriedades graváveis são incluídas, e não apenas as propriedades que estão sendo atualizadas.
@@ -70,6 +70,8 @@ Este é um exemplo de atualização do displayName de uma série de análise do 
 No corpo da solicitação, forneça uma representação JSON das novas propriedades do objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewScheduleDefinition"
@@ -113,6 +115,16 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

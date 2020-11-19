@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b611c63d069e0abbf74490406c52af76bf5efa1a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d83b2eb4de1399988380e79e10dddac241232943
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706286"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223931"
 ---
 # <a name="update-devicemanagementderivedcredentialsettings"></a>Atualizar deviceManagementDerivedCredentialSettings
 
@@ -27,11 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Política de acesso de recursos** | DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Política de acesso de recursos** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -66,8 +66,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |**Política de RA**|
 |helpUrl|String|A URL que será acessível aos usuários finais à medida que eles recuperarem uma credencial derivada usando o portal da empresa.|
 |displayName|String|O nome de exibição do perfil.|
-|emissor|deviceManagementDerivedCredentialIssuer|O provedor de credenciais derivado a ser usado. Os valores possíveis são: `intercede`, `entrustDatacard`, `purebred`.|
-|notificationType|deviceManagementDerivedCredentialNotificationType|Os métodos usados para informar ao usuário final para abrir o portal da empresa para entregar os perfis de Wi-Fi, VPN ou email que usam certificados para o dispositivo. Os valores possíveis são: `none`, `companyPortal`, `email`.|
+|emissor|[deviceManagementDerivedCredentialIssuer](../resources/intune-rapolicy-devicemanagementderivedcredentialissuer.md)|O provedor de credenciais derivado a ser usado. Os valores possíveis são: `intercede`, `entrustDatacard`, `purebred`.|
+|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|Os métodos usados para informar ao usuário final para abrir o portal da empresa para entregar os perfis de Wi-Fi, VPN ou email que usam certificados para o dispositivo. Os valores possíveis são: `none`, `companyPortal`, `email`.|
 
 
 ## <a name="response"></a>Resposta
@@ -99,7 +99,6 @@ Content-Length: 132
   "id": "bc650741-0741-bc65-4107-65bc410765bc"
 }
 ```
-
 
 
 

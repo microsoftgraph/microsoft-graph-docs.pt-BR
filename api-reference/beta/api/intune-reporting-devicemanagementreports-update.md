@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a56d5495f714c639a699aa1d5ccebb81ea2b7c83
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e929cdf462e9cb7144e680680c59589ae76e1a09
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698131"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223980"
 ---
 # <a name="update-devicemanagementreports"></a>Atualizar deviceManagementReports
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades de um objeto [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) .
+Atualiza as propriedades de um objeto [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,9 +47,9 @@ PATCH /deviceManagement/reports
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [deviceManagementReports](../resources/intune-shared-devicemanagementreports.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -86,7 +86,6 @@ Content-Length: 114
   "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
 }
 ```
-
 
 
 

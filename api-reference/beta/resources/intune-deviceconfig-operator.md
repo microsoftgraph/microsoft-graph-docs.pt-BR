@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 31332a696f3ca8a5c8962439ceaafd766d76f53c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 99718c56c818bd0d3cc750f092a116337256a0fb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722933"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223112"
 ---
 # <a name="operator-enum-type"></a>tipo de enumeração de operador
 
@@ -25,7 +25,7 @@ Operador para regras.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Operador None.|
+|nenhum|,0|Operador None.|
 |e|1|Operador and.|
 |ou|duas|Operador OR.|
 |é igual a|3D|Operador isequals.|
@@ -36,7 +36,7 @@ Operador para regras.
 |Não entre|8 |Operador não between.|
 |greaterEquals|9 |Operador GreaterEquals.|
 |lessEquals|10 |Operador LessEquals.|
-|dayTimeBetween|11|Operador DayTimeBetween.|
+|dayTimeBetween|11 |Operador DayTimeBetween.|
 |beginsWith|12 |Operador BeginsWith.|
 |notBeginsWith|13 |Operador NotBeginsWith.|
 |endswith|14 |Operador EndsWith.|
@@ -50,7 +50,6 @@ Operador para regras.
 |orderedSetEquals|22|Operador OrderedSetEquals.|
 |subsetOf|23|Operador SubsetOf.|
 |excludesAll|dia|Operador ExcludesAll.|
-
 
 
 

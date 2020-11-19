@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f970716fcc10f89d322dcf884ed39ec726d214a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ee125cf24305da65ecc118b83830296f84494ba8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703591"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222538"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>tipo de recurso windows10EnrollmentCompletionPageConfiguration
 
@@ -45,16 +45,16 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenroll
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação no UTC da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |versão|Int32|A versão da configuração de registro do dispositivo herdada de [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Marcas de escopo de função opcional para as restrições de registro. Herdada do [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|Mostrar ou ocultar o andamento da instalação para o usuário|
-|blockDeviceSetupRetryByUser|Boolean|Permitir que o usuário repita a configuração após a instalação falhar|
-|allowDeviceResetOnInstallFailure|Boolean|Permitir ou bloquear falha de redefinição de dispositivo na instalação|
-|allowLogCollectionOnInstallFailure|Boolean|Permitir ou bloquear coleta de log na falha de instalação|
+|showInstallationProgress|Booliano|Mostrar ou ocultar o andamento da instalação para o usuário|
+|blockDeviceSetupRetryByUser|Booliano|Permitir que o usuário repita a configuração após a instalação falhar|
+|allowDeviceResetOnInstallFailure|Booliano|Permitir ou bloquear falha de redefinição de dispositivo na instalação|
+|allowLogCollectionOnInstallFailure|Booliano|Permitir ou bloquear coleta de log na falha de instalação|
 |customErrorMessage|String|Definir uma mensagem de erro personalizada para mostrar após falha da instalação|
 |installProgressTimeoutInMinutes|Int32|Definir o tempo limite de progresso da instalação em minutos|
-|allowDeviceUseOnInstallFailure|Boolean|Permitir que o usuário continue usando o dispositivo em caso de falha de instalação|
+|allowDeviceUseOnInstallFailure|Booliano|Permitir que o usuário continue usando o dispositivo em caso de falha de instalação|
 |selectedMobileAppIds|Coleção de cadeias de caracteres|Aplicativos selecionados para acompanhar o status de instalação|
-|trackInstallProgressForAutopilotOnly|Boolean|Mostrar apenas o progresso da instalação dos cenários de registro do piloto automático|
-|disableUserStatusTrackingAfterFirstUser|Boolean|Mostrar apenas o progresso da instalação para o primeiro registro post de usuário|
+|trackInstallProgressForAutopilotOnly|Booliano|Mostrar apenas o progresso da instalação dos cenários de registro do piloto automático|
+|disableUserStatusTrackingAfterFirstUser|Booliano|Mostrar apenas o progresso da instalação para o primeiro registro post de usuário|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -96,7 +96,6 @@ Veja a seguir uma representação JSON do recurso.
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
 
 
 

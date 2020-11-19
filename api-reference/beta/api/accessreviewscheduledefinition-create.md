@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9bf7cfb768134ce51e3f06b291da6726fe11a297
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 1dc30208652af0989ab0b6bf0b35ebfdd50bc65d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000727"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49221825"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Criar accessReviewScheduleDefinition
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo                            | AccessReview.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application                            | AccessReview.ReadWrite.All |
 
 O usuário conectado também deve estar em uma função de diretório que permite que eles criem uma revisão do Access.  Para obter mais detalhes, consulte a função e os requisitos de permissão para [revisões do Access](../resources/accessreviewsv2-root.md).
 
@@ -50,12 +50,12 @@ A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
-| displayName | Cadeia de caracteres | Nome da série de revisão do Access. Obrigatório.|
+| displayName | String | Nome da série de revisão do Access. Obrigatório.|
 | descriptionForAdmins | string | Contexto da revisão fornecida aos administradores. Obrigatório. |
   descriptionForReviewers | string | Contexto da revisão fornecida aos revisores. Obrigatório. |
 | escopo | [accessReviewScope](../resources/accessreviewscope.md) | Define o escopo dos usuários revisados em um grupo. Consulte  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Obrigatório.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscheduledefinition.md). | 
-| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações para uma série de análise do Access. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações para uma série de análise do Access. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | revisores | coleção [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem é os revisores. Se nenhum for especificado, a revisão será uma autorevisão (os usuários revisaram revisar seu próprio acesso). Consulte [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
 
 
@@ -69,6 +69,8 @@ Este é um exemplo de criação de uma série de revisão do Access com um usuá
 ### <a name="request"></a>Solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition"
@@ -114,6 +116,12 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
