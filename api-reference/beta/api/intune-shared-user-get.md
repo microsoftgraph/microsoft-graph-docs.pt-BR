@@ -5,42 +5,42 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6bc71598eb87e3d9b5b2fb3cbafd694ba3cb235
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b42c1cdfa87de453ea3ed4aa2d4ada1055014226
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728624"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232169"
 ---
-# <a name="get-user"></a><span data-ttu-id="114ae-103">Obter usuário</span><span class="sxs-lookup"><span data-stu-id="114ae-103">Get user</span></span>
+# <a name="get-user"></a><span data-ttu-id="6939e-103">Obter usuário</span><span class="sxs-lookup"><span data-stu-id="6939e-103">Get user</span></span>
 
-<span data-ttu-id="114ae-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="114ae-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6939e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6939e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="114ae-105">**Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="114ae-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="114ae-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="114ae-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6939e-105">**Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="6939e-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6939e-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="6939e-106">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="114ae-107">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="114ae-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6939e-107">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6939e-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="114ae-108">Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).</span><span class="sxs-lookup"><span data-stu-id="114ae-108">Read properties and relationships of the [user](../resources/intune-shared-user.md) object.</span></span>
+<span data-ttu-id="6939e-108">Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).</span><span class="sxs-lookup"><span data-stu-id="6939e-108">Read properties and relationships of the [user](../resources/intune-shared-user.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="114ae-109">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="114ae-109">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6939e-109">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6939e-109">Prerequisites</span></span>
 
-<span data-ttu-id="114ae-110">Uma das seguintes permissões é necessária para chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="114ae-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="114ae-111">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="114ae-111">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>  <span data-ttu-id="114ae-112">A permissão específica depende do contexto.</span><span class="sxs-lookup"><span data-stu-id="114ae-112">The specific permission depends on the context.</span></span>
+<span data-ttu-id="6939e-110">Uma das seguintes permissões é necessária para chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="6939e-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="6939e-111">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6939e-111">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>  <span data-ttu-id="6939e-112">A permissão específica depende do contexto.</span><span class="sxs-lookup"><span data-stu-id="6939e-112">The specific permission depends on the context.</span></span>
 
-|<span data-ttu-id="114ae-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="114ae-113">Permission type</span></span>|<span data-ttu-id="114ae-114">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="114ae-114">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6939e-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6939e-113">Permission type</span></span>|<span data-ttu-id="6939e-114">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="6939e-114">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="114ae-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="114ae-115">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="114ae-116">&nbsp; &nbsp; **Gerenciamento de dispositivo**</span><span class="sxs-lookup"><span data-stu-id="114ae-116">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="114ae-117">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="114ae-117">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
-| <span data-ttu-id="114ae-118">&nbsp;&nbsp; **Mam**</span><span class="sxs-lookup"><span data-stu-id="114ae-118">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="114ae-119">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="114ae-119">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span> |
-| <span data-ttu-id="114ae-120">&nbsp; &nbsp; **Integração**</span><span class="sxs-lookup"><span data-stu-id="114ae-120">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="114ae-121">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="114ae-121">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-| <span data-ttu-id="114ae-122">&nbsp; &nbsp; **Solução de problemas**</span><span class="sxs-lookup"><span data-stu-id="114ae-122">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="114ae-123">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="114ae-123">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
-|<span data-ttu-id="114ae-124">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="114ae-124">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="114ae-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="114ae-125">Not supported.</span></span>|
-|<span data-ttu-id="114ae-126">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="114ae-126">Application</span></span>||
-| <span data-ttu-id="114ae-127">&nbsp; &nbsp; **Gerenciamento de dispositivo**</span><span class="sxs-lookup"><span data-stu-id="114ae-127">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="114ae-128">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="114ae-128">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
-| <span data-ttu-id="114ae-129">&nbsp;&nbsp; **Mam**</span><span class="sxs-lookup"><span data-stu-id="114ae-129">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="114ae-130">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="114ae-130">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span> |
-| <span data-ttu-id="114ae-131">&nbsp; &nbsp; **Integração**</span><span class="sxs-lookup"><span data-stu-id="114ae-131">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="114ae-132">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="114ae-132">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
-| <span data-ttu-id="114ae-133">&nbsp; &nbsp; **Solução de problemas**</span><span class="sxs-lookup"><span data-stu-id="114ae-133">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="114ae-134">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="114ae-134">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
+|<span data-ttu-id="6939e-115">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6939e-115">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="6939e-116">&nbsp;&nbsp; **Gerenciamento de dispositivos**</span><span class="sxs-lookup"><span data-stu-id="6939e-116">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="6939e-117">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="6939e-117">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
+| <span data-ttu-id="6939e-118">&nbsp;&nbsp; **Mam**</span><span class="sxs-lookup"><span data-stu-id="6939e-118">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="6939e-119">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="6939e-119">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span> |
+| <span data-ttu-id="6939e-120">&nbsp; &nbsp; **Integração**</span><span class="sxs-lookup"><span data-stu-id="6939e-120">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="6939e-121">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="6939e-121">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+| <span data-ttu-id="6939e-122">&nbsp; &nbsp; **Solução de problemas**</span><span class="sxs-lookup"><span data-stu-id="6939e-122">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="6939e-123">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="6939e-123">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
+|<span data-ttu-id="6939e-124">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6939e-124">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6939e-125">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6939e-125">Not supported.</span></span>|
+|<span data-ttu-id="6939e-126">Application</span><span class="sxs-lookup"><span data-stu-id="6939e-126">Application</span></span>||
+| <span data-ttu-id="6939e-127">&nbsp;&nbsp; **Gerenciamento de dispositivos**</span><span class="sxs-lookup"><span data-stu-id="6939e-127">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="6939e-128">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="6939e-128">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
+| <span data-ttu-id="6939e-129">&nbsp;&nbsp; **Mam**</span><span class="sxs-lookup"><span data-stu-id="6939e-129">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="6939e-130">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="6939e-130">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span> |
+| <span data-ttu-id="6939e-131">&nbsp; &nbsp; **Integração**</span><span class="sxs-lookup"><span data-stu-id="6939e-131">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="6939e-132">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="6939e-132">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span> |
+| <span data-ttu-id="6939e-133">&nbsp; &nbsp; **Solução de problemas**</span><span class="sxs-lookup"><span data-stu-id="6939e-133">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="6939e-134">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="6939e-134">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="114ae-135">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="114ae-135">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6939e-135">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6939e-135">HTTP Request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -50,38 +50,38 @@ ms.locfileid: "48728624"
 GET /users/{usersId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="114ae-136">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="114ae-136">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6939e-136">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6939e-136">Optional query parameters</span></span>
 
-<span data-ttu-id="114ae-137">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="114ae-137">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="6939e-137">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6939e-137">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="114ae-138">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="114ae-138">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6939e-138">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6939e-138">Request headers</span></span>
 
-|<span data-ttu-id="114ae-139">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="114ae-139">Header</span></span>|<span data-ttu-id="114ae-140">Valor</span><span class="sxs-lookup"><span data-stu-id="114ae-140">Value</span></span>|
+|<span data-ttu-id="6939e-139">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6939e-139">Header</span></span>|<span data-ttu-id="6939e-140">Valor</span><span class="sxs-lookup"><span data-stu-id="6939e-140">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="114ae-141">Autorização</span><span class="sxs-lookup"><span data-stu-id="114ae-141">Authorization</span></span>|<span data-ttu-id="114ae-142">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="114ae-142">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="114ae-143">Aceitar</span><span class="sxs-lookup"><span data-stu-id="114ae-143">Accept</span></span>|<span data-ttu-id="114ae-144">application/json</span><span class="sxs-lookup"><span data-stu-id="114ae-144">application/json</span></span>|
+|<span data-ttu-id="6939e-141">Autorização</span><span class="sxs-lookup"><span data-stu-id="6939e-141">Authorization</span></span>|<span data-ttu-id="6939e-142">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6939e-142">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6939e-143">Aceitar</span><span class="sxs-lookup"><span data-stu-id="6939e-143">Accept</span></span>|<span data-ttu-id="6939e-144">application/json</span><span class="sxs-lookup"><span data-stu-id="6939e-144">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="114ae-145">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="114ae-145">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6939e-145">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6939e-145">Request body</span></span>
 
-<span data-ttu-id="114ae-146">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="114ae-146">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="6939e-146">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6939e-146">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="114ae-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="114ae-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6939e-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="6939e-147">Response</span></span>
 
-<span data-ttu-id="114ae-148">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [user](../resources/intune-shared-user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="114ae-148">If successful, this method returns a `200 OK` response code and [user](../resources/intune-shared-user.md) object in the response body.</span></span>
+<span data-ttu-id="6939e-148">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [user](../resources/intune-shared-user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6939e-148">If successful, this method returns a `200 OK` response code and [user](../resources/intune-shared-user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="114ae-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="114ae-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6939e-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6939e-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="114ae-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="114ae-150">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6939e-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6939e-150">Request</span></span>
 
-<span data-ttu-id="114ae-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="114ae-151">Here is an example of the request.</span></span>
+<span data-ttu-id="6939e-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6939e-151">Here is an example of the request.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/beta/users/{usersId}
 ```
 
-### <a name="response"></a><span data-ttu-id="114ae-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="114ae-152">Response</span></span>
+### <a name="response"></a><span data-ttu-id="6939e-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="6939e-152">Response</span></span>
 
-<span data-ttu-id="114ae-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="114ae-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6939e-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6939e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ``` http
 HTTP/1.1 200 OK
@@ -95,7 +95,6 @@ Content-Length: 118
   }
 }
 ```
-
 
 
 
