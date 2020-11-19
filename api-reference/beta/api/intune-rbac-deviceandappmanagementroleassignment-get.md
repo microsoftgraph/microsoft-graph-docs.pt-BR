@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e150ce06c7c4b53ac4cfcc6b3655b7be291705d8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: da61c4e5b029d2f1a0d376d6fa993dc28320e83c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709114"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257727"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>Obter deviceAndAppManagementRoleAssignment
 
@@ -89,7 +89,6 @@ Content-Length: 438
   }
 }
 ```
-
 
 
 

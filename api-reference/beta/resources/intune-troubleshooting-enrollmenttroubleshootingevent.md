@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 170095b1675c61004dcd6a2c0a1d644b73ac098d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3d62c10df7cde3139ec1f73af1a91c0aaf65bbdf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730329"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258700"
 ---
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>Tipo de recurso enrollmentTroubleshootingEvent
 
@@ -101,7 +101,6 @@ Veja a seguir uma representação JSON do recurso.
   "failureReason": "String"
 }
 ```
-
 
 
 

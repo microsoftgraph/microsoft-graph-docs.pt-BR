@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dcc0e802c8a37a6219b473b51fe4280cb0ad73dd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f9c9151daf78ab937dc4dd666611038982f28a89
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728001"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258728"
 ---
 # <a name="devicemanagementautopilotpolicytype-enum-type"></a>tipo de enumeração deviceManagementAutopilotPolicyType
 
@@ -29,7 +29,6 @@ Ainda não documentado
 |aplicação|3D|Ainda não documentado|
 |appModel|7 |Ainda não documentado|
 |configurationPolicy|12 |Ainda não documentado|
-
 
 
 

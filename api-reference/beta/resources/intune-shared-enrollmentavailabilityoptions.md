@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c2dffa3bc21f527efbdcbde66aa104379fa09a65
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: df7098734bd571a21a01de4b2e377d624b73b138
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730350"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258973"
 ---
 # <a name="enrollmentavailabilityoptions-enum-type"></a>tipo de enumeração enrollmentAvailabilityOptions
 
@@ -28,7 +28,6 @@ Opções disponíveis para a personalização do fluxo de registro
 |availableWithPrompts|,0|O fluxo de registro do dispositivo é mostrado ao usuário final com prompts de registro orientado|
 |availableWithoutPrompts|1|O fluxo de registro do dispositivo está disponível para o usuário final sem prompts de registro guiado|
 |indisponível|duas|O fluxo de registro do dispositivo não está disponível para o enduser|
-
 
 
 

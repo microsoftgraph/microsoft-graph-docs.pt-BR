@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8159c6ac5ceb6d0852862cafe0fdd77b2478b90
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 417c34e77c279184d7153ba0682e51a588f4462f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726581"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257888"
 ---
 # <a name="list-managedappprotectionpolicysetitems"></a>Listar managedAppProtectionPolicySetItems
 
@@ -87,7 +87,6 @@ Content-Length: 646
   ]
 }
 ```
-
 
 
 

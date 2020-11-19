@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 324338018d68a9cdf9756290efeebe1a02e215e1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 44b6002a84ca99dea5d73933d0685fe9f95ca1aa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685545"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257713"
 ---
 # <a name="create-resourceoperation"></a>Criar resourceOperation
 
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar resource
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
 |description|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Boolean|Determina se a permissão é validada para os escopos definidos por atribuição de função.|
+|enabledForScopeValidation|Booliano|Determina se a permissão é validada para os escopos definidos por atribuição de função.|
 
 
 
@@ -101,7 +101,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

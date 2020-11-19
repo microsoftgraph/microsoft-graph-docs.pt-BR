@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c09c4109e03f11eb9323011b7d07b4c12a87f69d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 87b19cf31f025777749a589cd13243895cc6f23e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730026"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258553"
 ---
 # <a name="create-androidvpnconfiguration"></a>Criar androidVpnConfiguration
 
@@ -220,7 +220,6 @@ Content-Length: 1923
   "authenticationMethod": "usernameAndPassword"
 }
 ```
-
 
 
 

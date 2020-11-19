@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 311bdf18b224fde2dc7a6139fd7e01f44c763acc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 501fe61b0a3b1edb355ae008991b8c4c6e8fef86
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733614"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258301"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>Atualizar macOSEndpointProtectionConfiguration
 
@@ -256,7 +256,6 @@ Content-Length: 2958
   ]
 }
 ```
-
 
 
 

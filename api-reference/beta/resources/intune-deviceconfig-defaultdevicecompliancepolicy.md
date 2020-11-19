@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0340b492f7efa9a4571c4f6c14d28ee72c4628da
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1107762db9bf094e046064740d4d558bdd9f2072
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729767"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256663"
 ---
 # <a name="defaultdevicecompliancepolicy-resource-type"></a>tipo de recurso defaultDeviceCompliancePolicy
 
@@ -78,7 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
 
 
 

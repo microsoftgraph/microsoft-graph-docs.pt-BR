@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 652858135557e7121386c723f44e275e6f7c1198
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9e7bdf8b4bd563feb70bd69b6e26b23fa21f849d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732675"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257454"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -119,7 +119,6 @@ Content-Length: 340
   ]
 }
 ```
-
 
 
 

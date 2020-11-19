@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06fe7e2d7439cb6a92fc8dd21a7d9f37d7b0106e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 649ecc69a97213b3d94d41afcf970ff4ad73435f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691593"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257720"
 ---
 # <a name="update-rbacapplicationmultiple"></a>Atualizar rbacApplicationMultiple
 
@@ -86,7 +86,6 @@ Content-Length: 114
   "id": "ee4797e5-97e5-ee47-e597-47eee59747ee"
 }
 ```
-
 
 
 

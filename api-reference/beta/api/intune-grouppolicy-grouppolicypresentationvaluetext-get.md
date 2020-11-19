@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dac46db1c5afc3cf57df2a452060cc0204655e1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b25bce31c2f8889f00c58a27691b3903b0690b82
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695569"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258035"
 ---
 # <a name="get-grouppolicypresentationvaluetext"></a>Obter groupPolicyPresentationValueText
 
@@ -80,7 +80,6 @@ Content-Length: 302
   }
 }
 ```
-
 
 
 

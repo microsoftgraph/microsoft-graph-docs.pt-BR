@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a1597e66de0e518ecb30ec889f6fde063e35a17
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7efe3e69edccaf87d7025b667e798363feaa5f8e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727306"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256370"
 ---
 # <a name="importeddeviceidentityresult-resource-type"></a>tipo de recurso importedDeviceIdentityResult
 
@@ -74,7 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "status": true
 }
 ```
-
 
 
 

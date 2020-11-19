@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b54c89a946f6a5b5b8dd66a8e4146f6e12793d89
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 880fb5d77c7fa16a23349918973a33ba0952e07a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728883"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256257"
 ---
 # <a name="suggestedenrollmentlimit-resource-type"></a>tipo de recurso suggestedEnrollmentLimit
 
@@ -43,7 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "suggestedDailyLimit": 1024
 }
 ```
-
 
 
 

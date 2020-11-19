@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7389f260cd4d804375ac5fbb2cbc8eafc53aa938
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 20fc18da2f6c123b82a9e04d3110313dd830d041
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728022"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258720"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>tipo de recurso deviceManagementAutopilotEvent
 
@@ -101,7 +101,6 @@ Veja a seguir uma representação JSON do recurso.
   "enrollmentFailureDetails": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f45ada8bfccad2c9e3c46e5ef370a78e4efa2a6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4775f421d9b12b8eafd27435880fb7bb3d855f93
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692902"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257986"
 ---
 # <a name="list-vulnerablemanageddevices"></a>Listar vulnerableManagedDevices
 
@@ -79,7 +79,6 @@ Content-Length: 316
   ]
 }
 ```
-
 
 
 

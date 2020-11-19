@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca91c074e19887d889ac8bed332055f36ebed08d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d9f269503cd518b3d05b45631f1bb88c56a4ebe5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694176"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257230"
 ---
 # <a name="update-reportroot"></a>Atualizar reportRoot
 
@@ -86,7 +86,6 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
-
 
 
 

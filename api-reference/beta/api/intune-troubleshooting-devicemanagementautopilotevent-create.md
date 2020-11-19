@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f19348e301873b98b8ddf7491160323e5b009f1b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 701dd737830c412d3b6c50f4a2c423ec5620dc86
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701673"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257034"
 ---
 # <a name="create-devicemanagementautopilotevent"></a>Criar deviceManagementAutopilotEvent
 
@@ -155,7 +155,6 @@ Content-Length: 1406
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
 
 
 

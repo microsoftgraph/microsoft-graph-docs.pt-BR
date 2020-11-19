@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ad1763ffcab2cd6ef996ab14c6f0e7bd040e16a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ef4a0c4ee1d5a135a9f03c715583a18a3b2b50a3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724091"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257349"
 ---
 # <a name="create-iosmanagedappprotection"></a>Criar iosManagedAppProtection
 
@@ -267,7 +267,6 @@ Content-Length: 2795
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
-
 
 
 

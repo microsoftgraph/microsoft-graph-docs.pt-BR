@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c00ae796101131456db7206b80e4b6d8999fb86a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7760fa978f6b25eb9a0a176b237d2595cc682e9c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729753"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256656"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>tipo de enumeração defenderCloudBlockLevelType
 
@@ -29,7 +29,6 @@ Possíveis valores de nível de bloco de nuvem
 |high|1|Alto aplica um nível forte de detecção.|
 |highPlus|duas|High + usa o alto nível e aplica medidas de proteção de adição|
 |zeroTolerance|3D|Tolerância zero bloqueia todos os executáveis desconhecidos|
-
 
 
 

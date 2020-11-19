@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39efbd22ab87b44e3a460775e1c69aba8cac5edf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0f91038e518550b9ebfc50d59c3a0168d8e489cd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698110"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257622"
 ---
 # <a name="create-devicemanagementreportschedule"></a>Criar deviceManagementReportSchedule
 
@@ -134,7 +134,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

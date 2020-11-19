@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 596ad310f6fa684c063d0c10499e1617d8f03c5e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 03cff828174255d7756e9fb10a9374a1bf02ffe1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731299"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258573"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>Criar androidWorkProfileCustomConfiguration
 
@@ -79,7 +79,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1252
+Content-length: 1280
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
@@ -116,7 +116,8 @@ Content-length: 1252
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
@@ -127,7 +128,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1424
+Content-Length: 1452
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
@@ -167,12 +168,12 @@ Content-Length: 1424
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
 ```
-
 
 
 

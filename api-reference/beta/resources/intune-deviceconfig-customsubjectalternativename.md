@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2d621b67cffcf676dcd35889907eb5f9ca34504
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 461689c439d31a6c34a4e91ff758eba2c8d98b61
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729795"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256719"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>tipo de recurso customSubjectAlternativeName
 
@@ -25,7 +25,7 @@ Definição do nome alternativo da entidade personalizada
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de SAN personalizado. Os possíveis valores são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
+|sanType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Tipo de SAN personalizado. Os possíveis valores são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |nome|String|Nome da SAN personalizada|
 
 ## <a name="relationships"></a>Relações
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "name": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a15fc5529e7830e11cbd8d93fd1bf90716bb817
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1e64852c08da6853e091beef214e1fd427ecceba
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696339"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256369"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>tipo de enumeração defenderProtectionType
 
@@ -28,7 +28,8 @@ Possíveis valores da proteção do defender PUA
 |UserDefined|,0|Valor padrão do dispositivo, sem intenção.|
 |possibilite|1|Funcionalidade de bloqueio.|
 |auditmode|duas|Permitir a funcionalidade, mas gerar logs.|
-
+|emite|6 |Mensagem de aviso para o usuário final com capacidade para ignorar o bloqueio da regra de redução de superfície de ataque.|
+|notConfigured|99|Não configurado.|
 
 
 

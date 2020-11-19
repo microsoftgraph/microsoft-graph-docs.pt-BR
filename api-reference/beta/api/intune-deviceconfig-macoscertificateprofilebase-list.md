@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bbc40ccb755b082c6283fa8f783c2d35fc77d46f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f66ca6885878a3704373f9e0182f90da378306bc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704403"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258476"
 ---
 # <a name="list-macoscertificateprofilebases"></a>Listar macOSCertificateProfileBases
 
@@ -112,7 +112,6 @@ Content-Length: 1602
   ]
 }
 ```
-
 
 
 

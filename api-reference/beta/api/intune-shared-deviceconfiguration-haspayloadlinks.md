@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81764a738e76eac2ab071f871214e09a833ee41c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6f3d7954e04a2eeaa1d171ffe9a20e0bc1702227
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702954"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49257363"
 ---
 # <a name="haspayloadlinks-action"></a>ação hasPayloadLinks
 
@@ -100,7 +100,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

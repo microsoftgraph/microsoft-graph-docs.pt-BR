@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 723cfad61deae7f6b13634e3fea7319b9d59347c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 349efe1334283ae81589f7e24aae91ec20d76462
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730662"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256824"
 ---
 # <a name="androidworkprofiletrustedrootcertificate-resource-type"></a>tipo de recurso androidWorkProfileTrustedRootCertificate
 
@@ -108,7 +108,6 @@ Veja a seguir uma representação JSON do recurso.
   "certFileName": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e52e11c30f488ce73738dfa8a4480240bc884b1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c8641f912d78935cae44dd31e64beed35b7bd667
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703318"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258565"
 ---
 # <a name="update-androidworkprofilecompliancepolicy"></a>Atualizar na entidadeandroidworkprofilecompliancepolicy
 
@@ -175,7 +175,6 @@ Content-Length: 1522
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
 
 
 

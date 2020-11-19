@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 57b714a541632bc87481e7898baaa5f3af65ed3f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 32605da493a63be0bba3be06ae78dc8a62399444
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725124"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258882"
 ---
 # <a name="uri-resource-type"></a>Tipo de recurso uri
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 
