@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3946247ba9424fb1c961a11753376b7bcfb78c4a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4cd33eccfbc1c3e396d65f63a6f435690186b53f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724449"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208790"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>tipo de recurso sharedAppleDeviceUser
 
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "dataUsed": 1024
 }
 ```
-
 
 
 

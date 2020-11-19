@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04c058ff0e88a925c52b1e3f66105068628200b2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a1594955b100d6ee7c203a0e8b0961108f908f6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685538"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210743"
 ---
 # <a name="list-resourceoperations"></a>Listar resourceOperations
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -81,7 +81,6 @@ Content-Length: 359
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c37ca746a2adc1ea1cba92839bce3903f947e4d6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 994946d9dcd7abf3f2f57df652321a61dd71dd47
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729303"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208944"
 ---
 # <a name="loggedonuser-resource-type"></a>tipo de recurso loggedOnUser
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastLogOnDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

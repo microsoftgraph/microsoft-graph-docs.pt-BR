@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04bfeb269bc41c8114ca11427c8a41e56e2c36aa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 772703a96d6795119363ef65d33e81653c3d6e8d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724428"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208602"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversion-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 
@@ -67,7 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

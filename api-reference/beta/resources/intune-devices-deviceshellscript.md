@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d43030b4f6c32f79b57d1122f546b2f8180d7910
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0d5e3e2469a409b12a33b26fd0c5b81f033ab2fa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697676"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209112"
 ---
 # <a name="deviceshellscript-resource-type"></a>tipo de recurso deviceShellScript
 
@@ -37,7 +37,7 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts do Shell nos 
 |:---|:---|:---|
 |executionFrequency|Duração|O intervalo de execução do script. Se não definido, o script será executado uma vez|
 |retryCount|Int32|Número de vezes que o script deve ser repetido se falhar|
-|blockExecutionNotifications|Boolean|Não notifica o usuário de que um script está sendo executado|
+|blockExecutionNotifications|Booliano|Não notifica o usuário de que um script está sendo executado|
 |id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
 |displayName|String|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
@@ -84,7 +84,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

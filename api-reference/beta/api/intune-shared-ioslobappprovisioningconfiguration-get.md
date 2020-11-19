@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51ad61c1924043abfd8c52c7cd5fc38063c355fd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 14d1f0ae26bfe4b91005422f47da7542991a8746
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729921"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210092"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>Obter iosLobAppProvisioningConfiguration
 
@@ -27,11 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
@@ -92,7 +92,6 @@ Content-Length: 592
   }
 }
 ```
-
 
 
 

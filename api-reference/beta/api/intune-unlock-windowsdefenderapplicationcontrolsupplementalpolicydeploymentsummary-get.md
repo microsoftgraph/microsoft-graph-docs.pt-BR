@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c01bcd1f831a195d98a004332bcd8221579f3aa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b7f71489fd49571008ce60c80b92f0706a5e3556
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712852"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209861"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>Obter windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -79,7 +79,6 @@ Content-Length: 242
   }
 }
 ```
-
 
 
 

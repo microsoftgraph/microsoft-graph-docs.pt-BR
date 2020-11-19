@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e7a7775edf7893aeaefa75fc507b930cc8a5234
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fbc7b2dae0e5288e8ce3f0f04e60ad065546a27d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733970"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208553"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthDevicePerformance
 
@@ -73,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 

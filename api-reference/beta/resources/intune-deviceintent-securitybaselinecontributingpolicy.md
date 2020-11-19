@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f0702786afdd049b28fd67638f4fe76920164c35
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f62299f39d4e3670fc586a4dc07d352a992398e0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704910"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209343"
 ---
 # <a name="securitybaselinecontributingpolicy-resource-type"></a>tipo de recurso securityBaselineContributingPolicy
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "sourceType": "String"
 }
 ```
-
 
 
 

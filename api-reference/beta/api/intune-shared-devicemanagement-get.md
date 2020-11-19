@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5bb7f877662021a0aa632d2b89c7bc29d47c2d7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5d802363c3b226ba1d8a69eea6fbf9e539aa354c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732048"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210372"
 ---
 # <a name="get-devicemanagement"></a>Acessar deviceManagement
 
@@ -28,13 +28,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | &nbsp;Tipo &nbsp; de permissão (por &nbsp; fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
 |:---|:---|
-| Delegado (conta corporativa ou de estudante) | |
+| Delegada (conta corporativa ou de estudante) | |
 | &nbsp;&nbsp; **Android para trabalho** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp;&nbsp; **Sim eletrônico** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
@@ -49,14 +49,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.|
-| Aplicativo | |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.|
+| Application | |
 | &nbsp;&nbsp; **Android para trabalho** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 | &nbsp;&nbsp; **Sim eletrônico** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/deviceManagement
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta.
+Veja a seguir um exemplo da resposta. 
 
 Observação: os objetos de resposta mostrados aqui podem ser truncados por brevidade.
 
@@ -161,7 +161,6 @@ Content-Length: 918
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8132a83bdd4f51677ea8f73f41d6e08d8f3f9c9e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f92967d6cf7fe4d4be381bd2066d477b906eed1f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725390"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208342"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocess-resource-type"></a>tipo de recurso userExperienceAnalyticsDeviceStartupProcess
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "startupImpactInMs": 1024
 }
 ```
-
 
 
 

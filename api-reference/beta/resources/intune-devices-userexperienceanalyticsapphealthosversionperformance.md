@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c7b58479a0f6b8ed8946fa203cf741699e09873
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 404d40b0924b78eec5a0690fe4986421f84c05f2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733962"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208475"
 ---
 # <a name="userexperienceanalyticsapphealthosversionperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "osVersionAppHealthStatus": "String"
 }
 ```
-
 
 
 

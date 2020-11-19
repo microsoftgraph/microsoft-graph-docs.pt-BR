@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e957a075a6011dc2ba23504162190fbef8f36646
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b2a66ac9479632b4f893ace822fc1b48d2a820a2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698229"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210519"
 ---
 # <a name="update-devicemanagementexportjob"></a>Atualizar deviceManagementExportJob
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration. ReadWrite. All, DeviceManagementApps. ReadWrite. All, DeviceManagementManagedDevices. ReadWrite. All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -117,7 +117,6 @@ Content-Length: 453
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

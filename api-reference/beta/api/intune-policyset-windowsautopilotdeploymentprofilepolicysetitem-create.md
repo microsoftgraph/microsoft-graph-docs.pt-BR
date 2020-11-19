@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dbe9999551ccfc96df95265145f9275cfce19ad8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6e5e13d9d6ccdac405a6866b718e9e82c393746c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731502"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210918"
 ---
 # <a name="create-windowsautopilotdeploymentprofilepolicysetitem"></a>Criar windowsAutopilotDeploymentProfilePolicySetItem
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -112,7 +112,6 @@ Content-Length: 500
   ]
 }
 ```
-
 
 
 

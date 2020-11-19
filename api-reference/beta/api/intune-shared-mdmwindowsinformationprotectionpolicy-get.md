@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c5f4d93727cb9da563b81f2f87db1b1a45f8fc2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8a76126cb4df0061f4ece2fdc8aecbd37bca687b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724049"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209876"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>Get mdmWindowsInformationProtectionPolicy
 
@@ -27,11 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
 | &nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
@@ -207,7 +207,6 @@ Content-Length: 4414
   }
 }
 ```
-
 
 
 

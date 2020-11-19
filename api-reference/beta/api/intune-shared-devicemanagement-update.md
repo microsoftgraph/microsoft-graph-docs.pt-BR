@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02ece544ac7b4b78beb8e49bb67e33035a0d0bf9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6bf6b5031c53da45af63517e52f03d344f71a4c3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706321"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210127"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -30,13 +30,13 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 
 | &nbsp;Tipo &nbsp; de permissão (por &nbsp; fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
 |:---|:---|
-| Delegado (conta corporativa ou de estudante) ||
+| Delegada (conta corporativa ou de estudante) ||
 | &nbsp;&nbsp; **Android para trabalho** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Sim eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All |
@@ -51,14 +51,14 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Proteção de Informações do Windows** | DeviceManagementApps.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.|
-| Aplicativo ||
+| Delegada (conta pessoal da Microsoft) | Sem suporte.|
+| Application ||
 | &nbsp;&nbsp; **Android para trabalho** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Intenção do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Sim eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All |
@@ -101,7 +101,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |id|String|Identificador exclusivo do dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|GUID|ID da conta do Intune para determinado locatário|
-|legacyPcManangementEnabled|Boolean|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
+|legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Essa propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
@@ -157,7 +157,7 @@ Content-length: 751
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta.
+Veja a seguir um exemplo da resposta. 
 
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades retornadas variam de acordo com o fluxo de trabalho e o contexto.
 
@@ -191,7 +191,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

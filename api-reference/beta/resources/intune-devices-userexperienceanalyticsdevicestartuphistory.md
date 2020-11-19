@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d356fa5c480cc59f7d032b9c415583af384a0f3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e6fe811b366d45a707867be25e324d473ce3d485
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725397"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208391"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>tipo de recurso userExperienceAnalyticsDeviceStartupHistory
 
@@ -85,7 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   "restartFaultBucket": "String"
 }
 ```
-
 
 
 

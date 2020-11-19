@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ef9aceaed4dd5205ad1172e855cea168d95d3fd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e5a32858be0cd1cf6bb193c7fe2416f1d1ff3808
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724056"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210064"
 ---
 # <a name="update-iosmanagedappprotection"></a>Atualizar iosManagedAppProtection
 
@@ -27,11 +27,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo||
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application||
 | &nbsp; &nbsp; **Gerenciamento de aplicativo móvel (GAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de políticas** | DeviceManagementApps.ReadWrite.All|
 
@@ -267,7 +267,6 @@ Content-Length: 2795
   "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
-
 
 
 

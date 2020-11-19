@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4f1721dc06fa5d1a97ef97025ff65396588dbda1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4bf4909ff8ef9ec7adb5a1b09c26e1a74539aa7d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723895"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209245"
 ---
 # <a name="securitybaselinepolicysourcetype-enum-type"></a>tipo de enumeração securityBaselinePolicySourceType
 
@@ -27,7 +27,6 @@ Fonte de criação de uma política
 |:---|:---|:---|
 |deviceConfiguration|,0|Ainda não documentado|
 |deviceIntent|1|Ainda não documentado|
-
 
 
 

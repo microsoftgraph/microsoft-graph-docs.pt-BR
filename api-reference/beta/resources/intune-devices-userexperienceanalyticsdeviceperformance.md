@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: df483f340be87ea4c19f4ae2457b678992eb1c94
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 817fb08cf3efeb107741c8428d721ab10e28c75c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684789"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208426"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>tipo de recurso userExperienceAnalyticsDevicePerformance
 
@@ -90,7 +90,6 @@ Veja a seguir uma representação JSON do recurso.
   "averageRestarts": "4.2"
 }
 ```
-
 
 
 

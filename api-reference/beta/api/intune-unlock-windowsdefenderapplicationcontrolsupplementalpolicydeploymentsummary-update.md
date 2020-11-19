@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be2dcb687b79798bede22930cbaed1cb49e95d61
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a5f1468d2962c8fa2b2414898a8c433801c131da
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724013"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209854"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>Atualizar windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -92,7 +92,6 @@ Content-Length: 215
   "failedDeviceCount": 1
 }
 ```
-
 
 
 

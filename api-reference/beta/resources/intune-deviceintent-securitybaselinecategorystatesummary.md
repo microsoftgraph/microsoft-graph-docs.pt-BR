@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eaf2d6b041cbe34fbf16d61f9f53c247fbe0e6fd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: acf1eecb183bd9d0a69caa087f017cc878bc252a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734179"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209385"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>tipo de recurso securityBaselineCategoryStateSummary
 
@@ -70,7 +70,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
 
 
 

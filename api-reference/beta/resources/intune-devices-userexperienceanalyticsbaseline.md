@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6063deec10d13c45565898f111d15ab6023b8838
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e48064e7cc5f0d3a0901dd6b6ff320224403a9c3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725404"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208440"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>tipo de recurso userExperienceAnalyticsBaseline
 
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "createdDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

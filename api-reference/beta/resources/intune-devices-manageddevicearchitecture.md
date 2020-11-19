@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8bd0b56e522e3ab1ff601402f08b6f87a1285a8e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 34d7d669ae47339041e7a2f03c6e0fd0611aa953
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725488"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208825"
 ---
 # <a name="manageddevicearchitecture-enum-type"></a>tipo de enumeração managedDeviceArchitecture
 
@@ -30,7 +30,6 @@ Arquitetura do processador
 |Professional|duas|Professional|
 |equipe|3D|EQUIPE|
 |arM64|4 |ARM64|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ebaa80f901e8da092fee9f398c2a57356253f0cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 29cda57dbbc1652dc4cc004e973871f283476571
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734193"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209434"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>tipo de enumeração deviceManagementTemplateType
 
@@ -36,7 +36,7 @@ Tipo de modelo
 |deviceCompliance|8 |Modelo de conformidade do dispositivo|
 |deviceConfigurationForOffice365|9 |Configuração de dispositivo para configurações do Microsoft Office 365|
 |cloudPC|10 |Modelo de linha de base de segurança do computador Cloud|
-
+|firewallSharedSettings|11 |Modelos de objeto compartilhado de firewall para configurações de referência|
 
 
 
