@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3df78d829f764b4413fea1b8f14f08fac5663e7e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f2e21466985a372287aec28bd8cadf9eb4f4e461
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700168"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252372"
 ---
 # <a name="revokedevicelicense-action"></a>ação revokeDeviceLicense
 
@@ -56,7 +56,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |managedDeviceId|String|A DeviceID para a qual a licença de aplicativo atribuída deve ser revogada|
-|notifyManagedDevices|Boolean|Booliano que indica se a notificação de revogação deve ser enviada ao dispositivo|
+|notifyManagedDevices|Booliano|Booliano que indica se a notificação de revogação deve ser enviada ao dispositivo|
 
 
 
@@ -84,7 +84,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

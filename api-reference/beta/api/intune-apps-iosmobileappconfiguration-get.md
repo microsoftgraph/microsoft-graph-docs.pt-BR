@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52ca4947c28a839b9c4a10acbf48ebac3ad09afe
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1c97a024b6b4ac04f1178533a6b603c47f13994c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700301"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252610"
 ---
 # <a name="get-iosmobileappconfiguration"></a>Obter iosMobileAppConfiguration
 
@@ -97,7 +97,6 @@ Content-Length: 831
   }
 }
 ```
-
 
 
 

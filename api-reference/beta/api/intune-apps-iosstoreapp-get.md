@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2caa1d773b58ee1c9f66b63305aeb21be4ba7c4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6960db504b3f3044c9571d27bec72aa9b93fe89a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700252"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252400"
 ---
 # <a name="get-iosstoreapp"></a>Acessar iosStoreApp
 
@@ -120,7 +120,6 @@ Content-Length: 1494
   }
 }
 ```
-
 
 
 

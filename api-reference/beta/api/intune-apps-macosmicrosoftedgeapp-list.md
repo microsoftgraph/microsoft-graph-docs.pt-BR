@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb6371fa70f893693dfc63546f05e97860c08eba
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f2957407ea8edfe74d5a397bcc6e264296cbac1d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699832"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49251427"
 ---
 # <a name="list-macosmicrosoftedgeapps"></a>Listar macOSMicrosoftEdgeApps
 
@@ -102,7 +102,6 @@ Content-Length: 1116
   ]
 }
 ```
-
 
 
 

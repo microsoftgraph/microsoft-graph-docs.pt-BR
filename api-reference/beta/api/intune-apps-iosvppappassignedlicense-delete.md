@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bb996d897c159cd59f4ce5b4d2b30a9992b85cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 291304a491610cd68cf7b7f8604fc824a24bc3f6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700035"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252057"
 ---
 # <a name="delete-iosvppappassignedlicense"></a>Excluir iosVppAppAssignedLicense
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

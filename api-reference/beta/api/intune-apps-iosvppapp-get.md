@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f95c5c4d9b5bdc26dc1ce7cdd9980895349d1e4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6039c03d916b25e897b512a3ed02035d24b78c5a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700182"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252344"
 ---
 # <a name="get-iosvppapp"></a>Acessar iosVppApp
 
@@ -139,7 +139,6 @@ Content-Length: 2371
   }
 }
 ```
-
 
 
 

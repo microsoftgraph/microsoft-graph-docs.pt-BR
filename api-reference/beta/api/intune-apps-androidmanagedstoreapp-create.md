@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a75c85bd3f1e32bebff614f7a4eb19aa75e2af9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cba4d6ca06a38905aecdf14db916d9fc5c8add55
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700679"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253772"
 ---
 # <a name="create-androidmanagedstoreapp"></a>Criar androidManagedStoreApp
 
@@ -78,10 +78,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidM
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso.|
 |totalLicenseCount|Int32|O número total de licenças VPP.|
 |appStoreUrl|String|A URL do aplicativo de reproduzir para o repositório de trabalho.|
-|IsPrivate|Boolean|Indica se o aplicativo está disponível somente para os usuários de uma empresa.|
-|isSystemApp|Boolean|Indica se o aplicativo é um aplicativo de sistema pré-instalado.|
+|IsPrivate|Booliano|Indica se o aplicativo está disponível somente para os usuários de uma empresa.|
+|isSystemApp|Booliano|Indica se o aplicativo é um aplicativo de sistema pré-instalado.|
 |appTracks|coleção [androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)|As faixas que são visíveis para esta empresa.|
-|supportsOemConfig|Boolean|Se este aplicativo dá suporte à política OEMConfig.|
+|supportsOemConfig|Booliano|Se este aplicativo dá suporte à política OEMConfig.|
 
 
 
@@ -192,7 +192,6 @@ Content-Length: 1397
   "supportsOemConfig": true
 }
 ```
-
 
 
 

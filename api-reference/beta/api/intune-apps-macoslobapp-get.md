@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e0d1327ea1da041ef29fdf8196163cddde519e0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3df22761ce888bb2b9319d535ae88ce0ec9f1008
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699965"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49251735"
 ---
 # <a name="get-macoslobapp"></a>Obter macOSLobApp
 
@@ -137,7 +137,6 @@ Content-Length: 2013
   }
 }
 ```
-
 
 
 

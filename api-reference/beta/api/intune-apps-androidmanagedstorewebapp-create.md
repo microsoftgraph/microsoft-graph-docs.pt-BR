@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03980b4786eb953f94b40fa041093d21fbc33776
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 787dddb99654629296ae3274f479159d9da79cea
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700602"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253478"
 ---
 # <a name="create-androidmanagedstorewebapp"></a>Criar androidManagedStoreWebApp
 
@@ -78,10 +78,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidM
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |totalLicenseCount|Int32|O número total de licenças VPP. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appStoreUrl|String|A URL do aplicativo de reproduzir para o repositório de trabalho. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|IsPrivate|Boolean|Indica se o aplicativo está disponível somente para os usuários de uma empresa. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isSystemApp|Boolean|Indica se o aplicativo é um aplicativo de sistema pré-instalado. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|IsPrivate|Booliano|Indica se o aplicativo está disponível somente para os usuários de uma empresa. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isSystemApp|Booliano|Indica se o aplicativo é um aplicativo de sistema pré-instalado. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appTracks|coleção [androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)|As faixas que são visíveis para esta empresa. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|supportsOemConfig|Boolean|Se este aplicativo dá suporte à política OEMConfig. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|supportsOemConfig|Booliano|Se este aplicativo dá suporte à política OEMConfig. Herdado de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 
@@ -192,7 +192,6 @@ Content-Length: 1400
   "supportsOemConfig": true
 }
 ```
-
 
 
 

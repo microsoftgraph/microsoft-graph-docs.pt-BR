@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6c2b7d94e759947dfe77c66c2fc11b1a6d4620f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7d08f86a3e45a97804d955cc1f37c49ed5533404
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700357"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252897"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationassignment"></a>Excluir iosLobAppProvisioningConfigurationAssignment
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

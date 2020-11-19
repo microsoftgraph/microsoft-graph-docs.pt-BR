@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e14e21f0478c2e7754a60a2bdd37b05a998867b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8b7aba4b217ed3718741921e5bd5f54b11e54008
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699818"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49251224"
 ---
 # <a name="create-macosofficesuiteapp"></a>Criar macOSOfficeSuiteApp
 
@@ -153,7 +153,6 @@ Content-Length: 947
   "supersededAppCount": 2
 }
 ```
-
 
 
 

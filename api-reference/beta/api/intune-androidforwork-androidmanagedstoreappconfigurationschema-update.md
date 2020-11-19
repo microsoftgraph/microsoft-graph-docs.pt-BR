@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 21c4b5252ba2a5ef5e9f8780b1144d0b9f3a1718
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b72c96dc2ff3c54a01a7fb3169ece172120fa6ca
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700861"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49254164"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>Atualizar androidManagedStoreAppConfigurationSchema
 
@@ -187,7 +187,6 @@ Content-Length: 1634
   ]
 }
 ```
-
 
 
 

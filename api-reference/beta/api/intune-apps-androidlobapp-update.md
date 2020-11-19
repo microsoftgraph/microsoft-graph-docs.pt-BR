@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9d201b2ef01d3dbba751af12ccdb522c1a051ce
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b39961cb604badf6471d02ec0983f906a6d3ad23
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700700"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253814"
 ---
 # <a name="update-androidlobapp"></a>Atualizar androidLobApp
 
@@ -214,7 +214,6 @@ Content-Length: 1642
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

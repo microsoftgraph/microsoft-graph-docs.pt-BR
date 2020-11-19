@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c260d641971f8d9b531e67a4030d944ecf549e8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 84d5fce5b15847a04c0cc4b51e8a496f67ff722f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700651"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253604"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>Criar androidManagedStoreAppConfiguration
 
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidM
 |packageId|String|ID do pacote de configuração do aplicativo Enterprise Android.|
 |payloadJson|String|Carga JSON da configuração do aplicativo empresarial Android.|
 |permissionActions|coleção [androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)|Lista de permissões de aplicativo Android e ações de permissão correspondentes.|
-|appSupportsOemConfig|Boolean|Se este AppConfig é ou não uma política de OEMConfig.|
+|appSupportsOemConfig|Booliano|Se este AppConfig é ou não uma política de OEMConfig.|
 |profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Aplicabilidade de perfil corporativo Android (AndroidWorkProfile, DeviceOwner ou default (aplica-se a ambos)). Os valores possíveis são: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 
 
@@ -140,7 +140,6 @@ Content-Length: 813
   "profileApplicability": "androidWorkProfile"
 }
 ```
-
 
 
 

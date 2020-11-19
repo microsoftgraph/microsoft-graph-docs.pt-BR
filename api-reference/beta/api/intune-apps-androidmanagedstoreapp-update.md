@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc103c8f23548b9ba6c97cb00e03e01b72e3006a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 028e8f28c7e5c3f3d09fc981d6735146605728c4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700644"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253632"
 ---
 # <a name="update-androidmanagedstoreapp"></a>Atualizar androidManagedStoreApp
 
@@ -80,10 +80,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso.|
 |totalLicenseCount|Int32|O número total de licenças VPP.|
 |appStoreUrl|String|A URL do aplicativo de reproduzir para o repositório de trabalho.|
-|IsPrivate|Boolean|Indica se o aplicativo está disponível somente para os usuários de uma empresa.|
-|isSystemApp|Boolean|Indica se o aplicativo é um aplicativo de sistema pré-instalado.|
+|IsPrivate|Booliano|Indica se o aplicativo está disponível somente para os usuários de uma empresa.|
+|isSystemApp|Booliano|Indica se o aplicativo é um aplicativo de sistema pré-instalado.|
 |appTracks|coleção [androidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)|As faixas que são visíveis para esta empresa.|
-|supportsOemConfig|Boolean|Se este aplicativo dá suporte à política OEMConfig.|
+|supportsOemConfig|Booliano|Se este aplicativo dá suporte à política OEMConfig.|
 
 
 
@@ -194,7 +194,6 @@ Content-Length: 1397
   "supportsOemConfig": true
 }
 ```
-
 
 
 

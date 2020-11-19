@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 272eed21427ba8a1821356d292c55d26f0c04f88
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1224c64734bd74a68c0647790597012e8e56cabf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700371"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252960"
 ---
 # <a name="update-ioslobapp"></a>Atualizar iosLobApp
 
@@ -209,7 +209,6 @@ Content-Length: 1640
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

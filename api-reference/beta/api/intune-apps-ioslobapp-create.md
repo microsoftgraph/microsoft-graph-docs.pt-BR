@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 550ab90302f1f5c4ec108811f9c6d3589c1613e8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aa05498f64748d120526eb1dcf68887196d51dcb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700441"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252974"
 ---
 # <a name="create-ioslobapp"></a>Criar iosLobApp
 
@@ -207,7 +207,6 @@ Content-Length: 1640
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

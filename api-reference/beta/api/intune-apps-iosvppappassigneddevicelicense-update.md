@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d15b33df38c21127f7e745a7c6cd11f09b6fa0bd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cd87a37eb6679799f5ab74007c8c455c258a2c77
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700084"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252015"
 ---
 # <a name="update-iosvppappassigneddevicelicense"></a>Atualizar iosVppAppAssignedDeviceLicense
 
@@ -104,7 +104,6 @@ Content-Length: 376
   "deviceName": "Device Name value"
 }
 ```
-
 
 
 

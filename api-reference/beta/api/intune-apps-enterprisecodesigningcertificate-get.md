@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 912d1ef9f918b83f3ea71312c4c3226addd3eef1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c80010ed8a647da334d2a4c9a7b974a99683ad64
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700469"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253002"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>Obter enterpriseCodeSigningCertificate
 
@@ -85,7 +85,6 @@ Content-Length: 478
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3bbe6d2c01abb26845d833dd63134d69d1465ce6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ff937d9f726a74cd53e8370643caaf1fe54e3614
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700287"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252596"
 ---
 # <a name="update-iosmobileappconfiguration"></a>Atualizar iosMobileAppConfiguration
 
@@ -133,7 +133,6 @@ Content-Length: 768
   ]
 }
 ```
-
 
 
 

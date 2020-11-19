@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2dca0d19827b84cf99cef86fd9f3bf2c73027e7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3dbfbfe2c0ddd5fecddc6715568a91e8f51b9b9e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700203"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252379"
 ---
 # <a name="update-iosstoreapp"></a>Atualizar iosStoreApp
 
@@ -191,7 +191,6 @@ Content-Length: 1389
   }
 }
 ```
-
 
 
 

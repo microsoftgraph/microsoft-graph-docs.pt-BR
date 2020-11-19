@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bfb8ba2d4eec2b292d3eed25a01f94ab4de4f94a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7d5d2a69cd7e8f0c83804fd25766fc0294a21245
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700812"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49254136"
 ---
 # <a name="update-androidforworkapp"></a>Atualizar androidForWorkApp
 
@@ -170,7 +170,6 @@ Content-Length: 1132
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

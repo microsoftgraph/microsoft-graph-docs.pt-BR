@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 990ff4aadff353c73ba79398866dd38becc7bc76
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 90fe9ad9f8ca43e6ed2661523f036da7437f9e08
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700637"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253618"
 ---
 # <a name="delete-androidmanagedstoreappconfiguration"></a>Excluir androidManagedStoreAppConfiguration
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0d1a990b3b7e451e1e72189eca515407672b343
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 246ea3ed33426f8b7c4a733d8aa3c8053b20c51b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700091"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49252016"
 ---
 # <a name="list-iosvppappassigneddevicelicenses"></a>Listar iosVppAppAssignedDeviceLicenses
 
@@ -82,7 +82,6 @@ Content-Length: 441
   ]
 }
 ```
-
 
 
 

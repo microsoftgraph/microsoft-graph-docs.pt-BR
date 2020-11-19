@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba3cc2038c63eac825a38d6dd20ab2568d74681b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 75a9b08748a98b63b957f02d5b0397ee4fe2ee57
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700931"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49254199"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>Obter androidManagedStoreAppConfigurationSchema
 
@@ -126,7 +126,6 @@ Content-Length: 1755
   }
 }
 ```
-
 
 
 

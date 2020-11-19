@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8cc5e5e35640bd668a08e4c588f02a52167f22d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c384f5d1995bb624a100debec47a1484c87d8d98
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699692"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49250930"
 ---
 # <a name="create-macosvppappassignedlicense"></a>Criar macOsVppAppAssignedLicense
 
@@ -98,7 +98,6 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

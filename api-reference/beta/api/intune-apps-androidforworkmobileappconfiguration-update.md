@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb603bbb80d54a11bd475f646c32452f09bd4447
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1dac2dfd25df66b6f73963a4523a1b6d1f374f84
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700770"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253912"
 ---
 # <a name="update-androidforworkmobileappconfiguration"></a>Atualizar androidForWorkMobileAppConfiguration
 
@@ -137,7 +137,6 @@ Content-Length: 781
   "profileApplicability": "androidWorkProfile"
 }
 ```
-
 
 
 

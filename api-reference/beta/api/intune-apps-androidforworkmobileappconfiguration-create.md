@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 995673ebccb46544a0bbc9a9c85d61fb527cb871
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7351556acfbb86ac27f399d1f6ce2fde186bc683
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700805"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49254059"
 ---
 # <a name="create-androidforworkmobileappconfiguration"></a>Criar androidForWorkMobileAppConfiguration
 
@@ -137,7 +137,6 @@ Content-Length: 781
   "profileApplicability": "androidWorkProfile"
 }
 ```
-
 
 
 

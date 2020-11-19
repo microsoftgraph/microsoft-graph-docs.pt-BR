@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f108a81ba0869a2ac623e87b878b833b2437234
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 52847b28894361fdbd6ad5e54fd17676accaee36
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700530"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253247"
 ---
 # <a name="create-androidstoreapp"></a>Criar androidStoreApp
 
@@ -197,7 +197,6 @@ Content-Length: 1459
   }
 }
 ```
-
 
 
 

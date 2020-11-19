@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 458d6f0a69e4ec52120431bf9b27863fe4741013
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cefac058fd38ac1cc8f45dbb16be01912fd8ae2d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699930"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49251518"
 ---
 # <a name="update-macoslobapp"></a>Atualizar macOSLobApp
 
@@ -87,7 +87,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSLo
 |md5HashChunkSize|Int32|O tamanho da parte do hash MD5|
 |md5Hash|Coleção de cadeias de caracteres|Os códigos de hash MD5|
 |ignoreVersionDetection|Boolean|Um booliano para controlar se a versão do aplicativo será usada para detectar o aplicativo depois que ele for instalado em um dispositivo. Defina isso como true para aplicativos de linha de negócios (LoB) de macOS que usam um recurso de autoatualização.|
-|installAsManaged|Boolean|Um booliano para controlar se o aplicativo será instalado como gerenciado (requer o macOS 11,0 e outras restrições de PKG).|
+|installAsManaged|Booliano|Um booliano para controlar se o aplicativo será instalado como gerenciado (requer o macOS 11,0 e outras restrições de PKG).|
 
 
 
@@ -234,7 +234,6 @@ Content-Length: 1874
   "installAsManaged": true
 }
 ```
-
 
 
 

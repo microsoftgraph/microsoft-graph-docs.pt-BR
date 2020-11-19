@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8e3b202f49c4d54e61ff4501090b3a1909a202d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9c69ac0c6384fe9c8581b54e4819b4ea81545087
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699440"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49250349"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>Atualizar managedDeviceMobileAppConfigurationAssignment
 
@@ -97,7 +97,6 @@ Content-Length: 395
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd62d16d57a261dbab2b5034aa195147caf5e3d3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 42b8cd15c34a2d9fe677a3aff3cd4d629a94d5b8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700763"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49253919"
 ---
 # <a name="create-androidlobapp"></a>Criar androidLobApp
 
@@ -212,7 +212,6 @@ Content-Length: 1642
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

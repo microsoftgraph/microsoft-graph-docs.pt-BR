@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 832ca1bf8d7ef7c70f344bfb5a6bcfcbff250c27
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2a7f96a782d3327553012b73cb94815bedf5d228
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699587"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49250727"
 ---
 # <a name="create-managedandroidstoreapp"></a>Criar managedAndroidStoreApp
 
@@ -200,7 +200,6 @@ Content-Length: 1493
   }
 }
 ```
-
 
 
 

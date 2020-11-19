@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d050cb25385a427142e788ab63a194b9612a3da
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: effc9f3671c9d6af738b9b0de33177d32a380158
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699860"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49251488"
 ---
 # <a name="update-macosmdatpapp"></a>Atualizar macOSMdatpApp
 
@@ -155,7 +155,6 @@ Content-Length: 941
   "supersededAppCount": 2
 }
 ```
-
 
 
 
