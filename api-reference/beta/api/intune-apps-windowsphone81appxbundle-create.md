@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 519469de33158ae2199b3a31b64f09fbd046eed2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b3ca882a99dad3f977c2959f41cc5da58c9f9903
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697137"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246700"
 ---
 # <a name="create-windowsphone81appxbundle"></a>Criar windowsPhone81AppXBundle
 
@@ -255,7 +255,6 @@ Content-Length: 2540
   ]
 }
 ```
-
 
 
 

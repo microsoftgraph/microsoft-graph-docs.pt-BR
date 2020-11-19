@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b7fd7fd0def95c5931666aee57e41b05819b2aa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 66aab6adc9553449d2fef32a1033999989e2d882
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728840"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246401"
 ---
 # <a name="update-windowsphone81storeapp"></a>Atualizar windowsPhone81StoreApp
 
@@ -158,7 +158,6 @@ Content-Length: 1004
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

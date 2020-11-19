@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 35ac41caf7504c6b2754103b9fb16891eb515a48
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 629830b673a81854064fcf2c8d3a52b9ec39c9d7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723676"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247766"
 ---
 # <a name="create-officesuiteapp"></a>Criar officeSuiteApp
 
@@ -231,7 +231,6 @@ Content-Length: 1847
   "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
 
 
 

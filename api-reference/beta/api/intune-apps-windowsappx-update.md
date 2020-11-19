@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27a706ec4939215dcefab8061b22d92b1bff7da2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8c0341bec14cd2176ff3af816028604f9bb37543
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709723"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247143"
 ---
 # <a name="update-windowsappx"></a>Atualizar windowsAppX
 
@@ -207,7 +207,6 @@ Content-Length: 1642
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

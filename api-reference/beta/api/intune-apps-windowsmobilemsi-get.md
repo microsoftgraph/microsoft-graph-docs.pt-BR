@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b4d84aaa517c1d996e6b7f0e6485b88f96292c7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8d13f23b449ac4c2a98da0acf18d9dffa2682a40
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708659"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246933"
 ---
 # <a name="get-windowsmobilemsi"></a>Acessar windowsMobileMSI
 
@@ -113,7 +113,6 @@ Content-Length: 1386
   }
 }
 ```
-
 
 
 

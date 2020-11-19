@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce04f9d38a88b651da1398cde41707e987342409
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a82ad6733060856cf5607d9dd5afb494a62dca1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692300"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49249145"
 ---
 # <a name="update-mobileappassignment"></a>Atualizar mobileAppAssignment
 
@@ -117,7 +117,6 @@ Content-Length: 640
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

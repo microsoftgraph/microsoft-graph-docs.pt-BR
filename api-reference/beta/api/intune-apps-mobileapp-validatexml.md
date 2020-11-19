@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e7b6da1ab3500bd5963d53c0f0654071e230d46e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 281d15ba92d06d91775999ee644c402f2b291ea3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699055"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49249194"
 ---
 # <a name="validatexml-action"></a>ação validateXml
 
@@ -86,7 +86,6 @@ Content-Length: 37
   "value": "Validate Xml value"
 }
 ```
-
 
 
 

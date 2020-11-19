@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a2f4a0c5d9ac75e8abf575913a21a18af571fd9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e93eb32338fa72e080f157339f1f1046b9ebfc1f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694869"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247528"
 ---
 # <a name="update-userappinstallstatus"></a>Atualizar userAppInstallStatus
 
@@ -101,7 +101,6 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

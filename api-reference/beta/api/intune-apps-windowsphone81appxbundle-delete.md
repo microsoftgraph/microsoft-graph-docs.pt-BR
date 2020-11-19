@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 98db1124ca3b0c74888cc7276ce15b2d52e8a928
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b3648d1e6fa27ce47e316a350bd0592b61cbf145
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697130"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246681"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>Excluir windowsPhone81AppXBundle
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

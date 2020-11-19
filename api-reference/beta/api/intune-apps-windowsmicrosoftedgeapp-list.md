@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3607ae1dbb3bfd6234a0c3afa37d69a5ef31970b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 545e2ffd7eea0d0f1545c16695ad81c2da592a4d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708722"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246996"
 ---
 # <a name="list-windowsmicrosoftedgeapps"></a>Listar windowsMicrosoftEdgeApps
 
@@ -103,7 +103,6 @@ Content-Length: 1183
   ]
 }
 ```
-
 
 
 

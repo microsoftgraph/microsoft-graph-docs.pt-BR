@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3844d0019a7981509dfbb2a4544f00a61d4575c3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9803ce18f0d6dd821573461d88d3bf258fd82a91
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722785"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248424"
 ---
 # <a name="update-mobileappdependency"></a>Atualizar mobileAppDependency
 
@@ -56,6 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 |id|String|A ID da entidade de relação. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|A ID de aplicativo do aplicativo móvel de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|String|O nome de exibição do aplicativo móvel de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|A versão de exibição do aplicativo móvel de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|O fornecedor do aplicativo móvel de destino. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|O tipo de relação que indica se o destino é um pai ou filho. Herdado de [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Os valores possíveis são: `child` e `parent`.|
 |DependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|O tipo de relação de dependência entre os aplicativos pai e filho. Os valores possíveis são: `detect` e `autoInstall`.|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho.|
@@ -72,12 +74,14 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelationshipId}
 Content-type: application/json
-Content-length: 238
+Content-length: 345
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "dependencyType": "autoInstall",
   "dependentAppCount": 1
@@ -89,19 +93,20 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 287
+Content-Length: 394
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
   "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetDisplayVersion": "Target Display Version value",
+  "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "dependencyType": "autoInstall",
   "dependentAppCount": 1
 }
 ```
-
 
 
 

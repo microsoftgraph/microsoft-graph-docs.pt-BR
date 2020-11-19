@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0227c5a7ce9d25d2167401c1f3cf8afcc47a3083
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 24e57a4a369af77969f9de29083b2398c5f20598
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694757"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247262"
 ---
 # <a name="create-windowsappx"></a>Criar windowsAppX
 
@@ -205,7 +205,6 @@ Content-Length: 1642
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

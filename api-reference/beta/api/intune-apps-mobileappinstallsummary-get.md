@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8db10023da0934cf820ae1fe7698db8c29177e53
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2e3c27fd8cb974d078e3a6e7d70bab093bf13cf4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723704"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248326"
 ---
 # <a name="get-mobileappinstallsummary"></a>Obter mobileAppInstallSummary
 
@@ -87,7 +87,6 @@ Content-Length: 466
   }
 }
 ```
-
 
 
 

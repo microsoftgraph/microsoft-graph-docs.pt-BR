@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90b20b5131788ca3ff9b67141e6b927b67f76bfe
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 41c1eda25352cc1dcde78999dec313c5d81d4c06
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699384"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49250097"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>Obter managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -86,7 +86,6 @@ Content-Length: 450
   }
 }
 ```
-
 
 
 

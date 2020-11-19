@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e97eb6fba971e8bde1f437f0979f08d249a3a643
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 387f53cc1fe7e598e731c01fff85a7eb06eb5544
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727072"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246415"
 ---
 # <a name="create-windowsphonexap"></a>Criar windowsPhoneXAP
 
@@ -193,7 +193,6 @@ Content-Length: 1466
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

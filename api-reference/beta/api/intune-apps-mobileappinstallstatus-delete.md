@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aec3e8954a096809886c6040b4a0bc05d0478fcf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f78cd64002c6365ed4394a57f0910172bc66ac6e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693679"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248333"
 ---
 # <a name="delete-mobileappinstallstatus"></a>Excluir mobileAppInstallStatus
 
@@ -66,7 +66,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

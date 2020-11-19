@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cba69d0356f7bb836c19e216860ae3ef49269281
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aeebe566e2b29dfe1880e7512fcf6d278944a943
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695982"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248872"
 ---
 # <a name="list-mobileappcontents"></a>Listar mobileAppContents
 
@@ -78,7 +78,6 @@ Content-Length: 148
   ]
 }
 ```
-
 
 
 

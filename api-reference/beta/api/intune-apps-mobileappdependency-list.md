@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e036048c834b58bb54b46f6764eb6a5af580b2f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 70d3e259d9bc4f28aefddd9dcaa230318031a087
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48718459"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248536"
 ---
 # <a name="list-mobileappdependencies"></a>Listar mobileAppDependencies
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 348
+Content-Length: 463
 
 {
   "value": [
@@ -74,6 +74,8 @@ Content-Length: 348
       "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
       "targetId": "Target Id value",
       "targetDisplayName": "Target Display Name value",
+      "targetDisplayVersion": "Target Display Version value",
+      "targetPublisher": "Target Publisher value",
       "targetType": "parent",
       "dependencyType": "autoInstall",
       "dependentAppCount": 1
@@ -81,7 +83,6 @@ Content-Length: 348
   ]
 }
 ```
-
 
 
 

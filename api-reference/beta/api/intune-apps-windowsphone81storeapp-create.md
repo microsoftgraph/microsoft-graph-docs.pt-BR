@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 047c8a147fe4c0a18dac8db6d172ea3a8a6b27f3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 471de5006b8e9dacc6544482d683c4c66361d1e7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685335"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246576"
 ---
 # <a name="create-windowsphone81storeapp"></a>Criar windowsPhone81StoreApp
 
@@ -156,7 +156,6 @@ Content-Length: 1004
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

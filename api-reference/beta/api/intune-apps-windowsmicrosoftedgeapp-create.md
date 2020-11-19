@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43bc6ee710dddc6cad6915b52b88ec6537c8ece6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 524a89f2477ad0070f7836789a8cf1ab721417c1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703563"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247136"
 ---
 # <a name="create-windowsmicrosoftedgeapp"></a>Criar windowsMicrosoftEdgeApp
 
@@ -73,7 +73,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsM
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que este aplicativo substitui direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos que este aplicativo está substituindo direta ou indiretamente por. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|O canal a ser instalado nos dispositivos de destino. Os valores possíveis são: `dev`, `beta`, `stable`.|
+|canal|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|O canal a ser instalado nos dispositivos de destino. Os valores possíveis são: `dev`, `beta`, `stable`.|
 |displayLanguageLocale|String|A localidade do idioma a ser usada quando o aplicativo de borda exibe texto para o usuário.|
 
 
@@ -159,7 +159,6 @@ Content-Length: 1034
   "displayLanguageLocale": "Display Language Locale value"
 }
 ```
-
 
 
 

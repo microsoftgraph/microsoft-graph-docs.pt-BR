@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b00c9c3227abe02109dd5c7dd602c319456a1d7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 11e0141ed1884006642cb9bb054dd2347582e459
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685370"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246632"
 ---
 # <a name="update-windowsphone81appxbundle"></a>Atualizar windowsPhone81AppXBundle
 
@@ -257,7 +257,6 @@ Content-Length: 2540
   ]
 }
 ```
-
 
 
 

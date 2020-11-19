@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d629a69bf6776ee05dd25eb536d9c14fca496730
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4e8e47bffdfe5758cfb4bf32cf05c5174ad1130b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694862"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247549"
 ---
 # <a name="create-webapp"></a>Criar webApp
 
@@ -159,7 +159,6 @@ Content-Length: 1008
   "useManagedBrowser": true
 }
 ```
-
 
 
 

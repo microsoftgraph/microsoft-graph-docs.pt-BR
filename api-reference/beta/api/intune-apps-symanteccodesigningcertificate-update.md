@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7780df145fac54a63c4993ddbe7f2fbd72c449a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a31fe8fcaaf27e37fc1119460e521ad18339dcee
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695891"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247682"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Atualizar symantecCodeSigningCertificate
 
@@ -113,7 +113,6 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

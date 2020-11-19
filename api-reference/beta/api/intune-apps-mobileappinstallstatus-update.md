@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45f4aeefe5063c3c8775fe50d1ba2a1c87cc0ff2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 865b33d2b6157bdeeb2e184e61571b953a9965f5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723711"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248347"
 ---
 # <a name="update-mobileappinstallstatus"></a>Atualizar mobileAppInstallStatus
 
@@ -123,7 +123,6 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

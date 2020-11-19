@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2dc91c4edc73a8b3b3b20f1c0df3e20d4aed1a91
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0b79d6e177ad779d7e383dcd716063d2df5898cd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694820"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247423"
 ---
 # <a name="update-webapp"></a>Atualizar webApp
 
@@ -161,7 +161,6 @@ Content-Length: 1008
   "useManagedBrowser": true
 }
 ```
-
 
 
 

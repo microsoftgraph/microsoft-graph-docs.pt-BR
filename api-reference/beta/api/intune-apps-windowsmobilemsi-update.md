@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2646e5797c9f0ae9d4816263ad827f6cd26fd3e6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: faf78afab119438aefb818376a06f0f7697b2f60
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709716"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49246863"
 ---
 # <a name="update-windowsmobilemsi"></a>Atualizar windowsMobileMSI
 
@@ -182,7 +182,6 @@ Content-Length: 1295
   "useDeviceContext": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0ec59ffe1ef88ebb508d8ba4b614906948d892a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f7a07b2264d4c3d6cf6e180e210d4937a5422b46
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694764"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247269"
 ---
 # <a name="update-win32lobapp"></a>Atualizar win32LobApp
 
@@ -94,6 +94,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [win32Lo
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Os detalhes do MSI, se este aplicativo Win32 for um aplicativo MSI.|
 |setupFilePath|String|O caminho relativo do arquivo de instalação no pacote Win32LobApp criptografado.|
 |minimumSupportedWindowsRelease|String|O valor da versão mínima com suporte do Windows.|
+|displayVersion|String|A versão exibida no UX para este aplicativo.|
 
 
 
@@ -107,7 +108,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 3313
+Content-length: 3359
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -213,7 +214,8 @@ Content-length: 3313
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+  "displayVersion": "Display Version value"
 }
 ```
 
@@ -222,7 +224,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3485
+Content-Length: 3531
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -331,10 +333,10 @@ Content-Length: 3485
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+  "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

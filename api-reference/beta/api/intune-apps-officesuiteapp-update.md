@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0a07b2c4f3ab9ab29ea1a698e2f8b017c199051
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8cf410011f65c0b625e23366f7e6bc5e7e3211fe
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695919"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247794"
 ---
 # <a name="update-officesuiteapp"></a>Atualizar officeSuiteApp
 
@@ -75,15 +75,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [officeS
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que este aplicativo substitui direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos que este aplicativo está substituindo direta ou indiretamente por. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|autoAcceptEula|Boolean|O valor para aceitar o EULA automaticamente no dispositivo do usuário.|
+|autoAcceptEula|Booliano|O valor para aceitar o EULA automaticamente no dispositivo do usuário.|
 |productIds|coleção [officeProductId](../resources/intune-apps-officeproductid.md)|As IDs de produto que representam a SKU do pacote do office365. Os valores possíveis são: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|A propriedade para representar os aplicativos que são excluídos da ID de produto do Office365 selecionado.|
-|Propriedades usesharedcomputeractivation|Boolean|A propriedade que representa se a ativação de computador compartilhado é usada não para o pacote de aplicativos do office365.|
+|Propriedades usesharedcomputeractivation|Booliano|A propriedade que representa se a ativação de computador compartilhado é usada não para o pacote de aplicativos do office365.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|A propriedade para representar o canal de atualização do office365. Os possíveis valores são: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`, `monthlyEnterprise`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A propriedade para representar a versão do pacote de aplicativos do office365. Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |localesToInstall|Coleção de cadeias de caracteres|A propriedade para representar os locais que são instalados quando os aplicativos do Office365 estão instalados. Ele usa RFC 6033 padrão. Ref https://technet.microsoft.com/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Para especificar o nível de exibição da interface do usuário da configuração de progresso da instalação no dispositivo. Os valores possíveis são: `none` e `full`.|
-|shouldUninstallOlderVersionsOfOffice|Boolean|A propriedade para determinar se deve desinstalar o Office MSI existente se um pacote de aplicativos do Office365 for implantado no dispositivo ou não.|
+|shouldUninstallOlderVersionsOfOffice|Booliano|A propriedade para determinar se deve desinstalar o Office MSI existente se um pacote de aplicativos do Office365 for implantado no dispositivo ou não.|
 |targetVersion|String|A propriedade para representar a versão de destino específica para o pacote de aplicativos do Office365 que deve permanecer implantado nos dispositivos.|
 |updateVersion|String|A propriedade para representar a versão de atualização na qual a versão de destino específica está disponível para o pacote de aplicativos do office365.|
 |officeConfigurationXml|Binária|A propriedade para representar o arquivo de configuração XML que pode ser especificado para aplicativos do Office ProPlus. Tem precedência sobre todas as outras propriedades. Quando presente, o arquivo de configuração XML será usado para criar o aplicativo.|
@@ -233,7 +233,6 @@ Content-Length: 1847
   "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d72b4e21881b0813f0ac4808b8052df6072df9c5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d2823aee99a5b65c7c10d42ca11201b21251e24d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699048"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49249180"
 ---
 # <a name="create-mobileappassignment"></a>Criar mobileAppAssignment
 
@@ -117,7 +117,6 @@ Content-Length: 640
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

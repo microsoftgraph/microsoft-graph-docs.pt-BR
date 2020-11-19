@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 421c305307fe10d3dff7b04061394cb2077469c6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 44c788f9b478affa1d5ba5525d93ecb0ed6d982f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699062"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49249208"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>Atualizar microsoftStoreForBusinessContainedApp
 
@@ -91,7 +91,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

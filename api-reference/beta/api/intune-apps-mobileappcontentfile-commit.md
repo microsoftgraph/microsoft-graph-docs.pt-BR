@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0517047b0a3c7d1e8f31aeb8a457691e2d23c5e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c55b3bb52ec5f4c1a8551eff078af19c11711d04
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695961"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248816"
 ---
 # <a name="commit-action"></a>Ação de confirmação
 
@@ -89,7 +89,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6423c827e7286d8a3471ba5fd9637c24f0999ccf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5bdcb1a2fee42c4b44c51a9671a5f61623dbaf7d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48699349"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49249999"
 ---
 # <a name="list-manageddevicemobileappconfigurationuserstatuses"></a>Listar managedDeviceMobileAppConfigurationUserStatuses
 
@@ -82,7 +82,6 @@ Content-Length: 416
   ]
 }
 ```
-
 
 
 
