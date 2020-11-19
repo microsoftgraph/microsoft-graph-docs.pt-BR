@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ad5ac99b00041d83dc073aeb20247e916ecea56
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5fdf01317529c0985771fee1b9380be8e9a0f1cd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692762"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284852"
 ---
 # <a name="delete-applevpptokentroubleshootingevent"></a>Excluir appleVppTokenTroubleshootingEvent
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

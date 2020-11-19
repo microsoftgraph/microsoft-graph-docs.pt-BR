@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c00ae24930380226d24a8b98abf276377dbfa91c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 64eac393159a2f955c6ff4a0d087a48b181be99d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729711"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283326"
 ---
 # <a name="diffiehellmangroup-enum-type"></a>tipo de enumeração diffieHellmanGroup
 
@@ -31,7 +31,6 @@ Valores de grupo Diffie Hellman para políticas VPN do Windows10 com o tipo de c
 |ecp256|3D|ECP256|
 |ecp384|4 |ECP384|
 |group24|5 |Group24|
-
 
 
 

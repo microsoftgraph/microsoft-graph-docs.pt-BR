@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 993cf5d7c4b33511d3afc32d8643c62df5af826d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fd8084c391f81ffab7d5fcc520dc7455d8752acb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734298"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282332"
 ---
 # <a name="list-pfxrecryptionrequests"></a>Listar pfxRecryptionRequests
 
@@ -87,7 +87,6 @@ Content-Length: 659
   ]
 }
 ```
-
 
 
 

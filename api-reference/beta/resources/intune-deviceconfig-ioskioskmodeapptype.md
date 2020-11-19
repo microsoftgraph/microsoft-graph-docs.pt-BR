@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a9602eea3f5f6e825453fb25f9b5703c1125f2f3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 170e00e65758992abecb32ce28a9ee750ecbb71a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705733"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280281"
 ---
 # <a name="ioskioskmodeapptype-enum-type"></a>tipo de enumeração iosKioskModeAppType
 
@@ -29,7 +29,6 @@ Opções de origem do aplicativo para o modo quiosque do iOS.
 |appStoreApp|1|O aplicativo a ser executado vem da loja de aplicativos.|
 |managedApp|duas|O aplicativo a ser executado está incorporado ao dispositivo.|
 |builtInApp|3D|O aplicativo a ser executado é um aplicativo gerenciado.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c392d43f6e9836118f1d32320c5e63498226fed9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9f5d0ef733939afe0e18bbfe09db009c7631fa5f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712061"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284579"
 ---
 # <a name="win32lobapppowershellscriptrule-resource-type"></a>tipo de recurso win32LobAppPowerShellScriptRule
 
@@ -30,8 +30,8 @@ Herda de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|O tipo de regra que indica o objetivo da regra. Herdado de [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Os valores possíveis são: `detection` e `requirement`.|
 |displayName|String|O nome de exibição da regra. Não especifique esse valor se a regra for usada para detecção.|
-|enforceSignatureCheck|Boolean|Um valor que indica se uma verificação de assinatura é imposta.|
-|runAs32Bit|Boolean|Um valor que indica se o script deve ser executado como 32 bits.|
+|enforceSignatureCheck|Booliano|Um valor que indica se uma verificação de assinatura é imposta.|
+|runAs32Bit|Booliano|Um valor que indica se o script deve ser executado como 32 bits.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|O contexto de execução do script. Não especifique esse valor se a regra for usada para detecção. As regras de detecção de script serão executadas no mesmo contexto do contexto de instalação de aplicativo associado. Os valores possíveis são: `system` e `user`.|
 |scriptContent|String|O conteúdo de script codificado em base64.|
 |OperationType|[win32LobAppPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md)|O tipo de operação de comparação de saída de script. Use não configurado (o valor padrão) se a regra for usada para detecção. Os valores possíveis são: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
@@ -62,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "comparisonValue": "String"
 }
 ```
-
 
 
 

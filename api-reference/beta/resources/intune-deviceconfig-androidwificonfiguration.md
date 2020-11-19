@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d508bce1289334010ee6b71728254448c753c9ca
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8e318f280597fe7789cdd92913d8a55678cb7969
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723902"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283998"
 ---
 # <a name="androidwificonfiguration-resource-type"></a>tipo de recurso androidWiFiConfiguration
 
@@ -114,7 +114,6 @@ Veja a seguir uma representação JSON do recurso.
   "wiFiSecurityType": "String"
 }
 ```
-
 
 
 

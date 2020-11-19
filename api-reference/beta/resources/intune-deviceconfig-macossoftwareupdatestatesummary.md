@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cadcfa190f2f2c665a9671c9c9f17f94d646d04
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: eb7cebab56f9866753794259b70a0bdd8cc1e414
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704870"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279812"
 ---
 # <a name="macossoftwareupdatestatesummary-resource-type"></a>tipo de recurso macOSSoftwareUpdateStateSummary
 
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

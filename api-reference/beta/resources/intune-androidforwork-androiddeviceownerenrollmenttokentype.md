@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d0ae6e7082cca522aa28586e0d354733b10a3fc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 57110ee4e84adeb6131c63870824a64ed7486e23
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736342"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282262"
 ---
 # <a name="androiddeviceownerenrollmenttokentype-enum-type"></a>tipo de enumeração androidDeviceOwnerEnrollmentTokenType
 
@@ -27,7 +27,6 @@ O tipo de token de registro de um perfil de registro.
 |:---|:---|:---|
 |Padrão.|,0|Tipo de token padrão.|
 |corporateOwnedDedicatedDeviceWithAzureADSharedMode|1|Tipo de token para registro de dispositivo dedicado compartilhado do Azure AD. Aplica-se somente ao modo de registro do CorporateOwnedDedicatedDevice.|
-
 
 
 

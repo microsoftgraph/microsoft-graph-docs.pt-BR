@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 255ed32336ecd76d66393e1b846d4d2045bd51fa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 79469e9371a9329b8b88b301a1dfcef0eaa449e0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692748"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284845"
 ---
 # <a name="get-applevpptokentroubleshootingevent"></a>Obter appleVppTokenTroubleshootingEvent
 
@@ -102,7 +102,6 @@ Content-Length: 1003
   }
 }
 ```
-
 
 
 

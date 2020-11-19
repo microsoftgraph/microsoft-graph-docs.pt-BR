@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8745cae6b9929bf04e033cebc2f979354bd39a16
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 72493f198222b912eda177c411d52a5de7db3af5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726546"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284291"
 ---
 # <a name="windowsphone81appx-resource-type"></a>tipo de recurso windowsPhone81AppX
 
@@ -141,7 +141,6 @@ Veja a seguir uma representação JSON do recurso.
   "identityVersion": "String"
 }
 ```
-
 
 
 

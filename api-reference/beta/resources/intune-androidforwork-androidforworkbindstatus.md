@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b937f204d7a9b2d8ac0c80f071d1efee3c8af38
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3039d852ee2bcc2680da2b13e56b513190dca113
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736307"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282094"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>tipo de enumeração androidForWorkBindStatus
 
@@ -29,7 +29,6 @@ Vincular o status do locatário à API do Google EMM
 |limite|1|Ainda não documentado|
 |boundAndValidated|duas|Ainda não documentado|
 |desassociação|3D|Ainda não documentado|
-
 
 
 

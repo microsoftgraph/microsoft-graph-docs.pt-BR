@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dcc9036527720c0917448d5b4b4eabdcaa00586e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fb9f15f04f096d646e79699b9cb06b6059d67e3d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685475"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284383"
 ---
 # <a name="windowsmicrosoftedgeapp-resource-type"></a>tipo de recurso windowsMicrosoftEdgeApp
 
@@ -57,7 +57,7 @@ Herda de [mobileApp](../resources/intune-shared-mobileapp.md)
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|O número total de aplicativos que este aplicativo substitui direta ou indiretamente. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|O número total de aplicativos que este aplicativo está substituindo direta ou indiretamente por. Herdado de [mobileApp](../resources/intune-shared-mobileapp.md)|
-|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|O canal a ser instalado nos dispositivos de destino. Os valores possíveis são: `dev`, `beta`, `stable`.|
+|canal|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|O canal a ser instalado nos dispositivos de destino. Os valores possíveis são: `dev`, `beta`, `stable`.|
 |displayLanguageLocale|String|A localidade do idioma a ser usada quando o aplicativo de borda exibe texto para o usuário.|
 
 ## <a name="relationships"></a>Relações
@@ -111,7 +111,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayLanguageLocale": "String"
 }
 ```
-
 
 
 

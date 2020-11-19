@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18d6a1237f60c67f4fbac929890932115279006d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7b653a809cf41ebf16aaf3a1a95a15692f56896a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732773"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282430"
 ---
 # <a name="update-devicecompliancepolicypolicysetitem"></a>Atualizar deviceCompliancePolicyPolicySetItem
 
@@ -112,7 +112,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

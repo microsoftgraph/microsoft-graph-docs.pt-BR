@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6d3401a00b4a97bcf194e40f6da42e056bd6dd5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 81c045ad7ce662590e5fbe29dd90a3fa34b60843
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723916"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283991"
 ---
 # <a name="androidvpnconfiguration-resource-type"></a>tipo de recurso androidVpnConfiguration
 
@@ -142,7 +142,6 @@ Veja a seguir uma representação JSON do recurso.
   "authenticationMethod": "String"
 }
 ```
-
 
 
 

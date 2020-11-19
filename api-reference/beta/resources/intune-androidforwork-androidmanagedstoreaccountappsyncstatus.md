@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8ce676cad7c53398c76aae43df39d114e479f600
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b51b3787a7458941edbd402d982aaa9e83cc89d9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736279"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282066"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>tipo de enumeração androidManagedStoreAccountAppSyncStatus
 
@@ -30,8 +30,7 @@ Status de sincronização do locatário com a API Google EMM
 |androidForWorkApiError|duas|Ainda não documentado|
 |managementServiceError|3D|Ainda não documentado|
 |unknownError|4 |Ainda não documentado|
-|none|5 |Ainda não documentado|
-
+|nenhum|5 |Ainda não documentado|
 
 
 

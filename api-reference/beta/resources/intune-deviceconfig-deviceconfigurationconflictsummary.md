@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3add7a02064035e363f5d2d4886edc93cbd0d37a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bf9c43f8b8a3b1e29223692d541014e07f6d6977
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705988"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283641"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>tipo de recurso Propriedadesdeviceconfigurationconflictsummary
 
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCheckinsImpacted": 1024
 }
 ```
-
 
 
 

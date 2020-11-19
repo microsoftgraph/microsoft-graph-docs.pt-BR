@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b1452d4b9e1ff5181fb3052388e98b96fef766cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 54b1865a26e14aa8a680e2c306ea30431db5b047
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702555"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280211"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>tipo de enumeração iosNotificationAlertType
 
@@ -28,8 +28,7 @@ Tipo de alerta de configurações de notificação.
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
 |Bandeira|1|Bandeira.|
 |JanelaRestrita|duas|JanelaRestrita.|
-|none|3D|Nenhum|
-
+|nenhum|3D|Nenhum|
 
 
 

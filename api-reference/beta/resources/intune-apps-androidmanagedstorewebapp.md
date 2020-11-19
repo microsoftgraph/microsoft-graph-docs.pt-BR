@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 074674f1593bb3c0885cccf455e9bc1307d4bf4f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 68deabf6301673a7cf10bcb2b96fb01b93dcb921
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727565"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281982"
 ---
 # <a name="androidmanagedstorewebapp-resource-type"></a>tipo de recurso androidManagedStoreWebApp
 
@@ -131,7 +131,6 @@ Veja a seguir uma representação JSON do recurso.
   "supportsOemConfig": true
 }
 ```
-
 
 
 

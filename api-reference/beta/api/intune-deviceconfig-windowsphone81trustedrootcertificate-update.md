@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e42ff16edb91d53b8ed6d012a0459b194f37d8fd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7a83f428ebe56554c8a2bc53e3f69e6f9659c2a0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726840"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282843"
 ---
 # <a name="update-windowsphone81trustedrootcertificate"></a>Atualizar windowsPhone81TrustedRootCertificate
 
@@ -160,7 +160,6 @@ Content-Length: 1319
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

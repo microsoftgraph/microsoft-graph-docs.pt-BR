@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d805495b0a2cae50423b20674941a1ee7e1b27b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 20a08b6be50608bebf4482e61f032b9587b04566
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712075"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281765"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>tipo de recurso macOSMinimumOperatingSystem
 
@@ -25,15 +25,15 @@ O sistema operacional mínimo necessário para um aplicativo do MacOS.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v10_7|Boolean|Mac OS 10,7 ou posterior.|
-|v10_8|Boolean|Mac OS 10,8 ou posterior.|
-|v10_9|Boolean|Mac OS 10,9 ou posterior.|
-|v10_10|Boolean|Mac OS 10,10 ou posterior.|
-|v10_11|Boolean|Mac OS 10,11 ou posterior.|
-|v10_12|Boolean|Mac OS 10,12 ou posterior.|
-|v10_13|Boolean|Mac OS 10,13 ou posterior.|
-|v10_14|Boolean|Mac OS 10,14 ou posterior.|
-|v10_15|Boolean|Mac OS 10,15 ou posterior.|
+|v10_7|Booliano|Mac OS 10,7 ou posterior.|
+|v10_8|Booliano|Mac OS 10,8 ou posterior.|
+|v10_9|Booliano|Mac OS 10,9 ou posterior.|
+|v10_10|Booliano|Mac OS 10,10 ou posterior.|
+|v10_11|Booliano|Mac OS 10,11 ou posterior.|
+|v10_12|Booliano|Mac OS 10,12 ou posterior.|
+|v10_13|Booliano|Mac OS 10,13 ou posterior.|
+|v10_14|Booliano|Mac OS 10,14 ou posterior.|
+|v10_15|Booliano|Mac OS 10,15 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "v10_15": true
 }
 ```
-
 
 
 

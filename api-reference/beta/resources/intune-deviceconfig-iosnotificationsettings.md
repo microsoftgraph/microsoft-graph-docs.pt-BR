@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d3ce8ab638f365793eb7bb6116dc8b6277b9318
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1ca6c5cf968897d701870bc695dcce909c74f1fc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705754"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280134"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Tipo de recurso iosNotificationSettings
 
@@ -34,6 +34,7 @@ Um item que descreve a configuração de notificação.
 |alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Indica o tipo de alerta para notificações neste aplicativo. Os valores possíveis são: `deviceDefault`, `banner`, `modal`, `none`.|
 |badgesEnabled|Booliano|Indica se serão permitidos selos neste aplicativo.|
 |soundsEnabled|Booliano|Indica se são permitidos sons neste aplicativo.|
+|previewVisibility|[iosNotificationPreviewVisibility](../resources/intune-deviceconfig-iosnotificationpreviewvisibility.md)|Substitui a política de visualização de notificação definida pelo usuário em um dispositivo iOS. Os valores possíveis são: `notConfigured`, `alwaysShow`, `hideWhenLocked`, `neverShow`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -56,10 +57,10 @@ Veja a seguir uma representação JSON do recurso.
   "showOnLockScreen": true,
   "alertType": "String",
   "badgesEnabled": true,
-  "soundsEnabled": true
+  "soundsEnabled": true,
+  "previewVisibility": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8dc0aada94c3ab13cf488bb6cca6ba0f7057c1da
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cd22cc58d3d949c1e560d62e672e27fb31ae913e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735250"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279777"
 ---
 # <a name="macossystemextensiontypemapping-resource-type"></a>tipo de recurso macOSSystemExtensionTypeMapping
 
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "allowedTypes": "String"
 }
 ```
-
 
 
 

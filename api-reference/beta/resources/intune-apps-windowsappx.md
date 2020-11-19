@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83559ef5fe2eadee26627503f57c20c6c01f3a8a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8102f9cac92b9b915702c29f5f37b1cc85db941a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712040"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284502"
 ---
 # <a name="windowsappx-resource-type"></a>tipo de recurso windowsAppX
 
@@ -139,7 +139,6 @@ Veja a seguir uma representação JSON do recurso.
   "identityVersion": "String"
 }
 ```
-
 
 
 

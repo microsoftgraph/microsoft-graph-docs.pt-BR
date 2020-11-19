@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 82ec3c2e59a0e4eb920977051c423391fe2ebdb5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9e1c54517130b29cae9ec83b1936d65fe1fde7ee
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48719691"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280932"
 ---
 # <a name="officeproductid-enum-type"></a>tipo de enumeração officeProductId
 
@@ -29,7 +29,6 @@ A enumeração para especificar os ProductIds do Office365 que representam os SK
 |o365BusinessRetail|1|Ainda não documentado|
 |visioProRetail|duas|Ainda não documentado|
 |projectProRetail|3D|Ainda não documentado|
-
 
 
 

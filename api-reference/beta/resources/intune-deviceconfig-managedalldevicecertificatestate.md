@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7fd7544e01ff0351d8883dd8201b9c3a901e2d7d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 33c77e4d6a72ae4335d7d9e921aed0b5d13911b8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48710038"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279686"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>tipo de recurso managedAllDeviceCertificateState
 
@@ -77,7 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

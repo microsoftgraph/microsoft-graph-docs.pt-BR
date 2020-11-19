@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cda7c16598f8bd29b35f7870bc8d097cfd048a21
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6b378855358f17b3a2eae48e4db24a3e6dd678b1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702625"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281555"
 ---
 # <a name="managedapp-resource-type"></a>Tipo de recurso managedApp
 
@@ -108,7 +108,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
-
 
 
 

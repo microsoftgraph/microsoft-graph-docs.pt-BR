@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e52a5d413579b4e027b188d509dcc7dfb9933e18
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 252d4f75d4dd1444ced3badfe04815d3c5ac83ab
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702751"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284894"
 ---
 # <a name="delete-windowsfeatureupdateprofile"></a>Excluir windowsFeatureUpdateProfile
 
@@ -65,7 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

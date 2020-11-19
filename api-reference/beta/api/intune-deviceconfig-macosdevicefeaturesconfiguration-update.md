@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 502f307bb7244cf6bec364aebf6714a6881262e5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 45bad1ce22360f3364781dbab5806d02bf8012f0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733011"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283053"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Atualizar macOSDeviceFeaturesConfiguration
 
@@ -480,7 +480,6 @@ Content-Length: 5834
   "contentCachingPort": 2
 }
 ```
-
 
 
 

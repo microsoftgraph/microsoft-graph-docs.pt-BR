@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e89446ea4b9baeeadf757884bd2cd444e29ae817
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 868f778e443c2bca2ca1c4c48191c7f0274c9834
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685510"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284474"
 ---
 # <a name="windowsarchitecture-enum-type"></a>tipo de enumeração windowsArchitecture
 
@@ -25,13 +25,12 @@ Contém propriedades da arquitetura do Windows.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Nenhum sinalizador definido.|
+|nenhum|,0|Nenhum sinalizador definido.|
 |x|1|Se o tipo de arquitetura do Windows x86 é ou não suportado.|
 |Professional|duas|Se o tipo de arquitetura do Windows x64 é ou não suportado.|
 |equipe|4 |Se o tipo de arquitetura Windows de braço é ou não suportado.|
 |neutraliza|8 |Se o tipo de arquitetura neutra do Windows é ou não suportado.|
 |arm64|16 |Se o tipo de arquitetura do Windows Arm64 é ou não suportado.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c91d6cbe3a94c5a5dba7d3b4c1cecd188014979f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c1b3952b20dc749b952bd361f2844ebdcf308f0d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703927"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283781"
 ---
 # <a name="appinstallcontroltype-enum-type"></a>tipo de enumeração appInstallControlType
 
@@ -30,7 +30,6 @@ Configuração do controle de instalação do aplicativo
 |storeOnly|duas|Permitir somente aplicativos de armazenamento|
 |a0/&gt|3D|Mostrar recomendações de aplicativo|
 |preferStore|4 |Avisar antes de instalar aplicativos de fora do repositório|
-
 
 
 

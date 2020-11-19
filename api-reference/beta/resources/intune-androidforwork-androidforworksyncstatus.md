@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b14eb40b7ec1351e7405d3c147186fa4f7851e5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5c0992d52f69993865e46b15422483048756a31f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736286"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282059"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>tipo de enumeração androidForWorkSyncStatus
 
@@ -30,8 +30,7 @@ Status de sincronização do locatário com a API Google EMM
 |androidForWorkApiError|duas|Ainda não documentado|
 |managementServiceError|3D|Ainda não documentado|
 |unknownError|4 |Ainda não documentado|
-|none|5 |Ainda não documentado|
-
+|nenhum|5 |Ainda não documentado|
 
 
 

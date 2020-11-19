@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ff642fa1fb99e5f809b8a732cc64f62204525237
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5f49038bd4896a273442aad17324a122e44fc2d0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712047"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284586"
 ---
 # <a name="win32lobapppowershellscriptruleoperationtype-enum-type"></a>tipo de enumeração win32LobAppPowerShellScriptRuleOperationType
 
@@ -32,7 +32,6 @@ Contém todo o tipo de detecção de saída de script do PowerShell com suporte.
 |flutuação|4 |O tipo de dados de saída é float.|
 |versão|5 |O tipo de dados de saída é versão.|
 |booliano|6 |O tipo de dados de saída é Boolean.|
-
 
 
 

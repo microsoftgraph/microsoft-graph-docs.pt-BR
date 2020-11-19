@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25a3688ecbf0090a40702db58a5d01588801fe70
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f01ea57e6aa8f509ceb09c7ddf2e0773aa24570b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732775"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282381"
 ---
 # <a name="create-deviceconfigurationpolicysetitem"></a>Criar deviceConfigurationPolicySetItem
 
@@ -112,7 +112,6 @@ Content-Length: 486
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 50fb33f344242769dc88a840c0c9674886a5d332
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8fe19dc4b46813cca545b3bf38603b381164e247
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702618"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281562"
 ---
 # <a name="managedappavailability-enum-type"></a>tipo de enumeração managedAppAvailability
 
@@ -27,7 +27,6 @@ Disponibilidade de um aplicativo gerenciado (MAM).
 |:---|:---|:---|
 |global|,0|Um aplicativo globalmente disponível para todos os locatários.|
 |lineOfBusiness|1|Um aplicativo de linha de negócios privado para uma organização.|
-
 
 
 

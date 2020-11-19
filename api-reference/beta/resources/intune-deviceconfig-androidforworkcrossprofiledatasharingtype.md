@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2aa717a0b67c638aed6b4b621eea2d56fcbb45b0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 388b8f0a5b498cf7ea34f628860954c7742709e0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684922"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284222"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>tipo de enumeração androidForWorkCrossProfileDataSharingType
 
@@ -29,7 +29,6 @@ Android para o tipo de compartilhamento de dados entre perfis de trabalho.
 |preventAny|1|Impedir qualquer compartilhamento.|
 |allowPersonalToWork|duas|Permitir solicitação de compartilhamento de dados do perfil pessoal para o perfil de trabalho.|
 |norestrictions|3D|Sem restrições no compartilhamento.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e602f2f8e562080ca4ae87384f885d27cdae1707
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 52a43b9d2ccfa6e0a7fb3f8c3979a4003fee148f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730648"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280687"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>tipo de enumeração androidWorkProfileVpnConnectionType
 
@@ -34,7 +34,6 @@ Tipo de conexão VPN do perfil de trabalho do Android.
 |paloAltoGlobalProtect|6 |GlobalProtect de redes de Palo Alto.|
 |microsoftTunnel|7 |Microsoft Tunnel.|
 |netMotionMobility|8 |Mobilidade do NETMOTION.|
-
 
 
 

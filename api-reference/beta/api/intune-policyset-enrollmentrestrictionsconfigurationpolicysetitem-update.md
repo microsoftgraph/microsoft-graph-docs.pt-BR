@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: acbd34ddc95dd14902ae3ce65532b26386a48c78
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7645a04bcf5125459fabd41a48913ab45ee37acc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727607"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282374"
 ---
 # <a name="update-enrollmentrestrictionsconfigurationpolicysetitem"></a>Atualizar enrollmentRestrictionsConfigurationPolicySetItem
 
@@ -118,7 +118,6 @@ Content-Length: 535
   "limit": 5
 }
 ```
-
 
 
 

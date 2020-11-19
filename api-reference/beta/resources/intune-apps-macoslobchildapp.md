@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ba9dcf62c94d316f404a56c71165357aa3c35a1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b3c115e312333a448318fb718140f5b6e8305494
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731999"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281828"
 ---
 # <a name="macoslobchildapp-resource-type"></a>tipo de recurso macOSLobChildApp
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "versionNumber": "String"
 }
 ```
-
 
 
 

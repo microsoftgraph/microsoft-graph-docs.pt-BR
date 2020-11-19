@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce107870a7839c3a8707819f2714dc38be2c6da9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cf2d8bcd344f6ac12263f0821db98a48b2aa7c43
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735341"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49285139"
 ---
 # <a name="gettopmobileapps-function"></a>função getTopMobileApps
 
@@ -109,7 +109,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2fda07e416c43246a035b556e6ee23f36ff56a1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8281aaaec193b5a78e913af52ce51d8f327ce8cf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728311"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279476"
 ---
 # <a name="vpnserver-resource-type"></a>tipo de recurso vpnServer
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "isDefaultServer": true
 }
 ```
-
 
 
 

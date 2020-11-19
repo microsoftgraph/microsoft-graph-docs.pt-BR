@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3f80d823cf9e4eaecc20021353fc130d313d4ae
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4544ac21f01c7b210a61f6ce91d9880bacd4a02e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685454"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284320"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Tipo de recurso windowsMinimumOperatingSystem
 
@@ -28,12 +28,12 @@ O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 |v8_0|Booliano|Windows 8.0 ou posterior.|
 |v8_1|Booliano|Windows 8.1 ou posterior.|
 |v10_0|Booliano|Windows 10.0 ou posterior.|
-|v10_1607|Boolean|Windows 10 1607 ou posterior.|
-|v10_1703|Boolean|Windows 10 1703 ou posterior.|
-|v10_1709|Boolean|Windows 10 1709 ou posterior.|
-|v10_1803|Boolean|Windows 10 1803 ou posterior.|
-|v10_1809|Boolean|Windows 10 1809 ou posterior.|
-|v10_1903|Boolean|Windows 10 1903 ou posterior.|
+|v10_1607|Booliano|Windows 10 1607 ou posterior.|
+|v10_1703|Booliano|Windows 10 1703 ou posterior.|
+|v10_1709|Booliano|Windows 10 1709 ou posterior.|
+|v10_1803|Booliano|Windows 10 1803 ou posterior.|
+|v10_1809|Booliano|Windows 10 1809 ou posterior.|
+|v10_1903|Booliano|Windows 10 1903 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -59,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "v10_1903": true
 }
 ```
-
 
 
 

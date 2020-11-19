@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d21de6e0b2d61bd6340f7a67b98746e4899f6e00
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5b6cb3246f53da6eb1a31452a8a06a412d785a29
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702632"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281569"
 ---
 # <a name="managedandroidstoreapp-resource-type"></a>managedAndroidStoreApp resource type
 
@@ -133,7 +133,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 
