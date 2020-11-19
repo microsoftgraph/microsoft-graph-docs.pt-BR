@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a18f963693a2c41eb148ff39e54850c3a6b77372
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1603a3f384671e56b73cd86c5c0076c11dca2d72
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726686"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277943"
 ---
 # <a name="create-grouppolicypresentationtextbox"></a>Criar groupPolicyPresentationTextBox
 
@@ -100,7 +100,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

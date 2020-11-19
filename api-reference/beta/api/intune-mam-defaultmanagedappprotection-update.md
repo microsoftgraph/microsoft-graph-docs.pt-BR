@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5bdd05eafdc98a58b85d56446efb1d76c6d31edb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 81bbde3ab32a14bb9164b4a5939817944d9f392e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701848"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277831"
 ---
 # <a name="update-defaultmanagedappprotection"></a>Atualizar defaultManagedAppProtection
 
@@ -143,6 +143,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [default
 |blockAfterCompanyPortalUpdateDeferralInDays|Int32|Número máximo de dias que a atualização do portal da empresa pode ser adiada no dispositivo ou o acesso ao aplicativo será bloqueado.|
 |warnAfterCompanyPortalUpdateDeferralInDays|Int32|Número máximo de dias que a atualização do portal da empresa pode ser adiada no dispositivo, ou o usuário receberá o aviso|
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Número máximo de dias que a atualização do portal da empresa pode ser adiada no dispositivo ou os dados da empresa no aplicativo serão apagados|
+|deviceLockRequired|Booliano|Define se qualquer tipo de bloqueio deve ser necessário em Device. (somente Android)|
+|appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Define um comportamento de aplicativo gerenciado, tanto avisar, bloquear ou apagar, se o bloqueio de tela for necessário no dispositivo, mas não estiver definido. (Android somente). Os valores possíveis são: `block`, `wipe`, `warn`.|
 
 
 
@@ -156,7 +158,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 5041
+Content-length: 5114
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -272,7 +274,9 @@ Content-length: 5041
   "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
   "blockAfterCompanyPortalUpdateDeferralInDays": 11,
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
-  "wipeAfterCompanyPortalUpdateDeferralInDays": 10
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "wipe"
 }
 ```
 
@@ -281,7 +285,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5213
+Content-Length: 5286
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -400,10 +404,11 @@ Content-Length: 5213
   "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
   "blockAfterCompanyPortalUpdateDeferralInDays": 11,
   "warnAfterCompanyPortalUpdateDeferralInDays": 10,
-  "wipeAfterCompanyPortalUpdateDeferralInDays": 10
+  "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+  "deviceLockRequired": true,
+  "appActionIfDeviceLockNotSet": "wipe"
 }
 ```
-
 
 
 

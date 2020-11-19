@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c02e275b753d1cad3185b5658538cdbb75dc161
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cc3aa90abde0fca482f8f068ec5e39e948e030c0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701827"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277740"
 ---
 # <a name="get-managedappconfiguration"></a>Get managedAppConfiguration
 
@@ -94,7 +94,6 @@ Content-Length: 618
   }
 }
 ```
-
 
 
 

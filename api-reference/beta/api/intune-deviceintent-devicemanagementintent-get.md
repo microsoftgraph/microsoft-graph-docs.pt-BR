@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e14429aa9f71a11f3680ab153829fd21a101757
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e301cc4d867784141276eb488fc7198f5fd0e24a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691817"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49278223"
 ---
 # <a name="get-devicemanagementintent"></a>Obter deviceManagementIntent
 
@@ -85,7 +85,6 @@ Content-Length: 418
   }
 }
 ```
-
 
 
 

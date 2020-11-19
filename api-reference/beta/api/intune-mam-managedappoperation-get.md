@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b0a91b549e99109e9e35f9aed0c873a1916f764
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 057bae7af6f5547fbfc4d7a41985db0c121c6107
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701785"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277656"
 ---
 # <a name="get-managedappoperation"></a>Get managedAppOperation
 
@@ -81,7 +81,6 @@ Content-Length: 303
   }
 }
 ```
-
 
 
 

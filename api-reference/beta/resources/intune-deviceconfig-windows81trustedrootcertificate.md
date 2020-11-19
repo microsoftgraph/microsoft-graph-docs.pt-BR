@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 811b24a41ae6ad4ec5b1379af83d1cdea3943346
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b55965f225b9fcb8a6fcecdba23a5c2ab13ece6e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729543"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279231"
 ---
 # <a name="windows81trustedrootcertificate-resource-type"></a>tipo de recurso windows81TrustedRootCertificate
 
@@ -50,7 +50,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |trustedRootCertificate|Binária|Certificado raiz confiável|
 |certFileName|String|Nome do arquivo a ser exibido na interface do usuário.|
-|destinationStore|[certificateDestinationStore](../resources/intune-deviceconfig-certificatedestinationstore.md)|Local do repositório de destino para o certificado raiz confiável. Os valores possíveis são: `computerCertStoreRoot`, `computerCertStoreIntermediate`, `userCertStoreIntermediate`.|
+|destinationStore|[certificateDestinationStore](../resources/intune-shared-certificatedestinationstore.md)|Local do repositório de destino para o certificado raiz confiável. Os valores possíveis são: `computerCertStoreRoot`, `computerCertStoreIntermediate`, `userCertStoreIntermediate`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -110,7 +110,6 @@ Veja a seguir uma representação JSON do recurso.
   "destinationStore": "String"
 }
 ```
-
 
 
 

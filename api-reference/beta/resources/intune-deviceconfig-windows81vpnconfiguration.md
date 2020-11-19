@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42fc19eca12fb88bd2b4527138c850c41e81a860
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6c4dbe31f8172919f2b07772001de420064008d7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734263"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279224"
 ---
 # <a name="windows81vpnconfiguration-resource-type"></a>tipo de recurso windows81VpnConfiguration
 
@@ -134,7 +134,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

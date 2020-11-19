@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b10803550bd251c89e4bec9ca3b5554590dd3bbd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 70c6763b695acabbe8cdf958024a098694b7de20
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701841"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277817"
 ---
 # <a name="get-iosmanagedappregistration"></a>Get iosManagedAppRegistration
 
@@ -98,7 +98,6 @@ Content-Length: 1000
   }
 }
 ```
-
 
 
 

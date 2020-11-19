@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5d988752a0ca1e1441d5f6a79a3d93bcdae5271
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2ea3b7ae2faca249a4d9ea3cad8a9b7ee2587e31
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729557"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279287"
 ---
 # <a name="windows81generalconfiguration-resource-type"></a>Tipo de recurso windows81GeneralConfiguration
 
@@ -174,7 +174,6 @@ Veja a seguir uma representação JSON do recurso.
   "workFoldersUrl": "String"
 }
 ```
-
 
 
 
