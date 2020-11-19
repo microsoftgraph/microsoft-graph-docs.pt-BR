@@ -69,7 +69,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se for bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos de [grupo](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão de cada grupo.
+Se for bem-sucedido, este método retornará um código de resposta `200 OK` e uma coleção de objetos de [grupo](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão de cada grupo.
 
 ## <a name="examples"></a>Exemplos
 

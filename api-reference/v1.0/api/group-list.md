@@ -50,7 +50,7 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 
 Você também pode usar os parâmetros de consulta `$count` e `$search` para limitar a resposta. O parâmetro de consulta `$search` oferece suporte a geração de tokens somente nos campos **displayName** e **description**. Os outros campos são padrão para o comportamento `$filter`. Quando os itens são adicionados ou atualizados para esse recurso, eles são especificamente indexados para uso com os parâmetros de consulta `$count` e `$search`. Pode haver um pequeno atraso entre a adição ou atualização de um item e a sua disponibilidade no índice.
 
-Para obter mais informações sobre as opções de consulta OData, veja [ Parâmetros de consulta OData ](/graph/query-parameters).
+Para obter mais informações sobre as opções de consulta OData, veja [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -63,7 +63,7 @@ Para obter mais informações sobre as opções de consulta OData, veja [ Parâm
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se for bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos de [grupo](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão de cada grupo.
+Se for bem-sucedido, este método retornará um código de resposta `200 OK` e uma coleção de objetos de [grupo](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão de cada grupo.
 
 ## <a name="examples"></a>Exemplos
 
