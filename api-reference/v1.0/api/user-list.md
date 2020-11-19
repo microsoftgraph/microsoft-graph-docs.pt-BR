@@ -38,11 +38,11 @@ GET /users
 
 Este método suporta os parâmetros de consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, `$filter`, e `$select`. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
 
-Por padrão, apenas um conjunto limitado de propriedades é retornado ( **businessPhones** , **displayName** , **givenName** , **id** , **jobTitle** , **mail** , **mobilePhone** , **officeLocation** , **preferredLanguage** , **surname** e **userPrincipalName** ). 
+Por padrão, apenas um conjunto limitado de propriedades é retornado (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname** e **userPrincipalName**). 
 
-Para retornar um conjunto de propriedades alternativas, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar **displayName** , **givenName** e **postalCode** , adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.
+Para retornar um conjunto de propriedades alternativas, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar **displayName**, **givenName** e **postalCode**, adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.
 
-Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário. As seguintes propriedades só possuem suporte ao [recuperar um único usuário](./user-get.md): **aboutMe** , **birthday** , **hireDate** , **interests** , **mySite** , **pastProjects** , **preferredName** , **responsibilities** , **schools** , **skills** , **mailboxSettings**.
+Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário. As seguintes propriedades só possuem suporte ao [recuperar um único usuário](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -131,7 +131,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação.
 
->**Observação:** Ao filtrar em **identidades** , você deve fornecer tanto **emissor** como **emissorAssignedId**.
+>**Observação:** Ao filtrar em **identidades**, você deve fornecer tanto **emissor** como **emissorAssignedId**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
