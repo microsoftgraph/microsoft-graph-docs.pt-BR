@@ -1,0 +1,245 @@
+---
+title: tipo de recurso deviceManagementConfigurationSimpleSettingCollectionDefinition
+description: Ainda não documentado
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: resourcePageType
+ms.openlocfilehash: 547b7b44d3a06495a2a984cc9cb8f26ef4ac0086
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49241231"
+---
+# <a name="devicemanagementconfigurationsimplesettingcollectiondefinition-resource-type"></a><span data-ttu-id="dc38a-103">tipo de recurso deviceManagementConfigurationSimpleSettingCollectionDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-103">deviceManagementConfigurationSimpleSettingCollectionDefinition resource type</span></span>
+
+<span data-ttu-id="dc38a-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dc38a-104">Namespace: microsoft.graph</span></span>
+
+> <span data-ttu-id="dc38a-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="dc38a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="dc38a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="dc38a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="dc38a-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="dc38a-107">Not yet documented</span></span>
+
+
+<span data-ttu-id="dc38a-108">Herda de [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-108">Inherits from [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span></span>
+
+## <a name="methods"></a><span data-ttu-id="dc38a-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="dc38a-109">Methods</span></span>
+|<span data-ttu-id="dc38a-110">Método</span><span class="sxs-lookup"><span data-stu-id="dc38a-110">Method</span></span>|<span data-ttu-id="dc38a-111">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="dc38a-111">Return Type</span></span>|<span data-ttu-id="dc38a-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc38a-112">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="dc38a-113">Listar deviceManagementConfigurationSimpleSettingCollectionDefinitions</span><span class="sxs-lookup"><span data-stu-id="dc38a-113">List deviceManagementConfigurationSimpleSettingCollectionDefinitions</span></span>](../api/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition-list.md)|<span data-ttu-id="dc38a-114">coleção [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-114">[deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) collection</span></span>|<span data-ttu-id="dc38a-115">Listar Propriedades e relações dos objetos [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="dc38a-115">List properties and relationships of the [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) objects.</span></span>|
+|[<span data-ttu-id="dc38a-116">Obter deviceManagementConfigurationSimpleSettingCollectionDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-116">Get deviceManagementConfigurationSimpleSettingCollectionDefinition</span></span>](../api/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition-get.md)|[<span data-ttu-id="dc38a-117">deviceManagementConfigurationSimpleSettingCollectionDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-117">deviceManagementConfigurationSimpleSettingCollectionDefinition</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md)|<span data-ttu-id="dc38a-118">Leia as propriedades e as relações do objeto [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="dc38a-118">Read properties and relationships of the [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) object.</span></span>|
+|[<span data-ttu-id="dc38a-119">Criar deviceManagementConfigurationSimpleSettingCollectionDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-119">Create deviceManagementConfigurationSimpleSettingCollectionDefinition</span></span>](../api/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition-create.md)|[<span data-ttu-id="dc38a-120">deviceManagementConfigurationSimpleSettingCollectionDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-120">deviceManagementConfigurationSimpleSettingCollectionDefinition</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md)|<span data-ttu-id="dc38a-121">Criar um novo objeto [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="dc38a-121">Create a new [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) object.</span></span>|
+|[<span data-ttu-id="dc38a-122">Excluir deviceManagementConfigurationSimpleSettingCollectionDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-122">Delete deviceManagementConfigurationSimpleSettingCollectionDefinition</span></span>](../api/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition-delete.md)|<span data-ttu-id="dc38a-123">Nenhum</span><span class="sxs-lookup"><span data-stu-id="dc38a-123">None</span></span>|<span data-ttu-id="dc38a-124">Exclui [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md).</span><span class="sxs-lookup"><span data-stu-id="dc38a-124">Deletes a [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md).</span></span>|
+|[<span data-ttu-id="dc38a-125">Atualizar deviceManagementConfigurationSimpleSettingCollectionDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-125">Update deviceManagementConfigurationSimpleSettingCollectionDefinition</span></span>](../api/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition-update.md)|[<span data-ttu-id="dc38a-126">deviceManagementConfigurationSimpleSettingCollectionDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-126">deviceManagementConfigurationSimpleSettingCollectionDefinition</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md)|<span data-ttu-id="dc38a-127">Atualiza as propriedades de um objeto [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="dc38a-127">Update the properties of a [deviceManagementConfigurationSimpleSettingCollectionDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingcollectiondefinition.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="dc38a-128">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dc38a-128">Properties</span></span>
+|<span data-ttu-id="dc38a-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="dc38a-129">Property</span></span>|<span data-ttu-id="dc38a-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="dc38a-130">Type</span></span>|<span data-ttu-id="dc38a-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc38a-131">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="dc38a-132">aplicabilidade</span><span class="sxs-lookup"><span data-stu-id="dc38a-132">applicability</span></span>|[<span data-ttu-id="dc38a-133">deviceManagementConfigurationSettingApplicability</span><span class="sxs-lookup"><span data-stu-id="dc38a-133">deviceManagementConfigurationSettingApplicability</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|<span data-ttu-id="dc38a-134">Detalhes qual configuração de dispositivo é aplicável no herdado de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-134">Details which device setting is applicable on Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-135">accessTypes</span><span class="sxs-lookup"><span data-stu-id="dc38a-135">accessTypes</span></span>|[<span data-ttu-id="dc38a-136">deviceManagementConfigurationSettingAccessTypes</span><span class="sxs-lookup"><span data-stu-id="dc38a-136">deviceManagementConfigurationSettingAccessTypes</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|<span data-ttu-id="dc38a-137">Modo de acesso de leitura/gravação da configuração herdada de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span><span class="sxs-lookup"><span data-stu-id="dc38a-137">Read/write access mode of the setting Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="dc38a-138">Os valores possíveis são: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.</span><span class="sxs-lookup"><span data-stu-id="dc38a-138">Possible values are: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.</span></span>|
+|<span data-ttu-id="dc38a-139">palavras-chave</span><span class="sxs-lookup"><span data-stu-id="dc38a-139">keywords</span></span>|<span data-ttu-id="dc38a-140">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="dc38a-140">String collection</span></span>|<span data-ttu-id="dc38a-141">Tokens que pesquisam configurações em herdadas de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-141">Tokens which to search settings on Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-142">infoUrls</span><span class="sxs-lookup"><span data-stu-id="dc38a-142">infoUrls</span></span>|<span data-ttu-id="dc38a-143">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="dc38a-143">String collection</span></span>|<span data-ttu-id="dc38a-144">Lista de links mais informações para a configuração podem ser encontradas em herdadas de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-144">List of links more info for the setting can be found at Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-145">ocorrência</span><span class="sxs-lookup"><span data-stu-id="dc38a-145">occurrence</span></span>|[<span data-ttu-id="dc38a-146">deviceManagementConfigurationSettingOccurrence</span><span class="sxs-lookup"><span data-stu-id="dc38a-146">deviceManagementConfigurationSettingOccurrence</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|<span data-ttu-id="dc38a-147">Indica se a configuração é obrigatória ou não herdada de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-147">Indicates whether the setting is required or not Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-148">baseUri</span><span class="sxs-lookup"><span data-stu-id="dc38a-148">baseUri</span></span>|<span data-ttu-id="dc38a-149">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-149">String</span></span>|<span data-ttu-id="dc38a-150">Caminho de CSP base herdado de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-150">Base CSP Path Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-151">offsetUri</span><span class="sxs-lookup"><span data-stu-id="dc38a-151">offsetUri</span></span>|<span data-ttu-id="dc38a-152">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-152">String</span></span>|<span data-ttu-id="dc38a-153">Caminho de CSP offset da base herdada de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-153">Offset CSP Path from Base Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-154">rootDefinitionId</span><span class="sxs-lookup"><span data-stu-id="dc38a-154">rootDefinitionId</span></span>|<span data-ttu-id="dc38a-155">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-155">String</span></span>|<span data-ttu-id="dc38a-156">Definição da configuração raiz se a configuração for uma configuração de filho.</span><span class="sxs-lookup"><span data-stu-id="dc38a-156">Root setting definition if the setting is a child setting.</span></span> <span data-ttu-id="dc38a-157">Herdado de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-157">Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-158">categoryId</span><span class="sxs-lookup"><span data-stu-id="dc38a-158">categoryId</span></span>|<span data-ttu-id="dc38a-159">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-159">String</span></span>|<span data-ttu-id="dc38a-160">Especifica o grupo de área no qual a configuração é configurada em um provedor de serviços de configuração especificado (CSP) herdado de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-160">Specifies the area group under which the setting is configured in a specified configuration service provider (CSP) Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-161">settingUsage</span><span class="sxs-lookup"><span data-stu-id="dc38a-161">settingUsage</span></span>|[<span data-ttu-id="dc38a-162">deviceManagementConfigurationSettingUsage</span><span class="sxs-lookup"><span data-stu-id="dc38a-162">deviceManagementConfigurationSettingUsage</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|<span data-ttu-id="dc38a-163">Tipo de configuração, por exemplo, configuração e conformidade herdadas de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span><span class="sxs-lookup"><span data-stu-id="dc38a-163">Setting type, for example, configuration and compliance Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md).</span></span> <span data-ttu-id="dc38a-164">Os valores possíveis são: `none` e `configuration`.</span><span class="sxs-lookup"><span data-stu-id="dc38a-164">Possible values are: `none`, `configuration`.</span></span>|
+|<span data-ttu-id="dc38a-165">id</span><span class="sxs-lookup"><span data-stu-id="dc38a-165">id</span></span>|<span data-ttu-id="dc38a-166">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-166">String</span></span>|<span data-ttu-id="dc38a-167">Identificador do item herdado de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-167">Identifier for item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-168">description</span><span class="sxs-lookup"><span data-stu-id="dc38a-168">description</span></span>|<span data-ttu-id="dc38a-169">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-169">String</span></span>|<span data-ttu-id="dc38a-170">Descrição do item herdado de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-170">Description of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-171">helpText</span><span class="sxs-lookup"><span data-stu-id="dc38a-171">helpText</span></span>|<span data-ttu-id="dc38a-172">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-172">String</span></span>|<span data-ttu-id="dc38a-173">Texto de ajuda do item herdado de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-173">Help text of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-174">nome</span><span class="sxs-lookup"><span data-stu-id="dc38a-174">name</span></span>|<span data-ttu-id="dc38a-175">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-175">String</span></span>|<span data-ttu-id="dc38a-176">Nome do item herdado de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-176">Name of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-177">displayName</span><span class="sxs-lookup"><span data-stu-id="dc38a-177">displayName</span></span>|<span data-ttu-id="dc38a-178">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-178">String</span></span>|<span data-ttu-id="dc38a-179">Nome para exibição do item herdado de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-179">Display name of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-180">versão</span><span class="sxs-lookup"><span data-stu-id="dc38a-180">version</span></span>|<span data-ttu-id="dc38a-181">String</span><span class="sxs-lookup"><span data-stu-id="dc38a-181">String</span></span>|<span data-ttu-id="dc38a-182">Versão de item herdada de [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-182">Item Version Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-183">valueDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-183">valueDefinition</span></span>|[<span data-ttu-id="dc38a-184">deviceManagementConfigurationSettingValueDefinition</span><span class="sxs-lookup"><span data-stu-id="dc38a-184">deviceManagementConfigurationSettingValueDefinition</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluedefinition.md)|<span data-ttu-id="dc38a-185">Definição do valor dessa configuração herdado de [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-185">Definition of the value for this setting Inherited from [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-186">defaultValue</span><span class="sxs-lookup"><span data-stu-id="dc38a-186">defaultValue</span></span>|[<span data-ttu-id="dc38a-187">deviceManagementConfigurationSettingValue</span><span class="sxs-lookup"><span data-stu-id="dc38a-187">deviceManagementConfigurationSettingValue</span></span>](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|<span data-ttu-id="dc38a-188">Valor de configuração padrão para essa configuração herdada de [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-188">Default setting value for this setting Inherited from [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-189">dependente</span><span class="sxs-lookup"><span data-stu-id="dc38a-189">dependentOn</span></span>|<span data-ttu-id="dc38a-190">coleção [deviceManagementConfigurationDependentOn](../resources/intune-deviceconfigv2-devicemanagementconfigurationdependenton.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-190">[deviceManagementConfigurationDependentOn](../resources/intune-deviceconfigv2-devicemanagementconfigurationdependenton.md) collection</span></span>|<span data-ttu-id="dc38a-191">lista de configurações pai essa configuração depende de herdada de [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-191">list of parent settings this setting is dependent on Inherited from [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-192">dependedOnBy</span><span class="sxs-lookup"><span data-stu-id="dc38a-192">dependedOnBy</span></span>|<span data-ttu-id="dc38a-193">coleção [deviceManagementConfigurationSettingDependedOnBy](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdependedonby.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-193">[deviceManagementConfigurationSettingDependedOnBy](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdependedonby.md) collection</span></span>|<span data-ttu-id="dc38a-194">lista de configurações filhas que dependem dessa configuração herdada de [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span><span class="sxs-lookup"><span data-stu-id="dc38a-194">list of child settings that depend on this setting Inherited from [deviceManagementConfigurationSimpleSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingdefinition.md)</span></span>|
+|<span data-ttu-id="dc38a-195">maximumCount</span><span class="sxs-lookup"><span data-stu-id="dc38a-195">maximumCount</span></span>|<span data-ttu-id="dc38a-196">Int32</span><span class="sxs-lookup"><span data-stu-id="dc38a-196">Int32</span></span>|<span data-ttu-id="dc38a-197">Número máximo de configurações simples na coleção.</span><span class="sxs-lookup"><span data-stu-id="dc38a-197">Maximum number of simple settings in the collection.</span></span> <span data-ttu-id="dc38a-198">Valores válidos de 1 a 100</span><span class="sxs-lookup"><span data-stu-id="dc38a-198">Valid values 1 to 100</span></span>|
+|<span data-ttu-id="dc38a-199">minimumCount</span><span class="sxs-lookup"><span data-stu-id="dc38a-199">minimumCount</span></span>|<span data-ttu-id="dc38a-200">Int32</span><span class="sxs-lookup"><span data-stu-id="dc38a-200">Int32</span></span>|<span data-ttu-id="dc38a-201">Número mínimo de configurações simples na coleção.</span><span class="sxs-lookup"><span data-stu-id="dc38a-201">Minimum number of simple settings in the collection.</span></span> <span data-ttu-id="dc38a-202">Valores válidos de 1 a 100</span><span class="sxs-lookup"><span data-stu-id="dc38a-202">Valid values 1 to 100</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="dc38a-203">Relações</span><span class="sxs-lookup"><span data-stu-id="dc38a-203">Relationships</span></span>
+<span data-ttu-id="dc38a-204">Nenhum</span><span class="sxs-lookup"><span data-stu-id="dc38a-204">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="dc38a-205">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="dc38a-205">JSON Representation</span></span>
+<span data-ttu-id="dc38a-206">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="dc38a-206">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionDefinition"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionDefinition",
+  "applicability": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
+    "description": "String",
+    "platform": "String",
+    "deviceMode": "String",
+    "technologies": "String"
+  },
+  "accessTypes": "String",
+  "keywords": [
+    "String"
+  ],
+  "infoUrls": [
+    "String"
+  ],
+  "occurrence": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingOccurrence",
+    "minDeviceOccurrence": 1024,
+    "maxDeviceOccurrence": 1024
+  },
+  "baseUri": "String",
+  "offsetUri": "String",
+  "rootDefinitionId": "String",
+  "categoryId": "String",
+  "settingUsage": "String",
+  "id": "String (identifier)",
+  "description": "String",
+  "helpText": "String",
+  "name": "String",
+  "displayName": "String",
+  "version": "String",
+  "valueDefinition": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueDefinition"
+  },
+  "defaultValue": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+    "children": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "String",
+        "choiceSettingValue": {
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+          "value": "String",
+          "children": [
+            {
+              "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "settingDefinitionId": "String",
+              "choiceSettingValue": {
+                "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                "value": "String",
+                "children": [
+                  {
+                    "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                    "settingDefinitionId": "String",
+                    "choiceSettingValue": {
+                      "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                      "value": "String",
+                      "children": [
+                        {
+                          "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                          "settingDefinitionId": "String",
+                          "choiceSettingValue": {
+                            "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                            "value": "String",
+                            "children": [
+                              {
+                                "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "String",
+                                "choiceSettingValue": {
+                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                  "value": "String",
+                                  "children": [
+                                    {
+                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                      "settingDefinitionId": "String",
+                                      "choiceSettingValue": {
+                                        "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                        "value": "String",
+                                        "children": [
+                                          {
+                                            "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                            "settingDefinitionId": "String",
+                                            "choiceSettingValue": {
+                                              "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                              "value": "String",
+                                              "children": [
+                                                {
+                                                  "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                  "settingDefinitionId": "String",
+                                                  "choiceSettingValue": {
+                                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                    "value": "String",
+                                                    "children": [
+                                                      {
+                                                        "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                        "settingDefinitionId": "String",
+                                                        "choiceSettingValue": {
+                                                          "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                          "value": "String",
+                                                          "children": [
+                                                            {
+                                                              "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                              "settingDefinitionId": "String",
+                                                              "choiceSettingValue": {
+                                                                "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                "value": "String",
+                                                                "children": [
+                                                                  {
+                                                                    "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                    "settingDefinitionId": "String",
+                                                                    "choiceSettingValue": {
+                                                                      "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                      "value": "String",
+                                                                      "children": null
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "dependentOn": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationDependentOn",
+      "dependentOn": "String",
+      "parentSettingId": "String"
+    }
+  ],
+  "dependedOnBy": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingDependedOnBy",
+      "dependedOnBy": "String",
+      "required": true
+    }
+  ],
+  "maximumCount": 1024,
+  "minimumCount": 1024
+}
+```
+
+
+
+

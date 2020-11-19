@@ -1,0 +1,122 @@
+---
+title: Criar windows10XVpnConfiguration
+description: Criar um novo objeto windows10XVpnConfiguration.
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: apiPageType
+ms.openlocfilehash: c30a7a18bf159891ed3331fa8722404823116b29
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49241236"
+---
+# <a name="create-windows10xvpnconfiguration"></a><span data-ttu-id="aa03e-103">Criar windows10XVpnConfiguration</span><span class="sxs-lookup"><span data-stu-id="aa03e-103">Create windows10XVpnConfiguration</span></span>
+
+<span data-ttu-id="aa03e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aa03e-104">Namespace: microsoft.graph</span></span>
+
+> <span data-ttu-id="aa03e-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="aa03e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="aa03e-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="aa03e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="aa03e-107">Criar um novo objeto [windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="aa03e-107">Create a new [windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md) object.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="aa03e-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="aa03e-108">Prerequisites</span></span>
+<span data-ttu-id="aa03e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aa03e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="aa03e-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="aa03e-111">Permission type</span></span>|<span data-ttu-id="aa03e-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="aa03e-112">Permissions (from most to least privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="aa03e-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="aa03e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="aa03e-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aa03e-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="aa03e-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="aa03e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="aa03e-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="aa03e-116">Not supported.</span></span>|
+|<span data-ttu-id="aa03e-117">Application</span><span class="sxs-lookup"><span data-stu-id="aa03e-117">Application</span></span>|<span data-ttu-id="aa03e-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aa03e-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="aa03e-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="aa03e-119">HTTP Request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/resourceAccessProfiles
+```
+
+## <a name="request-headers"></a><span data-ttu-id="aa03e-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="aa03e-120">Request headers</span></span>
+|<span data-ttu-id="aa03e-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="aa03e-121">Header</span></span>|<span data-ttu-id="aa03e-122">Valor</span><span class="sxs-lookup"><span data-stu-id="aa03e-122">Value</span></span>|
+|:---|:---|
+|<span data-ttu-id="aa03e-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="aa03e-123">Authorization</span></span>|<span data-ttu-id="aa03e-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="aa03e-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="aa03e-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="aa03e-125">Accept</span></span>|<span data-ttu-id="aa03e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="aa03e-126">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="aa03e-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="aa03e-127">Request body</span></span>
+<span data-ttu-id="aa03e-128">No corpo da solicitação, forneça uma representação JSON do objeto windows10XVpnConfiguration.</span><span class="sxs-lookup"><span data-stu-id="aa03e-128">In the request body, supply a JSON representation for the windows10XVpnConfiguration object.</span></span>
+
+<span data-ttu-id="aa03e-129">A tabela a seguir mostra as propriedades que são necessárias ao criar windows10XVpnConfiguration.</span><span class="sxs-lookup"><span data-stu-id="aa03e-129">The following table shows the properties that are required when you create the windows10XVpnConfiguration.</span></span>
+
+|<span data-ttu-id="aa03e-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="aa03e-130">Property</span></span>|<span data-ttu-id="aa03e-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="aa03e-131">Type</span></span>|<span data-ttu-id="aa03e-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="aa03e-132">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="aa03e-133">id</span><span class="sxs-lookup"><span data-stu-id="aa03e-133">id</span></span>|<span data-ttu-id="aa03e-134">String</span><span class="sxs-lookup"><span data-stu-id="aa03e-134">String</span></span>|<span data-ttu-id="aa03e-135">Identificador de perfil herdado de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span><span class="sxs-lookup"><span data-stu-id="aa03e-135">Profile identifier Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span></span>|
+|<span data-ttu-id="aa03e-136">versão</span><span class="sxs-lookup"><span data-stu-id="aa03e-136">version</span></span>|<span data-ttu-id="aa03e-137">Int32</span><span class="sxs-lookup"><span data-stu-id="aa03e-137">Int32</span></span>|<span data-ttu-id="aa03e-138">Versão do perfil herdado de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span><span class="sxs-lookup"><span data-stu-id="aa03e-138">Version of the profile Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span></span>|
+|<span data-ttu-id="aa03e-139">displayName</span><span class="sxs-lookup"><span data-stu-id="aa03e-139">displayName</span></span>|<span data-ttu-id="aa03e-140">String</span><span class="sxs-lookup"><span data-stu-id="aa03e-140">String</span></span>|<span data-ttu-id="aa03e-141">Nome de exibição do perfil herdado de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span><span class="sxs-lookup"><span data-stu-id="aa03e-141">Profile display name Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span></span>|
+|<span data-ttu-id="aa03e-142">description</span><span class="sxs-lookup"><span data-stu-id="aa03e-142">description</span></span>|<span data-ttu-id="aa03e-143">String</span><span class="sxs-lookup"><span data-stu-id="aa03e-143">String</span></span>|<span data-ttu-id="aa03e-144">Descrição do perfil herdado de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span><span class="sxs-lookup"><span data-stu-id="aa03e-144">Profile description Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span></span>|
+|<span data-ttu-id="aa03e-145">creationDatetime</span><span class="sxs-lookup"><span data-stu-id="aa03e-145">creationDateTime</span></span>|<span data-ttu-id="aa03e-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="aa03e-146">DateTimeOffset</span></span>|<span data-ttu-id="aa03e-147">O perfil DateTime foi criado herdado de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span><span class="sxs-lookup"><span data-stu-id="aa03e-147">DateTime profile was created Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span></span>|
+|<span data-ttu-id="aa03e-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="aa03e-148">lastModifiedDateTime</span></span>|<span data-ttu-id="aa03e-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="aa03e-149">DateTimeOffset</span></span>|<span data-ttu-id="aa03e-150">O perfil DateTime foi modificado pela última vez de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span><span class="sxs-lookup"><span data-stu-id="aa03e-150">DateTime profile was last modified Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span></span>|
+|<span data-ttu-id="aa03e-151">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="aa03e-151">roleScopeTagIds</span></span>|<span data-ttu-id="aa03e-152">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="aa03e-152">String collection</span></span>|<span data-ttu-id="aa03e-153">Marcas de escopo herdadas de [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span><span class="sxs-lookup"><span data-stu-id="aa03e-153">Scope Tags Inherited from [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md)</span></span>|
+|<span data-ttu-id="aa03e-154">authenticationCertificateId</span><span class="sxs-lookup"><span data-stu-id="aa03e-154">authenticationCertificateId</span></span>|<span data-ttu-id="aa03e-155">Guid</span><span class="sxs-lookup"><span data-stu-id="aa03e-155">Guid</span></span>|<span data-ttu-id="aa03e-156">ID para o certificado de autenticação</span><span class="sxs-lookup"><span data-stu-id="aa03e-156">ID to the Authentication Certificate</span></span>|
+|<span data-ttu-id="aa03e-157">customXmlFileName</span><span class="sxs-lookup"><span data-stu-id="aa03e-157">customXmlFileName</span></span>|<span data-ttu-id="aa03e-158">String</span><span class="sxs-lookup"><span data-stu-id="aa03e-158">String</span></span>|<span data-ttu-id="aa03e-159">Nome de arquivo XML personalizado.</span><span class="sxs-lookup"><span data-stu-id="aa03e-159">Custom Xml file name.</span></span>|
+|<span data-ttu-id="aa03e-160">customXml</span><span class="sxs-lookup"><span data-stu-id="aa03e-160">customXml</span></span>|<span data-ttu-id="aa03e-161">Binária</span><span class="sxs-lookup"><span data-stu-id="aa03e-161">Binary</span></span>|<span data-ttu-id="aa03e-162">Comandos XML personalizados que configura a conexão VPN.</span><span class="sxs-lookup"><span data-stu-id="aa03e-162">Custom XML commands that configures the VPN connection.</span></span> <span data-ttu-id="aa03e-163">(Codificação de bytes UTF8)</span><span class="sxs-lookup"><span data-stu-id="aa03e-163">(UTF8 byte encoding)</span></span>|
+
+
+
+## <a name="response"></a><span data-ttu-id="aa03e-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="aa03e-164">Response</span></span>
+<span data-ttu-id="aa03e-165">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="aa03e-165">If successful, this method returns a `201 Created` response code and a [windows10XVpnConfiguration](../resources/intune-rapolicy-windows10xvpnconfiguration.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="aa03e-166">Exemplo</span><span class="sxs-lookup"><span data-stu-id="aa03e-166">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="aa03e-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="aa03e-167">Request</span></span>
+<span data-ttu-id="aa03e-168">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="aa03e-168">Here is an example of the request.</span></span>
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/resourceAccessProfiles
+Content-type: application/json
+Content-length: 446
+
+{
+  "@odata.type": "#microsoft.graph.windows10XVpnConfiguration",
+  "version": 7,
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "authenticationCertificateId": "39b4cd38-cd38-39b4-38cd-b43938cdb439",
+  "customXmlFileName": "Custom Xml File Name value",
+  "customXml": "Y3VzdG9tWG1s"
+}
+```
+
+### <a name="response"></a><span data-ttu-id="aa03e-169">Resposta</span><span class="sxs-lookup"><span data-stu-id="aa03e-169">Response</span></span>
+<span data-ttu-id="aa03e-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="aa03e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 559
+
+{
+  "@odata.type": "#microsoft.graph.windows10XVpnConfiguration",
+  "id": "6ee1c04f-c04f-6ee1-4fc0-e16e4fc0e16e",
+  "version": 7,
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "authenticationCertificateId": "39b4cd38-cd38-39b4-38cd-b43938cdb439",
+  "customXmlFileName": "Custom Xml File Name value",
+  "customXml": "Y3VzdG9tWG1s"
+}
+```
+
+
+
+
