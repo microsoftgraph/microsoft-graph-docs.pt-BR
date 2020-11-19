@@ -1,18 +1,18 @@
 ---
-description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7d483bfe64f8583adddc7e69577ff78533ce2e45
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+description: Automatically generated file. DO NOT MODIFY
+ms.openlocfilehash: 8f2ab00bc3f6a783e23f6f1ad1e959646a2308f5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333442"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49350543"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/serviceprincipals"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/servicePrincipals"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
