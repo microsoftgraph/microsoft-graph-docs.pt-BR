@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81e63e8c293f344f573e0f5a2fdbf6212c0b8bea
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7862605715e8ad1f6ef1ddf12413a9fb53111180
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728192"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230986"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>tipo de recurso deviceHealthScriptAssignment
 
@@ -37,6 +37,7 @@ Contém propriedades usadas para atribuir um script de gerenciamento de disposit
 |id|String|Chave da entidade de atribuição de script de integridade do dispositivo. Essa propriedade é somente leitura.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O grupo do Azure Active Directory que estamos direcionando o script para|
 |runRemediationScript|Booliano|Determinar se queremos executar somente o script de detecção ou executar o script de detecção e o script de correção|
+|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Agendamento de execução de script para o grupo de destino|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -58,10 +59,15 @@ Veja a seguir uma representação JSON do recurso.
     "deviceAndAppManagementAssignmentFilterId": "String",
     "deviceAndAppManagementAssignmentFilterType": "String"
   },
-  "runRemediationScript": true
+  "runRemediationScript": true,
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 1024,
+    "useUtc": true,
+    "time": "String (time of day)"
+  }
 }
 ```
-
 
 
 

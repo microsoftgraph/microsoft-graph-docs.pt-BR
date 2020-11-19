@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f0d1fb60610425356f543d884e311d041a441cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b102c96cd33063597d140d4a4948eceb555f9770
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725418"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230867"
 ---
 # <a name="remoteaction-enum-type"></a>tipo de enumeração remoteaction
 
@@ -36,7 +36,7 @@ As ações remotas do Intune dão suporte.
 |rebootNow|8 |O usuário inicia uma ação para reinicializar um dispositivo Windows.|
 |recoverPasscode|9 |O usuário inicia uma ação para redefinir o PIN para o Passport para funcionar no dispositivo Windows Phone.|
 |cleanWindowsDevice|10 |O usuário inicia uma ação para limpar o dispositivo Windows.|
-|logoutSharedAppleDeviceActiveUser|11|O usuário inicia uma ação para fazer o logoff do usuário atual em um dispositivo Apple compartilhado.|
+|logoutSharedAppleDeviceActiveUser|11 |O usuário inicia uma ação para fazer o logoff do usuário atual em um dispositivo Apple compartilhado.|
 |quickScan|12 |O usuário inicia uma ação para executar a verificação rápida no dispositivo.|
 |fullScan|13 |O usuário inicia uma ação para executar a verificação completa no dispositivo.|
 |windowsDefenderUpdateSignatures|14 |O usuário inicia uma ação para atualizar as assinaturas de malware no dispositivo.|
@@ -48,7 +48,6 @@ As ações remotas do Intune dão suporte.
 |rotateFileVaultKey|508|O usuário inicia uma ação para girar o FileVaultKey no Mac.|
 |getFileVaultKey| 21 |O usuário inicia uma ação para obter o FileVaultKey no Mac.|
 |DeviceName|22|O usuário inicia uma ação para definir o nome do dispositivo no dispositivo.|
-
 
 
 

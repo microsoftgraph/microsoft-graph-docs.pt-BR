@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1ea71a04a87972a1f7375af9458d0a25ab04b49
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6408ee1cef68ade4ccb1c8b90f91ca99a5b75bf4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725432"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230895"
 ---
 # <a name="osversioncount-resource-type"></a>tipo de recurso osVersionCount
 
@@ -47,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdateDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

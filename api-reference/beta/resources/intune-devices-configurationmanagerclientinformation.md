@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b99db60922a93353cd1cc2cb6b85ff6b1241efe
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 769f6a5172b7a84e9e75a2d7a8f701e195135823
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690235"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231021"
 ---
 # <a name="configurationmanagerclientinformation-resource-type"></a>tipo de recurso configurationManagerClientInformation
 
@@ -26,7 +26,7 @@ Informações do cliente do Configuration Manager sincronizadas a partir do SCCM
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |clientIdentifier|String|ID do cliente do Gerenciador de configurações do SCCM|
-|IsBlocked|Boolean|Status bloqueado do cliente do Gerenciador de configurações do SCCM|
+|IsBlocked|Booliano|Status bloqueado do cliente do Gerenciador de configurações do SCCM|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,7 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "isBlocked": true
 }
 ```
-
 
 
 
