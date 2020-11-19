@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80a6399df5133ac7dfe23cb7b7ffe26746bc6fda
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 06e20735d0e6ba15328b7373a12769bd1895e6c4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701323"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255291"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Criar androidDeviceOwnerEnrollmentProfile
 
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |id|String|GUID exclusivo do perfil de registro.|
 |displayName|String|Nome de exibição do perfil de registro.|
 |description|String|Descrição do perfil de registro.|
-|enrollmentid|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|O modo de registro de dispositivos que usam esse perfil de registro. Os valores possíveis são: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
+|enrollmentid|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|O modo de registro de dispositivos que usam esse perfil de registro. Os valores possíveis são: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|O tipo de token de registro de um perfil de registro. Os valores possíveis são: `default` e `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
@@ -138,7 +138,6 @@ Content-Length: 930
   ]
 }
 ```
-
 
 
 

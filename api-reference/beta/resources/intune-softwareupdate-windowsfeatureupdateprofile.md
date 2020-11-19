@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f2157fccff9cbd6a1618b5989b91bb95edae576c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c1d973687157f769828d3ac8034afc6b8b7b0b0f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702233"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255585"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>tipo de recurso windowsFeatureUpdateProfile
 
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

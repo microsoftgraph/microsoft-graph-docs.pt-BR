@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7b9090da43bf88d0b484dfcbcf7b93e1ba9a67e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ff6a33bd42d9edcaff5fd39c2757337e71b32a1b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701183"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255010"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Criar androidForWorkEnrollmentProfile
 
@@ -122,7 +122,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

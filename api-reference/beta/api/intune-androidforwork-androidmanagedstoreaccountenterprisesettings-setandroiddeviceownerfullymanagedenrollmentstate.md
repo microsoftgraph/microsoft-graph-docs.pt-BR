@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 062a9f597218a5e5a974ca3488739f1d1a891a95
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dca8bdc3a2c6a5a3baec94c079d2a67ed6bb25ab
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701001"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49254458"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>ação setAndroidDeviceOwnerFullyManagedEnrollmentState
 
@@ -80,7 +80,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

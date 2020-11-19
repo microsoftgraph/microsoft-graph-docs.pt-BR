@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5973853225676c2bcbf039566bc7428d5033fbd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 10da106f50a6c7bf95b13e3a9fc241b96a797d16
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701197"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49254997"
 ---
 # <a name="list-androidforworkappconfigurationschemas"></a>Listar androidForWorkAppConfigurationSchemas
 
@@ -99,7 +99,6 @@ Content-Length: 977
   ]
 }
 ```
-
 
 
 

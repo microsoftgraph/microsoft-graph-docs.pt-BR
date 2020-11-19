@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f2b94a098c70b6d4ac4105b31274f406f058c675
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3997ce86c780713849d0e0e4773457ff665b0e0d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696045"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255599"
 ---
 # <a name="iosavailableupdateversion-resource-type"></a>tipo de recurso iosAvailableUpdateVersion
 
@@ -51,7 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

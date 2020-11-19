@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5e98eda4f2bce6c40a4d3e8ccfc1480802d1d23
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a63832a94f984407743b1a6c67859539743f9e12
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726246"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255529"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>Tipo de recurso telecomExpenseManagementPartner
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 790eac6bd48590773b4b27f59aca92546802c407
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e28d47e9ab8752c733a32bb96f2685bfd90bd6d3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727994"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255333"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>tipo de recurso deviceManagementTroubleshootingErrorDetails
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

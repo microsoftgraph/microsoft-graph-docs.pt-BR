@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45210c990925c7946e80714e0ed98a6d58cce83a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9afa337bc1a61263ec53140b3fd32bdaf53f8b30
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701127"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49254751"
 ---
 # <a name="completesignup-action"></a>Ação completeSignup
 
@@ -80,7 +80,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

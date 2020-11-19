@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43cd91db1eb0d0d476d590601ba131cc526ea90d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 196355a03a6c86a62765bc2b513670315d3311c2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726249"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255578"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfile
 
@@ -99,7 +99,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

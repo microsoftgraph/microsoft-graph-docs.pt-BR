@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1c8c980f8d56fcb78f9399b100e2a3798631a12
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: eb6e42242b3cd713fbe340753a960a97efad15d6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696059"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255592"
 ---
 # <a name="windowsupdatestate-resource-type"></a>tipo de recurso windowsUpdateState
 
@@ -71,7 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

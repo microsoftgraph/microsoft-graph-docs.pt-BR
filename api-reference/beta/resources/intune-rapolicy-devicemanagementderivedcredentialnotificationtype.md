@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b3563bb2c03abe83f59f226f3b3fe7a14fddafef
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d6b60fbb9ced71529db71f491f7667a4e6988b98
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697220"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256068"
 ---
 # <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a>tipo de enumeração deviceManagementDerivedCredentialNotificationType
 
@@ -25,10 +25,9 @@ Valores com suporte para o tipo de notificação a ser usado.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Nenhum|
+|nenhum|,0|Nenhum|
 |companyPortal|1|Portal da empresa|
 |email|duas|Email|
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6321c440da24245d1f39c604cb52def894b47a31
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 7ed834091507962a76e1e5384791d9ebcfb80666
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030120"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255474"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -45,7 +45,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) |Não suportado                                |
 |Aplicativo                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Observação** : Permissões marcadas com * usar [consentimento específico de recursos]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usar [consentimento específico de recursos]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Antes de chamar esta API com permissões de aplicação, você deve solicitar acesso. Para detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -116,7 +116,7 @@ A solicitação especifica o cabeçalho opcional da solicitação, odata.top, re
   "blockType": "request",
   "name": "get_channel_messages_delta_1"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$top=2
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -217,7 +217,7 @@ A segunda solicitação especifica o `nextLink` URL retornado da resposta anteri
   "blockType": "request",
   "name": "get_channel_messages_delta_2"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -318,7 +318,7 @@ A terceira solicitação continua a usar a URL `nextLink` mais recente retornada
   "blockType": "request",
   "name": "get_channel_messages_delta_3"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -398,7 +398,7 @@ Usando o `deltaLink` da última solicitação na última rodada, você será cap
   "blockType": "request",
   "name": "get_channel_messages_delta_4"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc1ODA0OTAmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
