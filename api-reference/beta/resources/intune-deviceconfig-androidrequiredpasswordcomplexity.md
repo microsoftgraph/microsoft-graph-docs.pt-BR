@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f26f1e55e4f4703a06db6a7b2d44fb1b3cfd753a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 18ca4c424a97444009a85f3499f6d50bc3fa294a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724618"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231686"
 ---
 # <a name="androidrequiredpasswordcomplexity-enum-type"></a>tipo de enumeração androidRequiredPasswordComplexity
 
@@ -25,11 +25,10 @@ Os tipos de complexidade de senha que podem ser definidos no Android. Um de: nen
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|,0|Valor padrão do dispositivo, sem senha.|
+|nenhum|,0|Valor padrão do dispositivo, sem senha.|
 |low|1|A complexidade da senha necessária no dispositivo é do tipo baixo, conforme definido pela documentação do Android.|
 |medium|duas|A complexidade da senha necessária no dispositivo é do tipo médio, conforme definido pela documentação do Android.|
 |high|3D|A complexidade da senha necessária no dispositivo é do tipo alto, conforme definido pela documentação do Android.|
-
 
 
 

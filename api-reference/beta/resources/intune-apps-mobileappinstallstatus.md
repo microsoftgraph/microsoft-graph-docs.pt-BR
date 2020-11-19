@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 942b9eda37ffa2f8ba8525352949b47562bb6dbe
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cbdafd4d46ba81d53138080a8c5b0c41e73015e9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48721491"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231898"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>tipo de recurso mobileAppInstallStatus
 
@@ -79,7 +79,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayVersion": "String"
 }
 ```
-
 
 
 

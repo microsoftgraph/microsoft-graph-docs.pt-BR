@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fd2866a5ca367136d98eecedfd5f51c1186d1b7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5d2dc0b9b0b6517aae31c436a7b55dc10c0b412e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706244"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232127"
 ---
 # <a name="androiddeviceownerenrollmentmode-enum-type"></a>tipo de enumeração androidDeviceOwnerEnrollmentMode
 
@@ -28,7 +28,7 @@ O modo de registro para um perfil de registro.
 |corporateOwnedDedicatedDevice|,0|Ainda não documentado|
 |corporateOwnedFullyManaged|1|Ainda não documentado|
 |corporateOwnedWorkProfile|duas|Ainda não documentado|
-
+|corporateOwnedAOSPUserlessDevice|3D|Dispositivo de empresa de Propriedade do AOSP (Open Source Project) do Android, sem o Google Mobile Services.|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91181a787be06613302e618301ee8b8075bf41b6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7bcd02971e3e345c14c30d9ed1900f759f9de6a4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725887"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231665"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Tipo de recurso deviceConfigurationAssignment
 
@@ -63,7 +63,6 @@ Veja a seguir uma representação JSON do recurso.
   "sourceId": "String"
 }
 ```
-
 
 
 

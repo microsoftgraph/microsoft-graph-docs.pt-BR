@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3aa6b6b20359ec6d8423b48b53c323f237c42e7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cc30f875ff43b7e1b7336754cce5986f9fa702c1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729508"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231525"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>tipo de recurso tipo complexowindowskioskmultipleapps
 
@@ -65,7 +65,6 @@ Veja a seguir uma representação JSON do recurso.
   "startMenuLayoutXml": "binary"
 }
 ```
-
 
 
 
