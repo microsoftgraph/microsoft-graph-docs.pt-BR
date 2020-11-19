@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81e9e5456bbd6783e0438967ddcfd102f9f62d0c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 524bdf15fa4dd579bff8cfb963432e30817d17d0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735705"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265105"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>Atualizar iosDeviceFeaturesConfiguration
 
@@ -91,7 +91,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6716
+Content-length: 6758
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -208,7 +208,8 @@ Content-length: 6716
       "showOnLockScreen": true,
       "alertType": "banner",
       "badgesEnabled": true,
-      "soundsEnabled": true
+      "soundsEnabled": true,
+      "previewVisibility": "alwaysShow"
     }
   ],
   "singleSignOnSettings": {
@@ -303,7 +304,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6888
+Content-Length: 6930
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -423,7 +424,8 @@ Content-Length: 6888
       "showOnLockScreen": true,
       "alertType": "banner",
       "badgesEnabled": true,
-      "soundsEnabled": true
+      "soundsEnabled": true,
+      "previewVisibility": "alwaysShow"
     }
   ],
   "singleSignOnSettings": {
@@ -512,7 +514,6 @@ Content-Length: 6888
   }
 }
 ```
-
 
 
 

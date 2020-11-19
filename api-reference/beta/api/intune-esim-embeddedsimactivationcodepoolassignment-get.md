@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a878bb48b3406e7da0dc4c8b2977d2b8f185d6b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b7781a1938775bae99b4e17c661184e57724508d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732160"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263138"
 ---
 # <a name="get-embeddedsimactivationcodepoolassignment"></a>Obter embeddedSIMActivationCodePoolAssignment
 
@@ -82,7 +82,6 @@ Content-Length: 422
   }
 }
 ```
-
 
 
 

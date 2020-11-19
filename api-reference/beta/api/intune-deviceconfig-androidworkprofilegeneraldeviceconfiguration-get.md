@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a7975f9eedb5e0c5ac4210cde5965b695abfd7cf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 470444f1ea556f9901b6ec9192c1c499a5732e5a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696990"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265616"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>Obter Entidadeandroidforworkprofiledeviceconfiguration
 
@@ -151,7 +151,6 @@ Content-Length: 3422
   }
 }
 ```
-
 
 
 

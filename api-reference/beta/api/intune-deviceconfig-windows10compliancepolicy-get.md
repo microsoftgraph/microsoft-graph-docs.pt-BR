@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7339a89c1f830194d49daf3a3ecde13f5976b404
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7b954c84dac160c773e8325f5a533528604e0d72
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736566"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49264475"
 ---
 # <a name="get-windows10compliancepolicy"></a>Acessar windows10CompliancePolicy
 
@@ -128,7 +128,6 @@ Content-Length: 2208
   }
 }
 ```
-
 
 
 

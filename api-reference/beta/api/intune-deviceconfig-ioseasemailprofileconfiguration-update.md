@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b3bc90aa283f6a352e6f796c3f275487f4ae751
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e7b1b7e311db6547627f8367bf0a8f9e0bf252f9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724294"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265056"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>Atualizar iosEasEmailProfileConfiguration
 
@@ -237,7 +237,6 @@ Content-Length: 2359
   "perAppVPNProfileId": "Per App VPNProfile Id value"
 }
 ```
-
 
 
 

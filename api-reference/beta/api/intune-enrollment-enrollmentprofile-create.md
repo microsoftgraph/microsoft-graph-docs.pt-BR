@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f65bc4807d76f4532eb3eadbcf818d47279a1440
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 244644720a8a8a76931a05a590baef666251d0c1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693147"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263628"
 ---
 # <a name="create-enrollmentprofile"></a>Criar enrollmentProfile
 
@@ -56,10 +56,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar enrollme
 |id|String|O GUID do objeto.|
 |displayName|String|Nome do perfil|
 |description|String|Descrição do perfil|
-|requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação do usuário|
+|requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação do usuário|
 |configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro|
-|Enableauthenticationviacompanyportal foi adicionada|Boolean|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
+|Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
 
 
 
@@ -104,7 +104,6 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

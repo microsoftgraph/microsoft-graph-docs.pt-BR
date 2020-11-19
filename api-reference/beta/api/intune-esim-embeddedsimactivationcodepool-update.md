@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ab6955d026324a053d14af2145aad647a585b2c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8143d284606ab2f8b4e309a9a0d6124187650f5a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706608"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263341"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>Atualizar embeddedSIMActivationCodePool
 
@@ -113,7 +113,6 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
-
 
 
 

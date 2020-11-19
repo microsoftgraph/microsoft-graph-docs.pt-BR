@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cb0b477e3d6885cbdd359145b99ce03d4914e32
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a44b23971f1204872607e3317c2bfc077429007a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732791"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263987"
 ---
 # <a name="get-devicelogcollectionresponse"></a>Obter deviceLogCollectionResponse
 
@@ -85,7 +85,6 @@ Content-Length: 567
   }
 }
 ```
-
 
 
 

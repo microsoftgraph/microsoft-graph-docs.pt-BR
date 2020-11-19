@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 583418f3349036331bb6fb4888873c264d34b9da
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fb3f77e41835d3b2f23c909a9dc8c638c30ffa2c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708498"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265343"
 ---
 # <a name="delete-androidworkprofilenineworkeasconfiguration"></a>Excluir androidWorkProfileNineWorkEasConfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

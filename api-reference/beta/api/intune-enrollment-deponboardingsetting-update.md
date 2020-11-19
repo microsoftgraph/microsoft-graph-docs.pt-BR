@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd32ba5e867f60b36c0bf8ebe499ecc8d81c908f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 01f3a97e2a964d1a933c6de0dae26e11cbd01a73
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731201"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263635"
 ---
 # <a name="update-deponboardingsetting"></a>Atualizar depOnboardingSetting
 
@@ -125,7 +125,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bcf7476d7269c025aab3eec206b4615c36cebdf9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1a342229f1b470c15ed501ce8e181749ca4a8271
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728722"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263796"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>Criar userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -104,7 +104,6 @@ Content-Length: 334
   "totalImpactInMs": 15
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0adacd2a3059bc1bb56e171e2de9f617ef93afb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a3ce5624e9b54d58cfab25d438b3ded71c023a1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693511"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49264699"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Criar managedAllDeviceCertificateState
 
@@ -122,7 +122,6 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

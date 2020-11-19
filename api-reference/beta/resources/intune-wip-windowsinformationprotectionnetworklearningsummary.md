@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce56617fa05f0f404a33dff9362230be3edd393f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 16046d79356e41b6d0a719ac800d4805bec41b45
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709744"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265931"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionNetworkLearningSummary
 
@@ -57,7 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCount": 1024
 }
 ```
-
 
 
 

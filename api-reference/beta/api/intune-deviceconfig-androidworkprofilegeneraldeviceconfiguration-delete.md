@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c78412d2a675385e895653269c20369ca71d6bf0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 807e3b4e005acbfd37be74729103fb21b6572ad6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697004"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265651"
 ---
 # <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>Excluir Entidadeandroidforworkprofiledeviceconfiguration
 
@@ -67,7 +67,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

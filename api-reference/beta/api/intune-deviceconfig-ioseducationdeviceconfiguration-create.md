@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 739a777fb5074731e1e813c96513ef66ae7b2d7d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 52dea0b56cb7efd0b5b4f44ef011787f420ecd63
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724845"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49264972"
 ---
 # <a name="create-ioseducationdeviceconfiguration"></a>Criar da ioseducationdeviceconfiguration
 
@@ -155,7 +155,6 @@ Content-Length: 1206
   "version": 7
 }
 ```
-
 
 
 

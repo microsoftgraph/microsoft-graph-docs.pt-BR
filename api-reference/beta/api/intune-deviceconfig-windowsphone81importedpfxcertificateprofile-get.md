@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a45fa89b8a1736ce13b2e09ed4f5dc62f376a12e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c0701e2803df6f1f53d6383fdb3aa4af182e3f9d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731250"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49264230"
 ---
 # <a name="get-windowsphone81importedpfxcertificateprofile"></a>Obter windowsPhone81ImportedPFXCertificateProfile
 
@@ -116,7 +116,6 @@ Content-Length: 1633
   }
 }
 ```
-
 
 
 

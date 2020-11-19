@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac9e39e76af6178fed2be95b76f6e1d75ab5950a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 62f6243b6241901ee330ceb855bd3886db8cdc27
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707322"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263698"
 ---
 # <a name="update-userexperienceanalyticsscorehistory"></a>Atualizar userExperienceAnalyticsScoreHistory
 
@@ -104,7 +104,6 @@ Content-Length: 315
   "restartScore": 12
 }
 ```
-
 
 
 
