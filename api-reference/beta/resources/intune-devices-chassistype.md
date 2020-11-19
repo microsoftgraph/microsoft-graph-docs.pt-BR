@@ -5,36 +5,35 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 015f42d8297e58256c0f8664e992ed493c92f028
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 36ac264fba73231db50eab39448598ad798889b4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725509"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214852"
 ---
-# <a name="chassistype-enum-type"></a><span data-ttu-id="0f06e-103">tipo de enumeração chassisType</span><span class="sxs-lookup"><span data-stu-id="0f06e-103">chassisType enum type</span></span>
+# <a name="chassistype-enum-type"></a><span data-ttu-id="75b7d-103">tipo de enumeração chassisType</span><span class="sxs-lookup"><span data-stu-id="75b7d-103">chassisType enum type</span></span>
 
-<span data-ttu-id="0f06e-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0f06e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="75b7d-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="75b7d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="0f06e-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="0f06e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="75b7d-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="75b7d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0f06e-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="0f06e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="75b7d-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="75b7d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0f06e-107">Tipo de chassi.</span><span class="sxs-lookup"><span data-stu-id="0f06e-107">Chassis type.</span></span>
+<span data-ttu-id="75b7d-107">Tipo de chassi.</span><span class="sxs-lookup"><span data-stu-id="75b7d-107">Chassis type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="0f06e-108">Membros</span><span class="sxs-lookup"><span data-stu-id="0f06e-108">Members</span></span>
-|<span data-ttu-id="0f06e-109">Membro</span><span class="sxs-lookup"><span data-stu-id="0f06e-109">Member</span></span>|<span data-ttu-id="0f06e-110">Valor</span><span class="sxs-lookup"><span data-stu-id="0f06e-110">Value</span></span>|<span data-ttu-id="0f06e-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="0f06e-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="75b7d-108">Membros</span><span class="sxs-lookup"><span data-stu-id="75b7d-108">Members</span></span>
+|<span data-ttu-id="75b7d-109">Membro</span><span class="sxs-lookup"><span data-stu-id="75b7d-109">Member</span></span>|<span data-ttu-id="75b7d-110">Valor</span><span class="sxs-lookup"><span data-stu-id="75b7d-110">Value</span></span>|<span data-ttu-id="75b7d-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="75b7d-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0f06e-112">desconhecido</span><span class="sxs-lookup"><span data-stu-id="0f06e-112">unknown</span></span>|<span data-ttu-id="0f06e-113">,0</span><span class="sxs-lookup"><span data-stu-id="0f06e-113">0</span></span>|<span data-ttu-id="0f06e-114">Unknown.</span><span class="sxs-lookup"><span data-stu-id="0f06e-114">Unknown.</span></span>|
-|<span data-ttu-id="0f06e-115">placa</span><span class="sxs-lookup"><span data-stu-id="0f06e-115">desktop</span></span>|<span data-ttu-id="0f06e-116">1</span><span class="sxs-lookup"><span data-stu-id="0f06e-116">1</span></span>|<span data-ttu-id="0f06e-117">Placa.</span><span class="sxs-lookup"><span data-stu-id="0f06e-117">Desktop.</span></span>|
-|<span data-ttu-id="0f06e-118">laptop</span><span class="sxs-lookup"><span data-stu-id="0f06e-118">laptop</span></span>|<span data-ttu-id="0f06e-119">duas</span><span class="sxs-lookup"><span data-stu-id="0f06e-119">2</span></span>|<span data-ttu-id="0f06e-120">Laptop.</span><span class="sxs-lookup"><span data-stu-id="0f06e-120">Laptop.</span></span>|
-|<span data-ttu-id="0f06e-121">worksWorkstation</span><span class="sxs-lookup"><span data-stu-id="0f06e-121">worksWorkstation</span></span>|<span data-ttu-id="0f06e-122">3D</span><span class="sxs-lookup"><span data-stu-id="0f06e-122">3</span></span>|<span data-ttu-id="0f06e-123">Estação.</span><span class="sxs-lookup"><span data-stu-id="0f06e-123">Workstation.</span></span>|
-|<span data-ttu-id="0f06e-124">enterpriseServer</span><span class="sxs-lookup"><span data-stu-id="0f06e-124">enterpriseServer</span></span>|<span data-ttu-id="0f06e-125">4 </span><span class="sxs-lookup"><span data-stu-id="0f06e-125">4</span></span>|<span data-ttu-id="0f06e-126">Servidor da empresa.</span><span class="sxs-lookup"><span data-stu-id="0f06e-126">Enterprise server.</span></span>|
-|<span data-ttu-id="0f06e-127">phone</span><span class="sxs-lookup"><span data-stu-id="0f06e-127">phone</span></span>|<span data-ttu-id="0f06e-128">100</span><span class="sxs-lookup"><span data-stu-id="0f06e-128">100</span></span>|<span data-ttu-id="0f06e-129">Telefone.</span><span class="sxs-lookup"><span data-stu-id="0f06e-129">Phone.</span></span>|
-|<span data-ttu-id="0f06e-130">caneta</span><span class="sxs-lookup"><span data-stu-id="0f06e-130">tablet</span></span>|<span data-ttu-id="0f06e-131">101</span><span class="sxs-lookup"><span data-stu-id="0f06e-131">101</span></span>|<span data-ttu-id="0f06e-132">Tablet móvel.</span><span class="sxs-lookup"><span data-stu-id="0f06e-132">Mobile tablet.</span></span>|
-|<span data-ttu-id="0f06e-133">mobileOther</span><span class="sxs-lookup"><span data-stu-id="0f06e-133">mobileOther</span></span>|<span data-ttu-id="0f06e-134">102</span><span class="sxs-lookup"><span data-stu-id="0f06e-134">102</span></span>|<span data-ttu-id="0f06e-135">Outros dispositivos móveis.</span><span class="sxs-lookup"><span data-stu-id="0f06e-135">Other mobile.</span></span>|
-|<span data-ttu-id="0f06e-136">mobileUnknown</span><span class="sxs-lookup"><span data-stu-id="0f06e-136">mobileUnknown</span></span>|<span data-ttu-id="0f06e-137">103</span><span class="sxs-lookup"><span data-stu-id="0f06e-137">103</span></span>|<span data-ttu-id="0f06e-138">Celular desconhecido.</span><span class="sxs-lookup"><span data-stu-id="0f06e-138">Unknown mobile.</span></span>|
-
+|<span data-ttu-id="75b7d-112">desconhecido</span><span class="sxs-lookup"><span data-stu-id="75b7d-112">unknown</span></span>|<span data-ttu-id="75b7d-113">,0</span><span class="sxs-lookup"><span data-stu-id="75b7d-113">0</span></span>|<span data-ttu-id="75b7d-114">Unknown.</span><span class="sxs-lookup"><span data-stu-id="75b7d-114">Unknown.</span></span>|
+|<span data-ttu-id="75b7d-115">placa</span><span class="sxs-lookup"><span data-stu-id="75b7d-115">desktop</span></span>|<span data-ttu-id="75b7d-116">1</span><span class="sxs-lookup"><span data-stu-id="75b7d-116">1</span></span>|<span data-ttu-id="75b7d-117">Placa.</span><span class="sxs-lookup"><span data-stu-id="75b7d-117">Desktop.</span></span>|
+|<span data-ttu-id="75b7d-118">laptop</span><span class="sxs-lookup"><span data-stu-id="75b7d-118">laptop</span></span>|<span data-ttu-id="75b7d-119">duas</span><span class="sxs-lookup"><span data-stu-id="75b7d-119">2</span></span>|<span data-ttu-id="75b7d-120">Laptop.</span><span class="sxs-lookup"><span data-stu-id="75b7d-120">Laptop.</span></span>|
+|<span data-ttu-id="75b7d-121">worksWorkstation</span><span class="sxs-lookup"><span data-stu-id="75b7d-121">worksWorkstation</span></span>|<span data-ttu-id="75b7d-122">3D</span><span class="sxs-lookup"><span data-stu-id="75b7d-122">3</span></span>|<span data-ttu-id="75b7d-123">Estação.</span><span class="sxs-lookup"><span data-stu-id="75b7d-123">Workstation.</span></span>|
+|<span data-ttu-id="75b7d-124">enterpriseServer</span><span class="sxs-lookup"><span data-stu-id="75b7d-124">enterpriseServer</span></span>|<span data-ttu-id="75b7d-125">4 </span><span class="sxs-lookup"><span data-stu-id="75b7d-125">4</span></span>|<span data-ttu-id="75b7d-126">Servidor da empresa.</span><span class="sxs-lookup"><span data-stu-id="75b7d-126">Enterprise server.</span></span>|
+|<span data-ttu-id="75b7d-127">phone</span><span class="sxs-lookup"><span data-stu-id="75b7d-127">phone</span></span>|<span data-ttu-id="75b7d-128">100</span><span class="sxs-lookup"><span data-stu-id="75b7d-128">100</span></span>|<span data-ttu-id="75b7d-129">Telefone.</span><span class="sxs-lookup"><span data-stu-id="75b7d-129">Phone.</span></span>|
+|<span data-ttu-id="75b7d-130">caneta</span><span class="sxs-lookup"><span data-stu-id="75b7d-130">tablet</span></span>|<span data-ttu-id="75b7d-131">101</span><span class="sxs-lookup"><span data-stu-id="75b7d-131">101</span></span>|<span data-ttu-id="75b7d-132">Tablet móvel.</span><span class="sxs-lookup"><span data-stu-id="75b7d-132">Mobile tablet.</span></span>|
+|<span data-ttu-id="75b7d-133">mobileOther</span><span class="sxs-lookup"><span data-stu-id="75b7d-133">mobileOther</span></span>|<span data-ttu-id="75b7d-134">102</span><span class="sxs-lookup"><span data-stu-id="75b7d-134">102</span></span>|<span data-ttu-id="75b7d-135">Outros dispositivos móveis.</span><span class="sxs-lookup"><span data-stu-id="75b7d-135">Other mobile.</span></span>|
+|<span data-ttu-id="75b7d-136">mobileUnknown</span><span class="sxs-lookup"><span data-stu-id="75b7d-136">mobileUnknown</span></span>|<span data-ttu-id="75b7d-137">103</span><span class="sxs-lookup"><span data-stu-id="75b7d-137">103</span></span>|<span data-ttu-id="75b7d-138">Celular desconhecido.</span><span class="sxs-lookup"><span data-stu-id="75b7d-138">Unknown mobile.</span></span>|
 
 
 
