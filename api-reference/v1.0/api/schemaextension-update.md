@@ -5,22 +5,28 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 673b5ea568cb1a07ce1482d535c85d1b0dc91f32
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac657ee517a11201cab50c8aa161ad20c9352ff8
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088990"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352440"
 ---
 # <a name="update-schemaextension"></a>Update schemaExtension
 
 Namespace: microsoft.graph
 
-Atualize as propriedades na definição da [schemaExtension](../resources/schemaextension.md)especificada.
+Atualize as propriedades na definição da [schemaExtension](../resources/schemaextension.md)especificada. 
+
+Isso significa que as propriedades personalizadas ou os tipos de recursos de destino não podem ser removidos da definição, mas novas propriedades personalizadas podem ser adicionadas e a descrição da extensão é alterada.
+
+As atualizações aditivas para a extensão só poderão ser feitas quando a extensão estiver no **indevelopment** ou no status **disponível** . 
 
 A atualização se aplica a todos os recursos incluídos na propriedade **TargetTypes** da extensão. Esses recursos estão entre os [tipos de recurso de suporte](/graph/extensibility-overview#supported-resources).
 
-Somente o aplicativo que criou uma extensão de esquema (aplicativo proprietário) pode fazer atualizações aditivas para a extensão quando a extensão está no **indesenvolvimento** ou status **disponível** . Isso significa que o aplicativo não pode remover propriedades personalizadas ou tipos de recurso de destino da definição. No entanto, o aplicativo pode alterar a descrição da extensão.
+Para fluxos delegados, o usuário conectado pode atualizar uma extensão de esquema, desde que a propriedade **Owner** da extensão seja definida como a **AppID** de um aplicativo que o usuário conectado possui. Esse aplicativo pode ser aquele que criou inicialmente a extensão ou outro aplicativo pertencente ao usuário conectado. 
+
+Esse critério para a propriedade **Owner** permite que um usuário conectado faça as atualizações por meio de outros aplicativos que não são de sua propriedade, como o Microsoft Graph Explorer. Ao usar o Graph Explorer para atualizar um recurso **schemaExtension** , inclua a propriedade **Owner** no corpo da solicitação patch. Para obter mais informações, consulte a seção [extensões](/graph/known-issues#extensions) em [problemas conhecidos com o Microsoft Graph](/graph/known-issues).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -31,9 +37,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
-
-> [!NOTE]
-> Adicionalmente para o fluxo delegado, o usuário conectado só pode atualizar schemaExtensions que possuem (onde a propriedade **Owner** do schemaExtension é o `appId` de um aplicativo que o usuário conectado possui).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
