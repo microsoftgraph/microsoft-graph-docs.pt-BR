@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f084afca991937b13b96be19c82b6bdcd9da27fb
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: bd56e0b6849626bc31a5397ce47fae8a1279aed2
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081954"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352393"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -41,7 +41,7 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
+Este método dá suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count` e `$filter`. Você pode usar `$search` na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os parâmetros de consulta `$count` e `$search`. Pode haver um pequeno atraso entre o momento em que um item é adicionado ou atualizado e quando está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis atualmente em locatários do Azure AD B2C.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -126,7 +126,7 @@ Content-type: application/json
 Encontrar uma conta de usuário usando um nome de entrada (também conhecido como conta local).
 
 >[!NOTE]
->Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**.
+>Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**. O valor de **issuerAssignedId** deve ser o endereço de email da conta do usuário, não o nome de usuário principal (UPN). Se um UPN for usado, a resposta será uma lista em branco.
 
 #### <a name="request"></a>Solicitação
 
