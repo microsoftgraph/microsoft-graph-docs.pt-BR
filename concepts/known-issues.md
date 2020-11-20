@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 69db1a4d65803c0405bc52548bb111619744a5a1
-ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
+ms.openlocfilehash: 96557bf3f957f9dc57f3315d274bbcc952cd841e
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755705"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352413"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -77,7 +77,7 @@ GET /me/calendars/{id}/events
 Atualmente, há suporte parcial para um calendário com base em uma Inscrição em Calendário da Internet (ICS):
 
 * Você pode adicionar um calendário baseado em ICS para uma caixa de correio do usuário por meio da interface do usuário, mas não através da API do Microsoft Graph.
-* [Listar os calendários do usuário](/graph/api/user-list-calendars) permite que você obtenha as propriedades **name** , **color** e **id** de cada [calendar](/graph/api/resources/calendar) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
+* [Listar os calendários do usuário](/graph/api/user-list-calendars) permite que você obtenha as propriedades **name**, **color** e **id** de cada [calendar](/graph/api/resources/calendar) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
 * Você também pode [listar os eventos](/graph/api/calendar-list-events) de um calendário baseado em ICS.
 
 ### <a name="attaching-large-files-to-events"></a>Anexar arquivos grandes a eventos
@@ -87,17 +87,17 @@ Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [
 
 Atualmente, a propriedade **onlineMeetingUrl** de um [evento](/graph/api/resources/event) de reunião do Skype indica a URL da reunião online. No entanto, essa propriedade para um evento de reunião do Microsoft Teams está definida como nula.
 
-A versão beta oferece uma solução alternativa, na qual é possível usar a propriedade **onlineMeetingProvider** de um [evento](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true)para verificar se o provedor é o Microsoft Teams. Por meio da propriedade **onlineMeeting** do **evento** , você pode acessar o **joinUrl** .
+A versão beta oferece uma solução alternativa, na qual é possível usar a propriedade **onlineMeetingProvider** de um [evento](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true)para verificar se o provedor é o Microsoft Teams. Por meio da propriedade **onlineMeeting** do **evento**, você pode acessar o **joinUrl**.
 
 ## <a name="change-notifications"></a>Notificações de alteração
 
 ### <a name="additional-notifications-for-users"></a>Notificações adicionais para usuários
 
-As [assinaturas](/graph/api/resources/subscription) de alterações para o **usuário** com o **changeType** definido como **atualizado** também receberão notificações de **changeType** : **atualizado** na criação do usuário e exclusão reversível do usuário.
+As [assinaturas](/graph/api/resources/subscription) de alterações para o **usuário** com o **changeType** definido como **atualizado** também receberão notificações de **changeType**: **atualizado** na criação do usuário e exclusão reversível do usuário.
 
 ### <a name="additional-notifications-for-groups"></a>Notificações adicionais para grupos
 
-As [assinaturas](/graph/api/resources/subscription) de alterações no **grupo** com o **changeType** definido como **atualizado** também receberão notificações **changeType** : **atualizado** na criação do grupo e exclusão reversível do grupo.
+As [assinaturas](/graph/api/resources/subscription) de alterações no **grupo** com o **changeType** definido como **atualizado** também receberão notificações **changeType**: **atualizado** na criação do grupo e exclusão reversível do grupo.
 
 ## <a name="cloud-communications"></a>Comunicações na nuvem 
 
@@ -166,7 +166,7 @@ GET /me/contactfolders/{id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 
-* Acessando um contato contido em uma pasta filha de um **contactFolder** .  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
+* Acessando um contato contido em uma pasta filha de um **contactFolder**.  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
 
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
@@ -193,20 +193,24 @@ O controle de alterações (consulta delta) não tem suporte nas propriedades de
 
 ### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>Criar um recurso e uma extensão aberta ao mesmo tempo
 
-Você não pode especificar uma extensão aberta ao mesmo tempo que cria uma instância de **administrativeUnit** , **device** , **group** , **organization** ou **user** . Primeiro você deve criar a instância e, depois, especificar os dados da extensão aberta em uma solicitação ``POST`` subsequente nessa instância.
+Você não pode especificar uma extensão aberta ao mesmo tempo que cria uma instância de **administrativeUnit**, **device**, **group**, **organization** ou **user**. Primeiro você deve criar a instância e, depois, especificar os dados da extensão aberta em uma solicitação ``POST`` subsequente nessa instância.
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Criar uma instância de recurso e adicionar dados de extensão de esquema ao mesmo tempo
 
-Não é possível especificar uma extensão de esquema na mesma operação, como criar uma instância de **contato** , **evento** , **mensagem** ou **postagem** .
+Não é possível especificar uma extensão de esquema na mesma operação, como criar uma instância de **contato**, **evento**, **mensagem** ou **postagem**.
 Você deve primeiro criar a instância de recurso e, em seguida, fazer um `PATCH` para essa instância para adicionar uma extensão de esquema e dados personalizados.
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Limite de 100 valores de propriedade de extensão de esquema permitido por instância de recursos
 
-Recursos de diretório, como **dispositivo** , **grupo** e **usuário** , atualmente limitam o número total de valores de propriedade de extensão de esquema que podem ser definidas em um recurso, até 100.
+Atualmente, os recursos de diretório, como **dispositivo**, **grupo** e **usuário**, limitam o número total dos valores de propriedade de extensão de esquemas que podem ser definidos em um recurso, até 100.
 
-### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Não há suporte a filtragem em propriedades de extensão de esquema em todos os tipos de entidade
+### <a name="updating-a-schemaextension-definition-using-microsoft-graph-explorer"></a>Atualizar uma definição de schemaExtension usando o Microsoft Graph Explorer
 
-Não há suporte a filtragem em propriedades de extensão de esquema (usando a expressão `$filter`) para tipos de entidade do Outlook – **contato** , **evento** , **mensagem** ou **postagem** .
+Ao usar `PATCH` para atualizar uma schemaExtension usando o Graph Explorer, você deve especificar a propriedade de **proprietário** e defini-la com seu valor `appid` atual (que será necessário ser uma `appId` de um aplicativo que você tenha). Esse também é o caso de qualquer aplicativo de cliente que `appId` não seja o mesmo que o do **proprietário**.
+
+### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>A filtragem nas propriedades de extensão de esquema não possuem suporte em todos os tipos de entidades
+
+Não há suporte a filtragem em propriedades de extensão de esquema (usando a expressão `$filter`) para tipos de entidade do Outlook – **contato**, **evento**, **mensagem** ou **postagem**.
 
 ## <a name="files-onedrive"></a>Arquivos (OneDrive)
 
@@ -216,7 +220,7 @@ Não há suporte a filtragem em propriedades de extensão de esquema (usando a e
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Permissões para grupos e Microsoft Teams
 
-O Microsoft Graph expõe duas permissões ( [*Group.Read.All*](permissions-reference.md#group-permissions) e [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) para obter acesso a APIs de grupos e Microsoft Teams.
+O Microsoft Graph expõe duas permissões ([*Group.Read.All*](permissions-reference.md#group-permissions) e [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) para obter acesso a APIs de grupos e Microsoft Teams.
 As permissões do aplicativo devem ser consentidas por um administrador.
 No futuro, pretendemos adicionar novas permissões para grupos e equipes que possam ser consentidas pelos usuários.
 
@@ -316,7 +320,7 @@ Um aplicativo com permissões delegadas retorna `HTTP 403 Forbidden` ao tentar [
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>O parâmetro de comentário para criar um rascunho
 
-O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ( [createReply](/graph/api/message-createreply), [createReplyAll](/graph/api/message-createreplyall), [createForward](/graph/api/message-createforward)) não se torna parte do corpo do rascunho de mensagem resultante.
+O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](/graph/api/message-createreply), [createReplyAll](/graph/api/message-createreplyall), [createForward](/graph/api/message-createforward)) não se torna parte do corpo do rascunho de mensagem resultante.
 
 ### <a name="get-messages-returns-chats-in-microsoft-teams"></a>As mensagens GET retornam chats no Microsoft Teams
 
