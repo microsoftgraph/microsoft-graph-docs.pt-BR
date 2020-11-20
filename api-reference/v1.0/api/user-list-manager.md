@@ -5,18 +5,18 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d9df52fa26407cd5b08a3b8cb69ac156bc996925
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 3409b342ec510c52264e9f73e5b612ecadf8ff1e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086778"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265917"
 ---
 # <a name="list-manager"></a>Listar gerente
 
 Namespace: microsoft.graph
 
-Retorna o usuário ou o contato organizacional atribuído como gerente do usuário. Opcionalmente, você pode expandir a cadeia do gerente ao nó raiz.
+Retorna o usuário ou contato organizacional designado como gerente do usuário. Opcionalmente, você pode expandir a cadeia do gerente até o nó raiz.
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,22 +42,22 @@ Obtenha a cadeia de gerenciamento:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
-GET /users?$expand=manager($levels=max)
-GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+GET /users?$expand=manager($levels=n)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.  
 
-Se sua solicitação incluir o parâmetro `$expand=manager($levels=max)` para obter a cadeia do gerente, você também deverá incluir o seguinte:
+Se sua solicitação incluir o parâmetro `$expand=manager($levels=n)` para obter a cadeia do gerente, você também deverá incluir o seguinte:
 
 - `$count=true` parâmetro de cadeia de caracteres de consulta
 - `ConsistencyLevel=eventual` cabeçalho da solicitação
 
->**Observação:** `max` é o único valor permitido para `$levels`.
-> Quando o parâmetro `$level` não for especificado, apenas o gerente imediato será retornado.  
-> Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades dos gerentes individuais: `$expand=manager($levels=max;$select=id,displayName)`
+>**Observação:** o `n` valor de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
+> Quando o `$level` parâmetro não for especificado, apenas o gerente imediato será retornado.  
+> Você pode especificar `$select` dentro `$expand` para selecionar as propriedades dos gerentes individuais: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
