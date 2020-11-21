@@ -44,7 +44,7 @@ items:
             href: /graph/webhooks-lifecycle
           - name: Notificações com dados de recursos
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
-      - name: Alterar acompanhamento
+      - name: Controle de alterações
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
         items:
           - name: Visão geral
@@ -106,7 +106,7 @@ items:
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/1.0
   - name: Usar SDKs
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/sdks/sdks-overview?context=graph/api/1.0
       - name: Instalar o SDK
         href: /graph/sdks/sdk-installation?context=graph/api/1.0
@@ -185,11 +185,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -419,7 +419,7 @@ items:
                 href: api/todo-list-lists.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Group
             href: resources/group.md
@@ -621,7 +621,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -796,6 +796,15 @@ items:
                 items:
                   - name: List
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: Classificações de permissão delegada
+                href: resources/delegatedpermissionclassification.md
+                items:
+                  - name: Listar
+                    href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+                  - name: Criar
+                    href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+                  - name: Excluir
+                    href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
               - name: Associação
                 items:
                   - name: Listar membro de
@@ -838,6 +847,34 @@ items:
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Política de concessão de permissão
+                    href: resources/permissiongrantpolicy.md
+                    items:
+                      - name: Criar
+                        href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+                      - name: Listar
+                        href: api/permissiongrantpolicy-list.md
+                      - name: Obter
+                        href: api/permissiongrantpolicy-get.md
+                      - name: Atualizar
+                        href: api/permissiongrantpolicy-update.md
+                      - name: Excluir
+                        href: api/permissiongrantpolicy-delete.md
+                      - name: Conjuntos de condições de concessão de permissão
+                        href: resources/permissiongrantconditionset.md
+                        items:
+                          - name: Lista inclui
+                            href: api/permissiongrantpolicy-list-includes.md
+                          - name: Criar em inclui
+                            href: api/permissiongrantpolicy-post-includes.md
+                          - name: Excluir de inclui
+                            href: api/permissiongrantpolicy-delete-includes.md
+                          - name: Listar exclusões
+                            href: api/permissiongrantpolicy-list-excludes.md
+                          - name: Criar em exclusões
+                            href: api/permissiongrantpolicy-post-excludes.md
+                          - name: Excluir de exclusões
+                            href: api/permissiongrantpolicy-delete-excludes.md
                   - name: Política de emissão de tokens
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -1024,7 +1061,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1134,7 +1171,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1188,7 +1225,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3578,7 +3615,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4215,7 +4252,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4326,7 +4363,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4416,7 +4453,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4669,7 +4706,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -4708,7 +4745,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4754,7 +4791,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -4832,7 +4869,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -4866,6 +4903,8 @@ items:
                 href: api/user-list-joinedteams.md
               - name: Obter canal primário
                 href: api/team-get-primarychannel.md
+              - name: Listar todas as equipes
+                href: /graph/teams-list-all-teams?context=graph/api/1.0
           - name: Grupo (equipe)
             href: resources/group.md
             items:
@@ -4922,6 +4961,16 @@ items:
                 href: api/channel-patch.md
               - name: Delete channel
                 href: api/channel-delete.md
+              - name: Listar membros do canal
+                href: api/channel-list-members.md
+              - name: Obter membro do canal
+                href: api/channel-get-members.md
+              - name: Adicionar membro ao canal
+                href: api/channel-add-members.md
+              - name: Atualizar função de membro no canal
+                href: api/channel-update-members.md
+              - name: Excluir membro do canal
+                href: api/channel-delete-members.md
               - name: Obter pasta de arquivos.
                 href: api/channel-get-filesfolder.md
               - name: Listar mensagens do canal
@@ -4999,7 +5048,7 @@ items:
                 href: api/teamsapp-update.md
               - name: Excluir aplicativo do catálogo
                 href: api/teamsapp-delete.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -5215,7 +5264,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
