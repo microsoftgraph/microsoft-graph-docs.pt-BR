@@ -376,6 +376,8 @@ items:
             href: teams-licenses.md
           - name: Enviar mensagens proativas com um bot
             href: teams-proactive-messaging.md
+          - name: Enviar notificações de feed de atividades
+            href: teams-send-activityfeednotifications.md
       - name: Tarefas pendentes
         href: todo-concept-overview.md
         displayName: Microsoft To Do
