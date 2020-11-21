@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 23f637bb6850fd91d17aee5d70f9200097a2378e
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: c948dff47d95d3cb8229793c2966c7bb60f21a40
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082269"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352197"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -36,20 +36,20 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método suporta os parâmetros de consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, `$filter`, e `$select`. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
+Este método suporta o [OData query parameters](/graph/query-parameters)para ajudar a personalizar a resposta, incluindo`$search`, `$count`, `$filter`e `$select`. É possível usar a propriedade `$search` no **displayName**. Quando os itens forem adicionados e atualizados por esse recurso, eles serão especialmente indexados para o uso com os parâmetros de consulta`$count` e `$search`. Pode haver um pequeno atraso entre o momento em que um item é adicionado ou atualizado e quando ele está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure AD B2C.
 
 Por padrão, apenas um conjunto limitado de propriedades é retornado (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname** e **userPrincipalName**). 
 
-Para retornar um conjunto de propriedades alternativas, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar **displayName**, **givenName** e **postalCode**, adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.
+Para retornar um conjunto de propriedades alternativo, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar o **displayName**, **givenName**, e **postalCode**, adicione o seguinte à sua consulta. `$select=displayName,givenName,postalCode`.
 
-Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário. As seguintes propriedades só possuem suporte ao [recuperar um único usuário](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
+Certas propriedades não podem ser retornadas em uma coleção de usuário. As seguintes propriedades são suportadas apenas [ao recuperar um único usuário:](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho        | Valor                      |
 |:--------------|:---------------------------|
 | Autorização | {token} do portador (obrigatório)  |
-| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
+| ConsistencyLevel | eventual. Esse cabeçalho e `$count` são necessários ao usar `$search` ou ao usar `$filter` com o parâmetro de consulta `$orderby`. Ele usa um índice que pode não estar atualizado com as alterações recentes feitas no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta. Se uma coleção grande de usuários for retornada, você poderá usar a [paginação no seu aplicativo](/graph/paging).
+Se tiver êxito, este método retorna um código de resposta`200 OK` e a coleção de objetos de[usuário](../resources/user.md) no corpo da resposta. Se uma grande coleção de usuários for retornada, você pode usar uma [paginação em seu aplicativo](/graph/paging).
 
 ## <a name="examples"></a>Exemplos
 
@@ -131,7 +131,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação.
 
->**Observação:** Ao filtrar em **identidades**, você deve fornecer tanto **emissor** como **emissorAssignedId**.
+>**Observação:** Ao filtrar em **identidades**, você deve fornecer tanto o **emissor** quanto o **emissorAssignedId**. O valor de **issuerAssignedId** deve ser o endereço de email da conta do usuário, não o nome de usuário principal (UPN). Se um UPN for usado, a resposta será uma lista em branco.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
