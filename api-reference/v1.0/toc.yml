@@ -4688,7 +4688,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitygroupcounts.md
               - name: Obter contagens de atividades
                 href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -4806,7 +4806,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -4902,10 +4902,14 @@ items:
                 href: api/group-delete.md
               - name: Listar membros
                 href: api/team-list-members.md
-              - name: Adicionar membros
+              - name: Obter membro
+                href: api/team-get-members.md
+              - name: Adicionar membro
                 href: api/team-post-members.md
-              - name: Remover membros
+              - name: Remover membro
                 href: api/team-delete-members.md
+              - name: Atualizar membro
+                href: api/team-update-members.md
               - name: Arquivar equipe
                 href: api/team-archive.md
               - name: Desarquivar equipe
@@ -4974,16 +4978,16 @@ items:
                 href: api/channel-patch.md
               - name: Delete channel
                 href: api/channel-delete.md
-              - name: Listar membros do canal
+              - name: Listar membros
                 href: api/channel-list-members.md
-              - name: Obter membro do canal
+              - name: Obter membro
                 href: api/channel-get-members.md
-              - name: Adicionar membro ao canal
-                href: api/channel-add-members.md
-              - name: Atualizar função de membro no canal
-                href: api/channel-update-members.md
-              - name: Excluir membro do canal
+              - name: Adicionar membro
+                href: api/channel-post-members.md
+              - name: Remover membro
                 href: api/channel-delete-members.md
+              - name: Atualizar função de membro
+                href: api/channel-update-members.md
               - name: Obter pasta de arquivos.
                 href: api/channel-get-filesfolder.md
               - name: Listar mensagens do canal
@@ -5000,12 +5004,6 @@ items:
                 href: api/channel-post-message.md
               - name: Responder à mensagem
                 href: api/channel-post-messagereply.md
-              - name: Adicionar um membro a um canal
-                href: api/conversationmember-add.md
-              - name: Remover um membro de um canal
-                href: api/conversationmember-delete.md
-              - name: Atualizar a função de um membro no canal
-                href: api/conversationmember-update.md
           - name: Mensagem de chat
             href: resources/chatmessage.md
             items:
@@ -5023,32 +5021,6 @@ items:
                 href: api/channel-post-messagereply.md
               - name: Atualizar mensagem
                 href: api/chatmessage-update.md
-          - name: Membro de conversa
-            href: resources/conversationmember.md
-            items:
-              - name: Listar membros
-                href: api/conversationmember-list.md
-              - name: Obter membro
-                href: api/conversationmember-get.md
-              - name: Adicionar membro
-                href: api/conversationmember-add.md
-              - name: Atualizar membro
-                href: api/conversationmember-update.md
-              - name: Excluir membro
-                href: api/conversationmember-delete.md
-          - name: Membro da conversa de usuário do Azure AD
-            href: resources/aaduserconversationmember.md
-            items:
-              - name: Listar membros
-                href: api/conversationmember-list.md
-              - name: Obter membro
-                href: api/conversationmember-get.md
-              - name: Adicionar membro
-                href: api/conversationmember-add.md
-              - name: Atualizar membro
-                href: api/conversationmember-update.md
-              - name: Excluir membro
-                href: api/conversationmember-delete.md
           - name: Catálogo de aplicativos
             items:
               - name: Aplicativo no catálogo
