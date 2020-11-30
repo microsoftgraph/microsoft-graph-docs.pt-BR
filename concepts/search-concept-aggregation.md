@@ -4,16 +4,16 @@ description: Você pode usar a API de pesquisa da Microsoft para recuperar o agg
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 84f859677b20ff0cd97afad373990abda44d5afd
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 1a8e8cf17995adceadb9f426d1824d85505e806e
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373843"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377940"
 ---
-# <a name="refine-search-results-using-aggregations"></a>Refinar os resultados da pesquisa usando agregações
+# <a name="refine-search-results-using-aggregations-preview"></a>Refinar os resultados da pesquisa usando agregações (visualização)
 
-Refine os resultados da pesquisa e mostrar sua distribuição no índice. 
+Refine os resultados da pesquisa e mostrar sua distribuição no índice.
 
 ## <a name="example-1-request-aggregations-by-string-fields"></a>Exemplo 1: solicitar agregações por campos de cadeia de caracteres
 
@@ -217,7 +217,7 @@ A resposta inclui 3 objetos **searchBucket** , um para cada agregação de inter
 ### <a name="request"></a>Solicitação
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -308,7 +308,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-As agregações são suportadas apenas para itens do SharePoint ou do OneDrive. Eles não têm suporte para **Message**, **Event**e **externalItem**.
+As agregações são suportadas apenas para itens do SharePoint ou do OneDrive. Eles não têm suporte para **Message**, **Event** e **externalItem**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

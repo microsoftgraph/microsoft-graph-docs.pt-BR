@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3bf4c8a4f7926c7abec422f7c5ecf5000e9b0bf5
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 946bea14032319e798a7e84a5016fdc9998ceee1
+ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48741982"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49378171"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -80,7 +80,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|location|
+|localização|
 |aplicativo|
 
 ### <a name="anniversarytype-values"></a>valores de aniversáriotype
@@ -170,13 +170,13 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalItem|
 |site|
 |list|
 |listItem|
-|drive|
+|unidade|
 
 ### <a name="bucketaggregationsortproperty-values"></a>valores de bucketAggregationSortProperty
 
@@ -222,7 +222,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|nenhum|
 |automóvel|
 |calendar|
 |com|
@@ -275,7 +275,7 @@ Namespace: microsoft.graph
 
 | Member
 |:----------------------------
-|none
+|nenhum
 |shift
 |swapRequest
 |openShift
@@ -325,7 +325,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| none
+| nenhum
 | contactsOnly
 | todos os
 
@@ -440,7 +440,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| none
+| nenhum
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -472,7 +472,7 @@ Namespace: microsoft.graph
 | deviceDefault
 | Bandeira
 | JanelaRestrita
-| none
+| nenhum
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
@@ -536,7 +536,7 @@ Namespace: microsoft.graph
 | forward
 | noResponseNecessary
 | leitura
-| resposta
+| reply
 | replyToAll
 | exame
 
@@ -556,7 +556,7 @@ Namespace: microsoft.graph
 | Member
 |:-----------------
 | NotStarted
-| Em execução
+| Executando
 | Completed
 | Falhou
 
@@ -674,7 +674,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| none
+| nenhum
 | organizer
 | tentativelyAccepted
 | aceito
@@ -707,7 +707,7 @@ Namespace: microsoft.graph
 
 | Membro   | Valor |
 | :------- | :---- |
-| none     | -1    |
+| nenhum     | -1    |
 | preset0  | ,0     |
 | preset1  | 1     |
 | preset2  | duas     |
@@ -719,7 +719,7 @@ Namespace: microsoft.graph
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11    |
+| preset11 | 11     |
 | preset12 | 12     |
 | preset13 | 13     |
 | preset14 | 14     |
@@ -827,10 +827,10 @@ Enumeração para tipos de valor do registro, conforme definido pelos [tipos de 
 | expandSz          | 5      | REG_EXPAND_SZ tipo de valor do registro.           |
 | vínculo              | 6      | REG_LINK tipo de valor do registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do registro.            |
-| none              | 8      | REG_NONE tipo de valor do registro.                |
+| nenhum              | 8      | REG_NONE tipo de valor do registro.                |
 | QWORD             | 9      | REG_QWORD tipo de valor do registro.               |
 | qwordlittleEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do registro. |
-| v                | 11    | REG_SZ tipo de valor do registro.                  |
+| v                | 11     | REG_SZ tipo de valor do registro.                  |
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
 
@@ -893,7 +893,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Valor |
 |:-----------------|
-| none |
+| nenhum |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -913,14 +913,14 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |medium|
 |high|
 |hidden|
-|none|
+|nenhum|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>valores de risco
 
 |Member|
 |:---|
-|none|
+|nenhum|
 |confirmedSafe|
 |corrigidos|
 |Descartado pelo|
@@ -932,7 +932,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|none|
+|nenhum|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -1035,7 +1035,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|message|
+|mensagem|
 
 ### <a name="chatmessageimportance-values"></a>valores de chatMessageImportance
 
@@ -1109,7 +1109,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Member       |
 |:--------------|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -1135,7 +1135,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|none|
+|nenhum|
 |freeBusyRead|
 |limitedRead|
 |leitura|
@@ -1312,7 +1312,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| none                  | ,0     | Ainda não conhece.                       |
+| nenhum                  | ,0     | Ainda não conhece.                       |
 | mailFlowRule          | 1     | Regra de transporte do Exchange.            |
 | safeSender            | duas     | Lista de remetentes seguros.                   |
 | blockedSender         | 3D     | Lista de remetentes bloqueados.                |
@@ -1323,7 +1323,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | firstTimeSender       | 8      | Bloqueado devido ao remetente pela primeira vez.   |
 | autoPurgeToInbox      | 9      | Mensagem de movimentação de viagem para a caixa de entrada.   |
 | autoPurgeToJunk       | 10     | Mensagem de movimentação de viagens para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11    | Mensagem de movimentação de viagens para exclusão. |
+| autoPurgeToDeleted    | 11     | Mensagem de movimentação de viagens para exclusão. |
 | saída              | 12     | Emails de saída.                      |
 | Não é lixo eletrônico               | 13     | Permitir por não ser lixo eletrônico.              |
 | desejado                  | 14     | Bloqueado devido a lixo eletrônico.                |
@@ -1367,7 +1367,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Member
 |:----------------------
-| none
+| nenhum
 | form_post
 | consulta
 | unknownFutureValue
@@ -1376,7 +1376,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Member
 |:----------------------
-| none
+| nenhum
 | código
 | id_token
 | token
@@ -1385,7 +1385,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Member
 |:----------------------
-| none
+| nenhum
 | defaultlist
 | flaggedEmails
 | unknownFutureValue
@@ -1462,3 +1462,75 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | aplicação
 | delegada
 | delegatedUserConsentable
+
+### <a name="teamworkactivitytopicsource-values"></a>valores de teamworkActivityTopicSource 
+
+| Member
+|:---
+| entityUrl
+| texto
+
+### <a name="cloudpcdeviceimagestatus-values"></a>valores de cloudPcDeviceImageStatus
+
+|Member|
+|:---|
+|função|
+|Pronto|
+|falhou|
+
+### <a name="cloudpcdeviceimagestatusdetails-values"></a>valores de cloudPcDeviceImageStatusDetails
+
+|Member|
+|:---|
+|internalServerError|
+|sourceImageNotFound|
+
+### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>valores de cloudPcOnPremisesConnectionHealthCheckErrorType
+
+|Member|
+|:---|
+|dnsCheckFqdnNotFound|
+|dnsCheckUnknownError|
+|adJoinCheckFqdnNotFound|
+|adJoinCheckIncorrectCredentials|
+|adJoinCheckOrganizationalUnitNotFound|
+|adJoinCheckOrganizationalUnitIncorrectFormat|
+|adJoinCheckUnknownError |
+|endpointConnectivityCheckUrlNotWhitelisted|
+|endpointConnectivityCheckUnknownError|
+|aadConnectivityCheckUnknownError |
+|resourceAvailabilityCheckNoSubnetIP |
+|resourceAvailabilityCheckUnknownError |
+|internalServerUnknownError |
+
+### <a name="cloudpconpremisesconnectionstatus-values"></a>valores de cloudPcOnPremisesConnectionStatus
+
+|Member|
+|:---|
+|função|
+|com|
+|aprovou|
+|falhou|
+|unknownFutureValue|
+
+### <a name="cloudpcprovisioningpolicyimagetype-values"></a>valores de cloudPcProvisioningPolicyImageType
+
+|Member|
+|:---|
+|cliente|
+|Part|
+
+### <a name="cloudpcstatus-values"></a>valores de cloudPcStatus
+
+|Member|
+|:---|
+|desprovisionado|
+|provisionamento|
+|provisionado|
+|fazer|
+|inGracePeriod|
+|desprovisionamento|
+|upgradeFailed|
+|provisionFailed|
+|deprovisionFailed|
+|reprovisionFailed|

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 4e8cf9ceb5087d497f5ebb3464425fc945e672e7
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 77d3ac3d9c2656ad1680366d367125997d0c00df
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797134"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376974"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |SignIn|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>valores de riskDetectionTimingType
@@ -86,7 +86,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|nenhum|
 |automóvel|
 |calendar|
 |com|
@@ -142,7 +142,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| none
+| nenhum
 | contactsOnly
 | todos os
 
@@ -231,7 +231,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| none
+| nenhum
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -263,7 +263,7 @@ Namespace: microsoft.graph
 | deviceDefault
 | Bandeira
 | JanelaRestrita
-| none
+| nenhum
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
@@ -347,7 +347,7 @@ Namespace: microsoft.graph
 | Member
 |:-----------------
 | NotStarted
-| Em execução
+| Executando
 | Completed
 | Falhou
 
@@ -465,7 +465,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| none
+| nenhum
 | organizer
 | tentativelyAccepted
 | aceito
@@ -498,7 +498,7 @@ Namespace: microsoft.graph
 
 | Membro   |Valor
 |:---------|:--------
-| none     | -1
+| nenhum     | -1
 | preset0  | ,0
 | preset1  | 1
 | preset2  | duas
@@ -510,7 +510,7 @@ Namespace: microsoft.graph
 | preset8  | 8 
 | preset9  | 9 
 | preset10 | 10 
-| preset11 | 11
+| preset11 | 11 
 | preset12 | 12 
 | preset13 | 13 
 | preset14 | 14 
@@ -626,10 +626,10 @@ Enumeração para tipos de valor do registro, conforme definido por [/Windows/De
 |expandSz|5 | REG_EXPAND_SZ tipo de valor do registro.|
 |vínculo|6 | REG_LINK tipo de valor do registro.|
 |multiSz|7 | REG_MULTI_SZ tipo de valor do registro.|
-|none|8 | REG_NONE tipo de valor do registro.|
+|nenhum|8 | REG_NONE tipo de valor do registro.|
 |QWORD|9 | REG_QWORD tipo de valor do registro.|
 |qwordlittleEndian|10 | REG_QWORD_LITTLE_ENDIAN tipo de valor do registro.|
-|v|11| REG_SZ tipo de valor do registro.|
+|v|11 | REG_SZ tipo de valor do registro.|
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
 
@@ -740,7 +740,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Member
 |:-------------------------
-| none
+| nenhum
 | low
 | medium
 | high
@@ -751,7 +751,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Member
 |:-------------------------
-| none
+| nenhum
 | confirmedSafe
 | corrigidos
 | Descartado pelo
@@ -790,7 +790,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|none|
+|nenhum|
 |freeBusyRead|
 |limitedRead|
 |leitura|
@@ -835,7 +835,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | ,0     | Ainda não conhece.            |
-| usuário          | 1     | Envio do usuário.         |
+| user          | 1     | Envio do usuário.         |
 | administrador | duas     | Envio de administrador de locatários. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores de threatAssessmentResultType
@@ -850,7 +850,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| none                  | ,0     | Ainda não conhece.                       |
+| nenhum                  | ,0     | Ainda não conhece.                       |
 | mailFlowRule          | 1     | Regra de transporte do Exchange.            |
 | safeSender            | duas     | Lista de remetentes seguros.                   |
 | blockedSender         | 3D     | Lista de remetentes bloqueados.                |
@@ -861,7 +861,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | firstTimeSender       | 8      | Bloqueado devido ao remetente pela primeira vez.   |
 | autoPurgeToInbox      | 9      | Mensagem de movimentação de viagem para a caixa de entrada.   |
 | autoPurgeToJunk       | 10     | Mensagem de movimentação de viagens para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11    | Mensagem de movimentação de viagens para exclusão. |
+| autoPurgeToDeleted    | 11     | Mensagem de movimentação de viagens para exclusão. |
 | saída              | 12     | Emails de saída.                      |
 | Não é lixo eletrônico               | 13     | Permitir por não ser lixo eletrônico.              |
 | desejado                  | 14     | Bloqueado devido a lixo eletrônico.                |
@@ -871,7 +871,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Valor |
 |:-----------------|
-| none |
+| nenhum |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -893,10 +893,17 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | AllowOverrideWithoutJustification | duas | O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa não é obrigatório. Exclusivo para `AllowOverrideWithJustification` . |
 | AllowOverrideWithJustification | 4  |  O usuário tem permissão para substituir o bloco e enviar a mensagem. O texto de justificativa é obrigatório. Exclusivo para `AllowOverrideWithoutJustification` .|
 
+### <a name="channelmembershiptype-values"></a>valores de channelMembershipType
+
+| Membro             | Valor |Descrição|
+| :----------------- | :---- |:-----------|
+| caracteres           | ,0     |O canal herda a lista de membros da equipe pai.|
+| privada            | 1     |O canal pode ter membros que são um subconjunto de todos os membros da equipe pai.|
+| unknownFutureValue | duas     |      |
 ### <a name="wellknownlistname-values"></a>valores de wellknownListName
 | Member
 |:----------------------
-| none
+| nenhum
 | defaultlist
 | flaggedEmails
 | unknownFutureValue
@@ -909,3 +916,17 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Completed
 | waitingOnOthers
 | adiado
+
+### <a name="permissionclassificationtype-values"></a>valores de permissionClassificationType
+
+| Member
+|:-------
+| low
+
+### <a name="permissiontype-values"></a>valores de permissãotype
+
+| Member
+|:-------------------------
+| aplicação
+| delegada
+| delegatedUserConsentable

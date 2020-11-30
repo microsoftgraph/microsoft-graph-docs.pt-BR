@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2ed10fd9be0a49fbf25acac635cf29b1759c31eb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd25283390e2683affe2e2cb636344c60a772a2e
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032653"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368163"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -30,7 +30,7 @@ Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 | [Listar usuários](../api/educationschool-list-users.md)       | Coleção [educationUser](educationuser.md)   | Obtenha a coleção de objetos **educationUser**.                                                |
 | [Remover usuário](../api/educationschool-delete-users.md)    | [educationUser](educationuser.md)              | Remova um **educationUser** da escola por meio da propriedade de navegação **users**.      |
 | [Atualizar](../api/educationschool-update.md)               | [educationSchool](educationschool.md)          | Atualize um objeto **educationSchool**.                                                       |
-| [Delete](../api/educationschool-delete.md)               | Nenhum                                           | Exclua um objeto **educationSchool**.                                                       |
+| [Excluir](../api/educationschool-delete.md)               | Nenhum                                           | Exclua um objeto **educationSchool**.                                                       |
 
 ## <a name="properties"></a>Propriedades
 
@@ -86,7 +86,7 @@ Veja a seguir uma representação JSON do recurso.
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalId": "String",
-  "phone": "String",
+  "phone": "String"
 }
 ```
 
