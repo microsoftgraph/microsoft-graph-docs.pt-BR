@@ -1,0 +1,117 @@
+---
+title: Obter cloudPCs
+description: Exibir as propriedades e os relacionamentos de um objeto cloudPC.
+author: AshleyYangSZ
+localization_priority: Normal
+ms.prod: ''
+doc_type: apiPageType
+ms.openlocfilehash: 1fe20b9ebf70b62a1a5bb571e1b60f21c6c54acc
+ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49378229"
+---
+# <a name="get-cloudpc"></a><span data-ttu-id="06afb-103">Obter cloudPC</span><span class="sxs-lookup"><span data-stu-id="06afb-103">Get cloudPC</span></span>
+
+<span data-ttu-id="06afb-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06afb-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="06afb-105">Leia as propriedades e os relacionamentos de um objeto [cloudPC](../resources/cloudpc.md) específico.</span><span class="sxs-lookup"><span data-stu-id="06afb-105">Read the properties and relationships of a specific [cloudPC](../resources/cloudpc.md) object.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="06afb-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="06afb-106">Permissions</span></span>
+
+<span data-ttu-id="06afb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="06afb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="06afb-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="06afb-109">Permission type</span></span>|<span data-ttu-id="06afb-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="06afb-110">Permissions (from most to least privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="06afb-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="06afb-111">Delegated (work or school account)</span></span>|<span data-ttu-id="06afb-112">CloudPC. ReadWrite. All, CloudPC. Read. All</span><span class="sxs-lookup"><span data-stu-id="06afb-112">CloudPC.ReadWrite.All, CloudPC.Read.All</span></span>|
+|<span data-ttu-id="06afb-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="06afb-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="06afb-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="06afb-114">Not supported.</span></span>|
+|<span data-ttu-id="06afb-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="06afb-115">Application</span></span>|<span data-ttu-id="06afb-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="06afb-116">Not supported.</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="06afb-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="06afb-117">HTTP request</span></span>
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
+```
+
+## <a name="optional-query-parameters"></a><span data-ttu-id="06afb-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="06afb-118">Optional query parameters</span></span>
+
+<span data-ttu-id="06afb-119">Este método oferece suporte `$select` ao parâmetro de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="06afb-119">This method supports `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="06afb-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="06afb-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="06afb-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="06afb-121">Request headers</span></span>
+
+| <span data-ttu-id="06afb-122">Nome</span><span class="sxs-lookup"><span data-stu-id="06afb-122">Name</span></span>          | <span data-ttu-id="06afb-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="06afb-123">Description</span></span>               |
+| :------------ | :------------------------ |
+| <span data-ttu-id="06afb-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="06afb-124">Authorization</span></span> | <span data-ttu-id="06afb-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="06afb-p103">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="06afb-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="06afb-127">Request body</span></span>
+
+<span data-ttu-id="06afb-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="06afb-128">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="06afb-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="06afb-129">Response</span></span>
+
+<span data-ttu-id="06afb-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [cloudPC](../resources/cloudpc.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="06afb-130">If successful, this method returns a `200 OK` response code and a [cloudPC](../resources/cloudpc.md) object in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="06afb-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="06afb-131">Examples</span></span>
+
+### <a name="request"></a><span data-ttu-id="06afb-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="06afb-132">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpc"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}
+```
+
+### <a name="response"></a><span data-ttu-id="06afb-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="06afb-133">Response</span></span>
+
+<span data-ttu-id="06afb-134">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="06afb-134">**Note:** The response object shown here might be shortened for readability.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_cloudpc",
+  "@odata.type": "microsoft.graph.cloudPC"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.cloudPC",
+    "id": "ac74ae8b-85f7-4272-88cc-54192674ffff",
+    "displayName": "Display Name value",
+    "imageDisplayName": "Image Display Name value",
+    "managedDeviceId": "e87f50c7-fa7f-4687-aade-dd45f3d6ffff",  
+    "managedDeviceName": "Device Name value",
+    "provisioningPolicyId": "13fa0778-ba00-438a-96d3-488c8602ffff",
+    "servicePlanId": "da5615b4-a484-4742-a019-2d52c91cffff",
+    "servicePlanName": "standard",
+    "status": "failed",
+    "statusDetails": {
+    "@odata.type": "microsoft.graph.cloudPcStatusDetails",
+    "code": "Sample code",
+    "message": "Sample message",
+    "additionalInformation": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Sample value"
+        }
+      ]
+    },
+    "userPrincipalName": "User Principal Name value",
+    "lastModifiedDateTime": "2020-11-03T18:14:34Z"
+  }
+}
+```
