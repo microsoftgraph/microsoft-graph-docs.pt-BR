@@ -40,15 +40,15 @@ items:
             href: /graph/webhooks?context=graph/api/beta
           - name: Tutorial
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: Notificações de alterações ausentes
+          - name: Notificações de alteração ausentes
             href: /graph/webhooks-lifecycle
           - name: Notificações com dados de recursos
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
-          - name: Obter notificações entregues de diferentes maneiras (pré-visualização)
+          - name: Receba notificações de diferentes maneiras (visualização)
             href: /graph/change-notifications-delivery?context=graph/api/beta
           - name: Obter notificações de alteração para mensagens de chat e canal
             href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
-      - name: Alterar acompanhamento
+      - name: Controle de alterações
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
         items:
           - name: Visão geral
@@ -397,7 +397,7 @@ items:
                     href: api/outlookuser-list-mastercategories.md
               - name: Converter IDs
                 href: api/user-translateexchangeids.md
-          - name: Tarefas do Outlook (obsoleto)
+          - name: Tarefas do Outlook (preterido)
             items:
               - name: Tarefas do Outlook
                 href: resources/outlooktask.md
@@ -446,29 +446,33 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
-              - name: Instalar aplicativo
-                href: api/user-add-teamsappinstallation.md
-              - name: Listar aplicativos instalados
-                href: api/user-list-teamsappinstallation.md
-              - name: Atualizar aplicativo
-                href: api/user-upgrade-teamsappinstallation.md
-              - name: Desinstalar aplicativo
-                href: api/user-delete-teamsappinstallation.md
+              - name: Adicionar aplicativo para usuário
+                href: api/userteamwork-add-installedapps.md
+              - name: Listar aplicativos para o usuário
+                href: api/userteamwork-list-installedapps.md
+              - name: Obtém o aplicativo instalado para o usuário
+                href: api/userteamwork-get-installedapps.md
+              - name: Atualização do aplicativo instalado para o usuário
+                href: api/userteamwork-upgrade-installedapps.md
+              - name: Remover o aplicativo para o usuário
+                href: api/userteamwork-delete-installedapps.md
+              - name: Obter chat entre o usuário e o aplicativo
+                href: api/userscopeteamsappinstallation-get-chat.md
           - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
               - name: Criar tarefa
                 href: api/todotasklist-post-tasks.md
-              - name: Criar uma lista de tarefas
+              - name: Criar lista de tarefas
                 href: api/todo-post-lists.md
               - name: Listar tarefas
                 href: api/todotasklist-list-tasks.md
-              - name: Lista de listas de tarefas
+              - name: Listar listas de tarefas
                 href: api/todo-list-lists.md
           - name: Configurações do usuário
             items:
@@ -482,7 +486,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -773,7 +777,7 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: Excluir extensão
                     href: api/application-delete-extensionproperty.md
-              - name: Proprietários
+              - name: Owners
                 items:
                   - name: Listar proprietários
                     href: api/application-list-owners.md
@@ -788,7 +792,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -797,7 +801,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -964,7 +968,7 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: getMemberObjects
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: Proprietários
+              - name: Owners
                 items:
                   - name: Listar proprietários
                     href: api/serviceprincipal-list-owners.md
@@ -979,7 +983,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -988,7 +992,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remover
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -997,7 +1001,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1006,7 +1010,7 @@ items:
                     items:
                       - name: Atribuir
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Listar
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Remover
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1387,11 +1391,11 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Sessão
                 items:
-                  - name: Session
+                  - name: Sessão
                     href: resources/callrecords-session.md
-                  - name: List
+                  - name: Listar
                     href: api/callrecords-session-list.md
               - name: Chamadas PSTN
                 items:
@@ -1430,7 +1434,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/complianceapioverview.md
-          - name: Descoberta eletrônica
+          - name: Descoberta Eletrônica
             items:
               - name: Visão Geral
                 href: resources/eDiscoveryapioverview.md
@@ -1623,7 +1627,7 @@ items:
                     href: api/printershare-post-jobs.md
                   - name: Obter
                     href: api/printjob-get.md
-                  - name: Início
+                  - name: Iniciar
                     href: api/printjob-start.md
                   - name: Cancelar
                     href: api/printjob-cancel.md
@@ -8915,7 +8919,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Atualizar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: List
+                      - name: Listar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -10705,7 +10709,7 @@ items:
                   - name: Item de decisão de instância de revisão do Access
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accessreviewinstancedecisionitem-list.md
                       - name: Lista pendente de aprovação
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
@@ -10794,7 +10798,7 @@ items:
                   - name: Atribuição de pacote de acesso
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/accesspackageassignment-list.md
                   - name: Política de atribuição de pacote do Access
                     href: resources/accesspackageassignmentpolicy.md
@@ -11644,9 +11648,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Configurações
                 items:
-                  - name: Settings
+                  - name: Configurações
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -11782,7 +11786,7 @@ items:
                   - name: Resumo detalhado da terceira parte confiável
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: List
+                      - name: Listar
                         href: api/relyingpartydetailedsummary-list.md
               - name: Entrar no aplicativo
                 items:
@@ -12029,7 +12033,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -12276,7 +12280,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -12290,7 +12294,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: List
+                  - name: Listar
                     href: api/termstore-group-list-sets.md
                   - name: Listar filhos
                     href: api/termstore-term-list-children.md
@@ -12327,7 +12331,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -12422,7 +12426,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -12567,6 +12571,8 @@ items:
                 href: api/chat-get-message.md
               - name: Enviar mensagem no chat
                 href: api/chat-post-message.md
+              - name: Obter chat entre o usuário e o aplicativo
+                href: api/userscopeteamsappinstallation-get-chat.md
           - name: Mensagem de chat
             href: resources/chatmessage.md
             items:
@@ -12608,6 +12614,8 @@ items:
                 href: resources/teamsappinstallation.md
               - name: Listar aplicativos em equipe
                 href: api/teamsappinstallation-list.md
+              - name: Obter o aplicativo instalado em uma equipe
+                href: api/team-get-installedapps.md
               - name: Adicionar aplicativo à equipe
                 href: api/teamsappinstallation-add.md
               - name: Remover aplicativo da equipe
@@ -12615,13 +12623,17 @@ items:
               - name: Atualizar o aplicativo instalado para a equipe
                 href: api/teamsappinstallation-upgrade.md
               - name: Listar aplicativos para o usuário
-                href: api/user-list-teamsappinstallation.md
+                href: api/userteamwork-list-installedapps.md
+              - name: Obtém o aplicativo instalado para o usuário
+                href: api/userteamwork-get-installedapps.md
               - name: Adicionar aplicativo para usuário
-                href: api/user-add-teamsappinstallation.md
+                href: api/userteamwork-add-installedapps.md
               - name: Remover o aplicativo para o usuário
-                href: api/user-delete-teamsappinstallation.md
+                href: api/userteamwork-delete-installedapps.md
               - name: Atualização do aplicativo instalado para o usuário
-                href: api/user-upgrade-teamsappinstallation.md
+                href: api/userteamwork-upgrade-installedapps.md
+              - name: Obter chat entre o usuário e o aplicativo
+                href: api/userscopeteamsappinstallation-get-chat.md
           - name: Feed de atividades
             items:
               - name: Enviar notificação para o usuário no chat
@@ -12712,7 +12724,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Obter
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Listar
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
@@ -12841,9 +12853,9 @@ items:
           - name: Lista de tarefas
             href: resources/todotasklist.md
             items:
-              - name: Lista de listas de tarefas
+              - name: Listar listas de tarefas
                 href: api/todo-list-lists.md
-              - name: Criar uma lista de tarefas
+              - name: Criar lista de tarefas
                 href: api/todo-post-lists.md
               - name: Obter lista de tarefas
                 href: api/todotasklist-get.md
@@ -12889,7 +12901,7 @@ items:
                 href: api/linkedresource-update.md
               - name: Excluir
                 href: api/linkedresource-delete.md
-          - name: Tarefas do Outlook (obsoleto)
+          - name: Tarefas do Outlook (preterido)
             items:
               - name: Tarefa do Outlook (preterido)
                 items:
