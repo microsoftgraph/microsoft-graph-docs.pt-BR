@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 615392e147337f20b85f3ab972172c302902f9d5
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 4486591b89c2bf5146e3423bc053a40657b79d35
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48609027"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556153"
 ---
 ```objc
 
@@ -18,12 +18,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphUser *user = [[MSGraphUser alloc] init];
 [user setAccountEnabled: true];
-[user setDisplayName:@"displayName-value"];
-[user setMailNickname:@"mailNickname-value"];
-[user setUserPrincipalName:@"upn-value@tenant-value.onmicrosoft.com"];
+[user setDisplayName:@"Adele Vance"];
+[user setMailNickname:@"AdeleV"];
+[user setUserPrincipalName:@"AdeleV@contoso.onmicrosoft.com"];
 MSGraphPasswordProfile *passwordProfile = [[MSGraphPasswordProfile alloc] init];
 [passwordProfile setForceChangePasswordNextSignIn: true];
-[passwordProfile setPassword:@"password-value"];
+[passwordProfile setPassword:@"xWwvJ]6NMw+bWH-d"];
 [user setPasswordProfile:passwordProfile];
 
 NSError *error;

@@ -3,32 +3,35 @@ title: Obter cloudPcOnPremisesConnection
 description: Leia as propriedades e as relações do objeto cloudPcOnPremisesConnection.
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 24c5be1f4e05a91b52821b24ab76885f63124c2c
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: e7e70e6ff0f5ea8badb314c1a5fa915d2f657a6b
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378208"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563400"
 ---
-# <a name="get-cloudpconpremisesconnection"></a><span data-ttu-id="c9e63-103">Obter cloudPcOnPremisesConnection</span><span class="sxs-lookup"><span data-stu-id="c9e63-103">Get cloudPcOnPremisesConnection</span></span>
+# <a name="get-cloudpconpremisesconnection"></a><span data-ttu-id="3e786-103">Obter cloudPcOnPremisesConnection</span><span class="sxs-lookup"><span data-stu-id="3e786-103">Get cloudPcOnPremisesConnection</span></span>
 
-<span data-ttu-id="c9e63-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c9e63-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3e786-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3e786-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c9e63-105">Leia as propriedades e as relações do objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .</span><span class="sxs-lookup"><span data-stu-id="c9e63-105">Read the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="c9e63-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="c9e63-106">Permissions</span></span>
+<span data-ttu-id="3e786-105">Leia as propriedades e as relações do objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .</span><span class="sxs-lookup"><span data-stu-id="3e786-105">Read the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.</span></span>
 
-<span data-ttu-id="c9e63-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c9e63-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+## <a name="permissions"></a><span data-ttu-id="3e786-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="3e786-106">Permissions</span></span>
 
-|<span data-ttu-id="c9e63-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c9e63-109">Permission type</span></span>| <span data-ttu-id="c9e63-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="c9e63-110">Permissions (from most to least privileged)</span></span> |
+<span data-ttu-id="3e786-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3e786-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="3e786-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3e786-109">Permission type</span></span>| <span data-ttu-id="3e786-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="3e786-110">Permissions (from most to least privileged)</span></span> |
 |:---|:---|
-|<span data-ttu-id="c9e63-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c9e63-111">Delegated (work or school account)</span></span>|<span data-ttu-id="c9e63-112">CloudPC. ReadWrite. All, CloudPC. Read. All</span><span class="sxs-lookup"><span data-stu-id="c9e63-112">CloudPC.ReadWrite.All, CloudPC.Read.All</span></span>|
-|<span data-ttu-id="c9e63-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c9e63-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9e63-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c9e63-114">Not supported.</span></span>|
-|<span data-ttu-id="c9e63-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c9e63-115">Application</span></span>| <span data-ttu-id="c9e63-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c9e63-116">Not supported.</span></span>|
+|<span data-ttu-id="3e786-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3e786-111">Delegated (work or school account)</span></span>|<span data-ttu-id="3e786-112">CloudPC. ReadWrite. All, CloudPC. Read. All</span><span class="sxs-lookup"><span data-stu-id="3e786-112">CloudPC.ReadWrite.All, CloudPC.Read.All</span></span>|
+|<span data-ttu-id="3e786-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3e786-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3e786-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3e786-114">Not supported.</span></span>|
+|<span data-ttu-id="3e786-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3e786-115">Application</span></span>| <span data-ttu-id="3e786-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3e786-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c9e63-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c9e63-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3e786-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3e786-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,30 +42,32 @@ ms.locfileid: "49378208"
 GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c9e63-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c9e63-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3e786-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="3e786-118">Optional query parameters</span></span>
 
-<span data-ttu-id="c9e63-119">Este método oferece suporte `$select` ao parâmetro de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="c9e63-119">This method supports `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="c9e63-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="c9e63-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="3e786-119">Este método oferece suporte `$select` ao parâmetro de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="3e786-119">This method supports `$select` OData query parameter to help customize the response.</span></span> <span data-ttu-id="3e786-120">Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="3e786-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c9e63-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c9e63-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3e786-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3e786-121">Request headers</span></span>
 
-| <span data-ttu-id="c9e63-122">Nome</span><span class="sxs-lookup"><span data-stu-id="c9e63-122">Name</span></span>          | <span data-ttu-id="c9e63-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="c9e63-123">Description</span></span>               |
+| <span data-ttu-id="3e786-122">Nome</span><span class="sxs-lookup"><span data-stu-id="3e786-122">Name</span></span>          | <span data-ttu-id="3e786-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="3e786-123">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="c9e63-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="c9e63-124">Authorization</span></span> | <span data-ttu-id="c9e63-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c9e63-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3e786-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="3e786-124">Authorization</span></span> | <span data-ttu-id="3e786-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3e786-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c9e63-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c9e63-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3e786-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3e786-127">Request body</span></span>
 
-<span data-ttu-id="c9e63-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c9e63-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="3e786-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3e786-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c9e63-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9e63-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3e786-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="3e786-129">Response</span></span>
 
-<span data-ttu-id="c9e63-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c9e63-130">If successful, this method returns a `200 OK` response code and a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object in the response body.</span></span>
+<span data-ttu-id="3e786-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3e786-130">If successful, this method returns a `200 OK` response code and a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="c9e63-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c9e63-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3e786-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3e786-131">Examples</span></span>
 
-### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a><span data-ttu-id="c9e63-132">Exemplo 1: obter as propriedades padrão de uma conexão local</span><span class="sxs-lookup"><span data-stu-id="c9e63-132">Example 1: Get the default properties of an on-premises connection</span></span>
+### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a><span data-ttu-id="3e786-132">Exemplo 1: obter as propriedades padrão de uma conexão local</span><span class="sxs-lookup"><span data-stu-id="3e786-132">Example 1: Get the default properties of an on-premises connection</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c9e63-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c9e63-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3e786-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3e786-133">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="3e786-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="3e786-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpconpremisesconnection"
@@ -72,10 +77,28 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 ```
+# <a name="c"></a>[<span data-ttu-id="3e786-135">C#</span><span class="sxs-lookup"><span data-stu-id="3e786-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpconpremisesconnection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c9e63-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9e63-134">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="3e786-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3e786-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpconpremisesconnection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c9e63-135">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c9e63-135">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="3e786-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3e786-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpconpremisesconnection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="3e786-138">Java</span><span class="sxs-lookup"><span data-stu-id="3e786-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="3e786-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="3e786-139">Response</span></span>
+
+<span data-ttu-id="3e786-140">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="3e786-140">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,10 +129,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a><span data-ttu-id="c9e63-136">Exemplo 2: obter as propriedades selecionadas de uma conexão local, incluindo healthCheckStatusDetails</span><span class="sxs-lookup"><span data-stu-id="c9e63-136">Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails</span></span>
+### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a><span data-ttu-id="3e786-141">Exemplo 2: obter as propriedades selecionadas de uma conexão local, incluindo healthCheckStatusDetails</span><span class="sxs-lookup"><span data-stu-id="3e786-141">Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c9e63-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c9e63-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3e786-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3e786-142">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="3e786-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="3e786-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpconpremisesconnection_withDetails"
@@ -119,10 +144,28 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,subscriptionId,subscriptionName,adDomainName,adDomainUsername,organizationalUnit,virtualNetworkId,subnetId,healthCheckStatus,healthCheckStatusDetails,inUse
 ```
+# <a name="c"></a>[<span data-ttu-id="3e786-144">C#</span><span class="sxs-lookup"><span data-stu-id="3e786-144">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpconpremisesconnection-withdetails-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="c9e63-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9e63-138">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="3e786-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3e786-145">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpconpremisesconnection-withdetails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="c9e63-139">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c9e63-139">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="3e786-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3e786-146">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-cloudpconpremisesconnection-withdetails-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="3e786-147">Java</span><span class="sxs-lookup"><span data-stu-id="3e786-147">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-withdetails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="3e786-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="3e786-148">Response</span></span>
+
+<span data-ttu-id="3e786-149">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="3e786-149">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
