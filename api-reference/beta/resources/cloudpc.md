@@ -3,22 +3,26 @@ title: tipo de recurso cloudPC
 description: Áreas de trabalho virtuais gerenciadas pela nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 95758299f87ac463bac6fdc30f7d70fb59eb6c92
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: d1109ceb81f741cefa9b26662bc1c8c5de8a8329
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378255"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563825"
 ---
 # <a name="cloudpc-resource-type"></a>tipo de recurso cloudPC
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa uma área de trabalho virtual gerenciada em nuvem.
 
-## <a name="methods"></a>Methods
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -32,11 +36,11 @@ Representa uma área de trabalho virtual gerenciada em nuvem.
 |:---|:---|:---|
 |id|String|Identificador exclusivo do PC de nuvem. Somente leitura.|
 |displayName|String|O nome de exibição do computador de nuvem.|
-|imageDisplayName|Cadeia de Caracteres|Nome da imagem do sistema operacional que está no computador de nuvem.|
-|managedDeviceId|Cadeia de Caracteres|A ID de dispositivo do Intune do PC na nuvem.|
+|imageDisplayName|String|Nome da imagem do sistema operacional que está no computador de nuvem.|
+|managedDeviceId|String|A ID de dispositivo do Intune do PC na nuvem.|
 |managedDeviceName|String|O nome do dispositivo do Intune no Cloud PC.|
-|provisioningPolicyId|Cadeia de Caracteres|A ID da política de provisionamento do PC da nuvem.|
-|onplanid|Cadeia de Caracteres|A ID do plano de serviço do computador de nuvem.|
+|provisioningPolicyId|String|A ID da política de provisionamento do PC da nuvem.|
+|onplanid|String|A ID do plano de serviço do computador de nuvem.|
 |onplanname|Cadeia de caracteres|O nome do plano de serviço do computador da nuvem.|
 |status|cloudPcStatus|Status do PC de nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `upgradeFailed`, `provisionFailed`, `deprovisionFailed`, `reprovisionFailed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Os detalhes do status do PC de nuvem.|

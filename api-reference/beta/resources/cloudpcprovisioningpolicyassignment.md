@@ -3,21 +3,24 @@ title: tipo de recurso cloudPcProvisioningPolicyAssignment
 description: Atribuições de política de provisionamento do CloudPC
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: fbbdf76dfb184efdae7279b5d4970367995c0a6c
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 06a90efc67b483fed569a4e7029a74dac4f7f9ee
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378241"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563692"
 ---
 # <a name="cloudpcprovisioningpolicyassignment-resource-type"></a>tipo de recurso cloudPcProvisioningPolicyAssignment
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa uma coleção definida de atribuições de política de provisionamento.
 
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>Propriedades
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 25aa593c9e5fd0e1bd86d7265c4ebaaf22395d02
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 50e2405f6fd0c093e6dc5f3ebaa48eea969d2990
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459862"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563916"
 ---
 # <a name="call-answer"></a>Call: resposta
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Habilite um bot para atender a uma [chamada](../resources/call.md)de entrada. A solicitação de chamada de entrada pode ser um convite de um participante em uma chamada de grupo ou uma chamada ponto a ponto. Se for recebido um convite para uma chamada de grupo, a notificação conterá os parâmetros [chatInfo](../resources/chatinfo.md) e [meetingInfo](../resources/meetinginfo.md) .
 
-O bot deve responder, [rejeitar](./call-reject.md)ou [redirecionar](./call-redirect.md) a chamada antes do tempo limite da chamada. O valor de tempo limite atual é de 15 segundos.
+O bot deve responder, [rejeitar](./call-reject.md)ou [redirecionar](./call-redirect.md) a chamada antes do tempo limite da chamada. O valor de tempo limite atual é de 15 segundos para cenários regulares e 5 segundos para cenários de gravação baseados em políticas.
 
 ## <a name="permissions"></a>Permissions
 Você não precisa de nenhuma permissão para responder a uma chamada ponto a ponto. Você precisa de uma das seguintes permissões para ingressar em uma chamada de grupo. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Permite que os bots forneçam um URI de retorno de chamada específico para que a chamada atual receba notificações posteriores. Se essa propriedade não tiver sido definida, o URI de retorno de chamada global do bot será usado em seu lugar. Deve ser `https` .    |
-|acceptedModalities|Coleção de cadeias de caracteres                         |A lista de aceitar modalidades. Os valores possíveis são: `audio`, `video`, `videoBasedScreenSharing`. Obrigatório para responder a uma chamada. |
+|acceptedModalities|Conjunto de cadeias de caracteres                         |A lista de aceitar modalidades. Os valores possíveis são: `audio`, `video`, `videoBasedScreenSharing`. Obrigatório para responder a uma chamada. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) ou [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |A configuração de mídia. Precisam                                                                                                            |
 
 ## <a name="response"></a>Resposta

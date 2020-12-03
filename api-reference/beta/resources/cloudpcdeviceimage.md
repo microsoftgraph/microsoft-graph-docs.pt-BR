@@ -3,22 +3,26 @@ title: tipo de recurso cloudPcDeviceImage
 description: Representa o recurso de imagem no PC de nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 600fceffadb03247c646b2728e445c0c07cae9aa
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 782704beabce8131beb1f5c096d0e35a5a44ca3e
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378266"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563832"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>tipo de recurso cloudPcDeviceImage
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa o recurso de imagem no PC de nuvem.
 
-## <a name="methods"></a>Methods
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -33,10 +37,10 @@ Representa o recurso de imagem no PC de nuvem.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo do recurso de imagem no PC de nuvem. Somente leitura.|
-|sourceImageResourceId|Cadeia de Caracteres|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|sourceImageResourceId|String|A ID do recurso de imagem de origem no Azure. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |displayName|String|O nome de exibição da imagem.|
 |versão|String|A versão da imagem. Por exemplo: 0.0.1, 1.5.13.|
-|osBuildNumber|Cadeia de Caracteres|A versão de compilação do so da imagem. Por exemplo: 1909.|
+|osBuildNumber|String|A versão de compilação do so da imagem. Por exemplo: 1909.|
 |operatingSystem|String|O sistema operacional da imagem. Por exemplo: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|Os dados e hora em que a imagem foi modificada pela última vez. O horário é mostrado no formato ISO 8601 e no tempo universal coordenado (UTC). Por exemplo, meia-noite UTC em 1º de janeiro de 2014 aparece como ' 2014-01-01T00:00:00Z '.|
 |status|cloudPcDeviceImageStatus|O status da imagem no computador de nuvem. Status possível incluem upload pendente, falha ao carregar ou pronto para usar. Os valores possíveis são: `pending`, `ready`, `failed`.|

@@ -3,28 +3,31 @@ title: tipo de recurso virtualEndpoint
 description: O recurso virtualEndpoint representa um contêiner para a funcionalidade de gerenciamento de computador de nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 168a6f35a3d758911913422f96ea5dc070d57a47
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 7e29e59658914e0f07af7635979e1b8938b99491
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378230"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563944"
 ---
 # <a name="virtualendpoint-resource-type"></a>tipo de recurso virtualEndpoint
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 O recurso virtualEndpoint representa um contêiner para APIs para gerenciar o computador de nuvem.
 
 Use a API do Cloud PC para provisionar e gerenciar áreas de trabalho virtuais para os funcionários de uma organização. Use-o em conjunto com a [API do Intune](../resources/intune-graph-overview.md) para gerenciar pontos de extremidade físicos e virtuais.
 
-## <a name="methods"></a>Methods
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter permissões efetivas](../api/virtualendpoint-geteffectivepermissions.md)|Coleção de cadeias de caracteres|Exibir as permissões efetivas do usuário autenticado no momento.|
+|[Obter permissões efetivas](../api/virtualendpoint-geteffectivepermissions.md)|Conjunto de cadeias de caracteres|Exibir as permissões efetivas do usuário autenticado no momento.|
 |[Listar cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|coleção [cloudPC](../resources/cloudpc.md)|Listar Propriedades e relações dos objetos [cloudPC](../resources/cloudpc.md) .|
 |[Listar deviceImages](../api/virtualendpoint-list-deviceimages.md)|coleção [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Listar as propriedades e as relações dos objetos [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) .|
 |[Criar cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Criar um novo objeto [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) .|

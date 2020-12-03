@@ -3,22 +3,26 @@ title: tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 description: O resultado de uma verificação de integridade de conexão local do PC de nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 188d9db2dbef3b3e731e0c95a48f6637e3e00101
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: 16dea9278c9471996e4a5beaf20d5f9ec5c2d5c5
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378224"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563831"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>tipo de recurso cloudPcOnPremisesConnectionHealthCheck
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 O resultado de uma verificação de integridade de conexão local do PC de nuvem.
 
-## <a name="methods"></a>Methods
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -33,8 +37,8 @@ O resultado de uma verificação de integridade de conexão local do PC de nuvem
 |startDateTime|DateTimeOffset|A hora de início do item de verificação de integridade. Somente leitura.|
 |endDateTime|DateTimeOffset|A hora de término do item de verificação de integridade. Somente leitura.|
 |Error|cloudPcOnPremisesConnectionHealthCheckErrorType|O tipo de erro que ocorreu durante esta verificação de integridade. Os valores possíveis são: `DnsCheckFqdnNotFound`, `DnsCheckUnknownError`, `AdJoinCheckFqdnNotFound`, `AdJoinCheckIncorrectCredentials`, `AdJoinCheckOrganizationalUnitNotFound`, `AdJoinCheckOrganizationalUnitIncorrectFormat`, `AdJoinCheckUnknownError`, `EndpointConnectivityCheckUrlNotWhitelisted`, `EndpointConnectivityCheckUnknownError`, `AadConnectivityCheckUnknownError`.|
-|recomendado|Cadeia de Caracteres|A ação recomendada para corrigir o erro correspondente.|
-|additionalDetails|Cadeia de Caracteres|Detalhes adicionais sobre a verificação de integridade ou a ação recomendada.|
+|recomendado|String|A ação recomendada para corrigir o erro correspondente.|
+|additionalDetails|String|Detalhes adicionais sobre a verificação de integridade ou a ação recomendada.|
 
 ## <a name="relationships"></a>Relações
 

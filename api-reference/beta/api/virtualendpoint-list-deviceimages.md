@@ -3,20 +3,24 @@ title: Listar cloudPcDeviceImages
 description: Listar as propriedades e as relações das imagens do sistema operacional carregadas no Cloud PC.
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 4d392331b2cb07446374275d0ffb8e606fe7d99d
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: cb1aad5278341e3fdc00ee6937970e997365aa23
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378251"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563895"
 ---
 # <a name="list-deviceimages"></a>Listar deviceImages
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Liste as propriedades e as relações dos objetos [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) (imagens de so) carregadas no Cloud PC.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissions
 
@@ -24,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CloudPC. ReadWrite. All, CloudPC. Read. All|
+|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All, CloudPC. Read. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -61,6 +65,8 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e uma c
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_cloudpcdeviceimages"
@@ -70,6 +76,24 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e uma c
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcdeviceimages-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpcdeviceimages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-cloudpcdeviceimages-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpcdeviceimages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

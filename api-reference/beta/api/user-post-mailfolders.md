@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d72bdf89af4757a8548cf2cd66a06844973bd747
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c79acf168a1f16bae0fd8cf31889b2dee464963f
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980311"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563776"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -66,7 +66,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value"
+  "displayName": "Clutter"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -101,12 +101,12 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
+  "displayName": "Clutter",
+  "parentFolderId": "AQMkADlmOGQwZmU3LWVjOWMtNDhiYgAtODcxNy1",
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "id-value"
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
 }
 ```
 

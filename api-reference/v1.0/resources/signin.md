@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de domínio
 description: Detalha a atividade de entrada do usuário e do aplicativo para um locatário (diretório).
-author: khotz
+author: besiler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 86136a1180df6f07d0919589570cda3c5e20b36b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b86ae228a888ce32ca79053f46ff4e7a04505bcc
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970632"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563657"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Detalha a atividade de entrada do usuário e do aplicativo para um locatário (diretório).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -44,11 +44,11 @@ Detalha a atividade de entrada do usuário e do aplicativo para um locatário (d
 |resourceId|Cadeia de caracteres|ID do recurso que o usuário entrou.|
 |riskDetail|riskDetail|Fornece o motivo por trás de um estado específico de um usuário arriscado, uma entrada arriscada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. <br>**Observação:** Os detalhes dessa propriedade exigem uma licença do Azure AD Premium P2. Outras licenças retornam o valor `hidden` .|
 |riskEventTypes|coleção riskEventType|Tipos de eventos de risco associados à entrada. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`.|
-|riskEventTypes_v2|Coleção de cadeias de caracteres|A lista de tipos de eventos de risco associados à entrada. Valores possíveis: `unlikelyTravel` ,,,,, `anonymizedIPAddress` ,, `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` , ou `unknownFutureValue` .|
+|riskEventTypes_v2|Conjunto de cadeias de caracteres|A lista de tipos de eventos de risco associados à entrada. Valores possíveis: `unlikelyTravel` ,,,,, `anonymizedIPAddress` ,, `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` , ou `unknownFutureValue` .|
 |riskLevelAggregated|riskLevel|Nível de risco agregado. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
 |riskLevelDuringSignIn|riskLevel|Nível de risco durante a entrada. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
 |riskState|riskState|Relata o status do usuário arriscado, de entrada ou de um evento de risco. Os valores possíveis são `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|status|[signInStatus](signinstatus.md)|Status de logon. Os valores possíveis incluem `Success` e `Failure`.|
+|status|[signInStatus](signinstatus.md)|Status de logon. Inclui o código de erro e a descrição do erro (em caso de falha de entrada).|
 |userDisplayName|Cadeia de caracteres|Nome para exibição do usuário que iniciou a entrada.|
 |userId|Cadeia de caracteres|ID do usuário que iniciou a entrada.|
 |userPrincipalName|String|Nome principal do usuário que iniciou a entrada.|

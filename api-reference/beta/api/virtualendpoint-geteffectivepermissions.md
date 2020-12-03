@@ -3,20 +3,24 @@ title: 'virtualEndpoint: getEffectivePermissions'
 description: '**GetEffectivePermissions é uma função que Retrives as permissões efetivas do usuário atualmente autenticado, o que ajuda o UX a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.**'
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 78b58c5ea00e1b170d831a91f5dc3ff1569bd0d7
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: df6d0ffbdffdf01c30f5dda2220cc96392b0f6ed
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378261"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563899"
 ---
 # <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint: getEffectivePermissions
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Exibir as permissões efetivas do usuário autenticado no momento. GetEffectivePermissions é uma função que Retrives as permissões efetivas do usuário atualmente autenticado, o que ajuda o UX a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Permissions
 
@@ -24,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CloudPC. ReadWrite. All, CloudPC. Read. All|
+|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All, CloudPC. Read. All|
 |Delegado (conta pessoal da Microsoft) | Sem suporte.|
 |Aplicativo| Sem suporte.|
 
@@ -57,6 +61,8 @@ Se tiver êxito, essa função retornará o código de resposta `200 OK` e a Col
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "virtualendpoint_geteffectivepermissions"
@@ -66,6 +72,24 @@ Se tiver êxito, essa função retornará o código de resposta `200 OK` e a Col
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffectivePermissions
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/virtualendpoint-geteffectivepermissions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/virtualendpoint-geteffectivepermissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/virtualendpoint-geteffectivepermissions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/virtualendpoint-geteffectivepermissions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
