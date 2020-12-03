@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 651543f42a8771ccb906544335010daba387cf5b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 68d385a70ee359ccdf5307a70f557e75a82a1e37
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964338"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523816"
 ---
 # <a name="get-participant"></a>Obter participante
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos de um objeto **participante** .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
@@ -111,7 +111,8 @@ Content-Type: application/json
          "device":null,
          "phone":null
       },
-      "id":null
+      "id":null,
+      "platformId": "4505"
    },
    "mediaStreams":[
       {

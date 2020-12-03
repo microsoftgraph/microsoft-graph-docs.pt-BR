@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b304d194f254a7646e65c4fe9eb1561f936ad3d7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 8ee1bf38c21891d788874e760c3c892c76ea28d2
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36636179"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556240"
 ---
 ```javascript
 
@@ -17,9 +17,9 @@ const client = Client.init(options);
 
 const user = {
   businessPhones: [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  officeLocation: "city-value"
+  officeLocation: "18/2111"
 };
 
 let res = await client.api('/me')

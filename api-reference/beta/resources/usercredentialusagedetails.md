@@ -2,15 +2,15 @@
 title: tipo de recurso userCredentialUsageDetails
 description: Representa o uso de redefinição de senha de autoatendimento para um determinado locatário.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3e00dfe9efccfa9e79d685b80d18524c0991e42e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ac0e1b8b73b019636e460772975da7a4f0505a1
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057897"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524236"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>tipo de recurso userCredentialUsageDetails
 
@@ -35,9 +35,9 @@ Representa o uso de redefinição de senha de autoatendimento para um determinad
 | failureReason | Cadeia de caracteres | Fornece o motivo da falha para o fluxo de trabalho de redefinição ou registro correspondente. |
 | apresentam | cadeia de caracteres | Os valores possíveis são: `registration` e `reset` . |
 | id | String | Somente leitura. O identificador exclusivo da atividade. Somente leitura.|
-| IsSuccess | Booliano | Indica êxito ou falha do fluxo de trabalho. |
+| IsSuccess | Boolean | Indica êxito ou falha do fluxo de trabalho. |
 | userDisplayName | Cadeia de caracteres | Nome de usuário do usuário que está executando o fluxo de trabalho de redefinição ou registro. |
-| userPrincipalName | Cadeia de caracteres | Nome principal do usuário que está executando o fluxo de trabalho de redefinição ou registro. |
+| userPrincipalName | String | Nome principal do usuário que está executando o fluxo de trabalho de redefinição ou registro. |
 
 ## <a name="relationships"></a>Relações
 

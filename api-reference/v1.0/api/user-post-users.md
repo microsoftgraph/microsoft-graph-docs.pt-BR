@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ee69b6077979f758b9d28ce7305679fffb98954c
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 44215db3fd73751c1910c8fbd6e0f34ffc82be99
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634652"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523508"
 ---
 # <a name="create-user"></a>Criar Usuário
 
@@ -88,12 +88,12 @@ Content-type: application/json
 
 {
   "accountEnabled": true,
-  "displayName": "displayName-value",
-  "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
+  "displayName": "Adele Vance",
+  "mailNickname": "AdeleV",
+  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
-    "password": "password-value"
+    "password": "xWwvJ]6NMw+bWH-d"
   }
 }
 ```
@@ -133,17 +133,17 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-    "id": "id-value",
+    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
     "businessPhones": [],
-    "displayName": "displayName-value",
-    "givenName": null,
-    "jobTitle": null,
-    "mail": null,
-    "mobilePhone": null,
-    "officeLocation": null,
-    "preferredLanguage": null,
-    "surname": null,
-    "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "jobTitle": "Product Marketing Manager",
+    "mail": "AdeleV@contoso.onmicrosoft.com",
+    "mobilePhone": "+1 425 555 0109",
+    "officeLocation": "18/2111",
+    "preferredLanguage": "en-US",
+    "surname": "Vance",
+    "userPrincipalName": "AdeleV@contoso.onmicrosoft.com"
 }
 ```
 

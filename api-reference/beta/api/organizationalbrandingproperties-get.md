@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kexia
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f46f6487fc067aaab780f06395f5ff2b5b682f80
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: d9788b29d559dd1c243b1b5ea5ef37db978f61b3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031896"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49524467"
 ---
 # <a name="get-organizationalbrandingproperties"></a>Obter organizationalBrandingProperties
 
@@ -18,13 +18,13 @@ ms.locfileid: "49031896"
 
 Recupere as propriedades e os relacionamentos de um objeto [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Organization. Read. All, User. Read, User. Read. All, User. ReadBasic. All |
+| Delegada (conta corporativa ou de estudante)     | Organization. Read. All, User. Read, User. Read. All, User. ReadBasic. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -67,14 +67,34 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e o obj
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -109,7 +129,7 @@ Content-Type: application/json
 }
 ```
 
-As solicitações para/branding sempre retornam as propriedades **mediaContentType** , **mediaReadLink** e **mediaEditLink** . Se uma localidade tiver sido aplicada, **mediaEditLink** será o **mediaEditLink** para a localidade (que é sempre não nulo) e o **mediaReadLink** e o **mediaContentType** serão os **mediaReadLink** e **mediaContentType** da localidade se o **mediaReadLink** da localidade for não nulo; caso contrário, o padrão **mediaReadLink** e **mediaContentType**.
+As solicitações para/branding sempre retornam as propriedades **mediaContentType**, **mediaReadLink** e **mediaEditLink** . Se uma localidade tiver sido aplicada, **mediaEditLink** será o **mediaEditLink** para a localidade (que é sempre não nulo) e o **mediaReadLink** e o **mediaContentType** serão os **mediaReadLink** e **mediaContentType** da localidade se o **mediaReadLink** da localidade for não nulo; caso contrário, o padrão **mediaReadLink** e **mediaContentType**.
 
 ### <a name="example-2-get-organizational-branding-but-no-branding-configured"></a>Exemplo 2: obter a identidade visual organizacional mas nenhuma identidade visual configurada
 
@@ -195,15 +215,35 @@ Retorna **bannerLogo** para a localidade fr se ela existir. Se a localização n
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organizationalbrandingproperties"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
 Accept-Language: fr
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbrandingproperties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organizationalbrandingproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organizationalbrandingproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandingproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

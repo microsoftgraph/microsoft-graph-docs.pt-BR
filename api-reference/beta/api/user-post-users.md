@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ffa0a6a819e845f48117617c9e82bf6abe4021da
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1bdbe81274b8769839cf97a5cf8025eea5e2f36e
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977029"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523655"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -54,7 +54,7 @@ A tabela a seguir lista as propriedades que são necessárias ao criar um usuár
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled |Booliano |True se a conta estiver habilitada; caso contrário, false.|
+|accountEnabled |Boolean |True se a conta estiver habilitada; caso contrário, false.|
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
@@ -91,12 +91,12 @@ Content-type: application/json
 
 {
   "accountEnabled": true,
-  "displayName": "displayName-value",
-  "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
+  "displayName": "Adele Vance",
+  "mailNickname": "AdeleV",
+  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
-    "password": "password-value"
+    "password": "xWwvJ]6NMw+bWH-d"
   }
 }
 ```
@@ -136,17 +136,17 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
-    "id": "id-value",
+    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
     "businessPhones": [],
-    "displayName": "displayName-value",
-    "givenName": null,
-    "jobTitle": null,
-    "mail": null,
-    "mobilePhone": null,
-    "officeLocation": null,
-    "preferredLanguage": null,
-    "surname": null,
-    "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "jobTitle": "Product Marketing Manager",
+    "mail": "AdeleV@contoso.onmicrosoft.com",
+    "mobilePhone": "+1 425 555 0109",
+    "officeLocation": "18/2111",
+    "preferredLanguage": "en-US",
+    "surname": "Vance",
+    "userPrincipalName": "AdeleV@contoso.onmicrosoft.com"
 }
 ```
 

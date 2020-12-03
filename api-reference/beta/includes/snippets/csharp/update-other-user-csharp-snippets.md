@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a77b2874d4e70f79d99c00d0a9895bee1bcb4f80
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: f4caf7eccf501a13c9b9d9c18c3136811051b3ad
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396888"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556135"
 ---
 ```csharp
 
@@ -15,9 +15,9 @@ var user = new User
 {
     BusinessPhones = new List<String>()
     {
-        "businessPhones-value"
+        "+1 425 555 0109"
     },
-    OfficeLocation = "city-value"
+    OfficeLocation = "18/2111"
 };
 
 await graphClient.Users["{id}"]

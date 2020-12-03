@@ -2,15 +2,15 @@
 title: Obter entrada
 description: Descreve o método Get do recurso de entrada (entidade) da API do Microsoft Graph.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 153c374704cce31aaaab103d58f0b9e702525243
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 033a700e27fb618f285ef1e4dd9bae8e9e8ece71
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092115"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523746"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere um evento específico de entrada do Azure AD para seu locatário. As entradas interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e os logins federados bem-sucedidos estão incluídos atualmente nos logs de entrada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
 

@@ -3,14 +3,14 @@ title: Listar logons
 doc_type: apiPageType
 description: Obtenha uma lista das entradas de usuário em um locatário do Azure Active Directory.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 85634c9e27bfa0626c3fc42390df856a1194c466
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3a26d753241c88443a0aeceabd0f6c800f59c6d7
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969063"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524257"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Obter uma lista de objetos de [entrada](../resources/signin.md) . A lista contém as entradas de usuário para o locatário do Azure Active Directory. Entradas onde um nome de usuário e senha são passados como parte do token de autorização, e os logins federados bem sucedidos estão atualmente incluídos nos logs de entrada. As entradas mais recentes são retornadas primeiro.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | AuditLog. Read. All, Directory. Read. All |
+| Delegada (conta corporativa ou de estudante) | AuditLog. Read. All, Directory. Read. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo | AuditLog. Read. All, Directory. Read. All | 
 

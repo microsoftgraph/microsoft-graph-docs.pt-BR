@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e93cb5133e27c74377bd7db7b7c8b8e28d1debef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5500d22cb6aa587219178dcae839c155ca7744a0
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975033"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523767"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 
 >[!NOTE]
-> - Ao atualizar a propriedade **passwordProfile** , a seguinte permissão é necessária: Directory.AccessAsUser.All.
-> - A atualização da propriedade **businessPhones** , **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não sejam administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  Esse é o caso de aplicativos que receberam as permissões User.ReadWrite.All ou Directory.ReadWrite.All delegadas ou de aplicativo.
+> - Ao atualizar a propriedade **passwordProfile**, a seguinte permissão é necessária: Directory.AccessAsUser.All.
+> - A atualização da propriedade **businessPhones**, **mobilePhone** ou **otherMails** de outro usuário é permitida apenas em usuários que não sejam administradores ou que tenham uma das seguintes funções: Leitor de Diretório, Emissor de Convites Independente, Leitor do Centro de Mensagens e Leitor de Relatórios. Para obter mais detalhes, confira Administrador de suporte técnico (senha) nas [funções disponíveis do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  Esse é o caso de aplicativos que receberam as permissões User.ReadWrite.All ou Directory.ReadWrite.All delegadas ou de aplicativo.
 
 >[!NOTE]
 >A atualização da propriedade **Identidades** exige a permissão User.ManageIdentities.All. Além disso, não é permitido adicionar uma [conta local B2C](../resources/objectidentity.md) a um objeto de **usuário** existente, a menos que o objeto de **usuário** já tenha uma identidade de conta local.
@@ -93,7 +93,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 Como o recurso de **usuário** oferece suporte a [extensões](/graph/extensibility-overview), você pode usar a `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **usuário** existente.
 
 > [!NOTE] 
-> As propriedades a seguir não podem ser atualizadas usando um contexto somente de aplicativo: **aboutMe** , **birthday** , **hireDate** , **interests** , **mySite** , **pastProjects** , **preferredName** , **responsibilities** , **schools** e **skills**.
+> As propriedades a seguir não podem ser atualizadas usando um contexto somente de aplicativo: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** e **skills**.
 
 ## <a name="response"></a>Resposta
 
@@ -118,9 +118,9 @@ Content-type: application/json
 
 {
   "businessPhones": [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  "officeLocation": "city-value"
+  "officeLocation": "18/2111"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -171,9 +171,9 @@ Content-type: application/json
 
 {
   "businessPhones": [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  "officeLocation": "city-value"
+  "officeLocation": "18/2111"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

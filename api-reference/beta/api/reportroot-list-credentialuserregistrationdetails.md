@@ -2,15 +2,15 @@
 title: Listar credentialUserRegistrationDetails
 description: Obter uma lista de objetos credentialUserRegistrationDetails para um determinado locatário.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 6010d43b2e8a45f561db983c0cdb2573a667ebf1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d37e7f568424854ddb3dd9f96ea14f5be7a61999
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973535"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523861"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>Listar credentialUserRegistrationDetails
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter uma lista de objetos [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) para um determinado locatário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 32784009419596579551430deee3d8953fc1a139
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 1f04dc23b777906a3ee36bbcefea035e1e8d2422
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086764"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49524421"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -44,20 +44,20 @@ Obtenha a cadeia de gerenciamento:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
-GET /users?$expand=manager($levels=max)
-GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+GET /users?$expand=manager($levels=n)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.  
 
-Se sua solicitação incluir o `$expand=manager($levels=max)` parâmetro para obter a cadeia do gerente, você também deverá incluir o seguinte:
+Se sua solicitação incluir o `$expand=manager($levels=n)` parâmetro para obter a cadeia do gerente, você também deverá incluir o seguinte:
 
 - `$count=true` parâmetro de cadeia de caracteres de consulta
 - `ConsistencyLevel=eventual` cabeçalho da solicitação
 
->**Observação:** `max` é o único valor permitido para `$levels` .
+>**Observação:** o `n` valor de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
 > Quando o `$level` parâmetro não é especificado, somente o gerente imediato é retornado.  
 > Você pode especificar `$select` dentro `$expand` para selecionar as propriedades do gerente individual: `$expand=manager($levels=max;$select=id,displayName)`
 
@@ -92,6 +92,24 @@ O exemplo a seguir mostra uma solicitação para obter o gerente.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

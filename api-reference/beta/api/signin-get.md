@@ -3,14 +3,14 @@ title: Obter entrada
 doc_type: apiPageType
 description: Obter um objeto de entrada que contenha todas as entradas de um locatário do Azure Active Directory.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 15debdb65b2cb5f76c5ca77958b641d3daeb73f0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ba955ab431597efdaf3edfddbba715fdc502243a
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969110"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524299"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Obtenha um objeto de [entrada](../resources/signin.md) que contenha um evento de entrada de usuário específico para seu locatário. Isso inclui entradas onde um usuário é solicitado a inserir um nome de usuário ou senha e tokens de sessão.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante) | AuditLog. Read. All, Directory. Read. All |
+| Delegada (conta corporativa ou de estudante) | AuditLog. Read. All, Directory. Read. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo | AuditLog. Read. All, Directory. Read. All | 
 

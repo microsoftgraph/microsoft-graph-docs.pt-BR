@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9d08f4a8fa99b71c58006e5d687baaa90ec88447
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 15b20cd942b7a744a0e55f2791712df620c9dc37
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48907303"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49556252"
 ---
 ```objc
 
@@ -24,7 +24,6 @@ MSGraphConversationMember *members = [[MSGraphConversationMember alloc] init];
 NSMutableArray *rolesList = [[NSMutableArray alloc] init];
 [rolesList addObject: @"owner"];
 [members setRoles:rolesList];
-[members setUserId:@"0040b377-61d8-43db-94f5-81374122dc7e"];
 [membersList addObject: members];
 [team setMembers:membersList];
 

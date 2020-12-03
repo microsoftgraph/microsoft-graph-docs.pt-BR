@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para recuperar o agg
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 1a8e8cf17995adceadb9f426d1824d85505e806e
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 6eb537fa8063281073fbdb12edfb4ec09b88bb93
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377940"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563426"
 ---
 # <a name="refine-search-results-using-aggregations-preview"></a>Refinar os resultados da pesquisa usando agregações (visualização)
 
@@ -308,7 +308,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-As agregações são suportadas apenas para itens do SharePoint ou do OneDrive. Eles não têm suporte para **Message**, **Event** e **externalItem**.
+As agregações são suportadas apenas para itens do SharePoint ou do OneDrive. Eles não têm suporte para **mensagem** ou **evento**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

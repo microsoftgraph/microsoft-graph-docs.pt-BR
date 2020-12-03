@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: a6b987e36769102ee32eeb9509554f8e78fed9d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b5b400bea6ae4435e1aa525012b7b3224a95abc
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067501"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49555636"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
@@ -37,20 +37,22 @@ Representa o contrato de termos de uso personalizável de um locatário que é c
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|Cadeia de caracteres|Nome para exibição do contrato. O nome para exibição é usado para o controle interno do contrato, mas não é exibido para os usuários finais que exibem o contrato.|
+|displayName|String|Nome para exibição do contrato. O nome para exibição é usado para o controle interno do contrato, mas não é exibido para os usuários finais que exibem o contrato.|
 |id|String| Somente leitura.|
-|isPerDeviceAcceptanceRequired|Booliano|Essa configuração permite que você exija que os usuários finais aceitem este contrato em todos os dispositivos dos quais eles estão acessando-os. O usuário final será solicitado a registrar o dispositivo no Azure AD, caso ainda não tenha feito isso.|
-|isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir o contrato antes de aceitar.|
+|isPerDeviceAcceptanceRequired|Boolean|Essa configuração permite que você exija que os usuários finais aceitem este contrato em todos os dispositivos dos quais eles estão acessando-os. O usuário final será solicitado a registrar o dispositivo no Azure AD, caso ainda não tenha feito isso.|
+|isViewingBeforeAcceptanceRequired|Boolean|Indica se o usuário tem que expandir o contrato antes de aceitar.|
 |termsExpiration|[termsExpiration](termsexpiration.md)| Cronograma de expiração e frequência de contrato para todos os usuários. |
 |userReacceptRequiredFrequency|Duração|A duração após a qual o usuário deve aceitar novamente os termos de uso. O valor é representado no formato ISO 8601 para durações.|
 
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |aceitação|Coleção [agreementAcceptance](agreementacceptance.md)|Somente leitura. Informações sobre as aceitações deste contrato.|
-|arquivos|coleção [agreementFileLocalization](agreementfilelocalization.md)| PDFs vinculados a este contrato. **Observação:** Essa propriedade está no processo de ser preterido. Propriedade do  **arquivo** use em vez disso.|
-|file|[agreementFile](agreementfile.md) | PDFs vinculados a este contrato.|
+|arquivos|coleção [agreementFileLocalization](agreementfilelocalization.md)| PDFs vinculados a este contrato. **Observação:** Essa propriedade está no processo de ser preterido. Em vez disso, use a propriedade  **File** .|
+|file|[agreementFile](agreementfile.md) | PDF padrão vinculado a este contrato.|
+|arquivos/localizações|coleção [agreementFileLocalization](agreementfilelocalization.md)|As versões localizadas dos arquivos de contrato anexados ao contrato.|
+|arquivo/localizações/{localizações}/versões|coleção [agreementFileVersion](agreementfileversion.md)|O histórico de versão do arquivo de contrato localizado.|
 
 
 ## <a name="json-representation"></a>Representação JSON

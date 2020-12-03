@@ -2,15 +2,15 @@
 title: 'reportRoot: getCredentialUsageSummary'
 description: Informe o estado atual de quantos usuários da sua organização estão usando recursos de redefinição de senha de autoatendimento.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 43584c15b8637be4a0e221c26b9f85d801730b22
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5d270b3edaebc64160cd356ef32c60ae77d8f539
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966797"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523543"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>reportRoot: getCredentialUsageSummary
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Informe o estado atual de quantos usuários da sua organização usaram as funcionalidades de redefinição de senha de autoatendimento.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 806e4e3f49144845a3cf438cf9b131f7bc900de1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a3d42d7c4d7b0b2d1d4b107bacf114f86ae6d258
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067430"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49555634"
 ---
 # <a name="agreementfilelocalization-resource-type"></a>tipo de recurso agreementFileLocalization
 
@@ -25,9 +25,11 @@ Representa um arquivo de contrato de uso personalizável que um locatário geren
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get agreementFile](../api/agreementfile-get.md) | [agreementFile](agreementfile.md) | Read properties and relationships of an **agreementFile** object. |
-| [Update](../api/agreementfile-update.md) | [agreementFile](agreementfile.md) | Update an **agreementFile** object. |
-| [Delete](../api/agreementfile-delete.md) | None | Delete an **agreementFile** object. |
+| [Create agreementFileLocalization](../api/agreementfilelocalization-post-agreementfilelocalizations.md) | [agreementfilelocalization](agreementfilelocalization.md) | Create a new agreementFileLocalization. |
+| [List agreementFileLocalizations](../api/agreementfilelocalization-list.md) | [agreementfilelocalization](agreementfilelocalization.md) collection | Get an agreementFileLocalization object collection. |
+| [Get agreementFileLocalization](../api/agreementfilelocalization-get.md) | [agreementfilelocalization](agreementfilelocalization.md) | Read properties and relationships of an agreementFileLocalization object. |
+| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementfileversion](agreementfileversion.md) collection | Get an agreementFileVersion object collection. |
+| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementfileversion](agreementfileversion.md) | Read properties and relationships of an agreementFileVersion object. |
 -->
 
 ## <a name="properties"></a>Propriedades
@@ -38,7 +40,15 @@ Representa um arquivo de contrato de uso personalizável que um locatário geren
 |id|String|Somente leitura.|
 |isDefault|Booliano|Indica se este é o arquivo de contrato padrão se nenhuma das culturas corresponder à preferência do cliente. Se nenhum dos arquivos estiver marcado como padrão, o primeiro será tratado como o padrão. Somente leitura.|
 |idioma|Cadeia de caracteres|Cultura do arquivo de contrato no formato languagecode2-Country/regioncode2. languagecode2 é um código de duas letras em minúsculas derivado de ISO 639-1. Country/regioncode2 é derivado de ISO 3166 e geralmente consiste em duas letras maiúsculas ou uma marca de idioma BCP-47 (por exemplo, en-US). Somente leitura.|
+|isMajorVersion|Boolean|Indica se o arquivo de contrato é uma atualização de versão principal. As atualizações de versão principal invalidam as aceitação do contrato no idioma correspondente. |
+|createdDateTime|DateTimeOffset|A data e hora que representam o momento em que o arquivo foi criado. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
 
+<!--
+## Relationships
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
+-->
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -57,7 +67,7 @@ Veja a seguir uma representação JSON do recurso.
   "fileData": {"@odata.type": "microsoft.graph.agreementFileData"},
   "fileName": "String",
   "id": "String (identifier)",
-  "isDefault": true,
+  "isDefault": "Boolean",
   "language": "String"
 }
 
@@ -75,5 +85,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-

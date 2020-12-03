@@ -2,15 +2,15 @@
 title: Listar userCredentialUsageDetails
 description: Obter uma lista de objetos userCredentialUsageDetails para um determinado locatário.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: aa6c39f7f08be5f09d446214a9c34ba0d6e555a7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d1420e28ae5cc176b74cb1de8ac064e480249cd1
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971477"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523945"
 ---
 # <a name="list-usercredentialusagedetails"></a>Listar userCredentialUsageDetails
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obter uma lista de objetos [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) para um determinado locatário. Os detalhes incluem informações do usuário, status da redefinição e o motivo da falha.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

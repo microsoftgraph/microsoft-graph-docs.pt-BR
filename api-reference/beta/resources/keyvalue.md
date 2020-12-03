@@ -2,15 +2,15 @@
 title: tipo de recurso KeyValue
 description: Fornece informações relevantes adicionais sobre a solicitação de entrada
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0a25d9c69b3495bcc2efc38b3e87b373f247d024
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 78dd4f6ede6e918bb1caaae3761ef258b4e0a427
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078337"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524698"
 ---
 # <a name="keyvalue-resource-type"></a>tipo de recurso KeyValue
 
@@ -24,7 +24,7 @@ Fornece informações de processamento de autenticação adicionais, como o nome
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|key|Cadeia de caracteres|Contém o nome do campo ao qual um valor está associado. Quando uma dica de entrada ou de domínio é incluída na solicitação de entrada, os campos correspondentes são incluídos como pares de chave-valor. Chaves possíveis: `Login hint present` , `Domain hint present` .|
+|key|String|Contém o nome do campo ao qual um valor está associado. Quando uma dica de entrada ou de domínio é incluída na solicitação de entrada, os campos correspondentes são incluídos como pares de chave-valor. Chaves possíveis: `Login hint present` , `Domain hint present` .|
 |value|Cadeia de caracteres|Contém o valor correspondente para a chave especificada. O valor é `true` se uma dica de entrada foi incluída na solicitação de entrada; caso contrário `false` . O valor é `true` se uma dica de domínio foi incluída na solicitação de entrada; caso contrário `false` .|
 
 ## <a name="json-representation"></a>Representação JSON

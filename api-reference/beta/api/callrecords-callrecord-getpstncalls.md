@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 598c3c4fe8abd1b1dcc77cea1d2f513b439771a3
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: cb15b70a023fcdf9731b67704329e7dc0d212cc8
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601101"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563182"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph.callRecords
 
 Obter o log de chamadas PSTN como uma coleção de entradas [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | CallRecords.Read.All |
 
@@ -50,6 +50,9 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|Início do intervalo de tempo para consulta. UTC, inclusive.<br/>O intervalo de tempo é baseado na hora de início da chamada.|
 |ToDateTime|DateTimeOffset|Término do intervalo de tempo para consulta. UTC, inclusive.|
+
+> [!IMPORTANT]
+> \* Os valores **fromDateTime** e **ToDateTime** não podem ser mais de um intervalo de datas de 90 dias.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
