@@ -4,12 +4,12 @@ description: Habilite seus bots para enviar e receber conteúdo relacionado a á
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: c7319e13264794fb3e38764d5265824e04b5ba87
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 74738233915f0a0731790ee8b0646f437585cb67
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289383"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522423"
 ---
 # <a name="media-overview"></a>Visão geral de mídia
 
@@ -29,7 +29,7 @@ Para obter um exemplo que mostra como criar um bot que usa mídia de host de ser
 ## <a name="application-hosted-media-local-hosting"></a>Mídia hospedada por aplicativo (hospedagem local)
 Se você quiser que o bot acesse um fluxo ativo de áudio e vídeo de seus clientes para usar para gravação, transcrever, traduzir ou remediar a análise por meio de um serviço de processamento de idioma natural, considere hospedar sua mídia localmente.
 
->**Observação:** Você não pode gravar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa ou dados derivados desse conteúdo de mídia. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
+>**Observação:** Você **não pode** usar a API de acesso à mídia para registrar ou manter o conteúdo de mídia de chamadas ou reuniões que seu aplicativo acessa, ou dados derivados desse conteúdo de mídia ("Record" ou "Recording"), sem primeiro chamar a [API updateRecordingStatus](/graph/api/call-updaterecordingstatus) para indicar que a gravação foi iniciada e receber uma resposta de êxito dessa API. Se o aplicativo começar a gravar qualquer reunião/chamada, ele deverá finalizar a gravação antes de chamar a API updateRecordingStatus para indicar que a gravação foi concluída. Certifique-se de que você está em conformidade com as leis e regulamentos de sua área em relação à proteção de dados e à confidencialidade das comunicações. Confira os [Termos de Uso](/legal/microsoft-apis/terms-of-use) e converse com sua assessoria jurídica para saber mais.
 
 **Se você quiser mais controle sobre sua mídia, escolha essa opção**. Você terá acesso direto aos fluxos de mídia e poderá usar o compartilhamento de tela baseado em vídeo. Você poderá criar cenários IVR mais sofisticados que estão habilitados para fala. Esta é uma solução ponderada mais complicada que oferece maior flexibilidade na forma como você deseja programar a mídia.
 

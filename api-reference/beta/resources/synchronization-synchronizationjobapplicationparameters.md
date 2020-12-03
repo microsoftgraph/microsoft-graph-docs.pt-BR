@@ -5,12 +5,12 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: eaa569faa7705baf95ef5843ad0ae1e66a0bf1ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca91021ccb9fbc4cf8ec6c61b4edea979bb7c833
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026107"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523200"
 ---
 # <a name="synchronizationjobapplicationparameters-resource-type"></a>tipo de recurso synchronizationJobApplicationParameters
 
@@ -21,7 +21,7 @@ Representa os objetos que serão provisionados e as regras de sincronização ex
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ruleId|String|O identificador de um synchronizationRule a ser aplicado; opcional para um synchronizationJob com um único synchronizationRule.|
+|ruleId|String|O identificador de um synchronizationRule a ser aplicado.|
 |olhos|coleção [synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md)|Os identificadores de um ou mais objetos aos quais um synchronizationJob deve ser aplicado.|
 
 ## <a name="relationships"></a>Relações

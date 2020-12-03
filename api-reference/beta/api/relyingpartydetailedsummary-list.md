@@ -2,15 +2,15 @@
 title: Listar relyingPartyDetailedSummary
 description: Recupere uma lista de objetos relyingPartyDetailedSummary.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 29c1f707ad206353e9f09dcbdbece37549311540
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7dcba9c98467461a8dae3b4d39d752c6d369c4d5
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975095"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523263"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>Listar relyingPartyDetailedSummary
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 Recupere uma lista de objetos **relyingPartyDetailedSummary** .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Report. Read. All |
+| Delegada (conta corporativa ou de estudante)     | Report. Read. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Report. Read. All |
+| Aplicativo                            | Report. Read. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

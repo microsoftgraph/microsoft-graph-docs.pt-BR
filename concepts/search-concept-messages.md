@@ -4,12 +4,12 @@ description: Você pode usar a API de pesquisa da Microsoft para pesquisar infor
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: e9917b8153946161168e90f78399f29b6a7f3df3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 0ee9950ff136b3f97e063da252ec22d166f05b74
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288823"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49521359"
 ---
 # <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>Usar a API de pesquisa da Microsoft para pesquisar mensagens do Outlook
 
@@ -32,7 +32,7 @@ O exemplo a seguir consulta mensagens na caixa de correio do usuário conectado 
 ### <a name="request"></a>Solicitação
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -122,7 +122,7 @@ O exemplo a seguir usa a consulta de pesquisa mostrada no exemplo 1 e classifica
 ### <a name="request"></a>Solicitação
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -148,7 +148,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -205,9 +205,9 @@ Content-type: application/json
 ## <a name="known-limitations"></a>Limitações conhecidas
 
 - Você pode acessar somente a caixa de correio do usuário conectado. Não há suporte para a pesquisa de caixas de correio delegadas.
-- Para mensagens, a propriedade **total** do tipo [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) contém o número de resultados na página, e não o número total de resultados correspondentes.
+- Para mensagens, a propriedade **total** do tipo [searchHitsContainer](/graph/api/resources/searchhitscontainer) contém o número de resultados na página, e não o número total de resultados correspondentes.
 - A classificação de resultados não é suportada para eventos. Uma cláusula de classificação na solicitação retornará um código de erro de solicitação inválida na resposta.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de pesquisa da Microsoft](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Usar a API de pesquisa da Microsoft](/graph/api/resources/search-api-overview)

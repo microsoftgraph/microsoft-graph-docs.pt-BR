@@ -2,15 +2,15 @@
 title: tipo de recurso credentialUsageSummary
 description: Representa o estado atual de quantos usuários da sua organização estão usando recursos de redefinição de senha de autoatendimento.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 311f89b67549e6bc373029aef82c88ca0e592f3d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9807e333fd13443462d2d3237150820afd254baa
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050091"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523144"
 ---
 # <a name="credentialusagesummary-resource-type"></a>tipo de recurso credentialUsageSummary
 
@@ -33,7 +33,7 @@ Representa o estado atual de quantos usuários da sua organização estão usand
 | authMethod | cadeia de caracteres | Representa o método de autenticação usado pelo usuário. Os valores possíveis são: `email` , `mobileSMS` ,, `mobileCall` `officePhone` , `securityQuestion` (usado somente para redefinição de senha de autoatendimento),, `appNotification` `appCode` e  `alternateMobileCall` (somente com suporte para registro). |
 | failureActivityCount | Int64 | Fornece a contagem de redefinições ou dados de registro com falha. |
 | apresentam | cadeia de caracteres | Define o recurso a ser relatado. Os valores possíveis são: `registration` e `reset` . |
-| id | Cadeia de caracteres | O identificador exclusivo da atividade. Somente leitura. |
+| id | String | O identificador exclusivo da atividade. Somente leitura. |
 | successfulActivityCount | Int64 | Fornece a contagem de registros ou redefinições bem-sucedidas. |
 
 ## <a name="relationships"></a>Relações

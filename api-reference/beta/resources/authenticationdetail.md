@@ -2,15 +2,15 @@
 title: tipo de recurso authenticationDetail
 description: Fornece os detalhes de autenticação para uma entrada de usuário, como informações de autenticação multifator (MFA) e detalhes de PTA/PHS.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9a7812e313c4be3397c92ae0956a14c11d6bcdf5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 14f2121aabaae591187d3033903e569b482b8727
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034193"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49521240"
 ---
 # <a name="authenticationdetail-resource-type"></a>tipo de recurso authenticationDetail
 
@@ -29,7 +29,7 @@ Fornece os detalhes de autenticação para uma entrada de usuário, como informa
 | authenticationStepDateTime     | DateTimeOffset | Representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.                                           |
 | authenticationStepRequirement  | String         | A etapa de autenticação atendida. Por exemplo, autenticação primária ou autenticação multifator.                                                                                                     |
 | authenticationStepResultDetail | String         | Detalhes sobre por que a etapa foi bem-sucedida ou falhou. Por exemplo, o usuário é bloqueado, o código de fraude inserido, nenhuma entrada de telefone-tempo limite, telefone inacessível ou declaração no token.                                                     |
-| adicionada                      | Booliano        | Indica o status da etapa de autenticação. Valores possíveis: `succeeded` , `failed` .                                                                                                                                 |
+| adicionada                      | Boolean        | Indica o status da etapa de autenticação. Valores possíveis: `succeeded` , `failed` .                                                                                                                                 |
 
 ## <a name="json-representation"></a>Representação JSON
 

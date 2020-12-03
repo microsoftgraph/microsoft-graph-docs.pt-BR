@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed7177f4a91fae4fb5e87f496489cdc0c9569607
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 6db256a71c17e4c940669aaf96f61f70285c8f3e
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377491"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523378"
 ---
 # <a name="team-sendactivitynotification"></a>equipe: sendActivityNotification
 Namespace: microsoft.graph
@@ -22,9 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|TeamsActivity.Send|
+|Delegada (conta corporativa ou de estudante)|TeamsActivity.Send|
+|Delegada (conta Microsoft pessoal)|Sem suporte.|
+|Aplicativo|TeamsActivity.Send|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -76,6 +76,8 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 Este exemplo mostra como você pode enviar uma notificação de feed de atividades para uma equipe. Este exemplo notifica o proprietário da equipe sobre solicitações de aprovação financeira pendentes.
 
 #### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification"
@@ -106,6 +108,12 @@ Content-Type: application/json
     ] 
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 <!-- {

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bf9ccc7f6c89eb6a887d3221065e315eeaf65ce0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7155a1c721ff0b6ce0a879971f37d38f13951a38
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057147"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522948"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -160,18 +160,18 @@ Content-type: application/json
   "value": [
     {
       "businessPhones": [
-          "businessPhones-value"
+          "+1 425 555 0109"
       ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
+      "displayName": "Adele Vance",
+      "givenName": "Adele",
+      "jobTitle": "Retail Manager",
+      "mail": "AdeleV@contoso.onmicrosoft.com",
+      "mobilePhone": "+1 425 555 0109",
+      "officeLocation": "18/2111",
+      "preferredLanguage": "en-US",
+      "surname": "Vance",
+      "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
 }
@@ -230,9 +230,9 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
-      "jobTitle": "jobTitle-value",
-      "mobilePhone": null
+      "displayName": "Adele Vance",
+      "jobTitle": "Retail Manager",
+      "mobilePhone": "+1 425 555 0109"
     }
   ]
 }
@@ -293,8 +293,8 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
-      "jobTitle": null
+      "displayName": "Vance Adele",
+      "jobTitle": "Product Marketing Manager"
     }
   ]
 }

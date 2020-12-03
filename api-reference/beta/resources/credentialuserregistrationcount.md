@@ -2,15 +2,15 @@
 title: tipo de recurso credentialUserRegistrationCount
 description: Representa o estado atual de quantos usuários da sua organização estão registrados para recursos de redefinição de senha de autoatendimento e autenticação multifator.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: c5fb3588c7d06f726c71c81279c0994fd0de4019
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 59c7849a5145064eafbce63804b5d3415fb92b97
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050084"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523123"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>tipo de recurso credentialUserRegistrationCount
 
@@ -30,7 +30,7 @@ Representa o estado atual de quantos usuários da sua organização estão regis
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| id | Cadeia de caracteres | O identificador exclusivo da atividade. Somente leitura. |
+| id | String | O identificador exclusivo da atividade. Somente leitura. |
 | totalUserCount | Int64 | Fornece a contagem total de usuários no locatário. |
 | userRegistrationCounts | coleção [userRegistrationCount](userregistrationcount.md) | Uma coleção de informações de status e contagem de registro para usuários em seu locatário. |
 

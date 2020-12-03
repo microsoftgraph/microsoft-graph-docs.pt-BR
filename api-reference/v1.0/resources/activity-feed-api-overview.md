@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: conceptualPageType
-ms.openlocfilehash: 76f94e2f1d34186258fb74c5509accf5a0ecc007
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 2bf4e679fa6220bdc6e9fd381d908ea409af5ca0
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581964"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522059"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Usar a API REST de feed de atividades
 
@@ -30,7 +30,7 @@ As atividades do usuário não apenas iniciam aplicativos – elas são links pr
 
 Como todos os aplicativos são diferentes, é para cada desenvolvedor de aplicativos entender a melhor maneira de mapear ações dentro de seu aplicativo para as atividades do usuário. Por exemplo, os jogos podem criar uma atividade para cada campanha, os aplicativos de criação de documentos podem criar uma atividade para cada documento exclusivo, e os aplicativos de linha de negócios podem criar uma atividade para cada fluxo de trabalho.
 
-Aplique as seguintes diretrizes conforme define o activitites em seu aplicativo:
+Aplique as seguintes diretrizes ao definir atividades em seu aplicativo:
 
 **Fazer:** Registrar uma única atividade para um grupo de ações de usuário relacionadas.
 Se o aplicativo for usado para uma sequência de conteúdo relacionado, provavelmente fará sentido registrar uma única atividade para toda a sessão de compromisso.

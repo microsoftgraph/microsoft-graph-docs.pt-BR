@@ -2,15 +2,15 @@
 title: tipo de recurso networkLocationDetail
 description: Fornece o nome e o tipo de rede a partir da qual o usuário entrou.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 210201613a2f93c99472b42c5ea3ef231a10125d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c43341ab5799da83a084e035c680a1926b3d8e8
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026604"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523011"
 ---
 # <a name="networklocationdetail-resource-type"></a>tipo de recurso networkLocationDetail
 
@@ -24,7 +24,7 @@ Fornece o nome e o tipo de rede a partir da qual o usuário entrou.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|networknames|Coleção String|Fornece o nome da rede usada ao entrar.|
+|networknames|Conjunto de cadeias de caracteres|Fornece o nome da rede usada ao entrar.|
 |NetworkType|NetworkType| Fornece o tipo de rede usada ao entrar. Os valores possíveis são: `intranet`, `extranet`, `namedNetwork`, `trusted`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Representação JSON
