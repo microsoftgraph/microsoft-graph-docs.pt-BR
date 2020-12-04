@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 62ba66a110b335f784f5b61277d8131f08f36dbc
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 953d8c5e3d6dd29c0cbc3e1fffd3e5748e5673c1
+ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192790"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572174"
 ---
 # <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a>Criar, atualizar e excluir conexões no Microsoft Graph
 
@@ -85,7 +85,7 @@ Você pode [excluir uma conexão](/graph/api/externalconnection-delete?view=grap
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Registrar o esquema de conexão](/graph/concepts/search-index-manage-schema.md)
+- [Registrar o esquema de conexão](/graph/search-index-manage-schema)
 - [Revisar a referência da API do conectores do Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Visão geral dos conectores do Microsoft Graph](/microsoftsearch/connectors-overview)
 - Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub

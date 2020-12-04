@@ -4,12 +4,12 @@ description: Enviar notificações de feed de atividades para usuários no Micro
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 33a44ef158a1336e198e7382e144efed11ff35e7
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 698a5ed338906f8eed2d2611c8aba3b4f0b6f624
+ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377423"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572118"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Enviar notificações de feed de atividades para usuários no Microsoft Teams
 
@@ -62,8 +62,8 @@ Esta seção descreve as alterações que precisam ser adicionadas ao manifesto 
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|id|string|ID de aplicativo do Azure AD (ID do cliente).|
-|recurso|string|Recurso associado ao aplicativo do Azure AD. Também conhecido como resposta ou URL de redirecionamento no portal do Azure.|
+|id|cadeia de caracteres|ID de aplicativo do Azure AD (ID do cliente).|
+|recurso|cadeia de caracteres|Recurso associado ao aplicativo do Azure AD. Também conhecido como resposta ou URL de redirecionamento no portal do Azure.|
 
 > **Observação:** Você pode receber um erro se vários aplicativos do teams no mesmo escopo (equipe, chat ou usuário) estiverem usando o mesmo aplicativo do Azure AD. Certifique-se de que você está usando aplicativos exclusivos do Azure AD.
 
@@ -91,7 +91,7 @@ Esta seção descreve as alterações que precisam ser adicionadas ao manifesto 
 |:---|:---|:---|
 |type|string|Tipo de atividade. Isso precisa ser exclusivo em um manifesto específico.|
 |description|string|Descrição curta legível. Isso estará visível no cliente Microsoft Teams.|
-|templateText|string|Texto de modelo para a notificação de atividade. Você pode declarar seus parâmetros ao encapsular parâmetros no `{}` .|
+|templateText|cadeia de caracteres|Texto de modelo para a notificação de atividade. Você pode declarar seus parâmetros ao encapsular parâmetros no `{}` .|
 
 >**Observação:** `actor` é um parâmetro especial que sempre Obtém o nome do chamador. Em chamadas delegadas, `actor` é o nome do usuário. Em chamadas somente aplicativo, ele utiliza o nome do aplicativo Teams.
 
@@ -158,7 +158,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2--notify-a-user-about-a-task-created-in-a-team"></a>Exemplo 2: notificar um usuário sobre uma tarefa criada em uma equipe
+### <a name="example-2-notify-a-user-about-a-task-created-in-a-team"></a>Exemplo 2: notificar um usuário sobre uma tarefa criada em uma equipe
 
 Este exemplo mostra como você pode enviar uma notificação de feed de atividades para uma equipe. Este exemplo notifica o proprietário da equipe sobre uma nova tarefa criada que requer sua atenção.
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 0e70f712b7965e97df7255cda3dcf94c69f73691
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2157b61ba1585d72e24a6a62f1b0344530524be9
+ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193648"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572139"
 ---
 # <a name="register-schema-for-the-microsoft-graph-connection"></a>Registrar o esquema da conexão do Microsoft Graph
 
@@ -148,8 +148,7 @@ Os aliases são nomes amigáveis para as propriedades que você atribuir. Elas s
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Adicionar itens à conexão](/graph/concepts/search-index-manage-items.md)
+- [Adicionar itens à conexão](/graph/search-index-manage-items)
 - [Revisar a referência da API do conectores do Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
-- [Personalizar a página de resultados da pesquisa da Microsoft](/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page)
 - [Pesquisar tipos personalizados (externalItem)](search-concept-custom-types.md)
 - Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub
