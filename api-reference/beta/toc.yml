@@ -486,7 +486,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -10639,6 +10639,10 @@ items:
                         href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: Remover provedor de identidade
                         href: api/b2cidentityuserflow-delete-identityproviders.md
+                      - name: Listar atribuições de atributo de usuário
+                        href: api/b2cidentityuserflow-list-userattributeassignments.md
+                      - name: Criar atribuição de atributo de usuário
+                        href: api/b2cidentityuserflow-post-userattributeassignments.md
                   - name: Fluxos de usuário de inscrição de autoatendimento
                     items:
                       - name: Fluxo de usuário do B2X
@@ -10657,6 +10661,10 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: Remover provedor de identidade
                         href: api/b2xidentityuserflow-delete-identityproviders.md
+                      - name: Listar atribuições de atributo de usuário
+                        href: api/b2xidentityuserflow-list-userattributeassignments.md
+                      - name: Criar atribuição de atributo de usuário
+                        href: api/b2xidentityuserflow-post-userattributeassignments.md
                   - name: Atributos de fluxo do usuário
                     items:
                       - name: Atributo de fluxo do usuário
@@ -10671,6 +10679,16 @@ items:
                         href: api/identityuserflowattribute-update.md
                       - name: Excluir
                         href: api/identityuserflowattribute-delete.md
+                  - name: Atribuição de atributo de fluxo do usuário
+                    items:
+                      - name: Atribuição de atributo de fluxo do usuário
+                        href: resources/identityuserflowattributeassignment.md
+                      - name: Obter atribuição de atributo de fluxo de usuário
+                        href: api/identityuserflowattributeassignment-get.md
+                      - name: Atualizar atribuição de atributo de fluxo do usuário
+                        href: api/identityuserflowattributeassignment-update.md
+                      - name: Excluir atribuição de atributo de fluxo do usuário
+                        href: api/identityuserflowattributeassignment-delete.md
           - name: Governança
             items:
               - name: Revisões de acesso (grupos)
@@ -12280,7 +12298,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
