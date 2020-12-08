@@ -3,12 +3,12 @@ title: Instalar o SDK do Microsoft Graph
 description: Fornece instruções para a instalação dos SDKs C#, Java, JavaScript, Objective-C, PHP e Ruby do Microsoft Graph.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: d9feb4ebca4cc0558ad981e1598ff6f7d68ac95a
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 7f96266c1ff774f52e559737fe67f032f1e54fdc
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289467"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580953"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Instalar os SDKs do Microsoft Graph
 
@@ -46,23 +46,63 @@ Adicione o repositório e uma dependência de compilação do Microsoft-Graph à
 ```Gradle
 repository {
     jcenter()
+    jcenter{
+        url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
+    }
 }
 
 dependency {
     // Include the sdk as a dependency
     implementation 'com.microsoft.graph:microsoft-graph:2.+'
+    implementation 'com.microsoft.graph:microsoft-graph-auth:0.3.0'
 }
 ```
 
 ### <a name="install-the-microsoft-graph-java-sdk-via-maven"></a>Instalar o SDK do Microsoft Graph Java via Maven
 
-Adicione a dependência no elemento de dependências no pom.xml:
+Adicione os repositórios no `profiles` elemento no pom.xml:
+
+```xml
+<profiles>
+    <profile>
+        <repositories>
+            <repository>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+                <id>bintray-microsoftgraph-Maven</id>
+                <name>bintray</name>
+                <url>https://dl.bintray.com/microsoftgraph/Maven</url>
+            </repository>
+        </repositories>
+    </profile>
+    <profile>
+       <id>allow-snapshots</id>
+          <activation><activeByDefault>true</activeByDefault></activation>
+       <repositories>
+         <repository>
+           <id>snapshots-repo</id>
+           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+           <releases><enabled>false</enabled></releases>
+           <snapshots><enabled>true</enabled></snapshots>
+         </repository>
+       </repositories>
+     </profile>
+</profiles>
+```
+
+Adicione a dependência no `dependencies` elemento no pom.xml:
 
 ```xml
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
     <version>[2.0,)</version>
+</dependency>
+<dependency>
+    <groupId>com.microsoft.graph</groupId>
+    <artifactId>microsoft-graph-auth</artifactId>
+    <version>0.3.0</version>
 </dependency>
 ```
 
@@ -76,7 +116,7 @@ O SDK do JavaScript do Microsoft Graph está incluído nos seguintes pacotes:
 Você pode usar o [NPM](https://www.npmjs.com) para instalar o SDK do JavaScript do Microsoft Graph:
 
 ```Shell
-npm install @microsoft/microsoft-graph-client
+npm install @microsoft/microsoft-graph-client --save
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
 

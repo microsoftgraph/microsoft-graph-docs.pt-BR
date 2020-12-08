@@ -4,12 +4,12 @@ description: Enviar notificações de feed de atividades para usuários no Micro
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 698a5ed338906f8eed2d2611c8aba3b4f0b6f624
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: d100c021f637873bebc6e62d8b8b9e31d60113fb
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572118"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581114"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Enviar notificações de feed de atividades para usuários no Microsoft Teams
 
@@ -145,7 +145,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 
 #### <a name="response"></a>Resposta
@@ -192,7 +191,6 @@ Content-Type: application/json
         }
     ]
 }
-
 ```
 
 #### <a name="response"></a>Resposta

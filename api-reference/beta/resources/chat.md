@@ -5,22 +5,22 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e6316f7c3aad0fc90e258d145b57942395265ce7
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 88d08c8e6e0222c339c99db9cab9243f9c48c1f3
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563447"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597253"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais participantes. Os participantes podem ser usuários ou aplicativos.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 |  Método       |  Tipo de retorno  | Descrição| 
 |:---------------|:--------|:----------|
@@ -31,6 +31,7 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 |[Listar mensagens em um bate-papo](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um bate-papo de um para um ou de grupo. | 
 |[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | 
 |[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Obter um chat entre o usuário e o aplicativo |
+|[Obter todas as mensagens de chat](../api/chats-getallmessages.md)| coleção [chat](chat.md)| Obter mensagens de todos os chats dos quais um usuário é um participante, incluindo chats de um a um, chats de grupo e bate-papos de reunião. |
 
 >**Observação:** Ao usar permissões de aplicativo, certifique-se de saber como você vai obter a ID de chat. Como a lista de chats com permissões de aplicativo não é suportada, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de [alteração para o/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 

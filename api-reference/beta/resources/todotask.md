@@ -5,16 +5,16 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 58859f2781ecec713e547340606411302232ec06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ffcd3da43b7ae165045b545c656035e47d291419
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003490"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597197"
 ---
 # <a name="todotask-resource-type"></a>tipo de recurso todoTask
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,9 @@ Um **todoTask** está sempre contido em um [todoTaskList](todotasklist.md). Ele 
 
 Esse recurso suporta o seguinte:
 * Adicionar seus dados como propriedades personalizadas em [extensões abertas](/graph/extensibility-overview).
+* Assinar as [notificações de alteração](/graph/webhooks).
 * Usando a [consulta Delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais.
+
 
 ## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição|
@@ -49,7 +51,7 @@ Esse recurso suporta o seguinte:
 |importância|importância|A importância da tarefa. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria a seguinte aparência: ' 2020-01-01T00:00:00Z '.|
-|recorrência|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
 |status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|Uma breve descrição da tarefa.|
@@ -57,7 +59,7 @@ Esse recurso suporta o seguinte:
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|extensions|[extension](extension.md) collection| A coleção de extensões abertas definidas para a tarefa. Anulável.|
+|extensions|Coleção [extension](extension.md)| A coleção de extensões abertas definidas para a tarefa. Anulável.|
 |linkedResources|coleção [linkedResource](../resources/linkedresource.md)|Uma coleção de recursos vinculados à tarefa.|
 
 

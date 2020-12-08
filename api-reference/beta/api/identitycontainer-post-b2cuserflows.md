@@ -5,30 +5,30 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 65c9508ee1a83ca807b53504869e4d10d5d27f8d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b0a73a42948871eeae4cd4b31bc993209b7eeaa
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953526"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581121"
 ---
 # <a name="create-b2cidentityuserflow"></a>Criar b2cIdentityUserFlow
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar um novo objeto [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityUserFlow.ReadWrite.All|
+|Aplicativo|IdentityUserFlow. ReadWrite. All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça uma representação JSON de um [b2cIdentityU
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-instalado com `B2C_1` após a criação.|
-|userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário.|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo do usuário.|
 

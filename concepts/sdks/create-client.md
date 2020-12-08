@@ -3,20 +3,20 @@ title: Criar um cliente do Microsoft Graph
 description: Descreve como criar um cliente para usar o para fazer chamadas para o Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem do soberana.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: cfff3b8f19b27e360977259d06df730abfd38bf3
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: bbcf8a624253a8db0602a9eb8c818980cb9d05b5
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778730"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581107"
 ---
 # <a name="create-a-microsoft-graph-client"></a>Criar um cliente do Microsoft Graph
 
-O cliente do Microsoft Graph foi projetado para simplificar as chamadas para o Microsoft Graph. Você pode usar uma instância de cliente única para o tempo de vida do aplicativo. Para obter informações sobre como adicionar e instalar o pacote do cliente Microsoft Graph em seu projeto, consulte [install the SDK](sdk-installation.md).
+O cliente do Microsoft Graph foi projetado para simplificar as chamadas para o Microsoft Graph. Você pode usar uma instância de cliente única para o tempo de vida do aplicativo. Para obter informações sobre como adicionar e instalar o pacote do cliente Microsoft Graph em seu projeto, consulte  [install the SDK](sdk-installation.md).
 
 Os exemplos de código a seguir mostram como criar uma instância de um cliente do Microsoft Graph com um provedor de autenticação nos idiomas com suporte. O provedor de autenticação vai lidar com a aquisição de tokens de acesso para o aplicativo. Vários provedores de autenticação diferentes estão disponíveis para cada idioma e plataforma. Os diferentes provedores de aplicativos dão suporte a diferentes cenários de cliente. Para obter detalhes sobre quais provedores e opções são apropriados para o seu cenário, consulte [escolher um provedor de autenticação](choose-authentication-providers.md).
 
-# <a name="ctabcs"></a>[C#](#tab/CS)
+# <a name="c"></a>[C#](#tab/CS)
 
 ```csharp
 // Build a client application.
@@ -29,7 +29,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 ```
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/Javascript)
+# <a name="javascript"></a>[Javascript](#tab/Javascript)
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
@@ -45,10 +45,10 @@ const userAgentApplication = new UserAgentApplication(clientId, undefined, callb
 const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
 ```
 
-# <a name="javatabjava"></a>[Java](#tab/Java)
+# <a name="java"></a>[Java](#tab/Java)
 
 ```java
-ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NATIONAL_CLOUD);
+ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NationalCloud.Global);
 
 IGraphServiceClient graphClient = GraphServiceClient
                 .builder()
@@ -56,7 +56,7 @@ IGraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="androidtabandroid"></a>[Android](#tab/Android)
+# <a name="android"></a>[Android](#tab/Android)
 
 ```java
 PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "INSERT-CLIENT-APP-ID");
@@ -73,7 +73,7 @@ IGraphServiceClient graphClient = GraphServiceClient
                 .buildClient();
 ```
 
-# <a name="objective-ctabobjective-c"></a>[Objetivo-C](#tab/Objective-C)
+# <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 
 ```objc
 // Create the authenticationProvider.
@@ -99,7 +99,7 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 [meDataTask execute];
 ```
 
-# <a name="phptabphp"></a>[PHP](#tab/PHP)
+# <a name="php"></a>[PHP](#tab/PHP)
 
 ```php
 // PHP client currently doesn't have an authentication provider. You will need to handle

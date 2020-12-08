@@ -5,16 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: adea95729dd4e6558885223245a7225811f14677
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1dd62a2727ec2cbd6a4044b84105d739bbf9c93
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002944"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597379"
 ---
-# <a name="realtedcontact-resource-type"></a>tipo de recurso realtedContact
+# <a name="relatedcontact-resource-type"></a>tipo de recurso relatedContact
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 Registro de contato relacionado a um [educationUser](../resources/educationuser.md) que fornece informações para guardiões, auxílios, médicos e assim por diante.
 

@@ -3,12 +3,12 @@ title: Escolher um provedor de autenticação do Microsoft Graph
 description: Saiba como escolher provedores de autenticação específicos do cenário para seu aplicativo.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 0570087f3b512d7416093757feab43a5f5926310
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: 29f7ea60080ed1f1a2ed6ea02256e03f5b91e6cd
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364247"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580967"
 ---
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolher um provedor de autenticação do Microsoft Graph com base no cenário
 
@@ -112,7 +112,7 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(
                                                     scopes,
                                                     clientSecret,
                                                     tenant,
-                                                    endpoint);
+                                                    NationalCloud.Global);
 ```
 
 # <a name="android"></a>[Android](#tab/Android)
