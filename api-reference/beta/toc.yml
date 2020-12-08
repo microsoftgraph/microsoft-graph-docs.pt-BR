@@ -1451,6 +1451,21 @@ items:
                     href: api/ediscoverycase-update.md
                   - name: Excluir
                     href: api/ediscoverycase-delete.md
+              - name: Custodian
+                href: resources/custodian.md
+                items:
+                  - name: Listar
+                    href: api/ediscoverycase-list-custodians.md
+                  - name: Criar
+                    href: api/ediscoverycase-post-custodians.md
+                  - name: Obter
+                    href: api/custodian-get.md
+                  - name: Atualizar
+                    href: api/custodian-update.md
+                  - name: Ativar
+                    href: api/custodian-activate.md
+                  - name: Liberar
+                    href: api/custodian-release.md
               - name: conjunto de análise de descoberta eletrônica
                 href: resources/reviewset.md
                 items:
@@ -1473,6 +1488,39 @@ items:
                     href: api/reviewsetquery-update.md
                   - name: Excluir
                     href: api/reviewsetquery-delete.md
+              - name: Origem do site
+                href: resources/sitesource.md
+                items:
+                  - name: Listar
+                    href: api/custodian-list-sitesources.md
+                  - name: Criar
+                    href: api/custodian-post-sitesources.md
+                  - name: Obter
+                    href: api/sitesource-get.md
+                  - name: Excluir
+                    href: api/sitesource-delete.md
+              - name: Fonte de grupo unificado
+                href: resources/unifiedgroupsource.md
+                items:
+                  - name: Listar
+                    href: api/custodian-list-unifiedgroupsources.md
+                  - name: Criar
+                    href: api/custodian-post-unifiedgroupsources.md
+                  - name: Obter
+                    href: api/unifiedgroupsource-get.md
+                  - name: Excluir
+                    href: api/unifiedgroupsource-delete.md
+              - name: Origem do usuário
+                href: resources/usersource.md
+                items:
+                  - name: Listar
+                    href: api/custodian-list-usersources.md
+                  - name: Criar
+                    href: api/custodian-post-usersources.md
+                  - name: Obter
+                    href: api/usersource-get.md
+                  - name: Excluir
+                    href: api/usersource-delete.md
       - name: Experiências entre dispositivos
         displayName: Project Rome
         items:
@@ -12349,7 +12397,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -12572,6 +12620,8 @@ items:
                 href: api/channel-post-message.md
               - name: Responder à mensagem
                 href: api/channel-post-messagereply.md
+              - name: Obter mensagens em todos os canais
+                href: api/channels-getallmessages.md
           - name: Chat
             href: resources/chat.md
             items:
@@ -12610,6 +12660,8 @@ items:
                 href: api/channel-post-messagereply.md
               - name: Atualizar mensagem
                 href: api/chatmessage-update.md
+              - name: Obter todas as mensagens de chat
+                href: api/chats-getallmessages.md
               - name: Listar conteúdo hospedado
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: Obter conteúdo hospedado
