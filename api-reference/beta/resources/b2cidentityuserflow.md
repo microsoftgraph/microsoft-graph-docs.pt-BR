@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: a7f246ed903fa651deaf5278a54f8f4bac520f5c
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 61c3a206ee07eb7e8474e501f9064a20c6cc3840
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921771"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581086"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>tipo de recurso b2cIdentityUserFlow
 
@@ -39,13 +39,15 @@ Para ajudar você a configurar as tarefas de identidade mais comuns para seus ap
 |[Listar os provedores de identidade](../api/b2cidentityuserflow-list-identityproviders.md)|Coleção [identityProvider](../resources/identityProvider.md)|Recupere todos os provedores de identidade em um fluxo de usuário B2C.|
 |[Adicionar provedor de identidade](../api/b2cidentityuserflow-post-identityproviders.md)|Nenhum|Adicione um provedor de identidade a um fluxo de usuário B2C.|
 |[Remover provedor de identidade](../api/b2cidentityuserflow-delete-identityproviders.md)|Nenhum|Remova um provedor de identidade de um fluxo de usuário B2C.|
+|[Listar as atribuições de atributo de usuário](../api/b2cidentityuserflow-list-userattributeassignments.md)|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |Recupere todas as atribuições de atributos do usuário em um fluxo de usuário B2C.|
+|[Criar uma tarefa de atributo de usuário](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Crie uma atribuição de atributo de usuário em um fluxo de usuário B2C.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|Cadeia de caracteres|O nome do fluxo de usuário. Esse é um valor obrigatório e imutável após sua criação. O nome será antecedido pelo valor de `B2C_1_` após a criação.|
-|userFlowType|Cadeia de caracteres|O [tipo de fluxo de usuário](/azure/active-directory-b2c/user-flow-versions). Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|Cadeia de caracteres|O [tipo de fluxo de usuário](/azure/active-directory-b2c/user-flow-versions). Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Único|A versão do fluxo de usuário.|
 
 ## <a name="relationships"></a>Relações
@@ -53,6 +55,7 @@ Para ajudar você a configurar as tarefas de identidade mais comuns para seus ap
 | Relação       | Tipo  |Descrição|
 |:---------------|:--------|:----------|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
+|userAttributeAssignments|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |As atribuições de atributo de usuário incluídas no fluxo do usuário.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -70,6 +73,7 @@ Veja a seguir uma representação JSON do recurso.
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
-    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
+    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
 }
 ```
