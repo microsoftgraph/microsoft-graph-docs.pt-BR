@@ -189,11 +189,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -451,13 +451,13 @@ items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
               - name: Adicionar aplicativo para usuário
-                href: api/userteamwork-add-installedapps.md
+                href: api/userteamwork-post-installedapps.md
               - name: Listar aplicativos para o usuário
                 href: api/userteamwork-list-installedapps.md
-              - name: Obtém o aplicativo instalado para o usuário
+              - name: Obter o aplicativo instalado para o usuário
                 href: api/userteamwork-get-installedapps.md
               - name: Atualização do aplicativo instalado para o usuário
-                href: api/userteamwork-upgrade-installedapps.md
+                href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: Remover o aplicativo para o usuário
                 href: api/userteamwork-delete-installedapps.md
               - name: Obter chat entre o usuário e o aplicativo
@@ -484,7 +484,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/groups-overview.md
           - name: Group
             href: resources/group.md
@@ -659,7 +659,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1254,7 +1254,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1383,7 +1383,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1432,11 +1432,11 @@ items:
       - name: Conformidade (visualização)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
-          - name: Descoberta Eletrônica
+          - name: Descoberta eletrônica
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscoverycase.md
@@ -1558,7 +1558,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -9578,7 +9578,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9674,7 +9674,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -10259,7 +10259,7 @@ items:
                         href: api/authenticationoperation-get.md
               - name: Política de método de autenticação
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethodspolicies-overview.md
                   - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
@@ -11248,7 +11248,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -11370,7 +11370,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -11800,7 +11800,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -11822,7 +11822,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -11845,7 +11845,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -11868,7 +11868,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -11892,7 +11892,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -12104,7 +12104,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -12114,7 +12114,7 @@ items:
                 href: api/search-query.md
           - name: Índice (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -12220,7 +12220,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -12276,7 +12276,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -12395,7 +12395,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Plano
             href: resources/plannerplan.md
@@ -12673,7 +12673,7 @@ items:
               - name: Publicar aplicativos no catálogo
                 href: api/teamsapp-publish.md
               - name: Listar aplicativos no catálogo
-                href: api/teamsapp-list.md
+                href: api/appcatalogs-list-teamsapps.md
               - name: Atualizar aplicativo no catálogo
                 href: api/teamsapp-update.md
               - name: Excluir aplicativo do catálogo
@@ -12683,27 +12683,37 @@ items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
               - name: Listar aplicativos em equipe
-                href: api/teamsappinstallation-list.md
-              - name: Obter o aplicativo instalado em uma equipe
+                href: api/team-list-installedapps.md
+              - name: Obter o aplicativo instalado no Team
                 href: api/team-get-installedapps.md
               - name: Adicionar aplicativo à equipe
-                href: api/teamsappinstallation-add.md
+                href: api/team-post-installedapps.md
               - name: Remover aplicativo da equipe
-                href: api/teamsappinstallation-delete.md
+                href: api/team-delete-installedapps.md
               - name: Atualizar o aplicativo instalado para a equipe
-                href: api/teamsappinstallation-upgrade.md
+                href: api/team-teamsappinstallation-upgrade.md
               - name: Listar aplicativos para o usuário
                 href: api/userteamwork-list-installedapps.md
-              - name: Obtém o aplicativo instalado para o usuário
+              - name: Obter o aplicativo instalado para o usuário
                 href: api/userteamwork-get-installedapps.md
               - name: Adicionar aplicativo para usuário
-                href: api/userteamwork-add-installedapps.md
+                href: api/userteamwork-post-installedapps.md
               - name: Remover o aplicativo para o usuário
                 href: api/userteamwork-delete-installedapps.md
               - name: Atualização do aplicativo instalado para o usuário
-                href: api/userteamwork-upgrade-installedapps.md
+                href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: Obter chat entre o usuário e o aplicativo
                 href: api/userscopeteamsappinstallation-get-chat.md
+              - name: Listar aplicativos no chat
+                href: api/chat-list-installedapps.md
+              - name: Obter o aplicativo instalado no chat
+                href: api/chat-get-installedapps.md
+              - name: Adicionar aplicativo ao chat
+                href: api/chat-post-installedapps.md
+              - name: Remover aplicativo de chat
+                href: api/chat-delete-installedapps.md
+              - name: Atualizar o aplicativo instalado no chat
+                href: api/chat-teamsappinstallation-upgrade.md
           - name: Feed de atividades
             items:
               - name: Enviar notificação para o usuário no chat
@@ -12715,16 +12725,26 @@ items:
           - name: Tab
             href: resources/teamstab.md
             items:
-              - name: Listar guias
-                href: api/teamstab-list.md
-              - name: Obter guia
-                href: api/teamstab-get.md
-              - name: Adicionar guia
-                href: api/teamstab-add.md
-              - name: Atualizar guia
-                href: api/teamstab-update.md
-              - name: Excluir guia
-                href: api/teamstab-delete.md
+              - name: Listar guias no canal
+                href: api/channel-list-tabs.md
+              - name: Guia obter no canal
+                href: api/channel-get-tabs.md
+              - name: Adicionar guia ao Cannel
+                href: api/channel-post-tabs.md
+              - name: Guia atualizar no canal
+                href: api/channel-patch-tabs.md
+              - name: Remover guia do canal
+                href: api/channel-delete-tabs.md
+              - name: Guias de lista no chat
+                href: api/channel-list-tabs.md
+              - name: Guia obter no chat
+                href: api/chat-get-tabs.md
+              - name: Adicionar guia ao chat
+                href: api/chat-post-tabs.md
+              - name: Guia atualizar no chat
+                href: api/chat-patch-tabs.md
+              - name: Guia remover do chat
+                href: api/chat-delete-tabs.md
           - name: Calendário
             href: resources/event.md
             items:
@@ -12918,7 +12938,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
@@ -13057,7 +13077,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

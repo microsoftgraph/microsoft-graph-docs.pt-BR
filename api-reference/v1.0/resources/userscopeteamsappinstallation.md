@@ -5,30 +5,33 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8e485b2a4c5bf056202e94adaaa754c378a06936
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 30df2c14f8723dedd25fb7c4e5b2a00481338dc3
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49564009"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606857"
 ---
 # <a name="userscopeteamsappinstallation-resource-type"></a>tipo de recurso userScopeTeamsAppInstallation
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 Representa um [teamsApp](teamsapp.md) instalado no escopo pessoal de um [usuário](user.md). Qualquer bots que faça parte do aplicativo se tornará parte do escopo pessoal de um usuário ao qual o aplicativo é adicionado.
 Este tipo herda de [teamsAppInstallation](teamsappinstallation.md).
 
-## <a name="methods"></a>Métodos
+> [!NOTE]
+> O `id` de um recurso **teamsAppInstallation** não é o mesmo valor que o `id` do recurso **teamsApp** associado.
+
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Listar aplicativos instalados para o usuário](../api/userteamwork-list-installedapps.md)| coleção [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Listar aplicativos instalados no escopo pessoal de um usuário. |
 |[Obtém o aplicativo instalado para o usuário](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lista o aplicativo especificado instalado no escopo pessoal de um usuário. |
-|[Adicionar aplicativo para usuário](../api/userteamwork-add-installedapps.md) | Nenhum | Adiciona (instala) um aplicativo no escopo pessoal de um usuário. |
-|[Remover o aplicativo para o usuário](../api/userteamwork-delete-installedapps.md) | Nenhum | Remove (desinstala) um aplicativo no escopo pessoal de um usuário. |
-|[Atualizar o aplicativo instalado para o usuário](../api/userteamwork-upgrade-installedapps.md) | Nenhum | Atualiza para a versão mais recente do aplicativo instalado no escopo pessoal de um usuário.|
-|[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md) | Lista o chat de um em um entre o usuário e o aplicativo. |
+|[Adicionar aplicativo para usuário](../api/userteamwork-post-installedapps.md) | Nenhum | Adicionar (instalar) um aplicativo no escopo pessoal de um usuário. |
+|[Remover o aplicativo para o usuário](../api/userteamwork-delete-installedapps.md) | Nenhum | Remova (desinstale) um aplicativo no escopo pessoal de um usuário. |
+|[Atualizar o aplicativo instalado para o usuário](../api/userteamwork-teamsappinstallation-upgrade.md) | Nenhum | Atualize para a versão mais recente do aplicativo instalado no escopo pessoal de um usuário.|
+|[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md) | Listar chats de um-on-one entre um usuário e o aplicativo. |
 
 ## <a name="properties"></a>Propriedades
 

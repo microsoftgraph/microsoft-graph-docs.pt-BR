@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 4a890cea9763bd8615495d4d9597601a508fafc6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5a944c9aa1f679b053fa7ceda645885b584a1dce
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046598"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606787"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 Representa um aplicativo no catálogo de aplicativos do [Microsoft Teams](teams-api-overview.md).
 
-Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplicativos podem ser instalados nas [equipes](team.md) usando o método [Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md).
+Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplicativos podem ser instalados nas [equipes](team.md) usando o método [Adicionar aplicativo à equipe](../api/team-post-installedapps.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Lista de aplicativos publicados](../api/teamsapp-list.md) | Coleção [teamsApp](teamsapp.md) | Lista de aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
+|[Lista de aplicativos publicados](../api/appcatalogs-list-teamsapps.md) | Coleção [teamsApp](teamsapp.md) | Lista de aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
 |[Publicar um aplicativo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publica um aplicativo ao catálogo de aplicativos da sua organização.|
 |[Atualizar um aplicativo publicado](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo publicado no catálogo de aplicativos da sua organização.|
 |[Apagar um aplicativo publicado](../api/teamsapp-delete.md) | Nenhum(a) | Remova um aplicativo publicado do catálogo de aplicativos da sua organização.|

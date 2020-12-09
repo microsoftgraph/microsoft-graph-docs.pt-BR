@@ -5,25 +5,35 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cff82e2368b829b6ba6f8f0bfdd24b15563d375e
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 3a216a04d55dda0c87af497fadb3403f7a4b1055
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49564016"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606992"
 ---
 # <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>Obter chat de um em um entre o usuário especificado e o aplicativo de equipes
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 Recupere o [chat](../resources/chat.md) do [usuário](../resources/user.md) especificado e o [aplicativo Teams](../resources/teamsapp.md).
+
+## <a name="permissions"></a>Permissions
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | TeamsAppInstallation. ReadForUser. All, TeamsAppInstallation. ReadWriteSelfForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/teamwork/installedApps/{id}/chat
+GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -56,8 +66,8 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "user_chat_teamsApps"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id}/teamwork/installedApps/{id}/chat
+```http
+GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/teamwork/installedApps/ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI=/chat
 ```
 
 #### <a name="response"></a>Resposta
@@ -77,7 +87,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
+   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats/$entity",
    "id": "19:0de69e5e-2da8-4cf2-821f-5e6585b2c65b_f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c@unq.gbl.spaces"
  }
 ```

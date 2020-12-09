@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e32a04a6d10c87dc749b756990b8db1fd1cc3955
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: ca14af75340441acf8ba7f3049ce3ac744c678e7
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368219"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524411"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -36,20 +36,20 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método suporta o [OData query parameters](/graph/query-parameters)para ajudar a personalizar a resposta, incluindo`$search`, `$count`, `$filter`e `$select`. É possível usar a propriedade `$search` no **displayName**. Quando os itens forem adicionados e atualizados por esse recurso, eles serão especialmente indexados para o uso com os parâmetros de consulta`$count` e `$search`. Pode haver um pequeno atraso entre o momento em que um item é adicionado ou atualizado e quando ele está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure AD B2C.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice. Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
 
 Por padrão, apenas um conjunto limitado de propriedades é retornado (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname** e **userPrincipalName**). 
 
-Para retornar um conjunto de propriedades alternativo, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar o **displayName**, **givenName**, e **postalCode**, adicione o seguinte à sua consulta. `$select=displayName,givenName,postalCode`.
+Para retornar um conjunto de propriedades alternativas, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar **displayName**, **givenName** e **postalCode**, adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.
 
-Certas propriedades não podem ser retornadas em uma coleção de usuário. As seguintes propriedades são suportadas apenas [ao recuperar um único usuário:](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
+Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário. As seguintes propriedades só possuem suporte ao [recuperar um único usuário](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho        | Valor                      |
 |:--------------|:---------------------------|
 | Autorização | {token} do portador (obrigatório)  |
-| ConsistencyLevel | eventual. Esse cabeçalho e `$count` são necessários ao usar `$search` ou ao usar `$filter` com o parâmetro de consulta `$orderby`. Ele usa um índice que pode não estar atualizado com as alterações recentes feitas no objeto. |
+| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retorna um código de resposta`200 OK` e a coleção de objetos de[usuário](../resources/user.md) no corpo da resposta. Se uma grande coleção de usuários for retornada, você pode usar uma [paginação em seu aplicativo](/graph/paging).
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta. Se uma coleção grande de usuários for retornada, você poderá usar a [paginação no seu aplicativo](/graph/paging).
 
 ## <a name="examples"></a>Exemplos
 
@@ -131,7 +131,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação.
 
->**Note:** When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**. The value of **issuerAssignedId** must be the email address of the user account, not the user principal name (UPN). If a UPN is used, the response will be an empty list.
+>Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**. O valor de **issuerAssignedId** deve ser o endereço de email da conta do usuário, não o nome de usuário principal (UPN). Se um UPN for usado, a resposta será uma lista em branco.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -139,7 +139,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "get_signinname_users"
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -198,7 +198,7 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "get_signin_last_time"
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
 ```
 # <a name="c"></a>[C#](#tab/csharp)

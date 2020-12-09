@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f9efbebb2f0756534fdac6085f1c77428e66e0b9
-ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
+ms.openlocfilehash: 2596edb4e88638e18b67a0a95137743ea38b290c
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945112"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563937"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>Automação da configuração do aplicativo de SSO baseado em SAML com o Microsoft Graph API
 
@@ -213,12 +213,12 @@ Content-type: application/json
 
 Use a resposta da chamada anterior para recuperar e salvar a ID de objeto do aplicativo e a ID do objeto da entidade de serviço.
 
-```
-"application": {
-        "objectId": "cbc071a6-0fa5-4859-8g55-e983ef63df63"
-}
-"servicePrincipal": {
-        "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+```json
+"application":{
+  "objectId":"cbc071a6-0fa5-4859-8g55-e983ef63df63"
+},
+"servicePrincipal":{
+  "objectId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
 ### <a name="set-single-sign-on-mode"></a>Definir o modo de logon único

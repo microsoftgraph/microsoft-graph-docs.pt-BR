@@ -5,16 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b9186b7d3066d00d5e84a18b92dde1a8e5f2457f
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 53f18e0bfcdde3280629bf5ca6b6217119739d3c
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848770"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606794"
 ---
 # <a name="delete-teamsapp"></a>Excluir teamsApp
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 <!-- markdownlint-disable MD001 -->
 ### <a name="delete-an-app-from-your-organizations-app-catalog"></a>Excluir um aplicativo do catálogo de aplicativos da sua organização
@@ -23,7 +23,7 @@ Excluir um [aplicativo](../resources/teamsapp.md) do catálogo de aplicativos de
 
 Você também pode usar essa API para remover um aplicativo enviado do processo de revisão.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -60,7 +60,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 Não forneça um corpo de solicitação para esse método.
 
->**Observação:** Use a ID retornada da chamada [lista de aplicativos publicados](./teamsapp-list.md) para fazer referência ao aplicativo que você deseja atualizar. Não use a ID do manifesto do pacote de aplicativos zip.
+>**Observação:** Use a ID retornada da chamada [lista de aplicativos publicados](./appcatalogs-list-teamsapps.md) para fazer referência ao aplicativo que você deseja atualizar. Não use a ID do manifesto do pacote de aplicativos zip.
 
 ## <a name="response"></a>Resposta
 

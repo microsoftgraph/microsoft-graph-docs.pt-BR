@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 286951698255b1a7a7ab3164a82b6fff92cc54ac
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c4b2b2ac4a2f9a11dcd68eee903223f8466ba25d
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405327"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606878"
 ---
 # <a name="presence-resource-type"></a>tipo de recurso Presence
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 Contém informações sobre a presença de um usuário, incluindo a disponibilidade e a atividade do usuário.
 
@@ -22,7 +22,7 @@ Contém informações sobre a presença de um usuário, incluindo a disponibilid
 
 Esse recurso oferece suporte à assinatura de [alteração de notificações](/graph/webhooks).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método                                                            | Tipo de retorno                                       | Descrição                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
@@ -34,7 +34,7 @@ Esse recurso oferece suporte à assinatura de [alteração de notificações](/g
 
 | Relação        | Tipo                                                 | Descrição                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-|id    |  string     |  A ID de objeto de usuário   |
+|id    |  cadeia de caracteres     |  A ID de objeto de usuário   |
 |availability    |  coleção de cadeias de caracteres   |   As informações de presença básicas de um usuário. Os valores possíveis são,,,,, `Available` `AvailableIdle` ,,  `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline` , `PresenceUnknown`  |
 |atividade    |  coleção de cadeias de caracteres      |    As informações complementares para a disponibilidade de um usuário. Os valores possíveis são,,,,, `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` , `Inactive` , `InAMeeting` , `Offline` , `OffWork` , `OutOfOffice` , `PresenceUnknown` , `Presenting` , `UrgentInterruptionsOnly` .       |
 

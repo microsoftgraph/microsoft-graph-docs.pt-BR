@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: 294672a8b20d5e64d5c02452c5a72fb1885953c4
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 12bbbc30d3735a7af487d6266b48e736769e994b
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000669"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387798"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
@@ -35,14 +35,14 @@ Geralmente, esse tipo de notificação de alteração inclui os seguintes dados 
 Atualmente, o Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) assim como os recursos de [presença](/graph/api/resources/presence?view=graph-rest-beta) (visualização) do Microsoft Teams oferecem suporte a notificações de alterações que incluem dados de recursos. Especificamente, você pode configurar uma assinatura que se aplique a uma das seguintes opções:
 
 - Mensagens novas ou alteradas em um canal específico do Teams: `/teams/{id}/channels/{id}/messages`
-- Mensagens novas ou alteradas em todos os canais do Teams:`/teams/getAllMessages`
-- Mensagens novas ou alteradas em um chat específico do Teams: `/chats/{id}/messages`
-- Mensagens novas ou alteradas em todos os chat do Teams: `/chats/getAllMessages`
+- Mensagens novas ou alteradas em todos os canais do Teams em toda a organização (locatário): `/teams/getAllMessages`
+- Mensagens novas ou alteradas em um bate-papo específico do Teams: `/chats/{id}/messages`
+- Mensagens novas ou alteradas em todos os bate-papos em toda a organização (locatário): `/chats/getAllMessages`
 - Atualização das informações de presença do usuário: `/communications/presences/{id}`
 
 Os recursos **chatMessage** e **presence** (visualização) suportam, incluindo todas as propriedades de uma instância modificada em uma notificação de alteração. Eles não suportam o retorno de apenas propriedades seletivas da instância. 
 
-Este artigo percorre por um exemplo que mostra como assinar para receber notificações de alteração de mensagens em um canal do Teams, com cada notificação de alteração incluindo os dados de recurso completos da instância **chatMessage** alterada. Para obter mais detalhes sobre assinaturas baseadas em **chatMessage** , confira [Obter notificações de alteração para mensagens de chat e canal](teams-changenotifications-chatmessage).
+Este artigo mostra um exemplo de assinatura para alterar as notificações de mensagens em um canal do Teams, com cada notificação de alteração incluindo todos os dados do recurso da instância **chatMessage** alterada. Para obter mais detalhes sobre assinaturas baseadas em **chatMessage**, confira [Obter notificações de alteração para mensagens de chat e canal](teams-changenotifications-chatmessage).
 
 ## <a name="creating-a-subscription"></a>Criar uma assinatura
 
@@ -95,7 +95,7 @@ Content-Type: application/json
 
 Certos eventos podem interferir no fluxo de notificação de alterações em uma assinatura existente. As notificações sobre o ciclo de vida da assinatura informam as ações a serem tomadas para manter um fluxo ininterrupto. Ao contrário de uma notificação de alteração de recurso que informa uma alteração em uma instância de recurso, uma notificação do ciclo de vida é sobre a própria assinatura e seu estado atual no ciclo de vida. 
 
-Para obter mais informações sobre como receber e responder a, notificações de ciclo de vida (visualização), confira [Reduzir assinaturas ausentes e alterar as notificações (visualização)](webhooks-outlook-authz.md)
+Para obter mais informações sobre como receber e responder a, notificações de ciclo de vida (visualização), confira [Reduzir assinaturas ausentes e alterar as notificações (visualização)](webhooks-lifecycle.md)
 
 ## <a name="validating-the-authenticity-of-notifications"></a>Validando a autenticidade das notificações
 
@@ -113,7 +113,7 @@ Nesta seção:
 
 ### <a name="validation-tokens-in-the-change-notification"></a>Tokens de validação na notificação de alteração
 
-Uma notificação de alteração com os dados do recurso contém uma propriedade adicional, **validationTokens** , com uma matriz de tokens JWT gerados pelo Microsoft Graph. O Microsoft Graph gera um token único para cada aplicativo distinto e um par de locatários onde existe um item no conunto **valor**. Tenha em mente que as notificações de alterações podem conter uma mistura de itens para vários aplicativos e locatários que fizeram assinatura usando o mesmo **notificationUrl**.
+Uma notificação de alteração com os dados do recurso contém uma propriedade adicional, **validationTokens**, com uma matriz de tokens JWT gerados pelo Microsoft Graph. O Microsoft Graph gera um token único para cada aplicativo distinto e um par de locatários onde existe um item no conunto **valor**. Tenha em mente que as notificações de alterações podem conter uma mistura de itens para vários aplicativos e locatários que fizeram assinatura usando o mesmo **notificationUrl**.
 
 No exemplo a seguir, a notificação de alteração contém dois itens para o mesmo aplicativo e para dois locatários diferentes, portanto, o conjunto **validationTokens** contém dois tokens que precisam ser validados.
 
@@ -172,7 +172,7 @@ Use as etapas a seguir para validar tokens e aplicativos que geram tokens:
     - Se você tiver mais de um aplicativo recebendo notificações de alterações, verifique a existencia de vários IDs.
 
 
-4. **Crítico** : valide se o aplicativo que gerou o token representa o distribuidor de notificação de alteração do Microsoft Graph. 
+4. **Crítico**: valide se o aplicativo que gerou o token representa o distribuidor de notificação de alteração do Microsoft Graph. 
 
     - Verifique se a propriedade **appid** no token corresponde ao valor esperado de `0bf30f3b-4a52-48df-9a82-234910c4a086`.
     - Isso garante que as notificações de alteração não sejam enviadas por um aplicativo diferente do Microsoft Graph.

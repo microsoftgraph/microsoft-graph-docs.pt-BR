@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: bf9c152de12acc31ecf13100c6dcba753d1d476b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 88b2c5d87fd5b084495e970320770c49a6f91f07
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036937"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607039"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 Representa um aplicativo no catálogo de aplicativos do [Microsoft Teams](teams-api-overview.md).
 
-Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplicativos podem ser instalados nas [equipes](team.md) usando o método [Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md).
+Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplicativos podem ser instalados nas [equipes](team.md) usando o método [Adicionar aplicativo à equipe](../api/team-post-installedapps.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Lista de aplicativos publicados](../api/teamsapp-list.md) | Coleção [teamsApp](teamsapp.md) | Lista de aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
+|[Lista de aplicativos publicados](../api/appcatalogs-list-teamsapps.md) | Coleção [teamsApp](teamsapp.md) | Lista de aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
 |[Publicar um aplicativo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publica um aplicativo ao catálogo de aplicativos da sua organização.|
 |[Atualizar um aplicativo publicado](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo publicado no catálogo de aplicativos da sua organização.|
 |[Apagar um aplicativo publicado](../api/teamsapp-delete.md) | Nenhum(a) | Remova um aplicativo publicado do catálogo de aplicativos da sua organização.|

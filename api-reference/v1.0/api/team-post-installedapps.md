@@ -1,22 +1,22 @@
 ---
-title: Desinstalar o aplicativo para o usuário
-description: Desinstale um aplicativo do escopo pessoal do usuário especificado.
+title: Adicionar aplicativo à equipe
+description: Instala um aplicativo para a equipe especificada.
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c27b1fde186141d7eadc606a3fbd19dd16fae92c
+doc_type: apiPageType
+ms.openlocfilehash: 056543a8b1753fb9a0b4bb6e8cdfe28428ae2e01
 ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607193"
+ms.locfileid: "49607287"
 ---
-# <a name="uninstall-app-for-user"></a>Desinstalar o aplicativo para o usuário
+# <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
 Namespace: Microsoft Graph
 
-Desinstala um [aplicativo](../resources/teamsappinstallation.md) do escopo pessoal do [usuário](../resources/user.md)especificado.
+Instalar um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)especificada.
 
 ## <a name="permissions"></a>Permissions
 
@@ -24,14 +24,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegada (conta corporativa ou de estudante) | TeamsAppInstallation. ReadWriteForTeam, Group. ReadWrite. All, Directory. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation. ReadWriteSelfForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
+|Aplicativo | TeamsAppInstallation. ReadWriteForTeam. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+POST /teams/{team-id}/installedApps
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -42,11 +42,13 @@ DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não forneça um corpo de solicitação para esse método.
+| Propriedade   | Tipo |Descrição|
+|:---------------|:--------|:----------|
+|teamsApp|String|A ID do aplicativo a ser adicionado.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -56,11 +58,15 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "user_delete_teamsApp"
+  "name": "add_app_in_team"
 }-->
-
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk
+POST /teams/87654321-0abc-zqf0-321456789q/installedApps
+Content-type: application/json
+
+{
+   "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+}
 ```
 
 ### <a name="response"></a>Resposta
@@ -71,17 +77,21 @@ Este é um exemplo de resposta.
   "blockType": "response",
   "truncated": true
 } -->
-
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "User delete teamsAppInstallations,
+  "description": "Add teamsApp",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+

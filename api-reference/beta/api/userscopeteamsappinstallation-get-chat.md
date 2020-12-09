@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f4d7d9e6534b13746824a2d7a0e4b19d826acb41
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: cc0be0eb80b35c17b2f0ea6ba38b4dbf1673ac37
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597281"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607207"
 ---
 # <a name="get-chat-between-user-and-teamsapp"></a>Obter chat entre o usuário e o teamsApp
 
@@ -20,12 +20,22 @@ Namespace: Microsoft Graph
 
 Recupere o [chat](../resources/chat.md) do [usuário](../resources/user.md) especificado e o [aplicativo Teams](../resources/teamsapp.md).
 
+## <a name="permissions"></a>Permissions
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | TeamsAppInstallation. ReadForUser. All, TeamsAppInstallation. ReadWriteSelfForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
+
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/teamwork/installedApps/{id}/chat
+GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -58,8 +68,8 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "user_chat_teamsApps"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}/chat
+```http
+GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/teamwork/installedApps/ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI=/chat
 ```
 
 #### <a name="response"></a>Resposta

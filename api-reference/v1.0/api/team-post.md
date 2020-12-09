@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0101b8cb59b0be777b7de04b2756fdf30baa7c48
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: dc7402e708879a816c2a40e7da2a192f630b9ddf
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848805"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524670"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegada (conta Microsoft pessoal) | Sem suporte.                              |
+| Delegado (conta corporativa ou de estudante)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 
@@ -135,7 +135,7 @@ Content-Type: application/json
          "roles":[
             "owner"
          ],
-         "userId":"0040b377-61d8-43db-94f5-81374122dc7e"
+         "user@odata.bind":"https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')"
       }
    ]
 }
@@ -288,10 +288,10 @@ Content-Length: 0
 
 O exemplo a seguir mostra como você pode criar uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md), dado um **groupId**.
 
-Alguns pontos a observar nesta chamada:
+Observações sobre essa chamada:
 
 * Para criar uma equipe, o grupo a partir do qual você a está criando deve ter pelo menos um proprietário.
-* A equipe criada será sempre herdeira do nome de exibição, visibilidade, especialização e proprietários do grupo. Portanto, ao tomar essa decisão com a propriedade **group@odata.bind** , a inclusão da equipe **displayName** , **visibilidade** , **especialização** ou propriedades **owners@odata.bind** retornarão um erro.
+* A equipe criada será sempre herdeira do nome de exibição, visibilidade, especialização e proprietários do grupo. Portanto, ao tomar essa decisão com a propriedade **group@odata.bind**, a inclusão da equipe **displayName**, **visibilidade**, **especialização** ou propriedades **owners@odata.bind** retornarão um erro.
 * Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação. Recomendamos que você repita a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.
 
 #### <a name="request"></a>Solicitação
@@ -390,6 +390,10 @@ Content-Type: application/json
    ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -526,6 +530,10 @@ Content-Type: application/json
    ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

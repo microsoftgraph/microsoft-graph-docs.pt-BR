@@ -5,41 +5,47 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c60e47a65c9d5b17433891161fe5c16ca182a5ca
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: fa675992401c8953b5611739ba69cb0d5688f833
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634659"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606948"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
-Namespace: microsoft.graph
+Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um teamsTab é uma [guia](../resources/teamstab.md) fixa (anexada) a um [canal](channel.md) dentro de uma [equipe](team.md). 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar guias](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
-|[Obter guia](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Ler uma guia fixada a um canal.|
-|[Adicionar guia](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia em um canal.|
-|[Excluir guia](../api/teamstab-delete.md) | Nenhum | Remover (desafixar) uma guia de um canal.|
-|[Guia de atualização](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualizar as propriedades da guia.|
+|[Listar guias no canal](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
+|[Guia obter no canal](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Obtenha uma guia específica fixada a um canal.|
+|[Adicionar uma guia ao canal](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia a um canal.|
+|[Guia atualizar no canal](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Atualiza as propriedades de uma guia em um canal.|
+|[Remover guia do canal](../api/channel-delete-tabs.md) | Nenhum | Remover (Desafixar) uma Tabulação de um canal.|
+|[Guias de lista no chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um chat.|
+|[Guia obter no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obtenha uma guia específica fixada para um chat.|
+|[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia a um chat.|
+|[Guia atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualiza as propriedades de uma guia em um chat.|
+|[Guia remover do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (Desafixar) uma guia de um chat.|
+
 
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|  id              |   string                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
-|  displayName            |   string                  |  Nome da guia.     |
-|  nome (preterido)      |   string                  |  Nome da guia.     |
-|  teamsAppId (preterido)|   string             |  Identificador de definição de aplicativo da guia. Este valor não pode ser alterado após a criação de tabulação. Como essa propriedade foi preterida, recomendamos expandir **teamsApp** para recuperar o aplicativo vinculado à guia. |
-|  sortOrderIndex  |   string                  |  Índice da ordem usada para classificar as guias.     |
+|  id              |   cadeia de caracteres                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
+|  displayName            |   cadeia de caracteres                  |  Nome da guia.     |
+|  nome (preterido)      |   cadeia de caracteres                  |  Nome da guia.     |
+|  teamsAppId (preterido)|   cadeia de caracteres             |  Identificador de definição de aplicativo da guia. Este valor não pode ser alterado após a criação de tabulação. Como essa propriedade foi preterida, recomendamos expandir **teamsApp** para recuperar o aplicativo vinculado à guia. |
+|  sortOrderIndex  |   cadeia de caracteres                  |  Índice da ordem usada para classificar as guias.     |
 |  webUrl          |   cadeia de caracteres                  |  URL de link profundo da instância de guia. Somente leitura.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner para configurações personalizadas aplicadas a uma guia. A guia é considerada configurada somente quando essa propriedade é definida.     |
 

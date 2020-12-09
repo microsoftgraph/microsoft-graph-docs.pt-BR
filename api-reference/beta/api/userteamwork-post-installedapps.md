@@ -1,24 +1,24 @@
 ---
-title: Desinstalar o aplicativo para o usuário
-description: Desinstale um aplicativo do escopo pessoal do usuário especificado.
+title: Instalar o aplicativo para o usuário
+description: Instale um aplicativo no escopo pessoal do usuário especificado.
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1b0a865aa85e0c3a45b9aa97d4ae5af6896cae50
+ms.openlocfilehash: 37591c37f09b07baa88a47f707e0a910a0a7de40
 ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607214"
+ms.locfileid: "49607513"
 ---
-# <a name="uninstall-app-for-user"></a>Desinstalar o aplicativo para o usuário
+# <a name="install-app-for-user"></a>Instalar o aplicativo para o usuário
 
 Namespace: Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Desinstala um [aplicativo](../resources/teamsappinstallation.md) do escopo pessoal do [usuário](../resources/user.md)especificado.
+Instalar um [aplicativo](../resources/teamsapp.md) no escopo pessoal do [usuário](../resources/user.md)especificado.
 
 ## <a name="permissions"></a>Permissions
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+POST /users/{user-id}/teamwork/installedApps
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -44,11 +44,15 @@ DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não forneça um corpo de solicitação para esse método.
+O corpo da solicitação deve conter a ID do aplicativo de catálogo existente a ser adicionado.
+
+| Propriedade   | Tipo |Descrição|
+|:---------------|:--------|:----------|
+|teamsApp|String|A ID do aplicativo a ser adicionado.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -59,25 +63,30 @@ Este é um exemplo de solicitação.
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_delete_teamsApp"
+  "name": "user_add_teamsApp"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk
+POST https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
+Content-type: application/json
+
+{
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/user-delete-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-add-teamsapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-delete-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-add-teamsapp-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-delete-teamsapp-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/user-add-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-delete-teamsapp-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/user-add-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -91,15 +100,16 @@ Este é um exemplo de resposta.
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "User delete teamsAppInstallations,
+  "description": "User add teamsAppInstallations",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

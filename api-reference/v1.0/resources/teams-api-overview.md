@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 25ee86b38e1dcb858a3a752a6d1b706863f0158d
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 25d8ec73f5c1c024106f634ec99d829de122ac48
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932483"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607046"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -25,9 +25,9 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que
 |[team](../resources/team.md)| [Listar suas equipes](../api/user-list-joinedteams.md), [listar todas as equipes](/graph/teams-list-all-teams), [criar](../api/team-put-teams.md), [ler](../api/team-get.md), [atualizar](../api/team-update.md), [excluir](../api/group-delete.md), [clonar](../api/team-clone.md), [arquivar](../api/team-archive.md), [cancelar o arquivamento](../api/team-unarchive.md) |
 |[group](../resources/group.md)| [Adicionar membro](../api/group-post-members.md),  [remover membro](../api/group-delete-members.md), [adicionar proprietário](../api/group-post-owners.md),  [remover proprietário](../api/group-delete-owners.md), [obter arquivos](drive.md), [obter bloco de anotações](../resources/notebook.md), [obter planos](plannergroup.md), [obter calendário](event.md) |
 |[channel](../resources/channel.md)|[Listar](../api/channel-list.md), [criar](../api/channel-post.md), [ler](../api/channel-get.md), [atualizar](../api/channel-patch.md), [excluir](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[Listar](../api/teamstab-list.md), [criar](../api/teamstab-add.md), [ler](../api/teamstab-get.md), [atualizar](../api/teamstab-update.md), [excluir](../api/teamstab-delete.md) |
-|[teamsApp](../resources/teamsapp.md)|[Listar](../api/teamsapp-list.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/teamsappinstallation-list.md), [instalar](../api/teamsappinstallation-add.md), [atualizar](../api/teamsappinstallation-delete.md), [remover](../api/teamsappinstallation-delete.md) |
+|[teamsTab](../resources/teamstab.md) |[Listar](../api/channel-list-tabs.md), [criar](../api/channel-post-tabs.md), [ler](../api/channel-get-tabs.md), [atualizar](../api/channel-patch-tabs.md), [excluir](../api/channel-delete-tabs.md) |
+|[teamsApp](../resources/teamsapp.md)|[Listar](../api/appcatalogs-list-teamsapps.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
+|[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/team-list-installedapps.md), [instalar](../api/team-post-installedapps.md), [atualizar](../api/team-delete-installedapps.md), [remover](../api/team-delete-installedapps.md) |
 |[chatMessage](../resources/chatmessage.md)| [send](../api/channel-post-message.md) |
 |[call](../resources/call.md)| [Responder](../api/call-answer.md), [rejeitar](../api/call-reject.md), [redirecionar](../api/call-redirect.md), [ativar mudo](../api/call-mute.md), [desfazer ativar mudo](../api/call-unmute.md), [alterar a função de compartilhamento de tela](../api/call-changescreensharingrole.md), [listar participantes](../api/call-list-participants.md), [convidar participantes](../api/participant-invite.md) |
 |[cronograma](../resources/schedule.md)| [Criar ou substituir](../api/team-put-schedule.md), [obter](../api/schedule-get.md), [compartilhar](../api/schedule-share.md) |
