@@ -5,58 +5,58 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f9efbebb2f0756534fdac6085f1c77428e66e0b9
-ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
+ms.openlocfilehash: 2596edb4e88638e18b67a0a95137743ea38b290c
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945112"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563937"
 ---
-# <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a><span data-ttu-id="67a17-103">Automação da configuração do aplicativo de SSO baseado em SAML com o Microsoft Graph API</span><span class="sxs-lookup"><span data-stu-id="67a17-103">Automate SAML-based SSO app configuration with Microsoft Graph API</span></span>
+# <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a><span data-ttu-id="9d80d-103">Automação da configuração do aplicativo de SSO baseado em SAML com o Microsoft Graph API</span><span class="sxs-lookup"><span data-stu-id="9d80d-103">Automate SAML-based SSO app configuration with Microsoft Graph API</span></span>
 
-<span data-ttu-id="67a17-104">Neste artigo, você aprenderá a criar e configurar um aplicativo da galeria do Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="67a17-104">In this article, you'll learn how to create and configure an application from the Azure Active Directory (Azure AD) Gallery.</span></span> <span data-ttu-id="67a17-105">Esse artigo usa o AWS como um exemplo, mas você pode usar as etapas neste artigo para qualquer aplicativo baseado em SAML na galeria do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="67a17-105">This article uses AWS as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.</span></span>
+<span data-ttu-id="9d80d-104">Neste artigo, você aprenderá a criar e configurar um aplicativo da galeria do Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="9d80d-104">In this article, you'll learn how to create and configure an application from the Azure Active Directory (Azure AD) Gallery.</span></span> <span data-ttu-id="9d80d-105">Esse artigo usa o AWS como um exemplo, mas você pode usar as etapas neste artigo para qualquer aplicativo baseado em SAML na galeria do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="9d80d-105">This article uses AWS as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.</span></span>
 
-<span data-ttu-id="67a17-106">**Etapas para usar as APIs do Microsoft Graph para automatizar a configuração de logon único baseado em SAML**</span><span class="sxs-lookup"><span data-stu-id="67a17-106">**Steps to use Microsoft Graph APIs to automate configuration of SAML-based single sign-on**</span></span>
+<span data-ttu-id="9d80d-106">**Etapas para usar as APIs do Microsoft Graph para automatizar a configuração de logon único baseado em SAML**</span><span class="sxs-lookup"><span data-stu-id="9d80d-106">**Steps to use Microsoft Graph APIs to automate configuration of SAML-based single sign-on**</span></span>
 
-| <span data-ttu-id="67a17-107">Etapa</span><span class="sxs-lookup"><span data-stu-id="67a17-107">Step</span></span>  | <span data-ttu-id="67a17-108">Detalhes</span><span class="sxs-lookup"><span data-stu-id="67a17-108">Details</span></span>  |
+| <span data-ttu-id="9d80d-107">Etapa</span><span class="sxs-lookup"><span data-stu-id="9d80d-107">Step</span></span>  | <span data-ttu-id="9d80d-108">Detalhes</span><span class="sxs-lookup"><span data-stu-id="9d80d-108">Details</span></span>  |
 |---------|---------|
-| [<span data-ttu-id="67a17-109">1. Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="67a17-109">1. Create the gallery application</span></span>](#step-1-create-the-gallery-application) | <span data-ttu-id="67a17-110">Entrar no cliente da API</span><span class="sxs-lookup"><span data-stu-id="67a17-110">Sign in to the API client</span></span> <br> <span data-ttu-id="67a17-111">Recuperar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="67a17-111">Retrieve the gallery application</span></span> <br> <span data-ttu-id="67a17-112">Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="67a17-112">Create the gallery application</span></span>|
-| [<span data-ttu-id="67a17-113">2. Configurar o logon único</span><span class="sxs-lookup"><span data-stu-id="67a17-113">2. Configure single sign-on</span></span>](#step-2-configure-single-sign-on) | <span data-ttu-id="67a17-114">Recuperar ID de objeto do aplicativo e ID do objeto da entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="67a17-114">Retrieve app object ID and service principal object ID</span></span> <br> <span data-ttu-id="67a17-115">Definir o modo de logon único</span><span class="sxs-lookup"><span data-stu-id="67a17-115">Set single sign-on mode</span></span> <br> <span data-ttu-id="67a17-116">Definir URLs SAML básicas, como identificador, URL de resposta, URL de logon</span><span class="sxs-lookup"><span data-stu-id="67a17-116">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span> <br> <span data-ttu-id="67a17-117">Adicionar funções de aplicativo (opcional)</span><span class="sxs-lookup"><span data-stu-id="67a17-117">Add app roles (Optional)</span></span>|
-| [<span data-ttu-id="67a17-118">3. Configurar mapeamento de declarações</span><span class="sxs-lookup"><span data-stu-id="67a17-118">3. Configure claims mapping</span></span>](#step-3-configure-claims-mapping) | <span data-ttu-id="67a17-119">Criar política de mapeamento de declarações</span><span class="sxs-lookup"><span data-stu-id="67a17-119">Create claims mapping policy</span></span> <br> <span data-ttu-id="67a17-120">Atribuir política de mapeamento de declarações à entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="67a17-120">Assign claims mapping policy to service principal</span></span>|
-| [<span data-ttu-id="67a17-121">4. Configurar o certificado de autenticação</span><span class="sxs-lookup"><span data-stu-id="67a17-121">4. Configure signing certificate</span></span>](#step-4-configure-signing-certificate) | <span data-ttu-id="67a17-122">Criar um certificado</span><span class="sxs-lookup"><span data-stu-id="67a17-122">Create a certificate</span></span> <BR> <span data-ttu-id="67a17-123">Adicionar uma chave de assinatura personalizada</span><span class="sxs-lookup"><span data-stu-id="67a17-123">Add a custom signing key</span></span> <br> <span data-ttu-id="67a17-124">Adicionar a chave de assinatura personalizada</span><span class="sxs-lookup"><span data-stu-id="67a17-124">Activate the custom signing key</span></span>|
-| [<span data-ttu-id="67a17-125">5. Atribuir usuários</span><span class="sxs-lookup"><span data-stu-id="67a17-125">5. Assign users</span></span>](#step-5-assign-users) | <span data-ttu-id="67a17-126">Atribuir usuários e grupos ao aplicativo</span><span class="sxs-lookup"><span data-stu-id="67a17-126">Assign users and groups to the application</span></span>
-| [<span data-ttu-id="67a17-127">6. Configurar o lado do aplicativo</span><span class="sxs-lookup"><span data-stu-id="67a17-127">6. Configure the application side</span></span>](#step-6-configure-the-application-side)| <span data-ttu-id="67a17-128">Obter os metadados do SAML do Azure AD</span><span class="sxs-lookup"><span data-stu-id="67a17-128">Get Azure AD SAML metadata</span></span>
+| [<span data-ttu-id="9d80d-109">1. Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="9d80d-109">1. Create the gallery application</span></span>](#step-1-create-the-gallery-application) | <span data-ttu-id="9d80d-110">Entrar no cliente da API</span><span class="sxs-lookup"><span data-stu-id="9d80d-110">Sign in to the API client</span></span> <br> <span data-ttu-id="9d80d-111">Recuperar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="9d80d-111">Retrieve the gallery application</span></span> <br> <span data-ttu-id="9d80d-112">Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="9d80d-112">Create the gallery application</span></span>|
+| [<span data-ttu-id="9d80d-113">2. Configurar o logon único</span><span class="sxs-lookup"><span data-stu-id="9d80d-113">2. Configure single sign-on</span></span>](#step-2-configure-single-sign-on) | <span data-ttu-id="9d80d-114">Recuperar ID de objeto do aplicativo e ID do objeto da entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="9d80d-114">Retrieve app object ID and service principal object ID</span></span> <br> <span data-ttu-id="9d80d-115">Definir o modo de logon único</span><span class="sxs-lookup"><span data-stu-id="9d80d-115">Set single sign-on mode</span></span> <br> <span data-ttu-id="9d80d-116">Definir URLs SAML básicas, como identificador, URL de resposta, URL de logon</span><span class="sxs-lookup"><span data-stu-id="9d80d-116">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span> <br> <span data-ttu-id="9d80d-117">Adicionar funções de aplicativo (opcional)</span><span class="sxs-lookup"><span data-stu-id="9d80d-117">Add app roles (Optional)</span></span>|
+| [<span data-ttu-id="9d80d-118">3. Configurar mapeamento de declarações</span><span class="sxs-lookup"><span data-stu-id="9d80d-118">3. Configure claims mapping</span></span>](#step-3-configure-claims-mapping) | <span data-ttu-id="9d80d-119">Criar política de mapeamento de declarações</span><span class="sxs-lookup"><span data-stu-id="9d80d-119">Create claims mapping policy</span></span> <br> <span data-ttu-id="9d80d-120">Atribuir política de mapeamento de declarações à entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="9d80d-120">Assign claims mapping policy to service principal</span></span>|
+| [<span data-ttu-id="9d80d-121">4. Configurar o certificado de autenticação</span><span class="sxs-lookup"><span data-stu-id="9d80d-121">4. Configure signing certificate</span></span>](#step-4-configure-signing-certificate) | <span data-ttu-id="9d80d-122">Criar um certificado</span><span class="sxs-lookup"><span data-stu-id="9d80d-122">Create a certificate</span></span> <BR> <span data-ttu-id="9d80d-123">Adicionar uma chave de assinatura personalizada</span><span class="sxs-lookup"><span data-stu-id="9d80d-123">Add a custom signing key</span></span> <br> <span data-ttu-id="9d80d-124">Adicionar a chave de assinatura personalizada</span><span class="sxs-lookup"><span data-stu-id="9d80d-124">Activate the custom signing key</span></span>|
+| [<span data-ttu-id="9d80d-125">5. Atribuir usuários</span><span class="sxs-lookup"><span data-stu-id="9d80d-125">5. Assign users</span></span>](#step-5-assign-users) | <span data-ttu-id="9d80d-126">Atribuir usuários e grupos ao aplicativo</span><span class="sxs-lookup"><span data-stu-id="9d80d-126">Assign users and groups to the application</span></span>
+| [<span data-ttu-id="9d80d-127">6. Configurar o lado do aplicativo</span><span class="sxs-lookup"><span data-stu-id="9d80d-127">6. Configure the application side</span></span>](#step-6-configure-the-application-side)| <span data-ttu-id="9d80d-128">Obter os metadados do SAML do Azure AD</span><span class="sxs-lookup"><span data-stu-id="9d80d-128">Get Azure AD SAML metadata</span></span>
 
-<span data-ttu-id="67a17-129">**Lista de todas as APIs usadas no artigo**</span><span class="sxs-lookup"><span data-stu-id="67a17-129">**List of all APIs used in the article**</span></span>
+<span data-ttu-id="9d80d-129">**Lista de todas as APIs usadas no artigo**</span><span class="sxs-lookup"><span data-stu-id="9d80d-129">**List of all APIs used in the article**</span></span>
 
-<span data-ttu-id="67a17-130">Verifique se você tem as permissões correspondentes para chamar as seguintes APIs.</span><span class="sxs-lookup"><span data-stu-id="67a17-130">Make sure you have the corresponding permissions to call the following APIs.</span></span>
+<span data-ttu-id="9d80d-130">Verifique se você tem as permissões correspondentes para chamar as seguintes APIs.</span><span class="sxs-lookup"><span data-stu-id="9d80d-130">Make sure you have the corresponding permissions to call the following APIs.</span></span>
 
-|<span data-ttu-id="67a17-131">Tipo de recurso</span><span class="sxs-lookup"><span data-stu-id="67a17-131">Resource type</span></span> |<span data-ttu-id="67a17-132">Método</span><span class="sxs-lookup"><span data-stu-id="67a17-132">Method</span></span> |
+|<span data-ttu-id="9d80d-131">Tipo de recurso</span><span class="sxs-lookup"><span data-stu-id="9d80d-131">Resource type</span></span> |<span data-ttu-id="9d80d-132">Método</span><span class="sxs-lookup"><span data-stu-id="9d80d-132">Method</span></span> |
 |---------|---------|
-|[<span data-ttu-id="67a17-133">applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="67a17-133">applicationTemplate</span></span>](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[<span data-ttu-id="67a17-134">Lista applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="67a17-134">List applicationTemplate</span></span>](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[<span data-ttu-id="67a17-135">Instanciar o applicationtemplate</span><span class="sxs-lookup"><span data-stu-id="67a17-135">Instantiate applicationTemplate</span></span>](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
-|[<span data-ttu-id="67a17-136">servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="67a17-136">servicePrincipals</span></span>](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[<span data-ttu-id="67a17-137">Atualizar servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="67a17-137">Update servicePrincipal</span></span>](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [<span data-ttu-id="67a17-138">Criar appRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="67a17-138">Create appRoleAssignments</span></span>](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [<span data-ttu-id="67a17-139">Atribuir claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="67a17-139">Assign claimsMappingPolicies</span></span>](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
-|[<span data-ttu-id="67a17-140">aplicativos</span><span class="sxs-lookup"><span data-stu-id="67a17-140">applications</span></span>](/graph/api/resources/application?view=graph-rest-1.0)|[<span data-ttu-id="67a17-141">Atualizar aplicativo</span><span class="sxs-lookup"><span data-stu-id="67a17-141">Update application</span></span>](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
-|[<span data-ttu-id="67a17-142">claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="67a17-142">claimsMappingPolicy</span></span>](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [<span data-ttu-id="67a17-143">Criar claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="67a17-143">Create claimsMappingPolicy</span></span>](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
+|[<span data-ttu-id="9d80d-133">applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="9d80d-133">applicationTemplate</span></span>](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[<span data-ttu-id="9d80d-134">Lista applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="9d80d-134">List applicationTemplate</span></span>](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[<span data-ttu-id="9d80d-135">Instanciar o applicationtemplate</span><span class="sxs-lookup"><span data-stu-id="9d80d-135">Instantiate applicationTemplate</span></span>](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
+|[<span data-ttu-id="9d80d-136">servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="9d80d-136">servicePrincipals</span></span>](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[<span data-ttu-id="9d80d-137">Atualizar servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="9d80d-137">Update servicePrincipal</span></span>](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [<span data-ttu-id="9d80d-138">Criar appRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="9d80d-138">Create appRoleAssignments</span></span>](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [<span data-ttu-id="9d80d-139">Atribuir claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="9d80d-139">Assign claimsMappingPolicies</span></span>](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
+|[<span data-ttu-id="9d80d-140">aplicativos</span><span class="sxs-lookup"><span data-stu-id="9d80d-140">applications</span></span>](/graph/api/resources/application?view=graph-rest-1.0)|[<span data-ttu-id="9d80d-141">Atualizar aplicativo</span><span class="sxs-lookup"><span data-stu-id="9d80d-141">Update application</span></span>](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
+|[<span data-ttu-id="9d80d-142">claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="9d80d-142">claimsMappingPolicy</span></span>](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [<span data-ttu-id="9d80d-143">Criar claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="9d80d-143">Create claimsMappingPolicy</span></span>](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
 
 >[!NOTE]
-><span data-ttu-id="67a17-144">Os objetos de resposta mostrados neste artigo poderiam ser reduzidos para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="67a17-144">The response objects shown in this article might be shortened for readability.</span></span> <span data-ttu-id="67a17-145">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="67a17-145">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="9d80d-144">Os objetos de resposta mostrados neste artigo poderiam ser reduzidos para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="9d80d-144">The response objects shown in this article might be shortened for readability.</span></span> <span data-ttu-id="9d80d-145">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9d80d-145">All the properties will be returned from an actual call.</span></span>
 
-## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="67a17-146">Etapa 1: Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="67a17-146">Step 1: Create the gallery application</span></span>
+## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="9d80d-146">Etapa 1: Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="9d80d-146">Step 1: Create the gallery application</span></span>
 
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="67a17-147">Entrar no Microsoft Graph Explorer (recomendado), no Postman ou em qualquer outro cliente de API que você usa</span><span class="sxs-lookup"><span data-stu-id="67a17-147">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
+### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="9d80d-147">Entrar no Microsoft Graph Explorer (recomendado), no Postman ou em qualquer outro cliente de API que você usa</span><span class="sxs-lookup"><span data-stu-id="9d80d-147">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
 
-1. <span data-ttu-id="67a17-148">Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="67a17-148">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
-2. <span data-ttu-id="67a17-149">Selecione **Entrar com a Microsoft** e entre usando as credenciais de administrador global do Azure AD ou de Administrador do Aplicativo.</span><span class="sxs-lookup"><span data-stu-id="67a17-149">Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.</span></span>
-3. <span data-ttu-id="67a17-150">Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.</span><span class="sxs-lookup"><span data-stu-id="67a17-150">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
+1. <span data-ttu-id="9d80d-148">Iniciar [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="9d80d-148">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
+2. <span data-ttu-id="9d80d-149">Selecione **Entrar com a Microsoft** e entre usando as credenciais de administrador global do Azure AD ou de Administrador do Aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9d80d-149">Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.</span></span>
+3. <span data-ttu-id="9d80d-150">Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.</span><span class="sxs-lookup"><span data-stu-id="9d80d-150">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
 
-### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="67a17-151">Recuperar o identificador de modelos de aplicativo de galeria</span><span class="sxs-lookup"><span data-stu-id="67a17-151">Retrieve the gallery application template identifier</span></span>
+### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="9d80d-151">Recuperar o identificador de modelos de aplicativo de galeria</span><span class="sxs-lookup"><span data-stu-id="9d80d-151">Retrieve the gallery application template identifier</span></span>
 
-<span data-ttu-id="67a17-152">Os aplicativos na galeria do aplicativo do Azure AD têm um [modelo de aplicativo](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) cada um, que descreve os metadados para esse aplicativo.</span><span class="sxs-lookup"><span data-stu-id="67a17-152">Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application.</span></span> <span data-ttu-id="67a17-153">Usando esse modelo, você pode criar uma instância do aplicativo e da entidade de serviço no locatário para gerenciamento.</span><span class="sxs-lookup"><span data-stu-id="67a17-153">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
+<span data-ttu-id="9d80d-152">Os aplicativos na galeria do aplicativo do Azure AD têm um [modelo de aplicativo](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) cada um, que descreve os metadados para esse aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9d80d-152">Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application.</span></span> <span data-ttu-id="9d80d-153">Usando esse modelo, você pode criar uma instância do aplicativo e da entidade de serviço no locatário para gerenciamento.</span><span class="sxs-lookup"><span data-stu-id="9d80d-153">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="67a17-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-154">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="67a17-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="67a17-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9d80d-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="9d80d-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
@@ -65,22 +65,22 @@ ms.locfileid: "48945112"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
-# <a name="c"></a>[<span data-ttu-id="67a17-156">C#</span><span class="sxs-lookup"><span data-stu-id="67a17-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9d80d-156">C#</span><span class="sxs-lookup"><span data-stu-id="9d80d-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="67a17-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="67a17-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9d80d-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9d80d-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="67a17-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="67a17-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9d80d-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9d80d-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="67a17-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-159">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -117,21 +117,21 @@ Content-type: application/json
 }
 ```
 
-### <a name="create-the-gallery-application"></a><span data-ttu-id="67a17-160">Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="67a17-160">Create the gallery application</span></span>
+### <a name="create-the-gallery-application"></a><span data-ttu-id="9d80d-160">Criar o aplicativo galeria</span><span class="sxs-lookup"><span data-stu-id="9d80d-160">Create the gallery application</span></span>
 
-<span data-ttu-id="67a17-161">Usando a ID do modelo que você recuperou para o aplicativo na última etapa, [criar uma instância](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) do aplicativo e da entidade de serviço em seu locatário.</span><span class="sxs-lookup"><span data-stu-id="67a17-161">Using the template ID that you retrieved for your application in the last step, [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.</span></span>
+<span data-ttu-id="9d80d-161">Usando a ID do modelo que você recuperou para o aplicativo na última etapa, [criar uma instância](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) do aplicativo e da entidade de serviço em seu locatário.</span><span class="sxs-lookup"><span data-stu-id="9d80d-161">Using the template ID that you retrieved for your application in the last step, [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="67a17-162">Você pode usar a API applicationTemplate para criar uma instância [aplicativos Não-Galeria](/azure/active-directory/manage-apps/view-applications-portal).</span><span class="sxs-lookup"><span data-stu-id="67a17-162">You can use applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal).</span></span> <span data-ttu-id="67a17-163">Usar o applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span><span class="sxs-lookup"><span data-stu-id="67a17-163">Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span></span>
+> <span data-ttu-id="9d80d-162">Você pode usar a API applicationTemplate para criar uma instância [aplicativos Não-Galeria](/azure/active-directory/manage-apps/view-applications-portal).</span><span class="sxs-lookup"><span data-stu-id="9d80d-162">You can use applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal).</span></span> <span data-ttu-id="9d80d-163">Usar o applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span><span class="sxs-lookup"><span data-stu-id="9d80d-163">Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="67a17-164">Aguarde algum tempo para que o aplicativo seja provisionado em seu locatário do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="67a17-164">Allow some time for the app to be provisioned into your Azure AD tenant.</span></span> <span data-ttu-id="67a17-165">Não é instantâneo.</span><span class="sxs-lookup"><span data-stu-id="67a17-165">It is not instant.</span></span> <span data-ttu-id="67a17-166">Uma estratégia é fazer uma consulta GET sobre o objeto do aplicativo/entidade de serviço a cada 5-10 segundos até que a consulta seja bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="67a17-166">One strategy is to do a GET query on the application / service principal object every 5-10 seconds until the query is successful.</span></span>
+> <span data-ttu-id="9d80d-164">Aguarde algum tempo para que o aplicativo seja provisionado em seu locatário do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="9d80d-164">Allow some time for the app to be provisioned into your Azure AD tenant.</span></span> <span data-ttu-id="9d80d-165">Não é instantâneo.</span><span class="sxs-lookup"><span data-stu-id="9d80d-165">It is not instant.</span></span> <span data-ttu-id="9d80d-166">Uma estratégia é fazer uma consulta GET sobre o objeto do aplicativo/entidade de serviço a cada 5-10 segundos até que a consulta seja bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="9d80d-166">One strategy is to do a GET query on the application / service principal object every 5-10 seconds until the query is successful.</span></span>
 
 
-#### <a name="request"></a><span data-ttu-id="67a17-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-167">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-167">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="67a17-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="67a17-168">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9d80d-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="9d80d-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "applicationtemplate_instantiate"
@@ -145,22 +145,22 @@ Content-type: application/json
   "displayName": "AWS Contoso"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="67a17-169">C#</span><span class="sxs-lookup"><span data-stu-id="67a17-169">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9d80d-169">C#</span><span class="sxs-lookup"><span data-stu-id="9d80d-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="67a17-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="67a17-170">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9d80d-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9d80d-170">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="67a17-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="67a17-171">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9d80d-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9d80d-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="67a17-172">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-172">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-172">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-172">Response</span></span>
 
 
 <!-- {
@@ -207,30 +207,30 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-configure-single-sign-on"></a><span data-ttu-id="67a17-173">2. Configurar o logon único</span><span class="sxs-lookup"><span data-stu-id="67a17-173">Step 2: Configure single sign-on</span></span>
+## <a name="step-2-configure-single-sign-on"></a><span data-ttu-id="9d80d-173">2. Configurar o logon único</span><span class="sxs-lookup"><span data-stu-id="9d80d-173">Step 2: Configure single sign-on</span></span>
 
-### <a name="retrieve-app-object-id-and-service-principal-object-id"></a><span data-ttu-id="67a17-174">Recuperar ID de objeto do aplicativo e ID do objeto da entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="67a17-174">Retrieve app object ID and service principal object ID</span></span>
+### <a name="retrieve-app-object-id-and-service-principal-object-id"></a><span data-ttu-id="9d80d-174">Recuperar ID de objeto do aplicativo e ID do objeto da entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="9d80d-174">Retrieve app object ID and service principal object ID</span></span>
 
-<span data-ttu-id="67a17-175">Use a resposta da chamada anterior para recuperar e salvar a ID de objeto do aplicativo e a ID do objeto da entidade de serviço.</span><span class="sxs-lookup"><span data-stu-id="67a17-175">Use the response from the previous call to retrieve and save the application object ID and service principal object ID.</span></span>
+<span data-ttu-id="9d80d-175">Use a resposta da chamada anterior para recuperar e salvar a ID de objeto do aplicativo e a ID do objeto da entidade de serviço.</span><span class="sxs-lookup"><span data-stu-id="9d80d-175">Use the response from the previous call to retrieve and save the application object ID and service principal object ID.</span></span>
 
-```
-"application": {
-        "objectId": "cbc071a6-0fa5-4859-8g55-e983ef63df63"
+```json
+"application":{
+  "objectId":"cbc071a6-0fa5-4859-8g55-e983ef63df63"
+},
+"servicePrincipal":{
+  "objectId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
-"servicePrincipal": {
-        "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
-}
 ```
-### <a name="set-single-sign-on-mode"></a><span data-ttu-id="67a17-176">Definir o modo de logon único</span><span class="sxs-lookup"><span data-stu-id="67a17-176">Set single sign-on mode</span></span>
+### <a name="set-single-sign-on-mode"></a><span data-ttu-id="9d80d-176">Definir o modo de logon único</span><span class="sxs-lookup"><span data-stu-id="9d80d-176">Set single sign-on mode</span></span>
 
-<span data-ttu-id="67a17-177">Neste exemplo, você definirá o `saml` como o modo de logon único na [tipo de recurso de servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="67a17-177">In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span></span> <span data-ttu-id="67a17-178">Outras propriedades de SSO do SAML que você pode configurar são: `notificationEmailAddresses`, `loginUrl`e `samlSingleSignOnSettings.relayState`.</span><span class="sxs-lookup"><span data-stu-id="67a17-178">Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.</span></span>
+<span data-ttu-id="9d80d-177">Neste exemplo, você definirá o `saml` como o modo de logon único na [tipo de recurso de servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="9d80d-177">In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span></span> <span data-ttu-id="9d80d-178">Outras propriedades de SSO do SAML que você pode configurar são: `notificationEmailAddresses`, `loginUrl`e `samlSingleSignOnSettings.relayState`.</span><span class="sxs-lookup"><span data-stu-id="9d80d-178">Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.</span></span>
 
-<span data-ttu-id="67a17-179">Antes dessa consulta funcionar, você precisará fornecer consentimento na guia **Modificar permissões** no Graph Explorer.</span><span class="sxs-lookup"><span data-stu-id="67a17-179">Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer.</span></span> <span data-ttu-id="67a17-180">Além disso, certifique-se de que você está usando a ID do **servicePrincipal** que você obteve anteriormente.</span><span class="sxs-lookup"><span data-stu-id="67a17-180">Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.</span></span>
+<span data-ttu-id="9d80d-179">Antes dessa consulta funcionar, você precisará fornecer consentimento na guia **Modificar permissões** no Graph Explorer.</span><span class="sxs-lookup"><span data-stu-id="9d80d-179">Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer.</span></span> <span data-ttu-id="9d80d-180">Além disso, certifique-se de que você está usando a ID do **servicePrincipal** que você obteve anteriormente.</span><span class="sxs-lookup"><span data-stu-id="9d80d-180">Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="67a17-181">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-181">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-181">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-181">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="67a17-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="67a17-182">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9d80d-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="9d80d-182">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -244,22 +244,22 @@ Content-type: application/json
     "preferredSingleSignOnMode": "saml"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="67a17-183">C#</span><span class="sxs-lookup"><span data-stu-id="67a17-183">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9d80d-183">C#</span><span class="sxs-lookup"><span data-stu-id="9d80d-183">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="67a17-184">JavaScript</span><span class="sxs-lookup"><span data-stu-id="67a17-184">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9d80d-184">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9d80d-184">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="67a17-185">Objective-C</span><span class="sxs-lookup"><span data-stu-id="67a17-185">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9d80d-185">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9d80d-185">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="67a17-186">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-186">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-186">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-186">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -270,16 +270,16 @@ Content-type: application/json
 HTTP/1.1 204
 ```
 
-### <a name="set-basic-saml-urls-such-as-identifier-reply-url-sign-on-url"></a><span data-ttu-id="67a17-187">Definir URLs SAML básicas, como identificador, URL de resposta, URL de logon</span><span class="sxs-lookup"><span data-stu-id="67a17-187">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span>
+### <a name="set-basic-saml-urls-such-as-identifier-reply-url-sign-on-url"></a><span data-ttu-id="9d80d-187">Definir URLs SAML básicas, como identificador, URL de resposta, URL de logon</span><span class="sxs-lookup"><span data-stu-id="9d80d-187">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span>
 
-<span data-ttu-id="67a17-188">Defina o identificador e as URLs de resposta para AWS no objeto do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="67a17-188">Set the identifier and reply URLs for AWS in the application object.</span></span>
+<span data-ttu-id="9d80d-188">Defina o identificador e as URLs de resposta para AWS no objeto do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9d80d-188">Set the identifier and reply URLs for AWS in the application object.</span></span>
 
-<span data-ttu-id="67a17-189"> Verifique se você está usando a ID de **aplicativo** obtida anteriormente.</span><span class="sxs-lookup"><span data-stu-id="67a17-189">Make sure you are using the **application** id obtained earlier.</span></span>
+<span data-ttu-id="9d80d-189"> Verifique se você está usando a ID de **aplicativo** obtida anteriormente.</span><span class="sxs-lookup"><span data-stu-id="9d80d-189">Make sure you are using the **application** id obtained earlier.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="67a17-190">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-190">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-190">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-190">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="67a17-191">HTTP</span><span class="sxs-lookup"><span data-stu-id="67a17-191">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9d80d-191">HTTP</span><span class="sxs-lookup"><span data-stu-id="9d80d-191">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -300,25 +300,25 @@ Content-type: applications/json
     ]    
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="67a17-192">C#</span><span class="sxs-lookup"><span data-stu-id="67a17-192">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9d80d-192">C#</span><span class="sxs-lookup"><span data-stu-id="9d80d-192">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="67a17-193">JavaScript</span><span class="sxs-lookup"><span data-stu-id="67a17-193">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9d80d-193">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9d80d-193">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="67a17-194">Objective-C</span><span class="sxs-lookup"><span data-stu-id="67a17-194">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9d80d-194">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9d80d-194">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="67a17-195">Java</span><span class="sxs-lookup"><span data-stu-id="67a17-195">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="9d80d-195">Java</span><span class="sxs-lookup"><span data-stu-id="9d80d-195">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="67a17-196">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-196">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-196">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-196">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -328,19 +328,19 @@ Content-type: applications/json
 ```http
 HTTP/1.1 204
 ```
-### <a name="add-app-roles-optional"></a><span data-ttu-id="67a17-197">Adicionar funções de aplicativo (opcional)</span><span class="sxs-lookup"><span data-stu-id="67a17-197">Add app roles (Optional)</span></span>
+### <a name="add-app-roles-optional"></a><span data-ttu-id="9d80d-197">Adicionar funções de aplicativo (opcional)</span><span class="sxs-lookup"><span data-stu-id="9d80d-197">Add app roles (Optional)</span></span>
 
-<span data-ttu-id="67a17-198">Se o aplicativo exigir as informações da função no token, adicione a definição das funções no objeto do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="67a17-198">If the application requires the role information in the token, add the definition of the roles in the application object.</span></span> <span data-ttu-id="67a17-199">No AWS, você pode [habilitar o provisionamento de usuário](/azure/active-directory/app-provisioning/application-provisioning-configure-api) para buscar todas as funções dessa conta do AWS.</span><span class="sxs-lookup"><span data-stu-id="67a17-199">For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account.</span></span> 
+<span data-ttu-id="9d80d-198">Se o aplicativo exigir as informações da função no token, adicione a definição das funções no objeto do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9d80d-198">If the application requires the role information in the token, add the definition of the roles in the application object.</span></span> <span data-ttu-id="9d80d-199">No AWS, você pode [habilitar o provisionamento de usuário](/azure/active-directory/app-provisioning/application-provisioning-configure-api) para buscar todas as funções dessa conta do AWS.</span><span class="sxs-lookup"><span data-stu-id="9d80d-199">For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account.</span></span> 
 
-<span data-ttu-id="67a17-200">Para saber mais, confira [Configurar a declaração de função emitida no token SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span><span class="sxs-lookup"><span data-stu-id="67a17-200">For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span></span>
+<span data-ttu-id="9d80d-200">Para saber mais, confira [Configurar a declaração de função emitida no token SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span><span class="sxs-lookup"><span data-stu-id="9d80d-200">For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="67a17-201">Ao adicionar funções de aplicativo, não modifique as funções de aplicativo padrão msiam_access.</span><span class="sxs-lookup"><span data-stu-id="67a17-201">When adding app roles, don't modify the default app roles msiam_access.</span></span> 
+> <span data-ttu-id="9d80d-201">Ao adicionar funções de aplicativo, não modifique as funções de aplicativo padrão msiam_access.</span><span class="sxs-lookup"><span data-stu-id="9d80d-201">When adding app roles, don't modify the default app roles msiam_access.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="67a17-202">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-202">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-202">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-202">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="67a17-203">HTTP</span><span class="sxs-lookup"><span data-stu-id="67a17-203">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9d80d-203">HTTP</span><span class="sxs-lookup"><span data-stu-id="9d80d-203">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -387,26 +387,26 @@ Content-type: application/json
 
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="67a17-204">C#</span><span class="sxs-lookup"><span data-stu-id="67a17-204">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9d80d-204">C#</span><span class="sxs-lookup"><span data-stu-id="9d80d-204">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="67a17-205">JavaScript</span><span class="sxs-lookup"><span data-stu-id="67a17-205">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9d80d-205">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9d80d-205">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="67a17-206">Objective-C</span><span class="sxs-lookup"><span data-stu-id="67a17-206">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9d80d-206">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9d80d-206">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="67a17-207">Java</span><span class="sxs-lookup"><span data-stu-id="67a17-207">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="9d80d-207">Java</span><span class="sxs-lookup"><span data-stu-id="9d80d-207">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="67a17-208">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-208">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-208">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-208">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -416,29 +416,29 @@ Content-type: application/json
 HTTP/1.1 204
 ```
 
-## <a name="step-3-configure-claims-mapping"></a><span data-ttu-id="67a17-209">3. Configurar mapeamento de declarações</span><span class="sxs-lookup"><span data-stu-id="67a17-209">Step 3: Configure claims mapping</span></span>
+## <a name="step-3-configure-claims-mapping"></a><span data-ttu-id="9d80d-209">3. Configurar mapeamento de declarações</span><span class="sxs-lookup"><span data-stu-id="9d80d-209">Step 3: Configure claims mapping</span></span>
 
-### <a name="create-claims-mapping-policy"></a><span data-ttu-id="67a17-210">Criar política de mapeamento de declarações</span><span class="sxs-lookup"><span data-stu-id="67a17-210">Create claims mapping policy</span></span>
+### <a name="create-claims-mapping-policy"></a><span data-ttu-id="9d80d-210">Criar política de mapeamento de declarações</span><span class="sxs-lookup"><span data-stu-id="9d80d-210">Create claims mapping policy</span></span>
 
-<span data-ttu-id="67a17-211">Além das declarações básicas, configure as seguintes declarações para o Azure AD emitir no token SAML:</span><span class="sxs-lookup"><span data-stu-id="67a17-211">In addition to the basic claims, configure the following claims for Azure AD to emit in the SAML token:</span></span>
+<span data-ttu-id="9d80d-211">Além das declarações básicas, configure as seguintes declarações para o Azure AD emitir no token SAML:</span><span class="sxs-lookup"><span data-stu-id="9d80d-211">In addition to the basic claims, configure the following claims for Azure AD to emit in the SAML token:</span></span>
 
-| <span data-ttu-id="67a17-212">Nome da declaração</span><span class="sxs-lookup"><span data-stu-id="67a17-212">Claim name</span></span> | <span data-ttu-id="67a17-213">Origem</span><span class="sxs-lookup"><span data-stu-id="67a17-213">Source</span></span>  |
+| <span data-ttu-id="9d80d-212">Nome da declaração</span><span class="sxs-lookup"><span data-stu-id="9d80d-212">Claim name</span></span> | <span data-ttu-id="9d80d-213">Origem</span><span class="sxs-lookup"><span data-stu-id="9d80d-213">Source</span></span>  |
 |---------|---------|
-| `https://aws.amazon.com/SAML/Attributes/Role` | <span data-ttu-id="67a17-214">assignedroles</span><span class="sxs-lookup"><span data-stu-id="67a17-214">assignedroles</span></span>| 
-| `https://aws.amazon.com/SAML/Attributes/RoleSessionName` | <span data-ttu-id="67a17-215">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="67a17-215">userprincipalname</span></span> |
-| `https://aws.amazon.com/SAML/Attributes/SessionDuration` | <span data-ttu-id="67a17-216">"900"</span><span class="sxs-lookup"><span data-stu-id="67a17-216">"900"</span></span> |
-| <span data-ttu-id="67a17-217">funções</span><span class="sxs-lookup"><span data-stu-id="67a17-217">roles</span></span> | <span data-ttu-id="67a17-218">assignedroles</span><span class="sxs-lookup"><span data-stu-id="67a17-218">assignedroles</span></span> |
-| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | <span data-ttu-id="67a17-219">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="67a17-219">userprincipalname</span></span> |
+| `https://aws.amazon.com/SAML/Attributes/Role` | <span data-ttu-id="9d80d-214">assignedroles</span><span class="sxs-lookup"><span data-stu-id="9d80d-214">assignedroles</span></span>| 
+| `https://aws.amazon.com/SAML/Attributes/RoleSessionName` | <span data-ttu-id="9d80d-215">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="9d80d-215">userprincipalname</span></span> |
+| `https://aws.amazon.com/SAML/Attributes/SessionDuration` | <span data-ttu-id="9d80d-216">"900"</span><span class="sxs-lookup"><span data-stu-id="9d80d-216">"900"</span></span> |
+| <span data-ttu-id="9d80d-217">funções</span><span class="sxs-lookup"><span data-stu-id="9d80d-217">roles</span></span> | <span data-ttu-id="9d80d-218">assignedroles</span><span class="sxs-lookup"><span data-stu-id="9d80d-218">assignedroles</span></span> |
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | <span data-ttu-id="9d80d-219">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="9d80d-219">userprincipalname</span></span> |
 
-<span data-ttu-id="67a17-220">Para obter mais informações, confira [Personalizar as declarações emitidas no token](/azure/active-directory/develop/active-directory-claims-mapping).</span><span class="sxs-lookup"><span data-stu-id="67a17-220">For more information, see [Customize claims emitted in token](/azure/active-directory/develop/active-directory-claims-mapping).</span></span>
+<span data-ttu-id="9d80d-220">Para obter mais informações, confira [Personalizar as declarações emitidas no token](/azure/active-directory/develop/active-directory-claims-mapping).</span><span class="sxs-lookup"><span data-stu-id="9d80d-220">For more information, see [Customize claims emitted in token](/azure/active-directory/develop/active-directory-claims-mapping).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="67a17-221">Algumas chaves na política de mapeamento de declarações são sensíveis a letras maiúsculas e minúsculas (por exemplo, "Version").</span><span class="sxs-lookup"><span data-stu-id="67a17-221">Some keys in the claims mapping policy are case sensitive (for example, "Version").</span></span> <span data-ttu-id="67a17-222">Se você receber uma mensagem de erro como "A propriedade tem um valor inválido", isso poderia ser um problema de diferenciação de maiúsculas e minúsculas.</span><span class="sxs-lookup"><span data-stu-id="67a17-222">If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.</span></span>
+> <span data-ttu-id="9d80d-221">Algumas chaves na política de mapeamento de declarações são sensíveis a letras maiúsculas e minúsculas (por exemplo, "Version").</span><span class="sxs-lookup"><span data-stu-id="9d80d-221">Some keys in the claims mapping policy are case sensitive (for example, "Version").</span></span> <span data-ttu-id="9d80d-222">Se você receber uma mensagem de erro como "A propriedade tem um valor inválido", isso poderia ser um problema de diferenciação de maiúsculas e minúsculas.</span><span class="sxs-lookup"><span data-stu-id="9d80d-222">If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="67a17-223">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-223">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-223">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-223">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="67a17-224">HTTP</span><span class="sxs-lookup"><span data-stu-id="67a17-224">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9d80d-224">HTTP</span><span class="sxs-lookup"><span data-stu-id="9d80d-224">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -456,26 +456,26 @@ Content-type: application/json
     "isOrganizationDefault": false
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="67a17-225">C#</span><span class="sxs-lookup"><span data-stu-id="67a17-225">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9d80d-225">C#</span><span class="sxs-lookup"><span data-stu-id="9d80d-225">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="67a17-226">JavaScript</span><span class="sxs-lookup"><span data-stu-id="67a17-226">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9d80d-226">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9d80d-226">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="67a17-227">Objective-C</span><span class="sxs-lookup"><span data-stu-id="67a17-227">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9d80d-227">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9d80d-227">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="67a17-228">Java</span><span class="sxs-lookup"><span data-stu-id="67a17-228">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="9d80d-228">Java</span><span class="sxs-lookup"><span data-stu-id="9d80d-228">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="67a17-229">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-229">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-229">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-229">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -500,9 +500,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="assign-claims-mapping-policy-to-service-principal"></a><span data-ttu-id="67a17-230">Atribuir política de mapeamento de declarações à entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="67a17-230">Assign claims mapping policy to service principal</span></span>
+### <a name="assign-claims-mapping-policy-to-service-principal"></a><span data-ttu-id="9d80d-230">Atribuir política de mapeamento de declarações à entidade de serviço</span><span class="sxs-lookup"><span data-stu-id="9d80d-230">Assign claims mapping policy to service principal</span></span>
 
-#### <a name="request"></a><span data-ttu-id="67a17-231">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-231">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-231">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-231">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -519,7 +519,7 @@ Content-type: application/json
 ```
 
 
-#### <a name="response"></a><span data-ttu-id="67a17-232">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-232">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-232">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-232">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -529,13 +529,13 @@ Content-type: application/json
 HTTP/1.1 204
 ```
 
-## <a name="step-4-configure-signing-certificate"></a><span data-ttu-id="67a17-233">Etapa 4. Configurar o certificado de autenticação</span><span class="sxs-lookup"><span data-stu-id="67a17-233">Step 4: Configure signing certificate</span></span>
+## <a name="step-4-configure-signing-certificate"></a><span data-ttu-id="9d80d-233">Etapa 4. Configurar o certificado de autenticação</span><span class="sxs-lookup"><span data-stu-id="9d80d-233">Step 4: Configure signing certificate</span></span>
 
-<span data-ttu-id="67a17-234">Usar a API [applicationtemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) não cria um certificado de autenticação por padrão.</span><span class="sxs-lookup"><span data-stu-id="67a17-234">Using the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default.</span></span> <span data-ttu-id="67a17-235">Crie seu certificado de assinatura personalizado e atribua-o ao aplicativo.</span><span class="sxs-lookup"><span data-stu-id="67a17-235">Create your custom signing cert and assign it to the application.</span></span> 
+<span data-ttu-id="9d80d-234">Usar a API [applicationtemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) não cria um certificado de autenticação por padrão.</span><span class="sxs-lookup"><span data-stu-id="9d80d-234">Using the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default.</span></span> <span data-ttu-id="9d80d-235">Crie seu certificado de assinatura personalizado e atribua-o ao aplicativo.</span><span class="sxs-lookup"><span data-stu-id="9d80d-235">Create your custom signing cert and assign it to the application.</span></span> 
 
-### <a name="create-a-custom-signing-certificate"></a><span data-ttu-id="67a17-236">Criar um certificado de autenticação personalizado</span><span class="sxs-lookup"><span data-stu-id="67a17-236">Create a custom signing certificate</span></span>
+### <a name="create-a-custom-signing-certificate"></a><span data-ttu-id="9d80d-236">Criar um certificado de autenticação personalizado</span><span class="sxs-lookup"><span data-stu-id="9d80d-236">Create a custom signing certificate</span></span>
 
-<span data-ttu-id="67a17-237">Para testar, use o seguinte comando do Windows PowerShell para obter um certificado autoassinado.</span><span class="sxs-lookup"><span data-stu-id="67a17-237">To test, you can use the following PowerShell command to get a self-signed certificate.</span></span> <span data-ttu-id="67a17-238">Você precisará manipular e extrair os valores necessários manualmente usando outras ferramentas.</span><span class="sxs-lookup"><span data-stu-id="67a17-238">You will then need to manipulate and pull the values you need manually using other tools.</span></span> <span data-ttu-id="67a17-239">Use a prática recomendada de segurança da sua empresa para criar um certificado de autenticação para produção.</span><span class="sxs-lookup"><span data-stu-id="67a17-239">Use the best security practice from your company to create a signing certificate for production.</span></span>
+<span data-ttu-id="9d80d-237">Para testar, use o seguinte comando do Windows PowerShell para obter um certificado autoassinado.</span><span class="sxs-lookup"><span data-stu-id="9d80d-237">To test, you can use the following PowerShell command to get a self-signed certificate.</span></span> <span data-ttu-id="9d80d-238">Você precisará manipular e extrair os valores necessários manualmente usando outras ferramentas.</span><span class="sxs-lookup"><span data-stu-id="9d80d-238">You will then need to manipulate and pull the values you need manually using other tools.</span></span> <span data-ttu-id="9d80d-239">Use a prática recomendada de segurança da sua empresa para criar um certificado de autenticação para produção.</span><span class="sxs-lookup"><span data-stu-id="9d80d-239">Use the best security practice from your company to create a signing certificate for production.</span></span>
 
 ```powershell
 Param(
@@ -562,7 +562,7 @@ Export-PfxCertificate -cert $path -FilePath $pfxFile -Password $pwdSecure
 Export-Certificate -cert $path -FilePath $cerFile
 ```
 
-<span data-ttu-id="67a17-240">Como alternativa, o seguinte aplicativo de console C# pode ser usado como Prova de Conceito para entender como os valores necessários podem ser obtidos.</span><span class="sxs-lookup"><span data-stu-id="67a17-240">Alternatively, the following C# console app can be used as a Proof of Concept to understand how the required values can be obtained.</span></span> <span data-ttu-id="67a17-241">Observe que este código é para **aprendizado e referência APENAS** e não devem ser usados como estão na produção.</span><span class="sxs-lookup"><span data-stu-id="67a17-241">Note that this code is for **learning and reference ONLY** and should not be used as-is in production.</span></span>
+<span data-ttu-id="9d80d-240">Como alternativa, o seguinte aplicativo de console C# pode ser usado como Prova de Conceito para entender como os valores necessários podem ser obtidos.</span><span class="sxs-lookup"><span data-stu-id="9d80d-240">Alternatively, the following C# console app can be used as a Proof of Concept to understand how the required values can be obtained.</span></span> <span data-ttu-id="9d80d-241">Observe que este código é para **aprendizado e referência APENAS** e não devem ser usados como estão na produção.</span><span class="sxs-lookup"><span data-stu-id="9d80d-241">Note that this code is for **learning and reference ONLY** and should not be used as-is in production.</span></span>
 
 ```csharp
 using System;
@@ -655,22 +655,22 @@ namespace Self_signed_cert
 }
 ```
 
-### <a name="add-a-custom-signing-key"></a><span data-ttu-id="67a17-242">Adicionar uma chave de assinatura personalizada</span><span class="sxs-lookup"><span data-stu-id="67a17-242">Add a custom signing key</span></span>
+### <a name="add-a-custom-signing-key"></a><span data-ttu-id="9d80d-242">Adicionar uma chave de assinatura personalizada</span><span class="sxs-lookup"><span data-stu-id="9d80d-242">Add a custom signing key</span></span>
 
-<span data-ttu-id="67a17-243">Adicione as seguintes informações à entidade de serviço:</span><span class="sxs-lookup"><span data-stu-id="67a17-243">Add the following information to the service principal:</span></span>
+<span data-ttu-id="9d80d-243">Adicione as seguintes informações à entidade de serviço:</span><span class="sxs-lookup"><span data-stu-id="9d80d-243">Add the following information to the service principal:</span></span>
 
-* <span data-ttu-id="67a17-244">Chave privada</span><span class="sxs-lookup"><span data-stu-id="67a17-244">Private key</span></span>
-* <span data-ttu-id="67a17-245">Senha</span><span class="sxs-lookup"><span data-stu-id="67a17-245">Password</span></span>
-* <span data-ttu-id="67a17-246">Chave pública</span><span class="sxs-lookup"><span data-stu-id="67a17-246">Public key</span></span> 
+* <span data-ttu-id="9d80d-244">Chave privada</span><span class="sxs-lookup"><span data-stu-id="9d80d-244">Private key</span></span>
+* <span data-ttu-id="9d80d-245">Senha</span><span class="sxs-lookup"><span data-stu-id="9d80d-245">Password</span></span>
+* <span data-ttu-id="9d80d-246">Chave pública</span><span class="sxs-lookup"><span data-stu-id="9d80d-246">Public key</span></span> 
 
-<span data-ttu-id="67a17-247">Extraia a chave pública e privada Base64 do arquivo PFX.</span><span class="sxs-lookup"><span data-stu-id="67a17-247">Extract the private and public key Base64 encoded from the PFX file.</span></span> <span data-ttu-id="67a17-248">Para saber mais sobre as propriedades, confira [tipo de recurso de keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="67a17-248">To learn more about the properties, see [keyCredential resource type](/graph/api/resources/keycredential?view=graph-rest-1.0).</span></span>
+<span data-ttu-id="9d80d-247">Extraia a chave pública e privada Base64 do arquivo PFX.</span><span class="sxs-lookup"><span data-stu-id="9d80d-247">Extract the private and public key Base64 encoded from the PFX file.</span></span> <span data-ttu-id="9d80d-248">Para saber mais sobre as propriedades, confira [tipo de recurso de keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="9d80d-248">To learn more about the properties, see [keyCredential resource type](/graph/api/resources/keycredential?view=graph-rest-1.0).</span></span>
 
-<span data-ttu-id="67a17-249">Certifique-se de que a keyId da keyCredential usada para "Assinar" corresponda à keyId da passwordCredential.</span><span class="sxs-lookup"><span data-stu-id="67a17-249">Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential.</span></span> <span data-ttu-id="67a17-250">Você pode gerar o `customkeyIdentifier` ao obter o hash da impressão digital do certificado.</span><span class="sxs-lookup"><span data-stu-id="67a17-250">You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint.</span></span> <span data-ttu-id="67a17-251">Consulte o C# código de referência anterior.</span><span class="sxs-lookup"><span data-stu-id="67a17-251">See the previous C# reference code.</span></span>
+<span data-ttu-id="9d80d-249">Certifique-se de que a keyId da keyCredential usada para "Assinar" corresponda à keyId da passwordCredential.</span><span class="sxs-lookup"><span data-stu-id="9d80d-249">Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential.</span></span> <span data-ttu-id="9d80d-250">Você pode gerar o `customkeyIdentifier` ao obter o hash da impressão digital do certificado.</span><span class="sxs-lookup"><span data-stu-id="9d80d-250">You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint.</span></span> <span data-ttu-id="9d80d-251">Consulte o C# código de referência anterior.</span><span class="sxs-lookup"><span data-stu-id="9d80d-251">See the previous C# reference code.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="67a17-252">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-252">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-252">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-252">Request</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="67a17-253">O valor "chave" na propriedade keyCredentials é reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="67a17-253">The "key" value in the keyCredentials property is shortened for readability.</span></span> <span data-ttu-id="67a17-254">O valor é base 64 codificado.</span><span class="sxs-lookup"><span data-stu-id="67a17-254">The value is base 64 encoded.</span></span> <span data-ttu-id="67a17-255">Para a chave particular, a propriedade `usage` é "Assinar".</span><span class="sxs-lookup"><span data-stu-id="67a17-255">For the private key the property `usage` is "Sign".</span></span> <span data-ttu-id="67a17-256">Para a chave pública, a propriedade `usage` é "Verificar".</span><span class="sxs-lookup"><span data-stu-id="67a17-256">For the public key the property `usage` is "Verify".</span></span>
+> <span data-ttu-id="9d80d-253">O valor "chave" na propriedade keyCredentials é reduzido para facilitar a leitura.</span><span class="sxs-lookup"><span data-stu-id="9d80d-253">The "key" value in the keyCredentials property is shortened for readability.</span></span> <span data-ttu-id="9d80d-254">O valor é base 64 codificado.</span><span class="sxs-lookup"><span data-stu-id="9d80d-254">The value is base 64 encoded.</span></span> <span data-ttu-id="9d80d-255">Para a chave particular, a propriedade `usage` é "Assinar".</span><span class="sxs-lookup"><span data-stu-id="9d80d-255">For the private key the property `usage` is "Sign".</span></span> <span data-ttu-id="9d80d-256">Para a chave pública, a propriedade `usage` é "Verificar".</span><span class="sxs-lookup"><span data-stu-id="9d80d-256">For the public key the property `usage` is "Verify".</span></span>
 
 <!-- {
   "blockType": "request",
@@ -717,7 +717,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="67a17-257">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-257">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-257">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-257">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -727,11 +727,11 @@ Content-type: application/json
 HTTP/1.1 204
 ```
 
-### <a name="activate-the-custom-signing-key"></a><span data-ttu-id="67a17-258">Adicionar a chave de assinatura personalizada</span><span class="sxs-lookup"><span data-stu-id="67a17-258">Activate the custom signing key</span></span>
+### <a name="activate-the-custom-signing-key"></a><span data-ttu-id="9d80d-258">Adicionar a chave de assinatura personalizada</span><span class="sxs-lookup"><span data-stu-id="9d80d-258">Activate the custom signing key</span></span>
 
-<span data-ttu-id="67a17-259">É necessário definir a propriedade `preferredTokenSigningKeyThumbprint` como a impressão digital do certificado que você deseja que o Azure AD use para assinar a resposta SAML.</span><span class="sxs-lookup"><span data-stu-id="67a17-259">You need to set the `preferredTokenSigningKeyThumbprint` property to the thumbprint of the certificate you want Azure AD to use to sign the SAML response.</span></span> 
+<span data-ttu-id="9d80d-259">É necessário definir a propriedade `preferredTokenSigningKeyThumbprint` como a impressão digital do certificado que você deseja que o Azure AD use para assinar a resposta SAML.</span><span class="sxs-lookup"><span data-stu-id="9d80d-259">You need to set the `preferredTokenSigningKeyThumbprint` property to the thumbprint of the certificate you want Azure AD to use to sign the SAML response.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="67a17-260">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-260">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-260">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-260">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -747,7 +747,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="67a17-261">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-261">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-261">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-261">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -756,20 +756,20 @@ Content-type: application/json
 ```http
 HTTP/1.1 204
 ```
-## <a name="step-5-assign-users"></a><span data-ttu-id="67a17-262">Etapa 5. Atribuir usuários</span><span class="sxs-lookup"><span data-stu-id="67a17-262">Step 5: Assign users</span></span>
+## <a name="step-5-assign-users"></a><span data-ttu-id="9d80d-262">Etapa 5. Atribuir usuários</span><span class="sxs-lookup"><span data-stu-id="9d80d-262">Step 5: Assign users</span></span>
 
-### <a name="assign-users-and-groups-to-the-application"></a><span data-ttu-id="67a17-263">Atribuir usuários e grupos ao aplicativo</span><span class="sxs-lookup"><span data-stu-id="67a17-263">Assign users and groups to the application</span></span>
+### <a name="assign-users-and-groups-to-the-application"></a><span data-ttu-id="9d80d-263">Atribuir usuários e grupos ao aplicativo</span><span class="sxs-lookup"><span data-stu-id="9d80d-263">Assign users and groups to the application</span></span>
 
-<span data-ttu-id="67a17-264">Atribua o seguinte usuário à entidade de serviço e atribua o AWS_Role1.</span><span class="sxs-lookup"><span data-stu-id="67a17-264">Assign the following user to the service principal and assign the AWS_Role1.</span></span> 
+<span data-ttu-id="9d80d-264">Atribua o seguinte usuário à entidade de serviço e atribua o AWS_Role1.</span><span class="sxs-lookup"><span data-stu-id="9d80d-264">Assign the following user to the service principal and assign the AWS_Role1.</span></span> 
 
-| <span data-ttu-id="67a17-265">Nome</span><span class="sxs-lookup"><span data-stu-id="67a17-265">Name</span></span>  | <span data-ttu-id="67a17-266">ID</span><span class="sxs-lookup"><span data-stu-id="67a17-266">ID</span></span>  |
+| <span data-ttu-id="9d80d-265">Nome</span><span class="sxs-lookup"><span data-stu-id="9d80d-265">Name</span></span>  | <span data-ttu-id="9d80d-266">ID</span><span class="sxs-lookup"><span data-stu-id="9d80d-266">ID</span></span>  |
 |---------|---------|
-| <span data-ttu-id="67a17-267">ID de usuário (principalId)</span><span class="sxs-lookup"><span data-stu-id="67a17-267">User ID (principalId)</span></span> | <span data-ttu-id="67a17-268">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span><span class="sxs-lookup"><span data-stu-id="67a17-268">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span></span> |
-| <span data-ttu-id="67a17-269">Type (principalType)</span><span class="sxs-lookup"><span data-stu-id="67a17-269">Type (principalType)</span></span> | <span data-ttu-id="67a17-270">Usuário</span><span class="sxs-lookup"><span data-stu-id="67a17-270">User</span></span> |
-| <span data-ttu-id="67a17-271">ID da função do aplicativo (appRoleId)</span><span class="sxs-lookup"><span data-stu-id="67a17-271">App role ID (appRoleId)</span></span> | <span data-ttu-id="67a17-272">454dc4c2-8176-498e-99df-8c4efcde41ef</span><span class="sxs-lookup"><span data-stu-id="67a17-272">454dc4c2-8176-498e-99df-8c4efcde41ef</span></span> |
-| <span data-ttu-id="67a17-273">servicePrincipalID (resourceId)</span><span class="sxs-lookup"><span data-stu-id="67a17-273">servicePrincipalID (resourceId)</span></span> | <span data-ttu-id="67a17-274">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span><span class="sxs-lookup"><span data-stu-id="67a17-274">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span></span> |
+| <span data-ttu-id="9d80d-267">ID de usuário (principalId)</span><span class="sxs-lookup"><span data-stu-id="9d80d-267">User ID (principalId)</span></span> | <span data-ttu-id="9d80d-268">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span><span class="sxs-lookup"><span data-stu-id="9d80d-268">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span></span> |
+| <span data-ttu-id="9d80d-269">Type (principalType)</span><span class="sxs-lookup"><span data-stu-id="9d80d-269">Type (principalType)</span></span> | <span data-ttu-id="9d80d-270">Usuário</span><span class="sxs-lookup"><span data-stu-id="9d80d-270">User</span></span> |
+| <span data-ttu-id="9d80d-271">ID da função do aplicativo (appRoleId)</span><span class="sxs-lookup"><span data-stu-id="9d80d-271">App role ID (appRoleId)</span></span> | <span data-ttu-id="9d80d-272">454dc4c2-8176-498e-99df-8c4efcde41ef</span><span class="sxs-lookup"><span data-stu-id="9d80d-272">454dc4c2-8176-498e-99df-8c4efcde41ef</span></span> |
+| <span data-ttu-id="9d80d-273">servicePrincipalID (resourceId)</span><span class="sxs-lookup"><span data-stu-id="9d80d-273">servicePrincipalID (resourceId)</span></span> | <span data-ttu-id="9d80d-274">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span><span class="sxs-lookup"><span data-stu-id="9d80d-274">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span></span> |
 
-#### <a name="request"></a><span data-ttu-id="67a17-275">Solicitação</span><span class="sxs-lookup"><span data-stu-id="67a17-275">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="9d80d-275">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d80d-275">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -788,7 +788,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="67a17-276">Resposta</span><span class="sxs-lookup"><span data-stu-id="67a17-276">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="9d80d-276">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d80d-276">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -810,21 +810,21 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="67a17-277">Para saber mais, confira o [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="67a17-277">For more information, see [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).</span></span>
+<span data-ttu-id="9d80d-277">Para saber mais, confira o [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="9d80d-277">For more information, see [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).</span></span>
 
-## <a name="step-6-configure-the-application-side"></a><span data-ttu-id="67a17-278">Etapa 6. Configurar o lado do aplicativo</span><span class="sxs-lookup"><span data-stu-id="67a17-278">Step 6: Configure the application side</span></span>
+## <a name="step-6-configure-the-application-side"></a><span data-ttu-id="9d80d-278">Etapa 6. Configurar o lado do aplicativo</span><span class="sxs-lookup"><span data-stu-id="9d80d-278">Step 6: Configure the application side</span></span>
 
-### <a name="get-azure-ad-saml-metadata"></a><span data-ttu-id="67a17-279">Obter os metadados do SAML do Azure AD</span><span class="sxs-lookup"><span data-stu-id="67a17-279">Get Azure AD SAML metadata</span></span>
+### <a name="get-azure-ad-saml-metadata"></a><span data-ttu-id="9d80d-279">Obter os metadados do SAML do Azure AD</span><span class="sxs-lookup"><span data-stu-id="9d80d-279">Get Azure AD SAML metadata</span></span>
 
-<span data-ttu-id="67a17-280">Use a URL a seguir para obter os metadados do SAML do Azure AD para o aplicativo específico configurado.</span><span class="sxs-lookup"><span data-stu-id="67a17-280">Use the following URL to get the Azure AD SAML metadata for the specific configured application.</span></span> <span data-ttu-id="67a17-281">Os metadados contêm informações como o certificado de assinatura, o Azure AD entityID e o Azure AD SingleSignOnService, entre outras.</span><span class="sxs-lookup"><span data-stu-id="67a17-281">The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.</span></span>
+<span data-ttu-id="9d80d-280">Use a URL a seguir para obter os metadados do SAML do Azure AD para o aplicativo específico configurado.</span><span class="sxs-lookup"><span data-stu-id="9d80d-280">Use the following URL to get the Azure AD SAML metadata for the specific configured application.</span></span> <span data-ttu-id="9d80d-281">Os metadados contêm informações como o certificado de assinatura, o Azure AD entityID e o Azure AD SingleSignOnService, entre outras.</span><span class="sxs-lookup"><span data-stu-id="9d80d-281">The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.</span></span>
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
 > [!NOTE]
-> <span data-ttu-id="67a17-282">O aplicativo deve ser capaz de analisar a marca de ordem de byte presente nos dados XML de metadados de federação renderizados usando `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`.</span><span class="sxs-lookup"><span data-stu-id="67a17-282">The application should be capable of parsing the byte order mark present in the federation metadata XML data rendered using `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`.</span></span> <span data-ttu-id="67a17-283">A marca de ordem de byte é representada como um caractere ASCII `»¿` e em Hex é representada como `EF BB BF` ao revisar os dados XML.</span><span class="sxs-lookup"><span data-stu-id="67a17-283">Byte order mark is represented as a nonprintable ASCII character `»¿` and in Hex it is represented as `EF BB BF` when reviewing the XML data.</span></span>
+> <span data-ttu-id="9d80d-282">O aplicativo deve ser capaz de analisar a marca de ordem de byte presente nos dados XML de metadados de federação renderizados usando `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`.</span><span class="sxs-lookup"><span data-stu-id="9d80d-282">The application should be capable of parsing the byte order mark present in the federation metadata XML data rendered using `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`.</span></span> <span data-ttu-id="9d80d-283">A marca de ordem de byte é representada como um caractere ASCII `»¿` e em Hex é representada como `EF BB BF` ao revisar os dados XML.</span><span class="sxs-lookup"><span data-stu-id="9d80d-283">Byte order mark is represented as a nonprintable ASCII character `»¿` and in Hex it is represented as `EF BB BF` when reviewing the XML data.</span></span>
 
  
 
-## <a name="next-steps"></a><span data-ttu-id="67a17-284">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="67a17-284">Next steps</span></span>
-- [<span data-ttu-id="67a17-285">Use as APIs do Microsoft Graph para configurar o provisionamento de usuário</span><span class="sxs-lookup"><span data-stu-id="67a17-285">Use Microsoft Graph APIs to configure user provisioning</span></span>](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [<span data-ttu-id="67a17-286">Use o relatório de atividade do aplicativo AD FS para migrar aplicativos para o Azure AD</span><span class="sxs-lookup"><span data-stu-id="67a17-286">Use the AD FS application activity report to migrate applications to Azure AD</span></span>](/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+## <a name="next-steps"></a><span data-ttu-id="9d80d-284">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="9d80d-284">Next steps</span></span>
+- [<span data-ttu-id="9d80d-285">Use as APIs do Microsoft Graph para configurar o provisionamento de usuário</span><span class="sxs-lookup"><span data-stu-id="9d80d-285">Use Microsoft Graph APIs to configure user provisioning</span></span>](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [<span data-ttu-id="9d80d-286">Use o relatório de atividade do aplicativo AD FS para migrar aplicativos para o Azure AD</span><span class="sxs-lookup"><span data-stu-id="9d80d-286">Use the AD FS application activity report to migrate applications to Azure AD</span></span>](/azure/active-directory/manage-apps/migrate-adfs-application-activity)
