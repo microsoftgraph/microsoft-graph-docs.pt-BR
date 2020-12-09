@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: 85839539ae78963114ea7a9eaeac49307166a9ff
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e1051d60681e42012fd9df3fd8655a9e4cc745cd
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406298"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580960"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>tipo de recurso b2xIdentityUserFlow
 
@@ -33,6 +33,8 @@ Os fluxos de usuário são usados para habilitar uma experiência de [inscriçã
 |[Listar os provedores de identidade](../api/b2xidentityuserflow-list-identityproviders.md)|Coleção [identityProvider](../resources/identityProvider.md)|Recupere todos os provedores de identidade em um fluxo de usuário B2X.|
 |[Adicionar provedor de identidade](../api/b2xidentityuserflow-post-identityproviders.md)|Nenhum|Adicione um provedor de identidade a um fluxo de usuário B2X.|
 |[Remover provedor de identidade](../api/b2xidentityuserflow-delete-identityproviders.md)|Nenhum|Remova um provedor de identidade de um fluxo de usuário B2X.|
+|[Listar as atribuições de atributo de usuário](../api/b2xidentityuserflow-list-userattributeassignments.md)|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |Recupere todas as atribuições de atributos do usuário em um fluxo de usuário B2X.|
+|[Criar uma tarefa de atributo de usuário](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Crie uma atribuição de atributo de usuário em um fluxo de usuário B2X.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -47,6 +49,7 @@ Os fluxos de usuário são usados para habilitar uma experiência de [inscriçã
 | Relação       | Tipo  |Descrição|
 |:---------------|:--------|:----------|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
+|userAttributeAssignments|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |As atribuições de atributo de usuário incluídas no fluxo do usuário.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -64,6 +67,7 @@ Veja a seguir uma representação JSON do recurso.
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
-    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
+    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
 }
 ```

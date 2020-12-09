@@ -2,15 +2,15 @@
 title: Visão geral da API de relatórios de atividades
 description: Use a API de relatórios de atividades no Microsoft Graph para acessar os relatórios que o Azure Active Directory cria para ajudar a rastrear a atividade do usuário em um locatário.
 localization_priority: Priority
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ada166c457a5c6eb29aa7ff5dffe45491816c553
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 31ea854ab9ef69fdbb0698ea11fd3831bdb3f07c
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581922"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597246"
 ---
 # <a name="activity-reports-api-overview"></a>Visão geral da API de relatórios de atividades
 
@@ -18,12 +18,14 @@ Namespace: microsoft.graph
 
 O Azure Active Directory (Azure AD) rastreia a atividade do usuário e cria relatórios que ajudam a entender como seus usuários acessam e usam os serviços do Azure AD. Use a API do Microsoft Graph para Azure AD para analisar os dados nesses relatórios e criar soluções personalizadas adaptadas às necessidades específicas da sua organização.
 
-## <a name="what-are-azure-ad-activity-logs"></a>O que são os logs de atividades do Azure AD?
+A disponibilidade desses relatórios de atividades é regida pelas políticas de retenção de dados do Microsoft Azure Active Directory. Para saber mais, confira [políticas de retenção de dados](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-O Azure AD fornece três tipos de relatórios de atividades:
+## <a name="what-are-azure-ad-activity-logs"></a>O que são logs de atividade do Azure Active Directory?
 
-- Logs de auditoria
-- Logs de entrada
+O Microsoft Azure Active Directory fornece os seguintes tipos de relatórios de atividades:
+
+- Auditorias de diretório
+- Entradas
 
 ### <a name="directory-audits"></a>Auditorias de diretório
 
