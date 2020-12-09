@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 9f880922f30cad51c3b18e9c715f8313b0745f3e
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 39da18438a5286646a9814ca19afaa0648000d8a
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921715"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524705"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -95,7 +95,7 @@ Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats
 A API de Segurança do Microsoft Graph pode abrir novas formas de interagir com soluções de segurança diferentes da Microsoft e de parceiros. Siga estas etapas para iniciar:
 
 - Expandir [alerts](alert.md), [secureScore](securescore.md) e [secureScoreControlProfiles](securescorecontrolprofile.md).
-- Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer). Em **Consultas de Exemplo** , escolha **mostrar mais amostras** e defina a categoria Segurança como **on**.
+- Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer). Em **Consultas de Exemplo**, escolha **mostrar mais amostras** e defina a categoria Segurança como **on**.
 - Experimente [assinar e receber notificações](/graph/webhooks) sobre alterações de entidade.
 
 Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
@@ -114,7 +114,7 @@ Explore outras opções para se conectar com a API de segurança da Microsoft Gr
 
 - [Conectores de segurança do Microsoft Graph para Aplicativos de Lógica, Flow e PowerApps](https://aka.ms/graphsecurityconnectors)
 - [Conector de segurança do Microsoft Graph para Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
-- [Exemplos de bloco de anotações Jupyter](https://aka.ms/graphsecurityjupyternotebooks)
+- [Amostras do Bloco de anotações Jupyter](https://aka.ms/graphsecurityjupyternotebooks)
 
 Participe da comunidade:
 

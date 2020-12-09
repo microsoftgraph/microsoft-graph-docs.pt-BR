@@ -1,18 +1,18 @@
 ---
-title: Adicionar membros à equipe
+title: Adicionar membro à equipe.
 description: Adicionar um novo membro à equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2f3d26b883da5e86acc2fb2870dda0880d356f31
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 1ec45651d035b44bf10c16d4ab8128f5c38a1166
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848631"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522921"
 ---
-# <a name="create-members"></a>Criar membros
+# <a name="add-member-to-team"></a>Adicionar membro à equipe.
 Namespace: microsoft.graph
 
 Adicione um novo [conversationMember](../resources/conversationmember.md) à uma [equipe](../resources/team.md).
@@ -26,16 +26,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo| TeamMember.ReadWrite.All |
 
-> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-<!-- {
+<!-- 
+{
   "blockType": "ignored"
 }
 -->
 ``` http
-POST /teams/{teamsId}/members
+POST /teams/{team-id}/members
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -64,14 +65,14 @@ Para obter melhores resultados, coordene chamadas com 2 segundos de buffer.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/teams/{id}/members
+POST https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
-Content-length: 26
+Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"],
-    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -94,19 +95,22 @@ Content-length: 26
 
 ### <a name="response"></a>Resposta
 **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
-<!-- {
+
+<!-- 
+{
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.conversationMember"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
     "roles": [
         "owner"
     ],
@@ -115,3 +119,6 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+## <a name="see-also"></a>Confira também
+
+- [Adicionar membro no canal](channel-post-members.md)

@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9fa210486c924fc3e29e9d3f2ddfee5422a937f9
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: a87e70dc7ef99613a40f7579f58e8cb94df346ec
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932588"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597449"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -32,20 +32,21 @@ Um aplicativo também pode se inscrever para alterar notificações que incluem 
 
 Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alterações nos seguintes recursos:
 
-- [Mensagem][] do Outlook
-- [Evento][] do Outlook
-- [Contato][] pessoal do Outlook
-- [list][]
-- [user][]
-- [group][]
-- [Conversa][] em grupo do Microsoft 365
+- Impressão na nuvem [printTaskDefinition][]
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business
+- [group][]
+- [Conversa][] em grupo do Microsoft 365
+- [Evento][] do Outlook
+- [Mensagem][] do Outlook
+- [Contato][] pessoal do Outlook
 - [Alerta][] de segurança
+- [Lista][] do Microsoft Office SharePoint Online
 - Teams [callRecord][]
 - Teams [chatMessage][]
 - [presence][] do Teams (visualização)
-- Imprimir [printTaskDefinition][]
+- [todoTask][] (pré-visualização)
+- [usuário][]
 
 Você pode criar uma assinatura para uma pasta de específica do Outlook, como a Caixa de Entrada: `me/mailFolders('inbox')/messages`
 
@@ -60,11 +61,13 @@ Ou para a pasta raiz de uma unidade do SharePoint/OneDrive for Business: `/drive
 
 Ou para um novo alerta da [API de Segurança](security-concept-overview.md): `/security/alerts?$filter=status eq 'newAlert'`, `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
+Ou para as tarefas na Lista de Tarefas Pendentes de um usuário: `/me/todo/lists/{todoTaskListId}/tasks`
+
 ### <a name="azure-ad-resource-limitations"></a>Limitações de recursos do Microsoft Azure AD
 
 Determinadas limites se aplicam aos recursos baseados no Azure AD (usuários, grupos) e gerarão erros se forem excedidos:
 
-> **Observação** : Esses limites não se aplicam aos recursos de serviços diferente do Azure AD. Por exemplo, um aplicativo pode criar muito mais assinaturas para `message` ou recursos `event` que são aceitos pelo serviço Exchange Online como parte do Microsoft Graph.
+> **Observação**: Esses limites não se aplicam aos recursos de serviços diferente do Azure AD. Por exemplo, um aplicativo pode criar muito mais assinaturas para `message` ou recursos `event` que são aceitos pelo serviço Exchange Online como parte do Microsoft Graph.
 
 - Cotas máximas de assinaturas:
 
@@ -82,7 +85,7 @@ Quando os limites são excedidos, a tentativa de criar uma assinatura resultará
 
 ### <a name="outlook-resource-limitations"></a>Limitações de recursos do Outlook
 
-Ao se inscrever em recursos do Outlook, tais como **mensagens** , **eventos** ou **contatos** , se você decidir usar o *nome UPN* em um caminho de recurso, a solicitação de assinatura pode falhar caso o UPN contenha um apóstrofo. Considere usar IDs de usuário de GUID em vez de UPNs para evitar esse problema. Por exemplo, em vez de usar o caminho de recursos:
+Ao se inscrever em recursos do Outlook, tais como **mensagens**, **eventos** ou **contatos**, se você decidir usar o *nome UPN* em um caminho de recurso, a solicitação de assinatura pode falhar caso o UPN contenha um apóstrofo. Considere usar IDs de usuário de GUID em vez de UPNs para evitar esse problema. Por exemplo, em vez de usar o caminho de recursos:
 
 `/users/sh.o'neal@contoso.com/messages`
 
@@ -94,7 +97,7 @@ Use:
 
 Cada recurso do Teams possui cotas de assinatura diferentes.
 
-- Para assinaturas do **callRecords** :
+- Para assinaturas do **callRecords**:
   - Por organização: 100 assinaturas totais
 
 - Para assinaturas de **chatMessages** (canais ou chats):
@@ -283,18 +286,19 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 
 | Recurso | Latência média | Latência máxima |
 |:-----|:-----|:-----|
+|[alerta][] | Menos de 3 minutos | 5 minutos |
 |[callRecord][] | Menos de 15 minutos | 60 minutos |
 |[chatMessage][] | Menos de 10 segundos | 1 minuto |
 |[contato][] | Desconhecido | Desconhecido |
+|[conversa][] | Desconhecido | Desconhecido |
 |[driveItem][] | Menos de 1 minuto | 5 minutos |
 |[evento][] | Desconhecido | Desconhecido |
 |[grupo][] | Menos de 2 minutos | 15 minutos |
-|[conversa][] | Desconhecido | Desconhecido |
 |[lista][] | Menos de 1 minuto | 5 minutos |
 |[mensagem][] | Desconhecido | Desconhecido |
-|[alerta][] | Menos de 3 minutos | 5 minutos |
 |[presença][] (pré-visualização) | Menos de 10 segundos | 1 minuto |
 |[printTaskDefinition][] | Menos de 1 minuto | 5 minutos |
+|[todoTask][] | Menos de 2 minutos | 15 minutos |
 |[usuário][] | Menos de 2 minutos | 15 minutos |
 
 >**Observação:** a latência fornecida para o recurso de **alerta** só será aplicável depois que o próprio alerta tiver sido criado. Não inclui o tempo necessário para uma regra criar um alerta a partir dos dados.
@@ -307,7 +311,7 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 - Tipo de recurso [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)
 - Tipo de recurso [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)
 - [Tutorial para notificações de alteração as notificações e controle de alterações](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Notificações do ciclo de vida](/graph/concepts/webhooks-lifecycle.md)
+- [Notificações do ciclo de vida](/graph/webhooks-lifecycle)
 
 [contato]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversa]: /graph/api/resources/conversation?view=graph-rest-1.0
@@ -322,3 +326,4 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[todoTask]: /graph/api/resources/todotask
