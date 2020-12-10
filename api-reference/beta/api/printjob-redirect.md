@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7a047641696f0882e83a3b84aa215084083d245b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3c09827b349b2402aeb8f1a37be64643b87d1d5
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968285"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617070"
 ---
 # <a name="printjob-redirect"></a>printJob: Redirect
 
@@ -22,9 +22,6 @@ Redirecionar um [trabalho de impressão](../resources/printjob.md) para uma [imp
 
 Para obter detalhes sobre como usar essa API para adicionar suporte à impressão pull à impressão universal, consulte [Estendeing universal print to support pull Printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
-> [!IMPORTANT]
-> Os trabalhos de impressão pausados que não são redirecionados em 2 dias serão excluídos.
-
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -34,7 +31,7 @@ Para usar o serviço de impressão universal, o usuário ou o locatário do apli
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| PrintJob.Manage.All |
+|Aplicativo| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +48,8 @@ No corpo da solicitação, forneça a ID da impressora para a qual o trabalho de
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationPrinterId|String|A ID da impressora para a qual o trabalho de impressão deve ser redirecionado.|
+|destinationPrinterId|Cadeia de caracteres|A ID da impressora para a qual o trabalho de impressão deve ser redirecionado.|
+|configuration|Microsoft. Graph. printJobConfiguration|Configuração atualizada do trabalho de impressão.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [printJob](../resources/printjob.md) enfileirados para a impressora de destino.
@@ -61,8 +59,6 @@ O exemplo a seguir mostra como chamar essa API.
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-redirect"
@@ -74,26 +70,6 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
   "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-redirect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-redirect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 

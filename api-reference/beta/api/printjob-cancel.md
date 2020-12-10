@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9b6d3691685dc3cc59d638ebe4564ccfa8b39fb8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4c4522ef8fb19226475758986d1245c447358095
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968299"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617014"
 ---
 # <a name="printjob-cancel"></a>printJob: cancelar
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancelar um trabalho de impressão.
+Cancelar um trabalho de impressão. Os trabalhos de impressão podem ser cancelados somente em nome de um usuário, usando permissões delegadas.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Além das permissões a seguir, o locatário do usuário ou do aplicativo deve t
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob. ReadWriteBasic, PrintJob. ReadWrite, PrintJob. ReadWriteBasic. All, PrintJob. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application| Sem suporte. |
+|Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

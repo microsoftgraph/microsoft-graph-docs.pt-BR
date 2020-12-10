@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 249923a4a962e717d049b564c270ab2e750b2639
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: ab0e93e2206f7fac8d8c8dbc882277644e858730
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597463"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617049"
 ---
 # <a name="overview-of-compliance-in-microsoft-graph"></a>Visão geral da conformidade no Microsoft Graph
 
@@ -43,5 +43,5 @@ Dependendo dos sistemas e processos atuais, as organizações podem ter várias 
 ## <a name="next-steps"></a>Próximas etapas
 
 - Explore seus próprios dados no recurso usuário no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Explore as [APIs de conformidade do Microsoft Graph](graph/api/resources/complianceapioverview).
+- Explore as [APIs de conformidade do Microsoft Graph](/graph/api/resources/complianceapioverview).
 - Explore os [exemplos e SDKs](https://developer.microsoft.com/graph/gallery/?filterBy=Samples,SDKs)do Microsoft Graph.

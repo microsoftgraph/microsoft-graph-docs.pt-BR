@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 37c552a1239ee1d374c22be77ba81004cfc92e1f
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: 5833dc1f37620a419153100ebf9ce6d7f141fa5d
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993952"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617007"
 ---
 # <a name="printer-resource-type"></a>tipo de recurso de impressora
 
@@ -24,7 +24,7 @@ Representa um dispositivo de impressora que foi registrado com o serviço de imp
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Create](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com impressão universal. |
+| [Criar](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Criar (registrar) uma nova impressora com impressão universal. |
 | [Get](../api/printer-get.md) | [impressora](printer.md) | Leia as propriedades e as relações do objeto Printer. |
 | [Update](../api/printer-update.md) | [impressora](printer.md) | Atualize o objeto Printer. |
 | [Delete](../api/printer-delete.md) | Nenhum | Cancelar o registro da impressora física do serviço de impressão universal. |
@@ -46,8 +46,9 @@ Representa um dispositivo de impressora que foi registrado com o serviço de imp
 |registeredDateTime|DateTimeOffset|O DateTimeOffset quando a impressora foi registrada. Somente leitura.|
 |status|[printerStatus](printerstatus.md)|O status de processamento da impressora, incluindo erros.|
 |isShared|Booliano|True se a impressora é compartilhada; caso contrário, false. Somente leitura.|
+|hasPhysicalDevice|Booliano|True se a impressora tem um dispositivo físico para impressão. Somente leitura.|
 |isAcceptingJobs|Booliano|Se a impressora está atualmente aceitando novos trabalhos de impressão.|
-|localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora.|
+|location|[printerLocation](printerlocation.md)|O local físico e/ou organizacional da impressora.|
 |defaults|[printerDefaults](printerdefaults.md)|As configurações de impressão padrão da impressora.|
 |capabilities|[printerCapabilities](printercapabilities.md)|Os recursos da impressora associada a este compartilhamento de impressora.|
 
@@ -82,6 +83,7 @@ Veja a seguir uma representação JSON do recurso.
   "isShared": true,
   "registeredDateTime": "String (timestamp)",
   "isAcceptingJobs": true,
+  "hasPhysicalDevice": true,
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
