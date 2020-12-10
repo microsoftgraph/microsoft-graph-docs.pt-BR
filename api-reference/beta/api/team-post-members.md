@@ -1,93 +1,92 @@
 ---
-title: Adicionar membros à equipe
+title: Adicionar membro à equipe.
 description: Adicionar um novo membro à equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 32a9cceb77c142f31fbaac44ab4f8e782f89e560
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9291cb0c60ed740ec9fdf1155a7f1e75e56f1705
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974564"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387833"
 ---
-# <a name="create-members"></a><span data-ttu-id="00fd3-103">Criar membros</span><span class="sxs-lookup"><span data-stu-id="00fd3-103">Create members</span></span>
-<span data-ttu-id="00fd3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="00fd3-104">Namespace: microsoft.graph</span></span>
+# <a name="add-member-to-team"></a><span data-ttu-id="6f731-103">Adicionar membro à equipe.</span><span class="sxs-lookup"><span data-stu-id="6f731-103">Add member to team</span></span>
+<span data-ttu-id="6f731-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6f731-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="00fd3-105">Adicione um novo [conversationMember](../resources/conversationmember.md) à uma [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="00fd3-105">Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).</span></span>
+<span data-ttu-id="6f731-105">Adicione um novo [conversationMember](../resources/conversationmember.md) à uma [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="6f731-105">Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="00fd3-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="00fd3-106">Permissions</span></span>
-<span data-ttu-id="00fd3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="00fd3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6f731-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6f731-106">Permissions</span></span>
+<span data-ttu-id="6f731-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6f731-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="00fd3-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="00fd3-109">Permission type</span></span>|<span data-ttu-id="00fd3-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="00fd3-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6f731-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6f731-109">Permission type</span></span>|<span data-ttu-id="6f731-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="6f731-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="00fd3-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="00fd3-111">Delegated (work or school account)</span></span>| <span data-ttu-id="00fd3-112">TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="00fd3-112">TeamMember.ReadWrite.All</span></span> |
-|<span data-ttu-id="00fd3-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="00fd3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="00fd3-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="00fd3-114">Not supported.</span></span>    |
-|<span data-ttu-id="00fd3-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="00fd3-115">Application</span></span>| <span data-ttu-id="00fd3-116">TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="00fd3-116">TeamMember.ReadWrite.All</span></span> |
+|<span data-ttu-id="6f731-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6f731-111">Delegated (work or school account)</span></span>| <span data-ttu-id="6f731-112">TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6f731-112">TeamMember.ReadWrite.All</span></span> |
+|<span data-ttu-id="6f731-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6f731-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6f731-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6f731-114">Not supported.</span></span>    |
+|<span data-ttu-id="6f731-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6f731-115">Application</span></span>| <span data-ttu-id="6f731-116">TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6f731-116">TeamMember.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="00fd3-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="00fd3-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6f731-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6f731-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-POST /teams/{teamsId}/members
-POST /teams/{teamsId}/channels/{channelId}/members
+POST /teams/{team-id}/members
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="00fd3-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="00fd3-118">Request headers</span></span>
-|<span data-ttu-id="00fd3-119">Nome</span><span class="sxs-lookup"><span data-stu-id="00fd3-119">Name</span></span>|<span data-ttu-id="00fd3-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="00fd3-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6f731-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6f731-118">Request headers</span></span>
+|<span data-ttu-id="6f731-119">Nome</span><span class="sxs-lookup"><span data-stu-id="6f731-119">Name</span></span>|<span data-ttu-id="6f731-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f731-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="00fd3-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="00fd3-121">Authorization</span></span>|<span data-ttu-id="00fd3-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="00fd3-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="00fd3-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="00fd3-124">Content-Type</span></span>|<span data-ttu-id="00fd3-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="00fd3-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="6f731-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="6f731-121">Authorization</span></span>|<span data-ttu-id="6f731-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6f731-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="6f731-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6f731-124">Content-Type</span></span>|<span data-ttu-id="6f731-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6f731-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="00fd3-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="00fd3-127">Request body</span></span>
-<span data-ttu-id="00fd3-128">No corpo da solicitação, forneça uma representação JSON do objeto [conversationMember](../resources/conversationmember.md).</span><span class="sxs-lookup"><span data-stu-id="00fd3-128">In the request body, supply a JSON representation of the [conversationMember](../resources/conversationmember.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6f731-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6f731-127">Request body</span></span>
+<span data-ttu-id="6f731-128">No corpo da solicitação, forneça uma representação JSON do objeto [conversationMember](../resources/conversationmember.md).</span><span class="sxs-lookup"><span data-stu-id="6f731-128">In the request body, supply a JSON representation of the [conversationMember](../resources/conversationmember.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="00fd3-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="00fd3-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6f731-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f731-129">Response</span></span>
 
-<span data-ttu-id="00fd3-130">Se bem-sucedido, este método retornará um código de resposta `201 Created` e um objeto [conversationMember](../resources/conversationmember.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="00fd3-130">If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span> <span data-ttu-id="00fd3-131">Para obter melhores resultados, coordene chamadas com 2 segundos de buffer.</span><span class="sxs-lookup"><span data-stu-id="00fd3-131">For best results, stagger calls with 2 seconds of buffer.</span></span>
+<span data-ttu-id="6f731-130">Se bem-sucedido, este método retornará um código de resposta `201 Created` e um objeto [conversationMember](../resources/conversationmember.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6f731-130">If successful, this method returns a `201 Created` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.</span></span> <span data-ttu-id="6f731-131">Para obter melhores resultados, coordene chamadas com 2 segundos de buffer.</span><span class="sxs-lookup"><span data-stu-id="6f731-131">For best results, stagger calls with 2 seconds of buffer.</span></span>
 
-<span data-ttu-id="00fd3-132">Para obter melhores resultados, coordene chamadas com 2 segundos de buffer.</span><span class="sxs-lookup"><span data-stu-id="00fd3-132">For best results, stagger calls with a 2 second buffer.</span></span>
+<span data-ttu-id="6f731-132">Para obter melhores resultados, coordene chamadas com 2 segundos de buffer.</span><span class="sxs-lookup"><span data-stu-id="6f731-132">For best results, stagger calls with a 2 second buffer.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="00fd3-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="00fd3-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="6f731-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6f731-133">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="00fd3-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="00fd3-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="6f731-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6f731-134">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="00fd3-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="00fd3-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6f731-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="6f731-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversationmember_from_"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{id}/members
+POST https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
-Content-length: 26
+Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"],
-    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="00fd3-136">C#</span><span class="sxs-lookup"><span data-stu-id="00fd3-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6f731-136">C#</span><span class="sxs-lookup"><span data-stu-id="6f731-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationmember-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="00fd3-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="00fd3-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6f731-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6f731-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversationmember-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="00fd3-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="00fd3-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6f731-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6f731-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversationmember-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="00fd3-139">Java</span><span class="sxs-lookup"><span data-stu-id="00fd3-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="6f731-139">Java</span><span class="sxs-lookup"><span data-stu-id="6f731-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conversationmember-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -95,8 +94,8 @@ Content-length: 26
 
 
 
-### <a name="response"></a><span data-ttu-id="00fd3-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="00fd3-140">Response</span></span>
-<span data-ttu-id="00fd3-141">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="00fd3-141">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="6f731-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f731-140">Response</span></span>
+<span data-ttu-id="6f731-141">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="6f731-141">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,7 +108,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
     "roles": [
         "owner"
     ],
@@ -118,5 +117,9 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+
+## <a name="see-also"></a><span data-ttu-id="6f731-142">Confira também</span><span class="sxs-lookup"><span data-stu-id="6f731-142">See also</span></span>
+
+- [<span data-ttu-id="6f731-143">Adicionar membro no canal</span><span class="sxs-lookup"><span data-stu-id="6f731-143">Add member in channel</span></span>](channel-post-members.md)
 
 
