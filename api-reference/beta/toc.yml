@@ -40,7 +40,7 @@ items:
             href: /graph/webhooks?context=graph/api/beta
           - name: Tutorial
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: Notificações de alteração ausentes
+          - name: Notificações de alterações ausentes
             href: /graph/webhooks-lifecycle
           - name: Notificações com dados de recursos
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
@@ -777,7 +777,7 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: Excluir extensão
                     href: api/application-delete-extensionproperty.md
-              - name: Owners
+              - name: Proprietários
                 items:
                   - name: Listar proprietários
                     href: api/application-list-owners.md
@@ -968,7 +968,7 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: getMemberObjects
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: Owners
+              - name: Proprietários
                 items:
                   - name: Listar proprietários
                     href: api/serviceprincipal-list-owners.md
@@ -1422,14 +1422,14 @@ items:
                 href: api/onlinemeeting-update.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
-          - name: Presença (pré-visualização)
+          - name: Presença (visualização)
             href: resources/presence.md
             items:
               - name: Obter presença
                 href: api/presence-get.md
               - name: Obter presença para vários usuários
                 href: api/cloudcommunications-getpresencesbyuserid.md
-      - name: Conformidade (visualização)
+      - name: Conformidade (pré-visualização)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
           - name: Visão geral
@@ -8969,7 +8969,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: Listar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Excluir
+                      - name: Delete
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Relatórios do gerenciamento de dispositivos
                     href: resources/intune-shared-devicemanagementreports.md
@@ -10246,7 +10246,7 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: Adicionar
                         href: api/emailauthenticationmethod-post.md
-                  - name: Password
+                  - name: Senha
                     href: resources/passwordauthenticationmethod.md
                     items:
                       - name: Listar
@@ -10279,6 +10279,15 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: Excluir
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+                  - name: Política de email
+                    href: resources/emailauthenticationmethodconfiguration.md
+                    items:
+                      - name: Obter
+                        href: api/emailauthenticationmethodconfiguration-get.md
+                      - name: Atualizar
+                        href: api/emailauthenticationmethodconfiguration-update.md
+                      - name: Excluir
+                        href: api/emailauthenticationmethodconfiguration-delete.md
               - name: Política de métodos de autenticação do B2C
                 href: resources/b2cauthenticationmethodspolicy.md
                 items:
@@ -10687,9 +10696,9 @@ items:
                         href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: Remover provedor de identidade
                         href: api/b2cidentityuserflow-delete-identityproviders.md
-                      - name: Listar atribuições de atributo de usuário
+                      - name: Listar as atribuições de atributo de usuário
                         href: api/b2cidentityuserflow-list-userattributeassignments.md
-                      - name: Criar atribuição de atributo de usuário
+                      - name: Criar uma tarefa de atributo de usuário
                         href: api/b2cidentityuserflow-post-userattributeassignments.md
                   - name: Fluxos de usuário de inscrição de autoatendimento
                     items:
@@ -10709,9 +10718,9 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: Remover provedor de identidade
                         href: api/b2xidentityuserflow-delete-identityproviders.md
-                      - name: Listar atribuições de atributo de usuário
+                      - name: Listar as atribuições de atributo de usuário
                         href: api/b2xidentityuserflow-list-userattributeassignments.md
-                      - name: Criar atribuição de atributo de usuário
+                      - name: Criar uma tarefa de atributo de usuário
                         href: api/b2xidentityuserflow-post-userattributeassignments.md
                   - name: Atributos de fluxo do usuário
                     items:
@@ -12099,7 +12108,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
