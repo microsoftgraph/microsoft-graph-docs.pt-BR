@@ -4,16 +4,16 @@ description: As notificações de alteração podem ser enviadas por meio de tec
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 5ed996076ae5e061f4ef2550fb1ad4f505de5f0a
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 52e3be5a2a1beb69417327bd90fb6571c7b93921
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49275423"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581058"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways-preview"></a>Receba notificações sobre alterações por diferentes maneiras de envio(versão prévia)
 
-A alteração de notificações podem ser enviadas em diferentes maneiras aos assinantes. Se o modo de entrega principal para as notificações de alteração é através de webhooks, pode ser um desafio tira proveito do webhooks para cenários de alta produtividade ou quando o receptor não puder expor uma URL de notificação disponível publicamente.  
+A alteração de notificações podem ser enviadas em diferentes maneiras aos assinantes. Se o principal modo de entrega para notificações de alteração for por meio de webhooks, pode ser desafiador tirar proveito de webhooks para cenários de alto rendimento ou quando o receptor não pode expor uma URL de notificação disponível publicamente.  
 
 Esse modo de entrega de notificações de alterações está disponível para todos os recursos que oferecem suporte a notificações de alterações do Microsoft Graph.
 
@@ -35,7 +35,7 @@ Esta seção vai orientá-lo a configurar os necessários serviços do Azure.
 
 #### <a name="option-1-using-the-azure-cli"></a>Opção 1: Usando o CLI do Azure
 
-O [CLI do Azure](/cli/azure/what-is-azure-cli?view=azure-cli-latest) permite que você escreva o script e automatize tarefas administrativas no Azure. O CLI pode ser [instalado em seu computador local](/cli/azure/install-azure-cli?view=azure-cli-latest) ou ser executado diretamente a partir do [Azure Cloud Shell](/azure/cloud-shell/quickstart).
+O [CLI do Azure](/cli/azure/what-is-azure-cli) permite que você escreva o script e automatize tarefas administrativas no Azure. O CLI pode ser [instalado em seu computador local](/cli/azure/install-azure-cli) ou ser executado diretamente a partir do [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
 ```shell
 # --------------
@@ -166,7 +166,7 @@ Antes de receber as notificações no aplicativo, você precisará criar outra p
 
 ### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>O que acontece se o aplicativo de controle de alterações do Microsoft Graph estiver ausente?
 
-É possível que o serviço principal do **Controle de Alterações do Microsoft Graph** esteja ausente no seu locatário, dependendo de quando o locatário foi criado e de operações administrativas. Para resolver este problema, execute [a seguinte consulta](https://developer.microsoft.com/pt-BR/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) no [Microsoft Graph Explorer](https://developer.microsoft.com/pt-BR/graph/graph-explorer).
+É possível que o serviço principal do **Controle de Alterações do Microsoft Graph** esteja ausente no seu locatário, dependendo de quando o locatário foi criado e de operações administrativas. Para resolver este problema, execute [a seguinte consulta](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) no [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 Detalhes da consulta:
 

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 9e7629664c8d8ae844812d596a81a3ded716583d
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 826d3e2f08c846ad19e43bb92952bb962adb4dcb
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030204"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606871"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -112,6 +112,13 @@ Esse recurso permite:
 | [Listar tarefas](../api/planneruser-list-tasks.md)                                             | Coleção [plannerTask](plannertask.md)                                         | Obter o plannerTasks atribuído ao usuário.                                                                                                                                                                                              |
 | **Extensões de esquema**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups)                          | Nenhum                                                                             | Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.                                                                                                                                        |
+| **Teamwork** |||
+|[Lista de aplicativos instalados para o usuário](../api/userteamwork-list-installedapps.md) | Coleção[userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lista os aplicativos instalados no escopo pessoal de um usuário.|
+|[Obtém o aplicativo instalado para o usuário](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lista o aplicativo especificado instalado no escopo pessoal de um usuário. |
+|[Adicionar aplicativo para o usuário](../api/userteamwork-post-installedapps.md) | Nenhum | Adiciona (instala) um aplicativo no escopo pessoal de um usuário.|
+|[Remover aplicativo para o usuário](../api/userteamwork-delete-installedapps.md) | Nenhum | Remove (desinstala) um aplicativo no escopo pessoal de um usuário.|
+|[Atualizar aplicativo instalado para o usuário](../api/userteamwork-teamsappinstallation-upgrade.md) | Nenhum | Atualiza para a versão mais recente do aplicativo instalado no escopo pessoal de um usuário.|
+|[Obter chat entre usuário e aplicativo](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lista um chat individual entre o usuário e o aplicativo. |
 | **Tarefas pendentes** |||
 |[Criar tarefa](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Crie um [todoTask](todotask.md) na lista de tarefas especificada.|
 |[Criar uma lista de tarefas](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Criar uma lista de tarefas To Dona caixa de correio do usuário. |
@@ -141,7 +148,7 @@ Esse recurso permite:
 |creationType|String|Indica se a conta de usuário foi criada como uma conta corporativa ou de estudante (`null`), uma conta externa (`Invitation`), uma conta local para um locatário do Azure Active Directory B2C (`LocalAccount`) ou uma inscrição de autoatendimento usando a verificação de email (`EmailVerified`). Somente leitura.|
 |deletedDateTime| DateTimeOffset | A data e hora que o usuário foi excluído. <br><br>Retornado apenas em `$select`. |
 |department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte para `$filter`.|
-|displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte para `$filter` e `$orderby`.|
+|displayName|String|O nome exibido para o usuário no catálogo de endereços. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte para `$filter` e `$orderby`.|
 | employeeHireDate | DateTimeOffset | A data e a hora em que o usuário foi contratado ou começará a trabalhar em caso de futura contratação. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`.|
 | employeeId | String | O identificador de funcionário atribuído ao usuário pela organização. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`.|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Representa os dados da organização (por exemplo, divisão e costCenter) associados a um usuário. <br><br>Retornado apenas em `$select`.|
@@ -158,7 +165,7 @@ Esse recurso permite:
 |isResourceAccount|Boolean| Não use – reservado para uso futuro.|
 |jobTitle|String|O cargo do usuário. Oferece suporte para `$filter`.|
 |lastPasswordChangeDateTime| DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'|
-|legalAgeGroupClassification|String| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades `ageGroup` e `consentProvidedForMinor`. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
+|legalAgeGroupClassification|String| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licenças para esse usuário. Somente leitura.|
 |email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Oferece suporte para `$filter`.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Configurações da caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada.|
@@ -184,8 +191,8 @@ Esse recurso permite:
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US".|
 |preferredName|String|O nome preferencial do usuário.|
 |provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
-|proxyAddresses|String collection|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura, Não anulável. Oferece suporte para `$filter`.|
-|refreshTokensValidFromDateTime|DateTimeOffset|Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em `$select`. Somente leitura. |
+|proxyAddresses|String collection|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura, não anulável. Oferece suporte para `$filter`.|
+|refreshTokensValidFromDateTime|DateTimeOffset|Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em `$select`. Apenas leitura. |
 |responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|
 |schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que frequentou.|
 |showInAddressList|Booliano|**true** se a lista de endereços global do Outlook deve conter o usuário, caso contrário **false**. Se não estiver configurado, isso será tratado como **true**. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como **false**.|
@@ -200,44 +207,45 @@ Esse recurso permite:
 
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
 
-Esta seção explica como as três propriedades de faixa etária (`legalAgeGroupClassification`, `ageGroup` e `consentProvidedForMinor`) são usadas pelos administradores do Azure AD e desenvolvedores de aplicativos empresariais para atender às normas de idade.
+Esta seção explica como as três propriedades de faixa etária (**legalAgeGroupClassification**, **ageGroup** e **consentProvidedForMinor**) são usadas pelos administradores do Azure Active Directory e desenvolvedores de aplicativo empresarial para atender às normas de idade:
+- A propriedade legal **AgeGroupClassification** é somente leitura. É usado por desenvolvedores de aplicativo empresarial para garantir o tratamento correto de um usuário com base em sua faixa etária legal. É calculado com base nas propriedades **ageGroup** e **consentProvidedForMinor** do usuário.
+- **ageGroup** e **consentProvidedForMinor** são propriedades opcionais usadas pelos administradores do Azure Active Directory para ajudar a garantir que o uso de uma conta seja tratado corretamente com base nas regras de regulamentação relacionadas à idade que regem o país ou região do usuário.
 
-Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino fundamental em Holyport, no Reino Unido. No início do ano letivo ele usa a documentação de admissão para obter o consentimento dos pais dos menores baseado nos regulamentos relacionadas com a idade no Reino Unido. O consentimento obtido do pai permite que a conta do menor seja usado pela escola de Holyport e os aplicativos da Microsoft. Cameron cria todas as contas e define o ageGroup para "menor" e consentProvidedForMinor para "concedido". Os aplicativos usados por seus alunos poderão, então suprimir recursos que não são adequados para menores.
+Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino fundamental em Holyport, no Reino Unido. No início do ano letivo ele usa a documentação de admissão para obter o consentimento dos pais dos menores baseado nos regulamentos relacionadas com a idade no Reino Unido. O consentimento obtido do pai permite que a conta do menor seja usado pela escola de Holyport e os aplicativos da Microsoft. Cameron cria todas as contas e define **ageGroup** como `minor` e **consentProvidedForMinor** como `granted`. Os aplicativos usados ​​por seus alunos podem suprimir recursos que não são adequados para menores.
 
-#### <a name="legal-age-group-classification"></a>Classificação da faixa etária legal
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
+For some reason they are not defined as enums in the CSDL. 
+Hence the type of the corresponding 3 properties remain as string type in the Properties table.
+-->
 
-Essa propriedade de somente leitura é usada por desenvolvedores de aplicativos empresariais para garantir a manipulação correta do usuário com base em sua faixa etária legal. É calculada com base nas propriedades de `ageGroup` e `consentProvidedForMinor` do usuário.
+#### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
 
-| Valor    | #  |Descrição|
+| Member    | Descrição|
+|:---------------|:----------|
+|null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
+|minorWithoutParentalConsent |(Reservado para uso futuro)|
+|minorWithParentalConsent| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
+|adult|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
+|notAdult|O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
+|minorNoParentalConsentRequired|O usuário é menor de idade, mas é de um país ou região que não tem normas relacionadas à idade.|
+
+#### <a name="agegroup-values"></a>ageGroup values
+
+| Member    | Descrição|
 |:---------------|:--------|:----------|
-|null|0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
-|minorWithoutParentalConsent |1|(Reservado para uso futuro)|
-|minorWithParentalConsent|2| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
-|adult|3|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
-|notAdult|4|O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
-|minorNoParentalConsentRequired|5|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
+|null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
+|menor|O usuário é considerado um menor.|
+|notAdult|O usuário é de um país que tem regulamentos estatutários (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior que o limite superior de idade infantil (por país) e menor do que o limite inferior de idade adulta (estipulado com base em cada país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
+|adult|O usuário deve ser tratado como um adulto.|
 
-#### <a name="age-group-and-minor-consent"></a>Faixa etária e consentimento de menor
+#### <a name="consentprovidedforminor-values"></a>consentProvidedForMinor values
 
-As propriedades de faixa etária e consentimento de menor são propriedades opcionais usadas por administradores do Azure AD para garantir que o uso da conta é tratado corretamente com base nas regras de regulamentação relacionadas à idade que regem o país ou a região do usuário.
-
-#### <a name="agegroup-property"></a>propriedade ageGroup
-
-| Valor    | #  |Descrição|
-|:---------------|:--------|:----------|
-|null|0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
-|minor|1|O usuário é considerado um menor.|
-|notAdult|2|O usuário é de um país que tem regulamentos estatutários (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior que o limite superior de idade infantil (por país) e menor do que o limite inferior de idade adulta (estipulado com base em cada país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
-|adult|3|O usuário deve ser tratado como um adulto.|
-
-#### <a name="consentprovidedforminor-property"></a>Propriedade consentProvidedForMinor
-
-| Valor    | #  |Descrição|
-|:---------------|:--------|:----------|
-|null|0|Valor padrão, nenhum `consentProvidedForMinor` foi definido para o usuário.|
-|granted|1|O consentimento foi obtido para o usuário ter uma conta.|
-|denied|2|O consentimento não foi obtido para o usuário ter uma conta.|
-|notRequired|3|O usuário é de um local que não exige consentimento.|
+| Member    | Descrição|
+|:---------------|:----------|
+|null|Valor padrão, nenhum **consentimentoProvidedForMinor** foi definido para o usuário.|
+|concedido|O consentimento foi obtido para o usuário ter uma conta.|
+|denied|O consentimento não foi obtido para o usuário ter uma conta.|
+|notRequired|O usuário é de um local que não exige consentimento.|
 
 ## <a name="relationships"></a>Relações
 
@@ -254,7 +262,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade manager está definida como esse usuário.) Somente leitura. Anulável. |
 |drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
-|eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
+|events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[officeGraphInsights](officegraphinsights.md) | Somente leitura. Anulável.|

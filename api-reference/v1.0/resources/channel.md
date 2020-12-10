@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso de usuário
 description: 'Um canal é uma coleção de chatMessages dentro de uma equipe. '
-author: clearab
+author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 59a6b111c08b6bfb408b1f28b4db343843ed12ad
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 373bbc2fa8da40af1549e9b0b06d90affe8805a0
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932581"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606927"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -29,15 +29,20 @@ Namespace: microsoft.graph
 |[Delete channel](../api/channel-delete.md) | Nenhum | Exclua um canal.|
 |[Obter o delta de mensagem](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens incrementais em um canal. |
 |[Listar mensagens do canal](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens em um canal. |
-|[Listar membros do canal](../api/conversationmember-list.md)| coleção [conversationMember](conversationmember.md)| Liste os membros de um canal. |
-|[Obter membros do canal](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Obter um membro de um canal. |
-|[Adicionar membro do canal](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Adicionar um membro a um canal. Compatível apenas com o `channelType` de `private`.|
-|[Atualizar membro do canal](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Atualizar um membro de um canal. Compatível apenas com o `channelType` de `private`.|
-|[Excluir membro do canal](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Excluir um membro de um canal. Compatível apenas com o `channelType` de `private`.|
-|[Criar chatMessage em um canal](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
-|[Criar uma resposta chatMessage em um canal](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal.|
-|[Obter pasta de arquivos](../api/driveitem-get.md).| [driveItem](driveitem.md) | Recupera os detalhes da pasta do SharePoint em que os arquivos do canal estão armazenados. |
-|[Listar guias](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
+|[Criar postagem de mensagem no canal](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
+|[Criar resposta à postagem da mensagem do canal](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal.|
+|[Obter pasta de arquivos](../api/channel-get-filesfolder.md).| [driveItem](driveitem.md) | Recupera os detalhes da pasta do SharePoint em que os arquivos do canal estão armazenados. |
+|[Listar guias](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
+|[Listar membros do canal](../api/channel-list-members.md) | coleção [conversationMember](conversationmember.md) | Obtenha uma lista de todas as mensagens raiz em um canal.|
+|[Obter canal do membro](../api/channel-get-members.md) | [conversationMember](conversationmember.md) coleção | Obtenha um membro em um canal.|
+|[Adicionar membro do canal](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Adicionar um membro a um canal. Suportado só para o`channel`com MembershipType de.`private`|
+|[Atualizar a função do membro do canal](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Atualize as propriedades de um membro do canal. Suportado só para o canal com MembershipType de`private`.|
+|[Remover membro do canal](../api/channel-delete-members.md) | Nenhum | Exclua um membro de um canal. Suportado apenas para `channelType` de `private`.|
+|[Listar guias no canal](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Liste guias fixadas a um canal.|
+|[Guia obter no canal](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Fixe uma guia específica em um canal.|
+|[Adicionar uma guia ao canal](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia a um canal.|
+|[Guia atualizar no canal](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Atualiza as propriedades de uma guia em um canal.|
+|[Remover guia do canal](../api/channel-delete-tabs.md) | Nenhum | Remover (Desafixar) uma guia de um canal.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -49,6 +54,7 @@ Namespace: microsoft.graph
 |isFavoriteByDefault|Booliano|Indica se o canal deve automaticamente ser marcado como “favorito” para todos os membros da equipe. Só pode ser definida por programação com [Criar equipe](../api/team-post.md). Padrão: `false`.|
 |email|Cadeia de caracteres| O endereço de email para enviar mensagens ao canal. Somente leitura.|
 |webUrl|String|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
+|membershipType|channelMembershipType|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Valores possíveis são:`standard` - Canal herda a lista de membros da equipe principal;`private` - O canal pode ter membros que são um subconjunto de todos os membros da equipe principal.
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de criação do canal.|
 
 ## <a name="relationships"></a>Relações
@@ -57,6 +63,7 @@ Namespace: microsoft.graph
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável.|
 |guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
+|membros|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|
 |operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. |
 
@@ -81,6 +88,7 @@ Veja a seguir uma representação JSON do recurso.
   "isFavoriteByDefault": true,
   "email": "string",
   "webUrl": "string",
+  "membershipType": "string",
   "createdDateTime": "string (timestamp)"
 }
 ```

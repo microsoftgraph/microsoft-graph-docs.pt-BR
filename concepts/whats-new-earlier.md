@@ -3,16 +3,79 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: f096f2e24ecfa146585a82490ae74d8c1e903b34
-ms.sourcegitcommit: 4e7830a22b440bbbcfa795937af85d8542e5525b
+ms.openlocfilehash: eb75b481ac8b4d8727883dd03128891d72a2b674
+ms.sourcegitcommit: b6c9eb5d33fbe5bedb778ac4bb41aa3ce9fc8850
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982685"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581946"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
 
-## <a name="september-2020-new-and-generally-available"></a>Setembro de 2020: novo e disponível para o público em geral
+## <a name="october-2020-new-and-generally-available"></a>Outubro de 2020: novo e geralmente disponível
+
+### <a name="application"></a>Aplicativo
+- Permitir [email como uma ID de login alternativa para o Azure Active Directory](/azure/active-directory/authentication/howto-authentication-use-email-signin), usando uma política de [Descoberta de Realm Inicial](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#home-realm-discovery). Uma política de Descoberta de Realm Inicial determina, depois que um usuário fornece uma ID de entrada, se deve solicitar a autenticação do usuário. Nesse caso, definir a propriedade **AlternateIdLogin** de um recurso [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy) pode habilitar que um usuário conecte-se com um endereço de email.
+- Obtenha as informações verificadas do fornecedor para um [aplicativo](/graph/api/resources/application) ou [servicePrincipal](/graph/api/resources/serviceprincipal) e [defina](/graph/api/application-setverifiedpublisher) ou [remova](/graph/api/application-unsetverifiedpublisher) as informações verificadas do fornecedor para um **aplicativo**.
+
+### <a name="change-notifications"></a>Mudar notificações
+Os aplicativos de produção agora podem assinar notificações de ciclo de vida do Outlook [mensagem](/graph/api/resources/message), [evento](/graph/api/resources/event) e [contato](/graph/api/resources/contact) e do Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) em ordem a [reduzir a falta de assinaturas e alterar as notificações](webhooks-lifecycle.md).
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- GA de opções avançadas de consulta do sistema OData (`$count`,`$search` e `$filter`) em objetos de diretório.
+- Confira exemplos que mostram o elenco do OData em objetos de diretório.
+- Confira a seção Identidade e acesso das atualizações de [outubro](changelog.md#october-2020) no log de mudanças para obter as listas de APIs aprimoradas.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- O GA do conjunto completo de operações CRUD para [chatMember](/graph/api/resources/conversationmember) e [aadUserConversationMember](/graph/api/resources/aaduserconversationmember). Esses recursos representam um membro em um chat ou conversa de canal, que pode ou não ser um usuário no Microsoft Azure Active Directory.
+- O GA de notificações de ciclo de vida para recursos do Teams de [chatMessage](/graph/api/resources/chatmessage), para [reduzir assinaturas ausentes e notificações de alteração](webhooks-lifecycle.md).
+
+### <a name="to-do-tasks"></a>Tarefas pendentes
+O GA da [API Microsoft To-Do](/graph/api/resources/todo-overview?view=graph-rest-1.0&preserve-view=true) - use a API de tarefas em um aplicativo de produção para criar e gerenciar tarefas que fazem parte do fluxo de trabalho de um usuário, como criar uma tarefa de um email.  
+
+### <a name="users"></a>Comercial
+Obtenha novas propriedades aplicáveis ​​a um [usuário](/graph/api/resources/user) que é funcionário corporativo: data de contratação, associação organizacional, como divisão e centro de custo, e tipo de funcionário, como consultor, contratado ou fornecedor. Essas propriedades requerem a especificação do `$select`parâmetro de consulta OData na operação GET.
+
+## <a name="october-2020-new-in-preview-only"></a>Outubro de 2020: novo apenas na pré-visualização
+
+### <a name="cloud-communications--online-meeting"></a>Comunicações em nuvem | Reunião online
+- Diferencie a função de um participante em uma [reunião online](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) como um participante ou apresentador, usando a propriedade **função** do tipo [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo?view=graph-rest-beta&preserve-view=true).
+- Obtenha uma [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) ao [filtrar na propriedade joinWebUrl da reunião](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-3-retrieve-an-online-meeting-by-joinweburl).
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+
+- Descontinue a ação **uploadData** em favor de [criar uma sessão de upload](/graph/api/printdocument-createuploadsession?view=graph-rest-beta&preserve-view=true) para [fazer upload de um documento](upload-data-to-upload-session.md) para uma impressora ou compartilhamento de impressora.
+- Cancele a propriedade **configuração** em [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) em favor de uma propriedade de **configuração** semelhante em [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).
+- Obtenha o URL do trabalho de origem ou de destino para um **printJob** que está sendo redirecionado, usando a propriedade **redirectedFrom** ou **redirectedTo**.
+- Obtenha o status atual de um **printJob** usando a propriedade **estado** e a nova propriedade **detalhes**.
+- Obtenha a coleção de compartilhamentos de impressora associados a uma [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) usando a relação **compartilhamentos**. 
+- Substitua a propriedade **processingStateReasons** da **impressora** em favor da propriedade **status**. A propriedade **status** é do tipo [status da impressora](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) e expõe uma propriedade **detalhes**. Use a propriedade **detalhes** para identificar o motivo de uma impressora estar no estado atual.
+- Cancele a propriedade **feedDirections** em [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) em favor da propriedade **feedOrientations**, para obter orientações de alimentação suportadas por uma impressora.
+- Confira a seção de impressão na nuvem das atualizações de [outubro](changelog.md#october-2020) no log de mudanças para algumas renomeações de API, propriedades e algumas outras descontinuações.
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gestão corporativa
+Atualizações do Intune de [outubro](changelog.md#october-2020) para a versão beta.
+
+### <a name="files"></a>Arquivos
+[Revogar](/graph/api/permission-revokegrants?view=graph-rest-beta&preserve-view=true) o acesso à para um [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) ou [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) concedido por meio de um link de compartilhamento.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+- Gerenciar [políticas de método de autenticação](/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-beta&preserve-view=true) para identificar os usuários que podem usar métodos de autenticação multifator específicos para entrar no Azure Active Directory. Configure políticas para definir o seguinte:
+  - Os tipos de chaves de segurança FIDO2 que podem ser usadas no locatário do Azure AD.
+  - Os usuários ou grupos de usuários que têm permissão para usar chaves de segurança FIDO2 ou a Entrada por Telefone sem Senha para entrar no Azure AD.
+- Configure um [método de autenticação de email](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta&preserve-view=true) para que os usuários possam redefinir a senha sozinhos.
+- Use o [Azure AD B2C](/azure/active-directory-b2c/overview) e [escolha um mecanismo para configurar e permitir que os usuários finais se autentiquem por contas locais](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta&preserve-view=true).
+- Use o `Policy.ReadWrite.AuthenticationMethod` para ler ou gravar as políticas do método de autenticação de uma organização, como uma permissão delegada em nome de um usuário conectado ou como uma permissão de aplicativo sem ter um usuário conectado.
+- Especifique em uma [política de autorização](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) se e quem pode convidar usuários externos para uma organização.
+
+### <a name="people-and-workplace-intelligence--insights"></a>Inteligência de pessoas e local de trabalho | Intuições 
+Os administradores podem ver os [exemplos de uso de cmdlets do Windows PowerShell](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell) para personalizar as configurações de percepção do item para uma organização.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Use o atributo de instância **channelCreationMode** para indicar que um [canal](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true#instance-attributes) está sendo criado para servir à migração de dados. Use o [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) para indicar que a migração terminou, de forma que os membros possam postar e ler mensagens.
+- Use o atributo de instância **teamCreationMode** para indicar que uma [equipe](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta&preserve-view=true#instance-attributes) está sendo criada para atender à migração. Use o [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true) para indicar que a migração terminou, de forma que as operações dos membros podem acontecer e os membros podem postar mensagens.
+
+## <a name="september-2020-new-and-generally-available"></a>Setembro de 2020: novo e disponível para o público geral
 
 ### <a name="calendar"></a>Calendário
 O GA da propriedade **transactionId** do recurso de [evento](/graph/api/resources/event), que é definido opcionalmente por um aplicativo cliente para evitar operações de POSTAGEM redundantes em caso de o cliente tentar criar o mesmo evento. Isso é útil quando a conectividade de rede baixa faz com que o cliente expire antes de receber uma resposta do servidor para a solicitação anterior de criação de evento do cliente.
@@ -47,7 +110,7 @@ Experimente o novo tutorial de introdução passo a passo para o Microsoft Graph
 - [Usar o kit de ferramentas com o Angular](./toolkit/get-started/use-toolkit-with-angular.md)
 
 ### <a name="users"></a>Usuários
-Além de obter o endereço SMTP de um [usuário](/graph/api/resources/user) por meio da propriedade de **email** , você pode definir essa propriedade e atualizar o endereço de email do usuário. 
+Além de obter o endereço SMTP de um [usuário](/graph/api/resources/user) por meio da propriedade de **email**, você pode definir essa propriedade e atualizar o endereço de email do usuário. 
 
 ## <a name="september-2020-new-in-preview-only"></a>Setembro de 2020: novidades somente na pré-visualização
 
@@ -56,7 +119,7 @@ Crie, liste ou exclua [classificações de permissões delegadas](/graph/api/res
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 - A substituição da propriedade **autoAdmittedUsers** do [ onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true). Em vez disso, use a propriedade **lobbyBypassSettings** e seus [valores](/graph/api/resources/lobbybypasssettings?view=graph-rest-beta&preserve-view=true#lobbybypassscope-values).
-- Use configurações adicionais sobre como anunciar os chamadores que ingressam em uma reunião online (propriedade **isEntryExitAnnounced** ) e permitir apresentadores específicos na reunião (propriedade **allowedPresenters** ).
+- Use configurações adicionais sobre como anunciar os chamadores que ingressam em uma reunião online (propriedade **isEntryExitAnnounced**) e permitir apresentadores específicos na reunião (propriedade **allowedPresenters**).
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 - [Obtenha os documentos para cada um dos trabalhos de impressão associados a uma impressora](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true), aplicando uma `$expand` [opção de consulta do sistema OData](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true#optional-query-parameters). 
@@ -79,7 +142,7 @@ As organizações podem [obter](/graph/api/continuousaccessevaluationpolicy-get?
 
 - Use recursos adicionais no [API de Pesquisa da Microsoft](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) para OneDrive, SharePoint, conectores do Microsoft Graph: 
 
-  - Obtenha [tipos adicionais](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types) de conteúdo do OneDrive e do Microsoft Office SharePoint Online: **unidade** , **lista** , **listItem** e **site**. 
+  - Obtenha [tipos adicionais](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types) de conteúdo do OneDrive e do Microsoft Office SharePoint Online: **unidade**, **lista**, **listItem** e **site**. 
   - Propriedades de escopo nos resultados da pesquisa para [propriedades selecionadas](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties). 
   - Obtenha propriedades personalizadas no recurso [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true).
   - [Classifique](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) os resultados da pesquisa do OneDrive e do Microsoft Office SharePoint Online em qualquer propriedade classificável.
@@ -175,7 +238,7 @@ GA do recurso que permite aos organizadores permitir propostas de horário alter
 Removida do recurso [changeNotification](/graph/api/resources/changenotification) a propriedade **sequenceNumber** introduzida erroneamente.
 
 ### <a name="groups"></a>Grupos
-DG das seguintes propriedades para a entidade [group](/graph/api/resources/group): **assignedLabels** , **expirationDateTime** , **membershipRule** , **membershipRuleProcessingState** , **preferredLanguage** e **theme**.
+DG das seguintes propriedades para a entidade [group](/graph/api/resources/group): **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage** e **theme**.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 - Remover um usuário como proprietário registrado ou usuário de um [dispositivo](/graph/api/resources/device).
@@ -195,7 +258,7 @@ Use as permissões delegadas de `TeamsAppInstallation.ReadForTeam` ou `TeamsAppI
 ## <a name="july-2020-new-in-preview-only"></a>Julho de 2020: novos apenas na visualização
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
-- Use a operação [atualizar](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true&preserve-view=true) para atualizar **startDateTime** , **endDateTime** , **participantes** , ou propriedade de **assunto** de uma [reunião online](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true&preserve-view=true).
+- Use a operação [atualizar](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true&preserve-view=true) para atualizar **startDateTime**, **endDateTime**, **participantes**, ou propriedade de **assunto** de uma [reunião online](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true&preserve-view=true).
 - Inscreva-se para receber notificações sobre alterações na disponibilidade de um usuário do Microsoft Teams, conforme representado pelo recurso [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="cloud-communications--call-records"></a>Comunicação em nuvem | Gravação
@@ -216,7 +279,7 @@ Os aplicativos agora podem [consultar](/graph/api/resources/reviewsetquery?view=
 Atualizações do Intune em [julho](changelog.md#july-2020) em beta.
 
 ### <a name="groups"></a>Grupos
-Use a propriedade **isAssignableToRole** de um [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) do Microsoft 365 e a defina durante a criação de um grupo para indicar se ele pode ser atribuído a uma função do Azure AD. Isso [ajuda a gerenciar as atribuições de função no Azure AD](/azure/active-directory/users-groups-roles/roles-groups-concept), de modo que, em vez de atribuir um usuário individual a uma função do Azure AD, um administrador global ou um administrador de funções privilegiadas pode criar um grupo do Microsoft 365 e atribuir o grupo a essa função, para que quando os usuários se unam ao _grupo_ , eles recebam a função pretendida indiretamente.
+Use a propriedade **isAssignableToRole** de um [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) do Microsoft 365 e a defina durante a criação de um grupo para indicar se ele pode ser atribuído a uma função do Azure AD. Isso [ajuda a gerenciar as atribuições de função no Azure AD](/azure/active-directory/users-groups-roles/roles-groups-concept), de modo que, em vez de atribuir um usuário individual a uma função do Azure AD, um administrador global ou um administrador de funções privilegiadas pode criar um grupo do Microsoft 365 e atribuir o grupo a essa função, para que quando os usuários se unam ao _grupo_, eles recebam a função pretendida indiretamente.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 - [Adquira um token de acesso](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta&preserve-view=true) para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo.
@@ -254,7 +317,7 @@ Acesse a taxonomia do [repositório de termos](/graph/api/resources/termstore-st
 - Obtenha ou defina a orientação de uma [foto](/graph/api/resources/photo). A configuração é compatível com o OneDrive Personal.
 - Use o Algoritmo de Hash Seguro (SHA-256) para aprimorar a segurança e a integridade dos dados do [arquivo](/graph/api/resources/file).
 - Use o parâmetro `deferCommit` para adiar a criação final ao [carregar geralmente um arquivo grande](/graph/api/driveitem-createuploadsession) no OneDrive for Business, até que um aplicativo faça uma solicitação para concluir o carregamento.
-- Use a propriedade **fileSize** para fornecer uma estimativa como parte do parâmetro do **item** , de modo a fazer uma verificação de cota antes de [carregar um arquivo](/graph/api/driveitem-createuploadsession) no OneDrive pessoal.
+- Use a propriedade **fileSize** para fornecer uma estimativa como parte do parâmetro do **item**, de modo a fazer uma verificação de cota antes de [carregar um arquivo](/graph/api/driveitem-createuploadsession) no OneDrive pessoal.
 - Localize [storagePlanInformation](/graph/api/resources/storageplaninformation) por meio da propriedade **cota** de um recurso de [unidade](/graph/api/resources/drive) para ver se existem planos de uma cota de armazenamento mais alta disponíveis.
 
 ### <a name="groups"></a>Grupos
@@ -356,14 +419,14 @@ GA da [API de locais](/graph/api/resources/place) na v1.0: use essa API em aplic
 Atualizações de [maio](changelog.md#may-2020) do Intune v1.0.
 
 ### <a name="graph-explorer"></a>Explorador do Graph
-Use os vários novos recursos do [Explorador do Graph](https://developer.microsoft.com/pt-BR/graph/graph-explorer) que aprimoram o aprendizado e a prototipagem na área restrita. Por exemplo:
+Use os vários novos recursos do [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer) que aprimoram o aprendizado e a prototipagem na área restrita. Por exemplo:
 - Exiba trechos de código que correspondam à consulta da API REST inserida em C#, Java, JavaScript e Objective C.
 - Conecte-se com um locatário, exiba e copie um token de acesso para seu aplicativo cliente REST favorito.
 
 Para mais detalhes, confira [O novo Explorador do Graph já está disponível](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/).
 
 ### <a name="groups"></a>Grupos
-- Agora, a sincronização do diretório local com o Azure Active Directory via Azure AD Connect retorna as propriedades **onPremisesDomainName** , **onPremisesNetBiosName** e **onPremisesSamAccountName** como parte do recurso de [grupo](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true).
+- Agora, a sincronização do diretório local com o Azure Active Directory via Azure AD Connect retorna as propriedades **onPremisesDomainName**, **onPremisesNetBiosName** e **onPremisesSamAccountName** como parte do recurso de [grupo](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true).
 - Inscreva-se para alterar as notificações de recursos de [grupo](/graph/api/resources/group) no Microsoft Cloud China operado pela 21Vianet.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
@@ -413,7 +476,7 @@ Atualizações de [maio](changelog.md#may-2020) do Intune beta.
 - Especifique os recursos a serem fornecidos na propriedade **resourceProvisioningOptions** que normalmente não fazem parte da criação do [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) padrão. Atualmente há suporte para provisionamento de um grupo como uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) com os recursos do Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-- Aplica opções de consulta do sistema OData (`$count`, `$filter`, `$search`) ao obter coleções de entidades derivadas do [directoryObject](). Você pode [pesquisar tokens específicos](./query-parameters.md#using-search-on-directory-object-collections) nas propriedades **displayName** e **description** dessas entidades, e usar a conversão OData para aparar os resultados do **directoryObject** para determinados tipos derivados. Veja mais detalhes em [Criar consultas avançadas no Microsoft Graph com $count, $filter, $search e $orderby](https://developer.microsoft.com/pt-BR/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
+- Aplica opções de consulta do sistema OData (`$count`, `$filter`, `$search`) ao obter coleções de entidades derivadas do [directoryObject](). Você pode [pesquisar tokens específicos](./query-parameters.md#using-search-on-directory-object-collections) nas propriedades **displayName** e **description** dessas entidades, e usar a conversão OData para aparar os resultados do **directoryObject** para determinados tipos derivados. Veja mais detalhes em [Criar consultas avançadas no Microsoft Graph com $count, $filter, $search e $orderby](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - Como parte da [API de proteção de identidade](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true), use a propriedade **riskEventType** para [obter o tipo de risco detectado](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true) ou [obter o tipo de risco no histórico de um usuário](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true). Não use a propriedade **risktype** como foi preterida.
 - Especifique os tipos de aplicativo cliente na propriedade **clientAppTypes** do [conjunto de condições](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true) de uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
 - Use a permissão delegada de `EntitlementManagement.Read.All` para permitir ao aplicativo solicitar acesso para ler pacotes de acesso e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.
@@ -432,7 +495,7 @@ Atualizações de [maio](changelog.md#may-2020) do Intune beta.
   - Para cada [calendário](/graph/api/resources/calendar?view=graph-rest-1.0&preserve-view=true), você pode gerenciar as [permissões](/graph/api/resources/calendarpermission?view=graph-rest-1.0&preserve-view=true) de cada usuário com o qual o calendário é compartilhado. 
   - Para cada [caixa de correio](/graph/api/resources/mailboxsettings?view=graph-rest-1.0&preserve-view=true), você pode especificar se um representante, proprietário de caixa de correio ou ambos receberão mensagens da reunião e respostas da reunião. 
 - [Criar ou atualizar um evento como uma reunião online](outlook-calendar-online-meetings.md):
-  - Para cada **calendário** , especifique os provedores de reuniões online permitidos e padrão.
+  - Para cada **calendário**, especifique os provedores de reuniões online permitidos e padrão.
   - Crie ou atualize um [evento](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) que esteja disponível online e forneça detalhes para que os participantes possam ingressar na reunião online. 
   - Em particular, use as novas propriedades **onlineMeetingProvider** e **onlineMeeting** do **evento** para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um [problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade **onlineMeetingUrl**.
 - Adicione [anexos de arquivo de até 150 MB](outlook-large-attachments.md) a um [evento](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true).
@@ -531,7 +594,7 @@ Atualizações de [março](changelog.md#march-2020) do Intune
 
 ### <a name="search"></a>Pesquisa
 - Para adicionar dados em um arquivo para pesquisar resultados, indexe os dados como um [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true). O tipo **externalFile** foi substituído.
-- Agora é possível [atualizar](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) um [item no índice](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true), atualizando especificamente a representação de texto simples do item (representado pela propriedade **conteúdo** ), ou o conjunto de propriedades do item (representado pela propriedade **propriedades** ). A atualização de qualquer propriedade no conjunto de propriedades substitui todo conjunto de propriedades, por isso certifique-se de incluir explicitamente todas as propriedades do item na atualização.
+- Agora é possível [atualizar](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) um [item no índice](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true), atualizando especificamente a representação de texto simples do item (representado pela propriedade **conteúdo**), ou o conjunto de propriedades do item (representado pela propriedade **propriedades**). A atualização de qualquer propriedade no conjunto de propriedades substitui todo conjunto de propriedades, por isso certifique-se de incluir explicitamente todas as propriedades do item na atualização.
 - Verifique o `HTTP 429` e o cabeçalho de resposta `Retry-After` depois de chamar a operação para [criar](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true), [atualizar](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) ou [excluir](/graph/api/externalitem-delete?view=graph-rest-beta&preserve-view=true) de **externalItem**. Desativar solicitações usando o atraso `Retry-After` é a forma mais rápida de se recuperar da [limitação](throttling.md#best-practices-to-handle-throttling).
 
 ### <a name="teamwork"></a>Trabalho em equipe
@@ -607,7 +670,7 @@ A API de comunicações na nuvem tem o GA'd e as APIs para [chamada](/graph/api/
 Use a propriedade **classSettings** para gerenciar configurações específicas de classe, como habilitar o envio de resumos de atribuições semanais. Esta propriedade está disponível no recurso [equipe](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) quando a equipe representa uma [classe educacional](/graph/api/resources/educationclass?view=graph-rest-1.0&preserve-view=true).
 
 ### <a name="identity-and-access"></a>Identidade e acesso 
-[Tentar obter objetos de contêiner com permissões limitadas retorna dados parciais](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects). Um exemplo é uma instância de [grupo](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) associada a um [usuário](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true), outro **grupo** e um [dispositivo](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true). Um aplicativo que tem somente as permissões User.Read.All e Group.Read.All e tentar acessar essa instância de **grupo** obteria os objetos de **usuário** e **grupo** , mas dados limitados para o objeto de **dispositivo** (apenas o tipo de dados e a ID do objeto e não os valores da propriedade).
+[Tentar obter objetos de contêiner com permissões limitadas retorna dados parciais](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects). Um exemplo é uma instância de [grupo](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) associada a um [usuário](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true), outro **grupo** e um [dispositivo](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true). Um aplicativo que tem somente as permissões User.Read.All e Group.Read.All e tentar acessar essa instância de **grupo** obteria os objetos de **usuário** e **grupo**, mas dados limitados para o objeto de **dispositivo** (apenas o tipo de dados e a ID do objeto e não os valores da propriedade).
 
 ### <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e local de trabalho
 A API do insights tem GA'd. Use a API em aplicativos de produção para identificar os documentos mais relevantes, que são:
@@ -739,7 +802,7 @@ Os desenvolvedores e os cientistas de dados agora podem usar [ferramentas para t
   - Para cada [calendário](/graph/api/resources/calendar?view=graph-rest-beta&preserve-view=true), você pode gerenciar as [permissões](/graph/api/resources/calendarpermission?view=graph-rest-beta&preserve-view=true) de cada usuário com o qual o calendário é compartilhado. 
   - Para cada [caixa de correio](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true), você pode especificar se um representante, proprietário de caixa de correio ou ambos receberão mensagens da reunião e respostas da reunião. 
 - Suporte adicional para reuniões online:
-  - Para cada **calendário** , especifique os provedores de reuniões online permitidos e padrão.
+  - Para cada **calendário**, especifique os provedores de reuniões online permitidos e padrão.
   - Crie ou atualize um [evento](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) que esteja disponível online e forneça detalhes para que os participantes possam ingressar na reunião online. 
   - Em particular, use as novas propriedades **onlineMeetingProvider** e **onlineMeeting** do **evento** para definir ou identificar o Microsoft Teams como um provedor de reuniões online, uma solução alternativa para um [problema conhecido](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) com a propriedade **onlineMeetingUrl**.
 
@@ -747,7 +810,7 @@ Os desenvolvedores e os cientistas de dados agora podem usar [ferramentas para t
 Atualizações de [outubro](changelog.md#october-2019) do Intune
 
 ### <a name="graph-explorer"></a>Graph Explorer
-Experimente a [próxima versão do Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/preview) e confira informações contextuais úteis, como permissões, tokens de acesso e trechos de código do SDK nas novas guias **Permissões** , **Autenticação** e **Trechos de código**. Use o controle deslizante **Visualizar** para alternar entre a [produção](https://developer.microsoft.com/graph/graph-explorer) e a nova versão de visualização do Graph Explorer.
+Experimente a [próxima versão do Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/preview) e confira informações contextuais úteis, como permissões, tokens de acesso e trechos de código do SDK nas novas guias **Permissões**, **Autenticação** e **Trechos de código**. Use o controle deslizante **Visualizar** para alternar entre a [produção](https://developer.microsoft.com/graph/graph-explorer) e a nova versão de visualização do Graph Explorer.
 
 ### <a name="groups"></a>Grupos
 - Use as propriedades **hideFromAddressLists** e **hideFromOutlookClients** para controlar a visibilidade de um [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) em determinadas partes da interface do usuário do Outlook ou em um cliente do Outlook.
@@ -806,7 +869,7 @@ Use o [Microsoft Graph Toolkit](toolkit/overview.md) para desenvolver aplicativo
 ## <a name="september-2019-new-in-preview"></a>Setembro de 2019: novidades na versão prévia
 
 > [!IMPORTANT]
-> Os recursos, incluindo APIs e ferramentas, no status de _visualização_ , podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
+> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
 
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
 Atualizações de [Setembro](changelog.md#september-2019) do Intune
@@ -850,7 +913,7 @@ Use o canal **Geral** de uma [equipe](/graph/api/resources/team?view=graph-rest-
 ## <a name="august-2019-new-in-preview"></a>Agosto de 2019: novidades na versão prévia
 
 > [!IMPORTANT]
-> Os recursos, incluindo APIs e ferramentas, no status de _visualização_ , podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
+> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
 
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
 Atualizações de [agosto](changelog.md#august-2019) do Intune
@@ -881,7 +944,7 @@ Agora há trechos do código Objective-C em todos os tópicos da API nas referê
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 - Use as [novas permissões delegadas e de aplicativo](permissions-reference.md#organization-permissions), _Organization.Read.All_ e _Organization.ReadWrite.All_ para acessar uma [organização](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true) e recursos relacionados, como [SKUs inscritos](/graph/api/resources/subscribedsku?view=graph-rest-1.0&preserve-view=true).
-- Use [novas permissões delegadas e de aplicativo](permissions-reference.md#role-management-permissions), _RoleManagement. Read.Directory_ e _RoleManagement. ReadWrite.Directory_ , para controle de acesso baseado em função ( RBAC) para o diretório da empresa:
+- Use [novas permissões delegadas e de aplicativo](permissions-reference.md#role-management-permissions), _RoleManagement. Read.Directory_ e _RoleManagement. ReadWrite.Directory_, para controle de acesso baseado em função ( RBAC) para o diretório da empresa:
 
   - Use a permissão de leitura/gravação para [ativar](/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0&preserve-view=true) primeiro uma função de diretório. 
   - Com a função ativada, você pode usar a permissão de leitura para[ler funções de diretório](/graph/api/directoryrole-list?view=graph-rest-1.0&preserve-view=true), [listar os membros da função](/graph/api/directoryrole-list-members?view=graph-rest-1.0&preserve-view=true) e [listar modelos de função de diretório](/graph/api/directoryroletemplate-list?view=graph-rest-1.0&preserve-view=true). 
@@ -891,7 +954,7 @@ Agora há trechos do código Objective-C em todos os tópicos da API nas referê
 ## <a name="july-2019-new-in-preview"></a>Julho de 2019: Novo na visualização
 
 > [!IMPORTANT]
-> Os recursos, incluindo APIs e ferramentas, no status de _visualização_ , podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
+> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
 
 ### <a name="calendar"></a>Calendário 
 Use a nova [API de locais](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) para usar vários tipos de locais, como [salas](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) e [lista de salas](/graph/api/resources/roomlist?view=graph-rest-beta&preserve-view=true), conforme configurado pelos administradores do Exchange Online.
@@ -904,7 +967,7 @@ Aplique a data/hora de vencimento ou a senha ao [criar um link de compartilhamen
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 - Use [nova permissão de aplicativo](./permissions-reference.md#access-reviews-permissions) _AccessReview.ReadWrite.Membership_ para operações CRUD nas [análises de acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true). 
-- Use [novas permissões delegadas e de aplicativo](permissions-reference.md#administrative-units-permissions), _AdministrativeUnit.Read.All_ e _AdministrativeUnit. ReadWrite.All_ , para ler ou gravar respectivamente (incluindo criar, atualizar, excluir ou gerenciar a associação) recursos da [unidade de administração](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true).
+- Use [novas permissões delegadas e de aplicativo](permissions-reference.md#administrative-units-permissions),_AdministrativeUnit.Read.All_ e _AdministrativeUnit. ReadWrite.All_, para ler ou gravar respectivamente (incluindo criar, atualizar, excluir ou gerenciar a associação) recursos da [unidade de administração](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true).
 - Use as [novas permissões delegadas e de aplicativo](permissions-reference.md#organization-permissions), _Organization.Read.All_ e _Organization.ReadWrite.All_ para acessar uma [organização](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) e recursos relacionados, como [SKU inscritos](/graph/api/resources/subscribedsku?view=graph-rest-beta&preserve-view=true).
 - Use a nova função[descobrir](/graph/api/directorydefinition-discover?view=graph-rest-beta&preserve-view=true) para encontrar o [esquema de sincronização](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta&preserve-view=true)de diretório mais recente, para sincronizar objetos de diretório, atributos e seus tipos de aplicativo.
 - Use a [política de distribuição de recursos](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta&preserve-view=true) para ajudar os administradores de locatários a testar recursos em grupos específicos antes de habilitá-los para toda a organização.
@@ -940,7 +1003,7 @@ Administradores ou usuários podem [revogar](/graph/api/user-revokesigninsession
 ## <a name="may---june-2019-new-in-preview"></a>Maio e junho de 2019: novidades na versão prévia
 
 > [!IMPORTANT]
-> Os recursos, incluindo APIs e ferramentas, no status de _visualização_ , podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
+> Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status GA. Não use-os em aplicativos de produção.
 
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos
 - Atualizações de [maio](changelog.md#may-2019) do Intune 
@@ -998,7 +1061,7 @@ Permitir que os usuários [sigam](/graph/api/site-follow?view=graph-rest-beta&pr
 ### <a name="calendar-group-mail-to-do-tasks"></a>Calendário, grupo, email, tarefas pendentes
 [Obter o conteúdo bruto/MIME de anexos de arquivo ou item](/graph/api/attachment-get?view=graph-rest-beta&preserve-view=true#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem, tarefa do Outlook ou postagem do grupo
 
-### <a name="change-notifications"></a>Alterar notificações
+### <a name="change-notifications"></a>Notificações de alteração
 [Reduzir notificações ausentes de alteração](webhooks-lifecycle.md)
 
 ### <a name="devices-and-apps"></a>Dispositivos e aplicativos

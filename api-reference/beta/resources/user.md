@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 84f91ae315b2d7ed757136bcf8e82de105081dec
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 542cb33551b96eeecb3609a8db2a9451f1d9c8b1
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000635"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606990"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -135,10 +135,12 @@ Esse recurso permite:
 | **Extensões de esquema** |||
 | [Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) | Nenhum | Cria uma definição para a extensão de esquema e a usa para adicionar dados digitados personalizados a um recurso. |
 | **Teamwork** |||
-| [Instalar o aplicativo para o usuário](../api/user-add-teamsappinstallation.md) | Nenhum | Instale um aplicativo no escopo pessoal do usuário especificado. |
-| [Listar aplicativos instalados para o usuário](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | Recupere a lista de aplicativos instalados no escopo pessoal do usuário especificado. |
-| [Atualizar aplicativo](../api/user-upgrade-teamsappinstallation.md) | Nenhum | Atualize uma instalação de aplicativo no escopo pessoal do usuário especificado para a versão mais recente do aplicativo. |
-| [Desinstalar aplicativo para o usuário](../api/user-delete-teamsappinstallation.md) | Nenhum  | Desinstale um aplicativo do escopo pessoal do usuário especificado. |
+|[Lista de aplicativos instalados para o usuário](../api/userteamwork-list-installedapps.md) | Coleção[userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Os aplicativos instalados no escopo pessoal desse usuário.|
+|[Obter o aplicativo instalado para o usuário](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lista o aplicativo especificado instalado no escopo pessoal de um usuário. |
+|[Adicionar o aplicativo para o usuário](../api/userteamwork-post-installedapps.md) | Nenhum | Adiciona (instala) um aplicativo no escopo pessoal de um usuário.|
+|[Remover o aplicativo para o usuário](../api/userteamwork-delete-installedapps.md) | Nenhum | Remove (desinstala) um aplicativo no escopo pessoal de um usuário.|
+|[Atualizar o aplicativo instalado para o usuário](../api/userteamwork-teamsappinstallation-upgrade.md) | Nenhum | Atualizações para a versão mais recente do aplicativo instalada no escopo pessoal de um usuário.|
+|[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lista um chat entre o usuário e o aplicativo. | 
 | **Tarefas pendentes** |||
 |[Criar tarefa](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Crie um [todoTask](todotask.md) na lista de tarefas especificada.|
 |[Criar uma lista de tarefas](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Criar uma lista de tarefas To Dona caixa de correio do usuário. |
@@ -162,7 +164,7 @@ Esse recurso permite:
 | assignedLicenses | Coleção [assignedLicense](assignedlicense.md) | As licenças que são atribuídas ao usuário. <br><br>Retornado apenas em `$select`. Não anulável. |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | Os planos que são atribuídos ao usuário. <br><br>Retornado apenas em `$select`. Somente leitura. Não anulável. |
 | birthday | DateTimeOffset | O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` <br><br>Retornado apenas em `$select`. |
-| businessPhones | Coleção de cadeias de caracteres | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade. <br><br>Retornado por padrão. Somente leitura para usuários sincronizados do diretório local. |
+| businessPhones | String collection | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade. <br><br>Retornado por padrão. Somente leitura para usuários sincronizados do diretório local. |
 | city | String | A cidade em que o usuário está localizado. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. |
 | companyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo do nome da empresa é 64 caracteres.<br><br>Retornado apenas em `$select`. |
 | consentProvidedForMinor | String| Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
@@ -189,7 +191,7 @@ Esse recurso permite:
 | isResourceAccount | Boolean | Não use – reservado para uso futuro. |
 | jobTitle | String | O cargo do usuário. <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
 | lastPasswordChangeDateTime | DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` <br><br>Retornado apenas em `$select`. |
-| legalAgeGroupClassification | String | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
+| legalAgeGroupClassification | String | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Consulte as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
 | licenseAssignmentStates | Coleção [licenseAssignmentState](licenseassignmentstate.md) | Estado das atribuições de licenças para esse usuário. <br><br>Retornado apenas em `$select`. Somente leitura. |
 | email | String | O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Oferece suporte para `$filter`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Configurações para a caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada. <br><br>Retornado apenas em `$select`. |
@@ -211,7 +213,7 @@ Esse recurso permite:
 | passwordPolicies | String | Especifica as políticas de senha do usuário. Este valor é uma enumeração com um possível valor sendo "DisableStrongPassword", que permite especificar as senhas mais fracas do que a política padrão. O "DisablePasswordExpiration" também pode ser especificado. É possível especificar os dois juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".<br><br>Retornado apenas em `$select`. |
 | passwordProfile | [passwordProfile](passwordprofile.md) | Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte. <br><br>Retornado apenas em `$select`. |
 | pastProjects | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar seus projetos anteriores. <br><br>Retornado apenas em `$select`. |
-| postalCode | String | O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP. <br><br>Retornado apenas em `$select`. |
+| postalCode | String | O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.<br><br>Retornado apenas em `$select`. |
 | preferredDataLocation | String | O local de dados preferido para o usuário. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado apenas em `$select`. |
 | preferredLanguage | String | O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US". <br><br>Retornado por padrão. |
 | preferredName | String | O nome preferencial do usuário. <br><br>Retornado apenas em `$select`. |
@@ -233,44 +235,44 @@ Esse recurso permite:
 
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
 
-Esta seção explica como as três propriedades de faixa etária (`legalAgeGroupClassification`, `ageGroup` e `consentProvidedForMinor`) são usadas pelos administradores do Azure AD e desenvolvedores de aplicativos empresariais para atender às normas de idade.
+Esta seção explica como as três propriedades de grupo idade (**legalAgeGroupClassification**, **ageGroup** e **consentProvidedForMinor**) são usadas por administradores do Azure Active Directory e desenvolvedores de aplicativos empresariais para atender às regulamentações relacionadas à idade:
+- A propriedade legal **AgeGroupClassification** é somente leitura. É usado por desenvolvedores de aplicativos corporativos para garantir o tratamento correto de um usuário com base em sua faixa etária legal. É calculado com base nas propriedades **ageGroup** e **consentProvidedForMinor** do usuário.
+- **ageGroup** e **consentProvidedForMinor** são propriedades opcionais usadas pelos administradores do Azure Active Directory para ajudar a garantir que o uso de uma conta seja tratado corretamente com base nas regras regulatórias relacionadas à idade que regem o país ou região do usuário.
 
 Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino fundamental em Holyport, no Reino Unido. No início do ano letivo ele usa a documentação de admissão para obter o consentimento dos pais dos menores baseado nos regulamentos relacionadas com a idade no Reino Unido. O consentimento obtido do pai permite que a conta do menor seja usado pela escola de Holyport e os aplicativos da Microsoft. Cameron cria todas as contas e define o ageGroup para "menor" e consentProvidedForMinor para "concedido". Os aplicativos usados por seus alunos poderão, então suprimir recursos que não são adequados para menores.
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
+For some reason they are not defined as enums in the CSDL. 
+Hence the type of the corresponding 3 properties remain as string type in the Properties table.
+-->
 
-#### <a name="legal-age-group-classification"></a>Classificação da faixa etária legal
+#### <a name="legalagegroupclassification-values"></a>legalAgeGroupClassification values
 
-Essa propriedade de somente leitura é usada por desenvolvedores de aplicativos empresariais para garantir a manipulação correta do usuário com base em sua faixa etária legal. É calculada com base nas propriedades de `ageGroup` e `consentProvidedForMinor` do usuário.
+| Member    | Descrição|
+|:---------------|:----------|
+|null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
+|minorWithoutParentalConsent |(Reservado para uso futuro)|
+|minorWithParentalConsent| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
+|adult|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
+|notAdult|O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
+|minorNoParentalConsentRequired|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
 
-| Valor   | # |Descrição|
+#### <a name="agegroup-values"></a>ageGroup values
+
+| Member    | Descrição|
 |:---------------|:--------|:----------|
-|null|0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
-|minorWithoutParentalConsent |1|(Reservado para uso futuro)|
-|minorWithParentalConsent|2| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
-|adult|3|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
-|notAdult|4|O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
-|minorNoParentalConsentRequired|5|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
+|null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
+|menor|O usuário é considerado um menor.|
+|notAdult|O usuário é de um país que tem regulamentos estatutários (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior que o limite superior de idade infantil (por país) e menor do que o limite inferior de idade adulta (estipulado com base em cada país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
+|adult|O usuário deve ser tratado como um adulto.|
 
-#### <a name="age-group-and-minor-consent"></a>Faixa etária e consentimento de menor
+#### <a name="consentprovidedforminor-values"></a>consentProvidedForMinor values
 
-As propriedades de faixa etária e consentimento de menor são propriedades opcionais usadas por administradores do Azure AD para garantir que o uso da conta é tratado corretamente com base nas regras de regulamentação relacionadas à idade que regem o país ou a região do usuário.
-
-#### <a name="agegroup-property"></a>propriedade ageGroup
-
-| Valor    | # |Descrição|
-|:---------------|:--------|:----------|
-|null|0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
-|minor|1|O usuário é considerado menor de idade.|
-|notAdult|2|O usuário é de um país que tem regulamentos estatutários (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior que o limite superior de idade infantil (por país) e menor do que o limite inferior de idade adulta (estipulado com base em cada país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
-|adult|3|O usuário deve ser tratado como um adulto.|
-
-#### <a name="consentprovidedforminor-property"></a>Propriedade consentProvidedForMinor
-
-| Valor    | # |Descrição|
-|:---------------|:--------|:----------|
-|null|0|Valor padrão, nenhum `consentProvidedForMinor` foi definido para o usuário.|
-|granted|1|O consentimento foi obtido para o usuário ter uma conta.|
-|denied|2|O consentimento não foi obtido para o usuário ter uma conta.|
-|notRequired|3|O usuário é de um local que não exige consentimento.|
+| Member    | Descrição|
+|:---------------|:----------|
+|null|Valor padrão, nenhum **consentimentoProvidedForMinor** foi definido para o usuário.|
+|concedido|O consentimento foi obtido para o usuário ter uma conta.|
+|denied|O consentimento não foi obtido para o usuário ter uma conta.|
+|notRequired|O usuário é de um local que não exige consentimento.|
 
 ## <a name="relationships"></a>Relações
 
@@ -287,7 +289,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade manager está definida como esse usuário.) Somente leitura. Anulável. |
 |drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
-|eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
+|events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o usuário. Anulável.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[itemInsights](iteminsights.md) | Somente leitura. Anulável.|
@@ -300,9 +302,9 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 |onenote|[onenote](onenote.md)| Somente leitura.|
 |outlook|[outlookUser](outlookuser.md)| Os serviços seletivos do Outlook disponíveis para o usuário. Somente leitura. Anulável.|
 |ownedDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que pertencem ao usuário. Somente leitura. Anulável.|
-|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são pertencentes ao usuário. Somente leitura. Anulável.|
+|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável.|
 |pendingAccessReviewInstances|[accessReviewInstance](accessreviewinstance.md) | Propriedade de navegação para obter a lista de análises de acesso com aprovação pendente do revisor. |
-|pessoas|Coleção [person](person.md)| Somente leitura. As pessoas mais relevantes para o usuário. A coleção é ordenada por relevância para o usuário, que é determinado pela comunicação e colaboração e pelas relações comerciais do usuário. Uma pessoa é uma agregação de informações provenientes de emails, contatos e redes sociais.|
+|people|Coleção [person](person.md)| Somente leitura. As pessoas mais relevantes para o usuário. A coleção é ordenada por relevância para o usuário, que é determinado pela comunicação e colaboração e pelas relações comerciais do usuário. Uma pessoa é uma agregação de informações provenientes de emails, contatos e redes sociais.|
 |photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
 |photos|coleção de [fotos](photo.md)| Somente leitura. Anulável.|
 |planner|[plannerUser](planneruser.md)| Serviços de planejador seletivo disponíveis para o usuário. Somente leitura. Anulável. |
@@ -316,7 +318,7 @@ As propriedades de faixa etária e consentimento de menor são propriedades opci
 ### <a name="user-preferences-for-languages-and-regional-formats"></a>Preferências do usuário para idiomas e formatos regionais.
 O recurso do **usuário** contém uma propriedade [mailboxSettings](../resources/mailboxsettings.md), que inclui o idioma, a formatação de data e hora, o fuso horário padrão e outras configurações preferidas do usuário especificamente para a caixa de correio principal do Exchange. Essas preferências são direcionadas para os clientes de email e só estarão disponíveis se o usuário tiver uma caixa de correio provisionada. Você pode optar por usar **mailboxSettings** se o seu cenário se concentrar apenas em emails, calendários, contatos ou tarefas pendentes do Outlook.
 
-Além de **mailboxSettings** , **usuário** inclui uma relação por meio de [userSettings](../resources/usersettings.md) para [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md), o superconjunto de preferências de formatação regional e de idioma, que pode ser usado por qualquer aplicativo para oferecer ao usuário uma experiência de formatação regional e de idioma melhor. Use **userSettings** para uma experiência consistente entre aplicativos que tocam no perfil de usuário do Azure AD para refletir as mesmas preferências do usuário.
+Além de **mailboxSettings**, **usuário** inclui uma relação por meio de [userSettings](../resources/usersettings.md) para [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md), o superconjunto de preferências de formatação regional e de idioma, que pode ser usado por qualquer aplicativo para oferecer ao usuário uma experiência de formatação regional e de idioma melhor. Use **userSettings** para uma experiência consistente entre aplicativos que tocam no perfil de usuário do Azure AD para refletir as mesmas preferências do usuário.
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9d5f9f78ba70a6156c260ea679e6e1c081bec1dc
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 5f3411278cab8d523a85b8b65a37796ab77298fb
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782953"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606864"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -31,15 +31,23 @@ Namespace: microsoft.graph
 |[Delete channel](../api/channel-delete.md) | Nenhum | Exclua um canal.|
 |[Obter o delta de mensagem](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens incrementais em um canal. |
 |[Listar mensagens do canal](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens em um canal. |
-|[Listar membros do canal](../api/conversationmember-list.md)| coleção [conversationMember](conversationmember.md)| Liste os membros de um canal. |
-|[Obter membros do canal](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Obter um membro de um canal. |
-|[Adicionar membro do canal](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Adicionar um membro a um canal. Compatível apenas com o `channelType` de `private`.|
-|[Atualizar membro do canal](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Atualizar um membro de um canal. Compatível apenas com o `channelType` de `private`.|
-|[Excluir membro do canal](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Excluir um membro de um canal. Compatível apenas com o `channelType` de `private`.|
-|[Criar chatMessage em um canal](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
-|[Criar uma resposta chatMessage em um canal](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal.|
-|[Obter pasta de arquivos](../api/driveitem-get.md).| [driveItem](driveitem.md) | Recupera os detalhes da pasta do SharePoint em que os arquivos do canal estão armazenados. |
-|[Migração concluída](../api/channel-completemigration.md)|[canal](channel.md)| Remove o modo de migração do canal e torna o canal disponível para os usuários postarem e lerem mensagens.|
+|[Obter todas as mensagens do canal](../api/channels-getallmessages.md)|[channel](channel.md) collection | Obter todas as mensagens de todos os chats nos quais um usuário é um participante. |
+|[Criar postagem de mensagem no canal](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Envie uma mensagem para um canal. |
+|[Criar resposta à postagem da mensagem do canal](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Responda a uma mensagem em um canal.|
+|[Obter pasta de arquivos](../api/channel-get-filesfolder.md).| [driveItem](driveitem.md) | Recupera os detalhes da pasta do SharePoint em que os arquivos do canal estão armazenados. |
+|[Listar guias](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
+|[Listar membros do canal](../api/channel-list-members.md) | coleção [conversationMember](conversationmember.md) | Obtenha uma lista de todas as mensagens raiz em um canal.|
+|[Obter canal do membro](../api/channel-get-members.md) | [conversationMember](conversationmember.md) coleção | Obtenha um membro em um canal.|
+|[Adicionar membro do canal](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Adicionar um membro a um canal. Suportado só para o`channel`com MembershipType de.`private`|
+|[Atualizar a função do membro do canal](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Atualize as propriedades de um membro do canal. Suportado só para o canal com MembershipType de`private`.|
+|[Remover membro do canal](../api/channel-delete-members.md) | Nenhum | Exclua um membro de um canal. Suportado só com o `channelType` de `private`.|
+|[Migração completa](../api/channel-completemigration.md)|[channel](channel.md)| Remove o modo de migração do canal e torna o canal disponível para os usuários postarem e lerem mensagens.|
+|[Listar guias no canal](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
+|[Guia obter no canal](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Ler uma guia fixada a um canal.|
+|[Adicionar uma guia ao canal](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia a um canal.|
+|[Guia atualizar no canal](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Atualiza as propriedades de uma guia em um canal.|
+|[Remover guia do canal](../api/channel-delete-tabs.md) | Nenhum | Remover (Desafixar) uma Tabulação de um canal.|
+
 
 ## <a name="properties"></a>Propriedades
 
@@ -62,7 +70,7 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.channelCreationMode|string|Indica que o canal está no estado de migração e está sendo usado no momento para fins de migração. Aceita um valor: `migration`.|
 
-> **Observação** : `channelCreationMode`  é um enum que usa o valor `migration`.
+> **Observação**: `channelCreationMode`  é um enum que usa o valor `migration`.
 
 Para obter um exemplo de uma solicitação POST, confira [Solicitação (criar canal no estado de migração)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state).
 
