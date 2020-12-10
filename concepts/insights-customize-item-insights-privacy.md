@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7a2e587692f5e1eb54d46887c46b00d0ca5692ce
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 4627c2a3084dccd73e786bcb09634e3d145da896
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782424"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523125"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 
@@ -19,7 +19,7 @@ As configurações de privacidade das informações do item oferecem a capacidad
 ## <a name="background"></a>Histórico
 Na época do primeiro lançamento, em 2014, o Office Graph era um serviço de back-end para o Delve. Eles compartilhavam um conjunto de controles de privacidade sobre as informações do Office Graph e a experiência do usuário do Delve. Desde então, o Office Graph evoluiu e se tornou mais independente e eficiente, como parte de todas as experiências da Microsoft 365 e do Microsoft Graph. Para oferecer um esquema coerente do Microsoft Graph, a Microsoft introduziu uma entidade [itemInsights](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true), que herda todas as propriedades do recurso [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-beta&preserve-view=true) pré-existente, e mantém o **officeGraphInsights** para obter uma compatibilidade com versões anteriores. A introdução de **itemInsights** também desassocia a história de privacidade das duas partes independentes.  
 
-Embora os aplicativos existentes possam continuar a usar o **officeGraphInsights** , esses aplicativos devem ser atualizados para **itemInsights** para obter a flexibilidade de ajustar as informações do item no Office Graph e no Delve.
+Embora os aplicativos existentes possam continuar a usar o **officeGraphInsights**, esses aplicativos devem ser atualizados para **itemInsights** para obter a flexibilidade de ajustar as informações do item no Office Graph e no Delve.
 
 ## <a name="how-to-customize-item-insights"></a>Como personalizar as informações do item?
 
@@ -86,7 +86,9 @@ Lembre-se do seguinte ao atualizar as configurações de informações do item:
 ## <a name="behavior-changes-in-ui-and-apis"></a>O comportamento é alterado na IU e nas APIs
 Algumas informações de [tendências](/graph/api/resources/insights-trending) ou [usadas](/graph/api/resources/insights-used) ideias podem ser afetadas conforme descrito abaixo. Ao longo do tempo, o escopo e os tipos dessas informações serão estendidos. 
 
-- O cartão de perfil de um usuário que tiver desabilitado as informações do item não mostra seus documentos **usados** . A mesma limitação se aplica ao resultado do perfil da Pesquisa da Microsoft no Bing, em que o painel **Arquivos Recentes** fica vazio. Além disso, a precisão de expansão de acrônimo na pesquisa é reduzida.
+- O cartão de perfil de um usuário que tiver desabilitado as informações do item não mostra seus documentos **usados**. A mesma limitação se aplica ao resultado do perfil da Pesquisa da Microsoft no Bing, em que o painel **Arquivos Recentes** fica vazio. Além disso, a precisão de expansão de acrônimo na pesquisa é reduzida.
+
+- A desativação dos insights do item irá parar[horário de reunião sugerido](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US)de ser calculado e mostrado ao usuário em seu cartão de perfil. 
 
 - No Delve, um usuário que desabilitou as informações do item tem seus documentos ocultos. 
 
@@ -94,7 +96,7 @@ Algumas informações de [tendências](/graph/api/resources/insights-trending) o
 
 - Para um usuário que tenha desabilitado as informações do item, a consulta de recursos de [tendências](/graph/api/resources/insights-trending) e [usados](/graph/api/resources/insights-used)na API do Microsoft Graph retorna `HTTP 403 Forbidden`.
 
-- Onde a seção **Descobrir** é habilitada para um usuário que pesquisa no Outlook Mobile, desabilitar as informações do item para esse usuário ocultaria, na seção **Descobrir** , documentos populares para ele. Caso contrário, os documentos populares são recomendados e exibidos com base em outras atividades do usuário.
+- Onde a seção **Descobrir** é habilitada para um usuário que pesquisa no Outlook Mobile, desabilitar as informações do item para esse usuário ocultaria, na seção **Descobrir**, documentos populares para ele. Caso contrário, os documentos populares são recomendados e exibidos com base em outras atividades do usuário.
 
 
 ## <a name="transition-period"></a>Período de transição
@@ -107,7 +109,7 @@ Após esse período de transição, as configurações do Delve controlarão ape
 > Durante o período de transição, devido a motivos técnicos, a página inicial do SharePoint poderá fornecer sugestões obsoletas se uma organização desabilitar as informações do item para todos os usuários. Esse problema será corrigido em futuras alterações do lado do servidor. 
 
 ## <a name="see-also"></a>Confira também
-Saiba mais sobre o Delve e como usar as configurações de recursos do Delve para controlar os documentos que aparecem no feed **Discover** : 
+Saiba mais sobre o Delve e como usar as configurações de recursos do Delve para controlar os documentos que aparecem no feed **Discover**: 
 - [Conectar-se e colaborar no Office Delve](https://support.microsoft.com/office/connect-and-collaborate-in-office-delve-46f92806-b52c-4187-b60e-b3bf8d25f73e)
 - [Meus documentos estão seguros no Office Delve?](https://support.microsoft.com/office/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3)
 - [Delve para administradores](/sharepoint/delve-for-office-365-admins)

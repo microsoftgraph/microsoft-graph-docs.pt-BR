@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 71d47a6ee529fb6cfc374d9f21fbfb335e47324c
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: e980d2280a9fd09bdaa55d2a1cad416ed2ef0d7c
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082038"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368156"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Liste todos os grupos em uma organização, incluindo, entre outros, os grupos do Microsoft 365. 
 
-Essa operação retorna, por padrão, apenas um subconjunto das propriedades mais comumente usadas para cada grupo. Essas propriedades _padrão_ são observadas na seção [Propriedades](../resources/group.md#properties). Para obter propriedades que _não_ são retornadas por padrão, execute uma [operação GET](group-get.md) do grupo e especifique as propriedades em uma opção de consulta OData `$select`. A propriedade **hasMembersWithLicenseErrors** é uma exceção e não é retornada na consulta `$select`.
+Esta operação retorna, por padrão, apenas um subconjunto das propriedades mais usadas de cada grupo. Essas propriedades _padrão_ estão listadas na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) para o grupo e especifique as propriedades em uma opção de consulta `$select` do OData. A propriedade **hasMembersWithLicenseErrors** é uma exceção e ela não é retornada na consulta `$select`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante) | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Aplicativo | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ Use a opção de consulta OData `$orderby` para classificar grupos em uma organi
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
-Você também pode usar os parâmetros de consulta `$count` e `$search` para limitar a resposta. O parâmetro de consulta `$search` oferece suporte a geração de tokens somente nos campos **displayName** e **description**. Os outros campos são padrão para o comportamento `$filter`. Quando os itens são adicionados ou atualizados para esse recurso, eles são especificamente indexados para uso com os parâmetros de consulta `$count` e `$search`. Pode haver um pequeno atraso entre a adição ou atualização de um item e a sua disponibilidade no índice.
+Você também pode usar os `$count` e `$search` parâmetros de consulta para limitar a resposta. O `$search` parâmetro de consulta suporta a tokenização apenas nos campos **displayName** e **descrição**. Outros campos são padrão para o `$filter` comportamento. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
 
 Para obter mais informações, consulte [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -61,7 +61,7 @@ Para obter mais informações, consulte [Parâmetros de consulta OData](/graph/q
 | Nome | Descrição |
 |:---- |:----------- |
 | Autorização  | {token} de portador. Obrigatório. |
-| ConsistencyLevel | eventual. Esse cabeçalho e `$count` são necessários ao usar `$search` ou ao usar `$filter` com o parâmetro de consulta `$orderby`. Ele usa um índice que pode não estar atualizado com as alterações recentes feitas no objeto. |
+| ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou quando se usa `$filter` com o `$orderby` parâmetro de consulta. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -69,7 +69,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se for bem-sucedido, este método retornará um código de resposta `200 OK` e uma coleção de objetos de [grupo](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão de cada grupo.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [group](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão de cada grupo.
 
 ## <a name="examples"></a>Exemplos
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/groups
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura. Todas as propriedades padrão são retornadas para cada grupo em uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades padrão são retornadas para cada grupo em uma chamada real.
 
 <!-- {
   "blockType": "response",

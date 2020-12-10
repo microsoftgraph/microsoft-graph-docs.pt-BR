@@ -1,18 +1,18 @@
 ---
-title: Adicionar membros à equipe
+title: Adicionar membro à equipe.
 description: Adicionar um novo membro à equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 32a9cceb77c142f31fbaac44ab4f8e782f89e560
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9291cb0c60ed740ec9fdf1155a7f1e75e56f1705
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974564"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387833"
 ---
-# <a name="create-members"></a>Criar membros
+# <a name="add-member-to-team"></a>Adicionar membro à equipe.
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -35,8 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /teams/{teamsId}/members
-POST /teams/{teamsId}/channels/{channelId}/members
+POST /teams/{team-id}/members
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -65,14 +64,14 @@ Para obter melhores resultados, coordene chamadas com 2 segundos de buffer.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{id}/members
+POST https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
-Content-length: 26
+Content-length: 100
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"],
-    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -109,7 +108,7 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
     "roles": [
         "owner"
     ],
@@ -118,5 +117,9 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+
+## <a name="see-also"></a>Confira também
+
+- [Adicionar membro no canal](channel-post-members.md)
 
 

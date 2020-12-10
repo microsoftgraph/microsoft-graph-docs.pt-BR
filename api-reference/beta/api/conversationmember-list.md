@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3818f5a1759c08aad254347420089f93119fa32a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 043f480e4d7dc09f962668b27be473a2ffc14108
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956727"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387553"
 ---
 # <a name="list-conversationmembers"></a>Listar conversationMembers
 
@@ -18,9 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar todos os [membros da conversa](../resources/conversationmember.md) de um [chat](../resources/chat.md) ou [canal](../resources/channel.md).
+Listar todos [membros da conversa](../resources/conversationmember.md) de um [chat](../resources/chatmessage.md) ou [canal](../resources/channel.md)ou equipe da [equipe](../resources/team.md).
 
-## <a name="permissions"></a>Permissões
+> [!NOTE]
+> As IDs de associação retornadas pelo servidor devem ser tratadas como cadeias de caracteres opacas. O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.
+>
+> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
+
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -60,7 +65,7 @@ Se bem sucedido, este método retorna um código de resposta `200 OK` e uma list
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 
@@ -91,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/chats/{id}/members
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta.
 

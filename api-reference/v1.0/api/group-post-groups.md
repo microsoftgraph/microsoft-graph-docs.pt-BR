@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 308293442b000d372b5aebc0b175ebef566d90c9
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 74769f7fe05f02274c29868e134b64b878b41a81
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782974"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368177"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -25,7 +25,7 @@ Esta operação retorna, por padrão, apenas um subconjunto das propriedades de 
 
 Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) e especifique as propriedades em uma opção de consulta `$select` do OData.
 
-> **Observação** : Embora o Microsoft Teams tenha como base grupos do Microsoft 365, atualmente não é possível criar uma equipe por meio desta API. Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.
+> **Observação**: Embora o Microsoft Teams tenha como base grupos do Microsoft 365, atualmente não é possível criar uma equipe por meio desta API. Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -78,7 +78,7 @@ Use a propriedade **groupTypes** para controlar o tipo de grupo e sua associaç�
 | Tipo de grupo | Associação atribuída | Associação dinâmica |
 |:--------------|:------------------------|:---------------|
 | Microsoft 365 (também conhecido como grupo unificado)| `["Unified"]` | `["Unified","DynamicMembership"]`
-| Dinâmica | `[]` ( _null_ ) | `["DynamicMembership"]`|
+| Dinâmica | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, esse método retorna um código de resposta `201 Created` e um objeto [group](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão do grupo.
@@ -179,7 +179,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-group-with-owners-and-members"></a>Exemplo 2: criando um grupo com membros e proprietários
 
-O exemplo a seguir cria um grupo do Microsoft 365 com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](group-post-members.md) ou o envio em lotes JSON.
+O exemplo a seguir cria um Grupo de segurança com um proprietário e membros especificados. Observe que, no máximo, 20 relações, como proprietários e membros, podem ser adicionadas como parte da criação do grupo. Posteriormente, você pode adicionar mais membros, usando a API [adicionar membro](group-post-members.md) ou o envio em lotes JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -195,11 +195,10 @@ Content-Type: application/json
   "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
-    "Unified"
   ],
-  "mailEnabled": true,
+  "mailEnabled": false,
   "mailNickname": "operations2019",
-  "securityEnabled": false,
+  "securityEnabled": true,
   "owners@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ],

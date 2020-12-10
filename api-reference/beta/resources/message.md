@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 47f0590260b8b1213feb88366e13730c7ebf9526
-ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
+ms.openlocfilehash: 166c9e184264c60484343757a6d23bfea3a322ad
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755721"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563203"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Uma mensagem em uma pasta da caixa de correio.
 
-O número total máximo de destinatários incluídos nas propriedades **toRecipients** , **ccRecipients** e **bccRecipients** para uma única mensagem de email enviada de uma caixa de correio do Exchange Online é de 500. Para obter mais informações, veja [limites de envio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+O número total máximo de destinatários incluídos nas propriedades **toRecipients**, **ccRecipients** e **bccRecipients** para uma única mensagem de email enviada de uma caixa de correio do Exchange A é de 500. Para obter mais informações, veja [limites de envio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Esse recurso permite:
 
@@ -106,9 +106,9 @@ Veja a seguir uma representação JSON do recurso
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
 |conversationIndex|Edm.Binary|Indica a posição da mensagem dentro da conversa.|
-|createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
+|createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
-|from|[recipient](recipient.md)|O proprietário da caixa de correio da qual a mensagem foi enviada. Na maioria dos casos, esse valor é o mesmo que o da propriedade **remetente** , exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
+|from|[recipient](recipient.md)|O proprietário da caixa de correio da qual a mensagem foi enviada. Na maioria dos casos, esse valor é o mesmo que o da propriedade **remetente**, exceto para cenários de compartilhamento ou delegação. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos. Esta propriedade não inclui anexos em linha, portanto, se uma mensagem contém somente anexos em linha, essa propriedade é falsa. Para verificar a existência de anexos em linha, analise a propriedade **body** para procurar um atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
 |id|Cadeia de caracteres| Identificador exclusivo da mensagem. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
 |importância|String| A importância da mensagem: `Low`, `Normal`, `High`.|
@@ -119,14 +119,14 @@ Veja a seguir uma representação JSON do recurso
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
 |mentionsPreview|[mentionsPreview](mentionspreview.md)|Informações sobre menções na mensagem. Ao processar uma solicitação `GET` /messages, o servidor define essa propriedade e a inclui na resposta por padrão. O servidor retornará null se não houver menções na mensagem. Opcional. |
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
-|receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
+|receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
-|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from** . Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [ou ao enviar uma mensagem como um delegado](/graph/outlook-share-delegate-calendar.md). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
-|sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
-|subject|String|O assunto da mensagem.|
+|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [ou ao enviar uma mensagem como um delegado](/graph/outlook-share-delegate-calendar.md). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
+|sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada. <br><br> As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+|assunto|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual. **uniqueBody** não é fornecido por padrão, mas pode ser recuperado por uma determinada mensagem pelo uso da consulta `?$select=uniqueBody`. Pode estar no formato HTML ou no formato de texto.|
 |unsubscribeData|String|As entradas válidas analisadas no cabeçalho List-Unsubscribe.  Esses são os dados para o comando mail no cabeçalho List-Unsubscribe, se a propriedade UnsubscribeEnabled for true.|
@@ -139,7 +139,7 @@ Veja a seguir uma representação JSON do recurso
 |:---------------|:--------|:----------|
 |attachments|Coleção [Attachment](attachment.md)|Os anexos [fileAttachment](fileattachment.md) e [itemAttachment](itemattachment.md) da mensagem.|
 |extensions|Coleção [Extension](extension.md)| A coleção de extensões abertas definidas para a mensagem. Anulável.|
-|menções|Coleção [mention](mention.md) | Uma coleção de menções na mensagem, ordenada pelo **createdDateTime** , do mais novo para o mais antigo. Por padrão, um `GET` /messages não retorna essa propriedade, a menos que você aplique `$expand` à propriedade.|
+|menções|Coleção [mention](mention.md) | Uma coleção de menções na mensagem, ordenada pelo **createdDateTime**, do mais novo para o mais antigo. Por padrão, um `GET` /messages não retorna essa propriedade, a menos que você aplique `$expand` à propriedade.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a mensagem. Anulável.|
 
@@ -153,13 +153,13 @@ Veja a seguir uma representação JSON do recurso
 |[Update](../api/message-update.md) | [message](message.md) |Atualizar o objeto message. |
 |[Delete](../api/message-delete.md) | None |Excluir o objeto message. |
 |[copy](../api/message-copy.md)|[Message](message.md)|Copiar uma mensagem para uma pasta.|
-|[createForward](../api/message-createforward.md)|[Mensagem](message.md)|Crie uma mensagem de encaminhamento de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createForward** . Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
-|[createReply](../api/message-createreply.md)|[Mensagem](message.md)|Crie uma mensagem de resposta de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createReply** . Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
-|[createReplyAll](../api/message-createreplyall.md)|[Mensagem](message.md)|Crie uma mensagem para responder a todos de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createReplyAll** . Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createForward](../api/message-createforward.md)|[Mensagem](message.md)|Crie uma mensagem de encaminhamento de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createForward**. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReply](../api/message-createreply.md)|[Mensagem](message.md)|Crie uma mensagem de resposta de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createReply**. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReplyAll](../api/message-createreplyall.md)|[Mensagem](message.md)|Crie uma mensagem para responder a todos de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createReplyAll**. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[delta](../api/message-delta.md)|Coleção [message](message.md)| Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizadas em uma pasta especificada.|
-|[forward](../api/message-forward.md)|Nenhum|Encaminhe uma mensagem, adicione um comentário ou modifique todas as propriedades atualizáveis em uma única chamada **forward** . A mensagem é então salva na pasta Itens Enviados.|
+|[forward](../api/message-forward.md)|Nenhum|Encaminhe uma mensagem, adicione um comentário ou modifique todas as propriedades atualizáveis em uma única chamada **forward**. A mensagem é então salva na pasta Itens Enviados.|
 |[move](../api/message-move.md)|[Message](message.md)|Mover a mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino.|
-|[reply](../api/message-reply.md)|Nenhum|Responda ao remetente de uma mensagem, adicione um comentário ou modifique todas as propriedades atualizáveis em uma única chamada **reply** . A mensagem é então salva na pasta Itens Enviados.|
+|[reply](../api/message-reply.md)|Nenhum|Responda ao remetente de uma mensagem, adicione um comentário ou modifique todas as propriedades atualizáveis em uma única chamada **reply**. A mensagem é então salva na pasta Itens Enviados.|
 |[replyAll](../api/message-replyall.md)|Nenhum|Responda a todos os destinatários de uma mensagem especificando um comentário e modificando quaisquer **propriedades atualizáveis** da resposta, tudo isso usando o método ReplyAll. A mensagem é então salva na pasta Itens Enviados.|
 |[send](../api/message-send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
 |[unsubscribe](../api/message-unsubscribe.md)|Nenhum|Envie uma mensagem usando os dados e o endereço especificados no primeiro comando mailto no cabeçalho List-Unsubscribe.|

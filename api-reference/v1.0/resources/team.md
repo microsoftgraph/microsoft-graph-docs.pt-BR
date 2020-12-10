@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0772457d91b2f6ad1bca1330841ba247dad62dba
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 7eb01d5043ec6857a6b99b5a0eb3f91687d74bdf
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582027"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387727"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -34,10 +34,11 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |[Obter equipe](../api/team-get.md) | [team](team.md) | Recupere as propriedades e relações da equipe especificada.|
 |[Atualizar equipe](../api/team-update.md) | [team](team.md) |Atualize as propriedades da equipe especificada. |
 |[Excluir equipe](../api/group-delete.md) | Nenhum |Exclua a equipe e o grupo associado. |
-|[Listar membros](../api/team-list-members.md)|coleção [conversationMember](../resources/conversationmember.md)|Obtenha o conversationMembers da propriedade de navegação dos membros.|
-|[Adicionar membros](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Adicionar um novo membro.|
-|[Remover membros](../api/team-delete-members.md)|Nenhum|Excluir um objeto [conversationMember](../resources/conversationmember.md).|
-|[Alterar a função do membro](/graph/api/conversationmember-update?view=graph-rest-beta&tabs=http&preserve-view=true)|[conversationMember](../resources/conversationmember.md)|Alterar um membro para um proprietário ou voltar para um membro regular.|
+|[Listar membros](../api/team-list-members.md)|coleção [conversationMember](../resources/conversationmember.md)|Obtenha a lista de membros nessa equipe.|
+|[Obter membro](../api/team-get-members.md) | [conversationMember](conversationmember.md)coleção | Obtenha um membro na equipe.|
+|[Adicionar membro](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Adicione um novo membro à equipe.|
+|[Remover membro](../api/team-delete-members.md)|Nenhum|Remova um membro existente da equipe.|
+|[Atualizar a função do membro](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Alterar um membro para um proprietário ou voltar para um membro regular.|
 |[Arquivar equipe](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Coloque a equipe em um estado somente leitura. |
 |[Desarquivar equipe](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restaure a equipe com um estado de leitura e gravação. |
 |[Clonar equipe](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copie a equipe e o grupo associado. |

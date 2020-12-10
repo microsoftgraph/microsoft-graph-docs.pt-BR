@@ -1,18 +1,18 @@
 ---
-title: Remover membros da equipe
+title: Remover membro da equipe
 description: Remover um conversationMember de uma equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5accad834a8237b840aceafec631e1e7a0f7a43c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 71615eada25a56f9595f20b8b115fd41a016d921
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975914"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387777"
 ---
-# <a name="remove-members-from-team"></a>Remover membros da equipe
+# <a name="remove-member-from-team"></a>Remover membro da equipe
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -36,7 +36,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 DELETE /teams/{team-id}/members/{membership-id}
-DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -62,7 +61,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members/{membership-id}
+DELETE https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-members-from-team-csharp-snippets.md)]
@@ -95,5 +94,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
+## <a name="see-also"></a>Confira também
 
+- [Remover membro do canal](channel-delete-members.md)
 

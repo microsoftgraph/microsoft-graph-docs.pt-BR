@@ -1,36 +1,39 @@
 ---
-title: Listar membros
+title: Listar membros de equipe
 description: Obtenha o conversationMembers de uma equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed6c122008da3a4058dd88688217537b5f93ac01
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4685e277f386d6ecaa51565778529ac812ba1c65
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974591"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387588"
 ---
-# <a name="list-members"></a>Listar membros
+# <a name="list-members-of-team"></a>Listar membros de equipe
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha o [conversationMember](../resources/conversationmember.md) de uma [equipe](../resources/team.md).
+Obtenha a [conversationMember](../resources/conversationmember.md) coleçãoda [equipe](../resources/team.md).
 
->Observação: atualmente, esta API não é compatível com a paginação, portanto, se houver muitos membros para se ajustarem a uma solicitação, você não terá todos os membros.
+> [!NOTE]
+> As IDs de associação retornadas pelo servidor devem ser tratadas como cadeias de caracteres opacas. O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.
+>
+> Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro. O cliente não deve presumir que todos os membros são apenas do locatário atual.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+|Aplicativo| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
 
-> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,8 +42,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /teams/{teamsId}/members
-GET /teams/{teamsId}/channels/{channelId}/members
+GET /teams/{team-id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -69,7 +71,7 @@ Se bem sucedido, este método retorna um código de resposta `200 OK` e uma cole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/members
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationmember-csharp-snippets.md)]
@@ -130,4 +132,6 @@ Content-Type: application/json
 }
 ```
 
+## <a name="see-also"></a>Confira também
 
+- [Listar membros no canal](channel-list-members.md)

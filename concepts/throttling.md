@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 56cd4925f7678e22b94eb97d4420b4a18c682ef7
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 88bbdf56f1ef59fe1e805437b34d46f7e8927613
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030239"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580981"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -77,28 +77,28 @@ Todos os recursos e as APIs descritos na seção [limites específicos do servi�
 Para uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](/azure/architecture/patterns/throttling).
 
 > [!NOTE]
-> If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](/azure/architecture/patterns/category/resiliency) when building large-scale applications.
+> Se nenhum cabeçalho `Retry-After` for fornecido pela resposta, recomendamos implementar uma política de repetição exponencial de retirada. Você também pode implementar [padrões mais avançados](/azure/architecture/patterns/category/resiliency) ao criar aplicativos em grande escala.
 >
 > Os SDKs do Microsoft Graph já implementam manipuladores que dependem do cabeçalho `Retry-After` ou padrão para uma política de repetição de retirada exponencial.
 
 ## <a name="best-practices-to-avoid-throttling"></a>Práticas recomendadas para evitar a limitação
 
-Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
+Padrões de programação como pesquisando continuamente um recurso para verificar se há atualizações e a verificação regular das coleções de recursos para verificar se há recursos novos ou excluídos, possuem maior propensão de levar aplicativos a serem regulados e prejudicam o desempenho geral. Em vez disso, você deve aproveitar o [controle de alterações](delta-query-overview.md) e [notificações de alteração](webhooks.md) quando estiverem disponíveis.
 
 >[!NOTE]
 >[Práticas recomendadas para descobrir arquivos e detectar alterações em escala](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) descrevem as práticas recomendadas em detalhes.
 
 ## <a name="throttling-and-batching"></a>Limitação e dosagem
 
-[JSON batching](./json-batching.md) allows you to optimize your application by combining multiple requests into a single JSON object. Requests in a batch are evaluated individually against throttling limits and if any request exceeds the limits, it fails with a `status` of `429` and an error similar to the one provided above. The batch itself fails with a status code of `424` (Failed Dependency). It is possible for multiple requests to be throttled in a single batch. You should retry each failed request from the batch using the value provided in the `retry-after` response header from the JSON content. You may retry all the failed requests in a new batch after the longest `retry-after` value.
+[O lote JSON](./json-batching.md) permite que você otimize seu aplicativo combinando várias solicitações em um único objeto JSON. As solicitações em um lote são avaliadas individualmente em relação aos limites de estrangulamento e, se alguma solicitação exceder os limites, ela falhará com um `status` de `429` e um erro semelhante ao fornecido acima. O próprio lote falha com um código de status de `424` (Dependência com Falha). É possível que várias solicitações sejam limitadas em um único lote. Você deve tentar novamente a cada solicitação com falha no lote utilizando o valor fornecido no cabeçalho de resposta `retry-after` do conteúdo JSON. Você pode tentar novamente para todas as solicitações com falha em um novo lote após o valor `retry-after` mais longo.
 
 Se os SDKs tentarem novamente as solicitações limitadas automaticamente quando não estiverem em lote, as solicitações limitadas que fizeram parte de um lote não serão automaticamente repetidas.
 
 ## <a name="service-specific-limits"></a>Limites específicos do serviço
 
-Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Azure Active Directory. These services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+O Microsoft Graph permite que você acesse os dados em [vários serviços](overview-major-services.md), como o Outlook ou o Azure Active Directory. Esses serviços impõem seus próprios limites de controle que afetam os aplicativos que usam o Microsoft Graph para acessá-los.
 
-Any request can be evaluated against multiple limits, depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, and so on), the request type (GET, POST, PATCH, and so on), and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific-limits described in the section, the following global limits apply:
+Qualquer solicitação poderá ser avaliada em relação a vários limites, dependendo do escopo do limite (por aplicativo em todos os locatários, por locatário para todos os aplicativos, por aplicativo por locatário, e assim por diante), do tipo de solicitação (GET, POST, PATCH e assim por diante) e de outros fatores. O primeiro limite a ser alcançado dispara o comportamento de limitação. Além dos limites de serviço específicos descritos na seção, os seguintes limites globais se aplicam:
 
 | Tipo de solicitação | Por aplicativo em todos os locatários  |
 | ------------ | ------------------------ |
@@ -107,11 +107,11 @@ Any request can be evaluated against multiple limits, depending on the scope of 
 > [!NOTE]
 > Os limites específicos descritos aqui estão sujeitos a alterações.
 
-> **Note:** In this section, the term *tenant* refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the the one where the application was created, in the case of a single tenant application, or it can be different, in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
+> **Nota:** Nesta seção, o termo *locatário* refere-se à organização Microsoft 365 onde o aplicativo está instalado. Este inquilino pode ser o mesmo onde o aplicativo foi criado, no caso de um único aplicativo de inquilino, ou pode ser diferente, no caso de [um aplicativo de vários inquilinos](/azure/active-directory/develop/setup-multi-tenant-app).
 
 ### <a name="outlook-service-limits"></a>Limites de serviço do Outlook
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
+Os limites de serviço do Outlook são avaliados para cada combinação de ID de aplicativo e caixa de correio. Em outras palavras, os limites descritos se aplicam a um aplicativo específico ao acessar uma caixa de correio específica (usuário ou grupo). Se um aplicativo exceder o limite de uma caixa de correio, isso não afetará a capacidade de acessar outra caixa de correio. Os seguintes limites se aplicam à nuvem pública, bem como às [ implementações de nuvens nacionais](./deployments.md).
 
 | Limite                                                      | Aplicável a      |
 |------------------------------------------------------------|-----------------|
@@ -174,7 +174,7 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 | -------------- | ------------ |
 | [Chamadas](/graph/api/resources/call) | 10.000 chamadas/mês e 100 chamadas simultâneas   |
 | [Informações sobre a reunião ](/graph/api/resources/meetinginfo)   | 2000 reuniões/usuário a cada mês |
-| [Presença](/graph/api/resources/presence) (pré-visualização)   | 50 solicitações por segundo |
+| [Presença](/graph/api/resources/presence) (pré-visualização)   | 1.500 solicitações em um período de 30 segundos, por aplicativo por locatário |
 
 ### <a name="onenote-service-limits"></a>Limites do serviço OneNote
 
@@ -186,7 +186,7 @@ Os recursos a seguir são fornecidos pelo serviço do Outlook.
 Os limites anteriores se aplicam aos seguintes recursos:  
 onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
 
-Você pode encontrar informações adicionais sobre as práticas recomendadas no [limitação da API do OneNote e como evitá-la](https://developer.microsoft.com/pt-BR/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+Você pode encontrar informações adicionais sobre as práticas recomendadas no [limitação da API do OneNote e como evitá-la](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
 
 > **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
 
@@ -221,7 +221,8 @@ Os limites são expressos como solicitações por segundo (rps).
 | PUBLIQUE, CORRIJA, COLOQUE /equipes/```{team-id}```/ programação e todas as APIs neste caminho | 30 rps | 300 rps |
 | APAGAR /equipe/```{team-id}```/programação e todas as APIs neste caminho | 15 rps | 150 rps |
 
-A maximum of 4 requests per second per app can be issued on a given team or channel. A maximum of 3000 messages per app per day can be sent to a given channel.
+É possível emitir, no máximo, 4 solicitações por segundo por aplicativo em uma determinada equipe ou canal.
+Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um determinado canal.
 
 Confira também [limites do Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) e [requisitos de votação](/graph/api/resources/teams-api-overview#polling-requirements).
 
@@ -272,17 +273,17 @@ Estes limites de serviço se aplicam às seguintes entidades:
 
 #### <a name="pattern"></a>Padrão
 
-Throttling is based on a token bucket algorithm, which works by adding individual costs of requests. The sum of request costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached, in situations when the services are under an important load or based on data volume for a specific tenant. The following table lists existing limits.
+A limitação baseia-se em um algoritmo no bucket de token, que funciona adicionando custos individuais de solicitações. A soma dos custos da solicitação é depois comparada contra os limites predeterminados. Apenas as solicitações que excedem os limites serão limitadas. Se qualquer um dos limites for excedido, a resposta será `429 Too Many Requests`. É possível receber respostas `429 Too Many Requests` mesmo quando os seguintes limites não são alcançados, em situações em que os serviços estão sob uma carga importante ou com base no volume de dados para um determinado locatário. A tabela a seguir lista os limites existentes.
 
 | Tipo de limite | Cota de unidade de recurso | Gravar cota |
 | ---------- | ----------- | -------------- |
 | aplicação+par de locatários | S: 3500, M:5000, L:8000 por 10 segundos | 3000 por 2 minutos e 30 segundos |
 | aplicação | 150,000 por 20 segundos  | 70,000 por 5 minutos |
-| locatário | Não Aplicável | 18,000 por 5 minutos |
+| locatário | Não aplicável | 18,000 por 5 minutos |
 
-> **Observação**: o limite do par aplicativo + locatário varia com base no número de usuários nas solicitações de locatário que são executadas. Os tamanhos dos locatários são definidos da seguinte forma: S - menos de 50 usuários, M - entre 50 e 500 usuários e L - acima de 500 usuários.
+> **Observação**: A aplicação + limite do par de locatários varia dependendo do número de usuários nas solicitações de locatário. Os tamanhos dos locatários são definidos da seguinte maneira: S - em 50 usuários, M - entre 50 e 500 usuários, e L para acima de 500 usuários.
 
-The following table lists base request costs. Any requests not listed have a base cost of 1.
+A tabela a seguir lista a base dos custos da solicitação. Qualquer solicitação não listada tem um custo base de 1.
 
 | Operação | Caminho da Solicitação | Base do Custo Unitário de Recurso | Gravar Custo |
 | --------- | ------------ | ----------------- | ------------------ |
@@ -320,27 +321,27 @@ Outros fatores que afetam um custo da solicitação:
 - Usar o `$expand` aumenta os custos por 1
 - Usar o `$top` com um valor menor que 20 reduz os custos por 1
 
-> **Note:** A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> **Observação:** Um custo da solicitação nunca pode ser menor do que 1. Qualquer custo da solicitação que se aplica a um caminho da solicitação iniciado por `me/` também se aplica a solicitações equivalentes iniciadas por `users/{id | userPrincipalName}/`.
 
 #### <a name="additional-headers"></a>Cabeçalhos adicionais
 
 ##### <a name="request-headers"></a>Cabeçalhos de solicitação
 
-- **x-ms-throttle-priority** - If the header doesn't exist or is set to any other value, it indicates a normal request. We recommend setting priority to `high` only for the requests initiated by the user. The values of this header can be the following:
-  - Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
-  - Normal - Default if no value is provided. Indicates that the request is default priority.
-  - High - Indicates that the request is high priority. Throttling this request causes user-visible failures.
+- **x-ms-throttle-priority** - se o cabeçalho não existir ou se estiver definido com qualquer outro valor, ele indicará uma solicitação normal. Recomendamos definir a prioridade para `high` somente para as solicitações iniciadas pelo usuário. Os valores desse cabeçalho podem ser os seguintes:
+  - Baixa - Indica que a solicitação tem prioridade baixa. Limitando esta solicitação não causa falhas visíveis ao usuário.
+  - Normal - Padrão se nenhum valor for fornecido. Indica que a solicitação é a de prioridade padrão.
+  - Alta - Indica que a solicitação é de alta prioridade. Limitando esta solicitação causa falhas visíveis ao usuário.
 
-> **Note:** Should requests be throttled, low priority requests will be throttled first, normal priority requests second, and high priority requests last. Using the priority request header does not change the limits.
+> **Observação:** Se as solicitações forem limitadas, as solicitações de baixa prioridade serão limitadas primeiro, as solicitações de prioridade normal em segundo e as solicitações de alta prioridade por último. Usar a prioridade no cabeçalho da solicitação não altera os limites.
 
 ##### <a name="regular-responses-requests"></a>Solicitações de respostas regulares
 
-- **x-ms-resource-unit** - Indicates the resource unit used for this request. Values are positive integers.
-- **x-ms-throttle-limit-percentage** - Returned only when the application consumed more than 0.8 of its limit. The value ranges from 0.8 to 1.8 and is a percentage of the use of the limit. The value can be used by the callers to set up an alert and take action.
+- **x-ms-resource-unit** - Indica a unidade de recurso usada para esta solicitação. Os valores são números inteiros positivos.
+- **x-ms-throttle-limit-percentage** - Retornado somente quando a aplicação consumiu mais de 0.8 de seu limite. O valor varia de 0.8 a 1.8 e é uma porcentagem do uso do limite. O valor pode ser usado pelos chamadores para configurar um alerta e tomar providências.
 
 ##### <a name="throttled-responses-requests"></a>Solicitações de respostas limitadas
 
-- **x-ms-throttle-scope** - eg. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. Indicates the scope of throttling with the following format `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>`:
+- **x-ms-throttle-scope** - exemplo. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. Indica o escopo de limitação com o seguinte formato `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>`:
   - Escopo: (cadeia de caracteres, obrigatório)
     - Tenant_Application - Todas as solicitações para um determinado locatário da aplicação atual.
     - Tenant - Todas as solicitações para o locatário atual, independentemente da aplicação.
@@ -351,7 +352,7 @@ Outros fatores que afetam um custo da solicitação:
     - ReadWrite: Todas solicitações do escopo (qualquer)
   - ApplicationId (GUID, obrigatório)
   - TenantId|UserId|ResourceId: (GUID, obrigatório)
-- **x-ms-throttle-information** - Indicates the reason for throttling and can have any value (string). The value is provided for diagnostics and troubleshooting purposes, some examples include:
+- **x-ms-throttle-information** - Indica o motivo para a limitação e pode ter qualquer valor (cadeia de caracteres). O valor é fornecido para fins de solução de problemas e diagnósticos. Alguns exemplos incluem:
   - CPULimitExceeded - Limitando porque o limite para alocação do CPU está excedido.
   - WriteLimitExceeded - limitando porque o limite para gravação está excedido.
   - ResourceUnitLimitExceeded - Limitando porque o limite para a unidade de recurso alocada foi excedido.
@@ -399,7 +400,7 @@ Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
 | Qualquer pedido (CSV)         | 14 solicitações a cada 10 minutos   | 40 solicitações a cada 10 minutos |
 | Qualquer solicitação (JSON, beta)  | 100 solicitações a cada 10 minutos  | n/d                        |
 
-The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+Os limites anteriores aplicam-se individualmente a cada relatório de API. Por exemplo, uma solicitação da API do relatório de atividades do usuário do Microsoft Teams e uma solicitação de relatório da API do usuário do Outlook dentro de 10 minutos contará como uma solicitação entre 14 para cada API e não duas solicitações entre 14 para ambas.
 
 Os limites anteriores se aplicam aos seguintes recursos de **relatório**.  
 
@@ -432,7 +433,7 @@ Os limites acima se aplicam aos seguintes recursos: openTypeExtension, schemaExt
 
 ### <a name="files-and-lists-service-limits"></a>Limites de serviço dos arquivos e listas
 
-Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+Os limites de serviço do OneDrive, OneDrive for Business e SharePoint Online não estão disponíveis. Para mais informações, confira [Por que não é possível saber o limites exatos?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
 
 As informações anteriores aplicam-se aos seguintes recursos:  
 baseItem, baseItemVersion, columnDefinition, columnLink, contentType, drive, driveItem, driveItemVersion, fieldValueSet, itemActivity, itemActivityStat, List, listItem, listItemVersion, permission, sharedDriveItem, site e thumbnailSet.
@@ -499,3 +500,16 @@ Os limites anteriores se aplicam aos seguintes recursos: dataPolicyOperation.
 [!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
 
 <!-- { "blockType": "throttlinggenend" } -->
+
+### <a name="assignment-service-limits"></a>Limites de serviço de atribuição
+
+Os limites a seguir se aplicam a solicitações na API beta do serviço de atribuição:
+
+| Tipo de solicitação                 | Limitar por aplicativo por locatário     | Limitar por locatário para todos os aplicativos |
+|---------------------------|------------------------------|----------------------------|
+| Qualquer         | 5000 solicitações a cada 10 segundos   | 15.000 solicitações a cada 10 segundos |
+| GET me/Assignment  | 50 solicitações a cada 10 segundos | 150 solicitações a cada 10 segundos |  
+
+Os limites anteriores se aplicam aos seguintes recursos: [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)
