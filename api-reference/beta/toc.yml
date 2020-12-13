@@ -189,11 +189,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -397,7 +397,7 @@ items:
                     href: api/outlookuser-list-mastercategories.md
               - name: Converter IDs
                 href: api/user-translateexchangeids.md
-          - name: Tarefas do Outlook (preterido)
+          - name: Tarefas do Outlook (obsoleto)
             items:
               - name: Tarefas do Outlook
                 href: resources/outlooktask.md
@@ -450,7 +450,7 @@ items:
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
-              - name: Adicionar aplicativo para usuário
+              - name: Adicionar o aplicativo para o usuário
                 href: api/userteamwork-post-installedapps.md
               - name: Listar aplicativos para o usuário
                 href: api/userteamwork-list-installedapps.md
@@ -468,11 +468,11 @@ items:
                 href: resources/todotask.md
               - name: Criar tarefa
                 href: api/todotasklist-post-tasks.md
-              - name: Criar lista de tarefas
+              - name: Criar uma lista de tarefas
                 href: api/todo-post-lists.md
               - name: Listar tarefas
                 href: api/todotasklist-list-tasks.md
-              - name: Listar listas de tarefas
+              - name: Lista de listas de tarefas
                 href: api/todo-list-lists.md
           - name: Configurações do usuário
             items:
@@ -484,7 +484,7 @@ items:
                 href: api/usersettings-update.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Group
             href: resources/group.md
@@ -659,7 +659,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1254,7 +1254,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1383,7 +1383,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1422,7 +1422,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
-          - name: Presença (visualização)
+          - name: Presença (pré-visualização)
             href: resources/presence.md
             items:
               - name: Obter presença
@@ -1432,11 +1432,11 @@ items:
       - name: Conformidade (pré-visualização)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta eletrônica
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscoverycase.md
@@ -1558,7 +1558,7 @@ items:
       - name: Reserva de clientes (visualização)
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -8969,7 +8969,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: Listar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Delete
+                      - name: Excluir
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Relatórios do gerenciamento de dispositivos
                     href: resources/intune-shared-devicemanagementreports.md
@@ -9578,7 +9578,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -9674,7 +9674,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -10259,7 +10259,7 @@ items:
                         href: api/authenticationoperation-get.md
               - name: Política de método de autenticação
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethodspolicies-overview.md
                   - name: Política FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
@@ -10746,7 +10746,7 @@ items:
                         href: api/identityuserflowattributeassignment-update.md
                       - name: Excluir atribuição de atributo de fluxo do usuário
                         href: api/identityuserflowattributeassignment-delete.md
-          - name: Governança
+          - name: Gestão
             items:
               - name: Revisões de acesso (grupos)
                 href: resources/accessreviewsv2-root.md
@@ -11257,7 +11257,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -11379,7 +11379,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -11809,7 +11809,7 @@ items:
                 href: api/contact-delta.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -11831,7 +11831,7 @@ items:
         items:
           - name: Relatórios de atividades do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -11854,7 +11854,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -11877,7 +11877,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registro de usuário de credenciais
                     href: resources/credentialuserregistrationcount.md
@@ -11901,7 +11901,7 @@ items:
                         href: api/reportroot-getcredentialusagesummary.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -11970,7 +11970,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Obter contagens de usuários dos serviços
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Uso dos Aplicativos do Microsoft 365
+              - name: Uso do Microsoft 365 Apps
                 href: resources/microsoft-365-apps-usage-report.md
                 items:
                   - name: Obter detalhes do usuário
@@ -12108,12 +12108,12 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -12123,7 +12123,7 @@ items:
                 href: api/search-query.md
           - name: Índice (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -12229,7 +12229,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -12285,7 +12285,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -12404,9 +12404,9 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -12525,6 +12525,8 @@ items:
                 href: api/team-get-members.md
               - name: Adicionar membro
                 href: api/team-post-members.md
+              - name: Adicionar membros em massa
+                href: api/conversationmembers-add.md
               - name: Remover membro
                 href: api/team-delete-members.md
               - name: Atualizar membro
@@ -12605,7 +12607,7 @@ items:
                 href: api/channel-list-members.md
               - name: Obter membro
                 href: api/channel-get-members.md
-              - name: Adicionar membro
+              - name: Criar membro
                 href: api/channel-post-members.md
               - name: Remover membro
                 href: api/channel-delete-members.md
@@ -12687,42 +12689,48 @@ items:
                 href: api/teamsapp-update.md
               - name: Excluir aplicativo do catálogo
                 href: api/teamsapp-delete.md
-          - name: Aplicativos
+          - name: App
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
-              - name: Listar aplicativos em equipe
-                href: api/team-list-installedapps.md
-              - name: Obter o aplicativo instalado no Team
-                href: api/team-get-installedapps.md
-              - name: Adicionar aplicativo à equipe
-                href: api/team-post-installedapps.md
-              - name: Remover aplicativo da equipe
-                href: api/team-delete-installedapps.md
-              - name: Atualizar o aplicativo instalado para a equipe
-                href: api/team-teamsappinstallation-upgrade.md
-              - name: Listar aplicativos para o usuário
-                href: api/userteamwork-list-installedapps.md
-              - name: Obter o aplicativo instalado para o usuário
-                href: api/userteamwork-get-installedapps.md
-              - name: Adicionar aplicativo para usuário
-                href: api/userteamwork-post-installedapps.md
-              - name: Remover o aplicativo para o usuário
-                href: api/userteamwork-delete-installedapps.md
-              - name: Atualização do aplicativo instalado para o usuário
-                href: api/userteamwork-teamsappinstallation-upgrade.md
-              - name: Obter chat entre o usuário e o aplicativo
-                href: api/userscopeteamsappinstallation-get-chat.md
-              - name: Listar aplicativos no chat
-                href: api/chat-list-installedapps.md
-              - name: Obter o aplicativo instalado no chat
-                href: api/chat-get-installedapps.md
-              - name: Adicionar aplicativo ao chat
-                href: api/chat-post-installedapps.md
-              - name: Remover aplicativo de chat
-                href: api/chat-delete-installedapps.md
-              - name: Atualizar o aplicativo instalado no chat
-                href: api/chat-teamsappinstallation-upgrade.md
+              - name: Aplicativo no Team
+                items:
+                  - name: Listar aplicativos em equipe
+                    href: api/team-list-installedapps.md
+                  - name: Obter o aplicativo instalado no Team
+                    href: api/team-get-installedapps.md
+                  - name: Adicionar aplicativo à equipe
+                    href: api/team-post-installedapps.md
+                  - name: Atualizar aplicativo instalado no Team
+                    href: api/team-teamsappinstallation-upgrade.md
+                  - name: Remover aplicativo da equipe
+                    href: api/team-delete-installedapps.md
+              - name: Aplicativo no escopo pessoal do usuário
+                items:
+                  - name: Listar aplicativos para o usuário
+                    href: api/userteamwork-list-installedapps.md
+                  - name: Obter o aplicativo instalado para o usuário
+                    href: api/userteamwork-get-installedapps.md
+                  - name: Adicionar o aplicativo para o usuário
+                    href: api/userteamwork-post-installedapps.md
+                  - name: Atualização do aplicativo instalado para o usuário
+                    href: api/userteamwork-teamsappinstallation-upgrade.md
+                  - name: Obter chat entre o usuário e o aplicativo
+                    href: api/userscopeteamsappinstallation-get-chat.md
+                  - name: Remover o aplicativo para o usuário
+                    href: api/userteamwork-delete-installedapps.md
+              - name: Aplicativo no chat
+                items:
+                  - name: Listar aplicativos no chat
+                    href: api/chat-list-installedapps.md
+                  - name: Obter o aplicativo instalado no chat
+                    href: api/chat-get-installedapps.md
+                  - name: Adicionar aplicativo ao chat
+                    href: api/chat-post-installedapps.md
+                  - name: Atualizar aplicativo instalado no chat
+                    href: api/chat-teamsappinstallation-upgrade.md
+                  - name: Remover aplicativo de chat
+                    href: api/chat-delete-installedapps.md
           - name: Feed de atividades
             items:
               - name: Enviar notificação para o usuário no chat
@@ -12734,26 +12742,30 @@ items:
           - name: Tab
             href: resources/teamstab.md
             items:
-              - name: Listar guias no canal
-                href: api/channel-list-tabs.md
-              - name: Guia obter no canal
-                href: api/channel-get-tabs.md
-              - name: Adicionar guia ao Cannel
-                href: api/channel-post-tabs.md
-              - name: Guia atualizar no canal
-                href: api/channel-patch-tabs.md
-              - name: Remover guia do canal
-                href: api/channel-delete-tabs.md
-              - name: Guias de lista no chat
-                href: api/channel-list-tabs.md
-              - name: Guia obter no chat
-                href: api/chat-get-tabs.md
-              - name: Adicionar guia ao chat
-                href: api/chat-post-tabs.md
-              - name: Guia atualizar no chat
-                href: api/chat-patch-tabs.md
-              - name: Guia remover do chat
-                href: api/chat-delete-tabs.md
+              - name: Guia no canal
+                items:
+                  - name: Listar guias no canal
+                    href: api/channel-list-tabs.md
+                  - name: Guia obter no canal
+                    href: api/channel-get-tabs.md
+                  - name: Adicionar guia ao Cannel
+                    href: api/channel-post-tabs.md
+                  - name: Guia atualizar no canal
+                    href: api/channel-patch-tabs.md
+                  - name: Remover guia do canal
+                    href: api/channel-delete-tabs.md
+              - name: Guia no chat
+                items:
+                  - name: Guias de lista no chat
+                    href: api/chat-list-tabs.md
+                  - name: Guia obter no chat
+                    href: api/chat-get-tabs.md
+                  - name: Adicionar guia ao chat
+                    href: api/chat-post-tabs.md
+                  - name: Guia atualizar no chat
+                    href: api/chat-patch-tabs.md
+                  - name: Guia remover do chat
+                    href: api/chat-delete-tabs.md
           - name: Calendário
             href: resources/event.md
             items:
@@ -12947,14 +12959,14 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md
             items:
-              - name: Listar listas de tarefas
+              - name: Lista de listas de tarefas
                 href: api/todo-list-lists.md
-              - name: Criar lista de tarefas
+              - name: Criar uma lista de tarefas
                 href: api/todo-post-lists.md
               - name: Obter lista de tarefas
                 href: api/todotasklist-get.md
@@ -13000,7 +13012,7 @@ items:
                 href: api/linkedresource-update.md
               - name: Excluir
                 href: api/linkedresource-delete.md
-          - name: Tarefas do Outlook (preterido)
+          - name: Tarefas do Outlook (obsoleto)
             items:
               - name: Tarefa do Outlook (preterido)
                 items:
@@ -13086,7 +13098,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:
