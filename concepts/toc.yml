@@ -58,6 +58,8 @@ items:
             href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
+          - name: Suplemento do Office
+            href: /graph/tutorials/office-addin
           - name: PHP
             href: /graph/tutorials/php
           - name: Power Automate
@@ -72,6 +74,8 @@ items:
             href: /graph/tutorials/ruby
           - name: Estrutura do SharePoint
             href: /graph/tutorials/spfx
+          - name: Teams
+            href: /graph/tutorials/teams
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -211,6 +215,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Métodos de autenticação
             href: authenticationmethods-get-started.md
+          - name: Identidade e entrada
+            items:
+              - name: Identificar e corrigir o risco
+                href: tutorial-riskdetection-api.md
           - name: Governança
             items:
               - name: Criar um pacote de acesso
@@ -555,18 +563,36 @@ items:
             items:
               - name: Visão Geral
                 href: toolkit/get-started/overview.md
-              - name: Criar um aplicativo no Azure Active Directory
+              - name: Kit de ferramentas para o React
+                href: toolkit/get-started/mgt-react.md
+          - name: Desenvolver seu primeiro aplicativo
+            items:
+              - name: Registrar um aplicativo no Azure Active Directory
                 href: toolkit/get-started/add-aad-app-registration.md
-              - name: Criar um aplicativo Web (JavaScript)
+              - name: Criar um aplicativo web (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
+              - name: Criar um aplicativo web (React)
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Criar um aplicativo web (Angular)
+                href: toolkit/get-started/use-toolkit-with-angular.md
               - name: Criar uma web part do Microsoft Office SharePoint Online
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Criar uma guia do Microsoft Teams
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: Usar o kit de ferramentas com reagir
-                href: toolkit/get-started/use-toolkit-with-react.md
-              - name: Usar o kit de ferramentas com o angular
-                href: toolkit/get-started/use-toolkit-with-angular.md
+          - name: Provedores
+            items:
+              - name: Usando os provedores
+                href: toolkit/providers/providers.md
+              - name: Provedor MSAL
+                href: toolkit/providers/msal.md
+              - name: Provedor do SharePoint
+                href: toolkit/providers/sharepoint.md
+              - name: Provedor do Microsoft Teams
+                href: toolkit/providers/teams.md
+              - name: Provedor de proxy
+                href: toolkit/providers/proxy.md
+              - name: Provedor personalizado
+                href: toolkit/providers/custom.md
           - name: Componentes
             items:
               - name: Logon
@@ -587,24 +613,20 @@ items:
                 href: toolkit/components/agenda.md
               - name: Tarefas
                 href: toolkit/components/tasks.md
-          - name: Provedores
+              - name: Tarefas Pendentes
+                href: toolkit/components/todo.md
+          - name: Personalizar componentes
             items:
-              - name: Usando os provedores
-                href: toolkit/providers.md
-              - name: Provedor MSAL
-                href: toolkit/providers/msal.md
-              - name: Provedor do SharePoint
-                href: toolkit/providers/sharepoint.md
-              - name: Provedor do Microsoft Teams
-                href: toolkit/providers/teams.md
-              - name: Provedor de proxy
-                href: toolkit/providers/proxy.md
-              - name: Provedor personalizado
-                href: toolkit/providers/custom.md
-          - name: Componentes de estilização
-            href: toolkit/style.md
-          - name: Componentes de modelagem
-            href: toolkit/templates.md
+              - name: Componentes de estilização
+                href: toolkit/customize-components/style.md
+              - name: Componentes de modelagem
+                href: toolkit/customize-components/templates.md
+              - name: Cache de chamadas do Microsoft Graph em componentes
+                href: toolkit/customize-components/cache.md
+              - name: Localizando componentes
+                href: toolkit/customize-components/localization.md
+              - name: Suporte da direita para a esquerda
+                href: toolkit/customize-components/right-to-left.md
       - name: Recursos
         expanded: true
         items:
