@@ -3,12 +3,12 @@ title: Usar o kit de ferramentas do Microsoft Graph com angular
 description: Introdução ao uso do kit de ferramentas do Microsoft Graph em um aplicativo angular.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: be84107314a9696486b377f09dc399d6e15c44cf
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: a1c0ebc252545491dc57d8910eb283db6d227ccd
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288501"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49664041"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Usar o kit de ferramentas do Microsoft Graph com angular
 
@@ -38,7 +38,7 @@ npm install @microsoft/mgt
 ```
 ## <a name="initialize-a-provider"></a>Inicializar um provedor
 
-Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, consulte [usando os provedores](../providers.md). O provedor que você usa depende do contexto no qual a solução será usada.
+Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, consulte [usando os provedores](../providers/providers.md). O provedor que você usa depende do contexto no qual a solução será usada.
 
 O exemplo a seguir mostra como adicionar o [provedor MSAL](../providers/msal.md), mas você pode seguir o mesmo modelo com qualquer um dos provedores. Importe o provedor e defina-o para ser inicializado quando o aplicativo for inicializado. Substitua `<YOUR-CLIENT-ID>` pela ID do cliente para seu aplicativo.
 
@@ -75,7 +75,7 @@ Agora, você pode usar qualquer um dos componentes do Microsoft Graph Toolkit co
 
 ## <a name="customizing-components-with-angular"></a>Personalizando componentes com o angular
 
-Todos os componentes do Microsoft Graph Toolkit dão suporte a [modelos personalizados](../templates.md), que permitem modificar o conteúdo de um componente. A sintaxe padrão para personalizar os componentes é usar chaves duplas para se referir aos dados de propriedade de cada um dos itens retornados, conforme mostrado:
+Todos os componentes do Microsoft Graph Toolkit dão suporte a [modelos personalizados](../customize-components/templates.md), que permitem modificar o conteúdo de um componente. A sintaxe padrão para personalizar os componentes é usar chaves duplas para se referir aos dados de propriedade de cada um dos itens retornados, conforme mostrado:
 
 ```html
 <!-- Double braces are used for data binding in Angular. This will throw an error. -->

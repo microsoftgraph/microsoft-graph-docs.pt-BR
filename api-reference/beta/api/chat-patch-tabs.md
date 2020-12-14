@@ -5,28 +5,30 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e7b8a1bb20b9e80dc8e86768ae5edf3216090287
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 82f5e022fc1c3066f54aed7e58be2e4cefae1b64
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607455"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658296"
 ---
 # <a name="update-tab-in-chat"></a>Guia atualizar no chat
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualiza as propriedades da [guia](../resources/teamstab.md) especificada em um [chat](../resources/chat.md). Isso pode ser usado para configurar o conteúdo da guia.
 
-## <a name="permissions"></a>Permissions
+> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) , em seguida, efetivamente, a guia fixa na reunião será atualizada.
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
 

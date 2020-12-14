@@ -3,18 +3,18 @@ title: Provedor MSAL
 description: O provedor MSAL usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0edb6fba29c5ee0dcb37199db055761088408be6
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: d3b3d82ae3c60080beaaff7f39a1324022d3ab2a
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086610"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659161"
 ---
 # <a name="msal-provider"></a>Provedor MSAL
 
 O provedor MSAL usa [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.
 
-Para saber mais, veja [Providers](../providers.md).
+Para saber mais, veja [Providers](./providers.md).
 
 ## <a name="get-started"></a>Introdução
 
@@ -52,7 +52,11 @@ import {UserAgentApplication} from "msal";
 Providers.globalProvider = new MsalProvider(config: MsalConfig);
 ```
 
-onde MsalConfig é:
+Você pode configurar o `MsalProvider` parâmetro constructor de duas maneiras, conforme descrito nas seções a seguir.
+
+#### <a name="provide-a-clientid-to-create-a-new-useragentapplication"></a>Fornecer um `clientId` para criar um novo `UserAgentApplication`
+
+Essa opção faz sentido quando o kit de ferramentas do Graph é responsável por toda a autenticação em seu aplicativo.
 
 ```ts
 interface MsalConfig {
@@ -66,7 +70,20 @@ interface MsalConfig {
 }
 ```
 
-Você deve fornecer um `clientId` (para criar um novo `UserAgentApplication` ).
+#### <a name="pass-an-existing-useragentapplication-in-the-useragentapplication-property"></a>Passe um existente `UserAgentApplication` na `userAgentApplication` propriedade.
+
+Use isso quando o aplicativo usar a funcionalidade do MSAL além do que está exposto pelo `MsalProvider` e outros recursos do Microsoft Graph Toolkit. Isso é especialmente apropriado se uma estrutura instancia automaticamente e expõe uma `UserAgentApplication` por você; por exemplo, ao usar [MSAL-angular](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-angular).
+
+Certifique-se de entender as oportunidades de colisões ao usar essa opção. Por sua própria natureza, há um risco de `MsalProvider` alterar o estado de uma sessão, por exemplo, fazendo com que o usuário entre ou concorde com escopos adicionais. Certifique-se de que seu aplicativo e outras estruturas respondam adequadamente a essas alterações no estado ou considere o uso de um [provedor personalizado](/graph/toolkit/providers/custom) .
+
+```ts
+interface MsalConfig {
+  userAgentApplication: UserAgentApplication;
+  scopes?: string[];
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  loginHint?: string;
+}
+```
 
 Para saber mais sobre MSAL.js e para opções adicionais que você pode usar ao inicializar a biblioteca do MSAL, consulte a [documentação do MSAL](/azure/active-directory/develop/msal-js-initializing-client-applications).
 

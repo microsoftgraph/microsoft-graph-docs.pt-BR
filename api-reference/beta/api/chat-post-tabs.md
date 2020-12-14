@@ -5,27 +5,29 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6182daa44d0e5ac8deb86a1fb8fe61c5f1376b2f
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 38e6443ac0825c729083fcf1fe8e6f2f3e4ffa13
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607459"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658559"
 ---
 # <a name="add-tab-to-chat"></a>Adicionar guia ao chat
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adicionar (fixar) uma [guia](../resources/teamstab.md) ao [chat](../resources/chat.md)especificado. O aplicativo correspondente já deve estar [instalado no chat](../api/chat-list-installedapps.md).
 
-## <a name="permissions"></a>Permissions
+> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) , em seguida, efetivamente, a guia será adicionada à reunião.
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | TeamsTab. Create, TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsTab. Create, TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 | Aplicativo                            | TeamsTab. Create, TeamsTab. ReadWriteForChat. All, TeamsTab. ReadWrite. All |
 
@@ -110,7 +112,7 @@ Content-type: application/json
 
 - [Configurar tipos de guia internos](/graph/teams-configuring-builtin-tabs)
 - [Adicionar uma guia ao canal](channel-post-tabs.md)
-- [Adicionar aplicativo ao chat](chat-post-installedapps.md)
+- [Adicionar o aplicativo ao chat](chat-post-installedapps.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

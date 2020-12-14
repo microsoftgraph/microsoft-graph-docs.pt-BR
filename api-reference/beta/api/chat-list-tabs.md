@@ -5,27 +5,29 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 238b76702e9d294a569bf89b17bdefda35c039c8
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 0e966f73aa790b57f138bc04830fab09681a5e00
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607456"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658303"
 ---
 # <a name="list-tabs-in-chat"></a>Guias de lista no chat
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de [guias](../resources/teamstab.md) no [chat](../resources/chat.md)especificado. 
+Recupere a lista de [guias](../resources/teamstab.md) no [chat](../resources/chat.md)especificado.
 
-## <a name="permissions"></a>Permissions
+> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) e, em seguida, efetivamente, as guias fixadas na reunião serão listadas. 
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | TeamsTab. ReadWriteForChat, TeamsTab. Read. All, TeamsTab. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsTab. ReadWriteForChat, TeamsTab. Read. All, TeamsTab. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsTab. ReadWriteForChat. All, TeamsTab. Read. All, TeamsTab. ReadWrite. All |
 

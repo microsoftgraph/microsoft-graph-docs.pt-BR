@@ -3,12 +3,12 @@ title: Introdução ao Microsoft Graph Toolkit
 description: Introdução ao uso do Microsoft Graph Toolkit em seu aplicativo.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: e3739bb6180e19569ae40e873d3a018bbb541833
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f1451213822e2489f04bb454c355125ed95b1aed
+ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977132"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49664125"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Introdução ao Microsoft Graph Toolkit
 
@@ -27,42 +27,86 @@ Para desenvolver com o kit de ferramentas, você precisará de um editor de text
 ## <a name="using-the-microsoft-graph-toolkit"></a>Usando o kit de ferramentas do Microsoft Graph
 Você pode usar o Microsoft Graph Toolkit em seu aplicativo referenciando o carregador diretamente (via unpkg) ou instalando o pacote NPM.
 
-### <a name="use-via-mgt-loader"></a>Usar via gerenciamento-carregador
+# <a name="unpkg"></a>[unpkg](#tab/html)
 Para usar o kit de ferramentas via gerenciamento-Loader, adicione a referência em um script ao seu código:
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-```
 
-### <a name="use-via-npm-es6-modules"></a>Usar via NPM (módulos ES6)
+<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+<mgt-login></mgt-login>
+```
+# <a name="npm"></a>[npm](#tab/npm)
 O uso do kit de ferramentas por meio de módulos ES6 fornecerá controle total do processo de agrupamento e permitirá que você reúna apenas o código necessário para o aplicativo. Para usar os módulos ES6, adicione o pacote NPM ao seu projeto:
 
-```bash
+```cmd
 npm install @microsoft/mgt
 ```
 Agora, você pode fazer referência a todos os componentes na página que você está usando:
 
 ```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components.js"></script>
+<script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
+
+<mgt-login></mgt-login>
+<mgt-agenda></mgt-agenda>
 ```
 
-Ou, apenas faça referência ao componente de que você precisa e Evite carregar tudo o mais:
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
-```
 
-#### <a name="polyfills"></a>Polyfills
+---
 
-Se você estiver usando os módulos ES6 do pacote do NPM e estiver [direcionando um navegador como o IE11](https://caniuse.com/#search=components) que não ofereça suporte a componentes Web nativamente, será necessário incluir os metapreenchimentos no seu projeto, pois eles não serão incluídos automaticamente. Os metapreenchimentos ajudam a preencher os recursos de navegador ausentes em navegadores que ainda estejam no processo de atualização para suportar os padrões do webcComponent. Para obter instruções e saber mais, confira [documentação dos metaabastecimentos](https://www.webcomponents.org/polyfills). 
+
+## <a name="npm-packages"></a>Pacotes NPM
+
+O Microsoft Graph Toolkit é composto por vários pacotes do NPM, permitindo que você inclua apenas o código necessário para seus aplicativos.
+
+<b>@microsoft/MGT-Element</b>
+
+O `@microsoft/mgt-element` é o pacote principal que contém apenas as classes base usadas para criar componentes e provedores. Este pacote expõe todas as classes e interfaces necessárias para criar seus próprios componentes e exporta a [interface IProvider e a classe simpleprovider](../providers/custom.md) para a criação de provedores personalizados.
+
+<b>@microsoft/MGT-Components</b>
+
+O `@microsoft/mgt-components` pacote contém todos os componentes da Web conectados ao Microsoft Graph, como `Person` , `PeoplePicker` e mais. 
+
+**Provedores**
+
+Os provedores estão disponíveis por meio de um único pacote e podem ser instalados conforme necessário. Os seguintes pacotes de provedor estão disponíveis:
+
+- <b>@micosoft/MGT-MSAL-Provider</b>
+
+    [`@micosoft/mgt-msal-provider`](../providers/msal.md) contém o `MsalProvider` `mgt-msal-provider` componente e. O provedor MSAL utiliza msal.js para autenticação em aplicativos Web e PWAs.
+
+-  <b>@microsoft/MGT-Teams-Provider</b>
+
+    [`@microsoft/mgt-teams-provider`](../providers/teams.md) contém o `TeamsProvider` `mgt-teams-provider` componente e. O provedor do Microsoft Teams habilita a autenticação no aplicativo de guia do Microsoft Teams.
+
+- <b>@microsoft/MGT-SharePoint-Provider</b>
+
+    [`@microsoft/mgt-sharepoint-provider`](../providers/sharepoint.md) contém o `SharePointProvider` para autenticação em um ambiente do SharePoint. 
+
+- <b>@microsoft/MGT-proxy-Provider</b>
+
+    [`@microsoft/mgt-proxy-provider`](../providers/proxy.md) contém o `ProxyProvider` aplicativo para o qual o proxy Graph chama por meio de um serviço de back-end. 
+
+<b>@microsoft/MGT</b>
+
+O `@microsoft/mgt` é o pacote principal que inclui todos os pacotes acima e os exporta novamente para que estejam disponíveis por meio de um único pacote que você possa instalar. 
+
+<b>@microsoft/MGT-React</b>
+
+O [`@microsoft/mgt-react`](./mgt-react.md) pacote contém todos os componentes de reagir gerados automaticamente e assume a dependência do `@microsoft/mgt` pacote.
+
+## <a name="polyfills"></a>Polyfills
+
+Se você estiver usando os módulos ES6 do pacote do NPM e estiver [direcionando um navegador como o IE11](https://caniuse.com/#search=components) que não ofereça suporte a componentes Web nativamente, será necessário incluir os metapreenchimentos no seu projeto, pois eles não serão incluídos automaticamente. Os metapreenchimentos ajudam a preencher os recursos de navegador ausentes em navegadores que ainda estejam no processo de atualização para suporte aos padrões de componente da Web. Para obter instruções e saber mais, confira [documentação dos metaabastecimentos](https://www.webcomponents.org/polyfills). 
 
 Os metapreenchimentos já estão incluídos se você estiver usando o kit de ferramentas através do script de gerenciamento de Complementos.
 
-## <a name="next-steps"></a>Próximas Etapas
+## <a name="next-steps"></a>Próximas etapas
 Agora você está pronto para começar a desenvolver com o Microsoft Graph Toolkit! Os seguintes guias estão disponíveis para ajudá-lo a começar:
 
-- [Criar um aplicativo do Azure Active Directory](./add-aad-app-registration.md)
-- [Criar um aplicativo Web](./build-a-web-app.md) (JavaScript de baunilha)
+- [Registrar um aplicativo no Azure Active Directory](./add-aad-app-registration.md)
+- [Criar um aplicativo Web (JavaScript)](./build-a-web-app.md) (JavaScript de baunilha)
+- [Criar um aplicativo web (React)](./use-toolkit-with-react.md)
+- [Criar um aplicativo web (Angular)](./use-toolkit-with-angular.md)
 - [Criar uma web part do Microsoft Office SharePoint Online](./build-a-sharepoint-web-part.md)
 - [Criar uma guia do Microsoft Teams](./build-a-microsoft-teams-tab.md)
-- [Usar o kit de ferramentas reagir](./use-toolkit-with-react.md)
-- [Usar o kit de ferramentas com angular](./use-toolkit-with-angular.md)

@@ -3,12 +3,12 @@ title: Componente Person no Microsoft Graph Toolkit
 description: O componente pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: d944fa470b8d0f6baffb56d5cd997fe2a0bd7c91
-ms.sourcegitcommit: 9f1e02ab486a2c3e0a128e5d36f46cebe4961581
+ms.openlocfilehash: cfe5f6b97c35c2704def8c4879522268cc8cc91e
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660036"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente Person no Microsoft Graph Toolkit
 
@@ -62,12 +62,11 @@ Você pode usar várias propriedades para personalizar o componente.
 | pessoa-imagem    | personImage    | Defina a imagem a ser mostrada para a pessoa. |
 | presença de pessoa | personPresence | Definir a presença para a pessoa. |
 | FETCH-Image     | fetchImage     | Defina o sinalizador para buscar `personImage` automaticamente a partir do Microsoft Graph com base no `personDetails` objeto fornecido pelo usuário. |
-| modo de exibição            | modo de exibição           | Definido para controlar como a pessoa é renderizada. O padrão é`avatar` <br /> `avatar`-Mostrar somente avatar <br /> `oneline`-Mostrar avatar e primeira linha ( `displayName` por padrão) <br /> `twolines`-Mostrar avatar e duas linhas de texto ( `displayName` e `mail` por padrão)|
+| modo de exibição            | modo de exibição           | Definido para controlar como a pessoa é renderizada. O padrão é `avatar` <br /> `avatar` -Mostrar somente avatar <br /> `oneline` -Mostrar avatar e primeira linha ( `displayName` por padrão) <br /> `twolines` -Mostrar avatar e duas linhas de texto ( `displayName` e `mail` por padrão)|
 | linha1-Propriedade  | line1Property  | Define a propriedade do personDetails a ser usado para a primeira linha do texto. O padrão é `displayName`.|
 | Linha2-Propriedade  | line2Property  | Define a propriedade do personDetails a ser usado para a segunda linha de texto. O padrão é `mail`.|
+| Line3-Propriedade  | line3Property  | Define a propriedade do personDetails a ser usada para a terceira linha de texto. O padrão é `jobTitle`.|
 | show-Presence   | a presença   | Definir sinalizador para exibir a presença de pessoa-o padrão é `false` .|
-| show-Name       | Nome do mesmo       | **Preterido-uso `view` .**  Definir sinalizador para exibir o nome de exibição da pessoa-o padrão é `false` . |
-| Mostrar-email      | Enviar email      | **Preterido-uso `view` .** Definir sinalizador para exibir o email da pessoa-o padrão é `false` .        |
 
 ## <a name="css-custom-properties"></a>Propriedades personalizadas de CSS
 
@@ -78,31 +77,42 @@ mgt-person {
   --avatar-size: 48px;
   --avatar-border: 0;
   --avatar-border-radius: 50%;
+  
   --initials-color: white;
   --initials-background-color: magenta;
+
+  --presence-background-color: #ffffff;
+  --presence-icon-color: #ffffff;
+
   --font-family: 'Segoe UI';
   --font-size: 14px;
   --font-weight: 500;
   --color: black;
-  --presence-background-color: #ffffff;
   --text-transform: none;
+
   --line2-font-size: 12px;
   --line2-font-weight: 400;
   --line2-color: black;
   --line2-text-transform: none;
+
+  --line3-font-size: 12px;
+  --line3-font-weight: 400;
+  --line3-color: black;
+  --line3-text-transform: none;
+
   --details-spacing: 12px;
 }
 ```
 
-Para saber mais, confira [estilos de componentes](../style.md).
+Para saber mais, confira [estilos de componentes](../customize-components/style.md).
 
 ## <a name="templates"></a>Modelos
 
-O `mgt-person` componente oferece suporte a vários [modelos](../templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes:
+O `mgt-person` componente oferece suporte a vários [modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes:
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --------- | ------------ | ----------- |
-| carregando | Nenhuma | O modelo a ser renderizado enquanto o componente está em um estado laoding. |
+| carregando | Nenhuma | O modelo a ser processado enquanto o componente estiver em um estado de carregamento. |
 | sem dados | Nenhuma | O modelo a ser renderizado quando nenhuma imagem de pessoa ou dados estiver disponível. | 
 | Padrão. | Person: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo padrão substitui todo o componente pelo seu. |
 | cartão de pessoa | Person: o objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo para atualizar o item de gerenciamento de pessoa que é exibido ao focalizar ou clique. |
@@ -122,7 +132,7 @@ O exemplo a seguir define um modelo para o componente Person.
 </mgt-person>
 ```
 
-## <a name="person-card"></a>Cartão Pessoal
+## <a name="person-card"></a>Cartão de pessoa
 
 O `mgt-person` componente pode mostrar um `mgt-person-card` em foco ou clique.
 
@@ -133,30 +143,46 @@ O `mgt-person` componente pode mostrar um `mgt-person-card` em foco ou clique.
 
 | Atributo    |  Propriedade     | Descrição                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| cartão de pessoa | personCardInteraction | Uma enumeração para determinar a ação do usuário necessária para ativar o painel ou o menu suspenso `hover` `click` . O valor padrão é`none` |
+| cartão de pessoa | personCardInteraction | Uma enumeração para determinar a ação do usuário necessária para ativar o painel ou o menu suspenso `hover` `click` . O valor padrão é `none` |
 
 
 Para obter mais informações sobre modelos, estilos e atributos, consulte [componente de cartão de pessoa](./person-card.md).
+
+## <a name="global-component-configuration"></a>Configuração de componente global
+
+A `MgtPerson` classe expõe um `config` objeto estático que configura todos os componentes de pessoa no aplicativo.
+
+O exemplo a seguir mostra como usar o objeto config.
+
+```ts
+import { MgtPerson } from `@microsoft/mgt`;
+
+MgtPerson.config.useContactApis = false;
+```
+
+As propriedades a seguir estão disponíveis no objeto config.
+
+| Propriedade | Descrição |
+| ------------ | ------------- |
+| useContactApis | `boolean` – Indica se o componente de pessoa pode usar a API de contatos pessoais do Microsoft Graph para pesquisar detalhes e fotos de contato. O valor padrão é `true`.  |
 
 ## <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
 Este controle usa as seguintes APIs e permissões do Microsoft Graph.
 
-| Recurso                                                                                                    | Permission     |
-| ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [$value/me/Photo/](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/People/? $search =](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/\*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [$value/Users/{ID}/Photo/](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
-| [/me/presence](/graph/api/presence-get?view=graph-rest-beta)                | Presence.Read |
-| [/users/{id}/presence](/graph/api/presence-get?view=graph-rest-beta)        | Presence.Read.All |
-
-> **Observação:** para acessar os `*/photo/$value` recursos para contas pessoais da Microsoft, use o ponto de extremidade beta do Microsoft Graph.
+| Recurso | Permissão     |
+| -| - |
+| [/me](/graph/api/user-get)                              | User.Read          |
+| [$value/me/Photo/](/graph/api/profilephoto-get)        | User.Read          |
+| [/me/People/? $search =](/graph/api/user-list-people)     | People.Read        |
+| [/me/contacts/\*](/graph/api/user-list-contacts&tabs=cs) | Contacts.Read      |
+| [$value/Users/{ID}/Photo/](/graph/api/user-list-people) | User.ReadBasic.All |
+| [/me/presence](/graph/api/presence-get)                | Presence.Read |
+| [/users/{id}/presence](/graph/api/presence-get)        | Presence.Read.All |
 
 ## <a name="authentication"></a>Autenticação
 
-O controle usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md) para buscar os dados necessários.
+O controle usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md) para buscar os dados necessários.
 
 ## <a name="extend-for-more-control"></a>Estender para mais controle
 

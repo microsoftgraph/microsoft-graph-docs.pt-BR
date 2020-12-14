@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a0a24bf7037ec80f25dd40c9f914ec9b1498d04f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 59c31835aa16c33ae0b30c8833e0205c575688e4
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49664069"
 ---
 # <a name="list-allowedgroups-for-printershare"></a>Listar allowedGroups para printerShare
 
@@ -29,7 +29,7 @@ Para usar o serviço de impressão universal, o usuário ou o locatário do apli
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrinterShare. Read. All, PrinterShare. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /print/shares/{id}/allowedGroups
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [multiidentity](../resources/printidentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Group](../resources/group.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -83,7 +83,7 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printIdentity",
+  "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
 ```http
@@ -92,7 +92,7 @@ Content-type: application/json
 Content-length: 233
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printIdentity)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.group)",
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

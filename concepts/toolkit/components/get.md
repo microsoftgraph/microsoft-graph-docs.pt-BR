@@ -3,12 +3,12 @@ title: Obter componente no Microsoft Graph Toolkit
 description: Um componente Get permite que você faça qualquer consulta GET do Microsoft Graph diretamente no HTML.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3accdc821fb1c4b2118c278ae0e88877199f94fa
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 7ce33d231b02603c953a57df8ae8751f8544ee7a
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288627"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659377"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Obter componente no Microsoft Graph Toolkit
 
@@ -33,6 +33,9 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 | versão | versão | Versão da API opcional a ser usada ao fazer a solicitação GET. O padrão é `v1.0`.  |
 | Max-Pages | maxPages | Número opcional de páginas (para recursos que dão suporte à paginação). O padrão é 3. Definir esse valor como 0 receberá todas as páginas.  |
 | taxa de sondagem | pollingRate | Número opcional de miliseconds. Quando definido, o componente irá sondar o URI de solicitação para atualizações no intervalo definido. Se você estiver usando uma consulta Delta, a pesquisa sempre consultará a API Delta. O modelo só será atualizado quando os dados forem alterados. |
+| habilitado para cache | cacheEnabled | Boolean opcional. Quando definido, ele indica que a resposta do recurso será armazenada em cache. Overrideed se `refresh()` for chamado ou se `pollingRate` estiver em uso. O padrão é `false`. |
+| cache-Invalidation-period | cacheInvalidationPeriod | Número opcional de miliseconds. Quando definido em combinação com `cacheEnabled` , o atraso antes de o cache atingir o período de invalidação será modificado por esse valor. O padrão é `0` e usará o período de invalidação padrão. |
+| type | type | Tipo opcional da resposta esperada. O padrão é `json`. Suporta `json` ou `image` (só tem suporte em pontos de extremidade terminados com `/photo/value$` ). |
 | N/D | response | Somente leitura resposta do Microsoft Graph se a solicitação tiver sido bem-sucedida.  |
 | N/D |erro| Somente leitura erro do Microsoft Graph se a solicitação não tiver sido bem-sucedida. |
 
@@ -49,12 +52,12 @@ Você pode usar vários atributos para alterar o comportamento do componente. O 
 
 ## <a name="templates"></a>Modelos
 
-O `mgt-get` componente suporta vários [modelos](../templates.md) que você pode usar para definir a aparência. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
+O `mgt-get` componente suporta vários [modelos](../customize-components/templates.md) que você pode usar para definir a aparência. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
 | Padrão. | A resposta do Microsoft Graph. | O modelo padrão é necessário para renderizar os dados provenientes do Microsoft Graph. |
-| valor | Item de dados da `value` matriz retornada | Use o `value` modelo em vez do `default` modelo ao esperar a resposta do gráfico para conter uma matriz de itens, como **mensagens**, **arquivos**ou **usuários**. O `value` modelo será repetido automaticamente para cada item retornado pelo recurso. O `value` modelo também começará a renderizar os itens assim que eles estiverem prontos (ao contrário do modelo padrão).|
+| valor | Item de dados da `value` matriz retornada | Use o `value` modelo em vez do `default` modelo ao esperar a resposta do gráfico para conter uma matriz de itens, como **mensagens**, **arquivos** ou **usuários**. O `value` modelo será repetido automaticamente para cada item retornado pelo recurso. O `value` modelo também começará a renderizar os itens assim que eles estiverem prontos (ao contrário do modelo padrão).|
 | erro | O erro do Microsoft Graph. | Este modelo será usado se houver um erro ao fazer a solicitação. |
 | carregando | N/D | Este modelo é usado enquanto a solicitação é feita. |
 
@@ -64,4 +67,4 @@ Para obter mais informações sobre permissões, consulte a [referência de perm
 
 ## <a name="authentication"></a>Autenticação
 
-O controle usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md) para buscar os dados necessários.
+O controle usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md) para buscar os dados necessários.

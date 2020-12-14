@@ -1,14 +1,14 @@
 ---
-title: Criar um aplicativo do Azure Active Directory
+title: Criar um aplicativo no Azure Active Directory
 description: Criar um registro de aplicativo do Azure Active Directory para se comunicar com o Microsoft 365
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 13b3a876e80e5c2437eba3d264053cdbbcbb5909
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7534d0d15b9ff1b2e1d94fe8d5e8e9e8f771ca91
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659160"
 ---
 # <a name="create-an-azure-active-directory-app-to-use-with-the-microsoft-graph-toolkit"></a>Criar um aplicativo do Azure Active Directory para uso com o kit de ferramentas do Microsoft Graph
 
@@ -26,7 +26,7 @@ Para criar o aplicativo no Azure Active Directory:
 1. No menu superior, selecione o botão **novo registro** .
 1. Insira o nome do seu aplicativo; para exampe, `My M365 app` .
 1. Para o tipo de [tipos de conta com suporte](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), selecione **contas em qualquer diretório organizacional (qualquer diretório do Azure ad-multilocatário) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
-1. No campo **URI de redirecionamento** , na lista suspensa, selecione **Web** e, no campo URL, digite `https://localhost:3000` .
+1. No campo **URI de redirecionamento** , na lista suspensa, selecione **Web** e, no campo URL, digite `http://localhost:3000` .
 1. Confirme as alterações selecionando o botão **registrar** .
 
 ## <a name="enable-oauth-implicit-flow"></a>Habilitar o fluxo implícito do OAuth

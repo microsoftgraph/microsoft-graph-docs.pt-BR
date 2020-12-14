@@ -3,12 +3,12 @@ title: Criar uma Web Part do SharePoint com o kit de ferramentas do Microsoft Gr
 description: Introdução ao uso do kit de ferramentas do Microsoft Graph para criar uma Web Part do SharePoint.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: b2ae71a8fb37e088c0497716fdf4d1cdc42f41ef
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: d07a597c69ae998c75e3d4698cb0513cff056e56
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288522"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659747"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>Criar uma Web Part do SharePoint com o kit de ferramentas do Microsoft Graph
 
@@ -101,7 +101,7 @@ import '@webcomponents/webcomponentsjs/webcomponents-bundle.js';
 
 ## <a name="add-the-sharepoint-provider"></a>Adicionar o provedor do SharePoint
 
-Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, consulte [usando os provedores](../providers.md). Web Parts do SharePoint sempre existem em um contexto autenticado porque o usuário já teve que entrar para acessar a página que hospeda sua Web Part. Use este contexto para inicializar o [provedor do SharePoint](../providers/sharepoint.md).
+Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, consulte [usando os provedores](../providers/providers.md). Web Parts do SharePoint sempre existem em um contexto autenticado porque o usuário já teve que entrar para acessar a página que hospeda sua Web Part. Use este contexto para inicializar o [provedor do SharePoint](../providers/sharepoint.md).
 
 Primeiro, adicione o provedor à Web Part. Localize o `src\webparts\<your-project>\<your-web-part>.ts` arquivo na pasta do projeto e adicione a seguinte linha na parte superior do arquivo, logo abaixo das `import` instruções existentes:
 
@@ -169,7 +169,7 @@ gulp bundle
 gulp package-solution
 ```
 
-Na `sharepoint/solution` pasta, haverá um novo `.sppkg` arquivo. Você precisará carregar esse arquivo no catálogo de aplicativos do SharePoint Online. Vá para a [página mais recursos do seu centro de administração do SharePoint](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true). Selecione **abrir** em **aplicativos**, clique em **Catálogo de aplicativos**e **distribua aplicativos para SharePoint**. Carregue o `.sppkg` arquivo e clique em **implantar**.
+Na `sharepoint/solution` pasta, haverá um novo `.sppkg` arquivo. Você precisará carregar esse arquivo no catálogo de aplicativos do SharePoint Online. Vá para a [página mais recursos do seu centro de administração do SharePoint](https://admin.microsoft.com/sharepoint?page=classicfeatures&modern=true). Selecione **abrir** em **aplicativos**, clique em **Catálogo de aplicativos** e **distribua aplicativos para SharePoint**. Carregue o `.sppkg` arquivo e clique em **implantar**.
 
 Em seguida, você precisa aprovar as permissões como um administrador.
 

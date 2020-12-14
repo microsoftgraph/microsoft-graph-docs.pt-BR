@@ -1,26 +1,28 @@
 ---
 title: tipo de recurso chat
 description: Um chat é uma coleção de chatMessages entre um ou mais participantes.
-author: clearab
+author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f1745f987577d94f14f81d79a9f8afb89c1ab793
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: dcfa853f8ba246443f0f5073a4a62fd84f92adc6
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659405"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais participantes. Os participantes podem ser usuários ou aplicativos.
 
-## <a name="methods"></a>Methods
+> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) , alguns dos métodos listados afetarão transitivamente a reunião.
+
+## <a name="methods"></a>Métodos
 
 |  Método       |  Tipo de retorno  | Descrição| 
 |:---------------|:--------|:----------|
@@ -32,16 +34,16 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 |[Receba uma mensagem no bate-papo](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | 
 |[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Obter um chat entre o usuário e o aplicativo |
 |[Obter todas as mensagens de chat](../api/chats-getallmessages.md)| coleção [chat](chat.md)| Obter mensagens de todos os chats dos quais um usuário é um participante, incluindo chats de um a um, chats de grupo e bate-papos de reunião. |
-|[Listar aplicativos no chat](../api/chat-list-installedapps.md) |Coleção [teamsAppInstallation](teamsappinstallation.md) | Listar aplicativos instalados em um chat.|
-|[Obter aplicativo no chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obtenha um aplicativo específico instalado em um chat.|
-|[Adicionar aplicativo ao chat](../api/chat-post-installedapps.md) | | Adiciona (instala) um aplicativo em um chat.|
-|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum | Atualize para a versão mais recente do aplicativo instalado no chat.|
-|[Desinstalar o aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum | Remova (desinstale) o aplicativo de um chat.|
-|[Guias de lista no chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um chat.|
-|[Guia obter no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obtenha uma guia específica fixada para um chat.|
-|[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia a um chat.|
-|[Guia atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualiza as propriedades de uma guia em um chat.|
-|[Guia remover do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (Desafixar) uma guia de um chat.|
+|[Listar aplicativos no chat](../api/chat-list-installedapps.md) |Coleção [teamsAppInstallation](teamsappinstallation.md) | Listar aplicativos instalados em um chat (e uma reunião associada).|
+|[Obter aplicativo no chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obter um aplicativo específico instalado em um chat (e uma reunião associada).|
+|[Adicionar aplicativo ao chat](../api/chat-post-installedapps.md) | | Adicionar (instalar) um aplicativo em um chat (e uma reunião associada).|
+|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum | Atualize para a versão mais recente do aplicativo instalado no chat (e na reunião associada).|
+|[Desinstalar o aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum | Remover (desinstalar) o aplicativo de um chat (e uma reunião associada).|
+|[Guias de lista no chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Guias de lista fixadas para um chat (e reunião associada).|
+|[Guia obter no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obtenha uma guia específica fixada para um chat (e reunião associada).|
+|[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia a um chat (e à reunião associada).|
+|[Guia atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualizar as propriedades de uma guia em um chat (e uma reunião associada).|
+|[Guia remover do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (Desafixar) uma guia de um chat (e uma reunião associada).|
 
 >**Observação:** Ao usar permissões de aplicativo, certifique-se de saber como você vai obter a ID de chat. Como a lista de chats com permissões de aplicativo não é suportada, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de [alteração para o/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 

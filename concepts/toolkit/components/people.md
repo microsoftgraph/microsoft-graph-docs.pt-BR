@@ -3,12 +3,12 @@ title: Componente pessoas no Microsoft Graph Toolkit
 description: Você pode usar o `mgt-people` componente da Web para exibir um grupo de pessoas ou contatos usando suas fotos ou iniciais.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 6f4ad3e8dc733da89534331b6368bb69b1013e00
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: 9e19636c6f69784984d7438d53f57bac78fc6675
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296488"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660055"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Componente pessoas no Microsoft Graph Toolkit
 
@@ -55,12 +55,13 @@ O `mgt-people` componente define as seguintes propriedades personalizadas de CSS
 mgt-people {
   --list-margin: 8px 4px 8px 8px; /* Margin for component */
   --avatar-margin: 0 4px 0 0; /* Margin for each person */
+  --color: #000000 /* Text color *?
 }
 ```
 
 ## <a name="templates"></a>Modelos
 
-O `mgt-people` dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
+O `mgt-people` dá suporte a vários [modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -91,17 +92,17 @@ Este componente usa as seguintes APIs e permissões do Microsoft Graph:
 
 | Recurso | Permissão |
 | - | - |
-| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+| [/me/people](/graph/api/user-list-people) | `People.Read` |
 
 Ao usar os modelos padrão, são necessárias APIs e permissões adicionais. O modelo padrão para este componente usa um componente de [pessoa de gerenciamento](person.md) , que requer o seguinte.
 
 | Recurso | Permissão |
 | - | - |
-| [/Users](/graph/api/user-list?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/Users](/graph/api/user-list) | User.ReadBasic.All |
 
 ## <a name="authentication"></a>Autenticação
 
-O controle usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md).
+O controle usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md).
 
 ## <a name="extend-for-more-control"></a>Estender para mais controle
 

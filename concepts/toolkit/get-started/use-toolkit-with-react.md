@@ -3,18 +3,18 @@ title: Use o kit de ferramentas do Microsoft Graph com reagir
 description: Introdução ao uso do kit de ferramentas do Microsoft Graph em um aplicativo reagir.
 localization_priority: Normal
 author: waldekmastykarz
-ms.openlocfilehash: 8f570caf2be4c123bd9a9a93e45a5508029efdee
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 57e9901c8b7ee1f8a5474f21ff4b09def053e7db
+ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967753"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49664132"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Use o kit de ferramentas do Microsoft Graph com reagir
 
-O Microsoft Graph Toolkit é um conjunto de componentes Web que simplifica a conexão com o Microsoft Graph e permite que você se concentre em seu aplicativo. O Microsoft Graph Toolkit está disponível como um conjunto genérico de componentes Web distribuídos por meio do pacote **@microsoft/MGT** NPM.
+O Microsoft Graph Toolkit é um conjunto de componentes Web que simplifica a conexão com o Microsoft Graph e permite que você se concentre em seu aplicativo. O Microsoft Graph Toolkit está disponível como um conjunto genérico de componentes Web distribuídos por meio do `@microsoft/mgt` pacote do NPM.
 
-Se você estiver criando aplicativos com reagir, poderá usar o pacote **@microsoft/MGT-React** , que encapsula o Microsoft Graph Toolkit Web Components em reagir componentes e torna mais fácil transmitir dados complexos.
+Se você estiver criando aplicativos com reagir, poderá usar o [ `@microsoft/mgt-react` pacote](./mgt-react.md), que encapsula o Microsoft Graph Toolkit Web Components em reagir componentes e facilita a passagem de dados complexos.
 
 Este artigo descreve o processo passo a passo de usar o kit de ferramentas do Microsoft Graph para criar um aplicativo reagir e conectá-lo ao Microsoft 365. Após concluir as etapas, você terá um aplicativo reagir que mostra os futuros compromissos do usuário conectado no momento da Microsoft 365.
 
@@ -36,22 +36,25 @@ Altere o diretório de trabalho para o aplicativo recém-criado.
 cd my-m365-app
 ```
 
-Em seguida, instale o pacote NPM **-reajam** , que contém os componentes de reagir do Microsoft Graph Toolkit.
+Em seguida, instale o `mgt-react` pacote NPM, que contém os componentes de reagir do Microsoft Graph Toolkit.
 
 ```cmd
 npm i @microsoft/mgt-react
 ```
 
+Instale o `mgt-msal-provider` pacote e o `mgt-element` NPM também, que contém o provedor de autenticação do MSAL.
+
+```cmd
+npm i @microsoft/mgt-element @microsoft/mgt-msal-provider
+```
+
 Confirme que você pode executar o aplicativo.
 
 ```cmd
-HTTPS=true npm start
+npm start
 ```
 
-> [!IMPORTANT]
-> Seu aplicativo precisa ser executado em HTTPS para poder autenticar-se no Microsoft 365. Para teste local, com os scripts de reagir, você pode configurar o servidor Web local para ser executado em HTTPS, definindo a `HTTPS` variável de ambiente como `true` . Você pode fazer isso sempre, prefixando o `npm start` comando com `HTTPS=true` (funciona apenas em bash) ou configurando a variável de ambiente globalmente no computador.
-
-Você deve ser capaz de abrir seu aplicativo no navegador via `https://localhost:3000` .
+Você deve ser capaz de abrir seu aplicativo no navegador via `http://localhost:3000` .
 
 [!INCLUDE [AAD with implicit flow app registration](../includes/aad-app-registration-spa.md)]
 
@@ -67,12 +70,13 @@ Agora que você registrou seu aplicativo com o Azure Active Directory (Azure AD)
 
 ### <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a>Configurar o provedor de autenticação do kit de ferramentas do Microsoft Graph
 
-Em seguida, configure o provedor de autenticação que o Microsoft Graph Toolkit deve usar. Nesse caso, você usará o MSAL, que é um bom padrão para criar aplicativos autônomos. Se você usar qualquer um dos pontos de extensibilidade no Microsoft 365, como o Teams ou o SharePoint, você usará [outros provedores](../providers.md).
+Em seguida, configure o provedor de autenticação que o Microsoft Graph Toolkit deve usar. Nesse caso, você usará o MSAL, que é um bom padrão para criar aplicativos autônomos. Se você usar qualquer um dos pontos de extensibilidade no Microsoft 365, como o Teams ou o SharePoint, você usará [outros provedores](../providers/providers.md).
 
 1. No editor de código, abra **src/index.** e, na lista de importações, adicione:
 
     ```tsx
-    import { MsalProvider, Providers } from '@microsoft/mgt';
+    import { Providers } from '@microsoft/mgt-element';
+    import { MsalProvider } from '@microsoft/mgt-msal-provider';
     ```
 
 1. Após a última `import` instrução, inicialize o Microsoft Graph Toolkit com o provedor MSAL.
@@ -88,12 +92,14 @@ Em seguida, configure o provedor de autenticação que o Microsoft Graph Toolkit
 Com essas alterações, o arquivo **src/index. TSX** será semelhante ao seguinte.
 
   ```tsx
-  import { MsalProvider, Providers } from '@microsoft/mgt';
   import React from 'react';
   import ReactDOM from 'react-dom';
   import App from './App';
   import './index.css';
   import * as serviceWorker from './serviceWorker';
+
+  import { Providers } from '@microsoft/mgt-element';
+  import { MsalProvider } from '@microsoft/mgt-msal-provider';
   
   Providers.globalProvider = new MsalProvider({
     clientId: 'REPLACE_WITH_CLIENTID'
@@ -134,16 +140,12 @@ Adicione o componente de **logon** do Microsoft Graph Toolkit para reagir, que e
 
 Com essas alterações, o arquivo **src/app. TSX** será semelhante ao seguinte.
 ```tsx
-import { MsalProvider, Providers } from '@microsoft/mgt';
+
 import { Login } from '@microsoft/mgt-react';
 import React from 'react';
 import './App.css';
 
 function App() {
-  Providers.globalProvider = new MsalProvider({
-    clientId: 'REPLACE_WITH_CLIENTID'
-  });
-
   return (
     <div className="App">
       <header>
@@ -171,7 +173,7 @@ O Microsoft Graph Toolkit não apenas simplifica a autenticação para o Microso
 
 ### <a name="specify-permissions-needed-for-your-application"></a>Especificar permissões necessárias para seu aplicativo
 
-Antes de poder carregar dados do Microsoft 365, você precisa especificar a lista de escopos de permissão que seu aplicativo deve ser concedido para acessar os dados do usuário. Esses escopos diferem, dependendo do tipo de informação que você deseja exibir. Nesse caso, você precisará acessar o calendário de pessoas e o acesso básico às informações sobre as pessoas que também são exibidas no calendário. Você pode encontrar os escopos exigidos por cada API na [documentação da API do Microsoft Graph](/graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0).
+Antes de poder carregar dados do Microsoft 365, você precisa especificar a lista de escopos de permissão que seu aplicativo deve ser concedido para acessar os dados do usuário. Esses escopos diferem, dependendo do tipo de informação que você deseja exibir. Nesse caso, você precisará acessar o calendário de pessoas e o acesso básico às informações sobre as pessoas que também são exibidas no calendário. Você pode encontrar os escopos exigidos por cada API na [documentação da API do Microsoft Graph](/graph/api/overview).
 
 1. No editor de códigos, abra o arquivo **src/index. TSX** e atualize o código de inicialização do provedor.
 
@@ -196,10 +198,10 @@ Para acompanhar o estado de entrada do usuário em seu aplicativo, você usará 
     import React, { useState, useEffect } from 'react';
     ```
 
-1. Importe os `Provider` `ProviderState` tipos e do Microsoft Graph Toolkit adicionando às importações.
+1. Importar os `Provider` `ProviderState` tipos e de `mgt-element` , adicionando às importações.
 
     ```tsx
-    import { Providers, ProviderState } from '@microsoft/mgt';
+    import { Providers, ProviderState } from '@microsoft/mgt-element';
     ```
 
 1. Adicione uma função personalizada nomeada `useIsSignedIn` que permite o acompanhamento do estado de entrada do usuário em seu aplicativo.
@@ -300,7 +302,7 @@ export default App;
 
 Com essas alterações, após entrar em seu aplicativo com sua conta da Microsoft, você deve ver seu calendário.
 
-1. Para ver as alterações, feche o navegador e abra-o novamente e vá para `https://localhost:3000` . Isso é feito porque você alterou o valor da `scopes` propriedade, que afeta o token de acesso solicitado pelo Azure AD.
+1. Para ver as alterações, feche o navegador e abra-o novamente e vá para `http://localhost:3000` . Isso é feito porque você alterou o valor da `scopes` propriedade, que afeta o token de acesso solicitado pelo Azure AD.
 1. Escolha o botão **entrar** e entre usando sua conta da Microsoft. Observe as adições à lista de permissões solicitadas no prompt de consentimento. Isso ocorre porque você incluiu permissões adicionais na `scope` propriedade.
 1. Após a reenvio ao uso do aplicativo, você deve ver informações sobre o usuário atual e seu calendário.
 

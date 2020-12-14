@@ -3,12 +3,12 @@ title: People-Picker componente
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 9f47824d62ee5ffcf57884af5e68b255756d5478
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: be72a31bd9e831f6584e2a7dfac9dea50892762a
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975774"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659261"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no kit de ferramentas do Microsoft Graph
 
@@ -30,10 +30,13 @@ Por padrão, o `mgt-people-picker` componente busca pessoas dos pontos de `/me/p
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-Max | showMax   | Um valor numérico para indicar o número máximo de pessoas a serem mostradas. o valor padrão é 6.                                                                                             |
 | ID de grupo    | groupId     | Um valor String que pertence a um grupo definido pelo Microsoft Graph para mais filtragem dos resultados da pesquisa.                                                                            |
-| tipo     | tipo      | O tipo de entidades a serem pesquisadas. As opções disponíveis são: `person` , `group` , `any` . O valor padrão é `person`. Este atributo não terá efeito se a `group-id` propriedade for definida.                                                                            |
+| type     | type      | O tipo de entidades a serem pesquisadas. As opções disponíveis são: `person` , `group` , `any` . O valor padrão é `person`. Este atributo não terá efeito se a `group-id` propriedade for definida.         
+| pesquisa transitiva     | transitiveSearch      | Um valor booliano para executar uma pesquisa transitiva, retornando uma lista simples de todos os membros aninhados-por padrão, a pesquisa transitiva não é usada.|
 | tipo de grupo     | groupType      | O tipo de grupo a ser pesquisado. As opções disponíveis são: `unified` , `security` , `mailenabledsecurity` , `distribution` , `any` . O valor padrão é `any`. Este atributo não terá efeito se a `type` propriedade for definida como `person` .                                                                           |
 |  selecionado-pessoas  | selectedPeople     | Uma matriz de pessoas selecionadas. Defina esse valor para selecionar pessoas de forma programática.|
 | people   | people    | Uma matriz de pessoas encontrada e renderizada no resultado da pesquisa |
+| PlaceHolder   | PlaceHolder    | Uma cadeia de caracteres que representa o texto do espaço reservado de entrada. O padrão é "começar a digitar um nome".
+| modo de seleção   | selectionMode   | Um valor String que permite que você especifique se o componente oferece suporte a várias pessoas selecionadas ou apenas uma. O padrão `multiple` é `single` a outra opção.
 | default-Selected-User-IDs | defaultSelectedUserIds | Quando é fornecida uma cadeia de caracteres de IDs de usuário separadas por vírgulas do Microsoft Graph, o componente renderiza os respectivos usuários como selecionados na inicialização.
 | modo de seleção | selectionMode | Usado para indicar se é permitido selecionar vários usuários ou apenas um único usuário. As opções disponíveis são: `single` , `multiple` . O valor padrão é `multiple`.
 | PlaceHolder | PlaceHolder | O texto padrão que aparece para explicar como usar o componente. O valor padrão é `Start typing a name`.
@@ -59,7 +62,7 @@ Você pode preencher dados de pessoas selecionados executando um dos seguintes p
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
     ```
 
-- Usando o `selectUsersById()` método, que aceita uma matriz de IDs de [usuário](/graph/api/resources/users?view=graph-rest-1.0) do Microsoft Graph para localizar os detalhes do usuário associado para seleção.
+- Usando o `selectUsersById()` método, que aceita uma matriz de IDs de [usuário](/graph/api/resources/users) do Microsoft Graph para localizar os detalhes do usuário associado para seleção.
 
      >**Observação:** Se nenhum usuário for localizado para um `id` , nenhum dado será renderizado para isso `id` .
 
@@ -91,23 +94,23 @@ mgt-people-picker {
     --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
 
     --input-background-color: #1f1f1f; /* input area background color */
-    --input-hover-color: #008394; /* input area border hover color */
-    --input-focus-color: #0f78d4; /* input area border focus color */
+    --input-border-color--hover: #008394; /* input area border hover color */
+    --input-border-color--focus: #0f78d4; /* input area border focus color */
 
     --dropdown-background-color: #1f1f1f; /* selection area background color */
     --dropdown-item-hover-background: #333d47; /* person background color on hover */
     
     --selected-person-background-color: #f1f1f1; /* person item background color */
     
-    --font-color: white; /* input area border focus color */
-    --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
-    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
+    --color: white; /* input area border focus color */
+    --placeholder-color: #f1f1f1; /* placeholder text color */
+    --placeholder-color--focus: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
 }
 ```
 
 ## <a name="templates"></a>Modelos
 
- `mgt-people-picker` o dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
+ `mgt-people-picker` o dá suporte a vários [modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -116,7 +119,7 @@ mgt-people-picker {
 | erro | nulo: não há dados | O modelo usado se a pesquisa de usuário não retornar nenhum usuário. |
 | sem dados | nulo: não há dados | Um modelo alternativo usado se a pesquisa de usuário não retornar nenhum usuário. |
 | selecionado-pessoa | Person: o objeto de detalhes da pessoa | O modelo para renderizar as pessoas selecionadas. |
-| person | Person: o objeto de detalhes da pessoa | O modelo para renderizar pessoas na lista suspensa. |
+| vendedor | Person: o objeto de detalhes da pessoa | O modelo para renderizar pessoas na lista suspensa. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 
@@ -134,15 +137,15 @@ Este componente usa as seguintes APIs e permissões do Microsoft Graph.
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
-| [/Users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
-| [/groups](/group-list?view=graph-rest-beta)  | Group.Read.All |
-| [/groups/ \$ {GroupId}/Members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
-| [/Users/$ {userprincípioname} ](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
+| [/me/people](/graph/api/user-list-people)                    | People.Read        |
+| [/Users](/graph/api/user-list)  | User.ReadBasic.All |
+| [/groups](/group-list)  | Group.Read.All |
+| [/groups/ \$ {GroupId}/Members](/graph/api/group-list-members) | User.ReadBasic.All        |
+| [/Users/$ {userprincípioname} ](/graph/api/user-get)  | User.Read |
 
 ## <a name="authentication"></a>Autenticação
 
-O controle usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md).
+O controle usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md).
 
 ## <a name="extend-for-more-control"></a>Estender para mais controle
 

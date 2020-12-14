@@ -3,12 +3,12 @@ title: Provedor de proxy
 description: O provedor de proxy permite que você use sua própria autenticação do lado do servidor com o Microsoft Graph Toolkit.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 130811ded21013614c85cc90eea6f22c74e7cc73
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: ab52ed5c1d3af2cb0dfb99e086245a5b33aa9908
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955768"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657882"
 ---
 # <a name="proxy-provider"></a>Provedor de proxy
 
@@ -22,7 +22,7 @@ A implementação da API deve chamar o Microsoft Graph em nome do usuário e ret
 
 Para obter um exemplo de implementação, consulte o [exemplo MVC do ASP.net](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/proxy-provider-asp-net-mvc). 
 
-Para saber mais sobre provedores de autenticação, consulte [Providers](../providers.md).
+Para saber mais sobre provedores de autenticação, consulte [Providers](./providers.md).
 
 ## <a name="get-started"></a>Introdução
 
@@ -66,7 +66,7 @@ Providers.globalProvider = new ProxyProvider("https://myurl.com/api/GraphProxy",
 
 Isso é útil quando você precisa passar tokens ou outros cabeçalhos para o back-end
 
-Se você estiver usando o `mgt-login` componente, também deverá especificar as `login` funções e `logout` para o provedor:
+Se você estiver usando o `mgt-login` componente, também deverá especificar as `login` `logout` funções e para o provedor:
 
 ```ts
 import {Providers, ProxyProvider} from '@microsoft/mgt'

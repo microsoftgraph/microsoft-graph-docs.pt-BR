@@ -3,12 +3,12 @@ title: Componente seletor de canal do Microsoft Teams no Microsoft Graph Toolkit
 description: Você pode usar o Requery-Teams-Channel-Picker para pesquisar canais e equipes associados ao usuário do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: c8ade0fdfd41bde4d4a2ec643950b3faa8d24d98
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: c0b6e818f0c9c30314b5342fcfb6ef44978ec830
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144381"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660005"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Componente seletor de canal do Microsoft Teams no Microsoft Graph Toolkit
 
@@ -16,7 +16,7 @@ A você pode usar o `mgt-teams-channel-picker` componente para habilitar pesquis
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra `mgt-teams-channel-picker` o componente. Comece a pesquisar um canal ou uma equipe para ver os resultados renderizar.
+O exemplo a seguir mostra o `mgt-teams-channel-picker` componente. Comece a pesquisar um canal ou uma equipe para ver os resultados renderizar.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
 
@@ -24,7 +24,7 @@ O exemplo a seguir mostra `mgt-teams-channel-picker` o componente. Comece a pesq
 
 ## <a name="getting-the-selected-channel"></a>Obtendo o canal selecionado
 
-Use a `selectedItem` propriedade para recuperar o canal e a equipe pai atualmente selecionados. Esse valor será NULL se nenhum canal tiver sido selecionado. `selectedItem`contém duas propriedades: `channel` ([MicrosoftGraph. Channel](/graph/api/resources/channel?view=graph-rest-1.0)) e `team` ([MicrosoftGraph. Team](/graph/api/resources/team?view=graph-rest-1.0)).
+Use a `selectedItem` propriedade para recuperar o canal e a equipe pai atualmente selecionados. Esse valor será NULL se nenhum canal tiver sido selecionado. `selectedItem` contém duas propriedades: `channel` ([MicrosoftGraph. Channel](/graph/api/resources/channel)) e `team` ([MicrosoftGraph. Team](/graph/api/resources/team)).
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -62,27 +62,28 @@ mgt-teams-channel-picker {
     --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
 
     --input-background-color: #1f1f1f; /* input area background color */
-    --input-hover-color: #008394; /* input area border hover color */
-    --input-focus-color: #0f78d4; /* input area border focus color */
+    --input-border-color--hover: #008394; /* input area border hover color */
+    --input-border-color--focus: #0f78d4; /* input area border focus color */
 
     --dropdown-background-color: #1f1f1f; /* channel background color */
     --dropdown-item-hover-background: #333d47; /* channel or team hover background */
     --dropdown-item-selected-background: #0F78D4; /* selected channel background color */
 
-    --font-color: white; /* input area border focus color */
+    --color: white; /* input area border focus color */
     --arrow-fill: #ffffff;
-    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* place holder text focus color */
+    --placeholder-color: #f1f1f1; /* placeholder text color */
+    --placeholder-color--focus: rgba(255, 255, 255, 0.8); /* place holder text focus color */
 }
 ```
 
 ## <a name="events"></a>Eventos
 | Evento | Detalhe | Descrição |
 | --- | --- | --- |
-| selectionChanged | O detalhe contém o item atualmente selecionado de `{channel : ` [MicrosoftGraph. Channel](/graph/api/resources/channel?view=graph-rest-1.0)`, team: `[MicrosoftGraph. Team](/graph/api/resources/team?view=graph-rest-1.0)`}` | Acionado quando o usuário faz uma alteração na seleção de um canal. |
+| selectionChanged | O detalhe contém o item atualmente selecionado de `{channel : ` [MicrosoftGraph. Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph. Team](/graph/api/resources/team)`}` | Acionado quando o usuário faz uma alteração na seleção de um canal. |
 
 ## <a name="templates"></a>Modelos
 
- `mgt-teams-channel-picker`o dá suporte a vários [modelos](../templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina `data-type` o valor como um dos seguintes.
+ `mgt-teams-channel-picker` o dá suporte a vários [modelos](../customize-components/templates.md) que você pode usar para substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -106,12 +107,12 @@ Este componente usa as seguintes APIs e permissões do Microsoft Graph.
 
 | API                                                                                                              | Permissão  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0)                    | User.Read.All        |
-| [/equipes/$ {ID}/Channels](/graph/api/channel-list?view=graph-rest-1.0) | Group.Read.All        |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
+| [/equipes/$ {ID}/Channels](/graph/api/channel-list) | Group.Read.All        |
 
 ## <a name="authentication"></a>Autenticação
 
-O controle usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md).
+O controle usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md).
 
 ## <a name="extend-for-more-control"></a>Estender para mais controle
 

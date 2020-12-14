@@ -3,12 +3,12 @@ title: Criar uma guia do Microsoft Teams com o kit de ferramentas do Microsoft G
 description: Introdução à criação de uma guia do Microsoft Teams usando o kit de ferramentas do Microsoft Graph.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 0f93e041208fb22e3131c2eb4619379188c76f56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9cd548e78ff21577df852a28be76e45144bfb91d
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978763"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49663915"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Criar uma guia do Microsoft Teams com o kit de ferramentas do Microsoft Graph
 
@@ -56,7 +56,7 @@ npm install @microsoft/mgt @microsoft/teams-js
 
 ## <a name="initialize-the-teams-provider"></a>Inicializar o provedor de equipes
 
-Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, consulte [usando os provedores](../providers.md). O [provedor de equipes](../providers/teams.md) lida com toda a lógica e as interações que precisam ser implementadas com o SDK do teams para autenticar o usuário.
+Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para os componentes. Para saber mais, consulte [usando os provedores](../providers/providers.md). O [provedor de equipes](../providers/teams.md) lida com toda a lógica e as interações que precisam ser implementadas com o SDK do teams para autenticar o usuário.
 
 Você pode optar por inicializar o provedor em seu código HTML ou JavaScript. 
 
@@ -91,7 +91,7 @@ Substitua `<YOUR_CLIENT_ID>` pela ID do cliente para seu aplicativo.
 
 ### <a name="creating-an-appclient-id"></a>Criar uma ID de aplicativo/cliente
 Para obter uma ID de cliente, você precisa [registrar seu aplicativo](../../auth-register-app-v2.md) no Azure AD. Certifique-se de adicionar a URL do ngrok com o caminho completo para a página pop-up de autenticação em seus URIs de redirecionamento (por exemplo, `https://<YOUR_NGROK_URL>/auth.html` ).
->**Observação** : o MSAL só dá suporte ao fluxo implícito do OAuth. Certifique-se de habilitar o fluxo implícito em seu aplicativo no portal do Azure (não está habilitado por padrão). Em **autenticação** , encontre a seção **concessão implícita** e marque as caixas de seleção para **tokens de acesso** e **tokens de ID**. 
+>**Observação**: o MSAL só dá suporte ao fluxo implícito do OAuth. Certifique-se de habilitar o fluxo implícito em seu aplicativo no portal do Azure (não está habilitado por padrão). Em **autenticação**, encontre a seção **concessão implícita** e marque as caixas de seleção para **tokens de acesso** e **tokens de ID**. 
 
 ## <a name="create-the-auth-popup-page"></a>Criar a página pop-up de autenticação
 
@@ -156,7 +156,7 @@ Localize o diretório do projeto e carregue o arquivo **Development.zip** dentro
 
 Depois que o aplicativo for carregado, role para baixo no menu à esquerda e selecione **testar e distribuir**. Clique no botão **instalar** e, em seguida, clique em **Adicionar**. Você será redirecionado para a guia criada.
 
-## <a name="next-steps"></a>Próximas Etapas
+## <a name="next-steps"></a>Próximas etapas
 - Confira este tutorial passo a passo sobre [a criação de uma guia do teams](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-10-microsoft-graph-toolkit-teams-provider/).
 - Experimente os componentes no [playground](https://mgt.dev).
 - Faça uma pergunta sobre o [estouro de pilha](https://aka.ms/mgt-question).

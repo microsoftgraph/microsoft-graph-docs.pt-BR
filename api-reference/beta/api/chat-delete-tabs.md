@@ -5,27 +5,29 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c83e8c9d1c501b27c46a6df3958008fb4447c06b
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: fe844b0a109f11886a0f2f2481823a18fb9b9c80
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607468"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658573"
 ---
 # <a name="delete-tab-from-chat"></a>Excluir Guia de chat
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remover (Desafixar) uma guia do [chat](../resources/chat.md)especificado. 
 
-## <a name="permissions"></a>Permissions
+> **Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) , em seguida, efetivamente, a guia será removida da reunião.
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All |
 

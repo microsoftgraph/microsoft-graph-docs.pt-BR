@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: e3e5ad1d2006332b5a8388d37176a8d10dcf895c
-ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
+ms.openlocfilehash: 12c45876558a162b910120e62c6997c251f391e1
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49555635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49664020"
 ---
 # <a name="agreementfile-resource-type"></a>tipo de recurso contratofile
 
@@ -39,7 +39,7 @@ Representa um arquivo de contrato de uso personalizável que um locatário geren
 |isDefault|Booliano|Indica se este é o arquivo de contrato padrão se nenhuma das culturas corresponder à preferência do cliente. Se nenhum dos arquivos estiver marcado como padrão, o primeiro será tratado como o padrão. Somente leitura.|
 |idioma|Cadeia de caracteres|Cultura do arquivo de contrato no formato languagecode2-Country/regioncode2. languagecode2 é um código de duas letras em minúsculas derivado de ISO 639-1. Country/regioncode2 é derivado de ISO 3166 e geralmente consiste em duas letras maiúsculas ou uma marca de idioma BCP-47 (por exemplo, en-US). Somente leitura.|
 |isMajorVersion|Boolean|Indica se o arquivo de contrato é uma atualização de versão principal. As atualizações de versão principal invalidam as aceitação do contrato no idioma correspondente. |
-|createdDateTime|DateTimeOffset|A data e hora que representam o momento em que o arquivo foi criado. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+|createdDateTime|DateTimeOffset|A data e hora que representam o momento em que o arquivo foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
 
 <!--
 ## Relationships
@@ -68,7 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "isDefault": true,
   "language": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

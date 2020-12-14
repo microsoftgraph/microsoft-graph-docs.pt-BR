@@ -3,12 +3,12 @@ title: Componente de logon no kit de ferramentas do Microsoft Graph
 description: Um componente de logon é um botão e um controle de submenu para facilitar a autenticação da plataforma de identidade da Microsoft.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 441639c309025eb8fefbbe551dd60b6324a7fd3c
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: a54dfaede64216e8a2254aedb06cf6aa41aaa295
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682030"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660062"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Componente de logon no kit de ferramentas do Microsoft Graph
 
@@ -55,20 +55,21 @@ O `mgt-login` componente define as seguintes propriedades personalizadas de CSS.
 mgt-login {
   --font-size: 14px;
   --font-weight: 600;
+  --weith: '100%';
   --height: '100%';
   --margin: 0;
   --padding: 12px 20px;
-  --color: #201f1e;
-  --color-hover: var(--theme-primary-color);
-  --background-color: transparent;
-  --background-color--hover: #edebe9;
-  --popup-content-background-color: white;
+  --button-color: #201f1e;
+  --button-color--hover: var(--theme-primary-color);
+  --button-background-color: transparent;
+  --button-background-color--hover: #edebe9;
+  --popup-background-color: white;
   --popup-command-font-size: 12px;
   --popup-color: #201f1e;
 }
 ```
 
-Para saber mais, confira [estilos de componentes](../style.md).
+Para saber mais, confira [estilos de componentes](../customize-components/style.md).
 
 ## <a name="events"></a>Eventos
 
@@ -84,7 +85,7 @@ Os eventos a seguir são acionados do controle.
 
 ## <a name="templates"></a>Modelos
 
-O `mgt-login` componente oferece suporte a vários [modelos](../templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos valores listados na tabela a seguir. 
+O `mgt-login` componente oferece suporte a vários [modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos valores listados na tabela a seguir. 
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -99,7 +100,7 @@ Este componente usa o [componente Person](./person.md) para exibir o usuário e 
 
 ## <a name="authentication"></a>Autenticação
 
-O controle de logon usa o provedor de autenticação global descrito na [documentação de autenticação](./../providers.md). 
+O controle de logon usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md). 
 
 ## <a name="extend-for-more-control"></a>Estender para mais controle
 

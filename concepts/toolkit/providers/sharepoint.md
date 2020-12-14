@@ -3,18 +3,18 @@ title: Provedor do SharePoint
 description: Use o provedor do SharePoint dentro de suas Web Parts do SharePoint para poder alimentar os componentes com o acesso ao Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: c27a24ac1b5f41b97d749620edbae09794072bed
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: bb657e8fb5d6d9a775fb41e5c5c9fa6bf4662926
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657293"
 ---
 # <a name="sharepoint-provider"></a>Provedor do SharePoint
 
 Use o provedor do SharePoint dentro de suas Web Parts do SharePoint para poder alimentar os componentes com o acesso ao Microsoft Graph.
 
-Para saber mais sobre provedores de autenticação, consulte [Providers](../providers.md).
+Para saber mais sobre provedores de autenticação, consulte [Providers](./providers.md).
 
 ## <a name="get-started"></a>Introdução
 
