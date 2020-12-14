@@ -5,55 +5,57 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e7b8a1bb20b9e80dc8e86768ae5edf3216090287
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 82f5e022fc1c3066f54aed7e58be2e4cefae1b64
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607455"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658296"
 ---
-# <a name="update-tab-in-chat"></a><span data-ttu-id="9962f-103">Guia atualizar no chat</span><span class="sxs-lookup"><span data-stu-id="9962f-103">Update tab in chat</span></span>
+# <a name="update-tab-in-chat"></a><span data-ttu-id="60f30-103">Guia atualizar no chat</span><span class="sxs-lookup"><span data-stu-id="60f30-103">Update tab in chat</span></span>
 
-<span data-ttu-id="9962f-104">Namespace: Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="9962f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="60f30-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="60f30-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9962f-105">Atualiza as propriedades da [guia](../resources/teamstab.md) especificada em um [chat](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="9962f-105">Update the properties of the specified [tab](../resources/teamstab.md) in a [chat](../resources/chat.md).</span></span> <span data-ttu-id="9962f-106">Isso pode ser usado para configurar o conteúdo da guia.</span><span class="sxs-lookup"><span data-stu-id="9962f-106">This can be used to configure the content of the tab.</span></span>
+<span data-ttu-id="60f30-105">Atualiza as propriedades da [guia](../resources/teamstab.md) especificada em um [chat](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="60f30-105">Update the properties of the specified [tab](../resources/teamstab.md) in a [chat](../resources/chat.md).</span></span> <span data-ttu-id="60f30-106">Isso pode ser usado para configurar o conteúdo da guia.</span><span class="sxs-lookup"><span data-stu-id="60f30-106">This can be used to configure the content of the tab.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9962f-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="9962f-107">Permissions</span></span>
-<span data-ttu-id="9962f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9962f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+> <span data-ttu-id="60f30-107">**Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) , em seguida, efetivamente, a guia fixa na reunião será atualizada.</span><span class="sxs-lookup"><span data-stu-id="60f30-107">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab pinned in the meeting will be updated.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="60f30-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="60f30-108">Permissions</span></span>
+<span data-ttu-id="60f30-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="60f30-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="9962f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9962f-110">Permission type</span></span>      | <span data-ttu-id="9962f-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9962f-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="60f30-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="60f30-111">Permission type</span></span>      | <span data-ttu-id="60f30-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="60f30-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9962f-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9962f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9962f-113">TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="9962f-113">TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All</span></span> |
-|<span data-ttu-id="9962f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9962f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9962f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9962f-115">Not supported.</span></span>    |
-|<span data-ttu-id="9962f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9962f-116">Application</span></span> | <span data-ttu-id="9962f-117">TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="9962f-117">TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="60f30-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="60f30-113">Delegated (work or school account)</span></span> | <span data-ttu-id="60f30-114">TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="60f30-114">TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="60f30-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="60f30-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60f30-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="60f30-116">Not supported.</span></span>    |
+|<span data-ttu-id="60f30-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="60f30-117">Application</span></span> | <span data-ttu-id="60f30-118">TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="60f30-118">TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="9962f-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9962f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="60f30-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="60f30-119">HTTP request</span></span>
 ```http
 PATCH /chats/{chat-id}/tabs/{tab-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9962f-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9962f-119">Request headers</span></span>
-| <span data-ttu-id="9962f-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9962f-120">Header</span></span>       | <span data-ttu-id="9962f-121">Valor</span><span class="sxs-lookup"><span data-stu-id="9962f-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="60f30-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="60f30-120">Request headers</span></span>
+| <span data-ttu-id="60f30-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="60f30-121">Header</span></span>       | <span data-ttu-id="60f30-122">Valor</span><span class="sxs-lookup"><span data-stu-id="60f30-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9962f-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="9962f-122">Authorization</span></span>  | <span data-ttu-id="9962f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9962f-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="9962f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9962f-125">Content-Type</span></span>  | <span data-ttu-id="9962f-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9962f-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="60f30-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="60f30-123">Authorization</span></span>  | <span data-ttu-id="60f30-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="60f30-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="60f30-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="60f30-126">Content-Type</span></span>  | <span data-ttu-id="60f30-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="60f30-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9962f-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9962f-128">Request body</span></span>
-<span data-ttu-id="9962f-129">No corpo da solicitação, forneça uma representação JSON do objeto [Tab](../resources/teamstab.md) .</span><span class="sxs-lookup"><span data-stu-id="9962f-129">In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="60f30-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="60f30-129">Request body</span></span>
+<span data-ttu-id="60f30-130">No corpo da solicitação, forneça uma representação JSON do objeto [Tab](../resources/teamstab.md) .</span><span class="sxs-lookup"><span data-stu-id="60f30-130">In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9962f-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="9962f-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="60f30-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="60f30-131">Response</span></span>
 
-<span data-ttu-id="9962f-131">Se tiver êxito, este método retornará um `200 OK` código de resposta e o recurso **teamsTab** atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9962f-131">If successful, this method returns a `200 OK` response code and the updated **teamsTab** resource in the response body.</span></span>
+<span data-ttu-id="60f30-132">Se tiver êxito, este método retornará um `200 OK` código de resposta e o recurso **teamsTab** atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="60f30-132">If successful, this method returns a `200 OK` response code and the updated **teamsTab** resource in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9962f-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="9962f-132">Examples</span></span>
-### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a><span data-ttu-id="9962f-133">Exemplo 1: atualizar o nome de uma guia em um chat</span><span class="sxs-lookup"><span data-stu-id="9962f-133">Example 1: Update the name of a tab in a chat</span></span>
+## <a name="examples"></a><span data-ttu-id="60f30-133">Exemplos</span><span class="sxs-lookup"><span data-stu-id="60f30-133">Examples</span></span>
+### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a><span data-ttu-id="60f30-134">Exemplo 1: atualizar o nome de uma guia em um chat</span><span class="sxs-lookup"><span data-stu-id="60f30-134">Example 1: Update the name of a tab in a chat</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9962f-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9962f-134">Request</span></span>
-<span data-ttu-id="9962f-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9962f-135">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="60f30-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="60f30-135">Request</span></span>
+<span data-ttu-id="60f30-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="60f30-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_tabs_in_chat"
@@ -67,7 +69,7 @@ Content-length: 211
   "displayName": "My Contoso Tab - updated again"
 }
 ```
-#### <a name="response"></a><span data-ttu-id="9962f-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="9962f-136">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="60f30-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="60f30-137">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -95,10 +97,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9962f-137">Confira também</span><span class="sxs-lookup"><span data-stu-id="9962f-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="60f30-138">Confira também</span><span class="sxs-lookup"><span data-stu-id="60f30-138">See also</span></span>
 
-- [<span data-ttu-id="9962f-138">Configurar tipos de guia internos</span><span class="sxs-lookup"><span data-stu-id="9962f-138">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
-- [<span data-ttu-id="9962f-139">Guia atualizar no canal</span><span class="sxs-lookup"><span data-stu-id="9962f-139">Update tab in channel</span></span>](channel-patch-tabs.md)
+- [<span data-ttu-id="60f30-139">Configurar tipos de guia internos</span><span class="sxs-lookup"><span data-stu-id="60f30-139">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
+- [<span data-ttu-id="60f30-140">Guia atualizar no canal</span><span class="sxs-lookup"><span data-stu-id="60f30-140">Update tab in channel</span></span>](channel-patch-tabs.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

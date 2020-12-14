@@ -5,55 +5,57 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6182daa44d0e5ac8deb86a1fb8fe61c5f1376b2f
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 38e6443ac0825c729083fcf1fe8e6f2f3e4ffa13
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607459"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658559"
 ---
-# <a name="add-tab-to-chat"></a><span data-ttu-id="9fff3-103">Adicionar guia ao chat</span><span class="sxs-lookup"><span data-stu-id="9fff3-103">Add tab to chat</span></span>
+# <a name="add-tab-to-chat"></a><span data-ttu-id="49cb1-103">Adicionar guia ao chat</span><span class="sxs-lookup"><span data-stu-id="49cb1-103">Add tab to chat</span></span>
 
-<span data-ttu-id="9fff3-104">Namespace: Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="9fff3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="49cb1-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49cb1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9fff3-105">Adicionar (fixar) uma [guia](../resources/teamstab.md) ao [chat](../resources/chat.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="9fff3-105">Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md).</span></span> <span data-ttu-id="9fff3-106">O aplicativo correspondente já deve estar [instalado no chat](../api/chat-list-installedapps.md).</span><span class="sxs-lookup"><span data-stu-id="9fff3-106">The corresponding app must already be [installed in the chat](../api/chat-list-installedapps.md).</span></span>
+<span data-ttu-id="49cb1-105">Adicionar (fixar) uma [guia](../resources/teamstab.md) ao [chat](../resources/chat.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="49cb1-105">Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md).</span></span> <span data-ttu-id="49cb1-106">O aplicativo correspondente já deve estar [instalado no chat](../api/chat-list-installedapps.md).</span><span class="sxs-lookup"><span data-stu-id="49cb1-106">The corresponding app must already be [installed in the chat](../api/chat-list-installedapps.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9fff3-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="9fff3-107">Permissions</span></span>
-<span data-ttu-id="9fff3-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9fff3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+> <span data-ttu-id="49cb1-107">**Observação**: se o chat estiver associado a uma instância do [onlineMeeting](../resources/onlinemeeting.md) , em seguida, efetivamente, a guia será adicionada à reunião.</span><span class="sxs-lookup"><span data-stu-id="49cb1-107">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab will get added to the meeting.</span></span>
 
-|<span data-ttu-id="9fff3-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9fff3-110">Permission type</span></span>      | <span data-ttu-id="9fff3-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9fff3-111">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="49cb1-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="49cb1-108">Permissions</span></span>
+<span data-ttu-id="49cb1-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="49cb1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="49cb1-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="49cb1-111">Permission type</span></span>      | <span data-ttu-id="49cb1-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="49cb1-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9fff3-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9fff3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9fff3-113">TeamsTab. Create, TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="9fff3-113">TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All</span></span> |
-|<span data-ttu-id="9fff3-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9fff3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9fff3-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9fff3-115">Not supported.</span></span>    |
-| <span data-ttu-id="9fff3-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9fff3-116">Application</span></span>                            | <span data-ttu-id="9fff3-117">TeamsTab. Create, TeamsTab. ReadWriteForChat. All, TeamsTab. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="9fff3-117">TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="49cb1-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="49cb1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="49cb1-114">TeamsTab. Create, TeamsTab. ReadWriteForChat, TeamsTab. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="49cb1-114">TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="49cb1-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="49cb1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49cb1-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="49cb1-116">Not supported.</span></span>    |
+| <span data-ttu-id="49cb1-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="49cb1-117">Application</span></span>                            | <span data-ttu-id="49cb1-118">TeamsTab. Create, TeamsTab. ReadWriteForChat. All, TeamsTab. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="49cb1-118">TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="9fff3-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9fff3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="49cb1-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="49cb1-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /chats/{chat-id}/tabs
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9fff3-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9fff3-119">Request headers</span></span>
-| <span data-ttu-id="9fff3-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9fff3-120">Header</span></span>       | <span data-ttu-id="9fff3-121">Valor</span><span class="sxs-lookup"><span data-stu-id="9fff3-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="49cb1-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="49cb1-120">Request headers</span></span>
+| <span data-ttu-id="49cb1-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="49cb1-121">Header</span></span>       | <span data-ttu-id="49cb1-122">Valor</span><span class="sxs-lookup"><span data-stu-id="49cb1-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9fff3-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="9fff3-122">Authorization</span></span>  | <span data-ttu-id="9fff3-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9fff3-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="49cb1-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="49cb1-123">Authorization</span></span>  | <span data-ttu-id="49cb1-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="49cb1-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9fff3-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9fff3-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="49cb1-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="49cb1-126">Request body</span></span>
 
-<span data-ttu-id="9fff3-126">No corpo da solicitação, inclua uma representação JSON de um [teamsTab](../resources/teamstab.md).</span><span class="sxs-lookup"><span data-stu-id="9fff3-126">In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).</span></span>
+<span data-ttu-id="49cb1-127">No corpo da solicitação, inclua uma representação JSON de um [teamsTab](../resources/teamstab.md).</span><span class="sxs-lookup"><span data-stu-id="49cb1-127">In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="9fff3-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="9fff3-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="49cb1-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="49cb1-128">Response</span></span>
 
-<span data-ttu-id="9fff3-128">Se tiver êxito, este método retornará um `201 Created` código de resposta e uma instância do recurso [teamsTab](../resources/teamstab.md) no corpo.</span><span class="sxs-lookup"><span data-stu-id="9fff3-128">If successful, this method returns a `201 Created` response code and an instance of the [teamsTab](../resources/teamstab.md) resource in the body.</span></span>
+<span data-ttu-id="49cb1-129">Se tiver êxito, este método retornará um `201 Created` código de resposta e uma instância do recurso [teamsTab](../resources/teamstab.md) no corpo.</span><span class="sxs-lookup"><span data-stu-id="49cb1-129">If successful, this method returns a `201 Created` response code and an instance of the [teamsTab](../resources/teamstab.md) resource in the body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9fff3-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9fff3-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="49cb1-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="49cb1-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9fff3-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9fff3-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="49cb1-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="49cb1-131">Request</span></span>
 
-<span data-ttu-id="9fff3-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9fff3-131">The following is an example of the request.</span></span>
+<span data-ttu-id="49cb1-132">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="49cb1-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "add_tab_to_chat"
@@ -76,11 +78,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9fff3-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="9fff3-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="49cb1-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="49cb1-133">Response</span></span>
 
-<span data-ttu-id="9fff3-133">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9fff3-133">The following is an example of the response.</span></span> 
+<span data-ttu-id="49cb1-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="49cb1-134">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="9fff3-134">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="9fff3-134">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="49cb1-135">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="49cb1-135">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -106,11 +108,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9fff3-135">Confira também</span><span class="sxs-lookup"><span data-stu-id="9fff3-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49cb1-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="49cb1-136">See also</span></span>
 
-- [<span data-ttu-id="9fff3-136">Configurar tipos de guia internos</span><span class="sxs-lookup"><span data-stu-id="9fff3-136">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
-- [<span data-ttu-id="9fff3-137">Adicionar uma guia ao canal</span><span class="sxs-lookup"><span data-stu-id="9fff3-137">Add tab to channel</span></span>](channel-post-tabs.md)
-- [<span data-ttu-id="9fff3-138">Adicionar aplicativo ao chat</span><span class="sxs-lookup"><span data-stu-id="9fff3-138">Add app to chat</span></span>](chat-post-installedapps.md)
+- [<span data-ttu-id="49cb1-137">Configurar tipos de guia internos</span><span class="sxs-lookup"><span data-stu-id="49cb1-137">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
+- [<span data-ttu-id="49cb1-138">Adicionar uma guia ao canal</span><span class="sxs-lookup"><span data-stu-id="49cb1-138">Add tab to channel</span></span>](channel-post-tabs.md)
+- [<span data-ttu-id="49cb1-139">Adicionar o aplicativo ao chat</span><span class="sxs-lookup"><span data-stu-id="49cb1-139">Add app to chat</span></span>](chat-post-installedapps.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
