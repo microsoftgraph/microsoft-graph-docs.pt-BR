@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a1b71403b510dbad1212211b19bcb376bf15e7b2
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 0a1aee054ffbe216476e0f7a0b0d912190168a8b
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000536"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675972"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -41,7 +41,7 @@ Crie equipes automaticamente para aulas no início do ano letivo e arquive essas
 Permita que os clientes criem novas [equipes](/graph/api/resources/team?view=graph-rest-1.0) e [canais](/graph/api/resources/channel?view=graph-rest-1.0). 
 [Instale](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) seu [Aplicativo de Equipes](/microsoftteams/platform/#pivot=home&panel=home-all) nas novas equipes. 
 [Fixe o aplicativo em uma guia](/graph/api/teamstab-add?view=graph-rest-1.0) no novo canal. 
-[Envie mensagens](/graph/api/channel-post-messages?view=graph-rest-beta) para o canal vinculando-o ao seu site.
+[Envie mensagens](/graph/api/channel-post-message?view=graph-rest-beta) para o canal vinculando-o ao seu site.
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>Criar e gerenciar várias equipes e canais
 
@@ -77,7 +77,7 @@ As APIs do Microsoft Teams podem melhorar os aplicativos dentro e fora do Teams:
 |Sites| Exibem conteúdo aprimorado em suas páginas da Web.|
 |Serviços|Aprimoram seus aplicativos de cliente com dados do Microsoft Graph por meio do seu serviço Web.|
 | [Feed de atividades](/microsoftteams/platform/concepts/activity-feed)|Envolve os usuários por meio de notificações do feed.|
-| [Chamadas e reuniões online (visualização)](/graph/api/resources/communications-api-overview) |Crie aplicativos do Microsoft Teams com bots que podem iniciar e participar de chamadas de áudio/vídeo, encaminhar/transferir chamadas com base em fluxos de réplica de voz interativa (IVR) e participar de reuniões online.|
+| [Chamadas e reuniões online (visualização)](/graph/api/resources/communications-api-overview) |Crie aplicativos do Microsoft Teams usando bots podem iniciar e participar de chamadas de áudio/vídeo, rotear/transferir chamadas com base em fluxos de resposta de voz interativa (IVR) e participe de reuniões online.|
 
 ### <a name="get-notified-about-changes"></a>Obter notificação sobre alterações
 
