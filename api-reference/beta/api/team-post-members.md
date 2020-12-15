@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9291cb0c60ed740ec9fdf1155a7f1e75e56f1705
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 5b4f7ecb27b3bb2c658f0b50fe90fa25379f530a
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658786"
 ---
 # <a name="add-member-to-team"></a>Adicionar membro à equipe.
 Namespace: microsoft.graph
@@ -120,6 +120,6 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Adicionar membro no canal](channel-post-members.md)
+- [Criar membro no canal](channel-post-members.md)
 
 

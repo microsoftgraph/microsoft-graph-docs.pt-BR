@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de equipe
 description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
-author: nkramer
+author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7eb01d5043ec6857a6b99b5a0eb3f91687d74bdf
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: e1326c63290b36a884d8d61ad5f9b820ab957aca
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387727"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659733"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -43,6 +43,11 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |[Desarquivar equipe](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restaure a equipe com um estado de leitura e gravação. |
 |[Clonar equipe](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copie a equipe e o grupo associado. |
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
+|[Listar aplicativos em equipe](../api/team-list-installedapps.md) | Coleção[teamsAppInstallation](teamsappinstallation.md) | Liste os aplicativos instalados em uma equipe.|
+|[Instalar o aplicativo na equipe do](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obtenha o aplicativo especificado instalado em uma equipe.|
+|[Adicionar aplicativo à equipe](../api/team-post-installedapps.md) |Nenhuma | Adicione (instale) um aplicativo a uma equipe.|
+|[Atualizar o aplicativo instalado para a equipe](../api/team-teamsappinstallation-upgrade.md) | Nenhuma | Atualize o aplicativo instalado em uma equipe para a versão mais recente.|
+|[Remover aplicativo da equipe](../api/team-delete-installedapps.md) | Nenhuma | Remova (desinstale) um aplicativo de uma equipe.|
 
 ## <a name="properties"></a>Propriedades
 
