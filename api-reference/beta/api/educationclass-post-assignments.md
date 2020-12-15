@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f00a31619e13bcae54565bab6fbfae9d0fdb937a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d89717c56b78d7db19236f532dba005220d01b91
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007620"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675944"
 ---
 # <a name="create-educationassignment"></a>Criar educationAssignment
 
@@ -96,6 +96,7 @@ Content-type: application/json
 Content-length: 279
 
 {
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "2014-02-01T00:00:00Z",
@@ -131,6 +132,7 @@ Content-length: 279
       }
   },
   "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+  "notificationChannelUrl": null,
   "status": "published"
 }
 ```

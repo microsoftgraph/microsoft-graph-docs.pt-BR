@@ -8,12 +8,12 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 5172928bf143ccce17e46f4ed2e3e2ff0ece5d00
-  ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+  ms.openlocfilehash: c064f803856c8d290e8c88a6399de6a806349aad
+  ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 10/21/2020
-  ms.locfileid: "48634666"
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "49675846"
 landingContent:
 - title: Criar seu primeiro aplicativo do lado do servidor
   linkLists:
@@ -57,7 +57,7 @@ landingContent:
     links:
     - text: Angular
       url: /graph/tutorials/angular
-    - text: Webassembly de mais um.
+    - text: Blazor WebAssembly
       url: /graph/tutorials/blazor
     - text: JavaScript
       url: /graph/tutorials/javascript
@@ -69,12 +69,16 @@ landingContent:
     links:
     - text: Azure Functions
       url: /graph/tutorials/azure-functions
-    - text: Estrutura de bot
+    - text: Bot Framework
       url: /graph/tutorials/bot-framework
+    - text: Suplemento do Office
+      url: /graph/tutorials/office-addin
     - text: Power Automate
       url: /graph/tutorials/power-automate
     - text: Estrutura do SharePoint
       url: /graph/tutorials/spfx
+    - text: Teams
+      url: /graph/tutorials/teams
 - title: Cenários
   linkLists:
   - linkListType: tutorial

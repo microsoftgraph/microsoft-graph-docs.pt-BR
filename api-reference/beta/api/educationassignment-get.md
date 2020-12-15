@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d31a7980c401fae746d0ebfc92742fe9f4cde702
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 17cc7921c451fae534cd2bbe278ed89ce5e523af
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403640"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675860"
 ---
 # <a name="get-educationassignment"></a>Obter educationAssignment
 
@@ -75,6 +75,7 @@ Content-length: 279
 
 {
   "id": "19002",
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",
@@ -106,6 +107,7 @@ Content-length: 279
     }
   },
   "lastModifiedDateTime": "2014-01-01T00:00:00Z",
+  "notificationChannelUrl": null,
   "status": "assigned"
 }
 ```
