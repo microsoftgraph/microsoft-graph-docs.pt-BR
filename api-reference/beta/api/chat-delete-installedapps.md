@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a463fd0c57f707c766367b2bd6e7abc326d35aa2
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 954567f3d899f432922edb2c1c618814282043c4
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607470"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658580"
 ---
 # <a name="uninstall-app-in-a-chat"></a>Desinstalar o aplicativo em um chat
 
@@ -20,7 +20,9 @@ Namespace: microsoft.graph
 
 Desinstalar um [aplicativo](../resources/teamsapp.md) instalado em um [chat](../resources/chat.md).
 
-## <a name="permissions"></a>Permissions
+> **Nota**: Se o chat estiver associado a uma instância [onlineMeeting](../resources/onlinemeeting.md), então, efetivamente, o **teamsApp** será removido da reunião.
+
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
