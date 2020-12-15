@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: c4b2b2ac4a2f9a11dcd68eee903223f8466ba25d
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 937ed5e56ab20da0f66e5c2cb3ae46fa35a57694
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606878"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675951"
 ---
 # <a name="presence-resource-type"></a>tipo de recurso Presence
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 Contém informações sobre a presença de um usuário, incluindo a disponibilidade e a atividade do usuário.
 
@@ -22,11 +22,11 @@ Contém informações sobre a presença de um usuário, incluindo a disponibilid
 
 Esse recurso oferece suporte à assinatura de [alteração de notificações](/graph/webhooks).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                            | Tipo de retorno                                       | Descrição                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [Obter presença](../api/presence-get.md)     | [presence](../resources/presence.md)     | Obtenha as informações de presença de um usuário.
+| [Obter presença](../api/presence-get.md)     | [presença](../resources/presence.md)     | Obtenha as informações de presença de um usuário.
 | [Obter presença de vários usuários](../api/cloudcommunications-getpresencesbyuserid.md)    |  coleção [Presence](../resources/presence.md)     |  Obtenha as informações de presença de vários usuários.      |
 
 
@@ -34,7 +34,7 @@ Esse recurso oferece suporte à assinatura de [alteração de notificações](/g
 
 | Relação        | Tipo                                                 | Descrição                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-|id    |  cadeia de caracteres     |  A ID de objeto de usuário   |
+|id    |  string     |  A ID de objeto de usuário   |
 |availability    |  coleção de cadeias de caracteres   |   As informações de presença básicas de um usuário. Os valores possíveis são,,,,, `Available` `AvailableIdle` ,,  `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline` , `PresenceUnknown`  |
 |atividade    |  coleção de cadeias de caracteres      |    As informações complementares para a disponibilidade de um usuário. Os valores possíveis são,,,,, `Available` `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` , `Inactive` , `InAMeeting` , `Offline` , `OffWork` , `OutOfOffice` , `PresenceUnknown` , `Presenting` , `UrgentInterruptionsOnly` .       |
 

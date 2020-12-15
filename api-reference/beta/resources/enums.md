@@ -5,16 +5,24 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3e5f23e7fdfd4a2fcb3927502535b5ed0a117a59
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: 16a152a8e2493fc7fa3bcbbe5b77a69a9356684e
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617063"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675965"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
 Namespace: microsoft.graph
+
+### <a name="educationaddedstudentaction-values"></a>valores de educationAddedStudentAction 
+
+|Member|
+|:---|
+|Nenhuma|
+|assignIfOpen|
+|unknownFutureValue|
 
 ### <a name="externalemailotpstate-values"></a>valores de externalEmailOtpState
 
@@ -68,7 +76,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|user|
+|usuário|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>valores de authenticationMethodState
@@ -89,7 +97,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|location|
+|localização|
 |aplicativo|
 
 ### <a name="anniversarytype-values"></a>valores de aniversáriotype
@@ -185,7 +193,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|Unidade|
+|drive|
 
 ### <a name="bucketaggregationsortproperty-values"></a>valores de bucketAggregationSortProperty
 
@@ -233,7 +241,7 @@ Namespace: microsoft.graph
 |:---|
 |Nenhuma|
 |automóvel|
-|calendário|
+|calendar|
 |com|
 |plano|
 |firstAid|
@@ -545,7 +553,7 @@ Namespace: microsoft.graph
 | forward
 | noResponseNecessary
 | leitura
-| resposta
+| reply
 | replyToAll
 | exame
 
@@ -611,7 +619,7 @@ Namespace: microsoft.graph
 | Automático
 | nopreview
 | verificação
-| description
+| descrição
 | referência
 
 
@@ -1038,7 +1046,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Nenhuma   | ,0     |
 | Adicionar    | 1      |
 | Atualizar | 2      |
-| Delete | 4      |
+| Excluir | 4      |
 
 ### <a name="chatmessagetype-values"></a>valores de chatMessageType
 
@@ -1093,7 +1101,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 |Member|
 |:---|
 |SignIn|
-|user|
+|usuário|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>valores de chatMessagePolicyViolationUserActionType
@@ -1274,7 +1282,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1      | Ameaça de email.            |
+| email   | 1      | Ameaça de email.            |
 | url    | 2      | Ameaça de URL.             |
 | file   | 3      | Ameaça do arquivo de anexo. |
 
@@ -1306,7 +1314,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | ,0     | Ainda não conhece.            |
-| user          | 1      | Envio do usuário.         |
+| usuário          | 1      | Envio do usuário.         |
 | administrador | 2      | Envio de administrador de locatários. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores de threatAssessmentResultType
@@ -1428,7 +1436,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Member|
 |:---|
-|user|
+|usuário|
 |group|
 
 ### <a name="identityuserflowattributedatatype-values"></a>valores de identityUserFlowAttributeDataType

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4708d1d4350ec6f25c5bd4df4d68489163f8167c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec3a971a3fcf42baf8b0a537e5dc6dae77ca55dc
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095573"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675979"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>tipo de recurso educationAssignmentRecipient
 
@@ -21,10 +21,10 @@ Namespace: microsoft.graph
 Usada dentro da propriedade **assignments. assignTo** . Essa superclasse é abstrata e você não pode definir a propriedade em assignments para esse valor. Essa superclasse representa quem a atribuição deve ser atribuída quando a atribuição é publicada.
 
 
-O recurso [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) é uma subclasse dessa superclasse.
+Os recursos [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) e [educationAssignmentIndividualRecipient](educationassignmentindividualrecipient.md) são subclasses dessa superclasse.
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhum.
 
 <!-- {
   "blockType": "resource",

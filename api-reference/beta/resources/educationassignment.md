@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6073a25b909dffb8fb9b5145c3d521d9b3ede955
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5215a1a36664216d680d07187514ebed69ba0b84
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055657"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675993"
 ---
 # <a name="educationassignment-resource-type"></a>tipo de recurso educationAssignment
 
@@ -33,34 +33,36 @@ As APIs de atribuição são expostas no namespace da classe.
 |[Listar categorias](../api/educationassignment-list-categories.md) |coleção [educationCategory](educationcategory.md)| Obtenha uma coleção de objetos **educationCategory** .|
 |[Criar recurso de tarefa](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Crie um novo **educationAssignmentResource** postando na coleção Resources.|
 |[Obter tarefa](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Ler propriedades e relações de um objeto **educationAssignment** .|
-|[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize um objeto **educationAssignment** . |
+|[Atualizar](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize um objeto **educationAssignment** . |
 |[Delete](../api/educationassignment-delete.md) | Nenhum |Excluir um objeto **educationAssignment** . |
 |[Adicionar categorias](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Atribua um **educationCategory** pertencente à classe a essa atribuição.|
 |[Remover categoria](../api/educationassignment-remove-category.md) |Nenhum| Remover um **educationCategory** pertencente à classe dessa atribuição.|
 |[Anexar amostra rubric](../api/educationassignment-put-rubric.md)|Nenhum|Anexar um **educationRubric** existente a esta atribuição.|
 |[Remover amostra rubric](../api/educationassignment-delete-rubric.md)|Nenhum|Desanexe o **educationRubric** da atribuição.|
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Alterar o estado de um objeto **educationAssignment** de rascunho para publicado.|
-|[Obter URL da pasta do recurso](../api/educationassignment-getresourcesfolderurl.md)| cadeia de caracteres| A pasta do OneDrive em que os recursos baseados em arquivo devem ser colocados para fazer parte de um recurso de atribuição. Os arquivos devem estar localizados nessa pasta para serem adicionados como um recurso.|
+|[Obter URL da pasta do recurso](../api/educationassignment-getresourcesfolderurl.md)| string| A pasta do OneDrive em que os recursos baseados em arquivo devem ser colocados para fazer parte de um recurso de atribuição. Os arquivos devem estar localizados nessa pasta para serem adicionados como um recurso.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura.|
-|allowLateSubmissions|Booliano| Identifica se os alunos podem enviar após a data de conclusão. Se essa propriedade não for especificada durante a criação, o padrão será true. |
-|allowStudentsToAddResourcesToSubmission|Booliano| Identifica se os alunos podem adicionar seus próprios recursos a um envio ou se eles só podem modificar recursos adicionados pelo professor. |
+|addedStudentAction|String|Campo opcional para controlar o comportamento da atribuição para estudantes que são adicionados depois que a atribuição é publicada. Se não for especificado, o padrão será `none` Value. O atualmente suporta apenas dois valores: `none` ou `assignIfOpen` .|
+|allowLateSubmissions|Boolean| Identifica se os alunos podem enviar após a data de conclusão. Se essa propriedade não for especificada durante a criação, o padrão será true. |
+|allowStudentsToAddResourcesToSubmission|Boolean| Identifica se os alunos podem adicionar seus próprios recursos a um envio ou se eles só podem modificar recursos adicionados pelo professor. |
 |assignDateTime|DateTimeOffset|A data em que a atribuição deve se tornar ativa.  Se no futuro, a atribuição não será mostrada ao aluno até esta data.  O tipo **timestamp** representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |atribuir|[educationAssignmentRecipient](educationassignmentrecipient.md)| Quais usuários ou classes inteira devem receber um objeto de envio depois que a atribuição for publicada. |
 |assignedDateTime|DateTimeOffset|O momento em que a atribuição foi publicada para estudantes e a atribuição aparece na linha do tempo dos alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|classId|Cadeia de caracteres| Classe à qual essa atribuição pertence. |
+|classId|String| Classe à qual essa atribuição pertence. |
 |closeDateTime|DateTimeOffset| Data em que a atribuição será fechada para envios. Este é um campo opcional que pode ser nulo se a atribuição não allowLateSubmissions ou quando closeDateTime for igual a dueDateTime. Mas, se especificado, o closeDateTime deve ser maior ou igual ao de dueDateTime. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |createdBy|[identitySet](identityset.md)| Quem criou a atribuição. |
 |createdDateTime|DateTimeOffset|Momento em que a atribuição foi criada.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|displayName|Cadeia de caracteres|Nome da atribuição.|
+|displayName|String|Nome da atribuição.|
 |dueDateTime|DateTimeOffset|Data de vencimento da atribuição de alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |notas|[educationAssignmentGradeType](educationassignmentgradetype.md)|Como a atribuição será classificada. |
 |contida|[itemBody](itembody.md)| Instruções para a atribuição.  Isso, juntamente com o nome para exibição, diga ao aluno o que fazer. |
 |lastModifiedBy|[identitySet](identityset.md)| Quem modificou a atribuição pela última vez. |
 |lastModifiedDateTime|DateTimeOffset|Momento em que a atribuição foi modificada pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|notificationChannelUrl|String|Campo opcional para especificar a URL do [canal](channel.md) para lançar a notificação de publicação de atribuição. Se não for especificado ou nulo, o padrão será o `General` canal. Este campo só se aplica a atribuições em que o valor de **assignTo** seja [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). A atualização do **notificationChannelUrl** não é permitida após a atribuição ter sido publicada.|
 |status|cadeia de caracteres| Status da **atribuição**.  Você não pode corrigir esse valor.  Os valores possíveis são: `draft`, `scheduled`, `published`, `assigned`.|
 
 ## <a name="relationships"></a>Relações
@@ -87,6 +89,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "id": "String (identifier)",
+  "addedStudentAction": "string",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",
@@ -102,6 +105,7 @@ Veja a seguir uma representação JSON do recurso.
   "instructions": {"@odata.type": "microsoft.graph.itemBody"},
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
+  "notificationChannelUrl": "string",
   "status": "string"
 }
 ```
@@ -118,5 +122,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-
