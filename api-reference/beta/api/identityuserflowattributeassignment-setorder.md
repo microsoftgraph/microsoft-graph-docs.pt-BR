@@ -5,16 +5,16 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 705acf8e65d7d01c40d98860c6f5066121d23a81
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 2e68f8493fb023f420cee2343716f1d5ec2b068e
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581297"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689190"
 ---
 # <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment: SetOrder
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 Definir a ordem de identityUserFlowAttributeAssignments que está sendo coletada dentro de um fluxo de usuário.
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -65,6 +65,8 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityuserflowattributeassignment_setorder"
@@ -86,6 +88,12 @@ Content-length: 90
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/identityuserflowattributeassignment-setorder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

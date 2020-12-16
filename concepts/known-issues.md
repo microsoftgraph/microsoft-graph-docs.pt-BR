@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 96557bf3f957f9dc57f3315d274bbcc952cd841e
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: c55f4b14d111c2910b8f0271b6f43e128c5511c8
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660097"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -202,13 +202,13 @@ Você deve primeiro criar a instância de recurso e, em seguida, fazer um `PATCH
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Limite de 100 valores de propriedade de extensão de esquema permitido por instância de recursos
 
-Atualmente, os recursos de diretório, como **dispositivo**, **grupo** e **usuário**, limitam o número total dos valores de propriedade de extensão de esquemas que podem ser definidos em um recurso, até 100.
+Recursos de diretório, como **dispositivo**, **grupo** e **usuário**, atualmente limitam o número total de valores de propriedade de extensão de esquema que podem ser definidas em um recurso, até 100.
 
 ### <a name="updating-a-schemaextension-definition-using-microsoft-graph-explorer"></a>Atualizar uma definição de schemaExtension usando o Microsoft Graph Explorer
 
 Ao usar `PATCH` para atualizar uma schemaExtension usando o Graph Explorer, você deve especificar a propriedade de **proprietário** e defini-la com seu valor `appid` atual (que será necessário ser uma `appId` de um aplicativo que você tenha). Esse também é o caso de qualquer aplicativo de cliente que `appId` não seja o mesmo que o do **proprietário**.
 
-### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>A filtragem nas propriedades de extensão de esquema não possuem suporte em todos os tipos de entidades
+### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Não há suporte a filtragem em propriedades de extensão de esquema em todos os tipos de entidade
 
 Não há suporte a filtragem em propriedades de extensão de esquema (usando a expressão `$filter`) para tipos de entidade do Outlook – **contato**, **evento**, **mensagem** ou **postagem**.
 
@@ -332,15 +332,8 @@ Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclu
 
 Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams).
 
-### <a name="post-teams-is-only-available-in-beta"></a>POST /teams está disponível apenas na versão beta
-Para criar equipes na versão v1.0, confira [criar equipe](/graph/api/team-put-teams).
-
-### <a name="missing-teams-in-list-all-teams"></a>Equipes ausentes em listas todas as equipes
-
-Algumas equipes que foram criadas no passado mas não foram usadas recentemente por um usuário do Microsoft Teams não são listadas por [listar todas as equipes](teams-list-all-teams.md).
-Novas equipes serão listadas.
-Algumas equipes antigas não têm uma propriedade **resourceProvisioningOptions** que contém “Equipe”, que é configurada em equipes recém-criadas e equipes que são visitadas no Microsoft Teams.
-No futuro, vamos configurar **resourceProvisioningOptions** em equipes existentes que não foram abertas no Microsoft Teams.
+### <a name="unable-to-filter-team-members-by-roles"></a>Não é possível filtrar os membros da equipe por funções
+A consulta de filtro para obter membros de uma equipe com base em suas funções `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')`pode não funcionar. O servidor pode responder com uma.`BAD REQUEST`
 
 ## <a name="users"></a>Usuários
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ce4e7c8bee2535840b2d0f3d6fb234fb38ffbaf2
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: d677430f6f8e24738278e374efcb2dbd74690125
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607458"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658566"
 ---
 # <a name="add-app-to-chat"></a>Adicionar o aplicativo ao chat
 
@@ -20,7 +20,9 @@ Namespace: microsoft.graph
 
 Instale um [teamsApp](../resources/teamsapp.md) para o [chat](../resources/chat.md)especificado.
 
-## <a name="permissions"></a>Permissions
+> **Observação**: Se o chat estiver associado a uma instância [onlineMeeting](../resources/onlinemeeting.md), então, efetivamente, o **teamsApp** será instalado na reunião.
+
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
