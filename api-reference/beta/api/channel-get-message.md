@@ -12,54 +12,54 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/10/2020
 ms.locfileid: "48959274"
 ---
-# <a name="get-channel-message"></a><span data-ttu-id="29175-103">Obter mensagens do canal</span><span class="sxs-lookup"><span data-stu-id="29175-103">Get channel message</span></span>
+# <a name="get-channel-message"></a><span data-ttu-id="f2431-103">Obter mensagens do canal</span><span class="sxs-lookup"><span data-stu-id="f2431-103">Get channel message</span></span>
 
-<span data-ttu-id="29175-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="29175-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f2431-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f2431-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="29175-105">Recupere uma única [mensagem](../resources/chatmessage.md) (sem suas respostas) no [canal](../resources/channel.md) de uma equipe.</span><span class="sxs-lookup"><span data-stu-id="29175-105">Retrieve a single [message](../resources/chatmessage.md) (without its replies) in a [channel](../resources/channel.md) of a team.</span></span>
+<span data-ttu-id="f2431-105">Recupere uma única [mensagem](../resources/chatmessage.md) (sem suas respostas) no [canal](../resources/channel.md) de uma equipe.</span><span class="sxs-lookup"><span data-stu-id="f2431-105">Retrieve a single [message](../resources/chatmessage.md) (without its replies) in a [channel](../resources/channel.md) of a team.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="29175-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="29175-106">Permissions</span></span>
-<span data-ttu-id="29175-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29175-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f2431-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f2431-106">Permissions</span></span>
+<span data-ttu-id="f2431-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2431-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="29175-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="29175-109">Permission Type</span></span>|<span data-ttu-id="29175-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="29175-110">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="f2431-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f2431-109">Permission Type</span></span>|<span data-ttu-id="f2431-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f2431-110">Permissions (from least to most privileged)</span></span>|
 |---------|-------------|
-|<span data-ttu-id="29175-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="29175-111">Delegated (work or school account)</span></span>| <span data-ttu-id="29175-112">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29175-112">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
-|<span data-ttu-id="29175-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="29175-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="29175-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="29175-114">Not supported.</span></span>|
-|<span data-ttu-id="29175-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="29175-115">Application</span></span>| <span data-ttu-id="29175-116">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29175-116">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="f2431-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f2431-111">Delegated (work or school account)</span></span>| <span data-ttu-id="f2431-112">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2431-112">ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="f2431-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f2431-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f2431-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f2431-114">Not supported.</span></span>|
+|<span data-ttu-id="f2431-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f2431-115">Application</span></span>| <span data-ttu-id="f2431-116">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2431-116">ChannelMessage.Read.Group\*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="29175-117">**Observação** : Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="29175-117">**Note** : Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="f2431-117">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="f2431-117">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="29175-118">É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="29175-118">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="29175-119">Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).</span><span class="sxs-lookup"><span data-stu-id="29175-119">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
+> <span data-ttu-id="f2431-118">É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f2431-118">Before calling this API with application permissions, you must request access.</span></span> <span data-ttu-id="f2431-119">Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).</span><span class="sxs-lookup"><span data-stu-id="f2431-119">For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="29175-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="29175-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2431-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f2431-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/messages/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="29175-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="29175-121">Optional query parameters</span></span>
-<span data-ttu-id="29175-122">Atualmente, os [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) não têm suporte.</span><span class="sxs-lookup"><span data-stu-id="29175-122">The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f2431-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="f2431-121">Optional query parameters</span></span>
+<span data-ttu-id="f2431-122">Atualmente, os [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) não têm suporte.</span><span class="sxs-lookup"><span data-stu-id="f2431-122">The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="29175-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="29175-123">Request headers</span></span>
-| <span data-ttu-id="29175-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="29175-124">Header</span></span>       | <span data-ttu-id="29175-125">Valor</span><span class="sxs-lookup"><span data-stu-id="29175-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="f2431-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f2431-123">Request headers</span></span>
+| <span data-ttu-id="f2431-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f2431-124">Header</span></span>       | <span data-ttu-id="f2431-125">Valor</span><span class="sxs-lookup"><span data-stu-id="f2431-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="29175-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="29175-126">Authorization</span></span>  | <span data-ttu-id="29175-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="29175-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f2431-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="f2431-126">Authorization</span></span>  | <span data-ttu-id="f2431-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f2431-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="29175-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="29175-129">Request body</span></span>
-<span data-ttu-id="29175-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="29175-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f2431-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f2431-129">Request body</span></span>
+<span data-ttu-id="f2431-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f2431-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="29175-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="29175-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f2431-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2431-131">Response</span></span>
 
-<span data-ttu-id="29175-132">Se bem-sucedido, esse método retornará um `200 OK` código de resposta e um objeto [chatmessage](../resources/chatmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="29175-132">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="f2431-132">Se bem-sucedido, esse método retornará um `200 OK` código de resposta e um objeto [chatmessage](../resources/chatmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f2431-132">If successful, this method returns a `200 OK` response code and a [chatmessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="29175-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="29175-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="29175-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="29175-134">Request</span></span>
-<span data-ttu-id="29175-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="29175-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f2431-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f2431-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f2431-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f2431-134">Request</span></span>
+<span data-ttu-id="f2431-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f2431-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="29175-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="29175-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f2431-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="f2431-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype", "1555375673184"],
@@ -68,28 +68,28 @@ GET /teams/{id}/channels/{id}/messages/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages/1555375673184
 ```
-# <a name="c"></a>[<span data-ttu-id="29175-137">C#</span><span class="sxs-lookup"><span data-stu-id="29175-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f2431-137">C#</span><span class="sxs-lookup"><span data-stu-id="f2431-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="29175-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="29175-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f2431-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2431-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="29175-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="29175-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f2431-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f2431-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="29175-140">Java</span><span class="sxs-lookup"><span data-stu-id="29175-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f2431-140">Java</span><span class="sxs-lookup"><span data-stu-id="f2431-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-channel-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="29175-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="29175-141">Response</span></span>
-<span data-ttu-id="29175-142">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="29175-142">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="f2431-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2431-141">Response</span></span>
+<span data-ttu-id="f2431-142">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f2431-142">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="29175-143">**Observação:** o objeto de resposta mostrado aqui foi encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="29175-143">**Note:** The response object shown here are shortened for readability.</span></span> <span data-ttu-id="29175-144">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="29175-144">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="f2431-143">**Observação:** o objeto de resposta mostrado aqui foi encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f2431-143">**Note:** The response object shown here are shortened for readability.</span></span> <span data-ttu-id="f2431-144">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f2431-144">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
