@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c4b12ea09748e73ce2f7801c84d400d66613b1e4
+ms.openlocfilehash: d4d7f2ca622426410bbb05387225fb4abbb1d1c0
 ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "49692801"
+ms.locfileid: "49689149"
 ---
 ```javascript
 
@@ -15,7 +15,11 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/installedApps/{id}')
-    .get();
+const presence = {
+    ids: ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
+};
+
+let res = await client.api('/communications/getPresencesByUserId')
+    .post(presence);
 
 ```

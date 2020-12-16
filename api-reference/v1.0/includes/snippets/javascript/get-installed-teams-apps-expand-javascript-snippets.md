@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fa0bc3e12aa9f83df4af63b56bfde06b5cd5c5e7
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: d6f3c04656f7202b842414a4d66bd0d84eee2533
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35893200"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692634"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/installedApps')
+let res = await client.api('/teams/{id}/installedApps/{id}')
     .expand('teamsAppDefinition')
     .get();
 

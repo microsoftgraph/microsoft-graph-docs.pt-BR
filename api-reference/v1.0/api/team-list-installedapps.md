@@ -5,36 +5,36 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9728bf2765d5a6649934d406b51fc16e7796b716
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 4f796b05cb5b315841dde43c9a18f29cba9a6927
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607314"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49691178"
 ---
-# <a name="list-apps-in-team"></a><span data-ttu-id="d46f9-103">Listar aplicativos em equipe</span><span class="sxs-lookup"><span data-stu-id="d46f9-103">List apps in team</span></span>
+# <a name="list-apps-in-team"></a><span data-ttu-id="658e4-103">Listar aplicativos em equipe</span><span class="sxs-lookup"><span data-stu-id="658e4-103">List apps in team</span></span>
 
-<span data-ttu-id="d46f9-104">Namespace: Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d46f9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="658e4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="658e4-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="d46f9-105">Recupere uma lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)especificada.</span><span class="sxs-lookup"><span data-stu-id="d46f9-105">Retrieve a list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="658e4-105">Recupere uma lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)especificada.</span><span class="sxs-lookup"><span data-stu-id="658e4-105">Retrieve a list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="d46f9-106">O `id` de um recurso **teamsAppInstallation** não é o mesmo valor que o `id` do recurso **teamsApp** associado.</span><span class="sxs-lookup"><span data-stu-id="d46f9-106">The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.</span></span>
+> <span data-ttu-id="658e4-106">O `id` de um recurso **teamsAppInstallation** não é o mesmo valor que o `id` do recurso **teamsApp** associado.</span><span class="sxs-lookup"><span data-stu-id="658e4-106">The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d46f9-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="d46f9-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="658e4-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="658e4-107">Permissions</span></span>
 
-<span data-ttu-id="d46f9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d46f9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="658e4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="658e4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d46f9-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d46f9-110">Permission type</span></span>      | <span data-ttu-id="d46f9-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d46f9-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="658e4-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="658e4-110">Permission type</span></span>      | <span data-ttu-id="658e4-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="658e4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d46f9-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d46f9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d46f9-113">TeamsAppInstallation. ReadForTeam, TeamsAppInstallation. ReadWriteForTeam, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d46f9-113">TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="d46f9-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d46f9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d46f9-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d46f9-115">Not supported.</span></span>    |
-|<span data-ttu-id="d46f9-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d46f9-116">Application</span></span> | <span data-ttu-id="d46f9-117">TeamsAppInstallation. Read. Group \*, TeamsAppInstallation. ReadForTeam. All, TeamsAppInstallation. ReadWriteForTeam. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="d46f9-117">TeamsAppInstallation.Read.Group\*, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="658e4-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="658e4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="658e4-113">TeamsAppInstallation. ReadForTeam, TeamsAppInstallation. ReadWriteForTeam, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="658e4-113">TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="658e4-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="658e4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="658e4-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="658e4-115">Not supported.</span></span>    |
+|<span data-ttu-id="658e4-116">Application</span><span class="sxs-lookup"><span data-stu-id="658e4-116">Application</span></span> | <span data-ttu-id="658e4-117">TeamsAppInstallation. Read. Group \*, TeamsAppInstallation. ReadForTeam. All, TeamsAppInstallation. ReadWriteForTeam. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="658e4-117">TeamsAppInstallation.Read.Group\*, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="d46f9-118">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="d46f9-118">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="658e4-118">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="658e4-118">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d46f9-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d46f9-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="658e4-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="658e4-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,31 +42,33 @@ ms.locfileid: "49607314"
 GET /teams/{team-id}/installedApps
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="d46f9-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d46f9-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="658e4-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="658e4-120">Optional query parameters</span></span>
 
-<span data-ttu-id="d46f9-121">Este método oferece suporte a `$filter` , `$select` e a parâmetros de `$expand` [consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d46f9-121">This method supports the `$filter`, `$select`, and `$expand` [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="658e4-121">Este método oferece suporte a `$filter` , `$select` e a parâmetros de `$expand` [consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="658e4-121">This method supports the `$filter`, `$select`, and `$expand` [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d46f9-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d46f9-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="658e4-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="658e4-122">Request headers</span></span>
 
-| <span data-ttu-id="d46f9-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d46f9-123">Header</span></span>       | <span data-ttu-id="d46f9-124">Valor</span><span class="sxs-lookup"><span data-stu-id="d46f9-124">Value</span></span> |
+| <span data-ttu-id="658e4-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="658e4-123">Header</span></span>       | <span data-ttu-id="658e4-124">Valor</span><span class="sxs-lookup"><span data-stu-id="658e4-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d46f9-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="d46f9-125">Authorization</span></span>  | <span data-ttu-id="d46f9-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d46f9-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="658e4-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="658e4-125">Authorization</span></span>  | <span data-ttu-id="658e4-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="658e4-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d46f9-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d46f9-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="658e4-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="658e4-128">Request body</span></span>
 
-<span data-ttu-id="d46f9-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d46f9-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="658e4-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="658e4-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d46f9-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="d46f9-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="658e4-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="658e4-130">Response</span></span>
 
-<span data-ttu-id="d46f9-131">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d46f9-131">If successful, this method returns a `200 OK` response code and collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.</span></span>
+<span data-ttu-id="658e4-131">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="658e4-131">If successful, this method returns a `200 OK` response code and collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d46f9-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="d46f9-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="658e4-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="658e4-132">Examples</span></span>
 
-### <a name="example-1-list-installed-apps"></a><span data-ttu-id="d46f9-133">Exemplo 1: listar aplicativos instalados</span><span class="sxs-lookup"><span data-stu-id="d46f9-133">Example 1: List installed apps</span></span>
-#### <a name="request"></a><span data-ttu-id="d46f9-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d46f9-134">Request</span></span>
+### <a name="example-1-list-installed-apps"></a><span data-ttu-id="658e4-133">Exemplo 1: listar aplicativos instalados</span><span class="sxs-lookup"><span data-stu-id="658e4-133">Example 1: List installed apps</span></span>
+#### <a name="request"></a><span data-ttu-id="658e4-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="658e4-134">Request</span></span>
 
-<span data-ttu-id="d46f9-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d46f9-135">The following is an example of the request.</span></span>
+<span data-ttu-id="658e4-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="658e4-135">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="658e4-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="658e4-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_team"
@@ -75,11 +77,29 @@ GET /teams/{team-id}/installedApps
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps
 ```
+# <a name="c"></a>[<span data-ttu-id="658e4-137">C#</span><span class="sxs-lookup"><span data-stu-id="658e4-137">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="d46f9-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="d46f9-136">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="658e4-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="658e4-138">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-apps-in-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="d46f9-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d46f9-137">The following is an example of the response.</span></span>
-><span data-ttu-id="d46f9-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d46f9-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="658e4-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="658e4-139">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-installed-apps-in-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="658e4-140">Java</span><span class="sxs-lookup"><span data-stu-id="658e4-140">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="658e4-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="658e4-141">Response</span></span>
+
+<span data-ttu-id="658e4-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="658e4-142">The following is an example of the response.</span></span>
+><span data-ttu-id="658e4-p103">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="658e4-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "list_installed_apps_in_team",
@@ -109,12 +129,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a><span data-ttu-id="d46f9-140">Exemplo 2: obter os nomes e outros detalhes dos aplicativos instalados</span><span class="sxs-lookup"><span data-stu-id="d46f9-140">Example 2: Get the names and other details of installed apps</span></span>
+### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a><span data-ttu-id="658e4-145">Exemplo 2: obter os nomes e outros detalhes dos aplicativos instalados</span><span class="sxs-lookup"><span data-stu-id="658e4-145">Example 2: Get the names and other details of installed apps</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d46f9-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d46f9-141">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="658e4-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="658e4-146">Request</span></span>
 
-<span data-ttu-id="d46f9-142">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d46f9-142">The following is an example of the request.</span></span>
+<span data-ttu-id="658e4-147">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="658e4-147">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="658e4-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="658e4-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_teams_apps_expand"
@@ -123,12 +145,30 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition
 ```
+# <a name="c"></a>[<span data-ttu-id="658e4-149">C#</span><span class="sxs-lookup"><span data-stu-id="658e4-149">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-teams-apps-expand-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="d46f9-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="d46f9-143">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="658e4-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="658e4-150">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-teams-apps-expand-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="d46f9-144">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d46f9-144">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="658e4-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="658e4-151">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-installed-teams-apps-expand-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="d46f9-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d46f9-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="658e4-152">Java</span><span class="sxs-lookup"><span data-stu-id="658e4-152">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-installed-teams-apps-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="658e4-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="658e4-153">Response</span></span>
+
+<span data-ttu-id="658e4-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="658e4-154">The following is an example of the response.</span></span>
+
+><span data-ttu-id="658e4-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="658e4-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "list_installed_teams_apps_expand",
@@ -197,24 +237,44 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a><span data-ttu-id="d46f9-147">Exemplo 3: obter o recurso de instalação de aplicativo com base na ID de manifesto do aplicativo associado</span><span class="sxs-lookup"><span data-stu-id="d46f9-147">Example 3: Get the app installation resource based on the manifest ID of the associated app</span></span>
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a><span data-ttu-id="658e4-157">Exemplo 3: obter o recurso de instalação de aplicativo com base na ID de manifesto do aplicativo associado</span><span class="sxs-lookup"><span data-stu-id="658e4-157">Example 3: Get the app installation resource based on the manifest ID of the associated app</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d46f9-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d46f9-148">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="658e4-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="658e4-158">Request</span></span>
 
-<span data-ttu-id="d46f9-149">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d46f9-149">The following is an example of the request.</span></span> <span data-ttu-id="d46f9-150">No exemplo, a ID de manifesto do aplicativo Teams é ' cf1ba4c7-f94e-4d80-ba90-5594b641a8ee '.</span><span class="sxs-lookup"><span data-stu-id="d46f9-150">In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span></span>
+<span data-ttu-id="658e4-159">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="658e4-159">The following is an example of the request.</span></span> <span data-ttu-id="658e4-160">No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span><span class="sxs-lookup"><span data-stu-id="658e4-160">In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="658e4-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="658e4-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_team_expand_filter_externalid"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/acda442c-78d2-491b-8204-4ef5019c0193/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
 ```
+# <a name="c"></a>[<span data-ttu-id="658e4-162">C#</span><span class="sxs-lookup"><span data-stu-id="658e4-162">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-team-expand-filter-externalid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="d46f9-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="d46f9-151">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="658e4-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="658e4-163">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-apps-in-team-expand-filter-externalid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="d46f9-152">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d46f9-152">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="658e4-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="658e4-164">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-installed-apps-in-team-expand-filter-externalid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="d46f9-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d46f9-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="java"></a>[<span data-ttu-id="658e4-165">Java</span><span class="sxs-lookup"><span data-stu-id="658e4-165">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-team-expand-filter-externalid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="658e4-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="658e4-166">Response</span></span>
+
+<span data-ttu-id="658e4-167">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="658e4-167">The following is an example of the response.</span></span>
+
+><span data-ttu-id="658e4-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="658e4-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "list_installed_apps_in_team_expand_filter_externalid",
@@ -268,5 +328,5 @@ Content-type: application/json
   ]
 }-->
 
-## <a name="see-also"></a><span data-ttu-id="d46f9-155">Confira também</span><span class="sxs-lookup"><span data-stu-id="d46f9-155">See also</span></span>
-- [<span data-ttu-id="d46f9-156">Listar aplicativos no catálogo</span><span class="sxs-lookup"><span data-stu-id="d46f9-156">List apps in catalog</span></span>](appcatalogs-list-teamsapps.md)
+## <a name="see-also"></a><span data-ttu-id="658e4-170">Confira também</span><span class="sxs-lookup"><span data-stu-id="658e4-170">See also</span></span>
+- [<span data-ttu-id="658e4-171">Listar aplicativos no catálogo</span><span class="sxs-lookup"><span data-stu-id="658e4-171">List apps in catalog</span></span>](appcatalogs-list-teamsapps.md)
