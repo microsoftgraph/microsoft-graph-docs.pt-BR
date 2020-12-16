@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: bb11161bef2a7ac39f13cd7c4eb74b81a977e476
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: cbc9d93a90bab144f3e9a01a574f4e4fed47c855
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46570010"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49692603"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const userScopeTeamsAppInstallation = {
    teamsApp@odata.bind:"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 };
 
-let res = await client.api('/users/{id}/teamwork/installedApps')
+let res = await client.api('/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps')
     .version('beta')
     .post(userScopeTeamsAppInstallation);
 
