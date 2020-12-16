@@ -5,16 +5,16 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8c838dfee57e264d7cca61ac5e10ec98a46f7330
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: fe35d2a475af0d9fee1c1da653fe22d69938e4c1
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581279"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689536"
 ---
 # <a name="create-userattributeassignments"></a>Criar userAttributeAssignments
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 Criar um novo objeto identityUserFlowAttributeAssignment em um [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,8 +55,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [identit
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|O nome de exibição do identityUserFlowAttribute dentro de um fluxo de usuário.|
-|IsOptional|Boolean|Determina se o identityUserFlowAttribute é opcional. `true` significa que o usuário não precisa fornecer um valor. `false` significa que o usuário não pode concluir a inscrição sem fornecer um valor.|
-|requiresVerification|Boolean|Determina se o identityUserFlowAttribute requer verificação. Isso é usado apenas para verificar o número de telefone ou endereço de email do usuário.|
+|IsOptional|Booliano|Determina se o identityUserFlowAttribute é opcional. `true` significa que o usuário não precisa fornecer um valor. `false` significa que o usuário não pode concluir a inscrição sem fornecer um valor.|
+|requiresVerification|Booliano|Determina se o identityUserFlowAttribute requer verificação. Isso é usado apenas para verificar o número de telefone ou endereço de email do usuário.|
 |userAttributeValues|coleção [userAttributeValuesItem](../resources/userattributevaluesitem.md)|As opções de entrada para o atributo de fluxo do usuário. Aplicável somente quando userinputtype é `radioSingleSelect` , `dropdownSingleSelect` , ou `checkboxMultiSelect` .|
 |userinputtype|identityUserFlowAttributeInputType|O tipo de entrada do atributo de fluxo do usuário. Os possíveis valores são: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
 |userattribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|O identificador do atributo de fluxo do usuário a ser incluído na atribuição de fluxo do usuário.
@@ -69,6 +69,8 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_identityuserflowattributeassignment_from_"
@@ -90,6 +92,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-identityuserflowattributeassignment-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-identityuserflowattributeassignment-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-identityuserflowattributeassignment-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-identityuserflowattributeassignment-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
