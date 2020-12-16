@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1d9767a913b5fe5878cb1cc8e72ec9900fcec4ac
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 12d8bfd49ebc71b6cb82cccd9525a3706cd570fd
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000711"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690610"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 
@@ -94,7 +94,9 @@ As assinaturas no nível do canal também oferecem suporte à pesquisa baseada e
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | ChannelMessage.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | ChannelMessage.Read.All |
+|Aplicativo | ChannelMessage.Read.All, ChannelMessage.Read.Group* |
+
+>**Observação:** ChannelMessage.Read.Group é suportado como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example-1-subscribe-to-all-messages-and-replies-in-a-channel"></a>Exemplo 1: assinar em todas as mensagens (e respostas) em um canal
 
@@ -150,11 +152,31 @@ Content-Type: application/json
 }
 ```
 
+### <a name="example-4-subscribe-to-messages-and-replies-in-a-channel-that-mention-a-specific-user"></a>Exemplo 4: assinar para receber mensagens (e respostas) em um canal que menciona um usuário específico
+
+Para obter notificações somente para mensagens em que um usuário específico foi mencionado, você pode especificar a ID do usuário (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` nesse exemplo) na consulta.
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/teams/{id}/channels/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
+  "includeResourceData": false,
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ## <a name="subscribe-to-messages-in-a-chat"></a>Assinar para receber mensagens em um chat
 
 Para acompanhar mensagens em um chat, você pode criar uma assinatura de notificação de alteração em um nível de chat. Para fazer isso, assine em `/chats{id}/messages`. Este recurso oferece suporte à [inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação no *modo somente de aplicativo*.
 
 As assinaturas no nível do chat também oferecem suporte à pesquisa baseada em palavras-chave por meio do parâmetro de consulta `$search`.
+
+> **Observação:** assinar para receber mensagens em um chat que esteja atualmente em pré-visualização.
 
 ### <a name="permissions"></a>Permissões
 
@@ -211,6 +233,24 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "/chats/{id}/messages",
+  "includeResourceData": false,
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
+### <a name="example-4-subscribe-to-message-in-a-chat-in-which-a-specific-user-is-mentioned"></a>Exemplo 4: assinar para receber mensagem em um chat no qual um usuário específico for mencionado
+
+Para obter notificações somente para mensagens em que um usuário específico foi mencionado, você pode especificar a ID do usuário (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` nesse exemplo) na consulta.
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/chats/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
   "includeResourceData": false,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secretClientState}"

@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "44895605"
 ---
-# <a name="planner-tasks-and-plans-api-overview"></a>Visão geral da API de planos e tarefas do Planner
+# <a name="planner-tasks-and-plans-api-overview"></a>Visão geral da API de tarefas e planos do Planner
 O Planner oferece uma maneira simples e visual para as equipes organizarem o trabalho. Os clientes podem usar o Planner para criar planos, organizar e atribuir tarefas, compartilhar o progresso e colaborar em conteúdo.  O Planner fornece várias experiências interativas, incluindo um quadro de tarefas, uma página de gráficos e uma visualização de horários, assim como integrações em todo o Microsoft 365.
 
 **Quadro de tarefas do Microsoft 365 Planner**
@@ -28,7 +28,7 @@ O Planner oferece um espaço compartilhado onde você pode criar uma equipe, [cr
 ### <a name="collaborate-across-microsoft-365"></a>Colabore no Microsoft 365
 O Planner se integra às experiências de colaboração no Microsoft 365. Além de clientes móveis e da Web do Planner, os usuários podem exibir e atualizar o planos e tarefas do Planner por meio do SharePoint e no Microsoft Teams.  
 
-O próprio Planner também é baseado no Microsoft Graph e no serviço de grupo do Microsoft 365. Os arquivos que você carrega e anexa às tarefas do Planner são armazenados no Microsoft Office SharePoint Online. Os comentários do Planner são baseados em conversas em grupo do Outlook.
+O próprio Planner também é baseado no Microsoft Graph e no serviço de grupo do Microsoft 365. Os arquivos que você carrega e anexa às tarefas do Planner são armazenados no SharePoint. Os comentários do Planner são baseados em conversas em grupo do Outlook.
 
 <!-- Add image
 Note: Put an image here showing the relationship between Planner and other things

@@ -1,6 +1,6 @@
 ---
 title: Visão geral da API de contatos pessoais do Outlook
-description: Os contatos do Outlook permitem que você armazene dados de contatos pessoais e fazem parte de um hub de mensagens do Outlook no Microsoft 365. Pelo Outlook, gerencie emails, agende reuniões, saiba mais sobre os usuários de uma organização, inicie conversas online, compartilhe arquivos e colabore em grupos.
+description: Os contatos do Outlook permitem que você armazene dados de contatos pessoais e fazem parte de um hub de mensagens do Outlook no Microsoft 365. Pelo Outlook, você pode gerenciar emails, agendar reuniões, saber mais sobre os usuários de uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
@@ -14,7 +14,7 @@ ms.locfileid: "44897166"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Visão geral da API de contatos pessoais do Outlook
 
-Os contatos do Outlook permitem que você armazene dados de contatos pessoais e fazem parte de um hub de mensagens do Outlook no Microsoft 365. Pelo Outlook, gerencie emails, agende reuniões, saiba mais sobre os usuários de uma organização, inicie conversas online, compartilhe arquivos e colabore em grupos.
+Os contatos do Outlook permitem que você armazene dados de contatos pessoais e fazem parte de um hub de mensagens do Outlook no Microsoft 365. Pelo Outlook, você pode gerenciar emails, agendar reuniões, saber mais sobre os usuários de uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
 
 ## <a name="why-integrate-with-outlook-personal-contacts"></a>Por que se integrar aos contatos pessoais do Outlook?
 

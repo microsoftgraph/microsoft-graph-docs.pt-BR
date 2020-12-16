@@ -1,5 +1,5 @@
 ---
-title: Usar marcas de notas nas páginas do OneNote
+title: Usar marcas de anotação nas páginas do OneNote
 description: " Notebooks empresariais no Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
@@ -15,7 +15,7 @@ ms.locfileid: "44895479"
 
 **Aplica-se a** notebooks do consumidor no OneDrive | Notebooks empresariais no Microsoft 365
 
-Use o atributo `data-tag` para adicionar e atualizar caixas de seleção, estrelas e outras marcas de notas integradas em uma página do OneNote, conforme mostrado na imagem a seguir.
+Use o atributo `data-tag` para adicionar e atualizar caixas de seleção, estrelas e outras marcas de anotação incorporadas em uma página do OneNote, conforme mostrado na imagem a seguir.
 
 ![Três marcas de anotação exibidas em uma página do OneNote.](images/note-tags-example.png)
 
@@ -279,7 +279,7 @@ Observe que o atributo `data-tag` definido no nível de lista é enviado para se
 
 O OneNote inclui as seguintes marcas de anotação incorporadas:
 
-![Todas as marcas de nota integradas.](images/note-tags-all.png)
+![Todas as marcas de anotação internas.](images/note-tags-all.png)
 
 Os valores que você pode atribuir ao atributo `data-tag` são mostrados na lista a seguir. As marcas personalizadas não são suportadas.
 
@@ -326,7 +326,7 @@ Os valores que você pode atribuir ao atributo `data-tag` são mostrados na list
 
 <a name="request-response-info"></a>
 
-## <a name="response-information"></a>Informação de réplica
+## <a name="response-information"></a>Informações de resposta
 
 O Microsoft Graph retornará as seguintes informações na resposta.
 

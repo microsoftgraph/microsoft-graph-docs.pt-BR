@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao atualizar [b2cAuthenti
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEmailPasswordAuthenticationEnabled|Booliano|O administrador de locatário pode configurar contas locais usando o email se o método de autenticação de email e senha estiver habilitado.|
-|isUserNameAuthenticationEnabled|Booleano|O administrador de locatários pode configurar contas locais usando o nome de usuário se o método de autenticação do nome de usuário e senha estiver habilitado.|
+|isUserNameAuthenticationEnabled|Booliano|O administrador de locatários pode configurar contas locais usando o nome de usuário se o método de autenticação do nome de usuário e senha estiver habilitado.|
 
 ## <a name="response"></a>Resposta
 

@@ -60,7 +60,7 @@ Isso é exibido no Microsoft Graph, como o `sender` (usuário realmente a enviou
 
 Um usuário pode conceder permissão para suas caixas de correio a outro usuário, [usando o Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926). Os administradores podem conceder permissão para qualquer lista de distribuição, grupo ou caixa de correio no [Centro de administração do Microsoft 365](/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide).
 
-#### <a name="send-as"></a>Enviar Como
+#### <a name="send-as"></a>Enviar como
 
 Com essa permissão, não há nenhuma indicação de que a mensagem foi enviada como um usuário diferente. As propriedades `sender` e `from` têm o mesmo valor.
 
@@ -102,7 +102,7 @@ Depois que a mensagem é enviada, pode ser salva em pastas de itens enviados do 
 - Se o aplicativo enviar usando o `/me` ponto de extremidade (ou `/users/{user-id}` onde a `user-id` corresponde ao usuário conectado), por padrão, a mensagem será salva na pasta Itens enviados de envio do usuário.
 - Se o aplicativo enviar usando o `/users/{user-id}` onde a `user-id` corresponde à de usuário, por padrão, a mensagem será salva na da pasta Itens enviados do usuário.
     > [!IMPORTANT]
-    > Para enviar dessa maneira, o usuário de envio deve ter a permissão de caixa de correio **acesso total** , além de uma permissão **enviar em nome** ou **enviar como**.
+    > Para enviar dessa maneira, o usuário de envio deve ter a permissão de caixa de correio **acesso total**, além de uma permissão **enviar em nome** ou **enviar como**.
 
 O comportamento padrão pode ser alterado por outros fatores externos:
 

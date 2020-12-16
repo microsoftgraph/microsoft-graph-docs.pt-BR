@@ -15,7 +15,7 @@ ms.locfileid: "44897453"
 
 **Aplica-se a** Notebooks de consumidores no OneDrive | Notebooks corporativos no Microsoft 365
 
-Você pode usar os elementos **img** , **object** e **iframe** para adicionar imagens, vídeos e arquivos à página do OneNote quando você [criar](onenote-create-page.md) ou [atualizar](onenote-update-page.md) a página. 
+Você pode usar os elementos **img**, **object** e **iframe** para adicionar imagens, vídeos e arquivos à página do OneNote quando você [criar](onenote-create-page.md) ou [atualizar](onenote-update-page.md) a página. 
 
 - Use **img** para renderizar uma imagem na página.
 - Use **iframe** para inserir um vídeo na página.
@@ -58,7 +58,7 @@ Use `object` com `data="name:file-block-name" data-attachment="file-name.file-ex
 
 #### <a name="image-attributes"></a>Atributos de imagem 
 
-Um elemento **img** pode incluir opcionalmente atributos **alt** , **height** e **width** e os atributos de estilo **max-width** e **max-height**.
+Um elemento **img** pode incluir opcionalmente atributos **alt**, **height** e **width** e os atributos de estilo **max-width** e **max-height**.
 
 #### <a name="image-media-types"></a>Tipos de mídia de imagem
 
@@ -466,9 +466,9 @@ Ao enviar a imagem e arquivo de dados, esteja ciente dessas limitações: <!--TO
 
 ## <a name="when-to-use-html-versus-data-render-src"></a>Quando usar HTML ou data-render-src 
 
-Para decidir entre colocar HTML diretamente na página do OneNote em vez de usar o atributo **data-render-src** , considere o seguinte:
+Para decidir entre colocar HTML diretamente na página do OneNote em vez de usar o atributo **data-render-src**, considere o seguinte:
 
-- Provavelmente, a melhor maneira de enviar HTML complexo para o mecanismo de renderização é por meio de **data-render-src** , em vez de tentar modificar o HTML para caber naquilo que o Microsoft Graph aceita. Isso também ocorre quando o HTML inclui rótulos sem suporte.
+- Provavelmente, a melhor maneira de enviar HTML complexo para o mecanismo de renderização é por meio de **data-render-src**, em vez de tentar modificar o HTML para caber naquilo que o Microsoft Graph aceita. Isso também ocorre quando o HTML inclui rótulos sem suporte.
 
 - Provavelmente, a melhor maneira de fazer a renderização de página com precisão para preservar o layout e a aparência da página é com o mecanismo de renderização por meio do **data-render-src**.
 

@@ -14,7 +14,7 @@ ms.locfileid: "44895521"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 
-O Outlook é um hub de comunicação de mensagens do Microsoft 365. Ele também permite gerenciar contatos, agendar reuniões, encontrar informações sobre os usuários de uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
+O Outlook é um hub de comunicação de mensagens do Microsoft 365. Além disso, ele permite gerenciar contatos, agendar reuniões, saber mais sobre os usuários de uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/L-gm25wusIQ]
 

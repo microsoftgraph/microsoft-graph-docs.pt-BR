@@ -14,7 +14,7 @@ ms.locfileid: "44892138"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft Bookings (versão prévia)
 
-O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer organização que forneça serviços mediante agendamento, como empresas de grande porte, oficinas de automóveis, salões de beleza e escritórios de advocacia, pode se beneficiar com o gerenciamento de agendamentos, e assim ter mais tempo para a tarefa mais importante que é expandir os negócios. O Microsoft Bookings está disponível para organizações empresariais e empresas que têm uma assinatura do Microsoft 365 Business Premium.
+O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer organização que forneça serviços mediante agendamento, como empresas de grande porte, oficinas de automóveis, salões de beleza e escritórios de advocacia, pode se beneficiar com o gerenciamento de seus agendamentos, e assim liberar tempo para a tarefa mais importante de expandir os negócios. O Microsoft Bookings está disponível para organizações empresariais e empresas que têm uma assinatura do Microsoft 365 Business Premium.
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Por que se integrar ao Microsoft Bookings usando o Microsoft Graph?
 
@@ -43,5 +43,5 @@ Confira [API do Microsoft Bookings no Microsoft Graph beta](/graph/api/resources
 Saiba mais sobre:
 
 - [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) e outros [aplicativos para empresas do Microsoft 365](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
-- [Usar a API do Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) no Microsoft Graph.
+- [Usar a API do Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) do Microsoft Graph.
 
