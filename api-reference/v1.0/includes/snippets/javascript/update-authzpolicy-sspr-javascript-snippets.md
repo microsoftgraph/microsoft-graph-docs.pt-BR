@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c4b12ea09748e73ce2f7801c84d400d66613b1e4
+ms.openlocfilehash: c71a0b890d4d132c800c8a8172b07d557c2ae315
 ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "49692801"
+ms.locfileid: "49691380"
 ---
 ```javascript
 
@@ -15,7 +15,11 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/installedApps/{id}')
-    .get();
+const authorizationPolicy = {
+   allowedToUseSSPR:true
+};
+
+let res = await client.api('/policies/authorizationPolicy')
+    .update(authorizationPolicy);
 
 ```

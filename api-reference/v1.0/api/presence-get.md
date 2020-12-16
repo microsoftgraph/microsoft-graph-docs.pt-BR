@@ -5,12 +5,12 @@ author: elvinyang-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 591c388418ddb60fad1d78a04de79cb65a884630
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: f0b807775de40758514e5a839a3af1b1d3a20a01
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49663932"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690553"
 ---
 # <a name="get-presence"></a>Obter presença
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Obtenha as informações de [presença](../resources/presence.md) de um usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Presence.Read, Presence.Read.All      |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                        |
-| Aplicativo                            | Sem suporte.                        |
+| Application                            | Sem suporte.                        |
 
 > **Observação:** A taxa máxima de solicitações para esta API são 1500 solicitações de API em um período de 30 segundos, por aplicativo por locatário.
 
@@ -175,6 +175,8 @@ O exemplo a seguir mostra como obter as informações de presença de outro usu�
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-user-presences"
@@ -183,6 +185,24 @@ O exemplo a seguir mostra como obter as informações de presença de outro usu�
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presences-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presences-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
