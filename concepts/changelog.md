@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 3614d466589f57b64af7a730387de13bab33f51e
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: de156c1109384577978acacc8a69f0de8bea8982
+ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617091"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49664090"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -22,7 +22,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionou [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta)aos recursos com suporte para [notificações de alterações](/graph/webhooks).|
+| Adição | beta | Adicionou [todoTask](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true)aos recursos com suporte para [notificações de alterações](/graph/webhooks).|
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -39,6 +39,10 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 |:---|:---|:---|
+| Alteração | beta | Alterada a propriedade **floorNumber** (Edm.Int) no recurso [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) para **piso** (Edm.String). |
+| Alteração | beta | Alterada a propriedade **roomNumber** (Edm.Int) no recurso [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) para **roomName** (Edm.String). |
+| Alteração | beta | Tipo alterado de relacionamento allowedUsers no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta). |
+| Alteração | beta | Tipo alterado de relação allowedGroups no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta). |
 | Alteração | beta | Tipos de enumeração atualizados no recurso [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values). |
 
 ### <a name="identity-and-access"></a>Identidade e acesso
@@ -72,6 +76,11 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionado o método [getAllMessages](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true) à coleção de recursos de [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionado [Listar aplicativos no chat](/graph/api/chat-list-installedapps?view=graph-rest-beta&preserve-view=true), [Obter aplicativos instalados no chat](/graph/api/chat-get-installedapps?view=graph-rest-beta&preserve-view=true), [Adicionar aplicativo ao chat](/graph/api/chat-post-installedapps?view=graph-rest-beta&preserve-view=true), [Desinstalar aplicativo do chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta&preserve-view=true), [Atualizar aplicativo instalado nos métodos de chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta&preserve-view=true) para o tipo de recurso de [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionadas guias de [Lista no chat](/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Obter guia no chat](/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Adicionar guia ao chat](/graph/api/chat-post-tab?view=graph-rest-beta&preserve-view=true), [Remover guia do chat](/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), [Atualizar guia nos métodos de chat](/graph/api/chat-patch-tabs?view=graph-rest-beta&preserve-view=true) para o tipo de recurso de [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionado o método [add](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true) à coleção de recursos [talksMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | Adicionado o recurso [actionResultPart](/graph/api/resources/actionresultpart?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | Adicionado o recurso [aadUserConversationMemberResult](/graph/api/resources/aaduserconversationmemberresult?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | Adicionado o recurso [publicInnerError](/graph/api/resources/publicinnererror?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | Adicionado o recurso [publicErrorDetail](/graph/api/resources/publicerrordetail?view=graph-rest-beta&preserve-view=true).|
 
 ## <a name="november-2020"></a>Novembro de 2020
 
@@ -175,8 +184,8 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição | v1.0 | Adicionado o suporte para permissões de [consentimento específico de recurso](https://aka.ms/teams-rsc) (RSC) para APIs v1.0. |
 | Adição | v1.0 | Adicionadas as [APIs de mensagem de canal de leitura](/graph/api/resources/chatmessage). |
-| Adição | Beta | Adicionados os seguintes métodos ao recurso [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource: [Listar membros do canal](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Obter membro do canal](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Adicionar membro do canal](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true),  [Atualizar a função do membro do canal](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remover membro do canal](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
-| Adição | v1.0 | Adicionados os seguintes métodos ao recurso [canal](/graph/api/resources/channel) resource: [Listar membros do canal](/graph/api/channel-list-members), [Obter membro do canal](/graph/api/channel-get-members), [Adicionar membro do canal](/graph/api/channel-post-members),  [Atualizar a função do membro do canal](/graph/api/channel-update-members), [Remover membro do canal](/graph/api/channel-delete-members).|
+| Adição | Beta | Adicionados os seguintes métodos ao recurso do [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true): [Listar membros do canal](/graph/api/channel-list-members?view=graph-rest-beta&preserve-view=true), [Obter membro do canal](/graph/api/channel-get-members?view=graph-rest-beta&preserve-view=true), [Criar membro do canal](/graph/api/channel-post-members?view=graph-rest-beta&preserve-view=true), [Atualizar a função do membro do canal](/graph/api/channel-update-members?view=graph-rest-beta&preserve-view=true), [Remover membro do canal](/graph/api/channel-delete-members?view=graph-rest-beta&preserve-view=true).|
+| Adição | v1.0 | Adicionados os seguintes métodos ao recurso do [canal](/graph/api/resources/channel): [Listar membros do canal](/graph/api/channel-list-members), [Obter membro do canal](/graph/api/channel-get-members), [Criar membro do canal](/graph/api/channel-post-members), [Atualizar a função do membro do canal](/graph/api/channel-update-members), [Remover membro do canal](/graph/api/channel-delete-members).|
 
 
 ## <a name="october-2020"></a>Outubro de 2020
@@ -3479,8 +3488,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta&preserve-view=true) e os seguintes métodos: <br> [List](/graph/api/bookingcurrency-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
 | Adição        | Beta          | Foi adicionada a entidade [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-services?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-services?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingservice-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingservice-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta&preserve-view=true).|
