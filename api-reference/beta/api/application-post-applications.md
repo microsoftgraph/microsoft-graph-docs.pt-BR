@@ -46,7 +46,7 @@ POST /applications
 | Content-Type   | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md). O corpo da solicitação deve conter **displayName** , que é uma propriedade obrigatória.
+No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md). O corpo da solicitação deve conter **displayName**, que é uma propriedade obrigatória.
 
 ## <a name="response"></a>Resposta
 

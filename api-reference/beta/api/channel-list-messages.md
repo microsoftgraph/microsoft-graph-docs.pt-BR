@@ -1,6 +1,6 @@
 ---
 title: Listar mensagens do canal
-description: 'Recupere a lista de mensagens (sem as respostas) em um canal de uma equipe. Para obter as respostas de uma mensagem, chame a lista de respostas de mensagens ou obter a API de resposta de mensagem. '
+description: 'Recupere a lista de mensagens (sem as respostas) em um canal de equipe. Para obter as respostas de uma mensagem, chame as respostas da mensagem da lista ou a API de resposta da mensagem recebida. '
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 Recupere a lista de [mensagens](../resources/chatmessage.md) (sem as respostas) em um [canal](../resources/channel.md) de uma [equipe](../resources/team.md). 
 
-Para obter as respostas para uma mensagem, chame a [lista de respostas de mensagens](channel-list-messagereplies.md) ou a API [obter resposta de mensagem](channel-get-messagereply.md). 
+Para obter as respostas de uma mensagem, chame as [respostas de listar mensagens](channel-list-messagereplies.md) ou a API de [respostas de obter mensagens](channel-get-messagereply.md). 
 
-> **Observação** : Esta API oferece suporte à assinatura para alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite que os chamadores assinem e obtenham as alterações em tempo real. Para obter detalhes, confira [Obter notificações de mensagens](/graph/teams-changenotifications-chatmessage).
+> **Observação**: Esta API oferece suporte à assinatura para alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite aos chamadores assinar e obter alterações em tempo real. Para obter detalhes, confira [obter notificações de](/graph/teams-changenotifications-chatmessage)de mensagens.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).

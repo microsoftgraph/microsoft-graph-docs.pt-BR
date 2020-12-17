@@ -1,5 +1,5 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
 ms.openlocfilehash: 06faa69f714caa04de4eed3e4111ea2339f76381
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: HT

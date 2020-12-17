@@ -24,7 +24,7 @@ As funções do aplicativo atribuídas às entidades de serviço também são co
 
 Para conceder uma atribuição de função de aplicativo, você precisará de três identificadores:
 
-- `principalId`: A `id` do **usuário** , **grupo** ou cliente **servicePrincipal** ao qual você está atribuindo a função de aplicativo.
+- `principalId`: A `id` do **usuário**, **grupo** ou cliente **servicePrincipal** ao qual você está atribuindo a função de aplicativo.
 - `resourceId`: A `id` do recurso **servicePrincipal** que definiu a função do aplicativo.
 - `appRoleId`: A `id` do **appRole** (definida na entidade de serviço de recurso) para atribuir a um usuário, grupo ou entidade de serviço.
 

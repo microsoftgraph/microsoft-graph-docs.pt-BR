@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Criar um novo objeto do [servicePrincipal](../resources/serviceprincipal.md).
 
 > [!IMPORTANT]
-> Não há suporte para [**passwordCredential**](../resources/passwordcredential.md) ao criar servicePrincipals. Use o método [addPassword](serviceprincipal-addpassword.md) para adicionar senhas a um servicePrincipal.
+> Não há suporte para a adição de [**passwordCredential**](../resources/passwordcredential.md) durante a criação de servicePrincipals. Use o método [addpassword](serviceprincipal-addpassword.md) para adicionar senhas a um servicePrincipal.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,7 +46,7 @@ POST /servicePrincipals
 | Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [serviceprincipal](../resources/serviceprincipal.md). O corpo da solicitação devem conter **appId**.
+No corpo da solicitação, forneça uma representação JSON de um objeto do [servicePrincipal](../resources/serviceprincipal.md). O corpo da solicitação deve conter  **appId**.
 
 ## <a name="response"></a>Resposta
 

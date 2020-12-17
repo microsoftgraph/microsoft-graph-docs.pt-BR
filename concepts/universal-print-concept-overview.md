@@ -41,7 +41,7 @@ Siga estas etapas para enviar trabalhos de impressão para o printerShare:
 
 É uma tarefa complexa acompanhar as impressoras de uma organização, suas configurações e uso. A API de Impressão Universal permite a integração em todas as três áreas.
 
-* **Fique de olho no estado, configurações e disponibilidade da impressora** , usando a [Lista de impressoras](/graph/api/print-list-printers?view=graph-rest-beta) e o [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta).
+* **Fique de olho no estado, configurações e disponibilidade da impressora**, usando a [Lista de impressoras](/graph/api/print-list-printers?view=graph-rest-beta) e o [printerStatus](/graph/api/resources/printerstatus?view=graph-rest-beta).
 
 * **Veja quem está usando as impressoras e o quanto elas estão imprimindo** usando as APIs de relatórios:
   * [Listar dailyPrintUsageSummariesByUser](/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta)

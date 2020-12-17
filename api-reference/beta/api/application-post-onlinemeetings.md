@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Crie uma reunião online em nome de um usuário usando a ID de objeto (OID) no token de usuário (permissão delegada) ou solicite o caminho (permissão de aplicativo).
 
-> **Observação** : a reunião não é exibida no calendário do usuário.
+> **Observação**: a reunião não é exibida no calendário do usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -167,7 +167,7 @@ Content-Type: application/json
 ### <a name="example-2-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Exemplo 2: Crie uma reunião online em um canal do Microsoft Teams com um token de usuário
 
 #### <a name="request"></a>Solicitação
->**Observação:** : a ID de objeto do token do usuário aprovada deve ser um membro do canal representado pelo threadid no conteúdo.
+>**Observação:**: a ID de objeto do token do usuário aprovada deve ser um membro do canal representado pelo threadid no conteúdo.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings

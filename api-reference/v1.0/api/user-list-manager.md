@@ -16,7 +16,7 @@ ms.locfileid: "49265917"
 
 Namespace: microsoft.graph
 
-Retorna o usuário ou contato organizacional designado como gerente do usuário. Opcionalmente, você pode expandir a cadeia do gerente até o nó raiz.
+Retorna o usuário ou o contato organizacional atribuído como gerente do usuário. Opcionalmente, você pode expandir a cadeia do gerente ao nó raiz.
 
 ## <a name="permissions"></a>Permissões
 
@@ -64,7 +64,7 @@ Se sua solicitação incluir o parâmetro `$expand=manager($levels=n)` para obte
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| ConsistencyLevel | eventual. Obrigatório quando a solicitação inclui o parâmetro `$expand=manager($levels=max)`. |
+| ConsistencyLevel | eventualmente. Obrigatório quando a solicitação inclui o parâmetro `$expand=manager($levels=max)`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação**: o objeto de resposta mostrado aqui pode ser encurtado para fins de legibilidade.
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -150,7 +150,7 @@ ConsistencyLevel: eventual
 
 Este é um exemplo de resposta. Os gerentes transitivos são exibidos hierarquicamente.
 
->**Observação**: o objeto de resposta mostrado aqui pode ser encurtado para fins de legibilidade.
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

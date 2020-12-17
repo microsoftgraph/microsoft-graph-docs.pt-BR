@@ -106,7 +106,7 @@ Content-Length: 110
 ---
 
 
-Nesse exemplo, `{id}` e `{principalId-value}` seriam os `id` da entidade de serviço de cliente atribuída e `{resourceId}` seria o `id` da entidade de serviço de recurso (a API).
+Nesse exemplo, a `{id}` e o `{principalId-value}` seriam as `id` da entidade de serviço de cliente atribuída e o `{resourceId}` seria a `id` da entidade de serviço de recurso (a API).
 
 ### <a name="response"></a>Resposta
 
