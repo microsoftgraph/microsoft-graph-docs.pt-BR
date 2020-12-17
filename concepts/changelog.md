@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: de156c1109384577978acacc8a69f0de8bea8982
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
+ms.openlocfilehash: 439359b5b0824ac3ad77a30576cd336cf4dbefb8
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664090"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675937"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -44,6 +44,14 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Alteração | beta | Tipo alterado de relacionamento allowedUsers no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta). |
 | Alteração | beta | Tipo alterado de relação allowedGroups no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta). |
 | Alteração | beta | Tipos de enumeração atualizados no recurso [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values). |
+
+### <a name="education"></a>Educação
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionado a propriedade opcional **notificationChannelUrl** para recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) | 
+| Adição | beta | Adicionado a propriedade opcional **addedStudentAction** para recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) |
+| Adição | beta | Adicionado o tipo de enumeração **educationAddedStudentAction** |
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 
