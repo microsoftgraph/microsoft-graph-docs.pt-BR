@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c2e0d6fbf4e6cb48cf311b7426f09c854320f4cc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 454422c09649b97ffbab96c313201ebef0cad23e
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953583"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705843"
 ---
 # <a name="list-b2cidentityuserflows"></a>Listar b2cIdentityUserFlows
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows
 
 ---
 
-
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
@@ -124,12 +123,16 @@ Content-type: application/json
       {
           "id": "B2C_1_CustomerSignUp",
           "userFlowType": "signUp",
-          "userFlowTypeVersion": 1
+          "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": false,
+          "defaultLanguageTag": null
       },
       {
           "id": "B2C_1_CustomerSignIn",
           "userFlowType": "signIn",
-          "userFlowTypeVersion": 1
+          "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": true,
+          "defaultLanguageTag": "en"
       },
     ]
 }
@@ -195,6 +198,8 @@ Content-type: application/json
           "id": "B2C_1_CustomerSignUp",
           "userFlowType": "signUp",
           "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": false,
+          "defaultLanguageTag": null,
           "identityProviders": [
               {
                 "id": "Facebook-OAuth",
@@ -209,6 +214,8 @@ Content-type: application/json
           "id": "B2C_1_CustomerSignIn",
           "userFlowType": "signIn",
           "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": true,
+          "defaultLanguageTag": "en",
           "identityProviders": [
               {
                 "id": "Facebook-OAuth",

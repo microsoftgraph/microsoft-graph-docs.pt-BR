@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: bfaee36a21ee1f44781ea8ae7fed84b205ac90b4
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: b942cfe5c4a1ca08c201a2f51f9178d5db592413
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000634"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705829"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [bate-papo](chat.md). A mensagem pode ser uma mensagem raiz ou parte de um thread definido pela propriedade **replyToId** na mensagem.
 
-> **Observação** : esse recurso oferece suporte à assinatura de alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite que os chamadores assinem e obtenham alterações em tempo real. Para obter detalhes, consulte [Get Notifications for messages](/graph/teams-changenotifications-chatMessage).
+> **Observação**: esse recurso oferece suporte à assinatura de alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite aos chamadores assinar e obter alterações em tempo real. Para obter detalhes, confira [obter notificações de](/graph/teams-changenotifications-chatMessage)de mensagens.
 
 ## <a name="methods"></a>Métodos
 
@@ -91,6 +91,7 @@ Veja a seguir uma representação JSON do recurso.
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessage"
 }-->
+
 
 ```json
 {

@@ -1,16 +1,16 @@
 ---
-title: CloudPcOnPremisesConnection-RunHealthChecks
+title: 'CloudPcOnPremisesConnection: runHealthChecks'
 description: Executar verificações de integridade na conexão local do PC de nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 949d9d01d7706f878b19702f811b4838f4e6bfe8
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: b207be1da6585adcabb76c8f51f048db1e159d77
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563287"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705836"
 ---
 # <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection: runHealthChecks
 
@@ -24,13 +24,13 @@ Isso disparará uma nova verificação de integridade para este objeto [cloudPcO
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

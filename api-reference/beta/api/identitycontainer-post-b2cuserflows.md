@@ -5,30 +5,30 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1b0a73a42948871eeae4cd4b31bc993209b7eeaa
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 98d603632e724817cec2d4c97e06389608cc3f10
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581121"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705867"
 ---
 # <a name="create-b2cidentityuserflow"></a>Criar b2cIdentityUserFlow
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar um novo objeto [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow.ReadWrite.All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -57,8 +57,10 @@ No corpo da solicitação, forneça uma representação JSON de um [b2cIdentityU
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|String|Obrigatório. O nome do fluxo de usuário. O nome será pré-instalado com `B2C_1` após a criação.|
-|userFlowType|String|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowType|Cadeia de caracteres|Obrigatório. O tipo de fluxo de usuário que você está criando. Os valores com suporte para **userFlowType** são:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Flutuação|Obrigatório. A versão do fluxo de usuário.|
+|isLanguageCustomizationEnabled|Boolean|Opcional. Determina se a personalização de idioma está habilitada no fluxo de usuário do Azure AD B2C. A personalização de idioma não é habilitada por padrão para os fluxos de usuário do Azure AD B2C.|
+|defaultLanguageTag|String|Opcional.  Especifica o idioma padrão do b2cIdentityUserFlow usado quando nenhuma `ui_locale` marca é especificada na solicitação. Este campo é compatível com [RFC 5646](https://tools.ietf.org/html/rfc5646) .|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Opcional. Os provedores de identidade que você deseja incluir no fluxo do usuário.|
 
 ## <a name="response"></a>Resposta
@@ -72,7 +74,6 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -92,6 +93,7 @@ Content-length: 154
     "userFlowTypeVersion": 3
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -109,7 +111,6 @@ Content-length: 154
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>Resposta
 
@@ -131,7 +132,9 @@ Content-type: application/json
 {
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 3
+    "userFlowTypeVersion": 3,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": "en"
 }
 ```
 
@@ -140,7 +143,6 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -206,7 +208,9 @@ Content-type: application/json
 {
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 3
+    "userFlowTypeVersion": 3,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": "en"
 }
 ```
 
@@ -221,5 +225,3 @@ Content-type: application/json
     "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
   ]
 }-->
-
-
