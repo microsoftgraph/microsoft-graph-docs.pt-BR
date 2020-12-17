@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 66a15a25f839092ff5d07f70aac735fa04fb362c
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: a25fe74057a7f224a947ef37956b58986a4601bf
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659496"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706052"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -61,6 +61,7 @@ Namespace: microsoft.graph
 |webUrl|String|Um hiperlink que navegará até o canal no Microsoft Teams. Essa é a URL que você recebe ao clicar com o botão direito do mouse em um canal Microsoft Teams e selecionar Obter o link para o canal. Essa URL deve ser tratada como um blob opaco e não analisado. Somente leitura.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Padrão: standard.|
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de criação do canal.|
+|moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Configurações para configurar a moderação do canal para controlar quem pode iniciar novas postagens e responder a postagens no canal.|
 
 ### <a name="instance-attributes"></a>Atributos de instância
 
@@ -106,7 +107,9 @@ Veja a seguir uma representação JSON do recurso.
   "email": "string",
   "webUrl": "string",
   "membershipType": "channelMembershipType",
-  "createdDateTime": "string (timestamp)"
+  "createdDateTime": "string (timestamp)",
+  "moderationSettings": "channelModerationSettings"
+    
 }
 ```
 

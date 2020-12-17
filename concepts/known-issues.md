@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: c55f4b14d111c2910b8f0271b6f43e128c5511c8
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 87654da1f8e995d7f8c893ad2c0ff54f7e35b0a0
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660097"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706007"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -334,6 +334,9 @@ Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-al
 
 ### <a name="unable-to-filter-team-members-by-roles"></a>Não é possível filtrar os membros da equipe por funções
 A consulta de filtro para obter membros de uma equipe com base em suas funções `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')`pode não funcionar. O servidor pode responder com uma.`BAD REQUEST`
+
+### <a name="missing-tenantid-for-chat-members"></a>TenantId ausente para membros de chat
+Em determinadas instâncias, a `tenantId` propriedade para os membros individuais de um bate-papo pode não ser preenchida em uma solicitação de `GET /chats/chat-id/members` ou `GET /chats/chat-id/members/membership-id`.
 
 ## <a name="users"></a>Usuários
 

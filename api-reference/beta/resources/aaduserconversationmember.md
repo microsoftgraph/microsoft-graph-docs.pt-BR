@@ -5,12 +5,12 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3828871d1e5edaae067b7c9635908f061282ca1f
-ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
+ms.openlocfilehash: 7f19c5a2b711ab6c39069364c641066f1d9c6dbf
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753371"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705965"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>tipo de recurso aadUserConversationMember
 
@@ -24,21 +24,32 @@ Representa um usuário do Azure Active Directory em um [chat](chat.md) ou [canal
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar membros](../api/conversationmember-list.md) | coleção [conversationmember](conversationmember.md) | Ver a lista de todos os usuários no chat ou canal.|
-|[Obter membro](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Obter um único usuário no chat ou canal.|
-|[Adicionar membro](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Adicionar um membro a um canal.|
-|[Atualizar membro](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Atualizar um membro no canal.|
-|[Excluir membro](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Excluir um membro do canal.|
+|[Listar membros de equipe](../api/team-list-members.md)|coleção [conversationMember](../resources/conversationmember.md)|Obtenha a lista de membros nessa equipe.|
+|[Obter membro da equipe](../api/team-get-members.md) | [conversationMember](conversationmember.md)coleção | Obtenha um membro na equipe.|
+|[Adicionar membro à equipe](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Adicione um novo membro à equipe.|
+|[Adicionar membros em massa à equipe.](../api/conversationmembers-add.md)|coleção[actionResultPart](../resources/actionresultpart.md)|Adicione vários membros à equipe em uma única solicitação.|
+|[Atualizar a função do membro](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Alterar um membro para um proprietário ou voltar para um membro regular.|
+|[Remover membro da equipe](../api/team-delete-members.md)|Nenhum|Remova um membro existente da equipe.|
+|[Listar membros do canal](../api/channel-list-members.md) | coleção [conversationMember](conversationmember.md) | Obter a lista de todos os membros em um canal.|
+|[Obter canal do membro](../api/channel-get-members.md) | coleção [conversationMember](conversationmember.md) | Obtenha um membro em um canal.|
+|[Criar membro do canal](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Adicionar um membro a um canal. Suportado só para o`channel`com MembershipType de.`private`|
+|[Atualizar a função do membro do canal](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Atualize as propriedades de um membro do canal. Suportado só para o canal com MembershipType de`private`.|
+|[Remover membro do canal](../api/channel-delete-members.md) | Nenhum | Exclua um membro de um canal. Suportado só com o `channelType` de `private`.|
+|[Listar membros do bate-papo](../api/chat-list-members.md) | coleção [conversationMember](conversationmember.md) | Obter a lista de todos os membros em um chat.|
+|[Obter membro do bate-papo](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Obtenha um membro em um chat.|
+|[Adicionar membro do bate-papo](../api/chat-post-members.md) | Cabeçalho de local | Adicionar um membro a um bate-papo.| 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. ID exclusivo do usuário.|
-|displayName| cadeia de caracteres | O nome de exibição do usuário. |
-|funções| coleção de cadeias de caracteres | As funções desse usuário. |
-|userId| cadeia de caracteres | O guid do usuário. |
-|email| cadeia de caracteres  | O endereço de email do usuário. |
+|id| String | Somente leitura. ID exclusivo do usuário.|
+|displayName| Cadeia de caracteres | O nome de exibição do usuário. |
+|funções| Coleção de cadeias de caracteres | As funções desse usuário. |
+|userId| Cadeia de caracteres | O GUID do usuário. |
+|email| Cadeia de caracteres  | O endereço de email do usuário. |
+|tenantId| cadeia de caracteres  | TenantId para o qual o usuário do Azure AD pertence. |
+|visibleHistoryStartDateTime| DateTimeOffset  | O carimbo de data/hora indicando quanto o histórico de uma conversa é compartilhado com o membro da conversa. Essa propriedade é configurável somente para os membros de um bate-papo.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -46,17 +57,24 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.aadUserConversationMember"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.aadUserConversationMember",
+  "baseType": "microsoft.graph.conversationMember",
+  "openType": false
+}
+-->
+``` json
 {
-  "id": "string (identifier)",
-  "displayName" : "string",
-  "roles" : ["string"],
-  "userId" : "string",
-  "email" : "string"
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "String (identifier)",
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)",
+  "userId": "String",
+  "email": "String",
+  "tenantId": "String"
 }
 ```
 
@@ -72,5 +90,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-
