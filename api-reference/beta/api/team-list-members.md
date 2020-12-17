@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4f2ef0fb65fea23451da13b355ac1aa194554f5a
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 1efcb09962fc8b5342e6d83294347b9b84653058
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690815"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706133"
 ---
 # <a name="list-members-of-team"></a>Listar membros de equipe
 Namespace: microsoft.graph
@@ -286,7 +286,7 @@ Content-Type: application/json
 O exemplo a seguir mostra uma solicitação para localizar todos os membros que possuem a função de *proprietário* anexada a eles.
 
 > [!NOTE]
-> Há alguns problemas conhecidos com essa funcionalidade. Para saber mais, confira [problemas conhecidos](/graph/known-issues.md#unable-to-filter-team-members-by-roles).
+> Há alguns problemas conhecidos com essa funcionalidade. Para saber mais, confira [problemas conhecidos](/graph/known-issues#unable-to-filter-team-members-by-roles).
 
 #### <a name="request"></a>Solicitação
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 18a2969502be68b1ea63d208e5d8fb2f225047f3
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: 5c5cbe43c75e5f0ac0ea552c380b294c7725907e
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082213"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705951"
 ---
 # <a name="azure-ad-access-reviews-group-memberships"></a>Revisões do Azure AD Access (associações de grupo)
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->Esta documentação se aplica às revisões de acesso de grupos do Microsoft 365. Para obter revisões de acesso para todos os outros tipos de recurso, consulte [Access Reviews (All resources)](accessreviews-root.md).
+>Esta documentação se aplica às revisões de acesso de associações de grupo. Para obter revisões de acesso em todos os outros tipos de recurso suportados, consulte [Access Reviews (All resources)](accessreviews-root.md).
 >
 >Atualmente, essa API só dá suporte a revisões de acesso de associações de grupo.
 
@@ -38,7 +38,7 @@ Há também um recurso relacionado para os clientes revisar e certificar as atri
 Observe que o recurso de revisões de acesso, incluindo a API, está incluído no Azure AD Premium P2.  O locatário em que uma revisão de acesso está sendo criada deve ter uma assinatura válida adquirida ou de avaliação do Azure AD Premium P2 ou EMS e5.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados à revisão do Access.
 
@@ -64,7 +64,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 As funções de diretório a seguir são necessárias para um usuário de chamada gerenciar revisões do Access. Observe que, no momento, há suporte apenas para revisões de acesso em grupos por meio das APIs do Microsoft Graph.
 
-| Operation | Permissões de aplicativos | Função de diretório necessária do usuário de chamada |
+| Operação | Permissões de aplicativos | Função de diretório necessária do usuário de chamada |
 |:------------------|:------------|:--------------------------------------------|
 | Ler | AccessReview. Read. All ou AccessReview. ReadWrite. All | Administrador global, leitor global, administrador de segurança, leitor de segurança ou administrador de usuários |
 | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador global ou administrador de usuário |

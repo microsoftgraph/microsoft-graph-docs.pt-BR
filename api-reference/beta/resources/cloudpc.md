@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d1109ceb81f741cefa9b26662bc1c8c5de8a8329
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 481bcae691632685cafab00a4b7e44addb1ad0cd
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563825"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706077"
 ---
 # <a name="cloudpc-resource-type"></a>tipo de recurso cloudPC
 
@@ -34,17 +34,17 @@ Representa uma área de trabalho virtual gerenciada em nuvem.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do PC de nuvem. Somente leitura.|
-|displayName|String|O nome de exibição do computador de nuvem.|
-|imageDisplayName|String|Nome da imagem do sistema operacional que está no computador de nuvem.|
-|managedDeviceId|String|A ID de dispositivo do Intune do PC na nuvem.|
+|id|Cadeia de caracteres|Identificador exclusivo do PC de nuvem. Somente leitura.|
+|displayName|Cadeia de caracteres|O nome de exibição do computador de nuvem.|
+|imageDisplayName|Cadeia de caracteres|Nome da imagem do sistema operacional que está no computador de nuvem.|
+|managedDeviceId|Cadeia de caracteres|A ID de dispositivo do Intune do PC na nuvem.|
 |managedDeviceName|String|O nome do dispositivo do Intune no Cloud PC.|
-|provisioningPolicyId|String|A ID da política de provisionamento do PC da nuvem.|
-|onplanid|String|A ID do plano de serviço do computador de nuvem.|
+|provisioningPolicyId|Cadeia de caracteres|A ID da política de provisionamento do PC da nuvem.|
+|onplanid|Cadeia de caracteres|A ID do plano de serviço do computador de nuvem.|
 |onplanname|Cadeia de caracteres|O nome do plano de serviço do computador da nuvem.|
-|status|cloudPcStatus|Status do PC de nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `upgradeFailed`, `provisionFailed`, `deprovisionFailed`, `reprovisionFailed`.|
+|status|cloudPcStatus|Status do PC de nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Os detalhes do status do PC de nuvem.|
-|userPrincipalName|String|O nome principal do usuário (UPN) do usuário atribuído ao computador da nuvem.|
+|userPrincipalName|Cadeia de caracteres|O nome principal do usuário (UPN) do usuário atribuído ao computador da nuvem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação do computador da nuvem. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
 
 ## <a name="relationships"></a>Relações

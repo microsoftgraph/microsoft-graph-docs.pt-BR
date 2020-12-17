@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1dc30208652af0989ab0b6bf0b35ebfdd50bc65d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5b9308111bdad2482b71339333822d7878d3187f
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221825"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705706"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Criar accessReviewScheduleDefinition
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo                            | AccessReview.ReadWrite.All |
 
 O usuário conectado também deve estar em uma função de diretório que permite que eles criem uma revisão do Access.  Para obter mais detalhes, consulte a função e os requisitos de permissão para [revisões do Access](../resources/accessreviewsv2-root.md).
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
-| displayName | String | Nome da série de revisão do Access. Obrigatório.|
+| displayName | Cadeia de caracteres | Nome da série de revisão do Access. Obrigatório.|
 | descriptionForAdmins | string | Contexto da revisão fornecida aos administradores. Obrigatório. |
   descriptionForReviewers | string | Contexto da revisão fornecida aos revisores. Obrigatório. |
 | escopo | [accessReviewScope](../resources/accessreviewscope.md) | Define o escopo dos usuários revisados em um grupo. Consulte  [accessReviewScope](../resources/accessreviewscheduledefinition.md). Obrigatório.| 
@@ -76,7 +76,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [accessRe
   "name": "create_accessReviewScheduleDefinition"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/accessReviews
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
 
 {

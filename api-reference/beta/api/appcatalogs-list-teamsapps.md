@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b31030c2810e8f2641ea7a437c84612d22180345
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: b8277ebfde1d0928eeb615ed34229b3e39cadc70
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689296"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705720"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -24,14 +24,14 @@ Isso inclui os aplicativos do Microsoft Teams Store, bem como os aplicativos do 
 > [!NOTE]
 > O `id` de um recurso **teamsApp** é gerado pelo servidor e não é o mesmo que o `id` especificado em um manifesto de aplicativo do teams. O `id` fornecido pelo desenvolvedor como parte do manifesto do aplicativo Teams está marcado como o `externalId` no recurso **teamsApp** .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | AppCatalog. Read. All, AppCatalog. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte                       |
+| Delegado (conta corporativa ou de estudante)     | AppCatalog. Submit, AppCatalog. Read. All, AppCatalog. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -192,7 +192,7 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Exemplo 3: localizar o aplicativo com base na ID de manifesto do aplicativo Teams.
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Exemplo 3: localizar o aplicativo com base na ID de manifesto do aplicativo Teams
 
 O exemplo a seguir lista os aplicativos que correspondem ao ' ID ' especificado no manifesto do aplicativo Teams. No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
@@ -264,7 +264,7 @@ O exemplo a seguir lista os aplicativos com uma determinada ID e expande **appDe
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_teamsapp_expand_appdefinitions"
+  "name": "list_teamsapp_with_filter_expand_appdefinitions"
 }-->
 
 ```msgraph-interactive
@@ -294,7 +294,7 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df
 
 <!-- {
   "blockType": "response",
-  "name": "list_teamsapp_expand_appdefinitions",
+  "name": "list_teamsapp_with_filter_expand_appdefinitions",
   "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true,
   "isCollection": true
@@ -327,6 +327,116 @@ Content-Type: application/json
   ]
 }
 ```
+
+### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Exemplo 5: listar os detalhes apenas dos aplicativos no catálogo que contêm um bot
+
+O exemplo a seguir lista apenas os aplicativos no catálogo que contenham um bot.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_with_bots"
+}-->
+
+```http
+GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
+```
+
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_with_bots",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(bot()))",
+    "value": [
+        {
+            "id": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
+            "externalId": "3CAB7543-216D-47C6-986C-6247670F4663",
+            "displayName": "Ducks-3",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions(bot())",
+            "appDefinitions": [
+                {
+                    "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
+                    "id": "OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ=",
+                    "teamsAppId": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
+                    "azureADAppId": null,
+                    "displayName": "Ducks-3",
+                    "version": "1.0.9",
+                    "requiredResourceSpecificApplicationPermissions": [],
+                    "publishingState": "rejected",
+                    "shortdescription": "quaerat quasi magnam. slight change. 5",
+                    "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
+                    "lastModifiedDateTime": "2020-11-23T21:36:00.9437445Z",
+                    "createdBy": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "70292a90-d2a7-432c-857e-55db6d8f5cd0",
+                            "displayName": null,
+                            "userIdentityType": "aadUser"
+                        }
+                    },
+                    "bot@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions('OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ%3D')/bot/$entity",
+                    "bot": {
+                        "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
+            "externalId": "0ebd3f4d-ca91-495b-a227-a17d298e22cc",
+            "displayName": "Self-Install-App-E2E-Tests",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions(bot())",
+            "appDefinitions": [
+                {
+                    "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
+                    "id": "MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk",
+                    "teamsAppId": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
+                    "azureADAppId": "d75abc57-8255-4309-9c29-a3c689e20341",
+                    "displayName": "Self-Install-App-E2E-Tests",
+                    "version": "6.0.0",
+                    "requiredResourceSpecificApplicationPermissions": [],
+                    "publishingState": "submitted",
+                    "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                    "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
+                    "lastModifiedDateTime": "2020-08-25T18:40:13.035341Z",
+                    "createdBy": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "c071a180-a220-43a1-adaf-e8db95c4a7d6",
+                            "displayName": null,
+                            "userIdentityType": "aadUser"
+                        }
+                    },
+                    "bot@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions('MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk')/bot/$entity",
+                    "bot": {
+                        "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
 
 ## <a name="see-also"></a>Confira também
 

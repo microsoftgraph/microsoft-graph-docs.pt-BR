@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5a944c9aa1f679b053fa7ceda645885b584a1dce
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: eb7c75f144f2056e610e45f86b44a19d9211f306
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606787"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706119"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
@@ -26,17 +26,18 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Lista de aplicativos publicados](../api/appcatalogs-list-teamsapps.md) | Coleção [teamsApp](teamsapp.md) | Lista de aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
-|[Publicar um aplicativo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publica um aplicativo ao catálogo de aplicativos da sua organização.|
-|[Atualizar um aplicativo publicado](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo publicado no catálogo de aplicativos da sua organização.|
-|[Apagar um aplicativo publicado](../api/teamsapp-delete.md) | Nenhum(a) | Remova um aplicativo publicado do catálogo de aplicativos da sua organização.|
+|[Listar aplicativos no catálogo](../api/appcatalogs-list-teamsapps.md) | Coleção [teamsApp](teamsapp.md) | Listar todos os aplicativos no catálogo de aplicativos do Microsoft Teams.|
+|[Carregar aplicativo no catálogo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Carregar um aplicativo para o catálogo de aplicativos da sua organização.|
+|[Atualizar aplicativo no catálogo](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo no catálogo de aplicativos da sua organização.|
+|[Excluir aplicativo do catálogo](../api/teamsapp-delete.md) | Nenhum(a) | Remover um aplicativo do catálogo de aplicativos da sua organização.|
+|[Obter bot associado ao aplicativo no catálogo](../api/teamworkbot-get.md) | [teamworkbot](teamworkbot.md) | Obter o bot associado ao aplicativo Teams.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A ID do aplicativo gerada no catálogo de aplicativos (diferente da ID fornecida pelo desenvolvedor em [pacote de aplicativos compactados do Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
-| externalId          | cadeia de caracteres   | A ID do catálogo fornecido pelo desenvolvedor do aplicativo do [pacote de aplicativos compactados do Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
+| id                  | cadeia de caracteres   | A ID do aplicativo gerada no catálogo de aplicativos (diferente da ID fornecida pelo desenvolvedor em [pacote de aplicativos compactados do Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
+| externalId          | string   | A ID do catálogo fornecido pelo desenvolvedor do aplicativo do [pacote de aplicativos compactados do Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
 | displayName                | string   | O nome do catálogo de aplicativos fornecido pelo desenvolvedor do aplicativo no [pacote de aplicativos compactados do Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
 | distributionMethod  | teamsAppDistributionMethod     | O método de distribuição para o aplicativo. Somente leitura.|
 
@@ -44,9 +45,9 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|loja|0| O aplicativo está disponível para todos os locatários na loja de aplicativos do Microsoft Teams.|
+|loja|,0| O aplicativo está disponível para todos os locatários na loja de aplicativos do Microsoft Teams.|
 |organização|1|O aplicativo está disponível somente nesse locatário.|
-|sideloaded|2|O aplicativo está disponível apenas para usuário/equipe onde ele está instalado.|
+|sideloaded|duas|O aplicativo está disponível apenas para usuário/equipe onde ele está instalado.|
 
 ## <a name="relationships"></a>Relações
 

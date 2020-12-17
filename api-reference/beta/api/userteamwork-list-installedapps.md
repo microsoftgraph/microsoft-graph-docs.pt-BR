@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9b73edd6ae21e0d518a426d999a09bfa2363a23c
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 8169aaa7d2fb7e28318bb11375cade64e47956f7
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691292"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706147"
 ---
 # <a name="list-apps-installed-for-user"></a>Listar aplicativos instalados para o usuário
 
@@ -113,7 +113,10 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg="
+    },
+    {
+      "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZmQ5MjVhMC0zNTdmLTRkMjUtODQ1Ni1iMzAyMmFhYTQxYTk="
     }
   ]
 }
@@ -122,34 +125,15 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+No exemplo a seguir, se uma instância de um aplicativo instalado tem um [bot](../resources/teamworkbot.md) associado a ela, os detalhes do bot também são retornados.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps_details"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition
+```http
+GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-details-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-details-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-details-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-details-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 
@@ -185,7 +169,10 @@ Content-type: application/json
                 "id": "MGZkOTI1YTAtMzU3Zi00ZDI1LTg0NTYtYjMwMjJhYWE0MWE5IyMxLjc=",
                 "teamsAppId": "0fd925a0-357f-4d25-8456-b3022aaa41a9",
                 "displayName": "SurveyMonkey",
-                "version": "1.7"
+                "version": "1.7",
+                "bot": {
+                    "id":"793a57f9-a795-4264-bf8d-3d90585a4d1f"
+                }
             }
         },
         {

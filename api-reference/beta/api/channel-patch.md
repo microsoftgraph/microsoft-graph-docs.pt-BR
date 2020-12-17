@@ -1,18 +1,18 @@
 ---
-title: Canal de patch
+title: 'Canal de Atualização '
 description: Atualiza as propriedades do canal especificado.
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2397cde51de94c7147ed55e88bc4d716c454d0cc
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: c6af7347bd1ac2f164fe1d73e24ea9fc48cd6f8d
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848054"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705916"
 ---
-# <a name="patch-channel"></a>Canal de patch
+# <a name="update-channel"></a>Canal de Atualização 
 
 Namespace: microsoft.graph
 
@@ -26,13 +26,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | ChannelSettings. ReadWrite. Group *, ChannelSettings. ReadWrite. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
-> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-> **Observação** : esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,13 +43,13 @@ PATCH /teams/{id}/channels/{id}
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, fornça uma representação JSON do objeto [canal](../resources/channel.md).
 
-> Observação: não é possível atualizar o `membershipType` valor de um canal existente.
+> **Observação:** Não é possível atualizar o `membershipType` valor de um canal existente.
 
 ## <a name="response"></a>Resposta
 
@@ -57,7 +57,9 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="example"></a>Exemplo
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-update-channel"></a>Exemplo 1: canal de atualização
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 
@@ -75,9 +77,51 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-channel-with-moderation-settings"></a>Exemplo 2: atualizar o canal com configurações de moderação
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação para atualizar um canal com configurações de moderação. Essa operação só pode ser realizada por um proprietário de equipe.
+
+<!-- {
+  "blockType": "request",
+  "name": "patch_channel_with_moderationSettings"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}
+Content-type: application/json
+
+{
+    "displayName": "UpdateChannelModeration",
+    "description": "Update channel moderation.",
+    "moderationSettings": {
+        "userNewMessageRestriction": "moderators",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+```
+
+
+#### <a name="response"></a>Resposta
+
+Veja a seguir um exemplo da resposta. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,

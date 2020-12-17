@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4ef6d1b45e1f577a6538998eab74a569ff51125e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 45fc991d02a5b588f924154a8e9c4e639546f485
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961201"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705713"
 ---
 # <a name="get-b2cidentityuserflow"></a>Obter b2cIdentityUserFlow
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Application|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
 
 A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
@@ -116,7 +116,9 @@ Content-type: application/json
 {
     "id": "B2C_1_CustomerSignUp",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 1
+    "userFlowTypeVersion": 1,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": null
 }
 ```
 

@@ -4,12 +4,12 @@ description: Descreve as diferenças de propriedade entre os recursos de gráfic
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: d9883fd85bfeaee2c6043c706c3e3c41061b90fa
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 38d151fa5c6510f3b8279646db7ebe0c37c4926a
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873395"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705944"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre o Azure AD Graph e o Microsoft Graph
 
@@ -18,7 +18,7 @@ Este artigo faz parte da *etapa 1: revisar as diferenças de API* do [processo d
 Em geral, a melhor maneira de comparar a API do Azure AD Graph com o Microsoft Graph é comparar os metadados subjacentes para cada serviço, especialmente as descrições de recursos:
 
 - [Metadados do Azure AD Graph](https://graph.windows.net/microsoft.com/$metadata?api-version=1.6)
-- [Metadados da versão beta do Microsoft Graph](https://graph.microsoft.com/beta /$metadata)
+- [Metadados da versão beta do Microsoft Graph](https://graph.microsoft.com/beta/$metadata)
 - [Metadados do Microsoft Graph v 1.0](https://graph.microsoft.comv/1.0/$metadata)
 
 Aqui, as diferenças de propriedade entre recursos são realçadas. Se uma propriedade não é mostrada na lista, ela já está disponível na [versão v 1.0](/graph/api/overview?view=graph-rest-1.0) do Microsoft Graph, com exatamente o mesmo nome que no Azure ad Graph.
@@ -35,12 +35,12 @@ Como o usuário e o grupo são usados com frequência, estes recursos aparecem p
 | **imutávelid** | versão beta &nbsp; - &nbsp; **onPremisesImmutableId** <br> v 1.0 &nbsp; - &nbsp; **onPremisesImmutableId**  | |
 | **iscomprometed** | versão beta &nbsp; - &nbsp; _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | A API de [proteção de identidades](/graph/api/resources/identityprotection-root?view=graph-rest-beta) do Microsoft Graph fornece funcionalidade mais sofisticada. |
 | **lastDirSyncDateTime** | versão beta &nbsp; - &nbsp; **onPremisesLastSyncDateTime** <br> v 1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** | |
-| **processadores** | versão beta &nbsp; - &nbsp; **mobilePhone** <br> v 1.0 &nbsp; - &nbsp; **mobilePhone** | |
+| **móvel** | versão beta &nbsp; - &nbsp; **mobilePhone** <br> v 1.0 &nbsp; - &nbsp; **mobilePhone** | |
 | **provisioningErrors** | versão beta &nbsp; - &nbsp; _não disponível_ <br> v 1.0 &nbsp; - &nbsp; _não disponível_ | Essa propriedade e suas informações são preteridas.  No entanto, uma nova propriedade que descreve qualquer erro de provisionamento relacionado ao AD Connect pode ser encontrada no **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | versão beta &nbsp; - &nbsp; **signinSessionsValidFromDateTime**<br>v 1.0 &nbsp; - &nbsp; **signinSessionsValidFromDateTime** | |
 | **signinNames** | &nbsp; - &nbsp; **identidades beta/signInType** <br> v 1.0 &nbsp; - &nbsp; **Identities/signInType** | Essa propriedade agora é parte do recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) .|
 | **telephoneNumber** | versão beta &nbsp; - &nbsp; **businessPhones** <br> v 1.0 &nbsp; - &nbsp; **businessPhones** | |
-| **thumbnailPhoto** | &nbsp; - &nbsp; **foto**beta, fotos <br> foto v 1.0 &nbsp; - &nbsp; **photo**, fotos | A foto de miniatura do Azure AD não está disponível por meio do Microsoft Graph.  Em vez disso, use a [API de foto](/graph/api/resources/profilephoto?view=graph-rest-1.0) . |
+| **thumbnailPhoto** | &nbsp; - &nbsp; **foto** beta, fotos <br> foto v 1.0 &nbsp; - &nbsp; , fotos | A foto de miniatura do Azure AD não está disponível por meio do Microsoft Graph.  Em vez disso, use a [API de foto](/graph/api/resources/profilephoto?view=graph-rest-1.0) . |
 | **useridentities** | &nbsp; - &nbsp; **identidades** beta <br> &nbsp; - &nbsp; **identidades** v 1.0 | Confira o tipo de recurso [objectidentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) para obter mais detalhes.|
 | **userState** | versão beta &nbsp; - &nbsp; **externalUserState** <br> v 1.0 &nbsp; - &nbsp; **externalUserState** | |
 | **userStateChangedOn** | versão beta &nbsp; - &nbsp; **externalUserStateChangeDateTime**<br>v 1.0 &nbsp; - &nbsp; **externalUserStateChangeDateTime** | |
@@ -91,17 +91,17 @@ O recurso de contato do Azure AD Graph foi renomeado como orgContact no Microsof
 |Azure AD Graph. <br>(v 1.6) Propriedade |Microsoft Graph<br> propriedade|Comentários|
 |---|---|---|
 | **city** | &nbsp; - &nbsp; **endereços beta (cidade)** <br> endereços v 1.0 &nbsp; - &nbsp; **(cidade)**  | A propriedade City é parte da coleção de recursos addresses. |
-| **países** | &nbsp; - &nbsp; **endereços**beta &nbsp; **(countryOrRegion)**<br> endereços v 1.0 &nbsp; - &nbsp; **addresses** &nbsp; **(countryOrRegion)**  | A propriedade countryOrRegion é parte da coleção de recursos addresses. |
+| **country** | &nbsp; - &nbsp; **endereços** beta &nbsp; **(countryOrRegion)**<br> endereços v 1.0 &nbsp; - &nbsp;  &nbsp; **(countryOrRegion)**  | A propriedade countryOrRegion é parte da coleção de recursos addresses. |
 | **dirSyncEnabled** | versão beta &nbsp; - &nbsp; **onPremisesSyncEnabled** <br> v 1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled**   | |
-| **facsimileTelephoneNumber** | &nbsp; - &nbsp; **telefones**beta &nbsp; **(businessFax)** <br> telefones v 1.0 &nbsp; - &nbsp; **phones** &nbsp; **(businessFax)** | Agora, parte da coleção Phones, que oferece suporte a Mobile, Business e businessFax. |
+| **facsimileTelephoneNumber** | &nbsp; - &nbsp; **telefones** beta &nbsp; **(businessFax)** <br> telefones v 1.0 &nbsp; - &nbsp;  &nbsp; **(businessFax)** | Agora, parte da coleção Phones, que oferece suporte a Mobile, Business e businessFax. |
 | **physicalDeliveryOfficeName** | versão beta &nbsp; - &nbsp; **officeLocation** <br> v 1.0 &nbsp; - &nbsp; **officeLocation** | |
-| **postalCode** | &nbsp; - &nbsp; **endereços**beta &nbsp; **(PostalCode)**<br> endereços v 1.0 &nbsp; - &nbsp; **addresses** &nbsp; **(PostalCode)** | A propriedade postalCode é parte da coleção de recursos addresses. |
+| **postalCode** | &nbsp; - &nbsp; **endereços** beta &nbsp; **(PostalCode)**<br> endereços v 1.0 &nbsp; - &nbsp;  &nbsp; **(PostalCode)** | A propriedade postalCode é parte da coleção de recursos addresses. |
 | **provisioningErrors** | versão beta &nbsp; - &nbsp; não disponível <br> v 1.0 &nbsp; - &nbsp; não disponível | Essa propriedade e suas informações são preteridas.  No entanto, uma nova propriedade que descreve qualquer erro de provisionamento relacionado ao AD Connect pode ser encontrada no **onPremisesProvisioningErrors**. Atualmente, isso só está disponível na versão beta. |
 | **sipProxyAddress** |  &nbsp; - &nbsp; **imendereços** beta<br> &nbsp; - &nbsp; **endereços** v 1.0  | |
-| **state** | &nbsp; - &nbsp; **endereços**beta &nbsp; **(estado)**<br> endereços v 1.0 &nbsp; - &nbsp; **addresses** &nbsp; **(estado)**  | A propriedade State é parte da coleção de recursos addresses. |
-| **streetAddress** | &nbsp; - &nbsp; **endereços**beta &nbsp; **(rua)**<br> endereços v 1.0 &nbsp; - &nbsp; **addresses** &nbsp; **(rua)**  | A propriedade Street é parte da coleção de recursos addresses. |
-| **telephoneNumber** | &nbsp; - &nbsp; **telefones**beta &nbsp; **(negócios)** <br> v 1.0 &nbsp; - &nbsp; **phones** &nbsp; **(Business)** | Agora, parte da coleção Phones, que oferece suporte a Mobile, Business e businessFax. |
-| **thumbnailPhoto** | versão beta &nbsp; - &nbsp; _ &nbsp; ainda não &nbsp; disponível_&nbsp;<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **state** | &nbsp; - &nbsp; **endereços** beta &nbsp; **(estado)**<br> endereços v 1.0 &nbsp; - &nbsp;  &nbsp; **(estado)**  | A propriedade State é parte da coleção de recursos addresses. |
+| **streetAddress** | &nbsp; - &nbsp; **endereços** beta &nbsp; **(rua)**<br> endereços v 1.0 &nbsp; - &nbsp;  &nbsp; **(rua)**  | A propriedade Street é parte da coleção de recursos addresses. |
+| **telephoneNumber** | &nbsp; - &nbsp; **telefones** beta &nbsp; **(negócios)** <br> v 1.0 &nbsp; - &nbsp; **phones** &nbsp; **(Business)** | Agora, parte da coleção Phones, que oferece suporte a Mobile, Business e businessFax. |
+| **thumbnailPhoto** | versão beta &nbsp; - &nbsp; _&nbsp; ainda não &nbsp; disponível_&nbsp;<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 
 ## <a name="contract-property-differences"></a>Diferenças de propriedade de contrato
 
@@ -137,7 +137,7 @@ O recurso directoryObjectReference do Azure AD Graph foi renomeado para director
 |---|---|---|
 | **name** | &nbsp; - &nbsp; **ID** da versão beta <br> &nbsp; - &nbsp; **ID** do v 1.0 | No Microsoft Graph, o identificador exclusivo (ID) contém o nome de domínio; a `name` propriedade não existe. |
 | **forceDeleteState** |  &nbsp; - &nbsp; **estado** beta <br> &nbsp; - &nbsp; **estado** v 1.0 | No gráfico do Azure AD, há forceDelete separadas e propriedades de estado do domínio.  No Microsoft Graph, todos os Estados de domínio são tratados pela propriedade State. |
-| **isDefaultForCloudRedirections** | versão beta &nbsp; - &nbsp; _ &nbsp; ainda não &nbsp; disponível_&nbsp;<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
+| **isDefaultForCloudRedirections** | versão beta &nbsp; - &nbsp; _&nbsp; ainda não &nbsp; disponível_&nbsp;<br> v 1.0 &nbsp; - &nbsp; _ainda não está disponível_ | |
 
 ## <a name="oauth2permissionsgrant-property-differences"></a>Diferenças da propriedade OAuth2PermissionsGrant
 
@@ -158,7 +158,7 @@ O recurso ServiceEndpoint do Azure AD Graph é renomeado como ponto de extremida
 |---|---|---|
 | **serviceId** | &nbsp; - &nbsp; **provedor** de versão beta<br> v 1.0 &nbsp; - &nbsp; **ProviderID** | |
 | **serviceName** | &nbsp; - &nbsp; **ProviderName** beta<br> v 1.0 &nbsp; - &nbsp; **ProviderName** | |
-| **Identificação** | versão beta &nbsp; - &nbsp; **providerResourceId**<br> v 1.0 &nbsp; - &nbsp; **providerResourceId** | |
+| **resourceId** | versão beta &nbsp; - &nbsp; **providerResourceId**<br> v 1.0 &nbsp; - &nbsp; **providerResourceId** | |
 
 ## <a name="serviceprincipal-property-differences"></a>Diferenças de propriedade de servicePrincipalName
 

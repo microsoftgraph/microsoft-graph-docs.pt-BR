@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d4d9cb74777985dd28988e1ebc417ee564932865
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b5fd771d1fb38de5354c74778f5eae798ccc91e
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046591"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706112"
 ---
 # <a name="teamsappdefinition-resource-type"></a>tipo de recurso teamsAppDefinition
 
@@ -30,6 +30,12 @@ Os detalhes de uma versão de um [teamsApp](teamsapp.md).
 | azureADAppId        | string   | O WebApplicationInfo.id do manifesto do aplicativo Teams. |
 | displayName         | string   | O nome do aplicativo fornecido pelo desenvolvedor de aplicativos. |
 | versão             | string   | O número da versão do aplicativo. |
+
+## <a name="relationships"></a>Relações
+
+| Relação | Tipo   | Descrição |
+|:---------------|:--------|:----------|
+|bot|[teamworkBot](teamworkbot.md) | Os detalhes do bot especificado no manifesto do aplicativo Teams. |
 
 ## <a name="json-representation"></a>Representação JSON
 
