@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3563c0dd8367ed8c952bb4c505e847ffc0cbd1ca
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
+ms.openlocfilehash: c3b112fd53dc3d3dd34dc0de52e212bcadfc113e
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664097"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690282"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -235,7 +235,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |:---------------|:--------|:----------|
 |null|Valor padrão, nenhum **ageGroup** foi definido para o usuário.|
 |menor|O usuário é considerado um menor.|
-|notAdult|O usuário é de um país que tem regulamentos estatutários (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior que o limite superior de idade infantil (por país) e menor do que o limite inferior de idade adulta (estipulado com base em cada país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
+|notAdult|O usuário é de um país que possui regulamentos legais (como Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é superior ao limite superior de idade infantil (conforme o país) e inferior ao limite inferior de adulto idade (conforme estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
 |adult|O usuário deve ser tratado como um adulto.|
 
 #### <a name="consentprovidedforminor-values"></a>consentProvidedForMinor values
