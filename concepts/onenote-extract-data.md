@@ -128,7 +128,7 @@ A API do OneNote tenta localizar e renderizar as seguintes informações com bas
 
 <img alt="An example recipe extraction" src="images/recipe-extraction.png" width="200">
 
-A API é otimizada para receitas de muitos sites populares, como *Allrecipes.com* , *FoodNetwork.com* e *SeriousEats.com*.
+A API é otimizada para receitas de muitos sites populares, como *Allrecipes.com*, *FoodNetwork.com* e *SeriousEats.com*.
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>Cenários comuns para extrações de receitas
 

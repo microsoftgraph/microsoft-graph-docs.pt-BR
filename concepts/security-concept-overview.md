@@ -44,11 +44,11 @@ Correlacione alertas em soluções de segurança mais facilmente com um esquema 
 
 Marque os alertas com contexto adicional ou inteligência contra ameaças para informar a resposta e a correção. Certifique-se de que os comentários e as opiniões nos alertas sejam capturados e estejam visíveis em todos os fluxos de trabalho. Mantenha as atribuições e o status de alerta sincronizados para que todas as soluções integradas reflitam o estado atual. Use assinaturas webhook para receber notificação das alterações.  
 
-### <a name="unlock-security-context-to-drive-investigation"></a>Desbloquear o contexto de segurança para impulsionar a investigação
+### <a name="unlock-security-context-to-drive-investigation"></a>Desbloquear o contexto de segurança para orientar investigação
 
 Aprofunde seus conhecimentos sobre inventários relevantes relacionados à segurança (como usuários, hosts e aplicativos) e, em seguida, adicione contexto organizacional de outros provedores do Microsoft Graph (Azure AD, Microsoft Intune, Microsoft 365) para reunir os contextos comercial e de segurança e melhorar a resposta às ameaças.
 
-### <a name="automate-security-workflows-and-reporting"></a>Automatizar fluxos de trabalho e relatórios de segurança
+### <a name="automate-security-workflows-and-reporting"></a>Automatizar fluxos de trabalho de segurança e relatórios
 
 Automatizar gerenciamento de segurança, monitorar e investigar para melhorar o desempenho operacional e o tempo de resposta. Obter mais informações e contexto ao integrar a segurança do Microsoft Graph em relatórios e painéis.
 
