@@ -5,12 +5,12 @@ author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: df6d0ffbdffdf01c30f5dda2220cc96392b0f6ed
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: e87deb3bafbcd1ac28a1d95209f62017d7593e6c
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563899"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714344"
 ---
 # <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint: getEffectivePermissions
 
@@ -22,7 +22,7 @@ Exibir as permissões efetivas do usuário autenticado no momento. GetEffectiveP
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -101,13 +101,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffecti
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
-  "value": [
-    "Microsoft.CloudPC/CloudPCs/Read"
-  ]
+   "value":[
+      "Microsoft.CloudPC/CloudPCs/Read"
+   ]
 }
 ```
