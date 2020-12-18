@@ -6,12 +6,12 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e457840ee55206b47b035ae53127c5bf3e5130c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 226213d1361c78f592f92ddfe9b6f52c4f3defd0
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055257"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714290"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -19,7 +19,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Este recurso representa um item em uma **[list][]** do SharePoint.
+Representa um item em uma [lista][] do Sharepoint.
+
+Todos os itens em uma biblioteca de documentos do SharePoint podem ser representados como um recurso **ListItem** ou [driveItem][] .
+
 Os valores de coluna na lista estão disponíveis por meio do dicionário `fieldValueSet`.
 
 ## <a name="tasks-on-a-listitem"></a>Tarefas em um listItem

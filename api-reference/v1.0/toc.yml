@@ -411,10 +411,10 @@ items:
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
-              - name: Adicionar o aplicativo para o usuário
-                href: api/userteamwork-post-installedapps.md
               - name: Listar aplicativos para o usuário
                 href: api/userteamwork-list-installedapps.md
+              - name: Adicionar o aplicativo para o usuário
+                href: api/userteamwork-post-installedapps.md
               - name: Obtém o aplicativo instalado para o usuário
                 href: api/userteamwork-get-installedapps.md
               - name: Atualização do aplicativo instalado para o usuário
@@ -4720,7 +4720,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitygroupcounts.md
               - name: Obter contagens de atividades
                 href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -4934,10 +4934,10 @@ items:
                 href: api/group-delete.md
               - name: Listar membros
                 href: api/team-list-members.md
-              - name: Obter membro
-                href: api/team-get-members.md
               - name: Adicionar membro
                 href: api/team-post-members.md
+              - name: Obter membro
+                href: api/team-get-members.md
               - name: Remover membro
                 href: api/team-delete-members.md
               - name: Atualizar membro
@@ -5012,10 +5012,10 @@ items:
                 href: api/channel-delete.md
               - name: Listar membros
                 href: api/channel-list-members.md
-              - name: Obter membro
-                href: api/channel-get-members.md
               - name: Criar membro
                 href: api/channel-post-members.md
+              - name: Obter membro
+                href: api/channel-get-members.md
               - name: Atualizar função de membro
                 href: api/channel-update-members.md
               - name: Remover membro
@@ -5092,14 +5092,14 @@ items:
                 items:
                   - name: Listar aplicativos para o usuário
                     href: api/userteamwork-list-installedapps.md
-                  - name: Obter o aplicativo instalado para o usuário
-                    href: api/userteamwork-get-installedapps.md
                   - name: Adicionar o aplicativo para o usuário
                     href: api/userteamwork-post-installedapps.md
-                  - name: Atualização do aplicativo instalado para o usuário
-                    href: api/userteamwork-teamsappinstallation-upgrade.md
+                  - name: Obter o aplicativo instalado para o usuário
+                    href: api/userteamwork-get-installedapps.md
                   - name: Obter chat entre o usuário e o aplicativo
                     href: api/userscopeteamsappinstallation-get-chat.md
+                  - name: Atualização do aplicativo instalado para o usuário
+                    href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: Remover o aplicativo para o usuário
                     href: api/userteamwork-delete-installedapps.md
           - name: Tab
@@ -5109,10 +5109,10 @@ items:
                 items:
                   - name: Listar guias no canal
                     href: api/channel-list-tabs.md
-                  - name: Guia obter no canal
-                    href: api/channel-get-tabs.md
                   - name: Adicionar guia ao Cannel
                     href: api/channel-post-tabs.md
+                  - name: Guia obter no canal
+                    href: api/channel-get-tabs.md
                   - name: Guia atualizar no canal
                     href: api/channel-patch-tabs.md
                   - name: Remover guia do canal

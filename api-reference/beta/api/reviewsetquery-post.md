@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: efc55da7f12d280acfe5d966bd75318399ef2295
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2635c446c6e0332df780c71be61232bb364ad683
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970637"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714099"
 ---
 # <a name="create-reviewsetquery"></a>Criar reviewSetQuery
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | User.Read |
+| Delegada (conta corporativa ou de estudante)     | User.Read |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [reviewSe
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName  | string      | O nome da consulta do conjunto de revisão |
+| displayName  | cadeia de caracteres      | O nome da consulta do conjunto de revisão |
 
 ## <a name="response"></a>Resposta
 
@@ -71,8 +71,8 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-
 Content-type: application/json
 
 {
-     "displayName" : "My Query 1",
-     "query": "(subject:\"Quarterly Financials\")"
+   "displayName":"My Query 1",
+   "query":"(subject:\"Quarterly Financials\")"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

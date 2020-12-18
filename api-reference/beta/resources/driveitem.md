@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 32ddc9de6b4eb9422d79f347367aec9816d84c64
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 7810850e8968a8985cc611930088c5dbec817484
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582314"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714292"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -19,7 +19,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **DriveItem** representa um arquivo, pasta ou outro item armazenado em uma unidade. Todos os objetos do sistema de arquivos no OneDrive e no SharePoint são retornados como recursos **driveItem**.
+O recurso **DriveItem** representa um arquivo, pasta ou outro item armazenado em uma unidade.
+
+Todos os objetos do sistema de arquivos no OneDrive e no SharePoint são retornados como recursos **driveItem**. Os itens das bibliotecas de documentos do SharePoint podem ser representados como recursos [ListItem][] ou **driveItem** .
 
 Há duas maneiras principais de endereçar um recurso **driveItem**:
 
@@ -174,7 +176,7 @@ A remoção das permissões de arquivo de um usuário pode não invalidar a URL 
 
 >**Observação:** o parâmetro @microsoft.graph.conflictBehavior deve ser incluído na URL, em vez do corpo da solicitação.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                   | Caminho REST
 |:---------------------------------------------------------|:------------------
