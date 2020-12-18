@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: e1051d60681e42012fd9df3fd8655a9e4cc745cd
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: f20e02c5f75e4133beb40315bcc4b6fc3b0712c1
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580960"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705818"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>tipo de recurso b2xIdentityUserFlow
 
@@ -35,13 +35,14 @@ Os fluxos de usuário são usados para habilitar uma experiência de [inscriçã
 |[Remover provedor de identidade](../api/b2xidentityuserflow-delete-identityproviders.md)|Nenhum|Remova um provedor de identidade de um fluxo de usuário B2X.|
 |[Listar as atribuições de atributo de usuário](../api/b2xidentityuserflow-list-userattributeassignments.md)|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |Recupere todas as atribuições de atributos do usuário em um fluxo de usuário B2X.|
 |[Criar uma tarefa de atributo de usuário](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Crie uma atribuição de atributo de usuário em um fluxo de usuário B2X.|
+|[Idiomas da lista](../api/b2xidentityuserflow-list-languages.md)|coleção [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Recupere todos os idiomas dentro de um fluxo de usuário B2X.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
 |id|Cadeia de caracteres|O nome do fluxo de usuário. Esse é um valor obrigatório e imutável após sua criação. O nome será antecedido pelo valor de `B2X_1_` após a criação.|
-|userFlowType|Cadeia de caracteres|O tipo de fluxo de usuário. Para os fluxos de usuário de inscrição de autoatendimento, o valor só poderá ser `signUpOrSignIn` e não poderá ser modificado após a criação.|
+|userFlowType|userFlowType|O tipo de fluxo de usuário. Para os fluxos de usuário de inscrição de autoatendimento, o valor só poderá ser `signUpOrSignIn` e não poderá ser modificado após a criação.|
 |userFlowTypeVersion|Único|A versão do fluxo de usuário. Para fluxos de usuário B2X, a versão é sempre `1`.|
 
 ## <a name="relationships"></a>Relações
@@ -50,6 +51,7 @@ Os fluxos de usuário são usados para habilitar uma experiência de [inscriçã
 |:---------------|:--------|:----------|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
 |userAttributeAssignments|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |As atribuições de atributo de usuário incluídas no fluxo do usuário.|
+|idiomas|coleção [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Os idiomas com suporte para personalização dentro do fluxo do usuário. A personalização do idioma é habilitada por padrão no fluxo do usuário B2X. Você não pode criar idiomas personalizados em fluxos de usuário B2X.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -68,6 +70,7 @@ Veja a seguir uma representação JSON do recurso.
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
-    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}]
 }
 ```
