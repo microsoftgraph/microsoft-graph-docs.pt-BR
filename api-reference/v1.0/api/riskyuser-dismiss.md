@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 996d64d4b370b1536d1c0af28d5479cc5cbb0e79
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f0b1d2b7b911ef4c946a6d3a3603465d6495de73
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051316"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719969"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: fechar
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
+|Delegada (conta corporativa ou de estudante) | IdentityRiskyUser.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskyUser.ReadWrite.All |
 
@@ -69,7 +69,6 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss
-
 Content-Type: application/json
 Content-length: 39
 

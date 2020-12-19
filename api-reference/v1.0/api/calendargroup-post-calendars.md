@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1bbf719009bcae89fcc190fdf4702ee50e07e22e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76154531f45bca34772ece6145a34d67063a5c86
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044113"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719577"
 ---
 # <a name="create-calendar"></a>Criar calendário
 
@@ -77,7 +77,6 @@ Este é um exemplo da solicitação.
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars
-
 Content-type: application/json
 
 {

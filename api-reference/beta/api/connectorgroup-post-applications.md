@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d937f6a52d80896714519bc43b0dc2595f9d902
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac902f4a1287a8d27fcf9ad571172207ca7b8e50
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996413"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719948"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>Atribuir um conector a um aplicativo
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 
@@ -59,7 +59,6 @@ Este é um exemplo de solicitação.
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
-
 Content-type: application/json
 Content-length: 30
 

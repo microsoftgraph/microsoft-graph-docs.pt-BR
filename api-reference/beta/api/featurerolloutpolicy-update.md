@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 465c9f57faba02f38b10569ae3ba46c4022defd7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 676983e4fbffcbe9edf3feae83c8344c52cf4596
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006686"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719941"
 ---
 # <a name="update-featurerolloutpolicy"></a>Atualizar featurerolloutpolicy
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegada (conta corporativa ou de estudante)     | Policy.ReadWrite.FeatureRollout |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,10 +50,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|description|String|Uma descrição para esta política.|
-|displayName|String|O nome de exibição para esta política.|
+|description|Cadeia de caracteres|Uma descrição para esta política.|
+|displayName|Cadeia de caracteres|O nome de exibição para esta política.|
 |isAppliedToOrganization|Booliano|Indica se esta política de distribuição de recursos deve ser aplicada a toda a organização.|
-|isEnabled|Boolean|Indica se a distribuição de recursos está habilitada.|
+|isEnabled|Booliano|Indica se a distribuição de recursos está habilitada.|
 
 ## <a name="response"></a>Resposta
 
@@ -71,7 +71,6 @@ Este é um exemplo de solicitação.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
-
 Content-type: application/json
 
 {

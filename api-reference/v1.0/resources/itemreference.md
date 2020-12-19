@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 description: O recurso ItemReference proporciona as informações necessárias para enviar um DriveItem pela API.
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a13fb5a3606b72c96a15317a9a7b1d5844184f4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd24f0d1fc0a5f5db576f5eea89b8205ff55b2b7
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009223"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714253"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
@@ -38,7 +37,8 @@ Veja a seguir uma representação JSON do recurso
   "name": "string",
   "path": "string",
   "shareId": "string",
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "siteId": "string"
 }
 ```
 
@@ -48,15 +48,17 @@ Veja a seguir uma representação JSON do recurso
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | O identificador exclusivo da instância da unidade que contém o item. Somente leitura.
 | driveType     | String            | Identifica o tipo de unidade. Consulte o recurso [unidade][] para obter os valores.
-| id            | String            | Identificador exclusivo do item na unidade. Somente leitura.
-| nome          | String            | O nome do item ao qual se faz referência. Somente leitura.
+| id            | Cadeia de caracteres            | Identificador exclusivo do item na unidade. Somente leitura.
+| nome          | Cadeia de caracteres            | O nome do item ao qual se faz referência. Somente leitura.
 | caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
 | shareId       | Cadeia de caracteres            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
 | sharepointIds | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
+| siteId        | Cadeia de caracteres            | Para o OneDrive for Business e o SharePoint, essa propriedade representa a ID do site que contém a biblioteca de documentos pai do recurso driveItem. O valor é o mesmo que a propriedade ID do recurso [site][] . É uma [cadeia de caracteres opaca que consiste em três identificadores](/graph/api/resources/site#id-property) do site. <br>Para o OneDrive, essa propriedade não é preenchida.
 
 [unidade]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares-get.md
+[site]: ../resources/site.md
 
 ## <a name="remarks"></a>Comentários
 

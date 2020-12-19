@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b546071984f938f7e07c927681aa1b9e50d4cfd0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ecaa9b77a92dc6393b3c7231976937e36502c8d
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064399"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719752"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>tipo de recurso accessPackageAssignmentRequest
 
@@ -42,6 +42,7 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 |RequestType|Cadeia de caracteres|Um de `UserAdd` , `UserRemove` , `AdminAdd` `AdminRemove` ou `SystemRemove` . Uma solicitação do próprio usuário teria o RequestType de `UserAdd` ou `UserRemove` . Somente leitura.|
 |Cronograma|[requestSchedule](requestschedule.md)| O intervalo de datas que o Access deve ser atribuído ao solicitante. Somente leitura.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Para um RequestType `UserAdd` ou `AdminAdd` , esta é uma atribuição de pacote de acesso solicitada a ser criada.  Para um RequestType de `UserRemove` , `AdminRemove` ou `SystemRemove` , isso tem a `id` propriedade de uma atribuição existente a ser removida.|
+|às|coleção [accessPackageAnswer](accesspackageanswer.md)|As respostas fornecidas pelo solicitante para [accessPackageQuestions](accesspackagequestion.md) as solicitadas no momento da solicitação.|
 
 ## <a name="relationships"></a>Relações
 
@@ -65,14 +66,31 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "createdDateTime": "2020-02-12T22:06:58.303Z",
-  "completedDate": "2020-02-12T22:14:28.19Z",
-  "id": "1244d439-5baa-4b9a-be5f-e8fdef5a998b",
-  "requestType": "UserAdd",
-  "requestState": "Delivered",
-  "requestStatus": "FulfilledNotificationTriggered",
-  "isValidationOnly": false,
-  "justification": ""
+    "createdDateTime": "string",
+    "completedDate": "string",
+    "id": "string",
+    "requestType": "string",
+    "requestState": "string",
+    "requestStatus": "string",
+    "isValidationOnly": false,
+    "justification": "string",
+    "answers": [{
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "string",
+        "answeredQuestion": {
+            "id": "string",
+            "text": {
+                "defaultText": "string",
+                "localizedTexts": [{
+                    "text": "string",
+                    "languageCode": "string"
+                }]
+            },
+            "isRequired": true,
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "isSingleLineQuestion": true
+        }
+    }]
 }
 ```
 
@@ -85,5 +103,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

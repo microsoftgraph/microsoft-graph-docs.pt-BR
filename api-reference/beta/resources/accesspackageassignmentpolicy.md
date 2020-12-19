@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ccf3e1bb94bb1f6186e39cdaa91fa2dbe3a4344d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c963030980e96c5baabe8bcfe9103d4dc5167979
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031729"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719759"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>tipo de recurso accessPackageAssignmentPolicy
 
@@ -37,13 +37,13 @@ Para atribuir um usuário a um pacote do Access, [crie um accessPackageAssignmen
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|accessPackageId|String|ID do pacote de acesso.|
+|accessPackageId|Cadeia de caracteres|ID do pacote de acesso.|
 |accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Quem deve revisar e com que frequência as atribuições para o pacote de acesso desta política. Essa propriedade será nula se as revisões não forem necessárias.|
 |exextend|Booliano|Indica se um usuário pode estender a duração da atribuição de pacote de acesso após a aprovação.|
-|createdBy|String|Somente leitura.|
+|createdBy|Cadeia de caracteres|Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|description|String|A descrição da política.|
-|displayName|String|O nome de exibição da política.|
+|description|Cadeia de caracteres|A descrição da política.|
+|displayName|Cadeia de caracteres|O nome de exibição da política.|
 |durationInDays|Int32|O número de dias em que as atribuições dessa política duram até que tenham expirado.|
 |expirationDateTime|DateTimeOffset|A data de validade das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
@@ -51,6 +51,7 @@ Para atribuir um usuário a um pacote do Access, [crie um accessPackageAssignmen
 |modifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Quem deve aprovar solicitações de pacote do Access nessa política.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Quem pode solicitar esse pacote de acesso desta política.|
+|algumas|coleção [accessPackageQuestion](accesspackagequestion.md)|Perguntas que são representadas para o solicitante.|
 
 
 ## <a name="relationships"></a>Relações
@@ -75,26 +76,42 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-    "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-    "displayName": "All Users",
-    "description": "All users can request for access to the directory.",
+    "id": "string",
+    "accessPackageId": "string",
+    "displayName": "string",
+    "description": "string",
     "isDenyPolicy": false,
     "canExtend": false,
     "durationInDays": 365,
-    "requestorSettings" : {
-      "scopeType": "AllExistingDirectorySubjects",
-      "acceptRequests": true,
-      "allowedRequestors": []
+    "requestorSettings": {
+        "scopeType": "string",
+        "acceptRequests": true,
+        "allowedRequestors": [{
+            "@odata.type": "#microsoft.graph.userSet"
+        }]
     },
-    "requestApprovalSettings" : {
-      "isApprovalRequired": false,
-      "isApprovalRequiredForExtension": false,
-      "isRequestorJustificationRequired": false,
-      "approvalMode": "NoApproval",
-      "approvalStages": []
+    "requestApprovalSettings": {
+        "isApprovalRequired": false,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": false,
+        "approvalMode": "string",
+        "approvalStages": [{
+            "approvalStageTimeOutInDays": 14,
+            "isApproverJustificationRequired": true,
+            "isEscalationEnabled": true,
+            "escalationTimeInMinutes": 11520,
+            "primaryApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
+            }],
+            "escalationApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
+            }]
+        }]
     },
-    "accessReviewSettings" : null
+    "accessReviewSettings": null,
+    "questions": [{
+        "@odata.type": "#microsoft.graph.question"
+    }]
 }
 ```
 
@@ -107,5 +124,4 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 248ec79692b25a640c41edbff43fa5d407d735bb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 75388c02cf63113c28475b77b194a67c76d588b8
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952049"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719542"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Criar accessPackageAssignmentRequest
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -62,8 +62,8 @@ Se tiver êxito, este método retornará um código de resposta de série 200 e 
 Se esta for uma `AdminAdd` solicitação, posteriormente, um [accessPackageAssignment](../resources/accesspackageassignment.md) e, se necessário, um [accessPackageSubject](../resources/accesspackagesubject.md) também será criado. Você pode localizar aqueles usando os parâmetros de consulta ao [listar accessPackageAssignments](accesspackageassignment-list.md).
 
 ## <a name="examples"></a>Exemplos
-
-### <a name="request"></a>Solicitação
+### <a name="example-1-admin-requests-a-direct-assignment-for-a-user"></a>Exemplo 1: o administrador solicita uma atribuição direta para um usuário
+#### <a name="request"></a>Solicitação
 
 Veja a seguir um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário. Como o [accessPackageSubject](../resources/accesspackagesubject.md) pode ainda não existir, o valor de **TargetId** é a ID de objeto do usuário que está sendo atribuído, o valor do **accessPackageId** é o pacote de acesso desejado para esse usuário, e o valor de **assignmentPolicyId** é uma política de atribuição direta no pacote de acesso.
  
@@ -106,7 +106,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -129,6 +129,132 @@ Content-type: application/json
   "requestState": "Submitted",
   "requestStatus": "Accepted",
   "isValidationOnly": false
+}
+```
+
+### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>Exemplo 2: o usuário solicita um pacote e responde a perguntas de aprovação
+#### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação em que o solicitante forneceu respostas ao aprovador para ajudá-lo a tomar decisões.
+ 
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "UserAdd",
+    "accessPackageAssignment": {
+        "targetId": "46184453-e63b-4f20-86c2-c557ed5d5df9",
+        "assignmentPolicyId": "2264bf65-76ba-417b-a27d-54d291f0cbc8",
+        "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
+    },
+    "answers": [{
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "Arizona",
+        "answeredQuestion": {
+            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
+        }
+    }, {
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "Need access to marketing campaign material",
+        "answeredQuestion": {
+            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
+        }
+    }]
+}
+```
+
+
+---
+
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "7e382d02-4454-436b-b700-59c7dd77f466",
+    "requestType": "UserAdd",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted",
+    "isValidationOnly": false,
+    "answers": [{
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "Arizona",
+        "answeredQuestion": {
+            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
+            "isRequired": false,
+            "text": {
+                "defaultText": "what state are you from?",
+                "localizedTexts": [{
+                    "text": "¿De qué estado eres?",
+                    "languageCode": "es"
+                }]
+            },
+            "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+            "choices": [{
+                "actualValue": "AZ",
+                "displayValue": {
+                    "localizedTexts": [{
+                        "text": "Arizona",
+                        "languageCode": "es"
+                    }]
+                }
+            }, {
+                "actualValue": "CA",
+                "displayValue": {
+                    "localizedTexts": [{
+                        "text": "California",
+                        "languageCode": "es"
+                    }]
+                }
+            }, {
+                "actualValue": "OH",
+                "displayValue": {
+                    "localizedTexts": [{
+                        "text": "Ohio",
+                        "languageCode": "es"
+                    }]
+                }
+            }],
+            "allowsMultipleSelection": false
+        }
+    }, {
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "Need access to marketing campaign material",
+        "answeredQuestion": {
+            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
+            "isRequired": false,
+            "text": {
+                "defaultText": "Who is your manager?",
+                "localizedTexts": [{
+                    "text": "por qué necesita acceso a este paquete",
+                    "languageCode": "es"
+                }]
+            },
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "isSingleLineQuestion": false
+        }
+    }]
 }
 ```
 

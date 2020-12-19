@@ -5,24 +5,24 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a15c830465a4328a178fec497e4ad115b0b0459f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c37114cc7db3224eca3722e00d6334523df6226
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052464"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720025"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryobject: getAvailableExtensionProperties
 Namespace: microsoft.graph
 
-Retorna todas ou uma lista filtrada das propriedades de extensão de diretório que foram registradas em um diretório. As seguintes entidades dão suporte a propriedades de extensão: **User**, **Group**, **Organization**, **Device**, **Application**e **servicePrincipalName**.
+Retorna todas ou uma lista filtrada das propriedades de extensão de diretório que foram registradas em um diretório. As seguintes entidades dão suporte a propriedades de extensão: **User**, **Group**, **Organization**, **Device**, **Application** e **servicePrincipalName**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| Directory.Read.All |
+|Delegada (conta corporativa ou de estudante)| Directory.Read.All |
 |Delegado (conta pessoal da Microsoft)| Sem suporte. |
 |Aplicativo| Directory.Read.All |
 
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` para especificar que somente as propriedades de extensão sincronizadas a partir do diretório local devem ser retornadas; `false` para especificar que somente as propriedades de extensão que não são sincronizadas a partir do diretório local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
+|isSyncedFromOnPremises|Booliano|`true` para especificar que somente as propriedades de extensão sincronizadas a partir do diretório local devem ser retornadas; `false` para especificar que somente as propriedades de extensão que não são sincronizadas a partir do diretório local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
 
 
 ## <a name="response"></a>Resposta
@@ -68,7 +68,6 @@ Se tiver êxito, esta ação retornará um `200 OK` código de resposta e uma co
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProperties
-
 Content-Type: application/json
 Content-length: 43
 

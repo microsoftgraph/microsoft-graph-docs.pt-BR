@@ -5,25 +5,25 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ce246a04dae270d07abe0e16d3a133265db5b8d5
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 1c28aa329299597e40d856b81e569a734f1b068c
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522367"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719766"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>Conjunto de equipe: sendActivityNotification
 Namespace: microsoft.graph
 
 Enviar uma notificação de feed de atividades para um usuário. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [enviando notificações de atividade do teams](/graph/teams-send-activityfeednotifications).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|TeamsActivity.Send|
-|Delegada (conta Microsoft pessoal)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamsActivity.Send|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -141,7 +141,6 @@ Se você deseja vincular um aspecto que não é representado pelo Microsoft Grap
 -->
 ``` http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
-
 Content-Type: application/json
 
 {

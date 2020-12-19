@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: f4bb07186ede8949256fba40ad107affaf2889cc
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 90b8dd8e7f157c1ac50142110e37d07eed9b1dcf
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400750"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719654"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhar com a API de gerenciamento de qualificação do Azure AD
 
@@ -87,7 +87,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 ## <a name="types"></a>Tipos
 
-- [requestorSettings](requestorsettings.md), [approvalSettings](approvalsettings.md) e [AssignmentReviewSettings](assignmentreviewsettings.md) -usados em um [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) para especificar quem pode solicitar, quem aprova e quem revisa as solicitações de atribuição de pacote de acesso nessa política.
+- [requestorSettings](requestorsettings.md), [approvalSettings](approvalsettings.md), [perguntas](accesspackagequestion.md) e [assignmentReviewSettings](assignmentreviewsettings.md) -usados em um [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) para especificar quem pode solicitar, quem aprova e quem revisa as solicitações de atribuição de pacote de acesso nessa política.
 - [approvalStage](approvalstage.md) -usado no [approvalSettings](approvalsettings.md) para especificar os aprovadores primário, de backup e de escalonamento.
 - [userset](userset.md) subtipos [únicousuário](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md)e [externalSponsors](externalsponsors.md) -usados em [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md) e [assignmentReviewSettings](assignmentreviewsettings.md).
 - [accessPackageSubject](accesspackagesubject.md) -usado no [accessPackageAssignment](accesspackageassignment.md) como um usuário do requerente que tem uma atribuição de pacote do Access.

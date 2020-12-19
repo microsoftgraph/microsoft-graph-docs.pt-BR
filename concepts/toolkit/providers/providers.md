@@ -3,12 +3,12 @@ title: Provedores de kit de ferramentas do Microsoft Graph
 description: Os provedores do Microsoft Graph Toolkit permitem a autenticação e o acesso ao Microsoft Graph para todos os componentes.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a4cd1b58bb29e42ecb0283709e71a3ce3a7e86d7
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: e130e6d56123f847d9c92e16de0e0449c208c7b6
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658227"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720018"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Provedores de kit de ferramentas do Microsoft Graph
 
@@ -129,7 +129,7 @@ import { Providers, ProviderState } from "@microsoft/mgt";
 //assuming a provider has already been initialized
 
 if (Providers.globalProvider.state === ProviderState.SignedIn) {
-  const token = Provider.globalProvider.getAccessToken({scopes: 'User.Read']})
+  const token = Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
 }
 ```
 

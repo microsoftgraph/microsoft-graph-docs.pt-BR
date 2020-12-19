@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1551c886d814336cff44aa50c0713840a55239bf
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 291abc6af2361de47fca234ea88a5984759fd299
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952182"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719591"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>Criar accessPackageAssignmentPolicy
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All  |
+| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -276,6 +276,189 @@ Content-type: application/json
   "accessPackageId": "string (identifier)",
   "displayName": "Users from connected organizations can request",
   "description": "Allow users from configured connected organizations to request and be approved by their sponsors"
+}
+```
+
+### <a name="example-3-create-assignment-policy-with-questions"></a>Exemplo 3: criar política de atribuição com perguntas
+
+As perguntas configuradas em uma política de atribuição serão solicitadas aos solicitantes no escopo da política. Suas respostas serão exibidas para seus aprovadores. As IDs de pergunta são somente leitura e são incluídas na resposta por padrão.
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra uma solicitação para criar uma política de atribuição de pacote do Access. 
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies_questions"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
+Content-type: application/json
+
+{
+    "accessPackageId": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+    "displayName": "Users from connected organizations can request",
+    "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+    "canExtend": false,
+    "durationInDays": 365,
+    "expirationDateTime": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingConnectedOrganizationSubjects",
+        "acceptRequests": true
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "SingleStage",
+        "approvalStages": [{
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [{
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
+                        "description": "group for users from connected organizations which have no external sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.externalSponsors",
+                        "isBackup": false
+                    }
+                ]
+            }
+        ]
+    },
+    "accessReviewSettings": {
+        "isEnabled": false
+    },
+    "questions": [{
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "AZ",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "CA",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "OH",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Ohio",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "isRequired": false,
+        "text": {
+            "defaultText": "Who is your manager?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
+}
+```
+
+
+---
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "4c02f928-7752-49aa-8fc8-e286d973a965",
+  "accessPackageId": "string (identifier)",
+  "displayName": "Users from connected organizations can request",
+  "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+  "questions": [{
+        "id" : "BD3F6B95-458D-4BC8-A9A6-8D4B29F64F3D",
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "AZ",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona?",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "CA",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "OH",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Ohio",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "id" : "F652C13C-A660-4E4C-A1E0-CE9FEC6EE57A",
+        "isRequired": false,
+        "text": {
+            "defaultText": "Who is your manager?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
 }
 ```
 

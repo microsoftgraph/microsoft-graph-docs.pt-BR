@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0a977126c2360d730b553136754f95d69bc710f8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8a3919c2a84b8b248f81599359dcba92d58f830f
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959526"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719675"
 ---
 # <a name="call-redirect"></a>Call: Redirect
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |targets|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento. Se mais de um destino for especificado, será uma chamada toque simultâneo. Isso significa que todos os destinos serão variados ao mesmo tempo e apenas o primeiro destino que escolher será conectado. Oferecemos suporte para até 25 metas para o toque simultâneo.
-|targetDisposition|String|Preterido Os valores possíveis são: `default` , `simultaneousRing` , `forward` . Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada ou chamada de toque simultâneo do número de destinos fornecidos.|
+|targetDisposition|Cadeia de caracteres|Preterido Os valores possíveis são: `default` , `simultaneousRing` , `forward` . Esse parâmetro é preterido, identificaremos automaticamente se é uma chamada ou chamada de toque simultâneo do número de destinos fornecidos.|
 |timeout|Int32|O tempo limite (em segundos) para a operação de redirecionamento. O intervalo do valor de tempo limite é entre 15 e 90 segundos, inclusive. O valor de tempo limite padrão é de 55 segundos para um destino e 60 segundos para vários destinos (sujeito a alterações). |
 |maskCallee|Booliano|Indica se o receptor deve ser oculto do chamador. Se true, a identidade do receptor é a identidade do bot. Padrão: false.|
 |maskCaller|Booliano|Indica se o chamador deve ser oculto do receptor. Se true, a identidade do chamador é a identidade do bot. Padrão: false.|
@@ -71,7 +71,7 @@ Estes exemplos abordarão um fluxo de trabalho de uma notificação de chamada d
 
 ### <a name="example-1-forward-a-call-to-a-target"></a>Exemplo 1: encaminhar uma chamada para um destino
 
-##### <a name="notification---incoming"></a>Notificação-entrada
+#### <a name="notification---incoming"></a>Notificação-entrada
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -123,7 +123,7 @@ Estes exemplos abordarão um fluxo de trabalho de uma notificação de chamada d
 }
 ```
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -169,7 +169,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response", 
@@ -178,7 +178,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---terminated"></a>Notificação-terminada
+#### <a name="notification---terminated"></a>Notificação-terminada
 
 <!-- {
   "blockType": "example", 
@@ -242,7 +242,7 @@ Content-Type: application/json
 
 ### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a>Exemplo 2: encaminhar uma chamada para vários destinos com toque simultâneo
 
-##### <a name="notification---incoming"></a>Notificação-entrada
+#### <a name="notification---incoming"></a>Notificação-entrada
 
 <!-- {
   "blockType": "example", 
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "ignored", 
@@ -347,7 +347,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response", 
@@ -358,7 +358,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---terminated"></a>Notificação-terminada
+#### <a name="notification---terminated"></a>Notificação-terminada
 
 <!-- {
   "blockType": "example", 
@@ -409,6 +409,202 @@ Content-Type: application/json
         "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
         "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
         "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-3-forward-a-call-to-a-pstn-number"></a>Exemplo 3: encaminhar uma chamada para um número PSTN
+
+Essa chamada requer uma instância de aplicativo com um número PSTN atribuído.
+
+#### <a name="step-1-create-application-instance"></a>Etapa 1: criar instância de aplicativo
+Usando credenciais de administrador de locatário, chame os seguintes cmdlets no PowerShell remoto do locatário para criar a instância do aplicativo. Para obter mais informações, consulte [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+```
+PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+#### <a name="step-2-assign-microsoft-365-licenses"></a>Etapa 2: atribuir licenças do Microsoft 365
+1. Use as credenciais de administrador de locatário para entrar https://admin.microsoft.com/ e acessar a guia **usuários-> ativos** .
+2. Selecione a instância do aplicativo, atribua o **plano de chamadas domésticas e internacionais da microsoft 365** e **o Microsoft 365 Phone System-licenças de usuário virtual** e clique em **salvar alterações**. Se as licenças necessárias não estiverem disponíveis no locatário, você poderá obtê-las na guia **serviços de compra de > de cobrança** .
+#### <a name="step-3-acquire-pstn-number"></a>Etapa 3: adquirir o número PSTN
+1. Use as credenciais de administrador de locatário para entrar no https://admin.teams.microsoft.com/ e clique na guia **portal herdado** no painel esquerdo.
+2. Na nova página, vá para a guia **números de telefone de > de voz** .
+3. Clique no **+** botão, selecione **novos números de serviço** e vá para a página **Adicionar novos números de serviço** .
+4. Selecione **país/região**, **estado/região**, **cidade**, **quantidade** de entrada e clique em **Adicionar** para pesquisar. Clique em **adquirir números**. O número adquirido recentemente será exibido na guia **números de telefone** .
+#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Etapa 4: atribuir o número PSTN à instância do aplicativo
+Com as credenciais de administrador de locatário, chame os seguintes cmdlets no PowerShell remoto do locatário para atribuir o número PSTN à instância do aplicativo. Para obter mais informações, consulte [set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) e [Sync-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+```
+PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+> **Observação:** Se um locatário tem números PSTN australianos atribuídos a qualquer instância de aplicativo, essa chamada pode falhar. Se um locatário é recém-criado, pode levar alguns dias para que esse recurso esteja disponível.
+
+#### <a name="notification---incoming"></a>Notificação-entrada
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer",
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "applicationInstance": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "PstnAppInstance",
+                "id": "7629bdce-046c-4903-86b4-a8f718277e1a",
+                "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+              }
+            },
+            "endpointType": "default",
+            "id": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+            "region": "amer",
+            "languageId": null
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
+      }
+    }
+  ]
+}
+```
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://graph.microsoft.com/beta/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
+Content-Type: application/json
+
+{
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
+}
+```
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response", 
+  "@odata.type": "microsoft.graph.None"
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+#### <a name="notification---terminated"></a>Notificação-terminada
+
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+} -->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "terminated",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer",
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "applicationInstance": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "PstnAppInstance",
+                "id": "7629bdce-046c-4903-86b4-a8f718277e1a",
+                "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+              }
+            },
+            "endpointType": "default",
+            "id": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+            "region": "amer",
+            "languageId": null
+          }
+        ],
+        "answeredBy": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "encrypted": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "1xt4uextl99sdzwdxuvdxrvgrv8gehcq7jdgf9yhzeto"
+            }
+          },
+          "endpointType": "default"
+        },
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
       }
     }
   ]

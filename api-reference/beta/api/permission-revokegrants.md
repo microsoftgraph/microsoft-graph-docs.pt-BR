@@ -5,12 +5,12 @@ author: learafa
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bca087a6fc5e22701ef5471d213dcf0b84037f02
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 1ad96e29df543fd9efa0f6423298eb5612c6b271
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635464"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720011"
 ---
 # <a name="permission-revokegrants"></a>permissão: revokeGrants
 Namespace: microsoft.graph
@@ -80,7 +80,6 @@ Se tiver êxito, esta ação retornará um `200 OK` código de resposta e uma [p
 -->
 ``` http
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-
 Content-Type: application/json
 Content-length: 95
 

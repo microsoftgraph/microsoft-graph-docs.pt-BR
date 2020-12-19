@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fd95cffe0b0f3f5996c7653c6be899ecd8d3f32e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 415f00518210345103a1f7fcbcba60931a76dd7e
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952112"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719570"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Atualizar accessPackageAssignmentPolicy
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -50,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar um [
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da política.|
-|description|String|A descrição da política.|
+|displayName|Cadeia de caracteres|O nome de exibição da política.|
+|description|Cadeia de caracteres|A descrição da política.|
 |exextend|Booliano|Indica se um usuário pode estender a duração da atribuição de pacote de acesso após a aprovação.|
 |durationInDays|Int32|O número de dias em que as atribuições dessa política duram até que tenham expirado.|
 |expirationDateTime|DateTimeOffset|A data de validade das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -68,8 +68,8 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+Nesta atualização de política, uma das opções para a pergunta de múltipla escolha foi removida. Os solicitantes futuros não terão mais a opção removida disponível.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy"
@@ -81,35 +81,88 @@ Content-Type: application/json
 Content-length: 1000
 
 {
-  "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-  "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-  "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
-  "isDenyPolicy": false,
-  "canExtend": false,
-  "durationInDays": 365,
-  "requestorSettings" : {
-    "scopeType": "AllExistingDirectorySubjects",
-    "acceptRequests": true,
-    "allowedRequestors": []
-  },
-  "requestApprovalSettings" : {
-    "isApprovalRequired": false,
-    "isApprovalRequiredForExtension": false,
-    "isRequestorJustificationRequired": false,
-    "approvalMode": "NoApproval",
-    "approvalStages": []
-  },
-  "accessReviewSettings" : null
+    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+    "accessPackageId": "4c02f928-7752-49aa-8fc8-e286d973a965",
+    "displayName": "All Users",
+    "description": "All users can request for access to the directory.",
+    "canExtend": false,
+    "durationInDays": 365,
+    "expirationDateTime": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingConnectedOrganizationSubjects",
+        "acceptRequests": true,
+        "allowedRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "SingleStage",
+        "approvalStages": [{
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [{
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
+                        "description": "group for users from connected organizations which have no external sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.externalSponsors",
+                        "isBackup": false
+                    }
+                ]
+            }
+        ]
+    },
+    "accessReviewSettings": {
+        "isEnabled": false
+    },
+    "questions": [{
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "AZ",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "CA",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "isRequired": false,
+        "text": {
+            "defaultText": "Who is your manager?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackageassignmentpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
@@ -132,14 +185,60 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-  "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-  "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
-  "isDenyPolicy": false,
-  "canExtend": false,
-  "durationInDays": 365,
-  "accessReviewSettings" : null
+    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+    "accessPackageId": "4c02f928-7752-49aa-8fc8-e286d973a965",
+    "displayName": "Users from connected organizations can request",
+    "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+    "questions": [{
+        "id" : "BD3F6B95-458D-4BC8-A9A6-8D4B29F64F3D",
+        "isRequired": false,
+        "text": {
+            "defaultText": "what state are you from?",
+            "localizedTexts": [{
+                "text": "¿De qué estado eres?",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+        "choices": [{
+            "actualValue": "AZ",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Arizona",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "CA",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "California",
+                    "languageCode": "es"
+                }]
+            }
+        }, {
+            "actualValue": "OH",
+            "displayValue": {
+                "localizedTexts": [{
+                    "text": "Ohio",
+                    "languageCode": "es"
+                }]
+            }
+        }],
+        "allowsMultipleSelection": false
+    }, {
+        "id" : "F652C13C-A660-4E4C-A1E0-CE9FEC6EE57A",
+        "isRequired": false,
+        "text": {
+            "defaultText": "Who is your manager?",
+            "localizedTexts": [{
+                "text": "por qué necesita acceso a este paquete",
+                "languageCode": "es"
+            }]
+        },
+        "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+        "isSingleLineQuestion": false
+    }]
 }
 ```
 
