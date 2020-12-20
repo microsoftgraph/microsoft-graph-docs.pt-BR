@@ -1094,12 +1094,12 @@ items:
                 href: api/event-get.md
               - name: Atualizar evento
                 href: api/event-update.md
-              - name: Encaminhar evento
-                href: api/event-forward.md
               - name: Excluir evento
                 href: api/event-delete.md
               - name: Obter intervalo
                 href: api/event-delta.md
+              - name: Encaminhar evento
+                href: api/event-forward.md
               - name: Cancelar evento
                 href: api/event-cancel.md
               - name: Evento Accept
