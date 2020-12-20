@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bf28ab265b4c9f837d292f7e8c65c9f45247d19c
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: c102ee70ccb025017d96aa10061d3bceb0b2e983
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719521"
+ms.locfileid: "49720711"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -124,7 +124,7 @@ Veja a seguir uma representação JSON do recurso
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |hideAttendees|Booleano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
 |id|Cadeia de caracteres| Identificador exclusivo do evento. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Somente leitura. |
-|importância|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro. Se estiver definido como true, independentemente de ser um evento de um ou de vários dias, a hora de início e término deve ser definida como meia-noite e estar no mesmo fuso horário.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
 |isDraft|Boleano|Defina como verdadeiro se o usuário atualizou a reunião no Outlook mas não enviou as atualizações aos participantes. Defina como falso se todas as alterações forem enviadas, ou se o evento for um compromisso sem participantes.|
@@ -189,12 +189,12 @@ Veja a seguir uma representação JSON do recurso
 |[Obter evento](../api/event-get.md) | [event](event.md) |Ler as propriedades e as relações do objeto event.|
 |[Atualizar](../api/event-update.md) | [event](event.md)   |Atualizar o objeto event. |
 |[Excluir](../api/event-delete.md) | Nenhum |Excluir o objeto event. |
+|[delta](../api/event-delta.md)|Coleção [event](event.md)|Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos) do calendário principal do usuário.|
+|[forward](../api/event-forward.md)|Nenhum|Permite que o organizador ou os participantes de um evento de reunião encaminhe a solicitação de reunião para um novo destinatário.|
 |[cancel](../api/event-cancel.md) | Nenhum | Enviar a mensagem de cancelamento do organizador para todos os participantes e cancelar a reunião específica. |
 |[accept](../api/event-accept.md)|Nenhum|Aceite o evento específico em um calendário do usuário.|
 |[tentativelyAccept](../api/event-tentativelyaccept.md)|Nenhum|Aceitar provisoriamente o evento específico em um calendário de usuário.|
 |[decline](../api/event-decline.md)|Nenhum|Recusar o convite para o evento específico em um calendário de usuário.|
-|[forward](../api/event-forward.md)|Nenhum|Permite que o organizador ou os participantes de um evento de reunião encaminhe a solicitação de reunião para um novo destinatário.|
-|[delta](../api/event-delta.md)|Coleção [event](event.md)|Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos) do calendário principal do usuário.|
 |[dismissReminder](../api/event-dismissreminder.md)|Nenhum|Descarte o lembrete do evento específico em um calendário de usuário.|
 |[snoozeReminder](../api/event-snoozereminder.md)|Nenhum|Adie um lembrete de evento específico em um calendário do usuário até um novo horário.|
 |[List instances](../api/event-list-instances.md) |[Event](event.md) collection| Obtenha uma coleção do objeto Event.|
