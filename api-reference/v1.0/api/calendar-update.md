@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c6c17da08557d9026f70c1e9bde987e4c9415a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b04ae92134cf46298f215cd1d14f6f5164bdedd2
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070349"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720683"
 ---
 # <a name="update-calendar"></a>Atualizar calendário
 
@@ -59,6 +59,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|isDefaultCalendar|Booliano|True se esse calendário for o calendário padrão do usuário, caso contrário, será false.|
 |nome|String|O nome do calendário.|
 
 ## <a name="response"></a>Resposta
@@ -116,9 +117,11 @@ Content-type: application/json
     "id":"AAMkADJmMVAAA=",
     "name":"Social events",
     "color":"auto",
+    "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
     "canEdit":true,
     "allowedOnlineMeetingProviders": [
                 "teamsForBusiness"

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b1b7cf1c502b54c258f7e657881b53749548758a
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: a55dfbfdc3266cb246814d58bb7110cab21cebe0
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932427"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720550"
 ---
 # <a name="event-delta"></a>evento: delta
 
@@ -70,7 +70,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma cole�
 
 O exemplo a seguir mostra como fazer uma única chamada de função **delta** e limitar o número máximo de eventos no corpo da resposta a 2.
 
-Para controlar as alterações em um modo de exibição de calendário, você faz uma ou mais chamadas de função **delta** , com os [tokens de estado](/graph/delta-query-overview) apropriados, para obter o conjunto de alterações incrementais desde a última consulta delta. 
+Para controlar as alterações em um modo de exibição de calendário, você faz uma ou mais chamadas de função **delta**, com os [tokens de estado](/graph/delta-query-overview) apropriados, para obter o conjunto de alterações incrementais desde a última consulta delta. 
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -99,7 +99,7 @@ Prefer: odata.maxpagesize=2
 
 
 ##### <a name="response"></a>Resposta
-Se a solicitação for bem-sucedida, a resposta incluiria um token de estado, que é um _skipToken_ (em um cabeçalho de resposta _@odata.nextLink_ ) ou um _deltaToken_ (em um cabeçalho de resposta _@odata.deltaLink_ ). Respectivamente, elas indicam se você deverá continuar com a série ou se já concluiu a obtenção de todas as alterações dessa série.
+Se a solicitação for bem-sucedida, a resposta incluiria um token de estado, que é um _skipToken_ (em um cabeçalho de resposta _@odata.nextLink_) ou um _deltaToken_ (em um cabeçalho de resposta _@odata.deltaLink_). Respectivamente, elas indicam se você deverá continuar com a série ou se já concluiu a obtenção de todas as alterações dessa série.
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
@@ -128,6 +128,7 @@ Content-length: 359
       "transactionId": null,
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
+      "isDraft": false,
       "isReminderOn": true
     }
   ]
