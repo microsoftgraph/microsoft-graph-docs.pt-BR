@@ -1,23 +1,24 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: tipo de recurso driveItem
 description: Item é o principal modelo de dados na API do OneDrive. Tudo é um item.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 22b3d62ea83aa9e1b91f6be1f181bbe575341138
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: a4c05dece6a73977137240d63368d30fe94712d9
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581985"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714323"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
 Namespace: microsoft.graph
 
-O recurso **DriveItem** representa um arquivo, pasta ou outro item armazenado em uma unidade. Todos os objetos do sistema de arquivos no OneDrive e no SharePoint são retornados como recursos **driveItem**.
+O recurso **DriveItem** representa um arquivo, pasta ou outro item armazenado em uma unidade.
+
+Todos os objetos do sistema de arquivos no OneDrive e no SharePoint são retornados como recursos **driveItem**. Os itens nas bibliotecas de documentos do Microsoft Office SharePoint Online podem ser representados como recursos [listItem][] ou **driveItem**.
 
 Há duas maneiras principais de endereçar um recurso **driveItem**:
 

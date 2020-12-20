@@ -187,11 +187,11 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -437,7 +437,7 @@ items:
                 href: api/todo-list-lists.md
       - name: Grupos
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/groups-overview.md
           - name: Grupo
             href: resources/group.md
@@ -639,7 +639,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -931,6 +931,10 @@ items:
                 href: api/event-delete.md
               - name: Obter intervalo
                 href: api/event-delta.md
+              - name: Encaminhar evento
+                href: api/event-forward.md
+              - name: Cancelar evento
+                href: api/event-cancel.md
               - name: Evento Accept
                 href: api/event-accept.md
               - name: Aceitar provisoriamente
@@ -1079,7 +1083,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1189,7 +1193,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamadas
                 items:
@@ -1250,7 +1254,7 @@ items:
       - name: Dispositivos e aplicativos
         displayName: Intune
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/intune-graph-overview.md
           - name: Gerenciamento de aplicativos
             href: resources/intune-app-conceptual.md
@@ -3640,7 +3644,7 @@ items:
       - name: Arquivos
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/onedrive.md
           - name: Unidades
             href: resources/drive.md
@@ -4284,7 +4288,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4395,7 +4399,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -4485,7 +4489,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -4720,12 +4724,12 @@ items:
                 href: api/reportroot-getyammergroupsactivitygroupcounts.md
               - name: Obter contagens de atividades
                 href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -4751,7 +4755,7 @@ items:
             items:
               - name: Avaliação de ameaças
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -4790,7 +4794,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -4836,7 +4840,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -5308,7 +5312,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Lista de tarefas
             href: resources/todotasklist.md

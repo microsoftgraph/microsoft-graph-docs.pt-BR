@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: ca3886194fc8fc8ad7382d40cafbaeeed62c3bc1
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 3783f28dc3b5883b2f58f0c866e2dac852391fa5
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706028"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719978"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>tipo de recurso b2cIdentityUserFlow
 
@@ -44,6 +44,8 @@ Para ajudar você a configurar as tarefas de identidade mais comuns para seus ap
 |[Criar uma tarefa de atributo de usuário](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Crie uma atribuição de atributo de usuário em um fluxo de usuário B2C.|
 |[Idiomas da lista](../api/b2cidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) coleção|Recuperar todos os idiomas no fluxo de usuário do B2C.|
 |[Criar idioma](../api/b2cidentityuserflow-put-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Cria um idioma personalizado em um fluxo de usuário do B2C.|
+|[Obtenha a configuração dos conectores de API para o fluxo do usuário](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Obtenha a configuração dos conectores de API usados no fluxo do usuário. O parâmetro de consulta $expand não é compatível com este método.|
+|[Configurar um conector de API em um fluxo de usuários](../api/b2cidentityuserflow-put-apiConnectorConfiguration.md)|Nenhum| Configure um conector de API para etapas específicas em um fluxo de usuário, atualizando a propriedade [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md).|
 
 ## <a name="properties"></a>Propriedades
 
@@ -54,6 +56,7 @@ Para ajudar você a configurar as tarefas de identidade mais comuns para seus ap
 |userFlowTypeVersion|Único|A versão do fluxo de usuário.|
 |isLanguageCustomizationEnabled|Booliano|A propriedade que determina se a personalização de idioma é habilitada dentro do fluxo do usuário do B2C. A personalização de idioma não é habilitada por padrão para os fluxos de usuário do B2C.|
 |defaultLanguageTag|Cadeia de caracteres|Indica o idioma padrão do b2cIdentityUserFlow que será usado quando nenhuma `ui_locale` marca for especificada na solicitação. Esse campo é [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível.|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Configuração para habilitar um conector de API para uso como parte do fluxo do usuário. Você somente pode obter o valor deste objeto usando [Obter a userFlowApiConnectorConfiguration](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md).|
 
 ## <a name="relationships"></a>Relações
 
@@ -61,7 +64,7 @@ Para ajudar você a configurar as tarefas de identidade mais comuns para seus ap
 |:---------------|:--------|:----------|
 |identityProviders|Coleção [identityProvider](../resources/identityprovider.md)|Os provedores de identidade incluídos no fluxo de usuário.|
 |userAttributeAssignments|Coleção[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) |As atribuições de atributo de usuário incluídas no fluxo do usuário.|
-|idiomas|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) coleção|Os idiomas com suporte para personalização dentro do fluxo do usuário. A personalização de idioma não é habilitada por padrão para os fluxos de usuário do B2C.|
+|idiomas|coleção [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Os idiomas com suporte para personalização dentro do fluxo do usuário. A personalização de idioma não é habilitada por padrão para os fluxos de usuário do B2C.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -83,6 +86,9 @@ Veja a seguir uma representação JSON do recurso.
     "defaultLanguageTag": "String",
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
-    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}]
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],
+    "apiConnectorConfiguration": {
+      "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
+    }
 }
 ```

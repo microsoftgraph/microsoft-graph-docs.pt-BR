@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3491288db2480c24440ad33e209236125c570426
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1422ca46a587f8ffd1987b34e3635364e82a5a3f
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038764"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719584"
 ---
 # <a name="update-event"></a>Atualizar evento
 
@@ -63,7 +63,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |corpo|[ItemBody](../resources/itembody.md)|O corpo da mensagem associada ao evento.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao evento.|
 | end|DateTimeTimeZone|A data, a hora e o fuso horário em que o evento termina.|
-|importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|hideAttendees|Booleano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é falso.|
+|importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
@@ -117,6 +118,7 @@ Content-length: 285
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true,
+  "hideAttendees": false,
   "categories": ["Red category"]
 }
 ```
@@ -135,9 +137,10 @@ Content-length: 285
 ---
 
 
-### <a name="response"></a>Resposta
+##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -161,6 +164,7 @@ Content-length: 285
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true,
+  "hideAttendees": false,
   "onlineMeeting": {
         "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
         "conferenceId": "177513992",
