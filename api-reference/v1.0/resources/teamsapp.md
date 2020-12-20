@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 88b2c5d87fd5b084495e970320770c49a6f91f07
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 55fd373fd59f79abdfca8b3e066ca496daf8770b
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607039"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706000"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
@@ -24,10 +24,10 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Lista de aplicativos publicados](../api/appcatalogs-list-teamsapps.md) | Coleção [teamsApp](teamsapp.md) | Lista de aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
-|[Publicar um aplicativo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publica um aplicativo ao catálogo de aplicativos da sua organização.|
-|[Atualizar um aplicativo publicado](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo publicado no catálogo de aplicativos da sua organização.|
-|[Apagar um aplicativo publicado](../api/teamsapp-delete.md) | Nenhum(a) | Remova um aplicativo publicado do catálogo de aplicativos da sua organização.|
+|[Listar aplicativos no catálogo](../api/appcatalogs-list-teamsapps.md) | Coleção [teamsApp](teamsapp.md) | Liste todos os aplicativos no catálogo de aplicativos do Microsoft Teams.|
+|[Carregar aplicativo no catálogo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Faça upload de um aplicativo para o catálogo de aplicativos da sua organização.|
+|[Atualizar aplicativo no catálogo](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo publicado no catálogo de aplicativos da sua organização.|
+|[Remover aplicativo do catálogo](../api/teamsapp-delete.md) | Nenhum(a) | Remova um aplicativo do catálogo de aplicativos da sua organização.|
 
 ## <a name="properties"></a>Propriedades
 

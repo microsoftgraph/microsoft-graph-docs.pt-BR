@@ -1,23 +1,25 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: recurso listItem
 description: Representa um item em uma lista do sharepoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 276a8f61cc12cb2860bab0025d430f039b96b89a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e9e7b00ee87127b7844d2d7208d63c8e4fb6af5
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025211"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714113"
 ---
 # <a name="listitem-resource"></a>recurso listItem
 
 Namespace: microsoft.graph
 
-Representa um item em uma **[lista][]** do Sharepoint.
+Representa um item em uma [lista][] do Microsoft Office SharePoint Online.
+
+Todos os itens em uma biblioteca de documentos do Microsoft Office SharePoint Online podem ser representados como um **listItem** ou um r[ecurso driveItem][].
+
 Os valores de coluna na lista estão disponíveis por meio do dicionário `fieldValueSet`.
 
 ## <a name="methods"></a>Métodos
@@ -40,7 +42,7 @@ Todos os exemplos são relativos a uma **[lista][]**:`https://graph.microsoft.co
 [Obter análises]: ../api/itemanalytics-get.md
 [Obter atividades por intervalo]: ../api/itemactivitystat-getactivitybyinterval.md
 [Create]: ../api/listitem-create.md
-[Excluir]: ../api/listitem-delete.md
+[Delete]: ../api/listitem-delete.md
 [Atualizar]: ../api/listitem-update.md
 
 [itemActivityStat]: itemactivitystat.md
