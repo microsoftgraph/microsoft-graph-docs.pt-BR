@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 87bb3b1a08bb92a9454a270a2a9fa048f46512cf
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 756dde3e71519c7465d0a1c9f093ba6554732068
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705811"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714281"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -41,10 +41,10 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 |:---|:---|:---|
 | Alteração | beta | Alterada a propriedade **floorNumber** (Edm.Int) no recurso [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) para **piso** (Edm.String). |
 | Alteração | beta | Alterada a propriedade **roomNumber** (Edm.Int) no recurso [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) para **roomName** (Edm.String). |
-| Alteração | beta | Tipo alterado de relacionamento allowedUsers no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta). |
-| Alteração | beta | Tipo alterado de relação allowedGroups no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta). |
+| Alteração | beta | Tipo alterado de relacionamento allowedUsers no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true). |
+| Alteração | beta | Tipo alterado de relação allowedGroups no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true). |
 | Alteração | beta | Tipos de enumeração atualizados no recurso [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values). |
-| Adição | beta | Adicionada a ação de [configuração de atualização](/graph/api/printjob-update-configuration?view=graph-rest-beta) ao recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta).|
+| Adição | beta | Adicionada a ação de [configuração de atualização](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) ao recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
 
@@ -81,7 +81,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionada a entidade [userFlowLanguagePage](/graph/api/resources/userflowlanguagepage?view=graph-rest-beta&preserve-view=true) que define os padrões de idioma e personalizações em um fluxo de usuário em um locatário do Azure Active Directory ou Azure Active Directory B2C. |
 | Adição | beta | Propriedades adicionadas para **isLanguageCustomizationEnabled** e **defaultLanguageTag** e métodos para listar e criar idiomas para o recurso [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Métodos adicionados para listar idiomas para o recurso [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true). |
-| Adição | beta | Adicionada a [configuração do método de autenticação de e-mail](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta) à API de política de métodos de [autenticação](/graph/api/resources/authenticationmethodspolicies-overview).|
+| Adição | beta | Adicionada a [configuração do método de autenticação de e-mail](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) à API de política de métodos de [autenticação](/graph/api/resources/authenticationmethodspolicies-overview).|
 
 ### <a name="teamwork"></a>Trabalho em equipe
 
@@ -103,15 +103,16 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionada a propriedade **tenantId** ao recurso [aadUserConversationMember](/graph/api/resources/aadUserConversationMember?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionada a propriedade **visibleHistoryStartDateTime** ao recurso [talksMember](/graph/api/resources/conversationMember?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionados os seguintes métodos ao recurso [chatMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true): [Adicionar membro do chat](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true), [Excluir membro do chat](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true).|
-| Adição | beta | Adicionada a propriedade **chatType** ao recurso de [bate-papo](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionada a propriedade **chatType** ao recurso de [bate-papo](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionado o tipo de enumeração **chatType**. |
 | Adição | beta | Adicionados os seguintes métodos ao recurso de [bate-papo](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true): Criar [bate-papo](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true), [Atualizar bate-papo](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionado o recurso [teamworkBot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionado o relacionamento do **bot** ao recurso [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionada a propriedade **moderationSettings** ao recurso de [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). |
-| Adição | beta | Adicionado o tipo de recurso [channelModerationSettings](https://docs.microsoft.com/en-us/graph/api/resources/channelModerationSettings2?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionado o tipo de recurso [channelModerationSettings](/graph/api/resources/channelModerationSettings2?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionado o tipo de enumeração **replyRestriction**. |
 | Adição | beta | Adicionado o tipo de enumeração **userNewMessageRestriction**. |
+| Adição | beta | Adicionado o método [Remover membro de chat](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) para o tipo de recurso do [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).|
 
 ## <a name="november-2020"></a>Novembro de 2020
 
@@ -155,9 +156,9 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 | **Tipo de alteração** | **Versão**   | **Descrição** |
 |:---|:---|:---|
-|Adição|beta|Adicionada a propriedade **hasPhysicalDevice** para o recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta).|
-|Adição|beta|Foi adicionada a ação [abort](/graph/api/printjob-abort?view=graph-rest-beta) ao recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta).|
-|Adição|beta|Foi adicionada a propriedade de configuração à ação [redirect](/graph/api/printjob-redirect?view=graph-rest-beta) no recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta).|
+|Adição|beta|Adicionada a propriedade **hasPhysicalDevice** para o recurso [impressora](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true).|
+|Adição|beta|Foi adicionada a ação [abort](/graph/api/printjob-abort?view=graph-rest-beta&preserve-view=true) ao recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).|
+|Adição|beta|Foi adicionada a propriedade de configuração à ação [redirect](/graph/api/printjob-redirect?view=graph-rest-beta&preserve-view=true) no recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo
 
@@ -2679,7 +2680,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 | Adicionar as propriedades **passwordNotificationWindowInDays** e **passwordValidityPeriodInDays** no recurso [domain](/graph/api/resources/domain?view=graph-rest-1.0&preserve-view=true).|
-| Adição | beta e v1.0 | Adicione as propriedades **complianceExpirationDateTime**, **profileType** e **systemLabels** ao recurso do [dispositivo](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true).|
+| Adição | Beta e v1.0 | Adicione as propriedades **complianceExpirationDateTime**, **profileType** e **systemLabels** ao recurso do [dispositivo](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true).|
 | Adição | Beta e v1.0 | Adicione a propriedade **isResourceAccount** ao recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true).|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada

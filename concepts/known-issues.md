@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 87654da1f8e995d7f8c893ad2c0ff54f7e35b0a0
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: b62417559c5fb70b973055a732a56ee66aadc41f
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706007"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714127"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -331,6 +331,9 @@ Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclu
 ### <a name="get-teams-is-not-supported"></a>GET /teams não tem suporte
 
 Para obter uma lista de equipes, confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams).
+
+### <a name="unable-to-remove-members-from-chat"></a>Não foi possível remover os membros do chat
+Em certas situações, a chamada para `DELETE /chats/chat-id/members/membership-id` falhará com um `404` mesmo se o membro do chat existir. Isso se deve a um problema com o cálculo do `membership-id`.
 
 ### <a name="unable-to-filter-team-members-by-roles"></a>Não é possível filtrar os membros da equipe por funções
 A consulta de filtro para obter membros de uma equipe com base em suas funções `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')`pode não funcionar. O servidor pode responder com uma.`BAD REQUEST`
