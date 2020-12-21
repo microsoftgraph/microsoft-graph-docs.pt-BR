@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 69cc7d0ba5232770bb3b014690991ffefff6df02
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 3c7b076f08a9377c7b68b16d0a8b4c4cbb7c6afb
+ms.sourcegitcommit: 35b37318d18b4a613b4702be1aa25b71525800c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597169"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "49721097"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -19,17 +19,54 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 
 ## <a name="december-2020-new-and-generally-available"></a>Dezembro de 2020: Novo e disponível para o público geral
 
+### <a name="calendar"></a>Calendário
+- Os organizadores da reunião podem usar a propriedade **hideAttendees** de um [evento](/graph/api/resources/event) para controlar se os participantes podem ver uns aos outros na lista de **acompanhamento** da reunião.
+- GA da propriedade **isDraft** e método de [cancelamento](/graph/api/event-cancel) que estão disponíveis para os organizadores e o método de [encaminhamento](/graph/api/event-forward) disponível para organizadores e participantes para gerenciar melhor os recursos do [evento](/graph/api/resources/event) em um calendário.
+- GA das propriedades **hexColor** e **isDefault** de um [calendário](/graph/api/resources/calendar) para gerenciar melhor os calendários.
+
 ### <a name="cloud-communications"></a>Comunicações na nuvem
-GA do recurso [presença](/graph/api/resources/presence), permitindo obter as informações de presença de um ou mais usuários.
+GA do recurso de [presença](/graph/api/resources/presence), permitindo obter a presença de um ou mais usuários, como disponibilidade e atividade do usuário.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+Experimente um novo [tutorial](tutorial-riskdetection-api.md) para aprender como usar a [API de proteção de identidade](/graph/api/resources/identityprotectionroot) para identificar o risco e configurar um fluxo de trabalho para confirmar o comprometimento ou habilitar a correção.
 
 ### <a name="teamwork"></a>Trabalho em equipe
 - GA da [API para gerenciar a instalação do aplicativo Teams](/graph/api/resources/teamsappinstallation), incluindo a instalação de aplicativos ou a adição, a remoção ou a atualização do aplicativo em uma equipe ou no escopo pessoal de um usuário.
 - [Obtenha um chat entre um usuário e um aplicativo do Teams](/graph/api/userscopeteamsappinstallation-get-chat).
 
-## <a name="december-2020-new-in-preview-only"></a>Dezembro de 2020: Novidades somente na pré-visualização
+### <a name="use-the-toolkit"></a>Usar o kit de ferramentas
+GA do Kit de ferramentas do Microsoft Graph 2.0 - esta versão inclui um novo [componente para Tarefas Pendentes do Microsoft Graph](/graph/toolkit/components/todo), diferente do [componente de tarefas do Planner](/graph/toolkit/components/tasks), e um [componente de cartão pessoal aprimorado](/graph/toolkit/components/person-card). Confira a [postagem do blog](https://developer.microsoft.com/pt-BR/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/) relacionada para obter mais informações.
+
+## <a name="december-2020-new-in-preview-only"></a>Dezembro de 2020: novo apenas em pré-visualização
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta Eletrônica
+Continuar a cumprir o pipeline das [APIs do Centro de conformidade do Microsoft 365](/graph/api/resources/ediscoveryapioverview?view=graph-rest-beta&preserve-view=true)é o recurso de [guardião](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true) e suas operações e métodos relacionados para [liberar](/graph/api/custodian-release?view=graph-rest-beta&preserve-view=true) ou [ativar](/graph/api/custodian-activate?view=graph-rest-beta&preserve-view=true) um guardião. Use o recurso do **guardião** para acessar os dados do guardião ([userSource](/graph/api/resources/userSource?view=graph-rest-beta&preserve-view=true)) em uma caixa de correio do Exchange Online e OneDrive for Business, sites do Microsoft Office SharePoint Online ([siteSource](/graph/api/resources/siteSource?view=graph-rest-beta&preserve-view=true)) e grupos do Microsoft 365 ([unifiedGroupSource](/graph/api/resources/unifiedGroupSource?view=graph-rest-beta&preserve-view=true)).
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+Identifique o status de falha de um desktop virtual gerenciado em nuvem coletivamente como `failed`, na propriedade de **status** do recurso [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+- [Atualize](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) a [configuração](/graph/api/resources/printjobconfiguration?view=graph-rest-beta&preserve-view=true) de um [trabalho de impressão](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).
+- Para obter detalhes sobre a renomeação de algumas propriedades e redigitação de relacionamentos, confira a seção de [dezembro de 2020](changelog.md#december-2020) do [changelog da API](changelog.md) para obter detalhes.
+
+### <a name="education"></a>Educação
+- Se os alunos forem adicionados após a publicação da tarefa, os professores podem controlar o comportamento da tarefa usando a propriedade **addedStudentAction** do recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
+- Os professores podem postar notificação de publicação de tarefa por meio da propriedade **notificationChannelUrl** do recurso **educationAssignment**.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-Obtenha ou defina os metadados de versão e criação de um Azure AD [termos de uso](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) [contrato](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true), [arquivo de contrato](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) e [agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true)
+Obtenha ou defina a versão e os metadados de criação para um [contrato](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) de [termos de uso](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) do Azure Active Directory, [arquivo de contrato](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) e [localização de contrato](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+Como parte do [gerenciamento de direitos](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true) do Azure Active Directory, quando os usuários que acessam grupos, aplicativos ou sites do SharePoint Online solicitam um período de acesso a um [pacote de acesso](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true), eles podem responder às [perguntas](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true) representadas no [conteúdo localizado](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) na [solicitação de permanência do pacote de acesso](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+- Os administradores podem associar fluxos de usuários a aplicativos que são compartilhados com usuários externos e permitir a [inscrição de autoatendimento](/azure/active-directory/external-identities/self-service-sign-up-overview) nesses aplicativos. Eles podem personalizar um fluxo de usuário de inscrição de autoatendimento e criar uma experiência de inscrição personalizada. Especificamente, eles criam um [ouvinte para um evento de início de inscrição para chamar um fluxo de usuário customizado](/graph/api/resources/invokeuserflowlistener?view=graph-rest-beta&preserve-view=true). Depois que um aplicativo é associado ao fluxo do usuário, os usuários que acessam esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
+- Em um [fluxo de usuário do Azure Active Directory](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) ou no [fluxo de usuário do locatário do Azure Active Directory B2C](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true), você pode gerenciar os padrões de idioma e [personalizar o idioma e as cadeias de caracteres exibidas para os usuários no fluxo do usuário](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true).
+- Use um [conector de API](/graph/api/resources/identityapiconnector?view=graph-rest-beta&preserve-view=true) em fluxos de usuário para inscrição de autoatendimento do Azure Active Directory e inscrição do Azure Active Directory B2C, para chamar uma API em uma etapa específica para afetar a execução do fluxo de usuário.
+- Defina uma [política de métodos de autenticação OTP de email](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) para um locatário.
+
+### <a name="to-do-tasks"></a>Tarefas pendentes
+Assine para [receber notificações de alterações](webhooks.md) de [Tarefas Pendentes](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="november-2020-new-and-generally-available"></a>Novembro de 2020: Novo e geralmente disponível
 

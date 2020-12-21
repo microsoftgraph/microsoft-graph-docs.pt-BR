@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 756dde3e71519c7465d0a1c9f093ba6554732068
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: cfe6583f49f1ae4b48208214acdf701f146d0097
+ms.sourcegitcommit: 4da3cf28f252c974fb00894d21b6e04eccbeffbe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714281"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49722496"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,7 +18,17 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 ## <a name="december-2020"></a>Dezembro de 2020
 
-### <a name="change-notifications"></a>Notificações de alteração
+### <a name="calendar"></a>Calendário
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 e beta | A propriedade **hideAttendees** foi adicionada à entidade [evento](/graph/api/resources/event).
+| Adição | v1.0 | A propriedade **isDraft** foi adicionada à entidade [evento](/graph/api/resources/event). |
+| Adição | v1.0 | Os métodos de [cancelamento](/graph/api/event-cancel) e [encaminhamento](/graph/api/event-forward) foram adicionados para gerenciar os recursos de [evento](/graph/api/resources/event) em um calendário. |
+| Adição | v1.0 | A propriedade **hexColor** foi adicionada à entidade [calendário](/graph/api/resources/calendar). |
+| Adição | v1.0 | A propriedade **isDefaultCalendar** foi adicionada à entidade [calendário](/graph/api/resources/calendar).
+
+### <a name="change-notifications"></a>Alterar notificações
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -27,13 +37,20 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição|v1.0|Adicionado o tipo de recurso [presença](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true)|
+|Adição|v1.0|Adicionado o tipo de recurso [presença](/graph/api/resources/presence?view=graph-rest-1.0&preserve-view=true).|
 
 ### <a name="compliance--ediscovery"></a>Conformidade | Descoberta Eletrônica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionados os recursos [custodian](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true), [unifiedGroupSource](/graph/api/resources/unifiedgroupsource?view=graph-rest-beta&preserve-view=true) e [siteSource](/graph/api/resources/sitesource?view=graph-rest-beta&preserve-view=true) e métodos associados. |
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Adicionado o membro `failed` à enumeração **cloudPcStatus**.|
+|Exclusão|beta|Removidos os membros `upgradeFailed`,`provisionFailed`,`deprovisionFailed` e `reprovisionFailed` da enumeração **cloudPcStatus**.|
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
@@ -46,19 +63,13 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Alteração | beta | Tipos de enumeração atualizados no recurso [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values). |
 | Adição | beta | Adicionada a ação de [configuração de atualização](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) ao recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).|
 
-### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
-
-| **Tipo de alteração** | **Versão** | **Descrição** |
-|:---|:---|:---|
-|Adição|beta|Adicionado o membro `failed` à enumeração **cloudPcStatus**.|
-|Exclusão|beta|Removidos os membros `upgradeFailed`,`provisionFailed`,`deprovisionFailed` e `reprovisionFailed` da enumeração **cloudPcStatus**.|
 ### <a name="education"></a>Educação
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | beta | Adicionado a propriedade opcional **notificationChannelUrl** para recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) | 
-| Adição | beta | Adicionado a propriedade opcional **addedStudentAction** para recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) |
-| Adição | beta | Adicionado o tipo de enumeração **educationAddedStudentAction** |
+| Adição | beta | Adicionada a propriedade opcional **notificationChannelUrl** ao recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). | 
+| Adição | beta | Adicionada a propriedade opcional **addedStudentAction** ao recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionado o tipo de enumeração **educationAddedStudentAction**. |
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 
@@ -69,6 +80,16 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionado um novo tipo de recurso ao [contrato de Termos de Uso](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true):</br>[agreementFileVersion](/graph/api/resources/agreementfileversion?view=graph-rest-beta&preserve-view=true)|
 | Adição | beta | Foi adicionada a propriedade **managerLevel** ao recurso [requestorManager](/graph/api/resources/requestorManager?view=graph-rest-beta&preserve-view=true). |
 
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | O novo tipo complexo [accessPackageAnswer](/graph/api/resources/accesspackageanswer?view=graph-rest-beta&preserve-view=true) foi adicionado, incluindo dois subtipos,[accessPackageAnswerChoice](/graph/api/resources/accesspackageanswerchoice?view=graph-rest-beta&preserve-view=true) e [accessPackageAnswerString](/graph/api/resources/accesspackageanswerstring?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | O novo tipo complexo [accessPackageQuestion](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true) foi adicionado, incluindo dois subtipos, [accessPackageMultipleChoiceQuestion](/graph/api/resources/accesspackagemultiplechoicequestion?view=graph-rest-beta&preserve-view=true) e [accessPackageTextInputQuestion](/graph/api/resources/accesspackagetextinputquestion?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | O novo tipo complexo [accessPackageLocalizedContent](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) foi adicionado. |
+| Adição | beta | O novo tipo complexo [accessPackageLocalizedText](/graph/api/resources/accesspackagelocalizedtext?view=graph-rest-beta&preserve-view=true) foi adicionado. |
+
+
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -77,11 +98,20 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionou métodos para listar e criar atribuições de atributo de usuário para o recurso [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionou métodos para listar e criar atribuições de atributo de usuário para o recurso [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 | Adição | v1.0 | Adicionado o tipo de recurso [AuthorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true).  |
+| Adição | beta | Adicionado o tipo de recurso [authenticationEventsPolicy](https://docs.microsoft.com/graph/api/resources/authenticationeventspolicy?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionado o tipo de recurso [authenticationListener](https://docs.microsoft.com/graph/api/resources/authenticationlistener?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionado o tipo de recurso [invokeUserFlowListener](https://docs.microsoft.com/graph/api/resources/invokeUserFlowListener?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionada a entidade [userFlowLanguageConfiguration](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true) para gerenciar os padrões de idioma e personalizações em um fluxo de usuário em um locatário do Azure Active Directory ou Azure Active Directory B2C. |
 | Adição | beta | Adicionada a entidade [userFlowLanguagePage](/graph/api/resources/userflowlanguagepage?view=graph-rest-beta&preserve-view=true) que define os padrões de idioma e personalizações em um fluxo de usuário em um locatário do Azure Active Directory ou Azure Active Directory B2C. |
 | Adição | beta | Propriedades adicionadas para **isLanguageCustomizationEnabled** e **defaultLanguageTag** e métodos para listar e criar idiomas para o recurso [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Métodos adicionados para listar idiomas para o recurso [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionada a [configuração do método de autenticação de e-mail](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) à API de política de métodos de [autenticação](/graph/api/resources/authenticationmethodspolicies-overview).|
+| Adição | beta | Adicionado o objeto [identityApiConnector](/graph/api/resources/identityapiconnector.md?view=graph-rest-beta&preserve-view=true) que representa a configuração usada para chamar as APIs da Web. Métodos adicionados para listar, obter, criar, atualizar e excluir conectores da API.|
+| Adição | beta | Adicionada a entidade [apiAuthenticationConfigurationBase](/graph/api/resources/apiauthenticationconfigurationbase?view=graph-rest-beta&preserve-view=true) para configuração de autenticação usada para chamar as APIs da Web.|
+| Adição | beta | Adicionada a entidade [basicAuthentication](/graph/api/resources/basicauthentication?view=graph-rest-beta&preserve-view=true) que estende apiAuthenticationConfigurationBase para autenticação Básica HTTP de chamadas de API da Web.|
+| Adição | beta | Adicionada a entidade [userFlowApiConnectorConfiguration](/graph/api/resources/userflowapiconnectorconfiguration?view=graph-rest-beta&preserve-view=true) para gerenciar conectores da API usados ​​por um fluxo de usuário em um locatário do Azure Active Directory ou Azure Active Directory B2C.|
+| Adição | beta | Adicionada a propriedade **apiConnectorConfiguration** e o recurso [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | Adicionada a propriedade **apiConnectorConfiguration** e o recurso [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="teamwork"></a>Trabalho em equipe
 
@@ -109,10 +139,11 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionado o recurso [teamworkBot](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionado o relacionamento do **bot** ao recurso [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionada a propriedade **moderationSettings** ao recurso de [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). |
-| Adição | beta | Adicionado o tipo de recurso [channelModerationSettings](/graph/api/resources/channelModerationSettings2?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionado o tipo de recurso [channelModerationSettings](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionado o tipo de enumeração **replyRestriction**. |
 | Adição | beta | Adicionado o tipo de enumeração **userNewMessageRestriction**. |
-| Adição | beta | Adicionado o método [Remover membro de chat](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) para o tipo de recurso do [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).|
+
+
 
 ## <a name="november-2020"></a>Novembro de 2020
 
@@ -3520,8 +3551,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta&preserve-view=true) e os seguintes métodos: <br> [List](/graph/api/bookingcurrency-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
 | Adição        | Beta          | Foi adicionada a entidade [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-services?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-services?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingservice-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingservice-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta&preserve-view=true).|
