@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 448677770044a1da4c6424aa667dabca3d1f2710
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 63f169c3f531b0ca4a1271b992dc91c3fe22d197
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782841"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720648"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -30,8 +30,8 @@ Esse recurso permite:
 
 - Você pode organizar apenas os calendários de usuários em [calendarGroup](calendargroup.md).
 - Você pode adicionar objetos [anexos](attachment.md) a apenas eventos de calendários de usuário, mas não a eventos em calendários de grupo.
-- O Outlook aceita automaticamente todas as solicitações de reunião em nome de grupos. Você pode [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) solicitações de reuniões apenas para calendários do _usuário_ .
-- O Outlook não oferece suporte a lembretes de eventos do grupo. Você pode [adiar](../api/event-snoozereminder.md) ou [descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) apenas para calendários de _usuário_ .
+- O Outlook aceita automaticamente todas as solicitações de reunião em nome de grupos. Você pode [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) solicitações de reuniões apenas para calendários do _usuário_.
+- O Outlook não oferece suporte a lembretes de eventos do grupo. Você pode [adiar](../api/event-snoozereminder.md) ou [descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) apenas para calendários de _usuário_.
 
 ## <a name="methods"></a>Métodos
 
@@ -42,10 +42,12 @@ Esse recurso permite:
 |[Obter evento](../api/event-get.md) | [event](event.md) |Ler as propriedades e as relações do objeto event.|
 |[Atualizar](../api/event-update.md) | [event](event.md) |Atualizar o objeto event. |
 |[Excluir](../api/event-delete.md) | Nenhum |Excluir o objeto event. |
+|[delta](../api/event-delta.md)|Coleção [event](event.md)|Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos) do calendário principal do usuário.|
+|[forward](../api/event-forward.md)| Nenhum |Permite que o organizador ou os participantes de um evento de reunião encaminhe a solicitação de reunião para um novo destinatário.|
+|[cancel](../api/event-cancel.md) | Nenhum | Enviar a mensagem de cancelamento do organizador para todos os participantes e cancelar a reunião específica. |
 |[accept](../api/event-accept.md)|Nenhum|Aceite o evento específico em um calendário do usuário.|
 |[tentativelyAccept](../api/event-tentativelyaccept.md)|Nenhum|Aceitar provisoriamente o evento específico em um calendário de usuário.|
 |[decline](../api/event-decline.md)|Nenhum|Recusar o convite para o evento específico em um calendário de usuário.|
-|[delta](../api/event-delta.md)|Coleção [event](event.md)|Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos) do calendário principal do usuário.|
 |[dismissReminder](../api/event-dismissreminder.md)|Nenhum|Descarte o lembrete do evento específico em um calendário de usuário.|
 |[snoozeReminder](../api/event-snoozereminder.md)|Nenhum|Adie um lembrete de evento específico em um calendário do usuário até um novo horário.|
 |[List instances](../api/event-list-instances.md) |Coleção [event](event.md)| Obter as instâncias (ocorrências) de um evento para um intervalo de tempo especificado. Se o evento for do tipo `SeriesMaster`, isso retornará as exceções e ocorrências desse evento no intervalo de tempo especificado.|
@@ -73,17 +75,19 @@ Esse recurso permite:
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina. Por padrão, a hora de término é em UTC.|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
+|hideAttendees|Booliano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é false.|
 |iCalUId|Cadeia de caracteres|Um único identificador para um evento em todos os calendários. Esta identificação é diferente para cada ocorrência em uma série recorrente. Somente leitura.|
 |id|String| Somente leitura.|
-|importância|importância|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importance|importância|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
+|isDraft|Boleano|Defina como verdadeiro se o usuário atualizou a reunião no Outlook mas não enviou as atualizações aos participantes. Defina como falso se todas as alterações forem enviadas, ou se o evento for um compromisso sem participantes.|
 |isOnlineMeeting|Booliano| `True` se o evento tem informações sobre a reunião online, caso contrário, `false`. O padrão é false. Opcional.|
-|isOrganizer|Booliano|Defina como verdadeiro se o proprietário do calendário (especificado pela propriedade do **proprietário** do [calendário](calendar.md)) for o organizador do evento (especificado pela propriedade do **organizador** do **evento** ). Isso também se aplica se um representante organizou o evento em nome do proprietário.|
+|isOrganizer|Booliano|Defina como verdadeiro se o proprietário do calendário (especificado pela propriedade do **proprietário** do [calendário](calendar.md)) for o organizador do evento (especificado pela propriedade do **organizador** do **evento**). Isso também se aplica se um representante organizou o evento em nome do proprietário.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|O local do evento.|
-|locations|Coleção [location](location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location** , os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location** . |
+|locations|Coleção [location](location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
 |onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Detalhes para o participante entrar na reunião online. Somente leitura.|
 |onlineMeetingProvider|onlineMeetingProviderType| Representa o provedor de serviços de reunião online. Os valores possíveis são `teamsForBusiness`, `skypeForBusiness` e `skypeForConsumer`. Opcional. |
 |onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade só é definida quando um organizador especifica um evento como uma reunião online como o Skype. Somente leitura.|
@@ -96,16 +100,16 @@ Esse recurso permite:
 |responseRequested|Booliano|O padrão é true, representando que o organizador gostaria de ter um convidado para enviar uma resposta para o evento.|
 |responseStatus|[responseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|sensibilidade| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
-|seriesMasterId|String|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
+|seriesMasterId|Cadeia de caracteres|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
 |showAs|freeBusyStatus|O status a ser exibido. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa. Por padrão, a hora de início é em UTC.|
 |assunto|String|O texto da linha de assunto do evento.|
 |transactionId |Cadeia de caracteres |Um identificador personalizado especificado por um aplicativo cliente para o servidor para evitar operações POST redundantes caso o cliente tente criar o mesmo evento. Isso é útil quando a conectividade de rede baixa faz com que o cliente expire antes de receber uma resposta do servidor para a solicitação anterior de criação de evento do cliente. Depois de definir **transactionId** ao criar um evento, não será possível alterar a **transactionId** em uma atualização subsequente. Essa propriedade só será retornada em um conteúdo de resposta se um aplicativo a tiver definido. Opcional.|
-|tipo|eventType|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura.|
+|type|eventType|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura.|
 |webLink|String|A URL para abrir o evento no Outlook na Web.<br/><br/>O Outlook na Web abre o evento no navegador se você estiver conectado à sua caixa de correio. Caso contrário, o Outlook na Web solicitará que você entre.<br/><br/>Este URL não pode ser acessado a partir de um iFrame.|
 
 > [!NOTE]
-> A propriedade **webLink** especifica uma URL que abre o evento apenas em versões anteriores do Outlook na Web. Estes são os formatos da URL, com _{event-id}_ sendo o valor _**codificado na URL**_ da propriedade **id** :
+> A propriedade **webLink** especifica uma URL que abre o evento apenas em versões anteriores do Outlook na Web. Estes são os formatos da URL, com _{event-id}_ sendo o valor _**codificado na URL**_ da propriedade **id**:
 >
 > * Para contas corporativas ou de estudante: `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
@@ -200,11 +204,13 @@ Veja a seguir uma representação JSON do recurso
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
+  "hideAttendees": false,
   "iCalUId": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
+  "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
   "isReminderOn": true,

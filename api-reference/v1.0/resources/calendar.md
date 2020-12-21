@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 63d00ecaba24469b9704fe6e6cc14e4792fef614
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5bac4adf71511a8823a77d8591e4700916308f3d
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077657"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720543"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -53,7 +53,9 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
 |color|calendarColor|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|O provedor de reunião online padrão para reuniões enviadas deste calendário. Os valores possíveis são: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|hexColor |String |A cor do calendário, expressa em um código de cores hexadecimais de três valores hexadecimais, cada um deles variando de 00 a FF e representando os componentes vermelho, verde ou azul do espaço de cor RGB. Se o usuário nunca tiver definido explicitamente uma cor para o calendário, esta propriedade estará vazia. Somente leitura.|
 |id|String|O identificador exclusivo do calendário. Somente leitura.|
+|isDefaultCalendar|Booliano|Verdadeiro se este for o calendário padrão em que novos eventos são criados; caso contrário, será falso.|
 |isRemovable|Booliano| Indica se o calendário deste usuário pode ser excluído da caixa de correio do usuário.|
 |isTallyingResponses|Booliano|Indica se o calendário deste usuário dá suporte ao acompanhamento de respostas de reunião. Somente os convites para reuniões enviados do calendário principal do usuário oferecem suporte para respostas de reunião.|
 |nome|String|O nome do calendário.|
@@ -117,7 +119,9 @@ Veja a seguir uma representação JSON do recurso
   "changeKey": "string",
   "color": "String",
   "defaultOnlineMeetingProvider": "string",
+  "hexColor": "String",
   "id": "string (identifier)",
+  "isDefaultCalendar": "boolean",
   "isRemovable": "boolean",
   "isTallyingResponses": "boolean",
   "name": "string",
