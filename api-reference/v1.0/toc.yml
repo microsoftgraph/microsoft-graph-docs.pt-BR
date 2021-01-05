@@ -303,7 +303,7 @@ items:
                 href: api/user-list-memberof.md
               - name: Listar membro transitiva de
                 href: api/user-list-transitivememberof.md
-          - name: Informações
+          - name: Insights
             items:
               - name: Insights do Office Graph
                 href: resources/officegraphinsights.md
@@ -4724,7 +4724,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitygroupcounts.md
               - name: Obter contagens de atividades
                 href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -5016,7 +5016,7 @@ items:
                 href: api/channel-delete.md
               - name: Listar membros
                 href: api/channel-list-members.md
-              - name: Criar membro
+              - name: Adicionar membro
                 href: api/channel-post-members.md
               - name: Obter membro
                 href: api/channel-get-members.md
@@ -5074,7 +5074,7 @@ items:
                 href: api/appcatalogs-list-teamsapps.md
               - name: Atualizar aplicativo no catálogo
                 href: api/teamsapp-update.md
-              - name: Excluir aplicativo do catálogo
+              - name: Remover aplicativo do catálogo
                 href: api/teamsapp-delete.md
           - name: App
             items:
@@ -5113,7 +5113,7 @@ items:
                 items:
                   - name: Listar guias no canal
                     href: api/channel-list-tabs.md
-                  - name: Adicionar guia ao Cannel
+                  - name: Adicionar uma guia ao canal
                     href: api/channel-post-tabs.md
                   - name: Guia obter no canal
                     href: api/channel-get-tabs.md
