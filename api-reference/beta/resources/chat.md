@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2a5fefdff40c60951c07d26df2962fbba1249a16
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 7865f6239117dc5ec2916aa43ef1f609ecf238b4
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714293"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754128"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso chat
 
@@ -29,6 +29,7 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 |[Listar chats](../api/chat-list.md) | coleção [chat](chat.md) | Obter a lista de chats de que um usuário faz parte.| 
 |[Criar chat](../api/chat-post.md) | [chat](chat.md) | Criar um novo chat.| 
 |[Obter bate-papo](../api/chat-get.md) | [chat](chat.md) | Leia as propriedades e as relações do chat.| 
+|[Atualizar chat](../api/chat-patch.md) | [chat](chat.md) | Atualize as propriedades do chat.|
 |[Listar membros do bate-papo](../api/chat-list-members.md) | coleção [conversationMember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.| 
 |[Adicionar membro do bate-papo](../api/chat-post-members.md) | Cabeçalho de local | Adicionar um usuário ao chat.| 
 |[Obter membro do bate-papo](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Obter um único usuário no bate-papo.| 
@@ -54,7 +55,7 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
+| id| String| O identificador exclusivo do chat. Somente leitura.|
 | topic| String|  Opcion Assunto ou tópico do chat. Disponível apenas para bate-papos de grupo.|
 | createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou lista de membros foi alterada pela última vez. Somente leitura.|
@@ -65,9 +66,9 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 | Membro             | Valor | Descrição               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | ,0     | Indica que o chat é um chat de 1:1. O tamanho da lista é fixo para este tipo de chat; os membros não podem ser removidos/adicionados.|
-|group               | 1     | Indica que o chat é um chat de grupo. O tamanho da lista (de pelo menos duas pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados mais tarde.|
-|Atenda             | duas     | Indica que o chat está associado a uma reunião online. Esse tipo de chat só é criado como parte da criação de uma reunião online.|
-|unknownFutureValue  | 3D     | O valor de sentinela para indicar valores futuros. |
+|group               | 1      | Indica que o chat é um chat de grupo. O tamanho da lista (de pelo menos duas pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados mais tarde.|
+|Atenda             | 2      | Indica que o chat está associado a uma reunião online. Esse tipo de chat só é criado como parte da criação de uma reunião online.|
+|unknownFutureValue  | 3      | O valor de sentinela para indicar valores futuros. |
 
 ## <a name="relationships"></a>Relações
 

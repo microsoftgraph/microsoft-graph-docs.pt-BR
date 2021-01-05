@@ -1,16 +1,16 @@
 ---
 title: Obter membro da equipe
-description: Obtenha membro da equipe.
+description: Obter membro da equipe.
 author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e07bf5c7e4f482e2a80d0b7d7c63c04ce0188ed8
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 3b6567ae704ef1e0fd522649b8cfb22577719e5b
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522956"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754282"
 ---
 # <a name="get-member-of-team"></a>Obter membro da equipe
 
@@ -106,15 +106,16 @@ Content-type: application/json
 Content-length: 201
 
 {
-"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",
-"@odata.type": "#microsoft.graph.aadUserConversationMember",
-"id": "/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
-"roles": ["owner"],
-"displayName": "John Doe",
-"userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-"email": null
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/members/microsoft.graph.aadUserConversationMember/$entity",
+   "@odata.type":"#microsoft.graph.aadUserConversationMember",
+   "id":"/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+   "roles":[
+      "owner"
+   ],
+   "displayName":"John Doe",
+   "userId":"8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+   "email":null
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

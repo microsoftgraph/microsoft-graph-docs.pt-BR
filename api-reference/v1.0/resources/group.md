@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a89dfe246eef55c53d18171bd022d04640e0dee3
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: e4079d83d3d92588d27184fc8ef58274095bcee6
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582020"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754177"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -70,7 +70,7 @@ Esse recurso permite:
 | **Calendar** |||
 | [Criar evento](../api/group-post-events.md) | [event](event.md) | Criar um novo Event postando na coleção de eventos. |
 | [Obter evento](../api/group-get-event.md) | [event](event.md) | Ler as propriedades de um objeto event. |
-| [Listar eventos](../api/group-list-events.md) | Coleção de [eventos](event.md) | Obter uma coleção de objetos de evento. |
+| [Listar eventos](../api/group-list-events.md) | Coleção [event](event.md) | Obter uma coleção de objetos de evento. |
 | [Atualizar evento](../api/group-update-event.md) | Nenhum | Atualizar as propriedades de um objeto event. |
 | [Excluir evento](../api/group-delete-event.md) | Nenhum | Excluir o objeto event. |
 | [Listar calendarView](../api/group-list-calendarview.md) | Coleção [event](event.md) | Obter um conjunto de eventos em uma janela de tempo especificada.|
@@ -94,7 +94,7 @@ Esse recurso permite:
 | [Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 | [Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 | [Atualizar configuração](../api/groupsetting-update.md) | Nenhum | Atualizar um objeto setting. |
-| [Excluir configuração](../api/groupsetting-delete.md) | None | Excluir um objeto de configuração. |
+| [Excluir configuração](../api/groupsetting-delete.md) | Nenhum | Excluir um objeto de configuração. |
 | [Obter modelo de configuração](../api/groupsettingtemplate-get.md) | Nenhum | Ler as propriedades de um modelo de configuração. |
 | [Listar modelo de configuração](../api/groupsettingtemplate-list.md) | Nenhum | Listar propriedades de todos os modelos de configuração. |
 | **Extensões abertas** |||
@@ -174,7 +174,7 @@ Veja o que cada valor da propriedade de **visibilidade** significa:
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| O usuário (ou aplicativo) que criou o grupo. OBSERVAÇÃO: Não definido se o usuário for um administrador. Somente leitura.|
 |Unidade|[unidade](drive.md)|Unidade padrão do grupo. Somente leitura.|
 |unidades|Coleção [drive](drive.md)|As unidades do grupo. Somente leitura.|
-|eventos|Coleção [event](event.md)|Os eventos de calendário do grupo.|
+|events|Coleção [event](event.md)|Os eventos de calendário do grupo.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o grupo. Somente leitura. Anulável.|
 |groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|O conjunto de políticas de ciclo de vida para esse grupo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável.|

@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c2de1c16ed998a0b793d14c6a4d791613e0bef62
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: db3618528aef9b5ec562bbb80a6298f9e5f05b34
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706213"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754135"
 ---
 # <a name="channelmoderationsettings-resource-type"></a>tipo de recurso channelModerationSettings
 
@@ -34,8 +34,8 @@ Para dar suporte às configurações de moderação de canal através das APIs d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowNewMessageFromBots|Boolean|Indica se os bots podem postar mensagens.|
-|allowNewMessageFromConnectors|Boolean|Indica se os conectores têm permissão para postar mensagens.|
+|allowNewMessageFromBots|Booliano|Indica se os bots podem postar mensagens.|
+|allowNewMessageFromConnectors|Booliano|Indica se os conectores têm permissão para postar mensagens.|
 |replyRestriction|replyRestriction|Indica quem tem permissão para responder ao canal Teams. Os valores possíveis são: `everyone`, `authorAndModerators`, `unknownFutureValue`.|
 |userNewMessageRestriction|userNewMessageRestriction|Indica quem tem permissão para postar mensagens no canal do teams. Os valores possíveis são: `everyone`, `everyoneExceptGuests`, `moderators`, `unknownFutureValue`.|
 
@@ -55,3 +55,7 @@ Veja a seguir uma representação JSON do recurso.
   "allowNewMessageFromConnectors": "Boolean"
 }
 ```
+
+## <a name="see-also"></a>Confira também
+
+- Para modificar as configurações de moderação de um canal, confira o exemplo 2 em [canal de atualização](../api/channel-patch.md).

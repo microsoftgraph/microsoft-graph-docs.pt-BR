@@ -2,12 +2,12 @@
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas.
 author: arpitha-dhanapathi
-ms.openlocfilehash: b137be66a8fb192e4ed15c56ed814b0f1477a83b
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: f4e7a29043a55ddefc5a3f5b7fe5a53911d8ee40
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352141"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754275"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -91,7 +91,8 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | Consulta delta | ✔ | ✔ | ➖ |
 | Extensões de esquema de diretório | ✔ | ✔ | ➖ |
 | Extensões de tipo aberto | ✔ | ➖ | ➖ |
-
+| Pesquisa (Microsoft Search) | ➖ | ➖ | ➖ |
+ 
 Os seguintes recursos do Microsoft Graph estão disponíveis na visualização (no `/beta` ponto de extremidade) no Microsoft Cloud China e no Microsoft Cloud Alemanha (pontos de extremidade do v 1.0 para esses recursos estão disponíveis no Microsoft Cloud para o governo dos EUA apenas):
 
 * Contatos organizacionais
