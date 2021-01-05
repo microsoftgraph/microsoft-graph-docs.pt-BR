@@ -5,12 +5,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a4c05dece6a73977137240d63368d30fe94712d9
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: f4fc16e311a696c10076588023945064f76ee3dc
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714323"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752773"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -74,7 +74,7 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 | webDavUrl            | String             | URL compatível com WebDAV para o item.
 | webUrl               | String             | URL que exibe o recurso no navegador. Somente leitura.
 
-**Observação:** As propriedades eTag e cTag funcionam de maneira diferente em contêineres (pastas). O valor de cTag é modificado quando o conteúdo ou os metadados de qualquer descendente da pasta são alterados. O valor de eTag é modificado apenas quando as propriedades da pasta são alteradas, exceto para propriedades derivadas de descendentes (como **childCount** ou **lastModifiedDateTime**).
+>**Observação:** As propriedades eTag e cTag funcionam de maneira diferente em contêineres (pastas). O valor de cTag é modificado quando o conteúdo ou os metadados de qualquer descendente da pasta são alterados. O valor de eTag é modificado apenas quando as propriedades da pasta são alteradas, exceto para propriedades derivadas de descendentes (como **childCount** ou **lastModifiedDateTime**).
 
 ## <a name="relationships"></a>Relações
 
@@ -102,11 +102,12 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 | @microsoft.graph.downloadUrl      | string | Uma URL que pode ser usada para baixar conteúdo desse arquivo. Uma autenticação não é obrigatória com essa URL. Somente leitura.
 | @microsoft.graph.sourceUrl        | string | Quando uma solicitação PUT é emitida, essa anotação de instância pode ser usada para instruir o serviço a baixar o conteúdo da URL e armazená-lo como o arquivo. Somente gravação.
 
-**Observação:** O valor de @microsoft.graph.downloadUrl é uma URL de curta duração e não pode ser armazenado em cache.
-A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada.
-A remoção das permissões de arquivo de um usuário pode não invalidar a URL imediatamente.
-
->**Observação:** o parâmetro @microsoft.graph.conflictBehavior deve ser incluído na URL, em vez do corpo da solicitação.
+>**Observações:** O parâmetro `@microsoft.graph.conflictBehavior` deve ser incluído no URL em vez do corpo da solicitação.
+>
+>O valor `@microsoft.graph.downloadUrl` é um URL de curta duração e não pode ser armazenado em cache. A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada.
+Remover permissões de arquivo para um usuário pode não invalidar imediatamente o URL.
+>
+>O uso da `@microsoft.graph.sourceUrl` propriedade para carregamento de arquivo [ não é compatível ](/onedrive/developer/rest-api/api/driveitem_upload_url?view=odsp-graph-online#remarks&preserve-view=true) no OneDrive for Business, SharePoint Online e SharePoint Server 2016.
 
 ## <a name="json-representation"></a>Representação JSON
 

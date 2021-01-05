@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 491acb75e8574312de5c1d25889883a15ac76159
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: ccc622b391cd8fc0fcd08a289392026f3458f5cd
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377933"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754314"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -164,9 +164,11 @@ As combinações envolvendo **mensagem**, **evento**, tipos do SharePoint e do O
 
 - A API de pesquisa não dá suporte a agregações para **mensagem**, **evento**, **site** ou **unidade**.
 
+- As personalizações na pesquisa do SharePoint, como um esquema de pesquisa personalizado ou fontes de resultados, podem interferir na operação da API de Pesquisa da Microsoft.
+
 ## <a name="schema-change-deprecation-warning"></a>Aviso de preterição de mudança de esquema
 
-**Na versão beta**, as propriedades usadas em uma solicitação e resposta de pesquisa foram renomeadas ou removidas. Na maioria dos casos, as propriedades originais estão sendo preteridas e substituídas pelas propriedades atuais, como listado na tabela a seguir.
+**Na versão beta**, as propriedades usadas em uma solicitação e resposta de pesquisa foram renomeadas ou removidas. Na maioria dos casos, as propriedades originais estão sendo reprovadas e substituídas pelas propriedades atuais, conforme listado na tabela a seguir.
 
 Comece a atualizar os aplicativos existentes para usar os nomes atuais da propriedade e do tipo e obter os nomes atuais das propriedades na resposta.
 Para compatibilidade com versões anteriores, as propriedades e tipos originais são acessíveis e funcionais até o dia **31 de dezembro de 2020**, depois do qual eles serão removidos.
@@ -182,7 +184,7 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
 | [searchHit](./searchhit.md)        | Renomear propriedade | **_source** | **recurso** |
 | [searchHit](./searchhit.md)        | Renomear propriedade | **_summary**  | **resumo**  |
 
-## <a name="search-samples"></a>Exemplos de pesquisa
+## <a name="see-also"></a>Confira também
 
 - Saiba mais sobre alguns dos principais casos de uso:
   - [Pesquisar mensagens do Outlook](/graph/search-concept-messages)
@@ -193,8 +195,4 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
   - [Refinar resultados de pesquisa](/graph/search-concept-aggregation)
 
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-
-
-## <a name="whats-new"></a>O que há de novo
-
-Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+- Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

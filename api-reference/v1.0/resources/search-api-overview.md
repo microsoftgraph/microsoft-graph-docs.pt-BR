@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: b616119d1b5c1dcc8bb56b65711468cceafd7d88
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 797e6024c934fd0caddd08f447b779fde2430a6b
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523004"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753163"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -125,7 +125,9 @@ As combinações envolvendo **mensagem**, **evento**, tipos do SharePoint e do O
 
 - A API de pesquisa não dá suporte a agregações para **mensagem**, **evento**, **site** ou **unidade**.
 
-## <a name="search-samples"></a>Amostra de pesquisa
+- As personalizações na pesquisa do SharePoint, como um esquema de pesquisa personalizado ou fontes de resultados, podem interferir na operação da API de Pesquisa da Microsoft.
+
+## <a name="see-also"></a>Confira também
 
 - Saiba mais sobre alguns dos principais casos de uso:
   - [Pesquisar mensagens do Outlook](/graph/search-concept-messages)
@@ -133,8 +135,4 @@ As combinações envolvendo **mensagem**, **evento**, tipos do SharePoint e do O
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](/graph/search-concept-files)
 
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-
-
-## <a name="whats-new"></a>O que há de novo
-
-Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+- Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

@@ -3,18 +3,26 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: cfe6583f49f1ae4b48208214acdf701f146d0097
-ms.sourcegitcommit: 4da3cf28f252c974fb00894d21b6e04eccbeffbe
+ms.openlocfilehash: 4bf622b5348837904310c387367017ea5b2515c0
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722496"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754303"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Este log de alterações inclui alterações específicas no nível da API no Microsoft Graph v 1.0 e beta.
 
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
+
+## <a name="january-2021"></a>Janeiro de 2021
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade para **hostNames** à entidade [dispositivo](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
 
 ## <a name="december-2020"></a>Dezembro de 2020
 
@@ -113,17 +121,24 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Adição | beta | Adicionada a propriedade **apiConnectorConfiguration** e o recurso [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionada a propriedade **apiConnectorConfiguration** e o recurso [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true).|
 
+### <a name="mail"></a>Email
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade **isHidden** à entidade [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionado o parâmetro de consulta opcional `includeHiddenFolders` à operação [list mailFolders](/graph/api/user-list-mailfolders?view=graph-rest-beta&preserve-view=true).
+
 ### <a name="teamwork"></a>Trabalho em equipe
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição | v1.0 | Adicionado [Obter o aplicativo instalado em equipe](/graph/api/team-get-installedapps), [Listar aplicativos para usuário](/graph/api/userteamwork-list-installedapps), [Obter aplicativo instalado para usuário](/graph/api/userteamwork-get-installedapps), [Adicionar aplicativo para usuário](/graph/api/userteamwork-add-installedapps), [Remover aplicativo para usuário](/graph/api/userteamwork-delete-installedapps) e [Atualizar aplicativo instalado para métodos de usuário](/graph/api/userteamwork-upgrade-installedapps) para o recurso [teamsAppInstallation](/graph/api/resources/teamsappinstallation). |
+| Adição | v1.0 | Adicionado [Obter o aplicativo instalado em equipe](/graph/api/team-get-installedapps), [Listar aplicativos para usuário](/graph/api/userteamwork-list-installedapps), [Obter aplicativo instalado para usuário](/graph/api/userteamwork-get-installedapps), [Adicionar aplicativo para usuário](/graph/api/userteamwork-post-installedapps), [Remover aplicativo para usuário](/graph/api/userteamwork-delete-installedapps) e [Atualizar aplicativo instalado para métodos de usuário](/graph/api/userteamwork-teamsappinstallation-upgrade) para o recurso [teamsAppInstallation](/graph/api/resources/teamsappinstallation). |
 | Adição | v1.0 | Adicionado [Obter chat entre o usuário e](/graph/api/userscopeteamsappinstallation-get-chat) o método de aplicativo para o novo recurso [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation). |
 | Adição | beta | Adicionado [Obter o aplicativo instalado na equipe](/graph/api/team-get-installedapps?view=graph-rest-beta&preserve-view=true), [Obter o aplicativo instalado para o usuário](/graph/api/userteamwork-get-installedapps?view=graph-rest-beta&preserve-view=true)|
 | Adição | beta | Adicionado [Obter chat entre o usuário e](/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-beta&preserve-view=true) o método de aplicativo para o novo recurso [userScopeTeamsAppInstallation](/graph/api/resources/userScopeTeamsAppInstallation?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionado o método [getAllMessages](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true) à coleção de recursos de [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionado o método [getAllMessages](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true) à coleção de recursos de [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true).|
-| Adição | beta | Adicionado [Listar aplicativos no chat](/graph/api/chat-list-installedapps?view=graph-rest-beta&preserve-view=true), [Obter aplicativos instalados no chat](/graph/api/chat-get-installedapps?view=graph-rest-beta&preserve-view=true), [Adicionar aplicativo ao chat](/graph/api/chat-post-installedapps?view=graph-rest-beta&preserve-view=true), [Desinstalar aplicativo do chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta&preserve-view=true), [Atualizar aplicativo instalado nos métodos de chat](/graph/api/chat-upgrade-installedapps?view=graph-rest-beta&preserve-view=true) para o tipo de recurso de [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). |
+| Adição | beta | Adicionado [Listar aplicativos no chat](/graph/api/chat-list-installedapps?view=graph-rest-beta&preserve-view=true), [Obter aplicativos instalados no chat](/graph/api/chat-get-installedapps?view=graph-rest-beta&preserve-view=true), [Adicionar aplicativo ao chat](/graph/api/chat-post-installedapps?view=graph-rest-beta&preserve-view=true), [Desinstalar aplicativo do chat](/graph/api/chat-delete-installedapps?view=graph-rest-beta&preserve-view=true), [Atualizar aplicativo instalado nos métodos de chat](/graph/api/chat-teamsappinstallation-upgrade?view=graph-rest-beta&preserve-view=true) para o tipo de recurso de [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionadas guias de [Lista no chat](/graph/api/chat-list-tabs?view=graph-rest-beta&preserve-view=true), [Obter guia no chat](/graph/api/chat-get-tabs?view=graph-rest-beta&preserve-view=true), [Adicionar guia ao chat](/graph/api/chat-post-tab?view=graph-rest-beta&preserve-view=true), [Remover guia do chat](/graph/api/chat-delete-tabs?view=graph-rest-beta&preserve-view=true), [Atualizar guia nos métodos de chat](/graph/api/chat-patch-tabs?view=graph-rest-beta&preserve-view=true) para o tipo de recurso de [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). |
 | Adição | beta | Adicionado o método [add](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true) à coleção de recursos [talksMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Adicionado o recurso [actionResultPart](/graph/api/resources/actionresultpart?view=graph-rest-beta&preserve-view=true).|
@@ -3551,8 +3566,8 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Atualizar](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingbusiness-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta&preserve-view=true) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta&preserve-view=true) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta&preserve-view=true). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingappointment-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta&preserve-view=true) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta&preserve-view=true) e os seguintes métodos: <br> [List](/graph/api/bookingcurrency-list?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta&preserve-view=true). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingcustomer-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingcustomer-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta&preserve-view=true).|
 | Adição        | Beta          | Foi adicionada a entidade [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-services?view=graph-rest-beta&preserve-view=true) <br> [Create](/graph/api/bookingbusiness-post-services?view=graph-rest-beta&preserve-view=true) <br> [Get](/graph/api/bookingservice-get?view=graph-rest-beta&preserve-view=true) <br> [Update](/graph/api/bookingservice-update?view=graph-rest-beta&preserve-view=true) <br> [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta&preserve-view=true).|
