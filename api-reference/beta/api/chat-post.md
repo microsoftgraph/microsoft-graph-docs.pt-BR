@@ -5,30 +5,30 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1926ae37192a03ba8891aa321fa0c4f2da8c5796
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 8c4a6e66000ce2edcc4ec577a091ccde42b95495
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706207"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753274"
 ---
-# <a name="create-chat"></a><span data-ttu-id="435a0-103">Criar chat</span><span class="sxs-lookup"><span data-stu-id="435a0-103">Create chat</span></span>
-<span data-ttu-id="435a0-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="435a0-104">Namespace: microsoft.graph</span></span>
+# <a name="create-chat"></a><span data-ttu-id="c66bf-103">Criar chat</span><span class="sxs-lookup"><span data-stu-id="c66bf-103">Create chat</span></span>
+<span data-ttu-id="c66bf-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c66bf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="435a0-105">Criar um novo objeto [chat](../resources/chat.md) .</span><span class="sxs-lookup"><span data-stu-id="435a0-105">Create a new [chat](../resources/chat.md) object.</span></span>
+<span data-ttu-id="c66bf-105">Criar um novo objeto [chat](../resources/chat.md) .</span><span class="sxs-lookup"><span data-stu-id="c66bf-105">Create a new [chat](../resources/chat.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="435a0-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="435a0-106">Permissions</span></span>
-<span data-ttu-id="435a0-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="435a0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c66bf-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="c66bf-106">Permissions</span></span>
+<span data-ttu-id="c66bf-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c66bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="435a0-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="435a0-109">Permission type</span></span>|<span data-ttu-id="435a0-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="435a0-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c66bf-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c66bf-109">Permission type</span></span>|<span data-ttu-id="c66bf-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="c66bf-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="435a0-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="435a0-111">Delegated (work or school account)</span></span>|<span data-ttu-id="435a0-112">Chat. Create, chat. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="435a0-112">Chat.Create, Chat.ReadWrite</span></span>|
-|<span data-ttu-id="435a0-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="435a0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="435a0-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="435a0-114">Not supported.</span></span> |
-|<span data-ttu-id="435a0-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="435a0-115">Application</span></span> | <span data-ttu-id="435a0-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="435a0-116">Not supported.</span></span> |
+|<span data-ttu-id="c66bf-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c66bf-111">Delegated (work or school account)</span></span>|<span data-ttu-id="c66bf-112">Chat. Create, chat. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c66bf-112">Chat.Create, Chat.ReadWrite</span></span>|
+|<span data-ttu-id="c66bf-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c66bf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c66bf-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c66bf-114">Not supported.</span></span> |
+|<span data-ttu-id="c66bf-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c66bf-115">Application</span></span> | <span data-ttu-id="c66bf-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c66bf-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="435a0-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="435a0-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c66bf-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c66bf-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -38,32 +38,34 @@ ms.locfileid: "49706207"
 POST /chats
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="435a0-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="435a0-118">Request headers</span></span>
-|<span data-ttu-id="435a0-119">Nome</span><span class="sxs-lookup"><span data-stu-id="435a0-119">Name</span></span>|<span data-ttu-id="435a0-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="435a0-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c66bf-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c66bf-118">Request headers</span></span>
+|<span data-ttu-id="c66bf-119">Nome</span><span class="sxs-lookup"><span data-stu-id="c66bf-119">Name</span></span>|<span data-ttu-id="c66bf-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="c66bf-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="435a0-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="435a0-121">Authorization</span></span>|<span data-ttu-id="435a0-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="435a0-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="435a0-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="435a0-124">Content-Type</span></span>|<span data-ttu-id="435a0-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="435a0-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="c66bf-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="c66bf-121">Authorization</span></span>|<span data-ttu-id="c66bf-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c66bf-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="c66bf-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c66bf-124">Content-Type</span></span>|<span data-ttu-id="c66bf-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c66bf-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="435a0-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="435a0-127">Request body</span></span>
-<span data-ttu-id="435a0-128">No corpo da solicitação, forneça uma representação JSON do objeto [chat](../resources/chat.md) .</span><span class="sxs-lookup"><span data-stu-id="435a0-128">In the request body, supply a JSON representation of the [chat](../resources/chat.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c66bf-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c66bf-127">Request body</span></span>
+<span data-ttu-id="c66bf-128">No corpo da solicitação, forneça uma representação JSON do objeto [chat](../resources/chat.md) .</span><span class="sxs-lookup"><span data-stu-id="c66bf-128">In the request body, supply a JSON representation of the [chat](../resources/chat.md) object.</span></span>
 
-<span data-ttu-id="435a0-129">A tabela a seguir lista as propriedades que são necessárias para criar um objeto chat.</span><span class="sxs-lookup"><span data-stu-id="435a0-129">The following table lists the properties that are required to create a chat object.</span></span>
+<span data-ttu-id="c66bf-129">A tabela a seguir lista as propriedades que são necessárias para criar um objeto chat.</span><span class="sxs-lookup"><span data-stu-id="c66bf-129">The following table lists the properties that are required to create a chat object.</span></span>
 
-|<span data-ttu-id="435a0-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="435a0-130">Property</span></span>|<span data-ttu-id="435a0-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="435a0-131">Type</span></span>|<span data-ttu-id="435a0-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="435a0-132">Description</span></span>|
+|<span data-ttu-id="c66bf-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c66bf-130">Property</span></span>|<span data-ttu-id="c66bf-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="c66bf-131">Type</span></span>|<span data-ttu-id="c66bf-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="c66bf-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="435a0-133">topic</span><span class="sxs-lookup"><span data-stu-id="435a0-133">topic</span></span>|<span data-ttu-id="435a0-134">Opcion Sequência</span><span class="sxs-lookup"><span data-stu-id="435a0-134">(Optional) String</span></span>|<span data-ttu-id="435a0-135">O título do chat.</span><span class="sxs-lookup"><span data-stu-id="435a0-135">The title of the chat.</span></span> <span data-ttu-id="435a0-136">O título do chat só poderá ser fornecido se o chat for do tipo "grupo".</span><span class="sxs-lookup"><span data-stu-id="435a0-136">The chat title can be provided only if the chat is of 'group' type.</span></span>|
-|<span data-ttu-id="435a0-137">chattype</span><span class="sxs-lookup"><span data-stu-id="435a0-137">chatType</span></span>|[<span data-ttu-id="435a0-138">chattype</span><span class="sxs-lookup"><span data-stu-id="435a0-138">chatType</span></span>](../resources/chat.md#chattype-values)| <span data-ttu-id="435a0-139">Especifica o tipo de chat.</span><span class="sxs-lookup"><span data-stu-id="435a0-139">Specifies the type of chat.</span></span> <span data-ttu-id="435a0-140">Os valores possíveis são: `group` e `oneOnOne` .</span><span class="sxs-lookup"><span data-stu-id="435a0-140">Possible values are:`group` and `oneOnOne`.</span></span> |
-|<span data-ttu-id="435a0-141">members</span><span class="sxs-lookup"><span data-stu-id="435a0-141">members</span></span>|<span data-ttu-id="435a0-142">coleção [conversationMember](../resources/conversationmember.md)</span><span class="sxs-lookup"><span data-stu-id="435a0-142">[conversationMember](../resources/conversationmember.md) collection</span></span>|<span data-ttu-id="435a0-143">Lista de membros da conversa que devem ser adicionados.</span><span class="sxs-lookup"><span data-stu-id="435a0-143">List of conversation members that should be added.</span></span> <span data-ttu-id="435a0-144">Todo usuário único, incluindo o usuário que inicia a solicitação de criação, quem participará do chat deverá ser especificado na lista.</span><span class="sxs-lookup"><span data-stu-id="435a0-144">Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list.</span></span>|
+|<span data-ttu-id="c66bf-133">topic</span><span class="sxs-lookup"><span data-stu-id="c66bf-133">topic</span></span>|<span data-ttu-id="c66bf-134">Opcion Sequência</span><span class="sxs-lookup"><span data-stu-id="c66bf-134">(Optional) String</span></span>|<span data-ttu-id="c66bf-135">O título do chat.</span><span class="sxs-lookup"><span data-stu-id="c66bf-135">The title of the chat.</span></span> <span data-ttu-id="c66bf-136">O título do chat só poderá ser fornecido se o chat for do tipo "grupo".</span><span class="sxs-lookup"><span data-stu-id="c66bf-136">The chat title can be provided only if the chat is of 'group' type.</span></span>|
+|<span data-ttu-id="c66bf-137">chattype</span><span class="sxs-lookup"><span data-stu-id="c66bf-137">chatType</span></span>|[<span data-ttu-id="c66bf-138">chattype</span><span class="sxs-lookup"><span data-stu-id="c66bf-138">chatType</span></span>](../resources/chat.md#chattype-values)| <span data-ttu-id="c66bf-139">Especifica o tipo de chat.</span><span class="sxs-lookup"><span data-stu-id="c66bf-139">Specifies the type of chat.</span></span> <span data-ttu-id="c66bf-140">Os valores possíveis são: `group` e `oneOnOne` .</span><span class="sxs-lookup"><span data-stu-id="c66bf-140">Possible values are: `group` and `oneOnOne`.</span></span> |
+|<span data-ttu-id="c66bf-141">members</span><span class="sxs-lookup"><span data-stu-id="c66bf-141">members</span></span>|<span data-ttu-id="c66bf-142">coleção [conversationMember](../resources/conversationmember.md)</span><span class="sxs-lookup"><span data-stu-id="c66bf-142">[conversationMember](../resources/conversationmember.md) collection</span></span>|<span data-ttu-id="c66bf-143">Lista de membros da conversa que devem ser adicionados.</span><span class="sxs-lookup"><span data-stu-id="c66bf-143">List of conversation members that should be added.</span></span> <span data-ttu-id="c66bf-144">Todo usuário único, incluindo o usuário que inicia a solicitação de criação, quem participará do chat deverá ser especificado na lista.</span><span class="sxs-lookup"><span data-stu-id="c66bf-144">Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="435a0-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="435a0-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c66bf-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="c66bf-145">Response</span></span>
 
-<span data-ttu-id="435a0-146">Se tiver êxito, este método retornará um código de resposta criado 201 e o recurso de **chat** recém-criado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="435a0-146">If successful, this method returns a 201 Created response code and the newly created **chat** resource in the response body.</span></span>
+<span data-ttu-id="c66bf-146">Se tiver êxito, este método retornará um código de resposta criado 201 e o recurso de **chat** recém-criado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c66bf-146">If successful, this method returns a 201 Created response code and the newly created **chat** resource in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="435a0-147">Exemplos</span><span class="sxs-lookup"><span data-stu-id="435a0-147">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c66bf-147">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c66bf-147">Examples</span></span>
 
-### <a name="example-1-create-a-one-on-one-chat"></a><span data-ttu-id="435a0-148">Exemplo 1: criar um chat de um em um</span><span class="sxs-lookup"><span data-stu-id="435a0-148">Example 1: Create a one-on-one chat</span></span>
+### <a name="example-1-create-a-one-on-one-chat"></a><span data-ttu-id="c66bf-148">Exemplo 1: criar um chat de um em um</span><span class="sxs-lookup"><span data-stu-id="c66bf-148">Example 1: Create a one-on-one chat</span></span>
 
-#### <a name="request"></a><span data-ttu-id="435a0-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="435a0-149">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c66bf-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c66bf-149">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="c66bf-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="c66bf-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_oneOnOne"
@@ -89,10 +91,28 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="c66bf-151">C#</span><span class="sxs-lookup"><span data-stu-id="c66bf-151">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="c66bf-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c66bf-152">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-oneonone-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="c66bf-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c66bf-153">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-oneonone-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="c66bf-154">Java</span><span class="sxs-lookup"><span data-stu-id="c66bf-154">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### <a name="response"></a><span data-ttu-id="435a0-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="435a0-150">Response</span></span>
-><span data-ttu-id="435a0-151">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="435a0-151">**Note:** The response object shown here might be shortened for readability.</span></span>
+---
+
+#### <a name="response"></a><span data-ttu-id="c66bf-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="c66bf-155">Response</span></span>
+><span data-ttu-id="c66bf-156">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c66bf-156">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,9 +133,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-create-a-group-chat"></a><span data-ttu-id="435a0-152">Exemplo 2: criar um chat de grupo</span><span class="sxs-lookup"><span data-stu-id="435a0-152">Example 2: Create a group chat</span></span>
+### <a name="example-2-create-a-group-chat"></a><span data-ttu-id="c66bf-157">Exemplo 2: criar um chat de grupo</span><span class="sxs-lookup"><span data-stu-id="c66bf-157">Example 2: Create a group chat</span></span>
 
-#### <a name="request"></a><span data-ttu-id="435a0-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="435a0-153">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c66bf-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c66bf-158">Request</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="c66bf-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="c66bf-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_group"
@@ -147,10 +169,28 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="c66bf-160">C#</span><span class="sxs-lookup"><span data-stu-id="c66bf-160">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="c66bf-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c66bf-161">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="c66bf-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c66bf-162">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="c66bf-163">Java</span><span class="sxs-lookup"><span data-stu-id="c66bf-163">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### <a name="response"></a><span data-ttu-id="435a0-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="435a0-154">Response</span></span>
-><span data-ttu-id="435a0-155">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="435a0-155">**Note:** The response object shown here might be shortened for readability.</span></span>
+---
+
+#### <a name="response"></a><span data-ttu-id="c66bf-164">Resposta</span><span class="sxs-lookup"><span data-stu-id="c66bf-164">Response</span></span>
+><span data-ttu-id="c66bf-165">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c66bf-165">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

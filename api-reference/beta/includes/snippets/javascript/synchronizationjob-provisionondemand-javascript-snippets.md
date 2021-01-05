@@ -1,11 +1,11 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
-ms.openlocfilehash: cb404fe9d0e4f592bcbc5932a5900c82084401b8
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: e5ca20cb642b4c52a413fa72a57957a09b3e619c
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49350463"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753407"
 ---
 ```javascript
 
@@ -15,10 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const stringKeyStringValuePair = Content-Type: application/json
-Content-length: 122
-
-{
+const stringKeyStringValuePair = {
     parameters: [{
       subjects: [{
           objectId: "9bb0f679-a883-4a6f-8260-35b491b8b8c8",
