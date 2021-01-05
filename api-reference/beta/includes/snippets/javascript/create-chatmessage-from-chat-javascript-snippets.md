@@ -1,11 +1,11 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
-ms.openlocfilehash: 0dab31dd01554d72ac6dd78aff604a6ead55f2c9
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+description: Arquivo gerado automaticamente. NÃO MODIFICAR
+ms.openlocfilehash: 197dd8047b87d1b2030b88dedb3dd7342187c616
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49350410"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49756003"
 ---
 ```javascript
 
@@ -21,7 +21,7 @@ const chatMessage = {
   }
 };
 
-let res = await client.api('/teams/{id}/channels/{id}/messages')
+let res = await client.api('/chats/{id}/messages')
     .version('beta')
     .post(chatMessage);
 
