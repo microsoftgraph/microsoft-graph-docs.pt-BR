@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d0fe2403e04751a734da726d6f4c2cb6890813a
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: eeb80864abfd8e198093d839930bc37065c5fd4d
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082010"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752770"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere uma lista de dispositivos registrados no diretório. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -194,7 +194,18 @@ Content-type: application/json
       "displayName":"a_device_1",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
+    },
+    {
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000001",
+      "deviceVersion":1,
+      "displayName":"a_device_1",
+      "Manufacturer":"Microsoft",
+      "Model":"Surface",
+      "operatingSystemVersion":"windows10EnterpriseN",
+      "hostNames":["device_1.contoso.onmicrosoft.com", "device_1"]
     }
   ]
 }
@@ -241,7 +252,8 @@ Content-type: application/json
       "displayName":"contoso_Android",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
     }
   ]
 }

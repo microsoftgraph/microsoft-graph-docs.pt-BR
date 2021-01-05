@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6af7347bd1ac2f164fe1d73e24ea9fc48cd6f8d
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: a23916c9941afd17064e75add3e7c5ca5480fa54
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705916"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753442"
 ---
 # <a name="update-channel"></a>Canal de Atualização 
 
@@ -94,7 +94,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação para atualizar um canal com configurações de moderação. Essa operação só pode ser realizada por um proprietário de equipe.
+O exemplo a seguir mostra uma solicitação para atualizar as [configurações de moderação](../resources/channelmoderationsettings.md) de um canal. Essa operação só pode ser realizada por um proprietário de equipe.
 
 <!-- {
   "blockType": "request",

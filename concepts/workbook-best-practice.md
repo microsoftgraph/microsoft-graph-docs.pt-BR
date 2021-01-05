@@ -4,12 +4,12 @@ description: Listar as práticas recomendadas e exemplos para as APIs do Excel n
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c113d162874c3121e97534b8d098d1c52a24fe77
-ms.sourcegitcommit: f26428bce3034e206b901e9c747cffcf64b55882
+ms.openlocfilehash: c7e72c4c6480c75d3080d32c2984e6d0f594c409
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651292"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754065"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>Práticas recomendadas para trabalhar com a API do Excel no Microsoft Graph
 
@@ -265,7 +265,7 @@ Content-type: application/json
 }
 ```
 
-Para obter mais detalhes sobre erros, consulte [códigos de erro](/concepts/workbook-error-codes.md)
+Para obter mais detalhes sobre erros, consulte [códigos de erro](workbook-error-codes.md#error-code).
 
 ### <a name="acquire-session-information"></a>Obter informações de sessão
 

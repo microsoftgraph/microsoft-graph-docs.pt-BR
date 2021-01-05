@@ -3,14 +3,14 @@ title: Listar mailFolders
 description: Obtenha todas as pastas de email na caixa de correio do usuário conectado.
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 93c61bb6fe117d86719fa8be639d7ebcbbae44be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7c8a73244b23b5fae115a844173d2ce3c7cb190f
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982176"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753946"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 
@@ -18,30 +18,44 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha todas as pastas de email na caixa de correio do usuário conectado, incluindo as [pastas de pesquisa de email](../resources/mailsearchfolder.md).
+Obtenha todas as pastas de email na caixa de correio do usuário especificado, incluindo as [pastas de pesquisa de email](../resources/mailsearchfolder.md).
+
+Por padrão, essa operação não retorna pastas ocultas. Use um parâmetro de consulta _includeHiddenFolders_ para incluí-los na resposta.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Aplicativo | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Delegado (conta corporativa ou de estudante) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Aplicativo | Mail. ReadBasic. All, mail. Read, mail. ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Para obter todas as pastas de email na caixa de correio do usuário especificado, excluindo as que estão ocultas:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Para incluir pastas de email _ocultas_ na resposta:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
+```
+
+## <a name="query-parameters"></a>Parâmetros de consulta
+Para retornar uma lista de todos os mailFolders incluindo aqueles que estão ocultos (sua propriedade **IsHidden** é true), na URL de solicitação, especifique o `includeHiddenFolders` parâmetro de consulta como `true` , conforme mostrado na seção [solicitação HTTP](#http-request) .
+
+Este método também dá suporte a [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -49,8 +63,13 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [mailfolder](../resources/mailfolder.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>Exemplo 1: listar pastas de email na caixa de correio do usuário conectado
+
+Este exemplo inclui um objeto **mailSearchFolder** na resposta. A pasta de pesquisa de email é uma pasta filha na caixa de entrada com o nome de exibição "resumos semanais".
+
+#### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,8 +98,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja um exemplo da resposta que inclui um **mailSearchFolder** que é uma pasta filha na caixa de entrada. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +122,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "archive"
+            "wellKnownName": "archive",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBFQAAAA==",
@@ -110,7 +132,8 @@ Content-type: application/json
             "childFolderCount": 1,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "conversationhistory"
+            "wellKnownName": "conversationhistory",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCgAAAA==",
@@ -119,7 +142,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "deleteditems"
+            "wellKnownName": "deleteditems",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDwAAAA==",
@@ -128,7 +152,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "drafts"
+            "wellKnownName": "drafts",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDAAAAA==",
@@ -137,7 +162,8 @@ Content-type: application/json
             "childFolderCount": 1,
             "unreadItemCount": 70,
             "totalItemCount": 71,
-            "wellKnownName": "inbox"
+            "wellKnownName": "inbox",
+            "isHidden": false
         },
         {
             "@odata.type": "#microsoft.graph.mailSearchFolder",
@@ -148,6 +174,7 @@ Content-type: application/json
             "unreadItemCount": 4,
             "totalItemCount": 5,
             "wellKnownName": null,
+            "isHidden": false,
             "isSupported": true,
             "filterQuery": "contains(subject, 'weekly digest')"
         },
@@ -158,7 +185,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "junkemail"
+            "wellKnownName": "junkemail",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCwAAAA==",
@@ -167,7 +195,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "outbox"
+            "wellKnownName": "outbox",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCQAAAA==",
@@ -176,7 +205,65 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "sentitems"
+            "wellKnownName": "sentitems",
+            "isHidden": false
+        }
+    ]
+}
+```
+
+
+### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a>Exemplo 2: incluir pastas ocultas na caixa de correio do usuário conectado
+
+O exemplo a seguir usa o `includeHiddenFolders` parâmetro de consulta para obter uma lista de pastas de email, incluindo pastas de email ocultas. A resposta inclui a pasta "resíduos" que tem o **IsHidden** definido como true.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_hiddenmailfolders"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
+```
+
+#### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
+
+>**Observação:** O objeto de resposta mostrado aqui é reduzido para legibilidade e não inclui todas as pastas padrão em uma caixa de correio de usuário.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Clutters",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": null,
+            "isHidden": true
+        },
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Conversation History",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "conversationhistory",
+            "isHidden": false
         }
     ]
 }

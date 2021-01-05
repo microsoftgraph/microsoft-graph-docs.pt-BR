@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 38122a3d7f20b7be7908429891d8c6d0a93bb866
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: ac468f1d561488149cd6306c52f841ffdfc915d9
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742003"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753078"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -65,6 +65,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. |
 |profiletype|String|O tipo de perfil do dispositivo. Valores possíveis:<br />**RegisteredDevice** (padrão)<br />**SecureVM**<br />**Printer**<br />**Compartilhado**<br />**IoT**|
 |systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
+|Nomes|Coleção de cadeias de caracteres| Lista de nomes de host para o dispositivo.|
 |trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
 |Nome| String | Nome amigável de um dispositivo. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
 |Status | String| O dispositivo está online ou offline. Retornado somente se o usuário entrar com uma conta da Microsoft como parte do projeto Roma. |
@@ -119,6 +120,7 @@ Veja a seguir uma representação JSON do recurso.
   "physicalIds": ["string"],
   "profileType": "string",
   "systemLabels": ["string"],
+  "hostNames" : ["string"],
   "trustType": "string",
   "Name": "string",
   "Status": "string",

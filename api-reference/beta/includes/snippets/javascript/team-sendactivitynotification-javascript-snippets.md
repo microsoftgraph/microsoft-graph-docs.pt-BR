@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: debc87bf6d655a51d7d47edcf51ff2ba214d20ce
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 22ca177f987370fd0629b2be255de08493e1960e
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522395"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754016"
 ---
 ```javascript
 
@@ -15,9 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const sendActivityNotification = Content-Type: application/json
-
-{
+const sendActivityNotification = {
     topic: {
         source: "text",
         value: "Deployment Approvals Channel",

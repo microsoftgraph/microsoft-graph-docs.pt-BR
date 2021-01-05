@@ -4,18 +4,18 @@ description: Saiba como identificar e corrigir riscos usando as APIs do Microsof
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0bec8dc51c81b9d2d0349294c0f0d1f6bd4c1e98
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
+ms.openlocfilehash: 8157760c8b0e5c9afb19c39a008870e2f7fe6009
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664163"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753757"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Tutorial: identificar e corrigir riscos usando as APIs do Microsoft Graph
 
 O Azure AD Identity Protection fornece às organizações informações sobre riscos baseados em identidade e diferentes maneiras de investigar e corrigir automaticamente o risco. As APIs de proteção de identidade usadas neste tutorial podem ajudá-lo a identificar riscos e configurar um fluxo de trabalho para confirmar o comprometimento ou habilitar a correção. Para obter mais informações, consulte [o que é risco?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
-Neste tutorial, você aprenderá a gerar um usuário arriscado e a corrigir o status arriscado do usuário com uma política de acesso condicional que requer autenticação multifator (MFA). Uma seção opcional mostra como bloquear o usuário de entrar também usando uma política de acesso condicional e descartar o risco do usuário.
+Neste tutorial, você aprenderá a gerar uma entrada arriscada e a corrigir o status do risco do usuário com uma política de acesso condicional que exija a autenticação multifator (MFA). Uma seção opcional mostra como bloquear o usuário de entrar também usando uma política de acesso condicional e descartar o risco do usuário.
 
 >**Observação:** Os objetos de resposta mostrados neste tutorial podem ser reduzidos para facilitar a leitura. 
 
@@ -491,4 +491,4 @@ Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referên
 - [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-1.0)
 - [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-1.0)
 - [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [Usuário](/graph/api/resources/user?view=graph-rest-1.0)

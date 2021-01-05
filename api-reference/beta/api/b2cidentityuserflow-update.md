@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bc030097cbfc6e57cbe841f6a0dd98660d1a12f7
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 2fb11cd2f9dc547499091876e1bdf6130819d270
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706199"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753121"
 ---
 # <a name="update-b2cidentityuserflow"></a>Atualizar b2cIdentityUserFlow
 
@@ -59,8 +59,8 @@ A tabela a seguir mostra as propriedades que podem ser atualizadas após a cria�
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|isLanguageCustomizationEnabled|Boolean|A propriedade que determina se a personalização de idioma será habilitada dentro do fluxo de usuário do B2C. A personalização de idioma não é habilitada por padrão para os fluxos de usuários do B2C.|
-|defaultLanguageTag|Cadeia de caracteres|Indica o idioma padrão do b2cIdentityUserFlow usado quando nenhuma `ui_locale` marca é especificada na solicitação. Este campo é compatível com [RFC 5646](https://tools.ietf.org/html/rfc5646) .|
+|isLanguageCustomizationEnabled|Booliano|A propriedade que determina se a personalização de idioma é habilitada dentro do fluxo do usuário do B2C. A personalização de idioma não é habilitada por padrão para os fluxos de usuário do B2C.|
+|defaultLanguageTag|Cadeia de caracteres|Indica o idioma padrão do b2cIdentityUserFlow que será usado quando nenhuma `ui_locale` marca for especificada na solicitação. Esse campo é [RFC 5646](https://tools.ietf.org/html/rfc5646) compatível.|
 
 ## <a name="response"></a>Resposta
 
@@ -72,6 +72,8 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_b2cidentityuserflow"
@@ -88,6 +90,16 @@ Content-length: 469
   "defaultLanguageTag": "en",
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-b2cidentityuserflow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-b2cidentityuserflow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

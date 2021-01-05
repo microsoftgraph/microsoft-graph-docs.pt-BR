@@ -3,12 +3,12 @@ title: People-Picker componente
 description: Você pode usar o componente Web de gerenciamento de pessoas-seletor para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: be72a31bd9e831f6584e2a7dfac9dea50892762a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 9c23abbb3d525a3110cca31b21f2ee24d3c9f26d
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659261"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753771"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no kit de ferramentas do Microsoft Graph
 
@@ -35,11 +35,9 @@ Por padrão, o `mgt-people-picker` componente busca pessoas dos pontos de `/me/p
 | tipo de grupo     | groupType      | O tipo de grupo a ser pesquisado. As opções disponíveis são: `unified` , `security` , `mailenabledsecurity` , `distribution` , `any` . O valor padrão é `any`. Este atributo não terá efeito se a `type` propriedade for definida como `person` .                                                                           |
 |  selecionado-pessoas  | selectedPeople     | Uma matriz de pessoas selecionadas. Defina esse valor para selecionar pessoas de forma programática.|
 | people   | people    | Uma matriz de pessoas encontrada e renderizada no resultado da pesquisa |
-| PlaceHolder   | PlaceHolder    | Uma cadeia de caracteres que representa o texto do espaço reservado de entrada. O padrão é "começar a digitar um nome".
-| modo de seleção   | selectionMode   | Um valor String que permite que você especifique se o componente oferece suporte a várias pessoas selecionadas ou apenas uma. O padrão `multiple` é `single` a outra opção.
+| PlaceHolder   | PlaceHolder    | O texto padrão que aparece para explicar como usar o componente. O valor padrão é `Start typing a name`.
 | default-Selected-User-IDs | defaultSelectedUserIds | Quando é fornecida uma cadeia de caracteres de IDs de usuário separadas por vírgulas do Microsoft Graph, o componente renderiza os respectivos usuários como selecionados na inicialização.
-| modo de seleção | selectionMode | Usado para indicar se é permitido selecionar vários usuários ou apenas um único usuário. As opções disponíveis são: `single` , `multiple` . O valor padrão é `multiple`.
-| PlaceHolder | PlaceHolder | O texto padrão que aparece para explicar como usar o componente. O valor padrão é `Start typing a name`.
+| modo de seleção | selectionMode | Usado para indicar se é permitido selecionar vários itens (usuários ou grupos) ou apenas um único item. As opções disponíveis são: `single` , `multiple` . O valor padrão é `multiple`.
 
 Este é um `show-max` exemplo.
 

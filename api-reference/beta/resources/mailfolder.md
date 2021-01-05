@@ -2,15 +2,15 @@
 title: tipo de recurso mailFolder
 description: Uma pasta de email na caixa de correio de um usuário, como Caixa de entrada e Rascunhos. As pastas de email podem conter mensagens, outros itens do Outlook e pastas de correio filho.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2279d5da5bf663b776ec9deee5241103079d4bb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f05f70ae9faa6bab0ec0e7d122e4b1c443a8f5c
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079800"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753904"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -80,10 +80,11 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
 |displayName|String|O nome de exibição da mailFolder.|
 |id|String|Identificador exclusivo de mailFolder.|
+|isHidden|Booliano|Indica se o mailFolder está oculto. Essa propriedade só pode ser definida durante a criação da pasta. Encontre mais informações em [pastas de email ocultos](#hidden-mail-folders).|
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|
 |unreadItemCount|Int32|O número de itens na mailFolder marcados como não lidos.|
-|wellKnownName|Cadeia de caracteres|O nome de pasta conhecido para a pasta. Os valores possíveis estão listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **NULL**.|
+|wellKnownName|String|O nome de pasta conhecido para a pasta. Os valores possíveis estão listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **NULL**.|
 
 **Acessar contagens de itens de forma eficiente**
 
@@ -95,6 +96,13 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 ```
 
 As pastas de email no Outlook podem conter mais de um tipo de item, por exemplo, a caixa de entrada pode conter itens que são diferentes de itens de email da solicitação de reunião. `TotalItemCount` e `UnreadItemCount` incluem itens em uma pasta de email independentemente seus tipos de item.
+
+### <a name="hidden-mail-folders"></a>Pastas de email ocultas
+O valor padrão da `isHidden` propriedade é `false` . Você pode definir **IsHidden** somente uma vez ao [criar mailFolder](../api/user-post-mailfolders.md). Não é possível atualizar a propriedade usando uma operação PATCH. Para alterar a propriedade **IsHidden** de uma pasta, exclua a pasta existente e crie uma nova com o valor desejado.
+
+As pastas de email ocultas oferecem suporte a todas as operações suportadas por uma pasta de email normal.
+
+Por padrão, a [listagem mailFolders](../api/user-list-mailfolders.md) retorna apenas pastas de email que não estão ocultas. Para incluir pastas de email ocultas na resposta, use o parâmetro de consulta `includeHiddenFolders=true` . Em seguida, use a propriedade **IsHidden** para identificar se uma pasta de email está oculta. 
 
 ## <a name="relationships"></a>Relações
 
@@ -132,6 +140,7 @@ Veja a seguir uma representação JSON do recurso.
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
   "wellKnownName": "string",
+  "isHidden": false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],

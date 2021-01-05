@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd253fdfea0b21189bcaf8f32dbd553314e53610
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 762d26f8f339037a6a6031f44efe3cf219a03998
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956398"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752973"
 ---
 # <a name="get-device"></a>Obter dispositivo
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,8 +51,8 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [device](../resources/device.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+O exemplo a seguir mostra uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,10 +81,12 @@ GET https://graph.microsoft.com/beta/devices/{id}
 ---
 
 
-> Observação: A "id" na solicitação é a propriedade "id" do dispositivo, não a propriedade "deviceId".
+> **Observação:** O `id` na solicitação é a propriedade **ID** do dispositivo, não a propriedade **DeviceID** .
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+### <a name="response"></a>Resposta
+O exemplo a seguir mostra uma resposta para um dispositivo sem **nomes de host**. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,9 +102,34 @@ Content-length: 322
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99
+  "deviceVersion": 99,
+  "hostNames": []
 }
 ```
+
+O exemplo a seguir mostra uma resposta para um dispositivo com **nomes de host**. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 322
+
+{
+  "accountEnabled": true,
+  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
+  "deviceId": "deviceId-value",
+  "deviceMetadata": "deviceMetadata-value",
+  "deviceVersion": 99,
+  "hostnames":["hostname1.contoso.onmicrosoft.com", "hostname1"]
+}
+```
+
 
 ## <a name="see-also"></a>Confira também
 

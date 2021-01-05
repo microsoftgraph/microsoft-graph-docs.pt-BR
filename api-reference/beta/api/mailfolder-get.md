@@ -1,16 +1,16 @@
 ---
 title: Obter mailFolder
 description: Recupere as propriedades e os relacionamentos de um objeto da pasta de mensagens.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a18c39825ad13349f6efc8360fe3037ca0cc7dbe
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: dff0cb64004eee0c2af12c5ca95147fc504a998b
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979367"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753974"
 ---
 # <a name="get-mailfolder"></a>Obter mailFolder
 
@@ -31,9 +31,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Aplicativo | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Delegado (conta corporativa ou de estudante) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Aplicativo | Mail. ReadBasic. All, mail. Read, mail. ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -125,7 +125,8 @@ Content-type: application/json
   "childFolderCount": 2,
   "unreadItemCount": 59,
   "totalItemCount": 60,
-  "wellKnownName": "inbox"
+  "wellKnownName": "inbox",
+  "isHidden": false
 }
 ```
 
@@ -190,6 +191,7 @@ Content-type: application/json
   "unreadItemCount": 6,
   "totalItemCount": 6,
   "wellKnownName": null,
+  "isHidden": false,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [
