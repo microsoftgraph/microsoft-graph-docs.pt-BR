@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8857f3e247ef196cd7650c6c7f75b1f51d424cab
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 1a03227d1c8b2bb6eced20c7808362cb124fa9c6
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302647"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49756065"
 ---
 ```javascript
 
@@ -19,15 +19,13 @@ const transfer = {
   transferTarget: {
     endpointType: "default",
     identity: {
-      user: {
-        id: "550fae72-d251-43ec-868c-373732c2704f",
-        tenantId: "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        displayName: "Heidi Steen"
-      }
+        phone: {
+          @odata.type: "#microsoft.graph.identity",
+          id: "+12345678901"
+        }
     },
     languageId: "languageId-value",
-    region: "region-value",
-    replacesCallId: "replacesCallId-value"
+    region: "region-value"
   },
   clientContext: "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 };
