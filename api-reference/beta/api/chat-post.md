@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8c4a6e66000ce2edcc4ec577a091ccde42b95495
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1ba2425adf2f5aa1190eddb80a25a4e804b4e53e
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753274"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768228"
 ---
 # <a name="create-chat"></a>Criar chat
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Criar um novo objeto [chat](../resources/chat.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
@@ -51,9 +51,9 @@ A tabela a seguir lista as propriedades que são necessárias para criar um obje
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|topic|Opcion Sequência|O título do chat. O título do chat só poderá ser fornecido se o chat for do tipo "grupo".|
+|topic|Opcion Sequência|O título do chat. O título do chat só poderá ser fornecido se o chat for do `group` tipo.|
 |chattype|[chattype](../resources/chat.md#chattype-values)| Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne` . |
-|members|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todo usuário único, incluindo o usuário que inicia a solicitação de criação, quem participará do chat deverá ser especificado na lista.|
+|membros|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todo usuário único, incluindo o usuário que inicia a solicitação de criação, quem participará do chat deverá ser especificado na lista.|
 
 ## <a name="response"></a>Resposta
 

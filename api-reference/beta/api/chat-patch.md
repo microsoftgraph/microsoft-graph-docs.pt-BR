@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b0b7fcccb3de2716aa30fdeb577ed3dc31ca99e6
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 5c5f2e1cd5a40dc4348eb1d12d39d4291524cc49
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753909"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768221"
 ---
 # <a name="update-chat"></a>Atualizar chat
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Atualizar as propriedades de um objeto [chat](../resources/chat.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
@@ -73,7 +73,7 @@ PATCH https://graph.microsoft.com/beta/chats/19:1c5b01696d2e4a179c292bc9cf04e63b
 Content-Type: application/json
 
 {
-    "topic": "Group chat title update",
+    "topic": "Group chat title update"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

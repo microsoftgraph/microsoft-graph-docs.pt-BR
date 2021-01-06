@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aee297f36538ca45183e0c3185f35c8f340d8631
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7fe77178a9d330e3cc6f34818e7f1367e7ad484
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026310"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768166"
 ---
 # <a name="requestorsettings-resource-type"></a>tipo de recurso requestorSettings
 
@@ -35,7 +35,7 @@ Usado para a propriedade **requestorSettings** de uma [política de atribuição
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| scopeType |String |Quem pode solicitar. Um dos `NoSubjects` , `SpecificDirectorySubjects` , `SpecificConnectedOrganizationSubjects` , `AllExistingConnectedOrganizationSubjects` , `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` ou `AllExternalSubjects` .  |
+| scopeType |Cadeia de caracteres |Quem pode solicitar. Um dos `NoSubjects` , `SpecificDirectorySubjects` , `SpecificConnectedOrganizationSubjects` , `AllConfiguredConnectedOrganizationSubjects` , `AllExistingConnectedOrganizationSubjects` , `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` ou `AllExternalSubjects` .  |
 | acceptRequests | Booliano | Indica se novas solicitações serão aceitas nessa política. |
 | allowedRequestors | coleção [userset](userset.md)| Os usuários que têm permissão para solicitar essa política, que podem ser [únicousuário](singleuser.md), [groupMembers](groupmembers.md)e [connectedOrganizationMembers](connectedorganizationmembers.md). |
 
