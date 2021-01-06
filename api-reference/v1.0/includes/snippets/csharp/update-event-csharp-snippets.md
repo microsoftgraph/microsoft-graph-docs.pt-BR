@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 995df98ee0130071300d1b4a7126cdebf016d5f2
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 26c37fce5712e10134f244b81edf8e51a3706cea
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680974"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49756060"
 ---
 ```csharp
 
@@ -26,6 +26,7 @@ var @event = new Event
     IsOnlineMeeting = true,
     OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
     IsReminderOn = true,
+    HideAttendees = false,
     Categories = new List<String>()
     {
         "Red category"
