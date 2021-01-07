@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f7fe77178a9d330e3cc6f34818e7f1367e7ad484
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: ccaa57a3dfa2f81d33e4e6fea804a91d1db7da20
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768166"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777607"
 ---
 # <a name="requestorsettings-resource-type"></a>tipo de recurso requestorSettings
 
@@ -49,8 +49,7 @@ Veja a seguir uma representação JSON da propriedade **requestorSettings** de u
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.requestorSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.requestorSettings"
 }-->
 
 ```json

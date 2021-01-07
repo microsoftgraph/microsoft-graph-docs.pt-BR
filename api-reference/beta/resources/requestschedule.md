@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9aa3215bacff95cfa03cc2ec050c8f2d2e4f7219
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e16359e554bba495378ec48ab52937c198a0ed5d
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026303"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777618"
 ---
 # <a name="requestschedule-resource-type"></a>tipo de recurso requestSchedule
 
@@ -26,7 +26,7 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 |:-------------|:------------|:------------|
 |startDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |validade|[expirationPattern](expirationpattern.md)|Quando o acesso deve expirar.|
-|recorrência|[patternedRecurrence](patternedrecurrence.md)|Para acesso recorrente. Não usado no momento.|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|Para acesso recorrente. Não usado no momento.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -37,8 +37,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.requestSchedule",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.requestSchedule"
 }-->
 
 ```json

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: df7e9ce4491ea7a887b79f79d354c9099ea9f5d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 158fae1675c26876daeb05b1571d7fd91855df72
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050138"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777698"
 ---
 # <a name="approvalstage-complex-type"></a>tipo complexo approvalStage
 
@@ -42,8 +42,7 @@ Veja a seguir uma representação JSON da fase solicitar aprovação.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approvalStage",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.approvalStage"
 }-->
 
 ```json

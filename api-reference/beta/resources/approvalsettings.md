@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3a3c674b6bb21ddebfbb63f60d1ec2d2b62077f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 85d47e09de1b4d8f687a8dff2abf6aff1af0f21f
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050142"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777719"
 ---
 # <a name="approvalsettings-complex-type"></a>tipo complexo approvalSettings
 
@@ -39,8 +39,7 @@ Veja a seguir uma representação JSON da propriedade solicitar configurações 
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approvalSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.approvalSettings"
 }-->
 
 ```json

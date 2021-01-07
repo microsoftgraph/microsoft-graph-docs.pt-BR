@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a9121648f35dd09d8fb87d4738bb2bf6e9b3960b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66e3fccc8c072d06d2328301100d6bf3a0d50806
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998807"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777624"
 ---
 # <a name="externalitemcontent-resource-type"></a>tipo de recurso externalItemContent
 
@@ -27,7 +27,7 @@ O conteúdo de um [externalItem](externalitem.md) indexado por meio de uma [cone
 | Propriedade | Tipo   | Descrição                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
 | valor    | Cadeia de caracteres | O conteúdo do externalItem. Obrigatório.                                                 |
-| tipo     | String | O tipo de conteúdo na propriedade Value. Os valores possíveis são: `text` e `html`. Obrigatório. |
+| type     | Cadeia de caracteres | O tipo de conteúdo na propriedade Value. Os valores possíveis são: `text` e `html`. Obrigatório. |
 
 ## <a name="relationships"></a>Relações
 
@@ -42,8 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.externalItemContent",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.externalItemContent"
 }-->
 
 ```json

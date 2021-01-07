@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aabd0716990f67d0b73b4bb300b6953caa0bfe07
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 541bce7c65eaa9b284e9da5b520913b1be4ca8a3
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057805"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777709"
 ---
 # <a name="userset-complex-type"></a>tipo complexo userset
 
@@ -35,8 +35,7 @@ Veja a seguir uma representação JSON de userset.  Observe que um userset é um
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.userSet",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.userSet"
 }-->
 
 ```json

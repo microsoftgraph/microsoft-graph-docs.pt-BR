@@ -3,16 +3,16 @@ title: Carregar arquivos grandes usando os SDKs do Microsoft Graph
 description: Fornece orientações para carregar arquivos grandes usando os SDKs do Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 44465dcc22dcd84c78ee8aa7abfc1f6dc9e36c8a
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 323ee872db1962119a2b34f99ad032b18b5c31f0
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743996"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777579"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Carregar arquivos grandes usando os SDKs do Microsoft Graph
 
-Várias entidades no Microsoft Graph dão suporte a [carregamentos de arquivos retomáveis](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) para facilitar o carregamento de arquivos grandes. Em vez de tentar carregar todo o arquivo em uma única solicitação, o arquivo é dividido em partes menores e uma solicitação é usada para carregar uma única fatia. Para simplificar esse processo, os SDKs do Microsoft Graph implementam uma tarefa de upload de arquivo grande que gerencia o carregamento das fatias.
+Várias entidades no Microsoft Graph dão suporte a [carregamentos de arquivos retomáveis](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) para facilitar o carregamento de arquivos grandes. Em vez de tentar carregar todo o arquivo em uma única solicitação, o arquivo é dividido em partes menores e uma solicitação é usada para carregar uma única fatia. Para simplificar esse processo, os SDKs do Microsoft Graph implementam uma tarefa de upload de arquivo grande que gerencia o carregamento das fatias.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -44,8 +44,8 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
         new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
 
     // Create a callback that is invoked after each slice is uploaded
-    IProgress<long> progress = new Progress<long>(progress => {
-        Console.WriteLine($"Uploaded {progress} bytes of {fileStream.Length} bytes");
+    IProgress<long> progress = new Progress<long>(prog => {
+        Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
     });
 
     try
@@ -158,7 +158,7 @@ chunkedUploadProvider.upload(callback, customConfig);
 
 ## <a name="resuming-a-file-upload"></a>Retomando um upload de arquivo
 
-Os SDKs do Microsoft Graph dão suporte à [continuação dos carregamentos em andamento](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload). Se o aplicativo encontrar uma interrupção de conexão ou um status HTTP de 5. x. x durante o carregamento, você poderá retomar o upload.
+Os SDKs do Microsoft Graph dão suporte à [continuação dos carregamentos em andamento](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload). Se o aplicativo encontrar uma interrupção de conexão ou um status HTTP de 5. x. x durante o carregamento, você poderá retomar o upload.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)

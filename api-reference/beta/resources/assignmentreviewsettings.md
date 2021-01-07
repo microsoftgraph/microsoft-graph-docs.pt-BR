@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4a6e92f2c31a5972528fefdea68a4fa8a61677da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0bbc595395fbe7995b8ce7dfb7fa8e575faf58e8
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040175"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777691"
 ---
 # <a name="assignmentreviewsettings-resource-type"></a>tipo de recurso assignmentReviewSettings
 
@@ -26,9 +26,9 @@ Este tipo tem as seguintes propriedades:
 
 | Propriedade                     | Tipo                      | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| isEnabled| Boolean | Se verdadeiro, as revisões do Access são necessárias para as atribuições desta política. |
-| recurrenceType | String | O intervalo de recorrência, como `monthly` ou `quarterly` . |
-| revisor | String | Quem deve ser solicitado a fazer a revisão, `Self` ou `Reviewers` . |
+| isEnabled| Booliano | Se verdadeiro, as revisões do Access são necessárias para as atribuições desta política. |
+| recurrenceType | Cadeia de caracteres | O intervalo de recorrência, como `monthly` ou `quarterly` . |
+| revisor | Cadeia de caracteres | Quem deve ser solicitado a fazer a revisão, `Self` ou `Reviewers` . |
 | startDateTime | DateTimeOffset | Quando a primeira revisão deve iniciar. |
 | durationInDays | Int32 | O número de dias para permitir a entrada de revisores.|
 | revisores | coleção [userset](userset.md) | Se o revisortype for `Reviewers` , essa coleção especifica os usuários que serão revisores, por ID ou como membros de um grupo, usando uma coleção de [Únicousuário](singleuser.md) e [groupMembers](groupmembers.md). |
@@ -43,8 +43,7 @@ Veja a seguir uma representação JSON da propriedade de configurações de revi
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.assignmentReviewSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.assignmentReviewSettings"
 }-->
 
 ```json

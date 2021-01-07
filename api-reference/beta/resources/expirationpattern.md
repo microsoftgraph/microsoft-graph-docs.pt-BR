@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f9200d336ae69ae02c45ab1d6fc3d9df86691ebc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5a6ae13816c3b59905ee66ad5d2d18f6a71270bd
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026969"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777610"
 ---
 # <a name="expirationpattern-resource-type"></a>tipo de recurso expirationPattern
 
@@ -25,8 +25,8 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solic
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|duration|Duração|A duração de acesso desejada do solicitante. Se especificado em uma solicitação, EndDateTime não deve estar presente.|
-|tipo|expirationPatternType|O tipo de padrão de expiração desejado do solicitante.|
+|duração|Duração|A duração de acesso desejada do solicitante. Se especificado em uma solicitação, EndDateTime não deve estar presente.|
+|type|expirationPatternType|O tipo de padrão de expiração desejado do solicitante.|
 
 ### <a name="expirationpatterntype-values"></a>valores de expirationPatternType
 
@@ -46,8 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.expirationPattern",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.expirationPattern"
 }-->
 
 ```json

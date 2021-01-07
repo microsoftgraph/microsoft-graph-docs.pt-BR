@@ -5,12 +5,12 @@ author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a3fb3dfd7d083e2e160dea4c01d1a17363273243
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 689c95ee31ebfa0402e6c3867d81d479339e6c2b
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48741940"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777733"
 ---
 # <a name="configure-provisioning-using-microsoft-graph-apis"></a>Configurar o provisionamento usando as APIs do Microsoft Graph
 
@@ -316,7 +316,7 @@ Content-type: application/json
 
 ### <a name="test-the-connection-to-the-application"></a>Testar a conexão com o aplicativo
 
-Teste a conexão com o aplicativo de terceiros. O exemplo a seguir é para um aplicativo que requer um segredo do cliente e um token secreto. Cada aplicativo tem seus próprios requisitos. Os aplicativos geralmente usam um endereço base no lugar de um segredo do cliente. Para determinar de que credenciais seu aplicativo requer, vá para a página configuração de provisionamento do aplicativo e no modo de desenvolvedor clique em testar conexão. O tráfego de rede mostrará os parâmetros usados para credenciais. Para obter uma lista completa de credenciais, consulte [synchronizationJob: validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta). 
+Teste a conexão com o aplicativo de terceiros. O exemplo a seguir é para um aplicativo que requer um segredo do cliente e um token secreto. Cada aplicativo tem seus próprios requisitos. Os aplicativos geralmente usam um endereço base no lugar de um segredo do cliente. Para determinar de que credenciais seu aplicativo requer, vá para a página de configuração de provisionamento do aplicativo e, no modo de desenvolvedor, clique em **testar conexão**. O tráfego de rede mostrará os parâmetros usados para credenciais. Para obter uma lista completa de credenciais, consulte [synchronizationJob: validateCredentials](/graph/api/synchronization-synchronizationjob-validatecredentials?tabs=http&view=graph-rest-beta). A maioria dos aplicativos, como o Azure databricks, conta com um BaseAddress e SecretToken. O BaseAddress é consultado como uma URL de locatário no portal do Azure. 
 
 #### <a name="request"></a>Solicitação
 ```msgraph-interactive

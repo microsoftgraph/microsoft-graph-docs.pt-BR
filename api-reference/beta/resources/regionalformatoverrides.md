@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jasonbro
 ms.prod: settings
 doc_type: resourcePageType
-ms.openlocfilehash: 2ed130135571faeced90a638e9334a7e2a185a5e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 437b67f6a99017bb20096dbd20451b7662145cbd
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073503"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777593"
 ---
 # <a name="regionalformatoverrides-resource-type"></a>tipo de recurso regionalFormatOverrides
 
@@ -39,7 +39,6 @@ A seguir está uma definição de JSON do recurso.
 <!--{
   "blockType": "resource",
   "optionalProperties": [],
-  "baseType": "",
   "@odata.type": "microsoft.graph.regionalFormatOverrides"
 }-->
 

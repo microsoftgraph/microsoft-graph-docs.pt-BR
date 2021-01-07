@@ -3,12 +3,12 @@ title: Introdução ao SDK do Microsoft Graph PowerShell
 description: Introdução ao SDK do Microsoft Graph PowerShell usando-o realiza algumas tarefas básicas.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: eeeaee7bf45e3b8d17f866425556102eef2c1cae
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 6f5ee22960f9bf33156807f9f55f49e6e4aa17b5
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782883"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777572"
 ---
 # <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Introdução ao SDK do Microsoft Graph PowerShell
 
@@ -16,7 +16,7 @@ Neste guia, você usará o SDK do Microsoft Graph PowerShell para realizar algum
 
 ## <a name="api-version"></a>Versão da API
 
-Por padrão, o SDK usa a [API REST do Microsoft Graph v 1.0](/graph/api/overview?view=graph-rest-1.0). Você pode alterar isso usando o `Select-MgProfile` comando.
+Por padrão, o SDK usa a [API REST do Microsoft Graph v 1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). Você pode alterar isso usando o `Select-MgProfile` comando.
 
 ```powershell
 Select-MgProfile -Name "beta"
@@ -32,10 +32,10 @@ Para obter detalhes sobre como usar o acesso somente de aplicativo para cenário
 
 Cada API no Microsoft Graph é protegida por um ou mais escopos de permissão. O logon do usuário deve ser consentido em um dos escopos necessários para as APIs que você planeja usar. Neste exemplo, usaremos as seguintes APIs.
 
-- [Listar usuários](/graph/api/user-list?view=graph-rest-1.0) para encontrar a ID de usuário do usuário conectado
-- [Liste joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0) para obter as equipes das quais o usuário é membro.
-- [Listar canais](/graph/api/channel-list?view=graph-rest-1.0) para obter os canais de uma equipe.
-- [Enviar mensagem](/graph/api/channel-post-messages?view=graph-rest-1.0) para enviar uma mensagem para um canal de equipe.
+- [Listar usuários](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) para encontrar a ID de usuário do usuário conectado
+- [Liste joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true) para obter as equipes das quais o usuário é membro.
+- [Listar canais](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) para obter os canais de uma equipe.
+- [Enviar mensagem](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) para enviar uma mensagem para um canal de equipe.
 
 O `User.Read.All` escopo de permissão habilitará as duas primeiras chamadas, e o `Group.ReadWrite.All` escopo habilitará o restante. Essas permissões exigem uma conta de administrador.
 
@@ -123,10 +123,18 @@ Agora que você tem a ID da equipe e a ID do canal, é possível postar uma mens
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 ```
 
-Este comando difere dos comandos anteriores que você usou. Em vez de apenas consultar dados, ele está realmente criando algo. No Microsoft Graph, isso é convertido em HTTP `POST` e requer um objeto no corpo dessa postagem. Nesse caso, o objeto é um [chat](/graph/resources/chatmessage?view=graph-rest-1.0). Observe que o `-Body` parâmetro para o comando é mapeado para a `body` propriedade em `chatMessage` . Outras propriedades são mapeadas de forma semelhante, para que você possa alterar a mensagem enviada. Por exemplo, para enviar uma mensagem urgente, use o comando a seguir.
+Este comando difere dos comandos anteriores que você usou. Em vez de apenas consultar dados, ele está realmente criando algo. No Microsoft Graph, isso é convertido em HTTP `POST` e requer um objeto no corpo dessa postagem. Nesse caso, o objeto é um [chat](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). Observe que o `-Body` parâmetro para o comando é mapeado para a `body` propriedade em `chatMessage` . Outras propriedades são mapeadas de forma semelhante, para que você possa alterar a mensagem enviada. Por exemplo, para enviar uma mensagem urgente, use o comando a seguir.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
+```
+
+### <a name="sign-out"></a>Sair
+
+Use o `Disconnect-MgGraph` comando para sair.
+
+```powershell
+Disconnect-MgGraph
 ```
 
 ## <a name="next-steps"></a>Próximas etapas
