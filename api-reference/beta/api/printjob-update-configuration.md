@@ -1,37 +1,37 @@
 ---
-title: Atualizar configuração de printJob
+title: Atualizar a configuração do printJob
 description: Atualizar a configuração de um trabalho de impressão
 author: tomsato-ms
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 85063072fb1a9c8d7ec4e5a12805b2fe65a50ddd
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1fa5ddff45a7dc80d36587577acf972443c956a9
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753085"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784763"
 ---
-# <a name="update-printjob-configuration"></a>Atualizar configuração de printJob
+# <a name="update-printjob-configuration"></a>Atualizar a configuração do printJob
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize a propriedade de [configuração](../resources/printjobconfiguration.md) de um [trabalho de impressão](../resources/printjob.md).
+Atualizar a [propriedade de](../resources/printjobconfiguration.md) configuração de um trabalho [de impressão.](../resources/printjob.md)
 
-Atualizar uma configuração de trabalho de impressão requer que o trabalho de impressão esteja em estado mantido registrando um gatilho de tarefa para a impressora. Para obter detalhes sobre como registrar um disparador de tarefas, consulte [estendendo a impressão universal para dar suporte à impressão pull](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Atualizar uma configuração de trabalho de impressão só será bem-sucedida se houver uma [printTask](../resources/printTask.md) em estado no trabalho de impressão associado, iniciado por um gatilho que solicita o `processing` aplicativo criado. Para obter detalhes sobre como registrar um gatilho de tarefa, consulte Estendendo a impressão universal para dar suporte [à impressão pull.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura universal de impressão ativa, uma permissão que conceda obter acesso à [impressora](printer-get.md) e uma das permissões listadas na tabela a seguir.
+Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, a permissão de aplicativo Printer.Read.All ou Printer.ReadWrite.All e uma das permissões listadas na tabela a seguir.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Sem suporte. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| PrintJob.Manage.All |
+|Aplicativo| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ PATCH /print/printers/{id}/jobs/{id}/configuration
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores dos campos [printJobConfiguration](../resources/printjobconfiguration.md) relevantes. As propriedades existentes que não estão incluídas no corpo da solicitação manterão seus valores anteriores.
+No corpo da solicitação, fornece os valores dos campos [printJobConfiguration](../resources/printjobconfiguration.md) relevantes. Propriedades existentes que não estão incluídas no corpo da solicitação manterão seus valores anteriores.
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
@@ -54,14 +54,12 @@ O exemplo a seguir mostra como chamar essa API.
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-update-configuration"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/configuration
+PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/configuration
 
 {
   "feedOrientation": "longEdgeFirst",
@@ -95,13 +93,6 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
   "fitPdfToPage": false
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-update-configuration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printjob-update-configuration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

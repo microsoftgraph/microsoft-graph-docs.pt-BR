@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 73f01c22ce87c76289060cc23319ec952d414b10
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: d7c2691809728c7f7a5fee8ebf154b0c35624c10
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921596"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784781"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -44,7 +44,7 @@ Esse recurso permite:
 | [Adicionar membro](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
 | [Adicionar proprietário](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email). |
 | [Criar configuração](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) | Criar um objeto de configuração com base em um directorySettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação. |
-| [Excluir configuração](../api/directorysetting-delete.md) | None | Excluir um objeto de configuração. |
+| [Excluir configuração](../api/directorysetting-delete.md) | Nenhum | Excluir um objeto de configuração. |
 | [Obter o ponto de extremidade](../api/endpoint-get.md) | [ponto de extremidade](endpoint.md) | Leia as propriedades e os relacionamentos do objeto ponto de extremidade. |
 | [Obter configuração](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) | Ler propriedades de um objeto de configuração específico. |
 | [Listar pontos de extremidade](../api/group-list-endpoints.md) | conjunto [ponto de extremidade](endpoint.md)  | Obtenha uma coleção de o objeto ponto de extremidade. |
@@ -72,7 +72,7 @@ Esse recurso permite:
 | **Calendar** |||
 | [Criar evento](../api/group-post-events.md) | [event](event.md) | Criar um novo Event postando na coleção de eventos. |
 | [Obter evento](../api/group-get-event.md) | [event](event.md) | Ler as propriedades de um objeto event. |
-| [Listar eventos](../api/group-list-events.md) | Coleção de [eventos](event.md) | Obter uma coleção de objetos de evento. |
+| [Listar eventos](../api/group-list-events.md) | Coleção [event](event.md) | Obter uma coleção de objetos de evento. |
 | [Atualizar evento](../api/group-update-event.md) | Nenhum | Atualizar as propriedades de um objeto event. |
 | [Excluir evento](../api/group-delete-event.md) | Nenhum | Excluir o objeto event. |
 | [Listar calendarView](../api/group-list-calendarview.md) | Coleção [event](event.md) | Obter um conjunto de eventos em uma janela de tempo especificada. |
@@ -125,8 +125,8 @@ Esse recurso permite:
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante as atualizações. <br><br>Retornado por padrão. Oferece suporte a $filter e $orderby. |
 |expirationDateTime|DateTimeOffset| Data e hora de quando o grupo está configurado para expirar. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. |
 |groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo e sua associação.  <br><br>Se a coleção contiver `Unified`, o grupo será um grupo do Microsoft 365; caso contrário, será um grupo de segurança ou um grupo de distribuição. Para obter detalhes, confira [visão geral sobre grupos](groups-overview.md).<br><br>Se a coleção inclui `DynamicMembership`, o grupo tem associação dinâmica; caso contrário, a associação é estática.  <br><br>Retornado por padrão. Oferece suporte a $filter.|
-|hasMembersWithLicenseErrors|Boolean| Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Essa propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é **true** ).|
-|hideFromAddressLists |Booliano |Verdadeiro se o grupo não for exibido em certas partes da interface do usuário do Outlook: no **Catálogo de Endereços** , nas listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar Grupos** para pesquisar grupos; falso caso contrário. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
+|hasMembersWithLicenseErrors|Boolean| Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Essa propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é **true**).|
+|hideFromAddressLists |Booliano |Verdadeiro se o grupo não for exibido em certas partes da interface do usuário do Outlook: no **Catálogo de Endereços**, nas listas de endereços para selecionar os destinatários da mensagem e na caixa de diálogo **Procurar Grupos** para pesquisar grupos; falso caso contrário. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |hideFromOutlookClients |Booliano |Verdadeiro se o grupo não for exibido nos clientes do Outlook, como Outlook para Windows e Outlook na Web; caso contrário, falso. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |isAssignableToRole|Booliano|Indica se esse grupo pode ser atribuído a uma função do Azure Active Directory ou não.<br><br>Essa propriedade só pode ser definida durante a criação do grupo e é imutável. Somente o Administrador Global o Administrador com Função Privilegiada podem definir essa propriedade. Para mais informações, consulte [Usando um grupo para gerenciar as atribuições de funções do Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Retornado por padrão.|
@@ -138,6 +138,7 @@ Esse recurso permite:
 |mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. Esses caracteres não podem ser usados no mailNickName: `@()\[]";:.<>,SPACE`. <br><br>Retornado por padrão. Oferece suporte a $filter.|
 |membershipRule|String|A regra que determina membros para esse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para saber mais sobre a sintaxe da regra de associação, confira [sintaxe regras de associação](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Retornado por padrão. |
 |membershipRuleProcessingState|String|Indica se o processamento de associação dinâmica está ativado ou em pausa. Valores possíveis são "On" ou "Paused". <br><br>Retornado por padrão. |
+|membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |Descreve o status de processamento para grupos dinâmicos baseados em regras. A propriedade é `null` para grupos dinâmicos não baseados em regras ou se o processamento do grupo dinâmico foi pausado. <br><br>Retornado apenas em `$select`. Oferece suporte para `$filter`. Somente leitura. |
 |onPremisesDomainName|Cadeia de Caracteres|Contém o **nome de domínio totalmente qualificado (FQDN)** local, também chamado de **dnsDomainName** sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect.<br><br>Retornado por padrão. Somente leitura. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o grupo foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
 |onPremisesNetBiosName|Cadeia de Caracteres|Contém o **netBios name** local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local com o Azure Active Directory pelo Azure AD Connect.<br><br>Retornado por padrão. Somente leitura. |
@@ -302,6 +303,7 @@ Veja a seguir uma representação JSON do recurso.
   "hasMembersWithLicenseErrors": true,
   "membershipRule": "string",
   "membershipRuleProcessingState": "string",
+  "membershipRuleProcessingStatus":{"@odata.type": "microsoft.graph.membershipRuleProcessingStatus"},
   "preferredLanguage": "string",
   "theme": "string"
 }
@@ -326,5 +328,4 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
 

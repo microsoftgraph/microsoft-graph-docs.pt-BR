@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 19fc2c0ecdcd3b56f2faa7f745adc46f3f069e7d
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 8211d2cc225b1bc7275fb124d928e9d996a6fb0c
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581128"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784790"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -2073,8 +2073,10 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 | _Printer.FullControl.All_ | Registre, leia, atualize e cancele o registro de impressoras | Permite que o aplicativo crie (registre), leia, atualize e exclua (cancele o registro) de impressoras em nome do usuário conectado. | Sim | Não |
 | _Printer.Read.All_ | Ler impressoras | Permite que o aplicativo leia impressoras em nome do usuário conectado. | Sim | Não |
 | _Printer.ReadWrite.All_ | Ler e atualizar as impressoras | Permite que o aplicativo leia e atualize impressoras em nome do usuário conectado. Não permite a criação (registro) ou a exclusão (cancelamento do registro) de impressoras. | Sim | Não |
+| _PrinterShare.ReadBasic.All_ | Leia as informações básicas sobre compartilhamentos de impressoras | Permite que o aplicativo leia informações básicas sobre os compartilhamentos da impressora em nome do usuário conectado. Não permite a leitura de informações de controle de acesso. | Não | Não |
 | _PrinterShare.Read.All_ | Ler compartilhamentos de impressora | Permite que o aplicativo leia os compartilhamentos da impressora em nome do usuário conectado. | Não | Não |
 | _PrinterShare.ReadWrite.All_ | Ler e gravar compartilhamentos de impressora | Permite que o aplicativo leia e atualize compartilhamentos de impressora em nome do usuário conectado. | Sim | Não |
+| _PrintJob.Create_ | Crie trabalhos de impressão | Permite que o aplicativo crie trabalhos de impressão em nome do usuário conectado e carregue o conteúdo do documento para imprimir os trabalhos que o usuário conectado criou. | Não | Não |
 | _PrintJob.Read_ | Ler os trabalhos de impressão do usuário | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão criados pelo usuário conectado. | Não | Não |
 | _PrintJob.Read.All_ | Ler os trabalhos de impressão | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão em nome do usuário conectado. | Sim | Não |
 | _PrintJob.ReadBasic_ | Ler informações básicas dos trabalhos de impressão do usuário | Permite que o aplicativo leia os metadados dos trabalhos de impressão criados pelo usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Não | Não |

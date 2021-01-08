@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e980d2280a9fd09bdaa55d2a1cad416ed2ef0d7c
-ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
+ms.openlocfilehash: 5a9d138ac1280d419a9a6c386c8f4987d56ac946
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49368156"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784812"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -398,6 +398,51 @@ Content-type: application/json
       "displayName":"Video Production",
       "mail":"videoprod@service.contoso.com",
       "mailNickname":"VideoProduction"
+    }
+  ]
+}
+```
+
+### <a name="example-7-list-dynamic-groups-filtered-by-enabled-membershipruleprocessingstate"></a>Exemplo 7: Listar grupos dinâmicos, filtrados por MembershipRuleProcessingState habilitado
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_enabled_dynamic_groups"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus&$filter=membershipRuleProcessingState eq 'On'
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)",
+  "value":[
+    {
+      "id": "1cdf9c18-a7dc-46b1-b47f-094d5656376d",
+      "membershipRule": "user.accountEnabled -eq false",
+      "membershipRuleProcessingState": "On",
+      "membershipRuleProcessingStatus": {
+          "status" : "Succeeded",
+          "lastMembershipUpdated"  : "2020-09-14T00:00:00Z",
+          "errorMessage" : null
+        }
     }
   ]
 }
