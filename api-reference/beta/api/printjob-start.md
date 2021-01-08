@@ -1,33 +1,33 @@
 ---
-title: 'printJob: iniciar'
-description: Envia o trabalho de impressão para a impressora ou o printerShare associado. Ela será impressa após qualquer trabalho pendente existente ser concluído, anulado ou cancelado.
+title: 'printJob: start'
+description: Envia o trabalho de impressão para a impressora ou printerShare associada. Ele será impresso assim que quaisquer trabalhos pendentes existentes são concluídos, anulados ou cancelados.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a78e55b0c3c317c350bcc321fe3463a4541693f1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d2cb4a5413d592d170e31a882be93d900deca8c1
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48714763"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784780"
 ---
-# <a name="printjob-start"></a>printJob: iniciar
+# <a name="printjob-start"></a>printJob: start
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Envia o trabalho de impressão para a [impressora](../resources/printer.md) ou o [printerShare](../resources/printershare.md)associado. Ela será impressa após qualquer **trabalho** pendente existente ser concluído, anulado ou cancelado.
+Envia o trabalho de impressão para a impressora [ou](../resources/printer.md) [printerShare associada.](../resources/printershare.md) Ele será impresso depois que quaisquer trabalhos pendentes existentes **são** concluídos, anulados ou cancelados.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura de impressão universal ativa e ter uma permissão que conceda [obter impressora](printer-get.md) ou [obter printerShare](printershare-get.md) dependendo da impressora ou do printerShare estar sendo usado.
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma [](printer-get.md) assinatura de Impressão Universal ativa e ter uma permissão que conceda Obter impressora ou [Obter printerShare,](printershare-get.md) dependendo se impressora ou printerShare está sendo usada.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| PrintJob. ReadWriteBasic, PrintJob. ReadWrite, PrintJob. ReadWriteBasic. All, PrintJob. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)| PrintJob.Create, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
@@ -42,10 +42,10 @@ POST /print/shares/{id}/jobs/{id}/start
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não envie um corpo de solicitação para este método. 
+Não envie um corpo de solicitação para esse método. 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printJobStatus](../resources/printjobstatus.md) no corpo.
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto printJobStatus](../resources/printjobstatus.md) no corpo.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.

@@ -1,35 +1,35 @@
 ---
-title: 'printJob: Abort'
-description: Anular um trabalho de impressão.
+title: 'printJob: abort'
+description: Anula um trabalho de impressão.
 author: nilakhan
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8fe447b11a8198af41bf9e69e98a7ea64231dec8
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: c92786af585eed2ba2b405fb9c6042c96b415a7b
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691039"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784835"
 ---
-# <a name="printjob-abort"></a>printJob: Abort
+# <a name="printjob-abort"></a>printJob: abort
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Anular um trabalho de impressão. Somente aplicativos usando permissões de aplicativo podem anular um trabalho de impressão.
+Anula um trabalho de impressão. Somente aplicativos que usam permissões de aplicativo podem anular um trabalho de impressão.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatura universal de impressão ativa e ter uma permissão que conceda obter acesso à [impressora](printer-get.md) .
+Além das permissões a seguir, o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter a permissão de aplicativo Printer.Read.All ou Printer.ReadWrite.All.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| Não suportado |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| PrintJob. ReadWriteBasic. All, PrintJob. ReadWrite. All |
+|Aplicativo| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /print/printers/{id}/jobs/{id}/abort
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, você pode, opcionalmente, fornecer o motivo pelo qual o trabalho está sendo anulado.
+No corpo da solicitação, opcionalmente, você pode fornecer o motivo pelo qual o trabalho está sendo anulado.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|

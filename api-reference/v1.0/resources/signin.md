@@ -1,22 +1,22 @@
 ---
 title: tipo de recurso de domínio
-description: Detalha a atividade de entrada do usuário e do aplicativo para um locatário (diretório).
+description: Detalha a atividade de login do usuário e do aplicativo para um locatário (diretório).
 author: besiler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b86ae228a888ce32ca79053f46ff4e7a04505bcc
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 76708c8515c27babf5dcf8cc0105a7c2cfd40f64
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563657"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784819"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
 Namespace: microsoft.graph
 
-Detalha a atividade de entrada do usuário e do aplicativo para um locatário (diretório).
+Detalha a atividade de login do usuário e do aplicativo para um locatário (diretório). Você deve ter uma licença P1 ou P2 do Azure AD Premium para baixar logs de login usando a API do Microsoft Graph.
 
 ## <a name="methods"></a>Métodos
 
@@ -28,30 +28,30 @@ Detalha a atividade de entrada do usuário e do aplicativo para um locatário (d
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|appDisplayName|String|Nome do aplicativo exibido no portal do Azure.|
+|appDisplayName|String|Nome do aplicativo exibido no Portal do Azure.|
 |appId|String|GUID exclusivo que representa a ID do aplicativo no Azure Active Directory.|
-|appliedConditionalAccessPolicy|coleção [appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
-|clientAppUsed|Cadeia de caracteres|Identifica o cliente herdado usado para a atividade de entrada.  Inclui navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP e POP.|
-|conditionalAccessStatus|cadeia de caracteres| Relata o status de uma política de acesso condicional ativada. Os valores possíveis são: `success` , `failure` , `notApplied` , e `unknownFutureValue` .|
-|correlationId|Cadeia de caracteres|A ID de solicitação enviada do cliente quando o logon é iniciado; usado para solucionar problemas de atividade de entrada.|
-|createdDateTime|DateTimeOffset|Data e hora (UTC) a entrada foi iniciada. Exemplo: meia-noite em 1º de janeiro de 2014 é reportada como `'2014-01-01T00:00:00Z'` .|
-|deviceDetail|[deviceDetail](devicedetail.md)|Informações do dispositivo de onde a entrada ocorreu; inclui ID de dispositivo, sistema operacional e navegador. |
-|id|String|ID exclusiva que representa a atividade de entrada.|
+|appliedConditionalAccessPolicy|[Coleção appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
+|clientAppUsed|Cadeia de caracteres|Identifica o cliente herddo usado para atividade de entrada.  Inclui Navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP e POP.|
+|conditionalAccessStatus|cadeia de caracteres| Relata o status de uma política de acesso condicional ativada. Os valores possíveis `success` são: `failure` , e `notApplied` `unknownFutureValue` .|
+|correlationId|Cadeia de caracteres|A ID de solicitação enviada do cliente quando a entrada é iniciada; usado para solucionar problemas de atividade de login.|
+|createdDateTime|DateTimeOffset|Data e hora (UTC) em que a login foi iniciada. Exemplo: meia-noite em 1º de janeiro de 2014 é relatado como `'2014-01-01T00:00:00Z'` .|
+|deviceDetail|[deviceDetail](devicedetail.md)|Informações do dispositivo de onde ocorreu a entrada; inclui a ID do dispositivo, o sistema operacional e o navegador. |
+|id|String|ID exclusiva que representa a atividade de login.|
 |ipAddress|Cadeia de caracteres|Endereço IP do cliente usado para entrar.|
-|isInteractive|Booliano|Indica se um logon é interativo ou não.|
-|location|[signInLocation](signinlocation.md)|Fornece a cidade, o estado e o código do país onde a entrada se originou.|
-|resourceDisplayName|String|Nome do recurso do usuário conectado.|
-|resourceId|Cadeia de caracteres|ID do recurso que o usuário entrou.|
-|riskDetail|riskDetail|Fornece o motivo por trás de um estado específico de um usuário arriscado, uma entrada arriscada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. <br>**Observação:** Os detalhes dessa propriedade exigem uma licença do Azure AD Premium P2. Outras licenças retornam o valor `hidden` .|
-|riskEventTypes|coleção riskEventType|Tipos de eventos de risco associados à entrada. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`.|
-|riskEventTypes_v2|Conjunto de cadeias de caracteres|A lista de tipos de eventos de risco associados à entrada. Valores possíveis: `unlikelyTravel` ,,,,, `anonymizedIPAddress` ,, `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` , ou `unknownFutureValue` .|
+|isInteractive|Booliano|Indica se uma assinatura é interativa ou não.|
+|location|[signInLocation](signinlocation.md)|Fornece a cidade, o estado e o código do país de origem da assinatura.|
+|resourceDisplayName|String|Nome do recurso em que o usuário entrou.|
+|resourceId|Cadeia de caracteres|ID do recurso em que o usuário entrou.|
+|riskDetail|riskDetail|Fornece o motivo por trás de um estado específico de um usuário arriscado, uma entrada arriscada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. <br>**Observação:** Os detalhes dessa propriedade exigem uma licença do Azure AD Premium P2. Outras licenças retornam o `hidden` valor.|
+|riskEventTypes|Coleção riskEventType|Tipos de evento de risco associados à login. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`.|
+|riskEventTypes_v2|Coleção de cadeias de caracteres|A lista de tipos de eventos de risco associados à login. Valores possíveis: `unlikelyTravel` , , , , , , , `anonymizedIPAddress` ou `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` .|
 |riskLevelAggregated|riskLevel|Nível de risco agregado. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
-|riskLevelDuringSignIn|riskLevel|Nível de risco durante a entrada. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
-|riskState|riskState|Relata o status do usuário arriscado, de entrada ou de um evento de risco. Os valores possíveis são `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|status|[signInStatus](signinstatus.md)|Status de logon. Inclui o código de erro e a descrição do erro (em caso de falha de entrada).|
-|userDisplayName|Cadeia de caracteres|Nome para exibição do usuário que iniciou a entrada.|
-|userId|Cadeia de caracteres|ID do usuário que iniciou a entrada.|
-|userPrincipalName|String|Nome principal do usuário que iniciou a entrada.|
+|riskLevelDuringSignIn|riskLevel|Nível de risco durante a login. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
+|riskState|riskState|Relata o status do usuário arriscado, login ou um evento de risco. Os valores possíveis são `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|status|[signInStatus](signinstatus.md)|Status de login. Inclui o código de erro e a descrição do erro (em caso de falha de login).|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário que iniciou a login.|
+|userId|Cadeia de caracteres|ID do usuário que iniciou a login.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário que iniciou a login.|
 
 ## <a name="relationships"></a>Relações
 

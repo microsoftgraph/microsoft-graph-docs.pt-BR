@@ -3,14 +3,14 @@ title: Get printerShare
 description: Recupere as propriedades e os relacionamentos de um compartilhamento de impressora.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 45cbc98c770b4c773ce0d7c8d9c9ba66343ff4b2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a30f670d429fb57d92c7c0cf5f615ffb60bb2d59
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979729"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784840"
 ---
 # <a name="get-printershare"></a>Get printerShare
 
@@ -23,13 +23,13 @@ Recupere as propriedades e os relacionamentos de um compartilhamento de impresso
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou o locatário do aplicativo deve ter uma assinatura universal de impressão ativa.
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| PrinterShare. Read. All, PrinterShare. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,10 +39,15 @@ GET /print/printers/{id}/share
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte a alguns dos parâmetros de consulta OData, incluindo $select, $expand para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+por exemplo, 
+```http
+GET /print/printers/{id}?$select=id,displayName,capabilities
+```
 
 ### <a name="exceptions"></a>Exceptions
-* `$count`Não há suporte para o operador.
+* Não `$count` há suporte para o operador.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -52,9 +57,11 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printerShare](../resources/printershare.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [printerShare](../resources/printershare.md) no corpo da resposta.
+Por padrão, a resposta não conterá [printerCapabilities](../resources/printerCapabilities.md). Para obter **printerCapabilities**, use `$select` o parâmetro de consulta. 
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,7 +90,7 @@ GET https://graph.microsoft.com/beta/print/shares/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -99,11 +106,77 @@ Content-length: 225
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
-  "name": "ShareName",
+  "displayName": "ShareName",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z"
 }
 ```
 
+A seguir está um exemplo da resposta, ao usar $select=id,displayName,capabilities
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printer"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1313
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
+  "id": "d837c17b-3296-4384-a053-828d56e10f50",
+  "displayName": "ShareName",
+  "capabilities": {
+    "isColorPrintingSupported": true,
+    "supportsFitPdfToPage": false,
+    "contentTypes": [
+      "application/pdf",
+      "image/pwg-raster",
+      "application/PCLm"
+    ],
+    "isPageRangeSupported": false,
+    "qualities": [
+      "medium"
+    ],
+    "dpis": [
+      600
+    ],
+    "duplexModes": [
+      "oneSided",
+      "flipOnLongEdge",
+      "flipOnShortEdge"
+    ],
+    "finishings": [
+      "none"
+    ],
+    "mediaTypes": [
+      "stationery"
+    ],
+    "mediaSizes": [
+      "North America Letter"
+    ],
+    "outputBins": [
+      "tray-1"
+    ],
+    "colorModes": [
+      "grayscale",
+      "color"
+    ],
+    "inputBins": [
+      "tray-1"
+    ],
+    "collation": true,
+    "scalings": [
+      "fill"
+    ],
+    "copiesPerJob": {
+      "start": 1,
+      "end": 38
+    }
+  }
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

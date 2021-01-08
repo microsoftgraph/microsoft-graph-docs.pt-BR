@@ -1,35 +1,35 @@
 ---
-title: Baixar arquivo binário do documento
+title: Baixar o arquivo binário printDocument
 description: Baixe o arquivo binário associado ao documento.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8986b704a8d7c36d510d4c4859003df1f5a7e94b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c56d1012e4b375be318f48f91cfb7e9f863b5704
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48981491"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784868"
 ---
-# <a name="download-printdocument-binary-file"></a>Baixar arquivo binário do documento
+# <a name="download-printdocument-binary-file"></a>Baixar o arquivo binário printDocument
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Baixar o arquivo binário associado a um [documento](../resources/printdocument.md). Chamar esse método gera uma resposta de redirecionamento com uma URL previamente autenticada que pode ser usada para baixar a carga.
+Baixe o arquivo binário associado a [um printDocument](../resources/printdocument.md). Chamar esse método gera uma resposta de redirecionamento com uma URL pré-autenticada que pode ser usada para baixar a carga.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura universal de impressão ativa e ter uma permissão que conceda obter acesso à [impressora](printer-get.md) .
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma [](printer-get.md) assinatura de Impressão Universal ativa e ter uma permissão que conceda acesso à impressora em caso de tokens de acesso do usuário e a permissão de aplicativo Printer.Read.All ou Printer.ReadWrite.All no caso de tokens de acesso somente aplicativo. 
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | PrintJob. Read, PrintJob. Read. All, PrintJob. ReadWrite, PrintJob. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | PrintJob.Read, PrintJob.Read.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                               |
-| Application                            | PrintJob. Read. All, PrintJob. ReadWrite. All                    |
+| Aplicativo                            | PrintJob.Read.All, PrintJob.ReadWrite.All                    |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,10 +45,10 @@ GET /print/printers/{id}/jobs/{id}/documents/{id}/$value
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `302 Found` e a URL de download previamente autenticado no cabeçalho de local.
+Se bem-sucedido, este método retorna e a `302 Found` URL de download previamente autenticada no título Local.
 
 ## <a name="examples"></a>Exemplos
-O exemplo a seguir mostra como chamar essa API para adquirir uma URL de download previamente autenticado. Para iniciar o download, siga a URL de redirecionamento na resposta.
+O exemplo a seguir mostra como chamar essa API para adquirir uma URL de download pré-autenticada. Para iniciar o download, siga a URL de redirecionamento na resposta.
 
 ### <a name="request"></a>Solicitação
 
