@@ -5,24 +5,27 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 33a6312474994ff65397f6d09b416d15560bb08c
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 05cb2e8e4d6a41028a9f35b82561b4f5b5d80251
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706252"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790584"
 ---
 # <a name="get-teamworkbot"></a>Obter teamworkBot
+
 Namespace: microsoft.graph
 
-Obter o bot associado a uma [definição](../resources/teamsappdefinition.md) específica do  [TeamsApp](../resources/teamsapp.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Obter o bot associado a uma definição [específica](../resources/teamsappdefinition.md) do  [TeamsApp](../resources/teamsapp.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| AppCatalog. Submit, AppCatalog. Read. All, AppCatalog. ReadWrite. All |
+|Delegada (conta corporativa ou de estudante)| AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)| Sem suporte. |
 |Aplicativo| Sem suporte.|
 
@@ -37,7 +40,7 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameter) para ajudar a personalizar a resposta.
+Esse método dá suporte aos parâmetros de `$select` [consulta OData](/graph/query-parameter) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -49,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [teamworkBot](../resources/teamworkbot.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [teamworkBot](../resources/teamworkbot.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -83,8 +86,8 @@ Content-Type: application/json
 ```
 ## <a name="see-also"></a>Confira também
 
-- Para obter bots instalados em uma equipe, confira o exemplo 2 em [list apps in Team](team-list-installedapps.md).
-- Para obter bots instalados em um chat, confira o exemplo 2 em [listar aplicativos no chat](chat-list-installedapps.md).
-- Para obter bots instalados no escopo pessoal de um usuário, confira o exemplo 2 em [listar aplicativos instalados para o usuário](userteamwork-list-installedapps.md).
+- Para instalar bots em uma equipe, confira o exemplo 2 em [Listar aplicativos em equipe.](team-list-installedapps.md)
+- Para instalar bots em um chat, confira o exemplo 2 em Aplicativos [de lista no chat.](chat-list-installedapps.md)
+- Para instalar bots no escopo pessoal de um usuário, confira o exemplo 2 em Aplicativos de [lista instalados para o usuário.](userteamwork-list-installedapps.md)
 
 

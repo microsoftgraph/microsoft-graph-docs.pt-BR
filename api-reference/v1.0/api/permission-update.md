@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 59fe051abe8389808b6a66f01108b647ab620aae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a282219ec10ff1201618815ad5425e9f6fb786c3
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020717"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790752"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -57,9 +57,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.
 Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade | Tipo              | Descrição                   |
-|:---------|:------------------|:------------------------------|
-| funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
+As propriedades a seguir nesses tipos de permissão podem ser modificadas.
+
+| Tipo de permissão        | Propriedade | Tipo              | Descrição                   |
+|:-----------------------|:---------|:------------------|:------------------------------|
+| Usuário                   | funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
+| Link de compartilhamento anônimo | expirationDateTime | DateTimeOffset | Um formato de yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset para o tempo de expiração da permissão. |
+
+### <a name="remarks"></a>Comentários
+As modificações de permissão sem suporte incluem o seguinte:
+- Links de compartilhamento organizacional
+- Links de compartilhamento de pessoas
 
 ## <a name="response"></a>Resposta
 

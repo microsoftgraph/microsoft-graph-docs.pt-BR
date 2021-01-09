@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso cloudPcSourceDeviceImage
+title: Tipo de recurso cloudPcSourceDeviceImage
 description: 'A imagem de origem associada à sua assinatura do Azure. '
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: c944ab1a634d10e978c6ce1620ebe1accc5e4359
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 1b0c656142ddad5af3d0af7778d0ae04f0c5d7b4
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563741"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790738"
 ---
-# <a name="cloudpcsourcedeviceimage-resource-type"></a>tipo de recurso cloudPcSourceDeviceImage
+# <a name="cloudpcsourcedeviceimage-resource-type"></a>Tipo de recurso cloudPcSourceDeviceImage
 
 Namespace: microsoft.graph
 
@@ -26,8 +26,8 @@ A imagem de origem associada à sua assinatura do Azure.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID da imagem de origem.|
-|displayName|String|O nome de exibição da imagem de origem.|
+|id|Cadeia de caracteres|A ID da imagem de origem.|
+|displayName|Cadeia de caracteres|O nome de exibição da imagem de origem.|
 
 ## <a name="relationships"></a>Relações
 
@@ -38,8 +38,7 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.cloudPcSourceDeviceImage",
-  "baseType": "microsoft.graph.entity"
+  "@odata.type": "microsoft.graph.cloudPcSourceDeviceImage"
 }
 -->
 

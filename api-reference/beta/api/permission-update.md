@@ -6,12 +6,12 @@ title: Alterar permissões de compartilhamento
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: f24d2966f3b1edfa95cf8d211441abb2926eb9a3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 56f9d600a36fb7b94757e6c783e2d397306e2de0
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973892"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790682"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -58,9 +58,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.
 Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo   | Descrição                   |
-|:-------------|:-------|:------------------------------|
-| **roles**    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
+As propriedades a seguir nesses tipos de permissão podem ser modificadas.
+
+| Tipo de permissão        | Propriedade | Tipo              | Descrição                   |
+|:-----------------------|:---------|:------------------|:------------------------------|
+| Usuário                   | funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
+| Link de compartilhamento anônimo | expirationDateTime | DateTimeOffset | Um formato de yyyy-MM-ddTHH:mm:ssZ de DateTimeOffset para o tempo de expiração da permissão. |
+
+### <a name="remarks"></a>Comentários
+As modificações de permissão sem suporte incluem o seguinte:
+- Links de compartilhamento organizacional
+- Links de compartilhamento de pessoas
 
 ## <a name="response"></a>Resposta
 

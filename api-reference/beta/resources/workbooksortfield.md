@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso workbookSortField
+title: Tipo de recurso workbookSortField
 description: Representa uma condição em uma operação de classificação.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: 5f296d7d2d748213c24f1d49f6363f86d2b1af84
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a245591755542a0a9bcfefb3f220511bd1521118
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046101"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790668"
 ---
-# <a name="workbooksortfield-resource-type"></a>tipo de recurso workbookSortField
+# <a name="workbooksortfield-resource-type"></a>Tipo de recurso workbookSortField
 
 Namespace: microsoft.graph
 
@@ -26,13 +26,9 @@ Representa uma condição em uma operação de classificação.
 |ascending|booliano|Indica se a classificação é feita de forma crescente.|
 |color|cadeia de caracteres|Representa a cor que é o destino da condição se a classificação estiver na cor da fonte ou da célula.|
 |dataOption|cadeia de caracteres|Representa as opções de classificação adicionais para esse campo. Os valores possíveis são: `Normal` e `TextAsNumber`.|
+|ícone|[workbookIcon](workbookicon.md)|Representa o ícone que é o destino da condição se a classificação está no ícone da célula.|
 |key|int|Representa a coluna (ou linha, dependendo da orientação da classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).|
 |sortOn|string|Representa o tipo de classificação dessa condição. Os valores possíveis são: `Value`, `CellColor`, `FontColor` e `Icon`.|
-
-## <a name="relationships"></a>Relações
-| Relação | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|ícone|[workbookIcon](workbookicon.md)|Representa o ícone que é o destino da condição se a classificação está no ícone da célula.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,8 +39,6 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookSortField"
 }-->
 
