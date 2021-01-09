@@ -10824,9 +10824,9 @@ items:
                         href: api/identityapiconnector-update.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
-          - name: Gestão
+          - name: Governança
             items:
-              - name: Revisões de acesso (grupos)
+              - name: Revisões de acesso para grupos
                 href: resources/accessreviewsv2-root.md
                 items:
                   - name: Definição de agenda de revisão de acesso
@@ -10868,7 +10868,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: Atualizar
                         href: api/accessreviewinstancedecisionitem-update.md
-              - name: Revisões de acesso (todos os recursos)
+              - name: Avaliações do acesso
                 href: resources/accessreviews-root.md
                 items:
                   - name: Revisão de acesso
