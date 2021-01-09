@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 55e2c34e59a801c25ecfccd8314f3587c6f94b58
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: 029470d7a3a8328340d919de51d1d021a707bfcc
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47414032"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49785209"
 ---
 ```csharp
 
@@ -16,18 +16,22 @@ var team = new Team
     MemberSettings = new TeamMemberSettings
     {
         AllowCreatePrivateChannels = true,
-        AllowCreateUpdateChannels = true
+        AllowCreateUpdateChannels = true,
+        ODataType = null
     },
     MessagingSettings = new TeamMessagingSettings
     {
         AllowUserEditMessages = true,
-        AllowUserDeleteMessages = true
+        AllowUserDeleteMessages = true,
+        ODataType = null
     },
     FunSettings = new TeamFunSettings
     {
         AllowGiphy = true,
-        GiphyContentRating = GiphyRatingType.Strict
-    }
+        GiphyContentRating = GiphyRatingType.Strict,
+        ODataType = null
+    },
+    ODataType = null
 };
 
 await graphClient.Groups["{id}"].Team
