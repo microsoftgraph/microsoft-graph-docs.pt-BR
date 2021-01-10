@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 4bf622b5348837904310c387367017ea5b2515c0
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: b18becc30afc35d60f0a9727a28659523ead9443
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754303"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784767"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,11 +18,23 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 
 ## <a name="january-2021"></a>Janeiro de 2021
 
+### <a name="groups"></a>Grupos
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | beta | Adicionada a propriedade **MembershipRuleProcessingStatus** a grupos dinâmicos.|
+
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a propriedade para **hostNames** à entidade [dispositivo](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+|:---|:---|:---|
+| Adição | beta | Adicionadas novas [Permissões delegadas](/graph/permissions-reference#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li></ul> |
 
 ## <a name="december-2020"></a>Dezembro de 2020
 
@@ -2355,7 +2367,7 @@ A estreia da API de locais para fornecer detalhes apurados para locais em aplica
 | Adição | beta | Associação de navegação adicionada à propriedade **chats** do recurso de [usuário](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true).|
 | Adição | beta | Recurso de [trabalho](/graph/api/resources/teamwork?view=graph-rest-beta&preserve-view=true) em equipe adicionado. |
 | Adição | beta | Recurso [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta&preserve-view=true) foi adicionado. |
-| Adição | beta | Novos métodos adicionados ao recurso de[usuário](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) habilitando os seguintes métodos com aplicativos pessoais para os usuários: <br>[Listar aplicativos instalados para o usuário](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&preserve-view=true) <br>[Instalar o aplicativo para o usuário](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta&preserve-view=true) <br>[Desinstalar o aplicativo para o usuário](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta&preserve-view=true) <br>[Atualizar o aplicativo instalado para o usuário](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta&preserve-view=true)|
+| Adição | beta | Novos métodos adicionados ao recurso de[usuário](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) habilitando os seguintes métodos com aplicativos pessoais para os usuários: <br>[Lista de aplicativos instalados para o usuário](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta&preserve-view=true) <br>[Instalar o aplicativo para o usuário](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta&preserve-view=true) <br>[Desinstalar o aplicativo para o usuário](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta&preserve-view=true) <br>[Atualizar o aplicativo instalado para o usuário](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta&preserve-view=true)|
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 
