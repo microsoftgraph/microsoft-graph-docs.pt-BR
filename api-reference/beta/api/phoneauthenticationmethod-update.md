@@ -1,16 +1,16 @@
 ---
 title: Atualizar phoneAuthenticationMethod
-description: Atualize o número de telefone associado ao objeto phoneAuthenticationMethod.
+description: Atualize o número de telefone associado a um objeto phoneAuthenticationMethod.
 localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a565fac12b24b21dd43d87b4a736971bccf79115
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ae9f5bc036fd75e72bc7d698aa715447f1be552f
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980515"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796623"
 ---
 # <a name="update-phoneauthenticationmethod"></a>Atualizar phoneAuthenticationMethod
 
@@ -18,25 +18,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize o número de telefone associado a um [método de autenticação de telefone](../resources/phoneauthenticationmethod.md).
+Atualize o número de telefone associado a um método [de autenticação de telefone.](../resources/phoneauthenticationmethod.md)
 
 Não é possível alterar o tipo de um telefone. Para alterar o tipo de um telefone, adicione um novo número do tipo desejado e exclua o objeto com o tipo original.
 
-Se um usuário estiver habilitado por política para usar o SMS para entrar e o `mobile` número for alterado, o sistema tentará registrar o número para uso nesse sistema.
+Se um usuário estiver habilitado pela política para usar SMS para entrar e o número for alterado, o sistema tentará registrar o número para `mobile` uso no sistema.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões que atuam em si (de menos para mais privilégios) | Permissões que atuam em outros (de menos para mais privilégios)|
+### <a name="permissions-acting-on-self"></a>Permissões agindo por si só
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte. |
+
+### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|:-----------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. | UserAuthenticationMethod. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
-| Aplicativo                            | Sem suporte. | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
-* Administrador global
+Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* Administração global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 
@@ -58,16 +67,16 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. As propriedades existentes que não estão incluídas no corpo da solicitação serão recalculadas com base nas alterações de outros valores de propriedade.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. As propriedades existentes que não estão incluídas no corpo da solicitação serão recalculadas com base nas alterações feitas em outros valores de propriedade.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato "+ \<country code\> \<number\> x \<extension\> ", com a extensão opcional. Por exemplo, + 1 5555551234 ou + 1 5555551234x123 são válidas. Os números são rejeitados ao criar/atualizar se não coincidem com o formato necessário.|
-|PhoneType|string| Os valores possíveis são: `mobile` , `alternateMobile` , ou `office` .|
+|phoneNumber|String|O número de telefone para texto ou chamada para autenticação. Os números de telefone usam o formato "+ \<country code\> \<number\> \<extension\> x", com extensão opcional. Por exemplo, +1 5555551234 ou +1 5555551234x123 são válidos. Os números serão rejeitados ao criar/atualizar se não corresponderem ao formato necessário.|
+|phoneType|string| Os valores possíveis `mobile` são: `alternateMobile` , ou `office` .|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

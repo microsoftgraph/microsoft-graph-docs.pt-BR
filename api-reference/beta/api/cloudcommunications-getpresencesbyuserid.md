@@ -1,16 +1,16 @@
 ---
 title: 'cloudCommunications: getPresencesByUserId'
-description: Obtenha as informações de presença de vários usuários.
+description: Obter as informações de presença para vários usuários.
 author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 7d670db030a1110bb0aa9844820f53814d9b1a82
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3c6b0fe4d223ef458aad7d9b271cfdee37e590c
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957985"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796525"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as informações de [presença](../resources/presence.md) de vários usuários.
+Obter as [informações de](../resources/presence.md) presença para vários usuários.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Presence.Read.All                         |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                         |
-| Application                            | Sem suporte.                                  |
+| Aplicativo                            | Sem suporte.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ Uma das seguintes permissões é necessária para chamar essas APIs. Para saber 
 POST /communications/getPresencesByUserId
 ```
 
-## <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Solicitação de headers
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
@@ -44,15 +44,15 @@ POST /communications/getPresencesByUserId
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça um objeto JSON com o seguinte parâmetro.
+No corpo da solicitação, forneça um objeto JSON com o parâmetro a seguir.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|ids|Coleção de cadeias de caracteres|As IDs de objeto de usuário.|
+|ids|Coleção de cadeias de caracteres|As IDs de objeto do usuário.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Presence](../resources/presence.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de objetos [de](../resources/presence.md) presença no corpo da resposta.
 
 
 ## <a name="examples"></a>Exemplos
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/communications/getPresencesByUserId
 Content-Type: application/json
 
 {
-    "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
+  "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -96,7 +96,7 @@ Content-Type: application/json
 ### <a name="response"></a>Resposta
 O exemplo a seguir mostra a resposta.
 
-> **Observação:** Os objetos Response podem ser reduzidos para facilitar a leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** Os objetos de resposta podem ser reduzidos para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -112,17 +112,25 @@ Content-Length: 1574
 ```
 ```json
 {
-    "value": [{
-            "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-            "availability": "Busy",
-            "activity": "InAMeeting"
-        },
-        {
-            "id": "66825e03-7ef5-42da-9069-724602c31f6b",
-            "availability": "Away",
-            "activity": "Away"
-        }
-    ]
+  "value": [{
+      "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+      "availability": "Busy",
+      "activity": "InAMeeting",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": false
+      }
+    },
+    {
+      "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+      "availability": "Away",
+      "activity": "Away",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": true
+      }
+    }
+  ]
 }
 ```
 

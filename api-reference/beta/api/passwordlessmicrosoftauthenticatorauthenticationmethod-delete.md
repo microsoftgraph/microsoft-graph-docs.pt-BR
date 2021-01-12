@@ -1,40 +1,49 @@
 ---
 title: Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethod
-description: Exclui um objeto passwordlessMicrosoftAuthenticatorAuthenticationMethod.
+description: Exclui um objetoMicrosoftAuthenticatorAuthenticationMethod sem senha.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 42d7ffe92488a7166356b0e43688a17f2935b503
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 6e894cd8332969e708c8a7d8d1a53ca7c17be2dc
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352386"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796560"
 ---
-# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod"></a>Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethod
+# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethod (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui o objeto de [método de entrada de telefone sem senha do autenticador da Microsoft](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) do usuário.
+Exclui o objeto do método de login de telefone sem senha do [Microsoft Authenticator de um](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) usuário.
 
-> [!NOTE]
-> Alterações substanciais de esquema são planejadas para APIs que gerenciam o aplicativo Microsoft Authenticator enquanto as APIs estão no Mirosoft Graph beta. Como os padrões de chamada serão alterados, recomendamos que você não faça uma dependência de produção nessas APIs.
+> [!CAUTION]
+> A API do método de login de telefone sem senha do Microsoft Authenticator foi preterida e interromperá o retorno dos resultados em 31 de dezembro de 2020. Use o novo Método [de Autenticação do Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
 
+## <a name="permissions"></a>Permissions
 
-## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões que atuam em si (de a mais de privilégios mínimos)|Permissões que atuam em outros (de menos para mais privilégios)|
-|:---|:---|:--|
-|Delegado (conta corporativa ou de estudante)|Sem suporte.|UserAuthenticationMethod. ReadWrite. All
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|Sem suporte.
-|Aplicativo|Sem suporte.|Sem suporte.
+### <a name="permissions-acting-on-self"></a>Permissões agindo por si só
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte. |
 
-* Administrador global
+### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
+
+Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* Administração global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 
