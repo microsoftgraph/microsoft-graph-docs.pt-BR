@@ -1,16 +1,16 @@
 ---
 title: Obter presença
-description: Obtenha as informações de presença de um usuário.
+description: Obter informações de presença de um usuário.
 author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: a4851b527807c8c8787ad0fca62661a7f2c73175
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 80a5bd421d3c8ab5497f0b52a52fb77135e11648
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967124"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796707"
 ---
 # <a name="get-presence"></a>Obter presença
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as informações de [presença](../resources/presence.md) de um usuário.
+Obter informações de presença [de um](../resources/presence.md) usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Presence.Read, Presence.Read.All      |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                        |
-| Application                            | Sem suporte.                        |
+| Aplicativo                            | Sem suporte.                        |
 
 ## <a name="http-requests"></a>Solicitações HTTP
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /users/{id}/presence
 GET /communications/presences
 ```
 
-## <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Solicitação de headers
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
@@ -48,13 +48,13 @@ GET /communications/presences
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Presence](../resources/presence.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [de](../resources/presence.md) presença no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-your-own-presence-information"></a>Exemplo 1: obter suas próprias informações de presença
+### <a name="example-1-get-your-own-presence-information"></a>Exemplo 1: Obter suas próprias informações de presença
 
-O exemplo a seguir mostra como obter suas próprias informações de presença. Esta operação requer a permissão Presence. Read.
+O exemplo a seguir mostra como obter suas próprias informações de presença. Essa operação requer a permissão Presence.Read.
 
 #### <a name="request"></a>Solicitação
 
@@ -101,15 +101,19 @@ Content-Type: application/json
 Content-Length: 1574
 
 {  
-    "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-    "availability": "Available",
-    "activity": "Available"
+  "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+  "availability": "Available",
+  "activity": "Available",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
-### <a name="example-2-get-the-presence-information-of-another-user"></a>Exemplo 2: obter as informações de presença de outro usuário
+### <a name="example-2-get-the-presence-information-of-another-user"></a>Exemplo 2: Obter as informações de presença de outro usuário
 
-O exemplo a seguir mostra como obter as informações de presença de outro usuário. Esta operação requer a permissão Presence. Read. All.
+O exemplo a seguir mostra como obter as informações de presença de outro usuário. Essa operação requer a permissão Presence.Read.All.
 
 #### <a name="request"></a>Solicitação
 
@@ -155,15 +159,19 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
-    "id": "66825e03-7ef5-42da-9069-724602c31f6b",
-    "availability": "DoNotDisturb",
-    "activity": "Presenting"
+  "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+  "availability": "DoNotDisturb",
+  "activity": "Presenting",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
-### <a name="example-3-get-the-presence-information-of-another-user"></a>Exemplo 3: obter as informações de presença de outro usuário
+### <a name="example-3-get-the-presence-information-of-another-user"></a>Exemplo 3: Obter as informações de presença de outro usuário
 
-O exemplo a seguir mostra como obter as informações de presença de outro usuário. Esta operação requer a permissão Presence. Read. All.
+O exemplo a seguir mostra como obter as informações de presença de outro usuário. Essa operação requer a permissão Presence.Read.All.
 
 #### <a name="request"></a>Solicitação
 
@@ -209,13 +217,13 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 HTTP/1.1 200 OK
 
 {
-    "value": [
-        {
-            "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
-            "availability": "Away",
-            "activity": "BeRightBack"
-        }
-    ]
+  "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+  "availability": "Away",
+  "activity": "BeRightBack",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
