@@ -1,24 +1,24 @@
 ---
-title: Listar aplicativos instalados para o usuário
+title: Lista de aplicativos instalados para o usuário
 description: Recupere a lista de aplicativos instalados no escopo pessoal do usuário especificado.
 author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8169aaa7d2fb7e28318bb11375cade64e47956f7
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 81b60ee83f2be23ad2484af50ff1b71915158f4c
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706147"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844883"
 ---
-# <a name="list-apps-installed-for-user"></a>Listar aplicativos instalados para o usuário
+# <a name="list-apps-installed-for-user"></a>Lista de aplicativos instalados para o usuário
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de [aplicativos](../resources/teamsappinstallation.md) instalados no escopo pessoal do [usuário](../resources/user.md)especificado.
+Recupere a lista [de aplicativos](../resources/teamsappinstallation.md) instalados no escopo pessoal do usuário [especificado.](../resources/user.md)
 
 > [!NOTE]
 > O `id` de um recurso **teamsAppInstallation** não é o mesmo valor que o `id` do recurso **teamsApp** associado.
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation. ReadForUser. All, TeamsAppInstallation. ReadWriteSelfForUser. All, TeamsAppInstallation. ReadWriteForUser. All |
+|Aplicativo | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -61,7 +61,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-apps-installed-for-the-specified-user"></a>Exemplo 1: listar aplicativos instalados para o usuário especificado
+### <a name="example-1-list-apps-installed-for-the-specified-user"></a>Exemplo 1: Listar aplicativos instalados para o usuário especificado
 
 #### <a name="request"></a>Solicitação
 
@@ -121,17 +121,17 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>Exemplo 2: obter os nomes e outros detalhes dos aplicativos instalados para o usuário
+### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a>Exemplo 2: Obter os nomes e outros detalhes dos aplicativos instalados para o usuário
 
 #### <a name="request"></a>Solicitação
 
-No exemplo a seguir, se uma instância de um aplicativo instalado tem um [bot](../resources/teamworkbot.md) associado a ela, os detalhes do bot também são retornados.
+No exemplo a seguir, se uma instância de um aplicativo instalado tiver um [bot](../resources/teamworkbot.md) associado a ele, os detalhes do bot também serão retornados.
 
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps_details"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 
@@ -187,7 +187,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Exemplo 3: obter o recurso de instalação de aplicativo com base na ID de manifesto do aplicativo associado
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Exemplo 3: Obter o recurso de instalação do aplicativo com base na ID de manifesto do aplicativo associado
 
 #### <a name="request"></a>Solicitação
 

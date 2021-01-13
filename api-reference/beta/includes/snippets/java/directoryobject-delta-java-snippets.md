@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 216ada9be342ae2ac21b3324118a28fffe2f87ab
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 33598a55c8cd6745ac4bd292fbd54a903635a712
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963133"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845921"
 ---
 ```java
 
@@ -13,7 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 DirectoryObject directoryObject = graphClient.directoryObjects("delta")
     .buildRequest()
-    .filter("isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')")
+    .filter("isOf('Microsoft.Graph.User') or isOf('Microsoft.Graph.Group')")
     .get();
 
 ```
