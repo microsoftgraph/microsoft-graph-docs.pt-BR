@@ -1,24 +1,24 @@
 ---
 title: Atualizar b2cIdentityUserFlow
-description: Atualiza as propriedades de um objeto b2cIdentityUserFlow.
+description: Atualizar as propriedades de um objeto b2cIdentityUserFlow.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2fb11cd2f9dc547499091876e1bdf6130819d270
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: f579b4772a9ee496b6f702d418d6b577bd4915db
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753121"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49843646"
 ---
 # <a name="update-b2cidentityuserflow"></a>Atualizar b2cIdentityUserFlow
 
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) .
+Atualizar as propriedades de um [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de fluxo de usuário de identidade externa
+* Administrador de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,9 +53,9 @@ PATCH /identity/b2cUserFlows/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
-A tabela a seguir mostra as propriedades que podem ser atualizadas após a criação de um [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
+A tabela a seguir mostra as propriedades que podem ser atualizadas após a criação de [um b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que podem ser atualizadas após a cria�
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -96,6 +96,14 @@ Content-length: 469
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-b2cidentityuserflow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-b2cidentityuserflow-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-b2cidentityuserflow-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

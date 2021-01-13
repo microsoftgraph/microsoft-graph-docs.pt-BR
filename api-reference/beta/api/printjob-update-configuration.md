@@ -5,12 +5,12 @@ author: tomsato-ms
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 1fa5ddff45a7dc80d36587577acf972443c956a9
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 1f4d2f1c5573e7f4ad4ae150c598788ab40163ab
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784763"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49843574"
 ---
 # <a name="update-printjob-configuration"></a>Atualizar a configuração do printJob
 
@@ -22,7 +22,7 @@ Atualizar a [propriedade de](../resources/printjobconfiguration.md) configuraç�
 
 Atualizar uma configuração de trabalho de impressão só será bem-sucedida se houver uma [printTask](../resources/printTask.md) em estado no trabalho de impressão associado, iniciado por um gatilho que solicita o `processing` aplicativo criado. Para obter detalhes sobre como registrar um gatilho de tarefa, consulte Estendendo a impressão universal para dar suporte [à impressão pull.](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, a permissão de aplicativo Printer.Read.All ou Printer.ReadWrite.All e uma das permissões listadas na tabela a seguir.
@@ -54,6 +54,8 @@ O exemplo a seguir mostra como chamar essa API.
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-update-configuration"
@@ -93,6 +95,24 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
   "fitPdfToPage": false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-update-configuration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-update-configuration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printjob-update-configuration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printjob-update-configuration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

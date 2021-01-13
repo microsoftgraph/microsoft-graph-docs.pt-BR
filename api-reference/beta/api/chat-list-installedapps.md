@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8d88ccaba481f0abe5f957ca65f8ee9c3c738879
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: f14a13c53771c375b43451234d90c90f5ee28cd1
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705923"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49843735"
 ---
 # <a name="list-apps-in-chat"></a>Listar aplicativos no chat
 
@@ -140,7 +140,7 @@ No exemplo a seguir, se uma instância de um aplicativo instalado tiver um [bot]
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 

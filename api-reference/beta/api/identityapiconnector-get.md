@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9ce1f12b7ede77d7c9b35b2764fb2ba15825e5c6
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 6436251354b9bf80dba64a344c6b7e401d1795a3
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720085"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844477"
 ---
 # <a name="get-identityapiconnector"></a>Obter identityApiConnector
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ler as propriedades de um objeto [identityApiConnector](../resources/identityapiconnector.md) .
+Leia as propriedades de um [objeto identityApiConnector.](../resources/identityapiconnector.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (de privilégios máximos a mínimos) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | APIConnectors. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.  |
-| Aplicativo                            | APIConnectors. ReadWrite. All |
+| Aplicativo                            | APIConnectors.ReadWrite.All |
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de fluxo de usuário de identidade externa
+* Administrador de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -67,6 +67,8 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_identityapiconnector"
@@ -76,6 +78,24 @@ Este é um exemplo de solicitação.
 ``` http
 GET https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityapiconnector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityapiconnector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityapiconnector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

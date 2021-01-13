@@ -1,16 +1,16 @@
 ---
 title: Obter userFlowApiConnectorConfiguration
-description: Obtenha a propriedade userFlowApiConnectorConfiguration de um b2xIdentityUserFlow.
+description: Obter a propriedade userFlowApiConnectorConfiguration de um b2xIdentityUserFlow.
 author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 59d3e7afb85511abca1575c0a8251811c1e84239
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 986737621f5b98226c64124f69ac5522c9f5bf69
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720043"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49843673"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>Obter userFlowApiConnectorConfiguration
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a propriedade [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) em um [b2xIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md) para detalhar os conectores de API habilitados para o fluxo do usuário.
+Obter a [propriedade apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) em [um b2xIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md) para detalhar os conectores de API habilitados para o fluxo do usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de fluxo de usuário de identidade externa
+* Administrador de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,7 +48,7 @@ GET identity/b2xUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte ao `$expand` parâmetro de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o conector de API para o `postFederationSignup` e `postAttributeCollection` as etapas, adicione `$expand=postFederationSignup,postAttributeCollection` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$expand` parâmetro de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o conector de API e `postFederationSignup` as `postAttributeCollection` etapas, adicione `$expand=postFederationSignup,postAttributeCollection` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -62,7 +62,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) .
+Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
 
 ## <a name="examples"></a>Exemplos
 
@@ -70,6 +70,8 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_b2xuserflows-apiconnectorconfiguration"
@@ -79,6 +81,24 @@ Este é um exemplo de solicitação.
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration?$expand=postFederationSignup,postAttributeCollection
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-b2xuserflows-apiconnectorconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-b2xuserflows-apiconnectorconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-b2xuserflows-apiconnectorconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2xuserflows-apiconnectorconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

@@ -1,16 +1,16 @@
 ---
-title: Valores de enum
+title: Valores Enum
 description: Valores de enumeração do Microsoft Graph
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: e5372bbd1b548282c61a82c4b80f26fd77668fc3
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 0e582e87f60905b046a7ee2f523c298b1791fd86
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796686"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844863"
 ---
 # <a name="enum-values"></a>Valores Enum
 
@@ -41,7 +41,7 @@ Namespace: microsoft.graph
 |desabilitadas|
 |unknownFutureValue|
 
-### <a name="replyrestriction-values"></a>Valores de replyRestriction
+### <a name="replyrestriction-values"></a>Valores replyRestriction
 
 | Member
 |:--------------
@@ -130,7 +130,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |birthday|
-|olm|
+|olh|
 |unknownFutureValue|
 
 ### <a name="skillproficiencylevel-values"></a>Valores de skillProficiencyLevel
@@ -324,7 +324,7 @@ Namespace: microsoft.graph
 |openShiftRequest
 |userShiftPreferences
 
-### <a name="timezonestandard-values"></a>Valores timeZoneStandard
+### <a name="timezonestandard-values"></a>Valores de timeZoneStandard
 
 | Member
 |:-----------------
@@ -363,7 +363,7 @@ Namespace: microsoft.graph
 | recurso
 
 
-### <a name="externalaudiencescope-values"></a>Valores de externalAudienceScope
+### <a name="externalaudiencescope-values"></a>Valores externalAudienceScope
 
 | Member
 |:-------------------------
@@ -490,7 +490,7 @@ Namespace: microsoft.graph
 | meetingDeclined
 
 
-### <a name="followupflagstatus-values"></a>Valores followupFlagStatus
+### <a name="followupflagstatus-values"></a>Valores de followupFlagStatus
 
 | Member
 |:-------------------------
@@ -844,7 +844,7 @@ Enum para hives do Registro conforme definido por [https://docs.microsoft.com/wi
 | localMachineSystem      | 5      | HKEY_LOCAL_MACHINE\System hive.   |
 | usersDefault            | 6      | HKEY_USERS \\ . Hive PADRÃO.        |
 
-### <a name="registryoperation-values"></a>valores de registryOperation
+### <a name="registryoperation-values"></a>Valores de registryOperation
 
 Operação que alterou o nome da chave do Registro e/ou o valor.
 
@@ -886,7 +886,7 @@ Enum for severity of alerts.
 | medium        | 3      | A gravidade é média.               |
 | high          | 4      | A gravidade é alta.                 |
 
-### <a name="alertstatus-values"></a>valores de alertStatus
+### <a name="alertstatus-values"></a>Valores de alertStatus
 
 Valores possíveis de um status de ciclo de vida de alerta (estágio).
 
@@ -1193,7 +1193,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | Padrão. | 0     | O conteúdo é um arquivo ou um tipo que não é de email. |
 | email   | 1      | O conteúdo é um email.                 |
 
-### <a name="contentstate-values"></a>Valores contentState
+### <a name="contentstate-values"></a>Valores de contentState
 
 | Membro | Valor | Descrição                                                                      |
 | :----- | :---- | :------------------------------------------------------------------------------- |
@@ -1548,13 +1548,18 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |adJoinCheckIncorrectCredentials|
 |adJoinCheckOrganizationalUnitNotFound|
 |adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError |
+|adJoinCheckUnknownError|
 |endpointConnectivityCheckUrlNotWhitelisted|
 |endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError |
-|resourceAvailabilityCheckNoSubnetIP |
-|resourceAvailabilityCheckUnknownError |
-|internalServerUnknownError |
+|aadConnectivityCheckUnknownError|
+|resourceAvailabilityCheckNoSubnetIP|
+|resourceAvailabilityCheckSubscriptionDisabled|
+|resourceAvailabilityCheckUnknownError|
+|permissionCheckNoSubscriptionReaderRole|
+|permissionCheckNoResourceGroupOwnerRole|
+|permissionCheckNoVNetContributorRole|
+|permissionCheckUnknownError|
+|internalServerUnknownError|
 
 ### <a name="cloudpconpremisesconnectionstatus-values"></a>Valores de cloudPcOnPremisesConnectionStatus
 
@@ -1594,6 +1599,6 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | Membro             | Valor | Descrição               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista é fixo para esse tipo de chat, o membro não pode ser removido/adicionado.                  |
-|group               | 1      | Indica que o chat é um chat de Grupo. O tamanho da lista de lista (de pelo menos 2 pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.   |
+|group               | 1      | Indica que o chat é um chat de grupo. O tamanho da lista de lista (de pelo menos 2 pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.   |
 |meeting             | 2      | Indica que o chat é um chat de reunião, que é criado como um efeito colateral da criação de um OnlineMeeting.  |
 |unknownFutureValue  | 3      | Valor do Sentinel para indicar valores futuros. |

@@ -1,37 +1,37 @@
 ---
-title: Idiomas de lista
-description: Recupere uma lista de idiomas com suporte para personalização dentro de um fluxo de usuário do B2X.
+title: Idiomas da lista
+description: Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuário B2X.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 68ed77871be01f549f5c069613a2c2f71bdd0f65
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 523b9c09b879e6d9938e08d96714dd9a709a3a85
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706197"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49843613"
 ---
-# <a name="list-languages"></a>Idiomas de lista
+# <a name="list-languages"></a>Idiomas da lista
 
 Namespace: microsoft.graph
 
-Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuário do B2X.
+Recupere uma lista de idiomas com suporte para personalização em um fluxo de usuário B2X.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|IdentityUserFlow. Read. All, IdentityUserFlow. ReadWrite. All|
+|Aplicativo|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de fluxo de usuário de identidade externa
+* Administrador de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,12 +56,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_userflowlanguageconfiguration"
@@ -71,6 +73,24 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e uma c
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/languages
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowlanguageconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-userflowlanguageconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-userflowlanguageconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-userflowlanguageconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

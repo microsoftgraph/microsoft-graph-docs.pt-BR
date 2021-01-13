@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 45526c3da75cf148daae85d0b21c0f931f726af6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3573caaa6c57ada2ca961d8aa94cb5a5ad81811a
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095048"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844862"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 
@@ -57,13 +57,13 @@ A API do Microsoft Graph também fornece métodos e ações que ofereçam suport
 | Acessar as opções de idioma e fuso horário para um usuário | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Obter ou atualizar resposta automática, localidade, fuso horário ou horário de trabalho de um usuário | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Obter configurações da caixa de correio do usuário](../api/user-get-mailboxsettings.md), <br> [Atualizar configurações da caixa de correio do usuários](../api/user-update-mailboxsettings.md) |
 | Obter MailTips do status especial de outros destinatários, como ausência temporária | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Get MailTips](../api/user-getmailtips.md) |
-| Alertar usuário se mencionado em outras mensagens (visualização) | [mention (visualização)](../resources/mention.md) | [Obter os detalhes de @menções em uma mensagem](../api/message-get.md#example-2) |
+| Alertar usuário se mencionado em outras mensagens (visualização) | [mention (visualização)](../resources/mention.md) | [Obter os detalhes de @menções em uma mensagem](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message) |
 | Cancelar a assinatura de usuário de uma lista de distribuição de emails (visualização) | [message (visualização)](../resources/message.md) | [Cancelar assinatura](../api/message-unsubscribe.md) |
 | **Gerenciamento de pasta e email** | | |
 | Organizar mensagens em uma hierarquia de pasta de email | [mailFolder](../resources/mailfolder.md)  | [Métodos de mailFolder](../resources/mailfolder.md#methods) |
 | Categorizar mensagens | [outlookCategory](../resources/outlookcategory.md) | [Métodos de outlookCategory](../resources/outlookcategory.md#methods) |
 | Usar regras de Caixa de Entrada para automatizar ações como encaminhar mensagens de entrada específicas | [messageRule](../resources/messagerule.md) | [Métodos de messageRule](../resources/messagerule.md#methods) |
-| Obter cabeçalhos de mensagens da Internet de uma mensagem | [message](../resources/message.md) | [Obter a propriedade **internetMessageHeaders** de uma mensagem](../api/message-get.md#example-4). |
+| Obter cabeçalhos de mensagens da Internet de uma mensagem | [message](../resources/message.md) | [Obter a propriedade **internetMessageHeaders** de uma mensagem](../api/message-get.md#example-4-get-internet-message-headers). |
 | Pesquisar e filtrar mensagens | [message](../resources/message.md) | [Parâmetros de consulta](/graph/query-parameters)  |
 | Receber notificações de alterações para as mensagens em uma pasta | [subscription](../resources/subscription.md) | [Trabalhando com webhooks no Microsoft Graph](../resources/webhooks.md) |
 | Sincronizar mensagens ou a hierarquia da pasta de email | [message](../resources/message.md) | [Obter as alterações incrementais para as mensagens em uma pasta](/graph/delta-query-messages) |

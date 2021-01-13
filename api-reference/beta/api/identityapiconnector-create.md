@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6665054307d601e80d02402a188f6412ab923ffc
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: fac7a1179bfbe7634df1194543112f5a2c5b36d6
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720079"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844524"
 ---
 # <a name="create-identityapiconnector"></a>Criar identityApiConnector
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [identityApiConnector](../resources/identityapiconnector.md) .
+Criar um novo [objeto identityApiConnector.](../resources/identityapiconnector.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (de privilégios máximos a mínimos) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegada (conta corporativa ou de estudante)     | APIConnectors. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.  |
-| Aplicativo                            | APIConnectors. ReadWrite. All |
+| Aplicativo                            | APIConnectors.ReadWrite.All |
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
+A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de fluxo de usuário de identidade externa
+* Administrador de Fluxo de Usuário de Identidade Externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,19 +55,19 @@ POST /identity/apiConnectors
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [identityApiConnector](../resources/identityapiconnector.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto identityApiConnector.](../resources/identityapiconnector.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [identityApiConnector](../resources/identityapiconnector.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres| O nome do conector da API. |
-|targetUrl|Cadeia de caracteres| A URL do ponto de extremidade da API a ser chamado. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. Só há suporte para a [autenticação básica](../resources/basicauthentication.md) .|
+|targetUrl|Cadeia de caracteres| A URL do ponto de extremidade da API a ser chamada. |
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|O objeto que descreve os detalhes de configuração de autenticação para chamar a API. Somente [a autenticação Básica](../resources/basicauthentication.md) é suportada.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto identityApiConnector](../resources/identityapiconnector.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -75,6 +75,8 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_identityapiconnector"
@@ -95,6 +97,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-identityapiconnector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-identityapiconnector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-identityapiconnector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

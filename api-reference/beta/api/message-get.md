@@ -1,16 +1,16 @@
 ---
 title: Obter mensagem
-description: Recupere as propriedades e os relacionamentos do objeto Message.
+description: Recupere as propriedades e os relacionamentos do objeto message.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 10bdeea7f8129daee9b4184e49deef315cf80272
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: edfa35d4606b9933872762d14ab1bd2f36b34526
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979866"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844750"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos do objeto [Message](../resources/message.md) .
+Recupere as propriedades e os relacionamentos do objeto [message.](../resources/message.md)
 
-Por exemplo, você pode obter uma mensagem e expandir todas as instâncias de [menção](../resources/mention.md) na mensagem.
+Por exemplo, você pode obter uma mensagem e expandir [todas](../resources/mention.md) as instâncias de menção na mensagem. Veja um [exemplo](#example-2-get-all-mentions-in-a-specific-message) abaixo.
 
-Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message).
+Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message). Consulte também um [exemplo](#example-5-get-mime-content) abaixo.
 
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
@@ -61,7 +61,7 @@ GET /me/mailFolders/{id}/messages/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
 ```
 
-Para obter uma mensagem e expandir todas as menção na mensagem:
+Para obter uma mensagem e expandir todas as menções na mensagem:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
@@ -75,7 +75,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 
 Use o parâmetro `$value` para obter o conteúdo MIME de uma mensagem.
 
-Use o `$expand` parâmetro de consulta na propriedade de navegação **menciona** para obter uma mensagem com os detalhes de cada [menção](../resources/mention.md) na mensagem expandida.
+Use o parâmetro de consulta na propriedade de navegação de menções para obter uma mensagem com os detalhes de cada `$expand` menção na mensagem expandida.  [](../resources/mention.md)
 
 
 
@@ -95,9 +95,9 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 Especificar o parâmetro `$value` retorna o conteúdo da mensagem no formato MIME e não um recurso de **mensagem**.
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1"></a>Exemplo 1
+### <a name="example-1-get-a-specific-message"></a>Exemplo 1: Obter uma mensagem específica
 #### <a name="request"></a>Solicitação
-O primeiro exemplo obtém a mensagem especificada. Ele não especifica nenhum cabeçalho para indicar o formato desejado do corpo a ser retornado.
+O primeiro exemplo obtém a mensagem especificada. Ele não especifica nenhum header para indicar o formato desejado do corpo a ser retornado.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -127,8 +127,8 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. As propriedades **Body** e **uniqueBody** são retornadas no formato HTML padrão.
-Observação: o objeto Response mostrado aqui é truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. As **propriedades body** e **uniqueBody** são retornadas no formato HTML padrão.
+Observação: o objeto response mostrado aqui está truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -158,9 +158,9 @@ Content-length: 523
 ```
 
 
-### <a name="example-2"></a>Exemplo 2
+### <a name="example-2-get-all-mentions-in-a-specific-message"></a>Exemplo 2: Obter todas as menções em uma mensagem específica
 #### <a name="request"></a>Solicitação
-No próximo exemplo, o usuário conectado é Dana Swope. O exemplo mostra a obtenção de detalhes de todas as menções na mensagem especificada na caixa de correio da Dana.
+No próximo exemplo, o usuário entrou é Dana Swope. O exemplo mostra a obtenção de detalhes de todas as menções na mensagem especificada na caixa de correio da Dana.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -288,7 +288,7 @@ Content-length: 2248
 }
 ```
 
-### <a name="example-3"></a>Exemplo 3
+### <a name="example-3-get-message-body-in-text-format"></a>Exemplo 3: Obter o corpo da mensagem no formato de texto
 #### <a name="request"></a>Solicitação
 
 O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e o **uniqueBody** da mensagem especificada no formato do texto.
@@ -354,10 +354,10 @@ Preference-Applied: outlook.body-content-type="text"
     }
 }
 ```
-### <a name="example-4"></a>Exemplo 4
+### <a name="example-4-get-internet-message-headers"></a>Exemplo 4: Obter os headers de mensagens da Internet
 #### <a name="request"></a>Solicitação
 
-O quarto exemplo mostra como obter os cabeçalhos de mensagem da Internet de uma mensagem específica.  
+O quarto exemplo mostra como obter os títulos de mensagens da Internet de uma mensagem específica.  
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -391,7 +391,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o número de cabeçalhos de mensagens da Internet no objeto Response foi reduzido por brevidade.
+Veja a seguir um exemplo da resposta. Observação: o número de headers de mensagens da Internet no objeto de resposta foi reduzido por brevidade.
 
 <!-- {
   "blockType": "response",
@@ -434,9 +434,9 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5"></a>Exemplo 5
+### <a name="example-5-get-mime-content"></a>Exemplo 5: Obter conteúdo MIME
 #### <a name="request"></a>Solicitação
-O quinto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário conectado.
+O quinto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

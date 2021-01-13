@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: a1c0b2f203ecae7abfb4bc3bd966da707329c694
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1e1eb885803d90fca401a6cd4dee6ef3d6a865e0
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975308"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844414"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -24,7 +24,7 @@ Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção d
 
 Não tente extrair o valor `$skip` da URL `@odata.nextLink` para manipular respostas. Essa API usa o valor `$skip` para manter a contagem de todos os itens pelos quais passou na caixa de correio do usuário para retornar uma página de itens do tipo mensagem. Portanto, é possível que, mesmo na resposta inicial, o valor `$skip` seja maior que o tamanho da página. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
-Você pode filtrar as mensagens e obter apenas aquelas que incluem [menção](../resources/mention.md) do usuário conectado. Veja um [exemplo](#request-2) abaixo. Por padrão, a `GET /me/messages` operação não retorna a propriedade **menciona** . Use o `$expand` parâmetro de consulta para [encontrar detalhes de cada menção em uma mensagem](../api/message-get.md#example-2).
+Você pode filtrar as mensagens e obter apenas aquelas que incluem uma [menção](../resources/mention.md) do usuário assinado. Veja um [exemplo](#request-2) abaixo. Por padrão, a `GET /me/messages` operação não retorna a propriedade **menções.** Use o `$expand` parâmetro de consulta para encontrar detalhes de cada [menção em uma mensagem.](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)
 
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
@@ -60,7 +60,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-Para obter todas as mensagens na caixa de correio do usuário que incluam um **menção** do usuário:
+Para obter todas as mensagens na caixa de correio do usuário que incluem **uma menção** do usuário:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Você pode usar o `$filter` parâmetro de consulta na propriedade **mentionsPreview** para obter as mensagens que mencionam o usuário conectado.
+Você pode usar `$filter` o parâmetro de consulta na propriedade **mentionsPreview** para obter as mensagens que mencionam o usuário assinado.
 
 ### <a name="using-filter-and-orderby-in-the-same-query"></a>Uso de filtro e orderby na mesma consulta
 Ao usar `$filter` e `$orderby` na mesma consulta para obter mensagens, lembre-se de especificar as propriedades das seguintes maneiras:
@@ -96,11 +96,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de objetos [message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
-O primeiro exemplo obtém o padrão, as 10 principais mensagens na caixa de correio do usuário conectado. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
+O primeiro exemplo obtém as 10 principais mensagens padrão na caixa de correio do usuário. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -240,9 +240,9 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>Solicitação 2
-O próximo exemplo filtra todas as mensagens na caixa de correio do usuário conectado para as que mencionam o usuário. Ele também usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
+O próximo exemplo filtra todas as mensagens na caixa de correio do usuário de entrada para aquelas que mencionam o usuário. Ele também usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 
-O exemplo também incorpora a codificação de URL para os caracteres de espaço na cadeia de caracteres de parâmetro de consulta.
+O exemplo também incorpora a codificação de URL para os caracteres de espaço na cadeia de caracteres do parâmetro de consulta.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -323,7 +323,7 @@ Content-length: 987
 ```
 
 ##### <a name="request-3"></a>Solicitação 3
-O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter as propriedades **Body** e **uniqueBody** de cada mensagem em formato de texto.
+O terceiro exemplo mostra como usar um header para obter o corpo e as propriedades `Prefer: outlook.body-content-type="text"` **uniqueBody** de cada mensagem no formato de texto. 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

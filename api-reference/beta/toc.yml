@@ -1274,7 +1274,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
           - name: Place
             items:
-              - name: Local
+              - name: Place
                 href: resources/place.md
               - name: Tipo de sala
                 href: resources/room.md
@@ -3454,7 +3454,7 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md
                   - name: Tipo de perfil de registro do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md
-                  - name: Configuração empresarial do proprietário do Wi-Fi dispositivo Android
+                  - name: Configuração empresarial do proprietário do dispositivo Android Wi-Fi dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
                     items:
                       - name: Listar
@@ -6808,7 +6808,7 @@ items:
                         href: api/intune-devices-devicecompliancescriptdevicestate-delete.md
                       - name: Atualizar
                         href: api/intune-devices-devicecompliancescriptdevicestate-update.md
-                  - name: Resumo do script de conformidade do dispositivo
+                  - name: Resumo de executar o script de conformidade do dispositivo
                     href: resources/intune-devices-devicecompliancescriptrunsummary.md
                     items:
                       - name: Obter
@@ -9326,6 +9326,8 @@ items:
                     href: api/cloudpconpremisesconnection-delete.md
                   - name: Executar verificações de saúde
                     href: api/cloudpconpremisesconnection-runhealthcheck.md
+                  - name: Atualizar senha de domínio do Active Directory
+                    href: api/cloudpconpremisesconnection-updateaddomainpassword.md
               - name: Política de provisionamento de computador na nuvem
                 href: resources/cloudpcprovisioningpolicy.md
                 items:
@@ -10804,7 +10806,7 @@ items:
                         href: resources/identityuserflowattributeassignment.md
                       - name: Obter atribuição de atributo de fluxo do usuário
                         href: api/identityuserflowattributeassignment-get.md
-                      - name: Atualizar a atribuição de atributo de fluxo do usuário
+                      - name: Atualizar a atribuição do atributo de fluxo do usuário
                         href: api/identityuserflowattributeassignment-update.md
                       - name: Excluir atribuição de atributo de fluxo de usuário
                         href: api/identityuserflowattributeassignment-delete.md
@@ -11983,7 +11985,7 @@ items:
                   - name: Detalhes do registro do usuário de credencial
                     href: resources/credentialuserregistrationdetails.md
                     items:
-                      - name: Listar detalhes do registro
+                      - name: Listar detalhes de registro
                         href: api/reportroot-list-credentialuserregistrationdetails.md
                   - name: Detalhes de uso da credencial do usuário
                     href: resources/usercredentialusagedetails.md

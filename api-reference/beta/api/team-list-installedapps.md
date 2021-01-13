@@ -5,28 +5,28 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3e2b115c9a59b7933255ac6411c911e1d055de55
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: f7de268d3472bcef60ad77064c1c725d79174e32
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706126"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844456"
 ---
 # <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
 Namespace: microsoft.graph
 
-Recupere a lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)especificada.
+Recupere a lista [de aplicativos instalados](../resources/teamsappinstallation.md) na equipe [especificada.](../resources/team.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation. ReadForTeam, TeamsAppInstallation. ReadWriteForTeam, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation. Read. Group *, TeamsAppInstallation. ReadForTeam. All, TeamsAppInstallation. ReadWriteForTeam. All, Group. Read. All, Group. ReadWrite. All, Directory. Read. All, Directory. ReadWrite. All |
+|Aplicativo | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
@@ -54,11 +54,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [teamsAppInstallation](../resources/teamsappinstallation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-installed-apps"></a>Exemplo 1: listar aplicativos instalados
+### <a name="example-1-list-installed-apps"></a>Exemplo 1: Listar aplicativos instalados
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
@@ -125,11 +125,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a>Exemplo 2: obter os nomes e outros detalhes dos aplicativos instalados
+### <a name="example-2-get-the-names-and-other-details-of-installed-apps"></a>Exemplo 2: Obter os nomes e outros detalhes dos aplicativos instalados
 
 #### <a name="request"></a>Solicitação
 
-No exemplo a seguir, se uma instância de um aplicativo instalado tem um [bot](../resources/teamworkbot.md) associado a ela, os detalhes do bot também são retornados.
+No exemplo a seguir, se uma instância de um aplicativo instalado tiver um [bot](../resources/teamworkbot.md) associado a ele, os detalhes do bot também serão retornados.
 
 
 <!-- {
@@ -137,7 +137,7 @@ No exemplo a seguir, se uma instância de um aplicativo instalado tem um [bot](.
   "name": "list_installed_teams_apps_expand"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 
@@ -218,7 +218,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Exemplo 3: obter o recurso de instalação de aplicativo com base na ID de manifesto do aplicativo associado
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Exemplo 3: Obter o recurso de instalação do aplicativo com base na ID de manifesto do aplicativo associado
 
 #### <a name="request"></a>Solicitação
 
