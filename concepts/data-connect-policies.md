@@ -4,12 +4,12 @@ description: Descreve quais políticas são compatíveis e como atribuir acesso 
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 77a3a99f3062b2d5c7f914799e41090297d54df0
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: c6689a6a5d359dc03b7d68862cb889c2a7ba2b9a
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289285"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796588"
 ---
 # <a name="microsoft-graph-data-connect-policies-and-licensing"></a>Políticas e licença do Microsoft Graph Data Connect
 
@@ -27,46 +27,13 @@ Se deseja solicitar suporte para outras políticas, informe em [UserVoice](https
 
 ## <a name="licensing"></a>Licenças
 
-Acesso ao conjunto de ferramentas do Microsoft Graph Data Connect disponível por meio do Workplace Analytics, que é licenciado por cada usuário, mensalmente.  Organizações com o Workplace Analytics podem estender suas informações de dados do Microsoft 365 ao conceder e controlar o acesso aos seus dados em escala para aplicativos desenvolvidos internamente ou por fornecedores independentes de software (ISVs). Para saber mais, inclusive sobre como comprar, visite a [página de produto do Workplace Analytics](https://products.office.com/business/workplace-analytics).
+A conexão de dados do Microsoft Graph está atualmente disponível como parte da licença do Workplace Analytics, que está disponível por usuário, por mês. As organizações com o Workplace Analytics podem estender seus insights a partir de dados do Microsoft 365, concedendo e governando o acesso a seus dados em escala. Para saber mais, incluindo como comprar, visite a  [página de produtos do Workplace Analytics](https://products.office.com/business/workplace-analytics).
 
-Se você for um ISV, também fornecemos uma opção para desenvolver aplicativos para os clientes que não compraram o Workplace Analytics. Para fazer isso, você deve comprar licenças suficientes para associá-las com todos os usuários que o aplicativo acessará por meio do Microsoft Graph Data Connect, para cada cliente que compra o aplicativo. Você pode usar essa opção com licenças do Workplace Analytics. Você precisará executar etapas para associar as instâncias da licença do Microsoft Graph Data Connect com cada uma de suas instalações do cliente.
+A partir de 1 de fevereiro de 2021, a conexão de dados do Microsoft Graph fará a transição para o Azure Billing para todos os clientes. A fatura será associada à Assinatura do Azure, do Azure Data Factory que você estiver utilizando. O preço neste novo modelo de faturamento é baseado no número de objetos do Microsoft Graph que você está acessando.
 
-### <a name="isvs-using-the-microsoft-graph-data-connect-license"></a>ISVs usando licença do Microsoft Graph Data Connect
-Se você for um ISV usando licença do Data Connect, você deve usar [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) para armazenar e processar a atribuição de licença. Será preciso [criar um Key Vault](/azure/key-vault/quick-create-portal). Durante a criação, anote o valor URI do Key Vault. Ele será usado na definição de aplicativo para fazer referência ao Key Vault. Após criar o Key Vault, certifique-se de que o SPN usado no Serviço Vinculado à Fonte do modelo ARM do aplicativo tenha acesso a ele. Para fazer isso, acesse o painel **políticas de acesso** da instância do Key Vault, crie uma política de acesso para o aplicativo referenciada pelo SPN, e atribua permissões ao aplicativo em **Obter** e **Lista**. 
+Enquanto esse novo recurso de faturamento está versão prévia, a taxa é de US$ 0,375 para 1.000 objetos Microsoft Graph. Por exemplo, se você acessar o total de 10.000 objetos, você receberá uma conta do Azure por US$ 3,75. Ao final do período de versão prévia, a taxa será de US$ 0,75 por 1.000 objetos do Microsoft Graph. As taxas observadas acima serão aplicadas a mensagens de troca e objetos do bate-papo do Teams, incluindo: BasicDataSet_v0.Contact, BasicDataSet_v0.Event, BasicDataSet_v0.Message, BasicDataSet_v0.SentItem, BasicDataSet_v0.MailFolder, e BasicDataSet_v0.CalendarView.
 
-![Criar política de acesso ao Key Vault](images/data-connect-keyvault-access.png)
+Os objetos para diretório de objetos de não serão carregados, incluindo: BasicDataSet_v0.User, BasicDataSet_v0.MailboxSettings, BasicDataSet_v0.Manager, e BasicDataSet_v0.DirectReport.
 
-A atribuição das licenças do Microsoft Graph Data Connect para as organizações é fornecido como um segredo no Key Vault. Para fazer isso:
-1. No Key Vault, clique em **Gerar/Importar**, e crie um segredo manual. O nome do segredo deve ser **MGdcSKUMapping** e o valor do segredo deve conter a ID de locatário e o número de licenças alocado para esse locatário, no formato a seguir.
-
-`{"tenantId1" : 20, "tenantId2" : 35, "tenantId3" : 12}`
-
-2. Após configurar o valor, verifique se está habilitado e selecione **Criar** para iniciar a implantação. 
-
-![Criar o segredo no Key Vault](images/data-connect-keyvault-create.png)
-
-3. Você também precisa atualizar o modelo ARM do aplicativo para fazer referência ao Key Vault que você criou. Para fazer isso, preencha as propriedades do **LicenseKeyVaultUri**, que devem ser preenchidas com o valor **KeyVaultUri** que você anotou durante a criação. Essa propriedade é fornecida no Serviço Vinculado à Fonte do modelo ARM do aplicativo, conforme mostrado. 
-
-```
-"properties": {
-        "type": "Office365",
-            "description": "Source O365 linked service",
-            "typeProperties": {
-                   "office365tenantId": "[subscription().tenantId]",
-        "PrivacyPolicyUri": "http://www.wkw.com/privacy",
-        "TermsOfUseUri": "http://www.wkw.com/tos",
-        "servicePrincipalId": "[variables('sourceLinkedServicePrincipalId')]",
-        "servicePrincipalKey": {
-                           "type": "SecureString",
-                "value": "[variables('sourceLinkedServicePrincipalKey')]"
-        },
-        "servicePrincipalTenantId": "[variables('sourceLinkedServicePrincipalTenantId')]",
-        "LicenseKeyVaultUri": "<KeyVaultUri>",
-            }
-    }
-```
-
-Data Connect fará referência ao segredo do Key Vault antes de executar cada pipeline. O pipeline irá falhar se não houver licenças suficientes atribuídas à organização para fornecer dados para cada usuário ou se o Key Vault estiver inacessível. 
-
-## <a name="next-steps"></a>Próximos passos
-Se deseja solicitar suporte para outras políticas, informe em [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). Para saber mais sobre Workplace Analytics, inclusive sobre como comprar, visite a [página de produto do Workplace Analytics](https://products.office.com/business/workplace-analytics).
+## <a name="next-steps"></a>Próximas Etapas
+Se você quiser solicitar suporte para políticas adicionais ou conjuntos de dados, avise-nos no [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). Para saber mais sobre Workplace Analytics, inclusive sobre como comprar, visite a [página de produto do Workplace Analytics](https://products.office.com/business/workplace-analytics).
