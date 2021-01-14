@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 001ab16c7d0c96d23273163fe3e03b6f1c4811d7
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 71c357932916ae585c96b4c52eaabacbbd19c084
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796693"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844872"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Este log de alterações inclui alterações específicas no nível da API no Mi
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
 
 ## <a name="january-2021"></a>Janeiro de 2021
+
+### <a name="applications"></a>Aplicativos
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adicionado suporte de permissões delegadas para contas pessoais da Microsoft às APIs v1.0. |
 
 ### <a name="cloud-communications"></a>Comunicações na nuvem
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -35,6 +41,17 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | Adicionada a propriedade para **hostNames** à entidade [dispositivo](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true). |
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+
+| **Tipo de alteração** | **Versão** | **Descrição** |
+|:---|:---|:---|
+|Adição|beta|Adicionado à enumeração o `resourceAvailabilityCheckSubscriptionDisabled` membro **cloudPcOnPremisesConnectionHealthCheckErrorType**.|
+|Adição|beta|Adicionado à enumeração o `permissionCheckNoSubscriptionReaderRole` membro **cloudPcOnPremisesConnectionHealthCheckErrorType**.|
+|Adição|beta|Adicionado à enumeração o `permissionCheckNoResourceGroupOwnerRole` membro **cloudPcOnPremisesConnectionHealthCheckErrorType**.|
+|Adição|beta|Adicionado à enumeração o `permissionCheckNoVNetContributorRole` membro **cloudPcOnPremisesConnectionHealthCheckErrorType**.|
+|Adição|beta|Adicionado à enumeração o `permissionCheckUnknownError` membro **cloudPcOnPremisesConnectionHealthCheckErrorType**.|
+|Adição|beta|Adicionado o método [updateAdDomainPassword](graph/api/cloudPcOnPremisesConnection-updateAdDomainPassword?view=graph-rest-beta&preserve-view=true) ao recurso [cloudPcOnPremisesConnection](graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 
