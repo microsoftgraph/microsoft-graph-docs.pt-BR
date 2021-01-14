@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 37da524ac2143cf45dec391af159581ce66a23ed
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 07020370fe2998777f9df77555c0b23eb9176135
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457713"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844078"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos de um objeto [message](../resources/message.md).
 
-Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message).
+Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message). Veja também um [exemplo](#example-4-get-mime-content) abaixo.
 
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
@@ -78,7 +78,7 @@ Especificar o parâmetro `$value` retorna o conteúdo da mensagem no formato MIM
 
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1"></a>Exemplo 1
+### <a name="example-1-get-a-specific-message"></a>Exemplo 1: Obter uma mensagem específica
 #### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
@@ -185,7 +185,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2"></a>Exemplo 2
+### <a name="example-2-get-internet-message-headers"></a>Exemplo 2: Obter cabeçalhos de mensagens da Internet
 #### <a name="request"></a>Solicitação
 O próximo exemplo usa um parâmetro de `$select` consulta para obter os cabeçalhos das mensagens de Internet de uma mensagem. 
 
@@ -253,7 +253,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3"></a>Exemplo 3
+### <a name="example-3-get-message-body-in-text-format"></a>Exemplo 3: Obter o corpo da mensagem em formato de texto
 #### <a name="request"></a>Solicitação
 
 O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e o **uniqueBody** da mensagem especificada no formato do texto.
@@ -319,7 +319,7 @@ Preference-Applied: outlook.body-content-type="text"
 }
 ```
 
-### <a name="example-4"></a>Exemplo 4
+### <a name="example-4-get-mime-content"></a>Exemplo 4: Obter conteúdo MIME
 #### <a name="request"></a>Solicitação
 O quarto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário conectado.
 
