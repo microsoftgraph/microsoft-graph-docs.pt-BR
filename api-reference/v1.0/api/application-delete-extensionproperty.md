@@ -1,22 +1,22 @@
 ---
-title: Delete extensionproperty
-description: Excluir uma extensãoproperty.
+title: Excluir extensionProperty
+description: Exclua uma extensionProperty.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0802969409d009e833500aa17ba3618442bef9ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 08a4cbd6478edb4a24d9e26318c8becef3e0f92c
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992815"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844631"
 ---
-# <a name="delete-extensionproperty"></a>Delete extensionproperty
+# <a name="delete-extensionproperty"></a>Excluir extensionProperty
 
 Namespace: microsoft.graph
 
-Excluir uma [extensãoproperty](../resources/extensionproperty.md).
+[Exclua uma extensionProperty](../resources/extensionproperty.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

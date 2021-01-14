@@ -1,22 +1,22 @@
 ---
-title: List extensionproperties
+title: Listar extensionProperties
 description: Recupere uma lista de objetos extensionproperty.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c6b8445f0cbcc36046bb71572014756c992c3fe6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 814c465dc0479dbe70dd23c7177a6b0bdbd0e0f2
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966490"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844680"
 ---
-# <a name="list-extensionproperties"></a>List extensionproperties
+# <a name="list-extensionproperties"></a>Listar extensionProperties
 
 Namespace: microsoft.graph
 
-Recupere a lista de objetos [extensionproperty](../resources/extensionproperty.md) em um aplicativo.
+Recupere a lista de [objetos extensionProperty](../resources/extensionproperty.md) em um aplicativo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. Read. All, Application. ReadWrite. All, Directory. Read. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application. Read. All, Application. ReadWrite. All, Directory. Read. All |
+|Delegada (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Delegada (conta pessoal da Microsoft) | Application.Read.All, Application.ReadWrite.All |
+|Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [extensionproperty](../resources/extensionproperty.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção [de objetos extensionProperty](../resources/extensionproperty.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

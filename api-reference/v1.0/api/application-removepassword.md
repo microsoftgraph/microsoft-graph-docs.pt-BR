@@ -1,22 +1,22 @@
 ---
-title: 'aplicativo: removePassword'
+title: 'application: removePassword'
 description: Remover uma senha de um aplicativo
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3b38007e3482e5cd35bf239deb8a6a823c99702e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8975218208dc2dc7c6e23b8763d9dd796273143e
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968294"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844755"
 ---
-# <a name="application-removepassword"></a>aplicativo: removePassword
+# <a name="application-removepassword"></a>application: removePassword
 
 Namespace: microsoft.graph
 
-Remover uma senha de um [aplicativo](../resources/application.md).
+Remover uma senha de um [aplicativo.](../resources/application.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Application. ReadWrite. All, Directory. AccessAsUser. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
 | Aplicativo                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

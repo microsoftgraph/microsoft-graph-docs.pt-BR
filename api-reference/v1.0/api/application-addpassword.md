@@ -1,22 +1,22 @@
 ---
-title: 'Application: addpassword'
+title: 'application: addPassword'
 description: Adicionar uma senha forte a um aplicativo.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b5ab6e31aeea04b173ac8fee8fae884c82573a59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9de58ceb2907ddc868a9cf866ddc501c0e0070e
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992829"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844596"
 ---
-# <a name="application-addpassword"></a>Application: addpassword
+# <a name="application-addpassword"></a>application: addPassword
 
 Namespace: microsoft.graph
 
-Adiciona uma senha forte a um [aplicativo](../resources/application.md).
+Adiciona uma senha forte a um [aplicativo.](../resources/application.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Application. ReadWrite. All, Directory. AccessAsUser. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
 | Aplicativo                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,13 +49,13 @@ No corpo da solicitação, forneça um `passwordCredential` objeto opcional com 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | String | Nome amigável da senha. Opcional. |
-| endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. O valor padrão é "startDatetime + 2 anos". |
-| startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional.  O valor padrão é "Now". |
+| displayName | Cadeia de caracteres | Nome amigável da senha. Opcional. |
+| endDateTime | DateTimeOffset | A data e a hora em que a senha expira é representada usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional. O valor padrão é "startDateTime + 2 anos". |
+| startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional.  O valor padrão é "now". |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A propriedade **secretText** no objeto Response contém as senhas fortes geradas pelo Azure Active Directory com 16-64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
+Se bem-sucedido, este método retorna um código de resposta e `200 OK` um novo [objeto passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A **propriedade secretText** no objeto response contém as senhas fortes geradas pelo Azure Active Directory com 16 a 64 caracteres. Não há como recuperar essa senha no futuro.
 
 ## <a name="examples"></a>Exemplos
 
@@ -63,7 +63,7 @@ O exemplo a seguir mostra como chamar essa API.
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. A **ID** especificada na solicitação é o valor da propriedade **ID** do aplicativo, não o valor da propriedade **AppID** . 
+Este é um exemplo de solicitação. A **id** especificada na solicitação é o valor da propriedade **de id** do aplicativo, não o valor da **propriedade appId.** 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 5cfe3789fc760fa049c4a1c90c0e3498b1ee44f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 769a7999d50c06468539e220dbaec34258666547
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083082"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844638"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 
@@ -59,7 +59,7 @@ A API do Microsoft Graph também fornece métodos e ações que ofereçam suport
 | Organizar mensagens em uma hierarquia de pasta de email | [mailFolder](../resources/mailfolder.md)  | [Métodos de mailFolder](../resources/mailfolder.md#methods) |
 | Categorizar mensagens | [outlookCategory](../resources/outlookcategory.md) | [Métodos de outlookCategory](../resources/outlookcategory.md#methods) |
 | Usar regras de Caixa de Entrada para automatizar ações como encaminhar mensagens de entrada específicas | [messageRule](../resources/messagerule.md) | [Métodos de messageRule](../resources/messagerule.md#methods) |
-| Obter cabeçalhos de mensagens da Internet de uma mensagem | [message](../resources/message.md) | [Obter a propriedade **internetMessageHeaders** de uma mensagem](../api/message-get.md#example-2). |
+| Obter cabeçalhos de mensagens da Internet de uma mensagem | [message](../resources/message.md) | [Obter a propriedade **internetMessageHeaders** de uma mensagem](../api/message-get.md#example-2-get-internet-message-headers). |
 | Pesquisar e filtrar mensagens | [message](../resources/message.md) | [Parâmetros de consulta](/graph/query-parameters)  |
 | Receber notificações de alterações para as mensagens em uma pasta | [subscription](../resources/subscription.md) | [Trabalhando com webhooks no Microsoft Graph](../resources/webhooks.md) |
 | Sincronizar mensagens ou a hierarquia da pasta de email | [message](../resources/message.md) | [Obter as alterações incrementais para as mensagens em uma pasta](/graph/delta-query-messages) |

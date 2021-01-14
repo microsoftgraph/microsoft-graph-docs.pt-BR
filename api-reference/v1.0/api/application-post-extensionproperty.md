@@ -1,22 +1,22 @@
 ---
-title: Criar extensionproperty
-description: Crie uma nova extensionproperty.
+title: Criar extensionProperty
+description: Crie uma nova extensionProperty.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5378a777eb8834c7e1d54edab619552acd8ce585
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d949a5bffa6edd1bc8b10ea4e72b3628ceacb2a9
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039063"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844176"
 ---
-# <a name="create-extensionproperty"></a>Criar extensionproperty
+# <a name="create-extensionproperty"></a>Criar extensionProperty
 
 Namespace: microsoft.graph
 
-Crie uma nova definição de [extensionproperty](../resources/extensionproperty.md) . Você pode usar essa operação para adicionar um valor de propriedade personalizada ao tipo de objeto de destino definido na **extensãoproperty**, usando solicitações de criação e de atualização padrão para o objeto de destino.
+Crie uma nova [definição extensionProperty.](../resources/extensionproperty.md) Você pode usar essa operação para adicionar um valor de propriedade personalizado ao tipo de objeto de destino definido na **extensionProperty**, usando solicitações padrão de criação e atualização para o objeto de destino.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application. ReadWrite. All, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,19 +44,19 @@ POST /applications/{id}/extensionProperties
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça um objeto [extensionproperty](../resources/extensionproperty.md) com as propriedades a seguir.
+No corpo da solicitação, forneça [um objeto extensionProperty](../resources/extensionproperty.md) com as propriedades a seguir.
 
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a Propriedade Extension pode armazenar. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` -256 bytes máximo</li><li>`Boolean`</li><li>`DateTime` -Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` -valor de 32-bit.</li><li>`LargeInteger` -valor de 64-bit.</li><li>`String` -256 caracteres no máximo</li></ul>|
-|nome|String| Nome da propriedade de extensão. Não anulável. |
-|targetObjects|Coleção de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|dataType|Cadeia de caracteres| Especifica o tipo de dados do valor que a propriedade de extensão pode conter. Os valores a seguir são suportados. Não anulável. <ul><li>`Binary` - Máximo de 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Deve ser especificado no formato ISO 8601. Serão armazenados no UTC.</li><li>`Integer` - Valor de 32 bits.</li><li>`LargeInteger` - Valor de 64 bits.</li><li>`String` - Máximo de 256 caracteres</li></ul>|
+|nome|Cadeia de caracteres| Nome da propriedade de extensão. Não anulável. |
+|targetObjects|Conjunto de cadeias de caracteres| Os valores a seguir são suportados. Não anulável. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [extensionproperty](../resources/extensionproperty.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um novo objeto `201 Created` [extensionProperty](../resources/extensionproperty.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [extensionproperty](../resources/extensionProperty.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta e o `201 Created` [objeto extensionProperty](../resources/extensionProperty.md) no corpo da resposta.
 
 <!-- {
   "blockType": "response",

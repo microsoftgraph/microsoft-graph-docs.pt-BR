@@ -1,31 +1,31 @@
 ---
-title: 'privilegedRoleAssignmentRequest: My'
-description: Obtenha as solicitações de atribuição de função privilegiada do solicitante.
+title: 'privilegedRoleAssignmentRequest: my'
+description: Obter as solicitações de atribuição de função privilegiada do solicitante.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 6258782668d473290e68c47c1beab9bd4d885c31
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 32770cf5f08444a81336d7812f3b0eecf6fe79c5
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971519"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866239"
 ---
-# <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: My
+# <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as solicitações de atribuição de função privilegiada do solicitante.
+Obter as solicitações de atribuição de função privilegiada do solicitante.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureAD, Directory. Read. All, Directory. AccessAsUser. All    |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -46,7 +46,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://graph.microsof
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto da coleção [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta e o objeto da coleção `200 OK` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -104,7 +104,6 @@ Content-length: 304
         "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
          "userId": "Self",
          "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
-        "evaluateOnly": false,
         "type": "UserAdd",
         "assignmentState": "Active",
         "requestedDateTime": "2018-02-08T02:35:42.9137335Z",
@@ -128,7 +127,6 @@ Content-length: 304
         "id": "03ea0c3d-90a0-42d4-b220-11c049c506fb",
         "userId": "Self",
         "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
-        "evaluateOnly": false,
         "type": "UserAdd",
         "assignmentState": "Active",
         "requestedDateTime": "2018-02-07T22:17:37.2215343Z",
