@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: b18becc30afc35d60f0a9727a28659523ead9443
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 001ab16c7d0c96d23273163fe3e03b6f1c4811d7
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784767"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796693"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Este log de alterações inclui alterações específicas no nível da API no Mi
 Para obter um resumo do valor dessas alterações de API, além das ferramentas, componentes, diretrizes e tutoriais recentes, confira [Novidades do Microsoft Graph](whats-new-overview.md).
 
 ## <a name="january-2021"></a>Janeiro de 2021
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição|beta|Adicionado o tipo complexo [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta).|
+|Adição|beta|Adicionada a propriedade **outOfOfficeSettings** ao tipo de recurso de [presença](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true)|
 
 ### <a name="groups"></a>Grupos
 
