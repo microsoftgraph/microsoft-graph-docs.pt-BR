@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ecdd28e54e2d9f19e7b609b856a6c2b16714f6ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f156adc43759ae6bdbeb10b7857e39157033c68c
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980115"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866120"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -18,37 +18,73 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [onlineMeeting](../resources/onlinemeeting.md) .
+Recupere as propriedades e os relacionamentos de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
 
-## <a name="permissions"></a>Permissões
+Por exemplo, você pode:
+- Obter detalhes de uma onlineMeeting usando [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [id](#example-2-retrieve-an-online-meeting-by-meeting-id)da reunião ou [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Use o caminho para obter um relatório de participante de um evento `/attendeeReport` ao vivo, conforme mostrado no [exemplo 4](#example-4-retrieve-the-attendee-report-of-a-live-event).
+- Use o e os caminhos para obter as gravações de um evento ao `/recording` `/alternativeRecording` vivo, conforme mostrado no [exemplo 5](#example-5-retrieve-the-recording-of-a-live-event).
+
+>**Observações:** 
+>- Atualmente, os relatórios e gravações dos participantes estão disponíveis apenas para eventos ao vivo.
+>- Somente o organizador do evento pode acessar relatórios e gravações dos participantes.
+>- Os relatórios e gravações dos participantes só estarão disponíveis quando o evento ao vivo for concluído.
+>- O link de download `302 Found` [na resposta](#example-4-retrieve-the-attendee-report-of-a-live-event) expira em **60** segundos.
+
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 | :------------------------------------- | :---------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Delegada (conta corporativa ou de estudante)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                        |
 | Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* Os administradores devem criar uma [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy) e concedê-la a um usuário, autorizando o aplicativo configurado na política a recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
+> \*Os administradores [](/graph/cloud-communication-online-meeting-application-access-policy) devem criar uma política de acesso a aplicativos e concedi-la a um usuário, autorizando o aplicativo configurado na política para recuperar uma reunião online em nome desse usuário (ID de usuário especificada no caminho da solicitação).
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Para obter a onlineMeeting especificada usando a ID da reunião:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings/{meetingId}
+GET /users/{userId}/onlineMeetings/{meetingId}
+```
+
+Para obter o onlineMeeting especificado usando **videoTeleconferenceId**:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-GET /users/{userId}/onlineMeetings/{meetingId}
+```
+
+Para obter o onlineMeeting especificado usando **joinWebUrl**:
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-> **Observações:**
->
-> - O caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
-> - `id` nas duas primeiras rotas refere-se à [ID de conferência VTC](/microsoftteams/cloud-video-interop-for-teams-set-up).
-> - `userId` é a ID de objeto de um usuário no [portal de gerenciamento do usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para mais detalhes, consulte [política de acesso de aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
-> - `meetingId` é a **ID** de uma [entidade onlineMeeting](../resources/onlinemeeting.md).
-> - `joinWebUrl` deve ser uma URL codificada e esta rota só pode ser usada para recuperar reuniões criadas pelo `userId` .
+Para obter o relatório de participantes de um evento ao vivo:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
+Para obter as gravações de um evento ao vivo:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{userId}/onlineMeetings/{meetingId}/recording
+GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
+```
+
+>**Observações:**
+>- O caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
+>- `id`nas duas primeiras rotas refere-se à [ID de conferência VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
+>- `userId`é a ID de objeto de um usuário no portal de gerenciamento de usuários do [Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade) Para obter mais detalhes, consulte política [de acesso ao aplicativo.](/graph/cloud-communication-online-meeting-application-access-policy)
+>- `meetingId` é a **id de** uma [entidade onlineMeeting](../resources/onlinemeeting.md).
+>- `joinWebUrl` deve ser codificado por URL e essa rota só pode ser usada para recuperar reuniões criadas por `userId` .
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -65,11 +101,14 @@ Se a solicitação contiver um `Accept-Language`cabeçalho HTTP, o `content` de 
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK`. O método também inclui um dos seguintes:
+
+- Se você estiver recebendo uma reunião online com base na ID da reunião, **videoTeleconferenceId** ou **joinWebUrl**, esse método também retorna um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+- Se você estiver recebendo o relatório ou a gravação de uma reunião ao vivo online, esse método também retorna um header que indica o URI para o relatório ou gravação do `Location` participante, respectivamente.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Exemplo 1: recuperar uma reunião online por VideoTeleconferenceId
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Exemplo 1: Recuperar uma reunião online por VideoTeleconferenceId
 
 #### <a name="request"></a>Solicitação
 
@@ -181,8 +220,8 @@ Content-Length: 1574
     }  
 ```
 
-### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Exemplo 2: recuperar uma reunião online por ID de reunião
-Você pode recuperar informações da reunião via ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto Response durante a criação de um [onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para suportar casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião pela primeira vez e, em seguida, recupera as informações da reunião posteriormente como uma ação separada.
+### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Exemplo 2: Recuperar uma reunião online por ID de reunião
+Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar [um onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião pela primeira vez e recupera as informações da reunião posteriormente como uma ação separada.
 
 #### <a name="request"></a>Solicitação
 
@@ -200,7 +239,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Resposta
 
-> **Observação:** O objeto Response mostrado aqui foi reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** O objeto response mostrado aqui foi reduzido para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 ```json
 {
@@ -238,8 +277,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Exemplo 3: recuperar uma reunião online por JoinWebUrl
-Você pode recuperar informações da reunião via JoinWebUrl usando um token de usuário ou de aplicativo. Essa opção está disponível para suportar casos de uso em que a ID de reunião não é conhecida, mas o JoinWebUrl é, como quando um usuário cria uma reunião (por exemplo, o cliente do Microsoft Teams) e um aplicativo separado precisa recuperar detalhes da reunião como uma ação de acompanhamento.
+### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Exemplo 3: Recuperar uma reunião online por JoinWebUrl
+Você pode recuperar informações de reunião por meio de JoinWebUrl usando um token de usuário ou de aplicativo. Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião não é conhecida, mas JoinWebUrl é, como quando um usuário cria uma reunião (por exemplo, no cliente microsoft Teams) e um aplicativo separado precisa recuperar detalhes da reunião como uma ação de acompanhamento.
 
 #### <a name="request"></a>Solicitação
 
@@ -257,7 +296,7 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Resposta
 
-> **Observação:** O objeto Response mostrado aqui foi reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** O objeto response mostrado aqui foi reduzido para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 ```json
 {
@@ -298,6 +337,49 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     ]
 }
 ```
+
+### <a name="example-4-retrieve-the-attendee-report-of-a-live-event"></a>Exemplo 4: Recuperar o relatório de participantes de um evento ao vivo
+O exemplo a seguir mostra uma solicitação para baixar um relatório de participantes.
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "get-attendeeReport"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
+```
+
+### <a name="example-5-retrieve-the-recording-of-a-live-event"></a>Exemplo 5: Recuperar a gravação de um evento ao vivo
+O exemplo a seguir mostra uma solicitação para baixar uma gravação.
+
+#### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "get-recording"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
+```
+
+#### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

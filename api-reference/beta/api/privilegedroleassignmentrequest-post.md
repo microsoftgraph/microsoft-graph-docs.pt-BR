@@ -1,16 +1,16 @@
 ---
 title: Criar privilegedRoleAssignmentRequest
-description: Criar um objeto privilegedroleassignmentrequest.
+description: Crie um objeto privilegedroleassignmentrequest.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: f0405644cd2b7aebe71cef7f0594f8c5ec351e3e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 771edf9d102a890214156df43791be42a47b14dd
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976188"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866142"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Criar privilegedRoleAssignmentRequest
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um objeto [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) .
+Crie um [objeto privilegedroleassignmentrequest.](../resources/privilegedroleassignmentrequest.md)
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureAD, Directory. AccessAsUser. All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -41,39 +41,39 @@ POST /privilegedRoleAssignmentRequests
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
+No corpo da solicitação, fornece uma representação JSON do [objeto privilegedroleassignmentrequest.](../resources/privilegedroleassignmentrequest.md) 
 
 | Propriedade     | Tipo    |  Descrição|
 |:---------------|:--------|:----------|
-|roleId|String|A ID da função. Obrigatório.|
-|tipo|String|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd` : os administradores adicionam usuários a funções; `UserAdd` : os usuários adicionam atribuições de função. Obrigatório.|
-|assignmentstate|String|O estado da atribuição. O valor pode ser `Eligible` para atribuição qualificada `Active` -se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
-|motivo|String|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise.|
-|Cronograma|[governanceSchedule](../resources/governanceschedule.md)|O agendamento da solicitação de atribuição de função.|
+|roleId|Cadeia de caracteres|A ID da função. Obrigatório.|
+|type|Cadeia de caracteres|Representa o tipo da operação na atribuição de função. O valor pode `AdminAdd` ser: Administradores adicionam usuários a funções; `UserAdd` : os usuários adicionam atribuições de função. Obrigatório.|
+|assignmentState|Cadeia de caracteres|O estado da atribuição. O valor pode ser para atribuição qualificada- se for atribuído diretamente por administradores ou ativado em uma atribuição `Eligible` `Active` qualificada pelos `Active` usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
+|motivo|Cadeia de caracteres|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão.|
+|Cronograma|[governanceSchedule](../resources/governanceschedule.md)|O cronograma da solicitação de atribuição de função.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
 
 ### <a name="error-codes"></a>Códigos de erro
 Essa API retorna os códigos de erro HTTP padrão. Além disso, ele pode retornar os códigos de erro listados na tabela a seguir.
 
 |Código de erro     | Mensagem de erro              | 
 |:--------------------| :---------------------|
-| 400 BadRequest | Propriedade RoleAssignmentRequest era nula |
-| 400 BadRequest | Não é possível desserializar o objeto roleAssignmentRequest. |
-| 400 BadRequest | RoleID é necessário. |
-| 400 BadRequest | A data de início agendada deve ser especificada e deve ser maior do que agora. |
-| 400 BadRequest | Já existe um cronograma para este usuário, função e tipo de agendamento. |
-| 400 BadRequest | Já existe uma aprovação pendente para este usuário, função e tipo de aprovação. |
-| 400 BadRequest | Razão do solicitante ausente. |
-| 400 BadRequest | O motivo do solicitante deve ser menor que 500 caracteres. |
-| 400 BadRequest | A duração da elevação deve estar entre 0,5 e {from Setting}. |
-| 400 BadRequest | Há uma sobreposição entre ativação agendada e a solicitação. |
+| 400 BadRequest | A propriedade RoleAssignmentRequest foi NULL |
+| 400 BadRequest | Não é possível deserializar o objeto roleAssignmentRequest. |
+| 400 BadRequest | RoleId é necessário. |
+| 400 BadRequest | A data de início da agenda deve ser especificada e deve ser maior do que Agora. |
+| 400 BadRequest | Já existe um cronograma para esse usuário, função e tipo de agenda. |
+| 400 BadRequest | Já existe uma aprovação pendente para esse usuário, função e tipo de aprovação. |
+| 400 BadRequest | O motivo do solicitante está ausente. |
+| 400 BadRequest | O motivo do solicitante deve ter menos de 500 caracteres. |
+| 400 BadRequest | A duração da elevação deve estar entre 0,5 e {from setting}. |
+| 400 BadRequest | Há uma sobreposição entre a ativação agendada e a solicitação. |
 | 400 BadRequest | A função já está ativada. |
-| 400 BadRequest | GenericElevateUserToRoleAssignments: as informações de Tickting são necessárias e não são fornecidas no processo de ativação. |
-| 400 BadRequest | Há uma sobreposição entre ativação agendada e a solicitação. |
-| 403 não autorizado | A elevação requer autenticação multifator. |
-| 403 não autorizado | Em nome da elevação não é permitida. |
+| 400 BadRequest | GenericElevateUserToRoleAssignments: As informações de escala são necessárias e não são fornecidas no processo de ativação. |
+| 400 BadRequest | Há uma sobreposição entre a ativação agendada e a solicitação. |
+| 403 Não Autorizado | A elevação requer autenticação multifa factor. |
+| 403 Não Autorizado | Em nome da elevação não é permitido. |
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -96,7 +96,6 @@ Content-type: application/json
     "schedule": {
         "startDateTime": "2018-02-08T02:35:17.903Z"
     },
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -142,7 +141,6 @@ Content-length: 304
         "duration" : null
     },
     "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "2018-02-08T02:35:42.9137335Z",
