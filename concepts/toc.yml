@@ -385,7 +385,7 @@ items:
           - name: Licenças para assinar mensagens de chat
             href: teams-licenses.md
           - name: Enviar mensagens proativas com um bot
-            href: teams-proactive-messaging.md
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Enviar notificações de feed de atividades
             href: teams-send-activityfeednotifications.md
       - name: Tarefas pendentes
