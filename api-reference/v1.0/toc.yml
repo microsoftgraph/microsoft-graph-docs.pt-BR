@@ -181,7 +181,7 @@ items:
       - name: Problemas conhecidos
         href: /graph/known-issues?context=graph/api/1.0
       - name: Log de mudanças
-        href: /graph/changelog?context=graph/api/1.0
+        href: 'https://developer.microsoft.com/graph/changelog'
       - name: Erros
         href: /graph/errors?context=graph/api/1.0
   - name: Referência v1.0
@@ -263,7 +263,7 @@ items:
                 href: api/user-assignlicense.md
               - name: Verificar grupos de membros
                 href: api/user-checkmembergroups.md
-              - name: Verificar objetos member
+              - name: Verificar objetos membros
                 href: api/user-checkmemberobjects.md
               - name: Exportar dados pessoais
                 href: api/user-exportpersonaldata.md
@@ -283,9 +283,9 @@ items:
                 href: api/user-list-ownedobjects.md
               - name: Listar dispositivos registrados
                 href: api/user-list-registereddevices.md
-              - name: Reprocessar atribuição de licença
+              - name: Reprocessar a atribuição de licença
                 href: api/user-reprocesslicenseassignment.md
-              - name: Revogar sessão de entrada
+              - name: Revogar sessão de login
                 href: api/user-revokesigninsessions.md
           - name: Unidade
             href: resources/drive.md
@@ -301,7 +301,7 @@ items:
                 href: api/user-list-joinedteams.md
               - name: Listar membro de
                 href: api/user-list-memberof.md
-              - name: Listar membro transitiva de
+              - name: Listar membro transitivo de
                 href: api/user-list-transitivememberof.md
           - name: Insights
             items:
@@ -348,7 +348,7 @@ items:
                 href: api/user-sendmail.md
           - name: Observações
             items:
-              - name: OneNote
+              - name: Onenote
                 href: resources/onenote.md
               - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
@@ -387,7 +387,7 @@ items:
                     href: api/outlookuser-supportedtimezones.md
                   - name: Listar categorias
                     href: api/outlookuser-list-mastercategories.md
-              - name: Converter IDs
+              - name: Traduzir IDs
                 href: api/user-translateexchangeids.md
           - name: Pessoas
             items:
@@ -417,7 +417,7 @@ items:
                 href: api/userteamwork-post-installedapps.md
               - name: Obtém o aplicativo instalado para o usuário
                 href: api/userteamwork-get-installedapps.md
-              - name: Atualização do aplicativo instalado para o usuário
+              - name: Atualizar o aplicativo instalado para o usuário
                 href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: Remover o aplicativo para o usuário
                 href: api/userteamwork-delete-installedapps.md
@@ -439,7 +439,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -462,7 +462,7 @@ items:
                 href: api/group-assignlicense.md
               - name: Verificar grupos de membros
                 href: api/group-checkmembergroups.md
-              - name: Verificar objetos member
+              - name: Verificar objetos membros
                 href: api/group-checkmemberobjects.md
               - name: Obter intervalo
                 href: api/group-delta.md
@@ -498,7 +498,7 @@ items:
                 href: api/group-list-grouplifecyclepolicies.md
               - name: Listar membro de
                 href: api/group-list-memberof.md
-              - name: Listar membro transitiva de
+              - name: Listar membro transitivo de
                 href: api/group-list-transitivememberof.md
               - name: Listar membros
                 href: api/group-list-members.md
@@ -814,7 +814,7 @@ items:
                 items:
                   - name: Listar
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: Classificações de permissão delegada
+              - name: Classificações de permissão delegadas
                 href: resources/delegatedpermissionclassification.md
                 items:
                   - name: Listar
@@ -827,11 +827,11 @@ items:
                 items:
                   - name: Listar membro de
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar membro transitiva de
+                  - name: Listar membro transitivo de
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: Verificar grupos de membros
                     href: api/serviceprincipal-checkmembergroups.md
-                  - name: Verificar objetos member
+                  - name: Verificar objetos membros
                     href: api/serviceprincipal-checkmemberobjects.md
                   - name: Obter grupos de membros
                     href: api/serviceprincipal-getmembergroups.md
@@ -883,7 +883,7 @@ items:
                         items:
                           - name: Lista inclui
                             href: api/permissiongrantpolicy-list-includes.md
-                          - name: Criar em inclui
+                          - name: Criar in inclui
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: Excluir de inclui
                             href: api/permissiongrantpolicy-delete-includes.md
@@ -1101,15 +1101,15 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: Ocorrido
+          - name: Place
             items:
-              - name: Ocorrido
+              - name: Local
                 href: resources/place.md
               - name: Tipo de sala
                 href: resources/room.md
-              - name: Tipo de lista de salas
+              - name: Tipo de lista de sala
                 href: resources/roomlist.md
-              - name: Locais de lista
+              - name: Listar locais
                 href: api/place-list.md
               - name: Obter local
                 href: api/place-get.md
@@ -1155,14 +1155,14 @@ items:
                 href: api/call-redirect.md
               - name: Transferir
                 href: api/call-transfer.md
-              - name: Keep Alive
+              - name: Keep alive
                 href: api/call-keepalive.md
               - name: Cenários IVR
                 href: resources/calls-api-ivr-overview.md
                 items:
                   - name: Reproduzir prompt
                     href: api/call-playprompt.md
-                  - name: Resposta de registro
+                  - name: Resposta do registro
                     href: api/call-record.md
                   - name: Cancelar processamento de mídia
                     href: api/call-cancelmediaprocessing.md
@@ -1183,21 +1183,21 @@ items:
                     href: api/participant-invite.md
               - name: Alterar função de compartilhamento de tela
                 href: api/call-changescreensharingrole.md
-              - name: Desativar mudo do aplicativo
+              - name: Desatar aplicativo
                 href: api/call-unmute.md
-              - name: Aplicativo sem áudio
+              - name: Mute application
                 href: api/call-mute.md
               - name: Atualizar status de gravação
                 href: api/call-updaterecordingstatus.md
-              - name: Dados de qualidade do dispositivo de teleconferência de log
+              - name: Registrar dados de qualidade do dispositivo de teleconferência
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
               - name: Visão Geral
                 href: resources/callrecords-api-overview.md
-              - name: Registro de chamadas
+              - name: Registro de chamada
                 items:
-                  - name: Registro de chamadas
+                  - name: Registro de chamada
                     href: resources/callrecords-callrecord.md
                   - name: Obter registro de chamada
                     href: api/callrecords-callrecord-get.md
@@ -3674,7 +3674,7 @@ items:
                 href: api/driveitem-list-thumbnails.md
               - name: Check-in de arquivos
                 href: api/driveitem-checkin.md
-              - name: Fazer check-out de arquivos
+              - name: Check-out de arquivos
                 href: api/driveitem-checkout.md
               - name: Criar pasta
                 href: api/driveitem-post-children.md
@@ -3734,7 +3734,7 @@ items:
         items:
           - name: Visão geral
             href: resources/azure-ad-overview.md
-          - name: Gerenciamento de diretório
+          - name: Gerenciamento de diretórios
             items:
               - name: Unidade administrativa
                 href: resources/administrativeunit.md
@@ -3798,7 +3798,7 @@ items:
                     href: api/device-update.md
                   - name: Excluir dispositivo
                     href: api/device-delete.md
-                  - name: Verificar objetos member
+                  - name: Verificar objetos membros
                     href: api/device-checkmemberobjects.md
                   - name: Criar proprietário registrado
                     href: api/device-post-registeredowners.md
@@ -3886,7 +3886,7 @@ items:
                     href: api/orgcontact-list.md
                   - name: Obter contato org
                     href: api/orgcontact-get.md
-                  - name: Obter Delta de contatos da organização
+                  - name: Obter delta de contato org
                     href: api/orgcontact-delta.md
                   - name: Grupos
                     href: resources/group.md
@@ -3917,7 +3917,7 @@ items:
                         href: api/subscribedsku-get.md
           - name: Identidade e entrada
             items:
-              - name: Configuração de autenticação baseada em certificado
+              - name: Configuração de auth baseada em certificado
                 href: resources/certificatebasedauthconfiguration.md
                 items:
                   - name: Listar
@@ -3956,9 +3956,9 @@ items:
                             href: api/namedlocation-get.md
                           - name: Excluir
                             href: api/namedlocation-delete.md
-                      - name: Localização nomeada do país
+                      - name: Local nomeado do país
                         items:
-                          - name: Localização nomeada do país
+                          - name: Local nomeado do país
                             href: resources/countrynamedlocation.md
                           - name: Listar
                             href: api/conditionalaccessroot-list-namedlocations.md
@@ -3972,7 +3972,7 @@ items:
                             href: api/countrynamedlocation-delete.md
                       - name: Local nomeado por IP
                         items:
-                          - name: Local nomeado por IP
+                          - name: Local nomeado pelo IP
                             href: resources/ipnamedlocation.md
                           - name: Listar
                             href: api/conditionalaccessroot-list-namedlocations.md
@@ -4021,7 +4021,7 @@ items:
                         href: api/riskyuser-list.md
                       - name: Obter usuário arriscado
                         href: api/riskyuser-get.md
-                      - name: Histórico de lista
+                      - name: Histórico da lista
                         href: api/riskyuser-list-history.md
                       - name: Obter histórico
                         href: api/riskyuser-get-riskyuserhistoryitem.md
@@ -4050,7 +4050,7 @@ items:
               - name: Política
                 href: resources/policy-overview.md
                 items:
-                  - name: Política de tempo limite baseada em atividade
+                  - name: Política de tempo de tempo de atividade baseada em
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
                       - name: Listar
@@ -4724,7 +4724,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitygroupcounts.md
               - name: Obter contagens de atividades
                 href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -4954,7 +4954,7 @@ items:
                 href: api/team-clone.md
               - name: Listar suas equipes
                 href: api/user-list-joinedteams.md
-              - name: Obter canal primário
+              - name: Obter canal principal
                 href: api/team-get-primarychannel.md
               - name: Listar todas as equipes
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
@@ -5020,7 +5020,7 @@ items:
                 href: api/channel-post-members.md
               - name: Obter membro
                 href: api/channel-get-members.md
-              - name: Atualizar função de membro
+              - name: Atualizar a função de membro
                 href: api/channel-update-members.md
               - name: Remover membro
                 href: api/channel-delete-members.md
@@ -5028,7 +5028,7 @@ items:
                 href: api/channel-get-filesfolder.md
               - name: Listar mensagens do canal
                 href: api/channel-list-messages.md
-              - name: Delta de obtenção de mensagens de canal
+              - name: Obter delta de mensagens de canal
                 href: api/chatmessage-delta.md
               - name: Obter mensagens do canal
                 href: api/channel-get-message.md
@@ -5047,7 +5047,7 @@ items:
             items:
               - name: Listar mensagens do canal
                 href: api/channel-list-messages.md
-              - name: Delta de obtenção de mensagens de canal
+              - name: Obter delta de mensagens de canal
                 href: api/chatmessage-delta.md
               - name: Obter mensagens do canal
                 href: api/channel-get-message.md
@@ -5080,7 +5080,7 @@ items:
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
-              - name: Aplicativo no Team
+              - name: Aplicativo na equipe
                 items:
                   - name: Listar aplicativos em equipe
                     href: api/team-list-installedapps.md
@@ -5098,11 +5098,11 @@ items:
                     href: api/userteamwork-list-installedapps.md
                   - name: Adicionar o aplicativo para o usuário
                     href: api/userteamwork-post-installedapps.md
-                  - name: Obter o aplicativo instalado para o usuário
+                  - name: Obter aplicativo instalado para o usuário
                     href: api/userteamwork-get-installedapps.md
                   - name: Obter chat entre o usuário e o aplicativo
                     href: api/userscopeteamsappinstallation-get-chat.md
-                  - name: Atualização do aplicativo instalado para o usuário
+                  - name: Atualizar o aplicativo instalado para o usuário
                     href: api/userteamwork-teamsappinstallation-upgrade.md
                   - name: Remover o aplicativo para o usuário
                     href: api/userteamwork-delete-installedapps.md
@@ -5144,7 +5144,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Desloca
+          - name: Turnos
             items:
               - name: Shift
                 href: resources/shift.md
@@ -5181,7 +5181,7 @@ items:
                     href: api/schedulinggroup-put.md
                   - name: Excluir
                     href: api/schedulinggroup-delete.md
-              - name: Oferecer mudança
+              - name: Turno de oferta
                 href: resources/offershiftrequest.md
                 items:
                   - name: Criar
@@ -5192,7 +5192,7 @@ items:
                     href: api/offershiftrequest-list.md
                   - name: Aprovar
                     href: api/offershiftrequest-approve.md
-                  - name: Aceito
+                  - name: Recusar
                     href: api/offershiftrequest-decline.md
               - name: Abrir turno
                 href: resources/openshift.md
@@ -5207,7 +5207,7 @@ items:
                     href: api/openshift-update.md
                   - name: Excluir
                     href: api/openshift-delete.md
-              - name: Abrir solicitação de alteração de turno
+              - name: Solicitação de alteração de turno aberta
                 href: resources/openshiftchangerequest.md
                 items:
                   - name: Listar
@@ -5218,16 +5218,16 @@ items:
                     href: api/openshiftchangerequest-get.md
                   - name: Aprovar
                     href: api/openshiftchangerequest-approve.md
-                  - name: Aceito
+                  - name: Recusar
                     href: api/openshiftchangerequest-decline.md
-              - name: Preferências de mudança
+              - name: Preferências de turno
                 href: resources/shiftpreferences.md
                 items:
                   - name: Obter
                     href: api/shiftpreferences-get.md
                   - name: Atualizar
                     href: api/shiftpreferences-put.md
-              - name: Trocar mudança de mudança
+              - name: Solicitação de alteração de turnos de troca
                 href: resources/swapshiftschangerequest.md
                 items:
                   - name: Listar
@@ -5238,7 +5238,7 @@ items:
                     href: api/swapshiftschangerequest-get.md
                   - name: Aprovar
                     href: api/swapshiftschangerequest-approve.md
-                  - name: Aceito
+                  - name: Recusar
                     href: api/swapshiftschangerequest-decline.md
               - name: Folga
                 href: resources/timeoff.md
@@ -5275,9 +5275,9 @@ items:
                     href: api/timeoffrequest-delete.md
                   - name: Aprovar
                     href: api/timeoffrequest-approve.md
-                  - name: Aceito
+                  - name: Recusar
                     href: api/timeoffrequest-decline.md
-              - name: Integração de força de obra
+              - name: Integração da força de trabalho
                 href: resources/workforceintegration.md
                 items:
                   - name: Listar
@@ -5327,13 +5327,13 @@ items:
                 href: api/todotasklist-update.md
               - name: Excluir lista de tarefas
                 href: api/todotasklist-delete.md
-              - name: Obter Delta de lista de tarefas
+              - name: Obter delta da lista de tarefas
                 href: api/todotasklist-delta.md
               - name: Criar extensão aberta
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefas
+          - name: Tarefa
             href: resources/todotask.md
             items:
               - name: Listar tarefas
@@ -5346,7 +5346,7 @@ items:
                 href: api/todotask-update.md
               - name: Excluir tarefa
                 href: api/todotask-delete.md
-              - name: Obter o Delta da tarefa
+              - name: Obter delta de tarefa
                 href: api/todotask-delta.md
               - name: Criar extensão aberta
                 href: api/opentypeextension-post-opentypeextension.md
@@ -5385,14 +5385,14 @@ items:
                 href: api/workbook-list-worksheets.md
               - name: Listar nomes
                 href: api/workbook-list-names.md
-          - name: Aplicativo de pasta de trabalho
+          - name: Aplicativo de workbook
             href: resources/workbookapplication.md
             items:
               - name: Obter
                 href: api/workbookapplication-get.md
               - name: Calcular
                 href: api/workbookapplication-calculate.md
-          - name: Comentários da pasta de trabalho
+          - name: Comentários da workbook
             href: resources/workbookcomment.md
             items:
               - name: Listar
