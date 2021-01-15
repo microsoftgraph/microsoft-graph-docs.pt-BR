@@ -1,30 +1,30 @@
 ---
 title: Obter termo
-description: Leia as propriedades e os relacionamentos de um objeto Term.
+description: Leia as propriedades e os relacionamentos de um objeto term.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 993b09b6ba9fbff261a92fa2263807f1ef4d77f4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1215ba651f2ff164bdfe414274252be13bf8ff62
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972267"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874085"
 ---
 # <a name="get-term"></a>Obter termo
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um objeto [Term](../resources/termstore-term.md) .
+Leia as propriedades e os relacionamentos de um [objeto term.](../resources/termstore-term.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) | Termos. Read. All, termos. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Term](../resources/termstore-term.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [term](../resources/termstore-term.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

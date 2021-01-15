@@ -1,30 +1,30 @@
 ---
-title: Obter local de site
-description: Leia as propriedades e os relacionamentos de um objeto de site.
+title: Obter siteSource
+description: Leia as propriedades e os relacionamentos de um objeto siteSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 304d1bfbe7bbf96243c362d4b6b12128b9756aa2
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 79b711260c8c651be489f1030e98916a6a319a89
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658793"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874428"
 ---
-# <a name="get-sitesource"></a>Obter local de site
+# <a name="get-sitesource"></a>Obter siteSource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um objeto de [site](../resources/sitesource.md) .
+Leia as propriedades e os relacionamentos de um [objeto siteSource.](../resources/sitesource.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [sitery](../resources/sitesource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto siteSource](../resources/sitesource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

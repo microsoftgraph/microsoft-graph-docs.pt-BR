@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 63f169c3f531b0ca4a1271b992dc91c3fe22d197
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: fb3d7c603f0155709399fb9a00c740885f83aafa
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720648"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874337"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -78,7 +78,7 @@ Esse recurso permite:
 |hideAttendees|Booliano|Quando definido como `true`, cada participante só se vê na solicitação de reunião e na lista de **Rastreamento** da reunião. O padrão é false.|
 |iCalUId|Cadeia de caracteres|Um único identificador para um evento em todos os calendários. Esta identificação é diferente para cada ocorrência em uma série recorrente. Somente leitura.|
 |id|String| Somente leitura.|
-|importance|importância|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|importância|importância|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
 |isDraft|Boleano|Defina como verdadeiro se o usuário atualizou a reunião no Outlook mas não enviou as atualizações aos participantes. Defina como falso se todas as alterações forem enviadas, ou se o evento for um compromisso sem participantes.|
@@ -243,9 +243,7 @@ Veja a seguir uma representação JSON do recurso
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
-
 }
-
 ```
 
 

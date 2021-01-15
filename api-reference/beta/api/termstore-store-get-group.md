@@ -5,26 +5,26 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: aef088e26496e7b35b14a9250725a6eaac96eb5b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ef7eae93b2906467b8bbfafc0a2b48b0a07f4cc3
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972342"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874127"
 ---
 # <a name="get-group"></a>Obter grupo
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um objeto de [grupo](../resources/termstore-group.md) .
+Leia as propriedades e os relacionamentos de um [objeto de](../resources/termstore-group.md) grupo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) | Termos. Read. All, termos. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 

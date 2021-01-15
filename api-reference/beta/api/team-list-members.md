@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1efcb09962fc8b5342e6d83294347b9b84653058
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: b3c08e79e1c3b3b60cad33357aff101c4f1fee3b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706133"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874197"
 ---
 # <a name="list-members-of-team"></a>Listar membros de equipe
 Namespace: microsoft.graph
@@ -27,7 +27,7 @@ Obtenha a [conversationMember](../resources/conversationmember.md) coleçãoda [
 ## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |

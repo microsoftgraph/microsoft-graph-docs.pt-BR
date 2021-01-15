@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd656bad651511b897c687bbca8cead22a4accc3
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: ee208f75ce3629ea4217ae992e365578861d9aed
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844269"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874309"
 ---
 # <a name="list-identityapiconnectors"></a>Listar identityApiConnectors
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 Leia as propriedades de um [objeto identityApiConnector.](../resources/identityapiconnector.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (de privilégios máximos a mínimos) |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | APIConnectors.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.  |

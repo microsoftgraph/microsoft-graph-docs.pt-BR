@@ -1,26 +1,26 @@
 ---
 title: Atualizar todoTask
-description: Atualiza as propriedades de um objeto todoTask.
+description: Atualizar as propriedades de um objeto todoTask.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: af05c4ad04873e528d894d1a02e0a8993cfc1790
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ffc7d5c90d2ec88638e35456ff74a2c48e3f1dc4
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974318"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873931"
 ---
 # <a name="update-todotask"></a>Atualizar todoTask
-Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [todoTask](../resources/todotask.md) .
+Atualizar as propriedades de um [objeto todoTask.](../resources/todotask.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
@@ -44,7 +44,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [todoTask](../resources/todotask.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto todoTask.](../resources/todotask.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTask](../resources/todotask.md).
 
@@ -58,17 +58,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
-|status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|String|Uma breve descrição da tarefa.|
+|status|taskStatus|Indica o estado ou o progresso da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|title|Cadeia de caracteres|Uma breve descrição da tarefa.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
-|bodyLastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do corpo da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
+|bodyLastModifiedDateTime|DateTimeOffset|A data e a hora em que o corpo da tarefa foi modificado pela última vez. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [todoTask](../resources/todotask.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [todoTask](../resources/todotask.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

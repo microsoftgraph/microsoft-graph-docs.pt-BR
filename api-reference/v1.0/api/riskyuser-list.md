@@ -1,26 +1,26 @@
 ---
 title: Listar riskyUsers
-description: Obtenha uma lista dos objetos riskyUser e suas propriedades.
+description: Obter uma lista dos objetos riskyUser e suas propriedades.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ef4816819e82944e752fb47fdc63a88f7f8a29a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 075f135afe075450197ff8b3ed1d8e1c5bbde36d
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051323"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874344"
 ---
 # <a name="list-riskyusers"></a>Listar riskyUsers
 Namespace: microsoft.graph
 
-Obtenha uma lista dos objetos [riskyUser](../resources/riskyuser.md) e suas propriedades.
+Obter uma lista dos [objetos riskyUser](../resources/riskyuser.md) e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskyUser](../resources/riskyuser.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos riskyUser](../resources/riskyuser.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

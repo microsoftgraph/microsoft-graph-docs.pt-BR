@@ -5,24 +5,24 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 89760dc319ac621a4aa34ff13da178acb60dd0e1
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 9b70fa36c3109b77796e212aa152358ac4cc6d20
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905124"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874266"
 ---
 # <a name="get-todotasklist"></a>Obter todoTaskList
 Namespace: microsoft.graph
 
-Leia as propriedades e os relacionamentos de um objeto [todoTaskList](../resources/todotasklist.md) .
+Leia as propriedades e os relacionamentos de um [objeto todoTaskList.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte.|
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [todoTaskList](../resources/todotasklist.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto todoTaskList](../resources/todotasklist.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

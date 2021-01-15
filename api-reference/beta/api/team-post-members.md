@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5b4f7ecb27b3bb2c658f0b50fe90fa25379f530a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 8cd5ac038abad1b92d6b1b0ef19d2360e6508873
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658786"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874190"
 ---
 # <a name="add-member-to-team"></a>Adicionar membro à equipe.
 Namespace: microsoft.graph
@@ -22,7 +22,7 @@ Adicione um novo [conversationMember](../resources/conversationmember.md) à uma
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)| TeamMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |

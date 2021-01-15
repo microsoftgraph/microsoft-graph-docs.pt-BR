@@ -5,27 +5,27 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 314795b1edad398a093b3c1bbfc401c0ef450c23
-ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
+ms.openlocfilehash: bc7959ec7606a450e9ef920cd96b2550923b03f2
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48258447"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873903"
 ---
 # <a name="create-group"></a>Criar grupo
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto de [grupo](../resources/termstore-group.md) .
+Criar um novo [objeto de](../resources/termstore-group.md) grupo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,13 +46,13 @@ POST /termStore/groups
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Group](../resources/termstore-group.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto de](../resources/termstore-group.md) grupo.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [grupo](../resources/termstore-group.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar o [grupo.](../resources/termstore-group.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome do grupo a ser criado.|
+|displayName|Cadeia de caracteres|Nome do grupo a ser criado.|
 
 
 

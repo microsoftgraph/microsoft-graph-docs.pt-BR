@@ -1,30 +1,30 @@
 ---
-title: Excluir site local
-description: Excluir um objeto de site.
+title: Excluir siteSource
+description: Exclua um objeto siteSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c4732e101fe86fdd9cafbad658bf1e3211283514
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 5d929949aa18a1fb2b47347828b2e4d7d20a9cec
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659560"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874435"
 ---
-# <a name="delete-sitesource"></a>Excluir site local
+# <a name="delete-sitesource"></a>Excluir siteSource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto de [site](../resources/sitesource.md) .
+[Exclua um objeto siteSource.](../resources/sitesource.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|

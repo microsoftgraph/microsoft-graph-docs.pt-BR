@@ -5,19 +5,19 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 50a567fe10a11688c6c82d0471de35bfe833b0f4
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: d8039c58a6b52fa200977903669538063e3df9da
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796726"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874330"
 ---
 # <a name="list-windowshelloforbusinessauthenticationmethods"></a>Listar windowsHelloForBusinessAuthenticationMethods
 Namespace: microsoft.graph
 
 Obter uma lista dos [objetos windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administração global
+* Administrador global
 * Leitor global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação (vê apenas números de telefone com máscara)
@@ -51,7 +51,7 @@ Para cenários delegados em que um administrador está agindo em outro usuário,
 -->
 ``` http
 GET /me/authentication/windowsHelloForBusinessMethods
-GET /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
+GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -79,7 +79,7 @@ Se tiver êxito, este método retornará um código de resposta e uma coleção 
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/annie@contoso.com/authentication/windowsHelloForBusinessMethods
+GET https://graph.microsoft.com/beta/users/annie@contoso.com/authentication/windowsHelloForBusinessMethods
 ```
 
 

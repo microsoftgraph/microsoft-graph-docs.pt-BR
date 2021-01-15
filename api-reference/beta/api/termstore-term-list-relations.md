@@ -1,30 +1,30 @@
 ---
 title: Listar relações
-description: Obtenha as relações da propriedade de navegação Relations.
+description: Obter as relações da propriedade de navegação de relações.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ac82d8c83bb4494d8ccbc80602dac833baffc7f2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3ccad6849eb9533ac043c22bbeff636230bc2cb
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972239"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874442"
 ---
 # <a name="list-relations"></a>Listar relações
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a relação diferente de um [termo] ou [conjunto] na propriedade de navegação de relações.
+Obter a relação diferente de um [termo ou] [conjunto a] partir da propriedade de navegação de relações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) |Termos. Read. All, termos. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) |TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [relation](../resources/termstore-relation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de objetos [relation](../resources/termstore-relation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -112,7 +112,7 @@ Content-Type: application/json
 
 
 [set]: ../resources/termstore-set.md
-[terminal]: ../resources/termstore-term.md
+[term]: ../resources/termstore-term.md
 [microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
 
 

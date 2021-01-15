@@ -1,28 +1,28 @@
 ---
 title: Excluir conjunto
-description: Excluir um objeto Set.
+description: Exclua um objeto set.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 28ed1e580c13ce675e09f6b892cbd4989e56d664
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5dedcb12502dc9877bd63519022dc69149a18bb5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980080"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874421"
 ---
 # <a name="delete-set"></a>Excluir conjunto
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [set](../resources/termstore-set.md) .
+Exclua [um objeto](../resources/termstore-set.md) set.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |

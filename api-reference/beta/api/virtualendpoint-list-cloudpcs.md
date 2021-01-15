@@ -1,16 +1,16 @@
 ---
 title: Listar cloudPCs
-description: Listar Propriedades e relações dos objetos cloudPC.
+description: Listar propriedades e relações dos objetos cloudPC.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 80fe8d0f8850acc7da90f44b7f6a96eb89c2d785
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 864d772aab5c084ee1fb479ebb0179fafd3418d3
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563896"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874029"
 ---
 # <a name="list-cloudpcs"></a>Listar cloudPCs
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar Propriedades e relações dos objetos [cloudPC](../resources/cloudpc.md) .
+Listar propriedades e relações dos objetos [cloudPC.](../resources/cloudpc.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All, CloudPC. Read. All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -45,7 +45,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece `$select` suporte `$filter` e `$count` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte a parâmetros de consulta OData e ao `$select` `$filter` `$count` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [cloudPC](../resources/cloudpc.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de objetos [cloudPC](../resources/cloudpc.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

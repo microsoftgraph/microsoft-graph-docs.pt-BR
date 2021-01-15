@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6e09dd501de62009d4baf06f85381f275223e673
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 92242d0973b3d47af0126f6fefb093d258f46d74
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796700"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874078"
 ---
 # <a name="create-todotasklist"></a>Criar todoTaskList
 Namespace: microsoft.graph
@@ -19,10 +19,10 @@ Namespace: microsoft.graph
 
 Criar um novo objeto de listas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [todoTaskList](../resources/todotasklist.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto todoTaskList](../resources/todotasklist.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

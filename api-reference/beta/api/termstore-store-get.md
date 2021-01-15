@@ -1,30 +1,30 @@
 ---
-title: Obter repositório
-description: Leia as propriedades e os relacionamentos de um objeto Store.
+title: Obter loja
+description: Leia as propriedades e os relacionamentos de um objeto store.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 05175c566aa3c9ea516b9c5126754c0dce348571
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fb94dd40644fc1c8ad3f1727fa41b9143f2b1e13
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972338"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874414"
 ---
-# <a name="get-store"></a>Obter repositório
-Namespace: Microsoft. Graph. termos
+# <a name="get-store"></a>Obter loja
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um objeto [Store](../resources/termstore-store.md) .
+Leia as propriedades e os relacionamentos de um [objeto store.](../resources/termstore-store.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) | Termos. Read. All, termos. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -46,7 +46,7 @@ GET /termStore
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Store](../resources/termstore-store.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [store](../resources/termstore-store.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

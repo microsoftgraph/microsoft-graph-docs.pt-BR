@@ -5,22 +5,22 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 803e8d25e42f317b34e6b5b82521119933d49e75
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9f0642a6a8c41f56d1fe8c8a5497d71393c1cad1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973604"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873910"
 ---
 # <a name="delete-todotask"></a>Excluir todoTask
-Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um objeto [todoTask](../resources/todotask.md) .
+Exclui um [objeto todoTask.](../resources/todotask.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|

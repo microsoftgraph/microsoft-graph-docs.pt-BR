@@ -1,16 +1,16 @@
 ---
 title: 'virtualEndpoint: getEffectivePermissions'
-description: '**GetEffectivePermissions é uma função que Retrives as permissões efetivas do usuário atualmente autenticado, o que ajuda o UX a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.**'
+description: '**GetEffectivePermissions é uma função que recupera as permissões efetivas do usuário autenticado no momento, o que ajuda a experiência do usuário a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.**'
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e87deb3bafbcd1ac28a1d95209f62017d7593e6c
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: 89150ac339a955db1a8d48f3da9e71c3823f9852
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714344"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874036"
 ---
 # <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint: getEffectivePermissions
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exibir as permissões efetivas do usuário autenticado no momento. GetEffectivePermissions é uma função que Retrives as permissões efetivas do usuário atualmente autenticado, o que ajuda o UX a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.
+Exibir as permissões efetivas do usuário autenticado no momento. GetEffectivePermissions é uma função que recupera as permissões efetivas do usuário autenticado no momento, o que ajuda a experiência do usuário a ocultar ou desabilitar o conteúdo ao qual o usuário atual não tem acesso.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,9 +26,9 @@ Exibir as permissões efetivas do usuário autenticado no momento. GetEffectiveP
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All, CloudPC. Read. All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft) | Sem suporte.|
 |Aplicativo| Sem suporte.|
 

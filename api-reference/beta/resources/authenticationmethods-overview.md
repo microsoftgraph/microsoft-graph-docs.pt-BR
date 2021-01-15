@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 3db1559a431726612bba46b6a0a524f6c8e55fcd
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 98de9847ec0e50cb17c6ab64423d891bd3c5e8a3
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796567"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874302"
 ---
 # <a name="azure-ad-authentication-methods-api-overview"></a>Visão geral da API de métodos de autenticação do Azure AD
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 
 As APIs do método de autenticação são usadas para gerenciar os métodos de autenticação de um usuário. Por exemplo:
 
-* Você pode adicionar um número de telefone a um usuário. Em seguida, o usuário poderá usar esse número de telefone para autenticação de SMS e chamada de voz se estiver habilitado para usá-lo por política.
+* Você pode adicionar um número de telefone a um usuário. Em seguida, o usuário poderá usar esse número de telefone para autenticação por SMS e chamada de voz se estiver habilitado para usá-lo por política.
 * Você pode atualizar esse número ou excluí-lo do usuário.
 * Você pode habilitar ou desabilitar o número de login por SMS.
 * Você pode redefinir a senha de um usuário.
@@ -39,8 +39,9 @@ As APIs do método de autenticação são usadas para gerenciar os métodos de a
 |[phoneAuthenticationMethod](phoneauthenticationmethod.md)|Um telefone pode ser usado por um usuário para autenticar usando SMS ou [chamadas de voz](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (conforme permitido pela política).|Veja os números de telefone de autenticação de um usuário. Adicionar, atualizar ou remover um número de telefone para um usuário. Habilitar ou desabilitar um telefone celular principal para entrar por SMS.|
 |[fido2AuthenticationMethod](fido2authenticationmethod.md)|Uma Chave de Segurança FIDO2 pode ser usada por um usuário para entrar no Azure AD.|Excluir uma chave de segurança FIDO2 perdida.|
 |[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|O Microsoft Authenticator pode ser usado por um usuário para entrar ou executar a autenticação multifatório no Azure AD|Exclua um método de autenticação do Microsoft Authenticator.|
-|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (preterido)|A assinatura de telefone sem senha do Microsoft Authenticator pode ser usada por um usuário para entrar no Azure AD|Exclua um método de autenticação de login de telefone sem senha.|
+|[passwordlessmicrosoftauthenticatorauthenticationmethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (preterido)|O Acesso por Telefone sem Senha do Microsoft Authenticator pode ser usado por um usuário para entrar no Azure AD|Exclua um método de autenticação de login de telefone sem senha.|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|Um endereço de email pode ser usuário por um usuário como parte do processo Self-Service redefinição de senha (SSPR).|Consulte o endereço de email de autenticação de um usuário. Adicionar, atualizar ou remover um endereço de email para um usuário.|
+|[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|O Windows Hello para Empresas é um método de entrada sem senha em dispositivos Windows.|Ver dispositivos em que um usuário habilitar a entrada do Windows Hello para Empresas. Exclua uma credencial do Windows Hello para Empresas.|
 
 ## <a name="next-steps"></a>Próximas etapas
 

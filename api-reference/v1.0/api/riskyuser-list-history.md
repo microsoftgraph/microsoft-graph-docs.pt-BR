@@ -1,26 +1,26 @@
 ---
-title: Histórico de lista
-description: Obtenha o riskyUserHistoryItems da propriedade de navegação History.
+title: Histórico da lista
+description: Obter o riskyUserHistoryItems da propriedade de navegação do histórico.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1fcbe019d1aa673d100cedf5904b529960cec9b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eddb74f1bc6aacc12f9a2a73df6df44b2684a5c6
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051330"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874351"
 ---
-# <a name="list-history"></a>Histórico de lista
+# <a name="list-history"></a>Histórico da lista
 Namespace: microsoft.graph
 
-Obtenha o riskyUserHistoryItems da propriedade de navegação History.
+Obter o riskyUserHistoryItems da propriedade de navegação do histórico.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions_reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma coleção `200 OK` de [objetos riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

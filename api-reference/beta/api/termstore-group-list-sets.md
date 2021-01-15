@@ -1,30 +1,30 @@
 ---
 title: Listar conjuntos
-description: Obtenha uma lista dos objetos Set e suas propriedades.
+description: Obter uma lista dos objetos set e suas propriedades.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bbe0b234919b1e30822255af8fab12910b7a75c2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4d358769f7d4a73c2f01f84e0237747c456307a5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973826"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873938"
 ---
 # <a name="list-sets"></a>Listar conjuntos
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista dos objetos [set](../resources/termstore-set.md) e suas propriedades.
+Obter uma lista dos [objetos set](../resources/termstore-set.md) e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) |Termos. Read. All, termos. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) |TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [set](../resources/termstore-set.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos definidos](../resources/termstore-set.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

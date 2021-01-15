@@ -5,26 +5,26 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1b4a9df1bdeedf9f59cbd5dfc716cf21fe978daf
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 8c99568099c99622373b91fff4a4b247e80f9288
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904228"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874400"
 ---
 # <a name="create-linkedresource"></a>Criar linkedResource
 Namespace: microsoft.graph
 
-Crie um objeto [linkedResource](../resources/linkedresource.md) para associar uma [tarefa](../resources/todotask.md) especificada a um item em um aplicativo parceiro. Por exemplo, você pode associar uma tarefa a um item de email no Outlook que spurred a tarefa e pode criar um objeto **linkedResource** para controlar sua associação.
+Crie um [objeto linkedResource](../resources/linkedresource.md) para associar uma tarefa [especificada](../resources/todotask.md) a um item em um aplicativo parceiro. Por exemplo, você pode associar uma tarefa a um item de email no Outlook que gerou a tarefa e pode criar um objeto **linkedResource** para controlar sua associação.
 
-Você também pode criar um objeto **linkedResource** ao [criar uma tarefa](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
+Você também pode criar um **objeto linkedResource** ao [criar uma tarefa.](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte.|
 
@@ -46,23 +46,23 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [linkedResource](../resources/linkedresource.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto linkedResource.](../resources/linkedresource.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [linkedResource](../resources/linkedresource.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)|
+|id|Cadeia de caracteres|ID gerada pelo servidor para a entidade vinculada Herdada da [entidade](../resources/entity.md)|
 |webUrl|String|Deeplink para a entidade vinculada |
-|applicationName|Cadeia de caracteres|Campo que indica o nome do aplicativo da fonte que está enviando a entidade vinculada |
-|displayName|String|Campo indicando o título da entidade vinculada. |
-|externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiros |
+|applicationName|Cadeia de caracteres|Campo indicando o nome do aplicativo da fonte que está enviando a entidade vinculada |
+|displayName|Cadeia de caracteres|Campo que indica o título da entidade vinculada. |
+|externalId|Cadeia de caracteres|ID do objeto que está associado a essa tarefa no sistema de terceiros/parceiro |
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [linkedResource](../resources/linkedresource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [linkedResource](../resources/linkedresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

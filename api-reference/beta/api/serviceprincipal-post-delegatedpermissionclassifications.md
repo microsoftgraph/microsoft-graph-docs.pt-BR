@@ -1,16 +1,16 @@
 ---
 title: Criar delegatedPermissionClassification
-description: Classificar uma permissão adicionando um delegatedPermissionClassification à entidade de serviço da API.
+description: Classifique uma permissão adicionando um delegatedPermissionClassification à entidade de serviço da API.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 8d57a350ab89c160626e80bca64d2beac31ecf5d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3ca3724858dc9f6ddde69ed630ffc7eac343feb4
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979657"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874386"
 ---
 # <a name="create-delegatedpermissionclassification"></a>Criar delegatedPermissionClassification
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Classificar uma permissão delegada adicionando um [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) ao [servicePrincipalName](../resources/servicePrincipal.md) que representa a API.
+Classifique uma permissão delegada adicionando [uma delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) ao [servicePrincipal](../resources/servicePrincipal.md) que representa a API.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | PermissionGrantPolicy. ReadWrite. All |
+|Aplicativo | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,17 +46,17 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto delegatedPermissionClassification.](../resources/delegatedpermissionclassification.md)
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-No exemplo a seguir, a permissão delegada "User. Read" está sendo classificada como "Low".
+No exemplo a seguir, a permissão delegada "User.Read" está sendo classificada como "baixa".
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -106,7 +106,7 @@ Este é um exemplo de resposta.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

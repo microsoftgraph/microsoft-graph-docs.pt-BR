@@ -1,26 +1,26 @@
 ---
 title: Listar linkedResources
-description: Obtenha o linkedResources da propriedade de navegação linkedResources.
+description: Obter o linkedResources da propriedade de navegação linkedResources.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8dff0b6872a0094703c4f46f53cee8bc48fee180
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 36c923a469c3aa87eea330f707dd6f8a9a27403a
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974362"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874358"
 ---
 # <a name="list-linkedresources"></a>Listar linkedResources
-Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter informações de um ou mais itens em um aplicativo parceiro, com base no qual uma [tarefa](../resources/todotask.md) especificada foi criada. As informações são representadas em um objeto [linkedResource](../resources/linkedresource.md) para cada item. Ele inclui uma ID externa para o item no aplicativo parceiro e, se aplicável, um link profundo para esse item no aplicativo.
+Obter informações de um ou mais itens em um aplicativo parceiro, com base no qual uma tarefa [especificada](../resources/todotask.md) foi criada. As informações são representadas em um [objeto linkedResource](../resources/linkedresource.md) para cada item. Ele inclui uma ID externa para o item no aplicativo parceiro e, se aplicável, um link profundo para esse item no aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [linkedResource](../resources/linkedresource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos linkedResource](../resources/linkedresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

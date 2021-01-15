@@ -1,30 +1,30 @@
 ---
 title: Listar filhos
-description: Obtenha os termos da propriedade de navegação Children.
+description: Obter os termos da propriedade de navegação para filhos.
 author: mohitpcad
 ms.prod: Sharepoint
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: f285feacf48be3ae9cc5e6a987e578aab7978e15
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ddf7a7ba3419437b300d90ed33f3841e46bae5a0
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972253"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874449"
 ---
 # <a name="list-children"></a>Listar filhos
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o primeiro nível filho de um recurso [set] ou [Term] usando a propriedade de navegação Children.
+Obter os filhos de primeiro nível de um [conjunto ou] recurso [de termo] usando a propriedade de navegação filho.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) | Termos. Read. All, termos. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [Term](../resources/termstore-term.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de objetos [term](../resources/termstore-term.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -116,7 +116,7 @@ Content-Type: application/json
 }
 ```
 
-[terminal]: ../resources/termstore-term.md
+[term]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 
 <!--
