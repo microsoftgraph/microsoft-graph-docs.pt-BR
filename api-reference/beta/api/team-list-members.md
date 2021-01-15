@@ -5,37 +5,37 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1efcb09962fc8b5342e6d83294347b9b84653058
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: b3c08e79e1c3b3b60cad33357aff101c4f1fee3b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706133"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874197"
 ---
-# <a name="list-members-of-team"></a><span data-ttu-id="1a7ea-103">Listar membros de equipe</span><span class="sxs-lookup"><span data-stu-id="1a7ea-103">List members of team</span></span>
-<span data-ttu-id="1a7ea-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1a7ea-104">Namespace: microsoft.graph</span></span>
+# <a name="list-members-of-team"></a><span data-ttu-id="ee807-103">Listar membros de equipe</span><span class="sxs-lookup"><span data-stu-id="ee807-103">List members of team</span></span>
+<span data-ttu-id="ee807-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ee807-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a7ea-105">Obtenha a [conversationMember](../resources/conversationmember.md) coleçãoda [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="1a7ea-105">Get the [conversationMember](../resources/conversationmember.md) collection of a [team](../resources/team.md).</span></span>
+<span data-ttu-id="ee807-105">Obtenha a [conversationMember](../resources/conversationmember.md) coleçãoda [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="ee807-105">Get the [conversationMember](../resources/conversationmember.md) collection of a [team](../resources/team.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1a7ea-106">As IDs de associação retornadas pelo servidor devem ser tratadas como cadeias de caracteres opacas.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-106">The membership IDs returned by the server must be treated as opaque strings.</span></span> <span data-ttu-id="1a7ea-107">O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-107">The client should not try to parse or make any assumptions about these resource IDs.</span></span>
+> <span data-ttu-id="ee807-106">As IDs de associação retornadas pelo servidor devem ser tratadas como cadeias de caracteres opacas.</span><span class="sxs-lookup"><span data-stu-id="ee807-106">The membership IDs returned by the server must be treated as opaque strings.</span></span> <span data-ttu-id="ee807-107">O cliente não deve tentar analisar ou fazer suposições sobre essas IDs do recursos.</span><span class="sxs-lookup"><span data-stu-id="ee807-107">The client should not try to parse or make any assumptions about these resource IDs.</span></span>
 >
-> <span data-ttu-id="1a7ea-108">Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-108">The membership results could map to users from different tenants, as indicated in the response, in the future.</span></span> <span data-ttu-id="1a7ea-109">O cliente não deve presumir que todos os membros são apenas do locatário atual.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-109">The client should not assume that all members are from the current tenant only.</span></span>
+> <span data-ttu-id="ee807-108">Os resultados da associação podem ser mapeados para usuários de diferentes locatários, conforme indicado na resposta, no futuro.</span><span class="sxs-lookup"><span data-stu-id="ee807-108">The membership results could map to users from different tenants, as indicated in the response, in the future.</span></span> <span data-ttu-id="ee807-109">O cliente não deve presumir que todos os membros são apenas do locatário atual.</span><span class="sxs-lookup"><span data-stu-id="ee807-109">The client should not assume that all members are from the current tenant only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a7ea-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="1a7ea-110">Permissions</span></span>
-<span data-ttu-id="1a7ea-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1a7ea-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ee807-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="ee807-110">Permissions</span></span>
+<span data-ttu-id="ee807-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ee807-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a7ea-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1a7ea-113">Permission type</span></span>|<span data-ttu-id="1a7ea-114">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1a7ea-114">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="ee807-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ee807-113">Permission type</span></span>|<span data-ttu-id="ee807-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ee807-114">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1a7ea-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1a7ea-115">Delegated (work or school account)</span></span>| <span data-ttu-id="1a7ea-116">TeamMember.Read.All, TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a7ea-116">TeamMember.Read.All, TeamMember.ReadWrite.All</span></span> |
-|<span data-ttu-id="1a7ea-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1a7ea-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a7ea-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-118">Not supported.</span></span>    |
-|<span data-ttu-id="1a7ea-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1a7ea-119">Application</span></span>| <span data-ttu-id="1a7ea-120">TeamMember.Read.Group\*, TeamMember.Read.All, TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a7ea-120">TeamMember.Read.Group\*, TeamMember.Read.All, TeamMember.ReadWrite.All</span></span> |
+|<span data-ttu-id="ee807-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ee807-115">Delegated (work or school account)</span></span>| <span data-ttu-id="ee807-116">TeamMember.Read.All, TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee807-116">TeamMember.Read.All, TeamMember.ReadWrite.All</span></span> |
+|<span data-ttu-id="ee807-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ee807-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ee807-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ee807-118">Not supported.</span></span>    |
+|<span data-ttu-id="ee807-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ee807-119">Application</span></span>| <span data-ttu-id="ee807-120">TeamMember.Read.Group\*, TeamMember.Read.All, TeamMember.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee807-120">TeamMember.Read.Group\*, TeamMember.Read.All, TeamMember.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="1a7ea-121">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="1a7ea-121">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="ee807-121">**Observação**: Permissões marcadas com \* usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="ee807-121">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="1a7ea-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1a7ea-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ee807-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ee807-122">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -45,29 +45,29 @@ ms.locfileid: "49706133"
 GET /teams/{team-id}/members
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1a7ea-123">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="1a7ea-123">Optional query parameters</span></span>
-<span data-ttu-id="1a7ea-124">Este método oferece suporte aos parâmetros de consulta `$filter` e `$select`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-124">This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ee807-123">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="ee807-123">Optional query parameters</span></span>
+<span data-ttu-id="ee807-124">Este método oferece suporte aos parâmetros de consulta `$filter` e `$select`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="ee807-124">This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1a7ea-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1a7ea-125">Request headers</span></span>
-|<span data-ttu-id="1a7ea-126">Nome</span><span class="sxs-lookup"><span data-stu-id="1a7ea-126">Name</span></span>|<span data-ttu-id="1a7ea-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="1a7ea-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ee807-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ee807-125">Request headers</span></span>
+|<span data-ttu-id="ee807-126">Nome</span><span class="sxs-lookup"><span data-stu-id="ee807-126">Name</span></span>|<span data-ttu-id="ee807-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="ee807-127">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="1a7ea-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="1a7ea-128">Authorization</span></span>|<span data-ttu-id="1a7ea-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="ee807-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="ee807-128">Authorization</span></span>|<span data-ttu-id="ee807-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ee807-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1a7ea-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1a7ea-131">Request body</span></span>
-<span data-ttu-id="1a7ea-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ee807-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ee807-131">Request body</span></span>
+<span data-ttu-id="ee807-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ee807-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1a7ea-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a7ea-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ee807-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="ee807-133">Response</span></span>
 
-<span data-ttu-id="1a7ea-134">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [conversationMember](../resources/conversationmember.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-134">If successful, this method returns a `200 OK` response code and a collection of [conversationMember](../resources/conversationmember.md) objects in the response body.</span></span>
+<span data-ttu-id="ee807-134">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [conversationMember](../resources/conversationmember.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ee807-134">If successful, this method returns a `200 OK` response code and a collection of [conversationMember](../resources/conversationmember.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="1a7ea-135">Exemplos</span><span class="sxs-lookup"><span data-stu-id="1a7ea-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ee807-135">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ee807-135">Examples</span></span>
 
-### <a name="example-1-get-list-of-members-in-team"></a><span data-ttu-id="1a7ea-136">Exemplo 1: obter uma lista de membros da equipe</span><span class="sxs-lookup"><span data-stu-id="1a7ea-136">Example 1: Get list of members in team</span></span>
+### <a name="example-1-get-list-of-members-in-team"></a><span data-ttu-id="ee807-136">Exemplo 1: obter uma lista de membros da equipe</span><span class="sxs-lookup"><span data-stu-id="ee807-136">Example 1: Get list of members in team</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1a7ea-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1a7ea-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ee807-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ee807-137">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1a7ea-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a7ea-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ee807-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="ee807-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_members_in_team"
@@ -76,27 +76,27 @@ GET /teams/{team-id}/members
 ``` http
 GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
-# <a name="c"></a>[<span data-ttu-id="1a7ea-139">C#</span><span class="sxs-lookup"><span data-stu-id="1a7ea-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ee807-139">C#</span><span class="sxs-lookup"><span data-stu-id="ee807-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-in-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a7ea-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a7ea-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ee807-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ee807-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a7ea-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a7ea-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ee807-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ee807-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-in-team-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1a7ea-142">Java</span><span class="sxs-lookup"><span data-stu-id="1a7ea-142">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ee807-142">Java</span><span class="sxs-lookup"><span data-stu-id="ee807-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="1a7ea-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a7ea-143">Response</span></span>
-><span data-ttu-id="1a7ea-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="ee807-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="ee807-143">Response</span></span>
+><span data-ttu-id="ee807-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="ee807-144">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -142,14 +142,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-find-members-of-a-team-by-their-azure-ad-user-object-id"></a><span data-ttu-id="1a7ea-145">Exemplo 2: encontrar membros de uma equipe por sua ID de objeto de usuário do Microsoft Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="1a7ea-145">Example 2: Find members of a team by their Azure AD user object ID</span></span>
+### <a name="example-2-find-members-of-a-team-by-their-azure-ad-user-object-id"></a><span data-ttu-id="ee807-145">Exemplo 2: encontrar membros de uma equipe por sua ID de objeto de usuário do Microsoft Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="ee807-145">Example 2: Find members of a team by their Azure AD user object ID</span></span>
 
-<span data-ttu-id="1a7ea-146">O exemplo a seguir mostra uma solicitação para encontrar os recursos de afiliação com base na `id` do [usuário do Microsoft Azure Active Directory](../resources/user.md) associado ao [aadUserConversationMember](../resources/aaduserconversationmember.md).</span><span class="sxs-lookup"><span data-stu-id="1a7ea-146">The following example shows a request to find the membership resources based on `id` of the [Azure AD user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).</span></span>
+<span data-ttu-id="ee807-146">O exemplo a seguir mostra uma solicitação para encontrar os recursos de afiliação com base na `id` do [usuário do Microsoft Azure Active Directory](../resources/user.md) associado ao [aadUserConversationMember](../resources/aaduserconversationmember.md).</span><span class="sxs-lookup"><span data-stu-id="ee807-146">The following example shows a request to find the membership resources based on `id` of the [Azure AD user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1a7ea-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1a7ea-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ee807-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ee807-147">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1a7ea-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a7ea-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ee807-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="ee807-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_members_in_team_filter_by_userid"
@@ -159,27 +159,27 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')
 
 ```
-# <a name="c"></a>[<span data-ttu-id="1a7ea-149">C#</span><span class="sxs-lookup"><span data-stu-id="1a7ea-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ee807-149">C#</span><span class="sxs-lookup"><span data-stu-id="ee807-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-in-team-filter-by-userid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a7ea-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a7ea-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ee807-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ee807-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-filter-by-userid-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a7ea-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a7ea-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ee807-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ee807-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-in-team-filter-by-userid-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1a7ea-152">Java</span><span class="sxs-lookup"><span data-stu-id="1a7ea-152">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ee807-152">Java</span><span class="sxs-lookup"><span data-stu-id="ee807-152">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-filter-by-userid-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="1a7ea-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a7ea-153">Response</span></span>
-><span data-ttu-id="1a7ea-154">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-154">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="ee807-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="ee807-153">Response</span></span>
+><span data-ttu-id="ee807-154">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="ee807-154">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -207,14 +207,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-find-members-of-a-team-by-their-names-or-email"></a><span data-ttu-id="1a7ea-155">Exemplo 3: encontrar membros de uma equipe por seus nomes ou email</span><span class="sxs-lookup"><span data-stu-id="1a7ea-155">Example 3: Find members of a team by their names or email</span></span>
+### <a name="example-3-find-members-of-a-team-by-their-names-or-email"></a><span data-ttu-id="ee807-155">Exemplo 3: encontrar membros de uma equipe por seus nomes ou email</span><span class="sxs-lookup"><span data-stu-id="ee807-155">Example 3: Find members of a team by their names or email</span></span>
 
-<span data-ttu-id="1a7ea-156">O exemplo a seguir mostra uma solicitação para localizar os recursos de afiliação com base em `displayName` ou `email` do [aadUserConversationMember](../resources/aaduserconversationmember.md).</span><span class="sxs-lookup"><span data-stu-id="1a7ea-156">The following example shows a request to find the membership resources based on `displayName` or `email` of the [aadUserConversationMember](../resources/aaduserconversationmember.md).</span></span>
+<span data-ttu-id="ee807-156">O exemplo a seguir mostra uma solicitação para localizar os recursos de afiliação com base em `displayName` ou `email` do [aadUserConversationMember](../resources/aaduserconversationmember.md).</span><span class="sxs-lookup"><span data-stu-id="ee807-156">The following example shows a request to find the membership resources based on `displayName` or `email` of the [aadUserConversationMember](../resources/aaduserconversationmember.md).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1a7ea-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1a7ea-157">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ee807-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ee807-157">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1a7ea-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a7ea-158">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ee807-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="ee807-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_members_in_team_filter_by_username_or_email"
@@ -223,27 +223,27 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')
 ```
-# <a name="c"></a>[<span data-ttu-id="1a7ea-159">C#</span><span class="sxs-lookup"><span data-stu-id="1a7ea-159">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ee807-159">C#</span><span class="sxs-lookup"><span data-stu-id="ee807-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-in-team-filter-by-username-or-email-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a7ea-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a7ea-160">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ee807-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ee807-160">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-filter-by-username-or-email-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a7ea-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a7ea-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ee807-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ee807-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-in-team-filter-by-username-or-email-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1a7ea-162">Java</span><span class="sxs-lookup"><span data-stu-id="1a7ea-162">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ee807-162">Java</span><span class="sxs-lookup"><span data-stu-id="ee807-162">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-filter-by-username-or-email-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="1a7ea-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a7ea-163">Response</span></span>
-><span data-ttu-id="1a7ea-164">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-164">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="ee807-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="ee807-163">Response</span></span>
+><span data-ttu-id="ee807-164">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="ee807-164">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -281,17 +281,17 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-list-only-those-members-who-are-owners-of-the-team"></a><span data-ttu-id="1a7ea-165">Exemplo 4: Listar apenas os membros que são *proprietários* da equipe</span><span class="sxs-lookup"><span data-stu-id="1a7ea-165">Example 4: List only those members who are *owners* of the team</span></span>
+### <a name="example-4-list-only-those-members-who-are-owners-of-the-team"></a><span data-ttu-id="ee807-165">Exemplo 4: Listar apenas os membros que são *proprietários* da equipe</span><span class="sxs-lookup"><span data-stu-id="ee807-165">Example 4: List only those members who are *owners* of the team</span></span>
 
-<span data-ttu-id="1a7ea-166">O exemplo a seguir mostra uma solicitação para localizar todos os membros que possuem a função de *proprietário* anexada a eles.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-166">The following example shows a request to find all the members who are have *owner* role attached to them.</span></span>
+<span data-ttu-id="ee807-166">O exemplo a seguir mostra uma solicitação para localizar todos os membros que possuem a função de *proprietário* anexada a eles.</span><span class="sxs-lookup"><span data-stu-id="ee807-166">The following example shows a request to find all the members who are have *owner* role attached to them.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1a7ea-167">Há alguns problemas conhecidos com essa funcionalidade.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-167">There are some known issues with this functionality.</span></span> <span data-ttu-id="1a7ea-168">Para saber mais, confira [problemas conhecidos](/graph/known-issues#unable-to-filter-team-members-by-roles).</span><span class="sxs-lookup"><span data-stu-id="1a7ea-168">For details, see [known issues](/graph/known-issues#unable-to-filter-team-members-by-roles).</span></span>
+> <span data-ttu-id="ee807-167">Há alguns problemas conhecidos com essa funcionalidade.</span><span class="sxs-lookup"><span data-stu-id="ee807-167">There are some known issues with this functionality.</span></span> <span data-ttu-id="ee807-168">Para saber mais, confira [problemas conhecidos](/graph/known-issues#unable-to-filter-team-members-by-roles).</span><span class="sxs-lookup"><span data-stu-id="ee807-168">For details, see [known issues](/graph/known-issues#unable-to-filter-team-members-by-roles).</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1a7ea-169">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1a7ea-169">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ee807-169">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ee807-169">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1a7ea-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a7ea-170">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ee807-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="ee807-170">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_members_in_team_filter_by_owner_role"
@@ -300,27 +300,27 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=roles/any(r:r eq 'owner')
 ```
-# <a name="c"></a>[<span data-ttu-id="1a7ea-171">C#</span><span class="sxs-lookup"><span data-stu-id="1a7ea-171">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ee807-171">C#</span><span class="sxs-lookup"><span data-stu-id="ee807-171">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-in-team-filter-by-owner-role-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a7ea-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a7ea-172">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ee807-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ee807-172">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-members-in-team-filter-by-owner-role-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a7ea-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a7ea-173">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ee807-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ee807-173">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-in-team-filter-by-owner-role-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1a7ea-174">Java</span><span class="sxs-lookup"><span data-stu-id="1a7ea-174">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ee807-174">Java</span><span class="sxs-lookup"><span data-stu-id="ee807-174">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-members-in-team-filter-by-owner-role-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="1a7ea-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a7ea-175">Response</span></span>
-><span data-ttu-id="1a7ea-176">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="1a7ea-176">**Note:** The response object shown here might be shortened for readability.</span></span>
+#### <a name="response"></a><span data-ttu-id="ee807-175">Resposta</span><span class="sxs-lookup"><span data-stu-id="ee807-175">Response</span></span>
+><span data-ttu-id="ee807-176">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="ee807-176">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -350,6 +350,6 @@ Content-Type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1a7ea-177">Confira também</span><span class="sxs-lookup"><span data-stu-id="1a7ea-177">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ee807-177">Confira também</span><span class="sxs-lookup"><span data-stu-id="ee807-177">See also</span></span>
 
-- [<span data-ttu-id="1a7ea-178">Listar membros no canal</span><span class="sxs-lookup"><span data-stu-id="1a7ea-178">List members in channel</span></span>](channel-list-members.md)
+- [<span data-ttu-id="ee807-178">Listar membros no canal</span><span class="sxs-lookup"><span data-stu-id="ee807-178">List members in channel</span></span>](channel-list-members.md)
