@@ -1,28 +1,28 @@
 ---
 title: Excluir grupo
-description: Excluir um objeto Group.
+description: Exclua um objeto group.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7889328e17b68c456737eeca00bb7f21169c5c55
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 08379c962f5361b010559bc81c3ecb273589d54f
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979918"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873833"
 ---
 # <a name="delete-groups"></a>Excluir grupos
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto de [grupo](../resources/termstore-group.md) no [repositório]de termos.
+[Exclua um](../resources/termstore-group.md) objeto group no armazenamento de [termos.]
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
@@ -97,7 +97,7 @@ HTTP/1.1 204 No Content
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
 [microsoft.graph.termStore.store]: ../resources/termstore-store.md
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
-[Guarde]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 
 <!--
 {

@@ -1,28 +1,28 @@
 ---
-title: Listar tarefas pendentes
-description: Obtenha os recursos todoTask da propriedade de navegação Tasks de um todoTaskList especificado.
+title: Listar tarefas concluídas
+description: Obter os recursos todoTask da propriedade de navegação de tarefas de um todoTaskList especificado.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f89a1c97de8410be7d77cc7fb32e2a2e2d33a0c8
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: eaa56486c1198f58171202ecf4651d9364e42f75
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903817"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873532"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 Namespace: microsoft.graph
 
-Obtenha os recursos **todoTask** da propriedade de navegação **Tasks** de um [todoTaskList](../resources/todotasklist.md)especificado.
+Obter os **recursos todoTask** da **propriedade de navegação** tarefas de um [todoTaskList especificado.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [todoTask](../resources/todotask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e `200 OK` uma coleção de objetos [todoTask](../resources/todotask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

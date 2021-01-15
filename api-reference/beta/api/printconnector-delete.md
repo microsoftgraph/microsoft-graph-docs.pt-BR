@@ -1,16 +1,16 @@
 ---
 title: Excluir conector
-description: Excluir (cancelar o registro) de um conector.
+description: Exclua (unregister) um conector.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 61a3497f552777928d7454ac717ed1b066835ee0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f7b19cf15e7b08ae1d4c34011c8b5b4f5a41b178
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966899"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873560"
 ---
 # <a name="delete-connector"></a>Excluir conector
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir (cancelar o registro) de um **Reconectador**.
+Exclua (unregister) **um printConnector**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário assinado deve ser um Administrador [de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| User.Read |
+|Delegado (conta corporativa ou de estudante)| PrintConnector.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 |Cenário|Método|Código|Mensagem|
 |--------|------|----|-------|
-|O usuário tenta excluir um conector que tem uma ou mais impressoras registradas|EXCLUIR|409|Antes de excluir o conector, cancele o registro das impressoras associadas.|
+|O usuário tenta excluir um conector com uma ou mais impressoras registradas|EXCLUIR|409|Antes de excluir o conector, não faça o registro das impressoras associadas.|
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

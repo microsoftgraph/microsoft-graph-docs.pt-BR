@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cb6c12bbba8d5b458ed2dbf6829a88d8e0885e2b
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 3db702f80e92ce475d0b3699236096d7d7b79392
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720054"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872321"
 ---
 # <a name="remove-authenticationlistener"></a>Remover authenticationListener
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua o [authenticationListener](../resources/authenticationlistener.md) especificado definido para o evento onSignupStart no pipeline de autenticação.
+Exclua a [authenticationListener especificada](../resources/authenticationlistener.md) definida para o evento onSignupStart no pipeline de autenticação.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.ApplicationConfiguration|
+|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.ApplicationConfiguration|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.ApplicationConfiguration|
 

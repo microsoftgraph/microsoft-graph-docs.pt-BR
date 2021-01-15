@@ -1,28 +1,28 @@
 ---
 title: Criar todoTaskList
-description: Criar um novo objeto Lists.
+description: Criar um novo objeto de listas.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ffc3b2af61aeb4e37f687f85d35311a8c0adcae1
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 528afb009fe125e3dfac343edb622bb7f9c70b9c
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904077"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873826"
 ---
 # <a name="create-todotasklist"></a>Criar todoTaskList
 Namespace: microsoft.graph
 
-Criar um novo objeto Lists.
+Criar um novo objeto de listas.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
@@ -44,17 +44,17 @@ POST /users/{id|userPrincipalName}/todo/lists
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [todoTaskList](../resources/todotasklist.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto todoTaskList.](../resources/todotasklist.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTaskList](../resources/todotasklist.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Campo indicando o título da lista de tarefas.|
+|displayName|Cadeia de caracteres|Campo que indica o título da lista de tarefas.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [todoTaskList](../resources/todotasklist.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto todoTaskList](../resources/todotasklist.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

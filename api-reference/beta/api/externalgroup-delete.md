@@ -1,32 +1,32 @@
 ---
-title: Excluir o external
-description: Exclui um objeto de um.
+title: Excluir externalGroup
+description: Exclui um objeto externalGroup.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7cf287b7886cc9f0ee5cdb0d3e20ee5e43cb4ce5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a039ab9969766a6fa1716c481c0d74f5b8bf125d
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954638"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873182"
 ---
-# <a name="delete-externalgroup"></a>Excluir o external
+# <a name="delete-externalgroup"></a>Excluir externalGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [objeto](../resources/externalgroup.md) de um.
+[Exclua um objeto externalGroup.](../resources/externalgroup.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (de privilégios máximos a mínimos) |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte                               |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | ExternalItem.ReadWrite.All                  |
 

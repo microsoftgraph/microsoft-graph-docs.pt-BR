@@ -1,28 +1,28 @@
 ---
 title: Atualizar chat
-description: Atualizar as propriedades de um objeto chat.
+description: Atualizar as propriedades de um objeto de chat.
 author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5c5f2e1cd5a40dc4348eb1d12d39d4291524cc49
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: afab926568c7fab65395f2291c218002b31bcd5e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768221"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872888"
 ---
 # <a name="update-chat"></a>Atualizar chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um objeto [chat](../resources/chat.md) .
+Atualizar as propriedades de um [objeto de chat.](../resources/chat.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Chat.ReadWrite|
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -45,18 +45,18 @@ PATCH /chats/{chat-id}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [chat](../resources/chat.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto de chat.](../resources/chat.md)
 
-A tabela a seguir mostra as propriedades que podem ser usadas com esta ação.
+A tabela a seguir mostra as propriedades que podem ser usadas com essa ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|topic|String|O título do chat. Isso só pode ser definido para um chat com um valor de **chattype** de `group` .|
+|topic|String|O título do chat. Isso só pode ser definido para um chat com um **valor chatType** de `group` .|
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK response` código e o recurso de **chat** atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK response` um código e o recurso de **chat** atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 49b0c4474c9e2132d10fb5e94a5f154353ea2026
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: d5acb660843bf0b7a60fd66886841ab4c490f396
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720040"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872391"
 ---
 # <a name="update-authenticationlistener"></a>Atualizar authenticationListener
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize o [authenticationListener](../resources/authenticationlistener.md) definido para um evento no pipeline de autenticação.
+Atualize [o authenticationListener definido](../resources/authenticationlistener.md) para um evento no pipeline de autenticação.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.ApplicationConfiguration|
+|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.ApplicationConfiguration|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.ApplicationConfiguration|
 
@@ -50,14 +50,14 @@ PATCH /identity/events/onSignupStart/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [authenticationListener](../resources/authenticationlistener.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto authenticationListener.](../resources/authenticationlistener.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [invokeUserFlowAction](../resources/invokeuserflowlistener.md).
+A tabela a seguir mostra as propriedades que são necessárias ao atualizar [invokeUserFlowAction](../resources/invokeuserflowlistener.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Prioridade|Int32|A prioridade do ouvinte. Determina a ordem de avaliação quando um evento tem vários ouvintes. A prioridade é avaliada de baixo para alto.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtro com base na origem da autenticação que é usada para determinar se o ouvinte é avaliado. No momento, isso está limitado a avaliações com base no aplicativo para o qual o usuário está se Autenticando.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação que é usada para determinar se o ouvinte é avaliado. Atualmente, isso está limitado a avaliações baseadas no aplicativo ao usuário que está autenticando.|
 
 ## <a name="response"></a>Resposta
 

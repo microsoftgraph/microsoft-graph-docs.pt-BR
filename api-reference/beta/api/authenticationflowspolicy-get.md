@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db6e3da6d4df403fe5da71247ae6ae54f46d44b4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9d90eab2779baa0626ec660bf41c5af16f52bbce
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961391"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872433"
 ---
 # <a name="get-authenticationflowspolicy"></a>Obter authenticationFlowsPolicy
 
@@ -21,7 +21,7 @@ Ler as propriedades e relações de um objeto [authenticationFlowsPolicy](../res
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.AuthenticationFlows|
 |Delegada (conta pessoal da Microsoft)|Não suportado|

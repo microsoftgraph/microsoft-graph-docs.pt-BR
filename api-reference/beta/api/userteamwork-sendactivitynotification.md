@@ -1,26 +1,26 @@
 ---
-title: 'Conjunto de equipe: sendActivityNotification'
-description: Enviar uma notificação de feed de atividades para um usuário.
+title: 'userTeamwork: sendActivityNotification'
+description: Envie uma notificação de feed de atividades para um usuário.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dae5804251e98912cbd5e2936961a5e4591a3997
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 3dfc3858e51d227bd270bbe783636a4b23c17362
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754017"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873126"
 ---
-# <a name="userteamwork-sendactivitynotification"></a>Conjunto de equipe: sendActivityNotification
+# <a name="userteamwork-sendactivitynotification"></a>userTeamwork: sendActivityNotification
 Namespace: microsoft.graph
 
-Enviar uma notificação de feed de atividades para um usuário. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [enviando notificações de atividade do teams](/graph/teams-send-activityfeednotifications).
+Envie uma notificação de feed de atividades para um usuário. Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, confira [o envio de notificações de atividades do Teams.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -49,13 +49,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falamos.|
-|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no [manifesto do aplicativo Teams](/microsoftteams/platform/overview).|
-|chainid|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` nas solicitações subsequentes para substituir a notificação anterior.|
-|previewText|[itemBody](../resources/itembody.md)|Visualizar o texto da notificação. O Microsoft Teams só mostrará os primeiros 150 caracteres.|
-|TemplateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade correspondente ao `activityType` [manifesto do aplicativo Teams](/microsoftteams/platform/overview).|
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falado.|
+|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto do [aplicativo Teams.](/microsoftteams/platform/overview)|
+|chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.|
+|previewText|[itemBody](../resources/itembody.md)|Texto de visualização para a notificação. O Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
+|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidos na entrada do feed de atividades correspondente no `activityType` manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)|
 
-Os recursos a seguir têm suporte ao definir o `source` valor da propriedade **topic** como `entityUrl` :
+Os seguintes recursos são suportados ao definir `source` o valor da propriedade **de** tópico `entityUrl` como:
 
 - [teamsAppInstallation](../resources/teamsappinstallation.md)
 - [teamsCatalogApp](../resources/teamscatalogapp.md)
@@ -66,7 +66,7 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-send-notification-to-a-user-for-a-task-created"></a>Exemplo 1: enviar notificação para um usuário para uma tarefa criada
+### <a name="example-1-send-notification-to-a-user-for-a-task-created"></a>Exemplo 1: Enviar notificação a um usuário para uma tarefa criada
 
 #### <a name="request"></a>Solicitação
 
@@ -127,9 +127,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 2: notificar um usuário sobre um evento usando o tópico personalizado
+### <a name="example-2-notify-a-user-about-an-event-using-custom-topic"></a>Exemplo 2: Notificar um usuário sobre um evento usando um tópico personalizado
 
-Se você deseja vincular um aspecto que não é representado pelo Microsoft Graph ou deseja personalizar o nome, você pode definir a fonte do `topic` para `text` e passar um valor personalizado para ele. `webUrl` é necessário ao usar `topic` source como `text` .
+Se você deseja vincular um aspecto que não é representado pelo Microsoft Graph ou deseja personalizar o nome, você pode definir a origem do para e passar um valor personalizado `topic` `text` para ele. `webUrl` é necessário ao usar a `topic` fonte como `text` .
 
 #### <a name="request"></a>Solicitação
 

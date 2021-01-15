@@ -1,30 +1,30 @@
 ---
-title: 'responsáveis: ativar'
-description: Reative um dos responsáveis em uma ocorrência.
+title: 'custodian: activate'
+description: Reativar um custodiante em uma ocorrência.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 675e62b24b126b2ad37263f3c9a1d57e42bd37e7
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 3058f0fc281a64f937f154dc712c58b568b20c60
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659330"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872643"
 ---
-# <a name="custodian-activate"></a>responsáveis: ativar
+# <a name="custodian-activate"></a>custodian: activate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ative um dos responsáveis que tenha sido liberado de um caso para torná-los parte do caso novamente. Para obter detalhes, consulte [Manage responsáveis em um caso de descoberta eletrônica avançada](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian).
+Ative um custodiante que foi liberado de uma ocorrência para torná-los parte da ocorrência novamente. Para obter detalhes, [consulte Gerenciar custodiantes em um caso de Descoberta Avançada.](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|

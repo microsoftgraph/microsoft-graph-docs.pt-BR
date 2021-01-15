@@ -1,32 +1,32 @@
 ---
-title: Obter usuário
-description: Leia as propriedades e os relacionamentos de um objeto username.
+title: Obter userSource
+description: Leia as propriedades e os relacionamentos de um objeto userSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 653c5d45286cfd860dff1397b5ecb65fe23bd992
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 0707ca76db4fd63d3fba2cfc9dbb72ba2278817c
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597506"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873014"
 ---
-# <a name="get-usersource"></a>Obter usuário
+# <a name="get-usersource"></a>Obter userSource
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um objeto [username](../resources/usersource.md) .
+Leia as propriedades e os relacionamentos de um [objeto userSource.](../resources/usersource.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|User.Read|
+|Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [username](../resources/usersource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto userSource](../resources/usersource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

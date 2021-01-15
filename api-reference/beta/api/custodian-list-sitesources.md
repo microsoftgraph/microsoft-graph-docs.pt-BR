@@ -1,16 +1,16 @@
 ---
 title: Listar siteSources
-description: Obter uma lista dos objetos SiteName e suas propriedades.
+description: Obter uma lista dos objetos siteSource e suas propriedades.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 7510efdde8cbf248643bfa0429d63e05f2bc8dea
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 46f7b5d82da5d3ac66820199dac02b2797394d21
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659335"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872587"
 ---
 # <a name="list-sitesources"></a>Listar siteSources
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de objetos de [site de site](../resources/sitesource.md) e suas propriedades.
+Obter uma lista de [objetos siteSource](../resources/sitesource.md) e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [sitery](../resources/sitesource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção [de objetos siteSource](../resources/sitesource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

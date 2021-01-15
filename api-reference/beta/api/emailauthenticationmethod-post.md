@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 832869fcc3e60f3b9497984b79851d6388a84fc1
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 451b49ddcabb72736a67cbcb08391fb0bd45cf27
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796328"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872167"
 ---
 # <a name="create-emailauthenticationmethod"></a>Criar emailAuthenticationMethod
 Namespace: microsoft.graph
@@ -19,10 +19,10 @@ Namespace: microsoft.graph
 
 Definir o objeto [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) de um usuário. A autenticação de email é um método de redefinição de senha de autoatendado. Um usuário pode ter apenas um método de autenticação de email.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões atuando por si mesmo (do mais para o menos privilegiado)|Permissões atuando em outras pessoas (de menos para mais privilegiados)|
+|Tipo de permissão|Permissões atuando por si mesmo (do menos para o mais privilegiado)|Permissões atuando em outras pessoas (de menos para mais privilegiados)|
 |:---|:---|:--|
 | Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. | Sem suporte. |
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes [funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-* Administração global
+* Administrador global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
 

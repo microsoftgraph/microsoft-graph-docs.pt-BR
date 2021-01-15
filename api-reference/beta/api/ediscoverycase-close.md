@@ -1,28 +1,28 @@
 ---
-title: 'ediscoveryCase: fechar'
-description: Feche uma ocorrência de descoberta eletrônica.
+title: 'ediscoveryCase: close'
+description: Feche uma ocorrência de Descoberta eDiscovery.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 90b899cf526dbb54687d8b4a8825536f232ac631
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 1614d4d95517e115d5294b96e97c2f793a299a95
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657048"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873140"
 ---
-# <a name="ediscoverycase-close"></a>ediscoveryCase: fechar
+# <a name="ediscoverycase-close"></a>ediscoveryCase: close
 
 Namespace: microsoft.graph
 
-Feche uma ocorrência de descoberta eletrônica. Para obter detalhes, consulte [Close a Case](/microsoft-365/compliance/close-or-delete-case#close-a-case).
+Feche um caso de Descoberta eDiscovery. Para obter detalhes, consulte [Fechar um caso.](/microsoft-365/compliance/close-or-delete-case#close-a-case)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|

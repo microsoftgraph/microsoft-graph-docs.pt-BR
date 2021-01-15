@@ -1,16 +1,16 @@
 ---
 title: 'cloudPcDeviceImage: getSourceImages'
-description: Exibir uma lista de todos os recursos de imagem gerenciados de suas assinaturas do Azure. Essas imagens de origem podem ser carregadas e usadas em PCs de nuvem.
+description: Exibir uma lista de todos os recursos de imagem gerenciada de suas assinaturas do Azure. Essas imagens de origem podem ser carregadas e usadas em PCs na nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 824a33fbe28aeca25ea5e1420559cbac71ebffc5
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 1ddd7fdef827328f6f72b52af5a992e9f0d69653
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563391"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872776"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage: getSourceImages
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter objetos [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) . Exibir uma lista de todos os recursos de imagem gerenciados de suas assinaturas do Azure Active Directory.
+Obter [objetos cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md) Exibir uma lista de todos os recursos de imagem gerenciada de suas assinaturas do Azure Active Directory.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All, CloudPC. Read. All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) no corpo da resposta.
+Se bem-sucedida, esta função retorna um código de resposta e uma coleção `200 OK` [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

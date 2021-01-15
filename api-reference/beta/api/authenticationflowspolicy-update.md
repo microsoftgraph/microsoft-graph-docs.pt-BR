@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 57c9428d8a0d946282be96ad5d2631f51b808659
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 00853239a732f629db8df6988272f11ae024124e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961369"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872328"
 ---
 # <a name="update-authenticationflowspolicy"></a>Atualizar authenticationFlowsPolicy
 
@@ -21,7 +21,7 @@ Atualize a propriedade booleana **selfServiceSignUp** de um objeto [authenticati
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationFlows|
 |Delegada (conta pessoal da Microsoft)|Não suportado|

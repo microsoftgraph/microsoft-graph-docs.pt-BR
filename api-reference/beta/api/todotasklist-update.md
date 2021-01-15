@@ -1,26 +1,26 @@
 ---
 title: Atualizar todoTaskList
-description: Atualiza as propriedades de um objeto todoTaskList.
+description: Atualize as propriedades de um objeto todoTaskList.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b51b32705ef5b77990ed2aa7f226183c5d2f86bb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 582e9eb65ab0670d1f5c5e735c156e0ac414a19e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968928"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873189"
 ---
 # <a name="update-todotasklist"></a>Atualizar todoTaskList
-Namespace: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [todoTaskList](../resources/todotasklist.md) .
+Atualize as propriedades de um [objeto todoTaskList.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
@@ -44,19 +44,19 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [todoTaskList](../resources/todotasklist.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto todoTaskList.](../resources/todotasklist.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTaskList](../resources/todotasklist.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Campo que indica o título atualizado da lista de tarefas.|
+|displayName|Cadeia de caracteres|Campo que indica o título atualizado da lista de tarefas.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [todoTaskList](../resources/todotasklist.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [todoTaskList](../resources/todotasklist.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

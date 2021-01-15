@@ -1,33 +1,33 @@
 ---
-title: 'cloudPC: reprovisionar'
-description: Reconfigurar um PC de nuvem específico.
+title: 'cloudPC: reprovisionamento'
+description: Reprovisione um computador em nuvem específico.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6fe8b4a4a588c3ce469f300b397c767f33eed221
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 7a887ced74a6b0eb53e1516f314cc2be5ff96428
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563342"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872874"
 ---
-# <a name="cloudpc-reprovision"></a>cloudPC: reprovisionar
+# <a name="cloudpc-reprovision"></a>cloudPC: reprovisionamento
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reconfigurar um PC de nuvem específico.
+Reprovisione um computador em nuvem específico.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

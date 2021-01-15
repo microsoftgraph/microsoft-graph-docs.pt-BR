@@ -1,28 +1,28 @@
 ---
-title: Conjunto de atualização
-description: Atualiza as propriedades de um objeto Set.
+title: Conjunto de atualizações
+description: Atualizar as propriedades de um objeto set.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 735d565e6929a2b66437b8621d4ab2629e1761ad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fe2b221bc6e6852af5d8aadcf283e851e1c47872
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972372"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872055"
 ---
-# <a name="update-set"></a>Conjunto de atualização
-Namespace: Microsoft. Graph. termos
+# <a name="update-set"></a>Conjunto de atualizações
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [set](../resources/termstore-set.md) .
+Atualizar as propriedades de um [objeto set.](../resources/termstore-set.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
@@ -47,21 +47,21 @@ PATCH /termStore/sets/{setId}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [set](../resources/termstore-set.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto set.](../resources/termstore-set.md)
 
-A tabela a seguir mostra as propriedades que podem ser editadas para o [conjunto](../resources/termstore-set.md).
+A tabela a seguir mostra as propriedades que podem ser editadas para o [conjunto.](../resources/termstore-set.md)
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|localizadores|coleção [Microsoft. Graph. termos.](../resources/termstore-localizedname.md) undeleble|Nome do conjunto|
-|description|String|Descrição do conjunto|
-|properties|coleção [Microsoft. Graph. KeyValue](../resources/keyvalue.md)|Propriedades de um conjunto|
+|localizedNames|[coleção microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Nome do conjunto|
+|description|Cadeia de caracteres|Descrição do conjunto|
+|properties|[coleção microsoft.graph.keyValue](../resources/keyvalue.md)|de um conjunto|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [set](../resources/termstore-set.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [set](../resources/termstore-set.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,26 +1,26 @@
 ---
-title: 'directoryobject: getAvailableExtensionProperties'
+title: 'directoryObject: getAvailableExtensionProperties'
 description: Obtenha todas as listas ou uma lista filtrada das propriedades de extensão do diretório que foram registradas em um diretório.
 author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6de4d6e0b98045d84fcaa02d9da9c71f337f8cb2
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: ed4650a03955d4952a8c90845734ae07d53f13dc
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754188"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873021"
 ---
-# <a name="directoryobject-getavailableextensionproperties"></a>directoryobject: getAvailableExtensionProperties
+# <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Namespace: microsoft.graph
 
-Retorna todas ou uma lista filtrada das propriedades de extensão de diretório que foram registradas em um diretório. As seguintes entidades dão suporte a propriedades de extensão: **User**, **Group**, **Organization**, **Device**, **Application** e **servicePrincipalName**.
+Retornar todas ou uma lista filtrada das propriedades de extensão de diretório que foram registradas em um diretório. As entidades a seguir suportam propriedades de extensão: **usuário**, **grupo**, **organização**, **dispositivo**, **aplicativo** e **servicePrincipal**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)| Directory.Read.All |
 |Delegado (conta pessoal da Microsoft)| Sem suporte. |
@@ -49,12 +49,12 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Booliano|`true` para especificar que somente as propriedades de extensão sincronizadas a partir do diretório local devem ser retornadas; `false` para especificar que somente as propriedades de extensão que não são sincronizadas a partir do diretório local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
+|isSyncedFromOnPremises|Booliano|`true` para especificar que apenas as propriedades de extensão sincronizadas do diretório local devem ser retornadas; para especificar que somente as propriedades de extensão que não são sincronizadas do diretório `false` local devem ser retornadas. Se o parâmetro for omitido, todas as propriedades de extensão (sincronizadas e não sincronizadas) serão retornadas.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esta ação retornará um `200 OK` código de resposta e uma coleção [extensionproperty](../resources/extensionproperty.md) no corpo da resposta.
+Se bem-sucedida, esta ação retorna `200 OK` um código de resposta e uma coleção [extensionProperty](../resources/extensionproperty.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

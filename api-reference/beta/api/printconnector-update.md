@@ -1,35 +1,35 @@
 ---
-title: Atualizar o multiligação
-description: Atualiza as propriedades de um objeto Printer.
+title: Atualizar printConnector
+description: Atualizar as propriedades de um objeto printConnector.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b417c881db2afa1ee4a7b0d350b33d4874f8d014
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 767f60c6db7b212cd33467bdad893fc8c8ac853b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966877"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873546"
 ---
-# <a name="update-printconnector"></a>Atualizar o multiligação
+# <a name="update-printconnector"></a>Atualizar printConnector
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades **de um objeto** Printer.
+Atualizar as propriedades de um **objeto printConnector.**
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um [administrador da impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário assinado deve ser um Administrador [de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| User.Read |
+|Delegado (conta corporativa ou de estudante)| PrintConnector.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,14 +47,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|nome|String|O nome do conector.|
-|Nomededomíniototalmentequalificado|String|O nome de host do computador do conector.|
+|nome|Cadeia de caracteres|O nome do conector.|
+|fullyQualifiedDomainName|Cadeia de caracteres|O nome do host do computador do conector.|
 |operatingSystem|String|A versão do sistema operacional do computador do conector.|
-|appVersion|String|A versão do conector.|
-|localização|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
+|appVersion|Cadeia de caracteres|A versão do conector.|
+|location|[printerLocation](../resources/printerlocation.md)|O local físico e/ou organizacional do conector.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [multiconnect](../resources/printConnector.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [printConnector](../resources/printConnector.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

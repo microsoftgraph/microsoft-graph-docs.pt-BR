@@ -1,16 +1,16 @@
 ---
 title: Atualizar cloudPcProvisioningPolicy
-description: Atualiza as propriedades de um objeto cloudPcProvisioningPolicy.
+description: Atualizar as propriedades de um objeto cloudPcProvisioningPolicy.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: d33f0395dbcff1794a7171882a3bc152f731f1f8
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: b070f24cc91562626467aa3b4645e67fffd6d13c
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563307"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872727"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>Atualizar cloudPcProvisioningPolicy
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
+Atualizar as propriedades de um [objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -52,22 +52,22 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da política de provisionamento. |
-|description|String|A descrição da política de provisionamento.|
-|onPremisesConnectionId|String|A ID do cloudPcOnPremisesConnection. Para garantir que os computadores em nuvem tenham conectividade de rede e que eles ingressem no domínio, escolha uma conexão com uma rede virtual validada pelo serviço de Cloud PC.|
-|imageid|String|A ID da imagem do sistema operacional que você deseja provisionar em PCs em nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}.|
-|imageDisplayName|String|O nome de exibição para a imagem do sistema operacional que você está Provisionando.|
-|ImageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizada ou galeria) que você deseja provisionar em PCs em nuvem. Os valores possíveis são: `gallery` e `custom`.|
+|displayName|Cadeia de caracteres|O nome de exibição da política de provisionamento. |
+|description|Cadeia de caracteres|A descrição da política de provisionamento.|
+|onPremisesConnectionId|Cadeia de caracteres|A ID da cloudPcOnPremisesConnection. Para garantir que os computadores na nuvem tenham conectividade de rede e que in joinam no domínio, escolha uma conexão com uma rede virtual validada pelo serviço de computador na nuvem.|
+|imageId|Cadeia de caracteres|A ID da imagem do sistema operacional que você deseja provisionar em PCs na nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}.|
+|imageDisplayName|Cadeia de caracteres|O nome de exibição da imagem do sistema operacional que você está provisionando.|
+|imageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizada ou galeria) que você deseja provisionar em PCs de nuvem. Os valores possíveis são: `gallery` e `custom`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,30 +1,30 @@
 ---
-title: Excluir usuário
-description: Exclui um objeto username.
+title: Excluir userSource
+description: Exclui um objeto userSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 2796137b1c0d045e81b9b1f4a052881f3541f4bf
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 631d547aefec38258d69ccb48d325fc955e65a57
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657197"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873028"
 ---
-# <a name="delete-usersource"></a>Excluir usuário
+# <a name="delete-usersource"></a>Excluir userSource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [username](../resources/usersource.md) .
+[Exclua um objeto userSource.](../resources/usersource.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|

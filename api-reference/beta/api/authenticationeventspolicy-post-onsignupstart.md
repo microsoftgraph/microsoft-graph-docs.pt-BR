@@ -1,16 +1,16 @@
 ---
 title: Criar authenticationListener
-description: Criar um novo objeto authenticationListener para o evento onSignUpStart.
+description: Crie um novo objeto authenticationListener para o evento onSignUpStart.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a5d370832032c1f80fbab31ff739706e682732f5
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 098a8679f09c7f766b361146abddc0d01a5aa20e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720044"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872356"
 ---
 # <a name="create-authenticationlistener"></a>Criar authenticationListener
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto authenticationListener para o evento onSignUpStart.
+Crie um novo objeto authenticationListener para o evento onSignUpStart.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.ApplicationConfiguration|
+|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.ApplicationConfiguration|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.ApplicationConfiguration|
 
@@ -50,19 +50,19 @@ POST /identity/events/onSignupStart
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [authenticationListener](../resources/authenticationlistener.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto authenticationListener.](../resources/authenticationlistener.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [invokeUserFlowListener](../resources/invokeuserflowlistener.md) authenticationListener.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Prioridade|Int32|A prioridade do ouvinte. Determina a ordem de avaliação quando um evento tem vários ouvintes. A prioridade é avaliada de baixo para alto.|
-|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtro com base na origem da autenticação que é usada para determinar se o ouvinte é avaliado. No momento, isso está limitado a avaliações com base no aplicativo para o qual o usuário está se Autenticando.|
-|userflow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|O objeto [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) que será invocado quando essa ação for avaliada.|
+|sourceFilter|[authenticationSourceFilter](../resources/authenticationsourcefilter.md)|Filtrar com base na origem da autenticação usada para determinar se o ouvinte é avaliado. Atualmente, isso está limitado a avaliações baseadas no aplicativo ao usuário que está autenticando.|
+|userFlow|[b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)|O [objeto b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) que será invocado quando essa ação for avaliada.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `201 Created` [authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

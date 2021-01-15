@@ -1,30 +1,30 @@
 ---
-title: Criar responsáveis
-description: Criar um novo objeto de responsáveis.
+title: Criar custodiatário
+description: Criar um novo objeto custodiante.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: e5472f9c3ff80a1e1fb127ebddc566880e2056aa
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: e4883c75919535bc68d4f2559e920b467344a2a7
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659507"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873651"
 ---
-# <a name="create-custodian"></a>Criar responsáveis
+# <a name="create-custodian"></a>Criar custodiatário
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto de [responsáveis](../resources/custodian.md) . Depois que o objeto responsáveis for criado, você precisará criar o [usuário](../resources/usersource.md) do responsáveis para fazer referência à caixa de correio e ao site do onedrive for Business.
+Criar um novo [objeto custodiante.](../resources/custodian.md) Depois que o objeto custodiante for criado, você precisará criar o [recurso](../resources/usersource.md) de usuário do custodiante para fazer referência à caixa de correio e ao site do OneDrive for Business.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -50,18 +50,18 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [responsáveis](../resources/custodian.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto custodiante.](../resources/custodian.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar os [responsáveis](../resources/custodian.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o custodiatário](../resources/custodian.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|email|Cadeia de caracteres|Endereço SMTP principal do responsáveis. Obrigatório.|
-|applyHoldToSources|Boolean|Indica se uma retenção é aplicada às fontes dos responsáveis (como caixas de correio, sites ou equipes).|
+|email|Cadeia de caracteres|Endereço SMTP principal do custodiatário. Obrigatório.|
+|applyHoldToSources|Booliano|Indica se uma espera é aplicada às fontes do custodiante (como caixas de correio, sites ou Teams).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [responsáveis](../resources/custodian.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` objeto [custodiante](../resources/custodian.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

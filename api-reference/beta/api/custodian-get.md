@@ -1,30 +1,30 @@
 ---
-title: Obter os responsáveis
-description: Leia as propriedades e os relacionamentos de um objeto de responsáveis.
+title: Obter custodian
+description: Leia as propriedades e os relacionamentos de um objeto custodiante.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 494887a7905ac94de66b102269f9def367ab32ba
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 8295767eb6b7ea4f7a1825b9b75d8b85c0eb525b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659336"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872636"
 ---
-# <a name="get-custodian"></a>Obter os responsáveis
+# <a name="get-custodian"></a>Obter custodiatário
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e os relacionamentos de um objeto de [responsáveis](../resources/custodian.md) .
+Leia as propriedades e os relacionamentos de um [objeto custodiante.](../resources/custodian.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [responsáveis](../resources/custodian.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` objeto [custodiante](../resources/custodian.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

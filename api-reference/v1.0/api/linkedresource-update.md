@@ -1,28 +1,28 @@
 ---
 title: Atualizar linkedResource
-description: Atualiza as propriedades de um objeto linkedResource.
+description: Atualizar as propriedades de um objeto linkedResource.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0afbda988d1bdac20e6ff966a1ab51b31b075a62
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: b41e4d3948ccca6f58c1ab701367f4432b489551
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903398"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873805"
 ---
 # <a name="update-linkedresource"></a>Atualizar linkedResource
 Namespace: microsoft.graph
 
-Atualiza as propriedades de um objeto [linkedResource](../resources/linkedresource.md) .
+Atualizar as propriedades de um [objeto linkedResource.](../resources/linkedresource.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
 |Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
@@ -44,17 +44,17 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [linkedResource](../resources/linkedresource.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto linkedResource.](../resources/linkedresource.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [linkedResource](../resources/linkedresource.md).
+A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o linkedResource](../resources/linkedresource.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID gerada pelo servidor para a entidade vinculada herdada da [entidade](../resources/entity.md)|
+|id|Cadeia de caracteres|ID gerada pelo servidor para a entidade vinculada Herdada da [entidade](../resources/entity.md)|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [linkedResource](../resources/linkedresource.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [linkedResource](../resources/linkedresource.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

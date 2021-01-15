@@ -1,29 +1,29 @@
 ---
-title: 'Chat: sendActivityNotification'
-description: Enviar uma notificação de feed de atividades no escopo de um chat.
+title: 'chat: sendActivityNotification'
+description: Envie uma notificação de feed de atividades no escopo de um chat.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 76598572ebca1421770de5a298f46fdedc30a0c9
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7147ad0019b9c066f19f30b9829e80e1a75570ca
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49521996"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872856"
 ---
-# <a name="chat-sendactivitynotification"></a>Chat: sendActivityNotification
+# <a name="chat-sendactivitynotification"></a>chat: sendActivityNotification
 Namespace: microsoft.graph
 
-Enviar uma notificação de feed de atividades no escopo de um chat. Para obter mais detalhes sobre o envio de notificações e os requisitos para fazer isso, consulte [enviando notificações de atividade do teams](/graph/teams-send-activityfeednotifications).
+Envie uma notificação de feed de atividades no escopo de um chat. Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, confira [o envio de notificações de atividades do Teams.](/graph/teams-send-activityfeednotifications)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|TeamsActivity.Send|
-|Delegada (conta Microsoft pessoal)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|TeamsActivity.Send|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|TeamsActivity.Send|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,19 +49,19 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falamos.|
-|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no [manifesto do aplicativo Teams](/microsoftteams/platform/overview).|
-|chainid|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` nas solicitações subsequentes para substituir a notificação anterior.|
-|previewText|[itemBody](../resources/itembody.md)|Visualizar o texto da notificação. O Microsoft Teams só mostrará os primeiros 150 caracteres.|
-|TemplateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidas na entrada de feed de atividade correspondente ao `activityType` [manifesto do aplicativo Teams](/microsoftteams/platform/overview).|
-|destinatário|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Destinatário da notificação. Só há suporte para usuários do Azure AD. Confira também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Tópico da notificação. Especifica o recurso que está sendo falado.|
+|activityType|Cadeia de caracteres|Tipo de atividade. Isso deve ser declarado no manifesto do [aplicativo Teams.](/microsoftteams/platform/overview)|
+|chainId|Int64|Opcional. Usado para substituir uma notificação anterior. Use o mesmo `chainId` em solicitações subsequentes para substituir a notificação anterior.|
+|previewText|[itemBody](../resources/itembody.md)|Texto de visualização para a notificação. O Microsoft Teams mostrará apenas os primeiros 150 caracteres.|
+|templateParameters|Coleção [keyValuePair](../resources/keyvaluepair.md)|Valores para variáveis de modelo definidos na entrada do feed de atividades correspondente no `activityType` manifesto do aplicativo do [Teams.](/microsoftteams/platform/overview)|
+|destinatário|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Destinatário da notificação. Somente os usuários do Azure AD têm suporte. Consulte também [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md). |
 
-Os recursos a seguir têm suporte ao definir o `source` valor da propriedade **topic** como `entityURL` :
+Os seguintes recursos são suportados ao definir `source` o valor da propriedade **de** tópico `entityURL` como:
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
 
-> **Observação:** A URL da entidade deve ser o mesmo ou um recurso filho do chat na URL. Além disso, o [aplicativo Teams](/microsoftteams/platform/overview) deve ser instalado no chat.
+> **Observação:** A URL da entidade deve ser igual ou um recurso filho do chat na URL. Além disso, o [aplicativo Teams](/microsoftteams/platform/overview) deve ser instalado no chat.
 
 ## <a name="response"></a>Resposta
 
@@ -69,9 +69,9 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>Exemplo 1: notificar um usuário sobre uma tarefa criada em um chat
+### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>Exemplo 1: Notificar um usuário sobre uma tarefa criada em um chat
 
-Este exemplo mostra como você pode enviar uma notificação de feed de atividades para uma nova tarefa criada em um chat. Para obter mais detalhes, consulte [enviando notificações de atividade do Microsoft Teams](/graph/teams-send-activityfeednotifications).
+Este exemplo mostra como você pode enviar uma notificação de feed de atividades para uma nova tarefa criada em um chat. Para obter mais detalhes, confira [o envio de notificações de atividades do Teams.](/graph/teams-send-activityfeednotifications)
 
 #### <a name="request"></a>Solicitação
 
@@ -135,9 +135,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-a-approval-needed-in-a-chat-message"></a>Exemplo 2: notificar um usuário sobre uma aprovação necessária em uma mensagem de chat
+### <a name="example-2-notify-a-user-about-a-approval-needed-in-a-chat-message"></a>Exemplo 2: Notificar um usuário sobre uma aprovação necessária em uma mensagem de chat
 
-Semelhante ao exemplo anterior, este exemplo usa `entityUrl` o `topic` . No entanto, nesse caso, ele é vinculado a uma mensagem no chat. A mensagem pode conter um cartão com o botão de aprovação nele.
+Semelhante ao exemplo anterior, este exemplo usa `entityUrl` para `topic` o . No entanto, nesse caso, ele é links para uma mensagem no chat. A mensagem pode conter um cartão com o botão de aprovação.
 
 #### <a name="request"></a>Solicitação
 <!-- {
@@ -181,9 +181,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-in-relation-to-a-chat"></a>Exemplo 3: notificar um usuário sobre um evento em relação a um chat
+### <a name="example-3-notify-a-user-about-an-event-in-relation-to-a-chat"></a>Exemplo 3: Notificar um usuário sobre um evento em relação a um chat
 
-Conforme mostrado nos exemplos anteriores, você pode vincular a diferentes aspectos do chat. No entanto, se você deseja vincular a um aspecto que não faz parte do chat ou não é representado pelo Microsoft Graph, você pode definir a fonte do `topic` para `text` e passar um valor personalizado para ele. Além disso, `webUrl` é necessário ao definir `topic` source como `text` .
+Conforme mostrado nos exemplos anteriores, você pode vincular a diferentes aspectos do chat. No entanto, se você deseja vincular a um aspecto que não faz parte do chat ou não é representado pelo Microsoft Graph, você pode definir a origem do para e passar um valor personalizado `topic` `text` para ele. Além disso, `webUrl` é necessário ao definir a fonte como `topic` `text` .
 
 #### <a name="request"></a>Solicitação
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessPackageCatalog
-description: Atualiza as propriedades de um objeto accessPackageCatalog.
+description: Atualizar as propriedades de um objeto accessPackageCatalog.
 author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f8f57f1e33de6eba16615342ba909c5da49faecb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c7bb4b1cadfd3991f19ff02b5ad596f5a8ff1491
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951769"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872160"
 ---
 # <a name="update-accesspackagecatalog"></a>Atualizar accessPackageCatalog
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize um objeto [accessPackageCatalog](../resources/accesspackagecatalog.md) existente para alterar uma ou mais de suas propriedades, como o nome para exibição ou a descrição.
+Atualize um objeto [accessPackageCatalog existente](../resources/accesspackagecatalog.md) para alterar uma ou mais de suas propriedades, como o nome de exibição ou a descrição.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -44,14 +44,14 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [accessPackageCatalog](../resources/accesspackagecatalog.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto accessPackageCatalog.](../resources/accesspackagecatalog.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [accessPackageCatalog](../resources/accesspackagecatalog.md).
+A tabela a seguir mostra as propriedades que são necessárias ao atualizar [accessPackageCatalog](../resources/accesspackagecatalog.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome do catálogo do pacote de acesso.|
-|description|String|A descrição do catálogo de pacotes do Access.|
+|displayName|Cadeia de caracteres|O nome do catálogo de pacotes de acesso.|
+|description|Cadeia de caracteres|A descrição do catálogo de pacotes de acesso.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.

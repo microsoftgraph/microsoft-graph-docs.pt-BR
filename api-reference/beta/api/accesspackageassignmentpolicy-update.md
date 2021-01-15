@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessPackageAssignmentPolicy
-description: Atualiza as propriedades de um objeto accessPackageAssignmentPolicy.
+description: Atualizar as propriedades de um objeto accessPackageAssignmentPolicy.
 author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12819c9f79e243289ddbbfce380be1687694dc79
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 2a82476a61fbc775e894f5c5baf0444468041ab5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752795"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872111"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Atualizar accessPackageAssignmentPolicy
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize um objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) existente para alterar uma ou mais de suas propriedades, como o nome para exibição ou a descrição.
+Atualize um objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) existente para alterar uma ou mais de suas propriedades, como o nome de exibição ou a descrição.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference.md).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -44,31 +44,31 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao atualizar um [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+A tabela a seguir mostra as propriedades que são necessárias ao atualizar [um accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da política.|
-|description|String|A descrição da política.|
-|exextend|Booliano|Indica se um usuário pode estender a duração da atribuição de pacote de acesso após a aprovação.|
-|durationInDays|Int32|O número de dias em que as atribuições dessa política duram até que tenham expirado.|
-|expirationDateTime|DateTimeOffset|A data de validade das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Quem pode solicitar esse pacote de acesso desta política.|
-|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Quem deve aprovar solicitações de pacote do Access nessa política.|
-|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Quem deve revisar e com que frequência as atribuições para o pacote de acesso desta política. Essa propriedade será nula se as revisões não forem necessárias.|
+|displayName|Cadeia de caracteres|O nome de exibição da política.|
+|description|Cadeia de caracteres|A descrição da política.|
+|canExtend|Booliano|Indica se um usuário pode estender a duração da atribuição do pacote de acesso após a aprovação.|
+|durationInDays|Int32|O número de dias em que as atribuições dessa política duram até expirar.|
+|expirationDateTime|DateTimeOffset|A data de expiração das atribuições criadas nesta política. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Quem pode solicitar esse pacote de acesso a partir dessa política.|
+|requestApprovalSettings|[approvalSettings](../resources/approvalsettings.md)|Quem deve aprovar solicitações para o pacote de acesso nesta política.|
+|accessReviewSettings|[assignmentReviewSettings](../resources/assignmentreviewsettings.md)|Quem deve revisar e com que frequência as atribuições para o pacote de acesso desta política. Essa propriedade será nula se as análises não são necessárias.|
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) atualizado no corpo da resposta.
 
 
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
-Nesta atualização de política, uma das opções para a pergunta de múltipla escolha foi removida. Os solicitantes futuros não terão mais a opção removida disponível.
+Nesta atualização de política, uma das opções para a pergunta de múltipla escolha foi removida. Os futuros solicitadores não terão mais a opção removida disponível para eles.
 
 <!-- {
   "blockType": "request",

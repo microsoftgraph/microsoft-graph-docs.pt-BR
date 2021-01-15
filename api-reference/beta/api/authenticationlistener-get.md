@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 16b31fd16d8df5e179c38a26efc47876d809d13f
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: c3e6f07ac59e143ab7e9723c5a5b81a4c8489e54
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720042"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872419"
 ---
 # <a name="get-authenticationlistener"></a>Obter authenticationListener
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha o [authenticationListener](../resources/authenticationlistener.md) especificado definido para o evento onSignupStart no pipeline de autenticação.
+Obter o [authenticationListener especificado definido](../resources/authenticationlistener.md) para o evento onSignupStart no pipeline de autenticação.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Policy. ReadWrite. ApplicationConfiguration, Policy. Read. All|
+|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Policy. ReadWrite. ApplicationConfiguration, Policy. Read. All|
+|Aplicativo|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,7 +43,7 @@ GET /identity/events/onSignupStart/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$expand` parâmetro de consulta OData para expandir os detalhes de um invokeUserFlowListener. Veja a seguir um exemplo. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte `$expand` ao parâmetro de consulta OData para expandir os detalhes de um invokeUserFlowListener. Veja abaixo um exemplo. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,11 +57,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-an-authenticationlistener-by-id"></a>Exemplo 1: obter um authenticationListener por ID
+### <a name="example-1-get-an-authenticationlistener-by-id"></a>Exemplo 1: Obter um authenticationListener por id
 
 #### <a name="request"></a>Solicitação
 
@@ -106,9 +106,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-expand-invokeuserflowlistener-for-a-specific-authenticationlistener"></a>Exemplo 2: expanda invokeUserFlowListener para um authenticationListener específico
+### <a name="example-2-expand-invokeuserflowlistener-for-a-specific-authenticationlistener"></a>Exemplo 2: Expandir invokeUserFlowListener para uma authenticationListener específica
 
-O exemplo a seguir obtém o ouvinte por ID para o evento onSignupStart e expande o fluxo do usuário que é invocado.
+O exemplo a seguir obtém o ouvinte pela id do evento onSignupStart e expande o fluxo de usuário que é invocado.
 
 #### <a name="request"></a>Solicitação
 

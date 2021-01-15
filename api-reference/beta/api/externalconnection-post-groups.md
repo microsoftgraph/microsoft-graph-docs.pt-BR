@@ -1,32 +1,32 @@
 ---
-title: Criar um
-description: Criar um novo objeto de objeto externo.
+title: Criar externalGroup
+description: Criar um novo objeto externalGroup.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d3ea82fb61c68e8a75a9b55d1f7d0583cc5639f7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ca8968daf3abb98bba66a4146fc3b41c9d54441
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965611"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873042"
 ---
-# <a name="create-externalgroup"></a>Criar um
+# <a name="create-externalgroup"></a>Criar externalGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto de objeto [externo](../resources/externalgroup.md) .
+Criar um novo [objeto externalGroup.](../resources/externalgroup.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (de privilégios máximos a mínimos) |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte                               |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | ExternalItem.ReadWrite.All                  |
 
@@ -50,19 +50,19 @@ POST /external/connections/{connectionId}/groups
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto de objeto [externo](../resources/externalgroup.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto externalGroup.](../resources/externalgroup.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [myexternalsource](../resources/externalgroup.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [externalGroup](../resources/externalgroup.md).
 
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | A identificação exclusiva do grupo externo em uma conexão. Ele deve ser alfanumérico e até 128 caracteres de comprimento. |
-| displayName | String | O nome amigável do grupo externo. Opcional.                                                                      |
-| description | String | A descrição do grupo externo. Opcional.                                                                         |
+| id          | Cadeia de caracteres | A ID exclusiva do grupo externo dentro de uma conexão. Ele deve ser alfanumérico e ter até 128 caracteres. |
+| displayName | Cadeia de caracteres | O nome amigável do grupo externo. Opcional.                                                                      |
+| description | Cadeia de caracteres | A descrição do grupo externo. Opcional.                                                                         |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `201 Created` código de resposta e [externalGroup](../resources/externalgroup.md) um objeto de myFormat no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [externalGroup](../resources/externalgroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

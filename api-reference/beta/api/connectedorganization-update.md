@@ -1,16 +1,16 @@
 ---
 title: Atualizar um objeto connectedOrganization
-description: Atualizar um objeto connectedOrganization.
+description: Atualize um objeto connectedOrganization.
 author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f8e45830d9f8c970b97d142029505cd61185b36
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 980fade00646062a6afe740e26cc5a9cdf976512
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957558"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872671"
 ---
 # <a name="update-connectedorganization"></a>Atualizar connectedOrganization
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize um objeto [connectedOrganization](../resources/connectedorganization.md) para alterar uma ou mais de suas propriedades.
+Atualize [um objeto connectedOrganization](../resources/connectedorganization.md) para alterar uma ou mais de suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -46,19 +46,19 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [connectedOrganization](../resources/connectedorganization.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto connectedOrganization](../resources/connectedorganization.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao atualizar o [connectedOrganization](../resources/connectedorganization.md).
+A tabela a seguir mostra as propriedades que são necessárias ao atualizar [connectedOrganization](../resources/connectedorganization.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-| displayName  |String | O nome da organização conectada.  |
-| description  |String | A descrição da organização conectada. |
-| state        |connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com tipo de escopo solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
+| displayName  |Cadeia de caracteres | O nome da organização conectada.  |
+| description  |Cadeia de caracteres | A descrição da organização conectada. |
+| state        |connectedOrganizationState|O estado de uma organização conectada define se as políticas de atribuição com o tipo de escopo do solicitante `AllConfiguredConnectedOrganizationSubjects` são aplicáveis ou não. Os valores possíveis são: `configured` e `proposed`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `204 Accepted` código de resposta e um objeto [connectedOrganization](../resources/connectedorganization.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `204 Accepted` [objeto connectedOrganization](../resources/connectedorganization.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

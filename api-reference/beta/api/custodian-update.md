@@ -1,30 +1,30 @@
 ---
-title: Atualizar responsáveis
-description: Atualizar as propriedades de um objeto de responsáveis.
+title: Atualizar custodian
+description: Atualizar as propriedades de um objeto custodiante.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 605438ac3ba9883ca159fe97015701282f39e347
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: bae5be0c8712735f0a7c369f3ec79146a1608acf
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658901"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872489"
 ---
-# <a name="update-custodian"></a>Atualizar responsáveis
+# <a name="update-custodian"></a>Atualizar custodian
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades de um objeto de [responsáveis](../resources/custodian.md) .
+Atualizar as propriedades de [um objeto custodiante.](../resources/custodian.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -50,17 +50,17 @@ PATCH /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [responsáveis](../resources/custodian.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto custodiante.](../resources/custodian.md)
 
-A tabela a seguir lista as propriedades de um objeto [responsáveis](../resources/custodian.md) que podem ser modificados.
+A tabela a seguir lista as propriedades de [um objeto custodiante](../resources/custodian.md) que pode ser modificado.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applyHoldToSources|Boolean|Identifica se as fontes dos responsáveis foram colocadas em espera durante a criação. Para obter detalhes, consulte [colocar os responsáveis em espera](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold).|
+|applyHoldToSources|Booliano|Identifica se as fontes de um custodiador foram colocadas em espera durante a criação. Para obter detalhes, [consulte Colocar custodiantes em espera.](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold)|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [responsáveis](../resources/custodian.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [custodiante](../resources/custodian.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

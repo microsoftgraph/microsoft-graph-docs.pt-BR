@@ -1,27 +1,27 @@
 ---
-title: 'ediscoveryCase: reabrir'
-description: Reabra uma ocorrência de descoberta eletrônica que foi fechada.
+title: 'ediscoveryCase: reopen'
+description: Reabra um caso de Descoberta e Que foi fechado.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 256dba8a09e2be3be20aadd4e2c8e9927f2b20df
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: f8eb4265fb87668023038ddaa50967cad22c2a91
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657055"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872293"
 ---
-# <a name="ediscoverycase-reopen"></a>ediscoveryCase: reabrir
+# <a name="ediscoverycase-reopen"></a>ediscoveryCase: reopen
 
 Namespace: microsoft.graph
 
-Reabra uma ocorrência de descoberta eletrônica que foi fechada. Para obter detalhes, consulte [reabrir uma ocorrência fechada](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case).
+Reabra um caso de Descoberta e Que foi fechado. Para obter detalhes, consulte [Reabrir um caso fechado.](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|

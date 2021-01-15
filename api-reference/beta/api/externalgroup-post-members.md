@@ -5,12 +5,12 @@ author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b6c1d278fed4d32ac61afb7989c27d16e3fb275c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7029a0016099dc8ecdbd3ce86983c98b62dc61b1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954619"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873175"
 ---
 # <a name="create-externalgroupmember"></a>Criar externalGroupMember
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [externalGroupMember](../resources/externalgroupmember.md) .
+Criar um novo [objeto externalGroupMember.](../resources/externalgroupmember.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (de privilégios máximos a mínimos) |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte                               |
+| Delegada (conta corporativa ou de estudante)     | Sem suporte                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | ExternalItem.ReadWrite.All                  |
 
@@ -50,23 +50,23 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [externalGroupMember](../resources/externalgroupmember.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto externalGroupMember.](../resources/externalgroupmember.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [externalGroupMember](../resources/externalgroupmember.md).
 
 | Propriedade       | Tipo                    | Descrição                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | O exclusivo `id` do membro. Seria o objectId em caso de usuários ou grupos do Azure Active Directory e o externalGroupId no caso de grupos externos.                                    |
-| tipo           | externalGroupMemberType | O tipo de membro adicionado ao grupo externo. Os valores possíveis são: `user` ou `group` quando IdentityName é `azureActiveDirectory` e apenas `group` quando IdentityName é `external` . |
-| identificação da identidade | identitySourceType      | A origem de identidade à qual o membro pertence. Os valores possíveis são: `azureActiveDirectory` e `external`.                                                                                         |
+| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria o objectId no caso de usuários ou grupos do Azure Active Directory e externalGroupId no caso de grupos externos.                                    |
+| type           | externalGroupMemberType | O tipo de membro adicionado ao grupo externo. Os valores `user` possíveis são: `group` ou quando identitySource é `azureActiveDirectory` e apenas quando `group` identitySource é `external` . |
+| identitySource | identitySourceType      | A fonte de identidade à que o membro pertence. Os valores possíveis são: `azureActiveDirectory` e `external`.                                                                                         |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [externalGroupMember](../resources/externalgroupmember.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto externalGroupMember](../resources/externalgroupmember.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: adicionar um usuário do Azure Active Directory como membro
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: Adicionar um usuário do Azure Active Directory como membro
 
 ### <a name="request"></a>Solicitação
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: adicionar um grupo do Azure Active Directory como membro
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: Adicionar um grupo do Azure Active Directory como membro
 
 ### <a name="request"></a>Solicitação
 
@@ -175,7 +175,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-add-another-external-group-as-a-member"></a>Exemplo 3: adicionar outro grupo externo como membro
+### <a name="example-3-add-another-external-group-as-a-member"></a>Exemplo 3: Adicionar outro grupo externo como membro
 
 ### <a name="request"></a>Solicitação
 

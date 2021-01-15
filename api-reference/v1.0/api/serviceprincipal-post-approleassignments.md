@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: baa3de15cd3d3cfe4c1c1377caff7925aa5a9a5b
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 687f7f039d024ed43d2c1519c8f714dacbf68422
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459065"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873686"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>Conceder um appRoleAssignment a uma entidade de serviço
 
@@ -105,7 +105,7 @@ Content-Length: 110
 ---
 
 
-Nesse exemplo, `{id}` e `{principalId-value}` seriam os `id` da entidade de serviço de cliente atribuída e `{resourceId}` seria o `id` da entidade de serviço de recurso (a API).
+Nesse exemplo, a `{id}` e o `{principalId-value}` seriam as `id` da entidade de serviço de cliente atribuída e o `{resourceId}` seria a `id` da entidade de serviço de recurso (a API).
 
 ### <a name="response"></a>Resposta
 
@@ -120,7 +120,7 @@ Veja a seguir um exemplo da resposta.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 253
 

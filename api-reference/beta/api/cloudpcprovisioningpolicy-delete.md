@@ -1,16 +1,16 @@
 ---
 title: Excluir cloudPcProvisioningPolicy
-description: Excluir um objeto cloudPcProvisioningPolicy.
+description: Exclua um objeto cloudPcProvisioningPolicy.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 18b98a3d7afab82e554b35a5dd018608407689a2
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: b90a8005f7d2f4e48e07cce07ba3ba525c6fd0f2
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563440"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872734"
 ---
 # <a name="delete-cloudpcprovisioningpolicy"></a>Excluir cloudPcProvisioningPolicy
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) . Você não poderá excluir uma política que estiver em uso.
+[Exclua um objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md) Você não poderá excluir uma política que estiver em uso.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

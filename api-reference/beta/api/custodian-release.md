@@ -1,30 +1,30 @@
 ---
-title: 'responsáveis: lançamento'
-description: Liberar um dos casos.
+title: 'custodian: release'
+description: Libere um custodiante de uma ocorrência.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: ca5e2198280aae067f6da92ae03eb755a3bfa4f8
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 3b3fc0633672785e6a1f8aacc350fd9a8d34d4d7
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658948"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872496"
 ---
-# <a name="custodian-release"></a>responsáveis: lançamento
+# <a name="custodian-release"></a>custodian: release
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Liberar um dos casos. Para obter detalhes, consulte [liberar um dos responsáveis por um caso](/microsoft-365/compliance/manage-new-custodians#release-a-custodian-from-a-case).
+Libere um custodiante de uma ocorrência. Para obter detalhes, [consulte Liberar um custodiante de uma ocorrência.](/microsoft-365/compliance/manage-new-custodians#release-a-custodian-from-a-case)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|

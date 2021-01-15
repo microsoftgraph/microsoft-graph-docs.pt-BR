@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a99b776eda23bd1ebaef63bc3f190cb66bd794a7
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 5dd389ddba5e3f081b850e2303833b47b832e7d7
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601108"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872916"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>callRecord: getDirectRoutingCalls
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um log de chamadas de roteamento direto como uma coleção de entradas [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) .
+Obter um log de chamadas de roteamento direto como uma coleção de entradas [directRoutingLogRow.](../resources/callrecords-directroutinglogrow.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
@@ -55,13 +55,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|Início do intervalo de tempo para consulta. UTC, inclusive.<br/>O intervalo de tempo é baseado na hora de início da chamada.|
-|ToDateTime|DateTimeOffset|Término do intervalo de tempo para consulta. UTC, inclusive.|
+|toDateTime|DateTimeOffset|Fim do intervalo de tempo a ser consultado. UTC, inclusive.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção de entradas [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) no corpo da resposta.
+Se bem-sucedida, esta função retorna um código de resposta e uma coleção de entradas `200 OK` [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) no corpo da resposta.
   
-Se houver mais de 1000 entradas no intervalo de datas, o corpo também incluirá um `@odata.NextLink` com uma URL para consultar a próxima página de entradas de chamada. A última página no intervalo de datas não tem `@odata.NextLink` . Para obter mais informações, consulte [paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+Se houver mais de 1.000 entradas no intervalo de datas, o corpo também incluirá um com uma URL para consultar a próxima página de entradas `@odata.NextLink` de chamada. A última página no intervalo de datas não tem `@odata.NextLink` . Para obter mais informações, consulte [paging dados do Microsoft Graph em seu aplicativo.](/graph/paging)
 
 ## <a name="examples"></a>Exemplos
 
@@ -107,8 +107,8 @@ HTTP/1.1 200 OK
             "duration": 5,
             "callType": "ByotIn",
             "successfulCall": true,
-            "callerNumber": "+12345678***",
-            "calleeNumber": "+01234567***",
+            "callerNumber": "+12345678**_",
+            "calleeNumber": "+01234567_*_",
             "mediaPathLocation": "USWE",
             "signalingLocation": "EUNO",
             "finalSipCode": 0,
@@ -123,6 +123,6 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>Confira também
 
-* [Relatório de uso do roteamento direto do Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) no centro de administração do Microsoft Teams
-* [Painel de integridade para roteamento direto](/MicrosoftTeams/direct-routing-health-dashboard) no centro de administração do Microsoft Teams
+_ [Relatório de uso de roteamento direto do Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) no centro de administração do Microsoft Teams
+* [Painel de Saúde para roteamento direto](/MicrosoftTeams/direct-routing-health-dashboard) no centro de administração do Microsoft Teams
 * [Relatório de chamada PSTN no Microsoft Graph](callrecords-callrecord-getpstncalls.md)

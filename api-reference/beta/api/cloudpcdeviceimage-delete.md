@@ -1,16 +1,16 @@
 ---
 title: Excluir cloudPcDeviceImage
-description: Excluir um objeto cloudPcDeviceImage.
+description: Exclua um objeto cloudPcDeviceImage.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a65350162f7810da9c5d20b5f1982d75bc74ef4f
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 51d00efc989028a1c369e211518ba24f8b9db2d5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563328"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872867"
 ---
 # <a name="delete-cloudpcdeviceimage"></a>Excluir cloudPcDeviceImage
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) .
+[Exclua um objeto cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

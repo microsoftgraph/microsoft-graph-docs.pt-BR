@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b0c0eaecb59140450d365c0eee931156b8b99e16
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: fd85a51901d8ed7c09b6b132a7604147e2df1d16
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844701"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873154"
 ---
 # <a name="get-teamworkbot"></a>Obter teamworkBot
 
@@ -20,12 +20,12 @@ Namespace: microsoft.graph
 
 Obter o bot associado a uma definição [específica](../resources/teamsappdefinition.md) do  [TeamsApp](../resources/teamsapp.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 |Delegado (conta pessoal da Microsoft)| Sem suporte. |
 |Aplicativo| Sem suporte.|
 
@@ -40,7 +40,7 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameter) para ajudar a personalizar a resposta.
+Esse método dá suporte aos parâmetros de consulta `$select` [OData](/graph/query-parameter) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|

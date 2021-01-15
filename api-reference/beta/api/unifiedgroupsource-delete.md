@@ -1,16 +1,16 @@
 ---
 title: Excluir unifiedGroupSource
-description: Excluir um objeto unifiedGroupSource.
+description: Exclua um objeto unifiedGroupSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 09afb8ed8e91787df7647fb366de55f96a481a83
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 1e5145d3e067c92ce5faf8f9ddd6b7012bd19220
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657141"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872454"
 ---
 # <a name="delete-unifiedgroupsource"></a>Excluir unifiedGroupSource
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [unifiedGroupSource](../resources/unifiedgroupsource.md) .
+[Exclua um objeto unifiedGroupSource.](../resources/unifiedgroupsource.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|

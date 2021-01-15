@@ -1,16 +1,16 @@
 ---
 title: Excluir cloudPcOnPremisesConnection
-description: Excluir um objeto cloudPcOnPremisesConnection.
+description: Exclua um objeto cloudPcOnPremisesConnection.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 55e80278d76b36c7a0b17528878d4673a1626b5c
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 01f9b5a7e4091492be7aa8eae0f0d3f8354169e6
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563393"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872762"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>Excluir cloudPcOnPremisesConnection
 
@@ -18,22 +18,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) específico.
+[Exclua um objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) específico.
 
-Quando você exclui uma conexão, as permissões para o serviço são removidas dos recursos do Azure especificados.
+Quando você exclui uma conexão, as permissões para o serviço são removidas dos recursos especificados do Azure.
 
-Você não pode excluir uma conexão local depois que ela passa verificação de integridade, que é indicada pela `healthCheckStatus` propriedade.
+Você não pode excluir uma conexão local depois que ela passar na verificação de saúde, que é indicada pela `healthCheckStatus` propriedade.
 
-Não é possível excluir uma conexão quando ela está em uso, conforme indicado pela `inUse` propriedade.
+Você também não pode excluir uma conexão quando ela está em uso, conforme indicado pela `inUse` propriedade.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC. ReadWrite. All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

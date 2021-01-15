@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f5582322e274ced22db02e777364835611a2bdb0
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: 6aa3c85c25373ecee98894ce0704b35a6de25cdb
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572125"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872909"
 ---
 # <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o log de chamadas PSTN como uma coleção de entradas [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) .
+Obter log de chamadas PSTN como uma coleção de entradas [pstnCallLogRow.](../resources/callrecords-pstncalllogrow.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | CallRecords.Read.All |
 
@@ -49,10 +49,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|Início do intervalo de tempo para consulta. UTC, inclusive.<br/>O intervalo de tempo é baseado na hora de início da chamada.|
-|ToDateTime|DateTimeOffset|Término do intervalo de tempo para consulta. UTC, inclusive.|
+|toDateTime|DateTimeOffset|Fim do intervalo de tempo a ser consultado. UTC, inclusive.|
 
 > [!IMPORTANT]
-> Os valores **fromDateTime** e **ToDateTime** não podem ser mais de um intervalo de datas de 90 dias.
+> Os **valores fromDateTime** **e toDateTime** não podem ser maiores do que um intervalo de datas de 90 dias.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -62,9 +62,9 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma coleção de entradas [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) no corpo da resposta.
+Se tiver êxito, esta função retornará um código de resposta e uma coleção de entradas `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) no corpo da resposta.
   
-Se houver mais de 1000 entradas no intervalo de datas, o corpo também incluirá um `@odata.NextLink` com uma URL para consultar a próxima página de entradas de chamada. A última página no intervalo de datas não tem `@odata.NextLink` . Para obter mais informações, consulte [paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+Se houver mais de 1.000 entradas no intervalo de datas, o corpo também incluirá um com uma URL para consultar a próxima página de entradas `@odata.NextLink` de chamada. A última página no intervalo de datas não tem `@odata.NextLink` . Para obter mais informações, consulte [paging dados do Microsoft Graph em seu aplicativo.](/graph/paging)
 
 ## <a name="examples"></a>Exemplos
 
@@ -125,5 +125,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>Confira também
 
-* [Relatório de uso do Microsoft Teams PSTN](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+* [Relatório de uso de PSTN do Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 * [Relatório de roteamento direto no Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)

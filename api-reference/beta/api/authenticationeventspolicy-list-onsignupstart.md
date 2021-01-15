@@ -1,16 +1,16 @@
 ---
 title: Listar ouvintes onSignUpStart
-description: Obtenha a coleção de recursos authenticationListener com suporte pelo evento onSignupStart.
+description: Obter a coleção de recursos authenticationListener suportados pelo evento onSignupStart.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d838d2a10049fa014638af0eb4a49fcbf17e3f6
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 346db0f1085190252b2bb8e48dcfcb8adfc23f61
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720055"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872363"
 ---
 # <a name="list-onsignupstart-listeners"></a>Listar ouvintes onSignUpStart
 
@@ -18,19 +18,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a coleção de recursos authenticationListener com suporte pelo evento onSignupStart. O evento onSignUpStart oferece suporte ao tipo [invokeUserFlowListener](../resources/invokeuserflowlistener.md) .
+Obter a coleção de recursos authenticationListener suportados pelo evento onSignupStart. O evento onSignUpStart dá suporte ao [tipo invokeUserFlowListener.](../resources/invokeuserflowlistener.md)
 
-Quando um [invokeUserFlowListener](../resources/invokeuserflowlistener.md) é atribuído a um evento onSignUpStart, um aplicativo é associado a um fluxo de usuário, permitindo que um processo de [inscrição de autoatendimento](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) nele. Quando o evento de autenticação para invocar um fluxo de usuário é criado, os usuários que acessam esse aplicativo poderão iniciar um fluxo de inscrição que Provisione uma conta de convidado.
+Quando um [invokeUserFlowListener](../resources/invokeuserflowlistener.md) é atribuído [a](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) um evento onSignUpStart, um aplicativo é associado a um fluxo de usuário, habilitando um processo de inscrição de autoatendente nele. Depois que o evento de autenticação para invocar um fluxo de usuário é criado, os usuários que vão para esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Policy. ReadWrite. ApplicationConfiguration, Policy. Read. All|
+|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Policy. ReadWrite. ApplicationConfiguration, Policy. Read. All|
+|Aplicativo|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,7 +45,7 @@ GET /identity/events/onSignupStart
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$expand` parâmetro de consulta OData para expandir os detalhes de um invokeUserFlowListener. Veja a seguir um exemplo. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte `$expand` ao parâmetro de consulta OData para expandir os detalhes de um invokeUserFlowListener. Veja abaixo um exemplo. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,11 +59,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos authenticationListener](../resources/authenticationlistener.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-authenticationlisteners-for-the-onsignupstart-event"></a>Exemplo 1: list authenticationListeners para o evento onSignUpStart
+### <a name="example-1-list-authenticationlisteners-for-the-onsignupstart-event"></a>Exemplo 1: Listar authenticationListeners para o evento onSignUpStart
 
 #### <a name="request"></a>Solicitação
 
@@ -122,9 +122,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-expand-invokeuserflowlisteners-in-authenticationlisteners-for-the-onsignupstart-event"></a>Exemplo 2: expanda invokeUserFlowListeners no authenticationListeners para o evento onSignUpStart
+### <a name="example-2-expand-invokeuserflowlisteners-in-authenticationlisteners-for-the-onsignupstart-event"></a>Exemplo 2: Expandir invokeUserFlowListeners em authenticationListeners para o evento onSignUpStart
 
-O exemplo a seguir lista os ouvintes definidos para o evento onSignupStart e para cada ouvinte, expande o fluxo do usuário invocado.
+O exemplo a seguir lista os ouvintes definidos para o evento onSignupStart e, para cada ouvinte, expande o fluxo do usuário invocado.
 
 #### <a name="request"></a>Solicitação
 

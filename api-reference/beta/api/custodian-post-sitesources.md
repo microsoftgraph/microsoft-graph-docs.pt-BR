@@ -1,30 +1,30 @@
 ---
-title: Criar site local
-description: Criar um novo objeto sitery.
+title: Criar siteSource
+description: Criar um novo objeto siteSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 0196fac3cf9b44915aa8f979072b2daadf6213f9
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 8502084d1b4519c74042788e02fdf3636540535e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659066"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872559"
 ---
-# <a name="create-sitesource"></a>Criar site local
+# <a name="create-sitesource"></a>Criar siteSource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [sitery](../resources/sitesource.md) .
+Criar um novo [objeto siteSource.](../resources/sitesource.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -50,17 +50,17 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/si
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [sitery](../resources/sitesource.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto siteSource.](../resources/sitesource.md)
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [site](../resources/sitesource.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [siteSource](../resources/sitesource.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|site@odata. bind|String|ID do site, que você pode obter do recurso de [site](../resources/site.md) usando o método [obter um recurso de site por caminho](../api/site-getbypath.md) . O uso é {nome_do_host}:/{Relative-Path}. Para a URL do site `https://contoso.sharepoint.com/sites/HumanResources` , a solicitação do Microsoft Graph seria `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` . O ID é o primeiro GUID listado no campo ID.|
+|site@odata.bind|Cadeia de caracteres|ID do site, que você pode obter do recurso [de site](../resources/site.md) usando o método Obter um recurso de [site por](../api/site-getbypath.md) caminho. O uso é {hostname}:/{relative-path}. Para a URL do `https://contoso.sharepoint.com/sites/HumanResources` site, a solicitação do Microsoft Graph `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` seria. A ID é o primeiro GUID listado no campo de ID.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [sitery](../resources/sitesource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto siteSource](../resources/sitesource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

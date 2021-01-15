@@ -1,26 +1,26 @@
 ---
 title: 'sincronização: acquireAccessToken'
-description: Adquirir um token de acesso OAuth para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo
+description: Adquirir um token de Acesso OAuth para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo
 author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e507fd975a71bfd6a9b8dd0809d0041a7e07493b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bef2b75abb8e985be6d9ef7742a8baeb86fd5e7f
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975873"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873539"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 Namespace: microsoft.graph
 
-Adquirir um token de acesso OAuth para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo.
+Adquira um token de Acesso OAuth para autorizar o serviço de provisionamento do Azure AD para provisionar usuários em um aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|Directory.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -50,7 +50,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|las|coleção [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Representa um único valor secreto.|
+|credenciais|[Coleção synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Representa um valor secreto único.|
 
 
 

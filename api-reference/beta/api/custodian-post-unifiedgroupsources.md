@@ -1,16 +1,16 @@
 ---
 title: Criar unifiedGroupSource
-description: Criar um novo objeto unifiedGroupSource.
+description: Crie um novo objeto unifiedGroupSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 36c099836e7ad5da795a16c8beaed2cd80e1a1bb
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 61e7ff3aef7c4a94b0a0efcbc0f012b7eda0b604
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659030"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872545"
 ---
 # <a name="create-unifiedgroupsource"></a>Criar unifiedGroupSource
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [unifiedGroupSource](../resources/unifiedgroupsource.md) .
+Crie um novo [objeto unifiedGroupSource.](../resources/unifiedgroupsource.md)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -50,18 +50,18 @@ POST /compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodian
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [unifiedGroupSource](../resources/unifiedgroupsource.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedGroupSource.](../resources/unifiedgroupsource.md)
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [unifiedGroupSource](../resources/unifiedgroupsource.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|includedSources|sourceType|Especifica quais fontes são incluídas nesse grupo. Os valores possíveis são: `mailbox` e `site`.|
-|group@odata. bind|String|ID do grupo. Para obter a ID de grupo, use a operação de [grupos de listas](../api/group-list.md) .|
+|includedSources|sourceType|Especifica quais fontes estão incluídas nesse grupo. Os valores possíveis são: `mailbox` e `site`.|
+|group@odata.bind|Cadeia de caracteres|ID do grupo. Para obter a ID do grupo, use a operação [listar grupos.](../api/group-list.md)|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [unifiedGroupSource](../resources/unifiedgroupsource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `201 Created` [unifiedGroupSource](../resources/unifiedgroupsource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,16 +1,16 @@
 ---
 title: Listar unifiedGroupSources
-description: Obtenha uma lista dos objetos unifiedGroupSource e suas propriedades.
+description: Obter uma lista dos objetos unifiedGroupSource e suas propriedades.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: f0bb4e23ce089001b6cec2d610ec2cb6ca0e33bb
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 901006dc63aec6920e9183b632937b9651884d6b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659100"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872580"
 ---
 # <a name="list-unifiedgroupsources"></a>Listar unifiedGroupSources
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista dos objetos [unifiedGroupSource](../resources/unifiedgroupsource.md) e suas propriedades.
+Obter uma lista dos [objetos unifiedGroupSource](../resources/unifiedgroupsource.md) e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|User.Read|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unifiedGroupSource](../resources/unifiedgroupsource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos unifiedGroupSource](../resources/unifiedgroupsource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
