@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 71c357932916ae585c96b4c52eaabacbbd19c084
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 405fd9ab41e9b5187c77dd57bfaa0679ae165558
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844872"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866218"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -29,6 +29,7 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição|beta|Adicionado o tipo complexo [outOfOfficeSettings](/graph/api/resources/outOfOfficeSettings.md?view=graph-rest-beta).|
 |Adição|beta|Adicionada a propriedade **outOfOfficeSettings** ao tipo de recurso de [presença](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true)|
+|Adição|beta|Adicionadas as propriedades **isBroadcast**, **broadcastSettings**, **atendenteReport**, **gravação** e **alternativaRecording** à entidade [onlineMeeting ](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)para oferecer suporte à criação de eventos ao vivo.|
 
 ### <a name="groups"></a>Grupos
 
