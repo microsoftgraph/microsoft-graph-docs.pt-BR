@@ -1,35 +1,35 @@
 ---
 title: Criar conjunto
-description: Criar um novo objeto Set.
+description: Criar um novo objeto set.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ecf1327333ddd9a38d3199c01a0c6b2436eb27a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c81ab668593b3650dd55de6bd933eef719d8ae7d
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064585"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873714"
 ---
-# <a name="create-set"></a><span data-ttu-id="4f89e-103">Criar conjunto</span><span class="sxs-lookup"><span data-stu-id="4f89e-103">Create set</span></span>
-<span data-ttu-id="4f89e-104">Namespace: Microsoft. Graph. termos</span><span class="sxs-lookup"><span data-stu-id="4f89e-104">Namespace: microsoft.graph.termStore</span></span>
+# <a name="create-set"></a><span data-ttu-id="7c1b9-103">Criar conjunto</span><span class="sxs-lookup"><span data-stu-id="7c1b9-103">Create set</span></span>
+<span data-ttu-id="7c1b9-104">Namespace: microsoft.graph.termStore</span><span class="sxs-lookup"><span data-stu-id="7c1b9-104">Namespace: microsoft.graph.termStore</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4f89e-105">Criar um novo objeto [set](../resources/termstore-set.md) .</span><span class="sxs-lookup"><span data-stu-id="4f89e-105">Create a new [set](../resources/termstore-set.md) object.</span></span>
+<span data-ttu-id="7c1b9-105">Criar um novo [objeto set.](../resources/termstore-set.md)</span><span class="sxs-lookup"><span data-stu-id="7c1b9-105">Create a new [set](../resources/termstore-set.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4f89e-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4f89e-106">Permissions</span></span>
-<span data-ttu-id="4f89e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4f89e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7c1b9-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7c1b9-106">Permissions</span></span>
+<span data-ttu-id="7c1b9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7c1b9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4f89e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4f89e-109">Permission type</span></span>|<span data-ttu-id="4f89e-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="4f89e-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7c1b9-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7c1b9-109">Permission type</span></span>|<span data-ttu-id="7c1b9-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7c1b9-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4f89e-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4f89e-111">Delegated (work or school account)</span></span> |<span data-ttu-id="4f89e-112">TermStore.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4f89e-112">TermStore.ReadWrite.All</span></span> |
-|<span data-ttu-id="4f89e-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4f89e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4f89e-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f89e-114">Not supported.</span></span>    |
-|<span data-ttu-id="4f89e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4f89e-115">Application</span></span> | <span data-ttu-id="4f89e-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4f89e-116">Not supported.</span></span> |
+|<span data-ttu-id="7c1b9-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7c1b9-111">Delegated (work or school account)</span></span> |<span data-ttu-id="7c1b9-112">TermStore.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7c1b9-112">TermStore.ReadWrite.All</span></span> |
+|<span data-ttu-id="7c1b9-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7c1b9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c1b9-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7c1b9-114">Not supported.</span></span>    |
+|<span data-ttu-id="7c1b9-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7c1b9-115">Application</span></span> | <span data-ttu-id="7c1b9-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7c1b9-116">Not supported.</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="4f89e-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4f89e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7c1b9-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7c1b9-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,31 +39,31 @@ ms.locfileid: "48064585"
 POST /termStore/sets
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4f89e-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4f89e-118">Request headers</span></span>
-|<span data-ttu-id="4f89e-119">Nome</span><span class="sxs-lookup"><span data-stu-id="4f89e-119">Name</span></span>|<span data-ttu-id="4f89e-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="4f89e-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7c1b9-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7c1b9-118">Request headers</span></span>
+|<span data-ttu-id="7c1b9-119">Nome</span><span class="sxs-lookup"><span data-stu-id="7c1b9-119">Name</span></span>|<span data-ttu-id="7c1b9-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c1b9-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="4f89e-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="4f89e-121">Authorization</span></span>|<span data-ttu-id="4f89e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4f89e-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="4f89e-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4f89e-124">Content-Type</span></span>|<span data-ttu-id="4f89e-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4f89e-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="7c1b9-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="7c1b9-121">Authorization</span></span>|<span data-ttu-id="7c1b9-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7c1b9-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="7c1b9-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7c1b9-124">Content-Type</span></span>|<span data-ttu-id="7c1b9-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7c1b9-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4f89e-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4f89e-127">Request body</span></span>
-<span data-ttu-id="4f89e-128">No corpo da solicitação, forneça uma representação JSON do objeto [set](../resources/termstore-set.md) .</span><span class="sxs-lookup"><span data-stu-id="4f89e-128">In the request body, supply a JSON representation of the [set](../resources/termstore-set.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7c1b9-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7c1b9-127">Request body</span></span>
+<span data-ttu-id="7c1b9-128">No corpo da solicitação, fornece uma representação JSON do [objeto set.](../resources/termstore-set.md)</span><span class="sxs-lookup"><span data-stu-id="7c1b9-128">In the request body, supply a JSON representation of the [set](../resources/termstore-set.md) object.</span></span>
 
-<span data-ttu-id="4f89e-129">A tabela a seguir mostra as propriedades que são necessárias ao criar o [conjunto](../resources/termstore-set.md).</span><span class="sxs-lookup"><span data-stu-id="4f89e-129">The following table shows the properties that are required when you create the [set](../resources/termstore-set.md).</span></span>
+<span data-ttu-id="7c1b9-129">A tabela a seguir mostra as propriedades que são necessárias ao criar o [conjunto.](../resources/termstore-set.md)</span><span class="sxs-lookup"><span data-stu-id="7c1b9-129">The following table shows the properties that are required when you create the [set](../resources/termstore-set.md).</span></span>
 
-|<span data-ttu-id="4f89e-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4f89e-130">Property</span></span>|<span data-ttu-id="4f89e-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="4f89e-131">Type</span></span>|<span data-ttu-id="4f89e-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="4f89e-132">Description</span></span>|
+|<span data-ttu-id="7c1b9-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7c1b9-130">Property</span></span>|<span data-ttu-id="7c1b9-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="7c1b9-131">Type</span></span>|<span data-ttu-id="7c1b9-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c1b9-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4f89e-133">localizadores</span><span class="sxs-lookup"><span data-stu-id="4f89e-133">localizedNames</span></span>|<span data-ttu-id="4f89e-134">coleção [Microsoft. Graph. termos.](../resources/termstore-localizedname.md) undeleble</span><span class="sxs-lookup"><span data-stu-id="4f89e-134">[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) collection</span></span>|<span data-ttu-id="4f89e-135">Nome do conjunto a ser criado</span><span class="sxs-lookup"><span data-stu-id="4f89e-135">Name of the set to be created</span></span>|
-|<span data-ttu-id="4f89e-136">parentGroup</span><span class="sxs-lookup"><span data-stu-id="4f89e-136">parentGroup</span></span>|[<span data-ttu-id="4f89e-137">Microsoft. Graph. termos. Group</span><span class="sxs-lookup"><span data-stu-id="4f89e-137">microsoft.graph.termstore.group</span></span>](../resources/termstore-group.md)|<span data-ttu-id="4f89e-138">termos-grupo sob o qual o conjunto precisa ser criado</span><span class="sxs-lookup"><span data-stu-id="4f89e-138">termstore-group under which the set needs to be created</span></span>|
+|<span data-ttu-id="7c1b9-133">localizedNames</span><span class="sxs-lookup"><span data-stu-id="7c1b9-133">localizedNames</span></span>|<span data-ttu-id="7c1b9-134">[coleção microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md)</span><span class="sxs-lookup"><span data-stu-id="7c1b9-134">[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) collection</span></span>|<span data-ttu-id="7c1b9-135">Nome do conjunto a ser criado</span><span class="sxs-lookup"><span data-stu-id="7c1b9-135">Name of the set to be created</span></span>|
+|<span data-ttu-id="7c1b9-136">parentGroup</span><span class="sxs-lookup"><span data-stu-id="7c1b9-136">parentGroup</span></span>|[<span data-ttu-id="7c1b9-137">microsoft.graph.termstore.group</span><span class="sxs-lookup"><span data-stu-id="7c1b9-137">microsoft.graph.termstore.group</span></span>](../resources/termstore-group.md)|<span data-ttu-id="7c1b9-138">termstore-group sob o qual o conjunto precisa ser criado</span><span class="sxs-lookup"><span data-stu-id="7c1b9-138">termstore-group under which the set needs to be created</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4f89e-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f89e-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7c1b9-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="7c1b9-139">Response</span></span>
 
-<span data-ttu-id="4f89e-140">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [set](../resources/termstore-set.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4f89e-140">If successful, this method returns a `201 Created` response code and a [set](../resources/termstore-set.md) object in the response body.</span></span>
+<span data-ttu-id="7c1b9-140">Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [set](../resources/termstore-set.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7c1b9-140">If successful, this method returns a `201 Created` response code and a [set](../resources/termstore-set.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4f89e-141">Exemplos</span><span class="sxs-lookup"><span data-stu-id="4f89e-141">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7c1b9-141">Exemplos</span><span class="sxs-lookup"><span data-stu-id="7c1b9-141">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="4f89e-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4f89e-142">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7c1b9-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7c1b9-142">Request</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/termStore/sets
 Content-Type: application/json
@@ -84,8 +84,8 @@ Content-length: 288
 ```
 
 
-### <a name="response"></a><span data-ttu-id="4f89e-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="4f89e-143">Response</span></span>
-<span data-ttu-id="4f89e-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="4f89e-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="7c1b9-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="7c1b9-143">Response</span></span>
+<span data-ttu-id="7c1b9-144">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="7c1b9-144">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
