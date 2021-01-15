@@ -17,7 +17,7 @@ items:
           - name: Destaques novidades
             href: whats-new-overview.md
           - name: Log de alterações da API
-            href: changelog.md
+            href: 'https://developer.microsoft.com/graph/changelog'
       - name: Usuários que você pode alcançar
         items:
           - name: Visão Geral
