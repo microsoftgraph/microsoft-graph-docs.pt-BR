@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 32ba187da807e37b8d8467569b2a08e84b32c719
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: 4ac64724a676c2da2d39a68d842039bd14138161
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572132"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883176"
 ---
 # <a name="create-update-and-delete-items-added-by-your-application-in-the-microsoft-graph-connection"></a>Criar, atualizar e excluir itens adicionados por seu aplicativo na conexão do Microsoft Graph
 
@@ -34,7 +34,7 @@ Os grupos externos podem consistir em outro grupo externo, usuários do Azure Ac
 
 ## <a name="properties"></a>Propriedades
 
-O componente propriedades é usado para adicionar metadados de itens que são úteis nas experiências do Microsoft Graph. Você deve [registrar o esquema](/graph/search-index-manage-schema) para a conexão antes de adicionar itens a ele e converter os tipos de dados em [tipos de dados com suporte](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
+O componente propriedades é usado para adicionar metadados de itens que são úteis nas experiências do Microsoft Graph. Você deve [registrar o esquema](./search-index-manage-schema.md) para a conexão antes de adicionar itens a ele e converter os tipos de dados em [tipos de dados com suporte](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
 
 ![Exemplo de um componente de propriedade](./images/search-index-manage-items-1.png)
 
@@ -42,7 +42,7 @@ O componente propriedades é usado para adicionar metadados de itens que são ú
 
 O componente de conteúdo é usado para adicionar a maior parte do item que deve ser indexado em texto completo. Alguns exemplos incluem a descrição do tíquete, texto analisado de um corpo de arquivo ou um corpo de página wiki.
 
-O conteúdo é um dos principais campos que influenciam na [relevância](/graph/search-index-manage-schema.md/#relevance) nas experiências da Microsoft. Oferecemos suporte para o tipo de conteúdo `text` e `HTML`. Se sua fonte de dados tiver arquivos binários, você poderá analisá-los como texto antes de adicioná-los ao Microsoft Graph.
+O conteúdo é um dos principais campos que influenciam na [relevância](./search-index-manage-schema.md#relevance) nas experiências da Microsoft. Oferecemos suporte para o tipo de conteúdo `text` e `HTML`. Se sua fonte de dados tiver arquivos binários, você poderá analisá-los como texto antes de adicioná-los ao Microsoft Graph.
 
 ![Um exemplo de componente de conteúdo](./images/search-index-manage-items-2.png)
 

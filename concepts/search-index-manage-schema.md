@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 2157b61ba1585d72e24a6a62f1b0344530524be9
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: 937272ee969478b8dfa0cac6c6ce44a1e9644f08
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572139"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882931"
 ---
 # <a name="register-schema-for-the-microsoft-graph-connection"></a>Registrar o esquema da conexão do Microsoft Graph
 
@@ -148,7 +148,7 @@ Os aliases são nomes amigáveis para as propriedades que você atribuir. Elas s
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Adicionar itens à conexão](/graph/search-index-manage-items)
+- [Adicionar itens à conexão](./search-index-manage-items.md)
 - [Revisar a referência da API do conectores do Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Pesquisar tipos personalizados (externalItem)](search-concept-custom-types.md)
 - Baixe o [exemplo de conector de pesquisa](https://github.com/microsoftgraph/msgraph-search-connector-sample) no GitHub

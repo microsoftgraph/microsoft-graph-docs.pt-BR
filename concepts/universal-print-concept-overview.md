@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 73742cf7d00379599ccdb940b4ef10ec99db59d6
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 3d6cadb6b064fcd54432f1f598afbda9c91ae869
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790731"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883015"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Visão geral da API de impressão em nuvem da Impressão Universal
 
@@ -34,7 +34,7 @@ Siga estas etapas para enviar trabalhos de impressão para o printerShare:
 
 1. [Crie um trabalho de impressão](/graph/api/printershare-post-jobs?view=graph-rest-beta) e armazene a ID do documento resultante.
 2. [Crie uma uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) para o documento. 
-3. [Bytes de upload para a sessão de upload criada](/graph/upload-data-to-upload-session).
+3. [Bytes de upload para a sessão de upload criada](./upload-data-to-upload-session.md).
 4. [Iniciar o trabalho de impressão](/graph/api/printjob-start?view=graph-rest-beta).
 
 ### <a name="manage-printers"></a>Gerenciar impressoras

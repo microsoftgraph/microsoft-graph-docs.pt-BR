@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c013e2889e03d73010dcf6ca67ee0e4ba422f6a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cccaa780902a914187e360a856e9fe29faab170e
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091905"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882781"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -18,20 +18,20 @@ Namespace: microsoft.graph
 
 Obtém um determinado número de linhas abaixo de um determinado intervalo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
+GET /me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=n)
 
 ```
 
@@ -65,8 +65,8 @@ Este é um exemplo da solicitação.
   "name": "workbookrange_rowsBelow",
   "idempotent": true
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/rowsBelow(count=2)
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-rowsbelow-csharp-snippets.md)]
@@ -110,7 +110,7 @@ Content-length: 157
 }
 ```
 
-Se chamado sem o `count` parâmetro, essa função será padronizada como uma linha.
+Se chamado sem `count` o parâmetro, essa função assume como padrão uma linha.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

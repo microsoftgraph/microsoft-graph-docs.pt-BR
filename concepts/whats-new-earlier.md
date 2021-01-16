@@ -3,12 +3,12 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: eb75b481ac8b4d8727883dd03128891d72a2b674
-ms.sourcegitcommit: b6c9eb5d33fbe5bedb778ac4bb41aa3ce9fc8850
+ms.openlocfilehash: 58bf192a539d21656f916bba2990854330caf8ec
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581946"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882946"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
 
@@ -72,8 +72,8 @@ Atualizações do Intune de [outubro](changelog.md#october-2020) para a versão 
 Os administradores podem ver os [exemplos de uso de cmdlets do Windows PowerShell](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell) para personalizar as configurações de percepção do item para uma organização.
 
 ### <a name="teamwork"></a>Trabalho em equipe
-- Use o atributo de instância **channelCreationMode** para indicar que um [canal](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true#instance-attributes) está sendo criado para servir à migração de dados. Use o [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) para indicar que a migração terminou, de forma que os membros possam postar e ler mensagens.
-- Use o atributo de instância **teamCreationMode** para indicar que uma [equipe](https://docs.microsoft.com/graph/api/resources/team?view=graph-rest-beta&preserve-view=true#instance-attributes) está sendo criada para atender à migração. Use o [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true) para indicar que a migração terminou, de forma que as operações dos membros podem acontecer e os membros podem postar mensagens.
+- Use o atributo de instância **channelCreationMode** para indicar que um [canal](/graph/api/resources/channel?preserve-view=true&view=graph-rest-beta#instance-attributes) está sendo criado para servir à migração de dados. Use o [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) para indicar que a migração terminou, de forma que os membros possam postar e ler mensagens.
+- Use o atributo de instância **teamCreationMode** para indicar que uma [equipe](/graph/api/resources/team?preserve-view=true&view=graph-rest-beta#instance-attributes) está sendo criada para atender à migração. Use o [completeMigration](/graph/api/team-completemigration?view=graph-rest-beta&preserve-view=true) para indicar que a migração terminou, de forma que as operações dos membros podem acontecer e os membros podem postar mensagens.
 
 ## <a name="september-2020-new-and-generally-available"></a>Setembro de 2020: novo e disponível para o público geral
 
@@ -419,7 +419,7 @@ GA da [API de locais](/graph/api/resources/place) na v1.0: use essa API em aplic
 Atualizações de [maio](changelog.md#may-2020) do Intune v1.0.
 
 ### <a name="graph-explorer"></a>Explorador do Graph
-Use os vários novos recursos do [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer) que aprimoram o aprendizado e a prototipagem na área restrita. Por exemplo:
+Use os vários novos recursos do [Explorador do Graph](https://developer.microsoft.com/pt-BR/graph/graph-explorer) que aprimoram o aprendizado e a prototipagem na área restrita. Por exemplo:
 - Exiba trechos de código que correspondam à consulta da API REST inserida em C#, Java, JavaScript e Objective C.
 - Conecte-se com um locatário, exiba e copie um token de acesso para seu aplicativo cliente REST favorito.
 
@@ -476,7 +476,7 @@ Atualizações de [maio](changelog.md#may-2020) do Intune beta.
 - Especifique os recursos a serem fornecidos na propriedade **resourceProvisioningOptions** que normalmente não fazem parte da criação do [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) padrão. Atualmente há suporte para provisionamento de um grupo como uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) com os recursos do Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Identidade e acesso
-- Aplica opções de consulta do sistema OData (`$count`, `$filter`, `$search`) ao obter coleções de entidades derivadas do [directoryObject](). Você pode [pesquisar tokens específicos](./query-parameters.md#using-search-on-directory-object-collections) nas propriedades **displayName** e **description** dessas entidades, e usar a conversão OData para aparar os resultados do **directoryObject** para determinados tipos derivados. Veja mais detalhes em [Criar consultas avançadas no Microsoft Graph com $count, $filter, $search e $orderby](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
+- Aplica opções de consulta do sistema OData (`$count`, `$filter`, `$search`) ao obter coleções de entidades derivadas do [directoryObject](). Você pode [pesquisar tokens específicos](./query-parameters.md#using-search-on-directory-object-collections) nas propriedades **displayName** e **description** dessas entidades, e usar a conversão OData para aparar os resultados do **directoryObject** para determinados tipos derivados. Veja mais detalhes em [Criar consultas avançadas no Microsoft Graph com $count, $filter, $search e $orderby](https://developer.microsoft.com/pt-BR/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - Como parte da [API de proteção de identidade](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true), use a propriedade **riskEventType** para [obter o tipo de risco detectado](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true) ou [obter o tipo de risco no histórico de um usuário](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true). Não use a propriedade **risktype** como foi preterida.
 - Especifique os tipos de aplicativo cliente na propriedade **clientAppTypes** do [conjunto de condições](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true) de uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
 - Use a permissão delegada de `EntitlementManagement.Read.All` para permitir ao aplicativo solicitar acesso para ler pacotes de acesso e recursos de gerenciamento de direitos relacionados em nome do usuário conectado.

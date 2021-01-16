@@ -3,16 +3,16 @@ title: Usar a API do feed de atividades no Microsoft Graph para habilitar experi
 description: Quando você usa atividades, essas experiências da Microsoft podem começar a gerar interações com seu aplicativo. Você também pode exibir as atividades nos seus aplicativos para ajudar os usuários retomarem o que estavam fazendo em qualquer dispositivo e qualquer plataforma, incluindo Windows, Android e iOS.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 8e65615d46e795f1bd4d11d68ff291d938ac6c82
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: b708a39234004d087cbcfaaeb736b70508b8c15c
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521814"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883057"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Usar a API do feed de atividades no Microsoft Graph para habilitar experiências entre dispositivos
 
-Atividades tornam os usuários mais produtivos ao ajudá-los a retomar rapidamente tarefas importantes em seu aplicativo entre dispositivos. A Microsoft ajuda a aumentar a produtividade dos usuários com seus aplicativos por meio de experiências como a Linha do Tempo do Windows, os Conjuntos do Windows, o recurso Continuar de onde parei da Cortana e o Microsoft Launcher, que são capacitados pelo feed de atividades. Quando você usa atividades, essas experiências da Microsoft podem começar a gerar interações com seu aplicativo. Você também pode exibir as atividades nos seus aplicativos para ajudar os usuários retomarem o que estavam fazendo em qualquer dispositivo e qualquer plataforma, incluindo Windows, Android e iOS.
+Atividades tornam os usuários mais produtivos ao ajudá-los a retomar rapidamente tarefas importantes em seu aplicativo entre dispositivos. A Microsoft ajuda a aumentar a produtividade dos usuários com seus aplicativos por meio de experiências como a Linha do Tempo do Windows, os Conjuntos do Windows, o recurso Continuar de onde parei da Cortana e o Microsoft Launcher, que são capacitados pelo feed de atividades.  Quando você usa atividades, essas experiências da Microsoft podem começar a gerar interações com seu aplicativo. Você também pode exibir as atividades nos seus aplicativos para ajudar os usuários retomarem o que estavam fazendo em qualquer dispositivo e qualquer plataforma, incluindo Windows, Android e iOS.
 
 ## <a name="why-integrate-with-activities"></a>Por que se integrar com atividades?
 ### <a name="enable-experiences-that-flow-seamlessly-between-windows-android-linux-and-ios-devices"></a>Possibilite experiências com fluxo perfeito entre dispositivos Windows, Android, Linux e iOS 
@@ -31,4 +31,4 @@ A integração com as atividades do usuário permite que os usuários retomem fa
 - [Experiências entre dispositivos no Microsoft Graph](cross-device-concept-overview.md)
 - [Usar a API de feed de atividades para retomar as atividades de um usuário entre dispositivos](/graph/api/resources/activity-feed-api-overview?view=graph-rest-1.0)
 - [Publicar atividades e itens de histórico com uma solicitação usando deep insert](/graph/api/projectrome-put-activity?view=graph-rest-1.0#example-2---deep-insert)
-- [Saiba mais sobre o Project Rome](https://aka.ms/projectrome)
+- [Saiba mais sobre o Project Rome](/windows/project-rome/)

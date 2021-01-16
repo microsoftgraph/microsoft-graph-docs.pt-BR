@@ -4,35 +4,35 @@ description: Descubra como configurar aplicativos para acessar reuniões online 
 author: frankpeng7
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: a0a0d264e8898d8524f104d3fe5dafeb1b151f5f
-ms.sourcegitcommit: 6eadb95e21b2e7eb5d6b081b91999cb91070f397
+ms.openlocfilehash: 856ca755d9eb48aed95139e37a53e2ad420f4250
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299267"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882497"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Permitir que os aplicativos acessem reuniões online em nome de um usuário
 
-Em alguns casos, como nos serviços em segundo plano ou em aplicativos de daemon executados em um servidor sem a presença de um usuário conectado, é apropriado para um aplicativo chamar o Microsoft Graph para executar ações em nome de um usuário. Por exemplo, um aplicativo pode precisar chamar o Microsoft Graph para agendar várias reuniões com base em agendas publicadas (como cursos) ou em ferramentas de agendamento externas. Nesses casos, o usuário que o aplicativo atua em nome do é identificado como organizador da reunião.
+Em alguns casos, como para serviços em segundo plano ou aplicativos daemon que são executados em um servidor sem a presença de um usuário assinado, é apropriado que um aplicativo chame o Microsoft Graph para executar ações em nome de um usuário. Por exemplo, um aplicativo pode precisar chamar o Microsoft Graph para agendar várias reuniões com base em agendas publicadas (como cursos) ou ferramentas de agendamento externas. Nesses casos, o usuário em nome do aplicativo é identificado como o organizador da reunião.
 
-Os administradores que desejam permitir que um aplicativo acesse recursos de reunião online em nome de um usuário podem usar os cmdlets **New-CsApplicationAccessPolicy** e **Grant-CsApplicationAccessPolicy** do PowerShell para configurar o controle de acesso. Este artigo aborda as etapas básicas para configurar uma política de acesso a aplicativos.
+Os administradores que quiserem permitir que um aplicativo acesse os recursos de reunião online em nome de um usuário podem usar os cmdlets **New-CsApplicationAccessPolicy** e **Grant-CsApplicationAccessPolicy** do PowerShell para configurar o controle de acesso. Este artigo aborda as etapas básicas para configurar uma política de acesso a aplicativos.
 
-Estas etapas são específicas para reuniões online e não se aplicam a outros recursos do Microsoft Graph.
+Essas etapas são específicas para reuniões online e não se aplicam a outros recursos do Microsoft Graph.
 
-## <a name="configure-application-access-policy"></a>Configurar a política de acesso do aplicativo
+## <a name="configure-application-access-policy"></a>Configurar política de acesso a aplicativos
 
-Para configurar uma política de acesso de aplicativo e permitir que os aplicativos acessem reuniões online com permissões de aplicativo:
+Para configurar uma política de acesso a aplicativos e permitir que os aplicativos acessem reuniões online com permissões de aplicativo:
 
-1. Identifique a ID do applcation (cliente) do aplicativo e as IDs de usuário dos usuários em nome do qual o aplicativo será autorizado a acessar reuniões online.
+1. Identifique a ID de aplicação do aplicativo (cliente) e as IDs de usuário dos usuários em nome dos quais o aplicativo será autorizado a acessar reuniões online.
 
     - Identifique o ID do aplicativo (cliente) do aplicativo no [portal de registro de aplicativos do Azure](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
-    - Identificar a ID de usuário (objeto) do usuário no [portal de gerenciamento de usuários do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
+    - Identificar a ID de usuário (objeto) do usuário no portal de gerenciamento [de usuários do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
 
-2. Conecte-se ao Skype for Business PowerShell com a conta Adminitrator. Para obter detalhes, consulte [gerenciar o Skype for Business online com o PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
+2. Conecte-se ao PowerShell do Skype for Business com a conta de administrador. Para obter detalhes, [consulte Gerenciar o Skype for Business Online com o PowerShell.](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
 
-3. Crie uma política de acesso de aplicativo contendo uma lista de IDs de aplicativos.
+3. Crie uma política de acesso a aplicativos contendo uma lista de IDs de aplicativos.
 
-    Execute o cmdlet a seguir, substituindo os argumentos **identidade**, **APPIDs**e **Description** (opcional).
+    Execute o cmdlet a seguir, substituindo os argumentos **Identity**, **AppIds** e **Description** (opcional).
 
     ```powershell
     New-CsApplicationAccessPolicy -Identity Test-policy -AppIds "ddb80e06-92f3-4978-bc22-a0eee85e6a9e", "ccb80e06-92f3-4978-bc22-a0eee85e6a9e", "bbb80e06-92f3-4978-bc22-a0eee85e6a9e" -Description "description here"
@@ -40,7 +40,7 @@ Para configurar uma política de acesso de aplicativo e permitir que os aplicati
 
 4. Conceda a política ao usuário para permitir que as IDs de aplicativo contidas na política acessem reuniões online em nome do usuário concedido. 
 
-   Execute o cmdlet a seguir, substituindo os argumentos **PolicyName** e **Identity** .
+   Execute o cmdlet a seguir, substituindo os **argumentos PolicyName** e **Identity.**
 
    ```powershell
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
@@ -48,12 +48,12 @@ Para configurar uma política de acesso de aplicativo e permitir que os aplicati
 
 > **Observação** 
 > 
-> - _Identity_ se refere ao nome da política ao criar a política, mas a ID de usuário ao conceder a política.
-> - As alterações nas políticas de acesso de aplicativos podem levar até 30 minutos para entrar em vigor nas chamadas da API REST do Microsoft Graph.
+> - _A_ identidade refere-se ao nome da política ao criar a política, mas a ID de usuário ao conceder a política.
+> - As alterações nas políticas de acesso a aplicativos podem levar até 30 minutos para entrar em vigor em chamadas à API REST do Microsoft Graph.
 
 ## <a name="supported-permissions-and-additional-resources"></a>Permissões compatíveis e recursos adicionais
 
-Os administradores podem usar cmdlets do ApplicationAccessPolicy para controlar o acesso de caixa de correio de um aplicativo que recebeu qualquer uma das seguintes permissões de aplicativo:
+Os administradores podem usar cmdlets ApplicationAccessPolicy para controlar o acesso à caixa de correio de um aplicativo que recebeu qualquer uma das seguintes permissões de aplicativo:
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
@@ -62,7 +62,7 @@ Para obter mais informações sobre como configurar a política de acesso a apli
 
 ## <a name="errors"></a>Erros
 
-Você pode encontrar o seguinte erro quando uma chamada à API tem acesso negado devido a um aplicativo tentando acessar uma reunião online quando a política de acesso ao aplicativo não é configurada.
+Você pode encontrar o seguinte erro quando uma chamada à API tem acesso negado devido a um aplicativo tentando acessar uma reunião online quando a política de acesso a aplicativos não está configurada.
 
 ```json
 {
@@ -77,13 +77,13 @@ Você pode encontrar o seguinte erro quando uma chamada à API tem acesso negado
 }
 ```
 
-Siga as etapas neste artigo para criar e/ou conceder uma política de acesso de aplicativo que contenha a ID de aplicativo para a ID de usuário.
+Siga as etapas neste artigo para criar e/ou conceder uma política de acesso a aplicativos que contenha a ID do aplicativo para a ID de usuário.
 
 ## <a name="see-also"></a>Confira também
 
 - [Referência de permissões](permissions-reference.md)
-- [New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)
-- [Grant-ApplicationAccessPolicy](/powershell/module/skype/grant-csapplicationaccesspolicy)
-- [Get-ApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
-- [Set-ApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
-- [Remove-ApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)
+- [New-CsApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)
+- [Grant-CsApplicationAccessPolicy](/powershell/module/skype/grant-csapplicationaccesspolicy)
+- [Get-CsApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
+- [Set-CsApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
+- [Remove-CsApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)

@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 615cb11f3ddbaab50f1a497492fcb2447a2b8a4b
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 0230eab4a0b07439f21dc0e44c78b707084ec47f
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522095"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882511"
 ---
 # <a name="add-member-to-channel"></a>Adicionar membro ao canal
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicionar um [conversationMember](../resources/conversationmember.md) a um [canal](../resources/channel.md). Essa operação só é permitida para canais com um valor de **membershiptype** de `private` .
+Adicione um [conversationMember](../resources/conversationmember.md) a um [canal](../resources/channel.md). Essa operação é permitida somente para canais com um **valor membershipType** de `private` .
 
 ## <a name="permissions"></a>Permissions
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| ChannelMember.ReadWrite.All |
 
@@ -49,8 +49,8 @@ Inclua as propriedades a seguir no corpo da solicitação.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|funções|coleção de cadeias de caracteres|A função para o usuário. Deve ser `owner` ou vazio.|
-|user|[user](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio.|
+|user|[user](../resources/user.md)|O usuário a ser acrescentado ao canal.|
 
 ## <a name="response"></a>Resposta
 
@@ -58,7 +58,7 @@ Se bem-sucedido, este método retornará um código de resposta `201 Created` e 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-add-a-member-to-a-channel"></a>Exemplo 1: adicionar um membro a um canal
+### <a name="example-1-add-a-member-to-a-channel"></a>Exemplo 1: Adicionar um membro a um canal
 
 #### <a name="request"></a>Solicitação
 
@@ -69,6 +69,14 @@ Se bem-sucedido, este método retornará um código de resposta `201 Created` e 
 } -->
 ```http
 POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
+Content-type: application/json
+Content-length: 100
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-add-member-csharp-snippets.md)]
@@ -114,7 +122,7 @@ Content-length: 468
 }
 ```
 
-### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>Exemplo 2: adicionar um membro com a função proprietário a um canal
+### <a name="example-2-add-a-member-with-the-owner-role-to-a-channel"></a>Exemplo 2: Adicionar um membro com a função de proprietário a um canal
 
 #### <a name="request"></a>Solicitação
 <!-- {

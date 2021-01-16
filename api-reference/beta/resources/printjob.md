@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 43b08c39715c9984a1692c0bcb823881be4ab4d1
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 5124f3123331c4889f5e16110109938e7f264925
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784826"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883029"
 ---
 # <a name="printjob-resource-type"></a>Tipo de recurso printJob
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Representa um trabalho de impressão que foi ensuado para uma impressora.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
@@ -75,7 +75,6 @@ Veja a seguir uma representação JSON do recurso.
   "configuration": {"@odata.type": "microsoft.graph.printJobConfiguration"},
   "documents": [ {"@odata.type": "microsoft.graph.printDocument"} ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

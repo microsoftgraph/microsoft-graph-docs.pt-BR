@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0e582e87f60905b046a7ee2f523c298b1791fd86
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: eb7558f996adafd34904ce355e355968e0294f83
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844863"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882924"
 ---
 # <a name="enum-values"></a>Valores Enum
 
@@ -235,7 +235,7 @@ Namespace: microsoft.graph
 | primário             | 0     | O pai do usuário.                       |
 | relativo           | 1      | Relativo do usuário.                     |
 | aide               | 2      | O assistente do usuário.                         |
-| ol             | 3      | O nome do usuário.                       |
+| ol             | 3     | O nome do usuário.                       |
 | guardian           | 4      | O guardião do usuário.                     |
 | filho              | 5      | O filho do usuário.                        |
 | outros              | 6      | Uma relação não especificada com o usuário. |
@@ -339,7 +339,7 @@ Namespace: microsoft.graph
 | free             | 0     |
 | provisório        | 1      |
 | ocupado             | 2      |
-| oof              | 3      |
+| oof              | 3     |
 | workingElsewhere | 4      |
 | desconhecido          | -1    |
 
@@ -389,7 +389,7 @@ Namespace: microsoft.graph
 | lightBlue   | 0     |
 | lightGreen  | 1      |
 | lightOrange | 2      |
-| lightGray   | 3      |
+| lightGray   | 3     |
 | lightYellow | 4      |
 | lightTeal   | 5      |
 | lightPink   | 6      |
@@ -403,7 +403,7 @@ Namespace: microsoft.graph
 | Membro             | Valor |
 | :----------------- | :---- |
 | exclusão           | 2      |
-| deletionFailed     | 3      |
+| deletionFailed     | 3     |
 | provisioningFailed | 5      |
 | provisionado        | 6      |
 | provisionamento       | 7      |
@@ -417,7 +417,7 @@ Namespace: microsoft.graph
 | pausado             | 0     |
 | inProgress         | 1      |
 | sucesso            | 2      |
-| erro              | 3      |
+| erro              | 3     |
 | validationError    | 4      |
 | em quarentena        | 5      |
 | unknownFutureValue | 6      |
@@ -753,7 +753,7 @@ Namespace: microsoft.graph
 | preset0  | 0     |
 | preset1  | 1      |
 | preset2  | 2      |
-| preset3  | 3      |
+| preset3  | 3     |
 | preset4  | 4      |
 | preset5  | 5      |
 | preset6  | 6      |
@@ -785,7 +785,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | desconhecido        | 0     | Desconhecido.                  |
 | truePositive   | 1      | O alerta é verdadeiro positivo.   |
 | falsePositive  | 2      | O alerta é falso positivo.  |
-| benignPositive | 3      | O alerta é benigno positivo. |
+| benignPositive | 3     | O alerta é benigno positivo. |
 
 ### <a name="filehashtype-values"></a>Valores de fileHashType
 
@@ -794,7 +794,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | desconhecido             | 0     | Tipo desconhecido.                  |
 | sha1                | 1      | Tipo de hash SHA1.                |
 | sha256              | 2      | Tipo de hash SHA256.              |
-| md5                 | 3      | Tipo de hash MD5.                 |
+| md5                 | 3     | Tipo de hash MD5.                 |
 | authenticodeHash256 | 4      | Tipo de hash AuthenticodeHash256. |
 | lsHash              | 5      | Tipo de hash LsHash.              |
 | ctph                | 6      | Tipo de hash CTPH.                |
@@ -816,7 +816,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | desconhecido   | 0     | Status de conexão desconhecido. |
 | tentativa | 1      | Tentativa de conexão.      |
 | succeeded | 2      | Conexão bem-sucedida.      |
-| bloqueado   | 3      | Conexão bloqueada.        |
+| bloqueado   | 3     | Conexão bloqueada.        |
 | failed    | 4      | Falha na conexão.         |
 
 ### <a name="processintegritylevel-values"></a>Valores processIntegrityLevel
@@ -839,7 +839,7 @@ Enum para hives do Registro conforme definido por [https://docs.microsoft.com/wi
 | desconhecido                 | 0     | Hive desconhecido.                     |
 | currentConfig           | 1      | HKEY_CURRENT_CONFIG hive.         |
 | currentUser             | 2      | HKEY_CURRENT_USER hive.           |
-| localMachineSam         | 3      | HKEY_LOCAL_MACHINE\SAM hive.      |
+| localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM hive.      |
 | localMachineSamSoftware | 4      | HKEY_LOCAL_MACHINE\Software hive. |
 | localMachineSystem      | 5      | HKEY_LOCAL_MACHINE\System hive.   |
 | usersDefault            | 6      | HKEY_USERS \\ . Hive PADRÃO.        |
@@ -853,7 +853,7 @@ Operação que alterou o nome da chave do Registro e/ou o valor.
 | desconhecido | 0     | Tipo de valor do Registro desconhecido. |
 | create  | 1      | Crie o Registro.             |
 | modify  | 2      | Modificar o Registro.             |
-| delete  | 3      | Exclua o Registro.             |
+| delete  | 3     | Exclua o Registro.             |
 
 ### <a name="registryvaluetype-values"></a>Valores de registryValueType
 
@@ -864,7 +864,7 @@ Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do 
 | desconhecido           | 0     | Tipo de valor do Registro desconhecido.                 |
 | binário            | 1      | REG_BINARY de valor do Registro.              |
 | dword             | 2      | REG_DWORD de valor do Registro.               |
-| dwordWordWordEndian | 3      | REG_DWORD_LITTLE_ENDIAN de valor do Registro. |
+| dwordWordWordEndian | 3     | REG_DWORD_LITTLE_ENDIAN de valor do Registro. |
 | dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN de valor do Registro.    |
 | expandSz          | 5      | REG_EXPAND_SZ tipo de valor do Registro.           |
 | vínculo              | 6      | REG_LINK de valor do Registro.                |
@@ -883,7 +883,7 @@ Enum for severity of alerts.
 | desconhecido       | 0     | A gravidade é desconhecida.              |
 | informacional | 1      | A gravidade é apenas para informações. |
 | low           | 2      | A gravidade é baixa.                  |
-| medium        | 3      | A gravidade é média.               |
+| medium        | 3     | A gravidade é média.               |
 | high          | 4      | A gravidade é alta.                 |
 
 ### <a name="alertstatus-values"></a>Valores de alertStatus
@@ -917,7 +917,7 @@ Valores possíveis para o método de login do usuário.
 | interactive       | 0     | O logon é interativo.        |
 | remoteInteractive | 1      | O logon é interativo remoto. |
 | rede           | 2      | Logon é rede.            |
-| batch             | 3      | O logon é em lote.              |
+| batch             | 3     | O logon é em lote.              |
 | serviço           | 4      | Logon é serviço.            |
 
 ### <a name="useraccountsecuritytype-values"></a>Valores de userAccountSecurityType
@@ -1216,7 +1216,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | manual        | 0     | Um usuário selecionou manualmente o rótulo.                          |
 | automático     | 1      | O rótulo foi escolhido como resultado das condições da política.       |
 | recomendado   | 2      | O escolhido para aplicar um rótulo recomendado.                    |
-| policyDefault | 3      | O usuário nenhuma ação e o rótulo padrão da política foram aplicados. |
+| policyDefault | 3     | O usuário nenhuma ação e o rótulo padrão da política foram aplicados. |
 | obrigatório     | 4      | O usuário escolheu um rótulo após ser forçado a escolher.         |
 
 ### <a name="contentalignment-values"></a>Valores contentAlignment
@@ -1309,7 +1309,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |:-------|:------|:------------------------|
 | Email   | 1      | Ameaça de email.            |
 | url    | 2      | Ameaça de URL.             |
-| file   | 3      | Ameaça de arquivo anexo. |
+| file   | 3     | Ameaça de arquivo anexo. |
 
 ### <a name="threatexpectedassessment-values"></a>Valores threatExpectedAssessment
 
@@ -1324,7 +1324,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |:-------------------|:------|:-------------------|
 | spam               | 1      | Ameaça de spam.       |
 | phishing           | 2      | Ameaça de phishing.   |
-| malware            | 3      | Ameaça de malware.    |
+| malware            | 3     | Ameaça de malware.    |
 | unknownFutureValue | 4      | Um membro sentinel. |
 
 ### <a name="threatassessmentstatus-values"></a>Valores de threatAssessmentStatus
@@ -1348,7 +1348,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |:-------------------|:------|:-----------------------------------------------------|
 | checkPolicy        | 1      | O resultado da verificação da política, somente para `mail` avaliação. |
 | rescan             | 2      | O resultado da verificação novamente.                                   |
-| unknownFutureValue | 3      | Um membro sentinel.                                   |
+| unknownFutureValue | 3     | Um membro sentinel.                                   |
 
 ### <a name="maildestinationroutingreason-values"></a>valores de mailDestinationRoutingReason
 
@@ -1357,7 +1357,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | nenhum                  | 0     | Ainda não sabe.                       |
 | mailFlowRule          | 1      | Regra de transporte do Exchange.            |
 | safeSender            | 2      | Lista de remetentes seguros.                   |
-| blockedSender         | 3      | Lista de remetentes bloqueados.                |
+| blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4      | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5      | Lista de autorização do domínio do remetente.           |
 | domainBlockList       | 6      | Lista de bloqueio de domínios do remetente.           |
@@ -1470,7 +1470,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |:----------------------|:------|:------------------------------------|
 | string                | 1      | Tipo de dados de cadeias de caracteres                    |
 | booliano               | 2      | Tipo de dados Booliano                   |
-| int64                 | 3      | Tipo de dados Int                       |
+| int64                 | 3     | Tipo de dados Int                       |
 | stringCollection      | 4      | Tipo de dados de coleção de cadeias de caracteres         |
 | unknownFutureValue    | 5      | Um membro sentinel.                  |
 
@@ -1480,7 +1480,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1      | Esse tipo de atributo de fluxo de usuário indica que foi criado pelo sistema |
 | custom                | 2      | Esse tipo de atributo de fluxo de usuário indica que foi criado pelo usuário   |
-| unknownFutureValue    | 3      | Um membro sentinel.                                                 |
+| unknownFutureValue    | 3     | Um membro sentinel.                                                 |
 
 ### <a name="connectionstate-values"></a>Valores connectionState
 
@@ -1601,4 +1601,11 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista é fixo para esse tipo de chat, o membro não pode ser removido/adicionado.                  |
 |group               | 1      | Indica que o chat é um chat de grupo. O tamanho da lista de lista (de pelo menos 2 pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.   |
 |meeting             | 2      | Indica que o chat é um chat de reunião, que é criado como um efeito colateral da criação de um OnlineMeeting.  |
-|unknownFutureValue  | 3      | Valor do Sentinel para indicar valores futuros. |
+|unknownFutureValue  | 3     | Valor do Sentinel para indicar valores futuros. |
+
+### <a name="plannercontainertype-values"></a>Valores de plannerContainerType 
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|

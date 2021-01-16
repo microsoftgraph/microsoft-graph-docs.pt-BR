@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 381f9a6af883c87ac045c17b9ebd546aa44b7201
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f56bab29e538afd8841ddd86a57b6a5456b969d8
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978389"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883197"
 ---
 # <a name="create-plannerplan"></a>Criar plannerPlan
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar um novo **plannerPlan**.
+Crie um novo **plannerPlan**.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -42,12 +42,14 @@ POST /planner/plans
 | Nome          | Descrição               |
 | :------------ | :------------------------ |
 | Autorização | {token} de portador. Obrigatório. |
+| Content-type | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md). A propriedade owner do **plannerPlan** deve ser definida com uma identificação de um objeto [group](../resources/group.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md).
+A propriedade do contêiner **plannerPlan** deve ser definida.
 
->**Observação** : o usuário que está criando o plano deve ser um membro do grupo que será proprietário do plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
+>**Observação:** Se o contêiner for um grupo do Microsoft 365, o usuário que está criando o plano deverá ser um membro do grupo que conterá o plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
 
 ## <a name="response"></a>Resposta
 
@@ -69,10 +71,12 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
-Content-length: 381
+Content-length: 140
 
 {
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874"
+  },
   "title": "title-value"
 }
 ```
@@ -95,20 +99,20 @@ Content-length: 381
 ---
 
 
-No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md).
-
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
 } -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 357
+Content-length: 544
 
 {
   "createdBy": {
@@ -116,11 +120,16 @@ Content-length: 357
       "id": "95e27074-6c4a-447a-aa24-9d718a0b86fa"
     },
     "user": {
-      "id": "ebf3b108-5234-4e22-b93d-656d7dae5874"
+      "id": "b108ebf3-4e22-b93d-5234-dae5874656d7"
     }
   },
   "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "url": "https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "type": "group"
+  },
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

@@ -1,28 +1,28 @@
 ---
 title: Provedor MSAL
-description: O provedor MSAL usa MSAL.js para entrar em usuários e adquirir tokens para usar com o Microsoft Graph
+description: O provedor MSAL usa MSAL.js para entrar usuários e adquirir tokens para usar com o Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: d3b3d82ae3c60080beaaff7f39a1324022d3ab2a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 738e8ebcd24b3e7e528bdf0a1676dd54103ee2ea
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659161"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883022"
 ---
 # <a name="msal-provider"></a>Provedor MSAL
 
-O provedor MSAL usa [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) para entrar em usuários e adquirir tokens para usar com o Microsoft Graph.
+O provedor MSAL usa [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) para entrar usuários e adquirir tokens para usar com o Microsoft Graph.
 
-Para saber mais, veja [Providers](./providers.md).
+Para saber mais, consulte [provedores.](./providers.md)
 
 ## <a name="get-started"></a>Introdução
 
 Você pode inicializar o provedor MSAL em HTML ou JavaScript.
 
-### <a name="initialize-in-your-html-page"></a>Inicializar na página HTML
+### <a name="initialize-in-your-html-page"></a>Inicializar em sua página HTML
 
-Inicializar o provedor MSAL em HTML é a maneira mais simples de criar um novo provedor. Use o `mgt-msal-provider` componente para definir a **ID do cliente** e outras propriedades. Isso criará uma nova `UserAgentApplication` instância que será usada para todos os tokens de autenticação e aquisição.
+Inicializar o provedor MSAL em HTML é a maneira mais simples de criar um novo provedor. Use o `mgt-msal-provider` componente para definir a **ID do cliente** e outras propriedades. Isso criará uma nova `UserAgentApplication` instância que será usada para toda a autenticação e aquisição de tokens.
 
 ```html
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
@@ -34,16 +34,16 @@ Inicializar o provedor MSAL em HTML é a maneira mais simples de criar um novo p
 
 | Atributo    | Descrição                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client-ID    | String Client ID (consulte Creating a app/Client ID). Obrigatório.                                                                                                                                                                                                           |
-| tipo de logon   | A enumeração entre `redirect` e o `popup` valor padrão é `redirect` . Opcional.                                                                                                                                                                                   |
-| escopos       | Cadeias de caracteres separadas por vírgula para escopos para os quais o usuário deve se concordar. Opcional.                                                                                                                                                                                     |
-| autoridades    | A cadeia de caracteres de autoridade-padrão é a autoridade comum. Para aplicativos de locatário único, use a ID de locatário ou o nome do locatário. Por exemplo, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]` . Opcional. |
-| Redirect-URI | Redirecionar cadeia de caracteres URI-por padrão, o URI de janela atual é usado. Opcional.                                                                                                                                                                                            |
-| depende de   | Cadeia de caracteres de seletor de elemento de outro componente de provedor de prioridade mais alta. Opcional.                                                                                                                                                                                      |
+| client-id    | ID do cliente de cadeia de caracteres (consulte Criando uma ID de aplicativo/cliente). Obrigatório.                                                                                                                                                                                                           |
+| tipo de logon   | Enumeração entre `redirect` e - o valor padrão é `popup` `redirect` . Opcional.                                                                                                                                                                                   |
+| escopos       | Cadeias de caracteres separadas por vírgulas para escopos que o usuário deve consentir ao entrar. Opcional.                                                                                                                                                                                     |
+| autoridade    | Cadeia de caracteres de autoridade – o padrão é a autoridade comum. Para aplicativos de locatário único, use a ID do locatário ou o nome do locatário. Por exemplo, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]` . Opcional. |
+| redirect-uri | Cadeia de caracteres de URI de redirecionamento - por padrão, o URI da janela atual é usado. Opcional.                                                                                                                                                                                            |
+| depende   | Cadeia de caracteres do seletor de elemento de outro componente de provedor de prioridade mais alta. Opcional.                                                                                                                                                                                      |
 
 ### <a name="initialize-in-javascript"></a>Inicializar em JavaScript
 
-Você pode fornecer mais opções inicializando o provedor no JavaScript.
+Você pode fornecer mais opções inicializando o provedor em JavaScript.
 
 ```ts
 import {Providers, MsalProvider} from '@microsoft/mgt'
@@ -52,11 +52,11 @@ import {UserAgentApplication} from "msal";
 Providers.globalProvider = new MsalProvider(config: MsalConfig);
 ```
 
-Você pode configurar o `MsalProvider` parâmetro constructor de duas maneiras, conforme descrito nas seções a seguir.
+Você pode configurar o `MsalProvider` parâmetro do construtor de duas maneiras, conforme descrito nas seções a seguir.
 
 #### <a name="provide-a-clientid-to-create-a-new-useragentapplication"></a>Fornecer um `clientId` para criar um novo `UserAgentApplication`
 
-Essa opção faz sentido quando o kit de ferramentas do Graph é responsável por toda a autenticação em seu aplicativo.
+Essa opção faz sentido quando o Graph Toolkit é responsável por toda a autenticação em seu aplicativo.
 
 ```ts
 interface MsalConfig {
@@ -72,9 +72,9 @@ interface MsalConfig {
 
 #### <a name="pass-an-existing-useragentapplication-in-the-useragentapplication-property"></a>Passe um existente `UserAgentApplication` na `userAgentApplication` propriedade.
 
-Use isso quando o aplicativo usar a funcionalidade do MSAL além do que está exposto pelo `MsalProvider` e outros recursos do Microsoft Graph Toolkit. Isso é especialmente apropriado se uma estrutura instancia automaticamente e expõe uma `UserAgentApplication` por você; por exemplo, ao usar [MSAL-angular](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-angular).
+Use isso quando seu aplicativo usa a funcionalidade MSAL além do que é exposto pelos recursos e outros recursos do `MsalProvider` Microsoft Graph Toolkit. Isso é particularmente apropriado se uma estrutura instanciá-la automaticamente e expor uma para você; por exemplo, ao usar `UserAgentApplication` [msal-angular](/azure/active-directory/develop/tutorial-v2-angular).
 
-Certifique-se de entender as oportunidades de colisões ao usar essa opção. Por sua própria natureza, há um risco de `MsalProvider` alterar o estado de uma sessão, por exemplo, fazendo com que o usuário entre ou concorde com escopos adicionais. Certifique-se de que seu aplicativo e outras estruturas respondam adequadamente a essas alterações no estado ou considere o uso de um [provedor personalizado](/graph/toolkit/providers/custom) .
+Certifique-se de entender as oportunidades de colisões ao usar essa opção. Por sua própria natureza, há um risco de que o estado de uma sessão possa ser diferente, por exemplo, fazendo o usuário entrar ou consentir com `MsalProvider` escopos adicionais. Certifique-se de que seu aplicativo e outras estruturas respondam normalmente a essas alterações de estado ou considere usar um [provedor personalizado.](./custom.md)
 
 ```ts
 interface MsalConfig {
@@ -85,8 +85,8 @@ interface MsalConfig {
 }
 ```
 
-Para saber mais sobre MSAL.js e para opções adicionais que você pode usar ao inicializar a biblioteca do MSAL, consulte a [documentação do MSAL](/azure/active-directory/develop/msal-js-initializing-client-applications).
+Para saber mais sobre MSAL.js e para opções adicionais que você pode usar ao inicializar a biblioteca MSAL, consulte a documentação [da MSAL.](/azure/active-directory/develop/msal-js-initializing-client-applications)
 
-## <a name="creating-an-appclient-id"></a>Criar uma ID de aplicativo/cliente
+## <a name="creating-an-appclient-id"></a>Criando uma ID de aplicativo/cliente
 
-Para obter detalhes sobre como registrar um aplicativo e obter uma ID de cliente, consulte [criar um aplicativo do Azure Active Directory](../get-started/add-aad-app-registration.md).
+Para obter detalhes sobre como registrar um aplicativo e obter uma ID de cliente, consulte [Criar um aplicativo do Azure Active Directory.](../get-started/add-aad-app-registration.md)

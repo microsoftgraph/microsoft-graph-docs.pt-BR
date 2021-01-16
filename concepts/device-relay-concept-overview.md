@@ -4,12 +4,12 @@ description: 'Hoje, as pessoas interagem com vários dispositivos diariamente. O
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 49cd970eed1dd5934ab537fc3da2670d510292f7
-ms.sourcegitcommit: 33f1cf5b3b79bfba6a06b52d34e558a6ba327d21
+ms.openlocfilehash: 4215c10380f8f0576b0f04b743158d3d5d17a29c
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34656878"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882504"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>API de retransmissão de dispositivos no Microsoft Graph (prévia)
 
@@ -41,4 +41,4 @@ Adicione mais habilidades de controle ao seu aplicativo. Por exemplo, forneça h
 
 - [Experiências entre dispositivos no Microsoft Graph](cross-device-concept-overview.md)
 - [Saiba mais sobre a API de retransmissão de dispositivos](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
-- [Saiba mais sobre o Project Rome](https://aka.ms/projectrome)
+- [Saiba mais sobre o Project Rome](/windows/project-rome/)

@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso plannerTask
-description: O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma tarefa do Planner está contida em um plano e pode ser atribuída a um Bucket em um plano. Cada objeto Task tem um objeto Details que pode conter mais informações sobre a tarefa. Confira visão geral para obter mais informações sobre relações entre grupo, plano e tarefa.
+description: O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma tarefa do Planner está contida em um plano e pode ser atribuída a um bucket em um plano. Cada objeto de tarefa tem um objeto de detalhes que pode conter mais informações sobre a tarefa. Confira a visão geral para obter mais informações sobre as relações entre o grupo, o plano e a tarefa.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: b630976abce3ecebb92eed84ec593f9a1e70f2cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd3e96e035c0097830e7ce797da0fa91ea28aac5
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063993"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883199"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma tarefa do Planner está contida em um [plano](plannerplan.md) e pode ser atribuída a um [Bucket](plannerbucket.md) em um plano. Cada objeto Task tem um objeto [Details](plannertaskdetails.md) que pode conter mais informações sobre a tarefa. Confira [visão geral](planner-overview.md) para obter mais informações sobre relações entre grupo, plano e tarefa.
+O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma tarefa do Planner está contida em um [plano](plannerplan.md) e pode ser atribuída a um [bucket](plannerbucket.md) em um plano. Cada objeto de tarefa tem um objeto de [detalhes](plannertaskdetails.md) que pode conter mais informações sobre a tarefa. Confira a [visão geral](planner-overview.md) para obter mais informações sobre as relações entre o grupo, o plano e a tarefa.
 
 
 ## <a name="methods"></a>Métodos
@@ -43,12 +43,13 @@ O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma
 |conversationThreadId|String|Identificação do thread da conversa na tarefa. Essa é a identificação do objeto do thread da conversa criado no grupo.|
 |createdBy|[identitySet](identityset.md)|Identidade do usuário que criou a tarefa.|
 |createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que a tarefa é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Contém informações sobre a origem da tarefa.|
 |dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |hasDescription|Booliano|Somente leitura. O valor é `true` se o objeto de detalhes da tarefa tem uma descrição não vazia e `false` caso contrário.|
 |id|String|Somente leitura. A ID da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
-|prioridade|Int32|Prioridade da tarefa. O intervalo de valores válido é entre `0` e `10` (inclusive), com o valor crescente sendo prioridade mais baixa ( `0` tem a maior prioridade e `10` tem a menor prioridade).  Atualmente, o Planner interpreta valores `0` e `1` como "urgente" `2` e como "importante", e como "médio" e `3` `4` `5` `6` `7` `8` , `9` e `10` como "baixo".  Atualmente, o Planner define o valor `1` para "urgente", `3` para "importante", `5` para "médio" e `9` para "baixo".|
+|prioridade|Int32|Prioridade da tarefa. O intervalo válido de valores é entre e (inclusive), com o valor crescente sendo menor prioridade ( tem a prioridade mais alta e `0` tem a prioridade mais `10` `0` `10` baixa).  Atualmente, o Planner interpreta valores e como "urgentes" e como "importantes", e como "médio" e , e `0` `1` como `2` `3` `4` `5` `6` `7` `8` `9` `10` "baixo".  Atualmente, o Planner define o valor `1` para "urgente", `3` para "importante", `5` para "médio" e `9` "baixo".|
 |planId|String|ID do plano ao qual a tarefa pertence.|
 |previewType|String|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Número de referências externas existentes na tarefa.|
