@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: ccc622b391cd8fc0fcd08a289392026f3458f5cd
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 08baf178608287709632c44cc5e96efd02d34a7a
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754314"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883050"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -39,7 +39,7 @@ As solicitações de pesquisa são executadas em nome do usuário. Os resultados
 |[Usar KQL em termos de consulta](#keyword-query-language-kql-support) | **query** |
 |[Classificar resultados de pesquisa](#sort-search-results)| **sort** |
 |[Refinar os resultados usando agregações](#refine-results-using-aggregations)| **aggregations** |
-|[Pesquisar entre conectores do Graph](/graph/search-concept-custom-types)| **contentSources** |
+|[Pesquisar tipos personalizados importados usando conectores](/graph/search-concept-custom-types)| **contentSources** |
 
 ## <a name="scope-search-based-on-entity-types"></a>Pesquisa de escopo com base em tipos de entidade
 
@@ -190,9 +190,12 @@ Para compatibilidade com versões anteriores, as propriedades e tipos originais 
   - [Pesquisar mensagens do Outlook](/graph/search-concept-messages)
   - [Pesquisar eventos do calendário](/graph/search-concept-events)
   - [Pesquisar conteúdo no OneDrive e Microsoft Office SharePoint Online](/graph/search-concept-files)
-  - [Pesquisar conteúdo externo](/graph/search-concept-custom-types)
+  - [Pesquisar tipos personalizados importados usando conectores](/graph/search-concept-custom-types)
   - [Classificar resultados de pesquisa](/graph/search-concept-sort)
   - [Refinar resultados de pesquisa](/graph/search-concept-aggregation)
 
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.
+
+## <a name="whats-new"></a>O que há de novo
+
+Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

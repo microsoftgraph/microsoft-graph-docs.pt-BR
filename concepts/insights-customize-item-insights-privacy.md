@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9990a6a6b44f8699dbabf2290909b47019e1edd0
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f4f143b66ba93b488c747eebfda7777e9800aea5
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873770"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883043"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 
@@ -28,7 +28,7 @@ As configurações das informações do item fornecem flexibilidade para os admi
 A próxima seção descreve o uso de cmdlets do PowerShell para definir as configurações das informações. Se você estiver usando a API REST, pule a próxima seção e continue em [Configurar informações do item usando a API REST](#configure-item-insights-using-rest-api). Em seguida, confira as operações REST [ler](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) para obter mais informações.
 
 ### <a name="how-to-configure-item-insights-setting-via-powershell"></a>Como definir a configuração das informações do item pelo PowerShell?
-Confirme os pré-requisitos adicionais a seguir. Em seguida, você pode usar o [Microsoft Graph PowerShell SDK](/graph/powershell/installation) para definir informações do item para toda a organização ou para grupos específicos.
+Confirme os pré-requisitos adicionais a seguir. Em seguida, você pode usar o [Microsoft Graph PowerShell SDK](./powershell/installation.md) para definir informações do item para toda a organização ou para grupos específicos.
 
 #### <a name="additional-prerequisites"></a>Pré-requisitos adicionais
 * **Módulo do PowerShell** - Instale a [versão do módulo 0.9.1 ou superior](https://www.powershellgallery.com/packages/Microsoft.Graph).
