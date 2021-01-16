@@ -3,14 +3,60 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 58bf192a539d21656f916bba2990854330caf8ec
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 0414c2414a6765c7e0c29114c2239d15bbe71cea
+ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882946"
+ms.locfileid: "49883414"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="november-2020-new-and-generally-available"></a>Novembro de 2020: Novo e geralmente disponível
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+- O GA da propriedade **função** do tipo [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo), que distingue a função de um participante em uma [reunião online](/graph/api/resources/onlinemeeting) como um participante ou apresentador.
+- O GA da propriedade **lobbyBypassSettings** e seus [valores](/graph/api/resources/lobbybypasssettings#lobbybypassscope-values) para admitir usuários para uma reunião online.
+- O GA da propriedade **isEntryExitAnnounced** para personalizar as configurações de apresentação de autores de chamada ou de sair de uma reunião online.
+- O GA da propriedade **allowedPresenters** para permitir apresentadores específicos na reunião.
+
+### <a name="search"></a>Pesquisar
+- O GA da [consulta da API](/graph/api/resources/search-api-overview) Pesquisa da Microsoft, oferecendo suporte à pesquisa em escopo dos seguintes tipos de dados:
+  - [Mensagens do Outlook](./search-concept-messages.md)
+  - [Eventos do calendário do Outlook](./search-concept-events.md)
+  - [Recursos do Microsoft OneDrive e do Microsoft Office SharePoint Online](./search-concept-files.md).
+
+### <a name="teamwork"></a>Trabalho em equipe
+
+- GA de permissões de consentimento específicas de recurso (RSC). As permissões RSC permitem que os proprietários da equipe concedam consentimento granular a um aplicativo de produção para acessar e/ou modificar dados específicos de uma equipe, como por exemplo, ler as configurações da equipe ou modificar nomes de canal, descrições e outras configurações.
+- GA de APIs que se aplicam a um [canal](/graph/api/resources/channel) ou mensagens dentro de um canal. As APIs incluem:
+  - [Criar](/graph/api/conversationmember-add) ou [excluir](/graph/api/conversationmember-delete) um membro de conversa de um canal.
+  - [Atualizar a função de um membro](/graph/api/conversationmember-update) em um canal.
+  - Receber uma mensagem específica ou todas as mensagens em um canal.
+  - Receber uma resposta específica ou todas as respostas em um canal.
+  - [Acompanhar mensagens novas ou atualizadas em um canal](/graph/api/chatmessage-delta).
+
+
+## <a name="november-2020-new-in-preview-only"></a>Novembro de 2020: Novidades somente na pré-visualização
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+Estreia da [API de computador na nuvem](/graph/api/resources/virtualendpoint?view=graph-rest-beta&preserve-view=true) que permite que as organizações provisionem e gerenciem as máquinas virtuais para os funcionários. Use-o em conjunto com a API do Intune para gerenciar os pontos de extremidade físicos e virtuais.
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+[Inscreva-se para alterar as notificações](webhooks.md) em uma [definição de tarefa de impressão](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true).
+
+### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gestão corporativa
+As atualizações de [Novembro](changelog.md#november-2020) do Intune para a versão beta.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+- Especificar URLs para envio de tokens de entrada de usuário e URIs de códigos de autorização e tokens de acesso, na propriedade **spa** de [aplicativo](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true).
+- Personalize a aparência das telas de entrada do Azure Active Directory usando as [propriedades de identidade visual organização](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true). As organizações podem personalizar com base na localidade para usuários específicos.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+A estreia da [API de revisão de acesso para a associação de grupo](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) para revisar regularmente o acesso de usuários, certifique-se de que apenas as pessoas certas tenham acesso contínuo e gerenciem os membros do grupo de forma eficiente.
+
+### <a name="search"></a>Pesquisar
+Você pode agregar resultados de pesquisa de tipo numérico ou cadeia de caracteres que são importados por [conectores do Microsoft Graph](/microsoftsearch/connectors-overview) e que são configurados para serem refináveis no [esquema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). Veja mais informações sobre [refinar resultados de pesquisa usando agregações](search-concept-aggregation.md).
 
 ## <a name="october-2020-new-and-generally-available"></a>Outubro de 2020: novo e geralmente disponível
 
