@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a87e70dc7ef99613a40f7579f58e8cb94df346ec
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 2d1c88e975f55361ee83d8ad99d31ab2caa492c5
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597449"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882763"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -311,7 +311,7 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 - Tipo de recurso [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)
 - Tipo de recurso [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)
 - [Tutorial para notificações de alteração as notificações e controle de alterações](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Notificações do ciclo de vida](/graph/webhooks-lifecycle)
+- [Notificações do ciclo de vida](./webhooks-lifecycle.md)
 
 [contato]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversa]: /graph/api/resources/conversation?view=graph-rest-1.0

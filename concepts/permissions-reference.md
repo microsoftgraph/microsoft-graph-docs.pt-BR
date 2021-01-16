@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8211d2cc225b1bc7275fb124d928e9d996a6fb0c
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 0404fae00cd3d8549c78df1afe674ec95c9f5191
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784790"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874148"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -2085,6 +2085,10 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 | _PrintJob.ReadWrite.All_ | Ler e gravar trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados e o conteúdo do documento dos trabalhos de impressão em nome do usuário conectado. | Sim | Não |
 | _PrintJob.ReadWriteBasic_ | Ler e gravar informações básicas de trabalhos de impressão do usuário | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão que o usuário conectado criou. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Não | Não |
 | _PrintJob.ReadWriteBasic.All_ | Ler e gravar informações básicas de trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão em nome do usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim | Não |
+| _PrintConnector.Read.All_ | Conectores de leitura | Permite que o aplicativo leia os conectores em nome do usuário conectado. | Sim | Não |
+| _PrintConnector.ReadWrite.All_ | Leia e grave os conectores de impressão | Permite que o aplicativo leia e escreva conectores de impressão em nome do usuário conectado. | Sim | Não |
+| _PrintSettings.Read.All_ | Leia as configurações de impressão em todo o locatário | Permite que o aplicativo leia os compartilhamentos da impressora em nome do usuário conectado. | Sim | Não |
+| _PrintSettings.ReadWrite.All_ | Leia e grave as configurações de impressão em todo o locatário | Permite que o aplicativo leia e atualize impressoras em nome do usuário conectado. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 

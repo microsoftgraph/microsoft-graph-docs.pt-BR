@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4627c2a3084dccd73e786bcb09634e3d145da896
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 9990a6a6b44f8699dbabf2290909b47019e1edd0
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523125"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873770"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 
@@ -35,32 +35,31 @@ Confirme os pré-requisitos adicionais a seguir. Em seguida, você pode usar o [
 * **.NET Framework** - Instale o [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) ou uma versão superior.
 
 #### <a name="command-examples"></a>Exemplos de comando
+> [!NOTE]
+> Como os comandos de insights de itens estão disponíveis apenas em beta, alterne para o perfil beta antes de chamá-lo.
+> ```powershell
+>    Select-MgProfile beta
+> ```
 Para obter a configuração das informações do item de uma organização, use o módulo Microsoft Graph PowerShell e o seguinte comando, onde você substitui `$OrgID` pela ID aplicável da sua organização:
 ```powershell
    Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
 ```
 
-Por padrão, as informações do item estão habilitadas para toda a organização. Você pode usar o módulo Microsoft Graph PowerShell para alterar isso e desabilitar as informações do item para todos na organização. Use o seguinte comando, onde você substitui `$OrgID` pela ID da sua organização e especifica `-IsEnabledInOrganization` como `false`:
+Por padrão, as informações do item estão habilitadas para toda a organização. É possível usar o módulo Microsoft Graph Windows PowerShell para alterar isso e desabilitar as percepções do item para todos na organização. 
+> [!NOTE]
+> O método de atualização requer permissões `User.ReadWrite` adicionais. Para criar uma sessão do Microsoft Graph com um escopo específico necessário, use o seguinte comando e concorde com as permissões solicitadas.
+> ```powershell
+>    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
+> ```
+
+Use o seguinte comando, onde você substitui `$OrgID` pelo ID da sua organização e especifica `-IsEnabledInOrganization` como `false`.
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
 ```
-Como alternativa, você pode alterar o padrão e desabilitar as informações do item para um grupo específico do Microsoft Azure AD. Use o seguinte comando, onde você substitui `$OrgID` pela ID da sua organização e `$GroupID` como a ID do grupo do Microsoft Azure AD:
+Como alternativa, você pode alterar o padrão e desabilitar as informações do item para um grupo específico do Microsoft Azure AD. Use o seguinte comando, onde você substitui `$OrgID` pela ID da sua organização e `$GroupID` como a ID do grupo do Microsoft Azure AD.
 ```powershell
    Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
 ```
-
-#### <a name="using-earlier-versions-of-the-powershell-module"></a>Usando versões anteriores do módulo PowerShell
-
-Se você usar o módulo Microsoft Graph PowerShell versão 0.9.0 ou inferior, use uma das duas maneiras de chamar o cmdlet `Update-MgOrganizationSettingItemInsight`, conforme mostrado nos exemplos a seguir: 
-
-- Adicione `-AdditionalProperties @{}` ao fim do comando:
-  ```powershell
-  Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup 28f9ceac-39aa-4829-9a67-b8f1db11eaa1 -AdditionalProperties @{}
-  ```
-- Ou use `-BodyParameter`: 
-  ```powershell
-  Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -BodyParameter @{DisabledForGroup = "85f741b4-e924-41a8-abf8-d61a7b950bb5"; IsEnabledInOrganization = $false}
-  ```
 
 ### <a name="configure-item-insights-using-rest-api"></a>Configurar as informações do item usando a API REST
 Conforme declarado anteriormente, por padrão, as configurações de privacidade das informações do item são habilitadas para toda a organização. Você pode alterar o padrão de duas maneiras:
