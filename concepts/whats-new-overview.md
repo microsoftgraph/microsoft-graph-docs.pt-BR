@@ -3,19 +3,49 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 6eb661e4a7a84ea9dc1757db75d23e8169066988
-ms.sourcegitcommit: 4da3cf28f252c974fb00894d21b6e04eccbeffbe
+ms.openlocfilehash: f9fb8834895c7b61745dab084c2b1807ef6143dd
+ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722491"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883400"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
-Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o que foi adicionado anteriormente](whats-new-earlier.md) e como você pode [compartilhar suas ideias](#want-to-stay-in-the-loop). Para obter uma lista detalhada de atualizações no nível da API, consulte o [registro de alterações da API](changelog.md). 
+Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o que foi adicionado anteriormente](whats-new-earlier.md) e como você pode [compartilhar suas ideias](#want-to-stay-in-the-loop). Para obter uma lista detalhada de atualizações no nível da API, consulte o [registro de alterações da API](https://developer.microsoft.com/graph/changelog/). 
 
 > [!IMPORTANT]
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use os recursos de visualização em aplicativos de produção.
+
+## <a name="january-2021-new-in-preview-only"></a>Janeiro de 2021: novo apenas em pré-visualização
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+- Organize um evento ao vivo como uma [reuniãoOnline ](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) - veja um [exemplo](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true#example-3-create-a-live-event-with-a-user-token). 
+- Obtenha o fluxo de conteúdo de um [relatório de participante](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-4-retrieve-the-attendee-report-of-a-live-event), [gravação](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-5-retrieve-the-recording-of-a-live-event) ou gravação alternativa do evento ao vivo.
+- Obtenha o status de [presença](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) de um usuário que está [fora do escritório](/graph/api/resources/outofofficesettings?view=graph-rest-beta&preserve-view=true) e qualquer mensagem definida para esse status.
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Cloud PC
+- [Atualize uma senha de domínio do Active Directory ](/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta&preserve-view=true) para uma [conexão de rede local bem-sucedida](/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-beta&preserve-view=true).
+- [Executar verificações de integridade em uma conexão de rede local](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) agora pode expor 5 tipos de erros adicionais no recurso de [verificação de integridade da conexão local](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true). Para obter mais informações sobre os tipos de erro, confira o [log de mudanças](https://developer.microsoft.com/graph/changelog) de janeiro de 2021.
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+Use permissões delegadas em aplicativos em nome do usuário conectado:
+- `PrinterShare.ReadBasic.All` para ler informações básicas sobre compartilhamentos de impressoras, excluindo informações de controle de acesso.
+- `PrintConnector.Read.All` para ler conectores de impressão.
+- `PrintConnector.ReadWrite.All` para ler ou gravar conectores de impressão.
+- `PrintJob.Create` para criar trabalhos de impressão e fazer upload de conteúdo para trabalhos de impressão.
+- `PrintSettings.Read.All` para ler as configurações de impressão de todo o locatário.
+- `PrintSettings.ReadWrite.All` para ler ou gravar configurações de impressão para todo o locatário.
+- `Reports.Read.All` para ler o resumo do uso de impressão por usuário especificado ou por impressora.
+
+### <a name="groups"></a>Grupos
+Obtenha o status de processamento de um grupo dinâmico baseado em regras usando a propriedade **membershipRuleProcessingStatus**. Isso é útil quando um atributo de um usuário é alterado, a associação do usuário em um [grupo Microsoft 365](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) baseado em regras é reavaliada com base nas regras de associação de grupo definidas para a organização. 
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
+- Os aplicativos podem usar permissões delegadas para permitir que os usuários chamem APIs para gerenciar seus próprios [métodos de autenticação](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true) ou usar permissões de aplicativos para permitir que os administradores gerenciem métodos de autenticação para outros usuários.
+- Suporte ao [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta&preserve-view=true) como um método de autenticação de um usuário para entrar ou executar autenticação multifator no Azure Active Directory.
+- Use a [política do Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) para definir as configurações e usuários ou grupos que podem usar o Microsoft Authenticator como método de autenticação. Use a política do Microsoft Authenticator no lugar da [política de login por telefone sem senha do Microsoft Authenticator](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true), que está obsoleta. 
+- Ofereça suporte ao [Windows Hello para Empresas](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta&preserve-view=true) como um método de autenticação para um usuário entrar em dispositivos Windows sem usar uma senha.
 
 ## <a name="december-2020-new-and-generally-available"></a>Dezembro de 2020: Novo e disponível para o público geral
 
@@ -35,7 +65,8 @@ Experimente um novo [tutorial](tutorial-riskdetection-api.md) para aprender como
 - [Obtenha um chat entre um usuário e um aplicativo do Teams](/graph/api/userscopeteamsappinstallation-get-chat).
 
 ### <a name="use-the-toolkit"></a>Usar o kit de ferramentas
-GA do Kit de ferramentas do Microsoft Graph 2.0 - esta versão inclui um novo [componente para Tarefas Pendentes do Microsoft Graph](/graph/toolkit/components/todo), diferente do [componente de tarefas do Planner](/graph/toolkit/components/tasks), e um [componente de cartão pessoal aprimorado](/graph/toolkit/components/person-card). Confira a [postagem do blog](https://developer.microsoft.com/pt-BR/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/) relacionada para obter mais informações.
+GA do Kit de ferramentas do Microsoft Graph 2.0 - esta versão inclui um novo [componente para Tarefas Pendentes do Microsoft Graph](./toolkit/components/todo.md), diferente do [componente de tarefas do Planner](./toolkit/components/tasks.md), e um [componente de cartão pessoal aprimorado](./toolkit/components/person-card.md). Confira a [postagem do blog](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/) relacionada para obter mais informações.
+
 
 ## <a name="december-2020-new-in-preview-only"></a>Dezembro de 2020: novo apenas em pré-visualização
 
@@ -47,7 +78,7 @@ Identifique o status de falha de um desktop virtual gerenciado em nuvem coletiva
 
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 - [Atualize](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) a [configuração](/graph/api/resources/printjobconfiguration?view=graph-rest-beta&preserve-view=true) de um [trabalho de impressão](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).
-- Para obter detalhes sobre a renomeação de algumas propriedades e redigitação de relacionamentos, confira a seção de [dezembro de 2020](changelog.md#december-2020) do [changelog da API](changelog.md) para obter detalhes.
+- Para obter detalhes sobre a renomeação de algumas propriedades e redigitação de relacionamentos, confira a seção de dezembro de 2020 do [changelog da API](https://developer.microsoft.com/graph/changelog/) para obter detalhes.
 
 ### <a name="education"></a>Educação
 - Se os alunos forem adicionados após a publicação da tarefa, os professores podem controlar o comportamento da tarefa usando a propriedade **addedStudentAction** do recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
@@ -84,53 +115,6 @@ Como parte do [gerenciamento de direitos](/graph/api/resources/entitlementmanage
 ### <a name="to-do-tasks"></a>Tarefas pendentes
 Assine para [receber notificações de alterações](webhooks.md) de [Tarefas Pendentes](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).
 
-## <a name="november-2020-new-and-generally-available"></a>Novembro de 2020: Novo e geralmente disponível
-
-### <a name="cloud-communications"></a>Comunicações na nuvem
-- O GA da propriedade **função** do tipo [meetingParticipantInfo](/graph/api/resources/meetingParticipantInfo), que distingue a função de um participante em uma [reunião online](/graph/api/resources/onlinemeeting) como um participante ou apresentador.
-- O GA da propriedade **lobbyBypassSettings** e seus [valores](/graph/api/resources/lobbybypasssettings#lobbybypassscope-values) para admitir usuários para uma reunião online.
-- O GA da propriedade **isEntryExitAnnounced** para personalizar as configurações de apresentação de autores de chamada ou de sair de uma reunião online.
-- O GA da propriedade **allowedPresenters** para permitir apresentadores específicos na reunião.
-
-### <a name="search"></a>Pesquisar
-- O GA da [consulta da API](/graph/api/resources/search-api-overview) Pesquisa da Microsoft, oferecendo suporte à pesquisa em escopo dos seguintes tipos de dados:
-  - [Mensagens do Outlook](/graph/search-concept-messages)
-  - [Eventos do calendário do Outlook](/graph/search-concept-events)
-  - [Recursos do Microsoft OneDrive e do Microsoft Office SharePoint Online](/graph/search-concept-files).
-
-### <a name="teamwork"></a>Trabalho em equipe
-
-- GA de permissões de consentimento específicas de recurso (RSC). As permissões RSC permitem que os proprietários da equipe concedam consentimento granular a um aplicativo de produção para acessar e/ou modificar dados específicos de uma equipe, como por exemplo, ler as configurações da equipe ou modificar nomes de canal, descrições e outras configurações.
-- GA de APIs que se aplicam a um [canal](/graph/api/resources/channel) ou mensagens dentro de um canal. As APIs incluem:
-  - [Criar](/graph/api/conversationmember-add) ou [excluir](/graph/api/conversationmember-delete) um membro de conversa de um canal.
-  - [Atualizar a função de um membro](/graph/api/conversationmember-update) em um canal.
-  - Receber uma mensagem específica ou todas as mensagens em um canal.
-  - Receber uma resposta específica ou todas as respostas em um canal.
-  - [Acompanhar mensagens novas ou atualizadas em um canal](/graph/api/chatmessage-delta).
-
-
-## <a name="november-2020-new-in-preview-only"></a>Novembro de 2020: Novidades somente na pré-visualização
-
-### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
-Estreia da [API de computador na nuvem](/graph/api/resources/virtualendpoint?view=graph-rest-beta&preserve-view=true) que permite que as organizações provisionem e gerenciem as máquinas virtuais para os funcionários. Use-o em conjunto com a API do Intune para gerenciar os pontos de extremidade físicos e virtuais.
-
-### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
-[Inscreva-se para alterar as notificações](webhooks.md) em uma [definição de tarefa de impressão](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true).
-
-### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gestão corporativa
-As atualizações de [Novembro](changelog.md#november-2020) do Intune para a versão beta.
-
-### <a name="identity-and-access"></a>Identidade e acesso
-- Especificar URLs para envio de tokens de entrada de usuário e URIs de códigos de autorização e tokens de acesso, na propriedade **spa** de [aplicativo](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true).
-- Personalize a aparência das telas de entrada do Azure Active Directory usando as [propriedades de identidade visual organização](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true). As organizações podem personalizar com base na localidade para usuários específicos.
-
-### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
-A estreia da [API de revisão de acesso para a associação de grupo](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) para revisar regularmente o acesso de usuários, certifique-se de que apenas as pessoas certas tenham acesso contínuo e gerenciem os membros do grupo de forma eficiente.
-
-### <a name="search"></a>Pesquisar
-Você pode agregar resultados de pesquisa de tipo numérico ou cadeia de caracteres que são importados por [conectores do Microsoft Graph](/microsoftsearch/connectors-overview) e que são configurados para serem refináveis no [esquema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). Veja mais informações sobre [refinar resultados de pesquisa usando agregações](search-concept-aggregation.md).
-
-
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?
 
 Estas são algumas maneiras de se envolver:
@@ -147,6 +131,6 @@ Estas são algumas maneiras de se envolver:
 
 ## <a name="see-also"></a>Confira também
 - Confira o [blog de desenvolvedores do Microsoft Graph](https://developer.microsoft.com/graph/blogs/) periodicamente para comunicados de lançamentos e recursos úteis.
-- Navegue pelas informações das inclusões da API do Microsoft Graph e pelas atualizações de comportamento de API no [changelog](changelog.md).
+- Navegue pelas informações das inclusões da API do Microsoft Graph e pelas atualizações de comportamento de API no [changelog](https://developer.microsoft.com/graph/changelog/).
 - Encontre [destaques de versões anteriores](whats-new-earlier.md).
 - Saiba mais sobre o [controle de versão, suporte e mudanças significativas de políticas do Microsoft Graph](versioning-and-support.md).

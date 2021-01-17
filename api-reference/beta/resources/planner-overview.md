@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 68937861670ec9299b24dc00a881b01c77f5787e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b2001915b5c63817c6826c0a0b175b0bb70ff82
+ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48094971"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49882770"
 ---
 # <a name="use-the-planner-rest-api"></a>Usar a API REST do Planner
 
@@ -20,18 +20,23 @@ ms.locfileid: "48094971"
 
 Antes de começar a experimentar a API do Planner, vale a pena entender como os principais objetos na API do Planner se relacionam entre si e também com os grupos do Microsoft 365.
 
-## <a name="microsoft-365-groups"></a>Grupos do Microsoft 365
+## <a name="plan-containers"></a>Planejar contêineres
+No Planner, os planos estão sempre contidos em outro recurso. O recurso contido determina as regras de autorização do plano e todas as tarefas nele contidas, bem como o ciclo de vida do plano. Por exemplo, para planos contidos por grupos do Microsoft 365, os membros do grupo serão capazes de criar, editar, resolver e excluir tarefas no plano, bem como alterar algumas propriedades de nível de plano, como o nome do plano ou nomes de rótulos. Além disso, quando o grupo é excluído, todos os planos do grupo são excluídos automaticamente ou, se um grupo for restaurado, todos os planos serão restaurados automaticamente.
 
-Os grupos do Microsoft 365 são os proprietários dos planos da API do Planner.
-Para [obter os planos pertencentes a um grupo](../api/plannergroup-list-plans.md), faça a solicitação HTTP a seguir.
+O tipo mais comum de contêiner é um grupo Microsoft 365.
+
+### <a name="container-type-microsoft-365-groups"></a>Tipo de contêiner: grupos Microsoft 365
+
+Os planos geralmente estão contidos em grupos do Microsoft 365 na API do Planner.
+Para [obter os planos pertencentes a um grupo](../api/plannergroup-list-plans.md), faça a seguinte solicitação HTTP.
 
 ``` http
 GET /groups/{group-id}/planner/plans
 ```
 
-Ao [criar um novo plano](../api/planner-post-plans.md), torne o grupo o proprietário do plano definindo a propriedade `owner` em um objeto de plano. Os planos devem pertencer a grupos.
+Ao [criar um novo plano](../api/planner-post-plans.md), faça de um grupo seu contêiner definindo a propriedade `container` em um objeto de plano. Os planos devem estar contidos em um recurso com suporte.
 
->**Observação**: o usuário que está criando o plano deve ser um membro do grupo que será proprietário do plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
+>**Observação:** o usuário que está criando o plano deve ser membro do grupo que conterá o plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
 
 ## <a name="plans"></a>Planos
 
