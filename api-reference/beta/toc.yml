@@ -486,7 +486,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -1274,7 +1274,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
           - name: Place
             items:
-              - name: Local
+              - name: Place
                 href: resources/place.md
               - name: Tipo de sala
                 href: resources/room.md
@@ -1422,7 +1422,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: Excluir
                 href: api/onlinemeeting-delete.md
-          - name: Presença (pré-visualização)
+          - name: Presença
             href: resources/presence.md
             items:
               - name: Obter presença
@@ -1475,7 +1475,7 @@ items:
                     href: api/reviewset-post.md
                   - name: Obter
                     href: api/reviewset-get.md
-              - name: Revisar a consulta de conjunto
+              - name: Revisar a consulta do conjunto
                 href: resources/reviewsetquery.md
                 items:
                   - name: Listar
@@ -2002,7 +2002,7 @@ items:
                     href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md
                   - name: Faixa de aplicativos da Loja Gerenciada do Android
                     href: resources/intune-apps-androidmanagedstoreapptrack.md
-                  - name: Aplicativo Web da Loja Gerenciada do Android
+                  - name: Aplicativo Web do armazenamento gerenciado Android
                     href: resources/intune-apps-androidmanagedstorewebapp.md
                     items:
                       - name: Listar
@@ -2251,7 +2251,7 @@ items:
                         href: api/intune-apps-macosmdatpapp-delete.md
                       - name: Atualizar
                         href: api/intune-apps-macosmdatpapp-update.md
-                  - name: Aplicativo microsoft edge do macOS
+                  - name: aplicativo microsoft edge do macOS
                     href: resources/intune-apps-macosmicrosoftedgeapp.md
                     items:
                       - name: Listar
@@ -2562,7 +2562,7 @@ items:
                         href: api/intune-apps-mobileappcontentfile-renewupload.md
                   - name: Estado de carregamento do arquivo de conteúdo do aplicativo móvel
                     href: resources/intune-apps-mobileappcontentfileuploadstate.md
-                  - name: Dependência de aplicativos móveis
+                  - name: Dependência de aplicativo móvel
                     href: resources/intune-apps-mobileappdependency.md
                     items:
                       - name: Listar
@@ -2685,7 +2685,7 @@ items:
                     href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
                   - name: Destino de atribuição de grupo de configuração do Office
                     href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-                  - name: ID do produto (Product ID) do Office
+                  - name: ID do produto do Office
                     href: resources/intune-apps-officeproductid.md
                   - name: Aplicativo do pacote Office
                     href: resources/intune-apps-officesuiteapp.md
@@ -5659,7 +5659,7 @@ items:
                     href: resources/intune-deviceconfig-mediacontentratingunitedstates.md
                   - name: Tipo de limite de conexão limitada
                     href: resources/intune-deviceconfig-meteredconnectionlimittype.md
-                  - name: Presença do dock do Microsoft launcher
+                  - name: Presença do dock do microsoft launcher
                     href: resources/intune-deviceconfig-microsoftlauncherdockpresence.md
                   - name: Posicionamento da barra de pesquisa do Microsoft Launcher
                     href: resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md
@@ -7997,7 +7997,7 @@ items:
                     href: resources/intune-devices-userexperienceanalyticshealthstate.md
                   - name: Insight de análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsinsight.md
-                  - name: Gravidade do insight da análise da experiência do usuário
+                  - name: Severidade do insight da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsinsightseverity.md
                   - name: Valor do insight da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsinsightvalue.md
@@ -8027,7 +8027,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
                       - name: Atualizar
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
-                  - name: Categoria de reinicialização do sistema operacional de análise de experiência do usuário
+                  - name: Categoria de reinicialização do sistema operacional de análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
                   - name: Visão geral da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoverview.md
@@ -10405,7 +10405,7 @@ items:
                             href: api/countrynamedlocation-update.md
                           - name: Excluir
                             href: api/countrynamedlocation-delete.md
-                      - name: Local nomeado pelo IP
+                      - name: Local nomeado por IP
                         items:
                           - name: Local nomeado por IP
                             href: resources/ipnamedlocation.md
@@ -10563,7 +10563,7 @@ items:
               - name: Política
                 href: resources/policy-overview.md
                 items:
-                  - name: Política de tempo de vida baseada em atividade
+                  - name: Política de tempo de tempo de atividade baseada em
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
                       - name: Criar
@@ -12462,7 +12462,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
