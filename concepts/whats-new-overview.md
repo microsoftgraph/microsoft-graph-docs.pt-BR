@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: f9fb8834895c7b61745dab084c2b1807ef6143dd
-ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
+ms.openlocfilehash: 9d041944b65949564ade9f1fc4bfc12d5e69519f
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883400"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910756"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -16,6 +16,7 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 
 > [!IMPORTANT]
 > Os recursos, incluindo APIs e ferramentas, no status de _visualização_, podem ser alterados sem aviso prévio e alguns talvez nunca sejam promovidos ao status DG. Não use os recursos de visualização em aplicativos de produção.
+
 
 ## <a name="january-2021-new-in-preview-only"></a>Janeiro de 2021: novo apenas em pré-visualização
 
@@ -42,7 +43,7 @@ Use permissões delegadas em aplicativos em nome do usuário conectado:
 Obtenha o status de processamento de um grupo dinâmico baseado em regras usando a propriedade **membershipRuleProcessingStatus**. Isso é útil quando um atributo de um usuário é alterado, a associação do usuário em um [grupo Microsoft 365](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) baseado em regras é reavaliada com base nas regras de associação de grupo definidas para a organização. 
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
-- Os aplicativos podem usar permissões delegadas para permitir que os usuários chamem APIs para gerenciar seus próprios [métodos de autenticação](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true) ou usar permissões de aplicativos para permitir que os administradores gerenciem métodos de autenticação para outros usuários.
+- Os aplicativos podem usar as permissões do aplicativo para permitir que os administradores gerenciem os [métodos de autenticação](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true) dos usuários.
 - Suporte ao [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta&preserve-view=true) como um método de autenticação de um usuário para entrar ou executar autenticação multifator no Azure Active Directory.
 - Use a [política do Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) para definir as configurações e usuários ou grupos que podem usar o Microsoft Authenticator como método de autenticação. Use a política do Microsoft Authenticator no lugar da [política de login por telefone sem senha do Microsoft Authenticator](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true), que está obsoleta. 
 - Ofereça suporte ao [Windows Hello para Empresas](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta&preserve-view=true) como um método de autenticação para um usuário entrar em dispositivos Windows sem usar uma senha.
