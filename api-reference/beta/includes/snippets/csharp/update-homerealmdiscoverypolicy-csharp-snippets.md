@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 669826cf47f4b69894176796def8423146ca5bfa
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 21d2a802f183cb6ea85d0098e1fcff6d77875c1b
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590034"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910722"
 ---
 ```csharp
 
@@ -18,8 +18,7 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
         "definition-value"
     },
     DisplayName = "displayName-value",
-    IsOrganizationDefault = true,
-    Type = "type-value"
+    IsOrganizationDefault = true
 };
 
 await graphClient.Policies.HomeRealmDiscoveryPolicies["{id}"]
