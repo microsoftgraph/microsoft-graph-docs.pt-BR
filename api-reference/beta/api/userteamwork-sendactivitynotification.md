@@ -5,15 +5,17 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3dfc3858e51d227bd270bbe783636a4b23c17362
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 6a772894e46dd553048ae3d429a9af782173be7f
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873126"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910714"
 ---
 # <a name="userteamwork-sendactivitynotification"></a>userTeamwork: sendActivityNotification
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Envie uma notificação de feed de atividades para um usuário. Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, confira [o envio de notificações de atividades do Teams.](/graph/teams-send-activityfeednotifications)
 

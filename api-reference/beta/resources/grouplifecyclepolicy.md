@@ -5,20 +5,22 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d01be98869a62d72b275f5840ddc2e0edcd5c698
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 647187e7eee5c26a03cff800c5e6a7628d9166e3
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078427"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910315"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Tipo de recurso groupLifecyclePolicy
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Representa uma política de ciclo de vida para um grupo do Microsoft 365. Uma política de ciclo de vida permite aos administradores definir um período de validade para os grupos. Por exemplo, após 180 dias o grupo expira. Quando um grupo alcança esse prazo, os proprietários devem renovar o grupo por um período definido pelo administrador. Depois de renovado, o período de validade é estendido de acordo com o número de dias definido na política. Por exemplo, a nova validade do grupo é de 180 dias após a renovação. Caso não seja renovado, ele expirará e será excluído. É possível renovar o grupo no prazo de 30 dias da data de exclusão.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -28,7 +30,7 @@ Representa uma política de ciclo de vida para um grupo do Microsoft 365. Uma po
 |[Excluir groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | Nenhum | Excluir um objeto groupLifecyclePolicy. |
 |[Adicionar um grupo a um objeto groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|Nenhum| Adicionar um grupo a uma política de ciclo de vida |
 |[Remover um grupo de um objeto groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|Nenhum| Remover um grupo de uma política de ciclo de vida. |
-|[Renovar um grupo](../api/grouplifecyclepolicy-renewgroup.md)|Nenhum| Renovar a data de vencimento de um grupo. |
+|[Renovar um grupo](../api/grouplifecyclepolicy-renewgroup.md)|Nenhum| Renovar a data de expiração de um grupo. |
 
 ## <a name="properties"></a>Propriedades
 

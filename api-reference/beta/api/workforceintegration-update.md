@@ -1,16 +1,16 @@
 ---
 title: Atualizar workforceintegration
-description: Atualiza as propriedades de um objeto workforceintegration.
+description: Atualizar as propriedades de um objeto workforceintegration.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3e1f7c6486e42ecc2f41604866eef9dd7d069651
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6885976681e11640ea3205ce841fe1f6620e626a
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970538"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910606"
 ---
 # <a name="update-workforceintegration"></a>Atualizar workforceintegration
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [workforceintegration](../resources/workforceintegration.md) .
+Atualizar as propriedades de um [objeto workforceintegration.](../resources/workforceintegration.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | WorkforceIntegration. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | WorkforceIntegration.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teamwork/workforceIntegrations
+PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -51,22 +51,22 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Versão da API para a URL de retorno de chamada. Comece com 1.|
-|displayName|String|Nome da integração da força de funcionários.|
-|encripta|workforceIntegrationEncryption|O recurso de criptografia de integração da força de funcionários. |
-|isActive|Booliano|Indica se a integração da força de trabalho está ativa e disponível atualmente.|
-|compatível|string| Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
-|supportedEntities|string| Essa propriedade substituirá **suporte** em v 1.0. Recomendamos que você use essa propriedade em vez de **suportar**. A **Propriedade** Supports ainda será suportada na versão beta para o momento. Os valores possíveis são:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se selecionar mais de um valor, todos os valores devem começar com a primeira letra em maiúsculas.|
-|url|Cadeia de caracteres| URL de integração de força de obra para retornos de chamada do serviço de turno. |
+|displayName|Cadeia de caracteres|Nome da integração da força de trabalho.|
+|criptografia|workforceIntegrationEncryption|O recurso de criptografia de integração da força de trabalho. |
+|isActive|Booliano|Indica se essa integração de força de trabalho está ativa e disponível no momento.|
+|oferece suporte|string| Os valores possíveis `none` são , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se você selecionar mais de um valor, todos os valores deverão começar com a primeira letra em maiúsculas.|
+|supportedEntities|string| Essa propriedade substituirá **os suportes** na v1.0. Recomendamos que você use essa propriedade em vez de **suporte.** A **propriedade** supports ainda terá suporte na versão beta por enquanto. Os valores possíveis `none` são , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Se você selecionar mais de um valor, todos os valores deverão começar com a primeira letra em maiúsculas.|
+|url|Cadeia de caracteres| URL de integração da força de trabalho para retornos de chamada do serviço Shift. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [workforceIntegration](../resources/workforceintegration.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [workforceIntegration](../resources/workforceintegration.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-a-workforceintegration-object"></a>Exemplo 1: atualizar um objeto workforceIntegration
+### <a name="example-1-update-a-workforceintegration-object"></a>Exemplo 1: Atualizar um objeto workforceIntegration
 
-O exemplo a seguir atualiza um objeto **workforceIntegration** .
+O exemplo a seguir atualiza um **objeto workforceIntegration.**
 
 #### <a name="request"></a>Solicitação
 
@@ -79,7 +79,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/teamwork/workforceIntegrations
+PATCH https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceIntegrationId}
 Content-type: application/json
 
 {
@@ -142,9 +142,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Exemplo 2: criar um novo workforceIntegration com o SwapRequest habilitado para filtragem de qualificação
+### <a name="example-2-create-a-new-workforceintegration-with-swaprequest-enabled-for-eligibility-filtering"></a>Exemplo 2: Criar uma nova workforceIntegration com SwapRequest habilitado para filtragem de qualificação
 
-O exemplo a seguir cria um novo **workforceIntegration** com SwapRequest habilitado para filtragem de qualificação.
+O exemplo a seguir cria uma nova **workforceIntegration** com SwapRequest habilitado para filtragem de qualificação.
 
 #### <a name="request"></a>Solicitação
 
@@ -188,15 +188,15 @@ HTTP/1.1 200 OK
 }
 
 ```
-Para criar um novo **workforceIntegration** com o SwapRequest habilitado para filtragem de qualificação, confira o método [Create](../api/workforceintegration-post.md) .
+Para criar uma nova **workforceIntegration** com SwapRequest habilitado para filtragem de qualificação, consulte o [método](../api/workforceintegration-post.md) Create.
 
-### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Exemplo 3: buscando turnos qualificados quando o SwapRequest está incluído no eligibilityFilteringEnabledEntities
+### <a name="example-3-fetching-eligible-shifts-when-swaprequest-is-included-in-eligibilityfilteringenabledentities"></a>Exemplo 3: Buscar turnos qualificados quando SwapRequest estiver incluído em eligibilityFilteringEnabledEntities
 
-A interação entre o aplicativo turnos e os pontos de extremidade de integração da força de força seguirá o padrão existente.
+A interação entre os pontos de extremidade de integração do aplicativo Shifts e da força de trabalho seguirá o padrão existente.
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação feita por turnos para o ponto de extremidade de integração de força de funcionários para buscar turnos qualificados para uma solicitação de troca.
+A seguir está um exemplo da solicitação feita por Shifts ao ponto de extremidade de integração da força de trabalho para buscar turnos qualificados para uma solicitação de troca.
 
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
@@ -213,7 +213,7 @@ Accept-Language: en-us
 ```
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta do serviço de integração de força de funcionários.
+A seguir está um exemplo da resposta do serviço de integração da força de trabalho.
 ```
 HTTP/1.1 200 OK
 {
