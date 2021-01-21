@@ -1,22 +1,22 @@
 ---
 title: Listar logons
-description: Descreve o método list do recurso de entrada (entidade) da API do Microsoft Graph.
+description: Descreve o método de lista do recurso signIn (entidade) da API do Microsoft Graph.
 localization_priority: Normal
 author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a7218b1fb30906c309664464069f2364af29dfde
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 56a66140da750edc44408ecf5f06c0905e9bafe8
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523529"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910707"
 ---
 # <a name="list-signins"></a>Listar logons
 
 Namespace: microsoft.graph
 
-Recupera os logons de usuário do Azure AD para seu locatário. As entradas interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e os logins federados bem-sucedidos estão incluídos atualmente nos logs de entrada.
+Recupera os logons de usuário do Azure AD para seu locatário. As inserções que são interativas por natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de logom.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AuditLog. Read. All e Directory. Read. All |
+|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
-|Aplicativo | AuditLog. Read. All e Directory. Read. All  |
+|Aplicativo | AuditLog.Read.All e Directory.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -37,7 +37,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
+Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query_parameters).
 
 |Nome     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -45,7 +45,7 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 |[$top](/graph/query_parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/signIns?$top=1`|
 |[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte pelo parâmetro $filter
+### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte $filter parâmetro
 
 |Nome do atributo |Operadores com suporte|
 |:----------------|:------|
@@ -69,7 +69,6 @@ Este método oferece suporte aos seguintes parâmetros de consulta OData para aj
 |deviceDetail/browser| eq, startswith|
 |deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
-|isrisky| eq|
 
 ## <a name="response"></a>Resposta
 

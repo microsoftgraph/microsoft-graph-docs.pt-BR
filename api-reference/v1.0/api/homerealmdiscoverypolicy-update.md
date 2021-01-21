@@ -1,16 +1,16 @@
 ---
 title: Atualizar homerealmdiscoverypolicy
-description: Atualize as propriedades do objeto homeRealmDiscoveryPolicy.
+description: Atualizar as propriedades do objeto homeRealmDiscoveryPolicy.
 localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ff6234d2ec215fe44d56759148b4950507df4aa2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a80c7003a33a3bc06b7e4b073628daadcfdbd349
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973250"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910396"
 ---
 # <a name="update-homerealmdiscoverypolicy"></a>Atualizar homerealmdiscoverypolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 
 
-Atualiza as propriedades de um objeto [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) .
+Atualizar as propriedades de um [objeto homeRealmDiscoveryPolicy.](../resources/homerealmdiscoverypolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,10 +51,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|definir|Coleção de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política.  Obrigatório.|
-|description|String| Descrição da política.|
-|displayName|String| Nome para exibição dessa política. Obrigatório.|
-|isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|definição|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
+|description|Cadeia de caracteres| Descrição desta política.|
+|displayName|Cadeia de caracteres| Nome para exibição desta política. Obrigatório.|
+|isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como padrão da organização. Opcional, o valor padrão é false.|
 
 ## <a name="response"></a>Resposta
 
@@ -82,8 +82,7 @@ Content-type: application/json
     "definition-value"
   ],
   "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "type": "type-value"
+  "isOrganizationDefault": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

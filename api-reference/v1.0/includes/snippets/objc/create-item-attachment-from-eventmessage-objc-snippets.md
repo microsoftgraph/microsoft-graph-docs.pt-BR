@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6dbf29da223faf3f6eedb22eba34e86499e2ea92
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 6761b204536f30fe91002ebfe90f36a2acd171d8
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684405"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910533"
 ---
 ```objc
 
@@ -18,7 +18,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphAttachment *attachment = [[MSGraphAttachment alloc] init];
 [attachment setName:@"name-value"];
-[attachment setItem:@"{message or event entity}"];
+MSGraphOutlookItem *item = [[MSGraphOutlookItem alloc] init];
+[attachment setItem:item];
 
 NSError *error;
 NSData *attachmentData = [attachment getSerializedDataWithError:&error];

@@ -1,16 +1,16 @@
 ---
 title: Atualizar activitybasedtimeoutpolicy
-description: Atualiza as propriedades de um objeto activityBasedTimeoutPolicy.
+description: Atualizar as propriedades de um objeto activityBasedTimeoutPolicy.
 localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 913db31adfc2a75215304635e3117bf147f3b7f4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01cb29858af77410f6845c997f38ac963a6624f8
+ms.sourcegitcommit: 6314172db76ba9f2c192d8c099d818c5e772d2b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992927"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49910359"
 ---
 # <a name="update-activitybasedtimeoutpolicy"></a>Atualizar activitybasedtimeoutpolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 
 
-Atualiza as propriedades de um objeto [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) .
+Atualizar as propriedades de um [objeto activityBasedTimeoutPolicy.](../resources/activitybasedtimeoutpolicy.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,10 +51,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|definir|Coleção de cadeias de caracteres| Uma coleção de cadeia de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações da política.  Obrigatório.|
-|description|String| Descrição da política.|
-|displayName|String| Nome para exibição dessa política. Obrigatório.|
-|isOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|definição|Coleção de cadeias de caracteres| Uma coleção de cadeias de caracteres que contém uma cadeia de caracteres JSON que define as regras e as configurações dessa política.  Obrigatório.|
+|description|Cadeia de caracteres| Descrição desta política.|
+|displayName|Cadeia de caracteres| Nome para exibição desta política. Obrigatório.|
+|isOrganizationDefault|Booliano|Se definido como true, ativa essa política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como padrão da organização. Opcional, o valor padrão é false.|
 
 ## <a name="response"></a>Resposta
 
@@ -82,8 +82,7 @@ Content-type: application/json
     "definition-value"
   ],
   "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "type": "type-value"
+  "isOrganizationDefault": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
