@@ -1,16 +1,16 @@
 ---
 title: Criar assinatura
-description: Assina um aplicativo de escuta para receber notificações de alteração quando os dados de um recurso do Microsoft Graph são alterados.
+description: Assina um aplicativo ouvinte para receber notificações de alteração quando os dados de um recurso do Microsoft Graph são alterações.
 localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 850d0f893678ce51e502dcdeb560f816b5ff935c
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.prod: change-notifications
+ms.openlocfilehash: 9efe9120d71f12955f1495cca954d9e873b3da35
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597428"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934559"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -22,14 +22,14 @@ Inscreve um aplicativo de ouvinte para receber notificações de alterações qu
 
 ## <a name="permissions"></a>Permissões
 
-A criação de uma assinatura requer permissão de leitura para o recurso. Por exemplo, para obter notificações de alteração em mensagens, seu aplicativo precisa da permissão mail. Read. 
+Criar uma assinatura requer permissão de leitura para o recurso. Por exemplo, para receber notificações de alteração em mensagens, seu aplicativo precisa da permissão Mail.Read. 
 
  Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Incompatível | Incompatível | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage. Read. Group *, ChannelMessage. Read. All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
@@ -42,6 +42,7 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Sem suporte |
+|[impressora](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
@@ -51,13 +52,14 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 
 ### <a name="chatmessage"></a>chatMessage
 
-as assinaturas do **chat** com permissões delegadas não dão suporte a dados de recurso (o **includeResourceData** deve ser `false` ) e não precisam de [criptografia](/graph/webhooks-with-resource-data).
+**Assinaturas chatMessage** com permissões delegadas não suportam dados de recurso (**includeResourceData** deve ser ), e `false` não [exigem criptografia](/graph/webhooks-with-resource-data).
 
 Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura **chatMessage**, você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
 > **Observação:** `/teams/getAllMessages` e `/chats/getAllMessages` estão disponíveis para os usuários que têm as [licenças necessárias](https://aka.ms/teams-changenotification-licenses).
+No futuro, a Microsoft poderá exigir que você ou seus clientes pagarão taxas adicionais com base na quantidade de dados acessados por meio da API.
 
-> **Observação:** `/chats/getAllMessages` retorna somente mensagens de chats pertencentes ao locatário. Se um thread de chat é iniciado por um usuário fora do locatário, esse thread de chat não pertence ao locatário e não cria notificações de alteração.
+> **Observação:** `/chats/getAllMessages` retorna apenas mensagens de chats pertencentes ao locatário. Se um thread de chat for iniciado por um usuário fora do locatário, esse thread de chat não é de propriedade do locatário e não cria notificações de alteração.
 
 ### <a name="driveitem"></a>driveItem
 
@@ -77,7 +79,7 @@ As limitações adicionais se aplicam aos itens do Outlook. As limitações se a
 
 ### <a name="presence"></a>presença
 
-as assinaturas de **presença** exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
+**assinaturas** de presença [exigem criptografia.](/graph/webhooks-with-resource-data) A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -95,7 +97,7 @@ POST /subscriptions
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [Subscription](../resources/subscription.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
 
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 
@@ -106,7 +108,7 @@ Para detalhes sobre como os erros são retornados, confira [Respostas de erro][e
 No corpo da solicitação, forneça uma representação JSON do objeto [subscription](../resources/subscription.md).
 Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
 
-Esta solicitação cria uma assinatura para notificações de alteração sobre novos emails recebidos pelo usuário conectado no momento.
+Essa solicitação cria uma assinatura para notificações de alteração sobre novos emails recebidos pelo usuário atualmente assinado.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -150,7 +152,7 @@ Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
 
 #### <a name="resources-examples"></a>Exemplos de recursos
 
-Estes são os valores válidos para a Propriedade Resource.
+A seguir estão os valores válidos para a propriedade de recurso.
 
 | Tipo de recurso | Exemplos |
 |:------ |:----- |
@@ -164,6 +166,7 @@ Estes são os valores válidos para a Propriedade Resource.
 |[Lista](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Email](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Presença](../resources/presence.md)| `/communications/presences/{id}` (usuário único), `/communications/presences?$filter=id in ({id},{id}…)` (vários usuários)|
+|[impressora](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Usuários](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
@@ -203,7 +206,7 @@ Content-length: 252
 
 ### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
-O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
+O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl)** deve ser capaz de responder a uma solicitação de validação conforme descrito em Configurar notificações para alterações nos dados [do usuário.](/graph/webhooks#notification-endpoint-validation) Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 
 [error-response]: /graph/errors
 

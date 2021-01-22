@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 45c59567e8926e8ae7fc2429939b2491a8237782
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: f19ecbb4672ec877371621d7c96284f683f600db
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874281"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934871"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>Tipo de recurso unifiedRolePermission
 
@@ -44,16 +44,16 @@ Por exemplo: `microsoft.directory/applications/credentials/update`.
   - padrão - Designa propriedades de atualização comuns, mas exclui as privilegiadas. Por exemplo, `microsoft.directory/applications/standard/read`.
 - Ações - As operações que estão sendo concedidas. Na maioria das circunstâncias, as permissões devem ser expressas em termos crud ou allTasks. As ações incluem:
   - Criar - a capacidade de criar uma nova instância da entidade.
-  - Leitura - A capacidade de ler um determinado conjunto de propriedades (incluindo allProperties).
+  - Read - A capacidade de ler um determinado conjunto de propriedades (incluindo allProperties).
   - Atualização - a capacidade de atualizar um determinado conjunto de propriedades (incluindo allProperties).
   - Excluir - A capacidade de excluir uma determinada entidade.
   - AllTasks – Representa todas as operações CRUD (criar, ler, atualizar e excluir). 
 
 ### <a name="condition-property"></a>propriedade condition
-As condições definem restrições que devem ser atendidas. Por exemplo, um requisito de que a entidade seja um "proprietário" do destino. A seguir estão as condições com suporte:
+As condições definem restrições que devem ser atendidas. Por exemplo, um requisito de que o diretor seja um "proprietário" do destino. A seguir estão as condições com suporte:
 
-- Self: "@Subject.objectId == @Resource.objectId"
-- Proprietário: "@Subject.objectId Any_of @Resource.owners"
+- Self: "$ResourceIsSelf"
+- Proprietário: "$SubjectIsOwner"
 
 A seguir está um exemplo de uma permissão de função com uma condição.
 
@@ -64,7 +64,7 @@ A seguir está um exemplo de uma permissão de função com uma condição.
                 "microsoft.directory/applications/basic/update",
                 "microsoft.directory/applications/credentials/update"
             ],
-            "condition":  "@Subject.objectId Any_of @Resource.owners"
+            "condition":  "$SubjectIsOwner"
         }
     ]
 
@@ -91,8 +91,8 @@ Veja a seguir uma representação JSON do recurso.
 ```
 ## <a name="see-also"></a>Confira também
 
-- [Permissões de função de administrador no Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - Para obter informações sobre permissões para funções de diretórios integrados.
-- [Subtipos e](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) permissões de registro de aplicativo no Azure Active Directory - Para obter informações sobre permissões disponíveis para funções de diretório personalizadas. 
+- [Permissões de função de administrador no Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - Para obter informações sobre permissões para funções de diretório integrados.
+- [Subtipos e](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) permissões de registro de aplicativo no Azure Active Directory - Para obter informações sobre permissões que estão disponíveis para funções de diretório personalizadas. 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

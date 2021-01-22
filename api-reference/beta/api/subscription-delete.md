@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c6e8b1d203b5a14a4d450b459dbadeb06d2cfe45
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 5518091d21a3ed2e1c05a8bc95c70b62d7cb82eb
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597179"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934832"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | Incompatível | Incompatível | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage. Read. Group *, ChannelMessage. Read. All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
@@ -38,8 +38,9 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte | Sites.ReadWrite.All |
-|[message](../resources/message.md) | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All | Sem suporte | Sem suporte |
+|[impressora](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
@@ -49,11 +50,12 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 ### <a name="chatmessage"></a>chatMessage
 
-as assinaturas do **chat** com permissões delegadas não dão suporte a dados de recurso (o **includeResourceData** deve ser `false` ) e não precisam de [criptografia](/graph/webhooks-with-resource-data).
+**Assinaturas chatMessage** com permissões delegadas não suportam dados de recursos (**includeResourceData** deve ser ), e `false` não [exigem criptografia](/graph/webhooks-with-resource-data).
 
 Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura **chatMessage**, você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
 > **Observação:** `/teams/getAllMessages` e `/chats/getAllMessages` estão disponíveis para os usuários que têm as [licenças necessárias](https://aka.ms/teams-changenotification-licenses).
+No futuro, a Microsoft pode exigir que você ou seus clientes pagar taxas adicionais com base na quantidade de dados acessados por meio da API.
 
 ### <a name="driveitem"></a>driveItem
 
@@ -73,7 +75,7 @@ As limitações adicionais se aplicam aos itens do Outlook. As limitações se a
 
 ### <a name="presence"></a>presença
 
-as assinaturas de **presença** exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
+**assinaturas** de presença exigem [criptografia.](/graph/webhooks-with-resource-data) A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -95,7 +97,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 

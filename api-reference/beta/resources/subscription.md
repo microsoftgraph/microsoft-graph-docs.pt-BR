@@ -4,13 +4,13 @@ description: 'Uma assinatura que permite a um aplicativo cliente receber notific
 localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: f675f8648b15f36517c1880f7bdb0c3178ef6b67
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.prod: change-notifications
+ms.openlocfilehash: e34f6f04545c9f878e5429e54923ef223a883547
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597409"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934799"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -29,8 +29,9 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - Uma [mensagem][], [evento][] ou [contato][] no Outlook
 - A [presença][] de um usuário no Microsoft Teams
 - Um [usuário][] ou [grupo][] no Azure Active Directory
-- Um [printTaskDefinition][] no serviço de impressão
-- Uma [todoTask] de um usuário da Microsoft para fazer
+- Uma [impressora][] no Serviço de Impressão (quando um trabalho de impressão para a impressora chega ao estado JobFetchable – pronto para ser buscado para impressão).
+- Uma [printTaskDefinition][] no Serviço de Impressão
+- Um [todoTask] de um usuário no Microsoft To Do
 
 Consulte [usar o Microsoft Graph API para obter notificações de alteração](webhooks.md) dos possíveis valores de caminho de recurso de cada recurso suportado.
 
@@ -38,25 +39,25 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 
 | Método | Tipo de retorno | Descrição |
 |:-------|:------------|:------------|
-| [Criar assinatura](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Assina um aplicativo de escuta para receber notificações sobre alterações nos dados do Microsoft Graph. |
-| [Atualizar assinatura](../api/subscription-update.md) | [assinatura](subscription.md) | Renovar uma assinatura atualizando seu tempo de expiração. |
-| [Listar de assinaturas](../api/subscription-list.md) | [subscription](subscription.md) | Lista assinaturas ativas. |
-| [Obter assinatura](../api/subscription-get.md) | [subscription](subscription.md) | Leia as propriedades e as relações do objeto Subscription. |
-| [Excluir assinatura](../api/subscription-delete.md) | Nenhuma | Excluir um objeto Subscription. |
+| [Criar assinatura](../api/subscription-post-subscriptions.md) | [assinatura](subscription.md) | Assina um aplicativo de escuta para receber notificações sobre alterações nos dados do Microsoft Graph. |
+| [Atualizar assinatura](../api/subscription-update.md) | [subscription](subscription.md) | Renove uma assinatura atualizando seu tempo de expiração. |
+| [Listar de assinaturas](../api/subscription-list.md) | [assinatura](subscription.md) | Lista assinaturas ativas. |
+| [Obter assinatura](../api/subscription-get.md) | [subscription](subscription.md) | Leia as propriedades e os relacionamentos do objeto subscription. |
+| [Excluir assinatura](../api/subscription-delete.md) | Nenhuma | Exclua um objeto subscription. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| changeType | cadeia de caracteres | Indica qual é o tipo de alteração no recurso inscrito que irá emitir uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. Obrigatório. <br><br>Observação: As notificações de alteração de lista e item raiz da unidade suportam apenas o `updated` changeType. Suporte para notificações de alteração de usuário e grupo `updated` e `deleted` changeType. |
+| changeType | string | Indica qual é o tipo de alteração no recurso inscrito que irá emitir uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. Obrigatório. <br><br>Observação: As notificações de alteração de lista e item raiz da unidade suportam apenas o `updated` changeType. Suporte para notificações de alteração de usuário e grupo `updated` e `deleted` changeType. |
 | notificationUrl | cadeia de caracteres | A URL do ponto de extremidade que recebe as notificações de alteração. Esta URL deve usar o protocolo HTTPS. Obrigatório. |
-| lifecycleNotificationUrl | cadeia de caracteres | A URL do ponto de extremidade que recebe notificações de ciclo de vida, incluindo `subscriptionRemoved` e `missed` notificações. Esta URL deve usar o protocolo HTTPS. Opcional. <br><br>[Leia mais](/graph/webhooks-lifecycle) sobre como os recursos do Outlook usam notificações de ciclo de vida. |
-| recurso | cadeia de caracteres | Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/beta/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado. Obrigatório. |
+| lifecycleNotificationUrl | string | A URL do ponto de extremidade que recebe notificações de ciclo de vida, incluindo `subscriptionRemoved` `missed` e notificações. Esta URL deve usar o protocolo HTTPS. Opcional. <br><br>[Leia mais sobre](/graph/webhooks-lifecycle) como os recursos do Outlook usam notificações de ciclo de vida. |
+| recurso | string | Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/beta/`). Consulte os possíveis valores do [caminho](webhooks.md) do recurso de cada recurso suportado. Obrigatório. |
 | expirationDateTime | DateTimeOffset | Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. Obrigatório. |
-| clientState | string | Especifica o valor da propriedade **ClientState** enviada pelo serviço em cada notificação de alteração. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço, comparando o valor da propriedade **ClientState** enviada com a assinatura com o valor da propriedade **ClientState** recebida com cada notificação de alteração. Opcional. |
+| clientState | string | Especifica o valor da propriedade **clientState** enviada pelo serviço em cada notificação de alteração. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço comparando o valor da propriedade **clientState** enviada com a assinatura com o valor da propriedade **clientState** recebida com cada notificação de alteração. Opcional. |
 | id | string | Identificador exclusivo da assinatura. Somente leitura. |
 | ApplicationId | cadeia de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
-| creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, este campo conterá a ID do usuário conectado o aplicativo chamado em nome de. Se o aplicativo usava permissões de aplicativo, este campo contém a ID da entidade de serviço correspondente ao aplicativo. Somente leitura. |
+| creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, esse campo contém a ID do usuário que o aplicativo chamou em nome dele. Se o aplicativo usou permissões de aplicativo, esse campo contém a ID da entidade de serviço correspondente ao aplicativo. Somente leitura. |
 | includeResourceData | Booleano | Quando definido como `true`, alterar as notificações [inclui dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de bate-papo). Opcional. | 
 | encryptionCertificate | cadeia de caracteres | Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar os dados de recursos nas notificações de alteração. Opcional. Obrigatório quando **includeResourceData** é verdadeiro. | 
 | encryptionCertificateId | cadeia de caracteres | Um identificador personalizado fornecido pelo aplicativo para ajudar a identificar o certificado necessário para descriptografar os dados do recurso. Opcional. Obrigatório quando **includeResourceData** é verdadeiro. |
@@ -75,7 +76,8 @@ Consulte [usar o Microsoft Graph API para obter notificações de alteração](w
 | Outlook **mensagem**, **evento**, **contato**              | 4230 minutos (em 3 dias)    |
 | **usuário**, **grupo**, outros recursos de diretório   | 4230 minutos (em 3 dias)    |
 | **presence**        | 60 minutos (1 hora) |
-| Imprimir **printTaskDefinition** | 4230 minutos (em 3 dias)    |
+| Impressora **de impressão** | 4230 minutos (em 3 dias)    |
+| **PrintTaskDefinition** | 4230 minutos (em 3 dias)    |
 | **todoTask**              | 4230 minutos (em 3 dias)    |
 
 
@@ -141,6 +143,7 @@ Veja a seguir uma representação JSON do recurso.
 [chatMessage]: ./chatmessage.md
 [callRecord]: ./callrecords-callrecord.md
 [presence]: ./presence.md
+[impressora]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [todoTask]: ./todotask.md
 

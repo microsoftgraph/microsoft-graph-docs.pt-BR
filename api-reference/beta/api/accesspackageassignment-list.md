@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 170d7ca2262e2742b0ee0d63e42be7a71edab48e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 605bc5bdfcafbf4c7aaae9903530bc5d067c748f
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952231"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934531"
 ---
 # <a name="list-accesspackageassignments"></a>Listar accessPackageAssignments
 
@@ -18,7 +18,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Gerenciamento de direitos do Azure ad](../resources/entitlementmanagement-root.md), recupere uma lista de objetos [accessPackageAssignment](../resources/accesspackageassignment.md) . A lista resultante inclui todas as atribuições, atuais e bem como expiradas, que o chamador tem acesso para leitura, entre todos os catálogos e pacotes de acesso.
+No gerenciamento de direitos do [Azure AD,](../resources/entitlementmanagement-root.md)recupere uma lista de [objetos accessPackageAssignment.](../resources/accesspackageassignment.md) Para administradores de todo o diretório, a lista resultante inclui todas as atribuições, atuais e bem expiradas, que o chamador tem acesso para ler em todos os catálogos e pacotes de acesso.  Se o chamador estiver em nome de um usuário delegado que está atribuído apenas a funções administrativas delegadas específicas do catálogo, a solicitação deverá fornecer um filtro para indicar um pacote de acesso específico, como: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` .
+
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement. Read. All, EntitlementManagement. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -40,7 +41,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para retornar também o assunto de destino e o pacote de acesso, inclua `$expand=target,accessPackage` . Para recuperar apenas as atribuições entregues, você pode incluir uma consulta `$filter=assignmentState eq 'Delivered'` . Para recuperar apenas as atribuições de um usuário específico, você pode incluir uma consulta com atribuições direcionadas à ID do objeto do usuário: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Para recuperar somente as atribuições de um determinado usuário e um pacote de acesso específico, você pode incluir uma consulta com atribuições direcionando o pacote de acesso e a ID do objeto desse usuário: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Para recuperar apenas atribuições resultantes de uma determinada política de atribuição de pacote de acesso, você pode incluir uma consulta para essa política: `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` .
+Se o chamador estiver em nome de um usuário delegado que está atribuído apenas a funções administrativas delegadas específicas do catálogo, a solicitação deverá fornecer um filtro para indicar um pacote de acesso específico, como: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` .  Esse método também dá suporte a alguns dos parâmetros de consulta OData para ajudar a personalizar a resposta. Por exemplo, para também retornar o assunto de destino e o pacote de acesso, inclua `$expand=target,accessPackage` . Para recuperar apenas atribuições entregues, você pode incluir uma `$filter=assignmentState eq 'Delivered'` consulta. Para recuperar apenas atribuições para um usuário específico, você pode incluir uma consulta com atribuições direcionando a ID de objeto desse usuário: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Para recuperar apenas atribuições para um usuário específico e um pacote de acesso específico, você pode incluir uma consulta com atribuições segmentando esse pacote de acesso e a ID de objeto desse usuário: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .  Para recuperar apenas atribuições resultantes de uma diretiva de atribuição de pacote de acesso específica, você pode incluir uma consulta para essa política: `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` .
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -56,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [accessPackageAssignment](../resources/accesspackageassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos accessPackageAssignment](../resources/accesspackageassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

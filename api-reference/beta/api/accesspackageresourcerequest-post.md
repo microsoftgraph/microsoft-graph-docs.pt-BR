@@ -1,16 +1,16 @@
 ---
 title: Criar accessPackageResourceRequest
-description: Criar um novo accessPackageResourceRequest.
+description: Crie um novo accessPackageResourceRequest.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32725d510dba93e5db80c2b91a6f6ded020593df
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e7ea15dbe0ec63e539246851ce853b83c40229aa
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951731"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934533"
 ---
 # <a name="create-accesspackageresourcerequest"></a>Criar accessPackageResourceRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo objeto [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) para solicitar a adição de um recurso a um catálogo de pacotes do Access.
+Crie um novo [objeto accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) para solicitar a adição de um recurso a um catálogo de pacotes de acesso ou a remoção de um recurso de um catálogo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,9 +47,11 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) . Inclua a `accessPackageResource` relação com um objeto [accessPackageResource](../resources/accesspackageresource.md) como parte da solicitação.
+No corpo da solicitação, fornece uma representação JSON de um [objeto accessPackageResourceRequest.](../resources/accesspackageresourcerequest.md) Inclua a `accessPackageResource` relação com um objeto [accessPackageResource](../resources/accesspackageresource.md) como parte da solicitação.
 
-Para adicionar um grupo do Azure AD como um recurso a um catálogo, o valor da propriedade **originSystem** dentro do `accessPackageResource` deve ser **AadGroup** e o valor de **originid** é o identificador do grupo.
+Para adicionar um grupo do Azure AD como um recurso a um catálogo, de definida **a catalogId** como sendo da ID do catálogo, **requestType** como e uma representa o `AdminAdd` `accessPackageResource` recurso. O valor da **propriedade originSystem** dentro do deve ser e o valor de `accessPackageResource` `AadGroup` **originId** é o identificador do grupo.
+
+Para remover um aplicativo do Azure AD de um catálogo, de definida **a catalogId** como sendo da ID do catálogo, **requestType** como e o objeto de recurso a ser `AdminRemove` `accessPackageResource` removido.  O objeto de recurso pode ser recuperado usando [list accessPackageResources](accesspackagecatalog-list-accesspackageresources.md).
 
 
 ## <a name="response"></a>Resposta
