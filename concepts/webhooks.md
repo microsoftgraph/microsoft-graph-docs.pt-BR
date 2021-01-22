@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2d1c88e975f55361ee83d8ad99d31ab2caa492c5
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 046610705fe4d8a2e44f5adf35b0ae7797eee383
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882763"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934629"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -32,6 +32,7 @@ Um aplicativo também pode se inscrever para alterar notificações que incluem 
 
 Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alterações nos seguintes recursos:
 
+- Impressão na nuvem [impressora][]
 - Impressão na nuvem [printTaskDefinition][]
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business
@@ -297,6 +298,7 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 |[lista][] | Menos de 1 minuto | 5 minutos |
 |[mensagem][] | Desconhecido | Desconhecido |
 |[presença][] (pré-visualização) | Menos de 10 segundos | 1 minuto |
+|[impressora][] | Menos de 1 minuto | 5 minutos |
 |[printTaskDefinition][] | Menos de 1 minuto | 5 minutos |
 |[todoTask][] | Menos de 2 minutos | 15 minutos |
 |[usuário][] | Menos de 2 minutos | 15 minutos |
@@ -325,5 +327,6 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[impressora]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
