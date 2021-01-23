@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: cc67a821fa556609e791757a49e4a8934133ee1d
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: ae766fdd7deb4a36dd7870239ecd53e15244a3d1
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48222874"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945254"
 ---
 ```javascript
 
@@ -15,9 +15,11 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4')
+let res = await client.api('/bitlocker/recoveryKeys')
     .version('beta')
-    .select('key')
+    .header('ocp-client-name','"My Friendly Client"')
+    .header('ocp-client-version','"1.2"')
+    .filter('deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'')
     .get();
 
 ```

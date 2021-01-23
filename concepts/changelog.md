@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 6617c19feec89c55e07abba7b21d7379922766bc
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 7f53722b84784a4c52990c9acf48790ea33e79f1
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882749"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934790"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -116,8 +116,28 @@ Para obter um resumo do valor dessas alterações de API, além das ferramentas,
 | Alteração | beta | Alterada a propriedade **roomNumber** (Edm.Int) no recurso [printerLocation](/graph/api/resources/printerlocation?view=graph-rest-beta&preserve-view=true) para **roomName** (Edm.String). |
 | Alteração | beta | Tipo alterado de relacionamento allowedUsers no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true). |
 | Alteração | beta | Tipo alterado de relação allowedGroups no recurso [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true). |
-| Alteração | beta | Tipos de enumeração atualizados no recurso [printerProcessingStateDetail](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true#printerprocessingstatedetail-values). |
 | Adição | beta | Adicionada a ação de [configuração de atualização](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) ao recurso [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).|
+| Adição | beta | Adicionado o membro `outputAreaAlmostFull` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `none` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `movingToPaused` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `shutdown` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `connectingToDevice` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `timedOut` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `stopping` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `stoppedPartially` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `tonerLow` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `tonerEmpty` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `spoolAreaFull` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `doorOpen` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `opticalPhotoConductorNearEndOfLife` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `opticalPhotoConductorLifeOver` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `developerLow` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `developerEmpty` à enumeração **printerProcessingStateDetail**|
+| Adição | beta | Adicionado o membro `interpreterResourceUnavailable` à enumeração **printerProcessingStateDetail**|
+| Exclusão | beta | Removido o membro `disconnected` da enumeração **printerProcessingStateDetail**|
+| Exclusão | beta | Removido o membro `queueFull` da enumeração **printerProcessingStateDetail**|
+| Exclusão | beta | Removido o membro `outputAlmostFull` da enumeração **printerProcessingStateDetail**|
+| Exclusão | beta | Removido o membro `unknownFutureValue` da enumeração **printerProcessingStateDetail**|
 
 ### <a name="education"></a>Educação
 
@@ -896,7 +916,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A função [delta](/graph/api/event-delta?view=graph-rest-beta&preserve-view=true) suporta um cenário adicional para obter alterações incrementais (novo, atualizado ou removido) de eventos em um calendário de usuário sem necessidade de estarem limitados por um intervalo de data. |
 
-### <a name="change-notifications"></a>Notificações de alteração
+### <a name="change-notifications"></a>Alterar notificações
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
