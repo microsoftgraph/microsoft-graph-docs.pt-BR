@@ -1,16 +1,16 @@
 ---
 title: Excluir externalConnection
-description: Excluir um externalConnection.
+description: Exclua uma externalConnection.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 1b3e795c51f6ded27bb9f63706939c5a5ff1fa8b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 37b46e3cd6de8a12d6a77106abbe81a8a5da090f
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965660"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943609"
 ---
 # <a name="delete-externalconnection"></a>Excluir externalConnection
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [externalConnection](../resources/externalconnection.md).
+[Exclua uma externalConnection](../resources/externalconnection.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -100,7 +100,7 @@ Este é um exemplo de resposta.
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

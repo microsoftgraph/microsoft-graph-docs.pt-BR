@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: c2dc2a0882e54dc9172e1a4420dafbcf67edece2
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: 03b0b359a462e946fa4ceeacfd034c34c826493e
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768235"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934622"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -134,7 +134,7 @@ Esse recurso permite:
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
-|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte para `$filter`.    |
+|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte para `$filter`.    |
 |ageGroup|[ageGroup](#agegroup-values)|Define a faixa etária do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. |
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |
@@ -167,7 +167,7 @@ Esse recurso permite:
 |lastPasswordChangeDateTime| DateTimeOffset | A hora em que o usuário do Azure AD alterou a senha dele pela última vez. As informações de data e hora usam o formato ISO 8601 e estão sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licenças para esse usuário. Somente leitura.|
-|email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Oferece suporte para `$filter`.|
+|email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Oferece suporte para `$filter` e `endsWith`.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Configurações da caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada.|
 |mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte para `$filter`.|
 |mobilePhone|String|O número de celular principal do usuário. Somente leitura para usuários sincronizados do diretório local. Retornado por padrão. |
@@ -202,7 +202,7 @@ Esse recurso permite:
 |streetAddress|String|O endereço do local de trabalho do usuário.|
 |surname|String|O sobrenome do usuário (nome de família ou sobrenome). Retornado por padrão. Oferece suporte para `$filter`.|
 |usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países.  Os exemplos incluem: "US", "JP" e "GB". Não anulável. Oferece suporte para `$filter`.|
-|userPrincipalName|String|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, onde o domínio deve estar presente na coleta de domínios verificados pelo locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). <br><br>Retornado por padrão. Oferece suporte para `$filter` e `$orderby`.
+|userPrincipalName|String|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, onde o domínio deve estar presente na coleta de domínios verificados pelo locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). <br><br>Retornado por padrão. Oferece suporte para `$filter`, `$orderby` e `endsWith`.
 |userType|String|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Membro” e “Convidado”. Oferece suporte para `$filter`.          |
 
 ### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
@@ -262,7 +262,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade manager está definida como esse usuário.) Somente leitura. Anulável. |
 |drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
-|events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
+|eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[officeGraphInsights](officegraphinsights.md) | Somente leitura. Anulável.|

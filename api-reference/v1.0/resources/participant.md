@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso participante
+title: tipo de recurso participant
 description: Representa o tipo de participante.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0c5004ea45cf44818c30ffe02dc48a1f6851e64a
-ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.openlocfilehash: 99f165f2f3e99ab424a318b053a060ccda8fdc1c
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137110"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49943714"
 ---
-# <a name="participant-resource-type"></a>tipo de recurso participante
+# <a name="participant-resource-type"></a>tipo de recurso participant
 
 Namespace: microsoft.graph
 
@@ -22,22 +22,22 @@ Representa um participante em uma chamada.
 
 | Método                                                 | Tipo de retorno                                                 | Descrição                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
-| [Lista de participantes](../api/participant-get.md)          | [participante](participant.md)                               | Recupere uma lista de objetos **participantes** na chamada. |
-| [Obter participante](../api/participant-get.md)           | [participante](participant.md)                               | Leia as propriedades do objeto **participante** . |
-| [Excluir participante](../api/participant-delete.md)         | Nenhum   | Excluir um participante de uma chamada.                  |
-| [Convidar](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Convidar um participante para a chamada.              |
-| [Ativar mudo para participante](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Tirar o áudio de um participante em uma chamada.                  |
+| [Listar participantes](../api/participant-get.md)          | [participante](participant.md)                               | Recupere uma lista de **objetos** de participante na chamada. |
+| [Obter participante](../api/participant-get.md)           | [participante](participant.md)                               | Leia as propriedades do **objeto participante.** |
+| [Excluir participante](../api/participant-delete.md)         | Nenhum   | Exclua um participante de uma chamada.                  |
+| [Convidar](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Convide um participante para a chamada.              |
+| [Ativar mudo para participante](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Silenciar um participante em uma chamada.                  |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo                                     | Descrição                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | Cadeia de caracteres                                   | A ID do participante.                                          |
-| informações                  | [participantInfo](participantinfo.md)    | O participante do participante.                          |
-| isInLobby            | Booliano                                  | `true` Se o participante estiver no lobby.                          |
-| IsMuted              | Booliano                                  | `true` Se o participante estiver com mudo ativado (cliente ou servidor sem som).    |
-| mediaStreams         | coleção [mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
-| recordingInfo        | [recordingInfo](recordinginfo.md)        | Informação que especifica se o participante tem capacidade de gravação. |
+| id                   | String                                   | A ID do participante.                                          |
+| informações                  | [participantInfo](participantinfo.md)    | Informações sobre o participante.                          |
+| isInLobby            | Booliano                                  | `true` se o participante estiver no lobby.                          |
+| isMuted              | Booliano                                  | `true` se o participante estiver sem som (cliente ou servidor mudo).    |
+| mediaStreams         | [Coleção mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | Informações sobre se o participante tem capacidade de gravação. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

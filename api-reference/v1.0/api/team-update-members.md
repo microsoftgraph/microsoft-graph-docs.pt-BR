@@ -1,32 +1,32 @@
 ---
-title: Atualizar membro no Team
-description: Atualizar a função de membro em uma equipe.
+title: Atualizar membro na equipe
+description: Atualize a função de membro em uma equipe.
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f2da331041c01aa5fbfb3201f3fb656a7ee1fa24
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 10f6c314b32229d88a64d65b75b9c42c23b46a54
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387851"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49943700"
 ---
-# <a name="update-member-in-team"></a>Atualizar membro no Team
+# <a name="update-member-in-team"></a>Atualizar membro na equipe
 
 Namespace: microsoft.graph
 
-Atualizar a função de um [conversationMember](../resources/conversationmember.md) em uma [equipe](../resources/team.md).
+Atualize a função [de um conversationMember](../resources/conversationmember.md) em uma [equipe.](../resources/team.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|TeamMember. ReadWrite. All. |
+|Delegado (conta corporativa ou de estudante)|TeamMember.ReadWrite.All. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|TeamMember. ReadWrite. All. |
+|Aplicativo|TeamMember.ReadWrite.All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
@@ -43,22 +43,24 @@ PATCH /teams/{team-id}/members/{membership-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores para os campos relevantes a atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|funções|coleção de cadeias de caracteres|A função para o usuário. Deve ser `owner` ou vazio. Os usuários convidados são automaticamente carimbados com `guest` a função e esse valor não pode ser atualizado. |
+|funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio. Os usuários convidados são automaticamente carimbados `guest` com a função e esse valor não pode ser atualizado. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [conversationMember](../resources/conversationmember.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [conversationMember](../resources/conversationmember.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-A seguir está uma solicitação para aplicar a `owner` função a um membro existente de uma equipe.
+A seguir está uma solicitação para `owner` aplicar a função a um membro existente de uma equipe.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_member"
@@ -73,6 +75,24 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

@@ -1,32 +1,32 @@
 ---
 title: Atualizar membro no canal
-description: Atualizar a função de membro em um canal.
+description: Atualize a função de membro em um canal.
 author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 20c6acd623d3ca4a352902fd57a0bd8b1074134c
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: acf81a5733f2a0fd7d7ae0ca2a0ada79789dd1e9
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387791"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49943616"
 ---
 # <a name="update-member-in-channel"></a>Atualizar membro no canal
 
 Namespace: microsoft.graph
 
-Atualizar a função de um [conversationMember](../resources/conversationmember.md) em um [canal](../resources/channel.md). Essa operação só é permitida para canais com um valor de **membershiptype** de `private` .
+Atualize a função de [um conversationMember](../resources/conversationmember.md) em um [canal.](../resources/channel.md) Essa operação é permitida somente para canais com um **valor membershipType** de `private` .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegado (conta corporativa ou de estudante)|ChannelMember. ReadWrite. All. |
+|Delegado (conta corporativa ou de estudante)|ChannelMember.ReadWrite.All. |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|ChannelMember. ReadWrite. All. |
+|Aplicativo|ChannelMember.ReadWrite.All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
@@ -43,22 +43,24 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores para os campos relevantes a atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|funções|coleção de cadeias de caracteres|A função para o usuário. Deve ser `owner` ou vazio. Os usuários convidados são automaticamente carimbados com `guest` a função e esse valor não pode ser atualizado. |
+|funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio. Os usuários convidados são automaticamente carimbados `guest` com a função e esse valor não pode ser atualizado. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [conversationMember](../resources/conversationmember.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [conversationMember](../resources/conversationmember.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-A seguir está uma solicitação para aplicar a `owner` função a um membro existente de um canal.
+A seguir está uma solicitação para aplicar `owner` a função a um membro existente de um canal.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_member"
@@ -73,6 +75,24 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

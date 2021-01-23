@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32a955571e0aca1eabfe899e716d658443db363b
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: c054270a26924ace94225e35b6a69cf80730f46c
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848195"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934895"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -25,7 +25,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | Incompatível | Incompatível | CallRecords.Read.All |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Sem suporte | Incompatível |  ChannelMessage. Read. Group *, ChannelMessage. Read. All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Sem suporte | Sem suporte |  ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Sem suporte | Sem suporte | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
@@ -40,13 +40,14 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 ### <a name="chatmessage"></a>chatMessage
 
-Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura **chatMessage** , você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
+Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura **chatMessage**, você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
 
 > **Observação:** `/teams/getAllMessages` e `/chats/getAllMessages` estão disponíveis para os usuários que têm as [licenças necessárias](https://aka.ms/teams-changenotification-licenses).
+No futuro, a Microsoft poderá exigir que você ou seus clientes pagarão taxas adicionais com base na quantidade de dados acessados por meio da API.
 
 ### <a name="driveitem"></a>driveItem
 
@@ -59,7 +60,7 @@ No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer 
 As limitações adicionais se aplicam aos itens do Outlook. As limitações se aplicam para criação e gerenciamento de assinaturas (receber, atualizar e excluir assinaturas).
 
 - A permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Por exemplo, você não pode usar os Calendários de permissões delegadas. Leia para assinar eventos na caixa de correio de outro usuário.
-- Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas _compartilhadas ou delegadas_ :
+- Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas _compartilhadas ou delegadas_:
 
   - Usar a permissão de aplicativos correspondentes para inscrever as alterações dos itens em uma pasta ou uma caixa de correio de _qualquer_ usuários no locatário.
   - Não use as permissões de compartilhamento do Outlook (Contacts.Read.Shared Calendars.Read.Shared, Mail.Read.Shared e seus equivalentes de somente leitura), pois eles **não** suportam inscrições que alteram as notificações em itens de pastas compartilhadas ou delegadas.
