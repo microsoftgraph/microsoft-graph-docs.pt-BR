@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 0404fae00cd3d8549c78df1afe674ec95c9f5191
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 5b469fc5d56ef5500e079caafb88a2b69da1f0dc
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874148"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934902"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -563,20 +563,6 @@ Nenhum
 
 ---
 
-## <a name="cloud-printing-permissions"></a>Permissões de impressão na nuvem
-
-#### <a name="application-permissions"></a>Permissões de aplicativos
-
-|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Printer.ReadWrite.All_ | Ler e atualizar as impressoras | Permite que o aplicativo leia e atualize as impressoras sem um usuário conectado. Não permite a criação (registro) ou a exclusão (cancelamento do registro) de impressoras. | Sim |
-| _PrintJob.Read.All_ | Ler os trabalhos de impressão | Permite que o aplicativo leia os metadados e o conteúdo do documento dos trabalhos de impressão sem um usuário conectado. | Sim |
-| _PrintJob.ReadBasic.All_ | Ler informações básicas de trabalhos para impressão | Permite que o aplicativo leia os metadados dos trabalhos de impressão sem um usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
-| _PrintJob.ReadWrite.All_ | Ler e gravar trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados e o conteúdo do documento dos trabalhos de impressão sem um usuário conectado. | Sim |
-| _PrintJob.ReadWriteBasic.All_ | Ler e gravar informações básicas para trabalhos de impressão | Permite que o aplicativo leia e atualize os metadados dos trabalhos de impressão sem um usuário conectado. Não permite acesso ao conteúdo do documento do trabalho de impressão. | Sim |
-
----
-
 ## <a name="contacts-permissions"></a>Permissões de contatos
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -830,7 +816,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Ler todos os grupos | Permite ao aplicativo ler os associados de todos os grupos sem um usuário conectado. Também permite ao aplicativo ler o calendário, as conversas, os arquivos e outros tipos de conteúdo de grupos para todos os grupos.<br/><br/>**Observação:** nem todas as APIs de grupo oferecem suporte ao acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md). | Sim |
+| _Group.Read.All_ | Ler todos os grupos | Permite que o aplicativo leia as associações de todos os grupos sem um usuário conectado. Também permite que o aplicativo leia o calendário, conversas, arquivos e outros conteúdos de grupo para todos os grupos.<br/><br/>**Observação:** nem todas as APIs de grupo oferecem suporte ao acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md). | Sim |
 | _Group.ReadWrite.All_ | Ler e gravar todos os grupos | Permite que o aplicativo crie grupos, leia e atualize as associações do grupo e exclua grupos. Também permite ao aplicativo ler e escrever o calendário, as conversas, os arquivos e outros tipos de conteúdo de grupos para todos os grupos. Todas essas operações podem ser executadas pelo aplicativo sem um usuário conectado.<br/><br/>**Observação:** nem todas as APIs de grupo oferecem suporte ao acesso usando permissões somente de aplicativo. Confira exemplos nos [problemas conhecidos](known-issues.md).| Sim |
 | _Group.Selected_ |    Acessar grupos selecionados | **Observação: Essa permissão está exposta no portal do Azure para um recurso que não está disponível para uso geral. Não use essa permissão, pois ela está sujeita a alterações.** | Sim |
 | _GroupMember.Read.All_ |    Ler associações de grupo | Permite que o aplicativo leia grupos e as propriedades básicas do grupo para todos os grupos sem um usuário conectado. | Sim |
