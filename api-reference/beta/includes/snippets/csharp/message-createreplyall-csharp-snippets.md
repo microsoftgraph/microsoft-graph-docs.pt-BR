@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 47cb09dbd1b326122fce7c44af5d4c5168c7a18f
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: f134db78728007c5d789a15230151c413c4d3639
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684699"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945181"
 ---
 ```csharp
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var message = new Message
 {
-    Attachments = (IMessageAttachmentsCollectionPage)new List<Attachment>()
+    Attachments = new MessageAttachmentsCollectionPage()
     {
         new FileAttachment
         {

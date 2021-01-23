@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 98e26ef3132ad118c49e79b0e47e1d1456d285d0
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 6096954d41ba704a8a1a7dfe5ab49406d326931b
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684967"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945692"
 ---
 ```csharp
 
@@ -18,7 +18,7 @@ var post = new Post
         ContentType = BodyType.Html,
         Content = "<html><body><div><div><div><div>When and where? </div></div></div></div></body></html>"
     },
-    Extensions = (IPostExtensionsCollectionPage)new List<Extension>()
+    Extensions = new PostExtensionsCollectionPage()
     {
         new OpenTypeExtension
         {

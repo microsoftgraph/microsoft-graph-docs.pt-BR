@@ -1,22 +1,21 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 61bef2ddba0f4ca74f4475c9790a7bb9dd470749
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b18b46dd9332b8d44c023a90c1a0c4d02afe4aad
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957270"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49945418"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConnectorGroup connectorGroup = new ConnectorGroup();
-connectorGroup.name = "name-value";
-connectorGroup.region = ConnectorGroupRegion.NAM;
+connectorGroup.name = "Connector Group Demo";
 
-graphClient.onPremisesPublishingProfiles("applicationProxy").connectorGroups("{id}")
+graphClient.onPremisesPublishingProfiles("applicationProxy").connectorGroups()
     .buildRequest()
-    .patch(connectorGroup);
+    .post(connectorGroup);
 
 ```
