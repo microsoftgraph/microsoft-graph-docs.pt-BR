@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d96861e673e96cbee81ca3d3e1d927067618bfbf
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 959585428800d12046f382b1f1358c35349790a8
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844442"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934783"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -27,7 +27,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Listar aplicativos](../api/application-list.md) | Coleção [application](application.md) | Recuperar a lista de aplicativos na organização. |
 |[Criar aplicativo](../api/application-post-applications.md) | [application](application.md) | Cria (registra) um novo aplicativo.|
 |[Obter aplicativo](../api/application-get.md) | [application](application.md) |Ler as propriedades e as relações de um objeto de aplicativo.|
-|[Atualizar aplicativo](../api/application-update.md) | [application](application.md) |Atualize o objeto application. |
+|[Atualizar aplicativo](../api/application-update.md) | Nenhum |Atualize o objeto application. |
 |[Excluir aplicativo](../api/application-delete.md) | Nenhum |Exclua o objeto application. |
 |[Obter delta](../api/application-delta.md)|[aplicativo](application.md)|Obtenha os aplicativos recentemente criados, atualizados ou excluídos sem ter que executar uma leitura completa de toda a coleção de recursos.|
 |[Listar aplicativos excluídos](../api/directory-deleteditems-list.md) | Conjunto [directoryObject](directoryobject.md) | Recuperar uma lista de aplicativos excluídos recentemente. |
@@ -81,7 +81,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo. |
 | passwordCredentials | Coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
-| publisherDomain | String | O domínio do publicador verificado para o aplicativo. Somente leitura.|
+| publisherDomain | String | O domínio do publicador verificado para o aplicativo. Somente leitura. Para obter mais informações, consulte [Como: configurar o domínio do publisher de um aplicativo](/azure/active-directory/develop/howto-configure-publisher-domain).|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection|Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de escopos de permissão OAuth e as funções de aplicativo necessários para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não anulável.|
 | signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores com suporte são:<ul><li>`AzureADMyOrg`: Usuários com uma conta Microsoft corporativa ou de estudante no locatário do Azure AD da organização (ou seja, locatário único)</li><li>`AzureADMultipleOrgs`: Usuários com uma conta Microsoft corporativa ou de estudante em locatário Azure AD de qualquer organização (multi locatário)</li><li>`AzureADandPersonalMicrosoftAccount`: Usuários com uma conta Microsoft pessoal, corporativa ou de estudante no locatário do Azure AD de qualquer organização.</li><li>`PersonalMicrosoftAccount`: Somente os usuários com uma conta Microsoft pessoal.</li></ul>Para autenticar usuários com fluxos de usuário do Active Directory B2C, use o `AzureADandPersonalMicrosoftAccount`. Este valor permite o mais amplo conjunto de identidades de usuário, incluindo contas locais e identidades de usuário da Microsoft, Facebook, Google, Twitter ou qualquer provedor de conexão OpenID. |
 | categorias |Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulável.|

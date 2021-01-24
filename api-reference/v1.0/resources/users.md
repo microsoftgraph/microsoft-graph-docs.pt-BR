@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 082efd396a1d26d8054339c82840dfb1fbea52a5
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 1dda6312de4dbda9a4e7afdefa28ff5e7dd3d02f
+ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582195"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49934615"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 
@@ -36,7 +36,7 @@ Uma das seguintes [permissões](/graph/permissions-reference) é necessária par
 
 ## <a name="common-properties"></a>Propriedades comuns
 
-O item a seguir representa o conjunto padrão de propriedades que serão retornadas ao se obter um usuário ou listar usuários. Este é um subconjunto de todas as propriedades disponíveis. Para obter mais propriedades do usuário, use o parâmetro de consulta `$select`.
+O item a seguir representa o conjunto padrão de propriedades que serão retornadas ao se obter um usuário ou listar usuários. Este é um subconjunto de todas as propriedades disponíveis. Para obter mais propriedades do usuário, use o parâmetro de consulta `$select`. Saiba [como usar o parâmetro $selecionar consulta](/graph/query-parameters#select-parameter) e consulte [propriedades que dão suporte ao parâmetro $selecionar consulta](../resources/user.md#properties).
 
 |Propriedade |Descrição |
 |:----------|:-------------|
