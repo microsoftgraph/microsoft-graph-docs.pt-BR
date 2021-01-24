@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7c43be70b95b2beaa466ecb7e8664380b16dead5
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 6b9bc131b594351a1546a32763bf6f2f79463783
+ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601592"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49946014"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryAudits = await graphClient.AuditLogs.DirectoryAudits
+var directoryAudit = await graphClient.AuditLogs.DirectoryAudits["{id}"]
     .Request()
     .GetAsync();
 
