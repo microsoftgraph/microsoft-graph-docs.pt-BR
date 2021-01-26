@@ -6,72 +6,72 @@ title: Obter uma página em um site
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0d7130597aedfbff25ba52eb09b0fb5bf1aba76f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 61b8b40496daef16abf56d1d297b3dcb2dd92f91
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973234"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981134"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="874ca-103">Obter uma página na lista de páginas do site de um site</span><span class="sxs-lookup"><span data-stu-id="874ca-103">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="922f3-103">Obter uma página na lista de páginas de site de um site</span><span class="sxs-lookup"><span data-stu-id="922f3-103">Get a page in the site pages list of a site</span></span>
 
-<span data-ttu-id="874ca-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="874ca-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="922f3-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="922f3-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="874ca-105">Retorna os metadados de um [sitePage][] na [lista][] de páginas do site em um [site][].</span><span class="sxs-lookup"><span data-stu-id="874ca-105">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="922f3-105">Retorna os metadados de [um sitePage][] na lista de páginas [do][] site em um [site.][]</span><span class="sxs-lookup"><span data-stu-id="922f3-105">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="874ca-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="874ca-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="922f3-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="922f3-109">Permissions</span></span>
 
-<span data-ttu-id="874ca-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="874ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="922f3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="922f3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="874ca-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="874ca-112">Permission type</span></span>      | <span data-ttu-id="874ca-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="874ca-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="922f3-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="922f3-112">Permission type</span></span>      | <span data-ttu-id="922f3-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="922f3-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="874ca-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="874ca-114">Delegated (work or school account)</span></span> | <span data-ttu-id="874ca-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="874ca-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="874ca-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="874ca-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="874ca-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="874ca-117">Not supported.</span></span>    |
-|<span data-ttu-id="874ca-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="874ca-118">Application</span></span> | <span data-ttu-id="874ca-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="874ca-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="922f3-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="922f3-114">Delegated (work or school account)</span></span> | <span data-ttu-id="922f3-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="922f3-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="922f3-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="922f3-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="922f3-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="922f3-117">Not supported.</span></span>    |
+|<span data-ttu-id="922f3-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="922f3-118">Application</span></span> | <span data-ttu-id="922f3-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="922f3-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="874ca-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="874ca-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="922f3-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="922f3-120">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="874ca-121">Exemplo</span><span class="sxs-lookup"><span data-stu-id="874ca-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="922f3-121">Exemplo</span><span class="sxs-lookup"><span data-stu-id="922f3-121">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="874ca-122">Solicitação</span><span class="sxs-lookup"><span data-stu-id="874ca-122">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="922f3-122">Solicitação</span><span class="sxs-lookup"><span data-stu-id="922f3-122">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="874ca-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="874ca-123">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="922f3-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="922f3-123">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/pages/{page-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="874ca-124">C#</span><span class="sxs-lookup"><span data-stu-id="874ca-124">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="922f3-124">C#</span><span class="sxs-lookup"><span data-stu-id="922f3-124">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="874ca-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="874ca-125">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="922f3-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="922f3-125">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="874ca-126">Objective-C</span><span class="sxs-lookup"><span data-stu-id="874ca-126">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="922f3-126">Objective-C</span><span class="sxs-lookup"><span data-stu-id="922f3-126">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-page-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="874ca-127">Java</span><span class="sxs-lookup"><span data-stu-id="874ca-127">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="922f3-127">Java</span><span class="sxs-lookup"><span data-stu-id="922f3-127">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="874ca-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="874ca-128">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="922f3-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="922f3-128">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -87,16 +87,16 @@ Content-type: application/json
     "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
     "createdBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "lastModifiedBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "parentReference": {
