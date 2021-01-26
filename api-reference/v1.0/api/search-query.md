@@ -1,31 +1,31 @@
 ---
-title: 'searchEntity: consulta'
+title: 'searchEntity: query'
 description: Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b5b49bd8bb370089774afb63593d282864191b66
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: e675b9b9301e7b0fc918c4631757a9bb21f82ce7
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377957"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983759"
 ---
-# <a name="searchentity-query"></a>searchEntity: consulta
+# <a name="searchentity-query"></a>searchEntity: query
 
 Namespace: microsoft.graph
 
 Executa a consulta especificada no corpo da solicitação. Os resultados da pesquisa são fornecidos na resposta.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference). 
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Mail. Read, mail. ReadWrite, Calendars. Read, Calendars. ReadWrite, files. Read. All, files. ReadWrite. All, sites. Read. All, sites. ReadWrite. All, ExternalItem. Read. All |
+| Delegado (conta corporativa ou de estudante)     | Mail.Read, Mail.ReadWrite, Calendars.Read, Calendars.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, ExternalItem.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
@@ -48,11 +48,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Quest|coleção [searchRequest](../resources/searchrequest.md)|Uma coleção de uma ou mais solicitações de pesquisa cada formatadas em um blob JSON. Cada blob JSON contém os tipos de recursos esperados na resposta, as fontes subjacentes, os parâmetros de paginação, os campos solicitados e a consulta de pesquisa real. <br> Esteja ciente das [limitações conhecidas](../resources/search-api-overview.md#known-limitations) de pesquisa de combinações específicas de tipos de entidade e da classificação ou agregação de resultados de pesquisa. |
+|requests|[Coleção searchRequest](../resources/searchrequest.md)|Uma coleção de uma ou mais solicitações de pesquisa cada formatada em um blob JSON. Cada blob JSON contém os tipos de recursos esperados na resposta, as fontes subjacentes, os parâmetros de paging, os campos solicitados e a consulta de pesquisa real. <br> Esteja ciente das [limitações conhecidas](../resources/search-api-overview.md#known-limitations) em pesquisar combinações específicas de tipos de entidade e classificar ou agregar resultados de pesquisa. |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `HTTP 200 OK` código de resposta e um objeto da coleção [searchResponse](../resources/searchresponse.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta e um objeto da coleção `HTTP 200 OK` [searchResponse](../resources/searchresponse.md) no corpo da resposta.
  
 
 ## <a name="examples"></a>Exemplos
@@ -112,7 +112,7 @@ Content-type: application/json
                         {
                             "hitId": "AAMkADdmODdhN2NjLTMwZWYtNDBiNy1iMDYxLWZhZTkyOGM4YmRhZABGAAAAAACsLZF5BeQoRLYm4UlvnOXZBwCav2PZy/7/R52ssyzmS9f0AAAAAAEMAACav2PZy/7/R52ssyzmS9f0AABM0pr/AAA=",
                             "rank": 1,
-                            "summary": "...Identity Protection Weekly Digest <c0>Contoso</c0> New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2FM365x231305.onmicrosoft.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
+                            "summary": "...Identity Protection Weekly Digest <c0>Contoso</c0> New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2Fcontoso.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
                             "resource": {
                                 "@odata.type": "#microsoft.graph.message",
                                 "createdDateTime": "2020-11-17T16:02:34Z",
@@ -123,7 +123,7 @@ Content-type: application/json
                                 "hasAttachments": false,
                                 "internetMessageId": "<1e506769-c6da-4f44-bb54-6ba1bd59d300@az.northcentralus.production.microsoft.com>",
                                 "subject": "Azure AD Identity Protection Weekly Digest",
-                                "bodyPreview": "...Identity Protection Weekly Digest Contoso New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2FM365x231305.onmicrosoft.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
+                                "bodyPreview": "...Identity Protection Weekly Digest Contoso New risky users detected <https://azure.microsoft.com/email/?destination=https%3A%2F%2Fportal.azure.com%2Fcontoso.com%23blade%2FMicrosoft_AAD_IAM%2FIdentityProtectionMenuBlade%2FRiskyUsers%2F...",
                                 "importance": "normal",
                                 "parentFolderId": "AQMkADdmODdhN2NjAC0zMGVmLTQwYjctYjA2MS1mYWU5MjhjOGJkYWQALgAAA6wtkXkF5ChEtibhSW+c5dkBAJq/Y9nL/v9HnayzLOZL1/QAAAIBDAAAAA==",
                                 "conversationId": "AAQkADdmODdhN2NjLTMwZWYtNDBiNy1iMDYxLWZhZTkyOGM4YmRhZAAQAKQ6a/rTEmVCtGMTER183jw=",
@@ -141,13 +141,13 @@ Content-type: application/json
                                 "sender": {
                                     "emailAddress": {
                                         "name": "Microsoft Azure",
-                                        "address": "azure-noreply@microsoft.com"
+                                        "address": "azure-noreply@contoso.com"
                                     }
                                 },
                                 "from": {
                                     "emailAddress": {
                                         "name": "Microsoft Azure",
-                                        "address": "azure-noreply@microsoft.com"
+                                        "address": "azure-noreply@contoso.com"
                                     }
                                 }
                             }
@@ -163,10 +163,10 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Mensagens de email](/graph/search-concept-messages) de pesquisa
-- [Eventos de calendário](/graph/search-concept-events) de pesquisa
-- Pesquisar conteúdo no SharePoint e no OneDrive ([arquivos, listas e sites](/graph/search-concept-files))
-- Dados [de tipos personalizados de pesquisa (conectores do gráfico)](/graph/search-concept-custom-types)
+- Pesquisar [mensagens de email](/graph/search-concept-messages)
+- Pesquisar [eventos de calendário](/graph/search-concept-events)
+- Pesquisar conteúdo no SharePoint e no OneDrive[(arquivos, listas e sites)](/graph/search-concept-files)
+- Pesquisar [dados de tipos personalizados (Conectores do Graph)](/graph/search-concept-custom-types)
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

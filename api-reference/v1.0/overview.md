@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: non-product-specific
 doc_type: conceptualPageType
-ms.openlocfilehash: 83f868f9223f2837d1a4818cf227b94573db3480
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 56bc6b580fe691810600feee468c94cdd8a4d852
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183999"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980812"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referência da API REST do Microsoft Graph v1.0
 
@@ -46,7 +46,7 @@ Vários desses serviços são projetados para permitir cenários ricos em torno 
 ## <a name="other-api-versions"></a>Outras versões da API
 
 Existem atualmente 2 versões de APIs REST do Microsoft Graph - v1.0 e beta.
-Se você estiver interessado em APIs novas ou aprimoradas que ainda estejam no status de visualização, consulte [referência de ponto de extremidade beta do Microsoft Graph](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta). Esteja ciente de que as APIs no status de visualização estão sujeitas a alterações e podem interromper os cenários existentes sem aviso prévio. Não obtenha uma dependência de produção de APIs no ponto de extremidade beta.
+Se você estiver interessado em APIs novas ou aprimoradas que ainda estejam no status de visualização, consulte [referência de ponto de extremidade beta do Microsoft Graph](/graph/api/overview?view=graph-rest-beta&preserve-view=true). Esteja ciente de que as APIs no status de visualização estão sujeitas a alterações e podem interromper os cenários existentes sem aviso prévio. Não obtenha uma dependência de produção de APIs no ponto de extremidade beta.
 
 Encontre mais informações em [Suporte e controle de versão](/graph/versioning-and-support).
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso mailboxUsageQuotaStatusMailboxCounts
+title: Tipo de recurso mailboxUsageQuotaStatusMailboxCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e09b9d27da4a85dd89f6a09440d56532045573b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 10ce05121ec900f5475a082191f4192974f980b4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029173"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983542"
 ---
-# <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a>tipo de recurso mailboxUsageQuotaStatusMailboxCounts
+# <a name="mailboxusagequotastatusmailboxcounts-resource-type"></a>Tipo de recurso mailboxUsageQuotaStatusMailboxCounts
 
 Namespace: microsoft.graph
 
@@ -21,13 +21,13 @@ Namespace: microsoft.graph
 | Propriedade              | Tipo   |
 | :-------------------- | :----- |
 | reportRefreshDate     | Data   |
-| Limite máximo            | Int64  |
+| underLimit            | Int64  |
 | warningIssued         | Int64  |
 | sendProhibited        | Int64  |
 | sendReceiveProhibited | Int64  |
-| determinado         | Int64  |
+| indeterminado         | Int64  |
 | reportDate            | Data   |
-| reportPeriod          | String |
+| reportPeriod          | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

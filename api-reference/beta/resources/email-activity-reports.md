@@ -1,16 +1,16 @@
 ---
 title: Relatórios de atividades do email
-description: Você pode obter uma visão de alto nível do tráfego de email em sua organização na página relatórios. Você também pode analisar o widget atividade de email para entender as tendências e os detalhes por usuário da atividade de email em sua organização.
+description: Você pode obter uma visão de alto nível do tráfego de email em sua organização na página Relatórios. Você também pode detalhar o widget Atividade de Email para entender as tendências e os detalhes por usuário da atividade de email em sua organização.
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: f3c1ccd2700bce7a054cfec8fed943c01a3f4a1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db9ea032b418a6beca7afb7c15eb16b762e6ed11
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055544"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983794"
 ---
 # <a name="email-activity-reports"></a>Relatórios de atividades do email
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode obter uma visão de alto nível do tráfego de email em sua organização na página relatórios. Você também pode analisar o widget atividade de email para entender as tendências e os detalhes por usuário da atividade de email em sua organização.
+Você pode obter uma visão de alto nível do tráfego de email em sua organização na página Relatórios. Você também pode detalhar o widget Atividade de Email para entender as tendências e os detalhes por usuário da atividade de email em sua organização.
 
-> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [Microsoft 365 Reports-E-mail Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
+> **Observação:** Para saber mais sobre os diferentes modos de exibição de relatório e nomes, confira [Relatórios do Microsoft 365 - Atividade de E-mail](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
 
 ## <a name="reports"></a>Relatórios
 

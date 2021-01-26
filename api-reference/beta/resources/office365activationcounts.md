@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso office365ActivationCounts
+title: Tipo de recurso office365ActivationCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: ef612173b8b78d4e87e07e66995ea6cb9ac0dc16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ac3b6bb14b347f4ab273bbf65ce767f1ae6e1a2
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021214"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983200"
 ---
-# <a name="office365activationcounts-resource-type"></a>tipo de recurso office365ActivationCounts
+# <a name="office365activationcounts-resource-type"></a>Tipo de recurso office365ActivationCounts
 
 Namespace: microsoft.graph
 
@@ -20,12 +20,12 @@ Namespace: microsoft.graph
 
 | Propriedade          | Tipo   | Descrição                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | Data   | A última data do conteúdo.          |
-| ProductType       | String | O tipo de produto, como "Microsoft 365 ProPlus" ou "Project Client". |
-| Windows           | Int64  | A contagem de ativação no Windows. Esse número inclui todas as ativações em qualquer computador Windows. |
+| reportRefreshDate | Data   | A data mais recente do conteúdo.          |
+| productType       | Cadeia de caracteres | O tipo de produto, como "Microsoft 365 ProPlus" ou "Project Client". |
+| windows           | Int64  | A contagem de ativação no Windows. Esse número inclui todas as ativações em qualquer computador Windows. |
 | mac               | Int64  | A contagem de ativação no Mac OS.          |
-| Android           | Int64  | A contagem de ativação em um dispositivo Android.  |
-| emiti               | Int64  | A contagem de ativação no iOS.             |
+| android           | Int64  | A contagem de ativação em um dispositivo Android.  |
+| ios               | Int64  | A contagem de ativação no iOS.             |
 | windows10Mobile   | Int64  | A contagem de ativação no Windows 10 Mobile. |
 
 ## <a name="json-representation"></a>Representação JSON

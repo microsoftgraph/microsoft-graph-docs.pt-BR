@@ -1,16 +1,16 @@
 ---
 title: Relatórios de atividades do OneDrive
-description: Você pode obter a atividade de cada usuário licenciado para usar o OneDrive examinando sua interação com arquivos no OneDrive. Ele também ajuda você a entender o nível de colaboração em andamento, mostrando o número de arquivos compartilhados.
+description: Você pode obter a atividade de todos os usuários licenciados para usar o OneDrive observando sua interação com arquivos no OneDrive. Ele também ajuda você a entender o nível de colaboração que está acontecendo mostrando o número de arquivos compartilhados.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 656d722a9d63e460cd4b62e87a0b2fd8483e37c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d0c069d2787b30f37e634757127b6141843a9ed
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092332"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49983598"
 ---
 # <a name="onedrive-activity-reports"></a>Relatórios de atividades do OneDrive
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode obter a atividade de cada usuário licenciado para usar o OneDrive examinando sua interação com arquivos no OneDrive. Ele também ajuda você a entender o nível de colaboração em andamento, mostrando o número de arquivos compartilhados.
+Você pode obter a atividade de cada usuário licenciado para usar o OneDrive analisando sua interação com arquivos no OneDrive. Ele também ajuda você a entender o nível de colaboração que está acontecendo mostrando o número de arquivos compartilhados.
 
-> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [Microsoft 365 Reports-onedrive for Business Activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
+> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, confira relatórios do [Microsoft 365 - atividade do OneDrive for Business.](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)
 
 ## <a name="reports"></a>Relatórios
 
