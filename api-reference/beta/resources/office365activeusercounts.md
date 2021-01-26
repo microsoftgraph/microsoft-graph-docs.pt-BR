@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso office365ActiveUserCounts
+title: Tipo de recurso office365ActiveUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 8d640bbb3f49c95902134893f1eba4b4064ccca5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 67c9b898da9a106685739ebbf78ccef6425c6617
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092451"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980735"
 ---
-# <a name="office365activeusercounts-resource-type"></a>tipo de recurso office365ActiveUserCounts
+# <a name="office365activeusercounts-resource-type"></a>Tipo de recurso office365ActiveUserCounts
 
 Namespace: microsoft.graph
 
@@ -21,15 +21,15 @@ Namespace: microsoft.graph
 | Propriedade          | Tipo   | Descrição                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Data   | A última data do conteúdo.          |
-| Office365         | Int64  | O número de usuários ativos no Microsoft 365. Esse número inclui todos os usuários ativos no Exchange, OneDrive, SharePoint, Skype for Business, Yammer e Microsoft Teams. Você pode encontrar a definição de usuário ativo para cada produto na respectiva descrição da propriedade. |
-| câmbio          | Int64  | O número de usuários ativos no Exchange. Qualquer usuário que possa ler e enviar emails é considerado um usuário ativo. |
-| oneDrive          | Int64  | O número de usuários ativos no OneDrive. Qualquer usuário que tenha exibido ou editado arquivos, arquivos compartilhados internamente ou externamente, ou arquivos sincronizados é considerado um usuário ativo. |
-| Do        | Int64  | O número de usuários ativos no SharePoint. Qualquer usuário que tenha exibido ou editado arquivos, arquivos compartilhados internamente ou externamente, arquivos sincronizados ou páginas do SharePoint exibidas é considerado um usuário ativo. |
-| skypeForBusiness  | Int64  | O número de usuários ativos no Skype for Business. Qualquer usuário que organizou ou participou de conferências ou sessões ponto a ponto Unidas é considerado um usuário ativo. |
-| Yammer            | Int64  | O número de usuários ativos no Yammer. Qualquer usuário que possa postar, ler ou gostar de mensagens é considerado um usuário ativo. |
-| Teams             | Int64  | O número de usuários ativos no Microsoft Teams. Qualquer usuário que lançou mensagens em canais de equipe, mensagens enviadas em sessões de chat privadas ou participou de reuniões ou chamadas é considerado um usuário ativo. |
+| office365         | Int64  | O número de usuários ativos no Microsoft 365. Esse número inclui todos os usuários ativos no Exchange, OneDrive, SharePoint, Skype For Business, Yammer e Microsoft Teams. Você pode encontrar a definição de usuário ativo para cada produto na descrição da respectiva propriedade. |
+| exchange          | Int64  | O número de usuários ativos no Exchange. Qualquer usuário que possa ler e enviar emails é considerado um usuário ativo. |
+| oneDrive          | Int64  | O número de usuários ativos no OneDrive. Qualquer usuário que visualizou ou editou arquivos, compartilhou arquivos interna ou externamente ou sincronizou arquivos é considerado um usuário ativo. |
+| sharePoint        | Int64  | O número de usuários ativos no SharePoint. Qualquer usuário que visualizou ou editou arquivos, compartilhou arquivos interna ou externamente, sincronizou arquivos ou visualizou páginas do SharePoint é considerado um usuário ativo. |
+| skypeForBusiness  | Int64  | O número de usuários ativos no Skype for Business. Qualquer usuário que organizou ou participou de conferências ou ingressou em sessões ponto a ponto é considerado um usuário ativo. |
+| yammer            | Int64  | O número de usuários ativos no Yammer. Qualquer usuário que possa postar, ler ou como mensagens é considerado um usuário ativo. |
+| teams             | Int64  | O número de usuários ativos no Microsoft Teams. Qualquer usuário que postou mensagens em canais de equipe, enviou mensagens em sessões de chat privado ou participou de reuniões ou chamadas é considerado um usuário ativo. |
 | reportDate        | Data   | A data em que um número de usuários estava ativo. |
-| reportPeriod      | Cadeia de caracteres | O número de dias que o relatório cobre.    |
+| reportPeriod      | Cadeia de caracteres | O número de dias que o relatório abrange.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

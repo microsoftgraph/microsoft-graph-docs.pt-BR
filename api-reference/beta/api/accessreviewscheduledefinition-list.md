@@ -1,16 +1,16 @@
 ---
 title: Listar accessReviewScheduleDefinitions
-description: Recuperar objetos accessReviewScheduleDefinition.
+description: Recupere objetos accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 187f60bbae38f5392c8facbf3e832f3b1f42dceb
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 71eaf61e43a145b809da34854fc33975eb459c81
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49214173"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981001"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Listar accessReviewScheduleDefinition
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os objetos [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) . Uma lista de zero ou mais objetos accessReviewScheduleDefinition é retornada, incluindo todas as suas propriedades aninhadas para cada série de análise de acesso criada. Isso não inclui o accessReviewInstances associado.
+Recupere os [objetos accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Uma lista de zero ou mais objetos accessReviewScheduleDefinition são retornados, incluindo todas as suas propriedades aninhadas, para cada série de revisão de acesso criada. Isso não inclui accessReviewInstances associados.
 
 >[!NOTE]
->Se muitos **accessReviewScheduleDefinitions** forem retornados, para melhorar a eficiência e evitar tempos limite, recupere o conjunto de resultados nas páginas, incluindo o parâmetro de consulta $Top com um tamanho de página de no máximo 100, e o parâmetro de consulta $Skip = 0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata. nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata. nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito em paginação de dados do Microsoft Graph em seu aplicativo.
+>Se muitos **accessReviewScheduleDefinitions** são retornados, para melhorar a eficiência e evitar tempos-tempos, recupere o conjunto de resultados em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro de consulta $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na paagem de dados do Microsoft Graph em seu aplicativo.
 >
->Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph pausará automaticamente os resultados a 100 resultados por página.
+>Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
 
 
 ## <a name="permissions"></a>Permissões
@@ -31,11 +31,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. All  |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview. Read. All, AccessReview. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
- O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access.
+ O usuário assinado também deve estar em uma função de diretório que permita ler uma revisão de acesso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -46,14 +46,14 @@ GET /identityGovernance/accessReviews/definitions
 Nenhum.
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação.
+Não fornecer um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma matriz de objetos [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma matriz de objetos `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão do Access em um locatário.
+O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso em um locatário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -110,7 +110,7 @@ Content-type: application/json
             "createdBy": {
                 "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                 "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@microsoft.com"
+                "userPrincipalName": "admin@contoso.com"
             },
             "scope": {
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",
@@ -162,7 +162,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Obter accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Acessar AccessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
 
 
 <!--

@@ -1,39 +1,39 @@
 ---
-title: Listar accessReviewInstanceDecisionItem pendente de aprovação
-description: Recupere objetos accessReviewInstanceDecisionItem com aprovação pendente pelo usuário de chamada.
+title: Listar aprovação pendente de accessReviewInstanceDecisionItem
+description: Recupere os objetos accessReviewInstanceDecisionItem com aprovação pendente pelo usuário chamador.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ecb6412dd0944e226f8b0bc27fdb571dca5cbe4f
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 22c47613ef2017ee226d55cac08df68d718686bd
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221915"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981085"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>Listar accessReviewInstanceDecisionItems pendente de aprovação
+# <a name="list-accessreviewinstancedecisionitems-pending-approval"></a>Listar aprovação pendente de accessReviewInstanceDecisionItems
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os objetos [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) para uma aprovação específica do [accessReviewInstance](../resources/accessreviewscheduledefinition.md) com o usuário de chamada. Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem é retornada, incluindo todas as suas propriedades aninhadas.
+Recupere os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) para uma aprovação [pendente accessReviewInstance](../resources/accessreviewscheduledefinition.md) específica pelo usuário de chamada. Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem são retornados, incluindo todas as suas propriedades aninhadas.
 
 >[!NOTE]
->Se muitos **accessReviewInstanceDecisionItems** forem retornados, para melhorar a eficiência e evitar tempos limite, recupere o conjunto de resultados nas páginas, incluindo o parâmetro de consulta $Top com um tamanho de página de no máximo 100, e o parâmetro de consulta $Skip = 0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata. nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata. nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito em paginação de dados do Microsoft Graph em seu aplicativo.
+>Se muitos **accessReviewInstanceDecisionItems são retornados,** para melhorar a eficiência e evitar tempos-tempos, recupere o conjunto de resultados em páginas, incluindo o parâmetro de consulta $top com um tamanho de página de no máximo 100 e o parâmetro de consulta $skip=0 na solicitação. Quando um conjunto de resultados abrange várias páginas, o Microsoft Graph retorna essa página com uma propriedade @odata.nextLink na resposta que contém uma URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com a URL @odata.nextLink em cada resposta, até que todos os resultados sejam retornados, conforme descrito na paagem de dados do Microsoft Graph em seu aplicativo.
 >
->Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph pausará automaticamente os resultados a 100 resultados por página.
+>Se nenhum parâmetro de consulta for fornecido e houver mais de 100 resultados, o Microsoft Graph paginará automaticamente os resultados em 100 resultados por página.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. All  |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 
-O usuário conectado também verá apenas as decisões nas quais o revisor será atribuído no instance's accessReviewScheduleDefinition.
+O usuário assinado também verá apenas as decisões das quais o revisor é atribuído a ele no accessReviewScheduleDefinition da instância dessa decisão.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,14 +44,14 @@ GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 Nenhum.
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação.
+Não fornecer um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma matriz de objetos [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma matriz de objetos `200 OK` [accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para recuperar todas as decisões em uma instância de uma revisão do Access pendente da aprovação do usuário de chamada.
+O exemplo a seguir mostra uma solicitação para recuperar todas as decisões em uma instância de uma revisão de acesso aguardando a aprovação do usuário chamador.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,7 +122,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "7eae986b-d425-48b2-adf2-3c777f6256f3",
                 "userDisplayName": "Adele Vance",
-                "userPrincipalName": "AdeleV@microsoft.com"
+                "userPrincipalName": "AdeleV@contoso.com"
             }
         },
         {
@@ -148,7 +148,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                 "userDisplayName": "MOD Administrator",
-                "userPrincipalName": "admin@microsoft.com"
+                "userPrincipalName": "admin@contoso.com"
             }
         }
     ]
@@ -157,8 +157,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Obter accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
-- [Obter accessReviewInstance](accessreviewinstance-get.md)
+- [Acessar AccessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
+- [Acessar AccessReviewInstance](accessreviewinstance-get.md)
 
 
 <!--

@@ -1,16 +1,16 @@
 ---
 title: Listar governanceRoleSettings
-description: Recupere uma coleção de governanceRoleSettings em um Resource.
+description: Recupere uma coleção de governanceRoleSettings em um recurso.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 98a0fc77edb074b16a8665c2c0f0f8701b4cc99d
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: e4469debdaaa2d6d18fdef6630f3987ba4b2bbab
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634960"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981344"
 ---
 # <a name="list-governancerolesettings"></a>Listar governanceRoleSettings
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma coleção de [governanceRoleSettings](../resources/governancerolesetting.md) em um Resource.
+Recupere uma coleção de [governanceRoleSettings](../resources/governancerolesetting.md) em um recurso.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
@@ -29,23 +29,23 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureResources |
+| Aplicativo | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureAD |
+| Aplicativo | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
 |Tipo de permissão | Permissões |
 |:-------------- |:----------- |
-| Delegada (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureADGroups |
+| Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess. Read. AzureADGroups |
+| Aplicativo | PrivilegedAccess.Read.AzureADGroups |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 ## <a name="http-request"></a>Solicitação HTTP
@@ -66,10 +66,10 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Este exemplo mostra como um administrador lista as configurações de função para o recurso Wingtip Toys-prod. 
+Este exemplo mostra como um administrador lista as configurações de função para o recurso Wingtip Toys - Prod. 
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"
@@ -99,7 +99,7 @@ Content-length: 463
             "roleDefinitionId": "5b8bea96-e9f6-4c63-a8e9-fb092c79f0a1",
             "isDefault": false,
             "lastUpdatedDateTime": "2018-03-26T21:21:43.113Z",
-            "lastUpdatedBy": "Vishal Seri",
+            "lastUpdatedBy": "Alex Wilber",
             "adminEligibleSettings": [
                 {
                     "ruleIdentifier": "ExpirationRule",
@@ -136,7 +136,7 @@ Content-length: 463
                 },
                 {
                     "ruleIdentifier": "ApprovalRule",
-                    "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Vishal Seri\",\"Email\":\"viseri@fimdev.net\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"viseri\",\"Email\":\"viseri@microsoft.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
+                    "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
                 }
             ]
         },
@@ -146,7 +146,7 @@ Content-length: 463
             "roleDefinitionId": "688de08e-66d4-4efe-b234-1cf476a603b9",
             "isDefault": false,
             "lastUpdatedDateTime": "2017-12-07T18:12:43.417Z",
-            "lastUpdatedBy": "Debashis Choudhury",
+            "lastUpdatedBy": "Allan Deyoung",
             "adminEligibleSettings": [
                 {
                     "ruleIdentifier": "ExpirationRule",
@@ -183,7 +183,7 @@ Content-length: 463
                 },
                 {
                     "ruleIdentifier": "ApprovalRule",
-                    "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"c178dfee-7236-44b5-a363-e15fc63d91f0\",\"Type\":\"User\",\"DisplayName\":\"Debashis Choudhury\",\"Email\":\"debac@fimdev.net\"}],\"BusinessFlowId\":\"fa7d0b98-ed15-47cd-b3e2-aa6bd3e6533a\"}"
+                    "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"c178dfee-7236-44b5-a363-e15fc63d91f0\",\"Type\":\"User\",\"DisplayName\":\"Allan Deyoung\",\"Email\":\"AllanD@contoso.com\"}],\"BusinessFlowId\":\"fa7d0b98-ed15-47cd-b3e2-aa6bd3e6533a\"}"
                 }
             ]
         },

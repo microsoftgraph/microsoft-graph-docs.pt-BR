@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso office365GroupsActivityCounts
+title: Tipo de recurso office365GroupsActivityCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 6c67de6592d32c15e7d64112ce9ac31b6a5d4c41
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a212028e4ba9d38ea38e99c835d89fe1fe7d850b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092423"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980693"
 ---
-# <a name="office365groupsactivitycounts-resource-type"></a>tipo de recurso office365GroupsActivityCounts
+# <a name="office365groupsactivitycounts-resource-type"></a>Tipo de recurso office365GroupsActivityCounts
 
 Namespace: microsoft.graph
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 | Propriedade               | Tipo   | Descrição                              |
 | :--------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate      | Data   | A última data do conteúdo.          |
-| exchangeEmailsReceived | Int64  | O número de emails recebidos por caixas de correio de grupo. |
-| yammerMessagesPosted   | Int64  | O número de mensagens postadas nos grupos do Yammer. |
-| yammerMessagesRead     | Int64  | O número de mensagens lidas nos grupos do Yammer. |
+| reportRefreshDate      | Data   | A data mais recente do conteúdo.          |
+| exchangeEmailsReceived | Int64  | O número de emails recebidos pelas caixas de correio de Grupo. |
+| yammerMessagesPosted   | Int64  | O número de mensagens postadas em grupos do Yammer. |
+| yammerMessagesRead     | Int64  | O número de mensagens lidas em grupos do Yammer. |
 | yammerMessagesLiked    | Int64  | O número de mensagens curtidas em grupos do Yammer. |
-| reportDate             | Data   | A data em que um número de emails foi enviado para uma caixa de correio de grupo ou várias mensagens foram postadas, lidas ou curtidas em um grupo do Yammer |
-| reportPeriod           | Cadeia de caracteres | O número de dias que o relatório cobre.    |
+| reportDate             | Data   | A data em que vários emails foram enviados para uma caixa de correio de grupo ou várias mensagens postadas, lidas ou curtidas em um grupo do Yammer |
+| reportPeriod           | Cadeia de caracteres | O número de dias que o relatório abrange.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

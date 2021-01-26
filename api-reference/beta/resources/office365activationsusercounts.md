@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso office365ActivationsUserCounts
+title: Tipo de recurso office365ActivationsUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 21e18b35dc4e4ff639087617d679ae1583516026
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a6b97aa8b74ad51158c151e9d3723ea5d1ef191b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021221"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980749"
 ---
-# <a name="office365activationsusercounts-resource-type"></a>tipo de recurso office365ActivationsUserCounts
+# <a name="office365activationsusercounts-resource-type"></a>Tipo de recurso office365ActivationsUserCounts
 
 Namespace: microsoft.graph
 
@@ -21,8 +21,8 @@ Namespace: microsoft.graph
 | Propriedade                 | Tipo   | Descrição                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | Data   | A última data do conteúdo.          |
-| ProductType              | String | O tipo de produto como "Microsoft 365 ProPlus" ou "Project Client". |
-| atribuí                 | Int64  | O número de usuários foi atribuído para a licença de produto. |
+| productType              | Cadeia de caracteres | O tipo de produto como "Microsoft 365 ProPlus" ou "Project Client". |
+| atribuído                 | Int64  | O número de usuários atribuídos à licença do produto. |
 | ativado                | Int64  | O número de usuários que ativaram o produto. |
 | sharedComputerActivation | Int64  | O número de usuários que usaram o produto em um computador compartilhado. |
 

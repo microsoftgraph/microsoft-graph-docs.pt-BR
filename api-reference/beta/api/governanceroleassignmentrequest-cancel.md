@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 45894f30f9d88a45227c3d0098b00329678f35aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b707621c6ab6423cdffa910d9c6f7e5cb86d57ce
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965500"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981358"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governanceRoleAssignmentRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancelar uma [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Cancelar uma [governançaRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Azure Active Directory
 
 | Tipo de permissão | Permissões |
 |:--------------- |:----------- |
@@ -48,7 +48,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo | Sem suporte. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este **método não oferece suporte a** parâmetros de [consulta OData](/graph/query-parameters).
+Esse método não **dá suporte** a [parâmetros de consulta OData.](/graph/query-parameters)
 
 ### <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -70,10 +70,11 @@ Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. N�
 
 ## <a name="error-codes"></a>Códigos de erro
 Essa API segue o padrão de códigos HTTP. Além disso, os códigos de erro personalizados são mostrados abaixo.
+
 | Código de erro | Mensagem de erro | Detalhes |
 |:---------- |:------------- |:------- |
-| 400 BadRequest | RoleAssignmentRequestNotFound | O governanceRoleAssignmentRequest não existe no sistema. |
-| 400 BadRequest | RequestCannotBeCancelled | Somente as solicitações no status `Granted` de `PendingApproval` , `PendingApprovalProvisioning` e `PendingAdminDecision` podem ser canceladas. |
+| 400 BadRequest | RoleAssignmentRequestNotFound | A governanceRoleAssignmentRequest não existe no sistema. |
+| 400 BadRequest | RequestCannotBeCancelled | Somente solicitações no status `Granted` de , e podem ser `PendingApproval` `PendingApprovalProvisioning` `PendingAdminDecision` canceladas. |
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação

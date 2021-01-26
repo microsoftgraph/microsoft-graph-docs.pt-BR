@@ -1,16 +1,16 @@
 ---
 title: Relatórios de atividades do Skype for Business
-description: Você pode obter detalhes sobre a atividade em sua organização. Esses dados podem ajudar a investigar, planejar e tomar outras decisões comerciais para sua organização.
+description: Você pode obter detalhes sobre as atividades em toda a organização. Esses dados podem ajudar a investigar, planejar e tomar outras decisões comerciais para sua organização.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 7ab7955de5c5bf331d954a3dc553018a87dbac44
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0fe3236fc8c4f29357e2ae3fae45c80969c353db
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997666"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980644"
 ---
 # <a name="skype-for-business-activity-reports"></a>Relatórios de atividades do Skype for Business
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode obter detalhes sobre a atividade em sua organização. Esses dados podem ajudar a investigar, planejar e tomar outras decisões comerciais para sua organização.
+Você pode obter detalhes sobre as atividades em toda a organização. Esses dados podem ajudar a investigar, planejar e tomar outras decisões comerciais para sua organização.
 
-> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [Microsoft 365 Reports-Skype for Business Activity](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424).
+> **Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Microsoft 365 - Atividade do Skype for Business](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424).
 
 ## <a name="reports"></a>Relatórios
 

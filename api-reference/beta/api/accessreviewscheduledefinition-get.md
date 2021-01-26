@@ -1,37 +1,37 @@
 ---
-title: Obter accessReviewScheduleDefinition
+title: Acessar AccessReviewScheduleDefinition
 description: Recupere um objeto accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 76a79a1d8282641bc7a59b2e8a5945e7458a00db
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: bb8b22ecb9baf4e579223fcc490bf29fea4c6894
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221859"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981155"
 ---
-# <a name="get-accessreviewscheduledefinition"></a>Obter accessReviewScheduleDefinition
+# <a name="get-accessreviewscheduledefinition"></a>Acessar AccessReviewScheduleDefinition
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) por ID. Isso retorna todas as propriedades da série de revisão do Access agendada, exceto a accessReviewInstances associada. Cada accessReviewScheduleDefinition tem pelo menos uma instância. Uma instância representa uma revisão para um recurso específico (como membros de um determinado grupo), durante uma ocorrência (por exemplo, 2021 de março) de uma revisão recorrente.
+Recupere um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) por ID. Isso retorna todas as propriedades da série de revisão de acesso agendada, exceto para o accessReviewInstances associado. Cada accessReviewScheduleDefinition tem pelo menos uma instância. Uma instância representa uma revisão de um recurso específico (como os membros de um grupo específico), durante uma ocorrência (por exemplo, março de 2021) de uma revisão recorrente.
 
-Para recuperar as instâncias da série de revisão do Access, use a API [list accessReviewInstance](accessreviewinstance-list.md) .
+Para recuperar as instâncias da série de revisão de acesso, use a LISTA [accessReviewInstance](accessreviewinstance-list.md) API.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante)     | AccessReview. Read. All, AccessReview. ReadWrite. All  |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview. Read. All, AccessReview. ReadWrite. All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-Para chamar essa API, o usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access ou que o usuário possa ser atribuído como um revisor na revisão do Access.  Para obter mais detalhes, consulte a função e os requisitos de permissão para [revisões do Access](../resources/accessreviewsv2-root.md).
+Para chamar essa API, o usuário deve estar também em uma função de diretório que permita ler uma revisão de acesso, ou o usuário pode ser atribuído como revistor na revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [revisões de acesso.](../resources/accessreviewsv2-root.md)
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ Nenhum.
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
@@ -101,7 +101,7 @@ Content-type: application/json
     "createdBy": {
         "id": "957f1027-c0ee-460d-4444-b8828e59e0fe",
         "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@microsoft.com"
+        "userPrincipalName": "admin@contoso.com"
     },
     "scope": {
         "query": "/groups/b7a059cb-038a-4802-8fc9-b944440cf11f/transitiveMembers",

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getM365AppUserCounts'
-description: Obter um relatório que fornece a tendência no número de usuários ativos para cada aplicativo – Outlook, Word, Excel, PowerPoint, OneNote e equipes – em sua organização.
+description: Obter um relatório que fornece a tendência no número de usuários ativos para cada aplicativo – Outlook, Word, Excel, PowerPoint, OneNote e Teams – em sua organização.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2bf811de9c1133ef7bb311b6c3e213926f3b71f4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3c415e973e2e0e84edb306d9e64a024f91b1a905
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972780"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981351"
 ---
 # <a name="reportroot-getm365appusercounts"></a>reportRoot: getM365AppUserCounts
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um relatório que fornece a tendência no número de usuários ativos para cada aplicativo – Outlook, Word, Excel, PowerPoint, OneNote e equipes – em sua organização.
+Obter um relatório que fornece a tendência no número de usuários ativos para cada aplicativo – Outlook, Word, Excel, PowerPoint, OneNote e Teams – em sua organização.
 
-> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [microsoft 365 Reports-microsoft 365 apps Usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
+> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - uso do Microsoft 365 Apps.](/microsoft-365/admin/activity-reports/microsoft365-apps-usage)
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Reports.Read.All                            |
 
-> **Observação:** Para permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador do locatário deve ter atribuído ao usuário a função de administrador limitada do Azure AD apropriada. Para obter detalhes, consulte [Authorization for APIs to read Microsoft 365 Usage Reports](/graph/reportroot-authorization).
+> **Observação:** Para que as permissões delegadas permitam que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Azure AD. Para obter detalhes, consulte [Autorização para APIs lerem relatórios de uso do Microsoft 365.](/graph/reportroot-authorization)
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,11 +48,11 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 
 | Parâmetro | Tipo   | Descrição                                                                                                                                                                                                                                                       |
 | :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7` , `D30` , `D90` , e `D180` . Eles seguem o formato D *n* , em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
+| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7` `D30` , e `D90` `D180` . Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o `$format` parâmetro de consulta OData para definir a saída padrão como text/csv ou Application/JSON.
+Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é texto/csv. No entanto, se quiser especificar o tipo de saída, você pode usar o parâmetro de consulta OData para definir a saída padrão para `$format` text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -66,11 +66,11 @@ Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Report](../resources/intune-shared-report.md) no corpo da resposta. Os dados do relatório estão contidos na propriedade de **conteúdo** do objeto **Report** .
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` [objeto de](../resources/intune-shared-report.md) relatório no corpo da resposta. Os dados do relatório estão contidos **na propriedade de** conteúdo do objeto **de** relatório.
 
 ### <a name="csv"></a>CSV
 
-Se tiver êxito, solicitar a propriedade **Content** retornará uma `302 Found` resposta que REDIRECIONA para uma URL de download autenticado para o relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
+Se tiver êxito, a **solicitação da** propriedade de conteúdo retornará uma resposta que redireciona para uma URL de `302 Found` download pré-autenticada do relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
 
 As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.
 
@@ -88,17 +88,17 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 
 ### <a name="json"></a>JSON
 
-Se bem-sucedido, solicitar a propriedade **Content** retorna um `200 OK` código de resposta e um objeto JSON no corpo da resposta.
+Se bem-sucedido, a **solicitação da propriedade** de conteúdo retorna um código `200 OK` de resposta e um objeto JSON no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-csv-output"></a>Exemplo 1: saída CSV
+### <a name="example-1-csv-output"></a>Exemplo 1: Saída CSV
 
-Veja a seguir um exemplo que gera CSV.
+A seguir está um exemplo que saída CSV.
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter a propriedade de **conteúdo** .
+A seguir está um exemplo da solicitação para obter a **propriedade de** conteúdo.
 
 
 
@@ -160,11 +160,11 @@ Report Refresh Date,Report Period,Report Date,Outlook,Word,Excel,PowerPoint,OneN
 
 ### <a name="example-2-json-output"></a>Exemplo 2: saída JSON
 
-Veja a seguir um exemplo que retorna JSON.
+A seguir está um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter a propriedade de **conteúdo** .
+A seguir está um exemplo da solicitação para obter a **propriedade de** conteúdo.
 
 
 

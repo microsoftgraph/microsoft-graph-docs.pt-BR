@@ -1,16 +1,16 @@
 ---
 title: Relatórios de atividades de usuários do Microsoft Teams
-description: Use os relatórios de atividades do usuário do Microsoft Teams para obter informações sobre a atividade de usuário do Microsoft Teams em sua organização.
+description: Use os relatórios de atividades do usuário do Microsoft Teams para obter informações sobre a atividade do usuário do Microsoft Teams em sua organização.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: c3dd136807e0b0aef299274fc596a2e7465ba711
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e249998d8c4481c7e3ef0b2fe31072fe59c84378
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021347"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980785"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Relatórios de atividades de usuários do Microsoft Teams
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use os relatórios de atividades do usuário do Microsoft Teams para obter informações sobre a atividade de usuário do Microsoft Teams em sua organização.
+Use os relatórios de atividades do usuário do Microsoft Teams para obter informações sobre a atividade do usuário do Microsoft Teams em sua organização.
 
 ## <a name="methods"></a>Métodos
 

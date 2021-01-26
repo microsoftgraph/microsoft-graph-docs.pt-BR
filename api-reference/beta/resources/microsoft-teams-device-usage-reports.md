@@ -3,14 +3,14 @@ title: Relatórios de uso de dispositivos do Microsoft Teams
 description: 'Use os relatórios de uso de dispositivos do Microsoft Teams para obter informações sobre o uso de dispositivos do Microsoft Teams em sua organização. '
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 991e29ada91b943428d9d3acf3523fb7e65d26b6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7be5d8d0d369d9cff0fe295f8765a5e4f3ca28bc
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021354"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980777"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Relatórios de uso de dispositivos do Microsoft Teams
 

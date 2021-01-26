@@ -3,24 +3,24 @@ title: 'reportRoot: getOneDriveActivityUserDetail'
 description: Obtenha dados sobre as atividades do OneDrive por usuário.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 8b34520cc6a299c39070142c8564eee6c5faa433
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ca242a4c0b653f347ac46d2c6b01435bf1d1d36
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014131"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981274"
 ---
 # <a name="reportroot-getonedriveactivityuserdetail"></a>reportRoot: getOneDriveActivityUserDetail
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha dados sobre as atividades do OneDrive por usuário.
 
-> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [Microsoft 365 Reports-onedrive for Business Activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
+> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, confira relatórios do [Microsoft 365 - atividade do OneDrive for Business.](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,12 +49,12 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 
 | Parâmetro | Tipo   | Descrição                              |
 | :-------- | :----- | :--------------------------------------- |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. |
+| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado. |
 | data      | Data   | Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade. {date_value} deve ter um formato de AAAA-MM-DD. Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo. |
 
 > **Observação:** você precisa definir o período ou data na URL.
 
-Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou Application/JSON.
+Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é texto/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta $format OData definido como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -86,7 +86,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **[oneDriveActivityUserDetail](../resources/onedriveactivityuserdetail.md)** no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `200 OK` **[objeto oneDriveActivityUserDetail](../resources/onedriveactivityuserdetail.md)** no corpo da resposta.
 
 O tamanho de página padrão para essa solicitação é de 200 itens.
 
@@ -94,7 +94,7 @@ O tamanho de página padrão para essa solicitação é de 200 itens.
 
 ### <a name="csv"></a>CSV
 
-Veja a seguir um exemplo que gera CSV.
+A seguir está um exemplo que saída CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -140,7 +140,7 @@ Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Da
 
 ### <a name="json"></a>JSON
 
-Veja a seguir um exemplo que retorna JSON.
+A seguir está um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
