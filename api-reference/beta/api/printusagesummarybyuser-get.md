@@ -1,29 +1,29 @@
 ---
-title: Obter printUsageSummaryByUser
-description: Recupere o resumo de uso de um usuário para um determinado período de tempo.
+title: Obter UsageSummaryByUser
+description: Recupere o resumo de uso de um usuário para um período específico.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7c7ec996054461b2b2eeb201656c018a5796d5bc
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: d4051b0c9a660bfe89125b402598dae418cc5871
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848784"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982259"
 ---
-# <a name="get-printusagesummarybyuser"></a>Obter printUsageSummaryByUser
+# <a name="get-printusagesummarybyuser"></a>Obter UsageSummaryByUser
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o resumo de uso de um usuário para um determinado período de tempo. Consulte a documentação do [printUsageSummaryByUser](../resources/printUsageSummaryByUser.md) para obter descrições de cada ponto de extremidade.
+Recupere o resumo de uso de um usuário para um período específico. Consulte a [documentação printUsageSummaryByUser](../resources/printUsageSummaryByUser.md) para ver descrições de cada um dos pontos de extremidade.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço de impressão universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de impressão universal ativa, além das permissões listadas na tabela a seguir.
+Para usar o serviço de Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -51,7 +51,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um objeto `200 OK` [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -77,7 +77,7 @@ Content-length: 251
 
 {
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "userPrincipalName": "username@microsoft.com",
+  "userPrincipalName": "username@contoso.com",
   "usageDate": "2020-02-04T00:00:00.0000000Z",
   "completedBlackAndWhiteJobCount": 42,
   "completedColorJobCount": 0,

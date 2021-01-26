@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso yammerGroupsActivityDetail
+title: Tipo de recurso yammerGroupsActivityDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 2188cf1ad583ba66fffb1d7b86009f49fba3f8fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb4f04b04d59a5b14185e82d47c5366f3e2890e4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046071"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982338"
 ---
-# <a name="yammergroupsactivitydetail-resource-type"></a>tipo de recurso yammerGroupsActivityDetail
+# <a name="yammergroupsactivitydetail-resource-type"></a>Tipo de recurso yammerGroupsActivityDetail
 
 Namespace: microsoft.graph
 

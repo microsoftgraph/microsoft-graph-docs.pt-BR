@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso office365GroupsActivityDetail
+title: Tipo de recurso office365GroupsActivityDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: b7e22c522bf6cffeba6f09c350abaaabeda23b1b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fe2df5614525f27b294bed93be7f3f9cd8170b30
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092409"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981505"
 ---
-# <a name="office365groupsactivitydetail-resource-type"></a>tipo de recurso office365GroupsActivityDetail
+# <a name="office365groupsactivitydetail-resource-type"></a>Tipo de recurso office365GroupsActivityDetail
 
 Namespace: microsoft.graph
 
@@ -23,22 +23,22 @@ Namespace: microsoft.graph
 | groupId                           | Cadeia de caracteres  | A ID do grupo.          |
 | reportRefreshDate                 | Data    | A última data do conteúdo.          |
 | groupDisplayName                  | Cadeia de caracteres  | O nome de exibição do grupo.           |
-| isDeleted                         | Boolean | Se este usuário foi excluído ou excluído por software. |
+| isDeleted                         | Booliano | Se esse usuário foi excluído ou excluído de forma suave. |
 | ownerPrincipalName                | Cadeia de caracteres  | O nome principal do proprietário do grupo.          |
-| lastActivityDate                  | Data    | A data da última atividade dos seguintes cenários: caixa de correio de grupo recebidas emails; arquivos de usuário exibidos, editados, compartilhados ou sincronizados na biblioteca de documentos do SharePoint; páginas do SharePoint exibidas pelo usuário; mensagens postadas, lidas ou curtidas pelo usuário em grupos do Yammer. |
+| lastActivityDate                  | Data    | A data da última atividade para os seguintes cenários: caixa de correio de grupo recebeu emails; usuário visualizado, editado, compartilhado ou sincronizado arquivos na biblioteca de documentos do SharePoint; usuário visualizou páginas do SharePoint; usuário postou, leu ou curtiu mensagens em grupos do Yammer. |
 | groupType                         | Cadeia de caracteres  | O tipo de grupo. Os valores possíveis são: **Public** ou **Private**. |
 | memberCount                       | Int64   | A contagem de membros do grupo.                  |
-| externalMemberCount               | Int64   | A contagem de membros externos de grupo.         |
-| exchangeReceivedEmailCount        | Int64   | O número de emails que a caixa de correio de grupo recebeu. |
-| sharePointActiveFileCount         | Int64   | O número de arquivos ativos no site de grupo do SharePoint. |
-| yammerPostedMessageCount          | Int64   | O número de mensagens postadas nos grupos do Yammer. |
-| yammerReadMessageCount            | Int64   | O número de mensagens lidas nos grupos do Yammer. |
+| externalMemberCount               | Int64   | A contagem de membros externos do grupo.         |
+| exchangeReceivedEmailCount        | Int64   | O número de emails que a caixa de correio do grupo recebeu. |
+| sharePointActiveFileCount         | Int64   | O número de arquivos ativos no site do Grupo do SharePoint. |
+| yammerPostedMessageCount          | Int64   | O número de mensagens postadas em grupos do Yammer. |
+| yammerReadMessageCount            | Int64   | O número de mensagens lidas em grupos do Yammer. |
 | yammerLikedMessageCount           | Int64   | O número de mensagens curtidas em grupos do Yammer. |
 | exchangeMailboxTotalItemCount     | Int64   | O número de itens na caixa de correio do grupo. |
 | exchangeMailboxStorageUsedInBytes | Int64   | O armazenamento usado da caixa de correio do grupo.   |
-| sharePointTotalFileCount          | Int64   | O número total de arquivos no site de grupo do SharePoint. |
-| sharePointSiteStorageUsedInBytes  | Int64   | O armazenamento usado pelo site de grupo do SharePoint. |
-| reportPeriod                      | Cadeia de caracteres  | O número de dias que o relatório cobre.    |
+| sharePointTotalFileCount          | Int64   | O número total de arquivos no site do Grupo do SharePoint. |
+| sharePointSiteStorageUsedInBytes  | Int64   | O armazenamento usado pelo site do Grupo do SharePoint. |
+| reportPeriod                      | Cadeia de caracteres  | O número de dias que o relatório abrange.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

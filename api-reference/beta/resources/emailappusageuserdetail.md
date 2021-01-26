@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso emailAppUsageUserDetail
+title: Tipo de recurso emailAppUsageUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8365e856ee1b34b15b1aea3369b6cc22f99991e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb6dded6e7c86644191f1d941900050813b84594
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081675"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981813"
 ---
-# <a name="emailappusageuserdetail-resource-type"></a>tipo de recurso emailAppUsageUserDetail
+# <a name="emailappusageuserdetail-resource-type"></a>Tipo de recurso emailAppUsageUserDetail
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 | reportRefreshDate | Data              |
 | userPrincipalName | Cadeia de caracteres            |
 | displayName       | Cadeia de caracteres            |
-| isDeleted         | Boolean           |
+| isDeleted         | Booliano           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
 | mailForMac        | Coleção String |

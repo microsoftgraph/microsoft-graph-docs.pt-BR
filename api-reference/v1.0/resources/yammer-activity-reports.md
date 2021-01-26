@@ -1,30 +1,30 @@
 ---
 title: Relatórios de atividades do Yammer
-description: Você pode usar os relatórios de atividades do Yammer para entender o nível do compromisso da sua organização com o Yammer observando Quanta atividade é gerada na organização e o número de usuários exclusivos que postam, gostam e lêem mensagens no Yammer.
+description: Você pode usar os relatórios de atividades do Yammer para entender o nível de envolvimento da sua organização com o Yammer, vendo quanta atividade é gerada em toda a organização e o número de usuários exclusivos que publicam, gostam e leem mensagens no Yammer.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: b91f80f3a9156ca28ffee76d653f90e5df4848c2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 739952680d4996fc259ccc9edf278469066048d9
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48014984"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980595"
 ---
 # <a name="yammer-activity-reports"></a>Relatórios de atividades do Yammer
 
 Namespace: microsoft.graph
 
-Você pode usar os relatórios de atividades do Yammer para entender o nível do compromisso da sua organização com o Yammer observando Quanta atividade é gerada na organização e o número de usuários exclusivos que postam, gostam e lêem mensagens no Yammer.
+Você pode usar os relatórios de atividades do Yammer para entender o nível de envolvimento da sua organização com o Yammer, vendo quanta atividade é gerada em toda a organização e o número de usuários exclusivos que publicam, gostam e leem mensagens no Yammer.
 
-> **Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [Microsoft 365 Reports-Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
+> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, confira [relatórios do Microsoft 365 - Atividade do Yammer.](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)
 
 ## <a name="reports"></a>Relatórios
 
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Obter dados de usuário](../api/reportroot-getyammeractivityuserdetail.md) | Fluxo      | Obtenha dados sobre as atividades do Yammer por usuário. |
-| [Obter contagens de atividade](../api/reportroot-getyammeractivitycounts.md) | Fluxo      | Obtenha as tendências da quantidade de atividade do Yammer em sua organização por quantas mensagens foram postadas, lidas e curtidas. |
-| [Obter contagens de usuários](../api/reportroot-getyammeractivityusercounts.md) | Fluxo      | Obtenha as tendências do número de usuários exclusivos que lançaram, ler e curtiram mensagens do Yammer. |
+| [Obter contagens de atividades](../api/reportroot-getyammeractivitycounts.md) | Fluxo      | Obtenha as tendências da quantidade de atividade do Yammer em sua organização por quantas mensagens foram postadas, lidas e curtidas. |
+| [Obter contagens de usuários](../api/reportroot-getyammeractivityusercounts.md) | Fluxo      | Veja as tendências do número de usuários exclusivos que publicaram, leram e curtiram mensagens do Yammer. |
 

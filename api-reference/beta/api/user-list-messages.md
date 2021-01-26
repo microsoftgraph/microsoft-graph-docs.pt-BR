@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 1e1eb885803d90fca401a6cd4dee6ef3d6a865e0
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: aa4aae66003525efe359ea26238b2ecca3bc192b
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844414"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982233"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -24,7 +24,7 @@ Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção d
 
 Não tente extrair o valor `$skip` da URL `@odata.nextLink` para manipular respostas. Essa API usa o valor `$skip` para manter a contagem de todos os itens pelos quais passou na caixa de correio do usuário para retornar uma página de itens do tipo mensagem. Portanto, é possível que, mesmo na resposta inicial, o valor `$skip` seja maior que o tamanho da página. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
-Você pode filtrar as mensagens e obter apenas aquelas que incluem uma [menção](../resources/mention.md) do usuário assinado. Veja um [exemplo](#request-2) abaixo. Por padrão, a `GET /me/messages` operação não retorna a propriedade **menções.** Use o `$expand` parâmetro de consulta para encontrar detalhes de cada [menção em uma mensagem.](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)
+Você pode filtrar as mensagens e obter apenas aquelas que incluem [uma](../resources/mention.md) menção do usuário entrar. Veja um [exemplo](#request-2) abaixo. Por padrão, a `GET /me/messages` operação não retorna a propriedade **menções.** Use o `$expand` parâmetro de consulta para encontrar detalhes de cada [menção em uma mensagem.](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message)
 
 Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
@@ -174,7 +174,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Microsoft Azure",
-                    "address": "azure-noreply@microsoft.com"
+                    "address": "azure-noreply@contoso.com"
                 }
             }
         },
@@ -185,7 +185,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -196,7 +196,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -207,7 +207,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -218,7 +218,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         },
@@ -230,7 +230,7 @@ Content-type: application/json
             "sender": {
                 "emailAddress": {
                     "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
+                    "address": "MeganB@contoso.com"
                 }
             }
         }
@@ -240,7 +240,7 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>Solicitação 2
-O próximo exemplo filtra todas as mensagens na caixa de correio do usuário de entrada para aquelas que mencionam o usuário. Ele também usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
+O próximo exemplo filtra todas as mensagens na caixa de correio do usuário que o mencionam. Ele também usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 
 O exemplo também incorpora a codificação de URL para os caracteres de espaço na cadeia de caracteres do parâmetro de consulta.
 
@@ -294,8 +294,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{
@@ -310,8 +310,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso yammerActivityUserDetail
+title: Tipo de recurso yammerActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: eb17035f0d062d55a3607dd30f31459b79b8400c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 749076f407b49ff4fd408a095312ac49ea008bc1
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971367"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982394"
 ---
-# <a name="yammeractivityuserdetail-resource-type"></a>tipo de recurso yammerActivityUserDetail
+# <a name="yammeractivityuserdetail-resource-type"></a>Tipo de recurso yammerActivityUserDetail
 
 Namespace: microsoft.graph
 
@@ -21,16 +21,16 @@ Namespace: microsoft.graph
 | Propriedade          | Tipo              |
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
-| userPrincipalName | String            |
-| displayName       | String            |
-| userState         | String            |
+| userPrincipalName | Cadeia de caracteres            |
+| displayName       | Cadeia de caracteres            |
+| userState         | Cadeia de caracteres            |
 | stateChangeDate   | Data              |
 | lastActivityDate  | Data              |
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |
-| assignedProducts  | Coleção de cadeias de caracteres |
-| reportPeriod      | String            |
+| assignedProducts  | Coleção String |
+| reportPeriod      | Cadeia de caracteres            |
 
 ## <a name="json-representation"></a>Representação JSON
 

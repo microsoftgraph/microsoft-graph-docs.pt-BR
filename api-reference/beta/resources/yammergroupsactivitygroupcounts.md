@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso yammerGroupsActivityGroupCounts
+title: Tipo de recurso yammerGroupsActivityGroupCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: f93b966d1fbc09fda20341f6c7b6e5361d53a9d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d51bf2feff72ccbf054ce14c510fdfdc4b5d9d4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046045"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982317"
 ---
-# <a name="yammergroupsactivitygroupcounts-resource-type"></a>tipo de recurso yammerGroupsActivityGroupCounts
+# <a name="yammergroupsactivitygroupcounts-resource-type"></a>Tipo de recurso yammerGroupsActivityGroupCounts
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 | :---------------- | :----- | :---------- |
 | reportRefreshDate | Data   |             |
 | total             | Int64  |             |
-| active            | Int64  |             |
+| ativo            | Int64  |             |
 | reportDate        | Data   |             |
 | reportPeriod      | Cadeia de caracteres |             |
 

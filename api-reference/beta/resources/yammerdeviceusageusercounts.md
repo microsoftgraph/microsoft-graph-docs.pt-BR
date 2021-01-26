@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso yammerDeviceUsageUserCounts
+title: Tipo de recurso yammerDeviceUsageUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 137c69b4bc908e7706716fadcc6e6f9c619604ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9780d75ee75d45675c21ad639fccdf4edd32a949
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979186"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982359"
 ---
-# <a name="yammerdeviceusageusercounts-resource-type"></a>tipo de recurso yammerDeviceUsageUserCounts
+# <a name="yammerdeviceusageusercounts-resource-type"></a>Tipo de recurso yammerDeviceUsageUserCounts
 
 Namespace: microsoft.graph
 
@@ -22,13 +22,13 @@ Namespace: microsoft.graph
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
 | web               | Int32  |
-| Windowsphonee      | Int32  |
+| windowsPhone      | Int32  |
 | androidPhone      | Int32  |
 | iPhone            | Int32  |
 | iPad              | Int32  |
-| outro             | Int32  |
+| outros             | Int32  |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

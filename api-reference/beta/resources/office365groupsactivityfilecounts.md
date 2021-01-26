@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso office365GroupsActivityFileCounts
+title: Tipo de recurso office365GroupsActivityFileCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: c887ecb526d9c4215c1d8586bcbcb799c9e2c476
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f4f26e141dc25e1e5e249ad116bc9a988274f18
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092402"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981498"
 ---
-# <a name="office365groupsactivityfilecounts-resource-type"></a>tipo de recurso office365GroupsActivityFileCounts
+# <a name="office365groupsactivityfilecounts-resource-type"></a>Tipo de recurso office365GroupsActivityFileCounts
 
 Namespace: microsoft.graph
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 | Propriedade          | Tipo   | Descrição                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | Data   | A última data do conteúdo.          |
+| reportRefreshDate | Data   | A data mais recente do conteúdo.          |
 | total             | Int64  | O número total de arquivos na biblioteca de documentos do SharePoint do grupo. |
-| active            | Int64  | O número de arquivos que foram exibidos, editados, compartilhados ou sincronizados na biblioteca de documentos do SharePoint do grupo. |
-| reportDate        | Data   | A data em que um número de arquivos estava ativo no site do SharePoint do grupo. |
-| reportPeriod      | Cadeia de caracteres | O número de dias que o relatório cobre.    |
+| ativo            | Int64  | O número de arquivos que foram exibidos, editados, compartilhados ou sincronizados na biblioteca de documentos do SharePoint do grupo. |
+| reportDate        | Data   | A data em que vários arquivos estavam ativos no site do SharePoint do grupo. |
+| reportPeriod      | Cadeia de caracteres | O número de dias que o relatório abrange.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

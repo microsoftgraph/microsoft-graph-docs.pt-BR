@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso office365GroupsActivityStorage
+title: Tipo de recurso office365GroupsActivityStorage
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 0b14e6981a193ad1698303d2762d0321de430b73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7ac9ca260e4723f7c4aeca8e15f837d4cd57b7c4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092388"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982177"
 ---
-# <a name="office365groupsactivitystorage-resource-type"></a>tipo de recurso office365GroupsActivityStorage
+# <a name="office365groupsactivitystorage-resource-type"></a>Tipo de recurso office365GroupsActivityStorage
 
 Namespace: microsoft.graph
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 | Propriedade                  | Tipo   | Descrição                              |
 | :------------------------ | :----- | ---------------------------------------- |
-| reportRefreshDate         | Data   | A última data do conteúdo.          |
+| reportRefreshDate         | Data   | A data mais recente do conteúdo.          |
 | mailboxStorageUsedInBytes | Int64  | O armazenamento usado na caixa de correio de grupo.       |
 | siteStorageUsedInBytes    | Int64  | O armazenamento usado na biblioteca de documentos do SharePoint. |
-| reportDate                | Data   | A data do instantâneo para o armazenamento usado pelo Exchange e pelo SharePoint. |
-| reportPeriod              | Cadeia de caracteres | O número de dias que o relatório cobre.    |
+| reportDate                | Data   | A data do instantâneo do armazenamento usado pelo Exchange e pelo SharePoint. |
+| reportPeriod              | Cadeia de caracteres | O número de dias que o relatório abrange.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso yammerActivitySummary
+title: Tipo de recurso yammerActivitySummary
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: eb582887e27af068b456b2fcf87971b2cdcf23d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ad57e163d99cf162dbdf0a0c86206a139f0773d
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979207"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982401"
 ---
-# <a name="yammeractivitysummary-resource-type"></a>tipo de recurso yammerActivitySummary
+# <a name="yammeractivitysummary-resource-type"></a>Tipo de recurso yammerActivitySummary
 
 Namespace: microsoft.graph
 
@@ -21,11 +21,11 @@ Namespace: microsoft.graph
 | Propriedade          | Tipo   |
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
-| curti             | Int64  |
-| posta            | Int64  |
+| liked             | Int64  |
+| postado            | Int64  |
 | leitura              | Int64  |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

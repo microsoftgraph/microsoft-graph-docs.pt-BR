@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso emailActivityUserDetail
+title: Tipo de recurso emailActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-author: pranoychaudhuri
+author: sarahwxy
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 76ec180ceb239f79c420f26b48521e9bc7e81787
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 73e743bc6409f762a7898ec8037633c7bc3f00e4
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979480"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49981848"
 ---
-# <a name="emailactivityuserdetail-resource-type"></a>tipo de recurso emailActivityUserDetail
+# <a name="emailactivityuserdetail-resource-type"></a>Tipo de recurso emailActivityUserDetail
 
 Namespace: microsoft.graph
 
@@ -21,16 +21,16 @@ Namespace: microsoft.graph
 | Propriedade          | Tipo              |
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
-| userPrincipalName | String            |
-| displayName       | String            |
-| isDeleted         | Boolean           |
+| userPrincipalName | Cadeia de caracteres            |
+| displayName       | Cadeia de caracteres            |
+| isDeleted         | Booliano           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
 | sendCount         | Int64             |
 | receiveCount      | Int64             |
 | readCount         | Int64             |
-| assignedProducts  | Coleção de cadeias de caracteres |
-| reportPeriod      | String            |
+| assignedProducts  | Coleção String |
+| reportPeriod      | Cadeia de caracteres            |
 
 ## <a name="json-representation"></a>Representação JSON
 

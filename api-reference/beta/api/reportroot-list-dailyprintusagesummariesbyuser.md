@@ -1,16 +1,16 @@
 ---
 title: Listar dailyPrintUsageSummariesByUser
-description: Recupere uma lista de resumos de uso de impressão diária, agrupados por usuário.
+description: Recupere uma lista de resumos de uso diário de impressão, agrupados por usuário.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0622b313858e448d94a92514c6a3b222fbf03a13
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5f67c8907986ad9aa5672030ee69e47c1749f2a6
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971506"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982765"
 ---
 # <a name="list-dailyprintusagesummariesbyuser"></a>Listar dailyPrintUsageSummariesByUser
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de resumos de uso de impressão diária, agrupados por usuário.
+Recupere uma lista de resumos de uso diário de impressão, agrupados por usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário deve ter uma assinatura universal de impressão.
+Além das permissões a seguir, o locatário do usuário deve ter uma assinatura de Impressão Universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegada (conta corporativa ou de estudante)| Reports.Read.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos printUsageSummaryByUser](../resources/printusagesummarybyuser.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -98,7 +98,7 @@ Content-length: 268
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "userPrincipalName": "username@microsoft.com",
+      "userPrincipalName": "username@contoso.com",
       "usageDate": "2020-02-04T00:00:00.0000000Z",
       "completedBlackAndWhiteJobCount": 42,
       "completedColorJobCount": 0,

@@ -5,22 +5,24 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ad3fd83605d49351e2c57b469339fcfe222f05cb
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: dcbbebf03a91563e5504eb3032f57f973a4c3ede
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796714"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982478"
 ---
 # <a name="windowshelloforbusinessauthenticationmethod-resource-type"></a>Tipo de recurso windowsHelloForBusinessAuthenticationMethod
 
 Namespace: microsoft.graph
 
-Uma representação de um método de autenticação do Windows Hello para Empresas registrado a um usuário. O Windows Hello para Empresas é um método de autenticação de entrada para dispositivos Windows.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Uma representação de um método de autenticação do Windows Hello para Empresas registrado para um usuário. O Windows Hello para Empresas é um método de autenticação de entrada para dispositivos Windows.
 
 Herda de [authenticationMethod](../resources/authenticationmethod.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsHelloForBusinessAuthenticationMethods](../api/windowshelloforbusinessauthenticationmethod-list.md)|[Coleção windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md)|Obter uma lista dos [objetos windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) e suas propriedades.|

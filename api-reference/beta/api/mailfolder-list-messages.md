@@ -1,16 +1,16 @@
 ---
 title: Listar mensagens
-description: Listar todas as mensagens na caixa de correio do usuário conectado ou as mensagens de uma pasta especificada na caixa de correio ou unidade.
+description: Lista todas as mensagens na caixa de correio do usuário ou as mensagens em uma pasta especificada na caixa de correio ou unidade.
 localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5d62aaf947b4119d10f8eeeb7150143cbd4f064a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7eb0f95433c23c58fbed93e514c493bcfb438059
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979275"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49982989"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar todas as mensagens na caixa de correio do usuário especificado ou as mensagens de uma pasta especificada na caixa de correio.
+Lista todas as mensagens na caixa de correio do usuário especificado ou as mensagens em uma pasta especificada na caixa de correio.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -129,20 +129,20 @@ Content-length: 317
       "sender": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "from": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "toRecipients": [
           {
               "emailAddress": {
                   "name": "Megan Bowen",
-                  "address": "MeganB@M365x214355.onmicrosoft.com"
+                  "address": "MeganB@contoso.com"
               }
           }
       ],
