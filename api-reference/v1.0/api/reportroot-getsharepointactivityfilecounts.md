@@ -3,36 +3,36 @@ title: 'reportRoot: getSharePointActivityFileCounts'
 description: Obtenha o número de usuários únicos licenciados que interagiram com arquivos armazenados em sites do SharePoint.
 localization_priority: Normal
 ms.prod: reports
-author: pranoychaudhuri
+author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 3e924db01708f0fa2de1fbd5b3e301a8416f156e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e5b1b26b74938fd997cc064ee8e47d0ae8df9fc
+ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045639"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980875"
 ---
-# <a name="reportroot-getsharepointactivityfilecounts"></a><span data-ttu-id="1220c-103">reportRoot: getSharePointActivityFileCounts</span><span class="sxs-lookup"><span data-stu-id="1220c-103">reportRoot: getSharePointActivityFileCounts</span></span>
+# <a name="reportroot-getsharepointactivityfilecounts"></a><span data-ttu-id="aada2-103">reportRoot: getSharePointActivityFileCounts</span><span class="sxs-lookup"><span data-stu-id="aada2-103">reportRoot: getSharePointActivityFileCounts</span></span>
 
-<span data-ttu-id="1220c-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1220c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="aada2-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="aada2-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1220c-105">Obtenha o número de usuários únicos licenciados que interagiram com arquivos armazenados em sites do SharePoint.</span><span class="sxs-lookup"><span data-stu-id="1220c-105">Get the number of unique, licensed users who interacted with files stored on SharePoint sites.</span></span>
+<span data-ttu-id="aada2-105">Obtenha o número de usuários únicos licenciados que interagiram com arquivos armazenados em sites do SharePoint.</span><span class="sxs-lookup"><span data-stu-id="aada2-105">Get the number of unique, licensed users who interacted with files stored on SharePoint sites.</span></span>
 
-> <span data-ttu-id="1220c-106">**Observação:** Para obter detalhes sobre diferentes modos de exibição e nomes de relatórios, consulte [Microsoft 365 Reports-SharePoint Activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span><span class="sxs-lookup"><span data-stu-id="1220c-106">**Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span></span>
+> <span data-ttu-id="aada2-106">**Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - atividade do SharePoint.](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f)</span><span class="sxs-lookup"><span data-stu-id="aada2-106">**Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1220c-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="1220c-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="aada2-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="aada2-107">Permissions</span></span>
 
-<span data-ttu-id="1220c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1220c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="aada2-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aada2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1220c-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1220c-110">Permission type</span></span>                        | <span data-ttu-id="1220c-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1220c-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="aada2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="aada2-110">Permission type</span></span>                        | <span data-ttu-id="aada2-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="aada2-111">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="1220c-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1220c-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="1220c-113">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="1220c-113">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="1220c-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1220c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1220c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1220c-115">Not supported.</span></span>                           |
-| <span data-ttu-id="1220c-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1220c-116">Application</span></span>                            | <span data-ttu-id="1220c-117">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="1220c-117">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="aada2-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="aada2-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="aada2-113">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="aada2-113">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="aada2-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="aada2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aada2-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="aada2-115">Not supported.</span></span>                           |
+| <span data-ttu-id="aada2-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="aada2-116">Application</span></span>                            | <span data-ttu-id="aada2-117">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="aada2-117">Reports.Read.All</span></span>                         |
 
-<span data-ttu-id="1220c-118">**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário.</span><span class="sxs-lookup"><span data-stu-id="1220c-118">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="1220c-119">Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).</span><span class="sxs-lookup"><span data-stu-id="1220c-119">For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).</span></span>
+<span data-ttu-id="aada2-118">**Observação**: para permissões delegadas para permitir que os aplicativos leiam os relatórios de uso de serviço em nome de um usuário, o administrador de locatários deve atribuir a função apropriada de administrador limitada do Azure AD ao usuário.</span><span class="sxs-lookup"><span data-stu-id="aada2-118">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="aada2-119">Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).</span><span class="sxs-lookup"><span data-stu-id="aada2-119">For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="1220c-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1220c-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aada2-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="aada2-120">HTTP request</span></span>
 
 
 <!-- { "blockType": "ignored" } --> 
@@ -41,42 +41,42 @@ ms.locfileid: "48045639"
 GET /reports/getSharePointActivityFileCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="1220c-121">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="1220c-121">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="aada2-121">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="aada2-121">Function parameters</span></span>
 
-<span data-ttu-id="1220c-122">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="1220c-122">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="aada2-122">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="aada2-122">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="1220c-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="1220c-123">Parameter</span></span> | <span data-ttu-id="1220c-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="1220c-124">Type</span></span>   | <span data-ttu-id="1220c-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="1220c-125">Description</span></span>                              |
+| <span data-ttu-id="aada2-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="aada2-123">Parameter</span></span> | <span data-ttu-id="aada2-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="aada2-124">Type</span></span>   | <span data-ttu-id="aada2-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="aada2-125">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="1220c-126">ponto</span><span class="sxs-lookup"><span data-stu-id="1220c-126">period</span></span>    | <span data-ttu-id="1220c-127">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1220c-127">string</span></span> | <span data-ttu-id="1220c-128">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="1220c-128">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="1220c-129">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="1220c-129">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="1220c-130">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="1220c-130">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="1220c-131">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1220c-131">Required.</span></span> |
+| <span data-ttu-id="aada2-126">ponto</span><span class="sxs-lookup"><span data-stu-id="aada2-126">period</span></span>    | <span data-ttu-id="aada2-127">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="aada2-127">string</span></span> | <span data-ttu-id="aada2-128">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="aada2-128">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="aada2-129">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="aada2-129">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="aada2-130">Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="aada2-130">These values follow the format D *n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="aada2-131">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="aada2-131">Required.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="1220c-132">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1220c-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="aada2-132">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="aada2-132">Request headers</span></span>
 
-| <span data-ttu-id="1220c-133">Nome</span><span class="sxs-lookup"><span data-stu-id="1220c-133">Name</span></span>          | <span data-ttu-id="1220c-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="1220c-134">Description</span></span>                              |
+| <span data-ttu-id="aada2-133">Nome</span><span class="sxs-lookup"><span data-stu-id="aada2-133">Name</span></span>          | <span data-ttu-id="aada2-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="aada2-134">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="1220c-135">Autorização</span><span class="sxs-lookup"><span data-stu-id="1220c-135">Authorization</span></span> | <span data-ttu-id="1220c-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1220c-p104">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="1220c-138">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="1220c-138">If-None-Match</span></span> | <span data-ttu-id="1220c-139">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="1220c-139">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="1220c-140">Opcional.</span><span class="sxs-lookup"><span data-stu-id="1220c-140">Optional.</span></span> |
+| <span data-ttu-id="aada2-135">Autorização</span><span class="sxs-lookup"><span data-stu-id="aada2-135">Authorization</span></span> | <span data-ttu-id="aada2-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="aada2-p104">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="aada2-138">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="aada2-138">If-None-Match</span></span> | <span data-ttu-id="aada2-139">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="aada2-139">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="aada2-140">Opcional.</span><span class="sxs-lookup"><span data-stu-id="aada2-140">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="1220c-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="1220c-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="aada2-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="aada2-141">Response</span></span>
 
-<span data-ttu-id="1220c-142">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="1220c-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="1220c-143">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="1220c-143">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="aada2-142">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="aada2-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="aada2-143">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="aada2-143">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="1220c-144">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="1220c-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="aada2-144">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="aada2-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="1220c-145">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="1220c-145">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="aada2-145">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="aada2-145">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="1220c-146">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="1220c-146">Report Refresh Date</span></span>
-- <span data-ttu-id="1220c-147">Exibidos ou editados</span><span class="sxs-lookup"><span data-stu-id="1220c-147">Viewed Or Edited</span></span>
-- <span data-ttu-id="1220c-148">Sincronizados</span><span class="sxs-lookup"><span data-stu-id="1220c-148">Synced</span></span>
-- <span data-ttu-id="1220c-149">Compartilhados internamente</span><span class="sxs-lookup"><span data-stu-id="1220c-149">Shared Internally</span></span>
-- <span data-ttu-id="1220c-150">Compartilhados externamente</span><span class="sxs-lookup"><span data-stu-id="1220c-150">Shared Externally</span></span>
-- <span data-ttu-id="1220c-151">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="1220c-151">Report Date</span></span>
-- <span data-ttu-id="1220c-152">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="1220c-152">Report Period</span></span>
+- <span data-ttu-id="aada2-146">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="aada2-146">Report Refresh Date</span></span>
+- <span data-ttu-id="aada2-147">Exibidos ou editados</span><span class="sxs-lookup"><span data-stu-id="aada2-147">Viewed Or Edited</span></span>
+- <span data-ttu-id="aada2-148">Sincronizados</span><span class="sxs-lookup"><span data-stu-id="aada2-148">Synced</span></span>
+- <span data-ttu-id="aada2-149">Compartilhados internamente</span><span class="sxs-lookup"><span data-stu-id="aada2-149">Shared Internally</span></span>
+- <span data-ttu-id="aada2-150">Compartilhados externamente</span><span class="sxs-lookup"><span data-stu-id="aada2-150">Shared Externally</span></span>
+- <span data-ttu-id="aada2-151">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="aada2-151">Report Date</span></span>
+- <span data-ttu-id="aada2-152">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="aada2-152">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="1220c-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1220c-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aada2-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="aada2-153">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1220c-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1220c-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="aada2-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="aada2-154">Request</span></span>
 
-<span data-ttu-id="1220c-155">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1220c-155">The following is an example of the request.</span></span>
+<span data-ttu-id="aada2-155">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="aada2-155">The following is an example of the request.</span></span>
 
 
 <!--{
@@ -90,9 +90,9 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityFileCounts(per
 ```
 
 
-#### <a name="response"></a><span data-ttu-id="1220c-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="1220c-156">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="aada2-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="aada2-156">Response</span></span>
 
-<span data-ttu-id="1220c-157">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1220c-157">The following is an example of the response.</span></span>
+<span data-ttu-id="aada2-157">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="aada2-157">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -106,7 +106,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="1220c-158">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="1220c-158">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="aada2-158">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="aada2-158">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
