@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d225f7453a1ad24e87d0d48a85be432447565ff8
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 308dbc950335951dd0181e059f60d4a6bdd97e68
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45224750"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015629"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var directoryObject = new DirectoryObject
     Id = "{id}"
 };
 
-await graphClient.Devices["{id}"].RegisteredUsers.References
+await graphClient.Devices["{id}"].RegisteredOwners.References
     .Request()
     .AddAsync(directoryObject);
 

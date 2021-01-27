@@ -490,6 +490,12 @@ items:
                 href: extensibility-open-users.md
               - name: Usar extensões de esquema (exemplo)
                 href: extensibility-schema-groups.md
+          - name: Usar o Explorador do Graph
+            items:
+              - name: Introdução
+                href: graph-explorer/graph-explorer-overview.md
+              - name: Trabalhar com o Explorador do Graph
+                href: graph-explorer/graph-explorer-features.md
           - name: Usar o Postman
             href: use-postman.md
       - name: Migrar

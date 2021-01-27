@@ -1,27 +1,31 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 84e4582a7a728680a848bbe80dd013bd4efe8266
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: d93bef0bf2e3a4396f11a5ec3512bf9bc078806c
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44684049"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015765"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var fieldValueSet = new FieldValueSet
+var listItem = new ListItem
 {
-    AdditionalData = new Dictionary<string, object>()
+    Fields = new FieldValueSet
     {
-        {"Color", "Fuchsia"},
-        {"Quantity", "934"}
+        AdditionalData = new Dictionary<string, object>()
+        {
+            {"Title", "Widget"},
+            {"Color", "Purple"},
+            {"Weight", "32"}
+        }
     }
 };
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"].Fields
+await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items
     .Request()
-    .UpdateAsync(fieldValueSet);
+    .AddAsync(listItem);
 
 ```
