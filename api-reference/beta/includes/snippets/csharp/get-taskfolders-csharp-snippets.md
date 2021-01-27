@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9622f19c61681333d636b536dee00d4d5ebf32fe
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 0b5ea7a177e57a9b5a6cf98e1a2ffa4c5df6bcf4
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48617581"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015331"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var taskFolders = await graphClient.Me.Outlook.TaskFolders
+var taskFolders = await graphClient.Me.Outlook.TaskGroups["AAMkADIyAAAhrbe-AAA="].TaskFolders
     .Request()
     .GetAsync();
 
