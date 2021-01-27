@@ -1,26 +1,26 @@
 ---
-title: Tipo de recurso de ponto de extremidade
-description: 'Os pontos de extremidade representam URLs para recursos associados a uma entidade.  Por exemplo, quando um novo grupo Microsoft 365 é criado, recursos adicionais também são criados como parte do grupo Microsoft 365. Isso inclui itens como uma caixa de correio de grupo para conversas e uma pasta do OneDrive de grupo para documentos e arquivos. Informações adicionais sobre esses recursos de grupo do Microsoft 365, incluindo suas URLs de recurso associadas, agora podem ser lidas usando a navegação de *pontos de extremidade* no tipo de recurso de grupo. Isso permite que os aplicativos entendam esses recursos e, até mesmo, incorpore as experiências de URL de recurso em suas próprias experiências. '
+title: Tipo de recurso Endpoint
+description: Os pontos de extremidade representam URLs de recursos associados a uma entidade.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: yyuank
-ms.openlocfilehash: 683ef1140105666d96c83249876266db204b1b47
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47bef2bfa14fb8a00fd1ca2356d7f880ff3207d6
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979421"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013594"
 ---
-# <a name="endpoint-resource-type"></a>Tipo de recurso de ponto de extremidade
+# <a name="endpoint-resource-type"></a>Tipo de recurso Endpoint
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os pontos de extremidade representam URLs para recursos associados a uma entidade.  Por exemplo, quando um novo grupo Microsoft 365 é criado, recursos adicionais também são criados como parte do grupo Microsoft 365. Isso inclui itens como uma caixa de correio de grupo para conversas e uma pasta do OneDrive de grupo para documentos e arquivos. Informações adicionais sobre esses recursos de grupo do Microsoft 365, incluindo suas URLs de recurso associadas, agora podem ser lidas usando a navegação de *pontos de extremidade* no tipo de recurso de grupo. Isso permite que os aplicativos entendam esses recursos e, até mesmo, incorpore as experiências de URL de recurso em suas próprias experiências.
+Os pontos de extremidade representam URLs de recursos associados a uma entidade.  Por exemplo, quando um novo grupo do Microsoft 365 é criado, recursos adicionais também são criados como parte do grupo do Microsoft 365. Isso inclui coisas como uma caixa de correio de grupo para conversas e uma pasta do OneDrive de grupo para documentos e arquivos. Mais informações sobre esses recursos de grupo do Microsoft 365, incluindo suas URLs de recursos associadas agora podem ser *lidas* usando a navegação de pontos de extremidade no tipo de recurso do grupo. Isso permite que os aplicativos compreendam esses recursos e, até mesmo, incorporam as experiências de URL do recurso em suas próprias experiências.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -30,12 +30,12 @@ Os pontos de extremidade representam URLs para recursos associados a uma entidad
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| função     | String  | Descreve o recurso que está associado a esse recurso. (por exemplo, mensagens, conversas etc.)  Não anulável. Somente leitura. |
-| id             | String  | Identificador exclusivo do ponto de extremidade; Chaves. Não anulável. Somente leitura.|
-| providerId     | String  | ID de aplicativo do serviço subjacente de publicação. Não anulável. Somente leitura.|
-| providerName   | String  | Nome do serviço subjacente de publicação. Somente leitura.|
-| providerResourceId|String| Para os grupos do Microsoft 365, isso é definido como um nome conhecido para o recurso (por exemplo, Yammer. FeedURL etc.). Não anulável. Somente leitura.|
-| URI            | String  | URL do recurso publicado. Não anulável. Somente leitura.|
+| capability     | Cadeia de caracteres  | Descreve a funcionalidade associada a esse recurso. (por exemplo, mensagens, conversas, etc.)  Não anulada. Somente leitura. |
+| id             | Cadeia de caracteres  | Identificador exclusivo do ponto de extremidade; Tecla. Não anulável. Somente leitura.|
+| providerId     | Cadeia de caracteres  | ID do aplicativo do serviço subjacente de publicação. Não anulável. Somente leitura.|
+| providerName   | Cadeia de caracteres  | Nome do serviço subjacente de publicação. Somente leitura.|
+| providerResourceId|Cadeia de caracteres| Para grupos do Microsoft 365, isso é definido como um nome conhecido para o recurso (por exemplo, Yammer.FeedURL etc.). Não anulável. Somente leitura.|
+| uri            | Cadeia de caracteres  | URL do recurso publicado. Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

@@ -5,12 +5,12 @@ author: jeeshnair
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8896dc2ceff5109061eac01d56af8ceabb032dbd
-ms.sourcegitcommit: 9a5facff47a8d4e05ecd2c6cd68294a948c47c4d
+ms.openlocfilehash: 2662458894fe6dab7fd42e0125c6b4c8f165a4e8
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49944348"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013643"
 ---
 # <a name="list-user-usagerights"></a>Listar usageRights do usuário
 Namespace: microsoft.graph
@@ -67,6 +67,8 @@ Além disso, se houver mais páginas na resposta, um @odata.nextLink será retor
 ### <a name="example-1-get-all-usage-rights-for-a-user"></a>Exemplo 1: Obter todos os direitos de uso de um usuário
 
 #### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_usageright"
@@ -75,6 +77,24 @@ Além disso, se houver mais páginas na resposta, um @odata.nextLink será retor
 ``` http
 GET https://graph.microsoft.com/beta/users/{userId}/usageRights
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-usageright-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-usageright-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-usageright-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-usageright-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -106,6 +126,8 @@ Content-Type: application/json
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_usageright"
@@ -114,6 +136,24 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/users/{userId}/usageRights?$filter=state in ('active', 'suspended') and serviceIdentifier in ('ABCD')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-usageright-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-usageright-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-usageright-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-usageright-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

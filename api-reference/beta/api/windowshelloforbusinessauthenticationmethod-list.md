@@ -5,15 +5,17 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d8039c58a6b52fa200977903669538063e3df9da
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 8fca4ebf68dad9d0c85dfa75b36b2ee094e84bff
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874330"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013678"
 ---
 # <a name="list-windowshelloforbusinessauthenticationmethods"></a>Listar windowsHelloForBusinessAuthenticationMethods
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter uma lista dos [objetos windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) e suas propriedades.
 
@@ -38,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa [de uma das seguintes funções:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Administrador global
+* Administração global
 * Leitor global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação (vê apenas números de telefone com máscara)

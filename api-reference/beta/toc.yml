@@ -70,6 +70,12 @@ items:
             href: /graph/extensibility-open-users?context=graph/api/beta
           - name: Usar extensões de esquema (exemplo)
             href: /graph/extensibility-schema-groups?context=graph/api/beta
+      - name: Usar o Explorador do Graph
+        items:
+          - name: Introdução
+            href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
+          - name: Trabalhar com o Explorador do Graph
+            href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
       - name: Usar o Postman
         href: /graph/use-postman?context=graph/api/beta
   - name: Migrar
@@ -448,7 +454,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -929,7 +935,7 @@ items:
                     href: api/serviceprincipal-delete-approleassignments.md
                   - name: Listar a função de aplicativo atribuída
                     href: api/serviceprincipal-list-approleassignedto.md
-                  - name: Adicionar a função de aplicativo atribuída a
+                  - name: Adicionar função de aplicativo atribuída a
                     href: api/serviceprincipal-post-approleassignedto.md
                   - name: Remover a função de aplicativo atribuída a
                     href: api/serviceprincipal-delete-approleassignedto.md
@@ -1022,7 +1028,7 @@ items:
                     href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
                   - name: Obter credenciais de acesso único por senha
                     href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
-                  - name: Atualizar credenciais de acesso único de senha
+                  - name: Atualizar credenciais de acesso único por senha
                     href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
                   - name: Excluir credenciais de acesso único por senha
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
@@ -1274,9 +1280,9 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: Place
+          - name: Local
             items:
-              - name: Place
+              - name: Local
                 href: resources/place.md
               - name: Tipo de sala
                 href: resources/room.md
@@ -1337,7 +1343,7 @@ items:
                 items:
                   - name: Reproduzir prompt
                     href: api/call-playprompt.md
-                  - name: Resposta do registro
+                  - name: Resposta de registro
                     href: api/call-record.md
                   - name: Cancelar processamento de mídia
                     href: api/call-cancelmediaprocessing.md
@@ -1477,7 +1483,7 @@ items:
                     href: api/reviewset-post.md
                   - name: Obter
                     href: api/reviewset-get.md
-              - name: Revisar a consulta de conjunto
+              - name: Revisar a consulta do conjunto
                 href: resources/reviewsetquery.md
                 items:
                   - name: Listar
@@ -2004,7 +2010,7 @@ items:
                     href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md
                   - name: Faixa de aplicativos da Loja Gerenciada do Android
                     href: resources/intune-apps-androidmanagedstoreapptrack.md
-                  - name: Aplicativo Web da Loja Gerenciada do Android
+                  - name: Aplicativo Web do armazenamento gerenciado Android
                     href: resources/intune-apps-androidmanagedstorewebapp.md
                     items:
                       - name: Listar
@@ -2253,7 +2259,7 @@ items:
                         href: api/intune-apps-macosmdatpapp-delete.md
                       - name: Atualizar
                         href: api/intune-apps-macosmdatpapp-update.md
-                  - name: Aplicativo microsoft edge do macOS
+                  - name: aplicativo microsoft edge do macOS
                     href: resources/intune-apps-macosmicrosoftedgeapp.md
                     items:
                       - name: Listar
@@ -2564,7 +2570,7 @@ items:
                         href: api/intune-apps-mobileappcontentfile-renewupload.md
                   - name: Estado de carregamento do arquivo de conteúdo do aplicativo móvel
                     href: resources/intune-apps-mobileappcontentfileuploadstate.md
-                  - name: Dependência de aplicativos móveis
+                  - name: Dependência de aplicativo móvel
                     href: resources/intune-apps-mobileappdependency.md
                     items:
                       - name: Listar
@@ -2687,7 +2693,7 @@ items:
                     href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
                   - name: Destino de atribuição de grupo de configuração do Office
                     href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-                  - name: ID do produto (Product ID) do Office
+                  - name: ID do produto do Office
                     href: resources/intune-apps-officeproductid.md
                   - name: Aplicativo do pacote Office
                     href: resources/intune-apps-officesuiteapp.md
@@ -3077,7 +3083,7 @@ items:
                         href: api/intune-enrollment-appleenrollmentprofileassignment-delete.md
                       - name: Atualizar
                         href: api/intune-enrollment-appleenrollmentprofileassignment-update.md
-                  - name: Tipo de registro do tipo proprietário da Apple
+                  - name: Tipo de registro de tipo de proprietário da Apple
                     href: resources/intune-enrollment-appleownertypeenrollmenttype.md
                   - name: Perfil de registro iniciado pelo usuário da Apple
                     href: resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md
@@ -3456,7 +3462,7 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md
                   - name: Tipo de perfil de registro do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md
-                  - name: Configuração empresarial do proprietário do dispositivo Android Wi-Fi dispositivo Android
+                  - name: Configuração empresarial do proprietário do Wi-Fi dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
                     items:
                       - name: Listar
@@ -3556,9 +3562,9 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md
-                  - name: Tipo de botão página principal virtual do proprietário do dispositivo Android
+                  - name: Tipo de botão home virtual do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md
-                  - name: Configuração vpn do proprietário do dispositivo Android
+                  - name: Configuração de VPN do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md
                     items:
                       - name: Listar
@@ -4101,7 +4107,7 @@ items:
                         href: api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-get.md
                   - name: Formato de nome de assunto da Apple
                     href: resources/intune-deviceconfig-applesubjectnameformat.md
-                  - name: Configuração always on da VPN da Apple
+                  - name: Configuração sempre on da VPN da Apple
                     href: resources/intune-deviceconfig-applevpnalwaysonconfiguration.md
                   - name: Configuração de VPN da Apple
                     href: resources/intune-deviceconfig-applevpnconfiguration.md
@@ -4924,7 +4930,7 @@ items:
                         href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles.md
                       - name: Ação uploadNewVersion
                         href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-uploadnewversion.md
-                      - name: ação remove
+                      - name: remover ação
                         href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-remove.md
                   - name: Status do arquivo de definição carregado da política de grupo
                     href: resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md
@@ -5326,7 +5332,7 @@ items:
                     href: resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md
                   - name: Tipo de cache de conteúdo do macOS
                     href: resources/intune-deviceconfig-macoscontentcachingtype.md
-                  - name: Extensão de single sign on da credencial do macOS
+                  - name: Extensão de login único de credencial do macOS
                     href: resources/intune-deviceconfig-macoscredentialsinglesignonextension.md
                   - name: Configuração de aplicativo personalizado do macOS
                     href: resources/intune-deviceconfig-macoscustomappconfiguration.md
@@ -5661,7 +5667,7 @@ items:
                     href: resources/intune-deviceconfig-mediacontentratingunitedstates.md
                   - name: Tipo de limite de conexão limitada
                     href: resources/intune-deviceconfig-meteredconnectionlimittype.md
-                  - name: Presença do dock do Microsoft launcher
+                  - name: Presença do dock do microsoft launcher
                     href: resources/intune-deviceconfig-microsoftlauncherdockpresence.md
                   - name: Posicionamento da barra de pesquisa do Microsoft Launcher
                     href: resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md
@@ -5936,7 +5942,7 @@ items:
                     href: resources/intune-deviceconfig-vpnencryptionalgorithmtype.md
                   - name: Tipo de algoritmo de integridade de VPN
                     href: resources/intune-deviceconfig-vpnintegrityalgorithmtype.md
-                  - name: Identificador local da VPN
+                  - name: Identificador local de VPN
                     href: resources/intune-deviceconfig-vpnlocalidentifier.md
                   - name: Regra sob demanda da VPN
                     href: resources/intune-deviceconfig-vpnondemandrule.md
@@ -6810,7 +6816,7 @@ items:
                         href: api/intune-devices-devicecompliancescriptdevicestate-delete.md
                       - name: Atualizar
                         href: api/intune-devices-devicecompliancescriptdevicestate-update.md
-                  - name: Resumo de executar o script de conformidade do dispositivo
+                  - name: Resumo do script de conformidade do dispositivo
                     href: resources/intune-devices-devicecompliancescriptrunsummary.md
                     items:
                       - name: Obter
@@ -7254,7 +7260,7 @@ items:
                         href: api/intune-devices-devicemanagementscriptuserstate-delete.md
                       - name: Atualizar
                         href: api/intune-devices-devicemanagementscriptuserstate-update.md
-                  - name: Restrição abstrata de implementação abstrata de configuração de gerenciamento de dispositivos
+                  - name: Restrição abstrata de implementação da configuração de gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementsettingabstractimplementationconstraint.md
                   - name: Restrição do aplicativo de configuração de gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementsettingappconstraint.md
@@ -7601,7 +7607,7 @@ items:
                     href: resources/intune-devices-manageddevicepartnerreportedhealthstate.md
                   - name: Ação remota de dispositivo gerenciados
                     href: resources/intune-devices-manageddeviceremoteaction.md
-                  - name: Estado do aplicativo resumido do dispositivo gerenciado
+                  - name: Estado de aplicativo resumido do dispositivo gerenciado
                     href: resources/intune-troubleshooting-manageddevicesummarizedappstate.md
                   - name: Condição de gerenciamento
                     href: resources/intune-fencing-managementcondition.md
@@ -7999,7 +8005,7 @@ items:
                     href: resources/intune-devices-userexperienceanalyticshealthstate.md
                   - name: Insight de análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsinsight.md
-                  - name: Gravidade do insight da análise da experiência do usuário
+                  - name: Severidade do insight da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsinsightseverity.md
                   - name: Valor do insight da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsinsightvalue.md
@@ -8029,7 +8035,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
                       - name: Atualizar
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
-                  - name: Categoria de reinicialização do sistema operacional de análise de experiência do usuário
+                  - name: Categoria de reinicialização do sistema operacional de análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
                   - name: Visão geral da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoverview.md
@@ -10409,9 +10415,9 @@ items:
                             href: api/countrynamedlocation-update.md
                           - name: Excluir
                             href: api/countrynamedlocation-delete.md
-                      - name: Local nomeado pelo IP
+                      - name: Local nomeado por IP
                         items:
-                          - name: Local nomeado pelo IP
+                          - name: Local nomeado por IP
                             href: resources/ipnamedlocation.md
                           - name: Listar
                             href: api/conditionalaccessroot-list-namedlocations.md
@@ -10567,7 +10573,7 @@ items:
               - name: Política
                 href: resources/policy-overview.md
                 items:
-                  - name: Política de tempo de tempo de atividade baseada em
+                  - name: Política de tempo de vida baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
                       - name: Criar
@@ -10639,7 +10645,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: Excluir de inclui
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: Exclusões de lista
+                          - name: Listar exclusões
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: Criar em exclusões
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -10819,13 +10825,13 @@ items:
                         href: resources/identityuserflowattributeassignment.md
                       - name: Obter atribuição de atributo de fluxo do usuário
                         href: api/identityuserflowattributeassignment-get.md
-                      - name: Atualizar a atribuição do atributo de fluxo do usuário
+                      - name: Atualizar a atribuição de atributo de fluxo do usuário
                         href: api/identityuserflowattributeassignment-update.md
-                      - name: Excluir atribuição de atributo de fluxo de usuário
+                      - name: Excluir atribuição de atributo de fluxo do usuário
                         href: api/identityuserflowattributeassignment-delete.md
-                  - name: Configuração de idioma de fluxo do usuário
+                  - name: Configuração de idioma do fluxo do usuário
                     items:
-                      - name: Configuração de idioma de fluxo do usuário
+                      - name: Configuração de idioma do fluxo do usuário
                         href: resources/userflowlanguageconfiguration.md
                       - name: Obter userFlowLanguageConfiguration
                         href: api/userflowlanguageconfiguration-get.md
@@ -11998,7 +12004,7 @@ items:
                   - name: Detalhes do registro do usuário de credencial
                     href: resources/credentialuserregistrationdetails.md
                     items:
-                      - name: Listar detalhes de registro
+                      - name: Listar detalhes do registro
                         href: api/reportroot-list-credentialuserregistrationdetails.md
                   - name: Detalhes de uso da credencial do usuário
                     href: resources/usercredentialusagedetails.md
@@ -12219,7 +12225,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -12612,7 +12618,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -12812,7 +12818,7 @@ items:
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
-              - name: Aplicativo em equipe
+              - name: Aplicativo na equipe
                 items:
                   - name: Listar aplicativos em equipe
                     href: api/team-list-installedapps.md

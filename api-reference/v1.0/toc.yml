@@ -68,6 +68,12 @@ items:
             href: /graph/extensibility-open-users?context=graph/api/1.0
           - name: Usar extensões de esquema (exemplo)
             href: /graph/extensibility-schema-groups?context=graph/api/1.0
+      - name: Usar o Explorador do Graph
+        items:
+          - name: Introdução
+            href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/1.0
+          - name: Trabalhar com o Explorador do Graph
+            href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
       - name: Usar o Postman
         href: /graph/use-postman?context=graph/api/1.0
   - name: Migrar
@@ -439,7 +445,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -466,8 +472,6 @@ items:
                 href: api/group-checkmemberobjects.md
               - name: Obter intervalo
                 href: api/group-delta.md
-              - name: Obter o ponto de extremidade
-                href: api/endpoint-get.md
               - name: Obter grupos de membros
                 href: api/group-getmembergroups.md
               - name: Obter objetos de membros
@@ -492,8 +496,6 @@ items:
                     href: api/groupsettingtemplate-list.md
                   - name: Obter modelo de configuração de grupo
                     href: api/groupsettingtemplate-get.md
-              - name: Listar pontos de extremidade
-                href: api/group-list-endpoints.md
               - name: Listar políticas de ciclo de vida
                 href: api/group-list-grouplifecyclepolicies.md
               - name: Listar membro de
@@ -1101,7 +1103,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: Place
+          - name: Local
             items:
               - name: Local
                 href: resources/place.md
@@ -1162,7 +1164,7 @@ items:
                 items:
                   - name: Reproduzir prompt
                     href: api/call-playprompt.md
-                  - name: Resposta do registro
+                  - name: Resposta de registro
                     href: api/call-record.md
                   - name: Cancelar processamento de mídia
                     href: api/call-cancelmediaprocessing.md
@@ -3972,7 +3974,7 @@ items:
                             href: api/countrynamedlocation-delete.md
                       - name: Local nomeado por IP
                         items:
-                          - name: Local nomeado pelo IP
+                          - name: Local nomeado por IP
                             href: resources/ipnamedlocation.md
                           - name: Listar
                             href: api/conditionalaccessroot-list-namedlocations.md
@@ -4050,7 +4052,7 @@ items:
               - name: Política
                 href: resources/policy-overview.md
                 items:
-                  - name: Política de tempo de tempo de atividade baseada em
+                  - name: Política de tempo de vida baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
                       - name: Listar
