@@ -4,18 +4,18 @@ description: No Outlook, um proprietário de calendário pode compartilhá-lo co
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 534e7819ddcf58b9b51b4655470bc21a5645973c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
-ms.translationtype: MT
+ms.openlocfilehash: 26319854c20401d96f94a5fa6735777a1645d2a9
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290739"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013650"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>Compartilhar ou delegar um calendário no Outlook
 
 No Outlook, o proprietário do calendário pode compartilhá-lo com outro usuário. O proprietário pode especificar quais informações em eventos não particulares podem ser visualizadas e pode conceder acesso de gravação para os usuários na mesma organização. 
 
-O proprietário também pode delegar outro usuário a gerenciar reuniões no calendário_principal_ do proprietário. Delegados são sharees que podem visualizar todas as informações e ter acesso de gravação a eventos não privados. Eles também recebem solicitações de reunião e respostas, além de responder a solicitações de reunião em nome do proprietário. Além disso, o proprietário pode conceder permissões explícitas a delegados para exibir os eventos _particulares_ do proprietário no calendário. 
+O proprietário também pode delegar outro usuário a gerenciar reuniões no calendário _principal_ do proprietário. Delegados são sharees que podem visualizar todas as informações e ter acesso de gravação a eventos não privados. Eles também recebem solicitações de reunião e respostas, além de responder a solicitações de reunião em nome do proprietário. Além disso, o proprietário pode conceder permissões explícitas a delegados para exibir os eventos _particulares_ do proprietário no calendário. 
 
 Antes que o compartilhamento ou delegação de calendário entre em vigor, o proprietário envia um sharee ou delega um convite e o sharee ou o delegado aceita o convite ou adiciona explicitamente o calendário compartilhado ou delegado para acesso. O convite e a adição de um calendário compartilhado ou delegado ocorrem em um cliente do Outlook. 
 
@@ -39,7 +39,7 @@ Os aplicativos também podem fazer o seguinte usando a API que geralmente está 
 - [Criar eventos do Outlook em um calendário compartilhado ou delegado](outlook-create-event-in-shared-delegated-calendar.md)
 
 > [!NOTE]
-> As propriedades e API para compartilhamento de calendário e delegação, conforme descrito neste tópico, estão disponíveis atualmente no ponto de extremidade v 1.0, com exceção das propriedades de calendário **IsShared** e **isSharedWithMe**. Essas duas propriedades são expostas somente no ponto de extremidade beta.
+> As propriedades e API para compartilhamento e delegação de calendário conforme descrito neste tópico estão disponíveis atualmente no ponto de extremidade v1.0, com exceção das propriedades de calendário **isShared** e **isSharedWithMe**. Essas duas propriedades são expostas apenas no ponto de extremidade beta.
 
 ## <a name="get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions"></a>Obtenha informações de calendário sobre compartilhamento, delegados e permissões permitidas e atualize permissões individuais.
 
@@ -63,7 +63,7 @@ O calendário principal de um usuário sempre é compartilhado com a "Minha Orga
 
 ### <a name="calendar-owner-get-sharing-or-delegation-information-and-permissions"></a>Proprietário do calendário: obter informações e permissões de compartilhamento e delegação
 
-O exemplo a seguir mostra, com o consentimento de Alex ou administrador, como obter os objetos **calendarPermission** associados ao calendário principal de Alex. A solicitação retorna dois objetos de permissão:
+Este exemplo mostra com o consentimento de Alex ou administrador, como obter os objetos **calendarPermission** associados ao calendário principal de Alex. A solicitação retorna dois objetos de permissão:
 
 - O primeiro objeto **calendarPermission** é atribuído ao delegado, Sara, e tem os seguintes valores de propriedade:
 
@@ -77,9 +77,11 @@ O exemplo a seguir mostra, com o consentimento de Alex ou administrador, como ob
 
   - **isRemovable** está definido como falso, uma vez que o calendário principal é sempre compartilhado com a organização do proprietário.
   - **isInsideOrganization** é verdadeiro.
-  - **a função**é`freeBusyRead`, a configuração padrão para "My Organization".
-  - **emailAddress** especifica a subpropriedade **name** como "My Organization"; o **endereço**de "My Organization" é nulo.
+  - **a função** é`freeBusyRead`, a configuração padrão para "My Organization".
+  - **emailAddress** especifica a subpropriedade **name** como "My Organization"; o **endereço** de "My Organization" é nulo.
 
+#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.Read`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -163,8 +165,10 @@ Com o consentimento de Alex ou do administrador, você pode atualizar as permiss
 
 Com exceção da propriedade **função**, você não pode atualizar outras propriedades de um sharee ou delegado existente. Alterar o valor da propriedade **emailAddress** exige a exclusão do compartilhamento ou do representante e a configuração de uma nova instância do **calendarPermission** novamente.
 
-O exemplo a seguir atualiza a propriedade **função**, alterando a permissão de um compartilhamento existente, Adele, de `read` a `write` para o calendário personalizado "festas das crianças".
+O exemplo nesta seção atualiza a propriedade **função**, alterando a permissão de um sharee existente, Adele, de `read` para `write` para o calendário personalizado "Festas infantis".
 
+#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.ReadWrite`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -238,7 +242,7 @@ Esta seção mostra as propriedades do calendário delegado, primeiro a partir d
 
 ### <a name="calendar-owner-get-properties-of-a-shared-or-delegated-calendar"></a>Proprietário do calendário: Obter propriedades de um calendário compartilhado ou delegado
 
-O exemplo a seguir obtém as propriedades do calendário principal da perspectiva do proprietário, Alex. 
+O exemplo nesta seção obtém as propriedades do calendário principal da perspectiva do proprietário, Alex. 
 
 Observe as seguintes propriedades de Alex:
 
@@ -248,7 +252,8 @@ Observe as seguintes propriedades de Alex:
 - **isSharedWithMe** é sempre falso para o proprietário do calendário.
 - **owner** mostra Alex como proprietário.
 
-
+#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.Read`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -312,7 +317,7 @@ Content-type: application/json
 
 ### <a name="sharee-or-delegate-get-properties-of-shared-or-delegated-calendar"></a>Compartilhar ou delegar: obter propriedades de calendário compartilhado ou delegado
 
-O exemplo a seguir obtém as propriedades do mesmo calendário da perspectiva do representante, Sara. 
+O exemplo nesta seção obtém as propriedades do mesmo calendário da perspectiva da delegada, Sara. 
 
 Observe as seguintes propriedades:
 
@@ -320,13 +325,15 @@ Observe as seguintes propriedades:
 - **canShare** é falso, uma vez que Sara não é a proprietária do calendário.
 - **canViewPrivateItems** é verdadeiro para a delegada Sara, conforme configurado por Alex. Para um sharee que não seja um delegado essa propriedade será sempre falsa.
 - **isShared** é falso. Esta propriedade indica apenas ao _proprietário_ do calendário se o calendário foi compartilhado ou delegado.
-- A propriedade**isSharedWithMe** é verdadeira, uma vez que Sara é uma delegada.
+- A propriedade **isSharedWithMe** é verdadeira, uma vez que Sara é uma delegada.
 - **CanEdit** é verdadeiro, uma vez que os delegados, incluindo Sara, têm acesso de gravação.
 - **owner** está definido como Alex.
 
 > [!NOTE] 
 > Um compartilhamento ou representante só pode personalizar a propriedade **nome** de um calendário compartilhado/delegado. A atualização é visível apenas para eles mesmos; o proprietário do calendário não vê essas alterações no nome do calendário.
 
+#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+Use a permissão delegada com menos privilégios, `Calendars.Read.Shared`, ou permissão de aplicativo, `Calendars.Read`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -397,24 +404,26 @@ Nesta seção:
 
 Dependendo do nível de delegação que um proprietário de calendário prefere, o proprietário poderá especificar quem deve receber solicitações de reunião e respostas para gerenciar as reuniões no calendário. 
 
-Programaticamente, você pode obter ou definir a propriedade **delegateMeetingMessageDeliveryOptions** do proprietário do calendário [mailboxSettings](/graph/api/resources/mailboxsettings) para especificar para quem o Outlook deve direcionar as instâncias[eventMessageRequest](/graph/api/resources/eventmessagerequest) e [eventMessageResponse](/graph/api/resources/eventmessageresponse):
+Programaticamente, você pode obter ou definir a propriedade **delegateMeetingMessageDeliveryOptions** do proprietário do calendário [mailboxSettings](/graph/api/resources/mailboxsettings) para especificar para quem o Outlook deve direcionar as instâncias [eventMessageRequest](/graph/api/resources/eventmessagerequest) e [eventMessageResponse](/graph/api/resources/eventmessageresponse):
 
 - `sendToDelegateOnly`
 
-    O Outlook para direcionar as instâncias**eventMessageRequest** e **eventMessageResponse** para delegados. Esta é a configuração padrão. O proprietário pode ver as respostas a uma reunião ou responder a um convite através do **evento** correspondente no calendário delegado.
+    O Outlook para direcionar as instâncias **eventMessageRequest** e **eventMessageResponse** para delegados. Esta é a configuração padrão. O proprietário pode ver as respostas a uma reunião ou responder a um convite através do **evento** correspondente no calendário delegado.
 - `sendToDelegateAndInformationToPrincipal`
 
-    O Outlook direciona as instâncias**eventMessageRequest** e **eventMessageResponse** para delegados e para o proprietário do calendário. Somente os representantes veem a opção de aceitar ou recusar uma solicitação de reunião, e a notificação enviada ao proprietário aparece como uma mensagem de e-mail normal. O proprietário ainda pode responder à reunião, abrindo o **evento** no calendário delegado e respondendo.
+    O Outlook direciona as instâncias **eventMessageRequest** e **eventMessageResponse** para delegados e para o proprietário do calendário. Somente os representantes veem a opção de aceitar ou recusar uma solicitação de reunião, e a notificação enviada ao proprietário aparece como uma mensagem de e-mail normal. O proprietário ainda pode responder à reunião, abrindo o **evento** no calendário delegado e respondendo.
 - `sendToDelegateAndPrincipal`
 
-    O Outlook direciona as instâncias**eventMessageRequest** e **eventMessageResponse** para delegados e para o proprietário do calendário, ou seja, que podem responder à solicitação de reunião.
+    O Outlook direciona as instâncias **eventMessageRequest** e **eventMessageResponse** para delegados e para o proprietário do calendário, ou seja, que podem responder à solicitação de reunião.
 
 Essa é uma configuração para toda a caixa de correio; portanto, a mesma configuração se aplica a todos os delegados do proprietário da caixa de correio.
 
 ### <a name="get-delegation-delivery-setting-for-a-users-mailbox"></a>Obter a configuração de entrega de delegação para a caixa de correio de um usuário
 
-O exemplo a seguir obtém **mailboxSettings** de um proprietário de calendário que permite a solicitação de reunião direta do Outlook e respostas a somente delegados de calendário, ou seja, **delegateMeetingMessageDeliveryOptions** está definida como `sendToDelegateOnly`.
+O exemplo nesta seção obtém as **mailboxSettings** de um proprietário de calendário que permite que o Outlook direcione solicitações e respostas de reunião apenas para delegados de calendário; ou seja, **delegateMeetingMessageDeliveryOptions** é definido como `sendToDelegateOnly`.
 
+#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+Use a permissão delegada ou de aplicativo com menos privilégios, `MailboxSettings.Read`, conforme apropriado, para esta operação. Para obter mais informações sobre permissões de caixa de correio, confira [permissões de email](permissions-reference.md#mail-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -494,8 +503,10 @@ Content-type: application/json
 
 ### <a name="set-delegation-delivery-setting-for-a-users-mailbox"></a>Definir a configuração de entrega de delegação para a caixa de correio de um usuário
 
-O exemplo a seguir atualiza a propriedade **delegateMeetingMessageDeliveryOptions** para `sendToDelegateAndPrincipal`, para que o Outlook solicite solicitações de reunião e respostas do calendário delegado a todos os delegados e o proprietário.
+O exemplo nesta seção atualiza a propriedade **delegateMeetingMessageDeliveryOptions** para `sendToDelegateAndPrincipal`, para que o Outlook direcione solicitações de reunião e respostas do calendário delegado para todos os delegados e o proprietário.
 
+#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+Use a permissão delegada ou de aplicativo com menos privilégios, `MailboxSettings.ReadWrite`, conforme apropriado, para esta operação. Para obter mais informações sobre permissões de caixa de correio, confira [permissões de email](permissions-reference.md#mail-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -545,8 +556,10 @@ Content-type: application/json
 
 ## <a name="delete-a-sharee-or-delegate-of-a-calendar"></a>Exclua um compartilhamento ou um representante de um calendário.
 
-No exemplo a seguir, Alex exclui Sara no compartilhamento do calendário de "festas das crianças".
+No exemplo abaixo, Alex exclui Sara como um sharee do calendário "Festas infantis".
 
+#### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
+Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.ReadWrite`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
