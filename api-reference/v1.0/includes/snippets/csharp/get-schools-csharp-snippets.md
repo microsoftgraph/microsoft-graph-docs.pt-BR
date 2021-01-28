@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: adc7d16660ff7b459c7d0cb5fa2c1f58993b7076
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 58f1d573dfad1773491203212619cf76cb88f2b0
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48612959"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015444"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var schools = await graphClient.Education.Me.Schools
+var schools = await graphClient.Education.Classes["{class-id}"].Schools
     .Request()
     .GetAsync();
 

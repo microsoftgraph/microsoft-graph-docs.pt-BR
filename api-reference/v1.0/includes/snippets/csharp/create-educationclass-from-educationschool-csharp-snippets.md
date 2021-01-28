@@ -1,26 +1,18 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 86e4ab4845250cf87e326e77650f34f2ddae7d86
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 19692413416f879460673702b657cfe5acd86b74
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44683738"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50015502"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var educationClass = new EducationClass
-{
-    AdditionalData = new Dictionary<string, object>()
-    {
-        {"@odata.id", "https://graph.microsoft.com/v1.0/education/classes/11006"}
-    }
-};
-
-await graphClient.Education.Schools["{school-id}"].Classes.References
+await graphClient.Education.Schools["{school-id}"].Users["{user-id}"]
     .Request()
-    .AddAsync(educationClass);
+    .DeleteAsync();
 
 ```
