@@ -935,7 +935,7 @@ items:
                     href: api/serviceprincipal-delete-approleassignments.md
                   - name: Listar a função de aplicativo atribuída
                     href: api/serviceprincipal-list-approleassignedto.md
-                  - name: Adicionar função de aplicativo atribuída a
+                  - name: Adicionar a função de aplicativo atribuída a
                     href: api/serviceprincipal-post-approleassignedto.md
                   - name: Remover a função de aplicativo atribuída a
                     href: api/serviceprincipal-delete-approleassignedto.md
@@ -1028,7 +1028,7 @@ items:
                     href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
                   - name: Obter credenciais de acesso único por senha
                     href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
-                  - name: Atualizar credenciais de acesso único por senha
+                  - name: Atualizar credenciais de acesso único de senha
                     href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
                   - name: Excluir credenciais de acesso único por senha
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
@@ -1280,7 +1280,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: Local
+          - name: Place
             items:
               - name: Local
                 href: resources/place.md
@@ -1343,7 +1343,7 @@ items:
                 items:
                   - name: Reproduzir prompt
                     href: api/call-playprompt.md
-                  - name: Resposta de registro
+                  - name: Resposta do registro
                     href: api/call-record.md
                   - name: Cancelar processamento de mídia
                     href: api/call-cancelmediaprocessing.md
@@ -1399,9 +1399,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Obter
                     href: api/callrecords-callrecord-get.md
-              - name: Sessão
+              - name: Session
                 items:
-                  - name: Sessão
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Listar
                     href: api/callrecords-session-list.md
@@ -1483,7 +1483,7 @@ items:
                     href: api/reviewset-post.md
                   - name: Obter
                     href: api/reviewset-get.md
-              - name: Revisar a consulta do conjunto
+              - name: Revisar a consulta de conjunto
                 href: resources/reviewsetquery.md
                 items:
                   - name: Listar
@@ -2010,7 +2010,7 @@ items:
                     href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md
                   - name: Faixa de aplicativos da Loja Gerenciada do Android
                     href: resources/intune-apps-androidmanagedstoreapptrack.md
-                  - name: Aplicativo Web do armazenamento gerenciado Android
+                  - name: Aplicativo Web da Loja Gerenciada do Android
                     href: resources/intune-apps-androidmanagedstorewebapp.md
                     items:
                       - name: Listar
@@ -2693,7 +2693,7 @@ items:
                     href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
                   - name: Destino de atribuição de grupo de configuração do Office
                     href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-                  - name: ID do produto do Office
+                  - name: ID do produto (Product ID) do Office
                     href: resources/intune-apps-officeproductid.md
                   - name: Aplicativo do pacote Office
                     href: resources/intune-apps-officesuiteapp.md
@@ -3462,7 +3462,7 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md
                   - name: Tipo de perfil de registro do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md
-                  - name: Configuração empresarial do proprietário do Wi-Fi dispositivo Android
+                  - name: Configuração empresarial do proprietário do dispositivo Android Wi-Fi dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
                     items:
                       - name: Listar
@@ -5332,7 +5332,7 @@ items:
                     href: resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md
                   - name: Tipo de cache de conteúdo do macOS
                     href: resources/intune-deviceconfig-macoscontentcachingtype.md
-                  - name: Extensão de login único de credencial do macOS
+                  - name: Extensão de single sign on da credencial do macOS
                     href: resources/intune-deviceconfig-macoscredentialsinglesignonextension.md
                   - name: Configuração de aplicativo personalizado do macOS
                     href: resources/intune-deviceconfig-macoscustomappconfiguration.md
@@ -8035,7 +8035,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
                       - name: Atualizar
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
-                  - name: Categoria de reinicialização do sistema operacional de análise da experiência do usuário
+                  - name: Categoria de reinicialização do sistema operacional de análise de experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
                   - name: Visão geral da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoverview.md
@@ -9413,6 +9413,8 @@ items:
                 href: api/educationclass-list-assignments.md
               - name: Criar tarefa
                 href: api/educationclass-post-assignments.md
+              - name: Obter configurações de atribuição
+                href: api/educationassignmentsettings-get.md
               - name: Listar categorias
                 href: api/educationclass-list-categories.md
               - name: Criar categoria
@@ -9475,6 +9477,13 @@ items:
                 href: api/educationassignment-put-rubric.md
               - name: Remover rubric da atribuição
                 href: api/educationassignment-delete-rubric.md
+          - name: Configurações de atribuição
+            href: resources/educationassignmentsettings.md
+            items:
+              - name: Obter configurações de atribuição
+                href: api/educationassignmentsettings-get.md
+              - name: Atualizar configurações de atribuição
+                href: api/educationassignmentsettings-update.md
           - name: Categoria
             href: resources/educationcategory.md
             items:
@@ -10573,7 +10582,7 @@ items:
               - name: Política
                 href: resources/policy-overview.md
                 items:
-                  - name: Política de tempo de vida baseada em atividade
+                  - name: Política de tempo de tempo de atividade baseada em
                     href: resources/activitybasedtimeoutpolicy.md
                     items:
                       - name: Criar
@@ -10825,13 +10834,13 @@ items:
                         href: resources/identityuserflowattributeassignment.md
                       - name: Obter atribuição de atributo de fluxo do usuário
                         href: api/identityuserflowattributeassignment-get.md
-                      - name: Atualizar a atribuição de atributo de fluxo do usuário
+                      - name: Atualizar a atribuição do atributo de fluxo do usuário
                         href: api/identityuserflowattributeassignment-update.md
-                      - name: Excluir atribuição de atributo de fluxo do usuário
+                      - name: Excluir atribuição de atributo de fluxo de usuário
                         href: api/identityuserflowattributeassignment-delete.md
-                  - name: Configuração de idioma do fluxo do usuário
+                  - name: Configuração de idioma de fluxo do usuário
                     items:
-                      - name: Configuração de idioma do fluxo do usuário
+                      - name: Configuração de idioma de fluxo do usuário
                         href: resources/userflowlanguageconfiguration.md
                       - name: Obter userFlowLanguageConfiguration
                         href: api/userflowlanguageconfiguration-get.md
@@ -11840,9 +11849,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Configurações
+              - name: Settings
                 items:
-                  - name: Configurações
+                  - name: Settings
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -12225,7 +12234,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisa
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -12818,7 +12827,7 @@ items:
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
-              - name: Aplicativo na equipe
+              - name: Aplicativo em equipe
                 items:
                   - name: Listar aplicativos em equipe
                     href: api/team-list-installedapps.md
@@ -13105,7 +13114,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             href: resources/todotask.md
             items:
               - name: Listar tarefas

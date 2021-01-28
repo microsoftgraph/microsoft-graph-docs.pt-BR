@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5518091d21a3ed2e1c05a8bc95c70b62d7cb82eb
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: b38975627a0a3c23b9e19acbb235c4bc26036918
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934832"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034258"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -48,14 +48,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-### <a name="chatmessage"></a>chatMessage
-
-**Assinaturas chatMessage** com permissões delegadas não suportam dados de recursos (**includeResourceData** deve ser ), e `false` não [exigem criptografia](/graph/webhooks-with-resource-data).
-
-Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura **chatMessage**, você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
-
-> **Observação:** `/teams/getAllMessages` e `/chats/getAllMessages` estão disponíveis para os usuários que têm as [licenças necessárias](https://aka.ms/teams-changenotification-licenses).
-No futuro, a Microsoft pode exigir que você ou seus clientes pagar taxas adicionais com base na quantidade de dados acessados por meio da API.
+[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
@@ -75,7 +68,7 @@ As limitações adicionais se aplicam aos itens do Outlook. As limitações se a
 
 ### <a name="presence"></a>presença
 
-**assinaturas** de presença exigem [criptografia.](/graph/webhooks-with-resource-data) A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
+**assinaturas** de presença [exigem criptografia.](/graph/webhooks-with-resource-data) A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

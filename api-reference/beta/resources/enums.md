@@ -1,18 +1,18 @@
 ---
-title: Valores Enum
+title: Valores de enum
 description: Valores de enumeração do Microsoft Graph
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: eb7558f996adafd34904ce355e355968e0294f83
-ms.sourcegitcommit: 1d2adc4062c8e83d23768682cf66a731bccd313c
+ms.openlocfilehash: 1e35b41fb77b1c1f83c728858fc1b543596c5507
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49882924"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034300"
 ---
-# <a name="enum-values"></a>Valores Enum
+# <a name="enum-values"></a>Valores de enum
 
 Namespace: microsoft.graph
 
@@ -41,7 +41,7 @@ Namespace: microsoft.graph
 |desabilitadas|
 |unknownFutureValue|
 
-### <a name="replyrestriction-values"></a>Valores replyRestriction
+### <a name="replyrestriction-values"></a>Valores de replyRestriction
 
 | Member
 |:--------------
@@ -122,7 +122,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|location|
+|localização|
 |aplicativo|
 
 ### <a name="anniversarytype-values"></a>valores anniversaryType
@@ -168,7 +168,7 @@ Namespace: microsoft.graph
 |dotLineManager|
 |alternateContact|
 |friend|
-|cônjuge|
+|spouse|
 |sibling|
 |filho|
 |primário|
@@ -218,7 +218,7 @@ Namespace: microsoft.graph
 |site|
 |list|
 |listItem|
-|drive|
+|Unidade|
 
 ### <a name="bucketaggregationsortproperty-values"></a>Valores bucketAggregationSortProperty
 
@@ -332,7 +332,7 @@ Namespace: microsoft.graph
 | iana
 
 
-### <a name="freebusystatus-values"></a>Valores de freeBusyStatus
+### <a name="freebusystatus-values"></a>Valores freeBusyStatus
 
 | Membro           | Valor |
 | :--------------- | :---- |
@@ -363,7 +363,7 @@ Namespace: microsoft.graph
 | recurso
 
 
-### <a name="externalaudiencescope-values"></a>Valores externalAudienceScope
+### <a name="externalaudiencescope-values"></a>Valores de externalAudienceScope
 
 | Member
 |:-------------------------
@@ -441,7 +441,7 @@ Namespace: microsoft.graph
 | unknownFutureValue
 
 
-### <a name="eventtype-values"></a>Valores de eventType
+### <a name="eventtype-values"></a>valores eventType
 
 | Member
 |:-------------------------
@@ -490,7 +490,7 @@ Namespace: microsoft.graph
 | meetingDeclined
 
 
-### <a name="followupflagstatus-values"></a>Valores de followupFlagStatus
+### <a name="followupflagstatus-values"></a>Valores followupFlagStatus
 
 | Member
 |:-------------------------
@@ -516,7 +516,7 @@ Namespace: microsoft.graph
 | modal
 | nenhum
 
-### <a name="deviceenrollmentfailurereason-values"></a>Valores de deviceEnrollmentFailureReason
+### <a name="deviceenrollmentfailurereason-values"></a>Valores deviceEnrollmentFailureReason
 
 | Member
 |:-------------
@@ -761,7 +761,7 @@ Namespace: microsoft.graph
 | preset8  | 8      |
 | preset9  | 9      |
 | preset10 | 10     |
-| preset11 | 11     |
+| preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13     |
 | preset14 | 14     |
@@ -872,7 +872,7 @@ Enum para tipos de valor do Registro conforme definido pelos [tipos de valor do 
 | nenhum              | 8      | REG_NONE de valor do Registro.                |
 | qword             | 9      | REG_QWORD de valor do Registro.               |
 | qwordwordwordEndian | 10     | REG_QWORD_LITTLE_ENDIAN de valor do Registro. |
-| sz                | 11     | REG_SZ de valor do Registro.                  |
+| sz                | 11    | REG_SZ de valor do Registro.                  |
 
 ### <a name="alertseverity-values"></a>Valores de alertSeverity
 
@@ -1048,7 +1048,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |restId|
 |restImmutableEntryId|
 
-### <a name="attributeflowbehavior-values"></a>Valores de attributeFlowBehavior
+### <a name="attributeflowbehavior-values"></a>Valores attributeFlowBehavior
 
 |Member|
 |:---|
@@ -1135,7 +1135,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |:---------------|:--------|:----------|
 | Nenhum | 0 | Valor padrão. Esse é o valor de uma mensagem quando o usuário não tiver feito uma ação sobre a mensagem bloqueada pela DLP. |
 | Override | 1  | O remetente substituiu o veredito da mensagem e enviou a mensagem mesmo assim.|
-| ReportFalsePositive | 2  | O remetente relatou o veredito da mensagem aos administradores como um falso positivo.|
+| ReportFalsePositive | 2  | O remetente relatou o veredito da mensagem aos administradores como falso positivo.|
 
 ### <a name="chatmessagepolicyviolationverdictdetailstype-values"></a>Valores de chatMessagePolicyViolationVerdictDetailsType
 
@@ -1193,7 +1193,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | Padrão. | 0     | O conteúdo é um arquivo ou um tipo que não é de email. |
 | email   | 1      | O conteúdo é um email.                 |
 
-### <a name="contentstate-values"></a>Valores de contentState
+### <a name="contentstate-values"></a>Valores contentState
 
 | Membro | Valor | Descrição                                                                      |
 | :----- | :---- | :------------------------------------------------------------------------------- |
@@ -1307,7 +1307,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1      | Ameaça de email.            |
+| email   | 1      | Ameaça de email.            |
 | url    | 2      | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo anexo. |
 
@@ -1332,7 +1332,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | Membro    | Valor | Descrição                              |
 |:----------|:------|:-----------------------------------------|
 | pendente   | 1      | A avaliação de ameaças ainda está em andamento. |
-| concluído | 2      | A avaliação de ameaças foi concluída.         |
+| completed | 2      | A avaliação de ameaças foi concluída.         |
 
 ### <a name="threatassessmentrequestsource-values"></a>Valores de threatAssessmentRequestSource
 
@@ -1365,7 +1365,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | firstTimeSender       | 8      | Bloqueado devido ao remetente pela primeira vez.   |
 | autoPurgeToInbox      | 9      | TimeTravel move message to inbox.   |
 | autoPurgeToJunk       | 10     | TimeTravel move mensagem para lixo eletrônico.    |
-| autoPurgeToDeleted    | 11     | TimeTravel move message to deleted. |
+| autoPurgeToDeleted    | 11    | TimeTravel move message to deleted. |
 | saída              | 12     | Email de saída.                      |
 | notJunk               | 13     | Permitir devido a não ser lixo eletrônico.              |
 | junk                  | 14     | Bloqueado devido a lixo eletrônico.                |
@@ -1438,9 +1438,9 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |:----------------------
 | notStarted
 | inProgress
-| concluído
+| completed
 | waitingOnOthers
-| adiado
+| adiada
 
 ### <a name="connectedorganizationstate-values"></a>Valores connectedOrganizationState
 
@@ -1482,7 +1482,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | custom                | 2      | Esse tipo de atributo de fluxo de usuário indica que foi criado pelo usuário   |
 | unknownFutureValue    | 3     | Um membro sentinel.                                                 |
 
-### <a name="connectionstate-values"></a>Valores connectionState
+### <a name="connectionstate-values"></a>Valores de connectionState
 
 |Member|
 |:---|
@@ -1523,54 +1523,6 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | entityUrl
 | texto
 
-### <a name="cloudpcdeviceimagestatus-values"></a>Valores de cloudPcDeviceImageStatus
-
-|Member|
-|:---|
-|pendente|
-|pronto|
-|failed|
-
-### <a name="cloudpcdeviceimagestatusdetails-values"></a>Valores de cloudPcDeviceImageStatusDetails
-
-|Member|
-|:---|
-|internalServerError|
-|sourceImageNotFound|
-
-### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>Valores de cloudPcOnPremisesConnectionHealthCheckErrorType
-
-|Member|
-|:---|
-|dnsCheckFqdnNotFound|
-|dnsCheckUnknownError|
-|adJoinCheckFqdnNotFound|
-|adJoinCheckIncorrectCredentials|
-|adJoinCheckOrganizationalUnitNotFound|
-|adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError|
-|endpointConnectivityCheckUrlNotWhitelisted|
-|endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError|
-|resourceAvailabilityCheckNoSubnetIP|
-|resourceAvailabilityCheckSubscriptionDisabled|
-|resourceAvailabilityCheckUnknownError|
-|permissionCheckNoSubscriptionReaderRole|
-|permissionCheckNoResourceGroupOwnerRole|
-|permissionCheckNoVNetContributorRole|
-|permissionCheckUnknownError|
-|internalServerUnknownError|
-
-### <a name="cloudpconpremisesconnectionstatus-values"></a>Valores de cloudPcOnPremisesConnectionStatus
-
-|Member|
-|:---|
-|pendente|
-|executando|
-|aprovado|
-|failed|
-|unknownFutureValue|
-
 ### <a name="cloudpcprovisioningpolicyimagetype-values"></a>Valores de cloudPcProvisioningPolicyImageType
 
 |Member|
@@ -1578,28 +1530,12 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |custom|
 |galeria|
 
-### <a name="cloudpcstatus-values"></a>Valores de cloudPcStatus
-
-|Member|
-|:---|
-|notProvisioned|
-|provisionamento|
-|provisionado|
-|atualização|
-|inGracePeriod|
-|desprovisioning|
-|failed|
-|upgradeFailed|
-|provisionFailed|
-|deprovisionFailed|
-|reprovisionFailed|
-
 ### <a name="chattype-values"></a>valores de chatType 
 
 | Membro             | Valor | Descrição               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista é fixo para esse tipo de chat, o membro não pode ser removido/adicionado.                  |
-|group               | 1      | Indica que o chat é um chat de grupo. O tamanho da lista de lista (de pelo menos 2 pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.   |
+|group               | 1      | Indica que o chat é um chat de Grupo. O tamanho da lista de lista (de pelo menos 2 pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.   |
 |meeting             | 2      | Indica que o chat é um chat de reunião, que é criado como um efeito colateral da criação de um OnlineMeeting.  |
 |unknownFutureValue  | 3     | Valor do Sentinel para indicar valores futuros. |
 

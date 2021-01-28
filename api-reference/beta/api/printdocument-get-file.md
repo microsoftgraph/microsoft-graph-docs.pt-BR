@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c56d1012e4b375be318f48f91cfb7e9f863b5704
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.openlocfilehash: 590b97c01623cba26407ca0a39ad7d0b3b7a1ca3
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784868"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034230"
 ---
 # <a name="download-printdocument-binary-file"></a>Baixar o arquivo binário printDocument
 
@@ -23,7 +23,7 @@ Baixe o arquivo binário associado a [um printDocument](../resources/printdocume
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma [](printer-get.md) assinatura de Impressão Universal ativa e ter uma permissão que conceda acesso à impressora em caso de tokens de acesso do usuário e a permissão de aplicativo Printer.Read.All ou Printer.ReadWrite.All no caso de tokens de acesso somente aplicativo. 
+Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda acesso à [impressora.](printer-get.md)
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
@@ -45,7 +45,7 @@ GET /print/printers/{id}/jobs/{id}/documents/{id}/$value
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna e a `302 Found` URL de download previamente autenticada no título Local.
+Se bem-sucedido, este método retorna e a `302 Found` URL de download previamente autenticada no título De localização.
 
 ## <a name="examples"></a>Exemplos
 O exemplo a seguir mostra como chamar essa API para adquirir uma URL de download pré-autenticada. Para iniciar o download, siga a URL de redirecionamento na resposta.

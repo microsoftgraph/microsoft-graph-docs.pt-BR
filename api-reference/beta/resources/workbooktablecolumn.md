@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso workbookTableColumn
+title: Tipo de recurso workbookTableColumn
 description: Representa uma coluna em uma tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 30c2ed5e6884fb73460847b61c1b32ba8ae0a692
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27a44c0b75cfe62d27b1187616f9626772575cf4
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023762"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034008"
 ---
-# <a name="workbooktablecolumn-resource-type"></a>tipo de recurso workbookTableColumn
+# <a name="workbooktablecolumn-resource-type"></a>Tipo de recurso workbookTableColumn
 
 Namespace: microsoft.graph
 
@@ -32,14 +32,14 @@ Representa uma coluna em uma tabela.
 |[Range](../api/tablecolumn-range.md)|[workbookRange](workbookrange.md)|Obtém o objeto de intervalo associado a toda a coluna.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[workbookRange](workbookrange.md)|Obtém o objeto de intervalo associado à linha de totais da coluna.|
 |[Delete](../api/tablecolumn-delete.md)|Nenhum|Exclui a coluna da tabela.|
-|[List](../api/tablecolumn-list.md) | coleção [workbookTableColumn](workbooktablecolumn.md) |Obtenha uma coleção de objetos tableColumn. |
+|[List](../api/tablecolumn-list.md) | [coleção workbookTableColumn](workbooktablecolumn.md) |Obtenha uma coleção de objetos tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[workbookTableColumn](workbooktablecolumn.md)|Obtém uma coluna com base em sua posição na coleção.|
 |[Add](../api/tablecolumncollection-add.md)|[workbookTableColumn](workbooktablecolumn.md)|Adiciona uma nova coluna à tabela.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|int|Retorna uma chave exclusiva que identifica a coluna na tabela. Somente leitura.|
+|id|string|Retorna uma chave exclusiva que identifica a coluna na tabela. Somente leitura.|
 |índice|int|Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.|
 |nome|string|Retorna o nome da coluna da tabela.|
 |values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
@@ -65,7 +65,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": 1024,
+  "id": "1024",
   "index": 1024,
   "name": "string",
   "values": "json"

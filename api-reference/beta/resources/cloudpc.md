@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso cloudPC
-description: Áreas de trabalho virtuais gerenciadas pela nuvem.
+title: Tipo de recurso cloudPC
+description: Áreas de trabalho virtuais gerenciadas na nuvem.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 481bcae691632685cafab00a4b7e44addb1ad0cd
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 1b026bccd18af0dcbc9c0a5128595399a0997474
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706077"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033915"
 ---
-# <a name="cloudpc-resource-type"></a>tipo de recurso cloudPC
+# <a name="cloudpc-resource-type"></a>Tipo de recurso cloudPC
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma área de trabalho virtual gerenciada em nuvem.
+Representa uma área de trabalho virtual gerenciada na nuvem.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,26 +26,38 @@ Representa uma área de trabalho virtual gerenciada em nuvem.
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|coleção [cloudPC](../resources/cloudpc.md)|Listar Propriedades e relações dos objetos [cloudPC](../resources/cloudpc.md) .|
-|[Obter cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Leia as propriedades e os relacionamentos de um objeto [cloudPC](../resources/cloudpc.md) .|
-|[Reprovisionar](../api/cloudpc-reprovision.md)|Nenhum|Reprovisionar um objeto [cloudPC](../resources/cloudpc.md) .|
+|[Listar cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[Coleção cloudPC](../resources/cloudpc.md)|Listar propriedades e relações dos objetos [cloudPC.](../resources/cloudpc.md)|
+|[Obter cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Leia as propriedades e os relacionamentos de um [objeto cloudPC.](../resources/cloudpc.md)|
+|[Reprovisionamento](../api/cloudpc-reprovision.md)|Nenhum|Reprovisionar um [objeto cloudPC.](../resources/cloudpc.md)|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do PC de nuvem. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição do computador de nuvem.|
-|imageDisplayName|Cadeia de caracteres|Nome da imagem do sistema operacional que está no computador de nuvem.|
-|managedDeviceId|Cadeia de caracteres|A ID de dispositivo do Intune do PC na nuvem.|
-|managedDeviceName|String|O nome do dispositivo do Intune no Cloud PC.|
-|provisioningPolicyId|Cadeia de caracteres|A ID da política de provisionamento do PC da nuvem.|
-|onplanid|Cadeia de caracteres|A ID do plano de serviço do computador de nuvem.|
-|onplanname|Cadeia de caracteres|O nome do plano de serviço do computador da nuvem.|
-|status|cloudPcStatus|Status do PC de nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
-|statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Os detalhes do status do PC de nuvem.|
-|userPrincipalName|Cadeia de caracteres|O nome principal do usuário (UPN) do usuário atribuído ao computador da nuvem.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação do computador da nuvem. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+|id|Cadeia de caracteres|Identificador exclusivo do computador na nuvem. Somente leitura.|
+|displayName|Cadeia de caracteres|O nome de exibição do computador na nuvem.|
+|imageDisplayName|Cadeia de caracteres|Nome da imagem do sistema operacional que está no computador em nuvem.|
+|managedDeviceId|Cadeia de caracteres|A ID do dispositivo Intune do computador na nuvem.|
+|managedDeviceName|String|O nome do dispositivo Intune do computador na nuvem.|
+|provisioningPolicyId|Cadeia de caracteres|A ID de política de provisionamento do computador na nuvem.|
+|servicePlanId|Cadeia de caracteres|A ID do plano de serviço do computador de nuvem.|
+|servicePlanName|Cadeia de caracteres|O nome do plano de serviço do computador na nuvem.|
+|status|[cloudPcStatus](#cloudpcstatus-values)|Status do computador na nuvem. Os valores possíveis são: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
+|statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Os detalhes do status do computador na nuvem.|
+|userPrincipalName|Cadeia de caracteres|O nome UPN do usuário atribuído ao computador em nuvem.|
+|lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do computador na nuvem. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'.|
+
+### <a name="cloudpcstatus-values"></a>Valores de cloudPcStatus
+
+|Member|Descrição|
+|:---|:---|
+|notProvisioned|O Cloud PC não foi provisionado.|
+|provisionamento|O provisionamento de computadores na nuvem está em andamento.|
+|provisionado|O Cloud PC é provisionado e pode ser acessado por usuários finais.|
+|atualização|O relize do computador na nuvem está em andamento.|
+|inGracePeriod|O Cloud PC está no período de carência de uma semana antes de ser desprovisionado.|
+|desprovisioning|O Cloud PC está desprovisionamento.|
+|failed|A operação no Cloud PC falhou.|
 
 ## <a name="relationships"></a>Relações
 

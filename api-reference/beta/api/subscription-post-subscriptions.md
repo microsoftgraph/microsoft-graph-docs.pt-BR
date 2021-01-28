@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 9efe9120d71f12955f1495cca954d9e873b3da35
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: 68e748a054812350c7aad029d604e87aa77b7345
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934559"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034272"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -50,16 +50,7 @@ Criar uma assinatura requer permissão de leitura para o recurso. Por exemplo, p
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-### <a name="chatmessage"></a>chatMessage
-
-**Assinaturas chatMessage** com permissões delegadas não suportam dados de recurso (**includeResourceData** deve ser ), e `false` não [exigem criptografia](/graph/webhooks-with-resource-data).
-
-Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado. Antes de criar uma assinatura **chatMessage**, você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis). 
-
-> **Observação:** `/teams/getAllMessages` e `/chats/getAllMessages` estão disponíveis para os usuários que têm as [licenças necessárias](https://aka.ms/teams-changenotification-licenses).
-No futuro, a Microsoft poderá exigir que você ou seus clientes pagarão taxas adicionais com base na quantidade de dados acessados por meio da API.
-
-> **Observação:** `/chats/getAllMessages` retorna apenas mensagens de chats pertencentes ao locatário. Se um thread de chat for iniciado por um usuário fora do locatário, esse thread de chat não é de propriedade do locatário e não cria notificações de alteração.
+[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
@@ -97,7 +88,7 @@ POST /subscriptions
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto subscription](../resources/subscription.md) no corpo da resposta.
 
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 
@@ -204,7 +195,7 @@ Content-length: 252
 }
 ```
 
-### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
+### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
 O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl)** deve ser capaz de responder a uma solicitação de validação conforme descrito em Configurar notificações para alterações nos dados [do usuário.](/graph/webhooks#notification-endpoint-validation) Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 
