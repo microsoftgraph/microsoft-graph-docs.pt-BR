@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso servicePrincipal
-description: Represents an instance of an application in a directory. Inherits from directoryObject.
+description: Representa uma instância de um aplicativo em um diretório. Herda do directoryObject.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: adb18d3cba9f998e62b474c0e4f466d04e679b5c
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: d02868356a2c3ed92942f6a58f451023fd027ad1
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377037"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013377"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
 Namespace: microsoft.graph
 
-Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
+Representa uma instância de um aplicativo em um diretório. Herda de [directoryObject](directoryobject.md).
 
 Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/serviceprincipal-delta.md).
 
@@ -45,9 +45,9 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Adicionar chave](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Adicione uma credencial de chave a uma servicePrincipal.|
 |[Remover chave](../api/serviceprincipal-removekey.md)|Nenhum(a)|Remova uma credencial de chave de uma servicePrincipal.|
 |**Classificações de permissão delegada**| | |
-|[Lista de classificações de permissão delegada](../api/serviceprincipal-list-delegatedpermissionclassifications.md) |Conjunto de [delegatedPermissionClassification](delegatedpermissionclassification.md)| Obtenha as classificações de permissão para permissões delegadas expostas por essa entidade de serviço.|
+|[Lista de classificações de permissão delegada](../api/serviceprincipal-list-delegatedpermissionclassifications.md) |Coleção [delegatedPermissionClassification](delegatedpermissionclassification.md)| Obtenha as classificações de permissão para permissões delegadas expostas por essa entidade de serviço.|
 |[Adicionar classificações de permissão delegada](../api/serviceprincipal-post-delegatedpermissionclassifications.md) |[delegatedPermissionClassification](delegatedpermissionclassification.md) | Adicione uma classificação de permissão para uma permissão delegada exposta por essa entidade de serviço. |
-|[Remover classificações de permissão delegada](../api/serviceprincipal-delete-delegatedpermissionclassifications.md) | Nenhum | Remova uma classificação de permissão para uma permissão delegada exposta por essa entidade de serviço.|
+|[Remover classificação de permissão delegada](../api/serviceprincipal-delete-delegatedpermissionclassifications.md) | Nenhum | Remova uma classificação de permissão para uma permissão delegada exposta por essa entidade de serviço.|
 |**Concessões de permissão delegadas**| | |
 |[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) collection| Obtenha as concessões de permissão delegadas que autorizam essa entidade de serviço a acessar uma API em nome de um usuário conectado.|
 |**Associação**| | |
@@ -83,14 +83,14 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |alternativeNames|Coleção de cadeias de caracteres| Usado para recuperar entidades de serviço por assinatura, identificar grupo de recursos e IDs de recursos completos de [identidades gerenciadas](https://aka.ms/azuremanagedidentity).|
 |appDisplayName|String|O nome de exibição exposto pelo aplicativo associado.|
 |appId|String|O identificador exclusivo do aplicativo associado (sua propriedade **appId**).|
-|applicationTemplateId|Cadeia de caracteres|Identificador exclusivo do applicationTemplate do qual a servicePrincipal foi criada. Somente leitura.|
+|applicationTemplateId|String|Identificador exclusivo do applicationTemplate do qual a servicePrincipal foi criada. Somente leitura.|
 |appOwnerOrganizationId|Cadeia de caracteres|Contém a ID de locatário onde o aplicativo está registrado. Isso é aplicável apenas a entidades de serviço respaldadas por aplicativos.|
 |appRoleAssignmentRequired|Booliano|Especifica se os usuários ou outras entidade de serviço precisam receber uma atribuição de função de aplicativo para essa entidade de serviço antes que os usuários possam entrar ou os aplicativos possam obter tokens. O valor padrão é **falso**. Não anulável. |
 |appRoles|Coleção [appRole](approle.md)|As funções expostas pelo aplicativo que essa entidade de serviço representa. Para obter mais informações, confira definição da propriedade **appRoles** na entidade [aplicativo](application.md). Não anulável. |
 | deletedDateTime | DateTimeOffset | A data e a hora em que a entidade de serviço foi excluída. Somente leitura. |
 |displayName|String|O nome de exibição da entidade de serviço.|
-|homepage|Cadeia de caracteres|Página inicial ou página de aterrissagem do aplicativo.|
-|id|String|O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
+|homepage|String|Página inicial ou página de aterrissagem do aplicativo.|
+|id|Cadeia de caracteres|O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo adquirido, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como adicionar termos de serviço e política de privacidade a aplicativos do Azure AD registrados](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 |keyCredentials|[keyCredential](keycredential.md) collection|A coleção de credenciais principais associada à entidade de serviço. Não anulável.            |
 |loginUrl|Cadeia de caracteres|Especifica a URL na qual o provedor de serviços redireciona o usuário para a autenticação do Azure AD. O Azure AD usa a URL para iniciar o aplicativo do Microsoft 365 ou o Azure AD My Apps. Quando em branco, o Azure AD executa o logon iniciado pelo IdP de aplicativos configurados com o [logon único baseado em SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). O usuário inicia o aplicativo do Microsoft 365, o Azure AD My Apps ou a URL de SSO do Azure AD.|
@@ -114,7 +114,6 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Aplicativos aos quais essa entidade de serviço é atribuída. Somente leitura. Anulável.|
 |claimsMappingPolicies|Conjunto [claimsMappingPolicy](claimsmappingpolicy.md)|O claimsMappingPolicies atribuído a essa entidade de serviço.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Objetos de diretório criados pela entidade de serviço. Somente leitura. Anulável.|
-|pontos de extremidade|coleção [ponto de extremidade](endpoint.md) |Pontos de extremidade disponíveis para descoberta. Serviços como o Sharepoint preenchem essa propriedade com pontos de extremidade do SharePoint específicos de locatários que outros aplicativos podem descobrir e usar em suas experiências.|
 |homeRealmDiscoveryPolicies|Conjunto [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)|O homeRealmDiscoveryPolicies atribuído a essa entidade de serviço.|
 |memberOf|[directoryObject](directoryobject.md) collection|Funções das quais essa entidade de serviço é membro. Métodos HTTP: GET somente leitura. Anulável.|
 |oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|Concessões de permissão delegadas que autorizam essa entidade de serviço a acessar uma API em nome de um usuário conectado. Somente leitura. Anulável.|
