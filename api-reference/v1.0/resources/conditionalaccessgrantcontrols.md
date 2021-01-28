@@ -1,31 +1,40 @@
 ---
-title: tipo de recurso conditionalAccessGrantControls
-description: Representa os controles de concessão que devem ser atendidos para passar a política.
+title: Tipo de recurso conditionalAccessGrantControls
+description: Representa controles de concessão que devem ser atendidos para passar a política.
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 431ea73f20b36b189ae7638cc56a01239c1f113f
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: b0b93508db666fc1673f1c8154ef638762a872f3
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582125"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013664"
 ---
-# <a name="conditionalaccessgrantcontrols-resource-type"></a>tipo de recurso conditionalAccessGrantControls
+# <a name="conditionalaccessgrantcontrols-resource-type"></a>Tipo de recurso conditionalAccessGrantControls
 
 Namespace: microsoft.graph
 
-Representa os controles de concessão que devem ser atendidos para passar a política.
+Representa controles de concessão que devem ser atendidos para passar a política.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| operator | String | Define o relacionamento dos controles de concessão. Valores possíveis: `AND` , `OR` . |
-| builtInControls | String collection | Lista de valores de controles internos exigidos pela política. Valores possíveis: `Block` , `Mfa` ,,, `CompliantDevice` `DomainJoinedDevice` `ApprovedApplication` , `CompliantApplication` |
-| customAuthenticationFactors | String collection | Lista de IDs de controles personalizados exigidos pela política. Para obter mais informações, consulte [Custom Controls](/azure/active-directory/conditional-access/controls). |
-| termsOfUse | String collection | Lista de [termos de uso](/graph/api/resources/agreement) IDs exigidos pela política. |
+| operator | Cadeia de Caracteres | Define a relação dos controles de concessão. Valores possíveis: `AND` , `OR` . |
+| builtInControls | Coleção String | Lista de valores de controles internos exigidos pela política. Valores possíveis: `block` , , , , , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` `passwordChange` . |
+| customAuthenticationFactors | Coleção String | Lista de IDs de controles personalizados exigidas pela política. Para obter mais informações, consulte [Controles personalizados.](/azure/active-directory/conditional-access/controls) |
+| termsOfUse | Coleção String | Lista de [IDs de termos](/graph/api/resources/agreement) de uso exigidos pela política. |
+
+### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Considerações especiais ao usar `passwordChange` como um controle
+
+Considere o seguinte ao usar o `passwordChange` controle: 
+
+- `passwordChange` deve ser acompanhado pelo `mfa` uso de um `AND` operador. Essa combinação garante que a senha seja atualizada de forma segura.
+- `passwordChange` deve ser usado em uma política que contém `userRiskLevels` . Isso foi projetado para permitir cenários em que os usuários devem usar uma senha de alteração segura para redefinir seus riscos de usuário.
+- A política deve direcionar `all` aplicativos e não excluir aplicativos.
+- A política não pode conter nenhuma outra condição, exceto `users` e `applications` `userRiskLevels` .
 
 ## <a name="relationships"></a>Relações
 

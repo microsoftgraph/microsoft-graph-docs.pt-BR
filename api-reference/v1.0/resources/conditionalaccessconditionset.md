@@ -1,33 +1,34 @@
 ---
-title: tipo de recurso conditionalAccessConditionSet
-description: Representa o tipo de condições que controlam quando a política se aplica.
+title: Tipo de recurso conditionalAccessConditionSet
+description: Representa o tipo de condições que regem quando a política se aplica.
 localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1fd96fb7bfa54ff059afa83b7ea922737dc90809
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3163bbefef420a878364f52f9dabc8dee1e7cae
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018925"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013671"
 ---
-# <a name="conditionalaccessconditionset-resource-type"></a>tipo de recurso conditionalAccessConditionSet
+# <a name="conditionalaccessconditionset-resource-type"></a>Tipo de recurso conditionalAccessConditionSet
 
 Namespace: microsoft.graph
 
-Representa o tipo de condições que controlam quando a política se aplica.
+Representa o tipo de condições que regem quando a política se aplica.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|Emprego|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídos no e excluídos da política. Obrigatório. |
-|usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos no e excluídos da política. Obrigatório. |
-|clientAppTypes|Coleção de cadeias de caracteres| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
-|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos no e excluídos da política. |
-|plataformas|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
-|signInRiskLevels|Coleção de cadeias de caracteres| Níveis de risco incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
+|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Aplicativos e ações do usuário incluídos e excluídos da política. Obrigatório. |
+|usuários|[conditionalAccessUsers](conditionalaccessusers.md)| Usuários, grupos e funções incluídos e excluídos da política. Obrigatório. |
+|clientAppTypes|Coleção String| Tipos de aplicativo cliente incluídos na política. Os possíveis valores são: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`.|
+|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locais incluídos e excluídos da política. |
+|platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Plataformas incluídas e excluídas da política. |
+|signInRiskLevels|Coleção String| Níveis de risco de login incluídos na política. Os valores possíveis são: `low`, `medium`, `high`, `none`.|
+|userRiskLevels|Coleção String| Níveis de risco do usuário incluídos na política. Os valores possíveis são: `low`, `medium`, `high`.|
 
 ## <a name="relationships"></a>Relações
 
@@ -43,7 +44,8 @@ Veja a seguir uma representação JSON do recurso.
     "clientAppTypes",
     "locations",
     "platforms",
-    "signInRiskLevels"
+    "signInRiskLevels",
+    "userRiskLevels"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessConditionSet",
   "baseType": null
@@ -56,7 +58,8 @@ Veja a seguir uma representação JSON do recurso.
   "clientAppTypes": ["String"],
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
-  "signInRiskLevels": ["String"]
+  "signInRiskLevels": ["String"],
+  "userRiskLevels": ["String"]
 }
 ```
 
