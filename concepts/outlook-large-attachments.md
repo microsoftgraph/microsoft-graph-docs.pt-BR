@@ -4,17 +4,17 @@ description: Dependendo do tamanho do arquivo, você pode escolher uma das duas 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 633daa2925c1ec834990c9e50a0ad058543eb5f8
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: c4779ff60b0fe0f5a2452a5991a04958c0a5fd9f
+ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567373"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50013454"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>Anexar arquivos grandes a mensagens ou eventos do Outlook
 
-Usando a API do Microsoft Graph, é possível anexar arquivos de até 150 MB a uma [mensagem](/graph/api/resources/message?view=graph-rest-1.0) ou item de [evento](/graph/api/resources/event?view=graph-rest-1.0) do Outlook. Dependendo do tamanho do arquivo, escolha uma das duas maneiras de anexar o arquivo:
-- Se o tamanho do arquivo for menor que 3 MB, faça uma única POSTAGEM na propriedade de navegação dos **anexos** do item do Outlook; veja como fazer isso para uma [mensagem](/graph/api/message-post-attachments?view=graph-rest-1.0) ou [evento](/graph/api/event-post-attachments?view=graph-rest-1.0). A resposta `POST` bem-sucedida inclui a ID de anexo do arquivo.
+Usando a API do Microsoft Graph, é possível anexar arquivos de até 150 MB a uma [mensagem](/graph/api/resources/message) ou item de [evento](/graph/api/resources/event) do Outlook. Dependendo do tamanho do arquivo, escolha uma das duas maneiras de anexar o arquivo:
+- Se o tamanho do arquivo for menor que 3 MB, faça uma única POSTAGEM na propriedade de navegação dos **anexos** do item do Outlook; veja como fazer isso para uma [mensagem](/graph/api/message-post-attachments) ou [evento](/graph/api/event-post-attachments). A resposta `POST` bem-sucedida inclui a ID de anexo do arquivo.
 - Se o tamanho do arquivo estiver entre 3 MB e 150 MB, crie uma sessão de carregamento e use o `PUT` iteradamente para carregar intervalos de bytes do arquivo até que você carregue todo o arquivo. Um cabeçalho na resposta `PUT` finalizada com êxito inclui uma URL com a ID do anexo.
 
 Para anexar vários arquivos a uma mensagem, escolha a abordagem de cada arquivo com base em seu tamanho e anexe-os individualmente.
@@ -26,13 +26,17 @@ Este artigo ilustra a segunda abordagem passo a passo, criando e usando uma sess
 
 ## <a name="step-1-create-an-upload-session"></a>Etapa 1: criar uma sessão de carregamento
 
-[Criar uma sessão de carregamento](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) para anexar um arquivo a uma mensagem ou evento. Especifique o arquivo no parâmetro de entrada **AttachmentItem**.
+[Criar uma sessão de carregamento](/graph/api/attachment-createuploadsession) para anexar um arquivo a uma mensagem ou evento. Especifique o arquivo no parâmetro de entrada **AttachmentItem**.
 
-Uma operação bem-sucedida retorna `HTTP 201 Created` e uma nova instância[uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0), que contém uma URL opaca que você pode usar em operações `PUT` subseqüentes para carregar partes do arquivo. A **uploadSession** fornece um local de armazenamento temporário onde os bytes do arquivo são salvos até que você tenha carregado o arquivo completo.
+Uma operação bem-sucedida retorna `HTTP 201 Created` e uma nova instância[uploadSession](/graph/api/resources/uploadsession), que contém uma URL opaca que você pode usar em operações `PUT` subseqüentes para carregar partes do arquivo. A **uploadSession** fornece um local de armazenamento temporário onde os bytes do arquivo são salvos até que você tenha carregado o arquivo completo.
 
-Certifique-se de pedir permissão de `Mail.ReadWrite` para criar a **uploadSession** para uma mensagem e `Calendars.ReadWrite` para um evento. A URL opaca, retornada na propriedade **uploadUrl** do novo **uploadSession** é pré-autenticada e contém o token de autorização apropriado para consultas `PUT` subsequentes no domínio `https://outlook.office.com`. Esse token expira por **expirationDateTime**. Não Personalize essa URL para as operações `PUT`.
+O objeto **uploadSession** na resposta também inclui a propriedade **nextExpectedRanges**, que indica que o local inicial de carregamento deve ser byte 0.
 
-O objeto**uploadSession** na resposta também inclui a propriedade **nextExpectedRanges**, que indica que o local inicial de carregamento deve ser byte 0.
+### <a name="permissions"></a>Permissões
+Certifique-se de pedir permissão de `Mail.ReadWrite` para criar a **uploadSession** para uma mensagem e `Calendars.ReadWrite` para um evento. 
+
+A URL opaca, retornada na propriedade **uploadUrl** do novo **uploadSession** é pré-autenticada e contém o token de autorização apropriado para consultas `PUT` subsequentes no domínio `https://outlook.office.com`. Esse token expira por **expirationDateTime**. Não Personalize essa URL para as operações `PUT`.
+
 
 ### <a name="example-create-an-upload-session-for-a-message"></a>Exemplo: criar uma sessão de carregamento para uma mensagem
 
@@ -268,7 +272,7 @@ Content-type: application/json
 
 Após o carregamento inicial na etapa 2, continue a carregar a parte restante do arquivo, usando uma solicitação `PUT` semelhante, conforme descrito na etapa 2, antes que você atinja a data/hora de vencimento da sessão. Use a coleção **NextExpectedRanges** para determinar onde começar o próximo intervalo de bytes a ser carregado. É possível ver vários intervalos especificados, indicando partes do arquivo que o servidor ainda não recebeu. Isso é útil quando você precisa retomar uma transferência que foi interrompida, e seu cliente não tem certeza sobre o estado no serviço.
 
-Quando o último byte do arquivo for carregado com êxito, a operação de `PUT` final retornará `HTTP 201 Created` e um cabeçalho `Location` que indica a URL para o anexo de arquivo no domínio `https://outlook.office.com`. Você pode obter a ID do anexo na URL e salvá-la para uso posterior. Dependendo do cenário, você pode usar essa ID para [obter os metadados do anexo](/graph/api/attachment-get?view=graph-rest-1.0)ou [remover o anexo do item do Outlook](/graph/api/attachment-delete?view=graph-rest-1.0) usando o ponto de extremidade do Microsoft Graph.
+Quando o último byte do arquivo for carregado com êxito, a operação de `PUT` final retornará `HTTP 201 Created` e um cabeçalho `Location` que indica a URL para o anexo de arquivo no domínio `https://outlook.office.com`. Você pode obter a ID do anexo na URL e salvá-la para uso posterior. Dependendo do cenário, você pode usar essa ID para [obter os metadados do anexo](/graph/api/attachment-get)ou [remover o anexo do item do Outlook](/graph/api/attachment-delete) usando o ponto de extremidade do Microsoft Graph.
 
 Os exemplos a seguir mostram o carregamento do último intervalo de bytes do arquivo na mensagem e no evento das etapas anteriores.
 
@@ -332,15 +336,18 @@ Content-Length: 0
 
 ## <a name="step-4-optional-get-the-file-attachment-from-the-outlook-item"></a>Etapa 4 (opcional): obter o arquivo em anexo do item do Outlook
 
-Como sempre, [obter um anexo](/graph/api/attachment-get?view=graph-rest-1.0) a partir de um item do Outlook não é tecnicamente limitado pelo tamanho do anexo.
+Como sempre, [obter um anexo](/graph/api/attachment-get) a partir de um item do Outlook não é tecnicamente limitado pelo tamanho do anexo.
 
 No entanto, obter um anexo de arquivo grande no formato base64-encoded afeta o desempenho da API. Se você espera um anexo grande:
 
-- Como uma alternativa para obter o conteúdo do anexo no formato base64, você pode [obter os dados brutos do arquivo em anexo](/graph/api/attachment-get?view=graph-rest-1.0#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message).
-- Para [obter os metadados do anexo de arquivo](/graph/api/attachment-get?view=graph-rest-1.0#example-1-get-the-properties-of-a-file-attachment), acrescente um parâmetro `$select` para incluir somente as propriedades de metadados desejadas, excluindo a propriedade **contentBytes** que retorna o arquvo em anexo no formato base64.
+- Como uma alternativa para obter o conteúdo do anexo no formato base64, você pode [obter os dados brutos do arquivo em anexo](/graph/api/attachment-get#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message).
+- Para [obter os metadados do anexo de arquivo](/graph/api/attachment-get#example-1-get-the-properties-of-a-file-attachment), acrescente um parâmetro `$select` para incluir somente as propriedades de metadados desejadas, excluindo a propriedade **contentBytes** que retorna o arquvo em anexo no formato base64.
 
 ### <a name="example-get-the-raw-file-attached-to-the-event"></a>Exemplo: obter o arquivo bruto anexado ao evento
-Seguindo o exemplo de evento e utilizando a ID do anexo retornada no cabeçalho de `Location` da etapa anterior, o próximo exemplo de solicitação mostra o uso de um parâmetro `$value` para obter os dados de conteúdo bruto do anexo.
+Seguindo o exemplo de evento e utilizando a ID do anexo retornada no cabeçalho de `Location` da etapa anterior, a solicitação de exemplo nesta seção mostra o uso de um parâmetro `$value` para obter os dados de conteúdo bruto do anexo.
+
+#### <a name="permissions"></a>Permissões
+Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.Read`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 #### <a name="request"></a>Solicitação
 
@@ -370,7 +377,10 @@ Content-type: image/jpeg
 
 
 ### <a name="example-get-the-metadata-of-the-file-attached-to-the-message"></a>Exemplo: obter os metadados do arquivo anexado à mensagem
-Seguindo o exemplo da mensagem, o próximo exemplo de solicitação mostra o uso de um parâmetro `$select` para obter alguns dos metadados de um anexo de arquivo em uma mensagem, excluindo o **contentBytes**.
+Seguindo o exemplo da mensagem, a solicitação de exemplo de solicitação nesta seção mostra o uso de um parâmetro `$select` para obter alguns dos metadados de um anexo de arquivo em uma mensagem, excluindo o **contentBytes**.
+
+#### <a name="permissions"></a>Permissões
+Use a permissão delegada ou de aplicativo com menos privilégios, `Mail.Read`, conforme apropriado, para esta operação. Saiba mais em [permissões de correio](permissions-reference.md#mail-permissions).
 
 #### <a name="request"></a>Solicitação
 
@@ -413,6 +423,9 @@ Content-type: application/json
 
 Em qualquer momento antes da sessão de carregamento expirar, se for preciso cancelar o carregamento, você poderá usar a mesma URL opaca inicial para excluir a sessão de carregamento. Uma operação bem-sucedida retorna `HTTP 204 No Content`.
 
+### <a name="permissions"></a>Permissões
+Como a URL opaca inicial é pré-autenticada e contém o token de autorização apropriado para consultas subsequentes para essa sessão de carregamento, não especifique um cabeçalho de solicitação de autorização para essa operação.
+
 ### <a name="example-cancel-the-upload-session-for-the-message"></a>Exemplo: cancelar a sessão de carregamento da mensagem
 
 #### <a name="request"></a>Solicitação
@@ -435,5 +448,5 @@ HTTP/1.1 204 No content
 
 ### <a name="errorattachmentsizeshouldnotbelessthanminimumsize"></a>ErrorAttachmentSizeShouldNotBeLessThanMinimumSize
 
-Este erro é devolvido ao tentar [criar uma sessão de upload](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) para anexar um arquivo menor que 3 MB. Se o tamanho do arquivo for menor que 3 MB, faça uma única POSTAGEM na propriedade de navegação dos **anexos** da [mensagem](/graph/api/message-post-attachments?view=graph-rest-1.0) ou do [evento](/graph/api/event-post-attachments?view=graph-rest-1.0). A resposta `POST` bem-sucedida inclui a ID do arquivo anexado à mensagem.
+Este erro é devolvido ao tentar [criar uma sessão de upload](/graph/api/attachment-createuploadsession) para anexar um arquivo menor que 3 MB. Se o tamanho do arquivo for menor que 3 MB, faça uma única POSTAGEM na propriedade de navegação dos **anexos** da [mensagem](/graph/api/message-post-attachments) ou do [evento](/graph/api/event-post-attachments). A resposta `POST` bem-sucedida inclui a ID do arquivo anexado à mensagem.
 
