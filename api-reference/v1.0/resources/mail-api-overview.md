@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 769a7999d50c06468539e220dbaec34258666547
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 85cd0c72d0de5c441c045a58f718802b6aad88c0
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844638"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034041"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Usar a API REST de Email do Outlook
 
-O Microsoft Graph permite que o seu aplicativo obtenha acesso autorizado aos dados de email do Outlook do usuário em uma conta pessoal ou da organização. Com as [permissões de aplicativo e delegadas apropriadas](/graph/permissions-reference), seu aplicativo pode acessar os dados de email do usuário conectado ou qualquer usuário em um locatário. 
+O Microsoft Graph permite que seu aplicativo obtenha acesso autorizado aos dados de email do Outlook de um usuário em uma conta pessoal ou organizacional. Com as [permissões de email](/graph/permissions-reference#mail-permissions) apropriadas delegadas ou do aplicativo, seu aplicativo pode acessar os dados de email do usuário conectado ou de qualquer usuário em um locatário. Para obter mais informações sobre tokens de acesso, registro de aplicativo e permissões delegadas e de aplicativo, consulte [ Noções básicas de autenticação e autorização](/graph/auth/auth-concepts).
 
 [!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
