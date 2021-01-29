@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 84dd108625cbe3620de1776a965f4268030d92ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7109c072d648f3628f3c84540377d0560f932f63
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992185"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033971"
 ---
 # <a name="create-tablecolumn"></a>Criar TableColumn
 
@@ -40,11 +40,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookTableColumn](../resources/workbooktablecolumn.md) .
+No corpo da solicitação, fornece uma representação JSON [do objeto WorkbookTableColumn.](../resources/workbooktablecolumn.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o `201 Created` código de resposta e o objeto [WorkbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta e o objeto `201 Created` [WorkbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -61,7 +61,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
@@ -85,7 +85,7 @@ Content-length: 81
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookTableColumn](../resources/workbooktablecolumn.md) .
+No corpo da solicitação, fornece uma representação JSON [do objeto WorkbookTableColumn.](../resources/workbooktablecolumn.md)
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -99,7 +99,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b22d8d76b9ece640cc873024c28dd1c0380ea9cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e20ce96e1004f6b16e34b33f5e6b016da6059f8
+ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012905"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50034237"
 ---
 # <a name="update-tablecolumn"></a>Atualizar tablecolumn
 
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookTableColumn](../resources/workbooktablecolumn.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [WorkbookTableColumn](../resources/workbooktablecolumn.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -86,7 +86,7 @@ Content-length: 81
 
 ---
 > [!NOTE]
-> Se você quiser atualizar vários campos de uma coluna, torne **os valores** uma matriz de cadeia de caracteres na solicitação. Por exemplo: `"values": [["a"], [1], [2], [3]]`.
+> Se você quiser atualizar vários campos de uma coluna, faça dos valores uma **matriz** de cadeia de caracteres na solicitação. Por exemplo: `"values": [["a"], [1], [2], [3]]`.
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -101,7 +101,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
