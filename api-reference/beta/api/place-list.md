@@ -1,35 +1,35 @@
 ---
-title: Locais de lista
-description: Recupere uma lista de objetos Place.
+title: Listar locais
+description: Recupere uma lista de objetos de local.
 localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f12d6cf2e05b8ea85459e41746b9fd4f1cba30c0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6232c19bb3f9e1c8f24908b017625ec6cc00985b
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971766"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059732"
 ---
-# <a name="list-places"></a>Locais de lista
+# <a name="list-places"></a>Listar locais
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtém uma coleção do tipo especificado de objetos [Place](../resources/place.md) definidos no locatário. Por exemplo, você pode obter todas as salas, todas as listas de salas ou as salas em uma lista de salas específica no locatário.
+Obter uma coleção do tipo especificado de objetos [de local](../resources/place.md) definidos no locatário. Por exemplo, você pode obter todas as salas, todas as listas de salas ou as salas em uma lista de salas específica no locatário.
 
-Um objeto **local** pode ser um dos seguintes tipos:
+Um **objeto** place pode ser um dos seguintes tipos:
 
-* Uma [sala](../resources/room.md) que inclui Propriedades sofisticadas, como um endereço de email para a sala, e suporte à acessibilidade, capacidade e dispositivo. 
-* Uma [lista de salas](../resources/roomlist.md) que inclui um endereço de email para a lista de salas e uma propriedade de navegação para obter a coleção de instâncias de sala na lista de salas. 
+* Uma [sala](../resources/room.md) que inclui propriedades rica, como um endereço de email para a sala e acessibilidade, capacidade e suporte ao dispositivo. 
+* Uma [lista de](../resources/roomlist.md) sala que inclui um endereço de email para a lista de sala e uma propriedade de navegação para obter a coleção de instâncias de sala na lista de sala. 
 
-A **sala** e a **salalist** são derivadas do objeto **local** .
+Room **e** **roomList** são derivados do **objeto place.**
 
-Por padrão, essa operação retorna 100 locais por página. 
+Por padrão, essa operação retorna 100 lugares por página. 
 
-Em comparação com as funções [findRooms](../api/user-findrooms.md) e [findRoomLists](../api/user-findroomlists.md) , essa operação retorna uma carga mais rica para salas e listas de salas. Veja [detalhes](../resources/place.md#using-the-places-api) sobre como eles se comparam.
+Em comparação com [as funções findRooms](../api/user-findrooms.md) e [findRoomLists,](../api/user-findroomlists.md) essa operação retorna uma carga mais avançada para salas e listas de salas. Veja [os detalhes](../resources/place.md#using-the-places-api) de como eles se comparam.
 
 ## <a name="permissions"></a>Permissões
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Place.Read.All |
+| Delegada (conta corporativa ou de estudante)     | Place.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo                            | Place.Read.All |
 
@@ -51,7 +51,7 @@ Para obter todas as salas em um locatário:
 GET /places/microsoft.graph.room
 ```
 
-Para obter todas as listas de salas em um locatário:
+Para obter todas as listas de sala em um locatário:
 
 ```http
 GET /places/microsoft.graph.roomlist
@@ -63,15 +63,15 @@ Para obter todas as salas na lista de salas especificada:
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**Observação** : para obter salas em uma lista de salas, você deve especificar a lista de salas por sua propriedade **EmailAddress** , não pela **ID**. 
+>**Observação:** para obter salas em uma lista de salas, você deve especificar a lista de salas por sua **propriedade emailAddress,** não por **sua id**. 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes parâmetros de consulta para ajudar a personalizar a resposta:
+Esse método dá suporte aos seguintes parâmetros de consulta para ajudar a personalizar a resposta:
 - $filter
 - $select
 - $top
 - $skip
-- $count = true
+- $count=true
 
 Use $top para personalizar o tamanho da página. O tamanho de página padrão é 100.
 
@@ -89,15 +89,15 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [colocar](../resources/place.md) objetos no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de objetos [place](../resources/place.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a>Exemplo 1: listar todas as salas definidas no locatário
+### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a>Exemplo 1: Listar todas as salas definidas no locatário
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como obter todos os objetos de [sala](../resources/room.md) no locatário.
+O exemplo a seguir mostra como obter todos os [objetos de](../resources/room.md) sala no locatário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -131,7 +131,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 Este é um exemplo de resposta.
 
->**Observação** : o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -166,11 +166,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "100",
-      "capacity": "50",
+      "capacity": 50,
       "building": "1",
       "floorNumber": 1,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "bean bags"
@@ -197,11 +197,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",
@@ -215,11 +215,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a>Exemplo 2: listar todas as listas de salas definidas no locatário
+### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a>Exemplo 2: Listar todas as listas de sala definidas no locatário
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como obter todos os objetos [RoomList](../resources/roomlist.md) no locatário.
+O exemplo a seguir mostra como obter todos os [objetos roomList](../resources/roomlist.md) no locatário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -253,7 +253,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 
 Este é um exemplo de resposta.
 
->**Observação** : o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -302,11 +302,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-rooms-contained-in-a-room-list"></a>Exemplo 3: listar salas contidas em uma lista de salas
+### <a name="example-3-list-rooms-contained-in-a-room-list"></a>Exemplo 3: Listar salas contidas em uma lista de salas
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como obter uma lista de objetos [Room](../resources/room.md) contidos em uma **salalist**. 
+O exemplo a seguir mostra como obter uma lista de objetos [de sala](../resources/room.md) contidos em uma **roomList**. 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -340,7 +340,7 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 
 Este é um exemplo de resposta.
 
->**Observação** : o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação**: o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -375,11 +375,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",

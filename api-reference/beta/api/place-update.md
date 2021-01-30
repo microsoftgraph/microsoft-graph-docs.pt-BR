@@ -1,16 +1,16 @@
 ---
 title: Local de atualização
-description: Atualize as propriedades do objeto local.
+description: Atualize as propriedades do objeto place.
 localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 338f373aca61e30745ee4fbc5f2d03f5d7a69b46
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 802e29cfbaab46d3d3b8a1f7d2bbe0ad1ca031b4
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971679"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059701"
 ---
 # <a name="update-place"></a>Local de atualização
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto [local](../resources/place.md) , que pode ser uma [sala](../resources/room.md) ou uma [sala de salas](../resources/roomlist.md). Você pode identificar a **sala** ou a **sala de salas** especificando a propriedade **ID** ou **EmailAddress** .
+Atualizar as propriedades do [objeto place,](../resources/place.md) que pode ser uma [sala](../resources/room.md) ou [roomList](../resources/roomlist.md). Você pode identificar a **sala ou** **roomList** especificando a **id** ou **a propriedade emailAddress.**
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Place.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Sem suporte |
+| Delegada (conta corporativa ou de estudante)     | Place.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,33 +47,33 @@ PATCH /places/{id | emailAddress}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Somente uma instância de um recurso de colocar ( **sala** ou **sala de salas** ) pode ser atualizada de cada vez. No corpo da solicitação, use `@odata.type` para especificar o tipo de local e inclua as propriedades desse tipo para atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Apenas uma instância de um recurso de local **(sala** ou **roomList**) pode ser atualizada por vez. No corpo da solicitação, use para especificar o tipo de local e incluir as `@odata.type` propriedades desse tipo a atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade               | Tipo                                              | Descrição |
 |:-----------------------|:--------------------------------------------------|:--|
-| address                | [physicalAddress](../resources/physicaladdress.md)             | O endereço da sala ou da sala de salas. |
-| audioDeviceName        | String                                            | Especifica o nome do dispositivo de áudio na sala. |
+| address                | [physicalAddress](../resources/physicaladdress.md)             | O endereço da sala ou da lista de sala. |
+| audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
 | bookingType            | [bookingType](../resources/room.md)                            | Tipo de sala. Os valores possíveis são: `Standard` e `Reserved`. |
-| Build               | String                                            | Especifica o nome do edifício ou o número de edifício em que a sala se encontra. |
-| máxima               | String                                            | Especifica a capacidade da sala. |
-| displayDeviceName      | String                                            | Especifica o nome do dispositivo de exibição na sala. |
-| floorLabel             | String                                            | Especifica a carta de piso em que a sala está ativa. |
-| floorNumber            | Int32                                             | Especifica o número do andar em que a sala está. |
-| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da sala de opções no latitude, longitude e, opcionalmente, as coordenadas de altitude. |
-| isWheelchairAccessible | Booliano                                           | Especifica se a sala pode ser acessada por cadeira. |
-| rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
-| apelido               | String                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
-| phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou sala de salas. |
-| tags                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
-| videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
+| building               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número do edifício em que a sala está. |
+| capacity               | Int32                                             | Especifica a capacidade da sala. |
+| displayDeviceName      | Cadeia de caracteres                                            | Especifica o nome do dispositivo de exibição na sala. |
+| floorLabel             | Cadeia de caracteres                                            | Especifica a letra do piso em que a sala está. |
+| floorNumber            | Int32                                             | Especifica o número do piso em que a sala está. |
+| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da lista de sala em coordenadas de latitude, longitude e, opcionalmente, altitude. |
+| isWheelChairAccessible | Booliano                                           | Especifica se a sala é acessível para acessibilidade. |
+| rótulo                  | Cadeia de caracteres                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
+| nickname               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
+| phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou da lista de sala. |
+| tags                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou o tipo de móveis. |
+| videoDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [Place](../resources/place.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [place](../resources/place.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-a-room"></a>Exemplo 1: atualizar uma sala
+### <a name="example-1-update-a-room"></a>Exemplo 1: Atualizar uma sala
 
 ### <a name="request"></a>Solicitação
 
@@ -96,8 +96,8 @@ Content-length: 285
   "nickname": "Conf Room",
   "building": "1",
   "label": "100",
-  "capacity": "50",
-  "isWheelchairAccessible": false
+  "capacity": 50,
+  "isWheelChairAccessible": false
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -124,7 +124,7 @@ Content-length: 285
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto response mostrado aqui pode ser encurtado para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -156,12 +156,12 @@ Content-type: application/json
     "phone": "555-555-0100",
     "nickname": "Conf Room",
     "label": "100",
-    "capacity": "50",
+    "capacity": 50,
     "building": "1",
     "floorLabel": "1P",
     "floorNumber": 1,
     "isManaged": true,
-    "isWheelchairAccessible": false,
+    "isWheelChairAccessible": false,
     "bookingType": "standard",
     "tags": [
       "bean bags"
@@ -172,7 +172,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-roomlist"></a>Exemplo 2: atualizar uma salalist
+### <a name="example-2-update-a-roomlist"></a>Exemplo 2: Atualizar uma lista de sala
 
 ### <a name="request"></a>Solicitação
 
@@ -233,7 +233,7 @@ Content-type: application/json
 Este é um exemplo de resposta.
 
 > [!NOTE]
-> O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> O objeto response mostrado aqui pode ser encurtado para maior leitura. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

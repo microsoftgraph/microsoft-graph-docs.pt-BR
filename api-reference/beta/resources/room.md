@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso Room
+title: tipo de recurso room
 description: Especifica as propriedades de uma sala em um locatário.
 localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ff64a11b9a4e0e036824df1629f1ae055ade3f9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39e1bf097519f143bc2eeb1a825fc963d49fd359
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016132"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059557"
 ---
-# <a name="room-resource-type"></a>tipo de recurso Room
+# <a name="room-resource-type"></a>tipo de recurso room
 
 Namespace: microsoft.graph
 
@@ -20,44 +20,44 @@ Namespace: microsoft.graph
 
 Representa uma sala em um locatário. 
 
-No Exchange Online, cada sala é associada a uma caixa de correio de sala. Derivado do [local](place.md).
+No Exchange Online, cada sala é associada a uma caixa de correio de sala. Derivado do [local.](place.md)
 
 ## <a name="methods"></a>Métodos
 
 | Método                              | Tipo de retorno                  | Descrição |
 |:------------------------------------|:-----------------------------|:--------|
-| [Locais de lista](../api/place-list.md) | Uma coleção do tipo de [local](place.md) solicitado e derivado | Obtém uma coleção do tipo especificado do objeto **Place** definido no locatário. Por exemplo, você pode obter todas as salas, todas as listas de salas ou as salas em uma lista de salas específica no locatário. |
-| [Obter local](../api/place-get.md)    | O tipo de [local](place.md) solicitado e derivado            | Obtenha as propriedades e os relacionamentos do objeto **local** especificado, como uma sala. |
+| [Listar locais](../api/place-list.md) | Uma coleção do tipo de local [](place.md) solicitado derivado | Obter uma coleção do tipo especificado de objeto **de** local definido no locatário. Por exemplo, você pode obter todas as salas, todas as listas de salas ou as salas em uma lista de salas específica no locatário. |
+| [Obter local](../api/place-get.md)    | O tipo de local [](place.md) solicitado derivado            | Obter as propriedades e as relações do objeto **de local** especificado, como uma sala. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade               | Tipo                                              | Descrição |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | O endereço da sala. |
-| audioDeviceName        | String                                            | Especifica o nome do dispositivo de áudio na sala. |
-| bookingType            | [bookingType](#bookingtype-values)                | Tipo de sala. Os valores possíveis são `standard` e `reserved` . |
-| Build               | String                                            | Especifica o nome do edifício ou o número de edifício em que a sala se encontra. |
-| máxima               | String                                            | Especifica a capacidade da sala. |
-| displayName            | String                                            | O nome associado à sala. |
-| displayDeviceName      | String                                            | Especifica o nome do dispositivo de exibição na sala. |
+| audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
+| bookingType            | [bookingType](#bookingtype-values)                | Tipo de sala. Os valores possíveis `standard` são e `reserved` . |
+| building               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número do edifício em que a sala está. |
+| capacity               | Int32                                             | Especifica a capacidade da sala. |
+| displayName            | Cadeia de caracteres                                            | O nome associado à sala. |
+| displayDeviceName      | Cadeia de caracteres                                            | Especifica o nome do dispositivo de exibição na sala. |
 | emailAddress           | String                                            | Endereço de email da sala. |
-| floorLabel             | String                                            | Especifica um rótulo descritivo para o andar, por exemplo, P. |
-| floorNumber            | Int32                                             | Especifica o número do andar em que a sala está. |
-| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local da sala no latitude, longitude e, opcionalmente, as coordenadas de altitude. |
-| id                     | String                                            | Identificador exclusivo da sala. Somente leitura. |
-| isWheelchairAccessible | Booliano                                           | Especifica se a sala pode ser acessada por cadeira. |
-| rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
-| apelido               | String                                            | Especifica um apelido para a sala, por exemplo, "conf sala". |
+| floorLabel             | Cadeia de caracteres                                            | Especifica um rótulo descritivo para o piso, por exemplo, P. |
+| floorNumber            | Int32                                             | Especifica o número do piso em que a sala está. |
+| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Especifica o local da sala em coordenadas de latitude, longitude e, opcionalmente, altitude. |
+| id                     | Cadeia de caracteres                                            | Identificador exclusivo da sala. Somente leitura. |
+| isWheelChairAccessible | Booliano                                           | Especifica se a sala é acessível para acessibilidade. |
+| rótulo                  | Cadeia de caracteres                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
+| nickname               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
 | phone                  | Cadeia de caracteres                                            | O número de telefone da sala. |
-| tags                   | Coleção String                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de mobília. |
-| videoDeviceName        | String                                            | Especifica o nome do dispositivo de vídeo na sala. |
+| tags                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou o tipo de móveis. |
+| videoDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
-### <a name="bookingtype-values"></a>valores de reserva
+### <a name="bookingtype-values"></a>valores de bookingType
 
 | Valor    | Descrição                                               |
 |:---------|:----------------------------------------------------------|
-| caracteres | A sala pode ser reservada com base nas outras configurações deste cmdlet. Esse é o valor padrão. |
-| serve | A sala está disponível somente em uma primeira base de chegada. Ele não pode ser reservado.|
+| padrão | A sala pode ser reservada com base nas outras configurações deste cmdlet. Esse é o valor padrão. |
+| reservado | A sala só está disponível por vir, primeiro a ser servido. Ele não pode ser reservado.|
 
 ## <a name="relationships"></a>Relações
 
@@ -82,7 +82,7 @@ Veja a seguir uma representação JSON do recurso.
   "audioDeviceName": "String",
   "bookingType": "String",
   "building": "String",
-  "capacity": "String",
+  "capacity": 1024,
   "displayName": "String",
   "displayDeviceName": "String",
   "emailAddress": "String",
@@ -90,7 +90,7 @@ Veja a seguir uma representação JSON do recurso.
   "floorNumber": 1024,
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "id": "String (identifier)",
-  "isWheelchairAccessible": true,
+  "isWheelChairAccessible": true,
   "label": "String",
   "nickname": "String",
   "phone": "String",
