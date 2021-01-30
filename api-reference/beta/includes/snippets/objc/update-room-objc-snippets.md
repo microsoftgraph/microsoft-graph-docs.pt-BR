@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6854e8e34d86f340524bb961beaaf2cddf09858d
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: fe17b12e3121960a7731472b301f2df264044d1a
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37997035"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059700"
 ---
 ```objc
 
@@ -20,8 +20,8 @@ MSGraphPlace *place = [[MSGraphPlace alloc] init];
 [place setNickname:@"Conf Room"];
 [place setBuilding:@"1"];
 [place setLabel:@"100"];
-[place setCapacity:@"50"];
-[place setIsWheelchairAccessible: false];
+[place setCapacity: 50];
+[place setIsWheelChairAccessible: false];
 
 NSError *error;
 NSData *placeData = [place getSerializedDataWithError:&error];
