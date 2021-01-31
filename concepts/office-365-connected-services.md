@@ -4,12 +4,12 @@ description: Você pode usar os serviços conectados no Visual Studio para confi
 localization_priority: Priority
 ms.prod: reports
 author: sarahwxy
-ms.openlocfilehash: ce2d4bc8ccaa2ebae79c4d65ca243aeb9d489b54
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: ae762d605170142add3854628e8d97e82b88c932
+ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982282"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50052522"
 ---
 # <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Como chamar os serviços do Microsoft 365 no Visual Studio 2017 com a API do Microsoft Graph
 
@@ -71,7 +71,7 @@ Isso enviará um email que inclui um link para sua foto do perfil.
 
 >- Se você interromper e executar novamente a amostra do Visual Studio, talvez precise sair explicitamente para que o exemplo funcione.
 >- Se você receber uma exceção que indica que o usuário não está autenticado, talvez precise repetir a etapa [Adicionar o Serviço Conectado](#add-the-connected-service).
-    
+>- Certifique-se de entrar usando uma conta no mesmo domínio que a que você selecionou na etapa **Selecionar Domínio** do assistente.
 
 ## <a name="explore-the-code"></a>Explore o código
 
@@ -81,9 +81,9 @@ O exemplo inicial inclui os seguintes arquivos:
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) – autentica o usuário atual e inicializa o cache de token do exemplo.
 
-- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) – armazena as informações de token do usuário. Você pode substituir pelo seu próprio cache de token personalizado. Para saber mais, veja [Armazenamento de tokens de acesso em cache em um aplicativo de vários locatários](/azure/architecture/multitenant-identity/token-cache).
+- TokenStorage\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) – Armazena as informações de token do usuário. Você pode substituir isto por seu próprio cache de token personalizado. Para mais informações, veja [Armazenamento de cache dos tokens de acesso em uma aplicação com vários locatários](/azure/architecture/multitenant-identity/token-cache).
 
-- Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) – implementa a interface IAuthProvider local e obtém um token de acesso. 
+- Helpers\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) – implementa a interface IAuthProvider local e obtém um token de acesso. 
 
 - Helpers\\[SDKHelper.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SDKHelper.cs) – inicializa o **GraphServiceClient**, na [Biblioteca do Cliente .NET para Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet), que é usada para interagir com o Microsoft Graph.
 
