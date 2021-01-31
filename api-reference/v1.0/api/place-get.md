@@ -1,29 +1,29 @@
 ---
 title: Obter local
-description: Recupere as propriedades e os relacionamentos de um objeto local.
+description: Recupere as propriedades e os relacionamentos de um objeto place.
 localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe5a3a26b22d8c2497011c84d49d87e869964a0f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2579bac8f3e9b9a3cd951ea5c533541edacb1308
+ms.sourcegitcommit: 1138d6e84f64f3727e180da10f89b89021855c3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978871"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50059648"
 ---
 # <a name="get-place"></a>Obter local
 
 Namespace: microsoft.graph
 
-Obtenha as propriedades e os relacionamentos de um objeto [local](../resources/place.md) especificado por sua ID ou endereço de email.
+Obter as propriedades e os relacionamentos de um [objeto de](../resources/place.md) local especificado por sua ID ou endereço de email.
 
-O objeto **local** pode ser um dos seguintes tipos:
+O **objeto** place pode ser um dos seguintes tipos:
 
-* Uma [sala](../resources/room.md) que inclui Propriedades sofisticadas, como um endereço de email para a sala, e suporte à acessibilidade, capacidade e dispositivo.
-* Uma [lista de salas](../resources/roomlist.md) que inclui um endereço de email para a lista de salas e uma propriedade de navegação para obter a coleção de instâncias de **sala** na lista de salas.
+* Uma [sala](../resources/room.md) que inclui propriedades rica, como um endereço de email para a sala e acessibilidade, capacidade e suporte ao dispositivo.
+* Uma [lista de](../resources/roomlist.md) sala que inclui um endereço de email para a  lista de sala e uma propriedade de navegação para obter a coleção de instâncias de sala nessa lista de sala.
 
-A **sala** e a **salalist** são derivadas do objeto [local](../resources/place.md) .
+Room **e** **roomList** são derivados do [objeto place.](../resources/place.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Place.Read.All |
+| Delegada (conta corporativa ou de estudante)     | Place.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo                            | Place.Read.All |
 
@@ -44,7 +44,7 @@ GET /places/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Use `$select` para obter propriedades de **local** específico.
+Use `$select` para obter propriedades **específicas do local.**
 
 Para obter mais informações, consulte [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -60,14 +60,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [local](../resources/place.md) solicitado no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e o objeto de [local](../resources/place.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-a-room"></a>Exemplo 1: obter uma sala
+### <a name="example-1-get-a-room"></a>Exemplo 1: Obter uma sala
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir especifica a **ID** de uma **sala** para obter suas propriedades.
+O exemplo a seguir especifica a **id de** uma **sala** para obter suas propriedades.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -135,11 +135,11 @@ Content-type: application/json
     "phone": "000-000-0000",
     "nickname": "Conf Room",
     "label": "100",
-    "capacity": "50",
+    "capacity": 50,
     "building": "1",
     "floorNumber": 1,
     "isManaged": true,
-    "isWheelchairAccessible": false,
+    "isWheelChairAccessible": false,
     "bookingType": "standard",
     "tags": [
       "bean bags"
@@ -150,10 +150,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-room-list"></a>Exemplo 2: obter uma lista de salas
+### <a name="example-2-get-a-room-list"></a>Exemplo 2: Obter uma lista de sala
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir especifica o **EmailAddress** de uma **RoomList** para obter suas propriedades.
+O exemplo a seguir especifica o **emailAddress** de uma **roomList** para obter suas propriedades.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
