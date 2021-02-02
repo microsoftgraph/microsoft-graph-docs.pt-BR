@@ -3,12 +3,12 @@ title: Trabalhar com o Explorador do Graph
 description: Saiba como usar alguns dos recursos importantes no Explorador do Graph.
 localization_priority: Normal
 author: bettirosengugi
-ms.openlocfilehash: d9fe847a4e9402f1f8523afcd350c77bf3a88766
-ms.sourcegitcommit: 6ec748ef00d025ee216274a608291be3c1257777
+ms.openlocfilehash: b4c669ae6983efe2082b623c3de5b019a049311d
+ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50013692"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50072384"
 ---
 # <a name="working-with-graph-explorer"></a>Trabalhar com o Explorador do Graph
 
@@ -58,7 +58,7 @@ O Graph Explorer fornece exemplos de consultas à API REST que correspondem aos 
 
 A tabela a seguir lista as consultas de exemplo que atualmente incluem um componente do Kit de Ferramentas.
 
-| **Consulta de exemplo do Graph Explorer** | **URL do iFrame de exemplo do kit de ferramentas** |
+| **Consulta de exemplo do Graph Explorer** | **URL do iFrame de exemplo do Kit de Ferramentas** |
 | --- | --- |
 | GET meu perfil | [https://mgt.dev/iframe.html?id=components-mgt-person-card—person-card-hover](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-person-card--person-card-hover&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083362882%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=9FvGlMZNc78EE66JiY7hrusYVuGUm2NeflYlVgwTVwo%3D&amp;reserved=0) |
 | GET pessoas com quem trabalho | [https://mgt.dev/iframe.html?id=components-mgt-people—people](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-people--people&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083372878%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=yMF3X0M%2FmvWTUfhMdNYkG5I7fDMXpPHS6Fwea%2B3ycPs%3D&amp;reserved=0) |
@@ -66,7 +66,7 @@ A tabela a seguir lista as consultas de exemplo que atualmente incluem um compon
 | GET meus eventos para a próxima semana | [https://mgt.dev/iframe.html?id=components-mgt-agenda—get-events-for-next-week](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-agenda--get-events-for-next-week&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083382869%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=VVFcx3gXMmg%2B%2BdQCZXjAmkCk5zKcrntK6fI35jbdN94%3D&amp;reserved=0) |
 | GET minha foto | [https://mgt.dev/iframe.html?id=components-mgt-person—person-photo-only](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmgt.dev%2Fiframe.html%3Fid%3Dcomponents-mgt-person--person-photo-only&amp;data=04%7C01%7CElise.Yang%40microsoft.com%7Ca81f0f07873240d8571b08d7dac329d4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637218404083392872%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&amp;sdata=aI%2BUqciLPOxEqlIpbjT8wtWBgcaJWM6sqooRlLVspZ0%3D&amp;reserved=0) |
 
-![Captura de tela mostrando a guia Componentes do Kit de Ferramentas com o código para gerar o componente realçado](./images/graph-toolkit.png)
+![Captura de tela mostrando a guia Componentes do Kit de Ferramentas com o código para gerar o componente realçado](./images/get-graph-toolkit-card.png)
 
 ### <a name="adaptive-cards-integration"></a>Integração de cartões adaptáveis
 
@@ -93,13 +93,13 @@ As consultas que são executados no Explorador do Graph são salvas por 30 dias 
 
 ![Captura de tela da guia Histórico com opções realçadas](./images/storing-and-sharing-queries.png)
 
-Para compartilhar as consultas que você executar, clique no botão compartilhar consulta no painel de resposta e clique em **copiar.** Isso copia um link para compartilhar e permite que outras pessoas vejam sua consulta e os resultados.
+Para compartilhar consultas que você executar, clique no botão compartilhar consulta no painel de resposta e clique em **copiar.** Isso copia um link para compartilhar e permite que outras pessoas vejam sua consulta e os resultados.
 
 ![Captura de tela do Explorador do Graph com as opções de Compartilhamento e Cópia realçadas](./images/share-query.png)
 
 ## <a name="graph-explorer-ui-features"></a>Recursos da interface do usuário do Graph Explorer
 
-Collapse and expand the sidebar component in Graph Explorer when you want to widen the request and response area. Para collapse the sidebar component, select the hambúrguer icon on the top left of the sidebar.
+Collapse and expand the sidebar component in Graph Explorer when you want to widen the request and response area. Para fechar o componente da barra lateral, selecione o ícone de hambúrguer na parte superior esquerda da barra lateral.
 
 ![Screenshot of Graph Explorer with the expand and collapse options highlighted](./images/expand-collapse-sidebar-component.png)
 
