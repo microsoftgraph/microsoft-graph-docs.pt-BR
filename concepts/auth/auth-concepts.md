@@ -5,12 +5,12 @@ author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: a1c438008ee617797101a1caabcb0baf34f4d031
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: fa1f6d243679d4a0a2a4adeb822baa781f490ac0
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289482"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092580"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 
@@ -65,6 +65,10 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como usuários, grupos e email. Como desenvolvedor, você decide quais permissões seu aplicativo deverá solicitar para o Microsoft Graph. Quando um usuário entra no aplicativo, ele, ou, em alguns casos, um administrador, tem a opção de consentir essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs solicitados. Para aplicativos que não aceitam usuários conectados, as permissões podem ser previamente consentidas pelo administrador quando o aplicativo é instalado.
 
+### <a name="best-practices-for-requesting-permissions"></a>Práticas recomendadas para solicitar permissões
+[!INCLUDE [auth-use-least-privileged](../../includes/auth-use-least-privileged.md)]
+
+### <a name="delegated-and-application-permissions"></a>Permissões delegadas e de aplicativo
 O Microsoft Graph tem dois tipos de permissões:
 
 - As **permissões delegadas** são usadas pelos aplicativos que têm um usuário conectado atualmente. Para esses aplicativos, o usuário ou um administrador concorda com as permissões que o aplicativo solicita e o aplicativo pode agir como o usuário conectado ao fazer chamadas ao Microsoft Graph. Algumas permissões delegadas podem ser autorizadas por usuários não administradores, mas algumas permissões com maiores privilégios exigem o [consentimento do administrador](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).  

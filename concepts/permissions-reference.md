@@ -4,16 +4,18 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 5b469fc5d56ef5500e079caafb88a2b69da1f0dc
-ms.sourcegitcommit: 744c2d8be5a1ce158068bcfeaad1aabf8166c556
+ms.openlocfilehash: bd8df895ea23ac2e34efbd4a62ffb47d9d0f05f8
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49934902"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092663"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
 Para que o aplicativo acesse os dados no Microsoft Graph, o usuário ou administrador deve conceder a ele as permissões corretas por meio de um processo de consentimento. Este tópico lista as permissões associadas a cada grande conjunto de APIs do Microsoft Graph. Ele também fornece orientações sobre como usar as permissões.
+
+[!INCLUDE [auth-use-least-privileged](../includes/auth-use-least-privileged.md)]
 
 Para saber mais sobre como funcionam as permissões, [Confira noções básicas de autenticação e autorização](auth/auth-concepts.md#microsoft-graph-permissions) e assista ao vídeo a seguir.
 
@@ -179,7 +181,7 @@ Nenhuma.
 
 #### <a name="delegated"></a>Delegado
 
-* _Analytics.Read_: [Listar as configurações relacionadas para um usuário](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings`)
+* _Analytics.Read_: [Listar as configurações relacionadas para um usuário](/graph/api/useranalytics-get-settings?view=graph-rest-beta&preserve-view=true) (`GET /beta/me/analytics/settings`)
 
 #### <a name="application"></a>Application
 
@@ -208,10 +210,10 @@ No momento o único catálogo é a lista de aplicativos no [Microsoft Teams](tea
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegated
-* _AppCatalog.ReadWrite.All_: [Lista todos os aplicativos no catálogo](/graph/api/teamsapp-list?view=graph-rest-beta) (`GET /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_: [Publicar um aplicativo](/graph/api/teamsapp-publish?view=graph-rest-beta) (`POST /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_: [Atualizar um aplicativo publicado](/graph/api/teamsapp-update?view=graph-rest-beta) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
-* _AppCatalog.ReadWrite.All_: [Remover um aplicativo publicado](/graph/api/teamsapp-delete?view=graph-rest-beta) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_: [Lista todos os aplicativos no catálogo](/graph/api/teamsapp-list?view=graph-rest-beta&preserve-view=true) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Publicar um aplicativo](/graph/api/teamsapp-publish?view=graph-rest-beta&preserve-view=true) (`POST /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Atualizar um aplicativo publicado](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_: [Remover um aplicativo publicado](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
 #### <a name="application"></a>Aplicativo
 
@@ -240,7 +242,7 @@ Nenhum.
 
 ### <a name="remarks"></a>Comentários
 
-A permissão _Application.ReadWrite.OwnedBy_ admite as mesmas operações que _Application.ReadWrite.All_, exceto que a anterior só permite essas operações em aplicativos e entidades de serviço que pertencem ao aplicativo de chamada. O proprietário é indicado pela propriedade de navegação `owners` no recurso do [aplicativo](/graph/api/application-list-owners?view=graph-rest-beta) ou da [entidade de serviço](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta) de destino.
+A permissão _Application.ReadWrite.OwnedBy_ admite as mesmas operações que _Application.ReadWrite.All_, exceto que a anterior só permite essas operações em aplicativos e entidades de serviço que pertencem ao aplicativo de chamada. O proprietário é indicado pela propriedade de navegação `owners` no recurso do [aplicativo](/graph/api/application-list-owners?view=graph-rest-beta&preserve-view=true) ou da [entidade de serviço](/graph/api/serviceprincipal-list-owners?view=graph-rest-beta&preserve-view=true) de destino.
 > OBSERVAÇÃO: o uso da permissão _Application.ReadWrite.OwnedBy_ para chamar `GET /applications` para listar aplicativos falhará com um erro 403.  Use `GET servicePrincipals/{id}/ownedObjects` para listar os aplicativos que pertencem ao aplicativo da chamada.
 
 ### <a name="example-usage"></a>Exemplo de uso
@@ -398,7 +400,7 @@ Nenhum.
 * _Calls.JoinGroupCallasGuest.All_: Ingresse em uma chamada de grupo ou em uma reunião online do aplicativo, mas o aplicativo só tem privilégios de convidado na reunião (`POST /beta/communications/calls`).
 * _Calls.AccessMedia.All_: criar ou ingressar em uma chamada e o aplicativo é o acesso direto aos fluxos de participantes de mídia na chamada (`POST /beta/communications/calls`).
 
-> **Observação:** para obter exemplos solicitação, confira [Criar chamada](/graph/api/application-post-calls?view=graph-rest-beta).
+> **Observação:** para obter exemplos solicitação, confira [Criar chamada](/graph/api/application-post-calls?view=graph-rest-beta&preserve-view=true).
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -649,9 +651,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ### <a name="remarks"></a>Comentários
 
-As permissões de diretório fornecem o nível mais alto de privilégio para acessar recursos de diretório, como [Usuário](/graph/api/resources/user?view=graph-rest-1.0), [Grupo](/graph/api/resources/group?view=graph-rest-1.0) e [Dispositivo](/graph/api/resources/device?view=graph-rest-1.0) em uma organização.
+As permissões de diretório fornecem o nível mais alto de privilégio para acessar recursos de diretório, como [usuário](/graph/api/resources/user), [grupo](/graph/api/resources/group) e [dispositivo](/graph/api/resources/device) em uma organização.
 
-Elas também controlam exclusivamente o acesso a outros recursos de diretório como: [contatos organizacionais](/graph/api/resources/orgcontact?view=graph-rest-beta), [APIs de extensão de esquema](/graph/api/resources/schemaextension?view=graph-rest-beta), [APIs de PIM (Privileged Identity Management)](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) e muitos dos recursos e APIs listados no nó **Azure Active Directory** na documentação de referência da API beta e v1.0. Isso inclui unidades administrativas, funções de diretório, configurações de diretório, política e muito mais.
+Elas também controlam exclusivamente o acesso a outros recursos de diretório como: [contatos organizacionais](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true), [APIs de extensão de esquema](/graph/api/resources/schemaextension?view=graph-rest-beta&preserve-view=true), [APIs de PIM (Privileged Identity Management)](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) e muitos dos recursos e APIs listados no nó **Azure Active Directory** na documentação de referência da API beta e v1.0. Isso inclui unidades administrativas, funções de diretório, configurações de diretório, política e muito mais.
 
 > [!NOTE]
 > No momento, quando a permissão de aplicativo *Directory.Read.All* é concedida, a função de diretório [Leitores de Diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-readers-permissions) será concedida à entidade de serviço do aplicativo. Quando *Directory.ReadWrite.All* é concedida, a função de diretório [Gravadores de Diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#directory-writers-permissions) também é concedida. Essas funções de diretório não são removidas automaticamente quando as permissões de aplicativo associadas são revogadas. Para remover o acesso de um aplicativo para ler ou gravar no diretório, os clientes também deve remover as funções de diretório que foram concedidas ao aplicativo.
@@ -778,7 +780,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 As permissões delegadas Files.Read.Selected e Files.ReadWrite.Selected são válidas apenas em contas corporativas ou de estudante e são expostas apenas para trabalhar com [manipuladores (v1.0) de arquivos do Office 365](/previous-versions/office/office-365-api/). Elas não devem ser usadas para chamar diretamente as APIs do Microsoft Graph.
 
-A permissão delegada Files.ReadWrite.AppFolder só é válida para contas pessoais e é usada para acessar a [pasta especial da Raiz de Aplicativo](https://dev.onedrive.com/misc/appfolder.htm) com a API do Microsoft Graph [Obter pasta especial](/graph/api/drive-get-specialfolder?view=graph-rest-1.0) do OneDrive.
+A permissão delegada Files.ReadWrite.AppFolder só é válida para contas pessoais e é usada para acessar a [pasta especial da Raiz de Aplicativo](https://dev.onedrive.com/misc/appfolder.htm) com a API do Microsoft Graph [Obter pasta especial](/graph/api/drive-get-specialfolder) do OneDrive.
 
 
 ### <a name="example-usage"></a>Exemplo de uso
@@ -831,7 +833,7 @@ Para grupos do Microsoft 365, as permissões de grupo concedem ao aplicativo ace
 
 No caso de Permissões de aplicativo, há algumas limitações para APIs com suporte. Confira mais informações em [problemas conhecidos](known-issues.md).
 
-Em alguns casos, um aplicativo pode precisar de [Permissões de diretório](#directory-permissions) para ler algumas propriedades do grupo como `member` e `memberOf`. Por exemplo, se um grupo tiver um ou mais [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) como membros, o aplicativo precisará de permissões eficazes para ler as entidades de serviço através do recebimento de uma das _Permissões de diretório\*_, caso contrário, o Microsoft Graph retornará um erro. No caso de Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para ler as entidades de serviço. A mesma orientação se aplica à propriedade `memberOf` que pode retornar [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+Em alguns casos, um aplicativo pode precisar de [Permissões de diretório](#directory-permissions) para ler algumas propriedades do grupo como `member` e `memberOf`. Por exemplo, se um grupo tiver um ou mais [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) como membros, o aplicativo precisará de permissões eficazes para ler as entidades de serviço através do recebimento de uma das _Permissões de diretório\*_, caso contrário, o Microsoft Graph retornará um erro. No caso de Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para ler as entidades de serviço. A mesma orientação se aplica à propriedade `memberOf` que pode retornar [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true).
 
 Para definir o atributo **preferredDataLocation** de um grupo do Microsoft 365, um aplicativo precisa da permissão Directory.ReadWrite.All. Quando os usuários em um ambiente multigeográfico criam um grupo do Microsoft 365, o valor **preferredDataLocation** para o grupo é definido automaticamente como sendo igual ao do usuário. Para saber mais sobre o local de dados preferencial dos grupos, confira [Criar um grupo do Microsoft 365 com uma PDL específica](/office365/enterprise/multi-geo-add-group-with-pdl).
 
@@ -1269,20 +1271,20 @@ Publique uma notificação centrada no usuário, que pode ser entregue aos vári
 
 #### <a name="delegated"></a>Delegado
 
-* _OnlineMeetings.Read_: recuperar as propriedades e as relações de uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/{default id}`).
-* _OnlineMeetings.ReadWrite_: criar um [reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/communications/onlinemeetings`).
+* _OnlineMeetings.Read_: recuperar as propriedades e as relações de uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) (`GET /beta/communications/onlinemeetings/{default id}`).
+* _OnlineMeetings.ReadWrite_: criar um [reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true) (`POST /beta/communications/onlinemeetings`).
 
 #### <a name="application"></a>Aplicativo
 
 * _OnlineMeetings.Read.All_
-  * Recuperar as propriedades e os relacionamentos de uma[reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
-  * Recuperar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário(`GET /beta/users/{userId}/onlineMeetings/{id})
+  * Recuperar as propriedades e os relacionamentos de uma[reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
+  * Recuperar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) em nome de um usuário(`GET /beta/users/{userId}/onlineMeetings/{id})
 * _OnlineMeetings.ReadWrite.All_
-  * Criar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário (`POST /beta/users/{userId}/onlineMeetings/)
-  * Atualizar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário(`PATCH /beta/users/{userId}/onlineMeetings/{id})
-  * Excluir uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta) em nome de um usuário (`DELETE /beta/users/{userId}/onlineMeetings/{id})
+  * Criar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) em nome de um usuário (`POST /beta/users/{userId}/onlineMeetings/)
+  * Atualizar uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) em nome de um usuário(`PATCH /beta/users/{userId}/onlineMeetings/{id})
+  * Excluir uma [reunião online](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) em nome de um usuário (`DELETE /beta/users/{userId}/onlineMeetings/{id})
   
-> **Observação**: criar uma [reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) cria uma reunião em nome de um usuário, mas não a mostra no Calendário do usuário.
+> **Observação**: criar uma [reunião online](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true) cria uma reunião em nome de um usuário, mas não a mostra no Calendário do usuário.
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -1578,7 +1580,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta), em nome do usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim | Não |
+| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), em nome do usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim | Não |
 | _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
 | _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) da sua empresa, em nome do usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim | Não |
 
@@ -1586,7 +1588,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta), sem um usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim |
+| _RoleManagement.Read.All_ | Ler os dados da função de gerenciamento para todos os provedores RBAC | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) de todos os [provedores RBAC](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), sem um usuário conectado. Isso inclui as definições de leitura e as atribuições de função. | Sim |
 | _RoleManagement.Read.Directory_ | Ler os dados da função de gerenciamento para Azure Active Directory | Permite que o aplicativo leia as configurações de controle de acesso baseado na função (RBAC) do diretório da empresa, sem um usuário conectado.  Isso inclui a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
 | _RoleManagement.ReadWrite.Directory_ | Ler e gravar dados de gerenciamento de função no Azure AD | Permite que o aplicativo leia e gerencie as configurações de controle de acesso baseado na função (RBAC) para o diretório da empresa, sem um usuário conectado. Isso inclui a instanciação de funções de diretório e o gerenciamento de associação de função de diretório e a leitura de modelos de função de diretório, funções de diretório e associações. | Sim |
 
@@ -1732,6 +1734,7 @@ As permissões de segurança só são válidas para contas corporativas ou de es
 | _Sites.ReadWrite.All_   | Ler e gravar itens em todos os conjuntos de sites | Permite ao aplicativo criar, ler, atualizar e excluir documentos e listar itens em todos os conjuntos de sites sem um usuário conectado. | Sim |
 | _Sites.Manage.All_      | Criar, editar e excluir itens e listas em todos os conjuntos de sites | Permite ao aplicativo gerenciar e criar listas, documentos e listar itens em todos os conjuntos de sites sem um usuário conectado.  | Sim  |
 | _Sites.FullControl.All_ | Ter controle total de todos os conjuntos de sites | Permite ao aplicativo ter controle total nos sites do SharePoint em todos os conjuntos de sites sem um usuário conectado.  | Sim  |
+| _Sites.Selecionados_ | Acessar conjuntos de sites selecionados (visualização) | _Essa permissão se trata de um recurso futuro que ainda não foi lançado. Não use._ | Sim  |
 
 
 ### <a name="remarks"></a>Comentários
@@ -2141,9 +2144,9 @@ Essas permissões só são válidas para contas corporativas ou de estudante.
 
 ### <a name="remarks"></a>Comentários
 
-Com a permissão _User.Read_, um aplicativo também pode ler as informações básicas da empresa do usuário conectado de uma conta corporativa ou de estudante através do recurso [Organização](/graph/api/resources/organization?view=graph-rest-1.0). As propriedades a seguir estão disponíveis: id, displayName e verifiedDomains.
+Com a permissão _User.Read_, um aplicativo também pode ler as informações básicas da empresa do usuário conectado de uma conta corporativa ou de estudante através do recurso [Organização](/graph/api/resources/organization). As propriedades a seguir estão disponíveis: id, displayName e verifiedDomains.
 
-Para contas corporativas ou de estudante, o perfil completo inclui todas as propriedades declaradas do recurso [Usuário](/graph/api/resources/user?view=graph-rest-1.0). No caso das leituras, somente um número limitado de propriedades é retornado por padrão. Para ler propriedades que não estão no conjunto padrão, use `$select`. As propriedades padrão são:
+Para contas corporativas ou de estudante, o perfil completo inclui todas as propriedades declaradas do recurso [Usuário](/graph/api/resources/user). No caso das leituras, somente um número limitado de propriedades é retornado por padrão. Para ler propriedades que não estão no conjunto padrão, use `$select`. As propriedades padrão são:
 
 - displayName
 - givenName
@@ -2185,7 +2188,7 @@ A permissão _User.ReadBasic.All_ restringe o acesso do aplicativo a um conjunto
 - surname
 - userPrincipalName
 
-Para ler as associações de grupos de um usuário (`memberOf`), o aplicativo deve ter o [_Group.Read.All_](#group-permissions) ou o [_Group.ReadWrite.All_](#group-permissions). No entanto, se o usuário também tiver uma associação a um [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) ou [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta), o aplicativo também precisará de permissões efetivas para ler esses recursos ou o Microsoft Graph retornará um erro. Isso significa que o aplicativo deve ter também [Permissões do diretório](#directory-permissions); para as Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para acessar unidades administrativas e funções de diretório.
+Para ler as associações de grupos de um usuário (`memberOf`), o aplicativo deve ter o [_Group.Read.All_](#group-permissions) ou o [_Group.ReadWrite.All_](#group-permissions). No entanto, se o usuário também tiver uma associação a um [directoryRole](/graph/api/resources/directoryrole) ou [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true), o aplicativo também precisará de permissões efetivas para ler esses recursos ou o Microsoft Graph retornará um erro. Isso significa que o aplicativo deve ter também [Permissões do diretório](#directory-permissions); para as Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para acessar unidades administrativas e funções de diretório.
 
 Com o _User.ManageIdentities.All_ delegado ou as permissões de aplicativo, é possível atualizar as identidades (`identities`) de um usuário. Isso inclui as identidades federadas (ou identidades sociais) ou as identidades locais com nomes de entrada com base em nome ou email.
 
@@ -2281,7 +2284,7 @@ As permissões de política de métodos de autenticação são usadas para geren
 
 ## <a name="permission-scenarios"></a>Cenários de permissão
 
-Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário](/graph/api/resources/user?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0) em uma organização. As tabelas mostram as permissões que um aplicativo precisa para conseguir executar operações específicas necessárias para o cenário. Observe que, em alguns casos, a capacidade do aplicativo de executar operações específicas dependerá se uma permissão é uma Permissão de aplicativo ou Permissão Delegada. No caso de Permissões Delegadas, as Permissões Efetivas do aplicativo também dependerão dos privilégios do usuário conectado na organização. Para obter mais informações, confira [Permissões delegadas, Permissões de aplicativo e permissões efetivas](auth/auth-concepts.md#microsoft-graph-permissions).
+Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário](/graph/api/resources/user) e [grupo](/graph/api/resources/group) em uma organização. As tabelas mostram as permissões que um aplicativo precisa para conseguir executar operações específicas necessárias para o cenário. Observe que, em alguns casos, a capacidade do aplicativo de executar operações específicas dependerá se uma permissão é uma Permissão de aplicativo ou Permissão Delegada. No caso de Permissões Delegadas, as Permissões Efetivas do aplicativo também dependerão dos privilégios do usuário conectado na organização. Para obter mais informações, confira [Permissões delegadas, Permissões de aplicativo e permissões efetivas](auth/auth-concepts.md#microsoft-graph-permissions).
 
 ### <a name="access-scenarios-on-the-user-resource"></a>Cenários de acesso do recurso Usuário
 
