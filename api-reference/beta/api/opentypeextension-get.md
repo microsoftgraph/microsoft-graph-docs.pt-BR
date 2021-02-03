@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: b001ef5e353163f5658783a7850524d25ac4bc38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2071e8e6520cfc1145b0e88faabf3a0969f9ac96
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975662"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092705"
 ---
 # <a name="get-open-extension"></a>Obter extensão aberta
 
@@ -20,17 +20,19 @@ Namespace: microsoft.graph
 
 Obtenha uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) identificada por nome ou nome totalmente qualificado.
 
+A tabela na seção [Permissões lista os](#permissions) recursos que suportam extensões abertas.
+
 A tabela a seguir lista os três cenários em que é possível obter uma extensão aberta de uma instância de recursos com suporte.
 
 |**Cenário GET**|**Recursos com suporte**|**Corpo da resposta**|
 |:-----|:-----|:-----|
-|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [dispositivo](../resources/device.md), [evento](../resources/event.md), [grupo](../resources/group.md), [evento de grupo](../resources/event.md), [postagem de grupo](../resources/post.md), [mensagem](../resources/message.md), [organização](../resources/organization.md), [contato pessoal](../resources/contact.md), [usuário](../resources/user.md), [tarefa](../resources/todotask.md), [TaskList](../resources/todotasklist.md)  | Somente extensão aberta.|
+|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [dispositivo](../resources/device.md), [evento](../resources/event.md), [grupo](../resources/group.md) [,](../resources/event.md)evento de grupo , [postagem](../resources/post.md)de [grupo](../resources/message.md) [,](../resources/organization.md)mensagem , organização , [contato](../resources/contact.md)pessoal , [usuário](../resources/user.md), [tarefa](../resources/todotask.md), lista [de tarefas](../resources/todotasklist.md)  | Somente extensão aberta.|
 |Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Unidade administrativa, dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, tarefa, lista de tarefas. |Uma instância de recurso expandida com a extensão aberta.|
 |Encontre e expanda instâncias de recursos com uma extensão específica. | Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas |Instâncias de recursos expandidas com a extensão aberta.|
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso que contém a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso que contém a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -43,7 +45,7 @@ Dependendo do recurso que contém a extensão e o tipo de permissão (delegado o
 | [organização](../resources/organization.md) | User.Read | Incompatível | Organization.Read.All |
 | [contato pessoal](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [usuário](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [tarefa](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -72,7 +74,7 @@ GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extens
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Obtenha uma instância de recurso conhecida, expandida com uma extensão correspondente. 
 
-Para os tipos de recurso de evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas, você pode usar a mesma solicitação REST para obter a instância de recurso, procure uma extensão que corresponda a um filtro em sua propriedade **id** e expanda a instância com a extensão. A resposta inclui a maioria das propriedades do recurso.
+Para o evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, tipos de recurso de lista de tarefas, você pode usar a mesma solicitação REST como obter a instância do recurso, procurar uma extensão que corresponde a um filtro em sua propriedade **de ID** e expandir a instância com a extensão. A resposta inclui a maioria das propriedades do recurso.
 
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 855c0463c75bd57e49b2de990a8de69965c34b48
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 30bbf91e1e9b1af1d99fee1de638ab6618ac4479
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034261"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092691"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -20,11 +20,13 @@ Namespace: microsoft.graph
 
 Renove uma assinatura ampliando seu tempo de validade.
 
+A tabela na seção [Permissões lista os](#permissions) recursos que suportam a assinatura para alterar notificações.
+
 As assinaturas expiram após um período que varia de acordo com o tipo de recurso. Para evitar notificações de alteração ausentes, um aplicativo deve renovar suas assinaturas bem antes de sua data de vencimento. Consulte [a assinatura](../resources/subscription.md) para a duração máxima de uma assinatura para cada tipo de recurso.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
@@ -50,7 +52,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
@@ -70,7 +72,7 @@ As limitações adicionais se aplicam aos itens do Outlook. As limitações se a
 
 ### <a name="presence"></a>presença
 
-**assinaturas** de presença exigem [criptografia.](/graph/webhooks-with-resource-data) A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
+**assinaturas** de presença [exigem criptografia.](/graph/webhooks-with-resource-data) A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) não for especificado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

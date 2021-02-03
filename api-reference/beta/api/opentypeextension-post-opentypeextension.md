@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: d47ddcbe8f21244a88ddc3771e84a2e341fcaf5e
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: ad00fc4b9b2dc8bdd557495709f6f680fc6a4141
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796980"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092677"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -18,13 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) e adicione Propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.
+Crie uma extensão aberta[(objeto openTypeExtension)](../resources/opentypeextension.md) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.
+
+A tabela na seção [Permissões lista os](#permissions) recursos que suportam extensões abertas.
 
 > **Observação:** Se você estiver criando extensões abertas em recursos do Outlook, confira **considerações específicas do Outlook** no [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso para o qual você está criando a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso para o qual você está criando a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -37,8 +39,8 @@ Dependendo do recurso para o qual você está criando a extensão e o tipo de pe
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. All |
-| [TaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -63,7 +65,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propried
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>Crie uma extensão em uma instância de recurso existente
 
-Identifique a instância do recurso na solicitação e faça um `POST` para a propriedade de navegação **extensions** .
+Identifique a instância do recurso na solicitação e faça um `POST` para a propriedade de navegação **extensions**.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -100,14 +102,14 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extens�
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um corpo JSON de um [openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome-valor obrigatórios e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
+Forneça um corpo JSON de [uma openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome-valor obrigatórios e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
 
 | Nome       | Valor |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
-Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension** , fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.
+Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension**, fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.
 
 ## <a name="response"></a>Resposta
 
@@ -124,7 +126,7 @@ Consulte os tópicos correspondentes para criar a instância conforme listado [c
 |:---------------|:----------|:--------------|
 | Criar uma extensão ao criar explicitamente uma _nova_ instância de recurso | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Inclui a nova instância expandida com o objeto [openTypeExtension](../resources/opentypeextension.md). |
 | Criando uma extensão ao criar implicitamente uma instância de recursos | [postagem](../resources/post.md) | A resposta inclui somente um código de resposta, mas não um corpo de resposta. |
-| Criar uma extensão em uma instância de recurso _existente_ | Todos os recursos com suporte | Inclui o objeto **openTypeExtension** . |
+| Criar uma extensão em uma instância de recurso _existente_ | Todos os recursos com suporte | Inclui o objeto **openTypeExtension**. |
 
 ## <a name="example"></a>Exemplo
 
@@ -132,7 +134,7 @@ Consulte os tópicos correspondentes para criar a instância conforme listado [c
 
 O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo da solicitação inclui o seguinte:
 
-- As propriedades **subject** , **body** e **toRecipients** típicas de uma nova mensagem.
+- As propriedades **subject**, **body** e **toRecipients** típicas de uma nova mensagem.
 - E para a extensão:
 
   - O tipo `microsoft.graph.openTypeExtension`.
@@ -315,7 +317,7 @@ Content-Type: application/json
 
 Veja a seguir a resposta para o segundo exemplo. O corpo da solicitação inclui o seguinte para a nova extensão:
 
-- A propriedade padrão **extensionName** .
+- A propriedade padrão **extensionName**.
 - A propriedade **id** com o nome totalmente qualificado de `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
 - Os dados personalizados a serem armazenados.
 
@@ -483,7 +485,7 @@ Content-Length: 0
 
 ### <a name="request-5"></a>Solicitação 5
 
-O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma operação POST para criar uma conversa. A operação POST cria uma nova conversa, thread ou postagem e uma nova extensão inserida na postagem. O corpo da solicitação inclui as propriedades **Topic** e **Threads** e o objeto filho **post** para a nova conversa. O objeto **post** , por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a extensão:
+O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma operação POST para criar uma conversa. A operação POST cria uma nova conversa, thread ou postagem e uma nova extensão inserida na postagem. O corpo da solicitação inclui as propriedades **Topic** e **Threads** e o objeto filho **post** para a nova conversa. O objeto **post**, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a extensão:
 
 - O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.HR".

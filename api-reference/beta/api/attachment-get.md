@@ -1,16 +1,16 @@
 ---
 title: Obter anexo
-description: Leia as propriedades e as relações de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.
+description: Leia as propriedades e os relacionamentos de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.
 localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 03fbf8152d12cc451d1dcc0592909a6e594ce1b9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5676615011806a5dbe07297080c06b976d945f11
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961660"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092404"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Leia as propriedades, relações ou conteúdo bruto de um anexo, anexados a um [evento](../resources/event.md)de usuário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).
+Leia as propriedades, relações ou conteúdo bruto de um anexo anexado a um evento de usuário [,](../resources/event.md)mensagem [,](../resources/message.md)tarefa do [Outlook](../resources/outlooktask.md)ou postagem de [grupo.](../resources/post.md) 
 
 Um anexo pode ser de um dos seguintes tipos:
 
-* Um arquivo (recurso [fileAttachment](../resources/fileattachment.md)).
-* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)). Você pode usar `$expand` para obter mais propriedades desse item. Veja um [exemplo](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).
-* Um link para um arquivo (recurso [referenceAttachment](../resources/referenceattachment.md)).
+* Um arquivo. Programaticamente, esse é um [recurso fileAttachment.](../resources/fileattachment.md)
+* Um item do Outlook (contato, evento ou mensagem). Programaticamente, um anexo de item é um [recurso itemAttachment.](../resources/itemattachment.md) Você pode usar `$expand` para obter mais propriedades desse item. Veja um [exemplo](#request-2) abaixo.
+* Um link para um arquivo armazenado na nuvem. Programaticamente, este é um [recurso referenceAttachment.](../resources/referenceattachment.md)
 
-Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md).
+Todos esses tipos de anexos são derivados do recurso [de](../resources/attachment.md) anexo. 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Obter o conteúdo bruto de um arquivo ou anexo de item
 Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item. 
@@ -47,12 +47,15 @@ A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
 
-* Se estiver acessando anexos em mensagens: mail. Read
-* Se estiver acessando anexos em eventos: Calendars. Read
-* Se estiver acessando anexos em tarefas do Outlook: tarefas. leitura
-* Se estiver acessando anexos em Postagens de Grupo: Group. Read. All
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----|:-----|:-----|:-----|
+| [evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [outlookTask](../resources/outlooktask.md) |  Tasks.Read | Tasks.Read | Sem suporte |
+| [postagem](../resources/post.md) | Group.Read.All | Sem suporte | Sem suporte |
+
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
@@ -60,12 +63,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Esta seção mostra a sintaxe de solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)e [postagem](../resources/post.md)) que dão suporte a anexos:
+Esta seção mostra a sintaxe de solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md) [,](../resources/message.md)mensagem , tarefa do [Outlook](../resources/outlooktask.md)e [postagem](../resources/post.md)) que suportam anexos:
 
-- Para obter as propriedades e as relações de um anexo, especifique a ID do anexo a ser indexada na coleção **Attachments** , anexada ao [evento](../resources/event.md)especificado, à [mensagem](../resources/message.md), à [tarefa do Outlook](../resources/outlooktask.md)ou à instância de [post](../resources/post.md) .
+- Para obter as propriedades e os relacionamentos de um anexo, especifique a ID do anexo a ser indexada na coleção **attachments,** anexada ao evento especificado [,](../resources/event.md)mensagem [,](../resources/message.md)tarefa do [Outlook](../resources/outlooktask.md)ou instância [de postagem.](../resources/post.md)
 - Se o anexo for um arquivo ou item do Outlook (contato, evento ou mensagem), você poderá obter ainda mais o conteúdo bruto do anexo anexando o segmento de caminho `/$value` à URL da solicitação.
 
-Um anexo de um [evento](../resources/event.md):
+Um anexo de um [evento:](../resources/event.md)
 
 <!-- { "blockType": "ignored" } -->
 
@@ -80,7 +83,7 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-Um anexo de uma [mensagem](../resources/message.md) na caixa de correio de um usuário:
+Um anexo de uma [mensagem na](../resources/message.md) caixa de correio de um usuário:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -90,7 +93,7 @@ GET /me/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-Um anexo de uma [mensagem](../resources/message.md) contida em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário:
+Um anexo de uma [mensagem contida](../resources/message.md) em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -100,7 +103,7 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-Um anexo de uma [mensagem](../resources/message.md) contida em uma pasta filho de um [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário:
+Um anexo de uma [mensagem contida](../resources/message.md) em uma pasta filha de [uma mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -110,9 +113,9 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$v
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-O exemplo anterior mostra um nível de aninhamento, mas uma mensagem pode ser localizada em um filho de um filho e assim por diante.
+O exemplo anterior mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho e assim por diante.
 
-Um anexo de uma [tarefa do Outlook](../resources/outlooktask.md):
+Um anexo de uma [tarefa do Outlook:](../resources/outlooktask.md)
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -122,7 +125,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-Um anexo de uma [postagem](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversa](../resources/conversation.md) de um grupo:
+Um anexo de [uma postagem](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a [uma conversa](../resources/conversation.md) de um grupo:
 <!-- { "blockType": "ignored" } -->
 
 ```http

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 68e748a054812350c7aad029d604e87aa77b7345
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 191036a8df1ab58362bf26138722d7212aa2ee69
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034272"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092740"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -20,11 +20,13 @@ Namespace: microsoft.graph
 
 Inscreve um aplicativo de ouvinte para receber notificações de alterações quando o tipo de alteração solicitado ocorrer no recurso especificado no Microsoft Graph.
 
+Consulte a tabela na [seção Permissões para](#permissions) ver a lista de recursos que suportam a assinatura para alterar notificações.
+
 ## <a name="permissions"></a>Permissões
 
 Criar uma assinatura requer permissão de leitura para o recurso. Por exemplo, para receber notificações de alteração em mensagens, seu aplicativo precisa da permissão Mail.Read. 
 
- Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -50,7 +52,7 @@ Criar uma assinatura requer permissão de leitura para o recurso. Por exemplo, p
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
@@ -88,7 +90,7 @@ POST /subscriptions
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um `201 Created` [objeto subscription](../resources/subscription.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
 
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 
