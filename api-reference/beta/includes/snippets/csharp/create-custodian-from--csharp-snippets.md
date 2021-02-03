@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9a8fb014eb22a5ccf4927cc9e17772147a2e6326
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 5e1d5090eb0c15c455a8f48ea9eed2d9a103847f
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659504"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50093556"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var custodian = new Custodian
+var custodian = new Microsoft.Graph.Ediscovery.Custodian
 {
     Email = "AdeleV@contoso.com",
     ApplyHoldToSources = true
