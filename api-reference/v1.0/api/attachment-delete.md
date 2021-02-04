@@ -5,24 +5,28 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9ab10522c4f0f2a73c78ac12ddf2995aae89ae3a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2eb67fbf29495f516faf1612a2f26fa286735897
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046024"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092719"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
 Namespace: microsoft.graph
 
-Excluir um anexo de um evento de calendário de usuário, mensagem de email ou postagem de grupo.
+Exclua um anexo de um evento de calendário de usuário, mensagem de email ou postagem de grupo.
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Se estiver acessando anexos em mensagens: mail. ReadWrite.
-* Se estiver acessando anexos em eventos: Calendars. ReadWrite.
-* Se estiver acessando anexos em Postagens de Grupo: Group. ReadWrite. All.
+Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
+
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----|:-----|:-----|:-----|
+| [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [postagem](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
+
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
@@ -39,7 +43,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-Anexos de um [evento](../resources/event.md) no [calendário](../resources/calendar.md) especificado pertencente ao usuário.
+Anexos de [um evento](../resources/event.md) no calendário [especificado](../resources/calendar.md) que pertence ao usuário.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}

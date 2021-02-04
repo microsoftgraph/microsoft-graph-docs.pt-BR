@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c2f5e7aa89b68c911e79b5d2a9909d398d3f58b6
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: 22855084a97d4c45199766b1928be04e2318148e
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034169"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092418"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -18,11 +18,13 @@ Namespace: microsoft.graph
 
 Renove uma assinatura ampliando seu tempo de validade.
 
-As assinaturas expiram após um período que varia de acordo com o tipo de recurso. Para evitar notificações de alteração ausentes, um aplicativo deve renovar suas assinaturas bem antes de sua data de vencimento. Consulte [a assinatura](../resources/subscription.md) para a duração máxima de uma assinatura para cada tipo de recurso.
+A tabela na seção [Permissões lista os](#permissions) recursos que suportam a assinatura para alterar notificações.
+
+As assinaturas expiram após um período que varia de acordo com o tipo de recurso. Para evitar notificações de alteração ausentes, um aplicativo deve renovar suas assinaturas bem antes da data de vencimento. Consulte [a assinatura](../resources/subscription.md) para a duração máxima de uma assinatura para cada tipo de recurso.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, procure as seguintes permissões em [Permissões.](/graph/permissions-reference)
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
@@ -44,7 +46,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
