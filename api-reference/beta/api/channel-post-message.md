@@ -1,45 +1,45 @@
 ---
 title: Criar chatMessage em um canal
-description: Criar novo chat no canal especificado.
+description: Crie um novo chatMessage no canal especificado.
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f7bdb9322b59e78b5b5fe363cccd0713314f3a70
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 791bf418a525d09c0386b29d2914319f03c7e90b
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959147"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101906"
 ---
-# <a name="create-chatmessage-in-channel"></a><span data-ttu-id="9beb4-103">Criar chat no canal</span><span class="sxs-lookup"><span data-stu-id="9beb4-103">Create chatMessage in channel</span></span>
+# <a name="create-chatmessage-in-channel"></a><span data-ttu-id="88df4-103">Criar chatMessage no canal</span><span class="sxs-lookup"><span data-stu-id="88df4-103">Create chatMessage in channel</span></span>
 
-<span data-ttu-id="9beb4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9beb4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="88df4-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88df4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9beb4-105">Criar um novo [chat](../resources/chatmessage.md) no [canal](../resources/channel.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="9beb4-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="88df4-105">Crie um novo [chatMessage](../resources/chatmessage.md) no canal [especificado.](../resources/channel.md)</span><span class="sxs-lookup"><span data-stu-id="88df4-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).</span></span>
 
-> <span data-ttu-id="9beb4-106">**Observação** : não é recomendável usar essa API para a migração de dados.</span><span class="sxs-lookup"><span data-stu-id="9beb4-106">**Note** : We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="9beb4-107">Ele não tem a taxa de transferência necessária para uma migração típica.</span><span class="sxs-lookup"><span data-stu-id="9beb4-107">It does not have the throughput necessary for a typical migration.</span></span>
+> <span data-ttu-id="88df4-106">**Observação:** é uma violação dos termos [de uso usar](/legal/microsoft-apis/terms-of-use) o Microsoft Teams como um arquivo de log.</span><span class="sxs-lookup"><span data-stu-id="88df4-106">**Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="88df4-107">Enviar apenas mensagens que as pessoas lerão.</span><span class="sxs-lookup"><span data-stu-id="88df4-107">Only send messages that people will read.</span></span>
 
-> <span data-ttu-id="9beb4-108">**Observação** : trata-se de uma violação dos [termos de uso](/legal/microsoft-apis/terms-of-use) para usar o Microsoft Teams como um arquivo de log.</span><span class="sxs-lookup"><span data-stu-id="9beb4-108">**Note** : It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="9beb4-109">Só envie mensagens que as pessoas lerám.</span><span class="sxs-lookup"><span data-stu-id="9beb4-109">Only send messages that people will read.</span></span>
+## <a name="permissions"></a><span data-ttu-id="88df4-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="88df4-108">Permissions</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9beb4-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="9beb4-110">Permissions</span></span>
+<span data-ttu-id="88df4-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88df4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="9beb4-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9beb4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-| <span data-ttu-id="9beb4-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9beb4-113">Permission type</span></span>                        | <span data-ttu-id="9beb4-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9beb4-114">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="88df4-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="88df4-111">Permission type</span></span>                        | <span data-ttu-id="88df4-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="88df4-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="9beb4-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9beb4-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="9beb4-116">ChannelMessage. Send, Group. ReadWrite. All</span><span class="sxs-lookup"><span data-stu-id="9beb4-116">ChannelMessage.Send, Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="9beb4-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9beb4-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9beb4-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9beb4-118">Not supported.</span></span> |
-| <span data-ttu-id="9beb4-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9beb4-119">Application</span></span>                            | <span data-ttu-id="9beb4-120">Teamwork.Migrate.All</span><span class="sxs-lookup"><span data-stu-id="9beb4-120">Teamwork.Migrate.All</span></span> |
+| <span data-ttu-id="88df4-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="88df4-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="88df4-114">ChannelMessage.Send, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88df4-114">ChannelMessage.Send, Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="88df4-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="88df4-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88df4-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="88df4-116">Not supported.</span></span> |
+| <span data-ttu-id="88df4-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="88df4-117">Application</span></span>                            | <span data-ttu-id="88df4-118">Teamwork.Migrate.All</span><span class="sxs-lookup"><span data-stu-id="88df4-118">Teamwork.Migrate.All</span></span> |
+
+> <span data-ttu-id="88df4-119">**Observação:** As permissões de aplicativo só *são* suportadas para [migração.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)</span><span class="sxs-lookup"><span data-stu-id="88df4-119">**Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).</span></span>
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
 
-## <a name="http-request"></a><span data-ttu-id="9beb4-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9beb4-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="88df4-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="88df4-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -47,31 +47,31 @@ ms.locfileid: "48959147"
 POST /teams/{id}/channels/{id}/messages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9beb4-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9beb4-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="88df4-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="88df4-121">Request headers</span></span>
 
-| <span data-ttu-id="9beb4-123">Nome</span><span class="sxs-lookup"><span data-stu-id="9beb4-123">Name</span></span>          | <span data-ttu-id="9beb4-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="9beb4-124">Description</span></span>   |
+| <span data-ttu-id="88df4-122">Nome</span><span class="sxs-lookup"><span data-stu-id="88df4-122">Name</span></span>          | <span data-ttu-id="88df4-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="88df4-123">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="9beb4-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="9beb4-125">Authorization</span></span> | <span data-ttu-id="9beb4-126">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="9beb4-126">Bearer {code}.</span></span> <span data-ttu-id="9beb4-127">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9beb4-127">Required.</span></span> |
-| <span data-ttu-id="9beb4-128">Content-type</span><span class="sxs-lookup"><span data-stu-id="9beb4-128">Content-type</span></span> | <span data-ttu-id="9beb4-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9beb4-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="88df4-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="88df4-124">Authorization</span></span> | <span data-ttu-id="88df4-125">Portador {código}.</span><span class="sxs-lookup"><span data-stu-id="88df4-125">Bearer {code}.</span></span> <span data-ttu-id="88df4-126">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="88df4-126">Required.</span></span> |
+| <span data-ttu-id="88df4-127">Content-type</span><span class="sxs-lookup"><span data-stu-id="88df4-127">Content-type</span></span> | <span data-ttu-id="88df4-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="88df4-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9beb4-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9beb4-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="88df4-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="88df4-130">Request body</span></span>
 
-<span data-ttu-id="9beb4-132">No corpo da solicitação, forneça uma representação JSON de um objeto [chat](../resources/chatmessage.md) .</span><span class="sxs-lookup"><span data-stu-id="9beb4-132">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="9beb4-133">Somente a Propriedade Body é obrigatória, outras propriedades são opcionais.</span><span class="sxs-lookup"><span data-stu-id="9beb4-133">Only the body property is mandatory, other properties are optional.</span></span>
+<span data-ttu-id="88df4-131">No corpo da solicitação, fornece uma representação JSON de um [objeto chatMessage.](../resources/chatmessage.md)</span><span class="sxs-lookup"><span data-stu-id="88df4-131">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="88df4-132">Somente a propriedade body é obrigatória, outras propriedades são opcionais.</span><span class="sxs-lookup"><span data-stu-id="88df4-132">Only the body property is mandatory, other properties are optional.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9beb4-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="9beb4-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="88df4-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="88df4-133">Response</span></span>
 
-<span data-ttu-id="9beb4-135">Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [chat](../resources/chatmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9beb4-135">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="88df4-134">Se bem-sucedido, este método retorna `201 Created` um código de resposta e um novo objeto [chatMessage](../resources/chatmessage.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="88df4-134">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9beb4-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="9beb4-136">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="88df4-135">Exemplos</span><span class="sxs-lookup"><span data-stu-id="88df4-135">Examples</span></span>
 
-### <a name="example-1-create-a-message-in-a-specified-channel"></a><span data-ttu-id="9beb4-137">Exemplo 1: criar uma mensagem em um canal especificado</span><span class="sxs-lookup"><span data-stu-id="9beb4-137">Example 1: Create a message in a specified channel</span></span>
+### <a name="example-1-create-a-message-in-a-specified-channel"></a><span data-ttu-id="88df4-136">Exemplo 1: Criar uma mensagem em um canal especificado</span><span class="sxs-lookup"><span data-stu-id="88df4-136">Example 1: Create a message in a specified channel</span></span>
 
-<span data-ttu-id="9beb4-138">Para obter uma lista mais abrangente de exemplos, consulte [criar chat em um canal ou em um chat](chatmessage-post.md).</span><span class="sxs-lookup"><span data-stu-id="9beb4-138">For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).</span></span>
+<span data-ttu-id="88df4-137">Para obter uma lista mais abrangente de exemplos, consulte [Criar chatMessage em um canal ou chat.](chatmessage-post.md)</span><span class="sxs-lookup"><span data-stu-id="88df4-137">For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).</span></span>
 
-### <a name="request"></a><span data-ttu-id="9beb4-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9beb4-139">Request</span></span>
-<span data-ttu-id="9beb4-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="9beb4-140">The following is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="88df4-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88df4-138">Request</span></span>
+<span data-ttu-id="88df4-139">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="88df4-139">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="9beb4-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="9beb4-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="88df4-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="88df4-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -88,29 +88,29 @@ Content-type: application/json
 }
 ```
 
-# <a name="c"></a>[<span data-ttu-id="9beb4-142">C#</span><span class="sxs-lookup"><span data-stu-id="9beb4-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="88df4-141">C#</span><span class="sxs-lookup"><span data-stu-id="88df4-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="9beb4-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9beb4-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="88df4-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88df4-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="9beb4-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9beb4-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="88df4-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88df4-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="9beb4-145">Java</span><span class="sxs-lookup"><span data-stu-id="9beb4-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="88df4-144">Java</span><span class="sxs-lookup"><span data-stu-id="88df4-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="9beb4-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="9beb4-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="88df4-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="88df4-145">Response</span></span>
 
-<span data-ttu-id="9beb4-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9beb4-147">The following is an example of the response.</span></span>
+<span data-ttu-id="88df4-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="88df4-146">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="9beb4-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9beb4-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="88df4-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="88df4-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -158,13 +158,13 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-import-messages-text-only"></a><span data-ttu-id="9beb4-150">Exemplo 2: importar mensagens (somente texto)</span><span class="sxs-lookup"><span data-stu-id="9beb4-150">Example 2: Import messages (text only)</span></span>
+### <a name="example-2-import-messages-text-only"></a><span data-ttu-id="88df4-149">Exemplo 2: Importar mensagens (somente texto)</span><span class="sxs-lookup"><span data-stu-id="88df4-149">Example 2: Import messages (text only)</span></span>
 
-> <span data-ttu-id="9beb4-151">**Observação** : o escopo de permissão `Teamwork.Migrate.All` é obrigatório para este cenário.</span><span class="sxs-lookup"><span data-stu-id="9beb4-151">**Note** : The permission scope `Teamwork.Migrate.All` is required for this scenario.</span></span>
+> <span data-ttu-id="88df4-150">**Observação:** o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.</span><span class="sxs-lookup"><span data-stu-id="88df4-150">**Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9beb4-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9beb4-152">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88df4-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88df4-151">Request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="9beb4-153">O exemplo a seguir mostra como importar mensagens Back-in-time usando as `createDateTime` `from` teclas e no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9beb4-153">The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.</span></span>
+<span data-ttu-id="88df4-152">O exemplo a seguir mostra como importar mensagens de back-in-time usando as `createDateTime` chaves no corpo da `from` solicitação.</span><span class="sxs-lookup"><span data-stu-id="88df4-152">The following example show how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -200,9 +200,9 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9beb4-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="9beb4-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="88df4-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="88df4-153">Response</span></span>
 
-<span data-ttu-id="9beb4-155">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9beb4-155">The following is an example of the response.</span></span>
+<span data-ttu-id="88df4-154">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="88df4-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -247,16 +247,16 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="example-3-import-messages-with-inline-images"></a><span data-ttu-id="9beb4-156">Exemplo 3: importar mensagens com imagens embutidas</span><span class="sxs-lookup"><span data-stu-id="9beb4-156">Example 3: Import messages with inline images</span></span>
+### <a name="example-3-import-messages-with-inline-images"></a><span data-ttu-id="88df4-155">Exemplo 3: Importar mensagens com imagens em linha</span><span class="sxs-lookup"><span data-stu-id="88df4-155">Example 3: Import messages with inline images</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="9beb4-157">Atualmente, as imagens embutidas são o único tipo de mídia suportado pelo esquema de API de mensagens de importação.</span><span class="sxs-lookup"><span data-stu-id="9beb4-157">Currently, inline images are the only media type supported by the import message API schema.</span></span>
+> <span data-ttu-id="88df4-156">Atualmente, as imagens em linha são o único tipo de mídia suportado pelo esquema de API de mensagem de importação.</span><span class="sxs-lookup"><span data-stu-id="88df4-156">Currently, inline images are the only media type supported by the import message API schema.</span></span>
 
-> <span data-ttu-id="9beb4-158">**Observação** : o escopo de permissão `Teamwork.Migrate.All` é obrigatório para este cenário.</span><span class="sxs-lookup"><span data-stu-id="9beb4-158">**Note** : The permission scope `Teamwork.Migrate.All` is required for this scenario.</span></span>
+> <span data-ttu-id="88df4-157">**Observação:** o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.</span><span class="sxs-lookup"><span data-stu-id="88df4-157">**Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9beb4-159">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9beb4-159">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="88df4-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88df4-158">Request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="9beb4-160">O exemplo a seguir mostra como importar mensagens de Back-in-time contendo imagens embutidas usando as `createDateTime` `from` teclas e no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9beb4-160">The following example shows how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.</span></span>
+<span data-ttu-id="88df4-159">O exemplo a seguir mostra como importar mensagens de back-in-time contendo imagens em linha usando as teclas e o `createDateTime` `from` corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="88df4-159">The following example shows how to import back-in-time messages containing inline images using the `createDateTime` and `from` keys in the request body.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -285,9 +285,9 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="9beb4-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="9beb4-161">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="88df4-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="88df4-160">Response</span></span>
 
-<span data-ttu-id="9beb4-162">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9beb4-162">The following is an example of the response.</span></span>
+<span data-ttu-id="88df4-161">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="88df4-161">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -333,10 +333,10 @@ HTTP/1.1 200 OK
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9beb4-163">Confira também</span><span class="sxs-lookup"><span data-stu-id="9beb4-163">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="88df4-162">Confira também</span><span class="sxs-lookup"><span data-stu-id="88df4-162">See also</span></span>
 
-* [<span data-ttu-id="9beb4-164">Importar mensagens de plataforma de terceiros para o Teams usando o Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="9beb4-164">Import third-party platform messages to Teams using Microsoft Graph</span></span>](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
-* [<span data-ttu-id="9beb4-165">Criar um canal</span><span class="sxs-lookup"><span data-stu-id="9beb4-165">Create channel</span></span>](channel-post.md)
+* [<span data-ttu-id="88df4-163">Importar mensagens de plataforma de terceiros para o Teams usando o Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="88df4-163">Import third-party platform messages to Teams using Microsoft Graph</span></span>](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [<span data-ttu-id="88df4-164">Create channel</span><span class="sxs-lookup"><span data-stu-id="88df4-164">Create channel</span></span>](channel-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
