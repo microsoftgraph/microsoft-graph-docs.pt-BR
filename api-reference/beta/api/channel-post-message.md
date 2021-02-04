@@ -1,28 +1,26 @@
 ---
 title: Criar chatMessage em um canal
-description: Criar novo chat no canal especificado.
+description: Crie um novo chatMessage no canal especificado.
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f7bdb9322b59e78b5b5fe363cccd0713314f3a70
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 791bf418a525d09c0386b29d2914319f03c7e90b
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959147"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101906"
 ---
-# <a name="create-chatmessage-in-channel"></a>Criar chat no canal
+# <a name="create-chatmessage-in-channel"></a>Criar chatMessage no canal
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [chat](../resources/chatmessage.md) no [canal](../resources/channel.md)especificado.
+Crie um novo [chatMessage](../resources/chatmessage.md) no canal [especificado.](../resources/channel.md)
 
-> **Observação** : não é recomendável usar essa API para a migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.
-
-> **Observação** : trata-se de uma violação dos [termos de uso](/legal/microsoft-apis/terms-of-use) para usar o Microsoft Teams como um arquivo de log. Só envie mensagens que as pessoas lerám.
+> **Observação:** é uma violação dos termos [de uso usar](/legal/microsoft-apis/terms-of-use) o Microsoft Teams como um arquivo de log. Enviar apenas mensagens que as pessoas lerão.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,9 +28,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ChannelMessage. Send, Group. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Teamwork.Migrate.All |
+
+> **Observação:** As permissões de aplicativo só *são* suportadas para [migração.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
@@ -56,17 +56,17 @@ POST /teams/{id}/channels/{id}/messages
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [chat](../resources/chatmessage.md) . Somente a Propriedade Body é obrigatória, outras propriedades são opcionais.
+No corpo da solicitação, fornece uma representação JSON de um [objeto chatMessage.](../resources/chatmessage.md) Somente a propriedade body é obrigatória, outras propriedades são opcionais.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [chat](../resources/chatmessage.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um novo objeto [chatMessage](../resources/chatmessage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-message-in-a-specified-channel"></a>Exemplo 1: criar uma mensagem em um canal especificado
+### <a name="example-1-create-a-message-in-a-specified-channel"></a>Exemplo 1: Criar uma mensagem em um canal especificado
 
-Para obter uma lista mais abrangente de exemplos, consulte [criar chat em um canal ou em um chat](chatmessage-post.md).
+Para obter uma lista mais abrangente de exemplos, consulte [Criar chatMessage em um canal ou chat.](chatmessage-post.md)
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -158,13 +158,13 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-import-messages-text-only"></a>Exemplo 2: importar mensagens (somente texto)
+### <a name="example-2-import-messages-text-only"></a>Exemplo 2: Importar mensagens (somente texto)
 
-> **Observação** : o escopo de permissão `Teamwork.Migrate.All` é obrigatório para este cenário.
+> **Observação:** o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
 
 #### <a name="request"></a>Solicitação
 <!-- { "blockType": "ignored" } -->
-O exemplo a seguir mostra como importar mensagens Back-in-time usando as `createDateTime` `from` teclas e no corpo da solicitação.
+O exemplo a seguir mostra como importar mensagens de back-in-time usando as `createDateTime` chaves no corpo da `from` solicitação.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -247,16 +247,16 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="example-3-import-messages-with-inline-images"></a>Exemplo 3: importar mensagens com imagens embutidas
+### <a name="example-3-import-messages-with-inline-images"></a>Exemplo 3: Importar mensagens com imagens em linha
 
 > [!NOTE]
-> Atualmente, as imagens embutidas são o único tipo de mídia suportado pelo esquema de API de mensagens de importação.
+> Atualmente, as imagens em linha são o único tipo de mídia suportado pelo esquema de API de mensagem de importação.
 
-> **Observação** : o escopo de permissão `Teamwork.Migrate.All` é obrigatório para este cenário.
+> **Observação:** o escopo `Teamwork.Migrate.All` de permissão é necessário para este cenário.
 
 #### <a name="request"></a>Solicitação
 <!-- { "blockType": "ignored" } -->
-O exemplo a seguir mostra como importar mensagens de Back-in-time contendo imagens embutidas usando as `createDateTime` `from` teclas e no corpo da solicitação.
+O exemplo a seguir mostra como importar mensagens de back-in-time contendo imagens em linha usando as teclas e o `createDateTime` `from` corpo da solicitação.
 
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
@@ -336,7 +336,7 @@ HTTP/1.1 200 OK
 ## <a name="see-also"></a>Confira também
 
 * [Importar mensagens de plataforma de terceiros para o Teams usando o Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
-* [Criar um canal](channel-post.md)
+* [Create channel](channel-post.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

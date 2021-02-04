@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3f284cacc4e41498a4cc011e98ed9f60898dcc20
-ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
+ms.openlocfilehash: db0164be77260c60c2d89c726b048b4af8dc741d
+ms.sourcegitcommit: d02c438bcd58e8f64bfcd5fba0b40e436b46570e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49866134"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101899"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Responder a uma mensagem em um canal
 
@@ -20,22 +20,22 @@ Namespace: microsoft.graph
 
 Crie uma nova resposta a [um chatMessage](../resources/chatmessage.md) em um canal [especificado.](../resources/channel.md)
 
-> **Observação:** não recomendamos que você use essa API para migração de dados. Ele não tem a produtividade necessária para uma migração típica.
-
 > **Observação:** é uma violação dos termos [de uso usar](/legal/microsoft-apis/terms-of-use) o Microsoft Teams como um arquivo de log. Enviar apenas mensagens que as pessoas lerão.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD001 -->
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | ChannelMessage.Send, Group.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Teamwork.Migrate.All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegada (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Teamwork.Migrate.All |
+
+> **Observação:** As permissões de aplicativo só *são* suportadas para [migração.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +57,7 @@ Se tiver êxito, este método `201 Created` retornará o código de resposta com
 
 ## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Exemplo 1: Criar uma nova resposta a um chatMessage
 
-Para obter uma lista mais abrangente de exemplos, consulte [Criar chatMessage em um canal ou chat.](chatmessage-post.md)
+Para obter uma lista mais abrangente de exemplos, consulte [Criar chatMessage em um canal ou um chat.](chatmessage-post.md)
 
 ### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
