@@ -5,52 +5,54 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 55b4a8187942e78156370c05c634153d9f479dd6
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 5a05634de38315192604517b8c0f826e9468916f
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796749"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092474"
 ---
-# <a name="get-open-extension"></a><span data-ttu-id="51e6b-103">Obter extensão aberta</span><span class="sxs-lookup"><span data-stu-id="51e6b-103">Get open extension</span></span>
+# <a name="get-open-extension"></a><span data-ttu-id="cf961-103">Obter extensão aberta</span><span class="sxs-lookup"><span data-stu-id="cf961-103">Get open extension</span></span>
 
-<span data-ttu-id="51e6b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="51e6b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cf961-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cf961-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="51e6b-105">Obtenha uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) identificada por nome ou nome totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="51e6b-105">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
+<span data-ttu-id="cf961-105">Obtenha uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) identificada por nome ou nome totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="cf961-105">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
 
-<span data-ttu-id="51e6b-106">A tabela a seguir lista os três cenários em que é possível obter uma extensão aberta de uma instância de recursos com suporte.</span><span class="sxs-lookup"><span data-stu-id="51e6b-106">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
+<span data-ttu-id="cf961-106">A tabela na seção [Permissões](#permissions) lista os recursos que oferecem suporte a extensões abertas.</span><span class="sxs-lookup"><span data-stu-id="cf961-106">The table in the [Permissions](#permissions) section lists the resources that support open extensions.</span></span>
 
-|<span data-ttu-id="51e6b-107">**Cenário GET**</span><span class="sxs-lookup"><span data-stu-id="51e6b-107">**GET scenario**</span></span>|<span data-ttu-id="51e6b-108">**Recursos com suporte**</span><span class="sxs-lookup"><span data-stu-id="51e6b-108">**Supported resources**</span></span>|<span data-ttu-id="51e6b-109">**Corpo da resposta**</span><span class="sxs-lookup"><span data-stu-id="51e6b-109">**Response body**</span></span>|
+<span data-ttu-id="cf961-107">A tabela a seguir lista os três cenários em que é possível obter uma extensão aberta de uma instância de recursos com suporte.</span><span class="sxs-lookup"><span data-stu-id="cf961-107">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
+
+|<span data-ttu-id="cf961-108">**Cenário GET**</span><span class="sxs-lookup"><span data-stu-id="cf961-108">**GET scenario**</span></span>|<span data-ttu-id="cf961-109">**Recursos com suporte**</span><span class="sxs-lookup"><span data-stu-id="cf961-109">**Supported resources**</span></span>|<span data-ttu-id="cf961-110">**Corpo da resposta**</span><span class="sxs-lookup"><span data-stu-id="cf961-110">**Response body**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="51e6b-110">Obtenha uma extensão específica de uma instância de recurso conhecida.</span><span class="sxs-lookup"><span data-stu-id="51e6b-110">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="51e6b-111">[Dispositivo](../resources/device.md), [evento](../resources/event.md), [grupo](../resources/group.md), [evento de grupo](../resources/event.md), [postagem de grupo](../resources/post.md), [mensagem](../resources/message.md), [organização](../resources/organization.md), [contato pessoal](../resources/contact.md), [usuário](../resources/user.md), [tarefa](../resources/todotask.md), [tasklist](../resources/todotasklist.md).</span><span class="sxs-lookup"><span data-stu-id="51e6b-111">[Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md), [task](../resources/todotask.md), [tasklist](../resources/todotasklist.md).</span></span>  | <span data-ttu-id="51e6b-112">Somente extensão aberta.</span><span class="sxs-lookup"><span data-stu-id="51e6b-112">Open extension only.</span></span>|
-|<span data-ttu-id="51e6b-113">Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.</span><span class="sxs-lookup"><span data-stu-id="51e6b-113">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="51e6b-114">Dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, tarefa, lista de tarefas.</span><span class="sxs-lookup"><span data-stu-id="51e6b-114">Device, event, group, group event, group post, message, organization, personal contact, user, task, task list.</span></span> |<span data-ttu-id="51e6b-115">Uma instância de recurso expandida com a extensão aberta.</span><span class="sxs-lookup"><span data-stu-id="51e6b-115">A resource instance expanded with the open extension.</span></span>|
-|<span data-ttu-id="51e6b-116">Encontre e expanda instâncias de recursos com uma extensão específica.</span><span class="sxs-lookup"><span data-stu-id="51e6b-116">Find and expand resource instances with a specific extension.</span></span> |<span data-ttu-id="51e6b-117">Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas.</span><span class="sxs-lookup"><span data-stu-id="51e6b-117">Event, group event, group post, message, personal contact, task, task list.</span></span>|<span data-ttu-id="51e6b-118">Instâncias de recursos expandidas com a extensão aberta.</span><span class="sxs-lookup"><span data-stu-id="51e6b-118">Resource instances expanded with the open extension.</span></span>|
+|<span data-ttu-id="cf961-111">Obtenha uma extensão específica de uma instância de recurso conhecida.</span><span class="sxs-lookup"><span data-stu-id="cf961-111">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="cf961-112">[Dispositivo](../resources/device.md), [evento](../resources/event.md), [grupo](../resources/group.md), [evento de grupo](../resources/event.md), [postagem de grupo](../resources/post.md), [mensagem](../resources/message.md), [organização](../resources/organization.md), [contato pessoal](../resources/contact.md), [usuário](../resources/user.md), [tarefa](../resources/todotask.md), [tasklist](../resources/todotasklist.md).</span><span class="sxs-lookup"><span data-stu-id="cf961-112">[Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md), [task](../resources/todotask.md), [tasklist](../resources/todotasklist.md).</span></span>  | <span data-ttu-id="cf961-113">Somente extensão aberta.</span><span class="sxs-lookup"><span data-stu-id="cf961-113">Open extension only.</span></span>|
+|<span data-ttu-id="cf961-114">Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.</span><span class="sxs-lookup"><span data-stu-id="cf961-114">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="cf961-115">Dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, tarefa, lista de tarefas.</span><span class="sxs-lookup"><span data-stu-id="cf961-115">Device, event, group, group event, group post, message, organization, personal contact, user, task, task list.</span></span> |<span data-ttu-id="cf961-116">Uma instância de recurso expandida com a extensão aberta.</span><span class="sxs-lookup"><span data-stu-id="cf961-116">A resource instance expanded with the open extension.</span></span>|
+|<span data-ttu-id="cf961-117">Encontre e expanda instâncias de recursos com uma extensão específica.</span><span class="sxs-lookup"><span data-stu-id="cf961-117">Find and expand resource instances with a specific extension.</span></span> |<span data-ttu-id="cf961-118">Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas.</span><span class="sxs-lookup"><span data-stu-id="cf961-118">Event, group event, group post, message, personal contact, task, task list.</span></span>|<span data-ttu-id="cf961-119">Instâncias de recursos expandidas com a extensão aberta.</span><span class="sxs-lookup"><span data-stu-id="cf961-119">Resource instances expanded with the open extension.</span></span>|
 
-## <a name="permissions"></a><span data-ttu-id="51e6b-119">Permissões</span><span class="sxs-lookup"><span data-stu-id="51e6b-119">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cf961-120">Permissões</span><span class="sxs-lookup"><span data-stu-id="cf961-120">Permissions</span></span>
 
-<span data-ttu-id="51e6b-120">Dependendo do recurso que contém a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API.</span><span class="sxs-lookup"><span data-stu-id="51e6b-120">Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="51e6b-121">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="51e6b-121">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cf961-121">Dependendo do recurso que contém a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API.</span><span class="sxs-lookup"><span data-stu-id="cf961-121">Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="cf961-122">Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cf961-122">To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="51e6b-122">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="51e6b-122">Supported resource</span></span> | <span data-ttu-id="51e6b-123">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="51e6b-123">Delegated (work or school account)</span></span> | <span data-ttu-id="51e6b-124">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="51e6b-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51e6b-125">Application</span><span class="sxs-lookup"><span data-stu-id="51e6b-125">Application</span></span> |
+| <span data-ttu-id="cf961-123">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="cf961-123">Supported resource</span></span> | <span data-ttu-id="cf961-124">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cf961-124">Delegated (work or school account)</span></span> | <span data-ttu-id="cf961-125">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cf961-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cf961-126">Application</span><span class="sxs-lookup"><span data-stu-id="cf961-126">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="51e6b-126">device</span><span class="sxs-lookup"><span data-stu-id="51e6b-126">device</span></span>](../resources/device.md) | <span data-ttu-id="51e6b-127">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-127">Directory.Read.All</span></span> | <span data-ttu-id="51e6b-128">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="51e6b-128">Not supported</span></span> | <span data-ttu-id="51e6b-129">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-129">Device.ReadWrite.All</span></span> |
-| [<span data-ttu-id="51e6b-130">evento</span><span class="sxs-lookup"><span data-stu-id="51e6b-130">event</span></span>](../resources/event.md) | <span data-ttu-id="51e6b-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-131">Calendars.Read</span></span> | <span data-ttu-id="51e6b-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-132">Calendars.Read</span></span> | <span data-ttu-id="51e6b-133">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-133">Calendars.Read</span></span> |
-| [<span data-ttu-id="51e6b-134">grupo</span><span class="sxs-lookup"><span data-stu-id="51e6b-134">group</span></span>](../resources/group.md) | <span data-ttu-id="51e6b-135">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-135">Group.Read.All</span></span> | <span data-ttu-id="51e6b-136">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="51e6b-136">Not supported</span></span> | <span data-ttu-id="51e6b-137">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-137">Group.Read.All</span></span> |
-| [<span data-ttu-id="51e6b-138">evento de grupo</span><span class="sxs-lookup"><span data-stu-id="51e6b-138">group event</span></span>](../resources/event.md) | <span data-ttu-id="51e6b-139">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-139">Group.Read.All</span></span> | <span data-ttu-id="51e6b-140">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="51e6b-140">Not supported</span></span> | <span data-ttu-id="51e6b-141">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="51e6b-141">Not supported</span></span> |
-| [<span data-ttu-id="51e6b-142">postagem de grupo</span><span class="sxs-lookup"><span data-stu-id="51e6b-142">group post</span></span>](../resources/post.md) | <span data-ttu-id="51e6b-143">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-143">Group.Read.All</span></span> | <span data-ttu-id="51e6b-144">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="51e6b-144">Not supported</span></span> | <span data-ttu-id="51e6b-145">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-145">Group.Read.All</span></span> |
-| [<span data-ttu-id="51e6b-146">message</span><span class="sxs-lookup"><span data-stu-id="51e6b-146">message</span></span>](../resources/message.md) | <span data-ttu-id="51e6b-147">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-147">Mail.Read</span></span> | <span data-ttu-id="51e6b-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-148">Mail.Read</span></span> | <span data-ttu-id="51e6b-149">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-149">Mail.Read</span></span> | 
-| [<span data-ttu-id="51e6b-150">organização</span><span class="sxs-lookup"><span data-stu-id="51e6b-150">organization</span></span>](../resources/organization.md) | <span data-ttu-id="51e6b-151">User.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-151">User.Read</span></span> | <span data-ttu-id="51e6b-152">Incompatível</span><span class="sxs-lookup"><span data-stu-id="51e6b-152">Not supported</span></span> | <span data-ttu-id="51e6b-153">Organization.Read.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-153">Organization.Read.All</span></span> |
-| [<span data-ttu-id="51e6b-154">contato pessoal</span><span class="sxs-lookup"><span data-stu-id="51e6b-154">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="51e6b-155">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-155">Contacts.Read</span></span> | <span data-ttu-id="51e6b-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-156">Contacts.Read</span></span> | <span data-ttu-id="51e6b-157">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-157">Contacts.Read</span></span> |
-| [<span data-ttu-id="51e6b-158">usuário</span><span class="sxs-lookup"><span data-stu-id="51e6b-158">user</span></span>](../resources/user.md) | <span data-ttu-id="51e6b-159">User.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-159">User.Read</span></span> | <span data-ttu-id="51e6b-160">User.Read</span><span class="sxs-lookup"><span data-stu-id="51e6b-160">User.Read</span></span> | <span data-ttu-id="51e6b-161">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-161">User.Read.All</span></span> |
-| [<span data-ttu-id="51e6b-162">tarefa</span><span class="sxs-lookup"><span data-stu-id="51e6b-162">task</span></span>](../resources/todotask.md) | <span data-ttu-id="51e6b-163">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="51e6b-163">Tasks.ReadWrite</span></span> | <span data-ttu-id="51e6b-164">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="51e6b-164">Tasks.ReadWrite</span></span> | <span data-ttu-id="51e6b-165">Tasks.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-165">Tasks.ReadWrite.All</span></span> |
-| [<span data-ttu-id="51e6b-166">tasklist</span><span class="sxs-lookup"><span data-stu-id="51e6b-166">tasklist</span></span>](../resources/todotasklist.md)  | <span data-ttu-id="51e6b-167">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="51e6b-167">Tasks.ReadWrite</span></span> | <span data-ttu-id="51e6b-168">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="51e6b-168">Tasks.ReadWrite</span></span> | <span data-ttu-id="51e6b-169">Tasks.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="51e6b-169">Tasks.ReadWrite.All</span></span> |
+| [<span data-ttu-id="cf961-127">device</span><span class="sxs-lookup"><span data-stu-id="cf961-127">device</span></span>](../resources/device.md) | <span data-ttu-id="cf961-128">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="cf961-128">Directory.Read.All</span></span> | <span data-ttu-id="cf961-129">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="cf961-129">Not supported</span></span> | <span data-ttu-id="cf961-130">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf961-130">Device.ReadWrite.All</span></span> |
+| [<span data-ttu-id="cf961-131">evento</span><span class="sxs-lookup"><span data-stu-id="cf961-131">event</span></span>](../resources/event.md) | <span data-ttu-id="cf961-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-132">Calendars.Read</span></span> | <span data-ttu-id="cf961-133">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-133">Calendars.Read</span></span> | <span data-ttu-id="cf961-134">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-134">Calendars.Read</span></span> |
+| [<span data-ttu-id="cf961-135">grupo</span><span class="sxs-lookup"><span data-stu-id="cf961-135">group</span></span>](../resources/group.md) | <span data-ttu-id="cf961-136">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cf961-136">Group.Read.All</span></span> | <span data-ttu-id="cf961-137">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="cf961-137">Not supported</span></span> | <span data-ttu-id="cf961-138">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cf961-138">Group.Read.All</span></span> |
+| [<span data-ttu-id="cf961-139">evento de grupo</span><span class="sxs-lookup"><span data-stu-id="cf961-139">group event</span></span>](../resources/event.md) | <span data-ttu-id="cf961-140">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cf961-140">Group.Read.All</span></span> | <span data-ttu-id="cf961-141">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="cf961-141">Not supported</span></span> | <span data-ttu-id="cf961-142">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="cf961-142">Not supported</span></span> |
+| [<span data-ttu-id="cf961-143">postagem de grupo</span><span class="sxs-lookup"><span data-stu-id="cf961-143">group post</span></span>](../resources/post.md) | <span data-ttu-id="cf961-144">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cf961-144">Group.Read.All</span></span> | <span data-ttu-id="cf961-145">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="cf961-145">Not supported</span></span> | <span data-ttu-id="cf961-146">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="cf961-146">Group.Read.All</span></span> |
+| [<span data-ttu-id="cf961-147">message</span><span class="sxs-lookup"><span data-stu-id="cf961-147">message</span></span>](../resources/message.md) | <span data-ttu-id="cf961-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-148">Mail.Read</span></span> | <span data-ttu-id="cf961-149">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-149">Mail.Read</span></span> | <span data-ttu-id="cf961-150">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-150">Mail.Read</span></span> | 
+| [<span data-ttu-id="cf961-151">organização</span><span class="sxs-lookup"><span data-stu-id="cf961-151">organization</span></span>](../resources/organization.md) | <span data-ttu-id="cf961-152">User.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-152">User.Read</span></span> | <span data-ttu-id="cf961-153">Incompatível</span><span class="sxs-lookup"><span data-stu-id="cf961-153">Not supported</span></span> | <span data-ttu-id="cf961-154">Organization.Read.All</span><span class="sxs-lookup"><span data-stu-id="cf961-154">Organization.Read.All</span></span> |
+| [<span data-ttu-id="cf961-155">contato pessoal</span><span class="sxs-lookup"><span data-stu-id="cf961-155">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="cf961-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-156">Contacts.Read</span></span> | <span data-ttu-id="cf961-157">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-157">Contacts.Read</span></span> | <span data-ttu-id="cf961-158">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-158">Contacts.Read</span></span> |
+| [<span data-ttu-id="cf961-159">usuário</span><span class="sxs-lookup"><span data-stu-id="cf961-159">user</span></span>](../resources/user.md) | <span data-ttu-id="cf961-160">User.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-160">User.Read</span></span> | <span data-ttu-id="cf961-161">User.Read</span><span class="sxs-lookup"><span data-stu-id="cf961-161">User.Read</span></span> | <span data-ttu-id="cf961-162">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="cf961-162">User.Read.All</span></span> |
+| [<span data-ttu-id="cf961-163">tarefa</span><span class="sxs-lookup"><span data-stu-id="cf961-163">task</span></span>](../resources/todotask.md) | <span data-ttu-id="cf961-164">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cf961-164">Tasks.ReadWrite</span></span> | <span data-ttu-id="cf961-165">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cf961-165">Tasks.ReadWrite</span></span> | <span data-ttu-id="cf961-166">Tasks.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf961-166">Tasks.ReadWrite.All</span></span> |
+| [<span data-ttu-id="cf961-167">tasklist</span><span class="sxs-lookup"><span data-stu-id="cf961-167">tasklist</span></span>](../resources/todotasklist.md)  | <span data-ttu-id="cf961-168">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cf961-168">Tasks.ReadWrite</span></span> | <span data-ttu-id="cf961-169">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cf961-169">Tasks.ReadWrite</span></span> | <span data-ttu-id="cf961-170">Tasks.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cf961-170">Tasks.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="51e6b-170">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="51e6b-170">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cf961-171">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cf961-171">HTTP request</span></span>
 
-<span data-ttu-id="51e6b-171">Esta seção lista a sintaxe de cada um dos três cenários `GET` descritos acima</span><span class="sxs-lookup"><span data-stu-id="51e6b-171">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
+<span data-ttu-id="cf961-172">Esta seção lista a sintaxe de cada um dos três cenários `GET` descritos acima</span><span class="sxs-lookup"><span data-stu-id="cf961-172">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
 
-### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="51e6b-172">Obtenha uma extensão específica em uma instância de recurso conhecida</span><span class="sxs-lookup"><span data-stu-id="51e6b-172">Get a specific extension in a known resource instance</span></span>
+### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="cf961-173">Obtenha uma extensão específica em uma instância de recurso conhecida</span><span class="sxs-lookup"><span data-stu-id="cf961-173">Get a specific extension in a known resource instance</span></span>
 
-<span data-ttu-id="51e6b-173">Use a mesma solicitação REST obtendo a instância do recurso e identifique a extensão usando a propriedade de navegação **extensions** dessa instância.</span><span class="sxs-lookup"><span data-stu-id="51e6b-173">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
+<span data-ttu-id="cf961-174">Use a mesma solicitação REST obtendo a instância do recurso e identifique a extensão usando a propriedade de navegação **extensions** dessa instância.</span><span class="sxs-lookup"><span data-stu-id="cf961-174">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -67,9 +69,9 @@ GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/ext
 GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
-### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="51e6b-174">Obtenha uma instância de recurso conhecida, expandida com uma extensão correspondente.</span><span class="sxs-lookup"><span data-stu-id="51e6b-174">Get a known resource instance expanded with a matching extension</span></span> 
+### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="cf961-175">Obtenha uma instância de recurso conhecida, expandida com uma extensão correspondente.</span><span class="sxs-lookup"><span data-stu-id="cf961-175">Get a known resource instance expanded with a matching extension</span></span> 
 
-<span data-ttu-id="51e6b-175">Para os tipos de recurso de evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas, você pode usar a mesma solicitação REST para obter a instância de recurso, procure uma extensão que corresponda a um filtro em sua propriedade **id** e expanda a instância com a extensão.</span><span class="sxs-lookup"><span data-stu-id="51e6b-175">For the event, group event, group post, message, personal contact, task, task list resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="51e6b-176">A resposta inclui a maioria das propriedades do recurso.</span><span class="sxs-lookup"><span data-stu-id="51e6b-176">The response includes most of the resource properties.</span></span>
+<span data-ttu-id="cf961-176">Para os tipos de recurso de evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas, você pode usar a mesma solicitação REST para obter a instância de recurso, procure uma extensão que corresponda a um filtro em sua propriedade **id** e expanda a instância com a extensão.</span><span class="sxs-lookup"><span data-stu-id="cf961-176">For the event, group event, group post, message, personal contact, task, task list resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="cf961-177">A resposta inclui a maioria das propriedades do recurso.</span><span class="sxs-lookup"><span data-stu-id="cf961-177">The response includes most of the resource properties.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -82,7 +84,7 @@ GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{Id}?$expand
 GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
-<span data-ttu-id="51e6b-177">Para os tipos de recurso de dispositivo, grupo, organização e usuário, você também deve usar um parâmetro `$select` para incluir a propriedade **id** e quaisquer outras propriedades que você deseja na instância do recurso:</span><span class="sxs-lookup"><span data-stu-id="51e6b-177">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
+<span data-ttu-id="cf961-178">Para os tipos de recurso de dispositivo, grupo, organização e usuário, você também deve usar um parâmetro `$select` para incluir a propriedade **id** e quaisquer outras propriedades que você deseja na instância do recurso:</span><span class="sxs-lookup"><span data-stu-id="cf961-178">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -92,9 +94,9 @@ GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select
 GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
-### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="51e6b-178">Filtrar as instâncias do recurso expandidas com uma extensão correspondente</span><span class="sxs-lookup"><span data-stu-id="51e6b-178">Filter for resource instances expanded with a matching extension</span></span> 
+### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="cf961-179">Filtrar as instâncias do recurso expandidas com uma extensão correspondente</span><span class="sxs-lookup"><span data-stu-id="cf961-179">Filter for resource instances expanded with a matching extension</span></span> 
 
-<span data-ttu-id="51e6b-179">Use a mesma solicitação REST para obter uma coleção do recurso suportado, filtre a coleção para instâncias que contêm uma extensão com uma propriedade **id** correspondente e expanda essas instâncias com a extensão.</span><span class="sxs-lookup"><span data-stu-id="51e6b-179">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
+<span data-ttu-id="cf961-180">Use a mesma solicitação REST para obter uma coleção do recurso suportado, filtre a coleção para instâncias que contêm uma extensão com uma propriedade **id** correspondente e expanda essas instâncias com a extensão.</span><span class="sxs-lookup"><span data-stu-id="cf961-180">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -105,45 +107,45 @@ GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{ex
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
-><span data-ttu-id="51e6b-180">**Observação:** a sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso ou coleção, para obter uma extensão dela.</span><span class="sxs-lookup"><span data-stu-id="51e6b-180">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it.</span></span> <span data-ttu-id="51e6b-181">Todas as outras sintaxes que permitem identificar essas instâncias de recursos ou coleções dão suporte à obtenção de extensões abertas delas de maneira semelhante.</span><span class="sxs-lookup"><span data-stu-id="51e6b-181">All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
+><span data-ttu-id="cf961-181">**Observação:** a sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso ou coleção, para obter uma extensão dela.</span><span class="sxs-lookup"><span data-stu-id="cf961-181">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it.</span></span> <span data-ttu-id="cf961-182">Todas as outras sintaxes que permitem identificar essas instâncias de recursos ou coleções dão suporte à obtenção de extensões abertas delas de maneira semelhante.</span><span class="sxs-lookup"><span data-stu-id="cf961-182">All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
 
-## <a name="path-parameters"></a><span data-ttu-id="51e6b-182">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="51e6b-182">Path parameters</span></span>
-|<span data-ttu-id="51e6b-183">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="51e6b-183">Parameter</span></span>|<span data-ttu-id="51e6b-184">Tipo</span><span class="sxs-lookup"><span data-stu-id="51e6b-184">Type</span></span>|<span data-ttu-id="51e6b-185">Descrição</span><span class="sxs-lookup"><span data-stu-id="51e6b-185">Description</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="cf961-183">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="cf961-183">Path parameters</span></span>
+|<span data-ttu-id="cf961-184">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="cf961-184">Parameter</span></span>|<span data-ttu-id="cf961-185">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf961-185">Type</span></span>|<span data-ttu-id="cf961-186">Descrição</span><span class="sxs-lookup"><span data-stu-id="cf961-186">Description</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="51e6b-186">Id</span><span class="sxs-lookup"><span data-stu-id="51e6b-186">Id</span></span>|<span data-ttu-id="51e6b-187">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="51e6b-187">string</span></span>|<span data-ttu-id="51e6b-p104">Espaço reservado para um identificador exclusivo de um objeto na coleção correspondente, como mensagens, contatos e eventos. Obrigatório. Não deve ser confundido com a propriedade **id** de uma **openTypeExtension** .</span><span class="sxs-lookup"><span data-stu-id="51e6b-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension** .</span></span>|
-|<span data-ttu-id="51e6b-191">extensionId</span><span class="sxs-lookup"><span data-stu-id="51e6b-191">extensionId</span></span>|<span data-ttu-id="51e6b-192">string</span><span class="sxs-lookup"><span data-stu-id="51e6b-192">string</span></span>|<span data-ttu-id="51e6b-p105">Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para um a uma extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade **id** quando você cria a extensão. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="51e6b-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
+|<span data-ttu-id="cf961-187">Id</span><span class="sxs-lookup"><span data-stu-id="cf961-187">Id</span></span>|<span data-ttu-id="cf961-188">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="cf961-188">string</span></span>|<span data-ttu-id="cf961-p104">Espaço reservado para um identificador exclusivo de um objeto na coleção correspondente, como mensagens, contatos e eventos. Obrigatório. Não deve ser confundido com a propriedade **id** de uma **openTypeExtension**.</span><span class="sxs-lookup"><span data-stu-id="cf961-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.</span></span>|
+|<span data-ttu-id="cf961-192">extensionId</span><span class="sxs-lookup"><span data-stu-id="cf961-192">extensionId</span></span>|<span data-ttu-id="cf961-193">string</span><span class="sxs-lookup"><span data-stu-id="cf961-193">string</span></span>|<span data-ttu-id="cf961-p105">Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para um a uma extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade **id** quando você cria a extensão. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cf961-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="51e6b-196">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="51e6b-196">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cf961-197">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cf961-197">Optional query parameters</span></span>
 
-<span data-ttu-id="51e6b-197">Verifique se aplicou a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de caracteres `$filter`.</span><span class="sxs-lookup"><span data-stu-id="51e6b-197">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
+<span data-ttu-id="cf961-198">Verifique se aplicou a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de caracteres `$filter`.</span><span class="sxs-lookup"><span data-stu-id="cf961-198">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
 
-|<span data-ttu-id="51e6b-198">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="51e6b-198">Parameter</span></span>|<span data-ttu-id="51e6b-199">Descrição</span><span class="sxs-lookup"><span data-stu-id="51e6b-199">Description</span></span>|<span data-ttu-id="51e6b-200">Exemplo</span><span class="sxs-lookup"><span data-stu-id="51e6b-200">Example</span></span>|
+|<span data-ttu-id="cf961-199">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="cf961-199">Parameter</span></span>|<span data-ttu-id="cf961-200">Descrição</span><span class="sxs-lookup"><span data-stu-id="cf961-200">Description</span></span>|<span data-ttu-id="cf961-201">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cf961-201">Example</span></span>|
 |:---------------|:--------|:-------|
-|<span data-ttu-id="51e6b-201">$filter</span><span class="sxs-lookup"><span data-stu-id="51e6b-201">$filter</span></span>|<span data-ttu-id="51e6b-202">Retorna uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.</span><span class="sxs-lookup"><span data-stu-id="51e6b-202">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|[<span data-ttu-id="51e6b-203">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="51e6b-203">Request 3</span></span>](#request-3)|
-|<span data-ttu-id="51e6b-204">$filter com o operador **any**</span><span class="sxs-lookup"><span data-stu-id="51e6b-204">$filter with **any** operator</span></span>|<span data-ttu-id="51e6b-205">Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.</span><span class="sxs-lookup"><span data-stu-id="51e6b-205">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|[<span data-ttu-id="51e6b-206">Solicitação 5</span><span class="sxs-lookup"><span data-stu-id="51e6b-206">Request 5</span></span>](#request-5)|
-|<span data-ttu-id="51e6b-207">$expand</span><span class="sxs-lookup"><span data-stu-id="51e6b-207">$expand</span></span>|<span data-ttu-id="51e6b-208">Expande uma instância de recurso para incluir uma extensão.</span><span class="sxs-lookup"><span data-stu-id="51e6b-208">Expands a resource instance to include an extension.</span></span> |<span data-ttu-id="51e6b-209">[Solicitação 3](#request-3) e [solicitação 5](#request-5)</span><span class="sxs-lookup"><span data-stu-id="51e6b-209">[Request 3](#request-3) and [request 5](#request-5)</span></span>|
+|<span data-ttu-id="cf961-202">$filter</span><span class="sxs-lookup"><span data-stu-id="cf961-202">$filter</span></span>|<span data-ttu-id="cf961-203">Retorna uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.</span><span class="sxs-lookup"><span data-stu-id="cf961-203">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|[<span data-ttu-id="cf961-204">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="cf961-204">Request 3</span></span>](#request-3)|
+|<span data-ttu-id="cf961-205">$filter com o operador **any**</span><span class="sxs-lookup"><span data-stu-id="cf961-205">$filter with **any** operator</span></span>|<span data-ttu-id="cf961-206">Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.</span><span class="sxs-lookup"><span data-stu-id="cf961-206">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|[<span data-ttu-id="cf961-207">Solicitação 5</span><span class="sxs-lookup"><span data-stu-id="cf961-207">Request 5</span></span>](#request-5)|
+|<span data-ttu-id="cf961-208">$expand</span><span class="sxs-lookup"><span data-stu-id="cf961-208">$expand</span></span>|<span data-ttu-id="cf961-209">Expande uma instância de recurso para incluir uma extensão.</span><span class="sxs-lookup"><span data-stu-id="cf961-209">Expands a resource instance to include an extension.</span></span> |<span data-ttu-id="cf961-210">[Solicitação 3](#request-3) e [solicitação 5](#request-5)</span><span class="sxs-lookup"><span data-stu-id="cf961-210">[Request 3](#request-3) and [request 5](#request-5)</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="51e6b-210">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="51e6b-210">Request headers</span></span>
-| <span data-ttu-id="51e6b-211">Nome</span><span class="sxs-lookup"><span data-stu-id="51e6b-211">Name</span></span>       | <span data-ttu-id="51e6b-212">Valor</span><span class="sxs-lookup"><span data-stu-id="51e6b-212">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="cf961-211">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cf961-211">Request headers</span></span>
+| <span data-ttu-id="cf961-212">Nome</span><span class="sxs-lookup"><span data-stu-id="cf961-212">Name</span></span>       | <span data-ttu-id="cf961-213">Valor</span><span class="sxs-lookup"><span data-stu-id="cf961-213">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="51e6b-213">Autorização</span><span class="sxs-lookup"><span data-stu-id="51e6b-213">Authorization</span></span> | <span data-ttu-id="51e6b-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="51e6b-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cf961-214">Autorização</span><span class="sxs-lookup"><span data-stu-id="cf961-214">Authorization</span></span> | <span data-ttu-id="cf961-p106">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cf961-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="51e6b-216">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="51e6b-216">Request body</span></span>
-<span data-ttu-id="51e6b-217">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="51e6b-217">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cf961-217">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cf961-217">Request body</span></span>
+<span data-ttu-id="cf961-218">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cf961-218">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="51e6b-218">Resposta</span><span class="sxs-lookup"><span data-stu-id="51e6b-218">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cf961-219">Resposta</span><span class="sxs-lookup"><span data-stu-id="cf961-219">Response</span></span>
 
-<span data-ttu-id="51e6b-p107">Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [openTypeExtension](../resources/opentypeextension.md) no corpo da resposta. Dependendo da consulta GET, o corpo da resposta exato pode ser diferente.</span><span class="sxs-lookup"><span data-stu-id="51e6b-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
-## <a name="example"></a><span data-ttu-id="51e6b-221">Exemplo</span><span class="sxs-lookup"><span data-stu-id="51e6b-221">Example</span></span>
+<span data-ttu-id="cf961-p107">Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [openTypeExtension](../resources/opentypeextension.md) no corpo da resposta. Dependendo da consulta GET, o corpo da resposta exato pode ser diferente.</span><span class="sxs-lookup"><span data-stu-id="cf961-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
+## <a name="example"></a><span data-ttu-id="cf961-222">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cf961-222">Example</span></span>
 
-#### <a name="request-1"></a><span data-ttu-id="51e6b-222">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="51e6b-222">Request 1</span></span>
+#### <a name="request-1"></a><span data-ttu-id="cf961-223">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="cf961-223">Request 1</span></span>
 
-<span data-ttu-id="51e6b-p108">O primeiro exemplo mostra 2 maneiras de referenciar uma extensão e obtém a extensão na mensagem especificada. A resposta é a mesma, independentemente da maneira usada para fazer referência à extensão.</span><span class="sxs-lookup"><span data-stu-id="51e6b-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
+<span data-ttu-id="cf961-p108">O primeiro exemplo mostra 2 maneiras de referenciar uma extensão e obtém a extensão na mensagem especificada. A resposta é a mesma, independentemente da maneira usada para fazer referência à extensão.</span><span class="sxs-lookup"><span data-stu-id="cf961-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
 
-<span data-ttu-id="51e6b-225">Em primeiro lugar, por nome:</span><span class="sxs-lookup"><span data-stu-id="51e6b-225">First, by its name:</span></span> 
+<span data-ttu-id="cf961-226">Em primeiro lugar, por nome:</span><span class="sxs-lookup"><span data-stu-id="cf961-226">First, by its name:</span></span> 
 
 
-# <a name="http"></a>[<span data-ttu-id="51e6b-226">HTTP</span><span class="sxs-lookup"><span data-stu-id="51e6b-226">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cf961-227">HTTP</span><span class="sxs-lookup"><span data-stu-id="cf961-227">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Com.Contoso.Referral", "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
@@ -152,34 +154,34 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
-# <a name="c"></a>[<span data-ttu-id="51e6b-227">C#</span><span class="sxs-lookup"><span data-stu-id="51e6b-227">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cf961-228">C#</span><span class="sxs-lookup"><span data-stu-id="cf961-228">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="51e6b-228">JavaScript</span><span class="sxs-lookup"><span data-stu-id="51e6b-228">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cf961-229">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cf961-229">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="51e6b-229">Objective-C</span><span class="sxs-lookup"><span data-stu-id="51e6b-229">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cf961-230">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cf961-230">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="51e6b-230">Java</span><span class="sxs-lookup"><span data-stu-id="51e6b-230">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="cf961-231">Java</span><span class="sxs-lookup"><span data-stu-id="cf961-231">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="51e6b-231">Em segundo lugar, por ID (nome totalmente qualificado):</span><span class="sxs-lookup"><span data-stu-id="51e6b-231">Second, by its ID (fully qualified name):</span></span>
+<span data-ttu-id="cf961-232">Em segundo lugar, por ID (nome totalmente qualificado):</span><span class="sxs-lookup"><span data-stu-id="cf961-232">Second, by its ID (fully qualified name):</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
-#### <a name="response-1"></a><span data-ttu-id="51e6b-232">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="51e6b-232">Response 1</span></span>
-<span data-ttu-id="51e6b-233">Veja a seguir a resposta para o primeiro exemplo.</span><span class="sxs-lookup"><span data-stu-id="51e6b-233">Here is the response for the first example.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="cf961-233">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="cf961-233">Response 1</span></span>
+<span data-ttu-id="cf961-234">Veja a seguir a resposta para o primeiro exemplo.</span><span class="sxs-lookup"><span data-stu-id="cf961-234">Here is the response for the first example.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -205,12 +207,12 @@ Content-type: application/json
 ****
 
 
-#### <a name="request-2"></a><span data-ttu-id="51e6b-234">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="51e6b-234">Request 2</span></span>
+#### <a name="request-2"></a><span data-ttu-id="cf961-235">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="cf961-235">Request 2</span></span>
 
-<span data-ttu-id="51e6b-235">O segundo exemplo faz referência a uma extensão por nome e obtém essa extensão no evento de grupo especificado.</span><span class="sxs-lookup"><span data-stu-id="51e6b-235">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
+<span data-ttu-id="cf961-236">O segundo exemplo faz referência a uma extensão por nome e obtém essa extensão no evento de grupo especificado.</span><span class="sxs-lookup"><span data-stu-id="cf961-236">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="51e6b-236">HTTP</span><span class="sxs-lookup"><span data-stu-id="51e6b-236">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cf961-237">HTTP</span><span class="sxs-lookup"><span data-stu-id="cf961-237">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Com.Contoso.Deal", "f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA="],
@@ -219,28 +221,28 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal/
 ```
-# <a name="c"></a>[<span data-ttu-id="51e6b-237">C#</span><span class="sxs-lookup"><span data-stu-id="51e6b-237">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cf961-238">C#</span><span class="sxs-lookup"><span data-stu-id="cf961-238">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="51e6b-238">JavaScript</span><span class="sxs-lookup"><span data-stu-id="51e6b-238">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cf961-239">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cf961-239">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="51e6b-239">Objective-C</span><span class="sxs-lookup"><span data-stu-id="51e6b-239">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cf961-240">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cf961-240">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="51e6b-240">Java</span><span class="sxs-lookup"><span data-stu-id="51e6b-240">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="cf961-241">Java</span><span class="sxs-lookup"><span data-stu-id="cf961-241">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response-2"></a><span data-ttu-id="51e6b-241">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="51e6b-241">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="cf961-242">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="cf961-242">Response 2</span></span>
 
-<span data-ttu-id="51e6b-242">Veja a seguir a resposta do segundo exemplo.</span><span class="sxs-lookup"><span data-stu-id="51e6b-242">Here is the response from the second example.</span></span>
+<span data-ttu-id="cf961-243">Veja a seguir a resposta do segundo exemplo.</span><span class="sxs-lookup"><span data-stu-id="cf961-243">Here is the response from the second example.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -264,12 +266,12 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-3"></a><span data-ttu-id="51e6b-243">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="51e6b-243">Request 3</span></span>
+#### <a name="request-3"></a><span data-ttu-id="cf961-244">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="cf961-244">Request 3</span></span>
 
-<span data-ttu-id="51e6b-p109">O terceiro exemplo obtém e expande a mensagem especificada, incluindo a extensão retornada de um filtro. O filtro retorna a extensão cujo **id** corresponde a um nome totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="51e6b-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
+<span data-ttu-id="cf961-p109">O terceiro exemplo obtém e expande a mensagem especificada, incluindo a extensão retornada de um filtro. O filtro retorna a extensão cujo **id** corresponde a um nome totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="cf961-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="51e6b-246">HTTP</span><span class="sxs-lookup"><span data-stu-id="51e6b-246">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cf961-247">HTTP</span><span class="sxs-lookup"><span data-stu-id="cf961-247">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
@@ -278,19 +280,19 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
-# <a name="c"></a>[<span data-ttu-id="51e6b-247">C#</span><span class="sxs-lookup"><span data-stu-id="51e6b-247">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cf961-248">C#</span><span class="sxs-lookup"><span data-stu-id="cf961-248">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-opentypeextension-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="51e6b-248">JavaScript</span><span class="sxs-lookup"><span data-stu-id="51e6b-248">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cf961-249">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cf961-249">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-opentypeextension-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="51e6b-249">Objective-C</span><span class="sxs-lookup"><span data-stu-id="51e6b-249">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cf961-250">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cf961-250">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="51e6b-250">Java</span><span class="sxs-lookup"><span data-stu-id="51e6b-250">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="cf961-251">Java</span><span class="sxs-lookup"><span data-stu-id="cf961-251">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -298,9 +300,9 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 
 
 
-#### <a name="response-3"></a><span data-ttu-id="51e6b-251">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="51e6b-251">Response 3</span></span>
+#### <a name="response-3"></a><span data-ttu-id="cf961-252">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="cf961-252">Response 3</span></span>
 
-<span data-ttu-id="51e6b-p110">Veja a seguir a resposta do terceiro exemplo. Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="51e6b-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="cf961-p110">Veja a seguir a resposta do terceiro exemplo. Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cf961-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -382,9 +384,9 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-4"></a><span data-ttu-id="51e6b-255">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="51e6b-255">Request 4</span></span>
+#### <a name="request-4"></a><span data-ttu-id="cf961-256">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="cf961-256">Request 4</span></span>
 
-<span data-ttu-id="51e6b-256">O quarto exemplo faz referência a uma extensão por nome totalmente qualificado e obtém essa extensão na postagem de grupo especificada.</span><span class="sxs-lookup"><span data-stu-id="51e6b-256">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
+<span data-ttu-id="cf961-257">O quarto exemplo faz referência a uma extensão por nome totalmente qualificado e obtém essa extensão na postagem de grupo especificada.</span><span class="sxs-lookup"><span data-stu-id="cf961-257">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -394,9 +396,9 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
 
-#### <a name="response-4"></a><span data-ttu-id="51e6b-257">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="51e6b-257">Response 4</span></span>
+#### <a name="response-4"></a><span data-ttu-id="cf961-258">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="cf961-258">Response 4</span></span>
 
-<span data-ttu-id="51e6b-258">Veja a seguir a resposta do quarto exemplo.</span><span class="sxs-lookup"><span data-stu-id="51e6b-258">Here is the response from the fourth example.</span></span> 
+<span data-ttu-id="cf961-259">Veja a seguir a resposta do quarto exemplo.</span><span class="sxs-lookup"><span data-stu-id="cf961-259">Here is the response from the fourth example.</span></span> 
 
 <!-- {
   "blockType": "ignored",
@@ -424,9 +426,9 @@ Content-Type: application/json
 ```
 
 
-#### <a name="request-5"></a><span data-ttu-id="51e6b-259">Solicitação 5</span><span class="sxs-lookup"><span data-stu-id="51e6b-259">Request 5</span></span>
+#### <a name="request-5"></a><span data-ttu-id="cf961-260">Solicitação 5</span><span class="sxs-lookup"><span data-stu-id="cf961-260">Request 5</span></span>
 
-<span data-ttu-id="51e6b-p111">O quinto exemplo analisa todas as mensagens na caixa de correio do usuário conectado para localizar aquelas uma contêm uma extensão correspondente a um filtro e as expande com a inclusão dessa extensão. O filtro retorna extensões cuja propriedade **id** corresponde ao nome da extensão `Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="51e6b-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="cf961-p111">O quinto exemplo analisa todas as mensagens na caixa de correio do usuário conectado para localizar aquelas uma contêm uma extensão correspondente a um filtro e as expande com a inclusão dessa extensão. O filtro retorna extensões cuja propriedade **id** corresponde ao nome da extensão `Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="cf961-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -437,11 +439,11 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 ```
 
 
-#### <a name="response-5"></a><span data-ttu-id="51e6b-262">Resposta 5</span><span class="sxs-lookup"><span data-stu-id="51e6b-262">Response 5</span></span>
+#### <a name="response-5"></a><span data-ttu-id="cf961-263">Resposta 5</span><span class="sxs-lookup"><span data-stu-id="cf961-263">Response 5</span></span>
 
-<span data-ttu-id="51e6b-263">Nessa resposta do quinto exemplo, há apenas uma mensagem na caixa de correio do usuário que tem uma extensão cuja **id** é igual a `Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="51e6b-263">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="cf961-264">Nessa resposta do quinto exemplo, há apenas uma mensagem na caixa de correio do usuário que tem uma extensão cuja **id** é igual a `Com.Contoso.Referral`.</span><span class="sxs-lookup"><span data-stu-id="cf961-264">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
 
-<span data-ttu-id="51e6b-p112">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="51e6b-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="cf961-p112">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cf961-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
