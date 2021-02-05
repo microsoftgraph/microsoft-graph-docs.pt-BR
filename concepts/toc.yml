@@ -648,6 +648,6 @@ items:
           - name: Erros
             href: errors.md
       - name: Referência v1.0
-        href: /graph/api/overview?view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
       - name: Referência beta
-        href: /graph/api/overview?view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
