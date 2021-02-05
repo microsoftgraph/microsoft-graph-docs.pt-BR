@@ -5,26 +5,26 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2fc50a1017e7b08c8c072a05717b2de4f2fb7894
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 8ffd1ceec1d3dbdb7e30a059836b11cc8e5a0276
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459946"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092635"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
 Namespace: microsoft.graph
 
-Leia as propriedades, os relacionamentos ou o conteúdo bruto de um anexo de um [evento](../resources/event.md), [mensagem](../resources/message.md) ou [postagem](../resources/post.md) do usuário. 
+Leia as propriedades, os relacionamentos ou o conteúdo bruto de um anexo que está vinculado a um usuário [evento](../resources/event.md), [mensagem](../resources/message.md), ou postagem de [grupo](../resources/post.md). 
 
 Um anexo pode ser de um dos seguintes tipos:
 
-* Um arquivo (recurso [fileAttachment](../resources/fileattachment.md)).
-* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)). Você pode usar `$expand` para obter mais propriedades desse item. Veja um [exemplo](#request-2) abaixo.
-* Um link para um arquivo (recurso [referenceAttachment](../resources/referenceattachment.md)).
+* Um arquivo. Programaticamente, este é um recurso [fileAttachment](../resources/fileattachment.md).
+* Um item do Outlook (contato, evento ou mensagem). Programaticamente, um anexo de item é um recurso [itemAttachment](../resources/itemattachment.md). Você pode usar `$expand` para obter mais propriedades desse item. Veja um [exemplo](#request-2) abaixo.
+* Um link para um arquivo armazenado na nuvem. Programaticamente, este é um recurso [referenceAttachment](../resources/referenceattachment.md).
 
-Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md). 
+Todos esses tipos de anexos são derivados do recurso [anexo](../resources/attachment.md). 
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Obter o conteúdo bruto de um arquivo ou anexo de item
 Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item. 
@@ -42,11 +42,15 @@ Para um anexo de item que é um [contato](../resources/contact.md), [evento](../
 A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Se estiver acessando anexos em Mensagens: Mail.Read.
-* Se estiver acessando anexos em Eventos: Calendars.Read.
-* Se estiver acessando anexos em postagens de grupo: Group.Read.All.
+Dependendo do recurso (**evento**, **mensagem** ou **postagem**) ao qual o anexo está anexado e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+|:-----|:-----|:-----|:-----|
+| [evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [postagem](../resources/post.md) | Group.Read.All | Sem suporte | Sem suporte |
+
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All.

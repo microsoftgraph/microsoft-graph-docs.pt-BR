@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: c088576689067fd1251bbc43509966d97db2e922
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 9ea1a2f078880397f8cb5b96c962c7aa7453b502
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796861"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092684"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 As extensões abertas (anteriormente conhecidas como extensões de dados do Office 365) oferecem uma maneira fácil de adicionar diretamente propriedades não tipadas a um recurso do Microsoft Graph.
 
-Extensões abertas são representadas pelo recurso **openTypeExtension** . Qualquer extensão aberta adicionada a um recurso é mostrada na propriedade de navegação **extensions** , que deriva do tipo abstrato [extension](extension.md). Cada extensão tem uma propriedade **extensionName** , que é a única propriedade predefinida e gravável para todas as extensões, juntamente com seus dados personalizados.
+Extensões abertas são representadas pelo recurso **openTypeExtension**. Qualquer extensão aberta adicionada a um recurso é mostrada na propriedade de navegação **extensions**, que deriva do tipo abstrato [extension](extension.md). Cada extensão tem uma propriedade **extensionName**, que é a única propriedade predefinida e gravável para todas as extensões, juntamente com seus dados personalizados.
 
-Um modo de garantir que os nomes de extensão sejam exclusivos é usar um formato reverso de DNS no sistema de nomes de domínio que dependa de _seu próprio domínio_ , por exemplo, `Com.Contoso.ContactInfo`. Não use o domínio Microsoft (`Com.Microsoft` ou `Com.OnMicrosoft`) em um nome de extensão.
+Um modo de garantir que os nomes de extensão sejam exclusivos é usar um formato reverso de DNS no sistema de nomes de domínio que dependa de _seu próprio domínio_, por exemplo, `Com.Contoso.ContactInfo`. Não use o domínio Microsoft (`Com.Microsoft` ou `Com.OnMicrosoft`) em um nome de extensão.
 
 Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](/graph/extensibility-open-users)
 
@@ -28,7 +28,7 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 
 |Recurso |Versão |
 |:---------------|:-------|
-| [Unidade administrativa](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | Somente para visualização |
+| [Unidade administrativa](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | GA |
 | [Evento de calendário](event.md) | GA |
 | [Evento de calendário](event.md) do grupo | GA |
 | [Postagem](post.md) de thread de conversa do grupo | GA |
@@ -78,7 +78,7 @@ Veja a seguir uma representação JSON do recurso.
 |Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |extensionName|String|Um identificador de texto exclusivo para uma extensão de tipo aberto. Obrigatório.|
-|id|String| Um identificador totalmente qualificado que concatena o tipo de extensão com **extensionName** . Somente leitura.|
+|id|String| Um identificador totalmente qualificado que concatena o tipo de extensão com **extensionName**. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 
@@ -88,7 +88,7 @@ Nenhuma
 
 |Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Create](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (em uma instância de recurso existente), ou um novo [contato](../resources/contact.md), [evento](../resources/event.md), [mensagem](../resources/message.md), [postagem](post.md), [todoTask](todotask.md), ou [todoTaskList](todotasklist.md) que contém um objeto OpenTypeExtension | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
+|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (em uma instância de recurso existente), ou um novo [contato](../resources/contact.md), [evento](../resources/event.md), [mensagem](../resources/message.md), [postagem](post.md), [todoTask](todotask.md), ou [todoTaskList](todotasklist.md) que contém um objeto OpenTypeExtension | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Leia propriedades e relações do objeto openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Atualize o objeto openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Nenhuma |Exclua um objeto openTypeExtension. |

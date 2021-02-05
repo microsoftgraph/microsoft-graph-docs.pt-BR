@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4550912f9f4392131e62cb26a3328698bf121c15
-ms.sourcegitcommit: 9a03b719d1316729dd022bf4d268894e91515475
+ms.openlocfilehash: c318ba13b21767311d2cecc5b421cea21a81b2c0
+ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50034279"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50092593"
 ---
 # <a name="get-subscription"></a>Obter assinatura
 
@@ -18,9 +18,11 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e os relacionamentos da uma assinatura.
 
+Consulte a tabela na seção [Permissões](#permissions) para obter a lista de recursos que oferecem suporte à inscrição para alterar notificações.
+
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
@@ -42,7 +44,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
-[!INCLUDE [beta-disclaimer](../../includes/teams-subscription-notes.md)]
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### <a name="driveitem"></a>driveItem
 
