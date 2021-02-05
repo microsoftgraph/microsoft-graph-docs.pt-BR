@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 94fc4840f5be9d33eeac0f1dc2ccf98339268c24
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: be28e66a48462ec2bda64c3ae66b1f0cb6059548
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982625"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115196"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Obtenha dados sobre o uso do site do SharePoint.
 
-> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte relatórios do [Microsoft 365 - uso do site do SharePoint.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
+> **Observação:** Para obter detalhes sobre diferentes visualizações e nomes de relatórios, consulte [relatórios do Microsoft 365 - uso do site do SharePoint.](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)
 
 ## <a name="permissions"></a>Permissões
 
@@ -78,10 +78,18 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 - Nome de exibição do proprietário
 - Excluído
 - Data da última atividade
+- Id do rótulo de sensibilidade do site
+- Compartilhamento externo
+- Política de dispositivo nãomanageda
+- Localização Geográfica
 - Contagem de arquivos
 - Contagem de arquivos ativos
 - Contagem de visualização de página
 - Contagem de páginas visitadas
+- Contagem de links anônimos
+- Contagem de links da empresa
+- Link seguro para contagem de convidados
+- Link seguro para contagem de membros
 - Armazenamento utilizado (bytes)
 - Armazenamento alocado (bytes)
 - Modelo de Web raiz
@@ -139,7 +147,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,Site Sensitivity Label Id,External Sharing,Unmanaged Device Policy,Geo Location,File Count,Active File Count,Page View Count,Visited Page Count,Anonymous Link Count,Company Link Count,Secure Link For Guest Count,Secure Link For Member Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -189,10 +197,18 @@ Content-Length: 484
       "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
+      "SiteSensitivityLabelId": "SiteSensitivityLabelId-value",
+      "ExternalSharing": false,
+      "UnmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
+      "GeoLocation": "GeoLocation-value",
       "fileCount": 170, 
       "activeFileCount": 25, 
       "pageViewCount": 7, 
       "visitedPageCount": 3, 
+      "AnonymousLinkCount": 5,
+      "CompanyLinkCount": 8,
+      "SecureLinkForGuestCount": 13,
+      "SecureLinkForMemberCount": 11,
       "storageUsedInBytes": 63442116, 
       "storageAllocatedInBytes": 2748779094400, 
       "rootWebTemplate": "Publishing Site", 

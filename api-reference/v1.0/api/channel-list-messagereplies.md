@@ -1,35 +1,35 @@
 ---
 title: Listar respostas de mensagens de canal
-description: Listar todas as respostas de uma mensagem em um canal de uma equipe.
+description: Lista todas as respostas de uma mensagem em um canal de uma equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 73bd674eece5e0a3f9d26d7e629ba51f768b4a81
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 98bda1fb8c86d0d3d6bc4c5a803e9f169b798dee
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905306"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115161"
 ---
 # <a name="list-channel-message-replies"></a>Listar respostas de mensagens de canal
 
 Namespace: microsoft.graph
 
-Listar todas as respostas de uma [mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
+Lista todas as respostas de uma [mensagem em](../resources/chatmessage.md) um [canal](../resources/channel.md) de uma equipe.
 
-Este método lista somente as respostas da mensagem especificada, se houver. Para obter a mensagem em si, basta chamar [Message Get Channel](channel-get-message.md).
+Este método lista somente as respostas da mensagem especificada, se alguma. Para receber a mensagem em si, basta chamar [a mensagem de get do canal.](channel-get-message.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| ChannelMessage.Read.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Sem suporte. |
+|Application| ChannelMessage.Read.Group* |
 
-> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [chatmessage](../resources/chatmessage.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Neste exemplo, a mensagem especificada tem duas respostas. Cada resposta tem um ou mais objetos [chatMessageMention](../resources/chatmessagemention.md) .
+Neste exemplo, a mensagem especificada tem duas respostas. Cada resposta tem um ou mais [objetos chatMessageMention.](../resources/chatmessagemention.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)

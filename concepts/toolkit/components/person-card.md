@@ -1,33 +1,33 @@
 ---
-title: Person-Card componente no kit de ferramentas do Microsoft Graph
-description: Um componente de Person-Card é um componente para exibir mais informações relacionadas a uma pessoa.
+title: Person-Card componente no Kit de Ferramentas do Microsoft Graph
+description: Um Person-Card componente é um componente para exibir mais informações relacionadas a uma pessoa.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 79a14c3d37fba06a076e319b34029008b7fbf2fd
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: abee2c015c2dbaf53202b132c425a4a12df6ac30
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659180"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115224"
 ---
-# <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no kit de ferramentas do Microsoft Graph
+# <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no Kit de Ferramentas do Microsoft Graph
 
-Um componente de Person-Card é um componente responsivo para exibir mais informações relacionadas a uma pessoa. Geralmente, é usado como um submenu do `mgt-person` componente.
+Um Person-Card componente é um componente responsivo para exibir mais informações relacionadas a uma pessoa. Ele geralmente é usado como um flyout no `mgt-person` componente.
 
-Para obter mais informações sobre o `mgt-person` componente, consulte [Gerenciamento-pessoa](./person.md).
+Para obter mais informações sobre `mgt-person` o componente, consulte [mgt-person](./person.md).
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra o uso do `mgt-person-card` componente com um `mgt-person` componente. Passe o mouse sobre a pessoa para ver o cartão Person e use o editor de código para ver como [as propriedades](#properties) alteram o comportamento do componente.
+O exemplo a seguir mostra o uso do `mgt-person-card` componente com um `mgt-person` componente. Passe o mouse sobre a pessoa para ver o [](#properties) Cartão de Pessoa e use o editor de código para ver como as propriedades alteram o comportamento do componente.
   
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
 
-[Abra este exemplo em gerenciamento de. dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
+[Abra este exemplo em mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
 
 
 ## <a name="global-component-configuration"></a>Configuração de componente global
 
-A `MgtPersonCard` classe expõe um `config` objeto estático que configura todos os componentes de cartão de pessoa no aplicativo. O objeto config Configura quais seções e quais APIs são usadas pelo cartão de pessoa para buscar detalhes sobre um usuário do Microsoft Graph.
+A `MgtPersonCard` classe expõe um objeto `config` estático que configura todos os componentes de cartão de pessoa no aplicativo. O objeto config configura quais seções e quais APIs são usadas pelo cartão da pessoa para buscar detalhes sobre um usuário do Microsoft Graph.
 
 Por padrão, todas as seções e APIs estão habilitadas. O exemplo a seguir mostra como usar o objeto config para desabilitar seções ou APIs.
 
@@ -42,39 +42,39 @@ As propriedades a seguir estão disponíveis no objeto config.
 
 | Propriedade | Descrição |
 | ------------ | ------------- |
-| useContactApis | `boolean` – Indica se o componente de cartão de pessoa pode usar a API de contato do Microsoft Graph para pesquisar detalhes e fotos de contato. O valor padrão é `true`.  |
-| seções | `object` -Configura quais seções são mostradas no cartão de pessoa.  |
+| useContactApis | `boolean` – Indica se o componente cartão de pessoa pode usar a API de Contato do Microsoft Graph para pesquisar detalhes e fotos do contato. O valor padrão é `true`.  |
+| seções | `object` - Configura quais seções são mostradas no cartão da pessoa.  |
 
-### <a name="person-card-sections"></a>Seções de cartões de pessoa
+### <a name="person-card-sections"></a>Seções do cartão da pessoa
 
-O cartão de pessoa contém várias seções configuráveis para exibir os detalhes da pessoa:
-* Contato – informações de contato, como email, telefone, cargo, local e muito mais.
-* Organização-gráfico organizacional com gerentes, subordinados diretos e pessoas relevantes.
-* Mensagens – mensagens de email mais relevantes com o usuário conectado no momento.
-* Arquivos-arquivos compartilhados mais relevantes com o usuário conectado no momento.
-* Profile-informações de perfil, como projetos, habilidades, idiomas e muito mais.
+O cartão da pessoa contém várias seções configuráveis para exibir detalhes da pessoa:
+* Contato - Informações de contato, como email, telefone, posição, local e muito mais.
+* Organização – Gráfico organizacional com gerentes, relatórios diretos e pessoas relevantes.
+* Mensagens - Mensagens de email mais relevantes com o usuário atualmente assinado.
+* Arquivos - arquivos compartilhados mais relevantes com o usuário atualmente assinado.
+* Perfil – informações de perfil, como projetos, habilidades, idiomas e muito mais.
 
-As seções são carregadas por padrão, mas podem ser desabilitadas globalmente por meio da `MgtPersonCard.config.sections` propriedade Object. As propriedades a seguir estão disponíveis.
+As seções são carregadas por padrão, mas podem ser desabilitadas globalmente por meio da `MgtPersonCard.config.sections` propriedade do objeto. As propriedades a seguir estão disponíveis.
 
 | Propriedade | Descrição |
 | ------------ | ------------- |
-| organization | `boolean` -Indica se a seção de organização de cartões de pessoa é exibida. O valor padrão é `true`.  |
-| mailMessage | `boolean` -Indica se a seção mensagens de cartão de pessoa é mostrada. O valor padrão é `true`.  |
-| arquivos | `boolean` -Indica se a seção arquivos de cartão de pessoa é mostrada. O valor padrão é `true`.  |
-| perfil | `boolean` -Indica se a seção de perfil de cartão de pessoa é mostrada. O valor padrão é `true`.  |
+| organization | `boolean` - Indica se a seção da organização do cartão de pessoa é exibida. O valor padrão é `true`.  |
+| mailMessages | `boolean` - Indica se a seção de mensagens do cartão da pessoa é exibida. O valor padrão é `true`.  |
+| arquivos | `boolean` - Indica se a seção de arquivos de cartão de pessoa é mostrada. O valor padrão é `true`.  |
+| perfil | `boolean` - Indica se a seção de perfil de cartão de pessoa é mostrada. O valor padrão é `true`.  |
 
-Para desabilitar uma seção, basta definir a propriedade como `false` em seu código de inicialização do aplicativo:.
+Para desabilitar uma seção, basta definir a propriedade como `false` no código de inicialização do aplicativo:
 ```ts
 import { MgtPersonCard } from `@microsoft/mgt`;
 
 MgtPersonCard.config.sections.profile = false;
 ```
 
-## <a name="setup-for-teams-integrations"></a>Configuração para integrações do teams
+## <a name="setup-for-teams-integrations"></a>Configuração para integrações do Teams
 
-O componente Person-Card permite que o usuário entre em contato com a pessoa de destino, incluindo via chat do Microsoft Teams. Se estiver usando o componente dentro de um aplicativo de guia do Teams, você pode garantir que o componente se vincule diretamente a um chat, em vez de abrir uma janela do navegador, definindo o `microsoftTeamsLib` no `TeamsProvider` .
+O Person-Card componente permite que o usuário entre em contato com a pessoa de destino, incluindo por meio de chat do Teams. Se estiver usando o componente dentro de um aplicativo de guia do Teams, você pode garantir que o componente se vincula diretamente a um chat em vez de abrir uma janela do navegador configurando o `microsoftTeamsLib` em `TeamsProvider` .
 
-Se o componente de Person-Card não conseguir detectar a biblioteca do Teams, o componente tentará abrir o cliente da Web do teams.
+Se o Person-Card componente não puder detectar a biblioteca do Teams, o componente tentará abrir o cliente Web do Teams.
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
@@ -83,33 +83,33 @@ import {TeamsHelper} from '@microsoft/mgt';
 TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
 ```
 
-Para obter mais informações sobre o `TeamsProvider` provedor, consulte [Microsoft Teams Provider](../providers/teams.md).
+Para saber mais sobre o `TeamsProvider` provedor, confira [o provedor do Microsoft Teams.](../providers/teams.md)
 
 ## <a name="properties"></a>Propriedades
 
-Por padrão, o `mgt-person` componente passará os detalhes da pessoa para o `mgt-person-card` componente. No entanto, você pode usar esses atributos para mudar isso ao padronizar o `mgt-person` componente ou ao usar o `mgt-person-card` componente como um componente autônomo.
+Por padrão, o `mgt-person` componente passará os detalhes da pessoa para o `mgt-person-card` componente. No entanto, você pode usar esses atributos para alterar isso ao modificar o componente ou ao usar o componente como `mgt-person` `mgt-person-card` um componente autônomo.
 
 | Atributo         | Tipo                     | Descrição                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
-| pessoa-detalhes | MicrosoftGraph. User <br> MicrosoftGraph. Person <br> MicrosoftGraph. Contact | Objeto Person conforme definido pelo Microsoft Graph, contendo detalhes relacionados ao usuário. |
-| pessoa-imagem   | string                    | URI de imagem relacionado à pessoa exibida no cartão.                                   |
-| Inherit-detalhes   | Nenhum.                  | Permite que o cartão de pessoa percorra a árvore pai para `mgt-person` que o componente use o mesmo `person-details` e os `person-image` dados.                      |
-| ID de usuário | string | Permite que os desenvolvedores forneçam o ID de usuário para dados de recuperar exibidos no componente de cartão de pessoa |
-| pessoa – consulta | string | Permite que os desenvolvedores forneçam uma consulta de pessoa para dados de recuperar exibidos no componente de cartão de pessoa |
+| person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Objeto Person conforme definido pelo Microsoft Graph, contendo detalhes relacionados ao usuário. |
+| person-image   | string                    | URI da imagem relacionada à pessoa exibida no cartão.                                   |
+| inherit-details   | Nenhum.                  | Permite que o cartão de pessoa ande na árvore pai `mgt-person` do componente para usar o mesmo e os `person-details` `person-image` dados.                      |
+| user-id | string | Permite que os desenvolvedores fornecem a ID de usuário para recuperar dados mostrados no componente person-card |
+| person-query | string | Permite que os desenvolvedores fornecem consulta de pessoa para recuperar dados mostrados no componente person-card |
 
 
 ## <a name="templates"></a>Modelos
 
-O componente Person-Card usa [modelos](../customize-components/templates.md) que permitem que você adicione ou substitua partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e defina o `data-type` valor como um dos seguintes.
+O Person-Card componente usa [modelos](../customize-components/templates.md) que permitem adicionar ou substituir partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir `<template>` o valor como um dos `data-type` seguintes.
 
 | Tipo de dados | Contexto de dados | Descrição |
 | - | - | - |
-| sem dados | null | O modelo usado quando não há dados disponíveis.
-| Padrão. | `person`: O objeto de detalhes da pessoa <br> `personImage`: A URL da imagem | O modelo padrão substitui todo o componente pelo seu. |
-| pessoa-detalhes | `person`: O objeto de detalhes da pessoa | O modelo usado para renderizar a parte superior do cartão Person. |
-| adicional-detalhes | `person`: O objeto de detalhes da pessoa <br> `personImage`: a URL da imagem | O modelo usado para adicionar conteúdo personalizado ao contêiner detalhes adicionais. |
+| no-data | null | O modelo usado quando não há dados disponíveis.
+| Padrão. | `person`: O objeto de detalhes da pessoa <br> `personImage`: a URL da imagem | O modelo padrão substitui todo o componente pelo seu próprio. |
+| person-details | `person`: O objeto de detalhes da pessoa | O modelo usado para renderizar a parte superior do cartão da pessoa. |
+| additional-details | `person`: O objeto de detalhes da pessoa <br> `personImage`: a URL da imagem | O modelo usado para adicionar conteúdo personalizado ao contêiner de detalhes adicionais. |
 
-Por exemplo, você pode usar um modelo para personalizar o componente anexado ao `mgt-person` componente e um modelo para adicionar mais detalhes no cartão. 
+Por exemplo, você pode usar um modelo para personalizar o componente anexado ao componente e um modelo para adicionar `mgt-person` mais detalhes no cartão. 
 
 ```html
     <mgt-person person-query="me" view="twolines" person-card="hover">
@@ -129,7 +129,7 @@ Por exemplo, você pode usar um modelo para personalizar o componente anexado ao
 
 ```
 
-## <a name="css-custom-properties"></a>Propriedades personalizadas de CSS
+## <a name="css-custom-properties"></a>Propriedades personalizadas css
 
 O `mgt-person-card` componente define as seguintes propriedades personalizadas de CSS. 
 
@@ -149,30 +149,30 @@ mgt-person {
 }
 ```
 
-Para saber mais, confira [estilos de componentes](../customize-components/style.md).
+Para saber mais, consulte [os componentes de estilo.](../customize-components/style.md)
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>APIs e permissões do Microsoft Graph
 
-O controle Person-Card usa as seguintes APIs e permissões do Microsoft Graph.
+O Person-Card controle usa as seguintes APIs e permissões do Microsoft Graph.
 
 | Recurso | Permissão | Seção |
 | - | - | - |
 | [/me](/graph/api/user-get) | User.Read | Padrão |
-| [$value/me/Photo/](/graph/api/profilephoto-get) | User.Read | Padrão |
-| [/me/People/? $search =](/graph/api/user-list-people) | People.Read | Padrão |
+| [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | Padrão |
+| [/me/people/?$search=](/graph/api/user-list-people) | People.Read | Padrão |
 | [/me/contacts/\*](/graph/api/user-list-contacts) | Contacts.Read | Padrão |
 | [/users/{id}](/graph/api/user-list-people) | User.ReadBasic.All | Padrão |
-| [$value/Users/{ID}/Photo/](/graph/api/profilephoto-get) | User.ReadBasic.All | Padrão |
+| [/users/{id}/photo/$value](/graph/api/profilephoto-get) | User.ReadBasic.All | Padrão |
 | [/me/presence](/graph/api/presence-get) | Presence.Read | Padrão |
 | [/users/{id}/presence](/graph/api/presence-get) | Presence.Read.All | Padrão |
 | [/users/{id}/manager](/graph/api/user-list-manager) | User.Read.All | Organização |
 | [/users/{id}/directReports](/graph/api/user-list-directreports) | User.Read.All | Organização |
 | [/users/{id}/people](/graph/api/user-list-people) | People.Read.All | Organização |
 | [/me/messages](/graph/api/user-list-messages) | Mail.ReadBasic | Mensagens |
-| [/me/insights/Shared](/graph/api/insights-list-shared) e [/me/insights/used](/graph/api/insights-list-used) | Sites.Read.All | Arquivos |
+| [/me/insights/shared](/graph/api/insights-list-shared) e [/me/insights/used](/graph/api/insights-list-used) | Sites.Read.All | Arquivos |
 | [/users/{id}/profile](/graph/api/profile-get) | User.Read.All | Perfil |
 
-A `MgtPersonCard` classe também expõe um `getScopes` método estático que retorna uma matriz de escopos necessários para que o cartão Person funcione com base na configuração do cartão de pessoa global.
+A classe também expõe um método estático que retorna uma matriz de escopos necessários para que o cartão de pessoa funcione com base na configuração `MgtPersonCard` global do cartão de `getScopes` pessoa.
 
 ```ts
 import { MgtPersonCard } from `@microsoft/mgt`;
@@ -182,4 +182,4 @@ const neededScopes = MgtPersonCard.getScopes();
 
 ## <a name="authentication"></a>Autenticação
 
-O controle Person-Card usa o provedor de autenticação global descrito na [documentação de autenticação](../providers/providers.md). 
+O Person-Card controle usa o provedor de autenticação global descrito na documentação [de autenticação.](../providers/providers.md) 

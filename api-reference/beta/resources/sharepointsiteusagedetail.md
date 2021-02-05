@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso sharePointSiteUsageDetail
+title: Tipo de recurso sharePointSiteUsageDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 1b61321dfeb0a9aa14651e7d13ad7184b30c3423
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8f06cf9fcf1dfc01af3e98c01a79a86426e19ee
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997785"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115217"
 ---
-# <a name="sharepointsiteusagedetail-resource-type"></a>tipo de recurso sharePointSiteUsageDetail
+# <a name="sharepointsiteusagedetail-resource-type"></a>Tipo de recurso sharePointSiteUsageDetail
 
 Namespace: microsoft.graph
 
@@ -27,10 +27,18 @@ Namespace: microsoft.graph
 | ownerPrincipalName      | String  |
 | isDeleted               | Boolean |
 | lastActivityDate        | Data    |
-| Contagem de FileCount               | Int64   |
+| SiteSensitivityLabelId  | String  |
+| ExternalSharing         | Boolean |
+| UnmanagedDevicePolicy   | String  |
+| GeoLocation             | String  |
+| fileCount               | Int64   |
 | activeFileCount         | Int64   |
 | pageViewCount           | Int64   |
-| visitedPageCount        | Int64   |
+| visitPageCount        | Int64   |
+| AnonymousLinkCount      | Int64   |
+| CompanyLinkCount        | Int64   |
+| SecureLinkForGuestCount | Int64   |
+| SecureLinkForMemberCount| Int64   |
 | storageUsedInBytes      | Int64   |
 | storageAllocatedInBytes | Int64   |
 | rootWebTemplate         | String  |
@@ -54,10 +62,19 @@ Veja a seguir uma representação JSON do recurso.
   "ownerPrincipalName": "String",
   "isDeleted": true,
   "lastActivityDate": "Date",
+  "lastActivityDate": "2017-09-01", 
+  "SiteSensitivityLabelId": "String",
+  "ExternalSharing": true,
+  "UnmanagedDevicePolicy": "String",
+  "GeoLocation": "String",
   "fileCount": 1024,
   "activeFileCount": 1024,
   "pageViewCount": 1024,
   "visitedPageCount": 1024,
+  "AnonymousLinkCount": 5,
+  "CompanyLinkCount": 8,
+  "SecureLinkForGuestCount": 13,
+  "SecureLinkForMemberCount": 11,
   "storageUsedInBytes": 1024,
   "storageAllocatedInBytes": 1024,
   "rootWebTemplate": "String",

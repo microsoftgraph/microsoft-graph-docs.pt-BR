@@ -1,22 +1,22 @@
 ---
-title: Obter uma resposta a uma mensagem de canal
-description: Obter uma única resposta a uma mensagem em um canal de uma equipe.
+title: Obter uma resposta para uma mensagem de canal
+description: Obter uma única resposta para uma mensagem em um canal de uma equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 501adcb7e7413bb2793864e604c696a41fe860d6
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 846038341b167f5276d8be4d7a343c17bd70c867
+ms.sourcegitcommit: 1b01c820be659f85f380fc883bbb36036b7daadf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904459"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50115168"
 ---
-# <a name="get-a-reply-to-a-channel-message"></a>Obter uma resposta a uma mensagem de canal
+# <a name="get-a-reply-to-a-channel-message"></a>Obter uma resposta para uma mensagem de canal
 
 Namespace: microsoft.graph
 
-Obter uma única resposta a uma [mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
+Obter uma única resposta a [uma mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |---------|-------------|
-|Delegada (conta corporativa ou de estudante)| ChannelMessage.Read.All |
+|Delegado (conta corporativa ou de estudante)| ChannelMessage.Read.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| Sem suporte. |
+|Application| ChannelMessage.Read.Group* |
 
-> **Observação** : Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
