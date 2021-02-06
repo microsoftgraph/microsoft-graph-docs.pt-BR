@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso accessReviewReviewerScope
-description: Representa quem irá revisar uma revisão do Access.
+title: Tipo de recurso accessReviewReviewerScope
+description: Representa quem revisará uma revisão de acesso.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: edc25e19a51f787dd0799fbd9e6e6c2a1b45787e
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 7c8a0644699daf7e204226d89bdd6cab6048888d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000775"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133487"
 ---
-# <a name="accessreviewreviewerscope-resource-type"></a>tipo de recurso accessReviewReviewerScope
+# <a name="accessreviewreviewerscope-resource-type"></a>Tipo de recurso accessReviewReviewerScope
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O accessReviewReviewerScope define quem irá revisar instâncias de um [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Isso é expresso como uma consulta OData, que permite que os revisores sejam especificados como uma lista estática de usuários (ou seja, usuários específicos, proprietários de grupo, membros do grupo) ou dinamicamente (ou seja, o caso em que cada usuário é revisado por seu gerente). Para criar uma autoanálise (onde os usuários revisam seu próprio acesso), não forneça revisores na criação do [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) .
+O accessReviewReviewerScope define quem revisará instâncias de um [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Isso é expresso como uma consulta OData, que permite que os revisadores sejam especificados como uma lista estática de usuários (ou seja, usuários específicos, proprietários de grupos, membros do grupo) ou dinamicamente (ou seja, o caso em que cada usuário é revisado por seu gerente). Para criar uma auto-revisão (onde os usuários revisam seu próprio acesso), não forneça aos revisores sobre a criação [de accessReviewScheduleDefinition.](accessreviewscheduledefinition.md)
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | :-------------------------| :---------- | :---------- |
-| consulta | Cadeia de caracteres | A consulta especificando quem será o revisor. Consulte a tabela para obter exemplos. |
-| queryType | Cadeia de caracteres | O tipo de consulta. Os exemplos incluem `MicrosoftGraph` e `ARM` . |
-| queryRoot | Cadeia de caracteres | No cenário em que os revisores precisam ser especificados dinamicamente, essa propriedade é usada para indicar a fonte relativa da consulta. Essa propriedade só será necessária se uma consulta relativa (ou seja,./Manager) for especificada. |
+| consulta | String | A consulta especificando quem será o revistor. Consulte a tabela para ver exemplos. |
+| queryType | String | O tipo de consulta. Exemplos incluem `MicrosoftGraph` e `ARM` . |
+| queryRoot | String | No cenário em que os revisadores precisam ser especificados dinamicamente, essa propriedade é usada para indicar a fonte relativa da consulta. Essa propriedade só será necessária se uma consulta relativa (ou seja, ./manager) for especificada. |
 
-### <a name="supported-queries-for-accessreviewreviewerscope"></a>Consultas com suporte para o accessReviewReviewerScope
+### <a name="supported-queries-for-accessreviewreviewerscope"></a>Consultas com suporte para accessReviewReviewerScope
 
 |Cenário| consulta | queryType | queryRoot |
 |--|--|--|--|
-| Proprietário do grupo como revisor | /groups/{Group ID}/Owners |MicrosoftGraph||
-| Usuário específico como revisor | ID/Users/{User} |MicrosoftGraph||
-| Gerente do usuário que está sendo revisado como revisor | ./manager | MicrosoftGraph |correta|
+| Proprietário do grupo como revistor | /groups/{group id}/owners |MicrosoftGraph||
+| Usuário específico como revistor | /users/{user id} |MicrosoftGraph||
+| Gerente do usuário que está sendo revisado como revistor | ./manager | MicrosoftGraph |decisões|
 
 ## <a name="relationships"></a>Relações
 Nenhum

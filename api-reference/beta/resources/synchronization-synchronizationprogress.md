@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso synchronizationProgress
-description: Representa o andamento de um synchronizationJob para a conclusão.
+title: Tipo de recurso synchronizationProgress
+description: Representa o progresso de um synchronizationJob em direção à conclusão.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5040cb32b664497f2cbed9dc9ca77ce2a2a54ee7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: f6f8f7cc5d0419a6f0e9203513db5b1452db1797
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131639"
 ---
-# <a name="synchronizationprogress-resource-type"></a>tipo de recurso synchronizationProgress
+# <a name="synchronizationprogress-resource-type"></a>Tipo de recurso synchronizationProgress
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o andamento de um [synchronizationJob](synchronization-synchronizationjob.md) para a conclusão.
+Representa o progresso de [um synchronizationJob em](synchronization-synchronizationjob.md) direção à conclusão.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                              | Tipo      | Descrição    |
 |:--------------------------------------|:----------|:---------------|
 |completedUnits|Int32|O numerador de uma taxa de progresso; o número de unidades de alterações já processadas.|
-|progressObservationDateTime|DateTimeOffset|O tempo de uma observação de progresso como um deslocamento em minutos do UTC.|
+|progressObservationDateTime|DateTimeOffset|O tempo de uma observação de progresso como um deslocamento em minutos de UTC.|
 |totalUnits|Int32|O denominador de uma taxa de progresso; várias unidades de alterações a serem processadas para realizar a sincronização.|
-|unid|String|Uma descrição opcional das unidades.|
+|unidades|String|Uma descrição opcional das unidades.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 

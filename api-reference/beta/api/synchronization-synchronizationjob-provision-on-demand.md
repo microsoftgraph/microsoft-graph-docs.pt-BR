@@ -3,14 +3,14 @@ title: 'synchronizationJob: provisionOnDemand'
 description: Selecione um usuário e provisione a conta sob demanda.
 author: ArvindHarinder1
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ca9a670bfb70e35a76915514d925f7cb3fb0fb06
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: fa7acf4aa4ced807098d40f473aa4104593ed40a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753409"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133844"
 ---
 # <a name="synchronizationjob-provisionondemand"></a>synchronizationJob: provisionOnDemand
 
@@ -50,13 +50,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|parameters|coleção [synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)|Representa os objetos que serão provisionados e as regras de sincronização executadas. O recurso é usado principalmente para provisionamento sob demanda. |
+|parameters|[Coleção synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)|Representa os objetos que serão provisionados e as regras de sincronização executadas. O recurso é usado principalmente para provisionamento sob demanda. |
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um stringKeyStringValuePair.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma cadeia de caracteresKeyStringValuePair.
 
 ## <a name="examples"></a>Exemplos
 

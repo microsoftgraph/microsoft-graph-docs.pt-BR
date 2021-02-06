@@ -1,16 +1,16 @@
 ---
 title: Criar synchronizationJob
-description: Crie um novo trabalho de sincronização com um esquema de sincronização padrão. O trabalho é criado em um estado desabilitado. Inicie o trabalho de início de chamada para iniciar a sincronização.
+description: Crie um novo trabalho de sincronização com um esquema de sincronização padrão. O trabalho é criado em um estado desabilitado. Chame o trabalho de início para iniciar a sincronização.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9b857ade97b841df28c4f5090bd4f9132b76e742
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: a565a393715edb2379590b225e0569f4397b9b23
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974158"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131646"
 ---
 # <a name="create-synchronizationjob"></a>Criar synchronizationJob
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo trabalho de sincronização com um esquema de sincronização padrão. O trabalho é criado em um estado desabilitado. [Inicie o trabalho de início](synchronization-synchronizationjob-start.md) de chamada para iniciar a sincronização.
+Crie um novo trabalho de sincronização com um esquema de sincronização padrão. O trabalho é criado em um estado desabilitado. Chame [o trabalho de início](synchronization-synchronizationjob-start.md) para iniciar a sincronização.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,11 +43,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [synchronizationJob](../resources/synchronization-synchronizationjob.md) a ser criado. A única propriedade Required é `templateId` . A `templateId` propriedade deve corresponder a um dos modelos criados para esta entidade de serviço/aplicativo. Para localizar os modelos disponíveis, use [modelos de lista](synchronization-synchronizationtemplate-list.md).
+No corpo da solicitação, fornece uma representação JSON do [objeto synchronizationJob](../resources/synchronization-synchronizationjob.md) a ser criado. A única propriedade necessária é `templateId` . A `templateId` propriedade deve corresponder a um dos modelos criados para este aplicativo/entidade de serviço. Para encontrar modelos disponíveis, use [modelos de lista.](synchronization-synchronizationtemplate-list.md)
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, retorna um `201 Created` código de resposta e um objeto [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
+Se bem-sucedido, retorna `201 Created` um código de resposta e um objeto [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

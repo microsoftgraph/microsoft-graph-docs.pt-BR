@@ -1,33 +1,33 @@
 ---
-title: 'usuário: getdicas de dicas'
+title: 'user: getMailTips'
 description: Obter as Dicas de E-mail de um ou mais destinatários como disponíveis para o usuário conectado.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 979ad697b781d52f1492f76d0a5eea38951c1626
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: cbbeffff7949096693969b03d6f3aa7bbf5bfe44
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131674"
 ---
-# <a name="user-getmailtips"></a>usuário: getdicas de dicas
+# <a name="user-getmailtips"></a>user: getMailTips
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as dicas de informações de um ou mais destinatários como disponíveis para o [usuário](../resources/user.md)conectado.
+Obter as Dicas de Email de um ou mais destinatários conforme disponíveis para o usuário [assinado.](../resources/user.md)
 
-Observe que fazendo uma `POST` chamada para a `getMailTips` ação, você pode solicitar tipos específicos de dicas de anotações a serem retornados para mais de um destinatário ao mesmo tempo. As dicas de entrada solicitadas são retornadas em uma coleção de [dicas de dicas](../resources/mailtips.md) .
+Observe que, ao fazer uma chamada para a ação, você pode solicitar que tipos específicos de Dicas de Email sejam retornados para mais de `POST` um destinatário de cada `getMailTips` vez. As Dicas de Email solicitadas são retornadas em uma coleção [mailTips.](../resources/mailtips.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail. Read, mail. Read. Shared    |
+|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.Read.Shared    |
 |Delegado (conta pessoal da Microsoft) | Mail.Read    |
 |Aplicativo | Mail.Read |
 
@@ -51,14 +51,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |EmailAddresses|Coleção de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
-|MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` e `totalMemberCount` .|
+|MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de email solicitadas. Os valores possíveis `automaticReplies` são: `customMailTip` , , , , , , , `deliveryRestriction` e `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [dicas](../resources/mailtips.md) de mensagem no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos mailTips](../resources/mailtips.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir obtém dicas de correio para os destinatários especificados, para qualquer configuração de resposta automática e o status completo da caixa de correio.
+O exemplo a seguir obtém Dicas de Email para os destinatários especificados, para todas as configurações de resposta automática e o status completo da caixa de correio.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

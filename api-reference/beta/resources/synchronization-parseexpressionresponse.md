@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso parseExpressionResponse
-description: 'Representa a resposta da ação synchronizationSchema: ParseName.'
+title: Tipo de recurso parseExpressionResponse
+description: 'Representa a resposta da ação synchronizationSchema: parseExpression.'
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9bd675b079f42856e85f54b7da84a091a0f57f4f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: e564cb2ad7a80c91fec7d6298254fa19bde4537c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133144"
 ---
-# <a name="parseexpressionresponse-resource-type"></a>tipo de recurso parseExpressionResponse
+# <a name="parseexpressionresponse-resource-type"></a>Tipo de recurso parseExpressionResponse
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a resposta da ação [parsery](../api/synchronization-synchronizationschema-parseexpression.md) .
+Representa a resposta da [ação parseExpression.](../api/synchronization-synchronizationschema-parseexpression.md)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|erro|publicError|Detalhes do erro, se a avaliação da expressão resultar em um erro.|
+|erro|publicError|Detalhes do erro, se a avaliação de expressão tiver resultado em um erro.|
 |evaluationResult|Coleção de cadeias de caracteres|Uma coleção de valores produzidos pela avaliação da expressão.|
-|evaluationSucceeded|Boolean|`true` se a avaliação tiver sido bem-sucedida.|
-|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Um objeto [attributeMappingSource](synchronization-attributemappingsource.md) que representa a expressão analisada.|
-|parsingSucceeded|Boolean|`true` se a expressão tiver sido analisada com êxito.|
+|evaluationSucceeded|Boolean|`true` se a avaliação foi bem-sucedida.|
+|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Um [objeto attributeMappingSource](synchronization-attributemappingsource.md) que representa a expressão analisado.|
+|parsingSucceeded|Boolean|`true` se a expressão foi analisado com êxito.|
 
 ## <a name="json-representation"></a>Representação JSON
 

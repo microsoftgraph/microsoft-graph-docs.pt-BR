@@ -3,14 +3,14 @@ title: Tipo de recurso licenseUnitsDetail
 description: A propriedade **prepaidUnits** da entidade subscribedSku é do tipo **licenseUnitsDetail**.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: krbain
-ms.openlocfilehash: c241ed81ee7c8b724352c4cac6505595c47c6b7a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d4925c2acea0216e16283eaa8f779cb556e0857
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029187"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132430"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Tipo de recurso licenseUnitsDetail
 
@@ -23,8 +23,8 @@ A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:-------------|:-----|:----------|
-|enabled|Int32| O número de unidades que estão habilitadas. |
-|suspended|Int32| O número de unidades que estão suspensas. |
+|enabled|Int32| O número de unidades habilitadas. |
+|suspended|Int32| O número de unidades suspensas. |
 |warning|Int32| O número de unidades que estão no status de aviso. |
 
 ## <a name="json-representation"></a>Representação JSON

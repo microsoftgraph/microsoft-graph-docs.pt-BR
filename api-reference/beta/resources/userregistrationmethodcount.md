@@ -5,12 +5,12 @@ author: danielwood95
 localization_priority: Normal
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: b61cb0448c131fc49df43154522e587644d13dc6
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 8e4c19c48771ccd0bd1dd1f1a4b049334266834a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132928"
 ---
 # <a name="userregistrationmethodcount-resource-type"></a>Tipo de recurso userRegistrationMethodCount
 
@@ -23,7 +23,7 @@ Número de usuários registrados para um método de autenticação.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|authenticationMethod|Cadeia de caracteres|Nome do método de autenticação.|
+|authenticationMethod|String|Nome do método de autenticação.|
 |userCount|Int64|Número de usuários registrados.|
 
 ## <a name="relationships"></a>Relações

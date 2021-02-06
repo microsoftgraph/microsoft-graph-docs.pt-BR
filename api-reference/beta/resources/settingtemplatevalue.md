@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso settingTemplateValue
-description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
+title: Tipo de recurso settingTemplateValue
+description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instaliada.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: dkershaw10
-ms.openlocfilehash: b0f9db75d870cc775b22011674e6a460e11d8812
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 15110b88b62352476619501c50457a5bd1db5a89
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033528"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131625"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
+# <a name="settingtemplatevalue-resource-type"></a>Tipo de recurso settingTemplateValue
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
+Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instaliada.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|defaultValue|string|Valor padrão para a configuração. Somente leitura.|
+|defaultValue|string|Valor padrão da configuração. Somente leitura.|
 |description|string|Descrição da configuração. Somente leitura.|
 |name|string|Nome da configuração. Somente leitura.|
 |type|string|Tipo da configuração. Somente leitura.|

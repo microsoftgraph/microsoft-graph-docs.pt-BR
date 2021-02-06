@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso accessReviewApplyAction
-description: Representa a ação a ser tomada nos usuários revisados após a conclusão de uma instância de revisão do Access.
+title: Tipo de recurso accessReviewApplyAction
+description: Representa a ação a ser tomada em usuários revisados após a conclusão de uma instância de revisão de acesso.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 33aa0f7a9d7fbfeab9b957f4c94b87d6f6e50d44
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 7360c2a3a058eb4f884cb786c05a83efe09a6193
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000768"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133536"
 ---
-# <a name="accessreviewapplyaction-resource-type"></a>tipo de recurso accessReviewApplyAction
+# <a name="accessreviewapplyaction-resource-type"></a>Tipo de recurso accessReviewApplyAction
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma classe base para aplicar ações no [accessReviewScheduleSettings](accessreviewschedulesettings.md) de um [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Tipos derivados suportados:
+Representa uma classe base para aplicar ações em [accessReviewScheduleSettings](accessreviewschedulesettings.md) de [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Tipos derivados com suporte:
 
-- **removeAccessApplyAction** é um tipo derivado de accessReviewApplyAction que indica remover o acesso de uma entidade que está sendo revisada após a conclusão da revisão. Este é o tipo padrão para a propriedade applyActions em accessReviewScheduleSettings e não precisa ser especificado.
+- **removeAccessApplyAction** é um tipo derivado de accessReviewApplyAction que indica a remoção do acesso de uma entidade que está sendo revisada após a conclusão da revisão. Esse é o tipo padrão para a propriedade applyActions em accessReviewScheduleSettings e não precisa ser especificado.
 
-- **disableAndDeleteUserApplyAction** é um tipo derivado de accessReviewApplyAction que indica desabilitar e excluir o usuário que está sendo revisado após a conclusão da revisão. Este é o tipo não padrão e precisa ser especificado em accessReviewScheduleSettings.
+- **disableAndDeleteUserApplyAction** é um tipo derivado de accessReviewApplyAction que indica desabilitar e excluir o usuário que está sendo revisado após a conclusão da revisão. Esse é o tipo não padrão e precisa ser especificado em accessReviewScheduleSettings.
 
 ## <a name="properties"></a>Propriedades
 Nenhum.

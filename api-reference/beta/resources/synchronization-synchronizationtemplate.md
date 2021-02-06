@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso synchronizationtemplate
+title: Tipo de recurso synchronizationTemplate
 description: Fornece configurações de sincronização pré-configuradas para um aplicativo específico.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d794391c4cf8043ab4eaeafcfa21958d93e3412a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: c08f5c3eee6225a1149ff993415f83b2e5916583
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985682"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132297"
 ---
-# <a name="synchronizationtemplate-resource-type"></a>tipo de recurso synchronizationtemplate
+# <a name="synchronizationtemplate-resource-type"></a>Tipo de recurso synchronizationTemplate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece configurações de sincronização pré-configuradas para um aplicativo específico. Essas configurações serão usadas por padrão para qualquer [trabalho de sincronização](synchronization-synchronizationjob.md) baseado no modelo. O desenvolvedor do aplicativo especifica o modelo; qualquer pessoa pode recuperar o modelo para ver as configurações padrão, incluindo o [esquema de sincronização](synchronization-synchronizationschema.md).
+Fornece configurações de sincronização pré-configuradas para um determinado aplicativo. Essas configurações serão usadas por padrão para qualquer trabalho [de](synchronization-synchronizationjob.md) sincronização baseado no modelo. O desenvolvedor do aplicativo especifica o modelo; qualquer pessoa pode recuperar o modelo para ver as configurações padrão, incluindo o esquema [de sincronização.](synchronization-synchronizationschema.md)
 
-Você pode fornecer vários modelos para um aplicativo e designar um modelo padrão. Se vários modelos estiverem disponíveis para o aplicativo em que você está interessado, procure orientação específica do aplicativo para determinar qual deles atende melhor às suas necessidades.
+Você pode fornecer vários modelos para um aplicativo e designar um modelo padrão. Se vários modelos estão disponíveis para o aplicativo em que você está interessado, procure orientações específicas do aplicativo para determinar qual deles atende melhor às suas necessidades.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método        | Tipo de retorno               | Descrição                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationtemplate-list.md)    |coleção [synchronizationtemplate](synchronization-synchronizationtemplate.md)  |Lista os modelos disponíveis para uma instância de aplicativo ou aplicativo (entidade de serviço).|
-|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationtemplate](synchronization-synchronizationtemplate.md)   |Leia as propriedades e as relações do objeto **synchronizationtemplate** .|
+|[List](../api/synchronization-synchronizationtemplate-list.md)    |[Coleção synchronizationTemplate](synchronization-synchronizationtemplate.md)  |Liste os modelos que estão disponíveis para uma instância de aplicativo ou aplicativo (entidade de serviço).|
+|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationtemplate](synchronization-synchronizationtemplate.md)   |Leia as propriedades e os relacionamentos do **objeto synchronizationTemplate.**|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -37,18 +37,18 @@ Você pode fornecer vários modelos para um aplicativo e designar um modelo padr
 
 | Propriedade      | Tipo                      | Descrição                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |String                     |Identificador de modelo exclusivo.|
-|ApplicationId  |Cadeia de caracteres                     |Identificador do aplicativo ao qual este modelo pertence.|
-|Padrão.        |Boolean                    |`true` Se este modelo é recomendado para ser o padrão para o aplicativo.|
+|id             |String                     |Identificador exclusivo do modelo.|
+|ApplicationId  |Cadeia de caracteres                     |Identificador do aplicativo ao que este modelo pertence.|
+|Padrão.        |Boolean                    |`true` se esse modelo for recomendado para ser o padrão para o aplicativo.|
 |description    |String                     |Descrição do modelo.|
-|detectáveis   |String                     |`true` Se esse modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
-|factoryTag     |String                     |Uma das marcas de fábrica conhecidas suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização que implementação usar ao processar trabalhos com base nesse modelo.|
-|los       |coleção metadataEntry   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
+|discoverable   |String                     |`true` se esse modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
+|factoryTag     |String                     |Uma das marcas de fábrica conhecidas com suporte no mecanismo de sincronização. A **factoryTag** informa ao mecanismo de sincronização qual implementação usar ao processar trabalhos baseados nesse modelo.|
+|metadados       |Coleção metadataEntry   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
 
 ## <a name="relationships"></a>Relações
 | Relação      | Tipo      |Descrição|
 |:------------------|:----------|:----------|
-|esquemas             |[synchronizationSchema](synchronization-synchronizationschema.md)     |Esquema de sincronização padrão para os trabalhos baseados nesse modelo.|
+|schema             |[synchronizationSchema](synchronization-synchronizationschema.md)     |Esquema de sincronização padrão para os trabalhos baseados neste modelo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

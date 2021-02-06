@@ -3,14 +3,14 @@ title: Tipo de recurso servicePrincipal
 description: Representa uma instância de um aplicativo em um diretório. Herda do directoryObject.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 author: sureshja
-ms.openlocfilehash: aa8fd1180701a5be4393862b089b4576401d34db
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: f1dfb3ced2a93853d717677c509514da410c1951
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052458"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132640"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -210,5 +210,6 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
   ]
 }
 -->
+
 
 

@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso SettingValue
-description: Uma configuração representada por um par de nome/valor.
+title: Tipo de recurso settingValue
+description: Uma configuração representada por um par nome/valor.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: dkershaw10
-ms.openlocfilehash: 86f796b03afe55242a53be8803d9ff4a15d8a6e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1be40f6ad2046895c1a14f3395185662ae0ff62
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033529"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133375"
 ---
-# <a name="settingvalue-resource-type"></a>tipo de recurso SettingValue
+# <a name="settingvalue-resource-type"></a>Tipo de recurso settingValue
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma configuração representada por um par de nome/valor.
+Uma configuração representada por um par nome/valor.
 
 
 ## <a name="properties"></a>Propriedades

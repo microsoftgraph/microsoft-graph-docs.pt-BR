@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getCredentialUsageSummary'
-description: Informe o estado atual de quantos usuários da sua organização estão usando recursos de redefinição de senha de autoatendimento.
+description: Relatar o estado atual de quantos usuários em sua organização estão usando recursos de redefinição de senha de autoatendado.
 localization_priority: Normal
 author: besiler
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5d270b3edaebc64160cd356ef32c60ae77d8f539
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 56015afd7bc5589d518277df555ac511b7f91657
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523543"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131352"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>reportRoot: getCredentialUsageSummary
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informe o estado atual de quantos usuários da sua organização usaram as funcionalidades de redefinição de senha de autoatendimento.
+Relatar o estado atual de quantos usuários em sua organização usaram os recursos de redefinição de senha de autoatendado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,19 +40,19 @@ GET /reports/getCredentialUsageSummary
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
-Você pode usar o seguinte parâmetro de função para ajustar a resposta.
+Você pode usar o parâmetro de função a seguir para ajustar a resposta.
 
 | Parâmetro | Tipo | Descrição |
 |:--------- |:---- |:----------- |
-| ponto | String | Especifica o período de tempo para o qual você precisa dos dados de uso. Por exemplo: `/reports/getCredentialUsageSummary(period='D30')`. Períodos suportados: `D1` , `D7` , e `D30` . O período não diferencia maiúsculas de minúsculas. |
+| ponto | String | Especifica o período de tempo para o qual você precisa dos dados de uso. Por exemplo: `/reports/getCredentialUsageSummary(period='D30')`. Períodos com suporte: `D1` `D7` , e `D30` . O ponto não faz falta de maiúsculas e minúsculas. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Essa função suporta o parâmetro de consulta OData opcional **$Filter**. Você pode aplicar **$Filter** em uma ou mais das seguintes propriedades do recurso [credentialUsageSummary](../resources/credentialusagesummary.md) .
+Esta função dá suporte ao parâmetro opcional de consulta OData **$filter**. Você pode aplicar **$filter** em uma ou mais das seguintes propriedades do [recurso credentialUsageSummary.](../resources/credentialusagesummary.md)
 
 | Propriedades | Descrição e exemplo |
 |:---- |:----------- |
-| apresentam | Especifica o tipo de dados de uso que você deseja (registro versus redefinição). Por exemplo: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Operadores de filtro suportados: `eq` . |
+| recurso | Especifica o tipo de dados de uso que você deseja (registro versus redefinição). Por exemplo: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Operadores de filtro com suporte: `eq` . |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -67,7 +67,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto da coleção [credentialUsageSummary](../resources/credentialusagesummary.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um novo objeto da coleção `200 OK` [credentialUsageSummary](../resources/credentialusagesummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

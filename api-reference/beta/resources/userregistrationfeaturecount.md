@@ -3,14 +3,14 @@ title: Tipo de recurso userRegistrationFeatureCount
 description: Número de usuários registrados ou com capacidade para Autenticação Multifa factor, Self-Service redefinição de senha e autenticação sem senha.
 author: danielwood95
 localization_priority: Normal
-ms.prod: reports
+ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 0a0ad3758a74e057fa5539d3d913dd1735c88854
-ms.sourcegitcommit: 90f08b197a9b13593143618c105a4049c07811b8
+ms.openlocfilehash: 7c73d9cd17d5bf13eb5f8899e0d1e9dc6e27af67
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50052553"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132941"
 ---
 # <a name="userregistrationfeaturecount-resource-type"></a>Tipo de recurso userRegistrationFeatureCount
 

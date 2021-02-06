@@ -1,68 +1,68 @@
 ---
-title: tipo de recurso accessReviewDecision
-description: O accessReviewDecision representa uma decisão de revisão do Azure AD Access de um determinado acesso de uma entidade.
+title: Tipo de recurso accessReviewDecision
+description: The accessReviewDecision represents an Azure AD access review decision of a particular entity's access.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f22411e15b7c886847c366537a5f3a77f8283b7a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c33849920a06154f0c2a0ac781dcd5cdf64fa51f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133508"
 ---
-# <a name="accessreviewdecision-resource-type"></a>tipo de recurso accessReviewDecision
+# <a name="accessreviewdecision-resource-type"></a>Tipo de recurso accessReviewDecision
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões do Azure AD [Access](accessreviews-root.md) , o `accessReviewDecision` representa uma decisão de revisão do Azure ad Access de um determinado acesso de uma entidade.  Em uma revisão do Access, ou uma instância de uma revisão de acesso recorrente, há uma `accessReviewDecision` por usuário revisado.  Por exemplo, se um grupo tiver dois convidados e um não convidado como membros, e uma revisão de acesso de convidados for executada para esse grupo, haverá dois objetos de decisão de análise do Access.  Se um revisor alterar sua decisão ou outro revisor o substituir, o `accessReviewDecision` será atualizado.
+No recurso de revisões de acesso do Azure [AD,](accessreviews-root.md) ele representa uma decisão de revisão de acesso do `accessReviewDecision` Azure AD do acesso de uma entidade específica.  Em uma revisão de acesso ou em uma instância de uma revisão de acesso recorrente, há um `accessReviewDecision` por usuário revisado.  Por exemplo, se um grupo tiver dois convidados e um não convidado como membros e uma revisão de acesso dos convidados for executada para esse grupo, haverá dois objetos de decisão de revisão de acesso.  Se um revisador alterar sua decisão ou outro revisá-los, a `accessReviewDecision` atualização será atualizada.
 
 
 ## <a name="methods"></a>Métodos
 
-Nenhum.  Os objetos desse tipo são criados automaticamente pelo recurso quando uma revisão do Access Inicializa e não pode ser excluída.  Eles podem ser recuperados de uma revisão de acesso usando as relações de [decisões](../api/accessreview-listdecisions.md) e [mydecisions](../api/accessreview-listmydecisions.md) .
+Nenhum.  Objetos desse tipo são criados automaticamente pelo recurso quando uma revisão de acesso é inicializada e não podem ser excluídos.  Eles podem ser recuperados de uma revisão de acesso usando [as decisões](../api/accessreview-listdecisions.md) e as relações de [mydecisions.](../api/accessreview-listmydecisions.md)
 
 ## <a name="properties"></a>Propriedades
 
-Esta tabela ilustra as propriedades básicas de objetos desse tipo. 
+Esta tabela ilustra as propriedades base dos objetos desse tipo. 
 
 | Propriedade                        | Tipo                         | Descrição                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
-| `id`                            |`String`                      | A identificação da decisão dentro da revisão do Access.                                                                                     |
-| `accessReviewId`                |`String`                      | A ID gerada pelo recurso da revisão do Access.                                                                                       |
-| `reviewedBy`                    |[userIdentity](useridentity.md)| A identidade do revisor. Se a recomendação tiver sido usada como revisão, o userPrincipalName estará vazio.                                                                                      |
+| `id`                            |`String`                      | A id da decisão dentro da revisão de acesso.                                                                                     |
+| `accessReviewId`                |`String`                      | A ID gerada pelo recurso da revisão de acesso.                                                                                       |
+| `reviewedBy`                    |[userIdentity](useridentity.md)| A identidade do revistor. Se a recomendação foi usada como revisão, o userPrincipalName está vazio.                                                                                      |
 | `reviewedDate`                  |`DateTimeOffset`              | A data e a hora em que a revisão mais recente desse direito de acesso foi fornecida.                                                                         |
-| `reviewResult`                  |`String`                      | O resultado da revisão, um de `NotReviewed` , `Deny` `DontKnow` ou `Approve` .                                                                                    |
-| `justification`                 |`String`                      | A justificativa de negócios do revisor, se fornecido.                                                                         |
-| `appliedBy`                     |[userIdentity](useridentity.md)| Quando a revisão for concluída, se os resultados forem aplicados manualmente, a identidade do usuário que aplicou a decisão. Se a revisão foi aplicada automaticamente, o userPrincipalName estará vazio.                                                          |
+| `reviewResult`                  |`String`                      | O resultado da revisão, um de `NotReviewed` , `Deny` ou `DontKnow` `Approve` .                                                                                    |
+| `justification`                 |`String`                      | A justificativa comercial do revisador, se fornecida.                                                                         |
+| `appliedBy`                     |[userIdentity](useridentity.md)| Quando a revisão for concluída, se os resultados foram aplicados manualmente, a identidade do usuário que aplicou a decisão. Se a revisão foi aplicada automaticamente, o userPrincipalName está vazio.                                                          |
 | `appliedDateTime`               |`DateTimeOffset`              | A data e a hora em que a decisão de revisão foi aplicada.                                                          |
-| `applyResult`                   |`String`                      | O resultado da aplicação da decisão, um de `NotApplied` , `Success` `Failed` `NotFound` ou `NotSupported` .                      |
-| `accessRecommendation`          |`String`                      | A recomendação gerada pelo recurso mostrada para o revisor, um `Approve` `Deny` ou `NotAvailable` . |
+| `applyResult`                   |`String`                      | O resultado da aplicação da decisão, um dos `NotApplied` `Success` , ou `Failed` `NotFound` `NotSupported` .                      |
+| `accessRecommendation`          |`String`                      | O recurso - gerado recomendação mostrada para o revisador, um dos `Approve` ou `Deny` `NotAvailable` . |
 
 
-Além disso, as propriedades adicionais podem estar presentes dependendo do tipo de objeto do objeto que possui o acesso que foi escolhido.  Por exemplo, se a decisão de revisão do Access for a associação de grupo ou o acesso de um usuário específico, o usuário que estiver possivelmente com o acesso será removido é identificado por estas propriedades:
+Além disso, propriedades adicionais podem estar presentes dependendo do tipo de objeto do objeto que possui o acesso que foi decidido.  Por exemplo, se a decisão de revisão de acesso for a associação de grupo de um usuário específico ou o acesso a aplicativos, o usuário que potencialmente terá seu acesso removido será identificado por meio dessas propriedades:
 
 | Propriedade                        | Tipo                         | Descrição                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
-| `userId`                            |`String`                      | A ID do usuário cujo acesso foi revisado.                                                                                    |
+| `userId`                            |`String`                      | A id do usuário cujo acesso foi revisado.                                                                                    |
 | `userDisplayName`                            |`String`                      | O nome de exibição do usuário cujo acesso foi revisado.                                                                                     |
-| `userPrincipalName`                            |`String`                      | O nome principal de usuário do usuário cujo acesso foi revisado.                                                                                     |
+| `userPrincipalName`                            |`String`                      | O nome principal do usuário cujo acesso foi revisado.                                                                                     |
 
 
 
 ## <a name="relationships"></a>Relações
 
-Nenhum  Os objetos desse tipo podem ser recuperados de uma análise do Access usando as relações de [decisões](../api/accessreview-listdecisions.md) e [mydecisions](../api/accessreview-listmydecisions.md) do objeto [accessReview](accessreview.md) .
+Nenhum  Objetos desse tipo podem ser recuperados de [](../api/accessreview-listdecisions.md) uma revisão de acesso usando as decisões e as relações [mydecisions](../api/accessreview-listmydecisions.md) do [objeto accessReview](accessreview.md) .
 
 ## <a name="see-also"></a>Confira também
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar decisões accessReview](../api/accessreview-listdecisions.md) |      coleção [accessReviewDecision](accessreviewdecision.md)| Obtenha as decisões de um accessReview.|
-|[Listar minhas decisões do accessReview](../api/accessreview-listmydecisions.md) |     coleção [accessReviewDecision](accessreviewdecision.md)| Como revisor, obtenha as minhas decisões de um accessReview.|
+|[Listar decisões de accessReview](../api/accessreview-listdecisions.md) |      [coleção accessReviewDecision](accessreviewdecision.md)| Obter as decisões de um accessReview.|
+|[Listar minhas decisões de accessReview](../api/accessreview-listmydecisions.md) |     [coleção accessReviewDecision](accessreviewdecision.md)| Como revisor, receba minhas decisões de um accessReview.|
 
 ## <a name="json-representation"></a>Representação JSON
 

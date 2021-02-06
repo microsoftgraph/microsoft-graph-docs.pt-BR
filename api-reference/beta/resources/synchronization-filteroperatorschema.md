@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso filterOperatorSchema
+title: Tipo de recurso filterOperatorSchema
 description: Descreve um operador que pode ser usado em um filtro.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 694af6455cc7b2dbf1f6f6ae811713b5b9d61265
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 1128b12ffcadd36f2fdd2f34d27f95d973cdfd9d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079694"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131884"
 ---
-# <a name="filteroperatorschema-resource-type"></a>tipo de recurso filterOperatorSchema
+# <a name="filteroperatorschema-resource-type"></a>Tipo de recurso filterOperatorSchema
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve um operador que pode ser usado em um [filtro](synchronization-filter.md).
+Descreve um operador que pode ser usado em um [filtro.](synchronization-filter.md)
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:--------------------------|:---------------|
-|arity                       |Cadeia de caracteres          |Arity do operador. Os valores possíveis são: `Binary` e `Unary`. O padrão é `Binary` .|
-|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Os valores possíveis são: `All` e `Any`. Aplica-se somente a atributos com vários valores. `All` significa que todos os valores devem atender à condição. `Any` significa que pelo menos um valor deve satisfazer a condição. O padrão é `All` .|
-|name                        |Cadeia de caracteres                     |Nome do operador. |
+|arity                       |String          |A personalidade do operador. Os valores possíveis são: `Binary` e `Unary`. O padrão é `Binary` .|
+|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Os valores possíveis são: `All` e `Any`. Aplica-se somente a atributos de múltiplos valores. `All` significa que todos os valores devem satisfazer a condição. `Any` significa que pelo menos um valor deve satisfazer a condição. O padrão é `All` .|
+|nome                        |String                     |Nome do operador. |
 |supportedAttributeTypes     |Coleção de cadeias de caracteres         |Tipos de atributo suportados pelo operador. Os valores possíveis são: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
 ## <a name="json-representation"></a>Representação JSON

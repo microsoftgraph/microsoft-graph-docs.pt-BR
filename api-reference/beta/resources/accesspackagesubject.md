@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso accessPackageSubject
-description: No Azure AD pretitulation Management, um assunto de uma atribuição de pacote do Access.
+title: Tipo de recurso accessPackageSubject
+description: No gerenciamento de direitos do Azure AD, um assunto de uma atribuição de pacote de acesso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f8b967e2ba2d678d9648b09eae4aeb3dca760c52
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4969afac14f7eeb24d2901946d5e5961258c8b7b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994341"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133573"
 ---
-# <a name="accesspackagesubject-resource-type"></a>tipo de recurso accessPackageSubject
+# <a name="accesspackagesubject-resource-type"></a>Tipo de recurso accessPackageSubject
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), um pacote de acesso assunto é um usuário, uma entidade de serviço ou outra entidade que pode ser configurada para solicitar ou receber um pacote de acesso.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)um assunto do pacote de acesso é um usuário, entidade de serviço ou outra entidade que pode ser configurada para solicitar ou ser atribuído a um pacote de acesso.
 
 ## <a name="properties"></a>Propriedades
 
@@ -27,9 +27,9 @@ No [Azure ad pretitulation Management](entitlementmanagement-root.md), um pacote
 |displayName|String|O nome de exibição do assunto.|
 |email|Cadeia de caracteres|O endereço de email do assunto.|
 |id|String| Somente leitura.|
-|objectId|Cadeia de caracteres|A ID de objeto do assunto.|
-|principalName|Cadeia de caracteres|O nome da entidade de segurança, se for conhecido, do assunto.|
-|tipo|String|O tipo de recurso do assunto.|
+|objectId|Cadeia de caracteres|A ID do objeto do assunto.|
+|principalName|Cadeia de caracteres|O nome principal, se conhecido, do assunto.|
+|type|String|O tipo de recurso do assunto.|
 
 ## <a name="relationships"></a>Relações
 

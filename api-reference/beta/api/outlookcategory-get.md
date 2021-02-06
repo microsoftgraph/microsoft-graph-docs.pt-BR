@@ -1,16 +1,16 @@
 ---
 title: Obter categoria do Outlook
 description: Obtenha as propriedades e as relações do objeto outlookCategory especificado.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 43f1ab353a1fbce12b3b0bf674cce43dd0eff039
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2593b2d80b6e457b81e6c1309c29eda97743c832
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972836"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133081"
 ---
 # <a name="get-outlook-category"></a>Obter categoria do Outlook
 

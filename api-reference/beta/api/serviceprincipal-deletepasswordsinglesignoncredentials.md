@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipalName: deletePasswordSingleSignOnCredentials'
-description: Exclua as credenciais de logon único usando uma senha para um usuário ou grupo.
+title: 'servicePrincipal: deletePasswordSingleSignOnCredentials'
+description: Exclua as credenciais de login único usando uma senha para um usuário ou grupo.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 75f33809759e6325c3767ee2c7dec1f6212d8883
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 249f5022d3a7dd9170ab35e66c1ecf0e7c0dd99e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969608"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131947"
 ---
-# <a name="serviceprincipal-deletepasswordsinglesignoncredentials"></a>servicePrincipalName: deletePasswordSingleSignOnCredentials
+# <a name="serviceprincipal-deletepasswordsinglesignoncredentials"></a>servicePrincipal: deletePasswordSingleSignOnCredentials
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua as credenciais de logon único usando uma senha para um usuário ou grupo.
+Exclua as credenciais de login único usando uma senha para um usuário ou grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Application. ReadWrite. All e Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
+| Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Application. ReadWrite. All e Directory. Read. All, Directory. ReadWrite. All |
+| Application                            | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
-> Os usuários podem criar credenciais para si mesmos. Os proprietários e administradores da entidade de serviço com as seguintes funções podem criar credenciais para qualquer usuário ou grupo: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Para saber mais, confira [funções de diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+> Os usuários podem criar credenciais para si próprios. Os proprietários e administradores da entidade de serviço com as seguintes funções podem criar credenciais para qualquer usuário ou grupo: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Para saber mais, consulte Funções [de diretório.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|A ID do usuário ou grupo ao qual esse conjunto de credenciais pertence.|
+|id|String|A ID do usuário ou grupo ao que esse conjunto de credenciais pertence.|
 
 ## <a name="response"></a>Resposta
 

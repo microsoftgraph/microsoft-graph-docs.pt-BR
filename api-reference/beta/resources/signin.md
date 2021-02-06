@@ -4,13 +4,13 @@ doc_type: resourcePageType
 description: Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu diretório.
 author: besiler
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 567db2d020c369b0a674af59caf4ce72f870642c
-ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: 6d5c8680d93c5fd480efae9c3f11bcbe4475e05b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133039"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 
@@ -37,7 +37,7 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |authenticationDetails|[Coleção authenticationDetail](authenticationdetail.md)|O resultado da tentativa de autenticação e detalhes adicionais sobre o método de autenticação.|
 |authenticationMethodsUsed|Coleção de cadeias de caracteres|Os métodos de autenticação usados. Valores possíveis: `SMS` , , , , ou `Authenticator App` `App Verification code` `Password` `FIDO` `PTA` `PHS` .|
 |authenticationProcessingDetails|Coleção [KeyValue](keyvalue.md)|Detalhes adicionais de processamento de autenticação, como o nome do agente no caso de PTA/PHS ou nome de servidor/farm em caso de autenticação federada.|
-|authenticationRequirement | cadeia de caracteres | Isso contém o nível mais alto de autenticação necessário por meio de todas as etapas de login para que a login seja bem-sucedida.|
+|authenticationRequirement | string | Isso mantém o nível mais alto de autenticação necessário por meio de todas as etapas de login para que a login seja bem-sucedida.|
 |clientAppUsed|Cadeia de caracteres|O cliente herddo usado para atividade de entrada. Por exemplo, Navegador, Exchange Active Sync, Clientes modernos, IMAP, MAPI, SMTP ou POP.|
 |conditionalAccessStatus|cadeia de caracteres| O status da política de acesso condicional acionada. Valores possíveis: `success` `failure` , , ou `notApplied` `unknownFutureValue` .|
 |correlationId|Cadeia de caracteres|O identificador que é enviado do cliente quando a entrada é iniciada. Isso é usado para solucionar problemas da atividade de login correspondente ao chamar o suporte.|
@@ -52,7 +52,7 @@ Fornece detalhes sobre a atividade de login de usuário ou de aplicativo em seu 
 |processingTimeInMilliseconds|Int|O tempo de processamento da solicitação em milissegundos no AD STS.|
 |resourceDisplayName|String|O nome do recurso em que o usuário se inscreveu.|
 |resourceId|Cadeia de caracteres|O identificador do recurso em que o usuário se inscreveu.|
-|riskDetail|riskDetail|O motivo por trás de um estado específico de um usuário arriscado, entrar ou um evento de risco. Valores possíveis: `none` , , , , , , , `adminGeneratedTemporaryPassword` ou `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `unknownFutureValue` . O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são `hidden` retornados.|
+|riskDetail|riskDetail|O motivo por trás de um estado específico de um usuário arriscado, login ou um evento de risco. Valores possíveis: `none` , , , , , , , `adminGeneratedTemporaryPassword` ou `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `unknownFutureValue` . O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são `hidden` retornados.|
 |riskEventTypes|Coleção riskEventType|A lista de tipos de eventos de risco associados à login. Valores possíveis: `unlikelyTravel` , , , , , , , `anonymizedIPAddress` ou `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` .|
 |riskEventTypes_v2|Coleção de cadeias de caracteres|A lista de tipos de eventos de risco associados à login. Valores possíveis: `unlikelyTravel` , , , , , , , `anonymizedIPAddress` ou `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` .|
 |riskLevelAggregated|riskLevel|O nível de risco agregado. Valores possíveis: `none` , , , ou `low` `medium` `high` `hidden` `unknownFutureValue` . O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Todos os outros clientes são `hidden` retornados.|

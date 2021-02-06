@@ -1,16 +1,16 @@
 ---
 title: Configurando a mensagem de convite
-description: O objeto invitedUserMessageInfo permite que você configure a mensagem de convite.
+description: O objeto invitedUserMessageInfo permite configurar a mensagem de convite.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 author: elisolMS
-ms.openlocfilehash: 713af92d91f179f90c9d37a238a23730f351895d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6092a5bd493377480c0a835b28982aec2d95c522
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989028"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131492"
 ---
 # <a name="configuring-the-invitation-message"></a>Configurando a mensagem de convite
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O objeto invitedUserMessageInfo permite que você configure a mensagem de [convite](invitation.md) .
+O objeto invitedUserMessageInfo permite configurar a mensagem [de](invitation.md) convite.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|ccRecipients|Coleção [recipient](recipient.md)|Destinatários adicionais para os quais a mensagem de convite deve ser enviada. Atualmente, apenas 1 destinatário adicional é suportado.|
-|customizedMessageBody|String|O corpo da mensagem personalizada que você deseja enviar se não quiser a mensagem padrão.|
-|messageLanguage|String|O idioma no qual você deseja enviar a mensagem padrão. Se customizedMessageBody for especificado, essa propriedade será ignorada e a mensagem será enviada usando o customizedMessageBody. O formato de idioma deve estar no ISO 639. O padrão é en-US.|
+|ccRecipients|Coleção [recipient](recipient.md)|Destinatários adicionais para os que a mensagem de convite deve ser enviada. Atualmente, apenas 1 destinatário adicional é suportado.|
+|customizedMessageBody|String|Corpo de mensagem personalizado que você deseja enviar se não quiser a mensagem padrão.|
+|messageLanguage|String|O idioma em que você deseja enviar a mensagem padrão. Se customizedMessageBody for especificado, essa propriedade será ignorada e a mensagem será enviada usando customizedMessageBody. O formato de idioma deve estar na ISO 639. O padrão é en-US.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso userFlowApiConnectorConfiguration
+title: Tipo de recurso userFlowApiConnectorConfiguration
 description: Representa quais conectores de API estão habilitados para um fluxo de usuário.
 author: nickgmicrosoft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 00b37f1b4bff0edf8aa85d79a01e23169b45dbcf
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 9f8e9732759a609eabb6733629a97c82afaba364
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720097"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132976"
 ---
-# <a name="userflowapiconnectorconfiguration-resource-type"></a>tipo de recurso userFlowApiConnectorConfiguration
+# <a name="userflowapiconnectorconfiguration-resource-type"></a>Tipo de recurso userFlowApiConnectorConfiguration
 
 Namespace: microsoft.graph
 
@@ -24,8 +24,8 @@ Define quais APIs são chamadas em pontos específicos no fluxo do usuário.  Ca
 
 | Relação            | Tipo                                            | Descrição                                                                                                                                             |
 | :---------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| postFederationSignup    | [identityApiConnector](identityapiconnector.md) | Especifica uma API a ser chamada após a Federação com um provedor de identidade externo (como Google, Facebook ou Azure AD) é concluída quando o usuário está se inscrevendo (não se aplica à entrada). |
-| setattributecollection | [identityApiConnector](identityapiconnector.md) | Especifica uma API para chamar após um usuário enviar os atributos coletados e antes de o usuário ser criado durante a inscrição.                                                      |
+| postFederationSignup    | [identityApiConnector](identityapiconnector.md) | Especifica uma API para chamar após a federação com um provedor de identidade externo (como Google, Facebook ou Azure AD) é concluída quando o usuário está se insinndo (não se aplica a entrar). |
+| postAttributeCollection | [identityApiConnector](identityapiconnector.md) | Especifica uma API a ser chamada depois que um usuário envia atributos coletados e antes de o usuário ser criado durante a assinatura.                                                      |
 
 ## <a name="json-representation"></a>Representação JSON
 

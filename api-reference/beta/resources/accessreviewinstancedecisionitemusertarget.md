@@ -1,22 +1,22 @@
 ---
-title: tipo de recurso accessReviewInstanceDecisionItemUserTarget
+title: Tipo de recurso accessReviewInstanceDecisionItemUserTarget
 description: Representa o destino de uma revisão como um usuário.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: aa2117895599ba1d2c4b9829b7cad22b581f2055
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 73fba5b7329a6dd13ddc455b9ba327467dde9016
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000777"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133466"
 ---
-# <a name="accessreviewinstancedecisionitemusertarget-resource-type"></a>tipo de recurso accessReviewInstanceDecisionItemUserTarget
+# <a name="accessreviewinstancedecisionitemusertarget-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItemUserTarget
 
 Namespace: microsoft.graph
 
-Representa uma identidade de usuário em revisão em um [accessReviewInstance](accessreviewinstance.md).
+Representa uma identidade de usuário sob revisão em [um accessReviewInstance](accessreviewinstance.md).
 
 Herda de [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 
@@ -25,7 +25,7 @@ Herda de [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinsta
 |:---|:---|:---|
 | userDisplayName | Cadeia de caracteres | O nome do usuário. |
 | userId | Cadeia de caracteres | O identificador do usuário. |
-| userPrincipalName | Cadeia de caracteres | O nome da entidade de segurança do usuário. |
+| userPrincipalName | String | O nome da entidade de segurança do usuário. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

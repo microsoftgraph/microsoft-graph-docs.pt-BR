@@ -3,14 +3,14 @@ title: Listar relyingPartyDetailedSummary
 description: Recupere uma lista de objetos relyingPartyDetailedSummary.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 7dcba9c98467461a8dae3b4d39d752c6d369c4d5
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7512cc10db5b37cce6c899f5399f0c51194ab59c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523263"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131380"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>Listar relyingPartyDetailedSummary
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos **relyingPartyDetailedSummary** .
+Recupere uma lista de **objetos relyingPartyDetailedSummary.**
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Report. Read. All |
+| Delegado (conta corporativa ou de estudante)     | Report.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Report. Read. All |
+| Application                            | Report.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,8 +47,8 @@ GET /reports/getRelyingPartyDetailedSummary
 
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. 
 
-- Você pode usar o `$filter` parâmetro para filtrar por relyingPartyId, migrationStatus e outros atributos. Por exemplo, $filter = relyingPartyId EQ ' identifier '.
-- Você pode usar `$orderby` , `$top` e `$skip` parâmetros de consulta em qualquer solicitação get.
+- Você pode usar o `$filter` parâmetro para filtrar por relyingPartyId, migrationStatus e outros atributos. Por exemplo, $filter= relyingPartyId eq 'identifier'.
+- Você pode usar `$orderby` , `$top` e `$skip` parâmetros de consulta em qualquer solicitação GET.
 
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
@@ -65,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) solicitado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e o objeto `200 OK` [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,16 +1,16 @@
 ---
 title: Obter entrada
 doc_type: apiPageType
-description: Obter um objeto de entrada que contenha todas as entradas de um locatário do Azure Active Directory.
+description: Obter um objeto signIn que contenha todas as logins de um locatário do Azure Active Directory.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba955ab431597efdaf3edfddbba715fdc502243a
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: 139ee4c8ae45699f284d866740c494a86fcb05a9
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524299"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134124"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha um objeto de [entrada](../resources/signin.md) que contenha um evento de entrada de usuário específico para seu locatário. Isso inclui entradas onde um usuário é solicitado a inserir um nome de usuário ou senha e tokens de sessão.
+Obter um [objeto signIn](../resources/signin.md) que contém um evento de login de usuário específico para seu locatário. Isso inclui as entrada em que um usuário é solicitado a inserir um nome de usuário ou senha e tokens de sessão.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante) | AuditLog. Read. All, Directory. Read. All |
+| Delegado (conta corporativa ou de estudante) | AuditLog.Read.All, Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
-| Aplicativo | AuditLog. Read. All, Directory. Read. All | 
+| Aplicativo | AuditLog.Read.All, Directory.Read.All | 
 
 Além disso, os aplicativos devem ser [corretamente registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
@@ -55,11 +55,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [entrada](../resources/signin.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [signIn](../resources/signin.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Exemplo 1: o usuário faz logon usando MFA, que é disparada por uma política de acesso condicional. A autenticação principal é por meio do FIDO.
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Exemplo 1: o usuário faz o acesso usando a MFA, que é disparada por uma política de acesso condicional. A autenticação principal é por meio do FIDO.
 
 #### <a name="request"></a>Solicitação
 
@@ -215,7 +215,7 @@ Content-length: 211
 }
 ```
 
-### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>Exemplo 2: o usuário entra no com somente autenticação principal. A autenticação principal é por meio da senha da nuvem.
+### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>Exemplo 2: o usuário se insi com apenas a autenticação principal. A autenticação principal é por meio da senha da nuvem.
 
 #### <a name="request"></a>Solicitação
 

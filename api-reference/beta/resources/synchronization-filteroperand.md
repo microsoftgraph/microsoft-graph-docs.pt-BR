@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso filterOperand
-description: Contém uma coleção de valores para o operando.
+title: Tipo de recurso filterOperand
+description: Contém uma coleção de valores para o operand.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bdb43108d327a727f6c5899d0ea097caf357f205
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 1ee9d52ca4cf93347696362a46f3fc145ff4f448
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079758"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131891"
 ---
-# <a name="filteroperand-resource-type"></a>tipo de recurso filterOperand
+# <a name="filteroperand-resource-type"></a>Tipo de recurso filterOperand
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém uma coleção de valores para o operando.
+Contém uma coleção de valores para o operand.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

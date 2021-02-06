@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso itemAttachment
-description: Um contato, evento ou mensagem que está anexado a outro evento,
+description: Um contato, evento ou mensagem anexado a outro evento,
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: 9cce3ac77838867d70d2bd847e8a9d631e7f3b5a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+author: abheek-das
+ms.openlocfilehash: db57bbad71349af6b40b16c88941444d6bac200e
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133781"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Um contato, evento ou mensagem anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md)do usuário.  
+Um contato, evento ou mensagem que está anexado a um evento de [usuário](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).  
 
 Derivado de [attachment](attachment.md).
 
@@ -44,7 +44,7 @@ Derivado de [attachment](attachment.md).
 ## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|O contato anexado, a mensagem ou o evento. Propriedade Navigation.|
+|item|[OutlookItem](outlookitem.md)|O contato, a mensagem ou o evento anexado. Propriedade de navegação.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso accessReviewSettings
-description: Fornece configurações adicionais ao criar uma revisão do Access.
+title: Tipo de recurso accessReviewSettings
+description: Fornece configurações adicionais ao criar uma revisão de acesso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d4de925ecb2fac65e3ab339ba8d4e602fcdc2af3
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 18af2ef86c33650129934f43d2212222e98448fd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330351"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133424"
 ---
-# <a name="accessreviewsettings-resource-type"></a>tipo de recurso accessReviewSettings
+# <a name="accessreviewsettings-resource-type"></a>Tipo de recurso accessReviewSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece configurações adicionais ao criar uma revisão do Access, para controlar o comportamento do recurso ao iniciar uma revisão do Access.
+Fornece configurações adicionais ao criar uma revisão de acesso, para controlar o comportamento do recurso ao iniciar uma revisão de acesso.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 | :------- | :--- | :---------- |
-| mailNotificationsEnabled | Booleano | Indica se o envio de emails para revisores e o criador de revisão está habilitado. |
-| remindersEnabled | Booleano | Indica se o envio de emails de lembrete aos revisores está habilitado. |
-| justificationRequiredOnApproval | Booleano | Indica se os revisores são necessários para fornecer uma justificativa ao revisar o acesso. |
-| activityDurationInDays | Int64 | O número de dias de atividades do usuário para mostrar aos revisores. |
-| autoReviewEnabled | Booleano | Indica se uma decisão deverá ser definida se o revisor não fornecer um. Para uso quando a aplicação automática está habilitada. Se você não quiser ter uma decisão de revisão registrada, a menos que o revisor faça uma escolha explícita, defina-a como `false` .|
-| autoReviewSettings | [autoReviewSettings](autoreviewsettings.md) | Configurações detalhadas de como o recurso deve definir a decisão de revisão. Para uso quando a aplicação automática está habilitada. |
-| recurrenceSettings | [accessReviewRecurrenceSettings](accessreviewrecurrencesettings.md) | Definições detalhadas de recorrência. |
-| autoApplyReviewResultsEnabled | Booleano | Indica se o recurso de aplicação automática, para alterar automaticamente o recurso de acesso ao objeto de destino, está habilitado.  Se não habilitado, um usuário deve, após a conclusão da revisão, aplicar a revisão do Access. |
-| accessRecommendationsEnabled | Booleano | Indica se a exibição de recomendações para revisores está habilitada. |
+| mailNotificationsEnabled | Boolean | Indica se o envio de emails aos revisadores e ao criador da crítica está habilitado. |
+| remindersEnabled | Boolean | Indica se o envio de emails de lembrete para revisadores está habilitado. |
+| justificationRequiredOnApproval | Boolean | Indica se os revisadores devem fornecer uma justificativa ao revisar o acesso. |
+| activityDurationInDays | Int64 | O número de dias de atividades do usuário para mostrar aos revisadores. |
+| autoReviewEnabled | Boolean | Indica se uma decisão deve ser definida se o revistor não forneceu uma. Para uso quando a aplicação automática estiver habilitada. Se você não quiser ter uma decisão de revisão registrada, a menos que o revistor faça uma escolha explícita, de definida como `false` .|
+| autoReviewSettings | [autoReviewSettings](autoreviewsettings.md) | Configurações detalhadas de como o recurso deve definir a decisão de revisão. Para uso quando a aplicação automática estiver habilitada. |
+| recurrenceSettings | [accessReviewRecurrenceSettings](accessreviewrecurrencesettings.md) | Configurações detalhadas de recorrência. |
+| autoApplyReviewResultsEnabled | Boolean | Indica se a funcionalidade de aplicação automática, para alterar automaticamente o recurso de acesso ao objeto de destino, está habilitada.  Se não estiver habilitado, um usuário deverá, após a conclusão da revisão, aplicar a revisão de acesso. |
+| accessRecommendationsEnabled | Boolean | Indica se a exibição de recomendações para revisadores está habilitada. |
 
 ## <a name="json-representation"></a>Representação JSON
 <!-- {

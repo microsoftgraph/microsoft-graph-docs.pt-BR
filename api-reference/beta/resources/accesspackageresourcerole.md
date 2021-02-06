@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso accessPackageResourceRole
-description: Uma referência a uma função definida em um Resource.
+title: Tipo de recurso accessPackageResourceRole
+description: Uma referência a uma função definida em um recurso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ff36109d59ee0bef4d81caf16c16f69f26b0a03e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1d7f97410c924b804ef4002932ca75182a461989
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042804"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133599"
 ---
-# <a name="accesspackageresourcerole-resource-type"></a>tipo de recurso accessPackageResourceRole
+# <a name="accesspackageresourcerole-resource-type"></a>Tipo de recurso accessPackageResourceRole
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma função de recurso de pacote do Access é uma referência a uma função definida em um recurso. Essa referência pode ser usada após a criação de um pacote do Access para especificar as funções de cada um dos recursos do catálogo nos quais um pacote do Access deve fornecer, [criando um escopo de função de recurso de pacote do Access](../api/accesspackage-post-accesspackageresourcerolescopes.md).
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma função de recurso do pacote de acesso é uma referência a uma função definida em um recurso. Essa referência pode ser usada após a criação de um pacote de acesso para especificar as funções de cada um dos recursos do catálogo nos quais um pacote de acesso deve ser entregue, criando um escopo de função de recurso do pacote de [acesso.](../api/accesspackage-post-accesspackageresourcerolescopes.md)
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | coleção [accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de objetos accessPackageResourceRole para um catálogo. |
+| [Listar funções de recurso accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [Coleção accessPackageResourceRole](accesspackageresourcerole.md) | Recupere uma lista de objetos accessPackageResourceRole para um catálogo. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |description|String|Uma descrição para a função de recurso.|
-|displayName|Cadeia de caracteres|O nome de exibição da função de recurso como a função definida pelo aplicativo.|
+|displayName|String|O nome de exibição da função de recurso, como a função definida pelo aplicativo.|
 |id|String| Somente leitura.|
-|originid|Cadeia de caracteres|O identificador exclusivo da função de recurso no sistema de origem. |
-|originSystem|Cadeia de caracteres|O tipo do recurso no sistema de origem, como `SharePointOnline` , `AadApplication` ou `AadGroup` .|
+|originId|String|O identificador exclusivo da função de recurso no sistema de origem. |
+|originSystem|String|O tipo do recurso no sistema de origem, `SharePointOnline` como, `AadApplication` ou `AadGroup` .|
 
 ## <a name="relationships"></a>Relações
 

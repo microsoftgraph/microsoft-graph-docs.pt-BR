@@ -1,24 +1,24 @@
 ---
-title: Remover o publishedResource de um onPremisesAgentGroup
-description: Remover um objeto [publishedResource](../resources/publishedresource.md) de um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
+title: Remover publishedResource de um onPremisesAgentGroup
+description: Remova um [objeto publishedResource](../resources/publishedresource.md) de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 201ae11ec1e5c803ffc862afeefab0000e5b3c14
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f7ac461d17ac14f97c0043381ad565614c4c09d1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973430"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132458"
 ---
-# <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>Remover o publishedResource de um onPremisesAgentGroup
+# <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>Remover publishedResource de um onPremisesAgentGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um objeto [publishedResource](../resources/publishedresource.md) de um objeto [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
+Remova um [objeto publishedResource](../resources/publishedresource.md) de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -109,5 +109,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -3,14 +3,14 @@ title: Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 description: O Microsoft Graph para o Azure AD (Azure Active Directory) fornece as APIs REST para ajudá-lo a gerenciar a organização, os recursos e os ativos.
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: microsoft-identity-platform
+ms.prod: identity-access
 author: dkershaw10
-ms.openlocfilehash: 9f243cdc50291a8ab49a5129b1b459fc40a74255
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 689ae5e1c4c3c13dff1ae6d5443e8a8b22e3039f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790696"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133382"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Trabalhar com os recursos do Azure Active Directory no Microsoft Graph
 

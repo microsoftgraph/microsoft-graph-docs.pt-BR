@@ -3,14 +3,14 @@ title: Tipo de recurso servicePlanInfo
 description: Contém informações sobre um plano de serviço associado a uma SKU inscrita. A propriedade **servicePlans** da entidade subscribedSku é uma coleção de **servicePlanInfo**.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: krbain
-ms.openlocfilehash: ab76cced936ebaa9f69a7fe7d4a2c2c4909475d7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f79e943f0303d28542f3f0932b1e59e59c481fc5
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019485"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133613"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Tipo de recurso servicePlanInfo
 
@@ -24,10 +24,10 @@ Contém informações sobre um plano de serviço associado a uma SKU inscrita. A
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|onplanid|Guid|O identificador exclusivo do plano de serviços.|
-|onplanname|Cadeia de caracteres|O nome do plano de serviços.|
-|provisioningStatus|Cadeia de caracteres|O status de provisionamento do plano de serviços. Valores possíveis:<br/>"Success"-o serviço está totalmente provisionado.<br/>"Disabled"-o serviço foi desabilitado.<br/>"PendingInput" – o serviço ainda não foi provisionado; aguardando confirmação do serviço.<br/>"PendingActivation" – o serviço é provisionado, mas requer ativação explícita por administrador (por exemplo, Intune_O365 plano de serviço).<br/>"PendingProvisioning"-a Microsoft adicionou um novo serviço ao SKU do produto e ainda não foi ativado no locatário.|
-|appliesTo|Cadeia de caracteres|O objeto ao qual o plano de serviço pode ser atribuído. Valores possíveis:<br/>"User" – o plano de serviço pode ser atribuído a usuários individuais.<br/>"Empresa"-o plano de serviço pode ser atribuído a todo o locatário.|
+|servicePlanId|Guid|O identificador exclusivo do plano de serviços.|
+|servicePlanName|Cadeia de caracteres|O nome do plano de serviços.|
+|provisioningStatus|Cadeia de caracteres|O status de provisionamento do plano de serviços. Valores possíveis:<br/>"Êxito" - O serviço está totalmente provisionado.<br/>"Desabilitado" - O serviço foi desabilitado.<br/>"PendingInput" - O serviço ainda não foi provisionado; aguardando confirmação do serviço.<br/>"PendingActivation" - O serviço é provisionado, mas exige ativação explícita pelo administrador (por exemplo, Intune_O365 plano de serviço).<br/>"PendingProvisioning" - A Microsoft adicionou um novo serviço à SKU do produto e ainda não foi ativado no locatário.|
+|appliesTo|Cadeia de caracteres|O objeto ao que o plano de serviço pode ser atribuído. Valores possíveis:<br/>"Usuário" - o plano de serviço pode ser atribuído a usuários individuais.<br/>"Empresa" - o plano de serviço pode ser atribuído ao locatário inteiro.|
 
 ## <a name="json-representation"></a>Representação JSON
 

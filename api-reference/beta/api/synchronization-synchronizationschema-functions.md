@@ -1,24 +1,24 @@
 ---
-title: 'synchronizationSchema: funções'
-description: Listar todas as funções atualmente suportadas no attributeMappingSource.
+title: 'synchronizationSchema: functions'
+description: Lista todas as funções atualmente com suporte no atributoMappingSource.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6bfd4bf92e49b2c213db561285321552a3383377
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 626ab146bf928691d846b4ffab209720be5b8f66
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971406"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132745"
 ---
-# <a name="synchronizationschema-functions"></a>synchronizationSchema: funções
+# <a name="synchronizationschema-functions"></a>synchronizationSchema: functions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar todas as funções atualmente suportadas no [attributeMappingSource](../resources/synchronization-attributemappingsource.md).
+Listar todas as funções atualmente com suporte no [atributoMappingSource](../resources/synchronization-attributemappingsource.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma coleção de `200 OK` [objetos attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso governanceSchedule
-description: 'Representa o agendamento de um governanceRoleAssignmentRequest. Para uma solicitação de atribuição de função, o agendamento controla quando executar a operação de atribuição de função, quando parar a atribuição de função e com que frequência realizar a operação de atribuição de função. '
+title: Tipo de recurso governanceSchedule
+description: 'Representa o cronograma de uma governanceRoleAssignmentRequest. Para uma solicitação de atribuição de função, o agendamento controla quando executar a operação de atribuição de função, quando interromper a atribuição de função e com que frequência executar a operação de atribuição de função. '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 5d11f6c1dab607fea27ac71f3142f899a7183a79
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e7b444b1daa45daf3228476fb48a38be4e7bb2b2
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016671"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132661"
 ---
-# <a name="governanceschedule-resource-type"></a>tipo de recurso governanceSchedule
+# <a name="governanceschedule-resource-type"></a>Tipo de recurso governanceSchedule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o agendamento de um [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). Para uma solicitação de atribuição de função, o agendamento controla quando executar a operação de atribuição de função, quando parar a atribuição de função e com que frequência realizar a operação de atribuição de função.
+Representa o cronograma de uma [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). Para uma solicitação de atribuição de função, o agendamento controla quando executar a operação de atribuição de função, quando interromper a atribuição de função e com que frequência executar a operação de atribuição de função.
 
 
 
@@ -26,9 +26,9 @@ Representa o agendamento de um [governanceRoleAssignmentRequest](../resources/go
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|A hora de término da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. *Observação: se o valor for `null` , ele indica uma atribuição permanente.*|
-|tipo|String|O tipo de agendamento de atribuição de função. O só `Once` é suportado por enquanto.
-|duration|Duração|A duração de uma atribuição de função. É no formato de um TimeSpan.|
+|endDateTime|DateTimeOffset|A hora de término da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. *Observação: se o valor for `null` , ele indicará uma atribuição permanente.*|
+|type|String|O tipo de agendamento de atribuição de função. Só `Once` há suporte por enquanto.
+|duração|Duration|A duração de uma atribuição de função. Ele está no formato de um TimeSpan.|
 
 ## <a name="json-representation"></a>Representação JSON
 

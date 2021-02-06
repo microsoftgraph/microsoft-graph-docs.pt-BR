@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso conditionalAccessSessionControl
-description: Tipo de base de controle da sessão.
+title: Tipo de recurso conditionalAccessSessionControl
+description: Tipo base de controle de sessão.
 localization_priority: Normal
 author: videor
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d1d6de0ee5b50b67e994a97c098cea3bf3cc89ab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4d0cdf7928eff5b574268147d1acbee4fe0fc072
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021922"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132320"
 ---
-# <a name="conditionalaccesssessioncontrol-resource-type"></a>tipo de recurso conditionalAccessSessionControl
+# <a name="conditionalaccesssessioncontrol-resource-type"></a>Tipo de recurso conditionalAccessSessionControl
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tipo de base de controle da sessão.
+Tipo base de controle de sessão.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Especifica se o controle de sessão está habilitado. |
+|isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
 
 ## <a name="relationships"></a>Relações
 

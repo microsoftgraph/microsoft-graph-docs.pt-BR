@@ -2,15 +2,15 @@
 title: Obter as configurações da caixa de correio do usuário
 description: 'Obtenha as configurações de caixa de correio do usuário. Isso inclui configurações para respostas automáticas (notificar pessoas automaticamente quando '
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78991c5140695c178ea7f878c51546b19b6c28f4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1cc87e9d4c111c7e0204614df4ece37ecef6452d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970076"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131688"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
@@ -97,19 +97,19 @@ Se for bem-sucedido, este método retornará um código de resposta `200 OK` e u
 
 - Objeto [mailboxSettings](../resources/mailboxsettings.md)
 - Objeto [automaticRepliesSetting](../resources/automaticrepliessetting.md)
-- cadeia de caracteres (para **dateFormat** )
-- Cadeia de caracteres (para **delegateMeetingMessageDeliveryOptions** )
+- cadeia de caracteres (para **dateFormat**)
+- cadeia de **caracteres (para delegateMeetingMessageDeliveryOptions**)
 - Objeto [localeInfo](../resources/localeinfo.md)
-- cadeia de caracteres (para **timeFormat** )
-- cadeia de caracteres (para **timeZone** )
+- cadeia de caracteres (para **timeFormat**)
+- cadeia de caracteres (para **timeZone**)
 - [workingHours](../resources/workinghours.md)
-- [userpurpose](../resources/userpurpose.md)
+- [userPurpose](../resources/userpurpose.md)
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1"></a>Exemplo 1
 #### <a name="request"></a>Solicitação 
-O primeiro exemplo obtém todas as configurações de caixa de correio da caixa de correio do usuário conectado, que incluem configurações de respostas automáticas, formato de data, localidade (idioma e país/região), formato de hora, fuso horário, horas de trabalho e finalidade do usuário.
+O primeiro exemplo obtém todas as configurações de caixa de correio da caixa de correio do usuário de entrada, que incluem configurações para respostas automáticas, formato de data, localidade (idioma e país/região), formato de hora, fuso horário, horário de trabalho e finalidade do usuário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -312,7 +312,7 @@ Content-type: application/json
 
 ### <a name="example-4"></a>Exemplo 4
 #### <a name="request"></a>Solicitação
-O quarto exemplo obtém especificamente as configurações de [finalidade do usuário](../resources/userpurpose.md) da caixa de correio do usuário conectado.
+O quarto exemplo obtém especificamente [as configurações de](../resources/userpurpose.md) finalidade do usuário da caixa de correio do usuário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -341,7 +341,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ---
 
 #### <a name="response"></a>Resposta
-A resposta inclui apenas as configurações de [finalidade do usuário](../resources/userpurpose.md) .
+A resposta inclui apenas as [configurações de finalidade](../resources/userpurpose.md) do usuário.
 
 <!-- {
   "blockType": "response",

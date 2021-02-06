@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso accessReviewInstanceDecisionItemServicePrincipalTarget
-description: Representa o destino de uma revisão como um destino principal de serviço.
+title: Tipo de recurso accessReviewInstanceDecisionItemServicePrincipalTarget
+description: Representa o destino de uma revisão como um destino de entidade de serviço.
 author: isabelleatmsft
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e9943a287dd28a44f3b36eae1a92d1b2c385496c
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: ef944fdd1b8dbe989b1ad92e3d49b1b057fdef74
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000778"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133494"
 ---
-# <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>tipo de recurso accessReviewInstanceDecisionItemServicePrincipalTarget
+# <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItemServicePrincipalTarget
 
 Namespace: microsoft.graph
 
-Representa uma entidade de serviço em revisão em um [accessReviewInstance](accessreviewinstance.md).
+Representa uma entidade de serviço em revisão em [um accessReviewInstance](accessreviewinstance.md).
 
 Herda de [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| servicePrincipalName | Cadeia de caracteres | O identificador da entidade de serviço cujo acesso está sendo revisado. |
-| servicePrincipalDisplayName | Cadeia de caracteres | O nome de exibição da entidade de serviço cujo acesso está sendo revisado. |
-| appId | Cadeia de caracteres | A appId da entidade de segurança de serviço que está sendo revisada. |
+| servicePrincipalID | String | O identificador da entidade de serviço cujo acesso está sendo revisado. |
+| servicePrincipalDisplayName | String | O nome de exibição da entidade de serviço cujo acesso está sendo revisado. |
+| appId | String | A appId da entidade de entidade de serviço que está sendo revisada. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso expressionInputObject
-description: Representa um objeto a ser usado como dados de teste de entrada quando a ação synchronizationSchema ParseName executa uma avaliação de expressão.
+title: Tipo de recurso expressionInputObject
+description: Representa um objeto a ser usado como dados de teste de entrada quando a ação synchronizationSchema parseExpression executa uma avaliação de expressão.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e9727f50b05eb8cdb5319883dd0058a91d9383cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: 161589d9d8b6e3d06ef6afe31df0fde79bf938bb
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968350"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132045"
 ---
-# <a name="expressioninputobject-resource-type"></a>tipo de recurso expressionInputObject
+# <a name="expressioninputobject-resource-type"></a>Tipo de recurso expressionInputObject
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um objeto que será usado como dados de teste de entrada quando a ação [parsetable](../api/synchronization-synchronizationschema-parseexpression.md) executar uma avaliação de expressão.
+Representa um objeto a ser usado como dados de teste de entrada quando a [ação parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) executa uma avaliação de expressão.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definir|[ObjectDefinition](synchronization-objectdefinition.md)|Definição do objeto Test.|
-|properties|coleção [stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md)|Valores de Propriedade do objeto Test.|
+|definição|[objectDefinition](synchronization-objectdefinition.md)|Definição do objeto de teste.|
+|properties|[Coleção stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md)|Valores de propriedade do objeto de teste.|
 
 ## <a name="json-representation"></a>Representação JSON
 

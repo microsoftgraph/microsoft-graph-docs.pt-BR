@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso userAttributeValuesItem
+title: Tipo de recurso userAttributeValuesItem
 description: Usado para preencher os valores de um atributo de fluxo de usuário dentro de um fluxo de usuário quando há várias seleções para escolher.
 author: jkdouglas
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6fd0d582ef4dcdd83dba6947536c5acdbc14a8cb
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 64b2416cd6fd0e8c92d9a00ff2d599226e3cd02c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581286"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133018"
 ---
-# <a name="userattributevaluesitem-resource-type"></a>tipo de recurso userAttributeValuesItem
+# <a name="userattributevaluesitem-resource-type"></a>Tipo de recurso userAttributeValuesItem
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
-Usado para preencher os valores de um atributo de fluxo de usuário dentro de um fluxo de usuário quando há várias seleções para escolher. userAttributeValuesItem é aplicável ao userInputTypes `radioSingleSelect` , `dropdownSingleSelect` e `checkboxMultiSelect` para um [identityUserFlowAttributeAssignment](..\resources\identityuserflowattributeassignment.md).
+Usado para preencher os valores de um atributo de fluxo de usuário dentro de um fluxo de usuário quando há várias seleções para escolher. userAttributeValuesItem é aplicável ao userInputTypes , e para `radioSingleSelect` `dropdownSingleSelect` uma `checkboxMultiSelect` [identityUserFlowAttributeAssignment](..\resources\identityuserflowattributeassignment.md).
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|isDefault|Booliano|Usado para definir o valor como o padrão.|
+|isDefault|Booliano|Usado para definir o valor como padrão.|
 |nome|String|O nome de exibição da propriedade exibida para o usuário final no fluxo do usuário.|
-|value|Cadeia de caracteres|O valor definido quando este item é selecionado.|
+|value|Cadeia de caracteres|O valor que é definido quando esse item é selecionado.|
 
 ## <a name="relationships"></a>Relações
 

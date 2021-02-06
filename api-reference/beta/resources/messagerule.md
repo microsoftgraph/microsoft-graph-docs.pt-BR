@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso messageRule
 description: Uma regra que se aplica a mensagens na Caixa de Entrada de um usuário.
-author: svpsiva
+author: abheek-das
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d5bd5cba444f03042e556906fc28e6a134f754d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6147640a221b72716f20bf4a90e74e25a7f9a448
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021408"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133760"
 ---
 # <a name="messagerule-resource-type"></a>Tipo de recurso messageRule
 
@@ -34,7 +34,7 @@ Programaticamente, você pode acessar regras por meio da propriedade de navegaç
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Condições de exceção para a regra. |
 | hasError | Boolean | Indica se a regra está em uma condição de erro. Somente leitura. |
 | id |String|O identificador exclusivo da regra. Somente leitura.|
-| isEnabled | Boolean | Indica se a regra está habilitada para ser aplicada a mensagens. |
+| isEnabled | Booliano | Indica se a regra está habilitada para ser aplicada a mensagens. |
 | isReadOnly | Boolean | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
 | sequence | Int32 | Indica a ordem em que a regra é executada, entre outras regras. |
 
@@ -71,7 +71,7 @@ Veja a seguir uma representação JSON do recurso.
 |[Obter regra](../api/messagerule-get.md) | [messageRule](messagerule.md) |Leia as propriedades e as relações de um objeto **messageRule**.|
 |[Criar](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Crie um objeto **messageRule** especificando um conjunto de condições e ações.|
 |[Atualizar](../api/messagerule-update.md) | [messageRule](messagerule.md) |Altere as propriedades graváveis em um objeto **messageRule** e salve as alterações. |
-|[Delete](../api/messagerule-delete.md) | Nenhum |Exclua o objeto **messageRule** especificado. |
+|[Delete](../api/messagerule-delete.md) | Nenhuma |Exclua o objeto **messageRule** especificado. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

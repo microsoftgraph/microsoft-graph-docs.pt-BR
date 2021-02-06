@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso requestSchedule
-description: Um agendamento de solicitação pode ser incluído em uma solicitação de atribuição de pacote do Access e está presente em uma atribuição de pacote do Access.
+title: Tipo de recurso requestSchedule
+description: Um agendamento de solicitação pode ser incluído em uma solicitação de atribuição de pacote de acesso e está presente em uma atribuição de pacote de acesso.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e16359e554bba495378ec48ab52937c198a0ed5d
-ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
+ms.openlocfilehash: 74fa9589552ba860962c73814e66332eda1c8e8f
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132535"
 ---
-# <a name="requestschedule-resource-type"></a>tipo de recurso requestSchedule
+# <a name="requestschedule-resource-type"></a>Tipo de recurso requestSchedule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure ad pretitulation Management](entitlementmanagement-root.md), uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote do Access. Essa solicitação pode incluir um cronograma para quando o usuário quiser ter uma atribuição.  Uma atribuição de pacote do Access que resulta de tal solicitação também tem um cronograma.
+No gerenciamento de direitos do [Azure AD,](entitlementmanagement-root.md)uma solicitação de atribuição de pacote de acesso é criada por um usuário que deseja obter uma atribuição de pacote de acesso. Essa solicitação pode incluir um cronograma para quando o usuário gostaria de ter uma atribuição.  Uma atribuição de pacote de acesso que resulta de tal solicitação também tem um cronograma.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |startDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|validade|[expirationPattern](expirationpattern.md)|Quando o acesso deve expirar.|
+|expiration|[expirationPattern](expirationpattern.md)|Quando o acesso deve expirar.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Para acesso recorrente. Não usado no momento.|
 
 ## <a name="json-representation"></a>Representação JSON

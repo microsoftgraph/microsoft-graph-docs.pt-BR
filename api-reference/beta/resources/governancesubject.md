@@ -1,34 +1,34 @@
 ---
-title: tipo de recurso governanceSubject
-description: Representa usuários, grupos e entidades de serviço que estão sendo gerenciados no gerenciamento de identidade privilegiada (PIM).
+title: Tipo de recurso governanceSubject
+description: Representa usuários, grupos e entidades de serviço sendo gerenciadas no Privileged Identity Management (PIM).
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 12f99f7face3013a3286b95ce90c377ff2d1bbf5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eedcaff8538d5a0efa110b34cd6a72aef2a3210a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989511"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132663"
 ---
-# <a name="governancesubject-resource-type"></a>tipo de recurso governanceSubject
+# <a name="governancesubject-resource-type"></a>Tipo de recurso governanceSubject
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa usuários, grupos e entidades de serviço que estão sendo gerenciados no gerenciamento de identidade privilegiada (PIM).
+Representa usuários, grupos e entidades de serviço sendo gerenciadas no Privileged Identity Management (PIM).
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo       |Descrição|
 |:----------|:----------|:----------|
-|id         |String     | A ID do assunto.|
-|tipo       |String     |O tipo do assunto. O valor pode ser ``User`` , ``Group`` e ``ServicePrincipal`` .|
+|id         |String     | A id do assunto.|
+|type       |String     |O tipo do assunto. O valor pode ser ``User`` ``Group`` , e ``ServicePrincipal`` .|
 |displayName|String     |O nome de exibição do assunto.|
-|email      |Cadeia de caracteres     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
-|principalName|Cadeia de caracteres   |O nome da entidade de segurança do usuário. Se o assunto estiver em outros tipos, ele estará vazio.|
+|email      |Cadeia de caracteres     |O endereço de email do assunto do usuário. Se o assunto estiver em outros tipos, ele está vazio.|
+|principalName|Cadeia de caracteres   |O nome principal do assunto do usuário. Se o assunto estiver em outros tipos, ele está vazio.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

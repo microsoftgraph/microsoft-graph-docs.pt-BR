@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso filterClause
-description: Representa uma declaração única que um objeto candidato deve satisfazer.
+title: Tipo de recurso filterClause
+description: Representa uma única declaração que um objeto candidato deve satisfazer.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 91cc7f85dc4c42f806be5e365f21adb0d5e972fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: fc633f6e25373713679da30a5b319ab8ae99fb04
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968363"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131919"
 ---
-# <a name="filterclause-resource-type"></a>tipo de recurso filterClause
+# <a name="filterclause-resource-type"></a>Tipo de recurso filterClause
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma declaração única que um objeto candidato deve satisfazer e é avaliada como `true` (objeto satisfaz a asserção) ou `false` (o objeto não satisfaz a asserção).
+Representa uma única declaração que um objeto candidato deve satisfazer e é avaliada para (o objeto satisfaz a assarção) ou (o objeto não satisfaz `true` `false` a assarção).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|OperatorName|String|Nome do operador a ser aplicado aos operandos de origem e de destino. Deve ser um dos operadores com suporte. Os operadores com suporte podem ser descobertos.|
-|sourceOperandName|String|Nome do operando de origem (o operando que está sendo testado). O nome do operando de origem deve corresponder a um dos nomes de atributo no objeto de origem.|
-|targetOperand|[filterOperand](synchronization-filteroperand.md)|Valores em relação ao qual o operando de origem será testado.|
+|operatorName|String|Nome do operador a ser aplicado aos operadores de origem e de destino. Deve ser um dos operadores com suporte. Os operadores com suporte podem ser descobertos.|
+|sourceOperandName|String|Nome do operand de origem (o operand que está sendo testado). O nome do operand de origem deve corresponder a um dos nomes de atributo no objeto de origem.|
+|targetOperand|[filterOperand](synchronization-filteroperand.md)|Valores que o operand de origem será testado.|
 
 ## <a name="json-representation"></a>Representação JSON
 

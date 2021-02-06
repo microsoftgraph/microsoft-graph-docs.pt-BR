@@ -1,24 +1,24 @@
 ---
-title: 'servicePrincipalName: createPasswordSingleSignOnCredentials'
-description: Criar credenciais de logon único usando uma senha para um usuário ou grupo.
+title: 'servicePrincipal: createPasswordSingleSignOnCredentials'
+description: Crie credenciais de login único usando uma senha para um usuário ou grupo.
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 16dedab55ccec0e4dab7e9a6483b7fb03ae7e2c1
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7874e0f875b54b4bffb18efd3a3cdbe4cd468ccd
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132461"
 ---
-# <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipalName: createPasswordSingleSignOnCredentials
+# <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal: createPasswordSingleSignOnCredentials
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar credenciais de logon único usando uma senha para um usuário ou grupo.
+Crie credenciais de login único usando uma senha para um usuário ou grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Application. ReadWrite. All e Directory. Read. All, Directory. ReadWrite. All, Directory. AccessAsUser. All |
+| Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | Application. ReadWrite. All e Directory. Read. All, Directory. ReadWrite. All |
+| Application                            | Application.ReadWrite.All e Directory.Read.All, Directory.ReadWrite.All |
 
 > [!NOTE]
-> Os usuários podem criar credenciais para si mesmos. Os proprietários e administradores da entidade de serviço com as seguintes funções podem criar credenciais para qualquer usuário ou grupo: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Para saber mais, confira [funções de diretório](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+> Os usuários podem criar credenciais para si próprios. Os proprietários e administradores da entidade de serviço com as seguintes funções podem criar credenciais para qualquer usuário ou grupo: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Para saber mais, consulte Funções [de diretório.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,12 +54,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|A ID do usuário ou grupo ao qual esse conjunto de credenciais pertence.|
-|las|coleção [Credential](../resources/credential.md)|Uma lista de objetos de credencial que definem o fluxo de entrada completo.|
+|id|String|A ID do usuário ou grupo ao que esse conjunto de credenciais pertence.|
+|credenciais|[coleção de](../resources/credential.md) credenciais|Uma lista de objetos de credencial que definem o fluxo de login completo.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo objeto [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um novo objeto `200 OK` [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

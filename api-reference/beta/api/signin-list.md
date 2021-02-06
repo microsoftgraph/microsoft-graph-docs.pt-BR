@@ -1,16 +1,16 @@
 ---
 title: Listar logons
 doc_type: apiPageType
-description: Obtenha uma lista das entradas de usuário em um locatário do Azure Active Directory.
+description: Obter uma lista de logins do usuário em um locatário do Azure Active Directory.
 localization_priority: Normal
 author: besiler
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a26d753241c88443a0aeceabd0f6c800f59c6d7
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: d850fdf92f88c2c6cd3290dfe9479df8e09834be
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49524257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132123"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de objetos de [entrada](../resources/signin.md) . A lista contém as entradas de usuário para o locatário do Azure Active Directory. Entradas onde um nome de usuário e senha são passados como parte do token de autorização, e os logins federados bem sucedidos estão atualmente incluídos nos logs de entrada. As entradas mais recentes são retornadas primeiro.
+Obter uma lista de [objetos signIn.](../resources/signin.md) A lista contém as ins loções de usuário para seu locatário do Azure Active Directory. Sign-ins where a username and password are passed as part of authorization token, and successful federated sign-ins are currently included in the sign-in logs. As insições mais recentes são retornadas primeiro.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegada (conta corporativa ou de estudante) | AuditLog. Read. All, Directory. Read. All |
+| Delegado (conta corporativa ou de estudante) | AuditLog.Read.All, Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
-| Aplicativo | AuditLog. Read. All, Directory. Read. All | 
+| Aplicativo | AuditLog.Read.All, Directory.Read.All | 
 
 Além disso, os aplicativos devem ser registrados corretamente no Azure Active Directory.
 
@@ -48,7 +48,7 @@ Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar
 | [$top](/graph/query-parameters#top-parameter) | Define o tamanho de página de resultados. | `/auditLogs/signIns?$top=1` |
 | [$skiptoken](/graph/query-parameters#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. |`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte pelo parâmetro $filter
+### <a name="attributes-supported-by-filter-parameter"></a>Atributos com suporte $filter parâmetro
 
 | Nome do Atributo | Operadores com suporte |
 |:-------------- |:------------------- |
@@ -84,7 +84,7 @@ Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar
 | tokenIssuerType | eq |
 | resourceDisplayName | eq |
 | resourceId | eq |
-| servicePrincipalName | eq, startswith |
+| servicePrincipalId | eq, startswith |
 | servicePrincipalName | eq, startswith |
 | userAgent | eq, startswith |
 | alternateSignInName | eq, startswith |
@@ -105,7 +105,7 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma c
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Exemplo 1: o usuário faz logon usando MFA, que é disparada por uma política de acesso condicional. A autenticação principal é por meio do FIDO.
+### <a name="example-1-user-signs-in-using-mfa-which-is-triggered-by-a-conditional-access-policy-primary-authentication-is-through-fido"></a>Exemplo 1: o usuário faz o acesso usando a MFA, que é acionada por uma política de acesso condicional. A autenticação principal é por meio do FIDO.
 
 #### <a name="request"></a>Solicitação
 
@@ -257,7 +257,7 @@ Content-length: 211
     ]
 }
 ```
-### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>Exemplo 2: o usuário entra no com somente autenticação principal. A autenticação principal é por meio da senha da nuvem.
+### <a name="example-2-user-signs-in-with-only-primary-authentication-primary-authentication-is-through-cloud-password"></a>Exemplo 2: o usuário se insi com apenas a autenticação principal. A autenticação principal é por meio da senha da nuvem.
 
 #### <a name="request"></a>Solicitação
 

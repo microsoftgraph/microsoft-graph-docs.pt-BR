@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso privilegedRoleSummary
+title: Tipo de recurso privilegedRoleSummary
 description: O resumo de estatísticas de uma função específica.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: shauliu
-ms.openlocfilehash: 05b8646090726570ed0d4ec9f38862a404bbc6d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 368ed2ba6b206ba102f821ceac38de70494f8718
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070496"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133970"
 ---
-# <a name="privilegedrolesummary-resource-type"></a>tipo de recurso privilegedRoleSummary
+# <a name="privilegedrolesummary-resource-type"></a>Tipo de recurso privilegedRoleSummary
 
 Namespace: microsoft.graph
 
@@ -31,11 +31,11 @@ O resumo de estatísticas de uma função específica.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|O número de usuários que têm a função atribuída e a função é ativada.|
-|id|cadeia de caracteres| O identificador exclusivo da função. Somente leitura.|
+|id|string| O identificador exclusivo da função. Somente leitura.|
 |managedCount|int32|O número de usuários que têm a função atribuída, mas a função é desativada.|
-|mfaEnabled|booliano|**true** se a ativação de função requer MFA. **false** se a ativação de função não requer MFA.|
-|status|cadeia de caracteres| Os valores possíveis são: `ok` e `bad`. O valor depende da taxa de (managedCount/usersCount). Se a taxa for menor que um limite predefinido, `ok` será retornado. Caso contrário, `bad` será retornado.|
-|usersCount|int32|O número de usuários atribuídos com a função.|
+|mfaEnabled|booliano|**true** se a ativação de função exigir MFA. **false** se a ativação de função não exigir MFA.|
+|status|cadeia de caracteres| Os valores possíveis são: `ok` e `bad`. O valor depende da taxa de (managedCount /usersCount). Se a taxa for menor que um limite predefinido, `ok` será retornado. Caso contrário, `bad` será retornado.|
+|usersCount|int32|O número de usuários atribuídos à função.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -454,7 +454,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir o perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -873,7 +873,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Remover do grupo de agentes
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Conector
+              - name: Connector
                 href: resources/connector.md
                 items:
                   - name: Listar
@@ -1280,7 +1280,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Obter uma propriedade de vários valores
                     href: api/multivaluelegacyextendedproperty-get.md
-          - name: Local
+          - name: Place
             items:
               - name: Place
                 href: resources/place.md
@@ -1472,7 +1472,7 @@ items:
                     href: api/custodian-update.md
                   - name: Ativar
                     href: api/custodian-activate.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/custodian-release.md
               - name: Conjunto de revisão de Descoberta Eletrônica
                 href: resources/reviewset.md
@@ -2259,7 +2259,7 @@ items:
                         href: api/intune-apps-macosmdatpapp-delete.md
                       - name: Atualizar
                         href: api/intune-apps-macosmdatpapp-update.md
-                  - name: aplicativo microsoft edge do macOS
+                  - name: Aplicativo microsoft edge do macOS
                     href: resources/intune-apps-macosmicrosoftedgeapp.md
                     items:
                       - name: Listar
@@ -2693,7 +2693,7 @@ items:
                     href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
                   - name: Destino de atribuição de grupo de configuração do Office
                     href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-                  - name: ID do produto do Office
+                  - name: ID do produto (Product ID) do Office
                     href: resources/intune-apps-officeproductid.md
                   - name: Aplicativo do pacote Office
                     href: resources/intune-apps-officesuiteapp.md
@@ -3083,7 +3083,7 @@ items:
                         href: api/intune-enrollment-appleenrollmentprofileassignment-delete.md
                       - name: Atualizar
                         href: api/intune-enrollment-appleenrollmentprofileassignment-update.md
-                  - name: Tipo de registro de tipo de proprietário da Apple
+                  - name: Tipo de registro do tipo proprietário da Apple
                     href: resources/intune-enrollment-appleownertypeenrollmenttype.md
                   - name: Perfil de registro iniciado pelo usuário da Apple
                     href: resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md
@@ -6816,7 +6816,7 @@ items:
                         href: api/intune-devices-devicecompliancescriptdevicestate-delete.md
                       - name: Atualizar
                         href: api/intune-devices-devicecompliancescriptdevicestate-update.md
-                  - name: Resumo de executar o script de conformidade do dispositivo
+                  - name: Resumo do script de conformidade do dispositivo
                     href: resources/intune-devices-devicecompliancescriptrunsummary.md
                     items:
                       - name: Obter
@@ -7260,7 +7260,7 @@ items:
                         href: api/intune-devices-devicemanagementscriptuserstate-delete.md
                       - name: Atualizar
                         href: api/intune-devices-devicemanagementscriptuserstate-update.md
-                  - name: Restrição abstrata de implementação da configuração de gerenciamento de dispositivos
+                  - name: Restrição abstrata de implementação abstrata de configuração de gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementsettingabstractimplementationconstraint.md
                   - name: Restrição do aplicativo de configuração de gerenciamento de dispositivos
                     href: resources/intune-deviceintent-devicemanagementsettingappconstraint.md
@@ -8035,7 +8035,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-delete.md
                       - name: Atualizar
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-update.md
-                  - name: Categoria de reinicialização do sistema operacional de análise da experiência do usuário
+                  - name: Categoria de reinicialização do sistema operacional de análise de experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md
                   - name: Visão geral da análise da experiência do usuário
                     href: resources/intune-devices-userexperienceanalyticsoverview.md
@@ -8983,7 +8983,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
                       - name: Listar
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Excluir
+                      - name: Delete
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Relatórios do gerenciamento de dispositivos
                     href: resources/intune-shared-devicemanagementreports.md
@@ -10099,6 +10099,8 @@ items:
                   - name: Criar domínio
                     href: api/domain-post-domains.md
                   - name: Excluir domínio
+                    href: api/domain-delete.md
+                  - name: Forçar exclusão de domínio
                     href: api/domain-forcedelete.md
                   - name: Obter domínio
                     href: api/domain-get.md
@@ -10654,7 +10656,7 @@ items:
                             href: api/permissiongrantpolicy-post-includes.md
                           - name: Excluir de inclui
                             href: api/permissiongrantpolicy-delete-includes.md
-                          - name: Listar exclusões
+                          - name: Exclusões de lista
                             href: api/permissiongrantpolicy-list-excludes.md
                           - name: Criar em exclusões
                             href: api/permissiongrantpolicy-post-excludes.md
@@ -11054,6 +11056,13 @@ items:
                         href: api/accesspackageresourcerequest-list.md
                       - name: Criar
                         href: api/accesspackageresourcerequest-post.md
+                  - name: Ambiente de recursos do pacote de acesso
+                    href: resources/accesspackageresourceenvironment.md
+                    items:
+                      - name: Listar
+                        href: api/accesspackageresourceenvironment-list.md
+                      - name: Obter
+                        href: api/accesspackageresourceenvironment-get.md
                   - name: Escopo da função de recurso do pacote de acesso
                     href: resources/accesspackageresourcerolescope.md
                     items:
@@ -11605,7 +11614,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Excluir
                     href: api/educationalactivity-delete.md
-              - name: Email
+              - name: Endereço de email
                 items:
                   - name: Email do item
                     href: resources/itememail.md
@@ -11849,9 +11858,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Configurações
                 items:
-                  - name: Settings
+                  - name: Configurações
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -12013,7 +12022,7 @@ items:
                   - name: Detalhes do registro do usuário de credencial
                     href: resources/credentialuserregistrationdetails.md
                     items:
-                      - name: Listar detalhes do registro
+                      - name: Listar detalhes de registro
                         href: api/reportroot-list-credentialuserregistrationdetails.md
                   - name: Detalhes de uso da credencial do usuário
                     href: resources/usercredentialusagedetails.md
@@ -12637,7 +12646,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral

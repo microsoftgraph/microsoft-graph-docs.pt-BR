@@ -1,16 +1,16 @@
 ---
 title: Atualizar onPremisesPublishingProfile
-description: Atualiza as propriedades de um objeto onPremisesPublishingProfile.
+description: Atualizar as propriedades de um objeto onPremisesPublishingProfile.
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dfcd5ffb5cc2665559d0b74c9a2722424d3ee3be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e1200e66da53b564e21396bbf347959a3223fd3a
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968782"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132787"
 ---
 # <a name="update-onpremisespublishingprofile"></a>Atualizar onPremisesPublishingProfile
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualiza as propriedades de um objeto [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) .
+Atualizar as propriedades de um [objeto onPremisesPublishingProfile.](../resources/onpremisespublishingprofile.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +46,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfigur
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores de campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores dos campos relevantes a atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -58,9 +58,9 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>Exemplo 1: atualizar updateWindow no hybridAgentUpdaterConfiguration
+### <a name="example-1-update-updatewindow-in-the-hybridagentupdaterconfiguration"></a>Exemplo 1: Atualizar UpdateWindow no hybridAgentUpdaterConfiguration
 
-O exemplo a seguir atualiza o **updateWindow** no **hybridAgentUpdaterConfiguration**.
+O exemplo a seguir atualiza **a updateWindow** no **hybridAgentUpdaterConfiguration**.
 
 #### <a name="request"></a>Solicitação
 
@@ -115,9 +115,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>Exemplo 2: atualizar deferUpdate no hybridAgentUpdaterConfiguration 
+### <a name="example-2-update-deferupdate-in-the-hybridagentupdaterconfiguration"></a>Exemplo 2: Atualizar deferUpdate no hybridAgentUpdaterConfiguration 
 
-O exemplo a seguir atualiza o **deferUpdate** no **hybridAgentUpdaterConfiguration**.
+O exemplo a seguir **atualiza deferUpdate** no **hybridAgentUpdaterConfiguration**.
 
 #### <a name="request"></a>Solicitação
 
@@ -148,9 +148,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>Exemplo 3: atualizar allowUpdateConfigurationOverride no hybridAgentUpdaterConfiguration
+### <a name="example-3-update-allowupdateconfigurationoverride-in-the-hybridagentupdaterconfiguration"></a>Exemplo 3: Atualizar allowUpdateConfigurationOverride no hybridAgentUpdaterConfiguration
 
-O exemplo a seguir atualiza o **allowUpdateConfigurationOverride** no **hybridAgentUpdaterConfiguration**.
+O exemplo a seguir atualiza **allowUpdateConfigurationOverride** no **hybridAgentUpdaterConfiguration**.
 
 #### <a name="request"></a>Solicitação
 
@@ -190,5 +190,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

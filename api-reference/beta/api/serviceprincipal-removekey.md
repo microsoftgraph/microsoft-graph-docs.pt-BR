@@ -1,40 +1,40 @@
 ---
-title: 'servicePrincipalName: removeKey'
-description: Remover uma credencial de chave de um servicePrincipalName
+title: 'servicePrincipal: removeKey'
+description: Remover uma credencial de chave de uma servicePrincipal
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 932ec0fa86b377f3614cd5e986b6d99935d27369
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f82140ff1710d9da7c646d2b84f1d83ac4a66150
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076691"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50134145"
 ---
-# <a name="serviceprincipal-removekey"></a>servicePrincipalName: removeKey
+# <a name="serviceprincipal-removekey"></a>servicePrincipal: removeKey
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover uma credencial de chave de um [servicePrincipalName](../resources/serviceprincipal.md). Este método junto com o [addKey](serviceprincipal-addkey.md) pode ser usado por um servicePrincipalName para automatizar as chaves de expiração.
+Remova uma credencial de chave de [um servicePrincipal](../resources/serviceprincipal.md). Esse método, [juntamente com addKey,](serviceprincipal-addkey.md) pode ser usado por uma servicePrincipal para automatizar a rolagem de suas chaves expiradas.
 
 > [!NOTE]
-> [Criar o servicePrincipalName](../api/serviceprincipal-post-serviceprincipals.md) e [Atualizar](../api/serviceprincipal-update.md) as operações do servicePrincipalName podem continuar a ser usado para adicionar e atualizar as principais credenciais de qualquer servicePrincipalName com ou sem o contexto de um usuário.
+> [Criar operações servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) e [Update servicePrincipal](../api/serviceprincipal-update.md) podem continuar a ser usadas para adicionar e atualizar credenciais de chave para qualquer servicePrincipal com ou sem o contexto de um usuário.
 
-Como parte da solicitação de validação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada.
+Como parte da validação da solicitação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada.
 
 ## <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Nenhum  |
+|Delegado (conta corporativa ou de estudante) | Nenhum.  |
 |Delegado (conta pessoal da Microsoft) | Nenhum.    |
-|Aplicativo | Nenhum |
+|Aplicativo | Nenhum. |
 
 > [!NOTE]
-> Um servicePrincipalName não precisa de nenhuma permissão específica para a distribuição de suas próprias chaves.
+> Uma servicePrincipal não precisa de nenhuma permissão específica para rolar suas próprias chaves.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,12 +53,12 @@ POST /serviceprincipals/{id}/removeKey
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça as seguintes propriedades obrigatórias.
+No corpo da solicitação, forneça as seguintes propriedades necessárias.
 
 | Propriedade  | Tipo | Descrição|
 |:----------|:-----|:-----------|
 | keyId     | GUID | O identificador exclusivo da senha.|
-| evidência | Cadeia de caracteres | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes de servicePrincipalName. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` -Issuer precisa ser a __ID__  do servicePrincipalName que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Veja a seguir um [exemplo](/graph/application-rollkey-prooftoken) de código que pode ser usado para gerar esse token de prova de posse.|
+| proof | String | Um token JWT auto-assinado usado como prova de posse das chaves existentes. Esse token JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do servicePrincipal. O token deve conter os seguintes argumentos:<ul><li>`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - O emissor precisa ser a __id__  da servicePrincipal que está fazendo a chamada.</li><li>`nbf` – Não antes da hora.</li><li>`exp` – O tempo de expiração deve ser "nbf" + 10 min.</li></ul><br>Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar esse token de comprovação de posse.|
 
 ## <a name="response"></a>Resposta
 
@@ -117,5 +117,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

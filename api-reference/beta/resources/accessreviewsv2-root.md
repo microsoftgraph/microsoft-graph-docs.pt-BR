@@ -3,14 +3,14 @@ title: Revisões de acesso do Azure AD – associações de grupo
 description: Você pode usar as revisões de acesso do Azure AD para configurar revisões de acesso única ou recorrentes para atestado dos direitos de acesso do usuário. Esta documentação atende à segunda versão das APIs.
 localization_priority: Normal
 author: isabelleatmsft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fd476139edafda2daaac38008cbcaa241ee29d45
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: b26bd7e42746b74a14d08849e9454864512ceca8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133396"
 ---
 # <a name="azure-ad-access-reviews-for-groups"></a>Revisões de acesso do Azure AD para grupos
 
@@ -30,7 +30,7 @@ Cenários típicos de clientes para revisões de acesso de associações de grup
 
 - Os clientes podem revisar e certificar o acesso dos funcionários a aplicativos e associações de grupo com revisões de acesso.
 
-- Os clientes podem coletar controles de revisão de acesso em programas que são relevantes para sua organização rastrear análises de aplicativos de conformidade ou de risco.
+- Os clientes podem coletar controles de revisão de acesso em programas relevantes para a sua organização para rastrear análises de aplicativos de conformidade ou de risco.
 
 Há também um recurso relacionado para que os clientes revisem e certifiquem as atribuições de função de usuários administrativos que estão atribuídos a funções do Azure AD, como Administrador Global ou funções de assinatura do Azure.  Esse recurso está incluído no [Azure AD Privileged Identity Management.](privilegedidentitymanagement-root.md)
 
@@ -61,14 +61,14 @@ A tabela a seguir lista os métodos que você pode usar para interagir com os re
 
 ## <a name="role-and-application-permission-authorization-checks"></a>Verificações de autorização de permissão de aplicativo e função
 
-As funções de diretório a seguir são necessárias para que um usuário de chamada gerencie revisões de acesso. Observe que apenas as revisões de acesso em grupos têm suporte atualmente por meio das APIs do Microsoft Graph.
+As funções de diretório a seguir são necessárias para que um usuário chamador gerencie revisões de acesso. Observe que apenas as revisões de acesso em grupos têm suporte atualmente por meio das APIs do Microsoft Graph.
 
-| Operação | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
+| Operation | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
 |:------------------|:------------|:--------------------------------------------|
 | Ler | AccessReview.Read.All ou AccessReview.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador do Usuário |
-| Criar, Atualizar ou Excluir | AccessReview.ReadWrite.All | Administrador Global ou Administrador do Usuário |
+| Criar, Atualizar ou Excluir | AccessReview.ReadWrite.All | Administrador Global ou Administrador de Usuário |
 
-Além disso, um usuário que é um revisador atribuído de uma revisão de acesso pode gerenciar suas decisões, sem precisar estar em uma função de diretório.
+Além disso, um usuário que é um revistor atribuído de uma revisão de acesso pode gerenciar suas decisões, sem precisar estar em uma função de diretório.
 
 ## <a name="see-also"></a>Confira também
 

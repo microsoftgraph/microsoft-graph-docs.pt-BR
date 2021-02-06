@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso synchronizationSchedule
-description: Define o agendamento usado para executar um synchronizationJob.
+title: Tipo de recurso synchronizationSchedule
+description: Define a agenda usada para executar um synchronizationJob.
 localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 70b44acb7f00e55bf4082ac064950e819cb33f2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: applications
+ms.openlocfilehash: cce48886fd461e52647fc342d707f5d97676faae
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046734"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133359"
 ---
-# <a name="synchronizationschedule-resource-type"></a>tipo de recurso synchronizationSchedule
+# <a name="synchronizationschedule-resource-type"></a>Tipo de recurso synchronizationSchedule
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define o agendamento usado para executar um [synchronizationJob](synchronization-synchronizationjob.md).
+Define a agenda usada para executar um [synchronizationJob](synchronization-synchronizationjob.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|validade|DateTimeOffset|Data e hora em que este trabalho vai expirar. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|interval|Duração|O intervalo entre as iterações de sincronização.|
-|state|Cadeia de caracteres| Os valores possíveis são: `Active` e `Disabled`.|
+|expiration|DateTimeOffset|Data e hora em que esse trabalho expirará. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|interval|Duration|O intervalo entre ierações de sincronização.|
+|estado|String| Os valores possíveis são: `Active` e `Disabled`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

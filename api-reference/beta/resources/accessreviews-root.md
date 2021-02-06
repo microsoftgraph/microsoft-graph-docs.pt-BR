@@ -3,14 +3,14 @@ title: Revisões de acesso do Azure AD (todos os recursos)
 description: Você pode usar as revisões de acesso do Azure AD para configurar revisões de acesso única ou recorrentes para atestado dos direitos de acesso do usuário. Esta documentação atende às APIs herddas.
 localization_priority: Normal
 author: markwahl-msft
-ms.prod: microsoft-identity-platform
+ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 113e24c801c804024d37700148ca1eb12c128a06
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: b2978179dbe581a1013d34e848e9a4c3614d9761
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790745"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50133459"
 ---
 # <a name="azure-ad-access-reviews-for-resources-excluding-groups"></a>Revisões de acesso do Azure AD (para recursos excluindo grupos)
 
@@ -31,7 +31,7 @@ Cenários típicos de clientes para revisões de acesso de associações de grup
 
 - Os clientes podem coletar controles de revisão de acesso em programas que são relevantes para sua organização rastrear análises de aplicativos de conformidade ou de risco.
 
-Há também um recurso relacionado para que os clientes revisem e certifiquem as atribuições de função de usuários administrativos que estão atribuídos a funções do Azure AD, como Administrador Global ou funções de assinatura do Azure.  Esse recurso está incluído no [Azure AD Privileged Identity Management.](privilegedidentitymanagement-root.md)
+Há também um recurso relacionado para que os clientes revisem e certifiquem as atribuições de função de usuários administrativos que estão atribuídos a funções do Azure AD, como Administrador Global ou funções de assinatura do Azure.  Esse recurso está incluído no [Azure AD Privileged Identity Management](privilegedidentitymanagement-root.md).
 
 Observe que o recurso de revisões de acesso, incluindo a API, está incluído no Azure AD Premium P2.  O locatário onde uma revisão de acesso está sendo criada deve ter uma assinatura válida adquirida ou de avaliação do Azure AD Premium P2 ou EMS E5.
 Antes de criar uma revisão de acesso, programa ou controle de programa, um administrador deve ter sido previamente onboardado para preparar os recursos [programControlType](programcontroltype.md) e [businessFlowTemplate.](businessflowtemplate.md) A organização pode fazer a integração às revisões de acesso do Azure AD ou, no caso de revisões de acesso de funções do Azure AD ou funções de assinatura do Azure, PIM do Azure AD.
@@ -59,7 +59,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com os re
 |[Aplicar decisões de accessReview](../api/accessreview-apply.md) |     Nenhum.   |   Aplicar as decisões de um accessReview concluído.|
 |[Listar businessFlowTemplates](../api/businessflowtemplate-list.md) | [Coleção businessFlowTemplate](businessflowtemplate.md)| Obter os modelos de fluxo de negócios apropriados para acessar revisões.|
 |[Criar programa](../api/program-create.md) |   [programa](program.md)   |   Crie um novo programa.|
-|[Excluir programa](../api/program-delete.md) |   Nenhum.   |   Excluir um programa.|
+|[Excluir programa](../api/program-delete.md) |   Nenhum.   |   Exclua um programa.|
 |[Listar programas](../api/program-list.md) |  [coleção de](program.md) programas|   Obter uma coleção de todos os programas.|
 |[Listar programControls de um programa](../api/program-listcontrols.md) |      [coleção programControl](programcontrol.md)| Obter uma coleção de controles de um programa.|
 |[Atualizar programa](../api/program-update.md) |   [programa](program.md)|  Atualizar um programa.|
@@ -72,16 +72,16 @@ A tabela a seguir lista os métodos que você pode usar para interagir com os re
 
 As funções de diretório a seguir são necessárias para que um usuário chamado gerencie revisões de acesso, programas e controles.
 
-| Recurso de destino | Operação | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
+| Recurso de destino | Operation | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[accessReview](accessreview.md) de uma função do Azure AD | Ler | AccessReview.Read.All ou AccessReview.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Função Privilegiada |
 |[accessReview](accessreview.md) de uma função do Azure AD | Criar, Atualizar ou Excluir | AccessReview.ReadWrite.All | Administrador Global ou Administrador de Função Privilegiada |
 |[accessReview](accessreview.md) de um grupo ou aplicativo | Ler | AccessReview.Read.All, AccessReview.ReadWrite.Membership ou AccessReview.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador do Usuário |
-|[accessReview](accessreview.md) de um grupo ou aplicativo | Criar, Atualizar ou Excluir | AccessReview.ReadWrite.Membership ou AccessReview.ReadWrite.All | Administrador Global ou Administrador do Usuário |
+|[accessReview](accessreview.md) de um grupo ou aplicativo | Criar, Atualizar ou Excluir | AccessReview.ReadWrite.Membership ou AccessReview.ReadWrite.All | Administrador Global ou Administrador de Usuário |
 | [program](program.md) and [programControl](programcontrol.md)| Ler | ProgramControl.Read.All ou ProgramControl.ReadWrite.All |  Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador do Usuário |
-| [program](program.md) and [programControl](programcontrol.md) | Criar, Atualizar ou Excluir | ProgramControl.ReadWrite.All | Administrador Global ou Administrador do Usuário |
+| [program](program.md) and [programControl](programcontrol.md) | Criar, Atualizar ou Excluir | ProgramControl.ReadWrite.All | Administrador Global ou Administrador de Usuário |
 
-Além disso, um usuário que é um revisador atribuído de uma revisão de acesso pode gerenciar suas decisões, sem precisar estar em uma função de diretório.
+Além disso, um usuário que é um revistor atribuído de uma revisão de acesso pode gerenciar suas decisões, sem precisar estar em uma função de diretório.
 
 ## <a name="see-also"></a>Confira também
 

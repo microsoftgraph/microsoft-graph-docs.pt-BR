@@ -1,16 +1,16 @@
 ---
 title: Obter synchronizationSchema
-description: Recupere o esquema de um determinado trabalho de sincronização ou modelo.
+description: Recupere o esquema de um determinado trabalho ou modelo de sincronização.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c952e2b8831a7d2d23964590fb944d8f5c3580c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 9e91c0697c39c031f149477d7dbcac5a35679040
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969496"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132710"
 ---
 # <a name="get-synchronizationschema"></a>Obter synchronizationSchema
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o esquema de um determinado trabalho de sincronização ou modelo.
+Recupere o esquema de um determinado trabalho ou modelo de sincronização.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [synchronizationSchema](../resources/synchronization-synchronizationschema.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e um objeto `200 OK` [synchronizationSchema](../resources/synchronization-synchronizationschema.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
