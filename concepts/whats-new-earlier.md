@@ -3,14 +3,83 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 0414c2414a6765c7e0c29114c2239d15bbe71cea
-ms.sourcegitcommit: 8f156a80b2f76cefa271a536c238721aff6931bf
+ms.openlocfilehash: 97cd975beeaf1d45dba7d4db9ffd0809ae6c54ae
+ms.sourcegitcommit: cee56ed143e73d1d47cb015b18e01c2808e760ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49883414"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137815"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="december-2020-new-and-generally-available"></a>Dezembro de 2020: Novo e disponível para o público geral
+
+### <a name="calendar"></a>Calendário
+- Os organizadores da reunião podem usar a propriedade **hideAttendees** de um [evento](/graph/api/resources/event) para controlar se os participantes podem ver uns aos outros na lista de **acompanhamento** da reunião.
+- GA da propriedade **isDraft** e método de [cancelamento](/graph/api/event-cancel) que estão disponíveis para os organizadores e o método de [encaminhamento](/graph/api/event-forward) disponível para organizadores e participantes para gerenciar melhor os recursos do [evento](/graph/api/resources/event) em um calendário.
+- GA das propriedades **hexColor** e **isDefault** de um [calendário](/graph/api/resources/calendar) para gerenciar melhor os calendários.
+
+### <a name="cloud-communications"></a>Comunicações na nuvem
+GA do recurso de [presença](/graph/api/resources/presence), permitindo obter a presença de um ou mais usuários, como disponibilidade e atividade do usuário.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+Experimente um novo [tutorial](tutorial-riskdetection-api.md) para aprender como usar a [API de proteção de identidade](/graph/api/resources/identityprotectionroot) para identificar o risco e configurar um fluxo de trabalho para confirmar o comprometimento ou habilitar a correção.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- GA da [API para gerenciar a instalação do aplicativo Teams](/graph/api/resources/teamsappinstallation), incluindo a instalação de aplicativos ou a adição, a remoção ou a atualização do aplicativo em uma equipe ou no escopo pessoal de um usuário.
+- [Obtenha um chat entre um usuário e um aplicativo do Teams](/graph/api/userscopeteamsappinstallation-get-chat).
+
+### <a name="use-the-toolkit"></a>Usar o kit de ferramentas
+GA do Kit de ferramentas do Microsoft Graph 2.0 - esta versão inclui um novo [componente para Tarefas Pendentes do Microsoft Graph](./toolkit/components/todo.md), diferente do [componente de tarefas do Planner](./toolkit/components/tasks.md), e um [componente de cartão pessoal aprimorado](./toolkit/components/person-card.md). Confira a [postagem do blog](https://developer.microsoft.com/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/) relacionada para obter mais informações.
+
+
+## <a name="december-2020-new-in-preview-only"></a>Dezembro de 2020: novo apenas em pré-visualização
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta Eletrônica
+Continuar a cumprir o pipeline das [APIs do Centro de conformidade do Microsoft 365](/graph/api/resources/ediscoveryapioverview?view=graph-rest-beta&preserve-view=true)é o recurso de [guardião](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true) e suas operações e métodos relacionados para [liberar](/graph/api/custodian-release?view=graph-rest-beta&preserve-view=true) ou [ativar](/graph/api/custodian-activate?view=graph-rest-beta&preserve-view=true) um guardião. Use o recurso do **guardião** para acessar os dados do guardião ([userSource](/graph/api/resources/userSource?view=graph-rest-beta&preserve-view=true)) em uma caixa de correio do Exchange Online e OneDrive for Business, sites do Microsoft Office SharePoint Online ([siteSource](/graph/api/resources/siteSource?view=graph-rest-beta&preserve-view=true)) e grupos do Microsoft 365 ([unifiedGroupSource](/graph/api/resources/unifiedGroupSource?view=graph-rest-beta&preserve-view=true)).
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+Identifique o status de falha de um desktop virtual gerenciado em nuvem coletivamente como `failed`, na propriedade de **status** do recurso [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
+
+### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
+- [Atualize](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) a [configuração](/graph/api/resources/printjobconfiguration?view=graph-rest-beta&preserve-view=true) de um [trabalho de impressão](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).
+- Para obter detalhes sobre a renomeação de algumas propriedades e redigitação de relacionamentos, confira a seção de dezembro de 2020 do [changelog da API](https://developer.microsoft.com/graph/changelog/) para obter detalhes.
+
+### <a name="education"></a>Educação
+- Se os alunos forem adicionados após a publicação da tarefa, os professores podem controlar o comportamento da tarefa usando a propriedade **addedStudentAction** do recurso [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
+- Os professores podem postar notificação de publicação de tarefa por meio da propriedade **notificationChannelUrl** do recurso **educationAssignment**.
+
+### <a name="identity-and-access"></a>Identidade e acesso
+Obtenha ou defina a versão e os metadados de criação para um [contrato](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) de [termos de uso](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) do Azure Active Directory, [arquivo de contrato](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) e [localização de contrato](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+Como parte do [gerenciamento de direitos](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true) do Azure Active Directory, quando os usuários que acessam grupos, aplicativos ou sites do SharePoint Online solicitam um período de acesso a um [pacote de acesso](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true), eles podem responder às [perguntas](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true) representadas no [conteúdo localizado](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) na [solicitação de permanência do pacote de acesso](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+- Os administradores podem associar fluxos de usuários a aplicativos que são compartilhados com usuários externos e permitir a [inscrição de autoatendimento](/azure/active-directory/external-identities/self-service-sign-up-overview) nesses aplicativos. Eles podem personalizar um fluxo de usuário de inscrição de autoatendimento e criar uma experiência de inscrição personalizada. Especificamente, eles criam um [ouvinte para um evento de início de inscrição para chamar um fluxo de usuário customizado](/graph/api/resources/invokeuserflowlistener?view=graph-rest-beta&preserve-view=true). Depois que um aplicativo é associado ao fluxo do usuário, os usuários que acessam esse aplicativo poderão iniciar um fluxo de inscrição que provisiona uma conta de convidado.
+- Em um [fluxo de usuário do Azure Active Directory](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) ou no [fluxo de usuário do locatário do Azure Active Directory B2C](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true), você pode gerenciar os padrões de idioma e [personalizar o idioma e as cadeias de caracteres exibidas para os usuários no fluxo do usuário](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true).
+- Use um [conector de API](/graph/api/resources/identityapiconnector?view=graph-rest-beta&preserve-view=true) em fluxos de usuário para inscrição de autoatendimento do Azure Active Directory e inscrição do Azure Active Directory B2C, para chamar uma API em uma etapa específica para afetar a execução do fluxo de usuário.
+- Defina uma [política de métodos de autenticação OTP de email](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) para um locatário.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Para um recurso de [membro](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) em uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) ou contexto de [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), agora você pode:
+  - Diferencie um membro que é um [usuário do Azure Active Directory](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true), observando a ID do usuário, o endereço de email e a ID do locatário do Azure Active Directory. 
+  - [Adicione vários usuários como membros de uma equipe](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true).
+- Para um recurso de [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true):
+  - [Obtenha todas as mensagens em chats dos quais o usuário especificado participou](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true), incluindo chats individuais, chats em grupo e chats de reunião.
+  - Use toda a gama de funcionalidades para listar, obter, adicionar, remover e atualizar um [aplicativo](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) ou uma [guia](/graph/api/resources/teamstab?view=graph-rest-beta&preserve-view=true) em um chat.
+  - Use a propriedade **chatType** para distinguir um chat individual de um chat em grupo ou de um chat associado a uma reunião online.
+  - [Crie](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true) ou [atualize](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true) um chat.
+  - Para um membro em um contexto de chat, use a propriedade **visibleHistoryStartDateTime** para definir ou obter um carimbo de data/hora que representa quanto tempo atrás o histórico de uma conversa é compartilhado com esse membro.
+  - [Crie](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) ou [exclua](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true) membro de um chat especificado. 
+- Para o recurso de [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true):
+  - [Obtenha todas as mensagens em todos os canais em uma equipe](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true).
+  - Os proprietários da equipe podem ativar a [moderação de um canal](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) para controlar quem pode iniciar novas postagens ou responder às postagens nesse canal, usando a propriedade **moderationSettings** do canal.
+- Como parte da [definição de um aplicativo Teams](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true), use o relacionamento de **bot** para se conectar a um bot de [trabalho em equipe](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true).
+
+### <a name="to-do-tasks"></a>Tarefas pendentes
+Assine para [receber notificações de alterações](webhooks.md) de [Tarefas Pendentes](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).
+
 
 ## <a name="november-2020-new-and-generally-available"></a>Novembro de 2020: Novo e geralmente disponível
 
