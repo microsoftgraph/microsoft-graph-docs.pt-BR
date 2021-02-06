@@ -1,42 +1,42 @@
 ---
-title: 'aplicativo: removeKey'
+title: 'application: removeKey'
 description: Remover uma credencial de chave de um aplicativo
 localization_priority: Normal
 author: sureshja
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 868cacc6aae55d5779f974cff4bef4171aae9623
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a02d731866ef831d3e2e2208a4a0ee9f535e1ed8
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129048"
 ---
-# <a name="application-removekey"></a><span data-ttu-id="2645f-103">aplicativo: removeKey</span><span class="sxs-lookup"><span data-stu-id="2645f-103">application: removeKey</span></span>
+# <a name="application-removekey"></a><span data-ttu-id="303ac-103">application: removeKey</span><span class="sxs-lookup"><span data-stu-id="303ac-103">application: removeKey</span></span>
 
-<span data-ttu-id="2645f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2645f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="303ac-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="303ac-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2645f-105">Remover uma credencial de chave de um [aplicativo](../resources/application.md).</span><span class="sxs-lookup"><span data-stu-id="2645f-105">Remove a key credential from an [application](../resources/application.md).</span></span> <span data-ttu-id="2645f-106">Este método junto com o [addKey](application-addkey.md) pode ser usado por um aplicativo para automatizar a interrupção de suas chaves de expiração.</span><span class="sxs-lookup"><span data-stu-id="2645f-106">This method along with [addKey](application-addkey.md) can be used by an application to automate rolling its expiring keys.</span></span>
+<span data-ttu-id="303ac-105">Remova uma credencial de chave de um [aplicativo.](../resources/application.md)</span><span class="sxs-lookup"><span data-stu-id="303ac-105">Remove a key credential from an [application](../resources/application.md).</span></span> <span data-ttu-id="303ac-106">Esse método, [juntamente com addKey,](application-addkey.md) pode ser usado por um aplicativo para automatizar a rolagem de suas chaves expiradas.</span><span class="sxs-lookup"><span data-stu-id="303ac-106">This method along with [addKey](application-addkey.md) can be used by an application to automate rolling its expiring keys.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2645f-107">[Criar o servicePrincipalName](../api/serviceprincipal-post-serviceprincipals.md) e [Atualizar](../api/serviceprincipal-update.md) as operações do servicePrincipalName podem continuar a ser usado para adicionar e atualizar as principais credenciais de qualquer aplicativo com o aplicativo ou o contexto de um usuário.</span><span class="sxs-lookup"><span data-stu-id="2645f-107">[Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any application with application or a user's context.</span></span>
+> <span data-ttu-id="303ac-107">[Criar operações servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) e [Update servicePrincipal](../api/serviceprincipal-update.md) podem continuar a ser usadas para adicionar e atualizar credenciais de chave para qualquer aplicativo com aplicativo ou contexto de usuário.</span><span class="sxs-lookup"><span data-stu-id="303ac-107">[Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any application with application or a user's context.</span></span>
 
-<span data-ttu-id="2645f-108">Como parte da solicitação de validação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada.</span><span class="sxs-lookup"><span data-stu-id="2645f-108">As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.</span></span>
+<span data-ttu-id="303ac-108">Como parte da validação da solicitação para esse método, uma prova de posse de uma chave existente é verificada antes que a ação possa ser executada.</span><span class="sxs-lookup"><span data-stu-id="303ac-108">As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2645f-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="2645f-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="303ac-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="303ac-109">Permissions</span></span>
 
-|<span data-ttu-id="2645f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2645f-110">Permission type</span></span>      | <span data-ttu-id="2645f-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2645f-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="303ac-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="303ac-110">Permission type</span></span>      | <span data-ttu-id="303ac-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="303ac-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2645f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2645f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="2645f-113">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="2645f-113">None.</span></span>  |
-|<span data-ttu-id="2645f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2645f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2645f-115">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="2645f-115">None.</span></span>    |
-|<span data-ttu-id="2645f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2645f-116">Application</span></span> | <span data-ttu-id="2645f-117">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="2645f-117">None.</span></span> |
+|<span data-ttu-id="303ac-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="303ac-112">Delegated (work or school account)</span></span> | <span data-ttu-id="303ac-113">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="303ac-113">None.</span></span>  |
+|<span data-ttu-id="303ac-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="303ac-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="303ac-115">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="303ac-115">None.</span></span>    |
+|<span data-ttu-id="303ac-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="303ac-116">Application</span></span> | <span data-ttu-id="303ac-117">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="303ac-117">None.</span></span> |
 
 > [!NOTE] 
-> <span data-ttu-id="2645f-118">Um aplicativo não precisa de nenhuma permissão específica para rolar suas próprias chaves.</span><span class="sxs-lookup"><span data-stu-id="2645f-118">An application does not need any specific permission to roll its own keys.</span></span>
+> <span data-ttu-id="303ac-118">Um aplicativo não precisa de nenhuma permissão específica para rolar suas próprias chaves.</span><span class="sxs-lookup"><span data-stu-id="303ac-118">An application does not need any specific permission to roll its own keys.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="2645f-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2645f-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="303ac-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="303ac-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,36 +44,36 @@ ms.locfileid: "48961859"
 POST /applications/{id}/removeKey
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2645f-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2645f-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="303ac-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="303ac-120">Request headers</span></span>
 
-| <span data-ttu-id="2645f-121">Nome</span><span class="sxs-lookup"><span data-stu-id="2645f-121">Name</span></span>           | <span data-ttu-id="2645f-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="2645f-122">Description</span></span>                |
+| <span data-ttu-id="303ac-121">Nome</span><span class="sxs-lookup"><span data-stu-id="303ac-121">Name</span></span>           | <span data-ttu-id="303ac-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="303ac-122">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="2645f-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="2645f-123">Authorization</span></span>  | <span data-ttu-id="2645f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2645f-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2645f-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2645f-126">Content-Type</span></span>   | <span data-ttu-id="2645f-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2645f-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="303ac-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="303ac-123">Authorization</span></span>  | <span data-ttu-id="303ac-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="303ac-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="303ac-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="303ac-126">Content-Type</span></span>   | <span data-ttu-id="303ac-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="303ac-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2645f-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2645f-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="303ac-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="303ac-129">Request body</span></span>
 
-<span data-ttu-id="2645f-130">No corpo da solicitação, forneça as seguintes propriedades obrigatórias.</span><span class="sxs-lookup"><span data-stu-id="2645f-130">In the request body, provide the following required properties.</span></span>
+<span data-ttu-id="303ac-130">No corpo da solicitação, forneça as seguintes propriedades necessárias.</span><span class="sxs-lookup"><span data-stu-id="303ac-130">In the request body, provide the following required properties.</span></span>
 
-| <span data-ttu-id="2645f-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2645f-131">Property</span></span>  | <span data-ttu-id="2645f-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="2645f-132">Type</span></span> | <span data-ttu-id="2645f-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="2645f-133">Description</span></span>|
+| <span data-ttu-id="303ac-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="303ac-131">Property</span></span>  | <span data-ttu-id="303ac-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="303ac-132">Type</span></span> | <span data-ttu-id="303ac-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="303ac-133">Description</span></span>|
 |:----------|:-----|:-----------|
-| <span data-ttu-id="2645f-134">keyId</span><span class="sxs-lookup"><span data-stu-id="2645f-134">keyId</span></span>     | <span data-ttu-id="2645f-135">GUID</span><span class="sxs-lookup"><span data-stu-id="2645f-135">GUID</span></span> | <span data-ttu-id="2645f-136">O identificador exclusivo da senha.</span><span class="sxs-lookup"><span data-stu-id="2645f-136">The unique identifier for the password.</span></span>|
-| <span data-ttu-id="2645f-137">evidência</span><span class="sxs-lookup"><span data-stu-id="2645f-137">proof</span></span> | <span data-ttu-id="2645f-138">String</span><span class="sxs-lookup"><span data-stu-id="2645f-138">String</span></span> | <span data-ttu-id="2645f-139">Um token JWT auto-assinado usado como prova de posse das chaves existentes.</span><span class="sxs-lookup"><span data-stu-id="2645f-139">A self-signed JWT token used as a proof of possession of the existing keys.</span></span> <span data-ttu-id="2645f-140">Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="2645f-140">This JWT token must be signed using the private key of one of the application's existing valid certificates.</span></span> <span data-ttu-id="2645f-141">O token deve conter os seguintes argumentos:</span><span class="sxs-lookup"><span data-stu-id="2645f-141">The token should contain the following claims:</span></span><ul><li><span data-ttu-id="2645f-142">`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</span><span class="sxs-lookup"><span data-stu-id="2645f-142">`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</span></span></li><li><span data-ttu-id="2645f-143">`iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.</span><span class="sxs-lookup"><span data-stu-id="2645f-143">`iss` - Issuer needs to be the __id__  of the application that is making the call.</span></span></li><li><span data-ttu-id="2645f-144">`nbf` – Não antes da hora.</span><span class="sxs-lookup"><span data-stu-id="2645f-144">`nbf` - Not before time.</span></span></li><li><span data-ttu-id="2645f-145">`exp` – O tempo de expiração deve ser "nbf" + 10 min.</span><span class="sxs-lookup"><span data-stu-id="2645f-145">`exp` - Expiration time should be "nbf" + 10 mins.</span></span></li></ul><br><span data-ttu-id="2645f-146">Veja a seguir um [exemplo](/graph/application-rollkey-prooftoken) de código que pode ser usado para gerar esse token de prova de posse.</span><span class="sxs-lookup"><span data-stu-id="2645f-146">Here is a code [sample](/graph/application-rollkey-prooftoken) that can be used to generate this proof of possession token.</span></span>|
+| <span data-ttu-id="303ac-134">keyId</span><span class="sxs-lookup"><span data-stu-id="303ac-134">keyId</span></span>     | <span data-ttu-id="303ac-135">GUID</span><span class="sxs-lookup"><span data-stu-id="303ac-135">GUID</span></span> | <span data-ttu-id="303ac-136">O identificador exclusivo da senha.</span><span class="sxs-lookup"><span data-stu-id="303ac-136">The unique identifier for the password.</span></span>|
+| <span data-ttu-id="303ac-137">proof</span><span class="sxs-lookup"><span data-stu-id="303ac-137">proof</span></span> | <span data-ttu-id="303ac-138">String</span><span class="sxs-lookup"><span data-stu-id="303ac-138">String</span></span> | <span data-ttu-id="303ac-139">Um token JWT auto-assinado usado como prova de posse das chaves existentes.</span><span class="sxs-lookup"><span data-stu-id="303ac-139">A self-signed JWT token used as a proof of possession of the existing keys.</span></span> <span data-ttu-id="303ac-140">Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="303ac-140">This JWT token must be signed using the private key of one of the application's existing valid certificates.</span></span> <span data-ttu-id="303ac-141">O token deve conter os seguintes argumentos:</span><span class="sxs-lookup"><span data-stu-id="303ac-141">The token should contain the following claims:</span></span><ul><li><span data-ttu-id="303ac-142">`aud` – A audiência deve ser `00000002-0000-0000-c000-000000000000`.</span><span class="sxs-lookup"><span data-stu-id="303ac-142">`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</span></span></li><li><span data-ttu-id="303ac-143">`iss` - O emissor deve ser o __ID__ do aplicativo que está fazendo a chamada.</span><span class="sxs-lookup"><span data-stu-id="303ac-143">`iss` - Issuer needs to be the __id__  of the application that is making the call.</span></span></li><li><span data-ttu-id="303ac-144">`nbf` – Não antes da hora.</span><span class="sxs-lookup"><span data-stu-id="303ac-144">`nbf` - Not before time.</span></span></li><li><span data-ttu-id="303ac-145">`exp` – O tempo de expiração deve ser "nbf" + 10 min.</span><span class="sxs-lookup"><span data-stu-id="303ac-145">`exp` - Expiration time should be "nbf" + 10 mins.</span></span></li></ul><br><span data-ttu-id="303ac-146">Aqui está um exemplo [de código](/graph/application-rollkey-prooftoken) que pode ser usado para gerar esse token de comprovação de posse.</span><span class="sxs-lookup"><span data-stu-id="303ac-146">Here is a code [sample](/graph/application-rollkey-prooftoken) that can be used to generate this proof of possession token.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2645f-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="2645f-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="303ac-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="303ac-147">Response</span></span>
 
-<span data-ttu-id="2645f-148">Se tiver êxito, este método retornará um código de resposta `204 No content`.</span><span class="sxs-lookup"><span data-stu-id="2645f-148">If successful, this method returns a `204 No content` response code.</span></span>
+<span data-ttu-id="303ac-148">Se tiver êxito, este método retornará um código de resposta `204 No content`.</span><span class="sxs-lookup"><span data-stu-id="303ac-148">If successful, this method returns a `204 No content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2645f-149">Exemplos</span><span class="sxs-lookup"><span data-stu-id="2645f-149">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="303ac-149">Exemplos</span><span class="sxs-lookup"><span data-stu-id="303ac-149">Examples</span></span>
 
-<span data-ttu-id="2645f-150">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="2645f-150">The following is example shows how to call this API.</span></span>
+<span data-ttu-id="303ac-150">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="303ac-150">The following is example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="2645f-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2645f-151">Request</span></span>
+### <a name="request"></a><span data-ttu-id="303ac-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="303ac-151">Request</span></span>
 
-<span data-ttu-id="2645f-152">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="2645f-152">The following is an example of the request.</span></span>
+<span data-ttu-id="303ac-152">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="303ac-152">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="2645f-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="2645f-153">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="303ac-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="303ac-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_removekey"
@@ -88,28 +88,28 @@ Content-Type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2645f-154">C#</span><span class="sxs-lookup"><span data-stu-id="2645f-154">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="303ac-154">C#</span><span class="sxs-lookup"><span data-stu-id="303ac-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-removekey-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2645f-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2645f-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="303ac-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="303ac-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/application-removekey-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2645f-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2645f-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="303ac-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="303ac-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-removekey-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="2645f-157">Java</span><span class="sxs-lookup"><span data-stu-id="2645f-157">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="303ac-157">Java</span><span class="sxs-lookup"><span data-stu-id="303ac-157">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-removekey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="2645f-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="2645f-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="303ac-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="303ac-158">Response</span></span>
 
-<span data-ttu-id="2645f-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="2645f-159">The following is an example of the response.</span></span>
+<span data-ttu-id="303ac-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="303ac-159">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -129,5 +129,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -4,59 +4,59 @@ description: Crie um novo aplicativo.
 author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 95bd6612edaab7a10c28c4b1d099d9aa80582956
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 839d8d339c1dfcdc071b9cd7f5f648710687b86d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961999"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50129105"
 ---
-# <a name="create-application"></a><span data-ttu-id="64dfd-103">Criar aplicativo</span><span class="sxs-lookup"><span data-stu-id="64dfd-103">Create application</span></span>
+# <a name="create-application"></a><span data-ttu-id="82048-103">Criar aplicativo</span><span class="sxs-lookup"><span data-stu-id="82048-103">Create application</span></span>
 
-<span data-ttu-id="64dfd-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="64dfd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="82048-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="82048-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64dfd-105">Crie um novo objeto [application](../resources/application.md).</span><span class="sxs-lookup"><span data-stu-id="64dfd-105">Create a new [application](../resources/application.md) object.</span></span>
+<span data-ttu-id="82048-105">Crie um novo objeto [application](../resources/application.md).</span><span class="sxs-lookup"><span data-stu-id="82048-105">Create a new [application](../resources/application.md) object.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="64dfd-106">Não é possível adicionar [**passwordCredential**](../resources/passwordcredential.md) ao criar aplicativos.</span><span class="sxs-lookup"><span data-stu-id="64dfd-106">Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported.</span></span> <span data-ttu-id="64dfd-107">Utilize o método [addPassword](application-addpassword.md) para adicionar senhas a um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="64dfd-107">Use the [addPassword](application-addpassword.md) method to add passwords for an application.</span></span>
+> <span data-ttu-id="82048-106">Não é possível adicionar [**passwordCredential**](../resources/passwordcredential.md) ao criar aplicativos.</span><span class="sxs-lookup"><span data-stu-id="82048-106">Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported.</span></span> <span data-ttu-id="82048-107">Utilize o método [addPassword](application-addpassword.md) para adicionar senhas a um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="82048-107">Use the [addPassword](application-addpassword.md) method to add passwords for an application.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="64dfd-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="64dfd-108">Permissions</span></span>
-<span data-ttu-id="64dfd-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="64dfd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="82048-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="82048-108">Permissions</span></span>
+<span data-ttu-id="82048-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="82048-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="64dfd-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="64dfd-111">Permission type</span></span>      | <span data-ttu-id="64dfd-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="64dfd-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="82048-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="82048-111">Permission type</span></span>      | <span data-ttu-id="82048-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="82048-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="64dfd-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="64dfd-113">Delegated (work or school account)</span></span> | <span data-ttu-id="64dfd-114">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="64dfd-114">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="64dfd-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="64dfd-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64dfd-116">Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64dfd-116">Application.ReadWrite.All</span></span>    |
-|<span data-ttu-id="64dfd-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="64dfd-117">Application</span></span> | <span data-ttu-id="64dfd-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64dfd-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="82048-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="82048-113">Delegated (work or school account)</span></span> | <span data-ttu-id="82048-114">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="82048-114">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="82048-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="82048-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82048-116">Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82048-116">Application.ReadWrite.All</span></span>    |
+|<span data-ttu-id="82048-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="82048-117">Application</span></span> | <span data-ttu-id="82048-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82048-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="64dfd-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="64dfd-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="82048-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="82048-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="64dfd-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="64dfd-120">Request headers</span></span>
-| <span data-ttu-id="64dfd-121">Nome</span><span class="sxs-lookup"><span data-stu-id="64dfd-121">Name</span></span>           | <span data-ttu-id="64dfd-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="64dfd-122">Description</span></span>                |
+## <a name="request-headers"></a><span data-ttu-id="82048-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="82048-120">Request headers</span></span>
+| <span data-ttu-id="82048-121">Nome</span><span class="sxs-lookup"><span data-stu-id="82048-121">Name</span></span>           | <span data-ttu-id="82048-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="82048-122">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="64dfd-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="64dfd-123">Authorization</span></span>  | <span data-ttu-id="64dfd-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="64dfd-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="64dfd-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="64dfd-126">Content-Type</span></span>   | <span data-ttu-id="64dfd-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="64dfd-p104">application/json. Required.</span></span>|
+| <span data-ttu-id="82048-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="82048-123">Authorization</span></span>  | <span data-ttu-id="82048-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="82048-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="82048-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="82048-126">Content-Type</span></span>   | <span data-ttu-id="82048-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="82048-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="64dfd-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="64dfd-129">Request body</span></span>
-<span data-ttu-id="64dfd-130">No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md).</span><span class="sxs-lookup"><span data-stu-id="64dfd-130">In the request body, supply a JSON representation of [application](../resources/application.md) object.</span></span> <span data-ttu-id="64dfd-131">O corpo da solicitação deve conter **displayName**, que é uma propriedade obrigatória.</span><span class="sxs-lookup"><span data-stu-id="64dfd-131">The request body must contain  **displayName**, which is a required property.</span></span>
+## <a name="request-body"></a><span data-ttu-id="82048-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="82048-129">Request body</span></span>
+<span data-ttu-id="82048-130">No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md).</span><span class="sxs-lookup"><span data-stu-id="82048-130">In the request body, supply a JSON representation of [application](../resources/application.md) object.</span></span> <span data-ttu-id="82048-131">O corpo da solicitação deve conter **displayName**, que é uma propriedade obrigatória.</span><span class="sxs-lookup"><span data-stu-id="82048-131">The request body must contain  **displayName**, which is a required property.</span></span>
 
-## <a name="response"></a><span data-ttu-id="64dfd-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="64dfd-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="82048-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="82048-132">Response</span></span>
 
-<span data-ttu-id="64dfd-133">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [application](../resources/application.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="64dfd-133">If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.</span></span>
+<span data-ttu-id="82048-133">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [application](../resources/application.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="82048-133">If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="64dfd-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="64dfd-134">Examples</span></span>
-### <a name="request"></a><span data-ttu-id="64dfd-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="64dfd-135">Request</span></span>
-<span data-ttu-id="64dfd-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="64dfd-136">Here is an example of the request.</span></span>
+## <a name="examples"></a><span data-ttu-id="82048-134">Exemplos</span><span class="sxs-lookup"><span data-stu-id="82048-134">Examples</span></span>
+### <a name="request"></a><span data-ttu-id="82048-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="82048-135">Request</span></span>
+<span data-ttu-id="82048-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="82048-136">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="64dfd-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="64dfd-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="82048-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="82048-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_application_from_applications"
@@ -70,28 +70,28 @@ Content-length: 67
   "displayName": "Display name"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="64dfd-138">C#</span><span class="sxs-lookup"><span data-stu-id="64dfd-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="82048-138">C#</span><span class="sxs-lookup"><span data-stu-id="82048-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-application-from-applications-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="64dfd-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="64dfd-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="82048-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="82048-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-application-from-applications-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="64dfd-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="64dfd-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="82048-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="82048-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-application-from-applications-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="64dfd-141">Java</span><span class="sxs-lookup"><span data-stu-id="64dfd-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="82048-141">Java</span><span class="sxs-lookup"><span data-stu-id="82048-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-application-from-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="64dfd-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="64dfd-142">Response</span></span>
-<span data-ttu-id="64dfd-143">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="64dfd-143">Here is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="82048-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="82048-142">Response</span></span>
+<span data-ttu-id="82048-143">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="82048-143">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="64dfd-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="64dfd-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="82048-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="82048-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -170,5 +170,6 @@ Content-length: 1145
   ]
 }
 -->
+
 
 

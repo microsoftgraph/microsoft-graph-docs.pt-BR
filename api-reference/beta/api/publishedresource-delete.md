@@ -1,36 +1,36 @@
 ---
 title: Excluir publishedResource
-description: Excluir um objeto [publishedResource](../resources/publishedresource.md) .
+description: '[Exclua um objeto publishedResource.](../resources/publishedresource.md)'
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9792f8a66d4e4d5e65da8dcca74d0fb2dbff577f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 112439c71f165c31ab88282ccc2a1a135f2ec19b
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973408"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50130393"
 ---
-# <a name="delete-publishedresource"></a><span data-ttu-id="f817b-103">Excluir publishedResource</span><span class="sxs-lookup"><span data-stu-id="f817b-103">Delete publishedResource</span></span>
+# <a name="delete-publishedresource"></a><span data-ttu-id="b2dd7-103">Excluir publishedResource</span><span class="sxs-lookup"><span data-stu-id="b2dd7-103">Delete publishedResource</span></span>
 
-<span data-ttu-id="f817b-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f817b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b2dd7-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b2dd7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f817b-105">Excluir um objeto [publishedResource](../resources/publishedresource.md) .</span><span class="sxs-lookup"><span data-stu-id="f817b-105">Delete a [publishedResource](../resources/publishedresource.md) object.</span></span>
+<span data-ttu-id="b2dd7-105">[Exclua um objeto publishedResource.](../resources/publishedresource.md)</span><span class="sxs-lookup"><span data-stu-id="b2dd7-105">Delete a [publishedResource](../resources/publishedresource.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f817b-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f817b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b2dd7-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="b2dd7-106">Permissions</span></span>
 
-<span data-ttu-id="f817b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f817b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b2dd7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b2dd7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f817b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f817b-109">Permission type</span></span>                        | <span data-ttu-id="f817b-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f817b-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b2dd7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b2dd7-109">Permission type</span></span>                        | <span data-ttu-id="b2dd7-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b2dd7-110">Permissions (from least to most privileged)</span></span> |
 |:--------------------------------------|:---------------------------------------------------------|
-| <span data-ttu-id="f817b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f817b-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="f817b-112">OnPremisesPublishingProfiles.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f817b-112">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
-| <span data-ttu-id="f817b-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f817b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f817b-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f817b-114">Not supported.</span></span> |
-| <span data-ttu-id="f817b-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f817b-115">Application</span></span>                            | <span data-ttu-id="f817b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f817b-116">Not supported.</span></span> |
+| <span data-ttu-id="b2dd7-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b2dd7-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="b2dd7-112">OnPremisesPublishingProfiles.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b2dd7-112">OnPremisesPublishingProfiles.ReadWrite.All</span></span> |
+| <span data-ttu-id="b2dd7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b2dd7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b2dd7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b2dd7-114">Not supported.</span></span> |
+| <span data-ttu-id="b2dd7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b2dd7-115">Application</span></span>                            | <span data-ttu-id="b2dd7-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b2dd7-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f817b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f817b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b2dd7-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b2dd7-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,27 +38,27 @@ ms.locfileid: "48973408"
 DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups/{id2}/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f817b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f817b-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b2dd7-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b2dd7-118">Request headers</span></span>
 
-| <span data-ttu-id="f817b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="f817b-119">Name</span></span>          | <span data-ttu-id="f817b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="f817b-120">Description</span></span>   |
+| <span data-ttu-id="b2dd7-119">Nome</span><span class="sxs-lookup"><span data-stu-id="b2dd7-119">Name</span></span>          | <span data-ttu-id="b2dd7-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="b2dd7-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="f817b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f817b-121">Authorization</span></span> | <span data-ttu-id="f817b-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="f817b-122">Bearer {token}</span></span> |
+| <span data-ttu-id="b2dd7-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="b2dd7-121">Authorization</span></span> | <span data-ttu-id="b2dd7-122">Portador {token}</span><span class="sxs-lookup"><span data-stu-id="b2dd7-122">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f817b-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f817b-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b2dd7-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b2dd7-123">Request body</span></span>
 
-<span data-ttu-id="f817b-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f817b-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b2dd7-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b2dd7-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f817b-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="f817b-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b2dd7-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="b2dd7-125">Response</span></span>
 
-<span data-ttu-id="f817b-p102">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f817b-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="b2dd7-p102">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b2dd7-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f817b-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f817b-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b2dd7-128">Exemplos</span><span class="sxs-lookup"><span data-stu-id="b2dd7-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="f817b-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f817b-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b2dd7-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b2dd7-129">Request</span></span>
 
-<span data-ttu-id="f817b-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f817b-130">The following is an example of the request.</span></span>
+<span data-ttu-id="b2dd7-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b2dd7-130">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f817b-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="f817b-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b2dd7-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="b2dd7-131">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_publishedresource"
@@ -67,28 +67,28 @@ DELETE ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/
 ```http
 DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/publishedResources/1234b780-965f-4149-85c5-a8c73e58b67d/agentGroups/8832388F-3814-4952-B288-FFB62081FE25/$ref
 ```
-# <a name="c"></a>[<span data-ttu-id="f817b-132">C#</span><span class="sxs-lookup"><span data-stu-id="f817b-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b2dd7-132">C#</span><span class="sxs-lookup"><span data-stu-id="b2dd7-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-publishedresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f817b-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f817b-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b2dd7-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b2dd7-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-publishedresource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f817b-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f817b-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b2dd7-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b2dd7-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-publishedresource-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f817b-135">Java</span><span class="sxs-lookup"><span data-stu-id="f817b-135">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b2dd7-135">Java</span><span class="sxs-lookup"><span data-stu-id="b2dd7-135">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-publishedresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f817b-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="f817b-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b2dd7-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="b2dd7-136">Response</span></span>
 
-<span data-ttu-id="f817b-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f817b-137">The following is an example of the response.</span></span>
+<span data-ttu-id="b2dd7-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b2dd7-137">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -108,5 +108,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 
