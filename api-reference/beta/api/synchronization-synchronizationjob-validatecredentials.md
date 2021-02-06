@@ -4,59 +4,59 @@ description: Valide se as credenciais são válidas no locatário.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4094fefb1dd911de70c8f896abb43299dfce9638
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 4f36764ca7d6787629299261e6ec42c9454ddc46
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979933"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50132066"
 ---
-# <a name="synchronizationjob-validatecredentials"></a><span data-ttu-id="3326f-103">synchronizationJob: validateCredentials</span><span class="sxs-lookup"><span data-stu-id="3326f-103">synchronizationJob: validateCredentials</span></span>
+# <a name="synchronizationjob-validatecredentials"></a><span data-ttu-id="f5004-103">synchronizationJob: validateCredentials</span><span class="sxs-lookup"><span data-stu-id="f5004-103">synchronizationJob: validateCredentials</span></span>
 
-<span data-ttu-id="3326f-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3326f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f5004-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f5004-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3326f-105">Valide se as credenciais são válidas no locatário.</span><span class="sxs-lookup"><span data-stu-id="3326f-105">Validate that the credentials are valid in the tenant.</span></span>
+<span data-ttu-id="f5004-105">Valide se as credenciais são válidas no locatário.</span><span class="sxs-lookup"><span data-stu-id="f5004-105">Validate that the credentials are valid in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3326f-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="3326f-106">Permissions</span></span>
-<span data-ttu-id="3326f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3326f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f5004-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="f5004-106">Permissions</span></span>
+<span data-ttu-id="f5004-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f5004-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3326f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3326f-109">Permission type</span></span>                        | <span data-ttu-id="3326f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3326f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f5004-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f5004-109">Permission type</span></span>                        | <span data-ttu-id="f5004-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f5004-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3326f-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3326f-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="3326f-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3326f-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="3326f-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3326f-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="3326f-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3326f-114">Not supported.</span></span> |
-|<span data-ttu-id="3326f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3326f-115">Application</span></span>                            |<span data-ttu-id="3326f-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3326f-116">Not supported.</span></span>| 
+|<span data-ttu-id="f5004-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f5004-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="f5004-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f5004-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="f5004-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f5004-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="f5004-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f5004-114">Not supported.</span></span> |
+|<span data-ttu-id="f5004-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f5004-115">Application</span></span>                            |<span data-ttu-id="f5004-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f5004-116">Not supported.</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="3326f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3326f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f5004-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f5004-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="3326f-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3326f-118">Request headers</span></span>
-| <span data-ttu-id="3326f-119">Nome</span><span class="sxs-lookup"><span data-stu-id="3326f-119">Name</span></span>       | <span data-ttu-id="3326f-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="3326f-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f5004-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f5004-118">Request headers</span></span>
+| <span data-ttu-id="f5004-119">Nome</span><span class="sxs-lookup"><span data-stu-id="f5004-119">Name</span></span>       | <span data-ttu-id="f5004-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="f5004-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="3326f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="3326f-121">Authorization</span></span>  | <span data-ttu-id="3326f-122">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="3326f-122">Bearer {code}</span></span>|
+| <span data-ttu-id="f5004-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f5004-121">Authorization</span></span>  | <span data-ttu-id="f5004-122">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="f5004-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3326f-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3326f-123">Request body</span></span>
-<span data-ttu-id="3326f-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3326f-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f5004-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f5004-123">Request body</span></span>
+<span data-ttu-id="f5004-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f5004-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="3326f-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="3326f-125">Parameter</span></span>    | <span data-ttu-id="3326f-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="3326f-126">Type</span></span>   |<span data-ttu-id="3326f-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="3326f-127">Description</span></span>|
+| <span data-ttu-id="f5004-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="f5004-125">Parameter</span></span>    | <span data-ttu-id="f5004-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="f5004-126">Type</span></span>   |<span data-ttu-id="f5004-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="f5004-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3326f-128">useSavedCredentials</span><span class="sxs-lookup"><span data-stu-id="3326f-128">useSavedCredentials</span></span>|<span data-ttu-id="3326f-129">Booliano</span><span class="sxs-lookup"><span data-stu-id="3326f-129">Boolean</span></span>|<span data-ttu-id="3326f-130">Quando `true` , o `credentials` parâmetro será ignorado e as credenciais salvas anteriormente (se houver alguma) serão validadas.</span><span class="sxs-lookup"><span data-stu-id="3326f-130">When `true`, the `credentials` parameter will be ignored and the previously saved credentials (if any) will be validated instead.</span></span> |
-|<span data-ttu-id="3326f-131">las</span><span class="sxs-lookup"><span data-stu-id="3326f-131">credentials</span></span>|<span data-ttu-id="3326f-132">coleção [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="3326f-132">[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) collection</span></span>|<span data-ttu-id="3326f-133">Credenciais a serem validadas.</span><span class="sxs-lookup"><span data-stu-id="3326f-133">Credentials to validate.</span></span> <span data-ttu-id="3326f-134">Ignorado quando o `useSavedCredentials` parâmetro é `true` .</span><span class="sxs-lookup"><span data-stu-id="3326f-134">Ignored when the `useSavedCredentials` parameter is `true`.</span></span>|
+|<span data-ttu-id="f5004-128">useSavedCredentials</span><span class="sxs-lookup"><span data-stu-id="f5004-128">useSavedCredentials</span></span>|<span data-ttu-id="f5004-129">Boolean</span><span class="sxs-lookup"><span data-stu-id="f5004-129">Boolean</span></span>|<span data-ttu-id="f5004-130">Quando , o parâmetro será ignorado e as credenciais salvas anteriormente `true` `credentials` (se alguma) serão validadas em vez disso.</span><span class="sxs-lookup"><span data-stu-id="f5004-130">When `true`, the `credentials` parameter will be ignored and the previously saved credentials (if any) will be validated instead.</span></span> |
+|<span data-ttu-id="f5004-131">credenciais</span><span class="sxs-lookup"><span data-stu-id="f5004-131">credentials</span></span>|<span data-ttu-id="f5004-132">[Coleção synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="f5004-132">[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) collection</span></span>|<span data-ttu-id="f5004-133">Credenciais a validar.</span><span class="sxs-lookup"><span data-stu-id="f5004-133">Credentials to validate.</span></span> <span data-ttu-id="f5004-134">Ignorado quando o `useSavedCredentials` parâmetro é `true` .</span><span class="sxs-lookup"><span data-stu-id="f5004-134">Ignored when the `useSavedCredentials` parameter is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="3326f-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="3326f-135">Response</span></span>
-<span data-ttu-id="3326f-136">Se a validação for bem-sucedida, este método retornará um `204, No Content` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="3326f-136">If validation is successful, this method returns a `204, No Content` response code.</span></span> <span data-ttu-id="3326f-137">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3326f-137">It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f5004-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5004-135">Response</span></span>
+<span data-ttu-id="f5004-136">Se a validação for bem-sucedida, este método retornará um `204, No Content` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="f5004-136">If validation is successful, this method returns a `204, No Content` response code.</span></span> <span data-ttu-id="f5004-137">Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f5004-137">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3326f-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3326f-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f5004-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f5004-138">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="3326f-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3326f-139">Request</span></span>
-<span data-ttu-id="3326f-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="3326f-140">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="f5004-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f5004-139">Request</span></span>
+<span data-ttu-id="f5004-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f5004-140">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3326f-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="3326f-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f5004-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="f5004-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_validatecredentials"
@@ -73,27 +73,27 @@ Content-length: 218
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="3326f-142">C#</span><span class="sxs-lookup"><span data-stu-id="3326f-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f5004-142">C#</span><span class="sxs-lookup"><span data-stu-id="f5004-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-validatecredentials-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3326f-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3326f-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f5004-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f5004-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-validatecredentials-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3326f-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3326f-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f5004-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f5004-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-validatecredentials-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="3326f-145">Java</span><span class="sxs-lookup"><span data-stu-id="3326f-145">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f5004-145">Java</span><span class="sxs-lookup"><span data-stu-id="f5004-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-validatecredentials-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="3326f-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="3326f-146">Response</span></span>
-<span data-ttu-id="3326f-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="3326f-147">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="f5004-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5004-146">Response</span></span>
+<span data-ttu-id="f5004-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f5004-147">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso settingTemplateValue
-description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
+title: Tipo de recurso settingTemplateValue
+description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instaliada.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: dkershaw10
-ms.openlocfilehash: b0f9db75d870cc775b22011674e6a460e11d8812
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 15110b88b62352476619501c50457a5bd1db5a89
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033528"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50131625"
 ---
-# <a name="settingtemplatevalue-resource-type"></a><span data-ttu-id="1e910-103">tipo de recurso settingTemplateValue</span><span class="sxs-lookup"><span data-stu-id="1e910-103">settingTemplateValue resource type</span></span>
+# <a name="settingtemplatevalue-resource-type"></a><span data-ttu-id="4d2dc-103">Tipo de recurso settingTemplateValue</span><span class="sxs-lookup"><span data-stu-id="4d2dc-103">settingTemplateValue resource type</span></span>
 
-<span data-ttu-id="1e910-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1e910-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4d2dc-104">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4d2dc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1e910-105">Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.</span><span class="sxs-lookup"><span data-stu-id="1e910-105">Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.</span></span>
+<span data-ttu-id="4d2dc-105">Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instaliada.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-105">Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="1e910-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1e910-106">Properties</span></span>
-| <span data-ttu-id="1e910-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1e910-107">Property</span></span>     | <span data-ttu-id="1e910-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="1e910-108">Type</span></span>   |<span data-ttu-id="1e910-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="1e910-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4d2dc-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4d2dc-106">Properties</span></span>
+| <span data-ttu-id="4d2dc-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4d2dc-107">Property</span></span>     | <span data-ttu-id="4d2dc-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="4d2dc-108">Type</span></span>   |<span data-ttu-id="4d2dc-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="4d2dc-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1e910-110">defaultValue</span><span class="sxs-lookup"><span data-stu-id="1e910-110">defaultValue</span></span>|<span data-ttu-id="1e910-111">string</span><span class="sxs-lookup"><span data-stu-id="1e910-111">string</span></span>|<span data-ttu-id="1e910-112">Valor padrão para a configuração.</span><span class="sxs-lookup"><span data-stu-id="1e910-112">Default value for the setting.</span></span> <span data-ttu-id="1e910-113">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e910-113">Read-only.</span></span>|
-|<span data-ttu-id="1e910-114">description</span><span class="sxs-lookup"><span data-stu-id="1e910-114">description</span></span>|<span data-ttu-id="1e910-115">string</span><span class="sxs-lookup"><span data-stu-id="1e910-115">string</span></span>|<span data-ttu-id="1e910-116">Descrição da configuração.</span><span class="sxs-lookup"><span data-stu-id="1e910-116">Description of the setting.</span></span> <span data-ttu-id="1e910-117">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e910-117">Read-only.</span></span>|
-|<span data-ttu-id="1e910-118">name</span><span class="sxs-lookup"><span data-stu-id="1e910-118">name</span></span>|<span data-ttu-id="1e910-119">string</span><span class="sxs-lookup"><span data-stu-id="1e910-119">string</span></span>|<span data-ttu-id="1e910-120">Nome da configuração.</span><span class="sxs-lookup"><span data-stu-id="1e910-120">Name of the setting.</span></span> <span data-ttu-id="1e910-121">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e910-121">Read-only.</span></span>|
-|<span data-ttu-id="1e910-122">type</span><span class="sxs-lookup"><span data-stu-id="1e910-122">type</span></span>|<span data-ttu-id="1e910-123">string</span><span class="sxs-lookup"><span data-stu-id="1e910-123">string</span></span>|<span data-ttu-id="1e910-124">Tipo da configuração.</span><span class="sxs-lookup"><span data-stu-id="1e910-124">Type of the setting.</span></span> <span data-ttu-id="1e910-125">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e910-125">Read-only.</span></span>|
+|<span data-ttu-id="4d2dc-110">defaultValue</span><span class="sxs-lookup"><span data-stu-id="4d2dc-110">defaultValue</span></span>|<span data-ttu-id="4d2dc-111">string</span><span class="sxs-lookup"><span data-stu-id="4d2dc-111">string</span></span>|<span data-ttu-id="4d2dc-112">Valor padrão da configuração.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-112">Default value for the setting.</span></span> <span data-ttu-id="4d2dc-113">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-113">Read-only.</span></span>|
+|<span data-ttu-id="4d2dc-114">description</span><span class="sxs-lookup"><span data-stu-id="4d2dc-114">description</span></span>|<span data-ttu-id="4d2dc-115">string</span><span class="sxs-lookup"><span data-stu-id="4d2dc-115">string</span></span>|<span data-ttu-id="4d2dc-116">Descrição da configuração.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-116">Description of the setting.</span></span> <span data-ttu-id="4d2dc-117">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-117">Read-only.</span></span>|
+|<span data-ttu-id="4d2dc-118">name</span><span class="sxs-lookup"><span data-stu-id="4d2dc-118">name</span></span>|<span data-ttu-id="4d2dc-119">string</span><span class="sxs-lookup"><span data-stu-id="4d2dc-119">string</span></span>|<span data-ttu-id="4d2dc-120">Nome da configuração.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-120">Name of the setting.</span></span> <span data-ttu-id="4d2dc-121">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-121">Read-only.</span></span>|
+|<span data-ttu-id="4d2dc-122">type</span><span class="sxs-lookup"><span data-stu-id="4d2dc-122">type</span></span>|<span data-ttu-id="4d2dc-123">string</span><span class="sxs-lookup"><span data-stu-id="4d2dc-123">string</span></span>|<span data-ttu-id="4d2dc-124">Tipo da configuração.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-124">Type of the setting.</span></span> <span data-ttu-id="4d2dc-125">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-125">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1e910-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1e910-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4d2dc-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4d2dc-126">JSON representation</span></span>
 
-<span data-ttu-id="1e910-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1e910-127">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4d2dc-127">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4d2dc-127">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
