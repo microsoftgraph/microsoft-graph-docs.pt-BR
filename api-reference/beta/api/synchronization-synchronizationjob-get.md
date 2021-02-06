@@ -4,13 +4,13 @@ description: Recupere o trabalho de sincronização existente e suas propriedade
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f37a58c5b808473ac6ece68dd1a35efe54b15aa
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: b5a676d3509cd0a2511fb64704ef9b72d3aa15ff
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974193"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137505"
 ---
 # <a name="get-synchronizationjob"></a>Obter synchronizationJob
 
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retornará uma `200 OK` resposta com um [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
+Se bem-sucedido, retorna `200 OK` uma resposta com um [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

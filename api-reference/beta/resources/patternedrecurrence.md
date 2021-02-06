@@ -3,14 +3,14 @@ title: Tipo de recurso patternedRecurrence
 description: O padrão e o intervalo da recorrência.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: governance
 author: harini84
-ms.openlocfilehash: 9fb6741ab3710ae71c27dfe32870b6f3e3411dd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e64fa16f1aceb22eccd744588bd325943f79e930
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998107"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137645"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Tipo de recurso patternedRecurrence
 
@@ -23,7 +23,7 @@ O padrão e o intervalo da recorrência.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|pattern|[GetRecurrencePattern](recurrencepattern.md)|A frequência de um evento.|
+|pattern|[recurrencePattern](recurrencepattern.md)|A frequência de um evento.|
 |range|[recurrenceRange](recurrencerange.md)|A duração de um evento.|
 
 ## <a name="json-representation"></a>Representação JSON

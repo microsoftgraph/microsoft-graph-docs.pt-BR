@@ -1,24 +1,24 @@
 ---
-title: 'synchronizationJob: pausar'
-description: Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, é mantido e o trabalho continuará de onde parou quando uma chamada inicial é feita.
+title: 'synchronizationJob: pause'
+description: Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, persiste, e o trabalho continuará de onde foi deixado quando uma chamada iniciar é feita.
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ffaaba6087a27e88a8aef36c35bdfa20d01d1972
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: eba89e688b8dc9ea02fee633ee4beeb40bb55106
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137484"
 ---
-# <a name="synchronizationjob-pause"></a>synchronizationJob: pausar
+# <a name="synchronizationjob-pause"></a>synchronizationJob: pause
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, é mantido e o trabalho continuará de onde parou quando uma chamada [inicial](../api/synchronization-synchronizationjob-start.md) é feita.
+Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, persiste, e o trabalho continuará de onde foi deixado quando [uma](../api/synchronization-synchronizationjob-start.md) chamada iniciar é feita.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

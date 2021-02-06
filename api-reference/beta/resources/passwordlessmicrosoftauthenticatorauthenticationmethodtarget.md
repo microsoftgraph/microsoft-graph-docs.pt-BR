@@ -3,14 +3,14 @@ title: Tipo de recurso passwordlessMicrosoftAuthenticatorAuthenticationMethodTar
 description: Uma coleção de usuários ou grupos habilitados para usar a política de métodos de autenticação de Login de Telefone sem Senha do Microsoft Authenticator.
 author: mmcla
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ef62b251d6c943bd6290a07fa2b018bddca81ab5
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: d3dd874b96a54dc7e764200800e85b445abd50ee
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872265"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137652"
 ---
 # <a name="passwordlessmicrosoftauthenticatorauthenticationmethodtarget-resource-type-deprecated"></a>Tipo de recurso passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget (preterido)
 
@@ -26,11 +26,11 @@ Uma coleção de usuários ou grupos habilitados para usar a política de métod
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID do objeto de um usuário ou grupo do Azure AD.|
-|isRegistrationRequired|Booliano|Determina se o usuário é imposto a registrar o método de autenticação.|
+|id|String|ID do objeto de um usuário ou grupo do Azure AD.|
+|isRegistrationRequired|Boolean|Determina se o usuário é imposto a registrar o método de autenticação.|
 |shownContext|authenticatorAppContextType|Os valores possíveis são: `location` e `app`.|
 |targetType|authenticationMethodTargetType|Os valores possíveis são: `user` e `group`.|
-|useForSignIn|Booliano|Determina se o método de autenticação pode ser usado para entrar no Azure AD.|
+|useForSignIn|Boolean|Determina se o método de autenticação pode ser usado para entrar no Azure AD.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -4,13 +4,13 @@ description: Você pode adicionar conteúdo relacionado a um evento
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: svpsiva
-ms.openlocfilehash: a66505ec27c6920b51f174c7acb3e6a276309c53
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+author: abheek-das
+ms.openlocfilehash: d1296c40bfc434262f1911c6f9453725bc033999
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582188"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137617"
 ---
 # <a name="attachment-resource-type"></a>tipo de recurso anexo
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Você pode adicionar conteúdo relacionado a um [evento](../resources/event.md)de usuário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md) de grupo no formato de um anexo. 
+Você pode adicionar conteúdo relacionado a um evento de [usuário,](../resources/event.md) [mensagem,](../resources/message.md)tarefa do [Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md) de grupo na forma de um anexo. 
 
 Os eventos em calendários de grupo não têm suporte para anexos.
 
-As tarefas do Outlook não dão suporte a anexos de referência.
+As tarefas do Outlook não suportam anexos de referência.
 
 **attachment** é o recurso de base para os seguintes tipos de anexo derivados:
 
@@ -32,9 +32,9 @@ As tarefas do Outlook não dão suporte a anexos de referência.
 * Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md))
 * Um link para um arquivo (recurso [referenceAttachment](../resources/referenceattachment.md))
 
->**Observação**: há um limite para o tamanho do arquivo ou anexo de item que pode ser adicionado abaixo de 4 MB. 
+>**Observação:** há um limite para o tamanho do arquivo ou anexo de item que você pode adicionar a menos de 4 MB. 
 >
-> No entanto, se estiver anexando a uma mensagem um arquivo entre 3 MB e 150MB, você pode [criar uma sessão de carregamento](../api/attachment-createuploadsession.md) e carregar de forma iterativa os intervalos do arquivo para anexá-lo. Consulte [anexar arquivos grandes às mensagens do Outlook](/graph/outlook-large-attachments) para obter um exemplo.
+> No entanto, se você estiver anexando a uma mensagem um arquivo entre 3 MB e 150 MB, poderá criar uma sessão de [upload](../api/attachment-createuploadsession.md) e carregar iterativamente intervalos do arquivo para anexá-lo. Veja [anexar arquivos grandes a mensagens do Outlook](/graph/outlook-large-attachments) para ver um exemplo.
 
 ## <a name="methods"></a>Métodos
 
@@ -42,17 +42,17 @@ Os métodos a seguir se aplicam a qualquer um dos tipos de anexo derivados (**fi
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter anexo](../api/attachment-get.md) | [attachment](attachment.md) |Leia as propriedades, relações ou conteúdo bruto de um anexo, anexados a um evento de usuário, mensagem, tarefa do Outlook ou postagem.|
+|[Obter anexo](../api/attachment-get.md) | [attachment](attachment.md) |Leia as propriedades, relações ou conteúdo bruto de um anexo, anexado a um evento de usuário, mensagem, tarefa do Outlook ou postagem.|
 |[Adicionar anexo a um evento do usuário](../api/event-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a um evento em um calendário de usuário.|
-|[Adicionar um anexo a uma mensagem](../api/message-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem. Esta operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.|
-|[Criar sessão para anexar arquivo grande](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Criar uma sessão de carregamento que permite que um aplicativo carregue intervalos de um arquivo de forma iterativa, para anexar o arquivo à **mensagem**especificada. O tamanho do arquivo deve estar entre 3 MB e 150MB.|
-|[Adicionar anexo a uma tarefa do Outlook](../api/outlooktask-post-attachments.md) (preterido) | [attachment](attachment.md) |Adicionar um anexo de arquivo ou item a uma tarefa do Outlook.|
-|[Adicionar anexo a uma postagem](../api/post-post-attachments.md) | [attachment](attachment.md) |Adicionar um anexo de arquivo, item ou link a uma postagem de grupo.|
+|[Adicionar um anexo a uma mensagem](../api/message-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem. Essa operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.|
+|[Criar sessão para anexar arquivo grande](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Crie uma sessão de upload que permita que um aplicativo carregue iterativamente intervalos de um arquivo, para anexar o arquivo à mensagem **especificada.** O tamanho do arquivo deve estar entre 3 MB e 150 MB.|
+|[Adicionar anexo a uma tarefa do Outlook](../api/outlooktask-post-attachments.md) (preterido) | [attachment](attachment.md) |Adicionar um arquivo ou anexo de item a uma tarefa do Outlook.|
+|[Adicionar anexo a uma postagem](../api/post-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma postagem de grupo.|
 |[Listar anexos de um evento de usuário](../api/event-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de um evento em um calendário de usuário. |
 |[Listar anexos de uma mensagem](../api/message-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma mensagem. |
-|[Listar anexos de uma tarefa do Outlook](../api/outlooktask-list-attachments.md) (preterido) | Coleção [attachment](attachment.md) | Obter uma lista de anexos para uma tarefa do Outlook. |
+|[Listar anexos de uma tarefa do Outlook](../api/outlooktask-list-attachments.md) (preterido) | Coleção [attachment](attachment.md) | Obter uma lista de anexos de uma tarefa do Outlook. |
 |[Listar anexos de uma postagem](../api/post-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma postagem. |
-|[Delete](../api/attachment-delete.md) | Nenhum |Excluir um anexo de um evento, de uma mensagem, de uma tarefa do Outlook ou de uma postagem. |
+|[Delete](../api/attachment-delete.md) | Nenhuma |Excluir um anexo em um evento, mensagem, tarefa do Outlook ou postagem. |
 
 ## <a name="properties"></a>Propriedades
 

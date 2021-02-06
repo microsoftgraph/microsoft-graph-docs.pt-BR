@@ -1,18 +1,18 @@
 ---
-title: tipo complexo de recurso de targetResource-API do Microsoft Graph
-description: Define o tipo complexo de recurso de entidade de targetResource da API do Microsoft Graph que oferece suporte à atividade de locatário de relatórios de log de auditoria (locatário).
+title: Tipo complexo de recurso targetResource - API do Microsoft Graph
+description: Define o tipo complexo de recurso da entidade targetResource da API do Microsoft Graph que oferece suporte à atividade da organização de relatório de log de auditoria (locatário).
 author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bec25af7e0f39a4adf15577c21d4141e1a3c431a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: identity-and-access-reports
+ms.openlocfilehash: 2dc8adea2edf11674d844cee4e5548da96882f7d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985647"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137582"
 ---
-# <a name="targetresource-resource-type"></a>tipo de recurso targetResource
+# <a name="targetresource-resource-type"></a>Tipo de recurso targetResource
 
 Namespace: microsoft.graph
 
@@ -25,10 +25,10 @@ Representa os tipos de recursos de destino associados à atividade de auditoria.
 |:---------------|:--------|:----------|
 |id|String|Indica a ID exclusiva do recurso.|
 |displayName|String|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
-|tipo|String|Descreve o tipo de recurso.  Os valores de exemplo incluem `Application` ,, `Group` `ServicePrincipal` e `User` .|
-|userPrincipalName|String|Quando **Type** está definido como `User` , isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
-|groupType|String|Quando **Type** é definido como `Group` , isso indica o tipo de grupo.|
-|ModifiedProperties|coleção [modifiedproperty](modifiedproperty.md)|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do **tipo**de operação.|
+|type|String|Descreve o tipo de recurso.  Os valores de `Application` exemplo `Group` incluem , `ServicePrincipal` e `User` .|
+|userPrincipalName|String|Quando **o** tipo é definido `User` como , isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
+|groupType|String|Quando **o** tipo é definido `Group` como , isso indica o tipo de grupo.|
+|ModifiedProperties|[Coleção modifiedProperty](modifiedproperty.md)|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do tipo de **operação.**|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar publishedResource
-description: Atualiza as propriedades de um objeto [publishedResource](../resources/publishedresource.md) .
+description: Atualize as propriedades de [um objeto publishedResource.](../resources/publishedresource.md)
 localization_priority: Normal
 author: japere
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2c5cfac4e39c9aee07d2a8fdadefa0027b0cc789
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8c8a6cfe8eead7219918daf5ac2e87090cc18888
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973332"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137673"
 ---
 # <a name="update-publishedresource"></a>Atualizar publishedResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto publishedresource  [publishedresource](../resources/publishedresource.md) .
+Atualize as propriedades do objeto publishedresource [publishedResource.](../resources/publishedresource.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +46,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores de campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece os valores dos campos relevantes a atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 A tabela a seguir lista as propriedades que podem ser atualizadas.
 
@@ -121,5 +121,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

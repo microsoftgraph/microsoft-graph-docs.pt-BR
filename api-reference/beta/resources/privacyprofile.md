@@ -3,14 +3,14 @@ title: Tipo de recurso privacyProfile
 description: Representa o perfil de privacidade de uma empresa que inclui uma URL da política de privacidade e uma pessoa de contato para tirar dúvidas sobre a política de privacidade.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: davidmu1
-ms.openlocfilehash: ab8d1d3282e3ebcc899e89701ab812e18c403e18
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 986f995458c56869d966c3c1baa2dc2f5df9aca1
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137666"
 ---
 # <a name="privacyprofile-resource-type"></a>Tipo de recurso privacyProfile
 

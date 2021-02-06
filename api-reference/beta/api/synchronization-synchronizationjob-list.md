@@ -4,13 +4,13 @@ description: Listar trabalhos existentes para uma determinada instância de apli
 localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c59a3414d1e480caee34023b6ad0bd5fd7773684
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.prod: applications
+ms.openlocfilehash: 8dafcb1120190244902c2fc4deaa56ee7d4d274c
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974185"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50137487"
 ---
 # <a name="list-synchronization-jobs"></a>Listar trabalhos de sincronização
 
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta e uma `200 OK` coleção de [objetos synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
