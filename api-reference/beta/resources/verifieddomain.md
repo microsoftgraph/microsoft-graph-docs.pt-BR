@@ -3,36 +3,36 @@ title: Tipo de recurso verifiedDomain
 description: Especifica um domínio de um locatário. A propriedade **verifiedDomains** da entidade organization é uma coleção de **VerifiedDomain**.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: directory-management
 author: davidmu1
-ms.openlocfilehash: b0dd473d4358da38a09b55c7bc3ad052d2b6ce8e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2c4e833042a7bca3f3b85d3c9eb15bd7eb12925d
+ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50135842"
 ---
-# <a name="verifieddomain-resource-type"></a><span data-ttu-id="ebda2-104">Tipo de recurso verifiedDomain</span><span class="sxs-lookup"><span data-stu-id="ebda2-104">verifiedDomain resource type</span></span>
+# <a name="verifieddomain-resource-type"></a><span data-ttu-id="6f864-104">Tipo de recurso verifiedDomain</span><span class="sxs-lookup"><span data-stu-id="6f864-104">verifiedDomain resource type</span></span>
 
-<span data-ttu-id="ebda2-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ebda2-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6f864-105">Namespace: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6f864-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ebda2-106">Especifica um domínio de um locatário.</span><span class="sxs-lookup"><span data-stu-id="ebda2-106">Specifies a domain for a tenant.</span></span> <span data-ttu-id="ebda2-107">A propriedade **verifiedDomains** da entidade [organization](organization.md) é uma coleção de **VerifiedDomain**.</span><span class="sxs-lookup"><span data-stu-id="ebda2-107">The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.</span></span>
+<span data-ttu-id="6f864-106">Especifica um domínio de um locatário.</span><span class="sxs-lookup"><span data-stu-id="6f864-106">Specifies a domain for a tenant.</span></span> <span data-ttu-id="6f864-107">A propriedade **verifiedDomains** da entidade [organization](organization.md) é uma coleção de **VerifiedDomain**.</span><span class="sxs-lookup"><span data-stu-id="6f864-107">The **verifiedDomains** property of the [organization](organization.md) entity is a collection of **VerifiedDomain**.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="ebda2-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ebda2-108">Properties</span></span>
-| <span data-ttu-id="ebda2-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ebda2-109">Property</span></span>     | <span data-ttu-id="ebda2-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="ebda2-110">Type</span></span>   |<span data-ttu-id="ebda2-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="ebda2-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6f864-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6f864-108">Properties</span></span>
+| <span data-ttu-id="6f864-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6f864-109">Property</span></span>     | <span data-ttu-id="6f864-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="6f864-110">Type</span></span>   |<span data-ttu-id="6f864-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f864-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ebda2-112">capabilities</span><span class="sxs-lookup"><span data-stu-id="ebda2-112">capabilities</span></span>|<span data-ttu-id="ebda2-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ebda2-113">String</span></span>|<span data-ttu-id="ebda2-114">Por exemplo, "Email" ou "OfficeCommunicationsOnline".</span><span class="sxs-lookup"><span data-stu-id="ebda2-114">For example, “Email”, “OfficeCommunicationsOnline”.</span></span>|
-|<span data-ttu-id="ebda2-115">isDefault</span><span class="sxs-lookup"><span data-stu-id="ebda2-115">isDefault</span></span>|<span data-ttu-id="ebda2-116">Booliano</span><span class="sxs-lookup"><span data-stu-id="ebda2-116">Boolean</span></span>|                <span data-ttu-id="ebda2-117">**true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.</span><span class="sxs-lookup"><span data-stu-id="ebda2-117">**true** if this is the default domain associated with the tenant; otherwise, **false**.</span></span>            |
-|<span data-ttu-id="ebda2-118">isinitial</span><span class="sxs-lookup"><span data-stu-id="ebda2-118">isInitial</span></span>|<span data-ttu-id="ebda2-119">Booliano</span><span class="sxs-lookup"><span data-stu-id="ebda2-119">Boolean</span></span>|<span data-ttu-id="ebda2-120">**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**</span><span class="sxs-lookup"><span data-stu-id="ebda2-120">**true** if this is the initial domain associated with the tenant; otherwise, **false**</span></span>|
-|<span data-ttu-id="ebda2-121">name</span><span class="sxs-lookup"><span data-stu-id="ebda2-121">name</span></span>|<span data-ttu-id="ebda2-122">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ebda2-122">String</span></span>|<span data-ttu-id="ebda2-123">O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.</span><span class="sxs-lookup"><span data-stu-id="ebda2-123">The domain name; for example, “contoso.onmicrosoft.com”</span></span>|
-|<span data-ttu-id="ebda2-124">tipo</span><span class="sxs-lookup"><span data-stu-id="ebda2-124">type</span></span>|<span data-ttu-id="ebda2-125">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ebda2-125">String</span></span>|<span data-ttu-id="ebda2-126">Por exemplo, "Managed".</span><span class="sxs-lookup"><span data-stu-id="ebda2-126">For example, “Managed”.</span></span>|
+|<span data-ttu-id="6f864-112">capabilities</span><span class="sxs-lookup"><span data-stu-id="6f864-112">capabilities</span></span>|<span data-ttu-id="6f864-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6f864-113">String</span></span>|<span data-ttu-id="6f864-114">Por exemplo, "Email" ou "OfficeCommunicationsOnline".</span><span class="sxs-lookup"><span data-stu-id="6f864-114">For example, “Email”, “OfficeCommunicationsOnline”.</span></span>|
+|<span data-ttu-id="6f864-115">isDefault</span><span class="sxs-lookup"><span data-stu-id="6f864-115">isDefault</span></span>|<span data-ttu-id="6f864-116">Booliano</span><span class="sxs-lookup"><span data-stu-id="6f864-116">Boolean</span></span>|                <span data-ttu-id="6f864-117">**true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.</span><span class="sxs-lookup"><span data-stu-id="6f864-117">**true** if this is the default domain associated with the tenant; otherwise, **false**.</span></span>            |
+|<span data-ttu-id="6f864-118">isInitial</span><span class="sxs-lookup"><span data-stu-id="6f864-118">isInitial</span></span>|<span data-ttu-id="6f864-119">Booliano</span><span class="sxs-lookup"><span data-stu-id="6f864-119">Boolean</span></span>|<span data-ttu-id="6f864-120">**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**</span><span class="sxs-lookup"><span data-stu-id="6f864-120">**true** if this is the initial domain associated with the tenant; otherwise, **false**</span></span>|
+|<span data-ttu-id="6f864-121">nome</span><span class="sxs-lookup"><span data-stu-id="6f864-121">name</span></span>|<span data-ttu-id="6f864-122">String</span><span class="sxs-lookup"><span data-stu-id="6f864-122">String</span></span>|<span data-ttu-id="6f864-123">O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.</span><span class="sxs-lookup"><span data-stu-id="6f864-123">The domain name; for example, “contoso.onmicrosoft.com”</span></span>|
+|<span data-ttu-id="6f864-124">type</span><span class="sxs-lookup"><span data-stu-id="6f864-124">type</span></span>|<span data-ttu-id="6f864-125">String</span><span class="sxs-lookup"><span data-stu-id="6f864-125">String</span></span>|<span data-ttu-id="6f864-126">Por exemplo, "Managed".</span><span class="sxs-lookup"><span data-stu-id="6f864-126">For example, “Managed”.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ebda2-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ebda2-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6f864-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6f864-127">JSON representation</span></span>
 
-<span data-ttu-id="ebda2-128">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="ebda2-128">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="6f864-128">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="6f864-128">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
